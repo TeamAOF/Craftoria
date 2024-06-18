@@ -6,7 +6,7 @@ modpack:
   
 install:
   mcVersion:
-  loaderVersion: "21.0.16-beta"
+  loaderVersion: 21.0.17-beta
   modpackUrl: https://mediafilez.forgecdn.net/files/5441/979/Craftoria-0.0.2.zip
   installerUrl: "https://maven.neoforged.net/releases/net/neoforged/neoforge/{{@loaderversion@}}/neoforge-{{@loaderversion@}}-installer.jar"
   
@@ -24,7 +24,7 @@ install:
     ignoreProject: 
       - 472772 # Dashloader
       
-  baseInstallPath: Craftoria Server/
+  baseInstallPath: 
   
   checkFolder: true
   
