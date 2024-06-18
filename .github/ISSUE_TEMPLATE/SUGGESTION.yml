@@ -1,0 +1,26 @@
+name: General Suggestion
+description: Suggest a change or addition you'd like in the modpack
+labels: [Suggestion]
+body:
+  - type: markdown
+    attributes:
+      value: |
+      
+        ## Pointers before submitting a suggestion:
+        
+        - Check for similar suggestions in the **Issues & Discussions sections**.
+          
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your suggestion
+      description: What would you like added/changed?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why would you like this added/changed?
+    validations:
+      required: true

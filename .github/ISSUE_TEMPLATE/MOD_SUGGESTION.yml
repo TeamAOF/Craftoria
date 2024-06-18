@@ -1,0 +1,27 @@
+name: Mod Suggestion
+description: Suggestions of mods.
+title: "[Mod Suggestion]: "
+labels: ["suggestion"]
+assignees:
+  - ImAK9
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Pointers before submitting a suggestion:
+        - Double check the **Issue Tracker** if said mod has already been suggested.
+        - Said mod has to support the **NeoForge Loader**
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Link to the Project Page of the mod (Curseforge)
+      placeholder: ex. https://legacy.curseforge.com/minecraft/modpacks/craftoria
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why would you like this mod added?
+    validations:
+      required: false

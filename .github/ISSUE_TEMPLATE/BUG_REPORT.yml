@@ -1,0 +1,82 @@
+name: Bug Report
+description: Report issues, improving the modpack.
+title: "[Bug Report]: "
+labels: ["bug"]
+assignees:
+  - ImAK9
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Pointers before submitting a bug report:
+        - Double check the **Issue Tracker** if said issue has already been reported.
+        
+  - type: input
+    id: version
+    attributes:
+      label: Modpack Version
+      placeholder: ex. 2.0.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your issue.
+    validations:
+      required: true
+
+  - type: input
+    id: crashlog
+    attributes:
+      label: Crash Report
+      description: Crashed? Upload your crash report to https://gist.github.com, paste the link here.
+    validations:
+      required: false
+
+  - type: input
+    id: latestlog
+    attributes:
+      label: Latest Log
+      description: Upload your logs to https://gist.github.com, paste the link here.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: modified-modpack
+    attributes:
+      label: "Have you modified the modpack?"
+      description: "Have you added mods, changed configs, changed scripts or similar?"
+      options:
+        - 'No'
+        - 'Yes'
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-modifications
+    attributes:
+      label: User Modifications
+      description: If you answered "Yes" above, please briefly explain what you have modified. Added mods are particularly important.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Did the issue happen in singleplayer or on a server?"
+      options:
+        - 'Singleplayer'
+        - 'Server'
+        - 'Both'
+    validations:
+      required: true
+
+  - type: input
+    id: discord-username
+    attributes:
+      label: Discord Username
+      description: If you are in the [All of Everything Discord](https://discord.com/invite/aof) and wouldn't mind being asked further questions there, leave your username here.
+      placeholder: username#0000
+    validations:
+      required: false
