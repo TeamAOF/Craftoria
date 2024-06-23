@@ -304,7 +304,7 @@ function Update-FileLinkInServerFiles {
         $idPart2 = Remove-LeadingZero -text $idPart2
         # CurseForge replaces whitespace in filenames with + in their CDN urls
         $sanitizedClientZipName = $CLIENT_ZIP_NAME.Replace(" ", "+")
-        $curseForgeCdnUrl = "https://media.forgecdn.net/files/$idPart1/$idPart2/$sanitizedClientZipName.zip"
+        $curseForgeCdnUrl = "https://mediafilez.forgecdn.net/files/$idPart1/$idPart2/$sanitizedClientZipName.zip"
         $content = (Get-Content -Path $SERVER_SETUP_CONFIG_PATH) -replace "https://media.forgecdn.net/files/\d+/\d+/.*.zip", $curseForgeCdnUrl 
         [System.IO.File]::WriteAllLines(($SERVER_SETUP_CONFIG_PATH | Resolve-Path), $content)
 
