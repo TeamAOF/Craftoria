@@ -1,0 +1,111 @@
+{
+  "ability": {
+    "abilities": {
+      "spurt": {
+        "requiredPoints": 1,
+        "requiredLevel": 10,
+        "maxLevel": 10,
+        "stats": {
+          "damage": {
+            "minInitialValue": 0.1,
+            "maxInitialValue": 0.25,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.1
+          },
+          "distance": {
+            "minInitialValue": 3.0,
+            "maxInitialValue": 8.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.3
+          },
+          "cooldown": {
+            "minInitialValue": 20.0,
+            "maxInitialValue": 15.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_TOTAL",
+            "upgradeModifier": -0.075
+          }
+        }
+      },
+      "phlebotomy": {
+        "requiredPoints": 1,
+        "requiredLevel": 5,
+        "maxLevel": 10,
+        "stats": {
+          "heal": {
+            "minInitialValue": 1.0E-4,
+            "maxInitialValue": 2.5E-4,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.1
+          },
+          "attack_speed": {
+            "minInitialValue": 0.005,
+            "maxInitialValue": 0.01,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.05
+          },
+          "movement_speed": {
+            "minInitialValue": 0.01,
+            "maxInitialValue": 0.025,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.1
+          }
+        }
+      },
+      "rage": {
+        "requiredPoints": 1,
+        "requiredLevel": 0,
+        "maxLevel": 10,
+        "stats": {
+          "duration": {
+            "minInitialValue": 2.0,
+            "maxInitialValue": 4.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.1
+          },
+          "incoming_damage": {
+            "minInitialValue": 0.05,
+            "maxInitialValue": 0.025,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.05
+          },
+          "dealt_damage": {
+            "minInitialValue": 0.025,
+            "maxInitialValue": 0.075,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.1
+          }
+        }
+      }
+    }
+  },
+  "leveling": {
+    "initialCost": 100,
+    "maxLevel": 20,
+    "step": 100
+  },
+  "loot": {
+    "entries": {
+      "minecraft:chests/ruined_portal": 0.025,
+      "[\\w]+:chests\\/[\\w_\\/]*(nether|hell|lava|magma|fire|burn|fortress)[\\w_\\/]*": 0.025,
+      "[\\w]+:chests\\/[\\w_\\/]*(bastion|piglin)[\\w_\\/]*": 0.025
+    }
+  }
+}

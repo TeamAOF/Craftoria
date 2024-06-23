@@ -1,0 +1,64 @@
+{
+  "ability": {
+    "abilities": {
+      "backstab": {
+        "requiredPoints": 1,
+        "requiredLevel": 0,
+        "maxLevel": 10,
+        "stats": {
+          "damage": {
+            "minInitialValue": 1.25,
+            "maxInitialValue": 1.75,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.1
+          },
+          "distance": {
+            "minInitialValue": 15.0,
+            "maxInitialValue": 20.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "ADD",
+            "upgradeModifier": -0.5
+          }
+        }
+      },
+      "vanish": {
+        "requiredPoints": 2,
+        "requiredLevel": 0,
+        "maxLevel": 10,
+        "stats": {
+          "light": {
+            "minInitialValue": 1.0,
+            "maxInitialValue": 2.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "ADD",
+            "upgradeModifier": 1.0
+          },
+          "speed": {
+            "minInitialValue": 0.1,
+            "maxInitialValue": 0.35,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.35
+          }
+        }
+      }
+    }
+  },
+  "leveling": {
+    "initialCost": 100,
+    "maxLevel": 10,
+    "step": 100
+  },
+  "loot": {
+    "entries": {
+      "[\\w]+:chests\\/[\\w_\\/]*(mineshaft|city|stronghold)[\\w_\\/]*": 0.025,
+      "[\\w]+:chests\\/[\\w_\\/]*(pillag|outpost)[\\w_\\/]*": 0.025,
+      "minecraft:chests/woodland_mansion": 0.025
+    }
+  }
+}

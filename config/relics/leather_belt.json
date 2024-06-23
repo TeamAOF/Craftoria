@@ -1,0 +1,31 @@
+{
+  "ability": {
+    "abilities": {
+      "slots": {
+        "requiredPoints": 2,
+        "requiredLevel": 0,
+        "maxLevel": 10,
+        "stats": {
+          "talisman": {
+            "minInitialValue": 1.0,
+            "maxInitialValue": 3.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "ADD",
+            "upgradeModifier": 1.0
+          }
+        }
+      }
+    }
+  },
+  "leveling": {
+    "initialCost": 100,
+    "maxLevel": 10,
+    "step": 100
+  },
+  "loot": {
+    "entries": {
+      "[\\w]+:chests\\/[\\w_\\/]*village[\\w_\\/]*": 0.025
+    }
+  }
+}

@@ -1,3 +1,60 @@
+## Craftoria | v0.0.4
+
+_NeoForge Loader 21.0.25_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.4.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.4.md)_
+
+### Changes/Improvements ⭐
+
+* Right-Click harvesting no longer requires a hoe **(AK)**
+* Added temp menu until custom art is fully done **(AK)**
+* Adjusted all Ambient Sounds volumes to be more balanced **(AK)**
+
+### Bug Fixes 🪲
+
+* Fixed an issue when trying to view a multiblock hologram of a Modern Industrialization machines.
+* Fixed JEI using the wrong screen GUI for Anvil Recipes.
+* Fixed AE2 Spatial Anchor Loaded Chunk Visualization Bug.
+* Fixed crash when shoving a villager into the Auto Trader from the Easy Villagers.
+* Fixed error message from looking at leaves blocks, grasses, and ferns.
+
+### Added Mods ✅
+
+  * [Azure Paxels](https://www.curseforge.com/minecraft/mc-mods/azure-paxels)
+  * [Bank Storage](https://www.curseforge.com/minecraft/mc-mods/bank-storage)
+  * [Charging Gadgets](https://www.curseforge.com/minecraft/mc-mods/charging-gadgets)
+  * [Cherished Worlds](https://www.curseforge.com/minecraft/mc-mods/cherished-worlds)
+  * [Configured](https://www.curseforge.com/minecraft/mc-mods/configured)
+  * [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling)
+  * [Creeper Overhaul](https://www.curseforge.com/minecraft/mc-mods/creeper-overhaul)
+  * [FancyMenu](https://www.curseforge.com/minecraft/mc-mods/fancymenu)
+  * [FTB Chunks (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-forge)
+  * [FTB Essentials (Forge & Fabric)](https://www.curseforge.com/minecraft/mc-mods/ftb-essentials)
+  * [FTB Library (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge)
+  * [FTB Ranks (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-ranks-forge)
+  * [FTB Teams (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge)
+  * [FTB Ultimine (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge)
+  * [Just Enough Breeding (JEBr)](https://www.curseforge.com/minecraft/mc-mods/justenoughbreeding)
+  * [Just Enough Mekanism Multiblocks](https://www.curseforge.com/minecraft/mc-mods/just-enough-mekanism-multiblocks)
+  * [Konkrete [Forge/NeoForge]](https://www.curseforge.com/minecraft/mc-mods/konkrete)
+  * [LaserIO](https://www.curseforge.com/minecraft/mc-mods/laserio)
+  * [Macaw's Lights and Lamps](https://www.curseforge.com/minecraft/mc-mods/macaws-lights-and-lamps)
+  * [Melody](https://www.curseforge.com/minecraft/mc-mods/melody)
+  * [Mining Gadgets](https://www.curseforge.com/minecraft/mc-mods/mining-gadgets)
+  * [Modular Force Field Systems (MFFS)](https://www.curseforge.com/minecraft/mc-mods/mffs)
+  * [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass)
+  * [OctoLib](https://www.curseforge.com/minecraft/mc-mods/octo-lib)
+  * [Relics](https://www.curseforge.com/minecraft/mc-mods/relics-mod)
+  * [Resourceful Config](https://www.curseforge.com/minecraft/mc-mods/resourceful-config)
+  * [Searchables](https://www.curseforge.com/minecraft/mc-mods/searchables)
+  * [The Bumblezone (NeoForge/Forge)](https://www.curseforge.com/minecraft/mc-mods/the-bumblezone-forge)
+  * [Trofers](https://www.curseforge.com/minecraft/mc-mods/trofers)
+  * [Yeetus Experimentus](https://www.curseforge.com/minecraft/mc-mods/yeetusexperimentus)
+
+  ### Removed Mods ❌
+
+  * [Crafting on a stick](https://www.curseforge.com/minecraft/mc-mods/crafting-on-a-stick) (Issues when refreshing the GUI)
+  * [Trade Cycling](https://www.curseforge.com/minecraft/mc-mods/trade-cycling) (Overlapping with Easy Villagers)
+---
+
 ## Craftoria | v0.0.3
 
 _NeoForge Loader 21.0.17_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.3.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.3.md)_

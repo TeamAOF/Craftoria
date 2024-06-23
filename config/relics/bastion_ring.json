@@ -1,0 +1,37 @@
+{
+  "ability": {
+    "abilities": {
+      "trade": {
+        "requiredPoints": 2,
+        "requiredLevel": 5,
+        "maxLevel": 10,
+        "stats": {
+          "rolls": {
+            "minInitialValue": 0.0,
+            "maxInitialValue": 1.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "ADD",
+            "upgradeModifier": 1.0
+          }
+        }
+      },
+      "compass": {
+        "requiredPoints": 1,
+        "requiredLevel": 0,
+        "maxLevel": 0,
+        "stats": {}
+      }
+    }
+  },
+  "leveling": {
+    "initialCost": 100,
+    "maxLevel": 10,
+    "step": 200
+  },
+  "loot": {
+    "entries": {
+      "[\\w]+:chests\\/[\\w_\\/]*(bastion|piglin)[\\w_\\/]*": 0.025
+    }
+  }
+}
