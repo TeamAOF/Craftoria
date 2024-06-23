@@ -1,3 +1,28 @@
+## Craftoria | v0.0.5
+
+_NeoForge Loader 21.0.25_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.5.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.5.md)_
+
+### Changes/Improvements ⭐
+
+* Disabled respawning with MI Guide Book.
+
+### Bug Fixes 🪲
+
+* Pipez blocks not dropping.
+
+### Added Mods ✅
+
+  * [AE2 Import Export Card](https://www.curseforge.com/minecraft/mc-mods/ae2-import-export-card)
+  * [EMI](https://www.curseforge.com/minecraft/mc-mods/emi)
+  * [Macaw's Bridges](https://www.curseforge.com/minecraft/mc-mods/macaws-bridges)
+  * [Powah! (Rearchitected)](https://www.curseforge.com/minecraft/mc-mods/powah-rearchitected)
+
+### Removed Mods ❌
+
+  * [Azure Paxels](https://www.curseforge.com/minecraft/mc-mods/azure-paxels) (Overlapping with Mekanism variants)
+  * [Mod Name Tooltip](https://www.curseforge.com/minecraft/mc-mods/mod-name-tooltip) (Built-in feature within EMI)
+---
+
 ## Craftoria | v0.0.4
 
 _NeoForge Loader 21.0.25_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.4.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.4.md)_
