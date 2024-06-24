@@ -9,16 +9,16 @@
 [generator_t1]
 	#The amount of Forge Energy created per burn tick of fuel. Coal has 1600 burn ticks. Sticks have 100 burn ticks.
 	#Range: > 1
-	generator_t1_fe_per_fuel_tick = 15
+	generator_t1_fe_per_fuel_tick = 10000000
 	#The multiplier for the burn speed, making the generator run faster. Coal is 1600 ticks to burn, if you set this to 10, it will burn in 160 ticks
 	#Range: 1 ~ 1000
-	generator_t1_burn_speed_multiplier = 4
+	generator_t1_burn_speed_multiplier = 1
 	#The maximum amount of Forge Energy the generator can hold in its buffer
 	#Range: > 1
-	generator_t1_max_fe = 1000000
+	generator_t1_max_fe = 2147483647
 	#The FE per Tick that the generator outputs
 	#Range: > 1
-	generator_t1_fe_per_tick = 1000
+	generator_t1_fe_per_tick = 2147483647
 
 #Fluid Generator T1
 [generator_fluid_t1]
