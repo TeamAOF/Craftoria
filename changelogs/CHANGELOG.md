@@ -1,3 +1,22 @@
+## Craftoria | v0.0.7
+
+_NeoForge Loader 21.0.27_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.7.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.7.md)_
+
+### Added Mods ✅
+
+  * [Global Packs](https://www.curseforge.com/minecraft/mc-mods/drp-global-datapack)
+
+### Removed Mods ❌
+
+  * [AEInfinityBooster](https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster) (Part of AE2 Wireless Addon)
+  * [Project: Vibrant Journeys](https://www.curseforge.com/minecraft/mc-mods/project-vibrant-journeys)
+
+### Bug Fixes 🪲
+
+* Fixed crashing when breaking blocks.
+---
+
+
 ## Craftoria | v0.0.6
 
 _NeoForge Loader 21.0.29_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.6.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.6.md)_
