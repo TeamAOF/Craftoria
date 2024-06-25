@@ -28,6 +28,7 @@ _NeoForge Loader 21.0.29_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 * Very cool rich presence for Discord.
 * Added the names of all Team AOE members to the FFB merchant.
 * Minimap is now round instead of square.
+* Changed keybind of Chunks world map to J.
 
 ### Bug Fixes 🪲
 
