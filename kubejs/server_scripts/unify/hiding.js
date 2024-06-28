@@ -32,22 +32,33 @@ RecipeViewerEvents.removeEntries('item', e => {
 
   for (let [key, value] in hide) {
     value.forEach(mod => {
-      if (mod === 'mekanism') {
-        types.forEach(type => {
-          e.remove(`${mod}:${type}_${key}`);
-          if (type === 'raw')
-            e.remove(`${mod}:block_${type}_${key}`);
-        });
-      } else {
-        types.forEach(type => {
-          if (type !== 'raw')
-            e.remove(`${mod}:${key}_${type}`);
-          else {
+      switch (mod) {
+        case 'mekanism':
+          types.forEach(type => {
             e.remove(`${mod}:${type}_${key}`);
-            e.remove(`${mod}:${type}_${key}_block`);
-          }
+            if (type === 'raw')
+              e.remove(`${mod}:block_${type}_${key}`);
+          });
+          break;
 
-        });
+        case 'moremekanismprocessing':
+          types.forEach(type => {
+            if (type !== 'dust')
+              e.remove(`${mod}:${key}_${type}`);
+            else
+              e.remove(`${mod}:${type}_${key}`);
+          });
+          break;
+        default:
+          types.forEach(type => {
+            if (type !== 'raw')
+              e.remove(`${mod}:${key}_${type}`);
+            else {
+              e.remove(`${mod}:${type}_${key}`);
+              e.remove(`${mod}:${type}_${key}_block`);
+            }
+          });
+          break;
       }
     });
   }
