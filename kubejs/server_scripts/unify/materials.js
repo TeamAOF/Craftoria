@@ -38,6 +38,7 @@ let materials = [
   'emerald',
   'lapis',
   'quartz',
+  'uranium'
 ];
 
 /**
@@ -141,7 +142,7 @@ ServerEvents.recipes(e => {
     e.custom(recipe).id(`craftoria:mekanism/enriching/${input.replace('c:', '')}`);
   };
 
-  mekInfuse('mekanism:carbon', 'c:ingots/iron', 'modern_industrialization:steel_dust', 10, 1, 1);
+  mekInfuse('mekanism:carbon', 'mekanism:enriched_iron', 'modern_industrialization:steel_dust', 10, 1, 1);
   mekInfuse('mekanism:tin', 'c:ingots/copper', 'modern_industrialization:bronze_ingot', 10, 3, 4);
   mekInfuse('mekanism:tin', 'c:dusts/copper', 'modern_industrialization:bronze_dust', 10, 3, 4);
 
@@ -246,4 +247,6 @@ ServerEvents.recipes(e => {
 
   e.remove({ mod: 'moremekanismprocessing', output: '#c:nuggets' });
   e.remove({ mod: 'moremekanismprocessing', output: '#c:ingots' });
+
+  e.remove({ id: 'mekanism:processing/lapis_lazuli/to_dust'});
 });
