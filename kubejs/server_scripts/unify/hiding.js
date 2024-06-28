@@ -22,7 +22,7 @@ RecipeViewerEvents.removeEntries('item', e => {
     'iridium': ['moremekanismprocessing'],
   };
 
-  let types = ['ingot', 'block', 'dust', 'nugget', 'ore'];
+  let types = ['ingot', 'block', 'dust', 'nugget', 'ore', 'raw'];
 
   [
     'mffs:steel_compound',
@@ -35,12 +35,22 @@ RecipeViewerEvents.removeEntries('item', e => {
       if (mod === 'mekanism') {
         types.forEach(type => {
           e.remove(`${mod}:${type}_${key}`);
+          if (type === 'raw')
+            e.remove(`${mod}:block_${type}_${key}`);
         });
       } else {
         types.forEach(type => {
-          e.remove(`${mod}:${key}_${type}`);
+          if (type !== 'raw')
+            e.remove(`${mod}:${key}_${type}`);
+          else {
+            e.remove(`${mod}:${type}_${key}`);
+            e.remove(`${mod}:${type}_${key}_block`);
+          }
+
         });
       }
     });
   }
+
+  e.remove('@hammerlib');
 });
