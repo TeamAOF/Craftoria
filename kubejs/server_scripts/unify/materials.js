@@ -60,6 +60,10 @@ let idRemovals = [
   'mekanism:processing/bronze/ingot/from_infusing',
   'mekanism:processing/bronze/dust/from_infusing',
   'mekanism:processing/steel/enriched_iron_to_dust',
+  'mekanism:processing/lapis_lazuli/to_dust',
+
+  //Other removals
+  'mffs:steel_compound',
 ];
 
 // Do not touch this, it will be populated automatically.
@@ -96,14 +100,14 @@ ServerEvents.recipes(e => {
     if (input.includes('c:'))
       recipe.item_input.tag = input;
     else
-      recipe.item_input.id = input;
+      recipe.item_input.item = input;
     recipe.output.id = output;
 
     recipe.chemical_input.amount = chemCount || 10;
     recipe.item_input.count = iCount || 1;
     recipe.output.count = oCount || 1;
 
-    e.custom(recipe).id(`craftoria:mekanism/metallurgic_infusing/${input.replace('c:', '')}`);
+    e.custom(recipe).id(`craftoria:mekanism/metallurgic_infusing/${input.replace('c:', '').replace(':', '_')}`);
   };
 
   let mekCrush = (input, output, iCount, oCount) => {
@@ -115,13 +119,13 @@ ServerEvents.recipes(e => {
     if (input.includes('c:'))
       recipe.input.tag = input;
     else
-      recipe.input.id = input;
+      recipe.input.item = input;
     recipe.output.id = output;
 
     recipe.input.count = iCount || 1;
     recipe.output.count = oCount || 1;
 
-    e.custom(recipe).id(`craftoria:mekanism/crushing/${input.replace('c:', '')}`);
+    e.custom(recipe).id(`craftoria:mekanism/crushing/${input.replace('c:', '').replace(':', '_')}`);
   };
 
   let mekEnrich = (input, output, iCount, oCount) => {
@@ -133,13 +137,13 @@ ServerEvents.recipes(e => {
     if (input.includes('c:'))
       recipe.input.tag = input;
     else
-      recipe.input.id = input;
+      recipe.input.item = input;
     recipe.output.id = output;
 
     recipe.input.count = iCount || 1;
     recipe.output.count = oCount || 1;
 
-    e.custom(recipe).id(`craftoria:mekanism/enriching/${input.replace('c:', '')}`);
+    e.custom(recipe).id(`craftoria:mekanism/enriching/${input.replace('c:', '').replace(':', '_')}`);
   };
 
   mekInfuse('mekanism:carbon', 'mekanism:enriched_iron', 'modern_industrialization:steel_dust', 10, 1, 1);
@@ -247,6 +251,4 @@ ServerEvents.recipes(e => {
 
   e.remove({ mod: 'moremekanismprocessing', output: '#c:nuggets' });
   e.remove({ mod: 'moremekanismprocessing', output: '#c:ingots' });
-
-  e.remove({ id: 'mekanism:processing/lapis_lazuli/to_dust'});
 });
