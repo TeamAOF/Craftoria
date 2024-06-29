@@ -24,8 +24,6 @@
 ### Removed
 
   * [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
-  * [Fresh Waystones Texture](https://www.curseforge.com/minecraft/texture-packs/fresh-waystones-texture) (by [zozozrob_zadrot](https://www.curseforge.com/members/zozozrob_zadrot/projects))
-  * [Hellim's Xaero's Maps Mob Icons](https://www.curseforge.com/minecraft/texture-packs/hellims-xaeros-maps-mob-icons) (by [DoCelikkol](https://www.curseforge.com/members/DoCelikkol/projects))
   * [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter) (by [cpw](https://www.curseforge.com/members/cpw/projects))
 
 ### Changed

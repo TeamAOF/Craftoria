@@ -1,4 +1,4 @@
-## Craftoria | v0.0.8
+## Craftoria | v0.0.8/0.0.9
 
 _NeoForge Loader 21.0.41_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.8.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.8.md)_
 
@@ -23,6 +23,7 @@ _NeoForge Loader 21.0.41_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 ### Removed Mods ❌
 
   * [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options) (Replaced by KubeJS)
+  * [Guard Villagers](https://www.curseforge.com/minecraft/mc-mods/guard-villagers) (Needs updating for newer NF loader changes)
   * [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter) (Replaced by Inventory Tweaks)
 
 ### Changes/Improvements ⭐
