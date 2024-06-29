@@ -1,0 +1,31 @@
+
+#These configs are general configs that don't fit any other category.
+[general]
+	#Apply mod on what kind of llamas?
+	#Allowed Values: LLAMA, TRADER_LLAMA, ALL
+	applyOn = "ALL"
+	#Chance of llamas wearing parts of their outfit, in percentage% (0-100)
+	#Range: 0 ~ 100
+	fancyChance = 80
+
+#Configs regarding llamas that are wearing outfits.
+[outfit]
+	#Chance of llamas wearing hats in their outfit, in percentage% (0-100)
+	#Range: 0 ~ 100
+	hatChance = 50
+	#Chance of llamas wearing a monocle in their outfit, in percentage% (0-100)
+	#Range: 0 ~ 100
+	monocleChance = 50
+	#Chance of llamas having a pipe in their outfit, in percentage% (0-100)
+	#Range: 0 ~ 100
+	pipeChance = 50
+	#Chance of llamas wearing a bow tie in their outfit, in percentage% (0-100)
+	#Range: 0 ~ 100
+	bowtieChance = 50
+	#Chance of llamas wearing a fez in their outfit, in percentage% (0-100)
+	#Range: 0 ~ 100
+	fezChance = 50
+	#Chance of llamas wearing a moustache in their outfit, in percentage% (0-100)
+	#Range: 0 ~ 100
+	moustacheChance = 50
+

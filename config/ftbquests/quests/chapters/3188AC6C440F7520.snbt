@@ -1,0 +1,40 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3188AC6C440F7520"
+	group: ""
+	icon: {
+		id: "mekanismtools:bronze_pickaxe"
+	}
+	id: "3188AC6C440F7520"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "78EDBDED3BFEC145"
+		rewards: [
+			{
+				id: "6ED683453DE6CF40"
+				item: {
+					count: 1
+					id: "minecraft:stick"
+				}
+				type: "item"
+			}
+			{
+				count: 16
+				id: "7B69F2DC2F0BB73B"
+				item: {
+					count: 1
+					id: "minecraft:apple"
+				}
+				type: "item"
+			}
+		]
+		tasks: [{
+			id: "41BA785802B6F35E"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+}

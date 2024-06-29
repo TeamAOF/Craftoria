@@ -1,0 +1,223 @@
+
+[general]
+	#true : show all recipes
+	#false : hide ore not exist recipes (can hide recipes when some mod not installed)
+	showOreNotExistRecipes = false
+	#Each recipes output item be determined by this list.
+	#First is Highest.
+	recipeOutputPriority = ["alltheores", "create", "immersiveengineering"]
+
+#processingLevel: Set ores processing max level
+#    5 : can into up x5 (able all procssing)
+#    4 : can into up x4 (disable ore dissolution, slurry crystalizing)
+#    3 : can into up x3 (disable injecting)
+#    2 : can into up x2 (disable purifying and clumps crushing)
+#    1 : reserved (currently same with 0)
+#    0 : disable all processing in this mod
+#disabled processing items are hided your world
+[ores]
+
+	[ores.aluminum]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.amethyst]
+		#Range: 0 ~ 5
+		processingLevel = 5
+
+	[ores.apatite]
+		#Range: 0 ~ 5
+		processingLevel = 5
+
+	[ores.azure_silver]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.bismuth]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.bort]
+		#Range: 0 ~ 5
+		processingLevel = 5
+
+	[ores.cinnabar]
+		#Range: 0 ~ 5
+		processingLevel = 5
+
+	[ores.cobalt]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.crimson_iron]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.desh]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.dilithium]
+		#Range: 0 ~ 5
+		processingLevel = 5
+
+	[ores.draconium]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.electrotine]
+		#Range: 0 ~ 5
+		processingLevel = 5
+
+	[ores.green_sapphire]
+		#Range: 0 ~ 5
+		processingLevel = 5
+
+	[ores.iridium]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.lithium]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.nickel]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.niter]
+		#Range: 0 ~ 5
+		processingLevel = 5
+
+	[ores.peridot]
+		#Range: 0 ~ 5
+		processingLevel = 5
+
+	[ores.platinum]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.ruby]
+		#Range: 0 ~ 5
+		processingLevel = 5
+
+	[ores.sapphire]
+		#Range: 0 ~ 5
+		processingLevel = 5
+
+	[ores.ostrum]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.calorite]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.silver]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.sulfur]
+		#Range: 0 ~ 5
+		processingLevel = 5
+
+	[ores.titanium]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.tungsten]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.zinc]
+		#Range: 0 ~ 5
+		processingLevel = 5
+		#Disable recipe what smelting/blasting dust into ingot.
+		disableDustCooking = false
+
+	[ores.coal]
+		#Exist for modpacks, set greater than 2 to enable this material recipes
+		#less than or equals 2 is use Mekanism Default Recipes
+		#    warning : when enabled, ore block can infinitely regenerate using Mekanism Combiner Default Recipe
+		#    propose remove/override Mekanism Combiner Default Recipe
+		#    e.g.) "ingredient":{"tag":"c:dusts/coal"}},"amount":8
+		#Range: 0 ~ 5
+		processingLevel = 0
+
+	[ores.lapis]
+		#Exist for modpacks, set greater than 2 to enable this material recipes
+		#less than or equals 2 is use Mekanism Default Recipes
+		#    warning : when enabled, ore block can infinitely regenerate using Mekanism Combiner Default Recipe
+		#    propose remove/override Mekanism Combiner Default Recipe
+		#    e.g.) "ingredient":{"tag":"c:dusts/lapis"}},"amount":8
+		#Range: 0 ~ 5
+		processingLevel = 0
+
+	[ores.diamond]
+		#Exist for modpacks, set greater than 2 to enable this material recipes
+		#less than or equals 2 is use Mekanism Default Recipes
+		#    warning : when enabled, ore block can infinitely regenerate using Mekanism Combiner Default Recipe
+		#    propose remove/override Mekanism Combiner Default Recipe
+		#    e.g.) "ingredient":{"tag":"c:dusts/diamond"}},"amount":8
+		#Range: 0 ~ 5
+		processingLevel = 0
+
+	[ores.redstone]
+		#Exist for modpacks, set greater than 2 to enable this material recipes
+		#less than or equals 2 is use Mekanism Default Recipes
+		#    warning : when enabled, ore block can infinitely regenerate using Mekanism Combiner Default Recipe
+		#    propose remove/override Mekanism Combiner Default Recipe
+		#    e.g.) "ingredient":{"tag":"c:dusts/redstone"}},"amount":8
+		#Range: 0 ~ 5
+		processingLevel = 0
+
+	[ores.emerald]
+		#Exist for modpacks, set greater than 2 to enable this material recipes
+		#less than or equals 2 is use Mekanism Default Recipes
+		#    warning : when enabled, ore block can infinitely regenerate using Mekanism Combiner Default Recipe
+		#    propose remove/override Mekanism Combiner Default Recipe
+		#    e.g.) "ingredient":{"tag":"c:dusts/emerald"}},"amount":8
+		#Range: 0 ~ 5
+		processingLevel = 0
+
+	[ores.quartz]
+		#Exist for modpacks, set greater than 2 to enable this material recipes
+		#less than or equals 2 is use Mekanism Default Recipes
+		#    warning : when enabled, ore block can infinitely regenerate using Mekanism Combiner Default Recipe
+		#    propose remove/override Mekanism Combiner Default Recipe
+		#    e.g.) "ingredient":{"tag":"c:dusts/quartz"}},"amount":8
+		#Range: 0 ~ 5
+		processingLevel = 0
+

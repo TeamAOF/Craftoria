@@ -1,0 +1,12 @@
+
+["Pipe Connector Configurations"]
+	#Maximum depth of the pipe connector
+	#Range: 10 ~ 100
+	maxDepth = 50
+	#Maximum iterations of the A* algorithm, Higher numbers will take longer to calculate but will reach longer distances
+	#Range: 10000 ~ 200000
+	maxAStarIterations = 20000
+	#Maximum number of pipes allowed to be placed at once
+	#Range: 100 ~ 1280
+	maxPipeAllowed = 640
+

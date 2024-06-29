@@ -26,11 +26,11 @@ $MODPACK_NAME = "Craftoria"
 $CLIENT_NAME = "Craftoria"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.0.7"
+$MODPACK_VERSION = "0.0.8"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.0.6"
+$LAST_MODPACK_VERSION = "0.0.7"
 
 # Which modloader the modpack uses
 # Can be "forge" or "fabric"
@@ -83,7 +83,8 @@ $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @(
 	"config",
 	"shaderpacks",
 	"global_packs",
-	"defaultconfigs"
+	"defaultconfigs",
+	"kubejs"
 	)
 
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @("spark")

@@ -18,7 +18,8 @@ let debug = false;
 let modPriority = [
   'minecraft',
   'modern_industrialization',
-  'mekanism'
+  'mekanism',
+  'mffs'
 ];
 
 /**
@@ -146,7 +147,7 @@ ServerEvents.recipes(e => {
     e.custom(recipe).id(`craftoria:mekanism/enriching/${input.replace('c:', '').replace(':', '_')}`);
   };
 
-  mekInfuse('mekanism:carbon', 'mekanism:enriched_iron', 'modern_industrialization:steel_dust', 10, 1, 1);
+  // mekInfuse('mekanism:carbon', 'mekanism:enriched_iron', 'modern_industrialization:steel_dust', 10, 1, 1);
   mekInfuse('mekanism:tin', 'c:ingots/copper', 'modern_industrialization:bronze_ingot', 10, 3, 4);
   mekInfuse('mekanism:tin', 'c:dusts/copper', 'modern_industrialization:bronze_dust', 10, 3, 4);
 

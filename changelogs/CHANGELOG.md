@@ -1,3 +1,73 @@
+## Craftoria | v0.0.8
+
+_NeoForge Loader 21.0.41_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.8.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.8.md)_
+
+### Added Mods ✅
+
+  * [Better Than Bunnies](https://www.curseforge.com/minecraft/mc-mods/better-than-bunnies)
+  * [Better Than Llamas](https://www.curseforge.com/minecraft/mc-mods/better-than-llamas)
+  * [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge)
+  * [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat)
+  * [Gravitational Modulating Additional Unit](https://www.curseforge.com/minecraft/mc-mods/gravitational-modulating-additional-unit)
+  * [iChunUtil](https://www.curseforge.com/minecraft/mc-mods/ichunutil)
+  * [Inventory Tweaks - ReFoxed](https://www.curseforge.com/minecraft/mc-mods/inventory-tweaks-refoxed)
+  * [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs)
+  * [More Mekanism Processing](https://www.curseforge.com/minecraft/mc-mods/more-mekanism-processing)
+  * [Pipe Connector](https://www.curseforge.com/minecraft/mc-mods/pipe-connector)
+  * [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)
+  * [Polymorphic Energistics](https://www.curseforge.com/minecraft/mc-mods/polymorphic-energistics)
+  * [Rhino](https://www.curseforge.com/minecraft/mc-mods/rhino)
+  * [Time in a bottle](https://www.curseforge.com/minecraft/mc-mods/time-in-a-bottle-universal)
+  * [Transmog](https://www.curseforge.com/minecraft/mc-mods/transmog)
+
+### Removed Mods ❌
+
+  * [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options) (Replaced by KubeJS)
+  * [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter) (Replaced by Inventory Tweaks)
+
+### Changes/Improvements ⭐
+
+* Disabled Mekanism's Lead, Tin & Uranium ores from generating.
+* Unified Mekanism & Modern Industrialization (Ingots, Blocks, Dusts & Nuggets)
+* Unified recipe viewer inputs of materials.
+* Added Uraninite Ore (Dense) to MI Titanium Drill (Quarry).
+* Added the Completionist Cup block.
+* Whitelisted Waystones within claims.
+* Added resourcepack for dark mode AE2 textures (optional).
+
+### Bug Fixes 🪲
+
+* Fixed a crash when using Stonecutter & Smithing Patterns in AE2.
+* Fixed an issue where keybinds would reset on restarting the game.
+* Fixed an issue with text not showing on MI barrels.
+
+### Recipes 🪵
+
+* New Sink recipe, made harder.  
+![](https://i.imgur.com/xvDMvDj.png)
+
+* New Advanced Block Breaker recipe, made harder.  
+![](https://i.imgur.com/uCI0MYO.png)
+
+* New Advanced Block Placer recipe, made harder.  
+![](https://i.imgur.com/ZkWDzkx.png)
+
+* New Advanced Clicker recipe, made harder.  
+![](https://i.imgur.com/qGDQ5le.png)
+
+* New Advanced Sensor recipe, made harder.  
+![](https://i.imgur.com/Lyi75CG.png)
+
+* New Advanced Dropper recipe, made harder.  
+![](https://i.imgur.com/Jo9J52X.png)
+
+* New Advanced Fluid Placer/Collector recipe, made harder.  
+![](https://i.imgur.com/poZl96t.png)
+
+* New Blazebloom Goo recipe, made harder.  
+![](https://i.imgur.com/O1xZ0UW.png)
+---
+
 ## Craftoria | v0.0.7
 
 _NeoForge Loader 21.0.27_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.7.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.7.md)_
