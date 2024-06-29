@@ -28,9 +28,10 @@ _NeoForge Loader 21.0.41_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 ### Changes/Improvements ⭐
 
 * Disabled Mekanism's Lead, Tin & Uranium ores from generating.
-* Unified Mekanism & Modern Industrialization (Ingots, Blocks, Dusts & Nuggets)
-* Unified recipe viewer inputs of materials.
+* Unified Mekanism, MFFS & Modern Industrialization (Ingots, Blocks, Dusts & Nuggets) **(Big thanks to Phantom)**
+* Unified recipe viewer entries of the above, will no longer show up when searching.
 * Added Uraninite Ore (Dense) to MI Titanium Drill (Quarry).
+* Allow AE2 wrenches to be used with other mods.
 * Added the Completionist Cup block.
 * Whitelisted Waystones within claims.
 * Added resourcepack for dark mode AE2 textures (optional).
