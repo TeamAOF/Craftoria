@@ -6,6 +6,7 @@ _NeoForge Loader 21.0.42_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
 * Fixed void dimension missing.
 * Fixed crashing when right clicking crops.
+* Fixed missing steel dust recipe through mekanism.
 ---
 
 ## Craftoria | v0.0.10
