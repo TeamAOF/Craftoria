@@ -1,3 +1,13 @@
+## Craftoria | v0.0.11
+
+_NeoForge Loader 21.0.42_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.11.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.11.md)_
+
+### Bug Fixes 🪲
+
+* Fixed void dimension missing.
+* Fixed crashing when right clicking crops.
+---
+
 ## Craftoria | v0.0.10
 
 _NeoForge Loader 21.0.42_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.10.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.10.md)_
