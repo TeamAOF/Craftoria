@@ -1,3 +1,23 @@
+## Craftoria | v0.0.10
+
+_NeoForge Loader 21.0.42_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.10.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.10.md)_
+
+### Added Mods ✅
+
+  * [Guard Villagers](https://www.curseforge.com/minecraft/mc-mods/guard-villagers)
+
+### Removed Mods ❌
+
+  * [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat)
+  * [TipTheScales](https://www.curseforge.com/minecraft/mc-mods/tipthescales) (Already a feature in Embeddium)
+
+### Bug Fixes 🪲
+
+* Fixed crashing when switching dimensions.
+* Fixed crashing when using fishing rods from Aquaculture.
+* Fixed some MI blocks using the wrong texture.
+---
+
 ## Craftoria | v0.0.8/0.0.9
 
 _NeoForge Loader 21.0.41_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.8.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.8.md)_
