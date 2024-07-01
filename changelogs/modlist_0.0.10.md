@@ -1,4 +1,4 @@
-## Craftoria - 0.0.11
+## Craftoria - 0.0.10
 
   * [accelerated-decay-neoforge-21.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/accelerated-decay/files/5433036) (by [ErrorMikey](https://www.curseforge.com/members/ErrorMikey/projects))
   * [advancednetherite-neoforge-2.1.5-1.21.jar](https://www.curseforge.com/minecraft/mc-mods/advanced-netherite/files/5427379) (by [AutovwDev](https://www.curseforge.com/members/AutovwDev/projects))
@@ -9,7 +9,7 @@
   * [animal_feeding_trough-1.1.1+1.21-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/animal-feeding-trough/files/5442546) (by [Slexom](https://www.curseforge.com/members/Slexom/projects))
   * [appleskin-neoforge-mc1.21-3.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/appleskin/files/5447879) (by [squeek502](https://www.curseforge.com/members/squeek502/projects))
   * [appliedenergistics2-19.0.7-alpha.jar](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2/files/5480501) (by [thetechnici4n](https://www.curseforge.com/members/thetechnici4n/projects))
-  * [ae2wtlib-19.0.7-alpha.jar](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2-wireless-terminals/files/5487116) (by [Mari_023](https://www.curseforge.com/members/Mari_023/projects))
+  * [ae2wtlib-19.0.4-beta.jar](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2-wireless-terminals/files/5466359) (by [Mari_023](https://www.curseforge.com/members/Mari_023/projects))
   * [Aquaculture-1.21-2.7.3.jar](https://www.curseforge.com/minecraft/mc-mods/aquaculture/files/5484631) (by [Shadow](https://www.curseforge.com/members/Shadow/projects))
   * [architectury-13.0.2-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/architectury-api/files/5472559) (by [shedaniel](https://www.curseforge.com/members/shedaniel/projects))
   * [athena-neoforge-1.21-4.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/athena/files/5431579) (by [CodexAdrian](https://www.curseforge.com/members/CodexAdrian/projects))
@@ -71,9 +71,9 @@
   * [inventoryessentials-neoforge-1.21-21.0.2.jar](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials/files/5426948) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
   * [invtweaks-1.21.0-1.1.1.jar](https://www.curseforge.com/minecraft/mc-mods/inventory-tweaks-refoxed/files/5439664) (by [LobsterJonn](https://www.curseforge.com/members/LobsterJonn/projects))
   * [ironchest-1.21-neoforge-16.0.6.jar](https://www.curseforge.com/minecraft/mc-mods/iron-chests/files/5466218) (by [ProgWML6](https://www.curseforge.com/members/ProgWML6/projects))
-  * [Jade-1.21-NeoForge-15.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/jade/files/5489585) (by [Snownee](https://www.curseforge.com/members/Snownee/projects))
+  * [Jade-1.21-NeoForge-15.0.5.jar](https://www.curseforge.com/minecraft/mc-mods/jade/files/5444008) (by [Snownee](https://www.curseforge.com/members/Snownee/projects))
   * [jamlib-neoforge-1.0.9+1.21.jar](https://www.curseforge.com/minecraft/mc-mods/jamlib/files/5427400) (by [jamalam360](https://www.curseforge.com/members/jamalam360/projects))
-  * [javd-neo-8.0.0+mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/javd/files/5424935) (by [UnRealDinnerbone](https://www.curseforge.com/members/UnRealDinnerbone/projects))
+  * [jags-neo-21.0.0+mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/javd/files/5475149) (by [UnRealDinnerbone](https://www.curseforge.com/members/UnRealDinnerbone/projects))
   * [jei-1.21-neoforge-19.0.0.11.jar](https://www.curseforge.com/minecraft/mc-mods/jei/files/5466551) (by [mezz](https://www.curseforge.com/members/mezz/projects))
   * [jumpoverfences-neoforge-1.21-1.6.0.jar](https://www.curseforge.com/minecraft/mc-mods/jump-over-fences-forge/files/5470124) (by [Kreezxil](https://www.curseforge.com/members/Kreezxil/projects))
   * [jumpboat-1.21.0-1.0.5.jar](https://www.curseforge.com/minecraft/mc-mods/jumpy-boats/files/5439938) (by [LobsterJonn](https://www.curseforge.com/members/LobsterJonn/projects))
@@ -124,7 +124,7 @@
   * [resourcefulconfig-neoforge-1.21-3.0.2.jar](https://www.curseforge.com/minecraft/mc-mods/resourceful-config/files/5481990) (by [ThatGravyBoat](https://www.curseforge.com/members/ThatGravyBoat/projects))
   * [resourcefullib-neoforge-1.21-3.0.9.jar](https://www.curseforge.com/minecraft/mc-mods/resourceful-lib/files/5483169) (by [ThatGravyBoat](https://www.curseforge.com/members/ThatGravyBoat/projects))
   * [rhino-2100.2.5-build.32.jar](https://www.curseforge.com/minecraft/mc-mods/rhino/files/5475557) (by [LatvianModder](https://www.curseforge.com/members/LatvianModder/projects))
-  * [rightclickharvest-neoforge-4.2.0+1.21.jar](https://www.curseforge.com/minecraft/mc-mods/rightclickharvest/files/5427523) (by [jamalam360](https://www.curseforge.com/members/jamalam360/projects))
+  * [rightclickharvest-neoforge-4.3.0+1.21.jar](https://www.curseforge.com/minecraft/mc-mods/rightclickharvest/files/5478983) (by [jamalam360](https://www.curseforge.com/members/jamalam360/projects))
   * [Searchables-neoforge-1.21-1.0.1.jar](https://www.curseforge.com/minecraft/mc-mods/searchables/files/5430128) (by [Jaredlll08](https://www.curseforge.com/members/Jaredlll08/projects))
   * [showcaseitem-1.21-1.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/showcase-item/files/5457238) (by [Ultramegaaa](https://www.curseforge.com/members/Ultramegaaa/projects))
   * [SimpleDiscordRichPresence-neoforge-87.0.0-build.48+mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rich-presence/files/5444039) (by [Sunekaer](https://www.curseforge.com/members/Sunekaer/projects))
