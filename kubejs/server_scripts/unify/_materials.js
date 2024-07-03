@@ -22,10 +22,12 @@ let modPriority = [
   "minecraft",
   "modern_industrialization",
   "mekanism",
+  //"moremekanismprocessing",
 ];
 
 // Add the materials you want to unify here.
 let metals = {
+  // Non-alloy metals
   "iron": ["dust"],
   "gold": ["dust"],
   "copper": ["dust", "nugget"],
@@ -34,9 +36,20 @@ let metals = {
   "lead": ["dust", "nugget", "ingot", "block", "raw"],
   "silver": ["dust", "nugget", "ingot", "block", "raw"],
   "uranium": ["dust", "nugget", "ingot", "block", "raw"],
+  "nickel": ["dust", "nugget", "ingot", "block", "raw"],
+  "platinum": ["dust", "nugget", "ingot", "block", "raw"],
+  "osmium": ["dust", "nugget", "ingot", "block", "raw"],
+  "tungsten": ["dust", "nugget", "ingot", "block", "raw"],
+  "titanium": ["dust", "nugget", "ingot", "block", "raw"],
+  "iridium": ["dust", "nugget", "ingot", "block", "raw"],
+  "zinc": ["dust", "nugget", "ingot", "block", "raw"],
+
+  // Alloy metals
   "bronze": ["dust", "nugget", "ingot", "block"],
   "steel": ["dust", "nugget", "ingot", "block"],
-  "nickel": ["dust", "nugget", "ingot", "block"],
+  "invar": ["dust", "nugget", "ingot", "block"],
+  "electrum": ["dust", "nugget", "ingot", "block"],
+  "cupronickel": ["dust", "nugget", "ingot", "block"],
 };
 
 let gems = {
