@@ -105,7 +105,7 @@ ServerEvents.recipes(e => {
   let oreProcessing = (metal, mod) => {
     enrich(`#c:ores/${metal}`, `${mod}:${metal}_dust`, 1, 2);
     enrich(`#c:raw_materials/${metal}`, `${mod}:${metal}_dust`, 3, 4);
-    enrich(`#c:storage_blocks/raw_${metal}`, `${mod}:${metal}_dust`, 1, 18);
+    enrich(`#c:storage_blocks/raw_${metal}`, `${mod}:${metal}_dust`, 1, 12);
     enrich(`#c:dirty_dusts/${metal}`, `${mod}:${metal}_dust`);
     //console.info(`Added ore processing for ${metal}.`);
   };
