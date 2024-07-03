@@ -60,7 +60,7 @@ ServerEvents.tags("item", e => {
     e.removeAll(tag);
     sortedItems.forEach(item => {
       e.add(tag, item);
-      console.info(`Added ${item} to ${tag}.`);
+      //console.info(`Added ${item} to ${tag}.`);
     });
   });
 });
