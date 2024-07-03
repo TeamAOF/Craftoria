@@ -6,7 +6,7 @@
 ServerEvents.recipes(event => {
   let miQuarryRecipeIDs = [];
 
-  event.forEachRecipe({type: "modern_industrialization:quarry"}, recipe => {
+  event.forEachRecipe({ type: "modern_industrialization:quarry" }, recipe => {
     let id = `${recipe.id}`;
     if (!id.includes("modern_industrialization:quarry/")) return;
     miQuarryRecipeIDs.push(id);
@@ -14,8 +14,8 @@ ServerEvents.recipes(event => {
 
   /**
    * Modern Industrialization Quarry Recipe
-   * @param {Array} input Add the input item, amount and probability as an array.
-   * @param {Array} outputs Add the output items, amount and probability as an array of arrays.
+   * @param {Array} input Add the input item, amount and probability(1 being 100%, 0.01 being 1%) as an array.
+   * @param {Array} outputs Add the output items, amount and probability(1 being 100%, 0.01 being 1%) as an array of arrays.
    * @param {int} eu EU/t consumed by the machine.
    * @param {int} duration Duration of the recipe in ticks.
    * @param {boolean} overwrite Should the recipe overwrite the existing one. (Default: true) Usefull for updating recipes.
@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
       duration: duration,
       item_inputs: {},
       item_outputs: []
-    }
+    };
     if (input.length != 3 || outputs.length == 0) {
       console.error(`Invalid Quarry Recipe: ${input[0]} is invalid, check the recipe format.`);
       return;
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         item: output[0],
         amount: output[1],
         probability: output[2]
-      }
+      };
       recipe.item_outputs.push(item);
     });
 
@@ -62,13 +62,13 @@ ServerEvents.recipes(event => {
       miQuarryRecipeIDs.forEach(recipe => {
         if (!recipe.includes(tempID)) return;
 
-        console.log(`Removing Recipe: ${tempID}`);
-        event.remove({id: tempID});
+        //console.log(`Removing Recipe: ${tempID}`);
+        event.remove({ id: tempID });
       });
     }
 
     event.custom(recipe).id(`craftoria:modern_industrialization/quarry/${input[0].split(":")[1]}`);
-  }
+  };
 
   // Steel Drill
   MIQuarry(["modern_industrialization:steel_drill", 1, 0.04], [
@@ -125,4 +125,4 @@ ServerEvents.recipes(event => {
     ["modern_industrialization:monazite_ore", 1, 0.25],
     ["modern_industrialization:platinum_ore", 1, 0.12]
   ], 32, 600);
-})
+});
