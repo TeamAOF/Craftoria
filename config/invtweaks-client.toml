@@ -41,6 +41,18 @@
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
+		containerClass = "de.mari_023.ae2wtlib.wat.*Screen"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "de.mari_023.ae2wtlib.wet.*Screen"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "de.mari_023.ae2wtlib.wut.*Screen"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
 		containerClass = "com.github.glodblock.epp.client.gui.*"
 		sortRange = ""
 
@@ -70,6 +82,10 @@
 
 	[[sorting.containerOverrides]]
 		containerClass = "tfar.dankstorage.container.DankContainers"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "net.natte.bankstorage.client.screen.BankScreen"
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
