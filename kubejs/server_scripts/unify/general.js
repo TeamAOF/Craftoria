@@ -19,6 +19,28 @@ let logNotFound = (mod, material, type) => {
     console.info(`Could not find ${mod}:${material}_${type} or ${mod}:${type}_${material}, skipping...`);
 };
 
+ServerEvents.tags("item", e => {
+  // This is used to re-order the tags.
+  for (let [material, types] in metals) {
+    types.forEach(type => {
+      if (type === "dust") {
+        e.removeAll(`c:dusts/${material}`);
+
+        modPriority.forEach(mod => {
+          if (ifExists(mod, material, type, false))
+            e.add(`c:dusts/${material}`, `${mod}:${material}_${type}`);
+
+          else if (ifExists(mod, material, type, true))
+            e.add(`c:dusts/${material}`, `${mod}:${type}_${material}`);
+
+          else
+            logNotFound(mod, material, type);
+        });
+      }
+    });
+  }
+});
+
 ServerEvents.recipes(e => {
   let idRemovals = [
     "mffs:steel_compound",

@@ -1,31 +1,32 @@
-RecipeViewerEvents.removeEntries('item', e => {
+RecipeViewerEvents.removeEntries("item", e => {
   let hide = {
-    'steel': ['mekanism', 'mffs'],
-    'bronze': ['mekanism'],
-    'copper': ['mekanism'],
-    'tin': ['mekanism'],
-    'uranium': ['mekanism'],
-    'diamond': ['mekanism'],
-    'gold': ['mekanism'],
-    'iron': ['mekanism'],
-    'emerald': ['mekanism'],
-    'lapis_lazuli': ['mekanism'],
-    'quartz': ['mekanism'],
-    'coal': ['mekanism'],
-    'lead': ['mekanism'],
-    'silver': ['occultism', 'moremekanismprocessing'],
-    'aluminum': ['moremekanismprocessing'],
-    'tungsten': ['moremekanismprocessing'],
-    'titanium': ['moremekanismprocessing'],
-    'platinum': ['moremekanismprocessing'],
-    'nickel': ['moremekanismprocessing'],
-    'iridium': ['moremekanismprocessing'],
+    "iron": ["mekanism", "occultism"],
+    "gold": ["mekanism", "occultism"],
+    "copper": ["mekanism", "occultism"],
+    "steel": ["mekanism", "mffs"],
+    "bronze": ["mekanism"],
+    "tin": ["mekanism"],
+    "uranium": ["mekanism"],
+    "diamond": ["mekanism"],
+    "emerald": ["mekanism"],
+    "lapis_lazuli": ["mekanism"],
+    "quartz": ["mekanism"],
+    "coal": ["mekanism"],
+    "lead": ["mekanism"],
+    "silver": ["occultism", "moremekanismprocessing"],
+    "aluminum": ["moremekanismprocessing"],
+    "tungsten": ["moremekanismprocessing"],
+    "titanium": ["moremekanismprocessing"],
+    "platinum": ["moremekanismprocessing"],
+    "nickel": ["moremekanismprocessing"],
+    "iridium": ["moremekanismprocessing"],
+    "obsidian": ["occultism"],
   };
 
-  let types = ['ingot', 'block', 'dust', 'nugget', 'ore', 'raw'];
+  let types = ["ingot", "block", "dust", "nugget", "ore", "raw"];
 
   [
-    'mffs:steel_compound',
+    "mffs:steel_compound",
   ].forEach(id => {
     e.remove(id);
   });
@@ -33,17 +34,17 @@ RecipeViewerEvents.removeEntries('item', e => {
   for (let [key, value] in hide) {
     value.forEach(mod => {
       switch (mod) {
-        case 'mekanism':
+        case "mekanism":
           types.forEach(type => {
             e.remove(`${mod}:${type}_${key}`);
-            if (type === 'raw')
+            if (type === "raw")
               e.remove(`${mod}:block_${type}_${key}`);
           });
           break;
 
-        case 'moremekanismprocessing':
+        case "moremekanismprocessing":
           types.forEach(type => {
-            if (type !== 'dust')
+            if (type !== "dust")
               e.remove(`${mod}:${key}_${type}`);
             else
               e.remove(`${mod}:${type}_${key}`);
@@ -51,7 +52,7 @@ RecipeViewerEvents.removeEntries('item', e => {
           break;
         default:
           types.forEach(type => {
-            if (type !== 'raw')
+            if (type !== "raw")
               e.remove(`${mod}:${key}_${type}`);
             else {
               e.remove(`${mod}:${type}_${key}`);
@@ -62,10 +63,10 @@ RecipeViewerEvents.removeEntries('item', e => {
       }
     });
   }
-  e.remove('@hammerlib');
+  e.remove("@hammerlib");
 });
 
-ServerEvents.tags('item', event => {
+ServerEvents.tags("item", event => {
 
   const material = [
     "mekanism:tin_ore",
@@ -116,6 +117,6 @@ ServerEvents.tags('item', event => {
   ];
 
   material.forEach((item) => {
-    event.add('c:hidden_from_recipe_viewers', item);
-  })
-})
+    event.add("c:hidden_from_recipe_viewers", item);
+  });
+});
