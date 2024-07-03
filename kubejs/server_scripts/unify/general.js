@@ -20,25 +20,49 @@ let logNotFound = (mod, material, type) => {
 };
 
 ServerEvents.tags("item", e => {
+  let tags = [];
   // This is used to re-order the tags.
-  for (let [material, types] in metals) {
-    types.forEach(type => {
-      if (type === "dust") {
-        e.removeAll(`c:dusts/${material}`);
+  [metals, gems].forEach(materials => {
+    for (let [material, types] of Object.entries(materials)) {
+      types.forEach(type => {
+        if (type === "raw")
+          type = "raw_material";
+        else if (type === "block")
+          type = "storage_block";
 
-        modPriority.forEach(mod => {
-          if (ifExists(mod, material, type, false))
-            e.add(`c:dusts/${material}`, `${mod}:${material}_${type}`);
+        if (!tags.includes(`c:${type}s/${material}`)) {
+          tags.push(`c:${type}s/${material}`);
+        }
+      });
+    };
+  });
 
-          else if (ifExists(mod, material, type, true))
-            e.add(`c:dusts/${material}`, `${mod}:${type}_${material}`);
-
-          else
-            logNotFound(mod, material, type);
-        });
-      }
+  tags.forEach(tag => {
+    let items = e.get(tag).getObjectIds();
+    let sortedItems = [];
+    items.forEach(item => {
+      sortedItems.push(item);
     });
-  }
+    sortedItems = sortedItems.sort((a, b) => {
+      a = `${a}`;
+      b = `${b}`;
+      // Sort by modid, prefer mods in the modPriority list. If not in the list, put it at the end.
+      let modA = modPriority.indexOf(a.split(":")[0]);
+      let modB = modPriority.indexOf(b.split(":")[0]);
+      if (modA === -1) modA = modPriority.length;
+      if (modB === -1) modB = modPriority.length;
+
+      if (modA < modB) return -1;
+      if (modA > modB) return 1;
+      return 0;
+    });
+
+    e.removeAll(tag);
+    sortedItems.forEach(item => {
+      e.add(tag, item);
+      console.info(`Added ${item} to ${tag}.`);
+    });
+  });
 });
 
 ServerEvents.recipes(e => {
