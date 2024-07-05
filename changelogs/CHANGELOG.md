@@ -19,7 +19,7 @@ _NeoForge Loader 21.0.56_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
   * [Underground Villages](https://www.curseforge.com/minecraft/mc-mods/underground-villages)
   * [ZeroCore 2](https://www.curseforge.com/minecraft/mc-mods/zerocore)
 
-  ### Removed Mods ❌
+### Removed Mods ❌
 
   * [HammerLib](https://www.curseforge.com/minecraft/mc-mods/hammer-lib)
 
