@@ -1,3 +1,41 @@
+## Craftoria | v0.0.12
+
+_NeoForge Loader 21.0.56_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.12.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.12.md)_
+
+### Added Mods ✅
+
+  * [Applied Flux](https://www.curseforge.com/minecraft/mc-mods/applied-flux)
+  * [Crafting Station](https://www.curseforge.com/minecraft/mc-mods/crafting-station)
+  * [Dark Mode Everywhere](https://www.curseforge.com/minecraft/mc-mods/dark-mode-everywhere)
+  * [Ding (Forge)](https://www.curseforge.com/minecraft/mc-mods/ding)
+  * [Extreme Reactors](https://www.curseforge.com/minecraft/mc-mods/extreme-reactors)
+  * [Forgiving Void](https://www.curseforge.com/minecraft/mc-mods/forgiving-void)
+  * [Glodium](https://www.curseforge.com/minecraft/mc-mods/glodium)
+  * [PolyLib](https://www.curseforge.com/minecraft/mc-mods/polylib)
+  * [Shrink.](https://www.curseforge.com/minecraft/mc-mods/shrink_)
+  * [Thaumon](https://www.curseforge.com/minecraft/mc-mods/thaumon)
+  * [Towers of the Wild Modded](https://www.curseforge.com/minecraft/mc-mods/towers-of-the-wild-modded)
+  * [Traveler's Backpack](https://www.curseforge.com/minecraft/mc-mods/travelers-backpack)
+  * [Underground Villages](https://www.curseforge.com/minecraft/mc-mods/underground-villages)
+  * [ZeroCore 2](https://www.curseforge.com/minecraft/mc-mods/zerocore)
+
+  ### Removed Mods ❌
+
+  * [HammerLib](https://www.curseforge.com/minecraft/mc-mods/hammer-lib)
+
+### Changes/Improvements ⭐
+
+* Disable inventory sorting in ae2wtlib & bank storage screens.
+* Unification script rewrite, should handle recipes better (Thanks Phantom).
+
+### Bug Fixes 🪲
+
+* Fixed modular routers crashing with newer Neo Loader.
+* Fixed missing Theurgy recipes.
+* Fixed mining gadgets crashing when right clicked.
+* Fixed an issue where item amounts in certain recipes would show wrong.
+---
+
 ## Craftoria | v0.0.11
 
 _NeoForge Loader 21.0.42_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.11.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.11.md)_
