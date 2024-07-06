@@ -1,3 +1,204 @@
+## Craftoria | v0.0.12
+
+_NeoForge Loader 21.0.56_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.12.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.12.md)_
+
+### Added Mods ✅
+
+  * [Applied Flux](https://www.curseforge.com/minecraft/mc-mods/applied-flux)
+  * [Crafting Station](https://www.curseforge.com/minecraft/mc-mods/crafting-station)
+  * [Dark Mode Everywhere](https://www.curseforge.com/minecraft/mc-mods/dark-mode-everywhere)
+  * [Ding (Forge)](https://www.curseforge.com/minecraft/mc-mods/ding)
+  * [Extreme Reactors](https://www.curseforge.com/minecraft/mc-mods/extreme-reactors)
+  * [Forgiving Void](https://www.curseforge.com/minecraft/mc-mods/forgiving-void)
+  * [Glodium](https://www.curseforge.com/minecraft/mc-mods/glodium)
+  * [PolyLib](https://www.curseforge.com/minecraft/mc-mods/polylib)
+  * [Shrink.](https://www.curseforge.com/minecraft/mc-mods/shrink_)
+  * [Thaumon](https://www.curseforge.com/minecraft/mc-mods/thaumon)
+  * [Towers of the Wild Modded](https://www.curseforge.com/minecraft/mc-mods/towers-of-the-wild-modded)
+  * [Traveler's Backpack](https://www.curseforge.com/minecraft/mc-mods/travelers-backpack)
+  * [Underground Villages](https://www.curseforge.com/minecraft/mc-mods/underground-villages)
+  * [ZeroCore 2](https://www.curseforge.com/minecraft/mc-mods/zerocore)
+
+### Removed Mods ❌
+
+  * [HammerLib](https://www.curseforge.com/minecraft/mc-mods/hammer-lib)
+
+### Changes/Improvements ⭐
+
+* Disable inventory sorting in ae2wtlib & bank storage screens.
+* Unification script rewrite, should handle recipes better (Thanks Phantom).
+
+### Bug Fixes 🪲
+
+* Fixed modular routers crashing with newer Neo Loader.
+* Fixed missing Theurgy recipes.
+* Fixed mining gadgets crashing when right clicked.
+* Fixed an issue where item amounts in certain recipes would show wrong.
+---
+
+## Craftoria | v0.0.11
+
+_NeoForge Loader 21.0.42_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.11.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.11.md)_
+
+### Bug Fixes 🪲
+
+* Fixed void dimension missing.
+* Fixed crashing when right clicking crops.
+* Fixed missing steel dust recipe through mekanism.
+---
+
+## Craftoria | v0.0.10
+
+_NeoForge Loader 21.0.42_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.10.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.10.md)_
+
+### Added Mods ✅
+
+  * [Guard Villagers](https://www.curseforge.com/minecraft/mc-mods/guard-villagers)
+
+### Removed Mods ❌
+
+  * [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat)
+  * [TipTheScales](https://www.curseforge.com/minecraft/mc-mods/tipthescales) (Already a feature in Embeddium)
+
+### Bug Fixes 🪲
+
+* Fixed crashing when switching dimensions.
+* Fixed crashing when using fishing rods from Aquaculture.
+* Fixed some MI blocks using the wrong texture.
+---
+
+## Craftoria | v0.0.8/0.0.9
+
+_NeoForge Loader 21.0.41_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.8.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.8.md)_
+
+### Added Mods ✅
+
+  * [Better Than Bunnies](https://www.curseforge.com/minecraft/mc-mods/better-than-bunnies)
+  * [Better Than Llamas](https://www.curseforge.com/minecraft/mc-mods/better-than-llamas)
+  * [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge)
+  * [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat)
+  * [Gravitational Modulating Additional Unit](https://www.curseforge.com/minecraft/mc-mods/gravitational-modulating-additional-unit)
+  * [iChunUtil](https://www.curseforge.com/minecraft/mc-mods/ichunutil)
+  * [Inventory Tweaks - ReFoxed](https://www.curseforge.com/minecraft/mc-mods/inventory-tweaks-refoxed)
+  * [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs)
+  * [More Mekanism Processing](https://www.curseforge.com/minecraft/mc-mods/more-mekanism-processing)
+  * [Pipe Connector](https://www.curseforge.com/minecraft/mc-mods/pipe-connector)
+  * [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)
+  * [Polymorphic Energistics](https://www.curseforge.com/minecraft/mc-mods/polymorphic-energistics)
+  * [Rhino](https://www.curseforge.com/minecraft/mc-mods/rhino)
+  * [Time in a bottle](https://www.curseforge.com/minecraft/mc-mods/time-in-a-bottle-universal)
+  * [Transmog](https://www.curseforge.com/minecraft/mc-mods/transmog)
+
+### Removed Mods ❌
+
+  * [Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options) (Replaced by KubeJS)
+  * [Guard Villagers](https://www.curseforge.com/minecraft/mc-mods/guard-villagers) (Needs updating for newer NF loader changes)
+  * [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter) (Replaced by Inventory Tweaks)
+
+### Changes/Improvements ⭐
+
+* Disabled Mekanism's Lead, Tin & Uranium ores from generating.
+* Unified Mekanism, MFFS & Modern Industrialization (Ingots, Blocks, Dusts & Nuggets) **(Big thanks to Phantom)**
+* Unified recipe viewer entries of the above, will no longer show up when searching.
+* Added Uraninite Ore (Dense) to MI Titanium Drill (Quarry).
+* Allow AE2 wrenches to be used with other mods.
+* Added the Completionist Cup block.
+* Whitelisted Waystones within claims.
+* Added resourcepack for dark mode AE2 textures (optional).
+
+### Bug Fixes 🪲
+
+* Fixed a crash when using Stonecutter & Smithing Patterns in AE2.
+* Fixed an issue where keybinds would reset on restarting the game.
+* Fixed an issue with text not showing on MI barrels.
+
+### Recipes 🪵
+
+* New Sink recipe, made harder.  
+![](https://i.imgur.com/xvDMvDj.png)
+
+* New Advanced Block Breaker recipe, made harder.  
+![](https://i.imgur.com/uCI0MYO.png)
+
+* New Advanced Block Placer recipe, made harder.  
+![](https://i.imgur.com/ZkWDzkx.png)
+
+* New Advanced Clicker recipe, made harder.  
+![](https://i.imgur.com/qGDQ5le.png)
+
+* New Advanced Sensor recipe, made harder.  
+![](https://i.imgur.com/Lyi75CG.png)
+
+* New Advanced Dropper recipe, made harder.  
+![](https://i.imgur.com/Jo9J52X.png)
+
+* New Advanced Fluid Placer/Collector recipe, made harder.  
+![](https://i.imgur.com/poZl96t.png)
+
+* New Blazebloom Goo recipe, made harder.  
+![](https://i.imgur.com/O1xZ0UW.png)
+---
+
+## Craftoria | v0.0.7
+
+_NeoForge Loader 21.0.27_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.7.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.7.md)_
+
+### Added Mods ✅
+
+  * [Global Packs](https://www.curseforge.com/minecraft/mc-mods/drp-global-datapack)
+
+### Removed Mods ❌
+
+  * [AEInfinityBooster](https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster) (Part of AE2 Wireless Addon)
+  * [Project: Vibrant Journeys](https://www.curseforge.com/minecraft/mc-mods/project-vibrant-journeys)
+
+### Bug Fixes 🪲
+
+* Fixed crashing when breaking blocks.
+---
+
+
+## Craftoria | v0.0.6
+
+_NeoForge Loader 21.0.29_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.6.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.6.md)_
+
+### Added Mods ✅
+
+  * [AEInfinityBooster](https://www.curseforge.com/minecraft/mc-mods/aeinfinitybooster)
+  * [FramedBlocks](https://www.curseforge.com/minecraft/mc-mods/framedblocks)
+  * [Iron Chests](https://www.curseforge.com/minecraft/mc-mods/iron-chests)
+  * [Jump Over Fences](https://www.curseforge.com/minecraft/mc-mods/jump-over-fences-forge)
+  * [Project: Vibrant Journeys](https://www.curseforge.com/minecraft/mc-mods/project-vibrant-journeys)
+  * [Showcase Item](https://www.curseforge.com/minecraft/mc-mods/showcase-item)
+  * [Simple Discord Rich Presence](https://www.curseforge.com/minecraft/mc-mods/simple-discord-rich-presence)
+  * [Tool Belt](https://www.curseforge.com/minecraft/mc-mods/tool-belt)
+  * [Xaero's World Map](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map)
+  * [XP Tome](https://www.curseforge.com/minecraft/mc-mods/xp-tome)
+
+### Removed Mods ❌
+
+ * [TrashSlot](https://www.curseforge.com/minecraft/mc-mods/trashslot)
+
+### Changes/Improvements ⭐
+
+* Added custom menu buttons (Textures & Discord Invite).
+* Added icons for modded mobs to Xaero's Map.
+* Improved waystones textures/models.
+* Nerfed Nitro Reactor generation rates (200k FE/t > 150k FE/t)
+* Very cool rich presence for Discord.
+* Added the names of all Team AOE members to the FFB merchant.
+* Minimap is now round instead of square.
+* Changed keybind of Chunks world map to J.
+
+### Bug Fixes 🪲
+
+* Fixed FacadeRecipe out of bound crashes in AE2 terminals.
+* Fixed mod resources loading above custom ones.
+* Fixed missing recipe of Researching Table.
+* Fixed logo incorrectly auto scaling to resolution in main menu.
+* Fixed keybindings resetting on restarts.
+---
+
 ## Craftoria | v0.0.5
 
 _NeoForge Loader 21.0.25_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.5.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.5.md)_

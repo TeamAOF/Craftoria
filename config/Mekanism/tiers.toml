@@ -198,28 +198,28 @@
 
 		#Logistical Transporters
 		[tier.transmitters.items]
-			#Item throughput rate of Basic logistical transporters in items/half second.
+			#Item throughput rate of Basic logistical transporters in items/half second. This value assumes a target tick rate of 20 ticks per second.
 			#Range: > 1
 			basicPullAmount = 1
-			#Five times the travel speed in m/s of Basic logistical transporter.
+			#Five times the travel speed in m/s of Basic logistical transporter. This value assumes a target tick rate of 20 ticks per second.
 			#Range: > 1
 			basicSpeed = 5
-			#Item throughput rate of Advanced logistical transporters in items/half second.
+			#Item throughput rate of Advanced logistical transporters in items/half second. This value assumes a target tick rate of 20 ticks per second.
 			#Range: > 1
 			advancedPullAmount = 16
-			#Five times the travel speed in m/s of Advanced logistical transporter.
+			#Five times the travel speed in m/s of Advanced logistical transporter. This value assumes a target tick rate of 20 ticks per second.
 			#Range: > 1
 			advancedSpeed = 10
-			#Item throughput rate of Elite logistical transporters in items/half second.
+			#Item throughput rate of Elite logistical transporters in items/half second. This value assumes a target tick rate of 20 ticks per second.
 			#Range: > 1
 			elitePullAmount = 32
-			#Five times the travel speed in m/s of Elite logistical transporter.
+			#Five times the travel speed in m/s of Elite logistical transporter. This value assumes a target tick rate of 20 ticks per second.
 			#Range: > 1
 			eliteSpeed = 20
-			#Item throughput rate of Ultimate logistical transporters in items/half second.
+			#Item throughput rate of Ultimate logistical transporters in items/half second. This value assumes a target tick rate of 20 ticks per second.
 			#Range: > 1
 			ultimatePullAmount = 64
-			#Five times the travel speed in m/s of Ultimate logistical transporter.
+			#Five times the travel speed in m/s of Ultimate logistical transporter. This value assumes a target tick rate of 20 ticks per second.
 			#Range: > 1
 			ultimateSpeed = 50
 

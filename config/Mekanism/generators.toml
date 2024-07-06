@@ -146,4 +146,7 @@
 		#Amount of heated coolant (mB) that each block of the fission reactor contributes to the volume. Max = volume * heatedCoolantPerTank
 		#Range: 1000 ~ 1581510980256305
 		heatedCoolantPerTank = 1000000
+		#The percentage of waste in a fission reactor's output waste tank that is necessary to trigger the excess waste .
+		#Range: 0.001 ~ 1.0
+		excessWaste = 0.9
 
