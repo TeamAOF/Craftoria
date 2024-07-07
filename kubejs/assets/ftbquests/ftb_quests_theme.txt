@@ -80,7 +80,8 @@ checkmark_task_inactive: ftblibrary:icons/accept_gray
 [40CEA39FE5F5225D]
 dependency_line_texture:            ftbquests:textures/gui/flowing_mekanism.png
 dependency_line_uncompleted_color:  #44B3B3A3
-dependency_line_thickness:          0.3
+dependency_line_selected_speed:     1.0
+dependency_line_unselected_speed:   0.5
 
 [5A3894BACC5E8994]
 dependency_line_texture:            theurgy:textures/block/sal_ammoniac/still.png
