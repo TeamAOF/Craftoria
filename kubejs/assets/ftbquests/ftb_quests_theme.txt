@@ -1,5 +1,5 @@
 [*]
-background:          ftbquests:textures/gui/background_warm.png; color=#D8888888  ; tile_size=64
+background:          ftbquests:textures/gui/background_warm_black.png; color=#F8ffffff  ; tile_size=64
 extra_quest_shapes:  diamond, pentagon, hexagon, octagon, heart, gear
 
 text_color:          #FFFFFF
@@ -63,7 +63,7 @@ quest_completed_color:              #C891C43F
 quest_started_color:                #C873B6AC
 quest_not_started_color:            #96FFFFFF
 quest_locked_color:                 #C8A45031
-dependency_line_texture:            ftbquests:textures/gui/arrow_f.b.png
+dependency_line_texture:            ftbquests:textures/gui/flowing_a.png
 dependency_line_completed_color:    #91C43F
 dependency_line_uncompleted_color:  #C8B3B3A3
 dependency_line_requires_color:     #A45031
@@ -76,3 +76,9 @@ pinned_quest_size:                  0.75
 
 checkmark_task_active:   ftblibrary:icons/accept
 checkmark_task_inactive: ftblibrary:icons/accept_gray
+
+[5A3894BACC5E8994]
+dependency_line_texture:            theurgy:textures/block/sal_ammoniac/still.png
+
+[70FFEE37C7ABD690]
+dependency_line_texture:            ftbquests:textures/gui/lines_ae2.png
