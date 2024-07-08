@@ -14,7 +14,15 @@
 	quest.0035439F73199781.quest_subtitle: "And they call this \"steel\""
 	quest.0035439F73199781.title: "&eEnergized Steel"
 	quest.011E9553CDCAE218.title: "4k Storage Component"
-	quest.02272D430F08B1DC.quest_desc: ["Now you can make a large tank! This is a tank multiblock that can store 64,000mb &oper&r block within the total volume the tank takes up, air blocks and solid. When you place down a Large Tank, open it's GUI and check out the top left. It'll let you choose which size you want. Once you've chosen, hold out your trusty wrench and a hologram will show you where to place blocks. Use a Large Tank Hatch too. It works just like other hatches, aside from it only being a point of access to the tank. It'll input and output from any hatches you put on it."]
+	quest.02272D430F08B1DC.quest_desc: [
+		"  Now you can make a large tank! This is a tank multiblock that can store 64,000mb &oper&r block within the total volume the tank takes up, air blocks and solid."
+		""
+		"  When you place down a Large Tank, open it's GUI and check out the top left. It'll let you choose which size you want. "
+		""
+		"  Once you've chosen, hold out your trusty wrench and a hologram will show you where to place blocks."
+		""
+		"  Use a Large Tank Hatch too. It works just like other hatches, aside from it only being a point of access to the tank. It'll input and output from any hatches you put on it."
+	]
 	quest.03CF6D6277D93A4A.title: "Gauge Dropper"
 	quest.03E0ADE2191CC3FB.title: "Advanced Induction Cell"
 	quest.048328EEBEEC9C94.title: "Hazmat"
@@ -67,12 +75,11 @@
 	quest.08A2F489A73BE55B.title: "Ultimate Enriching Factory"
 	quest.08BE35FB8E58C4B5.title: "Basic Sawing Factory"
 	quest.091C2772ED417247.quest_desc: [
-		"  Now that you're producing energy in the &6medium voltage tier&r, you'll need to make sure your machines can accept that new found power. Normally, &6cables wont even connect to machines if they aren't of the same tier&r. But, by placing an &bAdvanced Machine Hull&r (or higher tier) into the slot in the top right of the machine, you'll have upgraded the machine to the tier of power it associates with it. By default, electric machines are already at the &bBasic Machine Hull&r tier and there is no need to put &bBasic Machine Hulls&r into the slot. I'll show you which hulls are for which power tier."
+		"  Now that you're producing energy in the &6medium voltage tier&r, you'll need to make sure your machines can accept that new found power."
 		""
+		"  Normally, &6cables wont even connect to machines if they aren't of the same tier&r. But, by placing an &bAdvanced Machine Hull&r (or higher tier) into the slot in the top right of the machine, you'll have upgraded the machine to the tier of power it associates with it."
 		""
-		""
-		""
-		""
+		"  By default, electric machines are already at the &bBasic Machine Hull&r tier and there is no need to put &bBasic Machine Hulls&r into the slot. I'll show you which hulls are for which power tier."
 		""
 		"  &6Make sure you check for which machines &oactually&r&6 need the upgrades&r so you aren't wasting resources on machines that don't really need the extra boost."
 	]
@@ -104,10 +111,15 @@
 	quest.0B94435972292812.title: "Spatial IO Port"
 	quest.0C1C61B4554B38E5.title: "Combiner"
 	quest.0C6D0B1C1AF75292.quest_desc: [
-		"  Say my name. ||Winston||? You're god damn right. The &bChemical Reactor&r can be used as an enclosed machine to take advantage of the&6 chemical reaction between substances&r in this world to make new things. The &bChemical Reactor&r will encourage these reactions and keep them isolated so you won't be hurt or get sick from released fumes, liquids, or solids."
+		"  Winston? You're god damn right."
+		""
+		"  The &bChemical Reactor&r can be used as an enclosed machine to take advantage of the&6 chemical reaction between substances&r in this world to make new things."
+		""
+		"  The &bChemical Reactor&r will encourage these reactions and keep them isolated so you won't be hurt or get sick from released fumes, liquids, or solids."
 		""
 		"  Now, what do you say? Let's get cookin'."
 	]
+	quest.0C6D0B1C1AF75292.quest_subtitle: "Say My Name!"
 	quest.0C6D0B1C1AF75292.title: "Chemical Reactor"
 	quest.0DA354D54D288D20.title: "Basic Thermodynamic Conductor"
 	quest.0E30CFA6C5B58BEA.quest_desc: ["This &bVat &fallows you to convert your &bAlchemical Niter &ffrom one tier to another."]
@@ -159,7 +171,11 @@
 	quest.135FBE79D4415F15.title: "Legalized Nuclear Bomb"
 	quest.1388262B2C874C1D.title: "Damaged Budding Certus Quartz"
 	quest.140E69B52907A2CD.title: "Printed Logic Circuit"
-	quest.141E3D92CBA9F1B3.quest_desc: ["  This is a new electric machine that uses centripetal force to &6separate mixtures and items made of multiple materials into separate items&r. In simple terms, it splits items by spinning them very fast. For example, you can use it to make &bCarbon Dust&r by centrifuging &bCoal Dust&r to unlock a better recipe for &bSteel&r and &bSilicon&r."]
+	quest.141E3D92CBA9F1B3.quest_desc: [
+		"  This is a new electric machine that uses centripetal force to &6separate mixtures and items made of multiple materials into separate items&r."
+		""
+		"  In simple terms, it splits items by spinning them very fast. For example, you can use it to make &bCarbon Dust&r by centrifuging &bCoal Dust&r to unlock a better recipe for &bSteel&r and &bSilicon&r."
+	]
 	quest.141E3D92CBA9F1B3.title: "Centrifuge"
 	quest.14B2E5EA9AF04DA9.title: "Advanced Energy Cube"
 	quest.151E812270A52250.title: "Crafting Unit"
@@ -196,7 +212,12 @@
 		"  Cables follow the same rules that fluid and item pipes follow. Using a &bWrench&r on them will disconnect connections and shift right clicking will break them, this time losing the power in that specific section of cable network."
 	]
 	quest.162DD68C3B91FC5E.title: "Energy Transfer"
-	quest.163BCEEEE08F3898.quest_desc: ["  The &bPolarizer&r, well, polarizes stuff! What this means is that it's ||electrons|| are lined up and thus the metal you feed into it becomes magnetic. &bPolarized Rods&r don't have the most uses, but &6using them for the automation of motors is perfect&r!"]
+	quest.163BCEEEE08F3898.quest_desc: [
+		"  The &bPolarizer&r, well, polarizes stuff! What this means is that it's ||electrons|| are lined up and thus the metal you feed into it becomes magnetic."
+		""
+		"  &bPolarized Rods&r don't have the most uses, but &6using them for the automation of motors is perfect&r!"
+		"{image:modern_industrialization:block/machines/polarizer/overlay_front_active width:32 height:32 align:center}"
+	]
 	quest.163BCEEEE08F3898.title: "Polarizer"
 	quest.164F4710E109F7F2.quest_desc: [
 		"  Time for that beautifully shining &bOrange Ingot&r? You'll need to grab some of the &bCopper&r and &bTin&r dust you get from the &bForge Hammer&r to make it. It's a simple mixture of &63:1&r &bCopper&r to &bTin&r in your crafting grid. Once you &6progress&r, you'll find a way to produce this mixture more &6efficiently&r since you're spilling some &bdust&r making it on hand."
@@ -227,7 +248,13 @@
 	quest.16E5B09AA7E6A487.quest_subtitle: "All Aboard the Item Express!"
 	quest.16E5B09AA7E6A487.title: "Conveyor Belts"
 	quest.174680D8F6488D5F.title: "Item Cell Housing"
-	quest.176524D0E4475298.quest_desc: ["  With your freshly drilled &bCrude Oil&r you can make a large array of items, however &6you will need to refine it to use it&r. Currently it's pretty useless in an industrial sense. That's where the &bDistillery&r comes into play! &6You can refine or &odistill&r &6fluids into it's lighter parts&r. With this &bDistillery&r you can only refine down to one fluid at a time. Just keep working, soon enough you'll be able to extract many fluids at once."]
+	quest.176524D0E4475298.quest_desc: [
+		"  With your freshly drilled &bCrude Oil&r you can make a large array of items, however &6you will need to refine it to use it&r. Currently it's pretty useless in an industrial sense."
+		""
+		"  That's where the &bDistillery&r comes into play! &6You can refine or &odistill&r &6fluids into it's lighter parts&r. With this &bDistillery&r you can only refine down to one fluid at a time."
+		""
+		"  Just keep working, soon enough you'll be able to extract many fluids at once."
+	]
 	quest.176524D0E4475298.title: "Distillery"
 	quest.17C1F2791A6E0676.title: "Speed Upgrade"
 	quest.17E8751018E9E0F6.title: "Dense Energy Cell"
@@ -235,7 +262,11 @@
 	quest.186F257352F2E844.quest_desc: ["  This machine calls for a whole 'nother level of strength. Time to put that new &bTitanium&r you've made to use. The &bPressurizer&r allows you to pressurize &bWater&r &6into &bHP&r&6, or &bhigh pressure, water&6 and &r&bSteam&r &6into &bHP Steam&r. It also works the other way around to depressurize the fluids. The &bPressurizer&r also &6allows you to collect &bLiquid Air&r &6via the &bAir Intake&r, plus it's much more efficient than the &bVacuum Freezer&r."]
 	quest.186F257352F2E844.title: "Pressurizer"
 	quest.18956DB32D96ED2B.title: "Medium Spatial Component"
-	quest.1987DF7742136DC4.quest_desc: ["  Remember when I said the &bDistillery&r could only output one type of fluid per cycle? Well, this is your upgrade! &6You can choose how many layers you'd like to, up to 9&r, and it'll output one fluid &oper layer&r! To choose which size you want to have the &bDistillation Tower&r set to, use the selector in the top left of it's screen. Happy Distilling!"]
+	quest.1987DF7742136DC4.quest_desc: [
+		"  Remember when I said the &bDistillery&r could only output one type of fluid per cycle? Well, this is your upgrade! &6You can choose how many layers you'd like to, up to 9&r, and it'll output one fluid &oper layer&r!"
+		""
+		"  To choose which size you want to have the &bDistillation Tower&r set to, use the selector in the top left of it's screen. Happy Distilling!"
+	]
 	quest.1987DF7742136DC4.title: "Distillation Tower"
 	quest.19C33613F2811BAA.title: "Terminal"
 	quest.19F7B6A670D4A707.quest_desc: ["Obtained from the &bDistiller, Mercury &fin its rawest form."]
@@ -255,7 +286,13 @@
 	]
 	quest.1C25114D2AF71C35.title: "Implosion Compressor"
 	quest.1C7CCCBD98BC295E.title: "Inverted Toggle Bus"
-	quest.1CA2825FFA775BBE.quest_desc: ["  This is a new electric machine that uses strong electric currents to split materials into different parts. Most notably, you can &6split &bWater&r &6into it's two major components: &bHydrogen&r &6and &bOxygen&r. This process is called&6 Electrolysis&r and it works by using electric current to split ||ionic compounds|| into their elements."]
+	quest.1CA2825FFA775BBE.quest_desc: [
+		"  This is a new electric machine that uses strong electric currents to split materials into different parts."
+		""
+		"  Most notably, you can &6split &bWater&r &6into it's two major components: &bHydrogen&r &6and &bOxygen&r."
+		""
+		"  This process is called&6 Electrolysis&r and it works by using electric current to split ||ionic compounds|| into their elements."
+	]
 	quest.1CA2825FFA775BBE.title: "Electrolyzer"
 	quest.1CC910880728D896.quest_desc: [
 		"  Did you have fun with &bNuclear Fission&r? Well, it's time for &bNuclear Fusion&r! Instead of splitting a heavy, unstable nucleus into two lighter nuclei, &bfusion&r will combine together two light nuclei which in turn releases vast amounts of energy. This energy can be contained and used to produce &bHelium Plasma&r, an extremely energy dense fluid that can be used as the best power source in the world."
@@ -352,9 +389,7 @@
 	quest.247E497BC6DE25CE.quest_desc: [""]
 	quest.247E497BC6DE25CE.title: "Robit"
 	quest.24A4F1AA0BFFE867.quest_desc: [
-		"&eElectric Blast Furnace (EBF)"
-		""
-		"  Time to heat things up by a few notches? This is the electric version of the &bSteam Blast Furnace&r. The &bElectric Blast Furnace&r uses induction heating to produce extreme temperatures, unlocking a plethora of new recipes. Plus, it's &6overclock is bounded to 128 EU/t by default&r, just like other multiblock electric machines."
+		"  This is the electric version of the &bSteam Blast Furnace&r. The &bElectric Blast Furnace (aka EBF)&r uses induction heating to produce extreme temperatures, unlocking a plethora of new recipes. Plus, it's &6overclock is bounded to 128 EU/t by default&r, just like other multiblock electric machines."
 		""
 		"  The &bElectronic Blast Furnace&r or &bEBF&r is made out of purely &bHeatproof Machine Casings&r and &bCupronickel Coils&r. &6Use your &bWrench&r &6to see the mutliblock's shape and block placement&r. The controller is placed on the bottom layer and hatches and be placed on the top or bottom layer."
 		""
@@ -362,10 +397,17 @@
 		""
 		"  You'll also need item or fluid input hatches and item or fluid output hatches based off of the use case of the &bEBF&r. Check your REI for it's new recipes and choose hatches based off your needs."
 	]
+	quest.24A4F1AA0BFFE867.quest_subtitle: "It's Getting Hot In Here"
 	quest.24A4F1AA0BFFE867.title: "Electric Blast Furnace"
 	quest.24B44DAA8C43CF11.title: "Configurator"
 	quest.24E5FA9129987168.title: "Wireless Crafting Terminal"
-	quest.250D1E2BFE6E0D50.quest_desc: ["  Upgrade those &bLarge Steam Boilers&r already! This advanced version can &6quadruple the &bSteam&r &6production to 1024 mb/t of steam at full temperature&r. It's a little taller so remember to use the &bWrench&r to see multiblock shape and block placement."]
+	quest.250D1E2BFE6E0D50.quest_desc: [
+		"  Upgrade those &bLarge Steam Boilers&r already! "
+		""
+		"  This advanced version can &6quadruple the &bSteam&r &6production to 1024 mb/t of steam at full temperature&r."
+		""
+		"  It's a little taller so remember to use the &bWrench&r to see multiblock shape and block placement."
+	]
 	quest.250D1E2BFE6E0D50.title: "Advanced Large Steam Boiler"
 	quest.255021677AF472E9.title: "Reformation Array"
 	quest.2571BC62616A45AB.title: "QIO Dashboard"
@@ -405,9 +447,16 @@
 	]
 	quest.2B1717F5D6E20B79.title: "UU Matter Bucket"
 	quest.2B3B96DDFE5D3ACA.title: "Boiler Casing"
-	quest.2B4BFD88DF1A934D.quest_desc: ["  Time to make &bAluminum&r! It is a third the weight of steel, yet ductile and highly malleable. It's made from heating up and extracting it from &bBauxite&r. You can do this in your newly formed &bEBF&r. &6Make sure to automate &bAluminum&r production as you'll end up using A LOT of it&r."]
+	quest.2B4BFD88DF1A934D.quest_desc: ["  It is a third the weight of steel, yet ductile and highly malleable. It's made from heating up and extracting it from &bBauxite&r. You can do this in your newly formed &bEBF&r. &6Make sure to automate &bAluminum&r production as you'll end up using A LOT of it&r."]
+	quest.2B4BFD88DF1A934D.quest_subtitle: "It's Gonna be Al, Right?"
 	quest.2B4BFD88DF1A934D.title: "Aluminum"
-	quest.2BC64E1EB1BCE14D.quest_desc: ["  The &bStainless Steel Drill&r is a new drill that &6can be used in &oboth&r&6 the &bQuarries&r &6and the &bOil Drilling Rig&r. For the quarry, you'll obtain some new rare resources that will be extremely beneficial for the future. In the drilling rig, you'll be able to pump out &bShale Oil&r which can be distilled into &bHelium&r, &bSulfuric Crude Oil&r, and &bSulfuric Naphtha&r."]
+	quest.2BC64E1EB1BCE14D.quest_desc: [
+		"  The &bStainless Steel Drill&r is a new drill that &6can be used in &oboth&r&6 the &bQuarries&r &6and the &bOil Drilling Rig&r."
+		""
+		"  For the quarry, you'll obtain some new rare resources that will be extremely beneficial for the future."
+		""
+		"  In the drilling rig, you'll be able to pump out &bShale Oil&r which can be distilled into &bHelium&r, &bSulfuric Crude Oil&r, and &bSulfuric Naphtha&r."
+	]
 	quest.2BC64E1EB1BCE14D.title: "Stainless Steel Drill"
 	quest.2BDE797C32E308D3.title: "Ultimate Pressurized Tube"
 	quest.2BF835F8F73E8F06.quest_desc: ["Mining is a drag, I get it. But you don't need to mine every block ever again (unless you're crazy). By default, the squiggly line next to your \"1\" key is the button you want to hold down as you mind a block. It'll mine up to 64 of that block that is adjacent. By holding down the button and scrolling, you can change the modes. They show in the top left of your screen, so watch out there. I'll let you experiment with the modes, just don't break anything!"]
@@ -827,10 +876,13 @@
 	quest.5C278F462D4B414A.title: "Basic Fluid Tank"
 	quest.5C82C92D1F366C04.title: "Ultimate Smelting Factory"
 	quest.5C8D7BD3DA61109F.quest_desc: [
-		"  RESOURCES GO BRRR!!! You've reached the electric version of the &bQuarry&r! This one allows you to produce ores at an even faster rate than before &oand&r gives you more options for drills. &6Now you'll be able to use &bSteel&r&6, &bGold&r&6, &bStainless Steel&r&6, and &bTitanium Drills&r to finish off the rest of the ore production and truly fulfill my promise of never needing to mine for ores ever again!"
+		"  You've reached the electric version of the &bQuarry&r! This one allows you to produce ores at an even faster rate than before &oand&r gives you more options for drills."
+		""
+		"  &6Now you'll be able to use &bSteel&r&6, &bGold&r&6, &bStainless Steel&r&6, and &bTitanium Drills&r to finish off the rest of the ore production and truly fulfill my promise of never needing to mine for ores ever again!"
 		""
 		"  The structure is &oexactly&r the same as the &bSteam Quarry's&r aside from needing an &bEnergy Input Hatch&r instead of a &bFluid Input Hatch&r.&6 Make sure you've automated your &bBronze Drills&r&r by now or else it'll be a pain to keep your quarries running."
 	]
+	quest.5C8D7BD3DA61109F.quest_subtitle: "Resources Go BRRR!"
 	quest.5C8D7BD3DA61109F.title: "Electric Quarry"
 	quest.5D584858B61E534B.quest_desc: ["This &bCatalyst &fslowly turns &bMercury &finto &6Flux&f, your first source of &6Energy."]
 	quest.5D584858B61E534B.quest_subtitle: "Mercury = Flux"
@@ -927,7 +979,11 @@
 	quest.6DFA92E319E7DA77.title: "Pattern Provider"
 	quest.6E455A507171708C.title: "Advanced Fluid Tank"
 	quest.6EA29403BF85B19C.title: "QIO Drive"
-	quest.6EBFFFB567687A1E.quest_desc: ["  &bStainless Steel&r is just about as strong as regular steel, but &bStainless Steel&r will never corrode, rust, or stain. This is the first metal that you can't just throw into a furnace and call it a day. &6You need to create its dust&r from four ingredients: &bIron&r, &bChromium&r, &bManganese&r, and &bNickel&r. Then, after you heat it up to extreme temperatures in your EBF, you need to use the &bVacuum Freezer&r to cool down the red hot ingot to be usable. "]
+	quest.6EBFFFB567687A1E.quest_desc: [
+		"  &bStainless Steel&r is just about as strong as regular steel, but &bStainless Steel&r will never corrode, rust, or stain. This is the first metal that you can't just throw into a furnace and call it a day."
+		""
+		"  &6You need to create its dust&r from four ingredients: &bIron&r, &bChromium&r, &bManganese&r, and &bNickel&r. Then, after you heat it up to extreme temperatures in your EBF, you need to use the &bVacuum Freezer&r to cool down the red hot ingot to be usable. "
+	]
 	quest.6EBFFFB567687A1E.title: "Stainless Steel"
 	quest.6EDFD510DC096B12.title: "Modification Station"
 	quest.6EF133E0EC49BC33.quest_desc: [
@@ -938,10 +994,13 @@
 	quest.6EF133E0EC49BC33.title: "Rubber"
 	quest.6F2BFD1AF4B2F9C9.title: "Fluix Covered Cable"
 	quest.6F57A2A5AA6E3F49.quest_desc: [
-		"  Sweet sweet oil! Oil is a black flammable liquid that forms in the ground over a very &overy&r long time. &6Using a &bDrilling Rig&r&6, you can drill into the ground and extract this oil&r. Oil isn't the only thing that can be pumped from the floor though. Using different types of drills decide which fluid to mine for. Use your REI to see which drills mine for which fluid."
+		"  Oil is a black flammable liquid that forms in the ground over a very &overy&r long time. &6Using a &bDrilling Rig&r&6, you can drill into the ground and extract this oil&r."
+		""
+		"  Oil isn't the only thing that can be pumped from the floor though. Using different types of drills decide which fluid to mine for. Use your REI to see which drills mine for which fluid."
 		""
 		"  P.S. Don't forget, this is one of those very complex multiblocks. &6Use your &bWrench&r &6to show you how to build it&r!"
 	]
+	quest.6F57A2A5AA6E3F49.quest_subtitle: "Sweet, Sweet Oil"
 	quest.6F57A2A5AA6E3F49.title: "Oil Drilling Rig"
 	quest.6F63B60042A7F6AE.quest_desc: [
 		"{image:modern_industrialization:block/machines/compressor/overlay_front_active width:32 height:32 align:center}"
