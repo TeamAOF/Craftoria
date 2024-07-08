@@ -1,0 +1,28 @@
+{
+	id: "0414572B7C36F04F"
+	loot_crate: {
+		color: 16777215
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		string_id: "common_powah_lootbox"
+	}
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 16, item: { count: 1, id: "powah:capacitor_basic_tiny" } }
+		{ count: 16, item: { count: 1, id: "powah:capacitor_basic" } }
+		{ item: { count: 1, id: "powah:battery_starter" } }
+		{ count: 64, item: { count: 1, id: "powah:dielectric_paste" } }
+		{ item: { count: 1, id: "powah:binding_card" } }
+		{ item: { count: 1, id: "powah:thermo_generator_starter" } }
+		{ count: 8, item: { count: 1, id: "powah:steel_energized" } }
+		{ count: 32, item: { count: 1, id: "powah:uraninite" } }
+		{ count: 8, item: { count: 1, id: "powah:dielectric_casing" } }
+		{ count: 2, item: { count: 1, id: "powah:energizing_rod_hardened" } }
+		{ item: { count: 1, id: "powah:battery_basic" } }
+		{ item: { count: 1, id: "powah:crystal_nitro" } }
+	]
+}
