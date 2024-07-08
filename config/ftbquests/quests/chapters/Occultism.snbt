@@ -2,9 +2,17 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "Occultism"
-	group: "14D8AC2C1E9C819F"
+	group: ""
 	id: "7269FD2B5B0F0424"
-	order_index: 2
+	images: [{
+		height: 16.0d
+		image: "occultism:item/pentacle"
+		rotation: 0.0d
+		width: 16.0d
+		x: -8.5d
+		y: -0.666d
+	}]
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -20,7 +28,7 @@
 				}
 				type: "item"
 			}]
-			size: 2.5d
+			size: 2.0d
 			tasks: [{
 				id: "3ED23CC07C23FD76"
 				type: "checkmark"
@@ -827,8 +835,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -9.0d
-			y: -3.5d
+			x: -9.5d
+			y: -4.22d
 		}
 		{
 			dependencies: ["448D7A215A175817"]
@@ -841,7 +849,7 @@
 				value: 1L
 			}]
 			x: -8.5d
-			y: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["448D7A215A175817"]
@@ -853,8 +861,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -7.0d
-			y: -3.0d
+			x: -7.7d
+			y: -3.13d
 		}
 		{
 			dependencies: ["448D7A215A175817"]
@@ -866,8 +874,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -10.0d
-			y: -5.0d
+			x: -11.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["448D7A215A175817"]
@@ -879,8 +887,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -8.0d
-			y: -4.5d
+			x: -8.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["448D7A215A175817"]
@@ -892,8 +900,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -9.0d
-			y: -4.5d
+			x: -8.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["448D7A215A175817"]
@@ -919,8 +927,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -10.0d
-			y: -4.0d
+			x: -8.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["448D7A215A175817"]
@@ -932,8 +940,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -8.0d
-			y: -5.5d
+			x: -6.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["448D7A215A175817"]
@@ -945,8 +953,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -8.0d
-			y: -3.5d
+			x: -7.5d
+			y: -4.22d
 		}
 		{
 			dependencies: ["448D7A215A175817"]
@@ -958,8 +966,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -7.0d
-			y: -4.0d
+			x: -8.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["448D7A215A175817"]
@@ -971,8 +979,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -10.0d
-			y: -3.0d
+			x: -9.33d
+			y: -3.13d
 		}
 		{
 			dependencies: ["448D7A215A175817"]
@@ -984,8 +992,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -7.0d
-			y: -5.0d
+			x: -5.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["448D7A215A175817"]
@@ -1396,8 +1404,8 @@
 				item: { count: 1, id: "minecraft:oak_log" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.5d
+			x: -10.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7599CF789CD95680"]
