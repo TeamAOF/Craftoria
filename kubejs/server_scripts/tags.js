@@ -3,6 +3,7 @@ ServerEvents.tags("item", e => {
   //Should be removed when AE2 fixes this on their end.
   e.add("c:tools/wrench", ["#ae2:quartz_wrench", "ae2:network_tool"]);
   e.add("c:tools/wrenches", "#c:wrenches");
+  e.remove("c:dyes/yellow", "mekanism:dust_sulfur");
 });
 
 ServerEvents.tags("block", e => {
