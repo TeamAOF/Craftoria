@@ -151,6 +151,28 @@ ServerEvents.recipes(e => {
     e.custom(recipe).id(`craftoria:mekanism/injecting/${input[0].replace(":", "_")}`);
   };
 
+  let crystallizing = (chemType, input, output) => {
+    let recipe = {
+      type: "mekanism:crystallizing",
+      chemical_type: chemType,
+      input: {},
+      output: {}
+    };
+
+    if (input[0].includes("#")) {
+      input[0] = input[0].replace("#", "");
+      recipe.input.gas = input[0];
+    }
+    else
+      recipe.input.id = input[0];
+    recipe.input.amount = input[1];
+
+    recipe.output.id = output[0];
+    recipe.output.count = output[1];
+
+    e.custom(recipe).id(`craftoria:mekanism/crystallizing/${input[0].replace(":", "_")}`);
+  };
+
   let removeMek = [
     "mekanism:processing/bronze/ingot/from_infusing",
     "mekanism:processing/bronze/dust/from_infusing",
@@ -159,6 +181,8 @@ ServerEvents.recipes(e => {
     "mekanism:reaction/coal_gasification/dusts_coals",
     "mekanism:reaction/coal_gasification/coals",
     "mekanism:injecting/gunpowder_to_sulfur",
+    "mekanism:enriching/salt",
+    "mekanism:crystallizing/salt"
   ];
 
   removeMek.forEach(id => {
@@ -169,6 +193,7 @@ ServerEvents.recipes(e => {
   infuse("mekanism:tin", "#c:ingots/copper", "modern_industrialization:bronze_ingot", 10, 3, 4);
   infuse("mekanism:tin", "#c:dusts/copper", "modern_industrialization:bronze_dust", 10, 3, 4);
   injecting(["#mekanism:hydrogen_chloride", 1], ["#c:gunpowders", 1], ["modern_industrialization:sulfur_dust", 1]);
+  crystallizing("gas", ["#mekanism:brine", 15], ["modern_industrialization:salt_dust", 1]);
 
   for (let [material, types] in metals) {
     types.forEach(type => {
@@ -225,6 +250,8 @@ ServerEvents.recipes(e => {
     e.remove({ type: "mekanism:enriching", output: `mekanism:dust_${material}` });
     e.remove({ type: "mekanism:crushing", output: `mekanism:dust_${material}` });
   });
+
+  e.remove({ mod: "mekanism", output: "mekanism:block_salt" });
 
   // Removed to prevent progression skips in Modern Industrialization
   e.remove({ mod: "moremekanismprocessing", output: "#c:nuggets" });

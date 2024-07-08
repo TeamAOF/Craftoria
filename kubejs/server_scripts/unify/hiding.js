@@ -38,9 +38,13 @@ RecipeViewerEvents.removeEntries("item", e => {
       switch (mod) {
         case "mekanism":
           types.forEach(type => {
-            e.remove(`${mod}:${type}_${key}`);
-            if (type === "raw")
+            if (type === "ore") {
+              e.remove(`mekanism:${key}_${type}`);
+              e.remove(`mekanism:deepslate_${key}_${type}`);
+            } else if (type === "raw")
               e.remove(`${mod}:block_${type}_${key}`);
+            else
+              e.remove(`${mod}:${type}_${key}`);
           });
           break;
 
@@ -52,9 +56,25 @@ RecipeViewerEvents.removeEntries("item", e => {
               e.remove(`${mod}:${type}_${key}`);
           });
           break;
+        case "occultism":
+          types.forEach(type => {
+            if (type !== "ore") {
+              if (type !== "raw")
+                e.remove(`${mod}:${key}_${type}`);
+              else {
+                e.remove(`${mod}:${type}_${key}`);
+                e.remove(`${mod}:${type}_${key}_block`);
+              }
+            }
+          });
+          break;
         default:
           types.forEach(type => {
-            if (type !== "raw")
+            if (type === "ore") {
+              e.remove(`${mod}:${key}_${type}`);
+              e.remove(`${mod}:deepslate_${key}_${type}`);
+            }
+            else if (type !== "raw")
               e.remove(`${mod}:${key}_${type}`);
             else {
               e.remove(`${mod}:${type}_${key}`);
@@ -65,4 +85,6 @@ RecipeViewerEvents.removeEntries("item", e => {
       }
     });
   }
+
+  e.remove(["mekanism:block_salt", "mekanism:salt"]);
 });

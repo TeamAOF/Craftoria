@@ -63,6 +63,7 @@ let gems = {
 
 let misc = {
   "sulfur": ["dust"],
+  "salt": ["dust"],
 };
 
 // let types = [
