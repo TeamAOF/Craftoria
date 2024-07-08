@@ -1,0 +1,29 @@
+{
+	id: "145BAF105E285CD0"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			count: 16
+			item: {
+				count: 1
+				id: "powah:capacitor_hardened"
+			}
+			weight: 2.0f
+		}
+		{
+			count: 8
+			item: {
+				count: 1
+				id: "powah:capacitor_blazing"
+			}
+			weight: 2.0f
+		}
+		{ count: 4, item: { count: 1, id: "powah:capacitor_niotic" } }
+		{ item: { count: 1, id: "powah:battery_hardened" } }
+		{ item: { count: 1, id: "powah:thermo_generator_niotic" } }
+		{ item: { count: 1, id: "powah:thermo_generator_blazing" } }
+		{ item: { count: 1, id: "powah:energy_cell_blazing" }, weight: 2.0f }
+		{ count: 4, item: { count: 1, id: "powah:crystal_spirited" } }
+	]
+}
