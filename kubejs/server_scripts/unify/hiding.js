@@ -22,6 +22,7 @@ RecipeViewerEvents.removeEntries("item", e => {
     "iridium": ["moremekanismprocessing"],
     "obsidian": ["occultism"],
     "sulfur": ["mekanism"],
+    "ruby": ["moremekanismprocessing"],
   };
 
   let types = ["ingot", "block", "dust", "nugget", "ore", "raw"];
