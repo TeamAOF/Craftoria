@@ -39,6 +39,12 @@
 	quest.063AC8D565792B03.title: "Elite Fluid Tank"
 	quest.068339CE98E5DEB5.title: "Calculation Processor"
 	quest.06C4D99A90DF7711.title: "Ultimate Injecting Factory"
+	quest.06D66E791A9939DD.quest_desc: [
+		"Build a &bCharger&r, and power it with a &bVibration Chamber&r or generators from others mods."
+		""
+		"You can also power it by hand using a &bWooden Crank&r."
+	]
+	quest.06D66E791A9939DD.quest_subtitle: "Provides a way to charge supported tools through the ME Network"
 	quest.06D66E791A9939DD.title: "Charger"
 	quest.0729CB454B970201.quest_desc: [
 		""
@@ -381,6 +387,7 @@
 	quest.20A093E5684D2E30.title: "The Midgame Age!"
 	quest.20B4FD673AB88697.title: "Advanced Bin"
 	quest.20BA7AE12056CF27.title: "Basic Enriching Factory"
+	quest.20F99CBAD8D587DA.quest_subtitle: "The main ingredient to progress in AE2"
 	quest.20F99CBAD8D587DA.title: "Certus Quartz"
 	quest.2133B29DE47BDC25.title: "Advanced Combining Factory"
 	quest.215606B3A894512E.quest_desc: [
@@ -411,6 +418,7 @@
 	]
 	quest.21EDEEE1A1B82B53.title: "Raw Iridium"
 	quest.21EE3862F6DA8E09.title: "Precision Sawmill"
+	quest.222793DF035B167C.quest_subtitle: "The simplest cable to make, transfers power and connects your system."
 	quest.222793DF035B167C.title: "Fluix Glass Cable"
 	quest.22420EF3089DD7F6.quest_desc: [
 		""
@@ -421,7 +429,14 @@
 	quest.22420EF3089DD7F6.title: "Assembler"
 	quest.225C580584927804.title: "Advanced Smelting Factory"
 	quest.2260C2216DA3DCE0.title: "Elite Bin"
-	quest.2278075F3F03EF0F.quest_desc: [""]
+	quest.2278075F3F03EF0F.quest_desc: [
+		"In order to find a &6Meteorite&r you'll be needing to craft the &bMeteorite Compass&r."
+		""
+		"A &6Meteorite&r always contains a &bMysterious Cube&r that holds all presses needed to further progress in this mod."
+		""
+		"You will also find &bBudding Certus Quartz Blocks&r, more on those later."
+	]
+	quest.2278075F3F03EF0F.quest_subtitle: "Find a Meteorite"
 	quest.2278075F3F03EF0F.title: "What is that bol- roc- meteor?"
 	quest.22A2121A25A010AB.title: "Basic Induction Cell"
 	quest.22AC242F0A230278.title: "QIO Redstone Adapter"
@@ -581,6 +596,7 @@
 	]
 	quest.2F9560A5281DCDFD.quest_desc: ["Need to keep those pesky trolls away from your stuff? Claim it! You can either make a Team or claim chunks solo. To claim chunks solo, open your inventory and check out the top left of your screen. Look for a map button called \"Claim Manager.\" You can use that to clain different plots of land called chunks. Each chunk is comprised of 16x16 blocks, spanning from the void to the sky. You have a limited amount, so don't go crazy. If you want to create a Team first, find the button labled \"Your Team\" and it'll show you a list of team members and a private chat. You can then create a party, and change the name and other aspects of your party by pressing on the gear icon. You can invite others by using the command \"/ftbteams party invite\" once you've created a party."]
 	quest.2F9560A5281DCDFD.quest_subtitle: "&oMy land is NOT your land."
+	quest.2F993B0F106DB883.quest_subtitle: "Used to craft items using various Inscriber Presses"
 	quest.2F993B0F106DB883.title: "Inscriber"
 	quest.2FA7A5966FEF6701.title: "Ultimate Mechanical Pipe"
 	quest.2FB2FE782B1103D6.quest_desc: [
@@ -612,6 +628,7 @@
 	quest.30D584EAD9243548.title: "Fluidic Plenisher"
 	quest.30FB66E92909D4B9.quest_subtitle: "All the Niters"
 	quest.30FB66E92909D4B9.title: "&bAlchemical Niter"
+	quest.3101251A430C3B26.quest_subtitle: "Crank It Up!"
 	quest.3101251A430C3B26.title: "Manual Power"
 	quest.3143EA7DF096CE61.quest_desc: [
 		""
@@ -1023,8 +1040,17 @@
 	quest.5A4E9D4056DA2C67.title: "Elite Universal Cable"
 	quest.5AB4D1D72EFD4428.title: "Induction Port"
 	quest.5AD93FC0F20FDAB8.title: "Charged Staff"
+	quest.5B1D88BFEA39DBAE.quest_desc: [
+		"To progress, you need to create &bFluix Crystal&r. You have two options:"
+		""
+		"- Use the compass to find a &6Meteorite&r, where you might find some &bFluix Crystal&r."
+		""
+		"- Throw &bCharged Certus Quartz Crystal&r, &bNether Quartz&r, and &bRedstone Dust&r into a pool of water and wait."
+	]
+	quest.5B1D88BFEA39DBAE.quest_subtitle: "A very important ingredient "
 	quest.5B1D88BFEA39DBAE.title: "Fluix Crystal"
 	quest.5B9BFD4F72E79F5B.title: "&dAlchemical Sufur Precious"
+	quest.5BB4989DC6C5DB7A.quest_subtitle: "Use a powered Charger to charge Certus Quartz Crystal"
 	quest.5BB4989DC6C5DB7A.title: "Charged Certus"
 	quest.5BDE55C11519F7F7.title: "Purification Chamber"
 	quest.5C278F462D4B414A.title: "Basic Fluid Tank"
@@ -1229,6 +1255,12 @@
 	quest.71776A6A96EB037C.title: "Fire Clay"
 	quest.71DD555551705B17.title: "Dynamic Tank"
 	quest.71F041E82D23C365.title: "Oredictionificator"
+	quest.72481CA0AC8AFD6A.quest_desc: [
+		"While bearing some similarity to the &bFluix ME Covered Cable&r in appearance, they provide diagnostic function by visualizing the &6channel usage&r on the &bcables&r, the &6channels&r appear as lit colored lines that run along the black stripe on the &bcables&r giving you an understanding of how your &6channels&r are being used on your &6network&r."
+		""
+		"The first four &6channels&r show as lines matching the color of the &bcable&r, the next four show as white lines."
+	]
+	quest.72481CA0AC8AFD6A.quest_subtitle: "The Smarter Brother"
 	quest.72481CA0AC8AFD6A.title: "Fluix Smart Cable"
 	quest.72A27299A3107477.title: "Redstone Card"
 	quest.72DD0017AC3B1326.quest_desc: [""]
@@ -1248,9 +1280,21 @@
 	quest.745ECCC690C1AD23.quest_desc: ["&bBlazing crystals &fare made from a material you could never guess. yah thats right &bblaze rods. "]
 	quest.745ECCC690C1AD23.quest_subtitle: "Straight from the blaze"
 	quest.745ECCC690C1AD23.title: "&6Blazing Crystal"
+	quest.746C3046F10DDD71.quest_desc: ["Doesn't support &6buses&r so you must first step down from &bDense&r to a &bsmaller cable&r (such as &bFluix ME Glass Cable&r or &bFluix ME Smart Cable&r) before using &6buses&r or &bpanels&r. Shows load similarly to &bFluix ME Smart Cable&r, with each line lit representing four &6channels&r in use."]
+	quest.746C3046F10DDD71.quest_subtitle: "Higher Capacity Cable. Can carry 32 channels"
 	quest.746C3046F10DDD71.title: "Fluix Dense Smart Cable"
 	quest.7529F840525E5BDF.title: "Ultimate Induction Cell"
-	quest.75810CDFB362E0CB.title: "Singularity"
+	quest.75810CDFB362E0CB.quest_desc: [
+		"They are &6crafted&r by causing a &6reaction&r between &bEnder Pearl&r or &bEnder Dust&r and a &bSingularity&r. Any &6explosive force&r should be enough to trigger the reaction."
+		""
+		"Nearly any &6explosion&r - even &acreepers&r - will work."
+		""
+		"They are always produced in &6matching pairs&r, to create a connection place 1 of the pairs of &bQuantum Entangled Singularity&r into the &bME Quantum Link Chamber&r of the bridge on each side."
+		""
+		"It might be a &6good idea&r to label these with &bnames&r when you create them using the vanilla &bAnvil&r."
+	]
+	quest.75810CDFB362E0CB.quest_subtitle: "Make A Connection!"
+	quest.75810CDFB362E0CB.title: "Singularities"
 	quest.7593E582FA928061.quest_desc: [
 		""
 		"&eCopper Drill"
