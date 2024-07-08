@@ -58,6 +58,7 @@ let gems = {
   "lapis": ["dust"],
   "quartz": ["dust"],
   "coal": ["dust"],
+  "ruby": ["dust"],
 };
 
 let misc = {
