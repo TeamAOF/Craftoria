@@ -17,4 +17,7 @@ ServerEvents.recipes(event => {
   event.custom({
     type: "mekanism:crushing", input: { tag: "c:ender_pearls", count: 1 }, output: { id: "ae2:ender_dust", count: 1 }
   }).id("craftoria:mekanism/crushing/ender_pearl");
+
+  event.remove({ id: "modern_industrialization:materials/silicon/unpacker/ingot" });
+  miUnpacker(event, ["modern_industrialization:silicon_block", 1], ["modern_industrialization:silicon_ingot", 9], 2, 100);
 });
