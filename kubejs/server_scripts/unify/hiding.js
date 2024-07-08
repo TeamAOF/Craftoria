@@ -41,8 +41,10 @@ RecipeViewerEvents.removeEntries("item", e => {
             if (type === "ore") {
               e.remove(`mekanism:${key}_${type}`);
               e.remove(`mekanism:deepslate_${key}_${type}`);
-            } else if (type === "raw")
+            } else if (type === "raw") {
+              e.remove(`mekanism:${type}_${key}`);
               e.remove(`${mod}:block_${type}_${key}`);
+            }
             else
               e.remove(`${mod}:${type}_${key}`);
           });
