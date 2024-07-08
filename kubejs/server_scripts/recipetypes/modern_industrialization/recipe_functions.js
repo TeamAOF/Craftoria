@@ -7,7 +7,8 @@
 
 // Helper functions
 /**
- * processItemInputs Helper function to process item inputs for Modern Industrialization recipes
+ * @author WhitePhantom
+ * @description Helper function to process item inputs for Modern Industrialization recipes
  * @param {Array} itemInputs An array of item inputs in the format [[item, amount, probability(optional)], [item, amount], ...], can be null
  * @param {Object} recipe The recipe object to add the item inputs to
  * @param {Number} maxInputs The maximum number of inputs allowed
@@ -80,7 +81,8 @@ let processItemInputs = (itemInputs, recipe, maxInputs) => {
 };
 
 /**
- * Helper function to process item outputs for Modern Industrialization recipes
+ * @author WhitePhantom
+ * @description Helper function to process item outputs for Modern Industrialization recipes
  * @param {Array} itemOutputs An array of item outputs in the format [[item, amount, probability(optional)], [item, amount], ...], can be null
  * @param {Object} recipe The recipe object to add the item outputs to
  * @param {Number} maxOutputs The maximum number of outputs allowed
@@ -143,7 +145,8 @@ let processItemOutputs = (itemOutputs, recipe, maxOutputs) => {
 };
 
 /**
- * Helper function to process fluid inputs for Modern Industrialization recipes
+ * @author WhitePhantom
+ * @description Helper function to process fluid inputs for Modern Industrialization recipes
  * @param {Array} fluidInputs An array of fluid inputs in the format [[fluid, amount, probability(optional)], [fluid, amount], ...], can be null
  * @param {Object} recipe The recipe object to add the fluid inputs to
  * @param {Number} maxInputs The maximum number of inputs allowed
@@ -217,7 +220,8 @@ let processFluidInputs = (fluidInputs, recipe, maxInputs) => {
 };
 
 /**
- * Helper function to process fluid outputs for Modern Industrialization recipes
+ * @author WhitePhantom
+ * @description Helper function to process fluid outputs for Modern Industrialization recipes
  * @param {Array} fluidOutputs An array of fluid outputs in the format [[fluid, amount, probability(optional)], [fluid, amount], ...], can be null
  * @param {Object} recipe The recipe object to add the fluid outputs to
  * @param {Number} maxOutputs The maximum number of outputs allowed
@@ -281,7 +285,8 @@ let processFluidOutputs = (fluidOutputs, recipe, maxOutputs) => {
 };
 
 /**
- * Generates a unique recipe ID based on the output, output amount, and input(s).
+ * @author WhitePhantom
+ * @description Generates a unique recipe ID based on the output, output amount, and input(s).
  * @param {Object} recipe The recipe object where inputs and outputs are pulled from.
  * @returns {String} The generated recipe ID.
  */
@@ -311,7 +316,8 @@ function makeRecipeID(recipe) {
 
 // Recipe functions
 /**
- * Modern Industrialization Assembler Recipe
+ * @author WhitePhantom
+ * @description Modern Industrialization Assembler Recipe
  * @param {object} event The event object, usually 'event'. Required.
  * @param {Array} fluidInputs An array of fluid inputs in the format [[fluid, amount], [fluid, amount], ...], can be null, max of 2 inputs.
  * @param {Array} itemInputs An array of item inputs in the format [[item, amount], [item, amount], ...], can be null, max of 9 inputs.
@@ -340,7 +346,8 @@ let miAssembler = (event, fluidInputs, itemInputs, itemOutputs, eu, duration) =>
 };
 
 /**
- * Modern Industrialization Electrolyzer Recipe
+ * @author WhitePhantom
+ * @description Modern Industrialization Electrolyzer Recipe
  * @param {object} event The event object, usually 'event'. Required.
  * @param {Array} fluidInput A fluid input in the format [fluid, amount], can be null
  * @param {Array} itemInput An item input in the format [item, amount], can be null
@@ -372,7 +379,8 @@ let miElectrolyzer = (event, fluidInput, itemInput, fluidOutputs, itemOutputs, e
 };
 
 /**
- * Modern Industrialization Packer Recipe
+ * @author WhitePhantom
+ * @description Modern Industrialization Packer Recipe
  * @param {object} event The event object, usually 'event'. Required.
  * @param {Array} itemInputs An array of item inputs in the format [[item, amount], [item, amount], ...], max of 3 inputs.
  * @param {Array} itemOutput An item output in the format [item, amount]
@@ -397,7 +405,8 @@ let miPacker = (event, itemInputs, itemOutput, eu, duration) => {
 };
 
 /**
- * Modern Industrialization Unpacker Recipe
+ * @author WhitePhantom
+ * @description Modern Industrialization Unpacker Recipe
  * @param {object} event The event object, usually 'event'. Required.
  * @param {Array} itemInput An item input in the format [item, amount]
  * @param {Array} itemOutputs An array of item outputs in the format [[item, amount], [item, amount], ...], max of 2 outputs.
@@ -422,7 +431,8 @@ let miUnpacker = (event, itemInput, itemOutputs, eu, duration) => {
 };
 
 /**
- * Modern Industrialization Mixer Recipe
+ * @author WhitePhantom
+ * @description Modern Industrialization Mixer Recipe
  * @param {object} event The event object, usually 'event'. Required.
  * @param {Array} fluidInputs An array of fluid inputs in the format [[fluid, amount], [fluid, amount], ...], can be null, max of 2 inputs.
  * @param {Array} itemInputs An array of item inputs in the format [[item, amount], [item, amount], ...], can be null, max of 4 inputs.
@@ -454,7 +464,8 @@ let miMixer = (event, fluidInputs, itemInputs, fluidOutputs, itemOutputs, eu, du
 };
 
 /**
- * Modern Industrialization Chemical Reactor Recipe
+ * @author WhitePhantom
+ * @description Modern Industrialization Chemical Reactor Recipe
  * @param {object} event The event object, usually 'event'. Required.
  * @param {Array} fluidInputs An array of fluid inputs in the format [[fluid, amount], [fluid, amount], ...], can be null, max of 3 inputs.
  * @param {Array} itemInputs An array of item inputs in the format [[item, amount], [item, amount], ...], can be null, max of 3 inputs.
@@ -483,4 +494,144 @@ let miChemicalReactor = (event, fluidInputs, itemInputs, fluidOutputs, itemOutpu
   let recipeID = makeRecipeID(recipe);
 
   event.custom(recipe).id(`craftoria:modern_industrialization/chemical_reactor/${recipeID}`);
+};
+
+/**
+ * @author WhitePhantom
+ * @description Modern Industrialization Cutting Machine Recipe
+ * @param {object} event The event object, usually 'event'. Required.
+ * @param {Array} fluidInput A fluid input in the format [fluid, amount, probability(optional)]
+ * @param {Array} itemInput An item input in the format [item, amount, probability(optional)]
+ * @param {Array} itemOutput An array of item outputs in the format [item, amount, probability(optional)], max of 1 output.
+ * @param {int} eu EU/t consumed by the machine
+ * @param {int} duration Duration of the recipe in ticks
+ */
+let miCuttingMachine = (event, fluidInput, itemInput, itemOutput, eu, duration) => {
+  let recipe = {
+    type: "modern_industrialization:cutting_machine",
+    duration: duration,
+    eu: eu,
+    fluid_inputs: [],
+    item_inputs: [],
+    item_outputs: []
+  };
+
+  processFluidInputs(fluidInput, recipe, 1);
+  processItemInputs(itemInput, recipe, 1);
+  processItemOutputs(itemOutput, recipe, 1);
+
+  let recipeID = makeRecipeID(recipe);
+
+  event.custom(recipe).id(`craftoria:modern_industrialization/cutting_machine/${recipeID}`);
+};
+
+/**
+ * @author WhitePhantom
+ * @description Modern Industrialization Compressor Recipe
+ * @param {object} event The event object, usually 'event'. Required.
+ * @param {Array} itemInput An item input in the format [item, amount, probability(optional)]
+ * @param {Array} itemOutput An item output in the format [item, amount, probability(optional)]
+ * @param {int} eu EU/t consumed by the machine
+ * @param {int} duration Duration of the recipe in ticks
+ */
+let miCompressor = (event, itemInput, itemOutput, eu, duration) => {
+  let recipe = {
+    type: "modern_industrialization:compressor",
+    duration: duration,
+    eu: eu,
+    item_inputs: [],
+    item_outputs: []
+  };
+
+  processItemInputs(itemInput, recipe, 1);
+  processItemOutputs(itemOutput, recipe, 1);
+
+  let recipeID = makeRecipeID(recipe);
+
+  event.custom(recipe).id(`craftoria:modern_industrialization/compressor/${recipeID}`);
+};
+
+/**
+ * @author WhitePhantom
+ * @description Modern Industrialization Macerator Recipe
+ * @param {object} event The event object, usually 'event'. Required.
+ * @param {Array} itemInput An item input in the format [item, amount, probability(optional)]
+ * @param {Array} itemOutputs An item output in the format [[item, amount, probability(optional)], [item, amount, probability(optional)], ...], max of 4 outputs.
+ * @param {int} eu EU/t consumed by the machine
+ * @param {int} duration Duration of the recipe in ticks
+ */
+let miMacerator = (event, itemInput, itemOutputs, eu, duration) => {
+  let recipe = {
+    type: "modern_industrialization:macerator",
+    duration: duration,
+    eu: eu,
+    item_inputs: [],
+    item_outputs: []
+  };
+
+  processItemInputs(itemInput, recipe, 1);
+  processItemOutputs(itemOutputs, recipe, 4);
+
+  let recipeID = makeRecipeID(recipe);
+
+  event.custom(recipe).id(`craftoria:modern_industrialization/macerator/${recipeID}`);
+};
+
+/**
+ * @author WhitePhantom
+ * @description Modern Industrialization Centrifuge Recipe
+ * @param {object} event The event object, usually 'event'. Required.
+ * @param {Array} fluidInput A fluid input in the format [fluid, amount, probability(optional)]
+ * @param {Array} itemInput An item input in the format [item, amount, probability(optional)]
+ * @param {Array} fluidOutputs An array of fluid outputs in the format [[fluid, amount, probability(optional)], [fluid, amount, probability(optional)], ...], max of 4 outputs.
+ * @param {Array} itemOutputs An array of item outputs in the format [[item, amount, probability(optional)], [item, amount, probability(optional)], ...], max of 4 outputs.
+ * @param {int} eu EU/t consumed by the machine
+ * @param {int} duration Duration of the recipe in ticks
+ */
+let miCentrifuge = (event, fluidInput, itemInput, fluidOutputs, itemOutputs, eu, duration) => {
+  let recipe = {
+    type: "modern_industrialization:centrifuge",
+    duration: duration,
+    eu: eu,
+    fluid_inputs: [],
+    item_inputs: [],
+    fluid_outputs: [],
+    item_outputs: []
+  };
+
+  processFluidInputs(fluidInput, recipe, 1);
+  processFluidOutputs(fluidOutputs, recipe, 4);
+
+  processItemInputs(itemInput, recipe, 1);
+  processItemOutputs(itemOutputs, recipe, 4);
+
+  let recipeID = makeRecipeID(recipe);
+
+  event.custom(recipe).id(`craftoria:modern_industrialization/centrifuge/${recipeID}`);
+};
+
+/**
+ * @author WhitePhantom
+ * @description Modern Industrialization Polarizer Recipe
+ * @param {object} event The event object, usually 'event'. Required.
+ * @param {Array} itemInputs An array of item inputs in the format [[item, amount, probability(optional)], [item, amount, probability(optional)], ...], max of 2 inputs.
+ * @param {Array} itemOutput An item output in the format [item, amount, probability(optional)]
+ * @param {int} eu EU/t consumed by the machine
+ * @param {int} duration Duration of the recipe in ticks
+ */
+let miPolarizer = (event, itemInputs, itemOutput, eu, duration) => {
+  let recipe = {
+    type: "modern_industrialization:polarizer",
+    duration: duration,
+    eu: eu,
+    item_inputs: [],
+    item_outputs: []
+  };
+
+  processItemInputs(itemInputs, recipe, 2);
+  processItemOutputs(itemOutput, recipe, 1);
+
+  let recipeID = makeRecipeID(recipe);
+
+  event.custom(recipe).id(`craftoria:modern_industrialization/polarizer/${recipeID}`);
 };

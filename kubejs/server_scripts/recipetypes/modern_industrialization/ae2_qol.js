@@ -1,7 +1,7 @@
 
 ServerEvents.recipes(event => {
-  miAssembler(event, ["modern_industrialization:styrene_butadiene_rubber", 16], ["ae2:fluix_glass_cable", 8], ["ae2:fluix_covered_cable", 8], 2, 100);
-  miAssembler(event, ["modern_industrialization:synthetic_rubber", 80], ["ae2:fluix_glass_cable", 8], ["ae2:fluix_covered_cable", 8], 2, 100);
+  miAssembler(event, ["modern_industrialization:styrene_butadiene_rubber", 8], ["ae2:fluix_glass_cable", 8], ["ae2:fluix_covered_cable", 8], 2, 100);
+  miAssembler(event, ["modern_industrialization:synthetic_rubber", 40], ["ae2:fluix_glass_cable", 8], ["ae2:fluix_covered_cable", 8], 2, 100);
 
   miAssembler(event, ["modern_industrialization:molten_redstone", 90], [["appflux:printed_energy_processor", 1], ["ae2:printed_silicon", 1]], ["appflux:energy_processor", 1], 8, 200);
 
@@ -13,4 +13,8 @@ ServerEvents.recipes(event => {
 
   event.shapeless("4x ae2:fluix_covered_cable", "ae2:fluix_covered_dense_cable");
   event.shapeless("4x ae2:fluix_smart_cable", "ae2:fluix_smart_dense_cable");
+
+  event.custom({
+    type: "mekanism:crushing", input: { tag: "c:ender_pearls", count: 1 }, output: { id: "ae2:ender_dust", count: 1 }
+  }).id("craftoria:mekanism/crushing/ender_pearl");
 });
