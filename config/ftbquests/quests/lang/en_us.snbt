@@ -33,7 +33,11 @@
 	quest.068339CE98E5DEB5.title: "Calculation Processor"
 	quest.06C4D99A90DF7711.title: "Ultimate Injecting Factory"
 	quest.06D66E791A9939DD.title: "Charger"
-	quest.0729CB454B970201.quest_desc: ["  This is the &bBronze Drill&r. This will give you the main ores that you'll need to expand further. Check the outputs in &6REI&r and make sure you know that the drill has a chance of breaking, so don't just make 1."]
+	quest.0729CB454B970201.quest_desc: [
+		"  This is the &bBronze Drill&r. This will give you the main ores that you'll need to expand further."
+		""
+		"  Check the outputs in &6REI&r and make sure you know that the drill has a chance of breaking, so don't just make 1."
+	]
 	quest.0729CB454B970201.title: "Bronze Drill"
 	quest.077658D04D0D4AB3.quest_desc: [
 		"Multiblock:"
@@ -94,6 +98,7 @@
 		""
 		"  A &bSteel Boiler&r will produce twice as much steam as a bronze one. That means it will max out at &o16 EU/t&r instead of 8. The &bSteel Water Pump&r will also produce twice as much &bWater&r as it's bronze counterpart, so a max of 250mb of &bWater&r fro every adjacent water source for up to 2000mb of &bWater&r every 5 seconds."
 	]
+	quest.0B2FF8169FD3812D.quest_subtitle: "Waiting for Something to Hatch?"
 	quest.0B2FF8169FD3812D.title: "Steel Hatches"
 	quest.0B94435972292812.quest_desc: [""]
 	quest.0B94435972292812.title: "Spatial IO Port"
@@ -160,7 +165,9 @@
 	quest.151E812270A52250.title: "Crafting Unit"
 	quest.1610E88D5231E670.title: "Thermal Evaporation Controller"
 	quest.162DD68C3B91FC5E.quest_desc: [
-		"  We have a lot to cover. Cable networks have hard limitations on the amount of energy they will pull into the network depending on the tier. you can see a few stats below..."
+		"  We have a lot to cover."
+		""
+		"  Cable networks have hard limitations on the amount of energy they will pull into the network depending on the tier. you can see a few stats below..."
 		""
 		"    Max Transfer Rate: 256 EU/t"
 		"    Material: Tin"
@@ -204,13 +211,20 @@
 	]
 	quest.164F4710E109F7F2.title: "Your First Bronze"
 	quest.16AAEB122CDC1A46.quest_desc: [
-		""
 		"{image:modern_industrialization:block/machines/mixer/overlay_top_active width:32 height:32 align:center}"
+		"  A sleek bronze casing with a shining metal bowl where mixing blades are lowered into to &6mix&r up a plethora of different things! You can &6mix dusts&r with a higher output since you wont be spilling any anymore."
 		""
-		"  A sleek bronze casing with a shining metal bowl where mixing blades are lowered into to &6mix&r up a plethora of different things! You can &6mix dusts&r with a higher output since you wont be spilling any anymore. It doesn't only mix dusts, but also fluids. Example: &eLubricant&r!"
+		"  It doesn't only mix dusts, but also fluids. Example: &eLubricant&r!"
 	]
 	quest.16AAEB122CDC1A46.title: "Bronze Mixer"
-	quest.16E5B09AA7E6A487.quest_desc: ["  All aboard the item express! &bConveyor Belts&r are used to move items around within your machines. They use &bMotors&r to turn and &bRubber Sheets&r as a platform to move. &6You should automate these&r."]
+	quest.16E5B09AA7E6A487.quest_desc: [
+		"  &bConveyor Belts&r are used to move items around within your machines."
+		""
+		"  They use &bMotors&r to turn and &bRubber Sheets&r as a platform to move."
+		""
+		"  &6You should automate these&r."
+	]
+	quest.16E5B09AA7E6A487.quest_subtitle: "All Aboard the Item Express!"
 	quest.16E5B09AA7E6A487.title: "Conveyor Belts"
 	quest.174680D8F6488D5F.title: "Item Cell Housing"
 	quest.176524D0E4475298.quest_desc: ["  With your freshly drilled &bCrude Oil&r you can make a large array of items, however &6you will need to refine it to use it&r. Currently it's pretty useless in an industrial sense. That's where the &bDistillery&r comes into play! &6You can refine or &odistill&r &6fluids into it's lighter parts&r. With this &bDistillery&r you can only refine down to one fluid at a time. Just keep working, soon enough you'll be able to extract many fluids at once."]
@@ -286,7 +300,15 @@
 	quest.20BA7AE12056CF27.title: "Basic Enriching Factory"
 	quest.20F99CBAD8D587DA.title: "Certus Quartz"
 	quest.2133B29DE47BDC25.title: "Advanced Combining Factory"
-	quest.215606B3A894512E.quest_desc: ["  Do you see those percents on each ore in the quarry outputs? Those are &oindividual&r percents. &6Each ore has it's own individual chance&r. If you place a bronze item output hatch, you'll only get one ore, but the chance that another ore is produced is still there, and thus it could be lost if there is no space for it. &6Place multiple item output hatches, preferably steel, to increase maximum possible outputs.&r"]
+	quest.215606B3A894512E.quest_desc: [
+		"  Do you see those percents on each ore in the quarry outputs?"
+		""
+		"  Those are &oindividual&r percents. &6Each ore has it's own individual chance&r. "
+		""
+		"  If you place a bronze item output hatch, you'll only get one ore, but the chance that another ore is produced is still there, and thus it could be lost if there is no space for it."
+		""
+		"  &6Place multiple item output hatches, preferably steel, to increase maximum possible outputs.&r"
+	]
 	quest.215606B3A894512E.title: "Quarry Tips"
 	quest.21584ECDBB6907DE.quest_desc: [
 		" &aCalm down, Calm down!&r A &btick&r is the &6shortest amount&r of time that can be &6recorded&r."
@@ -414,9 +436,7 @@
 	quest.2E883FCCA2FB281B.title: "Quantum Ring"
 	quest.2E97456B0ED0AB1A.title: "Electric Pump"
 	quest.2F66F85A601AC908.quest_desc: [
-		""
 		"{image:modern_industrialization:block/machines/macerator/overlay_top_active width:32 height:32 align:center}"
-		""
 		"  Now you can &6hemiquadruple your ores&r! This means you'll have a 50% chance to extract an extra dust from your &bRaw Ore&r. You can also turn a &bFull Ore&r and extract a lot of &bRaw Ore&r from it using the &bMacerator&r."
 		""
 		"  Being a &bMacerator&r, you can throw some metal items in to &6recycle them back into dusts&r, good way to get a little bit out of an adventuring trip or an old tool."
@@ -461,7 +481,11 @@
 	quest.30FB66E92909D4B9.quest_subtitle: "All the Niters"
 	quest.30FB66E92909D4B9.title: "&bAlchemical Niter"
 	quest.3101251A430C3B26.title: "Manual Power"
-	quest.3143EA7DF096CE61.quest_desc: ["  A new machine! This one can only be made in steel, it really needs that extra strength. The &bPacker&r can perform simple crafts for you. You can &6automate double ingots, pipes, many types of bricks, and more&r! Check your REI for more recipes."]
+	quest.3143EA7DF096CE61.quest_desc: [
+		"  A new machine! This one can only be made in steel; it really needs that extra strength."
+		""
+		"  The &bPacker&r can perform simple crafts for you. You can &6automate double ingots, pipes, many types of bricks, and more&r! Check your REI for more recipes."
+	]
 	quest.3143EA7DF096CE61.title: "Steel Packer"
 	quest.3189264EB89A2A5A.quest_desc: ["I know that as you journey, you'll come across some annoyances; so I'll give you some assistance with them. There are three main ones, thank me later."]
 	quest.3189264EB89A2A5A.quest_subtitle: "&oTricks of the Trade"
@@ -472,7 +496,11 @@
 	quest.325D7C592E2FB05A.title: "Singularity"
 	quest.327EDC1D4C50D185.title: "QIO Exporter"
 	quest.333A187FF6CCBCF2.title: "Theurgy 100%"
-	quest.3357A8B614D477B6.quest_desc: ["  A new machine, the little sibling to the &bPacker&r! This one can only be made in steel, it really needs that extra strength. &6The unpacker can perform simple crafts for you, such as converting dusts into tiny dusts&r. Check your REI for more recipes."]
+	quest.3357A8B614D477B6.quest_desc: [
+		"  A new machine, the little sibling to the &bPacker&r! This one can only be made in steel; it really needs that extra strength."
+		""
+		"  &6The unpacker can perform simple crafts for you, such as converting dusts into tiny dusts&r. Check your REI for more recipes."
+	]
 	quest.3357A8B614D477B6.title: "Steel Unpacker"
 	quest.3392424E7E1B68C4.title: "Isotopic Centrifuge"
 	quest.33AC5F9CFB679483.title: "MekaSuit Helmet"
@@ -535,7 +563,12 @@
 	quest.3BF6B62A81F294FA.title: "Overflow Destruction Card"
 	quest.3C1D103FCEF249C8.quest_desc: ["Don't you just love the aroma of smoke and gasoline fumes? Don't pollute the world too much! I guess it might be a good trade off; lazy equals pollution! Use the guide books you get, they will be very helpful!"]
 	quest.3C1D103FCEF249C8.quest_subtitle: "&o*AGRESSIVE FACTORY NOISES*"
-	quest.3C3519AFEBBAEC70.quest_desc: ["  Metal punch! &bPistons&r use rotational force to extend a rod out with a lot of possible force. This is very useful for compressing things, as well as packing things. &6You should automate these&r."]
+	quest.3C3519AFEBBAEC70.quest_desc: [
+		"  &bPistons&r use rotational force to extend a rod out with a lot of possible force."
+		""
+		"  This is very useful for compressing things, as well as packing things. &6You should automate these&r."
+	]
+	quest.3C3519AFEBBAEC70.quest_subtitle: "Metal Punch"
 	quest.3C3519AFEBBAEC70.title: "Pistons"
 	quest.3C6E442CEB73191F.title: "Gas-Burning Generator"
 	quest.3CABE90D2D99AAD0.title: "Crafting Formula"
@@ -621,7 +654,13 @@
 	quest.454FF6E2926163F7.title: "Give up?"
 	quest.456D933518B72DA2.title: "Control Rod Assembly"
 	quest.45E16D69D7099581.title: "Steel Casing"
-	quest.45F0194CF3DCA5DD.quest_desc: ["  &bLignite&r is a truly abundant &bfuel source&r that can be &6found&r in the world. It's pretty much &bCoal&r, but brown. It has a lower carbon content despite &6burning&r the same amount as &bCoal&r; created the same way too. This means you can keep your real &bCoal&r for other &6projects&r or &6recipes&r, keep &bLignite&r to &6fuel&r your &bSteam Mining Drill&r instead."]
+	quest.45F0194CF3DCA5DD.quest_desc: [
+		"  &bLignite&r is a truly abundant &bfuel source&r that can be &6found&r in the world. It's pretty much &bCoal&r, but brown. "
+		""
+		"  It has a lower carbon content despite &6burning&r the same amount as &bCoal&r; created the same way too."
+		""
+		"  This means you can keep your real &bCoal&r for other &6projects&r or &6recipes&r, keep &bLignite&r to &6fuel&r your &bSteam Mining Drill&r instead."
+	]
 	quest.45F0194CF3DCA5DD.title: "Lignite Coal"
 	quest.462944FD21A92AED.title: "Infused Alloy"
 	quest.469641436BC858D3.quest_desc: [
@@ -650,12 +689,18 @@
 	]
 	quest.4722157BC8D3B965.title: "Bronze Cutting Machine"
 	quest.475DC864A0BC0F1F.quest_desc: [
-		"  As stated before, you can upgrade your bronze machines into steel machines. Create the &bSteel Upgrade&r and install it onto any bronze machine &6using a smithing table or packer&r."
+		"  As stated before, you can upgrade your bronze machines into steel machines."
+		""
+		"  Create the &bSteel Upgrade&r and install it onto any bronze machine &6using a smithing table or packer&r."
 	]
 	quest.475DC864A0BC0F1F.title: "Faster Machines?"
 	quest.478A6A8ADA223AEF.title: "Canteen"
 	quest.47A8E5DC11E846C5.quest_desc: [
-		"  Before you can even make &bBronze&r, you'll need to put together a &b&oForge Hammer&r. It's pretty much a bigger &bAnvil&r, but it's just got a flat top so you won't be able to use it as an anvil. Use it to make the basics such as &bPlates&r and &bRods&r. Though, &6slamming&r the &bForge Hammer&r with an &bIngot&r can be very &6inefficient&r and you'll get &6less&r out of your &bIngot&r due to &6damaged&r or &6chipped&r metal. If you &6craft yourself&r one of the various &bHammers&r, you'll &6increase the efficiency&r and your output; AKA the ratio increases. Once you use a &bHammer&r, more formations of that &bIngot&r will open up to you. Be smart with your resources as the &bHammer&r won't last forever as its durability will eventually &6diminish&r till it breaks."
+		"  Before you can even make &bBronze&r, you'll need to put together a &b&oForge Hammer&r. It's pretty much a bigger &bAnvil&r, but it's just got a flat top so you won't be able to use it as an anvil."
+		""
+		"  Use it to make the basics such as &bPlates&r and &bRods&r. Though, &6slamming&r the &bForge Hammer&r with an &bIngot&r can be very &6inefficient&r and you'll get &6less&r out of your &bIngot&r due to &6damaged&r or &6chipped&r metal."
+		""
+		"  If you &6craft yourself&r one of the various &bHammers&r, you'll &6increase the efficiency&r and your output; AKA the ratio increases. Once you use a &bHammer&r, more formations of that &bIngot&r will open up to you. Be smart with your resources as the &bHammer&r won't last forever as its durability will eventually &6diminish&r till it breaks."
 		""
 		"  You can also use the &bForge Hammer&r as a way of getting more &bRaw Ore&r out of your &bOres&r. Again, using the &bHammer&r will give you &6more&r at the cost of durability."
 	]
@@ -757,7 +802,12 @@
 	quest.5663A6C559490A29.quest_desc: ["&6Right-Click&f the &bariel pearl&f on a &bzombie&f or &bhusk&f and it will be complete."]
 	quest.5663A6C559490A29.quest_subtitle: "Dont think your getting that zombie back"
 	quest.566D039774A4DB9D.title: "Plutonium Pellet"
-	quest.5676B5FD97FB10C3.quest_desc: [" Smelting time! This is the &bBronze Furnace&r and despite it being just as slow as your regular &bFurnace&r, the difference is that this one &6uses &o20&r&6 times less fuel&r! Thank &bSteam&r for being so efficient!"]
+	quest.5676B5FD97FB10C3.quest_desc: [
+		"  This is the &bBronze Furnace&r and despite it being just as slow as your regular &bFurnace&r, the difference is that this one &6uses &o20&r&6 times less fuel&r!"
+		""
+		"  Thank &bSteam&r for being so efficient!"
+	]
+	quest.5676B5FD97FB10C3.quest_subtitle: "It's Smelting Time!"
 	quest.5676B5FD97FB10C3.title: "Bronze Furnace"
 	quest.56C5ECD3430B6A55.title: "HDPE Reinforced Elytra"
 	quest.57A8D67858693F4A.title: "Basic Injecting Factory"
@@ -863,7 +913,12 @@
 	quest.6BD625E5CA469914.quest_desc: ["  The last step before total overclock, the most tame but beneficial upgrade, the one and only &bHighly Advanced Upgrade&r! Each and every one of these added to your machine &6increases its max possible power consumption by 256 eu/t&r. Only a single one of these bad boys will boost your machine to the moon! Use them wisely, they are pretty pricey to make."]
 	quest.6BD625E5CA469914.title: "Highly Advanced Upgrade"
 	quest.6C012E0F8B3922DC.title: "Elite Injecting Factory"
-	quest.6CA941AE132445D9.quest_desc: ["  The electronic heart. &bMachine Hulls&r contain the main electronics to allow machines to run. There are different tiers to machine hulls, each allowing you to upgrade your machines. The &bBasic Machine Hull&r is the base of every machine that takes LV power. If you want your machine to accept MV power, you must upgrade it using an &bAdvanced Machine Hull&r. You can do this by &6right clicking the machine with the upgraded hull&r in your hand or by placing it in the top right slot of the machine's GUI that seems to have a small isometric cube depiction. You can do the same with higher tier hulls as they will allow for higher tier power sources."]
+	quest.6CA941AE132445D9.quest_desc: [
+		"  &bMachine Hulls&r contain the main electronics to allow machines to run. There are different tiers to machine hulls, each allowing you to upgrade your machines. The &bBasic Machine Hull&r is the base of every machine that takes LV power."
+		""
+		"  If you want your machine to accept MV power, you must upgrade it using an &bAdvanced Machine Hull&r. You can do this by &6right clicking the machine with the upgraded hull&r in your hand or by placing it in the top right slot of the machine's GUI that seems to have a small isometric cube depiction. You can do the same with higher tier hulls as they will allow for higher tier power sources."
+	]
+	quest.6CA941AE132445D9.quest_subtitle: "The Electronic Heart"
 	quest.6CA941AE132445D9.title: "Machine Hulls"
 	quest.6D702C00A519AD12.title: "Elite Purifying Factory"
 	quest.6DED76B2F4AFD02F.quest_desc: ["&bDry ice &fis extremely rare to find underground, but you can make it if you have enough &bpower and ice."]
@@ -890,7 +945,6 @@
 	quest.6F57A2A5AA6E3F49.title: "Oil Drilling Rig"
 	quest.6F63B60042A7F6AE.quest_desc: [
 		"{image:modern_industrialization:block/machines/compressor/overlay_front_active width:32 height:32 align:center}"
-		""
 		"  This is the &bCompressor&r and probably the first machine you'd want to build. Being able to &6turn ingots into plates&r at a 1:1 ratio is extremely helpful during the steam age."
 		""
 		"  You save on resources and won't need to burn through hammers just to collect enough plates for your first project."
@@ -913,9 +967,18 @@
 	quest.6FF26C2F7EBDC28A.title: "Printed Silicon"
 	quest.700EDD1767BA80CF.title: "Crafting Card"
 	quest.703C1F1E9A6F4A9E.title: "Chemical Infuser"
-	quest.707EBB99AA8F4C57.quest_desc: ["  Wire! Zap! Time to make your first wire; long strings of highly conductive metals for the transfer of electricity. &6You can combine these plain wires with your &bRubber Sheets&r &6to make &bCables&r. Make sure you put enough rubber around those wires, don't want to get shocked!"]
+	quest.707EBB99AA8F4C57.quest_desc: [
+		"  Time to make your first wire; long strings of highly conductive metals for the transfer of electricity. &6You can combine these plain wires with your &bRubber Sheets&r &6to make &bCables&r. "
+		""
+		"  Make sure you put enough rubber around those wires, don't want to get shocked!"
+	]
+	quest.707EBB99AA8F4C57.quest_subtitle: "Wire! Zap!"
 	quest.707EBB99AA8F4C57.title: "Steel Wiremill"
-	quest.71776A6A96EB037C.quest_desc: ["  &bFire Clay&r is a &6mixture&r of plain river &bClay&r and &bBrick Dust&r as a tempering agent, then &6re-fired&r to harden it to make it withstand extreme temperatures. To make the &bBrick Dust&r you can use your good ol' &bForge Hammer&r and use it to &6crush&r plain &bBricks&r. You can also use other machines like the &bMacerator&r to make this process more efficient. "]
+	quest.71776A6A96EB037C.quest_desc: [
+		"  &bFire Clay&r is a &6mixture&r of plain river &bClay&r and &bBrick Dust&r as a tempering agent, then &6re-fired&r to harden it to make it withstand extreme temperatures."
+		""
+		"  To make the &bBrick Dust&r you can use your good ol' &bForge Hammer&r and use it to &6crush&r plain &bBricks&r. You can also use other machines like the &bMacerator&r to make this process more efficient. "
+	]
 	quest.71776A6A96EB037C.title: "Fire Clay"
 	quest.71DD555551705B17.title: "Dynamic Tank"
 	quest.71F041E82D23C365.title: "Oredictionificator"
@@ -938,12 +1001,16 @@
 	quest.746C3046F10DDD71.title: "Fluix Dense Smart Cable"
 	quest.7529F840525E5BDF.title: "Ultimate Induction Cell"
 	quest.75810CDFB362E0CB.title: "Singularity"
-	quest.7593E582FA928061.quest_desc: ["  This is the &bCopper Drill&r. This will give you &6stones and dirts&r, mostly used as building materials. Check the outputs in REI and make sure you know that &6the drill has a chance of breaking&r, so don't just make one."]
+	quest.7593E582FA928061.quest_desc: [
+		"  This is the &bCopper Drill&r. This will give you &6stones and dirts&r, mostly used as building materials."
+		""
+		"  Check the outputs in REI and make sure you know that &6the drill has a chance of breaking&r, so don't just make one."
+	]
 	quest.7593E582FA928061.title: "Copper Drill"
 	quest.75A91A9D8317EFC4.title: "Ultimate Fluid Tank"
 	quest.7610F9A545A15194.title: "Solar Generator"
 	quest.779C3C6B89AD2526.quest_desc: [
-		"  Time for a &oMAJOR&r upgrade! Electric machines work exactly the same as steam machines, except from the fact &6they require electricity to function instead of steam&r and they can progressively overclock recipes to up to 32 EU/t (for now)."
+		"  Electric machines work exactly the same as steam machines, except from the fact &6they require electricity to function instead of steam&r and they can progressively overclock recipes to up to 32 EU/t (for now)."
 		""
 		"  You can use your REI to view the recipes for the electric versions of the machines you are already familiar with. The recipes are more complex and will require more specific machine oriented parts."
 		""
@@ -951,6 +1018,7 @@
 		""
 		"  I strongly suggest that you begin to automate parts as soon as you possibly can. I'll let you know which parts you should automate as we come across them. Doing so will make electric machines practically free as you wont need to manually craft any components by yourself!"
 	]
+	quest.779C3C6B89AD2526.quest_subtitle: "Time for a Major Upgrade"
 	quest.779C3C6B89AD2526.title: "The Electric Age!"
 	quest.78756CC2F8821E41.title: "Gas Upgrade"
 	quest.789AD926FD776554.title: "Fluix Dense Covered Cable"
@@ -967,7 +1035,8 @@
 	quest.78F7F62C0E2E7448.title: "Ultimate Purifying Factory"
 	quest.78FE04A1A94C38B8.title: "Printed Calculation Circuit"
 	quest.790B49348370BE10.title: "Sulfurs and Niter"
-	quest.791CAEBAE57EF0E1.quest_desc: ["  You spin me right 'round, baby, right 'round! &bMotors&r take electricity and produce a rotational force. You'll use motors to create many of the machines and other components in the future. &6You should automate these&r."]
+	quest.791CAEBAE57EF0E1.quest_desc: ["  &bMotors&r take electricity and produce a rotational force. You'll use motors to create many of the machines and other components in the future. &6You should automate these&r."]
+	quest.791CAEBAE57EF0E1.quest_subtitle: "You Spin Me Right 'Round"
 	quest.791CAEBAE57EF0E1.title: "Motors"
 	quest.7921D6460E480F82.title: "Boiler Valve"
 	quest.79515634992D02A3.title: "Antimatter"
@@ -992,7 +1061,14 @@
 	quest.7B86C9C90997B3E3.quest_subtitle: "&oA little hexing?"
 	quest.7BB4CE27736F4C08.title: "Dynamic Valve"
 	quest.7BEA5B1D1B410E82.title: "Advanced Solar Generator"
-	quest.7C0FA555C5FE00D1.quest_desc: ["  Beep Boop. &bRobotic Arms&r are ways to automatically move things around within a machine. These can be very complex components and thus are made of &bSteel&r to stay strong and prevent internal damage. &6You should automate these&r."]
+	quest.7C0FA555C5FE00D1.quest_desc: [
+		"  &bRobotic Arms&r are ways to automatically move things around within a machine."
+		""
+		"  These can be very complex components and thus are made of &bSteel&r to stay strong and prevent internal damage."
+		""
+		"  &6You should automate these&r."
+	]
+	quest.7C0FA555C5FE00D1.quest_subtitle: "Beep Boop"
 	quest.7C0FA555C5FE00D1.title: "Robotic Arms"
 	quest.7C201074DDBAE831.title: "256k Storage Component"
 	quest.7C38A9BA01CA3772.title: "&1Alchemical Sulfur Rare"
