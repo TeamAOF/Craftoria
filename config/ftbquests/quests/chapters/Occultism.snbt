@@ -3,6 +3,9 @@
 	default_quest_shape: ""
 	filename: "Occultism"
 	group: "01BEAD68B1D370D3"
+	icon: {
+		id: "occultism:spirit_fire"
+	}
 	id: "7269FD2B5B0F0424"
 	images: [
 		{
@@ -1428,38 +1431,6 @@
 			}]
 			x: -10.8d
 			y: 5.5d
-		}
-		{
-			dependencies: [
-				"195E8F24F5384D66"
-				"79526A9D09D7FB6D"
-				"209744C68891F1DA"
-				"320F924B4D0D5EE6"
-				"64D625C86F3AB75C"
-				"7FD2368444636E93"
-				"2D5A0399B7FFA5DB"
-				"687A9332533A26E8"
-				"32677D1F144A1184"
-				"5BBB0BDD45F6FFC0"
-				"7FBC6EFE948A0CD2"
-				"62B0913266F48F45"
-				"5358F626FAFBEDD3"
-				"53A66CA8EFE820D1"
-				"219AFCECD9D006A2"
-				"359A7C4C3C5E734F"
-				"69C0D033A9EE9EA7"
-				"741485F43A560FF3"
-				"510EAAAA3E08FCD5"
-			]
-			hide_dependency_lines: true
-			id: "2A0B443CD4EF8008"
-			tasks: [{
-				id: "2BBC44F2AFC37A87"
-				item: { count: 1, id: "minecraft:oak_log" }
-				type: "item"
-			}]
-			x: -1.3d
-			y: -6.8d
 		}
 		{
 			dependencies: ["7599CF789CD95680"]
