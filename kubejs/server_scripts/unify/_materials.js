@@ -58,7 +58,21 @@ let gems = {
   "lapis": ["dust"],
   "quartz": ["dust"],
   "coal": ["dust"],
+  "ruby": ["dust"],
 };
+
+let misc = {
+  "sulfur": ["dust"],
+  "salt": ["dust"],
+};
+
+// let types = [
+//   "dust",
+//   "nugget",
+//   "ingot",
+//   "storage_block",
+//   "raw",
+// ];
 
 // Do not touch this, it will be populated automatically.
 let unified = [];
