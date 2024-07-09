@@ -70,7 +70,10 @@
 	quests: [
 		{
 			icon: {
-				id: "occultism:otherworld_sapling_natural"
+				components: {
+					"modonomicon:book_id": "occultism:dictionary_of_spirits"
+				}
+				id: "occultism:dictionary_of_spirits"
 			}
 			id: "448D7A215A175817"
 			rewards: [{

@@ -3,11 +3,20 @@
 	default_quest_shape: ""
 	filename: "Theurgy"
 	group: "01BEAD68B1D370D3"
+	icon: {
+		id: "theurgy:liquefaction_cauldron"
+	}
 	id: "5A3894BACC5E8994"
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				components: {
+					"modonomicon:book_id": "theurgy:the_hermetica"
+				}
+				id: "modonomicon:modonomicon"
+			}
 			id: "55391FF509DA53A5"
 			rewards: [{
 				id: "01FFCAE555D0E4C6"
@@ -980,26 +989,6 @@
 			}]
 			x: 5.0d
 			y: 0.0d
-		}
-		{
-			dependencies: [
-				"30FB66E92909D4B9"
-				"4E6BB4279E8E793A"
-				"5B9BFD4F72E79F5B"
-				"376DD70A2C14F9A9"
-				"7C38A9BA01CA3772"
-				"79A693466BF51105"
-				"6DA3C5DEE0F6438D"
-			]
-			hide_dependency_lines: true
-			id: "333A187FF6CCBCF2"
-			tasks: [{
-				id: "4C10DF3450B2D8F6"
-				item: { count: 1, id: "minecraft:oak_log" }
-				type: "item"
-			}]
-			x: -10.0d
-			y: 2.5d
 		}
 	]
 }

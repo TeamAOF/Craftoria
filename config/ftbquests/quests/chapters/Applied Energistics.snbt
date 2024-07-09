@@ -7,7 +7,7 @@
 		id: "ae2:mysterious_cube"
 	}
 	id: "70FFEE37C7ABD690"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -780,12 +780,13 @@
 		}
 		{
 			id: "2278075F3F03EF0F"
+			size: 2.0d
 			tasks: [{
 				id: "38483E8CE34E1E0F"
 				item: { count: 1, id: "ae2:sky_stone_block" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 0.0d
 		}
 		{

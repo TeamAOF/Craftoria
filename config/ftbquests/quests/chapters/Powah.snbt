@@ -3,6 +3,9 @@
 	default_quest_shape: ""
 	filename: "Powah"
 	group: "066C799B2F5452CD"
+	icon: {
+		id: "powah:energizing_rod_nitro"
+	}
 	id: "01B56BD678E7745B"
 	order_index: 3
 	quest_links: [ ]
@@ -1352,24 +1355,6 @@
 			}]
 			x: 2.0d
 			y: -4.0d
-		}
-		{
-			dependencies: [
-				"2476BE69FBC0681D"
-				"1AB268C10CF67ED5"
-				"407D04C17AA78E09"
-				"58EB5EFE7564D437"
-				"7C91F8323E43114F"
-			]
-			hide_dependency_lines: true
-			id: "30712755CEBE5920"
-			tasks: [{
-				id: "47BF6BBA164DE5D9"
-				item: { count: 1, id: "minecraft:oak_log" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.0d
 		}
 		{
 			dependencies: ["4A00CD832E1D9543"]
