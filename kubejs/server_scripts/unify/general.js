@@ -22,7 +22,7 @@ let logNotFound = (mod, material, type) => {
 ServerEvents.tags("item", e => {
   let tags = [];
   // This is used to re-order the tags.
-  [metals, gems].forEach(materials => {
+  [metals, gems, misc].forEach(materials => {
     for (let [material, types] of Object.entries(materials)) {
       types.forEach(type => {
         if (type === "raw")
@@ -149,14 +149,41 @@ ServerEvents.recipes(e => {
     });
   };
 
-  [metals, gems].forEach(materials => {
+  let unifyMisc = (material, types) => {
+    types.forEach(type => {
+      if (unified.includes(`${material}_${type}`)) {
+        if (debug === 2) console.info(`Skipping ${material}_${type}, already unified.`);
+        return;
+      }
+
+      modPriority.forEach(mod => {
+        if (ifExists(mod, material, type, false)) {
+          e.replaceOutput({}, `#c:${type}s/${material}`, `${mod}:${material}_${type}`);
+          if (debug === 2) console.info(`Replaced #c:${type}s/${material}, with ${mod}:${material}_${type}`);
+          unified.push(`${material}_${type}`);
+        } else
+          logNotFound(mod, material, type);
+      });
+    });
+  };
+
+  [metals, gems, misc].forEach(materials => {
     for (let [material, types] of Object.entries(materials)) {
       if (debug === 1) console.info(`Unifying ${material}...`);
 
-      if (materials === gems)
-        unifyGem(material, types);
-      else
-        unifyMetal(material, types);
+      switch (materials) {
+        case metals:
+          unifyMetal(material, types);
+          break;
+        case gems:
+          unifyGem(material, types);
+          break;
+        case misc:
+          unifyMisc(material, types);
+          break;
+        default:
+          console.error(`Unknown material type: ${materials}!`);
+      };
     };
   });
 

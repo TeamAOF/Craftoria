@@ -7,8 +7,8 @@ RecipeViewerEvents.removeEntries("item", e => {
     "bronze": ["mekanism"],
     "tin": ["mekanism"],
     "uranium": ["mekanism"],
-    "diamond": ["mekanism"],
-    "emerald": ["mekanism"],
+    "diamond": ["mekanism", "appflux"],
+    "emerald": ["mekanism", "appflux"],
     "lapis_lazuli": ["mekanism"],
     "quartz": ["mekanism"],
     "coal": ["mekanism"],
@@ -21,6 +21,8 @@ RecipeViewerEvents.removeEntries("item", e => {
     "nickel": ["moremekanismprocessing"],
     "iridium": ["moremekanismprocessing"],
     "obsidian": ["occultism"],
+    "sulfur": ["mekanism"],
+    "ruby": ["moremekanismprocessing"],
   };
 
   let types = ["ingot", "block", "dust", "nugget", "ore", "raw"];
@@ -36,9 +38,15 @@ RecipeViewerEvents.removeEntries("item", e => {
       switch (mod) {
         case "mekanism":
           types.forEach(type => {
-            e.remove(`${mod}:${type}_${key}`);
-            if (type === "raw")
+            if (type === "ore") {
+              e.remove(`mekanism:${key}_${type}`);
+              e.remove(`mekanism:deepslate_${key}_${type}`);
+            } else if (type === "raw") {
+              e.remove(`mekanism:${type}_${key}`);
               e.remove(`${mod}:block_${type}_${key}`);
+            }
+            else
+              e.remove(`${mod}:${type}_${key}`);
           });
           break;
 
@@ -50,9 +58,25 @@ RecipeViewerEvents.removeEntries("item", e => {
               e.remove(`${mod}:${type}_${key}`);
           });
           break;
+        case "occultism":
+          types.forEach(type => {
+            if (type !== "ore") {
+              if (type !== "raw")
+                e.remove(`${mod}:${key}_${type}`);
+              else {
+                e.remove(`${mod}:${type}_${key}`);
+                e.remove(`${mod}:${type}_${key}_block`);
+              }
+            }
+          });
+          break;
         default:
           types.forEach(type => {
-            if (type !== "raw")
+            if (type === "ore") {
+              e.remove(`${mod}:${key}_${type}`);
+              e.remove(`${mod}:deepslate_${key}_${type}`);
+            }
+            else if (type !== "raw")
               e.remove(`${mod}:${key}_${type}`);
             else {
               e.remove(`${mod}:${type}_${key}`);
@@ -63,60 +87,6 @@ RecipeViewerEvents.removeEntries("item", e => {
       }
     });
   }
-  e.remove("@hammerlib");
-});
 
-ServerEvents.tags("item", event => {
-
-  const material = [
-    "mekanism:tin_ore",
-    "mekanism:deepslate_tin_ore",
-    "mekanism:lead_ore",
-    "mekanism:deepslate_lead_ore",
-    "mekanism:dust_lead",
-    "mekanism:dust_tin",
-    "mekanism:ingot_tin",
-    "mekanism:nugget_tin",
-    "mekanism:raw_tin",
-    "mekanism:block_raw_tin",
-    "mekanism:ingot_lead",
-    "mekanism:raw_lead",
-    "mekanism:block_lead",
-    "mekanism:nugget_lead",
-    "mekanism:block_raw_lead",
-    "mekanism:block_tin",
-    "mekanism:dust_uranium",
-    "mekanism:ingot_uranium",
-    "mekanism:raw_uranium",
-    "mekanism:nugget_uranium",
-    "mekanism:block_uranium",
-    "mekanism:uranium_ore",
-    "mekanism:deepslate_uranium_ore",
-    "mekanism:block_raw_uranium",
-    "mekanism:dust_steel",
-    "mekanism:ingot_steel",
-    "mekanism:nugget_steel",
-    "mekanism:block_steel",
-    "mekanism:dust_gold",
-    "mekanism:dust_iron",
-    "mekanism:dust_copper",
-    "mekanism:dust_diamond",
-    "mekanism:dust_bronze",
-    "mekanism:ingot_bronze",
-    "mekanism:nugget_bronze",
-    "mekanism:block_bronze",
-    "moremekanismprocessing:dust_aluminum",
-    "moremekanismprocessing:aluminum_ingot",
-    "moremekanismprocessing:aluminum_nugget",
-    "moremekanismprocessing:dust_silver",
-    "moremekanismprocessing:silver_ingot",
-    "moremekanismprocessing:silver_nugget",
-    "mekanism:dust_emerald",
-    "mekanism:dust_lapis_lazuli",
-    "mekanism:dust_quartz"
-  ];
-
-  material.forEach((item) => {
-    event.add("c:hidden_from_recipe_viewers", item);
-  });
+  e.remove(["mekanism:block_salt", "mekanism:salt"]);
 });
