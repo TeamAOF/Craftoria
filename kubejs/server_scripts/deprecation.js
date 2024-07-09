@@ -16,7 +16,6 @@ RecipeViewerEvents.removeEntries("item", event => {
 });
 
 ServerEvents.recipes((event) => {
-
   let replaceChest = (old, mod) => {
     let chest = old.split(":")[1];
     if (Item.exists(`${mod}:${chest}`)) {
@@ -41,7 +40,8 @@ ServerEvents.recipes((event) => {
     event.remove({ mod: mod });
     Ingredient.of(`@${mod}`).itemIds.forEach(i => {
       let newId = i.replace(mod, replacement);
-      console.log(i);
+      if (debug === 5)
+        console.log(i);
       let recipeID = `craftoria:deprecated/`;
       if (Item.exists(newId)) {
         if (i.includes("chest")) {
@@ -55,11 +55,13 @@ ServerEvents.recipes((event) => {
         }
 
         event.shapeless(newId, [i]).id(recipeID);
-        console.log(`Added a conversion from ${i} -> ${newId}`);
+        if (debug === 5)
+          console.log(`Added a conversion from ${i} -> ${newId}`);
       } else if (replacement === "expandedstorage" && i.includes("chest_upgrade")) {
         newId = newId.split(":")[1];
         newId = newId.replace("chest_upgrade", "conversion_kit");
-        console.log(newId);
+        if (debug === 5)
+          console.log(newId);
 
         if (Item.exists(`${replacement}:${newId}`)) {
           i = replaceUpgrade(i, replacement);
@@ -71,7 +73,8 @@ ServerEvents.recipes((event) => {
           }
 
           event.shapeless(`${replacement}:${newId}`, [i]).id(recipeID);
-          console.log(`Added a conversion from ${i} -> ${newId}`);
+          if (debug === 5)
+            console.log(`Added a conversion from ${i} -> ${newId}`);
         }
       }
     });
