@@ -137,6 +137,68 @@
 			x: -0.1d
 			y: 9.8d
 		}
+		{
+			height: 30.0d
+			image: "ae2:block/spatial_pylon/red_spanned"
+			order: 10
+			rotation: 90.0d
+			width: 1.0d
+			x: 14.0d
+			y: 10.5d
+		}
+		{
+			height: 30.0d
+			image: "ae2:block/spatial_pylon/base_spanned"
+			rotation: 90.0d
+			width: 1.0d
+			x: 14.0d
+			y: 10.5d
+		}
+		{
+			height: 1.0d
+			image: "ae2:block/spatial_pylon/base_end"
+			order: 10
+			rotation: -90.0d
+			width: 1.0d
+			x: 26.5d
+			y: 10.5d
+		}
+		{
+			height: 1.0d
+			image: "ae2:block/spatial_pylon/red_end"
+			order: 100
+			rotation: -90.0d
+			width: 1.0d
+			x: 26.5d
+			y: 10.5d
+		}
+		{
+			height: 2.0d
+			image: "ae2:block/quantum_ring_light"
+			order: 100
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			height: 2.0d
+			image: "ae2:block/quantum_ring_light_corner"
+			order: 100
+			rotation: 0.0d
+			width: 2.0d
+			x: 24.5d
+			y: -5.0d
+		}
+		{
+			height: 2.0d
+			image: "ae2:block/mysterious_cube_side"
+			order: 100
+			rotation: 0.0d
+			width: 2.0d
+			x: 24.0d
+			y: 7.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
