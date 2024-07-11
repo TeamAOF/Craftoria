@@ -9,29 +9,30 @@
 	id: "70FFEE37C7ABD690"
 	images: [
 		{
-			color: 5002858
-			height: 20.0d
+			color: 6193580
+			height: 22.0d
 			image: "ae2:part/formation_plane_on"
 			rotation: 0.0d
-			width: 30.0d
-			x: 14.0d
-			y: 1.75d
+			width: 36.0d
+			x: 18.5d
+			y: 6.5d
 		}
 		{
-			height: 20.0d
+			height: 22.0d
 			image: "ae2:block/spatial_pylon/red_spanned"
+			order: 1
 			rotation: 0.0d
 			width: 1.0d
-			x: 0.8d
-			y: 1.5d
+			x: 2.6d
+			y: 6.5d
 		}
 		{
-			height: 20.0d
+			height: 22.0d
 			image: "ae2:block/spatial_pylon/base_spanned"
 			rotation: 180.0d
 			width: 1.0d
-			x: 0.8d
-			y: 1.5d
+			x: 2.6d
+			y: 6.5d
 		}
 		{
 			height: 1.0d
@@ -39,8 +40,8 @@
 			order: 100
 			rotation: 180.0d
 			width: 1.0d
-			x: 0.8d
-			y: -6.7d
+			x: 2.6d
+			y: -2.5d
 		}
 		{
 			height: 1.0d
@@ -48,8 +49,8 @@
 			order: 10
 			rotation: 180.0d
 			width: 1.0d
-			x: 0.8d
-			y: -6.9d
+			x: 2.6d
+			y: -2.5d
 		}
 		{
 			height: 1.0d
@@ -57,8 +58,8 @@
 			order: 100
 			rotation: 0.0d
 			width: 1.0d
-			x: 0.8d
-			y: 9.8d
+			x: 2.6d
+			y: 15.5d
 		}
 		{
 			height: 1.0d
@@ -66,8 +67,8 @@
 			order: 10
 			rotation: 0.0d
 			width: 1.0d
-			x: 0.8d
-			y: 9.8d
+			x: 2.6d
+			y: 15.5d
 		}
 		{
 			height: 1.0d
@@ -75,17 +76,17 @@
 			order: 100
 			rotation: 0.0d
 			width: 1.0d
-			x: 0.8d
-			y: 10.7d
+			x: 2.6d
+			y: 16.4d
 		}
 		{
 			height: 1.0d
 			image: "ae2:item/spatial_storage_cell_128"
-			order: 1
+			order: 2
 			rotation: -22.5d
 			width: 1.0d
-			x: -1.7d
-			y: 10.6d
+			x: 0.4d
+			y: 16.5d
 		}
 		{
 			height: 1.0d
@@ -93,16 +94,16 @@
 			order: 10
 			rotation: 0.0d
 			width: 1.0d
-			x: -0.1d
-			y: 10.7d
+			x: 1.7d
+			y: 16.4d
 		}
 		{
 			height: 1.0d
 			image: "ae2:block/controller"
 			rotation: 0.0d
 			width: 1.0d
-			x: -0.1d
-			y: 10.7d
+			x: 1.7d
+			y: 16.4d
 		}
 		{
 			height: 1.0d
@@ -110,49 +111,50 @@
 			order: 110
 			rotation: 22.5d
 			width: 1.0d
-			x: 1.5d
-			y: 10.8d
+			x: 4.0d
+			y: 16.5d
 		}
 		{
 			height: 1.0d
 			image: "ae2:item/spatial_storage_cell_16"
 			rotation: -45.0d
 			width: 1.0d
-			x: -1.3d
-			y: 10.1d
+			x: 0.7d
+			y: 15.9d
 		}
 		{
 			height: 1.0d
 			image: "ae2:item/spatial_storage_cell_2"
+			order: 1
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.0d
-			y: 10.7d
+			x: 0.9d
+			y: 16.5d
 		}
 		{
 			height: 1.0d
 			image: "ae2:block/vibration_chamber_front_on"
 			rotation: 0.0d
 			width: 1.0d
-			x: -0.1d
-			y: 9.8d
+			x: 1.7d
+			y: 15.5d
 		}
 		{
-			height: 30.0d
+			height: 36.0d
 			image: "ae2:block/spatial_pylon/red_spanned"
 			order: 10
 			rotation: 90.0d
 			width: 1.0d
-			x: 14.15d
-			y: 10.65d
+			x: 18.5d
+			y: 16.4d
 		}
 		{
-			height: 30.0d
+			height: 36.0d
 			image: "ae2:block/spatial_pylon/base_spanned"
 			rotation: 90.0d
 			width: 1.0d
-			x: 14.15d
-			y: 10.65d
+			x: 18.5d
+			y: 16.4d
 		}
 		{
 			height: 1.0d
@@ -160,8 +162,8 @@
 			order: 10
 			rotation: -90.0d
 			width: 1.0d
-			x: 26.6d
-			y: 10.7d
+			x: 33.5d
+			y: 16.4d
 		}
 		{
 			height: 1.0d
@@ -169,8 +171,8 @@
 			order: 100
 			rotation: -90.0d
 			width: 1.0d
-			x: 26.6d
-			y: 10.7d
+			x: 33.5d
+			y: 16.4d
 		}
 		{
 			height: 2.0d
@@ -178,8 +180,8 @@
 			order: 100
 			rotation: 0.0d
 			width: 2.0d
-			x: 4.5d
-			y: 7.5d
+			x: 13.7d
+			y: 0.0d
 		}
 		{
 			height: 2.0d
@@ -187,8 +189,8 @@
 			order: 100
 			rotation: 0.0d
 			width: 2.0d
-			x: 24.5d
-			y: -5.0d
+			x: 31.2d
+			y: -0.5d
 		}
 		{
 			height: 2.0d
@@ -196,8 +198,8 @@
 			order: 100
 			rotation: 0.0d
 			width: 2.0d
-			x: 24.0d
-			y: 7.0d
+			x: 8.0d
+			y: 11.6d
 		}
 		{
 			height: 1.0d
@@ -205,8 +207,8 @@
 			order: 10
 			rotation: 90.0d
 			width: 1.0d
-			x: 1.7d
-			y: 10.7d
+			x: 3.5d
+			y: 16.4d
 		}
 		{
 			height: 1.0d
@@ -214,8 +216,8 @@
 			order: 100
 			rotation: 90.0d
 			width: 1.0d
-			x: 1.7d
-			y: 10.7d
+			x: 3.5d
+			y: 16.4d
 		}
 	]
 	order_index: 0
@@ -1703,12 +1705,13 @@
 					type: "item"
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "472183C6FF77ACD8"
 				item: { count: 1, id: "ae2:meteorite_compass" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 4.25d
 			y: 5.83d
 		}
 		{
