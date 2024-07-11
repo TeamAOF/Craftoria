@@ -15,7 +15,7 @@
 			rotation: 0.0d
 			width: 30.0d
 			x: 14.0d
-			y: 1.5d
+			y: 1.75d
 		}
 		{
 			height: 20.0d
@@ -28,7 +28,7 @@
 		{
 			height: 20.0d
 			image: "ae2:block/spatial_pylon/base_spanned"
-			rotation: 0.0d
+			rotation: 180.0d
 			width: 1.0d
 			x: 0.8d
 			y: 1.5d
@@ -107,11 +107,11 @@
 		{
 			height: 1.0d
 			image: "ae2wtlib:item/wireless_universal_terminal"
-			order: 100
+			order: 110
 			rotation: 22.5d
 			width: 1.0d
 			x: 1.5d
-			y: 10.9d
+			y: 10.8d
 		}
 		{
 			height: 1.0d
@@ -143,16 +143,16 @@
 			order: 10
 			rotation: 90.0d
 			width: 1.0d
-			x: 14.0d
-			y: 10.5d
+			x: 14.15d
+			y: 10.65d
 		}
 		{
 			height: 30.0d
 			image: "ae2:block/spatial_pylon/base_spanned"
 			rotation: 90.0d
 			width: 1.0d
-			x: 14.0d
-			y: 10.5d
+			x: 14.15d
+			y: 10.65d
 		}
 		{
 			height: 1.0d
@@ -160,8 +160,8 @@
 			order: 10
 			rotation: -90.0d
 			width: 1.0d
-			x: 26.5d
-			y: 10.5d
+			x: 26.6d
+			y: 10.7d
 		}
 		{
 			height: 1.0d
@@ -169,8 +169,8 @@
 			order: 100
 			rotation: -90.0d
 			width: 1.0d
-			x: 26.5d
-			y: 10.5d
+			x: 26.6d
+			y: 10.7d
 		}
 		{
 			height: 2.0d
@@ -198,6 +198,24 @@
 			width: 2.0d
 			x: 24.0d
 			y: 7.0d
+		}
+		{
+			height: 1.0d
+			image: "ae2:block/spatial_pylon/base_end"
+			order: 10
+			rotation: 90.0d
+			width: 1.0d
+			x: 1.7d
+			y: 10.7d
+		}
+		{
+			height: 1.0d
+			image: "ae2:block/spatial_pylon/red_end"
+			order: 100
+			rotation: 90.0d
+			width: 1.0d
+			x: 1.7d
+			y: 10.7d
 		}
 	]
 	order_index: 0
