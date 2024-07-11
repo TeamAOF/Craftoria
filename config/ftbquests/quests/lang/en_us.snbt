@@ -2,11 +2,11 @@
 	chapter.01B56BD678E7745B.title: "Powah"
 	chapter.1AE9F15DF280DC77.title: "Side Quests"
 	chapter.3188AC6C440F7520.title: "Getting Started"
-	chapter.40CEA39FE5F5225D.title: "Mekanism"
+	chapter.40CEA39FE5F5225D.title: "Mekanism &c(WIP)"
 	chapter.5A3894BACC5E8994.title: "Theurgy"
 	chapter.6A5B4531418CC297.title: "Modern Industrialization"
 	chapter.70FFEE37C7ABD690.title: "Applied Energistics"
-	chapter.7269FD2B5B0F0424.title: "&bOccultism"
+	chapter.7269FD2B5B0F0424.title: "Occultism"
 	chapter_group.01BEAD68B1D370D3.title: "&lMagic&r &d✡"
 	chapter_group.066C799B2F5452CD.title: "&lTechnology&r &e⚡"
 	chapter_group.14D8AC2C1E9C819F.title: "Powah!!!"
@@ -15,6 +15,7 @@
 	quest.0035439F73199781.quest_subtitle: "And they call this \"steel\""
 	quest.0035439F73199781.title: "&eEnergized Steel"
 	quest.0043B98F72CCB995.quest_desc: ["By &6throwing &bOtherwood &finto the &bSpiritfire &fyou can get &bOtherworld Ashes"]
+	quest.011E9553CDCAE218.quest_desc: ["Quadrupling that storage capacity are we?"]
 	quest.011E9553CDCAE218.title: "4k Storage Component"
 	quest.0145A878C472548C.title: "Ritual: Summon Foliot Lumberjack"
 	quest.02272D430F08B1DC.quest_desc: [
@@ -30,6 +31,11 @@
 	quest.03E0ADE2191CC3FB.title: "Advanced Induction Cell"
 	quest.048328EEBEEC9C94.title: "Hazmat"
 	quest.04A2A00D41A94FEB.title: "Ultimate Thermodynamic Conductor"
+	quest.04A59B3F170A0362.quest_desc: [
+		"The &bFuzzy Card &fallows for items to be passed through that are very similar."
+		""
+		"Example: &bRaw Silver &f(one mod)&b Raw Silver&f (Different Mod) with the &bFuzzy Filter &fuse both items with just 1 slot in a &bfilter&f."
+	]
 	quest.04A59B3F170A0362.title: "Fuzzy Card"
 	quest.04A69DE982F47E64.quest_desc: [
 		"  Time for another major upgrade! Now you'll be able to make a &6maximum of 512 eu/t&r out of the new &bHV Steam Turbine&r! Aside from the increase in energy production four-fold (again), it acts just like the LV and &bMV Steam Turbine&r."
@@ -39,15 +45,13 @@
 	quest.04A69DE982F47E64.title: "HV Steam Turbine"
 	quest.04C21F7B2F034772.title: "Supercharged Coil"
 	quest.05A0AC380BB141A0.title: "Restrictive Transporter"
+	quest.0633D2B1E1DB778B.quest_desc: ["Obtained by &6smelting &bCertus Quartz&f, &bSilicon&f is used in 3 different processors you will need to proceed."]
 	quest.0633D2B1E1DB778B.title: "Silicon"
 	quest.063AC8D565792B03.title: "Elite Fluid Tank"
+	quest.068339CE98E5DEB5.quest_desc: ["&bCalculation Processors &fare used in &bStorage Components&f, and some other things."]
 	quest.068339CE98E5DEB5.title: "Calculation Processor"
 	quest.06C4D99A90DF7711.title: "Ultimate Injecting Factory"
-	quest.06D66E791A9939DD.quest_desc: [
-		"Build a &bCharger&r, and power it with a &bVibration Chamber&r or generators from others mods."
-		""
-		"You can also power it by hand using a &bWooden Crank&r."
-	]
+	quest.06D66E791A9939DD.quest_desc: ["Build a &bCharger&r, and power it with a &bVibration Chamber&r or generators from others mods."]
 	quest.06D66E791A9939DD.quest_subtitle: "Provides a way to charge supported tools through the ME Network"
 	quest.06D66E791A9939DD.title: "Charger"
 	quest.0729CB454B970201.quest_desc: [
@@ -117,7 +121,11 @@
 	]
 	quest.0B2FF8169FD3812D.quest_subtitle: "Waiting for Something to Hatch?"
 	quest.0B2FF8169FD3812D.title: "Steel Hatches"
-	quest.0B94435972292812.quest_desc: [""]
+	quest.0B94435972292812.quest_desc: [
+		"The &bSpatial IO Port &fis the core of the &bSpatial Digitizing system&f. It's placed at the verticie where all 3 &bpylon edges &fmeet. It's where you place the &bSpatial Drive &fand allow it to&6 capture a build or rlease it&f. This is also the block to power when charging the system."
+		""
+		"You can also interact with the &bSpatial IO Port with hoppers&f or other piping methods to automate the process if you so desire. A &6redstone signal&f is all the &bSpatial IO Port&f needs to activate. Be careful!"
+	]
 	quest.0B94435972292812.title: "Spatial IO Port"
 	quest.0C1C61B4554B38E5.title: "Combiner"
 	quest.0C6D0B1C1AF75292.quest_desc: [
@@ -149,6 +157,7 @@
 		" &#8226; Third is a &bDiesel Jetpack&r. Yes, you heard me right. A jetpack. The &6stronger the fuel&r in it the &6faster you'll fly&r. Use your \"V\" key to toggle the jetpack on and off. Let your wings free and fly with the power of technology! &oAnd a bit of fuel...&r"
 	]
 	quest.0ED4263270D37EF6.title: "Diesel Accessories"
+	quest.0FA3C7049E71EA4A.quest_desc: ["You planning on owning a &bQuarry&f anytime soon?"]
 	quest.0FA3C7049E71EA4A.title: "64k Storage Component"
 	quest.1081BFCAB3F07FFF.quest_desc: [
 		"  Need a steamy upgrade? I know I do! The &bLarge Steam Boiler&r is an upgraded version of the smaller bronze and steel boilers. &6It uses fuel 8 times faster&r than the Furnace, but it produces &6256 mb/t of steam&r when at max temperature. Make sure you don't forget to provide it &bWater&r!"
@@ -171,11 +180,13 @@
 	quest.110B0C8DD2FD5BE7.quest_desc: [""]
 	quest.110B0C8DD2FD5BE7.title: "Osmium is Pretty"
 	quest.117C9FABE86447D1.title: "Quantum Entangloporter"
+	quest.119752DA7C1B29B6.quest_desc: [""]
 	quest.11FC8E533E897B8F.quest_desc: ["With just &b500,000 FE&f you can summon &blightning&f by charging a &bsnowball in the energizer!!!"]
 	quest.11FC8E533E897B8F.quest_subtitle: "Lightning in a snowball?"
 	quest.124D18DDDDC4D102.title: "Basic Universal Cable"
 	quest.12C0AD9539DE96F2.title: "Elite Smelting Factory"
 	quest.132511B52E6234EF.title: "Elite Combining Factory"
+	quest.134B95ED0ACF0FAB.quest_desc: ["The&b Formation Plane&f will &6Place blocks &for &6drop blocks &fdirectly infront of it."]
 	quest.134B95ED0ACF0FAB.title: "Formation Plane"
 	quest.135FBE79D4415F15.quest_desc: [
 		"  Before you even ask, the answer is no. These &bnukes&r do &onot&r explode. These are nukes without it's detonator. "
@@ -183,7 +194,7 @@
 		"  These are used explicitly for use in the &bImplosion Compressor&r."
 	]
 	quest.135FBE79D4415F15.title: "Legalized Nuclear Bomb"
-	quest.1388262B2C874C1D.title: "Damaged Budding Certus Quartz"
+	quest.140E69B52907A2CD.quest_desc: ["&bLogic Circuits&f are required in order to craft the&b Logic Processors&f."]
 	quest.140E69B52907A2CD.title: "Printed Logic Circuit"
 	quest.141E3D92CBA9F1B3.quest_desc: [
 		"  This is a new electric machine that uses centripetal force to &6separate mixtures and items made of multiple materials into separate items&r."
@@ -192,6 +203,7 @@
 	]
 	quest.141E3D92CBA9F1B3.title: "Centrifuge"
 	quest.14B2E5EA9AF04DA9.title: "Advanced Energy Cube"
+	quest.151E812270A52250.quest_desc: ["&6Crafting Components&f are used to craft &bCo-Processing Units&r and &bCrafting Storages&b."]
 	quest.151E812270A52250.title: "Crafting Unit"
 	quest.15325B16AFE33D5C.quest_desc: [
 		"Specially crafted from &b3 Sticks&f and &b2 Iron Ingots&f you can get yourself a &bButchers Knife&f."
@@ -265,6 +277,11 @@
 	]
 	quest.16E5B09AA7E6A487.quest_subtitle: "All Aboard the Item Express!"
 	quest.16E5B09AA7E6A487.title: "Conveyor Belts"
+	quest.174680D8F6488D5F.quest_desc: [
+		"Combining with a 1k, 4k, 16k, 64k, and 256k component will convert it into a &bStorage Drive&f, which are big storage compartments. "
+		""
+		"Note: You can only store up to 63 different items inside of each drive, make sure you what your single slot items"
+	]
 	quest.174680D8F6488D5F.title: "Item Cell Housing"
 	quest.176524D0E4475298.quest_desc: [
 		"  With your freshly drilled &bCrude Oil&r you can make a large array of items, however &6you will need to refine it to use it&r. Currently it's pretty useless in an industrial sense."
@@ -275,10 +292,12 @@
 	]
 	quest.176524D0E4475298.title: "Distillery"
 	quest.17C1F2791A6E0676.title: "Speed Upgrade"
+	quest.17E8751018E9E0F6.quest_desc: ["The exact same thing as the one before, but with eight times the capacity. Don't accidentally discharge it! That might hurt."]
 	quest.17E8751018E9E0F6.title: "Dense Energy Cell"
 	quest.183E523C25CC6C3F.title: "Basic Logistical Transporter"
 	quest.186F257352F2E844.quest_desc: ["  This machine calls for a whole 'nother level of strength. Time to put that new &bTitanium&r you've made to use. The &bPressurizer&r allows you to pressurize &bWater&r &6into &bHP&r&6, or &bhigh pressure, water&6 and &r&bSteam&r &6into &bHP Steam&r. It also works the other way around to depressurize the fluids. The &bPressurizer&r also &6allows you to collect &bLiquid Air&r &6via the &bAir Intake&r, plus it's much more efficient than the &bVacuum Freezer&r."]
 	quest.186F257352F2E844.title: "Pressurizer"
+	quest.18956DB32D96ED2B.quest_desc: ["An upgrade already? Trying to take your house with you? Good idea! Tents tend to hurt backs."]
 	quest.18956DB32D96ED2B.title: "Medium Spatial Component"
 	quest.1987DF7742136DC4.quest_desc: [
 		"  Remember when I said the &bDistillery&r could only output one type of fluid per cycle? Well, this is your upgrade!"
@@ -288,6 +307,7 @@
 		"  To choose which size you want to have the &bDistillation Tower&r set to, use the selector in the top left of it's screen. Happy Distilling!"
 	]
 	quest.1987DF7742136DC4.title: "Distillation Tower"
+	quest.19C33613F2811BAA.quest_desc: ["The &bBasic Terminal&f allows you to access your &bstorage&f, but it can be upgraded."]
 	quest.19C33613F2811BAA.title: "Terminal"
 	quest.19F7B6A670D4A707.quest_desc: ["Obtained from the &bDistiller, Mercury &fin its rawest form."]
 	quest.19F7B6A670D4A707.quest_subtitle: "Raw Mercury"
@@ -311,6 +331,7 @@
 		"  Now, you've probably noticed that in your journey, you've been able to make &bBlast-proof Alloy Plates&b and &rTungsten Nuggets&r within your everyday compressor, despite it being a pretty inefficient process. Well now, using the &bImplosion Compressor&r, you'll be able to do it faster and even more efficient!"
 	]
 	quest.1C25114D2AF71C35.title: "Implosion Compressor"
+	quest.1C7CCCBD98BC295E.quest_desc: ["The &bInverted Toggle Bus &fdoes the exact same thing as it's brother, but the other way around! Giving it a&6 redstone signal &fwill cut data and power transfer."]
 	quest.1C7CCCBD98BC295E.title: "Inverted Toggle Bus"
 	quest.1CA2825FFA775BBE.quest_desc: [
 		"  This is a new electric machine that uses strong electric currents to split materials into different parts."
@@ -320,6 +341,7 @@
 		"  This process is called&6 Electrolysis&r and it works by using electric current to split ||ionic compounds|| into their elements."
 	]
 	quest.1CA2825FFA775BBE.title: "Electrolyzer"
+	quest.1CC53F5C13F69628.quest_desc: ["Now &othat's&r a lot of storage!"]
 	quest.1CC910880728D896.quest_desc: [
 		"  Did you have fun with &bNuclear Fission&r? Well, it's time for &bNuclear Fusion&r!"
 		""
@@ -334,6 +356,7 @@
 	quest.1CC910880728D896.title: "Fusion Reactor"
 	quest.1CD1F5A08AE6E557.quest_desc: ["Obtained in the depth of the world &bSal Ammoniac &fis best found at y_."]
 	quest.1CD1F5A08AE6E557.quest_subtitle: "Obtained from the depths"
+	quest.1D358E94F80B3E86.quest_desc: ["You can access all of Pattern Providers at once in the Pattern Access Terminal."]
 	quest.1D358E94F80B3E86.title: "Pattern Access Terminal"
 	quest.1D482F0D9AF8D17E.title: "Atomic Alloy"
 	quest.1D57C823A1F0203C.quest_desc: [
@@ -348,10 +371,10 @@
 		"  &aMore Tips&r: &6Crouch to mine&r &bsingle blocks&r, if you need! They'll still be in their &6Silktouch&r form, but it wont do the &63x3&r, incase you need to mine &bblocks&r more delicately."
 	]
 	quest.1D57C823A1F0203C.title: "Steam Mining Drill"
-	quest.1D72F055201169F0.title: "Flawed Budding Certus Quartz"
 	quest.1DB0824C333DDA8E.title: "Energy Upgrade"
 	quest.1DD2C904A7C4E29B.title: "Ultimate Logistical Transporter"
 	quest.1DE9A85C2E5348D1.title: "Fusion Reactor Controller"
+	quest.1EEBC04FABD3B3F2.quest_desc: ["&bQuartz Fiber&f is used to &6transfer &bpower&f, but not &bChannels&f."]
 	quest.1EEBC04FABD3B3F2.title: "Quartz Fiber"
 	quest.1F33EBCE377EF15D.title: "Advanced Crushing Factory"
 	quest.1F828E56F64FFD15.quest_desc: ["&bSpiritfire &fis obtained by &6throwing&b Demon Fruit&f &ron a &bLog &fand &6lighting&f it on fire."]
@@ -372,7 +395,7 @@
 	quest.20A093E5684D2E30.title: "The Midgame Age!"
 	quest.20B4FD673AB88697.title: "Advanced Bin"
 	quest.20BA7AE12056CF27.title: "Basic Enriching Factory"
-	quest.20F99CBAD8D587DA.quest_subtitle: "The main ingredient to progress in AE2"
+	quest.20F99CBAD8D587DA.quest_desc: ["To obtain &bCertus&f you must first go to the &bMeteorite&f and get atleast 5 &bCertus Quartz&f, and &6craft&f 1 budding &bBudding Certus&f, with the &bBudding block &byou can &6place &fit down and wait for it too grow. When the &bCrystals &fgrows the &bBudding Block &fhas a chance to &6degrade&f to the point where its just a &bCertus Block&f and wont grow anymore."]
 	quest.20F99CBAD8D587DA.title: "Certus Quartz"
 	quest.2133B29DE47BDC25.title: "Advanced Combining Factory"
 	quest.215606B3A894512E.quest_desc: [
@@ -393,6 +416,7 @@
 	quest.21584ECDBB6907DE.title: "What's a tick?"
 	quest.21586F8B123BFCC3.title: "True Power and True Pain"
 	quest.216C2D79B2481DA3.title: "Advanced Universal Cable"
+	quest.2190034B6F3E2768.quest_desc: ["These are the primary components of &bInput and Output Devices&f."]
 	quest.2190034B6F3E2768.title: "Heart of Computation"
 	quest.21E1E62AA4761EE2.quest_desc: ["You might be curious as to what I meant when I mentioned these things, so I'll offer you a rundown. If you decide not to take my insight, I won't take it harshly and will let you begin your journey. I wish you luck."]
 	quest.21E1E62AA4761EE2.quest_subtitle: "&oPick a card, any card."
@@ -400,25 +424,18 @@
 	quest.21EDEEE1A1B82B53.quest_desc: ["  Processing the &bIridium Ore&r from your &bTitanium Drills&r, you can begin to produce &bIridium Dust&r which will be needed for &bSuperconductor Dust&r, a material capable of extraordinary power transfer and storage."]
 	quest.21EDEEE1A1B82B53.title: "Raw Iridium"
 	quest.21EE3862F6DA8E09.title: "Precision Sawmill"
-	quest.222793DF035B167C.quest_subtitle: "The simplest cable to make, transfers power and connects your system."
+	quest.222793DF035B167C.quest_desc: ["The simplest &bcable&f to make, &6transfers&b power &fand &bchannels&f to your system"]
 	quest.222793DF035B167C.title: "Fluix Glass Cable"
 	quest.22420EF3089DD7F6.quest_desc: ["  Your first taste of true &4a&r&6u&r&et&r&2o&r&am&r&ba&r&3t&r&9i&r&do&r&5n&r! This is also the first machine you'll want to make a lot of. The &bAssembler&r allows you to &6automate&r almost all recipes related to the machines. Check your &bREI&r to see which recipes you are allowed to automate using the &bAssembler&r. You can setup up to &63 recipes in one assembler&r by using &6slot locking&r. Just remember that it will make as many of the first recipe before it moves onto the next, &6so never put multiple high demand recipes into a single assembler&r."]
 	quest.22420EF3089DD7F6.title: "Assembler"
 	quest.225C580584927804.title: "Advanced Smelting Factory"
 	quest.2260C2216DA3DCE0.title: "Elite Bin"
-	quest.2278075F3F03EF0F.quest_desc: [
-		"In order to find a &6Meteorite&r you'll be needing to craft the &bMeteorite Compass&r."
-		""
-		"A &6Meteorite&r always contains a &bMysterious Cube&r that holds all presses needed to further progress in this mod."
-		""
-		"You will also find &bBudding Certus Quartz Blocks&r, more on those later."
-	]
-	quest.2278075F3F03EF0F.quest_subtitle: "Find a Meteorite"
-	quest.2278075F3F03EF0F.title: "What is that bol- roc- meteor?"
 	quest.22A2121A25A010AB.title: "Basic Induction Cell"
 	quest.22AC242F0A230278.title: "QIO Redstone Adapter"
 	quest.22D2716905D415E5.title: "Enrichment Chamber"
+	quest.23CC2667A1269C9C.quest_desc: ["Up until now, you've only used&b Drives &fthat held &6two dimensional data&f, in the form of zeros and ones. Now, let's hold&6 three dimensional data&f, in the form of raw matter. This is a far more complex &bdrive&f type, so it'll be expensive and you wont be able to store much at the start. "]
 	quest.23CC2667A1269C9C.title: "Small Spatial Component"
+	quest.243B036A794D8D7C.quest_desc: ["The&b Equil Distrubution Card &fallows for the &bequil distrubution&f of items into &bStorage Cells&f."]
 	quest.243B036A794D8D7C.title: "Equal Distribution Card"
 	quest.2472B23BC0C28C6C.quest_desc: [
 		"  Remember those \"ticks\" we talked about? How each one is a twentieth of a second?"
@@ -448,6 +465,7 @@
 	quest.24A4F1AA0BFFE867.quest_subtitle: "It's Getting Hot In Here"
 	quest.24A4F1AA0BFFE867.title: "Electric Blast Furnace"
 	quest.24B44DAA8C43CF11.title: "Configurator"
+	quest.24E5FA9129987168.quest_desc: ["Exact same thing as the &bWireless Terminal&f, but this one has a &bCrafting Interface&f in it!"]
 	quest.24E5FA9129987168.title: "Wireless Crafting Terminal"
 	quest.250D1E2BFE6E0D50.quest_desc: [
 		"  Upgrade those &bLarge Steam Boilers&r already! "
@@ -459,10 +477,13 @@
 	quest.250D1E2BFE6E0D50.title: "Advanced Large Steam Boiler"
 	quest.255021677AF472E9.title: "Reformation Array"
 	quest.2571BC62616A45AB.title: "QIO Dashboard"
+	quest.261B1A63D3C48CBD.quest_desc: ["&bCrafting CPUs&f manage crafting requests/jobs. They store the intermediate ingredients while crafting items with multiple steps."]
+	quest.263FE6D3550CD41C.quest_desc: ["The &bEnergy Card &fallows for more &bEnergy&f to be stored in the device its in."]
 	quest.263FE6D3550CD41C.title: "Energy Card"
 	quest.264F371D2A18EAEC.title: "Basic Pressurized Tube"
 	quest.266E065B5B4C91E3.quest_desc: ["This &bemitter &fconverts &bmercury &finto &bSulfuric Flux &fwhich can carry information."]
 	quest.266E065B5B4C91E3.quest_subtitle: "Mercury = Sulfuric Flux"
+	quest.2670CC12461D2D8C.quest_desc: ["Now that you can &6digitize blocks and move them around&f, maybe they'll work on those &bFlawless Certus Quartz Budding Blocks&f you found?"]
 	quest.2670CC12461D2D8C.title: "Flawless Budding Certus Quartz"
 	quest.2675A4EA019B383F.title: "Turbine Time"
 	quest.272E31F15A39517B.title: "Fusion Reactor Frame"
@@ -486,6 +507,7 @@
 	quest.29D05998ADC8ACF5.quest_desc: ["  A super advanced processor to push the overclocking capabilities of your machine to it's limits and soon enough, something a bit more... &cNuclear&r."]
 	quest.29D05998ADC8ACF5.title: "Processing Unit"
 	quest.2A68AB7D1EDD44BD.title: "Structural Glass"
+	quest.2AA2E4FF5B42497F.quest_desc: ["Turns &bWhitelist filter&f into &bBlacklist filter&f."]
 	quest.2AA2E4FF5B42497F.title: "Inverter Card"
 	quest.2AABAC42E7880AA1.title: "Elite Pressurized Tube"
 	quest.2B1717F5D6E20B79.quest_desc: [
@@ -495,11 +517,12 @@
 	]
 	quest.2B1717F5D6E20B79.title: "UU Matter Bucket"
 	quest.2B3B96DDFE5D3ACA.title: "Boiler Casing"
+	quest.2B4A8A903B10BDAF.quest_desc: ["Quadupling your &bCrafting Storage &fare we? What do you plan on making? A &blarge drive or something&f?"]
 	quest.2B4BFD88DF1A934D.quest_desc: ["  It is a third the weight of steel, yet ductile and highly malleable. It's made from heating up and extracting it from &bBauxite&r. You can do this in your newly formed &bEBF&r. &6Make sure to automate &bAluminum&r production as you'll end up using A LOT of it&r."]
 	quest.2B4BFD88DF1A934D.quest_subtitle: "It's Gonna be Al, Right?"
 	quest.2B4BFD88DF1A934D.title: "Aluminum"
 	quest.2BC64E1EB1BCE14D.quest_desc: [
-		"  The &bStainless Steel Drill&r is a new drill that &6can be used in &oboth&r&6 the &bQuarries&r &6and the &bOil Drilling Rig&r."
+		"  The &bStainless Steel Drill&r is a new drill that &6can be used in &oboth&r&6 the &bQuarry&r &6and the &bOil Drilling Rig&r."
 		""
 		"  For the quarry, you'll obtain some new rare resources that will be extremely beneficial for the future."
 		""
@@ -509,6 +532,7 @@
 	quest.2BDE797C32E308D3.title: "Ultimate Pressurized Tube"
 	quest.2BF835F8F73E8F06.quest_desc: ["Mining is a drag, I get it. But you don't need to mine every block ever again (unless you're crazy). By default, the squiggly line next to your \"1\" key is the button you want to hold down as you mind a block. It'll mine up to 64 of that block that is adjacent. By holding down the button and scrolling, you can change the modes. They show in the top left of your screen, so watch out there. I'll let you experiment with the modes, just don't break anything!"]
 	quest.2BF835F8F73E8F06.quest_subtitle: "Diggy diggy hole!"
+	quest.2BF835F8F73E8F06.title: "Vein Be Gone!"
 	quest.2C4CA092A557205E.quest_desc: [
 		"  1985 called from 2015, it wants it's anti-gravity technology back!"
 		""
@@ -532,6 +556,12 @@
 	quest.2E50F969D8AE49B2.title: "Elite Induction Cell"
 	quest.2E7A46639993CCDE.quest_desc: ["Any world will have secrets hidden beyond the visible, whether that be tucked under the surface or in a completely different dimension. Never overlook something that looks out of place, you might just discover something new. Confidence is a good thing, but always stay geared up and safe; it might save your life one day."]
 	quest.2E7A46639993CCDE.quest_subtitle: "Around the mountain she comes!"
+	quest.2E883FCCA2FB281B.quest_desc: [
+		"By setting up a &bQuantum Ring&f, you can access your &bME System &ffrom anywhere in the world. Just use the second &bEntangled Singularity&f and &6place it &finside of your &bWireless Terminal&f, then use a &bQuantum Bridge Card&f to finalize the upgrade."
+		""
+		"Make sure the &bQuantum Ring &fis chunk loaded or else it wont work."
+	]
+	quest.2E883FCCA2FB281B.quest_subtitle: "A piece of art"
 	quest.2E883FCCA2FB281B.title: "Quantum Ring"
 	quest.2E97456B0ED0AB1A.title: "Electric Pump"
 	quest.2F66F85A601AC908.quest_desc: [
@@ -541,6 +571,7 @@
 		"  Being a &bMacerator&r, you can throw some metal items in to &6recycle them back into dusts&r, good way to get a little bit out of an adventuring trip or an old tool."
 	]
 	quest.2F66F85A601AC908.title: "Bronze Macerator"
+	quest.2F6C16939D136BF0.quest_desc: ["The&b Annihilation Plane&f will &6break blocks&f and&6 pick up&6&b items&f directly infront of it."]
 	quest.2F6C16939D136BF0.title: "Annihilation Plane"
 	quest.2F7A213261682E1B.quest_desc: [
 		"The &bLiquefraction Cauldron &fis a small multiblock that allows for the creation of &bAlchemical Sulfur."
@@ -551,7 +582,7 @@
 	]
 	quest.2F9560A5281DCDFD.quest_desc: ["Need to keep those pesky trolls away from your stuff? Claim it! You can either make a Team or claim chunks solo. To claim chunks solo, open your inventory and check out the top left of your screen. Look for a map button called \"Claim Manager.\" You can use that to clain different plots of land called chunks. Each chunk is comprised of 16x16 blocks, spanning from the void to the sky. You have a limited amount, so don't go crazy. If you want to create a Team first, find the button labled \"Your Team\" and it'll show you a list of team members and a private chat. You can then create a party, and change the name and other aspects of your party by pressing on the gear icon. You can invite others by using the command \"/ftbteams party invite\" once you've created a party."]
 	quest.2F9560A5281DCDFD.quest_subtitle: "&oMy land is NOT your land."
-	quest.2F993B0F106DB883.quest_subtitle: "Used to craft items using various Inscriber Presses"
+	quest.2F993B0F106DB883.quest_desc: ["Used to craft items using various &bInscriber Presses&f."]
 	quest.2F993B0F106DB883.title: "Inscriber"
 	quest.2FA7A5966FEF6701.title: "Ultimate Mechanical Pipe"
 	quest.2FB2FE782B1103D6.quest_desc: [
@@ -562,6 +593,7 @@
 		"  You will use this &bSteam Blast Furnace&r to make your first &bSteel&r!"
 	]
 	quest.2FB2FE782B1103D6.title: "Steam Blast Furnace"
+	quest.3009C3939976FBD2.quest_desc: ["The &bCrafting Terminal&f is the upgraded version of the &bTerminal&f. This will allow you craft while accessing all of your items."]
 	quest.3009C3939976FBD2.title: "Crafting Terminal"
 	quest.305C258D68DA8E96.title: "Induction Casing"
 	quest.30712755CEBE5920.quest_desc: [
@@ -576,10 +608,12 @@
 	]
 	quest.30712755CEBE5920.quest_subtitle: "Powah"
 	quest.30712755CEBE5920.title: "Powah!!! 100%"
+	quest.308640ACCC096431.quest_desc: ["The &bME Controller &fis the first big step into making your &bME system&f. The &bME Controller&f must be &6powered&f, but doesnt required much."]
 	quest.308640ACCC096431.title: "The Center of Storage"
 	quest.30D584EAD9243548.title: "Fluidic Plenisher"
 	quest.30FB66E92909D4B9.quest_subtitle: "All the Niters"
 	quest.30FB66E92909D4B9.title: "&bAlchemical Niter"
+	quest.3101251A430C3B26.quest_desc: ["You can start powering the &bCharger&r by hand using a &bWooden Crank&r. Made with a few sticks, you can get a hand full of turns out of it. It will &6break&f, so make sure you have a couple extras to replace it when it does!"]
 	quest.3101251A430C3B26.quest_subtitle: "Crank It Up!"
 	quest.3101251A430C3B26.title: "Manual Power"
 	quest.3143EA7DF096CE61.quest_desc: [
@@ -653,12 +687,14 @@
 	quest.37F3ABF113A1D399.quest_desc: [
 		"  The &bLV Energy Input Hatch&r is like a giant electrical inlet. As I've stated before, you need an &bEnergy Input Hatch&r to power multiblock electrical machines."
 		""
-		"  Do remember that you can upgrade the multiblock machine by replacing the &bEnergy Input Hatc&rh with an upgraded tier, increasing the maximum power rate for recipes and increasing overall overclocking capabilities."
+		"  Do remember that you can upgrade the multiblock machine by replacing the &bEnergy Input Hatch&r with an upgraded tier, increasing the maximum power rate for recipes and increasing overall overclocking capabilities."
 	]
 	quest.37F3ABF113A1D399.title: "LV Energy Input Hatch"
 	quest.3850B26FC78DD874.title: "Basic Smelting Factory"
 	quest.38B365FDB4227A90.title: "Basic Energy Cube"
+	quest.393249898AEEA531.quest_desc: ["&bEngineering Processors &fare used to make the &bController &fand other components to get your first &bME system &fup."]
 	quest.393249898AEEA531.title: "Engineering Processor"
+	quest.3973F425BD96668A.quest_desc: ["The &bPattern Access Terminal &fis another upgrade or the &bTerminal&f. This Terminal will allow you to make a &bPattern&f of items you want your system to craft."]
 	quest.3973F425BD96668A.title: "Pattern Encoding Terminal"
 	quest.39A4FF688D140EC2.title: "Logistical Sorter"
 	quest.39FCE3168C26B863.quest_desc: [
@@ -669,6 +705,7 @@
 		"  &6You'll be aiming for the creation of a &bQuarry&r soon so that it can dig for you&r. Imagine never needing to go mining for ores ever again!"
 	]
 	quest.39FCE3168C26B863.title: "Coke"
+	quest.3A20D522302FE7B9.quest_desc: ["The &bLogic Processor&f is used in the the very beginning to get your first drives and upgrades."]
 	quest.3A20D522302FE7B9.title: "Logic Processor"
 	quest.3A5A59C7AEA670C7.quest_desc: ["&aUse the Dictionary of spirits to build Aviar's circle"]
 	quest.3A5A59C7AEA670C7.title: "Aviar's Circle"
@@ -676,9 +713,16 @@
 	quest.3B007B3669FFC1C4.quest_subtitle: "Be aware of fire"
 	quest.3B007B3669FFC1C4.title: "Ritual: Summon Unbound Afrit"
 	quest.3B0AB80C9FAD48F2.title: "Antiprotonic Nucleosynthesizer"
+	quest.3B81DC99BBCAB358.quest_desc: [
+		"Combining with a 1k, 4k, 16k, 64k, and 256k component will convert it into a &bFluid Drive&f which are big storage compartments. "
+		""
+		"Note: You can only store up to 18 different Fluids inside of each drive."
+	]
 	quest.3B81DC99BBCAB358.title: "Fluid Cell Housing"
+	quest.3B82F8F19AF630D5.quest_desc: ["The&b Toggle Bus &fis the same as a &bGlass Cable&f, but is used to &6temporarily disable&f the section of a system downstream from it when unpowered. &6Powering it&f will allow data and power to pass once again."]
 	quest.3B82F8F19AF630D5.title: "Toggle Bus"
 	quest.3BAA7EC7653A7905.title: "Chemical Injection Chamber"
+	quest.3BF6B62A81F294FA.quest_desc: ["This card will &6destroy&f items that are &6imported&f into your &bStorage Drives &fthat are full."]
 	quest.3BF6B62A81F294FA.title: "Overflow Destruction Card"
 	quest.3C1D103FCEF249C8.quest_desc: ["Don't you just love the aroma of smoke and gasoline fumes? Don't pollute the world too much! I guess it might be a good trade off; lazy equals pollution! Use the guide books you get, they will be very helpful!"]
 	quest.3C1D103FCEF249C8.quest_subtitle: "&o*AGRESSIVE FACTORY NOISES*"
@@ -692,14 +736,20 @@
 	quest.3C6E442CEB73191F.title: "Gas-Burning Generator"
 	quest.3CABE90D2D99AAD0.title: "Crafting Formula"
 	quest.3D5B74D9663AAB5A.title: "Heat Generator"
+	quest.3D9DED933A80CAFA.quest_desc: ["This is used to copy and paste setting of &bME Devices&f. This is also used to &6link &bP2P Tunnels&f."]
 	quest.3D9DED933A80CAFA.title: "Memory Card"
 	quest.3DC47060EEAB8975.quest_desc: ["Once you have &6replicated &fyour &bsulfur &fit will all go directly into this machine. You may &6Right-Click &fwith your hand and retrive your &bsulfur."]
 	quest.3DC47060EEAB8975.quest_subtitle: "And its all here"
+	quest.3DE4F07C4CFE9E89.quest_desc: ["&bEngineering Circuits &fare required in order to craft the&b Engineering Processors&f."]
 	quest.3DE4F07C4CFE9E89.title: "Printed Engineering Circuit"
 	quest.3DF6354F7AC8D4A4.quest_desc: ["  Now that you can start your journey into the chemicals branching off from &bCrude Oil&r, you can produce upgrades for your machines! All of the electric machines you've used up until now have has a maximum overclock of 32 eu/t. Now, you can increase that maximum, depending on the tier of upgrade you use. Check your REI to see how much EU each upgrade raises."]
 	quest.3DF6354F7AC8D4A4.title: "Upgrades"
+	quest.3E165961635B0C4B.quest_desc: ["A &6Meteorite&r will always contain a &bMysterious Cube&r. Once you find a &bMysterious Cube&f, you must break it to obtain all of the &bInscriber Press's&f."]
+	quest.3E165961635B0C4B.quest_subtitle: "Find the Mysterious Cube"
+	quest.3E165961635B0C4B.title: "Mysterious Cube"
 	quest.3E62028A2B03EEA4.title: "Elite Thermodynamic Conductor"
 	quest.3F6174E82DDC48C3.title: "Energized Smelter"
+	quest.4047F3E2AD081915.quest_desc: ["The &bNetwork Tool &fis an upgraded &bWrench&f that shows &6Network Diagnostic Information&f aswell as store upgrade cards.&6 Right-Clicking&f any part of a &bNetwork&f will show diagnostics the same way the &bME Controller&f does. It also temporarily makes &bFacades&f transparent so you can find hidden cables."]
 	quest.4047F3E2AD081915.title: "Network Tool"
 	quest.407D04C17AA78E09.quest_subtitle: "You might need these"
 	quest.407D04C17AA78E09.title: "Capacitors"
@@ -724,6 +774,7 @@
 	]
 	quest.41D1344A31FEA6DF.title: "Kanthal Coils"
 	quest.4207ADF2CB254C6B.title: "Painting Machine"
+	quest.42867560C8974A84.quest_desc: ["Again?! What are you nuts?"]
 	quest.42D6CC67AB29D7DA.quest_desc: [
 		"  You've finally reached &bDigital Circuits&r!"
 		""
@@ -749,6 +800,11 @@
 	]
 	quest.439D48E9647FC8C2.title: "Bronze Boiler"
 	quest.44D8D30BCD48C4C9.title: "Elite Control Circuit"
+	quest.44F983F7D06C8DD1.quest_desc: [
+		"This is one special piece of technology. &6Connect&f it up to any system and it will &6load&f every chunk an &bME System's cables&f pass through. Not only that, it even allows &bcrops&f (and any other randomly ticked event) to occur."
+		""
+		"Remember, it only works to an actively connected network, meaning any &bsub-networks &fused to &6connect&b P2P tunnels &fwont be loaded without a second one on that &bnetwork&f."
+	]
 	quest.44F983F7D06C8DD1.title: "Spatial Anchor"
 	quest.45138985A0F5164C.title: "Jetpack"
 	quest.45402DE880D9EF58.title: "Time-Dilating QIO Drive"
@@ -850,8 +906,6 @@
 	quest.4980C231ECDB0BF2.quest_desc: ["  The &bSteel Drill&r gives you the rest of the &6more commonly used ores&r that you'll need for further progression in your journey to total automation, but also in your journey of the world itself. Check your REI for all the possible outputs."]
 	quest.4980C231ECDB0BF2.title: "Steel Drill"
 	quest.49C508DCB4AAC3CB.title: "Ultimate Sawing Factory"
-	quest.4A00CD832E1D9543.quest_desc: ["&bEnergizing&f can be sped up if you have enough &bpower&f. If you have the &bblocks&f rather then the &bingots&f, you can make the &benergized block 9x faster."]
-	quest.4A00CD832E1D9543.quest_subtitle: "Energize more"
 	quest.4A5466E364B85AEF.quest_desc: [
 		"  Darker and cooler than Iron... Plus about 1000 times stronger. It's time to make some &bSteel&r! Use that coal coke you produced earlier and crush it down to a pile of dust. Then, combine that with iron dust to get your &bUncooked Steel Dust&r. Remember, &6using the &bMixer&r will increase your output.&r"
 		""
@@ -865,7 +919,9 @@
 	quest.4B7C404E9118BE09.title: "Advanced Purifying Factory"
 	quest.4C23B5A6A57A13C0.title: "Security Desk"
 	quest.4CA2A53F4C298E2B.title: "Portable QIO Dashboard"
+	quest.4CD943F9416FB352.quest_desc: ["This is an &bEnergy Cell &fthat can hold &bpower&f to be used by your system during times of a &6power outtages&f. It can also handle &6instant power draw&f from machines you might use down the road."]
 	quest.4CD943F9416FB352.title: "Energy Cell"
+	quest.4E1B3935FC8A1170.quest_desc: ["Another 4x! You're on a roll!"]
 	quest.4E1B3935FC8A1170.title: "16k Storage Component"
 	quest.4E6BB4279E8E793A.title: "&7Alchemical Sulfur Abundunt"
 	quest.4E8963E1C18ADBAB.quest_desc: [
@@ -881,7 +937,9 @@
 	quest.4E8963E1C18ADBAB.quest_subtitle: "Warning: This is not for eggs"
 	quest.4EA0C90A02A43131.title: "Pressurized Reaction Chamber"
 	quest.4EF9C36CED1EDDC4.quest_desc: ["By &6throwing&f a&b Book &finto the&bSpiritfire&f, you will obtain a&b Taboo book&f."]
+	quest.4F3A754375E19D41.quest_desc: ["Used to speed up the crafting or processing of machines."]
 	quest.4F3A754375E19D41.title: "Acceleration Card"
+	quest.4F6FD689E65509BF.quest_desc: ["The &bBasic Card &fis a crafting component used to craft &bUpgrades&f."]
 	quest.4F6FD689E65509BF.title: "Basic Card"
 	quest.4FBA0ECAC8AEBCD8.title: "Nuclear Fission"
 	quest.5021D7D55A0B3533.title: "Chemical Burns Hurt"
@@ -906,6 +964,7 @@
 	quest.510C7652FE3431AC.quest_desc: [""]
 	quest.510C7652FE3431AC.title: "Welcome to Mekanism"
 	quest.52AD3D58B644AA30.title: "Wind Generator"
+	quest.52F4C1914EF9C7E2.quest_desc: ["Automate me a time machine now, wontcha?"]
 	quest.534B63750942C433.quest_desc: [""]
 	quest.534B63750942C433.title: "Basic Control Circuit"
 	quest.534EF7E31E431CEC.quest_desc: ["&aUse the Dictionary of spirits to build Abras' Open Conjure."]
@@ -923,6 +982,7 @@
 	quest.5401B18217772D6C.title: "Heat Exchanger"
 	quest.5408EFD0B9CA0527.title: "Ultimate Induction Provider"
 	quest.541C68336E6C7510.title: "Basic Crushing Factory"
+	quest.54BCC1A0203B2351.quest_desc: ["If you want to speed up the &6growth &fof your &bCrystals&f, you can &6place &bGrowth Accelerators&f adjecent to the &bBudding Block&f. The &bGrowth Accelerator&f requires power from either the top or the bottom."]
 	quest.54BF53CB70636C3F.quest_desc: [
 		"  Enslave the Winter season in a supercooled aluminum frame. How does removing air cool something down? I'll give an example using water:"
 		""
@@ -937,6 +997,7 @@
 	quest.55391FF509DA53A5.title: "&dWelcome to Theurgy"
 	quest.553EB688C3FFD7E4.title: "Basic Combining Factory"
 	quest.55A5C20E17BD3038.title: "Meka-Tool"
+	quest.5619683321410B74.quest_desc: ["Screw a house, take your entire lair with you! But be warned, it won't be cheap!"]
 	quest.5619683321410B74.title: "Large Spatial Component"
 	quest.5663A6C559490A29.quest_desc: ["&6Right-Click&f the &bariel pearl&f on a &bzombie&f or &bhusk&f and it will be complete."]
 	quest.5663A6C559490A29.quest_subtitle: "Dont think your getting that zombie back"
@@ -952,6 +1013,17 @@
 	quest.57A8D67858693F4A.title: "Basic Injecting Factory"
 	quest.584FE7044BA83349.quest_desc: ["While in the &bThird Eye &fyou can &6harvest &fthe&b Otherworld Logs &ffrom the &btree&f."]
 	quest.584FE7044BA83349.quest_subtitle: "Might need some fruit"
+	quest.59128813386BFDB1.quest_desc: [
+		"&bPoint 2 Point (P2P) Tunnels&f can be overwhelmingly complex, but at the same time extremely useful. These &btunnels&f can be used to &6transfer up to 32 channels from one point to the other&f. Now, you might be asking: \"But why can't I just use a &bDense Cable&f?\""
+		""
+		"And I'm here to say, you can! But it's &6wildly inefficient&f. Those 32 channels get compacted into a single channel. This means, you can theoretically wire up &61,024 channels&f through a &6single dense cable, instead of only 32&f."
+		""
+		"You'll have to use the &bMemory Card&f to &6link up&f the &btunnels&f together via frequencies. &6Shift-Right-Clicking &fon the &b\"entrace\" tunnel &bwill set the &bmemory card &fto that frequency. &6Right-Clicking&f on the &b\"exit\" tunnel &fwith set the&b tunnel &fto the frequency of the&b \"entrance\" one&f. Keep in mind, you can have multiple &b\"exit\" tunnels&f so long as the total channels used between them don't go beyond the number of channels entered into the&b \"entrance\" tunnel&f."
+		""
+		"There are also different types of&b Point 2 Point Tunnels&f. Aside from one that carries &bME Channels&f, there are ones that &6transfer &braw power&f, &bfluids&f, &bitems&f,&b light&f, and even&b redstone&f! They work the same way, aside from &bcarrying channels&fd."
+		""
+		"It takes some practice to use, so experiment with them first. Once you get the hang of it, your &bME Systsem&f will be looking more than professional!"
+	]
 	quest.59128813386BFDB1.title: "P2P"
 	quest.59451B5DAD78C46F.title: "Atomic Disassembler"
 	quest.596057832C440706.title: "Dielectric"
@@ -960,18 +1032,13 @@
 	quest.5A2B3D4660D8D741.title: "&aSpirited Crystal"
 	quest.5A4E9D4056DA2C67.title: "Elite Universal Cable"
 	quest.5AB4D1D72EFD4428.title: "Induction Port"
+	quest.5AD93FC0F20FDAB8.quest_desc: ["The &bCharged Staff&f lets you attack enemies with energy!&6 Charge it up&f in the &bCharger&f."]
 	quest.5AD93FC0F20FDAB8.title: "Charged Staff"
-	quest.5B1D88BFEA39DBAE.quest_desc: [
-		"To progress, you need to create &bFluix Crystal&r. You have two options:"
-		""
-		"- Use the compass to find a &6Meteorite&r, where you might find some &bFluix Crystal&r."
-		""
-		"- Throw &bCharged Certus Quartz Crystal&r, &bNether Quartz&r, and &bRedstone Dust&r into a pool of water and wait."
-	]
+	quest.5B1D88BFEA39DBAE.quest_desc: ["To make &bFluix Crytals &6throw &bCharged Certus Quartz Crystal&f, &bNether Quartz&f, and &bRedstone Dust&f into a pool of &bwater &fand wait."]
 	quest.5B1D88BFEA39DBAE.quest_subtitle: "A very important ingredient "
 	quest.5B1D88BFEA39DBAE.title: "Fluix Crystal"
 	quest.5B9BFD4F72E79F5B.title: "&dAlchemical Sufur Precious"
-	quest.5BB4989DC6C5DB7A.quest_subtitle: "Use a powered Charger to charge Certus Quartz Crystal"
+	quest.5BB4989DC6C5DB7A.quest_desc: ["Use a &bPowered Charger&f to charge &bCertus Quartz Crystal&f."]
 	quest.5BB4989DC6C5DB7A.title: "Charged Certus"
 	quest.5BDE55C11519F7F7.title: "Purification Chamber"
 	quest.5C278F462D4B414A.title: "Basic Fluid Tank"
@@ -1002,6 +1069,7 @@
 	]
 	quest.5E9F30ADD242C764.quest_subtitle: "Now only $19.99!"
 	quest.5E9F30ADD242C764.title: "&4Nitro Crystal"
+	quest.5ECC7F4F5D2591D9.quest_desc: ["The &bAdvanced Card &fis a crafting component used to craft &bUpgrades&f."]
 	quest.5ECC7F4F5D2591D9.title: "Advanced Upgrades"
 	quest.5F95D00149FB24FD.title: "Chemical Dissolution Chamber"
 	quest.5FB18A0E7827D203.title: "Ritual: Summon Foliot Transporter"
@@ -1011,6 +1079,7 @@
 	quest.60868DF852E6028B.title: "Extra Gear"
 	quest.60AEE273431548B6.title: "Pressure Disperser"
 	quest.60F4F5FE0C3748C3.title: "Chemical Washer"
+	quest.61340C2A12FEAA26.quest_desc: ["The &bME Drive&f is used to store &bStorage Drives&f."]
 	quest.61340C2A12FEAA26.title: "ME Drive"
 	quest.614E49D8AA7F85FC.title: "Elite Induction Provider"
 	quest.62B245A23CA62678.quest_desc: [
@@ -1027,9 +1096,15 @@
 		"  &cTime for some spaghetti?&r"
 	]
 	quest.62B245A23CA62678.title: "Fluid Transportation"
+	quest.62FCB2F06126B622.quest_desc: ["The &bWireless Terminal&f is a &bregular Terminal&f that can be used to access an&b ME System&b wirelessly. Use an &bAccess Point&f to connect up your &bTerminal&f and use &bBooster Cards&b to increase the total distance from that &bAccess Point&f you want to be able to use your system. Using multiple &bAccess Points&f on the same network in different locations can help you cover a larger footprint."]
 	quest.62FCB2F06126B622.title: "Wireless Terminal"
 	quest.632BE5724D2120EB.title: "Reinforced Alloy"
 	quest.6387004E98403CCE.title: "Chemical Crystallizer"
+	quest.63B54338B8D5823B.quest_desc: [
+		"The &bColor Applicator can be used to &6paint&b colorable blocks&f, which include cables, wool, terracotta, glass, concrete and anything else you can think of&f. Use&b Paintballs or Specific Dyes&b to &6paint &fand &bsnowballs&6 to clean off the paint&f. Use the &bCharger&f to charge the Applicator."
+		""
+		"The &bColor Applicator &fworks like a &bStorage Cell&f, so to fill it, use the &fME Chest&f. &6Right-Click &fto apply a color and &6Scroll-Wheel to change colors while holding shift&f. Test different upgrades to see if they can help your &bColor Applicator&f!"
+	]
 	quest.63B54338B8D5823B.title: "Color Applicator"
 	quest.63D83934E3A1A71C.title: "MekaSuit Boots"
 	quest.640DB4139DF8AFA4.quest_desc: [
@@ -1059,7 +1134,7 @@
 	quest.668453E081A6C57B.title: "Titanium"
 	quest.66AE27B8C8DADDA5.title: "Pigment Mixer"
 	quest.66F756E370750359.title: "MekaSuit Pants"
-	quest.6716C1CE7B7FFA94.quest_desc: [""]
+	quest.6716C1CE7B7FFA94.quest_desc: ["The &bCapacity Card &fincreases the amount of filter slots in &bPorts&f."]
 	quest.6716C1CE7B7FFA94.title: "Capacity Card"
 	quest.67284079A941EF4B.title: "Scuba Gear"
 	quest.67A41E4D6BCA5F2B.title: "QIO Drive Array"
@@ -1081,6 +1156,11 @@
 	quest.6A382549A4C55A5E.title: "Advanced Control Circuit"
 	quest.6A6C19E36893381B.title: "Formulaic Assemblicator"
 	quest.6A9DAB624949191E.title: "Elite Enriching Factory"
+	quest.6ADBF1DFBDF45D7C.quest_desc: [
+		"Made with a &bLogic Processor &fsome &bRedstone&f and some &bQuartz Glass&f. "
+		""
+		"The &bME Storage Component&f is the first step to hold all of your items."
+	]
 	quest.6ADBF1DFBDF45D7C.title: "1k Storage Component"
 	quest.6B61D20396D57CB8.quest_desc: ["By &6throwing &fa &bdiamond&f into a &bSpiritfire&f, you will get &bSpirit Attuned Gem."]
 	quest.6BD625E5CA469914.quest_desc: [
@@ -1103,6 +1183,7 @@
 	quest.6DED76B2F4AFD02F.quest_desc: ["&bDry ice &fis extremely rare to find underground, but you can make it if you have enough &bpower and ice."]
 	quest.6DED76B2F4AFD02F.quest_subtitle: "A little cold to the touch"
 	quest.6DED76B2F4AFD02F.title: "Dry Ice"
+	quest.6DFA92E319E7DA77.quest_desc: ["To start &6Autocrafting&6 you must first make a &bPattern&f with a &bPattern Encoding Terminal&f, then &6place&f that &bpattern&f in the &bPattern Provider&f."]
 	quest.6DFA92E319E7DA77.title: "Pattern Provider"
 	quest.6E455A507171708C.title: "Advanced Fluid Tank"
 	quest.6EA29403BF85B19C.title: "QIO Drive"
@@ -1119,6 +1200,7 @@
 		"  Remember that you'll need a &olot&r of &bRubber Sheets&r in the long run, so you'll need to make them constantly. Note that you can use &bWood&r to &6grind down&r and turn into &bWood Pulp&r which can then be turned into &bPaper&r with a high output yield."
 	]
 	quest.6EF133E0EC49BC33.title: "Rubber"
+	quest.6F2BFD1AF4B2F9C9.quest_desc: ["The &bFluix Covered Cables &fare the same as &bGlass Cables &fbut have insulation that can be colored. They also continue to not show network information. Decorate your base a little with them!"]
 	quest.6F2BFD1AF4B2F9C9.title: "Fluix Covered Cable"
 	quest.6F57A2A5AA6E3F49.quest_desc: [
 		"  Oil is a black flammable liquid that forms in the ground over a very &overy&r long time. &6Using a &bDrilling Rig&r&6, you can drill into the ground and extract this oil&r."
@@ -1146,13 +1228,15 @@
 		"  You can check which ores this method will provide by checking REI. I recommend that you have multiple&b Steam Blast Furnaces&r running before you begin putting together the &bQuarry&r because &6this will use a LOT of &r&bSteel&r."
 	]
 	quest.6F6898DC529D1120.title: "Infinite Resources?"
+	quest.6F7A998802C99AD4.quest_desc: ["These are pylons designed to outline the volume you wish to store into spatial drives. You must use these to outline 3 edges to an imaginary box surrounding the build. Each line of them uses 1 channel and each line needs to be at lesat 2 pylons long. Try experimenting with the number of lines and how much power it uses! You might be able to optimize your digitizing."]
 	quest.6F7A998802C99AD4.title: "Spatial Pylon"
 	quest.6F9513334361D44E.quest_desc: ["By &6eating &fthis fruit you get an &6effect&6 called the &bThird Eye&f. While in the &bThird Eye &fyou can see &bthings&f you couldnt before."]
 	quest.6F9513334361D44E.quest_subtitle: "Hallucinogens"
 	quest.6FA1BD39E9BB9392.title: "Ultimate Combining Factory"
 	quest.6FDE684299FEC954.title: "Elite Mechanical Pipe"
-	quest.6FF26C2F7EBDC28A.quest_desc: [""]
+	quest.6FF26C2F7EBDC28A.quest_desc: ["&bPrinted Silicon &fis just the first stage in the creation of the &bProcessors&f."]
 	quest.6FF26C2F7EBDC28A.title: "Printed Silicon"
+	quest.700EDD1767BA80CF.quest_desc: ["The &bCrafting Card&f uses crafting recipes you have already taught your system, to automatically craft the item in the filter of &bBuses &fand &bInterfaces&f."]
 	quest.700EDD1767BA80CF.title: "Crafting Card"
 	quest.703C1F1E9A6F4A9E.title: "Chemical Infuser"
 	quest.707EBB99AA8F4C57.quest_desc: [
@@ -1177,8 +1261,13 @@
 	]
 	quest.72481CA0AC8AFD6A.quest_subtitle: "The Smarter Brother"
 	quest.72481CA0AC8AFD6A.title: "Fluix Smart Cable"
+	quest.72A27299A3107477.quest_desc: ["This allows for the &6controlling&f of &bBuses &fand &bPorts&f with&b redstone&f."]
 	quest.72A27299A3107477.title: "Redstone Card"
-	quest.72DD0017AC3B1326.quest_desc: [""]
+	quest.72DD0017AC3B1326.quest_desc: [
+		"The &bMatter Cannon&f uses &bMatter Balls &fand different &bMetal Nuggets&f to &6deal damage &fby shooting them at opponents. It can be charged in the &bCharger &fand refilled in an &bME Chest&f, just as you would a &bStorage Drive&f."
+		""
+		"Test out &bupgrades&f to see if any can make your &bMatter Cannon better&f!"
+	]
 	quest.72DD0017AC3B1326.title: "Matter Cannon"
 	quest.72E69FF9753D3CEA.title: "Ritual: Summon Otherstone Trader"
 	quest.740B34D7D1AF3FF0.title: "Crusher"
@@ -1217,7 +1306,11 @@
 	quest.7593E582FA928061.title: "Copper Drill"
 	quest.7599CF789CD95680.quest_desc: ["By &6throwing &bblack dye &finto &bSpiritfire&f, you will obtain &bPurified Ink"]
 	quest.75A91A9D8317EFC4.title: "Ultimate Fluid Tank"
+	quest.75FE996305813D68.quest_desc: ["In order to find a &6Meteorite&r you'll be needing to craft the &bMeteorite Compass&r. With the &bCompass&f it will point you to the closest &6Meteorite&f."]
+	quest.75FE996305813D68.quest_subtitle: "Find a Meteorite"
+	quest.75FE996305813D68.title: "What is the bol- roc- meteor?"
 	quest.7610F9A545A15194.title: "Solar Generator"
+	quest.7664DA8E63DA763B.quest_desc: ["&bBlank Patterns&f are required to make &bCrafting Patterns&f."]
 	quest.779C3C6B89AD2526.quest_desc: [
 		"  Electric machines work exactly the same as steam machines, except from the fact &6they require electricity to function instead of steam&r and they can progressively overclock recipes to up to 32 EU/t (for now)."
 		""
@@ -1230,6 +1323,7 @@
 	quest.779C3C6B89AD2526.quest_subtitle: "Time for a Major Upgrade"
 	quest.779C3C6B89AD2526.title: "The Electric Age!"
 	quest.78756CC2F8821E41.title: "Gas Upgrade"
+	quest.789AD926FD776554.quest_desc: ["The &bDense Covered Cable&f can transmit 32 channels. Still no network information though."]
 	quest.789AD926FD776554.title: "Fluix Dense Covered Cable"
 	quest.78C746829110FC35.title: "Laser"
 	quest.78EDBDED3BFEC145.quest_desc: [
@@ -1239,9 +1333,9 @@
 		""
 		"The course of this &9world&r lies soley in your hands; where will you bring it?"
 	]
-	quest.78EDBDED3BFEC145.quest_subtitle: "&a&lCOMING VERY SOON"
 	quest.78EDBDED3BFEC145.title: "Welcome to &othe&r Craftoria."
 	quest.78F7F62C0E2E7448.title: "Ultimate Purifying Factory"
+	quest.78FE04A1A94C38B8.quest_desc: ["&bCalculation Circuits&f are required in order to craft the &bCalculation Processors&f."]
 	quest.78FE04A1A94C38B8.title: "Printed Calculation Circuit"
 	quest.790B49348370BE10.title: "Sulfurs and Niter"
 	quest.791CAEBAE57EF0E1.quest_desc: ["  &bMotors&r take electricity and produce a rotational force. You'll use motors to create many of the machines and other components in the future. &6You should automate these&r."]
@@ -1259,7 +1353,14 @@
 	]
 	quest.7A6C1605F32F695F.quest_subtitle: "Its just an oven?"
 	quest.7A7F75393420DB4C.title: "Ritual: Summon Otherworld Sapling Trader"
-	quest.7AC17F66BB030623.title: "Chipped Budding Certus Quartz"
+	quest.7AC17F66BB030623.quest_desc: [
+		"You can find &bBudding Certus&f inside of the &bMeteorite &for you can make them. When making the &bbudding block&f, they have tiers, &bDamaged&f, &bChipped&f, &bFlawed&f, and &bFlawless&f. When breaking them they will downgrade one stage. "
+		""
+		"-When &6Harvesting&f the &bBudding Block &fyou can used &bSilktouch Enchantment &fand you will get the block without it &6downgrading&f. "
+		""
+		"-To make &bBudding Certus &fyou must throw a &bCertus block&f and a &bCharged Certus&f in water. This will make the first tier &bBudding block&f, to &6upgrade &fit again &6throw it back in &bwater &fwith another &bCharged Certus&f, and again for the third tier. The fourth tier is not possible to craft and we will get into that later."
+	]
+	quest.7AC17F66BB030623.title: "Budding Blocks"
 	quest.7AF270EF635B11CF.quest_desc: [
 		"  Created by &6compressing&r three of the strongest materials you've used in your journey up until now."
 		""
@@ -1286,6 +1387,7 @@
 	]
 	quest.7C0FA555C5FE00D1.quest_subtitle: "Beep Boop"
 	quest.7C0FA555C5FE00D1.title: "Robotic Arms"
+	quest.7C201074DDBAE831.quest_desc: ["I guess that entire biome could dissapear into your &bME Storage..."]
 	quest.7C201074DDBAE831.title: "256k Storage Component"
 	quest.7C38A9BA01CA3772.title: "&1Alchemical Sulfur Rare"
 	quest.7C834204DEE1813C.title: "Advanced Enriching Factory"
@@ -1300,6 +1402,7 @@
 	quest.7D0CF81F7E703B71.title: "Bronze Water Pump"
 	quest.7D36F35D54BD7812.quest_desc: ["My &6punching &bgrass &fyou can get &bDemon Dream Seeds."]
 	quest.7D36F35D54BD7812.quest_subtitle: "This was to easy"
+	quest.7D57C6962950AA98.quest_desc: ["&bCrafting Co-processer&f are used to speed up and to allow for more then one item to craft while crafting more complex recipe."]
 	quest.7D57C6962950AA98.title: "Crafting Processors"
 	quest.7D62935133EE5551.quest_desc: [
 		"  You did it."
@@ -1324,6 +1427,12 @@
 	quest.7D62935133EE5551.title: "MI 100%"
 	quest.7DA234839458B333.title: "Flamethrower"
 	quest.7DD81584380EE8F7.quest_desc: ["A &bwand &fused to link &6Mercurial Logistics"]
+	quest.7EE57E9E41549AE8.quest_desc: ["The&b Molecular Assembler &fcarries out the operation defined by any &bPattern Providers&f place adjacent to it."]
+	quest.7EF829BFBBB4009B.quest_desc: [
+		"By placing Energizing rods around an Energizing Orb, then powering the rods, you can energize different materials inside the orb. This can range from single items to a combination of items."
+		""
+		"If you want to do this faster and quicker, you can energize in bulk! &bEnergizing&r can be sped up if you have enough &bpower&r. If you have the &bblocks&r rather then the &bingots&r, you can make the &benergized block 9x faster&r."
+	]
 	quest.7F7AB9192CD7FC70.title: "Elite Sawing Factory"
 	quest.7FC6AE9DB7C1DA52.title: "Bio-Generator"
 	task.013281B2076D21ED.title: "Helpful Tips \\& Tricks"
