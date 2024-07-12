@@ -1,0 +1,73 @@
+## Craftoria - 0.0.12 -> 0.1.0
+
+### neoforge - 21.0.56-beta -> 21.0.60-beta
+
+### Added
+
+  * [AE2 Network Analyser](https://www.curseforge.com/minecraft/mc-mods/ae2-network-analyser) (by [GlodBlock](https://www.curseforge.com/members/GlodBlock/projects))
+  * [Arts & Crafts](https://www.curseforge.com/minecraft/mc-mods/artsandcrafts) (by [KekeCreations](https://www.curseforge.com/members/KekeCreations/projects))
+  * [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements) (by [way2muchnoise](https://www.curseforge.com/members/way2muchnoise/projects))
+  * [Bigger AE2](https://www.curseforge.com/minecraft/mc-mods/bigger-ae2) (by [雪舞天使](https://www.curseforge.com/members/%E9%9B%AA%E8%88%9E%E5%A4%A9%E4%BD%BF/projects))
+  * [Blinking Ender Eyes](https://www.curseforge.com/minecraft/texture-packs/blinking-ender-eyes) (by [Futureazoo](https://www.curseforge.com/members/Futureazoo/projects))
+  * [Cassette Music Disc](https://www.curseforge.com/minecraft/texture-packs/cassette-music-disc-countxd) (by [CountXD](https://www.curseforge.com/members/CountXD/projects))
+  * [CC: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked) (by [SquidDev](https://www.curseforge.com/members/SquidDev/projects))
+  * [Chipped](https://www.curseforge.com/minecraft/mc-mods/chipped) (by [terrariumearth](https://www.curseforge.com/members/terrariumearth/projects))
+  * [Comforts (Fabric/Forge/Quilt)](https://www.curseforge.com/minecraft/mc-mods/comforts) (by [TheIllusiveC4](https://www.curseforge.com/members/TheIllusiveC4/projects))
+  * [Cursed Earth Returns](https://www.curseforge.com/minecraft/mc-mods/cursed-earth-returns) (by [nano_nestor](https://www.curseforge.com/members/nano_nestor/projects))
+  * [Expanded Storage](https://www.curseforge.com/minecraft/mc-mods/expanded-storage) (by [Quinn451](https://www.curseforge.com/members/Quinn451/projects))
+  * [ExtendedAE](https://www.curseforge.com/minecraft/mc-mods/ex-pattern-provider) (by [GlodBlock](https://www.curseforge.com/members/GlodBlock/projects))
+  * [Fancy Beds](https://www.curseforge.com/minecraft/texture-packs/fancy-beds) (by [Agente_511](https://www.curseforge.com/members/Agente_511/projects))
+  * [Fast IP Ping](https://www.curseforge.com/minecraft/mc-mods/fast-ip-ping) (by [Fallen_Breath](https://www.curseforge.com/members/Fallen_Breath/projects))
+  * [FastWorkbench](https://www.curseforge.com/minecraft/mc-mods/fastworkbench) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
+  * [FTB Filter System](https://www.curseforge.com/minecraft/mc-mods/ftb-filter-system) (by [FTB](https://www.curseforge.com/members/FTB/projects))
+  * [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat) (by [FTB](https://www.curseforge.com/members/FTB/projects))
+  * [Functional Storage](https://www.curseforge.com/minecraft/mc-mods/functional-storage) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
+  * [Inventory Profiles Next](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next) (by [mirinimi](https://www.curseforge.com/members/mirinimi/projects))
+  * [Kotlin for Forge](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge) (by [thedarkcolour](https://www.curseforge.com/members/thedarkcolour/projects))
+  * [libIPN](https://www.curseforge.com/minecraft/mc-mods/libipn) (by [mirinimi](https://www.curseforge.com/members/mirinimi/projects))
+  * [miles's Enhanced Hud](https://www.curseforge.com/minecraft/texture-packs/miles-enhanced-hud) (by [milesdemillas](https://www.curseforge.com/members/milesdemillas/projects))
+  * [New Style Squid](https://www.curseforge.com/minecraft/texture-packs/new-style-squid) (by [TinyDaggsy](https://www.curseforge.com/members/TinyDaggsy/projects))
+  * [Noisium](https://www.curseforge.com/minecraft/mc-mods/noisium) (by [Steveplays28](https://www.curseforge.com/members/Steveplays28/projects))
+  * [Placebo](https://www.curseforge.com/minecraft/mc-mods/placebo) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
+  * [Ranged Pumps](https://www.curseforge.com/minecraft/mc-mods/ranged-pumps) (by [raoulvdberge](https://www.curseforge.com/members/raoulvdberge/projects))
+  * [Titanium](https://www.curseforge.com/minecraft/mc-mods/titanium) (by [Buuz135](https://www.curseforge.com/members/Buuz135/projects))
+  * [Useful Hats](https://www.curseforge.com/minecraft/mc-mods/useful-hats) (by [thecech12](https://www.curseforge.com/members/thecech12/projects))
+  * [Utilitarian](https://www.curseforge.com/minecraft/mc-mods/utilitarian) (by [LobsterJonn](https://www.curseforge.com/members/LobsterJonn/projects))
+
+### Removed
+
+  * [Global Packs](https://www.curseforge.com/minecraft/mc-mods/drp-global-datapack) (by [JTK222](https://www.curseforge.com/members/JTK222/projects))
+  * [Hellim's Xaero's Maps Mob Icons](https://www.curseforge.com/minecraft/texture-packs/hellims-xaeros-maps-mob-icons) (by [DoCelikkol](https://www.curseforge.com/members/DoCelikkol/projects))
+  * [Inventory Tweaks - ReFoxed](https://www.curseforge.com/minecraft/mc-mods/inventory-tweaks-refoxed) (by [LobsterJonn](https://www.curseforge.com/members/LobsterJonn/projects))
+  * [Snad](https://www.curseforge.com/minecraft/mc-mods/snad) (by [TheRoBrit](https://www.curseforge.com/members/TheRoBrit/projects))
+  * [Xaero's Minimap](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap) (by [xaero96](https://www.curseforge.com/members/xaero96/projects))
+  * [Xaero's World Map](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map) (by [xaero96](https://www.curseforge.com/members/xaero96/projects))
+
+### Changed
+
+  * [AE2DarkMode-V1.0.1.zip](https://www.curseforge.com/minecraft/texture-packs/ae2-dark-mode/files/5447192) -> [AE2DarkMode-V1.0.6.zip](https://www.curseforge.com/minecraft/texture-packs/ae2-dark-mode/files/5520011)
+  * [ae2importexportcard-1.21-1.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/ae2-import-export-card/files/5465225) -> [ae2importexportcard-1.21-1.3.0.jar](https://www.curseforge.com/minecraft/mc-mods/ae2-import-export-card/files/5520870)
+  * [AmbientSounds_NEOFORGE_v6.0.3_mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/ambientsounds/files/5492137) -> [AmbientSounds_NEOFORGE_v6.0.4_mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/ambientsounds/files/5516286)
+  * [appliedenergistics2-19.0.8-alpha.jar](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2/files/5490518) -> [appliedenergistics2-19.0.9-alpha.jar](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2/files/5524164)
+  * [AppliedFlux-1.21-1.0.2-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/applied-flux/files/5504017) -> [AppliedFlux-1.21-1.0.3-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/applied-flux/files/5509946)
+  * [balm-neoforge-1.21-21.0.11-all.jar](https://www.curseforge.com/minecraft/mc-mods/balm/files/5485041) -> [balm-neoforge-1.21-21.0.12-all.jar](https://www.curseforge.com/minecraft/mc-mods/balm/files/5513938)
+  * [BiomesOPlenty-neoforge-1.21-21.0.0.11.jar](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty/files/5489686) -> [BiomesOPlenty-neoforge-1.21-21.0.0.12.jar](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty/files/5512375)
+  * [chat_heads-0.12.6-neoforge-1.21.jar](https://www.curseforge.com/minecraft/mc-mods/chat-heads/files/5495871) -> [chat_heads-0.12.7-neoforge-1.21.jar](https://www.curseforge.com/minecraft/mc-mods/chat-heads/files/5512153)
+  * [cherishedworlds-neoforge-10.0.0+1.21.jar](https://www.curseforge.com/minecraft/mc-mods/cherished-worlds/files/5448098) -> [cherishedworlds-neoforge-10.0.1+1.21.jar](https://www.curseforge.com/minecraft/mc-mods/cherished-worlds/files/5519033)
+  * [CreativeCore_NEOFORGE_v2.11.34_mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/creativecore/files/5434885) -> [CreativeCore_NEOFORGE_v2.12.1_mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/creativecore/files/5517340)
+  * [easy-villagers-neoforge-1.21-1.1.12.jar](https://www.curseforge.com/minecraft/mc-mods/easy-villagers/files/5485322) -> [easy-villagers-neoforge-1.21-1.1.13.jar](https://www.curseforge.com/minecraft/mc-mods/easy-villagers/files/5509862)
+  * [ExtremeReactors2-1.21-2.4.1.jar](https://www.curseforge.com/minecraft/mc-mods/extreme-reactors/files/5473758) -> [ExtremeReactors2-1.21-2.4.2.jar](https://www.curseforge.com/minecraft/mc-mods/extreme-reactors/files/5507187)
+  * [farmingforblockheads-neoforge-1.21-21.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads/files/5492595) -> [farmingforblockheads-neoforge-1.21-21.0.4.jar](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads/files/5508040)
+  * [ftb-quests-neoforge-2100.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge/files/5482829) -> [ftb-quests-neoforge-2100.1.3.jar](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge/files/5513794)
+  * [guardvillagers-2.2.4-1.21.jar](https://www.curseforge.com/minecraft/mc-mods/guard-villagers/files/5486430) -> [guardvillagers-2.2.5-1.21.jar](https://www.curseforge.com/minecraft/mc-mods/guard-villagers/files/5505056)
+  * [HopoBetterMineshaft-[1.21]-1.2.4.jar](https://www.curseforge.com/minecraft/mc-mods/hopo-better-mineshaft/files/5431664) -> [HopoBetterMineshaft-[1.21]-1.2.5.jar](https://www.curseforge.com/minecraft/mc-mods/hopo-better-mineshaft/files/5522112)
+  * [justdirethings-0.11.7.jar](https://www.curseforge.com/minecraft/mc-mods/just-dire-things/files/5502615) -> [justdirethings-0.11.8.jar](https://www.curseforge.com/minecraft/mc-mods/just-dire-things/files/5511299)
+  * [Modern-Industrialization-2.2.6-alpha.jar](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization/files/5490765) -> [Modern-Industrialization-2.2.7-beta.jar](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization/files/5521722)
+  * [modernfix-neoforge-5.18.5+mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/modernfix/files/5499596) -> [modernfix-neoforge-5.18.7+mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/modernfix/files/5515336)
+  * [modonomicon-1.21-neoforge-1.93.0.jar](https://www.curseforge.com/minecraft/mc-mods/modonomicon/files/5503992) -> [modonomicon-1.21-neoforge-1.94.0.jar](https://www.curseforge.com/minecraft/mc-mods/modonomicon/files/5507060)
+  * [occultism-1.21-neoforge-1.134.6.jar](https://www.curseforge.com/minecraft/mc-mods/occultism/files/5504057) -> [occultism-1.21-neoforge-1.135.1.jar](https://www.curseforge.com/minecraft/mc-mods/occultism/files/5509740)
+  * [SmartBrainLib-neoforge-1.21-1.14.3.jar](https://www.curseforge.com/minecraft/mc-mods/smartbrainlib/files/5433125) -> [SmartBrainLib-neoforge-1.21-1.14.5.jar](https://www.curseforge.com/minecraft/mc-mods/smartbrainlib/files/5513418)
+  * [the_bumblezone-7.6.10+1.21-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/the-bumblezone-forge/files/5503370) -> [the_bumblezone-7.6.11+1.21-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/the-bumblezone-forge/files/5508132)
+  * [theurgy-1.21-neoforge-1.24.4.jar](https://www.curseforge.com/minecraft/mc-mods/theurgy/files/5503822) -> [theurgy-1.21-neoforge-1.25.1.jar](https://www.curseforge.com/minecraft/mc-mods/theurgy/files/5510022)
+  * [tiab-neoforge-1.21-6.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/time-in-a-bottle-universal/files/5479319) -> [common-6.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/time-in-a-bottle-universal/files/5522002)
+

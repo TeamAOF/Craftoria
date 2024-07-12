@@ -1,0 +1,22 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "pipez:block/pipe_part",
+	"textures": {
+		"1": "pipez:block/universal_pipe_connector",
+		"particle": "pipez:block/universal_pipe_connector"
+	},
+	"elements": [
+		{
+			"from": [3, 3, 0],
+			"to": [13, 13, 3],
+			"faces": {
+				"north": {"uv": [3, 3, 13, 13], "texture": "#1"},
+				"east": {"uv": [13, 3, 16, 13], "texture": "#1"},
+				"south": {"uv": [3, 3, 13, 13], "texture": "#1"},
+				"west": {"uv": [0, 3, 3, 13], "texture": "#1"},
+				"up": {"uv": [3, 0, 13, 3], "texture": "#1"},
+				"down": {"uv": [3, 13, 13, 16], "texture": "#1"}
+			}
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "waystones:block/portstone_top",
+		"1": "waystones:block/portstone_top_top",
+		"particle": "waystones:block/portstone_top"
+	},
+	"elements": [
+		{
+			"name": "pillarTop",
+			"from": [3, 0, 9],
+			"to": [13, 4, 13],
+			"faces": {
+				"north": {"uv": [3, 12, 13, 16], "texture": "#1"},
+				"east": {"uv": [9, 12, 13, 16], "texture": "#1"},
+				"south": {"uv": [3, 12, 13, 16], "texture": "#1"},
+				"west": {"uv": [9, 12, 13, 16], "texture": "#1"},
+				"up": {"uv": [3, 7, 13, 3], "texture": "#0"},
+				"down": {"uv": [3, 9, 13, 13], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "top",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

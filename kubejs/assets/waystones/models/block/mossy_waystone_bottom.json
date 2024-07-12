@@ -1,0 +1,58 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "waystones:block/waystone_bottom",
+	"textures": {
+		"2": "waystones:block/mossy_waystone",
+		"3": "waystones:block/mossy_waystone_botton",
+		"particle": "waystones:block/mossy_waystone_top"
+	},
+	"elements": [
+		{
+			"name": "pillarBottom",
+			"from": [3, 9, 3],
+			"to": [13, 16, 13],
+			"faces": {
+				"north": {"uv": [3, 0, 13, 7], "texture": "#3"},
+				"east": {"uv": [3, 0, 13, 7], "texture": "#3"},
+				"south": {"uv": [3, 0, 13, 7], "texture": "#3"},
+				"west": {"uv": [3, 0, 13, 7], "texture": "#3"},
+				"up": {"uv": [3, 3, 13, 13], "texture": "#2"},
+				"down": {"uv": [3, 3, 13, 13], "texture": "#2"}
+			}
+		},
+		{
+			"name": "pillarBottom",
+			"from": [1, 3, 1],
+			"to": [15, 9, 15],
+			"faces": {
+				"north": {"uv": [1, 7, 15, 13], "texture": "#3"},
+				"east": {"uv": [1, 7, 15, 13], "texture": "#3"},
+				"south": {"uv": [1, 7, 15, 13], "texture": "#3"},
+				"west": {"uv": [1, 7, 15, 13], "texture": "#3"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#2"},
+				"down": {"uv": [1, 1, 15, 15], "texture": "#2"}
+			}
+		},
+		{
+			"name": "pillarBottom",
+			"from": [0, 0, 0],
+			"to": [16, 3, 16],
+			"faces": {
+				"north": {"uv": [0, 13, 16, 16], "texture": "#3"},
+				"east": {"uv": [0, 13, 16, 16], "texture": "#3"},
+				"south": {"uv": [0, 13, 16, 16], "texture": "#3"},
+				"west": {"uv": [0, 13, 16, 16], "texture": "#3"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#2"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#2"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "bottom",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

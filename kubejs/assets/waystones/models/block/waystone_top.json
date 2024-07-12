@@ -1,0 +1,44 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "waystones:block/andesite_wayston",
+		"texture": "waystones:block/andesite_wayston_top",
+		"particle": "waystones:block/andesite_wayston"
+	},
+	"elements": [
+		{
+			"name": "pillarTop",
+			"from": [3, 0, 3],
+			"to": [13, 9, 13],
+			"faces": {
+				"north": {"uv": [3, 7, 13, 16], "texture": "#texture"},
+				"east": {"uv": [3, 7, 13, 16], "texture": "#texture"},
+				"south": {"uv": [3, 7, 13, 16], "texture": "#texture"},
+				"west": {"uv": [3, 7, 13, 16], "texture": "#texture"},
+				"up": {"uv": [3, 3, 13, 13], "texture": "#1"},
+				"down": {"uv": [3, 3, 13, 13], "texture": "#1"}
+			}
+		},
+		{
+			"name": "pillarTop",
+			"from": [1, 9, 1],
+			"to": [15, 16, 15],
+			"faces": {
+				"north": {"uv": [1, 0, 15, 7], "texture": "#texture"},
+				"east": {"uv": [1, 0, 15, 7], "texture": "#texture"},
+				"south": {"uv": [1, 0, 15, 7], "texture": "#texture"},
+				"west": {"uv": [1, 0, 15, 7], "texture": "#texture"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#1"},
+				"down": {"uv": [1, 1, 15, 15], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "top",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1]
+		}
+	]
+}

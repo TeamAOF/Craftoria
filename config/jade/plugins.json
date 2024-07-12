@@ -3,9 +3,6 @@
     "framed_item_frame": true,
     "framed_block_generic": true
   },
-  "modularrouters": {
-    "router": true
-  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -57,8 +54,42 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "hammerlib": {
-    "root": true
+  "jade": {
+    "coordinates.rel": false,
+    "registry_name.special": false,
+    "block_states": false,
+    "distance": false,
+    "block_face": false,
+    "coordinates": false,
+    "registry_name": "OFF",
+    "block_properties": false,
+    "mod_name": true
+  },
+  "modern_industrialization": {
+    "overclock": true,
+    "pipe": true
+  },
+  "extendedae": {
+    "jade_chamber": true,
+    "jade_wireless": true
+  },
+  "functionalstorage": {
+    "drawer": true
+  },
+  "ae2": {
+    "part_icon": true,
+    "charger": true,
+    "debug": true,
+    "part_tooltip": true,
+    "grid_node_state": true,
+    "pattern_provider": true,
+    "part_mod_name": true,
+    "power_storage": true,
+    "crafting_monitor": true,
+    "part_name": true
+  },
+  "modularrouters": {
+    "router": true
   },
   "mekanism": {
     "chemical": true,
@@ -75,21 +106,6 @@
   "pipez": {
     "pipe": true
   },
-  "jade": {
-    "coordinates.rel": false,
-    "registry_name.special": false,
-    "block_states": false,
-    "distance": false,
-    "block_face": false,
-    "coordinates": false,
-    "registry_name": "OFF",
-    "block_properties": false,
-    "mod_name": true
-  },
-  "modern_industrialization": {
-    "overclock": true,
-    "pipe": true
-  },
   "waystones": {
     "waystone": true
   },
@@ -99,17 +115,5 @@
     "sink": true,
     "milk_jar": true,
     "toaster": true
-  },
-  "ae2": {
-    "part_icon": true,
-    "charger": true,
-    "debug": true,
-    "part_tooltip": true,
-    "grid_node_state": true,
-    "pattern_provider": true,
-    "part_mod_name": true,
-    "power_storage": true,
-    "crafting_monitor": true,
-    "part_name": true
   }
 }

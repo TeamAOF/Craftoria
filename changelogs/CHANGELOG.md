@@ -1,3 +1,85 @@
+## Craftoria | v0.1.0
+
+_NeoForge Loader 21.0.56_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.1.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.1.0.md)_
+
+### 7 New Quest Chapters
+* Getting Started
+* Applied Energistics
+* Mekanism **(WIP)**
+* Modern Industrialization
+* Powah
+* Occultism
+* Theurgy
+
+### Added Mods ✅
+
+  * [AE2 Network Analyser](https://www.curseforge.com/minecraft/mc-mods/ae2-network-analyser)
+  * [Arts & Crafts](https://www.curseforge.com/minecraft/mc-mods/artsandcrafts)
+  * [Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)
+  * [Bigger AE2](https://www.curseforge.com/minecraft/mc-mods/bigger-ae2)
+  * [CC: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)
+  * [Chipped](https://www.curseforge.com/minecraft/mc-mods/chipped)
+  * [Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts)
+  * [Cursed Earth Returns](https://www.curseforge.com/minecraft/mc-mods/cursed-earth-returns)
+  * [Expanded Storage](https://www.curseforge.com/minecraft/mc-mods/expanded-storage)
+  * [ExtendedAE](https://www.curseforge.com/minecraft/mc-mods/ex-pattern-provider)
+  * [Fast IP Ping](https://www.curseforge.com/minecraft/mc-mods/fast-ip-ping)
+  * [FastWorkbench](https://www.curseforge.com/minecraft/mc-mods/fastworkbench)
+  * [FTB Filter System](https://www.curseforge.com/minecraft/mc-mods/ftb-filter-system)
+  * [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat)
+  * [Functional Storage](https://www.curseforge.com/minecraft/mc-mods/functional-storage)
+  * [Inventory Profiles Next](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next)
+  * [Kotlin for Forge](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge)
+  * [libIPN](https://www.curseforge.com/minecraft/mc-mods/libipn)
+  * [Noisium](https://www.curseforge.com/minecraft/mc-mods/noisium)
+  * [Placebo](https://www.curseforge.com/minecraft/mc-mods/placebo)
+  * [Ranged Pumps](https://www.curseforge.com/minecraft/mc-mods/ranged-pumps)
+  * [Titanium](https://www.curseforge.com/minecraft/mc-mods/titanium)
+  * [Useful Hats](https://www.curseforge.com/minecraft/mc-mods/useful-hats)
+  * [Utilitarian](https://www.curseforge.com/minecraft/mc-mods/utilitarian)
+
+### Removed Mods ❌
+
+  * [Global Packs](https://www.curseforge.com/minecraft/mc-mods/drp-global-datapack) (Replaced)
+  * [Inventory Tweaks - ReFoxed](https://www.curseforge.com/minecraft/mc-mods/inventory-tweaks-refoxed) (Replaced)
+  * [Snad](https://www.curseforge.com/minecraft/mc-mods/snad) (Replaced)
+  * [Xaero's Minimap](https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap) (Will be readded at a later date)
+  * [Xaero's World Map](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map) (Will be readded at a later date)
+
+### Changes/Improvements ⭐
+
+* New art for buttons.
+* Improved bed textures.
+* Improved squid texture.
+* Added tooltips for Pipez (Pipes show much much they transfer with what upgrades, and upgrades show how much they transfer of what type).
+* You now spawn with the quests book.
+* Added Pipe Connector info page from EMI and put it into a tooltip.
+* Added tooltips for JustDireThings raw ores to explain how to get them, also info page for Unstable Portal Fluid.
+* Added tooltips for AE2WTLib quantum bridge card on how to use it.
+* Moved custom assets to kubejs (this includes our MI art).
+* Added fallback system for deprecating items/mods (Iron Chests > Expanded Storage).
+* The Sink now requires water and is no longer an infinite water source.
+* Matter Cannon and Tiny TNT will no longer do block damage.
+
+### Bug Fixes 🪲
+
+* Fixed missing buttons art for screens not the main menu.
+* Fixed duplicating items in Dimensional Storage.
+* Fixed server crash when inserting items into occultism storage containers.
+* Fixed Annihilation plane and ME Storage bus on same cable dissappearing after world reload.
+
+### Recipes 🪵
+
+* Unified Salt, recipes & loottables.
+* Unified Sulfur, made it not a dye.
+* Unified Ruby Dust.
+* Added Covered Cable recipes in assembler using rubber.
+* Added Dense Cable -> 4x normal cable recipes.
+* Added AppFlux recipes in MI machines.
+* Added crushed ender pearl recipes in Mekanism crusher.
+* Rolled back the Sink recipe to default.
+---
+
 ## Craftoria | v0.0.12
 
 _NeoForge Loader 21.0.56_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.0.12.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.0.12.md)_

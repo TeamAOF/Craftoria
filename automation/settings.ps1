@@ -26,11 +26,11 @@ $MODPACK_NAME = "Craftoria"
 $CLIENT_NAME = "Craftoria"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.0.12"
+$MODPACK_VERSION = "0.1.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.0.11"
+$LAST_MODPACK_VERSION = "0.0.12"
 
 # Which modloader the modpack uses
 # Can be "forge" or "fabric"
@@ -82,7 +82,6 @@ $CLIENT_FILE_AUTHOR = "TeamAOE"
 $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @(
 	"config",
 	"shaderpacks",
-	"global_packs",
 	"defaultconfigs",
 	"kubejs"
 	)

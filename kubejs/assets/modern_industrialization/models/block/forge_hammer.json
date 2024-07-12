@@ -1,0 +1,93 @@
+{
+    "textures": {
+        "forge_hammer": "modern_industrialization:block/forge_hammer",
+        "particle" :  "modern_industrialization:block/forge_hammer"
+    },
+    "display": {
+        "gui": {
+            "rotation": [ 30, 45, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 0.625, 0.625, 0.625 ]
+        },
+        "ground": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, 3, 0 ],
+            "scale": [ 0.25, 0.25, 0.25 ]
+        },
+        "fixed": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "head": {
+            "rotation": [ 0, 180, 0 ],
+            "translation": [ 0, 0, 0 ],
+            "scale": [ 1, 1, 1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.4, 0.4, 0.4 ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [ 75, 315, 0 ],
+            "translation": [ 0, 2.5, 0 ],
+            "scale": [ 0.375, 0.375, 0.375 ]
+        }
+    },
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [15, 4, 15],
+			"faces": {
+				"north": {"uv": [0, 14, 7, 16], "texture": "#forge_hammer"},
+				"east": {"uv": [0, 14, 7, 16], "texture": "#forge_hammer"},
+				"south": {"uv": [0, 14, 7, 16], "texture": "#forge_hammer"},
+				"west": {"uv": [0, 14, 7, 16], "texture": "#forge_hammer"},
+				"up": {"uv": [0, 7.5, 7, 14.5], "texture": "#forge_hammer"},
+				"down": {"uv": [9, 8.5, 16, 15.5], "texture": "#forge_hammer"}
+			}
+		},
+		{
+			"from": [1, 10, 1],
+			"to": [15, 15, 15],
+			"faces": {
+				"north": {"uv": [9, 6.5, 16, 9], "texture": "#forge_hammer"},
+				"east": {"uv": [9, 6.5, 16, 9], "texture": "#forge_hammer"},
+				"south": {"uv": [9, 6.5, 16, 9], "texture": "#forge_hammer"},
+				"west": {"uv": [9, 6.5, 16, 9], "texture": "#forge_hammer"},
+				"up": {"uv": [9, 0, 16, 7], "texture": "#forge_hammer"},
+				"down": {"uv": [9, 8.5, 16, 15.5], "texture": "#forge_hammer"}
+			}
+		},
+		{
+			"from": [3, 4, 3],
+			"to": [13, 5, 13],
+			"faces": {
+				"north": {"uv": [0, 4.5, 5, 5], "texture": "#forge_hammer"},
+				"east": {"uv": [0, 4.5, 5, 5], "texture": "#forge_hammer"},
+				"south": {"uv": [0, 4.5, 5, 5], "texture": "#forge_hammer"},
+				"west": {"uv": [0, 4.5, 5, 5], "texture": "#forge_hammer"},
+				"up": {"uv": [0, 0, 5, 5], "texture": "#forge_hammer"}
+			}
+		},
+		{
+			"from": [4, 4, 4],
+			"to": [12, 10, 12],
+			"faces": {
+				"north": {"uv": [5, 0, 9, 3], "texture": "#forge_hammer"},
+				"east": {"uv": [5, 0, 9, 3], "texture": "#forge_hammer"},
+				"south": {"uv": [5, 0, 9, 3], "texture": "#forge_hammer"},
+				"west": {"uv": [5, 0, 9, 3], "texture": "#forge_hammer"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

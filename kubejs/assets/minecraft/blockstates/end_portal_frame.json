@@ -1,0 +1,37 @@
+{
+    "variants": {
+        "eye=false,facing=south": { "model": "block/end_portal_frame" },
+        "eye=false,facing=west": { "model": "block/end_portal_frame", "y": 90 },
+        "eye=false,facing=north": { "model": "block/end_portal_frame", "y": 180 },
+        "eye=false,facing=east": { "model": "block/end_portal_frame", "y": 270 },
+
+        "eye=true,facing=south": [
+		{ "model": "block/end_portal_frame_filled", "weight": 1},
+		{ "model": "block/end_portal_frame_filled_1", "weight": 1},
+		{ "model": "block/end_portal_frame_filled_2", "weight": 1},
+		{ "model": "block/end_portal_frame_filled_3", "weight": 1},
+		{ "model": "block/end_portal_frame_filled_4", "weight": 1}
+	],
+        "eye=true,facing=west": [
+		{ "model": "block/end_portal_frame_filled", "y": 90 , "weight": 1},
+		{ "model": "block/end_portal_frame_filled_1", "y": 90 , "weight": 1},
+		{ "model": "block/end_portal_frame_filled_2", "y": 90 , "weight": 1},
+		{ "model": "block/end_portal_frame_filled_3", "y": 90 , "weight": 1},
+		{ "model": "block/end_portal_frame_filled_4", "y": 90 , "weight": 1}
+	],
+        "eye=true,facing=north": [
+		{ "model": "block/end_portal_frame_filled", "y": 180 , "weight": 1},
+		{ "model": "block/end_portal_frame_filled_1", "y": 180 , "weight": 1},
+		{ "model": "block/end_portal_frame_filled_2", "y": 180 , "weight": 1},
+		{ "model": "block/end_portal_frame_filled_3", "y": 180 , "weight": 1},
+		{ "model": "block/end_portal_frame_filled_4", "y": 180 , "weight": 1}
+	],
+        "eye=true,facing=east": [
+		{ "model": "block/end_portal_frame_filled", "y": 270 , "weight": 1},
+		{ "model": "block/end_portal_frame_filled_1", "y": 270 , "weight": 1},
+		{ "model": "block/end_portal_frame_filled_2", "y": 270 , "weight": 1},
+		{ "model": "block/end_portal_frame_filled_3", "y": 270 , "weight": 1},
+		{ "model": "block/end_portal_frame_filled_4", "y": 270 , "weight": 1}
+	]
+    }
+}

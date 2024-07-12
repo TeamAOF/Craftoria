@@ -1,0 +1,38 @@
+#Enable No Soliciting module
+noSolicitingEnabled = true
+#Range in chunks for no soliciting banner.
+#Range: > 1
+noSolicitingChunkRangeBanner = 6
+#Range in chunks for players holding a restraining order.
+#Range: > 1
+noSolicitingChunkRangePlayer = 6
+#Range in chunks for players holding a restraining order.
+#Range: > 1
+noSolicitingChunkRangeCarpet = 6
+#Enable Hoe planting module
+hoePlantingEnabled = true
+#Additional height for sugar cane and cactus when growing on snad
+#Range: > 0
+additionalGrowthHeight = 3
+#How many extra growth ticks to apply when on snad
+#Range: > 0
+additionalGrowthTicks = 5
+#Damage done by drit when you step on it
+#Range: 0.0 ~ 2.147483647E9
+dritDamage = 2.0
+#Tick rate for the fluid hopper. Lower number is faster ticking.
+#Range: > 1
+fluidHopperTickRate = 10
+#Minimum tick rate for the redstone clock. Set this higher if you're worried about performance.
+#Range: 1 ~ 24
+minimumRedstoneClockTick = 5
+#Get rid of the "too far away" and "there are monsters nearby" errors when trying to sleep.
+betterSleepEnabled = true
+#Enable No Trampling module
+noTramplingEnabled = true
+#When true using a wind charge will replenish some of the players air supply
+windChargeAirSupplyEnabled = true
+#How much air should a charge refill. Full air supply for a player is 300.
+#Range: > 1
+windChargeAirAmount = 100
+

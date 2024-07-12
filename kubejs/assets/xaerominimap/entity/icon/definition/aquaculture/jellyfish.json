@@ -1,0 +1,21 @@
+{
+	"variants" : {
+		"default" : "model:0"
+	},
+	"modelConfigs" : [
+		{
+			"baseScale" : 0.6,
+			"rotationY" : 90,
+			"rotationX" : 0,
+			"rotationZ" : 0,
+			"offsetX" : 0,
+			"offsetY" : 0,
+			"modelMainPartFieldAliases" : [
+				"com.teammetallurgy.aquaculture.client.renderer.entity.model.JellyfishModel;body"				
+			],
+			"renderingFullModel" : true,
+			"modelPartsRotationReset" : false,
+			"layersAllowed" : true
+		}
+	]
+}
