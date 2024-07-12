@@ -1,4 +1,4 @@
-## Craftoria | v0.1.0
+## Craftoria | v0.1.0/0.1.1
 
 _NeoForge Loader 21.0.60_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.1.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.1.0.md)_
 
@@ -24,7 +24,6 @@ _NeoForge Loader 21.0.60_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
   * [Expanded Storage](https://www.curseforge.com/minecraft/mc-mods/expanded-storage)
   * [ExtendedAE](https://www.curseforge.com/minecraft/mc-mods/ex-pattern-provider)
   * [Fast IP Ping](https://www.curseforge.com/minecraft/mc-mods/fast-ip-ping)
-  * [FastWorkbench](https://www.curseforge.com/minecraft/mc-mods/fastworkbench)
   * [FTB Filter System](https://www.curseforge.com/minecraft/mc-mods/ftb-filter-system)
   * [FTB XMod Compat](https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat)
   * [Functional Storage](https://www.curseforge.com/minecraft/mc-mods/functional-storage)
