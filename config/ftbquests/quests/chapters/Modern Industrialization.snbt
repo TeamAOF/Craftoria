@@ -13,7 +13,7 @@
 			image: "modern_industrialization:textures/gui/colorbar.png"
 			rotation: 0.0d
 			width: 80.0d
-			x: 30.0d
+			x: 30.25d
 			y: 0.0d
 		}
 		{
@@ -105,28 +105,23 @@
 			y: 2.92d
 		}
 		{
-			height: 1.0d
-			image: "modern_industrialization:fluid/synthetic_oil_still"
-			rotation: 0.0d
-			width: 0.03125d
-			x: 25.6d
-			y: 13.3d
-		}
-		{
-			height: 1.0d
-			image: "modern_industrialization:fluid/template/lava_like"
+			color: 11184810
+			height: 0.25d
+			image: "modern_industrialization:fluid/template/plasma_like"
 			rotation: 0.0d
 			width: 76.0d
 			x: 32.0d
-			y: 8.0d
+			y: 7.8d
 		}
 		{
-			height: 1.0d
-			image: "modern_industrialization:fluid/template/lava_like"
+			color: 11184810
+			height: 0.25d
+			image: "modern_industrialization:fluid/template/plasma_like"
+			order: 1
 			rotation: 0.0d
 			width: 76.0d
 			x: 32.0d
-			y: -8.0d
+			y: -7.75d
 		}
 	]
 	order_index: 2
