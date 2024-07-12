@@ -1,6 +1,6 @@
 ## Craftoria | v0.1.0
 
-_NeoForge Loader 21.0.56_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.1.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.1.0.md)_
+_NeoForge Loader 21.0.60_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.1.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.1.0.md)_
 
 ### 7 New Quest Chapters
 * Getting Started
