@@ -1,3 +1,21 @@
+## Craftoria | v0.2.1
+
+_NeoForge Loader 21.0.81_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.2.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.2.1.md)_
+
+### Added Mods ✅
+
+* [Curios API Continuation](https://www.curseforge.com/minecraft/mc-mods/curios-continuation)
+
+### Removed Mods ❌
+
+* [Accessories](https://www.curseforge.com/minecraft/mc-mods/accessories)
+* [Curios Compat Layer for Accessories](https://www.curseforge.com/minecraft/mc-mods/accessories-cc-layer)
+
+### Bug Fixes 🪲
+
+* Fixed an issue when equipping certain relics would crash the game.
+---
+
 ## Craftoria | v0.2.0
 
 _NeoForge Loader 21.0.81_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.2.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.2.0.md)_
