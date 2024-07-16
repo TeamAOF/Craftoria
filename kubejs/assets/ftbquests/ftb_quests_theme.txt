@@ -77,6 +77,9 @@ pinned_quest_size:                  0.75
 checkmark_task_active:   ftblibrary:icons/accept
 checkmark_task_inactive: ftblibrary:icons/accept_gray
 
+[01B56BD678E7745B]
+background:                         ftbquests:textures/gui/bg_powah.png; color=#a0a0a0; tile_size=64
+
 [40CEA39FE5F5225D]
 dependency_line_texture:            ftbquests:textures/gui/flowing_mekanism.png
 dependency_line_uncompleted_color:  #44B3B3A3
@@ -84,7 +87,7 @@ dependency_line_selected_speed:     1.0
 dependency_line_unselected_speed:   0.5
 
 [5A3894BACC5E8994]
-background:                         ftbquests:textures/gui/background_white.png; color=#110a1a  ; tile_size=64
+background:                         ftbquests:textures/gui/background_white.png; color=#110a1a; tile_size=64
 dependency_line_texture:            theurgy:textures/block/sal_ammoniac/still.png
 dependency_line_uncompleted_color:  #C0f7eff6
 
@@ -92,5 +95,5 @@ dependency_line_uncompleted_color:  #C0f7eff6
 dependency_line_texture:            ftbquests:textures/gui/lines_ae2.png
 
 [7269FD2B5B0F0424]
-background:                         ftbquests:textures/gui/background_warm_black.png; color=#F0a81900  ; tile_size=64
+background:                         ftbquests:textures/gui/background_warm_black.png; color=#F0a81900; tile_size=64
 dependency_line_texture:            occultism:textures/gui/book/summoning.png
