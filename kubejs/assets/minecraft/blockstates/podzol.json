@@ -1,0 +1,38 @@
+{
+  "variants": {
+    "snowy=false": [
+		{"model": "minecraft:block/podzol/podzol", "weight":84},
+		{"model": "minecraft:block/podzol/podzol", "weight":84, "y": 90},
+		{"model": "minecraft:block/podzol/podzol", "weight":84, "y": 180},
+		{"model": "minecraft:block/podzol/podzol", "weight":84, "y": 270},
+		
+		{"model": "minecraft:block/podzol/podzol_clover", "weight":4},
+		{"model": "minecraft:block/podzol/podzol_clover", "weight":4, "y": 90},
+		{"model": "minecraft:block/podzol/podzol_clover", "weight":4, "y": 180},
+		{"model": "minecraft:block/podzol/podzol_clover", "weight":4, "y": 270},
+		
+		{"model": "minecraft:block/podzol/podzol_clover_small", "weight":6},
+		{"model": "minecraft:block/podzol/podzol_clover_small", "weight":6, "y":90},
+		{"model": "minecraft:block/podzol/podzol_clover_small", "weight":6, "y":180},
+		{"model": "minecraft:block/podzol/podzol_clover_small", "weight":6, "y":270},
+		
+		{"model": "minecraft:block/podzol/podzol_rock", "weight":1},
+		{"model": "minecraft:block/podzol/podzol_rock", "weight":1, "y":90},
+		{"model": "minecraft:block/podzol/podzol_rock", "weight":1, "y":180},
+		{"model": "minecraft:block/podzol/podzol_rock", "weight":1, "y":270},
+
+		{"model": "minecraft:block/podzol/podzol_flower_small", "weight":4},
+		{"model": "minecraft:block/podzol/podzol_flower_small", "weight":4, "y":90},
+		{"model": "minecraft:block/podzol/podzol_flower_small", "weight":4, "y":180},
+		{"model": "minecraft:block/podzol/podzol_flower_small", "weight":4, "y":270},
+		
+		{"model": "minecraft:block/podzol/podzol_flower_big", "weight":2},
+		{"model": "minecraft:block/podzol/podzol_flower_big", "weight":2, "y":90},
+		{"model": "minecraft:block/podzol/podzol_flower_big", "weight":2, "y":180},
+		{"model": "minecraft:block/podzol/podzol_flower_big", "weight":2, "y":270}
+    ],
+    "snowy=true": {
+      "model": "minecraft:block/grass_block_snow"
+    }
+  }
+}

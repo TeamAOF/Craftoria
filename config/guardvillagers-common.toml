@@ -8,8 +8,6 @@
 	"How low of a reputation of a player should have to be instantly aggroed upon by guards and golems?" = -100
 	"Allow players to give guards stuff only if they have the hero of the village effect?" = false
 	"Have guards only follow the player if they have hero of the village?" = true
-	#Range: -500.0 ~ 900.0
-	"Guard speed" = 0.5
 	#This is the range in which the guards will be aggroed to mobs that are attacking villagers. Higher values are more resource intensive, and setting this to zero will disable the goal.
 	#Range: -500.0 ~ 500.0
 	Range = 50.0
@@ -19,8 +17,6 @@
 	#How much health a guard regenerates.
 	#Range: -500.0 ~ 500.0
 	"Guard health regeneration amount" = 1.0
-	#Range: 0.0 ~ 900.0
-	"Guard follow range" = 20.0
 	"Allow players to set guard patrol points only if they have hero of the village" = false
 	#This makes Guards run from polar bears, as anyone with common sense would.
 	"Have Guards have some common sense?" = false
@@ -32,8 +28,6 @@
 	"Chance to drop equipment" = 100.0
 	#This makes guards form a phalanx
 	"Have guards form a phalanx?" = true
-	#Range: -500.0 ~ 900.0
-	"Guard health" = 20.0
 
 ["raids and illagers"]
 	#This makes Illagers run from polar bears, as anyone with common sense would.

@@ -1,0 +1,40 @@
+{
+  "parent": "computercraft:block/block_front_back",
+  "render_type": "cutout",
+  "textures": {
+    "side": "computercraft:block/mv_case",
+    "front": "computercraft:block/mv_case",
+    "back": "computercraft:block/mv_case_pattern",
+    "top": "computercraft:block/mv_case",
+    "overlay": "computercraft:block/disk_drive_front",
+    "status": "computercraft:block/blank"
+  },
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#front"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#back"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#side"},
+				"down": {"uv": [16, 0, 0, 16], "rotation": 270, "texture": "#side"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16.05],
+			"faces": {
+		"north": {"uv": [0, 0, 16, 16], "texture": "#overlay"}
+				}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16.1],
+			"faces": {
+		"north": {"uv": [0, 0, 16, 16], "texture": "#status"}
+				}
+		}
+	]
+}

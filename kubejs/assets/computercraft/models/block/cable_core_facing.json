@@ -1,0 +1,36 @@
+{
+	"credit": "End_Rage waz here",
+	"parent": "block/block",
+	"textures": {
+		"end": "computercraft:block/cable_core",
+		"glow": "computercraft:block/cable_core_glow",
+		"particle": "computercraft:block/cable_side"
+	},
+	"elements": [
+		{
+			"from": [6, 6, 6],
+			"to": [10, 10, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 4], "texture": "#end"},
+				"east": {"uv": [4, 0, 8, 4], "texture": "#end"},
+				"south": {"uv": [0, 0, 4, 4], "texture": "#end"},
+				"west": {"uv": [4, 0, 8, 4], "texture": "#end"},
+				"up": {"uv": [4, 0, 8, 4], "rotation": 90, "texture": "#end"},
+				"down": {"uv": [4, 0, 8, 4], "rotation": 90, "texture": "#end"}
+			}
+		},
+		{
+			"from": [5.99, 5.99, 5.99],
+			"to": [10.01, 10.01, 10.01],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 4], "texture": "#glow"},
+				"east": {"uv": [4, 0, 8, 4], "texture": "#glow"},
+				"south": {"uv": [0, 0, 4, 4], "texture": "#glow"},
+				"west": {"uv": [4, 0, 8, 4], "texture": "#glow"},
+				"up": {"uv": [4, 0, 8, 4], "rotation": 90, "texture": "#glow"},
+				"down": {"uv": [4, 0, 8, 4], "rotation": 90, "texture": "#glow"}
+			
+			}
+		}
+		]
+}

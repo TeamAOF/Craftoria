@@ -1,7 +1,7 @@
 {
   "ability": {
     "abilities": {
-      "steal": {
+      "belief": {
         "requiredPoints": 1,
         "requiredLevel": 0,
         "maxLevel": 10,
@@ -12,7 +12,46 @@
             "minThresholdValue": 4.9E-324,
             "maxThresholdValue": 1.7976931348623157E308,
             "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.1
+          },
+          "count": {
+            "minInitialValue": 1.0,
+            "maxInitialValue": 3.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.1
+          },
+          "radius": {
+            "minInitialValue": 3.0,
+            "maxInitialValue": 6.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
             "upgradeModifier": 0.2
+          },
+          "capacity": {
+            "minInitialValue": 8.0,
+            "maxInitialValue": 12.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.2
+          }
+        }
+      },
+      "repentance": {
+        "requiredPoints": 1,
+        "requiredLevel": 5,
+        "maxLevel": 10,
+        "stats": {
+          "damage": {
+            "minInitialValue": 0.1,
+            "maxInitialValue": 0.2,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.1
           },
           "radius": {
             "minInitialValue": 2.0,
@@ -20,7 +59,22 @@
             "minThresholdValue": 4.9E-324,
             "maxThresholdValue": 1.7976931348623157E308,
             "upgradeOperation": "MULTIPLY_BASE",
-            "upgradeModifier": 0.25
+            "upgradeModifier": 0.15
+          }
+        }
+      },
+      "blessing": {
+        "requiredPoints": 2,
+        "requiredLevel": 10,
+        "maxLevel": 5,
+        "stats": {
+          "consumption": {
+            "minInitialValue": 8.0,
+            "maxInitialValue": 6.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "ADD",
+            "upgradeModifier": -1.0
           }
         }
       }
