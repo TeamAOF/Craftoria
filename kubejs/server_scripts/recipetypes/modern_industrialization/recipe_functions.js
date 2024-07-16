@@ -297,14 +297,21 @@ function makeRecipeID(recipe) {
   let inputString = "with_";
   if (recipe.fluid_inputs !== undefined && recipe.fluid_inputs.length > 0) {
     recipe.fluid_inputs.forEach((input, index) => {
-      inputString += input.fluid.split(":")[1];
+      if (input.fluid !== undefined)
+        inputString += input.fluid.split(":")[1];
+      else
+        inputString += input.tag.split(":")[1];
       if (index < recipe.fluid_inputs.length - 1) {
         inputString += "_";
       }
     });
   } else {
     recipe.item_inputs.forEach((input, index) => {
-      inputString += input.item.split(":")[1];
+      if (input.item !== undefined)
+        inputString += input.item.split(":")[1];
+      else
+        inputString += input.tag.split(":")[1];
+
       if (index < recipe.item_inputs.length - 1) {
         inputString += "_";
       }
