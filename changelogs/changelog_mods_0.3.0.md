@@ -24,6 +24,8 @@
 ### Removed
 
   * [Apothic Spawners](https://www.curseforge.com/minecraft/mc-mods/apothic-spawners) (by [Shadows_of_Fire](https://www.curseforge.com/members/Shadows_of_Fire/projects))
+  * [CC: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked) (by [SquidDev](https://www.curseforge.com/members/SquidDev/projects))
+  * [Configured](https://www.curseforge.com/minecraft/mc-mods/configured) (by [MrCrayfish](https://www.curseforge.com/members/MrCrayfish/projects))
   * [Curios API Continuation](https://www.curseforge.com/minecraft/mc-mods/curios-continuation) (by [SSKirillSS](https://www.curseforge.com/members/SSKirillSS/projects))
   * [Towers of the Wild Modded](https://www.curseforge.com/minecraft/mc-mods/towers-of-the-wild-modded) (by [celsiusqc](https://www.curseforge.com/members/celsiusqc/projects))
 

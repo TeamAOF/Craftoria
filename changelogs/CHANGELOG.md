@@ -47,6 +47,8 @@ _NeoForge Loader 21.0.98_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 ### Removed Mods ❌
 
   * [Apothic Spawners](https://www.curseforge.com/minecraft/mc-mods/apothic-spawners) (Issues with KubeJS)
+  * [CC: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked) (Returning later)
+  * [Configured](https://www.curseforge.com/minecraft/mc-mods/configured)
   * [Curios API Continuation](https://www.curseforge.com/minecraft/mc-mods/curios-continuation) (Replaced by Accessories)
   * [Towers of the Wild Modded](https://www.curseforge.com/minecraft/mc-mods/towers-of-the-wild-modded)
 ---
