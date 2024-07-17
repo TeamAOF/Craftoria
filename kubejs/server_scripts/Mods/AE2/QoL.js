@@ -33,6 +33,11 @@ ServerEvents.recipes(event => {
   exAssembler(event, ["minecraft:lava", 100], [["ae2:charged_certus_quartz_crystal", 4], ["#c:ingots/iron", 4], ["ae2:sky_stone_block", 4]], ["megacells:sky_steel_ingot", 8]);
   exAssembler(event, ["minecraft:lava", 100], [["ae2:charged_certus_quartz_crystal", 4], ["#c:ingots/copper", 4], ["ae2:sky_stone_block", 4]], ["megacells:sky_bronze_ingot", 8]);
   exAssembler(event, ["minecraft:lava", 100], [["ae2:charged_certus_quartz_crystal", 4], ["#c:ingots/osmium", 4], ["ae2:sky_stone_block", 4]], ["megacells:sky_osmium_ingot", 8]);
+  miPacker(event, [["megacells:sky_steel_ingot", 1], ["megacells:accumulation_processor_press", 1, 0]], ["megacells:printed_accumulation_processor", 1], 8, 200);
+  miAssembler(event, ["modern_industrialization:molten_redstone", 90], [["megacells:printed_accumulation_processor", 1], ["ae2:printed_silicon", 1]], ["megacells:accumulation_processor", 1], 8, 200);
+  miMixer(event, ["minecraft:lava", 1000, 0], [["ae2:charged_certus_quartz_crystal", 1], ["c:ingots/iron", 1], ["ae2:sky_stone_block", 1]], null, ["megacells:sky_steel_ingot", 2], 8, 100);
+  miMixer(event, ["minecraft:lava", 1000, 0], [["ae2:charged_certus_quartz_crystal", 1], ["c:ingots/copper", 1], ["ae2:sky_stone_block", 1]], null, ["megacells:sky_bronze_ingot", 2], 8, 100);
+  miMixer(event, ["minecraft:lava", 1000, 0], [["ae2:charged_certus_quartz_crystal", 1], ["c:ingots/osmium", 1], ["ae2:sky_stone_block", 1]], null, ["megacells:sky_osmium_ingot", 2], 8, 100);
 
   //AE2 compat
   event.custom({
