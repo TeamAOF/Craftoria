@@ -28,4 +28,6 @@ ServerEvents.recipes(event => {
 
   event.remove({ id: "modern_industrialization:materials/silicon/unpacker/ingot" });
   miUnpacker(event, ["modern_industrialization:silicon_block", 1], ["modern_industrialization:silicon_ingot", 9], 2, 100);
+
+  exAssembler(event, null, [["appflux:printed_energy_processor", 4], ["ae2:printed_silicon", 4], ["#c:dusts/redstone", 4]], ["appflux:energy_processor", 4]);
 });
