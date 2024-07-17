@@ -30,4 +30,25 @@ ServerEvents.recipes(event => {
   miUnpacker(event, ["modern_industrialization:silicon_block", 1], ["modern_industrialization:silicon_ingot", 9], 2, 100);
 
   exAssembler(event, null, [["appflux:printed_energy_processor", 4], ["ae2:printed_silicon", 4], ["#c:dusts/redstone", 4]], ["appflux:energy_processor", 4]);
+
+  event.remove({ output: "extendedae:circuit_cutter" });
+  exAssembler(event, null, [
+    ["extendedae:machine_frame", 1],
+    ["ae2:engineering_processor", 8],
+    ["ae2:calculation_processor_press", 1],
+    ["ae2:engineering_processor_press", 1],
+    ["ae2:logic_processor_press", 1],
+    ["ae2:silicon_press", 1],
+    ["extendedae:concurrent_processor_press", 1],
+    ["megacells:accumulation_processor_press", 1],
+    ["minecraft:stonecutter", 1]
+  ], ["extendedae:circuit_cutter", 1]);
+
+  exCutter(event, ["#c:storage_blocks/sky_steel", 1], ["megacells:printed_accumulation_processor", 9]);
+  exCutter(event, ["appflux:charged_redstone", 9], ["appflux:printed_energy_processor", 9]);
+
+  exAssembler(event, null, [["megacells:printed_accumulation_processor", 4], ["ae2:printed_silicon", 4], ["#c:dusts/fluix", 4]], ["megacells:accumulation_processor", 4]);
+  exAssembler(event, ["minecraft:lava", 100], [["ae2:charged_certus_quartz_crystal", 4], ["#c:ingots/iron", 4], ["ae2:sky_stone_block", 4]], ["megacells:sky_steel_ingot", 8]);
+  exAssembler(event, ["minecraft:lava", 100], [["ae2:charged_certus_quartz_crystal", 4], ["#c:ingots/copper", 4], ["ae2:sky_stone_block", 4]], ["megacells:sky_bronze_ingot", 8]);
+  exAssembler(event, ["minecraft:lava", 100], [["ae2:charged_certus_quartz_crystal", 4], ["#c:ingots/osmium", 4], ["ae2:sky_stone_block", 4]], ["megacells:sky_osmium_ingot", 8]);
 });
