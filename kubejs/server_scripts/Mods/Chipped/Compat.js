@@ -6,7 +6,7 @@ ServerEvents.tags("item", e => {
     tag = tag.toString();
     if (tag.includes("chipped")) {
       chippedTags.push(tag);
-      console.info(`Processing tag: ${tag}`);
+      //console.info(`Processing tag: ${tag}`);
     }
   });
 
