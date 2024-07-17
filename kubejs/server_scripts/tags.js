@@ -8,4 +8,17 @@ ServerEvents.tags("item", e => {
 
 ServerEvents.tags("block", e => {
   e.add("ftbchunks:interact_whitelist", ["@waystones"]);
+
+  e.add("minecraft:mineable/pickaxe", [
+    "#c:glass_blocks",
+    "#c:glass_panes",
+    "#chipped:glowstone",
+    /^mekanism:(basic|advanced|elite|ultimate)_(universal_cable|mechanical_pipe|pressurized_tube|logistical_transporter|thermodynamic_conductor)$/,
+    "mekanism:diversion_transporter",
+    "mekanism:restrictive_transporter",
+  ]);
+
+  e.add("minecraft:mineable/axe", [
+    "mekanism:cardboard_box",
+  ]);
 });

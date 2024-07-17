@@ -32,6 +32,9 @@ ServerEvents.tags("item", e => {
 
         if (!tags.includes(`c:${type}s/${material}`)) {
           tags.push(`c:${type}s/${material}`);
+
+          if (type === "raw_material")
+            tags.push(`c:storage_blocks/raw_${material}`);
         }
       });
     };
@@ -66,6 +69,19 @@ ServerEvents.tags("item", e => {
 });
 
 ServerEvents.recipes(e => {
+  // Had to wrap this in a try-catch block or else it would throw an error. Even though it works.
+  // Happens with just KubeJS + Rhino with just event.replaceInput({}, "minecraft:stick", "minecraft:stick");
+  let tryReplaceInput = (replace, replaceWith) => {
+    try {
+      e.replaceInput({}, replace, replaceWith);
+    } catch (e) {
+      if (debug === 2)
+        console.error(`Failed to replace ${replace} with ${replaceWith}: ${e}`);
+    }
+    if (debug === 2)
+      console.info(`Replaced ${replace} with ${replaceWith}`);
+  };
+
   let idRemovals = [
     "mffs:steel_compound",
   ];
@@ -93,7 +109,7 @@ ServerEvents.recipes(e => {
       default:
         if (ifExists(mod, material, type, false)) {
           e.replaceOutput({}, `#c:${type}s/${material}`, `${mod}:${material}_${type}`);
-          e.replaceInput({}, `#c:${type}s/${material}`, `#c:${type}s/${material}`);
+          tryReplaceInput(`#c:${type}s/${material}`, `#c:${type}s/${material}`);
           if (debug === 2) console.info(`Replaced #c:${type}s/${material}, with ${mod}:${material}_${type}`);
           unified.push(`${material}_${type}`);
         } else
@@ -103,16 +119,17 @@ ServerEvents.recipes(e => {
 
   let replaceBlock = (material, mod) => {
     e.replaceOutput({}, `#c:storage_blocks/${material}`, `${mod}:${material}_block`);
-    e.replaceInput({}, `#c:storage_blocks/${material}`, `#c:storage_blocks/${material}`);
+    tryReplaceInput(`#c:storage_blocks/${material}`, `#c:storage_blocks/${material}`);
     if (debug === 2) console.info(`Replaced #c:storage_blocks/${material}, with ${mod}:${material}_block`);
     unified.push(`${material}_block`);
   };
 
   let replaceRaw = (material, mod) => {
     e.replaceOutput({}, `#c:raw_materials/${material}`, `${mod}:raw_${material}`);
-    e.replaceInput({}, `#c:raw_materials/${material}`, `#c:raw_materials/${material}`);
+    tryReplaceInput(`#c:raw_materials/${material}`, `#c:raw_materials/${material}`);
 
     e.replaceOutput({}, `#c:storage_blocks/raw_${material}`, `${mod}:raw_${material}_block`);
+    tryReplaceInput(`#c:storage_blocks/raw_${material}`, `#c:storage_blocks/raw_${material}`);
     if (debug === 2) console.info(`Replaced #c:raw_materials/${material}, with ${mod}:raw_${material}`);
     unified.push(`${material}_raw`);
   };
