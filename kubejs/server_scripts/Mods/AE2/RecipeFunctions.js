@@ -128,3 +128,55 @@ let exFixer = (event, fuel, input, output, chance) => {
 
   event.custom(recipe).id(recipeID);
 };
+
+/**
+ * @author WhitePhantom
+ * @description AE2 Inscriber recipe
+ * @param {object} event The event object, usually `event`. Required.
+ * @param {String} iType The inscriber type. inscribe or press. Required.
+ * @param {String} middle The middle item. Required.
+ * @param {String} top The top item. Optional.
+ * @param {String} bottom The bottom item. Optional.
+ * @param {Array} output The output item, [item, amount]. Required.
+ */
+let ae2Inscriber = (event, iType, middle, top, bottom, output) => {
+  let recipe = {
+    type: `ae2:inscriber`,
+    mode: iType,
+    ingredients: {
+      middle: {}
+    },
+    result: {}
+  };
+
+  if (middle.includes("#")) {
+    recipe.ingredients.middle = { tag: middle.replace("#", "") };
+  } else {
+    recipe.ingredients.middle = { item: middle };
+  }
+
+  if (top) {
+    if (top.includes("#")) {
+      recipe.ingredients.top = { tag: top.replace("#", "") };
+    } else {
+      recipe.ingredients.top = { item: top };
+    }
+  }
+
+  if (bottom) {
+    if (bottom.includes("#")) {
+      recipe.ingredients.bottom = { tag: bottom.replace("#", "") };
+    } else {
+      recipe.ingredients.bottom = { item: bottom };
+    }
+  }
+
+  recipe.result = {
+    id: output[0],
+    count: output[1]
+  };
+
+  let recipeID = ae2GenRecipeID(output, iType);
+
+  event.custom(recipe).id(recipeID);
+};
