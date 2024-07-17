@@ -176,7 +176,7 @@ let ae2Inscriber = (event, iType, middle, top, bottom, output) => {
     count: output[1]
   };
 
-  let recipeID = ae2GenRecipeID(output, iType);
+  let recipeID = ae2GenRecipeID(output[0], iType);
 
   event.custom(recipe).id(recipeID);
 };
