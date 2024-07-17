@@ -33,6 +33,7 @@ ServerEvents.recipes((event) => {
   };
 
   for (let [old, replacement] in deprecatedItems) {
+    event.remove({ output: old });
     event.shapeless(replacement, [old]).id(`craftoria:deprecated/${old.replace(":", "_")}_to_${replacement.replace(":", "_")}`);
   }
 
