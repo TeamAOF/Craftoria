@@ -31,16 +31,21 @@ ServerEvents.recipes(event => {
 
   exAssembler(event, null, [["appflux:printed_energy_processor", 4], ["ae2:printed_silicon", 4], ["#c:dusts/redstone", 4]], ["appflux:energy_processor", 4]);
 
-  event.remove({ output: "extendedae:circuit_cutter" });
   exAssembler(event, null, [
-    ["extendedae:machine_frame", 1],
-    ["ae2:engineering_processor", 8],
     ["ae2:calculation_processor_press", 1],
     ["ae2:engineering_processor_press", 1],
     ["ae2:logic_processor_press", 1],
     ["ae2:silicon_press", 1],
     ["extendedae:concurrent_processor_press", 1],
     ["megacells:accumulation_processor_press", 1],
+    ["appflux:energy_processor_press", 1]
+  ], ["craftoria:universal_press", 1]);
+
+  event.remove({ output: "extendedae:circuit_cutter" });
+  exAssembler(event, null, [
+    ["extendedae:machine_frame", 1],
+    ["ae2:engineering_processor", 8],
+    ["craftoria:universal_press", 1],
     ["minecraft:stonecutter", 1]
   ], ["extendedae:circuit_cutter", 1]);
 

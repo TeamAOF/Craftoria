@@ -2,6 +2,11 @@
 
 //This file contains functions for making recipes for AE2 and its addons.
 
+let ae2GenRecipeID = (name, type) => {
+  name = name.split(":")[1];
+  return `craftoria:ae2/${type}/${name}`;
+};
+
 /**
  * @author WhitePhantom
  * @description ExtendedAE Crystal Assembler recipe
@@ -59,7 +64,9 @@ let exAssembler = (event, iFluid, iInput, iOutput) => {
     count: iOutput[1]
   };
 
-  event.custom(recipe);
+  let recipeID = ae2GenRecipeID(iOutput[0], "assembler");
+
+  event.custom(recipe).id(recipeID);
 };
 
 /**
@@ -88,7 +95,9 @@ let exCutter = (event, iInput, iOutput) => {
     recipe.input.ingredient.item = iInput[0];
   }
 
-  event.custom(recipe);
+  let recipeID = ae2GenRecipeID(iOutput[0], "cutter");
+
+  event.custom(recipe).id(recipeID);
 };
 
 /**
@@ -115,5 +124,7 @@ let exFixer = (event, fuel, input, output, chance) => {
     recipe.fuel.ingredient.item = fuel;
   }
 
-  event.custom(recipe);
+  let recipeID = ae2GenRecipeID(output, "fixer");
+
+  event.custom(recipe).id(recipeID);
 };

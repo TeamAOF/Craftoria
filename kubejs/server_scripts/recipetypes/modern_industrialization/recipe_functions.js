@@ -13,7 +13,7 @@
  * @param {Object} recipe The recipe object to add the item inputs to
  * @param {Number} maxInputs The maximum number of inputs allowed
  */
-let processItemInputs = (itemInputs, recipe, maxInputs) => {
+let miProcessItemInputs = (itemInputs, recipe, maxInputs) => {
   if (itemInputs) {
     if (Array.isArray(itemInputs)) {
       if (!recipe.item_inputs) {
@@ -87,7 +87,7 @@ let processItemInputs = (itemInputs, recipe, maxInputs) => {
  * @param {Object} recipe The recipe object to add the item outputs to
  * @param {Number} maxOutputs The maximum number of outputs allowed
  */
-let processItemOutputs = (itemOutputs, recipe, maxOutputs) => {
+let miProcessItemOutputs = (itemOutputs, recipe, maxOutputs) => {
   if (itemOutputs) {
     if (Array.isArray(itemOutputs)) {
       if (!recipe.item_outputs) {
@@ -151,7 +151,7 @@ let processItemOutputs = (itemOutputs, recipe, maxOutputs) => {
  * @param {Object} recipe The recipe object to add the fluid inputs to
  * @param {Number} maxInputs The maximum number of inputs allowed
  */
-let processFluidInputs = (fluidInputs, recipe, maxInputs) => {
+let miProcessFluidInputs = (fluidInputs, recipe, maxInputs) => {
   if (fluidInputs) {
     if (Array.isArray(fluidInputs)) {
       if (!recipe.fluid_inputs) {
@@ -226,7 +226,7 @@ let processFluidInputs = (fluidInputs, recipe, maxInputs) => {
  * @param {Object} recipe The recipe object to add the fluid outputs to
  * @param {Number} maxOutputs The maximum number of outputs allowed
  */
-let processFluidOutputs = (fluidOutputs, recipe, maxOutputs) => {
+let miProcessFluidOutputs = (fluidOutputs, recipe, maxOutputs) => {
   if (fluidOutputs) {
     if (Array.isArray(fluidOutputs)) {
       if (!recipe.fluid_outputs) {
@@ -290,7 +290,7 @@ let processFluidOutputs = (fluidOutputs, recipe, maxOutputs) => {
  * @param {Object} recipe The recipe object where inputs and outputs are pulled from.
  * @returns {String} The generated recipe ID.
  */
-function makeRecipeID(recipe) {
+function miGenRecipeID(recipe) {
   let output = recipe.item_outputs[0];
   let outputString = output.item.split(":")[1] + "_" + output.amount + "x";
 
@@ -342,12 +342,12 @@ let miAssembler = (event, fluidInputs, itemInputs, itemOutputs, eu, duration) =>
     item_outputs: []
   };
 
-  processFluidInputs(fluidInputs, recipe, 2);
+  miProcessFluidInputs(fluidInputs, recipe, 2);
 
-  processItemInputs(itemInputs, recipe, 9);
-  processItemOutputs(itemOutputs, recipe, 3);
+  miProcessItemInputs(itemInputs, recipe, 9);
+  miProcessItemOutputs(itemOutputs, recipe, 3);
 
-  let recipeID = makeRecipeID(recipe);
+  let recipeID = miGenRecipeID(recipe);
 
   event.custom(recipe).id(`craftoria:modern_industrialization/assembler/${recipeID}`);
 };
@@ -374,13 +374,13 @@ let miElectrolyzer = (event, fluidInput, itemInput, fluidOutputs, itemOutputs, e
     item_outputs: []
   };
 
-  processFluidInputs(fluidInput, recipe, 1);
-  processFluidOutputs(fluidOutputs, recipe, 4);
+  miProcessFluidInputs(fluidInput, recipe, 1);
+  miProcessFluidOutputs(fluidOutputs, recipe, 4);
 
-  processItemInputs(itemInput, recipe, 1);
-  processItemOutputs(itemOutputs, recipe, 4);
+  miProcessItemInputs(itemInput, recipe, 1);
+  miProcessItemOutputs(itemOutputs, recipe, 4);
 
-  let recipeID = makeRecipeID(recipe);
+  let recipeID = miGenRecipeID(recipe);
 
   event.custom(recipe).id(`craftoria:modern_industrialization/electrolyzer/${recipeID}`);
 };
@@ -403,10 +403,10 @@ let miPacker = (event, itemInputs, itemOutput, eu, duration) => {
     item_outputs: []
   };
 
-  processItemInputs(itemInputs, recipe, 3);
-  processItemOutputs([itemOutput], recipe, 1);
+  miProcessItemInputs(itemInputs, recipe, 3);
+  miProcessItemOutputs([itemOutput], recipe, 1);
 
-  let recipeID = makeRecipeID(recipe);
+  let recipeID = miGenRecipeID(recipe);
 
   event.custom(recipe).id(`craftoria:modern_industrialization/packer/${recipeID}`);
 };
@@ -429,10 +429,10 @@ let miUnpacker = (event, itemInput, itemOutputs, eu, duration) => {
     item_outputs: []
   };
 
-  processItemInputs([itemInput], recipe, 1);
-  processItemOutputs(itemOutputs, recipe, 2);
+  miProcessItemInputs([itemInput], recipe, 1);
+  miProcessItemOutputs(itemOutputs, recipe, 2);
 
-  let recipeID = makeRecipeID(recipe);
+  let recipeID = miGenRecipeID(recipe);
 
   event.custom(recipe).id(`craftoria:modern_industrialization/unpacker/${recipeID}`);
 };
@@ -459,13 +459,13 @@ let miMixer = (event, fluidInputs, itemInputs, fluidOutputs, itemOutputs, eu, du
     item_outputs: []
   };
 
-  processFluidInputs(fluidInputs, recipe, 2);
-  processFluidOutputs(fluidOutputs, recipe, 2);
+  miProcessFluidInputs(fluidInputs, recipe, 2);
+  miProcessFluidOutputs(fluidOutputs, recipe, 2);
 
-  processItemInputs(itemInputs, recipe, 4);
-  processItemOutputs(itemOutputs, recipe, 2);
+  miProcessItemInputs(itemInputs, recipe, 4);
+  miProcessItemOutputs(itemOutputs, recipe, 2);
 
-  let recipeID = makeRecipeID(recipe);
+  let recipeID = miGenRecipeID(recipe);
 
   event.custom(recipe).id(`craftoria:modern_industrialization/mixer/${recipeID}`);
 };
@@ -492,13 +492,13 @@ let miChemicalReactor = (event, fluidInputs, itemInputs, fluidOutputs, itemOutpu
     item_outputs: []
   };
 
-  processFluidInputs(fluidInputs, recipe, 3);
-  processFluidOutputs(fluidOutputs, recipe, 3);
+  miProcessFluidInputs(fluidInputs, recipe, 3);
+  miProcessFluidOutputs(fluidOutputs, recipe, 3);
 
-  processItemInputs(itemInputs, recipe, 3);
-  processItemOutputs(itemOutputs, recipe, 3);
+  miProcessItemInputs(itemInputs, recipe, 3);
+  miProcessItemOutputs(itemOutputs, recipe, 3);
 
-  let recipeID = makeRecipeID(recipe);
+  let recipeID = miGenRecipeID(recipe);
 
   event.custom(recipe).id(`craftoria:modern_industrialization/chemical_reactor/${recipeID}`);
 };
@@ -523,11 +523,11 @@ let miCuttingMachine = (event, fluidInput, itemInput, itemOutput, eu, duration) 
     item_outputs: []
   };
 
-  processFluidInputs(fluidInput, recipe, 1);
-  processItemInputs(itemInput, recipe, 1);
-  processItemOutputs(itemOutput, recipe, 1);
+  miProcessFluidInputs(fluidInput, recipe, 1);
+  miProcessItemInputs(itemInput, recipe, 1);
+  miProcessItemOutputs(itemOutput, recipe, 1);
 
-  let recipeID = makeRecipeID(recipe);
+  let recipeID = miGenRecipeID(recipe);
 
   event.custom(recipe).id(`craftoria:modern_industrialization/cutting_machine/${recipeID}`);
 };
@@ -550,10 +550,10 @@ let miCompressor = (event, itemInput, itemOutput, eu, duration) => {
     item_outputs: []
   };
 
-  processItemInputs(itemInput, recipe, 1);
-  processItemOutputs(itemOutput, recipe, 1);
+  miProcessItemInputs(itemInput, recipe, 1);
+  miProcessItemOutputs(itemOutput, recipe, 1);
 
-  let recipeID = makeRecipeID(recipe);
+  let recipeID = miGenRecipeID(recipe);
 
   event.custom(recipe).id(`craftoria:modern_industrialization/compressor/${recipeID}`);
 };
@@ -576,10 +576,10 @@ let miMacerator = (event, itemInput, itemOutputs, eu, duration) => {
     item_outputs: []
   };
 
-  processItemInputs(itemInput, recipe, 1);
-  processItemOutputs(itemOutputs, recipe, 4);
+  miProcessItemInputs(itemInput, recipe, 1);
+  miProcessItemOutputs(itemOutputs, recipe, 4);
 
-  let recipeID = makeRecipeID(recipe);
+  let recipeID = miGenRecipeID(recipe);
 
   event.custom(recipe).id(`craftoria:modern_industrialization/macerator/${recipeID}`);
 };
@@ -606,13 +606,13 @@ let miCentrifuge = (event, fluidInput, itemInput, fluidOutputs, itemOutputs, eu,
     item_outputs: []
   };
 
-  processFluidInputs(fluidInput, recipe, 1);
-  processFluidOutputs(fluidOutputs, recipe, 4);
+  miProcessFluidInputs(fluidInput, recipe, 1);
+  miProcessFluidOutputs(fluidOutputs, recipe, 4);
 
-  processItemInputs(itemInput, recipe, 1);
-  processItemOutputs(itemOutputs, recipe, 4);
+  miProcessItemInputs(itemInput, recipe, 1);
+  miProcessItemOutputs(itemOutputs, recipe, 4);
 
-  let recipeID = makeRecipeID(recipe);
+  let recipeID = miGenRecipeID(recipe);
 
   event.custom(recipe).id(`craftoria:modern_industrialization/centrifuge/${recipeID}`);
 };
@@ -635,10 +635,10 @@ let miPolarizer = (event, itemInputs, itemOutput, eu, duration) => {
     item_outputs: []
   };
 
-  processItemInputs(itemInputs, recipe, 2);
-  processItemOutputs(itemOutput, recipe, 1);
+  miProcessItemInputs(itemInputs, recipe, 2);
+  miProcessItemOutputs(itemOutput, recipe, 1);
 
-  let recipeID = makeRecipeID(recipe);
+  let recipeID = miGenRecipeID(recipe);
 
   event.custom(recipe).id(`craftoria:modern_industrialization/polarizer/${recipeID}`);
 };
