@@ -4,4 +4,7 @@ noStartupMessagesEnabled = true
 noStartupMessagesMessages = ["This game is using an alpha build of Ender IO"]
 #Disable recipe advancements
 disableRecipeAdvancements = true
-
+#Enable startup ding sound
+enableDingDongStartupSound = true
+#Name of sound to play. Default is entity.experience_orb.pickup
+dingDongSound = "entity.experience_orb.pickup"

@@ -1,0 +1,44 @@
+[Smoke]
+	#Default smoke color in ARGB (Alpha, Red, Green, Blue) hex format (0xaarrggbb)
+	defaultColor = -1
+	#Maximum smoke particles amount per chimney
+	#Range: 1 ~ 100
+	maxAmount = 16
+	#Maximum smoke blow out distance
+	#Range: 0.0 ~ 20.0
+	maxIntencity = 4.0
+	#Maximum smoke particles scale
+	#Range: 1.0 ~ 10.0
+	maxScale = 2.5
+	#Maximum smoke particles render distance
+	#Range: 16 ~ 256
+	maxRenderDistance = 128
+	#Whether to replace vanilla smoke particles from a campfire or not
+	replaceVanillaCampfireSmoke = true
+
+[Painting]
+	#These settings are shared between several mods and therefore located in forgeendertech-common.toml
+	"whereAreTheSettings?" = ["I've read the hint and understood"]
+
+[Pipe]
+	#Number of pipes that can be placed(when holding pipe items in both hands) / broken(when crouching) at once
+	#Range: 1 ~ 128
+	maxPipesAtOnce = 8
+
+[Vent]
+	#These settings are shared between several mods and therefore located in forgeendertech-common.toml
+	"whereAreTheSettings?" = ["I've read the hint and understood"]
+
+[Pump]
+	#If set to True, the redstone signal will turn the pump off instead of turning it on
+	invertedRedstoneSignal = false
+
+	[Pump.ForgeEnergy]
+		#Whether Forge Energy is required or not
+		enabled = false
+		#Maximum amount of energy that can be held
+		#Range: 0 ~ 100000
+		capacity = 10000
+		#Amount of energy consumed per operation or second
+		#Range: 0 ~ 1000
+		consumption = 50

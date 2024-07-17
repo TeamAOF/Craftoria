@@ -1,3 +1,56 @@
+## Craftoria | v0.3.0
+
+_NeoForge Loader 21.0.81_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.3.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.3.0.md)_
+
+### Changes/Improvements ⭐
+
+* Disabled item scrolling in IPN, already a feature in Mouse Tweaks.
+
+### Bug Fixes 🪲
+
+* Fixed an issue when equipping certain relics would crash the game.
+
+### Recipes 🪵
+**(BIG thanks to Phantom for these additions)**
+
+* Added Chisel blocks recipes to Chipped workbenches.
+* Added some ExAE recipes in MI/Mek machines.
+* Added Energy Processors in Crystal Assembler.
+* Added blocks to minecraft:mineable/<tool> tags (glass/glowstone, some others).
+* Changed the Graphite Bar recipe to use dusts (charcoal, coal & lignite).
+* Added Megacells recipes in MI/ExAE machines.
+* Added an Universal Press for ExAE cutter.
+* Added a NBT clear recipe for LaserIO chem card(works the same as other nbt clears for cards from the mod)
+* Remove/Hide BiggerAE2 item cell and Megacells Interface/Pattern Provider.
+* New Replicator recipe.  
+![](https://i.imgur.com/JRP5wlE.png)
+
+### Added Mods ✅
+
+  * [Accessories](https://www.curseforge.com/minecraft/mc-mods/accessories)
+  * [Applied Mekanistics](https://www.curseforge.com/minecraft/mc-mods/applied-mekanistics)
+  * [Curios Compat Layer for Accessories](https://www.curseforge.com/minecraft/mc-mods/accessories-cc-layer)
+  * [Enderman Overhaul](https://www.curseforge.com/minecraft/mc-mods/enderman-overhaul)
+  * [Extreme Sound Muffler](https://www.curseforge.com/minecraft/mc-mods/extreme-sound-muffler)
+  * [FindMe](https://www.curseforge.com/minecraft/mc-mods/findme)
+  * [FlickerFix](https://www.curseforge.com/minecraft/mc-mods/flickerfix)
+  * [Hyperbox](https://www.curseforge.com/minecraft/mc-mods/hyperbox)
+  * [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap)
+  * [Just Enough Mekanism Multiblocks](https://www.curseforge.com/minecraft/mc-mods/just-enough-mekanism-multiblocks)
+  * [MEGA Cells](https://www.curseforge.com/minecraft/mc-mods/mega-cells)
+  * [More Red](https://www.curseforge.com/minecraft/mc-mods/more-red)
+  * [Pylons](https://www.curseforge.com/minecraft/mc-mods/pylons)
+  * [Raided](https://www.curseforge.com/minecraft/mc-mods/raided)
+  * [Simply Light](https://www.curseforge.com/minecraft/mc-mods/simply-light)
+  * [TrashSlot](https://www.curseforge.com/minecraft/mc-mods/trashslot)
+
+### Removed Mods ❌
+
+  * [Apothic Spawners](https://www.curseforge.com/minecraft/mc-mods/apothic-spawners) (Issues with KubeJS)
+  * [Curios API Continuation](https://www.curseforge.com/minecraft/mc-mods/curios-continuation) (Replaced by Accessories)
+  * [Towers of the Wild Modded](https://www.curseforge.com/minecraft/mc-mods/towers-of-the-wild-modded)
+---
+
 ## Craftoria | v0.2.1
 
 _NeoForge Loader 21.0.81_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.2.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.2.1.md)_

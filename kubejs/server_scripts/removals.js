@@ -6,6 +6,7 @@ ServerEvents.recipes((event) => {
     "occultism:miner/ores/aluminum_ore",
     "occultism:miner/ores/amethyst_ore",
     "occultism:miner/ores/sapphire_ore",
+    "modern_industrialization:electric_age/machine/assembler/replicator"
   ];
 
   const output = [

@@ -1,0 +1,17 @@
+[Smoke]
+	#Affects probability of coloring smoke by chimneys
+	#Range: 0.0 ~ 1.0
+	coloringFactor = 0.1
+	#Maximum smoke particles that can be rendered at scene.
+	#If exceeded, smoke amount will be reduced proportionally for each rendered chimney
+	#Range: 0 ~ 2000
+	maxRenderedParticlesAmount = 800
+	#If true, smoke particles will collide with obstacles
+	canCollide = true
+	#If true, all emitters will produce smoke even without connected chimneys
+	emitWithoutChimney = true
+	#Use vanilla smoke particles for compatibility with some mods.
+	#Limitations: no wind, no coloring, no collisions
+	useVanillaSmokeParticles = false
+	#Whether to colorize smoke particles or not
+	colorize = true
