@@ -1,0 +1,58 @@
+{
+  "parent": "computercraft:block/block_front_back",
+  "render_type": "cutout",
+  "textures": {
+    "side": "computercraft:block/hv_case",
+    "front": "computercraft:block/hv_case",
+    "back": "computercraft:block/hv_case_pattern",
+    "top": "computercraft:block/hv_case",
+    "overlay": "computercraft:block/printer_front_empty",
+    "toppage": "computercraft:block/blank",
+    "botpage": "computercraft:block/blank",
+    "light": "computercraft:block/printer_front_light",
+    "status": "computercraft:block/blank"
+  },
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#front"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#back"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#side"},
+				"down": {"uv": [16, 0, 0, 16], "rotation": 270, "texture": "#side"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16.05],
+			"faces": {
+		"north": {"uv": [0, 0, 16, 16], "texture": "#overlay"}
+				}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16.1],
+			"faces": {
+		"north": {"uv": [0, 0, 16, 16], "texture": "#botpage"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16.1],
+			"faces": {
+		"north": {"uv": [0, 0, 16, 16], "texture": "#toppage"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16.1],
+			"faces": {
+		"north": {"uv": [0, 0, 16, 16], "texture": "#light"}
+				}
+		}
+
+	]
+}

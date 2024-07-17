@@ -1314,35 +1314,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["596057832C440706"]
-			id: "4A00CD832E1D9543"
-			rewards: [
-				{
-					id: "6D8407929D7B8670"
-					item: {
-						count: 1
-						id: "minecraft:gold_block"
-					}
-					type: "item"
-				}
-				{
-					id: "1C031FE105AB23D3"
-					item: {
-						count: 1
-						id: "minecraft:iron_block"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "5CFDC4CACFBBA3F3"
-				item: { count: 1, id: "powah:energized_steel_block" }
-				type: "item"
-			}]
-			x: -2.0d
-			y: -4.0d
-		}
-		{
 			dependencies: ["6DED76B2F4AFD02F"]
 			id: "11FC8E533E897B8F"
 			rewards: [{
@@ -1360,7 +1331,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["4A00CD832E1D9543"]
+			dependencies: ["596057832C440706"]
 			id: "098C3858B4FFCE78"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1373,8 +1344,8 @@
 				item: { count: 1, id: "powah:blazing_crystal_block" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.0d
+			x: -2.0d
+			y: -4.0d
 		}
 	]
 }

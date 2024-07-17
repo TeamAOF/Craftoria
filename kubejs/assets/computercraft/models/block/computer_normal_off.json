@@ -1,0 +1,38 @@
+{
+	"parent": "minecraft:block/orientable",
+    "render_type": "cutout",
+	"textures": {
+		"case": "computercraft:block/mv_case",
+		"case_pattern": "computercraft:block/mv_case_pattern",
+		"overlay": "computercraft:block/computer_normal_front",
+		"glow": "computercraft:block/blank",
+		"particle": "#case"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#case"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#case"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#case_pattern"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#case"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#case"},
+				"down": {"uv": [16, 0, 0, 16], "rotation": 270, "texture": "#case"}
+			}
+		},{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16.01],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#overlay"}
+			}
+		},{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16.05],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#glow"}
+			}
+		}
+
+	]
+}

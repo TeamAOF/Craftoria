@@ -1,3 +1,85 @@
+## Craftoria | v0.2.1
+
+_NeoForge Loader 21.0.81_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.2.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.2.1.md)_
+
+### Added Mods ✅
+
+* [Curios API Continuation](https://www.curseforge.com/minecraft/mc-mods/curios-continuation)
+
+### Removed Mods ❌
+
+* [Accessories](https://www.curseforge.com/minecraft/mc-mods/accessories)
+* [Curios Compat Layer for Accessories](https://www.curseforge.com/minecraft/mc-mods/accessories-cc-layer)
+
+### Bug Fixes 🪲
+
+* Fixed an issue when equipping certain relics would crash the game.
+---
+
+## Craftoria | v0.2.0
+
+_NeoForge Loader 21.0.81_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.2.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.2.0.md)_
+
+### Added Mods ✅
+
+  * [Accessories](https://www.curseforge.com/minecraft/mc-mods/accessories)
+  * [AE2 Blackout](https://www.curseforge.com/minecraft/texture-packs/ae2-blackout)
+  * [Apothic Attributes (AttributesLib)](https://www.curseforge.com/minecraft/mc-mods/apothic-attributes)
+  * [Apothic Spawners](https://www.curseforge.com/minecraft/mc-mods/apothic-spawners)
+  * [Blue Flame Burning](https://www.curseforge.com/minecraft/mc-mods/blueflame)
+  * [Cristel Lib](https://www.curseforge.com/minecraft/mc-mods/cristel-lib)
+  * [Curios Compat Layer for Accessories](https://www.curseforge.com/minecraft/mc-mods/accessories-cc-layer)
+  * [FastWorkbench](https://www.curseforge.com/minecraft/mc-mods/fastworkbench)
+  * [Just Enough Archaeology](https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology)
+  * [LootJS: KubeJS Addon](https://www.curseforge.com/minecraft/mc-mods/lootjs)
+  * [Pave The Way](https://www.curseforge.com/minecraft/mc-mods/pave-the-way)
+  * [Toast Control](https://www.curseforge.com/minecraft/mc-mods/toast-control)
+  * [Towns and Towers](https://www.curseforge.com/minecraft/mc-mods/towns-and-towers)
+
+### Removed Mods ❌
+
+  * [Better Than Bunnies (Forge)](https://www.curseforge.com/minecraft/mc-mods/better-than-bunnies)
+  * [Better Than Llamas (Forge)](https://www.curseforge.com/minecraft/mc-mods/better-than-llamas)
+  * [Curios API Continuation](https://www.curseforge.com/minecraft/mc-mods/curios-continuation)
+  * [Ding (Forge)](https://www.curseforge.com/minecraft/mc-mods/ding)
+  * [Fast IP Ping](https://www.curseforge.com/minecraft/mc-mods/fast-ip-ping)
+  * [iChunUtil](https://www.curseforge.com/minecraft/mc-mods/ichunutil)
+  * [Just Enough Mekanism Multiblocks](https://www.curseforge.com/minecraft/mc-mods/just-enough-mekanism-multiblocks) (Will be readded later)
+  * [No Chat Reports](https://www.curseforge.com/minecraft/mc-mods/no-chat-reports)
+  * [Overloaded Armor Bar](https://www.curseforge.com/minecraft/mc-mods/overloaded-armor-bar) (Will be readded later)
+  * [Polymorph (Fabric/Forge/Quilt)](https://www.curseforge.com/minecraft/mc-mods/polymorph)
+  * [Polymorphic Energistics](https://www.curseforge.com/minecraft/mc-mods/polymorphic-energistics)
+
+### Changes/Improvements ⭐
+
+* New CC: Tweaked textures.
+* New quest book texture.
+* New textures for Toolbelt.
+* Retextured grass, podzol, and mycelium blocks (variations).
+* Retextured crops.
+* Disabled EU tooltips when hovering fuels.
+* Quest chapters now center correctly when opening the GUI.
+* New background for Powah quest chapter.
+* Unified block drops (Uranium, Silver, Lead, Tin & Salt)
+* Disabled all IPN buttons.
+* Removed requirement for obtaining Flawless Budding Block in AE2 quests.
+* Removed Energized Block quest.
+* Disabled V-Sync by default.
+
+### Bug Fixes 🪲
+
+* Fixed an issue where relics couldnt be leveled correctly.
+* Fixed an issue where servers would ping indefinitely.
+* Fixed an issue where armor bars would show when in F1.
+* Fixed an issue where Crafting Station wouldnt drop when broken.
+
+### Recipes 🪵
+
+* Removed unintentional ways of obtaining barriers.
+* New Iron Farm recipe, made harder to craft.  
+![](https://i.imgur.com/tVC6Q8S.png)
+---
+
 ## Craftoria | v0.1.0/0.1.1
 
 _NeoForge Loader 21.0.60_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.1.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.1.0.md)_
