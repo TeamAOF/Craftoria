@@ -177,6 +177,7 @@ ServerEvents.recipes(e => {
     "mekanism:processing/bronze/ingot/from_infusing",
     "mekanism:processing/bronze/dust/from_infusing",
     "mekanism:processing/steel/enriched_iron_to_dust",
+    "mekanism:processing/lapis_lazuli/to_dust",
     "mekanism:reaction/coal_gasification/blocks_coals",
     "mekanism:reaction/coal_gasification/dusts_coals",
     "mekanism:reaction/coal_gasification/coals",
@@ -195,61 +196,43 @@ ServerEvents.recipes(e => {
   injecting(["#mekanism:hydrogen_chloride", 1], ["#c:gunpowders", 1], ["modern_industrialization:sulfur_dust", 1]);
   crystallizing("gas", ["#mekanism:brine", 15], ["modern_industrialization:salt_dust", 1]);
 
-  for (let [material, types] in metals) {
-    types.forEach(type => {
-      if (type === "dust")
-        if (ifExists("modern_industrialization", material, type, false))
-          crush(`#c:ingots/${material}`, `modern_industrialization:${material}_dust`);
-        else
-          logNotFound("modern_industrialization", material, type);
+  [metals, gems].forEach(materials => {
+    materials.forEach(material => {
+      let dust = getItemFromTag(`#c:dusts/${material}`);
+      if (dust) {
+        if (Item.exists(`mekanism:dust_${material}`))
+          e.remove({ type: "mekanism:crushing", output: `mekanism:dust_${material}` });
+        if (checkTagSize(`#c:ingots/${material}`) > 0)
+          crush(`#c:ingots/${material}`, dust);
+        else if (checkTagSize(`#c:gems/${material}`) > 0)
+          crush(`#c:gems/${material}`, dust);
+      }
     });
-  }
-
-  for (let [material, types] in gems) {
-    types.forEach(type => {
-      if (ifExists("modern_industrialization", material, type, false))
-        crush(`#c:gems/${material}`, `modern_industrialization:${material}_dust`);
-      else
-        logNotFound("modern_industrialization", material, type);
-    });
-  }
+  });
 
   crush("minecraft:coal", "modern_industrialization:coal_dust");
 
-  let oreProcessing = (metal, mod) => {
-    enrich(`#c:ores/${metal}`, `${mod}:${metal}_dust`, 1, 2);
-    enrich(`#c:raw_materials/${metal}`, `${mod}:${metal}_dust`, 3, 4);
-    enrich(`#c:storage_blocks/raw_${metal}`, `${mod}:${metal}_dust`, 1, 12);
-    enrich(`#c:dirty_dusts/${metal}`, `${mod}:${metal}_dust`);
-    //console.info(`Added ore processing for ${metal}.`);
+  let oreProcessing = (metal) => {
+    let dust = getItemFromTag(`#c:dusts/${metal}`);
+    if (dust) {
+      if (Item.exists(`mekanism:dust_${metal}`))
+        e.remove({ type: "mekanism:enriching", output: `mekanism:dust_${metal}` });
+      enrich(`#c:ores/${metal}`, dust, 1, 2);
+      enrich(`#c:raw_materials/${metal}`, dust, 3, 4);
+      enrich(`#c:storage_blocks/raw_${metal}`, dust, 1, 12);
+      enrich(`#c:dirty_dusts/${metal}`, dust);
+      if (debug)
+        console.info(`Added ore processing for ${metal}.`);
+    }
   };
 
-  for (let [metal, types] in metals) {
-    oreProcessing(metal, "modern_industrialization");
-  }
+  metals.forEach(metal => {
+    oreProcessing(metal);
+  });
 
   reaction(["#minecraft:water", 1000], ["#mekanism:oxygen", 1000], ["mekanism:hydrogen", 1000], [["#c:storage_blocks/coal", "#c:storage_blocks/charcoal"], 1], ["modern_industrialization:sulfur_dust", 9], 900);
   reaction(["#minecraft:water", 100], ["#mekanism:oxygen", 100], ["mekanism:hydrogen", 100], [["#minecraft:coals"], 1], ["modern_industrialization:sulfur_dust", 1], 100);
   reaction(["#minecraft:water", 100], ["#mekanism:oxygen", 100], ["mekanism:hydrogen", 100], [["#c:dusts/coal", "#c:dusts/charcoal"], 1], ["modern_industrialization:sulfur_dust", 1], 100);
-
-  [
-    "iron",
-    "gold",
-    "copper",
-    "tin",
-    "lead",
-    "uranium",
-    "diamond",
-    "emerald",
-    "lapis_lazuli",
-    "quartz",
-    "coal",
-    "bronze",
-    "steel",
-  ].forEach(material => {
-    e.remove({ type: "mekanism:enriching", output: `mekanism:dust_${material}` });
-    e.remove({ type: "mekanism:crushing", output: `mekanism:dust_${material}` });
-  });
 
   e.remove({ mod: "mekanism", output: "mekanism:block_salt" });
 

@@ -1,44 +1,84 @@
 // Priority: 998
 /**
  * This script is used to unify items from different mods.
- * It will replace items from the #c tag with the first mod that has the item.
+ * It will replace items from the #c tag with the first mod(defined in modPriority) that has the item.
  * For now, @white.phantom signing off.
  */
 
-
-let ifExists = (mod, material, type, reverse) => {
-  let item = `${mod}:${material}_${type}`;
-  if (reverse)
-    item = `${mod}:${type}_${material}`;
-
-  return Item.exists(item);
+let getItemFromTag = (tag) => {
+  try {
+    let items = Ingredient.of(tag).itemIds;
+    if (items.length > 0) {
+      items = sortArray(items.toArray());
+      return items[0];
+    } else
+      return false;
+  } catch (error) {
+    if (debug) console.error(`Could not find item for tag: ${tag}`);
+  }
 };
 
-let logNotFound = (mod, material, type) => {
-  if (debug === 1)
-    console.info(`Could not find ${mod}:${material}_${type} or ${mod}:${type}_${material}, skipping...`);
+let checkTagSize = (tag) => {
+  try {
+    let size = Ingredient.of(tag).itemIds.length;
+    if (debug)
+      console.log(`Found ${size} items for tag: ${tag}`);
+    return size;
+  } catch (error) {
+    if (debug) console.error(`Could not find item for tag: ${tag}`);
+    return 0;
+  }
+};
+
+// Sort the array by modPriority.
+let sortArray = (array) => {
+  return array.sort((a, b) => {
+    a = `${a}`;
+    b = `${b}`;
+    // Sort by modid, prefer mods in the modPriority list. If not in the list, put it at the end.
+    let modA = modPriority.indexOf(a.split(":")[0]);
+    let modB = modPriority.indexOf(b.split(":")[0]);
+    if (modA === -1) modA = modPriority.length;
+    if (modB === -1) modB = modPriority.length;
+
+    if (modA < modB) return -1;
+    if (modA > modB) return 1;
+    return 0;
+  });
 };
 
 ServerEvents.tags("item", e => {
   let tags = [];
-  // This is used to re-order the tags.
-  [metals, gems, misc].forEach(materials => {
-    for (let [material, types] of Object.entries(materials)) {
-      types.forEach(type => {
-        if (type === "raw")
-          type = "raw_material";
-        else if (type === "block")
-          type = "storage_block";
 
-        if (!tags.includes(`c:${type}s/${material}`)) {
-          tags.push(`c:${type}s/${material}`);
-
-          if (type === "raw_material")
-            tags.push(`c:storage_blocks/raw_${material}`);
-        }
-      });
-    };
-  });
+  for (let [material, types] of Object.entries(materials)) {
+    switch (material) {
+      case "metals":
+        metals.forEach(metal => {
+          types.forEach(type => {
+            tags.push(`c:${type}/${metal}`);
+            if (type === "raw_materials") tags.push(`c:storage_blocks/raw_${metal}`);
+          });
+        });
+        break;
+      case "gems":
+        gems.forEach(gem => {
+          types.forEach(type => {
+            tags.push(`c:${type}/${gem}`);
+          });
+        });
+        break;
+      case "misc":
+        misc.forEach(misc => {
+          types.forEach(type => {
+            tags.push(`c:${type}/${misc}`);
+          });
+        });
+        break;
+      default:
+        console.error(`Unknown material: ${material}`);
+        break;
+    }
+  }
 
   tags.forEach(tag => {
     let items = e.get(tag).getObjectIds();
@@ -46,171 +86,60 @@ ServerEvents.tags("item", e => {
     items.forEach(item => {
       sortedItems.push(item);
     });
-    sortedItems = sortedItems.sort((a, b) => {
-      a = `${a}`;
-      b = `${b}`;
-      // Sort by modid, prefer mods in the modPriority list. If not in the list, put it at the end.
-      let modA = modPriority.indexOf(a.split(":")[0]);
-      let modB = modPriority.indexOf(b.split(":")[0]);
-      if (modA === -1) modA = modPriority.length;
-      if (modB === -1) modB = modPriority.length;
-
-      if (modA < modB) return -1;
-      if (modA > modB) return 1;
-      return 0;
-    });
-
-    e.removeAll(tag);
-    sortedItems.forEach(item => {
-      e.add(tag, item);
-      //console.info(`Added ${item} to ${tag}.`);
-    });
+    sortedItems = sortArray(sortedItems);
+    if (Item.exists(sortedItems[0])) {
+      e.removeAll(tag);
+      e.add(tag, sortedItems);
+    }
   });
 });
 
 ServerEvents.recipes(e => {
-  // Had to wrap this in a try-catch block or else it would throw an error. Even though it works.
-  // Happens with just KubeJS + Rhino with just event.replaceInput({}, "minecraft:stick", "minecraft:stick");
-  let tryReplaceInput = (replace, replaceWith) => {
-    try {
-      e.replaceInput({}, replace, replaceWith);
-    } catch (e) {
-      if (debug === 2)
-        console.error(`Failed to replace ${replace} with ${replaceWith}: ${e}`);
-    }
-    if (debug === 2)
-      console.info(`Replaced ${replace} with ${replaceWith}`);
-  };
-
-  let idRemovals = [
+  let yeets = [
     "mffs:steel_compound",
   ];
 
-  idRemovals.forEach(id => {
-    e.remove({ id: id });
+  yeets.forEach(id => {
+    e.remove({ output: id });
   });
 
-  let defaultReplace = (material, type, mod) => {
-    switch (type) {
-      case "block":
-        if (ifExists(mod, material, type, false))
-          replaceBlock(material, mod);
-        else
-          logNotFound(mod, material, type);
-        break;
+  let tryReplace = (replace) => {
+    let replaceWith = getItemFromTag(replace);
+    if (replaceWith) {
+      e.replaceOutput({}, replace, replaceWith);
+      e.replaceInput({}, replace, replace);
+    } else if (debug) {
+      console.error(`Could not find item for tag: ${replace}`);
+    };
+  };
 
-      case "raw":
-        if (ifExists(mod, material, type, true))
-          replaceRaw(material, mod);
-        else
-          logNotFound(mod, material, type);
+  for (let [material, types] of Object.entries(materials)) {
+    switch (material) {
+      case "metals":
+        metals.forEach(metal => {
+          types.forEach(type => {
+            tryReplace(`#c:${type}/${metal}`);
+            if (type === "raw_materials") tryReplace(`#c:storage_blocks/raw_${metal}`);
+          });
+        });
         break;
-
+      case "gems":
+        gems.forEach(gem => {
+          types.forEach(type => {
+            tryReplace(`#c:${type}/${gem}`);
+          });
+        });
+        break;
+      case "misc":
+        misc.forEach(misc => {
+          types.forEach(type => {
+            tryReplace(`#c:${type}/${misc}`);
+          });
+        });
+        break;
       default:
-        if (ifExists(mod, material, type, false)) {
-          e.replaceOutput({}, `#c:${type}s/${material}`, `${mod}:${material}_${type}`);
-          tryReplaceInput(`#c:${type}s/${material}`, `#c:${type}s/${material}`);
-          if (debug === 2) console.info(`Replaced #c:${type}s/${material}, with ${mod}:${material}_${type}`);
-          unified.push(`${material}_${type}`);
-        } else
-          logNotFound(mod, material, type);
-    };
-  };
-
-  let replaceBlock = (material, mod) => {
-    e.replaceOutput({}, `#c:storage_blocks/${material}`, `${mod}:${material}_block`);
-    tryReplaceInput(`#c:storage_blocks/${material}`, `#c:storage_blocks/${material}`);
-    if (debug === 2) console.info(`Replaced #c:storage_blocks/${material}, with ${mod}:${material}_block`);
-    unified.push(`${material}_block`);
-  };
-
-  let replaceRaw = (material, mod) => {
-    e.replaceOutput({}, `#c:raw_materials/${material}`, `${mod}:raw_${material}`);
-    tryReplaceInput(`#c:raw_materials/${material}`, `#c:raw_materials/${material}`);
-
-    e.replaceOutput({}, `#c:storage_blocks/raw_${material}`, `${mod}:raw_${material}_block`);
-    tryReplaceInput(`#c:storage_blocks/raw_${material}`, `#c:storage_blocks/raw_${material}`);
-    if (debug === 2) console.info(`Replaced #c:raw_materials/${material}, with ${mod}:raw_${material}`);
-    unified.push(`${material}_raw`);
-  };
-
-  let unifyMetal = (material, types) => {
-    types.forEach(type => {
-      if (unified.includes(`${material}_${type}`)) {
-        if (debug === 2) console.info(`Skipping ${material}_${type}, already unified.`);
-        return;
-      }
-
-      modPriority.forEach(mod => {
-        if (mod !== "mekanism")
-          defaultReplace(material, type, mod);
-      });
-    });
-  };
-
-  let unifyGem = (material, types) => {
-    types.forEach(type => {
-      if (unified.includes(`${material}_${type}`)) {
-        if (debug === 2) console.info(`Skipping ${material}_${type}, already unified.`);
-        return;
-      }
-
-      modPriority.forEach(mod => {
-        if (ifExists(mod, material, type, false)) {
-          e.replaceOutput({}, `#c:${type}s/${material}`, `${mod}:${material}_${type}`);
-          if (debug === 2) console.info(`Replaced #c:${type}s/${material}, with ${mod}:${material}_${type}`);
-          unified.push(`${material}_${type}`);
-        } else
-          logNotFound(mod, material, type);
-      });
-    });
-  };
-
-  let unifyMisc = (material, types) => {
-    types.forEach(type => {
-      if (unified.includes(`${material}_${type}`)) {
-        if (debug === 2) console.info(`Skipping ${material}_${type}, already unified.`);
-        return;
-      }
-
-      modPriority.forEach(mod => {
-        if (ifExists(mod, material, type, false)) {
-          e.replaceOutput({}, `#c:${type}s/${material}`, `${mod}:${material}_${type}`);
-          if (debug === 2) console.info(`Replaced #c:${type}s/${material}, with ${mod}:${material}_${type}`);
-          unified.push(`${material}_${type}`);
-        } else
-          logNotFound(mod, material, type);
-      });
-    });
-  };
-
-  [metals, gems, misc].forEach(materials => {
-    for (let [material, types] of Object.entries(materials)) {
-      if (debug === 1) console.info(`Unifying ${material}...`);
-
-      switch (materials) {
-        case metals:
-          unifyMetal(material, types);
-          break;
-        case gems:
-          unifyGem(material, types);
-          break;
-        case misc:
-          unifyMisc(material, types);
-          break;
-        default:
-          console.error(`Unknown material type: ${materials}!`);
-      };
-    };
-  });
-
-  if (debug === 1) {
-    unified.forEach(material => {
-      console.info(`Unified ${material}`);
-    });
-  } else if (debug === 3) {
-    e.recipes.forEach(r => {
-      console.info(r);
-    });
-  };
+        console.error(`Unknown material: ${material}`);
+        break;
+    }
+  }
 });

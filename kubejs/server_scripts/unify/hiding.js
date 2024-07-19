@@ -1,92 +1,47 @@
 RecipeViewerEvents.removeEntries("item", e => {
-  let hide = {
-    "iron": ["mekanism", "occultism"],
-    "gold": ["mekanism", "occultism"],
-    "copper": ["mekanism", "occultism"],
-    "steel": ["mekanism", "mffs"],
-    "bronze": ["mekanism"],
-    "tin": ["mekanism"],
-    "uranium": ["mekanism"],
-    "diamond": ["mekanism", "appflux"],
-    "emerald": ["mekanism", "appflux"],
-    "lapis_lazuli": ["mekanism"],
-    "quartz": ["mekanism"],
-    "coal": ["mekanism"],
-    "lead": ["mekanism"],
-    "silver": ["occultism", "moremekanismprocessing"],
-    "aluminum": ["moremekanismprocessing"],
-    "tungsten": ["moremekanismprocessing"],
-    "titanium": ["moremekanismprocessing"],
-    "platinum": ["moremekanismprocessing"],
-    "nickel": ["moremekanismprocessing"],
-    "iridium": ["moremekanismprocessing"],
-    "obsidian": ["occultism"],
-    "sulfur": ["mekanism"],
-    "ruby": ["moremekanismprocessing"],
+  let hideItemsFromTag = (tag) => {
+    try {
+      let items = Ingredient.of(tag).itemIds;
+      if (items.length > 1) {
+        if (debug)
+          console.log(`Found ${items.length} items for tag: ${tag}`);
+        items = sortArray(items.toArray());
+        let _ = items.shift();
+        e.remove(items);
+      }
+    } catch (error) {
+      if (debug) console.error(`Could not find item for tag: ${tag}`);
+    }
   };
 
-  let types = ["ingot", "block", "dust", "nugget", "ore", "raw"];
-
-  [
-    "mffs:steel_compound",
-  ].forEach(id => {
-    e.remove(id);
-  });
-
-  for (let [key, value] in hide) {
-    value.forEach(mod => {
-      switch (mod) {
-        case "mekanism":
+  for (let [material, types] of Object.entries(materials)) {
+    switch (material) {
+      case "metals":
+        metals.forEach(metal => {
           types.forEach(type => {
-            if (type === "ore") {
-              e.remove(`mekanism:${key}_${type}`);
-              e.remove(`mekanism:deepslate_${key}_${type}`);
-            } else if (type === "raw") {
-              e.remove(`mekanism:${type}_${key}`);
-              e.remove(`${mod}:block_${type}_${key}`);
-            }
-            else
-              e.remove(`${mod}:${type}_${key}`);
+            hideItemsFromTag(`#c:${type}/${metal}`);
           });
-          break;
-
-        case "moremekanismprocessing":
+        });
+        break;
+      case "gems":
+        gems.forEach(gem => {
           types.forEach(type => {
-            if (type !== "dust")
-              e.remove(`${mod}:${key}_${type}`);
-            else
-              e.remove(`${mod}:${type}_${key}`);
+            hideItemsFromTag(`#c:${type}/${gem}`);
           });
-          break;
-        case "occultism":
+        });
+        break;
+      case "misc":
+        misc.forEach(misc => {
           types.forEach(type => {
-            if (type !== "ore") {
-              if (type !== "raw")
-                e.remove(`${mod}:${key}_${type}`);
-              else {
-                e.remove(`${mod}:${type}_${key}`);
-                e.remove(`${mod}:${type}_${key}_block`);
-              }
-            }
+            hideItemsFromTag(`#c:${type}/${misc}`);
           });
-          break;
-        default:
-          types.forEach(type => {
-            if (type === "ore") {
-              e.remove(`${mod}:${key}_${type}`);
-              e.remove(`${mod}:deepslate_${key}_${type}`);
-            }
-            else if (type !== "raw")
-              e.remove(`${mod}:${key}_${type}`);
-            else {
-              e.remove(`${mod}:${type}_${key}`);
-              e.remove(`${mod}:${type}_${key}_block`);
-            }
-          });
-          break;
-      }
-    });
+        });
+        break;
+      default:
+        console.error(`Unknown material: ${material}`);
+        break;
+    }
   }
 
-  e.remove(["mekanism:block_salt", "mekanism:salt"]);
+  e.remove(["mekanism:block_salt", "mffs:steel_compound"]);
 });

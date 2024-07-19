@@ -1,13 +1,6 @@
 //Priority: 999
 
-/**
- * Define the debug variable here.
- * Set to 0 to disable debug logging.
- * Set to 1 for logging which materials got unified. and which ones were not found.
- * Set to 2 for logging which materials got replaced and with what. and which were skipped.
- * Set to 3 for logging all recipe types.
- */
-let debug = 0;
+let debug = false;
 
 /**
  * This file defines the global variables used in the unification scripts.
@@ -22,57 +15,55 @@ let modPriority = [
   "minecraft",
   "modern_industrialization",
   "mekanism",
-  //"moremekanismprocessing",
+  "moremekanismprocessing",
 ];
 
 // Add the materials you want to unify here.
-let metals = {
+let metals = [
   // Non-alloy metals
-  "iron": ["dust"],
-  "gold": ["dust"],
-  "copper": ["dust", "nugget"],
-  "aluminum": ["dust", "nugget", "ingot", "block"],
-  "tin": ["dust", "nugget", "ingot", "block", "raw"],
-  "lead": ["dust", "nugget", "ingot", "block", "raw"],
-  "silver": ["dust", "nugget", "ingot", "block", "raw"],
-  "uranium": ["dust", "nugget", "ingot", "block", "raw"],
-  "nickel": ["dust", "nugget", "ingot", "block", "raw"],
-  "platinum": ["dust", "nugget", "ingot", "block", "raw"],
-  "osmium": ["dust", "nugget", "ingot", "block", "raw"],
-  "tungsten": ["dust", "nugget", "ingot", "block", "raw"],
-  "titanium": ["dust", "nugget", "ingot", "block", "raw"],
-  "iridium": ["dust", "nugget", "ingot", "block", "raw"],
-  "zinc": ["dust", "nugget", "ingot", "block", "raw"],
+  "iron",
+  "gold",
+  "copper",
+  "aluminum",
+  "tin",
+  "lead",
+  "silver",
+  "uranium",
+  "nickel",
+  "platinum",
+  "osmium",
+  "tungsten",
+  "titanium",
+  "iridium",
+  "zinc",
 
   // Alloy metals
-  "bronze": ["dust", "nugget", "ingot", "block"],
-  "steel": ["dust", "nugget", "ingot", "block"],
-  "invar": ["dust", "nugget", "ingot", "block"],
-  "electrum": ["dust", "nugget", "ingot", "block"],
-  "cupronickel": ["dust", "nugget", "ingot", "block"],
-};
+  "bronze",
+  "steel",
+  "invar",
+  "electrum",
+  "cupronickel",
+];
 
-let gems = {
-  "diamond": ["dust"],
-  "emerald": ["dust"],
-  "lapis": ["dust"],
-  "quartz": ["dust"],
-  "coal": ["dust"],
-  "ruby": ["dust"],
-};
+let gems = [
+  "diamond",
+  "emerald",
+  "lapis",
+  "quartz",
+  "coal",
+  "ruby",
+];
 
-let misc = {
-  "sulfur": ["dust"],
-  "salt": ["dust"],
-};
+let misc = [
+  "sulfur",
+  "salt",
+];
 
-// let types = [
-//   "dust",
-//   "nugget",
-//   "ingot",
-//   "storage_block",
-//   "raw",
-// ];
+let materials = {
+  metals: ["dusts", "nuggets", "ingots", "storage_blocks", "raw_materials", "ores"],
+  gems: ["gems", "dusts", "storage_blocks", "ores"],
+  misc: ["dusts"],
+};
 
 // Do not touch this, it will be populated automatically.
 let unified = [];
