@@ -1,3 +1,43 @@
+## Craftoria | v0.4.0
+
+_NeoForge Loader 21.0.111_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.4.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.4.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added fancy text image titles to all quest chapters.
+* New font has been added.
+* Added Replicator quest to MI chapter.
+* Added Quantum gear quest to MI chapter.
+
+### Bug Fixes 🪲
+
+* Fixed Utilitarian recipes erroring until it gets fixed on their end.
+* Fixed pressing the cycle trades button outside a world crashing the game.
+* Fixed issues with page buttons in Expanded Storage containers.
+
+### Recipes 🪵
+
+* Reworked unification script, now takes item ids straight from tags. Fixing many issues it used to have.
+* Fixed occultism reicpes giving barrier blocks.
+
+### Added Mods ✅
+
+  * [Apothic Spawners](https://www.curseforge.com/minecraft/mc-mods/apothic-spawners)
+  * [EMI professions (EMIP)](https://www.curseforge.com/minecraft/mc-mods/emi-professions-emip)
+  * [Hey Berry! SHUT UP](https://www.curseforge.com/minecraft/mc-mods/heyberryshutup)
+  * [Load My F***ing Tags](https://www.curseforge.com/minecraft/mc-mods/lmft)
+  * [Modern Dynamics](https://www.curseforge.com/minecraft/mc-mods/modern-dynamics)
+  * [Slightly Improved Font (32x)](https://www.curseforge.com/minecraft/texture-packs/slightly-improved-font)
+  * [Tank Storage](https://www.curseforge.com/minecraft/mc-mods/tank-storage)
+
+### Removed Mods ❌
+
+  * [Extreme Reactors](https://www.curseforge.com/minecraft/mc-mods/extreme-reactors) (Waiting for Bigger Reactors)
+  * [Just Enough Professions (JEP)](https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep) (Replaced by EMIP)
+  * [TrimsEffects](https://www.curseforge.com/minecraft/mc-mods/trimseffects)
+  * [ZeroCore 2](https://www.curseforge.com/minecraft/mc-mods/zerocore)
+---
+
 ## Craftoria | v0.3.0
 
 _NeoForge Loader 21.0.98_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.3.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.3.0.md)_

@@ -1,0 +1,9 @@
+[Common]
+	#Villagers should not take damage when walking in berry bushes or on cactus.
+	disableVillagerDamage = true
+	#Wearing boots and leggings prevent players from taking damage in berry bushes and on cactus
+	disableDamageWhenArmored = true
+	#Disable berry damage for all entities. If set to true, the other configs do not matter.
+	disableBerryDamage = false
+	#Disable cactus damage for all entities. If set to true, the other configs do not matter.
+	disableCactusDamage = false
