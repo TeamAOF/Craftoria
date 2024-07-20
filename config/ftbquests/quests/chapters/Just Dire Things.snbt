@@ -1,6 +1,6 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: "rsquare"
+	default_quest_shape: "hexagon"
 	filename: "Just Dire Things"
 	group: ""
 	icon: {
@@ -9,174 +9,137 @@
 	id: "37D7FA3DAE36E099"
 	images: [
 		{
-			height: 1.0d
+			height: 1.5d
 			image: "minecraft:block/iron_block"
 			rotation: 0.0d
-			width: 1.0d
+			width: 1.5d
 			x: -6.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
-			height: 1.0d
-			image: "justdirethings:block/goopatterns/goorender_side3"
-			order: 1
-			rotation: 0.0d
-			width: 1.0d
-			x: -6.0d
-			y: -1.0d
-		}
-		{
-			height: 1.0d
+			height: 1.5d
 			image: "minecraft:block/gold_block"
 			rotation: 0.0d
-			width: 1.0d
+			width: 1.5d
 			x: -2.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
-			height: 1.0d
+			height: 1.25d
 			image: "minecraft:block/iron_block"
 			rotation: -90.0d
-			width: 1.0d
-			x: -3.0d
+			width: 1.25d
+			x: -3.25d
 			y: 0.0d
 		}
 		{
-			height: 1.0d
-			image: "justdirethings:block/goopatterns/goorender_side4"
-			rotation: -90.0d
-			width: 1.0d
-			x: -3.0d
-			y: 0.0d
-		}
-		{
-			height: 1.0d
+			height: 1.5d
 			image: "minecraft:block/diamond_block"
 			rotation: 0.0d
-			width: 1.0d
+			width: 1.5d
 			x: 2.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
-			height: 1.0d
+			height: 1.5d
 			image: "minecraft:block/netherite_block"
 			rotation: 0.0d
-			width: 1.0d
+			width: 1.5d
 			x: 6.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
-			height: 1.0d
+			height: 1.25d
 			image: "minecraft:block/iron_block"
 			rotation: 0.0d
-			width: 1.0d
+			width: 1.25d
 			x: 2.0d
-			y: 1.0d
+			y: 1.25d
 		}
 		{
-			height: 1.0d
+			height: 1.25d
 			image: "minecraft:block/iron_block"
 			rotation: 0.0d
-			width: 1.0d
-			x: 7.0d
+			width: 1.25d
+			x: 7.25d
 			y: 0.0d
 		}
 		{
-			height: 1.0d
+			height: 1.25d
 			image: "minecraft:block/gold_block"
 			rotation: 0.0d
-			width: 1.0d
-			x: 1.0d
+			width: 1.25d
+			x: 0.75d
 			y: 0.0d
 		}
 		{
-			height: 1.0d
+			height: 1.25d
 			image: "minecraft:block/gold_block"
 			rotation: 0.0d
-			width: 1.0d
+			width: 1.25d
 			x: 6.0d
-			y: 1.0d
+			y: 1.25d
 		}
 		{
-			height: 1.0d
+			height: 1.25d
 			image: "minecraft:block/diamond_block"
 			rotation: 0.0d
-			width: 1.0d
-			x: 5.0d
-			y: 0.0d
-		}
-		{
-			height: 1.0d
-			image: "justdirethings:block/goopatterns/goorender_side0"
-			rotation: 0.0d
-			width: 1.0d
-			x: -2.0d
-			y: -1.0d
-		}
-		{
-			height: 1.0d
-			image: "justdirethings:block/goopatterns/goorender_side2"
-			rotation: 0.0d
-			width: 1.0d
-			x: 2.0d
-			y: -1.0d
-		}
-		{
-			height: 1.0d
-			image: "justdirethings:block/goopatterns/goorender_side2"
-			rotation: 0.0d
-			width: 1.0d
-			x: 6.0d
-			y: -1.0d
-		}
-		{
-			height: 1.0d
-			image: "justdirethings:block/goopatterns/goorender_side1"
-			rotation: -90.0d
-			width: 1.0d
-			x: 1.0d
-			y: 0.0d
-		}
-		{
-			height: 1.0d
-			image: "justdirethings:block/goopatterns/goorender_side2"
-			rotation: 180.0d
-			width: 1.0d
-			x: 2.0d
-			y: 1.0d
-		}
-		{
-			height: 1.0d
-			image: "justdirethings:block/goopatterns/goorender_side2"
-			rotation: 180.0d
-			width: 1.0d
-			x: 6.0d
-			y: 1.0d
-		}
-		{
-			height: 1.0d
-			image: "justdirethings:block/goopatterns/goorender_side4"
-			rotation: 90.0d
-			width: 1.0d
-			x: 7.0d
-			y: 0.0d
-		}
-		{
-			height: 1.0d
-			image: "justdirethings:block/goopatterns/goorender_side1"
-			rotation: -90.0d
-			width: 1.0d
-			x: 5.0d
+			width: 1.25d
+			x: 4.75d
 			y: 0.0d
 		}
 	]
 	order_index: 2
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "674B0345786ECD23"
+			linked_quest: "734DD2AA16A5FBEC"
+			shape: "circle"
+			x: -3.25d
+			y: 0.0d
+		}
+		{
+			id: "20CA2572AFA8F60C"
+			linked_quest: "4628ABEE13B276A9"
+			shape: "circle"
+			x: 0.75d
+			y: 0.0d
+		}
+		{
+			id: "26E7BBEDC889EA49"
+			linked_quest: "734DD2AA16A5FBEC"
+			shape: "circle"
+			x: 2.0d
+			y: 1.25d
+		}
+		{
+			id: "44DF3A903984F21D"
+			linked_quest: "47E6E91E526B6D34"
+			shape: "circle"
+			x: 4.75d
+			y: 0.0d
+		}
+		{
+			id: "0BDF973F2B35F681"
+			linked_quest: "4628ABEE13B276A9"
+			shape: "circle"
+			x: 6.0d
+			y: 1.25d
+		}
+		{
+			id: "0E94BF09F91B5E12"
+			linked_quest: "734DD2AA16A5FBEC"
+			shape: "circle"
+			x: 7.25d
+			y: 0.0d
+		}
+	]
 	quests: [
 		{
+			icon_scale: 1.5d
 			id: "6FF7CECC5DAF516B"
-			shape: "square"
-			size: 1.0d
+			shape: "circle"
+			size: 1.5d
 			tasks: [{
 				id: "1B103D2B500C5BDC"
 				item: { count: 1, id: "justdirethings:gooblock_tier1" }
@@ -186,9 +149,10 @@
 			y: 0.0d
 		}
 		{
+			icon_scale: 1.5d
 			id: "55542D5D7CDA77A5"
-			shape: "square"
-			size: 1.0d
+			shape: "circle"
+			size: 1.5d
 			tasks: [{
 				id: "45B0CD1A069D6539"
 				item: { count: 1, id: "justdirethings:gooblock_tier2" }
@@ -198,9 +162,10 @@
 			y: 0.0d
 		}
 		{
+			icon_scale: 1.5d
 			id: "1AEF6E844F39155D"
-			shape: "square"
-			size: 1.0d
+			shape: "circle"
+			size: 1.5d
 			tasks: [{
 				id: "2F31E45655427797"
 				item: { count: 1, id: "justdirethings:gooblock_tier3" }
@@ -210,9 +175,10 @@
 			y: 0.0d
 		}
 		{
+			icon_scale: 1.5d
 			id: "7F3A28754CD6AD41"
-			shape: "square"
-			size: 1.0d
+			shape: "circle"
+			size: 1.5d
 			tasks: [{
 				id: "051661202F277786"
 				item: { count: 1, id: "justdirethings:gooblock_tier4" }
@@ -223,55 +189,58 @@
 		}
 		{
 			dependencies: ["6FF7CECC5DAF516B"]
-			hide_dependency_lines: true
+			icon_scale: 1.25d
 			id: "75C95D894C3B3428"
-			shape: "circle"
+			size: 1.25d
 			tasks: [{
 				id: "0AEA13DB3673A3DE"
 				item: { count: 1, id: "justdirethings:ferricore_ingot" }
 				type: "item"
 			}]
 			x: -6.0d
-			y: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["55542D5D7CDA77A5"]
-			hide_dependency_lines: true
+			icon_scale: 1.25d
 			id: "202149DADCC786EE"
-			shape: "circle"
+			shape: "hexagon"
+			size: 1.25d
 			tasks: [{
 				id: "630EEBF170C24EE8"
 				item: { count: 1, id: "justdirethings:blazegold_ingot" }
 				type: "item"
 			}]
 			x: -2.0d
-			y: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1AEF6E844F39155D"]
-			hide_dependency_lines: true
+			hide_dependency_lines: false
+			icon_scale: 1.25d
 			id: "18CEE2F64F6E53E6"
-			shape: "circle"
+			size: 1.25d
 			tasks: [{
 				id: "52ECB219AD99536A"
 				item: { count: 1, id: "justdirethings:celestigem" }
 				type: "item"
 			}]
 			x: 2.0d
-			y: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7F3A28754CD6AD41"]
-			hide_dependency_lines: true
+			hide_dependency_lines: false
+			icon_scale: 1.25d
 			id: "08B17C05B2111477"
-			shape: "circle"
+			size: 1.25d
 			tasks: [{
 				id: "031D612C21E75A9D"
 				item: { count: 1, id: "justdirethings:eclipsealloy_ingot" }
 				type: "item"
 			}]
 			x: 6.0d
-			y: -2.5d
+			y: -4.0d
 		}
 		{
 			id: "4B0CDF7941199C8E"
@@ -281,7 +250,7 @@
 				type: "item"
 			}]
 			x: -5.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			id: "7F4BFF2C6E887FCC"
@@ -291,7 +260,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			id: "03F624101CDF5291"
@@ -365,13 +334,14 @@
 		}
 		{
 			id: "42EC7168ADC6AF76"
+			shape: "hexagon"
 			tasks: [{
 				id: "2CAE75847CA764BB"
 				item: { count: 1, id: "justdirethings:blazejet_wand" }
 				type: "item"
 			}]
 			x: -2.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			id: "48E96D243486D38E"
@@ -381,7 +351,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			id: "6FE07EECD4579FD4"
@@ -391,7 +361,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			id: "69403313B37E8219"
@@ -444,6 +414,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["202149DADCC786EE"]
 			id: "18680FEE2B6FF16F"
 			tasks: [{
 				id: "05BCE648F9BDB960"
@@ -451,7 +422,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			id: "4D1B83E147CC16AE"
@@ -461,7 +432,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			id: "35F6CAD5BE56A32A"
@@ -471,7 +442,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			id: "2023CDC95630D9B0"
@@ -481,7 +452,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			id: "29E3DC274AF5DAFA"
@@ -524,6 +495,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["202149DADCC786EE"]
 			id: "1A1C915A4A1F7741"
 			tasks: [{
 				id: "6514DAEE844FDDAD"
@@ -531,7 +503,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			id: "5707678AB1482B68"
@@ -541,7 +513,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			id: "160740771654F4E6"
@@ -551,7 +523,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -3.5d
+			y: -3.0d
 		}
 		{
 			id: "39460CB77E53D5FA"
@@ -581,7 +553,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			id: "0ECDE9598DABBD3A"
@@ -591,10 +563,11 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -5.5d
+			y: -5.0d
 		}
 		{
 			id: "6201E6DF709C29D0"
+			size: 1.0d
 			tasks: [
 				{
 					id: "34A04791B5299B28"
@@ -617,8 +590,8 @@
 					type: "item"
 				}
 			]
-			x: -6.5d
-			y: -4.5d
+			x: -7.0d
+			y: -4.0d
 		}
 		{
 			id: "4D05AA18CF654D70"
@@ -654,10 +627,11 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
-			y: -4.5d
+			x: -5.0d
+			y: -4.0d
 		}
 		{
+			dependencies: ["202149DADCC786EE"]
 			id: "1F81CBD8519E244B"
 			tasks: [
 				{
@@ -681,8 +655,8 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
-			y: -4.5d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			id: "3492CFBA1602D7F2"
@@ -708,8 +682,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -4.5d
+			x: 1.0d
+			y: -4.0d
 		}
 		{
 			id: "68A8995F4A13381A"
@@ -735,8 +709,8 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
-			y: -4.5d
+			x: 5.0d
+			y: -4.0d
 		}
 		{
 			id: "6B0418E2AC06FF09"
@@ -772,8 +746,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: -4.5d
+			x: -1.0d
+			y: -4.0d
 		}
 		{
 			id: "495EEAA73357FA60"
@@ -809,8 +783,8 @@
 					type: "item"
 				}
 			]
-			x: 6.5d
-			y: -4.5d
+			x: 7.0d
+			y: -4.0d
 		}
 		{
 			id: "4BF483174CC0A0F1"
@@ -846,8 +820,69 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: -4.5d
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			icon: {
+				id: "justdirethings:raw_ferricore_ore"
+			}
+			icon_scale: 1.5d
+			id: "734DD2AA16A5FBEC"
+			shape: "circle"
+			size: 1.25d
+			tasks: [{
+				id: "1C3EB1578E6F7F21"
+				item: { count: 1, id: "justdirethings:raw_ferricore" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				id: "justdirethings:raw_blazegold_ore"
+			}
+			icon_scale: 1.5d
+			id: "4628ABEE13B276A9"
+			shape: "circle"
+			size: 1.25d
+			tasks: [{
+				id: "3BD2AC11030B5C3F"
+				item: { count: 1, id: "justdirethings:raw_blazegold" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			icon_scale: 1.5d
+			id: "47E6E91E526B6D34"
+			shape: "circle"
+			size: 1.25d
+			tasks: [{
+				id: "076D9075F3BC2622"
+				item: { count: 1, id: "justdirethings:celestigem" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			icon: {
+				id: "justdirethings:raw_eclipsealloy_ore"
+			}
+			icon_scale: 1.5d
+			id: "72DA89154BB74D82"
+			shape: "circle"
+			size: 1.25d
+			tasks: [{
+				id: "2E82714C977850AD"
+				item: { count: 1, id: "justdirethings:raw_eclipsealloy" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
 		}
 	]
 }
