@@ -353,6 +353,7 @@
 		{
 			dependencies: ["75C95D894C3B3428"]
 			id: "03F624101CDF5291"
+			size: 1.25d
 			tasks: [{
 				id: "043F546DF6CD3912"
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:blockplacert1)item(justdirethings:blockplacert2))", "minecraft:custom_name": "\"Block Placer\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -364,6 +365,7 @@
 		{
 			dependencies: ["75C95D894C3B3428"]
 			id: "65A75D8101BEB05F"
+			size: 1.25d
 			tasks: [{
 				id: "603F97BAC146E443"
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:fluidplacert1)item(justdirethings:fluidplacert2))", "minecraft:custom_name": "\"Fluid Placer\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -375,6 +377,7 @@
 		{
 			dependencies: ["75C95D894C3B3428"]
 			id: "49910F2EFEA1CDF2"
+			size: 1.25d
 			tasks: [{
 				id: "7206A740A702E7DA"
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:fluidcollectort1)item(justdirethings:fluidcollectort2))", "minecraft:custom_name": "\"Fluid Collector\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -386,17 +389,19 @@
 		{
 			dependencies: ["75C95D894C3B3428"]
 			id: "69BD8400AAA37066"
+			size: 1.25d
 			tasks: [{
 				id: "352634B08DBFE9BB"
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:sensort1)item(justdirethings:sensort2))", "minecraft:custom_name": "\"Sensor\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.75d
+			y: 3.5d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
 			id: "2CE7390F7567D9E2"
+			size: 1.25d
 			tasks: [{
 				id: "698A95F79B2672C3"
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:blockswappert1)item(justdirethings:blockswappert2))", "minecraft:custom_name": "\"Swapper\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -408,6 +413,7 @@
 		{
 			dependencies: ["202149DADCC786EE"]
 			id: "3AE00D06232E0175"
+			size: 1.25d
 			tasks: [{
 				id: "77F8077AD4D7B64C"
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:portalgun)item(justdirethings:portalgun_v2))", "minecraft:custom_name": "\"Portal Gun\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -419,6 +425,7 @@
 		{
 			dependencies: ["75C95D894C3B3428"]
 			id: "516F2A1A1270D9DC"
+			size: 1.25d
 			tasks: [{
 				id: "460B4D102C0DB472"
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:blockbreakert1)item(justdirethings:blockbreakert2))", "minecraft:custom_name": "\"Block Breaker\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -467,24 +474,26 @@
 		{
 			dependencies: ["75C95D894C3B3428"]
 			id: "69403313B37E8219"
+			size: 1.25d
 			tasks: [{
 				id: "35CA940ED584594A"
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:clickert1)item(justdirethings:clickert2))", "minecraft:custom_name": "\"Clicker\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 3.5d
-			y: 3.75d
+			y: 3.5d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
 			id: "4D59020A532C4E92"
+			size: 1.25d
 			tasks: [{
 				id: "6986A9AB7F1B8711"
 				item: { count: 1, id: "justdirethings:creaturecatcher" }
 				type: "item"
 			}]
 			x: 6.5d
-			y: 3.75d
+			y: 3.4375d
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
@@ -500,13 +509,14 @@
 		{
 			dependencies: ["75C95D894C3B3428"]
 			id: "62F43B936E236071"
+			size: 1.25d
 			tasks: [{
 				id: "45EF326E06F8CD36"
 				item: { count: 1, id: "justdirethings:itemcollector" }
 				type: "item"
 			}]
 			x: 5.0d
-			y: 3.75d
+			y: 3.4375d
 		}
 		{
 			dependencies: [
@@ -514,13 +524,14 @@
 				"7F4BFF2C6E887FCC"
 			]
 			id: "5CD12382792FA310"
+			size: 1.25d
 			tasks: [{
 				id: "5A081335B87B4EED"
 				item: { count: 1, id: "justdirethings:machinesettingscopier" }
 				type: "item"
 			}]
 			x: -6.5d
-			y: 3.75d
+			y: 3.4375d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -597,24 +608,26 @@
 		{
 			dependencies: ["75C95D894C3B3428"]
 			id: "21AE41FA52DB561D"
+			size: 1.25d
 			tasks: [{
 				id: "1F56BC37DE506C77"
 				item: { count: 1, id: "justdirethings:pocket_generator" }
 				type: "item"
 			}]
 			x: -2.0d
-			y: 3.75d
+			y: 3.5d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
 			id: "1AD1C99F9C383632"
+			size: 1.25d
 			tasks: [{
 				id: "2B3172C19418F261"
 				item: { count: 1, id: "justdirethings:fluid_canister" }
 				type: "item"
 			}]
 			x: -3.5d
-			y: 3.75d
+			y: 3.5d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -655,6 +668,7 @@
 		{
 			dependencies: ["202149DADCC786EE"]
 			id: "39460CB77E53D5FA"
+			size: 1.25d
 			tasks: [{
 				id: "6D36D4D4D52FBC67"
 				item: { count: 1, id: "justdirethings:playeraccessor" }
@@ -666,13 +680,14 @@
 		{
 			dependencies: ["75C95D894C3B3428"]
 			id: "045942C709C63044"
+			size: 1.25d
 			tasks: [{
 				id: "539621E4CAEFD94C"
 				item: { count: 1, id: "justdirethings:generatort1" }
 				type: "item"
 			}]
 			x: -5.0d
-			y: 3.75d
+			y: 3.4375d
 		}
 		{
 			dependencies: ["08B17C05B2111477"]
@@ -1051,7 +1066,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 3.375d
+			y: 3.0d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -1064,7 +1079,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.25d
+			y: 5.0d
 		}
 	]
 }
