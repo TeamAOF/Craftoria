@@ -11,6 +11,7 @@
 		{
 			height: 1.5d
 			image: "minecraft:block/iron_block"
+			order: 2
 			rotation: 0.0d
 			width: 1.5d
 			x: -6.0d
@@ -19,6 +20,7 @@
 		{
 			height: 1.5d
 			image: "minecraft:block/gold_block"
+			order: 2
 			rotation: 0.0d
 			width: 1.5d
 			x: -2.0d
@@ -27,14 +29,16 @@
 		{
 			height: 1.25d
 			image: "minecraft:block/iron_block"
+			order: 2
 			rotation: -90.0d
 			width: 1.25d
-			x: -3.25d
+			x: -3.2d
 			y: 0.0d
 		}
 		{
 			height: 1.5d
 			image: "minecraft:block/diamond_block"
+			order: 2
 			rotation: 0.0d
 			width: 1.5d
 			x: 2.0d
@@ -43,6 +47,7 @@
 		{
 			height: 1.5d
 			image: "minecraft:block/netherite_block"
+			order: 2
 			rotation: 0.0d
 			width: 1.5d
 			x: 6.0d
@@ -51,6 +56,7 @@
 		{
 			height: 1.25d
 			image: "minecraft:block/iron_block"
+			order: 2
 			rotation: 0.0d
 			width: 1.25d
 			x: 2.0d
@@ -59,6 +65,7 @@
 		{
 			height: 1.25d
 			image: "minecraft:block/iron_block"
+			order: 2
 			rotation: 0.0d
 			width: 1.25d
 			x: 7.25d
@@ -67,6 +74,7 @@
 		{
 			height: 1.25d
 			image: "minecraft:block/gold_block"
+			order: 2
 			rotation: 0.0d
 			width: 1.25d
 			x: 0.75d
@@ -75,6 +83,7 @@
 		{
 			height: 1.25d
 			image: "minecraft:block/gold_block"
+			order: 2
 			rotation: 0.0d
 			width: 1.25d
 			x: 6.0d
@@ -83,10 +92,83 @@
 		{
 			height: 1.25d
 			image: "minecraft:block/diamond_block"
+			order: 2
 			rotation: 0.0d
 			width: 1.25d
 			x: 4.75d
 			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "minecraft:block/grass_block_side"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "minecraft:block/netherrack"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "minecraft:block/end_stone"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "minecraft:block/sculk"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			color: 5002858
+			height: 9.0d
+			image: "justdirethings:item/creaturecatcher_side_animation"
+			rotation: 0.0d
+			width: 24.0d
+			x: 0.0d
+			y: -3.25d
+		}
+		{
+			color: 5002858
+			height: 9.0d
+			image: "justdirethings:item/creaturecatcher_side_animation"
+			rotation: 180.0d
+			width: 24.0d
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			color: 14640452
+			height: 8.0d
+			image: "ftbquests:textures/gui/title_jdt2.png"
+			rotation: 90.0d
+			width: 8.0d
+			x: 8.4d
+			y: -2.75d
+		}
+		{
+			color: 6617567
+			height: 8.0d
+			image: "ftbquests:textures/gui/title_jdt2.png"
+			rotation: -90.0d
+			width: 8.0d
+			x: -8.4d
+			y: 2.5d
 		}
 	]
 	order_index: 2
@@ -95,7 +177,7 @@
 			id: "674B0345786ECD23"
 			linked_quest: "734DD2AA16A5FBEC"
 			shape: "circle"
-			x: -3.25d
+			x: -3.2d
 			y: 0.0d
 		}
 		{
@@ -277,7 +359,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 4.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -288,7 +370,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 4.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -299,7 +381,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 4.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -310,7 +392,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.0d
+			y: 3.75d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -321,7 +403,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 4.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -332,7 +414,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 4.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -343,7 +425,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 4.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -391,7 +473,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 3.0d
+			y: 3.75d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -402,7 +484,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 3.0d
+			y: 3.75d
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
@@ -413,7 +495,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 4.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -424,7 +506,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 3.0d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -438,7 +520,7 @@
 				type: "item"
 			}]
 			x: -6.5d
-			y: 3.0d
+			y: 3.75d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -521,7 +603,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 3.0d
+			y: 3.75d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -532,7 +614,7 @@
 				type: "item"
 			}]
 			x: -3.5d
-			y: 3.0d
+			y: 3.75d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -579,7 +661,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: 4.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -590,7 +672,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 3.0d
+			y: 3.75d
 		}
 		{
 			dependencies: ["08B17C05B2111477"]
@@ -959,6 +1041,7 @@
 		}
 		{
 			dependencies: ["715275CB90EF8406"]
+			hide_dependency_lines: false
 			id: "0F121433B94D72D9"
 			shape: "rsquare"
 			size: 1.5d
@@ -968,7 +1051,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 3.0d
+			y: 3.375d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -981,7 +1064,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.75d
+			y: 5.25d
 		}
 	]
 }
