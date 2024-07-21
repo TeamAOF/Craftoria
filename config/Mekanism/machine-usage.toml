@@ -1,75 +1,107 @@
-
 #Machine Energy Usage Config. This config is synced from server to client.
 [usage]
 	#Energy per operation tick (Joules).
-	enrichmentChamber = "50"
+	#Range: 0 ~ 9223372036854775807
+	enrichmentChamber = 50
 	#Energy per operation tick (Joules).
-	osmiumCompressor = "100"
+	#Range: 0 ~ 9223372036854775807
+	osmiumCompressor = 100
 	#Energy per operation tick (Joules).
-	combiner = "50"
+	#Range: 0 ~ 9223372036854775807
+	combiner = 50
 	#Energy per operation tick (Joules).
-	crusher = "50"
+	#Range: 0 ~ 9223372036854775807
+	crusher = 50
 	#Energy per operation tick (Joules).
-	metallurgicInfuser = "50"
+	#Range: 0 ~ 9223372036854775807
+	metallurgicInfuser = 50
 	#Energy per operation tick (Joules).
-	purificationChamber = "200"
+	#Range: 0 ~ 9223372036854775807
+	purificationChamber = 200
 	#Energy per operation tick (Joules).
-	energizedSmelter = "50"
+	#Range: 0 ~ 9223372036854775807
+	energizedSmelter = 50
 	#Energy per operation tick (Joules).
-	digitalMiner = "1000"
+	#Range: 0 ~ 9223372036854775807
+	digitalMiner = 1000
 	#Energy per operation tick (Joules).
-	electricPump = "100"
+	#Range: 0 ~ 9223372036854775807
+	electricPump = 100
 	#Energy that can be transferred at once per charge operation (Joules).
-	chargePad = "1024000"
+	#Range: 0 ~ 9223372036854775807
+	chargePad = 1024000
 	#Energy per operation tick (Joules).
-	rotaryCondensentrator = "50"
+	#Range: 0 ~ 9223372036854775807
+	rotaryCondensentrator = 50
 	#Energy per operation tick (Joules).
-	chemicalOxidizer = "200"
+	#Range: 0 ~ 9223372036854775807
+	chemicalOxidizer = 200
 	#Energy per operation tick (Joules).
-	chemicalInfuser = "200"
+	#Range: 0 ~ 9223372036854775807
+	chemicalInfuser = 200
 	#Energy per operation tick (Joules).
-	chemicalInjectionChamber = "400"
+	#Range: 0 ~ 9223372036854775807
+	chemicalInjectionChamber = 400
 	#Energy per operation tick (Joules).
-	precisionSawmill = "50"
+	#Range: 0 ~ 9223372036854775807
+	precisionSawmill = 50
 	#Energy per operation tick (Joules).
-	chemicalDissolutionChamber = "400"
+	#Range: 0 ~ 9223372036854775807
+	chemicalDissolutionChamber = 400
 	#Energy per operation tick (Joules).
-	chemicalWasher = "200"
+	#Range: 0 ~ 9223372036854775807
+	chemicalWasher = 200
 	#Energy per operation tick (Joules).
-	chemicalCrystallizer = "400"
+	#Range: 0 ~ 9223372036854775807
+	chemicalCrystallizer = 400
 	#Energy per operation tick (Joules).
-	seismicVibrator = "50"
+	#Range: 0 ~ 9223372036854775807
+	seismicVibrator = 50
 	#Energy per operation tick (Joules).
-	pressurizedReactionBase = "5"
+	#Range: 0 ~ 9223372036854775807
+	pressurizedReactionBase = 5
 	#Energy per operation tick (Joules).
-	fluidicPlenisher = "100"
+	#Range: 0 ~ 9223372036854775807
+	fluidicPlenisher = 100
 	#Energy per operation tick (Joules).
-	laser = "10000"
+	#Range: 0 ~ 9223372036854775807
+	laser = 10000
 	#Energy per operation tick (Joules).
-	formulaicAssemblicator = "100"
+	#Range: 0 ~ 9223372036854775807
+	formulaicAssemblicator = 100
 	#Energy per operation tick (Joules).
-	modificationStation = "400"
+	#Range: 0 ~ 9223372036854775807
+	modificationStation = 400
 	#Energy per operation tick (Joules).
-	isotopicCentrifuge = "200"
+	#Range: 0 ~ 9223372036854775807
+	isotopicCentrifuge = 200
 	#Energy per operation tick (Joules).
-	nutritionalLiquifier = "200"
+	#Range: 0 ~ 9223372036854775807
+	nutritionalLiquifier = 200
 	#Energy per operation tick (Joules).
-	antiprotonicNucleosynthesizer = "100000"
+	#Range: 0 ~ 9223372036854775807
+	antiprotonicNucleosynthesizer = 100000
 	#Energy per operation tick (Joules).
-	pigmentExtractor = "200"
+	#Range: 0 ~ 9223372036854775807
+	pigmentExtractor = 200
 	#Energy per operation tick (Joules).
-	pigmentMixer = "200"
+	#Range: 0 ~ 9223372036854775807
+	pigmentMixer = 200
 	#Energy per operation tick (Joules).
-	paintingMachine = "100"
+	#Range: 0 ~ 9223372036854775807
+	paintingMachine = 100
 	#Energy per chunk per tick (Joules).
-	dimensionalStabilizer = "5000"
+	#Range: 0 ~ 9223372036854775807
+	dimensionalStabilizer = 5000
 
 	#Teleporter
 	[usage.teleporter]
 		#Base Joules cost for a teleportation.
-		teleporterBase = "1000"
+		#Range: 0 ~ 9223372036854775807
+		teleporterBase = 1000
 		#Joules per unit of distance travelled during teleportation - sqrt(xDiff^2 + yDiff^2 + zDiff^2).
-		teleporterDistance = "10"
+		#Range: 0 ~ 9223372036854775807
+		teleporterDistance = 10
 		#Flat additional cost for interdimensional teleportation. Distance is still taken into account minimizing energy cost based on dimension scales.
-		teleporterDimensionPenalty = "10000"
-
+		#Range: 0 ~ 9223372036854775807
+		teleporterDimensionPenalty = 10000
