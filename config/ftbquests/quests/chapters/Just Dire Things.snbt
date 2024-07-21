@@ -198,7 +198,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -4.0d
+			y: -4.25d
 		}
 		{
 			dependencies: ["55542D5D7CDA77A5"]
@@ -213,7 +213,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -4.0d
+			y: -4.25d
 		}
 		{
 			dependencies: ["1AEF6E844F39155D"]
@@ -227,7 +227,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -4.0d
+			y: -4.25d
 		}
 		{
 			dependencies: ["7F3A28754CD6AD41"]
@@ -241,7 +241,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: -4.0d
+			y: -4.25d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -251,7 +251,7 @@
 				item: { count: 1, id: "justdirethings:goosoil_tier1" }
 				type: "item"
 			}]
-			x: -5.5d
+			x: -5.25d
 			y: -3.0d
 		}
 		{
@@ -262,7 +262,7 @@
 				item: { count: 1, id: "justdirethings:coal_t1" }
 				type: "item"
 			}]
-			x: -6.5d
+			x: -6.75d
 			y: -3.0d
 		}
 		{
@@ -272,7 +272,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:blockplacert1)item(justdirethings:blockplacert2))", "minecraft:custom_name": "\"Block Placer\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -6.0d
+			x: -6.5d
 			y: 4.5d
 		}
 		{
@@ -282,7 +282,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:fluidplacert1)item(justdirethings:fluidplacert2))", "minecraft:custom_name": "\"Fluid Placer\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.5d
 			y: 4.5d
 		}
 		{
@@ -292,7 +292,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:fluidcollectort1)item(justdirethings:fluidcollectort2))", "minecraft:custom_name": "\"Fluid Collector\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: 4.5d
 		}
 		{
@@ -302,7 +302,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:sensort1)item(justdirethings:sensort2))", "minecraft:custom_name": "\"Sensor\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 3.0d
 		}
 		{
@@ -312,7 +312,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:blockswappert1)item(justdirethings:blockswappert2))", "minecraft:custom_name": "\"Swapper\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 4.5d
 		}
 		{
@@ -322,7 +322,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:portalgun)item(justdirethings:portalgun_v2))", "minecraft:custom_name": "\"Portal Gun\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: 4.5d
 		}
 		{
@@ -332,7 +332,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:blockbreakert1)item(justdirethings:blockbreakert2))", "minecraft:custom_name": "\"Block Breaker\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -5.0d
 			y: 4.5d
 		}
 		{
@@ -344,8 +344,8 @@
 				item: { count: 1, id: "justdirethings:blazejet_wand" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -5.0d
+			x: -2.75d
+			y: -5.5d
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
@@ -355,8 +355,8 @@
 				item: { count: 1, id: "justdirethings:voidshift_wand" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -5.0d
+			x: 1.25d
+			y: -5.5d
 		}
 		{
 			dependencies: ["08B17C05B2111477"]
@@ -366,8 +366,8 @@
 				item: { count: 1, id: "justdirethings:eclipsegate_wand" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: -5.0d
+			x: 5.25d
+			y: -5.5d
 		}
 		{
 			id: "69403313B37E8219"
@@ -376,7 +376,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:clickert1)item(justdirethings:clickert2))", "minecraft:custom_name": "\"Clicker\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 3.0d
 		}
 		{
@@ -386,7 +386,7 @@
 				item: { count: 1, id: "justdirethings:creaturecatcher" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.5d
 			y: 3.0d
 		}
 		{
@@ -396,7 +396,7 @@
 				item: { count: 1, id: "justdirethings:energytransmitter" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.0d
 			y: 4.5d
 		}
 		{
@@ -406,7 +406,7 @@
 				item: { count: 1, id: "justdirethings:itemcollector" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: 5.0d
 			y: 3.0d
 		}
 		{
@@ -416,8 +416,8 @@
 				item: { count: 1, id: "justdirethings:machinesettingscopier" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: -6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -427,7 +427,7 @@
 				item: { count: 1, id: "justdirethings:goosoil_tier2" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.25d
 			y: -3.0d
 		}
 		{
@@ -438,7 +438,7 @@
 				item: { count: 1, id: "justdirethings:goosoil_tier3" }
 				type: "item"
 			}]
-			x: 2.5d
+			x: 2.75d
 			y: -3.0d
 		}
 		{
@@ -449,7 +449,7 @@
 				item: { count: 1, id: "justdirethings:goosoil_tier4" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 6.75d
 			y: -3.0d
 		}
 		{
@@ -460,30 +460,30 @@
 				item: { count: 1, id: "justdirethings:totem_of_death_recall" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.0d
+			x: -1.25d
+			y: -5.5d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
-			hide_dependency_lines: true
 			id: "29E3DC274AF5DAFA"
 			tasks: [{
 				id: "37D3020A390BEA01"
 				item: { count: 1, id: "justdirethings:ferricore_wrench" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: -6.75d
+			y: -5.5d
 		}
 		{
+			dependencies: ["75C95D894C3B3428"]
 			id: "030E566682A89105"
 			tasks: [{
 				id: "2E067E94640CF58F"
 				item: { count: 1, id: "justdirethings:fuel_canister" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 3.0d
+			x: -5.25d
+			y: -5.5d
 		}
 		{
 			id: "21AE41FA52DB561D"
@@ -492,7 +492,7 @@
 				item: { count: 1, id: "justdirethings:pocket_generator" }
 				type: "item"
 			}]
-			x: -4.5d
+			x: -2.0d
 			y: 3.0d
 		}
 		{
@@ -502,7 +502,7 @@
 				item: { count: 1, id: "justdirethings:fluid_canister" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.5d
 			y: 3.0d
 		}
 		{
@@ -514,7 +514,7 @@
 				item: { count: 1, id: "justdirethings:coal_t2" }
 				type: "item"
 			}]
-			x: -2.5d
+			x: -2.75d
 			y: -3.0d
 		}
 		{
@@ -525,7 +525,7 @@
 				item: { count: 1, id: "justdirethings:coal_t3" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.25d
 			y: -3.0d
 		}
 		{
@@ -536,7 +536,7 @@
 				item: { count: 1, id: "justdirethings:coal_t4" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 5.25d
 			y: -3.0d
 		}
 		{
@@ -546,7 +546,7 @@
 				item: { count: 1, id: "justdirethings:playeraccessor" }
 				type: "item"
 			}]
-			x: 3.0d
+			x: 3.5d
 			y: 4.5d
 		}
 		{
@@ -556,7 +556,7 @@
 				item: { count: 1, id: "justdirethings:generatort1" }
 				type: "item"
 			}]
-			x: -3.0d
+			x: -5.0d
 			y: 3.0d
 		}
 		{
@@ -567,8 +567,8 @@
 				item: { count: 1, id: "justdirethings:eclipsealloy_paxel" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: -5.0d
+			x: 6.75d
+			y: -5.5d
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
@@ -578,8 +578,8 @@
 				item: { count: 1, id: "justdirethings:celestigem_paxel" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -5.0d
+			x: 2.75d
+			y: -5.5d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -607,8 +607,8 @@
 					type: "item"
 				}
 			]
-			x: -7.0d
-			y: -4.0d
+			x: -7.25d
+			y: -4.25d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -645,8 +645,8 @@
 					type: "item"
 				}
 			]
-			x: -5.0d
-			y: -4.0d
+			x: -4.75d
+			y: -4.25d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -673,8 +673,8 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
-			y: -4.0d
+			x: -3.25d
+			y: -4.25d
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
@@ -701,8 +701,8 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: -4.0d
+			x: 0.75d
+			y: -4.25d
 		}
 		{
 			dependencies: ["08B17C05B2111477"]
@@ -729,8 +729,8 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: -4.0d
+			x: 4.75d
+			y: -4.25d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -767,8 +767,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: -4.0d
+			x: -0.75d
+			y: -4.25d
 		}
 		{
 			dependencies: ["08B17C05B2111477"]
@@ -805,8 +805,8 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
-			y: -4.0d
+			x: 7.25d
+			y: -4.25d
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
@@ -843,8 +843,8 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
-			y: -4.0d
+			x: 3.25d
+			y: -4.25d
 		}
 		{
 			icon: {
@@ -909,6 +909,18 @@
 			}]
 			x: 6.0d
 			y: -1.5d
+		}
+		{
+			id: "0F121433B94D72D9"
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				id: "786CAAE3D7E4D5C3"
+				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:upgrade_blank)item(justdirethings:upgrade_cauterizewounds)item(justdirethings:upgrade_deathprotection)item(justdirethings:upgrade_debuffremover)item(justdirethings:upgrade_decoy)item(justdirethings:upgrade_dropteleport)item(justdirethings:upgrade_earthquake)item(justdirethings:upgrade_elytra)item(justdirethings:upgrade_epicarrow)item(justdirethings:upgrade_extinguish)item(justdirethings:upgrade_flight)item(justdirethings:upgrade_glowing)item(justdirethings:upgrade_groundstomp)item(justdirethings:upgrade_hammer)item(justdirethings:upgrade_homing)item(justdirethings:upgrade_instabreak)item(justdirethings:upgrade_invulnerability)item(justdirethings:upgrade_jumpboost)item(justdirethings:upgrade_lavaimmunity)item(justdirethings:upgrade_lawnmower)item(justdirethings:upgrade_leafbreaker)item(justdirethings:upgrade_lingering)item(justdirethings:upgrade_mindfog)item(justdirethings:upgrade_mobscanner)item(justdirethings:upgrade_negatefalldamage)item(justdirethings:upgrade_nightvision)item(justdirethings:upgrade_noai)item(justdirethings:upgrade_oreminer)item(justdirethings:upgrade_orescanner)item(justdirethings:upgrade_orexray)item(justdirethings:upgrade_phase)item(justdirethings:upgrade_potionarrow)item(justdirethings:upgrade_runspeed)item(justdirethings:upgrade_skysweeper)item(justdirethings:upgrade_smelter)item(justdirethings:upgrade_smoker)item(justdirethings:upgrade_splash)item(justdirethings:upgrade_stepheight)item(justdirethings:upgrade_stupefy)item(justdirethings:upgrade_swimspeed)item(justdirethings:upgrade_treefeller)item(justdirethings:upgrade_walkspeed))", "minecraft:custom_name": "\"Upgrades\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.75d
 		}
 	]
 }
