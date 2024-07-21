@@ -20,6 +20,7 @@
 		{
 			height: 20.0d
 			image: "ftbchunks:textures/topography_palette.png"
+			order: 1
 			rotation: 0.0d
 			width: 84.0d
 			x: 32.0d
@@ -35,8 +36,17 @@
 			y: -5.5d
 		}
 		{
+			height: 1.0d
+			image: "ftbquests:block/barrier_open"
+			rotation: 0.0d
+			width: 0.0625d
+			x: 41.5d
+			y: 33.0d
+		}
+		{
 			height: 20.0d
 			image: "ftbchunks:textures/topography_palette.png"
+			order: 2
 			rotation: 180.0d
 			width: 84.0d
 			x: 32.0d
@@ -45,16 +55,16 @@
 		{
 			height: 10.0d
 			image: "ftbquests:textures/gui/background_warm_black.png"
-			order: 1
+			order: 5
 			rotation: 0.0d
 			width: 84.0d
-			x: 32.0d
-			y: 13.3d
+			x: 39.5d
+			y: 12.5d
 		}
 		{
 			height: 10.0d
 			image: "ftbquests:textures/gui/background_warm_black.png"
-			order: 1
+			order: 5
 			rotation: 0.0d
 			width: 84.0d
 			x: 32.0d
@@ -175,28 +185,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["0E5D5EC78B08883F"]
-			id: "20B4FD673AB88697"
-			tasks: [{
-				id: "284042AE6C4FFD42"
-				item: { count: 1, id: "mekanism:advanced_bin" }
-				type: "item"
-			}]
-			x: 10.21d
-			y: 4.38d
-		}
-		{
-			dependencies: ["36917DE9A1C43213"]
-			id: "37A371118ADAA8F5"
-			tasks: [{
-				id: "21B930F34A18BD3A"
-				item: { count: 1, id: "mekanism:advanced_chemical_tank" }
-				type: "item"
-			}]
-			x: 13.12d
-			y: 2.92d
-		}
-		{
 			dependencies: ["553EB688C3FFD7E4"]
 			id: "2133B29DE47BDC25"
 			tasks: [{
@@ -230,17 +218,6 @@
 			y: 4.38d
 		}
 		{
-			dependencies: ["38B365FDB4227A90"]
-			id: "14B2E5EA9AF04DA9"
-			tasks: [{
-				id: "05AA1DC84EAB292C"
-				item: { count: 1, id: "mekanism:advanced_energy_cube" }
-				type: "item"
-			}]
-			x: 14.58d
-			y: -2.92d
-		}
-		{
 			dependencies: ["20BA7AE12056CF27"]
 			id: "7C834204DEE1813C"
 			tasks: [{
@@ -248,19 +225,8 @@
 				item: { count: 1, id: "mekanism:advanced_enriching_factory" }
 				type: "item"
 			}]
-			x: 16.04d
+			x: 14.58d
 			y: -4.38d
-		}
-		{
-			dependencies: ["5C278F462D4B414A"]
-			id: "6E455A507171708C"
-			tasks: [{
-				id: "0A53A7B9EC2C057D"
-				item: { count: 1, id: "mekanism:advanced_fluid_tank" }
-				type: "item"
-			}]
-			x: 7.29d
-			y: 2.92d
 		}
 		{
 			dependencies: ["22A2121A25A010AB"]
@@ -450,28 +416,6 @@
 			y: 1.46d
 		}
 		{
-			dependencies: ["24B44DAA8C43CF11"]
-			id: "0E5D5EC78B08883F"
-			tasks: [{
-				id: "4A7046668F986995"
-				item: { count: 1, id: "mekanism:basic_bin" }
-				type: "item"
-			}]
-			x: 10.21d
-			y: 2.92d
-		}
-		{
-			dependencies: ["1FAB4634116B6EC8"]
-			id: "36917DE9A1C43213"
-			tasks: [{
-				id: "1136659CDD818435"
-				item: { count: 1, id: "mekanism:basic_chemical_tank" }
-				type: "item"
-			}]
-			x: 13.12d
-			y: 1.46d
-		}
-		{
 			dependencies: ["0C1C61B4554B38E5"]
 			id: "553EB688C3FFD7E4"
 			tasks: [{
@@ -508,17 +452,6 @@
 			y: 2.92d
 		}
 		{
-			dependencies: ["45E16D69D7099581"]
-			id: "38B365FDB4227A90"
-			tasks: [{
-				id: "06287F125B7CDAB9"
-				item: { count: 1, id: "mekanism:basic_energy_cube" }
-				type: "item"
-			}]
-			x: 14.58d
-			y: -1.46d
-		}
-		{
 			dependencies: ["22D2716905D415E5"]
 			id: "20BA7AE12056CF27"
 			tasks: [{
@@ -526,19 +459,8 @@
 				item: { count: 1, id: "mekanism:basic_enriching_factory" }
 				type: "item"
 			}]
-			x: 16.04d
+			x: 14.58d
 			y: -2.92d
-		}
-		{
-			dependencies: ["1FAB4634116B6EC8"]
-			id: "5C278F462D4B414A"
-			tasks: [{
-				id: "3D0C2087D3E7A31A"
-				item: { count: 1, id: "mekanism:basic_fluid_tank" }
-				type: "item"
-			}]
-			x: 7.29d
-			y: 1.46d
 		}
 		{
 			dependencies: ["305C258D68DA8E96"]
@@ -669,8 +591,8 @@
 				item: { count: 1, id: "mekanismgenerators:bio_generator" }
 				type: "item"
 			}]
-			x: 11.67d
-			y: 2.92d
+			x: 13.12d
+			y: 1.46d
 		}
 		{
 			dependencies: ["2675A4EA019B383F"]
@@ -878,8 +800,8 @@
 				item: { count: 1, id: "mekanism:diversion_transporter" }
 				type: "item"
 			}]
-			x: 8.75d
-			y: 2.92d
+			x: 7.29d
+			y: 1.46d
 		}
 		{
 			dependencies: ["21E51BEA3B8E3EDC"]
@@ -926,28 +848,6 @@
 			y: -1.46d
 		}
 		{
-			dependencies: ["20B4FD673AB88697"]
-			id: "2260C2216DA3DCE0"
-			tasks: [{
-				id: "35618C536A80A98F"
-				item: { count: 1, id: "mekanism:elite_bin" }
-				type: "item"
-			}]
-			x: 10.21d
-			y: 5.83d
-		}
-		{
-			dependencies: ["37A371118ADAA8F5"]
-			id: "324AF7933BC871B0"
-			tasks: [{
-				id: "0EBCE47DA9628ABD"
-				item: { count: 1, id: "mekanism:elite_chemical_tank" }
-				type: "item"
-			}]
-			x: 13.12d
-			y: 4.38d
-		}
-		{
 			dependencies: ["2133B29DE47BDC25"]
 			id: "132511B52E6234EF"
 			tasks: [{
@@ -981,17 +881,6 @@
 			y: 5.83d
 		}
 		{
-			dependencies: ["14B2E5EA9AF04DA9"]
-			id: "1AB7EB8D4C4B610F"
-			tasks: [{
-				id: "01F734DA94877533"
-				item: { count: 1, id: "mekanism:elite_energy_cube" }
-				type: "item"
-			}]
-			x: 14.58d
-			y: -4.38d
-		}
-		{
 			dependencies: ["7C834204DEE1813C"]
 			id: "6A9DAB624949191E"
 			tasks: [{
@@ -999,19 +888,8 @@
 				item: { count: 1, id: "mekanism:elite_enriching_factory" }
 				type: "item"
 			}]
-			x: 16.04d
+			x: 14.58d
 			y: -5.83d
-		}
-		{
-			dependencies: ["6E455A507171708C"]
-			id: "063AC8D565792B03"
-			tasks: [{
-				id: "0C43204B83B84EF3"
-				item: { count: 1, id: "mekanism:elite_fluid_tank" }
-				type: "item"
-			}]
-			x: 7.29d
-			y: 4.38d
 		}
 		{
 			dependencies: ["03E0ADE2191CC3FB"]
@@ -1164,7 +1042,7 @@
 				item: { count: 1, id: "mekanism:enrichment_chamber" }
 				type: "item"
 			}]
-			x: 16.04d
+			x: 14.58d
 			y: -1.46d
 		}
 		{
@@ -1406,8 +1284,8 @@
 				item: { count: 1, id: "mekanism:logistical_sorter" }
 				type: "item"
 			}]
-			x: 8.75d
-			y: 4.38d
+			x: 7.29d
+			y: 2.92d
 		}
 		{
 			dependencies: ["5FFDA262D7693860"]
@@ -1527,8 +1405,8 @@
 				item: { count: 1, id: "mekanism:oredictionificator" }
 				type: "item"
 			}]
-			x: 8.75d
-			y: 5.83d
+			x: 7.29d
+			y: 4.38d
 		}
 		{
 			dependencies: ["6A382549A4C55A5E"]
@@ -1562,28 +1440,6 @@
 			}]
 			x: 24.79d
 			y: -1.46d
-		}
-		{
-			dependencies: ["534B63750942C433"]
-			id: "1FEABE3B7724C8E8"
-			tasks: [{
-				id: "57C21F7C0E41B857"
-				item: { count: 1, id: "mekanism:personal_barrel" }
-				type: "item"
-			}]
-			x: 5.83d
-			y: 2.17d
-		}
-		{
-			dependencies: ["534B63750942C433"]
-			id: "2D82C0AAB6E4FF1D"
-			tasks: [{
-				id: "6B4BFC71325165F6"
-				item: { count: 1, id: "mekanism:personal_chest" }
-				type: "item"
-			}]
-			x: 5.83d
-			y: -2.17d
 		}
 		{
 			dependencies: ["44D8D30BCD48C4C9"]
@@ -1838,8 +1694,8 @@
 				item: { count: 1, id: "mekanismgenerators:solar_generator" }
 				type: "item"
 			}]
-			x: 11.67d
-			y: 5.83d
+			x: 13.12d
+			y: 4.38d
 		}
 		{
 			dependencies: ["44D8D30BCD48C4C9"]
@@ -2047,28 +1903,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2260C2216DA3DCE0"]
-			id: "1B268D5AFF2297A4"
-			tasks: [{
-				id: "5746A609B9CE11CA"
-				item: { count: 1, id: "mekanism:ultimate_bin" }
-				type: "item"
-			}]
-			x: 10.21d
-			y: 7.29d
-		}
-		{
-			dependencies: ["324AF7933BC871B0"]
-			id: "5E9BD9324145D1A5"
-			tasks: [{
-				id: "7C058447000A1441"
-				item: { count: 1, id: "mekanism:ultimate_chemical_tank" }
-				type: "item"
-			}]
-			x: 13.12d
-			y: 5.83d
-		}
-		{
 			dependencies: ["132511B52E6234EF"]
 			id: "6FA1BD39E9BB9392"
 			tasks: [{
@@ -2102,17 +1936,6 @@
 			y: 7.29d
 		}
 		{
-			dependencies: ["1AB7EB8D4C4B610F"]
-			id: "7B0383E898D9C362"
-			tasks: [{
-				id: "7B72608609B71B17"
-				item: { count: 1, id: "mekanism:ultimate_energy_cube" }
-				type: "item"
-			}]
-			x: 14.58d
-			y: -5.83d
-		}
-		{
 			dependencies: ["6A9DAB624949191E"]
 			id: "08A2F489A73BE55B"
 			tasks: [{
@@ -2120,19 +1943,8 @@
 				item: { count: 1, id: "mekanism:ultimate_enriching_factory" }
 				type: "item"
 			}]
-			x: 16.04d
+			x: 14.58d
 			y: -7.29d
-		}
-		{
-			dependencies: ["063AC8D565792B03"]
-			id: "75A91A9D8317EFC4"
-			tasks: [{
-				id: "1A32598CEC50BFBC"
-				item: { count: 1, id: "mekanism:ultimate_fluid_tank" }
-				type: "item"
-			}]
-			x: 7.29d
-			y: 5.83d
 		}
 		{
 			dependencies: ["2E50F969D8AE49B2"]
@@ -2257,10 +2069,17 @@
 		}
 		{
 			id: "510C7652FE3431AC"
-			tasks: [{
-				id: "56178346C40A3B91"
-				item: { count: 1, id: "mekanism:cardboard_box" }
+			rewards: [{
+				id: "75E742E3B0F1E32F"
+				item: {
+					count: 1
+					id: "mekanism:cardboard_box"
+				}
 				type: "item"
+			}]
+			tasks: [{
+				id: "13FBD6CBB3C0F41B"
+				type: "checkmark"
 			}]
 			x: 0.0d
 			y: 0.0d
@@ -2273,8 +2092,8 @@
 				item: { count: 1, id: "mekanismgenerators:wind_generator" }
 				type: "item"
 			}]
-			x: 11.67d
-			y: 4.38d
+			x: 13.12d
+			y: 2.92d
 		}
 	]
 }

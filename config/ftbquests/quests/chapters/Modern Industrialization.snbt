@@ -123,6 +123,43 @@
 			x: 32.0d
 			y: -7.75d
 		}
+		{
+			color: 0
+			height: 10.0d
+			image: "ftbquests:textures/gui/title_modern.png"
+			order: 1
+			rotation: 0.0d
+			width: 10.0d
+			x: 60.5d
+			y: 4.8d
+		}
+		{
+			color: 0
+			height: 10.0d
+			image: "ftbquests:textures/gui/title_indust.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 49.3d
+			y: 6.7d
+		}
+		{
+			color: 0
+			height: 10.0d
+			image: "ftbquests:textures/gui/title_rializ.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 55.8d
+			y: 6.7d
+		}
+		{
+			color: 0
+			height: 10.0d
+			image: "ftbquests:textures/gui/title_ation.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 61.6d
+			y: 6.7d
+		}
 	]
 	order_index: 2
 	quest_links: [ ]
@@ -1378,123 +1415,6 @@
 			y: -3.54d
 		}
 		{
-			dependencies: [
-				"250D1E2BFE6E0D50"
-				"2B4BFD88DF1A934D"
-				"47C1108CF46C81FC"
-				"22420EF3089DD7F6"
-				"7AF270EF635B11CF"
-				"439D48E9647FC8C2"
-				"6F63B60042A7F6AE"
-				"4722157BC8D3B965"
-				"0729CB454B970201"
-				"5676B5FD97FB10C3"
-				"2F66F85A601AC908"
-				"16AAEB122CDC1A46"
-				"7D0CF81F7E703B71"
-				"141E3D92CBA9F1B3"
-				"0C6D0B1C1AF75292"
-				"39FCE3168C26B863"
-				"50BFFEAF92B72965"
-				"16E5B09AA7E6A487"
-				"7593E582FA928061"
-				"0ED4263270D37EF6"
-				"1094111FB9512D75"
-				"1987DF7742136DC4"
-				"176524D0E4475298"
-				"24A4F1AA0BFFE867"
-				"5C8D7BD3DA61109F"
-				"1CA2825FFA775BBE"
-				"162DD68C3B91FC5E"
-				"475DC864A0BC0F1F"
-				"71776A6A96EB037C"
-				"62B245A23CA62678"
-				"1CC910880728D896"
-				"454FF6E2926163F7"
-				"27A396E8628B269E"
-				"2C4CA092A557205E"
-				"5401B18217772D6C"
-				"6BD625E5CA469914"
-				"091C2772ED417247"
-				"2D4170B5AD28DCBF"
-				"04A69DE982F47E64"
-				"1C25114D2AF71C35"
-				"6F6898DC529D1120"
-				"742A5BB44F257D8E"
-				"41D1344A31FEA6DF"
-				"1081BFCAB3F07FFF"
-				"45F0194CF3DCA5DD"
-				"37F3ABF113A1D399"
-				"5DD99224F29419C1"
-				"6CA941AE132445D9"
-				"0AC7D844C55119E1"
-				"67F2212453B81446"
-				"469641436BC858D3"
-				"791CAEBAE57EF0E1"
-				"07FE9074247583EE"
-				"660EFAF144F70749"
-				"3761B64135EA94C0"
-				"135FBE79D4415F15"
-				"6F57A2A5AA6E3F49"
-				"3C3519AFEBBAEC70"
-				"33D0760B5FEF7C46"
-				"163BCEEEE08F3898"
-				"47A8E5DC11E846C5"
-				"186F257352F2E844"
-				"29D05998ADC8ACF5"
-				"2472B23BC0C28C6C"
-				"215606B3A894512E"
-				"21EDEEE1A1B82B53"
-				"7C0FA555C5FE00D1"
-				"6EF133E0EC49BC33"
-				"325D7C592E2FB05A"
-				"6EBFFFB567687A1E"
-				"2BC64E1EB1BCE14D"
-				"2FB2FE782B1103D6"
-				"1D57C823A1F0203C"
-				"4980C231ECDB0BF2"
-				"0B2FF8169FD3812D"
-				"3143EA7DF096CE61"
-				"3357A8B614D477B6"
-				"707EBB99AA8F4C57"
-				"40915337B7E427F8"
-				"779C3C6B89AD2526"
-				"640DB4139DF8AFA4"
-				"42D6CC67AB29D7DA"
-				"20A093E5684D2E30"
-				"21584ECDBB6907DE"
-				"668453E081A6C57B"
-				"1AE719655A757BF1"
-				"3DF6354F7AC8D4A4"
-				"2B1717F5D6E20B79"
-				"54BF53CB70636C3F"
-				"164F4710E109F7F2"
-				"4A5466E364B85AEF"
-			]
-			hide_dependency_lines: true
-			icon: {
-				id: "modern_industrialization:steam_bucket"
-			}
-			id: "7D62935133EE5551"
-			min_width: 256
-			rewards: [{
-				id: "0DAD2263A3161570"
-				item: {
-					count: 1
-					id: "trofers:medium_pillar"
-				}
-				type: "item"
-			}]
-			shape: "gear"
-			size: 3.0d
-			tasks: [{
-				id: "143C77B57B8F5680"
-				type: "checkmark"
-			}]
-			x: 62.400000000000006d
-			y: 0.0d
-		}
-		{
 			dependencies: ["164F4710E109F7F2"]
 			id: "0AC7D844C55119E1"
 			tasks: [{
@@ -1758,7 +1678,7 @@
 					type: "item"
 				}
 			]
-			x: 59.88d
+			x: 60.0d
 			y: -0.71d
 		}
 		{
@@ -1875,8 +1795,8 @@
 				item: { count: 1, id: "modern_industrialization:quantum_upgrade" }
 				type: "item"
 			}]
-			x: 59.88d
-			y: -2.12d
+			x: 60.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0B2FF8169FD3812D"]
@@ -2400,7 +2320,7 @@
 				item: { count: 1, id: "modern_industrialization:uu_matter_bucket" }
 				type: "item"
 			}]
-			x: 59.88d
+			x: 60.0d
 			y: 0.71d
 		}
 		{
@@ -2481,6 +2401,81 @@
 			]
 			x: 27.29d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2472B23BC0C28C6C"
+				"2B1717F5D6E20B79"
+			]
+			id: "156575F76CAB51A0"
+			rewards: [
+				{
+					count: 2
+					id: "6E7B1E69D8E84DBF"
+					item: {
+						count: 1
+						id: "modern_industrialization:quantum_circuit"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "43FD7010BE97B2A9"
+					item: {
+						count: 1
+						id: "modern_industrialization:singularity"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1A3467C5591FABC4"
+				item: { count: 1, id: "modern_industrialization:replicator" }
+				type: "item"
+			}]
+			x: 62.0d
+			y: -0.71d
+		}
+		{
+			dependencies: ["2472B23BC0C28C6C"]
+			id: "7342F6461382E839"
+			rewards: [{
+				id: "70518237407BC98F"
+				item: {
+					count: 1
+					id: "modern_industrialization:quantum_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "12E59CCFCE999252"
+					item: { count: 1, id: "modern_industrialization:quantum_sword" }
+					type: "item"
+				}
+				{
+					id: "32AC154D810D2704"
+					item: { count: 1, id: "modern_industrialization:quantum_helmet" }
+					type: "item"
+				}
+				{
+					id: "27FFBB6824DE7D97"
+					item: { count: 1, id: "modern_industrialization:quantum_leggings" }
+					type: "item"
+				}
+				{
+					id: "4ACF8DDCD6233C7A"
+					item: { count: 1, id: "modern_industrialization:quantum_chestplate" }
+					type: "item"
+				}
+				{
+					id: "17648A7D805C38E1"
+					item: { count: 1, id: "modern_industrialization:quantum_boots" }
+					type: "item"
+				}
+			]
+			x: 60.0d
+			y: -3.5d
 		}
 	]
 }

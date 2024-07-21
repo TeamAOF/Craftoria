@@ -1,0 +1,640 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "42032FCAB6197EE7"
+	group: ""
+	icon: {
+		id: "minecraft:shield"
+	}
+	id: "42032FCAB6197EE7"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["68107A111627BD77"]
+			id: "6DDA86A3B4C0ACC1"
+			tasks: [
+				{
+					id: "7D7A6634C0D8537A"
+					item: { count: 1, id: "mininggadgets:mininggadget_simple" }
+					type: "item"
+				}
+				{
+					id: "081418C15BBAAC7D"
+					item: { count: 1, id: "mininggadgets:mininggadget_fancy" }
+					type: "item"
+				}
+				{
+					id: "417F8434C955D5E1"
+					item: { count: 1, id: "mininggadgets:mininggadget" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			id: "68107A111627BD77"
+			tasks: [{
+				id: "14A214A6FC56CC22"
+				item: { count: 1, id: "mininggadgets:modificationtable" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["68107A111627BD77"]
+			id: "234801C47F9B130A"
+			tasks: [
+				{
+					id: "6872850449233523"
+					item: { count: 1, id: "mininggadgets:upgrade_range_1" }
+					type: "item"
+				}
+				{
+					id: "15812A4AA1F00729"
+					item: { count: 1, id: "mininggadgets:upgrade_range_2" }
+					type: "item"
+				}
+				{
+					id: "5B374043F92971B5"
+					item: { count: 1, id: "mininggadgets:upgrade_range_3" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["68107A111627BD77"]
+			id: "44B610EE888A88A5"
+			tasks: [
+				{
+					id: "593E13BF088CB876"
+					item: { count: 1, id: "mininggadgets:upgrade_battery_1" }
+					type: "item"
+				}
+				{
+					id: "10B9A0A06F173CE8"
+					item: { count: 1, id: "mininggadgets:upgrade_battery_2" }
+					type: "item"
+				}
+				{
+					id: "2F9831521A41D67C"
+					item: { count: 1, id: "mininggadgets:upgrade_battery_3" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["68107A111627BD77"]
+			id: "3CDFF805003571A9"
+			tasks: [
+				{
+					id: "20C06B6906DEC51E"
+					item: { count: 1, id: "mininggadgets:upgrade_efficiency_1" }
+					type: "item"
+				}
+				{
+					id: "687221A6F23DF6EB"
+					item: { count: 1, id: "mininggadgets:upgrade_efficiency_2" }
+					type: "item"
+				}
+				{
+					id: "1634F4A430C55208"
+					item: { count: 1, id: "mininggadgets:upgrade_efficiency_3" }
+					type: "item"
+				}
+				{
+					id: "427B80FEABC12000"
+					item: { count: 1, id: "mininggadgets:upgrade_efficiency_4" }
+					type: "item"
+				}
+				{
+					id: "2294E5FC5F47DA22"
+					item: { count: 1, id: "mininggadgets:upgrade_efficiency_5" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["68107A111627BD77"]
+			id: "4F61F8FA290B2B6D"
+			tasks: [
+				{
+					id: "4170ED68E12BC30A"
+					item: { count: 1, id: "mininggadgets:upgrade_fortune_1" }
+					type: "item"
+				}
+				{
+					id: "772C14BFB15B462C"
+					item: { count: 1, id: "mininggadgets:upgrade_fortune_2" }
+					type: "item"
+				}
+				{
+					id: "51C2642CC3BADAB8"
+					item: { count: 1, id: "mininggadgets:upgrade_fortune_3" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["68107A111627BD77"]
+			id: "0C907D9AD9A6823A"
+			tasks: [
+				{
+					id: "70A894AB28F8B212"
+					item: { count: 1, id: "mininggadgets:upgrade_light_placer" }
+					type: "item"
+				}
+				{
+					id: "07466066E464F127"
+					item: { count: 1, id: "mininggadgets:upgrade_freezing" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["68107A111627BD77"]
+			id: "0295E32828863704"
+			tasks: [
+				{
+					id: "02226591D8828CCC"
+					item: { count: 1, id: "mininggadgets:upgrade_silk" }
+					type: "item"
+				}
+				{
+					id: "43D82D94AAA6F6E7"
+					item: { count: 1, id: "mininggadgets:upgrade_void_junk" }
+					type: "item"
+				}
+				{
+					id: "2B545D14110B0F6C"
+					item: { count: 1, id: "mininggadgets:upgrade_magnet" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["68107A111627BD77"]
+			id: "7402CBB0750E58DB"
+			tasks: [
+				{
+					id: "0D1D1945E8E24B2E"
+					item: { count: 1, id: "mininggadgets:upgrade_size_1" }
+					type: "item"
+				}
+				{
+					id: "3880A9AB2BD1B088"
+					item: { count: 1, id: "mininggadgets:upgrade_size_2" }
+					type: "item"
+				}
+				{
+					id: "2FBF8CA503550044"
+					item: { count: 1, id: "mininggadgets:upgrade_size_3" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["3CEBC51DB3555C3E"]
+			icon: {
+				id: "advancednetherite:netherite_iron_helmet"
+			}
+			id: "468E6FCD361B1404"
+			tasks: [
+				{
+					id: "4350B1544F810564"
+					item: { count: 1, id: "advancednetherite:netherite_iron_helmet" }
+					type: "item"
+				}
+				{
+					id: "2EE84E3B49E553EE"
+					item: { count: 1, id: "advancednetherite:netherite_iron_chestplate" }
+					type: "item"
+				}
+				{
+					id: "326A8EC5F96AA1B2"
+					item: { count: 1, id: "advancednetherite:netherite_iron_leggings" }
+					type: "item"
+				}
+				{
+					id: "41426F48E55770BE"
+					item: { count: 1, id: "advancednetherite:netherite_iron_boots" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3CEBC51DB3555C3E"]
+			icon: {
+				id: "advancednetherite:netherite_gold_chestplate"
+			}
+			id: "1D1F4BD3405603B0"
+			tasks: [
+				{
+					id: "6D5997EB069678E3"
+					item: { count: 1, id: "advancednetherite:netherite_gold_helmet" }
+					type: "item"
+				}
+				{
+					id: "17B96524D82E5A77"
+					item: { count: 1, id: "advancednetherite:netherite_gold_chestplate" }
+					type: "item"
+				}
+				{
+					id: "47D72C3344104639"
+					item: { count: 1, id: "advancednetherite:netherite_gold_leggings" }
+					type: "item"
+				}
+				{
+					id: "16D3ADA4F24AF940"
+					item: { count: 1, id: "advancednetherite:netherite_gold_boots" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3CEBC51DB3555C3E"]
+			icon: {
+				id: "advancednetherite:netherite_emerald_leggings"
+			}
+			id: "4B486C7CC66F1745"
+			tasks: [
+				{
+					id: "74D4524E3B2E651B"
+					item: { count: 1, id: "advancednetherite:netherite_emerald_helmet" }
+					type: "item"
+				}
+				{
+					id: "34F7B09FBBC45AE8"
+					item: { count: 1, id: "advancednetherite:netherite_emerald_chestplate" }
+					type: "item"
+				}
+				{
+					id: "02F70E0760D2E2EE"
+					item: { count: 1, id: "advancednetherite:netherite_emerald_leggings" }
+					type: "item"
+				}
+				{
+					id: "5CBC321E3EA4F128"
+					item: { count: 1, id: "advancednetherite:netherite_emerald_boots" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3CEBC51DB3555C3E"]
+			icon: {
+				id: "advancednetherite:netherite_diamond_boots"
+			}
+			id: "6656A5E5D8FDABE9"
+			tasks: [
+				{
+					id: "68455CE4921311F5"
+					item: { count: 1, id: "advancednetherite:netherite_diamond_helmet" }
+					type: "item"
+				}
+				{
+					id: "772ED274CC823802"
+					item: { count: 1, id: "advancednetherite:netherite_diamond_chestplate" }
+					type: "item"
+				}
+				{
+					id: "44DE66AC4ECF5F59"
+					item: { count: 1, id: "advancednetherite:netherite_diamond_leggings" }
+					type: "item"
+				}
+				{
+					id: "59B2E542FDE85120"
+					item: { count: 1, id: "advancednetherite:netherite_diamond_boots" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3CEBC51DB3555C3E"]
+			id: "2230589E0FCA8FDD"
+			tasks: [
+				{
+					id: "588D7B847C13478C"
+					item: { count: 1, id: "advancednetherite:netherite_iron_axe" }
+					type: "item"
+				}
+				{
+					id: "1D010C11F3CDCDBE"
+					item: { count: 1, id: "advancednetherite:netherite_iron_hoe" }
+					type: "item"
+				}
+				{
+					id: "0BE424ECE95F6693"
+					item: { count: 1, id: "advancednetherite:netherite_iron_pickaxe" }
+					type: "item"
+				}
+				{
+					id: "1728B7394742A1ED"
+					item: { count: 1, id: "advancednetherite:netherite_iron_shovel" }
+					type: "item"
+				}
+				{
+					id: "21315AB855546588"
+					item: { count: 1, id: "advancednetherite:netherite_iron_sword" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3CEBC51DB3555C3E"]
+			id: "61D2494A05ED6BFE"
+			tasks: [
+				{
+					id: "01733E64C2608118"
+					item: { count: 1, id: "advancednetherite:netherite_gold_axe" }
+					type: "item"
+				}
+				{
+					id: "5883C28DF6B9939D"
+					item: { count: 1, id: "advancednetherite:netherite_gold_hoe" }
+					type: "item"
+				}
+				{
+					id: "2980DFDDF9FC4084"
+					item: { count: 1, id: "advancednetherite:netherite_gold_pickaxe" }
+					type: "item"
+				}
+				{
+					id: "15945314CC1768F5"
+					item: { count: 1, id: "advancednetherite:netherite_gold_shovel" }
+					type: "item"
+				}
+				{
+					id: "7B0C6D3232EA520D"
+					item: { count: 1, id: "advancednetherite:netherite_gold_sword" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3CEBC51DB3555C3E"]
+			id: "6863855483D18530"
+			tasks: [
+				{
+					id: "5413CD3141604F0C"
+					item: { count: 1, id: "advancednetherite:netherite_emerald_axe" }
+					type: "item"
+				}
+				{
+					id: "5E1A84E378469E93"
+					item: { count: 1, id: "advancednetherite:netherite_emerald_hoe" }
+					type: "item"
+				}
+				{
+					id: "6DE4CB12145A8FDD"
+					item: { count: 1, id: "advancednetherite:netherite_emerald_pickaxe" }
+					type: "item"
+				}
+				{
+					id: "7F5C46FE62609C6D"
+					item: { count: 1, id: "advancednetherite:netherite_emerald_shovel" }
+					type: "item"
+				}
+				{
+					id: "2DFFC5D62279CE72"
+					item: { count: 1, id: "advancednetherite:netherite_emerald_sword" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3CEBC51DB3555C3E"]
+			id: "65333CAC62E70C32"
+			tasks: [
+				{
+					id: "783652DB7CF1492B"
+					item: { count: 1, id: "advancednetherite:netherite_diamond_axe" }
+					type: "item"
+				}
+				{
+					id: "3D89998C43056FCA"
+					item: { count: 1, id: "advancednetherite:netherite_diamond_hoe" }
+					type: "item"
+				}
+				{
+					id: "5D3A993FA4912BFA"
+					item: { count: 1, id: "advancednetherite:netherite_diamond_pickaxe" }
+					type: "item"
+				}
+				{
+					id: "538DC997AAF986A4"
+					item: { count: 1, id: "advancednetherite:netherite_diamond_shovel" }
+					type: "item"
+				}
+				{
+					id: "113D51A0C2018702"
+					item: { count: 1, id: "advancednetherite:netherite_diamond_sword" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "3CEBC51DB3555C3E"
+			tasks: [{
+				id: "7ADDEF2457D8E760"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "34851881729019E9"
+			tasks: [{
+				id: "6C741AF2DAE3E8D6"
+				item: { count: 1, id: "mekanismtools:iron_paxel" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			id: "20C64AAAD2B29F3C"
+			tasks: [{
+				id: "7BE9496B4205F651"
+				item: { count: 1, id: "mekanism:atomic_disassembler" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0F5FE44BAC4E06D4"]
+			id: "40564F697C9E1342"
+			tasks: [
+				{
+					id: "30D975ECB98B3A8A"
+					item: { count: 1, id: "aquaculture:neptunium_pickaxe" }
+					type: "item"
+				}
+				{
+					id: "27E5466D1AE540EA"
+					item: { count: 1, id: "aquaculture:neptunium_shovel" }
+					type: "item"
+				}
+				{
+					id: "60B0A85C78355167"
+					item: { count: 1, id: "aquaculture:neptunium_axe" }
+					type: "item"
+				}
+				{
+					id: "1D1068AE335D6FE5"
+					item: { count: 1, id: "aquaculture:neptunium_hoe" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0F5FE44BAC4E06D4"]
+			id: "70A9D5852BBA6144"
+			tasks: [{
+				id: "6A55F203BEB97093"
+				item: { count: 1, id: "aquaculture:neptunium_fishing_rod" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0F5FE44BAC4E06D4"]
+			id: "5F8495DC8E1B24BC"
+			tasks: [
+				{
+					id: "03B0C665E77BBB1D"
+					item: { count: 1, id: "aquaculture:neptunium_sword" }
+					type: "item"
+				}
+				{
+					id: "7ACEDE950C071AAA"
+					item: { count: 1, id: "aquaculture:neptunium_fillet_knife" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0F5FE44BAC4E06D4"]
+			id: "0AC5BE6934118778"
+			tasks: [{
+				id: "3B06B4F7D6F2C5AC"
+				item: { count: 1, id: "aquaculture:neptunium_helmet" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0F5FE44BAC4E06D4"]
+			id: "5FED7FD4E2BB3C3B"
+			tasks: [{
+				id: "334EF7A6C7186E07"
+				item: { count: 1, id: "aquaculture:neptunium_chestplate" }
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F5FE44BAC4E06D4"]
+			id: "431B5333B30B42CA"
+			tasks: [{
+				id: "43E5F48B62811AEA"
+				item: { count: 1, id: "aquaculture:neptunium_leggings" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0F5FE44BAC4E06D4"]
+			id: "57F8ADC972482202"
+			tasks: [{
+				id: "5763B229E4CF1F22"
+				item: { count: 1, id: "aquaculture:neptunium_boots" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0F5FE44BAC4E06D4"]
+			id: "00E5924CEB0545D9"
+			tasks: [{
+				id: "259163819C257F46"
+				item: { count: 1, id: "aquaculture:neptunium_bow" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			id: "0F5FE44BAC4E06D4"
+			tasks: [{
+				id: "5F902C39A22782D5"
+				item: { count: 1, id: "aquaculture:neptunium_ingot" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			id: "388F33607D9D951E"
+			tasks: [{
+				id: "7A70075492A2C6C4"
+				item: { count: 1, id: "modern_industrialization:diesel_mining_drill" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			id: "5A13F163564B895F"
+			tasks: [{
+				id: "7ADDC558F8E117C8"
+				item: { count: 1, id: "modern_industrialization:steam_mining_drill" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.5d
+		}
+	]
+}

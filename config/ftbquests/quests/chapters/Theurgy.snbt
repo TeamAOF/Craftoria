@@ -9,30 +9,30 @@
 	id: "5A3894BACC5E8994"
 	images: [
 		{
-			height: 16.0d
+			height: 25.0d
 			image: "theurgy:textures/gui/book/bg_nightsky2.png"
-			rotation: 0.0d
-			width: 32.0d
-			x: -4.7d
-			y: -4.1d
+			rotation: -90.0d
+			width: 15.0d
+			x: -4.75d
+			y: -5.0d
 		}
 		{
 			color: 16720214
-			height: 16.0d
+			height: 15.0d
 			image: "theurgy:block/sal_ammoniac/flow"
 			rotation: 0.0d
 			width: 0.5d
-			x: 9.1d
-			y: -4.1d
+			x: 6.0d
+			y: -5.0d
 		}
 		{
 			color: 16720214
-			height: 16.0d
+			height: 15.0d
 			image: "theurgy:block/sal_ammoniac/flow"
 			rotation: 0.0d
 			width: 0.5d
-			x: -18.5d
-			y: -4.1d
+			x: -15.75d
+			y: -5.0d
 		}
 		{
 			height: 2.0d
@@ -40,8 +40,8 @@
 			order: 100
 			rotation: 0.0d
 			width: 2.0d
-			x: -13.5d
-			y: -6.0d
+			x: -10.8d
+			y: -7.0d
 		}
 		{
 			height: 1.5d
@@ -49,8 +49,8 @@
 			order: 10
 			rotation: 22.5d
 			width: 1.5d
-			x: -11.0d
-			y: -9.0d
+			x: -8.3d
+			y: -10.0d
 		}
 		{
 			height: 1.0d
@@ -58,8 +58,8 @@
 			order: 10
 			rotation: -22.5d
 			width: 1.0d
-			x: -13.6d
-			y: -9.5d
+			x: -10.9d
+			y: -10.5d
 		}
 		{
 			height: 1.0d
@@ -67,40 +67,49 @@
 			order: 10
 			rotation: 45.0d
 			width: 1.0d
-			x: -16.0d
-			y: -8.2d
+			x: -13.3d
+			y: -9.2d
 		}
 		{
 			height: 3.25d
 			image: "theurgy:textures/particle/particle_glow.png"
 			rotation: 0.0d
 			width: 3.25d
-			x: -13.5d
-			y: -6.0d
+			x: -10.8d
+			y: -7.0d
 		}
 		{
 			height: 2.25d
 			image: "theurgy:textures/particle/particle_glow.png"
 			rotation: 22.5d
 			width: 2.25d
-			x: -11.0d
-			y: -9.0d
+			x: -8.3d
+			y: -10.0d
 		}
 		{
 			height: 1.5d
 			image: "theurgy:textures/particle/particle_glow.png"
 			rotation: -22.5d
 			width: 1.5d
-			x: -13.6d
-			y: -9.5d
+			x: -10.9d
+			y: -10.5d
 		}
 		{
 			height: 1.5d
 			image: "theurgy:textures/particle/particle_glow.png"
 			rotation: 45.0d
 			width: 1.5d
-			x: -16.0d
-			y: -8.2d
+			x: -13.3d
+			y: -9.2d
+		}
+		{
+			color: 16720214
+			height: 8.0d
+			image: "ftbquests:textures/gui/title_theurgy.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 1.0d
+			y: -9.75d
 		}
 	]
 	order_index: 1
@@ -157,8 +166,8 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
-			y: -1.7d
+			x: -6.25d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4E8963E1C18ADBAB"]
@@ -484,8 +493,8 @@
 				item: { count: 1, id: "theurgy:logistics_item_inserter" }
 				type: "item"
 			}]
-			x: 1.9d
-			y: -1.7d
+			x: 2.75d
+			y: -1.25d
 		}
 		{
 			dependencies: ["7DD81584380EE8F7"]
@@ -501,8 +510,8 @@
 				item: { count: 1, id: "theurgy:copper_wire" }
 				type: "item"
 			}]
-			x: 4.2d
-			y: -0.8d
+			x: 4.75d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7DD81584380EE8F7"]
@@ -518,8 +527,8 @@
 				item: { count: 1, id: "theurgy:logistics_item_extractor" }
 				type: "item"
 			}]
-			x: 5.3d
-			y: -3.0d
+			x: 5.25d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7DD81584380EE8F7"]
@@ -535,7 +544,7 @@
 				item: { count: 1, id: "theurgy:list_filter" }
 				type: "item"
 			}]
-			x: 2.9d
+			x: 3.75d
 			y: -1.0d
 		}
 		{
@@ -552,8 +561,8 @@
 				item: { count: 1, id: "theurgy:logistics_connector_node" }
 				type: "item"
 			}]
-			x: 4.9d
-			y: -1.8d
+			x: 5.25d
+			y: -2.5d
 		}
 		{
 			dependencies: ["55391FF509DA53A5"]
@@ -586,8 +595,8 @@
 				item: { count: 1, id: "theurgy:sulfur_attuned_divination_rod_abundant" }
 				type: "item"
 			}]
-			x: -10.6d
-			y: -2.4d
+			x: -9.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["55391FF509DA53A5"]
@@ -603,8 +612,8 @@
 				item: { count: 1, id: "theurgy:divination_rod_t1" }
 				type: "item"
 			}]
-			x: -12.3d
-			y: -0.6d
+			x: -10.75d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -623,8 +632,8 @@
 				item: { components: { "theurgy:divination_linked_block": "minecraft:budding_amethyst" }, count: 1, id: "theurgy:amethyst_divination_rod" }
 				type: "item"
 			}]
-			x: -12.6d
-			y: -2.9d
+			x: -9.9d
+			y: -3.9000000000000004d
 		}
 		{
 			dependencies: ["0D1AFCAD90FAA4F9"]
@@ -640,8 +649,8 @@
 				item: { count: 1, id: "theurgy:sulfur_attuned_divination_rod_rare" }
 				type: "item"
 			}]
-			x: -9.4d
-			y: -6.3d
+			x: -6.700000000000001d
+			y: -7.3d
 		}
 		{
 			dependencies: ["4F2C4595C25E23E1"]
@@ -657,8 +666,8 @@
 				item: { count: 1, id: "theurgy:sulfur_attuned_divination_rod_precious" }
 				type: "item"
 			}]
-			x: -8.5d
-			y: -8.5d
+			x: -5.800000000000001d
+			y: -9.5d
 		}
 		{
 			dependencies: ["58E5ADE9A50BDF29"]
@@ -674,8 +683,8 @@
 				item: { count: 1, id: "theurgy:divination_rod_t2" }
 				type: "item"
 			}]
-			x: -14.5d
-			y: -2.9d
+			x: -11.8d
+			y: -3.9000000000000004d
 		}
 		{
 			dependencies: ["45013F74F5B4A93E"]
@@ -691,8 +700,8 @@
 				item: { count: 1, id: "theurgy:divination_rod_t3" }
 				type: "item"
 			}]
-			x: -16.5d
-			y: -3.6d
+			x: -13.8d
+			y: -4.6d
 		}
 		{
 			dependencies: ["248175A1E0825C2F"]
@@ -708,8 +717,8 @@
 				item: { count: 1, id: "theurgy:divination_rod_t4" }
 				type: "item"
 			}]
-			x: -17.2d
-			y: -5.9d
+			x: -14.5d
+			y: -6.9d
 		}
 		{
 			dependencies: ["58E5ADE9A50BDF29"]
@@ -725,8 +734,8 @@
 				item: { count: 1, id: "theurgy:sulfur_attuned_divination_rod_common" }
 				type: "item"
 			}]
-			x: -10.8d
-			y: -4.5d
+			x: -8.100000000000001d
+			y: -5.5d
 		}
 		{
 			dependencies: ["077658D04D0D4AB3"]
@@ -816,8 +825,8 @@
 					type: "item"
 				}
 			]
-			x: 3.9d
-			y: -4.7d
+			x: 2.25d
+			y: -5.5d
 		}
 		{
 			dependencies: ["790B49348370BE10"]
@@ -865,8 +874,8 @@
 					type: "item"
 				}
 			]
-			x: 4.700000000000001d
-			y: -5.6000000000000005d
+			x: 3.0500000000000007d
+			y: -6.4d
 		}
 		{
 			dependencies: ["790B49348370BE10"]
@@ -939,8 +948,8 @@
 					type: "item"
 				}
 			]
-			x: 5.800000000000001d
-			y: -5.7d
+			x: 4.15d
+			y: -6.5d
 		}
 		{
 			dependencies: ["790B49348370BE10"]
@@ -1028,8 +1037,8 @@
 					type: "item"
 				}
 			]
-			x: 6.9d
-			y: -5.1000000000000005d
+			x: 5.25d
+			y: -5.9d
 		}
 		{
 			dependencies: ["790B49348370BE10"]
@@ -1067,8 +1076,8 @@
 					type: "item"
 				}
 			]
-			x: 6.800000000000001d
-			y: -4.1000000000000005d
+			x: 5.15d
+			y: -4.9d
 		}
 		{
 			dependencies: ["7DD81584380EE8F7"]
@@ -1083,8 +1092,8 @@
 				id: "0352346D1E6B1314"
 				type: "checkmark"
 			}]
-			x: 5.4d
-			y: -4.4d
+			x: 3.75d
+			y: -5.2d
 		}
 	]
 }
