@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: "hexagon"
 	filename: "Just Dire Things"
 	group: ""
@@ -189,6 +189,7 @@
 		}
 		{
 			dependencies: ["6FF7CECC5DAF516B"]
+			hide_dependency_lines: false
 			icon_scale: 1.25d
 			id: "75C95D894C3B3428"
 			size: 1.25d
@@ -245,6 +246,7 @@
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
+			hide_dependency_lines: false
 			id: "4B0CDF7941199C8E"
 			tasks: [{
 				id: "4570F05721CA88EE"
@@ -256,6 +258,7 @@
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
+			hide_dependency_lines: false
 			id: "7F4BFF2C6E887FCC"
 			tasks: [{
 				id: "166E2D9ABA34467F"
@@ -266,6 +269,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["75C95D894C3B3428"]
 			id: "03F624101CDF5291"
 			tasks: [{
 				id: "043F546DF6CD3912"
@@ -276,6 +280,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["75C95D894C3B3428"]
 			id: "65A75D8101BEB05F"
 			tasks: [{
 				id: "603F97BAC146E443"
@@ -286,6 +291,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["75C95D894C3B3428"]
 			id: "49910F2EFEA1CDF2"
 			tasks: [{
 				id: "7206A740A702E7DA"
@@ -296,6 +302,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["75C95D894C3B3428"]
 			id: "69BD8400AAA37066"
 			tasks: [{
 				id: "352634B08DBFE9BB"
@@ -306,6 +313,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["202149DADCC786EE"]
 			id: "2CE7390F7567D9E2"
 			tasks: [{
 				id: "698A95F79B2672C3"
@@ -316,6 +324,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["202149DADCC786EE"]
 			id: "3AE00D06232E0175"
 			tasks: [{
 				id: "77F8077AD4D7B64C"
@@ -326,6 +335,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["75C95D894C3B3428"]
 			id: "516F2A1A1270D9DC"
 			tasks: [{
 				id: "460B4D102C0DB472"
@@ -337,6 +347,7 @@
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
+			hide_dependency_lines: false
 			id: "42EC7168ADC6AF76"
 			shape: "hexagon"
 			tasks: [{
@@ -349,6 +360,7 @@
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
+			hide_dependency_lines: false
 			id: "48E96D243486D38E"
 			tasks: [{
 				id: "3C7C6A0848B82F9C"
@@ -360,6 +372,7 @@
 		}
 		{
 			dependencies: ["08B17C05B2111477"]
+			hide_dependency_lines: false
 			id: "6FE07EECD4579FD4"
 			tasks: [{
 				id: "0BA8C5C4D8993D7C"
@@ -370,6 +383,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["75C95D894C3B3428"]
 			id: "69403313B37E8219"
 			tasks: [{
 				id: "35CA940ED584594A"
@@ -380,6 +394,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["202149DADCC786EE"]
 			id: "4D59020A532C4E92"
 			tasks: [{
 				id: "6986A9AB7F1B8711"
@@ -390,6 +405,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["18CEE2F64F6E53E6"]
 			id: "03271CEB2EBD0979"
 			tasks: [{
 				id: "71C29108A100BC42"
@@ -400,6 +416,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["75C95D894C3B3428"]
 			id: "62F43B936E236071"
 			tasks: [{
 				id: "45EF326E06F8CD36"
@@ -410,6 +427,10 @@
 			y: 3.0d
 		}
 		{
+			dependencies: [
+				"75C95D894C3B3428"
+				"7F4BFF2C6E887FCC"
+			]
 			id: "5CD12382792FA310"
 			tasks: [{
 				id: "5A081335B87B4EED"
@@ -421,6 +442,7 @@
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
+			hide_dependency_lines: false
 			id: "18680FEE2B6FF16F"
 			tasks: [{
 				id: "05BCE648F9BDB960"
@@ -432,6 +454,7 @@
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
+			hide_dependency_lines: false
 			id: "4D1B83E147CC16AE"
 			tasks: [{
 				id: "287673603CBF057C"
@@ -443,6 +466,7 @@
 		}
 		{
 			dependencies: ["08B17C05B2111477"]
+			hide_dependency_lines: false
 			id: "35F6CAD5BE56A32A"
 			tasks: [{
 				id: "0EA94CE8F38992E8"
@@ -454,6 +478,7 @@
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
+			hide_dependency_lines: false
 			id: "2023CDC95630D9B0"
 			tasks: [{
 				id: "5B183534CA415EED"
@@ -465,6 +490,7 @@
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
+			hide_dependency_lines: false
 			id: "29E3DC274AF5DAFA"
 			tasks: [{
 				id: "37D3020A390BEA01"
@@ -476,6 +502,7 @@
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
+			hide_dependency_lines: false
 			id: "030E566682A89105"
 			tasks: [{
 				id: "2E067E94640CF58F"
@@ -486,6 +513,7 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["75C95D894C3B3428"]
 			id: "21AE41FA52DB561D"
 			tasks: [{
 				id: "1F56BC37DE506C77"
@@ -496,6 +524,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["75C95D894C3B3428"]
 			id: "1AD1C99F9C383632"
 			tasks: [{
 				id: "2B3172C19418F261"
@@ -519,6 +548,7 @@
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
+			hide_dependency_lines: false
 			id: "5707678AB1482B68"
 			tasks: [{
 				id: "1C4994BFC97CC68C"
@@ -530,6 +560,7 @@
 		}
 		{
 			dependencies: ["08B17C05B2111477"]
+			hide_dependency_lines: false
 			id: "160740771654F4E6"
 			tasks: [{
 				id: "30672EC11094DA74"
@@ -540,6 +571,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["202149DADCC786EE"]
 			id: "39460CB77E53D5FA"
 			tasks: [{
 				id: "6D36D4D4D52FBC67"
@@ -550,6 +582,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["75C95D894C3B3428"]
 			id: "045942C709C63044"
 			tasks: [{
 				id: "539621E4CAEFD94C"
@@ -561,6 +594,7 @@
 		}
 		{
 			dependencies: ["08B17C05B2111477"]
+			hide_dependency_lines: false
 			id: "322A0B6AC3347EB4"
 			tasks: [{
 				id: "14BC1BC81DABE14C"
@@ -572,6 +606,7 @@
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
+			hide_dependency_lines: false
 			id: "0ECDE9598DABBD3A"
 			tasks: [{
 				id: "02430C34E1C246B6"
@@ -583,6 +618,7 @@
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
+			hide_dependency_lines: false
 			id: "6201E6DF709C29D0"
 			size: 1.0d
 			tasks: [
@@ -612,6 +648,7 @@
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
+			hide_dependency_lines: false
 			id: "4D05AA18CF654D70"
 			tasks: [
 				{
@@ -650,6 +687,7 @@
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
+			hide_dependency_lines: false
 			id: "1F81CBD8519E244B"
 			tasks: [
 				{
@@ -678,6 +716,7 @@
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
+			hide_dependency_lines: false
 			id: "3492CFBA1602D7F2"
 			tasks: [
 				{
@@ -706,6 +745,7 @@
 		}
 		{
 			dependencies: ["08B17C05B2111477"]
+			hide_dependency_lines: false
 			id: "68A8995F4A13381A"
 			tasks: [
 				{
@@ -734,6 +774,7 @@
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
+			hide_dependency_lines: false
 			id: "6B0418E2AC06FF09"
 			tasks: [
 				{
@@ -772,6 +813,7 @@
 		}
 		{
 			dependencies: ["08B17C05B2111477"]
+			hide_dependency_lines: false
 			id: "495EEAA73357FA60"
 			tasks: [
 				{
@@ -810,6 +852,7 @@
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
+			hide_dependency_lines: false
 			id: "4BF483174CC0A0F1"
 			tasks: [
 				{
@@ -847,6 +890,7 @@
 			y: -4.25d
 		}
 		{
+			dependencies: ["6FF7CECC5DAF516B"]
 			icon: {
 				id: "justdirethings:raw_ferricore_ore"
 			}
@@ -863,6 +907,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["55542D5D7CDA77A5"]
 			icon: {
 				id: "justdirethings:raw_blazegold_ore"
 			}
@@ -879,6 +924,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["1AEF6E844F39155D"]
 			icon: {
 				id: "justdirethings:raw_celestigem_ore"
 			}
@@ -895,6 +941,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["7F3A28754CD6AD41"]
 			icon: {
 				id: "justdirethings:raw_eclipsealloy_ore"
 			}
@@ -911,16 +958,30 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["715275CB90EF8406"]
 			id: "0F121433B94D72D9"
 			shape: "rsquare"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "786CAAE3D7E4D5C3"
-				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:upgrade_blank)item(justdirethings:upgrade_cauterizewounds)item(justdirethings:upgrade_deathprotection)item(justdirethings:upgrade_debuffremover)item(justdirethings:upgrade_decoy)item(justdirethings:upgrade_dropteleport)item(justdirethings:upgrade_earthquake)item(justdirethings:upgrade_elytra)item(justdirethings:upgrade_epicarrow)item(justdirethings:upgrade_extinguish)item(justdirethings:upgrade_flight)item(justdirethings:upgrade_glowing)item(justdirethings:upgrade_groundstomp)item(justdirethings:upgrade_hammer)item(justdirethings:upgrade_homing)item(justdirethings:upgrade_instabreak)item(justdirethings:upgrade_invulnerability)item(justdirethings:upgrade_jumpboost)item(justdirethings:upgrade_lavaimmunity)item(justdirethings:upgrade_lawnmower)item(justdirethings:upgrade_leafbreaker)item(justdirethings:upgrade_lingering)item(justdirethings:upgrade_mindfog)item(justdirethings:upgrade_mobscanner)item(justdirethings:upgrade_negatefalldamage)item(justdirethings:upgrade_nightvision)item(justdirethings:upgrade_noai)item(justdirethings:upgrade_oreminer)item(justdirethings:upgrade_orescanner)item(justdirethings:upgrade_orexray)item(justdirethings:upgrade_phase)item(justdirethings:upgrade_potionarrow)item(justdirethings:upgrade_runspeed)item(justdirethings:upgrade_skysweeper)item(justdirethings:upgrade_smelter)item(justdirethings:upgrade_smoker)item(justdirethings:upgrade_splash)item(justdirethings:upgrade_stepheight)item(justdirethings:upgrade_stupefy)item(justdirethings:upgrade_swimspeed)item(justdirethings:upgrade_treefeller)item(justdirethings:upgrade_walkspeed))", "minecraft:custom_name": "\"Upgrades\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:upgrade_cauterizewounds)item(justdirethings:upgrade_deathprotection)item(justdirethings:upgrade_debuffremover)item(justdirethings:upgrade_decoy)item(justdirethings:upgrade_dropteleport)item(justdirethings:upgrade_earthquake)item(justdirethings:upgrade_elytra)item(justdirethings:upgrade_epicarrow)item(justdirethings:upgrade_extinguish)item(justdirethings:upgrade_flight)item(justdirethings:upgrade_glowing)item(justdirethings:upgrade_groundstomp)item(justdirethings:upgrade_hammer)item(justdirethings:upgrade_homing)item(justdirethings:upgrade_instabreak)item(justdirethings:upgrade_invulnerability)item(justdirethings:upgrade_jumpboost)item(justdirethings:upgrade_lavaimmunity)item(justdirethings:upgrade_lawnmower)item(justdirethings:upgrade_leafbreaker)item(justdirethings:upgrade_lingering)item(justdirethings:upgrade_mindfog)item(justdirethings:upgrade_mobscanner)item(justdirethings:upgrade_negatefalldamage)item(justdirethings:upgrade_nightvision)item(justdirethings:upgrade_noai)item(justdirethings:upgrade_oreminer)item(justdirethings:upgrade_orescanner)item(justdirethings:upgrade_orexray)item(justdirethings:upgrade_phase)item(justdirethings:upgrade_potionarrow)item(justdirethings:upgrade_runspeed)item(justdirethings:upgrade_skysweeper)item(justdirethings:upgrade_smelter)item(justdirethings:upgrade_smoker)item(justdirethings:upgrade_splash)item(justdirethings:upgrade_stepheight)item(justdirethings:upgrade_stupefy)item(justdirethings:upgrade_swimspeed)item(justdirethings:upgrade_treefeller)item(justdirethings:upgrade_walkspeed))", "minecraft:custom_name": "\"Upgrades\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.0d
-			y: 3.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["75C95D894C3B3428"]
+			id: "715275CB90EF8406"
+			shape: "rsquare"
+			tasks: [{
+				count: 5L
+				id: "767C1AEB96CFDFFE"
+				item: { count: 1, id: "justdirethings:upgrade_blank" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.75d
 		}
 	]
 }
