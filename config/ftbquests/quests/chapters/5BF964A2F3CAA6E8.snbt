@@ -1,0 +1,974 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5BF964A2F3CAA6E8"
+	group: ""
+	icon: {
+		id: "advancednetherite:netherite_diamond_axe"
+	}
+	id: "5BF964A2F3CAA6E8"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0A6A32C28F0DCDFE"
+			tasks: [{
+				id: "4D16869C29EDB891"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["18416E8B02E02817"]
+			id: "0E8B36B67840AADD"
+			tasks: [{
+				id: "0A13CC3B2B6A5525"
+				item: { count: 1, id: "pylons:expulsion_pylon" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3B429F0556B85DF0"]
+			id: "7E194859BAD7B5A8"
+			tasks: [{
+				id: "0CE033E06E31FE63"
+				item: { count: 1, id: "pylons:infusion_pylon" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -8.5d
+		}
+		{
+			id: "18416E8B02E02817"
+			tasks: [{
+				id: "3EAC475D6EE10260"
+				item: { count: 1, id: "pylons:harvester_pylon" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0E8B36B67840AADD"]
+			id: "3B429F0556B85DF0"
+			tasks: [{
+				id: "265BD532C3036CF7"
+				item: { count: 1, id: "pylons:interdiction_pylon" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0A6A32C28F0DCDFE"]
+			id: "71B6DA56399050E1"
+			tasks: [{
+				id: "2DD128CF491C799C"
+				item: { count: 1, id: "shrink:shrinking_device" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0A6A32C28F0DCDFE"]
+			id: "5DA3F6FF2AE6C081"
+			tasks: [{
+				id: "2C4E7BB000DA7C20"
+				item: { count: 1, id: "charginggadgets:charging_station" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "307FE47426A6C0F9"
+			tasks: [{
+				id: "4A794C84181C8A92"
+				item: { count: 1, id: "easy_piglins:barterer" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			id: "1A23087241E329A3"
+			tasks: [{
+				id: "5120ABF49D1080A5"
+				item: { count: 1, id: "easy_villagers:trader" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "3A68B1FEA6599E94"
+			tasks: [{
+				id: "4AEA024D1E2030B9"
+				item: { count: 1, id: "easy_villagers:auto_trader" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "4B240A0676E3B1E1"
+			tasks: [{
+				id: "0FC57C1C60C76BBB"
+				item: { count: 1, id: "easy_villagers:farmer" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "1275135EE17E4BEA"
+			tasks: [{
+				id: "0D3309795700DC0E"
+				item: { count: 1, id: "easy_villagers:breeder" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "2AE16D42C60C16AF"
+			tasks: [{
+				id: "14F8330925A4F68F"
+				item: { count: 1, id: "easy_villagers:converter" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "6DBAE3AA68EF3371"
+			tasks: [{
+				id: "38B8365880667F8B"
+				item: { count: 1, id: "easy_villagers:iron_farm" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "381701CD2F0D612C"
+			tasks: [{
+				id: "65557B7A166F1EF8"
+				item: { count: 1, id: "easy_villagers:incubator" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "5462066C988B4021"
+			tasks: [{
+				id: "0A6F3B6CD950EBA4"
+				item: { count: 1, id: "easy_villagers:inventory_viewer" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			id: "37AC7F3340783FD3"
+			tasks: [{
+				id: "19FB10D55447EFA1"
+				item: { count: 1, id: "laserio:laser_wrench" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "2468F5F1422CD76F"
+			tasks: [
+				{
+					id: "7D23BCC3C9982F38"
+					item: { count: 1, id: "laserio:laser_connector" }
+					type: "item"
+				}
+				{
+					id: "50C48368D0A37D77"
+					item: { count: 1, id: "laserio:laser_connector_advanced" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "0B1A30BDAE079B40"
+			tasks: [{
+				id: "06A8309D15D2EA28"
+				item: { count: 1, id: "laserio:laser_node" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "4DDE281537116B1A"
+			tasks: [
+				{
+					id: "52DDA39F76299275"
+					item: { count: 1, id: "laserio:card_item" }
+					type: "item"
+				}
+				{
+					id: "53944FD2B2E92074"
+					item: { count: 1, id: "laserio:card_fluid" }
+					type: "item"
+				}
+				{
+					id: "39D5979299D60B91"
+					item: { count: 1, id: "laserio:card_energy" }
+					type: "item"
+				}
+				{
+					id: "2EE83BDE434A155F"
+					item: { count: 1, id: "laserio:card_redstone" }
+					type: "item"
+				}
+				{
+					id: "1FB5FC835C873556"
+					item: { count: 1, id: "laserio:card_chemical" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "2BFE8B7A08BDCED5"
+			tasks: [
+				{
+					id: "75F2C445C28A5CE3"
+					item: { count: 1, id: "laserio:filter_basic" }
+					type: "item"
+				}
+				{
+					id: "1E26B6086390C509"
+					item: { count: 1, id: "laserio:filter_count" }
+					type: "item"
+				}
+				{
+					id: "5D19CDDE495C2314"
+					item: { count: 1, id: "laserio:filter_tag" }
+					type: "item"
+				}
+				{
+					id: "09F038E90CA4A274"
+					item: { count: 1, id: "laserio:filter_mod" }
+					type: "item"
+				}
+				{
+					id: "22D3F45C87E2075C"
+					item: { count: 1, id: "laserio:filter_nbt" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "043FAE4C4F339610"
+			tasks: [{
+				id: "0DAFC75B621361B4"
+				item: { count: 1, id: "laserio:logic_chip_raw" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "442BDFF455ADF394"
+			tasks: [{
+				id: "60190263DC4CAE48"
+				item: { count: 1, id: "laserio:logic_chip" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "5996610743B3D8A5"
+			tasks: [{
+				id: "7D18146E32E5474A"
+				item: { count: 1, id: "laserio:overclocker_card" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "33F6858AAFDD81E4"
+			tasks: [{
+				id: "1AA727D24B2C2EC6"
+				item: { count: 1, id: "laserio:overclocker_node" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "1A08D656D825D317"
+			tasks: [
+				{
+					id: "222C99BEA471A7E6"
+					item: { count: 1, id: "cookingforblockheads:recipe_book" }
+					type: "item"
+				}
+				{
+					id: "5FA19AF53D38E914"
+					item: { count: 1, id: "cookingforblockheads:crafting_book" }
+					type: "item"
+				}
+			]
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "036962F1A194692F"
+			tasks: [{
+				id: "3FA81C7DE43D6A4F"
+				item: { count: 1, id: "cookingforblockheads:white_oven" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "439EBB5719516B0C"
+			tasks: [{
+				id: "43B88929012A03FA"
+				item: { count: 1, id: "cookingforblockheads:cow_jar" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "52222F46C354A13A"
+			tasks: [{
+				id: "48912087FFC3DA2F"
+				item: { count: 1, id: "cookingforblockheads:toaster" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "442345EC7F3A8C82"
+			tasks: [{
+				id: "64B5A5448BC3F140"
+				item: { count: 1, id: "cookingforblockheads:white_fridge" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			id: "429A3E6B65A5D719"
+			tasks: [
+				{
+					id: "4C9E2BE4FC05EF38"
+					item: { count: 1, id: "cookingforblockheads:connector" }
+					type: "item"
+				}
+				{
+					id: "117D8E3C7665A46A"
+					item: { count: 1, id: "cookingforblockheads:white_kitchen_floor" }
+					type: "item"
+				}
+				{
+					id: "558F796A11ECDF80"
+					item: { count: 1, id: "cookingforblockheads:cooking_table" }
+					type: "item"
+				}
+				{
+					id: "5756F6B9E4E0F0AF"
+					item: { count: 1, id: "cookingforblockheads:counter" }
+					type: "item"
+				}
+				{
+					id: "67EA81BAD9E70B45"
+					item: { count: 1, id: "cookingforblockheads:cabinet" }
+					type: "item"
+				}
+				{
+					id: "2C2AC3ED06D608A6"
+					item: { count: 1, id: "cookingforblockheads:sink" }
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "51E838DC472069F6"
+			tasks: [{
+				id: "362F079285430785"
+				item: { count: 1, id: "cookingforblockheads:heating_unit" }
+				type: "item"
+			}]
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "25C8379EFA739E01"
+			tasks: [
+				{
+					id: "0809194869A2385E"
+					item: { count: 1, id: "cookingforblockheads:ice_unit" }
+					type: "item"
+				}
+				{
+					id: "68F03BDBC3524E66"
+					item: { count: 1, id: "cookingforblockheads:preservation_chamber" }
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			id: "68A1BBD669C1CEF5"
+			tasks: [{
+				id: "189DCFAD2C420146"
+				item: { count: 1, id: "farmingforblockheads:market" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["68A1BBD669C1CEF5"]
+			id: "1395E3C0ACED7F7B"
+			tasks: [
+				{
+					id: "12A970F35FCB3E64"
+					item: { count: 1, id: "farmingforblockheads:feeding_trough" }
+					type: "item"
+				}
+				{
+					id: "1B0C3B3CAD766203"
+					item: { count: 1, id: "farmingforblockheads:chicken_nest" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1395E3C0ACED7F7B"]
+			id: "292E93AD526F817C"
+			tasks: [{
+				id: "13718D9E568034BF"
+				item: { count: 1, id: "farmingforblockheads:green_fertilizer" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["292E93AD526F817C"]
+			id: "37D6DD29FB83A3DF"
+			tasks: [{
+				id: "56398EF987AC7AF4"
+				item: { count: 1, id: "farmingforblockheads:red_fertilizer" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["37D6DD29FB83A3DF"]
+			id: "011DC98BB2CFFB72"
+			tasks: [{
+				id: "35E8CA66DE2DB162"
+				item: { count: 1, id: "farmingforblockheads:yellow_fertilizer" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["42619280FF258EEA"]
+			id: "7BE64AF022E35ADE"
+			tasks: [{
+				id: "30728D980D112B06"
+				item: { count: 1, id: "morered:red_alloy_ingot" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["42619280FF258EEA"]
+			id: "00545D267282C024"
+			tasks: [{
+				id: "556CE23F4D124FAE"
+				item: { count: 1, id: "morered:soldering_table" }
+				type: "item"
+			}]
+			x: -10.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["42619280FF258EEA"]
+			id: "0F06B5CFCD65EF0E"
+			tasks: [
+				{
+					id: "14DC117A9D730DBA"
+					item: { count: 1, id: "morered:bundled_cable_relay_plate" }
+					type: "item"
+				}
+				{
+					id: "5B7AB6D84C0CC416"
+					item: { count: 1, id: "morered:bundled_cable_post" }
+					type: "item"
+				}
+			]
+			x: -10.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["42619280FF258EEA"]
+			id: "207E271D018B5217"
+			tasks: [
+				{
+					id: "646E624BA84FE33C"
+					item: { count: 1, id: "morered:not_gate" }
+					type: "item"
+				}
+				{
+					id: "19326D7941F45BD4"
+					item: { count: 1, id: "morered:nor_gate" }
+					type: "item"
+				}
+				{
+					id: "4DBE5FBBD5E940B4"
+					item: { count: 1, id: "morered:nand_gate" }
+					type: "item"
+				}
+				{
+					id: "6CD521E4516B67C7"
+					item: { count: 1, id: "morered:or_gate" }
+					type: "item"
+				}
+				{
+					id: "537B4C112A1926D9"
+					item: { count: 1, id: "morered:and_gate" }
+					type: "item"
+				}
+				{
+					id: "06840041EA9D31CA"
+					item: { count: 1, id: "morered:xor_gate" }
+					type: "item"
+				}
+				{
+					id: "280C0B754FB71723"
+					item: { count: 1, id: "morered:xnor_gate" }
+					type: "item"
+				}
+				{
+					id: "7F9CAA3B567CABF5"
+					item: { count: 1, id: "morered:and_2_gate" }
+					type: "item"
+				}
+				{
+					id: "48EB61E87791B866"
+					item: { count: 1, id: "morered:nand_2_gate" }
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["42619280FF258EEA"]
+			id: "0CFA35BB55D9CBA4"
+			tasks: [
+				{
+					id: "134C00FF37EF97DC"
+					item: { count: 1, id: "morered:bitwise_diode" }
+					type: "item"
+				}
+				{
+					id: "417085B9F902911A"
+					item: { count: 1, id: "morered:bitwise_not_gate" }
+					type: "item"
+				}
+				{
+					id: "3B99CAA212309108"
+					item: { count: 1, id: "morered:bitwise_or_gate" }
+					type: "item"
+				}
+				{
+					id: "612EC7164B794698"
+					item: { count: 1, id: "morered:bitwise_and_gate" }
+					type: "item"
+				}
+				{
+					id: "38AE900A20DC8617"
+					item: { count: 1, id: "morered:bitwise_xor_gate" }
+					type: "item"
+				}
+				{
+					id: "598AE74C139432ED"
+					item: { count: 1, id: "morered:bitwise_xnor_gate" }
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["42619280FF258EEA"]
+			id: "14B3A6FF79F02AF0"
+			tasks: [
+				{
+					id: "023AD1E611C7969E"
+					item: { count: 1, id: "morered:red_alloy_wire" }
+					type: "item"
+				}
+				{
+					id: "355CC0B34BC9FEF7"
+					item: { count: 1, id: "morered:white_network_cable" }
+					type: "item"
+				}
+				{
+					id: "72FE14490FBA6EFA"
+					item: { count: 1, id: "morered:bundled_network_cable" }
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["42619280FF258EEA"]
+			id: "6D1CE6758B529DDC"
+			tasks: [{
+				id: "4073906C494CB1CF"
+				item: { count: 1, id: "morered:hexidecrubrometer" }
+				type: "item"
+			}]
+			x: -11.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["42619280FF258EEA"]
+			id: "364A81E9AE697A31"
+			tasks: [
+				{
+					id: "48DF1392D1950771"
+					item: { count: 1, id: "morered:latch" }
+					type: "item"
+				}
+				{
+					id: "5FA8D877E5A698AD"
+					item: { count: 1, id: "morered:pulse_gate" }
+					type: "item"
+				}
+				{
+					id: "777D2C1388F4FB2B"
+					item: { count: 1, id: "morered:diode" }
+					type: "item"
+				}
+				{
+					id: "74A19264C83B1A22"
+					item: { count: 1, id: "morered:redwire_post_plate" }
+					type: "item"
+				}
+				{
+					id: "33BE5755498F5BAF"
+					item: { count: 1, id: "morered:redwire_post_relay_plate" }
+					type: "item"
+				}
+			]
+			x: -12.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6441C36C63A59445"]
+			id: "090BF67B44B9D1D2"
+			tasks: [{
+				id: "1BFD5710604560E1"
+				item: { count: 1, id: "pipez:item_pipe" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["6441C36C63A59445"]
+			id: "41F841EBEDB8FE0E"
+			tasks: [{
+				id: "3ED0A899B752D56F"
+				item: { count: 1, id: "pipez:fluid_pipe" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["6441C36C63A59445"]
+			id: "66B8D778206EDB1D"
+			tasks: [{
+				id: "2420C5FFD9312CBF"
+				item: { count: 1, id: "pipez:energy_pipe" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6441C36C63A59445"]
+			id: "01E18B9CD0724388"
+			tasks: [{
+				id: "7D3B6D8006E458BA"
+				item: { count: 1, id: "pipez:universal_pipe" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["6441C36C63A59445"]
+			id: "05FDE552764AE920"
+			tasks: [{
+				id: "255289E9C4E04077"
+				item: { count: 1, id: "pipez:gas_pipe" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6441C36C63A59445"]
+			id: "0FB6106D73ABB512"
+			tasks: [
+				{
+					id: "7D9C32694681D16E"
+					item: { count: 1, id: "pipez:basic_upgrade" }
+					type: "item"
+				}
+				{
+					id: "0AD70C9DC0513C20"
+					item: { count: 1, id: "pipez:improved_upgrade" }
+					type: "item"
+				}
+				{
+					id: "191048FDF9112EC7"
+					item: { count: 1, id: "pipez:advanced_upgrade" }
+					type: "item"
+				}
+				{
+					id: "6DFD96E4FFAC5F10"
+					item: { count: 1, id: "pipez:ultimate_upgrade" }
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: -12.5d
+		}
+		{
+			id: "6441C36C63A59445"
+			tasks: [
+				{
+					id: "11DE21AE45EB2803"
+					item: { count: 1, id: "pipez:wrench" }
+					type: "item"
+				}
+				{
+					id: "720FDE6DCA8720E7"
+					item: { count: 1, id: "pipez:filter_destination_tool" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["0A6A32C28F0DCDFE"]
+			id: "46312A46467C5497"
+			tasks: [{
+				id: "6EFAED6012254664"
+				item: { count: 1, id: "relics:researching_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			id: "42619280FF258EEA"
+			tasks: [{
+				id: "1936B2F028F013BB"
+				type: "checkmark"
+			}]
+			x: -10.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "4C0D127775F33439"
+			tasks: [
+				{
+					id: "27ABB13F5E3A9AC7"
+					item: { count: 1, id: "cookingforblockheads:tool_rack" }
+					type: "item"
+				}
+				{
+					id: "589FBCCBA5ECE65F"
+					item: { count: 1, id: "cookingforblockheads:spice_rack" }
+					type: "item"
+				}
+				{
+					id: "6DEC1B9623D18861"
+					item: { count: 1, id: "cookingforblockheads:fruit_basket" }
+					type: "item"
+				}
+				{
+					id: "4100F08526432ACD"
+					item: { count: 1, id: "cookingforblockheads:cutting_board" }
+					type: "item"
+				}
+			]
+			x: -11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["02C96AE982806447"]
+			id: "6EEAF4D9F3BF6414"
+			tasks: [{
+				id: "1B389F13C2471981"
+				item: { count: 1, id: "buildinggadgets2:gadget_building" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["02C96AE982806447"]
+			id: "192070F984387CE1"
+			tasks: [{
+				id: "42F9D7E62488828A"
+				item: { count: 1, id: "buildinggadgets2:template_manager" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["02C96AE982806447"]
+			id: "40F1315207ADEB80"
+			tasks: [{
+				id: "7339D95CBBEF6CC3"
+				item: { count: 1, id: "buildinggadgets2:gadget_exchanging" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["02C96AE982806447"]
+			id: "66D2FB13C09177EA"
+			tasks: [{
+				id: "58A5CCFD114BC3F8"
+				item: { count: 1, id: "buildinggadgets2:gadget_copy_paste" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["02C96AE982806447"]
+			id: "2B29DDBADF11195E"
+			tasks: [{
+				id: "1478AE3EC12CF077"
+				item: { components: { "buildinggadgets2:paste_replace_toggle": 1b }, count: 1, id: "buildinggadgets2:gadget_cut_paste" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["02C96AE982806447"]
+			id: "2A2E1C7C34C9A4AA"
+			tasks: [{
+				id: "37C0C65C55CAF995"
+				item: { count: 1, id: "buildinggadgets2:gadget_destruction" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["02C96AE982806447"]
+			id: "65F5E0194184FEDE"
+			tasks: [{
+				id: "3EB202E1EC82778D"
+				item: { components: { "buildinggadgets2:paste_replace_toggle": 1b }, count: 1, id: "buildinggadgets2:gadget_cut_paste" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["02C96AE982806447"]
+			id: "5855D8361A2C6623"
+			tasks: [
+				{
+					id: "7FD44BB58F3D8872"
+					item: { count: 1, id: "buildinggadgets2:template" }
+					type: "item"
+				}
+				{
+					id: "4F00457DD9D4F45F"
+					item: { count: 1, id: "buildinggadgets2:redprint" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			id: "02C96AE982806447"
+			tasks: [{
+				id: "659005F19206B35C"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -11.0d
+		}
+	]
+}
