@@ -1,76 +1,110 @@
-
 #Machine Energy Storage Config. This config is synced from server to client.
 [storage]
 	#Base energy storage (Joules).
-	enrichmentChamber = "20000"
+	#Range: 1 ~ 9223372036854775807
+	enrichmentChamber = 20000
 	#Base energy storage (Joules).
-	osmiumCompressor = "80000"
+	#Range: 1 ~ 9223372036854775807
+	osmiumCompressor = 80000
 	#Base energy storage (Joules).
-	combiner = "40000"
+	#Range: 1 ~ 9223372036854775807
+	combiner = 40000
 	#Base energy storage (Joules).
-	crusher = "20000"
+	#Range: 1 ~ 9223372036854775807
+	crusher = 20000
 	#Base energy storage (Joules).
-	metallurgicInfuser = "20000"
+	#Range: 1 ~ 9223372036854775807
+	metallurgicInfuser = 20000
 	#Base energy storage (Joules).
-	purificationChamber = "80000"
+	#Range: 1 ~ 9223372036854775807
+	purificationChamber = 80000
 	#Base energy storage (Joules).
-	energizedSmelter = "20000"
+	#Range: 1 ~ 9223372036854775807
+	energizedSmelter = 20000
 	#Base energy storage (Joules).
-	digitalMiner = "50000"
+	#Range: 1 ~ 9223372036854775807
+	digitalMiner = 50000
 	#Base energy storage (Joules).
-	electricPump = "40000"
+	#Range: 1 ~ 9223372036854775807
+	electricPump = 40000
 	#Base energy storage (Joules).
-	chargePad = "2048000"
+	#Range: 1 ~ 9223372036854775807
+	chargePad = 2048000
 	#Base energy storage (Joules).
-	rotaryCondensentrator = "20000"
+	#Range: 1 ~ 9223372036854775807
+	rotaryCondensentrator = 20000
 	#Base energy storage (Joules).
-	chemicalOxidizer = "80000"
+	#Range: 1 ~ 9223372036854775807
+	chemicalOxidizer = 80000
 	#Base energy storage (Joules).
-	chemicalInfuser = "80000"
+	#Range: 1 ~ 9223372036854775807
+	chemicalInfuser = 80000
 	#Base energy storage (Joules).
-	chemicalInjectionChamber = "160000"
+	#Range: 1 ~ 9223372036854775807
+	chemicalInjectionChamber = 160000
 	#Base energy storage (Joules).
-	electrolyticSeparator = "160000"
+	#Range: 1 ~ 9223372036854775807
+	electrolyticSeparator = 160000
 	#Base energy storage (Joules).
-	precisionSawmill = "20000"
+	#Range: 1 ~ 9223372036854775807
+	precisionSawmill = 20000
 	#Base energy storage (Joules).
-	chemicalDissolutionChamber = "160000"
+	#Range: 1 ~ 9223372036854775807
+	chemicalDissolutionChamber = 160000
 	#Base energy storage (Joules).
-	chemicalWasher = "80000"
+	#Range: 1 ~ 9223372036854775807
+	chemicalWasher = 80000
 	#Base energy storage (Joules).
-	chemicalCrystallizer = "160000"
+	#Range: 1 ~ 9223372036854775807
+	chemicalCrystallizer = 160000
 	#Base energy storage (Joules).
-	seismicVibrator = "20000"
+	#Range: 1 ~ 9223372036854775807
+	seismicVibrator = 20000
 	#Base energy storage (Joules).
-	pressurizedReactionBase = "2000"
+	#Range: 1 ~ 9223372036854775807
+	pressurizedReactionBase = 2000
 	#Base energy storage (Joules).
-	fluidicPlenisher = "40000"
+	#Range: 1 ~ 9223372036854775807
+	fluidicPlenisher = 40000
 	#Base energy storage (Joules).
-	laser = "2000000"
+	#Range: 1 ~ 9223372036854775807
+	laser = 2000000
 	#Base energy storage (Joules).
-	laserAmplifier = "5000000000"
+	#Range: 1 ~ 9223372036854775807
+	laserAmplifier = 5000000000
 	#Base energy storage (Joules).
-	laserTractorBeam = "5000000000"
+	#Range: 1 ~ 9223372036854775807
+	laserTractorBeam = 5000000000
 	#Base energy storage (Joules).
-	formulaicAssemblicator = "40000"
+	#Range: 1 ~ 9223372036854775807
+	formulaicAssemblicator = 40000
 	#Base energy storage (Joules).
-	teleporter = "5000000"
+	#Range: 1 ~ 9223372036854775807
+	teleporter = 5000000
 	#Base energy storage (Joules).
-	modificationStation = "40000"
+	#Range: 1 ~ 9223372036854775807
+	modificationStation = 40000
 	#Base energy storage (Joules).
-	isotopicCentrifuge = "80000"
+	#Range: 1 ~ 9223372036854775807
+	isotopicCentrifuge = 80000
 	#Base energy storage (Joules).
-	nutritionalLiquifier = "40000"
+	#Range: 1 ~ 9223372036854775807
+	nutritionalLiquifier = 40000
 	#Base energy storage (Joules). Also defines max process rate.
-	antiprotonicNucleosynthesizer = "1000000000"
+	#Range: 1 ~ 9223372036854775807
+	antiprotonicNucleosynthesizer = 1000000000
 	#Base energy storage (Joules).
-	pigmentExtractor = "40000"
+	#Range: 1 ~ 9223372036854775807
+	pigmentExtractor = 40000
 	#Base energy storage (Joules).
-	pigmentMixer = "80000"
+	#Range: 1 ~ 9223372036854775807
+	pigmentMixer = 80000
 	#Base energy storage (Joules).
-	paintingMachine = "40000"
+	#Range: 1 ~ 9223372036854775807
+	paintingMachine = 40000
 	#Base energy storage (Joules). Also defines max output rate.
-	spsPort = "1000000000"
+	#Range: 1 ~ 9223372036854775807
+	spsPort = 1000000000
 	#Base energy storage (Joules).
-	dimensionalStabilizer = "40000"
-
+	#Range: 1 ~ 9223372036854775807
+	dimensionalStabilizer = 40000

@@ -7,15 +7,26 @@
 		id: "powah:energizing_rod_nitro"
 	}
 	id: "01B56BD678E7745B"
-	images: [{
-		color: 13174055
-		height: 6.0d
-		image: "ftbquests:textures/gui/title_powah.png"
-		rotation: 0.0d
-		width: 6.0d
-		x: 0.0d
-		y: 4.0d
-	}]
+	images: [
+		{
+			color: 13174055
+			height: 6.0d
+			image: "ftbquests:textures/gui/title_powah.png"
+			rotation: 90.0d
+			width: 6.0d
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			color: 16230400
+			height: 6.0d
+			image: "ftbquests:textures/gui/title_powah.png"
+			rotation: -90.0d
+			width: 6.0d
+			x: -7.0d
+			y: 0.0d
+		}
+	]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
@@ -653,7 +664,7 @@
 				}
 			]
 			x: 0.0d
-			y: 6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["745ECCC690C1AD23"]
@@ -678,7 +689,7 @@
 				}
 			]
 			x: -0.5d
-			y: 5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["745ECCC690C1AD23"]
@@ -716,7 +727,7 @@
 				}
 			]
 			x: 0.5d
-			y: 5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0035439F73199781"]
