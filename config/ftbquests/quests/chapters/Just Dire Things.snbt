@@ -1,5 +1,6 @@
 {
 	default_hide_dependency_lines: true
+	default_min_width: 192
 	default_quest_shape: "hexagon"
 	filename: "Just Dire Things"
 	group: ""
@@ -218,6 +219,8 @@
 	]
 	quests: [
 		{
+			dependencies: ["0E50E568DFA078D5"]
+			hide_dependency_lines: false
 			icon_scale: 1.5d
 			id: "6FF7CECC5DAF516B"
 			shape: "circle"
@@ -299,6 +302,7 @@
 			id: "75C95D894C3B3428"
 			size: 1.25d
 			tasks: [{
+				count: 14L
 				id: "0AEA13DB3673A3DE"
 				item: { count: 1, id: "justdirethings:ferricore_ingot" }
 				type: "item"
@@ -354,6 +358,7 @@
 			hide_dependency_lines: false
 			id: "4B0CDF7941199C8E"
 			tasks: [{
+				count: 8L
 				id: "4570F05721CA88EE"
 				item: { count: 1, id: "justdirethings:goosoil_tier1" }
 				type: "item"
@@ -366,6 +371,7 @@
 			hide_dependency_lines: false
 			id: "7F4BFF2C6E887FCC"
 			tasks: [{
+				count: 7L
 				id: "166E2D9ABA34467F"
 				item: { count: 1, id: "justdirethings:coal_t1" }
 				type: "item"
@@ -1019,6 +1025,7 @@
 			shape: "circle"
 			size: 1.25d
 			tasks: [{
+				count: 14L
 				id: "1C3EB1578E6F7F21"
 				item: { count: 1, id: "justdirethings:raw_ferricore" }
 				type: "item"
@@ -1103,6 +1110,19 @@
 			}]
 			x: 0.0d
 			y: 5.25d
+		}
+		{
+			icon_scale: 2.0d
+			id: "0E50E568DFA078D5"
+			min_width: 192
+			shape: "circle"
+			size: 0.5d
+			tasks: [{
+				id: "2FA7F24545E1C37E"
+				type: "checkmark"
+			}]
+			x: -8.0d
+			y: 0.875d
 		}
 	]
 }
