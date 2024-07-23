@@ -315,7 +315,11 @@
 	quest.156575F76CAB51A0.quest_subtitle: "Legal Duplication"
 	quest.156575F76CAB51A0.title: "&dReplicator"
 	quest.160740771654F4E6.quest_desc: [
+		"   Blocks of &bvoidflame coal&r can be &6transformed&c into &braw eclipse ember&r "
 		""
+		"   3–4 &beclipse embers&r will &6drop&r from it."
+		""
+		"   &6Burns&r 81x more items than &bcoal&r."
 		""
 		"{image:justdirethings:block/coalblock_t4 width:100 height:100 align:center fit:true}"
 	]
@@ -444,9 +448,13 @@
 	quest.19F7B6A670D4A707.quest_subtitle: "Raw Mercury"
 	quest.19F7B6A670D4A707.title: "Mercury Shards"
 	quest.1A1C915A4A1F7741.quest_desc: [
+		"   &bBlazebloom goo&r will &6transform&r blocks of &bprimal coal&r into &braw blaze ember&r "
 		""
+		"   3–4 &bblaze embers&r will &6drop&r from it."
 		""
-		"{image:justdirethings:item/coal_t2 width:100 height:100 align:center fit:true}"
+		"   &6Burns&r 9x more items than &bcoal&r."
+		""
+		"{image:justdirethings:block/coalblock_t2 width:100 height:100 align:center fit:true}"
 	]
 	quest.1A885E0BA312B916.title: "Resistive Heater"
 	quest.1A8D5373290BC1A6.quest_desc: [""]
@@ -948,7 +956,7 @@
 	quest.35F6CAD5BE56A32A.quest_desc: [
 		""
 		""
-		"{image:justdirethings:block/goofarmland_tier4 width:100 height:100 align:center fit:true}"
+		"{image:justdirethings:block/goofarmland_tier4_moist width:100 height:100 align:center fit:true}"
 	]
 	quest.3637E22A3CD0FAC1.quest_desc: ["By &bthrowing&f an &boak sapling&f into the &bspiritfire&f you will get a &bunstable otherworld sapling&f."]
 	quest.3637E22A3CD0FAC1.quest_subtitle: "This ain't no ordinary sapling"
@@ -1110,15 +1118,18 @@
 	]
 	quest.42D6CC67AB29D7DA.title: "The Lategame Age"
 	quest.42EC7168ADC6AF76.quest_desc: [
-		"  Just Dire Things' wands abilities are built-in."
+		"  The &bBlaze Jet Wand&r has these &6abilites&r:"
 		""
-		"  The &bBlaze Jet Wand&r has these abilites:"
+		"• &cLava Repair&r: like other Tier 2 equipment"
+		"• &cAir Burst&r: Blasts you up into the air"
 		""
-		"• &cLava Repair&r: just like the rest of the Tier 2 equipment"
-		"• &cAir Burst&r: ..."
+		"   JDT wands' &6abilities&r are built-in."
+		""
+		"   Adjunct to the &cAir Burst&r ability, when held in the hand, they &6prevent fall damage&r."
 		""
 		"{image:justdirethings:item/blazejet_wand width:100 height:100 align:center fit:true}"
 	]
+	quest.42EC7168ADC6AF76.quest_subtitle: "Easier Travel"
 	quest.4303A1A434C07540.title: "Ritual: Summon Foliot Janitor"
 	quest.431B5333B30B42CA.quest_subtitle: "Gravity in water?"
 	quest.4351715A36CA0DA6.title: "Nutritional Liquifier"
@@ -1261,14 +1272,15 @@
 	quest.48212961977655E7.title: "Dielectric Paste"
 	quest.489C1CE982BC1739.title: "QIO Importer"
 	quest.48E96D243486D38E.quest_desc: [
-		"  The &bVoidShift Wand&r has the abilities:"
+		"  The &bVoidShift Wand&r's &6abilities&r:"
 		""
 		"• &cLava Repair&r"
-		"• &cAir Burst&r"
-		"• &cVoid Shift&r"
+		"• &cAir Burst&r: up to strength 4"
+		"• &cVoid Shift&r: &6Teleport&r ≤ 15 blocks"
 		""
 		"{image:justdirethings:item/voidshift_wand width:100 height:100 align:center fit:true}"
 	]
+	quest.48E96D243486D38E.quest_subtitle: "From Here to There"
 	quest.48F4ED8C915995DC.quest_subtitle: "+ Ignores Light"
 	quest.495EEAA73357FA60.quest_desc: [
 		"  Accepts top-level &6upgrades&r:"
@@ -1302,7 +1314,7 @@
 		""
 		"  It is not damaged by falling on it, and grows crops a smidge faster than normal soil."
 		""
-		"{image:justdirethings:block/goofarmland_tier1 width:100 height:100 align:center fit:true}"
+		"{image:justdirethings:block/goofarmland_tier1_moist width:100 height:100 align:center fit:true}"
 	]
 	quest.4B0CDF7941199C8E.quest_subtitle: "Tread on Me"
 	quest.4B7C404E9118BE09.title: "Advanced Purifying Factory"
@@ -1499,9 +1511,13 @@
 	quest.5676B5FD97FB10C3.title: "Bronze Furnace"
 	quest.56C5ECD3430B6A55.title: "HDPE Reinforced Elytra"
 	quest.5707678AB1482B68.quest_desc: [
+		"   Blocks of &bblaze emeber&r can be &6transformed&r into &braw voidflame coal&r "
 		""
+		"   3–4 &bvoidflame coals&r will &6drop&r."
 		""
-		"{image:justdirethings:item/coal_t3 width:100 height:100 align:center fit:true}"
+		"   &6Burns&r 9x more items than &bcoal&r."
+		""
+		"{image:justdirethings:block/coalblock_t3 width:100 height:100 align:center fit:true}"
 	]
 	quest.57852C27FD0C29AA.title: "Upgrades"
 	quest.57A8D67858693F4A.title: "Basic Injecting Factory"
@@ -1838,15 +1854,20 @@
 	quest.6FB6E8A7461B0439.quest_desc: ["A Mid-Game component used to craft Bulk Storage."]
 	quest.6FDE684299FEC954.title: "Elite Mechanical Pipe"
 	quest.6FE07EECD4579FD4.quest_desc: [
-		"  The &bEclipse Gate Wand&r's abilities are:"
+		"  The &bEclipse Gate Wand&r's &6abilities&r are:"
 		""
 		"• &cLava Repair&r"
-		"• &cAir Burst&r"
-		"• &cVoid Shift&r"
-		"• &cEclipse Gate&r"
+		"• &cAir Burst&r: strength ≤ 8"
+		"• &cVoid Shift&r: &6teleport&r ≤ 30 blocks"
+		"• &cEclipse Gate&r: &6open&r a portable hole(!)"
+		""
+		"  When a portable hole is made, all blocks (except tile entities) will vanish temporarily."
+		""
+		"  After a short time hole will collapse, restoring the temporarily vanished blocks."
 		""
 		"{image:justdirethings:item/eclipsegate_wand width:100 height:100 align:center fit:true}"
 	]
+	quest.6FE07EECD4579FD4.quest_subtitle: "Now You See Them..."
 	quest.6FF26C2F7EBDC28A.quest_desc: ["&bPrinted Silicon &fis just the first stage in the creation of the &bProcessors&f."]
 	quest.6FF26C2F7EBDC28A.title: "Printed Silicon"
 	quest.6FF7CECC5DAF516B.quest_desc: [
@@ -2152,11 +2173,11 @@
 		"{image:justdirethings:block/gooblock_tier4 width:100 height:100 align:center fit:true}"
 	]
 	quest.7F4BFF2C6E887FCC.quest_desc: [
-		"   Blocks of &bprimogel goo&r will also transform &bblocks of coal&r into &braw primal coal&r "
+		"   Blocks of &bprimogel goo&r will also &6transform&r &bblocks of coal&r into &braw primal coal&r "
 		""
-		"   &bPrimal coal&r drops from that &braw primal coal&r."
+		"   3 to 4 &bPrimal coal&r will &6drop&r from that &braw primal coal&r."
 		""
-		"   &bPrimal coal&r contains enough energy that—in terms of fuel capacity—you should modestly beat 'break even' compared to your investment of coal to make it"
+		"   Has enough energy to &6burn&r 3x more items (27) than normal &bcoal&r (8)."
 		""
 		"{image:justdirethings:block/coalblock_t1 width:100 height:100 align:center fit:true}"
 	]
