@@ -40,9 +40,10 @@ let sortArray = (array) => {
     let modB = modPriority.indexOf(b.split(":")[0]);
     if (modA === -1) modA = modPriority.length;
     if (modB === -1) modB = modPriority.length;
-
-    if (modA < modB) return -1;
-    if (modA > modB) return 1;
+    if (modA !== modB) return modA - modB;
+    // If the mods are the same, sort by item name.
+    if (a < b) return -1;
+    if (a > b) return 1;
     return 0;
   });
 };
