@@ -1,0 +1,725 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "appothic_spawners"
+	group: "01BEAD68B1D370D3"
+	id: "26E59C8DBA7F6FE3"
+	images: [
+		{
+			height: 2.0d
+			image: "ftbchunks:textures/faces/minecraft/spider.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -13.5d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:textures/entity_icon/zombie/zombie.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -15.5d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:textures/entity_icon/zombie/drowned.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -17.5d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "ftbchunks:textures/faces/minecraft/enderman.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -11.5d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "ftbchunks:textures/faces/minecraft/creeper.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -9.5d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "ftbchunks:textures/faces/minecraft/witch.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.5d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "ftbchunks:textures/faces/minecraft/skeleton.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -19.5d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "ftbchunks:textures/faces/minecraft/wither_skeleton.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -21.5d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:textures/entity_icon/wither/wither_invulnerable.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -23.5d
+			y: -3.0d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4FDD66D88C90C951"
+			tasks: [{
+				id: "6F144EF786A94E4E"
+				item: { count: 1, id: "minecraft:spawner" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "7FD0A63CDC267251"
+			rewards: [{
+				id: "054AA3DBAE9D9D41"
+				item: {
+					count: 1
+					id: "minecraft:fermented_spider_eye"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B790B22E115CEB3"
+				item: { count: 1, id: "minecraft:fermented_spider_eye" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "35F320164724B44C"
+			rewards: [{
+				id: "649CFECBD6717FA3"
+				item: {
+					count: 1
+					id: "minecraft:sugar"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "06D736F223A44B10"
+				item: { count: 1, id: "minecraft:sugar" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "33CDCAD12E8F6828"
+			rewards: [{
+				id: "018FF50D41C07794"
+				item: {
+					count: 1
+					id: "minecraft:clock"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "45BD3F9D0F2542F6"
+				item: { count: 1, id: "minecraft:clock" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "423B29BD8DAC8C3D"
+			tasks: [{
+				id: "0223DC40BCB8FF6D"
+				item: { count: 1, id: "minecraft:turtle_egg" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "4A476B25B5A3E88D"
+			rewards: [{
+				id: "5E7A43189ADC7815"
+				item: {
+					count: 1
+					id: "minecraft:piston"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "170444FFD4D57753"
+				item: { count: 1, id: "minecraft:piston" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "253FA8D6C09E2BD5"
+			rewards: [{
+				id: "487862B071DDFCF2"
+				item: {
+					count: 1
+					id: "minecraft:white_wool"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "77E3B3D6695EEA80"
+				item: { count: 1, id: "minecraft:white_wool" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "0119F518ACD8568D"
+			rewards: [{
+				id: "26C180DC691D93FA"
+				item: {
+					count: 1
+					id: "minecraft:comparator"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "24EFDA7774F27E3E"
+				item: { count: 1, id: "minecraft:comparator" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "7B88129FF5C9145F"
+			rewards: [{
+				id: "6E93C166F799D092"
+				item: {
+					count: 1
+					id: "minecraft:prismarine_crystals"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7FEC3AD51BEF4E49"
+				item: { count: 1, id: "minecraft:prismarine_crystals" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "465ECB57BFCF5291"
+			rewards: [{
+				id: "6B086B397A00A5EB"
+				item: {
+					count: 1
+					id: "minecraft:chorus_fruit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F8B536CAF189745"
+				item: { count: 1, id: "minecraft:chorus_fruit" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "1F88FCB1B73FF882"
+			rewards: [{
+				id: "1236B351DFFF333D"
+				item: {
+					count: 1
+					id: "minecraft:ghast_tear"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "47F4FCBBFF748733"
+				item: { count: 1, id: "minecraft:ghast_tear" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "6EC57118E3771D72"
+			rewards: [{
+				id: "151588538C10565F"
+				item: {
+					count: 1
+					id: "minecraft:pointed_dripstone"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "73A3951918C37F02"
+				item: { count: 1, id: "minecraft:pointed_dripstone" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "2D8FB52E37D7D96C"
+			rewards: [{
+				id: "038CA741FE9B17D1"
+				item: {
+					count: 1
+					id: "minecraft:nether_star"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "79D7E3E9EA637474"
+				item: { count: 1, id: "minecraft:nether_star" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "48F4ED8C915995DC"
+			rewards: [{
+				id: "2910294E57F6404E"
+				item: {
+					count: 1
+					id: "minecraft:soul_lantern"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2144D7AA3F8732C4"
+				item: { count: 1, id: "minecraft:soul_lantern" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "1FD59C1147BCE34F"
+			rewards: [{
+				id: "4E83B80D7048A5AC"
+				item: {
+					count: 1
+					id: "minecraft:conduit"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "276086CF0F30A677"
+				item: { count: 1, id: "minecraft:conduit" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "3F73EC8E087E2920"
+			rewards: [{
+				id: "48C55B3D4B2A32D5"
+				item: {
+					count: 1
+					id: "minecraft:echo_shard"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D142E8CAEC8F089"
+				item: { count: 1, id: "minecraft:echo_shard" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "14F545E632726FEE"
+			rewards: [{
+				id: "223EF959690D44B8"
+				item: {
+					count: 1
+					id: "minecraft:campfire"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7CE607F3982231BE"
+				item: { count: 1, id: "minecraft:campfire" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4FDD66D88C90C951"]
+			id: "442CDC27ADFA34E4"
+			rewards: [{
+				id: "4C8A794E0AEC95E8"
+				item: {
+					count: 1
+					id: "minecraft:quartz"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "233A747AD11495AF"
+				item: { count: 1, id: "minecraft:quartz" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "1A9BBEC591289E60"
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "6FC0B16FE6CD759F"
+				type: "kill"
+				value: 10L
+			}]
+			x: -15.5d
+			y: 3.0d
+		}
+		{
+			id: "665C86513114DF86"
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "6B3605031FAB7BA0"
+				type: "kill"
+				value: 10L
+			}]
+			x: -13.5d
+			y: 3.0d
+		}
+		{
+			id: "5F2F0CDB0ECE8BC8"
+			tasks: [{
+				entity: "minecraft:drowned"
+				id: "3DA3A1A7F7E4BDE2"
+				type: "kill"
+				value: 10L
+			}]
+			x: -17.5d
+			y: 3.0d
+		}
+		{
+			id: "4333907EB9D44768"
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "3C4D094BD1C9EE49"
+				type: "kill"
+				value: 10L
+			}]
+			x: -11.5d
+			y: 3.0d
+		}
+		{
+			id: "69FA9389FF3357E1"
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "172DF54B31FDE052"
+				type: "kill"
+				value: 10L
+			}]
+			x: -9.5d
+			y: 3.0d
+		}
+		{
+			id: "67AF90EDDDB98BEC"
+			tasks: [{
+				entity: "minecraft:witch"
+				id: "442871FE43676929"
+				type: "kill"
+				value: 10L
+			}]
+			x: -7.5d
+			y: 3.0d
+		}
+		{
+			id: "03B641D066E419E8"
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "7FF0BFB7FD80E61A"
+				type: "kill"
+				value: 10L
+			}]
+			x: -19.5d
+			y: 3.0d
+		}
+		{
+			id: "6CCF08B1B0A5D0FB"
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				id: "3E4EA09909D505F0"
+				type: "kill"
+				value: 10L
+			}]
+			x: -21.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6CCF08B1B0A5D0FB"]
+			id: "07867DA5CB776DFB"
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				id: "2BC2609B1D9FD581"
+				type: "kill"
+				value: 100L
+			}]
+			x: -21.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["03B641D066E419E8"]
+			id: "3008A922EEE9DA02"
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "38F59B7C9954A6C0"
+				type: "kill"
+				value: 100L
+			}]
+			x: -19.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5F2F0CDB0ECE8BC8"]
+			id: "33B72BB560C996A2"
+			tasks: [{
+				entity: "minecraft:drowned"
+				id: "270A4C742DF20810"
+				type: "kill"
+				value: 100L
+			}]
+			x: -17.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1A9BBEC591289E60"]
+			id: "626AB46471F331E5"
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "042E359569D936E7"
+				type: "kill"
+				value: 100L
+			}]
+			x: -15.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["665C86513114DF86"]
+			id: "0D4DF1E532C97E0B"
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "0F76E3C3C97DBAC8"
+				type: "kill"
+				value: 100L
+			}]
+			x: -13.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4333907EB9D44768"]
+			id: "6589157CB9F1F6FE"
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "1CA9968B0E69D572"
+				type: "kill"
+				value: 100L
+			}]
+			x: -11.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["69FA9389FF3357E1"]
+			id: "75B999339D17F05B"
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "61D197EDF96C1D3F"
+				type: "kill"
+				value: 100L
+			}]
+			x: -9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["67AF90EDDDB98BEC"]
+			id: "7B1C2504C212174C"
+			tasks: [{
+				entity: "minecraft:witch"
+				id: "3662A113D477173B"
+				type: "kill"
+				value: 100L
+			}]
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["07867DA5CB776DFB"]
+			id: "725904D6F7375C69"
+			tasks: [{
+				entity: "minecraft:wither_skeleton"
+				id: "346AA64CDD786DF3"
+				type: "kill"
+				value: 500L
+			}]
+			x: -21.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3008A922EEE9DA02"]
+			id: "795919CDAFB6A92D"
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "1D9F662EAAA746D0"
+				type: "kill"
+				value: 500L
+			}]
+			x: -19.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["33B72BB560C996A2"]
+			id: "22B99367C5435A48"
+			tasks: [{
+				entity: "minecraft:drowned"
+				id: "26E322ABF86572C3"
+				type: "kill"
+				value: 500L
+			}]
+			x: -17.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["626AB46471F331E5"]
+			id: "715311058B0996D0"
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "2C8A0730139C1674"
+				type: "kill"
+				value: 500L
+			}]
+			x: -15.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0D4DF1E532C97E0B"]
+			id: "09D22EDE19F89828"
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "33C22E3414867E8D"
+				type: "kill"
+				value: 500L
+			}]
+			x: -13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6589157CB9F1F6FE"]
+			id: "039843EF4949B6E5"
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "52384CCB81980587"
+				type: "kill"
+				value: 500L
+			}]
+			x: -11.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["75B999339D17F05B"]
+			id: "5EAB0C9C33EB4FA3"
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "1CBF2C1E9ABCE7D3"
+				type: "kill"
+				value: 500L
+			}]
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7B1C2504C212174C"]
+			id: "40E9F65C99625921"
+			tasks: [{
+				entity: "minecraft:witch"
+				id: "76A0C8BBC3C929C8"
+				type: "kill"
+				value: 500L
+			}]
+			x: -7.5d
+			y: -1.0d
+		}
+		{
+			id: "11E724D53E69F248"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "5E78206C2C76B7A2"
+				type: "kill"
+				value: 10L
+			}]
+			x: -23.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["11E724D53E69F248"]
+			id: "0AC8C8A51D8B49F6"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "1B3A0396BDD0E953"
+				type: "kill"
+				value: 100L
+			}]
+			x: -23.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0AC8C8A51D8B49F6"]
+			id: "2EBFDCDDCD8E33DB"
+			tasks: [{
+				entity: "minecraft:wither"
+				id: "4CEE680FCD0213E1"
+				type: "kill"
+				value: 500L
+			}]
+			x: -23.5d
+			y: -1.0d
+		}
+	]
+}
