@@ -16,7 +16,6 @@ RecipeViewerEvents.removeEntries("item", e => {
           Object.values(groupedItems).forEach(variantGroup => {
             let sortedByPriority = sortArray(variantGroup);
             if (sortedByPriority.length > 1) {
-              // Keep the first item, prepare the rest for removal
               if (debug)
                 console.log(sortedByPriority.slice(1));
               unifyHide.push(sortedByPriority.slice(1));
@@ -32,7 +31,6 @@ RecipeViewerEvents.removeEntries("item", e => {
   let groupByVariant = (items) => {
     let groups = { regular: [], deepslate: [], nether: [], end: [] };
     items.forEach(item => {
-      // Example logic for determining the variant, adjust based on actual item ID format
       if (item.includes("deepslate")) groups.deepslate.push(item);
       else if (item.includes("nether")) groups.nether.push(item);
       else if (item.includes("end")) groups.end.push(item);
