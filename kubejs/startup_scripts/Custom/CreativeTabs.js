@@ -4,10 +4,6 @@ StartupEvents.modifyCreativeTab('kubejs:tab', (event) => {
 
 	let compressedBlocks = nonSortedCompressedBlocks;
 	event.remove(compressedBlocks);
-
-	// Sort the compressed blocks by ID, with blocks of same type grouped together, then by compression level
-	// ID follows this format: craftoria:<compression_level>x_compressed_<type>_block
-	// Type may have more than one word, separated by underscores
 	compressedBlocks = compressedBlocks.sort((a, b) => {
 		a = a.replace('craftoria:', '').split('_');
 		b = b.replace('craftoria:', '').split('_');
