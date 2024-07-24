@@ -127,6 +127,7 @@ StartupEvents.registry('block', (event) => {
 				.hardness(i)
 				.resistance(6)
 				.tagBoth(`craftoria:${i}x_compressed`)
+				.tagItem(`modern_industrialization:replicator_blacklist`)
 				.tagBlock(`minecraft:mineable/${block.tool || 'pickaxe'}`).modelJson = cBlockModel;
 			nonSortedCompressedBlocks.push(`craftoria:${i}x_compressed_${blockId}_block`);
 		});
