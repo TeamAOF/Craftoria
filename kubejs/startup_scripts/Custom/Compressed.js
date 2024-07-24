@@ -1,3 +1,5 @@
+let nonSortedCompressedBlocks = [];
+
 StartupEvents.registry('block', (event) => {
 	let cBlockBaseModel = {
 		parent: 'minecraft:block/block',
@@ -34,44 +36,64 @@ StartupEvents.registry('block', (event) => {
 		],
 	};
 
-	let compressedVanillaBlocks = [
-		{ name: 'Iron', texture: 'iron_block', soundType: 'metal', tool: 'pickaxe' },
-		{ name: 'Gold', texture: 'gold_block', soundType: 'metal', tool: 'pickaxe' },
-		{ name: 'Diamond', texture: 'diamond_block', soundType: 'metal', tool: 'pickaxe' },
-		{ name: 'Emerald', texture: 'emerald_block', soundType: 'metal', tool: 'pickaxe' },
-		{ name: 'Redstone', texture: 'redstone_block', soundType: 'metal', tool: 'pickaxe' },
-		{ name: 'Lapis', texture: 'lapis_block', soundType: 'metal', tool: 'pickaxe' },
-		{ name: 'Quartz', texture: 'quartz_block_side', soundType: 'metal', tool: 'pickaxe' },
-		{ name: 'Copper', texture: 'copper_block', soundType: 'metal', tool: 'pickaxe' },
-		{ name: 'Netherite', texture: 'netherite_block', soundType: 'metal', tool: 'pickaxe' },
-		{ name: 'Sand', texture: 'sand', soundType: 'sand', tool: 'shovel' },
-		{ name: 'Gravel', texture: 'gravel', soundType: 'gravel', tool: 'shovel' },
-		{ name: 'Dirt', texture: 'dirt', soundType: 'gravel', tool: 'shovel' },
-		{ name: 'Cobblestone', texture: 'cobblestone', soundType: 'stone', tool: 'pickaxe' },
-		{ name: 'Stone', texture: 'stone', soundType: 'stone', tool: 'pickaxe' },
-		{ name: 'Andesite', texture: 'andesite', soundType: 'stone', tool: 'pickaxe' },
-		{ name: 'Diorite', texture: 'diorite', soundType: 'stone', tool: 'pickaxe' },
-		{ name: 'Granite', texture: 'granite', soundType: 'stone', tool: 'pickaxe' },
-		{ name: 'Basalt', texture: 'basalt_side', soundType: 'stone', tool: 'pickaxe' },
-		{ name: 'Blackstone', texture: 'blackstone', soundType: 'stone', tool: 'pickaxe' },
-		{ name: 'Netherrack', texture: 'netherrack', soundType: 'stone', tool: 'pickaxe' },
-		{ name: 'End Stone', texture: 'end_stone', soundType: 'stone', tool: 'pickaxe' },
+	let compressedBlocks = [
+		{ name: 'Iron', texture: 'iron_block', modID: 'minecraft' },
+		{ name: 'Gold', texture: 'gold_block', modID: 'minecraft' },
+		{ name: 'Diamond', texture: 'diamond_block', modID: 'minecraft' },
+		{ name: 'Emerald', texture: 'emerald_block', modID: 'minecraft' },
+		{ name: 'Redstone', texture: 'redstone_block', modID: 'minecraft' },
+		{ name: 'Lapis', texture: 'lapis_block', modID: 'minecraft' },
+		{ name: 'Quartz', texture: 'quartz_block_side', modID: 'minecraft' },
+		{ name: 'Copper', texture: 'copper_block', modID: 'minecraft' },
+		{ name: 'Netherite', texture: 'netherite_block', modID: 'minecraft' },
+		{ name: 'Coal', texture: 'coal_block', modID: 'minecraft' },
+		{ name: 'Sand', texture: 'sand', soundType: 'sand', tool: 'shovel', modID: 'minecraft' },
+		{ name: 'Gravel', texture: 'gravel', soundType: 'gravel', tool: 'shovel', modID: 'minecraft' },
+		{ name: 'Dirt', texture: 'dirt', soundType: 'gravel', tool: 'shovel', modID: 'minecraft' },
+		{ name: 'Clay', texture: 'clay', soundType: 'gravel', tool: 'shovel', modID: 'minecraft' },
+		{ name: 'Cobblestone', texture: 'cobblestone', soundType: 'stone', modID: 'minecraft' },
+		{ name: 'Stone', texture: 'stone', soundType: 'stone', modID: 'minecraft' },
+		{ name: 'Andesite', texture: 'andesite', soundType: 'stone', modID: 'minecraft' },
+		{ name: 'Diorite', texture: 'diorite', soundType: 'stone', modID: 'minecraft' },
+		{ name: 'Granite', texture: 'granite', soundType: 'stone', modID: 'minecraft' },
+		{ name: 'Basalt', texture: 'basalt_side', soundType: 'stone', modID: 'minecraft' },
+		{ name: 'Blackstone', texture: 'blackstone', soundType: 'stone', modID: 'minecraft' },
+		{ name: 'Netherrack', texture: 'netherrack', soundType: 'stone', modID: 'minecraft' },
+		{ name: 'End Stone', texture: 'end_stone', soundType: 'stone', modID: 'minecraft' },
+		{ name: 'Platinum', texture: 'platinum_block', modID: 'modern_industrialization' },
+		{ name: 'Aluminum', texture: 'aluminum_block', modID: 'modern_industrialization' },
+		{ name: 'Lead', texture: 'lead_block', modID: 'modern_industrialization' },
+		{ name: 'Nickel', texture: 'nickel_block', modID: 'modern_industrialization' },
+		{ name: 'Silver', texture: 'silver_block', modID: 'modern_industrialization' },
+		{ name: 'Tin', texture: 'tin_block', modID: 'modern_industrialization' },
+		{ name: 'Uranium', texture: 'uranium_block', modID: 'modern_industrialization' },
+		{ name: 'Bronze', texture: 'bronze_block', modID: 'modern_industrialization' },
+		{ name: 'Steel', texture: 'steel_block', modID: 'modern_industrialization' },
+		{ name: 'Invar', texture: 'invar_block', modID: 'modern_industrialization' },
+		{ name: 'Electrum', texture: 'electrum_block', modID: 'modern_industrialization' },
+		{ name: 'Cupronickel', texture: 'cupronickel_block', modID: 'modern_industrialization' },
+		{ name: 'Tungsten', texture: 'tungsten_block', modID: 'modern_industrialization' },
+		{ name: 'Titanium', texture: 'titanium_block', modID: 'modern_industrialization' },
+		{ name: 'Iridium', texture: 'iridium_block', modID: 'modern_industrialization' },
+		{ name: 'Osmium', texture: 'block_osmium', modID: 'mekanism' },
 	];
 
 	for (let i = 1; i < 10; i++) {
-		compressedVanillaBlocks.forEach((block) => {
+		compressedBlocks.forEach((block) => {
+			let blockId = block.name.replace(' ', '_').toLowerCase();
 			let cBlockModel = cBlockBaseModel;
-			cBlockModel.textures.all = `minecraft:block/${block.texture}`;
+			cBlockModel.textures.all = `${block.modID}:block/${block.texture}`;
 			cBlockModel.textures.overlay = `craftoria:block/overlays/${i}x_compressed`;
 			event
-				.create(`craftoria:${i}x_compressed_${block.name.replace(' ', '_').toLowerCase()}_block`)
-				.displayName(`${i}x Compressed ${block.name} Block`)
+				.create(`craftoria:${i}x_compressed_${blockId}_block`)
+				.displayName(`${i}x Compressed ${block.name} Block `)
 				.renderType('translucent')
-				.soundType(block.soundType)
+				.soundType(block.soundType || 'metal')
 				.hardness(i)
 				.resistance(6)
-				.tagBoth(`craftoria:${i}x_compressed/${block.name.replace(' ', '_').toLowerCase()}`)
-				.tagBlock(`minecraft:mineable/${block.tool}`).modelJson = cBlockModel;
+				.tagBoth(`craftoria:${i}x_compressed`)
+				.tagBlock(`minecraft:mineable/${block.tool || 'pickaxe'}`).modelJson = cBlockModel;
+			nonSortedCompressedBlocks.push(`craftoria:${i}x_compressed_${blockId}_block`);
 		});
 	}
 });
