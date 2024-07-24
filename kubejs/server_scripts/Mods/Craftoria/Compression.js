@@ -35,8 +35,7 @@ ServerEvents.recipes((e) => {
 
 			e.shapeless(`9x minecraft:${item}`, [`craftoria:1x_compressed_${item}_block`]).id(`craftoria:decompression/${item}_block/1x_to_0x`);
 		} else {
-			console.error(`Could not find item for tag: #c:storage_blocks/${item}
-        Nor could it find item with ID: minecraft:${item}
+			console.error(`Could not find item for tag: #c:storage_blocks/${item}, Nor could it find item with ID: minecraft:${item}
         Please report this to the modpack authors.`);
 		}
 	});

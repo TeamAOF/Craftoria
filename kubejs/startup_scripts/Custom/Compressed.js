@@ -37,6 +37,7 @@ StartupEvents.registry('block', (event) => {
 	};
 
 	let compressedBlocks = [
+		// Minecraft
 		{ name: 'Iron', texture: 'iron_block', modID: 'minecraft' },
 		{ name: 'Gold', texture: 'gold_block', modID: 'minecraft' },
 		{ name: 'Diamond', texture: 'diamond_block', modID: 'minecraft' },
@@ -60,6 +61,9 @@ StartupEvents.registry('block', (event) => {
 		{ name: 'Blackstone', texture: 'blackstone', soundType: 'stone', modID: 'minecraft' },
 		{ name: 'Netherrack', texture: 'netherrack', soundType: 'stone', modID: 'minecraft' },
 		{ name: 'End Stone', texture: 'end_stone', soundType: 'stone', modID: 'minecraft' },
+		{ name: 'Amethyst', texture: 'amethyst_block', modID: 'minecraft', soundType: 'amethyst' },
+
+		// Modern Industrialization
 		{ name: 'Platinum', texture: 'platinum_block', modID: 'modern_industrialization' },
 		{ name: 'Aluminum', texture: 'aluminum_block', modID: 'modern_industrialization' },
 		{ name: 'Lead', texture: 'lead_block', modID: 'modern_industrialization' },
@@ -75,7 +79,38 @@ StartupEvents.registry('block', (event) => {
 		{ name: 'Tungsten', texture: 'tungsten_block', modID: 'modern_industrialization' },
 		{ name: 'Titanium', texture: 'titanium_block', modID: 'modern_industrialization' },
 		{ name: 'Iridium', texture: 'iridium_block', modID: 'modern_industrialization' },
+		{ name: 'Antimony', texture: 'antimony_block', modID: 'modern_industrialization' },
+		{ name: 'Monazite', texture: 'monazite_block', modID: 'modern_industrialization' },
+		{ name: 'Neodymium', texture: 'neodymium_block', modID: 'modern_industrialization' },
+		{ name: 'Yttrium', texture: 'yttrium_block', modID: 'modern_industrialization' },
+		// { name: 'Cadmium', texture: 'cadmium_block', modID: 'modern_industrialization' }, Doesn't have a block
+		{ name: 'Sulfur', texture: 'sulfur_block', modID: 'modern_industrialization' },
+		{ name: 'Lignite Coal', texture: 'lignite_coal_block', modID: 'modern_industrialization' },
+		{ name: 'Salt', texture: 'salt_block', modID: 'modern_industrialization' },
+		{ name: 'Bauxite', texture: 'bauxite_block', modID: 'modern_industrialization' },
+		{ name: 'Coke', texture: 'coke_block', modID: 'modern_industrialization' },
+		{ name: 'Plutonium', texture: 'plutonium_block', modID: 'modern_industrialization' },
+		{ name: 'Beryllium', texture: 'beryllium_block', modID: 'modern_industrialization' },
+		{ name: 'Silicon', texture: 'silicon_block', modID: 'modern_industrialization' },
+		{ name: 'Sodium', texture: 'sodium_block', modID: 'modern_industrialization' },
+		{ name: 'Stainless Steel', texture: 'stainless_steel_block', modID: 'modern_industrialization' },
+		{ name: 'Uranium 235', texture: 'uranium_235_block', modID: 'modern_industrialization' },
+		{ name: 'Uranium 238', texture: 'uranium_238_block', modID: 'modern_industrialization' },
+		{ name: 'Chromium', texture: 'chromium_block', modID: 'modern_industrialization' },
+		{ name: 'Kanthal', texture: 'kanthal_block', modID: 'modern_industrialization' },
+
+		// Mekanism
 		{ name: 'Osmium', texture: 'block_osmium', modID: 'mekanism' },
+		{ name: 'Refined Obsidian', texture: 'block_refined_obsidian', modID: 'mekanism' },
+		{ name: 'Refined Glowstone', texture: 'block_refined_glowstone', modID: 'mekanism' },
+		{ name: 'Fluorite', texture: 'block_fluorite', modID: 'mekanism' },
+		{ name: 'Charcoal', texture: 'block_charcoal', modID: 'mekanism' },
+
+		// AE2 + Addons
+		{ name: 'Fluix', texture: 'fluix_block', modID: 'ae2' },
+		{ name: 'Certus Quartz', texture: 'quartz_block', modID: 'ae2' },
+		{ name: 'Entro', texture: 'entro_block', modID: 'extendedae' },
+		{ name: 'Charged Redstone', texture: 'charged_redstone_block', modID: 'appflux' },
 	];
 
 	for (let i = 1; i < 10; i++) {
