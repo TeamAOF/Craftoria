@@ -61,7 +61,10 @@ StartupEvents.registry('block', (event) => {
 		{ name: 'Blackstone', texture: 'blackstone', soundType: 'stone', modID: 'minecraft' },
 		{ name: 'Netherrack', texture: 'netherrack', soundType: 'stone', modID: 'minecraft' },
 		{ name: 'End Stone', texture: 'end_stone', soundType: 'stone', modID: 'minecraft' },
-		{ name: 'Amethyst', texture: 'amethyst_block', modID: 'minecraft', soundType: 'amethyst' },
+		{ name: 'Amethyst', texture: 'amethyst_block', soundType: 'amethyst', modID: 'minecraft' },
+		{ name: 'Deepslate', texture: 'deepslate', soundType: 'stone', modID: 'minecraft' },
+		{ name: 'Cobbled Deepslate', texture: 'cobbled_deepslate', soundType: 'stone', modID: 'minecraft' },
+		{ name: 'Tuff', texture: 'tuff', soundType: 'tuff', modID: 'minecraft' },
 
 		// Modern Industrialization
 		{ name: 'Platinum', texture: 'platinum_block', modID: 'modern_industrialization' },
