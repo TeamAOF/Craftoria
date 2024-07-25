@@ -53,7 +53,12 @@
 	]
 	quest.030E566682A89105.quest_subtitle: "Fuel Saver"
 	quest.03103A57191715D1.title: "Leather Backpack"
-	quest.03271CEB2EBD0979.quest_desc: [""]
+	quest.03271CEB2EBD0979.quest_desc: [
+		"  &6Transmits&r &cenergy&r from the &bsource&r below it, to any power &bconsumer&r within an offest AOE."
+		""
+		"{image:ftblibrary:icons/up width:32 height:32 align:center}"
+		"{image:ftbquests:tasks/fe_full width:64 height:64 align:center}"
+	]
 	quest.03271CEB2EBD0979.quest_subtitle: "An AOE Charger"
 	quest.03471D7D8B0068F0.quest_desc: [""]
 	quest.03471D7D8B0068F0.title: "Iron Backpack"
@@ -1762,6 +1767,11 @@
 	]
 	quest.62B245A23CA62678.title: "Fluid Transportation"
 	quest.62F43B936E236071.quest_desc: [
+		"   &6Collects&r &bitems&r from an offest AOE, &6placing&r them into &battached storage&r."
+		""
+		"   Adjustable speed."
+		""
+		"   Nifty!"
 		""
 		"{image:ftblibrary:icons/down width:32 height:32 align:center}"
 		"{image:minecraft:block/barrel_side width:64 height:64 align:center}"
@@ -1920,9 +1930,21 @@
 	quest.6B0418E2AC06FF09.quest_subtitle: "Feel the Burn"
 	quest.6B0418E2AC06FF09.title: "Blazegold Tool \\& Weapons"
 	quest.6B275A372AE020A8.quest_desc: [
+		"  &bPFC&r + &bH2O&r → &5Portal Fluid’&r"
+		""
+		"  &5Portal Fluid’&r + &bgoo&r* ➠ &dPortal Fluid’’&r"
+		""
+		"  *goo ≥ tier 3"
+		""
+		"  PFC = Portal Fluid Catalyst"
+		"  ’ = Unstable"
+		"  ’’ = Stable  "
+		""
+		"  &5Unstable Portal Fluid&r can only exist in &3The End&r."
 		""
 		"{image:justdirethings:item/portal_fluid_catalyst width:100 height:100 align:center}"
 	]
+	quest.6B275A372AE020A8.quest_subtitle: "More Fluidics"
 	quest.6B61D20396D57CB8.quest_desc: ["By &6throwing &fa &bdiamond&f into a &bSpiritfire&f, you will get &bSpirit Attuned Gem."]
 	quest.6BD625E5CA469914.quest_desc: [
 		"  The last step before total overclock, the most tame but beneficial upgrade, the one and only &bHighly Advanced Upgrade&r!"
