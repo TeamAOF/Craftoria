@@ -262,6 +262,11 @@
 		" &#8226; Third is a &bDiesel Jetpack&r. Yes, you heard me right. A jetpack. The &6stronger the fuel&r in it the &6faster you'll fly&r. Use your \"V\" key to toggle the jetpack on and off. Let your wings free and fly with the power of technology! &oAnd a bit of fuel...&r"
 	]
 	quest.0ED4263270D37EF6.title: "Diesel Accessories"
+	quest.0F121433B94D72D9.quest_desc: [
+		"   &6Hover&r &lJDT&r &bupgrades&r in EMI and &6hold shift&r for &9descriptons&r."
+		""
+		"{image:justdirethings:item/abilityupgrades/jumpboost width:100 height:100 align:center}"
+	]
 	quest.0F5FE44BAC4E06D4.quest_desc: [
 		"To get the &bNeptunium Ingot&f you must &afish&f for a &bNepatune's Bounty&f."
 		""
@@ -504,6 +509,8 @@
 	quest.1A9AD40B2F094DCF.title: "Stone Generator Upgrade"
 	quest.1AD1C99F9C383632.quest_desc: [
 		"   The &bfluid canister&r &6holds 8 Buckets&r of whatever &bfluid&r you like."
+		""
+		"   It has a unique “fill” mode for automatically &6filling&r &bfluid holding items&r in your inventory."
 		""
 		"{image:justdirethings:item/fluidcanister/fluid_canister width:100 height:100 align:center}"
 	]
@@ -1090,7 +1097,18 @@
 	quest.3A20D522302FE7B9.title: "Logic Processor"
 	quest.3A5A59C7AEA670C7.quest_desc: ["&aUse the Dictionary of spirits to build Aviar's circle"]
 	quest.3A5A59C7AEA670C7.title: "Aviar's Circle"
-	quest.3AE00D06232E0175.quest_subtitle: "To The Moon"
+	quest.3AE00D06232E0175.quest_desc: [
+		"  &bThe Portal Gun&r:"
+		"    • L/R clicks, &6open&r paired &5portals&r"
+		""
+		"  &bThe Advanced Portal Gun&r:"
+		"    • &6Opens&r &5portals&r to saved &9locations&r"
+		"    • &6Consumes&r &cpower&r and &bportal fluid&r"
+		""
+		""
+		"{image:justdirethings:block/portal_shader width:100 height:100 align:center}"
+	]
+	quest.3AE00D06232E0175.quest_subtitle: "To the Moon!"
 	quest.3B007B3669FFC1C4.quest_desc: ["Their is a fire in the eye of this creature. You might want to bring some &bwater&f and a &bsword."]
 	quest.3B007B3669FFC1C4.quest_subtitle: "Be aware of fire"
 	quest.3B007B3669FFC1C4.title: "Ritual: Summon Unbound Afrit"
@@ -1743,6 +1761,11 @@
 		"  &cTime for some spaghetti?&r"
 	]
 	quest.62B245A23CA62678.title: "Fluid Transportation"
+	quest.62F43B936E236071.quest_desc: [
+		""
+		"{image:ftblibrary:icons/down width:32 height:32 align:center}"
+		"{image:minecraft:block/barrel_side width:64 height:64 align:center}"
+	]
 	quest.62F43B936E236071.quest_subtitle: "Gimme That!"
 	quest.62FCB2F06126B622.quest_desc: ["The &bWireless Terminal&f is a &bregular Terminal&f that can be used to access an&b ME System&b wirelessly. Use an &bAccess Point&f to connect up your &bTerminal&f and use &bBooster Cards&b to increase the total distance from that &bAccess Point&f you want to be able to use your system. Using multiple &bAccess Points&f on the same network in different locations can help you cover a larger footprint."]
 	quest.62FCB2F06126B622.title: "Wireless Terminal"
@@ -2025,10 +2048,6 @@
 		"NOTE: Might want to figure your how they respond in the book first."
 	]
 	quest.70EA0BAAB50E32BF.quest_desc: ["The&b Circuit Slicer&f is the same as the&b Inscriber&f, but crafts &a9 items&f at a time, and is &afaster&f. It even still has upgrade slots."]
-	quest.715275CB90EF8406.quest_desc: [
-		""
-		""
-	]
 	quest.71776A6A96EB037C.quest_desc: [
 		"  &bFire Clay&r is a &6mixture&r of plain river &bClay&r and &bBrick Dust&r as a tempering agent, then &6re-fired&r to harden it to make it withstand extreme temperatures."
 		""
@@ -2043,7 +2062,23 @@
 	]
 	quest.71DD555551705B17.title: "Dynamic Tank"
 	quest.71F041E82D23C365.title: "Oredictionificator"
-	quest.720874ECBFD3FD19.quest_subtitle: "Faster Burning for MOAR Power"
+	quest.720874ECBFD3FD19.quest_desc: [
+		"  &bBlaze Ember&r + PF → &4Blaze Ember Ø&r"
+		""
+		"  &bVoidFlame Coal&r + &cBlaze Emberƒ&r → &4VoidFlame Ø&r"
+		""
+		"  &bEclipse Ember&r + &cVoidFlameƒ&r → &4Eclipse Ember Ø&r"
+		""
+		"  &4&oX&r &4Ø&r + &bgoo&r* ➠ &c&oX&r &cƒ&r"
+		""
+		"    (* goo must be of ≥ tier)"
+		""
+		"   PF = polymophic fluid"
+		"    Ø = &ounrefined&r fuel  "
+		"    ƒ = fuel"
+		" "
+	]
+	quest.720874ECBFD3FD19.quest_subtitle: "JDT Fluidics 101"
 	quest.720874ECBFD3FD19.title: "Fluid Fuels"
 	quest.720F16D6B1CB519C.quest_desc: ["Source gems are crafted with Lapis or Amethyst inside of the Imbuement Chamber."]
 	quest.72481CA0AC8AFD6A.quest_desc: [
@@ -2158,10 +2193,13 @@
 	quest.77D008B7B47BF2D7.title: "Diamond Backpack"
 	quest.78756CC2F8821E41.quest_desc: ["The Gas Upgrade can be installed into machines that use some type of gas, to increase the efficiency of it. The more Gas Upgrades, the less gas it consumes."]
 	quest.7806DD85D325C01C.quest_desc: [
+		"   &bPolymorphic Catalyst&r is the key to unlock JDT's better &bfuels&r."
 		""
+		"   &6Drop&r one piece of&b polymorphic catalyst&r into &bwater&r, and &bpolymorphic fluid&r will &6result&r."
 		""
-		"{image:justdirethings:item/polymorphic_catalyst width:100 height:100 align:center}"
+		"{image:justdirethings:block/fluid_flowing width:100 height:100 align:center}"
 	]
+	quest.7806DD85D325C01C.quest_subtitle: "Better Fuels and Portals Begin Here"
 	quest.78756CC2F8821E41.title: "Gas Upgrade"
 	quest.789AD926FD776554.quest_desc: ["The &bDense Covered Cable&f can transmit 32 channels. Still no network information though."]
 	quest.789AD926FD776554.title: "Fluix Dense Covered Cable"

@@ -1089,8 +1089,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["715275CB90EF8406"]
-			hide_dependency_lines: false
+			dependencies: ["75C95D894C3B3428"]
 			id: "0F121433B94D72D9"
 			shape: "rsquare"
 			size: 1.5d
@@ -1100,20 +1099,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["75C95D894C3B3428"]
-			id: "715275CB90EF8406"
-			shape: "rsquare"
-			tasks: [{
-				count: 5L
-				id: "767C1AEB96CFDFFE"
-				item: { count: 1, id: "justdirethings:upgrade_blank" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 5.25d
+			y: 4.25d
 		}
 		{
 			icon_scale: 2.0d
@@ -1150,6 +1136,7 @@
 		{
 			dependencies: ["75C95D894C3B3428"]
 			id: "720874ECBFD3FD19"
+			min_width: 256
 			size: 1.25d
 			tasks: [
 				{
