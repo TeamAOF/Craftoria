@@ -53,18 +53,33 @@
 	]
 	quest.030E566682A89105.quest_subtitle: "Fuel Saver"
 	quest.03103A57191715D1.title: "Leather Backpack"
+	quest.03271CEB2EBD0979.quest_desc: [""]
+	quest.03271CEB2EBD0979.quest_subtitle: "An AOE Charger"
 	quest.03471D7D8B0068F0.quest_desc: [""]
 	quest.03471D7D8B0068F0.title: "Iron Backpack"
 	quest.03CF6D6277D93A4A.quest_desc: ["The Gauge Dropper is a useful tool to move up to 16 buckets of fluid at a time directly from an inventory. This will help you to configure machines properly in the future."]
 	quest.03CF6D6277D93A4A.title: "Gauge Dropper"
 	quest.03E0ADE2191CC3FB.title: "Advanced Induction Cell"
 	quest.03EE3F38F8606509.quest_desc: ["When combined with Redstone and Printed Silicon, you will make a Accumulation Processor."]
+	quest.03F624101CDF5291.quest_desc: [
+		"  &bSimple&r:"
+		"    • &bBlocks&r get &6placed&r"
+		"    • Speed and orientation controls"
+		"    • Optional &bredstone&r &6sensitivy&r"
+		""
+		"  &bAdvanced&r:"
+		"    • Adds &6filtering&r and &boffset AOE&r"
+		"    • Needs &bpower&r"
+		""
+		"{image:justdirethings:block/blockplacert2_side width:100 height:100 align:center}"
+	]
+	quest.03F624101CDF5291.quest_subtitle: "( noun verb, not verb noun )"
 	quest.045942C709C63044.quest_desc: [
 		"  Simple."
 		""
 		"  &6Generates&r power."
 		""
-		"  From &bcoal&r, and other like &bfuels&r."
+		"  From &bcoal&r, and other &nsolid&r &bfuels&r."
 		""
 		"{image:justdirethings:block/generatort1_top width:100 height:100 align:center}"
 	]
@@ -520,6 +535,18 @@
 		"  Now, you've probably noticed that in your journey, you've been able to make &bBlast-proof Alloy Plates&b and &rTungsten Nuggets&r within your everyday compressor, despite it being a pretty inefficient process. Well now, using the &bImplosion Compressor&r, you'll be able to do it faster and even more efficient!"
 	]
 	quest.1C25114D2AF71C35.title: "Implosion Compressor"
+	quest.1C69AE9775DDC0AD.quest_desc: [
+		"  Simple."
+		""
+		"  &6Generates&r power from &bfluid fuels&r:"
+		""
+		"• &bBlaze Ember Fuel&r"
+		"• &bVoidflame Fuel&r"
+		"• &bEclipse Ember Fuel&r"
+		""
+		"{image:justdirethings:block/generatorfluidt1_top width:100 height:100 align:center}"
+	]
+	quest.1C69AE9775DDC0AD.quest_subtitle: "Fluid Fuels Only"
 	quest.1C7918099D5A55E2.quest_desc: ["The &bConcurrent Press &fis used inside the &bInscriber &fto craft the &bConcurrent Processor&f."]
 	quest.1C7CCCBD98BC295E.quest_desc: ["The &bInverted Toggle Bus &fdoes the exact same thing as it's brother, but the other way around! Giving it a&6 redstone signal &fwill cut data and power transfer."]
 	quest.1C7CCCBD98BC295E.title: "Inverted Toggle Bus"
@@ -816,6 +843,10 @@
 	]
 	quest.2CB005B413D2B889.quest_subtitle: "Slay Queen!"
 	quest.2CB005B413D2B889.title: "&cBe &aa &9Fashion &eIcon&8!"
+	quest.2CE7390F7567D9E2.quest_desc: [
+		""
+		"{image:justdirethings:block/blockswappert2_side width:100 height:100 align:center}"
+	]
 	quest.2CE943AD7CB99FF8.title: "Backpacks"
 	quest.2D4170B5AD28DCBF.quest_desc: [
 		"  The best single block &bDiesel Generator&r you can make. &6It'll output up to 1024 eu/t&r from any of the various fluids listed in your REI."
@@ -1039,6 +1070,10 @@
 	quest.3850B26FC78DD874.title: "Basic Smelting Factory"
 	quest.393249898AEEA531.quest_desc: ["&bEngineering Processors &fare used to make the &bController &fand other components to get your first &bME system &fup."]
 	quest.393249898AEEA531.title: "Engineering Processor"
+	quest.39460CB77E53D5FA.quest_desc: [
+		""
+		"{image:justdirethings:block/playeraccessor width:100 height:100 align:center}"
+	]
 	quest.3973F425BD96668A.quest_desc: ["The &bPattern Access Terminal &fis another upgrade or the &bTerminal&f. This Terminal will allow you to make a &bPattern&f of items you want your system to craft."]
 	quest.3973F425BD96668A.title: "Pattern Encoding Terminal"
 	quest.3995CC829C7B015A.quest_desc: ["Crafted from Magebloom, Fiber is used for alot of different Threads and Armor"]
@@ -1055,6 +1090,7 @@
 	quest.3A20D522302FE7B9.title: "Logic Processor"
 	quest.3A5A59C7AEA670C7.quest_desc: ["&aUse the Dictionary of spirits to build Aviar's circle"]
 	quest.3A5A59C7AEA670C7.title: "Aviar's Circle"
+	quest.3AE00D06232E0175.quest_subtitle: "To The Moon"
 	quest.3B007B3669FFC1C4.quest_desc: ["Their is a fire in the eye of this creature. You might want to bring some &bwater&f and a &bsword."]
 	quest.3B007B3669FFC1C4.quest_subtitle: "Be aware of fire"
 	quest.3B007B3669FFC1C4.title: "Ritual: Summon Unbound Afrit"
@@ -1341,6 +1377,18 @@
 	quest.495EEAA73357FA60.title: "Eclipse Alloy Tool \\& Weapons"
 	quest.4980C231ECDB0BF2.quest_desc: ["  The &bSteel Drill&r gives you the rest of the &6more commonly used ores&r that you'll need for further progression in your journey to total automation, but also in your journey of the world itself. Check your REI for all the possible outputs."]
 	quest.4980C231ECDB0BF2.title: "Steel Drill"
+	quest.49910F2EFEA1CDF2.quest_desc: [
+		"  &bSimple&r:"
+		"    • &bFluids&r get &6collected&r"
+		"    • Speed and orientation controls"
+		"    • Optional &bredstone&r &6sensitiviy&r"
+		""
+		"  &bAdvanced&r:"
+		"    • Adds &6filtering&r and &boffset AOE&r"
+		"    • Needs &bpower&r"
+		""
+		"{image:justdirethings:block/fluidcollectort2_side width:100 height:100 align:center}"
+	]
 	quest.49C508DCB4AAC3CB.title: "Ultimate Sawing Factory"
 	quest.4A476B25B5A3E88D.quest_subtitle: "+2 Spawn Range"
 	quest.4A5466E364B85AEF.quest_desc: [
@@ -1410,8 +1458,9 @@
 	quest.4D1B83E147CC16AE.quest_subtitle: "AutoCrops, Roll Out!"
 	quest.4D59020A532C4E92.quest_desc: [
 		""
-		""
+		"{image:justdirethings:item/creaturecatcher_top_animation width:100 height:100 align:center}"
 	]
+	quest.4D59020A532C4E92.quest_subtitle: "Here, Kitty Kitty."
 	quest.4D7F6656A6A38EE0.quest_subtitle: "Used to pull energy from the Network"
 	quest.4DAFFFDC31A78665.quest_desc: ["Crafted with a &bIron Block &fin a &bCharger &fused to make the &bEnergy Processor&f."]
 	quest.4DBDCEA0761F1D3B.quest_desc: ["The Warp Scroll with let you set a spot in the world and will let u teleport to that spot before getting consumed."]
@@ -1465,6 +1514,18 @@
 	quest.510C7652FE3431AC.title: "Welcome to Mekanism"
 	quest.511C07DFE796F377.title: "Tier 1 Glyphs"
 	quest.511E7475AD64A32D.quest_desc: ["The &bME Crystal Fixer&f can repair &bBudding Block&f into the next tier."]
+	quest.516F2A1A1270D9DC.quest_desc: [
+		"  &bSimple&r:"
+		"    • &bBlocks&r get &6broke&r"
+		"    • Speed and orientation controls"
+		"    • Optional &bredstone&r &6sensitiviy&r"
+		""
+		"  &bAdvanced&r:"
+		"    • Adds &6filtering&r and &boffset AOE&r"
+		"    • Needs &bpower&r"
+		""
+		"{image:justdirethings:block/blockbreakert2_side width:100 height:100 align:center}"
+	]
 	quest.52AD3D58B644AA30.title: "Wind Generator"
 	quest.52F4C1914EF9C7E2.quest_desc: ["Automate me a time machine now, wontcha?"]
 	quest.5319FD97D5133E7A.quest_desc: ["To craft &bRedstone Crystal&6 throw&b 1 Block of Redstone, 1 Glowstone Dust, and 1 Fluix Crystal &finto &awater &fand watch the magic happen."]
@@ -1612,11 +1673,10 @@
 	quest.5C8D7BD3DA61109F.quest_subtitle: "Resources Go BRRR!"
 	quest.5C8D7BD3DA61109F.title: "Electric Quarry"
 	quest.5CD12382792FA310.quest_desc: [
-		"  &6Handy&r for &6working&r with &lJDT&r's machines"
-		""
-		""
+		" "
 		"{image:justdirethings:item/machine_settings_copier width:100 height:100 align:center}"
 	]
+	quest.5CD12382792FA310.quest_subtitle: "Guess What This Does"
 	quest.5CEFB3C551971327.quest_desc: ["Now that u have an Enchantment Apperatus, craft yourself a Magebloom Seed."]
 	quest.5D584858B61E534B.quest_desc: ["This &bCatalyst &fslowly turns &bMercury &finto &6Flux&f, your first source of &6Energy."]
 	quest.5D584858B61E534B.quest_subtitle: "Mercury = Flux"
@@ -1683,6 +1743,7 @@
 		"  &cTime for some spaghetti?&r"
 	]
 	quest.62B245A23CA62678.title: "Fluid Transportation"
+	quest.62F43B936E236071.quest_subtitle: "Gimme That!"
 	quest.62FCB2F06126B622.quest_desc: ["The &bWireless Terminal&f is a &bregular Terminal&f that can be used to access an&b ME System&b wirelessly. Use an &bAccess Point&f to connect up your &bTerminal&f and use &bBooster Cards&b to increase the total distance from that &bAccess Point&f you want to be able to use your system. Using multiple &bAccess Points&f on the same network in different locations can help you cover a larger footprint."]
 	quest.62FCB2F06126B622.title: "Wireless Terminal"
 	quest.632BE5724D2120EB.title: "Reinforced Alloy"
@@ -1709,6 +1770,18 @@
 	quest.644B280698D65076.title: "Ultimate Universal Cable"
 	quest.653C26BF81CFA5A0.quest_desc: ["Used as a housing to hold MEGA Storage Component, for Item Storage."]
 	quest.65A2C957F10E0D8D.title: "Dimensional Stabilizer"
+	quest.65A75D8101BEB05F.quest_desc: [
+		"  &bSimple&r:"
+		"    • &bFluids&r get &6placed&r"
+		"    • Speed and orientation controls"
+		"    • Optional &bredstone&r &6sensitivy&r"
+		""
+		"  &bAdvanced&r:"
+		"    • Adds &6filtering&r and &boffset AOE&r"
+		"    • Needs &bpower&r"
+		""
+		"{image:justdirethings:block/fluidplacert2_side width:100 height:100 align:center}"
+	]
 	quest.660EFAF144F70749.quest_desc: [
 		"  Time for a major upgrade! Previously you've only been able to produce electricity at 32 eu/t per turbine using the &bLV Steam Turbine&r, but now you'll be &6able to make a maximum of 128 eu/t&r out of the brand new &bMV Steam Turbine&r! Aside from the increase in energy production four-fold, it acts just like the &bLV Steam Turbine&r."
 		""
@@ -1789,12 +1862,16 @@
 	quest.693C902E4E926BB4.title: "Chemical Oxidizer"
 	quest.69403313B37E8219.quest_desc: [
 		""
-		""
+		"{image:justdirethings:block/clickert2_side width:100 height:100 align:center}"
 	]
 	quest.695A9A54CFD509FF.quest_desc: ["This machine allows for the &6replication&f of &bSulfur "]
 	quest.695A9A54CFD509FF.quest_subtitle: "Infinite Sulfur?"
 	quest.6976592A2FB069AD.quest_desc: ["Crafted with &b4 Fluix Crystals&f in a 2x2 pattern you will obtain a &bFluix Block&f."]
 	quest.69B079DABB860AEF.title: "Ultimate Control Circuit"
+	quest.69BD8400AAA37066.quest_desc: [
+		""
+		"{image:justdirethings:block/sensort2_side width:100 height:100 align:center}"
+	]
 	quest.6A382549A4C55A5E.title: "Advanced Control Circuit"
 	quest.6A6C19E36893381B.title: "Formulaic Assemblicator"
 	quest.6A9DAB624949191E.title: "Elite Enriching Factory"
@@ -1819,6 +1896,10 @@
 	]
 	quest.6B0418E2AC06FF09.quest_subtitle: "Feel the Burn"
 	quest.6B0418E2AC06FF09.title: "Blazegold Tool \\& Weapons"
+	quest.6B275A372AE020A8.quest_desc: [
+		""
+		"{image:justdirethings:item/portal_fluid_catalyst width:100 height:100 align:center}"
+	]
 	quest.6B61D20396D57CB8.quest_desc: ["By &6throwing &fa &bdiamond&f into a &bSpiritfire&f, you will get &bSpirit Attuned Gem."]
 	quest.6BD625E5CA469914.quest_desc: [
 		"  The last step before total overclock, the most tame but beneficial upgrade, the one and only &bHighly Advanced Upgrade&r!"
@@ -1962,6 +2043,8 @@
 	]
 	quest.71DD555551705B17.title: "Dynamic Tank"
 	quest.71F041E82D23C365.title: "Oredictionificator"
+	quest.720874ECBFD3FD19.quest_subtitle: "Faster Burning for MOAR Power"
+	quest.720874ECBFD3FD19.title: "Fluid Fuels"
 	quest.720F16D6B1CB519C.quest_desc: ["Source gems are crafted with Lapis or Amethyst inside of the Imbuement Chamber."]
 	quest.72481CA0AC8AFD6A.quest_desc: [
 		"While bearing some similarity to the &bFluix ME Covered Cable&r in appearance, they provide diagnostic function by visualizing the &6channel usage&r on the &bcables&r, the &6channels&r appear as lit colored lines that run along the black stripe on the &bcables&r giving you an understanding of how your &6channels&r are being used on your &6network&r."
@@ -2074,6 +2157,11 @@
 	quest.779C3C6B89AD2526.title: "The Electric Age!"
 	quest.77D008B7B47BF2D7.title: "Diamond Backpack"
 	quest.78756CC2F8821E41.quest_desc: ["The Gas Upgrade can be installed into machines that use some type of gas, to increase the efficiency of it. The more Gas Upgrades, the less gas it consumes."]
+	quest.7806DD85D325C01C.quest_desc: [
+		""
+		""
+		"{image:justdirethings:item/polymorphic_catalyst width:100 height:100 align:center}"
+	]
 	quest.78756CC2F8821E41.title: "Gas Upgrade"
 	quest.789AD926FD776554.quest_desc: ["The &bDense Covered Cable&f can transmit 32 channels. Still no network information though."]
 	quest.789AD926FD776554.title: "Fluix Dense Covered Cable"

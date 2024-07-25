@@ -450,8 +450,8 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:portalgun)item(justdirethings:portalgun_v2))", "minecraft:custom_name": "\"Portal Gun\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 6.5d
-			y: 5.25d
+			x: 8.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["75C95D894C3B3428"]
@@ -525,11 +525,12 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 3.4375d
+			y: 3.5d
 		}
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
 			id: "03271CEB2EBD0979"
+			size: 1.25d
 			tasks: [{
 				id: "71C29108A100BC42"
 				item: { count: 1, id: "justdirethings:energytransmitter" }
@@ -548,7 +549,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 3.4375d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -562,8 +563,8 @@
 				item: { count: 1, id: "justdirethings:machinesettingscopier" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: 3.4375d
+			x: 6.5d
+			y: 5.25d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -646,7 +647,7 @@
 				item: { count: 1, id: "justdirethings:pocket_generator" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -8.0d
 			y: 3.5d
 		}
 		{
@@ -658,8 +659,8 @@
 				item: { count: 1, id: "justdirethings:fluid_canister" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.5d
+			x: -8.0d
+			y: 5.25d
 		}
 		{
 			dependencies: ["202149DADCC786EE"]
@@ -718,8 +719,8 @@
 				item: { count: 1, id: "justdirethings:generatort1" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 3.4375d
+			x: -6.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["08B17C05B2111477"]
@@ -1126,6 +1127,85 @@
 			}]
 			x: -8.0d
 			y: 0.875d
+		}
+		{
+			dependencies: ["75C95D894C3B3428"]
+			id: "7806DD85D325C01C"
+			size: 1.25d
+			tasks: [
+				{
+					id: "76B092A873A662EC"
+					item: { count: 1, id: "justdirethings:polymorphic_catalyst" }
+					type: "item"
+				}
+				{
+					id: "2896D79875352AC8"
+					item: { count: 1, id: "justdirethings:polymorphic_fluid_bucket" }
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["75C95D894C3B3428"]
+			id: "720874ECBFD3FD19"
+			size: 1.25d
+			tasks: [
+				{
+					id: "36975EF3F497618C"
+					item: { count: 1, id: "justdirethings:refined_t2_fluid_bucket" }
+					type: "item"
+				}
+				{
+					id: "1C896273470AC257"
+					item: { count: 1, id: "justdirethings:refined_t3_fluid_bucket" }
+					type: "item"
+				}
+				{
+					id: "7F2FFFDF98F2C29D"
+					item: { count: 1, id: "justdirethings:refined_t4_fluid_bucket" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["75C95D894C3B3428"]
+			id: "6B275A372AE020A8"
+			size: 1.25d
+			tasks: [
+				{
+					id: "1DFA9D81D1C641C2"
+					item: { count: 1, id: "justdirethings:portal_fluid_catalyst" }
+					type: "item"
+				}
+				{
+					id: "142163E03E653B10"
+					item: { count: 1, id: "justdirethings:unstable_portal_fluid_bucket" }
+					type: "item"
+				}
+				{
+					id: "66E4D2943302A13E"
+					item: { count: 1, id: "justdirethings:portal_fluid_bucket" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["75C95D894C3B3428"]
+			id: "1C69AE9775DDC0AD"
+			size: 1.25d
+			tasks: [{
+				id: "48F4D6B4ECD0FCCF"
+				item: { count: 1, id: "justdirethings:generatorfluidt1" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
 		}
 	]
 }
