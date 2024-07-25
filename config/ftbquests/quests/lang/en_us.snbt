@@ -856,9 +856,20 @@
 	quest.2CB005B413D2B889.quest_subtitle: "Slay Queen!"
 	quest.2CB005B413D2B889.title: "&cBe &aa &9Fashion &eIcon&8!"
 	quest.2CE7390F7567D9E2.quest_desc: [
+		"  &bSimple&r:"
+		"    • Works in pairs"
+		"    • &6Swaps&r &bblocks&r (incl. &bair)&r"
+		"    • &3Entities&r &6teleport&r (solo)"
+		"    • &4Redstone&r &esensitivity&r options"
+		""
+		"  &bAdvanced&r:"
+		"    • Adds &6filtering&r and &3offset AOE&r"
+		"    • Needs &cpower&r"
+		""
 		""
 		"{image:justdirethings:block/blockswappert2_side width:100 height:100 align:center}"
 	]
+	quest.2CE7390F7567D9E2.quest_subtitle: "Portals in Machine Form"
 	quest.2CE943AD7CB99FF8.title: "Backpacks"
 	quest.2D4170B5AD28DCBF.quest_desc: [
 		"  The best single block &bDiesel Generator&r you can make. &6It'll output up to 1024 eu/t&r from any of the various fluids listed in your REI."
@@ -1083,6 +1094,7 @@
 	quest.393249898AEEA531.quest_desc: ["&bEngineering Processors &fare used to make the &bController &fand other components to get your first &bME system &fup."]
 	quest.393249898AEEA531.title: "Engineering Processor"
 	quest.39460CB77E53D5FA.quest_desc: [
+		"  &6Allows&r other &bblocks&r to &6interact&r with your &3inventory,&r &3armor,&r or &3off-hand&r &bslots&r."
 		""
 		"{image:justdirethings:block/playeraccessor width:100 height:100 align:center}"
 	]
@@ -1770,10 +1782,6 @@
 	quest.62F43B936E236071.quest_desc: [
 		"   &6Collects&r &bitems&r from an offest AOE, &6placing&r them into &battached storage&r."
 		""
-		"   Adjustable speed."
-		""
-		"   Nifty!"
-		""
 		"{image:ftblibrary:icons/down width:32 height:32 align:center}"
 		"{image:minecraft:block/barrel_side width:64 height:64 align:center}"
 	]
@@ -1905,7 +1913,7 @@
 		""
 		"  &bAdvanced&r:"
 		"    • Adds &6filtering&r and &3offset AOE&r"
-		"    • Can &6charge&r insterted &bequipment&r"
+		"    • Can &6charge&r inserted &bequipment&r"
 		"    • Needs &cpower&r"
 		""
 		"{image:justdirethings:block/clickert2_side width:100 height:100 align:center}"
