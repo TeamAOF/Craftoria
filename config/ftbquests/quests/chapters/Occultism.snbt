@@ -75,7 +75,7 @@
 			y: 6.8d
 		}
 	]
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -550,8 +550,11 @@
 			rewards: [{
 				id: "14257E29CF6EFB7D"
 				item: {
+					components: {
+						"ftbquests:missing_item": "ironchest:iron_chest"
+					}
 					count: 1
-					id: "ironchest:iron_chest"
+					id: "ftbquests:missing_item"
 				}
 				type: "item"
 			}]

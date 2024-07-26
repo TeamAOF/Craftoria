@@ -17,7 +17,7 @@
 		{ item: { count: 1, id: "theurgy:alchemical_sulfur_certus_quartz" }, weight: 10.0f }
 		{ item: { count: 1, id: "theurgy:alchemical_sulfur_lapis" }, weight: 10.0f }
 		{ item: { count: 1, id: "theurgy:alchemical_sulfur_copper" }, weight: 20.0f }
-		{ item: { count: 1, id: "theurgy:alchemical_sulfur_coal" }, weight: 20.0f }
+		{ item: { components: { "ftbquests:missing_item": "theurgy:alchemical_sulfur_coal" }, count: 1, id: "ftbquests:missing_item" }, weight: 20.0f }
 		{ item: { count: 1, id: "theurgy:alchemical_sulfur_silver" }, weight: 5.0f }
 		{ item: { count: 1, id: "theurgy:alchemical_sulfur_iesnium" } }
 		{ item: { count: 1, id: "theurgy:alchemical_sulfur_niter" }, weight: 10.0f }
@@ -27,7 +27,7 @@
 		{ item: { count: 1, id: "theurgy:alchemical_sulfur_gold" }, weight: 5.0f }
 		{ item: { count: 1, id: "theurgy:alchemical_sulfur_iridium" }, weight: 5.0f }
 		{ item: { count: 1, id: "theurgy:alchemical_sulfur_ostrum" }, weight: 5.0f }
-		{ item: { count: 1, id: "theurgy:alchemical_sulfur_logs" }, weight: 20.0f }
+		{ item: { components: { "ftbquests:missing_item": "theurgy:alchemical_sulfur_logs" }, count: 1, id: "ftbquests:missing_item" }, weight: 20.0f }
 		{ item: { count: 1, id: "theurgy:alchemical_sulfur_diamond" } }
 		{ item: { count: 1, id: "theurgy:alchemical_sulfur_redstone" }, weight: 10.0f }
 		{ item: { count: 1, id: "theurgy:alchemical_sulfur_netherite" } }
