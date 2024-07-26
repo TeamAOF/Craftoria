@@ -1,3 +1,66 @@
+## Craftoria | v0.5.0
+
+_NeoForge Loader 21.0.139_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.5.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.5.0.md)_
+
+### 5 New Quest Chapters
+(Rewards will be revamped later)
+
+* Ars Nouveau
+* Just Dire Things
+* Utilities
+* Storage
+* Tools & Armory
+
+### Changes/Improvements ⭐
+
+* Added quests for all AE2 addons to the AE2 quest chapter.
+* Added a new variant of bricks, Smokey Bricks.
+* Added compressed variants of blocks.
+* Re-balance of all Powah generation rates.
+* Added re-centering to all quest chapters.
+
+### Bug Fixes 🪲
+
+* Fixed an issue where modifier keys couldnt be applied in keybinds.
+* Fixed issues an issue where EMI would hide some ores from the recipe viewer.
+* Fixed researching table not dropping when broken.
+
+### Recipes 🪵
+
+* Changed recipes for all Powah solar panels.
+* Fixed recipe conflicts between drawers and cupboards.
+
+### Added Mods ✅
+
+  * [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau)
+  * [Ars Ocultas](https://www.curseforge.com/minecraft/mc-mods/ars-ocultas)
+  * [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts)
+  * [Bridging Mod](https://www.curseforge.com/minecraft/mc-mods/bridging-mod)
+  * [Curios API Continuation](https://www.curseforge.com/minecraft/mc-mods/curios-continuation)
+  * [ChoiceTheorem's Overhauled Village](https://www.curseforge.com/minecraft/mc-mods/choicetheorems-overhauled-village)
+  * [Durability Tooltip](https://www.curseforge.com/minecraft/mc-mods/durability-tooltip)
+  * [Extra Sponges](https://www.curseforge.com/minecraft/mc-mods/extra-sponges)
+  * [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)
+  * [Jumbo Furnace](https://www.curseforge.com/minecraft/mc-mods/jumbo-furnace)
+  * [Lighty](https://www.curseforge.com/minecraft/mc-mods/lighty)
+  * [Lithostitched](https://www.curseforge.com/minecraft/mc-mods/lithostitched)
+  * [Macaw's Roofs](https://www.curseforge.com/minecraft/mc-mods/macaws-roofs)
+  * [Modern Industrialization Sound Addon](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization-sound-addon)
+  * [Simple Magnets](https://www.curseforge.com/minecraft/mc-mods/simple-magnets)
+  * [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib)
+  * [SuperMartijn642's Core Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib)
+  * [Trash Cans](https://www.curseforge.com/minecraft/mc-mods/trash-cans)
+
+### Removed Mods ❌
+
+  * [Accessories](https://www.curseforge.com/minecraft/mc-mods/accessories) (Reason: Relics specifically depends on Curios API Continuation)
+  * [Curios Compat Layer for Accessories](https://www.curseforge.com/minecraft/mc-mods/accessories-cc-layer)
+  * [Iron Chests](https://www.curseforge.com/minecraft/mc-mods/iron-chests) (Replaced by Expanded Storage)
+  * [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap) (Performance Issues, feel free to add client side)
+  * [Just Enough Archaeology](https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology)
+  * [Repurposed Structures (Neoforge/Forge)](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures)
+---
+
 ## Craftoria | v0.4.0
 
 _NeoForge Loader 21.0.111_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.4.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.4.0.md)_

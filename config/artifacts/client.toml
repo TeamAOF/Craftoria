@@ -1,0 +1,17 @@
+#Location of the artifact cooldown gui element
+#Distance from the hotbar measured in pixels
+#Negative values place the element left of the hotbar
+#Range: -2147483648 ~ 2147483647
+cooldownOverlayOffset = 10
+#Display artifacts on cooldown next to the hotbar
+#Allowed Values: true, false
+enableCooldownOverlay = false
+#Whether models for gloves are shown in first person
+#Allowed Values: true, false
+showFirstPersonGloves = true
+#Whether artifacts have tooltips explaining their effects
+#Allowed Values: true, false
+showTooltips = true
+#Whether mimics can use textures from Lootr or Quark
+#Allowed Values: true, false
+useModdedMimicTextures = true

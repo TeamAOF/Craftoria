@@ -1,4 +1,3 @@
-
 [Module]
 	#Base range for Sender Mk1 (no range upgrades)
 	#Range: > 1
@@ -165,3 +164,7 @@
 	#Range: > 0
 	voidModuleEnergyCost = 0
 
+[Sound]
+	#Volume of the bleep played when various operations are done with modules/upgrades/etc. such as binding to an inventory, setting camo...
+	#Range: 0.0 ~ 2.0
+	bleepVolume = 0.5

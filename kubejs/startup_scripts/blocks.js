@@ -46,7 +46,7 @@ StartupEvents.registry('block', event => {
     .requiresTool(true);
 
   event.create('craftoria:smokey_bricks_button', "button")
-    .displayName('Smokey Brick')
+    .displayName('Smokey Brick Button')
     .soundType('deepslate_bricks')
     .hardness(3)
     .resistance(2)
