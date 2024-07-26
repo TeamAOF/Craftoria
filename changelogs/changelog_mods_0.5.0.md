@@ -15,7 +15,6 @@
   * [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) (by [vectorwing](https://www.curseforge.com/members/vectorwing/projects))
   * [Jumbo Furnace](https://www.curseforge.com/minecraft/mc-mods/jumbo-furnace) (by [Commoble](https://www.curseforge.com/members/Commoble/projects))
   * [Lighty](https://www.curseforge.com/minecraft/mc-mods/lighty) (by [andi_makes](https://www.curseforge.com/members/andi_makes/projects))
-  * [Lithostitched](https://www.curseforge.com/minecraft/mc-mods/lithostitched) (by [Apollo](https://www.curseforge.com/members/Apollo/projects))
   * [Macaw's Roofs](https://www.curseforge.com/minecraft/mc-mods/macaws-roofs) (by [sketch_macaw](https://www.curseforge.com/members/sketch_macaw/projects))
   * [Modern Industrialization Sound Addon](https://www.curseforge.com/minecraft/mc-mods/modern-industrialization-sound-addon) (by [static](https://www.curseforge.com/members/static/projects))
   * [Simple Magnets](https://www.curseforge.com/minecraft/mc-mods/simple-magnets) (by [SuperMartijn642](https://www.curseforge.com/members/SuperMartijn642/projects))
