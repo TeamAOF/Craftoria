@@ -124,7 +124,6 @@
   * [laserio-1.9.1.jar](https://www.curseforge.com/minecraft/mc-mods/laserio/files/5447489) (by [Direwolf20](https://www.curseforge.com/members/Direwolf20/projects))
   * [libIPN-neoforge-1.21-6.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/libipn/files/5510601) (by [mirinimi](https://www.curseforge.com/members/mirinimi/projects))
   * [lighty-neoforge-3.0.0-beta.3+1.21.jar](https://www.curseforge.com/minecraft/mc-mods/lighty/files/5425044) (by [andi_makes](https://www.curseforge.com/members/andi_makes/projects))
-  * [lithostitched-neoforge-1.21-1.2.4.jar](https://www.curseforge.com/minecraft/mc-mods/lithostitched/files/5538388) (by [Apollo](https://www.curseforge.com/members/Apollo/projects))
   * [lmft-1.0.4+1.21-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/lmft/files/5425796) (by [Blodhgarm](https://www.curseforge.com/members/Blodhgarm/projects))
   * [logbegone-neo-1.21-1.0.2.jar](https://www.curseforge.com/minecraft/mc-mods/log-begone/files/5440186) (by [AzureDoomC](https://www.curseforge.com/members/AzureDoomC/projects))
   * [lootjs-neoforge-1.21-3.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/lootjs/files/5554840) (by [Lytho](https://www.curseforge.com/members/Lytho/projects))
