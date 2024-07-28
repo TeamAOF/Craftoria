@@ -406,6 +406,9 @@
 		{
 			dependencies: ["75C95D894C3B3428"]
 			hide_dependency_lines: false
+			icon: {
+				id: "justdirethings:goosoil_tier1"
+			}
 			id: "4B0CDF7941199C8E"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -414,10 +417,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				count: 8L
-				id: "4570F05721CA88EE"
-				item: { count: 1, id: "justdirethings:goosoil_tier1" }
-				type: "item"
+				id: "2A1C946A44A39D6F"
+				type: "checkmark"
 			}]
 			x: -6.5d
 			y: -3.0d
@@ -719,6 +720,9 @@
 		{
 			dependencies: ["202149DADCC786EE"]
 			hide_dependency_lines: false
+			icon: {
+				id: "justdirethings:goosoil_tier2"
+			}
 			id: "18680FEE2B6FF16F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -727,9 +731,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "05BCE648F9BDB960"
-				item: { count: 1, id: "justdirethings:goosoil_tier2" }
-				type: "item"
+				id: "32CCFEEA0A624C11"
+				type: "checkmark"
 			}]
 			x: -1.75d
 			y: -3.0d
@@ -737,6 +740,9 @@
 		{
 			dependencies: ["18CEE2F64F6E53E6"]
 			hide_dependency_lines: false
+			icon: {
+				id: "justdirethings:goosoil_tier3"
+			}
 			id: "4D1B83E147CC16AE"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -745,9 +751,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "287673603CBF057C"
-				item: { count: 1, id: "justdirethings:goosoil_tier3" }
-				type: "item"
+				id: "7C14A87514F74DF9"
+				type: "checkmark"
 			}]
 			x: 3.25d
 			y: -3.0d
@@ -755,6 +760,9 @@
 		{
 			dependencies: ["08B17C05B2111477"]
 			hide_dependency_lines: false
+			icon: {
+				id: "justdirethings:goosoil_tier4"
+			}
 			id: "35F6CAD5BE56A32A"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -763,9 +771,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "0EA94CE8F38992E8"
-				item: { count: 1, id: "justdirethings:goosoil_tier4" }
-				type: "item"
+				id: "708EE345AEBB270B"
+				type: "checkmark"
 			}]
 			x: 8.0d
 			y: -3.0d
