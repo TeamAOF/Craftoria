@@ -257,5 +257,26 @@
 			x: -1.5d
 			y: -2.5d
 		}
+		{
+			dependencies: ["78EDBDED3BFEC145"]
+			icon: {
+				id: "biomesoplenty:flowering_oak_sapling"
+			}
+			id: "35885A1220BB34FC"
+			rewards: [{
+				id: "1EA74B0DEA01464D"
+				item: {
+					count: 1
+					id: "sereneseasons:season_sensor"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "4046229AF35778A3"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
 	]
 }
