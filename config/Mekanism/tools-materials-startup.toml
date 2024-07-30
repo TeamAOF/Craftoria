@@ -1,4 +1,3 @@
-
 #Mekanism Tools Startup Config. This config is loaded on early, and requires a game restart to take effect, and is not synced automatically between client and server. It is highly recommended to ensure you are using the same values for this config on the server and client.
 [startup]
 
@@ -415,7 +414,7 @@
 		[startup.materials.refined_obsidian]
 			#Base attack damage of Refined Obsidian items.
 			#Range: 0.0 ~ 3.4028234663852886E38
-			refined_obsidianAttackDamage = 8.0
+			refined_obsidianAttackDamage = 5.0
 			#Maximum durability of Refined Obsidian shields.
 			#Range: > 0
 			refined_obsidianShieldDurability = 1680
@@ -441,7 +440,7 @@
 			refined_obsidianHoeAtkSpeed = 5.0
 			#Maximum durability of Refined Obsidian tools.
 			#Range: > 1
-			refined_obsidianToolMaxUses = 4096
+			refined_obsidianToolMaxUses = 2048
 			#Efficiency of Refined Obsidian tools.
 			refined_obsidianEfficiency = 12.0
 			#Attack damage modifier of Refined Obsidian paxels.
@@ -467,16 +466,16 @@
 			refined_obsidianKnockbackResistance = 0.20000000298023224
 			#Maximum durability of Refined Obsidian boots.
 			#Range: > 1
-			refined_obsidianBootDurability = 975
+			refined_obsidianBootDurability = 429
 			#Maximum durability of Refined Obsidian leggings.
 			#Range: > 1
-			refined_obsidianLeggingDurability = 1125
+			refined_obsidianLeggingDurability = 495
 			#Maximum durability of Refined Obsidian chestplates.
 			#Range: > 1
-			refined_obsidianChestplateDurability = 1200
+			refined_obsidianChestplateDurability = 528
 			#Maximum durability of Refined Obsidian helmets.
 			#Range: > 1
-			refined_obsidianHelmetDurability = 825
+			refined_obsidianHelmetDurability = 363
 			#Protection value of Refined Obsidian boots.
 			#Range: > 0
 			refined_obsidianBootArmor = 5
@@ -568,4 +567,3 @@
 			#Protection value of Steel helmets.
 			#Range: > 0
 			steelHelmetArmor = 3
-
