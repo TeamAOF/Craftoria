@@ -1,0 +1,30 @@
+#Manage the difficulty settings of the server
+[difficulty]
+	#The default difficulty factor for players ([peaceful, easy, normal, hard, expert, nightmare, apocalyptic]). If per-player difficulty is enabled, they will default to this difficulty as well. The server itself (ex. spawned mobs) will use this difficulty when no players are around.
+	server = "hard"
+	#Enable per-player difficulty settings. Players will be able to set their own personnal difficulty with /my-difficulty. This will force the vanilla difficulty to hard (which should not impact the actual difficulty of the game), but the serverDifficulty will be used as default player difficulty.
+	perPlayer = false
+	#The minimum difficulty a player can set for themselves.
+	minPlayer = "easy"
+	#The maximum difficulty a player can set for themselves.
+	maxPlayer = "apocalyptic"
+
+#Enable/Disable, or change specific mechanics kick off
+[mechanics]
+	#This mechanics makes you respawn with less hunger to prevent suicide-feeding.
+	hungerNerf = "expert"
+	#This is a purge that happens at the beginning of the night, to prevent the MC 1.18+ large cave population from hoarding the mob cap and preventing surface mobs.
+	dimensionToNightPurge = ["minecraft:overworld"]
+
+#Customize additional spawning rules for mobs.
+[spawn]
+	#List of mobs that only spawn on normal difficulty and above.
+	normalMobs = ["example:some_normal_mobs"]
+	#List of mobs that only spawn on hard difficulty and above.
+	hardMobs = ["example:some_hard_mobs"]
+	#List of mobs that only spawn on expert difficulty and above.
+	expertMobs = ["example:some_expert_mobs"]
+	#List of mobs that only spawn on nightmare difficulty and above.
+	nightmareMobs = ["example:some_nightmare_mobs"]
+	#List of mobs that only spawn on apocalyptic difficulty.
+	apocalypticMobs = ["example:some_apocalyptic_mobs"]

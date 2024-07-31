@@ -100,8 +100,8 @@
 				item: { count: 1, id: "shrink:shrinking_device" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -7.0d
+			x: 2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["0A6A32C28F0DCDFE"]
@@ -117,8 +117,8 @@
 				item: { count: 1, id: "charginggadgets:charging_station" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -7.0d
+			x: -2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1A23087241E329A3"]
@@ -1129,23 +1129,6 @@
 			]
 			x: 10.0d
 			y: -11.0d
-		}
-		{
-			dependencies: ["0A6A32C28F0DCDFE"]
-			id: "46312A46467C5497"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "55752DEDC0367F1B"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "6EFAED6012254664"
-				item: { count: 1, id: "relics:researching_table" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: -3.5d
 		}
 		{
 			id: "42619280FF258EEA"

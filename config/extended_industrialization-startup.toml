@@ -1,0 +1,28 @@
+#The range for the local wireless charging station machine
+#Range: > 0
+local_wireless_charging_station_range = 32
+#Whether upgrades should be allowed in the Processing Array
+allow_upgrades_in_processing_array = true
+
+[batching_machines]
+	#The maximum batch size to use for the Large Steam Macerator
+	#Range: > 1
+	large_steam_macerator_size = 8
+	#The multiplier to use for the EU cost of the Large Steam Macerator
+	#Range: 0.1 ~ 1.7976931348623157E308
+	large_steam_macerator_eu = 0.75
+	#The maximum batch size to use for the Large Steam Furnace
+	#Range: > 1
+	large_steam_furnace_size = 8
+	#The multiplier to use for the EU cost of the Large Steam Furnace
+	#Range: 0.1 ~ 1.7976931348623157E308
+	large_steam_furnace_eu = 0.75
+	#The maximum batch size to use for the Large Electric Macerator
+	#Range: > 1
+	large_electric_macerator_size = 16
+	#The multiplier to use for the EU cost of the Large Electric Macerator
+	#Range: 0.1 ~ 1.7976931348623157E308
+	large_electric_macerator_eu = 0.75
+	#The multiplier to use for the EU cost of the Processing Array
+	#Range: 0.1 ~ 1.7976931348623157E308
+	processing_array_eu = 1.0
