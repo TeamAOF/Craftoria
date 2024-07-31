@@ -1463,7 +1463,7 @@
 			}]
 			tasks: [{
 				id: "56333184D35BEB23"
-				item: { count: 1, id: "bigger_ae2:quantum_fluid_storage_cell" }
+				item: { components: { "ftbquests:missing_item": "bigger_ae2:quantum_fluid_storage_cell" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -1480,7 +1480,7 @@
 			}]
 			tasks: [{
 				id: "20191DFA9DBB8AF1"
-				item: { count: 1, id: "bigger_ae2:digital_singularity_fluid_storage_cell" }
+				item: { components: { "ftbquests:missing_item": "bigger_ae2:digital_singularity_fluid_storage_cell" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -1498,7 +1498,7 @@
 			}]
 			tasks: [{
 				id: "30F19D144D64AD11"
-				item: { count: 1, id: "bigger_ae2:quantum_flux_storage_cell" }
+				item: { components: { "ftbquests:missing_item": "bigger_ae2:quantum_flux_storage_cell" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -1515,7 +1515,7 @@
 			}]
 			tasks: [{
 				id: "56C3256D5BAA55B4"
-				item: { count: 1, id: "bigger_ae2:digital_singularity_flux_storage_cell" }
+				item: { components: { "ftbquests:missing_item": "bigger_ae2:digital_singularity_flux_storage_cell" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -1857,7 +1857,7 @@
 			}]
 			tasks: [{
 				id: "1626F875A34F0AC9"
-				item: { count: 1, id: "travelersbackpack:standard" }
+				item: { components: { "ftbquests:missing_item": "travelersbackpack:standard" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -14.5d
@@ -2441,7 +2441,10 @@
 		{
 			dependencies: ["03103A57191715D1"]
 			icon: {
-				id: "travelersbackpack:iron_tier_upgrade"
+				components: {
+					"ftbquests:missing_item": "travelersbackpack:iron_tier_upgrade"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "03471D7D8B0068F0"
 			rewards: [{
@@ -2455,7 +2458,7 @@
 			}]
 			tasks: [{
 				id: "15B77C6BABB1E653"
-				item: { components: { "travelersbackpack:tier": 1 }, count: 1, id: "travelersbackpack:standard" }
+				item: { components: { "ftbquests:missing_item": "travelersbackpack:standard" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -14.5d
@@ -2464,7 +2467,10 @@
 		{
 			dependencies: ["03471D7D8B0068F0"]
 			icon: {
-				id: "travelersbackpack:gold_tier_upgrade"
+				components: {
+					"ftbquests:missing_item": "travelersbackpack:gold_tier_upgrade"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "28808424CA6FD60C"
 			rewards: [{
@@ -2478,7 +2484,7 @@
 			}]
 			tasks: [{
 				id: "42FCC44F35B7C5A1"
-				item: { components: { "travelersbackpack:tier": 2 }, count: 1, id: "travelersbackpack:standard" }
+				item: { components: { "ftbquests:missing_item": "travelersbackpack:standard" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -14.5d
@@ -2487,7 +2493,10 @@
 		{
 			dependencies: ["28808424CA6FD60C"]
 			icon: {
-				id: "travelersbackpack:diamond_tier_upgrade"
+				components: {
+					"ftbquests:missing_item": "travelersbackpack:diamond_tier_upgrade"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "77D008B7B47BF2D7"
 			rewards: [{
@@ -2501,7 +2510,7 @@
 			}]
 			tasks: [{
 				id: "7DA2A398F77F4942"
-				item: { components: { "travelersbackpack:tier": 3 }, count: 1, id: "travelersbackpack:standard" }
+				item: { components: { "ftbquests:missing_item": "travelersbackpack:standard" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -14.5d
@@ -2510,7 +2519,10 @@
 		{
 			dependencies: ["77D008B7B47BF2D7"]
 			icon: {
-				id: "travelersbackpack:netherite_tier_upgrade"
+				components: {
+					"ftbquests:missing_item": "travelersbackpack:netherite_tier_upgrade"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "29E8F63B19A2F129"
 			rewards: [{
@@ -2524,7 +2536,7 @@
 			}]
 			tasks: [{
 				id: "30E90F0AF660A1EA"
-				item: { components: { "travelersbackpack:tier": 4 }, count: 1, id: "travelersbackpack:standard" }
+				item: { components: { "ftbquests:missing_item": "travelersbackpack:standard" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: -14.5d
