@@ -586,10 +586,14 @@
 			y: 1.5d
 		}
 		{
+			icon: {
+				id: "minecraft:netherite_ingot"
+			}
 			id: "3CEBC51DB3555C3E"
 			tasks: [{
-				id: "7ADDEF2457D8E760"
-				type: "checkmark"
+				id: "726D79739381A120"
+				item: { count: 1, id: "minecraft:netherite_ingot" }
+				type: "item"
 			}]
 			x: 0.0d
 			y: 0.0d
