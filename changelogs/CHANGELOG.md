@@ -1,6 +1,30 @@
+## Craftoria | v0.6.1
+
+_NeoForge Loader 21.0.150_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.6.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.6.1.md)_
+
+### Changes/Improvements ⭐
+
+* Remove requirement to craft auto-granted starter glyphs in Ars quests.
+
+### Bug Fixes 🪲
+
+* Fixed server crashing on bootup.
+* FPS issues when a lot of villagers around.
+
+### Added Mods ✅
+
+  * [Clean Tooltips](https://www.curseforge.com/minecraft/mc-mods/clean-tooltips)
+  * [Lootr](https://www.curseforge.com/minecraft/mc-mods/lootr)
+
+### Removed Mods ❌
+
+  * [Fisherman's Trap](https://www.curseforge.com/minecraft/mc-mods/fishermans-trap)
+  * [Merchant Markers](https://www.curseforge.com/minecraft/mc-mods/merchant-markers)
+---
+
 ## Craftoria | v0.6.0
 
-_NeoForge Loader 21.0.148_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.6.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.6.0.md)_
+_NeoForge Loader 21.0.150_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.6.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.6.0.md)_
 
 ### Changes/Improvements ⭐
 
