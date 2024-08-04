@@ -1,3 +1,60 @@
+## Craftoria | v0.6.0
+
+_NeoForge Loader 21.0.148_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.6.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.6.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added a Seasons system.
+* Added a seasons quest to Getting Started.
+* Removed checkmark quests having to be completed before progressing in quests.
+* Nerfed Refined Obsidian gear.
+
+### Bug Fixes 🪲
+
+* Fixed an issue where output/input counts in MI machines would be off.
+
+### Recipes 🪵
+
+* Added recipe for silver ore > raw in MI macerator.
+* Unified obsidian dust.
+* Added obsidian dust recipe in MI macerator.
+
+### Added Mods ✅
+
+  * [Better End Cities](https://www.curseforge.com/minecraft/texture-packs/vanilla-better-end-city)
+  * [Advancement Plaques](https://www.curseforge.com/minecraft/mc-mods/advancement-plaques)
+  * [AE2 Light Mode](https://www.curseforge.com/minecraft/texture-packs/ae2-light-mode)
+  * [Autochef's Delight](https://www.curseforge.com/minecraft/mc-mods/autochefs-delight)
+  * [CC: Tweaked](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked)
+  * [Charm of Undying](https://www.curseforge.com/minecraft/mc-mods/charm-of-undying)
+  * [ConnectedTexturesMod](https://www.curseforge.com/minecraft/mc-mods/ctm)
+  * [Curious Armor Stands](https://www.curseforge.com/minecraft/mc-mods/curious-armor-stands)
+  * [Equipment Compare](https://www.curseforge.com/minecraft/mc-mods/equipment-compare)
+  * [Extended Industrialization](https://www.curseforge.com/minecraft/mc-mods/extended-industrialization)
+  * [Farmer's Cutting: Biomes O' Plenty](https://www.curseforge.com/minecraft/mc-mods/farmers-cutting-biomes-o-plenty)
+  * [Fisherman's Trap](https://www.curseforge.com/minecraft/mc-mods/fishermans-trap)
+  * [Iceberg](https://www.curseforge.com/minecraft/mc-mods/iceberg)
+  * [Just Enough Archaeology](https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology)
+  * [Legendary Tooltips](https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips)
+  * [Macaw's Windows](https://www.curseforge.com/minecraft/mc-mods/macaws-windows)
+  * [Merchant Markers](https://www.curseforge.com/minecraft/mc-mods/merchant-markers)
+  * [MI Tweaks](https://www.curseforge.com/minecraft/mc-mods/mi-tweaks)
+  * [More Delight](https://www.curseforge.com/minecraft/mc-mods/more-delight-forge)
+  * [More Totems Of Undying](https://www.curseforge.com/minecraft/mc-mods/more-totems-of-undying)
+  * [Ping in Tablist](https://www.curseforge.com/minecraft/mc-mods/ping-in-tablist)
+  * [Prism [Neo/Forge]](https://www.curseforge.com/minecraft/mc-mods/prism-lib)
+  * [Repeatable Trial Vaults](https://www.curseforge.com/minecraft/mc-mods/repeatable-trial-vaults)
+  * [SeasonHUD](https://www.curseforge.com/minecraft/mc-mods/seasonhud)
+  * [Serene Seasons](https://www.curseforge.com/minecraft/mc-mods/serene-seasons)
+  * [Storage Delight](https://www.curseforge.com/minecraft/mc-mods/storage-delight-forge)
+  * [Tesseract API](https://www.curseforge.com/minecraft/mc-mods/tesseract-api-neoforge)
+
+### Removed Mods ❌
+
+  * [Tool Belt](https://www.curseforge.com/minecraft/mc-mods/tool-belt)
+  * [Trash Cans](https://www.curseforge.com/minecraft/mc-mods/trash-cans) (Crashes, locking your game)
+---
+
 ## Craftoria | v0.5.0
 
 _NeoForge Loader 21.0.139_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.5.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.5.0.md)_

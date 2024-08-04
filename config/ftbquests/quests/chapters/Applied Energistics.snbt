@@ -1688,6 +1688,12 @@
 		{
 			dependencies: ["13600E981D85B79D"]
 			id: "7FEBDFAE021B3C56"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0DF446DCB748CCD5"
+				table_id: 3188555497912671082L
+				type: "random"
+			}]
 			tasks: [
 				{
 					id: "70D2AC096061CBA8"
@@ -1960,30 +1966,36 @@
 		{
 			dependencies: ["7D57C6962950AA98"]
 			id: "2AB5183A0BD8D387"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "25B5C5405BD1AC94"
+				table_id: 3188555497912671082L
+				type: "random"
+			}]
 			tasks: [
 				{
 					id: "496413BB4DD15254"
-					item: { components: { "ftbquests:missing_item": "bigger_ae2:4_core_crafting_accelerator" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "bigger_ae2:4_core_crafting_accelerator" }
 					type: "item"
 				}
 				{
 					id: "6BD99C0804AA5E37"
-					item: { components: { "ftbquests:missing_item": "bigger_ae2:16_core_crafting_accelerator" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "bigger_ae2:16_core_crafting_accelerator" }
 					type: "item"
 				}
 				{
 					id: "61743B00A1557142"
-					item: { components: { "ftbquests:missing_item": "bigger_ae2:64_core_crafting_accelerator" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "bigger_ae2:64_core_crafting_accelerator" }
 					type: "item"
 				}
 				{
 					id: "30443D0044F18099"
-					item: { components: { "ftbquests:missing_item": "bigger_ae2:256_core_crafting_accelerator" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "bigger_ae2:256_core_crafting_accelerator" }
 					type: "item"
 				}
 				{
 					id: "01FB8289390DC720"
-					item: { components: { "ftbquests:missing_item": "bigger_ae2:1024_core_crafting_accelerator" }, count: 1, id: "ftbquests:missing_item" }
+					item: { count: 1, id: "bigger_ae2:1024_core_crafting_accelerator" }
 					type: "item"
 				}
 			]
