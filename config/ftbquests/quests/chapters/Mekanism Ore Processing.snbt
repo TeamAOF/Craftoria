@@ -1,0 +1,41 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "Mekanism Ore Processing"
+	group: "066C799B2F5452CD"
+	id: "33E8845C982DC0F2"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "0EE1752729747DC4"
+			tasks: [{
+				id: "26C8EBF66B2B0746"
+				item: { count: 1, id: "minecraft:rabbit_foot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "4EB96A7E9F529D80"
+			tasks: [{
+				id: "06D4F2DD455D94BA"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:energized_smelter)item(mekanism:basic_smelting_factory)item(mekanism:advanced_smelting_factory)item(mekanism:elite_smelting_factory)item(mekanism:ultimate_smelting_factory))", "minecraft:custom_name": "\"Smelting\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			id: "24AE78EE11D2AFFD"
+			tasks: [{
+				id: "7E9612FFAAC7AAB5"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:shard_iron)item(mekanism:shard_gold)item(mekanism:shard_osmium)item(mekanism:shard_copper)item(mekanism:shard_tin)item(moremekanismprocessing:shard_lithium)item(moremekanismprocessing:shard_nickel)item(moremekanismprocessing:shard_zinc)item(moremekanismprocessing:shard_tungsten)item(moremekanismprocessing:shard_titanium)item(moremekanismprocessing:shard_sulfur)item(moremekanismprocessing:shard_silver)item(moremekanismprocessing:shard_calorite)item(moremekanismprocessing:shard_ostrum)item(moremekanismprocessing:shard_cinnabar)item(moremekanismprocessing:shard_cobalt)item(moremekanismprocessing:shard_crimson_iron)item(moremekanismprocessing:shard_desh)item(moremekanismprocessing:shard_dilithium)item(moremekanismprocessing:shard_draconium)item(moremekanismprocessing:shard_electrotine)item(moremekanismprocessing:shard_green_sapphire)item(moremekanismprocessing:shard_iridium)item(mekanism:shard_lead)item(mekanism:shard_uranium)item(moremekanismprocessing:shard_aluminum)item(moremekanismprocessing:shard_amethyst)item(moremekanismprocessing:shard_apatite)item(moremekanismprocessing:shard_bismuth)item(moremekanismprocessing:shard_azure_silver)item(moremekanismprocessing:shard_bort)item(moremekanismprocessing:shard_sapphire)item(moremekanismprocessing:shard_ruby))", "minecraft:custom_name": "\"Shard-able\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+	]
+}
