@@ -106,7 +106,6 @@
 			y: 0.13d
 		}
 		{
-			dependencies: ["448D7A215A175817"]
 			id: "7D36F35D54BD7812"
 			rewards: [{
 				count: 8
@@ -514,7 +513,7 @@
 			tasks: [
 				{
 					id: "4002CE775E5B5E76"
-					item: { count: 1, id: "occultism:book_of_binding_bound_foliot" }
+					item: { components: { "occultism:spirit_name": "Najlitarvan" }, count: 1, id: "occultism:book_of_binding_bound_foliot" }
 					type: "item"
 				}
 				{
@@ -558,7 +557,7 @@
 			tasks: [
 				{
 					id: "67F5CBE583919652"
-					item: { count: 1, id: "occultism:book_of_binding_bound_foliot" }
+					item: { components: { "occultism:spirit_name": "Marzoirrynne" }, count: 1, id: "occultism:book_of_binding_bound_foliot" }
 					type: "item"
 				}
 				{
@@ -604,7 +603,7 @@
 			tasks: [
 				{
 					id: "4BE56AFF7D697360"
-					item: { count: 1, id: "occultism:book_of_binding_bound_foliot" }
+					item: { components: { "occultism:spirit_name": "Raylirkyn" }, count: 1, id: "occultism:book_of_binding_bound_foliot" }
 					type: "item"
 				}
 				{
@@ -648,7 +647,7 @@
 			tasks: [
 				{
 					id: "082C5A9DC6588ED3"
-					item: { count: 1, id: "occultism:book_of_binding_bound_foliot" }
+					item: { components: { "occultism:spirit_name": "Jarmynthorn" }, count: 1, id: "occultism:book_of_binding_bound_foliot" }
 					type: "item"
 				}
 				{
@@ -684,7 +683,7 @@
 			tasks: [
 				{
 					id: "661581A061F47EA6"
-					item: { count: 1, id: "occultism:book_of_binding_bound_foliot" }
+					item: { components: { "occultism:spirit_name": "Grimsirder" }, count: 1, id: "occultism:book_of_binding_bound_foliot" }
 					type: "item"
 				}
 				{
@@ -728,7 +727,7 @@
 			tasks: [
 				{
 					id: "5933844A23EDDA86"
-					item: { count: 1, id: "occultism:book_of_binding_bound_foliot" }
+					item: { components: { "occultism:spirit_name": "Morrondlor" }, count: 1, id: "occultism:book_of_binding_bound_foliot" }
 					type: "item"
 				}
 				{
@@ -824,7 +823,7 @@
 			tasks: [
 				{
 					id: "3BDA52FB81D246FA"
-					item: { count: 1, id: "occultism:book_of_binding_bound_afrit" }
+					item: { components: { "occultism:spirit_name": "Grimthorndrin" }, count: 1, id: "occultism:book_of_binding_bound_afrit" }
 					type: "item"
 				}
 				{
@@ -1066,7 +1065,6 @@
 			y: 0.3d
 		}
 		{
-			dependencies: ["448D7A215A175817"]
 			id: "32677D1F144A1184"
 			tasks: [{
 				entity: "occultism:demonic_wife"
@@ -1089,7 +1087,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["448D7A215A175817"]
 			id: "0C91DF887A33A8E6"
 			tasks: [{
 				id: "2B286D90DD206B96"
@@ -1143,6 +1140,9 @@
 			rewards: [{
 				id: "52E7D58A80B0711C"
 				item: {
+					components: {
+						"occultism:spirit_name": "Zeddornzirne"
+					}
 					count: 1
 					id: "occultism:book_of_binding_bound_afrit"
 				}
@@ -1176,7 +1176,6 @@
 			y: -4.1d
 		}
 		{
-			dependencies: ["448D7A215A175817"]
 			id: "4A0E862883FE42BB"
 			rewards: [{
 				id: "7C0B567F6BFDCFFA"
@@ -1225,12 +1224,14 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["448D7A215A175817"]
 			id: "1A8D5373290BC1A6"
 			rewards: [{
 				count: 3
 				id: "046EDB8A3BF83029"
 				item: {
+					components: {
+						"occultism:spirit_name": "Thrkyles"
+					}
 					count: 1
 					id: "occultism:book_of_binding_bound_djinni"
 				}
@@ -1364,6 +1365,9 @@
 			rewards: [{
 				id: "0FA871D74298D3FD"
 				item: {
+					components: {
+						"occultism:spirit_name": "Styrmaracsyr"
+					}
 					count: 1
 					id: "occultism:book_of_binding_bound_foliot"
 				}
@@ -1383,6 +1387,9 @@
 			rewards: [{
 				id: "2E762B55A2E97FA6"
 				item: {
+					components: {
+						"occultism:spirit_name": "KliKli"
+					}
 					count: 1
 					id: "occultism:book_of_binding_bound_djinni"
 				}
@@ -1402,6 +1409,9 @@
 			rewards: [{
 				id: "01EE86CD1C1D04DD"
 				item: {
+					components: {
+						"occultism:spirit_name": "Firkylkyn"
+					}
 					count: 1
 					id: "occultism:book_of_binding_bound_afrit"
 				}
@@ -1421,6 +1431,9 @@
 			rewards: [{
 				id: "0A07F0FDA3712FAC"
 				item: {
+					components: {
+						"occultism:spirit_name": "Geirmeewyrm"
+					}
 					count: 1
 					id: "occultism:book_of_binding_bound_marid"
 				}
@@ -1497,7 +1510,6 @@
 			y: -0.2d
 		}
 		{
-			dependencies: ["448D7A215A175817"]
 			id: "68C06F5F36BEE84A"
 			rewards: [{
 				count: 2

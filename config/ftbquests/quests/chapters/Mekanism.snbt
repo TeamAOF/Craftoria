@@ -1058,15 +1058,15 @@
 			y: -1.46d
 		}
 		{
-			dependencies: ["110B0C8DD2FD5BE7"]
+			dependencies: ["510C7652FE3431AC"]
 			id: "60868DF852E6028B"
 			tasks: [{
 				id: "3C2BC3C17CF238DF"
 				item: { count: 1, id: "mekanismtools:osmium_paxel" }
 				type: "item"
 			}]
-			x: 1.46d
-			y: -1.46d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["78756CC2F8821E41"]
@@ -1168,15 +1168,15 @@
 			y: -2.92d
 		}
 		{
-			dependencies: ["110B0C8DD2FD5BE7"]
+			dependencies: ["510C7652FE3431AC"]
 			id: "03CF6D6277D93A4A"
 			tasks: [{
 				id: "56EEFFD667139581"
 				item: { count: 1, id: "mekanism:gauge_dropper" }
 				type: "item"
 			}]
-			x: 1.46d
-			y: 1.46d
+			x: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4FBA0ECAC8AEBCD8"]
@@ -1355,7 +1355,7 @@
 			y: -2.92d
 		}
 		{
-			dependencies: ["110B0C8DD2FD5BE7"]
+			dependencies: ["510C7652FE3431AC"]
 			id: "40EB78C0AF30096E"
 			tasks: [{
 				id: "59E8D12F23E9F406"
@@ -1430,17 +1430,6 @@
 			}]
 			x: 23.33d
 			y: -1.46d
-		}
-		{
-			dependencies: ["510C7652FE3431AC"]
-			id: "110B0C8DD2FD5BE7"
-			tasks: [{
-				id: "421470E41658BCB3"
-				item: { count: 1, id: "mekanism:ingot_osmium" }
-				type: "item"
-			}]
-			x: 1.46d
-			y: 0.0d
 		}
 		{
 			dependencies: ["6A382549A4C55A5E"]
@@ -2082,10 +2071,11 @@
 		{
 			id: "510C7652FE3431AC"
 			tasks: [{
-				id: "13FBD6CBB3C0F41B"
-				type: "checkmark"
+				id: "78BFC787A81A4BCE"
+				item: { count: 1, id: "mekanism:ingot_osmium" }
+				type: "item"
 			}]
-			x: 0.0d
+			x: 1.0d
 			y: 0.0d
 		}
 		{

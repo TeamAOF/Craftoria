@@ -26,11 +26,11 @@ $MODPACK_NAME = "Craftoria"
 $CLIENT_NAME = "Craftoria"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.5.0"
+$MODPACK_VERSION = "0.6.1"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.4.0"
+$LAST_MODPACK_VERSION = "0.6.0"
 
 # Which modloader the modpack uses
 # Can be "forge" or "fabric"
@@ -68,10 +68,10 @@ $CLIENT_RELEASE_TYPE = "release"
 #=====================================================================//
 
 # File name of the latest https://github.com/ModdingX/ModListCreator/releases
-$CHANGELOG_GENERATOR_JAR = "ModListCreator-4.1.0-fatjar.jar"
+$CHANGELOG_GENERATOR_JAR = "ModListCreator-5.0.0-fatjar.jar"
 
 # File name of the latest https://github.com/ModdingX/ModListCreator/releases
-$MODLIST_CREATOR_JAR = "ModListCreator-4.1.0-fatjar.jar"
+$MODLIST_CREATOR_JAR = "ModListCreator-5.0.0-fatjar.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS

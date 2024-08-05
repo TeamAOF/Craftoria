@@ -1,4 +1,3 @@
-
 #Client-only settings
 [client]
 	#Sends a message to the player on death with backpack coordinates
@@ -17,6 +16,8 @@
 	renderBackpackWithElytra = true
 	#Disable backpack rendering
 	disableBackpackRender = false
+	#Whether the backpack icon should be visible in player's inventory
+	showBackpackIconInInventory = true
 
 	#The position of the Overlay on the screen
 	[client.overlay]
@@ -28,4 +29,3 @@
 		#Offsets to up
 		#Range: > -2147483648
 		offsetY = 30
-

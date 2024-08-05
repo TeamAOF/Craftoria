@@ -24,8 +24,6 @@
 [craftingCPU]
 	#Range: > -2147483648
 	craftingCalculationTimePerTick = 5
-	#When true: simulate extraction of all the network's contents when starting a crafting job calculation. When false: use the cached available content list (same as terminals). Enabling might work a bit better, but it will significantly reduce performance.
-	craftingSimulatedExtraction = false
 
 [crafting]
 	#Enable shift-clicking with the crafting units in hand to disassemble them.
