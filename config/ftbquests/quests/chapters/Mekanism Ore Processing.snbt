@@ -60,13 +60,14 @@
 			y: 1.5d
 		}
 		{
-			color: 665907
+			color: 7571973
 			height: 15.0d
 			image: "ftbquests:textures/gui/background_white.png"
+			order: 9
 			rotation: 0.0d
 			width: 25.0d
-			x: 1.3d
-			y: -0.8d
+			x: 1.0d
+			y: -0.5d
 		}
 		{
 			color: 4676450
@@ -595,7 +596,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -611,7 +612,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -4.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["19B997148ED10D99"]
@@ -622,7 +623,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7B821A8C8A97FA30"]
@@ -635,7 +636,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: -1.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3BAFFE6DA1F9BFDF"]
@@ -647,7 +648,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["78ACE4A0D8338FD1"]
@@ -659,8 +660,8 @@
 				item: { count: 1, id: "mekanism:chemical_injection_chamber" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: -4.5d
+			x: -8.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3EFB11D06AF24423"]
@@ -671,7 +672,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -6.0d
+			y: -4.5d
 		}
 		{
 			id: "78ACE4A0D8338FD1"
@@ -682,8 +683,8 @@
 				item: { count: 32, id: "minecraft:gunpowder" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: -3.0d
+			x: -6.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["15C38E0D2B205FB4"]
@@ -696,7 +697,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -6.0d
+			y: -4.5d
 		}
 		{
 			id: "15C38E0D2B205FB4"
@@ -707,7 +708,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -6.0d
+			y: -3.0d
 		}
 		{
 			id: "207613A34C3F10FA"
