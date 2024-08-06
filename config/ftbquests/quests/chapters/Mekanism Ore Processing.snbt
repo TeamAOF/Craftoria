@@ -253,7 +253,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "52F8438ABCEAC05B"
-				item: { count: 1, id: "modern_industrialization:iron_dust" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:iron_dust)item(minecraft:gold_dust)item(mekanism:dust_osmium)item(minecraft:copper_dust)item(modern_industrialization:tin_dust)item(moremekanismprocessing:dust_lithium)item(modern_industrialization:nickel_dust)item(moremekanismprocessing:dust_zinc)item(modern_industrialization:tungsten_dust)item(modern_industrialization:titanium_dust)item(modern_industrialization:sulfur_dust)item(modern_industrialization:silver_dust)item(moremekanismprocessing:dust_calorite)item(moremekanismprocessing:dust_ostrum)item(moremekanismprocessing:dust_cinnabar)item(moremekanismprocessing:dust_cobalt)item(moremekanismprocessing:dust_crimson_iron)item(moremekanismprocessing:dust_desh)item(moremekanismprocessing:dust_dilithium)item(moremekanismprocessing:dust_draconium)item(moremekanismprocessing:dust_electrotine)item(moremekanismprocessing:dust_green_sapphire)item(moremekanismprocessing:dust_iridium)item(mekanism:dust_lead)item(mekanism:dust_uranium)item(moremekanismprocessing:dust_aluminum)item(moremekanismprocessing:dust_amethyst)item(moremekanismprocessing:dust_apatite)item(moremekanismprocessing:dust_bismuth)item(moremekanismprocessing:dust_azure_silver)item(moremekanismprocessing:dust_bort)item(moremekanismprocessing:dust_sapphire)item(moremekanismprocessing:dust_ruby))", "minecraft:custom_name": "\"Dusts\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -3.5d
