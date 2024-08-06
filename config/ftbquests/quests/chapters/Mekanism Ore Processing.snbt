@@ -80,7 +80,7 @@
 			y: -0.1d
 		}
 	]
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -702,6 +702,16 @@
 			}]
 			x: 2.5d
 			y: -1.0d
+		}
+		{
+			id: "23B2A4ECB8C54262"
+			tasks: [{
+				id: "71E99A0221D20C50"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item(mekanism:osmium_ore))", "minecraft:custom_name": "\"testOREfilter\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
 		}
 	]
 }
