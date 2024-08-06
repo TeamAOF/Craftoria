@@ -80,7 +80,7 @@
 			y: -0.1d
 		}
 	]
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -98,9 +98,8 @@
 				"406374097FE19234"
 				"5E34B88FE17081A6"
 			]
-			icon_scale: 2.0d
 			id: "4EB96A7E9F529D80"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "06D4F2DD455D94BA"
 				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:energized_smelter)item(mekanism:basic_smelting_factory)item(mekanism:advanced_smelting_factory)item(mekanism:elite_smelting_factory)item(mekanism:ultimate_smelting_factory))", "minecraft:custom_name": "\"Smelting\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -110,23 +109,25 @@
 			y: 4.5d
 		}
 		{
+			icon_scale: 2.0d
 			id: "24AE78EE11D2AFFD"
+			shape: "square"
+			size: 0.5d
 			tasks: [{
 				id: "7E9612FFAAC7AAB5"
 				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:shard_iron)item(mekanism:shard_gold)item(mekanism:shard_osmium)item(mekanism:shard_copper)item(mekanism:shard_tin)item(moremekanismprocessing:shard_lithium)item(moremekanismprocessing:shard_nickel)item(moremekanismprocessing:shard_zinc)item(moremekanismprocessing:shard_tungsten)item(moremekanismprocessing:shard_titanium)item(moremekanismprocessing:shard_sulfur)item(moremekanismprocessing:shard_silver)item(moremekanismprocessing:shard_calorite)item(moremekanismprocessing:shard_ostrum)item(moremekanismprocessing:shard_cinnabar)item(moremekanismprocessing:shard_cobalt)item(moremekanismprocessing:shard_crimson_iron)item(moremekanismprocessing:shard_desh)item(moremekanismprocessing:shard_dilithium)item(moremekanismprocessing:shard_draconium)item(moremekanismprocessing:shard_electrotine)item(moremekanismprocessing:shard_green_sapphire)item(moremekanismprocessing:shard_iridium)item(mekanism:shard_lead)item(mekanism:shard_uranium)item(moremekanismprocessing:shard_aluminum)item(moremekanismprocessing:shard_amethyst)item(moremekanismprocessing:shard_apatite)item(moremekanismprocessing:shard_bismuth)item(moremekanismprocessing:shard_azure_silver)item(moremekanismprocessing:shard_bort)item(moremekanismprocessing:shard_sapphire)item(moremekanismprocessing:shard_ruby))", "minecraft:custom_name": "\"Shard-able\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.5d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"76BA847F28ACE170"
 				"1DF9676C04AFADC2"
 			]
-			icon_scale: 2.0d
 			id: "5E34B88FE17081A6"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "5A349EFBA574731A"
 				item: { count: 1, id: "mekanism:enrichment_chamber" }
@@ -137,9 +138,8 @@
 		}
 		{
 			dependencies: ["56AD980E166F9D02"]
-			icon_scale: 2.0d
 			id: "1DF9676C04AFADC2"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "58B9379A71483DD6"
 				item: { count: 1, id: "mekanism:crusher" }
@@ -154,9 +154,10 @@
 				"0FDA602713778AF0"
 				"30BD7370506EBC6C"
 			]
-			icon_scale: 2.0d
+			dependency_requirement: "one_completed"
 			id: "56AD980E166F9D02"
-			size: 1.0d
+			shape: "circle"
+			size: 1.25d
 			tasks: [{
 				id: "254F5B2785C08B60"
 				item: { count: 1, id: "mekanism:purification_chamber" }
@@ -171,9 +172,8 @@
 				"43EFE64785AE50B4"
 				"060D9F59EB26C7BD"
 			]
-			icon_scale: 2.0d
 			id: "126734923F4BCC42"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "69E28305E625CCD2"
 				item: { count: 1, id: "mekanism:chemical_injection_chamber" }
@@ -184,9 +184,8 @@
 		}
 		{
 			dependencies: ["14CE0DA0E5358A10"]
-			icon_scale: 2.0d
 			id: "62800DFF97EEF1EC"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "26D4DF8454B16E97"
 				item: { count: 1, id: "mekanism:chemical_crystallizer" }
@@ -200,9 +199,8 @@
 				"69F8EE1B298EE5B3"
 				"00B1AE0AB854AB40"
 			]
-			icon_scale: 2.0d
 			id: "68309BD6F4679A0A"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "373367643503A627"
 				item: { count: 1, id: "mekanism:chemical_dissolution_chamber" }
@@ -216,9 +214,8 @@
 				"68309BD6F4679A0A"
 				"3F8B9421E85C047D"
 			]
-			icon_scale: 2.0d
 			id: "14CE0DA0E5358A10"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "0D7542F27348DB17"
 				item: { count: 1, id: "mekanism:chemical_washer" }
@@ -344,8 +341,8 @@
 				item: { count: 1, id: "mekanism:shard_iron" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -1.0d
+			x: 1.0d
+			y: 4.25d
 		}
 		{
 			icon_scale: 2.0d
@@ -396,8 +393,8 @@
 			dependencies: ["2021D16943D4FBBF"]
 			id: "30BD7370506EBC6C"
 			tasks: [{
-				id: "78EEABE44CBD1211"
-				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:oxygen" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				id: "1DD7ACF245A34D64"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:oxygen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -405,9 +402,8 @@
 		}
 		{
 			dependencies: ["5DF4A4E6D5E448D0"]
-			icon_scale: 2.0d
 			id: "2021D16943D4FBBF"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "0E95C53C8E92C143"
 				item: { count: 1, id: "mekanism:electrolytic_separator" }
@@ -432,9 +428,8 @@
 				"31203D3E004E1DAB"
 				"3DFE128A74C32B45"
 			]
-			icon_scale: 2.0d
 			id: "036F86DE98C328A0"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "27D273F1AA89CC9A"
 				item: { count: 1, id: "mekanism:chemical_infuser" }
@@ -448,8 +443,8 @@
 			id: "138DC280BDD0622B"
 			shape: "diamond"
 			tasks: [{
-				id: "51FE29FCDDFAEE11"
-				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:hydrogen" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				id: "2ED37AEF208AFE1A"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:hydrogen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -479,9 +474,8 @@
 		}
 		{
 			dependencies: ["53EC4A657655A7D5"]
-			icon_scale: 2.0d
 			id: "18D1995FE0140399"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "2B395A85ADFECFA2"
 				item: { count: 1, id: "mekanism:electrolytic_separator" }
@@ -496,6 +490,7 @@
 			tasks: [{
 				id: "44E5955152A1F4FF"
 				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "minecraft:water" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 3.5d
@@ -542,8 +537,8 @@
 			id: "3DFE128A74C32B45"
 			shape: "diamond"
 			tasks: [{
-				id: "70F0DF382CA94048"
-				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:hydrogen" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				id: "50E330FC2D30E86B"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:hydrogen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
 				type: "item"
 			}]
 			x: 5.5d
@@ -555,6 +550,7 @@
 			tasks: [{
 				id: "3DE1A30FBBEB8173"
 				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "minecraft:water" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 4.0d
@@ -576,9 +572,8 @@
 				"6E60988E8F8C4FF2"
 				"57D104FF04B35463"
 			]
-			icon_scale: 2.0d
 			id: "16052CFE597B57F7"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "1612AB29AEBEC5A8"
 				item: { count: 1, id: "mekanism:chemical_infuser" }
@@ -603,9 +598,8 @@
 				"69F5B199CF819FC3"
 				"207613A34C3F10FA"
 			]
-			icon_scale: 2.0d
 			id: "3A23D98042990591"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "04B04B0D3F1AE0D3"
 				item: { count: 1, id: "mekanism:chemical_infuser" }
@@ -627,9 +621,8 @@
 		}
 		{
 			dependencies: ["7B821A8C8A97FA30"]
-			icon_scale: 2.0d
 			id: "19B997148ED10D99"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "72BD60ABC7E03D51"
 				item: { count: 1, id: "mekanism:chemical_oxidizer" }
@@ -652,9 +645,8 @@
 		}
 		{
 			dependencies: ["78ACE4A0D8338FD1"]
-			icon_scale: 2.0d
 			id: "3BAFFE6DA1F9BFDF"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "69AE927A266FC41C"
 				item: { count: 1, id: "mekanism:chemical_injection_chamber" }
@@ -688,9 +680,8 @@
 		}
 		{
 			dependencies: ["15C38E0D2B205FB4"]
-			icon_scale: 2.0d
 			id: "3EFB11D06AF24423"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "4DEA775D834AA5C7"
 				item: { count: 1, id: "mekanism:rotary_condensentrator" }
@@ -705,6 +696,7 @@
 			tasks: [{
 				id: "13BCA7B28EE7AA0F"
 				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "minecraft:water" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: -2.0d
@@ -714,8 +706,8 @@
 			id: "207613A34C3F10FA"
 			shape: "diamond"
 			tasks: [{
-				id: "4A157724801A9896"
-				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:oxygen" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				id: "60000F1B6EFA59CE"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:oxygen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
 				type: "item"
 			}]
 			x: -2.0d
