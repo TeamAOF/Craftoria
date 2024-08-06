@@ -1,4 +1,3 @@
-
 [general]
 	#Whether ghost blocks are shown when you are holding a framed block
 	showGhostBlocks = true
@@ -9,7 +8,7 @@
 	ghostRenderOpacity = 170
 	#Whether certain framed blocks should show fancy hitboxes
 	fancyHitboxes = true
-	#If false only full block faces of framed blocks will be culled, if true all outer faces of famed blocks can be culled
+	#If false only full block faces of framed blocks will be culled, if true all outer faces of framed blocks can be culled
 	detailedCulling = true
 	#If true, the UV remapping will use discrete steps to avoid floating point errors
 	discreteUVSteps = true
@@ -97,4 +96,3 @@
 	#If set to DETAILED, the Camo Rotation overlay will show detailed info
 	#Allowed Values: HIDDEN, ICON, DETAILED
 	camoRotationMode = "DETAILED"
-

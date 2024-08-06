@@ -38,7 +38,7 @@ let metals = [
 
 let gems = ['diamond', 'emerald', 'lapis', 'quartz', 'coal', 'ruby'];
 
-let misc = ['sulfur', 'salt'];
+let misc = ['sulfur', 'salt', 'obsidian', 'netherite'];
 
 let materials = {
 	metals: ['dusts', 'nuggets', 'ingots', 'storage_blocks', 'raw_materials', 'ores'],

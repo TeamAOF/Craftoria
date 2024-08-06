@@ -107,8 +107,8 @@ ServerEvents.recipes(e => {
   let tryReplace = (replace) => {
     let replaceWith = getItemFromTag(replace);
     if (replaceWith) {
-      e.replaceOutput({}, replace, replaceWith);
-      e.replaceInput({}, replace, replace);
+      e.replaceOutput({ not: { mod: 'modern_industrialization' } }, replace, replaceWith);
+      e.replaceInput({ not: { mod: 'modern_industrialization' } }, replace, replace);
     } else if (debug) {
       console.error(`Could not find item for tag: ${replace}`);
     };

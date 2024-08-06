@@ -219,7 +219,6 @@
 	]
 	quests: [
 		{
-			dependencies: ["0E50E568DFA078D5"]
 			hide_dependency_lines: false
 			icon_scale: 1.5d
 			id: "6FF7CECC5DAF516B"
@@ -1433,6 +1432,7 @@
 			icon_scale: 2.0d
 			id: "0E50E568DFA078D5"
 			min_width: 192
+			optional: true
 			shape: "circle"
 			size: 0.5d
 			tasks: [{

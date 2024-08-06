@@ -11,15 +11,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "0A6A32C28F0DCDFE"
-			tasks: [{
-				id: "4D16869C29EDB891"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: -5.5d
-		}
-		{
 			dependencies: ["18416E8B02E02817"]
 			id: "0E8B36B67840AADD"
 			rewards: [{
@@ -87,7 +78,6 @@
 			y: -6.5d
 		}
 		{
-			dependencies: ["0A6A32C28F0DCDFE"]
 			id: "71B6DA56399050E1"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -100,11 +90,10 @@
 				item: { count: 1, id: "shrink:shrinking_device" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -7.0d
+			x: 2.5d
+			y: -5.5d
 		}
 		{
-			dependencies: ["0A6A32C28F0DCDFE"]
 			id: "5DA3F6FF2AE6C081"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -117,8 +106,8 @@
 				item: { count: 1, id: "charginggadgets:charging_station" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -7.0d
+			x: -2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1A23087241E329A3"]
@@ -743,7 +732,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["42619280FF258EEA"]
 			id: "7BE64AF022E35ADE"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -760,7 +748,6 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["42619280FF258EEA"]
 			id: "00545D267282C024"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -777,7 +764,6 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["42619280FF258EEA"]
 			id: "0F06B5CFCD65EF0E"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -801,7 +787,6 @@
 			y: -13.0d
 		}
 		{
-			dependencies: ["42619280FF258EEA"]
 			id: "207E271D018B5217"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -860,7 +845,6 @@
 			y: -12.5d
 		}
 		{
-			dependencies: ["42619280FF258EEA"]
 			id: "0CFA35BB55D9CBA4"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -904,7 +888,6 @@
 			y: -12.5d
 		}
 		{
-			dependencies: ["42619280FF258EEA"]
 			id: "14B3A6FF79F02AF0"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -933,7 +916,6 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["42619280FF258EEA"]
 			id: "6D1CE6758B529DDC"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -950,7 +932,6 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["42619280FF258EEA"]
 			id: "364A81E9AE697A31"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1131,24 +1112,8 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["0A6A32C28F0DCDFE"]
-			id: "46312A46467C5497"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "55752DEDC0367F1B"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "6EFAED6012254664"
-				item: { count: 1, id: "relics:researching_table" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: -3.5d
-		}
-		{
 			id: "42619280FF258EEA"
+			size: 1.5d
 			tasks: [{
 				id: "1936B2F028F013BB"
 				type: "checkmark"
@@ -1191,7 +1156,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["02C96AE982806447"]
 			id: "6EEAF4D9F3BF6414"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1208,7 +1172,6 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["02C96AE982806447"]
 			id: "192070F984387CE1"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1225,7 +1188,6 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["02C96AE982806447"]
 			id: "40F1315207ADEB80"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1242,7 +1204,6 @@
 			y: -12.5d
 		}
 		{
-			dependencies: ["02C96AE982806447"]
 			id: "66D2FB13C09177EA"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1259,7 +1220,6 @@
 			y: -13.0d
 		}
 		{
-			dependencies: ["02C96AE982806447"]
 			id: "2B29DDBADF11195E"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1276,7 +1236,6 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["02C96AE982806447"]
 			id: "2A2E1C7C34C9A4AA"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1293,7 +1252,6 @@
 			y: -9.5d
 		}
 		{
-			dependencies: ["02C96AE982806447"]
 			id: "65F5E0194184FEDE"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1310,7 +1268,6 @@
 			y: -12.5d
 		}
 		{
-			dependencies: ["02C96AE982806447"]
 			id: "5855D8361A2C6623"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1335,6 +1292,7 @@
 		}
 		{
 			id: "02C96AE982806447"
+			size: 1.5d
 			tasks: [{
 				id: "659005F19206B35C"
 				type: "checkmark"
