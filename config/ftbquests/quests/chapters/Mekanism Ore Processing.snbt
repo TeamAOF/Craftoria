@@ -80,7 +80,7 @@
 			y: -0.1d
 		}
 	]
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -216,7 +216,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "7206B162C5B4E0B8"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(c:ores/osmium)item_tag(minecraft:copper_ores)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/silver))", "minecraft:custom_name": "\"Tier 1 Ores\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(c:ores/osmium)item_tag(minecraft:copper_ores)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/silver))", "minecraft:custom_name": "\"Tier 1 Ores, 1:1\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -228,6 +228,7 @@
 			tasks: [{
 				id: "6937E64C02FCC35E"
 				item: { count: 1, id: "minecraft:iron_ore" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(c:ores/osmium)item_tag(minecraft:copper_ores)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "\"Tier 2 Ores, 1:2\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -264,7 +265,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "7B48C21DF0E38AA3"
-				item: { count: 1, id: "minecraft:iron_ore" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(c:ores/osmium)item_tag(minecraft:copper_ores)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "\"Tier 3 Ores, 3:1\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }				
 				type: "item"
 			}]
 			x: -1.5d
