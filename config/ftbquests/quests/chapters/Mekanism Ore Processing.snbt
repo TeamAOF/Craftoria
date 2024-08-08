@@ -80,9 +80,19 @@
 			y: -0.1d
 		}
 	]
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
+		{
+			id: "0EE1752729747DC4"
+			tasks: [{
+				id: "26C8EBF66B2B0746"
+				item: { count: 1, id: "minecraft:rabbit_foot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
 		{
 			dependencies: [
 				"406374097FE19234"
@@ -206,7 +216,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "7206B162C5B4E0B8"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(c:ores/osmium)item_tag(minecraft:copper_ores)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/silver))", "minecraft:custom_name": "\"Tier 1 Ores, 1:1\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/silver)))", "minecraft:custom_name": "\"Tier 1 Ores, 1:1\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -217,7 +227,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "6937E64C02FCC35E"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(c:ores/osmium)item_tag(minecraft:copper_ores)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "\"Tier 2 Ores, 1:2\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten)))", "minecraft:custom_name": "\"Tier 2 Ores, 1:2\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -230,7 +240,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "173B8953C4ECF03C"
-				item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:iron_ingot)item(minecraft:gold_ingot)item(mekanism:ingot_osmium)item(minecraft:copper_ingot)item(modern_industrialization:tin_ingot)item(modern_industrialization:lead_ingot)item(modern_industrialization:uranium_ingot)item(modern_industrialization:aluminum_ingot)item(minecraft:amethyst_shard)item(moremekanismprocessing:gem_apatite)item(moremekanismprocessing:azure_silver_ingot)item(moremekanismprocessing:bismuth_ingot)item(moremekanismprocessing:gem_bort)item(moremekanismprocessing:gem_cinnabar)item(moremekanismprocessing:cobalt_ingot)item(moremekanismprocessing:crimson_iron_ingot)item(moremekanismprocessing:desh_ingot)item(moremekanismprocessing:gem_dilithium)item(moremekanismprocessing:draconium_ingot)item(moremekanismprocessing:gem_green_sapphire)item(modern_industrialization:iridium_ingot)item(moremekanismprocessing:lithium_ingot)item(modern_industrialization:nickel_ingot)item(moremekanismprocessing:gem_niter)item(moremekanismprocessing:gem_peridot)item(modern_industrialization:platinum_ingot)item(moremekanismprocessing:gem_ruby)item(moremekanismprocessing:ostrum_ingot)item(moremekanismprocessing:gem_sapphire)item(moremekanismprocessing:calorite_ingot)item(modern_industrialization:silver_ingot)item(modern_industrialization:titanium_ingot)item(modern_industrialization:tungsten_ingot)item(moremekanismprocessing:zinc_ingot))", "minecraft:custom_name": "\"Ingots\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:iron_ingot)item(minecraft:gold_ingot)item(minecraft:copper_ingot)item(mekanism:dust_osmium)item(modern_industriaization:tin_ingot)item(modern_industriaization:lead_ingot)item(modern_industriaization:uranium_ingot)item(modern_industriaization:iridium_ingot)item(modern_industriaization:nickel_ingot)item(modern_industriaization:silver_ingot))", "minecraft:custom_name": "\"Ingots\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -243,8 +253,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "52F8438ABCEAC05B"
-				item: { components: { "ftbfiltersystem:filter": "or(item(modern_industriaization:iron_dust)item(modern_industriaization:gold_dust)item(mekanism:dust_osmium)item(modern_industriaization:copper_dust)item(modern_industriaization:tin_dust)item(modern_industriaization:lead_dust)item(modern_industriaization:uranium_dust)item(modern_industriaization:iridium_dust)item(modern_industriaization:nickel_dust)item(modern_industriaization:platinum_dust)item(modern_industriaization:silver_dust)item(modern_industriaization:titanium_dust)
-item(modern_industriaization:tungsten_dust))", "minecraft:custom_name": "\"Dusts\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(modern_industriaization:iron_dust)item(modern_industriaization:gold_dust)item(modern_industriaization:copper_dust)item(mekanism:dust_osmium)item(modern_industriaization:tin_dust)item(modern_industriaization:lead_dust)item(modern_industriaization:uranium_dust)item(modern_industriaization:iridium_dust)item(modern_industriaization:nickel_dust)item(modern_industriaization:platinum_dust)item(modern_industriaization:silver_dust)item(modern_industriaization:titanium_dust)item(modern_industriaization:tungsten_dust))", "minecraft:custom_name": "\"Dusts\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -255,7 +264,7 @@ item(modern_industriaization:tungsten_dust))", "minecraft:custom_name": "\"Dusts
 			shape: "hexagon"
 			tasks: [{
 				id: "7B48C21DF0E38AA3"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(c:ores/osmium)item_tag(minecraft:copper_ores)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "\"Tier 3 Ores, 3:1\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten)))", "minecraft:custom_name": "\"Tier 3 Ores, 3:1\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -266,7 +275,7 @@ item(modern_industriaization:tungsten_dust))", "minecraft:custom_name": "\"Dusts
 			shape: "hexagon"
 			tasks: [{
 				id: "384605660D8EEB3F"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(c:ores/osmium)item_tag(minecraft:copper_ores)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "\"Tier 4 Ores, 4:1\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten)))", "minecraft:custom_name": "\"Tier 4 Ores, 4:1\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -316,8 +325,7 @@ item(modern_industriaization:tungsten_dust))", "minecraft:custom_name": "\"Dusts
 			size: 0.5d
 			tasks: [{
 				id: "121218D232DE02CD"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:crystal_iron)item(mekanism:crystal_gold)item(mekanism:crystal_osmium)item(mekanism:crystal_copper)item(mekanism:crystal_tin)item(mekanism:crystal_lead)item(mekanism:crystal_uranium)item(moremekanismprocessing:crystal_iridium)item(moremekanismprocessing:crystal_nickel)item(moremekanismprocessing:crystal_platinum)item(moremekanismprocessing:crystal_silver)item(moremekanismprocessing:crystal_titanium)
-item(moremekanismprocessing:crystal_tungsten))", "minecraft:custom_name": "\"Crystals\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:crystal_iron)item(mekanism:crystal_gold)item(mekanism:crystal_osmium)item(mekanism:crystal_copper)item(mekanism:crystal_tin)item(mekanism:crystal_lead)item(mekanism:crystal_uranium)item(moremekanismprocessing:crystal_iridium)item(moremekanismprocessing:crystal_nickel)item(moremekanismprocessing:crystal_platinum)item(moremekanismprocessing:crystal_silver)item(moremekanismprocessing:crystal_titanium)item(moremekanismprocessing:crystal_tungsten))", "minecraft:custom_name": "\"Crystals\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -694,38 +702,6 @@ item(moremekanismprocessing:crystal_tungsten))", "minecraft:custom_name": "\"Cry
 			}]
 			x: 2.5d
 			y: -1.0d
-		}
-		{
-			id: "1A5C34AC63817DB6"
-			tasks: [{
-				id: "148B94D0060BB6BC"
-				item: { components: { "ftbfiltersystem:filter": "or(component(strict:{\"mekanism:owner\":[I;-1675135548,-1636741531,-1909550505,-472224227],\"mekanism:side_config\":{config:{gases:{side:{back:\"input\",bottom:\"input\",front:\"output\",left:\"input\",right:\"input\",top:\"input\"}},infuse_types:{side:{back:\"input\",bottom:\"input\",front:\"output\",left:\"input\",right:\"input\",top:\"input\"}},items:{side:{back:\"input\",bottom:\"input\",front:\"output\",left:\"input\",right:\"input\",top:\"input\"}},pigments:{side:{back:\"input\",bottom:\"input\",front:\"output\",left:\"input\",right:\"input\",top:\"input\"}},slurries:{side:{back:\"input\",bottom:\"input\",front:\"output\",left:\"input\",right:\"input\",top:\"input\"}}}},\"mekanism:slurries\":{slurry_tanks:[{amount:64000L,id:\"mekanism:dirty_iron\"}]}})component(strict:{\"mekanism:owner\":[I;-1675135548,-1636741531,-1909550505,-472224227],\"mekanism:side_config\":{config:{gases:{side:{back:\"input\",bottom:\"input\",front:\"output\",left:\"input\",right:\"input\",top:\"input\"}},infuse_types:{side:{back:\"input\",bottom:\"input\",front:\"output\",left:\"input\",right:\"input\",top:\"input\"}},items:{side:{back:\"input\",bottom:\"input\",front:\"output\",left:\"input\",right:\"input\",top:\"input\"}},pigments:{side:{back:\"input\",bottom:\"input\",front:\"output\",left:\"input\",right:\"input\",top:\"input\"}},slurries:{side:{back:\"input\",bottom:\"input\",front:\"output\",left:\"input\",right:\"input\",top:\"input\"}}}},\"mekanism:slurries\":{slurry_tanks:[{amount:64000L,id:\"mekanism:clean_iron\"}]}}))", "minecraft:custom_name": "\"SlurryFilterExample\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: 12.5d
-			y: -2.5d
-		}
-		{
-			id: "5A62DB9D4ACA4928"
-			tasks: [
-				{
-					id: "1BF560B280FCDD9D"
-					item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:basic_chemical_tank)item(mekanism:basic_chemical_tank))", "minecraft:custom_name": "\"Slurry2\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					id: "0B5C2F8252191115"
-					item: { components: { "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ], "mekanism:side_config": { config: { gases: { side: { back: "input", bottom: "input", front: "output", left: "input", right: "input", top: "input" } }, infuse_types: { side: { back: "input", bottom: "input", front: "output", left: "input", right: "input", top: "input" } }, items: { side: { back: "input", bottom: "input", front: "output", left: "input", right: "input", top: "input" } }, pigments: { side: { back: "input", bottom: "input", front: "output", left: "input", right: "input", top: "input" } }, slurries: { side: { back: "input", bottom: "input", front: "output", left: "input", right: "input", top: "input" } } } }, "mekanism:slurries": { slurry_tanks: [{ amount: 64000L, id: "mekanism:dirty_iron" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
-					type: "item"
-				}
-				{
-					id: "5F64417F836DADE6"
-					item: { components: { "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ], "mekanism:side_config": { config: { gases: { side: { back: "input", bottom: "input", front: "output", left: "input", right: "input", top: "input" } }, infuse_types: { side: { back: "input", bottom: "input", front: "output", left: "input", right: "input", top: "input" } }, items: { side: { back: "input", bottom: "input", front: "output", left: "input", right: "input", top: "input" } }, pigments: { side: { back: "input", bottom: "input", front: "output", left: "input", right: "input", top: "input" } }, slurries: { side: { back: "input", bottom: "input", front: "output", left: "input", right: "input", top: "input" } } } }, "mekanism:slurries": { slurry_tanks: [{ amount: 64000L, id: "mekanism:clean_iron" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
-					type: "item"
-				}
-			]
-			x: 12.5d
-			y: 0.0d
 		}
 	]
 }
