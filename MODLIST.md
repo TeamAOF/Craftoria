@@ -118,7 +118,7 @@
   * [illagersweararmor-1.21-2.3.1.jar](https://www.curseforge.com/minecraft/mc-mods/illagers-wear-armor/files/5552789) (by [almightytallestred](https://www.curseforge.com/members/almightytallestred/projects))
   * [ImmediatelyFast-NeoForge-1.2.18+1.21.jar](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast/files/5425058) (by [RaphiMC](https://www.curseforge.com/members/RaphiMC/projects))
   * [inventoryessentials-neoforge-1.21-21.0.2.jar](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials/files/5426948) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
-  * [InventoryProfilesNext-neoforge-1.21-2.0.4.jar](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next/files/5593674) (by [mirinimi](https://www.curseforge.com/members/mirinimi/projects))
+  * [InventoryProfilesNext-neoforge-1.21-2.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next/files/5574875) (by [mirinimi](https://www.curseforge.com/members/mirinimi/projects))
   * [Jade-1.21-NeoForge-15.1.6.jar](https://www.curseforge.com/minecraft/mc-mods/jade/files/5591256) (by [Snownee](https://www.curseforge.com/members/Snownee/projects))
   * [jamlib-neoforge-1.0.10+1.21.jar](https://www.curseforge.com/minecraft/mc-mods/jamlib/files/5595156) (by [jamalam360](https://www.curseforge.com/members/jamalam360/projects))
   * [javd-neo-8.0.1+mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/javd/files/5557431) (by [UnRealDinnerbone](https://www.curseforge.com/members/UnRealDinnerbone/projects))
