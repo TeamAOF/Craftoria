@@ -6,30 +6,6 @@
 	id: "33E8845C982DC0F2"
 	images: [
 		{
-			height: 1.0d
-			image: "modern_industrialization:item/iron_dust"
-			rotation: 0.0d
-			width: 1.0d
-			x: 9.5d
-			y: 4.0d
-		}
-		{
-			height: 1.0d
-			image: "minecraft:item/iron_ingot"
-			rotation: 0.0d
-			width: 1.0d
-			x: 2.5d
-			y: 4.5d
-		}
-		{
-			height: 1.0d
-			image: "mekanism:item/dirty_dust_iron"
-			rotation: 0.0d
-			width: 1.0d
-			x: 8.5d
-			y: 4.5d
-		}
-		{
 			color: 8491152
 			height: 2.0d
 			image: "ftbquests:textures/gui/background_white.png"
@@ -89,10 +65,16 @@
 				"5E34B88FE17081A6"
 			]
 			id: "4EB96A7E9F529D80"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A39A685CFF1DCD3"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
-				id: "06D4F2DD455D94BA"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:crusher)item(mekanism:basic_crushing_factory)item(mekanism:advanced_crushing_factory)item(mekanism:elite_crushing_factory)item(mekanism:ultimate_crushing_factory))", "minecraft:custom_name": "\"Crushing\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				id: "462A315212B07945"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:energized_smelter)item(mekanism:basic_smelting_factory)item(mekanism:advanced_smelting_factory)item(mekanism:elite_smelting_factory)item(mekanism:ultimate_smelting_factory))", "minecraft:custom_name": "\"Smelting\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -104,6 +86,12 @@
 				"1DF9676C04AFADC2"
 			]
 			id: "5E34B88FE17081A6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "774C06D9AA7C5A67"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "5A349EFBA574731A"
@@ -116,6 +104,12 @@
 		{
 			dependencies: ["56AD980E166F9D02"]
 			id: "1DF9676C04AFADC2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "23788D53EC9EEDEB"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "58B9379A71483DD6"
@@ -133,6 +127,12 @@
 			]
 			dependency_requirement: "one_completed"
 			id: "56AD980E166F9D02"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F2BFB0710797614"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "circle"
 			size: 1.25d
 			tasks: [{
@@ -150,6 +150,12 @@
 				"060D9F59EB26C7BD"
 			]
 			id: "126734923F4BCC42"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "03B79E8E7DC8A254"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "69E28305E625CCD2"
@@ -162,6 +168,12 @@
 		{
 			dependencies: ["14CE0DA0E5358A10"]
 			id: "62800DFF97EEF1EC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72A47D6D6942BC59"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "26D4DF8454B16E97"
@@ -177,6 +189,12 @@
 				"00B1AE0AB854AB40"
 			]
 			id: "68309BD6F4679A0A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "79D76C4191E7DDEA"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "373367643503A627"
@@ -192,6 +210,12 @@
 				"3F8B9421E85C047D"
 			]
 			id: "14CE0DA0E5358A10"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7CAD99F0E595C54E"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "0D7542F27348DB17"
@@ -203,6 +227,12 @@
 		}
 		{
 			id: "406374097FE19234"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "679504FB1D861525"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "7206B162C5B4E0B8"
@@ -214,6 +244,12 @@
 		}
 		{
 			id: "76BA847F28ACE170"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "248BE5CBC700C31E"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "6937E64C02FCC35E"
@@ -224,8 +260,16 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["4EB96A7E9F529D80"]
+			hide_dependency_lines: true
 			icon_scale: 2.0d
 			id: "2670DFBF1E5582FE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "01CB5365E38F6AAC"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "square"
 			size: 0.5d
 			tasks: [{
@@ -237,8 +281,16 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["5E34B88FE17081A6"]
+			hide_dependency_lines: true
 			icon_scale: 2.0d
 			id: "474CFA8E17E56E22"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "09911F10504A52A4"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "square"
 			size: 0.5d
 			tasks: [{
@@ -251,6 +303,12 @@
 		}
 		{
 			id: "0FDA602713778AF0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1225A9B991619406"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "7B48C21DF0E38AA3"
@@ -262,6 +320,12 @@
 		}
 		{
 			id: "43EFE64785AE50B4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5178055C4A9DA0A9"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "384605660D8EEB3F"
@@ -273,6 +337,12 @@
 		}
 		{
 			id: "69F8EE1B298EE5B3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C1FFD5AC7577203"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "3404171FB712C24D"
@@ -283,8 +353,16 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["1DF9676C04AFADC2"]
+			hide_dependency_lines: true
 			icon_scale: 2.0d
 			id: "347636F4CD23E75E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4AD62B3DDF323611"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "square"
 			size: 0.5d
 			tasks: [{
@@ -296,8 +374,16 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["56AD980E166F9D02"]
+			hide_dependency_lines: true
 			icon_scale: 2.0d
 			id: "2DB03D8C3924A3AC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "445D5DEC9DF6F111"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "square"
 			size: 0.5d
 			tasks: [{
@@ -309,8 +395,16 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["62800DFF97EEF1EC"]
+			hide_dependency_lines: true
 			icon_scale: 2.0d
 			id: "7D1FCE69C79AEA8B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72E769FB653A2A82"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "square"
 			size: 0.5d
 			tasks: [{
@@ -327,6 +421,12 @@
 			hide_dependent_lines: true
 			icon_scale: 2.0d
 			id: "0827732137C3E249"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4CB282AE3D06BF42"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "square"
 			size: 0.5d
 			tasks: [{
@@ -343,6 +443,12 @@
 			hide_dependent_lines: true
 			icon_scale: 2.0d
 			id: "1752BEBABDCE5276"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2065331AA9389B30"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "square"
 			size: 0.5d
 			tasks: [{
@@ -356,6 +462,12 @@
 		{
 			dependencies: ["2021D16943D4FBBF"]
 			id: "30BD7370506EBC6C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "25E9C29298C6C109"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			tasks: [{
 				id: "1DD7ACF245A34D64"
 				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:oxygen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
@@ -367,6 +479,12 @@
 		{
 			dependencies: ["5DF4A4E6D5E448D0"]
 			id: "2021D16943D4FBBF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2E1585F9B508E741"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "0E95C53C8E92C143"
@@ -379,6 +497,12 @@
 		{
 			dependencies: ["036F86DE98C328A0"]
 			id: "060D9F59EB26C7BD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "084EC5B511815258"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			tasks: [{
 				id: "02454D9C800DA4DE"
 				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:hydrogen_chloride" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
@@ -393,6 +517,12 @@
 				"3DFE128A74C32B45"
 			]
 			id: "036F86DE98C328A0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E7B9394AB3DB29"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "27D273F1AA89CC9A"
@@ -405,6 +535,12 @@
 		{
 			dependencies: ["2021D16943D4FBBF"]
 			id: "138DC280BDD0622B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6B202EDBB3DB99C3"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "2ED37AEF208AFE1A"
@@ -418,6 +554,12 @@
 		{
 			dependencies: ["2FC0A2D07CC2DFC7"]
 			id: "53EC4A657655A7D5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "17E0EE928A1BAF15"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			tasks: [{
 				id: "5B46EAA815EC6493"
 				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "mekanism:brine" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
@@ -429,6 +571,12 @@
 		{
 			dependencies: ["18D1995FE0140399"]
 			id: "31203D3E004E1DAB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "376E2215A98ABEB1"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			tasks: [{
 				id: "7538F34675E34E9E"
 				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:chlorine" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
@@ -440,6 +588,12 @@
 		{
 			dependencies: ["53EC4A657655A7D5"]
 			id: "18D1995FE0140399"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0A63FB350AF1157D"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "2B395A85ADFECFA2"
@@ -451,6 +605,12 @@
 		}
 		{
 			id: "5DF4A4E6D5E448D0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1ED96788460BAB5D"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "44E5955152A1F4FF"
@@ -463,6 +623,19 @@
 		}
 		{
 			id: "2FC0A2D07CC2DFC7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "23B43803B8C7389B"
+					table_id: 5187818757431343295L
+					type: "random"
+				}
+				{
+					id: "6D9EC7EC09D304D9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			size: 1.5d
 			tasks: [
 				{
@@ -500,6 +673,12 @@
 		}
 		{
 			id: "3DFE128A74C32B45"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "521FBBFAACFF4005"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "50E330FC2D30E86B"
@@ -512,6 +691,12 @@
 		}
 		{
 			id: "3F8B9421E85C047D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36A6FA2F8A1084A5"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "3DE1A30FBBEB8173"
@@ -525,6 +710,12 @@
 		{
 			dependencies: ["16052CFE597B57F7"]
 			id: "00B1AE0AB854AB40"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "026A9E8C3B589F08"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			tasks: [{
 				id: "5774367AADC3912D"
 				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:sulfuric_acid" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
@@ -539,6 +730,12 @@
 				"57D104FF04B35463"
 			]
 			id: "16052CFE597B57F7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "75662FB370136600"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "1612AB29AEBEC5A8"
@@ -551,6 +748,12 @@
 		{
 			dependencies: ["3A23D98042990591"]
 			id: "6E60988E8F8C4FF2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "33F963ED56C5555A"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			tasks: [{
 				id: "4554313612DA8D78"
 				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:sulfur_trioxide" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
@@ -565,6 +768,12 @@
 				"207613A34C3F10FA"
 			]
 			id: "3A23D98042990591"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "569DCA2934774319"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "04B04B0D3F1AE0D3"
@@ -577,6 +786,12 @@
 		{
 			dependencies: ["19B997148ED10D99"]
 			id: "69F5B199CF819FC3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A091DB34B28B2AC"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			tasks: [{
 				id: "501CE8BA11557A26"
 				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:sulfur_dioxide" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
@@ -588,6 +803,12 @@
 		{
 			dependencies: ["7B821A8C8A97FA30"]
 			id: "19B997148ED10D99"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0FCFAB653A3F049B"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "72BD60ABC7E03D51"
@@ -600,6 +821,12 @@
 		{
 			dependencies: ["3BAFFE6DA1F9BFDF"]
 			id: "7B821A8C8A97FA30"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5993B7B0870818B6"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			tasks: [{
 				count: 16L
 				id: "3BA1537C2EEBE4E7"
@@ -612,6 +839,12 @@
 		{
 			dependencies: ["78ACE4A0D8338FD1"]
 			id: "3BAFFE6DA1F9BFDF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18E211B7244CF862"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "69AE927A266FC41C"
@@ -624,6 +857,12 @@
 		{
 			dependencies: ["3EFB11D06AF24423"]
 			id: "57D104FF04B35463"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00F4C9E06C4F58C8"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			tasks: [{
 				id: "1D04A1E39620F869"
 				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:water_vapor" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
@@ -634,6 +873,12 @@
 		}
 		{
 			id: "78ACE4A0D8338FD1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6FAB76E488B1DE35"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				count: 32L
@@ -647,6 +892,12 @@
 		{
 			dependencies: ["15C38E0D2B205FB4"]
 			id: "3EFB11D06AF24423"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "60B3242BE42835D5"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "4DEA775D834AA5C7"
@@ -658,6 +909,12 @@
 		}
 		{
 			id: "15C38E0D2B205FB4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "644E1C05FA803DF3"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "13BCA7B28EE7AA0F"
@@ -670,6 +927,12 @@
 		}
 		{
 			id: "207613A34C3F10FA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7EAB72A5F93958E4"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "60000F1B6EFA59CE"
@@ -681,8 +944,16 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["126734923F4BCC42"]
+			hide_dependency_lines: true
 			icon_scale: 2.0d
 			id: "24AE78EE11D2AFFD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42559A36A11E6E9B"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
 			shape: "square"
 			size: 0.5d
 			tasks: [{
