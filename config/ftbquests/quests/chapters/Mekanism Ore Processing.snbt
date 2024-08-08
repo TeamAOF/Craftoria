@@ -84,16 +84,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			id: "0EE1752729747DC4"
-			tasks: [{
-				id: "26C8EBF66B2B0746"
-				item: { count: 1, id: "minecraft:rabbit_foot" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.5d
-		}
-		{
 			dependencies: [
 				"406374097FE19234"
 				"5E34B88FE17081A6"
@@ -286,7 +276,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3404171FB712C24D"
-				item: { count: 1, id: "minecraft:iron_ore" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "\"Tier 5 Ores, 1:5\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 9.5d
