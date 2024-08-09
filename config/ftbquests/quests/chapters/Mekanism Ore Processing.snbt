@@ -4,7 +4,7 @@
 	filename: "Mekanism Ore Processing"
 	group: "066C799B2F5452CD"
 	id: "33E8845C982DC0F2"
-	order_index: 4
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -174,6 +174,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["038773FFAF3C8817"]
 			id: "406374097FE19234"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -191,6 +192,7 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["038773FFAF3C8817"]
 			id: "76BA847F28ACE170"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -250,6 +252,7 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["038773FFAF3C8817"]
 			id: "0FDA602713778AF0"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -267,6 +270,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["038773FFAF3C8817"]
 			id: "43EFE64785AE50B4"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -284,6 +288,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["038773FFAF3C8817"]
 			id: "69F8EE1B298EE5B3"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -552,6 +557,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["038773FFAF3C8817"]
 			id: "5DF4A4E6D5E448D0"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -570,6 +576,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["038773FFAF3C8817"]
 			id: "2FC0A2D07CC2DFC7"
 			rewards: [
 				{
@@ -620,6 +627,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["038773FFAF3C8817"]
 			id: "3DFE128A74C32B45"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -638,6 +646,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["038773FFAF3C8817"]
 			id: "3F8B9421E85C047D"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -820,6 +829,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["038773FFAF3C8817"]
 			id: "78ACE4A0D8338FD1"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -856,6 +866,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["038773FFAF3C8817"]
 			id: "15C38E0D2B205FB4"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -874,6 +885,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["038773FFAF3C8817"]
 			id: "207613A34C3F10FA"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -910,6 +922,26 @@
 				type: "item"
 			}]
 			x: 2.5d
+			y: -1.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: {
+				components: {
+					"ftbquests:icon": "ftbteams:textures/accept.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			icon_scale: 1.25d
+			id: "038773FFAF3C8817"
+			min_width: 256
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "4552085BF5330776"
+				type: "checkmark"
+			}]
+			x: -6.0d
 			y: -1.0d
 		}
 	]
