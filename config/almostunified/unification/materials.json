@@ -1,43 +1,27 @@
 {
-  "mod_priorities": [
-    "minecraft",
-    "kubejs",
-    "modern_industrialization",
-    "mekanism",
-    "moremekanismprocessing",
-    "occultism",
-    "mffs"
-  ],
-  "stone_variants": [
-    "stone",
-    "andesite",
-    "deepslate",
-    "diorite",
-    "granite",
-    "nether"
-  ],
-  "tags": [
-    "c:dusts/{material}",
-    "c:gears/{material}",
-    "c:gems/{material}",
-    "c:ingots/{material}",
-    "c:nuggets/{material}",
-    "c:ores/{material}",
-    "c:plates/{material}",
-    "c:raw_materials/{material}",
-    "c:rods/{material}",
-    "c:storage_blocks/raw_{material}",
-    "c:storage_blocks/{material}",
-    "c:wires/{material}"
-  ],
-  "priority_overrides": {},
-  "ignored_tags": [],
-  "ignored_items": [],
-  "ignored_recipe_types": [
-    "cucumber:shaped_tag"
-  ],
-  "ignored_recipes": [],
-  "ignored_loot_tables": [],
-  "enable_loot_unification": true,
-  "recipe_viewer_hiding": true
+	"mod_priorities": ["minecraft", "kubejs", "modern_industrialization", "mekanism", "moremekanismprocessing", "occultism", "mffs"],
+	"stone_variants": ["stone", "andesite", "deepslate", "diorite", "granite", "nether"],
+	"tags": [
+		"c:dusts/{material}",
+		"c:gears/{material}",
+		"c:gems/{material}",
+		"c:ingots/{material}",
+		"c:nuggets/{material}",
+		"c:ores/{material}",
+		"c:plates/{material}",
+		"c:raw_materials/{material}",
+		"c:rods/{material}",
+		"c:storage_blocks/raw_{material}",
+		"c:storage_blocks/{material}",
+		"c:wires/{material}",
+		"c:tiny_dusts/{material}"
+	],
+	"priority_overrides": {},
+	"ignored_tags": [],
+	"ignored_items": [],
+	"ignored_recipe_types": ["cucumber:shaped_tag"],
+	"ignored_recipes": [],
+	"ignored_loot_tables": [],
+	"enable_loot_unification": true,
+	"recipe_viewer_hiding": true
 }
