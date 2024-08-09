@@ -26,11 +26,11 @@ $MODPACK_NAME = "Craftoria"
 $CLIENT_NAME = "Craftoria"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.6.1"
+$MODPACK_VERSION = "0.7.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.6.0"
+$LAST_MODPACK_VERSION = "0.6.1"
 
 # Which modloader the modpack uses
 # Can be "forge" or "fabric"
@@ -58,7 +58,7 @@ $CLIENT_CHANGELOG = "[![](https://i.imgur.com/ZbBbsDo.png)](https://github.com/T
 # @(7722) - is Minecraft 1.15.2
 # @(8134) - is Minecraft 1.16.4
 # More can be found by running GetGameVersions
-$GAME_VERSIONS = @(11457)
+$GAME_VERSIONS = @(11779)
 
 # Can be "alpha", "beta" or "release"
 $CLIENT_RELEASE_TYPE = "release"
