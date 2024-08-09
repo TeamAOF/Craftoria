@@ -1,0 +1,89 @@
+#Adjust this value to define how much the matching spell cost gets discounted by the greater focus
+#Range: 0.0 ~ 0.99
+"Elemental Focus discount" = 0.25
+
+#Adjust these values to balance how much a spell gets amplified by the matching spell focus, doubled for major foci.
+["Elemental Spell Foci - Amplify"]
+	"Fire Focus buff" = 1.0
+	"Water Focus buff" = 1.0
+	"Air Focus buff" = 1.0
+	"Earth Focus buff" = 1.0
+
+#Adjust these values to balance how much an elemental spell gets dampened by a not-matching lesser spell focus
+["Elemental Spell Foci - Dampening"]
+	"Fire Focus debuff" = -1.0
+	"Water Focus debuff" = -1.0
+	"Air Focus debuff" = -1.0
+	"Earth Focus debuff" = -1.0
+
+#Enable or disable the passive bonus of the foci
+["Elemental Spell Foci - Abilities"]
+	"Enable glyph empowering" = true
+	"Enable regen bonus under special conditions" = true
+	"Enable iframe skip combos" = true
+
+#Adjust Elemental Armor Mana Buffs
+["Elemental Armors"]
+	#Max mana bonus for each elemental armor piece
+	#Range: 0 ~ 10000
+	armorMaxMana = 100
+	#Mana regen bonus for each elemental armor piece
+	#Range: 0 ~ 100
+	armorManaRegen = 4
+
+["Mermaid Fishing"]
+	#How much source mermaids consume per generation
+	#Range: 0 ~ 10000
+	mermaidManaCost = 1000
+	#How many channels must occur before a siren produces loot.
+	#Range: 0 ~ 300
+	mermaidMaxProgress = 30
+	#Max number of extra item rolls a shrine produces if the mood is high.
+	#Range: 0 ~ 10
+	mermaidScoreBonus = 2
+	#Chance multiplier to produce a treasure relative to the siren shrine score.
+	#Range: 0.0 ~ 1.0
+	mermaidTreasureBonus = 0.002
+	#Base number of items rolls a shrine produces per cycle.
+	#Range: 0 ~ 300
+	mermaidBaseItems = 1
+	#Max number of items a siren shrine can produce per cycle.
+	#Range: 0 ~ 300
+	mermaidQuantityCap = 5
+
+["Source cost"]
+	#How much source does the water urn consume.
+	#Range: 0 ~ 10000
+	waterUrnCost = 100
+	#How much source does the slipstream elevator consume.
+	#Range: 0 ~ 1000
+	airElevatorCost = 10
+	#How much source does the bubble elevator consume.
+	#Range: 0 ~ 1000
+	waterElevatorCost = 0
+	#How much source does the magmatic elevator consume.
+	#Range: 0 ~ 1000
+	lavaElevatorCost = 0
+
+[Misc]
+	#If enabled, flarecannons will simply die and drop the charm, instead of deactivating, if killed by their owner
+	flarecannon_owner_kill = true
+	#Set over 0 to enable archwood forests with specific trees
+	#Range: 0 ~ 100
+	extra_biomes = 0
+	#Set to false to disable the lightning crashing often on flashing archwood biome(s).
+	always_thunder = true
+	#If enabled, homing will be able to target mobs only if they're glowing
+	homing_nerf = false
+	#Define the refresh rate of the Squirrel Ritual buff, in ticks.
+	#Range: > 1
+	squirrelRefreshRate = 600
+	#If enabled, soulbound enchantment can appear in randomly enchanted loot chests.
+	soulbound_loot = true
+	#Define the maximum number of pierce that a lens can apply to a spell.
+	#Range: > 1
+	pierceLensLimit = 10
+
+[Mobs-Disabled]
+	#If true, the wandering mages will target players too, unless they wear the focus of the same school.
+	magesAggro = true

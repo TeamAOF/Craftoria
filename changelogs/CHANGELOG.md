@@ -1,3 +1,35 @@
+## Craftoria | v0.7.0
+
+_NeoForge Loader 21.1.2_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.7.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.7.0.md)_
+
+### Changes/Improvements ⭐
+
+* Updated to MC version 1.21.1
+* New quest chapter, Mekanism: Ore Processing **(SubordinalBlue)**
+* Improved world gen, expect weird generation on chunk borders to new chunks.
+* Steel Ingot quest in Mekanism chapter now uses the correct unified variant **(AK)**
+
+### Bug Fixes 🪲
+
+* Fixed an issue where you'd crash when using Extended MI machines, due to Sound Addon.
+* Fixed Arc Logs quest using incorrect tag.
+* Fixed an issue where all backpack tier quests would finish upon first quest completion **(SubordinalBlue)**
+
+### Added Mods ✅
+
+  * [Apothic Enchanting](https://www.curseforge.com/minecraft/mc-mods/apothic-enchanting)
+  * [Ars Elemental](https://www.curseforge.com/minecraft/mc-mods/ars-elemental)
+  * [Chat Toggle](https://www.curseforge.com/minecraft/mc-mods/chattoggle)
+  * [CoroUtil](https://www.curseforge.com/minecraft/mc-mods/coroutil)
+  * [Croptopia](https://www.curseforge.com/minecraft/mc-mods/croptopia)
+  * [EpheroLib](https://www.curseforge.com/minecraft/mc-mods/epherolib)
+  * [Mekanism Unleashed](https://www.curseforge.com/minecraft/mc-mods/mekanism-unleashed)
+  * [PneumaticCraft: Repressurized](https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized)
+  * [Server Started!](https://www.curseforge.com/minecraft/mc-mods/server-started)
+  * [Tectonic](https://www.curseforge.com/minecraft/mc-mods/tectonic)
+  * [What Are They Up To (Watut)](https://www.curseforge.com/minecraft/mc-mods/what-are-they-up-to)
+---
+
 ## Craftoria | v0.6.1
 
 _NeoForge Loader 21.0.150_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.6.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.6.1.md)_

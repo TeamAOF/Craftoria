@@ -1,0 +1,951 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "Mekanism Ore Processing"
+	group: "066C799B2F5452CD"
+	icon: {
+		id: "moremekanismprocessing:dirty_dust_cinnabar"
+	}
+	id: "33E8845C982DC0F2"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"406374097FE19234"
+				"5E34B88FE17081A6"
+			]
+			id: "4EB96A7E9F529D80"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A39A685CFF1DCD3"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "462A315212B07945"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:energized_smelter)item(mekanism:basic_smelting_factory)item(mekanism:advanced_smelting_factory)item(mekanism:elite_smelting_factory)item(mekanism:ultimate_smelting_factory))", "minecraft:custom_name": "\"Smelting\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"76BA847F28ACE170"
+				"1DF9676C04AFADC2"
+			]
+			id: "5E34B88FE17081A6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "774C06D9AA7C5A67"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "5A349EFBA574731A"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:enrichment_chamber)item(mekanism:basic_enriching_factory)item(mekanism:advanced_enriching_factory)item(mekanism:elite_enriching_factory)item(mekanism:ultimate_enriching_factory))", "minecraft:custom_name": "\"Enriching\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["56AD980E166F9D02"]
+			id: "1DF9676C04AFADC2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "23788D53EC9EEDEB"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "58B9379A71483DD6"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:crusher)item(mekanism:basic_crushing_factory)item(mekanism:advanced_crushing_factory)item(mekanism:elite_crushing_factory)item(mekanism:ultimate_crushing_factory))", "minecraft:custom_name": "\"Crushing\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"126734923F4BCC42"
+				"0FDA602713778AF0"
+				"30BD7370506EBC6C"
+			]
+			dependency_requirement: "one_completed"
+			id: "56AD980E166F9D02"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F2BFB0710797614"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "circle"
+			size: 1.25d
+			tasks: [{
+				id: "254F5B2785C08B60"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:purification_chamber)item(mekanism:basic_purifying_factory)item(mekanism:advanced_purifying_factory)item(mekanism:elite_purifying_factory)item(mekanism:ultimate_purifying_factory))", "minecraft:custom_name": "\"Purifying\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"62800DFF97EEF1EC"
+				"43EFE64785AE50B4"
+				"060D9F59EB26C7BD"
+			]
+			id: "126734923F4BCC42"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "03B79E8E7DC8A254"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "69E28305E625CCD2"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:chemical_injection_chamber)item(mekanism:basic_injecting_factory)item(mekanism:advanced_injecting_factory)item(mekanism:elite_injecting_factory)item(mekanism:ultimate_injecting_factory))", "minecraft:custom_name": "\"Injecting\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["14CE0DA0E5358A10"]
+			id: "62800DFF97EEF1EC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72A47D6D6942BC59"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "26D4DF8454B16E97"
+				item: { count: 1, id: "mekanism:chemical_crystallizer" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"69F8EE1B298EE5B3"
+				"00B1AE0AB854AB40"
+			]
+			id: "68309BD6F4679A0A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "79D76C4191E7DDEA"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "373367643503A627"
+				item: { count: 1, id: "mekanism:chemical_dissolution_chamber" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"68309BD6F4679A0A"
+				"3F8B9421E85C047D"
+			]
+			id: "14CE0DA0E5358A10"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7CAD99F0E595C54E"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0D7542F27348DB17"
+				item: { count: 1, id: "mekanism:chemical_washer" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["038773FFAF3C8817"]
+			id: "406374097FE19234"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "679504FB1D861525"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "7206B162C5B4E0B8"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/silver))", "minecraft:custom_name": "\"Tier 1 Ores, 1:1\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["038773FFAF3C8817"]
+			id: "76BA847F28ACE170"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "248BE5CBC700C31E"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "6937E64C02FCC35E"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "\"Tier 2 Ores, 1:2\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4EB96A7E9F529D80"]
+			hide_dependency_lines: true
+			icon_scale: 2.0d
+			id: "2670DFBF1E5582FE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "01CB5365E38F6AAC"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "square"
+			size: 0.5d
+			tasks: [{
+				id: "173B8953C4ECF03C"
+				item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:iron_ingot)item(minecraft:gold_ingot)item(minecraft:copper_ingot)item(mekanism:dust_osmium)item(modern_industrialization:tin_ingot)item(modern_industrialization:lead_ingot)item(modern_industrialization:uranium_ingot)item(modern_industrialization:iridium_ingot)item(modern_industrialization:nickel_ingot)item(modern_industrialization:silver_ingot))", "minecraft:custom_name": "\"Ingots\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5E34B88FE17081A6"]
+			hide_dependency_lines: true
+			icon_scale: 2.0d
+			id: "474CFA8E17E56E22"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "09911F10504A52A4"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "square"
+			size: 0.5d
+			tasks: [{
+				id: "52F8438ABCEAC05B"
+				item: { components: { "ftbfiltersystem:filter": "or(item(modern_industrialization:iron_dust)item(modern_industrialization:gold_dust)item(modern_industrialization:copper_dust)item(mekanism:dust_osmium)item(modern_industrialization:tin_dust)item(modern_industrialization:lead_dust)item(modern_industrialization:uranium_dust)item(modern_industrialization:iridium_dust)item(modern_industrialization:nickel_dust)item(modern_industrialization:platinum_dust)item(modern_industrialization:silver_dust)item(modern_industrialization:titanium_dust)item(modern_industrialization:tungsten_dust))", "minecraft:custom_name": "\"Dusts\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["038773FFAF3C8817"]
+			id: "0FDA602713778AF0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1225A9B991619406"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "7B48C21DF0E38AA3"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "\"Tier 3 Ores, 1:3\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["038773FFAF3C8817"]
+			id: "43EFE64785AE50B4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5178055C4A9DA0A9"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "384605660D8EEB3F"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "\"Tier 4 Ores, 1:4\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["038773FFAF3C8817"]
+			id: "69F8EE1B298EE5B3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C1FFD5AC7577203"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "3404171FB712C24D"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "\"Tier 5 Ores, 1:5\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1DF9676C04AFADC2"]
+			hide_dependency_lines: true
+			icon_scale: 2.0d
+			id: "347636F4CD23E75E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4AD62B3DDF323611"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "square"
+			size: 0.5d
+			tasks: [{
+				id: "3C57ABFDA04D05E7"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:dirty_dust_iron)item(mekanism:dirty_dust_gold)item(mekanism:dirty_dust_osmium)item(mekanism:dirty_dust_copper)item(mekanism:dirty_dust_tin)item(mekanism:dirty_dust_lead)item(mekanism:dirty_dust_uranium)item(moremekanismprocessing:dirty_dust_iridium)item(moremekanismprocessing:dirty_dust_nickel)item(moremekanismprocessing:dirty_dust_platinum)item(moremekanismprocessing:dirty_dust_silver)item(moremekanismprocessing:dirty_dust_titanium)item(moremekanismprocessing:dirty_dust_tungsten))", "minecraft:custom_name": "\"Dirty Dusts\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["56AD980E166F9D02"]
+			hide_dependency_lines: true
+			icon_scale: 2.0d
+			id: "2DB03D8C3924A3AC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "445D5DEC9DF6F111"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "square"
+			size: 0.5d
+			tasks: [{
+				id: "7E06B7B8534A6AD6"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:clump_iron)item(mekanism:clump_gold)item(mekanism:clump_osmium)item(mekanism:clump_copper)item(mekanism:clump_tin)item(mekanism:clump_lead)item(mekanism:clump_uranium)item(moremekanismprocessing:clump_iridium)item(moremekanismprocessing:clump_nickel)item(moremekanismprocessing:clump_platinum)item(moremekanismprocessing:clump_silver)item(moremekanismprocessing:clump_titanium)item(moremekanismprocessing:clump_tungsten))", "minecraft:custom_name": "\"Clumps\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["62800DFF97EEF1EC"]
+			hide_dependency_lines: true
+			icon_scale: 2.0d
+			id: "7D1FCE69C79AEA8B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72E769FB653A2A82"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "square"
+			size: 0.5d
+			tasks: [{
+				id: "121218D232DE02CD"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:crystal_iron)item(mekanism:crystal_gold)item(mekanism:crystal_osmium)item(mekanism:crystal_copper)item(mekanism:crystal_tin)item(mekanism:crystal_lead)item(mekanism:crystal_uranium)item(moremekanismprocessing:crystal_iridium)item(moremekanismprocessing:crystal_nickel)item(moremekanismprocessing:crystal_platinum)item(moremekanismprocessing:crystal_silver)item(moremekanismprocessing:crystal_titanium)item(moremekanismprocessing:crystal_tungsten))", "minecraft:custom_name": "\"Crystals\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["14CE0DA0E5358A10"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon_scale: 2.0d
+			id: "0827732137C3E249"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4CB282AE3D06BF42"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "square"
+			size: 0.5d
+			tasks: [{
+				id: "0FA270C84C6558F4"
+				item: { components: { "mekanism:slurries": { slurry_tanks: [{ amount: 64000L, id: "mekanism:clean_iron" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["68309BD6F4679A0A"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon_scale: 2.0d
+			id: "1752BEBABDCE5276"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2065331AA9389B30"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "square"
+			size: 0.5d
+			tasks: [{
+				id: "0DB6520590E34A02"
+				item: { components: { "mekanism:slurries": { slurry_tanks: [{ amount: 64000L, id: "mekanism:dirty_iron" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2021D16943D4FBBF"]
+			id: "30BD7370506EBC6C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "25E9C29298C6C109"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1DD7ACF245A34D64"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:oxygen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DF4A4E6D5E448D0"]
+			id: "2021D16943D4FBBF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2E1585F9B508E741"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0E95C53C8E92C143"
+				item: { count: 1, id: "mekanism:electrolytic_separator" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["036F86DE98C328A0"]
+			id: "060D9F59EB26C7BD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "084EC5B511815258"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			tasks: [{
+				id: "02454D9C800DA4DE"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:hydrogen_chloride" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"31203D3E004E1DAB"
+				"3DFE128A74C32B45"
+			]
+			id: "036F86DE98C328A0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70E7B9394AB3DB29"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "27D273F1AA89CC9A"
+				item: { count: 1, id: "mekanism:chemical_infuser" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2021D16943D4FBBF"]
+			id: "138DC280BDD0622B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6B202EDBB3DB99C3"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2ED37AEF208AFE1A"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:hydrogen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2FC0A2D07CC2DFC7"]
+			id: "53EC4A657655A7D5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "17E0EE928A1BAF15"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5B46EAA815EC6493"
+				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "mekanism:brine" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["18D1995FE0140399"]
+			id: "31203D3E004E1DAB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "376E2215A98ABEB1"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7538F34675E34E9E"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:chlorine" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["53EC4A657655A7D5"]
+			id: "18D1995FE0140399"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0A63FB350AF1157D"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "2B395A85ADFECFA2"
+				item: { count: 1, id: "mekanism:electrolytic_separator" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["038773FFAF3C8817"]
+			id: "5DF4A4E6D5E448D0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1ED96788460BAB5D"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "44E5955152A1F4FF"
+				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "minecraft:water" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["038773FFAF3C8817"]
+			id: "2FC0A2D07CC2DFC7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "23B43803B8C7389B"
+					table_id: 5187818757431343295L
+					type: "random"
+				}
+				{
+					id: "6D9EC7EC09D304D9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "502D139D4B37FC3B"
+					item: { count: 1, id: "mekanism:thermal_evaporation_controller" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "59C2CC416CCF27BC"
+					item: { count: 2, id: "mekanism:thermal_evaporation_valve" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "367F13FBD5CFE482"
+					item: { count: 9, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "634F8BEA2D6AD087"
+					item: { count: 4, id: "mekanismgenerators:advanced_solar_generator" }
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "1BB240F32DA015EE"
+					item: { count: 24, id: "mekanism:thermal_evaporation_block" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["038773FFAF3C8817"]
+			id: "3DFE128A74C32B45"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "521FBBFAACFF4005"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "50E330FC2D30E86B"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:hydrogen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["038773FFAF3C8817"]
+			id: "3F8B9421E85C047D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36A6FA2F8A1084A5"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "3DE1A30FBBEB8173"
+				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "minecraft:water" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["16052CFE597B57F7"]
+			id: "00B1AE0AB854AB40"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "026A9E8C3B589F08"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5774367AADC3912D"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:sulfuric_acid" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"6E60988E8F8C4FF2"
+				"57D104FF04B35463"
+			]
+			id: "16052CFE597B57F7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "75662FB370136600"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "1612AB29AEBEC5A8"
+				item: { count: 1, id: "mekanism:chemical_infuser" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3A23D98042990591"]
+			id: "6E60988E8F8C4FF2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "33F963ED56C5555A"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4554313612DA8D78"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:sulfur_trioxide" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"69F5B199CF819FC3"
+				"207613A34C3F10FA"
+			]
+			id: "3A23D98042990591"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "569DCA2934774319"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "04B04B0D3F1AE0D3"
+				item: { count: 1, id: "mekanism:chemical_infuser" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["19B997148ED10D99"]
+			id: "69F5B199CF819FC3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A091DB34B28B2AC"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			tasks: [{
+				id: "501CE8BA11557A26"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:sulfur_dioxide" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7B821A8C8A97FA30"]
+			id: "19B997148ED10D99"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0FCFAB653A3F049B"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "72BD60ABC7E03D51"
+				item: { count: 1, id: "mekanism:chemical_oxidizer" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3BAFFE6DA1F9BFDF"]
+			id: "7B821A8C8A97FA30"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5993B7B0870818B6"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			tasks: [{
+				count: 16L
+				id: "3BA1537C2EEBE4E7"
+				item: { count: 16, id: "modern_industrialization:sulfur_dust" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["78ACE4A0D8338FD1"]
+			id: "3BAFFE6DA1F9BFDF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18E211B7244CF862"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "69AE927A266FC41C"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:chemical_injection_chamber)item(mekanism:basic_injecting_factory)item(mekanism:advanced_injecting_factory)item(mekanism:elite_injecting_factory)item(mekanism:ultimate_injecting_factory))", "minecraft:custom_name": "\"Injecting\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3EFB11D06AF24423"]
+			id: "57D104FF04B35463"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00F4C9E06C4F58C8"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1D04A1E39620F869"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:water_vapor" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["038773FFAF3C8817"]
+			id: "78ACE4A0D8338FD1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6FAB76E488B1DE35"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 32L
+				id: "6A7D137833824B25"
+				item: { count: 32, id: "minecraft:gunpowder" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["15C38E0D2B205FB4"]
+			id: "3EFB11D06AF24423"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "60B3242BE42835D5"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "4DEA775D834AA5C7"
+				item: { count: 1, id: "mekanism:rotary_condensentrator" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["038773FFAF3C8817"]
+			id: "15C38E0D2B205FB4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "644E1C05FA803DF3"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "13BCA7B28EE7AA0F"
+				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "minecraft:water" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["038773FFAF3C8817"]
+			id: "207613A34C3F10FA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7EAB72A5F93958E4"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "60000F1B6EFA59CE"
+				item: { components: { "mekanism:gases": { gas_tanks: [{ amount: 64000L, id: "mekanism:oxygen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["126734923F4BCC42"]
+			hide_dependency_lines: true
+			icon_scale: 2.0d
+			id: "24AE78EE11D2AFFD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42559A36A11E6E9B"
+				table_id: 5187818757431343295L
+				type: "random"
+			}]
+			shape: "square"
+			size: 0.5d
+			tasks: [{
+				id: "22B462F02C239237"
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:shard_iron)item(mekanism:shard_gold)item(mekanism:shard_osmium)item(mekanism:shard_copper)item(mekanism:shard_tin)item(mekanism:shard_lead)item(mekanism:shard_uranium)item(moremekanismprocessing:shard_iridium)item(moremekanismprocessing:shard_nickel)item(moremekanismprocessing:shard_platinum)item(moremekanismprocessing:shard_silver)item(moremekanismprocessing:shard_titanium)item(moremekanismprocessing:shard_tungsten))", "minecraft:custom_name": "\"Shards\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			hide_dependent_lines: true
+			icon: {
+				components: {
+					"ftbquests:icon": "ftbteams:textures/accept.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			icon_scale: 1.25d
+			id: "038773FFAF3C8817"
+			min_width: 256
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "4552085BF5330776"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+	]
+}

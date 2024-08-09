@@ -2,13 +2,13 @@
 	#Whether water pumps require a water biome (river or ocean) to operate
 	require_water_biome_for_pump = false
 	#Whether the voltage of a machine should be displayed. This includes displaying voltage of hatches and hulls
-	display_machine_voltage = false
+	display_machine_voltage = true
 	#Whether efficiency should be locked when a redstone module locks a machine, rather than just the crafting operation
-	lock_efficiency_with_redstone = false
+	lock_efficiency_with_redstone = true
 	#Whether wrenches should render multiblock shapes in world. If false, then only blueprints will be able to render multiblock shapes in world
 	wrenches_render_multiblock_shapes = true
 	#Whether the tooltip on the energy bar should display the current energy consumption of the machine
-	display_energy_consumption_on_energy_bar = false
+	display_energy_consumption_on_energy_bar = true
 
 [efficiency]
 	#The machine efficiency hack mode to use. Only applies to electric machines

@@ -15,7 +15,6 @@
   * [buildinggadgets2-1.3.5.jar](https://www.curseforge.com/minecraft/mc-mods/building-gadgets/files/5588613) -> [buildinggadgets2-1.3.6.jar](https://www.curseforge.com/minecraft/mc-mods/building-gadgets/files/5596474)
   * [extended-industrialization-1.4.3+1.21.jar](https://www.curseforge.com/minecraft/mc-mods/extended-industrialization/files/5587661) -> [extended-industrialization-1.4.4+1.21.jar](https://www.curseforge.com/minecraft/mc-mods/extended-industrialization/files/5596624)
   * [FramedBlocks-10.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/framedblocks/files/5588479) -> [FramedBlocks-10.1.3.jar](https://www.curseforge.com/minecraft/mc-mods/framedblocks/files/5597081)
-  * [InventoryProfilesNext-neoforge-1.21-2.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next/files/5574875) -> [InventoryProfilesNext-neoforge-1.21-2.0.4.jar](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next/files/5593674)
   * [laserio-1.9.4.jar](https://www.curseforge.com/minecraft/mc-mods/laserio/files/5576108) -> [laserio-1.9.5.jar](https://www.curseforge.com/minecraft/mc-mods/laserio/files/5596452)
   * [modonomicon-1.21-neoforge-1.97.0.jar](https://www.curseforge.com/minecraft/mc-mods/modonomicon/files/5583404) -> [modonomicon-1.21-neoforge-1.98.0.jar](https://www.curseforge.com/minecraft/mc-mods/modonomicon/files/5595871)
 
