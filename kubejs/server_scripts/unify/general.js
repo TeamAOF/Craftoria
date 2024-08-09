@@ -11,8 +11,7 @@ let getItemFromTag = (tag) => {
     if (items.length > 0) {
       items = sortArray(items.toArray());
       return items[0];
-    } else
-      return false;
+    } else return false;
   } catch (error) {
     if (debug) console.error(`Could not find item for tag: ${tag}`);
   }
@@ -21,8 +20,7 @@ let getItemFromTag = (tag) => {
 let checkTagSize = (tag) => {
   try {
     let size = Ingredient.of(tag).itemIds.length;
-    if (debug)
-      console.log(`Found ${size} items for tag: ${tag}`);
+    if (debug) console.log(`Found ${size} items for tag: ${tag}`);
     return size;
   } catch (error) {
     if (debug) console.error(`Could not find item for tag: ${tag}`);
@@ -36,8 +34,8 @@ let sortArray = (array) => {
     a = `${a}`;
     b = `${b}`;
     // Sort by modid, prefer mods in the modPriority list. If not in the list, put it at the end.
-    let modA = modPriority.indexOf(a.split(":")[0]);
-    let modB = modPriority.indexOf(b.split(":")[0]);
+    let modA = modPriority.indexOf(a.split(':')[0]);
+    let modB = modPriority.indexOf(b.split(':')[0]);
     if (modA === -1) modA = modPriority.length;
     if (modB === -1) modB = modPriority.length;
     if (modA !== modB) return modA - modB;
@@ -48,29 +46,29 @@ let sortArray = (array) => {
   });
 };
 
-ServerEvents.tags("item", e => {
+ServerEvents.tags('item', (e) => {
   let tags = [];
 
   for (let [material, types] of Object.entries(materials)) {
     switch (material) {
-      case "metals":
-        metals.forEach(metal => {
-          types.forEach(type => {
+      case 'metals':
+        metals.forEach((metal) => {
+          types.forEach((type) => {
             tags.push(`c:${type}/${metal}`);
-            if (type === "raw_materials") tags.push(`c:storage_blocks/raw_${metal}`);
+            if (type === 'raw_materials') tags.push(`c:storage_blocks/raw_${metal}`);
           });
         });
         break;
-      case "gems":
-        gems.forEach(gem => {
-          types.forEach(type => {
+      case 'gems':
+        gems.forEach((gem) => {
+          types.forEach((type) => {
             tags.push(`c:${type}/${gem}`);
           });
         });
         break;
-      case "misc":
-        misc.forEach(misc => {
-          types.forEach(type => {
+      case 'misc':
+        misc.forEach((misc) => {
+          types.forEach((type) => {
             tags.push(`c:${type}/${misc}`);
           });
         });
@@ -81,10 +79,10 @@ ServerEvents.tags("item", e => {
     }
   }
 
-  tags.forEach(tag => {
+  tags.forEach((tag) => {
     let items = e.get(tag).getObjectIds();
     let sortedItems = [];
-    items.forEach(item => {
+    items.forEach((item) => {
       sortedItems.push(item);
     });
     sortedItems = sortArray(sortedItems);
@@ -95,45 +93,49 @@ ServerEvents.tags("item", e => {
   });
 });
 
-ServerEvents.recipes(e => {
-  let yeets = [
-    "mffs:steel_compound",
-  ];
+ServerEvents.recipes((e) => {
+  let yeets = ['mffs:steel_compound'];
 
-  yeets.forEach(id => {
+  yeets.forEach((id) => {
     e.remove({ output: id });
   });
+
+  let replaceFilters = ['minecraft:crafting_shaped', 'minecraft:crafting_shapeless', 'minecraft:smelting', 'minecraft:blasting'];
 
   let tryReplace = (replace) => {
     let replaceWith = getItemFromTag(replace);
     if (replaceWith) {
-      e.replaceOutput({ not: { mod: 'modern_industrialization' } }, replace, replaceWith);
-      e.replaceInput({ not: { mod: 'modern_industrialization' } }, replace, replace);
+      let filters = [];
+      replaceFilters.forEach((filter) => {
+        filters.push({ type: filter });
+      });
+      e.replaceOutput(filters, replace, replaceWith);
+      e.replaceInput(filters, replace, replace);
     } else if (debug) {
       console.error(`Could not find item for tag: ${replace}`);
-    };
+    }
   };
 
   for (let [material, types] of Object.entries(materials)) {
     switch (material) {
-      case "metals":
-        metals.forEach(metal => {
-          types.forEach(type => {
+      case 'metals':
+        metals.forEach((metal) => {
+          types.forEach((type) => {
             tryReplace(`#c:${type}/${metal}`);
-            if (type === "raw_materials") tryReplace(`#c:storage_blocks/raw_${metal}`);
+            if (type === 'raw_materials') tryReplace(`#c:storage_blocks/raw_${metal}`);
           });
         });
         break;
-      case "gems":
-        gems.forEach(gem => {
-          types.forEach(type => {
+      case 'gems':
+        gems.forEach((gem) => {
+          types.forEach((type) => {
             tryReplace(`#c:${type}/${gem}`);
           });
         });
         break;
-      case "misc":
-        misc.forEach(misc => {
-          types.forEach(type => {
+      case 'misc':
+        misc.forEach((misc) => {
+          types.forEach((type) => {
             tryReplace(`#c:${type}/${misc}`);
           });
         });
