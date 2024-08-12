@@ -61,5 +61,3 @@ launch:
   startCommand: 
     - "@libraries/net/neoforged/neoforge/{{@loaderversion@}}/{{@os@}}_args.txt"
     - "nogui"
-    - "-jar"
-    - "libraries/net/neoforged/neoforge/{{@loaderversion@}}/neoforge-{{@loaderversion@}}-server.jar"
