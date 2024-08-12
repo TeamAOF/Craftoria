@@ -13,7 +13,7 @@
 			image: "modern_industrialization:textures/gui/colorbar.png"
 			rotation: 0.0d
 			width: 80.0d
-			x: 30.25d
+			x: 29.5d
 			y: 0.0d
 		}
 		{
@@ -124,14 +124,14 @@
 			y: -7.75d
 		}
 		{
-			color: 11776931
+			color: 0
 			height: 10.0d
 			image: "ftbquests:textures/gui/title_modern.png"
 			order: 1
 			rotation: 0.0d
 			width: 10.0d
-			x: 3.5d
-			y: -6.5d
+			x: 48.0d
+			y: 5.0d
 		}
 		{
 			color: 0
@@ -139,8 +139,8 @@
 			image: "ftbquests:textures/gui/title_indust.png"
 			rotation: 0.0d
 			width: 10.0d
-			x: 49.3d
-			y: 6.7d
+			x: 47.5d
+			y: 6.5d
 		}
 		{
 			color: 0
@@ -148,8 +148,8 @@
 			image: "ftbquests:textures/gui/title_rializ.png"
 			rotation: 0.0d
 			width: 10.0d
-			x: 55.8d
-			y: 6.7d
+			x: 54.0d
+			y: 6.5d
 		}
 		{
 			color: 0
@@ -157,11 +157,11 @@
 			image: "ftbquests:textures/gui/title_ation.png"
 			rotation: 0.0d
 			width: 10.0d
-			x: 61.6d
-			y: 6.7d
+			x: 60.0d
+			y: 6.5d
 		}
 	]
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -1702,7 +1702,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["469641436BC858D3"]
 			id: "47A8E5DC11E846C5"
 			rewards: [{
 				id: "06A6A1333E794B0B"

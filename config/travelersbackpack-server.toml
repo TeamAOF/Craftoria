@@ -1,4 +1,3 @@
-
 #Server config settings
 [server]
 
@@ -12,7 +11,6 @@
 		allowOnlyEquippedBackpack = false
 		#Backpack immune to any damage source (lava, fire), can't be destroyed, never disappears as floating item
 		invulnerableBackpack = true
-		toolSlotsAcceptSwords = true
 		#Tool slots accept any item
 		toolSlotsAcceptEverything = false
 		#List of items that can be put in tool slots (Use registry names, for example: "minecraft:apple", "minecraft:flint")
@@ -28,9 +26,9 @@
 		#Places backpack at place where player died, replacing all blocks that are breakable and do not have inventory (backpackDeathPlace must be true in order to work)
 		backpackForceDeathPlace = false
 		enableSleepingBagSpawnPoint = false
-		#If true, backpack can only be worn by placing it in curios 'Back' slot
+		#If true, backpack can only be worn by placing it in accessories 'Back' slot
 		#WARNING - Remember to TAKE OFF BACKPACK BEFORE enabling or disabling this integration!! - if not you'll lose your backpack
-		curiosIntegration = false
+		accessoriesIntegration = false
 
 		#Leather Tier Backpack Settings
 		[server.backpackSettings.leatherTierBackpack]
@@ -95,10 +93,10 @@
 		#Crafting Upgrade Settings
 		[server.backpackSettings.craftingUpgrade]
 			enableUpgrade = true
-			#Newly crafted backpacks will have crafting upgrade included by default
-			defaultUpgrade = false
 			#Whether crafting grid should save items
 			savesItems = true
+			#Newly crafted backpacks will have crafting upgrade included by default
+			includeByDefault = false
 
 	[server.world]
 		#Enables chance to spawn Zombie, Skeleton, Wither Skeleton, Piglin or Enderman with random backpack equipped
@@ -107,13 +105,13 @@
 		possibleOverworldEntityTypes = ["minecraft:zombie", "minecraft:skeleton", "minecraft:enderman"]
 		#List of nether entity types that can spawn with equipped backpack. DO NOT ADD anything to this list, because the game will crash, remove entries if mob should not spawn with backpack
 		possibleNetherEntityTypes = ["minecraft:wither_skeleton", "minecraft:piglin"]
-		#Defines spawn chance of entity with backpack (1 in [selected value])
-		#Range: > 0
-		spawnChance = 500
 		#List of backpacks that can spawn on overworld mobs
 		overworldBackpacks = ["travelersbackpack:standard", "travelersbackpack:diamond", "travelersbackpack:gold", "travelersbackpack:emerald", "travelersbackpack:iron", "travelersbackpack:lapis", "travelersbackpack:redstone", "travelersbackpack:coal", "travelersbackpack:bookshelf", "travelersbackpack:sandstone", "travelersbackpack:snow", "travelersbackpack:sponge", "travelersbackpack:cake", "travelersbackpack:cactus", "travelersbackpack:hay", "travelersbackpack:melon", "travelersbackpack:pumpkin", "travelersbackpack:creeper", "travelersbackpack:enderman", "travelersbackpack:skeleton", "travelersbackpack:spider", "travelersbackpack:bee", "travelersbackpack:wolf", "travelersbackpack:fox", "travelersbackpack:ocelot", "travelersbackpack:horse", "travelersbackpack:cow", "travelersbackpack:pig", "travelersbackpack:sheep", "travelersbackpack:chicken", "travelersbackpack:squid"]
 		#List of backpacks that can spawn on nether mobs
 		netherBackpacks = ["travelersbackpack:quartz", "travelersbackpack:nether", "travelersbackpack:blaze", "travelersbackpack:ghast", "travelersbackpack:magma_cube", "travelersbackpack:wither"]
+		#Defines spawn chance of entity with a backpack
+		#Range: 0.0 ~ 1.0
+		chance = 0.005
 
 	[server.backpackAbilities]
 		enableBackpackAbilities = true
@@ -130,4 +128,3 @@
 		maxNumberOfBackpacks = 3
 		#Range: 0.1 ~ 5.0
 		slownessPerExcessedBackpack = 1.0
-

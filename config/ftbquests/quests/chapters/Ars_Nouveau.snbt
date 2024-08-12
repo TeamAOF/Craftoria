@@ -32,7 +32,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["692E56A188B8D3FC"]
 			id: "68721F148E2805FB"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -103,7 +102,7 @@
 			]
 			tasks: [{
 				id: "02D1703C79A7F3EF"
-				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(neoforge:logs/archwood)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:logs/archwood)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -10.5d
@@ -582,21 +581,6 @@
 			}]
 			tasks: [
 				{
-					id: "54E51D5E5BA5D1D6"
-					item: { count: 1, id: "ars_nouveau:glyph_projectile" }
-					type: "item"
-				}
-				{
-					id: "0ECF2BCD82499290"
-					item: { count: 1, id: "ars_nouveau:glyph_self" }
-					type: "item"
-				}
-				{
-					id: "38FED4F9A729E1B5"
-					item: { count: 1, id: "ars_nouveau:glyph_touch" }
-					type: "item"
-				}
-				{
 					id: "0A2377ABF1716224"
 					item: { count: 1, id: "ars_nouveau:glyph_underfoot" }
 					type: "item"
@@ -619,11 +603,6 @@
 				{
 					id: "74A49A281AF277FF"
 					item: { count: 1, id: "ars_nouveau:glyph_bounce" }
-					type: "item"
-				}
-				{
-					id: "34BB77DA0E307BA1"
-					item: { count: 1, id: "ars_nouveau:glyph_break" }
 					type: "item"
 				}
 				{
@@ -669,11 +648,6 @@
 				{
 					id: "5FB352A2B3D9C14E"
 					item: { count: 1, id: "ars_nouveau:glyph_freeze" }
-					type: "item"
-				}
-				{
-					id: "43DACB7B925F84D4"
-					item: { count: 1, id: "ars_nouveau:glyph_harm" }
 					type: "item"
 				}
 				{

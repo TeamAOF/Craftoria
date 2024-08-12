@@ -9,8 +9,8 @@
     "harvest_tool.show_unbreakable": false,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
-    "item_storage.normal_amount": 9,
     "item_storage": true,
+    "item_storage.normal_amount": 9,
     "harvest_tool": true,
     "armor_stand": true,
     "fluid_storage.detailed": false,
@@ -57,6 +57,14 @@
   "apothic_spawners": {
     "spawner": true
   },
+  "pneumaticcraft": {
+    "pneumatic": true,
+    "tube_module": true,
+    "entity": true,
+    "redstone": true,
+    "camo": true,
+    "semiblock": true
+  },
   "jade": {
     "coordinates.rel": false,
     "registry_name.special": false,
@@ -75,6 +83,9 @@
   "extendedae": {
     "jade_chamber": true,
     "jade_wireless": true
+  },
+  "apothic_enchanting": {
+    "ench": true
   },
   "functionalstorage": {
     "drawer": true
