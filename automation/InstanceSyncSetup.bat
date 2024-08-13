@@ -9,3 +9,4 @@ echo Done setting up hooks
 echo Running InstanceSync
 
 java -jar InstanceSync.jar
+pause
