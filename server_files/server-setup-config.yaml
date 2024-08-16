@@ -6,8 +6,8 @@ modpack:
   
 install:
   mcVersion:
-  loaderVersion: 21.1.2
-  modpackUrl: https://mediafilez.forgecdn.net/files/5611/431/Craftoria-0.7.0.zip
+  loaderVersion: 21.1.8
+  modpackUrl: https://mediafilez.forgecdn.net/files/5626/126/Craftoria-0.8.0.zip
   installerUrl: "https://maven.neoforged.net/releases/net/neoforged/neoforge/{{@loaderversion@}}/neoforge-{{@loaderversion@}}-installer.jar"
   
   ignoreFiles:
@@ -61,5 +61,3 @@ launch:
   startCommand: 
     - "@libraries/net/neoforged/neoforge/{{@loaderversion@}}/{{@os@}}_args.txt"
     - "nogui"
-    - "-jar"
-    - "libraries/net/neoforged/neoforge/{{@loaderversion@}}/neoforge-{{@loaderversion@}}-server.jar"

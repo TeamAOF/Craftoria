@@ -1,4 +1,3 @@
-
 #Client Config. This config only exists on the client
 [client]
 	#Play sounds for Jetpack/Gas Mask/Flamethrower/Radiation (all players).
@@ -113,8 +112,8 @@
 				pinned = false
 
 			[client.gui.window.upgrade]
-				x = 2147483647
-				y = 2147483647
+				x = 10
+				y = 15
 				pinned = false
 
 	#QIO Config
@@ -135,4 +134,3 @@
 		rejectsToInventory = false
 		#Determines whether the search bar is automatically focused when a QIO Dashboard is opened.
 		autoFocusSearchBar = true
-

@@ -1,3 +1,44 @@
+## Craftoria | v0.8.0
+
+_NeoForge Loader 21.1.8_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.8.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.8.0.md)_
+
+## DISCLAIMER: Empty your Traveler's Backpacks before updating!
+
+### Changes/Improvements ⭐
+
+* Added quests for Sophisticated Backpacks **(AK)**
+* Added Croptopia entries to the FFB Market **(nitrofenix)**
+* Allow lower tier JDT quests to compelete before higher ones **(SubordinalBlue)**
+
+### Bug Fixes 🪲
+
+* Fixed an issue where you'd crash when shifting with AE2 patterns.
+* Fixed an issue where placing BOP signs would crash you and lock the world.
+* Fixed a crash when hovering Easy Villagers entries.
+* Fixed crashes when placing Handcrafted blocks with containers.
+* Fixed durability tooltips showing twice.
+* Fixed broken reward for Seasons quest.
+
+### Added Mods ✅
+
+  * [Caelus API](https://www.curseforge.com/minecraft/mc-mods/caelus)
+  * [Iron's Spells 'n Spellbooks](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks)
+  * [Not Enough Glyphs](https://www.curseforge.com/minecraft/mc-mods/not-enough-glyphs)
+  * [Ocean's Delight](https://www.curseforge.com/minecraft/mc-mods/oceans-delight)
+  * [PingHUD](https://www.curseforge.com/minecraft/mc-mods/pinghud)
+  * [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks)
+  * [Sophisticated Core](https://www.curseforge.com/minecraft/mc-mods/sophisticated-core)
+  * [Sophisticated Storage](https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage)
+  * [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)
+
+### Removed Mods ❌
+
+  * [Durability Tooltip](https://www.curseforge.com/minecraft/mc-mods/durability-tooltip) (Overlapping Mod)
+  * [Ping in Tablist](https://www.curseforge.com/minecraft/mc-mods/ping-in-tablist) (Replaced by PingHUD)
+  * [Raided](https://www.curseforge.com/minecraft/mc-mods/raided)
+  * [Traveler's Backpack](https://www.curseforge.com/minecraft/mc-mods/travelers-backpack) (Replaced by Sophisticated Backpacks, empty before updating!)
+---
+
 ## Craftoria | v0.7.0
 
 _NeoForge Loader 21.1.2_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.7.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.7.0.md)_

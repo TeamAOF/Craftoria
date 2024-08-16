@@ -1826,26 +1826,6 @@
 			y: -7.0d
 		}
 		{
-			id: "03103A57191715D1"
-			rewards: [{
-				count: 16
-				id: "59A301421C67F58F"
-				item: {
-					count: 1
-					id: "minecraft:leather"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "1626F875A34F0AC9"
-				item: { count: 1, id: "travelersbackpack:standard" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: -14.5d
-			y: -4.0d
-		}
-		{
 			dependencies: ["51B59A987F916C7A"]
 			id: "5F1950FCB04F3756"
 			rewards: [{
@@ -1862,7 +1842,7 @@
 				item: { count: 1, id: "bankstorage:bank_2" }
 				type: "item"
 			}]
-			x: -17.0d
+			x: -17.5d
 			y: -2.5d
 		}
 		{
@@ -1881,7 +1861,7 @@
 				item: { count: 1, id: "bankstorage:bank_1" }
 				type: "item"
 			}]
-			x: -17.0d
+			x: -17.5d
 			y: -4.0d
 		}
 		{
@@ -1901,7 +1881,7 @@
 				item: { count: 1, id: "bankstorage:bank_3" }
 				type: "item"
 			}]
-			x: -17.0d
+			x: -17.5d
 			y: -1.0d
 		}
 		{
@@ -1921,7 +1901,7 @@
 				item: { count: 1, id: "bankstorage:bank_4" }
 				type: "item"
 			}]
-			x: -17.0d
+			x: -17.5d
 			y: 0.5d
 		}
 		{
@@ -1941,7 +1921,7 @@
 				item: { count: 1, id: "bankstorage:bank_5" }
 				type: "item"
 			}]
-			x: -17.0d
+			x: -17.5d
 			y: 2.0d
 		}
 		{
@@ -1961,7 +1941,7 @@
 				item: { count: 1, id: "bankstorage:bank_7" }
 				type: "item"
 			}]
-			x: -17.0d
+			x: -17.5d
 			y: 5.0d
 		}
 		{
@@ -1981,7 +1961,7 @@
 				item: { count: 1, id: "bankstorage:bank_6" }
 				type: "item"
 			}]
-			x: -17.0d
+			x: -17.5d
 			y: 3.5d
 		}
 		{
@@ -2018,7 +1998,7 @@
 					type: "item"
 				}
 			]
-			x: -18.0d
+			x: -18.5d
 			y: -4.0d
 		}
 		{
@@ -2028,7 +2008,7 @@
 				id: "5A17D67E5C26C2A1"
 				type: "checkmark"
 			}]
-			x: -19.0d
+			x: -19.5d
 			y: -6.0d
 		}
 		{
@@ -2418,102 +2398,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["03103A57191715D1"]
-			icon: {
-				id: "travelersbackpack:iron_tier_upgrade"
-			}
-			id: "03471D7D8B0068F0"
-			rewards: [{
-				count: 16
-				id: "7401B9F2EFDC2745"
-				item: {
-					count: 1
-					id: "minecraft:iron_ingot"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "011B5F3363AE623A"
-				item: { components: { "travelersbackpack:backpack_container": [ { item: { }, slot: 0 }, { item: { }, slot: 1 }, { item: { }, slot: 2 }, { item: { }, slot: 3 }, { item: { }, slot: 4 }, { item: { }, slot: 5 }, { item: { }, slot: 6 }, { item: { }, slot: 7 }, { item: { }, slot: 8 }, { item: { }, slot: 9 }, { item: { }, slot: 10 }, { item: { }, slot: 11 }, { item: { }, slot: 12 }, { item: { }, slot: 13 }, { item: { }, slot: 14 }, { item: { }, slot: 15 }, { item: { }, slot: 16 }, { item: { }, slot: 17 }, { item: { }, slot: 18 }, { item: { }, slot: 19 }, { item: { }, slot: 20 }, { item: { }, slot: 21 }, { item: { }, slot: 22 }, { item: { }, slot: 23 }, { item: { }, slot: 24 }, { item: { }, slot: 25 }, { item: { }, slot: 26 }, { item: { }, slot: 27 }, { item: { }, slot: 28 }, { item: { }, slot: 29 }, { item: { }, slot: 30 }, { item: { }, slot: 31 }, { item: { }, slot: 32 }, { item: { }, slot: 33 }, { item: { }, slot: 34 }, { item: { }, slot: 35 } ], "travelersbackpack:fluid_tanks": { capacity: 4000, leftFluidStack: { }, rightFluidStack: { } }, "travelersbackpack:tier": 1, "travelersbackpack:tools_container": [ { item: { }, slot: 0 }, { item: { }, slot: 1 }, { item: { }, slot: 2 } ] }, count: 1, id: "travelersbackpack:standard" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: -14.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["03471D7D8B0068F0"]
-			icon: {
-				id: "travelersbackpack:gold_tier_upgrade"
-			}
-			id: "28808424CA6FD60C"
-			rewards: [{
-				count: 16
-				id: "5899FF4B5935EACD"
-				item: {
-					count: 1
-					id: "minecraft:gold_ingot"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "3B86DF6EA8BF902F"
-				item: { components: { "travelersbackpack:backpack_container": [ { item: { }, slot: 0 }, { item: { }, slot: 1 }, { item: { }, slot: 2 }, { item: { }, slot: 3 }, { item: { }, slot: 4 }, { item: { }, slot: 5 }, { item: { }, slot: 6 }, { item: { }, slot: 7 }, { item: { }, slot: 8 }, { item: { }, slot: 9 }, { item: { }, slot: 10 }, { item: { }, slot: 11 }, { item: { }, slot: 12 }, { item: { }, slot: 13 }, { item: { }, slot: 14 }, { item: { }, slot: 15 }, { item: { }, slot: 16 }, { item: { }, slot: 17 }, { item: { }, slot: 18 }, { item: { }, slot: 19 }, { item: { }, slot: 20 }, { item: { }, slot: 21 }, { item: { }, slot: 22 }, { item: { }, slot: 23 }, { item: { }, slot: 24 }, { item: { }, slot: 25 }, { item: { }, slot: 26 }, { item: { }, slot: 27 }, { item: { }, slot: 28 }, { item: { }, slot: 29 }, { item: { }, slot: 30 }, { item: { }, slot: 31 }, { item: { }, slot: 32 }, { item: { }, slot: 33 }, { item: { }, slot: 34 }, { item: { }, slot: 35 }, { item: { }, slot: 36 }, { item: { }, slot: 37 }, { item: { }, slot: 38 }, { item: { }, slot: 39 }, { item: { }, slot: 40 }, { item: { }, slot: 41 }, { item: { }, slot: 42 }, { item: { }, slot: 43 }, { item: { }, slot: 44 } ], "travelersbackpack:fluid_tanks": { capacity: 5000, leftFluidStack: { }, rightFluidStack: { } }, "travelersbackpack:tier": 2, "travelersbackpack:tools_container": [ { item: { }, slot: 0 }, { item: { }, slot: 1 }, { item: { }, slot: 2 }, { item: { }, slot: 3 } ] }, count: 1, id: "travelersbackpack:standard" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: -14.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["28808424CA6FD60C"]
-			icon: {
-				id: "travelersbackpack:diamond_tier_upgrade"
-			}
-			id: "77D008B7B47BF2D7"
-			rewards: [{
-				count: 8
-				id: "3B57B0F972626D23"
-				item: {
-					count: 1
-					id: "minecraft:diamond"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "2F60559A22584F14"
-				item: { components: { "travelersbackpack:backpack_container": [ { item: { }, slot: 0 }, { item: { }, slot: 1 }, { item: { }, slot: 2 }, { item: { }, slot: 3 }, { item: { }, slot: 4 }, { item: { }, slot: 5 }, { item: { }, slot: 6 }, { item: { }, slot: 7 }, { item: { }, slot: 8 }, { item: { }, slot: 9 }, { item: { }, slot: 10 }, { item: { }, slot: 11 }, { item: { }, slot: 12 }, { item: { }, slot: 13 }, { item: { }, slot: 14 }, { item: { }, slot: 15 }, { item: { }, slot: 16 }, { item: { }, slot: 17 }, { item: { }, slot: 18 }, { item: { }, slot: 19 }, { item: { }, slot: 20 }, { item: { }, slot: 21 }, { item: { }, slot: 22 }, { item: { }, slot: 23 }, { item: { }, slot: 24 }, { item: { }, slot: 25 }, { item: { }, slot: 26 }, { item: { }, slot: 27 }, { item: { }, slot: 28 }, { item: { }, slot: 29 }, { item: { }, slot: 30 }, { item: { }, slot: 31 }, { item: { }, slot: 32 }, { item: { }, slot: 33 }, { item: { }, slot: 34 }, { item: { }, slot: 35 }, { item: { }, slot: 36 }, { item: { }, slot: 37 }, { item: { }, slot: 38 }, { item: { }, slot: 39 }, { item: { }, slot: 40 }, { item: { }, slot: 41 }, { item: { }, slot: 42 }, { item: { }, slot: 43 }, { item: { }, slot: 44 }, { item: { }, slot: 45 }, { item: { }, slot: 46 }, { item: { }, slot: 47 }, { item: { }, slot: 48 }, { item: { }, slot: 49 }, { item: { }, slot: 50 }, { item: { }, slot: 51 }, { item: { }, slot: 52 }, { item: { }, slot: 53 } ], "travelersbackpack:fluid_tanks": { capacity: 6000, leftFluidStack: { }, rightFluidStack: { } }, "travelersbackpack:tier": 3, "travelersbackpack:tools_container": [ { item: { }, slot: 0 }, { item: { }, slot: 1 }, { item: { }, slot: 2 }, { item: { }, slot: 3 }, { item: { }, slot: 4 } ] }, count: 1, id: "travelersbackpack:standard" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: -14.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["77D008B7B47BF2D7"]
-			icon: {
-				id: "travelersbackpack:netherite_tier_upgrade"
-			}
-			id: "29E8F63B19A2F129"
-			rewards: [{
-				count: 2
-				id: "58434E94ED37EF07"
-				item: {
-					count: 1
-					id: "minecraft:netherite_ingot"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "4B86FD610BE0D505"
-				item: { components: { "travelersbackpack:backpack_container": [ { item: { }, slot: 0 }, { item: { }, slot: 1 }, { item: { }, slot: 2 }, { item: { }, slot: 3 }, { item: { }, slot: 4 }, { item: { }, slot: 5 }, { item: { }, slot: 6 }, { item: { }, slot: 7 }, { item: { }, slot: 8 }, { item: { }, slot: 9 }, { item: { }, slot: 10 }, { item: { }, slot: 11 }, { item: { }, slot: 12 }, { item: { }, slot: 13 }, { item: { }, slot: 14 }, { item: { }, slot: 15 }, { item: { }, slot: 16 }, { item: { }, slot: 17 }, { item: { }, slot: 18 }, { item: { }, slot: 19 }, { item: { }, slot: 20 }, { item: { }, slot: 21 }, { item: { }, slot: 22 }, { item: { }, slot: 23 }, { item: { }, slot: 24 }, { item: { }, slot: 25 }, { item: { }, slot: 26 }, { item: { }, slot: 27 }, { item: { }, slot: 28 }, { item: { }, slot: 29 }, { item: { }, slot: 30 }, { item: { }, slot: 31 }, { item: { }, slot: 32 }, { item: { }, slot: 33 }, { item: { }, slot: 34 }, { item: { }, slot: 35 }, { item: { }, slot: 36 }, { item: { }, slot: 37 }, { item: { }, slot: 38 }, { item: { }, slot: 39 }, { item: { }, slot: 40 }, { item: { }, slot: 41 }, { item: { }, slot: 42 }, { item: { }, slot: 43 }, { item: { }, slot: 44 }, { item: { }, slot: 45 }, { item: { }, slot: 46 }, { item: { }, slot: 47 }, { item: { }, slot: 48 }, { item: { }, slot: 49 }, { item: { }, slot: 50 }, { item: { }, slot: 51 }, { item: { }, slot: 52 }, { item: { }, slot: 53 }, { item: { }, slot: 54 }, { item: { }, slot: 55 }, { item: { }, slot: 56 }, { item: { }, slot: 57 }, { item: { }, slot: 58 }, { item: { }, slot: 59 }, { item: { }, slot: 60 }, { item: { }, slot: 61 }, { item: { }, slot: 62 } ], "travelersbackpack:fluid_tanks": { capacity: 7000, leftFluidStack: { }, rightFluidStack: { } }, "travelersbackpack:tier": 4, "travelersbackpack:tools_container": [ { item: { }, slot: 0 }, { item: { }, slot: 1 }, { item: { }, slot: 2 }, { item: { }, slot: 3 }, { item: { }, slot: 4 }, { item: { }, slot: 5 } ] }, count: 1, id: "travelersbackpack:standard" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: -14.5d
-			y: 2.0d
-		}
-		{
 			id: "0F0A89D4CEFB2275"
 			rewards: [{
 				count: 3
@@ -2529,7 +2413,7 @@
 				item: { count: 1, id: "tankstorage:tank_1" }
 				type: "item"
 			}]
-			x: -21.0d
+			x: -21.5d
 			y: -4.0d
 		}
 		{
@@ -2549,7 +2433,7 @@
 				item: { count: 1, id: "tankstorage:tank_2" }
 				type: "item"
 			}]
-			x: -21.0d
+			x: -21.5d
 			y: -2.5d
 		}
 		{
@@ -2569,7 +2453,7 @@
 				item: { count: 1, id: "tankstorage:tank_3" }
 				type: "item"
 			}]
-			x: -21.0d
+			x: -21.5d
 			y: -1.0d
 		}
 		{
@@ -2589,7 +2473,7 @@
 				item: { count: 1, id: "tankstorage:tank_4" }
 				type: "item"
 			}]
-			x: -21.0d
+			x: -21.5d
 			y: 0.5d
 		}
 		{
@@ -2609,7 +2493,7 @@
 				item: { count: 1, id: "tankstorage:tank_5" }
 				type: "item"
 			}]
-			x: -21.0d
+			x: -21.5d
 			y: 2.0d
 		}
 		{
@@ -2629,7 +2513,7 @@
 				item: { count: 1, id: "tankstorage:tank_6" }
 				type: "item"
 			}]
-			x: -21.0d
+			x: -21.5d
 			y: 3.5d
 		}
 		{
@@ -2649,7 +2533,7 @@
 				item: { count: 1, id: "tankstorage:tank_7" }
 				type: "item"
 			}]
-			x: -21.0d
+			x: -21.5d
 			y: 5.0d
 		}
 		{
@@ -2686,8 +2570,109 @@
 					type: "item"
 				}
 			]
-			x: -20.0d
+			x: -20.5d
 			y: -4.0d
+		}
+		{
+			id: "248200AA7C929D48"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6AE3F0D036B50356"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6351B1F776FBFB7E"
+				item: { count: 1, id: "sophisticatedbackpacks:copper_backpack" }
+				type: "item"
+			}]
+			x: -14.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["248200AA7C929D48"]
+			id: "0B60D5D6A5AF8CFF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3B9B4B7CED6492CA"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "50D20DF6FD036650"
+				item: { count: 1, id: "sophisticatedbackpacks:iron_backpack" }
+				type: "item"
+			}]
+			x: -14.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0B60D5D6A5AF8CFF"]
+			id: "3936E5E6DA9964C8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E9950D9CFBA6F3D"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "483374A104168DBC"
+				item: { count: 1, id: "sophisticatedbackpacks:gold_backpack" }
+				type: "item"
+			}]
+			x: -14.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3936E5E6DA9964C8"]
+			id: "4238FB58E1103106"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4379F5255617AB2A"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "034AC71B33F9368F"
+				item: { count: 1, id: "sophisticatedbackpacks:diamond_backpack" }
+				type: "item"
+			}]
+			x: -14.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4238FB58E1103106"]
+			id: "4D713A3F7FCFFA61"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "273280C98A63CD30"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0DA87FD2854785FC"
+				item: { count: 1, id: "sophisticatedbackpacks:netherite_backpack" }
+				type: "item"
+			}]
+			x: -14.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["248200AA7C929D48"]
+			id: "66683CAE8F6FB81E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "541F6D14547409AC"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3E06589ED99A16F7"
+				item: { count: 1, id: "sophisticatedbackpacks:upgrade_base" }
+				type: "item"
+			}]
+			x: -15.5d
+			y: -2.5d
 		}
 	]
 }
