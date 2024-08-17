@@ -35,3 +35,42 @@ ServerEvents.recipes((e) => {
     }
   });
 });
+
+ItemEvents.modifyTooltips((e) => {
+  for (let i = 1; i <= 9; i++) {
+    let totalBlocks = Math.pow(9, i);
+    let shortTotalBlocks = abbrNum(totalBlocks, 1);
+    let longTotalBlocks = addDecimals(totalBlocks);
+    console.log(shortTotalBlocks);
+    Ingredient.of(`#craftoria:${i}x_compressed`).itemIds.forEach((item) => {
+      item = item
+        .split(':')[1]
+        .replace('_compressed', '')
+        .replace(/([0-9])x_/, '');
+      e.add(`craftoria:${i}x_compressed_${item}`, { shift: false }, Text.gold(`Total Blocks: ${shortTotalBlocks}`));
+      e.add(`craftoria:${i}x_compressed_${item}`, { shift: true }, Text.gold(`Total Blocks: ${longTotalBlocks}`));
+    });
+  }
+});
+
+let abbrNum = (num, decPlaces) => {
+  decPlaces = Math.pow(10, decPlaces);
+  let abbrev = ['K', 'M', 'B', 'T'];
+  for (let i = abbrev.length - 1; i >= 0; i--) {
+    let size = Math.pow(10, (i + 1) * 3);
+    if (size <= num) {
+      num = Math.round((num * decPlaces) / size) / decPlaces;
+      if (num === 1000 && i < abbrev.length - 1) {
+        num = 1;
+        i++;
+      }
+      num += abbrev[i];
+      break;
+    }
+  }
+  return num;
+};
+
+let addDecimals = (num) => {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+};
