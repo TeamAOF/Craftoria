@@ -1,66 +1,52 @@
-
-logs/
-
-saves/
-
-screenshots/
-
-XaeroWaypoints/
-
+# Project Infrastructure
+# ---
+Server Test/
+knownkeys.txt
+automation/secrets.ps1
 .curseclient
 
-command_history.txt
-
-knownkeys.txt
-
-options.txt
-
-realms_persistence.json
-
-usercache.json
-
-usernamecache.json
-
-emi.json
-
+# MC Stuff
+# ---
 /mods/
-
+/debug/
+logs/
+local/
+saves/
 downloads/
-
-crash-reports/
-
-automation/secrets.ps1
-
-Server Test/
-
-*.zip
-
-ModListCreator-4.1.0-fatjar.jar
-
-servers.dat
-
-profileImage/
-
 .mixin.out/
-
+screenshots/
+profileImage/
+crash-reports/
 fancymenu_data/
 
-local/
+servers.dat
+servers.dat_old
+options.txt
+command_history.txt
 
+
+# Specific Mod Junk
+# ---
+XaeroWaypoints/
+XaeroWorldMap/
+/journeymap/
+/ESM/
+realms_persistence.json
+usercache.json
+usernamecache.json
+emi.json
+patchouli_data.json
 TrashSlotSaveState.json
 
-XaeroWorldMap/
 
+# System Files / Misc.
+# ---
+*.bak
+*.zip
 .DS_Store
+Thumbs.db
 
-/journeymap/
 
-/ESM/
-
-/debug/
-
-patchouli_data.json
-
+# Misc.
+# ---
 ModListCreator-5.0.0-fatjar.jar
-
-servers.dat_old

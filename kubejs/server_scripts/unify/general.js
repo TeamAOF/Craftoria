@@ -6,26 +6,19 @@
  */
 
 let getItemFromTag = (tag) => {
-  try {
-    let items = Ingredient.of(tag).itemIds;
-    if (items.length > 0) {
-      items = sortArray(items.toArray());
-      return items[0];
-    } else return false;
-  } catch (error) {
-    if (debug) console.error(`Could not find item for tag: ${tag}`);
-  }
+  let items = Ingredient.of(tag).itemIds;
+  if (items.length > 0 && items[0] !== 'minecraft:barrier') {
+    items = sortArray(items.toArray());
+    return items[0];
+  } else return false;
 };
 
 let checkTagSize = (tag) => {
-  try {
-    let size = Ingredient.of(tag).itemIds.length;
-    if (debug) console.log(`Found ${size} items for tag: ${tag}`);
-    return size;
-  } catch (error) {
-    if (debug) console.error(`Could not find item for tag: ${tag}`);
-    return 0;
-  }
+  let itemIds = Ingredient.of(tag).itemIds;
+  let size = itemIds.length;
+  if (debug) console.log(`Found ${size} items for tag: ${tag}`);
+  if (itemIds[0] !== 'minecraft:barrier') return size;
+  else return 0;
 };
 
 // Sort the array by modPriority.

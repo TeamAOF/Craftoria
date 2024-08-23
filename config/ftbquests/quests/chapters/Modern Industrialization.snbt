@@ -275,8 +275,16 @@
 			rewards: [{
 				id: "30A94989B566DF82"
 				item: {
+					components: {
+						"modern_industrialization:fluid_storage": {
+							amount: 4000L
+							resource: {
+								id: "minecraft:water"
+							}
+						}
+					}
 					count: 1
-					id: "cookingforblockheads:yellow_sink"
+					id: "modern_industrialization:bronze_tank"
 				}
 				type: "item"
 			}]
