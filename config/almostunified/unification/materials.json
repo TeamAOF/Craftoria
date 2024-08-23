@@ -1,6 +1,25 @@
 {
-  "mod_priorities": ["minecraft", "kubejs", "modern_industrialization", "mekanism", "moremekanismprocessing", "occultism", "mffs"],
-  "stone_variants": ["stone", "andesite", "deepslate", "diorite", "granite", "nether"],
+  "mod_priorities": [
+    "minecraft",
+    "kubejs",
+    "modern_industrialization",
+    "mekanism",
+    "moremekanismprocessing",
+    "occultism",
+    "mffs",
+    "farmersdelight",
+    "croptopia",
+    "sushigocrafting"
+  ],
+  "priority_overrides": {},
+  "stone_variants": [
+    "stone",
+    "andesite",
+    "deepslate",
+    "diorite",
+    "granite",
+    "nether"
+  ],
   "tags": [
     "c:dusts/{material}",
     "c:gears/{material}",
@@ -14,14 +33,17 @@
     "c:storage_blocks/raw_{material}",
     "c:storage_blocks/{material}",
     "c:wires/{material}",
-    "c:tiny_dusts/{material}"
+    "c:tiny_dusts/{material}",
+    "c:crops/{material}",
+    "c:seeds/{material}"
   ],
-  "priority_overrides": {},
   "ignored_tags": [],
-  "ignored_items": [],
-  "ignored_recipe_types": ["cucumber:shaped_tag"],
-  "ignored_recipes": [],
-  "ignored_loot_tables": [],
-  "enable_loot_unification": true,
-  "recipe_viewer_hiding": true
+  "ignored_items": ["farmersdelight:cabbage"],
+  "ignored_recipe_types": [
+    "cucumber:shaped_tag"
+  ],
+  "ignored_recipe_ids": [],
+  "recipe_viewer_hiding": true,
+  "loot_unification": true,
+  "ignored_loot_tables": []
 }

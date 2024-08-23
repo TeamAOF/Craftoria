@@ -9,6 +9,11 @@ ServerEvents.tags("item", e => {
   e.add("c:storage_blocks/amethyst", "minecraft:amethyst_block");
   e.add("c:storage_blocks/fluix", "ae2:fluix_block");
   e.add("c:storage_blocks/charged_redstone", "appflux:charged_redstone_block");
+
+  // Crops & Seeds
+  e.add("c:seeds/cabbage", "farmersdelight:cabbage_seeds");
+  e.add("c:seeds/tomato", "farmersdelight:tomato_seeds");
+  e.add("c:seeds/rice", "sushigocrafting:rice_seeds");
 });
 
 ServerEvents.tags('block', (e) => {
