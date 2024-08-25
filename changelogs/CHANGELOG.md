@@ -1,3 +1,18 @@
+## Craftoria | v0.9.1
+
+_NeoForge Loader 21.1.23_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.9.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.9.1.md)_
+
+### Bug Fixes 🪲
+
+* Fixed weird looking witch entity model.
+* Fixed crashes with mega cells chem cells.
+* Fixed not being able to respawn.
+
+### Removed Mods ❌
+
+* [Ars Additions](https://www.curseforge.com/minecraft/mc-mods/ars-additions)
+---
+
 ## Craftoria | v0.9.0
 
 _NeoForge Loader 21.1.23_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.9.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.9.0.md)_
@@ -58,7 +73,6 @@ _NeoForge Loader 21.1.23_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
   * [Catalogue](https://www.curseforge.com/minecraft/mc-mods/catalogue) 
   * [GraveStone Mod](https://www.curseforge.com/minecraft/mc-mods/gravestone-mod)
-
 ---
 
 ## Craftoria | v0.8.0
