@@ -26,11 +26,11 @@ $MODPACK_NAME = "Craftoria"
 $CLIENT_NAME = "Craftoria"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.8.0"
+$MODPACK_VERSION = "0.9.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.7.0"
+$LAST_MODPACK_VERSION = "0.8.0"
 
 # Which modloader the modpack uses
 # Can be "forge" or "fabric"
@@ -47,7 +47,7 @@ $CLIENT_CHANGELOG_TYPE = "markdown"
 
 # Changelog
 # Must be a single string.
-$CLIENT_CHANGELOG = "[![](https://i.imgur.com/ZbBbsDo.png)](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/CHANGELOG.md)"
+$CLIENT_CHANGELOG = "[![](https://i.imgur.com/Wkjf3LR.png)](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/CHANGELOG.md)"
 
 # =====================================================================//
 #  CURSEFORGE PROJECT SETTINGS
