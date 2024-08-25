@@ -180,8 +180,22 @@
 	homing = true
 	#epicarrow
 	epicarrow = true
+	#timeprotection
+	timeprotection = true
 
 #Goo settings
 [goo]
 	#Can goo randomly die, needing to be revived by right clicking with an item?
 	goo_can_die = true
+
+#Time Wand
+[time_wand]
+	#The maximum amount of Forge Energy the Time Wand can hold in its buffer
+	#Range: > 1
+	time_wand_rf_capacity = 100000
+	#The Forge Energy cost to use the Time wand. This value is multiplied by the acceleration amount. For example, when you go from 128 to 256, it will charge 256 x <this value> in FE cost.
+	#Range: > 0
+	time_wand_rf_cost = 100
+	#The Time Fluid cost to use the time wand.  This value is multiplied by the acceleration amount. For example, when you go from 128 to 256, it will charge 256 x <this value> in Time Fluid.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	time_wand_fluid_cost = 0.5

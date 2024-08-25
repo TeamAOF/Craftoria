@@ -2,7 +2,7 @@
   "ignored_recipe_types": [
     "cucumber:shaped_tag"
   ],
-  "ignored_recipes": [],
+  "ignored_recipe_ids": [],
   "default_duplicate_rules": {
     "ignored_fields": [
       "neoforge:conditions",
@@ -15,7 +15,7 @@
       "energy": "HigherRule",
       "experience": "HigherRule"
     },
-    "should_sanitize": false
+    "handle_implicit_counts": false
   },
   "override_duplicate_rules": {
     "minecraft:crafting_shaped": {
@@ -28,8 +28,8 @@
         "group"
       ],
       "rules": {},
-      "should_sanitize": false
+      "handle_implicit_counts": false
     }
   },
-  "strict_mode": false
+  "compare_all": false
 }

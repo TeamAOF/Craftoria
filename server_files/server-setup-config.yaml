@@ -6,8 +6,8 @@ modpack:
   
 install:
   mcVersion:
-  loaderVersion: 21.1.8
-  modpackUrl: https://mediafilez.forgecdn.net/files/5626/126/Craftoria-0.8.0.zip
+  loaderVersion: 21.1.23
+  modpackUrl: https://mediafilez.forgecdn.net/files/5661/904/Craftoria-0.9.0.zip
   installerUrl: "https://maven.neoforged.net/releases/net/neoforged/neoforge/{{@loaderversion@}}/neoforge-{{@loaderversion@}}-installer.jar"
   
   ignoreFiles:
@@ -26,6 +26,8 @@ install:
       - 363363 # Extreme Sound Muffler
       - 908741 # Embeddium
       - 986380 # Lighty
+      - 844662 # Entity Model Features
+      - 568563 # Entity Texture Features
       
   baseInstallPath: 
   

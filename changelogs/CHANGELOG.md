@@ -1,3 +1,66 @@
+## Craftoria | v0.9.0
+
+_NeoForge Loader 21.1.23_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.9.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.9.0.md)_
+
+## DISCLAIMER: Gather your graves before updating!
+
+### Changes/Improvements ⭐
+
+* New menu art & buttons by our wonderful artist, Facu!
+* New animations has been added to all mobs/animals.
+* Added player animations.
+* New mob textures/models, this includes all bosses.
+* New & improved item/block textures.
+* Unified crops between Croptopia, Farmers Delight & Sushi Go Crafting.
+* Removed tag viewing for unified recipes, mostly for tech mods.
+* Added tooltips for compressed blocks, now shows the quantity.
+* Changed quest reward for Bronze Boiler.
+* Change "Advancement Made!" text color to be more visible.
+* Everlasting Beef is no longer useable.
+* Removed Everlasting Beef drop from cows.
+* Disabled flying structures from Dungeons Arise.
+* End Cities has gotten a make-over.
+* Ars Nouveau has gotten a couple texture touch-ups.
+* Improved Aquaculture textures.
+* Unified bacon between Croptopia & Farmers Delight.
+* Added mineable tags to all glass variants from Chipped.
+* Expanded Storage chest quests now asks for the upgrades instead of the chest itself.
+* Increased the duration of sub seasons from 8 to 42 days, meaning 42 IRL hours per season.
+* Shaders are now included by default (Complementary Shaders)
+
+### Bug Fixes 🪲
+
+* Fixed an issue where you'd crash when viewing apoth spawner tooltips.
+
+### Added Mods ✅
+
+  * [Entity Model Features](https://www.curseforge.com/minecraft/mc-mods/entity-model-features)
+  * [Entity Texture Features](https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric)
+  * [AdvancedAE](https://www.curseforge.com/minecraft/mc-mods/advancedae)
+  * [AE2: Crafting Tree](https://www.curseforge.com/minecraft/mc-mods/ae2-crafting-tree)
+  * [Almost Unified](https://www.curseforge.com/minecraft/mc-mods/almost-unified)
+  * [Ars Additions](https://www.curseforge.com/minecraft/mc-mods/ars-additions)
+  * [BisectHosting Server Integration Menu](https://www.curseforge.com/minecraft/mc-mods/bisecthosting-server-integration-menu-neoforge)
+  * [Entangled](https://www.curseforge.com/minecraft/mc-mods/entangled)
+  * [Entity Culling](https://www.curseforge.com/minecraft/mc-mods/entityculling)
+  * [Euphoria Patches](https://www.curseforge.com/minecraft/mc-mods/euphoria-patches)
+  * [Farmers Structures](https://www.curseforge.com/minecraft/mc-mods/farmers-structures)
+  * [Industrialization Overdrive](https://www.curseforge.com/minecraft/mc-mods/industrialization-overdrive)
+  * [Nolijium](https://www.curseforge.com/minecraft/mc-mods/nolijium)
+  * [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations)
+  * [Sushi Go Crafting](https://www.curseforge.com/minecraft/mc-mods/sushigocrafting)
+  * [Sussy Sniffers](https://www.curseforge.com/minecraft/mc-mods/sussy-sniffers)
+  * [Tesseract](https://www.curseforge.com/minecraft/mc-mods/tesseract)
+  * [Trash Cans](https://www.curseforge.com/minecraft/mc-mods/trash-cans)
+  * [You're in Grave Danger](https://www.curseforge.com/minecraft/mc-mods/youre-in-grave-danger)
+
+### Removed Mods ❌
+
+  * [Catalogue](https://www.curseforge.com/minecraft/mc-mods/catalogue) 
+  * [GraveStone Mod](https://www.curseforge.com/minecraft/mc-mods/gravestone-mod)
+
+---
+
 ## Craftoria | v0.8.0
 
 _NeoForge Loader 21.1.8_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.8.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.8.0.md)_

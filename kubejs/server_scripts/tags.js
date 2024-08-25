@@ -7,9 +7,13 @@ ServerEvents.tags('item', (e) => {
   e.add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet']);
 
   // Crops & Seeds
-  e.add('c:seeds/cabbage', 'farmersdelight:cabbage_seeds');
-  e.add('c:seeds/tomato', 'farmersdelight:tomato_seeds');
-  e.add('c:seeds/rice', 'sushigocrafting:rice_seeds');
+  e.add("c:seeds/cabbage", "farmersdelight:cabbage_seeds");
+  e.add("c:seeds/tomato", "farmersdelight:tomato_seeds");
+  e.add("c:seeds/rice", "sushigocrafting:rice_seeds");
+
+  // Foods
+  e.add("c:foods/raw_bacon", "croptopia:bacon");
+  e.add("c:foods/cooked_bacon", "croptopia:cooked_bacon");
 });
 
 ServerEvents.tags('block', (e) => {

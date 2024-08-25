@@ -5,7 +5,7 @@ ServerEvents.recipes((event) => {
     "appflux:inscriber/crush_emerald",
     "modern_industrialization:electric_age/machine/assembler/replicator",
     "mffs:steel_compound",
-    "mffs:steel_ingot"
+    "mffs:steel_ingot",
   ];
 
   const output = [

@@ -1,4 +1,3 @@
-
 [flux_cell]
 	#FE can be stored per byte.
 	#Range: > 1
@@ -15,3 +14,6 @@
 	#Allow ME Import Bus to import energy like items/fluids.
 	enable = false
 
+[third_party_support]
+	#Enable MI-EU support.
+	enable_mi = true

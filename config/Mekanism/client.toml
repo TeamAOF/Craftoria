@@ -119,7 +119,7 @@
 	#QIO Config
 	[client.qio]
 		#Sorting strategy when viewing items in a QIO Item Viewer.
-		#Allowed Values: NAME, SIZE, MOD
+		#Allowed Values: NAME, SIZE, MOD, REGISTRY_NAME
 		itemViewerSortType = "NAME"
 		#Sorting direction when viewing items in a QIO Item Viewer.
 		#Allowed Values: ASCENDING, DESCENDING

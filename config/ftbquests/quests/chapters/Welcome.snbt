@@ -4,7 +4,7 @@
 	filename: "Welcome"
 	group: ""
 	icon: {
-		id: "mekanismtools:bronze_pickaxe"
+		id: "minecraft:wooden_pickaxe"
 	}
 	id: "3188AC6C440F7520"
 	images: [
@@ -105,10 +105,10 @@
 									points: 0
 									stats: {
 										cooldown: {
-											initialValue: 110.97061d
+											initialValue: 72.60693d
 										}
 										distance: {
-											initialValue: 661.54087d
+											initialValue: 603.1461d
 										}
 									}
 									ticking: 0b
@@ -118,6 +118,7 @@
 						leveling: {
 							experience: 0
 							level: 0
+							luck: 0
 							points: 0
 						}
 					}
