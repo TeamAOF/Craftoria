@@ -1,0 +1,42 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "cloak",
+			"id": "cloak",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"scale": 1,
+			"boxes": [
+				{
+					"coordinates": [-5, 8, -1, 10, 16, 1],
+					"uvNorth": [1, 2, 11, 34],
+					"uvEast": [0, 2, 1, 34],
+					"uvSouth": [12, 2, 22, 34],
+					"uvWest": [11, 2, 12, 34],
+					"uvUp": [11, 2, 1, 0],
+					"uvDown": [21, 0, 11, 2]
+				}
+			],
+			"animations": [
+				{
+					"var.BodyHeightVelocity": "(var.LastBodyHeight - var.body_ty) / var.frame_time",
+					"var.cloak_spring_x": "var.cloak_spring_x + ((0 - var.cloak_spring_x / 0.25) - var.cloak_x) / (128 * if(is_in_water, 0.25, 1)) * var.frame_time",
+					"var.cloak_spring_z": "var.cloak_spring_z + ((0 - var.cloak_spring_z / 0.25) - var.cloak_z) / (128 * if(is_in_water, 0.25, 1)) * var.frame_time",
+					"var.cloak_x": "var.cloak_x + var.WaterPoseIntensity * 0.75 * var.frame_time + var.BodyHeightVelocity * 0.1 + move_forward * limb_speed / 7.5 * var.frame_time * 2 - var.HeightVelocity * var.frame_time * 2 + var.cloak_spring_x * var.frame_time",
+					"var.cloak_z": "var.cloak_z - var.body_rz * 0.5 * var.frame_time + move_strafing * limb_speed / 7.5 * var.frame_time + var.cloak_spring_z * var.frame_time",
+					"var.LastBodyHeight": "var.body_ty"
+				},
+				{
+					"cloak.rx": "-var.body_rx - if(is_sneaking, 0.5, 0) - abs(var.cloak_spring_x)",
+					"cloak.rz": "var.cloak_z * 0.1",
+					"cloak.ry": "var.body_ry",
+					"cloak.tx": "-var.body_tx",
+					"cloak.ty": "var.body_ty + if(is_sneaking, 3, 0)",
+					"cloak.tz": "-var.body_tz"
+				}
+			]
+		}
+	]
+}

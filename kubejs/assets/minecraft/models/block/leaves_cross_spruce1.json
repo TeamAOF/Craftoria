@@ -1,0 +1,43 @@
+{
+	"parent": "block/block",
+	"textures": {
+		"particle": "#all"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Element",
+			"from": [ 0, 0, 0 ],
+			"to": [ 16, 16, 16 ],
+			"faces": {
+				"down": { "uv": [ 16, 16, 0, 0 ], "texture": "#bottom", "cullface": "down", "tintindex": 0 },
+				"up": { "uv": [ 0, 0, 16, 16 ], "texture": "#top", "cullface": "up", "tintindex": 0 },
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "cullface": "north", "tintindex": 0 },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "cullface": "south", "tintindex": 0 },
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "cullface": "west", "tintindex": 0 },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "cullface": "east", "tintindex": 0 }
+			}
+		},
+		{
+			"__comment": "Element",
+			"from": [ 13.375, -8, -5.625 ],
+			"to": [ 13.376, 24, 26.375 ],
+			"rotation": { "origin": [ 5.5, -9, 21.5 ], "axis": "y", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#bushy", "tintindex": 0 },
+				"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#bushy", "tintindex": 0 }
+			}
+		},
+		{
+			"__comment": "Element",
+			"from": [ -7.625, -8, 3.375 ],
+			"to": [ 24.375, 24, 3.376 ],
+			"rotation": { "origin": [ 19.5, -9, 7.5 ], "axis": "y", "angle": 22.5 },
+			"shade": false,
+			"faces": {
+				"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#bushy", "tintindex": 0 },
+				"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#bushy", "tintindex": 0 }
+			}
+		}
+	]
+}

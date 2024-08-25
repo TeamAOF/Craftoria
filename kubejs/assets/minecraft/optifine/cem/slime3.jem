@@ -1,0 +1,211 @@
+{
+	"credit": "Created by FreshLX for Fresh_Animations",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "body2",
+					"invertAxis": "xy",
+					"translate": [0, 4, 0],
+					"submodels": [
+						{
+							"id": "mouth2",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0]
+						},
+						{
+							"id": "right_eye2",
+							"invertAxis": "xy",
+							"translate": [0, 0.5, 0]
+						},
+						{
+							"id": "left_eye2",
+							"invertAxis": "xy",
+							"translate": [0, 0.5, 0]
+						},
+						{
+							"id": "face",
+							"invertAxis": "xy",
+							"translate": [0, 2, -3],
+							"submodels": [
+								{
+									"id": "eyes",
+									"invertAxis": "xy",
+									"translate": [0, -1.4, 0],
+									"submodels": [
+										{
+											"id": "l",
+											"invertAxis": "xy",
+											"translate": [-0.75, -0.1, 0]
+										},
+										{
+											"id": "r",
+											"invertAxis": "xy",
+											"translate": [0.75, -0.1, 0]
+										}
+									]
+								},
+								{
+									"id": "mouth3",
+									"invertAxis": "xy",
+									"translate": [0, -3, 0]
+								}
+							]
+						},
+						{
+							"id": "body3",
+							"invertAxis": "xy",
+							"translate": [0, 20, 0],
+							"submodels": [
+								{
+									"id": "heads",
+									"invertAxis": "xy",
+									"translate": [0, 0, 0],
+									"submodels": [
+										{
+											"id": "bone3",
+											"invertAxis": "xy",
+											"translate": [4, -20, 3],
+											"rotate": [0, -45, 45],
+											"boxes": [
+												{"coordinates": [-3, -3, -3, 3, 3, 3], "textureOffset": [24, 28], "sizeAdd": -0.5}
+											]
+										},
+										{
+											"id": "bone4",
+											"invertAxis": "xy",
+											"translate": [0, -19, 1],
+											"rotate": [0, 0, 45],
+											"boxes": [
+												{"coordinates": [-3, -3, -3, 4, 4, 4], "textureOffset": [24, 20], "sizeAdd": -0.5}
+											]
+										},
+										{
+											"id": "bone2",
+											"invertAxis": "xy",
+											"translate": [6, -15, 3],
+											"rotate": [53.98797, -30.58392, 86.00628],
+											"boxes": [
+												{"coordinates": [-2.29289, -0.17157, -2.29289, 3, 3, 3], "textureOffset": [24, 28], "sizeAdd": -0.5}
+											]
+										},
+										{
+											"id": "bone5",
+											"invertAxis": "xy",
+											"translate": [-5, -17, 3],
+											"rotate": [-13.98021, 10.59787, 75.07753],
+											"boxes": [
+												{"coordinates": [-0.91576, -1.67791, -1.35538, 3, 3, 3], "textureOffset": [24, 28], "sizeAdd": -0.5}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "Created_by_FreshLX_for_Fresh_Animations",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"var.r": "random(id)*pi*4",
+					"var.look": "(0.5-0.5*cos( clamp(-18 +sin(var.r+age/60)*20, 0, 1)*clamp(1-torad(head_yaw)/1.5, 0, 1)*pi ))",
+					"var.swim": "clamp(if(  is_in_water, min(20, var.swim +0.04 *frame_time*20), max(0, var.swim -0.04 *frame_time*20)), 0, 1)",
+					"var.jump": "clamp(if(!is_on_ground, min(20, var.jump +0.08 *frame_time*20), max(0, var.jump -0.08 *frame_time*20)), 0, 1)"
+				},
+				{
+					"body.ty": "24 +if(is_riding, -1 -2/max_health, 0)",
+					"body2.ty": "-3.8 +(clamp(cos((var.r+age/sqrt(max_health))/3)/2, -0.5, 0.5)/2)*(1-var.swim) +(1 +sin((var.r+age/sqrt(max_health))/2) )*var.swim",
+					"body2.rx": "                      (  cos((var.r+age/sqrt(max_health))/3)/20 +torad(if(age>10, clamp((pos_y-var.j)*90*limb_speed*var.jump +20*limb_speed*(1-var.jump), -10, 10), 0)) )*(1-var.swim) +(torad(10) +sin((var.r+age/sqrt(max_health))/2)/5)*var.swim",
+					"body2.ry": "clamp(torad(head_yaw)/3 +sin((var.r+age/sqrt(max_health))/6)/10, torad(-15), torad(15))",
+					"body2.rz": "                        -cos((var.r+age/sqrt(max_health))/6)/40 +clamp(-torad(head_yaw)/6, torad(-3), torad(3))",
+					"body.sy": "1 +(     clamp(-cos((var.r+age/sqrt(max_health))/3 +sin((var.r+age/sqrt(max_health))/3)*clamp((max_health)/8, 0.5, 3))/8 , -0.4, 0.4)/1.2  -1/2  *clamp(limb_speed*(8 -clamp(sqrt(max_health)*1.5, 0, 7.7)), 0, 1)*(1-var.jump))*(1-var.swim)",
+					"body.sx": "1 +(0.1 +clamp( cos((var.r+age/sqrt(max_health))/3 +sin((var.r+age/sqrt(max_health))/3)*clamp((max_health)/8, 0.5, 3))/12, -0.3, 0.3)/1.2  +1/1.5*clamp(limb_speed*(8 -clamp(sqrt(max_health)*1.5, 0, 7.7)), 0, 1)*(1-var.jump))*(1-var.swim)",
+					"body.sz": "1 +(0.1 +clamp( cos((var.r+age/sqrt(max_health))/3 +sin((var.r+age/sqrt(max_health))/3)*clamp((max_health)/8, 0.5, 3))/12, -0.3, 0.3)/1.2  +1/1.5*clamp(limb_speed*(8 -clamp(sqrt(max_health)*1.5, 0, 7.7)), 0, 1)*(1-var.jump))*(1-var.swim)",
+					"body2.sy": "0.95 +(-cos((var.r+age/sqrt(max_health))/2 -sin((var.r+age/sqrt(max_health))/2 )/2 )/4 )*var.swim +( if(age>10, clamp( (pos_y-var.j), 0, 0.5)/1.5 +clamp(-(pos_y-var.j), 0, 0.5)/1.5, 0)*1.7*clamp(1-max_health/40, 0.2, 1) )*(1-var.swim)",
+					"body2.sx": "0.95 +( cos((var.r+age/sqrt(max_health))/2 -sin((var.r+age/sqrt(max_health))/2 )/2 )/6 )*var.swim +( if(age>10, clamp(-(pos_y-var.j),-0.5, 0)/2   +clamp( (pos_y-var.j),-0.5, 0)/2  , 0)*1.7*clamp(1-max_health/40, 0.2, 1) )*(1-var.swim)",
+					"body2.sz": "0.95 +( cos((var.r+age/sqrt(max_health))/2 -sin((var.r+age/sqrt(max_health))/2 )/2 )/6 )*var.swim +( if(age>10, clamp(-(pos_y-var.j),-0.5, 0)/2   +clamp( (pos_y-var.j),-0.5, 0)/2  , 0)*1.7*clamp(1-max_health/40, 0.2, 1) )*(1-var.swim)"
+				},
+				{
+					"right_eye2.rx": "cos((var.r+age/sqrt(max_health))/4)/20",
+					"left_eye2.rx": "-cos((var.r+age/sqrt(max_health))/4)/20",
+					"right_eye2.rz": "cos((var.r+age/sqrt(max_health))/6)/30",
+					"left_eye2.rz": "-cos((var.r+age/sqrt(max_health))/6)/30",
+					"right_eye2.ty": "-0.5 +clamp(-limb_speed*1.4 +torad(head_pitch)/2, -0.8, 1)",
+					"left_eye2.ty": " -0.5 +clamp(-limb_speed*1.4 +torad(head_pitch)/2, -0.8, 1)",
+					"right_eye2.sy": "clamp(1 -clamp(1.3 -abs(sin(var.r+age/4/2)*4), 0, 1)*clamp(-36 +cos(var.r+age/12)*40 +cos(var.r+age/32)*40, 0, 1), 0.2, 1)",
+					"left_eye2.sy": "right_eye2.sy",
+					"mouth2.rx": "-cos((var.r+age/sqrt(max_health))/4)/20",
+					"mouth2.ry": " cos((var.r+age/sqrt(max_health))/5)/8",
+					"mouth2.rz": "-cos((var.r+age/sqrt(max_health))/6)/30",
+					"mouth2.ty": "clamp(-limb_speed*1.4 +torad(head_pitch)/4, -1, 0.6) +0.5*clamp(-10 +sin(var.r+age/60)*20, 0, 1)",
+					"mouth2.tx": "clamp( torad(head_yaw), -1, 1)                       +0.5*clamp(-10 +sin(var.r+age/60)*20, 0, 1)",
+					"mouth2.sy": "1 -0.5*clamp(-10 +cos(var.r+age/50)*20 +sin(var.r+age/37)*20, 0, 1)*0",
+					"mouth2.sx": "1 +1  *clamp(-10 +cos(var.r+age/50)*20 +sin(var.r+age/37)*20, 0, 1)*0"
+				},
+				{
+					"face.ty": "  clamp(-(max_health-1)/8 , -1.2 , 0) +if(age>10, clamp((pos_y-var.j)*4/clamp(1+max_health/20, 1, 20), -0.8, 0.8), 0)",
+					"face.sy": "1+clamp(-(max_health-1)/12, -0.67, 0)",
+					"face.sx": "face.sy",
+					"mouth3.sy": "clamp(1 -0.5*var.look, 0.2, 1)*clamp(1+(max_health-1)/5, 1, 1.2)",
+					"mouth3.sx": "(1 +(-mouth3.sy+1))*clamp(1+(max_health-1)/3, 1, 1.5)",
+					"mouth3.tx": "     torad(head_yaw)/3            *clamp(1+(max_health-1)/10, 1, 2) -clamp(sin(var.r+age/8 +sin(torad(45)+var.r*2+age/4)/2)/2, -0.45, 0.45)/2*var.look*clamp((max_health-1)/5, 1, 3) +0.3*clamp(1+(max_health-1)/4, 1, 4)*clamp(1-var.look, 0, 1)",
+					"eyes.tx": "clamp(-torad(head_yaw)/2, -0.8, 0.8)*clamp(1+(max_health-1)/10, 1, 2) +clamp(sin(var.r+age/8 +sin(torad(45)+var.r*2+age/4)/2)/2, -0.45, 0.45)  *var.look*clamp((max_health-1)/3, 1, 4)",
+					"eyes.ty": "-0.5 +torad(head_pitch)/3*clamp(1+(max_health-1)/7, 1, 3)",
+					"mouth3.ty": " 1 +torad(head_pitch)/6*clamp(1+(max_health-1)/7, 1, 3)",
+					"eyes.sy": "clamp(1 -clamp(1.3 -abs(sin(var.r+age/4)*4), 0, 1)*clamp(-32 +cos(var.r+age/6)*40 +cos(var.r+age/16)*40, 0, 1) -0.2*var.look, 0.2, 1)",
+					"r.sx": "1 +(-eyes.sy+1)/4",
+					"l.sx": "r.sx",
+					"r.tx": "-0.75 +clamp(-(max_health-1)/4, -2.2, 0)",
+					"l.tx": " 0.75 -clamp(-(max_health-1)/4, -2.2, 0)"
+				},
+				{
+					"var.j": "var.j2",
+					"var.j2": "var.j3",
+					"var.j3": "var.j4",
+					"var.j4": "var.j5",
+					"var.j5": "var.j6",
+					"var.j6": "var.j7",
+					"var.j7": "var.j8",
+					"var.j8": "var.j9",
+					"var.j9": "var.j10",
+					"var.j10": "pos_y"
+				}
+			]
+		},
+		{
+			"part": "right_eye",
+			"id": "right_eye",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "left_eye",
+			"id": "left_eye",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "mouth",
+			"id": "mouth",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
+		}
+	]
+}

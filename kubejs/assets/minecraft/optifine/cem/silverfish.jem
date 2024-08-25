@@ -1,0 +1,248 @@
+{
+	"credit": "Created by FreshLX for Fresh_Animations",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "body1",
+			"id": "body1",
+			"invertAxis": "xy",
+			"translate": [0, -2, 3.5],
+			"submodels": [
+				{
+					"id": "Created_by_FreshLX_for_Fresh_Animations",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"part": "body2",
+			"id": "body2",
+			"invertAxis": "xy",
+			"translate": [0, 0, 1.5],
+			"submodels": [
+				{
+					"id": "head1",
+					"invertAxis": "xy",
+					"translate": [0, 1, -3],
+					"submodels": [
+						{
+							"id": "head1_s",
+							"invertAxis": "xy",
+							"translate": [0, 0, -1]
+						},
+						{
+							"id": "head",
+							"invertAxis": "xy",
+							"translate": [0, 0, -2]
+						},
+						{
+							"id": "body8",
+							"invertAxis": "xy",
+							"translate": [0, 1, -4],
+							"boxes": [
+								{"coordinates": [-2.5, -2, -1, 5, 3, 2], "textureOffset": [21, 0]}
+							],
+							"submodels": [
+								{
+									"id": "bone",
+									"invertAxis": "xy",
+									"translate": [0, 0, -1],
+									"rotate": [47.5, 0, 0],
+									"boxes": [
+										{"coordinates": [-4.5, 1, -8, 9, 0, 8], "textureOffset": [-8, 41]}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "tail",
+					"invertAxis": "xy",
+					"translate": [0, 1, -3],
+					"submodels": [
+						{
+							"id": "tail_s",
+							"invertAxis": "xy",
+							"translate": [0, 0, 1.5]
+						},
+						{
+							"id": "tail1",
+							"invertAxis": "xy",
+							"translate": [0, 0, 3],
+							"submodels": [
+								{
+									"id": "tail1_s",
+									"invertAxis": "xy",
+									"translate": [0, 0, 1]
+								},
+								{
+									"id": "tail2",
+									"invertAxis": "xy",
+									"translate": [0, 0, 3],
+									"submodels": [
+										{
+											"id": "tail3",
+											"invertAxis": "xy",
+											"translate": [0, -0.5, 3],
+											"submodels": [
+												{
+													"id": "tail4",
+													"invertAxis": "xy",
+													"translate": [0, 0, 2],
+													"rotate": [-30, 0, 0]
+												}
+											]
+										},
+										{
+											"id": "body11",
+											"invertAxis": "xy",
+											"translate": [0, 2, -2.5],
+											"boxes": [
+												{"coordinates": [-1.5, -3, 4.5, 3, 2, 3], "textureOffset": [26, 10]}
+											],
+											"submodels": [
+												{
+													"id": "bone2",
+													"invertAxis": "xy",
+													"translate": [0, -2, 7.5],
+													"rotate": [-20, 0, 0],
+													"boxes": [
+														{"coordinates": [-5.5, 0, 0, 11, 0, 10], "textureOffset": [-10, 54]}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"id": "body10",
+									"invertAxis": "xy",
+									"translate": [0, 3, -2.5],
+									"boxes": [
+										{"coordinates": [-2.5, -4, 4.5, 5, 3, 3], "textureOffset": [22, 18]}
+									]
+								}
+							]
+						},
+						{
+							"id": "body9",
+							"invertAxis": "xy",
+							"translate": [0, 2, -2],
+							"boxes": [
+								{"coordinates": [-3.5, -3, -1, 7, 4, 8], "textureOffset": [0, 18]},
+								{"coordinates": [3.5, -3, -1, 1, 0, 8], "textureOffset": [-8, 18]},
+								{"coordinates": [-4.5, -3, -1, 1, 0, 8], "textureOffset": [-8, 18]}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "body3",
+			"id": "body3",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"animations": [
+				{
+					"var.r": "random(id)*pi*4",
+					"var.b": "random(id)*pi*4 +age/(10-random(id)*2)*pi",
+					"var.ls": "random(id)*pi*4 +limb_swing",
+					"var.yaw": "torad(head_yaw)*clamp(limb_speed*4, 0, 1)",
+					"var.die": "if(!is_alive, if(is_hurt, (cos(hurt_time/4)/1.8 +0.4), 1), 0)"
+				},
+				{
+					"body2.tx": "sin(torad(225+90)+var.ls)",
+					"body2.ty": "24 +3*var.die",
+					"body2.tz": "-2",
+					"body2.rx": "if(is_hurt, -sin(hurt_time/10*pi), 0) +sin(pi*swing_progress)/2 -torad(20)*var.die",
+					"body2.ry": "0",
+					"body2.sx": "0.9 +(0.5-random(id))/3",
+					"body2.sy": "body2.sx",
+					"body2.sz": "body2.sx"
+				},
+				{
+					"head.ty": " -0.5",
+					"tail.rx": "torad(30)*var.die",
+					"tail1.rx": "body2.rx",
+					"tail2.rx": "body2.rx -torad(20)*var.die",
+					"tail3.rx": "(torad(10) -sin(var.b)/6)*clamp(1-limb_speed*2, 0, 1) +body2.rx -torad(60)*var.die",
+					"tail4.rx": "torad(30)*clamp(1-limb_speed, 0.5, 1) +sin(var.b+torad(135))/6*clamp(1-limb_speed*2, 0, 1) +body2.rx -torad(60)*var.die",
+					"head1.rx": "clamp(torad(head_pitch)/2, torad(-15), 0) -torad(2) +sin(var.b/2  )/20 -body2.rx   +torad(40)*var.die",
+					"head.rx": " clamp(torad(head_pitch)/2, torad(-15), 0)           +sin(var.b*1.2)/20 -body2.rx/3 +torad(40)*var.die",
+					"head.tx": " sin(torad(315+90)+var.ls)/1.5*clamp(limb_speed*2, 0, 1)",
+					"head1.tx": "sin(torad(270+90)+var.ls)/1.5*clamp(limb_speed*2, 0, 1)",
+					"tail.tx": " sin(torad(225+90)+var.ls)/1.5*clamp(limb_speed*2, 0, 1)",
+					"tail1.tx": "sin(torad(180+90)+var.ls)/2.5*clamp(limb_speed*2, 0, 1)",
+					"head.ry": " -sin(torad(270)+var.ls)/3 +var.yaw/2 +sin(var.b/2.3       )/10*clamp(1-limb_speed*2, 0, 1)",
+					"head1.ry": " sin(torad(270)+var.ls)/3 +var.yaw/2",
+					"tail.ry": "  sin(torad(225)+var.ls)/4 +var.yaw/2",
+					"tail1.ry": " sin(torad(180)+var.ls)/4 +var.yaw/2",
+					"tail2.ry": " sin(torad(135)+var.ls)/4 +var.yaw/2 +sin(var.b+torad(225))/10*clamp(1-limb_speed*2, 0, 1)",
+					"tail3.ry": " sin(torad( 90)+var.ls)/4 +var.yaw/2 +sin(var.b+torad(180))/6 *clamp(1-limb_speed*2, 0, 1)",
+					"tail4.ry": " sin(torad( 45)+var.ls)/4 +var.yaw/2 +sin(var.b+torad( 90))/6 *clamp(1-limb_speed*2, 0, 1)",
+					"head.rz": "  sin(torad(315)+var.ls)/10*clamp(limb_speed*2, 0, 1)",
+					"head1.rz": "-cos(torad(270)+var.ls)/10*clamp(limb_speed*2, 0, 1)",
+					"tail.rz": " -cos(torad(225)+var.ls)/10*clamp(limb_speed*2, 0, 1)",
+					"tail1.rz": "-cos(torad(180)+var.ls)/10*clamp(limb_speed*2, 0, 1)",
+					"tail2.rz": "-cos(torad(135)+var.ls)/10*clamp(limb_speed*2, 0, 1)",
+					"tail3.rz": "-cos(torad( 90)+var.ls)/10*clamp(limb_speed*2, 0, 1)",
+					"tail4.rz": "-cos(torad( 45)+var.ls)/10*clamp(limb_speed*2, 0, 1)",
+					"head1_s.sx": "1.05 -cos(var.b*1.2)/60",
+					"head1_s.sy": "head1_s.sx",
+					"head1_s.sz": "head1_s.sx",
+					"tail_s.sx": "1.05 -cos(var.b*1.2)/40",
+					"tail_s.sy": "tail_s.sx",
+					"tail_s.sz": "tail_s.sx",
+					"tail1_s.sx": "1.05 -cos(var.b*1.2)/60",
+					"tail1_s.sy": "tail1_s.sx",
+					"tail1_s.sz": "tail1_s.sx"
+				}
+			]
+		},
+		{
+			"part": "body4",
+			"id": "body4",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "body5",
+			"id": "body5",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "body6",
+			"id": "body6",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "body7",
+			"id": "body7",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "wing1",
+			"id": "wing1",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "wing2",
+			"id": "wing2",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "wing3",
+			"id": "wing3",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		}
+	]
+}

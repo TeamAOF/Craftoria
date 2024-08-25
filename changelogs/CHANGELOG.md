@@ -2,6 +2,10 @@
 
 _NeoForge Loader 21.1.23_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.9.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.9.1.md)_
 
+### Changes/Improvements ⭐
+
+* Localized names for discord rich presence showing custom dimensions.
+
 ### Bug Fixes 🪲
 
 * Fixed weird looking witch entity model.

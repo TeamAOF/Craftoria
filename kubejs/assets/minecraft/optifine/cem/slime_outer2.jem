@@ -1,0 +1,84 @@
+{
+	"credit": "Created by FreshLX for Fresh_Animations",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "body2",
+					"invertAxis": "xy",
+					"translate": [0, 4, 0],
+					"submodels": [
+						{
+							"id": "body3",
+							"invertAxis": "xy",
+							"translate": [0, 20, 0],
+							"boxes": [
+								{"coordinates": [-4, -24, -4, 8, 8, 8], "textureOffset": [0, 0]}
+							],
+							"submodels": [
+								{
+									"id": "side_head",
+									"invertAxis": "xy",
+									"translate": [3, 0, -1],
+									"rotate": [0, -45, 0],
+									"boxes": [
+										{"coordinates": [-0.14612, -24, -3.29289, 6, 6, 6], "textureOffset": [0, 16]}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "Created_by_FreshLX_for_Fresh_Animations",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0]
+				}
+			],
+			"animations": [
+				{
+					"var.r": "random(id)*pi*4",
+					"var.look": "(0.5-0.5*cos( clamp(-18 +sin(var.r+age/60)*20, 0, 1)*clamp(1-torad(head_yaw)/1.5, 0, 1)*pi ))",
+					"var.swim": "clamp(if(  is_in_water, min(20, var.swim +0.04 *frame_time*20), max(0, var.swim -0.04 *frame_time*20)), 0, 1)",
+					"var.jump": "clamp(if(!is_on_ground, min(20, var.jump +0.08 *frame_time*20), max(0, var.jump -0.08 *frame_time*20)), 0, 1)"
+				},
+				{
+					"body.ty": "24 -if(max_health<2, 0.02, 0) +if(is_riding, -1 -2/max_health, 0)",
+					"body2.ty": "-4 +(1 +sin((var.r+age/sqrt(max_health))/2) )*var.swim",
+					"body2.rx": "torad( if(age>10, clamp((pos_y-var.j)*90*limb_speed*var.jump +20*limb_speed*(1-var.jump), -10, 10), 0) )*(1-var.swim) +(torad(10) +sin((var.r+age/sqrt(max_health))/2)/5)*var.swim",
+					"body.ry": "clamp(torad(head_yaw)/10 +sin((var.r+age/sqrt(max_health))/6)/20, torad(-8), torad(8))",
+					"body.sy": "1 +(     clamp(-cos((var.r+age/sqrt(max_health))/3 +sin((var.r+age/sqrt(max_health))/3)*clamp((max_health-1)/8, 0.5, 3))/8 , -0.4, 0.4)/1.2  -1/2  *clamp(limb_speed*(8 -clamp(sqrt(max_health)*1.5, 0, 7.7)), 0, 1)*(1-var.jump) )*(1-var.swim)",
+					"body.sx": "1 +(0.1 +clamp( cos((var.r+age/sqrt(max_health))/3 +sin((var.r+age/sqrt(max_health))/3)*clamp((max_health-1)/8, 0.5, 3))/12, -0.3, 0.3)/1.2  +1/1.5*clamp(limb_speed*(8 -clamp(sqrt(max_health)*1.5, 0, 7.7)), 0, 1)*(1-var.jump) )*(1-var.swim)",
+					"body.sz": "1 +(0.1 +clamp( cos((var.r+age/sqrt(max_health))/3 +sin((var.r+age/sqrt(max_health))/3)*clamp((max_health-1)/8, 0.5, 3))/12, -0.3, 0.3)/1.2  +1/1.5*clamp(limb_speed*(8 -clamp(sqrt(max_health)*1.5, 0, 7.7)), 0, 1)*(1-var.jump) )*(1-var.swim)",
+					"body2.sy": "1 +(-cos((var.r+age/sqrt(max_health))/2 -sin((var.r+age/sqrt(max_health))/2 )/2 )/4 )*var.swim +( if(age>10, clamp( (pos_y-var.j), 0, 0.5)/1.5 +clamp(-(pos_y-var.j), 0, 0.5)/1.5, 0)*1.7*clamp(1-max_health/40, 0.2, 1) )*(1-var.swim)",
+					"body2.sx": "1 +( cos((var.r+age/sqrt(max_health))/2 -sin((var.r+age/sqrt(max_health))/2 )/2 )/6 )*var.swim +( if(age>10, clamp(-(pos_y-var.j),-0.5, 0)/2   +clamp( (pos_y-var.j),-0.5, 0)/2  , 0)*1.7*clamp(1-max_health/40, 0.2, 1) )*(1-var.swim)",
+					"body2.sz": "1 +( cos((var.r+age/sqrt(max_health))/2 -sin((var.r+age/sqrt(max_health))/2 )/2 )/6 )*var.swim +( if(age>10, clamp(-(pos_y-var.j),-0.5, 0)/2   +clamp( (pos_y-var.j),-0.5, 0)/2  , 0)*1.7*clamp(1-max_health/40, 0.2, 1) )*(1-var.swim)"
+				},
+				{
+					"var.j": "var.j2",
+					"var.j2": "var.j3",
+					"var.j3": "var.j4",
+					"var.j4": "var.j5",
+					"var.j5": "var.j6",
+					"var.j6": "var.j7",
+					"var.j7": "var.j8",
+					"var.j8": "var.j9",
+					"var.j9": "var.j10",
+					"var.j10": "pos_y"
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"attach": true
+		}
+	]
+}

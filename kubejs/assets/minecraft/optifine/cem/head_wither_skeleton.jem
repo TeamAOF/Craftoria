@@ -1,0 +1,31 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "head2",
+					"invertAxis": "xy",
+					"translate": [0, 24, 0],
+					"submodels": [
+						{
+							"id": "bone9",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{"coordinates": [-4, -24, -4, 8, 8, 8], "textureOffset": [0, 16]},
+								{"coordinates": [-3, -23, -3, 6, 6, 5], "textureOffset": [27, 12], "sizeAdd": 0.25},
+								{"coordinates": [0, -20, -4, 0, 10, 12], "textureOffset": [35, 33]}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

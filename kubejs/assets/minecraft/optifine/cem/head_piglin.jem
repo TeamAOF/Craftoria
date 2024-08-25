@@ -1,0 +1,91 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "head2",
+					"invertAxis": "xy",
+					"translate": [0, 3, 0],
+					"boxes": [
+						{"coordinates": [-5, -3, -3, 10, 8, 8], "textureOffset": [0, 0]},
+						{"coordinates": [-2, -3, -6, 4, 4, 3], "textureOffset": [32, 32]},
+						{"coordinates": [-5, 1, -4, 10, 2, 1], "textureOffset": [28, 0]},
+						{"coordinates": [3, -3, -6, 1, 2, 1], "textureOffset": [0, 5]},
+						{"coordinates": [2, -3, -6, 1, 1, 1], "textureOffset": [4, 5]}
+					],
+					"submodels": [
+						{
+							"id": "head_sub_0",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, -24, 0],
+							"boxes": [
+								{"coordinates": [-4, 21, -6, 1, 2, 1], "textureOffset": [0, 5]},
+								{"coordinates": [-3, 21, -6, 1, 1, 1], "textureOffset": [4, 5]}
+							]
+						},
+						{
+							"id": "left_ear2",
+							"invertAxis": "xy",
+							"translate": [-4.5, 6, 0],
+							"rotate": [0, 0, -35],
+							"boxes": [
+								{"coordinates": [0.07358, -7.81915, -1, 2, 3, 2], "textureOffset": [0, 0], "sizeAdd": -0.25}
+							],
+							"submodels": [
+								{
+									"id": "left_ear_sub_0",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [4.5, -30, 0],
+									"boxes": [
+										{"coordinates": [-3.92642, 23.18085, -2, 2, 5, 6], "textureOffset": [16, 32]}
+									]
+								}
+							]
+						},
+						{
+							"id": "right_ear2",
+							"invertAxis": "xy",
+							"translate": [4.5, 6, 0],
+							"rotate": [0, 0, 35],
+							"boxes": [
+								{"coordinates": [-2.57358, -6.81915, -2, 2, 5, 6], "textureOffset": [16, 32]}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "left_ear",
+			"id": "left_ear",
+			"invertAxis": "xy",
+			"translate": [4.5, -6, 0],
+			"rotate": [0, 0, -35],
+			"animations": [
+				{
+					"this.rz": 0
+				}
+			]
+		},
+		{
+			"part": "right_ear",
+			"id": "right_ear",
+			"invertAxis": "xy",
+			"translate": [-4.5, -6, 0],
+			"rotate": [0, 0, 35],
+			"animations": [
+				{
+					"this.rz": 0
+				}
+			]
+		}
+	]
+}
