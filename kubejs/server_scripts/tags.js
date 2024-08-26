@@ -36,6 +36,7 @@ ServerEvents.tags('block', (e) => {
     /^mekanism:(basic|advanced|elite|ultimate)_(universal_cable|mechanical_pipe|pressurized_tube|logistical_transporter|thermodynamic_conductor)$/,
     'mekanism:diversion_transporter',
     'mekanism:restrictive_transporter',
+    '#c:skulls',
   ]);
 
   e.add('minecraft:mineable/axe', ['mekanism:cardboard_box']);
