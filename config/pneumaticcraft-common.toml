@@ -239,6 +239,9 @@
 	weighted_ammo_range_multiplier = 0.2
 	#Show particles when a block is hit by minigun fire? Looks good, but consumes some network bandwidth.
 	block_hit_particles = true
+	#Entity invulnerability ticks after being hit by a Minigun bullet. (Vanilla default is 20 ticks)
+	#Range: > 0
+	invulnerability_ticks = 10
 
 [Integration]
 	#Immersive Engineering: External Heater heat/FE.  The amount of PneumaticCraft heat added by using 1 FE in the heater.

@@ -1,3 +1,12 @@
+## Craftoria | v0.9.2
+
+_NeoForge Loader 21.1.27_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.9.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.9.2.md)_
+
+### Bug Fixes 🪲
+
+* Fixed JEI plugins loading too early, resulting in errors for some.
+---
+
 ## Craftoria | v0.9.1
 
 _NeoForge Loader 21.1.23_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.9.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.9.1.md)_
