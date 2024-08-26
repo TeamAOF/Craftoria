@@ -15,6 +15,7 @@ ServerEvents.recipes(event => {
     'croptopia:cauliflower_seed',
     'croptopia:celery_seed',
     'croptopia:chile_pepper_seed',
+    'croptopia:coffee_seed',
     'croptopia:corn_seed',
     'croptopia:cranberry_seed',
     'croptopia:cucumber_seed',
