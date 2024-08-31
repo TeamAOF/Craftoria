@@ -393,6 +393,7 @@
 			tasks: [{
 				id: "0FA270C84C6558F4"
 				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:clean_iron" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 6.5d
@@ -415,6 +416,7 @@
 			tasks: [{
 				id: "0DB6520590E34A02"
 				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:dirty_iron" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 8.5d
@@ -432,6 +434,7 @@
 			tasks: [{
 				id: "1DD7ACF245A34D64"
 				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:oxygen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 2.0d
@@ -467,6 +470,7 @@
 			tasks: [{
 				id: "02454D9C800DA4DE"
 				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:hydrogen_chloride" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 4.0d
@@ -524,6 +528,7 @@
 			tasks: [{
 				id: "5B46EAA815EC6493"
 				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "mekanism:brine" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 10.0d
@@ -541,6 +546,7 @@
 			tasks: [{
 				id: "7538F34675E34E9E"
 				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:chlorine" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 7.0d
@@ -684,6 +690,7 @@
 			tasks: [{
 				id: "5774367AADC3912D"
 				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:sulfuric_acid" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 6.0d
@@ -722,6 +729,7 @@
 			tasks: [{
 				id: "4554313612DA8D78"
 				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:sulfur_trioxide" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 2.0d
@@ -760,6 +768,7 @@
 			tasks: [{
 				id: "501CE8BA11557A26"
 				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:sulfur_dioxide" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: -2.0d
@@ -831,6 +840,7 @@
 			tasks: [{
 				id: "1D04A1E39620F869"
 				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:water_vapor" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 2.0d
