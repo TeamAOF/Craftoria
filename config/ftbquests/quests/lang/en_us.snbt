@@ -32,6 +32,11 @@
 	quest.011E9553CDCAE218.quest_desc: ["Quadrupling that storage capacity are we?"]
 	quest.011E9553CDCAE218.title: "4k Storage Component"
 	quest.0145A878C472548C.title: "Ritual: Summon Foliot Lumberjack"
+	quest.018EE4529FFD04AB.quest_desc: [
+		"- Press &6Left Shift&r and &6Right Click&r to swap between &bFortune&r and &bSilk Touch&r."
+		""
+		"- Use &6Alt&r and &6Mouse Scroll&r to change mining speeds."
+	]
 	quest.02272D430F08B1DC.quest_desc: [
 		"  Now you can make a large tank! This is a tank multi-block that can store 64,000mb &oper&r block within the total volume the tank takes up, air blocks and solid."
 		""
@@ -120,6 +125,12 @@
 	quest.0633D2B1E1DB778B.title: "Silicon"
 	quest.068339CE98E5DEB5.quest_desc: ["&bCalculation Processors &fare used in &bStorage Components&f, and some other things."]
 	quest.068339CE98E5DEB5.title: "Calculation Processor"
+	quest.069382B7A2FC7D35.quest_desc: [
+		"Will &6calcify&r and &close&r efficiency over time to a minimum of &e33%&r efficiency when not using &bDistilled Water&r. "
+		""
+		"Using an &bAxe&r on the &bBoiler&r will reset its calcification."
+	]
+	quest.069382B7A2FC7D35.quest_subtitle: "Uses Solar Energy instead of Fossil Fuel."
 	quest.06C4D99A90DF7711.title: "Ultimate Injecting Factory"
 	quest.06D66E791A9939DD.quest_desc: ["Build a &bCharger&r, and power it with a &bVibration Chamber&r or generators from others mods."]
 	quest.06D66E791A9939DD.quest_subtitle: "Provides a way to charge supported tools through the ME Network"
@@ -508,6 +519,15 @@
 		""
 		"Useful if you want to &acompress items&f in &bDrives&f or empty &bDrives &fto make bigger ones."
 	]
+	quest.1910E0D1BB24E94D.quest_desc: [
+		"To produce &eenergy&r, the &bSolar Panel&r needs a matching tier &bPhotovoltaic Cell&r in its &6inventory&r."
+		""
+		"By supplying &9Distilled Water&r to the &bSolar Panel&r, the &bPhotovoltaic Cell&r in its slot will last &a2x&r as long!"
+		""
+		"&eEnergy generation&r rates are determined by how high the &6sun&r is in the &bsky&r and if the &bsky&r is &avisible&r."
+	]
+	quest.1910E0D1BB24E94D.quest_subtitle: "Be better for the environment!"
+	quest.1910E0D1BB24E94D.title: "Solar Panels"
 	quest.1987DF7742136DC4.quest_desc: [
 		"  Remember when I said the &bDistillery&r could only output one type of fluid per cycle? Well, this is your upgrade!"
 		""
@@ -620,6 +640,7 @@
 		""
 		"  &aMore Tips&r: &6Crouch to mine&r &bsingle blocks&r, if you need! They'll still be in their &6Silktouch&r form, but it wont do the &63x3&r, incase you need to mine &bblocks&r more delicately."
 	]
+	quest.1D57C823A1F0203C.quest_subtitle: "Cling, Clang, Cling, Clang!"
 	quest.1D57C823A1F0203C.title: "Steam Mining Drill"
 	quest.1DB0824C333DDA8E.quest_desc: ["Combat the Speed Upgrades with the Energy Upgrades! The Energy Upgrades increases the energy efficiency of the machine, drastically reducing the amount of power it uses."]
 	quest.1DB0824C333DDA8E.title: "Energy Upgrade"
@@ -703,6 +724,7 @@
 	quest.2190034B6F3E2768.quest_desc: ["These are the primary components of &bInput and Output Devices&f."]
 	quest.2190034B6F3E2768.title: "Heart of Computation"
 	quest.219168013B580916.quest_desc: ["Crafted from the &bConcurrent Press&f with&b Entro Infused Ingots&f."]
+	quest.21939E58707A7756.quest_subtitle: "Can run recipes in batches."
 	quest.21AE41FA52DB561D.quest_desc: [
 		"  This handy dandy device &6charges&r all &bitems&r in your inventory that &cneed power&r."
 		""
@@ -786,6 +808,12 @@
 	quest.266E065B5B4C91E3.quest_desc: ["This &bemitter &fconverts &bmercury &finto &bSulfuric Flux &fwhich can carry information."]
 	quest.266E065B5B4C91E3.quest_subtitle: "Mercury = Sulfuric Flux"
 	quest.2675A4EA019B383F.title: "Turbine Time"
+	quest.268B0F87CC431A51.quest_desc: [
+		"- Needs &bCasing&r for cable tier to convert from (&eLV&r by default)."
+		""
+		"- Needs &bCasing&r for cable tier to convert to (&eLV&r by default)."
+	]
+	quest.268B0F87CC431A51.quest_subtitle: "Easier Conversion!"
 	quest.272E31F15A39517B.title: "Fusion Reactor Frame"
 	quest.27A396E8628B269E.quest_desc: ["  The &bGold Drill&r produces ores and building blocks that you'd expect to find in the confines of the Nether Region."]
 	quest.27A396E8628B269E.title: "Gold Drill"
@@ -819,6 +847,13 @@
 		"{image:justdirethings:item/ferricore_wrench width:100 height:100 align:center fit:true}"
 	]
 	quest.29E3DC274AF5DAFA.quest_subtitle: "Not Monkey Business"
+	quest.29E6ED5067027F08.quest_desc: [
+		"- Can run &6recipes&r of any single block &eelectric&r crafting &bmachine&r provided to it in batches."
+		""
+		"- Batch size is determined by the amount of &bmachines&r provided to it."
+		""
+		"- Insert &eelectric&r crafting machines to run in &6parallel&r."
+	]
 	quest.2A2E1C7C34C9A4AA.quest_desc: ["The Destruction Gadgets removes blocks and voids them."]
 	quest.2A68AB7D1EDD44BD.quest_desc: ["Structural Glass is a block that can be used in almost any multi-block as a clear block. I recommend you try using it for the walls of a dynamic tank, while the edges are solid dynamic tank blocks."]
 	quest.2A68AB7D1EDD44BD.title: "Structural Glass"
@@ -1025,6 +1060,7 @@
 	]
 	quest.325D7C592E2FB05A.title: "Singularity"
 	quest.327EDC1D4C50D185.title: "QIO Exporter"
+	quest.32E769BEDC46CAE8.quest_subtitle: "Charge Ya Tools!"
 	quest.333A187FF6CCBCF2.title: "Theurgy 100%"
 	quest.3357A8B614D477B6.quest_desc: [
 		"  A new machine, the little sibling to the &bPacker&r! This one can only be made in steel; it really needs that extra strength."
@@ -1032,6 +1068,11 @@
 		"  &6The unpacker can perform simple crafts for you, such as converting dusts into tiny dusts&r. Check your REI for more recipes."
 	]
 	quest.3357A8B614D477B6.title: "Steel Unpacker"
+	quest.335BFE2345DAFE03.quest_desc: [
+		"- Press &6Left Shift&r and &6Right Click&r to swap between &bFortune/Looting&r and &bSilk Touch&r."
+		""
+		"- Use &6Alt&r and &6Mouse Scroll&r to change mining speeds."
+	]
 	quest.3392424E7E1B68C4.title: "Isotopic Centrifuge"
 	quest.33AC5F9CFB679483.title: "MekaSuit Helmet"
 	quest.33CDCAD12E8F6828.quest_subtitle: "-10 Max Spawn Delay"
@@ -1147,6 +1188,14 @@
 	quest.3973F425BD96668A.title: "Pattern Encoding Terminal"
 	quest.3995CC829C7B015A.quest_desc: ["&6Crafted&r from &dMagebloom&r, &bFiber&r is used for a lot of different &bThreads&r and &bArmor&r"]
 	quest.39A4FF688D140EC2.title: "Logistical Sorter"
+	quest.39CF27CAC4EE33DB.quest_desc: [
+		"- Press &6Right Click&r on &9Still Water&r or &9Flowing Water&r to fill."
+		""
+		"- Place &8Fuel&r inside the &bChainsaw&r using &6Right Click&r."
+		""
+		"- Toggle &eSilk Touch&r with &6Left Shift&r + &6Right Click&r."
+	]
+	quest.39CF27CAC4EE33DB.quest_subtitle: "Brrrr!"
 	quest.39FCE3168C26B863.quest_desc: [
 		"  Once you have a stockpile of this &bSuper Powered Coal&r, you can start diverting away from you bronze machines. They're slow and such a bright orange; blinding to the eyes."
 		""
@@ -1215,6 +1264,8 @@
 	quest.3E165961635B0C4B.quest_subtitle: "Find the Mysterious Cube"
 	quest.3E165961635B0C4B.title: "Mysterious Cube"
 	quest.3E62028A2B03EEA4.title: "Elite Thermodynamic Conductor"
+	quest.3F0097CCBA02804C.quest_desc: ["Can do &bFurnace&r recipes in batches."]
+	quest.3F0097CCBA02804C.quest_subtitle: "The Bigger, The Better!"
 	quest.3F6174E82DDC48C3.title: "Energized Smelter"
 	quest.3F73EC8E087E2920.quest_subtitle: "+I Echoing"
 	quest.3F8B9421E85C047D.title: "Water for Chemical Washing"
@@ -1313,6 +1364,7 @@
 		"  Bronze machines can only process recipes up to 2 energy unit per tick. You might see it as \"2 EU/t\" when using the machines. 1 millibucket of steam is the same as 1 EU; I for one am really glad it's a very simple conversion cause I'm not a fan of math. Once your &bBoiler&r is at maximum temperature, it can supply 4 machines with &bSteam&r simultaneously! Now &othat's&r hot."
 	]
 	quest.439D48E9647FC8C2.title: "Bronze Boiler"
+	quest.43DB398322EF99BD.quest_subtitle: "Mixing &etwo&r materials together for &6alloys&r."
 	quest.43EFE64785AE50B4.title: "Tier 4, 1:4"
 	quest.442CDC27ADFA34E4.quest_desc: ["To&6 remove &fany modifications, &6place &bQuartz&f in your &6off-hand&f, and the same modifier u want to remove in your hand. It will &aconsume&f the modifier, not the &bQuartz&f."]
 	quest.44D8D30BCD48C4C9.title: "Elite Control Circuit"
@@ -1543,6 +1595,7 @@
 		"{image:justdirethings:block/goofarmland_tier3_moist width:100 height:100 align:center fit:true}"
 	]
 	quest.4D1B83E147CC16AE.quest_subtitle: "AutoCrops, Roll Out!"
+	quest.4D5787F48ECCB000.quest_subtitle: "Brews &e4&r potions at a time."
 	quest.4D59020A532C4E92.quest_desc: [
 		"   I bet you can &6figure&r &bthis one&r out. xD"
 		""
@@ -1867,6 +1920,8 @@
 	quest.640DB4139DF8AFA4.title: "&dThe Endgame"
 	quest.641CFC5C8187AC56.quest_desc: ["The Anchor Upgrade is used in a single machine to make sure it's always loaded. I recommend you remember this upgrade for down the line."]
 	quest.641CFC5C8187AC56.title: "Anchor Upgrade"
+	quest.64287B360B07BEBB.quest_desc: ["- &6Connect/Chain&r up to a &cmax&r of &a64&r machines of choice together."]
+	quest.64287B360B07BEBB.quest_subtitle: "Chain Them Up!"
 	quest.6441C36C63A59445.title: "&ePipeZ"
 	quest.644B280698D65076.title: "Ultimate Universal Cable"
 	quest.653C26BF81CFA5A0.quest_desc: ["Used as a housing to hold MEGA Storage Component, for Item Storage."]
@@ -1989,6 +2044,12 @@
 	quest.695A9A54CFD509FF.quest_desc: ["This machine allows for the &6replication&f of &bSulfur "]
 	quest.695A9A54CFD509FF.quest_subtitle: "Infinite Sulfur?"
 	quest.6976592A2FB069AD.quest_desc: ["Crafted with &b4 Fluix Crystals&f in a 2x2 pattern you will obtain a &bFluix Block&f."]
+	quest.698235E8EC974A7F.quest_desc: [
+		"This machine does a better job at making &bCurved Plates &rand &bRings&r than the &6Compressor."
+		""
+		"It's &6speedier&r and &6better&r. Does crafts at double the speeds!"
+	]
+	quest.698235E8EC974A7F.quest_subtitle: "Is this gym equipment?"
 	quest.69B079DABB860AEF.title: "Ultimate Control Circuit"
 	quest.69BD8400AAA37066.quest_desc: [
 		"  &bSimple&r:"
@@ -2270,6 +2331,7 @@
 	quest.746C3046F10DDD71.quest_subtitle: "Higher Capacity Cable. Can carry 32 channels"
 	quest.746C3046F10DDD71.title: "Fluix Dense Smart Cable"
 	quest.7529F840525E5BDF.title: "Ultimate Induction Cell"
+	quest.7533E0212EFE326D.quest_subtitle: "When placed facing into a &ebeehive&r, &6honey&r will be extracted in &bfluid form&r."
 	quest.755B63C1841819D4.quest_desc: ["Made by dropping Charged Certus Quartz, Iron, and Sky Stone into water. The Sky Stone Ingot can be used for all Storage Components from MEGA Cells."]
 	quest.75810CDFB362E0CB.quest_desc: [
 		"They are &6crafted&r by causing a &6reaction&r between &bEnder Pearl&r or &bEnder Dust&r and a &bSingularity&r. Any &6explosive force&r should be enough to trigger the reaction."
@@ -2401,6 +2463,7 @@
 	quest.7B88129FF5C9145F.quest_subtitle: "+4 Activation Range"
 	quest.7BB4CE27736F4C08.quest_desc: ["The final part of the tank is the Dynamic Valve. Just place it somewhere on the multi-block so you can interact with the contents of the tank by either pumping in or pumping out of it."]
 	quest.7BB4CE27736F4C08.title: "Dynamic Valve"
+	quest.7BDBE300D4B0B1F7.quest_subtitle: "Bone Meal Overflow!"
 	quest.7BEA5B1D1B410E82.title: "Advanced Solar Generator"
 	quest.7C0FA555C5FE00D1.quest_desc: [
 		"  &bRobotic Arms&r are ways to automatically move things around within a machine."
@@ -2488,6 +2551,7 @@
 	quest.7F7AB9192CD7FC70.title: "Elite Sawing Factory"
 	quest.7FC6AE9DB7C1DA52.title: "Bio-Generator"
 	quest.7FD0A63CDC267251.quest_subtitle: "+1 Spawn Count"
+	quest.7FD5FCEFE3697A7C.quest_subtitle: "What did the baby corn say to the mama corn?"
 	reward_table.1D192DA13A51FB61.title: "JDT 2"
 	reward_table.1D6F040D6822FC7F.title: "JDT 4"
 	reward_table.28958DE08ADA052A.title: "Alchemical Sulfer"
