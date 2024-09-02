@@ -69,7 +69,7 @@
 			image: "modern_industrialization:block/machines/macerator/overlay_top_active"
 			rotation: 0.0d
 			width: 3.0d
-			x: 32.0d
+			x: 32.5d
 			y: -5.5d
 		}
 		{
@@ -114,23 +114,13 @@
 			y: 7.75d
 		}
 		{
-			color: 11184810
-			height: 0.25d
-			image: "modern_industrialization:fluid/template/plasma_like"
-			order: 1
-			rotation: 0.0d
-			width: 76.0d
-			x: 32.0d
-			y: -75.0d
-		}
-		{
 			color: 0
 			height: 10.0d
 			image: "ftbquests:textures/gui/title_modern.png"
 			order: 1
 			rotation: 0.0d
 			width: 10.0d
-			x: 49.0d
+			x: 48.5d
 			y: 5.0d
 		}
 		{
@@ -139,7 +129,7 @@
 			image: "ftbquests:textures/gui/title_indust.png"
 			rotation: 0.0d
 			width: 10.0d
-			x: 48.5d
+			x: 48.0d
 			y: 6.5d
 		}
 		{
@@ -148,7 +138,7 @@
 			image: "ftbquests:textures/gui/title_rializ.png"
 			rotation: 0.0d
 			width: 10.0d
-			x: 55.0d
+			x: 54.5d
 			y: 6.5d
 		}
 		{
@@ -157,7 +147,7 @@
 			image: "ftbquests:textures/gui/title_ation.png"
 			rotation: 0.0d
 			width: 10.0d
-			x: 61.0d
+			x: 60.5d
 			y: 6.5d
 		}
 		{
@@ -879,7 +869,7 @@
 					type: "item"
 				}
 			]
-			x: 32.0d
+			x: 32.5d
 			y: -2.0d
 		}
 		{
@@ -1013,7 +1003,7 @@
 					type: "item"
 				}
 			]
-			x: 58.0d
+			x: 57.5d
 			y: -0.5d
 		}
 		{
@@ -1043,7 +1033,7 @@
 				item: { count: 4, id: "modern_industrialization:gold_drill" }
 				type: "item"
 			}]
-			x: 31.5d
+			x: 32.0d
 			y: -4.0d
 		}
 		{
@@ -1054,7 +1044,7 @@
 				item: { count: 1, id: "modern_industrialization:gravichestplate" }
 				type: "item"
 			}]
-			x: 51.5d
+			x: 52.0d
 			y: -3.0d
 		}
 		{
@@ -2097,7 +2087,7 @@
 				item: { count: 4, id: "modern_industrialization:steel_drill" }
 				type: "item"
 			}]
-			x: 32.5d
+			x: 33.0d
 			y: -4.0d
 		}
 		{
@@ -2991,6 +2981,74 @@
 			}]
 			x: 29.0d
 			y: -6.5d
+		}
+		{
+			dependencies: ["40915337B7E427F8"]
+			id: "6C96992416059AC4"
+			rewards: [{
+				count: 6
+				id: "4B71F543F6BD31B1"
+				item: {
+					count: 1
+					id: "modern_industrialization:superconductor_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6541043066213D36"
+				item: { count: 1, id: "extended_industrialization:ultimate_laser_drill" }
+				type: "item"
+			}]
+			x: 51.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2C4CA092A557205E"]
+			id: "7436F6599E2D79C1"
+			tasks: [{
+				id: "46B542294E939548"
+				item: { count: 1, id: "extended_industrialization:nano_gravichestplate" }
+				type: "item"
+			}]
+			x: 52.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["20A093E5684D2E30"]
+			id: "40148704F9175B05"
+			rewards: [{
+				count: 6
+				id: "68367F55DFFFFA6B"
+				item: {
+					count: 1
+					id: "modern_industrialization:electronic_circuit"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "22AF7A1EA2328EE2"
+					item: { count: 1, id: "extended_industrialization:nano_helmet" }
+					type: "item"
+				}
+				{
+					id: "47D03BEB0A43D54A"
+					item: { count: 1, id: "extended_industrialization:nano_chestplate" }
+					type: "item"
+				}
+				{
+					id: "2DB52801D0870615"
+					item: { count: 1, id: "extended_industrialization:nano_leggings" }
+					type: "item"
+				}
+				{
+					id: "6C573453D165F3A3"
+					item: { count: 1, id: "extended_industrialization:nano_boots" }
+					type: "item"
+				}
+			]
+			x: 31.5d
+			y: -2.0d
 		}
 	]
 }
