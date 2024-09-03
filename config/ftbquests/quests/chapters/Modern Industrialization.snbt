@@ -3050,5 +3050,25 @@
 			x: 31.5d
 			y: -2.0d
 		}
+		{
+			dependencies: ["668453E081A6C57B"]
+			id: "18DED87B3E23350F"
+			rewards: [{
+				count: 3
+				id: "7F86356F98B5D3B3"
+				item: {
+					count: 1
+					id: "modern_industrialization:titanium_ingot"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F7C1E38FC571342"
+				item: { count: 1, id: "industrialization_overdrive:multi_processing_array" }
+				type: "item"
+			}]
+			x: 47.5d
+			y: 2.5d
+		}
 	]
 }
