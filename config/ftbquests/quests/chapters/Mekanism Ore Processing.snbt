@@ -393,6 +393,7 @@
 			tasks: [{
 				id: "0FA270C84C6558F4"
 				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:clean_iron" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 6.5d
@@ -415,6 +416,7 @@
 			tasks: [{
 				id: "0DB6520590E34A02"
 				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:dirty_iron" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 8.5d
@@ -422,6 +424,17 @@
 		}
 		{
 			dependencies: ["2021D16943D4FBBF"]
+			icon: {
+				components: {
+					"mekanism:chemicals": {
+						chemical_tanks: [{
+							amount: 64000L
+							id: "mekanism:oxygen"
+						}]
+					}
+				}
+				id: "mekanism:basic_chemical_tank"
+			}
 			id: "30BD7370506EBC6C"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -430,9 +443,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "1DD7ACF245A34D64"
-				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:oxygen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
-				type: "item"
+				id: "7DB0B81A5505C682"
+				type: "checkmark"
 			}]
 			x: 2.0d
 			y: 0.0d
@@ -457,6 +469,17 @@
 		}
 		{
 			dependencies: ["036F86DE98C328A0"]
+			icon: {
+				components: {
+					"mekanism:chemicals": {
+						chemical_tanks: [{
+							amount: 64000L
+							id: "mekanism:hydrogen_chloride"
+						}]
+					}
+				}
+				id: "mekanism:basic_chemical_tank"
+			}
 			id: "060D9F59EB26C7BD"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -465,9 +488,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "02454D9C800DA4DE"
-				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:hydrogen_chloride" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
-				type: "item"
+				id: "389DB2E4EE65148A"
+				type: "checkmark"
 			}]
 			x: 4.0d
 			y: -1.5d
@@ -495,6 +517,47 @@
 		}
 		{
 			dependencies: ["2021D16943D4FBBF"]
+			icon: {
+				components: {
+					"mekanism:chemicals": {
+						chemical_tanks: [{
+							amount: 64000L
+							id: "mekanism:hydrogen"
+						}]
+					}
+					"mekanism:owner": [I;
+						-1675135548
+						-1636741531
+						-1909550505
+						-472224227
+					]
+					"mekanism:side_config": {
+						config: {
+							chemicals: {
+								side: {
+									back: "input"
+									bottom: "input"
+									front: "output"
+									left: "input"
+									right: "input"
+									top: "input"
+								}
+							}
+							items: {
+								side: {
+									back: "input"
+									bottom: "input"
+									front: "output"
+									left: "input"
+									right: "input"
+									top: "input"
+								}
+							}
+						}
+					}
+				}
+				id: "mekanism:basic_chemical_tank"
+			}
 			id: "138DC280BDD0622B"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -504,10 +567,8 @@
 			}]
 			shape: "diamond"
 			tasks: [{
-				id: "2ED37AEF208AFE1A"
-				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:hydrogen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
-				match_components: "strict"
-				type: "item"
+				id: "3A3999A2EE9DE0DC"
+				type: "checkmark"
 			}]
 			x: 2.0d
 			y: 1.5d
@@ -524,6 +585,7 @@
 			tasks: [{
 				id: "5B46EAA815EC6493"
 				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "mekanism:brine" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 10.0d
@@ -531,6 +593,17 @@
 		}
 		{
 			dependencies: ["18D1995FE0140399"]
+			icon: {
+				components: {
+					"mekanism:chemicals": {
+						chemical_tanks: [{
+							amount: 64000L
+							id: "mekanism:chlorine"
+						}]
+					}
+				}
+				id: "mekanism:basic_chemical_tank"
+			}
 			id: "31203D3E004E1DAB"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -539,9 +612,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "7538F34675E34E9E"
-				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:chlorine" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
-				type: "item"
+				id: "53A786F991D7A4C4"
+				type: "checkmark"
 			}]
 			x: 7.0d
 			y: 1.5d
@@ -636,6 +708,47 @@
 		}
 		{
 			dependencies: ["038773FFAF3C8817"]
+			icon: {
+				components: {
+					"mekanism:chemicals": {
+						chemical_tanks: [{
+							amount: 64000L
+							id: "mekanism:hydrogen"
+						}]
+					}
+					"mekanism:owner": [I;
+						-1675135548
+						-1636741531
+						-1909550505
+						-472224227
+					]
+					"mekanism:side_config": {
+						config: {
+							chemicals: {
+								side: {
+									back: "input"
+									bottom: "input"
+									front: "output"
+									left: "input"
+									right: "input"
+									top: "input"
+								}
+							}
+							items: {
+								side: {
+									back: "input"
+									bottom: "input"
+									front: "output"
+									left: "input"
+									right: "input"
+									top: "input"
+								}
+							}
+						}
+					}
+				}
+				id: "mekanism:basic_chemical_tank"
+			}
 			id: "3DFE128A74C32B45"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -645,10 +758,8 @@
 			}]
 			shape: "diamond"
 			tasks: [{
-				id: "50E330FC2D30E86B"
-				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:hydrogen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
-				match_components: "strict"
-				type: "item"
+				id: "65144A4D4D68AAE4"
+				type: "checkmark"
 			}]
 			x: 5.5d
 			y: 1.5d
@@ -674,6 +785,17 @@
 		}
 		{
 			dependencies: ["16052CFE597B57F7"]
+			icon: {
+				components: {
+					"mekanism:chemicals": {
+						chemical_tanks: [{
+							amount: 64000L
+							id: "mekanism:sulfuric_acid"
+						}]
+					}
+				}
+				id: "mekanism:basic_chemical_tank"
+			}
 			id: "00B1AE0AB854AB40"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -682,9 +804,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "5774367AADC3912D"
-				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:sulfuric_acid" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
-				type: "item"
+				id: "18F378099191AE48"
+				type: "checkmark"
 			}]
 			x: 6.0d
 			y: -6.0d
@@ -712,6 +833,17 @@
 		}
 		{
 			dependencies: ["3A23D98042990591"]
+			icon: {
+				components: {
+					"mekanism:chemicals": {
+						chemical_tanks: [{
+							amount: 64000L
+							id: "mekanism:sulfur_trioxide"
+						}]
+					}
+				}
+				id: "mekanism:basic_chemical_tank"
+			}
 			id: "6E60988E8F8C4FF2"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -720,9 +852,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "4554313612DA8D78"
-				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:sulfur_trioxide" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
-				type: "item"
+				id: "4C4E6616B83D5B5F"
+				type: "checkmark"
 			}]
 			x: 2.0d
 			y: -6.0d
@@ -750,6 +881,17 @@
 		}
 		{
 			dependencies: ["19B997148ED10D99"]
+			icon: {
+				components: {
+					"mekanism:chemicals": {
+						chemical_tanks: [{
+							amount: 64000L
+							id: "mekanism:sulfur_dioxide"
+						}]
+					}
+				}
+				id: "mekanism:basic_chemical_tank"
+			}
 			id: "69F5B199CF819FC3"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -758,9 +900,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "501CE8BA11557A26"
-				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:sulfur_dioxide" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
-				type: "item"
+				id: "6C5BDDB0E5CA7FD9"
+				type: "checkmark"
 			}]
 			x: -2.0d
 			y: -6.0d
@@ -821,6 +962,47 @@
 		}
 		{
 			dependencies: ["3EFB11D06AF24423"]
+			icon: {
+				components: {
+					"mekanism:chemicals": {
+						chemical_tanks: [{
+							amount: 64000L
+							id: "mekanism:water_vapor"
+						}]
+					}
+					"mekanism:owner": [I;
+						-1675135548
+						-1636741531
+						-1909550505
+						-472224227
+					]
+					"mekanism:side_config": {
+						config: {
+							chemicals: {
+								side: {
+									back: "input"
+									bottom: "input"
+									front: "output"
+									left: "input"
+									right: "input"
+									top: "input"
+								}
+							}
+							items: {
+								side: {
+									back: "input"
+									bottom: "input"
+									front: "output"
+									left: "input"
+									right: "input"
+									top: "input"
+								}
+							}
+						}
+					}
+				}
+				id: "mekanism:basic_chemical_tank"
+			}
 			id: "57D104FF04B35463"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -829,9 +1011,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "1D04A1E39620F869"
-				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:water_vapor" }] } }, count: 1, id: "mekanism:basic_chemical_tank" }
-				type: "item"
+				id: "15E72AE278D27308"
+				type: "checkmark"
 			}]
 			x: 2.0d
 			y: -4.5d
@@ -894,6 +1075,17 @@
 		}
 		{
 			dependencies: ["038773FFAF3C8817"]
+			icon: {
+				components: {
+					"mekanism:chemicals": {
+						chemical_tanks: [{
+							amount: 64000L
+							id: "mekanism:oxygen"
+						}]
+					}
+				}
+				id: "mekanism:basic_chemical_tank"
+			}
 			id: "207613A34C3F10FA"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -903,10 +1095,8 @@
 			}]
 			shape: "diamond"
 			tasks: [{
-				id: "60000F1B6EFA59CE"
-				item: { components: { "mekanism:chemicals": { chemical_tanks: [{ amount: 64000L, id: "mekanism:oxygen" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_chemical_tank" }
-				match_components: "strict"
-				type: "item"
+				id: "151BCE88849FD995"
+				type: "checkmark"
 			}]
 			x: -2.0d
 			y: -4.5d
