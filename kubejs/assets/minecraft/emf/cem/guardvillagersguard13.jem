@@ -1,0 +1,613 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [128, 128],
+	"models": [
+		{
+			"part": "nose",
+			"id": "nose",
+			"invertAxis": "xy",
+			"translate": [0, -27, 4]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -23, 0],
+			"boxes": [
+				{"coordinates": [-4, 23, -4, 8, 10, 8], "textureOffset": [49, 99]},
+				{"coordinates": [-4.5, 22, -4.5, 9, 11, 9], "textureOffset": [0, 0]}
+			],
+			"submodels": [
+				{
+					"id": "nose2",
+					"invertAxis": "xy",
+					"translate": [0, 26.5, -4],
+					"boxes": [
+						{
+							"coordinates": [-1, -4.5, -2, 2, 4, 2],
+							"uvNorth": [56, 2, 58, 6],
+							"uvEast": [54, 2, 56, 6],
+							"uvSouth": [60, 2, 62, 6],
+							"uvWest": [58, 2, 60, 6],
+							"uvUp": [58, 2, 56, 0],
+							"uvDown": [60, 0, 58, 2]
+						}
+					]
+				},
+				{
+					"id": "left_eye",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [-2, 28, -4],
+					"submodels": [
+						{
+							"id": "l_eye_top",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, 0, 0.025]
+						},
+						{
+							"id": "l_eye_pupil",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0.5, -0.5, 0],
+							"submodels": [
+								{
+									"id": "l_eye_pupil_in",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [-0.5, 0, 0],
+									"submodels": [
+										{
+											"id": "l_eye_pupil_ou",
+											"invertAxis": "xy",
+											"mirrorTexture": "u",
+											"translate": [1, 0, 0],
+											"submodels": [
+												{
+													"id": "l_eye_pupil_do",
+													"invertAxis": "xy",
+													"mirrorTexture": "u",
+													"translate": [-0.5, -0.5, 0],
+													"submodels": [
+														{
+															"id": "l_eye_pupil_up",
+															"invertAxis": "xy",
+															"mirrorTexture": "u",
+															"translate": [0, 1, 0],
+															"boxes": [
+																{
+																	"coordinates": [-0.5, -2, -0.07, 1, 1, 0.3],
+																	"uvNorth": [62, 123, 63, 124],
+																	"uvEast": [62, 123, 63, 124],
+																	"uvSouth": [63, 123, 62, 124],
+																	"uvWest": [62, 123, 63, 124],
+																	"uvUp": [63, 124, 62, 123],
+																	"uvDown": [63, 124, 62, 123],
+																	"sizeAdd": 0.005
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "left_eye_white",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [-1, -1, 0],
+							"boxes": [
+								{
+									"coordinates": [0, -1, -0.03, 1, 1, 0.25],
+									"uvNorth": [63, 123, 64, 124],
+									"uvEast": [63, 123, 64, 124],
+									"uvSouth": [64, 123, 63, 124],
+									"uvWest": [63, 123, 64, 124],
+									"uvUp": [64, 124, 63, 123],
+									"uvDown": [64, 124, 63, 123]
+								}
+							]
+						},
+						{
+							"id": "left_eyelid",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, -1, 1],
+							"submodels": [
+								{
+									"id": "left_blink",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [0, 1, 0],
+									"boxes": [
+										{
+											"coordinates": [-1, -2, -0.08, 2, 1, 0.3],
+											"uvNorth": [62, 124, 64, 125],
+											"uvEast": [62, 124, 64, 125],
+											"uvSouth": [64, 124, 62, 125],
+											"uvWest": [62, 124, 64, 125],
+											"uvUp": [64, 124, 62, 125],
+											"uvDown": [64, 125, 62, 124],
+											"sizeAdd": 0.015
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "ctrl_l_pupil",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, 0, 0]
+						}
+					]
+				},
+				{
+					"id": "right_eye",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [2, 28, -4],
+					"submodels": [
+						{
+							"id": "r_eye_top",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, 0, 0.025]
+						},
+						{
+							"id": "r_eye_pupil",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [-0.5, -0.5, 0],
+							"submodels": [
+								{
+									"id": "r_eye_pupil_in",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [-0.5, 0, 0],
+									"submodels": [
+										{
+											"id": "r_eye_pupil_ou",
+											"invertAxis": "xy",
+											"mirrorTexture": "u",
+											"translate": [1, 0, 0],
+											"submodels": [
+												{
+													"id": "r_eye_pupil_do",
+													"invertAxis": "xy",
+													"mirrorTexture": "u",
+													"translate": [-0.5, -0.5, 0],
+													"submodels": [
+														{
+															"id": "r_eye_pupil_up",
+															"invertAxis": "xy",
+															"mirrorTexture": "u",
+															"translate": [0, 1, 0],
+															"boxes": [
+																{
+																	"coordinates": [-0.5, -2, -0.07, 1, 1, 0.3],
+																	"uvNorth": [59, 123, 60, 124],
+																	"uvEast": [59, 123, 60, 124],
+																	"uvSouth": [60, 123, 59, 124],
+																	"uvWest": [59, 123, 60, 124],
+																	"uvUp": [60, 124, 59, 123],
+																	"uvDown": [60, 124, 59, 123],
+																	"sizeAdd": 0.005
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "right_eye_white",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [1, -1, 0],
+							"boxes": [
+								{
+									"coordinates": [-1, -1, -0.03, 1, 1, 0.25],
+									"uvNorth": [58, 124, 59, 123],
+									"uvEast": [59, 124, 58, 123],
+									"uvSouth": [59, 124, 58, 123],
+									"uvWest": [58, 123, 59, 124],
+									"uvUp": [59, 124, 58, 123],
+									"uvDown": [59, 123, 58, 124]
+								}
+							]
+						},
+						{
+							"id": "right_eyelid",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, -1, 1],
+							"submodels": [
+								{
+									"id": "right_blink",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [0, 1, 0],
+									"boxes": [
+										{
+											"coordinates": [-1, -2, -0.08, 2, 1, 0.3],
+											"uvNorth": [58, 124, 60, 125],
+											"uvEast": [58, 124, 60, 125],
+											"uvSouth": [60, 124, 58, 125],
+											"uvWest": [58, 124, 60, 125],
+											"uvUp": [60, 124, 58, 125],
+											"uvDown": [60, 125, 58, 124],
+											"sizeAdd": 0.015
+										}
+									]
+								}
+							]
+						},
+						{
+							"id": "ctrl_r_pupil",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0, 0, 0]
+						}
+					]
+				},
+				{
+					"id": "right_brow",
+					"invertAxis": "xy",
+					"translate": [2, 28.5, -4],
+					"boxes": [
+						{
+							"coordinates": [-2.01, -1.5, -0.15, 3.02, 1, 0.25],
+							"uvNorth": [58, 122, 61, 123],
+							"uvEast": [58, 122, 61, 123],
+							"uvSouth": [61, 122, 58, 123],
+							"uvWest": [58, 122, 61, 123],
+							"uvUp": [61, 123, 58, 122],
+							"uvDown": [61, 123, 58, 122]
+						}
+					]
+				},
+				{
+					"id": "left_brow",
+					"invertAxis": "xy",
+					"translate": [-2, 28.5, -4],
+					"boxes": [
+						{
+							"coordinates": [-1.01, -1.5, -0.15, 3.02, 1, 0.25],
+							"uvNorth": [61, 122, 64, 123],
+							"uvEast": [61, 122, 64, 123],
+							"uvSouth": [64, 122, 61, 123],
+							"uvWest": [61, 122, 64, 123],
+							"uvUp": [64, 123, 61, 122],
+							"uvDown": [64, 123, 61, 122]
+						}
+					]
+				},
+				{
+					"id": "mouth",
+					"invertAxis": "xy",
+					"translate": [0, 27, -4],
+					"boxes": [
+						{
+							"coordinates": [-1.98, -3, -0.03, 4, 1, 0.25],
+							"uvNorth": [59, 125, 63, 126],
+							"uvEast": [59, 125, 63, 126],
+							"uvSouth": [63, 125, 59, 126],
+							"uvWest": [59, 125, 63, 126],
+							"uvUp": [63, 126, 59, 125],
+							"uvDown": [63, 126, 59, 125]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "shoulderPad_right",
+			"id": "shoulderPad_right",
+			"invertAxis": "xy",
+			"translate": [-0.5, -27.5, 0]
+		},
+		{
+			"part": "right_arm",
+			"id": "right_arm",
+			"invertAxis": "xy",
+			"translate": [-5, -22, 0],
+			"boxes": [
+				{"coordinates": [4, 12, -2, 4, 12, 4], "textureOffset": [32, 75]}
+			],
+			"submodels": [
+				{
+					"id": "right_shoulder",
+					"invertAxis": "xy",
+					"translate": [6, 24, 0],
+					"boxes": [
+						{"coordinates": [-2.5, -2.5, -3, 5, 3, 6], "textureOffset": [72, 33]}
+					]
+				}
+			]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"translate": [1.9, -12, 0],
+			"boxes": [
+				{
+					"coordinates": [-3.9, 0, -2, 4, 12, 4],
+					"uvNorth": [20, 32, 24, 44],
+					"uvEast": [28, 32, 24, 44],
+					"uvSouth": [28, 32, 32, 44],
+					"uvWest": [20, 32, 16, 44],
+					"uvUp": [24, 32, 20, 28],
+					"uvDown": [28, 28, 24, 32]
+				}
+			]
+		},
+		{
+			"part": "left_arm",
+			"id": "left_arm",
+			"invertAxis": "xy",
+			"translate": [5, -22, 0],
+			"boxes": [
+				{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [33, 48]}
+			],
+			"submodels": [
+				{
+					"id": "left_shoulder",
+					"invertAxis": "xy",
+					"translate": [-6, 24, 0],
+					"boxes": [
+						{"coordinates": [-2.5, -2.5, -3, 5, 3, 6], "textureOffset": [72, 33]}
+					]
+				}
+			]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [-1.9, -12, 0],
+			"boxes": [
+				{
+					"coordinates": [-0.1, 0, -2, 4, 12, 4],
+					"uvNorth": [24, 52, 20, 64],
+					"uvEast": [16, 52, 20, 64],
+					"uvSouth": [32, 52, 28, 64],
+					"uvWest": [24, 52, 28, 64],
+					"uvUp": [24, 52, 20, 48],
+					"uvDown": [28, 48, 24, 52]
+				}
+			]
+		},
+		{
+			"part": "hat",
+			"id": "hat",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"animations": [
+				{
+					"var.scared": "clamp(if(limb_speed>0.9, min(20, var.scared+0.1*frame_time*20), max(0, var.scared-0.1*frame_time*20)), 0, 1)",
+					"var.swim": "limb_swing/2 +age/4",
+					"var.pose": "if(is_riding||is_in_water&&!is_on_ground, 0, clamp(1-limb_speed*4, 0, 1))*clamp(random(id)+0.3, 0.3, 1)",
+					"var.ylook": "clamp(sin(var.r+age/60)*6, 0, 1)*1.2",
+					"var.nope": "clamp(-239 +cos(var.r+age/411)*240, 0, 1)/2*clamp(1-limb_speed*4, 0, 1) +if(head.rz!=0, 1, 0)",
+					"var.blink": "sin((10*sin(0.5*(random(id)+age/30)-1)))+sin(5*(random(id)+age/30)-1)",
+					"var.blink2": "sin(2*sin((age/75)+3))",
+					"var.jump": "if(is_child&&!is_on_ground&&!is_in_water&&limb_speed==0,1,0)",
+					"var.fall": "if(!is_on_ground&&!is_in_water&&!is_child&&limb_speed==0,1,0)",
+					"var.crossbow": "if(equals(left_arm.ry -torad(40), right_arm.ry +torad(40), torad(30)), 1, 0)",
+					"var.nov1": "if(var.crossbow==1, 0, clamp(-5.6 +cos(-pi/6 +var.r +age/80)*6, 0, 1)*clamp(2-limb_speed*4, 0, 1) )",
+					"var.nov2": "clamp(-39 +cos(-pi/4 +var.r +var.b/20)*40, 0, 1)*clamp(1-limb_speed*2, 0, 1)",
+					"var.nov3": " if(var.crossbow==1, clamp(-2 +cos(-pi/4 +var.r +var.b/10)*6, 0, 1)*clamp(2-limb_speed*3, 0, 1), 0)",
+					"var.r": "(pi*random(id)*4) +(limb_swing/20)*0",
+					"var.b": "age /(11 -random(id)*2)*if(is_child, 1.5, 1)",
+					"var.ls": "limb_swing/if( limb_speed>0.75, 1.4 +(0.2*random(id)), 1.1 +(0.2*random(id)))"
+				},
+				{
+					"quiver2.visible": "false"
+				},
+				{
+					"head.rx": "sin(torad(90)+var.ls*2)/8*limb_speed +torad(10) +clamp(-torad(10)*(limb_speed*3), torad(-10), 0) +sin(torad(-90)+var.b)/40 +torad(head_pitch)/1.4 -(sin(swing_progress*pi*2)/3)",
+					"head.ry": "torad(head_yaw)/1.2",
+					"head.rz": " sin(torad( 45)+var.ls)/15*limb_speed +torad(head_yaw)/4",
+					"head.tx": "-sin(var.ls)*limb_speed",
+					"head.ty": "if(is_riding, +7, if(is_in_water&&!is_on_ground,+10,0)+0.5 +(sin(var.b)/4 -sin(torad(if(limb_speed>=0.6, -45, 45))+var.ls*2 +if(limb_speed>=0.6, 0, -cos(var.ls*2)/3))*1.5*limb_speed)/1+(sin(pi*swing_progress)*2))",
+					"head.tz": "-sin(var.b)/4 +(sin(-pi*swing_progress)*2)",
+					"body.rx": "((sin(limb_swing+age/11)/40)*(1-limb_speed)) +torad(5)*limb_speed",
+					"body.ry": "-sin(limb_swing/1.2)/5*limb_speed/1.3",
+					"body.rz": "sin(torad(45)+limb_swing/1.2)/15 *limb_speed/1.3",
+					"body.tx": "head.tx",
+					"body.ty": "head.ty",
+					"body.tz": "head.tz"
+				},
+				{
+					"fake_right_arm.rx": "if(is_aggressive&&swing_progress==0, torad(-30)+sin(age/6)/10,if(!is_riding&&!is_on_ground&&is_in_water,torad(50) +cos(var.swim)/4*clamp(1-limb_speed*8, 0, 1) +(cos(var.swim +sin(var.swim)) +torad(30))*clamp(limb_speed*8, 0, 1), if(is_riding, torad(-45),  -sin(var.ls)*limb_speed ) -torad(head_yaw)/8 )   +torad( 5 )*var.pose +( -sin(-pi/3 +var.r+var.b +sin(var.r+var.b) )/6 )*var.nov2   +(sin(limb_swing/2) -pi/4)/2*if(is_hurt, -sin(hurt_time*pi/5)/6*hurt_time, 0)+if(swing_progress!=0,torad(40)-(todeg(-swing_progress/10)),0))",
+					"fake_right_arm.ry": "if(is_aggressive&&swing_progress==0, torad(-30)-sin(swing_progress*pi)*1.5,if(!is_riding&&!is_on_ground&&is_in_water,torad(-150) -sin(var.swim +cos(var.swim)/4)  *clamp(1-limb_speed*8, 0, 1) -(torad(-5) -cos(pi/8 +var.swim +sin(var.swim)/2 )/2 +clamp( sin(var.swim), 0, pi/2) )*clamp(limb_speed*8, 0, 1), if(is_riding,  torad(-20), 0) -torad(15)*clamp(limb_speed*4, 0, 1) -cos(var.r +var.b)/30 ) +torad(20)*var.pose)",
+					"fake_right_arm.rz": "if(is_aggressive&&swing_progress==0, +sin(age/8)/10,if(!is_riding&&!is_on_ground&&is_in_water, cos(var.swim)/2 +(torad(-20) -cos(var.swim)/2)  *clamp(  limb_speed*8, 0, 1), 0 ) -torad(head_pitch)/14 -torad(-8 +0.5*var.pose))+if(swing_progress!=0,torad(-30),0)",
+					"fake_right_arm.tx": "if(!is_riding&&!is_on_ground&&is_in_water,-5.5,-5.75)",
+					"fake_right_arm.tz": "if(!is_riding&&!is_on_ground&&is_in_water,-1,-0.25)",
+					"fake_right_arm.ty": "-24",
+					"fake_left_arm.rx": "if(is_aggressive&&swing_progress==0, torad(-30)+sin(age/6)/10,if(!is_riding&&!is_on_ground&&is_in_water,torad(-50) -cos(var.swim)/4*clamp(1-limb_speed*8, 0, 1) +(cos(var.swim +sin(var.swim)) +torad(30))*clamp(limb_speed*8, 0, 1), if(is_riding, torad(-45),  sin(var.ls)*limb_speed ) -torad(head_yaw)/8 )   +torad( 5 )*var.pose +( -sin(-pi/3 +var.r+var.b +sin(var.r+var.b) )/6 )*var.nov2   +(sin(limb_swing/2) -pi/4)/2*if(is_hurt, -sin(hurt_time*pi/5)/6*hurt_time, 0)+if(swing_progress!=0,torad(40)-(todeg(-swing_progress/10)),0))",
+					"fake_left_arm.ry": "if(is_aggressive&&swing_progress==0, torad(45)-sin(swing_progress*pi)*1.5,if(!is_riding&&!is_on_ground&&is_in_water,torad(-30) +sin(var.swim +cos(var.swim)/4)  *clamp(1-limb_speed*8, 0, 1) +(torad(-5) -cos(pi/8 +var.swim +sin(var.swim)/2 )/2 +clamp( sin(var.swim), 0, pi/2) )*clamp(limb_speed*8, 0, 1), if(is_riding,  torad(20), 0) +torad(15)*clamp(limb_speed*4, 0, 1) -cos(var.r +var.b)/30 ) +torad( 20)*var.pose)",
+					"fake_left_arm.rz": "if(is_aggressive&&swing_progress==0, sin(age/8)/10,if(!is_riding&&!is_on_ground&&is_in_water, cos(var.swim)/2 +(torad(-20) -cos(var.swim)/2)  *clamp(  limb_speed*8, 0, 1), 0 ) +torad(head_pitch)/14 +torad(-8 +0.5*var.pose))+if(swing_progress!=0,torad(30),0)",
+					"fake_left_arm.tx": "if(!is_riding&&!is_on_ground&&is_in_water,5.5,5.75)",
+					"fake_left_arm.tz": "if(!is_riding&&!is_on_ground&&is_in_water,-1,-0.25)",
+					"fake_left_arm.ty": "-24"
+				},
+				{
+					"left_arm.visible": "false",
+					"right_arm.visible": "false",
+					"left_arm.rx": "if(is_aggressive, fake_left_arm.rx+body.rx,torad(0))",
+					"left_arm.ry": "if(is_aggressive, fake_left_arm.ry+body.ry,torad(-90))",
+					"left_arm.rz": "if(is_aggressive, fake_left_arm.rz+body.rz,torad(-70))",
+					"left_arm.tx": "if(is_in_water&&!is_on_ground&&is_aggressive,+4.5,if(is_aggressive, fake_left_arm.tx+body.tx,body.tx-6.5))",
+					"left_arm.ty": "if(is_in_water&&!is_on_ground&&is_aggressive,+12,if(is_aggressive, fake_left_arm.ty+24+body.ty,body.ty+5))",
+					"left_arm.tz": "if(is_in_water&&!is_on_ground&&is_aggressive,0,if(is_aggressive, fake_left_arm.tz+body.tz,body.tz+0.75))",
+					"right_arm.rx": "if(is_aggressive, fake_right_arm.rx+body.rx,torad(0))",
+					"right_arm.ry": "if(is_aggressive, fake_right_arm.ry+body.ry,torad(90))",
+					"right_arm.rz": "if(is_aggressive, fake_right_arm.rz+body.rz,torad(70))",
+					"right_arm.tx": "if(is_in_water&&!is_on_ground&&is_aggressive,-6,if(is_aggressive, fake_right_arm.tx+body.tx,body.tx+6.5))",
+					"right_arm.ty": "if(is_in_water&&!is_on_ground&&is_aggressive,+11,if(is_aggressive, fake_right_arm.ty+24+body.ty,body.ty+5))",
+					"right_arm.tz": "if(is_in_water&&!is_on_ground&&is_aggressive,+0,if(is_aggressive, fake_right_arm.tz+body.tz,body.tz+3))"
+				},
+				{
+					"right_leg.rx": "if(is_riding, torad(-80), !is_riding&&!is_on_ground&&is_in_water,  sin(limb_swing+age/4)/1.5, ((sin(limb_swing+age/13)/40)*(1-limb_speed)) +sin(limb_swing/1.2)*limb_speed/1.3 +torad(10)*limb_speed) -torad(head_yaw)/30",
+					"right_leg.ry": "clamp(torad( 2 )-limb_speed, 0, torad( 2 )) +if(is_riding, torad( 20), 0)",
+					"right_leg.rz": "if(!is_riding&&!is_on_ground&&is_in_water,clamp((sin(limb_swing/10)),torad(-7.5),torad(7.5)),clamp(torad( 1 )-limb_speed, 0, torad( 1 )))",
+					"right_leg.tx": "-2",
+					"right_leg.ty": "0.2 +clamp(12 +(sin(torad( 90)+limb_swing/1.2)*3)*limb_speed +(1*limb_speed), 0, 12.2) +if(is_riding, +7, if(!is_riding&&!is_on_ground&&is_in_water, head.ty, 0))",
+					"right_leg.tz": "-sin(limb_swing/1.2)*1.2*limb_speed +if(is_riding, 0, -sin(limb_swing+age/13)/3) +torad(head_yaw)/2",
+					"left_leg.rx": " if(is_riding, torad(-80), !is_riding&&!is_on_ground&&is_in_water, -sin(limb_swing+age/4)/1.5, ((sin(limb_swing+age/13)/40)*(1-limb_speed)) -sin(limb_swing/1.2)*limb_speed/1.3 +torad(10)*limb_speed) +torad(head_yaw)/30",
+					"left_leg.ry": " clamp(torad(-5 )+limb_speed, torad(-5 ), 0) +if(is_riding, torad(-20), 0)",
+					"left_leg.rz": " if(!is_riding&&!is_on_ground&&is_in_water,clamp((-sin(limb_swing/10)),torad(-7.5),torad(7.5)),clamp(torad(-1 )+limb_speed, torad(-1 ), 0))",
+					"left_leg.tx": "  2",
+					"left_leg.ty": " 0.2 +clamp(12 +(sin(torad(-90)+limb_swing/1.2)*3)*limb_speed +(1*limb_speed), 0, 12.2) +if(is_riding, +7, if(!is_riding&&!is_on_ground&&is_in_water, head.ty, 0))",
+					"left_leg.tz": "  sin(limb_swing/1.2)*1.2*limb_speed +if(is_riding, 0, -sin(limb_swing+age/13)/3) -torad(head_yaw)/2"
+				},
+				{
+					"r_eye_top.ty": "clamp(head_pitch/60, -0.8, 0.5) +clamp(2*var.nov1, 0, 0.3) +0.3*var.nov3 +(-1.5 -cos(limb_swing/3)/2)/4*if(is_hurt, -sin(hurt_time*pi/5)/6*hurt_time, 0)",
+					"l_eye_top.ty": "clamp(head_pitch/60, -0.8, 0.5) +clamp(2*var.nov1, 0, 0.3) +0.3*var.nov3 +(-1.5 -cos(limb_swing/3)/2)/4*if(is_hurt, -sin(hurt_time*pi/5)/6*hurt_time, 0)",
+					"ctrl_r_pupil.tx": " 0.5 -head_yaw/(80 +160*var.ylook) +(-sin(pi/4+var.r+age/10)*3 -0.3 )*clamp(var.nov1*4, 0, 1)",
+					"ctrl_l_pupil.tx": "-0.5 -head_yaw/(80 +160*var.ylook) +(-sin(pi/4+var.r+age/10)*3 +0.3 )*clamp(var.nov1*4, 0, 1)",
+					"ctrl_r_pupil.ty": " 0.5 +clamp(head_pitch/80, -0.5, 0.5) +( -cos(var.r+var.b +sin(var.r+var.b) )/4 )*var.nov2 +clamp(2*var.nov1, 0, 0.3) +0.3*var.nov3 +(-1 -cos(limb_swing/3)/2)*if(is_hurt, -sin(hurt_time*pi/5)/6*hurt_time, 0)",
+					"ctrl_l_pupil.ty": "ctrl_r_pupil.ty",
+					"right_blink.sy": "clamp(1.5 -abs(sin(var.r+age/8)*6), 0, 1)*clamp(-32 +cos((var.r+age/8)/1.5)*40 +cos((var.r+age/8)/4)*40, 0, 1)",
+					"left_blink.sy": " clamp(1.5 -abs(sin(var.r+age/8)*6), 0, 1)*clamp(-32 +cos((var.r+age/8)/1.5)*40 +cos((var.r+age/8)/4)*40, 0, 1)*clamp(1-var.nov3*2, 0, 1) +clamp(-4+var.nov3*6, 0, 1)",
+					"right_brow.tx": "-2 +( cos(-pi/3 +var.r+var.b )/6 +0.05 )*var.nov2 +0.1*var.nov3",
+					"left_brow.tx": "-right_brow.tx",
+					"right_brow.ty": "-28.5 +clamp(-sin(var.r+age /110)*4, -0.3, 0) +clamp(head_pitch/60, -0.8, 0.5)*1.2 +clamp(-torad(head_yaw)/2, -0.5, 0.2)*clamp(-sin(var.r+age/90)*6, 0, 1)*(0.6+0.4*var.ylook*random(id)) +(-1 +sin(-var.r)/3)/4*clamp(-4 +sin(var.r +age/97)*8, 0, 1)*random(id) -sin(hurt_time*pi/10)*(1.5 +sin(limb_swing/3)) +if(limb_speed>0.5, sin(pi/4+var.ls*2)/8*limb_speed*(1+random(sin(id))), 0) +( cos(-pi/3 +var.r+var.b )/1.5 -0.1 )*var.nov2 -0.2*var.nov1 -0.2*var.nov3",
+					"left_brow.ty": " -28.5 +clamp(-sin(var.r+age /110)*4, -0.3, 0) +clamp(head_pitch/60, -0.8, 0.5)*1.2 +clamp( torad(head_yaw)/2, -0.5, 0.2)*clamp(-sin(var.r+age/90)*6, 0, 1)*(0.6+0.4*var.ylook*random(id)) +(-1 +cos(-var.r)/3)/4*clamp(-4 +sin(var.r +age/97)*8, 0, 1)*random(id) -sin(hurt_time*pi/10)*(1.5 -sin(limb_swing/3)) +if(limb_speed>0.5, sin(     var.ls*2)/8*limb_speed*(1+random(cos(id))), 0) +( cos(-pi/3 +var.r+var.b )/1.5 -0.1 )*var.nov2 -0.2*var.nov1 +0.4*var.nov3",
+					"right_brow.rz": "      clamp( sin(var.r+age /110), 0, torad( 5)) +torad(5)*clamp(-4 +sin(var.r +age/97)*8, 0, 1)*random(id) +( cos(-pi/3 +var.r+var.b )/10 +torad(2) )*var.nov2 +torad(5)*var.nov3",
+					"left_brow.rz": "       clamp(-sin(var.r+age /110), torad(-5), 0) -torad(5)*clamp(-4 +sin(var.r +age/97)*8, 0, 1)*random(id) -( cos(-pi/3 +var.r+var.b )/10 +torad(2) )*var.nov2 -torad(5)*var.nov3",
+					"nose2.rx": " sin(           limb_swing/0.6)/4*limb_speed/1.3 +clamp(-head.rx/1.5, torad(-45), 0)",
+					"nose2.rz": "if(limb_speed>=0.1, -sin(torad(-45)+limb_swing/1.2)/4*limb_speed/1.3 +if(head.rz!=0, sin(torad(-135)+(limb_swing/2+age)/2)/10 , 0) -torad(head_yaw)/6, 0)"
+				},
+				{
+					"right_eye.sz": "if(between(player_pos_x-pos_x, -30, 30)&&between(player_pos_y-pos_y, -30, 30)&&between(player_pos_z-pos_z, -30, 30), 1, 2)",
+					"left_eye.sz": "right_eye.sz",
+					"right_eye_white.sx": "2",
+					"right_eye_white.sy": "clamp(1 -(r_eye_top.ty), 0.5, 3)",
+					"r_eye_pupil.tx": "clamp(ctrl_r_pupil.tx, -0.5, 0.5)",
+					"r_eye_pupil.ty": "clamp(ctrl_r_pupil.ty, r_eye_top.ty, 1)",
+					"r_eye_pupil_up.sy": "clamp(1 -(ctrl_r_pupil.ty-0.5)              , 0.5, clamp(1-r_eye_top.ty, 0.5, 1))",
+					"r_eye_pupil_do.sy": "clamp(1 +(ctrl_r_pupil.ty-0.5) -r_eye_top.ty, 0.5, 1)",
+					"r_eye_pupil_in.sx": "clamp(1 -(ctrl_r_pupil.tx-0.5)              , 0.75, 1)",
+					"r_eye_pupil_ou.sx": "clamp(1 +(ctrl_r_pupil.tx+0.5)              , 1, 1)",
+					"right_eyelid.sy": "clamp(right_eye_white.sy, 1, 4)",
+					"right_eyelid.sz": "if(right_eyelid.sy==0||right_blink.sy==0, 0, 1)",
+					"right_eyelid.tz": "0",
+					"left_eye_white.sx": "2",
+					"left_eye_white.sy": "clamp(1 -(l_eye_top.ty), 0.5, 3)",
+					"l_eye_pupil.tx": "clamp(ctrl_l_pupil.tx, -0.5, 0.5)",
+					"l_eye_pupil.ty": "clamp(ctrl_l_pupil.ty, l_eye_top.ty, 1)",
+					"l_eye_pupil_up.sy": "clamp(1 -(ctrl_l_pupil.ty-0.5)              , 0.5, clamp(1-l_eye_top.ty, 0.5, 1))",
+					"l_eye_pupil_do.sy": "clamp(1 +(ctrl_l_pupil.ty-0.5) -l_eye_top.ty, 0.5, 1)",
+					"l_eye_pupil_in.sx": "clamp(1 -(ctrl_l_pupil.tx-0.5)              , 1, 1)",
+					"l_eye_pupil_ou.sx": "clamp(1 +(ctrl_l_pupil.tx+0.5)              , 0.75, 1)",
+					"left_eyelid.sy": "clamp(left_eye_white.sy, 1, 4)",
+					"left_eyelid.sz": "if(left_eyelid.sy==0||left_blink.sy==0, 0, 1)",
+					"left_eyelid.tz": "0"
+				}
+			]
+		},
+		{
+			"part": "quiver",
+			"id": "quiver",
+			"invertAxis": "xy",
+			"translate": [0.5, -21, -2.3]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 12, -2, 8, 12, 4], "textureOffset": [52, 50], "sizeAdd": 0.25}
+			],
+			"submodels": [
+				{
+					"id": "fake_right_arm",
+					"invertAxis": "xy",
+					"translate": [6, 24, 0],
+					"boxes": [
+						{
+							"coordinates": [-2, -12, -2, 4, 12, 4],
+							"uvNorth": [36, 79, 40, 91],
+							"uvEast": [32, 79, 36, 91],
+							"uvSouth": [44, 79, 48, 91],
+							"uvWest": [40, 79, 44, 91],
+							"uvUp": [40, 79, 36, 75],
+							"uvDown": [44, 75, 40, 79]
+						}
+					],
+					"submodels": [
+						{
+							"id": "right_shoulder_fake",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{"coordinates": [-2.5, -2.5, -3, 5, 3, 6], "textureOffset": [72, 33]}
+							]
+						}
+					]
+				},
+				{
+					"id": "fake_left_arm",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [-6, 24, 0],
+					"boxes": [
+						{
+							"coordinates": [-2, -12, -2, 4, 12, 4],
+							"uvNorth": [41, 52, 37, 64],
+							"uvEast": [45, 52, 41, 64],
+							"uvSouth": [45, 52, 49, 64],
+							"uvWest": [37, 52, 33, 64],
+							"uvUp": [37, 52, 41, 48],
+							"uvDown": [41, 48, 45, 52]
+						}
+					],
+					"submodels": [
+						{
+							"id": "left_shoulder_fake",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{"coordinates": [-2.5, -2.5, -3, 5, 3, 6], "textureOffset": [72, 33]}
+							]
+						}
+					]
+				},
+				{
+					"id": "quiver2",
+					"invertAxis": "xy",
+					"translate": [0, 24, 0],
+					"boxes": [
+						{"coordinates": [-3, -11, 2.3, 5, 10, 5], "textureOffset": [100, 0]}
+					]
+				}
+			]
+		},
+		{
+			"part": "shoulderPad_left",
+			"id": "shoulderPad_left",
+			"invertAxis": "xy",
+			"translate": [0.5, -27.5, 0]
+		},
+		{
+			"part": "root",
+			"id": "root",
+			"invertAxis": "xy",
+			"translate": [0.5, -27.5, 0]
+		}
+	]
+}

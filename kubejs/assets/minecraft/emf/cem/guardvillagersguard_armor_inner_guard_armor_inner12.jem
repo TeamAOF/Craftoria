@@ -1,0 +1,142 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{
+					"coordinates": [-4, 24, -4, 8, 10, 8],
+					"uvNorth": [8, 8, 16, 16],
+					"uvEast": [0, 8, 8, 16],
+					"uvSouth": [24, 8, 32, 16],
+					"uvWest": [16, 8, 24, 16],
+					"uvUp": [16, 8, 8, 0],
+					"uvDown": [24, 0, 16, 8],
+					"sizeAdd": 0.5
+				},
+				{
+					"coordinates": [-4, 24, -4, 8, 10, 8],
+					"uvNorth": [40, 8, 48, 16],
+					"uvEast": [32, 8, 40, 16],
+					"uvSouth": [56, 8, 64, 16],
+					"uvWest": [48, 8, 56, 16],
+					"uvUp": [48, 8, 40, 0],
+					"uvDown": [56, 0, 48, 8],
+					"sizeAdd": 0.75
+				}
+			],
+			"animations": [
+				{
+					"var.swim": "limb_swing/2 +age/4",
+					"var.pose": "if(is_riding||is_in_water&&!is_on_ground, 0, clamp(1-limb_speed*4, 0, 1))*clamp(random(id)+0.3, 0.3, 1)",
+					"var.nov2": "clamp(-39 +cos(-pi/4 +var.r +var.b/20)*40, 0, 1)*clamp(1-limb_speed*2, 0, 1)",
+					"var.r": "(pi*random(id)*4) +(limb_swing/20)*0",
+					"var.b": "age /(11 -random(id)*2)*if(is_child, 1.5, 1)",
+					"var.ls": "limb_swing/if( limb_speed>0.75, 1.4 +(0.2*random(id)), 1.1 +(0.2*random(id)))"
+				},
+				{
+					"fake_left_arm.visible": "true",
+					"fake_right_arm.visible": "true",
+					"fake_right_arm.rx": "if(is_aggressive&&swing_progress==0, torad(-30)+sin(age/6)/10,if(!is_riding&&!is_on_ground&&is_in_water,torad(50) +cos(var.swim)/4*clamp(1-limb_speed*8, 0, 1) +(cos(var.swim +sin(var.swim)) +torad(30))*clamp(limb_speed*8, 0, 1), if(is_riding, torad(-45),  -sin(var.ls)*limb_speed ) -torad(head_yaw)/8 )   +torad( 5 )*var.pose +( -sin(-pi/3 +var.r+var.b +sin(var.r+var.b) )/6 )*var.nov2   +(sin(limb_swing/2) -pi/4)/2*if(is_hurt, -sin(hurt_time*pi/5)/6*hurt_time, 0)+if(swing_progress!=0,torad(30)-(todeg(swing_progress/10)),0))",
+					"fake_right_arm.ry": "if(is_aggressive&&swing_progress==0, torad(-30)-sin(swing_progress*pi)*1.5,if(!is_riding&&!is_on_ground&&is_in_water,torad(-150) -sin(var.swim +cos(var.swim)/4)  *clamp(1-limb_speed*8, 0, 1) -(torad(-5) -cos(pi/8 +var.swim +sin(var.swim)/2 )/2 +clamp( sin(var.swim), 0, pi/2) )*clamp(limb_speed*8, 0, 1), if(is_riding,  torad(-20), 0) -torad(15)*clamp(limb_speed*4, 0, 1) -cos(var.r +var.b)/30 ) +torad(20)*var.pose)",
+					"fake_right_arm.rz": "if(is_aggressive&&swing_progress==0, +sin(age/8)/10,if(!is_riding&&!is_on_ground&&is_in_water, cos(var.swim)/2 +(torad(-20) -cos(var.swim)/2)  *clamp(  limb_speed*8, 0, 1), 0 ) -torad(head_pitch)/14 -torad(-8 +0.5*var.pose))",
+					"fake_right_arm.tx": "if(!is_riding&&!is_on_ground&&is_in_water,-5.5,-5.75)",
+					"fake_right_arm.tz": "if(!is_riding&&!is_on_ground&&is_in_water,-1,-0.25)",
+					"fake_right_arm.ty": "-24",
+					"fake_left_arm.rx": "if(is_aggressive&&swing_progress==0, torad(-30)+sin(age/6)/10,if(!is_riding&&!is_on_ground&&is_in_water,torad(-50) -cos(var.swim)/4*clamp(1-limb_speed*8, 0, 1) +(cos(var.swim +sin(var.swim)) +torad(30))*clamp(limb_speed*8, 0, 1), if(is_riding, torad(-45),  sin(var.ls)*limb_speed ) -torad(head_yaw)/8 )   +torad( 5 )*var.pose +( -sin(-pi/3 +var.r+var.b +sin(var.r+var.b) )/6 )*var.nov2   +(sin(limb_swing/2) -pi/4)/2*if(is_hurt, -sin(hurt_time*pi/5)/6*hurt_time, 0)+if(swing_progress!=0,torad(30)-(todeg(swing_progress/10)),0))",
+					"fake_left_arm.ry": "if(is_aggressive&&swing_progress==0, torad(45)-sin(swing_progress*pi)*1.5,if(!is_riding&&!is_on_ground&&is_in_water,torad(-30) +sin(var.swim +cos(var.swim)/4)  *clamp(1-limb_speed*8, 0, 1) +(torad(-5) -cos(pi/8 +var.swim +sin(var.swim)/2 )/2 +clamp( sin(var.swim), 0, pi/2) )*clamp(limb_speed*8, 0, 1), if(is_riding,  torad(20), 0) +torad(15)*clamp(limb_speed*4, 0, 1) -cos(var.r +var.b)/30 ) +torad( 20)*var.pose)",
+					"fake_left_arm.rz": "if(is_aggressive&&swing_progress==0, sin(age/8)/10,if(!is_riding&&!is_on_ground&&is_in_water, cos(var.swim)/2 +(torad(-20) -cos(var.swim)/2)  *clamp(  limb_speed*8, 0, 1), 0 ) +torad(head_pitch)/14 +torad(-8 +0.5*var.pose))",
+					"fake_left_arm.tx": "if(!is_riding&&!is_on_ground&&is_in_water,5.5,5.75)",
+					"fake_left_arm.tz": "if(!is_riding&&!is_on_ground&&is_in_water,-1,-0.25)",
+					"fake_left_arm.ty": "-24"
+				}
+			]
+		},
+		{
+			"part": "hat",
+			"id": "hat",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"boxes": [
+				{"coordinates": [-4, 12, -2, 8, 12, 4], "textureOffset": [16, 16], "sizeAdd": 0.5}
+			],
+			"submodels": [
+				{
+					"id": "fake_right_arm",
+					"invertAxis": "xy",
+					"translate": [6, 24, 0],
+					"boxes": [
+						{"coordinates": [-2, -12, -2, 4, 12, 4], "textureOffset": [40, 16], "sizeAdd": 0.5}
+					]
+				},
+				{
+					"id": "fake_left_arm",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [-6, 24, 0],
+					"submodels": [
+						{
+							"id": "left_arm_sub_0",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [6, -24, 0],
+							"boxes": [
+								{"coordinates": [-8, 12, -2, 4, 12, 4], "textureOffset": [40, 16], "sizeAdd": 0.5}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"part": "right_arm",
+			"id": "right_arm",
+			"invertAxis": "xy",
+			"translate": [-6, -22, 0]
+		},
+		{
+			"part": "left_arm",
+			"id": "left_arm",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [6, -22, 0]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [-2, -12, 0],
+			"boxes": [
+				{"coordinates": [0, 0, -2, 4, 12, 4], "textureOffset": [0, 16], "sizeAdd": 0.5}
+			]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [2, -12, 0],
+			"submodels": [
+				{
+					"id": "left_leg_sub_0",
+					"invertAxis": "xy",
+					"mirrorTexture": "u",
+					"translate": [0, 0, 0],
+					"boxes": [
+						{"coordinates": [-4, 0, -2, 4, 12, 4], "textureOffset": [0, 16], "sizeAdd": 0.5}
+					]
+				}
+			]
+		}
+	]
+}
