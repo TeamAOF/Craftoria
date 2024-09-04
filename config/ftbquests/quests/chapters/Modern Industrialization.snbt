@@ -45,8 +45,8 @@
 			image: "modern_industrialization:block/machines/nuclear_reactor/overlay_front_active"
 			rotation: 0.0d
 			width: 2.0d
-			x: 55.71d
-			y: 2.5d
+			x: 55.5d
+			y: 3.0d
 		}
 		{
 			height: 2.33d
@@ -3070,6 +3070,40 @@
 			}]
 			x: 47.5d
 			y: 2.5d
+		}
+		{
+			dependencies: [
+				"156575F76CAB51A0"
+				"7342F6461382E839"
+			]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"trofers:trophy": "trofers:modern_industrialization"
+				}
+				id: "trofers:medium_pillar"
+			}
+			icon_scale: 1.25d
+			id: "045D5406A58CA1A9"
+			rewards: [{
+				id: "24533E301AF0D5EC"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:modern_industrialization"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "0A3A3817F4660E79"
+				type: "checkmark"
+			}]
+			x: 61.25d
+			y: 3.75d
 		}
 	]
 }

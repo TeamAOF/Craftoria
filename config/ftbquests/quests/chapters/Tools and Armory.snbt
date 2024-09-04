@@ -36,8 +36,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: -7.0d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			id: "68107A111627BD77"
@@ -46,8 +46,8 @@
 				item: { count: 1, id: "mininggadgets:modificationtable" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -7.0d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["68107A111627BD77"]
@@ -75,8 +75,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -8.5d
+			x: -4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["68107A111627BD77"]
@@ -104,8 +104,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -5.5d
+			x: -4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["68107A111627BD77"]
@@ -143,8 +143,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: -5.5d
+			x: -7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["68107A111627BD77"]
@@ -172,8 +172,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: -5.0d
+			x: -6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["68107A111627BD77"]
@@ -196,8 +196,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: -7.0d
+			x: -8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["68107A111627BD77"]
@@ -225,8 +225,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: -8.5d
+			x: -7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["68107A111627BD77"]
@@ -254,8 +254,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: -9.0d
+			x: -6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3CEBC51DB3555C3E"]
@@ -599,38 +599,6 @@
 			y: 0.0d
 		}
 		{
-			id: "34851881729019E9"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2F70D8244B436087"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "6C741AF2DAE3E8D6"
-				item: { count: 1, id: "mekanismtools:iron_paxel" }
-				type: "item"
-			}]
-			x: -7.5d
-			y: -1.5d
-		}
-		{
-			id: "20C64AAAD2B29F3C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "357E5866225A7115"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "7BE9496B4205F651"
-				item: { count: 1, id: "mekanism:atomic_disassembler" }
-				type: "item"
-			}]
-			x: -7.5d
-			y: -2.5d
-		}
-		{
 			dependencies: ["0F5FE44BAC4E06D4"]
 			id: "40564F697C9E1342"
 			rewards: [{
@@ -664,7 +632,7 @@
 					type: "item"
 				}
 			]
-			x: 7.0d
+			x: 6.0d
 			y: -2.0d
 		}
 		{
@@ -684,7 +652,7 @@
 				item: { count: 1, id: "aquaculture:neptunium_fishing_rod" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 4.5d
 			y: 1.5d
 		}
 		{
@@ -711,7 +679,7 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
+			x: 4.5d
 			y: -1.5d
 		}
 		{
@@ -731,7 +699,7 @@
 				item: { count: 1, id: "aquaculture:neptunium_helmet" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 7.5d
 			y: -1.5d
 		}
 		{
@@ -751,7 +719,7 @@
 				item: { count: 1, id: "aquaculture:neptunium_chestplate" }
 				type: "item"
 			}]
-			x: 9.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -771,7 +739,7 @@
 				item: { count: 1, id: "aquaculture:neptunium_leggings" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 7.5d
 			y: 1.5d
 		}
 		{
@@ -791,7 +759,7 @@
 				item: { count: 1, id: "aquaculture:neptunium_boots" }
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.0d
 			y: 2.0d
 		}
 		{
@@ -811,7 +779,7 @@
 				item: { count: 1, id: "aquaculture:neptunium_bow" }
 				type: "item"
 			}]
-			x: 5.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -830,40 +798,8 @@
 				item: { count: 1, id: "aquaculture:neptunium_ingot" }
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.0d
 			y: 0.0d
-		}
-		{
-			id: "388F33607D9D951E"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5653B570FDD1F838"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "7A70075492A2C6C4"
-				item: { count: 1, id: "modern_industrialization:diesel_mining_drill" }
-				type: "item"
-			}]
-			x: -6.5d
-			y: -2.5d
-		}
-		{
-			id: "5A13F163564B895F"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2328A1D91A40FA63"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "7ADDC558F8E117C8"
-				item: { count: 1, id: "modern_industrialization:steam_mining_drill" }
-				type: "item"
-			}]
-			x: -6.5d
-			y: -1.5d
 		}
 	]
 }

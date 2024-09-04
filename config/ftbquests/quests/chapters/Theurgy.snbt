@@ -1037,5 +1037,76 @@
 			x: 3.75d
 			y: -5.2d
 		}
+		{
+			dependencies: [
+				"1CD1F5A08AE6E557"
+				"508E110FF82365E3"
+				"19F7B6A670D4A707"
+				"1EBE2B9A6CCE5A69"
+				"4F2C4595C25E23E1"
+				"6DA3C5DEE0F6438D"
+				"4E8963E1C18ADBAB"
+				"0E30CFA6C5B58BEA"
+				"357B4B559D714994"
+				"248175A1E0825C2F"
+				"79A693466BF51105"
+				"5D584858B61E534B"
+				"572C71DE329567B2"
+				"53DEE3EF1297B630"
+				"1CD28836E7FEFB0D"
+				"077658D04D0D4AB3"
+				"7A6C1605F32F695F"
+				"266E065B5B4C91E3"
+				"376DD70A2C14F9A9"
+				"790B49348370BE10"
+				"3B117FA99DD7558F"
+				"51E386BC7692D06C"
+				"30FB66E92909D4B9"
+				"1FF9FB01DBE735FC"
+				"695A9A54CFD509FF"
+				"7D2EC8B058A5551F"
+				"7DD81584380EE8F7"
+				"5B9BFD4F72E79F5B"
+				"255021677AF472E9"
+				"58E5ADE9A50BDF29"
+				"55391FF509DA53A5"
+				"0D1AFCAD90FAA4F9"
+				"4E6BB4279E8E793A"
+				"3DC47060EEAB8975"
+				"7C38A9BA01CA3772"
+				"2F7A213261682E1B"
+				"5143D5FD55C819CA"
+				"367A013744D689E4"
+				"45013F74F5B4A93E"
+			]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"trofers:trophy": "trofers:theurgy"
+				}
+				id: "trofers:medium_pillar"
+			}
+			icon_scale: 1.25d
+			id: "49CD3CFE65261255"
+			rewards: [{
+				id: "5571144CA6CD7D7D"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:theurgy"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				id: "4D5812F798FB8C8C"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
 	]
 }
