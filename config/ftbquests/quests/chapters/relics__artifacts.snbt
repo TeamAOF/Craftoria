@@ -53,7 +53,7 @@
 			y: -8.0d
 		}
 	]
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -1580,17 +1580,24 @@
 			}
 			icon_scale: 1.25d
 			id: "4B0EC73FFFCB1493"
-			rewards: [{
-				id: "4D7B7E333B30169D"
-				item: {
-					components: {
-						"trofers:trophy": "trofers:relics"
+			rewards: [
+				{
+					id: "4D7B7E333B30169D"
+					item: {
+						components: {
+							"trofers:trophy": "trofers:relics"
+						}
+						count: 1
+						id: "trofers:medium_pillar"
 					}
-					count: 1
-					id: "trofers:medium_pillar"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "38C1E9031A463A73"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+			]
 			shape: "hexagon"
 			size: 3.0d
 			tasks: [{
