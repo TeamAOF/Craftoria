@@ -1,0 +1,1604 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "relics__artifacts"
+	group: "07A79347BA55DCA4"
+	icon: {
+		components: {
+			"relics:data": {
+				abilities: {
+					abilities: {
+						dissection: {
+							cooldown: 0
+							cooldownCap: 0
+							points: 0
+							stats: {
+								distance: {
+									initialValue: 17.87341d
+								}
+								time: {
+									initialValue: 6.3903d
+								}
+							}
+							ticking: 0b
+						}
+					}
+				}
+				leveling: {
+					experience: 0
+					level: 0
+					luck: 0
+					points: 0
+				}
+			}
+		}
+		id: "relics:space_dissector"
+	}
+	id: "2A4C06811555B5D0"
+	images: [
+		{
+			height: 2.5d
+			image: "ftbquests:textures/gui/relics.png"
+			rotation: 0.0d
+			width: 9.0d
+			x: -2.0d
+			y: -7.65d
+		}
+		{
+			height: 3.0d
+			image: "ftbquests:textures/gui/artifacts.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: -12.375d
+			y: -8.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1A7191A0861F8923"
+			rewards: [{
+				count: 15
+				id: "0C63508E46C3BF10"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "015AB5CE32827AEF"
+				item: { components: { "relics:data": { abilities: { abilities: { explode: { cooldown: 0, cooldownCap: 0, points: 0, stats: { capacity: { initialValue: 49.49967d }, damage: { initialValue: 0.48611d }, stun: { initialValue: 0.14606d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:reflection_necklace" }
+				type: "item"
+			}]
+			x: -1.875d
+			y: -1.875d
+		}
+		{
+			id: "24C3C90286D92869"
+			rewards: [{
+				count: 15
+				id: "7FFCC9FAB9A2600D"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "4B75B7E86679964B"
+				item: { components: { "relics:data": { abilities: { abilities: { heat_resistance: { cooldown: 0, cooldownCap: 0, points: 0, stats: { }, ticking: 0b }, pace: { cooldown: 0, cooldownCap: 0, points: 0, stats: { time: { initialValue: 35.00287d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:magma_walker" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -5.625d
+		}
+		{
+			id: "73408E37869116A3"
+			rewards: [{
+				count: 15
+				id: "793AF17C435A244B"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "2ABDAFA70CAE3BCE"
+				item: { components: { "relics:data": { abilities: { abilities: { walking: { cooldown: 0, cooldownCap: 0, points: 0, stats: { time: { initialValue: 38.12382d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:aqua_walker" }
+				type: "item"
+			}]
+			x: -4.375d
+			y: -3.125d
+		}
+		{
+			id: "361C81931FEA5411"
+			rewards: [{
+				count: 15
+				id: "4F54CA498AD58FAF"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "79BC78C1C134331B"
+				item: { components: { "relics:data": { abilities: { abilities: { backstab: { cooldown: 0, cooldownCap: 0, points: 0, stats: { damage: { initialValue: 1.54473d }, distance: { initialValue: 18.18224d } }, ticking: 0b }, vanish: { cooldown: 0, cooldownCap: 0, points: 0, stats: { light: { initialValue: 1.93047d }, speed: { initialValue: 0.31907d } }, ticking: 1b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:midnight_robe" }
+				type: "item"
+			}]
+			x: 1.25d
+			y: -4.375d
+		}
+		{
+			id: "0073FC661C34F787"
+			rewards: [{
+				count: 15
+				id: "2F5AC215DB674A76"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "7311EF27CC52E1BF"
+				item: { components: { "relics:data": { abilities: { abilities: { anchor: { cooldown: 0, cooldownCap: 0, points: 0, stats: { sinking: { initialValue: 4.16402d }, slowness: { initialValue: 0.35018d } }, ticking: 0b }, pressure: { cooldown: 0, cooldownCap: 0, points: 0, stats: { damage: { initialValue: 1.59464d } }, ticking: 0b }, riptide: { cooldown: 0, cooldownCap: 0, points: 0, stats: { cooldown: { initialValue: 7.82189d } }, ticking: 0b }, slots: { cooldown: 0, cooldownCap: 0, points: 0, stats: { charm: { initialValue: 0.05835d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:drowned_belt" }
+				type: "item"
+			}]
+			x: -3.75d
+			y: -5.625d
+		}
+		{
+			id: "1DBBF47A0E25730F"
+			rewards: [{
+				count: 15
+				id: "0DDF7B04203E629B"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "4888C8E580C48680"
+				item: { components: { "relics:data": { abilities: { abilities: { paralysis: { cooldown: 0, cooldownCap: 0, points: 0, stats: { duration: { initialValue: 0.79717d } }, ticking: 0b }, shock: { cooldown: 0, cooldownCap: 0, points: 0, stats: { damage: { initialValue: 1.86657d } }, ticking: 1b }, unsinkable: { cooldown: 0, cooldownCap: 0, points: 0, stats: { }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:jellyfish_necklace" }
+				type: "item"
+			}]
+			x: -1.25d
+			y: -5.625d
+		}
+		{
+			id: "3F299717033E967F"
+			rewards: [{
+				count: 15
+				id: "5558A25CAFC87C17"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "47FED010DD90362D"
+				item: { components: { "relics:data": { abilities: { abilities: { slots: { cooldown: 0, cooldownCap: 0, points: 0, stats: { charm: { initialValue: 1.1579d } }, ticking: 0b }, training: { cooldown: 0, cooldownCap: 0, points: 0, stats: { damage: { initialValue: 1.70586d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:hunter_belt" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.375d
+		}
+		{
+			id: "2B9944C95AB4BBEA"
+			rewards: [{
+				count: 15
+				id: "09A458AF57343158"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "783B4BE12ABA9E70"
+				item: { components: { "relics:data": { abilities: { abilities: { phlebotomy: { cooldown: 0, cooldownCap: 0, points: 0, stats: { attack_speed: { initialValue: 0.00589d }, heal: { initialValue: 1.5E-4d }, movement_speed: { initialValue: 0.01762d } }, ticking: 0b }, rage: { cooldown: 0, cooldownCap: 0, points: 0, stats: { dealt_damage: { initialValue: 0.07454d }, duration: { initialValue: 3.19042d }, incoming_damage: { initialValue: 0.04426d } }, ticking: 0b }, spurt: { cooldown: 0, cooldownCap: 0, points: 0, stats: { cooldown: { initialValue: 18.93504d }, damage: { initialValue: 0.16234d }, distance: { initialValue: 7.12735d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:rage_glove" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.375d
+		}
+		{
+			id: "38B751DCBFA2EEE8"
+			rewards: [{
+				count: 15
+				id: "138A85B05CBDEF25"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "6398D97C88A7BBE8"
+				item: { components: { "relics:data": { abilities: { abilities: { phlebotomy: { cooldown: 0, cooldownCap: 0, points: 0, stats: { attack_speed: { initialValue: 0.00589d }, heal: { initialValue: 1.5E-4d }, movement_speed: { initialValue: 0.01762d } }, ticking: 0b }, rage: { cooldown: 0, cooldownCap: 0, points: 0, stats: { dealt_damage: { initialValue: 0.07454d }, duration: { initialValue: 3.19042d }, incoming_damage: { initialValue: 0.04426d } }, ticking: 0b }, spurt: { cooldown: 0, cooldownCap: 0, points: 0, stats: { cooldown: { initialValue: 18.93504d }, damage: { initialValue: 0.16234d }, distance: { initialValue: 7.12735d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:rage_glove" }
+				type: "item"
+			}]
+			x: -0.625d
+			y: -0.625d
+		}
+		{
+			id: "22666B65C10D05C3"
+			rewards: [{
+				count: 15
+				id: "1AC4FAA28A170E0D"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "7D75C6BFDFADE596"
+				item: { components: { "relics:data": { abilities: { abilities: { ram: { cooldown: 0, cooldownCap: 0, points: 0, stats: { damage: { initialValue: 0.11249d } }, ticking: 0b }, skating: { cooldown: 0, cooldownCap: 0, points: 0, stats: { duration: { initialValue: 29.15848d }, speed: { initialValue: 0.02406d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:ice_skates" }
+				type: "item"
+			}]
+			x: -1.25d
+			y: -4.375d
+		}
+		{
+			id: "53877B65F7D27FD6"
+			rewards: [{
+				count: 15
+				id: "05B178ADC74EBDD7"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "5F1AD8142DF21F54"
+				item: { components: { "relics:data": { abilities: { abilities: { blink: { cooldown: 0, cooldownCap: 0, points: 0, stats: { cooldown: { initialValue: 8.36328d }, distance: { initialValue: 25.16563d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:chorus_inhibitor" }
+				type: "item"
+			}]
+			x: -1.875d
+			y: -0.625d
+		}
+		{
+			id: "033581BFCC53F7DF"
+			rewards: [{
+				count: 15
+				id: "0770F70FDE27DC51"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "4D131A1C86AFD690"
+				item: { components: { "relics:data": { abilities: { abilities: { compass: { cooldown: 0, cooldownCap: 0, points: 0, stats: { }, ticking: 0b }, trade: { cooldown: 0, cooldownCap: 0, points: 0, stats: { rolls: { initialValue: 0.42327d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:bastion_ring" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.625d
+		}
+		{
+			id: "02575C87933FF39C"
+			rewards: [{
+				count: 15
+				id: "7AB88EDC5E39A45A"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "7BA80EC4B8040AA1"
+				item: { components: { "relics:data": { abilities: { abilities: { dissection: { cooldown: 0, cooldownCap: 0, points: 0, stats: { distance: { initialValue: 17.87341d }, time: { initialValue: 6.3903d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:space_dissector" }
+				type: "item"
+			}]
+			x: -4.375d
+			y: -1.875d
+		}
+		{
+			id: "2FF157E7549611DA"
+			rewards: [{
+				count: 15
+				id: "5BFE0ED14F319A33"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "09E07110691DBDB1"
+				item: { components: { "relics:data": { abilities: { abilities: { belief: { cooldown: 0, cooldownCap: 0, points: 0, stats: { amount: { initialValue: 0.15565d }, capacity: { initialValue: 8.86669d }, count: { initialValue: 1.0341d }, radius: { initialValue: 5.29512d } }, ticking: 0b }, blessing: { cooldown: 0, cooldownCap: 0, points: 0, stats: { consumption: { initialValue: 6.77115d } }, ticking: 1b }, repentance: { cooldown: 0, cooldownCap: 0, points: 0, stats: { damage: { initialValue: 0.12419d }, radius: { initialValue: 2.58018d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:holy_locket" }
+				type: "item"
+			}]
+			x: -0.625d
+			y: -3.125d
+		}
+		{
+			id: "032C710AD746F5CC"
+			rewards: [{
+				count: 15
+				id: "085BA67468FC80F5"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0B50283D80BDA3C6"
+				item: { components: { "relics:data": { abilities: { abilities: { neutrality: { cooldown: 0, cooldownCap: 0, points: 0, stats: { }, ticking: 0b }, swap: { cooldown: 0, cooldownCap: 0, points: 0, stats: { distance: { initialValue: 30.06095d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:enders_hand" }
+				type: "item"
+			}]
+			x: 1.25d
+			y: -5.625d
+		}
+		{
+			id: "6A9B602109D060CA"
+			rewards: [{
+				count: 15
+				id: "577A82012BE4CA91"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "49E064750902DBE0"
+				item: { components: { "relics:data": { abilities: { abilities: { boost: { cooldown: 0, cooldownCap: 0, points: 0, stats: { capacity: { initialValue: 62.71624d }, speed: { initialValue: 1.4022d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:elytra_booster" }
+				type: "item"
+			}]
+			x: 0.625d
+			y: -3.125d
+		}
+		{
+			id: "2B7943458DE4DD38"
+			rewards: [{
+				count: 15
+				id: "31277C9F63DEF4C5"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "50CB32ABE40F8F3A"
+				item: { components: { "relics:data": { abilities: { abilities: { teleport: { cooldown: 0, cooldownCap: 0, points: 0, stats: { cooldown: { initialValue: 64.25135d }, distance: { initialValue: 673.83295d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:magic_mirror" }
+				type: "item"
+			}]
+			x: -3.125d
+			y: -0.625d
+		}
+		{
+			id: "4660A9612E6F1763"
+			rewards: [{
+				count: 15
+				id: "40DFD9A9ADBF844D"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "6F2F9FACC5D6EC38"
+				item: { components: { "relics:data": { abilities: { abilities: { impact: { cooldown: 0, cooldownCap: 0, points: 0, stats: { damage: { initialValue: 2.85159d }, size: { initialValue: 4.59508d } }, ticking: 0b }, sustainability: { cooldown: 0, cooldownCap: 0, points: 0, stats: { modifier: { initialValue: 0.62319d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:ice_breaker" }
+				type: "item"
+			}]
+			x: 0.625d
+			y: -1.875d
+		}
+		{
+			id: "61EF303F48808AD4"
+			rewards: [{
+				count: 15
+				id: "1736ED11DF3C70C7"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "76DAFCD6A04785DF"
+				item: { components: { "relics:data": { abilities: { abilities: { bonfire: { cooldown: 0, cooldownCap: 0, points: 0, stats: { height: { initialValue: 3.35986d }, speed: { initialValue: 0.02174d }, step: { initialValue: 1.99743d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:blazing_flask" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.375d
+		}
+		{
+			id: "7E7D9F00D412CF17"
+			rewards: [{
+				count: 15
+				id: "5BC8F3FA2271C031"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "05DB2D1EDF77B686"
+				item: { components: { "relics:data": { abilities: { abilities: { buffer: { cooldown: 0, cooldownCap: 0, points: 0, stats: { capacity: { initialValue: 3.90692d }, chance: { initialValue: 0.04917d } }, ticking: 0b }, explosion: { cooldown: 0, cooldownCap: 0, points: 0, stats: { size: { initialValue: 0.10315d } }, ticking: 0b }, multiplying: { cooldown: 0, cooldownCap: 0, points: 0, stats: { amount: { initialValue: 0.10221d }, chance: { initialValue: 0.09057d }, size: { initialValue: 0.08273d } }, ticking: 0b }, spore: { cooldown: 0, cooldownCap: 0, points: 0, stats: { cooldown: { initialValue: 13.09396d }, damage: { initialValue: 0.44024d }, duration: { initialValue: 2.61473d }, size: { initialValue: 0.45717d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:spore_sack" }
+				type: "item"
+			}]
+			x: -1.875d
+			y: -3.125d
+		}
+		{
+			id: "65449150E724FB60"
+			rewards: [{
+				count: 15
+				id: "39D0595149F974D5"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "3385C1A97BD70633"
+				item: { components: { "relics:charge": 8, "relics:data": { abilities: { abilities: { glaive: { cooldown: 0, cooldownCap: 0, points: 0, stats: { bounces: { initialValue: 3.77936d }, damage: { initialValue: 2.43538d }, radius: { initialValue: 3.65822d }, recharge: { initialValue: 11.19278d } }, ticking: 0b }, saw: { cooldown: 0, cooldownCap: 0, points: 0, stats: { damage: { initialValue: 0.90235d }, speed: { initialValue: 18.29026d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:shadow_glaive" }
+				type: "item"
+			}]
+			x: -0.625d
+			y: -1.875d
+		}
+		{
+			id: "672DBB368CA56FB6"
+			rewards: [{
+				count: 15
+				id: "499F57942E6CD1BD"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "7B7C2D4D792D8E32"
+				item: { components: { "relics:data": { abilities: { abilities: { skating: { cooldown: 0, cooldownCap: 0, points: 0, stats: { duration: { initialValue: 20.88807d }, speed: { initialValue: 0.00266d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:roller_skates" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.625d
+		}
+		{
+			id: "1889B98B321E0B10"
+			rewards: [{
+				count: 15
+				id: "361F8DC8CFCC8DDB"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "6246E1789C4DF46D"
+				item: { components: { "relics:charge": 10, "relics:data": { abilities: { abilities: { autophagy: { cooldown: 0, cooldownCap: 0, points: 0, stats: { feed: { initialValue: 1.45362d } }, ticking: 0b }, infusion: { cooldown: 0, cooldownCap: 0, points: 0, stats: { duration: { initialValue: 2.755d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:infinity_ham" }
+				type: "item"
+			}]
+			x: -1.875d
+			y: 0.625d
+		}
+		{
+			id: "5FC79456B9AB5449"
+			rewards: [{
+				count: 15
+				id: "73A3F7AC72C97F10"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "76607E54F466F6C7"
+				item: { components: { "relics:data": { abilities: { abilities: { slots: { cooldown: 0, cooldownCap: 0, points: 0, stats: { charm: { initialValue: 2.17376d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:leather_belt" }
+				type: "item"
+			}]
+			x: -3.125d
+			y: -1.875d
+		}
+		{
+			id: "7A5E91133F7860EA"
+			rewards: [{
+				count: 15
+				id: "67F97D0AF185D82E"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0A29E907748F64AF"
+				item: { components: { "relics:data": { abilities: { abilities: { mold: { cooldown: 0, cooldownCap: 0, points: 0, stats: { damage: { initialValue: 0.12652d }, freeze: { initialValue: 1.67836d }, size: { initialValue: 20.12678d }, stun: { initialValue: 0.02578d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:wool_mitten" }
+				type: "item"
+			}]
+			x: -3.75d
+			y: -4.375d
+		}
+		{
+			id: "14C3ADDA1C2770EF"
+			rewards: [{
+				count: 15
+				id: "4D5649015C5CEEEA"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "6A8E3D8867F13DA6"
+				item: { components: { "relics:data": { abilities: { abilities: { gills: { cooldown: 0, cooldownCap: 0, points: 0, stats: { chance: { initialValue: 0.06251d } }, ticking: 0b }, slipping: { cooldown: 0, cooldownCap: 0, points: 0, stats: { duration: { initialValue: 24.42118d }, speed: { initialValue: 0.0063d } }, ticking: 0b }, swimming: { cooldown: 0, cooldownCap: 0, points: 0, stats: { duration: { initialValue: 23.10017d }, speed: { initialValue: 0.00638d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "relics:amphibian_boot" }
+				type: "item"
+			}]
+			x: -3.125d
+			y: -3.125d
+		}
+		{
+			id: "045B5D8ECF6C4B78"
+			rewards: [{
+				count: 15
+				id: "5DA51920D906FD3E"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "438B53940637B844"
+				item: { count: 1, id: "artifacts:umbrella" }
+				type: "item"
+			}]
+			x: -15.625d
+			y: -0.625d
+		}
+		{
+			id: "31375174C97C6F5C"
+			rewards: [{
+				count: 15
+				id: "1EDB32E36B567D01"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "235E2E0E3D8F131A"
+				item: { count: 1, id: "artifacts:plastic_drinking_hat" }
+				type: "item"
+			}]
+			x: -15.625d
+			y: -5.625d
+		}
+		{
+			id: "01DC777AFBC223A9"
+			rewards: [{
+				count: 15
+				id: "69F5F56901EEF464"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "05C0FE3CACED5422"
+				item: { count: 1, id: "artifacts:novelty_drinking_hat" }
+				type: "item"
+			}]
+			x: -14.375d
+			y: -5.625d
+		}
+		{
+			id: "384FF5F6F4A281D1"
+			rewards: [{
+				count: 15
+				id: "3433C458962DCC2A"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "48BAB32AE390CC87"
+				item: { count: 1, id: "artifacts:snorkel" }
+				type: "item"
+			}]
+			x: -13.125d
+			y: -5.625d
+		}
+		{
+			id: "7FB76B532A82B969"
+			rewards: [{
+				count: 15
+				id: "28E9908E6FE2568B"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "1F9F3E46484B78A5"
+				item: { count: 1, id: "artifacts:night_vision_goggles" }
+				type: "item"
+			}]
+			x: -11.875d
+			y: -5.625d
+		}
+		{
+			id: "47C9223A072A712F"
+			rewards: [{
+				count: 15
+				id: "2C7C35FA167EFAFC"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "352A121F36B4EC8B"
+				item: { count: 1, id: "artifacts:villager_hat" }
+				type: "item"
+			}]
+			x: -16.875d
+			y: -4.375d
+		}
+		{
+			id: "19DC311321A1CA3B"
+			rewards: [{
+				count: 15
+				id: "453FD6B3BB9FC78D"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "2AC4FBF7354B9802"
+				item: { count: 1, id: "artifacts:superstitious_hat" }
+				type: "item"
+			}]
+			x: -8.125d
+			y: -3.125d
+		}
+		{
+			id: "015C8DCB320FE273"
+			rewards: [{
+				count: 15
+				id: "74BCCA90FD4A600B"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "25EFCAC308BB37D3"
+				item: { count: 1, id: "artifacts:cowboy_hat" }
+				type: "item"
+			}]
+			x: -16.875d
+			y: -5.625d
+		}
+		{
+			id: "108619D72DDA8A44"
+			rewards: [{
+				count: 15
+				id: "0E48B20E668C88AF"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "67B930E20BE033E1"
+				item: { count: 1, id: "artifacts:anglers_hat" }
+				type: "item"
+			}]
+			x: -11.875d
+			y: -4.375d
+		}
+		{
+			id: "790A15872EE0DE72"
+			rewards: [{
+				count: 15
+				id: "0C7FC94ED7AFE6DA"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "14C1BB63AA9D5250"
+				item: { count: 1, id: "artifacts:lucky_scarf" }
+				type: "item"
+			}]
+			x: -14.375d
+			y: -4.375d
+		}
+		{
+			id: "52D15140FFA7CFDF"
+			rewards: [{
+				count: 15
+				id: "54FA691FCB8DFAE6"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "6B097899C475606D"
+				item: { count: 1, id: "artifacts:scarf_of_invisibility" }
+				type: "item"
+			}]
+			x: -16.875d
+			y: -3.125d
+		}
+		{
+			id: "0CC99729F600741D"
+			rewards: [{
+				count: 15
+				id: "67CD207B69DE3472"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "3912AFD5EDBA3884"
+				item: { count: 1, id: "artifacts:cross_necklace" }
+				type: "item"
+			}]
+			x: -13.125d
+			y: -1.875d
+		}
+		{
+			id: "38344CB9A930CACD"
+			rewards: [{
+				count: 15
+				id: "1AC9ECF80D6E7C4E"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "3278D1F3230BECB8"
+				item: { count: 1, id: "artifacts:panic_necklace" }
+				type: "item"
+			}]
+			x: -10.625d
+			y: -4.375d
+		}
+		{
+			id: "32797A1E0440AF3B"
+			rewards: [{
+				count: 15
+				id: "63C3071736765846"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "5C26D5B4C97E54D7"
+				item: { count: 1, id: "artifacts:shock_pendant" }
+				type: "item"
+			}]
+			x: -14.375d
+			y: -0.625d
+		}
+		{
+			id: "36176E40257B21E9"
+			rewards: [{
+				count: 15
+				id: "6258050FD7B508C2"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "1FD16913FAFBE11D"
+				item: { count: 1, id: "artifacts:flame_pendant" }
+				type: "item"
+			}]
+			x: -13.125d
+			y: -0.625d
+		}
+		{
+			id: "02C807E825645735"
+			rewards: [{
+				count: 15
+				id: "51AB77309912D041"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "1B7F970720E9D150"
+				item: { count: 1, id: "artifacts:thorn_pendant" }
+				type: "item"
+			}]
+			x: -14.375d
+			y: 0.625d
+		}
+		{
+			id: "0A0360383E1F097E"
+			rewards: [{
+				count: 15
+				id: "42B0F2D927E5ED9D"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "4D99DC8BF01A6F8E"
+				item: { count: 1, id: "artifacts:charm_of_sinking" }
+				type: "item"
+			}]
+			x: -13.125d
+			y: -4.375d
+		}
+		{
+			id: "036CF9FC7B4F29CC"
+			rewards: [{
+				count: 15
+				id: "2B02ADEC0BE2CF9F"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "568DA3DCB90B4A2A"
+				item: { count: 1, id: "artifacts:cloud_in_a_bottle" }
+				type: "item"
+			}]
+			x: -11.875d
+			y: -1.875d
+		}
+		{
+			id: "7115F08CF7B0DFBE"
+			rewards: [{
+				count: 15
+				id: "2C2211F0F41EA807"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "194AF913EC0C1520"
+				item: { count: 1, id: "artifacts:charm_of_shrinking" }
+				type: "item"
+			}]
+			x: -10.625d
+			y: 0.625d
+		}
+		{
+			id: "56845FD97A3BFCE9"
+			rewards: [{
+				count: 15
+				id: "09DB602FA75BD130"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "2F8A86EB797B7AD3"
+				item: { count: 1, id: "artifacts:obsidian_skull" }
+				type: "item"
+			}]
+			x: -9.375d
+			y: -1.875d
+		}
+		{
+			id: "63618155D755427F"
+			rewards: [{
+				count: 15
+				id: "7DF36674FB03AD69"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "7AF1486EB19A177F"
+				item: { count: 1, id: "artifacts:antidote_vessel" }
+				type: "item"
+			}]
+			x: -9.375d
+			y: -0.625d
+		}
+		{
+			id: "4E846875A4080A11"
+			rewards: [{
+				count: 15
+				id: "517E886D139BAE3E"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "49A0722F2B38A56F"
+				item: { count: 1, id: "artifacts:universal_attractor" }
+				type: "item"
+			}]
+			x: -16.875d
+			y: -0.625d
+		}
+		{
+			id: "19157517A671D0DB"
+			rewards: [{
+				count: 15
+				id: "75ED450C37616F6B"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "1F086C730D2D1A2F"
+				item: { count: 1, id: "artifacts:crystal_heart" }
+				type: "item"
+			}]
+			x: -9.375d
+			y: 0.625d
+		}
+		{
+			id: "42E8EF6BA6EE7A84"
+			rewards: [{
+				count: 15
+				id: "4AED3072215E89CB"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "79E06FE1A93D401A"
+				item: { count: 1, id: "artifacts:helium_flamingo" }
+				type: "item"
+			}]
+			x: -11.875d
+			y: -0.625d
+		}
+		{
+			id: "5B9A58AB608517E1"
+			rewards: [{
+				count: 15
+				id: "45837991C3F84D72"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "034C3E0E20B310BC"
+				item: { count: 1, id: "artifacts:chorus_totem" }
+				type: "item"
+			}]
+			x: -15.625d
+			y: 0.625d
+		}
+		{
+			id: "3192A98B492852D1"
+			rewards: [{
+				count: 15
+				id: "204690DB4E30B5A3"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "1D0D8F6D24437A86"
+				item: { count: 1, id: "artifacts:warp_drive" }
+				type: "item"
+			}]
+			x: -15.625d
+			y: -1.875d
+		}
+		{
+			id: "465B8DE91F1F0A6A"
+			rewards: [{
+				count: 15
+				id: "342C5E673B9A62DD"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "1E49FD1A5F96974D"
+				item: { count: 1, id: "artifacts:digging_claws" }
+				type: "item"
+			}]
+			x: -10.625d
+			y: -0.625d
+		}
+		{
+			id: "6EF76D50DFADB67C"
+			rewards: [{
+				count: 15
+				id: "3661BE85596666DC"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0603C0011DF4E16F"
+				item: { count: 1, id: "artifacts:feral_claws" }
+				type: "item"
+			}]
+			x: -8.125d
+			y: -0.625d
+		}
+		{
+			id: "107F0152E1992CF5"
+			rewards: [{
+				count: 15
+				id: "14F0FBC52C0CE717"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "1C7572CC30B3A3E3"
+				item: { count: 1, id: "artifacts:power_glove" }
+				type: "item"
+			}]
+			x: -8.125d
+			y: -1.875d
+		}
+		{
+			id: "3E601F1FD232147F"
+			rewards: [{
+				count: 15
+				id: "5546222A7922EC26"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "49416B6400D77F93"
+				item: { count: 1, id: "artifacts:fire_gauntlet" }
+				type: "item"
+			}]
+			x: -14.375d
+			y: -1.875d
+		}
+		{
+			id: "5F2F62193EA16B69"
+			rewards: [{
+				count: 15
+				id: "64D860FD7B3D72E8"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "1A81DD5A94C8BEF8"
+				item: { count: 1, id: "artifacts:pocket_piston" }
+				type: "item"
+			}]
+			x: -16.875d
+			y: -1.875d
+		}
+		{
+			id: "46085729945D075A"
+			rewards: [{
+				count: 15
+				id: "72DF810033ED8CD5"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "67F4A25BB75F2C7A"
+				item: { count: 1, id: "artifacts:vampiric_glove" }
+				type: "item"
+			}]
+			x: -10.625d
+			y: -5.625d
+		}
+		{
+			id: "544B406A332CA352"
+			rewards: [{
+				count: 15
+				id: "216949F36D568E91"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "19777072CA24EFC0"
+				item: { count: 1, id: "artifacts:golden_hook" }
+				type: "item"
+			}]
+			x: -15.625d
+			y: -4.375d
+		}
+		{
+			id: "527ED39FB02295DE"
+			rewards: [{
+				count: 15
+				id: "1BA80B3875A386EC"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "14C1EFC4C9FF82C7"
+				item: { count: 1, id: "artifacts:onion_ring" }
+				type: "item"
+			}]
+			x: -13.125d
+			y: 0.625d
+		}
+		{
+			id: "484F22F7EF52C979"
+			rewards: [{
+				count: 15
+				id: "312C0CD0DF52B86B"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "04C775C57F595CEC"
+				item: { count: 1, id: "artifacts:pickaxe_heater" }
+				type: "item"
+			}]
+			x: -10.625d
+			y: -3.125d
+		}
+		{
+			id: "58F7CA568754A68B"
+			rewards: [{
+				count: 15
+				id: "351B33E7A7CD3C71"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "665589714F080985"
+				item: { count: 1, id: "artifacts:aqua_dashers" }
+				type: "item"
+			}]
+			x: -15.625d
+			y: -3.125d
+		}
+		{
+			id: "1BAC9E056B400F31"
+			rewards: [{
+				count: 15
+				id: "3207ED05A8372C1E"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "6EFE717D15677204"
+				item: { count: 1, id: "artifacts:withered_bracelet" }
+				type: "item"
+			}]
+			x: -13.125d
+			y: -3.125d
+		}
+		{
+			id: "76B4D559F6284AED"
+			rewards: [{
+				count: 15
+				id: "372FAD7FF62E3305"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "079CD17724C21E45"
+				item: { count: 1, id: "artifacts:bunny_hoppers" }
+				type: "item"
+			}]
+			x: -11.875d
+			y: -3.125d
+		}
+		{
+			id: "1A8D470CA28BD267"
+			rewards: [{
+				count: 15
+				id: "4AAF0BDC14414AE6"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0491752AF48CA626"
+				item: { count: 1, id: "artifacts:kitty_slippers" }
+				type: "item"
+			}]
+			x: -14.375d
+			y: -3.125d
+		}
+		{
+			id: "1EB8C9EBDF24C4DD"
+			rewards: [{
+				count: 15
+				id: "382407BD696CD960"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "4187EE4824EE285C"
+				item: { count: 1, id: "artifacts:running_shoes" }
+				type: "item"
+			}]
+			x: -8.125d
+			y: -4.375d
+		}
+		{
+			id: "4FAAC64E6B60AA7F"
+			rewards: [{
+				count: 15
+				id: "2B4FDD988670A3CC"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "3BCB17BCA8A7257C"
+				item: { count: 1, id: "artifacts:snowshoes" }
+				type: "item"
+			}]
+			x: -9.375d
+			y: -4.375d
+		}
+		{
+			id: "0F55A00A02272383"
+			rewards: [{
+				count: 15
+				id: "60A38055612AE0A0"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "134B567B3D930678"
+				item: { count: 1, id: "artifacts:steadfast_spikes" }
+				type: "item"
+			}]
+			x: -10.625d
+			y: -1.875d
+		}
+		{
+			id: "439E6090019E81BD"
+			rewards: [{
+				count: 15
+				id: "145E03DF4FA45568"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "5CEC1F637A3DF71C"
+				item: { count: 1, id: "artifacts:flippers" }
+				type: "item"
+			}]
+			x: -8.125d
+			y: -5.625d
+		}
+		{
+			id: "3FCBEC1ACEE004AC"
+			rewards: [{
+				count: 15
+				id: "6009A222A6D4CF41"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "59E43149290E2518"
+				item: { count: 1, id: "artifacts:rooted_boots" }
+				type: "item"
+			}]
+			x: -9.375d
+			y: -5.625d
+		}
+		{
+			id: "121171EAE82FD4B8"
+			rewards: [{
+				count: 15
+				id: "08DB37862D0A3C86"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "626A0AF5648F421E"
+				item: { count: 1, id: "artifacts:strider_shoes" }
+				type: "item"
+			}]
+			x: -9.375d
+			y: -3.125d
+		}
+		{
+			id: "2B66A819A1864A2D"
+			rewards: [{
+				count: 15
+				id: "1B106258264D9347"
+				item: {
+					count: 1
+					id: "ars_nouveau:greater_experience_gem"
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "6D67B8EF19601AF1"
+				item: { count: 1, id: "artifacts:whoopee_cushion" }
+				type: "item"
+			}]
+			x: -11.875d
+			y: 0.625d
+		}
+		{
+			dependencies: [
+				"61EF303F48808AD4"
+				"033581BFCC53F7DF"
+				"672DBB368CA56FB6"
+				"1889B98B321E0B10"
+				"4660A9612E6F1763"
+				"2B9944C95AB4BBEA"
+				"7FB76B532A82B969"
+				"56845FD97A3BFCE9"
+				"036CF9FC7B4F29CC"
+				"484F22F7EF52C979"
+				"7115F08CF7B0DFBE"
+				"32797A1E0440AF3B"
+				"527ED39FB02295DE"
+				"3FCBEC1ACEE004AC"
+				"63618155D755427F"
+				"790A15872EE0DE72"
+				"6A9B602109D060CA"
+				"38B751DCBFA2EEE8"
+				"0073FC661C34F787"
+				"46085729945D075A"
+				"19157517A671D0DB"
+				"76B4D559F6284AED"
+				"1EB8C9EBDF24C4DD"
+				"032C710AD746F5CC"
+				"439E6090019E81BD"
+				"3E601F1FD232147F"
+				"045B5D8ECF6C4B78"
+				"107F0152E1992CF5"
+				"73408E37869116A3"
+				"36176E40257B21E9"
+				"465B8DE91F1F0A6A"
+				"384FF5F6F4A281D1"
+				"22666B65C10D05C3"
+				"01DC777AFBC223A9"
+				"108619D72DDA8A44"
+				"65449150E724FB60"
+				"14C3ADDA1C2770EF"
+				"2B66A819A1864A2D"
+				"19DC311321A1CA3B"
+				"5B9A58AB608517E1"
+				"1BAC9E056B400F31"
+				"2FF157E7549611DA"
+				"0A0360383E1F097E"
+				"7A5E91133F7860EA"
+				"544B406A332CA352"
+				"2B7943458DE4DD38"
+				"3192A98B492852D1"
+				"31375174C97C6F5C"
+				"53877B65F7D27FD6"
+				"4E846875A4080A11"
+				"52D15140FFA7CFDF"
+				"42E8EF6BA6EE7A84"
+				"1DBBF47A0E25730F"
+				"015C8DCB320FE273"
+				"121171EAE82FD4B8"
+				"1A7191A0861F8923"
+				"1A8D470CA28BD267"
+				"38344CB9A930CACD"
+				"24C3C90286D92869"
+				"02C807E825645735"
+				"02575C87933FF39C"
+				"5FC79456B9AB5449"
+				"361C81931FEA5411"
+				"47C9223A072A712F"
+				"6EF76D50DFADB67C"
+				"7E7D9F00D412CF17"
+				"4FAAC64E6B60AA7F"
+				"0F55A00A02272383"
+				"0CC99729F600741D"
+				"5F2F62193EA16B69"
+				"58F7CA568754A68B"
+				"3F299717033E967F"
+			]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"trofers:trophy": "trofers:relics"
+				}
+				id: "trofers:medium_pillar"
+			}
+			icon_scale: 1.25d
+			id: "4B0EC73FFFCB1493"
+			rewards: [{
+				id: "4D7B7E333B30169D"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:relics"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 3.0d
+			tasks: [{
+				id: "7A970E46C90F719A"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -10.5d
+		}
+	]
+}
