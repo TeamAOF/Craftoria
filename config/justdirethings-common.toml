@@ -199,3 +199,35 @@
 	#The Time Fluid cost to use the time wand.  This value is multiplied by the acceleration amount. For example, when you go from 128 to 256, it will charge 256 x <this value> in Time Fluid.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	time_wand_fluid_cost = 0.5
+	#The maximum speed multiplier that can be applied using a Time Wand. This value should be a power of two.
+	time_wand_max_multiplier = 256
+
+#Paradox Machine
+[paradox_machine]
+	#The maximum amount of Forge Energy the Paradox Machine can hold in its buffer
+	#Range: > 1
+	paradox_rf_capacity = 10000000
+	#The Forge Energy cost to Restore 1 block with the Paradox Machine.  This value is multiplied by the number of blocks the machine is restoring.
+	#Range: > 0
+	paradox_rf_per_block = 250000
+	#The Forge Energy cost to Restore 1 entity with the Paradox Machine.  This value is multiplied by the number of entities the machine is restoring.
+	#Range: > 0
+	paradox_rf_per_entity = 250000
+	#The maximum amount of Time Fluid the Paradox Machine can hold in its buffer
+	#Range: > 1
+	paradox_fluid_capacity = 16000
+	#The Time Fluid cost (in mb) to Restore 1 block with the Paradox Machine.  This value is multiplied by the number of blocks the machine is restoring.
+	#Range: > 0
+	paradox_fluid_per_block = 50
+	#The Time Fluid cost (in mb) to Restore 1 entity with the Paradox Machine.  This value is multiplied by the number of entities the machine is restoring.
+	#Range: > 0
+	paradox_fluid_per_entity = 50
+	#The amount of Paradox Energy accumulated in the Paradox Machine when it restores a single block. This value is multiplied by the number of blocks the machine is restoring.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	paradox_energy_per_block = 0.25
+	#The amount of Paradox Energy accumulated in the Paradox Machine when it restores a single entity. This value is multiplied by the number of blocks the machine is restoring.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	paradox_energy_per_entity = 0.25
+	#The maximum amount of Paradox Energy the Paradox Machine can hold in its buffer, before it spawns a Paradox!
+	#Range: 0.0 ~ 1.7976931348623157E308
+	paradox_energy_max = 100.0
