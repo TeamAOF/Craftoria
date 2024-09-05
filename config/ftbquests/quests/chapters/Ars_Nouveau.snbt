@@ -89,33 +89,22 @@
 		}
 		{
 			color: 13415424
-			height: 4.0d
+			height: 5.0d
 			image: "ftbquests:textures/gui/title_an.png"
 			order: 200
-			rotation: -45.0d
-			width: 4.0d
-			x: -9.5d
-			y: -6.0d
-		}
-		{
-			height: 2.0d
-			image: "ars_elemental:textures/mob_effect/hellfire.png"
-			order: 100
 			rotation: 0.0d
-			width: 2.0d
-			x: 0.0d
-			y: 0.0d
+			width: 5.0d
+			x: -8.5d
+			y: -7.5d
 		}
 		{
-			alpha: 192
 			color: 0
-			height: 2.0d
-			image: "ars_elemental:textures/mob_effect/hellfire.png"
-			order: 99
+			height: 1.0d
+			image: "ars_nouveau:textures/particle/sparkle_0.png"
 			rotation: 0.0d
-			width: 2.0d
-			x: 0.1d
-			y: 0.1d
+			width: 1.0d
+			x: 0.0d
+			y: 5.0d
 		}
 	]
 	order_index: 0
@@ -139,7 +128,7 @@
 				id: "753CA39C1F140B93"
 				type: "checkmark"
 			}]
-			x: -7.5d
+			x: -10.0d
 			y: -5.5d
 		}
 		{
@@ -190,7 +179,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -7.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["68721F148E2805FB"]
@@ -1748,8 +1737,8 @@
 				id: "07818B6C552EFFD7"
 				type: "checkmark"
 			}]
-			x: 9.5d
-			y: -1.5d
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 }
