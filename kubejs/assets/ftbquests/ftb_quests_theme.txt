@@ -80,6 +80,14 @@ checkmark_task_inactive: ftblibrary:icons/accept_gray
 [01B56BD678E7745B]
 background:                         ftbquests:textures/gui/bg_powah.png; color=#a0a0a0; tile_size=64
 
+[0597AF3E8B286CFA]
+background:                         ars_nouveau:textures/block/ghostweave.png; color=#404040; tile_size=32
+dependency_line_texture:            ars_nouveau:textures/block/mage_block_transparent.png
+dependency_line_selected_speed:     1
+dependency_line_unselected_speed:   1
+dependency_line_thickness:          0.5
+dependency_line_uncompleted_color:  #FFccb400
+
 [3188AC6C440F7520]
 dependency_line_uncompleted_color:  #F8FFFFFF
 

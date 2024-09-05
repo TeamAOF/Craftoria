@@ -7,6 +7,117 @@
 		id: "ars_nouveau:creative_spell_book"
 	}
 	id: "0597AF3E8B286CFA"
+	images: [
+		{
+			alpha: 128
+			height: 2.0d
+			image: "ars_nouveau:block/fire_0"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: -0.8d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "ars_nouveau:block/fire_1"
+			order: 90
+			rotation: 45.0d
+			width: 2.0d
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "ars_nouveau:block/fire_2"
+			order: 2
+			rotation: 90.0d
+			width: 2.0d
+			x: 0.8d
+			y: 0.0d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "ars_nouveau:block/fire_0"
+			order: 3
+			rotation: 135.0d
+			width: 2.0d
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "ars_nouveau:block/fire_1"
+			order: 4
+			rotation: 180.0d
+			width: 2.0d
+			x: 0.0d
+			y: 0.8d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "ars_nouveau:block/fire_2"
+			order: 5
+			rotation: 225.0d
+			width: 2.0d
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "ars_nouveau:block/fire_0"
+			order: 5
+			rotation: 270.0d
+			width: 2.0d
+			x: -0.8d
+			y: 0.0d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "ars_nouveau:block/fire_1"
+			order: 6
+			rotation: 315.0d
+			width: 2.0d
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			color: 13415424
+			height: 4.0d
+			image: "ftbquests:textures/gui/title_an.png"
+			order: 200
+			rotation: -45.0d
+			width: 4.0d
+			x: -9.5d
+			y: -6.0d
+		}
+		{
+			height: 2.0d
+			image: "ars_elemental:textures/mob_effect/hellfire.png"
+			order: 100
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 2.0d
+			image: "ars_elemental:textures/mob_effect/hellfire.png"
+			order: 99
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.1d
+			y: 0.1d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -23,13 +134,13 @@
 				}
 				type: "item"
 			}]
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				id: "753CA39C1F140B93"
 				type: "checkmark"
 			}]
-			x: -15.0d
-			y: 0.0d
+			x: -7.5d
+			y: -5.5d
 		}
 		{
 			id: "68721F148E2805FB"
@@ -44,8 +155,8 @@
 				item: { count: 1, id: "ars_nouveau:novice_spell_book" }
 				type: "item"
 			}]
-			x: -12.5d
-			y: 0.0d
+			x: -7.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["68721F148E2805FB"]
@@ -61,8 +172,8 @@
 				item: { count: 1, id: "ars_nouveau:apprentice_spell_book" }
 				type: "item"
 			}]
-			x: -12.5d
-			y: -2.0d
+			x: -5.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["13AF33D9F34D640F"]
@@ -78,8 +189,8 @@
 				item: { count: 1, id: "ars_nouveau:archmage_spell_book" }
 				type: "item"
 			}]
-			x: -12.5d
-			y: -4.0d
+			x: -7.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["68721F148E2805FB"]
@@ -105,8 +216,8 @@
 				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:logs/archwood)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: 0.0d
+			x: -7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1184EBAC0DADDB5F"]
@@ -122,8 +233,8 @@
 				item: { count: 1, id: "ars_nouveau:imbuement_chamber" }
 				type: "item"
 			}]
-			x: -8.5d
-			y: -1.0d
+			x: -5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -153,8 +264,8 @@
 				item: { count: 1, id: "ars_nouveau:source_gem" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: 0.0d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["720F16D6B1CB519C"]
@@ -182,8 +293,8 @@
 				item: { count: 32, id: "ars_nouveau:sourcestone" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.0d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["302BE63E3488B94D"]
@@ -200,8 +311,8 @@
 				item: { count: 8, id: "ars_nouveau:arcane_pedestal" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["78B4459314C86937"]
@@ -224,8 +335,8 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: 0.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["20B9E6F51A4F9789"]
@@ -241,8 +352,8 @@
 				item: { count: 1, id: "ars_nouveau:magebloom_crop" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5CEFB3C551971327"]
@@ -258,8 +369,8 @@
 				item: { count: 1, id: "ars_nouveau:magebloom_fiber" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 0.0d
+			x: 2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["3995CC829C7B015A"]
@@ -275,8 +386,8 @@
 				item: { count: 1, id: "ars_nouveau:alteration_table" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -2.5d
+			x: 5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["3995CC829C7B015A"]
@@ -292,8 +403,8 @@
 				item: { count: 1, id: "ars_nouveau:blank_parchment" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 1.0d
+			x: 0.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["690D4925E05D5421"]
@@ -320,8 +431,8 @@
 				item: { count: 1, id: "ars_nouveau:manipulation_essence" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: -6.0d
+			x: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["720F16D6B1CB519C"]
@@ -337,8 +448,8 @@
 				item: { count: 1, id: "ars_nouveau:source_jar" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: -2.0d
+			x: -2.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2DAE44549D0FDD55"]
@@ -379,8 +490,8 @@
 					type: "item"
 				}
 			]
-			x: -6.5d
-			y: -4.0d
+			x: -5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["690D4925E05D5421"]
@@ -396,8 +507,8 @@
 				item: { count: 1, id: "ars_nouveau:potion_jar" }
 				type: "item"
 			}]
-			x: -7.5d
-			y: -6.0d
+			x: -2.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["1184EBAC0DADDB5F"]
@@ -413,7 +524,7 @@
 				item: { count: 1, id: "ars_nouveau:dowsing_rod" }
 				type: "item"
 			}]
-			x: -8.5d
+			x: -5.0d
 			y: 1.0d
 		}
 		{
@@ -430,8 +541,8 @@
 				item: { count: 1, id: "ars_nouveau:dominion_wand" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 2.0d
+			x: 5.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["20B9E6F51A4F9789"]
@@ -482,8 +593,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -2.0d
+			x: 0.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3FB60EC2EE4D0435"]
@@ -529,8 +640,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -4.0d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["78B4459314C86937"]
@@ -546,8 +657,8 @@
 				item: { count: 1, id: "ars_nouveau:ritual_brazier" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.0d
+			x: 5.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1184EBAC0DADDB5F"]
@@ -563,8 +674,8 @@
 				item: { count: 1, id: "ars_nouveau:scribes_table" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: 2.0d
+			x: -7.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["57D9E9C4AEA9DF63"]
@@ -741,8 +852,8 @@
 					type: "item"
 				}
 			]
-			x: -11.5d
-			y: 4.0d
+			x: -10.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["57D9E9C4AEA9DF63"]
@@ -898,8 +1009,8 @@
 					type: "item"
 				}
 			]
-			x: -10.5d
-			y: 4.5d
+			x: -7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["57D9E9C4AEA9DF63"]
@@ -996,8 +1107,8 @@
 					type: "item"
 				}
 			]
-			x: -9.5d
-			y: 4.0d
+			x: -5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["16C84031D0CE45AE"]
@@ -1058,8 +1169,8 @@
 					type: "item"
 				}
 			]
-			x: -3.5d
-			y: -4.0d
+			x: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["16C84031D0CE45AE"]
@@ -1120,8 +1231,8 @@
 					type: "item"
 				}
 			]
-			x: -2.5d
-			y: -4.5d
+			x: 7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["16C84031D0CE45AE"]
@@ -1153,8 +1264,8 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
-			y: -4.0d
+			x: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3995CC829C7B015A"]
@@ -1190,8 +1301,8 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
-			y: -1.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["12094D44D2E3DB16"]
@@ -1227,8 +1338,8 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: -1.0d
+			x: -2.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["56079AB13D721BC7"]
@@ -1264,8 +1375,8 @@
 					type: "item"
 				}
 			]
-			x: 9.5d
-			y: -1.0d
+			x: -5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0DC83D9B8B09C093"]
@@ -1373,8 +1484,8 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: -5.0d
+			x: 7.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1184EBAC0DADDB5F"]
@@ -1390,8 +1501,8 @@
 				item: { count: 1, id: "ars_nouveau:sourceberry_bush" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: -2.0d
+			x: -10.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6296DCFE578CBD50"]
@@ -1407,8 +1518,8 @@
 				item: { count: 1, id: "ars_nouveau:source_berry_pie" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: -4.0d
+			x: -10.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1439B72B421AF009"]
@@ -1424,8 +1535,8 @@
 				item: { count: 1, id: "ars_nouveau:source_berry_roll" }
 				type: "item"
 			}]
-			x: -10.5d
-			y: -6.0d
+			x: -10.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7080BD0EC57359A6"]
@@ -1441,8 +1552,8 @@
 				item: { count: 1, id: "ars_nouveau:bookwyrm_charm" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 7.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7080BD0EC57359A6"]
@@ -1458,8 +1569,8 @@
 				item: { count: 1, id: "ars_nouveau:amethyst_golem_charm" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.5d
+			x: 9.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7080BD0EC57359A6"]
@@ -1475,8 +1586,8 @@
 				item: { count: 1, id: "ars_nouveau:starbuncle_charm" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.0d
+			x: 7.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7080BD0EC57359A6"]
@@ -1492,8 +1603,8 @@
 				item: { count: 1, id: "ars_nouveau:whirlisprig_charm" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.5d
+			x: 9.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7080BD0EC57359A6"]
@@ -1509,8 +1620,8 @@
 				item: { count: 1, id: "ars_nouveau:wixie_charm" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 4.5d
+			x: 7.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7080BD0EC57359A6"]
@@ -1526,8 +1637,8 @@
 				item: { count: 1, id: "ars_nouveau:drygmy_charm" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.5d
+			x: 7.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["06F1E4885CE3C0C9"]
@@ -1543,8 +1654,8 @@
 				item: { count: 1, id: "ars_nouveau:warp_scroll" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 1.0d
+			x: 2.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["720F16D6B1CB519C"]
@@ -1560,8 +1671,8 @@
 				item: { count: 1, id: "ars_nouveau:source_gem_block" }
 				type: "item"
 			}]
-			x: -6.5d
-			y: 2.0d
+			x: -2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1637,8 +1748,8 @@
 				id: "07818B6C552EFFD7"
 				type: "checkmark"
 			}]
-			x: 7.5d
-			y: -3.0d
+			x: 9.5d
+			y: -1.5d
 		}
 	]
 }
