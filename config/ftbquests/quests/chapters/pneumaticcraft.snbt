@@ -3,23 +3,34 @@
 	default_quest_shape: ""
 	filename: "pneumaticcraft"
 	group: "066C799B2F5452CD"
+	icon: {
+		id: "pneumaticcraft:pressure_gauge"
+	}
 	id: "04AD21E8ACC60AFD"
-	order_index: 6
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
 			id: "26A44EDA4AABFF6F"
-			rewards: [{
-				id: "39B8B3432D7DD855"
-				item: {
-					components: {
-						"patchouli:book": "pneumaticcraft:book"
+			rewards: [
+				{
+					id: "39B8B3432D7DD855"
+					item: {
+						components: {
+							"patchouli:book": "pneumaticcraft:book"
+						}
+						count: 1
+						id: "patchouli:guide_book"
 					}
-					count: 1
-					id: "patchouli:guide_book"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					exclude_from_claim_all: true
+					id: "0FDA20863E6C143F"
+					table_id: 9016087528600323687L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				count: 64L
 				id: "3332CE1F02D69602"
@@ -32,6 +43,12 @@
 		{
 			dependencies: ["2B8DFC9987083AF7"]
 			id: "3D7406A517FA591D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "46607C3185002259"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					count: 21L
@@ -63,6 +80,12 @@
 		{
 			dependencies: ["0DDE4F5B0FE265B0"]
 			id: "2B8DFC9987083AF7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F0D286A189B5658"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "35CAFE304E4FAE5A"
 				item: { count: 1, id: "pneumaticcraft:air_compressor" }
@@ -74,6 +97,12 @@
 		{
 			dependencies: ["26A44EDA4AABFF6F"]
 			id: "0DDE4F5B0FE265B0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4F862657C6700883"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "2610C03860FAFECD"
 				item: { count: 1, id: "pneumaticcraft:pressure_tube" }
@@ -85,6 +114,12 @@
 		{
 			dependencies: ["26A44EDA4AABFF6F"]
 			id: "486620B859CE9D1F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19224D12668C3854"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "213413CE89D4899F"
 				item: { count: 1, id: "pneumaticcraft:vortex_tube" }
@@ -96,6 +131,12 @@
 		{
 			dependencies: ["1246838BA3EEE910"]
 			id: "6070283AEA8DFA7E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E71DCC8830E3738"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					id: "3C5C287669D27CD4"
@@ -125,6 +166,12 @@
 				"2689A56675E12245"
 			]
 			id: "6127E7FBC4ABF307"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5FF2EF2D53AD96C5"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "18C75072122D0072"
 				item: { count: 1, id: "pneumaticcraft:thermopneumatic_processing_plant" }
@@ -136,6 +183,12 @@
 		{
 			dependencies: ["6070283AEA8DFA7E"]
 			id: "2689A56675E12245"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5016F480863E4601"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "56D4ECC5D364E60D"
 				item: { count: 1, id: "pneumaticcraft:lpg_bucket" }
@@ -147,6 +200,12 @@
 		{
 			dependencies: ["6070283AEA8DFA7E"]
 			id: "07F1FA5EF3E6A7F3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "052926C3398D71FF"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "60BED9E8736CFDE5"
 				item: { count: 1, id: "pneumaticcraft:diesel_bucket" }
@@ -158,6 +217,12 @@
 		{
 			dependencies: ["6070283AEA8DFA7E"]
 			id: "46C3D171AB4AA489"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "497A77F7E1275BFB"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "41FE6C3F933ACC11"
 				item: { count: 1, id: "pneumaticcraft:kerosene_bucket" }
@@ -169,6 +234,12 @@
 		{
 			dependencies: ["6070283AEA8DFA7E"]
 			id: "0D44F37BE787CA30"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53BFF5C1BAB33D4C"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "19379388F2493118"
 				item: { count: 1, id: "pneumaticcraft:gasoline_bucket" }
@@ -180,6 +251,12 @@
 		{
 			dependencies: ["6127E7FBC4ABF307"]
 			id: "16B74C92EB86AD0C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3F3E66B3502F4E35"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "01D676FB7F426E83"
 				item: { count: 1, id: "pneumaticcraft:plastic_bucket" }
@@ -191,6 +268,12 @@
 		{
 			dependencies: ["16B74C92EB86AD0C"]
 			id: "7D58D814C99CB2F6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "285428ED4EDFE875"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					id: "23D4641D9271EEB8"
@@ -209,6 +292,12 @@
 		{
 			dependencies: ["6127E7FBC4ABF307"]
 			id: "05E2E87CF3F9A5FB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6E8301766E3866B5"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "66CA2B5FF86C8EBF"
 				item: { count: 1, id: "pneumaticcraft:lubricant_bucket" }
@@ -220,6 +309,12 @@
 		{
 			dependencies: ["05E2E87CF3F9A5FB"]
 			id: "22ADCF0396B37BDC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "60693B26D435B487"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "415FD99E80B42F35"
 				item: { count: 1, id: "pneumaticcraft:speed_upgrade" }
@@ -231,6 +326,12 @@
 		{
 			dependencies: ["7D58D814C99CB2F6"]
 			id: "7258F646D755E011"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "12E257091FDBFEFF"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "0083C60DCBBF2135"
 				item: { count: 1, id: "pneumaticcraft:plastic" }
@@ -242,6 +343,12 @@
 		{
 			dependencies: ["486620B859CE9D1F"]
 			id: "7C57D76FDBD784F8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4DB7169E6E362216"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "5F8FB862A2E9EBDF"
 				item: { count: 1, id: "pneumaticcraft:small_tank" }
@@ -253,6 +360,12 @@
 		{
 			dependencies: ["325A0651CB2D1279"]
 			id: "6F5731A4490A537F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0952D91FFBF215AA"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "00C1D1F772D7A15E"
 				item: { count: 1, id: "pneumaticcraft:etching_acid_bucket" }
@@ -267,6 +380,12 @@
 				"11D6BFA19C9DBFD3"
 			]
 			id: "325A0651CB2D1279"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "47FC89E96BE81E95"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "10A88E48A1CAC82F"
 				item: { count: 1, id: "pneumaticcraft:uv_light_box" }
@@ -278,6 +397,12 @@
 		{
 			dependencies: ["5299134A1144826F"]
 			id: "40F96E2CB2772CB8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "26BCA63FF68D8F80"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "445384FFE0A9D0D4"
 				item: { count: 1, id: "pneumaticcraft:amadron_tablet" }
@@ -289,6 +414,12 @@
 		{
 			dependencies: ["0DDE4F5B0FE265B0"]
 			id: "5299134A1144826F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0A6B39FFE128ED8D"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					id: "5F79481BD36F834C"
@@ -307,6 +438,12 @@
 		{
 			dependencies: ["40F96E2CB2772CB8"]
 			id: "11D6BFA19C9DBFD3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7EAD14A4E0AEAE21"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "4FE9B1F240C224CF"
 				item: { count: 1, id: "pneumaticcraft:pcb_blueprint" }
@@ -318,6 +455,12 @@
 		{
 			dependencies: ["6F5731A4490A537F"]
 			id: "0B4D059EDFD90B5B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "44A8DE6D6850A3FA"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "313B07978BBFA70C"
 				item: { count: 1, id: "pneumaticcraft:etching_tank" }
@@ -332,6 +475,12 @@
 				"7258F646D755E011"
 			]
 			id: "501F5C25E81C779B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "304F941726293F5C"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "16C1CFA54FCA4E93"
 				item: { count: 1, id: "pneumaticcraft:empty_pcb" }
@@ -343,6 +492,12 @@
 		{
 			dependencies: ["0B4D059EDFD90B5B"]
 			id: "310599204A45B6DC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1B414E3B926F7B33"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "528BCABD7A59C99E"
 				item: { count: 1, id: "pneumaticcraft:unassembled_pcb" }
@@ -354,6 +509,12 @@
 		{
 			dependencies: ["0B4D059EDFD90B5B"]
 			id: "2FD63910A87E3858"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "694EE40080184EC0"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "190E22DD23B8E1B7"
 				item: { count: 1, id: "pneumaticcraft:capacitor" }
@@ -365,6 +526,12 @@
 		{
 			dependencies: ["0B4D059EDFD90B5B"]
 			id: "3C1D1B97BA6025B7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "29DAA8582F801451"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "238AFDA3F10A4099"
 				item: { count: 1, id: "pneumaticcraft:transistor" }
@@ -380,6 +547,12 @@
 				"3C1D1B97BA6025B7"
 			]
 			id: "580736A5075A46E9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2448CAC19EFF99EB"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "100457110B389A92"
 				item: { count: 1, id: "pneumaticcraft:printed_circuit_board" }
@@ -391,6 +564,12 @@
 		{
 			dependencies: ["580736A5075A46E9"]
 			id: "25FD9B369F69988B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6A1417612F126CBF"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					id: "6D80A2C719CE8C7D"
@@ -429,6 +608,12 @@
 		{
 			dependencies: ["25FD9B369F69988B"]
 			id: "21A6EF3F9733831D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "338AAE2A6340E4BB"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "17A90556F1B37DFB"
 				item: { count: 1, id: "pneumaticcraft:assembly_program_drill_laser" }
@@ -440,6 +625,12 @@
 		{
 			dependencies: ["7258F646D755E011"]
 			id: "6D41FE5A3CA68391"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6256364298D0B68C"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "7715F97681C509CE"
 				item: { count: 1, id: "pneumaticcraft:pneumatic_cylinder" }
@@ -451,6 +642,12 @@
 		{
 			dependencies: ["23313676FB186028"]
 			id: "38D846A79BC43920"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D53A64F9939BA06"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "1AFC8EE98BE98032"
 				item: { count: 1, id: "pneumaticcraft:charging_station" }
@@ -462,6 +659,12 @@
 		{
 			dependencies: ["688DEE1D1C4F9BDA"]
 			id: "1EC75DB7FA07D06B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7497D4D91A0CADED"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "22448599BAC1676C"
 				item: { count: 1, id: "pneumaticcraft:safety_tube_module" }
@@ -473,6 +676,12 @@
 		{
 			dependencies: ["6E2932D7D8228910"]
 			id: "23313676FB186028"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7C3A3CAE636A9481"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "30DEF3B48E329899"
 				item: { count: 1, id: "pneumaticcraft:pneumatic_wrench" }
@@ -484,6 +693,12 @@
 		{
 			dependencies: ["26A44EDA4AABFF6F"]
 			id: "6E2932D7D8228910"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1A069EE0C6614BB7"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "65CF6F2E47D31963"
 				item: { count: 1, id: "pneumaticcraft:pressure_gauge" }
@@ -495,6 +710,12 @@
 		{
 			dependencies: ["6E2932D7D8228910"]
 			id: "688DEE1D1C4F9BDA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "13ED30AB4B56317D"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "6AE27617C23D1F0C"
 				item: { count: 1, id: "pneumaticcraft:pressure_gauge_module" }
@@ -506,6 +727,12 @@
 		{
 			dependencies: ["21A6EF3F9733831D"]
 			id: "2E5D9CB5D821E96A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "21BA7FB5EE7CA1AD"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "727B8229F01700D7"
 				item: { count: 1, id: "pneumaticcraft:advanced_pressure_tube" }
@@ -517,6 +744,12 @@
 		{
 			dependencies: ["2B8DFC9987083AF7"]
 			id: "525658A19130AF37"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1A06628880072A8A"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "6E70B1C29CAEDD0B"
 				item: { count: 1, id: "pneumaticcraft:liquid_compressor" }
@@ -528,6 +761,12 @@
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
 			id: "1D249BAAD819E83F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F72F7E5BE679F00"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "2E3DFC6AC84195F8"
 				item: { count: 1, id: "pneumaticcraft:flux_compressor" }
@@ -539,6 +778,12 @@
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
 			id: "1A368E5AD57C10E1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "77435EA1265956B7"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "584BBFBB570534A8"
 				item: { count: 1, id: "pneumaticcraft:advanced_liquid_compressor" }
@@ -550,6 +795,12 @@
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
 			id: "01C94AD31BA1079F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1ED3D82613144381"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "1F9C847D0E870E84"
 				item: { count: 1, id: "pneumaticcraft:advanced_air_compressor" }
@@ -561,6 +812,12 @@
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
 			id: "6762C357EEDE8D10"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "26D4EB1524210792"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "08BD258FAF0287E4"
 				item: { count: 1, id: "pneumaticcraft:solar_compressor" }
@@ -572,6 +829,12 @@
 		{
 			dependencies: ["525658A19130AF37"]
 			id: "7D155344A5A6CEF7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "43C3EF7D4EA85C3D"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "67C2EA88D8CFD67F"
 				item: { count: 1, id: "pneumaticcraft:thermal_compressor" }
@@ -583,6 +846,12 @@
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
 			id: "1794E588334CB478"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E309E359C29CB68"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "03441B8DFC9D524D"
 				item: { count: 1, id: "pneumaticcraft:aerial_interface" }
@@ -594,6 +863,12 @@
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
 			id: "04E6DF90BA2FCACB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6A50F153169A9A31"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "3A8DAFA529019827"
 				item: { count: 1, id: "pneumaticcraft:pneumatic_dynamo" }
@@ -605,6 +880,12 @@
 		{
 			dependencies: ["580736A5075A46E9"]
 			id: "2EEB0A3FE1B54A43"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "47A768D510774271"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "641AD399BEF45897"
 				item: { count: 1, id: "pneumaticcraft:programmer" }
@@ -616,6 +897,12 @@
 		{
 			dependencies: ["3D7406A517FA591D"]
 			id: "3F3D655DB4F17D5A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15600E33249579B3"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "7FF5E2D518AFB263"
 				item: { count: 1, id: "pneumaticcraft:turbine_blade" }
@@ -627,6 +914,12 @@
 		{
 			dependencies: ["3F3D655DB4F17D5A"]
 			id: "6FC67A24AACDC2AD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "43633AD09469AD43"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "58FAF7A906DAAFB9"
 				item: { count: 1, id: "pneumaticcraft:turbine_rotor" }
@@ -638,6 +931,12 @@
 		{
 			dependencies: ["3D7406A517FA591D"]
 			id: "480866B51061F78E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36AFF778E00EA5A4"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "249C0798D982C7C2"
 				item: { count: 1, id: "pneumaticcraft:solar_wafer" }
@@ -649,6 +948,12 @@
 		{
 			dependencies: ["2EEB0A3FE1B54A43"]
 			id: "7EE978BF04D4530F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2399634EFF2D87B0"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "074E6F8E1CB34472"
 				item: { count: 1, id: "pneumaticcraft:programming_puzzle" }
@@ -660,6 +965,12 @@
 		{
 			dependencies: ["0F7AEC02C0AC86A2"]
 			id: "29AC06B27D6A53C5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "153C0A681C0E5A40"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "2C9C84DB01C12A40"
 				item: { count: 1, id: "pneumaticcraft:collector_drone" }
@@ -671,17 +982,29 @@
 		{
 			dependencies: ["7EE978BF04D4530F"]
 			id: "0164C557CFF09322"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "34C16CF3312C8266"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "30602F9AAFA00707"
 				item: { count: 1, id: "pneumaticcraft:drone" }
 				type: "item"
 			}]
 			x: 23.5d
-			y: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0F7AEC02C0AC86A2"]
 			id: "5EEF6110DDBEB146"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4CA17325EBA1C66E"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "3CD29B050F31A905"
 				item: { count: 1, id: "pneumaticcraft:guard_drone" }
@@ -693,6 +1016,12 @@
 		{
 			dependencies: ["0F7AEC02C0AC86A2"]
 			id: "79C075FFF796FE16"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4DDCBBAD8F3B63C5"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "1AEC140DCBC1FAC7"
 				item: { count: 1, id: "pneumaticcraft:harvesting_drone" }
@@ -704,6 +1033,12 @@
 		{
 			dependencies: ["7342ABDAD6467123"]
 			id: "7BD7F5E46151B2EB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "59EFECBE52B3EDBA"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "39F7F4A3187516E6"
 				item: { count: 1, id: "pneumaticcraft:logistics_drone" }
@@ -715,6 +1050,12 @@
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
 			id: "29B59876D04A3772"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "35EEBF8C14FB5641"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "2FA5766B438B44CB"
 				item: { count: 1, id: "pneumaticcraft:pressurized_spawner" }
@@ -726,6 +1067,12 @@
 		{
 			dependencies: ["0DDE4F5B0FE265B0"]
 			id: "15B6718AFA5E6959"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19A2189FC8A51D98"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "01F5E4C5F1AEE6E3"
 				item: { count: 1, id: "pneumaticcraft:spawner_extractor" }
@@ -737,6 +1084,12 @@
 		{
 			dependencies: ["0DDE4F5B0FE265B0"]
 			id: "3696D20B77DF1B24"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "769883707F9288A8"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "193CB7C1EFCC6299"
 				item: { count: 1, id: "pneumaticcraft:spawner_core" }
@@ -748,6 +1101,12 @@
 		{
 			dependencies: ["0DDE4F5B0FE265B0"]
 			id: "3618C8F2EE6E308F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F143744E81EB0C9"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "5692A70EEF546C29"
 				item: { count: 1, id: "pneumaticcraft:vacuum_pump" }
@@ -759,6 +1118,12 @@
 		{
 			dependencies: ["0DDE4F5B0FE265B0"]
 			id: "33CEED6232901CE5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00420923A1AF83C3"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "149C28180718E10F"
 				item: { count: 1, id: "pneumaticcraft:vacuum_trap" }
@@ -770,6 +1135,12 @@
 		{
 			dependencies: ["6D41FE5A3CA68391"]
 			id: "67B17617F57B247F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6979A74093D18A73"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					count: 4L
@@ -796,6 +1167,12 @@
 		{
 			dependencies: ["7258F646D755E011"]
 			id: "1EF49BB17B98283A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41528F5FC35DC6DA"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "6A403C7B06EB7E01"
 				item: { count: 1, id: "pneumaticcraft:memory_stick" }
@@ -807,6 +1184,12 @@
 		{
 			dependencies: ["1EF49BB17B98283A"]
 			id: "2C99CDE7801C48F0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2454A247E042F9CC"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "55EA4DAB9B585CDB"
 				item: { count: 1, id: "pneumaticcraft:minigun" }
@@ -818,6 +1201,12 @@
 		{
 			dependencies: ["2C99CDE7801C48F0"]
 			id: "12A7971658135C90"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F1A38B802D0DB4D"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "6319D59715C67DED"
 				item: { count: 1, id: "pneumaticcraft:sentry_turret" }
@@ -829,6 +1218,12 @@
 		{
 			dependencies: ["0E89FB32767F03C0"]
 			id: "17FCD3ECDC775E69"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "71D26C5B335CC434"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "6B98588CE2B7A14C"
 				item: { count: 1, id: "pneumaticcraft:gun_ammo_ap" }
@@ -840,6 +1235,12 @@
 		{
 			dependencies: ["0E89FB32767F03C0"]
 			id: "7C31082BB88384BF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3ACE7F0D92B2A76B"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "69D15B0020F222E1"
 				item: { count: 1, id: "pneumaticcraft:gun_ammo_explosive" }
@@ -851,6 +1252,12 @@
 		{
 			dependencies: ["0E89FB32767F03C0"]
 			id: "77897C0A26941E97"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "132B0C222D40F11E"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "4CBF2B688A69E1B6"
 				item: { count: 1, id: "pneumaticcraft:gun_ammo_freezing" }
@@ -862,6 +1269,12 @@
 		{
 			dependencies: ["0E89FB32767F03C0"]
 			id: "18E944F145FEBB8C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F6566C649E1D2C8"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "71D3706B5A20EAE1"
 				item: { count: 1, id: "pneumaticcraft:gun_ammo_incendiary" }
@@ -873,6 +1286,12 @@
 		{
 			dependencies: ["12A7971658135C90"]
 			id: "0E89FB32767F03C0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "51FECAFF1B8E5659"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "397402C8F9700D81"
 				item: { count: 1, id: "pneumaticcraft:gun_ammo" }
@@ -884,6 +1303,12 @@
 		{
 			dependencies: ["0E89FB32767F03C0"]
 			id: "166CEF9F03DA14F6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "734CCEC6D0550DDE"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "790B8DCDF52907AB"
 				item: { count: 1, id: "pneumaticcraft:gun_ammo_weighted" }
@@ -895,6 +1320,12 @@
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
 			id: "378A3A640EF06FE5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0AFF86C8C0454216"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "6EB39FD484607320"
 				item: { count: 1, id: "pneumaticcraft:electrostatic_compressor" }
@@ -906,6 +1337,12 @@
 		{
 			dependencies: ["16B74C92EB86AD0C"]
 			id: "023A420F24C515EB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "62F4BFC3755E978A"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "5AD6362AF6B9C114"
 				item: { count: 1, id: "pneumaticcraft:reinforced_pressure_tube" }
@@ -917,6 +1354,12 @@
 		{
 			dependencies: ["7C57D76FDBD784F8"]
 			id: "1246838BA3EEE910"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0835DD5D5A724CFF"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "5075CB9A4CD121F0"
 				item: { count: 1, id: "pneumaticcraft:oil_bucket" }
@@ -928,6 +1371,12 @@
 		{
 			dependencies: ["0F7AEC02C0AC86A2"]
 			id: "7342ABDAD6467123"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "437BCE3259302F7A"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					id: "5A4C3FF76C21BC7B"
@@ -961,13 +1410,19 @@
 		{
 			dependencies: ["0164C557CFF09322"]
 			id: "7C895CB7DD5FEA8B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "403219B66E02CD7D"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "426222A7CF607270"
 				item: { count: 1, id: "pneumaticcraft:programmable_controller" }
 				type: "item"
 			}]
 			x: 25.5d
-			y: -8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["580736A5075A46E9"]
@@ -978,6 +1433,12 @@
 				id: "pneumaticcraft:drone"
 			}
 			id: "0F7AEC02C0AC86A2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6A673B489AEE9565"
+				table_id: 9016087528600323687L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "4F4699F9117BC270"
 				type: "checkmark"

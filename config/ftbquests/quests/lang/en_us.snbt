@@ -13,7 +13,7 @@
 	chapter.40CEA39FE5F5225D.title: "Mekanism &c(WIP)"
 	chapter.42032FCAB6197EE7.title: "&cTools and Armory"
 	chapter.5A3894BACC5E8994.title: "Theurgy"
-	chapter.5BF964A2F3CAA6E8.title: "&3Utilities"
+	chapter.5BF964A2F3CAA6E8.title: "&9Utilities"
 	chapter.6A5B4531418CC297.title: "Modern Industrialization"
 	chapter.70FFEE37C7ABD690.title: "Applied Energistics"
 	chapter.7269FD2B5B0F0424.title: "Occultism"
@@ -130,13 +130,13 @@
 	quest.04A69DE982F47E64.title: "HV Steam Turbine"
 	quest.04C21F7B2F034772.title: "Supercharged Coil"
 	quest.04E6DF90BA2FCACB.quest_desc: [
-		"This device converts compressed air into Forge Energy (compatible with RF and many other mods’ energy). "
+		"This device &6converts&r &7compressed air&r into &bForge Energy&r (&9compatible with RF and many other mods’ energy&r). "
 		""
-		"It has a base efficiency of 40%, meaning 100 mL of air generates 40 FE. "
+		"It has a &3base efficiency&r of &a40%&r, meaning &7100 mL of air&r generates &b40 FE&r. "
 		""
-		"Speed Upgrades will slightly reduce this efficiency. "
+		"&bSpeed Upgrades&r will slightly &creduce&r this &aefficiency&r. "
 		""
-		"The Dynamo also produces heat, which needs to be managed to prevent a loss in efficiency."
+		"The &bDynamo&r also &6produces&r &4heat&r, which needs to be managed to prevent a &closs&r in &aefficiency&r."
 	]
 	quest.0547229FF5334CF5.quest_desc: ["The &bInterface&f acts like a chest, you can &aset an item or fluid &finside the &bInterface&f and it will pull that item from the&5 network &fto keep stock."]
 	quest.05A0AC380BB141A0.title: "Restrictive Transporter"
@@ -254,11 +254,11 @@
 	quest.0B2FF8169FD3812D.quest_subtitle: "Waiting for Something to Hatch?"
 	quest.0B2FF8169FD3812D.title: "Steel Hatches"
 	quest.0B4D059EDFD90B5B.quest_desc: [
-		"Fill the Etching Tank with Etching Acid and insert Empty PCBs that have been exposed in a UV Light Box. "
+		"Fill the &bEtching Tank&r with &2Etching Acid&r and insert &7Empty PCBs&r that have been exposed in a &eUV Light Box&r. "
 		""
-		"Optionally, you can heat the tank to above 50 degrees Celsius to speed up the etching process, though this will cause the Etching Acid to be consumed more rapidly. "
+		"Optionally, you can &cheat&r the tank to above &c50&r degrees Celsius to &espeed&r up the etching process, though this will cause the &2Etching Acid&r to be consumed more rapidly. "
 		""
-		"Extract Unassembled PCBs from the sides and Failed PCBs from the top or bottom of the tank."
+		"Extract &bUnassembled PCBs&r from the sides and &cFailed PCBs&r from the top or bottom of the tank."
 	]
 	quest.0B94435972292812.quest_desc: [
 		"The &bSpatial IO Port &fis the core of the &bSpatial Digitizing system&f. It's placed at the vertex where all 3 &bpylon edges &fmeet. It's where you place the &bSpatial Drive &fand allow it to&6 capture a build or rlease it&f. This is also the block to power when charging the system."
@@ -361,23 +361,23 @@
 	]
 	quest.0F5FE44BAC4E06D4.title: "Neptunium"
 	quest.0F7AEC02C0AC86A2.quest_desc: [
-		"When their pressure gets below a certain point, they will scan for a charging station fitted with a dispenser upgrade within their designated area  if one is found, they will automatically recharge before going back to their respective task. "
+		"When their &7pressure&r gets &ebelow&r a certain point, they will scan for a &bCharging Station&r fitted with a &bDispenser Upgrade&r within their designated area  if one is found, they will automatically &6recharge&r before going back to their respective task. "
 		""
-		"While all drones can be upgraded with speed, volume, armor, standby, security and item life upgrades, additional upgrades can be fitted depending on the drone type:"
+		"While all &bDrones&r can be &6upgraded&r with speed, volume, armor, standby, security and item life upgrades, additional &bupgrades&r can be &6fitted&r depending on the drone type:"
 		""
-		"All:             "
+		"&aAll:&r            "
 		"- Speed x 10, Volume x 25, Armor x 15, Standby x 1, Security x 3, Item life x 10"
 		""
-		"Collector:     "
+		"&eCollector:&r    "
 		"- Magnet x 6, Range x 16, Inventory x 35"
 		""
-		"Harvester:     "
+		"&2Harvester:&r   "
 		"- <n/a>"
 		""
-		"Guard:         "
+		"&cGuard:&r      "
 		"- Minigun x 1, Range x 16, Muffler x 4"
 		""
-		"Logistics:     "
+		"&9Logistics:&r    "
 		"- Inventory x 35"
 	]
 	quest.0FA3C7049E71EA4A.quest_desc: ["You planning on owning a &bQuarry&f anytime soon?"]
@@ -594,11 +594,11 @@
 	]
 	quest.176524D0E4475298.title: "Distillery"
 	quest.1794E588334CB478.quest_desc: [
-		"This machine uses advanced technology to compress items down to atomic size, allowing it to access and manipulate a player’s inventory directly. "
+		"This machine uses &6advanced technology&r to &7compress&r &bitems&r down to &datomic size&r, allowing it to &6access&r and &6manipulate&r a player’s &9inventory&r directly. "
 		""
-		"Items can be input and output via hoppers, and they will be added to or removed from the inventory of the player who placed the machine. "
+		"&bItems&r can be &ainput&r and &coutput&r via &bhoppers&r, and they will be added to or removed from the &9inventory&r of the player who placed the machine. "
 		""
-		"You can also use smarter insertion methods, such as Drones or Logistics Frames, or other mods, to automatically manage the player's inventory—like keeping it stocked with 64 torches, for instance."
+		"You can also use smarter insertion methods, such as &bDrones&r or &bLogistics Frames&r, or other mods, to automatically manage the player's &9inventory&r—like keeping it stocked with &e64 torches&r, for instance."
 	]
 	quest.17C1F2791A6E0676.quest_desc: ["The Speed Upgrade does what it says on the tin. It speeds up your machines with the cost of a multiplied amount of power usage. No need to fret though, you can combat this!"]
 	quest.17C1F2791A6E0676.title: "Speed Upgrade"
@@ -678,16 +678,17 @@
 		""
 		"{image:justdirethings:block/coalblock_t2 width:100 height:100 align:center fit:true}"
 	]
+	quest.1A23087241E329A3.title: "&9Easy Villagers"
 	quest.1A368E5AD57C10E1.quest_desc: [
-		"This is an advanced version of the Liquid Compressor. "
+		"This is an &6advanced version&r of the &bLiquid Compressor&r. "
 		""
-		"It offers a much faster generation rate of 50 mL/tick but also produces heat. "
+		"It offers a &emuch faster&r generation rate of &750 mL/tick&r but also produces &4heat&r. "
 		""
-		"As the temperature rises, efficiency decreases. "
+		"As the &ctemperature rises&r, &4efficiency decreases&r. "
 		""
-		"The bottom arrow on the temperature gauge shows where efficiency will begin to decline, while the top arrow indicates the point of 0% efficiency. "
+		"The bottom arrow on the &etemperature gauge&r shows where &aefficiency&r will begin to decline, while the top arrow indicates the point of &e0% efficiency&r. "
 		""
-		"Contrary to expectations, this machine will not explode even if the temperature becomes excessively high."
+		"Contrary to expectations, this machine &cwill not explode&r even if the temperature becomes &4excessively high&r."
 	]
 	quest.1A885E0BA312B916.title: "Resistive Heater"
 	quest.1A8D5373290BC1A6.quest_desc: [""]
@@ -769,13 +770,13 @@
 	quest.1CD1F5A08AE6E557.quest_desc: ["Obtained in the depth of the world &bSal Ammoniac &fis best found at y_."]
 	quest.1CD1F5A08AE6E557.quest_subtitle: "Obtained from the depths"
 	quest.1D249BAAD819E83F.quest_desc: [
-		"This machine converts Forge Energy (compatible with RF and many other mods’ energy) into compressed air. "
+		"This machine &6converts&r &bForge Energy&r (&9compatible with RF and many other mods’ energy&r) into &7compressed air&r. "
 		""
-		"It operates with a base efficiency of 40%, meaning 100 FE generates 40 mL of compressed air. "
+		"It operates with a &ebase efficiency&r of &a40%&r, meaning &b100 FE&r generates &740 mL of compressed air&r. "
 		""
-		"Using Speed Upgrades will slightly decrease this efficiency. "
+		"Using &bSpeed Upgrades&r will slightly &cdecrease&r this &aefficiency&r. "
 		""
-		"Additionally, the Compressor produces heat, which needs to be managed to prevent a reduction in efficiency."
+		"Additionally, the &bCompressor&r produces &4heat&r, which needs to be managed to prevent a &creduction&r in &aefficiency&r."
 	]
 	quest.1D482F0D9AF8D17E.title: "Atomic Alloy"
 	quest.1D57C823A1F0203C.quest_desc: [
@@ -1013,18 +1014,20 @@
 	quest.299CBEA2571FD97A.quest_subtitle: "&bBlue Crystals"
 	quest.299CBEA2571FD97A.title: "&bNiotic Crystal"
 	quest.29AC06B27D6A53C5.quest_desc: [
-		"A pre-programmed drone that collects items within a 17x17x17 area (before range upgrades) centered on the position it's deployed from. "
+		"A pre-programmed &bDrone&r that collects &bitems&r within a &e17x17x17&r area &7(before range upgrades)&r centered on the position it's deployed from. "
 		""
-		"This drone has two basic modes depending on where it is deployed in relation to its deposit inventory:"
+		"This &bDrone&r has two basic &3modes&r depending on where it is deployed in relation to its deposit inventory:"
 		""
-		"Deploying on top of an inventory will filter what the drone collects to only match items inside the inventory at the time of deployment."
+		"- Deploying on top of an &9inventory&r will &6filter&r what the &bDrone&r collects to only match &bitems&r inside the &9inventory&r at the time of deployment."
 		""
-		"Deploying on the ground next to an inventory will tell the drone to collect any items within its area"
+		"- Deploying on the ground next to an &9inventory&r will tell the &bDrone&r to &6collect&r any &bitems&r within its area."
 	]
 	quest.29B59876D04A3772.quest_desc: [
-		"This device spawns mobs using pressure, bypassing light-level restrictions and enabling redstone control. It requires a Spawner Core to function. "
+		"This device &6spawns&r &2mobs&r using &7pressure&r, bypassing &elight-level&r restrictions and enabling &4redstone control&r. "
 		""
-		"Be aware that a partially empty Spawner Core will result in reduced efficiency."
+		"It requires a &bSpawner Core&r to function. "
+		""
+		"Be aware that a &7partially empty&r &bSpawner Core&r will result in &creduced efficiency&r."
 	]
 	quest.29D05998ADC8ACF5.quest_desc: ["  A super advanced processor to push the overclocking capabilities of your machine to it's limits and soon enough, something a bit more... &cNuclear&r."]
 	quest.29D05998ADC8ACF5.title: "Processing Unit"
@@ -1143,9 +1146,9 @@
 	quest.2E0837E85AD433EC.quest_subtitle: "Cinnamon Rolls Are Better"
 	quest.2E50F969D8AE49B2.title: "Elite Induction Cell"
 	quest.2E5D9CB5D821E96A.quest_desc: [
-		"The most robust type of Pressure Tube. "
+		"The most &8robust&r type of &bPressure Tube&r. "
 		""
-		"These tubes can be camouflaged and have the capability to accommodate Tube Modules, allowing for additional functionality."
+		"These &bTubes&r can be &2camouflaged&r and have the capability to accommodate &bTube Modules&r, allowing for &eadditional functionality&r."
 	]
 	quest.2E7A46639993CCDE.quest_desc: [
 		"Any world will have secrets &6hidden&r beyond the visible, whether that be tucked &6under the surface&r or in a completely different &6dimension&r."
@@ -1400,9 +1403,9 @@
 	quest.3761B64135EA94C0.title: "Nuclear Reactor"
 	quest.376DD70A2C14F9A9.title: "&2Alchemical Sulfur Common"
 	quest.378A3A640EF06FE5.quest_desc: [
-		"Generates a large amount of air from lightning strikes. "
+		"&6Generates&r a large &7amount of air&r from &elightning strikes&r. "
 		""
-		"For detailed information, refer to the GUI or the EMI information tab."
+		"For detailed information, refer to the &3GUI&r or the &dEMI&r information tab."
 	]
 	quest.378E30F8E12695A2.title: "Chargepad"
 	quest.37AC7F3340783FD3.quest_desc: ["&bLaserIO&f is a mod that will let u &atransfer&b Items, Fluid, Powah, and Redstone&f with 9 separate configurations per block face."]
@@ -1493,7 +1496,7 @@
 	quest.3CABE90D2D99AAD0.title: "Crafting Formula"
 	quest.3CEBC51DB3555C3E.quest_subtitle: "Every Netherite tier has its own unique properties"
 	quest.3D5B74D9663AAB5A.title: "Heat Generator"
-	quest.3D7406A517FA591D.quest_desc: ["Using these &bMaterials&r you'll be able &6construct&r you first &bPressure Chamber&r. "]
+	quest.3D7406A517FA591D.quest_desc: ["Using these &bMaterials&r you'll be able to &6construct&r you first &bPressure Chamber&r. "]
 	quest.3D7406A517FA591D.title: "Your First Pressure Chamber"
 	quest.3D9DED933A80CAFA.quest_desc: ["This is used to copy and paste setting of &bME Devices&f. This is also used to &6link &bP2P Tunnels&f."]
 	quest.3D9DED933A80CAFA.title: "Memory Card"
@@ -1887,6 +1890,7 @@
 	quest.4E1B3935FC8A1170.quest_desc: ["Another 4x! You're on a roll!"]
 	quest.4E1B3935FC8A1170.title: "16k Storage Component"
 	quest.4E56C9A5F225A883.quest_subtitle: "A way to tick accelerate blocks."
+	quest.4E56C9A5F225A883.title: "&6Gadgets Against Grind"
 	quest.4E6BB4279E8E793A.title: "&7Alchemical Sulfur Abundant"
 	quest.4E8963E1C18ADBAB.quest_desc: [
 		"The &bIncubator &fis small multi-block used to recombine Principles of matter into objects. "
@@ -2077,7 +2081,7 @@
 		""
 		"The &bTemplates&f can be used in the &bTemplate Manager&f."
 	]
-	quest.5855D8361A2C6623.title: "Building Gadgets"
+	quest.5855D8361A2C6623.title: "&bBuilding Gadgets"
 	quest.59128813386BFDB1.quest_desc: [
 		"&bPoint 2 Point (P2P) Tunnels&f can be overwhelmingly complex, but at the same time extremely useful. These &btunnels&f can be used to &6transfer up to 32 channels from one point to the other&f. Now, you might be asking: \"But why can't I just use a &bDense Cable&f?\""
 		""
@@ -2145,13 +2149,13 @@
 	quest.5ECC7F4F5D2591D9.quest_desc: ["The &bAdvanced Card &fis a crafting component used to craft &bUpgrades&f."]
 	quest.5ECC7F4F5D2591D9.title: "Advanced Upgrades"
 	quest.5EEF6110DDBEB146.quest_desc: [
-		"A pre-programmed drone that defends a 31x31x31 area centered on the position the it's deployed from. "
+		"A pre-programmed &bDrone&r that defends a &e31x31x31&r area centered on the position the it's deployed from. "
 		""
-		"This drone has two basic modes depending on how it is deployed:"
+		"This &bDrone&r has two basic &3modes&r depending on how it is deployed:"
 		""
-		"Deploying on the ground will tell the drone to attack any mobs which enter its area using whatever it already has on-board."
+		"- Deploying on the ground will tell the &bDrone&r to &cattack&r any &2mobs&r which enter its area using whatever it already has on-board."
 		""
-		"Deploying on top of an inventory containing a weapon or minigun ammo (assuming the drone is carrying a minigun upgrade) will tell the drone to arm itself using items inside the inventory before defending its area "
+		"- Deploying on top of an &9inventory&r containing a &cWeapon&r or &7Minigun Ammo&r (assuming the drone is carrying a minigun upgrade) will tell the &bDrone&r to arm itself using &bitems&r inside the &9inventory&r before &edefending&r its area ."
 	]
 	quest.5F95D00149FB24FD.title: "Chemical Dissolution Chamber"
 	quest.5FB18A0E7827D203.title: "Ritual: Summon Foliot Transporter"
@@ -2300,9 +2304,9 @@
 	quest.6716C1CE7B7FFA94.title: "Capacity Card"
 	quest.67284079A941EF4B.title: "Scuba Gear"
 	quest.6762C357EEDE8D10.quest_desc: [
-		"An advanced compressor that utilizes sunlight to pressurize air. "
+		"An advanced compressor that utilizes &esunlight&r to &7pressurize air&r. "
 		""
-		"Its efficiency improves as it gets hotter, but excessive heat buildup will cause the compressor to shut down, necessitating manual repair."
+		"Its &aefficiency&r improves as it gets &chotter&r, but excessive &4heat&r buildup will cause the compressor to &8shut down&r, necessitating &6manual repair&r."
 	]
 	quest.67A41E4D6BCA5F2B.title: "QIO Drive Array"
 	quest.67ACD099BDB606FA.quest_desc: ["When &6wearing &fthese &bGoggles&f you will have unlimited access to the &bThird Eye&f."]
@@ -2351,7 +2355,7 @@
 		"When &6equipped&r with a &bModule Expansion Card&r, you can precisely &6adjust&r the threshold through the &3GUI&r."
 	]
 	quest.68A1BBD669C1CEF5.quest_desc: ["The &bMarket &fwill allow you to &6buy &falmost any &bseed/sapling &fin the game with &bemeralds&f."]
-	quest.68A1BBD669C1CEF5.title: "&9Market"
+	quest.68A1BBD669C1CEF5.title: "&aFarming For Blockheads"
 	quest.68A8995F4A13381A.quest_desc: [
 		"  Accepts top-level &bupgrades&r:"
 		""
@@ -2808,12 +2812,13 @@
 	quest.79515634992D02A3.title: "Antimatter"
 	quest.7992491EE3E2BED3.title: "Advanced Thermodynamic Conductor"
 	quest.79C075FFF796FE16.quest_desc: [
-		"A pre-programmed drone that harvests fully-grown crops within a 17x17x17 area centered on the position it's deployed from. "
+		"A pre-programmed &bDrone&r that &2harvests&r fully-grown &acrops&r within a &e17x17x17&r area centered on the position it's deployed from. "
 		""
-		"This drone has two basic modes depending on how it is deployed:"
-		"Deploying on the ground will tell the drone to harvest any fully-grown crops within its area."
+		"This &bDrone&r has two basic &3modes&r depending on how it is deployed:"
 		""
-		"Deploying on top of an inventory containing a hoe will tell the drone to replant any crops it harvests within its area"
+		"- Deploying on the ground will tell the &bdrone&r to &2harvest&r any fully-grown &acrops&r within its area."
+		""
+		"- Deploying on top of an &3inventory&r containing a &bHoe&r will tell the drone to &6replant&r any &acrops&r it harvests within its area."
 	]
 	quest.79F451F9C8D02A69.quest_desc: ["Now that you have a &bConcurrent Processor &fyou can now craft some more items to help you through &aExtenedAE&f."]
 	quest.7A6C1605F32F695F.quest_desc: [
@@ -2992,6 +2997,7 @@
 	reward_table.52F336B04D047EAD.title: "Just Dire Things, Tier 2"
 	reward_table.55C75A71A401F6F9.title: "JDT 3"
 	reward_table.59C15B9D0F7ED5E1.title: "Resources"
+	reward_table.7D1F93D6860D4667.title: "PNC"
 	task.00CA3CB10A03DF62.title: "PNC 100%"
 	task.013281B2076D21ED.title: "Helpful Tips \\& Tricks"
 	task.02D1703C79A7F3EF.title: "Any #c:logs/archwood"
