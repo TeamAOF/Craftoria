@@ -6,7 +6,7 @@ modpack:
   
 install:
   mcVersion:
-  loaderVersion: 21.1.27
+  loaderVersion: 21.1.37
   modpackUrl: https://mediafilez.forgecdn.net/files/5665/209/Craftoria-0.9.2.zip
   installerUrl: "https://maven.neoforged.net/releases/net/neoforged/neoforge/{{@loaderversion@}}/neoforge-{{@loaderversion@}}-installer.jar"
   
@@ -24,7 +24,7 @@ install:
     ignoreProject: 
       - 737481 # Chat Toggle
       - 363363 # Extreme Sound Muffler
-      - 908741 # Embeddium
+      - 394468 # Sodium/Embeddium
       - 986380 # Lighty
       - 844662 # Entity Model Features
       - 568563 # Entity Texture Features
