@@ -24,8 +24,8 @@
 				item: { count: 1, id: "pylons:expulsion_pylon" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 1.0d
+			x: -2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["3B429F0556B85DF0"]
@@ -41,8 +41,8 @@
 				item: { count: 1, id: "pylons:infusion_pylon" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: -3.0d
+			x: 0.5d
+			y: 3.5d
 		}
 		{
 			id: "18416E8B02E02817"
@@ -57,8 +57,8 @@
 				item: { count: 1, id: "pylons:harvester_pylon" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 3.0d
+			x: -4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0E8B36B67840AADD"]
@@ -74,8 +74,8 @@
 				item: { count: 1, id: "pylons:interdiction_pylon" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: -1.0d
+			x: -1.0d
+			y: 3.5d
 		}
 		{
 			id: "71B6DA56399050E1"
@@ -90,8 +90,8 @@
 				item: { count: 1, id: "shrink:shrinking_device" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.0d
+			x: -5.5d
+			y: 3.5d
 		}
 		{
 			id: "5DA3F6FF2AE6C081"
@@ -106,8 +106,8 @@
 				item: { count: 1, id: "charginggadgets:charging_station" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.0d
+			x: 2.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1A23087241E329A3"]
@@ -123,7 +123,7 @@
 				item: { count: 1, id: "easy_piglins:barterer" }
 				type: "item"
 			}]
-			x: 10.0d
+			x: 7.0d
 			y: -2.0d
 		}
 		{
@@ -134,12 +134,13 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "5120ABF49D1080A5"
 				item: { count: 1, id: "easy_villagers:trader" }
 				type: "item"
 			}]
-			x: 10.0d
+			x: 7.0d
 			y: 0.0d
 		}
 		{
@@ -156,7 +157,7 @@
 				item: { count: 1, id: "easy_villagers:auto_trader" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 8.5d
 			y: -1.5d
 		}
 		{
@@ -173,7 +174,7 @@
 				item: { count: 1, id: "easy_villagers:farmer" }
 				type: "item"
 			}]
-			x: 12.0d
+			x: 9.0d
 			y: 0.0d
 		}
 		{
@@ -190,7 +191,7 @@
 				item: { count: 1, id: "easy_villagers:breeder" }
 				type: "item"
 			}]
-			x: 11.5d
+			x: 8.5d
 			y: 1.5d
 		}
 		{
@@ -207,7 +208,7 @@
 				item: { count: 1, id: "easy_villagers:converter" }
 				type: "item"
 			}]
-			x: 10.0d
+			x: 7.0d
 			y: 2.0d
 		}
 		{
@@ -224,7 +225,7 @@
 				item: { count: 1, id: "easy_villagers:iron_farm" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 5.5d
 			y: 1.5d
 		}
 		{
@@ -241,7 +242,7 @@
 				item: { count: 1, id: "easy_villagers:incubator" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -258,7 +259,7 @@
 				item: { count: 1, id: "easy_villagers:inventory_viewer" }
 				type: "item"
 			}]
-			x: 8.5d
+			x: 5.5d
 			y: -1.5d
 		}
 		{
@@ -269,12 +270,13 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "19FB10D55447EFA1"
 				item: { count: 1, id: "laserio:laser_wrench" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -5.0d
 			y: 0.0d
 		}
 		{
@@ -298,7 +300,7 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: -5.0d
 			y: -2.0d
 		}
 		{
@@ -315,7 +317,7 @@
 				item: { count: 1, id: "laserio:laser_node" }
 				type: "item"
 			}]
-			x: 1.5d
+			x: -3.5d
 			y: -1.5d
 		}
 		{
@@ -354,7 +356,7 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
+			x: -3.0d
 			y: 0.0d
 		}
 		{
@@ -393,7 +395,7 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
+			x: -3.5d
 			y: 1.5d
 		}
 		{
@@ -410,7 +412,7 @@
 				item: { count: 1, id: "laserio:logic_chip_raw" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: -5.0d
 			y: 2.0d
 		}
 		{
@@ -427,7 +429,7 @@
 				item: { count: 1, id: "laserio:logic_chip" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -6.5d
 			y: 1.5d
 		}
 		{
@@ -444,7 +446,7 @@
 				item: { count: 1, id: "laserio:overclocker_card" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: -7.0d
 			y: 0.0d
 		}
 		{
@@ -461,7 +463,7 @@
 				item: { count: 1, id: "laserio:overclocker_node" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -6.5d
 			y: -1.5d
 		}
 		{
@@ -485,7 +487,7 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
+			x: -13.0d
 			y: 0.0d
 		}
 		{
@@ -502,7 +504,7 @@
 				item: { count: 1, id: "cookingforblockheads:white_oven" }
 				type: "item"
 			}]
-			x: -8.0d
+			x: -9.0d
 			y: 0.0d
 		}
 		{
@@ -519,7 +521,7 @@
 				item: { count: 1, id: "cookingforblockheads:cow_jar" }
 				type: "item"
 			}]
-			x: -10.0d
+			x: -11.0d
 			y: 2.0d
 		}
 		{
@@ -536,7 +538,7 @@
 				item: { count: 1, id: "cookingforblockheads:toaster" }
 				type: "item"
 			}]
-			x: -11.5d
+			x: -12.5d
 			y: -1.5d
 		}
 		{
@@ -553,7 +555,7 @@
 				item: { count: 1, id: "cookingforblockheads:white_fridge" }
 				type: "item"
 			}]
-			x: -10.0d
+			x: -11.0d
 			y: -2.0d
 		}
 		{
@@ -564,6 +566,7 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
+			size: 1.5d
 			tasks: [
 				{
 					id: "4C9E2BE4FC05EF38"
@@ -596,7 +599,7 @@
 					type: "item"
 				}
 			]
-			x: -10.0d
+			x: -11.0d
 			y: 0.0d
 		}
 		{
@@ -613,7 +616,7 @@
 				item: { count: 1, id: "cookingforblockheads:heating_unit" }
 				type: "item"
 			}]
-			x: -8.5d
+			x: -9.5d
 			y: 1.5d
 		}
 		{
@@ -637,7 +640,7 @@
 					type: "item"
 				}
 			]
-			x: -8.5d
+			x: -9.5d
 			y: -1.5d
 		}
 		{
@@ -648,16 +651,16 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "189DCFAD2C420146"
 				item: { count: 1, id: "farmingforblockheads:market" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 3.0d
+			x: 7.0d
+			y: -5.5d
 		}
 		{
-			dependencies: ["68A1BBD669C1CEF5"]
 			id: "1395E3C0ACED7F7B"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -677,11 +680,10 @@
 					type: "item"
 				}
 			]
-			x: 5.0d
-			y: 1.5d
+			x: 7.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["1395E3C0ACED7F7B"]
 			id: "292E93AD526F817C"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -694,11 +696,10 @@
 				item: { count: 1, id: "farmingforblockheads:green_fertilizer" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 0.0d
+			x: 9.0d
+			y: -5.5d
 		}
 		{
-			dependencies: ["292E93AD526F817C"]
 			id: "37D6DD29FB83A3DF"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -712,10 +713,9 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -1.5d
+			y: -5.5d
 		}
 		{
-			dependencies: ["37D6DD29FB83A3DF"]
 			id: "011DC98BB2CFFB72"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -728,8 +728,8 @@
 				item: { count: 1, id: "farmingforblockheads:yellow_fertilizer" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: -3.0d
+			x: 7.0d
+			y: -7.5d
 		}
 		{
 			id: "7BE64AF022E35ADE"
@@ -739,13 +739,14 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "30728D980D112B06"
 				item: { count: 1, id: "morered:red_alloy_ingot" }
 				type: "item"
 			}]
-			x: -8.0d
-			y: -6.5d
+			x: -11.0d
+			y: -5.5d
 		}
 		{
 			id: "00545D267282C024"
@@ -760,8 +761,8 @@
 				item: { count: 1, id: "morered:soldering_table" }
 				type: "item"
 			}]
-			x: -10.0d
-			y: -4.5d
+			x: -11.0d
+			y: -3.5d
 		}
 		{
 			id: "0F06B5CFCD65EF0E"
@@ -783,8 +784,8 @@
 					type: "item"
 				}
 			]
-			x: -10.0d
-			y: -8.5d
+			x: -12.0d
+			y: -7.5d
 		}
 		{
 			id: "207E271D018B5217"
@@ -841,8 +842,8 @@
 					type: "item"
 				}
 			]
-			x: -11.5d
-			y: -8.0d
+			x: -10.0d
+			y: -7.5d
 		}
 		{
 			id: "0CFA35BB55D9CBA4"
@@ -884,8 +885,8 @@
 					type: "item"
 				}
 			]
-			x: -8.5d
-			y: -8.0d
+			x: -9.0d
+			y: -5.5d
 		}
 		{
 			id: "14B3A6FF79F02AF0"
@@ -912,8 +913,8 @@
 					type: "item"
 				}
 			]
-			x: -8.5d
-			y: -5.0d
+			x: -9.5d
+			y: -4.0d
 		}
 		{
 			id: "6D1CE6758B529DDC"
@@ -928,8 +929,8 @@
 				item: { count: 1, id: "morered:hexidecrubrometer" }
 				type: "item"
 			}]
-			x: -11.5d
-			y: -5.0d
+			x: -12.5d
+			y: -4.0d
 		}
 		{
 			id: "364A81E9AE697A31"
@@ -966,8 +967,8 @@
 					type: "item"
 				}
 			]
-			x: -12.0d
-			y: -6.5d
+			x: -13.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["6441C36C63A59445"]
@@ -983,8 +984,8 @@
 				item: { count: 1, id: "pipez:item_pipe" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -5.0d
+			x: -0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6441C36C63A59445"]
@@ -1000,8 +1001,8 @@
 				item: { count: 1, id: "pipez:fluid_pipe" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -5.0d
+			x: 2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6441C36C63A59445"]
@@ -1017,8 +1018,8 @@
 				item: { count: 1, id: "pipez:energy_pipe" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: -6.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6441C36C63A59445"]
@@ -1034,8 +1035,8 @@
 				item: { count: 1, id: "pipez:universal_pipe" }
 				type: "item"
 			}]
-			x: 8.5d
-			y: -8.0d
+			x: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6441C36C63A59445"]
@@ -1051,8 +1052,8 @@
 				item: { count: 1, id: "pipez:gas_pipe" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: -6.5d
+			x: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6441C36C63A59445"]
@@ -1085,8 +1086,8 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: -8.0d
+			x: 2.5d
+			y: -1.5d
 		}
 		{
 			id: "6441C36C63A59445"
@@ -1096,6 +1097,7 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
+			size: 1.5d
 			tasks: [
 				{
 					id: "11DE21AE45EB2803"
@@ -1108,18 +1110,8 @@
 					type: "item"
 				}
 			]
-			x: 10.0d
-			y: -6.5d
-		}
-		{
-			id: "42619280FF258EEA"
-			size: 1.5d
-			tasks: [{
-				id: "1936B2F028F013BB"
-				type: "checkmark"
-			}]
-			x: -10.0d
-			y: -6.5d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["429A3E6B65A5D719"]
@@ -1152,7 +1144,7 @@
 					type: "item"
 				}
 			]
-			x: -11.5d
+			x: -12.5d
 			y: 1.5d
 		}
 		{
@@ -1168,24 +1160,8 @@
 				item: { count: 1, id: "buildinggadgets2:gadget_building" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -6.5d
-		}
-		{
-			id: "192070F984387CE1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "72DDB4B2F6A9D847"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "42F9D7E62488828A"
-				item: { count: 1, id: "buildinggadgets2:template_manager" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: -5.0d
+			x: -0.5d
+			y: -7.0d
 		}
 		{
 			id: "40F1315207ADEB80"
@@ -1200,8 +1176,8 @@
 				item: { count: 1, id: "buildinggadgets2:gadget_exchanging" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -8.0d
+			x: 1.0d
+			y: -7.5d
 		}
 		{
 			id: "66D2FB13C09177EA"
@@ -1216,8 +1192,8 @@
 				item: { count: 1, id: "buildinggadgets2:gadget_copy_paste" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -8.5d
+			x: 2.5d
+			y: -7.0d
 		}
 		{
 			id: "2B29DDBADF11195E"
@@ -1232,8 +1208,8 @@
 				item: { components: { "buildinggadgets2:paste_replace_toggle": 1b }, count: 1, id: "buildinggadgets2:gadget_cut_paste" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.5d
+			x: -0.5d
+			y: -4.0d
 		}
 		{
 			id: "2A2E1C7C34C9A4AA"
@@ -1248,8 +1224,8 @@
 				item: { count: 1, id: "buildinggadgets2:gadget_destruction" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -5.0d
+			x: 1.0d
+			y: -3.5d
 		}
 		{
 			id: "65F5E0194184FEDE"
@@ -1264,8 +1240,8 @@
 				item: { components: { "buildinggadgets2:paste_replace_toggle": 1b }, count: 1, id: "buildinggadgets2:gadget_cut_paste" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -8.0d
+			x: 2.5d
+			y: -4.0d
 		}
 		{
 			id: "5855D8361A2C6623"
@@ -1275,6 +1251,7 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
+			size: 1.5d
 			tasks: [
 				{
 					id: "7FD44BB58F3D8872"
@@ -1286,19 +1263,268 @@
 					item: { count: 1, id: "buildinggadgets2:redprint" }
 					type: "item"
 				}
+				{
+					id: "46B92B0247C5E62A"
+					item: { count: 1, id: "buildinggadgets2:template_manager" }
+					type: "item"
+				}
 			]
-			x: 0.0d
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			id: "4E56C9A5F225A883"
+			rewards: [
+				{
+					id: "0DAF433694C30EAC"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "677CA4C099451C84"
+					table_id: 6467551270008706529L
+					type: "loot"
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "48AA5BBA16340C46"
+				item: { count: 1, id: "gag:time_sand_pouch" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -5.5d
+		}
+		{
+			id: "1C4ADA8B75FBBED1"
+			rewards: [
+				{
+					id: "2DD581B26CA61B26"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "103A4EA8FF740142"
+					table_id: 6467551270008706529L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "7F3B72F1F4C1A07D"
+				item: { count: 1, id: "gag:hearthstone" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.5d
+		}
+		{
+			id: "3DE966D73F4FF5A4"
+			rewards: [
+				{
+					id: "2E2F66A88BC31691"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "66142CBD3FAEBE47"
+					table_id: 6467551270008706529L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "3587BBF8907470DA"
+				item: { count: 1, id: "gag:no_solicitors" }
+				type: "item"
+			}]
+			x: -6.5d
 			y: -4.5d
 		}
 		{
-			id: "02C96AE982806447"
-			size: 1.5d
+			id: "0C34B97F1EA88415"
+			rewards: [
+				{
+					id: "61398CDED9FACF29"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "723D2A2031376895"
+					table_id: 6467551270008706529L
+					type: "loot"
+				}
+			]
 			tasks: [{
-				id: "659005F19206B35C"
-				type: "checkmark"
+				id: "303310D2FAC91F15"
+				item: { count: 1, id: "gag:escape_rope" }
+				type: "item"
 			}]
-			x: 0.0d
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			id: "21B62373ACBE871E"
+			rewards: [
+				{
+					id: "2B4EA4BAF0C14314"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5A7E65AF41C85FF4"
+					table_id: 6467551270008706529L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "790601C0BF6EDF74"
+				item: { count: 1, id: "gag:energized_hearthstone" }
+				type: "item"
+			}]
+			x: -6.5d
 			y: -6.5d
+		}
+		{
+			id: "44507ED3F8A6DEC1"
+			rewards: [
+				{
+					id: "15EBE49C45FE6DC8"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "773F6BF6DD4C2A02"
+					table_id: 6467551270008706529L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "49FF3E5F02F714E3"
+				item: { count: 1, id: "gag:sacred_salt" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			id: "16CCA9B47B9E8B81"
+			rewards: [
+				{
+					id: "57D0E31E9F19305E"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0162325A4643435D"
+					table_id: 6467551270008706529L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "3C73D30A377F35DD"
+				item: { count: 1, id: "gag:sacred_salve" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			id: "3A6C69201C3AEF13"
+			rewards: [
+				{
+					id: "7F748C20728CC29C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "33A1937E7ADE00FD"
+					table_id: 6467551270008706529L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "7F616BE41F081324"
+				item: { count: 1, id: "gag:sacred_balm" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			id: "136607A0E86F1BAB"
+			rewards: [
+				{
+					id: "50DEA605924CA533"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5A77047CA16749C8"
+					table_id: 6467551270008706529L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "6303171A18E26335"
+				item: { count: 1, id: "gag:mining_dynamite" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -7.5d
+		}
+		{
+			id: "1E953786775F1D81"
+			rewards: [
+				{
+					id: "199E170C1193A31C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "235919FCB0F6F50F"
+					table_id: 6467551270008706529L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "020F1867BE433ABC"
+				item: { count: 1, id: "gag:fishing_dynamite" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -7.5d
+		}
+		{
+			id: "6DEFCC013F7A6069"
+			rewards: [
+				{
+					id: "04861B7D74FAA1C4"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4DE16CCB3DDDBC84"
+					table_id: 6467551270008706529L
+					type: "loot"
+				}
+			]
+			tasks: [{
+				id: "62C928F9AAF386A0"
+				item: { count: 1, id: "gag:labeling_tool" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.5d
 		}
 	]
 }
