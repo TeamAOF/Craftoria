@@ -49,6 +49,9 @@
 		""
 		"  Use a Large Tank Hatch too. It works just like other hatches, aside from it only being a point of access to the tank. It'll input and output from any hatches you put on it."
 	]
+	quest.023A420F24C515EB.quest_desc: ["A reinforced version of the basic Pressure Tube, these can be camouflaged and have Tube Modules added to provide extra functionality."]
+	quest.02C96AE982806447.quest_desc: ["&bBuilding Gadgets &fuse &4power &fto operate. While &6pressing &b\"H\" &fby default, it will open the setting menu from which u can select the size, and other options."]
+	quest.02C96AE982806447.title: "&bBuilding Gadgets"
 	quest.030E566682A89105.quest_desc: [
 		"   The &bfuel canister&r holds a large amount of fuel."
 		""
@@ -61,6 +64,7 @@
 		"{image:justdirethings:item/fuel_canister_full width:100 height:100 align:center fit:true}"
 	]
 	quest.030E566682A89105.quest_subtitle: "Fuel Saver"
+	quest.03103A57191715D1.title: "Leather Backpack"
 	quest.03271CEB2EBD0979.quest_desc: [
 		"  &6Transmits&r &cenergy&r from attached &bsource&r, to any power &bconsumer&r within an offset AOE."
 		""
@@ -68,6 +72,8 @@
 		"{image:ftbquests:tasks/fe_full width:64 height:64 align:center}"
 	]
 	quest.03271CEB2EBD0979.quest_subtitle: "An AOE Charger"
+	quest.03471D7D8B0068F0.quest_desc: [""]
+	quest.03471D7D8B0068F0.title: "Iron Backpack"
 	quest.038773FFAF3C8817.quest_desc: [
 		"  Read this chapter as a flow chart."
 		""
@@ -119,8 +125,10 @@
 	]
 	quest.04A69DE982F47E64.title: "HV Steam Turbine"
 	quest.04C21F7B2F034772.title: "Supercharged Coil"
+	quest.04E6DF90BA2FCACB.quest_desc: ["This device converts compressed air into Forge Energy (compatible with RF and many other mods’ energy). It has a base efficiency of 40%, meaning 100 mL of air generates 40 FE. Speed Upgrades will slightly reduce this efficiency. The Dynamo also produces heat, which needs to be managed to prevent a loss in efficiency."]
 	quest.0547229FF5334CF5.quest_desc: ["The &bInterface&f acts like a chest, you can &aset an item or fluid &finside the &bInterface&f and it will pull that item from the&5 network &fto keep stock."]
 	quest.05A0AC380BB141A0.title: "Restrictive Transporter"
+	quest.05E2E87CF3F9A5FB.quest_desc: [" Made with redstone and diesel and used for the Speed Upgrade."]
 	quest.05E7C7E41BA79426.quest_subtitle: "Quadruple Charging"
 	quest.060D9F59EB26C7BD.title: "Hydrogen Chloride"
 	quest.0633D2B1E1DB778B.quest_desc: ["Obtained by &6smelting &bCertus Quartz&f, &bSilicon&f is used in 3 different processors you will need to proceed."]
@@ -155,6 +163,7 @@
 		"&bBulk Storages&f can hold an &ainfinite &famount of 1 singular item."
 	]
 	quest.07D88A0ABF82A39A.quest_desc: ["Harvested from &6Animals&f while using a &bButchers Knife&f."]
+	quest.07F1FA5EF3E6A7F3.quest_desc: ["This substance can be processed in a Thermopneumatic Processing Plant to produce Kerosene or, by adding Redstone, Lubricant. It serves as a reasonable liquid fuel and can also be placed in a Furnace."]
 	quest.07FE9074247583EE.quest_desc: [
 		"  Now, you might have noticed I said \"usually\" when talking about interacting with the controller. This means items and &6fluids cannot be inputted or outputted from the controller&r, but information can; in the sense of statistics. Looking into the controller you will see a few things: Shape Validity, Status, Progress, Recipe Base, and Recipe Current."
 		""
@@ -226,6 +235,7 @@
 	]
 	quest.0B2FF8169FD3812D.quest_subtitle: "Waiting for Something to Hatch?"
 	quest.0B2FF8169FD3812D.title: "Steel Hatches"
+	quest.0B4D059EDFD90B5B.quest_desc: ["Fill the Etching Tank with Etching Acid and insert Empty PCBs that have been exposed in a UV Light Box. Optionally, you can heat the tank to above 50 degrees Celsius to speed up the etching process, though this will cause the Etching Acid to be consumed more rapidly. Extract Unassembled PCBs from the sides and Failed PCBs from the top or bottom of the tank."]
 	quest.0B94435972292812.quest_desc: [
 		"The &bSpatial IO Port &fis the core of the &bSpatial Digitizing system&f. It's placed at the vertex where all 3 &bpylon edges &fmeet. It's where you place the &bSpatial Drive &fand allow it to&6 capture a build or rlease it&f. This is also the block to power when charging the system."
 		""
@@ -248,12 +258,14 @@
 	quest.0C6D0B1C1AF75292.title: "Chemical Reactor"
 	quest.0CE7E899D54A6AE8.quest_subtitle: "Congratulations! You've completed AE2!"
 	quest.0CE7E899D54A6AE8.title: "&bApplied Energistics &d100%"
+	quest.0D44F37BE787CA30.quest_desc: ["This substance can be processed in a Thermopneumatic Processing Plant to produce LPG, which is an excellent liquid fuel comparable in quality to Thermal Expansion’s Refined Fuel. It can also be placed in a Furnace."]
 	quest.0DA354D54D288D20.title: "Basic Thermodynamic Conductor"
 	quest.0DC83D9B8B09C093.quest_desc: [
 		"&bAlteration Table&r can be used to &6upgrade&r &barmor&r. "
 		""
 		"Put you &barmor&r on the &bTable&r and then the &dGlyph&r, pull off your armor, it'll then be &6upgraded&r."
 	]
+	quest.0DDE4F5B0FE265B0.quest_desc: ["Pressure tubes transfer air between compressors and machines and can be disguised to blend in with their environment. Additionally, Tube modules can be attached to these tubes to provide extra features or functionality."]
 	quest.0E30CFA6C5B58BEA.quest_desc: ["This &bVat &fallows you to convert your &bAlchemical Niter &ffrom one tier to another."]
 	quest.0E30CFA6C5B58BEA.quest_subtitle: "Upgrades?"
 	quest.0E352E2B17084DAE.title: "Advanced Sawing Factory"
@@ -275,6 +287,7 @@
 	]
 	quest.0E50E568DFA078D5.quest_subtitle: "Goo Job!"
 	quest.0E50E568DFA078D5.title: "Begin Just Dire Things"
+	quest.0E89FB32767F03C0.quest_desc: ["This is standard Minigun ammo with no special properties. However, it can be crafted with a potion to imbue the ammo with the potion's effects."]
 	quest.0E8B36B67840AADD.quest_subtitle: "Gets rid of them pesky neighbors"
 	quest.0EA9EF2362AE52A2.title: "Basic Purifying Factory"
 	quest.0ECDE9598DABBD3A.quest_desc: [
@@ -310,6 +323,14 @@
 		"NOTE: Using &bLuck of the Sea&f will &aincrease&f your chances"
 	]
 	quest.0F5FE44BAC4E06D4.title: "Neptunium"
+	quest.0F7AEC02C0AC86A2.quest_desc: [
+		"When their pressure gets below a certain point, they will scan for a charging station fitted with a dispenser upgrade within their designated area  if one is found, they will automatically recharge before going back to their respective task. While all drones can be upgraded with speed, volume, armor, standby, security and item life upgrades, additional upgrades can be fitted depending on the drone type:"
+		"All:             Speed x 10, Volume x 25, Armor x 15, Standby x 1, Security x 3, Item life x 10"
+		"Collector:     Magnet x 6, Range x 16, Inventory x 35"
+		"Harvester:     <n/a>"
+		"Guard:         Minigun x 1, Range x 16, Muffler x 4"
+		"Logistics:     Inventory x 35"
+	]
 	quest.0FA3C7049E71EA4A.quest_desc: ["You planning on owning a &bQuarry&f anytime soon?"]
 	quest.0FA3C7049E71EA4A.title: "64k Storage Component"
 	quest.0FB6106D73ABB512.title: "Pipe Upgrades"
@@ -340,9 +361,11 @@
 	quest.11FC8E533E897B8F.quest_subtitle: "Lightning in a snowball?"
 	quest.12094D44D2E3DB16.quest_desc: ["An &bArmor&r that can be &6upgraded&r but has the armor points of &7Iron&r."]
 	quest.12094D44D2E3DB16.title: "Arcanist's Cloak"
+	quest.1246838BA3EEE910.quest_desc: ["This substance can be processed in a Refinery to create various fuels, which can eventually be used to produce Plastic. When burned directly, it serves as a very inefficient liquid fuel but can be placed in a Furnace."]
 	quest.124D18DDDDC4D102.title: "Basic Universal Cable"
 	quest.12C0AD9539DE96F2.title: "Elite Smelting Factory"
 	quest.132511B52E6234EF.title: "Elite Combining Factory"
+	quest.12A7971658135C90.quest_desc: ["A Sentry Turret is an autonomous defensive weapon that fires at any living entity within a 16-block range when equipped with Gun Ammo. The range can be extended with Range Upgrades. You can specify which entities to attack by setting filters in the ‘Target Filter’ field. Additionally, if the Sentry Turret is covered by a Security Station, players permitted by the Security Station will not be targeted."]
 	quest.135FBE79D4415F15.quest_desc: [
 		"  Before you even ask, the answer is no. These &bnukes&r do &onot&r explode. These are nukes without it's detonator. "
 		""
@@ -387,6 +410,7 @@
 	]
 	quest.156575F76CAB51A0.quest_subtitle: "Legal Duplication"
 	quest.156575F76CAB51A0.title: "&dReplicator"
+	quest.15B6718AFA5E6959.quest_desc: ["Extracts Spawner Cores from vanilla Spawners. Be ready for a challenge…"]
 	quest.15C38E0D2B205FB4.title: "Water for Condensentrator"
 	quest.16052CFE597B57F7.title: "Chemical Infuser for H2SO4"
 	quest.160740771654F4E6.quest_desc: [
@@ -452,6 +476,7 @@
 		"  If you don't want so &bmany items&r in the slots at a time, &6use&r that &bScroll Wheel&r of yours to &6adjust&r the maximum number of &bitems&r stored at a time."
 	]
 	quest.164F4710E109F7F2.title: "&6Your First Bronze"
+	quest.166CEF9F03DA14F6.quest_desc: ["This specialized Minigun ammo deals significantly more damage than standard ammo, but its large mass results in a very short range and causes the Minigun to use air at an increased rate."]
 	quest.16AAEB122CDC1A46.quest_desc: [
 		"{image:modern_industrialization:block/machines/mixer/overlay_top_active width:32 height:32 align:center}"
 		"  A sleek bronze casing with a shining metal bowl where mixing blades are lowered into to &6mix&r up a plethora of different things! You can &6mix dusts&r with a higher output since you wont be spilling any anymore."
@@ -459,6 +484,7 @@
 		"  It doesn't only mix dusts, but also fluids. Example: &eLubricant&r!"
 	]
 	quest.16AAEB122CDC1A46.title: "Bronze Mixer"
+	quest.16B74C92EB86AD0C.quest_desc: ["Pour the liquid into the world or chill it in an inventory with a Heat Frame to solidify it into Plastic Sheets. Using a Heat Frame may yield better results."]
 	quest.16C84031D0CE45AE.quest_desc: [
 		"Now that you are ready for &5Rituals&r, craft yourself a &bRitual Brazier&r. "
 		""
@@ -489,10 +515,12 @@
 		"  Just keep working, soon enough you'll be able to extract many fluids at once."
 	]
 	quest.176524D0E4475298.title: "Distillery"
+	quest.1794E588334CB478.quest_desc: ["This machine uses advanced technology to compress items down to atomic size, allowing it to access and manipulate a player’s inventory directly. Items can be input and output via hoppers, and they will be added to or removed from the inventory of the player who placed the machine. You can also use smarter insertion methods, such as Drones or Logistics Frames, or other mods, to automatically manage the player's inventory—like keeping it stocked with 64 torches, for instance."]
 	quest.17C1F2791A6E0676.quest_desc: ["The Speed Upgrade does what it says on the tin. It speeds up your machines with the cost of a multiplied amount of power usage. No need to fret though, you can combat this!"]
 	quest.17C1F2791A6E0676.title: "Speed Upgrade"
 	quest.17E8751018E9E0F6.quest_desc: ["The exact same thing as the one before, but with eight times the capacity. Don't accidentally discharge it! That might hurt."]
 	quest.17E8751018E9E0F6.title: "Dense Energy Cell"
+	quest.17FCD3ECDC775E69.quest_desc: [" This specialized Minigun ammo can penetrate armor and does slightly more damage overall than normal ammo. But its not cheap."]
 	quest.183E523C25CC6C3F.title: "Basic Logistical Transporter"
 	quest.18416E8B02E02817.quest_subtitle: "Harvest Crops In a 9x9"
 	quest.18680FEE2B6FF16F.quest_desc: [
@@ -535,6 +563,7 @@
 	]
 	quest.1910E0D1BB24E94D.quest_subtitle: "Be better for the &aenvironment&r!"
 	quest.1910E0D1BB24E94D.title: "Solar Panels"
+	quest.18E944F145FEBB8C.quest_desc: ["This specialized Minigun ammo ignites its target, but be cautious—it can also set fire to the surrounding environment!"]
 	quest.1987DF7742136DC4.quest_desc: [
 		"  Remember when I said the &bDistillery&r could only output one type of fluid per cycle? Well, this is your upgrade!"
 		""
@@ -557,6 +586,7 @@
 		""
 		"{image:justdirethings:block/coalblock_t2 width:100 height:100 align:center fit:true}"
 	]
+	quest.1A368E5AD57C10E1.quest_desc: ["This is an advanced version of the Liquid Compressor. It offers a much faster generation rate of 50 mL/tick but also produces heat. As the temperature rises, efficiency decreases. The bottom arrow on the temperature gauge shows where efficiency will begin to decline, while the top arrow indicates the point of 0% efficiency. Contrary to expectations, this machine will not explode even if the temperature becomes excessively high."]
 	quest.1A885E0BA312B916.title: "Resistive Heater"
 	quest.1A8D5373290BC1A6.quest_desc: [""]
 	quest.1A8D5373290BC1A6.quest_subtitle: "Magical storage"
@@ -636,6 +666,7 @@
 	quest.1CC910880728D896.title: "Fusion Reactor"
 	quest.1CD1F5A08AE6E557.quest_desc: ["Obtained in the depth of the world &bSal Ammoniac &fis best found at y_."]
 	quest.1CD1F5A08AE6E557.quest_subtitle: "Obtained from the depths"
+	quest.1D249BAAD819E83F.quest_desc: ["This machine converts Forge Energy (compatible with RF and many other mods’ energy) into compressed air. It operates with a base efficiency of 40%, meaning 100 FE generates 40 mL of compressed air. Using Speed Upgrades will slightly decrease this efficiency. Additionally, the Compressor produces heat, which needs to be managed to prevent a reduction in efficiency."]
 	quest.1D482F0D9AF8D17E.title: "Atomic Alloy"
 	quest.1D57C823A1F0203C.quest_desc: [
 		"  I've got the &bperfect tool&r for you, it'll just take a bit of &6time to craft&r. It's a &bSteam Mining Drill&r! These can &6mine&r in a &6much larger&r grid than regular ol' &bPickaxes&r can; &63x3&r to be exact. Not only will you be able to &6mine more efficiently&r, but you'll be able to make beautiful &btunnels&r with ease."
@@ -654,6 +685,7 @@
 	quest.1DB0824C333DDA8E.title: "Energy Upgrade"
 	quest.1DD2C904A7C4E29B.title: "Ultimate Logistical Transporter"
 	quest.1DE9A85C2E5348D1.title: "Fusion Reactor Controller"
+	quest.1EC75DB7FA07D06B.quest_desc: ["This Module vents high-pressure air when the tube pressure reaches 4.9 bar (19.9 for advanced Pressure Tubes). While it helps prevent explosions, it results in energy loss and wasted fuel. With a Module Expansion Card, you can precisely adjust the pressure threshold through the GUI."]
 	quest.1EEBC04FABD3B3F2.quest_desc: ["&bQuartz Fiber&f is used to &6transfer &bpower&f, but not &bChannels&f."]
 	quest.1EEBC04FABD3B3F2.title: "Quartz Fiber"
 	quest.1F33EBCE377EF15D.title: "Advanced Crushing Factory"
@@ -764,6 +796,7 @@
 	quest.22A2121A25A010AB.title: "Basic Induction Cell"
 	quest.22AC242F0A230278.title: "QIO Redstone Adapter"
 	quest.22D2716905D415E5.title: "Enrichment Chamber"
+	quest.23313676FB186028.quest_desc: ["To rotate blocks, right-click on them. To toggle the corresponding side of a pressure tube between open and closed, right-click on the tube. To instantly dismantle Pneumatic Craft blocks and drop them as items, sneak-right-click on the blocks."]
 	quest.237468FAB20906A8.quest_desc: ["Used to &apack and move&b Drives &fwithout&a removing&f the&b Storage Drives&f."]
 	quest.237468FAB20906A8.quest_subtitle: "2x The Storage"
 	quest.23CC2667A1269C9C.quest_desc: ["Up until now, you've only used&b Drives &fthat held &6two dimensional data&f, in the form of zeros and ones. Now, let's hold&6 three dimensional data&f, in the form of raw matter. This is a far more complex &bdrive&f type, so it'll be expensive and you wont be able to store much at the start. "]
@@ -819,8 +852,12 @@
 	quest.2675A4EA019B383F.title: "Turbine Time"
 	quest.268B0F87CC431A51.quest_desc: [
 		"- Needs &bCasing&r for cable tier to convert from (&eLV&r by default)."
+	quest.2689A56675E12245.quest_desc: ["This substance is used in a Thermopneumatic Processing Plant with Coal to produce Plastic. It is a superior liquid fuel and can also be placed in a Furnace."]
+	quest.26A44EDA4AABFF6F.quest_desc: [
+		"&bCompressed Steel &fis crafted with an &bIron Ingot &f&6thrown &fon the ground and &6blown up &fby&b TNT&f, but you wont always get your return on it. Expected loss is 25% of your Iron thrown."
 		""
 		"- Needs &bCasing&r for cable tier to convert to (&eLV&r by default)."
+		"Note: By holding SHIFT over any PNC item will give a discription of the item."
 	]
 	quest.268B0F87CC431A51.quest_subtitle: "Easier Conversion!"
 	quest.272E31F15A39517B.title: "Fusion Reactor Frame"
@@ -838,12 +875,19 @@
 	quest.2805DA3A1F411588.quest_desc: ["Used to &astore &f&4power&f, you will need to get yourself a &bFE Cell Housing&f."]
 	quest.28127BEABD50770E.quest_desc: ["Used to store Radioactive Chemicals, rather then a Waste Barrel"]
 	quest.2821236A1E8FEF73.title: "Fusion Reactor Port"
+	quest.28808424CA6FD60C.title: "Gold Backpack"
 	quest.2909AE63FA355344.title: "Tier 3 Glyphs"
 	quest.292875386D7B9981.quest_desc: ["&bUraninite &fis a ore you can get from &6mining&f. You can also get it from the &bMI Quarry&f. &bUraninite&f is a key part in powah and is used in alot of recipes and to power the &breactor."]
 	quest.292875386D7B9981.quest_subtitle: "Might want to put some gloves on"
 	quest.292875386D7B9981.title: "&aUraninite"
 	quest.299CBEA2571FD97A.quest_subtitle: "&bBlue Crystals"
 	quest.299CBEA2571FD97A.title: "&bNiotic Crystal"
+	quest.29AC06B27D6A53C5.quest_desc: [
+		"A pre-programmed drone that collects items within a 17x17x17 area (before range upgrades) centered on the position it's deployed from. This drone has two basic modes depending on where it is deployed in relation to its deposit inventory:"
+		"Deploying on top of an inventory will filter what the drone collects to only match items inside the inventory at the time of deployment"
+		"Deploying on the ground next to an inventory will tell the drone to collect any items within its area"
+	]
+	quest.29B59876D04A3772.quest_desc: ["This device spawns mobs using pressure, bypassing light-level restrictions and enabling redstone control. It requires a Spawner Core to function. Be aware that a partially empty Spawner Core will result in reduced efficiency."]
 	quest.29D05998ADC8ACF5.quest_desc: ["  A super advanced processor to push the overclocking capabilities of your machine to it's limits and soon enough, something a bit more... &cNuclear&r."]
 	quest.29D05998ADC8ACF5.title: "Processing Unit"
 	quest.29E3DC274AF5DAFA.quest_desc: [
@@ -863,6 +907,7 @@
 		""
 		"- Insert &eelectric&r crafting machines to run in &6parallel&r."
 	]
+	quest.29E8F63B19A2F129.title: "Netherite Backpack"
 	quest.2A2E1C7C34C9A4AA.quest_desc: ["The Destruction Gadgets removes blocks and voids them."]
 	quest.2A68AB7D1EDD44BD.quest_desc: ["Structural Glass is a block that can be used in almost any multi-block as a clear block. I recommend you try using it for the walls of a dynamic tank, while the edges are solid dynamic tank blocks."]
 	quest.2A68AB7D1EDD44BD.title: "Structural Glass"
@@ -878,6 +923,7 @@
 	quest.2B4BFD88DF1A934D.quest_desc: ["  It is a third the weight of steel, yet ductile and highly malleable. It's made from heating up and extracting it from &bBauxite&r. You can do this in your newly formed &bEBF&r. &6Make sure to automate &bAluminum&r production as you'll end up using A LOT of it&r."]
 	quest.2B4BFD88DF1A934D.quest_subtitle: "It's Gonna be Al, Right?"
 	quest.2B4BFD88DF1A934D.title: "Aluminum"
+	quest.2B8DFC9987083AF7.quest_desc: ["This machine produces compressed air. To operate it, place any solid-fuel item that can burn in a furnace into the fuel slot. Please note that fuel buckets are not compatible; for liquid fuels, use a Liquid Compressor instead."]
 	quest.2BB266022C8BFC8C.quest_desc: ["Used as a housing to hold &bMEGA Storage Component&f."]
 	quest.2BC64E1EB1BCE14D.quest_desc: [
 		"  The &bStainless Steel Drill&r is a new drill that &6can be used in &oboth&r&6 the &bQuarry&r &6and the &bOil Drilling Rig&r."
@@ -952,6 +998,7 @@
 	quest.2DAE44549D0FDD55.quest_desc: ["&bSource Jars&r are used to store &6Source&r that you have made before you start a &3Ritual&r."]
 	quest.2E0837E85AD433EC.quest_subtitle: "Cinnamon Rolls Are Better"
 	quest.2E50F969D8AE49B2.title: "Elite Induction Cell"
+	quest.2E5D9CB5D821E96A.quest_desc: ["The most robust type of Pressure Tube. These tubes can be camouflaged and have the capability to accommodate Tube Modules, allowing for additional functionality."]
 	quest.2E7A46639993CCDE.quest_desc: [
 		"Any world will have secrets &6hidden&r beyond the visible, whether that be tucked &6under the surface&r or in a completely different &6dimension&r."
 		""
@@ -1064,6 +1111,7 @@
 	]
 	quest.324AF7933BC871B0.title: "Elite Chemical Tank"
 	quest.324EB8165298F503.title: "Elite Logistical Transporter"
+	quest.325A0651CB2D1279.quest_desc: ["This machine exposes Empty PCBs to UV light, preparing them for processing in an Etching Tank. A longer exposure time improves the likelihood of successful etching, though the process slows down over time. You can set a threshold to determine when a PCB is considered finished; a lower threshold speeds up processing but increases the risk of failed etching. Failed PCBs can be recycled in a Blast Furnace for another attempt."]
 	quest.325D7C592E2FB05A.quest_desc: [
 		"  The &bultimate&r state of solid matter, compressed so tightly until it is a point of infinite density and gravity."
 		""
@@ -1079,14 +1127,10 @@
 		"  &6The unpacker can perform simple crafts for you, such as converting dusts into tiny dusts&r. Check your REI for more recipes."
 	]
 	quest.3357A8B614D477B6.title: "Steel Unpacker"
-	quest.335BFE2345DAFE03.quest_desc: [
-		"- Press &6Left Shift&r and &6Right Click&r to swap between &bFortune/Looting&r and &bSilk Touch&r."
-		""
-		"- Use &6Alt&r and &6Mouse Scroll&r to change mining speeds."
-	]
 	quest.3392424E7E1B68C4.title: "Isotopic Centrifuge"
 	quest.33AC5F9CFB679483.title: "MekaSuit Helmet"
 	quest.33CDCAD12E8F6828.quest_subtitle: "-10 Max Spawn Delay"
+	quest.33CEED6232901CE5.quest_desc: ["Used with the Vaccum Trap, this machine will suck up any mobs near it and put them in at Spawner Core, but for that too work you must first craft a Spawner Core and insert it into the Vaccum Trap."]
 	quest.33D0760B5FEF7C46.quest_desc: [
 		"  &oThis&r is the ultimate generator."
 		""
@@ -1153,6 +1197,7 @@
 		"{image:justdirethings:block/goofarmland_tier4_moist width:100 height:100 align:center fit:true}"
 	]
 	quest.35F6CAD5BE56A32A.quest_subtitle: "Faster Still"
+	quest.3618C8F2EE6E308F.quest_desc: ["The Vaccum Pump is used to create a vaccum seal used for the vaccum trap. "]
 	quest.3637E22A3CD0FAC1.quest_desc: ["By &bthrowing&f an &boak sapling&f into the &bspiritfire&f you will get a &bunstable otherworld sapling&f."]
 	quest.3637E22A3CD0FAC1.quest_subtitle: "This ain't no ordinary sapling"
 	quest.367A013744D689E4.quest_desc: [
@@ -1164,6 +1209,7 @@
 	]
 	quest.367A013744D689E4.quest_subtitle: "Alchemical Mercury?"
 	quest.3689AAE9D0DB96FB.title: "Thermal Evaporation Valve"
+	quest.3696D20B77DF1B24.quest_desc: ["The core component of a Spawner. Insert it into a Pressurized Spawner to generate mobs from the essence stored within. Spawner Cores taken from a vanilla Spawner contain the pure essence of one specific creature. However, you can use a Vacuum Trap to create cores that hold multiple types of essences."]
 	quest.36D6DCA2535410E0.title: "Supermassive QIO Drive"
 	quest.37001338052E8335.title: "Ultimate Crushing Factory"
 	quest.3761B64135EA94C0.quest_desc: [
@@ -1178,6 +1224,7 @@
 	quest.3761B64135EA94C0.quest_subtitle: "That's Mr. Fusion to You!"
 	quest.3761B64135EA94C0.title: "Nuclear Reactor"
 	quest.376DD70A2C14F9A9.title: "&2Alchemical Sulfur Common"
+	quest.378A3A640EF06FE5.quest_desc: ["Generates a large amount of air from lightning strikes. For detailed information, refer to the GUI or the JEI information tab."]
 	quest.378E30F8E12695A2.title: "Chargepad"
 	quest.37AC7F3340783FD3.quest_desc: ["&bLaserIO&f is a mod that will let u &atransfer&b Items, Fluid, Powah, and Redstone&f with 9 separate configurations per block face."]
 	quest.37AC7F3340783FD3.title: "&6LaserIO"
@@ -1188,6 +1235,7 @@
 	]
 	quest.37F3ABF113A1D399.title: "LV Energy Input Hatch"
 	quest.3850B26FC78DD874.title: "Basic Smelting Factory"
+	quest.38D846A79BC43920.quest_desc: ["This machine is used to (dis)charge items that operate on pneumatic power, such as Drones, Pneumatic Wrenches, and Vortex Cannons. It also manages upgrades for items that can accept them."]
 	quest.393249898AEEA531.quest_desc: ["&bEngineering Processors &fare used to make the &bController &fand other components to get your first &bME system &fup."]
 	quest.393249898AEEA531.title: "Engineering Processor"
 	quest.39460CB77E53D5FA.quest_desc: [
@@ -1262,6 +1310,8 @@
 	quest.3CABE90D2D99AAD0.title: "Crafting Formula"
 	quest.3CEBC51DB3555C3E.quest_subtitle: "Every Netherite tier has its own unique properties"
 	quest.3D5B74D9663AAB5A.title: "Heat Generator"
+	quest.3D7406A517FA591D.quest_desc: ["Using these materials you should be able create you first pressure chamber. "]
+	quest.3D7406A517FA591D.title: "Your First Pressure Chamber"
 	quest.3D9DED933A80CAFA.quest_desc: ["This is used to copy and paste setting of &bME Devices&f. This is also used to &6link &bP2P Tunnels&f."]
 	quest.3D9DED933A80CAFA.title: "Memory Card"
 	quest.3DC47060EEAB8975.quest_desc: ["Once you have &6replicated &fyour &bsulfur &fit will all go directly into this machine. You may &6Right-Click &fwith your hand and retrieve your &bsulfur."]
@@ -1321,6 +1371,7 @@
 		"The energy bar is displayed just to the right of the energy slot."
 	]
 	quest.40EB78C0AF30096E.title: "Metallurgic Infuser"
+	quest.40F96E2CB2772CB8.quest_desc: ["Amadron Tablets allow you to order items and fluids, functioning like villager trading but with the added benefit of delivery by Drones—much cooler than dealing with villagers. To use the tablet, specify pick-up and drop-off locations by right-clicking on the inventory or tank with the tablet."]
 	quest.41125B1819031283.quest_desc: ["People around your world really need your help! Doing a good deed here and there might reward you in the future. Plus, are you really doing anything else important? Forget about your nearly critical fission reactor or the hoard of monsters in your basement or even the corruption spreading through the world. Help that old lady or that amputee instead!"]
 	quest.41125B1819031283.quest_subtitle: "A good deed a day keeps the insanity away!"
 	quest.41125B1819031283.title: "Hit the streets!"
@@ -1339,6 +1390,8 @@
 	quest.41D1344A31FEA6DF.title: "Kanthal Coils"
 	quest.4207ADF2CB254C6B.title: "Painting Machine"
 	quest.423B29BD8DAC8C3D.quest_subtitle: "+ Youthful"
+	quest.42619280FF258EEA.quest_desc: ["&bMore Red&f is a mod that lets u run &bredstone &fanywhere u want, up walls, on top of ceilings, under ceilings. "]
+	quest.42619280FF258EEA.title: "&cMore Red"
 	quest.427B70B9D14A1A51.title: "Movement Upgrades"
 	quest.42867560C8974A84.quest_desc: ["Again?! What are you nuts?"]
 	quest.429A3E6B65A5D719.quest_desc: ["Have you ever wanted to cook like a blockhead? Well do i have the kitchen setup for you, craft yourself a kitchen and the all the recipes will come to you."]
@@ -1466,6 +1519,7 @@
 		"  &6P.S&r. If you ever get stumped up with a machine, go ahead and hold that &bGuide Book&r of yours while &6hovering&r over a &bMachine&r or &bMultiblock&r. It'll give you some &bextra info&r."
 	]
 	quest.469641436BC858D3.title: "Modern Industrialization"
+	quest.46C3D171AB4AA489.quest_desc: ["This substance can be processed in a Thermopneumatic Processing Plant to produce Gasoline, which is a high-quality liquid fuel. It can also be placed in a Furnace."]
 	quest.4709E4CC589FF807.title: "Mekanism"
 	quest.4722157BC8D3B965.quest_desc: [
 		"  A sleek bronze casing with a vicious spinning blade inside will give you even &6better cutting ratios&r than you ever experienced using your &bForge Hammer&r. &aTime for extra bolts, gears, rings, and rods!&r"
@@ -1507,6 +1561,7 @@
 	]
 	quest.48212961977655E7.quest_subtitle: "You cant brush your teeth with it"
 	quest.48212961977655E7.title: "Dielectric Paste"
+	quest.486620B859CE9D1F.quest_desc: ["This device separates incoming air into hot and cold components, with one side becoming hot and the other cold. The amount of air used depends on the pressure. For optimal efficiency, be aware that there is a minor thermal connection between the hot and cold sides. To make the most of the heat, vent the cold side with a Heat Sink, and do the opposite if you want to maximize the cold."]
 	quest.489C1CE982BC1739.title: "QIO Importer"
 	quest.48B5E45D8D8E5E2E.quest_subtitle: "Congratulations! You've completed Mekanism!"
 	quest.48E96D243486D38E.quest_desc: [
@@ -1691,6 +1746,8 @@
 		""
 		"{image:justdirethings:block/blockbreakert2_side width:100 height:100 align:center}"
 	]
+	quest.525658A19130AF37.quest_desc: ["Generates compressed air using various fuel fluids. To view all available fuels, open the ‘Available Fuels’ tab, which is sorted from most to least effective. The multipliers (e.g., x1.5) indicate how much faster or slower the fuel burns compared to the baseline, affecting both the rate of air generation and the fuel consumption speed. You can add fuel by either pumping it in, right-clicking with a fluid container (such as a bucket) on the Liquid Compressor, or placing the fluid container in the top slot."]
+	quest.5299134A1144826F.quest_desc: ["Can be (dis)charged using a Charging Station. It's essential for crafting most pneumatically chargeable items and can also be used to charge other items."]
 	quest.52AD3D58B644AA30.title: "Wind Generator"
 	quest.52F4C1914EF9C7E2.quest_desc: ["Automate me a time machine now, wontcha?"]
 	quest.5319FD97D5133E7A.quest_desc: ["To craft &bRedstone Crystal&6 throw&b 1 Block of Redstone, 1 Glowstone Dust, and 1 Fluix Crystal &finto &awater &fand watch the magic happen."]
@@ -1806,6 +1863,7 @@
 		""
 		"The &bTemplates&f can be used in the &bTemplate Manager&f."
 	]
+	quest.5855D8361A2C6623.quest_desc: ["The &bTemplates&f can be used in the &bTemplate Manager&f."]
 	quest.59128813386BFDB1.quest_desc: [
 		"&bPoint 2 Point (P2P) Tunnels&f can be overwhelmingly complex, but at the same time extremely useful. These &btunnels&f can be used to &6transfer up to 32 channels from one point to the other&f. Now, you might be asking: \"But why can't I just use a &bDense Cable&f?\""
 		""
@@ -1872,16 +1930,28 @@
 	quest.5E9F30ADD242C764.title: "&4Nitro Crystal"
 	quest.5ECC7F4F5D2591D9.quest_desc: ["The &bAdvanced Card &fis a crafting component used to craft &bUpgrades&f."]
 	quest.5ECC7F4F5D2591D9.title: "Advanced Upgrades"
+	quest.5EEF6110DDBEB146.quest_desc: [
+		"A pre-programmed drone that defends a 31x31x31 area centered on the position the it's deployed from. This drone has two basic modes depending on how it is deployed:"
+		"Deploying on the ground will tell the drone to attack any mobs which enter its area using whatever it already has on-board"
+		"Deploying on top of an inventory containing a weapon or minigun ammo (assuming the drone is carrying a minigun upgrade) will tell the drone to arm itself using items inside the inventory before defending its area "
+	]
 	quest.5F95D00149FB24FD.title: "Chemical Dissolution Chamber"
 	quest.5FB18A0E7827D203.title: "Ritual: Summon Foliot Transporter"
 	quest.5FBAD421F88943B6.title: "Diversion Transporter"
 	quest.5FED7FD4E2BB3C3B.quest_subtitle: "You might breath a bit better underwater"
 	quest.5FFDA262D7693860.title: "Polonium Pellet"
+	quest.6070283AEA8DFA7E.quest_desc: [
+		"The Refinery is a multiblock in which you place the Refinery controller on the bottom and and refinerie's on top of it, two to begin with. You can place up to 4 but this will not increase the speed of the refinery, but allow it to produce other fluids from cuide oil. With just the two refineries on top of it you will start outputing Diesel and LPG , as you get the resources the adding another refinery will get you Kerosene and another, you will get Gasoline"
+		""
+		"To use the refinery you will need heat, heat can be sourced from torches around the machine for low effienciey, lava for mid effienciey, and produced heat from a Vortex Tube using presure."
+	]
+	quest.6070283AEA8DFA7E.title: "Refinery"
 	quest.60868DF852E6028B.quest_desc: ["You can make a plethora of tools with Osmium. The most important of which is the paxel, so you can do everything in one!"]
 	quest.60868DF852E6028B.title: "Extra Gear"
 	quest.60A38769895A0B14.title: "Bank's Dock and Link"
 	quest.60AEE273431548B6.title: "Pressure Disperser"
 	quest.60F4F5FE0C3748C3.title: "Chemical Washer"
+	quest.6127E7FBC4ABF307.quest_desc: ["A Thermopneumatic Processing Plant is used to convert liquids into other liquids. For example, combining LPG and Coal in this machine can produce Liquid Plastic. Additionally, the plant can perform fuel cracking, where heavier fuels are transformed into lighter ones. This means Diesel can be converted into Kerosene, Kerosene into Gasoline, and Gasoline into LPG."]
 	quest.61340C2A12FEAA26.quest_desc: ["The &bME Drive&f is used to store &bStorage Drives&f."]
 	quest.61340C2A12FEAA26.title: "ME Drive"
 	quest.614E49D8AA7F85FC.title: "Elite Induction Provider"
@@ -1991,9 +2061,12 @@
 	quest.6716C1CE7B7FFA94.quest_desc: ["The &bCapacity Card &fincreases the amount of filter slots in &bPorts&f."]
 	quest.6716C1CE7B7FFA94.title: "Capacity Card"
 	quest.67284079A941EF4B.title: "Scuba Gear"
+	quest.6762C357EEDE8D10.quest_desc: ["An advanced compressor that utilizes sunlight to pressurize air. Its efficiency improves as it gets hotter, but excessive heat buildup will cause the compressor to shut down, necessitating manual repair."]
 	quest.67A41E4D6BCA5F2B.title: "QIO Drive Array"
 	quest.67ACD099BDB606FA.quest_desc: ["When &6wearing &fthese &bGoggles&f you will have unlimited access to the &bThird Eye&f."]
 	quest.67ACD099BDB606FA.quest_subtitle: "Otherworldly"
+	quest.67B17617F57B247F.quest_desc: ["ELE BASE 6 BLOCKS"]
+	quest.67B17617F57B247F.title: "Elevator"
 	quest.67D5ED5703F35A2D.title: "Solar Neutron Activator"
 	quest.67F060243167F8BF.quest_desc: [
 		"Made by &6dropping&f &bCharged Certus Quartz, Iron, and Sky Stone &finto water. The &bSky Steel Ingot&f can be used to craft &bMEGA Item Storage&f."
@@ -2014,6 +2087,7 @@
 	quest.681A718388A97FFC.title: "Muffling Upgrade"
 	quest.683CF11DB8361F81.quest_desc: ["Used as a housing to hold MEGA Storage Component, for (Mekanism) Chemical Storage."]
 	quest.68721F148E2805FB.quest_desc: ["Your first &bSpell Book&r will allow you to start &6collecting&r and using &bspells&r."]
+	quest.688DEE1D1C4F9BDA.quest_desc: ["This module emits a redstone signal with strength proportional to the pressure within the tubes. When equipped with a module Expansion Card, you can precisely adjust the threshold through the GUI."]
 	quest.68A1BBD669C1CEF5.quest_desc: ["The &bMarket &fwill allow you to &6buy &falmost any &bseed/sapling &fin the game with &bemeralds&f."]
 	quest.68A1BBD669C1CEF5.title: "&9Market"
 	quest.68A8995F4A13381A.quest_desc: [
@@ -2188,6 +2262,7 @@
 	quest.6EF133E0EC49BC33.title: "Rubber"
 	quest.6F2BFD1AF4B2F9C9.quest_desc: ["The &bFluix Covered Cables &fare the same as &bGlass Cables &fbut have insulation that can be colored. They also continue to not show network information. Decorate your base a little with them!"]
 	quest.6F2BFD1AF4B2F9C9.title: "Fluix Covered Cable"
+	quest.6F5731A4490A537F.quest_desc: ["Add etching acid to an Etching Tank to convert Empty PCBs into Unassembled PCBs."]
 	quest.6F57A2A5AA6E3F49.quest_desc: [
 		"  Oil is a black flammable liquid that forms in the ground over a very &overy&r long time. &6Using a &bDrilling Rig&r&6, you can drill into the ground and extract this oil&r."
 		""
@@ -2317,6 +2392,7 @@
 	]
 	quest.72DD0017AC3B1326.title: "Matter Cannon"
 	quest.72E69FF9753D3CEA.title: "Ritual: Summon Otherstone Trader"
+	quest.7342ABDAD6467123.title: "Logistics Frames"
 	quest.7342F6461382E839.quest_desc: [
 		"You have &areached&r the final step to &binvincibility&r. "
 		""
@@ -2401,6 +2477,7 @@
 	quest.75FE996305813D68.title: "What is the bol- roc- meteor?"
 	quest.7610F9A545A15194.title: "Solar Generator"
 	quest.76BA847F28ACE170.title: "Tier 2, 1:2"
+	quest.77897C0A26941E97.quest_desc: ["This specialized Minigun ammo freezes targets, slowing them down and potentially encasing them in ice temporarily. Fire-resistant mobs are especially vulnerable to this ammo."]
 	quest.77978ED3AC1DFA26.quest_desc: ["&aExtendedAE &fis a mod that can be used to &aspeed up, and expand &aae2 &fso its faster and bigger."]
 	quest.779C3C6B89AD2526.quest_desc: [
 		"  Electric machines work exactly the same as steam machines, except from the fact &6they require electricity to function instead of steam&r and they can progressively overclock recipes to up to 32 EU/t (for now)."
@@ -2413,6 +2490,7 @@
 	]
 	quest.779C3C6B89AD2526.quest_subtitle: "Time for a Major Upgrade"
 	quest.779C3C6B89AD2526.title: "&eThe Electric Age!"
+	quest.77D008B7B47BF2D7.title: "Diamond Backpack"
 	quest.7806DD85D325C01C.quest_desc: [
 		"   &bPolymorphic Catalyst&r is the key to unlock JDT's better &bfuels&r."
 		""
@@ -2448,6 +2526,11 @@
 	quest.7921D6460E480F82.title: "Boiler Valve"
 	quest.79515634992D02A3.title: "Antimatter"
 	quest.7992491EE3E2BED3.title: "Advanced Thermodynamic Conductor"
+	quest.79C075FFF796FE16.quest_desc: [
+		"A pre-programmed drone that harvests fully-grown crops within a 17x17x17 area centered on the position it's deployed from. This drone has two basic modes depending on how it is deployed:"
+		"Deploying on the ground will tell the drone to harvest any fully-grown crops within its area"
+		"Deploying on top of an inventory containing a hoe will tell the drone to replant any crops it harvests within its area"
+	]
 	quest.79F451F9C8D02A69.quest_desc: ["Now that you have a &bConcurrent Processor &fyou can now craft some more items to help you through &aExtenedAE&f."]
 	quest.7A6C1605F32F695F.quest_desc: [
 		"The creation of &bAlchemical Salt &ffroms from what was once &bmatter."
@@ -2514,8 +2597,10 @@
 	quest.7C0FA555C5FE00D1.title: "Robotic Arms"
 	quest.7C201074DDBAE831.quest_desc: ["I guess that entire biome could disappear into your &bME Storage..."]
 	quest.7C201074DDBAE831.title: "256k Storage Component"
+	quest.7C31082BB88384BF.quest_desc: ["This specialized Minigun ammo causes explosions on impact. Avoid using it at close range!"]
 	quest.7C38A9BA01CA3772.title: "&1Alchemical Sulfur Rare"
 	quest.7C834204DEE1813C.title: "Advanced Enriching Factory"
+	quest.7C57D76FDBD784F8.quest_desc: ["You can connect tanks above and below using a wrench, provided that either tank is empty or both tanks contain the same fluid."]
 	quest.7CB7BF24437115A4.title: "Ritual: Summon Foliot Crusher"
 	quest.7D0CF81F7E703B71.quest_desc: [
 		"{image:modern_industrialization:block/machines/water_pump/overlay_front_active width:32 height:32 align:center}"
@@ -2525,10 +2610,12 @@
 		"  The &bBronze Water Pump&r will produce &6125mb of &bWater&r for every adjacent water source every 5 seconds&r, allowing for a maximum output of 1000mb every 5 seconds."
 	]
 	quest.7D0CF81F7E703B71.title: "Bronze Water Pump"
+	quest.7D155344A5A6CEF7.quest_desc: ["A Thermal Compressor uses temperature differences on opposite sides of the block to compress air. To operate it, place a high-temperature block on one side and a low-temperature block on the opposite side. Note that the North-South faces are thermally connected to each other, as are the East-West faces, but there is no thermal connection between the North-South and East-West sides. The thermally connected sides will try to equalize their temperatures, so it's important to maintain a significant temperature differential for effective operation."]
 	quest.7D36F35D54BD7812.quest_desc: ["My &6punching &bgrass &fyou can get &bDemon Dream Seeds."]
 	quest.7D36F35D54BD7812.quest_subtitle: "This was to easy"
 	quest.7D57C6962950AA98.quest_desc: ["&bCrafting Co-processor&f are used to speed up and to allow for more then one item to craft while crafting more complex recipe."]
 	quest.7D57C6962950AA98.title: "Crafting Processors"
+	quest.7D58D814C99CB2F6.quest_desc: ["This device can be placed on any inventory. When heated by an adjacent heat source, it will attempt to smelt any item in the inventory, and it will freeze items when cooled. Smelting will only succeed if there is space in the inventory for the resulting item. The rate of smelting increases with the amount of heat applied, up to a maximum of one item per second. Similarly, the freezing process speeds up with increased cooling."]
 	quest.7D62935133EE5551.quest_desc: [
 		"  You did it."
 		"  You &oactually&r did it, you crazy &kplayer&r !"
@@ -2638,6 +2725,8 @@
 	task.4552085BF5330776.title: "OK, Let Me Cook"
 	task.487C2DBC60537E92.title: "Specialty Travelers Backpacks"
 	task.4D5812F798FB8C8C.title: "&dTheurgy &9100%"
+	task.4B733AF93D7D28C4.title: "check the filter"
+	task.4F4699F9117BC270.title: "Pre-Programmed Drones"
 	task.5001206B16F5D7A0.title: "Modern Industrialization Storage"
 	task.525F82A0A4CD7A78.title: "&6Occultism &4100%"
 	task.5327B3CEDA60D4BE.title: "Any #c:raw_materials/silver"
