@@ -86,7 +86,11 @@ $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @(
 	"kubejs"
 	)
 
-$CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @("spark")
+$CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
+	"spark",
+	"ae2", 
+	"iris.properties"
+	)
 
 # Accepts directories
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt")
