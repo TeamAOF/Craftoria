@@ -9,23 +9,6 @@
 	id: "3188AC6C440F7520"
 	images: [
 		{
-			height: 16.0d
-			image: "ftbquests:textures/gui/title_c_blend.png"
-			rotation: 0.0d
-			width: 16.0d
-			x: 0.0d
-			y: 3.75d
-		}
-		{
-			color: 11776931
-			height: 16.0d
-			image: "ftbquests:textures/gui/title_gs.png"
-			rotation: 0.0d
-			width: 16.0d
-			x: 0.0d
-			y: -5.25d
-		}
-		{
 			alpha: 1
 			height: 1.0d
 			image: "ftbquests:textures/gui/background_white.png"
@@ -33,6 +16,22 @@
 			width: 1.0d
 			x: 0.0d
 			y: -13.75d
+		}
+		{
+			height: 14.0d
+			image: "ftbquests:textures/gui/title_facu_craftoria.png"
+			rotation: 0.0d
+			width: 14.0d
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			height: 25.0d
+			image: "ftbquests:textures/gui/foo.png"
+			rotation: 0.0d
+			width: 25.0d
+			x: 0.5d
+			y: 6.0d
 		}
 	]
 	order_index: 0
@@ -72,6 +71,7 @@
 					type: "item"
 				}
 			]
+			size: 1.5d
 			tasks: [{
 				id: "41BA785802B6F35E"
 				type: "checkmark"
@@ -89,7 +89,7 @@
 				id: "15E07774D19A4B1A"
 				type: "checkmark"
 			}]
-			x: -1.5d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -131,7 +131,7 @@
 				type: "checkmark"
 			}]
 			x: -3.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["21E1E62AA4761EE2"]
@@ -146,7 +146,7 @@
 				id: "1D870ED2303FAE8A"
 				type: "checkmark"
 			}]
-			x: -3.5d
+			x: -4.0d
 			y: 2.0d
 		}
 		{
@@ -160,7 +160,7 @@
 				type: "checkmark"
 			}]
 			x: -1.5d
-			y: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["78EDBDED3BFEC145"]
@@ -172,7 +172,7 @@
 				id: "013281B2076D21ED"
 				type: "checkmark"
 			}]
-			x: 1.5d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -186,7 +186,7 @@
 				type: "checkmark"
 			}]
 			x: 1.5d
-			y: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3189264EB89A2A5A"]
@@ -202,7 +202,7 @@
 				type: "checkmark"
 			}]
 			x: 3.5d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3189264EB89A2A5A"]
@@ -214,7 +214,7 @@
 				id: "63DAD8D3277DA248"
 				type: "checkmark"
 			}]
-			x: 3.5d
+			x: 4.0d
 			y: 2.0d
 		}
 		{
@@ -233,7 +233,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: -4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["78EDBDED3BFEC145"]
@@ -245,8 +245,8 @@
 				id: "7E5AD4DEEEDA93BC"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: -2.5d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["78EDBDED3BFEC145"]
@@ -258,8 +258,8 @@
 				id: "339C2D373170BE2F"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: -2.5d
+			x: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["78EDBDED3BFEC145"]
@@ -280,7 +280,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 2.0d
+			y: -2.0d
 		}
 	]
 }
