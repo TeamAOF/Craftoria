@@ -3,6 +3,9 @@
 local_wireless_charging_station_range = 32
 #Whether upgrades should be allowed in the Processing Array
 allow_upgrades_in_processing_array = true
+#The maximum amount of connections a machine chainer can have
+#Range: 1 ~ 128
+machine_chainer_max_connections = 64
 
 [batching_machines]
 	#The maximum batch size to use for the Large Steam Macerator

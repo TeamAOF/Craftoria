@@ -42,7 +42,8 @@ TrashSlotSaveState.json
 # System Files / Misc.
 # ---
 *.bak
-*.zip
+/*.zip
+resourcepacks/*.zip
 .DS_Store
 Thumbs.db
 
@@ -50,3 +51,7 @@ Thumbs.db
 # Misc.
 # ---
 ModListCreator-5.0.0-fatjar.jar
+
+*.log
+
+shaderpacks/

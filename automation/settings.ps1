@@ -88,8 +88,9 @@ $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @(
 
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"spark",
-	"ae2", 
-	"iris.properties"
+	"ae2/client.json", 
+	"iris.properties",
+	"ae2-client.toml"
 	)
 
 # Accepts directories

@@ -6,7 +6,7 @@ modpack:
   
 install:
   mcVersion:
-  loaderVersion: 21.1.37
+  loaderVersion: 21.1.42
   modpackUrl: https://mediafilez.forgecdn.net/files/5665/209/Craftoria-0.9.2.zip
   installerUrl: "https://maven.neoforged.net/releases/net/neoforged/neoforge/{{@loaderversion@}}/neoforge-{{@loaderversion@}}-installer.jar"
   
@@ -30,6 +30,7 @@ install:
       - 568563 # Entity Texture Features
       - 915902 # Euphoria Patches
       - 690971 # SeasonHUD
+      - 455508 # Iris
       
   baseInstallPath: 
   

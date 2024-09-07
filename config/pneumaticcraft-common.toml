@@ -1,4 +1,4 @@
-[General]
+[general]
 	#Enable mod dungeon loot generation
 	enable_dungeon_loot = true
 	#Efficiency of fuel buckets as furnace fuel (default 0.05 means 1 bucket of LPG smelts 450 items in a vanilla furnace)
@@ -27,13 +27,13 @@
 	#Show tank fluids with the The One Probe when sneaking? Note that TOP has its own support for showing tanks, which by default requires a Probe to be held, or a Probe-enabled helmet to be worn.
 	top_shows_fluids = false
 
-[Worldgen]
+[worldgen]
 	#Oil worldgen whitelist by dimension ID: add dimension ID's to this list if you want oil lake worldgen to happen ONLY in those dimensions. You can wildcard the path; e.g 'modid:*' whitelists ALL dimensions of namespace 'modid'. If this is empty, it is ignored, and 'oil_world_gen_dimension_blacklist' will be checked instead.
 	oil_world_gen_dimension_whitelist = []
 	#Oil worldgen blacklist by dimension ID: add dimension ID's to this list if you don't want oil lake worldgen to happen there. You can wildcard this; e.g 'modid:*' blacklists ALL dimensions of namespace 'modid'.
 	oil_world_gen_dimension_blacklist = []
 
-["Machine Properties"]
+[machines]
 	#Aerial Interface backwards compat: allow pre-0.8.0 behaviour of getting player's armor inventory from top face, even with Dispenser Upgrade installed
 	aerial_interface_armor_compat = true
 	#Chance per tick of Crop Supports causing a growth tick. The default, 0.002, is roughly 2.5 times faster than the vanilla growth rate
@@ -99,15 +99,15 @@
 	#Fuel usage / heat gen multiplier per speed upgrade: usage mult = speedUpgradeUsageMultiplier ^ num_of_speed_upgrades
 	#Range: 1.0 ~ 2.0
 	speed_upgrade_usage_multiplier = 1.649999976158142
-	#Blacklist items from being allowed in the Pressure Chamber disenchanting system. This is a starts-with string match, so you can match by mod, or individual item names as you need. Blacklisted by default are Quark Ancient Tomes, and all Tetra items; both can lead to enchantment duping as they have special enchantment mechanics.
-	disenchanting_blacklist = ["quark:ancient_tome", "tetra:"]
+	#Blacklist items from being allowed in the Pressure Chamber disenchanting system. You can use wildcarded matches here, e.g. 'tetra:*' matches all items from the Tetra mod. Blacklisted by default are Quark Ancient Tomes, and all Tetra items; both can lead to enchantment duping as they have special enchantment mechanics.
+	disenchanting_blacklist = ["quark:ancient_tome", "tetra:*"]
 	#ID's of dimensions in which the Aerial Interface is not allowed to operate. You can use wildcarded dimensions here, e.g. 'somemod:*'.
 	aerial_interface_dimension_blacklist = []
 	#Minimum interval in ticks which the player can use the Vortex Cannon to boost their own speed
 	#Range: > 1
 	vortex_cannon_player_boost_rate = 10
 
-["Pneumatic Armor"]
+[pneumatic_armor]
 	#Jetboots air usage in mL/tick (per Jet Boots Upgrade)
 	#Range: > 0
 	jet_boots_air_usage = 12
@@ -130,21 +130,16 @@
 	#Range: > 1
 	scuba_multiplier = 8
 
-[Advanced]
+[advanced]
 	#When set to true, the Kerosene Lamp's fake air blocks won't be registered and therefore removed from the world. Useful if this causes trouble (it shouldn't though)
 	disable_kerosene_lamp_fake_air_block = false
 	#The minimum interval in ticks between which fluid tank contents should be synced to clients. Smaller values mean smoother visual tank updates, but more of a performance cost in terms of network syncing. Note that fluid tank sync packets are also only sent when a fluid tank changes by more than 1% of its capacity, or 1000mB, whichever is smaller.
 	#Range: 1 ~ 100
 	fluid_tank_update_rate = 10
-	#Precision to which pressurizable item air levels are synced to client. Default of 10 is precise enough to show pressure to 1 decimal place, which is what is display in client tooltips & pneumatic armor HUD. Lower values will sync less precisely, reducing server->client network traffic. Values higher than 10 are not recommended (will cause extra network traffic for no benefit).
-	#Range: 1 ~ 100
-	pressurizable_sync_precision = 10
 	#Don't remove a water source block when picking up (drones, liquid hoppers, gas lift) if it has at least two water source neighbours. This can reduce lag due to frequent block updates, and can also potentially make water import much faster. Set this to false if you want no-infinite-water rules in a world, or want to limit the speed of water importing to vanilla block update rates.
 	dont_update_infinite_water_sources = true
-	#When set to true, server will strip NBT data from pressurizable items (pneumatic armor, drones...) which the client doesn't care about. Good for saving on network chatter, but can cause players to be kicked under some circumstances. If this occurs, set this config value to false.
-	nbt_to_client_modification = true
 
-["Micromissile Properties"]
+[micromissiles]
 	#Base explosion damage (modified by missile setup)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	base_explosion_damage = 1.0
@@ -165,7 +160,7 @@
 	#Range: > 0
 	missile_pod_size = 100
 
-["Minigun Properties"]
+[minigun]
 	#Armor Piercing Ammo damage multiplier (relative to standard ammo)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	ap_ammo_damage_multiplier = 1.25
@@ -201,12 +196,9 @@
 	#Freezing Ammo cartridge size
 	#Range: > 0
 	freezing_ammo_cartridge_size = 1000
-	#Freezing Ammo base percentage chance to form ice on entities which have been hit
+	#Freezing Ammo base percentage chance to form a freezing cloud (causing slow and minor wither damage) on entities which have been hit
 	#Range: 0 ~ 100
 	freezing_ammo_entity_ice_chance = 20
-	#Damage done to entities within the fake 'ice' blocks cause by freezing ammo
-	#Range: 0.0 ~ 1.7976931348623157E308
-	freezing_ammo_fake_ice_damage = 1.0
 	#Incendiary ammo base percentage chance to ignite blocks
 	#Range: 1 ~ 100
 	incendiary_ammo_block_ignite_chance = 20
@@ -243,7 +235,7 @@
 	#Range: > 0
 	invulnerability_ticks = 10
 
-[Integration]
+[integration]
 	#Immersive Engineering: External Heater heat/FE.  The amount of PneumaticCraft heat added by using 1 FE in the heater.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	ie_external_heater_heat_per_fe = 0.01
@@ -256,17 +248,14 @@
 	#Mekanism <-> PneumaticCraft heat conversion efficiency. Set to 0 to disable Mekanism heat integration entirely. Note that Mekanism and PNC use a similar heat system, but scale things quite differently (Mekanism heaters produces a LOT of heat by PneumaticCraft standards), so conversion efficiency tuning is important for inter-mod balance.
 	#Range: 0.0 ~ 2.0
 	mek_thermal_conversion_efficiency = 0.01
-	#Volume boost multiplier for pressurizable items with the CoFH Holding enchantment; air volume is multiplied by (1 + level_of_holding_enchantment) x this value. Set to 0 to disallow pressurizable items being enchanted with the Holding enchantment at all.
-	#Range: 0.0 ~ 1.7976931348623157E308
-	cofh_holding_multiplier = 1.0
 
-[Recipes]
+[recipes]
 	#Does Molten Plastic solidify to Plastic Sheets when poured into the world? If set to false, then Heat Frame cooling is the only other way to make Plastic Sheets (by default).
 	in_world_plastic_solidification = true
 	#Is in-world Yeast crafting allowed (making more Yeast Culture by pouring Water next to a Yeast Culture block with Sugar in it)? If set to false, then the default TPP Mushroom & Water -> Yeast Culture recipe is the only way to get Yeast Culture.
 	in_world_yeast_crafting = true
 
-[Amadron]
+[amadron]
 	#Number of periodic offers randomly selected for the 'live' offer list. Note: this a maximum, and the actual number chosen each time may be less. Periodic offers are those offers which have a static: false field in their recipe JSON.
 	#Range: > 0
 	numPeriodicOffers = 10
@@ -290,29 +279,29 @@
 	#Affects Amadrone Y spawning position: when true, the Y position is relative to ground level at the calculated X/Z position. When false, it is relative to the delivery/pickup position.
 	amadrone_spawn_location_relative_to_ground_level = true
 
-[Heat]
+[heat]
 	#Default thermal resistance for solid blocks
 	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	blockThermalResistance = 500.0
+	block_thermal_resistance = 500.0
 	#Default thermal resistance for fluid blocks
 	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	fluidThermalResistance = 100.0
+	fluid_thermal_resistance = 100.0
 	#Thermal resistance of air; controls how fast blocks lose heat to air when exposed
 	#Range: 1.0 ~ 1.7976931348623157E308
-	airThermalResistance = 100.0
+	air_thermal_resistance = 100.0
 	#Default heat capacity for fluid blocks
 	#Range: > 0
-	defaultFluidHeatCapacity = 10000
+	default_fluid_heat_capacity = 10000
 	#Ambient temperature modifier by biome (default 25 gives the Nether a heat boost of 30C)
 	#Range: 0.0 ~ 1000.0
-	ambientTemperatureBiomeModifier = 25.0
-	#Ambient temperature increase by altitude, in degrees per block below 48 (or 75% of sea level). Note that temperature decrease per block above 64 is handled by vanilla.
+	ambient_temperature_biome_modifier = 25.0
+	#Ambient temperature increase by altitude, in degrees per block above/below the dimension's sea level (64 for default overworld generation). Temperature rises as height decreases.
 	#Range: 0.0 ~ 10.0
-	ambientTemperatureHeightModifier = 0.1
+	ambient_temperature_height_modifier = 0.1
 	#Automatically register heat properties for all detected modded fluids based on their self-defined temperature? (note: vanilla lava and water are always added)
-	addDefaultFluidEntries = true
+	add_default_fluid_entries = true
 
-[Logistics]
+[logistics]
 	#Logistics Module air usage per item per block distance
 	#Range: 0.0 ~ 1.7976931348623157E308
 	item_transport_cost = 1.0
@@ -323,7 +312,7 @@
 	#Range: 0.0 ~ 20.0
 	min_pressure = 3.0
 
-[Jackhammer]
+[jackhammer]
 	#Max veinmining range (distance from mined block) for Vein Miner Plus mode
 	#Range: 1 ~ 32
 	max_vein_miner_range = 10
@@ -331,15 +320,15 @@
 	#Range: > 0
 	base_air_usage = 50
 
-[Villagers]
+[villagers]
 	#Frequency of PneumaticCraft village house generation? Default value of 8 tends to give 0-2 houses per village with no other mods present. Set to 0 to disable house generation entirely. May need to raise this value if there are many other mods also adding village houses. Note: changing this value won't affect any already-generated houses, only new generation.
 	#Range: > 0
-	addMechanicHouse = 8
+	add_mechanic_house = 8
 	#Which trades should the Pressure Mechanic offer? ALL will offer all trades. PCB_BLUEPRINT will offer *only* the PCB Blueprint, an item required for normal progression through the mod. NONE will offer nothing (but the PCB Blueprint is also available via Amadron by default). Note that changing this won't affect any already-spawned Pressure Mechanics.
 	#Allowed Values: NONE, PCB_BLUEPRINT, ALL
-	mechanicTrades = "ALL"
+	mechanic_trades = "ALL"
 
-[Drones]
+[drones]
 	#Enable Drone Suffocation Damage
 	enable_drone_suffocation = true
 	#Drones render their held item (the item in slot 0 of their inventory) ?  Note: this is in common config since if enabled, server needs to sync the item data to the client.
@@ -364,6 +353,9 @@
 	#Range: > 0
 	stuck_drone_teleport_ticks = 20
 	#When true, drones can query the location of any player on the server with the '$player=<name>' variable syntax. Set this to false if you don't want to allow this, e.g. on a PvP server, where this can turn drones into lethal assassins.
-	allowAnyPlayerVarQuery = true
+	allow_any_player_var_query = true
 	#When true, drones can teleport into areas protected by Security Stations of other player. You may wish to set this to false on PvP servers.
-	allowTeleportToProtectedArea = true
+	allow_teleport_to_protected_area = true
+	#Time in seconds after a player logs out that drones and Programmable Controllers belonging to that player can no long chunk-load. Set to 0 to allow indefinite offline chunkloading.
+	#Range: > 0
+	chunkload_offline_time = 0

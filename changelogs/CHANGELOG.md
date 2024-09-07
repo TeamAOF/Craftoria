@@ -1,3 +1,38 @@
+## Craftoria | v1.0.0
+
+_NeoForge Loader 21.1.37_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.0.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.0.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added 100% quest chapter trophies.
+* Added the Completionist quest chapter.
+* Added Relics and Artifacts quest chapter.
+* Added PneumaticCraft quest chapter.
+* Added Monster Mayhem quest chapter.
+* Finished Mekanism quest chapter.
+* Added quests for Gadgets Against Grind.
+* Added the Completionist Trophy, obtainable by completing the pack.
+* New Ars Nouveau quest chapter design.
+* New textures for Extended Industrialization.
+* Added EI quests to MI quest chapter.
+* New textures/models for vanilla crops.
+* Removed variation textures of ores.
+* Blacklisted Mimics to be used in Apothic Spawners.
+* Disabled Eternal Steak.
+* New villager textures/models.
+* Removed sulfur quests in Theurgy quest chapter including unattainable ores.
+* Personal AE2 settings no longer reset on pack updates.
+* Redesigned Getting Started quest chapter.
+
+### Bug Fixes 🪲
+
+* Fixed Vindicator, Pillager, Evoker & Witch having no eyes.
+* Fixed incorrect texture being used for Netherite Leggings.
+* Fixed Ultimine HUD overlapping with Seasons.
+* Fixed M.O.P substance-in-a-chemical-tank quest tasks.
+* Fixed transmogs rendering incorrectly in curios slots.
+---
+
 ## Craftoria | v0.9.2
 
 _NeoForge Loader 21.1.27_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_0.9.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_0.9.2.md)_

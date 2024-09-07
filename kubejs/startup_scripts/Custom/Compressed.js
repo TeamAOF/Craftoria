@@ -1,41 +1,6 @@
 let nonSortedCompressedBlocks = [];
 
 StartupEvents.registry('block', (event) => {
-	let cBlockBaseModel = {
-		parent: 'minecraft:block/block',
-		textures: {
-			all: '#all',
-			overlay: '#overlay',
-			particle: '#all',
-		},
-		elements: [
-			{
-				faces: {
-					down: { texture: '#all' },
-					east: { texture: '#all' },
-					north: { texture: '#all' },
-					south: { texture: '#all' },
-					up: { texture: '#all' },
-					west: { texture: '#all' },
-				},
-				from: [0, 0, 0],
-				to: [16, 16, 16],
-			},
-			{
-				faces: {
-					down: { texture: '#overlay' },
-					east: { texture: '#overlay' },
-					north: { texture: '#overlay' },
-					south: { texture: '#overlay' },
-					up: { texture: '#overlay' },
-					west: { texture: '#overlay' },
-				},
-				from: [0, 0, 0],
-				to: [16, 16, 16],
-			},
-		],
-	};
-
 	/**
 	 * Compressed Blocks
 	 * Parameters:
@@ -128,20 +93,29 @@ StartupEvents.registry('block', (event) => {
 	for (let i = 1; i < 10; i++) {
 		compressedBlocks.forEach((block) => {
 			let blockId = block.name.replace(' ', '_').toLowerCase();
-			let cBlockModel = cBlockBaseModel;
-			cBlockModel.textures.all = `${block.modID}:block/${block.texture}`;
-			cBlockModel.textures.overlay = `craftoria:block/overlays/${i}x_compressed`;
+			let c = '' + i // Required to copy i, otherwise models will try to generate with wrong number because they're handled later
 			event
-				.create(`craftoria:${i}x_compressed_${blockId}_block`)
-				.displayName(`${i}x Compressed ${block.name} Block `)
+				.create(`craftoria:${c}x_compressed_${blockId}_block`)
+				.displayName(`${c}x Compressed ${block.name} Block `)
 				.renderType('translucent')
 				.soundType(block.soundType || 'metal')
 				.hardness(i)
 				.resistance(6)
-				.tagBoth(`craftoria:${i}x_compressed`)
+				.tagBoth(`craftoria:${c}x_compressed`)
 				.tagItem(`modern_industrialization:replicator_blacklist`)
-				.tagBlock(`minecraft:mineable/${block.tool || 'pickaxe'}`).modelJson = cBlockModel;
-			nonSortedCompressedBlocks.push(`craftoria:${i}x_compressed_${blockId}_block`);
+				.tagBlock(`minecraft:mineable/${block.tool || 'pickaxe'}`)
+				.modelGenerator(m => {
+					m.parent('minecraft:block/cube')
+					m.texture(['particle', 'all'], `${block.modID}:block/${block.texture}`)
+					m.texture('overlay', `craftoria:block/overlays/${c}x_compressed`)
+					m.element(e => {
+						e.allFaces(f => f.tex('#all').cull())
+					})
+					m.element(e => {
+						e.allFaces(f => f.tex('#overlay').cull())
+					})
+				})
+			nonSortedCompressedBlocks.push(`craftoria:${c}x_compressed_${blockId}_block`);
 		});
 	}
 });
