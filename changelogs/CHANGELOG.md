@@ -2,6 +2,8 @@
 
 _NeoForge Loader 21.1.37_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.0.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.0.0.md)_
 
+## DISCLAIMER: New worlds are REQUIRED with this update!
+
 ### Changes/Improvements ⭐
 
 * Added 100% quest chapter trophies.
@@ -31,6 +33,48 @@ _NeoForge Loader 21.1.37_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 * Fixed Ultimine HUD overlapping with Seasons.
 * Fixed M.O.P substance-in-a-chemical-tank quest tasks.
 * Fixed transmogs rendering incorrectly in curios slots.
+
+### Added Mods ✅
+
+  * [Alternate Current](https://www.curseforge.com/minecraft/mc-mods/alternate-current)
+  * [Ars Additions](https://www.curseforge.com/minecraft/mc-mods/ars-additions)
+  * [Aurelj's Paintings](https://www.curseforge.com/minecraft/mc-mods/aureljs-paintings)
+  * [CorgiLib](https://www.curseforge.com/minecraft/mc-mods/corgilib)
+  * [Dumplings Delight Rewrapped](https://www.curseforge.com/minecraft/mc-mods/dumplings-delight-rewrapped)
+  * [Dungeon Crawl](https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl)
+  * [Eternal Starlight](https://www.curseforge.com/minecraft/mc-mods/eternal-starlight)
+  * [Fusion](https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures)
+  * [Gadgets Against Grind](https://www.curseforge.com/minecraft/mc-mods/gag)
+  * [Hardened Armadillos](https://www.curseforge.com/minecraft/mc-mods/hardened-armadillos)
+  * [Hostile Neural Networks](https://www.curseforge.com/minecraft/mc-mods/hostile-neural-networks)
+  * [Iris Shaders](https://www.curseforge.com/minecraft/mc-mods/irisshaders)
+  * [Macaw's Holidays](https://www.curseforge.com/minecraft/mc-mods/macaws-holidays)
+  * [Macaw's Paintings](https://www.curseforge.com/minecraft/mc-mods/macaws-paintings)
+  * [ME Requester](https://www.curseforge.com/minecraft/mc-mods/merequester)
+  * [Oh The Biomes We've Gone](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-weve-gone)
+  * [Oh The Trees You'll Grow](https://www.curseforge.com/minecraft/mc-mods/oh-the-trees-youll-grow)
+  * [Open Sesame](https://www.curseforge.com/minecraft/mc-mods/open-sesame)
+  * [Patchouli](https://www.curseforge.com/minecraft/mc-mods/patchouli)
+  * [Paxi](https://www.curseforge.com/minecraft/mc-mods/paxi-neoforge)
+  * [Rechiseled](https://www.curseforge.com/minecraft/mc-mods/rechiseled)
+  * [Rechiseled: Chipped](https://www.curseforge.com/minecraft/mc-mods/rechiseled-chipped)
+  * [Snow Under Trees](https://www.curseforge.com/minecraft/mc-mods/snow-under-trees)
+  * [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium)
+  * [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest)
+  * [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)
+  * [When Dungeons Arise - Seven Seas](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise-seven-seas)
+  * [Wither Skeleton Tweaks](https://www.curseforge.com/minecraft/mc-mods/wither-skeleton-tweaks)
+  * [YUNG's API (NeoForge)](https://www.curseforge.com/minecraft/mc-mods/yungs-api-neoforge)
+  * [Zume](https://www.curseforge.com/minecraft/mc-mods/zume)
+
+### Removed Mods ❌
+
+  * [Biomes O' Plenty](https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty) (Replaced by BWG)
+  * [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium) (Replaced by Sodium)
+  * [Farmer's Cutting: Biomes O' Plenty](https://www.curseforge.com/minecraft/mc-mods/farmers-cutting-biomes-o-plenty)
+  * [Nolijium](https://www.curseforge.com/minecraft/mc-mods/nolijium)
+  * [Time in a bottle](https://www.curseforge.com/minecraft/mc-mods/time-in-a-bottle-universal) (Replaced by GAG)
+  * [Underground Villages](https://www.curseforge.com/minecraft/mc-mods/underground-villages)
 ---
 
 ## Craftoria | v0.9.2
