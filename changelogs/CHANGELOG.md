@@ -13,7 +13,7 @@ _NeoForge Loader 21.1.43_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 * Fixed BWG doors, trapdoors, slabs, stairs, signs, fences, buttons & pressure plates having no recipes.
 * Fixed recipe conflicts between sheets and sleeping bags.
 * Fixed an issue where the Ars Nouveau quest chapter would duplicate on reboots.
-* Several fixes to MI quests, including formatting, missing desc & coloring.
+* Several fixes to Mekanism quests, including formatting, missing desc & coloring.
 
 ### Removed Mods ❌
 
