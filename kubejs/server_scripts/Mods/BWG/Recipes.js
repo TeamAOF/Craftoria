@@ -15,6 +15,7 @@ ServerEvents.recipes(event => {
     'cypress',
     'ebony',
     'fir',
+    'florus',
     'green_enchanted',
     'holly',
     'ironwood',
