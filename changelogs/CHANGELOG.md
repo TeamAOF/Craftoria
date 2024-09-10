@@ -1,3 +1,25 @@
+## Craftoria | v1.1.0
+
+_NeoForge Loader 21.1.43_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.0.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.0.1.md)_
+
+### Changes/Improvements ⭐
+
+* Changed Multi Processing Array recipe. Now requires a Processing Array instead of Assembler.
+
+### Bug Fixes 🪲
+
+* Fixed an issue where if you'd do certain animations like spells you'd clip inside the head.
+* Fixed BWG crafting tables not being accepted in recipes using vanilla crafting table as input.
+* Fixed BWG doors, trapdoors, slabs, stairs, signs, fences, buttons & pressure plates having no recipes.
+* Fixed recipe conflicts between sheets and sleeping bags.
+* Fixed an issue where the Ars Nouveau quest chapter would duplicate on reboots.
+* Several fixes to Mekanism quests, including formatting, missing desc & coloring.
+
+### Removed Mods ❌
+
+  * [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest) (Will make a return when issues are fixed)
+---
+
 ## Craftoria | v1.0.0
 
 _NeoForge Loader 21.1.42_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.0.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.0.0.md)_
