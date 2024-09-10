@@ -44,7 +44,7 @@ ClientEvents.lang('en_us', (event) => {
     'enchantment.minecraft.soul_speed.desc': 'Increases movement speed on soul blocks.',
     'enchantment.minecraft.swift_sneak.desc': 'Increases movement speed while sneaking.',
     'enchantment.minecraft.density.desc': 'Increases the damage by fall height.',
-    'enchantment.minecraft.breach.desc': 'Reduces armor effectiveness',
+    'enchantment.minecraft.breach.desc': 'Reduces armor effectiveness.',
     'enchantment.minecraft.wind_burst.desc': 'Smash attacks launch you upwards.',
   });
 });
