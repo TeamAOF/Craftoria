@@ -30,6 +30,7 @@ ServerEvents.tags('block', (e) => {
     'minecraft:smithing_table',
     'minecraft:stonecutter',
     '#minecraft:anvil',
+    'minecraft:bell',
     'yigd:grave',
     '#lootr:containers',
   ]);
