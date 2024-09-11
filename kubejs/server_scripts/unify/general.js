@@ -138,4 +138,125 @@ ServerEvents.recipes((e) => {
         break;
     }
   }
+
+  e.replaceInput({}, 'minecraft:ender_pearl', '#c:ender_pearls');
+
+  let enchApparatusRecipe = (output, inputs, reagent, keepNbtOfReagent, sourceCost, id) => {
+    output = Item.of(output).toJson();
+    inputs = inputs.map((input) => Ingredient.of(input).toJson());
+    reagent = Ingredient.of(reagent).toJson();
+
+    e.custom({
+      type: 'ars_nouveau:enchanting_apparatus',
+      keepNbtOfReagent: keepNbtOfReagent,
+      reagent: reagent,
+      result: output,
+      pedestalItems: inputs,
+      sourceCost: sourceCost,
+    }).id(id);
+  };
+
+  let glyphRecipe = (output, inputs, xpCost, id) => {
+    output = Item.of(output).toJson();
+    inputs = inputs.map((input) => Ingredient.of(input).toJson());
+
+    e.custom({
+      type: 'ars_nouveau:glyph',
+      output: output,
+      inputs: inputs,
+      exp: xpCost,
+    }).id(id);
+  };
+
+  e.custom({
+    type: 'tankstorage:tank_link',
+    pattern: [' B ', 'AGA', 'ESE'],
+    key: {
+      B: { tag: 'tankstorage:tanks' },
+      A: { tag: 'c:gems/amethyst' },
+      G: { tag: 'c:glass_blocks/cheap' },
+      E: { tag: 'c:ender_pearls' },
+      S: { item: 'minecraft:glow_ink_sac' },
+    },
+    result: { id: 'tankstorage:tank_link', count: 1 },
+  }).id('tankstorage:tank_link');
+
+  e.custom({
+    type: 'bankstorage:bank_link',
+    pattern: [' B ', 'AGA', 'ESE'],
+    key: {
+      B: { tag: 'bankstorage:banks' },
+      A: { tag: 'c:gems/amethyst' },
+      G: { tag: 'c:glass_blocks/cheap' },
+      E: { tag: 'c:ender_pearls' },
+      S: { item: 'minecraft:glow_ink_sac' },
+    },
+    result: { id: 'bankstorage:bank_link', count: 1 },
+  }).id('bankstorage:bank_link');
+
+  enchApparatusRecipe(
+    'ars_additions:ender_source_jar',
+    [
+      '#c:ender_pearls',
+      '#c:ender_pearls',
+      '#c:ender_pearls',
+      '#c:ender_pearls',
+      'minecraft:popped_chorus_fruit',
+      'minecraft:popped_chorus_fruit',
+      'minecraft:popped_chorus_fruit',
+      'minecraft:popped_chorus_fruit',
+    ],
+    'ars_nouveau:source_jar',
+    false,
+    0,
+    'ars_additions:apparatus/ender_source_jar'
+  );
+
+  enchApparatusRecipe(
+    'ars_additions:unstable_reliquary',
+    ['ars_nouveau:conjuration_essence', 'ars_nouveau:manipulation_essence', '#c:ender_pearls'],
+    'ars_nouveau:mob_jar',
+    false,
+    0,
+    'ars_additions:apparatus/unstable_reliquary'
+  );
+
+  enchApparatusRecipe(
+    'ars_nouveau:thread_wild_magic',
+    ['#c:ender_pearls', 'minecraft:rabbit_foot', 'minecraft:bone'],
+    'ars_nouveau:blank_thread',
+    false,
+    0,
+    'ars_nouveau:thread_wild_magic'
+  );
+
+  glyphRecipe(
+    'ars_additions:glyph_recall',
+    ['ars_nouveau:conjuration_essence', '#c:ender_pearls', 'ars_nouveau:scryer_scroll', 'ars_nouveau:enchanters_eye'],
+    160,
+    'ars_additions:glyph_recall'
+  );
+
+  glyphRecipe(
+    'ars_additions:glyph_mark',
+    ['ars_nouveau:manipulation_essence', '#c:ender_pearls', 'ars_nouveau:mob_jar', 'ars_nouveau:ritual_containment'],
+    160,
+    'ars_additions:glyph_mark'
+  );
+
+  glyphRecipe(
+    'ars_elemental:glyph_arc_projectile',
+    ['minecraft:arrow', 'minecraft:snowball', 'minecraft:slime_ball', '#c:ender_pearls'],
+    55,
+    'ars_elemental:glyph_arc_projectile'
+  );
+
+  e.custom({
+    type: 'ae2:inscriber',
+    ingredients: {
+      middle: Ingredient.of('#c:ender_pearls').toJson(),
+    },
+    mode: 'inscribe',
+    result: Item.of('ae2:ender_dust').toJson(),
+  }).id('ae2:inscriber/ender_dust');
 });
