@@ -7,21 +7,32 @@ ServerEvents.tags('item', (e) => {
   e.add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet']);
 
   // Crops & Seeds
-  e.add("c:seeds/cabbage", "farmersdelight:cabbage_seeds");
-  e.add("c:seeds/tomato", "farmersdelight:tomato_seeds");
-  e.add("c:seeds/rice", "sushigocrafting:rice_seeds");
-  e.add("c:seeds/eggplant", "dumplings_delight:eggplant_seeds");
-  e.add("c:crops/garlic", "dumplings_delight:garlic");
-  e.add("c:crops/green_onion", "croptopia:greenonion");
+  e.add('c:seeds/cabbage', 'farmersdelight:cabbage_seeds');
+  e.add('c:seeds/tomato', 'farmersdelight:tomato_seeds');
+  e.add('c:seeds/rice', 'sushigocrafting:rice_seeds');
+  e.add('c:seeds/eggplant', 'dumplings_delight:eggplant_seeds');
+  e.add('c:crops/garlic', 'dumplings_delight:garlic');
+  e.add('c:crops/green_onion', 'croptopia:greenonion');
 
   // Foods
-  e.add("c:foods/raw_bacon", "croptopia:bacon");
-  e.add("c:foods/cooked_bacon", "croptopia:cooked_bacon");
-  e.add("c:foods/calamari", "croptopia:calamari");
+  e.add('c:foods/raw_bacon', 'croptopia:bacon');
+  e.add('c:foods/cooked_bacon', 'croptopia:cooked_bacon');
+  e.add('c:foods/calamari', 'croptopia:calamari');
 });
 
 ServerEvents.tags('block', (e) => {
-  e.add('ftbchunks:interact_whitelist', ['@waystones']);
+  e.add('ftbchunks:interact_whitelist', [
+    '@waystones',
+    'minecraft:crafting_table',
+    'minecraft:ender_chest',
+    'minecraft:enchanting_table',
+    'minecraft:loom',
+    'minecraft:smithing_table',
+    'minecraft:stonecutter',
+    '#minecraft:anvil',
+    'yigd:grave',
+    '#lootr:containers',
+  ]);
 
   let colors = ['white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray', 'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black'];
 
@@ -54,4 +65,8 @@ ServerEvents.tags('fluid', (e) => {
   e.add('c:lubricant', 'modern_industrialization:lubricant');
   e.add('c:plantoil', 'modern_industrialization:plant_oil');
   e.add('c:fuels/crude_oil', 'modern_industrialization:crude_oil');
+});
+
+ServerEvents.tags('entity_type', (e) => {
+  e.add('ftbchunks:entity_interact_whitelist', ['minecraft:villager']);
 });
