@@ -59,14 +59,7 @@ ServerEvents.recipes((e) => {
     recipe.chemical_output.id = chem_out.split(' ')[1];
     recipe.chemical_output.amount = parseInt(chem_out.split(' ')[0].replace('x', ''));
 
-    try {
-      e.custom(recipe).id(makeID('reaction', item_out, item_in[0][0]));
-    } catch (error) {
-      console.error(error);
-    } finally {
-      console.info(`Attempting to add reaction: ${item_out} from ${item_in}`);
-      console.info(recipe);
-    }
+    e.custom(recipe).id(makeID('reaction', item_out, item_in[0][0]));
   };
 
   let removeMek = [
