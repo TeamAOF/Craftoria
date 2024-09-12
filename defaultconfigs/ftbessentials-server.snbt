@@ -1,7 +1,7 @@
-# Default config file that will be copied to instance's config/ftbessentials.snbt location
+# Default config file that will be copied to instance''s config/ftbessentials.snbt location
 # Copy values you wish to override in here
 # Example:
-# 
+#
 # {
 # 	misc: {
 # 		enderchest: {
@@ -10,4 +10,12 @@
 # 	}
 # }
 
-{ }
+{
+	teleportation: {
+		rtp: {
+			cooldown: 300
+			dimension_blacklist: []
+			dimension_whitelist: ["minecraft:*"]
+		}
+	}
+}
