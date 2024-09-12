@@ -1,23 +1,4 @@
 ServerEvents.recipes((e) => {
-  let colors = [
-    'white',
-    'orange',
-    'magenta',
-    'light_blue',
-    'yellow',
-    'lime',
-    'pink',
-    'gray',
-    'light_gray',
-    'cyan',
-    'purple',
-    'blue',
-    'brown',
-    'green',
-    'red',
-    'black',
-  ];
-
   // Fixes Handcrafted Cupboards and Functional Storage 1x1 Drawers conflicting
   Ingredient.of('#handcrafted:cupboards').itemIds.forEach((item) => {
     e.remove({ output: item });
