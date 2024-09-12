@@ -1,12 +1,7 @@
 // priority: 997
-
 ServerEvents.recipes((e) => {
   let makeID = (type, output, input) => {
-    output = output.split(':')[1].replace(' ', '_');
-    input = input.split(':')[1].replace(' ', '_');
-
-    //console.info(`ID: craftoria:mekanism/${type}/${output}_from_${input}`);
-    return `craftoria:mekanism/${type}/${output}_from_${input}`;
+    return _makeID('mekanism', type, output, input);
   };
 
   let enrich = (output, input) => {
@@ -62,28 +57,11 @@ ServerEvents.recipes((e) => {
     e.custom(recipe).id(makeID('reaction', item_out, item_in[0][0]));
   };
 
-  let removeMek = [
-    // 'mekanism:processing/bronze/ingot/from_infusing',
-    // 'mekanism:processing/bronze/dust/from_infusing',
-    // 'mekanism:processing/steel/enriched_iron_to_dust',
-    // 'mekanism:processing/lapis_lazuli/to_dust',
-    // 'mekanism:reaction/coal_gasification/blocks_coals',
-    // 'mekanism:reaction/coal_gasification/dusts_coals',
-    // 'mekanism:reaction/coal_gasification/coals',
-    // 'mekanism:injecting/gunpowder_to_sulfur',
-    // 'mekanism:enriching/salt',
-    // 'mekanism:crystallizing/salt',
-  ];
+  // let removeMek = [];
 
-  removeMek.forEach((id) => {
-    e.remove({ id: id });
-  });
-
-  // metallurgic_infusing('1x modern_industrialization:steel_dust', '1x mekanism:enriched_iron', '10x mekanism:carbon');
-  // metallurgic_infusing('4x modern_industrialization:bronze_ingot', '3x #c:ingots/copper', '10x mekanism:tin');
-  // metallurgic_infusing('4x modern_industrialization:bronze_dust', '3x #c:dusts/copper', '10x mekanism:tin');
-  //injecting('1x modern_industrialization:sulfur_dust', '1x #c:gunpowders', '1x mekanism:hydrogen_chloride');
-  //crystallizing('1x modern_industrialization:salt_dust', '15x mekanism:brine');
+  // removeMek.forEach((id) => {
+  //   e.remove({ id: id });
+  // });
 
   [metals, gems].forEach((materials) => {
     materials.forEach((material) => {
@@ -98,17 +76,17 @@ ServerEvents.recipes((e) => {
 
   crush('modern_industrialization:coal_dust', 'minecraft:coal');
 
-  let oreProcessing = (metal) => {
-    let dust = getItemFromTag(`#c:dusts/${metal}`);
-    if (dust) {
-      if (Item.exists(`mekanism:dust_${metal}`)) e.remove({ type: 'mekanism:enriching', output: `mekanism:dust_${metal}` });
-      enrich(`2x ${dust}`, `#c:ores/${metal}`);
-      enrich(`4x ${dust}`, `3x #c:raw_materials/${metal}`);
-      enrich(`12x ${dust}`, `#c:storage_blocks/raw_${metal}`);
-      enrich(dust, `#c:dirty_dusts/${metal}`);
-      if (debug) console.info(`Added ore processing for ${metal}.`);
-    }
-  };
+  // let oreProcessing = (metal) => {
+  //   let dust = getItemFromTag(`#c:dusts/${metal}`);
+  //   if (dust) {
+  //     if (Item.exists(`mekanism:dust_${metal}`)) e.remove({ type: 'mekanism:enriching', output: `mekanism:dust_${metal}` });
+  //     enrich(`2x ${dust}`, `#c:ores/${metal}`);
+  //     enrich(`4x ${dust}`, `3x #c:raw_materials/${metal}`);
+  //     enrich(`12x ${dust}`, `#c:storage_blocks/raw_${metal}`);
+  //     enrich(dust, `#c:dirty_dusts/${metal}`);
+  //     if (debug) console.info(`Added ore processing for ${metal}.`);
+  //   }
+  // };
 
   // metals.forEach((metal) => {
   //   oreProcessing(metal);
