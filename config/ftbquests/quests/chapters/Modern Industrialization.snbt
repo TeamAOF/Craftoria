@@ -3105,5 +3105,35 @@
 			x: 61.25d
 			y: 3.75d
 		}
+		{
+			dependencies: ["2472B23BC0C28C6C"]
+			id: "74C5FDC3B1E74586"
+			rewards: [
+				{
+					count: 8
+					id: "5C3B414F3D27ADEF"
+					item: {
+						count: 1
+						id: "modern_industrialization:superconductor_cable"
+					}
+					type: "item"
+				}
+				{
+					id: "39E22779A6F2D915"
+					item: {
+						count: 1
+						id: "modern_industrialization:superconductor_storage_unit"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6C72EF01EA7985C9"
+				item: { count: 1, id: "mi_tweaks:flux_transformer" }
+				type: "item"
+			}]
+			x: 62.0d
+			y: -2.0d
+		}
 	]
 }
