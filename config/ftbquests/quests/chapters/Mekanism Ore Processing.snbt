@@ -638,6 +638,23 @@
 		}
 		{
 			dependencies: ["038773FFAF3C8817"]
+			icon: {
+				components: {
+					"mekanism:fluids": {
+						fluid_tanks: [{
+							amount: 32000
+							id: "minecraft:water"
+						}]
+					}
+					"mekanism:owner": [I;
+						-1416099104
+						47394916
+						-1378934058
+						-903564284
+					]
+				}
+				id: "mekanism:basic_fluid_tank"
+			}
 			id: "5DF4A4E6D5E448D0"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -647,10 +664,8 @@
 			}]
 			shape: "diamond"
 			tasks: [{
-				id: "44E5955152A1F4FF"
-				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "minecraft:water" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
-				match_components: "strict"
-				type: "item"
+				id: "33DEB184944AC7D0"
+				type: "checkmark"
 			}]
 			x: 3.5d
 			y: 3.0d
@@ -766,6 +781,23 @@
 		}
 		{
 			dependencies: ["038773FFAF3C8817"]
+			icon: {
+				components: {
+					"mekanism:fluids": {
+						fluid_tanks: [{
+							amount: 32000
+							id: "minecraft:water"
+						}]
+					}
+					"mekanism:owner": [I;
+						-1416099104
+						47394916
+						-1378934058
+						-903564284
+					]
+				}
+				id: "mekanism:basic_fluid_tank"
+			}
 			id: "3F8B9421E85C047D"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -775,10 +807,8 @@
 			}]
 			shape: "diamond"
 			tasks: [{
-				id: "3DE1A30FBBEB8173"
-				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "minecraft:water" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
-				match_components: "strict"
-				type: "item"
+				id: "5CB700830F80DFD8"
+				type: "checkmark"
 			}]
 			x: 4.0d
 			y: -4.5d
@@ -1056,6 +1086,23 @@
 		}
 		{
 			dependencies: ["038773FFAF3C8817"]
+			icon: {
+				components: {
+					"mekanism:fluids": {
+						fluid_tanks: [{
+							amount: 32000
+							id: "minecraft:water"
+						}]
+					}
+					"mekanism:owner": [I;
+						-1416099104
+						47394916
+						-1378934058
+						-903564284
+					]
+				}
+				id: "mekanism:basic_fluid_tank"
+			}
 			id: "15C38E0D2B205FB4"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1065,10 +1112,8 @@
 			}]
 			shape: "diamond"
 			tasks: [{
-				id: "13BCA7B28EE7AA0F"
-				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "minecraft:water" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
-				match_components: "strict"
-				type: "item"
+				id: "21895164503139CA"
+				type: "checkmark"
 			}]
 			x: -2.0d
 			y: -3.0d
