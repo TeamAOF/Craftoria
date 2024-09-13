@@ -4,7 +4,6 @@
 
 ### Added
 
-  * [Better Tooltips](https://www.curseforge.com/minecraft/mc-mods/better-tooltips-neoforge) (by [1foxy2](https://www.curseforge.com/members/1foxy2/projects))
   * [Crash Utilities](https://www.curseforge.com/minecraft/mc-mods/crash-utilities) (by [Darkere](https://www.curseforge.com/members/Darkere/projects))
   * [Elytra Slot (Fabric/Forge/Quilt)](https://www.curseforge.com/minecraft/mc-mods/elytra-slot) (by [TheIllusiveC4](https://www.curseforge.com/members/TheIllusiveC4/projects))
   * [EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot) (by [fzzyhmstrs](https://www.curseforge.com/members/fzzyhmstrs/projects))
@@ -15,9 +14,7 @@
   * [Glassential Renewed (Fabric/NeoForge)](https://www.curseforge.com/minecraft/mc-mods/glassential-renewed) (by [big_energy](https://www.curseforge.com/members/big_energy/projects))
   * [KubeJS Mekanism](https://www.curseforge.com/minecraft/mc-mods/kubejs-mekanism) (by [LatvianModder](https://www.curseforge.com/members/LatvianModder/projects))
   * [MrCrayfish's Furniture Mod: Refurbished](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture) (by [MrCrayfish](https://www.curseforge.com/members/MrCrayfish/projects))
-  * [My Nether's Delight](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight) (by [soytutta](https://www.curseforge.com/members/soytutta/projects))
   * [Overloaded Armor Bar](https://www.curseforge.com/minecraft/mc-mods/overloaded-armor-bar) (by [tfarecnim](https://www.curseforge.com/members/tfarecnim/projects))
-  * [Radium Reforged](https://www.curseforge.com/minecraft/mc-mods/radium-reforged) (by [Asek3](https://www.curseforge.com/members/Asek3/projects))
   * [Relics: Artifacts Compat](https://www.curseforge.com/minecraft/mc-mods/rar-compat) (by [SSKirillSS](https://www.curseforge.com/members/SSKirillSS/projects))
 
 ### Removed

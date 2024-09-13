@@ -73,18 +73,16 @@ _NeoForge Loader 21.1.51_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
   * [Better Tooltips](https://www.curseforge.com/minecraft/mc-mods/better-tooltips-neoforge)
   * [Crash Utilities](https://www.curseforge.com/minecraft/mc-mods/crash-utilities)
-  * [Elytra Slot (Fabric/Forge/Quilt)](https://www.curseforge.com/minecraft/mc-mods/elytra-slot)
+  * [Elytra Slot](https://www.curseforge.com/minecraft/mc-mods/elytra-slot)
   * [EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot)
   * [Farmer's Cutting: Oh The Biomes We've Gone](https://www.curseforge.com/minecraft/mc-mods/farmers-cutting-oh-the-biomes-weve-gone)
   * [Framework](https://www.curseforge.com/minecraft/mc-mods/framework)
   * [Fzzy Config](https://www.curseforge.com/minecraft/mc-mods/fzzy-config)
   * [Gateways to Eternity](https://www.curseforge.com/minecraft/mc-mods/gateways-to-eternity)
-  * [Glassential Renewed (Fabric/NeoForge)](https://www.curseforge.com/minecraft/mc-mods/glassential-renewed)
+  * [Glassential Renewed](https://www.curseforge.com/minecraft/mc-mods/glassential-renewed)
   * [KubeJS Mekanism](https://www.curseforge.com/minecraft/mc-mods/kubejs-mekanism)
-  * [MrCrayfish's Furniture Mod: Refurbished](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture)
-  * [My Nether's Delight](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight)
+  * [MrCrayfish's Furniture](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture)
   * [Overloaded Armor Bar](https://www.curseforge.com/minecraft/mc-mods/overloaded-armor-bar)
-  * [Radium Reforged](https://www.curseforge.com/minecraft/mc-mods/radium-reforged)
   * [Relics: Artifacts Compat](https://www.curseforge.com/minecraft/mc-mods/rar-compat)
 ---
 
