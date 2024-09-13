@@ -26,6 +26,7 @@
 	chapter_group.3F2E4C487BEC262A.title: "&8&lMisc&r &9⚒"
 	file.0000000000000001.title: "&lCraftoria"
 	quest.000F7897FF9ED7DC.quest_desc: ["There are &a4 stages&f of growth, just like &bCertus Quartz Clusters&f. While in the &afirst three stages&f you will get &bEntro Dust&f, But in the &afourth stage&f you can get &bEntroized Crystals&f."]
+	quest.00237AB9C48C8A9B.quest_desc: ["The &bMatter Condencer &fwill allow you to &6make &bMatter Balls&f for the &bPaint Gun&f, and &6make&b Singularities &fat the cost of &aitem entities&f."]
 	quest.002410CF49E1E14E.quest_desc: ["Craft with &bFE Storage Components &fto store &4power&f."]
 	quest.0035439F73199781.quest_desc: ["I thought &bsteel &fwas &bIron and Carbon&f, and this is just energized not even forged."]
 	quest.0035439F73199781.quest_subtitle: "And they call this \"steel\""
@@ -1330,6 +1331,7 @@
 		"  &6It uses EU (and a lot of it) to function&r, so it can be charged by right clicking a block that can output energy."
 	]
 	quest.2C4CA092A557205E.title: "Gravi-chestplate"
+	quest.2C92B957A5E8646F.quest_desc: ["The &bBlank Pattern&f is used to make &acrafting recipes &6automated&f. You must &6encode &fthe &bBlank Pattern &fin the &bPattern Encoder&f, then place it into a &bPattern Provider&f."]
 	quest.2CB005B413D2B889.quest_desc: [
 		"Yes, you can be a model! "
 		""
@@ -1584,6 +1586,7 @@
 	quest.3492CFBA1602D7F2.title: "Celestigem Armor"
 	quest.34B822EC25F66B54.quest_desc: ["The &bOsmium Compressor&r is used to &6compress&r &3osmium&r into certain dusts to &6create&r their ingot counterparts."]
 	quest.34B822EC25F66B54.title: "Osmium Compressor"
+	quest.3504BCE26041D225.quest_desc: ["The &bReaction Chamber &fwill allow you to &6make&b Crystals and Specialty Ingots &ffrom &bAE2&f with the cost of&4 POWAH&f."]
 	quest.35134F538FC7F562.quest_desc: ["Used to pull &4energy&f from the&5 Network"]
 	quest.355644DF30CE87EA.quest_desc: [
 		"A Mid-Game component used to craft storage for &bRadioactive Chemical&f."
@@ -1967,6 +1970,12 @@
 		"The &6processing power&r to handle computations of a &cmuch higher level&r."
 	]
 	quest.44D8D30BCD48C4C9.title: "Elite Control Circuit"
+	quest.44F983F7D06C8DD1.quest_desc: [
+		"This is one special piece of technology. &6Connect&f it up to any system and it will &6load&f every chunk an &bME System's cables&f pass through. Not only that, it even allows &bcrops&f (and any other randomly ticked event) to occur."
+		""
+		"Remember, it only works to an actively connected network, meaning any &bsub-networks &fused to &6connect&b P2P tunnels &fwont be loaded without a second one on that &bnetwork&f."
+	]
+	quest.44F983F7D06C8DD1.title: "Spatial Anchor"
 	quest.45138985A0F5164C.quest_desc: [
 		"The &bJetpack&r uses &7Hydrogen&r to allow you to fly. "
 		""
@@ -2140,6 +2149,7 @@
 	quest.48E96D243486D38E.quest_desc: [
 		"  The &bVoidShift Wand&r's &6abilities&r:"
 		""
+		"• &cLava Repair&r"
 		"• &cAir Burst&r: up to strength 4"
 		"• &cVoid Shift&r: &6Teleport&r ≤ 15 blocks"
 		""
@@ -2698,6 +2708,7 @@
 	quest.62F43B936E236071.quest_subtitle: "Gimme That!"
 	quest.62FCB2F06126B622.quest_desc: ["The &bWireless Terminal&f is a &bregular Terminal&f that can be used to access an&b ME System&b wirelessly. Use an &bAccess Point&f to connect up your &bTerminal&f and use &bBooster Cards&b to increase the total distance from that &bAccess Point&f you want to be able to use your system. Using multiple &bAccess Points&f on the same network in different locations can help you cover a larger footprint."]
 	quest.62FCB2F06126B622.title: "Wireless Terminal"
+	quest.6307E15FAAF30712.quest_desc: ["Allows you to &6make&b patterns&f that need to be&6 inserted&f specific direction to tell it through the &bpattern &fwhat side of the machine its importing/exporting."]
 	quest.632BE5724D2120EB.quest_desc: [
 		"&bReinforced Alloy&r is an elite material made by &6infusing&r diamond into the infused alloy."
 		""
@@ -2727,12 +2738,20 @@
 		"  From here on out, &athere are no limits to your imagination&r."
 	]
 	quest.640DB4139DF8AFA4.title: "&dThe Endgame"
+	quest.641CFC5C8187AC56.quest_desc: [
+		"The &bAnchor Upgrade&r is used in a single machine to make sure it's always loaded. "
+		""
+		"I recommend you remember this upgrade for down the line."
+	]
+	quest.641CFC5C8187AC56.title: "Anchor Upgrade"
 	quest.64287B360B07BEBB.quest_desc: ["- &6Connect/Chain&r up to a &cmax&r of &a64&r machines of choice together."]
 	quest.64287B360B07BEBB.quest_subtitle: "Chain Them Up!"
 	quest.6441C36C63A59445.title: "&ePipeZ"
 	quest.644B280698D65076.quest_desc: ["The &bUltimate Universal Cable&r can hold &e3.27 MFE per cable&r in the network and each additional cable adds &e3.27 MFE/t&r to the total network trasmission rate."]
 	quest.644B280698D65076.title: "Ultimate Universal Cable"
 	quest.653C26BF81CFA5A0.quest_desc: ["Used as a housing to hold MEGA Storage Component, for Item Storage."]
+	quest.65A2C957F10E0D8D.quest_desc: ["The &bDimensional Stabilizer&r prevents parrots of the world from disappearing when not observed. "]
+	quest.65A2C957F10E0D8D.title: "Dimensional Stabilizer"
 	quest.65A75D8101BEB05F.quest_desc: [
 		"  &bSimple&r:"
 		"    • &bFluids&r get &6placed&r"
