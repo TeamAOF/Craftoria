@@ -1,0 +1,27 @@
+[content_manipulation]
+	#Allowed Values: OFF, SCREEN_WIDTH, REMAINING_WIDTH, HALF_SCREEN_WIDTH, SMART
+	wrapText = "SCREEN_WIDTH"
+	overwriteVanillaWrapping = false
+
+[positioning]
+	prioritizeTooltipTop = true
+	bedrockCentering = true
+	bestCorner = false
+	alwaysBestCorner = false
+	preventVanillaClamping = true
+	onlyRepositionHoverTooltips = true
+	useYACLTooltipPositioner = false
+
+[scrolling]
+	smoothScrolling = true
+	#Allowed Values: NATURAL, REVERSE
+	scrollDirection = "NATURAL"
+	#Range: > -2147483648
+	verticalScrollSensitivity = 10
+	#Range: > -2147483648
+	horizontalScrollSensitivity = 10
+
+[style]
+	#Range: 0.0 ~ 1.0
+	tooltipTransparency = 1.0
+	removeFirstLinePadding = true

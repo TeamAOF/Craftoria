@@ -1,3 +1,93 @@
+## Craftoria | v1.2.0
+
+_NeoForge Loader 21.1.51_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.2.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.2.0.md)_
+
+### Changes/Improvements ⭐
+
+* Changed Flight Upgrade recipe from JDT.
+* Added script for enchantment descriptions.
+* Added tooltips/EMI info for Cursed Earth Returns entries.
+* Added QoL recipes for Metallurgic Infusing, ex. Copper Block -> 9x alloy.
+* Added MI ores compat through Mekanism. Lignite, Antimony, Salt, Monazite & Bauxite.
+* Buffed Flux Transformer EU to FE conversion (1x -> 25x, making the ratio 1:25)
+* Changed recipe for Flux Transformer to account for the ratio change.
+* Added quest for Flux Transformer.
+* Updated JDT quest reward tables to not include late game upgrades.
+* Added Reaction Chamber, Advanced Pattern Encoder, Blank Pattern
+* Added fluorite dust recipe in MI macerator.
+* Removed everlasting beef from loot tables.
+* Unify recipes which use Ender Pearls to use the `c:ender_pearls` tag.
+* Removed chunk loaders by default, use FTB Chunks for chunk loading.
+* Blacklisted Time Crystal Budding block from cardboard boxes & ae2 spatial.
+* Allow interaction with 'crafting_table', 'ender_chest', 'enchanting_table', 'loom', 'smithing_table', 'stonecutter', 'anvil', 'grave', 'lootr_containers' & 'villager' in claims.
+* Swap RTP blacklist to whitelist, whitelist only vanilla dims.
+* Added compressed Obsidian/Glowstone.
+* Added recipes for JDT raw ores through Mekanism & Modern Industrialization.
+* Swapped back to old animated villager models.
+* Allow Mekanism quests to be completed without checking introduction quest.
+
+### Mekanism Rebalance
+
+[Ethene]
+* **Energy density:** 40 -> 10
+* **Burn Ticks:**: 40 -> 20
+
+[Wind Generator]
+* **Min Energy Generation:** 60 -> 120
+* **Max Energy Generation:** 300 -> 600
+
+[Solar Generator]
+* **Energy Generation:** 50 -> 100
+
+[Advanced Solar Generator]
+* **Energy Generation:** 300 -> 600
+
+[Heat Generator] 
+* **Energy Generation:** 200 -> 500
+
+[Fission Reactor]
+* **Energy Per Fissile Fuel:** 1,000,000 -> 500,000
+
+[Fusion Reactor]
+* **Termocouple Efficiency:** 0.05 -> 0.04
+* **Casing Thermal Conductivity:** 0.1 -> 0.25
+* **Fuel Capacity:** 1000mb -> 500mb
+
+[SPS]
+* **Energy Per Polonium:** 1,000,000 -> 100,000
+
+### Bug Fixes 🪲
+
+* Fixed birch & spruce leaves not changing colors with seasons.
+* Fixed some Mekanism recipes not showing up.
+* Fixed Colored Sand recipes using colored sand instead of normal sand.
+* Fixed missing rewards in Mekanism quest chapter.
+* Fixed Entro Budding Fully quest not being completable, now an observation task.
+* Fixed quest typos in JDT chapter.
+* Fixed PNC completionist quest dependency line being reversed.
+* Fixed #113 (by removing Chisels item, as Rechiseleds one is better)
+* Fixed smithing table using the incorrect GUI.
+* Fixed Blessed Flower recipe.
+
+### Added Mods ✅
+
+  * [Better Tooltips](https://www.curseforge.com/minecraft/mc-mods/better-tooltips-neoforge)
+  * [Crash Utilities](https://www.curseforge.com/minecraft/mc-mods/crash-utilities)
+  * [Elytra Slot (Fabric/Forge/Quilt)](https://www.curseforge.com/minecraft/mc-mods/elytra-slot)
+  * [EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot)
+  * [Farmer's Cutting: Oh The Biomes We've Gone](https://www.curseforge.com/minecraft/mc-mods/farmers-cutting-oh-the-biomes-weve-gone)
+  * [Framework](https://www.curseforge.com/minecraft/mc-mods/framework)
+  * [Fzzy Config](https://www.curseforge.com/minecraft/mc-mods/fzzy-config)
+  * [Gateways to Eternity](https://www.curseforge.com/minecraft/mc-mods/gateways-to-eternity)
+  * [Glassential Renewed (Fabric/NeoForge)](https://www.curseforge.com/minecraft/mc-mods/glassential-renewed)
+  * [KubeJS Mekanism](https://www.curseforge.com/minecraft/mc-mods/kubejs-mekanism)
+  * [MrCrayfish's Furniture Mod: Refurbished](https://www.curseforge.com/minecraft/mc-mods/refurbished-furniture)
+  * [My Nether's Delight](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight)
+  * [Overloaded Armor Bar](https://www.curseforge.com/minecraft/mc-mods/overloaded-armor-bar)
+  * [Radium Reforged](https://www.curseforge.com/minecraft/mc-mods/radium-reforged)
+  * [Relics: Artifacts Compat](https://www.curseforge.com/minecraft/mc-mods/rar-compat)
+---
+
 ## Craftoria | v1.1.0
 
 _NeoForge Loader 21.1.43_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.1.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.1.0.md)_

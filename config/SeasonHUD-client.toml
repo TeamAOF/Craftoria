@@ -69,7 +69,7 @@
 		#NONE, SHOW_DAY,
 		#                                                      SHOW_WITH_TOTAL_DAYS
 		#Default is SHOW_DAY.
-		#Allowed Values: NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS, SHOW_WITH_MONTH
+		#Allowed Values: NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS
 		enable_show_day = "SHOW_DAY"
 
 	[SeasonHUD.Minimap]
@@ -81,14 +81,3 @@
 		#(true/false)
 		#Default is false.
 		enable_show_minimap_hidden = false
-
-		[SeasonHUD.Minimap.Journeymap]
-			#Display the season above the JourneyMap minimap, instead of below.
-			#(true/false)
-			#Default is false.
-			enable_above_map = false
-			#Toggle for macOS retina display scaling when using JourneyMap.
-			#Enable if the season line is rendering around the halfway point of the screen.
-			#(true/false)
-			#Default is false.
-			enable_macOS = false

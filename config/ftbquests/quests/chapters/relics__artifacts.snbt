@@ -610,7 +610,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "235E2E0E3D8F131A"
-				item: { count: 1, id: "artifacts:plastic_drinking_hat" }
+				item: { components: { "relics:data": { abilities: { abilities: { drinking: { cooldown: 0, cooldownCap: 0, points: 0, stats: { speed: { initialValue: 0.54671d } }, ticking: 0b }, nutrition: { cooldown: 0, cooldownCap: 0, points: 0, stats: { hunger: { initialValue: 1.7233d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:plastic_drinking_hat" }
 				type: "item"
 			}]
 			x: -15.625d
@@ -630,7 +630,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "05C0FE3CACED5422"
-				item: { count: 1, id: "artifacts:novelty_drinking_hat" }
+				item: { components: { "relics:data": { abilities: { abilities: { drinking: { cooldown: 0, cooldownCap: 0, points: 0, stats: { speed: { initialValue: 0.7135d } }, ticking: 0b }, nutrition: { cooldown: 0, cooldownCap: 0, points: 0, stats: { hunger: { initialValue: 2.85026d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:novelty_drinking_hat" }
 				type: "item"
 			}]
 			x: -14.375d
@@ -650,7 +650,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "48BAB32AE390CC87"
-				item: { count: 1, id: "artifacts:snorkel" }
+				item: { components: { "relics:data": { abilities: { abilities: { diving: { cooldown: 0, cooldownCap: 0, points: 0, stats: { duration: { initialValue: 5.46976d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:snorkel" }
 				type: "item"
 			}]
 			x: -13.125d
@@ -690,7 +690,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "352A121F36B4EC8B"
-				item: { count: 1, id: "artifacts:villager_hat" }
+				item: { components: { "relics:data": { abilities: { abilities: { discount: { cooldown: 0, cooldownCap: 0, points: 0, stats: { multiplier: { initialValue: 2.05709d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:villager_hat" }
 				type: "item"
 			}]
 			x: -16.875d
@@ -710,7 +710,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "2AC4FBF7354B9802"
-				item: { count: 1, id: "artifacts:superstitious_hat" }
+				item: { components: { "relics:data": { abilities: { abilities: { looting: { cooldown: 0, cooldownCap: 0, points: 0, stats: { chance: { initialValue: 0.10435d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:superstitious_hat" }
 				type: "item"
 			}]
 			x: -8.125d
@@ -750,7 +750,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "67B930E20BE033E1"
-				item: { count: 1, id: "artifacts:anglers_hat" }
+				item: { components: { "relics:data": { abilities: { abilities: { catch: { cooldown: 0, cooldownCap: 0, points: 0, stats: { chance: { initialValue: 0.13431d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:anglers_hat" }
 				type: "item"
 			}]
 			x: -11.875d
@@ -770,7 +770,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "14C1BB63AA9D5250"
-				item: { count: 1, id: "artifacts:lucky_scarf" }
+				item: { components: { "relics:data": { abilities: { abilities: { luck: { cooldown: 0, cooldownCap: 0, points: 0, stats: { chance: { initialValue: 0.1808d } }, ticking: 0b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:lucky_scarf" }
 				type: "item"
 			}]
 			x: -14.375d
@@ -790,7 +790,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "6B097899C475606D"
-				item: { count: 1, id: "artifacts:scarf_of_invisibility" }
+				item: { components: { "relics:data": { abilities: { abilities: { invisible: { cooldown: 0, cooldownCap: 0, points: 0, stats: { radius: { initialValue: 7.40488d }, threshold: { initialValue: 0.07435d } }, ticking: 1b } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:scarf_of_invisibility" }
 				type: "item"
 			}]
 			x: -16.875d

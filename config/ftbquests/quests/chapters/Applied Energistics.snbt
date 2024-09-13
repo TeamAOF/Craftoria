@@ -582,6 +582,12 @@
 		{
 			dependencies: ["19C33613F2811BAA"]
 			id: "3009C3939976FBD2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0B48780C82206066"
+				table_id: 3188555497912671082L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "1E5B6884D751F618"
 				item: { count: 1, id: "ae2:crafting_terminal" }
@@ -613,6 +619,12 @@
 		{
 			dependencies: ["62FCB2F06126B622"]
 			id: "24E5FA9129987168"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "522483DF30953A82"
+				table_id: 3188555497912671082L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "5F4C5D73B8AE7C56"
 				item: { count: 1, id: "ae2:wireless_crafting_terminal" }
@@ -1151,6 +1163,12 @@
 		{
 			dependencies: ["3009C3939976FBD2"]
 			id: "3973F425BD96668A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F50937EFB536F5E"
+				table_id: 3188555497912671082L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					id: "54364A01103D0EBF"
@@ -1372,29 +1390,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"0B94435972292812"
-				"5619683321410B74"
-			]
-			id: "44F983F7D06C8DD1"
-			rewards: [{
-				count: 8
-				id: "4E7DFE2D779113D7"
-				item: {
-					count: 1
-					id: "ae2:engineering_processor"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "479E05B14885832D"
-				item: { count: 1, id: "ae2:spatial_anchor" }
-				type: "item"
-			}]
-			x: 11.75d
-			y: 4.5d
-		}
-		{
 			dependencies: ["6F7A998802C99AD4"]
 			id: "0B94435972292812"
 			rewards: [{
@@ -1436,6 +1431,12 @@
 		{
 			dependencies: ["2F6C16939D136BF0"]
 			id: "19C33613F2811BAA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "284FDD12BA796AF5"
+				table_id: 3188555497912671082L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "30D81AF1E268C878"
 				item: { count: 1, id: "ae2:terminal" }
@@ -1499,6 +1500,12 @@
 		{
 			dependencies: ["19C33613F2811BAA"]
 			id: "62FCB2F06126B622"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7EABCE75365FE633"
+				table_id: 3188555497912671082L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "1F2786F2AFBC22ED"
 				item: { count: 1, id: "ae2:wireless_terminal" }
@@ -2446,6 +2453,12 @@
 		{
 			dependencies: ["6DFA92E319E7DA77"]
 			id: "4EC894E7808440AC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2C3B29C59B2F9EE6"
+				table_id: 3188555497912671082L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					id: "6412FB4918FB731A"
@@ -2583,6 +2596,12 @@
 		{
 			dependencies: ["3973F425BD96668A"]
 			id: "35CA9D458FD5D791"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19722F04762FF483"
+				table_id: 3188555497912671082L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					id: "5FC013587AC89BD5"
@@ -2601,6 +2620,12 @@
 		{
 			dependencies: ["2F6C16939D136BF0"]
 			id: "7290F8670BBBF12E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "084AED4183D5A017"
+				table_id: 3188555497912671082L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "1C86AAC3614A4152"
 				item: { count: 1, id: "extendedae:active_formation_plane" }
@@ -2762,7 +2787,6 @@
 				"150D032A0BE1BB76"
 				"4DAFFFDC31A78665"
 				"277F167EA7E9A759"
-				"44F983F7D06C8DD1"
 				"79F451F9C8D02A69"
 				"2BB266022C8BFC8C"
 				"4047F3E2AD081915"
@@ -2804,6 +2828,10 @@
 				"19C33613F2811BAA"
 				"263FE6D3550CD41C"
 				"09B10C121C7E9023"
+				"2C92B957A5E8646F"
+				"3504BCE26041D225"
+				"00237AB9C48C8A9B"
+				"6307E15FAAF30712"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -2871,6 +2899,12 @@
 		{
 			dependencies: ["3973F425BD96668A"]
 			id: "2C92B957A5E8646F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "20A32C7E5C5F4686"
+				table_id: 3188555497912671082L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "470F9F5495948475"
 				item: { count: 1, id: "ae2:blank_pattern" }
@@ -2882,6 +2916,12 @@
 		{
 			dependencies: ["2C92B957A5E8646F"]
 			id: "6307E15FAAF30712"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6373ADC60B02E622"
+				table_id: 3188555497912671082L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "0AABCB5085970258"
 				item: { count: 1, id: "advanced_ae:adv_pattern_encoder" }
