@@ -32,10 +32,21 @@ ServerEvents.recipes((e) => {
   );
 
   // Mekanism Compat
-  miMacerator(e, ['c:ores/fluorite', 1],
+  miMacerator(
+    e,
+    ['c:ores/fluorite', 1],
     [
       ['mekanism:dust_fluorite', 4],
       ['mekanism:dust_fluorite', 4, 0.75],
-    ], 2, 100);
+    ],
+    2,
+    100
+  );
   miCompressor(e, ['c:dusts/fluorite', 1], ['mekanism:fluorite_gem', 1], 2, 50);
+
+  e.shaped('mi_tweaks:flux_transformer', ['SS ', ' HC', 'SS '], {
+    S: 'modern_industrialization:superconductor_cable',
+    H: 'modern_industrialization:quantum_machine_hull',
+    C: '#c:fe_cables',
+  }).id('mi_tweaks:flux_transformer');
 });
