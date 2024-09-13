@@ -106,19 +106,35 @@ ServerEvents.recipes(event => {
       id: 'justdirethings:fluidcollectort2'
     },
 
-        // Blazebloom Goo
-        {
-          output: 'justdirethings:gooblock_tier2',
-          pattern: ['BAB', 'CEC', 'BDB'],
-          key: {
-            D: 'minecraft:redstone',
-            B: 'minecraft:blaze_powder',
-            C: 'minecraft:nether_wart',
-            A: 'minecraft:nether_star',
-            E: 'justdirethings:gooblock_tier1'
-          },
-          id: 'justdirethings:gooblock_tier2'
-        }
+    // Blazebloom Goo
+    {
+      output: 'justdirethings:gooblock_tier2',
+      pattern: ['BAB', 'CEC', 'BDB'],
+      key: {
+        D: 'minecraft:redstone',
+        B: 'minecraft:blaze_powder',
+        C: 'minecraft:nether_wart',
+        A: 'minecraft:nether_star',
+        E: 'justdirethings:gooblock_tier1'
+      },
+      id: 'justdirethings:gooblock_tier2'
+    },
+
+    {
+      output: 'justdirethings:upgrade_flight',
+      pattern: ['CEG', 'HDF', 'BAB'],
+      key: {
+        A: 'mekanism:hdpe_elytra',
+        B: 'occultism:awakened_feather',
+        C: 'irons_spellbooks:lightning_upgrade_orb',
+        D: 'justdirethings:upgrade_blank',
+        E: 'ars_elemental:air_focus',
+        F: 'ars_nouveau:ritual_flight',
+        G: 'irons_spellbooks:cooldown_upgrade_orb',
+        H: 'minecraft:end_crystal'
+      },
+      id: 'justdirethings:upgrade_flight'
+    }
   ];
 
   recipes.forEach((recipe) => {
