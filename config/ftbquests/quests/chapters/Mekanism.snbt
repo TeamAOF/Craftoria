@@ -547,6 +547,12 @@
 		{
 			dependencies: ["1D482F0D9AF8D17E"]
 			id: "59451B5DAD78C46F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "676724E11E7FA2B2"
+				table_id: 2077077515542683993L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "1D83BC2C4DAAA588"
 				item: { count: 1, id: "mekanism:atomic_disassembler" }
@@ -1124,6 +1130,12 @@
 		{
 			dependencies: ["1D482F0D9AF8D17E"]
 			id: "550B874D9F2D0D5A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4FF2265CA448EDA2"
+				table_id: 2077077515542683993L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "4B745183648EBA34"
 				item: { count: 1, id: "mekanism:digital_miner" }
@@ -1747,6 +1759,12 @@
 		{
 			dependencies: ["1D482F0D9AF8D17E"]
 			id: "56C5ECD3430B6A55"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52FC6B02874699D5"
+				table_id: 2077077515542683993L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "6062D34004392C3A"
 				item: { count: 1, id: "mekanism:hdpe_elytra" }
@@ -2096,7 +2114,6 @@
 			y: -1.46d
 		}
 		{
-			dependencies: ["510C7652FE3431AC"]
 			id: "110B0C8DD2FD5BE7"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -2426,6 +2443,12 @@
 		{
 			dependencies: ["1D482F0D9AF8D17E"]
 			id: "247E497BC6DE25CE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "639B83436C9C5A57"
+				table_id: 2077077515542683993L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "6CD0F1533A23D5FD"
 				item: { count: 1, id: "mekanism:robit" }
@@ -3123,11 +3146,12 @@
 		}
 		{
 			id: "510C7652FE3431AC"
+			size: 1.4d
 			tasks: [{
 				id: "13FBD6CBB3C0F41B"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: -0.7d
 			y: 0.0d
 		}
 		{
@@ -3381,7 +3405,6 @@
 				"566D039774A4DB9D"
 				"7F7AB9192CD7FC70"
 				"3850B26FC78DD874"
-				"510C7652FE3431AC"
 				"7FC6AE9DB7C1DA52"
 				"04C21F7B2F034772"
 				"5021D7D55A0B3533"
