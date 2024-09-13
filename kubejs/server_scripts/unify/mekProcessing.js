@@ -1,209 +1,89 @@
 // priority: 997
-
 ServerEvents.recipes((e) => {
-  // let enrich = (input, output, iCount, oCount) => {
-  //   let recipe = {
-  //     type: 'mekanism:enriching',
-  //     input: {},
-  //     output: {},
-  //   };
+  let makeID = (type, output, input) => {
+    return _makeID('mekanism', type, output, input);
+  };
 
-  //   input = input.replace('#c:', 'c:');
-  //   if (input.includes('c:')) recipe.input.tag = input;
-  //   else recipe.input.item = input;
+  let enrich = (output, input) => {
+    e.recipes.mekanism.enriching(output, input).id(makeID('enriching', output, input));
+  };
 
-  //   recipe.output.id = output;
+  let metallurgic_infusing = (output, input, chem, perTick) => {
+    e.recipes.mekanism.metallurgic_infusing(output, input, chem, perTick ? perTick : false).id(makeID('metallurgic_infusing', output, input));
+  };
 
-  //   recipe.input.count = iCount || 1;
-  //   recipe.output.count = oCount || 1;
+  let crush = (output, input) => {
+    e.recipes.mekanism.crushing(output, input).id(makeID('crushing', output, input));
+  };
 
-  //   e.custom(recipe).id(`craftoria:mekanism/enriching/${input.replace('c:', '').replace(':', '_')}`);
-  // };
+  let injecting = (output, input, chem) => {
+    e.recipes.mekanism.injecting(output, input, chem, false).id(makeID('injecting', output, input));
+  };
 
-  // let infuse = (chemical, input, output, chemCount, iCount, oCount) => {
-  //   let recipe = {
-  //     type: 'mekanism:metallurgic_infusing',
-  //     chemical_input: {},
-  //     item_input: {},
-  //     output: {},
-  //     per_tick_usage: false,
-  //   };
-  //   recipe.chemical_input.tag = chemical;
+  let crystallizing = (output, input) => {
+    e.recipes.mekanism.crystallizing(output, input).id(makeID('crystallizing', output, input));
+  };
 
-  //   input = input.replace('#c:', 'c:');
-  //   if (input.includes('c:')) recipe.item_input.tag = input;
-  //   else recipe.item_input.item = input;
+  let reaction = (item_out, item_in, fluid_in, chem_out, chem_in, duration) => {
+    let recipe = {
+      type: 'mekanism:reaction',
+      item_input: {
+        type: 'neoforge:compound',
+        children: [],
+        count: item_in[1],
+      },
+      item_output: Item.of(item_out).toJson(),
+      fluid_input: {},
+      chemical_input: {},
+      chemical_output: {},
+      duration: duration,
+    };
 
-  //   recipe.output.id = output;
+    item_in[0].forEach((item) => {
+      recipe.item_input.children.push(Ingredient.of(item).toJson());
+    });
 
-  //   recipe.chemical_input.amount = chemCount || 10;
-  //   recipe.item_input.count = iCount || 1;
-  //   recipe.output.count = oCount || 1;
+    if (fluid_in.split(' ')[1].includes('#')) recipe.fluid_input.tag = fluid_in.split(' ')[1].replace('#', '');
+    else recipe.fluid_input.id = fluid_in.split(' ')[1];
+    recipe.fluid_input.amount = parseInt(fluid_in.split(' ')[0].replace('x', ''));
 
-  //   e.custom(recipe).id(`craftoria:mekanism/metallurgic_infusing/${input.replace('c:', '').replace(':', '_')}`);
-  // };
+    if (chem_in.split(' ')[1].includes('#')) recipe.chemical_input.chemical = chem_in.split(' ')[1].replace('#', '');
+    else recipe.chemical_input.id = chem_in.split(' ')[1];
+    recipe.chemical_input.amount = parseInt(chem_in.split(' ')[0].replace('x', ''));
 
-  // let crush = (input, output, iCount, oCount) => {
-  //   let recipe = {
-  //     type: 'mekanism:crushing',
-  //     input: {},
-  //     output: {},
-  //   };
+    recipe.chemical_output.id = chem_out.split(' ')[1];
+    recipe.chemical_output.amount = parseInt(chem_out.split(' ')[0].replace('x', ''));
 
-  //   input = input.replace('#c:', 'c:');
-  //   if (input.includes('c:')) recipe.input.tag = input;
-  //   else recipe.input.item = input;
+    e.custom(recipe).id(makeID('reaction', item_out, item_in[0][0]));
+  };
 
-  //   recipe.output.id = output;
-
-  //   recipe.input.count = iCount || 1;
-  //   recipe.output.count = oCount || 1;
-
-  //   e.custom(recipe).id(`craftoria:mekanism/crushing/${input.replace('c:', '').replace(':', '_')}`);
-  // };
-
-  // let reaction = (fluidIn, gasIn, gasOut, itemIn, itemOut, duration) => {
-  //   let recipe = {
-  //     type: 'mekanism:reaction',
-  //     duration: duration || 1,
-  //     fluid_input: {},
-  //     gas_input: {},
-  //     gas_output: {},
-  //     item_input: {
-  //       type: 'neoforge:compound',
-  //       children: [],
-  //     },
-  //     item_output: {},
-  //   };
-
-  //   if (fluidIn[0].includes('#')) {
-  //     fluidIn[0] = fluidIn[0].replace('#', '');
-  //     recipe.fluid_input.tag = fluidIn[0];
-  //   } else recipe.fluid_input.id = fluidIn[0];
-  //   recipe.fluid_input.amount = fluidIn[1];
-
-  //   if (gasIn[0].includes('#')) {
-  //     gasIn[0] = gasIn[0].replace('#', '');
-  //     recipe.gas_input.gas = gasIn[0];
-  //   } else recipe.gas_input.id = gasIn[0];
-  //   recipe.gas_input.amount = gasIn[1];
-
-  //   recipe.gas_output.id = gasOut[0];
-  //   recipe.gas_output.amount = gasOut[1];
-
-  //   itemIn[0].forEach((item) => {
-  //     if (item.includes('#')) {
-  //       item = item.replace('#', '');
-  //       recipe.item_input.children.push({ tag: item });
-  //     } else {
-  //       recipe.item_input.children.push({ item: item });
-  //     }
-  //   });
-  //   recipe.item_input.count = itemIn[1];
-
-  //   recipe.item_output.id = itemOut[0];
-  //   recipe.item_output.count = itemOut[1];
-
-  //   let id = 'craftoria:mekanism/reaction/';
-
-  //   itemIn[0].forEach((item) => {
-  //     item = item.replace('#', '').replace(':', '_');
-  //     id += `${item}_`;
-  //   });
-
-  //   e.custom(recipe).id(`${id}to_${itemOut[0].replace(':', '_')}`);
-  // };
-
-  // let injecting = (chem, input, output) => {
-  //   let recipe = {
-  //     type: 'mekanism:injecting',
-  //     chemical_input: {},
-  //     item_input: {},
-  //     output: {},
-  //   };
-
-  //   if (chem[0].includes('#')) {
-  //     chem[0] = chem[0].replace('#', '');
-  //     recipe.chemical_input.gas = chem[0];
-  //   } else recipe.chemical_input.id = chem[0];
-  //   recipe.chemical_input.amount = chem[1];
-
-  //   if (input[0].includes('#')) {
-  //     input[0] = input[0].replace('#', '');
-  //     recipe.item_input.tag = input[0];
-  //   } else recipe.item_input.item = input[0];
-  //   recipe.item_input.count = input[1];
-
-  //   recipe.output.id = output[0];
-  //   recipe.output.count = output[1];
-
-  //   e.custom(recipe).id(`craftoria:mekanism/injecting/${input[0].replace(':', '_')}`);
-  // };
-
-  // let crystallizing = (chemType, input, output) => {
-  //   let recipe = {
-  //     type: 'mekanism:crystallizing',
-  //     chemical_type: chemType,
-  //     input: {},
-  //     output: {},
-  //   };
-
-  //   if (input[0].includes('#')) {
-  //     input[0] = input[0].replace('#', '');
-  //     recipe.input.gas = input[0];
-  //   } else recipe.input.id = input[0];
-  //   recipe.input.amount = input[1];
-
-  //   recipe.output.id = output[0];
-  //   recipe.output.count = output[1];
-
-  //   e.custom(recipe).id(`craftoria:mekanism/crystallizing/${input[0].replace(':', '_')}`);
-  // };
-
-  // let removeMek = [
-  //   'mekanism:processing/bronze/ingot/from_infusing',
-  //   'mekanism:processing/bronze/dust/from_infusing',
-  //   'mekanism:processing/steel/enriched_iron_to_dust',
-  //   'mekanism:processing/lapis_lazuli/to_dust',
-  //   'mekanism:reaction/coal_gasification/blocks_coals',
-  //   'mekanism:reaction/coal_gasification/dusts_coals',
-  //   'mekanism:reaction/coal_gasification/coals',
-  //   'mekanism:injecting/gunpowder_to_sulfur',
-  //   'mekanism:enriching/salt',
-  //   'mekanism:crystallizing/salt',
-  // ];
+  // let removeMek = [];
 
   // removeMek.forEach((id) => {
   //   e.remove({ id: id });
   // });
 
-  // infuse('mekanism:carbon', 'mekanism:enriched_iron', 'modern_industrialization:steel_dust', 10, 1, 1);
-  // infuse('mekanism:tin', '#c:ingots/copper', 'modern_industrialization:bronze_ingot', 10, 3, 4);
-  // infuse('mekanism:tin', '#c:dusts/copper', 'modern_industrialization:bronze_dust', 10, 3, 4);
-  // injecting(['#mekanism:hydrogen_chloride', 1], ['#c:gunpowders', 1], ['modern_industrialization:sulfur_dust', 1]);
-  // crystallizing('gas', ['#mekanism:brine', 15], ['modern_industrialization:salt_dust', 1]);
+  [metals, gems].forEach((materials) => {
+    materials.forEach((material) => {
+      let dust = getItemFromTag(`#c:dusts/${material}`);
+      if (dust) {
+        if (Item.exists(`mekanism:dust_${material}`)) e.remove({ type: 'mekanism:crushing', output: `mekanism:dust_${material}` });
+        if (checkTagSize(`#c:ingots/${material}`) > 0) crush(dust, `#c:ingots/${material}`);
+        else if (checkTagSize(`#c:gems/${material}`) > 0) crush(dust, `#c:gems/${material}`);
+      }
+    });
+  });
 
-  // [metals, gems].forEach((materials) => {
-  //   materials.forEach((material) => {
-  //     let dust = getItemFromTag(`#c:dusts/${material}`);
-  //     if (dust) {
-  //       if (Item.exists(`mekanism:dust_${material}`)) e.remove({ type: 'mekanism:crushing', output: `mekanism:dust_${material}` });
-  //       if (checkTagSize(`#c:ingots/${material}`) > 0) crush(`#c:ingots/${material}`, dust);
-  //       else if (checkTagSize(`#c:gems/${material}`) > 0) crush(`#c:gems/${material}`, dust);
-  //     }
-  //   });
-  // });
-
-  // crush('minecraft:coal', 'modern_industrialization:coal_dust');
+  crush('modern_industrialization:coal_dust', 'minecraft:coal');
 
   // let oreProcessing = (metal) => {
   //   let dust = getItemFromTag(`#c:dusts/${metal}`);
   //   if (dust) {
   //     if (Item.exists(`mekanism:dust_${metal}`)) e.remove({ type: 'mekanism:enriching', output: `mekanism:dust_${metal}` });
-  //     enrich(`#c:ores/${metal}`, dust, 1, 2);
-  //     enrich(`#c:raw_materials/${metal}`, dust, 3, 4);
-  //     enrich(`#c:storage_blocks/raw_${metal}`, dust, 1, 12);
-  //     enrich(`#c:dirty_dusts/${metal}`, dust);
+  //     enrich(`2x ${dust}`, `#c:ores/${metal}`);
+  //     enrich(`4x ${dust}`, `3x #c:raw_materials/${metal}`);
+  //     enrich(`12x ${dust}`, `#c:storage_blocks/raw_${metal}`);
+  //     enrich(dust, `#c:dirty_dusts/${metal}`);
   //     if (debug) console.info(`Added ore processing for ${metal}.`);
   //   }
   // };
@@ -212,23 +92,30 @@ ServerEvents.recipes((e) => {
   //   oreProcessing(metal);
   // });
 
-  // reaction(
-  //   ['#minecraft:water', 1000],
-  //   ['#mekanism:oxygen', 1000],
-  //   ['mekanism:hydrogen', 1000],
-  //   [['#c:storage_blocks/coal', '#c:storage_blocks/charcoal'], 1],
-  //   ['modern_industrialization:sulfur_dust', 9],
-  //   900
-  // );
-  // reaction(['#minecraft:water', 100], ['#mekanism:oxygen', 100], ['mekanism:hydrogen', 100], [['#minecraft:coals'], 1], ['modern_industrialization:sulfur_dust', 1], 100);
-  // reaction(
-  //   ['#minecraft:water', 100],
-  //   ['#mekanism:oxygen', 100],
-  //   ['mekanism:hydrogen', 100],
-  //   [['#c:dusts/coal', '#c:dusts/charcoal'], 1],
-  //   ['modern_industrialization:sulfur_dust', 1],
-  //   100
-  // );
+  reaction(
+    '9x modern_industrialization:sulfur_dust',
+    [['#c:storage_blocks/coal', '#c:storage_blocks/charcoal'], 1],
+    '1000x #minecraft:water',
+    '1000x mekanism:hydrogen',
+    '1000x #mekanism:oxygen',
+    900
+  );
+  reaction(
+    '1x modern_industrialization:sulfur_dust',
+    [['#minecraft:coals'], 1],
+    '100x #minecraft:water',
+    '100x mekanism:hydrogen',
+    '100x #mekanism:oxygen',
+    100
+  );
+  reaction(
+    '1x modern_industrialization:sulfur_dust',
+    [['#c:dusts/coal', '#c:dusts/charcoal'], 1],
+    '100x #minecraft:water',
+    '100x mekanism:hydrogen',
+    '100x #mekanism:oxygen',
+    100
+  );
 
   e.remove({ mod: 'mekanism', output: 'mekanism:block_salt' });
 
