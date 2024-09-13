@@ -13,3 +13,30 @@ let debug = false;
 
 // Used for tooltips
 let holdShift = Text.gold('Hold [Shift] for more information');
+
+let _makeID = (mod, type, output, input) => {
+  output = output.split(':')[1].replace(' ', '_');
+  input = input.split(':')[1].replace(' ', '_');
+
+  //console.info(`ID: craftoria:${mod}/${type}/${output}_from_${input}`);
+  return `craftoria:${mod}/${type}/${output}_from_${input}`;
+};
+
+let colors = [
+  'white',
+  'orange',
+  'magenta',
+  'light_blue',
+  'yellow',
+  'lime',
+  'pink',
+  'gray',
+  'light_gray',
+  'cyan',
+  'purple',
+  'blue',
+  'brown',
+  'green',
+  'red',
+  'black',
+];
