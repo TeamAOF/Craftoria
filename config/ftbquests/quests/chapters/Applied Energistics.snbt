@@ -1373,29 +1373,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: [
-				"0B94435972292812"
-				"5619683321410B74"
-			]
-			id: "44F983F7D06C8DD1"
-			rewards: [{
-				count: 8
-				id: "4E7DFE2D779113D7"
-				item: {
-					count: 1
-					id: "ae2:engineering_processor"
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "479E05B14885832D"
-				item: { count: 1, id: "ae2:spatial_anchor" }
-				type: "item"
-			}]
-			x: 11.75d
-			y: 4.5d
-		}
-		{
 			dependencies: ["6F7A998802C99AD4"]
 			id: "0B94435972292812"
 			rewards: [{
@@ -2383,9 +2360,14 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "7B0CCB9B43A9116B"
-				item: { count: 1, id: "extendedae:entro_budding_fully" }
-				type: "item"
+				icon: {
+					id: "extendedae:entro_budding_fully"
+				}
+				id: "3BC634992A1E9BAD"
+				observe_type: 0
+				timer: 0L
+				to_observe: "extendedae:entro_budding_fully"
+				type: "observation"
 			}]
 			x: -12.25d
 			y: -4.5d
@@ -2760,7 +2742,6 @@
 				"150D032A0BE1BB76"
 				"4DAFFFDC31A78665"
 				"277F167EA7E9A759"
-				"44F983F7D06C8DD1"
 				"79F451F9C8D02A69"
 				"2BB266022C8BFC8C"
 				"4047F3E2AD081915"
