@@ -35,7 +35,8 @@ ServerEvents.tags('block', (e) => {
     '#lootr:containers',
   ]);
 
-  let colors = ['white', 'orange', 'magenta', 'light_blue', 'yellow', 'lime', 'pink', 'gray', 'light_gray', 'cyan', 'purple', 'blue', 'brown', 'green', 'red', 'black'];
+  e.add('ae2:blacklisted/spatial', ['justdirethings:time_crystal_budding_block']);
+  e.add('mekanism:cardboard_blacklist', ['justdirethings:time_crystal_budding_block']);
 
   colors.forEach((color) => {
     e.add('c:glass_blocks', `#chipped:${color}_stained_glass`);
