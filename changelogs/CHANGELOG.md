@@ -67,6 +67,7 @@ _NeoForge Loader 21.1.51_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 * Fixed PNC completionist quest dependency line being reversed.
 * Fixed #113 (by removing Chisels item, as Rechiseleds one is better)
 * Fixed smithing table using the incorrect GUI.
+* Fixed MOP water quests.
 * Fixed Blessed Flower recipe.
 
 ### Added Mods ✅
