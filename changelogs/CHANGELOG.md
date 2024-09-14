@@ -72,7 +72,6 @@ _NeoForge Loader 21.1.51_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
 ### Added Mods ✅
 
-  * [Better Tooltips](https://www.curseforge.com/minecraft/mc-mods/better-tooltips-neoforge)
   * [Crash Utilities](https://www.curseforge.com/minecraft/mc-mods/crash-utilities)
   * [Elytra Slot](https://www.curseforge.com/minecraft/mc-mods/elytra-slot)
   * [EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot)
