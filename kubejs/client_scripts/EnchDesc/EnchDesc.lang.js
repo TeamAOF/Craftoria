@@ -3,7 +3,7 @@ ClientEvents.lang('en_us', (event) => {
     'tooltip.enchdesc.hold': '§6Hold §eShift §6to view enchantment descriptions.§r',
     'tooltip.enchdesc.embellish': ' ◊ %s: %s',
 
-    _comment: 'Vanilla Enchantment Descriptions',
+    // Vanilla Enchantment Descriptions
     'enchantment.minecraft.protection.desc': 'Reduces damage from most sources.',
     'enchantment.minecraft.fire_protection.desc': 'Reduces the effects of fire damage. Also reduces the burn time when set on fire.',
     'enchantment.minecraft.feather_falling.desc': 'Reduces fall damage and ender pearl teleportation damage.',
@@ -46,5 +46,10 @@ ClientEvents.lang('en_us', (event) => {
     'enchantment.minecraft.density.desc': 'Increases the damage by fall height.',
     'enchantment.minecraft.breach.desc': 'Reduces armor effectiveness.',
     'enchantment.minecraft.wind_burst.desc': 'Smash attacks launch you upwards.',
+
+    // Eternal Starlight Enchantment Descriptions
+    'enchantment.eternal_starlight.fearless.desc': 'Pushes you towards the hit enemy.',
+    'enchantment.eternal_starlight.poisoning.desc': 'Poisons enemies that hit you.',
+    'enchantment.eternal_starlight.soul_snatcher.desc': 'Increases the damage of Chain of Souls.',
   });
 });
