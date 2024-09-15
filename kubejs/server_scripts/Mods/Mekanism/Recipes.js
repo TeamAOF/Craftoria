@@ -64,6 +64,8 @@ ServerEvents.recipes((e) => {
   // MI Compat
   enrich('2x modern_industrialization:lignite_coal', '#c:ores/lignite_coal');
   crush('modern_industrialization:lignite_coal_dust', '#c:gems/lignite_coal');
+  crush('modern_industrialization:brick_dust', 'minecraft:brick');
+  crush('4x modern_industrialization:brick_dust', 'minecraft:bricks');
   enrich('6x modern_industrialization:salt_dust', '#c:ores/salt');
   enrich('2x modern_industrialization:antimony_dust', '#c:ores/antimony');
   // Made Monazite/Bauxite be less efficient through Mekanism, as you *should* be using MI's machines for them, but adding them here for convenience.
