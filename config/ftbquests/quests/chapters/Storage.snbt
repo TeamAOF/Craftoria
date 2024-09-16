@@ -9,7 +9,6 @@
 	id: "1CFBA632673ABBFD"
 	images: [
 		{
-			alpha: 192
 			height: 6.0d
 			image: "expandedstorage:item/wood_to_iron_conversion_kit"
 			order: 1
@@ -37,14 +36,6 @@
 			width: 6.0d
 			x: -12.0d
 			y: -0.25d
-		}
-		{
-			height: 6.0d
-			image: "bankstorage:block/side"
-			rotation: 0.0d
-			width: 6.0d
-			x: 12.25d
-			y: 0.0d
 		}
 		{
 			alpha: 192
@@ -77,32 +68,71 @@
 			y: -0.25d
 		}
 		{
-			color: 270377
-			height: 14.0d
-			image: "ftbquests:textures/gui/background_white.png"
-			rotation: 0.0d
-			width: 25.0d
-			x: 1.75d
-			y: -18.5d
-		}
-		{
-			alpha: 192
-			height: 12.0d
-			image: "ae2:block/chiseled_quartz_block_side"
-			order: 1
-			rotation: 180.0d
-			width: 6.0d
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			color: 5855927
+			color: 1794724
 			height: 6.1d
 			image: "ftbquests:textures/gui/background_white.png"
 			rotation: 0.0d
 			width: 6.1d
 			x: 6.0d
 			y: 3.0d
+		}
+		{
+			alpha: 196
+			height: 7.0d
+			image: "ae2:block/fluix_block_v"
+			order: 1
+			rotation: 0.0d
+			width: 7.0d
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			alpha: 196
+			height: 7.0d
+			image: "ae2:block/fluix_block_v"
+			order: 1
+			rotation: 180.0d
+			width: 7.0d
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			height: 6.0d
+			image: "bankstorage:item/bank_5"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: 11.75d
+			y: 0.0d
+		}
+		{
+			height: 6.0d
+			image: "bankstorage:item/bank_2"
+			order: 2
+			rotation: 90.0d
+			width: 6.0d
+			x: 11.75d
+			y: 0.0d
+		}
+		{
+			height: 6.0d
+			image: "bankstorage:item/bank_4"
+			order: 3
+			rotation: 180.0d
+			width: 6.0d
+			x: 11.75d
+			y: 0.0d
+		}
+		{
+			alpha: 64
+			color: 0
+			height: 6.0d
+			image: "ftbquests:textures/gui/background_white.png"
+			order: 5
+			rotation: 0.0d
+			width: 6.0d
+			x: 11.75d
+			y: 0.0d
 		}
 	]
 	order_index: 4
@@ -1992,8 +2022,8 @@
 				item: { count: 1, id: "bankstorage:bank_2" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: -2.0d
+			x: 12.5d
+			y: 1.5d
 		}
 		{
 			id: "51B59A987F916C7A"
@@ -2011,8 +2041,8 @@
 				item: { count: 1, id: "bankstorage:bank_1" }
 				type: "item"
 			}]
-			x: 13.0d
-			y: -2.25d
+			x: 13.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["5F1950FCB04F3756"]
@@ -2031,8 +2061,8 @@
 				item: { count: 1, id: "bankstorage:bank_3" }
 				type: "item"
 			}]
-			x: 12.75d
-			y: -0.25d
+			x: 11.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["27FC5FFA7DAEF66E"]
@@ -2051,8 +2081,8 @@
 				item: { count: 1, id: "bankstorage:bank_4" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 0.0d
+			x: 10.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["07C9ADEB83F37079"]
@@ -2071,8 +2101,8 @@
 				item: { count: 1, id: "bankstorage:bank_5" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 1.0d
+			x: 10.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["294AEFB22AA5F440"]
@@ -2091,8 +2121,8 @@
 				item: { count: 1, id: "bankstorage:bank_7" }
 				type: "item"
 			}]
-			x: 12.75d
-			y: 2.0d
+			x: 12.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1EDE0BFC10042A6D"]
@@ -2111,8 +2141,8 @@
 				item: { count: 1, id: "bankstorage:bank_6" }
 				type: "item"
 			}]
-			x: 14.0d
-			y: 2.0d
+			x: 11.0d
+			y: 0.5d
 		}
 		{
 			id: "60A38769895A0B14"
@@ -2148,8 +2178,8 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
-			y: 1.0d
+			x: 13.0d
+			y: 0.5d
 		}
 		{
 			id: "3D986B40B86CB433"
@@ -2541,8 +2571,8 @@
 				item: { count: 1, id: "tankstorage:tank_1" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -2.25d
+			x: 10.0d
+			y: -1.75d
 		}
 		{
 			dependencies: ["0F0A89D4CEFB2275"]
@@ -2561,8 +2591,8 @@
 				item: { count: 1, id: "tankstorage:tank_2" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: -2.0d
+			x: 11.0d
+			y: -1.75d
 		}
 		{
 			dependencies: ["65CCA8E8407101F8"]
@@ -2581,8 +2611,8 @@
 				item: { count: 1, id: "tankstorage:tank_3" }
 				type: "item"
 			}]
-			x: 11.0d
-			y: -1.25d
+			x: 12.0d
+			y: -1.75d
 		}
 		{
 			dependencies: ["7EEA5EC182B90AF4"]
@@ -2601,8 +2631,8 @@
 				item: { count: 1, id: "tankstorage:tank_4" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			x: 13.0d
+			y: -1.75d
 		}
 		{
 			dependencies: ["1087E74A19B7905F"]
@@ -2621,8 +2651,8 @@
 				item: { count: 1, id: "tankstorage:tank_5" }
 				type: "item"
 			}]
-			x: 11.0d
-			y: 1.0d
+			x: 13.5d
+			y: -0.75d
 		}
 		{
 			dependencies: ["705B9227F0955134"]
@@ -2641,8 +2671,8 @@
 				item: { count: 1, id: "tankstorage:tank_6" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: 2.0d
+			x: 12.5d
+			y: -0.75d
 		}
 		{
 			dependencies: ["4C75B21628DC5FBA"]
@@ -2661,8 +2691,8 @@
 				item: { count: 1, id: "tankstorage:tank_7" }
 				type: "item"
 			}]
-			x: 11.25d
-			y: 2.0d
+			x: 11.5d
+			y: -0.75d
 		}
 		{
 			id: "53724D97E9DE80D5"
@@ -2698,8 +2728,8 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
-			y: -1.0d
+			x: 10.5d
+			y: -0.75d
 		}
 		{
 			id: "248200AA7C929D48"
