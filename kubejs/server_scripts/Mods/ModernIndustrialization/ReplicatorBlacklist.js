@@ -3,18 +3,30 @@ ServerEvents.tags('item', (e) => {
     /storage_cell/,
     /fe_.*_cell/,
     /portable_.*_cell/,
+    'ae2:view_cell',
+    'ae2:wireless_crafting_terminal',
+    'ae2wtlib:wireless_universal_terminal',
+    'megacells:bulk_item_cell',
+    'megacells:radioactive_chemical_cell',
+
     /pneumaticcraft:.*_(tank|chest)$/,
     /pneumaticcraft:.*drone/,
+    'pneumaticcraft:liquid_hopper',
+
     /sophisticated.*:.*(shulker|barrel|chest|backpack)/,
+
     /functionalstorage/,
+
+    /industrialforegoing:infinity_.*/,
+    'industrialforegoing:mob_imprisonment_tool',
+
+    /^easy_/,
+
     /mekanism:.*_(chest|tank|barrel)/,
     /mekanism:.*_bin$/,
     /mekanism:qio_drive/,
     /mekanism:(basic|advanced|elite|ultimate)_.*_factory/,
     /mekanism:.*_energy_cube$/,
-    /industrialforegoing:infinity_.*/,
-    /^easy_/,
-
     'mekanism:cardboard_box',
     'mekanism:qio_dashboard',
     'mekanism:portable_qio_dashboard',
@@ -56,7 +68,6 @@ ServerEvents.tags('item', (e) => {
     'mekanism:teleporter',
     'mekanism:gauge_dropper',
     'mekanism:robit',
-
     'mekanismgenerators:heat_generator',
     'mekanismgenerators:wind_generator',
     'mekanismgenerators:bio_generator',
@@ -64,25 +75,25 @@ ServerEvents.tags('item', (e) => {
     'mekanismgenerators:advanced_solar_generator',
     'mekanismgenerators:gas_burning_generator',
 
-    'ae2:view_cell',
-
     'occultism:storage_controller',
     'occultism:soul_gem',
     'occultism:soul_shard',
     'occultism:satchel',
 
     'ars_nouveau:mob_jar',
-
     'ars_elemental:curio_bag',
     'ars_elemental:caster_bag',
-
     'ars_additions:handy_haversack',
 
     'shrink:shrink_bottle',
 
-    'industrialforegoing:mob_imprisonment_tool',
-
     'integrateddynamics:energy_battery',
+
+    'justdirethings:creaturecatcher',
+    'justdirethings:inventory_holder',
+    'justdirethings:fluid_canister',
+    'justdirethings:fuel_canister',
+    'justdirethings:pocket_generator',
   ];
 
   let exclusions = [
