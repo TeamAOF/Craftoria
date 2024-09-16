@@ -43,16 +43,16 @@ ServerEvents.recipes((e) => {
       recipe.item_input.children.push(Ingredient.of(item).toJson());
     });
 
-    if (fluid_in.split(' ')[1].includes('#')) recipe.fluid_input.tag = fluid_in.split(' ')[1].replace('#', '');
-    else recipe.fluid_input.id = fluid_in.split(' ')[1];
-    recipe.fluid_input.amount = parseInt(fluid_in.split(' ')[0].replace('x', ''));
+    if (fluid_in.split('x ')[1].includes('#')) recipe.fluid_input.tag = fluid_in.split('x ')[1].replace('#', '');
+    else recipe.fluid_input.id = fluid_in.split('x ')[1];
+    recipe.fluid_input.amount = parseInt(fluid_in.split('x ')[0]);
 
-    if (chem_in.split(' ')[1].includes('#')) recipe.chemical_input.chemical = chem_in.split(' ')[1].replace('#', '');
-    else recipe.chemical_input.id = chem_in.split(' ')[1];
-    recipe.chemical_input.amount = parseInt(chem_in.split(' ')[0].replace('x', ''));
+    if (chem_in.split('x ')[1].includes('#')) recipe.chemical_input.chemical = chem_in.split('x ')[1].replace('#', '');
+    else recipe.chemical_input.id = chem_in.split('x ')[1];
+    recipe.chemical_input.amount = parseInt(chem_in.split('x ')[0]);
 
-    recipe.chemical_output.id = chem_out.split(' ')[1];
-    recipe.chemical_output.amount = parseInt(chem_out.split(' ')[0].replace('x', ''));
+    recipe.chemical_output.id = chem_out.split('x ')[1];
+    recipe.chemical_output.amount = parseInt(chem_out.split('x ')[0]);
 
     e.custom(recipe).id(makeID('reaction', item_out, item_in[0][0]));
   };

@@ -1,13 +1,13 @@
 ServerEvents.recipes((e) => {
   let miMixer = e.recipes.modern_industrialization.mixer;
 
-  let cobbleGen = (item) => {
+  let cobbleGen = (item, fluids) => {
     e.remove({ type: 'modern_industrialization:mixer', output: item });
     miMixer(2, 100)
       .itemIn(item, 0)
       .itemOut(item)
-      .fluidIn('minecraft:water', 1000, 0)
-      .fluidIn('minecraft:lava', 1000, 0)
+      .fluidIn(fluids[0] || 'minecraft:water', 1000, 0)
+      .fluidIn(fluids[1] || 'minecraft:lava', 1000, 0)
       .id(`craftoria:modern_industrialization/mixer/${item.split(':')[1]}`);
   };
 
