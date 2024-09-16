@@ -94,6 +94,9 @@ ServerEvents.tags('item', (e) => {
     'justdirethings:fluid_canister',
     'justdirethings:fuel_canister',
     'justdirethings:pocket_generator',
+
+    'modern_industrialization:replicator',
+    'modern_industrialization:helium_plasma_bucket',
   ];
 
   let exclusions = [
