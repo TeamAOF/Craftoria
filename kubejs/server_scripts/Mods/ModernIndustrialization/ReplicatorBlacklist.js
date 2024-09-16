@@ -1,6 +1,7 @@
 ServerEvents.tags('item', (e) => {
   let additions = [
     /storage_cell/,
+    /fe_.*_cell/,
     /portable_.*_cell/,
     /pneumaticcraft:.*_(tank|chest)$/,
     /pneumaticcraft:.*drone/,
@@ -10,7 +11,9 @@ ServerEvents.tags('item', (e) => {
     /mekanism:.*_bin$/,
     /mekanism:qio_drive/,
     /mekanism:(basic|advanced|elite|ultimate)_.*_factory/,
-    /mekanism:(basic|advanced|elite|ultimate)_energy_cube/,
+    /mekanism:.*_energy_cube$/,
+    /industrialforegoing:infinity_.*/,
+    /^easy_/,
 
     'mekanism:cardboard_box',
     'mekanism:qio_dashboard',
@@ -51,6 +54,8 @@ ServerEvents.tags('item', (e) => {
     'mekanism:modification_station',
     'mekanism:antiprotonic_nucleosynthesizer',
     'mekanism:teleporter',
+    'mekanism:gauge_dropper',
+    'mekanism:robit',
 
     'mekanismgenerators:heat_generator',
     'mekanismgenerators:wind_generator',
@@ -74,11 +79,16 @@ ServerEvents.tags('item', (e) => {
     'ars_additions:handy_haversack',
 
     'shrink:shrink_bottle',
+
+    'industrialforegoing:mob_imprisonment_tool',
+
+    'integrateddynamics:energy_battery',
   ];
 
   let exclusions = [
     /functionalstorage:.*(upgrade|downgrade|tool|controller)/,
     /mekanism:dynamic_(tank|valve)/,
+    'industrialforegoing:infinity_charger',
     'mekanism:scuba_tank',
     'mekanism:radioactive_waste_barrel',
   ];
