@@ -26,15 +26,6 @@
 			y: 0.0d
 		}
 		{
-			color: 15453067
-			height: 6.0d
-			image: "ftbquests:textures/gui/background_white.png"
-			rotation: 0.0d
-			width: 6.0d
-			x: -11.0d
-			y: 0.0d
-		}
-		{
 			height: 6.0d
 			image: "laserio:textures/gui/buttons/settings.png"
 			order: 1
@@ -373,7 +364,8 @@
 			y: 0.25d
 		}
 		{
-			color: 15453067
+			alpha: 192
+			color: 13704228
 			height: 6.0d
 			image: "ftbquests:textures/gui/background_white.png"
 			rotation: 0.0d
@@ -435,15 +427,6 @@
 			width: 1.5d
 			x: 7.25d
 			y: -5.25d
-		}
-		{
-			color: 15453067
-			height: 6.0d
-			image: "ftbquests:textures/gui/background_white.png"
-			rotation: 0.0d
-			width: 6.0d
-			x: 1.0d
-			y: 0.0d
 		}
 		{
 			alpha: 128
@@ -720,6 +703,15 @@
 			x: -4.75d
 			y: -5.25d
 		}
+		{
+			color: 11499527
+			height: 6.0d
+			image: "ftbquests:textures/gui/background_white.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: -11.0d
+			y: 0.0d
+		}
 	]
 	order_index: 3
 	quest_links: [ ]
@@ -738,8 +730,8 @@
 				item: { count: 1, id: "pylons:expulsion_pylon" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.5d
+			x: -3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3B429F0556B85DF0"]
@@ -756,7 +748,7 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			id: "18416E8B02E02817"
@@ -771,8 +763,8 @@
 				item: { count: 1, id: "pylons:harvester_pylon" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: 3.5d
+			x: -4.75d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0E8B36B67840AADD"]
@@ -788,8 +780,8 @@
 				item: { count: 1, id: "pylons:interdiction_pylon" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 3.5d
+			x: -1.25d
+			y: 4.0d
 		}
 		{
 			id: "71B6DA56399050E1"
@@ -804,8 +796,8 @@
 				item: { count: 1, id: "shrink:shrinking_device" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: 3.5d
+			x: -6.5d
+			y: 4.0d
 		}
 		{
 			id: "5DA3F6FF2AE6C081"
@@ -821,7 +813,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1A23087241E329A3"]
