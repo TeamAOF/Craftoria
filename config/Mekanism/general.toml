@@ -93,7 +93,7 @@ maxSolarNeutronActivatorRate = 64
 #Settings for configuring Radiation
 [radiation]
 	#Enable worldwide radiation effects.
-	enabled = true
+	enabled = false
 	#The radius of chunks checked when running radiation calculations. The algorithm is efficient, but don't abuse it by making this crazy high.
 	#Range: 1 ~ 100
 	chunkCheckRadius = 5

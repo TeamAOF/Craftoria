@@ -122,7 +122,7 @@
 	#Settings for configuring Fission Reactor Meltdowns.
 	[fission_reactor.meltdowns]
 		#Whether catastrophic meltdowns can occur from Fission Reactors. If this is disabled, instead of melting down the reactor will force turn itself off and not be able to be turned back on until the damage level has returned to safe levels.
-		enabled = true
+		enabled = false
 		#The radius of the explosion that occurs from a meltdown.
 		#Range: 1.0 ~ 500.0
 		radius = 8.0
