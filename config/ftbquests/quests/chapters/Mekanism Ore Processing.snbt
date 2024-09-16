@@ -575,6 +575,23 @@
 		}
 		{
 			dependencies: ["2FC0A2D07CC2DFC7"]
+			icon: {
+				components: {
+					"mekanism:fluids": {
+						fluid_tanks: [{
+							amount: 32000
+							id: "mekanism:brine"
+						}]
+					}
+					"mekanism:owner": [I;
+						-1675135548
+						-1636741531
+						-1909550505
+						-472224227
+					]
+				}
+				id: "mekanism:basic_fluid_tank"
+			}
 			id: "53EC4A657655A7D5"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -583,10 +600,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "5B46EAA815EC6493"
-				item: { components: { "mekanism:fluids": { fluid_tanks: [{ amount: 32000, id: "mekanism:brine" }] }, "mekanism:owner": [I; -1675135548, -1636741531, -1909550505, -472224227 ] }, count: 1, id: "mekanism:basic_fluid_tank" }
-				match_components: "strict"
-				type: "item"
+				id: "1C7862138CEB56D7"
+				type: "checkmark"
 			}]
 			x: 10.0d
 			y: -1.5d
