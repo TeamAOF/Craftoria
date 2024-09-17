@@ -4,26 +4,30 @@
 	chapter.0597AF3E8B286CFA.title: "Ars Nouveau"
 	chapter.0CF7A598566497C7.title: "&6Completionist"
 	chapter.1AE9F15DF280DC77.title: "Side Quests"
-	chapter.1CFBA632673ABBFD.title: "&eStorage"
+	chapter.1CFBA632673ABBFD.title: "Organized Storage"
 	chapter.26E59C8DBA7F6FE3.title: "Monster Mayhem"
-	chapter.2A4C06811555B5D0.title: "Relics and Artifacts"
+	chapter.2A4C06811555B5D0.title: "Relics \\& Artifacts"
+	chapter.2B64DA0213E9FC7B.title: "Personal Storage"
 	chapter.3188AC6C440F7520.title: "&aGetting Started"
 	chapter.33E8845C982DC0F2.title: "Mekanism: Ore Processing"
 	chapter.37D7FA3DAE36E099.title: "Just Dire Things"
 	chapter.40CEA39FE5F5225D.title: "Mekanism"
-	chapter.42032FCAB6197EE7.title: "&cTools and Armory"
+	chapter.42032FCAB6197EE7.title: "&cArmory"
+	chapter.4551BA86097AB1B5.title: "Trading \\& Agriculture"
 	chapter.5A3894BACC5E8994.title: "Theurgy"
 	chapter.5BF964A2F3CAA6E8.title: "&9Utilities"
 	chapter.6A5B4531418CC297.title: "Modern Industrialization"
 	chapter.70FFEE37C7ABD690.title: "Applied Energistics"
 	chapter.7269FD2B5B0F0424.title: "Occultism"
 	chapter.75719C45F41E8B00.title: "Dimensions"
+	chapter.7B329826EADF9720.title: "Gadgets"
 	chapter_group.01BEAD68B1D370D3.title: "&8&lMagic&r &d✡"
 	chapter_group.066C799B2F5452CD.title: "&8&lTechnology&r &e⚡"
 	chapter_group.07A79347BA55DCA4.title: "&8&lAdventure&r &a🗡"
 	chapter_group.124F40AB6DD8433B.title: "Storage"
 	chapter_group.14D8AC2C1E9C819F.title: "Powah!!!"
 	chapter_group.3F2E4C487BEC262A.title: "&8&lMisc&r &9⚒"
+	chapter_group.49042A4D0EC96D55.title: "Storage"
 	file.0000000000000001.title: "&lCraftoria"
 	quest.000F7897FF9ED7DC.quest_desc: ["There are &a4 stages&f of growth, just like &bCertus Quartz Clusters&f. While in the &afirst three stages&f you will get &bEntro Dust&f, But in the &afourth stage&f you can get &bEntroized Crystals&f."]
 	quest.00237AB9C48C8A9B.quest_desc: ["The &bMatter Condencer &fwill allow you to &6make &bMatter Balls&f for the &bPaint Gun&f, and &6make&b Singularities &fat the cost of &aitem entities&f."]
@@ -277,7 +281,6 @@
 	]
 	quest.0AC7D844C55119E1.title: "Wrench"
 	quest.0AD392F5527093C2.quest_desc: ["Used as a housing to hold MEGA Storage Component, for Fluid Storage."]
-	quest.0AD53F3BDA8DB601.title: "Modern Industrialization"
 	quest.0B2FF8169FD3812D.quest_desc: [
 		"  &bSteel Hatches&r have &6double the capacity of bronze hatches&r, increasing one inventory slot to 2, and increasing a multi-block's max steam usage rate from 2 EU/t to 4 EU/t. As long as there is a single steel fluid input hatch receiving steam, your entire multi-block is upgraded to a \"steel tier.\""
 		""
@@ -1132,7 +1135,6 @@
 	quest.24B44DAA8C43CF11.title: "Configurator"
 	quest.24E5FA9129987168.quest_desc: ["Exact same thing as the &bWireless Terminal&f, but this one has a &bCrafting Interface&f in it!"]
 	quest.24E5FA9129987168.title: "Wireless Crafting Terminal"
-	quest.2506FE8426272A1A.title: "Applied Energistics"
 	quest.250D1E2BFE6E0D50.quest_desc: [
 		"  Upgrade those &bLarge Steam Boilers&r already! "
 		""
@@ -1358,7 +1360,6 @@
 		"{image:justdirethings:block/blockswappert2_side width:100 height:100 align:center}"
 	]
 	quest.2CE7390F7567D9E2.quest_subtitle: "Portals in Machine Form"
-	quest.2CE943AD7CB99FF8.title: "Backpacks"
 	quest.2D2101F97024F2E0.quest_subtitle: "Congratulations! You've completed Powah!"
 	quest.2D4170B5AD28DCBF.quest_desc: [
 		"  The best single block &bDiesel Generator&r you can make. &6It'll output up to 1024 eu/t&r from any of the various fluids listed in your REI."
@@ -2081,7 +2082,6 @@
 		"It can also be &6placed&r in a &8Furnace&r."
 	]
 	quest.46C3D171AB4AA489.title: "&3Kerosene"
-	quest.4709E4CC589FF807.title: "Mekanism"
 	quest.4722157BC8D3B965.quest_desc: [
 		"  A sleek bronze casing with a vicious spinning blade inside will give you even &6better cutting ratios&r than you ever experienced using your &bForge Hammer&r. &aTime for extra bolts, gears, rings, and rods!&r"
 		""
@@ -3017,6 +3017,7 @@
 	quest.6D18BFC48A82E53E.quest_desc: ["Through the power of gravity, &6throwing&b 1 Gold Ingot, 1 Lapis Lazuli, and 1 Entro dust&f you will obtain&b 1 Entro Infused Ingot&f."]
 	quest.6D702C00A519AD12.quest_desc: ["The &bElite Purifying Factory&r allows you to process up to &a7&r purifying recipes at once."]
 	quest.6D702C00A519AD12.title: "Elite Purifying Factory"
+	quest.6DDA86A3B4C0ACC1.title: "Mining Gadget"
 	quest.6DED76B2F4AFD02F.quest_desc: ["&bDry ice &fis extremely rare to find underground, but you can make it if you have enough &bpower and ice."]
 	quest.6DED76B2F4AFD02F.quest_subtitle: "A little cold to the touch"
 	quest.6DED76B2F4AFD02F.title: "Dry Ice"
@@ -3344,6 +3345,10 @@
 	quest.78ACE4A0D8338FD1.title: "Gunpowder"
 	quest.78B4459314C86937.quest_desc: ["The &bArcane Pedestal&r is &6used&r around the &bRitual Brazier&r and &bEnchanting Apparatus&r, you can put &68&r around each."]
 	quest.78B4459314C86937.title: "Arcane Pedestal"
+	quest.78B534077889E357.quest_desc: [
+		""
+		"{image:expandedstorage:item/diamond_to_obsidian_conversion_kit width:100 height:100 align:center}"
+	]
 	quest.78C746829110FC35.quest_desc: ["The &bLaser&r is an advanced form of &eenergy transmission&r that &6produces&r an immensely strong beam of photons that can &4damage&r &2entities&r, &cignite TNT&r, &7break blocks&r, and even &eassist in starting&r your future &9reactor&r."]
 	quest.78C746829110FC35.title: "Laser"
 	quest.78EDBDED3BFEC145.quest_desc: [
@@ -3542,7 +3547,6 @@
 	]
 	quest.7DA234839458B333.title: "Flamethrower"
 	quest.7DD81584380EE8F7.quest_desc: ["A &bwand &fused to link &6Mercurial Logistics"]
-	quest.7E0381829E73723E.title: "Banks and Tanks"
 	quest.7E194859BAD7B5A8.quest_subtitle: "Applies potion effect to subjects in range"
 	quest.7E49DB806DD04701.quest_desc: [""]
 	quest.7ED9955750255A69.quest_subtitle: "Complete the quest chapter."

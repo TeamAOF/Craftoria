@@ -1,262 +1,465 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "Tools and Armory"
+	filename: "Armory"
 	group: ""
 	icon: {
 		id: "minecraft:smithing_table"
 	}
 	id: "42032FCAB6197EE7"
-	order_index: 5
+	images: [
+		{
+			alpha: 192
+			height: 6.0d
+			image: "advancednetherite:block/netherite_gold_block"
+			rotation: 0.0d
+			width: 6.0d
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			height: 7.0d
+			image: "pneumaticcraft:item/upgrades/upgrade_matrix"
+			rotation: 0.0d
+			width: 7.0d
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			alpha: 192
+			height: 6.0d
+			image: "aquaculture:block/neptunium_block1"
+			rotation: 0.0d
+			width: 6.0d
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.6000000000000014d
+			y: 1.5500000000000007d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.1000000000000014d
+			y: 2.0500000000000007d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.600000000000001d
+			y: 1.5500000000000007d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.100000000000001d
+			y: 0.05000000000000071d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0999999999999996d
+			y: 0.05000000000000071d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.6000000000000014d
+			y: -1.4500000000000002d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.1000000000000014d
+			y: -1.9500000000000002d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.600000000000001d
+			y: -1.4500000000000002d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.5d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.5d
+			x: 3.1000000000000014d
+			y: 0.05000000000000071d
+		}
+		{
+			height: 6.0d
+			image: "pneumaticcraft:item/pressure_gauge"
+			rotation: 0.0d
+			width: 6.0d
+			x: 3.0d
+			y: -0.05000000000000071d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.5d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.5d
+			x: 8.600000000000001d
+			y: 0.15000000000000036d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.600000000000001d
+			y: 0.05000000000000071d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.100000000000001d
+			y: -1.4500000000000002d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.600000000000001d
+			y: -1.9500000000000002d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.100000000000001d
+			y: -1.4500000000000002d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.600000000000001d
+			y: 0.05000000000000071d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.100000000000001d
+			y: 1.5500000000000007d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.600000000000001d
+			y: 2.1500000000000004d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.100000000000001d
+			y: 1.5500000000000007d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.4d
+			y: 0.09999999999999964d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.9000000000000004d
+			y: -1.4000000000000004d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.4000000000000004d
+			y: -1.9000000000000004d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.9000000000000004d
+			y: -1.4000000000000004d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.40000000000000036d
+			y: 0.09999999999999964d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.9000000000000004d
+			y: 1.5999999999999996d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.4000000000000004d
+			y: 2.0999999999999996d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.9000000000000004d
+			y: 1.5999999999999996d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.5d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.5d
+			x: -2.4000000000000004d
+			y: 0.09999999999999964d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.5d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.5d
+			x: -7.9d
+			y: 0.09999999999999964d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.4d
+			y: -1.4000000000000004d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.9d
+			y: -1.9000000000000004d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.4d
+			y: -1.4000000000000004d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.9d
+			y: 0.09999999999999964d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.4d
+			y: 1.5999999999999996d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.9d
+			y: 2.0999999999999996d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.4d
+			y: 1.5999999999999996d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.9d
+			y: 0.09999999999999964d
+		}
+		{
+			height: 6.0d
+			image: "mekanism:block/advanced_induction_provider_led"
+			order: 5
+			rotation: 0.0d
+			width: 6.0d
+			x: -8.1d
+			y: 0.0d
+		}
+		{
+			height: 6.0d
+			image: "mekanism:block/advanced_induction_cell"
+			order: 3
+			rotation: 0.0d
+			width: 6.0d
+			x: -8.1d
+			y: 0.0d
+		}
+	]
+	order_index: 4
 	quest_links: [ ]
 	quests: [
-		{
-			dependencies: ["68107A111627BD77"]
-			id: "6DDA86A3B4C0ACC1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "54BBDD0B3342E101"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [
-				{
-					id: "7D7A6634C0D8537A"
-					item: { count: 1, id: "mininggadgets:mininggadget_simple" }
-					type: "item"
-				}
-				{
-					id: "081418C15BBAAC7D"
-					item: { count: 1, id: "mininggadgets:mininggadget_fancy" }
-					type: "item"
-				}
-				{
-					id: "417F8434C955D5E1"
-					item: { count: 1, id: "mininggadgets:mininggadget" }
-					type: "item"
-				}
-			]
-			x: -4.0d
-			y: 0.0d
-		}
-		{
-			id: "68107A111627BD77"
-			tasks: [{
-				id: "14A214A6FC56CC22"
-				item: { count: 1, id: "mininggadgets:modificationtable" }
-				type: "item"
-			}]
-			x: -6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["68107A111627BD77"]
-			id: "234801C47F9B130A"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "29E3CCD2BDADD9FF"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [
-				{
-					id: "6872850449233523"
-					item: { count: 1, id: "mininggadgets:upgrade_range_1" }
-					type: "item"
-				}
-				{
-					id: "15812A4AA1F00729"
-					item: { count: 1, id: "mininggadgets:upgrade_range_2" }
-					type: "item"
-				}
-				{
-					id: "5B374043F92971B5"
-					item: { count: 1, id: "mininggadgets:upgrade_range_3" }
-					type: "item"
-				}
-			]
-			x: -4.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["68107A111627BD77"]
-			id: "44B610EE888A88A5"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5F7E2F5B393B2F88"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [
-				{
-					id: "593E13BF088CB876"
-					item: { count: 1, id: "mininggadgets:upgrade_battery_1" }
-					type: "item"
-				}
-				{
-					id: "10B9A0A06F173CE8"
-					item: { count: 1, id: "mininggadgets:upgrade_battery_2" }
-					type: "item"
-				}
-				{
-					id: "2F9831521A41D67C"
-					item: { count: 1, id: "mininggadgets:upgrade_battery_3" }
-					type: "item"
-				}
-			]
-			x: -4.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["68107A111627BD77"]
-			id: "3CDFF805003571A9"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "095552C99BDCF3FC"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [
-				{
-					id: "20C06B6906DEC51E"
-					item: { count: 1, id: "mininggadgets:upgrade_efficiency_1" }
-					type: "item"
-				}
-				{
-					id: "687221A6F23DF6EB"
-					item: { count: 1, id: "mininggadgets:upgrade_efficiency_2" }
-					type: "item"
-				}
-				{
-					id: "1634F4A430C55208"
-					item: { count: 1, id: "mininggadgets:upgrade_efficiency_3" }
-					type: "item"
-				}
-				{
-					id: "427B80FEABC12000"
-					item: { count: 1, id: "mininggadgets:upgrade_efficiency_4" }
-					type: "item"
-				}
-				{
-					id: "2294E5FC5F47DA22"
-					item: { count: 1, id: "mininggadgets:upgrade_efficiency_5" }
-					type: "item"
-				}
-			]
-			x: -7.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["68107A111627BD77"]
-			id: "4F61F8FA290B2B6D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "48814222936F12EA"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [
-				{
-					id: "4170ED68E12BC30A"
-					item: { count: 1, id: "mininggadgets:upgrade_fortune_1" }
-					type: "item"
-				}
-				{
-					id: "772C14BFB15B462C"
-					item: { count: 1, id: "mininggadgets:upgrade_fortune_2" }
-					type: "item"
-				}
-				{
-					id: "51C2642CC3BADAB8"
-					item: { count: 1, id: "mininggadgets:upgrade_fortune_3" }
-					type: "item"
-				}
-			]
-			x: -6.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["68107A111627BD77"]
-			id: "0C907D9AD9A6823A"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "32BD92A491222AF1"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [
-				{
-					id: "70A894AB28F8B212"
-					item: { count: 1, id: "mininggadgets:upgrade_light_placer" }
-					type: "item"
-				}
-				{
-					id: "07466066E464F127"
-					item: { count: 1, id: "mininggadgets:upgrade_freezing" }
-					type: "item"
-				}
-			]
-			x: -8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["68107A111627BD77"]
-			id: "0295E32828863704"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6E56F78D1109B827"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [
-				{
-					id: "02226591D8828CCC"
-					item: { count: 1, id: "mininggadgets:upgrade_silk" }
-					type: "item"
-				}
-				{
-					id: "43D82D94AAA6F6E7"
-					item: { count: 1, id: "mininggadgets:upgrade_void_junk" }
-					type: "item"
-				}
-				{
-					id: "2B545D14110B0F6C"
-					item: { count: 1, id: "mininggadgets:upgrade_magnet" }
-					type: "item"
-				}
-			]
-			x: -7.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["68107A111627BD77"]
-			id: "7402CBB0750E58DB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2B16F8B4491EE77E"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [
-				{
-					id: "0D1D1945E8E24B2E"
-					item: { count: 1, id: "mininggadgets:upgrade_size_1" }
-					type: "item"
-				}
-				{
-					id: "3880A9AB2BD1B088"
-					item: { count: 1, id: "mininggadgets:upgrade_size_2" }
-					type: "item"
-				}
-				{
-					id: "2FBF8CA503550044"
-					item: { count: 1, id: "mininggadgets:upgrade_size_3" }
-					type: "item"
-				}
-			]
-			x: -6.0d
-			y: -2.0d
-		}
 		{
 			dependencies: ["3CEBC51DB3555C3E"]
 			icon: {
@@ -294,7 +497,7 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
+			x: 7.0d
 			y: -1.5d
 		}
 		{
@@ -334,7 +537,7 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
@@ -374,7 +577,7 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
+			x: 7.0d
 			y: 1.5d
 		}
 		{
@@ -414,7 +617,7 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: 8.5d
 			y: 2.0d
 		}
 		{
@@ -456,7 +659,7 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: 8.5d
 			y: -2.0d
 		}
 		{
@@ -498,7 +701,7 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
+			x: 10.0d
 			y: -1.5d
 		}
 		{
@@ -540,7 +743,7 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
@@ -582,20 +785,22 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
+			x: 10.0d
 			y: 1.5d
 		}
 		{
+			hide_dependent_lines: true
 			icon: {
 				id: "minecraft:netherite_ingot"
 			}
 			id: "3CEBC51DB3555C3E"
+			size: 1.5d
 			tasks: [{
 				id: "726D79739381A120"
 				item: { count: 1, id: "minecraft:netherite_ingot" }
 				type: "item"
 			}]
-			x: 0.0d
+			x: 8.5d
 			y: 0.0d
 		}
 		{
@@ -632,7 +837,7 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
+			x: -2.5d
 			y: -2.0d
 		}
 		{
@@ -652,7 +857,7 @@
 				item: { count: 1, id: "aquaculture:neptunium_fishing_rod" }
 				type: "item"
 			}]
-			x: 4.5d
+			x: -4.0d
 			y: 1.5d
 		}
 		{
@@ -679,7 +884,7 @@
 					type: "item"
 				}
 			]
-			x: 4.5d
+			x: -4.0d
 			y: -1.5d
 		}
 		{
@@ -699,7 +904,7 @@
 				item: { count: 1, id: "aquaculture:neptunium_helmet" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: -1.0d
 			y: -1.5d
 		}
 		{
@@ -719,7 +924,7 @@
 				item: { count: 1, id: "aquaculture:neptunium_chestplate" }
 				type: "item"
 			}]
-			x: 8.0d
+			x: -0.5d
 			y: 0.0d
 		}
 		{
@@ -739,7 +944,7 @@
 				item: { count: 1, id: "aquaculture:neptunium_leggings" }
 				type: "item"
 			}]
-			x: 7.5d
+			x: -1.0d
 			y: 1.5d
 		}
 		{
@@ -759,7 +964,7 @@
 				item: { count: 1, id: "aquaculture:neptunium_boots" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: -2.5d
 			y: 2.0d
 		}
 		{
@@ -779,10 +984,11 @@
 				item: { count: 1, id: "aquaculture:neptunium_bow" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: -4.5d
 			y: 0.0d
 		}
 		{
+			hide_dependent_lines: true
 			id: "0F5FE44BAC4E06D4"
 			rewards: [{
 				count: 32
@@ -793,12 +999,13 @@
 				}
 				type: "item"
 			}]
+			size: 1.5d
 			tasks: [{
 				id: "5F902C39A22782D5"
 				item: { count: 1, id: "aquaculture:neptunium_ingot" }
 				type: "item"
 			}]
-			x: 6.0d
+			x: -2.5d
 			y: 0.0d
 		}
 		{
@@ -809,8 +1016,8 @@
 				item: { count: 1, id: "mekanism:meka_tool" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.0d
+			x: -8.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["25E82163F1B94439"]
@@ -820,8 +1027,8 @@
 				item: { count: 1, id: "mekanism:mekasuit_helmet" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 4.5d
+			x: -9.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["25E82163F1B94439"]
@@ -831,8 +1038,8 @@
 				item: { count: 1, id: "mekanism:mekasuit_bodyarmor" }
 				type: "item"
 			}]
-			x: -5.0d
-			y: 6.0d
+			x: -10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["25E82163F1B94439"]
@@ -842,8 +1049,8 @@
 				item: { count: 1, id: "mekanism:mekasuit_pants" }
 				type: "item"
 			}]
-			x: -4.5d
-			y: 7.5d
+			x: -9.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["25E82163F1B94439"]
@@ -853,8 +1060,8 @@
 				item: { count: 1, id: "mekanism:mekasuit_boots" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 8.0d
+			x: -8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["25E82163F1B94439"]
@@ -864,8 +1071,8 @@
 				item: { count: 1, id: "mekanism:atomic_disassembler" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.5d
+			x: -6.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["25E82163F1B94439"]
@@ -875,8 +1082,8 @@
 				item: { count: 1, id: "mekanism:flamethrower" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: 6.0d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["25E82163F1B94439"]
@@ -886,28 +1093,32 @@
 				item: { count: 1, id: "mekanism:electric_bow" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 7.5d
+			x: -6.5d
+			y: 1.5d
 		}
 		{
+			hide_dependent_lines: true
 			id: "25E82163F1B94439"
+			size: 1.5d
 			tasks: [{
 				id: "5BDA05B37BF3D4CA"
 				item: { count: 1, id: "mekanism:hdpe_sheet" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: 6.0d
+			x: -8.0d
+			y: 0.0d
 		}
 		{
+			hide_dependent_lines: true
 			id: "77935E3027FB3EDB"
+			size: 1.5d
 			tasks: [{
 				id: "1F6BCAEAC636B24F"
 				item: { count: 1, id: "pneumaticcraft:ingot_iron_compressed" }
 				type: "item"
 			}]
 			x: 3.0d
-			y: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["77935E3027FB3EDB"]
@@ -918,7 +1129,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["77935E3027FB3EDB"]
@@ -929,7 +1140,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["77935E3027FB3EDB"]
@@ -940,7 +1151,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["77935E3027FB3EDB"]
@@ -951,7 +1162,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["77935E3027FB3EDB"]
@@ -962,7 +1173,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["77935E3027FB3EDB"]
@@ -973,7 +1184,7 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["77935E3027FB3EDB"]
@@ -984,7 +1195,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 7.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["77935E3027FB3EDB"]
@@ -995,7 +1206,7 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: 4.5d
+			y: -1.5d
 		}
 	]
 }
