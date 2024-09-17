@@ -1,0 +1,818 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "personal_storage"
+	group: "49042A4D0EC96D55"
+	id: "2B64DA0213E9FC7B"
+	images: [
+		{
+			height: 6.0d
+			image: "expandedstorage:item/wood_to_iron_conversion_kit"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			alpha: 192
+			height: 6.0d
+			image: "modern_industrialization:block/bronze_barrel_side"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			height: 6.0d
+			image: "sophisticatedbackpacks:item/stack_upgrade_tier_2"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: -18.75d
+			y: -1.75d
+		}
+		{
+			height: 6.0d
+			image: "mekanism:ctm/superheating_element_on"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			alpha: 192
+			height: 6.0d
+			image: "functionalstorage:block/ender_side"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			alpha: 192
+			color: 2193095
+			height: 6.1d
+			image: "ftbquests:textures/gui/background_white.png"
+			rotation: 0.0d
+			width: 6.1d
+			x: -18.75d
+			y: -1.75d
+		}
+		{
+			color: 1794724
+			height: 6.1d
+			image: "ftbquests:textures/gui/background_white.png"
+			rotation: 0.0d
+			width: 6.1d
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			alpha: 196
+			height: 7.0d
+			image: "ae2:block/fluix_block_v"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			alpha: 196
+			height: 7.0d
+			image: "ae2:block/fluix_block_v"
+			order: 1
+			rotation: 180.0d
+			width: 6.0d
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			height: 6.0d
+			image: "bankstorage:item/bank_5"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: 11.75d
+			y: 0.0d
+		}
+		{
+			height: 6.0d
+			image: "bankstorage:item/bank_2"
+			order: 2
+			rotation: 90.0d
+			width: 6.0d
+			x: 11.75d
+			y: 0.0d
+		}
+		{
+			height: 6.0d
+			image: "bankstorage:item/bank_4"
+			order: 3
+			rotation: 180.0d
+			width: 6.0d
+			x: 11.75d
+			y: 0.0d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -20.25d
+			y: -3.25d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.75d
+			y: -3.25d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.75d
+			y: 0.25d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -20.25d
+			y: 0.25d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -18.5d
+			y: -3.25d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.1d
+			y: 1.1d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.4d
+			y: 1.6d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.9d
+			y: 1.6d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.1d
+			y: 1.1d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.1d
+			y: 2.3d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.1d
+			y: 4.1d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.9d
+			y: 5.1d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.4d
+			y: 5.1d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.3d
+			y: 3.3d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.8d
+			y: 3.3d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.2d
+			y: 4.1d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.1d
+			y: 2.5d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.1d
+			y: 0.8d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.6d
+			y: 1.8d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.6d
+			y: 1.8d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.6d
+			y: 1.8d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.1d
+			y: 0.8d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.6d
+			y: 1.8d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.1d
+			y: 0.8d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.1d
+			y: 0.8d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.6d
+			y: -0.7d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 13.1d
+			y: -1.7d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.1d
+			y: -1.7d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.1d
+			y: -1.7d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.1d
+			y: -1.7d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.6d
+			y: -0.7d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.6d
+			y: -0.7d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.6d
+			y: -0.7d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.1d
+			y: -4.9d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.1d
+			y: -4.9d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.1d
+			y: -4.4d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.1d
+			y: -4.4d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.1d
+			y: -3.7d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.1d
+			y: -3.7d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.1d
+			y: -3.9d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.05d
+			y: -2.95d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.1d
+			y: -2.9d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.1d
+			y: -2.9d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.1d
+			y: -1.9d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.1d
+			y: -0.9d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.2d
+			y: -1.4d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.1d
+			y: -2.2d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.2d
+			y: -0.9d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.2d
+			y: -1.4d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.1d
+			y: -2.2d
+		}
+		{
+			alpha: 192
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.2d
+			y: -0.9d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.9d
+			y: 2.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.9d
+			y: 1.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.9d
+			y: 1.8d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.9d
+			y: 1.8d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.9d
+			y: 5.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.9d
+			y: 3.8d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.9d
+			y: 2.6d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.8d
+			y: 1.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.9d
+			y: 5.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.9d
+			y: 3.8d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.9d
+			y: 2.6d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.9d
+			y: 1.1d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+}
