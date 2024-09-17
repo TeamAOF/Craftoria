@@ -278,8 +278,8 @@
 				item: { count: 1, id: "mekanism:advanced_induction_cell" }
 				type: "item"
 			}]
-			x: 52.71d
-			y: -4.38d
+			x: 34.475d
+			y: 2.92d
 		}
 		{
 			dependencies: ["436C9C6FF59C4FD5"]
@@ -295,8 +295,8 @@
 				item: { count: 1, id: "mekanism:advanced_induction_provider" }
 				type: "item"
 			}]
-			x: 54.17d
-			y: -4.38d
+			x: 40.315d
+			y: 2.92d
 		}
 		{
 			dependencies: ["57A8D67858693F4A"]
@@ -439,7 +439,7 @@
 				item: { count: 1, id: "mekanismgenerators:advanced_solar_generator" }
 				type: "item"
 			}]
-			x: 26.25d
+			x: 24.79d
 			y: -4.38d
 		}
 		{
@@ -475,6 +475,23 @@
 			}]
 			x: 10.21d
 			y: -2.92d
+		}
+		{
+			dependencies: ["681A718388A97FFC"]
+			id: "641CFC5C8187AC56"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "045620DFD4BFA711"
+				table_id: 4994078666422690054L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "128DF6FEB58EDC4D"
+				item: { count: 1, id: "mekanism:upgrade_anchor" }
+				type: "item"
+			}]
+			x: 4.38d
+			y: -6.54d
 		}
 		{
 			dependencies: ["04C21F7B2F034772"]
@@ -530,12 +547,6 @@
 		{
 			dependencies: ["1D482F0D9AF8D17E"]
 			id: "59451B5DAD78C46F"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "676724E11E7FA2B2"
-				table_id: 2077077515542683993L
-				type: "loot"
-			}]
 			tasks: [{
 				id: "1D83BC2C4DAAA588"
 				item: { count: 1, id: "mekanism:atomic_disassembler" }
@@ -616,7 +627,7 @@
 			y: -2.92d
 		}
 		{
-			dependencies: ["305C258D68DA8E96"]
+			dependencies: ["5AB4D1D72EFD4428"]
 			id: "22A2121A25A010AB"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -629,8 +640,8 @@
 				item: { count: 1, id: "mekanism:basic_induction_cell" }
 				type: "item"
 			}]
-			x: 52.71d
-			y: -2.92d
+			x: 35.935d
+			y: 2.92d
 		}
 		{
 			dependencies: ["5AB4D1D72EFD4428"]
@@ -646,8 +657,8 @@
 				item: { count: 1, id: "mekanism:basic_induction_provider" }
 				type: "item"
 			}]
-			x: 54.17d
-			y: -2.92d
+			x: 38.855d
+			y: 2.92d
 		}
 		{
 			dependencies: ["3BAA7EC7653A7905"]
@@ -916,16 +927,6 @@
 				id: "mekanism:sulfuric_acid_bucket"
 			}
 			id: "5021D7D55A0B3533"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "69A29ED3A557E90A"
-				table_id: 4994078666422690054L
-				type: "loot"
-			}]
-			tasks: [{
-				id: "4C8E8440B3AD8FD2"
-				type: "checkmark"
-			}]
 			x: 20.42d
 			y: 0.0d
 		}
@@ -1113,18 +1114,29 @@
 		{
 			dependencies: ["1D482F0D9AF8D17E"]
 			id: "550B874D9F2D0D5A"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4FF2265CA448EDA2"
-				table_id: 2077077515542683993L
-				type: "loot"
-			}]
 			tasks: [{
 				id: "4B745183648EBA34"
 				item: { count: 1, id: "mekanism:digital_miner" }
 				type: "item"
 			}]
-			x: 33.54d
+			x: 33.75d
+			y: 1.46d
+		}
+		{
+			dependencies: ["69B079DABB860AEF"]
+			id: "65A2C957F10E0D8D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "75CE93FE43C1337D"
+				table_id: 2077077515542683993L
+				type: "loot"
+			}]
+			tasks: [{
+				id: "01D97D78FDA4B46E"
+				item: { count: 1, id: "mekanism:dimensional_stabilizer" }
+				type: "item"
+			}]
+			x: 38.12d
 			y: 1.46d
 		}
 		{
@@ -1230,7 +1242,7 @@
 			y: -5.83d
 		}
 		{
-			dependencies: ["78C746829110FC35"]
+			dependencies: ["632BE5724D2120EB"]
 			id: "44D8D30BCD48C4C9"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1294,8 +1306,8 @@
 				item: { count: 1, id: "mekanism:elite_induction_cell" }
 				type: "item"
 			}]
-			x: 52.71d
-			y: -5.83d
+			x: 33.015d
+			y: 2.92d
 		}
 		{
 			dependencies: ["4A85523931A7D539"]
@@ -1311,8 +1323,8 @@
 				item: { count: 1, id: "mekanism:elite_induction_provider" }
 				type: "item"
 			}]
-			x: 54.17d
-			y: -5.83d
+			x: 41.775d
+			y: 2.92d
 		}
 		{
 			dependencies: ["4AC8B9FD75596EEF"]
@@ -1617,7 +1629,7 @@
 				item: { count: 1, id: "mekanismgenerators:fusion_reactor_controller" }
 				type: "item"
 			}]
-			x: 51.25d
+			x: 54.17d
 			y: -1.46d
 		}
 		{
@@ -1638,7 +1650,7 @@
 			y: -1.46d
 		}
 		{
-			dependencies: ["272E31F15A39517B"]
+			dependencies: ["400274581B9BD5FC"]
 			id: "2821236A1E8FEF73"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1651,7 +1663,7 @@
 				item: { count: 1, id: "mekanismgenerators:fusion_reactor_port" }
 				type: "item"
 			}]
-			x: 49.79d
+			x: 52.71d
 			y: -1.46d
 		}
 		{
@@ -1685,7 +1697,7 @@
 				item: { count: 1, id: "mekanismgenerators:gas_burning_generator" }
 				type: "item"
 			}]
-			x: 18.96d
+			x: 20.42d
 			y: -2.92d
 		}
 		{
@@ -1725,12 +1737,6 @@
 		{
 			dependencies: ["1D482F0D9AF8D17E"]
 			id: "56C5ECD3430B6A55"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "52FC6B02874699D5"
-				table_id: 2077077515542683993L
-				type: "loot"
-			}]
 			tasks: [{
 				id: "6062D34004392C3A"
 				item: { count: 1, id: "mekanism:hdpe_elytra" }
@@ -1774,8 +1780,8 @@
 			y: 1.46d
 		}
 		{
-			dependencies: ["1DE9A85C2E5348D1"]
 			id: "305C258D68DA8E96"
+			optional: true
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3F165EE1EBCD88E5"
@@ -1787,8 +1793,8 @@
 				item: { count: 1, id: "mekanism:induction_casing" }
 				type: "item"
 			}]
-			x: 52.71d
-			y: -1.46d
+			x: 37.395d
+			y: 0.0d
 		}
 		{
 			dependencies: ["305C258D68DA8E96"]
@@ -1804,8 +1810,8 @@
 				item: { count: 1, id: "mekanism:induction_port" }
 				type: "item"
 			}]
-			x: 54.17d
-			y: -1.46d
+			x: 37.395d
+			y: 2.92d
 		}
 		{
 			dependencies: ["40EB78C0AF30096E"]
@@ -1842,7 +1848,7 @@
 			y: -1.46d
 		}
 		{
-			dependencies: ["3C6E442CEB73191F"]
+			dependencies: ["50D1398BBF8DBBB2"]
 			id: "45138985A0F5164C"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1856,7 +1862,7 @@
 				type: "item"
 			}]
 			x: 18.96d
-			y: -4.38d
+			y: -2.92d
 		}
 		{
 			dependencies: ["632BE5724D2120EB"]
@@ -1872,8 +1878,8 @@
 				item: { count: 1, id: "mekanism:laser" }
 				type: "item"
 			}]
-			x: 29.17d
-			y: 0.0d
+			x: 27.71d
+			y: 1.46d
 		}
 		{
 			dependencies: ["5FBAD421F88943B6"]
@@ -2029,7 +2035,7 @@
 			y: -5.08d
 		}
 		{
-			dependencies: ["67A41E4D6BCA5F2B"]
+			dependencies: ["69B079DABB860AEF"]
 			id: "4FBA0ECAC8AEBCD8"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -2080,6 +2086,7 @@
 			y: -1.46d
 		}
 		{
+			dependencies: ["510C7652FE3431AC"]
 			id: "110B0C8DD2FD5BE7"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -2250,11 +2257,11 @@
 				item: { count: 1, id: "mekanism:qio_dashboard" }
 				type: "item"
 			}]
-			x: 42.5d
+			x: 41.04d
 			y: -2.92d
 		}
 		{
-			dependencies: ["69B079DABB860AEF"]
+			dependencies: ["4FBA0ECAC8AEBCD8"]
 			id: "67A41E4D6BCA5F2B"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -2267,8 +2274,8 @@
 				item: { count: 1, id: "mekanism:qio_drive_array" }
 				type: "item"
 			}]
-			x: 41.04d
-			y: 0.0d
+			x: 42.5d
+			y: -1.46d
 		}
 		{
 			dependencies: ["67A41E4D6BCA5F2B"]
@@ -2285,7 +2292,7 @@
 				type: "item"
 			}]
 			x: 42.5d
-			y: -1.46d
+			y: -2.92d
 		}
 		{
 			dependencies: ["2571BC62616A45AB"]
@@ -2301,7 +2308,7 @@
 				item: { count: 1, id: "mekanism:qio_exporter" }
 				type: "item"
 			}]
-			x: 41.04d
+			x: 39.58d
 			y: -2.92d
 		}
 		{
@@ -2318,7 +2325,7 @@
 				item: { count: 1, id: "mekanism:qio_importer" }
 				type: "item"
 			}]
-			x: 42.5d
+			x: 41.04d
 			y: -4.38d
 		}
 		{
@@ -2335,7 +2342,7 @@
 				item: { count: 1, id: "mekanism:qio_redstone_adapter" }
 				type: "item"
 			}]
-			x: 41.04d
+			x: 39.58d
 			y: -4.38d
 		}
 		{
@@ -2373,7 +2380,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["7BEA5B1D1B410E82"]
+			dependencies: ["3689AAE9D0DB96FB"]
 			id: "1A885E0BA312B916"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -2387,7 +2394,7 @@
 				type: "item"
 			}]
 			x: 26.25d
-			y: -5.83d
+			y: -4.38d
 		}
 		{
 			dependencies: ["1FAB4634116B6EC8"]
@@ -2409,18 +2416,12 @@
 		{
 			dependencies: ["1D482F0D9AF8D17E"]
 			id: "247E497BC6DE25CE"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "639B83436C9C5A57"
-				table_id: 2077077515542683993L
-				type: "loot"
-			}]
 			tasks: [{
 				id: "6CD0F1533A23D5FD"
 				item: { count: 1, id: "mekanism:robit" }
 				type: "item"
 			}]
-			x: 33.54d
+			x: 33.75d
 			y: -1.46d
 		}
 		{
@@ -2455,7 +2456,7 @@
 				type: "item"
 			}]
 			x: 18.96d
-			y: -5.83d
+			y: -4.38d
 		}
 		{
 			dependencies: ["44D8D30BCD48C4C9"]
@@ -2646,8 +2647,8 @@
 		}
 		{
 			dependencies: [
-				"5AB4D1D72EFD4428"
 				"3B0AB80C9FAD48F2"
+				"1DE9A85C2E5348D1"
 			]
 			id: "36D6DCA2535410E0"
 			rewards: [{
@@ -2679,10 +2680,10 @@
 				type: "item"
 			}]
 			x: 36.67d
-			y: 0.0d
+			y: -1.46d
 		}
 		{
-			dependencies: ["33F07E292A9B14B1"]
+			dependencies: ["1D482F0D9AF8D17E"]
 			id: "1F9A1456487655B0"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -2703,12 +2704,13 @@
 					type: "item"
 				}
 			]
-			x: 38.12d
-			y: 0.0d
+			x: 36.67d
+			y: 1.46d
 		}
 		{
 			dependencies: ["534B63750942C433"]
 			id: "1FAB4634116B6EC8"
+			optional: true
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "5E81B2F321F2166C"
@@ -2873,7 +2875,7 @@
 			y: -7.29d
 		}
 		{
-			dependencies: ["1F9A1456487655B0"]
+			dependencies: ["1D482F0D9AF8D17E"]
 			id: "69B079DABB860AEF"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -2937,8 +2939,8 @@
 				item: { count: 1, id: "mekanism:ultimate_induction_cell" }
 				type: "item"
 			}]
-			x: 52.71d
-			y: -7.29d
+			x: 34.475d
+			y: 4.38d
 		}
 		{
 			dependencies: ["614E49D8AA7F85FC"]
@@ -2954,8 +2956,8 @@
 				item: { count: 1, id: "mekanism:ultimate_induction_provider" }
 				type: "item"
 			}]
-			x: 54.17d
-			y: -7.29d
+			x: 40.315d
+			y: 4.38d
 		}
 		{
 			dependencies: ["6C012E0F8B3922DC"]
@@ -3112,12 +3114,11 @@
 		}
 		{
 			id: "510C7652FE3431AC"
-			size: 1.4d
 			tasks: [{
 				id: "13FBD6CBB3C0F41B"
 				type: "checkmark"
 			}]
-			x: -0.7d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -3315,6 +3316,7 @@
 				"78756CC2F8821E41"
 				"40EB78C0AF30096E"
 				"2A68AB7D1EDD44BD"
+				"65A2C957F10E0D8D"
 				"49C508DCB4AAC3CB"
 				"12C0AD9539DE96F2"
 				"6D702C00A519AD12"
@@ -3331,13 +3333,13 @@
 				"22D2716905D415E5"
 				"462944FD21A92AED"
 				"06C4D99A90DF7711"
+				"641CFC5C8187AC56"
 				"5F95D00149FB24FD"
 				"2BDE797C32E308D3"
 				"632BE5724D2120EB"
 				"3F6174E82DDC48C3"
 				"5FFDA262D7693860"
 				"272E31F15A39517B"
-				"305C258D68DA8E96"
 				"5C82C92D1F366C04"
 				"097ACA8114CD8DA8"
 				"4CA2A53F4C298E2B"
@@ -3369,6 +3371,7 @@
 				"566D039774A4DB9D"
 				"7F7AB9192CD7FC70"
 				"3850B26FC78DD874"
+				"510C7652FE3431AC"
 				"7FC6AE9DB7C1DA52"
 				"04C21F7B2F034772"
 				"5021D7D55A0B3533"
@@ -3409,6 +3412,9 @@
 				"216C2D79B2481DA3"
 				"60F4F5FE0C3748C3"
 				"17E7640F55666577"
+				"400274581B9BD5FC"
+				"2ADDD30536A7FF68"
+				"1FAB4634116B6EC8"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -3438,6 +3444,28 @@
 			}]
 			x: 59.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["2ADDD30536A7FF68"]
+			id: "400274581B9BD5FC"
+			tasks: [{
+				id: "544A4DFE6E0980DF"
+				item: { count: 1, id: "mekanismgenerators:laser_focus_matrix" }
+				type: "item"
+			}]
+			x: 51.25d
+			y: -1.46d
+		}
+		{
+			dependencies: ["272E31F15A39517B"]
+			id: "2ADDD30536A7FF68"
+			tasks: [{
+				id: "6A29A35C26166EF6"
+				item: { count: 1, id: "mekanismgenerators:reactor_glass" }
+				type: "item"
+			}]
+			x: 49.79d
+			y: -1.46d
 		}
 	]
 }
