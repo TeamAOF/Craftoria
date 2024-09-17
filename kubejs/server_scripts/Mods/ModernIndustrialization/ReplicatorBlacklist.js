@@ -74,6 +74,7 @@ ServerEvents.tags('item', (e) => {
     'mekanismgenerators:solar_generator',
     'mekanismgenerators:advanced_solar_generator',
     'mekanismgenerators:gas_burning_generator',
+    'mekanism:pellet_antimatter',
 
     'occultism:storage_controller',
     'occultism:soul_gem',
@@ -95,8 +96,11 @@ ServerEvents.tags('item', (e) => {
     'justdirethings:fuel_canister',
     'justdirethings:pocket_generator',
 
+    /^modern_industrialization:quantum_.*/,
     'modern_industrialization:replicator',
     'modern_industrialization:helium_plasma_bucket',
+    'modern_industrialization:singularity',
+    'modern_industrialization:nuke',
   ];
 
   let exclusions = [
