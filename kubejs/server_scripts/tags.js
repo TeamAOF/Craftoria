@@ -18,6 +18,8 @@ ServerEvents.tags('item', (e) => {
   e.add('c:foods/raw_bacon', 'croptopia:bacon');
   e.add('c:foods/cooked_bacon', 'croptopia:cooked_bacon');
   e.add('c:foods/calamari', 'croptopia:calamari');
+
+  e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
 });
 
 ServerEvents.tags('block', (e) => {
