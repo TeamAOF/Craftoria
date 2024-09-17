@@ -3,8 +3,755 @@
 	default_quest_shape: ""
 	filename: "Trading and Agriculture"
 	group: ""
+	icon: {
+		id: "easy_villagers:trader"
+	}
 	id: "4551BA86097AB1B5"
+	images: [
+		{
+			height: 6.0d
+			image: "cookingforblockheads:block/white_oven_front_active"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			height: 6.0d
+			image: "farmingforblockheads:block/fertilized_farmland_healthy_stable_moist"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 6.0d
+			image: "easy_villagers:block/farm"
+			rotation: 0.0d
+			width: 6.0d
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			color: 11435264
+			height: 6.0d
+			image: "ftbquests:textures/gui/background_white.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.4d
+			y: -1.4d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.9d
+			y: -1.9d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.4d
+			y: -1.4d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.9d
+			y: 0.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.4d
+			y: 1.6d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.9d
+			y: 2.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.4d
+			y: 1.6d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.9d
+			y: 0.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.9d
+			y: 0.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.1d
+			y: 2.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.1d
+			y: 0.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.1d
+			y: -1.9d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.1d
+			y: -1.9d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.6d
+			y: -1.4d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.1d
+			y: 0.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.6d
+			y: 1.6d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.1d
+			y: 2.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.6d
+			y: 1.6d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.1d
+			y: 0.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.6d
+			y: -1.4d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.5d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.5d
+			x: 6.1d
+			y: 0.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.5d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.5d
+			x: 0.1d
+			y: 0.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.5d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.5d
+			x: -5.9d
+			y: 0.1d
+		}
+	]
 	order_index: 6
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "307FE47426A6C0F9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "502D7A8EE192B0C9"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4A794C84181C8A92"
+				item: { count: 1, id: "easy_piglins:barterer" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "1A23087241E329A3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "408CEA81607E0642"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "5120ABF49D1080A5"
+				item: { count: 1, id: "easy_villagers:trader" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "3A68B1FEA6599E94"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D14EF4E1FFB457A"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4AEA024D1E2030B9"
+				item: { count: 1, id: "easy_villagers:auto_trader" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "4B240A0676E3B1E1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0ACB11E507E8E96C"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0FC57C1C60C76BBB"
+				item: { count: 1, id: "easy_villagers:farmer" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "1275135EE17E4BEA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7693DCB8E23734C2"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0D3309795700DC0E"
+				item: { count: 1, id: "easy_villagers:breeder" }
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "2AE16D42C60C16AF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0EED068B72E2745F"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "14F8330925A4F68F"
+				item: { count: 1, id: "easy_villagers:converter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "6DBAE3AA68EF3371"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "156477C4AF934785"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "38B8365880667F8B"
+				item: { count: 1, id: "easy_villagers:iron_farm" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "381701CD2F0D612C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "64F85E9AE325160B"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "65557B7A166F1EF8"
+				item: { count: 1, id: "easy_villagers:incubator" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A23087241E329A3"]
+			id: "5462066C988B4021"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4DFB3B71B6EC14A4"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0A6F3B6CD950EBA4"
+				item: { count: 1, id: "easy_villagers:inventory_viewer" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "1A08D656D825D317"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "64BB707B935AEC69"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "222C99BEA471A7E6"
+					item: { count: 1, id: "cookingforblockheads:recipe_book" }
+					type: "item"
+				}
+				{
+					id: "5FA19AF53D38E914"
+					item: { count: 1, id: "cookingforblockheads:crafting_book" }
+					type: "item"
+				}
+			]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "036962F1A194692F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2F5A263FD3A896F7"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3FA81C7DE43D6A4F"
+				item: { count: 1, id: "cookingforblockheads:white_oven" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "439EBB5719516B0C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "46EF7B2C0B5EBA21"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "43B88929012A03FA"
+				item: { count: 1, id: "cookingforblockheads:cow_jar" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "52222F46C354A13A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F3C433B163CFF57"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "48912087FFC3DA2F"
+				item: { count: 1, id: "cookingforblockheads:toaster" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "442345EC7F3A8C82"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "348A81E9B480B0C6"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "64B5A5448BC3F140"
+				item: { count: 1, id: "cookingforblockheads:white_fridge" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "429A3E6B65A5D719"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6D516309D6765003"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "4C9E2BE4FC05EF38"
+					item: { count: 1, id: "cookingforblockheads:connector" }
+					type: "item"
+				}
+				{
+					id: "117D8E3C7665A46A"
+					item: { count: 1, id: "cookingforblockheads:white_kitchen_floor" }
+					type: "item"
+				}
+				{
+					id: "558F796A11ECDF80"
+					item: { count: 1, id: "cookingforblockheads:cooking_table" }
+					type: "item"
+				}
+				{
+					id: "5756F6B9E4E0F0AF"
+					item: { count: 1, id: "cookingforblockheads:counter" }
+					type: "item"
+				}
+				{
+					id: "67EA81BAD9E70B45"
+					item: { count: 1, id: "cookingforblockheads:cabinet" }
+					type: "item"
+				}
+				{
+					id: "2C2AC3ED06D608A6"
+					item: { count: 1, id: "cookingforblockheads:sink" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "51E838DC472069F6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00C095C9B0AC01D4"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "362F079285430785"
+				item: { count: 1, id: "cookingforblockheads:heating_unit" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "25C8379EFA739E01"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "66277DAE04B1851D"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "0809194869A2385E"
+					item: { count: 1, id: "cookingforblockheads:ice_unit" }
+					type: "item"
+				}
+				{
+					id: "68F03BDBC3524E66"
+					item: { count: 1, id: "cookingforblockheads:preservation_chamber" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			id: "68A1BBD669C1CEF5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "12AC914259F5F4E7"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "189DCFAD2C420146"
+				item: { count: 1, id: "farmingforblockheads:market" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "1395E3C0ACED7F7B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3C86A59D27EF7AE2"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "12A970F35FCB3E64"
+					item: { count: 1, id: "farmingforblockheads:feeding_trough" }
+					type: "item"
+				}
+				{
+					id: "1B0C3B3CAD766203"
+					item: { count: 1, id: "farmingforblockheads:chicken_nest" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "292E93AD526F817C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5450D5341F663397"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "13718D9E568034BF"
+				item: { count: 1, id: "farmingforblockheads:green_fertilizer" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "37D6DD29FB83A3DF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2DB9F16831A3B418"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "56398EF987AC7AF4"
+				item: { count: 1, id: "farmingforblockheads:red_fertilizer" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "011DC98BB2CFFB72"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E6C0BC4C5DA1BE9"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "35E8CA66DE2DB162"
+				item: { count: 1, id: "farmingforblockheads:yellow_fertilizer" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["429A3E6B65A5D719"]
+			id: "4C0D127775F33439"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "39B403124930DCE2"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "27ABB13F5E3A9AC7"
+					item: { count: 1, id: "cookingforblockheads:tool_rack" }
+					type: "item"
+				}
+				{
+					id: "589FBCCBA5ECE65F"
+					item: { count: 1, id: "cookingforblockheads:spice_rack" }
+					type: "item"
+				}
+				{
+					id: "6DEC1B9623D18861"
+					item: { count: 1, id: "cookingforblockheads:fruit_basket" }
+					type: "item"
+				}
+				{
+					id: "4100F08526432ACD"
+					item: { count: 1, id: "cookingforblockheads:cutting_board" }
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: 1.5d
+		}
+	]
 }

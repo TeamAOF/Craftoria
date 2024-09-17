@@ -1,8 +1,15 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 	filename: "Personal Storage"
 	group: "49042A4D0EC96D55"
+	icon: {
+		components: {
+			"sophisticatedcore:accent_color": -13881243
+			"sophisticatedcore:main_color": -3087822
+		}
+		id: "sophisticatedbackpacks:backpack"
+	}
 	id: "2B64DA0213E9FC7B"
 	images: [
 		{
@@ -59,8 +66,8 @@
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: -4.75d
-			y: -1.25d
+			x: -4.9d
+			y: -1.4d
 		}
 		{
 			alpha: 128
@@ -70,8 +77,8 @@
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.25d
-			y: -1.25d
+			x: -1.4d
+			y: -1.4d
 		}
 		{
 			alpha: 128
@@ -81,8 +88,8 @@
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.25d
-			y: 2.25d
+			x: -1.4d
+			y: 2.1d
 		}
 		{
 			alpha: 128
@@ -92,19 +99,8 @@
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: -4.75d
-			y: 2.25d
-		}
-		{
-			alpha: 128
-			color: 0
-			height: 1.0d
-			image: "ftbquests:textures/shapes/hexagon/background.png"
-			order: 3
-			rotation: 0.0d
-			width: 1.0d
-			x: -3.0d
-			y: -1.25d
+			x: -4.9d
+			y: 2.1d
 		}
 		{
 			alpha: 128
@@ -281,6 +277,17 @@
 			width: 1.0d
 			x: 4.1d
 			y: -0.44999999999999996d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/hexagon/background.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.1d
+			y: -1.4d
 		}
 	]
 	order_index: 0
