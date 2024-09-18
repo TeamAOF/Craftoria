@@ -110,18 +110,27 @@
 						abilities: {
 							abilities: {
 								teleport: {
-									cooldown: 0
-									cooldownCap: 0
+									extender: {
+										cooldown: 0
+										cooldownCap: 0
+										ticking: 0b
+									}
+									lock: {
+										breaks: 5
+									}
 									points: 0
+									research: {
+										links: { }
+										researched: 0b
+									}
 									stats: {
 										cooldown: {
-											initialValue: 72.60693d
+											initialValue: 76.74979d
 										}
 										distance: {
-											initialValue: 603.1461d
+											initialValue: 640.83509d
 										}
 									}
-									ticking: 0b
 								}
 							}
 						}
@@ -231,9 +240,9 @@
 			dependencies: ["78EDBDED3BFEC145"]
 			icon: {
 				components: {
-					"easy_villagers:villager": { }
+					"ftbquests:missing_item": "easy_villagers:villager"
 				}
-				id: "easy_villagers:villager"
+				id: "ftbquests:missing_item"
 			}
 			id: "27CDEE9743181917"
 			invisible: true
