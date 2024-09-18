@@ -417,17 +417,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5BB4989DC6C5DB7A"]
-			id: "5AD93FC0F20FDAB8"
-			tasks: [{
-				id: "41B8670E9807F7DF"
-				item: { count: 1, id: "ae2:charged_staff" }
-				type: "item"
-			}]
-			x: -9.25d
-			y: 1.5d
-		}
-		{
 			dependencies: ["20F99CBAD8D587DA"]
 			id: "5BB4989DC6C5DB7A"
 			rewards: [{
@@ -475,24 +464,14 @@
 		}
 		{
 			dependencies: ["3E165961635B0C4B"]
+			icon: {
+				id: "ae2:flawless_budding_quartz"
+			}
 			id: "7AC17F66BB030623"
-			tasks: [
-				{
-					id: "0F956DD2D10D7382"
-					item: { count: 1, id: "ae2:chipped_budding_quartz" }
-					type: "item"
-				}
-				{
-					id: "1FC542A8FA5BFE87"
-					item: { count: 1, id: "ae2:damaged_budding_quartz" }
-					type: "item"
-				}
-				{
-					id: "3C6193C5956265CE"
-					item: { count: 1, id: "ae2:flawed_budding_quartz" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "271D351962CCB82F"
+				type: "checkmark"
+			}]
 			x: -10.75d
 			y: 0.0d
 		}
@@ -560,8 +539,8 @@
 				item: { count: 1, id: "ae2:color_applicator" }
 				type: "item"
 			}]
-			x: -9.25d
-			y: 4.5d
+			x: -9.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["151E812270A52250"]
@@ -650,7 +629,7 @@
 				item: { count: 1, id: "ae2:dense_energy_cell" }
 				type: "item"
 			}]
-			x: -3.25d
+			x: -3.5d
 			y: 3.0d
 		}
 		{
@@ -1061,8 +1040,8 @@
 				item: { count: 1, id: "ae2:matter_cannon" }
 				type: "item"
 			}]
-			x: -10.75d
-			y: 4.5d
+			x: -10.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["308640ACCC096431"]
@@ -1105,24 +1084,21 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["5AD93FC0F20FDAB8"]
+			dependencies: ["5BB4989DC6C5DB7A"]
 			id: "3D9DED933A80CAFA"
 			rewards: [{
-				count: 3
-				id: "1607899CA5C8362F"
-				item: {
-					count: 1
-					id: "ae2:memory_card"
-				}
-				type: "item"
+				exclude_from_claim_all: true
+				id: "6D18D2C24C24A7C5"
+				table_id: 3188555497912671082L
+				type: "loot"
 			}]
 			tasks: [{
 				id: "4B61AF1197DBCE2C"
 				item: { count: 1, id: "ae2:memory_card" }
 				type: "item"
 			}]
-			x: -9.25d
-			y: 3.0d
+			x: -10.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3D9DED933A80CAFA"]
@@ -1137,7 +1113,7 @@
 				item: { count: 1, id: "ae2:network_tool" }
 				type: "item"
 			}]
-			x: -10.75d
+			x: -11.0d
 			y: 3.0d
 		}
 		{
@@ -1292,7 +1268,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["24E5FA9129987168"]
+			dependencies: ["75810CDFB362E0CB"]
 			id: "2E883FCCA2FB281B"
 			rewards: [{
 				count: 8
@@ -1316,8 +1292,8 @@
 					type: "item"
 				}
 			]
-			x: 14.75d
-			y: 0.0d
+			x: -2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5B1D88BFEA39DBAE"]
@@ -1351,7 +1327,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2E883FCCA2FB281B"]
+			dependencies: ["4CD943F9416FB352"]
 			id: "75810CDFB362E0CB"
 			rewards: [{
 				id: "18AD91CC2C1AEC38"
@@ -1366,8 +1342,8 @@
 				item: { count: 1, id: "ae2:singularity" }
 				type: "item"
 			}]
-			x: 16.25d
-			y: 0.0d
+			x: -2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["59128813386BFDB1"]
@@ -1739,7 +1715,7 @@
 				item: { count: 1, id: "megacells:mega_energy_cell" }
 				type: "item"
 			}]
-			x: -3.25d
+			x: -3.5d
 			y: 4.5d
 		}
 		{
@@ -2295,7 +2271,7 @@
 					type: "item"
 				}
 			]
-			x: -12.25d
+			x: -9.5d
 			y: -3.0d
 		}
 		{
@@ -2783,7 +2759,6 @@
 				"7277A0413086D71A"
 				"78FE04A1A94C38B8"
 				"355644DF30CE87EA"
-				"5AD93FC0F20FDAB8"
 				"150D032A0BE1BB76"
 				"4DAFFFDC31A78665"
 				"277F167EA7E9A759"
