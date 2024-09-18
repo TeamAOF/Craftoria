@@ -1,16 +1,171 @@
 {
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "circle"
+	default_quest_size: 1.25d
 	filename: "Monster Mayhem"
 	group: "07A79347BA55DCA4"
 	icon: {
 		id: "minecraft:zombie_head"
 	}
 	id: "26E59C8DBA7F6FE3"
+	images: [
+		{
+			height: 4.0d
+			image: "minecraft:block/glow_item_frame"
+			rotation: 45.0d
+			width: 4.0d
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "eternal_starlight:block/abyssal_fire_0"
+			order: 2
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "eternal_starlight:block/abyssal_fire_0"
+			order: 2
+			rotation: 180.0d
+			width: 2.0d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "eternal_starlight:block/abyssal_fire_0"
+			order: 2
+			rotation: 90.0d
+			width: 2.0d
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "eternal_starlight:block/abyssal_fire_0"
+			order: 2
+			rotation: -90.0d
+			width: 2.0d
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "eternal_starlight:block/abyssal_fire_0"
+			order: 2
+			rotation: 45.0d
+			width: 2.0d
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "eternal_starlight:block/abyssal_fire_0"
+			order: 2
+			rotation: -45.0d
+			width: 2.0d
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "eternal_starlight:block/abyssal_fire_0"
+			order: 2
+			rotation: 135.0d
+			width: 2.0d
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			alpha: 128
+			height: 2.0d
+			image: "eternal_starlight:block/abyssal_fire_0"
+			order: 2
+			rotation: -135.0d
+			width: 2.0d
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			height: 5.0d
+			image: "minecraft:textures/painting/skull_and_roses.png"
+			order: 1
+			rotation: 0.0d
+			width: 5.0d
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			height: 5.0d
+			image: "minecraft:textures/painting/burning_skull.png"
+			order: 1
+			rotation: 0.0d
+			width: 5.0d
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			height: 4.0d
+			image: "yigd:textures/gui/sprites/unclaimed_grave.png"
+			order: 6
+			rotation: 0.0d
+			width: 4.0d
+			x: 0.1d
+			y: 5.8d
+		}
+		{
+			alpha: 192
+			height: 2.0d
+			image: "irons_spellbooks:textures/gui/spell_icons/heartstop.png"
+			order: 4
+			rotation: -45.0d
+			width: 2.0d
+			x: 0.0d
+			y: 7.4d
+		}
+		{
+			height: 4.0d
+			image: "chipped:block/glowstone/glowstone_lantern"
+			rotation: 45.0d
+			width: 4.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			color: 9699328
+			height: 5.25d
+			image: "ftbquests:textures/shapes/square/background.png"
+			rotation: 0.0d
+			width: 5.25d
+			x: 7.75d
+			y: -0.25d
+		}
+		{
+			color: 9699328
+			height: 5.25d
+			image: "ftbquests:textures/shapes/square/background.png"
+			rotation: 0.0d
+			width: 5.25d
+			x: -7.75d
+			y: 0.25d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			icon_scale: 1.5d
 			id: "4FDD66D88C90C951"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -18,6 +173,8 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
+			shape: "circle"
+			size: 2.0d
 			tasks: [{
 				id: "6F144EF786A94E4E"
 				item: { count: 1, id: "minecraft:spawner" }
@@ -50,8 +207,8 @@
 				item: { count: 1, id: "minecraft:fermented_spider_eye" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -3.5d
+			x: -1.25d
+			y: -3.125d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -77,8 +234,8 @@
 				item: { count: 1, id: "minecraft:sugar" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -4.0d
+			x: -0.125d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -104,7 +261,7 @@
 				item: { count: 1, id: "minecraft:clock" }
 				type: "item"
 			}]
-			x: -3.5d
+			x: -2.25d
 			y: -2.5d
 		}
 		{
@@ -121,8 +278,8 @@
 				item: { count: 1, id: "minecraft:turtle_egg" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -3.5d
+			x: 2.125d
+			y: -2.625d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -148,8 +305,8 @@
 				item: { count: 1, id: "minecraft:piston" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 1.0d
+			x: 3.375d
+			y: 0.75d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -175,8 +332,8 @@
 				item: { count: 1, id: "minecraft:white_wool" }
 				type: "item"
 			}]
-			x: 1.0d
-			y: -4.0d
+			x: 1.125d
+			y: -3.25d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -202,8 +359,8 @@
 				item: { count: 1, id: "minecraft:comparator" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: 1.0d
+			x: -3.375d
+			y: -0.25d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -229,8 +386,8 @@
 				item: { count: 1, id: "minecraft:prismarine_crystals" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: -1.0d
+			x: -2.875d
+			y: -1.5d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -256,8 +413,8 @@
 				item: { count: 1, id: "minecraft:chorus_fruit" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: -1.0d
+			x: 3.25d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -283,8 +440,8 @@
 				item: { count: 1, id: "minecraft:ghast_tear" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.0d
+			x: -1.75d
+			y: 2.875d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -310,8 +467,8 @@
 				item: { count: 1, id: "minecraft:pointed_dripstone" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 4.0d
+			x: 0.75d
+			y: 3.25d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -337,8 +494,8 @@
 				item: { count: 1, id: "minecraft:nether_star" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 2.5d
+			x: -3.25d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -364,8 +521,8 @@
 				item: { count: 1, id: "minecraft:soul_lantern" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -2.5d
+			x: 2.875d
+			y: -1.75d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -391,8 +548,8 @@
 				item: { count: 1, id: "minecraft:conduit" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 3.5d
+			x: -2.75d
+			y: 2.125d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -418,8 +575,8 @@
 				item: { count: 1, id: "minecraft:echo_shard" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.5d
+			x: 1.875d
+			y: 2.75d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -445,8 +602,8 @@
 				item: { count: 1, id: "minecraft:campfire" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 2.5d
+			x: 2.75d
+			y: 1.875d
 		}
 		{
 			dependencies: ["4FDD66D88C90C951"]
@@ -472,8 +629,8 @@
 				item: { count: 1, id: "minecraft:quartz" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: -0.5d
+			y: 3.25d
 		}
 	]
 }
