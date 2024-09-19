@@ -3,6 +3,7 @@ const globalItemRemovals = [
   'megacells:cable_mega_interface',
   'megacells:mega_pattern_provider',
   'megacells:cable_mega_pattern_provider',
+  'megacells:mega_crafting_accelerator',
   'bigger_ae2:advanced_item_cell_housing',
   'bigger_ae2:quantum_item_storage_cell',
   'bigger_ae2:digital_singularity_item_storage_cell',
@@ -20,6 +21,8 @@ ServerEvents.recipes((event) => {
     'modern_industrialization:electric_age/machine/assembler/replicator',
     'mffs:steel_compound',
     'mffs:steel_ingot',
+    'industrialforegoing:gold_gear',
+    'industrialforegoing:iron_gear',
   ];
 
   const output = [];

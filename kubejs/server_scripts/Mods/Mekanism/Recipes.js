@@ -23,6 +23,10 @@ ServerEvents.recipes((e) => {
     e.recipes.mekanism.crystallizing(output, input).id(makeID('crystallizing', output, input));
   };
 
+  let chem_infuser = (output, chemLeft, chemRight) => {
+    e.recipes.mekanism.chemical_infusing(output, chemLeft, chemRight).id(makeID('chemical_infusing', output, chemLeft));
+  };
+
   let reaction = (item_out, item_in, fluid_in, chem_out, chem_in, duration) => {
     let recipe = {
       type: 'mekanism:reaction',
@@ -56,6 +60,42 @@ ServerEvents.recipes((e) => {
     e.custom(recipe).id(makeID('reaction', item_out, item_in[0][0]));
   };
 
+  let rotary = (chem, fluid) => {
+    let recipe = {
+      type: 'mekanism:rotary',
+      chemical_input: {
+        amount: 1,
+        chemical: chem,
+      },
+      chemical_output: {
+        amount: 1,
+        id: chem,
+      },
+      fluid_input: {
+        amount: 1,
+        tag: `c:${fluid.split(':')[1]}`,
+      },
+      fluid_output: {
+        amount: 1,
+        id: fluid,
+      },
+    };
+
+    e.custom(recipe).id(makeID('rotary', chem, fluid));
+  };
+
+  let oxidizing = (output, input) => {
+    let recipe = {
+      type: 'mekanism:oxidizing',
+      input: Ingredient.of(input).toJson(),
+      output: {
+        amount: parseInt(output.split('x ')[0]),
+        id: output.split('x ')[1],
+      },
+    };
+    e.custom(recipe).id(makeID('oxidizing', output, input));
+  };
+
   // QoL Recipes
   metallurgic_infusing('4x mekanism:dust_refined_obsidian', 'minecraft:obsidian', '40x mekanism:diamond');
   metallurgic_infusing('9x mekanism:alloy_infused', '#c:storage_blocks/copper', '90x mekanism:redstone');
@@ -71,4 +111,9 @@ ServerEvents.recipes((e) => {
   // Made Monazite/Bauxite be less efficient through Mekanism, as you *should* be using MI's machines for them, but adding them here for convenience.
   enrich('4x modern_industrialization:monazite_dust', '#c:ores/monazite');
   enrich('4x modern_industrialization:bauxite_dust', '#c:ores/bauxite');
+
+  // New Stuff
+  rotary('mekanism:antimatter', 'craftoria:antimatter');
+  oxidizing('200x craftoria:plutonium_oxide', '#c:ingots/plutonium');
+  chem_infuser('400x mekanism:uranium_hexafluoride', '200x mekanism:hydrofluoric_acid', '1x craftoria:plutonium_oxide');
 });

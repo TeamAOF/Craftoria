@@ -18,6 +18,10 @@ ServerEvents.tags('item', (e) => {
   e.add('c:foods/raw_bacon', 'croptopia:bacon');
   e.add('c:foods/cooked_bacon', 'croptopia:cooked_bacon');
   e.add('c:foods/calamari', 'croptopia:calamari');
+
+  e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
+
+  e.add('c:plastic', ['pneumaticcraft:plastic']);
 });
 
 ServerEvents.tags('block', (e) => {
@@ -67,6 +71,8 @@ ServerEvents.tags('fluid', (e) => {
   e.add('c:lubricant', 'modern_industrialization:lubricant');
   e.add('c:plantoil', 'modern_industrialization:plant_oil');
   e.add('c:fuels/crude_oil', 'modern_industrialization:crude_oil');
+
+  e.add('c:antimatter', 'craftoria:antimatter');
 });
 
 ServerEvents.tags('entity_type', (e) => {

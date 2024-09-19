@@ -1,0 +1,222 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "artifacts"
+    }
+  ],
+  "entity": "artifacts:mimic",
+  "variants": [],
+  "name": {
+    "translate": "entity.artifacts.mimic",
+    "color": "#55FF55"
+  },
+  "display": {},
+  "sim_cost": 2560,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix"
+  },
+  "base_drop": {
+    "id": "hostilenetworks:end_prediction",
+    "count": 1
+  },
+  "trivia": "hostilenetworks.trivia.mimic",
+  "fabricator_drops": [
+    {
+      "id": "artifacts:umbrella",
+      "count": 1
+    },
+    {
+      "id": "artifacts:plastic_drinking_hat",
+      "count": 1
+    },
+    {
+      "id": "artifacts:novelty_drinking_hat",
+      "count": 1
+    },
+    {
+      "id": "artifacts:snorkel",
+      "count": 1
+    },
+    {
+      "id": "artifacts:night_vision_goggles",
+      "count": 1
+    },
+    {
+      "id": "artifacts:villager_hat",
+      "count": 1
+    },
+    {
+      "id": "artifacts:superstitious_hat",
+      "count": 1
+    },
+    {
+      "id": "artifacts:cowboy_hat",
+      "count": 1
+    },
+    {
+      "id": "artifacts:anglers_hat",
+      "count": 1
+    },
+    {
+      "id": "artifacts:lucky_scarf",
+      "count": 1
+    },
+    {
+      "id": "artifacts:scarf_of_invisibility",
+      "count": 1
+    },
+    {
+      "id": "artifacts:cross_necklace",
+      "count": 1
+    },
+    {
+      "id": "artifacts:panic_necklace",
+      "count": 1
+    },
+    {
+      "id": "artifacts:shock_pendant",
+      "count": 1
+    },
+    {
+      "id": "artifacts:flame_pendant",
+      "count": 1
+    },
+    {
+      "id": "artifacts:thorn_pendant",
+      "count": 1
+    },
+    {
+      "id": "artifacts:charm_of_sinking",
+      "count": 1
+    },
+    {
+      "id": "artifacts:charm_of_shrinking",
+      "count": 1
+    },
+    {
+      "id": "artifacts:cloud_in_a_bottle",
+      "count": 1
+    },
+    {
+      "id": "artifacts:obsidian_skull",
+      "count": 1
+    },
+    {
+      "id": "artifacts:antidote_vessel",
+      "count": 1
+    },
+    {
+      "id": "artifacts:universal_attractor",
+      "count": 1
+    },
+    {
+      "id": "artifacts:crystal_heart",
+      "count": 1
+    },
+    {
+      "id": "artifacts:helium_flamingo",
+      "count": 1
+    },
+    {
+      "id": "artifacts:chorus_totem",
+      "count": 1
+    },
+    {
+      "id": "artifacts:warp_drive",
+      "count": 1
+    },
+    {
+      "id": "artifacts:digging_claws",
+      "count": 1
+    },
+    {
+      "id": "artifacts:feral_claws",
+      "count": 1
+    },
+    {
+      "id": "artifacts:power_glove",
+      "count": 1
+    },
+    {
+      "id": "artifacts:fire_gauntlet",
+      "count": 1
+    },
+    {
+      "id": "artifacts:pocket_piston",
+      "count": 1
+    },
+    {
+      "id": "artifacts:vampiric_glove",
+      "count": 1
+    },
+    {
+      "id": "artifacts:golden_hook",
+      "count": 1
+    },
+    {
+      "id": "artifacts:onion_ring",
+      "count": 1
+    },
+    {
+      "id": "artifacts:pickaxe_heater",
+      "count": 1
+    },
+    {
+      "id": "artifacts:withered_bracelet",
+      "count": 1
+    },
+    {
+      "id": "artifacts:aqua_dashers",
+      "count": 1
+    },
+    {
+      "id": "artifacts:bunny_hoppers",
+      "count": 1
+    },
+    {
+      "id": "artifacts:kitty_slippers",
+      "count": 1
+    },
+    {
+      "id": "artifacts:running_shoes",
+      "count": 1
+    },
+    {
+      "id": "artifacts:snowshoes",
+      "count": 1
+    },
+    {
+      "id": "artifacts:steadfast_spikes",
+      "count": 1
+    },
+    {
+      "id": "artifacts:flippers",
+      "count": 1
+    },
+    {
+      "id": "artifacts:rooted_boots",
+      "count": 1
+    },
+    {
+      "id": "artifacts:strider_shoes",
+      "count": 1
+    },
+    {
+      "id": "artifacts:whoopee_cushion",
+      "count": 1
+    }
+  ],
+  "tier_data": {
+    "basic": 30,
+    "advanced": 330,
+    "superior": 930,
+    "self_aware": 2000
+  },
+  "data_per_kill": {
+    "faulty": 1,
+    "basic": 10,
+    "advanced": 20,
+    "superior": 30
+  }
+}
