@@ -105,6 +105,7 @@ ServerEvents.recipes(event => {
     ["modern_industrialization:lignite_coal_ore", 1, 0.24],
     ["minecraft:copper_ore", 1, 0.2],
     ["modern_industrialization:tin_ore", 1, 0.3],
+    ["occultism:silver_ore", 1, 0.15]
     ["minecraft:gold_ore", 1, 0.15],
     ["minecraft:redstone_ore", 1, 0.2],
     ["mekanism:osmium_ore", 1, 0.12]

@@ -4,26 +4,30 @@
 	chapter.0597AF3E8B286CFA.title: "Ars Nouveau"
 	chapter.0CF7A598566497C7.title: "&6Completionist"
 	chapter.1AE9F15DF280DC77.title: "Side Quests"
-	chapter.1CFBA632673ABBFD.title: "&eStorage"
+	chapter.1CFBA632673ABBFD.title: "Organized Storage"
 	chapter.26E59C8DBA7F6FE3.title: "Monster Mayhem"
-	chapter.2A4C06811555B5D0.title: "Relics and Artifacts"
+	chapter.2A4C06811555B5D0.title: "Relics \\& Artifacts"
+	chapter.2B64DA0213E9FC7B.title: "Personal Storage"
 	chapter.3188AC6C440F7520.title: "&aGetting Started"
 	chapter.33E8845C982DC0F2.title: "Mekanism: Ore Processing"
 	chapter.37D7FA3DAE36E099.title: "Just Dire Things"
 	chapter.40CEA39FE5F5225D.title: "Mekanism"
-	chapter.42032FCAB6197EE7.title: "&cTools and Armory"
+	chapter.42032FCAB6197EE7.title: "&cArmory"
+	chapter.4551BA86097AB1B5.title: "&2Agriculture"
 	chapter.5A3894BACC5E8994.title: "Theurgy"
 	chapter.5BF964A2F3CAA6E8.title: "&9Utilities"
 	chapter.6A5B4531418CC297.title: "Modern Industrialization"
 	chapter.70FFEE37C7ABD690.title: "Applied Energistics"
 	chapter.7269FD2B5B0F0424.title: "Occultism"
 	chapter.75719C45F41E8B00.title: "Dimensions"
+	chapter.7B329826EADF9720.title: "&eGadgets"
 	chapter_group.01BEAD68B1D370D3.title: "&8&lMagic&r &d✡"
 	chapter_group.066C799B2F5452CD.title: "&8&lTechnology&r &e⚡"
 	chapter_group.07A79347BA55DCA4.title: "&8&lAdventure&r &a🗡"
 	chapter_group.124F40AB6DD8433B.title: "Storage"
 	chapter_group.14D8AC2C1E9C819F.title: "Powah!!!"
 	chapter_group.3F2E4C487BEC262A.title: "&8&lMisc&r &9⚒"
+	chapter_group.49042A4D0EC96D55.title: "Storage"
 	file.0000000000000001.title: "&lCraftoria"
 	quest.000F7897FF9ED7DC.quest_desc: ["There are &a4 stages&f of growth, just like &bCertus Quartz Clusters&f. While in the &afirst three stages&f you will get &bEntro Dust&f, But in the &afourth stage&f you can get &bEntroized Crystals&f."]
 	quest.00237AB9C48C8A9B.quest_desc: ["The &bMatter Condencer &fwill allow you to &6make &bMatter Balls&f for the &bPaint Gun&f, and &6make&b Singularities &fat the cost of &aitem entities&f."]
@@ -277,7 +281,6 @@
 	]
 	quest.0AC7D844C55119E1.title: "Wrench"
 	quest.0AD392F5527093C2.quest_desc: ["Used as a housing to hold MEGA Storage Component, for Fluid Storage."]
-	quest.0AD53F3BDA8DB601.title: "Modern Industrialization"
 	quest.0B2FF8169FD3812D.quest_desc: [
 		"  &bSteel Hatches&r have &6double the capacity of bronze hatches&r, increasing one inventory slot to 2, and increasing a multi-block's max steam usage rate from 2 EU/t to 4 EU/t. As long as there is a single steel fluid input hatch receiving steam, your entire multi-block is upgraded to a \"steel tier.\""
 		""
@@ -762,7 +765,6 @@
 		""
 		"{image:justdirethings:block/coalblock_t2 width:100 height:100 align:center fit:true}"
 	]
-	quest.1A23087241E329A3.title: "&9Easy Villagers"
 	quest.1A368E5AD57C10E1.quest_desc: [
 		"This is an &6advanced version&r of the &bLiquid Compressor&r. "
 		""
@@ -1132,7 +1134,6 @@
 	quest.24B44DAA8C43CF11.title: "Configurator"
 	quest.24E5FA9129987168.quest_desc: ["Exact same thing as the &bWireless Terminal&f, but this one has a &bCrafting Interface&f in it!"]
 	quest.24E5FA9129987168.title: "Wireless Crafting Terminal"
-	quest.2506FE8426272A1A.title: "Applied Energistics"
 	quest.250D1E2BFE6E0D50.quest_desc: [
 		"  Upgrade those &bLarge Steam Boilers&r already! "
 		""
@@ -1272,6 +1273,7 @@
 	]
 	quest.2AABAC42E7880AA1.title: "Elite Pressurized Tube"
 	quest.2AB5183A0BD8D387.quest_desc: ["Used to multiply you crafting speed without taking up the space"]
+	quest.2ADDD30536A7FF68.quest_desc: ["&bReactor Glass&r is a &3super enhanced clear material&r that can be used for the center walls of the &bFusion reactor&r. Everyone likes to &6see&r pretty colors (that may or may not &4obliterate&r you)."]
 	quest.2B1717F5D6E20B79.quest_desc: [
 		"  With an &bElectrolyzer&r, enough time and power, and your freshly made &bSingularity&r, you can extract large amounts of energy through &bQuantum Hawking Radiation&r in the form of &bUniversally Usable Matter&r, also known simply as &dUU Matter&r."
 		""
@@ -1357,7 +1359,6 @@
 		"{image:justdirethings:block/blockswappert2_side width:100 height:100 align:center}"
 	]
 	quest.2CE7390F7567D9E2.quest_subtitle: "Portals in Machine Form"
-	quest.2CE943AD7CB99FF8.title: "Backpacks"
 	quest.2D2101F97024F2E0.quest_subtitle: "Congratulations! You've completed Powah!"
 	quest.2D4170B5AD28DCBF.quest_desc: [
 		"  The best single block &bDiesel Generator&r you can make. &6It'll output up to 1024 eu/t&r from any of the various fluids listed in your REI."
@@ -1795,7 +1796,7 @@
 	quest.3D5B74D9663AAB5A.title: "Heat Generator"
 	quest.3D7406A517FA591D.quest_desc: ["Using these &bMaterials&r you'll be able to &6construct&r you first &bPressure Chamber&r. "]
 	quest.3D7406A517FA591D.title: "Your First Pressure Chamber"
-	quest.3D9DED933A80CAFA.quest_desc: ["This is used to copy and paste setting of &bME Devices&f. This is also used to &6link &bP2P Tunnels&f."]
+	quest.3D9DED933A80CAFA.quest_desc: ["This is used to &6copy and paste&r settings of &bME Devices&f. This is also used to &6link &bP2P Tunnels&f."]
 	quest.3D9DED933A80CAFA.title: "Memory Card"
 	quest.3DC47060EEAB8975.quest_desc: ["Once you have &6replicated &fyour &bsulfur &fit will all go directly into this machine. You may &6Right-Click &fwith your hand and retrieve your &bsulfur."]
 	quest.3DC47060EEAB8975.quest_subtitle: "And its all here"
@@ -1820,6 +1821,7 @@
 	quest.3F8B9421E85C047D.title: "Water for Chemical Washing"
 	quest.3FB60EC2EE4D0435.quest_desc: ["The &bEnchanter's Tools&r can be applied with &dSpells&r at the &bScribe's Table&r."]
 	quest.3FB60EC2EE4D0435.title: "Enchanter's Tools"
+	quest.400274581B9BD5FC.quest_desc: ["The &bLaser Focus Matrix&r is used to ignite your &bFusion Reactor&r by focusing the beam of a &claser&r directly to the core of the reactor."]
 	quest.40148704F9175B05.quest_desc: [
 		"- Press &eB&r to enable &5Night Vision&r."
 		""
@@ -2079,7 +2081,6 @@
 		"It can also be &6placed&r in a &8Furnace&r."
 	]
 	quest.46C3D171AB4AA489.title: "&3Kerosene"
-	quest.4709E4CC589FF807.title: "Mekanism"
 	quest.4722157BC8D3B965.quest_desc: [
 		"  A sleek bronze casing with a vicious spinning blade inside will give you even &6better cutting ratios&r than you ever experienced using your &bForge Hammer&r. &aTime for extra bolts, gears, rings, and rods!&r"
 		""
@@ -2302,14 +2303,8 @@
 	quest.4FBA0ECAC8AEBCD8.title: "Nuclear Fission"
 	quest.4FDD66D88C90C951.quest_desc: ["To obtain the &bSpawner &fyou must &6break &fa &bvanilla spawner &fwith&a Silk Touch&f. Every &bSpawner&f will have the same stats and can be modified to be better."]
 	quest.4FDD66D88C90C951.title: "&cApothic Spawners"
-	quest.5021D7D55A0B3533.quest_desc: [
-		"&4Watch out! &r"
-		""
-		"&eChemical burns&r really hurt! It's your time to get into the world of &echemistry&r. "
-		""
-		"Some &echemicals&r are &asafe&r, but make sure you don't mix two of the &cwrong things!&r"
-	]
-	quest.5021D7D55A0B3533.title: "Chemical Burns Hurt"
+	quest.5021D7D55A0B3533.quest_desc: ["Welcome to a world of &bChemistry&r! Some &echemicals&r are normally &cdangerous&r, but luckily here, your body is &7resistant&r to those dangerous chemicals."]
+	quest.5021D7D55A0B3533.title: "Time for Chemistry!"
 	quest.508A650402DC24F5.quest_desc: ["The casing for your &bSupercritical Phase Shifter&r is expensive, but tough. "]
 	quest.508A650402DC24F5.title: "SPS Casing"
 	quest.50BFFEAF92B72965.quest_desc: [
@@ -2544,8 +2539,6 @@
 	quest.5A4E9D4056DA2C67.title: "Elite Universal Cable"
 	quest.5AB4D1D72EFD4428.quest_desc: ["The &bInduction Port&r will allow you to interface with your &9Induction Matrix&r. "]
 	quest.5AB4D1D72EFD4428.title: "Induction Port"
-	quest.5AD93FC0F20FDAB8.quest_desc: ["The &bCharged Staff&f lets you attack enemies with energy!&6 Charge it up&f in the &bCharger&f."]
-	quest.5AD93FC0F20FDAB8.title: "Charged Staff"
 	quest.5B1D88BFEA39DBAE.quest_desc: ["To make &bFluix Crystals &6throw &bCharged Certus Quartz Crystal&f, &bNether Quartz&f, and &bRedstone Dust&f into a pool of &bwater &fand wait."]
 	quest.5B1D88BFEA39DBAE.quest_subtitle: "A very important ingredient "
 	quest.5B1D88BFEA39DBAE.title: "Fluix Crystal"
@@ -2976,7 +2969,7 @@
 	quest.6B0418E2AC06FF09.quest_subtitle: "Feel the Burn"
 	quest.6B0418E2AC06FF09.title: "Blazegold Tool \\& Weapons"
 	quest.6B275A372AE020A8.quest_desc: [
-		"  &bPFC&r + &bH2O&r → &5Portal Fluid’&r"
+		"  &bPFC&r + &bPolymorphic Fluid&r → &5Portal Fluid’&r"
 		""
 		"  &5Portal Fluid’&r + &bgoo&r* ➠ &dPortal Fluid’’&r"
 		""
@@ -3021,6 +3014,7 @@
 	quest.6D18BFC48A82E53E.quest_desc: ["Through the power of gravity, &6throwing&b 1 Gold Ingot, 1 Lapis Lazuli, and 1 Entro dust&f you will obtain&b 1 Entro Infused Ingot&f."]
 	quest.6D702C00A519AD12.quest_desc: ["The &bElite Purifying Factory&r allows you to process up to &a7&r purifying recipes at once."]
 	quest.6D702C00A519AD12.title: "Elite Purifying Factory"
+	quest.6DDA86A3B4C0ACC1.title: "Mining Gadget"
 	quest.6DED76B2F4AFD02F.quest_desc: ["&bDry ice &fis extremely rare to find underground, but you can make it if you have enough &bpower and ice."]
 	quest.6DED76B2F4AFD02F.quest_subtitle: "A little cold to the touch"
 	quest.6DED76B2F4AFD02F.title: "Dry Ice"
@@ -3348,6 +3342,10 @@
 	quest.78ACE4A0D8338FD1.title: "Gunpowder"
 	quest.78B4459314C86937.quest_desc: ["The &bArcane Pedestal&r is &6used&r around the &bRitual Brazier&r and &bEnchanting Apparatus&r, you can put &68&r around each."]
 	quest.78B4459314C86937.title: "Arcane Pedestal"
+	quest.78B534077889E357.quest_desc: [
+		""
+		"{image:expandedstorage:item/diamond_to_obsidian_conversion_kit width:100 height:100 align:center}"
+	]
 	quest.78C746829110FC35.quest_desc: ["The &bLaser&r is an advanced form of &eenergy transmission&r that &6produces&r an immensely strong beam of photons that can &4damage&r &2entities&r, &cignite TNT&r, &7break blocks&r, and even &eassist in starting&r your future &9reactor&r."]
 	quest.78C746829110FC35.title: "Laser"
 	quest.78EDBDED3BFEC145.quest_desc: [
@@ -3546,7 +3544,6 @@
 	]
 	quest.7DA234839458B333.title: "Flamethrower"
 	quest.7DD81584380EE8F7.quest_desc: ["A &bwand &fused to link &6Mercurial Logistics"]
-	quest.7E0381829E73723E.title: "Banks and Tanks"
 	quest.7E194859BAD7B5A8.quest_subtitle: "Applies potion effect to subjects in range"
 	quest.7E49DB806DD04701.quest_desc: [""]
 	quest.7ED9955750255A69.quest_subtitle: "Complete the quest chapter."
@@ -3648,7 +3645,6 @@
 	task.4552085BF5330776.title: "OK, Let Me Cook"
 	task.487C2DBC60537E92.title: "Specialty Travelers Backpacks"
 	task.4B733AF93D7D28C4.title: "check the filter"
-	task.4C8E8440B3AD8FD2.title: "I understand."
 	task.4D5812F798FB8C8C.title: "&dTheurgy &9100%"
 	task.4F4699F9117BC270.title: "Pre-Programmed Drones"
 	task.5001206B16F5D7A0.title: "Modern Industrialization Storage"
@@ -3665,6 +3661,7 @@
 	task.63DAD8D3277DA248.title: "Evolving Manufacturing Index"
 	task.659005F19206B35C.title: "Building Gadgets"
 	task.66BF2FED6B091A68.title: "Exploration!"
+	task.68513782E03F702F.title: "Reactor Planning"
 	task.6A42FE8CB215ACAD.title: "Artifacts"
 	task.6C82FF1670E71374.title: "&aMekanism &3100%"
 	task.708EE345AEBB270B.title: "Make ShadowPulse Soil"
