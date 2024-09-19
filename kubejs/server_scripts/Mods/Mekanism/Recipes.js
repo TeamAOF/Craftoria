@@ -117,6 +117,3 @@ ServerEvents.recipes((e) => {
   oxidizing('200x craftoria:plutonium_oxide', '#c:ingots/plutonium');
   chem_infuser('400x mekanism:uranium_hexafluoride', '200x mekanism:hydrofluoric_acid', '1x craftoria:plutonium_oxide');
 });
-//860,400 mb burned per min
-//100,00 mb per ingot, 8.6 ingots per min
-//1 ingot every 7 seconds
