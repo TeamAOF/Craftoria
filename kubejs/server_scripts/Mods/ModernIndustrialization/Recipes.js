@@ -3,22 +3,6 @@
 ////////////////////////
 
 ServerEvents.recipes((e) => {
-  miAssembler(
-    e,
-    ['modern_industrialization:uu_matter', 500],
-    [
-      ['modern_industrialization:quantum_machine_hull', 1],
-      ['modern_industrialization:quantum_upgrade', 4],
-      ['modern_industrialization:quantum_circuit', 4],
-      ['modern_industrialization:quantum_tank', 4],
-      ['modern_industrialization:quantum_barrel', 4],
-      ['mekanism:pellet_antimatter', 16],
-    ],
-    ['modern_industrialization:replicator', 1],
-    1000000,
-    2000
-  );
-
   // Obsidian Dust
   miMacerator(e, ['minecraft:obsidian', 1], [['mekanism:dust_obsidian', 4]], 2, 200);
 
