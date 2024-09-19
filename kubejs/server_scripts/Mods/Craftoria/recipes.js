@@ -23,4 +23,10 @@ ServerEvents.recipes((e) => {
   });
 
   e.shapeless('craftoria:smokey_bricks_button', ['craftoria:smokey_bricks']);
+
+  e.shaped('minecraft:name_tag', ['  n', ' ps', 'p  '], {
+    n: '#c:nuggets/iron',
+    p: 'minecraft:paper',
+    s: '#c:slimeballs',
+  }).id('craftoria:name_tag');
 });
