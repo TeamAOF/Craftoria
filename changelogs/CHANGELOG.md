@@ -2,6 +2,8 @@
 
 _NeoForge Loader 21.1.56_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.3.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.3.0.md)_
 
+## DISCLAIMER: Relics levels are reset with this update due to internal changes.
+
 ### Changes/Improvements ⭐
 
 * Added Quantium fluid.
