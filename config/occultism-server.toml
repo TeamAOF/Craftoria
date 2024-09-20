@@ -93,57 +93,6 @@
 	#Range: 0.05 ~ 1.7976931348623157E308
 	ritualDurationMultiplier = 1.0
 
-#Dimensional Mineshaft Settings
-[dimensional_mineshaft]
-
-	#Miner Spirit Settings
-	[dimensional_mineshaft.miner_foliot_unspecialized]
-		#The amount of time it takes the spirit to perform one mining operation.
-		#Range: > 0
-		maxMiningTime = 400
-		#The amount of blocks the spirit will obtain per mining operation
-		#Range: > 0
-		rollsPerOperation = 1
-		#The amount of mining operations the spirit can perform before breaking.
-		#Range: > 0
-		durability = 1000
-
-	#Miner Spirit Settings
-	[dimensional_mineshaft.miner_djinni_ores]
-		#The amount of time it takes the spirit to perform one mining operation.
-		#Range: > 0
-		maxMiningTime = 300
-		#The amount of blocks the spirit will obtain per mining operation
-		#Range: > 0
-		rollsPerOperation = 1
-		#The amount of mining operations the spirit can perform before breaking.
-		#Range: > 0
-		durability = 400
-
-	#Miner Spirit Settings
-	[dimensional_mineshaft.miner_afrit_deeps]
-		#The amount of time it takes the spirit to perform one mining operation.
-		#Range: > 0
-		maxMiningTime = 200
-		#The amount of blocks the spirit will obtain per mining operation
-		#Range: > 0
-		rollsPerOperation = 1
-		#The amount of mining operations the spirit can perform before breaking.
-		#Range: > 0
-		durability = 800
-
-	#Miner Spirit Settings
-	[dimensional_mineshaft.miner_marid_master]
-		#The amount of time it takes the spirit to perform one mining operation.
-		#Range: > 0
-		maxMiningTime = 100
-		#The amount of blocks the spirit will obtain per mining operation
-		#Range: > 0
-		rollsPerOperation = 1
-		#The amount of mining operations the spirit can perform before breaking.
-		#Range: > 0
-		durability = 1600
-
 #Item Settings
 [items]
 	#Allow the Divining Rod to attune to any ore

@@ -10,7 +10,6 @@ ServerEvents.recipes(event => {
     'croptopia:blackberry_seed',
     'croptopia:blueberry_seed',
     'croptopia:broccoli_seed',
-    'croptopia:cabbage_seed',
     'croptopia:cantaloupe_seed',
     'croptopia:cauliflower_seed',
     'croptopia:celery_seed',
@@ -50,7 +49,6 @@ ServerEvents.recipes(event => {
     'croptopia:strawberry_seed',
     'croptopia:tea_seed',
     'croptopia:tomatillo_seed',
-    'croptopia:tomato_seed',
     'croptopia:turmeric_seed',
     'croptopia:turnip_seed',
     'croptopia:vanilla_seeds',
@@ -153,6 +151,23 @@ ServerEvents.recipes(event => {
   ];
 
   bwg_saplings.forEach((sapling) => {
+    event.custom({
+      type: 'farmingforblockheads:market',
+      category: 'farmingforblockheads:saplings',
+      preset: 'minecraft:saplings',
+      result: { item: sapling, count: 1 }
+    })
+  });
+
+  const ars_saplings = [
+    'ars_nouveau:blue_archwood_sapling',
+    'ars_nouveau:red_archwood_sapling',
+    'ars_nouveau:purple_archwood_sapling',
+    'ars_nouveau:green_archwood_sapling',
+    'ars_elemental:yellow_archwood_sapling'
+  ];
+
+  ars_saplings.forEach((sapling) => {
     event.custom({
       type: 'farmingforblockheads:market',
       category: 'farmingforblockheads:saplings',

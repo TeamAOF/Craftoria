@@ -30,7 +30,7 @@ abilitiesData:
             # Highest level to which the ability can be upgraded
             maxLevel: 10
             # Relic level at which the ability becomes unlocked
-            requiredLevel: 0
+            requiredLevel: 5
             # Number of leveling points needed to increase the ability level
             requiredPoints: 1
             stats:
@@ -56,7 +56,7 @@ levelingData:
     # Amount of experience required to level up to relic level 1
     initialCost: 100
     # Maximum level of the relic
-    maxLevel: 10
+    maxLevel: 15
     # Increment in experience required for each subsequent level of the relic
     step: 100
 lootData:

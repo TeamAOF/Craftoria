@@ -210,6 +210,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			icon: {
+				id: "expandedstorage:copper_chest"
+			}
 			id: "155DFB45ABCB5C6D"
 			rewards: [
 				{
@@ -230,8 +233,8 @@
 			]
 			shape: "hexagon"
 			tasks: [{
-				id: "12CBA5C9152C43A9"
-				item: { count: 1, id: "expandedstorage:copper_chest" }
+				id: "715124C059F9FE13"
+				item: { count: 1, id: "expandedstorage:wood_to_copper_conversion_kit" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -239,6 +242,9 @@
 		}
 		{
 			dependencies: ["155DFB45ABCB5C6D"]
+			icon: {
+				id: "expandedstorage:iron_chest"
+			}
 			icon_scale: 1.2d
 			id: "52C9829E2A5F03AC"
 			rewards: [{
@@ -250,7 +256,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "745D712067771E10"
-				item: { count: 1, id: "expandedstorage:iron_chest" }
+				item: { count: 1, id: "expandedstorage:copper_to_iron_conversion_kit" }
 				type: "item"
 			}]
 			x: 6.8d
@@ -258,6 +264,9 @@
 		}
 		{
 			dependencies: ["52C9829E2A5F03AC"]
+			icon: {
+				id: "expandedstorage:gold_chest"
+			}
 			icon_scale: 1.4d
 			id: "68027ECCCFA79269"
 			rewards: [{
@@ -269,7 +278,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "32BDE9F9BAFE430C"
-				item: { count: 1, id: "expandedstorage:gold_chest" }
+				item: { count: 1, id: "expandedstorage:iron_to_gold_conversion_kit" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -277,6 +286,9 @@
 		}
 		{
 			dependencies: ["68027ECCCFA79269"]
+			icon: {
+				id: "expandedstorage:diamond_chest"
+			}
 			icon_scale: 1.6d
 			id: "26B779FF8E0F6C2E"
 			rewards: [{
@@ -288,7 +300,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "29EA2C7E9D0C4FB3"
-				item: { count: 1, id: "expandedstorage:diamond_chest" }
+				item: { count: 1, id: "expandedstorage:gold_to_diamond_conversion_kit" }
 				type: "item"
 			}]
 			x: 6.75d

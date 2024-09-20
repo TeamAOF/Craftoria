@@ -1,0 +1,39 @@
+mod_badges = []
+mod_parents = []
+
+[main]
+	#Allowed Values: ASCENDING, DESCENDING
+	sorting = "ASCENDING"
+	compact_list = false
+	#Allowed Values: CLASSIC, REPLACE_REALMS, SHRINK, ICON
+	mods_button_style = "CLASSIC"
+	#Allowed Values: REPLACE, INSERT, ICON
+	game_menu_button_style = "REPLACE"
+	#Allowed Values: TITLE_SCREEN, MODS_BUTTON, TITLE_SCREEN_AND_MODS_BUTTON, NONE
+	mod_count_location = "TITLE_SCREEN"
+	easter_eggs = true
+	random_java_colors = false
+	translate_names = true
+	translate_descriptions = true
+	quick_configure = true
+	modify_title_screen = true
+	modify_game_menu = true
+	config_mode = false
+	disable_drag_and_drop = false
+
+[hide]
+	show_libraries = false
+	hide_mod_links = false
+	hide_mod_license = false
+	hide_badges = false
+	hide_mod_credits = false
+	hide_config_buttons = false
+	hide_badge_buttons = true
+	hidden_mods = []
+	hidden_configs = []
+	library_list = []
+
+[count]
+	count_hidden_mods = true
+	count_children = true
+	count_libraries = true

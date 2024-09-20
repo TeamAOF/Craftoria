@@ -1,3 +1,90 @@
+## Craftoria | v1.3.0
+
+_NeoForge Loader 21.1.54_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.3.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.3.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added Quantium fluid.
+* Added Quantum Molds.
+* Reworked Replicator & Quantum gear recipes.
+* Revamped some vanilla textures we currently change.
+* Added MI plutonium -> Mek Fissile Fuel.
+* Added custom bucket textures for modded entries.
+* Disabled Crag Gardens due to performance issues.
+* Reworked Storage quest chapter with new design.
+* Reworked Tools & Armory quest chapter with new design.
+* Reworked Monster Mayhem quest chapter with new design.
+* Reorganized Mekanism quest dependencies.
+* Unified plastics.
+* Changed JDT advanced machines recipes to use IF machine frames instead of MI hulls.
+* Added MI brick dust recipe through Meka crusher.
+* Increased Digiminer max radius from 32 -> 64.
+* Added enchant descriptions for Eternal Starlight.
+* Goo quests dependencies has been reduced.
+* Updated Overdrive Module texture.
+* Ultimine now properly vein mines deepslate/regular ore when next eachother.
+* Changed some of MI's assembler recipes to be more efficient.
+* Added the famous Replicator Blacklist.
+* Added ars saplings to market.
+* Disabled Mekanisms radiation and reactor meltdown.
+* Added some QoL recipes/changes for MI. (Cobble gen recipes are now no-consume)
+* Added Cinnamon from Cinnamon Logs/Wood in FD cutting board and Mek sawmill.
+* Made sure loot tables don't have any removed items.
+* HNN mimic Fabricator drops updated to contain all artifacts(-removed ones).
+* Disabled MI FTBQ integration due to performance reasons.
+* Added Silver Ore to MI quarry.
+* Disabled spark background profiler.
+* Enabled digiminer easy filters, allows dragging entries from EMI into the target slot of Digital Miner filters.
+* Memory Card quest no longer depend on Charged Staff.
+* Made AE2 Budding Block quests a checkmark task.
+* Moved Quantum Ring & Singularity quests.
+* Added recipe for nametags.
+* Lowered the skull shard drop chance from 100% -> 30%.
+* Added official servers to server list by default.
+* Added tooltip for CFB sinks that tells you it doesn't provide infinite water.
+* EI Large Electric Furnace can now process 256 items at once with 25% energy cost using superconductor coils.
+
+### Bug Fixes 🪲
+
+* Fixed Croptopia tools being consumed in crafting recipes
+* Fixed PNC trophy quest dependencies.
+* Fixed Water -> Polymorphic Fluid quest.
+* Fixed arrow not showing when charging bow.
+* Fixed BWG Chest Boats not saving data.
+* Fixed occultism quests using white candle tasks.
+* Fixed glassential entries having missing recipes.
+* Fixed replicator recipe using incorrect input amounts for max slot allowed.
+* Fixed bucket textures being 1 pixel off.
+* Fixed brine quest not completing.
+* Fixed graves being very bright.
+* Fixed entry of Rage Glove being included twice in Relics & Artifacts quest chapter.
+* Fixed Sweeping Edge enchant description.
+* Fixed Flux Transformer using the incorrect ratio for EU -> FE, now 25x.
+* Fixed Flux Transformers capacity + tier.
+
+### Added Mods ✅
+
+  * [Better Modlist](https://www.curseforge.com/minecraft/mc-mods/better-modlist-neoforge)
+  * [Common Capabilities](https://www.curseforge.com/minecraft/mc-mods/common-capabilities)
+  * [Cyclops Core](https://www.curseforge.com/minecraft/mc-mods/cyclops-core)
+  * [EMI Enchanting](https://www.curseforge.com/minecraft/mc-mods/emi-enchanting)
+  * [Industrial Foregoing](https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing)
+  * [Integrated Crafting](https://www.curseforge.com/minecraft/mc-mods/integrated-crafting)
+  * [Integrated Dynamics](https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics)
+  * [Integrated Terminals](https://www.curseforge.com/minecraft/mc-mods/integrated-terminals)
+  * [Integrated Tunnels](https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels)
+  * [playerAnimator](https://www.curseforge.com/minecraft/mc-mods/playeranimator)
+  * [Radium Reforged](https://www.curseforge.com/minecraft/mc-mods/radium-reforged)
+  * [Reasonable Defaults](https://www.curseforge.com/minecraft/mc-mods/reasonable-defaults)
+
+### Removed Mods ❌
+
+  * [Easy Piglins](https://www.curseforge.com/minecraft/mc-mods/easy-piglins) (Performance Issues)
+  * [Easy Villagers](https://www.curseforge.com/minecraft/mc-mods/easy-villagers) (Performance Issues)
+  * [Just Enough Archaeology](https://www.curseforge.com/minecraft/mc-mods/just-enough-archaeology)
+  * [Transmog](https://www.curseforge.com/minecraft/mc-mods/transmog) (Performance Issues, readded once fixed)
+---
+
 ## Craftoria | v1.2.0
 
 _NeoForge Loader 21.1.51_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.2.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.2.0.md)_
