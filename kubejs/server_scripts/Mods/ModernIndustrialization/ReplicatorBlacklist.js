@@ -115,6 +115,9 @@ ServerEvents.tags('item', (e) => {
 
     'apothic_enchanting:library',
     'apothic_enchanting:ender_library',
+
+    '@tankstorage',
+    '@bankstorage',
   ];
 
   let exclusions = [
@@ -123,6 +126,10 @@ ServerEvents.tags('item', (e) => {
     'industrialforegoing:infinity_charger',
     'mekanism:scuba_tank',
     'mekanism:radioactive_waste_barrel',
+    'tankstorage:tank_dock',
+    'tankstorage:tank_link',
+    'bankstorage:bank_dock',
+    'bankstorage:bank_link',
   ];
   e.add('modern_industrialization:replicator_blacklist', additions).remove(exclusions);
 });
