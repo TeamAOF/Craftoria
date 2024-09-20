@@ -8,6 +8,7 @@ ServerEvents.tags('item', (e) => {
     'ae2wtlib:wireless_universal_terminal',
     'megacells:bulk_item_cell',
     'megacells:radioactive_chemical_cell',
+    'extendedae:package',
 
     /pneumaticcraft:.*_(tank|chest)$/,
     /pneumaticcraft:.*drone/,
@@ -76,12 +77,17 @@ ServerEvents.tags('item', (e) => {
     'mekanismgenerators:gas_burning_generator',
     'mekanism:pellet_antimatter',
 
+    /^occultism:storage_stabilizer_/,
     'occultism:storage_controller',
     'occultism:soul_gem',
     'occultism:soul_shard',
+    'occultism:familiar_ring',
     'occultism:satchel',
+    'occultism:ritual_satchel_t1',
+    'occultism:ritual_satchel_t2',
 
     'ars_nouveau:mob_jar',
+    'ars_nouveau:source_jar',
     'ars_elemental:curio_bag',
     'ars_elemental:caster_bag',
     'ars_additions:handy_haversack',
@@ -95,12 +101,20 @@ ServerEvents.tags('item', (e) => {
     'justdirethings:fluid_canister',
     'justdirethings:fuel_canister',
     'justdirethings:pocket_generator',
+    'justdirethings:experienceholder',
 
     /^modern_industrialization:quantum_.*/,
     'modern_industrialization:replicator',
     'modern_industrialization:helium_plasma_bucket',
     'modern_industrialization:singularity',
     'modern_industrialization:nuke',
+
+    'gag:time_sand_pouch',
+
+    'hyperbox:hyperbox',
+
+    'apothic_enchanting:library',
+    'apothic_enchanting:ender_library',
   ];
 
   let exclusions = [
