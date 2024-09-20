@@ -4,8 +4,9 @@ ServerEvents.recipes(event => {
       type: 'farmingforblockheads:market',
       category: `farmingforblockheads:${category}`,
       preset: `minecraft:${category}`,
-      result: { item: seed, count: 1 }
+      result: { item: item, count: 1 }
     };
+    event.custom(recipe).id(`craftoria:ffb_market/${item.split(':')[0]}/${item.split(':')[1]}`);
   }
 
   const croptopia_seeds = [
