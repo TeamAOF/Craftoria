@@ -1079,9 +1079,10 @@
 			dependencies: ["32677D1F144A1184"]
 			id: "79526A9D09D7FB6D"
 			tasks: [{
-				id: "1861ACF3FAFE44BB"
-				item: { count: 1, id: "occultism:spawn_egg/demonic_husband" }
-				type: "item"
+				entity: "occultism:demonic_husband"
+				id: "2EA525DC9AE0085D"
+				type: "kill"
+				value: 1L
 			}]
 			x: -8.5d
 			y: -6.0d
