@@ -1,6 +1,6 @@
 ## Craftoria | v1.3.0
 
-_NeoForge Loader 21.1.54_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.3.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.3.0.md)_
+_NeoForge Loader 21.1.56_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.3.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.3.0.md)_
 
 ### Changes/Improvements ⭐
 
