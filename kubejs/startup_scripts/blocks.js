@@ -1,6 +1,6 @@
-StartupEvents.registry('block', event => {
-
-  event.create('craftoria:blaze_block')
+StartupEvents.registry('block', (event) => {
+  event
+    .create('craftoria:blaze_block')
     .displayName('Blaze Block')
     .soundType('deepslate_bricks')
     .hardness(3)
@@ -9,7 +9,8 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_iron_tool')
     .requiresTool(true);
 
-  event.create('craftoria:smokey_bricks')
+  event
+    .create('craftoria:smokey_bricks')
     .displayName('Smokey Brick')
     .soundType('deepslate_bricks')
     .hardness(3)
@@ -18,7 +19,8 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_stone_tool')
     .requiresTool(true);
 
-  event.create('craftoria:smokey_bricks_slab', "slab")
+  event
+    .create('craftoria:smokey_bricks_slab', 'slab')
     .displayName('Smokey Brick Slab')
     .soundType('deepslate_bricks')
     .hardness(3)
@@ -27,7 +29,8 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_stone_tool')
     .requiresTool(true);
 
-  event.create('craftoria:smokey_bricks_stairs', "stairs")
+  event
+    .create('craftoria:smokey_bricks_stairs', 'stairs')
     .displayName('Smokey Brick Stairs')
     .soundType('deepslate_bricks')
     .hardness(3)
@@ -36,7 +39,8 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_stone_tool')
     .requiresTool(true);
 
-  event.create('craftoria:smokey_bricks_wall', "wall")
+  event
+    .create('craftoria:smokey_bricks_wall', 'wall')
     .displayName('Smokey Brick Wall')
     .soundType('deepslate_bricks')
     .hardness(3)
@@ -45,7 +49,8 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_stone_tool')
     .requiresTool(true);
 
-  event.create('craftoria:smokey_bricks_button', "button")
+  event
+    .create('craftoria:smokey_bricks_button', 'button')
     .displayName('Smokey Brick Button')
     .soundType('deepslate_bricks')
     .hardness(3)
@@ -54,7 +59,8 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_stone_tool')
     .requiresTool(true);
 
-  event.create('craftoria:completionist_cup', "cardinal")
+  event
+    .create('craftoria:completionist_cup', 'cardinal')
     .displayName('Completionist Cup')
     .defaultCutout()
     .box(14, 10, 7, 16, 14, 9, true)
@@ -69,10 +75,11 @@ StartupEvents.registry('block', event => {
     .soundType('metal')
     .property(BlockProperties.WATERLOGGED)
     .tagBlock('minecraft:mineable/pickaxe')
-    .item(item => {
+    .tagItem('modern_industrialization:replicator_blacklist')
+    .item((item) => {
       item
         .useAnimation('drink')
-        .useDuration(itemStack => 20)
+        .useDuration((itemStack) => 20)
         .use((level, player, hand) => true)
         .finishUsing((itemstack, level, entity) => {
           let effects = entity.potionEffects;
