@@ -1,3 +1,40 @@
+## Craftoria | v1.3.1
+
+_NeoForge Loader 21.1.57_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.3.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.3.1.md)_
+
+### Changes/Improvements ⭐
+
+* Re-enabled radiation & meltdown.
+* Disabled IF donate button.
+* Added Menril Saplings to Market.
+* Made crafting Quantum Gear take longer.
+* Removed Boon of The Earth enchantment due to exploits.
+* Added more replicator blacklist entries.
+* Disallow opening other players backpacks.
+* Disabled mobs with backpacks.
+* Nerfed Refined Obsidian tools durability.
+* Split MI and IF gears up for recipes.
+
+### Bug Fixes 🪲
+
+* Fixed PNC trophy quest dependencies.
+* Fixed AE2 Guide Book paging crashing.
+* Fixed Demonic Husband quest using incorrect task.
+* Fixed Occultism quest chapter typos.
+* Fixed EBF tier localized name.
+* Fixed quantum armor stacking.
+* Fixed AE2 silicon -> MI silicon recipe.
+* Fixed opening wireless connector crashing.
+
+### Added Mods ✅
+
+  * [More Red x CC:Tweaked Compat](https://www.curseforge.com/minecraft/mc-mods/more-red-x-cc-tweaked-compat)
+
+### Removed Mods ❌
+
+  * [Radium Reforged](https://www.curseforge.com/minecraft/mc-mods/radium-reforged)
+---
+
 ## Craftoria | v1.3.0
 
 _NeoForge Loader 21.1.56_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.3.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.3.0.md)_

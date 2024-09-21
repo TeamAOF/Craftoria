@@ -839,7 +839,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "5C26D5B4C97E54D7"
-				item: { count: 1, id: "artifacts:shock_pendant" }
+				item: { components: { "relics:data": { abilities: { abilities: { lightning: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.22777d }, damage: { initialValue: 1.0632d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:shock_pendant" }
 				type: "item"
 			}]
 			x: -14.375d
@@ -859,7 +859,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "1FD16913FAFBE11D"
-				item: { count: 1, id: "artifacts:flame_pendant" }
+				item: { components: { "relics:data": { abilities: { abilities: { fire: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.34627d }, time: { initialValue: 2.23465d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:flame_pendant" }
 				type: "item"
 			}]
 			x: -13.125d
@@ -879,7 +879,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "1B7F970720E9D150"
-				item: { count: 1, id: "artifacts:thorn_pendant" }
+				item: { components: { "relics:data": { abilities: { abilities: { poison: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { chance: { initialValue: 0.2817d }, multiplier: { initialValue: 0.06884d }, time: { initialValue: 2.7336d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:thorn_pendant" }
 				type: "item"
 			}]
 			x: -14.375d
