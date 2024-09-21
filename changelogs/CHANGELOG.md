@@ -32,6 +32,7 @@ _NeoForge Loader 21.1.57_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
 ### Removed Mods ❌
 
+  * [AE2 Dark Mode](https://www.curseforge.com/minecraft/texture-packs/ae2-dark-mode)
   * [Radium Reforged](https://www.curseforge.com/minecraft/mc-mods/radium-reforged)
 ---
 
