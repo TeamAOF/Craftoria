@@ -9,3 +9,9 @@ RecipeViewerEvents.removeEntries('item', (event) => {
     event.remove(item);
   });
 });
+
+RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
+  for (let i = 1; i <= 5; i++) {
+    event.remove(Ingredient.of(`minecraft:enchanted_book[stored_enchantments={levels:{"apothic_enchanting:boon_of_the_earth":${i}}}]`));
+  }
+});

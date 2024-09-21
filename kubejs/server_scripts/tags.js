@@ -22,6 +22,8 @@ ServerEvents.tags('item', (e) => {
   e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
 
   e.add('c:plastic', ['pneumaticcraft:plastic']);
+
+  e.removeAll('apothic_enchanting:boon_drops');
 });
 
 ServerEvents.tags('block', (e) => {

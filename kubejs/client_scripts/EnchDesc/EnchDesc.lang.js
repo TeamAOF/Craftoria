@@ -51,5 +51,9 @@ ClientEvents.lang('en_us', (event) => {
     'enchantment.eternal_starlight.fearless.desc': 'Pushes you towards the hit enemy.',
     'enchantment.eternal_starlight.poisoning.desc': 'Poisons enemies that hit you.',
     'enchantment.eternal_starlight.soul_snatcher.desc': 'Increases the damage of Chain of Souls.',
+
+    // Apothic Enchanting Enchantment Descriptions
+    'enchantment.apothic_enchanting.boon_of_the_earth': 'Disabled',
+    'enchantment.apothic_enchanting.boon_of_the_earth.desc': 'Disabled.',
   });
 });
