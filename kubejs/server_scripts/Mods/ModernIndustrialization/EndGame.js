@@ -30,9 +30,9 @@ ServerEvents.recipes((e) => {
     .id('craftoria:end_game/quantum_upgrade_from_quantium');
 
   ['helmet', 'chestplate', 'leggings', 'boots', 'sword'].forEach((item) => {
-    e.remove({ output: `modern_industrialization:quantum_${item}` });
+    e.remove({output: `modern_industrialization:quantum_${item}`});
     e.recipes.modern_industrialization
-      .heat_exchanger(8192 * 16, 20)
+      .heat_exchanger(8192 * 16, 20 * 10)
       .itemIn(`craftoria:quantum_${item}_mold`, 0)
       .itemOut(`modern_industrialization:quantum_${item}`)
       .fluidIn('craftoria:quantium', 5)

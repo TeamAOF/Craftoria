@@ -4,4 +4,11 @@ ItemEvents.modification((e) => {
       item.craftingRemainder = Item.of(`croptopia:${cItem}`).item;
     });
   });
+
+  ['helmet', 'chestplate', 'leggings', 'boots', 'sword'].forEach((qItem) => {
+    e.modify(`modern_industrialization:quantum_${qItem}`, (item) => {
+      item.maxStackSize = 1;
+      item.rarity = 'epic';
+    });
+  });
 });
