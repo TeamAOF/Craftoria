@@ -21,21 +21,19 @@ ServerEvents.recipes((event) => {
     'modern_industrialization:electric_age/machine/assembler/replicator',
     'mffs:steel_compound',
     'mffs:steel_ingot',
-    'industrialforegoing:gold_gear',
-    'industrialforegoing:iron_gear',
   ];
 
   const output = [];
 
   id.forEach((id) => {
-    event.remove({ id: id });
+    event.remove({id: id});
   });
 
   output.forEach((output) => {
-    event.remove({ output: output });
+    event.remove({output: output});
   });
 
   globalItemRemovals.forEach((output) => {
-    event.remove({ output: output });
+    event.remove({output: output});
   });
 });
