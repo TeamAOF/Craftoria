@@ -24,6 +24,8 @@ ServerEvents.tags('item', (e) => {
   e.add('c:plastic', ['pneumaticcraft:plastic']);
 
   e.removeAll('apothic_enchanting:boon_drops');
+
+  e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block')
 });
 
 ServerEvents.tags('block', (e) => {
@@ -67,6 +69,8 @@ ServerEvents.tags('block', (e) => {
   e.add('minecraft:storage_blocks/quartz', 'minecraft:quartz_block');
 
   e.add('c:budding', '#c:budding_blocks');
+
+  e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block')
 });
 
 ServerEvents.tags('fluid', (e) => {

@@ -73,29 +73,25 @@ let exAssembler = (event, iFluid, iInput, iOutput) => {
  * @author WhitePhantom
  * @description ExtendedAE Cutter recipe
  * @param {object} event The event object, usually `event`. Required.
- * @param {Array} iInput The input item. [item, amount]. Required.
- * @param {Array} iOutput The output item. [item, amount]. Required.
+ * @param {String} iInput The input item. Required.
+ * @param {String} iOutput The output item. Required.
  */
 let exCutter = (event, iInput, iOutput) => {
   let recipe = {
     type: "extendedae:circuit_cutter",
     input: {
       ingredient: {},
-      amount: iInput[1]
+      amount: parseInt(iInput.split('x ')[0])
     },
-    output: {
-      id: iOutput[0],
-      count: iOutput[1]
-    }
+    output: Item.of(iOutput).toJson()
   };
 
-  if (iInput[0].includes("#")) {
-    recipe.input.ingredient.tag = iInput[0].replace("#", "");
-  } else {
-    recipe.input.ingredient.item = iInput[0];
-  }
+  iInput = iInput.split('x ')[1];
+  if (iInput.includes("#")) recipe.input.ingredient.tag = iInput.replace("#", "");
+  else recipe.input.ingredient.item = iInput;
 
-  let recipeID = ae2GenRecipeID(iOutput[0], "cutter");
+
+  let recipeID = ae2GenRecipeID(iOutput.split('x ')[1], "cutter");
 
   event.custom(recipe).id(recipeID);
 };
