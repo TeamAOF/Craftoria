@@ -21,6 +21,7 @@ ServerEvents.recipes((event) => {
     'modern_industrialization:electric_age/machine/assembler/replicator',
     'mffs:steel_compound',
     'mffs:steel_ingot',
+    'industrialforegoing:laser_drill_ore/raw_materials/iridium',
   ];
 
   const output = [];
