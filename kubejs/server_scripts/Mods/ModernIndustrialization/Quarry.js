@@ -116,7 +116,8 @@ ServerEvents.recipes(event => {
     ["modern_industrialization:uranium_ore", 1, 0.2],
     ["modern_industrialization:iridium_ore", 1, 0.05],
     ["powah:uraninite_ore_dense", 1, 0.02],
-    ["mekanism:fluorite_ore", 1, 0.3]
+    ["mekanism:fluorite_ore", 1, 0.3],
+    ["irons_spellbooks:mithril_ore", 1, 0.02]
   ], 128, 600);
 
   // Stainless Steel Drill
