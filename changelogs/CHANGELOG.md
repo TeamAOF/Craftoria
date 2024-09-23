@@ -7,7 +7,7 @@ _NeoForge Loader 21.1.58_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 * Changed recipe for Snad.
 * Changed recipe for Cardboard Box.
 * Added recipes for Mithril Ore > Raw Mithril through Enriching & Macerating.
-* Removed Iridum through IF laser drill.
+* Removed Iridium through IF laser drill.
 * Added furnace recipe for Raw Mithril > Ingot.
 * Added Mithril Ore to titanium drill (MI).
 * Lowered chance of finding Infinity Ham from 2.5% -> 1.5%
