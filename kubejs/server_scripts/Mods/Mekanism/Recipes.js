@@ -110,13 +110,14 @@ ServerEvents.recipes((e) => {
   enrich('2x modern_industrialization:antimony_dust', '#c:ores/antimony');
   // Made Monazite/Bauxite be less efficient through Mekanism, as you *should* be using MI's machines for them, but adding them here for convenience.
   enrich('4x modern_industrialization:monazite_dust', '#c:ores/monazite');
-  enrich('4x modern_industrialization:bauxite_dust', '#c:ores/bauxite');
+  enrich('3x irons_spellbooks:raw_mithril', '#c:ores/mithril');
 
   // New Stuff
   rotary('mekanism:antimatter', 'craftoria:antimatter');
   oxidizing('200x craftoria:plutonium_oxide', '#c:ingots/plutonium');
   chem_infuser('400x mekanism:uranium_hexafluoride', '200x mekanism:hydrofluoric_acid', '1x craftoria:plutonium_oxide');
 
+  // Shaped
   e.shaped('mekanism:cardboard_box', [
     'A A',
     'ACA',

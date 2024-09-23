@@ -8,6 +8,7 @@ ServerEvents.recipes((e) => {
 
   // Ores > Raw
   miMacerator(e, ['c:ores/silver', 1], [['modern_industrialization:raw_silver', 3]], 2, 100);
+  miMacerator(e, ['c:ores/mithril', 1], [['irons_spellbooks:raw_mithril', 3]], 2, 100);
 
   e.replaceInput({id: 'industrialization_overdrive:machines/multi_processing_array/craft'}, 'modern_industrialization:assembler', 'extended_industrialization:processing_array');
 
