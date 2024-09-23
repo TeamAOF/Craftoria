@@ -927,10 +927,7 @@
 				id: "mekanism:sulfuric_acid_bucket"
 			}
 			id: "5021D7D55A0B3533"
-			tasks: [{
-				id: "659100F1530FE8BD"
-				type: "checkmark"
-			}]
+			optional: true
 			x: 20.42d
 			y: 0.0d
 		}
@@ -2090,7 +2087,6 @@
 			y: -1.46d
 		}
 		{
-			dependencies: ["510C7652FE3431AC"]
 			id: "110B0C8DD2FD5BE7"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -2103,7 +2099,7 @@
 				item: { count: 1, id: "mekanism:ingot_osmium" }
 				type: "item"
 			}]
-			x: 1.46d
+			x: 0.5d
 			y: 0.0d
 		}
 		{
@@ -3117,15 +3113,6 @@
 			y: -5.83d
 		}
 		{
-			id: "510C7652FE3431AC"
-			tasks: [{
-				id: "13FBD6CBB3C0F41B"
-				type: "checkmark"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["7FC6AE9DB7C1DA52"]
 			id: "52AD3D58B644AA30"
 			rewards: [{
@@ -3375,7 +3362,6 @@
 				"566D039774A4DB9D"
 				"7F7AB9192CD7FC70"
 				"3850B26FC78DD874"
-				"510C7652FE3431AC"
 				"7FC6AE9DB7C1DA52"
 				"04C21F7B2F034772"
 				"5021D7D55A0B3533"
