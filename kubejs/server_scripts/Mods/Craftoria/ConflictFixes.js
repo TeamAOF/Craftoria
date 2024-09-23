@@ -19,4 +19,12 @@ ServerEvents.recipes((e) => {
       A: `minecraft:${wool}_wool`,
     }).id(`handcrafted:${wool}_sheet`);
   });
+
+  // Croptopia (Knife)
+  e.shaped('croptopia:knife', [
+    'BA',
+  ], {
+    A: `minecraft:iron_ingot`,
+    B: 'minecraft:stick',
+  }).id('croptopia:knife');
 });
