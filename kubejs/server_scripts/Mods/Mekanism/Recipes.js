@@ -116,4 +116,14 @@ ServerEvents.recipes((e) => {
   rotary('mekanism:antimatter', 'craftoria:antimatter');
   oxidizing('200x craftoria:plutonium_oxide', '#c:ingots/plutonium');
   chem_infuser('400x mekanism:uranium_hexafluoride', '200x mekanism:hydrofluoric_acid', '1x craftoria:plutonium_oxide');
+
+  e.shaped('mekanism:cardboard_box', [
+    'A A',
+    'ACA',
+    'BAB'
+  ], {
+    A: 'mekanism:sawdust',
+    B: 'sophisticatedstorage:packing_tape',
+    C: 'industrialforegoing:plastic'
+  }).id('mekanism:cardboard_box');
 });
