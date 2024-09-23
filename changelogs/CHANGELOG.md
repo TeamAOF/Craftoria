@@ -1,3 +1,33 @@
+## Craftoria | v1.3.2
+
+_NeoForge Loader 21.1.57_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.3.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.3.2.md)_
+
+### Changes/Improvements ⭐
+
+* Changed recipe for Snad.
+* Changed recipe for Cardboard Box.
+* Added recipes for Mithril Ore > Raw Mithril through Enriching & Macerating.
+* Removed Iridum through IF laser drill.
+* Added furnace recipe for Raw Mithril > Ingot.
+* Added Mithril Ore to titanium drill (MI).
+* Lowered chance of finding Infinity Ham from 2.5% -> 1.5%
+* Added back "Be a Fashion Icon" quest.
+
+### Bug Fixes 🪲
+
+* Fixed an issue where you'd lose anything in curios slots if the server crashed and you hadnt picked up your grave yet.
+* Fixed Croptopia knife recipe conflict.
+* Fixed "Time for Chemistry" quest not completeable.
+* Fixed toggle for curios visibility.
+* Fixed Myceliar Reactor Having the render enabled always.
+* Fixed crusher recipes for the Material Stonework Factory.
+
+### Added Mods ✅
+
+  * [Craftoria: Emissive Ores](https://www.curseforge.com/minecraft/texture-packs/craftoria-emissive-ores)
+  * [Transmog](https://www.curseforge.com/minecraft/mc-mods/transmog)
+---
+
 ## Craftoria | v1.3.1
 
 _NeoForge Loader 21.1.57_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.3.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.3.1.md)_
