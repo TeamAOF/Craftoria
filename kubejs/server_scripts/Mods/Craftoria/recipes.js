@@ -29,4 +29,6 @@ ServerEvents.recipes((e) => {
     p: 'minecraft:paper',
     s: '#c:slimeballs',
   }).id('craftoria:name_tag');
+
+  e.smelting('irons_spellbooks:mithril_ingot', 'irons_spellbooks:raw_mithril',)
 });
