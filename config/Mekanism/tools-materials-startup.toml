@@ -253,7 +253,7 @@
 	[materials.osmium]
 		#Maximum durability of Osmium tools.
 		#Range: > 1
-		osmiumToolDurability = 1024
+		osmiumToolDurability = 300
 		#Efficiency of Osmium tools.
 		osmiumEfficiency = 4.0
 		#Base attack damage of Osmium items.
@@ -296,7 +296,7 @@
 		osmiumPaxelEnchantability = 14
 		#Maximum durability of Osmium paxels.
 		#Range: > 1
-		osmiumPaxelDurability = 2048
+		osmiumPaxelDurability = 600
 		#Base armor toughness value of Osmium armor.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		osmiumToughness = 3.0
@@ -305,28 +305,28 @@
 		osmiumKnockbackResistance = 0.10000000149011612
 		#Maximum durability of Osmium boots.
 		#Range: > 1
-		osmiumBootDurability = 390
+		osmiumBootDurability = 250
 		#Protection value of Osmium boots.
 		#Range: > 0
 		osmiumBootArmor = 3
 		#Maximum durability of Osmium leggings.
 		#Range: > 1
-		osmiumLeggingDurability = 450
+		osmiumLeggingDurability = 300
 		#Protection value of Osmium leggings.
 		#Range: > 0
 		osmiumLeggingArmor = 6
 		#Maximum durability of Osmium chestplates.
 		#Range: > 1
-		osmiumChestplateDurability = 480
+		osmiumChestplateDurability = 300
 		#Protection value of Osmium chestplates.
 		#Range: > 0
-		osmiumChestplateArmor = 8
+		osmiumChestplateArmor = 7
 		#Maximum durability of Osmium helmets.
 		#Range: > 1
-		osmiumHelmetDurability = 330
+		osmiumHelmetDurability = 250
 		#Protection value of Osmium helmets.
 		#Range: > 0
-		osmiumHelmetArmor = 4
+		osmiumHelmetArmor = 3
 
 	#Material Settings for Steel
 	[materials.steel]
@@ -334,7 +334,7 @@
 		#Range: > 1
 		steelToolDurability = 500
 		#Efficiency of Steel tools.
-		steelEfficiency = 8.0
+		steelEfficiency = 7.0
 		#Base attack damage of Steel items.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		steelAttackDamage = 3.0
@@ -384,25 +384,25 @@
 		steelKnockbackResistance = 0.0
 		#Maximum durability of Steel boots.
 		#Range: > 1
-		steelBootDurability = 260
+		steelBootDurability = 300
 		#Protection value of Steel boots.
 		#Range: > 0
 		steelBootArmor = 3
 		#Maximum durability of Steel leggings.
 		#Range: > 1
-		steelLeggingDurability = 300
+		steelLeggingDurability = 350
 		#Protection value of Steel leggings.
 		#Range: > 0
 		steelLeggingArmor = 6
 		#Maximum durability of Steel chestplates.
 		#Range: > 1
-		steelChestplateDurability = 320
+		steelChestplateDurability = 350
 		#Protection value of Steel chestplates.
 		#Range: > 0
 		steelChestplateArmor = 8
 		#Maximum durability of Steel helmets.
 		#Range: > 1
-		steelHelmetDurability = 220
+		steelHelmetDurability = 300
 		#Protection value of Steel helmets.
 		#Range: > 0
 		steelHelmetArmor = 3
@@ -413,7 +413,7 @@
 		#Range: > 1
 		refined_glowstoneToolDurability = 384
 		#Efficiency of Refined Glowstone tools.
-		refined_glowstoneEfficiency = 15.0
+		refined_glowstoneEfficiency = 13.0
 		#Base attack damage of Refined Glowstone items.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		refined_glowstoneAttackDamage = 2.0
@@ -448,7 +448,7 @@
 		#Attack speed of Refined Glowstone paxels.
 		refined_glowstonePaxelAtkSpeed = -2.4000000953674316
 		#Efficiency of Refined Glowstone paxels.
-		refined_glowstonePaxelEfficiency = 15.0
+		refined_glowstonePaxelEfficiency = 13.0
 		#Natural enchantability factor of Refined Glowstone paxels.
 		#Range: > 0
 		refined_glowstonePaxelEnchantability = 20
@@ -478,7 +478,7 @@
 		refined_glowstoneChestplateDurability = 272
 		#Protection value of Refined Glowstone chestplates.
 		#Range: > 0
-		refined_glowstoneChestplateArmor = 8
+		refined_glowstoneChestplateArmor = 7
 		#Maximum durability of Refined Glowstone helmets.
 		#Range: > 1
 		refined_glowstoneHelmetDurability = 187
@@ -515,13 +515,13 @@
 		#Attack speed of Refined Obsidian hoes.
 		refined_obsidianHoeAtkSpeed = 5.0
 		#Efficiency of Refined Obsidian tools.
-		refined_obsidianEfficiency = 12.0
+		refined_obsidianEfficiency = 10.0
 		#Attack damage modifier of Refined Obsidian paxels.
 		refined_obsidianPaxelDamage = 8.0
 		#Attack speed of Refined Obsidian paxels.
 		refined_obsidianPaxelAtkSpeed = -2.4000000953674316
 		#Efficiency of Refined Obsidian paxels.
-		refined_obsidianPaxelEfficiency = 12.0
+		refined_obsidianPaxelEfficiency = 10.0
 		#Natural enchantability factor of Refined Obsidian paxels.
 		#Range: > 0
 		refined_obsidianPaxelEnchantability = 18
@@ -530,7 +530,7 @@
 		refined_obsidianEnchantability = 18
 		#Base armor toughness value of Refined Obsidian armor.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		refined_obsidianToughness = 5.0
+		refined_obsidianToughness = 3.0
 		#Base armor knockback resistance value of Refined Obsidian armor.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		refined_obsidianKnockbackResistance = 0.20000000298023224
@@ -551,16 +551,16 @@
 		refined_obsidianBootArmor = 5
 		#Protection value of Refined Obsidian leggings.
 		#Range: > 0
-		refined_obsidianLeggingArmor = 8
+		refined_obsidianLeggingArmor = 7
 		#Protection value of Refined Obsidian chestplates.
 		#Range: > 0
-		refined_obsidianChestplateArmor = 12
+		refined_obsidianChestplateArmor = 9
 		#Protection value of Refined Obsidian helmets.
 		#Range: > 0
-		refined_obsidianHelmetArmor = 6
+		refined_obsidianHelmetArmor = 5
 		#Maximum durability of Refined Obsidian tools.
 		#Range: > 1
-		refined_obsidianToolDurability = 1365
+		refined_obsidianToolDurability = 1000
 		#Maximum durability of Refined Obsidian paxels.
 		#Range: > 1
-		refined_obsidianPaxelDurability = 2730
+		refined_obsidianPaxelDurability = 2000
