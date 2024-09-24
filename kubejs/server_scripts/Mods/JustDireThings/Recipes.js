@@ -110,7 +110,7 @@ ServerEvents.recipes((event) => {
         D: 'minecraft:redstone',
         B: 'minecraft:blaze_powder',
         C: 'minecraft:nether_wart',
-        A: 'minecraft:nether_star',
+        A: 'eternal_starlight:blaze_crystal',
         E: 'justdirethings:gooblock_tier1',
       },
       id: 'justdirethings:gooblock_tier2',

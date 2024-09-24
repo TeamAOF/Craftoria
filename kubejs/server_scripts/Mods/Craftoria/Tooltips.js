@@ -12,4 +12,7 @@ ItemEvents.modifyTooltips((e) => {
 
   e.add('pipe_connector:pipe_connector', { shift: true }, [Text.gold('Check EMI for supported pipes.')]);
   e.add('#cookingforblockheads:sinks', [Text.red("Doesn't provide infinite water.")]);
+  e.add('eternal_starlight:red_starlight_crystal_shard', { shift: false }, holdShift);
+  e.add('eternal_starlight:red_starlight_crystal_shard', { shift: true },
+  [Text.lightPurple("Can be found in the Starlight dimension within the Crystalized biomes.")]);
 });
