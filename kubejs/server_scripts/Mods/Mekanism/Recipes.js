@@ -125,6 +125,6 @@ ServerEvents.recipes((e) => {
   ], {
     A: 'mekanism:sawdust',
     B: 'sophisticatedstorage:packing_tape',
-    C: 'industrialforegoing:plastic'
+    C: '#c:plastics'
   }).id('mekanism:cardboard_box');
 });
