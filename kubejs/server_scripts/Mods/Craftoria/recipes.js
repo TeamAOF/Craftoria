@@ -30,5 +30,7 @@ ServerEvents.recipes((e) => {
     s: '#c:slimeballs',
   }).id('craftoria:name_tag');
 
-  e.smelting('irons_spellbooks:mithril_ingot', 'irons_spellbooks:raw_mithril',)
+  e.smelting('irons_spellbooks:mithril_scrap', 'irons_spellbooks:raw_mithril').xp(40).cookingTime(400).id('craftoria:irons/mithril_scrap_from_raw');
+  e.smelting('irons_spellbooks:mithril_scrap', '#irons_spellbooks:salvageable_curio').cookingTime(200).id('craftoria:irons/mithril_scrap_from_curio');
+  e.smelting('4x irons_spellbooks:mithril_scrap', 'irons_spellbooks:mithril_ingot').cookingTime(200).id('craftoria:irons/mithril_scrap_from_ingot');
 });

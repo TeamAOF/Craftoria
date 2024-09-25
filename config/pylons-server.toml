@@ -33,7 +33,7 @@
 	infusionAppliedDuration = 20
 	#Whether the Infusion Pylon chunkloads itself.
 	#This is limited to one pylon per player, while the player is online.
-	infusionChunkloads = true
+	infusionChunkloads = false
 	#Effects that may be used in the Infusion Pylon.
 	#List may include either effect IDs (like `minecraft:strength`) or an entire namespace (like `minecraft`).
 	#If the list is empty, then all effects will be allowed except for those specifically denied.

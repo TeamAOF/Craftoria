@@ -1,6 +1,6 @@
 ServerEvents.recipes((e) => {
   Ingredient.of('#c:tools/knife').stacks.forEach((item) => {
-    if (item.mod === 'farmersdelight' || item.id === 'aquaculture:neptunium_fillet_knife') return;
+    if (item.mod === 'farmersdelight' || item.mod === 'moredelight' || item.id === 'aquaculture:neptunium_fillet_knife') return;
     globalItemRemovals.push(item.id);
   });
 
@@ -34,7 +34,7 @@ ServerEvents.tags('item', (e) => {
 
   let hiddenKnives = [];
   Ingredient.of('#c:tools/knife').stacks.forEach((item) => {
-    if (item.mod === 'farmersdelight' || item.id === 'aquaculture:neptunium_fillet_knife') return;
+    if (item.mod === 'farmersdelight' || item.mod === 'moredelight' || item.id === 'aquaculture:neptunium_fillet_knife') return;
     hiddenKnives.push(item.id);
   });
   e.add('almostunified:hide', hiddenKnives);

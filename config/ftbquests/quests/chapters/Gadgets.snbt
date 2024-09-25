@@ -139,8 +139,8 @@
 			order: 1
 			rotation: 0.0d
 			width: 1.0d
-			x: -5.9d
-			y: 2.1d
+			x: -4.8d
+			y: 1.9d
 		}
 		{
 			alpha: 128
@@ -150,19 +150,8 @@
 			order: 1
 			rotation: 0.0d
 			width: 1.0d
-			x: -4.4d
-			y: 1.1d
-		}
-		{
-			alpha: 128
-			color: 5592405
-			height: 1.0d
-			image: "ftbquests:textures/shapes/circle/background.png"
-			order: 1
-			rotation: 0.0d
-			width: 1.0d
-			x: -4.4d
-			y: -0.9d
+			x: -4.1d
+			y: -0.3d
 		}
 		{
 			alpha: 128
@@ -173,7 +162,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: -5.9d
-			y: -1.9d
+			y: -1.7d
 		}
 		{
 			alpha: 128
@@ -183,8 +172,8 @@
 			order: 1
 			rotation: 0.0d
 			width: 1.0d
-			x: -7.4d
-			y: -0.9d
+			x: -7.8d
+			y: -0.3d
 		}
 		{
 			alpha: 128
@@ -194,8 +183,8 @@
 			order: 1
 			rotation: 0.0d
 			width: 1.0d
-			x: -7.4d
-			y: 1.1d
+			x: -7.1d
+			y: 1.9d
 		}
 		{
 			alpha: 128
@@ -328,7 +317,7 @@
 			y: 0.0d
 		}
 	]
-	order_index: 5
+	order_index: 9
 	quest_links: [ ]
 	quests: [
 		{
@@ -361,8 +350,8 @@
 				item: { count: 1, id: "buildinggadgets2:gadget_building" }
 				type: "item"
 			}]
-			x: -7.5d
-			y: -1.0d
+			x: -6.0d
+			y: -1.8d
 		}
 		{
 			id: "40F1315207ADEB80"
@@ -377,24 +366,8 @@
 				item: { count: 1, id: "buildinggadgets2:gadget_exchanging" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -2.0d
-		}
-		{
-			id: "66D2FB13C09177EA"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2325EFE9FB410FB2"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "58A5CCFD114BC3F8"
-				item: { count: 1, id: "buildinggadgets2:gadget_copy_paste" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: -1.0d
+			x: -7.9d
+			y: -0.4d
 		}
 		{
 			id: "2B29DDBADF11195E"
@@ -409,8 +382,8 @@
 				item: { components: { "buildinggadgets2:paste_replace_toggle": 1b }, count: 1, id: "buildinggadgets2:gadget_cut_paste" }
 				type: "item"
 			}]
-			x: -7.5d
-			y: 1.0d
+			x: -7.2d
+			y: 1.8d
 		}
 		{
 			id: "2A2E1C7C34C9A4AA"
@@ -425,24 +398,8 @@
 				item: { count: 1, id: "buildinggadgets2:gadget_destruction" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.0d
-		}
-		{
-			id: "65F5E0194184FEDE"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1065D374F6CF22E5"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "3EB202E1EC82778D"
-				item: { components: { "buildinggadgets2:paste_replace_toggle": 1b }, count: 1, id: "buildinggadgets2:gadget_cut_paste" }
-				type: "item"
-			}]
-			x: -4.5d
-			y: 1.0d
+			x: -4.9d
+			y: 1.8d
 		}
 		{
 			id: "5855D8361A2C6623"
@@ -964,6 +921,16 @@
 			]
 			x: 4.0d
 			y: 0.0d
+		}
+		{
+			id: "4F00BE972EFE7FBE"
+			tasks: [{
+				id: "678363671F67D4BF"
+				item: { count: 1, id: "buildinggadgets2:gadget_copy_paste" }
+				type: "item"
+			}]
+			x: -4.2d
+			y: -0.4d
 		}
 	]
 }
