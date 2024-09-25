@@ -26,6 +26,12 @@ ServerEvents.tags('item', (e) => {
   e.removeAll('apothic_enchanting:boon_drops');
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block')
+
+  // Machine Frames
+
+  e.add('craftoria:hulls/advanced', 'industrialforegoing:machine_frame_advanced')
+  e.add('craftoria:hulls/advanced', 'modern_industrialization:basic_machine_hull')
+  e.add('craftoria:hulls/advanced', 'mekanism:ultimate_tier_installer')
 });
 
 ServerEvents.tags('block', (e) => {
