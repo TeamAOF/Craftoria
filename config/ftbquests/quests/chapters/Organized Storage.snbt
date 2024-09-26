@@ -207,7 +207,20 @@
 		}
 	]
 	order_index: 1
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "4BAEEBD17014CD98"
+			linked_quest: "418659818AD0712B"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "2E8BB9183E51A2B1"
+			linked_quest: "4E33ED9C42F906F6"
+			x: 0.0d
+			y: 4.0d
+		}
+	]
 	quests: [
 		{
 			icon: {
@@ -1823,24 +1836,6 @@
 			y: 2.0d
 		}
 		{
-			hide_dependency_lines: true
-			id: "3CB09B0D3D4E3719"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "414EFB011A07A04E"
-				table_id: 3188555497912671082L
-				type: "random"
-			}]
-			tasks: [{
-				id: "30F19D144D64AD11"
-				item: { count: 1, id: "bigger_ae2:quantum_flux_storage_cell" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["3CB09B0D3D4E3719"]
 			id: "670CE9B293296FEB"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1854,7 +1849,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["22E648EB2B38FE38"]
@@ -2465,41 +2460,6 @@
 			}]
 			x: -1.0d
 			y: 4.5d
-		}
-		{
-			hide_dependency_lines: true
-			id: "418659818AD0712B"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7B49A5D718AEC3FA"
-				table_id: 3188555497912671082L
-				type: "random"
-			}]
-			tasks: [{
-				id: "696A0B10694CDCEF"
-				item: { count: 1, id: "megacells:bulk_item_cell" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			dependency_requirement: "one_completed"
-			hide_dependency_lines: true
-			id: "4E33ED9C42F906F6"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "143837495F181ABF"
-				table_id: 3188555497912671082L
-				type: "random"
-			}]
-			tasks: [{
-				id: "633983595B887CF5"
-				item: { count: 1, id: "megacells:radioactive_chemical_cell" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.0d
 		}
 	]
 }
