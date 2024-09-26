@@ -25,13 +25,17 @@ ServerEvents.tags('item', (e) => {
 
   e.removeAll('apothic_enchanting:boon_drops');
 
-  e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block')
+  e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
+
+  // Enchant fixes
+  e.add('minecraft:enchantable/mining', ['ae2:annihilation_plane']);
+  e.add('minecraft:enchantable/durability', ['ae2:annihilation_plane']);
 
   // Machine Frames
 
-  e.add('craftoria:hulls/advanced', 'industrialforegoing:machine_frame_advanced')
-  e.add('craftoria:hulls/advanced', 'modern_industrialization:basic_machine_hull')
-  e.add('craftoria:hulls/advanced', 'mekanism:ultimate_tier_installer')
+  e.add('craftoria:hulls/advanced', 'industrialforegoing:machine_frame_advanced');
+  e.add('craftoria:hulls/advanced', 'modern_industrialization:basic_machine_hull');
+  e.add('craftoria:hulls/advanced', 'mekanism:ultimate_tier_installer');
 });
 
 ServerEvents.tags('block', (e) => {
@@ -76,7 +80,11 @@ ServerEvents.tags('block', (e) => {
 
   e.add('c:budding', '#c:budding_blocks');
 
-  e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block')
+  e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
+
+  // Block tags for quest usage
+  e.add('craftoria:ae2_buddings', /^ae2:.*_budding_quartz/);
+  e.add('craftoria:exae_buddings', /^extendedae:entro_budding_/);
 });
 
 ServerEvents.tags('fluid', (e) => {
