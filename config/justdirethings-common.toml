@@ -182,11 +182,26 @@
 	epicarrow = true
 	#timeprotection
 	timeprotection = true
+	#The maximum number of blocks that a Ferricore tool can break as a result of abilities, such as ore miner or tree feller.
+	#Range: 1 ~ 2048
+	tool_max_break_ferricore = 64
+	#The maximum number of blocks that a Blazegold tool can break as a result of abilities, such as ore miner or tree feller.
+	#Range: 1 ~ 2048
+	tool_max_break_blazegold = 128
+	#The maximum number of blocks that a Celestigem tool can break as a result of abilities, such as ore miner or tree feller.
+	#Range: 1 ~ 2048
+	tool_max_break_celestigem = 192
+	#The maximum number of blocks that a Eclipse Alloy tool can break as a result of abilities, such as ore miner or tree feller.
+	#Range: 1 ~ 2048
+	tool_max_break_eclipsealloy = 256
 
 #Goo settings
 [goo]
 	#Can goo randomly die, needing to be revived by right clicking with an item?
 	goo_can_die = true
+	#The random chance that a goo block can 'die' when it finishes crafting. Set to 1.0 to guarantee it dies every time.  Default is 0.1, which is a 10% chance.
+	#Range: 0.0 ~ 1.0
+	goo_death_chance = 0.1
 
 #Time Wand
 [time_wand]

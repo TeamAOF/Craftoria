@@ -1,3 +1,77 @@
+## Craftoria | v1.4.0
+
+_NeoForge Loader 21.1.58_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.4.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.4.0.md)_
+
+### Changes/Improvements ⭐
+
+* Reworked AE2 quest chapter.
+* Snad changes: Part 2.
+* New Water Generator Upgrade recipe.
+* New Blazebloom Goo recipe.
+* New recipes for all JDT Advanced Machines.
+* Added the #craftoria:hulls/advanced tag.
+* Added tooltips on how to obtain Starlight Crystal Shards.
+* A Dragon Egg will now spawn every time the ender dragon dies.
+* Unified knives accross all recipes using it.
+* Lowered Wither Skull Fragment drop chance from 30% -> 25%.
+* "Better" Uranium hexafluoride recipe now uses 399 hydrofluoric acid.
+* Added mithril salvage recipes.
+* Removed Apoth Flight potion recipes.
+* Disabled snow/ice accumulation in winter season.
+* Disabled KJS web server.
+* Removed trophy quests in the chapters itself, refer to Completionist quests.
+
+### Mekanism Rebalance: Part 2
+
+[Osmium]
+* **Tool Durability:** 1024 -> 350
+* **Helmet Durability:**: 330 -> 250
+* **Chestplate Durability:**: 480 -> 300
+* **Leggings Durability:**: 450 -> 300
+* **Boots Durability:**: 390 -> 250
+* **Helmet Armor**: 4 -> 3
+* **Chestplate Armor**: 8 -> 7
+
+[Steel]
+* **Efficiency:** 8 -> 7
+* **Helmet Durability:**: 220 -> 300
+* **Chestplate Durability:**: 320 -> 350
+* **Leggings Durability:**: 300 -> 350
+* **Boots Durability:**: 260 -> 300
+
+[Refined Glowstone]
+* **Efficiency:** 15 -> 13
+* **Chestplate Armor**: 8 -> 7
+
+[Refined Obsidian]
+* **Efficiency:** 12 -> 10
+* **Tool Durability:** 1365 -> 1000
+* **Helmet Armor**: 6 -> 5
+* **Chestplate Armor**: 12 -> 9
+* **Leggings Armor**: 8 -> 7
+* **Armor Toughness**: 5 -> 3
+
+### Bug Fixes 🪲
+
+* Fixed unification of plastic between IF and PNC.
+* Fixed vanilla glass not using connected textures.
+* Fixed(?) annihilation planes not being enchantable with unbreaking/efficiency.
+* Fixed mithril recipe output ratio.
+* Fixed trapdoor recipes from Glassential conflicting with vanilla panes.
+
+### Added Mods ✅
+
+  * [AttributesFix](https://www.curseforge.com/minecraft/mc-mods/attributesfix)
+  * [Integrated Scripting](https://www.curseforge.com/minecraft/mc-mods/integrated-scripting)
+  * [More Dragon Eggs](https://www.curseforge.com/minecraft/mc-mods/more-dragon-eggs)
+  * [Polymorph (Fabric/Forge/Quilt)](https://www.curseforge.com/minecraft/mc-mods/polymorph)
+  * [Polymorphic Energistics](https://www.curseforge.com/minecraft/mc-mods/polymorphic-energistics)
+  * [Reese's Sodium Options](https://www.curseforge.com/minecraft/mc-mods/reeses-sodium-options)
+  * [Sawmill House](https://www.curseforge.com/minecraft/mc-mods/sawmill-house)
+  * [Small horse stable](https://www.curseforge.com/minecraft/mc-mods/small-horse-stable)
+  * [Tower of Chambers](https://www.curseforge.com/minecraft/mc-mods/tower-of-chambers)
+---
+
 ## Craftoria | v1.3.2
 
 _NeoForge Loader 21.1.58_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.3.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.3.2.md)_
