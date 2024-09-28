@@ -7,12 +7,12 @@ ServerEvents.tags('item', (e) => {
   e.add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet']);
 
   // Crops & Seeds
-  e.add('c:seeds/cabbage', 'farmersdelight:cabbage_seeds');
+  e.add('c:seeds/cabbage', 'farmersdelight:cabbage_seeds', 'dumplings_delight:chinese_cabbage_seeds');
   e.add('c:seeds/tomato', 'farmersdelight:tomato_seeds');
   e.add('c:seeds/rice', 'sushigocrafting:rice_seeds');
   e.add('c:seeds/eggplant', 'dumplings_delight:eggplant_seeds');
   e.add('c:crops/garlic', 'dumplings_delight:garlic');
-  e.add('c:crops/green_onion', 'croptopia:greenonion');
+  e.add('c:crops/green_onion', 'croptopia:greenonion', 'dumplings_delight:greenonion');
 
   // Foods
   e.add('c:foods/raw_bacon', 'croptopia:bacon');
