@@ -316,16 +316,14 @@
 			dependencies: ["1F828E56F64FFD15"]
 			id: "15325B16AFE33D5C"
 			rewards: [{
-				id: "58E5B6756D157078"
-				item: {
-					count: 1
-					id: "occultism:tallow"
-				}
-				type: "item"
+				exclude_from_claim_all: true
+				id: "44502C52F9DBE981"
+				table_id: 6467551270008706529L
+				type: "loot"
 			}]
 			tasks: [{
-				id: "49A008B81F041954"
-				item: { count: 1, id: "occultism:butcher_knife" }
+				id: "5C704D14303467E9"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(c:tools/knife))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -1.2d

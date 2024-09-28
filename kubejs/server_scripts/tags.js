@@ -21,7 +21,11 @@ ServerEvents.tags('item', (e) => {
 
   e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
 
+  // Plastic
   e.add('c:plastics', ['pneumaticcraft:plastic']);
+
+  // Knives
+  e.add('occultism:tools/knife', '#c:tools/knives');
 
   e.removeAll('apothic_enchanting:boon_drops');
 
