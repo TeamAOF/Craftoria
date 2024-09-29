@@ -1,3 +1,26 @@
+## Craftoria | v1.4.1
+
+_NeoForge Loader 21.1.59_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.4.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.4.1.md)_
+
+### Changes/Improvements ⭐
+
+* Reworked Relics & Artifacts quest chapter design.
+* Limit shrinking to 0.06 scale, lower than that causes issues.
+
+### Bug Fixes 🪲
+
+* Fixed ALL recipe conflicts.
+* Fixed tallow not dropping, now drops using ANY knife.
+* Fixed occultism knife quest not completeable.
+* Fixed garlic dupe on cutting board.
+
+### Removed Mods ❌
+
+* [Polymorph](https://www.curseforge.com/minecraft/mc-mods/polymorph)
+* [Polymorphic Energistics](https://www.curseforge.com/minecraft/mc-mods/polymorphic-energistics)
+* [Tower of Chambers](https://www.curseforge.com/minecraft/mc-mods/tower-of-chambers)
+---
+
 ## Craftoria | v1.4.0
 
 _NeoForge Loader 21.1.58_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.4.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.4.0.md)_

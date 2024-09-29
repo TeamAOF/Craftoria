@@ -12,8 +12,6 @@
 	maxUpgrades = 3
 	#From 0-1, the percent of max mana a player respawns with. Default: 0.0
 	manaSpawnPercent = 0.0
-	#If true the world will attempt to be upgraded from an older version of ISS
-	runWorldUpgrader = true
 	#From 0-1, the percent chance for scrolls to be successfully recycled. Default: 0.5 (50%)
 	scrollRecycleChance = 0.5
 	#Whether or not potions should be allowed to be brewed in the alchemist cauldron)
@@ -30,6 +28,8 @@
 	additionalWanderingTraderTrades = true
 	#Whether casting spells should be disabled in adventure mode. Default: false
 	disableAdventureModeCasting = false
+	#Whether hoglins have the ability to pass overworld zombification immunity to their offspring. Default: true
+	hoglinOffspringProtection = true
 
 ["Upgrade Overrides"]
 	#Use these lists to change what items can interact with the Arcane Anvil's upgrade system. This can also be done via datapack.

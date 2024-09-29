@@ -1546,7 +1546,7 @@
 			}]
 			tasks: [{
 				id: "25EFCAC308BB37D3"
-				item: { count: 1, id: "artifacts:cowboy_hat" }
+				item: { components: { "relics:data": { abilities: { abilities: { cowboy: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { speed: { initialValue: 0.42831d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:cowboy_hat" }
 				type: "item"
 			}]
 			x: 6.0d
@@ -1626,7 +1626,7 @@
 			}]
 			tasks: [{
 				id: "3912AFD5EDBA3884"
-				item: { count: 1, id: "artifacts:cross_necklace" }
+				item: { components: { "relics:data": { abilities: { abilities: { invulnerability: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { modifier: { initialValue: 0.21352d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:cross_necklace" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -1826,7 +1826,7 @@
 			}]
 			tasks: [{
 				id: "49A0722F2B38A56F"
-				item: { count: 1, id: "artifacts:universal_attractor" }
+				item: { components: { "relics:data": { abilities: { abilities: { attractor: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { radius: { initialValue: 3.25819d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:universal_attractor" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -1847,7 +1847,7 @@
 			size: 1.0d
 			tasks: [{
 				id: "1F086C730D2D1A2F"
-				item: { count: 1, id: "artifacts:crystal_heart" }
+				item: { components: { "relics:data": { abilities: { abilities: { heart: { extender: { cooldown: 0, cooldownCap: 0, ticking: 0b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 3.62434d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:crystal_heart" }
 				type: "item"
 			}]
 			x: -1.5d
