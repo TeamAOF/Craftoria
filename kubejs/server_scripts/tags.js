@@ -14,6 +14,9 @@ ServerEvents.tags('item', (e) => {
   e.add('c:crops/garlic', 'dumplings_delight:garlic');
   e.add('c:crops/green_onion', 'croptopia:greenonion');
 
+  e.remove('c:crops/garlic', 'dumplings_delight:garlic_clove');
+  e.remove('c:foods/garlic', 'dumplings_delight:garlic_clove');
+
   // Foods
   e.add('c:foods/raw_bacon', 'croptopia:bacon');
   e.add('c:foods/cooked_bacon', 'croptopia:cooked_bacon');
