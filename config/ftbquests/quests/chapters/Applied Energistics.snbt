@@ -9,7 +9,7 @@
 	id: "70FFEE37C7ABD690"
 	images: [
 		{
-			color: 6193580
+			color: 5477327
 			height: 21.0d
 			image: "ae2:part/formation_plane_on"
 			rotation: 0.0d
@@ -126,8 +126,8 @@
 			order: 100
 			rotation: 0.0d
 			width: 2.0d
-			x: 5.0d
-			y: 4.0d
+			x: -8.0d
+			y: 5.5d
 		}
 		{
 			height: 2.0d
@@ -135,8 +135,8 @@
 			order: 100
 			rotation: 0.0d
 			width: 2.0d
-			x: -1.0d
-			y: 7.5d
+			x: -12.0d
+			y: -7.5d
 		}
 		{
 			height: 2.0d
@@ -144,17 +144,17 @@
 			order: 100
 			rotation: 0.0d
 			width: 2.0d
-			x: 0.5d
-			y: -7.0d
+			x: 6.0d
+			y: 3.5d
 		}
 		{
-			color: 2662143
-			height: 3.0d
+			color: 3377407
+			height: 4.0d
 			image: "ftbquests:textures/gui/title_ae2.png"
 			order: 10
 			rotation: 0.0d
-			width: 3.0d
-			x: -12.5d
+			width: 4.0d
+			x: 12.5d
 			y: -7.5d
 		}
 		{
@@ -523,8 +523,8 @@
 				item: { count: 1, id: "ae2:color_applicator" }
 				type: "item"
 			}]
-			x: 13.0d
-			y: -7.5d
+			x: 2.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["151E812270A52250"]
@@ -927,8 +927,8 @@
 				item: { count: 1, id: "ae2:matter_cannon" }
 				type: "item"
 			}]
-			x: 10.0d
-			y: -7.5d
+			x: -0.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["308640ACCC096431"]
@@ -984,8 +984,8 @@
 				item: { count: 1, id: "ae2:memory_card" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -3.5d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["758291052A9F6573"]
@@ -1000,8 +1000,8 @@
 				item: { count: 1, id: "ae2:network_tool" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -7.5d
+			x: 1.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["308640ACCC096431"]
@@ -1211,8 +1211,8 @@
 				item: { count: 1, id: "ae2:spatial_pylon" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.5d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2190034B6F3E2768"]
@@ -1320,8 +1320,8 @@
 				item: { count: 1, id: "ae2:meteorite_compass" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: -6.0d
+			x: -5.0d
+			y: -5.0d
 		}
 		{
 			icon: {
@@ -1610,7 +1610,7 @@
 				type: "item"
 			}]
 			x: -9.5d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7D57C6962950AA98"]
@@ -1868,7 +1868,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["7277A0413086D71A"]
@@ -1906,7 +1906,7 @@
 				to_observe: "craftoria:exae_buddings"
 				type: "observation"
 			}]
-			x: 7.0d
+			x: 4.0d
 			y: 7.5d
 		}
 		{
@@ -1923,7 +1923,7 @@
 				item: { count: 1, id: "ae2:fluix_block" }
 				type: "item"
 			}]
-			x: 5.5d
+			x: 2.5d
 			y: 7.5d
 		}
 		{
@@ -1939,7 +1939,7 @@
 				item: { count: 1, id: "extendedae:entro_seed" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 1.0d
 			y: 7.5d
 		}
 		{
@@ -2333,7 +2333,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: -6.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -2370,7 +2370,7 @@
 				type: "item"
 			}]
 			x: -9.5d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["20F66D987F15593E"]
@@ -2455,8 +2455,8 @@
 				id: "1BEC4027E735B683"
 				type: "checkmark"
 			}]
-			x: -5.0d
-			y: -5.0d
+			x: -3.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["418659818AD0712B"]
@@ -2559,8 +2559,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 7.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4EC894E7808440AC"]
