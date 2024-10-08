@@ -398,7 +398,7 @@
 			tasks: [
 				{
 					id: "12A970F35FCB3E64"
-					item: { count: 1, id: "farmingforblockheads:feeding_trough" }
+					item: { components: { "ftbfiltersystem:filter": "or(item(farmingforblockheads:feeding_trough)item(animal_feeding_trough:feeding_trough))", "minecraft:custom_name": "\"Feeding & Gathering\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 				{
