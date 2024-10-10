@@ -43,6 +43,10 @@ ServerEvents.tags('item', (e) => {
   e.add('craftoria:hulls/advanced', 'industrialforegoing:machine_frame_advanced');
   e.add('craftoria:hulls/advanced', 'modern_industrialization:basic_machine_hull');
   e.add('craftoria:hulls/advanced', 'mekanism:ultimate_tier_installer');
+
+  // Curios
+
+  e.add('curios:curio', 'integratedterminals:terminal_storage_portable');
 });
 
 ServerEvents.tags('block', (e) => {
