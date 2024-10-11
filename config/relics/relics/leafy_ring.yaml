@@ -1,0 +1,14 @@
+abilitiesData:
+    abilities: {
+        }
+levelingData:
+    # Amount of experience required to level up to relic level 1
+    initialCost: 100
+    # Maximum level of the relic
+    maxLevel: 10
+    # Increment in experience required for each subsequent level of the relic
+    step: 200
+lootData:
+    # List of key-value pairs where the key is a textual identifier for the loot table (supporting regular expressions) and the value represents the probability of generating the relic within the specified bounds
+    entries: {
+        }

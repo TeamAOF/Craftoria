@@ -1,3 +1,45 @@
+## Craftoria | v1.5.0
+
+_NeoForge Loader 21.1.66_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.5.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.5.0.md)_
+
+### Changes/Improvements ⭐
+
+* Disabled MI-EU third party support through AppFlux.
+* Allow feeding trough quest to be completed with either FFB or AFT variant.
+* Disabled Menu Background Blurriness by default as it was causing issues with certain GUIs (This will only apply to new instances, turn it off in accessibility settings). 
+* Added a second EU server.
+* Bridging assist now only activates on crouch.
+* Allow ID Portable Storage Terminal to be used in ANY curios slot.
+* Added relics logic for eight new items, namely: Cloud in a Bottle, Vampiric Glove, Golden Hook, Onion Ring, Digging Claws, Antidote Vessel, Power Glove, Withered Bracelet.
+* Added cleaner chat formatting.
+* Made AE2 quest chapter easier to follow & read.
+* Updated Spider texture/model.
+* Updated Guardian texture/model.
+* Added texture variants to zombies.
+
+### Bug Fixes 🪲
+
+* Fixed Elder Guardian model being funky.
+* Fixed Potion brewer causing game to crash upon adding ingredients after netherwart.
+* Fixed EMI transfer handler not working with Occultism on servers.
+
+### Added Mods ✅
+
+* [AttributeFix](https://www.curseforge.com/minecraft/mc-mods/attributefix)
+* [Bookshelf](https://www.curseforge.com/minecraft/mc-mods/bookshelf)
+* [JAMD](https://www.curseforge.com/minecraft/mc-mods/jamd)
+* [Macaw's Stairs](https://www.curseforge.com/minecraft/mc-mods/macaws-stairs)
+* [Mob Grinding Utils](https://www.curseforge.com/minecraft/mc-mods/mob-grinding-utils)
+* [Prickle](https://www.curseforge.com/minecraft/mc-mods/prickle)
+* [Simple Pocket Machines](https://www.curseforge.com/minecraft/mc-mods/pocketmachines)
+* [Trade Cycling](https://www.curseforge.com/minecraft/mc-mods/trade-cycling)
+* [YetAnotherConfigLib](https://www.curseforge.com/minecraft/mc-mods/yacl)
+
+### Removed Mods ❌
+
+* [AttributesFix](https://www.curseforge.com/minecraft/mc-mods/attributesfix)
+---
+
 ## Craftoria | v1.4.1
 
 _NeoForge Loader 21.1.59_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.4.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.4.1.md)_

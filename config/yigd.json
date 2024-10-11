@@ -67,6 +67,7 @@
       "spawnNbt": "{ArmorItems:[{},{},{},{id:\"minecraft:player_head\",components:{\"minecraft:profile\":{name:\"${owner.name}\",id:${owner.uuid}}}}]}"
     },
     "generateOnLastGroundPos": false,
+    "tryGenerateOnGround": false,
     "generationMaxDistance": {
       "x": 5,
       "y": 5,
@@ -124,7 +125,9 @@
     "enableTravelersBackpackCompat": true,
     "defaultTravelersBackpackDropRule": "PUT_IN_GRAVE",
     "enableCuriosCompat": true,
-    "defaultCuriosDropRule": "PUT_IN_GRAVE"
+    "defaultCuriosDropRule": "PUT_IN_GRAVE",
+    "enableCosmeticArmorCompat": true,
+    "defaultCosmeticArmorDropRule": "PUT_IN_GRAVE"
   },
   "commandConfig": {
     "mainCommand": "yigd",
