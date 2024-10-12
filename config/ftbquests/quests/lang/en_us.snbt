@@ -201,7 +201,7 @@
 	quest.0729CB454B970201.quest_desc: [
 		"  This is the &bBronze Drill&r. This will give you the main ores that you'll need to expand further."
 		""
-		"  Check the outputs in &6REI&r and make sure you know that the drill has a chance of breaking, so don't just make 1."
+		"  Check the outputs in &6EMI&r and make sure you know that the drill has a chance of breaking, so don't just make 1."
 	]
 	quest.0729CB454B970201.title: "Bronze Drill"
 	quest.077658D04D0D4AB3.quest_desc: [
@@ -438,13 +438,13 @@
 	quest.1081BFCAB3F07FFF.quest_desc: [
 		"  Need a steamy upgrade? I know I do! The &bLarge Steam Boiler&r is an upgraded version of the smaller bronze and steel boilers. &6It uses fuel 8 times faster&r than the Furnace, but it produces &6256 mb/t of steam&r when at max temperature. Make sure you don't forget to provide it &bWater&r!"
 		""
-		"  The main block you'll need is &bBronze Plated Bricks&r, but you'll also need other blocks shown in your REI. The &bLarge Steam Boiler&r is comprised of one layer of &bHeatproof Machine Casings&r with layers of &6Bronze Plated Bricks&r and &6Pipe Machine Casings&r."
+		"  The main block you'll need is &bBronze Plated Bricks&r, but you'll also need other blocks shown in your EMI. The &bLarge Steam Boiler&r is comprised of one layer of &bHeatproof Machine Casings&r with layers of &6Bronze Plated Bricks&r and &6Pipe Machine Casings&r."
 		""
 		"  The Controller is on the second layer, on top of the &bHeatproof Machine Casings&r. &6Don't forget you can use your &bWrench&r &6to show the shape of the multiblock and placement of the blocks needed for it&r. The required hatches must be placed on the bottom layer. You'll need a way to input water and a solid fuel, as well as a way to extract &bSteam&r."
 	]
 	quest.1081BFCAB3F07FFF.title: "Large Steam Boiler"
 	quest.1094111FB9512D75.quest_desc: [
-		"  There are three &bSmall Diesel Generators&r that are the beginning of power generation via fluids or gases. You can use your REI to check for how much EU will be produced per millibucket of each type of fuel."
+		"  There are three &bSmall Diesel Generators&r that are the beginning of power generation via fluids or gases. You can use your EMI to check for how much EU will be produced per millibucket of each type of fuel."
 		""
 		"  The &bLV Diesel Generator&r will produce up to 64 eu/t, the &bMV Diesel Generator&r will produce up to 256 eu/t, and the &bHV Diesel Generator&r will produce up to 1024 eu/t."
 		""
@@ -1075,7 +1075,7 @@
 	quest.21EE3862F6DA8E09.title: "Precision Sawmill"
 	quest.222793DF035B167C.quest_desc: ["The simplest &bcable&f to make, &6transfers&b power &fand &bchannels&f to your system"]
 	quest.222793DF035B167C.title: "Fluix Glass Cable"
-	quest.22420EF3089DD7F6.quest_desc: ["  Your first taste of true &4a&r&6u&r&et&r&2o&r&am&r&ba&r&3t&r&9i&r&do&r&5n&r! This is also the first machine you'll want to make a lot of. The &bAssembler&r allows you to &6automate&r almost all recipes related to the machines. Check your &bREI&r to see which recipes you are allowed to automate using the &bAssembler&r. You can setup up to &63 recipes in one assembler&r by using &6slot locking&r. Just remember that it will make as many of the first recipe before it moves onto the next, &6so never put multiple high demand recipes into a single assembler&r."]
+	quest.22420EF3089DD7F6.quest_desc: ["  Your first taste of true &4a&r&6u&r&et&r&2o&r&am&r&ba&r&3t&r&9i&r&do&r&5n&r! This is also the first machine you'll want to make a lot of. The &bAssembler&r allows you to &6automate&r almost all recipes related to the machines. Check your &bEMI&r to see which recipes you are allowed to automate using the &bAssembler&r. You can setup up to &63 recipes in one assembler&r by using &6slot locking&r. Just remember that it will make as many of the first recipe before it moves onto the next, &6so never put multiple high demand recipes into a single assembler&r."]
 	quest.22420EF3089DD7F6.title: "Assembler"
 	quest.225C580584927804.quest_desc: ["The &bAdvanced Smelting Factory&r can process up to &a5&r smelting processes at the same time, containing the same \"&eAuto-Sort&r\" function."]
 	quest.225C580584927804.title: "Advanced Smelting Factory"
@@ -1130,7 +1130,7 @@
 		""
 		" &6Don't forget to add an Energy Input Hatch(es)&r or the EBF won't have any energy to run! Start with a &bLV Energy Input Hatch&r and you can upgrade to higher tier &bEnergy Input Hatches&r when you have the appropriate power tiers. Remember, the &bLV Energy Input Hatch&r will only connect to &bLV cables&r."
 		""
-		"  You'll also need item or fluid input hatches and item or fluid output hatches based off of the use case of the &bEBF&r. Check your REI for it's new recipes and choose hatches based off your needs."
+		"  You'll also need item or fluid input hatches and item or fluid output hatches based off of the use case of the &bEBF&r. Check your EMI for it's new recipes and choose hatches based off your needs."
 	]
 	quest.24A4F1AA0BFFE867.quest_subtitle: "It's Getting &cHot&r In Here"
 	quest.24A4F1AA0BFFE867.title: "Electric Blast Furnace"
@@ -1391,7 +1391,7 @@
 	]
 	quest.2CE7390F7567D9E2.quest_subtitle: "Portals in Machine Form"
 	quest.2D4170B5AD28DCBF.quest_desc: [
-		"  The best single block &bDiesel Generator&r you can make. &6It'll output up to 1024 eu/t&r from any of the various fluids listed in your REI."
+		"  The best single block &bDiesel Generator&r you can make. &6It'll output up to 1024 eu/t&r from any of the various fluids listed in your EMI."
 		""
 		"  Now, this isn't the best generator that'll take fluid fuels. There's such thing as a &bLarge Diesel Generator&r which will ask for &bHighly Advanced Machine Hulls&r; though it's worth it when you hear &6it'll generate up to 16,384 eu/t&r!"
 	]
@@ -1527,7 +1527,7 @@
 	quest.3143EA7DF096CE61.quest_desc: [
 		"  A new machine! This one can only be made in steel; it really needs that extra strength."
 		""
-		"  The &bPacker&r can perform simple crafts for you. You can &6automate double ingots, pipes, many types of bricks, and more&r! Check your REI for more recipes."
+		"  The &bPacker&r can perform simple crafts for you. You can &6automate double ingots, pipes, many types of bricks, and more&r! Check your EMI for more recipes."
 	]
 	quest.3143EA7DF096CE61.title: "Steel Packer"
 	quest.3189264EB89A2A5A.quest_desc: [
@@ -1570,7 +1570,7 @@
 	quest.3357A8B614D477B6.quest_desc: [
 		"  A new machine, the little sibling to the &bPacker&r! This one can only be made in steel; it really needs that extra strength."
 		""
-		"  &6The unpacker can perform simple crafts for you, such as converting dusts into tiny dusts&r. Check your REI for more recipes."
+		"  &6The unpacker can perform simple crafts for you, such as converting dusts into tiny dusts&r. Check your EMI for more recipes."
 	]
 	quest.3357A8B614D477B6.title: "Steel Unpacker"
 	quest.335BFE2345DAFE03.quest_desc: [
@@ -1855,7 +1855,7 @@
 	quest.3DC47060EEAB8975.quest_desc: ["Once you have &6replicated &fyour &bsulfur &fit will all go directly into this machine. You may &6Right-Click &fwith your hand and retrieve your &bsulfur."]
 	quest.3DC47060EEAB8975.quest_subtitle: "And its all here"
 	quest.3DE966D73F4FF5A4.quest_subtitle: "Blocks certain pesky intruders from entering your base."
-	quest.3DF6354F7AC8D4A4.quest_desc: ["  Now that you can start your journey into the chemicals branching off from &bCrude Oil&r, you can produce upgrades for your machines! All of the electric machines you've used up until now have has a maximum overclock of 32 eu/t. Now, you can increase that maximum, depending on the tier of upgrade you use. Check your REI to see how much EU each upgrade raises."]
+	quest.3DF6354F7AC8D4A4.quest_desc: ["  Now that you can start your journey into the chemicals branching off from &bCrude Oil&r, you can produce upgrades for your machines! All of the electric machines you've used up until now have has a maximum overclock of 32 eu/t. Now, you can increase that maximum, depending on the tier of upgrade you use. Check your EMI to see how much EU each upgrade raises."]
 	quest.3DF6354F7AC8D4A4.title: "Upgrades"
 	quest.3DFE128A74C32B45.title: "Hydrogen for HCL"
 	quest.3E165961635B0C4B.quest_desc: ["A &6Meteorite&r will always contain a &bMysterious Cube&r. Once you find a &bMysterious Cube&f, you must break it to obtain all of the &bInscriber Press's&f."]
@@ -2228,7 +2228,7 @@
 	]
 	quest.495EEAA73357FA60.quest_subtitle: "Super Powered"
 	quest.495EEAA73357FA60.title: "Eclipse Alloy Tool \\& Weapons"
-	quest.4980C231ECDB0BF2.quest_desc: ["  The &bSteel Drill&r gives you the rest of the &6more commonly used ores&r that you'll need for further progression in your journey to total automation, but also in your journey of the world itself. Check your REI for all the possible outputs."]
+	quest.4980C231ECDB0BF2.quest_desc: ["  The &bSteel Drill&r gives you the rest of the &6more commonly used ores&r that you'll need for further progression in your journey to total automation, but also in your journey of the world itself. Check your EMI for all the possible outputs."]
 	quest.4980C231ECDB0BF2.title: "Steel Drill"
 	quest.49910F2EFEA1CDF2.quest_desc: [
 		"  &bSimple&r:"
@@ -3144,7 +3144,7 @@
 	quest.6F57A2A5AA6E3F49.quest_desc: [
 		"  Oil is a black flammable liquid that forms in the ground over a very &overy&r long time. &6Using a &bDrilling Rig&r&6, you can drill into the ground and extract this oil&r."
 		""
-		"  Oil isn't the only thing that can be pumped from the floor though. Using different types of drills decide which fluid to mine for. Use your REI to see which drills mine for which fluid."
+		"  Oil isn't the only thing that can be pumped from the floor though. Using different types of drills decide which fluid to mine for. Use your EMI to see which drills mine for which fluid."
 		""
 		"  P.S. Don't forget, this is one of those very complex multiblocks. &6Use your &bWrench&r &6to show you how to build it&r!"
 	]
@@ -3164,7 +3164,7 @@
 		""
 		"  The &bSteam Quarry&r is a steam powered multiblock machine that uses different &6drills&r that you install onto it to dig deeper than bedrock and retrieves ores straight from the below, whatever might be under there."
 		""
-		"  You can check which ores this method will provide by checking REI. I recommend that you have multiple&b Steam Blast Furnaces&r running before you begin putting together the &bQuarry&r because &6this will use a LOT of &r&bSteel&r."
+		"  You can check which ores this method will provide by checking EMI. I recommend that you have multiple&b Steam Blast Furnaces&r running before you begin putting together the &bQuarry&r because &6this will use a LOT of &r&bSteel&r."
 	]
 	quest.6F6898DC529D1120.title: "Infinite Resources?"
 	quest.6F7A998802C99AD4.quest_desc: ["These are pylons designed to outline the volume you wish to store into spatial drives. You must use these to outline 3 edges to an imaginary box surrounding the build. Each line of them uses 1 channel and each line needs to be at at least 2 pylons long. Try experimenting with the number of lines and how much power it uses! You might be able to optimize your digitizing."]
@@ -3360,7 +3360,7 @@
 	quest.7593E582FA928061.quest_desc: [
 		"  This is the &bCopper Drill&r. This will give you &6stones and dirts&r, mostly used as building materials."
 		""
-		"  Check the outputs in REI and make sure you know that &6the drill has a chance of breaking&r, so don't just make one."
+		"  Check the outputs in EMI and make sure you know that &6the drill has a chance of breaking&r, so don't just make one."
 	]
 	quest.7593E582FA928061.title: "Copper Drill"
 	quest.7599CF789CD95680.quest_desc: ["By &6throwing &bblack dye &finto &bSpiritfire&f, you will obtain &bPurified Ink"]
@@ -3395,7 +3395,7 @@
 	quest.779C3C6B89AD2526.quest_desc: [
 		"  Electric machines work exactly the same as steam machines, except from the fact &6they require electricity to function instead of steam&r and they can progressively overclock recipes to up to 32 EU/t (for now)."
 		""
-		"  You can use your REI to view the recipes for the electric versions of the machines you are already familiar with. The recipes are more complex and will require more specific machine oriented parts."
+		"  You can use your EMI to view the recipes for the electric versions of the machines you are already familiar with. The recipes are more complex and will require more specific machine oriented parts."
 		""
 		"  Your first main part will be the &bAnalog Circuits&r. This will be the main circuit for the LV machines as well as the base for high tier circuits and machines. &6You should automate this as soon as possible&r."
 		""
