@@ -1,4 +1,4 @@
-# Installing Craftoria
+# Installing a _Craftoria_ Server
 
 *** Java 21 is required ***
 
