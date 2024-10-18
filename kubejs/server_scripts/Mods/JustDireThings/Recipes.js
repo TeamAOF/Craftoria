@@ -156,4 +156,8 @@ ServerEvents.recipes((event) => {
       .itemOut(`4x justdirethings:${ore}`)
       .id(`craftoria:justdirethings/macerator/${ore}`);
   });
+
+  event.smithing('justdirethings:celestigem_paxel', 'justdirethings:celestigem_axe', 'justdirethings:celestigem_shovel')
+    .template('justdirethings:celestigem_pickaxe');
+  
 });
