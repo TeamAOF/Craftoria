@@ -915,38 +915,8 @@
 					type: "item"
 				}
 				{
-					id: "3F78A9BDFBD8D79D"
-					item: { count: 1, id: "powah:energizing_rod_starter" }
-					type: "item"
-				}
-				{
-					id: "5F7BCBC57B2F6E32"
-					item: { count: 1, id: "powah:energizing_rod_basic" }
-					type: "item"
-				}
-				{
-					id: "2F4EC4E46677D4BB"
-					item: { count: 1, id: "powah:energizing_rod_hardened" }
-					type: "item"
-				}
-				{
-					id: "313F772DF86BEFAF"
-					item: { count: 1, id: "powah:energizing_rod_blazing" }
-					type: "item"
-				}
-				{
-					id: "6F884303FD1DD4A6"
-					item: { count: 1, id: "powah:energizing_rod_niotic" }
-					type: "item"
-				}
-				{
-					id: "4FA613AEF659630F"
-					item: { count: 1, id: "powah:energizing_rod_spirited" }
-					type: "item"
-				}
-				{
-					id: "42BF18E34873841F"
-					item: { count: 1, id: "powah:energizing_rod_nitro" }
+					id: "0B892AE69507A123"
+					item: { components: { "ftbfiltersystem:filter": "or(item_tag(powah:energizing_rods))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 			]
