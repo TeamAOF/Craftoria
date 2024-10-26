@@ -30,6 +30,10 @@
 	disableAdventureModeCasting = false
 	#Whether hoglins have the ability to pass overworld zombification immunity to their offspring. Default: true
 	hoglinOffspringProtection = true
+	#Global multiplier to all players' mana regeneration. Default: 1.0
+	manaRegenMultiplier = 1.0
+	#Whether merging scrolls with ink to upgrade them in the Arcane Anvil is enabled.
+	scrollMerging = true
 
 ["Upgrade Overrides"]
 	#Use these lists to change what items can interact with the Arcane Anvil's upgrade system. This can also be done via datapack.

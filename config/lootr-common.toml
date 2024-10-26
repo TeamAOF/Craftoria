@@ -15,6 +15,8 @@
 	report_unresolved_tables = false
 	#disregard chests and chunks that are outside of the world border; enable this option if you are using a world border and are suffering consistent TPS issues; if you change the world border, you will need to restart your client
 	check_world_border = false
+	#checks structure pieces as well as structure starts when determining if a structure contains a position, more accurate but may cause lag (default true)
+	perform_piecewise_check = true
 
 [whitelist]
 	#configuration for specific whitelisting and blacklisting of dimensions, loot tables and modids

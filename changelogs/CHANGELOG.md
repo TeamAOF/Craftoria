@@ -1,3 +1,57 @@
+## Craftoria | v1.6.0
+
+_NeoForge Loader 21.1.66_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.6.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.6.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added Iron's Spells 'n Spellbooks quests, part 1.
+* Reworked Theurgy quest chapter.
+* Added Iron's quest trophy.
+* Changed quest progression mode from Linear to Flexible.
+* Changed Energizing Orb quest to accept ANY OF the rods instead of ALL.
+
+### Bug Fixes 🪲
+
+* Fixed certain animations speeding up.
+* Patched Hoprunning freaking out.
+
+### Added Mods ✅
+
+  * [Actually Additions](https://www.curseforge.com/minecraft/mc-mods/actually-additions)
+  * [Ars Elixirum](https://www.curseforge.com/minecraft/mc-mods/ars-elixirum-neoforge)
+  * [Ars Énergistique](https://www.curseforge.com/minecraft/mc-mods/ars-energistique)
+  * [Bad Wither No Cookie - Reloaded](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded)
+  * [Champions Unofficial](https://www.curseforge.com/minecraft/mc-mods/champions-unofficial)
+  * [EMI Ores](https://www.curseforge.com/minecraft/mc-mods/emi-ores)
+  * [Fragmentum](https://www.curseforge.com/minecraft/mc-mods/fragmentum-neoforge)
+  * [I'm Fast](https://www.curseforge.com/minecraft/mc-mods/im-fast)
+  * [Industrial Foregoing Souls](https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing-souls)
+  * [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons)
+  * [KubeJS Actually Additions](https://www.curseforge.com/minecraft/mc-mods/kubejs-actually-additions)
+  * [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)
+  * [Mekanism Covers](https://www.curseforge.com/minecraft/mc-mods/mekanism-covers)
+  * [More Industrial Foregoing Addons (MIFA)](https://www.curseforge.com/minecraft/mc-mods/mifa)
+  * [Nether's Exoticism](https://www.curseforge.com/minecraft/mc-mods/nethers-exoticism)
+  * [PVP Flagging](https://www.curseforge.com/minecraft/mc-mods/pvp-flagging)
+  * [Tips](https://www.curseforge.com/minecraft/mc-mods/tips)
+  * [Visuality](https://www.curseforge.com/minecraft/mc-mods/visuality-reforged)
+  * [YUNG's Better Desert Temples](https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples-neoforge)
+  * [YUNG's Better Dungeons](https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons-neoforge)
+  * [YUNG's Better End Island](https://www.curseforge.com/minecraft/mc-mods/yungs-better-end-island-neoforge)
+  * [YUNG's Better Jungle Temples](https://www.curseforge.com/minecraft/mc-mods/yungs-better-jungle-temples-neoforge)
+  * [YUNG's Better Mineshafts](https://www.curseforge.com/minecraft/mc-mods/yungs-better-mineshafts-neoforge)
+  * [YUNG's Better Nether Fortresses](https://www.curseforge.com/minecraft/mc-mods/yungs-better-nether-fortresses-neoforge)
+  * [YUNG's Better Ocean Monuments](https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments-neoforge)
+  * [YUNG's Better Strongholds](https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds-neoforge)
+  * [YUNG's Better Witch Huts](https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts-neoforge)
+  * [YUNG's Bridges](https://www.curseforge.com/minecraft/mc-mods/yungs-bridges-neoforge)
+  * [YUNG's Extras](https://www.curseforge.com/minecraft/mc-mods/yungs-extras-neoforge)
+
+### Removed Mods ❌
+
+* [AttributesFix](https://www.curseforge.com/minecraft/mc-mods/attributesfix)
+---
+
 ## Craftoria | v1.5.0
 
 _NeoForge Loader 21.1.66_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.5.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.5.0.md)_

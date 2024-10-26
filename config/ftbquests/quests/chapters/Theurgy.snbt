@@ -112,7 +112,7 @@
 			y: -9.75d
 		}
 	]
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -140,7 +140,7 @@
 				type: "checkmark"
 			}]
 			x: -13.75d
-			y: 0.0d
+			y: -1.25d
 		}
 		{
 			dependencies: ["1CD1F5A08AE6E557"]
@@ -166,8 +166,8 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
-			y: 0.0d
+			x: -5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["3B117FA99DD7558F"]
@@ -193,8 +193,8 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
-			y: 2.5d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -238,8 +238,8 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
-			y: -0.5d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1CD1F5A08AE6E557"]
@@ -265,8 +265,8 @@
 					type: "item"
 				}
 			]
-			x: -8.0d
-			y: -1.5d
+			x: -5.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["1CD1F5A08AE6E557"]
@@ -292,8 +292,8 @@
 					type: "item"
 				}
 			]
-			x: -9.0d
-			y: 1.0d
+			x: -6.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["22822DD2E10F65EA"]
@@ -321,8 +321,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -4.5d
+			x: 4.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["392EC503FD52E32A"]
@@ -338,8 +338,8 @@
 				item: { count: 1, id: "theurgy:fermentation_vat" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: 2.0d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2B2D3B338662F02C"]
@@ -355,8 +355,8 @@
 				item: { count: 1, id: "theurgy:digestion_vat" }
 				type: "item"
 			}]
-			x: -1.0d
-			y: -0.5d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["367A013744D689E4"]
@@ -373,8 +373,8 @@
 				item: { count: 4, id: "theurgy:mercury_shard" }
 				type: "item"
 			}]
-			x: -5.5d
-			y: -1.5d
+			x: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7DD81584380EE8F7"]
@@ -390,8 +390,8 @@
 				item: { count: 1, id: "theurgy:caloric_flux_emitter" }
 				type: "item"
 			}]
-			x: -1.5d
-			y: -4.5d
+			x: 1.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["7DD81584380EE8F7"]
@@ -407,8 +407,8 @@
 				item: { count: 1, id: "theurgy:mercury_catalyst" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.5d
+			x: 0.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["19F7B6A670D4A707"]
@@ -424,8 +424,8 @@
 				item: { count: 1, id: "theurgy:mercurial_wand" }
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.0d
+			x: 1.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7DD81584380EE8F7"]
@@ -448,8 +448,8 @@
 					type: "item"
 				}
 			]
-			x: -0.5d
-			y: -4.0d
+			x: 2.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["7DD81584380EE8F7"]
@@ -465,8 +465,8 @@
 				item: { count: 1, id: "theurgy:list_filter" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: -3.0d
+			x: -1.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["7DD81584380EE8F7"]
@@ -489,8 +489,8 @@
 					type: "item"
 				}
 			]
-			x: -3.5d
-			y: -4.0d
+			x: -0.5d
+			y: -7.5d
 		}
 		{
 			id: "1CD1F5A08AE6E557"
@@ -505,8 +505,8 @@
 				item: { count: 1, id: "theurgy:sal_ammoniac_crystal" }
 				type: "item"
 			}]
-			x: -10.0d
-			y: -0.5d
+			x: -7.0d
+			y: -4.0d
 		}
 		{
 			id: "5143D5FD55C819CA"
@@ -676,8 +676,8 @@
 				item: { count: 1, id: "theurgy:sal_ammoniac_bucket" }
 				type: "item"
 			}]
-			x: -7.0d
-			y: 2.0d
+			x: -4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -803,8 +803,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -2.0d
+			x: 4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["392EC503FD52E32A"]
@@ -842,8 +842,8 @@
 					type: "item"
 				}
 			]
-			x: -5.0d
-			y: 3.5d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["392EC503FD52E32A"]
@@ -901,8 +901,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 3.5d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["392EC503FD52E32A"]
@@ -955,8 +955,8 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
-			y: 4.0d
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["392EC503FD52E32A"]
@@ -989,8 +989,8 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: 4.0d
+			x: -1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1053,45 +1053,69 @@
 				id: "4D5812F798FB8C8C"
 				type: "checkmark"
 			}]
-			x: 1.25d
+			x: -3.75d
 			y: -7.5d
 		}
 		{
 			dependencies: ["2F7A213261682E1B"]
 			id: "392EC503FD52E32A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2EA8FEB667565AA7"
+				table_id: 2924399528588739882L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "5B45AC8A84E67EE3"
 				item: { components: { "ftbfiltersystem:filter": "or(item_tag(theurgy:alchemical_sulfurs))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 2.5d
+			x: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7DD81584380EE8F7"]
 			id: "22822DD2E10F65EA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "785A117152701877"
+				table_id: 2924399528588739882L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "4BB7894E646ED8BF"
 				item: { count: 1, id: "theurgy:sulfuric_flux_emitter" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: 3.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["1FF9FB01DBE735FC"]
 			id: "02D3AFC713077502"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F4B93A6949567BC"
+				table_id: 2924399528588739882L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "505E71371DF8AD43"
 				item: { count: 1, id: "theurgy:fermentation_starter" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: 3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7A6C1605F32F695F"]
 			id: "5C98D9127F4CEB74"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "02B3A0638BCA63FA"
+				table_id: 2924399528588739882L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					id: "1D29EC6739EACB44"
@@ -1114,19 +1138,25 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
-			y: 0.5d
+			x: -3.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5C98D9127F4CEB74"]
 			id: "2B2D3B338662F02C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55212B8A1041832C"
+				table_id: 2924399528588739882L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "782E20FB2C89AEC3"
 				item: { count: 1, id: "theurgy:purified_gold" }
 				type: "item"
 			}]
-			x: -3.5d
-			y: 0.5d
+			x: -0.5d
+			y: -3.0d
 		}
 	]
 }

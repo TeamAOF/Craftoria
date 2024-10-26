@@ -1486,7 +1486,7 @@
 			}]
 			tasks: [{
 				id: "1F9F3E46484B78A5"
-				item: { count: 1, id: "artifacts:night_vision_goggles" }
+				item: { components: { "relics:data": { abilities: { abilities: { vision: { extender: { cooldown: 0, cooldownCap: 0, ticking: 1b }, lock: { breaks: 5 }, points: 0, research: { links: { }, researched: 0b }, stats: { amount: { initialValue: 0.08211d } } } } }, leveling: { experience: 0, level: 0, luck: 0, points: 0 } } }, count: 1, id: "artifacts:night_vision_goggles" }
 				type: "item"
 			}]
 			x: 7.5d

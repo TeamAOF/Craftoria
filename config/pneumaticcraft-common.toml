@@ -129,6 +129,12 @@
 	#Air used per point of 'player air' restored by the Scuba Upgrade
 	#Range: > 1
 	scuba_multiplier = 8
+	#Minimum depth below sea level at which air usage starts to increase (if 'scuba_air_usage_per_block_depth' is > 0)
+	#Range: > 0
+	scuba_min_air_usage_increase_depth = 0
+	#Extra air usage (on top of 'scuba_multiplier') per block below the threshold depth (see 'scuba_min_air_usage_increase_depth')
+	#Range: 0.0 ~ 1.7976931348623157E308
+	scuba_air_usage_per_block_depth = 0.0
 
 [advanced]
 	#When set to true, the Kerosene Lamp's fake air blocks won't be registered and therefore removed from the world. Useful if this causes trouble (it shouldn't though)

@@ -3,8 +3,19 @@
 	default_quest_shape: ""
 	filename: "irons_spells"
 	group: "01BEAD68B1D370D3"
+	icon: {
+		components: {
+			"irons_spellbooks:spell_container": {
+				data: [ ]
+				maxSpells: 10
+				mustEquip: 1b
+				spellWheel: 1b
+			}
+		}
+		id: "irons_spellbooks:diamond_spell_book"
+	}
 	id: "3B4FADE31FB88E9F"
-	order_index: 3
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{

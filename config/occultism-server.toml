@@ -89,7 +89,7 @@
 	enableNightTimeRitual = true
 	#If enabled, rituals are interrupted if *more* ingredients are present than needed. This should usually be disabled, but can improve performance if (very very) many rituals are running.
 	enableRemainingIngredientCountMatching = false
-	#Set a value below 1.0 to speed up rituals.
+	#Set a value below 1.0 to speed up rituals. Please ensure to use a preceding 0 for values below 1.0, e.g. '0.05' instead of '.05', otherwise Nightconfig (NeoForge's config sytem) will reset the value to 1.0.
 	#Range: 0.05 ~ 1.7976931348623157E308
 	ritualDurationMultiplier = 1.0
 
@@ -97,3 +97,5 @@
 [items]
 	#Allow the Divining Rod to attune to any ore
 	anyOreDivinationRod = false
+	#Miners head to the output in the Dimensional Mineshaft before it breaks
+	minerOutputBeforeBreak = false

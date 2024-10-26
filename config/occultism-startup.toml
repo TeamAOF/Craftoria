@@ -59,3 +59,15 @@
 		#The amount of mining operations the spirit can perform before breaking.
 		#Range: > 0
 		durability = 1600
+
+	#Miner Spirit Settings
+	[dimensional_mineshaft.miner_ancient_eldritch]
+		#The amount of time it takes the spirit to perform one mining operation.
+		#Range: > 0
+		maxMiningTime = 15
+		#The amount of blocks the spirit will obtain per mining operation
+		#Range: > 0
+		rollsPerOperation = 1
+		#The amount of mining operations the spirit can perform before breaking.
+		#Range: > 0
+		durability = 3200

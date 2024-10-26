@@ -1,8 +1,7 @@
-
 [general]
 	#List of waystone origins that should prevent others from editing. PLAYER is special in that it allows only edits by the owner of the waystone.
 	restrictedWaystones = ["PLAYER"]
-	#Add GLOBAL to allow every player to create global waystones.
+	#Add "GLOBAL" to allow every player to create global waystones.
 	allowedVisibilities = []
 	#The time in ticks that it takes to use a warp stone. This is the charge-up time when holding right-click.
 	#Range: > -2147483648
@@ -13,6 +12,9 @@
 	#The time in ticks it takes to use a scroll. This is the charge-up time when holding right-click.
 	#Range: > -2147483648
 	scrollUseTime = 32
+	#Set to "GLOBAL" and change allowedVisibilities to have newly placed or found waystones be global by default.
+	#Allowed Values: ACTIVATION, GLOBAL, SHARD_ONLY, ORANGE_SHARESTONE, MAGENTA_SHARESTONE, LIGHT_BLUE_SHARESTONE, YELLOW_SHARESTONE, LIME_SHARESTONE, PINK_SHARESTONE, GRAY_SHARESTONE, LIGHT_GRAY_SHARESTONE, CYAN_SHARESTONE, PURPLE_SHARESTONE, BLUE_SHARESTONE, BROWN_SHARESTONE, GREEN_SHARESTONE, RED_SHARESTONE, BLACK_SHARESTONE
+	defaultVisibility = "ACTIVATION"
 
 [teleports]
 	#Set to false to simply disable all xp costs. See warpRequirements for more fine-grained control.
@@ -81,4 +83,3 @@
 	blueMap = true
 	#If enabled, Waystones will add markers for waystones and sharestones to Dynmap.
 	dynmap = true
-

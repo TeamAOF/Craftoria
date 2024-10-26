@@ -1,0 +1,70 @@
+[blocks]
+	#The explosion resistance of explosion resistant blocks.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	explosionResistance = 1200.0
+	#The speed boost granted by the Dark Steel ladder.
+	#Range: 0.0 ~ 1.0
+	darkSteelLadderBoost = 0.15
+
+	[blocks.brokenSpawner]
+		#The chance of a spawner dropping a broken spawner.
+		#Range: 0.0 ~ 1.0
+		dropChance = 1.0
+
+	[enchantments.repellent]
+		#Range: 0.0 ~ 1.0
+		chanceBase = 0.35
+		#Range: 0.0 ~ 1.0
+		chancePerLevel = 0.1
+		#Range: 4.0 ~ 1.7976931348623157E308
+		rangeBase = 8.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		rangePerLevel = 8.0
+		#Range: 0.0 ~ 1.0
+		nonPlayerChance = 0.75
+
+	[items.food]
+		#The chance of enderios teleporting the player
+		#Range: 0.0 ~ 1.0
+		enderioChance = 0.3
+		#The range of an enderio teleport
+		#Range: 4.0 ~ 128.0
+		enderioRange = 16.0
+
+	[items.electromagnet]
+		#Range: > 1
+		energyUse = 1
+		#Range: > 100
+		maxEnergy = 100000
+		#Range: 4 ~ 32
+		range = 5
+		#Range: 1 ~ 64
+		maxItems = 20
+
+	[items.levitationstaff]
+		#Range: > 1
+		energyUse = 1
+		#Range: > 100
+		maxEnergy = 10000
+
+	[items.travelling]
+		#Range: 4 ~ 512
+		blinkRange = 24
+		#Range: 0 ~ 1200
+		disabledTime = 5
+		#Range: > 1
+		energyUse = 1000
+		#Range: > 100
+		maxEnergy = 100000
+		#the following config values are only used if EIOMachines is loaded
+		#Range: 4 ~ 512
+		itemToBlockRange = 192
+		#Range: 4 ~ 512
+		blockToBlockRange = 96
+
+[grainsOfInfinity]
+	#Should it make a sound when Grains of Infinity drops from a fire?
+	makesSound = true
+	#How old (in ticks) does a fire have to be to be able to spawn Infinity Powder?
+	#Range: 1 ~ 1000
+	fireMinAge = 260

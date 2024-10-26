@@ -33,6 +33,10 @@ mod_parents = []
 	hidden_configs = []
 	library_list = []
 
+	[hide.disable_default_badges_section]
+		disable_default_badges_all = false
+		disable_default_badges = []
+
 [count]
 	count_hidden_mods = true
 	count_children = true

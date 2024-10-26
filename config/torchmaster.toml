@@ -18,12 +18,14 @@
 	#The + prefix will add the entity to the list, effectivly denying its spawns
 	#The - prefix will remove the entity from the list (if necessary), effectivly allowing its spawns
 	#Note: Each entry needs to be put in quotes! Multiple Entries should be separated by comma.
-	#Block zombies: "+minecraft:zombie"
-	#Allow creepers: "-minecraft:creeper"
+	#      The whole also needs to be enclosed by [ and ] respectively
+	#Block zombies: ["+minecraft:zombie"]
+	#Allow creepers: ["-minecraft:creeper"],
+	#Multiple Entries: ["+minecraft:pig", "-gaia:dryad"]
 	megaTorchEntityBlockListOverrides = []
 	#Same as the mega torch block list override, just for the dread lamp
-	#Block squid: +minecraft:squid
-	#Allow pigs: -minecraft:pig
+	#Block squid: ["+minecraft:squid"]
+	#Allow pigs: ["-minecraft:pig"]
 	dreadLampEntityBlockListOverrides = []
 	#The radius in which the feral flare should try to place lights
 	#Range: 1 ~ 127
@@ -42,7 +44,5 @@
 	#Durability of the frozen pearl. Each removed light will remove one charge from the pearl. Set to 0 to disable durability
 	#Range: 0 ~ 32767
 	frozenPearlDurability = 1024
-	#Print entity spawn checks to the debug log
-	logSpawnChecks = false
 	#Configures the spawn check to be more aggressive, effectivly overriding the CheckSpawn results of other mods
 	aggressiveSpawnChecks = false

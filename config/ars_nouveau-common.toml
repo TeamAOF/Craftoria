@@ -70,3 +70,8 @@
 	#Max number of log events to keep on entities. Lowering this number may make it difficult to debug why your entities are stuck.
 	#Range: > 0
 	maxLogEvents = 100
+
+[alakarkinos]
+	#How much mana alakarkinos consume per generation
+	#Range: 0 ~ 10000
+	alakarkinosSourceCost = 1000

@@ -54,11 +54,21 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "champions": {
+    "enable_affix_compact": true
+  },
   "apothic_spawners": {
     "spawner": true
   },
   "entangled": {
     "entangled_block_component": true
+  },
+  "jade_access": {
+    "held_item": true,
+    "sign": true,
+    "block": true,
+    "entity": true,
+    "entity_variant": true
   },
   "pneumaticcraft": {
     "pneumatic": true,
@@ -82,6 +92,9 @@
   "modern_industrialization": {
     "overclock": true,
     "pipe": true
+  },
+  "lootr": {
+    "info": true
   },
   "extendedae": {
     "jade_chamber": true,
@@ -115,6 +128,9 @@
     "tesseract": true,
     "remove_default": true
   },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
   "mekanism": {
     "chemical": true,
     "remove_builtin": true,
@@ -122,17 +138,8 @@
     "energy": true,
     "tooltip_renderer": true
   },
-  "easy_villagers": {
-    "villager": true,
-    "converter": true,
-    "breeder": true
-  },
   "pipez": {
     "pipe": true
-  },
-  "twilightforest": {
-    "chiseled_bookshelf_spawner": true,
-    "quest_ram_wool": true
   },
   "waystones": {
     "waystone": true

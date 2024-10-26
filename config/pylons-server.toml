@@ -52,3 +52,12 @@
 	#Whether the harvester can have tools piped in to automate it.
 	#By default, unbreakable tools are required for full automation.
 	harvesterCanBeAutomated = false
+	#Whether the harvester requires power to work.
+	#If enabled, it will disable the tool requirement and instead have an RF cost per block.
+	harvesterRequiresPower = false
+	#The RF cost per block harvested, if power usage is enabled.
+	#Range: 1 ~ 10000
+	harvesterPowerCost = 5
+	#Buffer size should be greater than power cost per block * 80.
+	#Range: 100 ~ 1000000
+	harvesterPowerBuffer = 1000
