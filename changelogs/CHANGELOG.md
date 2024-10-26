@@ -12,6 +12,7 @@ _NeoForge Loader 21.1.72_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
 ### Bug Fixes 🪲
 
+* Fixed quest typos.
 * Fixed certain animations speeding up.
 * Patched Hoprunning freaking out.
 
