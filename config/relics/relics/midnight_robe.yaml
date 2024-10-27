@@ -72,11 +72,11 @@ abilitiesData:
                     upgradeOperation: MULTIPLY_BASE
                 distance:
                     # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
-                    maxInitialValue: 20.0
+                    maxInitialValue: 15.0
                     # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
                     maxThresholdValue: 1.7976931348623157E308
                     # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
-                    minInitialValue: 15.0
+                    minInitialValue: 20.0
                     # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
                     minThresholdValue: 4.9E-324
                     # Modifier applied to the base value of the stat, depending on the [upgradeOperation] parameter.

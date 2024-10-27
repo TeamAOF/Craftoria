@@ -1,3 +1,13 @@
+## Craftoria | v1.6.1
+
+_NeoForge Loader 21.1.72_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.6.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.6.1.md)_
+
+### Removed Mods ❌
+
+  * [Ars Elixirum](https://www.curseforge.com/minecraft/mc-mods/ars-elixirum-neoforge)
+  * [Fragmentum](https://www.curseforge.com/minecraft/mc-mods/fragmentum-neoforge)
+---
+
 ## Craftoria | v1.6.0
 
 _NeoForge Loader 21.1.72_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.6.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.6.0.md)_
@@ -47,10 +57,6 @@ _NeoForge Loader 21.1.72_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
   * [YUNG's Better Witch Huts](https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts-neoforge)
   * [YUNG's Bridges](https://www.curseforge.com/minecraft/mc-mods/yungs-bridges-neoforge)
   * [YUNG's Extras](https://www.curseforge.com/minecraft/mc-mods/yungs-extras-neoforge)
-
-### Removed Mods ❌
-
-* [AttributesFix](https://www.curseforge.com/minecraft/mc-mods/attributesfix)
 ---
 
 ## Craftoria | v1.5.0
