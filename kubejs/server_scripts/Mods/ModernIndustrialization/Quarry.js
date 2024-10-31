@@ -81,7 +81,8 @@ ServerEvents.recipes(event => {
     ["modern_industrialization:salt_ore", 1, 0.12],
     ["minecraft:emerald_ore", 1, 0.1],
     ["modern_industrialization:quartz_ore", 1, 0.2],
-    ["powah:uraninite_ore", 1, 0.08]
+    ["powah:uraninite_ore", 1, 0.08],
+    ["actuallyadditions:black_quartz_ore", 1, 0.15],
   ], 12, 600);
 
   // Gold Drill
