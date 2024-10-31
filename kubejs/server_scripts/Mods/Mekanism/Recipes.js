@@ -112,6 +112,9 @@ ServerEvents.recipes((e) => {
   enrich('4x modern_industrialization:monazite_dust', '#c:ores/monazite');
   enrich('3x irons_spellbooks:raw_mithril', '#c:ores/mithril');
 
+  // AA Compat
+  enrich('2x actuallyadditions:black_quartz', '#c:ores/black_quartz');
+
   // New Stuff
   rotary('mekanism:antimatter', 'craftoria:antimatter');
   oxidizing('200x craftoria:plutonium_oxide', '#c:ingots/plutonium');
