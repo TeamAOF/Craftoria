@@ -29,12 +29,10 @@ _NeoForge Loader 21.1.72_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 ### Added Mods ✅
 
   * [Actually Additions](https://www.curseforge.com/minecraft/mc-mods/actually-additions)
-  * [Ars Elixirum](https://www.curseforge.com/minecraft/mc-mods/ars-elixirum-neoforge)
   * [Ars Énergistique](https://www.curseforge.com/minecraft/mc-mods/ars-energistique)
   * [Bad Wither No Cookie - Reloaded](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded)
   * [Champions Unofficial](https://www.curseforge.com/minecraft/mc-mods/champions-unofficial)
   * [EMI Ores](https://www.curseforge.com/minecraft/mc-mods/emi-ores)
-  * [Fragmentum](https://www.curseforge.com/minecraft/mc-mods/fragmentum-neoforge)
   * [I'm Fast](https://www.curseforge.com/minecraft/mc-mods/im-fast)
   * [Industrial Foregoing Souls](https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing-souls)
   * [Jade Addons](https://www.curseforge.com/minecraft/mc-mods/jade-addons)
