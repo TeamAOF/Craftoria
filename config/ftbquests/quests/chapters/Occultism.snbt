@@ -806,7 +806,7 @@
 			id: "21ECF7BC4017D4A9"
 			tasks: [{
 				id: "655235BF6A9825D8"
-				item: { components: { "ftbquests:missing_item": "occultism:chalk_gold_impure" }, count: 1, id: "ftbquests:missing_item" }
+				item: { count: 1, id: "occultism:chalk_yellow_impure" }
 				type: "item"
 			}]
 			x: -2.5d
@@ -815,10 +815,7 @@
 		{
 			dependencies: ["534EF7E31E431CEC"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "occultism:ritual_dummy/summon_wild_afrit"
-				}
-				id: "ftbquests:missing_item"
+				id: "occultism:ritual_dummy/summon_unbound_afrit"
 			}
 			id: "3B007B3669FFC1C4"
 			tasks: [
