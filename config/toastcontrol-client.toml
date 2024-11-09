@@ -1,4 +1,3 @@
-
 #Client Configuration
 [client]
 
@@ -22,20 +21,24 @@
 
 	[client.visual_options]
 		#How long a toast must be on the screen for, in ticks.  Use 0 to use the default time.
-		#Range: 0 ~ 4000
+		# Default: 0
+		# Range: 0 ~ 4000
 		force_time = 0
 		#If toasts are translucent.
 		translucent = true
 		#If toasts are transparent.  Overrides translucency.
 		transparent = false
 		#How many toasts will be displayed on screen at once.
-		#Range: 1 ~ 7
+		# Default: 3
+		# Range: 1 ~ 7
 		toast_count = 3
 		#The X offset for toasts to be drawn at.
-		#Range: -8192 ~ 8192
+		# Default: 0
+		# Range: -8192 ~ 8192
 		x_offset = 0
 		#The Y offset for toasts to be drawn at.
-		#Range: -8192 ~ 8192
+		# Default: 0
+		# Range: -8192 ~ 8192
 		y_offset = 0
 		#If toasts automatically pop into the screen without animations.
 		no_slide = false
@@ -47,4 +50,3 @@
 	[client.debug]
 		#If toast classes are printed when they are shown.
 		print_classes = false
-

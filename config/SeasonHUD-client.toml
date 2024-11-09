@@ -23,32 +23,38 @@
 			#The RGB color (decimal) for spring.
 			#(256 * 256 * r) + (256 * g) + (b) is the formula.
 			#Default is 16753595.
-			#Range: 0 ~ 16777215
+			# Default: 16753595
+			# Range: 0 ~ 16777215
 			spring_color = 16753595
 			#The RGB color (decimal) for summer.
 			#(256 * 256 * r) + (256 * g) + (b) is the formula.
 			#Default is 16705834.
-			#Range: 0 ~ 16777215
+			# Default: 16705834
+			# Range: 0 ~ 16777215
 			summer_color = 16705834
 			#The RGB color (decimal) for autumn.
 			#(256 * 256 * r) + (256 * g) + (b) is the formula.
 			#Default is 12344871.
-			#Range: 0 ~ 16777215
+			# Default: 12344871
+			# Range: 0 ~ 16777215
 			autumn_color = 12344871
 			#The RGB color (decimal) for winter.
 			#(256 * 256 * r) + (256 * g) + (b) is the formula.
 			#Default is 14679292.
-			#Range: 0 ~ 16777215
+			# Default: 14679292
+			# Range: 0 ~ 16777215
 			winter_color = 14679292
 			# The RGB color (decimal) for dry tropical season.
 			#(256 * 256 * r) + (256 * g) + (b) is the formula.
 			#Default is 16745216.
-			#Range: 0 ~ 16777215
+			# Default: 16745216
+			# Range: 0 ~ 16777215
 			dry_color = 16745216
 			#The RGB color (decimal) for wet tropical season.
 			#(256 * 256 * r) + (256 * g) + (b) is the formula.
 			#Default is 2068975.
-			#Range: 0 ~ 16777215
+			# Default: 2068975
+			# Range: 0 ~ 16777215
 			wet_color = 2068975
 
 	[SeasonHUD.Season]
@@ -73,7 +79,8 @@
 		calendar_detail = false
 		#Change if you are using a Minecraft day length other than vanilla value and using Fabric Seasons.
 		#Default Minecraft day is 24000.
-		#Range: > 0
+		# Default: 24000
+		# Range: > 0
 		day_length = 24000
 
 	[SeasonHUD.Minimap]

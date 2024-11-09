@@ -96,6 +96,16 @@
 	empty-search-sidebar-focus: none;
 
 	/**
+	 * Whether the EMI config button should be visible.
+	 */
+	emi-config-button-visibility: shown;
+
+	/**
+	 * Whether the recipe tree button should be visible.
+	 */
+	recipe-tree-button-visibility: auto;
+
+	/**
 	 * The maximum height the recipe screen will grow to be if space is available in
 	 * pixels.
 	 */

@@ -1,11 +1,13 @@
 [general]
 	#The range from an active beacon where no champions will spawn (0 to disable)
-	#Range: 0 ~ 1000
+	# Default: 64
+	# Range: 0 ~ 1000
 	beaconProtectionRange = 64
 	#Set to true to enable champions from mob spawners
 	championSpawners = false
 	#The minimum tier of champions that will have death messages sent out upon defeat (0 to disable)
-	#Range: > 0
+	# Default: 0
+	# Range: > 0
 	deathMessageTier = 0
 	#A list of dimension names that are blacklisted/whitelisted for champions
 	dimensionList = []

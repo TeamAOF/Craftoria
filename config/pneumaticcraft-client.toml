@@ -25,10 +25,12 @@
 
 [armor]
 	#Intensity of the FOV modification when using Pneumatic Leggings speed boost: 0.0 for no FOV modification, higher values zoom out more.  Note: non-zero values may cause FOV clashes with other mods.
-	#Range: 0.0 ~ 1.0
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
 	leggings_fov_factor = 0.0
 	#Maximum time, as a percentage of the tick, that the Pneumatic Helmet Block Tracker may take when active and scanning blocks. Larger values mean more rapid update of block information, but potentially greater impact on client FPS.
-	#Range: 1 ~ 100
+	# Default: 10
+	# Range: 1 ~ 100
 	block_tracker_max_time_per_tick = 10
 	#Enable the Pneumatic Helmet Coordinate Tracker pathfinder
 	path_enabled = false
@@ -44,7 +46,8 @@
 	#Should enchantment glint be shown on Pneumatic Armor pieces? Disable if you don't like the enchantment glint messing up your carefully chosen colour scheme...
 	show_enchant_glint = true
 	#Maximum screen roll in degrees when banking left or right during Jet Boots flight - cosmetic only
-	#Range: 0 ~ 90
+	# Default: 35
+	# Range: 0 ~ 90
 	max_jet_boots_roll = 35
 	#Which component initialisation messages to display when armor is booting up
 	#Allowed Values: ALL, ENABLED_ONLY, NONE
@@ -52,29 +55,38 @@
 
 [sound]
 	#Volume level of the Elevator while running
-	#Range: 0.0 ~ 2.0
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
 	elevator_volume_running = 1.0
 	#Volume level of the Elevator *clunk* while starting/stopping
-	#Range: 0.0 ~ 2.0
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
 	elevator_volume_start_stop = 1.0
 	#Volume level of air leaks from unconnected tubes/machines. Beware: turning this off could lead to undetected leaks wasting pressure forever!
-	#Range: 0.0 ~ 2.0
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
 	air_leak_volume = 1.0
 	#Volume level of the hand-held Minigun
-	#Range: 0.0 ~ 2.0
+	# Default: 0.75
+	# Range: 0.0 ~ 2.0
 	minigun_volume_held = 0.75
 	#Volume level of drone-mounted Miniguns
-	#Range: 0.0 ~ 2.0
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
 	minigun_volume_drone = 1.0
 	#Volume level of the Sentry Turret's Minigun
-	#Range: 0.0 ~ 2.0
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
 	minigun_volume_sentry_turret = 1.0
 	#Volume level of the Jet Boots in normal flight mode
-	#Range: 0.0 ~ 2.0
+	# Default: 1.0
+	# Range: 0.0 ~ 2.0
 	jetboots_volume = 1.0
 	#Volume level of the Jet Boots when in Builder Mode
-	#Range: 0.0 ~ 2.0
+	# Default: 0.3
+	# Range: 0.0 ~ 2.0
 	jetboots_volume_builder_mode = 0.3
 	#Volume level of the Jackhammer
-	#Range: 0.0 ~ 2.0
+	# Default: 0.7
+	# Range: 0.0 ~ 2.0
 	jackhammer_volume = 0.7

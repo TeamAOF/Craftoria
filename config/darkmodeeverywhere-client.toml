@@ -9,18 +9,22 @@ METHOD_SHADER_DUMP = false
 
 ["Inventory Button"]
 	#Pixels away from the left of the GUI in the x axis
-	#Range: > 0
+	# Default: 32
+	# Range: > 0
 	X = 50
 	#Pixels away from the bottom of the GUI in the y axis
-	#Range: > 0
+	# Default: 2
+	# Range: > 0
 	Y = 3
 
 ["Main Menu Button"]
 	#Enabled
 	SHOW = false
 	#Pixels away from the left of the GUI in the x axis
-	#Range: > 0
+	# Default: 4
+	# Range: > 0
 	MAIN_X = 4
 	#Pixels away from the bottom of the GUI in the y axis
-	#Range: > 0
+	# Default: 40
+	# Range: > 0
 	MAIN_Y = 40

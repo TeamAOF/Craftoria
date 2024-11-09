@@ -1,10 +1,12 @@
 #If true, a cow can be squished into a Milk Jar by dropping an anvil on top.
 cowJarEnabled = true
 #The amount of milk the cow in a jar generates per tick.
-#Range: > -2147483648
+# Default: 1
+# Range: > -2147483648
 cowJarMilkPerTick = 1
 #Ex Compressum compatibility. Multiplier applied to the milk per tick for Compressed Cow in a Jar.
-#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+# Default: 9.0
+# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 compressedCowJarMilkMultiplier = 9.0
 #Set this to true if you'd like the sink to require water to be piped in, instead of providing infinite of it.
 sinkRequiresWater = true
@@ -13,10 +15,12 @@ largeCounters = false
 #Set this to true if you'd like to disallow automation of the oven (pipes and such won't be able to insert/extract)
 disallowOvenAutomation = false
 #The fuel multiplier for the cooking oven. Higher values means fuel lasts longer, 1.0 is furnace default.
-#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+# Default: 0.33000001311302185
+# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 ovenFuelTimeMultiplier = 0.33000001311302185
 #The cooking time multiplier for the cooking oven. Higher values means it will take longer.
-#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+# Default: 1.0
+# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
 ovenCookTimeMultiplier = 1.0
 #Set this to true if you'd like the oven to only accept cooking oil as fuel (requires Pam's Harvestcraft)
 ovenRequiresCookingOil = false
@@ -26,4 +30,3 @@ showIngredientIcon = true
 allowVeryToastedBread = true
 #List of recipe ids that should be excluded from the recipe book.
 excludedRecipes = []
-

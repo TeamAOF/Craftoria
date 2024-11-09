@@ -1,3 +1,31 @@
+## Craftoria | v1.7.0
+
+_NeoForge Loader 21.1.72_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.7.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.7.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added processing of Mekanism & MI ores in the AA crusher.
+* Added Black Quartz Ore through MI steel drill (Quarry).
+* Added MI macerator recipe for Black Quartz.
+* Added Mekanism Enriching recipe for Black Quartz.
+* Added worldgen for Canola, Flax and Coffee patches.
+* Disabled the Infested affix of Champions.
+* Added reconstructor conversion recipes for Stone, Calcite, Diorite, Granite & Andesite.
+
+### Bug Fixes 🪲
+
+* Fixed occultism yellow chalk quest not completeable.
+* Fixed afrit quest icon missing.
+
+### Added Mods ✅
+
+  * [Ars Nouveau's Flavors & Delight](https://www.curseforge.com/minecraft/mc-mods/ars-nouveaus-flavors-delight)
+  * [Crops 'n' Corpses](https://www.curseforge.com/minecraft/mc-mods/crops-n-corpses)
+  * [Farmer's Croptopia](https://www.curseforge.com/minecraft/mc-mods/farmers-croptopia)
+  * [GTBC's Spellbooks - Iron's Spells Addon](https://www.curseforge.com/minecraft/mc-mods/gtbcs-spellbooks)
+  * [Reliquary Reincarnations](https://www.curseforge.com/minecraft/mc-mods/reliquary-reincarnations)
+---
+
 ## Craftoria | v1.6.1
 
 _NeoForge Loader 21.1.72_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.6.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.6.1.md)_

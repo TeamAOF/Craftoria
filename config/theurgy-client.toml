@@ -1,4 +1,3 @@
-
 #Rendering Settings
 [rendering]
 	#True to show the icon of the source item on top of the sulfur jar icon, false to hide it (source item will still be shown on hover in item name).
@@ -7,6 +6,6 @@
 	#True to enable the item HUD, false to disable it.
 	enableItemHUD = true
 	#The scale of the Item HUD text (e.g. for the mercurial wand).
-	#Range: 0.25 ~ 3.0
+	# Default: 0.7
+	# Range: 0.25 ~ 3.0
 	hudScale = 0.7
-

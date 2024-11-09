@@ -10,10 +10,12 @@
 		#Efficiency of Wood paxels.
 		woodPaxelEfficiency = 2.0
 		#Natural enchantability factor of Wood paxels.
-		#Range: > 0
+		# Default: 15
+		# Range: > 0
 		woodPaxelEnchantability = 15
 		#Maximum durability of Wood paxels.
-		#Range: > 1
+		# Default: 118
+		# Range: > 1
 		woodPaxelDurability = 118
 
 	#Vanilla Material Paxel Settings for Stone.
@@ -25,10 +27,12 @@
 		#Efficiency of Stone paxels.
 		stonePaxelEfficiency = 4.0
 		#Natural enchantability factor of Stone paxels.
-		#Range: > 0
+		# Default: 5
+		# Range: > 0
 		stonePaxelEnchantability = 5
 		#Maximum durability of Stone paxels.
-		#Range: > 1
+		# Default: 262
+		# Range: > 1
 		stonePaxelDurability = 262
 
 	#Vanilla Material Paxel Settings for Gold.
@@ -40,10 +44,12 @@
 		#Efficiency of Gold paxels.
 		goldPaxelEfficiency = 12.0
 		#Natural enchantability factor of Gold paxels.
-		#Range: > 0
+		# Default: 22
+		# Range: > 0
 		goldPaxelEnchantability = 22
 		#Maximum durability of Gold paxels.
-		#Range: > 1
+		# Default: 64
+		# Range: > 1
 		goldPaxelDurability = 64
 
 	#Vanilla Material Paxel Settings for Iron.
@@ -55,10 +61,12 @@
 		#Efficiency of Iron paxels.
 		ironPaxelEfficiency = 6.0
 		#Natural enchantability factor of Iron paxels.
-		#Range: > 0
+		# Default: 14
+		# Range: > 0
 		ironPaxelEnchantability = 14
 		#Maximum durability of Iron paxels.
-		#Range: > 1
+		# Default: 500
+		# Range: > 1
 		ironPaxelDurability = 500
 
 	#Vanilla Material Paxel Settings for Diamond.
@@ -70,10 +78,12 @@
 		#Efficiency of Diamond paxels.
 		diamondPaxelEfficiency = 8.0
 		#Natural enchantability factor of Diamond paxels.
-		#Range: > 0
+		# Default: 10
+		# Range: > 0
 		diamondPaxelEnchantability = 10
 		#Maximum durability of Diamond paxels.
-		#Range: > 1
+		# Default: 3122
+		# Range: > 1
 		diamondPaxelDurability = 3122
 
 	#Vanilla Material Paxel Settings for Netherite.
@@ -85,27 +95,33 @@
 		#Efficiency of Netherite paxels.
 		netheritePaxelEfficiency = 9.0
 		#Natural enchantability factor of Netherite paxels.
-		#Range: > 0
+		# Default: 15
+		# Range: > 0
 		netheritePaxelEnchantability = 15
 		#Maximum durability of Netherite paxels.
-		#Range: > 1
+		# Default: 4062
+		# Range: > 1
 		netheritePaxelDurability = 4062
 
 	#Material Settings for Lapis Lazuli
 	[materials.lapis_lazuli]
 		#Maximum durability of Lapis Lazuli tools.
-		#Range: > 1
+		# Default: 128
+		# Range: > 1
 		lapis_lazuliToolDurability = 128
 		#Efficiency of Lapis Lazuli tools.
 		lapis_lazuliEfficiency = 9.0
 		#Base attack damage of Lapis Lazuli items.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 1.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		lapis_lazuliAttackDamage = 1.0
 		#Natural enchantability factor of Lapis Lazuli items.
-		#Range: > 0
+		# Default: 32
+		# Range: > 0
 		lapis_lazuliEnchantability = 32
 		#Maximum durability of Lapis Lazuli shields.
-		#Range: > 0
+		# Default: 224
+		# Range: > 0
 		lapis_lazuliShieldDurability = 224
 		#Attack damage modifier of Lapis Lazuli swords.
 		lapis_lazuliSwordDamage = 3.0
@@ -134,57 +150,73 @@
 		#Efficiency of Lapis Lazuli paxels.
 		lapis_lazuliPaxelEfficiency = 9.0
 		#Natural enchantability factor of Lapis Lazuli paxels.
-		#Range: > 0
+		# Default: 32
+		# Range: > 0
 		lapis_lazuliPaxelEnchantability = 32
 		#Maximum durability of Lapis Lazuli paxels.
-		#Range: > 1
+		# Default: 256
+		# Range: > 1
 		lapis_lazuliPaxelDurability = 256
 		#Base armor toughness value of Lapis Lazuli armor.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 0.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		lapis_lazuliToughness = 0.0
 		#Base armor knockback resistance value of Lapis Lazuli armor.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 0.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		lapis_lazuliKnockbackResistance = 0.0
 		#Maximum durability of Lapis Lazuli boots.
-		#Range: > 1
+		# Default: 130
+		# Range: > 1
 		lapis_lazuliBootDurability = 130
 		#Protection value of Lapis Lazuli boots.
-		#Range: > 0
+		# Default: 1
+		# Range: > 0
 		lapis_lazuliBootArmor = 1
 		#Maximum durability of Lapis Lazuli leggings.
-		#Range: > 1
+		# Default: 150
+		# Range: > 1
 		lapis_lazuliLeggingDurability = 150
 		#Protection value of Lapis Lazuli leggings.
-		#Range: > 0
+		# Default: 3
+		# Range: > 0
 		lapis_lazuliLeggingArmor = 3
 		#Maximum durability of Lapis Lazuli chestplates.
-		#Range: > 1
+		# Default: 160
+		# Range: > 1
 		lapis_lazuliChestplateDurability = 160
 		#Protection value of Lapis Lazuli chestplates.
-		#Range: > 0
+		# Default: 4
+		# Range: > 0
 		lapis_lazuliChestplateArmor = 4
 		#Maximum durability of Lapis Lazuli helmets.
-		#Range: > 1
+		# Default: 110
+		# Range: > 1
 		lapis_lazuliHelmetDurability = 110
 		#Protection value of Lapis Lazuli helmets.
-		#Range: > 0
+		# Default: 1
+		# Range: > 0
 		lapis_lazuliHelmetArmor = 1
 
 	#Material Settings for Bronze
 	[materials.bronze]
 		#Maximum durability of Bronze tools.
-		#Range: > 1
+		# Default: 375
+		# Range: > 1
 		bronzeToolDurability = 375
 		#Efficiency of Bronze tools.
 		bronzeEfficiency = 7.0
 		#Base attack damage of Bronze items.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 2.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		bronzeAttackDamage = 2.0
 		#Natural enchantability factor of Bronze items.
-		#Range: > 0
+		# Default: 10
+		# Range: > 0
 		bronzeEnchantability = 10
 		#Maximum durability of Bronze shields.
-		#Range: > 0
+		# Default: 403
+		# Range: > 0
 		bronzeShieldDurability = 403
 		#Attack damage modifier of Bronze swords.
 		bronzeSwordDamage = 3.0
@@ -213,57 +245,73 @@
 		#Efficiency of Bronze paxels.
 		bronzePaxelEfficiency = 7.0
 		#Natural enchantability factor of Bronze paxels.
-		#Range: > 0
+		# Default: 10
+		# Range: > 0
 		bronzePaxelEnchantability = 10
 		#Maximum durability of Bronze paxels.
-		#Range: > 1
+		# Default: 750
+		# Range: > 1
 		bronzePaxelDurability = 750
 		#Base armor toughness value of Bronze armor.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 1.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		bronzeToughness = 1.0
 		#Base armor knockback resistance value of Bronze armor.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 0.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		bronzeKnockbackResistance = 0.0
 		#Maximum durability of Bronze boots.
-		#Range: > 1
+		# Default: 234
+		# Range: > 1
 		bronzeBootDurability = 234
 		#Protection value of Bronze boots.
-		#Range: > 0
+		# Default: 2
+		# Range: > 0
 		bronzeBootArmor = 2
 		#Maximum durability of Bronze leggings.
-		#Range: > 1
+		# Default: 270
+		# Range: > 1
 		bronzeLeggingDurability = 270
 		#Protection value of Bronze leggings.
-		#Range: > 0
+		# Default: 6
+		# Range: > 0
 		bronzeLeggingArmor = 6
 		#Maximum durability of Bronze chestplates.
-		#Range: > 1
+		# Default: 288
+		# Range: > 1
 		bronzeChestplateDurability = 288
 		#Protection value of Bronze chestplates.
-		#Range: > 0
+		# Default: 7
+		# Range: > 0
 		bronzeChestplateArmor = 7
 		#Maximum durability of Bronze helmets.
-		#Range: > 1
+		# Default: 198
+		# Range: > 1
 		bronzeHelmetDurability = 198
 		#Protection value of Bronze helmets.
-		#Range: > 0
+		# Default: 3
+		# Range: > 0
 		bronzeHelmetArmor = 3
 
 	#Material Settings for Osmium
 	[materials.osmium]
 		#Maximum durability of Osmium tools.
-		#Range: > 1
+		# Default: 1024
+		# Range: > 1
 		osmiumToolDurability = 350
 		#Efficiency of Osmium tools.
 		osmiumEfficiency = 4.0
 		#Base attack damage of Osmium items.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 4.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		osmiumAttackDamage = 4.0
 		#Natural enchantability factor of Osmium items.
-		#Range: > 0
+		# Default: 14
+		# Range: > 0
 		osmiumEnchantability = 14
 		#Maximum durability of Osmium shields.
-		#Range: > 0
+		# Default: 672
+		# Range: > 0
 		osmiumShieldDurability = 672
 		#Attack damage modifier of Osmium swords.
 		osmiumSwordDamage = 3.0
@@ -292,57 +340,73 @@
 		#Efficiency of Osmium paxels.
 		osmiumPaxelEfficiency = 4.0
 		#Natural enchantability factor of Osmium paxels.
-		#Range: > 0
+		# Default: 14
+		# Range: > 0
 		osmiumPaxelEnchantability = 14
 		#Maximum durability of Osmium paxels.
-		#Range: > 1
+		# Default: 2048
+		# Range: > 1
 		osmiumPaxelDurability = 700
 		#Base armor toughness value of Osmium armor.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 3.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		osmiumToughness = 3.0
 		#Base armor knockback resistance value of Osmium armor.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 0.10000000149011612
+		# Range: 0.0 ~ 3.4028234663852886E38
 		osmiumKnockbackResistance = 0.10000000149011612
 		#Maximum durability of Osmium boots.
-		#Range: > 1
+		# Default: 390
+		# Range: > 1
 		osmiumBootDurability = 250
 		#Protection value of Osmium boots.
-		#Range: > 0
+		# Default: 3
+		# Range: > 0
 		osmiumBootArmor = 3
 		#Maximum durability of Osmium leggings.
-		#Range: > 1
+		# Default: 450
+		# Range: > 1
 		osmiumLeggingDurability = 300
 		#Protection value of Osmium leggings.
-		#Range: > 0
+		# Default: 6
+		# Range: > 0
 		osmiumLeggingArmor = 6
 		#Maximum durability of Osmium chestplates.
-		#Range: > 1
+		# Default: 480
+		# Range: > 1
 		osmiumChestplateDurability = 300
 		#Protection value of Osmium chestplates.
-		#Range: > 0
+		# Default: 8
+		# Range: > 0
 		osmiumChestplateArmor = 7
 		#Maximum durability of Osmium helmets.
-		#Range: > 1
+		# Default: 330
+		# Range: > 1
 		osmiumHelmetDurability = 250
 		#Protection value of Osmium helmets.
-		#Range: > 0
+		# Default: 4
+		# Range: > 0
 		osmiumHelmetArmor = 3
 
 	#Material Settings for Steel
 	[materials.steel]
 		#Maximum durability of Steel tools.
-		#Range: > 1
+		# Default: 500
+		# Range: > 1
 		steelToolDurability = 500
 		#Efficiency of Steel tools.
 		steelEfficiency = 7.0
 		#Base attack damage of Steel items.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 3.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		steelAttackDamage = 3.0
 		#Natural enchantability factor of Steel items.
-		#Range: > 0
+		# Default: 16
+		# Range: > 0
 		steelEnchantability = 16
 		#Maximum durability of Steel shields.
-		#Range: > 0
+		# Default: 448
+		# Range: > 0
 		steelShieldDurability = 448
 		#Attack damage modifier of Steel swords.
 		steelSwordDamage = 3.0
@@ -371,57 +435,73 @@
 		#Efficiency of Steel paxels.
 		steelPaxelEfficiency = 8.0
 		#Natural enchantability factor of Steel paxels.
-		#Range: > 0
+		# Default: 16
+		# Range: > 0
 		steelPaxelEnchantability = 16
 		#Maximum durability of Steel paxels.
-		#Range: > 1
+		# Default: 1000
+		# Range: > 1
 		steelPaxelDurability = 1000
 		#Base armor toughness value of Steel armor.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 2.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		steelToughness = 2.0
 		#Base armor knockback resistance value of Steel armor.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 0.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		steelKnockbackResistance = 0.0
 		#Maximum durability of Steel boots.
-		#Range: > 1
+		# Default: 260
+		# Range: > 1
 		steelBootDurability = 300
 		#Protection value of Steel boots.
-		#Range: > 0
+		# Default: 3
+		# Range: > 0
 		steelBootArmor = 3
 		#Maximum durability of Steel leggings.
-		#Range: > 1
+		# Default: 300
+		# Range: > 1
 		steelLeggingDurability = 350
 		#Protection value of Steel leggings.
-		#Range: > 0
+		# Default: 6
+		# Range: > 0
 		steelLeggingArmor = 6
 		#Maximum durability of Steel chestplates.
-		#Range: > 1
+		# Default: 320
+		# Range: > 1
 		steelChestplateDurability = 350
 		#Protection value of Steel chestplates.
-		#Range: > 0
+		# Default: 8
+		# Range: > 0
 		steelChestplateArmor = 8
 		#Maximum durability of Steel helmets.
-		#Range: > 1
+		# Default: 220
+		# Range: > 1
 		steelHelmetDurability = 300
 		#Protection value of Steel helmets.
-		#Range: > 0
+		# Default: 3
+		# Range: > 0
 		steelHelmetArmor = 3
 
 	#Material Settings for Refined Glowstone
 	[materials.refined_glowstone]
 		#Maximum durability of Refined Glowstone tools.
-		#Range: > 1
+		# Default: 384
+		# Range: > 1
 		refined_glowstoneToolDurability = 384
 		#Efficiency of Refined Glowstone tools.
 		refined_glowstoneEfficiency = 13.0
 		#Base attack damage of Refined Glowstone items.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 2.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		refined_glowstoneAttackDamage = 2.0
 		#Natural enchantability factor of Refined Glowstone items.
-		#Range: > 0
+		# Default: 20
+		# Range: > 0
 		refined_glowstoneEnchantability = 20
 		#Maximum durability of Refined Glowstone shields.
-		#Range: > 0
+		# Default: 381
+		# Range: > 0
 		refined_glowstoneShieldDurability = 381
 		#Attack damage modifier of Refined Glowstone swords.
 		refined_glowstoneSwordDamage = 3.0
@@ -450,49 +530,63 @@
 		#Efficiency of Refined Glowstone paxels.
 		refined_glowstonePaxelEfficiency = 13.0
 		#Natural enchantability factor of Refined Glowstone paxels.
-		#Range: > 0
+		# Default: 20
+		# Range: > 0
 		refined_glowstonePaxelEnchantability = 20
 		#Maximum durability of Refined Glowstone paxels.
-		#Range: > 1
+		# Default: 768
+		# Range: > 1
 		refined_glowstonePaxelDurability = 768
 		#Base armor toughness value of Refined Glowstone armor.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 0.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		refined_glowstoneToughness = 0.0
 		#Base armor knockback resistance value of Refined Glowstone armor.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 0.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		refined_glowstoneKnockbackResistance = 0.0
 		#Maximum durability of Refined Glowstone boots.
-		#Range: > 1
+		# Default: 221
+		# Range: > 1
 		refined_glowstoneBootDurability = 221
 		#Protection value of Refined Glowstone boots.
-		#Range: > 0
+		# Default: 3
+		# Range: > 0
 		refined_glowstoneBootArmor = 3
 		#Maximum durability of Refined Glowstone leggings.
-		#Range: > 1
+		# Default: 255
+		# Range: > 1
 		refined_glowstoneLeggingDurability = 255
 		#Protection value of Refined Glowstone leggings.
-		#Range: > 0
+		# Default: 6
+		# Range: > 0
 		refined_glowstoneLeggingArmor = 6
 		#Maximum durability of Refined Glowstone chestplates.
-		#Range: > 1
+		# Default: 272
+		# Range: > 1
 		refined_glowstoneChestplateDurability = 272
 		#Protection value of Refined Glowstone chestplates.
-		#Range: > 0
+		# Default: 8
+		# Range: > 0
 		refined_glowstoneChestplateArmor = 7
 		#Maximum durability of Refined Glowstone helmets.
-		#Range: > 1
+		# Default: 187
+		# Range: > 1
 		refined_glowstoneHelmetDurability = 187
 		#Protection value of Refined Glowstone helmets.
-		#Range: > 0
+		# Default: 3
+		# Range: > 0
 		refined_glowstoneHelmetArmor = 3
 
 	#Material Settings for Refined Obsidian
 	[materials.refined_obsidian]
 		#Base attack damage of Refined Obsidian items.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 8.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		refined_obsidianAttackDamage = 5.0
 		#Maximum durability of Refined Obsidian shields.
-		#Range: > 0
+		# Default: 1680
+		# Range: > 0
 		refined_obsidianShieldDurability = 1680
 		#Attack damage modifier of Refined Obsidian swords.
 		refined_obsidianSwordDamage = 3.0
@@ -523,44 +617,58 @@
 		#Efficiency of Refined Obsidian paxels.
 		refined_obsidianPaxelEfficiency = 10.0
 		#Natural enchantability factor of Refined Obsidian paxels.
-		#Range: > 0
+		# Default: 18
+		# Range: > 0
 		refined_obsidianPaxelEnchantability = 18
 		#Natural enchantability factor of Refined Obsidian items.
-		#Range: > 0
+		# Default: 18
+		# Range: > 0
 		refined_obsidianEnchantability = 18
 		#Base armor toughness value of Refined Obsidian armor.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 5.0
+		# Range: 0.0 ~ 3.4028234663852886E38
 		refined_obsidianToughness = 3.0
 		#Base armor knockback resistance value of Refined Obsidian armor.
-		#Range: 0.0 ~ 3.4028234663852886E38
+		# Default: 0.20000000298023224
+		# Range: 0.0 ~ 3.4028234663852886E38
 		refined_obsidianKnockbackResistance = 0.20000000298023224
 		#Maximum durability of Refined Obsidian boots.
-		#Range: > 1
+		# Default: 975
+		# Range: > 1
 		refined_obsidianBootDurability = 429
 		#Maximum durability of Refined Obsidian leggings.
-		#Range: > 1
+		# Default: 1125
+		# Range: > 1
 		refined_obsidianLeggingDurability = 495
 		#Maximum durability of Refined Obsidian chestplates.
-		#Range: > 1
+		# Default: 1200
+		# Range: > 1
 		refined_obsidianChestplateDurability = 528
 		#Maximum durability of Refined Obsidian helmets.
-		#Range: > 1
+		# Default: 825
+		# Range: > 1
 		refined_obsidianHelmetDurability = 363
 		#Protection value of Refined Obsidian boots.
-		#Range: > 0
+		# Default: 5
+		# Range: > 0
 		refined_obsidianBootArmor = 5
 		#Protection value of Refined Obsidian leggings.
-		#Range: > 0
+		# Default: 8
+		# Range: > 0
 		refined_obsidianLeggingArmor = 7
 		#Protection value of Refined Obsidian chestplates.
-		#Range: > 0
+		# Default: 12
+		# Range: > 0
 		refined_obsidianChestplateArmor = 9
 		#Protection value of Refined Obsidian helmets.
-		#Range: > 0
+		# Default: 6
+		# Range: > 0
 		refined_obsidianHelmetArmor = 5
 		#Maximum durability of Refined Obsidian tools.
-		#Range: > 1
+		# Default: 4096
+		# Range: > 1
 		refined_obsidianToolDurability = 1000
 		#Maximum durability of Refined Obsidian paxels.
-		#Range: > 1
+		# Default: 8192
+		# Range: > 1
 		refined_obsidianPaxelDurability = 2000

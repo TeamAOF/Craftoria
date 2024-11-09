@@ -8,10 +8,12 @@
 	#If this setting is enabled, the mega torch will block village sieges from zombies
 	blockVillageSieges = true
 	#The radius of the mega torch in each direction (cube) with the torch at its center
-	#Range: > 0
+	# Default: 64
+	# Range: > 0
 	megaTorchRadius = 64
 	#The radius of the dread lamp in each direction (cube) with the torch at its center
-	#Range: > 0
+	# Default: 64
+	# Range: > 0
 	dreadLampRadius = 64
 	#Use this setting to override the internal lists for entity blocking
 	#You can use this to block more entities or even allow certain entities to still spawn
@@ -28,21 +30,26 @@
 	#Allow pigs: ["-minecraft:pig"]
 	dreadLampEntityBlockListOverrides = []
 	#The radius in which the feral flare should try to place lights
-	#Range: 1 ~ 127
+	# Default: 16
+	# Range: 1 ~ 127
 	feralFlareRadius = 16
 	#Controls how often the flare should try to place lights. 1 means every tick, 10 every 10th tick, etc
-	#Range: > 1
+	# Default: 5
+	# Range: > 1
 	feralFlareTickRate = 5
 	#The target minimum light level to place lights for
-	#Range: 0 ~ 15
+	# Default: 10
+	# Range: 0 ~ 15
 	feralFlareMinLightLevel = 10
 	#The maximum amount of invisble lights a feral flare lantern can place. Set to 0 to disable light placement.
 	#Warning: Setting this value too high in conjunction with the feralFlareMinLightLevel and Radius can lead to world corruption!
 	#(Badly compressed packet error)
-	#Range: 0 ~ 32767
+	# Default: 255
+	# Range: 0 ~ 32767
 	feralFlareLanternLightCountHardcap = 255
 	#Durability of the frozen pearl. Each removed light will remove one charge from the pearl. Set to 0 to disable durability
-	#Range: 0 ~ 32767
+	# Default: 1024
+	# Range: 0 ~ 32767
 	frozenPearlDurability = 1024
 	#Configures the spawn check to be more aggressive, effectivly overriding the CheckSpawn results of other mods
 	aggressiveSpawnChecks = false

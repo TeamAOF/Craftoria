@@ -3,15 +3,18 @@
 	#Is Enabled?
 	enabled = true
 	#Cost
-	#Range: > -2147483648
+	# Default: 100
+	# Range: > -2147483648
 	cost = 100
 	#Is Starter Glyph?
 	starter = false
 	#The maximum number of times this glyph may appear in a single spell
-	#Range: > 1
+	# Default: 2147483647
+	# Range: > 1
 	per_spell_limit = 2147483647
 	#The tier of the glyph
-	#Range: 1 ~ 99
+	# Default: 3
+	# Range: 1 ~ 99
 	glyph_tier = 3
 	#Limits the number of times a given augment may be applied to a given effect
 	#Example entry: "glyph_amplify=5"
@@ -23,14 +26,18 @@
 	#Example entry: "glyph_burst"
 	invalid_combos = []
 	#Max ticks entities should track for motion and health, etc. Note: Entities ANYWHERE are tracking this, setting this to a high value is not recommended for low-spec machines.
-	#Range: > 0
+	# Default: 60
+	# Range: > 0
 	entityRewindTracking = 60
 	#How many ticks should be rewound before augments
-	#Range: 1 ~ 60
+	# Default: 40
+	# Range: 1 ~ 60
 	baseRewindTime = 40
 	#Extend time duration, in seconds
-	#Range: > 0
+	# Default: 20
+	# Range: > 0
 	extend_time = 20
 	#Duration down time, in ticks
-	#Range: > 0
+	# Default: 10
+	# Range: > 0
 	duration_down_time = 10

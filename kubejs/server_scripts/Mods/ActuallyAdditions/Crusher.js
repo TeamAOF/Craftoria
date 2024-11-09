@@ -1,9 +1,5 @@
 ServerEvents.recipes(event => {
 
-  // adds a recipe that crushes a cobblestone into 2 gravel
-  // uses the default chance of 100%
-  // handles both gravel blocks as one output
-
   // Modern Industrialization
   const mi_ores = [
     "antimony",

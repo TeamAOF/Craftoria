@@ -27,7 +27,8 @@
 	#Automatically clear the crafting/encoding grid when closing the terminal
 	clearGridOnClose = false
 	#The vertical margin to apply when sizing terminals. Used to make room for centered item mod search bars
-	#Range: > -2147483648
+	# Default: 25
+	# Range: > -2147483648
 	terminalMargin = 25
 
 [search]
@@ -50,5 +51,6 @@
 	#Show a preview of the content in the tooltips of storage cells, color applicators and matter cannons
 	showCellContent = true
 	#The maximum number of content entries to show in the tooltip of storage cells, color applicators and matter cannons
-	#Range: 1 ~ 32
+	# Default: 5
+	# Range: 1 ~ 32
 	maxCellContentShown = 5

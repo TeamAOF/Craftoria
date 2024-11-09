@@ -48,11 +48,14 @@
 	#The MI cable tier to require for inserting EU into the Flux Transformer
 	cable_tier = "superconductor"
 	#The EU capacity of the Flux Transformer
-	#Range: 1 ~ 9223372036854775807
+	# Default: 204800
+	# Range: 1 ~ 9223372036854775807
 	capacity = 76800000000
 	#The max FE extractable at a time for the Flux Transformer
-	#Range: 1 ~ 9223372036854775807
+	# Default: 9223372036854775807
+	# Range: 1 ~ 9223372036854775807
 	max_extract = 9223372036854775807
 	#The multiplier to apply on the EU to get FE
-	#Range: 0.1 ~ 1.7976931348623157E308
+	# Default: 1.0
+	# Range: 0.1 ~ 1.7976931348623157E308
 	conversion_rate = 25.0

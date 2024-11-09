@@ -4,7 +4,8 @@
 	#If true, an alternate renderer will be used for the placement preview. May solve issues with certain shaders
 	altGhostRenderer = false
 	#Set the opacity of the placement preview. 30 is almost completely transparent, 255 is fully opaque
-	#Range: 30 ~ 255
+	# Default: 170
+	# Range: 30 ~ 255
 	ghostRenderOpacity = 170
 	#Whether certain framed blocks should show fancy hitboxes
 	fancyHitboxes = true

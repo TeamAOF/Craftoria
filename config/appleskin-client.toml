@@ -1,11 +1,11 @@
-
 [client]
 	#If true, shows the hunger (and saturation if showSaturationHudOverlay is true) that would be restored by food you are currently holding
 	showFoodValuesHudOverlay = true
 	#If true, shows your food exhaustion as a progress bar behind the hunger bars
 	showFoodExhaustionHudUnderlay = true
 	#Alpha value of the flashing icons at their most visible point (1.0 = fully opaque, 0.0 = fully transparent)
-	#Range: 0.0 ~ 1.0
+	# Default: 0.65
+	# Range: 0.0 ~ 1.0
 	maxHudOverlayFlashAlpha = 0.65
 	#If true, health/hunger overlay will shake to match Minecraft's icon animations
 	showVanillaAnimationsOverlay = true
@@ -21,4 +21,3 @@
 	showSaturationHudOverlay = true
 	#If true, enables the hunger/saturation/health overlays for food in your off-hand
 	showFoodValuesHudOverlayWhenOffhand = true
-

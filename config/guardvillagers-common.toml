@@ -3,18 +3,22 @@
 	"Have Guards open doors?" = true
 	#This will make guards raise their shields all the time, on default they will only raise their shields under certain conditions
 	"Have Guards raise their shield all the time?" = false
-	#Range: -9999 ~ 9999
+	# Default: -100
+	# Range: -9999 ~ 9999
 	"How low of a reputation of a player should have to be instantly aggroed upon by guards and golems?" = -100
 	"Allow players to give guards stuff only if they have the hero of the village effect?" = false
 	"Have guards only follow the player if they have hero of the village?" = true
 	#This is the range in which the guards will be aggroed to mobs that are attacking villagers. Higher values are more resource intensive, and setting this to zero will disable the goal.
-	#Range: -500.0 ~ 500.0
+	# Default: 50.0
+	# Range: -500.0 ~ 500.0
 	Range = 50.0
-	#Range: > -2147483648
+	# Default: 15
+	# Range: > -2147483648
 	"Minimum reputation requirement for guards to give you access to their inventories" = 15
 	"Have guards attempt to avoid firing into other friendlies?" = true
 	#How much health a guard regenerates.
-	#Range: -500.0 ~ 500.0
+	# Default: 1.0
+	# Range: -500.0 ~ 500.0
 	"Guard health regeneration amount" = 1.0
 	"Allow players to set guard patrol points only if they have hero of the village" = false
 	#This makes Guards run from polar bears, as anyone with common sense would.
@@ -22,7 +26,8 @@
 	"Allow guards to naturally patrol villages? This feature can cause lag if a lot of guards are spawned" = true
 	"Allow guards to teleport if following the player" = true
 	"Allow guard arrows to damage villagers, iron golems, or other guards? The i-frames will still be shown for them but they won't lose any health if this is set to false" = true
-	#Range: -999.9000244140625 ~ 999.0
+	# Default: 100.0
+	# Range: -999.9000244140625 ~ 999.0
 	"Chance to drop equipment" = 100.0
 	#This makes guards form a phalanx
 	"Have guards form a phalanx?" = true

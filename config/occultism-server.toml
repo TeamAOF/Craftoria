@@ -1,34 +1,44 @@
 #Storage Settings
 [storage]
 	#The amount of additional slots the storage stabilizer tier 1 provides. 1 Slot holds one item type.
-	#Range: > 0
+	# Default: 64
+	# Range: > 0
 	stabilizerTier1AdditionalMaxItemTypes = 64
 	#The amount by which the stabilizer increases the maximum total item count the controller can hold. This is not per slot but the total amount of all items combined.
-	#Range: 0 ~ 2147483647
+	# Default: 512000
+	# Range: 0 ~ 2147483647
 	stabilizerTier1AdditionalMaxTotalItemCount = 512000
 	#The amount of slots the storage stabilizer tier 2 provides.
-	#Range: > 0
+	# Default: 128
+	# Range: > 0
 	stabilizerTier2AdditionalMaxItemTypes = 128
 	#The amount by which the stabilizer increases the maximum total item count the controller can hold. This is not per slot but the total amount of all items combined.
-	#Range: 0 ~ 2147483647
+	# Default: 1024000
+	# Range: 0 ~ 2147483647
 	stabilizerTier2AdditionalMaxTotalItemCount = 1024000
 	#The amount of slots the storage stabilizer tier 3 provides.
-	#Range: > 0
+	# Default: 256
+	# Range: > 0
 	stabilizerTier3AdditionalMaxItemTypes = 256
 	#The amount by which the stabilizer increases the maximum total item count the controller can hold. This is not per slot but the total amount of all items combined.
-	#Range: 0 ~ 2147483647
+	# Default: 2048000
+	# Range: 0 ~ 2147483647
 	stabilizerTier3AdditionalMaxTotalItemCount = 2048000
 	#The amount of slots the storage stabilizer tier 4 provides.
-	#Range: > 0
+	# Default: 512
+	# Range: > 0
 	stabilizerTier4AdditionalMaxItemTypes = 512
 	#The amount by which the stabilizer increases the maximum total item count the controller can hold. This is not per slot but the total amount of all items combined.
-	#Range: 0 ~ 9223372036854775807
+	# Default: 4096000
+	# Range: 0 ~ 9223372036854775807
 	stabilizerTier4AdditionalMaxTotalItemCount = 4096000
 	#The amount of slots the storage actuator provides.
-	#Range: > 0
+	# Default: 128
+	# Range: > 0
 	controllerMaxItemTypes = 128
 	#The stack size the storage actuator uses.
-	#Range: 0 ~ 9223372036854775807
+	# Default: 256000
+	# Range: 0 ~ 9223372036854775807
 	controllerMaxTotalItemCount = 256000
 	#True to use the configured controllerStackSize for all items, instead of the stack sizes provided by item type (such as 16 for ender pearls, 64 for iron ingot). WARNING: Setting this to false may have a negative impact on performance.
 	unlinkWormholeOnBreak = false
@@ -36,43 +46,56 @@
 #Spirit Job Settings
 [spirit_job]
 	#The duration for the slow falling effect applied by a drikwing.
-	#Range: > 0
+	# Default: 15
+	# Range: > 0
 	drikwingFamiliarSlowFallingSeconds = 15
 	#The multiplier to each crushing recipe's crushing_time for Tier 1 (Foliot) Crusher Spirits.
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
 	tier1CrusherTimeMultiplier = 2.0
 	#The multiplier to each crushing recipe's crushing_time for Tier 2 (Djinni) Crusher Spirits.
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
 	tier2CrusherTimeMultiplier = 1.0
 	#Currently unused. The multiplier to each crushing recipe's crushing_time for Tier 3 (Afrit) Crusher Spirits.
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# Default: 0.5
+	# Range: 0.0 ~ 1.7976931348623157E308
 	tier3CrusherTimeMultiplier = 0.5
 	#Currently unused. The multiplier to each crushing recipe's crushing_time for Tier 4 (Marid) Crusher Spirits.
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# Default: 0.2
+	# Range: 0.0 ~ 1.7976931348623157E308
 	tier4CrusherTimeMultiplier = 0.2
 	#The multiplier to each crushing recipe's output count for Tier 1 (Foliot) Crusher Spirits.
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# Default: 1.0
+	# Range: 0.0 ~ 1.7976931348623157E308
 	tier1CrusherOutputMultiplier = 1.0
 	#The multiplier to each crushing recipe's output count for Tier 2 (Djinni) Crusher Spirits.
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# Default: 1.5
+	# Range: 0.0 ~ 1.7976931348623157E308
 	tier2CrusherOutputMultiplier = 1.5
 	#The multiplier to each crushing recipe's output count for Tier 3 (Afrit) Crusher Spirits.
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# Default: 2.0
+	# Range: 0.0 ~ 1.7976931348623157E308
 	tier3CrusherOutputMultiplier = 2.0
 	#The multiplier to each crushing recipe's output count for Tier 4 (Marid) Crusher Spirits.
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# Default: 3.0
+	# Range: 0.0 ~ 1.7976931348623157E308
 	tier4CrusherOutputMultiplier = 3.0
 	#The minimum ticks before a crusher can pick up an item it dropped. Default is 3 Seconds = 3 * 20 Ticks.
-	#Range: > 0
+	# Default: 60
+	# Range: > 0
 	crusherResultPickupDelay = 60
 	#The chance for a blacksmith familiar to repair an item (by 2 durability) whenever stone is picked up. 1.0 = 100%, 0.0 = 0%.
-	#Range: 0.0 ~ 1.7976931348623157E308
+	# Default: 0.05
+	# Range: 0.0 ~ 1.7976931348623157E308
 	blacksmithFamiliarRepairChance = 0.05
 	#The amount of iron required for a blacksmith familiar to upgrade another familiar.
-	#Range: > 0
+	# Default: 18
+	# Range: > 0
 	blacksmithFamiliarUpgradeCost = 18
 	#The cooldown for a blacksmith familiar to upgrade another familiar.
-	#Range: > 0
+	# Default: 400
+	# Range: > 0
 	blacksmithFamiliarUpgradeCooldown = 400
 
 #Ritual Settings
@@ -90,7 +113,8 @@
 	#If enabled, rituals are interrupted if *more* ingredients are present than needed. This should usually be disabled, but can improve performance if (very very) many rituals are running.
 	enableRemainingIngredientCountMatching = false
 	#Set a value below 1.0 to speed up rituals. Please ensure to use a preceding 0 for values below 1.0, e.g. '0.05' instead of '.05', otherwise Nightconfig (NeoForge's config sytem) will reset the value to 1.0.
-	#Range: 0.05 ~ 1.7976931348623157E308
+	# Default: 1.0
+	# Range: 0.05 ~ 1.7976931348623157E308
 	ritualDurationMultiplier = 1.0
 
 #Item Settings

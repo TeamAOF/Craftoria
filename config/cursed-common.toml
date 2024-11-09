@@ -1,0 +1,26 @@
+[Main-Config]
+	#Should the player always be cursed?
+	"Always Cursed" = false
+	#Should the player spawn into a world with a Cursed Apple?
+	"Cursed Apple" = true
+
+[Curses]
+	#How much damage the player takes as a percent.
+	#Range: > 100
+	"Damage Curse" = 200
+	#How much knockback the player takes as a percent.
+	#Range: > 100
+	"Knockback Curse" = 200
+	#Should fire last forever on the player until doused manually?
+	"Fire Curse" = true
+	#Should neutral mobs be hostile to the player?
+	"Neutral Curse" = true
+	#Should the player be unable go to sleep?
+	"Insomnia Curse" = true
+
+[Benefits]
+	#How much experience the player gains from slain mobs as a percent
+	#Range: > 100
+	"Bonus Experience" = 300
+	#Should the player get unique drops from slain mobs?
+	"Unique Drops" = true

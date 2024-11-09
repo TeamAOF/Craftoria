@@ -34,7 +34,8 @@
 		#Allowed Values: NONE, EQUIPMENT, ALL
 		render_item_model = "EQUIPMENT"
 		# The speed at which 3D models in tooltips will rotate.  Lower values rotate faster, set to 0 to disable rotation.
-		#Range: 0.0 ~ 50.0
+		# Default: 12.0
+		# Range: 0.0 ~ 50.0
 		model_rotation_speed = 12.0
 
 	# Entry types:

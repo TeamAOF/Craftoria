@@ -1,7 +1,8 @@
 #This is an example boolean property
 exampleBoolean = true
 #This is an example int property
-#Range: > -2147483648
+# Default: 42
+# Range: > -2147483648
 exampleInt = 42
 #This is an example string property
 exampleString = "Hello World"
@@ -24,6 +25,6 @@ exampleEnumList = ["Hello", "World"]
 	#This is an example string inside a category
 	innerField = "I am inside"
 	#This is an example float inside a category
-	#Range: -3.4028234663852886E38 ~ 3.4028234663852886E38
+	# Default: 42.84000015258789
+	# Range: -3.4028234663852886E38 ~ 3.4028234663852886E38
 	exampleFloat = 42.84000015258789
-

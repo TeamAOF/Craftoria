@@ -1132,3 +1132,102 @@
 		SpellPowerMultiplier = 1.0
 		CooldownInSeconds = 60.0
 		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:aerial_collapse"]
+		Enabled = true
+		School = "irons_spellbooks:nature"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "COMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 45.0
+		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:lingering_strain"]
+		Enabled = true
+		School = "irons_spellbooks:evocation"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "EPIC"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 120.0
+		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:ashen_breath"]
+		Enabled = true
+		School = "irons_spellbooks:evocation"
+		MaxLevel = 10
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "COMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 15.0
+		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:reversal"]
+		Enabled = true
+		School = "irons_spellbooks:eldritch"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 3.0
+		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:spectral_blink"]
+		Enabled = true
+		School = "irons_spellbooks:eldritch"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 20.0
+		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:nullflare"]
+		Enabled = true
+		School = "irons_spellbooks:holy"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "COMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 30.0
+		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:banish"]
+		Enabled = true
+		School = "irons_spellbooks:holy"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 90.0
+		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:meteor_storm"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 6
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "UNCOMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 90.0
+		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:call_forth_the_dead_king"]
+		Enabled = true
+		School = "irons_spellbooks:blood"
+		MaxLevel = 1
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 3600.0
+		AllowCrafting = true

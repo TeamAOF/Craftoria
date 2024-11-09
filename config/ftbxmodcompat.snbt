@@ -1,4 +1,8 @@
 {
+	# Only show waystones that have been discovered
+	# Default: true
+	only_show_known_waystones: true
+	
 	# Select the permissions implementation to use
 	# DEFAULT: use FTB Ranks then Luckperms in preference order, depending on mod availability
 	# Default: "default"

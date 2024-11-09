@@ -1,20 +1,27 @@
-
 [device]
 	#ME Extend Import/Export Bus speed multiplier
-	#Range: 2 ~ 128
+	# Default: 8
+	# Range: 2 ~ 128
 	extended_io_bus_multiplier = 8
 	#The max range between two wireless connector
-	#Range: 10.0 ~ 10000.0
+	# Default: 1000.0
+	# Range: 10.0 ~ 10000.0
 	wireless_connector_max_range = 1000.0
 	#Size multiplier of oversize interface
-	#Range: 2 ~ 4096
+	# Default: 16
+	# Range: 2 ~ 4096
 	oversize_interface_multiplier = 16
 	#Allow Crystal Assembler to do processor inscriber recipes
 	enable_crystal_assembler_inscribe_processors = true
+	#The max size of Assembler Matrix
+	# Default: 6
+	# Range: 3 ~ 16
+	assembler_matrix_max_size = 6
 
 [item]
 	#ME Infinity Cell idle energy cost (unit: AE/t)
-	#Range: 0.1 ~ 64.0
+	# Default: 8.0
+	# Range: 0.1 ~ 64.0
 	infinity_cell_energy_cost = 8.0
 	#Pattern modifier multipliers
 	pattern_modifier_multipliers = [2, 3, 5, 7]
@@ -24,4 +31,3 @@
 [client]
 	#Disable Extended Inscriber's item render, it only works in client side
 	disable_inscriber_item_render = false
-

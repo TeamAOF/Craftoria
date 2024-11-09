@@ -29,13 +29,16 @@
 	#Show 'Player is typing...' on the chat screen
 	screenTypingVisible = true
 	#Adjust the X position where the 'Player is typing...' text shows in the chat Gui
-	#Range: > -2147483648
+	# Default: 0
+	# Range: > -2147483648
 	screenTypingRelativePosition_X = 0
 	#Adjust the Y position where the 'Player is typing...' text shows in the chat Gui
-	#Range: > -2147483648
+	# Default: 0
+	# Range: > -2147483648
 	screenTypingRelativePosition_Y = 0
 	#Max characters allowed before it switches to using string set in screenTypingMultiplePlayersText
-	#Range: > -2147483648
+	# Default: 50
+	# Range: > -2147483648
 	screenTypingCharacterLimit = 50
 	#String to use when too many people are typing determined by screenTypingCharacterLimit
 	screenTypingMultiplePlayersText = "Several people are typing"

@@ -5,12 +5,14 @@
 #         If you run a server, consider changing the recipe of the XP Tome instead of its default components.
 ["Default item components"]
 	#The maximum amount of XP points that the XP Tome can hold. The default value (1395) represents having 30 levels.
-	#Range: > 1
+	# Default: 1395
+	# Range: > 1
 	max_xp = 1395
 	#The percentage of XP that the book will give back, as a sort of cost of using it.
 	#Example: If this config value is set to 0.75, and an XP Tome has 100 XP stored, attempting to retrieve these 100 XP will give back 75 XP.
 	#Note: This will not be 100% accurate, as Minecraft's XP does not use decimals.
-	#Range: 0.0 ~ 1.0
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
 	retrieval_percentage = 1.0
 	#Setting this to true will remove XP from the book in XP orb form. This is useful if you want to use XP from the book for tools enchanted with Mending.
 	retrieve_xp_orbs = false

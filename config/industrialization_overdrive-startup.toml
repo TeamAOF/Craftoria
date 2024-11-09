@@ -3,5 +3,6 @@ allow_upgrades_in_multi_processing_array = true
 
 [batching_machines]
 	#The multiplier to use for the EU cost of the Multi Processing Array
-	#Range: 0.1 ~ 1.7976931348623157E308
+	# Default: 1.0
+	# Range: 0.1 ~ 1.7976931348623157E308
 	multi_processing_array_eu = 1.0

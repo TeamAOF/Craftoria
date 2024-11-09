@@ -5,10 +5,12 @@ floppy_space_limit = 125000
 #The file upload size limit, in bytes. Must be in range of 1 KiB and 16 MiB.
 #Keep in mind that uploads are processed in a single tick - large files or
 #poor network performance can stall the networking thread. And mind the disk space!
-#Range: 1024 ~ 16777216
+# Default: 524288
+# Range: 1024 ~ 16777216
 upload_max_size = 524288
 #Set how many files a computer can have open at the same time. Set to 0 for unlimited.
-#Range: > 0
+# Default: 128
+# Range: > 0
 maximum_open_files = 128
 #A comma separated list of default system settings to set on new computers.
 #Example: "shell.autocomplete=false,lua.autocomplete=false,edit.autocomplete=false"
@@ -37,18 +39,21 @@ disabled_generic_methods = []
 	#Set the number of threads computers can run on. A higher number means more
 	#computers can run at once, but may induce lag. Please note that some mods may
 	#not work with a thread count higher than 1. Use with caution.
-	#Range: > 1
+	# Default: 1
+	# Range: > 1
 	computer_threads = 1
 	#The maximum time that can be spent executing tasks in a single tick, in
 	#milliseconds.
 	#Note, we will quite possibly go over this limit, as there's no way to tell how
 	#long a will take - this aims to be the upper bound of the average time.
-	#Range: > 1
+	# Default: 10
+	# Range: > 1
 	max_main_global_time = 10
 	#The ideal maximum time a computer can execute for in a tick, in milliseconds.
 	#Note, we will quite possibly go over this limit, as there's no way to tell how
 	#long a will take - this aims to be the upper bound of the average time.
-	#Range: > 1
+	# Default: 5
+	# Range: > 1
 	max_main_computer_time = 5
 
 #Controls the HTTP API
@@ -62,19 +67,23 @@ disabled_generic_methods = []
 	#The number of http requests a computer can make at one time. Additional requests
 	#will be queued, and sent when the running requests have finished. Set to 0 for
 	#unlimited.
-	#Range: > 0
+	# Default: 16
+	# Range: > 0
 	max_requests = 16
 	#The number of websockets a computer can have open at one time.
-	#Range: > 1
+	# Default: 4
+	# Range: > 1
 	max_websockets = 4
 
 	#Limits bandwidth used by computers.
 	[http.bandwidth]
 		#The number of bytes which can be downloaded in a second. This is shared across all computers. (bytes/s).
-		#Range: > 1
+		# Default: 33554432
+		# Range: > 1
 		global_download = 33554432
 		#The number of bytes which can be uploaded in a second. This is shared across all computers. (bytes/s).
-		#Range: > 1
+		# Default: 33554432
+		# Range: > 1
 		global_upload = 33554432
 
 	#Tunnels HTTP and websocket requests through a proxy server. Only affects HTTP
@@ -90,7 +99,8 @@ disabled_generic_methods = []
 		#The hostname or IP address of the proxy server.
 		host = ""
 		#The port of the proxy server.
-		#Range: 1 ~ 65536
+		# Default: 8080
+		# Range: 1 ~ 65536
 		port = 8080
 
 	#A list of rules which control behaviour of the "http" API for specific domains or
@@ -155,19 +165,24 @@ disabled_generic_methods = []
 	#Enable Command Block peripheral support
 	command_block_enabled = false
 	#The range of Wireless Modems at low altitude in clear weather, in meters.
-	#Range: 0 ~ 100000
+	# Default: 64
+	# Range: 0 ~ 100000
 	modem_range = 64
 	#The range of Wireless Modems at maximum altitude in clear weather, in meters.
-	#Range: 0 ~ 100000
+	# Default: 384
+	# Range: 0 ~ 100000
 	modem_high_altitude_range = 384
 	#The range of Wireless Modems at low altitude in stormy weather, in meters.
-	#Range: 0 ~ 100000
+	# Default: 64
+	# Range: 0 ~ 100000
 	modem_range_during_storm = 64
 	#The range of Wireless Modems at maximum altitude in stormy weather, in meters.
-	#Range: 0 ~ 100000
+	# Default: 384
+	# Range: 0 ~ 100000
 	modem_high_altitude_range_during_storm = 384
 	#Maximum amount of notes a speaker can play at once.
-	#Range: > 1
+	# Default: 8
+	# Range: > 1
 	max_notes_per_tick = 8
 	#The limit to how much monitor data can be sent *per tick*. Note:
 	# - Bandwidth is measured before compression, so the data sent to the client is
@@ -177,7 +192,8 @@ disabled_generic_methods = []
 	# - A full sized monitor sends ~25kb of data. So the default (1MB) allows for ~40
 	#   monitors to be updated in a single tick.
 	#Set to 0 to disable.
-	#Range: > 0
+	# Default: 1000000
+	# Range: > 0
 	monitor_bandwidth = 1000000
 
 #Various options relating to turtles.
@@ -185,10 +201,12 @@ disabled_generic_methods = []
 	#Set whether Turtles require fuel to move.
 	need_fuel = true
 	#The fuel limit for Turtles.
-	#Range: > 0
+	# Default: 20000
+	# Range: > 0
 	normal_fuel_limit = 20000
 	#The fuel limit for Advanced Turtles.
-	#Range: > 0
+	# Default: 100000
+	# Range: > 0
 	advanced_fuel_limit = 100000
 	#If set to true, Turtles will push entities out of the way instead of stopping if
 	#there is space to do so.
@@ -200,21 +218,27 @@ disabled_generic_methods = []
 
 	#Terminal size of computers.
 	[term_sizes.computer]
-		#Range: 1 ~ 255
+		# Default: 51
+		# Range: 1 ~ 255
 		width = 51
-		#Range: 1 ~ 255
+		# Default: 19
+		# Range: 1 ~ 255
 		height = 19
 
 	#Terminal size of pocket computers.
 	[term_sizes.pocket_computer]
-		#Range: 1 ~ 255
+		# Default: 26
+		# Range: 1 ~ 255
 		width = 26
-		#Range: 1 ~ 255
+		# Default: 20
+		# Range: 1 ~ 255
 		height = 20
 
 	#Maximum size of monitors (in blocks).
 	[term_sizes.monitor]
-		#Range: 1 ~ 32
+		# Default: 8
+		# Range: 1 ~ 32
 		width = 8
-		#Range: 1 ~ 32
+		# Default: 6
+		# Range: 1 ~ 32
 		height = 6

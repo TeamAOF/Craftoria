@@ -11,15 +11,20 @@
 [Positioning]
 	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
 	anchor = "BOTTOM_RIGHT"
-	#Range: 0 ~ 256
+	# Default: 3
+	# Range: 0 ~ 256
 	anchorOffset = 3
-	#Range: 0 ~ 16
+	# Default: 3
+	# Range: 0 ~ 16
 	notificationSeparation = 3
-	#Range: 0 ~ 32
+	# Default: 6
+	# Range: 0 ~ 32
 	notificationLifetime = 6
-	#Range: 1 ~ 64
+	# Default: 12
+	# Range: 1 ~ 64
 	maxVisibleNotifications = 12
-	#Range: 0 ~ 256
+	# Default: 23
+	# Range: 0 ~ 256
 	maxQueuedNotifications = 23
 
 [Filtering]
