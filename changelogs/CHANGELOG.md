@@ -1,6 +1,23 @@
+## Craftoria | v1.7.1
+
+_NeoForge Loader 21.1.76_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.7.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.7.1.md)_
+
+### Bug Fixes 🪲
+
+* Fixed broken Croptopia recipes.
+
+### Added Mods ✅
+
+* [Modern Industrial Routers](https://www.curseforge.com/minecraft/mc-mods/modern-industrial-routers)
+
+### Removed Mods ❌
+
+ * [Crops 'n' Corpses](https://www.curseforge.com/minecraft/mc-mods/crops-n-corpses) (Spawning condition issues)
+---
+
 ## Craftoria | v1.7.0
 
-_NeoForge Loader 21.1.72_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.7.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.7.0.md)_
+_NeoForge Loader 21.1.76_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.7.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.7.0.md)_
 
 ### Changes/Improvements ⭐
 

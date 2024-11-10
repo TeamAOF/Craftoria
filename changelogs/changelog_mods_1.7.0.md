@@ -10,12 +10,16 @@
   * [GTBC's Spellbooks - Iron's Spells Addon](https://www.curseforge.com/minecraft/mc-mods/gtbcs-spellbooks) (by [GameTechBC](https://www.curseforge.com/members/GameTechBC/projects))
   * [Reliquary Reincarnations](https://www.curseforge.com/minecraft/mc-mods/reliquary-reincarnations) (by [P3pp3rF1y](https://www.curseforge.com/members/P3pp3rF1y/projects))
 
+### Removed
+
+  * [AE2 Blackout](https://www.curseforge.com/minecraft/texture-packs/ae2-blackout) (by [Void_Fractal](https://www.curseforge.com/members/Void_Fractal/projects))
+  * [F.M.R.P](https://www.curseforge.com/minecraft/texture-packs/freshly-modded) (by [Seb_Semos](https://www.curseforge.com/members/Seb_Semos/projects))
+
 ### Changed
 
   * [entity_texture_features_neoforge_1.21-6.2.5.jar](https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric/files/5734430) -> [entity_texture_features_neoforge_1.21.1-6.2.7.jar](https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric/files/5874160)
   * [ActuallyAdditions-1.3.6+mc1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/actually-additions/files/5835183) -> [actuallyadditions-1.3.9+mc1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/actually-additions/files/5878692)
   * [aae-0.6.1-1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/advancedae/files/5780467) -> [AdvancedAE-1.1.1-1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/advancedae/files/5881249)
-  * [AE2Blackout-V1.1.8.zip](https://www.curseforge.com/minecraft/texture-packs/ae2-blackout/files/5800744) -> [AE2Blackout-V1.1.9.zip](https://www.curseforge.com/minecraft/texture-packs/ae2-blackout/files/5878299)
   * [AE2NetworkAnalyzer-1.21-2.0.0-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/ae2-network-analyser/files/5614783) -> [AE2NetworkAnalyzer-1.21-2.0.1-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/ae2-network-analyser/files/5856668)
   * [AppliedFlux-1.21-2.0.1-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/applied-flux/files/5639620) -> [AppliedFlux-1.21-2.0.2-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/applied-flux/files/5850781)
   * [architectury-13.0.6-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/architectury-api/files/5553800) -> [architectury-13.0.8-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/architectury-api/files/5786327)
@@ -33,6 +37,7 @@
   * [crashutilities-9.0.1.jar](https://www.curseforge.com/minecraft/mc-mods/crash-utilities/files/5711110) -> [crashutilities-9.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/crash-utilities/files/5888957)
   * [CreativeCore_NEOFORGE_v2.12.19_mc1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/creativecore/files/5833498) -> [CreativeCore_NEOFORGE_v2.12.22_mc1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/creativecore/files/5880278)
   * [Croptopia-1.21-NEO-FORGE-3.0.9.jar](https://www.curseforge.com/minecraft/mc-mods/croptopia/files/5571647) -> [croptopia_1.21.1_NEO-FORGE-4.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/croptopia/files/5872434)
+  * [curios-neoforge-9.0.14+1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/curios-continuation/files/5811495) -> [curios-neoforge-9.0.15+1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/curios-continuation/files/5888964)
   * [emi-1.1.16+1.21.1+neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/emi/files/5793016) -> [emi-1.1.18+1.21.1+neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/emi/files/5872513)
   * [entangled-1.3.19a-neoforge-mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/entangled/files/5791357) -> [entangled-1.3.20-neoforge-mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/entangled/files/5885929)
   * [entityculling-neoforge-1.7.0-mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/entityculling/files/5672103) -> [entityculling-neoforge-1.7.1-mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/entityculling/files/5866467)
@@ -40,7 +45,6 @@
   * [eternalstarlight-0.1.16+1.21.1+neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/eternal-starlight/files/5808529) -> [eternalstarlight-0.1.17+1.21.1+neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/eternal-starlight/files/5860030)
   * [EuphoriaPatcher-0.3.4-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/euphoria-patches/files/5511961) -> [EuphoriaPatcher-1.4.3-r5.3-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/euphoria-patches/files/5876050)
   * [ExtendedAE-1.21-2.1.1-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/ex-pattern-provider/files/5787190) -> [ExtendedAE-1.21-2.1.4-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/ex-pattern-provider/files/5887634)
-  * [freshly-modded-1-5-7.zip](https://www.curseforge.com/minecraft/texture-packs/freshly-modded/files/5741015) -> [freshly-modded-1-5-10.zip](https://www.curseforge.com/minecraft/texture-packs/freshly-modded/files/5870242)
   * [factory_blocks+neoforge+1.21-1.3.2.jar](https://www.curseforge.com/minecraft/mc-mods/factory-blocks/files/5442380) -> [factory_blocks-neoforge-1.3.3+mc1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/factory-blocks/files/5882116)
   * [farmers-cutting-oh-the-biomes-weve-gone-1.21.1-1.0-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/farmers-cutting-oh-the-biomes-weve-gone/files/5705287) -> [farmers-cutting-oh-the-biomes-weve-gone-1.21.1-2.0-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/farmers-cutting-oh-the-biomes-weve-gone/files/5867595)
   * [FarmersDelight-1.21.1-1.2.4a.jar](https://www.curseforge.com/minecraft/mc-mods/farmers-delight/files/5772720) -> [FarmersDelight-1.21.1-1.2.5.jar](https://www.curseforge.com/minecraft/mc-mods/farmers-delight/files/5878217)
@@ -81,7 +85,6 @@
   * [rarcompat-1.21-0.5.1.jar](https://www.curseforge.com/minecraft/mc-mods/rar-compat/files/5842527) -> [rarcompat-1.21-0.6.1.jar](https://www.curseforge.com/minecraft/mc-mods/rar-compat/files/5870854)
   * [rightclickharvest-neoforge-4.4.0+1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/rightclickharvest/files/5837602) -> [rightclickharvest-neoforge-4.4.3+1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/rightclickharvest/files/5875092)
   * [seasonhud-neoforge-1.21.1-1.11.2.jar](https://www.curseforge.com/minecraft/mc-mods/seasonhud/files/5833489) -> [seasonhud-neoforge-1.21.1-1.11.3.jar](https://www.curseforge.com/minecraft/mc-mods/seasonhud/files/5880335)
-  * [showcaseitem-1.21-1.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/showcase-item/files/5457238) -> [showcaseitem-1.21-1.0.1.jar](https://www.curseforge.com/minecraft/mc-mods/showcase-item/files/5888748)
   * [simplemagnets-1.1.12-neoforge-mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/simple-magnets/files/5822820) -> [simplemagnets-1.1.12a-neoforge-mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/simple-magnets/files/5885424)
   * [SimplePocketMachines-NeoForge-1.21.1-1.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/pocketmachines/files/5801172) -> [SimplePocketMachines-NeoForge-1.21.1-1.0.1.jar](https://www.curseforge.com/minecraft/mc-mods/pocketmachines/files/5858342)
   * [snowundertrees-1.21.1-1.4.5.jar](https://www.curseforge.com/minecraft/mc-mods/snow-under-trees/files/5847843) -> [snowundertrees-1.21.1-1.4.6.jar](https://www.curseforge.com/minecraft/mc-mods/snow-under-trees/files/5875647)
@@ -92,6 +95,7 @@
   * [Structory_1.21.x_v1.3.6.jar](https://www.curseforge.com/minecraft/mc-mods/structory/files/5800612) -> [Structory_1.21.x_v1.3.7.jar](https://www.curseforge.com/minecraft/mc-mods/structory/files/5857033)
   * [Structory_Towers_1.21.x_v1.0.8.jar](https://www.curseforge.com/minecraft/mc-mods/structory-towers/files/5800614) -> [Structory_Towers_1.21.x_v1.0.9.jar](https://www.curseforge.com/minecraft/mc-mods/structory-towers/files/5857037)
   * [TerraBlender-neoforge-1.21.1-4.1.0.4.jar](https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge/files/5849390) -> [TerraBlender-neoforge-1.21.1-4.1.0.5.jar](https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge/files/5864140)
+  * [the_bumblezone-7.7.4+1.21.1-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/the-bumblezone-forge/files/5830532) -> [the_bumblezone-7.7.5+1.21.1-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/the-bumblezone-forge/files/5889009)
   * [theurgy-1.21.1-neoforge-1.56.2.jar](https://www.curseforge.com/minecraft/mc-mods/theurgy/files/5844278) -> [theurgy-1.21.1-neoforge-1.58.1.jar](https://www.curseforge.com/minecraft/mc-mods/theurgy/files/5884714)
   * [titanium-1.21-4.0.21.jar](https://www.curseforge.com/minecraft/mc-mods/titanium/files/5726400) -> [titanium-1.21-4.0.27.jar](https://www.curseforge.com/minecraft/mc-mods/titanium/files/5881103)
   * [utilitarian-1.21.1-0.13.3.jar](https://www.curseforge.com/minecraft/mc-mods/utilitarian/files/5815028) -> [utilitarian-1.21.1-0.13.4.jar](https://www.curseforge.com/minecraft/mc-mods/utilitarian/files/5863934)
