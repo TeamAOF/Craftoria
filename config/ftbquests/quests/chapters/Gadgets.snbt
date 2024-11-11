@@ -410,23 +410,11 @@
 				type: "random"
 			}]
 			size: 1.5d
-			tasks: [
-				{
-					id: "7FD44BB58F3D8872"
-					item: { count: 1, id: "buildinggadgets2:template" }
-					type: "item"
-				}
-				{
-					id: "4F00457DD9D4F45F"
-					item: { count: 1, id: "buildinggadgets2:redprint" }
-					type: "item"
-				}
-				{
-					id: "46B92B0247C5E62A"
-					item: { count: 1, id: "buildinggadgets2:template_manager" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "46B92B0247C5E62A"
+				item: { count: 1, id: "buildinggadgets2:template_manager" }
+				type: "item"
+			}]
 			x: -6.0d
 			y: 0.0d
 		}

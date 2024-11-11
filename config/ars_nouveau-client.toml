@@ -43,6 +43,14 @@
 	informLights = false
 	#Whether the Selection HUD is toggled or held
 	toggleSelectionHUD = true
+	#X offset for the Spell Name
+	# Default: 10
+	# Range: > -2147483648
+	xSpellName = 10
+	#Y offset for the Spell Name
+	# Default: 30
+	# Range: > -2147483648
+	ySpellName = 30
 
 #Misc
 [misc]

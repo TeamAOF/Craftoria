@@ -48,6 +48,8 @@
 	blast_resistant = false
 	#lootr chests cannot be destroyed by any explosion
 	blast_immune = false
+	#lootr chests will drop the contents of the player-specific inventory (generated when not generated) when broken
+	should_drop_player_loot = false
 
 [power]
 	#configuration options for comparators and redstone power
