@@ -6,6 +6,7 @@ _NeoForge Loader 21.1.76_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
 * Fixed broken Croptopia recipes.
 * Fixed Iron's Spells 'n Spellbooks trophy quest dependencies.
+* Fixed missing AE2: Blackout resourcepack.
 
 ### Added Mods ✅
 

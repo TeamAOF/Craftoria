@@ -5,6 +5,7 @@
   * [advancednetherite-neoforge-2.1.6-1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/advanced-netherite/files/5610715) (by [AutovwDev](https://www.curseforge.com/members/AutovwDev/projects))
   * [AdvancedAE-1.1.3-1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/advancedae/files/5891779) (by [pedroksl](https://www.curseforge.com/members/pedroksl/projects))
   * [AdvancementPlaques-1.21-neoforge-1.6.6.jar](https://www.curseforge.com/minecraft/mc-mods/advancement-plaques/files/5590978) (by [Grend_G](https://www.curseforge.com/members/Grend_G/projects))
+  * [AE2Blackout-V1.1.9.zip](https://www.curseforge.com/minecraft/texture-packs/ae2-blackout/files/5878299) (by [Void_Fractal](https://www.curseforge.com/members/Void_Fractal/projects))
   * [ae2ct-1.21.1-1.0.3-beta.jar](https://www.curseforge.com/minecraft/mc-mods/ae2-crafting-tree/files/5728013) (by [nimeng1299](https://www.curseforge.com/members/nimeng1299/projects))
   * [ae2importexportcard-1.21-1.4.0.jar](https://www.curseforge.com/minecraft/mc-mods/ae2-import-export-card/files/5577253) (by [Ultramegaaa](https://www.curseforge.com/members/Ultramegaaa/projects))
   * [AE2LightMode-V1.0.3.zip](https://www.curseforge.com/minecraft/texture-packs/ae2-light-mode/files/5767780) (by [Void_Fractal](https://www.curseforge.com/members/Void_Fractal/projects))

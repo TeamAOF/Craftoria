@@ -2,6 +2,7 @@
 
 ### Added
 
+  * [AE2 Blackout](https://www.curseforge.com/minecraft/texture-packs/ae2-blackout) (by [Void_Fractal](https://www.curseforge.com/members/Void_Fractal/projects))
   * [Modern Industrial Routers](https://www.curseforge.com/minecraft/mc-mods/modern-industrial-routers) (by [matyrobbrt](https://www.curseforge.com/members/matyrobbrt/projects))
 
 ### Removed
