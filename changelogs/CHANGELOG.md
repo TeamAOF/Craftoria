@@ -7,14 +7,6 @@ _NeoForge Loader 21.1.76_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 * Fixed a router saving bug.
 * Fixed factory blocks having no mineable tag.
 * Fixed a bug where routers wouldn't send normal energy anymore.
-
-### Added Mods ✅
-
-* [Modern Industrial Routers](https://www.curseforge.com/minecraft/mc-mods/modern-industrial-routers)
-
-### Removed Mods ❌
-
-* [Crops 'n' Corpses](https://www.curseforge.com/minecraft/mc-mods/crops-n-corpses) (Spawning condition issues)
 ---
 
 ## Craftoria | v1.7.1
