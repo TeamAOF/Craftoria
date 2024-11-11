@@ -5,6 +5,7 @@ _NeoForge Loader 21.1.76_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 ### Bug Fixes 🪲
 
 * Fixed broken Croptopia recipes.
+* Fixed Iron's Spells 'n Spellbooks trophy quest dependencies.
 
 ### Added Mods ✅
 
@@ -12,7 +13,7 @@ _NeoForge Loader 21.1.76_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
 ### Removed Mods ❌
 
- * [Crops 'n' Corpses](https://www.curseforge.com/minecraft/mc-mods/crops-n-corpses) (Spawning condition issues)
+* [Crops 'n' Corpses](https://www.curseforge.com/minecraft/mc-mods/crops-n-corpses) (Spawning condition issues)
 ---
 
 ## Craftoria | v1.7.0
