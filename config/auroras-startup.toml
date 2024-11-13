@@ -1,0 +1,17 @@
+[General]
+	#Global toggle for controlling aurora detail.
+	globalDetailOverride = false
+	#Global toggle for controlling aurora appearance frequency.
+	globalVisiblityOctavesOverride = false
+	#How high of a resolution should the aurora render in? Lower value = lower resolution and quality but more FPS.
+	# Default: 150
+	# Range: > 0
+	auroraDetail = 150
+	#How frequent the aurora should be visible. Under normal circumstances there can be many continuous days without auroras and vice versa. Lower value = more variable. If -1, then it's visible every night.
+	# Default: 1
+	# Range: > -1
+	auroraVisiblityOctaves = 1
+	#Aurora render distance.
+	# Default: 500.0
+	# Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	auroraRenderDistance = 500.0

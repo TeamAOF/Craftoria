@@ -1,3 +1,25 @@
+## Craftoria | v1.8.0
+
+_NeoForge Loader 21.1.77_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.8.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.8.0.md)_
+
+### Added Mods ✅
+
+  * [All The Wood We've Got](https://www.curseforge.com/minecraft/mc-mods/all-the-wood-weve-got)
+  * [Immersive Aircraft](https://www.curseforge.com/minecraft/mc-mods/immersive-aircraft)
+
+### Changes/Improvements ⭐
+
+* Include Frostproof Machine Casing task (30) in Vacuum Freezer quest.
+* Re-enabled the Crag Gardens biome.
+* Chests & barrels now come in 25 different wood variants to better match your builds.
+* Updated blank scroll texture.
+
+### Bug Fixes 🪲
+
+* Fixed shaders crashing when hopping dimensions.
+* Fixed wilden and awakening rituals not starting.
+---
+
 ## Craftoria | v1.7.2
 
 _NeoForge Loader 21.1.76_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.7.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.7.2.md)_
