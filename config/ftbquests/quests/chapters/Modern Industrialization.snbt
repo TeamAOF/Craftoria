@@ -2383,11 +2383,19 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "4FCDA6BA16EA2ACA"
-				item: { count: 1, id: "modern_industrialization:vacuum_freezer" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4FCDA6BA16EA2ACA"
+					item: { count: 1, id: "modern_industrialization:vacuum_freezer" }
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "1F5B97AB814B73C6"
+					item: { count: 1, id: "modern_industrialization:frostproof_machine_casing" }
+					type: "item"
+				}
+			]
 			x: 35.0d
 			y: 4.0d
 		}
