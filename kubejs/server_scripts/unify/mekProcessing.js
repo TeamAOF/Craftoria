@@ -24,6 +24,26 @@ ServerEvents.recipes((e) => {
     e.recipes.mekanism.crystallizing(output, input).id(makeID('crystallizing', output, input));
   };
 
+  let sawing = (item_tag_in, item_out, item_out2, item_out2_chance) => {
+    let recipe = {
+      type: 'mekanism:sawing',
+      input: {
+        count: 1,
+        tag: item_tag_in
+      },
+      main_output: {
+        count: parseInt(item_out.split('x ')[0]),
+        id: item_out.split('x ')[1]
+      },
+      secondary_chance: item_out2_chance, 
+	  secondary_output: {
+        count: 1,
+        id: item_out2
+      }
+    };
+    e.custom(recipe).id(makeID('sawing', item_out, item_tag_in));
+  };
+  
   let reaction = (item_out, item_in, fluid_in, chem_out, chem_in, duration) => {
     let recipe = {
       type: 'mekanism:reaction',
@@ -122,4 +142,46 @@ ServerEvents.recipes((e) => {
   // Removed to prevent progression skips in Modern Industrialization
   e.remove({ mod: 'moremekanismprocessing', output: '#c:nuggets' });
   e.remove({ mod: 'moremekanismprocessing', output: '#c:ingots' });
+
+  // sawmill recipes so output of modded logs have parity with vanilla:
+  const modded_logs = [
+    'biomeswevegone:aspen',
+    'biomeswevegone:baobab',
+    'biomeswevegone:blue_enchanted',
+    'biomeswevegone:cika',
+    'biomeswevegone:cypress',
+    'biomeswevegone:ebony',
+    'biomeswevegone:fir',
+    'biomeswevegone:florus',
+    'biomeswevegone:green_enchanted',
+    'biomeswevegone:holly',
+    'biomeswevegone:ironwood',
+    'biomeswevegone:jacaranda',
+    'biomeswevegone:mahogany',
+    'biomeswevegone:maple',
+    'biomeswevegone:palm',
+    'biomeswevegone:pine',
+    'biomeswevegone:rainbow_eucalyptus',
+    'biomeswevegone:redwood',
+    'biomeswevegone:sakura',
+    'biomeswevegone:skyris',
+    'biomeswevegone:spirit',
+    'biomeswevegone:white_mangrove',
+    'biomeswevegone:willow',
+    'biomeswevegone:witch_hazel',
+    'biomeswevegone:zelkova',
+    'eternal_starlight:lunar',
+    'eternal_starlight:northland',
+    'eternal_starlight:starlight_mangrove',
+    'eternal_starlight:scarlet',
+    'eternal_starlight:torreya',
+    'integrateddynamics:menril'
+  ];
+   
+  modded_logs.forEach((wood) => {
+    sawing(`${wood}_logs`, `6x ${wood}_planks`, 'mekanism:sawdust', 0.25);
+  });
+  // ars nouveau logs (plus addons) all output the same planks:
+  sawing('c:logs/archwood', '6x ars_nouveau:archwood_planks', 'mekanism:sawdust', 0.25);
+  
 });
