@@ -32,8 +32,8 @@ let miProcessItemInputs = (itemInputs, recipe, maxInputs) => {
           if (Array.isArray(itemInput) && (itemInput.length === 2 || itemInput.length === 3)) {
             let input = {};
 
-            if (itemInput[0].includes("c:")) {
-              input.tag = itemInput[0];
+            if (itemInput[0].includes("c:") || itemInput[0].includes("#")) {
+              input.tag = itemInput[0].replace("#", "");
             } else {
               input.item = itemInput[0];
             }
@@ -55,8 +55,8 @@ let miProcessItemInputs = (itemInputs, recipe, maxInputs) => {
         if (itemInputs.length === 2 || itemInputs.length === 3) {
           let input = {};
 
-          if (itemInputs[0].includes("c:")) {
-            input.tag = itemInputs[0];
+          if (itemInputs[0].includes("c:") || itemInputs[0].includes("#")) {
+            input.tag = itemInputs[0].replace("#", "");
           } else {
             input.item = itemInputs[0];
           }
