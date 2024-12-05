@@ -3359,6 +3359,35 @@
 	]
 	quest.72DD0017AC3B1326.title: "Matter Cannon"
 	quest.72E69FF9753D3CEA.title: "Ritual: Summon Otherstone Trader"
+	quest.7342ABDAD6467123.quest_desc: [
+		"Logistics frames simplify logistics tasks within their network, whether by drone or pipes pressurised to at least 3 bar. A &4logistics wrench&r is required for working with all logistics frames."
+		""
+		"Frames operate within their network in the following ways, in order of priority:"
+		""
+		"- Active provider frames push items to requester, storage and default storage frames"
+		"- Default storage frames push items to requester and storage frames, and accept items from active provider frames"
+		"- Storage frames push items to requester frames, and accept items from active provider frames and default frames"
+		"- Passive frames only push items to requester frames, and don't accept items from any other frame"
+		"- Requester frames don't push items to any other frame, and accept items from active provider, passive and storage frames."
+		""
+		"{@pagebreak}"
+		"Filters can be set for each of the frames using Classify or Tag filters, using the Tag workbench to define the filter. "
+		""
+		"Functionality depends on the frame the filter is applied to:"
+		""
+		"- Active provider frames: filters control what fluids/items are pushed to the network"
+		"- Default storage frames: filters control what fluids/items are accepted from the network"
+		"- Storage frames: filters control what fluids/items are accepted from the network"
+		"- Passive frames: filters control what fluids/items are pushed to Requester frames in the network"
+		"- Requester frames: filters control what fluids/items are accepted from the network"
+		""
+		"Specifically for requester frames, both types of filters can be used and scrolled/clicked to set the desired amount (see hints in the Requester frame UI). While filters can overlap (i.e., one specifies 32 logs while another specifies 32 of any kind of burnable fuel), this may cause the filters to be additive, resulting in 32 logs + another 32 logs as burnable fuel."
+		""
+		"{@pagebreak}"
+		"For all logistics frames, nothing will be transported if there is no room in any inventories/tanks within the network. "
+		""
+		"Additionally, while logistics tasks can be performed either by logistics drones or logistics modules attached to tubes pressurised to at least 3 bar, drones cannot access frames once they are blocked by logistics modules, however multiple frames can be attached to the same block/inventory/tank if desired."
+	]
 	quest.7342ABDAD6467123.title: "Logistics Frames"
 	quest.7342F6461382E839.quest_desc: [
 		"You have &areached&r the final step to &binvincibility&r. "
@@ -3607,6 +3636,11 @@
 		"Just place it somewhere on the &emulti-block&r so you can &6interact&r with the contents of the tank by either &apumping in&r or &cpumping out&r of it."
 	]
 	quest.7BB4CE27736F4C08.title: "Dynamic Valve"
+	quest.7BD7F5E46151B2EB.quest_desc: [
+		"A pre-programmed &bDrone&r that performs logistics tasks within a &e31x31x31&r area centered on the position the it's deployed from. "
+		""
+		"See the following &7quest chapter&r for how logistics frames attached to &9blocks/inventories/tanks&r within its area are used."
+	]
 	quest.7BDBE300D4B0B1F7.quest_subtitle: "Bone Meal Overflow!"
 	quest.7BE64AF022E35ADE.quest_desc: ["&bMore Red&f is a mod that lets u run &bredstone &fanywhere u want, up walls, on top of ceilings, under ceilings. "]
 	quest.7BE64AF022E35ADE.title: "&cMore Red"
