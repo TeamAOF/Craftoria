@@ -1,3 +1,9 @@
+[IFSoulsMachines]
+	#How many souls each pipe can hold
+	# Default: 4
+	# Range: > 0
+	SOUL_AMOUNT_PER_PIPE = 4
+
 	[IFSoulsMachines.ConfigSoulSurge]
 		#How long in ticks a soul last to accelerate ticks
 		# Default: 300

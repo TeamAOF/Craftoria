@@ -1,8 +1,4 @@
 {
-  "framedblocks": {
-    "framed_item_frame": true,
-    "framed_block_generic": true
-  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -54,29 +50,11 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "champions": {
-    "enable_affix_compact": true
-  },
   "apothic_spawners": {
     "spawner": true
   },
   "entangled": {
     "entangled_block_component": true
-  },
-  "jade_access": {
-    "held_item": true,
-    "sign": true,
-    "block": true,
-    "entity": true,
-    "entity_variant": true
-  },
-  "pneumaticcraft": {
-    "pneumatic": true,
-    "tube_module": true,
-    "entity": true,
-    "redstone": true,
-    "camo": true,
-    "semiblock": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -89,22 +67,9 @@
     "block_properties": false,
     "mod_name": true
   },
-  "modern_industrialization": {
-    "overclock": true,
-    "pipe": true
-  },
-  "lootr": {
-    "info": true
-  },
   "extendedae": {
     "jade_chamber": true,
     "jade_wireless": true
-  },
-  "apothic_enchanting": {
-    "ench": true
-  },
-  "functionalstorage": {
-    "drawer": true
   },
   "ae2": {
     "part_icon": true,
@@ -118,18 +83,9 @@
     "crafting_monitor": true,
     "part_name": true
   },
-  "modularrouters": {
-    "router": true
-  },
-  "ars_nouveau": {
-    "mob_jar": true
-  },
   "tesseract": {
     "tesseract": true,
     "remove_default": true
-  },
-  "jadeaddons": {
-    "equipment_requirement": ""
   },
   "mekanism": {
     "chemical": true,
@@ -156,5 +112,61 @@
     "sink": true,
     "milk_jar": true,
     "toaster": true
+  },
+  "framedblocks": {
+    "framed_item_frame": true,
+    "framed_block_generic": true
+  },
+  "champions": {
+    "enable_affix_compact": true
+  },
+  "jade_access": {
+    "held_item": true,
+    "sign": true,
+    "block": true,
+    "entity": true,
+    "entity_variant": true
+  },
+  "pneumaticcraft": {
+    "pneumatic": true,
+    "tube_module": true,
+    "entity": true,
+    "redstone": true,
+    "camo": true,
+    "semiblock": true
+  },
+  "modern_industrialization": {
+    "overclock": true,
+    "pipe": true
+  },
+  "lootr": {
+    "info": true
+  },
+  "apothic_enchanting": {
+    "ench": true
+  },
+  "functionalstorage": {
+    "drawer": true
+  },
+  "integrateddynamicscompat": {
+    "proxy": true,
+    "mechanical_squeezer": true,
+    "mechanical_drying_basin": true,
+    "drying_basin": true,
+    "part": true,
+    "squeezer": true
+  },
+  "modularrouters": {
+    "router": true
+  },
+  "ars_nouveau": {
+    "mob_jar": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "twilightforest": {
+    "chiseled_bookshelf_spawner": true,
+    "quest_ram_wool": true
   }
 }

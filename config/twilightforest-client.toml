@@ -19,7 +19,8 @@ fortificationShieldIndicator = true
 fortificationShieldIndicatorInCreative = false
 #Renders precipitation underneath cloud blocks. -1 sets it to be synced with the common config.
 #Set this to a lower number if experiencing poor performance, set to 0 to turn it off
-#Range: > -1
+# Default: -1
+# Range: > -1
 cloudBlockPrecipitationDistance = -1
 #List of player UUIDs whose skins the Giants should use. Leave the list empty to use the skin of the player viewing them.
 giantSkinUUIDs = []
