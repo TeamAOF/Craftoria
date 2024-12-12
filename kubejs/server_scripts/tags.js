@@ -47,6 +47,14 @@ ServerEvents.tags('item', (e) => {
   // Curios
 
   e.add('curios:curio', 'integratedterminals:terminal_storage_portable');
+
+  // Chisel Reborn
+  Ingredient.of('@chisel').itemIds.forEach((id) => {
+    if (id !== 'chisel:chisel') {
+      const block = id.split(':')[1].split('/')[1];
+      e.add(`chisel:${block}`, id);
+    }
+  });
 });
 
 ServerEvents.tags('block', (e) => {

@@ -24,3 +24,7 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
     ]);
   });
 });
+
+RecipeViewerEvents.removeCategories((e) => {
+  e.remove('chisel:chisel_recipes_category');
+});
