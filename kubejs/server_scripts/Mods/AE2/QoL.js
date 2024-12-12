@@ -34,9 +34,9 @@ ServerEvents.recipes((event) => {
     event,
     ['minecraft:water', 1000, 0],
     [
-      ['c:storage_blocks/redstone', 1],
-      ['c:gems/fluix', 1],
-      ['c:dusts/glowstone', 1],
+      ['#c:storage_blocks/redstone', 1],
+      ['#c:gems/fluix', 1],
+      ['#c:dusts/glowstone', 1],
     ],
     null,
     ['appflux:redstone_crystal', 2],
@@ -57,14 +57,14 @@ ServerEvents.recipes((event) => {
     8,
     200
   );
-  miMacerator(event, ['c:gems/entro', 1], ['extendedae:entro_dust', 1], 2, 100);
+  miMacerator(event, ['#c:gems/entro', 1], ['extendedae:entro_dust', 1], 2, 100);
   miMixer(
     event,
     ['minecraft:water', 1000, 0],
     [
-      ['c:dusts/entro', 1],
-      ['c:ingots/gold', 1],
-      ['c:gems/lapis', 1],
+      ['#c:dusts/entro', 1],
+      ['#c:ingots/gold', 1],
+      ['#c:gems/lapis', 1],
     ],
     null,
     ['extendedae:entro_ingot', 1],
@@ -74,7 +74,7 @@ ServerEvents.recipes((event) => {
   miPacker(
     event,
     [
-      ['c:gems/entro', 1],
+      ['#c:gems/entro', 1],
       ['extendedae:concurrent_processor_press', 1, 0],
     ],
     ['extendedae:concurrent_processor_print', 1],
@@ -111,7 +111,7 @@ ServerEvents.recipes((event) => {
     ['minecraft:lava', 1000, 0],
     [
       ['ae2:charged_certus_quartz_crystal', 1],
-      ['c:ingots/iron', 1],
+      ['#c:ingots/iron', 1],
       ['ae2:sky_stone_block', 1],
     ],
     null,
@@ -124,7 +124,7 @@ ServerEvents.recipes((event) => {
     ['minecraft:lava', 1000, 0],
     [
       ['ae2:charged_certus_quartz_crystal', 1],
-      ['c:ingots/copper', 1],
+      ['#c:ingots/copper', 1],
       ['ae2:sky_stone_block', 1],
     ],
     null,
@@ -137,7 +137,7 @@ ServerEvents.recipes((event) => {
     ['minecraft:lava', 1000, 0],
     [
       ['ae2:charged_certus_quartz_crystal', 1],
-      ['c:ingots/osmium', 1],
+      ['#c:ingots/osmium', 1],
       ['ae2:sky_stone_block', 1],
     ],
     null,
