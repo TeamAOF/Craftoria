@@ -72,46 +72,4 @@ ServerEvents.recipes((e) => {
       }
     }
   });
-
-  let modIDBlacklist = ['minecraft', 'chipped', 'mcwdoors', 'mcwtrpdoors', 'mcwfences', 'refurbished_furniture', 'framedblocks', 'occultism'];
-
-  // Ingredient.of('#minecraft:hanging_signs').itemIds.forEach((id) => {
-  //   const modID = id.split(':')[0];
-  //   if (modIDBlacklist.includes(modID)) return;
-
-  //   const plank = id.replace('hanging_sign', 'planks');
-  //   mekSaw(`2x ${plank}`, id, 'mekanism:sawdust', 0.5);
-  // });
-
-  // Ingredient.of('#minecraft:wooden_pressure_plates').itemIds.forEach((id) => {
-  //   const modID = id.split(':')[0];
-  //   if (modIDBlacklist.includes(modID)) return;
-
-  //   const plank = id.replace('wooden_pressure_plate', 'planks');
-  //   mekSaw(`${plank}`, id, '2x mekanism:sawdust', 0.25);
-  // });
-
-  // Ingredient.of('#minecraft:fence_gates').itemIds.forEach((id) => {
-  //   const modID = id.split(':')[0];
-  //   if (modIDBlacklist.includes(modID)) return;
-
-  //   const plank = id.replace('fence_gate', 'planks');
-  //   mekSaw(`2x ${plank}`, id, '4x minecraft:stick', 1);
-  // });
-
-  // Ingredient.of('#minecraft:wooden_doors').itemIds.forEach((id) => {
-  //   const modID = id.split(':')[0];
-  //   if (modIDBlacklist.includes(modID)) return;
-
-  //   const plank = id.replace('door', 'planks');
-  //   mekSaw(`2x ${plank}`, id);
-  // });
-
-  // Ingredient.of('#minecraft:wooden_trapdoors').itemIds.forEach((id) => {
-  //   const modID = id.split(':')[0];
-  //   if (modIDBlacklist.includes(modID)) return;
-
-  //   const plank = id.replace('trapdoor', 'planks');
-  //   mekSaw(`3x ${plank}`, id);
-  // });
 });
