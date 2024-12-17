@@ -118,6 +118,12 @@ ServerEvents.tags('item', (e) => {
 
     '@tankstorage',
     '@bankstorage',
+
+    'mob_grinding_utils:tank',
+    'mob_grinding_utils:tank_sink',
+    'mob_grinding_utils:jumbo_tank',
+
+    'framedblocks:framed_tank',
   ];
 
   let exclusions = [
