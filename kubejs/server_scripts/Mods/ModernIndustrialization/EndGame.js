@@ -54,4 +54,9 @@ ServerEvents.recipes((e) => {
     .itemIn('modern_industrialization:iridium_plate')
     .fluidOut('craftoria:molten_iridium', 90)
     .id('craftoria:end_game/molten_iridium');
+
+  Ingredient.of('*').stacks.forEach((item) => {
+    if (item.hasTag('craftoria:replicator_2_blacklist')) return;
+    e.recipes.modern_industrialization.replicator_2(8, 20).itemOut(item).itemIn(item, 0).fluidIn('modern_industrialization:uu_matter', 1);
+  });
 });
