@@ -29,21 +29,21 @@ ServerEvents.recipes((e) => {
       type: 'mekanism:sawing',
       input: {
         count: 1,
-        tag: item_tag_in
+        tag: item_tag_in,
       },
       main_output: {
         count: parseInt(item_out.split('x ')[0]),
-        id: item_out.split('x ')[1]
+        id: item_out.split('x ')[1],
       },
-      secondary_chance: item_out2_chance, 
-	  secondary_output: {
+      secondary_chance: item_out2_chance,
+      secondary_output: {
         count: 1,
-        id: item_out2
-      }
+        id: item_out2,
+      },
     };
     e.custom(recipe).id(makeID('sawing', item_out, item_tag_in));
   };
-  
+
   let reaction = (item_out, item_in, fluid_in, chem_out, chem_in, duration) => {
     let recipe = {
       type: 'mekanism:reaction',
@@ -87,7 +87,7 @@ ServerEvents.recipes((e) => {
     materials.forEach((material) => {
       let dust = getItemFromTag(`#c:dusts/${material}`);
       if (dust) {
-        if (Item.exists(`mekanism:dust_${material}`)) e.remove({ type: 'mekanism:crushing', output: `mekanism:dust_${material}` });
+        if (Item.exists(`mekanism:dust_${material}`)) e.remove({type: 'mekanism:crushing', output: `mekanism:dust_${material}`});
         if (checkTagSize(`#c:ingots/${material}`) > 0) crush(dust, `#c:ingots/${material}`);
         else if (checkTagSize(`#c:gems/${material}`) > 0) crush(dust, `#c:gems/${material}`);
       }
@@ -120,68 +120,12 @@ ServerEvents.recipes((e) => {
     '1000x #mekanism:oxygen',
     900
   );
-  reaction(
-    '1x modern_industrialization:sulfur_dust',
-    [['#minecraft:coals'], 1],
-    '100x #minecraft:water',
-    '100x mekanism:hydrogen',
-    '100x #mekanism:oxygen',
-    100
-  );
-  reaction(
-    '1x modern_industrialization:sulfur_dust',
-    [['#c:dusts/coal', '#c:dusts/charcoal'], 1],
-    '100x #minecraft:water',
-    '100x mekanism:hydrogen',
-    '100x #mekanism:oxygen',
-    100
-  );
+  reaction('1x modern_industrialization:sulfur_dust', [['#minecraft:coals'], 1], '100x #minecraft:water', '100x mekanism:hydrogen', '100x #mekanism:oxygen', 100);
+  reaction('1x modern_industrialization:sulfur_dust', [['#c:dusts/coal', '#c:dusts/charcoal'], 1], '100x #minecraft:water', '100x mekanism:hydrogen', '100x #mekanism:oxygen', 100);
 
-  e.remove({ mod: 'mekanism', output: 'mekanism:block_salt' });
+  e.remove({mod: 'mekanism', output: 'mekanism:block_salt'});
 
   // Removed to prevent progression skips in Modern Industrialization
-  e.remove({ mod: 'moremekanismprocessing', output: '#c:nuggets' });
-  e.remove({ mod: 'moremekanismprocessing', output: '#c:ingots' });
-
-  // sawmill recipes so output of modded logs have parity with vanilla:
-  const modded_logs = [
-    'biomeswevegone:aspen',
-    'biomeswevegone:baobab',
-    'biomeswevegone:blue_enchanted',
-    'biomeswevegone:cika',
-    'biomeswevegone:cypress',
-    'biomeswevegone:ebony',
-    'biomeswevegone:fir',
-    'biomeswevegone:florus',
-    'biomeswevegone:green_enchanted',
-    'biomeswevegone:holly',
-    'biomeswevegone:ironwood',
-    'biomeswevegone:jacaranda',
-    'biomeswevegone:mahogany',
-    'biomeswevegone:maple',
-    'biomeswevegone:palm',
-    'biomeswevegone:pine',
-    'biomeswevegone:rainbow_eucalyptus',
-    'biomeswevegone:redwood',
-    'biomeswevegone:sakura',
-    'biomeswevegone:skyris',
-    'biomeswevegone:spirit',
-    'biomeswevegone:white_mangrove',
-    'biomeswevegone:willow',
-    'biomeswevegone:witch_hazel',
-    'biomeswevegone:zelkova',
-    'eternal_starlight:lunar',
-    'eternal_starlight:northland',
-    'eternal_starlight:starlight_mangrove',
-    'eternal_starlight:scarlet',
-    'eternal_starlight:torreya',
-    'integrateddynamics:menril'
-  ];
-   
-  modded_logs.forEach((wood) => {
-    sawing(`${wood}_logs`, `6x ${wood}_planks`, 'mekanism:sawdust', 0.25);
-  });
-  // ars nouveau logs (plus addons) all output the same planks:
-  sawing('c:logs/archwood', '6x ars_nouveau:archwood_planks', 'mekanism:sawdust', 0.25);
-  
+  e.remove({mod: 'moremekanismprocessing', output: '#c:nuggets'});
+  e.remove({mod: 'moremekanismprocessing', output: '#c:ingots'});
 });

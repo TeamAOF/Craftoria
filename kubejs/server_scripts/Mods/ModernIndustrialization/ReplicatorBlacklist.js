@@ -105,6 +105,7 @@ ServerEvents.tags('item', (e) => {
 
     /^modern_industrialization:quantum_.*/,
     'modern_industrialization:replicator',
+    'modern_industrialization:replicator_2',
     'modern_industrialization:helium_plasma_bucket',
     'modern_industrialization:singularity',
     'modern_industrialization:nuke',
@@ -118,6 +119,12 @@ ServerEvents.tags('item', (e) => {
 
     '@tankstorage',
     '@bankstorage',
+
+    'mob_grinding_utils:tank',
+    'mob_grinding_utils:tank_sink',
+    'mob_grinding_utils:jumbo_tank',
+
+    'framedblocks:framed_tank',
   ];
 
   let exclusions = [
@@ -132,4 +139,30 @@ ServerEvents.tags('item', (e) => {
     'bankstorage:bank_link',
   ];
   e.add('modern_industrialization:replicator_blacklist', additions).remove(exclusions);
+
+  let replicator_2_blacklist = [
+    'mekanism:pellet_antimatter',
+    /^modern_industrialization:quantum_.*/,
+    'modern_industrialization:replicator',
+    'modern_industrialization:replicator_2',
+    'modern_industrialization:helium_plasma_bucket',
+    'modern_industrialization:uu_matter_bucket',
+    'modern_industrialization:singularity',
+    'modern_industrialization:nuke',
+
+    // These make no sense to replicate, as they rely on having NBT data, which Replicator 2 doesn't support, and I don't want to risk them causing issues.
+    'extendedae:package',
+    'shrink:shrink_bottle',
+    'gag:time_sand_pouch',
+    'tankstorage:tank_link',
+    'bankstorage:bank_link',
+    'minecraft:enchanted_book',
+    'minecraft:tipped_arrow',
+    'minecraft:ominous_bottle',
+    'minecraft:potion',
+    'minecraft:splash_potion',
+    'minecraft:lingering_potion',
+  ];
+
+  e.add('craftoria:replicator_2_blacklist', replicator_2_blacklist);
 });
