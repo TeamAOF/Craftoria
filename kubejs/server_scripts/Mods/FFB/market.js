@@ -4,7 +4,7 @@ ServerEvents.recipes((event) => {
       type: 'farmingforblockheads:market',
       category: `farmingforblockheads:${category}`,
       preset: `minecraft:${category}`,
-      result: {item: item, count: 1},
+      result: { item: item, count: 1 },
     };
     event.custom(recipe).id(`craftoria:ffb_market/${item.split(':')[0]}/${item.split(':')[1]}`);
   };
@@ -68,6 +68,26 @@ ServerEvents.recipes((event) => {
   ];
 
   ars_saplings.forEach((sapling) => {
+    market(sapling, 'saplings');
+  });
+
+  const fd_saplings = [
+    'fruitsdelight:pear_sapling', 
+    'fruitsdelight:hawberry_sapling', 
+    'fruitsdelight:lychee_sapling', 
+    'fruitsdelight:mango_sapling', 
+    'fruitsdelight:persimmon_sapling', 
+    'fruitsdelight:peach_sapling', 
+    'fruitsdelight:orange_sapling', 
+    'fruitsdelight:apple_sapling', 
+    'fruitsdelight:mangosteen_sapling', 
+    'fruitsdelight:bayberry_sapling', 
+    'fruitsdelight:kiwi_sapling', 
+    'fruitsdelight:fig_sapling', 
+    'fruitsdelight:pineapple_sapling',
+  ];
+
+  fd_saplings.forEach((sapling) => {
     market(sapling, 'saplings');
   });
 
