@@ -1,0 +1,40 @@
+{
+	"fortune+0.1": {
+		"title": "+0.1 Fortune",
+		"icon": {
+			"type": "item",
+			"data": {
+				"item": "diamond"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:fortune",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"mining_speed+3%": {
+		"title": "+3% Mining Speed",
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "haste"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:mining_speed",
+					"value": 0.03,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	}
+}
