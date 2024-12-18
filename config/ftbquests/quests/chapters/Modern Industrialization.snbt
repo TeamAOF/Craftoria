@@ -549,7 +549,7 @@
 				type: "item"
 			}]
 			x: 35.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["07FE9074247583EE"]
@@ -909,8 +909,8 @@
 				item: { count: 1, id: "modern_industrialization:tin_cable" }
 				type: "item"
 			}]
-			x: 24.0d
-			y: 2.5d
+			x: 24.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4A5466E364B85AEF"]
@@ -1388,8 +1388,8 @@
 					type: "item"
 				}
 			]
-			x: 25.0d
-			y: 2.0d
+			x: 25.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -2722,8 +2722,8 @@
 					type: "item"
 				}
 			]
-			x: 22.0d
-			y: 2.0d
+			x: 21.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4A5466E364B85AEF"]
@@ -2795,8 +2795,8 @@
 				item: { count: 1, id: "extended_industrialization:lv_solar_panel" }
 				type: "item"
 			}]
-			x: 23.0d
-			y: 2.5d
+			x: 22.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["47A8E5DC11E846C5"]
@@ -3108,6 +3108,40 @@
 			}]
 			x: 62.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["163BCEEEE08F3898"]
+			id: "58CA2853D9620919"
+			tasks: [{
+				count: 4L
+				id: "26712555C407F21F"
+				item: { count: 1, id: "modern_industrialization:basic_upgrade" }
+				type: "item"
+			}]
+			x: 27.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["779C3C6B89AD2526"]
+			id: "61748279816F2D7F"
+			tasks: [{
+				id: "01CD5DB838E5712C"
+				item: { count: 1, id: "modern_industrialization:redstone_control_module" }
+				type: "item"
+			}]
+			x: 23.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["20A093E5684D2E30"]
+			id: "08C3213E848BFD0C"
+			tasks: [{
+				id: "2C0703246F326041"
+				item: { count: 1, id: "modern_industrialization:overdrive_module" }
+				type: "item"
+			}]
+			x: 35.0d
+			y: 0.0d
 		}
 	]
 }
