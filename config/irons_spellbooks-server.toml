@@ -1231,3 +1231,25 @@
 		SpellPowerMultiplier = 1.0
 		CooldownInSeconds = 3600.0
 		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:displacement"]
+		Enabled = true
+		School = "irons_spellbooks:ender"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 12.0
+		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:blackout"]
+		Enabled = true
+		School = "irons_spellbooks:eldritch"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 120.0
+		AllowCrafting = true

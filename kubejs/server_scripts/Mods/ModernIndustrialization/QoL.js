@@ -2,7 +2,7 @@ ServerEvents.recipes((e) => {
   let miMixer = e.recipes.modern_industrialization.mixer;
 
   let cobbleGen = (item, fluids) => {
-    e.remove({ type: 'modern_industrialization:mixer', output: item });
+    e.remove({type: 'modern_industrialization:mixer', output: item});
     miMixer(2, 100)
       .itemIn(item, 0)
       .itemOut(item)
@@ -33,4 +33,11 @@ ServerEvents.recipes((e) => {
     'eternal_starlight:thermabysslate',
     'eternal_starlight:cryobysslate',
   ].forEach(cobbleGen);
+
+  e.recipes.extended_industrialization
+    .alloy_smelter(4, 200)
+    .itemIn('#morered:red_alloyable_ingots')
+    .itemIn('4x #c:dusts/redstone')
+    .itemOut('morered:red_alloy_ingot')
+    .id('craftoria:modern_industrialization/alloy_smelter/red_alloy_ingot');
 });

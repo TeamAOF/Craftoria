@@ -1,3 +1,32 @@
+## Craftoria | v1.9.0
+
+_NeoForge Loader 21.1.79_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.9.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.9.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added info for Logistic Frames quests.
+* Updated multiple Sophisticated Backpacks/Storage textures.
+* Added more powah coolants.
+* Added russian translation for quests.
+
+### Bug Fixes 🪲
+
+* Fixed Pocket Anvil voiding items when GUI is closed
+
+### Added Mods ✅
+
+  * [Cable Facades](https://www.curseforge.com/minecraft/mc-mods/cable-facades)
+  * [Mekanistic Routers](https://www.curseforge.com/minecraft/mc-mods/mekanistic-routers)
+  * [Suren's Sophisticated Storage](https://www.curseforge.com/minecraft/texture-packs/suren-ss)
+  * [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest)
+
+### Removed Mods ❌
+
+  * [EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot) (Issues when connecting to worlds)
+  * [Mekanism Covers](https://www.curseforge.com/minecraft/mc-mods/mekanism-covers)
+  * [Tips](https://www.curseforge.com/minecraft/mc-mods/tips)
+---
+
 ## Craftoria | v1.8.0
 
 _NeoForge Loader 21.1.77_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.8.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.8.0.md)_

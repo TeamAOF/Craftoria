@@ -10,10 +10,6 @@
 	doCatDrops = true
 	#Should Bat wings drop from Bats?
 	doBatDrops = true
-	#The 1/n drop chance, per tick, for a fur ball to be dropped.
-	# Default: 5000
-	# Range: > 1
-	furDropChance = 5000
 	#If true, worms will drop from tilling the soil.
 	tillingWorms = true
 	#The amount of ticks it takes for a worm to die. When at 0 ticks, it will not die.
@@ -42,6 +38,8 @@
 	redstoneConfigurator = "minecraft:redstone_torch"
 	#define the item used to configure Direction in laser relays
 	relayConfigurator = "minecraft:compass"
+	#define the item used to configure the area in a farmer
+	farmerConfigurator = "minecraft:compass"
 
 #Machine Settings
 [machineSettings]

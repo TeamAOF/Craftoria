@@ -3,8 +3,10 @@
 	# Default: 64
 	# Range: 0 ~ 1000
 	beaconProtectionRange = 64
-	#Set to true to enable champions from mob spawners
+	#Set to true to enable champions from normal mob spawners
 	championSpawners = false
+	#Set to true to enable champions from trial spawners
+	championTrialSpawners = false
 	#The minimum tier of champions that will have death messages sent out upon defeat (0 to disable)
 	# Default: 0
 	# Range: > 0
@@ -20,7 +22,7 @@
 	#Allowed Values: BLACKLIST, WHITELIST
 	entitiesPermission = "BLACKLIST"
 	#Set to true to show HUD display for champions, including health, affixes, and tier
-	showHud = false
+	showHud = true
 	#Set entity id (for example, ['minecraft:end_dragon', 'minecraft:creeper']) to hidden HUD display for champions, including health, affixes, and tier
 	bossBarBlackList = []
 	#Set to true to have champions generate a colored particle effect indicating their rank

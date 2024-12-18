@@ -24,6 +24,26 @@ ServerEvents.recipes((e) => {
     e.recipes.mekanism.crystallizing(output, input).id(makeID('crystallizing', output, input));
   };
 
+  let sawing = (item_tag_in, item_out, item_out2, item_out2_chance) => {
+    let recipe = {
+      type: 'mekanism:sawing',
+      input: {
+        count: 1,
+        tag: item_tag_in,
+      },
+      main_output: {
+        count: parseInt(item_out.split('x ')[0]),
+        id: item_out.split('x ')[1],
+      },
+      secondary_chance: item_out2_chance,
+      secondary_output: {
+        count: 1,
+        id: item_out2,
+      },
+    };
+    e.custom(recipe).id(makeID('sawing', item_out, item_tag_in));
+  };
+
   let reaction = (item_out, item_in, fluid_in, chem_out, chem_in, duration) => {
     let recipe = {
       type: 'mekanism:reaction',
@@ -67,7 +87,7 @@ ServerEvents.recipes((e) => {
     materials.forEach((material) => {
       let dust = getItemFromTag(`#c:dusts/${material}`);
       if (dust) {
-        if (Item.exists(`mekanism:dust_${material}`)) e.remove({ type: 'mekanism:crushing', output: `mekanism:dust_${material}` });
+        if (Item.exists(`mekanism:dust_${material}`)) e.remove({type: 'mekanism:crushing', output: `mekanism:dust_${material}`});
         if (checkTagSize(`#c:ingots/${material}`) > 0) crush(dust, `#c:ingots/${material}`);
         else if (checkTagSize(`#c:gems/${material}`) > 0) crush(dust, `#c:gems/${material}`);
       }
@@ -100,26 +120,12 @@ ServerEvents.recipes((e) => {
     '1000x #mekanism:oxygen',
     900
   );
-  reaction(
-    '1x modern_industrialization:sulfur_dust',
-    [['#minecraft:coals'], 1],
-    '100x #minecraft:water',
-    '100x mekanism:hydrogen',
-    '100x #mekanism:oxygen',
-    100
-  );
-  reaction(
-    '1x modern_industrialization:sulfur_dust',
-    [['#c:dusts/coal', '#c:dusts/charcoal'], 1],
-    '100x #minecraft:water',
-    '100x mekanism:hydrogen',
-    '100x #mekanism:oxygen',
-    100
-  );
+  reaction('1x modern_industrialization:sulfur_dust', [['#minecraft:coals'], 1], '100x #minecraft:water', '100x mekanism:hydrogen', '100x #mekanism:oxygen', 100);
+  reaction('1x modern_industrialization:sulfur_dust', [['#c:dusts/coal', '#c:dusts/charcoal'], 1], '100x #minecraft:water', '100x mekanism:hydrogen', '100x #mekanism:oxygen', 100);
 
-  e.remove({ mod: 'mekanism', output: 'mekanism:block_salt' });
+  e.remove({mod: 'mekanism', output: 'mekanism:block_salt'});
 
   // Removed to prevent progression skips in Modern Industrialization
-  e.remove({ mod: 'moremekanismprocessing', output: '#c:nuggets' });
-  e.remove({ mod: 'moremekanismprocessing', output: '#c:ingots' });
+  e.remove({mod: 'moremekanismprocessing', output: '#c:nuggets'});
+  e.remove({mod: 'moremekanismprocessing', output: '#c:ingots'});
 });

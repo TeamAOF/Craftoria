@@ -28,12 +28,12 @@ let miProcessItemInputs = (itemInputs, recipe, maxInputs) => {
           return;
         }
 
-        itemInputs.forEach(itemInput => {
+        itemInputs.forEach((itemInput) => {
           if (Array.isArray(itemInput) && (itemInput.length === 2 || itemInput.length === 3)) {
             let input = {};
 
-            if (itemInput[0].includes("c:")) {
-              input.tag = itemInput[0];
+            if (itemInput[0].includes('#')) {
+              input.tag = itemInput[0].slice(1);
             } else {
               input.item = itemInput[0];
             }
@@ -55,8 +55,8 @@ let miProcessItemInputs = (itemInputs, recipe, maxInputs) => {
         if (itemInputs.length === 2 || itemInputs.length === 3) {
           let input = {};
 
-          if (itemInputs[0].includes("c:")) {
-            input.tag = itemInputs[0];
+          if (itemInputs[0].includes('#')) {
+            input.tag = itemInputs[0].slice(1);
           } else {
             input.item = itemInputs[0];
           }
@@ -102,7 +102,7 @@ let miProcessItemOutputs = (itemOutputs, recipe, maxOutputs) => {
           return;
         }
 
-        itemOutputs.forEach(itemOutput => {
+        itemOutputs.forEach((itemOutput) => {
           if (Array.isArray(itemOutput) && (itemOutput.length === 2 || itemOutput.length === 3)) {
             let input = {};
 
@@ -167,11 +167,11 @@ let miProcessFluidInputs = (fluidInputs, recipe, maxInputs) => {
           return;
         }
 
-        fluidInputs.forEach(fluidInput => {
+        fluidInputs.forEach((fluidInput) => {
           if (Array.isArray(fluidInput) && (fluidInput.length === 2 || fluidInput.length === 3)) {
             let input = {};
 
-            if (fluidInput[0].includes("c:")) {
+            if (fluidInput[0].includes('#')) {
               input.tag = fluidInput[0];
             } else {
               input.fluid = fluidInput[0];
@@ -194,7 +194,7 @@ let miProcessFluidInputs = (fluidInputs, recipe, maxInputs) => {
         if (fluidInputs.length === 2 || fluidInputs.length === 3) {
           let input = {};
 
-          if (fluidInputs[0].includes("c:")) {
+          if (fluidInputs[0].includes('c:')) {
             input.tag = fluidInputs[0];
           } else {
             input.fluid = fluidInputs[0];
@@ -242,7 +242,7 @@ let miProcessFluidOutputs = (fluidOutputs, recipe, maxOutputs) => {
           return;
         }
 
-        fluidOutputs.forEach(fluidOutput => {
+        fluidOutputs.forEach((fluidOutput) => {
           if (Array.isArray(fluidOutput) && (fluidOutput.length === 2 || fluidOutput.length === 3)) {
             let output = {};
 
@@ -292,33 +292,29 @@ let miProcessFluidOutputs = (fluidOutputs, recipe, maxOutputs) => {
  */
 function miGenRecipeID(recipe) {
   let output = recipe.item_outputs[0];
-  let outputString = output.item.split(":")[1] + "_" + output.amount + "x";
+  let outputString = output.item.split(':')[1] + '_' + output.amount + 'x';
 
-  let inputString = "with_";
+  let inputString = 'with_';
   if (recipe.fluid_inputs !== undefined && recipe.fluid_inputs.length > 0) {
     recipe.fluid_inputs.forEach((input, index) => {
-      if (input.fluid !== undefined)
-        inputString += input.fluid.split(":")[1];
-      else
-        inputString += input.tag.split(":")[1];
+      if (input.fluid !== undefined) inputString += input.fluid.split(':')[1];
+      else inputString += input.tag.split(':')[1];
       if (index < recipe.fluid_inputs.length - 1) {
-        inputString += "_";
+        inputString += '_';
       }
     });
   } else {
     recipe.item_inputs.forEach((input, index) => {
-      if (input.item !== undefined)
-        inputString += input.item.split(":")[1];
-      else
-        inputString += input.tag.split(":")[1];
+      if (input.item !== undefined) inputString += input.item.split(':')[1];
+      else inputString += input.tag.split(':')[1];
 
       if (index < recipe.item_inputs.length - 1) {
-        inputString += "_";
+        inputString += '_';
       }
     });
   }
 
-  return outputString + "_" + inputString;
+  return outputString + '_' + inputString;
 }
 
 // Recipe functions
@@ -334,12 +330,12 @@ function miGenRecipeID(recipe) {
  */
 let miAssembler = (event, fluidInputs, itemInputs, itemOutputs, eu, duration) => {
   let recipe = {
-    type: "modern_industrialization:assembler",
+    type: 'modern_industrialization:assembler',
     duration: duration,
     eu: eu,
     fluid_inputs: [],
     item_inputs: [],
-    item_outputs: []
+    item_outputs: [],
   };
 
   miProcessFluidInputs(fluidInputs, recipe, 2);
@@ -365,13 +361,13 @@ let miAssembler = (event, fluidInputs, itemInputs, itemOutputs, eu, duration) =>
  */
 let miElectrolyzer = (event, fluidInput, itemInput, fluidOutputs, itemOutputs, eu, duration) => {
   let recipe = {
-    type: "modern_industrialization:electrolyzer",
+    type: 'modern_industrialization:electrolyzer',
     duration: duration,
     eu: eu,
     fluid_inputs: [],
     item_inputs: [],
     fluid_outputs: [],
-    item_outputs: []
+    item_outputs: [],
   };
 
   miProcessFluidInputs(fluidInput, recipe, 1);
@@ -393,14 +389,14 @@ let miElectrolyzer = (event, fluidInput, itemInput, fluidOutputs, itemOutputs, e
  * @param {Array} itemOutput An item output in the format [item, amount]
  * @param {int} eu EU/t consumed by the machine
  * @param {int} duration Duration of the recipe in ticks
-*/
+ */
 let miPacker = (event, itemInputs, itemOutput, eu, duration) => {
   let recipe = {
-    type: "modern_industrialization:packer",
+    type: 'modern_industrialization:packer',
     duration: duration,
     eu: eu,
     item_inputs: [],
-    item_outputs: []
+    item_outputs: [],
   };
 
   miProcessItemInputs(itemInputs, recipe, 3);
@@ -422,11 +418,11 @@ let miPacker = (event, itemInputs, itemOutput, eu, duration) => {
  */
 let miUnpacker = (event, itemInput, itemOutputs, eu, duration) => {
   let recipe = {
-    type: "modern_industrialization:unpacker",
+    type: 'modern_industrialization:unpacker',
     duration: duration,
     eu: eu,
     item_inputs: [],
-    item_outputs: []
+    item_outputs: [],
   };
 
   miProcessItemInputs([itemInput], recipe, 1);
@@ -450,13 +446,13 @@ let miUnpacker = (event, itemInput, itemOutputs, eu, duration) => {
  */
 let miMixer = (event, fluidInputs, itemInputs, fluidOutputs, itemOutputs, eu, duration) => {
   let recipe = {
-    type: "modern_industrialization:mixer",
+    type: 'modern_industrialization:mixer',
     duration: duration,
     eu: eu,
     fluid_inputs: [],
     item_inputs: [],
     fluid_outputs: [],
-    item_outputs: []
+    item_outputs: [],
   };
 
   miProcessFluidInputs(fluidInputs, recipe, 2);
@@ -483,13 +479,13 @@ let miMixer = (event, fluidInputs, itemInputs, fluidOutputs, itemOutputs, eu, du
  */
 let miChemicalReactor = (event, fluidInputs, itemInputs, fluidOutputs, itemOutputs, eu, duration) => {
   let recipe = {
-    type: "modern_industrialization:chemical_reactor",
+    type: 'modern_industrialization:chemical_reactor',
     duration: duration,
     eu: eu,
     fluid_inputs: [],
     item_inputs: [],
     fluid_outputs: [],
-    item_outputs: []
+    item_outputs: [],
   };
 
   miProcessFluidInputs(fluidInputs, recipe, 3);
@@ -515,12 +511,12 @@ let miChemicalReactor = (event, fluidInputs, itemInputs, fluidOutputs, itemOutpu
  */
 let miCuttingMachine = (event, fluidInput, itemInput, itemOutput, eu, duration) => {
   let recipe = {
-    type: "modern_industrialization:cutting_machine",
+    type: 'modern_industrialization:cutting_machine',
     duration: duration,
     eu: eu,
     fluid_inputs: [],
     item_inputs: [],
-    item_outputs: []
+    item_outputs: [],
   };
 
   miProcessFluidInputs(fluidInput, recipe, 1);
@@ -543,11 +539,11 @@ let miCuttingMachine = (event, fluidInput, itemInput, itemOutput, eu, duration) 
  */
 let miCompressor = (event, itemInput, itemOutput, eu, duration) => {
   let recipe = {
-    type: "modern_industrialization:compressor",
+    type: 'modern_industrialization:compressor',
     duration: duration,
     eu: eu,
     item_inputs: [],
-    item_outputs: []
+    item_outputs: [],
   };
 
   miProcessItemInputs(itemInput, recipe, 1);
@@ -569,11 +565,11 @@ let miCompressor = (event, itemInput, itemOutput, eu, duration) => {
  */
 let miMacerator = (event, itemInput, itemOutputs, eu, duration) => {
   let recipe = {
-    type: "modern_industrialization:macerator",
+    type: 'modern_industrialization:macerator',
     duration: duration,
     eu: eu,
     item_inputs: [],
-    item_outputs: []
+    item_outputs: [],
   };
 
   miProcessItemInputs(itemInput, recipe, 1);
@@ -597,13 +593,13 @@ let miMacerator = (event, itemInput, itemOutputs, eu, duration) => {
  */
 let miCentrifuge = (event, fluidInput, itemInput, fluidOutputs, itemOutputs, eu, duration) => {
   let recipe = {
-    type: "modern_industrialization:centrifuge",
+    type: 'modern_industrialization:centrifuge',
     duration: duration,
     eu: eu,
     fluid_inputs: [],
     item_inputs: [],
     fluid_outputs: [],
-    item_outputs: []
+    item_outputs: [],
   };
 
   miProcessFluidInputs(fluidInput, recipe, 1);
@@ -628,11 +624,11 @@ let miCentrifuge = (event, fluidInput, itemInput, fluidOutputs, itemOutputs, eu,
  */
 let miPolarizer = (event, itemInputs, itemOutput, eu, duration) => {
   let recipe = {
-    type: "modern_industrialization:polarizer",
+    type: 'modern_industrialization:polarizer',
     duration: duration,
     eu: eu,
     item_inputs: [],
-    item_outputs: []
+    item_outputs: [],
   };
 
   miProcessItemInputs(itemInputs, recipe, 2);
