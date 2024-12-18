@@ -1,95 +1,49 @@
-ServerEvents.recipes((event) => {
+ServerEvents.recipes((e) => {
   let market = (item, category) => {
     let recipe = {
       type: 'farmingforblockheads:market',
       category: `farmingforblockheads:${category}`,
       preset: `minecraft:${category}`,
-      result: { item: item, count: 1 },
+      result: {item: item, count: 1},
     };
-    event.custom(recipe).id(`craftoria:ffb_market/${item.split(':')[0]}/${item.split(':')[1]}`);
+
+    e.custom(recipe).id(`craftoria:ffb_market/${item.split(':')[0]}/${item.split(':')[1]}`);
   };
 
-  const bwg_saplings = [
-    'araucaria',
-    'aspen',
-    'baobab',
-    'blue_enchanted',
-    'blue_spruce',
-    'brown_birch',
-    'brown_oak',
-    'brown_zelkova',
-    'cika',
-    'cypress',
-    'ebony',
-    'fir',
-    'green_enchanted',
-    'holly',
-    'indigo_jacaranda',
-    'ironwood',
-    'jacaranda',
-    'mahogany',
-    'maple',
-    'orange_birch',
-    'orange_oak',
-    'orange_spruce',
-    'orchard',
-    'palm',
-    'palo_verde',
-    'pine',
-    'rainbow_eucalyptus',
-    'red_birch',
-    'red_maple',
-    'red_oak',
-    'red_spruce',
-    'redwood',
-    'silver_maple',
-    'skyris',
-    'white_mangrove',
-    'white_sakura',
-    'willow',
-    'witch_hazel',
-    'yellow_birch',
-    'yellow_sakura',
-    'yellow_spruce',
-    'yucca',
-    'zelkova',
+  let recipeExists = (item) => {
+    return e.containsRecipe({output: item, type: 'farmingforblockheads:market'});
+  };
+
+  const saplingBlacklist = [
+    // Twilight Forest
+    'twilightforest:time_sapling',
+    'twilightforest:transformation_sapling',
+    'twilightforest:mining_sapling',
+    'twilightforest:sorting_sapling',
+    'twilightforest:rainbow_oak_sapling',
+    'twilightforest:hollow_oak_sapling',
+
+    // Occultism
+    'occultism:otherworld_sapling',
+    'occultism:otherworld_sapling_natural',
   ];
 
-  bwg_saplings.forEach((sapling) => {
-    market(`biomeswevegone:${sapling}_sapling`, 'saplings');
-  });
+  const seedBlacklist = [
+    // Minecraft
+    'minecraft:torchflower_seeds',
+    'minecraft:pitcher_pod',
 
-  const ars_saplings = [
-    'ars_nouveau:blue_archwood_sapling',
-    'ars_nouveau:red_archwood_sapling',
-    'ars_nouveau:purple_archwood_sapling',
-    'ars_nouveau:green_archwood_sapling',
-    'ars_elemental:yellow_archwood_sapling',
+    // Ars Nouveau
+    'ars_nouveau:magebloom_crop',
   ];
 
-  ars_saplings.forEach((sapling) => {
-    market(sapling, 'saplings');
+  Ingredient.of('#minecraft:saplings').stacks.forEach((sapling) => {
+    if (saplingBlacklist.includes(sapling.id) || recipeExists(sapling.id)) return;
+    market(sapling.id, 'saplings');
   });
 
-  const fd_saplings = [
-    'fruitsdelight:pear_sapling', 
-    'fruitsdelight:hawberry_sapling', 
-    'fruitsdelight:lychee_sapling', 
-    'fruitsdelight:mango_sapling', 
-    'fruitsdelight:persimmon_sapling', 
-    'fruitsdelight:peach_sapling', 
-    'fruitsdelight:orange_sapling', 
-    'fruitsdelight:apple_sapling', 
-    'fruitsdelight:mangosteen_sapling', 
-    'fruitsdelight:bayberry_sapling', 
-    'fruitsdelight:kiwi_sapling', 
-    'fruitsdelight:fig_sapling', 
-    'fruitsdelight:pineapple_sapling',
-  ];
-
-  fd_saplings.forEach((sapling) => {
-    market(sapling, 'saplings');
+  Ingredient.of('#c:seeds').stacks.forEach((seed) => {
+    if (seedBlacklist.includes(seed.id) || recipeExists(seed.id)) return;
+    market(seed.id, 'seeds');
   });
-
-  market('integrateddynamics:menril_sapling', 'saplings');
 });
