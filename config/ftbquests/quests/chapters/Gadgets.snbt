@@ -316,6 +316,14 @@
 			x: 0.0d
 			y: 0.0d
 		}
+		{
+			height: 7.0d
+			image: "constructionstick:item/template_unbreakable"
+			rotation: 0.0d
+			width: 7.0d
+			x: 0.0d
+			y: -6.0d
+		}
 	]
 	order_index: 6
 	quest_links: [ ]
@@ -919,6 +927,101 @@
 			}]
 			x: -4.2d
 			y: -0.4d
+		}
+		{
+			hide_dependent_lines: true
+			id: "407FD46B5C5A1EC0"
+			tasks: [{
+				id: "46797D7788260932"
+				item: { count: 1, id: "constructionstick:wooden_stick" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["407FD46B5C5A1EC0"]
+			id: "60A4B6B0601C837C"
+			tasks: [{
+				id: "63AFBE2B34FB8D11"
+				item: { count: 1, id: "constructionstick:copper_stick" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["407FD46B5C5A1EC0"]
+			id: "6385DB0FFD411ECB"
+			tasks: [{
+				id: "68B8959B7AB01DA9"
+				item: { count: 1, id: "constructionstick:iron_stick" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["407FD46B5C5A1EC0"]
+			id: "683EEA78F71AC153"
+			tasks: [{
+				id: "70418F59E4A0020E"
+				item: { count: 1, id: "constructionstick:diamond_stick" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["407FD46B5C5A1EC0"]
+			id: "0C9D9AFD7C5C9F97"
+			tasks: [{
+				id: "06910211F6B5085D"
+				item: { count: 1, id: "constructionstick:netherite_stick" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			id: "58ED87D90B7F7168"
+			tasks: [{
+				id: "32351FB3DFA404FB"
+				item: { count: 1, id: "constructionstick:template_angel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			id: "010F3BEDCA334DCB"
+			tasks: [{
+				id: "5D51FEB4EE13C4CD"
+				item: { count: 1, id: "constructionstick:template_destruction" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			id: "3F581374C4DDD0A9"
+			tasks: [{
+				id: "6C2805E8CD09CFAE"
+				item: { count: 1, id: "constructionstick:template_unbreakable" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			id: "5A49CB40AC643E67"
+			tasks: [{
+				id: "535A4BABBC649950"
+				item: { count: 1, id: "constructionstick:template_battery" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -6.0d
 		}
 	]
 }
