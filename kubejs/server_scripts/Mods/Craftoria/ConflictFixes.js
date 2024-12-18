@@ -25,10 +25,6 @@ ServerEvents.recipes((e) => {
   }).id('handcrafted:terracotta_thin_pot');
 
   // Food mods
-  e.shaped('croptopia:knife', ['BA'], {
-    A: `minecraft:iron_ingot`,
-    B: 'minecraft:stick',
-  }).id('croptopia:knife');
   e.replaceInput({id: 'farmersdelight:cabbage_from_leaves'}, '#c:cabbage', 'farmersdelight:cabbage_leaf');
   e.replaceInput({id: 'dumplings_delight:chinese_cabbage_crate'}, '#c:cabbage', 'farmersdelight:cabbage_leaf');
   e.remove({id: 'dumplings_delight:chinese_cabbage_leaf'});
@@ -61,10 +57,8 @@ ServerEvents.recipes((e) => {
     'dumplings_delight:eggplant_seeds',
     'duckling:cake',
     'utilitarian:utility/logs_to_chests',
-    'croptopia:tomato_seed',
     'minecraft:cake',
     'mekanism:sulfur_dye',
-    'croptopia:cooked_bacon_from_smoking_bacon',
     'minecraft:coal_from_blasting_deepslate_coal_ore',
     'mekanism:processing/lead/ingot/from_ore_blasting',
     'mekanism:processing/tin/ingot/from_ore_blasting',
@@ -73,7 +67,6 @@ ServerEvents.recipes((e) => {
     'integrateddynamics:smelting/menril_log_filled_coal',
     'integrateddynamics:smelting/menril_log_coal',
     'mekanism:processing/tin/ingot/from_ore_smelting',
-    'croptopia:cooked_bacon_from_bacon',
   ];
   removeById.forEach((id) => {
     e.remove({id: id});

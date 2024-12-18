@@ -11,15 +11,15 @@ ServerEvents.recipes((e) => {
       tool: {},
     };
     let recipeID = [];
-    if (sound) recipe.sound = { sound_id: sound };
+    if (sound) recipe.sound = {sound_id: sound};
 
     if (Array.isArray(outputs)) {
       outputs.forEach((output) => {
-        recipe.result.push({ item: Item.of(output).toJson() });
+        recipe.result.push({item: Item.of(output).toJson()});
       });
       recipeID.push(outputs[0]);
     } else {
-      recipe.result.push({ item: Item.of(outputs).toJson() });
+      recipe.result.push({item: Item.of(outputs).toJson()});
       recipeID.push(outputs);
     }
 
@@ -43,9 +43,4 @@ ServerEvents.recipes((e) => {
     }
     e.custom(recipe).id(makeID('cutting', recipeID[0], recipeID[1]));
   };
-
-  ['cinnamon_log', 'cinnamon_wood'].forEach((type) => {
-    CuttingBoard([`croptopia:stripped_${type}`, 'croptopia:cinnamon'], `croptopia:${type}`, 'axe_strip', true, 'minecraft:item.axe.strip');
-    e.recipes.mekanism.sawing(`croptopia:stripped_${type}`, 'croptopia:cinnamon', 1, `croptopia:${type}`);
-  });
 });
