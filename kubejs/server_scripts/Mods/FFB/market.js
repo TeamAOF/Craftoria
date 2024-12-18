@@ -1,109 +1,13 @@
-ServerEvents.recipes(event => {
+ServerEvents.recipes((event) => {
   let market = (item, category) => {
     let recipe = {
       type: 'farmingforblockheads:market',
       category: `farmingforblockheads:${category}`,
       preset: `minecraft:${category}`,
-      result: { item: item, count: 1 }
+      result: {item: item, count: 1},
     };
     event.custom(recipe).id(`craftoria:ffb_market/${item.split(':')[0]}/${item.split(':')[1]}`);
-  }
-
-  const croptopia_seeds = [
-    'artichoke',
-    'asparagus',
-    'barley',
-    'basil',
-    'bellpepper',
-    'blackbean',
-    'blackberry',
-    'blueberry',
-    'broccoli',
-    'cabbage',
-    'cantaloupe',
-    'cauliflower',
-    'celery',
-    'chile_pepper',
-    'coffee',
-    'corn',
-    'cranberry',
-    'cucumber',
-    'currant',
-    'eggplant',
-    'elderberry',
-    'garlic',
-    'ginger',
-    'grape',
-    'greenbean',
-    'honeydew',
-    'hops',
-    'kale',
-    'kiwi',
-    'leek',
-    'lettuce',
-    'mustard',
-    'oat',
-    'olive',
-    'onion',
-    'peanut',
-    'pepper',
-    'pineapple',
-    'radish',
-    'raspberry',
-    'rhubarb',
-    'rice',
-    'rutabaga',
-    'saguaro',
-    'soybean',
-    'squash',
-    'strawberry',
-    'tea',
-    'tomatillo',
-    'tomato',
-    'turmeric',
-    'turnip',
-    'vanillas',
-    'yam',
-    'zucchini'
-  ];
-
-  croptopia_seeds.forEach((seed) => {
-    market(`croptopia:${seed}_seed`, 'seeds');
-  });
-
-  const croptopia_saplings = [
-    'almond',
-    'apple',
-    'apricot',
-    'avocado',
-    'banana',
-    'cashew',
-    'cherry',
-    'cinnamon',
-    'coconut',
-    'date',
-    'dragonfruit',
-    'fig',
-    'grapefruit',
-    'kumquat',
-    'lemon',
-    'lime',
-    'mango',
-    'nectarine',
-    'nutmeg',
-    'orange',
-    'peach',
-    'pear',
-    'pecan',
-    'persimmon',
-    'plum',
-    'starfruit',
-    'walnut'
-  ];
-
-  croptopia_saplings.forEach((sapling) => {
-    market(`croptopia:${sapling}_sapling`, 'saplings');
-  });
+  };
 
   const bwg_saplings = [
     'araucaria',
@@ -148,7 +52,7 @@ ServerEvents.recipes(event => {
     'yellow_sakura',
     'yellow_spruce',
     'yucca',
-    'zelkova'
+    'zelkova',
   ];
 
   bwg_saplings.forEach((sapling) => {
@@ -160,7 +64,7 @@ ServerEvents.recipes(event => {
     'ars_nouveau:red_archwood_sapling',
     'ars_nouveau:purple_archwood_sapling',
     'ars_nouveau:green_archwood_sapling',
-    'ars_elemental:yellow_archwood_sapling'
+    'ars_elemental:yellow_archwood_sapling',
   ];
 
   ars_saplings.forEach((sapling) => {
@@ -168,4 +72,4 @@ ServerEvents.recipes(event => {
   });
 
   market('integrateddynamics:menril_sapling', 'saplings');
-})
+});

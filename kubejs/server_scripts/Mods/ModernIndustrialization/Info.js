@@ -33,8 +33,8 @@ RecipeViewerEvents.addInformation('item', (e) => {
 
     // Add item information here
     'modern_industrialization:overdrive_module': [
-      `This module prevents the machines from losing their overclock status when they run out of ingredients.`,
-      `But be warned, the machines will still consume power when they are out of ingredients.`,
+      `This module prevents the machine from losing its overclock status when it runs out of ingredients.`,
+      `But be warned, the machine still consumes power when its out of ingredients.`,
       `Due to the nature of how overclocking works, the recipe will be locked, until the module is removed or the machine runs out of power.`,
     ],
   };

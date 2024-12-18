@@ -5,24 +5,18 @@ ServerEvents.tags('item', (e) => {
   e.add('c:storage_blocks/charged_redstone', 'appflux:charged_redstone_block');
 
   e.add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet']);
+  e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
 
   // Crops & Seeds
-  e.add('c:seeds/cabbage', 'farmersdelight:cabbage_seeds', 'dumplings_delight:chinese_cabbage_seeds');
+  e.add('c:seeds/cabbage', ['farmersdelight:cabbage_seeds', 'dumplings_delight:chinese_cabbage_seeds']);
   e.add('c:seeds/tomato', 'farmersdelight:tomato_seeds');
   e.add('c:seeds/rice', 'sushigocrafting:rice_seeds');
   e.add('c:seeds/eggplant', 'dumplings_delight:eggplant_seeds');
   e.add('c:crops/garlic', 'dumplings_delight:garlic');
-  e.add('c:crops/green_onion', 'croptopia:greenonion', 'dumplings_delight:greenonion');
+  e.add('c:crops/green_onion', 'dumplings_delight:greenonion');
 
   e.remove('c:crops/garlic', 'dumplings_delight:garlic_clove');
   e.remove('c:foods/garlic', 'dumplings_delight:garlic_clove');
-
-  // Foods
-  e.add('c:foods/raw_bacon', 'croptopia:bacon');
-  e.add('c:foods/cooked_bacon', 'croptopia:cooked_bacon');
-  e.add('c:foods/calamari', 'croptopia:calamari');
-
-  e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
 
   // Plastic
   e.add('c:plastics', ['pneumaticcraft:plastic']);
