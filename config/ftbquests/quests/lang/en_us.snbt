@@ -260,6 +260,11 @@
 		"There is a button on the left called \"&eAuto-Sort&r\" that allows the machine to automatically split the inputs between the &a3&r input slots."
 	]
 	quest.08BE35FB8E58C4B5.title: "Basic Sawing Factory"
+	quest.08C3213E848BFD0C.quest_desc: [
+		"The &bOverdrive Module&f will &6prevent&f the efficiency of an &belectric machine&f from going down, but &6force&f the machine to use &cfull power&f all the time, even if it isn't &6processing&f anything."
+		""
+		"The effiency &owill&r reset if the recipe the machine is &6processing&f changes."
+	]
 	quest.091C2772ED417247.quest_desc: [
 		"  Now that you're producing energy in the &6medium voltage tier&r, you'll need to make sure your machines can accept that new found power."
 		""
@@ -541,6 +546,7 @@
 	]
 	quest.141E3D92CBA9F1B3.title: "Centrifuge"
 	quest.1439B72B421AF009.quest_subtitle: "Sweet, Sweet Pie"
+	quest.14F545E632726FEE.quest_desc: ["Spawned mobs will be set on fire."]
 	quest.14F545E632726FEE.quest_subtitle: "+ Burning"
 	quest.15008EFBA92CC3DC.quest_desc: [
 		"You can open the AE2 guide by holding G on almost any AE2 item."
@@ -979,6 +985,7 @@
 	quest.1F828E56F64FFD15.quest_desc: ["&bSpiritfire &fis obtained by &6throwing&b Demon Fruit&f &ron a &bLog &fand &6lighting&f it on fire."]
 	quest.1F828E56F64FFD15.quest_subtitle: "Purple Fire?"
 	quest.1F828E56F64FFD15.title: "Spiritfire"
+	quest.1F88FCB1B73FF882.quest_desc: ["The total number of entities allowed nearby."]
 	quest.1F88FCB1B73FF882.quest_subtitle: "+2 Max Entities"
 	quest.1F9A1456487655B0.quest_desc: [
 		"Using your &bTeleportation Core&r, construct a &9Teleporter&r to allow you to instantly travel across any distance. "
@@ -994,6 +1001,7 @@
 		"They help with not only exploration, but maneuvering around your &3factory&r. "
 	]
 	quest.1FAB4634116B6EC8.title: "The Backbone of this Operation"
+	quest.1FD59C1147BCE34F.quest_desc: ["The spawner ignores spawn conditions."]
 	quest.1FD59C1147BCE34F.quest_subtitle: "+ Ignores Conditions"
 	quest.1FF9FB01DBE735FC.quest_desc: ["This &bVat &fturns &bAlchemical Sulfur &finto &bAlchemical Niter"]
 	quest.1FF9FB01DBE735FC.quest_subtitle: "Sulfur = Niter"
@@ -1179,6 +1187,7 @@
 		"  It's a little taller so remember to use the &bWrench&r to see multiblock shape and block placement."
 	]
 	quest.250D1E2BFE6E0D50.title: "Advanced Large Steam Boiler"
+	quest.253FA8D6C09E2BD5.quest_desc: ["Spawned entities will make no noise."]
 	quest.253FA8D6C09E2BD5.quest_subtitle: "+ Silent"
 	quest.255021677AF472E9.title: "Reformation Array"
 	quest.2571BC62616A45AB.quest_desc: [
@@ -1416,6 +1425,7 @@
 	quest.2D4170B5AD28DCBF.title: "HV Diesel Generator"
 	quest.2D4564F6C18AE96B.quest_desc: ["The &bAdvanced Logistical Transporter&r can pull &a32 items per second&r into a transporter network and transfer it at a speed of &a2.0 meters per second&r."]
 	quest.2D4564F6C18AE96B.title: "Advanced Logistical Transporter"
+	quest.2D8FB52E37D7D96C.quest_desc: ["The spawner does not need a nearby player."]
 	quest.2D8FB52E37D7D96C.quest_subtitle: "+ Ignores Players"
 	quest.2DAE44549D0FDD55.quest_desc: ["&bSource Jars&r are used to store &6Source&r that you have made before you start a &3Ritual&r."]
 	quest.2E0837E85AD433EC.quest_subtitle: "Cinnamon Rolls Are Better"
@@ -1615,6 +1625,7 @@
 		"You can even obtain &5Night Vision&r!"
 	]
 	quest.33AC5F9CFB679483.title: "MekaSuit Helmet"
+	quest.33CDCAD12E8F6828.quest_desc: ["The maximum number of ticks between spawns."]
 	quest.33CDCAD12E8F6828.quest_subtitle: "-10 Max Spawn Delay"
 	quest.33CEED6232901CE5.quest_desc: ["&6Used&r with the &bVaccum Trap&r, this machine will &6suck up&r any &7mobs&r near it and put them in a &bSpawner Core&r, for that too work you must first &6craft&r a &bSpawner Core&r and &6insert&r into the a &bVaccum Trap&r."]
 	quest.33D0760B5FEF7C46.quest_desc: [
@@ -1688,6 +1699,7 @@
 		""
 		"Secondly it will provide an &aIn-World&f Highlight of which &bPattern Provider&f is stuck when doing large crafting jobs."
 	]
+	quest.35F320164724B44C.quest_desc: ["The minimum number of ticks between spawns."]
 	quest.35F320164724B44C.quest_subtitle: "-10 Min Spawn Delay"
 	quest.35F6CAD5BE56A32A.quest_desc: [
 		"  &bShadowpulse Soil&r behaves like the previous &bsoil&r tier, but &6grows crops faster still&r.  "
@@ -1923,6 +1935,7 @@
 	quest.3F0097CCBA02804C.quest_subtitle: "The Bigger, The Better!"
 	quest.3F6174E82DDC48C3.quest_desc: ["The &bEnergized Smelter&r is a machine used to &6smelt&r items and blocks into their \"&8cooked&r\" counterparts."]
 	quest.3F6174E82DDC48C3.title: "Energized Smelter"
+	quest.3F73EC8E087E2920.quest_desc: ["Spawned mobs will drop extra loot, increasing with level."]
 	quest.3F73EC8E087E2920.quest_subtitle: "+I Echoing"
 	quest.3F8B9421E85C047D.title: "Water for Chemical Washing"
 	quest.3FB60EC2EE4D0435.quest_desc: ["The &bEnchanter's Tools&r can be applied with &dSpells&r at the &bScribe's Table&r."]
@@ -2009,6 +2022,7 @@
 	quest.41D1344A31FEA6DF.title: "Kanthal Coils"
 	quest.4207ADF2CB254C6B.quest_desc: ["The &bPainting Machine&r allows you to &6automatically paint&r certain &3blocks and items&r using pigments."]
 	quest.4207ADF2CB254C6B.title: "Painting Machine"
+	quest.423B29BD8DAC8C3D.quest_desc: ["The spawner will always spawn a baby entity when possible."]
 	quest.423B29BD8DAC8C3D.quest_subtitle: "+ Youthful"
 	quest.42619280FF258EEA.quest_desc: ["&bMore Red&f is a mod that lets u run &bredstone &fanywhere u want, up walls, on top of ceilings, under ceilings. "]
 	quest.42619280FF258EEA.title: "&cMore Red"
@@ -2169,6 +2183,7 @@
 	quest.462944FD21A92AED.quest_desc: ["&4Infused Alloy&r is the first alloy you'll make, comprised of &cinfusing redstone&r into &6copper&r making an extra conductive metal that you'll use for &acircuitry&r. "]
 	quest.462944FD21A92AED.title: "Infused Alloy"
 	quest.46312A46467C5497.quest_desc: ["When you find a &bRelic &fin the wild, you can use the &bResearch Table&f to unlock &aspecial effects &fwith &bexperience&f."]
+	quest.465ECB57BFCF5291.quest_desc: ["Spawned entities will have no AI."]
 	quest.465ECB57BFCF5291.quest_subtitle: "+ No AI"
 	quest.4670BD132DF4A70E.quest_desc: [
 		"This is the last CPU you'll ever need, it handles all the crafting jobs you throw at it."
@@ -2271,6 +2286,7 @@
 		"{image:justdirethings:item/voidshift_wand width:100 height:100 align:center fit:true}"
 	]
 	quest.48E96D243486D38E.quest_subtitle: "From Here to There"
+	quest.48F4ED8C915995DC.quest_desc: ["The spawner ignores light levels."]
 	quest.48F4ED8C915995DC.quest_subtitle: "+ Ignores Light"
 	quest.495EEAA73357FA60.quest_desc: [
 		"  Accepts top-level &6upgrades&r:"
@@ -2301,6 +2317,7 @@
 	]
 	quest.49C508DCB4AAC3CB.quest_desc: ["The &bUltimate Sawing Factory&r can process up to &a9&r sawing processes at the same time, containing the same \"&eAuto-Sort&r\" function."]
 	quest.49C508DCB4AAC3CB.title: "Ultimate Sawing Factory"
+	quest.4A476B25B5A3E88D.quest_desc: ["The radius (in blocks) that mobs can spawn in."]
 	quest.4A476B25B5A3E88D.quest_subtitle: "+2 Spawn Range"
 	quest.4A5466E364B85AEF.quest_desc: [
 		"  Darker and cooler than Iron... Plus about 1000 times stronger. It's time to make some &bSteel&r! Use that coal coke you produced earlier and crush it down to a pile of dust. Then, combine that with iron dust to get your &bUncooked Steel Dust&r. Remember, &6using the &bMixer&r will increase your output.&r"
@@ -2637,6 +2654,11 @@
 	quest.584FE7044BA83349.quest_subtitle: "Might need some fruit"
 	quest.5855D8361A2C6623.quest_desc: ["The &bTemplates&f can be used in the &bTemplate Manager&f."]
 	quest.5855D8361A2C6623.title: "&bBuilding Gadgets"
+	quest.58CA2853D9620919.quest_desc: [
+		"The &bBasic Upgrade&f is an upgrade you can &6create&f with only simple components to &9speed&f up your machines."
+		""
+		"Each adds to the max &eenergy&f cap by &62EU/t&f."
+	]
 	quest.59128813386BFDB1.quest_desc: [
 		"&bPoint 2 Point (P2P) Tunnels&f can be overwhelmingly complex, but at the same time extremely useful. These &btunnels&f can be used to &6transfer up to 32 channels from one point to the other&f. Now, you might be asking: \"But why can't I just use a &bDense Cable&f?\""
 		""
@@ -2778,6 +2800,13 @@
 	quest.61340C2A12FEAA26.title: "ME Drive"
 	quest.614E49D8AA7F85FC.quest_desc: ["Each &bElite Induction Provider&r added to your matrix adds &e9.55 MFE per tick&r of energy transfer rate, in and out of your matrix."]
 	quest.614E49D8AA7F85FC.title: "Elite Induction Provider"
+	quest.61748279816F2D7F.quest_desc: [
+		"The &bRedstone Control Module&f is meant to let you control your machines with &credstone&f! &6Right Clicking&f the module in your hand will &6change&f it's setting from the machine requiring a &9High Signal&f to &9Low Signal&f and vice versa. Then place it into the &credstone&f module slot."
+		""
+		"What this means is:"
+		"- While the setting is on &9High Signal&f, the machine will only &6function&f if it is given a &credstone&f signal. No &credstone&f signal will turn it off."
+		"- While the setting is on &9Low Signal&f, the machine will only &6function&f if it is not given a &credstone&f signal. A &credstone&f signal will turn it off."
+	]
 	quest.6201E6DF709C29D0.quest_desc: [
 		"  &bFerricore armor&r is as strong and durable as &biron armor&r."
 		""
@@ -3629,6 +3658,7 @@
 	]
 	quest.7B86C9C90997B3E3.quest_subtitle: "&oA little hexing?"
 	quest.7B86C9C90997B3E3.title: "&5Magic?!"
+	quest.7B88129FF5C9145F.quest_desc: ["How far a player can be before spawning stops."]
 	quest.7B88129FF5C9145F.quest_subtitle: "+4 Activation Range"
 	quest.7BB4CE27736F4C08.quest_desc: [
 		"The final part of the tank is the &bDynamic Valve&r. "
@@ -3790,6 +3820,7 @@
 		"You can make &2biofuel&r by &6crushing down&r almost any &borganic based material&r."
 	]
 	quest.7FC6AE9DB7C1DA52.title: "Bio-Generator"
+	quest.7FD0A63CDC267251.quest_desc: ["The number of entities spawned at once."]
 	quest.7FD0A63CDC267251.quest_subtitle: "+1 Spawn Count"
 	quest.7FD5FCEFE3697A7C.quest_subtitle: "What did the baby &ecorn&r say to the mama &ecorn&r?"
 	quest.7FEBDFAE021B3C56.quest_desc: ["Useful for &oreally&r big crafts."]
