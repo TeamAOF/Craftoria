@@ -15,7 +15,8 @@ let getMaterial = (item) => {
   const combinations = getAllCombinations(parts);
 
   for (let part of combinations) {
-    if (Item.exists(`minecraft:${part}_block`)) return part + '_block';
+    if (Item.exists(`minecraft:${part}_planks`)) return `${part}_planks`;
+    if (Item.exists(`minecraft:${part}_block`)) return `${part}_block`;
     if (Item.exists(`minecraft:${part}`)) return part;
   }
 
@@ -71,5 +72,9 @@ ServerEvents.recipes((e) => {
     Ingredient.of(tag).stacks.forEach((item) => {
       e.stonecutting(item.id, [tag, `minecraft:${tag.split(':')[1]}`]);
     });
+  });
+
+  Ingredient.of('#factory_blocks:factory').stacks.forEach((item) => {
+    e.stonecutting(item.id, '#factory_blocks:factory');
   });
 });
