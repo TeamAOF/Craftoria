@@ -91,8 +91,6 @@ ServerEvents.tags('block', (e) => {
 
   e.add('minecraft:storage_blocks/quartz', 'minecraft:quartz_block');
 
-  e.add('c:budding', '#c:budding_blocks');
-
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
 
   // Block tags for quest usage
