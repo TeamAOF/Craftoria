@@ -28,10 +28,6 @@ ServerEvents.tags('item', (e) => {
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
 
-  // Enchant fixes
-  e.add('minecraft:enchantable/mining', ['ae2:annihilation_plane']);
-  e.add('minecraft:enchantable/durability', ['ae2:annihilation_plane']);
-
   // Machine Frames
 
   e.add('craftoria:hulls/advanced', 'industrialforegoing:machine_frame_advanced');
