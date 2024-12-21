@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
 
   // Gold Drill
   MIQuarry(["modern_industrialization:gold_drill", 1, 0.1], [
-    ["minecraft:netherrack", 64, 1],
+    ["minecraft:netherrack", 32, 1],
     ["minecraft:blackstone", 16, 0.25],
     ["minecraft:basalt", 16, 0.25],
     ["minecraft:soul_soil", 20, 0.1],
