@@ -64,9 +64,7 @@ ServerEvents.generateData('after_mods', (e) => {
       tier_data: data.tierData,
       data_per_kill: data.dataPerKill,
     };
-
-    console.info(`Generating data model for ${entity} to ${path}`);
-    console.info(modelData);
+    
     e.json(path, modelData);
   }
 });
