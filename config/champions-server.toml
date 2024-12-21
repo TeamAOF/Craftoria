@@ -1,3 +1,11 @@
+[mobSplitSetting]
+	#Set to true to allow slime like mob when splitting, inherit this parentMob's affix and ranks.
+	mobInherit = true
+	#Set the children mob reduce rank when split, 0 means disable
+	# Default: 1
+	# Range: > 0
+	rankReduce = 1
+
 [loot]
 	#Set to true to allow fake players to generate champion loot
 	fakeLoot = false
