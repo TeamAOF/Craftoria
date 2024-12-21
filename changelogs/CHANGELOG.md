@@ -1,4 +1,18 @@
-## Craftoria | v1.10.0/.1
+## Craftoria | v1.10.1
+
+_NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.10.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.10.1.md)_
+
+### Bug Fixes 🪲
+
+* Fixed particles crash.
+* Fixed disabled champion affixes not applying to servers.
+
+### Removed Mods ❌
+
+  * [Visuality: Reforged](https://www.curseforge.com/minecraft/mc-mods/visuality-reforged)
+---
+
+## Craftoria | v1.10.0
 
 _NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.10.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.10.0.md)_
 
@@ -67,7 +81,6 @@ _NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
   * [Farmer's Croptopia](https://www.curseforge.com/minecraft/mc-mods/farmers-croptopia)
   * [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge) (Lag Issues)
   * [Nether's Exoticism](https://www.curseforge.com/minecraft/mc-mods/nethers-exoticism)
-  * [Visuality: Reforged](https://www.curseforge.com/minecraft/mc-mods/visuality-reforged)
 ---
 
 ## Craftoria | v1.9.0

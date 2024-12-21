@@ -64,7 +64,7 @@
   * [capejs-1.1.0-1.21.jar](https://www.curseforge.com/minecraft/mc-mods/capejs/files/5563766) (by [static](https://www.curseforge.com/members/static/projects))
   * [cc-tweaked-1.21.1-forge-1.113.1.jar](https://www.curseforge.com/minecraft/mc-mods/cc-tweaked/files/5714512) (by [SquidDev](https://www.curseforge.com/members/SquidDev/projects))
   * [CerbonsAPI-NeoForge-1.21-1.2.0.jar](https://www.curseforge.com/minecraft/mc-mods/cerbons-api/files/6006403) (by [Cerbon](https://www.curseforge.com/members/Cerbon/projects))
-  * [champions-neoforge-1.21.1-2.1.8.6-release.jar](https://www.curseforge.com/minecraft/mc-mods/champions-unofficial/files/6007973) (by [CrychicTeam](https://www.curseforge.com/members/CrychicTeam/projects))
+  * [champions-neoforge-1.21.1-2.1.8.7-beta-2.jar](https://www.curseforge.com/minecraft/mc-mods/champions-unofficial/files/6011186) (by [CrychicTeam](https://www.curseforge.com/members/CrychicTeam/projects))
   * [charginggadgets-1.14.1.jar](https://www.curseforge.com/minecraft/mc-mods/charging-gadgets/files/5615790) (by [Direwolf20](https://www.curseforge.com/members/Direwolf20/projects))
   * [charmofundying-neoforge-9.1.0+1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/charm-of-undying/files/5846603) (by [TheIllusiveC4](https://www.curseforge.com/members/TheIllusiveC4/projects))
   * [chat_heads-0.13.7-neoforge-1.21.jar](https://www.curseforge.com/minecraft/mc-mods/chat-heads/files/5936614) (by [dzwdz](https://www.curseforge.com/members/dzwdz/projects))
