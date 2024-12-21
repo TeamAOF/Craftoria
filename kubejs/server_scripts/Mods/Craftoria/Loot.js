@@ -1,6 +1,9 @@
 LootJS.lootTables((e) => {
+  let removeLoot = globalItemRemovals;
+  removeLoot.push('artifacts:eternal_steak', 'artifacts:everlasting_beef');
+
   e.forEachTable((table) => {
-    table.removeItem(['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
+    table.removeItem(removeLoot);
   });
 });
 
