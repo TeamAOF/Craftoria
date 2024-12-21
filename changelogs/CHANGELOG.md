@@ -9,7 +9,6 @@ _NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 * Added a Skills System (Open by pressing the "K" keybind)
 * Added Trails that follow projectiles and entities, adding a dynamic layer of movement to the world around you.
 * Added Directional screen-shaking effects triggered by loud sounds, explosions, or swift movements. Not only does this intensify your sense of immersion, it also helps you pinpoint the origin of potential threats, enhancing both atmosphere and situational awareness.
-* Added the Replicator (MK II)
 * Added custom capes for Devs & Testers.
 * Made AE quantum armor recipes require mekasuit.
 * Disabled infested affix on mobs.
