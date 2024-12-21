@@ -1,0 +1,357 @@
+# List of entity ID's that should have trail effect.
+entityTrails:
+    minecraft:dragon_fireball:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FFD974F7'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80FF00D0'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 5
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.35
+            z: 0.0
+        # Trail thickness
+        size: 0.45
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:wind_charge:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FFE8ECFC'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80000000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 10
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.05
+            z: 0.0
+        # Trail thickness
+        size: 0.075
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:phantom:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FF38007D'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80000000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 30
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.25
+            z: 0.0
+        # Trail thickness
+        size: 0.15
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:experience_orb:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.1
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FF66FF00'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80D9FF00'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 5
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.1
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.175
+            z: 0.0
+        # Trail thickness
+        size: 0.075
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:fireball:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FFEBAA18'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80800000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 5
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.35
+            z: 0.0
+        # Trail thickness
+        size: 0.35
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:wither_skull:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FF576868'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80000000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 5
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.125
+            z: 0.0
+        # Trail thickness
+        size: 0.1
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:allay:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FF63F8FC'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80000000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 20
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.3
+            z: 0.0
+        # Trail thickness
+        size: 0.15
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:eye_of_ender:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FF6321A6'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80FF00D0'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 10
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.125
+            z: 0.0
+        # Trail thickness
+        size: 0.075
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:arrow:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#00000000'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80000000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 5
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+        # Trail thickness
+        size: 0.075
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:firework_rocket:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#80FFFFFF'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#FFFF0000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 15
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 1.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.25
+            z: 0.0
+        # Trail thickness
+        size: 0.075
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:small_fireball:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FFEBAA18'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80800000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 5
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.15
+            z: 0.0
+        # Trail thickness
+        size: 0.2
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:vex:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FF515F6D'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80000000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 20
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.4
+            z: 0.0
+        # Trail thickness
+        size: 0.15
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:spectral_arrow:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FFFFD505'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80000000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 10
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+        # Trail thickness
+        size: 0.075
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:potion:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#8AD1E2F4'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80000000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 5
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.15
+            z: 0.0
+        # Trail thickness
+        size: 0.085
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:trident:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FF00FFEA'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80000000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 10
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.0
+            z: 0.0
+        # Trail thickness
+        size: 0.05
+        # Frequency of trail point placement
+        updateFrequency: 1
+    minecraft:breeze_wind_charge:
+        # Position offset of the trail in the opposite direction from the player's standing point
+        backwardShift: 0.0
+        # Starting color of the trail in ARGB format
+        fadeInColor: '#FFE8ECFC'
+        # Ending color of the trail in ARGB format
+        fadeOutColor: '#80000000'
+        # Maximum trail length, measured in points that are placed every N ticks, where N is the value of updateFrequency
+        maxPoints: 10
+        # Minimum object movement speed to place trail points
+        minSpeed: 0.001
+        # Position offset of the trail in the opposite direction from the object's movement
+        motionShift: 0.0
+        # Position offset of the trail relative to the object in XYZ
+        positionOffset:
+            x: 0.0
+            y: 0.05
+            z: 0.0
+        # Trail thickness
+        size: 0.075
+        # Frequency of trail point placement
+        updateFrequency: 1
+# List of particle ID's that should have trail effect.
+particleTrails: {
+    }

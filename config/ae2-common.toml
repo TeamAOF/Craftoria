@@ -19,18 +19,12 @@
 	# Range: > -2147483648
 	formationPlaneEntityLimit = 128
 
-[facades]
-	#Unsupported: Allows whitelisting block entities as facades. Could work, have render issues, or corrupt your world. USE AT YOUR OWN RISK.
-	allowBlockEntities = false
-
 [craftingCPU]
 	# Default: 5
 	# Range: > -2147483648
 	craftingCalculationTimePerTick = 5
 
 [crafting]
-	#Enable shift-clicking with the crafting units in hand to disassemble them.
-	disassemblyCrafting = true
 	#Number of ticks between two crystal growth accelerator ticks
 	# Default: 10
 	# Range: 1 ~ 100
@@ -105,10 +99,6 @@
 	# Range: 4.9E-324 ~ 1.7976931348623157E308
 	wirelessTerminalDrainMultiplier = 1.0
 
-[portableCells]
-	#Allow disassembly of portable cells into the recipe ingredients using shift+right-click
-	allowDisassembly = true
-
 [powerRatios]
 	# Default: 0.5
 	# Range: 4.9E-324 ~ 1.7976931348623157E308
@@ -124,6 +114,14 @@
 	# Default: 20.0
 	# Range: 0.0 ~ 1000000.0
 	crystalResonanceGeneratorRate = 20.0
+	#The cost to transport energy through an energy P2P tunnel expressed as a factor of the transported energy.
+	# Default: 0.025
+	# Range: 0.0 ~ 1.0
+	p2pTunnelEnergyTax = 0.025
+	#The cost to transport items/fluids/etc. through P2P tunnels, expressed in AE energy per equivalent I/O bus operation for the transported object type (i.e. items=per 1 item, fluids=per 125mb).
+	# Default: 0.025
+	# Range: 0.0 ~ 1.0
+	p2pTunnelTransportTax = 0.025
 
 [condenser]
 	# Default: 256

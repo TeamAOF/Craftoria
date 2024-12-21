@@ -4,6 +4,8 @@
 	enableFacadesInRecipeViewer = false
 	#Show facade recipes in REI/JEI/EMI for supported blocks
 	enableFacadeRecipesInRecipeViewer = true
+	#Expose the full network inventory to EMI, which might cause performance problems.
+	provideNetworkInventoryToEmi = false
 
 [client]
 	enableEffects = true

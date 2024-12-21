@@ -251,8 +251,8 @@
 				id: "37128B9AA092A398"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: 1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["78EDBDED3BFEC145"]
@@ -283,7 +283,10 @@
 		{
 			dependencies: ["78EDBDED3BFEC145"]
 			icon: {
-				id: "croptopia:tea_leaves"
+				components: {
+					"ftbquests:missing_item": "croptopia:tea_leaves"
+				}
+				id: "ftbquests:missing_item"
 			}
 			id: "35885A1220BB34FC"
 			rewards: [{
@@ -300,6 +303,19 @@
 			}]
 			x: 0.0d
 			y: -2.25d
+		}
+		{
+			dependencies: ["78EDBDED3BFEC145"]
+			icon: {
+				id: "ars_nouveau:thread_sharp_paper"
+			}
+			id: "42F50CA00F913A46"
+			tasks: [{
+				id: "13B903DFDCAB1CD3"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
 		}
 	]
 }

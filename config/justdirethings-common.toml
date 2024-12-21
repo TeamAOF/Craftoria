@@ -223,6 +223,10 @@
 	tool_max_break_eclipsealloy = 256
 	#waterbreathing
 	waterbreathing = true
+	#polymorph_random
+	polymorph_random = true
+	#polymorph_target
+	polymorph_target = true
 
 #Goo settings
 [goo]
@@ -292,3 +296,30 @@
 	paradox_energy_max = 100.0
 	#Use a more restrictive data filtering for mobs cloned by the paradox machine. When enabled, most modded mobs may not work very well.  When disabled, theres a small chance of item dupe bugs.  Recommended to leave this set to false, and add any mobs that allow dupes to the paradox machines deny entity tag.
 	paradox_restricted_mobs = false
+
+#Polymorphic Wand
+[polymorphic_wand]
+	#The polymorphic fluid cost to use the polymorph wand
+	# Default: 100
+	# Range: > 1
+	polymorphic_wand_fluid_cost = 100
+	#The amount of fluid the Polymorphic Wand can hold
+	# Default: 2000
+	# Range: > 1
+	polymorphic_wand_max_fluid = 2000
+	#The FE cost to use the Advanced Polymorphic Wand
+	# Default: 50000
+	# Range: > 1
+	polymorphic_wand_v2_fe_cost = 50000
+	#The amount of FE the Advanced Polymorphic Wand can hold
+	# Default: 1000000
+	# Range: > 1
+	polymorphic_wand_v2_fe_capacity = 1000000
+	#The polymorphic fluid cost to use the Advanced Polymorphic Wand
+	# Default: 250
+	# Range: > 1
+	polymorphic_wand_v2_fluid_cost = 250
+	#The amount of fluid the Advanced Polymorphic Wand can hold
+	# Default: 8000
+	# Range: > 1
+	polymorphic_wand_v2_max_fluid = 8000

@@ -1,0 +1,20 @@
+#Should squids drop a Calamari item? Also disables villager trades for Calamari.
+squids_drop_calamari = true
+#Should villagers trade Rustic Delight items? (May reduce chances of other trades appearing)
+enable_villager_trades = true
+#Should the Wandering Trader sell Rustic Delight items?
+enable_wandering_trader_trades = true
+#Should players be able to brew Rustic Delight potions?
+enable_potions = true
+#Chance of generating clusters. Smaller value = more frequent. Provide zero to disable generation.
+# Default: 96
+# Range: > 0
+wild_cotton_chance = 96
+#Chance of generating clusters. Smaller value = more frequent. Provide zero to disable generation.
+# Default: 15
+# Range: > 0
+wild_bell_peppers_chance = 15
+#Chance of generating clusters. Smaller value = more frequent. Provide zero to disable generation.
+# Default: 15
+# Range: > 0
+wild_coffee_chance = 15

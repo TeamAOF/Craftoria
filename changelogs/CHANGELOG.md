@@ -1,3 +1,54 @@
+## Craftoria | v1.10.0
+
+_NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.10.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.10.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added a Skills System (Open by pressing the "K" keybind)
+* Added Trails that follow projectiles and entities, adding a dynamic layer of movement to the world around you.
+* Added Directional screen-shaking effects triggered by loud sounds, explosions, or swift movements. Not only does this intensify your sense of immersion, it also helps you pinpoint the origin of potential threats, enhancing both atmosphere and situational awareness.
+* Added the Replicator (MK II)
+* Added custom capes for Devs & Testers.
+* Made AE quantum armor recipes require mekasuit.
+* Disabled infested affix on mobs.
+* Added MoreRed Red Alloy Ingots in EI Alloy Smelter.
+* Disabled voltage prefix showing in MI machines.
+* Added sounds for EI machines.
+* Added info to spawner upgrade quests.
+* Lowered amount of Netherrack you get from MI gold drill (64 > 32).
+* Added Construction Sticks quests.
+* Added Rechiseled, Chipped and Chisel blocks to the stonecutter.
+* Added quest for info on skills system.
+* Improved loading times when joining a world by A LOT.
+* Added EMI info for Tesseract, MI Replicator (+ MK II), EI Processing Array, IO Multi-Processing Array & MI Overdrive Module.
+* Added quests for basic upgrade, redstone module and overdrive module.
+* Added Rechiseled compability to Chisel Reborn + Factory Blocks.
+* Made *any* logs create logs -> planks (and wood/stripped too) recipes in MI cutting machine & Mekanism sawmill.
+* Redesigned golems and added biome variants.
+
+### Bug Fixes 🪲
+
+* Fixed certain MI multiblock models using the wrong textures.
+* Fixed incorrect values in Mekanism tools config.
+* Fixed lag when picking up items first time.
+
+### Added Mods ✅
+
+  * [Applied Experienced](https://www.curseforge.com/minecraft/mc-mods/applied-experienced)
+  * [Atlas API](https://www.curseforge.com/minecraft/mc-mods/atlas-api)
+  * [CapeJS](https://www.curseforge.com/minecraft/mc-mods/capejs)
+  * [Construction Sticks](https://www.curseforge.com/minecraft/mc-mods/construction-sticks)
+  * [ExperienceLib](https://www.curseforge.com/minecraft/mc-mods/experiencelib)
+  * [Golems Refreshed](https://www.curseforge.com/minecraft/texture-packs/golems-refreshed)
+  * [Iron's Gems 'n Jewelry](https://www.curseforge.com/minecraft/mc-mods/irons-jewelry)
+  * [Loot Beams: Refork](https://www.curseforge.com/minecraft/mc-mods/loot-beams-refork)
+  * [Smithing Template Viewer for JEI/EMI](https://www.curseforge.com/minecraft/mc-mods/smithing-template-viewer)
+
+### Removed Mods ❌
+
+  * [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)
+---
+
 ## Craftoria | v1.9.0
 
 _NeoForge Loader 21.1.79_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.9.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.9.0.md)_

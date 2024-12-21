@@ -42,6 +42,10 @@
 	controllerMaxTotalItemCount = 256000
 	#True to use the configured controllerStackSize for all items, instead of the stack sizes provided by item type (such as 16 for ender pearls, 64 for iron ingot). WARNING: Setting this to false may have a negative impact on performance.
 	unlinkWormholeOnBreak = false
+	#The amount of stabilizers tier 4 in the stabilized storage actuator. (Don't auto change the recipe)
+	# Default: 7
+	# Range: > 0
+	stabilizedControllerStabilizers = 7
 
 #Spirit Job Settings
 [spirit_job]
