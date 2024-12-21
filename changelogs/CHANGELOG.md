@@ -2,6 +2,8 @@
 
 _NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.10.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.10.0.md)_
 
+## DISCLAIMER: Croptopia is replaced by the many Farmer's Delight addons in this update to make farming more consistent. Backup your worlds!
+
 ### Changes/Improvements ⭐
 
 * Added a Skills System (Open by pressing the "K" keybind)
@@ -34,19 +36,38 @@ _NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
 ### Added Mods ✅
 
-  * [Applied Experienced](https://www.curseforge.com/minecraft/mc-mods/applied-experienced)
+  * [AllTheLeaks (Memory Leak Fix)](https://www.curseforge.com/minecraft/mc-mods/alltheleaks)
   * [Atlas API](https://www.curseforge.com/minecraft/mc-mods/atlas-api)
+  * [AzureLib](https://www.curseforge.com/minecraft/mc-mods/azurelib)
+  * [Barbeque's Delight](https://www.curseforge.com/minecraft/mc-mods/barbeques-delight)
+  * [Bosses of Mass Destruction](https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction-forge)
   * [CapeJS](https://www.curseforge.com/minecraft/mc-mods/capejs)
+  * [CERBON's API](https://www.curseforge.com/minecraft/mc-mods/cerbons-api)
   * [Construction Sticks](https://www.curseforge.com/minecraft/mc-mods/construction-sticks)
-  * [ExperienceLib](https://www.curseforge.com/minecraft/mc-mods/experiencelib)
+  * [Crystal Chronicles](https://www.curseforge.com/minecraft/mc-mods/crystal-chronicles)
+  * [End's Delight](https://www.curseforge.com/minecraft/mc-mods/ends-delight)
+  * [Enhanced Celestials - Blood, Blue, & Harvest (Super) Moons](https://www.curseforge.com/minecraft/mc-mods/enhanced-celestials)
+  * [Fruits Delight](https://www.curseforge.com/minecraft/mc-mods/fruits-delight)
   * [Golems Refreshed](https://www.curseforge.com/minecraft/texture-packs/golems-refreshed)
   * [Iron's Gems 'n Jewelry](https://www.curseforge.com/minecraft/mc-mods/irons-jewelry)
   * [Loot Beams: Refork](https://www.curseforge.com/minecraft/mc-mods/loot-beams-refork)
+  * [My Nether's Delight](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight)
+  * [Perception](https://www.curseforge.com/minecraft/mc-mods/perception)
+  * [Pufferfish's Attributes](https://www.curseforge.com/minecraft/mc-mods/puffish-attributes)
+  * [Pufferfish's Skills](https://www.curseforge.com/minecraft/mc-mods/puffish-skills)
+  * [Rustic Delight](https://www.curseforge.com/minecraft/mc-mods/rustic-delight)
   * [Smithing Template Viewer for JEI/EMI](https://www.curseforge.com/minecraft/mc-mods/smithing-template-viewer)
+  * [Soulplied Energistics](https://www.curseforge.com/minecraft/mc-mods/soulplied-energistics)
+  * [Super Factory Manager ( SFM )](https://www.curseforge.com/minecraft/mc-mods/super-factory-manager)
+  * [Twilight's Flavors & Delight](https://www.curseforge.com/minecraft/mc-mods/twilights-flavors-delight)
 
 ### Removed Mods ❌
 
+  * [Cosmetic Armor Reworked](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-reworked)
+  * [Croptopia](https://www.curseforge.com/minecraft/mc-mods/croptopia)
+  * [Farmer's Croptopia](https://www.curseforge.com/minecraft/mc-mods/farmers-croptopia)
   * [Loot Journal](https://www.curseforge.com/minecraft/mc-mods/loot-journal-neoforge)
+  * [Nether's Exoticism](https://www.curseforge.com/minecraft/mc-mods/nethers-exoticism)
 ---
 
 ## Craftoria | v1.9.0
