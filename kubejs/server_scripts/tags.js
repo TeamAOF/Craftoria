@@ -45,6 +45,8 @@ ServerEvents.tags('item', (e) => {
       e.add(`chisel:${block}`, id);
     }
   });
+
+  e.add('c:farmersfood', ['@mynethersdelight', '@fruitsdelight', '@twilightdelight', '@ends_delight', '@barbequesdelight', '@rusticdelight', '@dumplings_delight', '@moredelight', '@oceansdelight', '@farmersdelight']);
 });
 
 ServerEvents.tags('block', (e) => {
