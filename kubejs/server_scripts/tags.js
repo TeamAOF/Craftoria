@@ -46,7 +46,7 @@ ServerEvents.tags('item', (e) => {
     }
   });
 
-  e.add('c:farmersfood', ['@mynethersdelight', '@fruitsdelight', '@twilightdelight', '@ends_delight', '@barbequesdelight', '@rusticdelight', '@dumplings_delight', '@moredelight', '@oceansdelight', '@farmersdelight']);
+  e.add('craftoria:farmersfood', ['@mynethersdelight', '@fruitsdelight', '@twilightdelight', '@ends_delight', '@barbequesdelight', '@rusticdelight', '@dumplings_delight', '@moredelight', '@oceansdelight', '@farmersdelight']);
 });
 
 ServerEvents.tags('block', (e) => {
