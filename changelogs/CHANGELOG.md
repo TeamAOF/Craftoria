@@ -1,3 +1,12 @@
+## Craftoria | v1.10.2
+
+_NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.10.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.10.2.md)_
+
+### Bug Fixes 🪲
+
+* Fixed FPS leak with arrows stuck in player model
+---
+
 ## Craftoria | v1.10.1
 
 _NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.10.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.10.1.md)_
