@@ -34,6 +34,7 @@ ServerEvents.generateData('last', (e) => {
     chiselBlocks[block].forEach((id) => {
       json.entries.push({item: id});
     });
+    json.entries.push({item: `minecraft:${block}`});
     e.json(`rechiseled:chiseling_recipes/${block}`, json);
     if (logging) {
       console.info(`Added ${block} to Rechiseled recipes`);
