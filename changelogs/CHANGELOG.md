@@ -14,6 +14,7 @@ World Tiers are unlocked by completing certain advancements, and activated in th
 ### Bug Fixes 🪲
 
 * Fixed tallow not dropping when using knives.
+* Fixed mimics missing artifacts loot table.
 
 ### Added Mods ✅
 
