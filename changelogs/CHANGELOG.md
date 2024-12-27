@@ -1,3 +1,32 @@
+## Craftoria | v1.11.0
+
+_NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.11.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.11.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added the World Tiers system, which gates content (Loot/Mob Drops) based on unlockable difficulty levels.
+As you progress through the world, you will unlock more difficult world tiers, which will give you access to better loot (and stronger enemies!)
+World Tiers are unlocked by completing certain advancements, and activated in the World Tier Select menu (opened with CTRL + T)
+* Added World Tiers quest to Getting Started chapter.
+* Turned EMI cheat mode off by default.
+* Added tag to search for all of farmers delight and addons.
+
+### Bug Fixes 🪲
+
+* Fixed tallow not dropping when using knives.
+
+### Added Mods ✅
+
+  * [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis)
+  * [Nirvana Library](https://www.curseforge.com/minecraft/mc-mods/nirvana-library)
+
+### Removed Mods ❌
+
+  * [AzureLib](https://www.curseforge.com/minecraft/mc-mods/azurelib)
+  * [Champions Unofficial](https://www.curseforge.com/minecraft/mc-mods/champions-unofficial)
+  * [Crystal Chronicles](https://www.curseforge.com/minecraft/mc-mods/crystal-chronicles)
+---
+
 ## Craftoria | v1.10.2
 
 _NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.10.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.10.2.md)_

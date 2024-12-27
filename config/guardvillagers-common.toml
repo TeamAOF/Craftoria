@@ -32,6 +32,9 @@
 	#This makes guards form a phalanx
 	"Have guards form a phalanx?" = true
 	"Allow the player to right click on bells to mass order guards to follow them?" = true
+	# Default: 1.0
+	# Range: -999.9000244140625 ~ 999.0
+	"Chance for guards to lose durability" = 1.0
 
 ["raids and illagers"]
 	#This makes Illagers run from polar bears, as anyone with common sense would.
@@ -62,3 +65,5 @@
 	#This will make it so villagers will only be converted into guards if the player has hero of the village
 	"Make it so players have to have hero of the village to convert villagers into guards?" = false
 	"Have it so blacksmiths heal golems under 60 health?" = true
+	#Professions that can be converted into guards
+	"Profession Whitelist for guard conversion" = ["nitwit", "none"]

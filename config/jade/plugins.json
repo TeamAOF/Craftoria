@@ -5,6 +5,7 @@
     "harvest_tool.show_unbreakable": false,
     "animal_owner": true,
     "harvest_tool.effective_tool": true,
+    "energy_storage.style": "PROGRESS_BAR",
     "item_storage": true,
     "item_storage.normal_amount": 9,
     "harvest_tool": true,
@@ -31,6 +32,7 @@
     "brewing_stand": true,
     "energy_storage.detailed": false,
     "note_block": true,
+    "fluid_storage.style": "PROGRESS_BAR",
     "beehive": true,
     "item_storage.detailed_amount": 54,
     "player_head": true,
@@ -120,9 +122,6 @@
     "framed_item_frame": true,
     "framed_block_generic": true
   },
-  "champions": {
-    "enable_affix_compact": true
-  },
   "jade_access": {
     "held_item": true,
     "sign": true,
@@ -137,6 +136,9 @@
     "redstone": true,
     "camo": true,
     "semiblock": true
+  },
+  "apotheosis": {
+    "adventure": true
   },
   "modern_industrialization": {
     "overclock": true,

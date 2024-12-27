@@ -47,6 +47,21 @@
 	# Default: 2
 	# Range: 0 ~ 100
 	explosionGrowth = 2
+	#The healthGrowth operation. Effect how health growth calculate (More info you can find here: https://minecraft.fandom.com/wiki/Attribute#Modifiers)
+	#Allowed Values: ADD_VALUE, ADD_MULTIPLIED_BASE, ADD_MULTIPLIED_TOTAL
+	maxHealthModifierOperation = "ADD_MULTIPLIED_TOTAL"
+	#The attackGrowth operation. Effect how attack growth calculate
+	#Allowed Values: ADD_VALUE, ADD_MULTIPLIED_BASE, ADD_MULTIPLIED_TOTAL
+	attackModifierOperation = "ADD_MULTIPLIED_TOTAL"
+	#The armorGrowth operation. Effect how armor growth calculate
+	#Allowed Values: ADD_VALUE, ADD_MULTIPLIED_BASE, ADD_MULTIPLIED_TOTAL
+	armorModifierOperation = "ADD_VALUE"
+	#The toughnessGrowth operation. Effect how toughness growth calculate
+	#Allowed Values: ADD_VALUE, ADD_MULTIPLIED_BASE, ADD_MULTIPLIED_TOTAL
+	armorToughnessModifierOperation = "ADD_VALUE"
+	#The knockbackResistanceGrowth operation. Effect how knockbackResistance growth calculate
+	#Allowed Values: ADD_VALUE, ADD_MULTIPLIED_BASE, ADD_MULTIPLIED_TOTAL
+	knockbackResistanceModifierOperation = "ADD_VALUE"
 
 [affixes]
 	#Set the maximum distance that mobs can use their targeted abilities from, 0 to disable
