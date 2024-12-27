@@ -22,7 +22,7 @@ ServerEvents.tags('item', (e) => {
   e.add('c:plastics', ['pneumaticcraft:plastic']);
 
   // Knives
-  e.add('occultism:tools/knife', '#c:tools/knives');
+  e.add('occultism:tools/knife', '#c:tools/knife');
 
   e.removeAll('apothic_enchanting:boon_drops');
 
