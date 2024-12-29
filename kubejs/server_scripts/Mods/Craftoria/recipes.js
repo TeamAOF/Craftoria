@@ -29,4 +29,6 @@ ServerEvents.recipes((e) => {
     p: 'minecraft:paper',
     s: '#c:slimeballs',
   }).id('craftoria:name_tag');
+
+  e.smelting('irons_spellbooks:mithril_scrap', 'irons_spellbooks:raw_mithril').xp(40).cookingTime(400).id('craftoria:irons/mithril_scrap_from_raw');
 });
