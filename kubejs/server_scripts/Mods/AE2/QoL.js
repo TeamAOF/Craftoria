@@ -174,4 +174,10 @@ ServerEvents.recipes((event) => {
     ],
     ['extendedae:circuit_cutter', 1]
   );
+
+  event.shapeless('4x ae2:crafting_accelerator', 'bigger_ae2:4_core_crafting_accelerator');
+  event.shapeless('4x bigger_ae2:4_core_crafting_accelerator', 'bigger_ae2:16_core_crafting_accelerator');
+  event.shapeless('4x bigger_ae2:16_core_crafting_accelerator', 'bigger_ae2:64_core_crafting_accelerator');
+  event.shapeless('4x bigger_ae2:64_core_crafting_accelerator', 'bigger_ae2:256_core_crafting_accelerator');
+  event.shapeless('4x bigger_ae2:256_core_crafting_accelerator', 'bigger_ae2:1024_core_crafting_accelerator');
 });
