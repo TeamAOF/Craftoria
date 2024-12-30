@@ -7,6 +7,138 @@
 		id: "craftoria:completionist"
 	}
 	id: "0CF7A598566497C7"
+	images: [
+		{
+			height: 4.0d
+			image: "relics:textures/gui/description/general/tab.png"
+			order: -1
+			rotation: 0.0d
+			width: 4.0d
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			height: 2.15d
+			image: "modern_industrialization:item/singularity"
+			rotation: 0.0d
+			width: 2.15d
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			height: 2.0d
+			image: "ae2:block/controller_lights"
+			rotation: 0.0d
+			width: 2.0d
+			x: -1.9999999999999982d
+			y: 0.5d
+		}
+		{
+			height: 2.5d
+			image: "mekanism:ctm/thermal_evaporation_controller_on_led"
+			rotation: 0.0d
+			width: 2.5d
+			x: 5.0d
+			y: 0.5d
+		}
+		{
+			height: 2.5d
+			image: "powah:item/charged_snowball"
+			rotation: 0.0d
+			width: 2.5d
+			x: 6.5d
+			y: 2.5d
+		}
+		{
+			height: 2.5d
+			image: "extended_industrialization:block/machines/large_macerator/overlay_front_active"
+			rotation: 0.0d
+			width: 2.5d
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			height: 2.15d
+			image: "relics:item/space_dissector"
+			rotation: 0.0d
+			width: 2.15d
+			x: -3.5d
+			y: 5.45d
+		}
+		{
+			height: 1.5d
+			image: "ars_nouveau:block/fire_1"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.79d
+			y: 7.5d
+		}
+		{
+			height: 3.25d
+			image: "irons_spellbooks:item/upgrade_orb_lightning"
+			rotation: 0.0d
+			width: 3.25d
+			x: 6.35d
+			y: 5.15d
+		}
+		{
+			height: 2.0d
+			image: "occultism:block/spirit_campfire_fire"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			height: 3.75d
+			image: "irons_spellbooks:item/upgrade_orb_swirl"
+			rotation: 0.0d
+			width: 3.75d
+			x: 1.4d
+			y: 8.4d
+		}
+		{
+			height: 1.5d
+			image: "ars_nouveau:block/fire_1"
+			rotation: 180.0d
+			width: 1.5d
+			x: -1.79d
+			y: 8.25d
+		}
+		{
+			height: 2.0d
+			image: "occultism:block/spirit_campfire_fire"
+			rotation: 180.0d
+			width: 2.0d
+			x: 4.5d
+			y: 8.25d
+		}
+		{
+			height: 4.0d
+			image: "relics:textures/gui/description/general/tab.png"
+			order: -1
+			rotation: 180.0d
+			width: 4.0d
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			height: 2.55d
+			image: "appflux:item/charged_redstone"
+			rotation: 0.0d
+			width: 2.85d
+			x: 0.5d
+			y: -0.4500000000000002d
+		}
+		{
+			height: 15.0d
+			image: "twilightforest:textures/magic_paintings/the_hostile_paradise/13_frame.png"
+			rotation: 0.0d
+			width: 25.0d
+			x: 1.5d
+			y: 4.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -24,12 +156,15 @@
 				"375B2C2D89889153"
 				"1F0B8A0EBCBA4399"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: {
 				components: {
 					"trofers:trophy": "trofers:completionist"
 				}
 				id: "trofers:large_plate"
 			}
+			icon_scale: 2.0d
 			id: "300F6868FC217C55"
 			rewards: [
 				{
@@ -53,13 +188,13 @@
 				}
 			]
 			shape: "diamond"
-			size: 5.0d
+			size: 2.5d
 			tasks: [{
 				id: "029B80BE103230CD"
 				type: "checkmark"
 			}]
-			x: 2.5d
-			y: -2.5d
+			x: 1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -194,7 +329,7 @@
 			icon_scale: 1.25d
 			id: "02AE5771A57BC6BE"
 			rewards: [{
-				id: "1BE3B2F858973057"
+				id: "738F1F1938CE61E9"
 				item: {
 					components: {
 						"trofers:trophy": "trofers:applied_energistics"
@@ -205,13 +340,13 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 2.5d
+			size: 1.8d
 			tasks: [{
 				id: "752A63BD14A38E85"
 				type: "checkmark"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: -2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -282,25 +417,14 @@
 			}
 			icon_scale: 1.25d
 			id: "5FCE0573AA70913A"
-			rewards: [{
-				id: "402DABD96A1CD300"
-				item: {
-					components: {
-						"trofers:trophy": "trofers:justdirethings"
-					}
-					count: 1
-					id: "trofers:medium_pillar"
-				}
-				type: "item"
-			}]
 			shape: "gear"
-			size: 2.5d
+			size: 1.8d
 			tasks: [{
 				id: "472C8EE4AE6F4ED2"
 				type: "checkmark"
 			}]
-			x: 1.25d
-			y: 1.25d
+			x: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -481,25 +605,14 @@
 			}
 			icon_scale: 1.25d
 			id: "15D18F5637F6382E"
-			rewards: [{
-				id: "7E8EE7CBF35CFBD4"
-				item: {
-					components: {
-						"trofers:trophy": "trofers:mekanism"
-					}
-					count: 1
-					id: "trofers:medium_pillar"
-				}
-				type: "item"
-			}]
 			shape: "gear"
-			size: 2.5d
+			size: 1.8d
 			tasks: [{
 				id: "44CE789BDE1EFCB1"
 				type: "checkmark"
 			}]
-			x: 6.25d
-			y: 0.0d
+			x: 5.0d
+			y: 0.5500000000000007d
 		}
 		{
 			dependencies: [
@@ -515,25 +628,14 @@
 			}
 			icon_scale: 1.25d
 			id: "3288EB24E412AF9A"
-			rewards: [{
-				id: "21A084A418F9B3F3"
-				item: {
-					components: {
-						"trofers:trophy": "trofers:modern_industrialization"
-					}
-					count: 1
-					id: "trofers:medium_pillar"
-				}
-				type: "item"
-			}]
 			shape: "gear"
-			size: 2.5d
+			size: 1.8d
 			tasks: [{
 				id: "6C0BB72F6382FE4F"
 				type: "checkmark"
 			}]
-			x: -1.25d
-			y: 0.0d
+			x: 2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -587,25 +689,14 @@
 			}
 			icon_scale: 1.25d
 			id: "6F07EDE7A819467B"
-			rewards: [{
-				id: "5CE30E4A0319E400"
-				item: {
-					components: {
-						"trofers:trophy": "trofers:powah"
-					}
-					count: 1
-					id: "trofers:medium_pillar"
-				}
-				type: "item"
-			}]
 			shape: "gear"
-			size: 2.5d
+			size: 1.8d
 			tasks: [{
 				id: "79794A87CBA37582"
 				type: "checkmark"
 			}]
-			x: 3.75d
-			y: 1.25d
+			x: 6.5d
+			y: 2.53d
 		}
 		{
 			dependencies: [
@@ -663,25 +754,14 @@
 			}
 			icon_scale: 1.25d
 			id: "7ED9955750255A69"
-			rewards: [{
-				id: "7C157238DA0D3F3E"
-				item: {
-					components: {
-						"trofers:trophy": "trofers:ars_nouveau"
-					}
-					count: 1
-					id: "trofers:medium_pillar"
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
-			size: 2.5d
+			size: 1.8d
 			tasks: [{
 				id: "15ED212071C6CAF0"
 				type: "checkmark"
 			}]
-			x: 7.5d
-			y: -5.0d
+			x: -1.7999999999999998d
+			y: 7.85d
 		}
 		{
 			dependencies: [
@@ -766,25 +846,14 @@
 			}
 			icon_scale: 1.25d
 			id: "157239360F696AF7"
-			rewards: [{
-				id: "3EFC2B1DE61805D1"
-				item: {
-					components: {
-						"trofers:trophy": "trofers:occultism"
-					}
-					count: 1
-					id: "trofers:medium_pillar"
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
-			size: 2.5d
+			size: 1.8d
 			tasks: [{
 				id: "559E1439EDFA2BA9"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: -5.0d
+			x: 4.5d
+			y: 7.85d
 		}
 		{
 			dependencies: [
@@ -830,25 +899,14 @@
 			}
 			icon_scale: 1.25d
 			id: "3E9D2DA07E8617EA"
-			rewards: [{
-				id: "4D81C1575973C085"
-				item: {
-					components: {
-						"trofers:trophy": "trofers:theurgy"
-					}
-					count: 1
-					id: "trofers:medium_pillar"
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
-			size: 2.5d
+			size: 1.8d
 			tasks: [{
 				id: "6B6E82D0312A8705"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: -6.25d
+			x: 1.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -937,25 +995,14 @@
 			}
 			icon_scale: 1.25d
 			id: "375B2C2D89889153"
-			rewards: [{
-				id: "7DDD067208F1DBB5"
-				item: {
-					components: {
-						"trofers:trophy": "trofers:pnc"
-					}
-					count: 1
-					id: "trofers:medium_pillar"
-				}
-				type: "item"
-			}]
 			shape: "gear"
-			size: 2.5d
+			size: 1.8d
 			tasks: [{
 				id: "00CA3CB10A03DF62"
 				type: "checkmark"
 			}]
-			x: -2.5d
-			y: -2.5d
+			x: -3.4899999999999998d
+			y: 2.5199999999999996d
 		}
 		{
 			dependencies: [
@@ -1040,32 +1087,14 @@
 			}
 			icon_scale: 1.25d
 			id: "739D2E03341174B1"
-			rewards: [
-				{
-					id: "478D9083B357855E"
-					item: {
-						components: {
-							"trofers:trophy": "trofers:relics"
-						}
-						count: 1
-						id: "trofers:medium_pillar"
-					}
-					type: "item"
-				}
-				{
-					id: "281FE34AEB48C1F9"
-					type: "xp_levels"
-					xp_levels: 50
-				}
-			]
 			shape: "hexagon"
-			size: 2.5d
+			size: 1.8d
 			tasks: [{
 				id: "6BD239D70099FED0"
 				type: "checkmark"
 			}]
-			x: 5.0d
-			y: -6.25d
+			x: -3.48d
+			y: 5.3999999999999995d
 		}
 		{
 			dependencies: [
@@ -1170,25 +1199,14 @@
 			}
 			icon_scale: 1.25d
 			id: "1F0B8A0EBCBA4399"
-			rewards: [{
-				id: "7EB195D4E2E3A90C"
-				item: {
-					components: {
-						"trofers:trophy": "trofers:irons"
-					}
-					count: 1
-					id: "trofers:medium_pillar"
-				}
-				type: "item"
-			}]
 			shape: "hexagon"
-			size: 2.5d
+			size: 1.8d
 			tasks: [{
 				id: "256831387C82AA19"
 				type: "checkmark"
 			}]
-			x: 2.5d
-			y: -7.5d
+			x: 6.5d
+			y: 5.3999999999999995d
 		}
 	]
 }
