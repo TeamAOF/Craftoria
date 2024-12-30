@@ -3,12 +3,12 @@
 		"eternalNighttime": true,
 		"experienceDrop": 1500,
 		"idleHealingPerTick": 0.20000000298023224,
-		"health": 300.0,
+		"health": 500.0,
 		"missile": {
-			"mobEffectId": "minecraft:slowness",
-			"mobEffectDuration": 100,
-			"mobEffectAmplifier": 2,
-			"damage": 9.0
+			"statusEffectId": "minecraft:slowness",
+			"statusEffectDuration": 100,
+			"statusEffectPotency": 2,
+			"damage": 15.0
 		},
 		"comet": {
 			"explosionStrength": 4.0
@@ -16,47 +16,47 @@
 		"summonMechanic": {
 			"isEnabled": true,
 			"entitiesThatCountToSummonCounter": [
+				"minecraft:zombie",
 				"minecraft:skeleton",
+				"minecraft:drowned",
 				"minecraft:giant",
-				"minecraft:phantom",
-				"minecraft:zoglin",
-				"minecraft:zombified_piglin",
-				"minecraft:wither_skeleton",
 				"minecraft:husk",
+				"minecraft:phantom",
 				"minecraft:skeleton_horse",
 				"minecraft:stray",
-				"minecraft:zombie_horse",
-				"minecraft:zombie",
-				"minecraft:drowned",
 				"minecraft:wither",
-				"minecraft:zombie_villager"
+				"minecraft:wither_skeleton",
+				"minecraft:zoglin",
+				"minecraft:zombie_horse",
+				"minecraft:zombie_villager",
+				"minecraft:zombified_piglin"
 			],
 			"numEntitiesKilledToDropSoulStar": 50
 		}
 	},
 	"obsidilithConfig": {
-		"health": 300.0,
-		"armor": 14.0,
-		"attack": 16.0,
-		"idleHealingPerTick": 0.5,
+		"health": 450.0,
+		"armor": 17.0,
+		"attack": 20.0,
+		"idleHealingPerTick": 0.6000000238418579,
 		"experienceDrop": 1000,
 		"spawnPillarOnDeath": true,
 		"anvilAttackExplosionStrength": 4.0
 	},
 	"gauntletConfig": {
-		"health": 250.0,
-		"armor": 8.0,
-		"attack": 16.0,
-		"idleHealingPerTick": 0.5,
+		"health": 400.0,
+		"armor": 11.0,
+		"attack": 20.0,
+		"idleHealingPerTick": 0.6000000238418579,
 		"experienceDrop": 1000,
 		"spawnAncientDebrisOnDeath": true,
 		"energizedPunchExplosionSize": 4.5,
 		"normalPunchExplosionMultiplier": 1.5
 	},
 	"voidBlossomConfig": {
-		"health": 350.0,
-		"armor": 4.0,
-		"attack": 12.0,
+		"health": 550.0,
+		"armor": 6.0,
+		"attack": 20.0,
 		"idleHealingPerTick": 0.5,
 		"experienceDrop": 1000
 	},
