@@ -4,7 +4,7 @@
 
 [expulsion_pylon]
 	#Which dimensions the Expulsion Pylon is allowed to operate in.
-	expulsionAllowedDimensions = ["minecraft:overworld"]
+	expulsionAllowedDimensions = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end", "twilightforest:twilight_forest", "eternal_starlight:starlight", "javd:void"]
 	#The radius around the world spawn where the pylon is not allowed to operate.
 	#By default this uses the world spawn radius (/gamerule spawnRadius).
 	#This config will only take effect if it is larger than the world spawn radius.
