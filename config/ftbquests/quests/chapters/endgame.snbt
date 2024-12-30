@@ -1,0 +1,109 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "endgame"
+	group: ""
+	icon: {
+		id: "craftoria:eternal"
+	}
+	id: "2E72024B18414A17"
+	images: [
+		{
+			height: 6.0d
+			image: "relics:textures/abilities/phantom_boot/bridge.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 3.5d
+			image: "ftbquests:textures/gui/boss_rush_title.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -0.1d
+			y: -4.2d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0578945AE9664476"
+				"10534DA1BD464834"
+				"2B41DC5E4D733C9C"
+				"3F146A658E5A01F3"
+			]
+			icon: {
+				components: {
+					"gateways:gateway": "craftoria:endless/boss"
+				}
+				id: "gateways:gate_pearl"
+			}
+			icon_scale: 1.25d
+			id: "7A73A6CC630BAA3F"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "308B9266BA486383"
+				item: { components: { "gateways:gateway": "craftoria:endless/boss" }, count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon_scale: 1.25d
+			id: "0578945AE9664476"
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "4A43020AC5C525CD"
+				item: { count: 1, id: "craftoria:ice_essence" }
+				type: "item"
+			}]
+			x: 1.875d
+			y: -1.875d
+		}
+		{
+			icon_scale: 1.25d
+			id: "10534DA1BD464834"
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "0EB93EC3D4EA3B10"
+				item: { count: 1, id: "craftoria:fire_essence" }
+				type: "item"
+			}]
+			x: -1.875d
+			y: -1.875d
+		}
+		{
+			icon_scale: 1.25d
+			id: "3F146A658E5A01F3"
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "524EA476E025E175"
+				item: { count: 1, id: "craftoria:nature_essence" }
+				type: "item"
+			}]
+			x: -1.875d
+			y: 1.875d
+		}
+		{
+			icon_scale: 1.25d
+			id: "2B41DC5E4D733C9C"
+			shape: "octagon"
+			size: 1.25d
+			tasks: [{
+				id: "3D0E96EF9F24002D"
+				item: { count: 1, id: "craftoria:dark_essence" }
+				type: "item"
+			}]
+			x: 1.875d
+			y: 1.875d
+		}
+	]
+}
