@@ -46,7 +46,18 @@ ServerEvents.tags('item', (e) => {
     }
   });
 
-  e.add('craftoria:farmersfood', ['@mynethersdelight', '@fruitsdelight', '@twilightdelight', '@ends_delight', '@barbequesdelight', '@rusticdelight', '@dumplings_delight', '@moredelight', '@oceansdelight', '@farmersdelight']);
+  e.add('craftoria:farmersfood', [
+    '@mynethersdelight',
+    '@fruitsdelight',
+    '@twilightdelight',
+    '@ends_delight',
+    '@barbequesdelight',
+    '@rusticdelight',
+    '@dumplings_delight',
+    '@moredelight',
+    '@oceansdelight',
+    '@farmersdelight',
+  ]);
 });
 
 ServerEvents.tags('block', (e) => {
@@ -83,6 +94,7 @@ ServerEvents.tags('block', (e) => {
     'mekanism:diversion_transporter',
     'mekanism:restrictive_transporter',
     '#c:skulls',
+    '@glassential',
   ]);
 
   e.add('minecraft:mineable/axe', ['mekanism:cardboard_box']);
