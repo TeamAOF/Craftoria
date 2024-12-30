@@ -6,4 +6,10 @@ StartupEvents.registry('item', (e) => {
   ['Helmet', 'Chestplate', 'Leggings', 'Boots', 'Sword'].forEach((mold) => {
     e.create(`craftoria:quantum_${mold.toLowerCase()}_mold`).displayName(`${mold} Mold`).maxStackSize(1);
   });
+
+  // Custom
+  e.create('craftoria:ice_essence').displayName('§bEssence of Ice').tooltip('');
+  e.create('craftoria:fire_essence').displayName('§6Essence of Fire').tooltip('');
+  e.create('craftoria:nature_essence').displayName('§2Essence of Nature').tooltip('');
+  e.create('craftoria:dark_essence').displayName('§5Essence of Darkness').tooltip('');
 });
