@@ -456,6 +456,14 @@
 			x: -8.1d
 			y: 0.0d
 		}
+		{
+			height: 6.0d
+			image: "ars_nouveau:block/source_gem_block"
+			rotation: 0.0d
+			width: 6.0d
+			x: -2.5d
+			y: 5.5d
+		}
 	]
 	order_index: 4
 	quest_links: [ ]
@@ -1207,6 +1215,226 @@
 			}]
 			x: 4.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["5F46E1D3938F5F2A"]
+			icon: {
+				id: "ars_nouveau:arcanist_robes"
+			}
+			id: "12094D44D2E3DB16"
+			tasks: [
+				{
+					id: "1D97EC1FB37F9D99"
+					item: { count: 1, id: "ars_nouveau:arcanist_hood" }
+					type: "item"
+				}
+				{
+					id: "3425333E8092FF5E"
+					item: { count: 1, id: "ars_nouveau:arcanist_robes" }
+					type: "item"
+				}
+				{
+					id: "43FB74BCD4B0CE3A"
+					item: { count: 1, id: "ars_nouveau:arcanist_leggings" }
+					type: "item"
+				}
+				{
+					id: "6EB53CF73B61310D"
+					item: { count: 1, id: "ars_nouveau:arcanist_boots" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5F46E1D3938F5F2A"]
+			icon: {
+				id: "ars_nouveau:battlemage_robes"
+			}
+			id: "6C7789B56E50B6F1"
+			tasks: [
+				{
+					id: "117CC506D53A3AB7"
+					item: { count: 1, id: "ars_nouveau:battlemage_hood" }
+					type: "item"
+				}
+				{
+					id: "68458272FA099409"
+					item: { count: 1, id: "ars_nouveau:battlemage_robes" }
+					type: "item"
+				}
+				{
+					id: "23C6178387322917"
+					item: { count: 1, id: "ars_nouveau:battlemage_leggings" }
+					type: "item"
+				}
+				{
+					id: "0B1F39D2835C20ED"
+					item: { count: 1, id: "ars_nouveau:battlemage_boots" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5F46E1D3938F5F2A"]
+			icon: {
+				id: "ars_nouveau:sorcerer_robes"
+			}
+			id: "56079AB13D721BC7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1A33A95FF6D9DD8E"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "0EEC7FB971FF5B84"
+					item: { count: 1, id: "ars_nouveau:sorcerer_leggings" }
+					type: "item"
+				}
+				{
+					id: "2CA8C13A8E141C1B"
+					item: { count: 1, id: "ars_nouveau:sorcerer_robes" }
+					type: "item"
+				}
+				{
+					id: "490E3397EDA1D2F5"
+					item: { count: 1, id: "ars_nouveau:sorcerer_hood" }
+					type: "item"
+				}
+				{
+					id: "1501029E87FD70D0"
+					item: { count: 1, id: "ars_nouveau:sorcerer_boots" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5F46E1D3938F5F2A"]
+			icon: {
+				id: "ars_nouveau:belt_of_levitation"
+			}
+			id: "5D92326B02E9DC0F"
+			tasks: [
+				{
+					id: "3B049E7F19FF079F"
+					item: { count: 1, id: "ars_nouveau:belt_of_levitation" }
+					type: "item"
+				}
+				{
+					id: "36E14E02CD07AD8E"
+					item: { count: 1, id: "ars_nouveau:belt_of_unstable_gifts" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5F46E1D3938F5F2A"]
+			icon: {
+				id: "ars_nouveau:enchanters_sword"
+			}
+			id: "3FB60EC2EE4D0435"
+			tasks: [
+				{
+					id: "5380C3756FE34AF2"
+					item: { count: 1, id: "ars_nouveau:wand" }
+					type: "item"
+				}
+				{
+					id: "7FF76487B470F0EB"
+					item: { count: 1, id: "ars_nouveau:enchanters_sword" }
+					type: "item"
+				}
+				{
+					id: "71E1A28B34CBBC7B"
+					item: { count: 1, id: "ars_nouveau:enchanters_shield" }
+					type: "item"
+				}
+				{
+					id: "2A53B6470D65DE64"
+					item: { count: 1, id: "ars_nouveau:enchanters_mirror" }
+					type: "item"
+				}
+				{
+					id: "1D50D161C9B75753"
+					item: { count: 1, id: "ars_nouveau:enchanters_eye" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5F46E1D3938F5F2A"]
+			id: "12CFAFA1E247D888"
+			tasks: [
+				{
+					id: "42E521A8ED24EBC0"
+					item: { count: 1, id: "ars_nouveau:ring_of_lesser_discount" }
+					type: "item"
+				}
+				{
+					id: "482502D494A39CB3"
+					item: { count: 1, id: "ars_nouveau:ring_of_greater_discount" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["5F46E1D3938F5F2A"]
+			id: "398180C630A384CA"
+			tasks: [
+				{
+					id: "41FD17D0983799F8"
+					item: { count: 1, id: "ars_nouveau:spell_bow" }
+					type: "item"
+				}
+				{
+					id: "7AD997125FAEA83C"
+					item: { count: 1, id: "ars_nouveau:spell_crossbow" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			hide_dependent_lines: true
+			id: "5F46E1D3938F5F2A"
+			tasks: [{
+				id: "7BB9F7B0291400BB"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5F46E1D3938F5F2A"]
+			id: "35853F056E2B6E69"
+			tasks: [
+				{
+					id: "3904ABDE08ECDC45"
+					item: { count: 1, id: "ars_nouveau:amulet_of_mana_boost" }
+					type: "item"
+				}
+				{
+					id: "0AF5585E99B7ECF7"
+					item: { count: 1, id: "ars_nouveau:amulet_of_mana_regen" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 7.0d
 		}
 	]
 }
