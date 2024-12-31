@@ -5,4 +5,12 @@ ServerEvents.recipes(event => {
     'craftoria:nature_essence',
     'craftoria:dark_essence'
   ])
+
+  // Radonium
+  event.recipes.actuallyadditions.empowering(Item.of('craftoria:cosmic_matter'), 'advanced_ae:quantum_alloy', [
+    'mekanism_extras:alloy_spectrum',
+    'modern_industrialization:singularity',
+    'mekanism_extras:alloy_spectrum',
+    'modern_industrialization:singularity'
+  ])
 })
