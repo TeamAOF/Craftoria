@@ -4,7 +4,7 @@
 	filename: "endgame"
 	group: ""
 	icon: {
-		id: "craftoria:eternal"
+		id: "mekanism_extras:alloy_spectrum"
 	}
 	id: "2E72024B18414A17"
 	images: [
@@ -24,6 +24,46 @@
 			x: -0.1d
 			y: -4.2d
 		}
+		{
+			height: 2.0d
+			image: "ftbquests:textures/gui/cosmic_title.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			height: 13.0d
+			image: "twilightforest:textures/magic_paintings/lucid_lands/frame.png"
+			rotation: 0.0d
+			width: 18.0d
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			height: 6.0d
+			image: "mekanism_extras:block/models/multipart/cosmic_logistical_transporter"
+			rotation: 0.0d
+			width: 6.0d
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "mekanism_extras:block/models/multipart/cosmic_logistical_transporter"
+			rotation: 0.0d
+			width: 3.0d
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			height: 7.5d
+			image: "pneumaticcraft:item/upgrades/upgrade_frame_4"
+			rotation: 0.0d
+			width: 7.5d
+			x: 7.0d
+			y: 0.0d
+		}
 	]
 	order_index: 2
 	quest_links: [ ]
@@ -41,7 +81,7 @@
 				}
 				id: "gateways:gate_pearl"
 			}
-			icon_scale: 1.25d
+			icon_scale: 1.5d
 			id: "7A73A6CC630BAA3F"
 			shape: "diamond"
 			size: 2.0d
@@ -104,6 +144,77 @@
 			}]
 			x: 1.875d
 			y: 1.875d
+		}
+		{
+			dependencies: [
+				"1ED5B7234F281C2E"
+				"4146E345FC6AAB2B"
+				"3B087D3FA0B7474B"
+				"4F891C5403AA6A5A"
+			]
+			icon_scale: 1.5d
+			id: "59FD22A238BC0378"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "330C416FCE98EA61"
+				item: { count: 1, id: "craftoria:cosmic_injector" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			icon_scale: 1.5d
+			id: "4146E345FC6AAB2B"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "1A64DE105275E314"
+				item: { count: 1, id: "mekanism_extras:alloy_spectrum" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.875d
+		}
+		{
+			icon_scale: 1.5d
+			id: "1ED5B7234F281C2E"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "2FFDBFE0D6E30704"
+				item: { count: 1, id: "mekanism_extras:alloy_spectrum" }
+				type: "item"
+			}]
+			x: 8.75d
+			y: 1.875d
+		}
+		{
+			icon_scale: 1.5d
+			id: "4F891C5403AA6A5A"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "0BFCCD6A6831FBD2"
+				item: { count: 1, id: "modern_industrialization:singularity" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.875d
+		}
+		{
+			icon_scale: 1.5d
+			id: "3B087D3FA0B7474B"
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "190CD07784160C82"
+				item: { count: 1, id: "modern_industrialization:singularity" }
+				type: "item"
+			}]
+			x: 8.75d
+			y: -1.875d
 		}
 	]
 }
