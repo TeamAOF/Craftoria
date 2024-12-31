@@ -14,4 +14,7 @@ StartupEvents.registry('item', (e) => {
   e.create('craftoria:dark_essence').displayName('§5Essence of Darkness').tooltip('Dropped by the Apothic Obsidilith');
 
   e.create('craftoria:eternal').displayName('§5Eternal').rarity('Epic');
+  e.create('craftoria:radonium').displayName('§aRadonium');
+  e.create('craftoria:cosmic_matter').displayName('§dCosmic Matter').rarity('Epic');
+  e.create('craftoria:cosmic_injector').displayName('§dCosmic Injector').rarity('Epic');
 });
