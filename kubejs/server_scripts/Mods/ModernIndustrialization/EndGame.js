@@ -10,7 +10,7 @@ ServerEvents.recipes((e) => {
       ['modern_industrialization:quantum_circuit', 4],
       ['modern_industrialization:quantum_tank', 4],
       ['modern_industrialization:quantum_barrel', 4],
-      ['mekanism:pellet_antimatter', 16],
+      ['craftoria:cosmic_injector', 1],
     ],
     ['modern_industrialization:replicator', 1],
     1000000,
