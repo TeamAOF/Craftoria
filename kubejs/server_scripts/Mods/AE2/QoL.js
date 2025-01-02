@@ -176,7 +176,7 @@ ServerEvents.recipes((event) => {
     ['extendedae:circuit_cutter', 1]
   );
 
-  exCutter(event, '1x craftoria:1x_compressed_iron_block', 'craftoria:universal_press');
+  exCutter(event, '1x craftoria:1x_compressed_iron_block', '1x craftoria:universal_press');
 
   event.shapeless('4x ae2:crafting_accelerator', 'bigger_ae2:4_core_crafting_accelerator');
   event.shapeless('4x bigger_ae2:4_core_crafting_accelerator', 'bigger_ae2:16_core_crafting_accelerator');
