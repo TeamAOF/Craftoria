@@ -156,7 +156,7 @@ ServerEvents.recipes((event) => {
       ['ae2:logic_processor_press', 1],
       ['ae2:silicon_press', 1],
       ['extendedae:concurrent_processor_press', 1],
-      ['advancedae:quantum_processor_press', 1],
+      ['advanced_ae:quantum_processor_press', 1],
       ['megacells:accumulation_processor_press', 1],
       ['appflux:energy_processor_press', 1],
     ],
