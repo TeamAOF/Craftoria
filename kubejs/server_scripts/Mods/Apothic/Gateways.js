@@ -129,4 +129,47 @@ ServerEvents.generateData('after_mods', (e) => {
     },
     spawn_algorithm: 'gateways:inward_spiral',
   });
+
+  e.json('craftoria:gateways/bomd', {
+    size: 'large',
+    color: 'rainbow',
+    waves: [
+      {
+        entities: [
+          {
+            entity: 'bosses_of_mass_destruction:lich',
+          },
+        ],
+        max_wave_time: 20 * 60,
+        setup_time: 20 * 5,
+      },
+      {
+        entities: [
+          {
+            entity: 'bosses_of_mass_destruction:obsidilith',
+          },
+        ],
+        max_wave_time: 20 * 60,
+        setup_time: 20 * 5,
+      },
+      {
+        entities: [
+          {
+            entity: 'bosses_of_mass_destruction:gauntlet',
+          },
+        ],
+        max_wave_time: 20 * 60,
+        setup_time: 20 * 5,
+      },
+      {
+        entities: [
+          {
+            entity: 'bosses_of_mass_destruction:void_blossom',
+          },
+        ],
+        max_wave_time: 20 * 60,
+        setup_time: 20 * 5,
+      },
+    ],
+  });
 });
