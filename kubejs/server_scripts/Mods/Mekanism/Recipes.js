@@ -121,6 +121,8 @@ ServerEvents.recipes((e) => {
   chem_infuser('400x mekanism:uranium_hexafluoride', '399x mekanism:hydrofluoric_acid', '1x craftoria:plutonium_oxide');
 
   // Shaped
+
+  // Cardboard Box
   e.shaped('mekanism:cardboard_box', [
     'A A',
     'ACA',
@@ -130,4 +132,46 @@ ServerEvents.recipes((e) => {
     B: 'sophisticatedstorage:packing_tape',
     C: '#c:plastics'
   }).id('mekanism:cardboard_box');
+
+  // MekaSuit / Weapons
+  e.shaped('mekaweapons:katana_blade', [
+    '  B',
+    'CB ',
+    'AC '
+  ], {
+    A: '#c:ingots/steel',
+    B: 'mekanism:ingot_refined_obsidian',
+    C: 'mekanism_extras:alloy_shining'
+  }).id('mekaweapons:katana_blade');
+
+  e.shaped('mekaweapons:bow_riser', [
+    'DAD',
+    'BCB'
+  ], {
+    A: '#c:ingots/steel',
+    B: 'mekanism:ingot_refined_obsidian',
+    C: 'mekanism_extras:alloy_shining',
+    D: 'mekanism_extras:cosmic_control_circuit'
+  }).id('mekaweapons:bow_riser');
+
+  e.replaceInput(
+    { id: 'mekanism:mekasuit_helmet'},
+    'mekanism:ultimate_control_circuit',
+    'mekanism_extras:cosmic_control_circuit'
+  )
+  e.replaceInput(
+    { id: 'mekanism:mekasuit_bodyarmor'},
+    'mekanism:ultimate_control_circuit',
+    'mekanism_extras:cosmic_control_circuit'
+  )
+  e.replaceInput(
+    { id: 'mekanism:mekasuit_pants'},
+    'mekanism:ultimate_control_circuit',
+    'mekanism_extras:cosmic_control_circuit'
+  )
+  e.replaceInput(
+    { id: 'mekanism:mekasuit_boots'},
+    'mekanism:ultimate_control_circuit',
+    'mekanism_extras:cosmic_control_circuit'
+  )
 });
