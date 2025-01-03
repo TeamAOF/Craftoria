@@ -124,17 +124,12 @@ ServerEvents.generateData('after_mods', (e) => {
     basic_data: {
       exclusions: [
         {
-          type: 'apotheosis:and',
-          and: [
-            {
-              type: 'apotheosis:surface_type',
-              rule: 'needs_sky',
-            },
-            {
-              type: 'apotheosis:surface_type',
-              rule: 'cannot_see_sky',
-            },
-          ],
+          type: 'apotheosis:surface_type',
+          rule: 'needs_sky',
+        },
+        {
+          type: 'apotheosis:surface_type',
+          rule: 'cannot_see_sky',
         },
       ],
       name: 'Merasmus',
@@ -238,17 +233,12 @@ ServerEvents.generateData('after_mods', (e) => {
     basic_data: {
       exclusions: [
         {
-          type: 'apotheosis:and',
-          and: [
-            {
-              type: 'apotheosis:surface_type',
-              rule: 'needs_sky',
-            },
-            {
-              type: 'apotheosis:surface_type',
-              rule: 'cannot_see_sky',
-            },
-          ],
+          type: 'apotheosis:surface_type',
+          rule: 'needs_sky',
+        },
+        {
+          type: 'apotheosis:surface_type',
+          rule: 'cannot_see_sky',
         },
       ],
       name: 'HOL 8000',
@@ -352,17 +342,12 @@ ServerEvents.generateData('after_mods', (e) => {
     basic_data: {
       exclusions: [
         {
-          type: 'apotheosis:and',
-          and: [
-            {
-              type: 'apotheosis:surface_type',
-              rule: 'needs_sky',
-            },
-            {
-              type: 'apotheosis:surface_type',
-              rule: 'cannot_see_sky',
-            },
-          ],
+          type: 'apotheosis:surface_type',
+          rule: 'needs_sky',
+        },
+        {
+          type: 'apotheosis:surface_type',
+          rule: 'cannot_see_sky',
         },
       ],
       name: 'Herbert',
@@ -466,17 +451,12 @@ ServerEvents.generateData('after_mods', (e) => {
     basic_data: {
       exclusions: [
         {
-          type: 'apotheosis:and',
-          and: [
-            {
-              type: 'apotheosis:surface_type',
-              rule: 'needs_sky',
-            },
-            {
-              type: 'apotheosis:surface_type',
-              rule: 'cannot_see_sky',
-            },
-          ],
+          type: 'apotheosis:surface_type',
+          rule: 'needs_sky',
+        },
+        {
+          type: 'apotheosis:surface_type',
+          rule: 'cannot_see_sky',
         },
       ],
       name: 'Captain Hector',
