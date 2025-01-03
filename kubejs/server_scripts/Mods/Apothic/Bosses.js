@@ -1,4 +1,5 @@
 ServerEvents.generateData('after_mods', (e) => {
+  // TODO: make this actually work
   let MakeBoss = (entity, name, constraints, valid_gear_sets, weights, stats) => {
     e.json(`craftoria:apothic_invaders/custom_bosses/${entity.split(':')[1]}`, {
       type: 'apotheosis:invader',
@@ -121,8 +122,23 @@ ServerEvents.generateData('after_mods', (e) => {
   e.json('craftoria:apothic_invaders/custom_bosses/lich', {
     type: 'apotheosis:invader',
     basic_data: {
-      name: 'Greg from Accounting',
-      bonus_loot: ['apotheosis:bonus/rare_boss_drops', 'craftoria:ice_essence'],
+      exclusions: [
+        {
+          type: 'apotheosis:and',
+          and: [
+            {
+              type: 'apotheosis:surface_type',
+              rule: 'needs_sky',
+            },
+            {
+              type: 'apotheosis:surface_type',
+              rule: 'cannot_see_sky',
+            },
+          ],
+        },
+      ],
+      name: 'Merasmus',
+      bonus_loot: ['apotheosis:bonus/rare_boss_drops'],
       valid_gear_sets: {
         haven: ['#haven_ranged'],
         frontier: ['#frontier_ranged'],
@@ -205,7 +221,7 @@ ServerEvents.generateData('after_mods', (e) => {
         ],
         effects: [
           {
-            amplifier: 4.0,
+            amplifier: 3.0,
             effect: 'minecraft:resistance',
           },
         ],
@@ -220,8 +236,23 @@ ServerEvents.generateData('after_mods', (e) => {
   e.json('craftoria:apothic_invaders/custom_bosses/obsidilith', {
     type: 'apotheosis:invader',
     basic_data: {
-      name: 'Greg from Accounting',
-      bonus_loot: ['apotheosis:bonus/rare_boss_drops', 'craftoria:dark_essence'],
+      exclusions: [
+        {
+          type: 'apotheosis:and',
+          and: [
+            {
+              type: 'apotheosis:surface_type',
+              rule: 'needs_sky',
+            },
+            {
+              type: 'apotheosis:surface_type',
+              rule: 'cannot_see_sky',
+            },
+          ],
+        },
+      ],
+      name: 'HOL 8000',
+      bonus_loot: ['apotheosis:bonus/rare_boss_drops'],
       valid_gear_sets: {
         haven: ['#haven_ranged'],
         frontier: ['#frontier_ranged'],
@@ -304,7 +335,7 @@ ServerEvents.generateData('after_mods', (e) => {
         ],
         effects: [
           {
-            amplifier: 4.0,
+            amplifier: 3.0,
             effect: 'minecraft:resistance',
           },
         ],
@@ -319,8 +350,23 @@ ServerEvents.generateData('after_mods', (e) => {
   e.json('craftoria:apothic_invaders/custom_bosses/gauntlet', {
     type: 'apotheosis:invader',
     basic_data: {
-      name: 'Greg from Accounting',
-      bonus_loot: ['apotheosis:bonus/rare_boss_drops', 'craftoria:fire_essence'],
+      exclusions: [
+        {
+          type: 'apotheosis:and',
+          and: [
+            {
+              type: 'apotheosis:surface_type',
+              rule: 'needs_sky',
+            },
+            {
+              type: 'apotheosis:surface_type',
+              rule: 'cannot_see_sky',
+            },
+          ],
+        },
+      ],
+      name: 'Herbert',
+      bonus_loot: ['apotheosis:bonus/rare_boss_drops'],
       valid_gear_sets: {
         haven: ['#haven_ranged'],
         frontier: ['#frontier_ranged'],
@@ -403,7 +449,7 @@ ServerEvents.generateData('after_mods', (e) => {
         ],
         effects: [
           {
-            amplifier: 4.0,
+            amplifier: 3.0,
             effect: 'minecraft:resistance',
           },
         ],
@@ -418,8 +464,23 @@ ServerEvents.generateData('after_mods', (e) => {
   e.json('craftoria:apothic_invaders/custom_bosses/void_blossom', {
     type: 'apotheosis:invader',
     basic_data: {
-      name: 'Greg from Accounting',
-      bonus_loot: ['apotheosis:bonus/rare_boss_drops', 'craftoria:nature_essence'],
+      exclusions: [
+        {
+          type: 'apotheosis:and',
+          and: [
+            {
+              type: 'apotheosis:surface_type',
+              rule: 'needs_sky',
+            },
+            {
+              type: 'apotheosis:surface_type',
+              rule: 'cannot_see_sky',
+            },
+          ],
+        },
+      ],
+      name: 'Captain Hector',
+      bonus_loot: ['apotheosis:bonus/rare_boss_drops'],
       valid_gear_sets: {
         haven: ['#haven_ranged'],
         frontier: ['#frontier_ranged'],
@@ -502,7 +563,7 @@ ServerEvents.generateData('after_mods', (e) => {
         ],
         effects: [
           {
-            amplifier: 4.0,
+            amplifier: 3.0,
             effect: 'minecraft:resistance',
           },
         ],

@@ -1,22 +1,20 @@
+LootJS.lootTables((e) => {
+  e.create('craftoria:gate/mythic_affix').createPool((pool) => {
+    pool.addCustomEntry({
+      type: 'apotheosis:random_affix_item',
+      rarities: ['apotheosis:mythic'],
+    });
+  });
+  e.create('craftoria:gate/perfect_gem').createPool((pool) => {
+    pool.addCustomEntry({
+      type: 'apotheosis:random_gem',
+      purities: ['perfect'],
+    });
+  });
+});
+
 ServerEvents.generateData('after_mods', (e) => {
-  e.json('craftoria:loot_modifiers/affix_loot', {
-    type: 'apotheosis:affix_loot',
-    conditions: [],
-    entries: [
-      {
-        chance: 1,
-        pattern: {
-          domain: 'craftoria',
-          path_regex: 'chests/affix_loot',
-        },
-      },
-    ],
-  });
-
-  e.json('craftoria:loot_table/chests/affix_loot', {
-    type: 'minecraft:chest',
-  });
-
+  /* Example of a gateway
   e.json('craftoria:gateways/small_boss', {
     size: 'small',
     color: 'rainbow',
@@ -35,7 +33,7 @@ ServerEvents.generateData('after_mods', (e) => {
         rewards: [
           {
             type: 'gateways:loot_table',
-            loot_table: 'craftoria:loot_table/chests/affix_loot',
+            loot_table: 'craftoria:gate/mythic_affix',
             rolls: 1,
             desc: 'Affix / Gem Loot',
           },
@@ -47,17 +45,20 @@ ServerEvents.generateData('after_mods', (e) => {
     rewards: [
       {
         type: 'gateways:loot_table',
-        loot_table: 'craftoria:loot_table/chests/affix_loot',
-        rolls: 20,
-        desc: 'Affix / Gem Loot',
+        loot_table: 'craftoria:gate/mythic_affix',
+        rolls: 1,
+        desc: 'Affix Item',
       },
     ],
     failures: [],
   });
+  */
+
   e.json('craftoria:gateways/endless/boss', {
     type: 'gateways:endless',
     size: 'medium',
     color: 'rainbow',
+    // TODO: add more variety
     base_wave: {
       entities: [
         {
@@ -68,9 +69,15 @@ ServerEvents.generateData('after_mods', (e) => {
       rewards: [
         {
           type: 'gateways:loot_table',
-          loot_table: 'craftoria:loot_table/chests/affix_loot',
+          loot_table: 'craftoria:gate/mythic_affix',
           rolls: 1,
-          desc: 'Affix / Gem Loot',
+          desc: 'Mythic Item',
+        },
+        {
+          type: 'gateways:loot_table',
+          loot_table: 'craftoria:gate/perfect_gem',
+          rolls: 5,
+          desc: 'Perfect Gem',
         },
       ],
       max_wave_time: 800,
@@ -100,9 +107,15 @@ ServerEvents.generateData('after_mods', (e) => {
         rewards: [
           {
             type: 'gateways:loot_table',
-            loot_table: 'craftoria:loot_table/chests/affix_loot',
+            loot_table: 'craftoria:gate/mythic_affix',
+            rolls: 5,
+            desc: 'Mythic Item',
+          },
+          {
+            type: 'gateways:loot_table',
+            loot_table: 'craftoria:gate/perfect_gem',
             rolls: 10,
-            desc: 'Affix / Gem Loot',
+            desc: 'Perfect Gem',
           },
         ],
         max_wave_time: -40,
@@ -137,38 +150,80 @@ ServerEvents.generateData('after_mods', (e) => {
       {
         entities: [
           {
-            entity: 'bosses_of_mass_destruction:lich',
+            type: 'apotheosis:boss',
+            boss: 'craftoria:custom_bosses/lich',
           },
         ],
-        max_wave_time: 20 * 60,
+        rewards: [
+          {
+            type: 'gateways:stack',
+            stack: {id: 'craftoria:ice_essence'},
+          },
+        ],
+        max_wave_time: 20 * 600,
         setup_time: 20 * 5,
       },
       {
         entities: [
           {
-            entity: 'bosses_of_mass_destruction:obsidilith',
+            type: 'apotheosis:boss',
+            boss: 'craftoria:custom_bosses/obsidilith',
           },
         ],
-        max_wave_time: 20 * 60,
+        rewards: [
+          {
+            type: 'gateways:stack',
+            stack: {id: 'craftoria:dark_essence'},
+          },
+        ],
+        max_wave_time: 20 * 600,
         setup_time: 20 * 5,
       },
       {
         entities: [
           {
-            entity: 'bosses_of_mass_destruction:gauntlet',
+            type: 'apotheosis:boss',
+            boss: 'craftoria:custom_bosses/gauntlet',
           },
         ],
-        max_wave_time: 20 * 60,
+        rewards: [
+          {
+            type: 'gateways:stack',
+            stack: {id: 'craftoria:fire_essence'},
+          },
+        ],
+        max_wave_time: 20 * 600,
         setup_time: 20 * 5,
       },
       {
         entities: [
           {
-            entity: 'bosses_of_mass_destruction:void_blossom',
+            type: 'apotheosis:boss',
+            boss: 'craftoria:custom_bosses/void_blossom',
           },
         ],
-        max_wave_time: 20 * 60,
+        rewards: [
+          {
+            type: 'gateways:stack',
+            stack: {id: 'craftoria:nature_essence'},
+          },
+        ],
+        max_wave_time: 20 * 600,
         setup_time: 20 * 5,
+      },
+    ],
+    rewards: [
+      {
+        type: 'gateways:loot_table',
+        loot_table: 'craftoria:gate/mythic_affix',
+        rolls: 10,
+        desc: 'Mythic Item',
+      },
+      {
+        type: 'gateways:loot_table',
+        loot_table: 'craftoria:gate/perfect_gem',
+        rolls: 20,
+        desc: 'Perfect Gem',
       },
     ],
   });
