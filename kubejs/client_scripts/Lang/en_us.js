@@ -11,5 +11,9 @@ ClientEvents.lang('en_us', (e) => {
     'item.industrialforegoing.iron_gear': 'Crude Iron Gear',
     'item.industrialforegoing.gold_gear': 'Crude Gold Gear',
     'item.industrialforegoing.diamond_gear': 'Crude Diamond Gear',
+
+    // Gateways
+    'craftoria.endless/boss': 'Endless Boss Gateway',
+    'craftoria.bomd': 'AK, change this, also dont use assets folder for lang, smh',
   });
 });
