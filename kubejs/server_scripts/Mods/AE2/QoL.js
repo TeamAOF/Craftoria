@@ -156,6 +156,7 @@ ServerEvents.recipes((event) => {
       ['ae2:logic_processor_press', 1],
       ['ae2:silicon_press', 1],
       ['extendedae:concurrent_processor_press', 1],
+      ['advanced_ae:quantum_processor_press', 1],
       ['megacells:accumulation_processor_press', 1],
       ['appflux:energy_processor_press', 1],
     ],
@@ -174,6 +175,8 @@ ServerEvents.recipes((event) => {
     ],
     ['extendedae:circuit_cutter', 1]
   );
+
+  exCutter(event, '1x craftoria:1x_compressed_iron_block', '1x craftoria:universal_press');
 
   event.shapeless('4x ae2:crafting_accelerator', 'bigger_ae2:4_core_crafting_accelerator');
   event.shapeless('4x bigger_ae2:4_core_crafting_accelerator', 'bigger_ae2:16_core_crafting_accelerator');

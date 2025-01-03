@@ -1,5 +1,5 @@
 ServerEvents.recipes((e) => {
-  let assembler = e.recipes.modern_industrialization.assembler;
+  const assembler = e.recipes.modern_industrialization.assembler;
 
   assembler(8, 100)
     .itemOut('2x modern_industrialization:analog_circuit_board')
