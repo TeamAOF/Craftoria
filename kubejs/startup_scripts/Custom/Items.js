@@ -8,10 +8,10 @@ StartupEvents.registry('item', (e) => {
   });
 
   // Custom
-  e.create('craftoria:ice_essence').displayName('§bEssence of Ice').tooltip('Dropped by the Apothic Lich');
-  e.create('craftoria:fire_essence').displayName('§6Essence of Fire').tooltip('Dropped by the Apothic Gauntlet');
-  e.create('craftoria:nature_essence').displayName('§2Essence of Nature').tooltip('Dropped by the Apothic Void Blossom');
-  e.create('craftoria:dark_essence').displayName('§5Essence of Darkness').tooltip('Dropped by the Apothic Obsidilith');
+  e.create('craftoria:ice_essence').displayName('§bEssence of Ice').tooltip('Dropped by the Apothic Lich in the Trial of Awaken gateway.');
+  e.create('craftoria:fire_essence').displayName('§6Essence of Fire').tooltip('Dropped by the Apothic Gauntlet in the Trial of Awaken gateway.');
+  e.create('craftoria:nature_essence').displayName('§2Essence of Nature').tooltip('Dropped by the Apothic Void Blossom in the Trial of Awaken gateway.');
+  e.create('craftoria:dark_essence').displayName('§5Essence of Darkness').tooltip('Dropped by the Apothic Obsidilith in the Trial of Awaken gateway.');
 
   e.create('craftoria:eternal').displayName('§5Eternal').rarity('Epic');
   e.create('craftoria:radonium').displayName('§aRadonium');
