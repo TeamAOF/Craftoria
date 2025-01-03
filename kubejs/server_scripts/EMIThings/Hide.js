@@ -26,5 +26,5 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
 });
 
 RecipeViewerEvents.removeCategories((e) => {
-  e.remove(['chisel:chisel_recipes_category', 'modern_industrialization:replicator_2']);
+  e.remove(['chisel:chisel_recipes_category', 'modern_industrialization:replicator_1']);
 });

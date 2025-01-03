@@ -6,8 +6,8 @@ ServerEvents.recipes((e) => {
     miMixer(2, 100)
       .itemIn(item, 0)
       .itemOut(item)
-      .fluidIn(fluids[0] || 'minecraft:water', 1000, 0)
-      .fluidIn(fluids[1] || 'minecraft:lava', 1000, 0)
+      .fluidIn(`1000x ${fluids[0] || 'minecraft:water'}`, 0)
+      .fluidIn(`1000x ${fluids[1] || 'minecraft:lava'}`, 0)
       .id(`craftoria:modern_industrialization/mixer/${item.split(':')[1]}`);
   };
 
