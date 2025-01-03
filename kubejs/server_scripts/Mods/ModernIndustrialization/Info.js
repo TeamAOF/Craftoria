@@ -1,16 +1,23 @@
 RecipeViewerEvents.addInformation('item', (e) => {
   let entries = {
     // Add machine information here
-    'modern_industrialization:replicator': [
-      `A wonderful machine capable of replicating items, at a cost of course.`,
-      `The cost being 1mb of UU-Matter per item replicated.`,
-      `But there's a catch, it can't replicate items that contain other items, like backpacks or shulker boxes, as you cannot create matter from nothing.`,
+    'modern_industrialization:replicator_1': [
+      `You've done it! You've reached the pinnacle of Modern Industrialization! The Replicator Mk I!`,
+      `This machine is capable of replicating almost any item in the game, provided you have the necessary amount of energy and UU-Matter.`,
+      `Simply insert the desired item into the input slot, feed it some UU matter, and the Replicator Mk I will begin the replication process.`,
+      `It's important to note that the Replicator Mk I is not capable of replicating exact copies of items that have NBT data, such as enchanted items or items with durability.`,
+      `For some reason, it seems to be incapable of replicating fluids at all. Maybe we can fix that with a future upgrade?`,
+      `In-case you're wondering, the Replicator Mk I is capable of replicating itself, but it will require a significant amount of UU matter and energy to do so.`,
     ],
-    'modern_industrialization:replicator_2': [
-      `An "improved" version of the original Replicator, capable of replicating items much faster, but it consumes power now.`,
-      `It's also capable of replicating some items that the "basic" Replicator can't.`,
-      `Namely, items that can contain other items, like backpacks or shulker boxes.`,
-      `But this comes with a quirk, it replicates items as if they were just made.`,
+    'modern_industrialization:replicator': [
+      `The Replicator Mk II, the latest and greatest in replication technology!`,
+      `Everything that the Replicator Mk I can do, the Replicator Mk II can do better! Though it has some downsides.`,
+      `It can replicate items significantly cheaper than the Replicator Mk I, requring 100 times less UU-Matter.`,
+      `It is also capable of replicating items with NBT data, such as enchanted items or items with durability.`,
+      `The problem with replicating fluids has been fixed, and the Replicator Mk II is capable of replicating fluids as well! Except for some energy dense fluids, such as Helium Plasma.`,
+      `Another advantage of the Replicator Mk II is that it doesn't require power to replicate items thanks to its internal reactor.`,
+      `However, this comes at a cost. It lacks the ability to overclock the replication process, meaning it will take longer to replicate items.`,
+      `It is also not able to create matter out of nothing, so it is incapable of replicating items that store other items, such as storage blocks or bags.`,
     ],
     'extended_industrialization:processing_array': [
       `Are those single block machines cluttering your base but still not meeting your production needs?`,

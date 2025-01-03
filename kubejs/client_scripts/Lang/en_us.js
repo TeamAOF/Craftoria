@@ -4,8 +4,8 @@ ClientEvents.lang('en_us', (e) => {
     'rei_categories.modern_industrialization.electric_blast_furnace_superconductor_coil': 'EBF (Superconductor Tier)',
     'ebf_tier.modern_industrialization.superconductor_coil': 'Superconductor',
 
-    'block.modern_industrialization.replicator_2': 'Replicator Mk II',
-    'rei_categories.modern_industrialization.replicator_2': 'Replicator Mk II',
+    'block.modern_industrialization.replicator_1': 'Replicator Mk I',
+    'block.modern_industrialization.replicator': 'Replicator Mk II',
 
     // Renaming IF gears
     'item.industrialforegoing.iron_gear': 'Crude Iron Gear',

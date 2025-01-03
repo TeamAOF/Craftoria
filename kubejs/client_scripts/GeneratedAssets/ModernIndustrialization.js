@@ -1,9 +1,9 @@
 ClientEvents.generateAssets('after_mods', (e) => {
-  e.blockState('modern_industrialization:replicator_2', (bs) => {
-    bs.simpleVariant('', 'modern_industrialization:block/replicator_2');
+  e.blockState('modern_industrialization:replicator_1', (bs) => {
+    bs.simpleVariant('', 'modern_industrialization:block/replicator_1');
   });
 
-  e.json('modern_industrialization:models/block/replicator_2', {
+  e.json('modern_industrialization:models/block/replicator_1', {
     // parent: 'modern_industrialization:block/replicator',
     casing: 'lv',
     default_overlays: {
@@ -18,12 +18,12 @@ ClientEvents.generateAssets('after_mods', (e) => {
     loader: 'modern_industrialization:machine',
   });
 
-  e.itemModel('modern_industrialization:replicator_2', (im) => {
-    im.parent('modern_industrialization:block/replicator_2');
+  e.itemModel('modern_industrialization:replicator_1', (im) => {
+    im.parent('modern_industrialization:block/replicator_1');
   });
 
   let sounds = {
-    replicator_2: ['mi_sound_addon:replicator'],
+    replicator_1: ['mi_sound_addon:replicator'],
     bending_machine: ['mi_sound_addon:packer'],
     alloy_smelter: ['mi_sound_addon:furnace'],
     canning_machine: ['mekanism:tile/compressor'],

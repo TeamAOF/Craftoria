@@ -1,5 +1,5 @@
 ServerEvents.tags('item', (e) => {
-  let additions = [
+  const replicator_2_blacklist = [
     /storage_cell/,
     /fe_.*_cell/,
     /portable_.*_cell/,
@@ -105,7 +105,7 @@ ServerEvents.tags('item', (e) => {
 
     /^modern_industrialization:quantum_.*/,
     'modern_industrialization:replicator',
-    'modern_industrialization:replicator_2',
+    'modern_industrialization:replicator_1',
     'modern_industrialization:helium_plasma_bucket',
     'modern_industrialization:singularity',
     'modern_industrialization:nuke',
@@ -127,7 +127,7 @@ ServerEvents.tags('item', (e) => {
     'framedblocks:framed_tank',
   ];
 
-  let exclusions = [
+  const replicator_2_exclusions = [
     /functionalstorage:.*(upgrade|downgrade|tool|controller)/,
     /mekanism:dynamic_(tank|valve)/,
     'industrialforegoing:infinity_charger',
@@ -137,20 +137,24 @@ ServerEvents.tags('item', (e) => {
     'tankstorage:tank_link',
     'bankstorage:bank_dock',
     'bankstorage:bank_link',
+    'modern_industrialization:quantum_circuit',
+    'modern_industrialization:quantum_circuit_board',
+    'modern_industrialization:quantum_machine_casing',
   ];
-  e.add('modern_industrialization:replicator_blacklist', additions).remove(exclusions);
+  e.add('modern_industrialization:replicator_blacklist', replicator_2_blacklist).remove(replicator_2_exclusions);
 
-  let replicator_2_blacklist = [
+  const replicator_1_blacklist = [
     'mekanism:pellet_antimatter',
     /^modern_industrialization:quantum_.*/,
     'modern_industrialization:replicator',
-    'modern_industrialization:replicator_2',
+    'modern_industrialization:replicator_1',
     'modern_industrialization:helium_plasma_bucket',
     'modern_industrialization:uu_matter_bucket',
     'modern_industrialization:singularity',
     'modern_industrialization:nuke',
+    /_bucket$/,
 
-    // These make no sense to replicate, as they rely on having NBT data, which Replicator 2 doesn't support, and I don't want to risk them causing issues.
+    // These make no sense to replicate, as they rely on having NBT data, which Replicator Mk I doesn't support, and I don't want to risk them causing issues.
     'extendedae:package',
     'shrink:shrink_bottle',
     'gag:time_sand_pouch',
@@ -162,7 +166,26 @@ ServerEvents.tags('item', (e) => {
     'minecraft:potion',
     'minecraft:splash_potion',
     'minecraft:lingering_potion',
+    'apotheosis:gem',
+    'apotheosis:potion_charm',
+    'ae2:facade',
+    'reliquary:mob_charm',
+    'reliquary:mob_charm_fragment',
+    'reliquary:tipped_arrow',
+    'reliquary:potion_essence',
+    'reliquary:potion',
+    'reliquary:splash_potion',
+    'reliquary:lingering_potion',
+    'irons_spellbooks:scroll',
+    'hostilenetworks:data_model',
+    'hostilenetworks:prediction',
   ];
 
-  e.add('craftoria:replicator_2_blacklist', replicator_2_blacklist);
+  const replicator_1_exclusions = [
+    'modern_industrialization:quantum_circuit',
+    'modern_industrialization:quantum_circuit_board',
+    'modern_industrialization:quantum_machine_casing',
+  ];
+
+  e.add('craftoria:replicator_1_blacklist', replicator_1_blacklist).remove(replicator_1_exclusions);
 });
