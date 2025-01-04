@@ -123,16 +123,6 @@ ServerEvents.generateData('after_mods', (e) => {
   let invaderTemplate = {
     type: 'apotheosis:invader',
     basic_data: {
-      exclusions: [
-        {
-          type: 'apotheosis:surface_type',
-          rule: 'needs_sky',
-        },
-        {
-          type: 'apotheosis:surface_type',
-          rule: 'cannot_see_sky',
-        },
-      ],
       bonus_loot: ['apotheosis:bonus/rare_boss_drops'],
       valid_gear_sets: {
         haven: ['#haven_ranged'],
@@ -162,6 +152,18 @@ ServerEvents.generateData('after_mods', (e) => {
   };
 
   let bomdTemplate = {
+    basic_data: {
+      exclusions: [
+        {
+          type: 'apotheosis:surface_type',
+          rule: 'needs_sky',
+        },
+        {
+          type: 'apotheosis:surface_type',
+          rule: 'cannot_see_sky',
+        },
+      ],
+    },
     attributes: [
       {
         attribute: 'minecraft:generic.max_health',
@@ -270,6 +272,7 @@ ServerEvents.generateData('after_mods', (e) => {
     bossData.basic_data.name = boss.name;
     bossData.entity = boss.entity;
     bossData.size = boss.size;
+    bossData.basic_data.exclusions = bomdTemplate.basic_data.exclusions;
     if (boss.attributes) bossData.stats['apotheosis:mythic'].attribute_modifiers = boss.attributes;
     else bossData.stats['apotheosis:mythic'].attribute_modifiers = bomdTemplate.attributes;
     if (boss.effects) bossData.stats['apotheosis:mythic'].effects = boss.effects;
