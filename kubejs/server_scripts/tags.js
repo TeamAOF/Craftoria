@@ -7,6 +7,9 @@ ServerEvents.tags('item', (e) => {
   e.add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet']);
   e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
 
+  e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
+  e.removeAll('apothic_enchanting:boon_drops');
+
   // Crops & Seeds
   e.add('c:seeds/cabbage', ['farmersdelight:cabbage_seeds', 'dumplings_delight:chinese_cabbage_seeds']);
   e.add('c:seeds/tomato', 'farmersdelight:tomato_seeds');
@@ -24,18 +27,12 @@ ServerEvents.tags('item', (e) => {
   // Knives
   e.add('occultism:tools/knife', '#c:tools/knife');
 
-  e.removeAll('apothic_enchanting:boon_drops');
-
-  e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
-
   // Machine Frames
-
   e.add('craftoria:hulls/advanced', 'industrialforegoing:machine_frame_advanced');
   e.add('craftoria:hulls/advanced', 'modern_industrialization:basic_machine_hull');
   e.add('craftoria:hulls/advanced', 'mekanism:ultimate_tier_installer');
 
   // Curios
-
   e.add('curios:curio', 'integratedterminals:terminal_storage_portable');
 
   // Chisel Reborn
@@ -58,6 +55,9 @@ ServerEvents.tags('item', (e) => {
     '@oceansdelight',
     '@farmersdelight',
   ]);
+
+  // Some tag fixes
+  e.add('minecraft:swords', ['wstweaks:blaze_blade', 'wstweaks:lava_blade']);
 });
 
 ServerEvents.tags('block', (e) => {
