@@ -1,3 +1,12 @@
+## Craftoria | v1.12.1
+
+_NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.12.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.12.1.md)_
+
+### Bug Fixes 🪲
+
+* Fixed a crash related to tooltips.
+---
+
 ## Craftoria | v1.12.0
 
 _NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.12.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.12.0.md)_
