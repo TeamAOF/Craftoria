@@ -51,7 +51,7 @@
 	#    Negation - ~ followed by any selector above.  This selector will be negated, matching every item that does NOT match the selector.  Examples: "~minecraft:stick", "~!uncommon", "~@minecraft"
 	#    Combining selectors - Any number of selectors can be combined by separating them with a plus sign.  Examples: "minecraft:diamond_sword+&enchantments", "minecraft:stick+~!common+&damage>100"
 	[client.definitions]
-		level0_entries = ["&apotheosis:purity=normal", "!uncommon", "!rare"]
+		level0_entries = ["!uncommon", "!rare"]
 		level1_entries = ["@mekanismtools", "@apotheosis+%Flawed", "%Potion"]
 		level2_entries = ["@apotheosis+%Chipped"]
 		level3_entries = ["@theurgy", "@apotheosis+%Flawless", "craftoria:fire_essence"]
