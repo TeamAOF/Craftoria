@@ -1,6 +1,7 @@
 {
   "info": "This is the config file for Eternal Starlight",
   "enablePortalShader": true,
+  "enableScreenShake": true,
   "mobsConfig": {
     "boarwarf": {
       "maxHealth": 30.0,
@@ -64,6 +65,11 @@
     "ratlin": {
       "maxHealth": 15.0,
       "armor": 0.0,
+      "canSpawn": true
+    },
+    "shadowSnail": {
+      "maxHealth": 8.0,
+      "armor": 6.0,
       "canSpawn": true
     },
     "yeti": {

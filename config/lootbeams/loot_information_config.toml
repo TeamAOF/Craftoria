@@ -1,0 +1,22 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+
+[lootInformationControl]
+loot_information_status = "NAME_AND_RARITY_IN_NAMETAG"
+showInfoForAllItem = true
+
+[rarity]
+showRarityFor = "RARE"
+
+[nameTag]
+render_name_tag_on_look = true
+add_text_border = true
+render_stack_count = true
+name_tag_look_sensitivity = 0.018
+name_tag_text_alpha = 1.0
+name_tag_background_alpha = 0.5
+name_tag_scale = 1.0
+name_tag_y_offset = 0.75
+
+[tooltips]
+render_tooltips_on_crouch = true

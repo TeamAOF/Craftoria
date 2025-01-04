@@ -14,6 +14,6 @@ ClientEvents.lang('en_us', (e) => {
 
     // Gateways
     'craftoria.endless/boss': 'Endless Boss Gateway',
-    'craftoria.bomd': 'AK, change this, also dont use assets folder for lang, smh',
+    'craftoria.bomd': 'Trials of Awaken',
   });
 });

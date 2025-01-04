@@ -1,8 +1,3 @@
-
-[multiblocks]
-
-	[multiblocks.mekanism]
-
 		#JEI 'Building [Dynamic Tank]' page configuration
 		[multiblocks.mekanism.dynamic_tank]
 			#Set page visibility
@@ -28,8 +23,6 @@
 			#Set page visibility
 			visible = true
 
-	[multiblocks.mekanismgenerators]
-
 		#JEI 'Building [Industrial Turbine]' page configuration
 		[multiblocks.mekanismgenerators.turbine]
 			#Set page visibility
@@ -45,3 +38,12 @@
 			#Set page visibility
 			visible = true
 
+		#JEI 'Building [Reinforced Induction Matrix]' page configuration
+		[multiblocks.mekanism_extras.extra_matrix]
+			#Set page visibility
+			visible = true
+
+		#JEI 'Building [Naquadah Reactor]' page configuration
+		[multiblocks.mekanism_extras.naquadah_reacto]
+			#Set page visibility
+			visible = true

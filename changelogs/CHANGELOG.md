@@ -1,3 +1,99 @@
+## Craftoria | v1.12.0
+
+_NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.12.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.12.0.md)_
+
+### Changes/Improvements ⭐
+
+* Reworked Completionist quest chapter, new design.
+* Added the Replicator MK II, find all the info about the two replicator variants via EMI info.
+* Added the Eternal quest chapter, currently includes 2 end-game quests (Cosmic & Boss Rush). Expect many more entries to follow as the modpack develops.
+* Reworked Ars Nouveau quest chapter (thanks Sonic)
+* Added Cosmic Injector & Cosmic Matter, 2 new custom end-game ingredients.
+* Added the Endless Boss Gateway, new end-game content.
+* Added 4 new custom element essence items, used in recipe for Endless Boss Gateway.
+* Added the Trial of Awaken, new gateway mixing BOMD bosses with Apoth affixes/effects.
+* New Replicator recipe, now requires a Cosmic Injector.
+* New Meka-Suit recipes, now requires Cosmic Control Circuit.
+* Added new models/textures/animations for Villagers, Illagers, Witch & Wandering Trader.
+* Added custom tier-based item borders to all Apoth gems for that extra dopamine rush.
+* Added gardening styled item borders to Seeds, Fruits, Leaves, Flowers & Saplings.
+* Lowered the rates at which you're getting skill points.
+* Added death styled item borders to skulls.
+* Apoth bosses will now auto-aggro on spawn.
+* Added AdvancedAE Quantum Press to the Universal Press recipe, you can now make more Universal Presses from 1x Compressed Iron Block using the circuit slicer.
+* Added factory/tech styled item borders to all tech mods.
+* Increased Quantum Computer max size, 5 > 7.
+* Added quest info on how to enter each World Tier.
+* Added magic styled item borders to most magic mods.
+* Added EMI info on how to acquire Dry Rubber.
+* Improved Pipez textures/models.
+* BOMD bosses no longer spawn structures on death.
+* Allow infinity tools to use apoth gems.
+* Added Wandering Traders to ftbchunks interact whitelist.
+* Added back smelting Mithril in furnace.
+* Allow crafting Bigger AE2 crafting accelerators back to basic ones.
+* Lowered netherrack output through gold drill.
+* Made Glassential blocks faster to mine with a pickaxe.
+* Added fluid extraction recipes for Lava, Menril Resin, XP & Yeast Culture.
+* Allow Expulsion Pylon in all dimensions.
+* Disabled unwanted enchantment descriptions showing causing overlap.
+* No more swabbing mimics & warden using MGU.
+* Turned off EMI batched renderer due to issues with other mods.
+
+### Bosses Of Mass Destruction 👹
+
+* Lich health has been increased 
+**(300 > 1000)**
+* Lich damage has been increased 
+**(9 > 15)**
+* Obsidilith health has been increased 
+**(300 > 900)**
+* Obsidilith armor has been increased 
+**(14 > 17)**
+* Obsidilith damage has been increased 
+**(16 > 20)**
+* Gauntlet health has been increased 
+**(250 > 800)**
+* Gauntlet armor has been increased 
+**(8 > 11)**
+* Gauntlet damage has been increased 
+**(16 > 20)**
+* Void Blossom health has been increased 
+**(350 > 1100)**
+* Void Blossom armor has been increased 
+**(4 > 6)**
+* Void Blossom damage has been increased 
+**(12 > 20)**
+
+### Bug Fixes 🪲
+
+* Fixed Pumkin Pie recipe.
+* Fixed Paper/Rice Dough recipes conflicting.
+* Fixed items sometimes not being animated in EMI.
+* Fixed Wither Skeleton Tweaks swords not being enchantable.
+* Fixed IItemDecorators not rendering correctly in EMI, example being the MekaSuit energy bars.
+* Fixed ars elemental Soulbound enchantment not being localized.
+* Fixed pipes not connecting to the Reforging Table.
+* "Fixed" Lich boss crashing, this is a temporary fix disabling the projectiles.
+
+### Added Mods ✅
+
+  * [Akashic Tome](https://www.curseforge.com/minecraft/mc-mods/akashic-tome)
+  * [Ars Unification](https://www.curseforge.com/minecraft/mc-mods/ars-unification)
+  * [CFM Refurbished: Circuit Breaker](https://www.curseforge.com/minecraft/mc-mods/cfm-refurbished-circuit-breaker)
+  * [CodeChicken Lib](https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8)
+  * [DarkGlint](https://www.curseforge.com/minecraft/mc-mods/darkglint)
+  * [Ender Storage](https://www.curseforge.com/minecraft/mc-mods/ender-storage-1-8)
+  * [Mekanism Extras](https://www.curseforge.com/minecraft/mc-mods/mekanism-extras)
+  * [Mekanism: Weapons](https://www.curseforge.com/minecraft/mc-mods/mekanism-weapons)
+  * [Sophisticated Storage in Motion](https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage-in-motion)
+
+### Removed Mods ❌
+
+  * [Clean Tooltips](https://www.curseforge.com/minecraft/mc-mods/clean-tooltips)
+  * [Illagers Wear Armor](https://www.curseforge.com/minecraft/mc-mods/illagers-wear-armor)
+---
+
 ## Craftoria | v1.11.0
 
 _NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.11.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.11.0.md)_

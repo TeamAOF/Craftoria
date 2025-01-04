@@ -9,6 +9,10 @@
 	wrenches_render_multiblock_shapes = true
 	#Whether the tooltip on the energy bar should display the current energy consumption of the machine
 	display_energy_consumption_on_energy_bar = true
+	#The duration in ticks of burn time to apply when holding an item tagged mi_tweaks:very_hot
+	# Default: 100
+	# Range: > 1
+	very_hot_items_burn_time = 100
 
 [efficiency]
 	#The machine efficiency hack mode to use. Only applies to electric machines

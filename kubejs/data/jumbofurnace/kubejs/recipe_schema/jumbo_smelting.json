@@ -1,0 +1,26 @@
+{
+    "keys": [
+        {
+            "name": "results",
+            "role": "output",
+            "type": "item_stack[]"
+        },
+        {
+            "name": "ingredients",
+            "role": "input",
+            "type": "flat_sized_ingredient[]"
+        },
+        {
+            "name": "cookingtime",
+            "role": "other",
+            "type": "int",
+            "optional": 200
+        },
+        {
+            "name": "experience",
+            "role": "other",
+            "type": "float",
+            "optional": 0.0
+        }
+    ]
+}

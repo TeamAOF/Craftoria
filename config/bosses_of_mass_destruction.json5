@@ -5,9 +5,9 @@
 		"idleHealingPerTick": 0.20000000298023224,
 		"health": 1000.0,
 		"missile": {
-			"statusEffectId": "minecraft:slowness",
-			"statusEffectDuration": 100,
-			"statusEffectPotency": 2,
+			"mobEffectId": "minecraft:slowness",
+			"mobEffectDuration": 100,
+			"mobEffectAmplifier": 2,
 			"damage": 15.0
 		},
 		"comet": {
@@ -16,20 +16,20 @@
 		"summonMechanic": {
 			"isEnabled": true,
 			"entitiesThatCountToSummonCounter": [
-				"minecraft:zombie",
 				"minecraft:skeleton",
-				"minecraft:drowned",
 				"minecraft:giant",
-				"minecraft:husk",
 				"minecraft:phantom",
+				"minecraft:zoglin",
+				"minecraft:zombified_piglin",
+				"minecraft:wither_skeleton",
+				"minecraft:husk",
 				"minecraft:skeleton_horse",
 				"minecraft:stray",
-				"minecraft:wither",
-				"minecraft:wither_skeleton",
-				"minecraft:zoglin",
 				"minecraft:zombie_horse",
-				"minecraft:zombie_villager",
-				"minecraft:zombified_piglin"
+				"minecraft:zombie",
+				"minecraft:drowned",
+				"minecraft:wither",
+				"minecraft:zombie_villager"
 			],
 			"numEntitiesKilledToDropSoulStar": 50
 		}

@@ -8,6 +8,10 @@ allow_upgrades_in_processing_array = true
 # Default: 64
 # Range: 1 ~ 128
 machine_chainer_max_connections = 64
+#The maximum amount of random ticks the farmer can do on a crop block in a single use of fertilizer
+# Default: 80
+# Range: 1 ~ 1000
+farmer_fertilizer_max_random_ticks = 80
 
 [batching_machines]
 	#The maximum batch size to use for the Large Steam Macerator
