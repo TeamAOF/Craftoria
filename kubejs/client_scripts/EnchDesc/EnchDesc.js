@@ -2,15 +2,11 @@ ItemEvents.modifyTooltips((event) => {
   const HOLD_SHIFT_TEXT = Text.translate('tooltip.enchdesc.hold');
   const ENCHANTED_BOOK = Ingredient.of('minecraft:enchanted_book');
 
-  event.modify(ENCHANTED_BOOK, (item) => {
-    item.removeLine(1);
-  });
-
-  event.modify(ENCHANTED_BOOK, { shift: false }, (item) => {
+  event.modify(ENCHANTED_BOOK, {shift: false}, (item) => {
     item.add(HOLD_SHIFT_TEXT);
   });
 
-  event.modifyAll({ shift: true }, (item) => {
+  event.modifyAll({shift: true}, (item) => {
     item.dynamic('ench_desc');
   });
 });
