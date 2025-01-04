@@ -21,7 +21,7 @@ ServerEvents.recipes((e) => {
     .itemIn('2x modern_industrialization:silicon_battery')
     .itemIn('2x modern_industrialization:electronic_circuit_board')
     .itemIn('6x modern_industrialization:stainless_steel_plate')
-    .fluidIn('750x modern_industrialization:polyethylene')
+    .fluidIn('modern_industrialization:polyethylene', 750)
     .id('modern_industrialization:electric_age/circuit/assembler/digital_circuit_board');
 
   assembler(8, 200)
@@ -161,7 +161,7 @@ ServerEvents.recipes((e) => {
     .itemIn('6x #modern_industrialization:fluid_pipes')
     .itemIn('6x modern_industrialization:tin_rotor')
     .itemIn('2x modern_industrialization:motor')
-    .fluidIn('100x modern_industrialization:soldering_alloy')
+    .fluidIn('modern_industrialization:soldering_alloy', 100)
     .id('modern_industrialization:electric_age/component/assembler/pump');
 
   assembler(8, 200)
@@ -177,7 +177,7 @@ ServerEvents.recipes((e) => {
     .itemIn('6x #modern_industrialization:fluid_pipes')
     .itemIn('6x modern_industrialization:stainless_steel_rotor')
     .itemIn('2x modern_industrialization:advanced_motor')
-    .fluidIn('200x modern_industrialization:soldering_alloy')
+    .fluidIn('modern_industrialization:soldering_alloy', 200)
     .id('modern_industrialization:electric_age/component/assembler/advanced_pump');
 
   assembler(8, 200)
