@@ -25,8 +25,7 @@ ServerEvents.generateData('after_mods', (e) => {
       {
         entities: [
           {
-            type: 'apotheosis:boss',
-            boss: 'apotheosis:the_end/evoker',
+            type: 'apotheosis:invader',
           },
         ],
         modifiers: [],
@@ -58,12 +57,10 @@ ServerEvents.generateData('after_mods', (e) => {
     type: 'gateways:endless',
     size: 'medium',
     color: 'rainbow',
-    // TODO: add more variety
     base_wave: {
       entities: [
         {
-          type: 'apotheosis:boss',
-          boss: 'apotheosis:the_end/evoker',
+          type: 'apotheosis:invader',
         },
       ],
       rewards: [
@@ -92,16 +89,13 @@ ServerEvents.generateData('after_mods', (e) => {
         },
         entities: [
           {
-            type: 'apotheosis:boss',
-            boss: 'apotheosis:the_end/evoker',
+            type: 'apotheosis:invader',
           },
           {
-            type: 'apotheosis:boss',
-            boss: 'apotheosis:the_end/evoker',
+            type: 'apotheosis:invader',
           },
           {
-            type: 'apotheosis:boss',
-            boss: 'apotheosis:the_end/evoker',
+            type: 'apotheosis:invader',
           },
         ],
         rewards: [
@@ -143,75 +137,10 @@ ServerEvents.generateData('after_mods', (e) => {
     spawn_algorithm: 'gateways:inward_spiral',
   });
 
-  e.json('craftoria:gateways/bomd', {
+  let bomdGate = {
     size: 'large',
     color: 'rainbow',
-    waves: [
-      {
-        entities: [
-          {
-            type: 'apotheosis:boss',
-            boss: 'craftoria:custom_bosses/lich',
-          },
-        ],
-        rewards: [
-          {
-            type: 'gateways:stack',
-            stack: {id: 'craftoria:ice_essence'},
-          },
-        ],
-        max_wave_time: 20 * 600,
-        setup_time: 20 * 5,
-      },
-      {
-        entities: [
-          {
-            type: 'apotheosis:boss',
-            boss: 'craftoria:custom_bosses/obsidilith',
-          },
-        ],
-        rewards: [
-          {
-            type: 'gateways:stack',
-            stack: {id: 'craftoria:dark_essence'},
-          },
-        ],
-        max_wave_time: 20 * 600,
-        setup_time: 20 * 5,
-      },
-      {
-        entities: [
-          {
-            type: 'apotheosis:boss',
-            boss: 'craftoria:custom_bosses/gauntlet',
-          },
-        ],
-        rewards: [
-          {
-            type: 'gateways:stack',
-            stack: {id: 'craftoria:fire_essence'},
-          },
-        ],
-        max_wave_time: 20 * 600,
-        setup_time: 20 * 5,
-      },
-      {
-        entities: [
-          {
-            type: 'apotheosis:boss',
-            boss: 'craftoria:custom_bosses/void_blossom',
-          },
-        ],
-        rewards: [
-          {
-            type: 'gateways:stack',
-            stack: {id: 'craftoria:nature_essence'},
-          },
-        ],
-        max_wave_time: 20 * 600,
-        setup_time: 20 * 5,
-      },
-    ],
+    waves: [],
     rewards: [
       {
         type: 'gateways:loot_table',
@@ -226,5 +155,43 @@ ServerEvents.generateData('after_mods', (e) => {
         desc: 'Perfect Gem',
       },
     ],
+  };
+
+  [
+    {id: 'lich', essence: 'ice'},
+    {id: 'obsidilith', essence: 'dark'},
+    {id: 'gauntlet', essence: 'fire'},
+    {id: 'void_blossom', essence: 'nature'},
+  ].forEach((boss) => {
+    bomdGate.waves.push({
+      entities: [
+        {
+          type: 'apotheosis:invader',
+          invader: `craftoria:custom_bosses/${boss.id}`,
+        },
+      ],
+      rewards: [
+        {
+          type: 'gateways:stack',
+          stack: {id: `craftoria:${boss.essence}_essence`},
+        },
+        {
+          type: 'gateways:loot_table',
+          loot_table: 'craftoria:gate/mythic_affix',
+          rolls: 2,
+          desc: 'Mythic Item',
+        },
+        {
+          type: 'gateways:loot_table',
+          loot_table: 'craftoria:gate/perfect_gem',
+          rolls: 5,
+          desc: 'Perfect Gem',
+        },
+      ],
+      max_wave_time: 20 * 600,
+      setup_time: 20 * 5,
+    });
   });
+
+  e.json('craftoria:gateways/bomd', bomdGate);
 });
