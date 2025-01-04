@@ -45,7 +45,7 @@ ServerEvents.recipes((e) => {
       .cutting_machine(2, 100)
       .itemIn(input)
       .itemOut(output)
-      .fluidIn('1x modern_industrialization:lubricant')
+      .fluidIn('modern_industrialization:lubricant', 1)
       .id(`craftoria:mi/cutting/${input.split(':')[1]}_to_${output.split(':')[1]}`);
   };
 

@@ -129,5 +129,5 @@ ServerEvents.tags('fluid', (e) => {
 ServerEvents.tags('entity_type', (e) => {
   e.add('ftbchunks:entity_interact_whitelist', ['minecraft:villager', 'minecraft:wandering_trader']);
 
-  e.add('mob_grinding_utils:entity_type/no_swab', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/]);
+  e.add('mob_grinding_utils:no_swab', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/]);
 });
