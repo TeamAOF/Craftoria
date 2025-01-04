@@ -57,7 +57,17 @@ ServerEvents.tags('item', (e) => {
   ]);
 
   // Some tag fixes
-  e.add('minecraft:swords', ['wstweaks:blaze_blade', 'wstweaks:lava_blade']);
+  e.add('minecraft:swords', ['wstweaks:blaze_blade', 'wstweaks:lava_blade', 'industrialforegoing:infinity_hammer']);
+  e.add('minecraft:pickaxes', ['industrialforegoing:infinity_drill']);
+  e.add('minecraft:shovels', ['industrialforegoing:infinity_drill']);
+  e.add('minecraft:axes', ['industrialforegoing:infinity_saw']);
+  e.add('craftoria:tridents', ['industrialforegoing:infinity_trident']);
+  e.add('c:tools/melee_weapon', ['#craftoria:tridents']);
+  e.add('c:tools/ranged_weapon', ['#craftoria:tridents']);
+  e.add('c:tools/spear', ['#craftoria:tridents']);
+  e.add('minecraft:enchantable/trident', ['#craftoria:tridents']);
+  e.add('minecraft:enchantable/vanishing', ['#craftoria:tridents']);
+  e.add('minecraft:enchantable/durability', ['#craftoria:tridents']).remove('industrialforegoing:infinity_trident');
 });
 
 ServerEvents.tags('block', (e) => {
