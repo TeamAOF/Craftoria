@@ -267,7 +267,7 @@ ServerEvents.generateData('after_mods', (e) => {
   ];
 
   bomdBosses.forEach((boss) => {
-    // First grab the invader template, then apply the bomd template on top of it
+    // First grab the invader template, then apply the bomd template on top of it, and finally apply the boss-specific data (if it exists)
     let bossData = invaderTemplate;
     bossData.basic_data.name = boss.name;
     bossData.entity = boss.entity;

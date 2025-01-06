@@ -47,10 +47,6 @@ ClientEvents.lang('en_us', (event) => {
     'enchantment.minecraft.breach.desc': 'Reduces armor effectiveness.',
     'enchantment.minecraft.wind_burst.desc': 'Smash attacks launch you upwards.',
 
-    // Apothic Enchanting Enchantment Descriptions
-    'enchantment.apothic_enchanting.boon_of_the_earth': 'Disabled',
-    'enchantment.apothic_enchanting.boon_of_the_earth.desc': 'Disabled.',
-
     // Ars Elemental Enchantment Descriptions
     'enchantment.ars_elemental.soulbound.desc': 'Preserve items on death.',
   });
