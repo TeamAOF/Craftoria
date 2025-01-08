@@ -10,24 +10,23 @@ ServerEvents.tags('item', (e) => {
     'megacells:radioactive_chemical_cell',
     'extendedae:package',
 
-    /pneumaticcraft:.*_(tank|chest)$/,
-    /pneumaticcraft:.*drone/,
+    /^pneumaticcraft:.*_(tank|chest)$/,
+    /^pneumaticcraft:.*drone/,
     'pneumaticcraft:liquid_hopper',
 
-    /sophisticated.*:.*(shulker|barrel|chest|backpack)/,
+    /^sophisticated(storage|backpacks):.*(shulker|barrel|chest|backpack)/,
+    'sophisticatedstorageinmotion:storage_minecart',
 
-    /functionalstorage/,
+    /^functionalstorage/,
 
-    /industrialforegoing:infinity_.*/,
+    /^industrialforegoing:infinity_.*/,
     'industrialforegoing:mob_imprisonment_tool',
 
-    /^easy_/,
-
-    /mekanism:.*_(chest|tank|barrel)/,
-    /mekanism:.*_bin$/,
-    /mekanism:qio_drive/,
-    /mekanism:(basic|advanced|elite|ultimate)_.*_factory/,
-    /mekanism:.*_energy_cube$/,
+    /^mekanism:.*_(chest|tank|barrel)/,
+    /^mekanism:.*_bin$/,
+    /^mekanism:qio_drive/,
+    /^mekanism:(basic|advanced|elite|ultimate)_.*_factory/,
+    /^mekanism:.*_energy_cube$/,
     'mekanism:cardboard_box',
     'mekanism:qio_dashboard',
     'mekanism:portable_qio_dashboard',
@@ -76,6 +75,12 @@ ServerEvents.tags('item', (e) => {
     'mekanismgenerators:advanced_solar_generator',
     'mekanismgenerators:gas_burning_generator',
     'mekanism:pellet_antimatter',
+
+    /^mekanism_extras:.*_(chest|tank|barrel)/,
+    /^mekanism_extras:.*_bin$/,
+    /^mekanism_extras:qio_drive/,
+    /^mekanism_extras:.*_energy_cube$/,
+    'mekanism_extras:advanced_electric_pump',
 
     /^occultism:storage_stabilizer_/,
     'occultism:storage_controller',
@@ -128,11 +133,11 @@ ServerEvents.tags('item', (e) => {
   ];
 
   const replicator_2_exclusions = [
-    /functionalstorage:.*(upgrade|downgrade|tool|controller)/,
-    /mekanism:dynamic_(tank|valve)/,
+    /^functionalstorage:.*(upgrade|downgrade|tool|controller)/,
+    /^mekanism:dynamic_(tank|valve)/,
     'industrialforegoing:infinity_charger',
     'mekanism:scuba_tank',
-    'mekanism:radioactive_waste_barrel',
+    /_radioactive_waste_barrel$/,
     'tankstorage:tank_dock',
     'tankstorage:tank_link',
     'bankstorage:bank_dock',
@@ -179,6 +184,7 @@ ServerEvents.tags('item', (e) => {
     'irons_spellbooks:scroll',
     'hostilenetworks:data_model',
     'hostilenetworks:prediction',
+    'sophisticatedstorageinmotion:storage_minecart',
   ];
 
   const replicator_1_exclusions = [
