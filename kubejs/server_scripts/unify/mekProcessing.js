@@ -112,17 +112,6 @@ ServerEvents.recipes((e) => {
   //   oreProcessing(metal);
   // });
 
-  reaction(
-    '9x modern_industrialization:sulfur_dust',
-    [['#c:storage_blocks/coal', '#c:storage_blocks/charcoal'], 1],
-    '1000x #minecraft:water',
-    '1000x mekanism:hydrogen',
-    '1000x #mekanism:oxygen',
-    900
-  );
-  reaction('1x modern_industrialization:sulfur_dust', [['#minecraft:coals'], 1], '100x #minecraft:water', '100x mekanism:hydrogen', '100x #mekanism:oxygen', 100);
-  reaction('1x modern_industrialization:sulfur_dust', [['#c:dusts/coal', '#c:dusts/charcoal'], 1], '100x #minecraft:water', '100x mekanism:hydrogen', '100x #mekanism:oxygen', 100);
-
   e.remove({mod: 'mekanism', output: 'mekanism:block_salt'});
 
   // Removed to prevent progression skips in Modern Industrialization

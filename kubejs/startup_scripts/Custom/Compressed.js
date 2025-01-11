@@ -92,10 +92,10 @@ StartupEvents.registry('block', (event) => {
     {name: 'Charged Redstone', texture: 'charged_redstone_block', modID: 'appflux'},
   ];
 
-  for (let i = 1; i < 10; i++) {
-    compressedBlocks.forEach((block) => {
+  compressedBlocks.forEach((block) => {
+    for (let i = 1; i < 10; i++) {
       let blockId = block.name.replace(' ', '_').toLowerCase();
-      let c = '' + i; // Required to copy i, otherwise models will try to generate with wrong number because they're handled later
+      let c = '' + i;
       event
         .create(`craftoria:${c}x_compressed_${blockId}_block`)
         .displayName(`${c}x Compressed ${block.name} Block `)
@@ -118,7 +118,6 @@ StartupEvents.registry('block', (event) => {
             e.allFaces((f) => f.tex('#overlay').cull());
           });
         });
-      nonSortedCompressedBlocks.push(`craftoria:${c}x_compressed_${blockId}_block`);
-    });
-  }
+    }
+  });
 });
