@@ -8,7 +8,8 @@
       "lossRangeFrom": 0,
       "lossRangeTo": 100,
       "percentChanceOfLoss": 50,
-      "canLoseSoulbound": false
+      "canLoseSoulbound": false,
+      "includeModdedInventories": true
     },
     "loseSoulboundLevelOnDeath": false,
     "vanishingSlots": [],
@@ -27,6 +28,7 @@
     "informGraveLocation": true,
     "requireItem": false,
     "requiredItem": "yigd:grave",
+    "requiredItemCount": 1,
     "requireShovelToLoot": false,
     "retrieveMethods": {
       "onClick": true,
@@ -42,7 +44,7 @@
     "claimPriority": "GRAVE",
     "graveRobbing": {
       "enabled": true,
-      "onlyMurderer": false,
+      "killerSkipWaitTime": false,
       "afterTime": 1,
       "timeUnit": "HOURS",
       "robPriority": "INVENTORY",
@@ -170,7 +172,9 @@
       "rebindable": false,
       "receiveOnRespawn": false,
       "clickFunction": "VIEW_CONTENTS",
-      "consumeOnUse": false
+      "consumeOnUse": false,
+      "useTime": 0,
+      "useCooldown": 0
     },
     "graveCompass": {
       "receiveOnRespawn": false,

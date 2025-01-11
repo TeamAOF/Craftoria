@@ -33,7 +33,7 @@ exceptions = []
 			# Range: > -1
 			priority = 90
 
-		[crush.immersiveengineering.sawmill]
+		[crush.immersiveengineering.crusher]
 			#Priority of Immersive Engineering's Crusher recipes, -1 to disable
 			# Default: 85
 			# Range: > -1
@@ -49,11 +49,11 @@ exceptions = []
 			# Range: 1 ~ 4
 			tier = 1
 
-	[cut.mekanism]
-		#Priority of Mekanism's Sawmill recipes, -1 to disable
-		# Default: 100
-		# Range: > -1
-		sawmill = 100
+		[cut.mekanism.sawmill]
+			#Priority of Mekanism's Sawmill recipes, -1 to disable
+			# Default: 100
+			# Range: > -1
+			priority = 100
 
 		[cut.modern_industrialization.cutting_machine]
 			#Priority of Modern Industrialization's Cutting Machine recipes, -1 to disable

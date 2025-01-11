@@ -1286,3 +1286,14 @@
 		SpellPowerMultiplier = 1.0
 		CooldownInSeconds = 22.0
 		AllowCrafting = true
+
+	[Spells."alshanex_familiars:summon_shadows"]
+		Enabled = true
+		School = "irons_spellbooks:blood"
+		MaxLevel = 6
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "UNCOMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 150.0
+		AllowCrafting = true

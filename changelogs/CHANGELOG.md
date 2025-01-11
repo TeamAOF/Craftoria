@@ -1,15 +1,6 @@
-## Craftoria | v1.12.1
-
-_NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.12.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.12.1.md)_
-
-### Bug Fixes 🪲
-
-* Fixed a crash related to tooltips.
----
-
 ## Craftoria | v1.12.0
 
-_NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.12.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.12.0.md)_
+_NeoForge Loader 21.1.93_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.12.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.12.0.md)_
 
 ### Changes/Improvements ⭐
 
@@ -35,10 +26,12 @@ _NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 * Added quest info on how to enter each World Tier.
 * Added magic styled item borders to most magic mods.
 * Added EMI info on how to acquire Dry Rubber.
+* Enabled dynamic resources.
 * Improved Pipez textures/models.
 * BOMD bosses no longer spawn structures on death.
 * Allow infinity tools to use apoth gems.
 * Added Wandering Traders to ftbchunks interact whitelist.
+* Updated multiple Ars textures.
 * Added back smelting Mithril in furnace.
 * Allow crafting Bigger AE2 crafting accelerators back to basic ones.
 * Lowered netherrack output through gold drill.
@@ -82,19 +75,24 @@ _NeoForge Loader 21.1.90_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 * Fixed Wither Skeleton Tweaks swords not being enchantable.
 * Fixed IItemDecorators not rendering correctly in EMI, example being the MekaSuit energy bars.
 * Fixed ars elemental Soulbound enchantment not being localized.
+* Fixed looking up recipes through quests interface sometimes not working as intended.
 * Fixed pipes not connecting to the Reforging Table.
-* "Fixed" Lich boss crashing, this is a temporary fix disabling the projectiles.
+* Fixed Lich boss projectiles crashing the game.
 
 ### Added Mods ✅
 
   * [Akashic Tome](https://www.curseforge.com/minecraft/mc-mods/akashic-tome)
+  * [Alshanex's Familiars](https://www.curseforge.com/minecraft/mc-mods/alshanexs-familiars)
   * [Ars Unification](https://www.curseforge.com/minecraft/mc-mods/ars-unification)
   * [CFM Refurbished: Circuit Breaker](https://www.curseforge.com/minecraft/mc-mods/cfm-refurbished-circuit-breaker)
   * [CodeChicken Lib](https://www.curseforge.com/minecraft/mc-mods/codechicken-lib-1-8)
   * [DarkGlint](https://www.curseforge.com/minecraft/mc-mods/darkglint)
-  * [Ender Storage](https://www.curseforge.com/minecraft/mc-mods/ender-storage-1-8)
+  * [Ender Storage 1.8.+](https://www.curseforge.com/minecraft/mc-mods/ender-storage-1-8)
+  * [Enhanced Celestials Shader Support](https://www.curseforge.com/minecraft/mc-mods/enhanced-celestials-shader-support)
   * [Mekanism Extras](https://www.curseforge.com/minecraft/mc-mods/mekanism-extras)
   * [Mekanism: Weapons](https://www.curseforge.com/minecraft/mc-mods/mekanism-weapons)
+  * [More Functional Storage](https://www.curseforge.com/minecraft/mc-mods/more-functional-storage)
+  * [RPG Companions: Tiny Dragons](https://www.curseforge.com/minecraft/mc-mods/rpg-companions-tiny-dragons)
   * [Sophisticated Storage in Motion](https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage-in-motion)
 
 ### Removed Mods ❌
