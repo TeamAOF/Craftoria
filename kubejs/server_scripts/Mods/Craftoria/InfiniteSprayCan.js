@@ -124,3 +124,12 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
       break;
   }
 });
+
+ServerEvents.recipes((e) => {
+  e.shaped('craftoria:infinite_spray_can', [' T ', 'SPS', 'SDS'], {
+    T: 'pneumaticcraft:pressure_tube',
+    S: 'modern_industrialization:steel_curved_plate',
+    P: 'mekanism:painting_machine',
+    D: 'industrialforegoing:dye_mixer',
+  });
+});
