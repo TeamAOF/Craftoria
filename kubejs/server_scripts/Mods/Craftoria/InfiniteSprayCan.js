@@ -1,6 +1,23 @@
 // Made by white.phantom for use in Craftoria modpack
+
 // This script is a mess, but it works. It's a spray can that can change the color of blocks and entities
 const $DyeColor = Java.loadClass('net.minecraft.world.item.DyeColor');
+
+let sortColorsByLength = (colors) => {
+  return colors.sort((a, b) => {
+    a = `${a}`;
+    b = `${b}`;
+
+    // Sort by descending length
+    if (a.length > b.length) return -1;
+    if (a.length < b.length) return 1;
+
+    // If lengths are equal, compare alphabetically
+    if (a < b) return -1;
+    if (a > b) return 1;
+    return 0;
+  });
+};
 
 ItemEvents.firstLeftClicked('craftoria:infinite_spray_can', (e) => {
   const player = e.player;
@@ -24,12 +41,100 @@ ItemEvents.firstLeftClicked('craftoria:infinite_spray_can', (e) => {
   player.tell(`Current color: ${color}`);
 });
 
+// Flood fill blocks
+function floodFillBlocks(e, startPos, originalId, newId) {
+  const maxAttempts = 64;
+  let attempts = 0;
+  let queue = [startPos];
+  let visited = new Set();
+
+  while (queue.length > 0 && attempts <= maxAttempts) {
+    let pos = queue.shift();
+    let {x, y, z} = pos;
+    let key = `${x},${y},${z}`;
+    if (visited.has(key)) continue;
+    visited.add(key);
+
+    // Check block
+    let candidate = e.level.getBlock(x, y, z);
+    // console.info(`Checking block at ${x}, ${y}, ${z}, ${candidate.id}`);
+
+    // console.info(`candidate.id: '${candidate.id}' (type: ${typeof candidate.id})`);
+    // console.info(`originalId: '${originalId}' (type: ${typeof originalId})`);
+
+    // console.info(`candidate.id.toString(): '${candidate.id.toString()}'`);
+    // console.info(`originalId.toString(): '${originalId.toString()}'`);
+    // console.info(`Exact match? ${candidate.id.toString() === originalId.toString()}`);
+    if (`${candidate.id.toString()}` === `${originalId.toString()}`) {
+      // Recolor it
+      if (Item.exists(newId)) e.level.setBlockAndUpdate(candidate.pos, newId);
+      else e.player.tell(`No block found with ID: ${newId}`);
+      // e.player.tell(`Replaced block at ${x}, ${y}, ${z}, ${newId}`);
+
+      attempts++;
+      if (attempts === maxAttempts) {
+        e.player.tell(`Max flood-fill limit (${maxAttempts}) reached, stopping.`);
+        break;
+      }
+
+      // Add neighbors (6 directions) to queue
+      queue.push({x: x + 1, y: y, z: z});
+      queue.push({x: x - 1, y: y, z: z});
+      queue.push({x: x, y: y + 1, z: z});
+      queue.push({x: x, y: y - 1, z: z});
+      queue.push({x: x, y: y, z: z + 1});
+      queue.push({x: x, y: y, z: z - 1});
+    }
+  }
+}
+
+// Flood fill cables (AE2)
+function floodFillCables(e, startPos, originalCableId, newCableId) {
+  const maxAttempts = 64;
+  let attempts = 0;
+  let queue = [startPos];
+  let visited = new Set();
+
+  while (queue.length > 0 && attempts < maxAttempts) {
+    let pos = queue.shift();
+    let {x, y, z} = pos;
+    let key = `${x},${y},${z}`;
+    if (visited.has(key)) continue;
+    visited.add(key);
+
+    let block = e.level.getBlock(x, y, z);
+    // If it's not a cable bus, skip
+    if (block.id.toString() !== 'ae2:cable_bus') continue;
+
+    // Get the cable ID for candidate
+    let candidateCableId = block.entityData['cable']['id'].toString().replace('"', '');
+
+    if (candidateCableId === originalCableId) {
+      // Recolor it
+      if (Item.exists(newCableId)) e.server.runCommandSilent(`/data merge block ${x} ${y} ${z} {cable:{id:"${newCableId}"}}`);
+      else console.error(`No cable found with ID: ${newCableId}`);
+      // e.player.tell(`Replaced cable at ${x},${y},${z} with ${newCableId}`);
+      attempts++;
+      if (attempts === maxAttempts) {
+        e.player.tell(`Max flood-fill limit (${maxAttempts}) reached, stopping.`);
+        break;
+      }
+
+      // Add neighbors (6 directions) to the queue
+      queue.push({x: x + 1, y: y, z: z});
+      queue.push({x: x - 1, y: y, z: z});
+      queue.push({x: x, y: y + 1, z: z});
+      queue.push({x: x, y: y - 1, z: z});
+      queue.push({x: x, y: y, z: z + 1});
+      queue.push({x: x, y: y, z: z - 1});
+    }
+  }
+}
+
 ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
-  const colors = global.dyeColors;
+  const colors = sortColorsByLength(global.dyeColors);
   const player = e.player;
   let sprayCanColor = player.persistentData.infinite_spray_can_color.toString().replace('"', '') || 'clear';
-
-  // player.tell(`Sorted colors: ${colors.join(', ')}`);
   switch (e.target.type) {
     case 'BLOCK':
       const block = e.target.block;
@@ -44,6 +149,10 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
 
           // If it's 'fluix', handle it differently
           if (cableId.includes('fluix') && sprayCanColor !== 'clear') {
+            if (player.shiftKeyDown) {
+              floodFillCables(e, block.pos, cableId, cableId.replace('fluix', sprayCanColor));
+              break;
+            }
             player.tell(`Original Cable: ${cableId}`);
             player.tell(`Detected Color: None`);
             let newCableId = cableId.replace('fluix', sprayCanColor);
@@ -76,9 +185,16 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
           if (cableId === toBeCableId) break;
 
           if (Item.exists(toBeCableId)) {
+            if (player.shiftKeyDown) {
+              floodFillCables(e, block.pos, cableId, toBeCableId);
+              break;
+            }
             player.tell(`Recoloring to: ${toBeCableId}`);
             e.server.runCommandSilent(`/data merge block ${x} ${y} ${z} {cable:{id:"${toBeCableId}"}}`);
           } else player.tell(`No cable found with ID: ${toBeCableId}`);
+          break;
+
+        case 'modern_industrialization:pipe':
           break;
 
         default:
@@ -101,8 +217,13 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
           player.tell(`Detected Color: ${foundColor || 'None'}`);
           player.tell(`New Block ID: ${toBeId}`);
 
-          if (Item.exists(toBeId)) block.set(toBeId, block.properties);
-          else player.tell(`No block found with ID: ${toBeId}`);
+          if (Item.exists(toBeId)) {
+            if (player.shiftKeyDown) {
+              floodFillBlocks(e, block.pos, blockID, toBeId);
+              break;
+            }
+            block.set(toBeId, block.properties);
+          } else player.tell(`No block found with ID: ${toBeId}`);
           break;
       }
       break;
