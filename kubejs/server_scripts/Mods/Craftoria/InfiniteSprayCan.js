@@ -67,7 +67,7 @@ function floodFillBlocks(e, startPos, originalId, newId) {
     // console.info(`Exact match? ${candidate.id.toString() === originalId.toString()}`);
     if (`${candidate.id.toString()}` === `${originalId.toString()}`) {
       // Recolor it
-      if (Item.exists(newId)) e.level.setBlockAndUpdate(candidate.pos, newId);
+      if (Item.exists(newId)) candidate.set(newId, candidate.properties);
       else e.player.tell(`No block found with ID: ${newId}`);
       // e.player.tell(`Replaced block at ${x}, ${y}, ${z}, ${newId}`);
 
