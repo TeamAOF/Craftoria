@@ -43,12 +43,12 @@ ItemEvents.firstLeftClicked('craftoria:infinite_spray_can', (e) => {
 
 // Flood fill blocks
 function floodFillBlocks(e, startPos, originalId, newId) {
-  const maxAttempts = 64;
+  const maxAttempts = 1024;
   let attempts = 0;
   let queue = [startPos];
   let visited = new Set();
 
-  while (queue.length > 0 && attempts <= maxAttempts) {
+  while (queue.length > 0 && attempts < maxAttempts) {
     let pos = queue.shift();
     let {x, y, z} = pos;
     let key = `${x},${y},${z}`;
@@ -72,7 +72,7 @@ function floodFillBlocks(e, startPos, originalId, newId) {
       // e.player.tell(`Replaced block at ${x}, ${y}, ${z}, ${newId}`);
 
       attempts++;
-      if (attempts === maxAttempts) {
+      if (attempts >= maxAttempts) {
         e.player.tell(`Max flood-fill limit (${maxAttempts}) reached, stopping.`);
         break;
       }
@@ -107,15 +107,16 @@ function floodFillCables(e, startPos, originalCableId, newCableId) {
     if (block.id.toString() !== 'ae2:cable_bus') continue;
 
     // Get the cable ID for candidate
-    let candidateCableId = block.entityData['cable']['id'].toString().replace('"', '');
+    if (!block.entityData.cable) continue;
+    let candidateCableId = block.entityData.cable.id.toString().replace('"', '');
 
     if (candidateCableId === originalCableId) {
       // Recolor it
-      if (Item.exists(newCableId)) e.server.runCommandSilent(`/data merge block ${x} ${y} ${z} {cable:{id:"${newCableId}"}}`);
+      if (Item.exists(newCableId)) block.mergeEntityData({cable: {id: newCableId}});
       else console.error(`No cable found with ID: ${newCableId}`);
       // e.player.tell(`Replaced cable at ${x},${y},${z} with ${newCableId}`);
       attempts++;
-      if (attempts === maxAttempts) {
+      if (attempts >= maxAttempts) {
         e.player.tell(`Max flood-fill limit (${maxAttempts}) reached, stopping.`);
         break;
       }
@@ -142,7 +143,8 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
       const blockPath = blockID.path;
       switch (e.target.block.id) {
         case 'ae2:cable_bus':
-          const cableId = block.entityData['cable']['id'].toString().replace('"', '');
+          if (!block.entityData.cable) break;
+          const cableId = block.entityData.cable.id.toString().replace('"', '');
           const {x, y, z} = block.pos;
 
           player.tell(`Cable ID: ${cableId}`);
@@ -153,12 +155,11 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
               floodFillCables(e, block.pos, cableId, cableId.replace('fluix', sprayCanColor));
               break;
             }
-            player.tell(`Original Cable: ${cableId}`);
             player.tell(`Detected Color: None`);
             let newCableId = cableId.replace('fluix', sprayCanColor);
             player.tell(`New Cable ID: ${newCableId}`);
 
-            if (Item.exists(`${newCableId}`)) e.server.runCommandSilent(`/data merge block ${x} ${y} ${z} {cable:{id:"${newCableId}"}}`);
+            if (Item.exists(`${newCableId}`)) block.mergeEntityData({cable: {id: newCableId}});
             else player.tell(`No cable found with ID: ${newCableId}`);
 
             break;
@@ -179,7 +180,6 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
           });
 
           const toBeCableId = updatedCableId;
-          player.tell(`Original Cable: ${cableId}`);
           player.tell(`Detected Color: ${foundCableColor || 'None'}`);
           player.tell(`New Cable ID: ${toBeCableId}`);
           if (cableId === toBeCableId) break;
@@ -190,12 +190,12 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
               break;
             }
             player.tell(`Recoloring to: ${toBeCableId}`);
-            e.server.runCommandSilent(`/data merge block ${x} ${y} ${z} {cable:{id:"${toBeCableId}"}}`);
+            block.mergeEntityData({cable: {id: toBeCableId}});
           } else player.tell(`No cable found with ID: ${toBeCableId}`);
           break;
 
         case 'modern_industrialization:pipe':
-          break;
+          break; // Make sure to skip MI pipes, as the pipes WILL break if I try to mess with them
 
         default:
           if (sprayCanColor === 'clear') break; // If the spray can color is clear, just skip the block, will add a way to clear blocks later(if a clear variant exists)
