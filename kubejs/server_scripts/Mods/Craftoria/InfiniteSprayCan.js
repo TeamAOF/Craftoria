@@ -1,5 +1,4 @@
 // Made by white.phantom for use in Craftoria modpack
-
 // This script is a mess, but it works. It's a spray can that can change the color of blocks and entities
 const $DyeColor = Java.loadClass('net.minecraft.world.item.DyeColor');
 
@@ -19,8 +18,10 @@ let sortColorsByLength = (colors) => {
   });
 };
 
-ItemEvents.firstLeftClicked('craftoria:infinite_spray_can', (e) => {
-  const player = e.player;
+ItemEvents.firstLeftClicked('craftoria:infinite_spray_can', (event) => {
+  /** @type {{player: $ServerPlayer_, target: $Target_}} */
+  const { player, target } = event;
+  if (target.type !== 'miss') return;
   if (!player.persistentData.infinite_spray_can_index) player.persistentData.infinite_spray_can_index = 16;
   let currendtIndex = parseInt(player.persistentData.infinite_spray_can_index);
   let color = 'clear';
@@ -42,7 +43,9 @@ ItemEvents.firstLeftClicked('craftoria:infinite_spray_can', (e) => {
 });
 
 // Flood fill blocks
-function floodFillBlocks(e, startPos, originalId, newId) {
+function floodFillBlocks(event, startPos, originalId, newId) {
+  /** @type {{player: $ServerPlayer_, level: $ServerLevel_}} */
+  const { player, level } = event;
   const maxAttempts = 1024;
   let attempts = 0;
   let queue = [startPos];
@@ -50,13 +53,13 @@ function floodFillBlocks(e, startPos, originalId, newId) {
 
   while (queue.length > 0 && attempts < maxAttempts) {
     let pos = queue.shift();
-    let {x, y, z} = pos;
+    let { x, y, z } = pos;
     let key = `${x},${y},${z}`;
     if (visited.has(key)) continue;
     visited.add(key);
 
     // Check block
-    let candidate = e.level.getBlock(x, y, z);
+    let candidate = level.getBlock(x, y, z);
     // console.info(`Checking block at ${x}, ${y}, ${z}, ${candidate.id}`);
 
     // console.info(`candidate.id: '${candidate.id}' (type: ${typeof candidate.id})`);
@@ -68,28 +71,30 @@ function floodFillBlocks(e, startPos, originalId, newId) {
     if (`${candidate.id.toString()}` === `${originalId.toString()}`) {
       // Recolor it
       if (Item.exists(newId)) candidate.set(newId, candidate.properties);
-      else e.player.tell(`No block found with ID: ${newId}`);
-      // e.player.tell(`Replaced block at ${x}, ${y}, ${z}, ${newId}`);
+      else player.tell(`No block found with ID: ${newId}`);
+      // player.tell(`Replaced block at ${x}, ${y}, ${z}, ${newId}`);
 
       attempts++;
       if (attempts >= maxAttempts) {
-        e.player.tell(`Max flood-fill limit (${maxAttempts}) reached, stopping.`);
+        player.tell(`Max flood-fill limit (${maxAttempts}) reached, stopping.`);
         break;
       }
 
       // Add neighbors (6 directions) to queue
-      queue.push({x: x + 1, y: y, z: z});
-      queue.push({x: x - 1, y: y, z: z});
-      queue.push({x: x, y: y + 1, z: z});
-      queue.push({x: x, y: y - 1, z: z});
-      queue.push({x: x, y: y, z: z + 1});
-      queue.push({x: x, y: y, z: z - 1});
+      queue.push({ x: x + 1, y: y, z: z });
+      queue.push({ x: x - 1, y: y, z: z });
+      queue.push({ x: x, y: y + 1, z: z });
+      queue.push({ x: x, y: y - 1, z: z });
+      queue.push({ x: x, y: y, z: z + 1 });
+      queue.push({ x: x, y: y, z: z - 1 });
     }
   }
 }
 
 // Flood fill cables (AE2)
-function floodFillCables(e, startPos, originalCableId, newCableId) {
+function floodFillCables(event, startPos, originalCableId, color) {
+  /** @type {{player: $ServerPlayer_, level: $ServerLevel_}} */
+  const { player, level } = event;
   const maxAttempts = 64;
   let attempts = 0;
   let queue = [startPos];
@@ -97,73 +102,74 @@ function floodFillCables(e, startPos, originalCableId, newCableId) {
 
   while (queue.length > 0 && attempts < maxAttempts) {
     let pos = queue.shift();
-    let {x, y, z} = pos;
+    let { x, y, z } = pos;
     let key = `${x},${y},${z}`;
     if (visited.has(key)) continue;
     visited.add(key);
 
-    let block = e.level.getBlock(x, y, z);
+    let block = level.getBlock(x, y, z);
     // If it's not a cable bus, skip
     if (block.id.toString() !== 'ae2:cable_bus') continue;
-
     // Get the cable ID for candidate
     if (!block.entityData.cable) continue;
     let candidateCableId = block.entityData.cable.id.toString().replace('"', '');
 
     if (candidateCableId === originalCableId) {
+      /** @type $CableBusBlockEntity_ */
+      block = block.entity;
       // Recolor it
-      if (Item.exists(newCableId)) block.mergeEntityData({cable: {id: newCableId}});
-      else console.error(`No cable found with ID: ${newCableId}`);
-      // e.player.tell(`Replaced cable at ${x},${y},${z} with ${newCableId}`);
+      block.recolourBlock('up', color, player);
+      // player.tell(`Replaced cable at ${x},${y},${z} with ${newCableId}`);
       attempts++;
       if (attempts >= maxAttempts) {
-        e.player.tell(`Max flood-fill limit (${maxAttempts}) reached, stopping.`);
+        player.tell(`Max flood-fill limit (${maxAttempts}) reached, stopping.`);
         break;
       }
 
       // Add neighbors (6 directions) to the queue
-      queue.push({x: x + 1, y: y, z: z});
-      queue.push({x: x - 1, y: y, z: z});
-      queue.push({x: x, y: y + 1, z: z});
-      queue.push({x: x, y: y - 1, z: z});
-      queue.push({x: x, y: y, z: z + 1});
-      queue.push({x: x, y: y, z: z - 1});
+      queue.push({ x: x + 1, y: y, z: z });
+      queue.push({ x: x - 1, y: y, z: z });
+      queue.push({ x: x, y: y + 1, z: z });
+      queue.push({ x: x, y: y - 1, z: z });
+      queue.push({ x: x, y: y, z: z + 1 });
+      queue.push({ x: x, y: y, z: z - 1 });
     }
   }
 }
 
-ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
+ItemEvents.rightClicked('craftoria:infinite_spray_can', (event) => {
+  const { player, target } = event;
   const colors = sortColorsByLength(global.dyeColors);
-  const player = e.player;
   let sprayCanColor = player.persistentData.infinite_spray_can_color.toString().replace('"', '') || 'clear';
-  switch (e.target.type) {
+  switch (target.type) {
     case 'BLOCK':
-      const block = e.target.block;
+      const block = event.target.block;
       const blockID = block.id;
       const blockPath = blockID.path;
-      switch (e.target.block.id) {
+      switch (target.block.id) {
         case 'ae2:cable_bus':
           if (!block.entityData.cable) break;
           const cableId = block.entityData.cable.id.toString().replace('"', '');
-          const {x, y, z} = block.pos;
+          /** @type $CableBusBlockEntity_ */
+          const cable = block.entity;
+          if (sprayCanColor === 'clear') sprayCanColor = 'fluix';
 
           player.tell(`Cable ID: ${cableId}`);
 
           // If it's 'fluix', handle it differently
-          if (cableId.includes('fluix') && sprayCanColor !== 'clear') {
+          if (cableId.includes('fluix') && sprayCanColor !== 'fluix') {
             if (player.shiftKeyDown) {
-              floodFillCables(e, block.pos, cableId, cableId.replace('fluix', sprayCanColor));
+              floodFillCables(event, block.pos, cableId, sprayCanColor);
               break;
             }
             player.tell(`Detected Color: None`);
             let newCableId = cableId.replace('fluix', sprayCanColor);
             player.tell(`New Cable ID: ${newCableId}`);
 
-            if (Item.exists(`${newCableId}`)) block.mergeEntityData({cable: {id: newCableId}});
-            else player.tell(`No cable found with ID: ${newCableId}`);
+            cable.recolourBlock('up', sprayCanColor, player);
 
             break;
-          } else if (cableId.includes('fluix') && sprayCanColor === 'clear') {
+          } else if (cableId.includes('fluix') && sprayCanColor === 'fluix') {
             player.tell('Fluix cable is already clear');
             break;
           }
@@ -174,7 +180,7 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
           colors.forEach((color) => {
             if (updatedCableId.includes(color) && !foundCableColor) {
               foundCableColor = color;
-              if (sprayCanColor !== 'clear') updatedCableId = updatedCableId.replace(`:${color}`, `:${sprayCanColor}`);
+              if (sprayCanColor !== 'fluix') updatedCableId = updatedCableId.replace(`:${color}`, `:${sprayCanColor}`);
               else updatedCableId = updatedCableId.replace(`:${color}`, ':fluix');
             }
           });
@@ -186,11 +192,11 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
 
           if (Item.exists(toBeCableId)) {
             if (player.shiftKeyDown) {
-              floodFillCables(e, block.pos, cableId, toBeCableId);
+              floodFillCables(event, block.pos, cableId, sprayCanColor);
               break;
             }
             player.tell(`Recoloring to: ${toBeCableId}`);
-            block.mergeEntityData({cable: {id: toBeCableId}});
+            cable.recolourBlock('up', sprayCanColor, player);
           } else player.tell(`No cable found with ID: ${toBeCableId}`);
           break;
 
@@ -219,7 +225,7 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
 
           if (Item.exists(toBeId)) {
             if (player.shiftKeyDown) {
-              floodFillBlocks(e, block.pos, blockID, toBeId);
+              floodFillBlocks(event, block.pos, blockID, toBeId);
               break;
             }
             block.set(toBeId, block.properties);
@@ -228,14 +234,15 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (e) => {
       }
       break;
     case 'ENTITY':
-      const entity = e.target.entity;
-      switch (entity.type) {
+      switch (target.entity.type) {
         case 'minecraft:sheep':
-          let sprayCanIndex = parseInt(player.persistentData.infinite_spray_can_index);
-          if (sprayCanIndex !== 16) entity.mergeNbt({Color: sprayCanIndex});
-          player.tell(`Spray Can Index: ${sprayCanIndex}`);
-          player.tell(`Sheep Color: ${$DyeColor.byId(parseInt(entity.nbt['Color'])).toString().toLowerCase()}`);
+          /** @type {{entity: $Sheep_}} */
+          const { entity } = target;
+          if (global.dyeColors.includes(sprayCanColor)) entity.setColor(sprayCanColor);
+          player.tell(`Spray Can Color: ${sprayCanColor}`);
+          player.tell(`Sheep Color: ${entity.color}`);
           break;
+
         default:
           break;
       }
