@@ -192,7 +192,7 @@ ItemEvents.firstRightClicked('craftoria:infinite_spray_can', (event) => {
     }
 
     case 'ENTITY': {
-      const { entity } = target;
+      let { entity } = target;
       switch (entity.type) {
         case 'minecraft:sheep': {
           /** @type $Sheep_ */
