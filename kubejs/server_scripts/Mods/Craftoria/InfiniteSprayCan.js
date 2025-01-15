@@ -135,13 +135,13 @@ function floodFillCables(event, startPos, originalCableId, color, direction) {
 // =========================================================
 ItemEvents.firstRightClicked('craftoria:infinite_spray_can', (event) => {
   const { player, target } = event;
+  const { block, entity } = target;
   const colors = sortColorsByLength(global.dyeColors);
   if (!player.persistentData.infinite_spray_can_color) player.persistentData.infinite_spray_can_color = 'clear';
   let sprayCanColor = player.persistentData.infinite_spray_can_color.toString().replace('"', '') || 'clear';
 
   switch (target.type) {
     case 'BLOCK': {
-      let block = target.block;
       let blockID = block.id;
       let blockPath = blockID.path;
 
@@ -192,7 +192,6 @@ ItemEvents.firstRightClicked('craftoria:infinite_spray_can', (event) => {
     }
 
     case 'ENTITY': {
-      let { entity } = target;
       switch (entity.type) {
         case 'minecraft:sheep': {
           /** @type $Sheep_ */
