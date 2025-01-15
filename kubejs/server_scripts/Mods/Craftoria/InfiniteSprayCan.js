@@ -1,51 +1,53 @@
 // Made by white.phantom for use in Craftoria modpack
-// This script is a mess, but it works. It's a spray can that can change the color of blocks and entities
 const $DyeColor = Java.loadClass('net.minecraft.world.item.DyeColor');
 
+const debugLogs = global.debugLogs || false;
+
+// Sort colors by descending length
 let sortColorsByLength = (colors) => {
   return colors.sort((a, b) => {
     a = `${a}`;
     b = `${b}`;
-
-    // Sort by descending length
     if (a.length > b.length) return -1;
     if (a.length < b.length) return 1;
-
-    // If lengths are equal, compare alphabetically
     if (a < b) return -1;
     if (a > b) return 1;
     return 0;
   });
 };
 
+// =========================================================
+// Handle left-click color cycling
+// =========================================================
 ItemEvents.firstLeftClicked('craftoria:infinite_spray_can', (event) => {
-  /** @type {{player: $ServerPlayer_, target: $Target_}} */
   const { player, target } = event;
   if (target.type !== 'miss') return;
+
   if (!player.persistentData.infinite_spray_can_index) player.persistentData.infinite_spray_can_index = 16;
-  let currendtIndex = parseInt(player.persistentData.infinite_spray_can_index);
+
+  let currentIndex = parseInt(player.persistentData.infinite_spray_can_index);
   let color = 'clear';
 
-  if (!player.shiftKeyDown) {
-    if (currendtIndex > 15) currendtIndex = 0;
-    else currendtIndex++;
-  } else {
-    if (currendtIndex <= 0) currendtIndex = 16;
-    else currendtIndex--;
-  }
-  if (currendtIndex <= 15) {
-    color = $DyeColor.byId(currendtIndex).toString().toLowerCase();
-  }
-  player.persistentData.infinite_spray_can_index = currendtIndex;
+  if (!player.shiftKeyDown) currentIndex = currentIndex > 15 ? 0 : currentIndex + 1;
+  else currentIndex = currentIndex <= 0 ? 16 : currentIndex - 1;
+
+  if (currentIndex <= 15) color = $DyeColor.byId(currentIndex).toString().toLowerCase();
+
+  player.persistentData.infinite_spray_can_index = currentIndex;
   player.persistentData.infinite_spray_can_color = color;
-  player.tell(`Current index: ${currendtIndex}`);
   player.tell(`Current color: ${color}`);
 });
 
-// Flood fill blocks
+/**
+ * Flood Fill for Normal Blocks
+ * @param {$ItemClickedKubeEvent_} event
+ * @param {$BlockPos_} startPos
+ * @param {$Item_} originalId
+ * @param {$Item_} newId
+ */
 function floodFillBlocks(event, startPos, originalId, newId) {
-  /** @type {{player: $ServerPlayer_, level: $ServerLevel_}} */
-  const { player, level } = event;
+  const { player, level, target } = event;
+  const origBlock = target.block;
   const maxAttempts = 1024;
   let attempts = 0;
   let queue = [startPos];
@@ -58,29 +60,19 @@ function floodFillBlocks(event, startPos, originalId, newId) {
     if (visited.has(key)) continue;
     visited.add(key);
 
-    // Check block
     let candidate = level.getBlock(x, y, z);
-    // console.info(`Checking block at ${x}, ${y}, ${z}, ${candidate.id}`);
+    if (debugLogs) player.tell(`Checking block at ${x}, ${y}, ${z}: ${candidate.id}`);
 
-    // console.info(`candidate.id: '${candidate.id}' (type: ${typeof candidate.id})`);
-    // console.info(`originalId: '${originalId}' (type: ${typeof originalId})`);
-
-    // console.info(`candidate.id.toString(): '${candidate.id.toString()}'`);
-    // console.info(`originalId.toString(): '${originalId.toString()}'`);
-    // console.info(`Exact match? ${candidate.id.toString() === originalId.toString()}`);
-    if (`${candidate.id.toString()}` === `${originalId.toString()}`) {
-      // Recolor it
+    if (candidate.id.equals(originalId) && candidate.properties.equals(origBlock.properties)) {
       if (Item.exists(newId)) candidate.set(newId, candidate.properties);
       else player.tell(`No block found with ID: ${newId}`);
-      // player.tell(`Replaced block at ${x}, ${y}, ${z}, ${newId}`);
 
       attempts++;
       if (attempts >= maxAttempts) {
         player.tell(`Max flood-fill limit (${maxAttempts}) reached, stopping.`);
         break;
       }
-
-      // Add neighbors (6 directions) to queue
+      // Add neighbors
       queue.push({ x: x + 1, y: y, z: z });
       queue.push({ x: x - 1, y: y, z: z });
       queue.push({ x: x, y: y + 1, z: z });
@@ -91,9 +83,15 @@ function floodFillBlocks(event, startPos, originalId, newId) {
   }
 }
 
-// Flood fill cables (AE2)
-function floodFillCables(event, startPos, originalCableId, color) {
-  /** @type {{player: $ServerPlayer_, level: $ServerLevel_}} */
+/**
+ * Flood Fill for AE2 Cables
+ * @param {$ItemClickedKubeEvent_} event
+ * @param {$BlockPos_} startPos
+ * @param {$Item_} originalCableId
+ * @param {$AEColor_} color
+ * @param {import("net.minecraft.core.Direction").$Direction$$Type} direction
+ */
+function floodFillCables(event, startPos, originalCableId, color, direction) {
   const { player, level } = event;
   const maxAttempts = 64;
   let attempts = 0;
@@ -108,25 +106,20 @@ function floodFillCables(event, startPos, originalCableId, color) {
     visited.add(key);
 
     let block = level.getBlock(x, y, z);
-    // If it's not a cable bus, skip
     if (block.id.toString() !== 'ae2:cable_bus') continue;
-    // Get the cable ID for candidate
     if (!block.entityData.cable) continue;
-    let candidateCableId = block.entityData.cable.id.toString().replace('"', '');
 
+    let candidateCableId = block.entityData.cable.id.toString().replace('"', '');
     if (candidateCableId === originalCableId) {
       /** @type $CableBusBlockEntity_ */
-      block = block.entity;
-      // Recolor it
-      block.recolourBlock('up', color, player);
-      // player.tell(`Replaced cable at ${x},${y},${z} with ${newCableId}`);
+      let cable = block.entity;
+      cable.recolourBlock(direction, color, player);
       attempts++;
       if (attempts >= maxAttempts) {
         player.tell(`Max flood-fill limit (${maxAttempts}) reached, stopping.`);
         break;
       }
-
-      // Add neighbors (6 directions) to the queue
+      // Add neighbors
       queue.push({ x: x + 1, y: y, z: z });
       queue.push({ x: x - 1, y: y, z: z });
       queue.push({ x: x, y: y + 1, z: z });
@@ -137,75 +130,41 @@ function floodFillCables(event, startPos, originalCableId, color) {
   }
 }
 
+// =========================================================
+// Right-Click Handler
+// =========================================================
 ItemEvents.rightClicked('craftoria:infinite_spray_can', (event) => {
   const { player, target } = event;
   const colors = sortColorsByLength(global.dyeColors);
+  if (!player.persistentData.infinite_spray_can_color) player.persistentData.infinite_spray_can_color = 'clear';
   let sprayCanColor = player.persistentData.infinite_spray_can_color.toString().replace('"', '') || 'clear';
+
   switch (target.type) {
-    case 'BLOCK':
-      const block = event.target.block;
-      const blockID = block.id;
-      const blockPath = blockID.path;
-      switch (target.block.id) {
-        case 'ae2:cable_bus':
+    case 'BLOCK': {
+      let block = target.block;
+      let blockID = block.id;
+      let blockPath = blockID.path;
+
+      switch (block.id) {
+        case 'ae2:cable_bus': {
           if (!block.entityData.cable) break;
-          const cableId = block.entityData.cable.id.toString().replace('"', '');
+          let cableId = block.entityData.cable.id.toString().replace('"', '');
           /** @type $CableBusBlockEntity_ */
-          const cable = block.entity;
+          let cable = block.entity;
+          let direction = target.facing;
+
           if (sprayCanColor === 'clear') sprayCanColor = 'fluix';
-
-          player.tell(`Cable ID: ${cableId}`);
-
-          // If it's 'fluix', handle it differently
-          if (cableId.includes('fluix') && sprayCanColor !== 'fluix') {
-            if (player.shiftKeyDown) {
-              floodFillCables(event, block.pos, cableId, sprayCanColor);
-              break;
-            }
-            player.tell(`Detected Color: None`);
-            let newCableId = cableId.replace('fluix', sprayCanColor);
-            player.tell(`New Cable ID: ${newCableId}`);
-
-            cable.recolourBlock('up', sprayCanColor, player);
-
-            break;
-          } else if (cableId.includes('fluix') && sprayCanColor === 'fluix') {
-            player.tell('Fluix cable is already clear');
-            break;
-          }
-
-          let foundCableColor = null;
-          let updatedCableId = cableId;
-
-          colors.forEach((color) => {
-            if (updatedCableId.includes(color) && !foundCableColor) {
-              foundCableColor = color;
-              if (sprayCanColor !== 'fluix') updatedCableId = updatedCableId.replace(`:${color}`, `:${sprayCanColor}`);
-              else updatedCableId = updatedCableId.replace(`:${color}`, ':fluix');
-            }
-          });
-
-          const toBeCableId = updatedCableId;
-          player.tell(`Detected Color: ${foundCableColor || 'None'}`);
-          player.tell(`New Cable ID: ${toBeCableId}`);
-          if (cableId === toBeCableId) break;
-
-          if (Item.exists(toBeCableId)) {
-            if (player.shiftKeyDown) {
-              floodFillCables(event, block.pos, cableId, sprayCanColor);
-              break;
-            }
-            player.tell(`Recoloring to: ${toBeCableId}`);
-            cable.recolourBlock('up', sprayCanColor, player);
-          } else player.tell(`No cable found with ID: ${toBeCableId}`);
+          if (player.shiftKeyDown) floodFillCables(event, block.pos, cableId, sprayCanColor, direction);
+          else cable.recolourBlock(direction, sprayCanColor, player);
           break;
+        }
 
         case 'modern_industrialization:pipe':
-          break; // Make sure to skip MI pipes, as the pipes WILL break if I try to mess with them
+          // Skip MI pipes to avoid breaking them
+          break;
 
-        default:
-          if (sprayCanColor === 'clear') break; // If the spray can color is clear, just skip the block, will add a way to clear blocks later(if a clear variant exists)
-
+        default: {
+          if (sprayCanColor === 'clear') break;
           let foundColor = null;
           let updatedPath = blockPath;
 
@@ -216,12 +175,8 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (event) => {
             }
           });
 
-          const toBeId = `${blockID.namespace}:${updatedPath}`;
-          if (blockID === toBeId) break;
-
-          player.tell(`Original Block: ${blockID}`);
-          player.tell(`Detected Color: ${foundColor || 'None'}`);
-          player.tell(`New Block ID: ${toBeId}`);
+          let toBeId = `${blockID.namespace}:${updatedPath}`;
+          if (blockID.toString() === toBeId) break;
 
           if (Item.exists(toBeId)) {
             if (player.shiftKeyDown) {
@@ -231,28 +186,34 @@ ItemEvents.rightClicked('craftoria:infinite_spray_can', (event) => {
             block.set(toBeId, block.properties);
           } else player.tell(`No block found with ID: ${toBeId}`);
           break;
+        }
       }
       break;
-    case 'ENTITY':
-      switch (target.entity.type) {
-        case 'minecraft:sheep':
-          /** @type {{entity: $Sheep_}} */
-          const { entity } = target;
-          if (global.dyeColors.includes(sprayCanColor)) entity.setColor(sprayCanColor);
-          player.tell(`Spray Can Color: ${sprayCanColor}`);
-          player.tell(`Sheep Color: ${entity.color}`);
-          break;
+    }
 
+    case 'ENTITY':
+      const { entity } = target;
+      switch (entity.type) {
+        case 'minecraft:sheep':
+          /** @type $Sheep_ */
+          const sheep = entity;
+          if (global.dyeColors.includes(sprayCanColor)) {
+            sheep.setColor(sprayCanColor);
+            if (debugLogs) player.tell(`Sheep recolored: ${sprayCanColor}`);
+          }
+          break;
         default:
           break;
       }
       break;
     default:
-      player.tell('MISS');
       break;
   }
 });
 
+// =========================================================
+// Recipe for the Spray Can
+// =========================================================
 ServerEvents.recipes((e) => {
   e.shaped('craftoria:infinite_spray_can', [' T ', 'SPS', 'SDS'], {
     T: 'pneumaticcraft:pressure_tube',
