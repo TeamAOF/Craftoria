@@ -196,7 +196,7 @@ ItemEvents.firstRightClicked('craftoria:infinite_spray_can', (event) => {
       switch (entity.type) {
         case 'minecraft:sheep': {
           /** @type $Sheep_ */
-          const sheep = entity;
+          let sheep = entity;
           if (global.dyeColors.includes(sprayCanColor)) {
             sheep.setColor(sprayCanColor);
             if (debugLogs) player.tell(`Sheep recolored: ${sprayCanColor}`);
