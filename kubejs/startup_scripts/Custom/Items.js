@@ -25,6 +25,4 @@ StartupEvents.registry('item', (e) => {
     .tag(`modern_industrialization:replicator_blacklist`)
     .tag(`craftoria:replicator_1_blacklist`)
     .rarity('Epic');
-
-  e.create('craftoria:infinite_spray_can').displayName('§dInfinite Spray Can').rarity('Epic').unstackable();
 });

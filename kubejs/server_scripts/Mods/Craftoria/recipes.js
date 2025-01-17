@@ -31,4 +31,11 @@ ServerEvents.recipes((e) => {
   }).id('craftoria:name_tag');
 
   e.smelting('irons_spellbooks:mithril_scrap', 'irons_spellbooks:raw_mithril').xp(40).cookingTime(400).id('craftoria:irons/mithril_scrap_from_raw');
+
+  e.shaped('phantoms_utilities:spray_can', [' T ', 'SPS', 'SDS'], {
+    T: 'pneumaticcraft:pressure_tube',
+    S: 'modern_industrialization:steel_curved_plate',
+    P: 'mekanism:painting_machine',
+    D: 'industrialforegoing:dye_mixer',
+  }).id('phantoms_utilities:spray_can');
 });
