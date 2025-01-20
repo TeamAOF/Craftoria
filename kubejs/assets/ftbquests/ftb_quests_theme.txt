@@ -80,6 +80,9 @@ checkmark_task_inactive: minecraft:textures/gui/sprites/pending_invite/accept.pn
 [01B56BD678E7745B]
 background:                         ftbquests:textures/gui/bg_powah.png; color=#a0a0a0; tile_size=64
 
+[3B4FADE31FB88E9F]
+dependency_line_texture:            irons_spellbooks:textures/entity/flame_strike/flame_strike_2.png
+
 [0597AF3E8B286CFA]
 background:                         ars_nouveau:textures/block/ghostweave.png; color=#404040; tile_size=32
 dependency_line_texture:            ars_nouveau:textures/block/mage_block_transparent.png
@@ -90,9 +93,8 @@ dependency_line_uncompleted_color:  #FFccb400
 
 [26E59C8DBA7F6FE3]
 dependency_line_texture:            minecraft:textures/particle/heart.png
-#dependency_line_texture:            irons_spellbooks:textures/entity/flame_strike/flame_strike_2.png
 dependency_line_thickness:          0.4
-dependency_line_unselected_speed:     0.75
+dependency_line_unselected_speed:   0.75
 
 [3188AC6C440F7520]
 dependency_line_uncompleted_color:  #F8ffeee4
@@ -104,6 +106,12 @@ dependency_line_completed_color:    #C8eae3cb
 dependency_line_uncompleted_color:  #F8C8C8C8
 dependency_line_selected_speed:     1.0
 dependency_line_unselected_speed:   0.5
+
+[3B4FADE31FB88E9F]
+dependency_line_texture:            irons_spellbooks:textures/entity/portal/portal_round.png
+dependency_line_thickness:          0.5
+dependency_line_unselected_speed:   0.75
+dependency_line_uncompleted_color:  #FF808080
 
 [40CEA39FE5F5225D]
 dependency_line_texture:            ftbquests:textures/gui/flowing_mekanism.png
