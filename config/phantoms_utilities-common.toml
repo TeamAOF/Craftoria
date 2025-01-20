@@ -1,0 +1,13 @@
+	[items.spray_can]
+		#Maximum amount of ae2 cables that can be re-dyed using the spray can at once.
+		# Default: 64
+		# Range: > 0
+		maxCableDyeCount = 64
+		#Maximum amount of blocks that can be dyed using the spray can at once.
+		# Default: 1024
+		# Range: > 0
+		maxBlockDyeCount = 1024
+		#Maximum amount of blocks/cables that can be checked for before it stops checking,different from the maxBlockDyeCount and maxCableCount as this is the total amount of blocks/cables that can be checked for.
+		# Default: 8192
+		# Range: > 0
+		maxTotalChecks = 8192
