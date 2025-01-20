@@ -73,6 +73,7 @@
 	quest.02AE5771A57BC6BE.title: "&3Applied Energistics"
 	quest.02C96AE982806447.quest_desc: ["&bBuilding Gadgets &fuse &4power &fto operate. While &6pressing &b\"H\" &fby default, it will open the setting menu from which u can select the size, and other options."]
 	quest.02C96AE982806447.title: "&bBuilding Gadgets"
+	quest.02D3AFC713077502.quest_desc: ["Makes fermentation processes more &6efficient&r. &aYou may wish to automate this&r."]
 	quest.030E566682A89105.quest_desc: [
 		"   The &bfuel canister&r holds a large amount of fuel."
 		""
@@ -240,10 +241,12 @@
 	]
 	quest.0729CB454B970201.title: "Bronze Drill"
 	quest.077658D04D0D4AB3.quest_desc: [
-		"Multiblock:"
-		"&b1x Sal Ammoniac Tank"
-		"&b1x Sal Ammoniac Accumulator"
+		"The &bSal Ammoniac Tank&r must be &6placed below&r the &bSal Ammoniac Accumulator&r. In tandem, these two devices will create &dSal Ammoniac solvent&r from &9Water&r."
+		""
+		"If you wish for solvent &afaster&r, you can &6provide&r the Accumulator with &bSal Ammoniac crystals&r to greatly expedite the process."
 	]
+	quest.077658D04D0D4AB3.quest_subtitle: "Is it poisonous?"
+	quest.077658D04D0D4AB3.title: "Sal Ammoniac Accumulator"
 	quest.07D88A0ABF82A39A.quest_desc: ["Harvested from &6Animals&f while using a &bKnife&f."]
 	quest.07F1FA5EF3E6A7F3.quest_desc: [
 		"This &3substance&r can be &6processed&r in a &bThermopneumatic Processing Plant&r to &6produce&r &bKerosene&r or, by adding &4Redstone, Lubricant&r. "
@@ -384,6 +387,7 @@
 	quest.0C9D9AFD7C5C9F97.quest_desc: ["The &bNetherite Stick&f does the same things, but with a block &6place&f maximum of 1024 blocks."]
 	quest.0CE7E899D54A6AE8.quest_subtitle: "Congratulations! You've completed AE2!"
 	quest.0CE7E899D54A6AE8.title: "&bApplied Energistics &d100%"
+	quest.0D1AFCAD90FAA4F9.quest_desc: ["This Rod is pre-attuned to find a &aCommon&r material."]
 	quest.0D44F37BE787CA30.quest_desc: ["This &3substance&r can be &6processed&r in a &bThermopneumatic Processing Plant&r to produce &eLPG&r, which is an &aexcellent&r &7liquid fuel&r comparable in quality to &3Thermal Expansion’s&r &7Refined Fuel&r. "]
 	quest.0D44F37BE787CA30.title: "&6Gasoline"
 	quest.0D632F9A1EAFDA57.quest_subtitle: "Congratulations! You've completed PNC!"
@@ -418,7 +422,7 @@
 		""
 		"Additionally, &bTube Modules&r can be &6attached&r to these &bTubes&r to provide &aextra features&r or &efunctionality&r."
 	]
-	quest.0E30CFA6C5B58BEA.quest_desc: ["This &bVat &fallows you to convert your &bAlchemical Niter &ffrom one tier to another."]
+	quest.0E30CFA6C5B58BEA.quest_desc: ["This &bVat&r allows you to convert your &bAlchemical Niter&r from one tier to another."]
 	quest.0E30CFA6C5B58BEA.quest_subtitle: "Upgrades?"
 	quest.0E352E2B17084DAE.quest_desc: ["The &bAdvanced Sawing Factory&r can process up to &a5&r sawing processes at the same time, containing the same \"&eAuto-Sort&r\" function."]
 	quest.0E352E2B17084DAE.title: "Advanced Sawing Factory"
@@ -973,9 +977,9 @@
 	]
 	quest.19C33613F2811BAA.quest_desc: ["The &bBasic Terminal&f allows you to access your &bstorage&f, but it can be upgraded."]
 	quest.19C33613F2811BAA.title: "Terminal"
-	quest.19F7B6A670D4A707.quest_desc: ["Obtained from the &bDistiller, Mercury &fin its rawest form."]
+	quest.19F7B6A670D4A707.quest_desc: ["Obtained from the &bDistiller&r, this is &bMercury&r in its rawest form."]
 	quest.19F7B6A670D4A707.quest_subtitle: "Raw Mercury"
-	quest.19F7B6A670D4A707.title: "Mercury Shards"
+	quest.19F7B6A670D4A707.title: "Crystallized Mercury"
 	quest.1A1C915A4A1F7741.quest_desc: [
 		"   &bBlazebloom goo&r will &6transform&r blocks of &bprimal coal&r into &braw blaze ember&r "
 		""
@@ -1090,8 +1094,12 @@
 		"  Keep in mind, this fusion takes a lot of energy to start going, but can produce much more as a result."
 	]
 	quest.1CC910880728D896.title: "Fusion Reactor"
-	quest.1CD1F5A08AE6E557.quest_desc: ["Obtained in the depth of the world &bSal Ammoniac &fis best found at y_."]
-	quest.1CD1F5A08AE6E557.quest_subtitle: "Obtained from the depths"
+	quest.1CD1F5A08AE6E557.quest_desc: [
+		"Obtained from &3ore&r found commonly around &6sea level&r, &bSal Ammoniac&r is a crystal brimming with useful properties."
+		""
+		"You will want a decent supply of it."
+	]
+	quest.1CD1F5A08AE6E557.quest_subtitle: "Sparkling in the depths"
 	quest.1D249BAAD819E83F.quest_desc: [
 		"This machine &6converts&r &bForge Energy&r (&9compatible with RF and many other mods’ energy&r) into &7compressed air&r. "
 		""
@@ -1172,6 +1180,14 @@
 	]
 	quest.1E7FD1EBAE4891FA.quest_subtitle: "Player Mana (Source)"
 	quest.1E7FD1EBAE4891FA.title: "Spell 101 - 2"
+	quest.1EBE2B9A6CCE5A69.quest_desc: [
+		"&3Divining Rods&r allow an alchemist to &6locate&r valuable blocks from afar."
+		""
+		"&6Sneak-using&r your Rod on a block will &6attune&r it to that block. When you &6charge&r the Rod up, it will send off a particle to the nearest target block it found - &cthis will consume durability&r. &6Use&r it normally to \"ping\" that location again. The gem becomes more purple the closer you are to the block."
+		""
+		"The Glass Rod, being the cheapest, can locate only &8Abundant&r and &aCommon&r blocks."
+	]
+	quest.1EBE2B9A6CCE5A69.quest_subtitle: "Finding my way"
 	quest.1EC75DB7FA07D06B.quest_desc: [
 		"This &9Module&r vents &8high-pressure&r &bair&r when the &7tube pressure&r reaches &c4.9&r bar (&c19.9&r for &bAdvanced Pressure Tubes&r). "
 		""
@@ -1221,8 +1237,12 @@
 	quest.1FAB4634116B6EC8.title: "The Backbone of this Operation"
 	quest.1FD59C1147BCE34F.quest_desc: ["The spawner ignores spawn conditions."]
 	quest.1FD59C1147BCE34F.quest_subtitle: "+ Ignores Conditions"
-	quest.1FF9FB01DBE735FC.quest_desc: ["This &bVat &fturns &bAlchemical Sulfur &finto &bAlchemical Niter"]
-	quest.1FF9FB01DBE735FC.quest_subtitle: "Sulfur = Niter"
+	quest.1FF9FB01DBE735FC.quest_desc: [
+		"The nature of a &bSulfur&r is able to be &6changed&r. This is the basis for transmutation."
+		""
+		"This &bVat&r, when given the right ingredients, is able to &6transform&r Sulfur into a much more malleable state - &bAlchemical Niter&r."
+	]
+	quest.1FF9FB01DBE735FC.quest_subtitle: "Equivalent exchange?"
 	quest.202149DADCC786EE.quest_desc: [
 		"  Congrats!"
 		""
@@ -1378,6 +1398,7 @@
 	quest.22420EF3089DD7F6.title: "Assembler"
 	quest.225C580584927804.quest_desc: ["The &bAdvanced Smelting Factory&r can process up to &a5&r smelting processes at the same time, containing the same \"&eAuto-Sort&r\" function."]
 	quest.225C580584927804.title: "Advanced Smelting Factory"
+	quest.22822DD2E10F65EA.quest_desc: ["This device, when &6placed&r on a &bMercury Catalyst&r, can power the &bReformation Array&r."]
 	quest.22A2121A25A010AB.quest_desc: ["Each &bBasic Induction Cell&r added to your matrix adds &e3.2 GFE&r of energy storage."]
 	quest.22A2121A25A010AB.title: "Basic Induction Cell"
 	quest.22AC242F0A230278.quest_desc: ["The &dQIO Redstone Adapter&r allows you to &6monitor&r your storage system's content through &4redstone signals&r."]
@@ -1422,6 +1443,7 @@
 		"It’s also immune to all &cfire&r."
 	]
 	quest.247E497BC6DE25CE.title: "Robit"
+	quest.248175A1E0825C2F.quest_desc: ["This Rod can locate &dPrecious&r materials."]
 	quest.24A4F1AA0BFFE867.quest_desc: [
 		"  This is the electric version of the &bSteam Blast Furnace&r. The &bElectric Blast Furnace (aka EBF)&r uses induction heating to produce extreme temperatures, unlocking a plethora of new recipes. Plus, it's &6overclock is bounded to 128 EU/t by default&r, just like other multi-block electric machines."
 		""
@@ -1672,6 +1694,7 @@
 		"  This is, the very &ofabric&r of the &9universe&r."
 	]
 	quest.2B1717F5D6E20B79.title: "UU Matter Bucket"
+	quest.2B2D3B338662F02C.quest_desc: ["This especially pure variant of gold is used to &6alter&r the &atier&r of a &bSulfur&r."]
 	quest.2B3B96DDFE5D3ACA.quest_desc: ["Using &bBoiler Casings&r you can create a &bTheroelectric Boiler&r to &6generate&r extra &7steam&r from &cexternal heat&r, including &9Superheated Liquid Sodium&r from an active &bFission reactor&r."]
 	quest.2B3B96DDFE5D3ACA.title: "Boiler Casing"
 	quest.2B41DC5E4D733C9C.quest_subtitle: "Dropped within the Trials of Awaken gateway. "
@@ -1814,11 +1837,9 @@
 	quest.2F6C16939D136BF0.quest_desc: ["The&b Annihilation Plane&f will &6break blocks&f and&6 pick up&6&b items&f directly in front of it."]
 	quest.2F6C16939D136BF0.title: "ME Planes"
 	quest.2F7A213261682E1B.quest_desc: [
-		"The &bLiquefraction Cauldron &fis a small multi-block that allows for the creation of &bAlchemical Sulfur."
+		"The &bLiquefaction Cauldron&r &6soaks&r resources in &dsolvent&r to produce &bSulfur&r from them. &6Heat&r is required for the reaction."
 		""
-		"Multiblock:"
-		"&b1x Stone"
-		"&b1x Liquefraction Cauldron"
+		"Note that some resources, like ores, &aproduce more than one sulfur&r."
 	]
 	quest.2F9560A5281DCDFD.quest_desc: [
 		"Need to keep those &cpesky trolls&r away from &byour stuff&r? &6Claim it&r! "
@@ -2110,11 +2131,9 @@
 	quest.3637E22A3CD0FAC1.quest_desc: ["By &bthrowing&f an &boak sapling&f into the &bspiritfire&f you will get a &bunstable otherworld sapling&f."]
 	quest.3637E22A3CD0FAC1.quest_subtitle: "This ain't no ordinary sapling"
 	quest.367A013744D689E4.quest_desc: [
-		"This machine allows &6heat &fto &6purify &fmatter into &bAlchemical Mercury."
+		"This machine allows &6heat&r to &6purify&r matter into &bAlchemical Mercury&r."
 		""
-		"Multiblock:"
-		"&b1x Mercury Distiller"
-		"&b1x Pyromantic Brazier"
+		"At this moment, you must place a &bPyromantic Brazier&r below the Distiller and &6fuel&r it with furnace fuel to provide heat. &aFuels last twice as long as in a Furnace&r."
 	]
 	quest.367A013744D689E4.quest_subtitle: "Alchemical Mercury?"
 	quest.3689AAE9D0DB96FB.quest_desc: ["The &bThermal Evaporation Valve&r is how you can &6input&r and &6extract&r your &7fluids&r from the tower. You'll need at least &9two&r for input and output. You can also &6use&r a valve to input &cheat&r from &bThermodynamic Conductors&r."]
@@ -2159,7 +2178,8 @@
 	]
 	quest.3761B64135EA94C0.quest_subtitle: "That's Mr. Fusion to You!"
 	quest.3761B64135EA94C0.title: "Nuclear Reactor"
-	quest.376DD70A2C14F9A9.title: "&2Alchemical Sulfur Common"
+	quest.376DD70A2C14F9A9.quest_desc: ["&aCommon&r resources are somewhat scarcer than their &8Abundant&r counterparts, but are still relatively easy to find."]
+	quest.376DD70A2C14F9A9.title: "Common Sulfurs"
 	quest.378A3A640EF06FE5.quest_desc: [
 		"&6Generates&r a large &7amount of air&r from &elightning strikes&r. "
 		""
@@ -2195,6 +2215,7 @@
 		""
 		"It also manages &aupgrades&r for &bitems&r that can accept them."
 	]
+	quest.392EC503FD52E32A.quest_desc: ["A variety of &bSulfur&r types exist, split across many &6tiers&r."]
 	quest.392EC503FD52E32A.title: "Sulfurs"
 	quest.39460CB77E53D5FA.quest_desc: [
 		"  &6Allows&r other &bblocks&r to &6interact&r with your &3inventory,&r &3armor,&r or &3off-hand&r &bslots&r."
@@ -2273,6 +2294,8 @@
 	quest.3B007B3669FFC1C4.title: "Ritual: Summon Unbound Afrit"
 	quest.3B0AB80C9FAD48F2.quest_desc: ["The &bAntiprotonic Nucleosynthesizer&r takes gaseous &dAntimatter&r and allows you to alter the molecular structure of some items and transform them into another, more powerful variant."]
 	quest.3B0AB80C9FAD48F2.title: "Antiprotonic Nucleosynthesizer"
+	quest.3B117FA99DD7558F.quest_desc: ["You may wish to &6automate&r the production of this."]
+	quest.3B117FA99DD7558F.title: "Solvent"
 	quest.3B3FDF02E891DD39.quest_desc: ["The Apprentice Spellbook being a better book, requires you to take a trip to the Nether."]
 	quest.3B82F8F19AF630D5.quest_desc: ["The&b Toggle Bus &fis the same as a &bGlass Cable&f, but is used to &6temporarily disable&f the section of a system downstream from it when unpowered. &6Powering it&f will allow data and power to pass once again."]
 	quest.3B82F8F19AF630D5.title: "Toggle Bus"
@@ -2353,8 +2376,9 @@
 	quest.3D7406A517FA591D.title: "Your First Pressure Chamber"
 	quest.3D9DED933A80CAFA.quest_desc: ["This is used to &6copy and paste&r settings of &bME Devices&f. This is also used to &6link &bP2P Tunnels&f."]
 	quest.3D9DED933A80CAFA.title: "Memory Card"
-	quest.3DC47060EEAB8975.quest_desc: ["Once you have &6replicated &fyour &bsulfur &fit will all go directly into this machine. You may &6Right-Click &fwith your hand and retrieve your &bsulfur."]
-	quest.3DC47060EEAB8975.quest_subtitle: "And its all here"
+	quest.3DC47060EEAB8975.quest_desc: ["The &bReformation Array&r is a set of machines that are able to effectively &6produce endless amounts&r of a given &bSulfur&r, using other kinds of &bSulfur&r of the given &atier&r and &atype&r."]
+	quest.3DC47060EEAB8975.quest_subtitle: "Magnum Opus"
+	quest.3DC47060EEAB8975.title: "Reformation Array"
 	quest.3DE966D73F4FF5A4.quest_subtitle: "Blocks certain pesky intruders from entering your base."
 	quest.3DF6354F7AC8D4A4.quest_desc: ["  Now that you can start your journey into the chemicals branching off from &bCrude Oil&r, you can produce upgrades for your machines! All of the electric machines you've used up until now have has a maximum overclock of 32 eu/t. Now, you can increase that maximum, depending on the tier of upgrade you use. Check your EMI to see how much EU each upgrade raises."]
 	quest.3DF6354F7AC8D4A4.title: "Upgrades"
@@ -2634,6 +2658,7 @@
 		"The &6processing power&r to handle computations of a &cmuch higher level&r."
 	]
 	quest.44D8D30BCD48C4C9.title: "Elite Control Circuit"
+	quest.45013F74F5B4A93E.quest_desc: ["This Rod can locate &9Rare&r materials."]
 	quest.45138985A0F5164C.quest_desc: [
 		"The &bJetpack&r uses &7Hydrogen&r to allow you to fly. "
 		""
@@ -3026,17 +3051,13 @@
 	]
 	quest.4E56C9A5F225A883.quest_subtitle: "A way to tick accelerate blocks."
 	quest.4E56C9A5F225A883.title: "&6Gadgets Against Grind"
-	quest.4E6BB4279E8E793A.title: "&7Alchemical Sulfur Abundant"
+	quest.4E6BB4279E8E793A.quest_desc: ["&8Abundant&r resources tend to be everywhere and in great quantities."]
+	quest.4E6BB4279E8E793A.title: "Abundant Sulfurs"
 	quest.4E7439769A073494.title: "Leggins"
 	quest.4E8963E1C18ADBAB.quest_desc: [
-		"The &bIncubator &fis small multi-block used to recombine Principles of matter into objects. "
+		"The &bIncubator&r is a small multiblock used to recombine Principles of matter into objects."
 		""
-		"Multiblock:"
-		"&b1x Incubator Sulfur Vessel"
-		"&b1x Incubator Mercury Vessel"
-		"&b1x Incubator Salt Vessel"
-		"&b1x Incubator"
-		"&b1x Pyromantic Brazier"
+		"It is composed of one of each &bvessel&r type placed on the sides - &bSalt&r, &bSulfur&r, and &bMercury&r - the &bIncubator&r itself, and a source of &6heat&r, in this case a &bPyromantic Brazier&r, below."
 	]
 	quest.4E8963E1C18ADBAB.quest_subtitle: "Warning: This is not for eggs"
 	quest.4E97BABA7D6B07FE.quest_desc: [
@@ -3135,6 +3156,7 @@
 	]
 	quest.4F076E5D6F0BED74.quest_subtitle: "Spell Basics"
 	quest.4F076E5D6F0BED74.title: "Spell 101 - 1"
+	quest.4F2C4595C25E23E1.quest_desc: ["This Rod is pre-attuned to locate a &9Rare&r material."]
 	quest.4F6FD689E65509BF.quest_desc: ["The &bBasic Card &fis a crafting component used to craft &bUpgrades&f."]
 	quest.4F6FD689E65509BF.title: "Basic Card"
 	quest.4FBA0ECAC8AEBCD8.quest_desc: [
@@ -3149,6 +3171,8 @@
 	quest.5021D7D55A0B3533.title: "Time for Chemistry!"
 	quest.508A650402DC24F5.quest_desc: ["The casing for your &bSupercritical Phase Shifter&r is expensive, but tough. "]
 	quest.508A650402DC24F5.title: "SPS Casing"
+	quest.508E110FF82365E3.quest_desc: ["&bInserters&r and &bExtractors&r &6move items&r into and out of containers from the &6Mercurial Logistics network&r, respectively."]
+	quest.508E110FF82365E3.title: "Mercurial Item Manipulation"
 	quest.50BFFEAF92B72965.quest_desc: [
 		"  The &bCoke Oven&r is a large structure, larger than only a single block. This &6multiblock structure&r is used to take &bCoal&r or &bCoal Dust&r and heat it in a location with the absence of air and producing &bCoal Coke&r and occasionally some &bCreosote Oil&r. You can use &bCreosote Oil&r for the production of &bLubricant&r and &bCoal Coke&r for &bSteel Ingots&r or just a powerful &6fuel&r lasting 4x as long!"
 		""
@@ -3173,6 +3197,12 @@
 	]
 	quest.511C07DFE796F377.title: "Tier 1 Glyphs"
 	quest.511E7475AD64A32D.quest_desc: ["The &bME Crystal Fixer&f can repair &bBudding Block&f into the next tier."]
+	quest.5143D5FD55C819CA.quest_desc: [
+		"Contrast to the Glass Divination Rod, this &3Pre-Attuned Rod&r is &6already attuned&r to the type of block specified by the &bSulfur&r used in its making."
+		""
+		"It, otherwise, behaves precisely the same as the Glass Divination Rod. This one in particular has been attuned to find an &8Abundant&r material."
+	]
+	quest.5143D5FD55C819CA.quest_subtitle: "Target acquired"
 	quest.51542DCB5C8E5C3A.quest_desc: ["The Second tier of Spellbook only holding 6 Spells"]
 	quest.516F2A1A1270D9DC.quest_desc: [
 		"  &bSimple&r:"
@@ -3188,6 +3218,8 @@
 		"{image:justdirethings:block/blockbreakert2_side width:100 height:100 align:center}"
 	]
 	quest.51A8026A0F8A83B1.quest_desc: ["Emeralds can be found while mining, exploring, or trading with villagers and is used to craft the Evocation Scrolls."]
+	quest.51E386BC7692D06C.quest_desc: ["To &6establish&r a &6Mercurial Logistics network&r, these &bWires&r must be used to &6link&r between in- and outputs. &bConnection Nodes&r allow for multiple wires to converge to one point, if needed."]
+	quest.51E386BC7692D06C.title: "Mercurial Connections"
 	quest.5221657F939FE63B.quest_desc: ["Use the Scroll Forge and a Bottle O' Lightning to craft a lightning Scrolls."]
 	quest.5253D3AA5B45369E.quest_desc: [
 		"In this one we talk about &bProjectile form glyph&r."
@@ -3267,7 +3299,7 @@
 	quest.539CFB577831F44F.quest_subtitle: "This wasn't here before."
 	quest.539CFB577831F44F.title: "&3Extra Spicy Technology"
 	quest.53A07420D75804AB.quest_subtitle: "Just Charge It!!!"
-	quest.53DEE3EF1297B630.quest_desc: ["This &bEmitter &fused &braw Mercury &fto generate &6heat &fthat can be used in place of the &bPyromantic Brazier."]
+	quest.53DEE3EF1297B630.quest_desc: ["This &bEmitter&r uses &dMercury Flux&r to generate &6heat&r that can be used in place of the &bPyromantic Brazier&r."]
 	quest.53DEE3EF1297B630.quest_subtitle: "A new source of heat"
 	quest.53EC4A657655A7D5.title: "Brine"
 	quest.5401B18217772D6C.quest_desc: [
@@ -3325,7 +3357,11 @@
 		"To find out the tag of a block, remember back to the &bDictionary&r."
 	]
 	quest.550B874D9F2D0D5A.title: "Digital Miner"
-	quest.55391FF509DA53A5.quest_desc: [""]
+	quest.55391FF509DA53A5.quest_desc: [
+		"The alchemical art of &3Theurgy&r can provide means of increasing ore yield, transmuting one material into another, and generating endless amounts of a plethora of resources."
+		""
+		"This &bbook&r, The Hermetica, shall be your guide, along with what I will teach you."
+	]
 	quest.55391FF509DA53A5.quest_subtitle: "The easiest way to alchemy"
 	quest.55391FF509DA53A5.title: "&dWelcome to Theurgy"
 	quest.553EB688C3FFD7E4.quest_desc: ["The &bBasic Combining Factory&r allows you to process &a3&r combining recipes at once."]
@@ -3405,6 +3441,7 @@
 		""
 		"Each adds to the max &eenergy&f cap by &62EU/t&f."
 	]
+	quest.58E5ADE9A50BDF29.quest_desc: ["This Rod is pre-attuned to find &bBudding Amethyst&r. &bAmethyst&r is used rather a lot in alchemy, and is &6needed&r for better Divining Rods."]
 	quest.58ED87D90B7F7168.quest_desc: [
 		"The &bAngel Upgrade&f allows you to &6place&f a block on the opposite side of the block (or row of blocks) you are facing."
 		""
@@ -3457,7 +3494,8 @@
 		"🎉🎉🎉🎉🎉🎉"
 	]
 	quest.5B578B176E3E3280.title: "🎉🎉🎉"
-	quest.5B9BFD4F72E79F5B.title: "&dAlchemical Sulfur Precious"
+	quest.5B9BFD4F72E79F5B.quest_desc: ["The rarest of them all, &dPrecious&r resources are often of exceptional value."]
+	quest.5B9BFD4F72E79F5B.title: "Precious Sulfurs"
 	quest.5BB4989DC6C5DB7A.quest_desc: ["Use a &bPowered Charger&f to charge &bCertus Quartz Crystal&f."]
 	quest.5BB4989DC6C5DB7A.title: "Charged Certus"
 	quest.5BCED97AA55DE2E3.quest_desc: [
@@ -3486,13 +3524,20 @@
 	]
 	quest.5C8D7BD3DA61109F.quest_subtitle: "Resources Go BRRR!"
 	quest.5C8D7BD3DA61109F.title: "Electric Quarry"
+	quest.5C98D9127F4CEB74.quest_desc: [
+		"Several types of &bSalt&r exist, each used to create &6different resources&r in the end."
+		""
+		"Some Salts can be &6calcinated&r again into other kinds."
+	]
+	quest.5C98D9127F4CEB74.quest_subtitle: "Not the table kind"
+	quest.5C98D9127F4CEB74.title: "Alchemical Salts"
 	quest.5CD12382792FA310.quest_desc: [
 		" "
 		"{image:justdirethings:item/machine_settings_copier width:100 height:100 align:center}"
 	]
 	quest.5CD12382792FA310.quest_subtitle: "Guess What This Does"
 	quest.5CEFB3C551971327.quest_desc: [""]
-	quest.5D584858B61E534B.quest_desc: ["This &bCatalyst &fslowly turns &bMercury &finto &6Flux&f, your first source of &6Energy."]
+	quest.5D584858B61E534B.quest_desc: ["This &bCatalyst &fslowly turns &bMercury &finto &dMercury Flux&r, a source of &6Energy&r for alchemical devices."]
 	quest.5D584858B61E534B.quest_subtitle: "Mercury = Flux"
 	quest.5D92326B02E9DC0F.title: "Belts"
 	quest.5DA3F6FF2AE6C081.quest_desc: ["The &bCharger &fwill charge all items put inside of it."]
@@ -4121,6 +4166,8 @@
 	quest.6D18BFC48A82E53E.quest_desc: ["Through the power of gravity, &6throwing&b 1 Gold Ingot, 1 Lapis Lazuli, and 1 Entro dust&f you will obtain&b 1 Entro Infused Ingot&f."]
 	quest.6D702C00A519AD12.quest_desc: ["The &bElite Purifying Factory&r allows you to process up to &a7&r purifying recipes at once."]
 	quest.6D702C00A519AD12.title: "Elite Purifying Factory"
+	quest.6DA3C5DEE0F6438D.quest_desc: ["This Rod is pre-attuned to locate a &dPrecious&r material."]
+	quest.6DA3C5DEE0F6438D.quest_subtitle: "Diamond-Seeker"
 	quest.6DDA86A3B4C0ACC1.title: "Mining Gadget"
 	quest.6DED76B2F4AFD02F.quest_desc: ["&bDry ice &fis extremely rare to find underground, but you can make it if you have enough &bpower and ice."]
 	quest.6DED76B2F4AFD02F.quest_subtitle: "A little cold to the touch"
@@ -4572,6 +4619,8 @@
 	quest.79515634992D02A3.title: "Antimatter"
 	quest.7992491EE3E2BED3.quest_desc: ["The &bAdvanced Thermodynamic Conductor&r has a &4heat capacity&r of &a1.0&r, a conduction of &e5.0&r, but an insulation of &c400.0&r."]
 	quest.7992491EE3E2BED3.title: "Advanced Thermodynamic Conductor"
+	quest.79A693466BF51105.quest_desc: ["This Rod can locate &dPrecious&r materials, and has far superior durability."]
+	quest.79A693466BF51105.quest_subtitle: "I can see it all"
 	quest.79C075FFF796FE16.quest_desc: [
 		"A pre-programmed &bDrone&r that &2harvests&r fully-grown &acrops&r within a &e17x17x17&r area centered on the position it's deployed from. "
 		""
@@ -4583,13 +4632,11 @@
 	]
 	quest.79F451F9C8D02A69.quest_desc: ["Now that you have a &bConcurrent Processor &fyou can now craft some more items to help you through &aExtenedAE&f."]
 	quest.7A6C1605F32F695F.quest_desc: [
-		"The creation of &bAlchemical Salt &ffroms from what was once &bmatter."
+		"This oven makes it possible to &6calcinate&r a variety of materials into &bAlchemical Salt&r."
 		""
-		"Multiblock:"
-		"&b1x Calcination Oven&b"
-		"&b1x Pyromantic Brazier"
+		"At this moment, you must place a &bPyromantic Brazier&r below the Oven and &6fuel&r it with furnace fuel to provide heat. &aFuels last twice as long as in a Furnace&r."
 	]
-	quest.7A6C1605F32F695F.quest_subtitle: "Its just an oven?"
+	quest.7A6C1605F32F695F.quest_subtitle: "It's just an oven?"
 	quest.7A73A6CC630BAA3F.quest_subtitle: "Endless Boss Fights!"
 	quest.7A73A6CC630BAA3F.title: "&dBoss Rush"
 	quest.7A7A4553203B4A21.quest_desc: [
@@ -4692,7 +4739,8 @@
 		""
 		"Avoid using it at close range!"
 	]
-	quest.7C38A9BA01CA3772.title: "&1Alchemical Sulfur Rare"
+	quest.7C38A9BA01CA3772.quest_desc: ["&9Rare&r resources take more effort to find or to create, and are in some cases not found in nature."]
+	quest.7C38A9BA01CA3772.title: "Rare Sulfurs"
 	quest.7C57D76FDBD784F8.quest_desc: ["You can &6connect&r &bTanks&r above and below using a &bWrench&r, provided that either &bTank&r is &cempty&r or both tanks contain the same &7fluid&r."]
 	quest.7C834204DEE1813C.quest_desc: ["The &bAdvnaced Enriching Factory&r can process up to &a5&r recipes at the same time, containing the same \"&eAuto-Sort&r\" function."]
 	quest.7C834204DEE1813C.title: "Advanced Enriching Factory"
@@ -4770,7 +4818,7 @@
 		"&6Inferno Mode&r damages &2entities&r, but also &6ignites&r blocks in the world."
 	]
 	quest.7DA234839458B333.title: "Flamethrower"
-	quest.7DD81584380EE8F7.quest_desc: ["A &bwand &fused to link &6Mercurial Logistics"]
+	quest.7DD81584380EE8F7.quest_desc: ["This &bwand&r is used to interface with &6Mercurial Logistics&r."]
 	quest.7E194859BAD7B5A8.quest_subtitle: "Applies potion effect to subjects in range"
 	quest.7E49DB806DD04701.quest_desc: [""]
 	quest.7ED9955750255A69.quest_subtitle: "Complete the quest chapter."

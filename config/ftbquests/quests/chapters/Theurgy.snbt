@@ -181,18 +181,11 @@
 				table_id: 2924399528588739882L
 				type: "random"
 			}]
-			tasks: [
-				{
-					id: "054882702C78E117"
-					item: { count: 1, id: "theurgy:liquefaction_cauldron" }
-					type: "item"
-				}
-				{
-					id: "7DD63F69AFF0AC76"
-					item: { count: 1, id: "minecraft:stone" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "054882702C78E117"
+				item: { count: 1, id: "theurgy:liquefaction_cauldron" }
+				type: "item"
+			}]
 			x: -2.5d
 			y: -1.0d
 		}
@@ -342,7 +335,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["2B2D3B338662F02C"]
+			dependencies: ["5C98D9127F4CEB74"]
 			id: "0E30CFA6C5B58BEA"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -355,8 +348,8 @@
 				item: { count: 1, id: "theurgy:digestion_vat" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: -4.0d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["367A013744D689E4"]
@@ -683,7 +676,7 @@
 		{
 			dependencies: [
 				"02D3AFC713077502"
-				"0E30CFA6C5B58BEA"
+				"2B2D3B338662F02C"
 			]
 			id: "30FB66E92909D4B9"
 			rewards: [{
@@ -902,8 +895,8 @@
 					type: "item"
 				}
 			]
-			x: 1.0d
-			y: 0.0d
+			x: -1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["392EC503FD52E32A"]
@@ -990,8 +983,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: 0.5d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1143,7 +1136,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["5C98D9127F4CEB74"]
+			dependencies: ["0E30CFA6C5B58BEA"]
 			id: "2B2D3B338662F02C"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1156,8 +1149,8 @@
 				item: { count: 1, id: "theurgy:purified_gold" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.0d
+			x: 2.0d
+			y: -4.0d
 		}
 	]
 }
