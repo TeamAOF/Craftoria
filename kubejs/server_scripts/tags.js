@@ -88,7 +88,7 @@ ServerEvents.tags('block', (e) => {
   e.add('ae2:blacklisted/spatial', ['justdirethings:time_crystal_budding_block']);
   e.add('mekanism:cardboard_blacklist', ['justdirethings:time_crystal_budding_block']);
 
-  colors.forEach((color) => {
+  global.dyeColors.forEach((color) => {
     e.add('c:glass_blocks', `#chipped:${color}_stained_glass`);
     e.add('c:glass_panes', `#chipped:${color}_stained_glass_pane`);
   });

@@ -11,7 +11,7 @@ ServerEvents.recipes((e) => {
   });
 
   // Fixes Handcrafted Wool Sheets conflicting with Comforts Sleeping Bags
-  colors.forEach((wool) => {
+  global.dyeColors.forEach((wool) => {
     e.remove({type: 'minecraft:crafting_shaped', output: `handcrafted:${wool}_sheet`});
 
     // Sheets

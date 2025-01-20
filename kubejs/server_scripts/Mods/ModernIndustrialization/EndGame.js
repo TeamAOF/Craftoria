@@ -34,7 +34,7 @@ ServerEvents.recipes((e) => {
     .id('craftoria:end_game/quantum_upgrade_from_quantium');
 
   ['helmet', 'chestplate', 'leggings', 'boots', 'sword'].forEach((item) => {
-    e.remove({output: `modern_industrialization:quantum_${item}`});
+    e.remove({ output: `modern_industrialization:quantum_${item}` });
     e.recipes.modern_industrialization
       .heat_exchanger(8192 * 16, 20 * 10)
       .itemIn(`craftoria:quantum_${item}_mold`, 0)
@@ -50,6 +50,18 @@ ServerEvents.recipes((e) => {
       .itemOut(`craftoria:quantum_${item}_mold`)
       .fluidIn('450x craftoria:molten_iridium')
       .id(`craftoria:end_game/quantum_${item}_mold`);
+
+    if (item !== 'sword') {
+      e.remove({ output: `extended_industrialization:nano_quantum_${item}` });
+      e.recipes.modern_industrialization
+        .implosion_compressor(1, 10)
+        .itemIn(`modern_industrialization:quantum_${item}`)
+        .itemIn(`extended_industrialization:nano_${item}`)
+        .itemIn('64x modern_industrialization:nuke')
+        .itemIn('64x modern_industrialization:nuke')
+        .itemOut(`extended_industrialization:nano_quantum_${item}`)
+        .id(`craftoria:end_game/nano_quantum_${item}`);
+    }
   });
 
   miBlastFurnace(8192, 20 * 30)

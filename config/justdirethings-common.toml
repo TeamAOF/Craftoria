@@ -323,3 +323,14 @@
 	# Default: 8000
 	# Range: > 1
 	polymorphic_wand_v2_max_fluid = 8000
+
+#Player Accessor
+[player_accessor]
+	#Will you be blacklisting dimensions? If set to false, the Blacklist Dimensions list will not function.
+	player_accessor_dimensional_blacklisting = false
+	#The frequency with which the player accessor validates the player - the longer this is set to, the longer the player can be accessed in a blacklisted dimension.
+	# Default: 100
+	# Range: 0 ~ 5000
+	player_accessor_validation_time = 100
+	#A list of dimension names to blacklist for the Player Accessor feature.
+	player_accessor_blacklisted_dimensions = []
