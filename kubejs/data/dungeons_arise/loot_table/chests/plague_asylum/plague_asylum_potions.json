@@ -1,0 +1,408 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Strange Concoction"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 8388736,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:strength",
+                      "amplifier": 0,
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:absorption",
+                      "amplifier": 2,
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:haste",
+                      "amplifier": 1,
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:darkness",
+                      "amplifier": 1,
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:slowness",
+                      "amplifier": 1,
+                      "duration": 2400
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Eternal Plague"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:harming",
+                  "custom_color": 0,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:wither",
+                      "amplifier": 3,
+                      "duration": 240000
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Elevation Tonic"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 12632256,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:levitation",
+                      "amplifier": 6,
+                      "duration": 2400
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Infestation Mixture"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 4194368,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:oozing",
+                      "amplifier": 1,
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:infested",
+                      "amplifier": 1,
+                      "duration": 2400
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Quickest Way Out"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 0,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:strength",
+                      "amplifier": 2,
+                      "duration": 4800
+                    },
+                    {
+                      "id": "minecraft:instant_damage",
+                      "hidden_effect": {
+                        "amplifier": 9,
+                        "duration": 20
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Potato Juice"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 16776960,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:absorption",
+                      "amplifier": 0,
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:hero_of_the_village",
+                      "amplifier": 2,
+                      "duration": 2400
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Dolphin's Disgrace"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 255,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:dolphins_grace",
+                      "amplifier": 5,
+                      "duration": 4800
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:healing"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:long_regeneration"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:strong_leaping"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Feathery Froggy Fortune"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 8421631,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:slow_falling",
+                      "amplifier": 5,
+                      "duration": 4800
+                    },
+                    {
+                      "id": "minecraft:jump_boost",
+                      "amplifier": 5,
+                      "duration": 4800
+                    },
+                    {
+                      "id": "minecraft:luck",
+                      "amplifier": 0,
+                      "duration": 4800
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:strong_healing"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:strong_regeneration"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_carrot",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_golden_apple",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/nether_bridge"
+        }
+      ]
+    }
+  ]
+}

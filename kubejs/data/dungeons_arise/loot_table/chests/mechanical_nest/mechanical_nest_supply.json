@@ -1,0 +1,628 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Pewter Tonic"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "A powerful brew distilled from withered flesh."
+                },
+                {
+                  "text": "Note: Redistribute to the Mushroom Mines"
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 11752018,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:strength",
+                      "amplifier": 0,
+                      "duration": 4800
+                    },
+                    {
+                      "id": "minecraft:resistance",
+                      "amplifier": 0,
+                      "duration": 4800
+                    },
+                    {
+                      "id": "minecraft:hunger",
+                      "amplifier": 0,
+                      "duration": 4800
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Phantom Menace"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Distilled from tears of unborn children."
+                },
+                {
+                  "text": "Best served cold."
+                },
+                {
+                  "text": "Note: Supplier has since cut contact."
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 2163727,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:slowness",
+                      "amplifier": 0,
+                      "duration": 9600
+                    },
+                    {
+                      "id": "minecraft:speed",
+                      "amplifier": 4,
+                      "duration": 2400
+                    },
+                    {
+                      "id": "minecraft:jump_boost",
+                      "amplifier": 0,
+                      "duration": 2400
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Addictive Beer"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Common beer with a touch of opioids."
+                },
+                {
+                  "text": "Keeps villagers at bay."
+                },
+                {
+                  "text": "Note: Supplier has since cut contact."
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 16773151,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:slowness",
+                      "amplifier": 1,
+                      "duration": 4800
+                    },
+                    {
+                      "id": "minecraft:weakness",
+                      "amplifier": 1,
+                      "duration": 4800
+                    },
+                    {
+                      "id": "minecraft:mining_fatigue",
+                      "amplifier": 1,
+                      "duration": 4800
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Kayra's Curse"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "istilled from boiled frog legs and enhanced by the occult."
+                },
+                {
+                  "text": "Nobody shall build a fortress higher than a man's step."
+                },
+                {
+                  "text": "Note: Supplier has stated their lifelong disdain"
+                },
+                {
+                  "text": "for the \"frog-folks\"."
+                },
+                {
+                  "text": "Abstain from delivering to the Keep."
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 6519211,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:jump_boost",
+                      "amplifier": 80,
+                      "duration": 800
+                    },
+                    {
+                      "id": "minecraft:bad_omen",
+                      "amplifier": 0,
+                      "duration": 4800
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Black Hole in a Bottle"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Particles of this brew seem to attract"
+                },
+                {
+                  "text": "and asimilate nearby objects."
+                },
+                {
+                  "text": "Its name is purely metaphorical."
+                },
+                {
+                  "text": "Note: Supplier has since cut contact."
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 0,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:slowness",
+                      "amplifier": 4,
+                      "duration": 1200
+                    },
+                    {
+                      "id": "minecraft:instant_health",
+                      "amplifier": 4,
+                      "duration": 0
+                    },
+                    {
+                      "id": "minecraft:instant_damage",
+                      "amplifier": 4,
+                      "duration": 0
+                    },
+                    {
+                      "id": "minecraft:poison",
+                      "amplifier": 8,
+                      "duration": 1200
+                    },
+                    {
+                      "id": "minecraft:wither",
+                      "amplifier": 8,
+                      "duration": 1200
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Will O' The Beer"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Some people describe its effects"
+                },
+                {
+                  "text": "as incredibly light and liberating."
+                },
+                {
+                  "text": "But captives always spill out the"
+                },
+                {
+                  "text": "truth when they're high enough."
+                },
+                {
+                  "text": "Note: Supplier has since cut contact."
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 64,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:levitation",
+                      "amplifier": 2,
+                      "duration": 9600
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Just Beer"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "True beer. Really, just beer."
+                },
+                {
+                  "text": "Beer beer beer beer.",
+                  "obfuscated": true
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 16776960,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:slowness",
+                      "amplifier": 2,
+                      "duration": 4800
+                    },
+                    {
+                      "id": "minecraft:haste",
+                      "amplifier": 4,
+                      "duration": 4800
+                    },
+                    {
+                      "id": "minecraft:nausea",
+                      "amplifier": 2,
+                      "duration": 4800
+                    },
+                    {
+                      "id": "minecraft:weakness",
+                      "amplifier": 4,
+                      "duration": 4800
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Thick Serum"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Distilled from magma cubes and freshly"
+                },
+                {
+                  "text": "harvested froglights."
+                },
+                {
+                  "text": "Increases resistance during hot situations."
+                },
+                {
+                  "text": "Note: Must be delivered to the lightning chambers."
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 16711680,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:fire_resistance",
+                      "amplifier": 1,
+                      "duration": 18000
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Liquid Emeralds"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Subjects can feel the thrill of business"
+                },
+                {
+                  "text": "running through their veins."
+                },
+                {
+                  "text": "Proyective techniques reveal"
+                },
+                {
+                  "text": "temporary psychopatic tendencies."
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 7798597,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:hero_of_the_village",
+                      "amplifier": 2,
+                      "duration": 18000
+                    },
+                    {
+                      "id": "minecraft:strength",
+                      "amplifier": 0,
+                      "duration": 2400
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Unethical Trip"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Casts an aura of malice, and possibly bad breath."
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 3014656,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:bad_omen",
+                      "amplifier": 4,
+                      "duration": 1200
+                    },
+                    {
+                      "id": "minecraft:speed",
+                      "amplifier": 0,
+                      "duration": 4800
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": "Living Sponge"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "Microscopic sponge particles"
+                },
+                {
+                  "text": "that breathe on their own."
+                },
+                {
+                  "text": "Despite all reports of whispers and"
+                },
+                {
+                  "text": "intrusive thoughts, they should be"
+                },
+                {
+                  "text": "regarded as harmless."
+                },
+                {
+                  "text": "In most cases."
+                },
+                {
+                  "text": "Note: Supplier has since cut contact."
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water",
+                  "custom_color": 16776960,
+                  "custom_effects": [
+                    {
+                      "id": "minecraft:water_breathing",
+                      "amplifier": 0,
+                      "duration": 24000
+                    },
+                    {
+                      "id": "minecraft:dolphins_grace",
+                      "amplifier": 0,
+                      "duration": 24000
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_carrot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

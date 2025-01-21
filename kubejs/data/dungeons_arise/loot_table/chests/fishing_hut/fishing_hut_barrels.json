@@ -1,0 +1,120 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:trident",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "options": "#minecraft:on_random_loot",
+              "levels": {
+                "min": 0,
+                "max": 10
+              },
+              "treasure": false
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 200,
+                "max": 249
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 70,
+          "name": "minecraft:fishing_rod",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "options": "#minecraft:on_random_loot",
+              "levels": {
+                "min": 15,
+                "max": 25
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "options": "#minecraft:on_random_loot",
+              "levels": {
+                "min": 20,
+                "max": 30
+              },
+              "treasure": true
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 100,
+          "name": "minecraft:water_bucket"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 100,
+          "name": "minecraft:salmon",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 100,
+          "name": "minecraft:cod",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
