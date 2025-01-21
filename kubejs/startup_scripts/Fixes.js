@@ -5,3 +5,9 @@ ItemEvents.modification((e) => {
     });
   });
 });
+
+const $PolyLib = Java.loadClass('net.creeperhost.polylib.PolyLib');
+
+StartupEvents.postInit((e) => {
+  $PolyLib.initPolyItemData(); // Fixes Shrink spamming logs.
+});
