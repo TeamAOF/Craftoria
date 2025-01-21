@@ -1,3 +1,13 @@
+## Craftoria | v1.13.1
+
+_NeoForge Loader 21.1.97_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.13.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.13.0.md)_
+
+### Bug Fixes 🪲
+
+* Fixed Shrink spamming logs causing immense client lag.
+* Fixed Familiars spawning in mob farms.
+---
+
 ## Craftoria | v1.13.0
 
 _NeoForge Loader 21.1.97_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.13.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.13.0.md)_
