@@ -77,9 +77,6 @@
 	#Supports html formatting, placeholders.
 	#Leave empty to prevent showing this warning message.
 	warning_after_upload_all_button_press = ""
-	#Crash Assistant splits the log into a head and tail of 25,000 lines each if the log exceeds mclo.gs limits (10 MB or 25,000 lines).
-	#Add an explanation at the bottom of the generated message about why log was split.
-	generated_msg_includes_info_why_split = true
 
 [greeting]
 	#You don't need to touch this option.

@@ -1,3 +1,59 @@
+## Craftoria | v1.13.0
+
+_NeoForge Loader 21.1.97_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.13.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.13.0.md)_
+
+## DISSCLAIMER: Updating will delete all of your Wireless Charging Stations, they've been replaced with the new Tesla Networks system.
+
+### Changes/Improvements ⭐
+
+* Reworked Theurgy quest chapter **(Gronglegrowth/Eset)**
+* Reworked Iron's Spells 'n Spellbooks quest chapter design **(SubordinalBlue)**.
+* Added Mekanism crushing recipes for Biomes We've Gone entries **(Shaggy84675)**.
+* Lowered the tier of circuit required for Meka Suit **(Phantom)**.
+* Enchantment Applicator will no longer ignore max level of enchant **(AK)**.
+* Improved how our resourcepacks included by default are loaded **(AK)**.
+* Netherite has been removed from all overworld chests, including the biggest and hardest dungeons, encouraging players to visit the Nether **(AK)**.
+* Diamond has been removed from most minor structures **(AK)**.
+* Enchanted armor and tools are now much harder to find **(AK)**.
+* AE2 Blackout is now the default textures due to popular demand **(AK)**.
+* Added 2 new shaders, Solas & MakeUp.
+
+### Bug Fixes 🪲
+
+* Fixed Shock/Thorn/Flame pendants crashes.
+* Fixed multiple modded shaders showing incorrectly, example being JDT portals when using shaders.
+
+### Added Mods ✅
+
+  * [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
+  * [Better Compatibility Checker](https://www.curseforge.com/minecraft/mc-mods/better-compatibility-checker)
+  * [Crash Assistant](https://www.curseforge.com/minecraft/mc-mods/crash-assistant)
+  * [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)
+  * [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium)
+  * [Just Enough Effect Descriptions (JEED)](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed)
+  * [KeyBind Bundles](https://www.curseforge.com/minecraft/mc-mods/keybind-bundles)
+  * [Luminax](https://www.curseforge.com/minecraft/mc-mods/luminax)
+  * [Moderately Enough Effect Descriptions (MEED)](https://www.curseforge.com/minecraft/mc-mods/moderately-enough-effect-descriptions-meed)
+  * [ModListMemory](https://www.curseforge.com/minecraft/mc-mods/modlistmemory)
+  * [Monocle](https://www.curseforge.com/minecraft/mc-mods/monocle)
+  * [More Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/moremousetweaks)
+  * [Nolijium](https://www.curseforge.com/minecraft/mc-mods/nolijium)
+  * [Open Loader](https://www.curseforge.com/minecraft/mc-mods/open-loader)
+  * [Phantom's Utilities](https://www.curseforge.com/minecraft/mc-mods/phantoms-utilities)
+  * [Shorkie](https://www.curseforge.com/minecraft/mc-mods/shorkie)
+  * [Wavey Capes](https://www.curseforge.com/minecraft/mc-mods/waveycapes)
+  * [Xtones Reworked](https://www.curseforge.com/minecraft/mc-mods/xtones-reworked)
+
+### Removed Mods ❌
+
+  * [Curios API Continuation [Frozen]](https://www.curseforge.com/minecraft/mc-mods/curios-continuation)
+  * [Enhanced Celestials Shader Support](https://www.curseforge.com/minecraft/mc-mods/enhanced-celestials-shader-support)
+  * [Entity Culling](https://www.curseforge.com/minecraft/mc-mods/entityculling)
+  * [Paxi](https://www.curseforge.com/minecraft/mc-mods/paxi-neoforge)
+  * [Reese's Sodium Options](https://www.curseforge.com/minecraft/mc-mods/reeses-sodium-options)
+  * [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium)
+---
+
 ## Craftoria | v1.12.0
 
 _NeoForge Loader 21.1.93_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.12.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.12.0.md)_

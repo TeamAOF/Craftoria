@@ -6,6 +6,7 @@
     "mod_resources",
     "mod/pneumaticcraft:fusion_integration",
     "mod/simplylight:optional_fullblock_ctm",
+    "file/BetterEndCities-Vanilla-1.21.zip",
     "file/waystones_1.21.1.zip",
     "file/Pretty X Smart Pipez.zip",
     "file/Ars Nouveau Refresh 1.2.0.zip",
@@ -36,11 +37,11 @@
   "pack_overrides": {
     "vanilla": {
       "fixed_position": true,
-      "hidden": true
+      "hidden": false
     },
     "mod_resources": {
       "fixed_position": true,
-      "hidden": true
+      "hidden": false
     },
     "1": [
       "mod/pneumaticcraft:fusion_integration",
