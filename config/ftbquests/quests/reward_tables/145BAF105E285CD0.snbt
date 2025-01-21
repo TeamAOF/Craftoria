@@ -5,6 +5,7 @@
 	rewards: [
 		{
 			count: 16
+			id: "4B9FEA9C03D37F01"
 			item: {
 				count: 1
 				id: "powah:capacitor_hardened"
@@ -13,15 +14,30 @@
 		}
 		{
 			count: 8
+			id: "282EED4787A01294"
 			item: {
 				count: 1
 				id: "powah:capacitor_blazing"
 			}
 			weight: 2.0f
 		}
-		{ count: 4, item: { count: 1, id: "powah:capacitor_niotic" } }
-		{ item: { count: 1, id: "powah:battery_hardened" } }
-		{ item: { count: 1, id: "powah:thermo_generator_niotic" } }
-		{ count: 4, item: { count: 1, id: "powah:crystal_spirited" } }
+		{
+			count: 4
+			id: "2A1F60DAF6915DD2"
+			item: {
+				count: 1
+				id: "powah:capacitor_niotic"
+			}
+		}
+		{ id: "7C550EF43CECFF8B", item: { count: 1, id: "powah:battery_hardened" } }
+		{ id: "3906E9E6AFD6CA3D", item: { count: 1, id: "powah:thermo_generator_niotic" } }
+		{
+			count: 4
+			id: "6C897D5CC88829D4"
+			item: {
+				count: 1
+				id: "powah:crystal_spirited"
+			}
+		}
 	]
 }
