@@ -1,16 +1,341 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
+	default_quest_size: 1.25d
 	filename: "PneumaticCraft"
 	group: "066C799B2F5452CD"
 	icon: {
 		id: "pneumaticcraft:pressure_gauge"
 	}
 	id: "04AD21E8ACC60AFD"
+	images: [
+		{
+			height: 3.0d
+			image: "pneumaticcraft:item/pressure_gauge"
+			order: 11
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0993303571428612d
+			y: -2.0535714285714377d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/bottom_right"
+			order: 1
+			rotation: 0.0d
+			width: 5.0d
+			x: 12.849330357142861d
+			y: 6.446428571428562d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/top_right"
+			order: 1
+			rotation: 0.0d
+			width: 5.0d
+			x: 12.849330357142861d
+			y: -6.303571428571438d
+		}
+		{
+			height: 3.0d
+			image: "pneumaticcraft:item/programming_puzzle"
+			order: 222
+			rotation: 22.5d
+			width: 3.0d
+			x: 13.75d
+			y: 7.5d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/top_left"
+			rotation: 0.0d
+			width: 5.0d
+			x: -12.650669642857139d
+			y: -6.303571428571438d
+		}
+		{
+			height: 4.0d
+			image: "pneumaticcraft:textures/progwidgets/entity_export_piece.png"
+			order: 11
+			rotation: 0.0d
+			width: 4.0d
+			x: 8.849330357142861d
+			y: 2.6964285714285623d
+		}
+		{
+			height: 4.0d
+			image: "pneumaticcraft:textures/progwidgets/entity_import_piece.png"
+			order: 11
+			rotation: 0.0d
+			width: 4.0d
+			x: 10.349330357142861d
+			y: 2.6964285714285623d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_vertical"
+			rotation: 0.0d
+			width: 5.0d
+			x: 12.849330357142861d
+			y: -2.0535714285714377d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_horizontal"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0993303571428612d
+			y: -6.303571428571438d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/window"
+			order: 1
+			rotation: 0.0d
+			width: 5.0d
+			x: -4.25d
+			y: -2.0d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/valve"
+			rotation: 0.0d
+			width: 5.0d
+			x: -4.150669642857139d
+			y: 2.1964285714285623d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_vertical"
+			order: 2
+			rotation: 0.0d
+			width: 5.0d
+			x: -12.650669642857139d
+			y: -2.0535714285714377d
+		}
+		{
+			alpha: 192
+			height: 5.0d
+			image: "pneumaticcraft:item/upgrades/upgrade_matrix"
+			order: 5
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0993303571428612d
+			y: 2.1964285714285623d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/center"
+			rotation: 0.0d
+			width: 5.0d
+			x: 4.349330357142861d
+			y: -2.0535714285714377d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/valve_side"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0993303571428612d
+			y: 2.1964285714285623d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_horizontal"
+			rotation: 0.0d
+			width: 5.0d
+			x: -4.150669642857139d
+			y: -6.303571428571438d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_horizontal"
+			rotation: 0.0d
+			width: 5.0d
+			x: -8.400669642857139d
+			y: -6.303571428571438d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_horizontal"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0993303571428612d
+			y: 6.446428571428562d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_horizontal"
+			rotation: 0.0d
+			width: 5.0d
+			x: -4.150669642857139d
+			y: 6.446428571428562d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_horizontal"
+			rotation: 0.0d
+			width: 5.0d
+			x: -8.400669642857139d
+			y: 6.446428571428562d
+		}
+		{
+			height: 1.0d
+			image: "pneumaticcraft:block/fluid/memory_essence_still"
+			rotation: 0.0d
+			width: 0.03125d
+			x: -19.0d
+			y: 3.0d
+		}
+		{
+			color: 9158655
+			height: 5.0d
+			image: "pneumaticcraft:block/fluid/memory_essence_still"
+			rotation: 0.0d
+			width: 5.0d
+			x: -4.150669642857139d
+			y: -2.0535714285714377d
+		}
+		{
+			height: 3.0d
+			image: "pneumaticcraft:textures/gui/icon/gui_problem.png"
+			order: 11
+			rotation: 0.0d
+			width: 3.0d
+			x: 4.349330357142861d
+			y: -2.0535714285714377d
+		}
+		{
+			height: 3.0d
+			image: "pneumaticcraft:textures/gui/icon/gui_no_problem.png"
+			order: 11
+			rotation: 0.0d
+			width: 3.0d
+			x: 4.349330357142861d
+			y: 2.1964285714285623d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/bottom_left"
+			rotation: 0.0d
+			width: 5.0d
+			x: -12.650669642857139d
+			y: 6.446428571428562d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/aerial_interface_front"
+			rotation: 0.0d
+			width: 5.0d
+			x: -8.400669642857139d
+			y: -2.0535714285714377d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/drone_interface_front_on"
+			rotation: 0.0d
+			width: 5.0d
+			x: 8.599330357142861d
+			y: -2.0535714285714377d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/programmable_controller_front"
+			rotation: 0.0d
+			width: 5.0d
+			x: -8.400669642857139d
+			y: 2.1964285714285623d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_vertical"
+			order: 2
+			rotation: 0.0d
+			width: 5.0d
+			x: -12.650669642857139d
+			y: 2.1964285714285623d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/pressure_chamber_wall"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0993303571428612d
+			y: -2.0535714285714377d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/valve_side"
+			rotation: 0.0d
+			width: 5.0d
+			x: 8.599330357142861d
+			y: 2.1964285714285623d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_horizontal"
+			rotation: 0.0d
+			width: 5.0d
+			x: 4.349330357142861d
+			y: 6.446428571428562d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_vertical"
+			rotation: 0.0d
+			width: 5.0d
+			x: 12.849330357142861d
+			y: 2.1964285714285623d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_horizontal"
+			rotation: 0.0d
+			width: 5.0d
+			x: 4.349330357142861d
+			y: -6.303571428571438d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_horizontal"
+			rotation: 0.0d
+			width: 5.0d
+			x: 8.599330357142861d
+			y: 6.446428571428562d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/middle_horizontal"
+			rotation: 0.0d
+			width: 5.0d
+			x: 8.599330357142861d
+			y: -6.303571428571438d
+		}
+		{
+			height: 5.0d
+			image: "pneumaticcraft:block/pressure_chamber/center"
+			rotation: 0.0d
+			width: 5.0d
+			x: 4.349330357142861d
+			y: 2.1964285714285623d
+		}
+		{
+			alpha: 96
+			color: 0
+			height: 20.0d
+			image: "ftbquests:textures/shapes/square/shape.png"
+			order: 200
+			rotation: 0.0d
+			width: 35.0d
+			x: 0.0d
+			y: 0.0d
+		}
+	]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
+			icon_scale: 2.0d
 			id: "26A44EDA4AABFF6F"
 			rewards: [
 				{
@@ -37,11 +362,12 @@
 				item: { count: 1, id: "pneumaticcraft:ingot_iron_compressed" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 0.0d
+			x: -11.25d
+			y: 5.25d
 		}
 		{
 			dependencies: ["2B8DFC9987083AF7"]
+			icon_scale: 2.0d
 			id: "3D7406A517FA591D"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -74,11 +400,12 @@
 					type: "item"
 				}
 			]
-			x: 5.5d
-			y: 0.0d
+			x: -4.0625d
+			y: 3.75d
 		}
 		{
 			dependencies: ["0DDE4F5B0FE265B0"]
+			icon_scale: 2.0d
 			id: "2B8DFC9987083AF7"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -91,11 +418,12 @@
 				item: { count: 1, id: "pneumaticcraft:air_compressor" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: 0.0d
+			x: -6.25d
+			y: 5.3125d
 		}
 		{
 			dependencies: ["26A44EDA4AABFF6F"]
+			icon_scale: 2.0d
 			id: "0DDE4F5B0FE265B0"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -108,11 +436,12 @@
 				item: { count: 1, id: "pneumaticcraft:pressure_tube" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: -8.4375d
+			y: 5.3125d
 		}
 		{
 			dependencies: ["26A44EDA4AABFF6F"]
+			icon_scale: 2.0d
 			id: "486620B859CE9D1F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -125,11 +454,12 @@
 				item: { count: 1, id: "pneumaticcraft:vortex_tube" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -2.0d
+			x: -11.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1246838BA3EEE910"]
+			icon_scale: 2.0d
 			id: "6070283AEA8DFA7E"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -155,8 +485,8 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: -6.0d
+			x: -8.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -165,6 +495,7 @@
 				"07F1FA5EF3E6A7F3"
 				"2689A56675E12245"
 			]
+			icon_scale: 2.0d
 			id: "6127E7FBC4ABF307"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -177,11 +508,12 @@
 				item: { count: 1, id: "pneumaticcraft:thermopneumatic_processing_plant" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: -6.0d
+			x: -4.0625d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6070283AEA8DFA7E"]
+			icon_scale: 2.0d
 			id: "2689A56675E12245"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -194,11 +526,12 @@
 				item: { count: 1, id: "pneumaticcraft:lpg_bucket" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -6.5d
+			x: -6.25d
+			y: -5.9375d
 		}
 		{
 			dependencies: ["6070283AEA8DFA7E"]
+			icon_scale: 2.0d
 			id: "07F1FA5EF3E6A7F3"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -211,11 +544,12 @@
 				item: { count: 1, id: "pneumaticcraft:diesel_bucket" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -5.5d
+			x: -6.25d
+			y: -4.375d
 		}
 		{
 			dependencies: ["6070283AEA8DFA7E"]
+			icon_scale: 2.0d
 			id: "46C3D171AB4AA489"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -228,11 +562,12 @@
 				item: { count: 1, id: "pneumaticcraft:kerosene_bucket" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -4.5d
+			x: -6.25d
+			y: -2.8125d
 		}
 		{
 			dependencies: ["6070283AEA8DFA7E"]
+			icon_scale: 2.0d
 			id: "0D44F37BE787CA30"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -245,11 +580,12 @@
 				item: { count: 1, id: "pneumaticcraft:gasoline_bucket" }
 				type: "item"
 			}]
-			x: 3.5d
+			x: -6.25d
 			y: -7.5d
 		}
 		{
 			dependencies: ["6127E7FBC4ABF307"]
+			icon_scale: 2.0d
 			id: "16B74C92EB86AD0C"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -262,11 +598,12 @@
 				item: { count: 1, id: "pneumaticcraft:plastic_bucket" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: -6.0d
+			x: -2.25d
+			y: -5.0d
 		}
 		{
 			dependencies: ["16B74C92EB86AD0C"]
+			icon_scale: 2.0d
 			id: "7D58D814C99CB2F6"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -286,11 +623,12 @@
 					type: "item"
 				}
 			]
-			x: 7.5d
-			y: -4.0d
+			x: -2.1875d
+			y: -2.1875d
 		}
 		{
 			dependencies: ["6127E7FBC4ABF307"]
+			icon_scale: 2.0d
 			id: "05E2E87CF3F9A5FB"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -303,11 +641,12 @@
 				item: { count: 1, id: "pneumaticcraft:lubricant_bucket" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: -8.0d
+			x: -2.1875d
+			y: -7.1875d
 		}
 		{
 			dependencies: ["05E2E87CF3F9A5FB"]
+			icon_scale: 2.0d
 			id: "22ADCF0396B37BDC"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -320,11 +659,12 @@
 				item: { count: 1, id: "pneumaticcraft:speed_upgrade" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: -8.0d
+			x: 0.0d
+			y: -7.1875d
 		}
 		{
 			dependencies: ["7D58D814C99CB2F6"]
+			icon_scale: 2.0d
 			id: "7258F646D755E011"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -337,11 +677,12 @@
 				item: { count: 1, id: "pneumaticcraft:plastic" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.0d
+			x: -2.1875d
+			y: 0.0d
 		}
 		{
 			dependencies: ["486620B859CE9D1F"]
+			icon_scale: 2.0d
 			id: "7C57D76FDBD784F8"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -354,11 +695,12 @@
 				item: { count: 1, id: "pneumaticcraft:small_tank" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -4.0d
+			x: -11.25d
+			y: -2.25d
 		}
 		{
 			dependencies: ["325A0651CB2D1279"]
+			icon_scale: 2.0d
 			id: "6F5731A4490A537F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -371,14 +713,15 @@
 				item: { count: 1, id: "pneumaticcraft:etching_acid_bucket" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: 0.0d
+			x: 2.1875d
+			y: 5.3125d
 		}
 		{
 			dependencies: [
 				"501F5C25E81C779B"
 				"11D6BFA19C9DBFD3"
 			]
+			icon_scale: 2.0d
 			id: "325A0651CB2D1279"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -391,11 +734,12 @@
 				item: { count: 1, id: "pneumaticcraft:uv_light_box" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: 0.0d
+			x: 0.3125d
+			y: 5.3125d
 		}
 		{
 			dependencies: ["5299134A1144826F"]
+			icon_scale: 2.0d
 			id: "40F96E2CB2772CB8"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -408,11 +752,12 @@
 				item: { count: 1, id: "pneumaticcraft:amadron_tablet" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: 2.0d
+			x: -4.0625d
+			y: 7.5d
 		}
 		{
 			dependencies: ["0DDE4F5B0FE265B0"]
+			icon_scale: 2.0d
 			id: "5299134A1144826F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -432,11 +777,12 @@
 					type: "item"
 				}
 			]
-			x: 3.5d
-			y: 2.0d
+			x: -6.25d
+			y: 7.5d
 		}
 		{
 			dependencies: ["40F96E2CB2772CB8"]
+			icon_scale: 2.0d
 			id: "11D6BFA19C9DBFD3"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -449,11 +795,12 @@
 				item: { count: 1, id: "pneumaticcraft:pcb_blueprint" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 2.0d
+			x: -2.1875d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6F5731A4490A537F"]
+			icon_scale: 2.0d
 			id: "0B4D059EDFD90B5B"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -466,14 +813,15 @@
 				item: { count: 1, id: "pneumaticcraft:etching_tank" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: 0.0d
+			x: 2.1875d
+			y: 2.1875d
 		}
 		{
 			dependencies: [
 				"3D7406A517FA591D"
 				"7258F646D755E011"
 			]
+			icon_scale: 2.0d
 			id: "501F5C25E81C779B"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -486,11 +834,12 @@
 				item: { count: 1, id: "pneumaticcraft:empty_pcb" }
 				type: "item"
 			}]
-			x: 7.5d
-			y: 0.0d
+			x: -2.1875d
+			y: 5.3125d
 		}
 		{
 			dependencies: ["0B4D059EDFD90B5B"]
+			icon_scale: 2.0d
 			id: "310599204A45B6DC"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -503,11 +852,12 @@
 				item: { count: 1, id: "pneumaticcraft:unassembled_pcb" }
 				type: "item"
 			}]
-			x: 15.5d
-			y: 0.0d
+			x: 4.375d
+			y: 2.1875d
 		}
 		{
 			dependencies: ["0B4D059EDFD90B5B"]
+			icon_scale: 2.0d
 			id: "2FD63910A87E3858"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -520,12 +870,14 @@
 				item: { count: 1, id: "pneumaticcraft:capacitor" }
 				type: "item"
 			}]
-			x: 15.5d
-			y: -1.0d
+			x: 4.375d
+			y: 0.625d
 		}
 		{
 			dependencies: ["0B4D059EDFD90B5B"]
+			icon_scale: 2.0d
 			id: "3C1D1B97BA6025B7"
+			invisible: true
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "29DAA8582F801451"
@@ -537,8 +889,8 @@
 				item: { count: 1, id: "pneumaticcraft:transistor" }
 				type: "item"
 			}]
-			x: 15.5d
-			y: 1.0d
+			x: 4.375d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -546,6 +898,7 @@
 				"2FD63910A87E3858"
 				"3C1D1B97BA6025B7"
 			]
+			icon_scale: 2.0d
 			id: "580736A5075A46E9"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -558,11 +911,12 @@
 				item: { count: 1, id: "pneumaticcraft:printed_circuit_board" }
 				type: "item"
 			}]
-			x: 17.5d
-			y: 0.0d
+			x: 6.875d
+			y: 2.1875d
 		}
 		{
 			dependencies: ["580736A5075A46E9"]
+			icon_scale: 2.0d
 			id: "25FD9B369F69988B"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -602,11 +956,12 @@
 					type: "item"
 				}
 			]
-			x: 19.5d
-			y: 0.0d
+			x: 9.0625d
+			y: 2.1875d
 		}
 		{
 			dependencies: ["25FD9B369F69988B"]
+			icon_scale: 2.0d
 			id: "21A6EF3F9733831D"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -619,11 +974,12 @@
 				item: { count: 1, id: "pneumaticcraft:assembly_program_drill_laser" }
 				type: "item"
 			}]
-			x: 21.5d
-			y: 0.0d
+			x: 11.875d
+			y: 2.1875d
 		}
 		{
 			dependencies: ["7258F646D755E011"]
+			icon_scale: 2.0d
 			id: "6D41FE5A3CA68391"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -636,11 +992,12 @@
 				item: { count: 1, id: "pneumaticcraft:pneumatic_cylinder" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: -2.0d
+			x: 0.3125d
+			y: 1.5625d
 		}
 		{
 			dependencies: ["23313676FB186028"]
+			icon_scale: 2.0d
 			id: "38D846A79BC43920"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -653,11 +1010,12 @@
 				item: { count: 1, id: "pneumaticcraft:charging_station" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -4.0d
+			x: -12.75d
+			y: -2.25d
 		}
 		{
 			dependencies: ["688DEE1D1C4F9BDA"]
+			icon_scale: 2.0d
 			id: "1EC75DB7FA07D06B"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -670,11 +1028,12 @@
 				item: { count: 1, id: "pneumaticcraft:safety_tube_module" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 4.0d
+			x: -14.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E2932D7D8228910"]
+			icon_scale: 2.0d
 			id: "23313676FB186028"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -687,11 +1046,12 @@
 				item: { count: 1, id: "pneumaticcraft:pneumatic_wrench" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: -2.0d
+			x: -12.75d
+			y: 2.5d
 		}
 		{
 			dependencies: ["26A44EDA4AABFF6F"]
+			icon_scale: 2.0d
 			id: "6E2932D7D8228910"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -704,11 +1064,12 @@
 				item: { count: 1, id: "pneumaticcraft:pressure_gauge" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 0.0d
+			x: -12.75d
+			y: 5.25d
 		}
 		{
 			dependencies: ["6E2932D7D8228910"]
+			icon_scale: 2.0d
 			id: "688DEE1D1C4F9BDA"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -721,11 +1082,12 @@
 				item: { count: 1, id: "pneumaticcraft:pressure_gauge_module" }
 				type: "item"
 			}]
-			x: -2.5d
-			y: 2.0d
+			x: -14.25d
+			y: 7.75d
 		}
 		{
 			dependencies: ["21A6EF3F9733831D"]
+			icon_scale: 2.0d
 			id: "2E5D9CB5D821E96A"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -738,11 +1100,12 @@
 				item: { count: 1, id: "pneumaticcraft:advanced_pressure_tube" }
 				type: "item"
 			}]
-			x: 23.5d
-			y: 0.0d
+			x: 11.9375d
+			y: -2.125d
 		}
 		{
 			dependencies: ["2B8DFC9987083AF7"]
+			icon_scale: 2.0d
 			id: "525658A19130AF37"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -750,16 +1113,18 @@
 				table_id: 9016087528600323687L
 				type: "loot"
 			}]
+			size: 1.0d
 			tasks: [{
 				id: "6E70B1C29CAEDD0B"
 				item: { count: 1, id: "pneumaticcraft:liquid_compressor" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -2.0d
+			x: -6.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
+			icon_scale: 2.0d
 			id: "1D249BAAD819E83F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -772,11 +1137,12 @@
 				item: { count: 1, id: "pneumaticcraft:flux_compressor" }
 				type: "item"
 			}]
-			x: 23.5d
-			y: 2.5d
+			x: 13.75d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
+			icon_scale: 2.0d
 			id: "1A368E5AD57C10E1"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -789,11 +1155,12 @@
 				item: { count: 1, id: "pneumaticcraft:advanced_liquid_compressor" }
 				type: "item"
 			}]
-			x: 22.0d
-			y: 2.0d
+			x: 11.875d
+			y: -7.1875d
 		}
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
+			icon_scale: 2.0d
 			id: "01C94AD31BA1079F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -806,11 +1173,12 @@
 				item: { count: 1, id: "pneumaticcraft:advanced_air_compressor" }
 				type: "item"
 			}]
-			x: 25.0d
-			y: 2.0d
+			x: 13.75d
+			y: 2.1875d
 		}
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
+			icon_scale: 2.0d
 			id: "6762C357EEDE8D10"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -823,11 +1191,12 @@
 				item: { count: 1, id: "pneumaticcraft:solar_compressor" }
 				type: "item"
 			}]
-			x: 25.0d
-			y: -2.0d
+			x: 10.625d
+			y: -5.3125d
 		}
 		{
 			dependencies: ["525658A19130AF37"]
+			icon_scale: 2.0d
 			id: "7D155344A5A6CEF7"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -840,11 +1209,12 @@
 				item: { count: 1, id: "pneumaticcraft:thermal_compressor" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: -4.0d
+			x: -6.25d
+			y: 0.25d
 		}
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
+			icon_scale: 2.0d
 			id: "1794E588334CB478"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -857,11 +1227,12 @@
 				item: { count: 1, id: "pneumaticcraft:aerial_interface" }
 				type: "item"
 			}]
-			x: 22.0d
-			y: -2.0d
+			x: 13.75d
+			y: -7.1875d
 		}
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
+			icon_scale: 2.0d
 			id: "04E6DF90BA2FCACB"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -874,11 +1245,12 @@
 				item: { count: 1, id: "pneumaticcraft:pneumatic_dynamo" }
 				type: "item"
 			}]
-			x: 26.0d
-			y: 1.0d
+			x: 13.75d
+			y: -2.1875d
 		}
 		{
 			dependencies: ["580736A5075A46E9"]
+			icon_scale: 2.0d
 			id: "2EEB0A3FE1B54A43"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -891,11 +1263,12 @@
 				item: { count: 1, id: "pneumaticcraft:programmer" }
 				type: "item"
 			}]
-			x: 19.5d
-			y: -2.0d
+			x: 6.875d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3D7406A517FA591D"]
+			icon_scale: 2.0d
 			id: "3F3D655DB4F17D5A"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -908,11 +1281,12 @@
 				item: { count: 1, id: "pneumaticcraft:turbine_blade" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: -2.0d
+			x: -4.0625d
+			y: 2.1875d
 		}
 		{
 			dependencies: ["3F3D655DB4F17D5A"]
+			icon_scale: 2.0d
 			id: "6FC67A24AACDC2AD"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -925,11 +1299,12 @@
 				item: { count: 1, id: "pneumaticcraft:turbine_rotor" }
 				type: "item"
 			}]
-			x: 5.5d
-			y: -4.0d
+			x: -4.0625d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3D7406A517FA591D"]
+			icon_scale: 2.0d
 			id: "480866B51061F78E"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -942,11 +1317,12 @@
 				item: { count: 1, id: "pneumaticcraft:solar_wafer" }
 				type: "item"
 			}]
-			x: 3.5d
-			y: -2.0d
+			x: -4.0625d
+			y: 5.625d
 		}
 		{
 			dependencies: ["2EEB0A3FE1B54A43"]
+			icon_scale: 2.0d
 			id: "7EE978BF04D4530F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -959,11 +1335,12 @@
 				item: { count: 1, id: "pneumaticcraft:programming_puzzle" }
 				type: "item"
 			}]
-			x: 21.5d
-			y: -4.0d
+			x: 6.875d
+			y: -2.1875d
 		}
 		{
 			dependencies: ["0F7AEC02C0AC86A2"]
+			icon_scale: 2.0d
 			id: "29AC06B27D6A53C5"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -976,11 +1353,12 @@
 				item: { count: 1, id: "pneumaticcraft:collector_drone" }
 				type: "item"
 			}]
-			x: 17.0d
-			y: -3.5d
+			x: 6.875d
+			y: 8.125d
 		}
 		{
 			dependencies: ["7EE978BF04D4530F"]
+			icon_scale: 2.0d
 			id: "0164C557CFF09322"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -993,11 +1371,12 @@
 				item: { count: 1, id: "pneumaticcraft:drone" }
 				type: "item"
 			}]
-			x: 23.5d
-			y: -4.0d
+			x: 6.875d
+			y: -5.0d
 		}
 		{
 			dependencies: ["0F7AEC02C0AC86A2"]
+			icon_scale: 2.0d
 			id: "5EEF6110DDBEB146"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1010,11 +1389,12 @@
 				item: { count: 1, id: "pneumaticcraft:guard_drone" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: -3.5d
+			x: 8.75d
+			y: 7.1875d
 		}
 		{
 			dependencies: ["0F7AEC02C0AC86A2"]
+			icon_scale: 2.0d
 			id: "79C075FFF796FE16"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1027,11 +1407,12 @@
 				item: { count: 1, id: "pneumaticcraft:harvesting_drone" }
 				type: "item"
 			}]
-			x: 16.0d
-			y: -3.0d
+			x: 5.3125d
+			y: 7.3125d
 		}
 		{
 			dependencies: ["0F7AEC02C0AC86A2"]
+			icon_scale: 2.0d
 			id: "7BD7F5E46151B2EB"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1044,11 +1425,12 @@
 				item: { count: 1, id: "pneumaticcraft:logistics_drone" }
 				type: "item"
 			}]
-			x: 19.0d
-			y: -3.0d
+			x: 8.75d
+			y: 5.3125d
 		}
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
+			icon_scale: 2.0d
 			id: "29B59876D04A3772"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1061,11 +1443,12 @@
 				item: { count: 1, id: "pneumaticcraft:pressurized_spawner" }
 				type: "item"
 			}]
-			x: 23.5d
-			y: -2.5d
+			x: 10.9375d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0DDE4F5B0FE265B0"]
+			icon_scale: 2.0d
 			id: "15B6718AFA5E6959"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1078,11 +1461,12 @@
 				item: { count: 1, id: "pneumaticcraft:spawner_extractor" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: 2.5d
+			x: -8.4375d
+			y: 0.3125d
 		}
 		{
 			dependencies: ["0DDE4F5B0FE265B0"]
+			icon_scale: 2.0d
 			id: "3696D20B77DF1B24"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1095,11 +1479,12 @@
 				item: { count: 1, id: "pneumaticcraft:spawner_core" }
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: -9.375d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0DDE4F5B0FE265B0"]
+			icon_scale: 2.0d
 			id: "3618C8F2EE6E308F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1112,11 +1497,12 @@
 				item: { count: 1, id: "pneumaticcraft:vacuum_pump" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 2.0d
+			x: -8.4375d
+			y: 7.5d
 		}
 		{
 			dependencies: ["0DDE4F5B0FE265B0"]
+			icon_scale: 2.0d
 			id: "33CEED6232901CE5"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1129,11 +1515,12 @@
 				item: { count: 1, id: "pneumaticcraft:vacuum_trap" }
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.5d
+			x: -10.3125d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6D41FE5A3CA68391"]
+			icon_scale: 2.0d
 			id: "67B17617F57B247F"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1161,11 +1548,12 @@
 					type: "item"
 				}
 			]
-			x: 11.5d
-			y: -2.0d
+			x: 0.3125d
+			y: 3.125d
 		}
 		{
 			dependencies: ["7258F646D755E011"]
+			icon_scale: 2.0d
 			id: "1EF49BB17B98283A"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1178,11 +1566,12 @@
 				item: { count: 1, id: "pneumaticcraft:memory_stick" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: -4.0d
+			x: 2.1875d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1EF49BB17B98283A"]
+			icon_scale: 2.0d
 			id: "2C99CDE7801C48F0"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1195,11 +1584,12 @@
 				item: { count: 1, id: "pneumaticcraft:minigun" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -4.0d
+			x: 2.1875d
+			y: -2.1875d
 		}
 		{
 			dependencies: ["2C99CDE7801C48F0"]
+			icon_scale: 2.0d
 			id: "12A7971658135C90"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1212,11 +1602,12 @@
 				item: { count: 1, id: "pneumaticcraft:sentry_turret" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: -6.0d
+			x: 2.1875d
+			y: -5.0d
 		}
 		{
 			dependencies: ["0E89FB32767F03C0"]
+			icon_scale: 2.0d
 			id: "17FCD3ECDC775E69"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1229,11 +1620,12 @@
 				item: { count: 1, id: "pneumaticcraft:gun_ammo_ap" }
 				type: "item"
 			}]
-			x: 12.0d
-			y: -9.5d
+			x: 2.1875d
+			y: -7.1875d
 		}
 		{
 			dependencies: ["0E89FB32767F03C0"]
+			icon_scale: 2.0d
 			id: "7C31082BB88384BF"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1246,11 +1638,12 @@
 				item: { count: 1, id: "pneumaticcraft:gun_ammo_explosive" }
 				type: "item"
 			}]
-			x: 15.0d
-			y: -9.5d
+			x: 5.9375d
+			y: -8.4375d
 		}
 		{
 			dependencies: ["0E89FB32767F03C0"]
+			icon_scale: 2.0d
 			id: "77897C0A26941E97"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1263,11 +1656,12 @@
 				item: { count: 1, id: "pneumaticcraft:gun_ammo_freezing" }
 				type: "item"
 			}]
-			x: 11.5d
-			y: -8.0d
+			x: 6.5625d
+			y: -7.1875d
 		}
 		{
 			dependencies: ["0E89FB32767F03C0"]
+			icon_scale: 2.0d
 			id: "18E944F145FEBB8C"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1280,11 +1674,12 @@
 				item: { count: 1, id: "pneumaticcraft:gun_ammo_incendiary" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: -10.0d
+			x: 2.8125d
+			y: -8.4375d
 		}
 		{
 			dependencies: ["12A7971658135C90"]
+			icon_scale: 2.0d
 			id: "0E89FB32767F03C0"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1297,11 +1692,12 @@
 				item: { count: 1, id: "pneumaticcraft:gun_ammo" }
 				type: "item"
 			}]
-			x: 13.5d
-			y: -8.0d
+			x: 4.375d
+			y: -6.25d
 		}
 		{
 			dependencies: ["0E89FB32767F03C0"]
+			icon_scale: 2.0d
 			id: "166CEF9F03DA14F6"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1314,11 +1710,12 @@
 				item: { count: 1, id: "pneumaticcraft:gun_ammo_weighted" }
 				type: "item"
 			}]
-			x: 15.5d
-			y: -8.0d
+			x: 4.375d
+			y: -8.4375d
 		}
 		{
 			dependencies: ["2E5D9CB5D821E96A"]
+			icon_scale: 2.0d
 			id: "378A3A640EF06FE5"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1331,11 +1728,12 @@
 				item: { count: 1, id: "pneumaticcraft:electrostatic_compressor" }
 				type: "item"
 			}]
-			x: 26.0d
-			y: -1.0d
+			x: 13.75d
+			y: -4.0625d
 		}
 		{
 			dependencies: ["16B74C92EB86AD0C"]
+			icon_scale: 2.0d
 			id: "023A420F24C515EB"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1348,11 +1746,12 @@
 				item: { count: 1, id: "pneumaticcraft:reinforced_pressure_tube" }
 				type: "item"
 			}]
-			x: 9.5d
-			y: -6.0d
+			x: 0.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7C57D76FDBD784F8"]
+			icon_scale: 2.0d
 			id: "1246838BA3EEE910"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1365,11 +1764,12 @@
 				item: { count: 1, id: "pneumaticcraft:oil_bucket" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -6.0d
+			x: -11.25d
+			y: -5.0d
 		}
 		{
 			dependencies: ["7BD7F5E46151B2EB"]
+			icon_scale: 2.0d
 			id: "7342ABDAD6467123"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1404,11 +1804,12 @@
 					type: "item"
 				}
 			]
-			x: 20.5d
-			y: -4.5d
+			x: 11.5625d
+			y: 5.3125d
 		}
 		{
 			dependencies: ["0164C557CFF09322"]
+			icon_scale: 2.0d
 			id: "7C895CB7DD5FEA8B"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1421,8 +1822,8 @@
 				item: { count: 1, id: "pneumaticcraft:programmable_controller" }
 				type: "item"
 			}]
-			x: 25.5d
-			y: -4.0d
+			x: 8.4375d
+			y: -6.25d
 		}
 		{
 			dependencies: ["580736A5075A46E9"]
@@ -1432,6 +1833,7 @@
 				}
 				id: "pneumaticcraft:drone"
 			}
+			icon_scale: 2.0d
 			id: "0F7AEC02C0AC86A2"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1443,8 +1845,8 @@
 				id: "4F4699F9117BC270"
 				type: "checkmark"
 			}]
-			x: 17.5d
-			y: -1.5d
+			x: 6.8125d
+			y: 5.3125d
 		}
 	]
 }
