@@ -121,7 +121,7 @@
 			image: "occultism:textures/gui/book/pentagram_rose.png"
 			rotation: 36.5d
 			width: 3.0d
-			x: -3.0d
+			x: -2.5d
 			y: -5.5d
 		}
 		{
@@ -186,6 +186,131 @@
 			width: 1.5d
 			x: 11.0d
 			y: -2.5d
+		}
+		{
+			alpha: 220
+			height: 1.25d
+			image: "modern_industrialization:item/aluminum_plate"
+			rotation: -45.0d
+			width: 1.25d
+			x: 4.5d
+			y: -6.5d
+		}
+		{
+			alpha: 220
+			height: 1.25d
+			image: "modern_industrialization:item/bronze_plate"
+			rotation: -90.0d
+			width: 1.25d
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			alpha: 220
+			height: 1.25d
+			image: "modern_industrialization:item/stainless_steel_plate"
+			rotation: 0.0d
+			width: 1.25d
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			alpha: 220
+			height: 1.25d
+			image: "modern_industrialization:item/copper_dust"
+			rotation: -135.0d
+			width: 1.25d
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			alpha: 220
+			height: 1.25d
+			image: "modern_industrialization:item/tin_dust"
+			rotation: 135.0d
+			width: 1.25d
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			alpha: 220
+			height: 1.25d
+			image: "modern_industrialization:item/iron_dust"
+			rotation: -180.0d
+			width: 1.25d
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			alpha: 150
+			height: 3.0d
+			image: "ars_elemental:item/_glyph_template_form"
+			order: -1
+			rotation: 0.0d
+			width: 3.0d
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/stonecutter_saw"
+			order: -1
+			rotation: 0.0d
+			width: 3.0d
+			x: 4.5d
+			y: -6.5d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/stonecutter_saw"
+			order: -1
+			rotation: 180.0d
+			width: 3.0d
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 0.03125d
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 0.03125d
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			color: 15426815
+			height: 1.0d
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/stonecutter_saw"
+			order: -1
+			rotation: 90.0d
+			width: 3.0d
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/stonecutter_saw"
+			order: -1
+			rotation: -90.0d
+			width: 3.0d
+			x: 3.5d
+			y: -5.5d
 		}
 	]
 	order_index: 0
@@ -328,6 +453,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "17D5755DE11C487E"
+					item: {
+						count: 1
+						id: "ars_elemental:yellow_archwood_sapling"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "02D1703C79A7F3EF"
@@ -407,8 +540,8 @@
 			]
 			tasks: [{
 				count: 8L
-				id: "52CBEA035C0EBCDF"
-				item: { count: 32, id: "ars_nouveau:sourcestone" }
+				id: "120BD9BBBD88191E"
+				item: { count: 8, id: "ars_nouveau:sourcestone" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -432,7 +565,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["2A5CD188C06D7F3C"]
+			dependencies: ["3E9DD2255D25B2D7"]
 			id: "20B9E6F51A4F9789"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -458,12 +591,22 @@
 		{
 			dependencies: ["20B9E6F51A4F9789"]
 			id: "5CEFB3C551971327"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "491BF10EA292264C"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "491BF10EA292264C"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "4BE0D63917B00C34"
+					item: {
+						count: 1
+						id: "ars_nouveau:magebloom_crop"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "554AF3248BFA413A"
 				item: { count: 1, id: "ars_nouveau:magebloom_crop" }
@@ -520,7 +663,7 @@
 				item: { count: 1, id: "ars_nouveau:blank_parchment" }
 				type: "item"
 			}]
-			x: -1.5d
+			x: -1.0d
 			y: -4.0d
 		}
 		{
@@ -599,7 +742,7 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
+			x: -4.0d
 			y: -2.5d
 		}
 		{
@@ -1295,12 +1438,22 @@
 				id: "ars_nouveau:ritual_disintegration"
 			}
 			id: "2E1EB12F3D9B315E"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "07DB1225DBB1F117"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "07DB1225DBB1F117"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "48193FAE81AB3D74"
+					item: {
+						count: 1
+						id: "ars_additions:lost_codex_entry"
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "445FCFEBC475479D"
@@ -1646,18 +1799,43 @@
 		{
 			dependencies: ["06F1E4885CE3C0C9"]
 			id: "4DBDCEA0761F1D3B"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "31AE06658742F3BB"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "33456ED0BC1432F2"
-				item: { count: 1, id: "ars_nouveau:warp_scroll" }
-				type: "item"
-			}]
-			x: -3.0d
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "31AE06658742F3BB"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "1BCF0F473E6C7535"
+					item: {
+						count: 1
+						id: "ars_additions:lost_codex_entry"
+					}
+					type: "item"
+				}
+				{
+					id: "2DFCD69DB6F804FA"
+					item: {
+						count: 1
+						id: "ars_nouveau:warp_scroll"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "33456ED0BC1432F2"
+					item: { count: 1, id: "ars_nouveau:warp_scroll" }
+					type: "item"
+				}
+				{
+					id: "49DFC9432CA039F0"
+					item: { count: 1, id: "ars_nouveau:stable_warp_scroll" }
+					type: "item"
+				}
+			]
+			x: -2.5d
 			y: -4.0d
 		}
 		{
@@ -1692,6 +1870,7 @@
 		{
 			dependencies: ["68721F148E2805FB"]
 			id: "4F076E5D6F0BED74"
+			optional: true
 			tasks: [{
 				id: "23751FBA43669E50"
 				type: "checkmark"
@@ -1702,6 +1881,7 @@
 		{
 			dependencies: ["1E7FD1EBAE4891FA"]
 			id: "5253D3AA5B45369E"
+			optional: true
 			tasks: [{
 				id: "7467CCF590DB35EE"
 				type: "checkmark"
@@ -1781,12 +1961,12 @@
 				}
 			]
 			x: 4.5d
-			y: -4.0d
+			y: -3.5d
 		}
 		{
 			id: "69767F69C84AC701"
 			rewards: [{
-				count: 4
+				count: 5
 				id: "79E1743B88B019BF"
 				item: {
 					count: 1
@@ -1832,6 +2012,7 @@
 		{
 			dependencies: ["78B4459314C86937"]
 			id: "2A5CD188C06D7F3C"
+			optional: true
 			tasks: [{
 				id: "1F9F753DEC40EABB"
 				type: "checkmark"
@@ -1921,7 +2102,7 @@
 					type: "item"
 				}
 			]
-			x: -1.5d
+			x: -1.0d
 			y: -2.5d
 		}
 		{
@@ -1976,6 +2157,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "0963EC6F6F36C22A"
+					item: {
+						count: 1
+						id: "ars_nouveau:wilden_tribute"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "3E1C7D4A3D6A15ED"
@@ -2003,6 +2192,15 @@
 					}
 					type: "item"
 				}
+				{
+					count: 4
+					id: "66C399A03139C0CB"
+					item: {
+						count: 1
+						id: "minecraft:chest"
+					}
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "62E0833C71B5A324"
@@ -2015,6 +2213,14 @@
 		{
 			dependencies: ["5CEFB3C551971327"]
 			id: "3971C52500C72F92"
+			rewards: [{
+				id: "5658FAC948F41F07"
+				item: {
+					count: 1
+					id: "ars_additions:lost_codex_entry"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "3EAF760E81BA75DB"
 				item: { count: 1, id: "ars_nouveau:runic_chalk" }
@@ -2157,6 +2363,7 @@
 		{
 			dependencies: ["4F076E5D6F0BED74"]
 			id: "1E7FD1EBAE4891FA"
+			optional: true
 			tasks: [{
 				id: "212C47608FDEF677"
 				type: "checkmark"
@@ -2293,19 +2500,28 @@
 					}
 					type: "item"
 				}
-			]
-			tasks: [
 				{
-					id: "3EC8DB2DEBA52973"
-					item: { count: 1, id: "ars_nouveau:void_jar" }
+					id: "2670C938D89E9605"
+					item: {
+						count: 1
+						id: "minecraft:gravel"
+					}
 					type: "item"
 				}
 				{
-					id: "10F536B551C90699"
-					item: { count: 1, id: "ars_nouveau:jar_of_light" }
+					id: "7BF939B7957F08C7"
+					item: {
+						count: 1
+						id: "minecraft:sand"
+					}
 					type: "item"
 				}
 			]
+			tasks: [{
+				id: "3EC8DB2DEBA52973"
+				item: { count: 1, id: "ars_nouveau:void_jar" }
+				type: "item"
+			}]
 			x: 2.0d
 			y: 1.5d
 		}
@@ -2375,7 +2591,7 @@
 				id: "76A439253097AEE3"
 				type: "checkmark"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: -5.5d
 		}
 		{
@@ -2407,8 +2623,8 @@
 				id: "0804BC0455D3EEAC"
 				type: "checkmark"
 			}]
-			x: 8.0d
-			y: 2.5d
+			x: 7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["68721F148E2805FB"]
@@ -2434,14 +2650,96 @@
 			dependencies: ["0E3A8954B2AAF9F7"]
 			id: "5B578B176E3E3280"
 			optional: true
-			rewards: [{
-				id: "759E6AAAA146DF09"
-				item: {
-					count: 1
-					id: "minecraft:cake"
+			rewards: [
+				{
+					id: "759E6AAAA146DF09"
+					item: {
+						count: 1
+						id: "minecraft:cake"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0F85E8E209448987"
+					item: {
+						count: 1
+						id: "arsdelight:bowl_of_wilden_salad"
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "409ABE58A225C159"
+					item: {
+						components: {
+							"minecraft:custom_name": "{\"italic\":false,\"text\":\"Warden's Meat\"}"
+							"minecraft:food": {
+								effects: [
+									{
+										effect: {
+											amplifier: 2b
+											duration: 3600
+											id: "minecraft:wither"
+											"neoforge:cures": [
+												"milk"
+												"protected_by_totem"
+											]
+											show_icon: 1b
+										}
+									}
+									{
+										effect: {
+											amplifier: 2b
+											duration: 3600
+											id: "minecraft:poison"
+											"neoforge:cures": [
+												"milk"
+												"protected_by_totem"
+											]
+											show_icon: 1b
+										}
+									}
+									{
+										effect: {
+											amplifier: 3b
+											duration: 3600
+											id: "minecraft:hunger"
+											"neoforge:cures": [
+												"milk"
+												"protected_by_totem"
+											]
+											show_icon: 1b
+										}
+									}
+									{
+										effect: {
+											amplifier: 9b
+											duration: 3600
+											id: "minecraft:mining_fatigue"
+											"neoforge:cures": [
+												"milk"
+												"protected_by_totem"
+											]
+											show_icon: 1b
+										}
+									}
+								]
+								nutrition: 4
+								saturation: 4.0f
+							}
+							"minecraft:lore": [
+								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Meat from a Warden\"}"
+								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Obtained through a dubious mean\"}"
+								"{\"color\":\"dark_red\",\"italic\":false,\"text\":\"Eat at your own risk!\"}"
+							]
+							"minecraft:rarity": "epic"
+						}
+						count: 1
+						id: "minecraft:brick"
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1C5A76FFF4DFBD7D"
 				type: "checkmark"
@@ -2459,6 +2757,123 @@
 			}]
 			x: -1.5d
 			y: -0.5d
+		}
+		{
+			id: "5EC2714894E2CB13"
+			optional: true
+			rewards: [{
+				id: "72CBB16664C3B98C"
+				item: {
+					count: 1
+					id: "ars_nouveau:source_gem"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1FE8EF0980A204F8"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2A5CD188C06D7F3C"]
+			id: "3E9DD2255D25B2D7"
+			optional: true
+			tasks: [{
+				id: "0EF8009F0807B0A4"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4DBDCEA0761F1D3B"]
+			id: "2BBC228E24D5EF05"
+			optional: true
+			rewards: [{
+				id: "2F0590203A32DDF1"
+				item: {
+					count: 1
+					id: "ars_nouveau:warp_scroll"
+				}
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "5EF30965C2695DCC"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["24D4796E0026F9F7"]
+			id: "560634C7982F2FDC"
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "06DADC00CA9EF7FD"
+					table_id: 6467551270008706529L
+					type: "choice"
+				}
+				{
+					id: "343E206545289362"
+					item: {
+						count: 1
+						id: "ars_nouveau:void_prism"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "60664DA791E7E44D"
+				item: { count: 1, id: "ars_nouveau:spell_prism" }
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["16C84031D0CE45AE"]
+			id: "0C2DFB4A8DF29B1D"
+			rewards: [
+				{
+					id: "38EB58C5634033D6"
+					item: {
+						count: 1
+						id: "ars_additions:ritual_locate_structure"
+					}
+					type: "item"
+				}
+				{
+					id: "5CDD82A6C0BF2F83"
+					item: {
+						count: 1
+						id: "ars_additions:codex_entry"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "45D3A3EC1118265A"
+				item: { count: 1, id: "ars_additions:ritual_locate_structure" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["24D4796E0026F9F7"]
+			id: "16F7C881B4CED163"
+			optional: true
+			tasks: [{
+				id: "110B75D95F8284F2"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 2.5d
 		}
 	]
 }
