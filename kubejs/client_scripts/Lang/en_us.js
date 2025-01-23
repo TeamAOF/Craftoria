@@ -15,5 +15,8 @@ ClientEvents.lang('en_us', (e) => {
     // Gateways
     'craftoria.endless/boss': 'Endless Boss Gateway',
     'craftoria.bomd': 'Trials of Awaken',
+
+    // Guidebooks
+    'modern_industrialization.guide_name': 'MI Guidebook',
   });
 });
