@@ -23,19 +23,20 @@ ServerEvents.recipes((event) => {
     'mffs:steel_compound',
     'mffs:steel_ingot',
     'industrialforegoing:laser_drill_ore/raw_materials/iridium',
+    'hyperbox:hyperbox',
   ];
 
   const output = [];
 
   id.forEach((id) => {
-    event.remove({id: id});
+    event.remove({ id: id });
   });
 
   output.forEach((output) => {
-    event.remove({output: output});
+    event.remove({ output: output });
   });
 
   globalItemRemovals.forEach((output) => {
-    event.remove({output: output});
+    event.remove({ output: output });
   });
 });
