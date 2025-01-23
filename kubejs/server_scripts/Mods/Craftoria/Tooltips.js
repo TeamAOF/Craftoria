@@ -13,6 +13,17 @@ ItemEvents.modifyTooltips((e) => {
   e.add('pipe_connector:pipe_connector', { shift: true }, [Text.gold('Check EMI for supported pipes.')]);
   e.add('#cookingforblockheads:sinks', [Text.red("Doesn't provide infinite water.")]);
   e.add('eternal_starlight:red_starlight_crystal_shard', { shift: false }, holdShift);
-  e.add('eternal_starlight:red_starlight_crystal_shard', { shift: true },
-  [Text.lightPurple("Can be found in the Starlight dimension within the Crystalized biomes.")]);
+  e.add('eternal_starlight:red_starlight_crystal_shard', { shift: true }, [
+    Text.lightPurple('Can be found in the Starlight dimension within the Crystalized biomes.'),
+  ]);
+});
+
+BlockEvents.rightClicked(['hyperbox:hyperbox', 'hyperbox:aperture'], (e) => {
+  e.player.tell(Text.red('HYPERBOXES WILL BE REMOVED IN VERSION 1.15'));
+  e.player.tell(Text.yellow('Please migrate to using Compact Machines.'));
+});
+
+BlockEvents.placed('hyperbox:hyperbox', (e) => {
+  e.player.tell(Text.red('HYPERBOXES WILL BE REMOVED IN VERSION 1.15'));
+  e.player.tell(Text.yellow('Please migrate to using Compact Machines.'));
 });
