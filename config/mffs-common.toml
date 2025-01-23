@@ -19,10 +19,6 @@
 	giveGuidebookOnFirstJoin = true
 
 [balance]
-	#The amount of generated Fortron per 1 FE
-	# Default: 0.0025
-	# Range: 1.0E-5 ~ 10000.0
-	energyConversionRatio = 0.0025
 	#Fortron catalyst production multiplier
 	# Default: 2.0
 	# Range: 0.0 ~ 10000.0
@@ -31,11 +27,25 @@
 	# Default: 200
 	# Range: 1 ~ 10000
 	catalystBurnTime = 200
-	#Energy loss per tick when converting Fortron back to FE
-	# Default: 1.0
-	# Range: 0.0 ~ 10000.0
-	backConversionEnergyLoss = 1.0
 	#Energy to consume when the Interdiction Matrix kills a player
 	# Default: 0
 	# Range: > 0
 	interdictionMatrixKillEnergy = 0
+
+[coercion_deriver]
+	#FE to convert into 1 Fortron
+	# Default: 400
+	# Range: > 1
+	feCostPerFortron = 400
+	#FE to subtract when converting Fortron to FE
+	# Default: 1
+	# Range: > 0
+	fortronToFeLoss = 1
+	#Base limit of fortron produced per tick (20 per second). Scales with speed modules and catalyst.
+	# Default: 200
+	# Range: > 1
+	fortronPerTick = 200
+	#Production bonus per speed module. production = fortronPerTick + (fortronPerTick * speedModuleCount)... or x2 multiplicative
+	# Default: 200
+	# Range: > 1
+	fortronPerTickSpeedModule = 200

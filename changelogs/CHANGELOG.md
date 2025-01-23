@@ -1,6 +1,49 @@
+## Craftoria | v1.14.0
+
+_NeoForge Loader 21.1.99_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.14.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.14.0.md)_
+
+## DISCLAIMER: Hyperboxes will be removed in 1.15, move your current setups to Compact Machines.
+
+### Changes/Improvements ⭐
+
+* Reworked PNC quest chapter design **(SubordinalBlue)**
+* Changes to Ars quest chapter including, typos, better readability & more descriptions **(Sonic)**.
+* Added guide entry for MI, hold down "G" key while hovering over anything MI to open the entry for it **(Phantom)**.
+* Removed custom villager models for now, due to rendering issues with mods adding their own villagers **(AK)**.
+* Accidentally left emissive modded ores on by default, now off. Want modded ores to glow with/without shaders? Enable the Craftoria Emissive Ores resourcepack **(AK)**.
+* Added new Witch model & texture **(AK)**.
+* Added new illager models & textures **(AK)**.
+
+### Bug Fixes 🪲
+
+* Fixed Nano Suit visor from EI to be transparent **(Swedz)**.
+* Fixed cable facades not rendering correctly.
+* Fixed a bug where sometimes tooltips wouldnt render if applying too many effects **(Phantom)**.
+* Fixed discord rich presence for Twilight Forest **(AK)**
+* Fixed XP dupe through JDT.
+
+### Added Mods ✅
+
+  * [Colorful Hearts](https://www.curseforge.com/minecraft/mc-mods/colorful-hearts)
+  * [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
+  * [Concurrent Chunk Management Engine](https://www.curseforge.com/minecraft/mc-mods/c2me)
+  * [Cupboard](https://www.curseforge.com/minecraft/mc-mods/cupboard)
+  * [Flux Networks](https://www.curseforge.com/minecraft/mc-mods/flux-networks)
+  * [GuideME](https://www.curseforge.com/minecraft/mc-mods/guideme)
+  * [Loot Integrations](https://www.curseforge.com/minecraft/mc-mods/loot-integrations)
+  * [Loot Integrations: Dungeon Crawl](https://www.curseforge.com/minecraft/mc-mods/loot-integrations-dungeon-crawl)
+  * [Loot Integrations: Hopo Better Mineshaft, Ruins & Portals](https://www.curseforge.com/minecraft/mc-mods/loot-integrations-hopo-better-mineshaft-ruins)
+  * [Loot Integrations: Structory & Towers](https://www.curseforge.com/minecraft/mc-mods/loot-integrations-structory-towers)
+  * [Loot Integrations: Towns and Towers](https://www.curseforge.com/minecraft/mc-mods/loot-integrations-towns-and-towers)
+  * [Loot Integrations: When Dungeons Arise & Co](https://www.curseforge.com/minecraft/mc-mods/loot-integrations-when-dungeons-arise)
+  * [Raised](https://www.curseforge.com/minecraft/mc-mods/raised)
+  * [TwilightForest Thread Safety Addon](https://www.curseforge.com/minecraft/mc-mods/tfthreadsafetyaddon)
+  * [Yung Structures Addon for Loot Integrations](https://www.curseforge.com/minecraft/mc-mods/yung-structures-addon-for-loot-integrations)
+---
+
 ## Craftoria | v1.13.1
 
-_NeoForge Loader 21.1.97_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.13.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.13.0.md)_
+_NeoForge Loader 21.1.97_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.13.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.13.1.md)_
 
 ### Bug Fixes 🪲
 
