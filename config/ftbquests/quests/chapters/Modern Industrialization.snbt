@@ -2562,7 +2562,6 @@
 			id: "3F0097CCBA02804C"
 			optional: true
 			rewards: [{
-				exclude_from_claim_all: true
 				id: "24008FFF299FF031"
 				table_id: 6467551270008706529L
 				type: "random"
@@ -2665,10 +2664,9 @@
 			dependencies: ["164F4710E109F7F2"]
 			id: "7BDBE300D4B0B1F7"
 			rewards: [{
-				exclude_from_claim_all: true
 				id: "5171F576C6827D14"
 				table_id: 6467551270008706529L
-				type: "loot"
+				type: "random"
 			}]
 			tasks: [{
 				id: "29C411995F48226C"
