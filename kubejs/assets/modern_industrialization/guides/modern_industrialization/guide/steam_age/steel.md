@@ -12,6 +12,10 @@ item_ids:
 
 # Your First Steel
 
+<GameScene zoom="2" interactive={true}>
+ <ImportStructure src='../assets/structures/steam_blast_furnace.snbt' />
+</GameScene>
+
 You can macerate coke to obtain Coke Dust, which you can combine with iron to get Uncooked Steel Dust. Using the mixer will give you a better ratio, of course. Now, you will need a Steam Blast Furnace to turn that into steel.
 
 Craft the controller, 29 Fire Clay Bricks and the same three hatches as the Coke Oven.

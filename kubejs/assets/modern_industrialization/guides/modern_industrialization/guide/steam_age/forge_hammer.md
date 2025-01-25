@@ -20,15 +20,14 @@ Before making bronze, we will need to create a Forge Hammer. It is used for basi
 
 You can put iron, copper and tin ore in the forge hammer and you will receive 2 raw ores per ore. You can increase this ratio by using a Hammer. Every raw ores can be smelted into an ingot.
 
-## Iron Hammer
+## Forge Hammer & Iron Hammer
 
-<Recipe id="modern_industrialization:materials/iron/craft/hammer" />
+<Row>
+  <Recipe id="modern_industrialization:forge_hammer" />
+  <Recipe id="modern_industrialization:materials/iron/craft/hammer" />
+</Row>
 
 The Hammer increases the ratio in the Forge Hammer and unlocks more recipes, at the cost of some durability
-
-## Forge Hammer
-
-<Recipe id="modern_industrialization:forge_hammer" />
 
 Now, you may want to consider making a Steam Mining Drill to obtain the ores directly without needing a Silk Touch pickaxe.
 

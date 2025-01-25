@@ -11,6 +11,10 @@ item_ids:
 
 # Infinite Resources?
 
+<GameScene zoom="2"  interactive={true}>
+  <ImportStructure src="../assets/structures/steam_quarry.snbt" />
+</GameScene>
+
 ## The Steam Quarry
 
 <ItemImage id="steam_quarry" />
@@ -26,9 +30,3 @@ It's recommended that you have multiple SBFs running before you attempt to build
 If this is the first multiblock you are building, make sure to read [the Coke Oven entry](coke_oven.md)!
 
 It explains how multiblocks work, how to check if the structure is correct, and how to use hatches.
-
-## Steam Quarry Preview
-
-<GameScene zoom="4"  interactive={true}>
-  <ImportStructure src="../assets/structures/steam_quarry.snbt" />
-</GameScene>

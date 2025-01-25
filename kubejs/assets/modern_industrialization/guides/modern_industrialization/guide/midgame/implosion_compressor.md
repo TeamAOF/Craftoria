@@ -11,6 +11,10 @@ item_ids:
 
 # Implosion Compressor!
 
+<GameScene zoom="2" interactive={true}>
+  <ImportStructure src="../assets/structures/implosion_compressor.snbt" />
+</GameScene>
+
 ## A Familiar Blue Gem
 
 <ItemGrid>

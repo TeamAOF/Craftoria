@@ -11,6 +11,10 @@ item_ids:
 
 # Electric Blast Furnace
 
+<GameScene zoom="2"  interactive={true}>
+  <ImportStructure src="../assets/structures/electric_blast_furnace.snbt" />
+</GameScene>
+
 ## Electric Blast Furnace
 
 <Recipe id="modern_industrialization:electric_age/machine/electric_blast_furnace_asbl" />
@@ -23,14 +27,13 @@ The Electric Blast Furnace is the electric version of the Steam Blast Furnace. I
 
 The EBF is made of one layer of Heatproof Machine Casings, two hollow layers of Cupronickel Coils and one other layer of Heatproof Machine Casings. The controller must go on the bottom layer, and hatches on the top or bottom layer.
 
-## LV Energy Input Hatch
+## Energy Input Hatches
 
-<Recipe id="modern_industrialization:hatches/basic/energy_input_hatch" />
+<Row>
+  <Recipe id="modern_industrialization:hatches/basic/energy_input_hatch" />
+  <Recipe id="modern_industrialization:hatches/advanced/energy_input_hatch" />
+</Row>
 
 Don't forget to add Energy Input Hatch(es) or the EBF won't have energy! The LV Energy Input Hatch will only connect to LV cables.
-
-## MV Energy Input Hatch
-
-<Recipe id="modern_industrialization:hatches/advanced/energy_input_hatch" />
 
 MV Energy Input Hatches will only connect to MV cables, which can be useful if you need a ton of energy for your EBF! You can't craft them yet, but keep in mind they exist...

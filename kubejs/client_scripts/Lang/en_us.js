@@ -17,6 +17,7 @@ ClientEvents.lang('en_us', (e) => {
     'craftoria.bomd': 'Trials of Awaken',
 
     // Guidebooks
+    'craftoria.guide_name': 'Craftoria Guidebook',
     'modern_industrialization.guide_name': 'MI Guidebook',
 
     // Lang fixes

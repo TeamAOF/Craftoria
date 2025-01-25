@@ -12,7 +12,18 @@ item_ids:
 
 # FUUUUUSION
 
+<Row>
+  <GameScene zoom="1.6" interactive={true}>
+    <ImportStructure src="../assets/structures/fusion_reactor.snbt" />
+  </GameScene>
+  <GameScene zoom="3" interactive={true}>
+    <ImportStructure src="../assets/structures/plasma_turbine.snbt" />
+  </GameScene>
+</Row>
+
 ## Fusion Reactor
+
+_Or as I like to call it, the Donut of Power!_
 
 <Recipe id="modern_industrialization:electric_age/machine/fusion_reactor_asbl" />
 

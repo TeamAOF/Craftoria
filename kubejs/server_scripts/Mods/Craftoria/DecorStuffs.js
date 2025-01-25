@@ -51,11 +51,15 @@ ServerEvents.tags('item', (e) => {
 });
 
 ServerEvents.recipes((e) => {
+  const makeId = (output, input) => {
+    return _makeID('decor_stuffs', 'stonecutting', output, input);
+  };
+
   Ingredient.of('@rechiseled')
     .except('rechiseled:chisel')
     .stacks.forEach((item) => {
       const material = getMaterial(item.id);
-      if (material) e.stonecutting(item.id, [Ingredient.of(`#rechiseled:${material}`), `minecraft:${material}`]);
+      if (material) e.stonecutting(item.id, [Ingredient.of(`#rechiseled:${material}`), `minecraft:${material}`]).id(makeId(item.id, `rechiseled:${material}`));
     });
 
   let chippedThings = [];
@@ -70,11 +74,11 @@ ServerEvents.recipes((e) => {
 
   chippedThings.forEach((tag) => {
     Ingredient.of(tag).stacks.forEach((item) => {
-      e.stonecutting(item.id, [tag, `minecraft:${tag.split(':')[1]}`]);
+      e.stonecutting(item.id, [tag, `minecraft:${tag.split(':')[1]}`]).id(makeId(item.id, tag));
     });
   });
 
   Ingredient.of('#factory_blocks:factory').stacks.forEach((item) => {
-    e.stonecutting(item.id, '#factory_blocks:factory');
+    e.stonecutting(item.id, '#factory_blocks:factory').id(makeId(item.id, 'factory_blocks:factory'));
   });
 });

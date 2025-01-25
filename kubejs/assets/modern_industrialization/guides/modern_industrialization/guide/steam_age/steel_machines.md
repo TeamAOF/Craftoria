@@ -33,15 +33,14 @@ Steel tanks store up to 16 buckets.
 
 You can check all recipes in EMI!
 
-## Packer
+## Packer and Unpacker
 
-<Recipe id="modern_industrialization:steam_age/steel/packer_asbl" />
+<Row>
+  <Recipe id="modern_industrialization:steam_age/steel/packer_asbl" />
+  <Recipe id="modern_industrialization:steam_age/steel/unpacker_asbl" />
+</Row>
 
 The Packer, a new machine only available in steel, can perform simple crafts for you. You can now automate double ingots and pipes, for example! Again, check EMI.
-
-## Unpacker
-
-<Recipe id="modern_industrialization:steam_age/steel/unpacker_asbl" />
 
 The Unpacker, a new machine only available in steel... Guess what it does. o_O
 

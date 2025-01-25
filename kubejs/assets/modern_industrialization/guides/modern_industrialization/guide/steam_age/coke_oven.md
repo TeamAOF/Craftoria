@@ -15,6 +15,10 @@ item_ids:
 
 # Do You Like Coke?
 
+<GameScene zoom="2" interactive={true}>
+  <ImportStructure src="../assets/structures/coke_oven.snbt" />
+</GameScene>
+
 Once you have had enough of the bronze machines, you can start working toward making steel. The ultimate goal is to be able to build the quarry, a multiblock that will dig ores for you!
 
 The first step is to make coke, by heating coal without oxygen. For that, you will need to build a Coke Oven multiblock.
@@ -54,12 +58,6 @@ If we forget one of the hatches, the coke oven will not be able to start!
 We need 21 Bricks for this multiblock! Check EMI, it says 24 total, but we have 3 hatches so we only need bricks for the 21 remaining blocks!
 
 ## Coke Oven!
-
-<GameScene zoom="4" interactive={true}>
-  <ImportStructure src="../assets/structures/coke_oven.snbt" />
-</GameScene>
-
-There are many ways to place the hatches, this is one of them!
 
 Once the Coke Oven says _Shape Valid_, fill the fluid input hatch with steam, put coal in the item input hatch and you're good to go!
 
