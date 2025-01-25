@@ -18,5 +18,11 @@ ClientEvents.lang('en_us', (e) => {
 
     // Guidebooks
     'modern_industrialization.guide_name': 'MI Guidebook',
+
+    // Lang fixes
+    'chemical.mekanism_extras.radiance': 'Radiance',
+    'chemical.mekanism_extras.thermonuclear': 'Thermonuclear',
+    'chemical.mekanism_extras.shining': 'Shining',
+    'chemical.mekanism_extras.spectrum': 'Spectrum',
   });
 });
