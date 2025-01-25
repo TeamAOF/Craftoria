@@ -69,3 +69,5 @@ The same thing happens for fluids: a bit of fluid is transformed after each neut
 <GameScene zoom="4"  interactive={true}>
   <ImportStructure src="../assets/structures/nuclear_reactor.snbt" />
 </GameScene>
+
+This is the smallest Nuclear Reactor.

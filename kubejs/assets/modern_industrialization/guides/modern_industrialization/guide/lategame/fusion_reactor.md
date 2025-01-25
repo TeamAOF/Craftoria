@@ -13,11 +13,38 @@ item_ids:
 # FUUUUUSION
 
 <Row>
-  <GameScene zoom="1.6" interactive={true}>
+  <GameScene zoom="1.9" interactive={true}>
     <ImportStructure src="../assets/structures/fusion_reactor.snbt" />
+
+    <BoxAnnotation color="#191ac3" min="7 0 0" max="8 3 1">
+      Valid Hatch positions (Except for the middle)
+    </BoxAnnotation>
+
+    <BoxAnnotation color="#191ac3" min="14 0 7" max="15 3 8">
+      Valid Hatch positions
+    </BoxAnnotation>
+
+    <BoxAnnotation color="#191ac3" min="0 0 7" max="1 3 8">
+      Valid Hatch positions
+    </BoxAnnotation>
+
+    <BoxAnnotation color="#191ac3" min="7 0 14" max="8 3 15">
+      Valid Hatch positions
+    </BoxAnnotation>
+
   </GameScene>
-  <GameScene zoom="3" interactive={true}>
+
+  <GameScene zoom="3.6" interactive={true}>
     <ImportStructure src="../assets/structures/plasma_turbine.snbt" />
+
+    <BoxAnnotation color="#191ac3" min="0 0 0" max="3 3 1">
+      Valid Fluid Input Hatch positions (Except for the middle)
+    </BoxAnnotation>
+
+    <BoxAnnotation color="#db3f17" min="1 1 3" max="2 2 4">
+      Valid Energy Ouput Hatch position
+    </BoxAnnotation>
+
   </GameScene>
 </Row>
 

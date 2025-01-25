@@ -15,8 +15,16 @@ item_ids:
 
 # Do You Like Coke?
 
-<GameScene zoom="2" interactive={true}>
+<GameScene zoom="4" interactive={true}>
   <ImportStructure src="../assets/structures/coke_oven.snbt" />
+
+  <BoxAnnotation color="#dddddd" min="0 0 0" max="3 1 3">
+    Valid Hatch positions
+  </BoxAnnotation>
+
+  <BoxAnnotation color="#dddddd" min="0 2 0" max="3 3 3">
+    Valid Hatch positions (Except for the middle)
+  </BoxAnnotation>
 </GameScene>
 
 Once you have had enough of the bronze machines, you can start working toward making steel. The ultimate goal is to be able to build the quarry, a multiblock that will dig ores for you!

@@ -12,8 +12,16 @@ item_ids:
 
 # Your First Steel
 
-<GameScene zoom="2" interactive={true}>
+<GameScene zoom="3" interactive={true}>
  <ImportStructure src='../assets/structures/steam_blast_furnace.snbt' />
+
+ <BoxAnnotation color="#dddddd" min="0 0 0" max="3 1 3">
+   Valid Hatch positions
+ </BoxAnnotation>
+
+ <BoxAnnotation color="#dddddd" min="0 3 0" max="3 4 3">
+   Valid Hatch positions (Except for the middle)
+ </BoxAnnotation>
 </GameScene>
 
 You can macerate coke to obtain Coke Dust, which you can combine with iron to get Uncooked Steel Dust. Using the mixer will give you a better ratio, of course. Now, you will need a Steam Blast Furnace to turn that into steel.
