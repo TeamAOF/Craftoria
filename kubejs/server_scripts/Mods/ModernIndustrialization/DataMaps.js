@@ -8,6 +8,15 @@ ServerEvents.generateData('after_mods', (e) => {
     },
   });
 
+  e.json('industrialization_overdrive:data_maps/block/pyrolyse_oven_tier', {
+    values: {
+      'modern_industrialization:superconductor_coil': {
+        batch_size: 128,
+        eu_cost_multiplier: 0.5,
+      },
+    },
+  });
+
   e.json('mi_tweaks:data_maps/item/water_explosive', {
     values: {
       'modern_industrialization:sodium_dust': {
