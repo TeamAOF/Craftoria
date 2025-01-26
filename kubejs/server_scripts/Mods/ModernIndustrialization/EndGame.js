@@ -78,3 +78,12 @@ ServerEvents.recipes((e) => {
     .itemIn('modern_industrialization:replicator_1', 0)
     .fluidIn('16000x modern_industrialization:uu_matter');
 });
+
+LootJS.lootTables((e) => {
+  e.create('modern_industrialization:blocks/replicator_1').createPool().addEntry('modern_industrialization:replicator_1');
+});
+
+ServerEvents.tags('block', (e) => {
+  e.add('minecraft:mineable/pickaxe', 'modern_industrialization:replicator_1');
+  e.add('minecraft:needs_stone_tool', 'modern_industrialization:replicator_1');
+});
