@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: steam_age/steam_age.md
+  parent: steam_age/index.md
   title: Do You Like Coke?
   icon: coke_oven
   position: 9

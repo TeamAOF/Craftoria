@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: lategame/endgame.md
+  parent: lategame/index.md
   title: FUUUUUSION
   icon: fusion_reactor
   position: 2

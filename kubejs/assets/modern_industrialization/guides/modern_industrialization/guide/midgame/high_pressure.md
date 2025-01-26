@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: midgame/midgame.md
+  parent: midgame/index.md
   title: High Pressure!
   icon: pressurizer
   position: 202

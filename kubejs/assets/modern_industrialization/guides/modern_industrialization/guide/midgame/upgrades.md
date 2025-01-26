@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: midgame/midgame.md
+  parent: midgame/index.md
   title: Upgrades!
   icon: basic_upgrade
   position: 200

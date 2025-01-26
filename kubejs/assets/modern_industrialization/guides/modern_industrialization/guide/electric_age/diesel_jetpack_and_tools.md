@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: electric_age/electric_age.md
+  parent: electric_age/index.md
   title: Diesel Jetpack and Tools
   icon: diesel_jetpack
   position: 10

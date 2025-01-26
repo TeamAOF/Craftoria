@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: midgame/midgame.md
+  parent: midgame/index.md
   title: Fluid Pipe Speed
   icon: fluid_pipe
   position: 203

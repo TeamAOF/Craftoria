@@ -20,3 +20,11 @@ The setups you build at this stage are expected to be permanent as they can be c
 The challenge will come from building efficient and balanced processing lines, and prioritizing the most useful ones.
 
 The full power of the Electric Machines is reached when they operate continuously. That is why it is STRONGLY DISCOURAGED to use Modern Industrialization in unison with an On-Demand Automation Mod like AE2 or Refined Storage as it will make your progress extremely slow and inefficient.
+
+## Contents
+
+- [Steam Age](steam_age/index.md)
+- [Electric Age](electric_age/index.md)
+- [Midgame](midgame/index.md)
+- [Endgame](lategame/index.md)
+- [Addons](addons/index.md)

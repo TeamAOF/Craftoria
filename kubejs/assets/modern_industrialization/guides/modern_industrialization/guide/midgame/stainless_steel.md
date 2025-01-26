@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: midgame/midgame.md
+  parent: midgame/index.md
   title: Stainless Steel
   icon: stainless_steel_dust
   position: 201

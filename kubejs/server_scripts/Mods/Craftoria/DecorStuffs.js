@@ -51,8 +51,18 @@ ServerEvents.tags('item', (e) => {
 });
 
 ServerEvents.recipes((e) => {
+  let recipeIDs = [];
   const makeId = (output, input) => {
-    return _makeID('decor_stuffs', 'stonecutting', output, input);
+    let recipeID = _makeID('decor_stuffs', 'stonecutting', output, input);
+    if (!recipeIDs.includes(recipeID)) recipeIDs.push(recipeID);
+    else {
+      // console.warn(`Duplicate recipe ID: ${recipeID}, adding a suffix`);
+      let i = 1;
+      while (recipeIDs.includes(`${recipeID}_${i}`)) i++;
+      recipeID = `${recipeID}_${i}`;
+      recipeIDs.push(recipeID);
+    }
+    return recipeID;
   };
 
   Ingredient.of('@rechiseled')

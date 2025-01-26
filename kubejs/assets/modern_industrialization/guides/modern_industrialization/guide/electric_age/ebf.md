@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: electric_age/electric_age.md
+  parent: electric_age/index.md
   title: Electric Blast Furnace
   icon: electric_blast_furnace
   position: 6

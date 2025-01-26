@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: electric_age/electric_age.md
+  parent: electric_age/index.md
   title: Large Steam Boiler
   icon: large_steam_boiler
   position: 3

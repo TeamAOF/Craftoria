@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: midgame/midgame.md
+  parent: midgame/index.md
   title: Better Diesel
   icon: hv_diesel_generator
   position: 204

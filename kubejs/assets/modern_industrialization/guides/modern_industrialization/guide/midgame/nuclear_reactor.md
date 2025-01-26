@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: midgame/midgame.md
+  parent: midgame/index.md
   title: The Nuclear Reactor
   icon: nuclear_reactor
   position: 206

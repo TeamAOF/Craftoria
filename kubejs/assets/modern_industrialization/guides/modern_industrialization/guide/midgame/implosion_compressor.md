@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: midgame/midgame.md
+  parent: midgame/index.md
   title: Implosion Compressor!
   icon: implosion_compressor
   position: 205
