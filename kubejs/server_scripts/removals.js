@@ -24,6 +24,7 @@ ServerEvents.recipes((event) => {
     'mffs:steel_ingot',
     'industrialforegoing:laser_drill_ore/raw_materials/iridium',
     'hyperbox:hyperbox',
+    'modern_industrialization:materials/uranium/blast_furnace/dust',
   ];
 
   const output = [];
