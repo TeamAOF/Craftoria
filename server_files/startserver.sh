@@ -1,5 +1,12 @@
 #!/bin/bash
 
+JAVA_VERSION=$(java -version 2>&1 | awk -F '"' '/version/ {print $2}' | awk -F '.' '{sub("^$", "0", $2); print $1$2}')
+
+if [[ "$JAVA_VERSION" -lt 210 ]] || [[ "$JAVA_VERSION" -ge 220 ]]; then
+	echo "ERROR: Must use Java 21"
+	exit 1
+fi
+
 # `-d64` option was removed in Java 10, this handles these versions accordingly
 JAVA_FLAGS=""
 if (( $(java -version 2>&1 | head -1 | cut -d'"' -f2 | sed '/^1\./s///' | cut -d'.' -f1) < 10 )); then
