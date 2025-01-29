@@ -35,7 +35,7 @@ The first step is to make coke, by heating coal without oxygen. For that, you wi
 
 <Recipe id="modern_industrialization:steam_age/fireclay/coke_oven" />
 
-For this first multiblock, you will need the Coke Oven itself of course, 21 Bricks and 3 [Hatches]() (an item input, an item output and a fluid input).
+For this first multiblock, you will need the Coke Oven itself of course, 21 Bricks and 3 §2Hatches§r (an item input, an item output and a fluid input).
 
 Optionally add a fluid output hatch to collect creosote too.
 
@@ -55,7 +55,7 @@ Optionally add a fluid output hatch to collect creosote too.
   <Recipe id="modern_industrialization:hatches/bronze/fluid_output_hatch" />
 </Row>
 
-The Coke Oven block here has the role of a [Controller](). Every multiblock is managed by a controller, but you usually cannot interact with the controller directly: all input and output goes through hatches. We need a fluid input because the coke oven is powered by steam, we need an item input for the coal and an output for the coke.
+The Coke Oven block here has the role of a §2Controller§r. Every multiblock is managed by a controller, but you usually cannot interact with the controller directly: all input and output goes through hatches. We need a fluid input because the coke oven is powered by steam, we need an item input for the coal and an output for the coke.
 
 We can optionally add a fluid output hatch for the creosote. It is a chanced output and will therefore be voided if there is no room for it.
 
