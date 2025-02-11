@@ -13,6 +13,7 @@ const globalItemRemovals = [
   'mekanism:upgrade_anchor',
   'mekanism:dimensional_stabilizer',
   'pneumaticcraft:chunkloader_upgrade',
+  'industrialforegoing:infinity_nuke',
 ];
 
 ServerEvents.recipes((event) => {

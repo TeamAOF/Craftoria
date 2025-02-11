@@ -31,4 +31,4 @@ The Bronze Water Pump will produce 1/8th of a bucket of water for every adjacent
 
 This is a simple example of how to set up a water pump with a boiler.
 
-_GuideME doesn't support MI's pipes yet, so you'll have to use your imagination for now!_
+_MI pipes don't have GuideME support yet, so you'll have to use your imagination for now!_
