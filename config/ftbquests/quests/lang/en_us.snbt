@@ -54,11 +54,6 @@
 		"The &bUltimate Infusing Factory&r can also hold up to &18,960 mb&r of infusing material."
 	]
 	quest.0145A878C472548C.title: "Ritual: Summon Foliot Lumberjack"
-	quest.018EE4529FFD04AB.quest_desc: [
-		"- Press &6Left Shift&r and &6Right Click&r to swap between &bFortune&r and &bSilk Touch&r."
-		""
-		"- Use &6Alt&r and &6Mouse Scroll&r to change mining speeds."
-	]
 	quest.02272D430F08B1DC.quest_desc: [
 		"  Now you can make a large tank! This is a tank multi-block that can store 64,000mb &oper&r block within the total volume the tank takes up, air blocks and solid."
 		""
@@ -1458,6 +1453,7 @@
 	quest.216C2D79B2481DA3.title: "Advanced Universal Cable"
 	quest.2190034B6F3E2768.quest_desc: ["These are the primary components of &bInput and Output Devices&f."]
 	quest.2190034B6F3E2768.title: "Heart of Computation"
+	quest.21939E58707A7756.quest_desc: ["The &bLarge Macerator&r can &6macerate&r recipes in batches of up to 8 at a &a25%&r deduction of &eEU&r cost. Keep in mind, it &cwont&r do a mix of recipes, they &omust&r be the same type. If not, each type of recipe will be &6split&r into their batch of a max of 8."]
 	quest.21939E58707A7756.quest_subtitle: "Can run recipes in batches."
 	quest.21AE41FA52DB561D.quest_desc: [
 		"  This handy dandy device &6charges&r all &bitems&r in your inventory that &cneed power&r."
@@ -2162,10 +2158,16 @@
 	]
 	quest.3357A8B614D477B6.title: "Steel Unpacker"
 	quest.335BFE2345DAFE03.quest_desc: [
+		"For the &bElectric Chain Saw&r:"
 		"- Press &6Left Shift&r and &6Right Click&r to swap between &bFortune/Looting&r and &bSilk Touch&r."
 		""
+		"For the &bElectric Mining Drill&r:"
+		"- Press &6Left Shift&r and &6Right Click&r to swap between &bFortune&r and &bSilk Touch&r."
+		""
+		"For &bBoth&r:"
 		"- Use &6Alt&r and &6Mouse Scroll&r to change mining speeds."
 	]
+	quest.335BFE2345DAFE03.title: "Electric Accessories"
 	quest.3392424E7E1B68C4.quest_desc: [
 		"Need a &bcentrifuge&r? "
 		"Need a &afaster&r one? "
@@ -2622,7 +2624,7 @@
 	quest.3E9D2DA07E8617EA.title: "&6Theurgy"
 	quest.3E9DD2255D25B2D7.quest_desc: ["Check &bArmory chapter&r for armor \\& tools \\& trinkets."]
 	quest.3E9DD2255D25B2D7.title: "Where Armor, Tools?"
-	quest.3F0097CCBA02804C.quest_desc: ["Can do &bFurnace&r recipes in batches."]
+	quest.3F0097CCBA02804C.quest_desc: ["The &bLarge Steam Furnace&r can &6smelt&r recipes in batches of up to 8 at a &a25%&r deduction of &eEU&r cost. Keep in mind, it &cwont&r do a mix of recipes, they &omust&r be the same type. If not, each type of recipe will be &6split&r into their batch of a max of 8."]
 	quest.3F0097CCBA02804C.quest_subtitle: "The Bigger, The Better!"
 	quest.3F146A658E5A01F3.quest_subtitle: "Dropped within the Trials of Awaken gateway. "
 	quest.3F581374C4DDD0A9.quest_desc: [
@@ -2644,9 +2646,11 @@
 	quest.3FB60EC2EE4D0435.title: "Enchanter's Tools"
 	quest.400274581B9BD5FC.quest_desc: ["The &bLaser Focus Matrix&r is used to ignite your &bFusion Reactor&r by focusing the beam of a &claser&r directly to the core of the reactor."]
 	quest.40148704F9175B05.quest_desc: [
-		"- Press &eB&r to enable &5Night Vision&r."
+		"Ensuring you have keybinds set, &rhold&r shift over the &bHelmet&r piece to see which key you must press to enable &5Night Vision&r."
 		""
-		"- Can be &6Dyed&r and &6Trimmed&r."
+		"Do the same for the &bLeggings&r and &bBoots&r for &5Speed Boost&r and &5Step Boost&r respectively."
+		""
+		"The armor can also be &6Dyed&r and &6Trimmed&r."
 	]
 	quest.40148704F9175B05.quest_subtitle: "Tech Fashion!"
 	quest.40148704F9175B05.title: "&aNano Suit"
@@ -2864,6 +2868,13 @@
 	]
 	quest.439D48E9647FC8C2.title: "Bronze Boiler"
 	quest.43ACFDB5CD949C74.quest_desc: ["Using the Scroll Forge and a Poisonous Potato to make a Nature Scrolls which are good for Poison damage or keeping foes rooted in place."]
+	quest.43DB398322EF99BD.quest_desc: [
+		"The &bSteel Alloy Smelter&r allows you to create &9alloys&r from two different ingots &owithout&r needing to &6mix&r the dusts in a &bMixer&r first. Check your &dEMI&r to see which alloys can be made this way."
+		""
+		"You can also use any &6combination&r of equal amounts of resources to create an alloy, such as &anine&r tiny dust + &anine&r nuggets."
+		""
+		"What you &ocannot&r do is &anine&r tiny dust + &aone&r ingot, as the amounts are different."
+	]
 	quest.43DB398322EF99BD.quest_subtitle: "Mixing &etwo&r materials together for &6alloys&r."
 	quest.43EFE64785AE50B4.title: "Tier 4, 1:4"
 	quest.442CDC27ADFA34E4.quest_desc: ["To&6 remove &fany modifications, &6place &bQuartz&f in your &6off-hand&f, and the same modifier u want to remove in your hand. It will &aconsume&f the modifier, not the &bQuartz&f."]
@@ -3249,6 +3260,11 @@
 		"{image:justdirethings:block/goofarmland_tier3_moist width:100 height:100 align:center fit:true}"
 	]
 	quest.4D1B83E147CC16AE.quest_subtitle: "AutoCrops, Roll Out!"
+	quest.4D5787F48ECCB000.quest_desc: [
+		"The &bSteel Brewery&r can &6automatically&r brew &afour&r potions at a time at a considerably quicker rate than a regular brewing stand."
+		""
+		"Remember it needs &eBlazing Essence&r in place of &6Blaze Powder&r."
+	]
 	quest.4D5787F48ECCB000.quest_subtitle: "Brews &e4&r potions at a time."
 	quest.4D59020A532C4E92.quest_desc: [
 		"   I bet you can &6figure&r &bthis one&r out. xD"
@@ -4489,6 +4505,13 @@
 	quest.6C7789B56E50B6F1.title: "BattleMage's Cloak"
 	quest.6C8AB8E9A547D1C9.quest_desc: [""]
 	quest.6C8AB8E9A547D1C9.title: "ME Buses"
+	quest.6C96992416059AC4.quest_desc: [
+		"For the &bUltimate Laser Drill&r:"
+		"- It can be &6dyed&r!"
+		"- Press &6Left Shift&r + &6Right Button&r to swap between &5Fortune/Looting&r and &5Silk Touch&r."
+		"- Use &6Alt&r + &6Mouse Scroll&r to change mining speed."
+		"- Press &6Y&r while held or &6Right Button&r while hovered to toggle &53x3 mining&r."
+	]
 	quest.6C96992416059AC4.quest_subtitle: "The \"Do It All\" Tool!"
 	quest.6CA941AE132445D9.quest_desc: [
 		"  &bMachine Hulls&r contain the main electronics to allow machines to run. There are different tiers to machine hulls, each allowing you to upgrade your machines. The &bBasic Machine Hull&r is the base of every machine that takes LV power."
@@ -5211,6 +5234,13 @@
 	quest.7FC6AE9DB7C1DA52.title: "Bio-Generator"
 	quest.7FD0A63CDC267251.quest_desc: ["The number of entities spawned at once."]
 	quest.7FD0A63CDC267251.quest_subtitle: "+1 Spawn Count"
+	quest.7FD5FCEFE3697A7C.quest_desc: [
+		"For only a &omeasly&r &e8EU/t&r, the &bSteam Farmer&r can perform the following things:"
+		"- &6Tilling&r: When enabled, dirt blocks will be turned into farmland. This will not work unless water is supplied."
+		"- &6Hydrating&r: When supplied with water, tilled soil will be hydrated."
+		"- &6Harvesting&r: When there is enough output space provided, it will harvest fully grown crops and trees."
+		"- &6Plating&r: When supplied with crops or saplings, it will plant them on valid soil. Using different plating modes will plant them in different arrangements."
+	]
 	quest.7FD5FCEFE3697A7C.quest_subtitle: "What did the baby &ecorn&r say to the mama &ecorn&r?"
 	quest.7FEBDFAE021B3C56.quest_desc: ["Useful for &oreally&r big crafts."]
 	quest.7FEBDFAE021B3C56.title: "Mega Crafting Storage"

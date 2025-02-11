@@ -69,7 +69,7 @@
 			image: "modern_industrialization:block/machines/macerator/overlay_top_active"
 			rotation: 0.0d
 			width: 3.0d
-			x: 32.5d
+			x: 32.0d
 			y: -5.5d
 		}
 		{
@@ -798,7 +798,7 @@
 			]
 			tasks: [
 				{
-					count: 17L
+					count: 14L
 					id: "61BD9084E6A3338C"
 					item: { count: 17, id: "modern_industrialization:heatproof_machine_casing" }
 					type: "item"
@@ -858,7 +858,7 @@
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 13L
 					id: "6F55DF14844DA625"
 					item: { count: 16, id: "modern_industrialization:steel_machine_casing" }
 					type: "item"
@@ -869,7 +869,7 @@
 					type: "item"
 				}
 			]
-			x: 32.5d
+			x: 32.0d
 			y: -2.0d
 		}
 		{
@@ -1033,7 +1033,7 @@
 				item: { count: 4, id: "modern_industrialization:gold_drill" }
 				type: "item"
 			}]
-			x: 32.0d
+			x: 31.5d
 			y: -4.0d
 		}
 		{
@@ -1092,7 +1092,7 @@
 					type: "item"
 				}
 				{
-					count: 24L
+					count: 19L
 					id: "3E0722DEE9074DC4"
 					item: { count: 24, id: "modern_industrialization:stainless_steel_machine_casing_pipe" }
 					type: "item"
@@ -1282,7 +1282,7 @@
 			]
 			tasks: [
 				{
-					count: 16L
+					count: 13L
 					id: "35C862B93AD6D87D"
 					item: { count: 13, id: "modern_industrialization:steel_machine_casing" }
 					type: "item"
@@ -1371,7 +1371,7 @@
 					type: "item"
 				}
 				{
-					count: 9L
+					count: 6L
 					id: "49DE5A90378ED604"
 					item: { count: 9, id: "modern_industrialization:heatproof_machine_casing" }
 					type: "item"
@@ -2087,7 +2087,7 @@
 				item: { count: 4, id: "modern_industrialization:steel_drill" }
 				type: "item"
 			}]
-			x: 33.0d
+			x: 32.5d
 			y: -4.0d
 		}
 		{
@@ -2827,47 +2827,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["2B4BFD88DF1A934D"]
-			id: "018EE4529FFD04AB"
-			rewards: [
-				{
-					count: 32
-					id: "270DC7CA745198ED"
-					item: {
-						count: 1
-						id: "minecraft:iron_ore"
-					}
-					type: "item"
-				}
-				{
-					count: 32
-					id: "2537FDC8F5FF32C7"
-					item: {
-						count: 1
-						id: "modern_industrialization:lead_ore"
-					}
-					type: "item"
-				}
-				{
-					count: 32
-					id: "5E8F1A67B006920C"
-					item: {
-						count: 1
-						id: "modern_industrialization:tin_ore"
-					}
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "6FCA0D3A3FCF7CD3"
-				item: { count: 1, id: "extended_industrialization:electric_mining_drill" }
-				type: "item"
-			}]
-			x: 28.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["2B4BFD88DF1A934D"]
+			dependencies: ["6EBFFFB567687A1E"]
 			id: "335BFE2345DAFE03"
 			rewards: [{
 				count: 16
@@ -2878,13 +2838,20 @@
 				}
 				type: "item"
 			}]
-			tasks: [{
-				id: "59774B0B6723AD36"
-				item: { count: 1, id: "extended_industrialization:electric_chainsaw" }
-				type: "item"
-			}]
-			x: 30.0d
-			y: -4.0d
+			tasks: [
+				{
+					id: "59774B0B6723AD36"
+					item: { count: 1, id: "extended_industrialization:electric_chainsaw" }
+					type: "item"
+				}
+				{
+					id: "20C45598924BD258"
+					item: { count: 1, id: "extended_industrialization:electric_mining_drill" }
+					type: "item"
+				}
+			]
+			x: 39.952380952381034d
+			y: 3.0714285714285907d
 		}
 		{
 			dependencies: ["42D6CC67AB29D7DA"]
@@ -2947,10 +2914,10 @@
 				type: "item"
 			}]
 			x: 29.0d
-			y: -4.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["268B0F87CC431A51"]
+			dependencies: ["20A093E5684D2E30"]
 			id: "64287B360B07BEBB"
 			rewards: [{
 				count: 4
@@ -2966,8 +2933,8 @@
 				item: { count: 1, id: "extended_industrialization:machine_chainer" }
 				type: "item"
 			}]
-			x: 29.0d
-			y: -6.5d
+			x: 30.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["40915337B7E427F8"]
@@ -3001,7 +2968,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["20A093E5684D2E30"]
+			dependencies: ["176524D0E4475298"]
 			id: "40148704F9175B05"
 			rewards: [{
 				count: 6
@@ -3034,8 +3001,8 @@
 					type: "item"
 				}
 			]
-			x: 31.5d
-			y: -2.0d
+			x: 40.404761904761955d
+			y: -2.5714285714285623d
 		}
 		{
 			dependencies: ["668453E081A6C57B"]
