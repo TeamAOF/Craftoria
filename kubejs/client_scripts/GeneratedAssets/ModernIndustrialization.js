@@ -12,8 +12,6 @@ ClientEvents.generateAssets('after_mods', (e) => {
         front_active: `modern_industrialization:block/machines/${machine.id}/overlay_front_active`,
         item_auto: 'modern_industrialization:block/overlays/item_auto',
         output: 'modern_industrialization:block/overlays/output',
-        side: `modern_industrialization:block/machines/${machine.id}/overlay_side`,
-        side_active: `modern_industrialization:block/machines/${machine.id}/overlay_side_active`,
       },
       loader: 'modern_industrialization:machine',
     };
@@ -21,12 +19,20 @@ ClientEvents.generateAssets('after_mods', (e) => {
     if (machine.overlay) {
       modelJson.default_overlays.front = `modern_industrialization:block/machines/${machine.overlay}/overlay_front`;
       modelJson.default_overlays.front_active = `modern_industrialization:block/machines/${machine.overlay}/overlay_front_active`;
-      modelJson.default_overlays.side = `modern_industrialization:block/machines/${machine.overlay}/overlay_side`;
-      modelJson.default_overlays.side_active = `modern_industrialization:block/machines/${machine.overlay}/overlay_side_active`;
     }
 
     if (machine.casing) {
       modelJson.casing = machine.casing;
+    }
+
+    if (machine.hasSides) {
+      if (machine.overlay) {
+        modelJson.default_overlays.side = `modern_industrialization:block/machines/${machine.overlay}/overlay_side`;
+        modelJson.default_overlays.side_active = `modern_industrialization:block/machines/${machine.overlay}/overlay_side_active`;
+      } else {
+        modelJson.default_overlays.side = `modern_industrialization:block/machines/${machine.id}/overlay_side`;
+        modelJson.default_overlays.side_active = `modern_industrialization:block/machines/${machine.id}/overlay_side_active`;
+      }
     }
 
     e.json(`modern_industrialization:models/block/${machine.id}`, modelJson);
