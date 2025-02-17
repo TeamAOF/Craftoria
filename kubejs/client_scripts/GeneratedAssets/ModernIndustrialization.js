@@ -25,6 +25,10 @@ ClientEvents.generateAssets('after_mods', (e) => {
       modelJson.default_overlays.side_active = `modern_industrialization:block/machines/${machine.overlay}/overlay_side_active`;
     }
 
+    if (machine.casing) {
+      modelJson.casing = machine.casing;
+    }
+
     e.json(`modern_industrialization:models/block/${machine.id}`, modelJson);
 
     e.itemModel(`modern_industrialization:${machine.id}`, (im) => {
