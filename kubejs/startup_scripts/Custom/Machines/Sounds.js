@@ -9,7 +9,7 @@ MISoundAddons.modifySounds((e) => {
 
   global.customMIMachines.forEach((machine) => {
     if (machine.sound && machine.soundDuration) {
-      duration[machine.sound] = machine.soundDuration;
+      duration[machine.id] = machine.soundDuration;
     }
   });
 

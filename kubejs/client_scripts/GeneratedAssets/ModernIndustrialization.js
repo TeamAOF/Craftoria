@@ -8,12 +8,12 @@ ClientEvents.generateAssets('after_mods', (e) => {
       casing: 'lv',
       default_overlays: {
         fluid_auto: 'modern_industrialization:block/overlays/fluid_auto',
-        // front: `modern_industrialization:block/machines/${machine.id}/overlay_front`,
-        // front_active: `modern_industrialization:block/machines/${machine.id}/overlay_front_active`,
+        front: `modern_industrialization:block/machines/${machine.id}/overlay_front`,
+        front_active: `modern_industrialization:block/machines/${machine.id}/overlay_front_active`,
         item_auto: 'modern_industrialization:block/overlays/item_auto',
         output: 'modern_industrialization:block/overlays/output',
-        // side: `modern_industrialization:block/machines/${machine.id}/overlay_side`,
-        // side_active: `modern_industrialization:block/machines/${machine.id}/overlay_side_active`,
+        side: `modern_industrialization:block/machines/${machine.id}/overlay_side`,
+        side_active: `modern_industrialization:block/machines/${machine.id}/overlay_side_active`,
       },
       loader: 'modern_industrialization:machine',
     };
@@ -23,11 +23,6 @@ ClientEvents.generateAssets('after_mods', (e) => {
       modelJson.default_overlays.front_active = `modern_industrialization:block/machines/${machine.overlay}/overlay_front_active`;
       modelJson.default_overlays.side = `modern_industrialization:block/machines/${machine.overlay}/overlay_side`;
       modelJson.default_overlays.side_active = `modern_industrialization:block/machines/${machine.overlay}/overlay_side_active`;
-    } else {
-      modelJson.default_overlays.front = `modern_industrialization:block/machines/${machine.id}/overlay_front`;
-      modelJson.default_overlays.front_active = `modern_industrialization:block/machines/${machine.id}/overlay_front_active`;
-      modelJson.default_overlays.side = `modern_industrialization:block/machines/${machine.id}/overlay_side`;
-      modelJson.default_overlays.side_active = `modern_industrialization:block/machines/${machine.id}/overlay_side_active`;
     }
 
     e.json(`modern_industrialization:models/block/${machine.id}`, modelJson);
@@ -47,7 +42,7 @@ ClientEvents.generateAssets('after_mods', (e) => {
 
   global.customMIMachines.forEach((machine) => {
     if (machine.sound) {
-      sounds[machine.sound] = [`mi_sound_addon:${machine.sound}`];
+      sounds[machine.id] = [machine.sound];
     }
   });
 
