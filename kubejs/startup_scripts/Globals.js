@@ -11,12 +11,12 @@ global.dyeColors = $DyeColor.values().map((color) => color.toString().toLowerCas
 global.devEnv = false;
 
 /**
- * The list of custom MI machines to generate assets for.
+ * The list of custom MI machines to generate assets/data for. (Models, sounds, tags, etc.)
  * Possible values for each machine:
  * - id: The machine ID. This is used to reference the machine in the game. REQUIRED.
  * - overlay: The overlay ID. This is used to reference the overlay for the machine. OPTIONAL.
  * - sound: The sound ID. This is used to reference the sound for the machine. OPTIONAL.
- * - soundDuration: The duration of the sound for the machine. OPTIONAL. Requires sound.
+ * - soundDuration: The duration(in ticks) of the sound for the machine. OPTIONAL. Requires sound.
  */
 global.customMIMachines = [
   {
