@@ -17,6 +17,13 @@ ClientEvents.lang('en_us', (e) => {
     'craftoria.bomd': 'Trials of Awaken',
 
     // Guidebooks
+    'craftoria.guide_name': 'Craftoria Guidebook',
     'modern_industrialization.guide_name': 'MI Guidebook',
+
+    // Lang fixes
+    'chemical.mekanism_extras.radiance': 'Radiance',
+    'chemical.mekanism_extras.thermonuclear': 'Thermonuclear',
+    'chemical.mekanism_extras.shining': 'Shining',
+    'chemical.mekanism_extras.spectrum': 'Spectrum',
   });
 });

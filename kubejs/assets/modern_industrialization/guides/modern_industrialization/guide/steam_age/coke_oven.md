@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: steam_age/steam_age.md
+  parent: steam_age/index.md
   title: Do You Like Coke?
   icon: coke_oven
   position: 9
@@ -15,6 +15,18 @@ item_ids:
 
 # Do You Like Coke?
 
+<GameScene zoom="4" interactive={true}>
+  <ImportStructure src="../assets/structures/coke_oven.snbt" />
+
+  <BoxAnnotation color="#dddddd" min="0 0 0" max="3 1 3">
+    Valid Hatch positions
+  </BoxAnnotation>
+
+  <BoxAnnotation color="#dddddd" min="0 2 0" max="3 3 3">
+    Valid Hatch positions (Except for the middle)
+  </BoxAnnotation>
+</GameScene>
+
 Once you have had enough of the bronze machines, you can start working toward making steel. The ultimate goal is to be able to build the quarry, a multiblock that will dig ores for you!
 
 The first step is to make coke, by heating coal without oxygen. For that, you will need to build a Coke Oven multiblock.
@@ -23,7 +35,7 @@ The first step is to make coke, by heating coal without oxygen. For that, you wi
 
 <Recipe id="modern_industrialization:steam_age/fireclay/coke_oven" />
 
-For this first multiblock, you will need the Coke Oven itself of course, 21 Bricks and 3 [Hatches]() (an item input, an item output and a fluid input).
+For this first multiblock, you will need the Coke Oven itself of course, 21 Bricks and 3 §2Hatches§r (an item input, an item output and a fluid input).
 
 Optionally add a fluid output hatch to collect creosote too.
 
@@ -43,7 +55,7 @@ Optionally add a fluid output hatch to collect creosote too.
   <Recipe id="modern_industrialization:hatches/bronze/fluid_output_hatch" />
 </Row>
 
-The Coke Oven block here has the role of a [Controller](). Every multiblock is managed by a controller, but you usually cannot interact with the controller directly: all input and output goes through hatches. We need a fluid input because the coke oven is powered by steam, we need an item input for the coal and an output for the coke.
+The Coke Oven block here has the role of a §2Controller§r. Every multiblock is managed by a controller, but you usually cannot interact with the controller directly: all input and output goes through hatches. We need a fluid input because the coke oven is powered by steam, we need an item input for the coal and an output for the coke.
 
 We can optionally add a fluid output hatch for the creosote. It is a chanced output and will therefore be voided if there is no room for it.
 
@@ -54,12 +66,6 @@ If we forget one of the hatches, the coke oven will not be able to start!
 We need 21 Bricks for this multiblock! Check EMI, it says 24 total, but we have 3 hatches so we only need bricks for the 21 remaining blocks!
 
 ## Coke Oven!
-
-<GameScene zoom="4" interactive={true}>
-  <ImportStructure src="../assets/structures/coke_oven.snbt" />
-</GameScene>
-
-There are many ways to place the hatches, this is one of them!
 
 Once the Coke Oven says _Shape Valid_, fill the fluid input hatch with steam, put coal in the item input hatch and you're good to go!
 

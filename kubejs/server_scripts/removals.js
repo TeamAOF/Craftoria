@@ -13,6 +13,7 @@ const globalItemRemovals = [
   'mekanism:upgrade_anchor',
   'mekanism:dimensional_stabilizer',
   'pneumaticcraft:chunkloader_upgrade',
+  'industrialforegoing:infinity_nuke',
 ];
 
 ServerEvents.recipes((event) => {
@@ -24,6 +25,7 @@ ServerEvents.recipes((event) => {
     'mffs:steel_ingot',
     'industrialforegoing:laser_drill_ore/raw_materials/iridium',
     'hyperbox:hyperbox',
+    'modern_industrialization:materials/uranium/blast_furnace/dust',
   ];
 
   const output = [];

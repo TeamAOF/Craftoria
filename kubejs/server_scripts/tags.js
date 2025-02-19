@@ -28,9 +28,11 @@ ServerEvents.tags('item', (e) => {
   e.add('occultism:tools/knife', '#c:tools/knife');
 
   // Machine Frames
-  e.add('craftoria:hulls/advanced', 'industrialforegoing:machine_frame_advanced');
-  e.add('craftoria:hulls/advanced', 'modern_industrialization:basic_machine_hull');
-  e.add('craftoria:hulls/advanced', 'mekanism:ultimate_tier_installer');
+  e.add('craftoria:hulls/advanced', [
+    'industrialforegoing:machine_frame_advanced',
+    'modern_industrialization:basic_machine_hull',
+    'mekanism:ultimate_tier_installer',
+  ]);
 
   // Curios
   e.add('curios:curio', 'integratedterminals:terminal_storage_portable');

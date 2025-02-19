@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: electric_age/electric_age.md
+  parent: electric_age/index.md
   title: Advanced Machines
   icon: advanced_machine_hull
   position: 7

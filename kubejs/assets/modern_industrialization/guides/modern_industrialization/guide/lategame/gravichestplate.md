@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: lategame/endgame.md
+  parent: lategame/index.md
   title: Gravichestplate
   icon: gravichestplate
   position: 0

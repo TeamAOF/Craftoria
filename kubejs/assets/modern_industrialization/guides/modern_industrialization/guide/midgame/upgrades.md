@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: midgame/midgame.md
+  parent: midgame/index.md
   title: Upgrades!
   icon: basic_upgrade
   position: 200
@@ -14,16 +14,13 @@ item_ids:
 
 ## Machine Hull Upgrades
 
-<ItemGrid>
-  <ItemIcon id="modern_industrialization:advanced_machine_hull" />
-</ItemGrid>
+<Recipe id="modern_industrialization:electric_age/hull/advanced_machine_hull_asbl" />
+
 Yes you can! Right-click a machine with an Advanced Machine Hull to change it to MV tier: it will now accept MV cable connections only. The machine hull can also be set or cleared via the user interface.
 
 ## Overdrive Modules
 
-<ItemGrid>
-  <ItemIcon id="modern_industrialization:overdrive_module" />
-</ItemGrid>
+<Recipe id="modern_industrialization:electric_age/component/craft/overdrive_module_asbl" />
 
 An Overdrive Module will prevent machine efficiency from going down if the machine stops processing.
 

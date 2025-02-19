@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: electric_age/electric_age.md
+  parent: electric_age/index.md
   title: Oil Processing
   icon: diesel_bucket
   sortnum: 9
@@ -11,6 +11,10 @@ item_ids:
 ---
 
 # Oil Processing
+
+<GameScene zoom="2"  interactive={true}>
+  <ImportStructure src="../assets/structures/oil_drilling_rig.snbt" />
+</GameScene>
 
 ## Oil Drilling Rig
 
@@ -31,9 +35,3 @@ Various fuels can be burned in the Diesel Generator, and you can check in EMI ho
 Diesel Generators will only use fuel when they need to, but if you need a constant supply of energy, you can put liquid fuels in the Large Steam Boiler instead of items.
 
 A fully heated Large Steam Boiler will roughly produce twice the amount of energy a Diesel Generator would produce using the same quantity of fuel.
-
-## Oil Drilling Rig Preview
-
-<GameScene zoom="4"  interactive={true}>
-  <ImportStructure src="../assets/structures/oil_drilling_rig.snbt" />
-</GameScene>

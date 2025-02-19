@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: midgame/midgame.md
+  parent: midgame/index.md
   title: The Nuclear Reactor
   icon: nuclear_reactor
   position: 206
@@ -34,21 +34,17 @@ Note that the Nuclear Reactor cannot explode, emit radiation, or otherwise damag
 
 You should feel free to experiment, and enjoy your new life as a nuclear scientist!
 
-## Nuclear Casing
+## Nuclear Casing, Nuclear Item Hatch and Nuclear Fluid Hatch
 
-<Recipe id="modern_industrialization:electric_age/casing/nuclear_casing_asbl" />
+<Row>
+  <Recipe id="modern_industrialization:electric_age/casing/nuclear_casing_asbl" />
+  <Recipe id="modern_industrialization:electric_age/casing/nuclear_item_hatch_asbl" />
+  <Recipe id="modern_industrialization:electric_age/casing/nuclear_fluid_hatch_asbl" />
+</Row>
 
 The main component is the Nuclear Casing which is made with Nuclear Alloy : a mix of cadmium, beryllium and blastproof alloy.
 
-## Nuclear Item Hatch
-
-<Recipe id="modern_industrialization:electric_age/casing/nuclear_item_hatch_asbl" />
-
 The upper part of the structure accepts Nuclear Item or Fluid Hatches (or simple casings). Those are the inputs and outputs of the reactor.
-
-## Nuclear Fluid Hatch
-
-<Recipe id="modern_industrialization:electric_age/casing/nuclear_fluid_hatch_asbl" />
 
 Each hatch has one input (either item or fluid) and two outputs. The input slots will form a grid, displayed in the reactor GUI (accessible by right-clicking on the controller).
 
@@ -73,3 +69,5 @@ The same thing happens for fluids: a bit of fluid is transformed after each neut
 <GameScene zoom="4"  interactive={true}>
   <ImportStructure src="../assets/structures/nuclear_reactor.snbt" />
 </GameScene>
+
+This is the smallest Nuclear Reactor.

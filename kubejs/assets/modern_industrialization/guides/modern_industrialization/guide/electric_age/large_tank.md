@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: electric_age/electric_age.md
+  parent: electric_age/index.md
   title: Large Tank
   icon: large_tank
   position: 1
@@ -11,6 +11,14 @@ item_ids:
 ---
 
 # Large Tank
+
+<GameScene zoom="3"  interactive={true}>
+  <ImportStructure src="../assets/structures/large_tank.snbt" />
+</GameScene>
+
+The tank above is a 5x4x4 Large Tank, with a total capacity of 5,120 buckets.
+
+The tank can be any size between 3x3x3 and 7x7x7.
 
 The Large Tank is a multiblock that allows you to store large amounts of some fluid, for example steam. It can store 64 buckets worth of fluid for every block in the structure (including sides).
 

@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: midgame/midgame.md
+  parent: midgame/index.md
   title: Better Diesel
   icon: hv_diesel_generator
   position: 204
@@ -11,6 +11,10 @@ item_ids:
 ---
 
 # Better Diesel
+
+<GameScene zoom="2" interactive={true}>
+  <ImportStructure src="../assets/structures/large_diesel_generator.snbt" />
+</GameScene>
 
 ## HV Diesel Generator
 

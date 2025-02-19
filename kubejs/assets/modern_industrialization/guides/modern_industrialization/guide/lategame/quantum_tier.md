@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: lategame/endgame.md
+  parent: lategame/index.md
   title: Quantum Tier
   icon: quantum_upgrade
   position: 1

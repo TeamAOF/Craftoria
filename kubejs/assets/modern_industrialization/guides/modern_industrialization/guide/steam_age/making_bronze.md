@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: steam_age/steam_age.md
+  parent: steam_age/index.md
   title: Your First Bronze!
   icon: modern_industrialization:bronze_dust
   position: 1

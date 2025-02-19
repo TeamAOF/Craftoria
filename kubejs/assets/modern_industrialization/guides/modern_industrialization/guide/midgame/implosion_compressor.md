@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: midgame/midgame.md
+  parent: midgame/index.md
   title: Implosion Compressor!
   icon: implosion_compressor
   position: 205
@@ -10,6 +10,10 @@ item_ids:
 ---
 
 # Implosion Compressor!
+
+<GameScene zoom="2" interactive={true}>
+  <ImportStructure src="../assets/structures/implosion_compressor.snbt" />
+</GameScene>
 
 ## A Familiar Blue Gem
 

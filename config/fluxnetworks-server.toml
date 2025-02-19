@@ -17,7 +17,7 @@
 	#Enables redstone being compressed with the bedrock and obsidian to get flux dusts.
 	enableFluxRecipe = true
 	#Allows flux devices to enable chunk loading.
-	enableChunkLoading = true
+	enableChunkLoading = false
 
 [blacklist]
 	#A blacklist for blocks which flux devices shouldn't connect to, use format 'modid:registry_name'

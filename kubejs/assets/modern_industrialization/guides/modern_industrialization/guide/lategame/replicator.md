@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: lategame/endgame.md
+  parent: lategame/index.md
   title: E = mc²
   icon: replicator
   position: 3

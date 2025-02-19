@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: electric_age/electric_age.md
+  parent: electric_age/index.md
   title: Portable Storage Unit
   icon: portable_storage_unit
   position: 12

@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: electric_age/electric_age.md
+  parent: electric_age/index.md
   title: Diesel Jetpack and Tools
   icon: diesel_jetpack
   position: 10
@@ -26,16 +26,17 @@ Don't forget to activate it using the Toggle Flight keybinding!
 <Recipe id="modern_industrialization:armor/rubber_helmet"/>
 <Recipe id="modern_industrialization:armor/rubber_boots"/>
 
-## Diesel Mining Drill
+## Diesel Mining Drill and Chainsaw
 
-<Recipe id="modern_industrialization:tools/diesel_mining_drill"/>
+<Row>
+  <Recipe id="modern_industrialization:tools/diesel_mining_drill"/>
+  <Recipe id="modern_industrialization:tools/diesel_chainsaw"/>
+</Row>
 
-This Mining Drill can finally replace your Pickaxes and Shovels. Fill it with powerful fuel for the best speed!
+This Mining Drill can finally replace your Pickaxes and Shovels.
 
-Toggle between Silk Touch and Fortune III with shift right-click.
+The Chainsaw can replace your Axes and Shears.
 
-## Diesel Chainsaw
+Fill them with powerful fuel for the best speed!
 
-<Recipe id="modern_industrialization:tools/diesel_chainsaw"/>
-
-Cutting down trees in style!
+Both tools can toggle between Silk Touch and Fortune III with shift right-click.

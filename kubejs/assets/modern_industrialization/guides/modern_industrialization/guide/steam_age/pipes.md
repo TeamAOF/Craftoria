@@ -1,6 +1,6 @@
 ---
 navigation:
-  parent: steam_age/steam_age.md
+  parent: steam_age/index.md
   title: Pipes
   icon: wrench
   position: 4
