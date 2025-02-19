@@ -3121,5 +3121,42 @@
 			x: 35.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["7342F6461382E839"]
+			id: "768973710C811CB1"
+			rewards: [{
+				count: 2
+				id: "3B10D492C875DAF9"
+				item: {
+					count: 1
+					id: "modern_industrialization:quantum_upgrade"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "42BBF13AD374F801"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_helmet" }
+					type: "item"
+				}
+				{
+					id: "21E9FB09E5828E0D"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_chestplate" }
+					type: "item"
+				}
+				{
+					id: "790335B0A51777C9"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_leggings" }
+					type: "item"
+				}
+				{
+					id: "11F014B8270C8ABB"
+					item: { count: 1, id: "extended_industrialization:nano_quantum_boots" }
+					type: "item"
+				}
+			]
+			x: 60.0d
+			y: -5.0d
+		}
 	]
 }
