@@ -2,6 +2,8 @@
 
 _NeoForge Loader 21.1.122_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.15.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.15.0.md)_
 
+## DISCLAIMER: Empty your Hyperboxes before updating! They are removed!
+
 ### Changes/Improvements ⭐
 
 * Reworked Occultism quest chapter **(thanks Eset)**
