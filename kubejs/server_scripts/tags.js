@@ -27,6 +27,8 @@ ServerEvents.tags('item', (e) => {
   // Knives
   e.add('occultism:tools/knife', '#c:tools/knife');
 
+  e.remove('c:foods/raw_calamari', 'rusticdelight:calamari_slice');
+
   // Machine Frames
   e.add('craftoria:hulls/advanced', [
     'industrialforegoing:machine_frame_advanced',
@@ -132,4 +134,11 @@ ServerEvents.tags('entity_type', (e) => {
   e.add('ftbchunks:entity_interact_whitelist', ['minecraft:villager', 'minecraft:wandering_trader']);
 
   e.add('mob_grinding_utils:no_swab', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/]);
+
+  e.add("industrialforegoing:mob_crusher_blacklist", [
+    "bosses_of_mass_destruction:obsidilith", 
+    "bosses_of_mass_destruction:lich", 
+    "bosses_of_mass_destruction:gauntlet", 
+    "bosses_of_mass_destruction:void_blossom"
+  ]);
 });
