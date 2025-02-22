@@ -1,18 +1,18 @@
 ServerEvents.recipes((e) => {
   // Fixes Handcrafted Cupboards and Functional Storage 1x1 Drawers conflicting
   Ingredient.of('#handcrafted:cupboards').itemIds.forEach((item) => {
-    e.remove({output: item});
+    e.remove({ output: item });
     let item2 = item.split(':')[1].replace('_cupboard', '');
     e.shaped(`3x ${item}`, ['AAA', 'BCB', 'AAA'], {
       A: `minecraft:${item2}_planks`,
       B: `minecraft:${item2}_slab`,
-      C: '#c:chests',
+      C: '#c:chests/wooden',
     }).id(`craftoria:handcrafted/${item2}_cupboard`);
   });
 
   // Fixes Handcrafted Wool Sheets conflicting with Comforts Sleeping Bags
   global.dyeColors.forEach((wool) => {
-    e.remove({type: 'minecraft:crafting_shaped', output: `handcrafted:${wool}_sheet`});
+    e.remove({ type: 'minecraft:crafting_shaped', output: `handcrafted:${wool}_sheet` });
 
     // Sheets
     e.shaped(`handcrafted:${wool}_sheet`, ['AAA'], {
@@ -25,12 +25,12 @@ ServerEvents.recipes((e) => {
   }).id('handcrafted:terracotta_thin_pot');
 
   // Food mods
-  e.replaceInput({id: 'farmersdelight:cabbage_from_leaves'}, '#c:cabbage', 'farmersdelight:cabbage_leaf');
-  e.replaceInput({id: 'dumplings_delight:chinese_cabbage_crate'}, '#c:cabbage', 'farmersdelight:cabbage_leaf');
-  e.remove({id: 'dumplings_delight:chinese_cabbage_leaf'});
+  e.replaceInput({ id: 'farmersdelight:cabbage_from_leaves' }, '#c:cabbage', 'farmersdelight:cabbage_leaf');
+  e.replaceInput({ id: 'dumplings_delight:chinese_cabbage_crate' }, '#c:cabbage', 'farmersdelight:cabbage_leaf');
+  e.remove({ id: 'dumplings_delight:chinese_cabbage_leaf' });
 
   // Ars Nouveau
-  e.remove({id: 'ars_nouveau:smooth_sourcestone_to_sourcestone'});
+  e.remove({ id: 'ars_nouveau:smooth_sourcestone_to_sourcestone' });
   e.stonecutting('ars_nouveau:sourcestone', 'ars_nouveau:smooth_sourcestone');
 
   // Macaw's
@@ -40,17 +40,17 @@ ServerEvents.recipes((e) => {
   }).id('mcwholidays:stars_wall_deco');
 
   // Thaumon
-  e.replaceInput({id: 'thaumon:ancient_stone_bricks'}, 'thaumon:ancient_stone', 'thaumon:polished_ancient_stone');
+  e.replaceInput({ id: 'thaumon:ancient_stone_bricks' }, 'thaumon:ancient_stone', 'thaumon:polished_ancient_stone');
 
   // Minecarts
-  e.replaceOutput({id: 'utilitarian:utility/hopper_minecart'}, 'minecraft:chest_minecart', 'minecraft:hopper_minecart');
-  e.replaceOutput({id: 'utilitarian:utility/tnt_minecart'}, 'minecraft:chest_minecart', 'minecraft:tnt_minecart');
-  e.replaceInput({id: 'utilitarian:utility/chest_minecart'}, '#c:chests', Ingredient.of('#c:chests/wooden').except('expandedstorage:wood_chest'));
-  e.replaceInput({id: 'minecraft:chest_minecart'}, '#c:chests', Ingredient.of('#c:chests/wooden').except('expandedstorage:wood_chest'));
+  e.replaceOutput({ id: 'utilitarian:utility/hopper_minecart' }, 'minecraft:chest_minecart', 'minecraft:hopper_minecart');
+  e.replaceOutput({ id: 'utilitarian:utility/tnt_minecart' }, 'minecraft:chest_minecart', 'minecraft:tnt_minecart');
+  e.replaceInput({ id: 'utilitarian:utility/chest_minecart' }, '#c:chests', Ingredient.of('#c:chests/wooden').except('expandedstorage:wood_chest'));
+  e.replaceInput({ id: 'minecraft:chest_minecart' }, '#c:chests', Ingredient.of('#c:chests/wooden').except('expandedstorage:wood_chest'));
 
   // BWG
-  e.replaceInput({id: 'minecraft:crafting_table'}, '#minecraft:planks', Ingredient.of('#minecraft:planks').except('@biomeswevegone'));
-  e.replaceInput({id: 'minecraft:bookshelf'}, '#minecraft:planks', Ingredient.of('#minecraft:planks').except('@biomeswevegone'));
+  e.replaceInput({ id: 'minecraft:crafting_table' }, '#minecraft:planks', Ingredient.of('#minecraft:planks').except('@biomeswevegone'));
+  e.replaceInput({ id: 'minecraft:bookshelf' }, '#minecraft:planks', Ingredient.of('#minecraft:planks').except('@biomeswevegone'));
 
   // Duplicate removals
   let removeById = [
@@ -69,13 +69,31 @@ ServerEvents.recipes((e) => {
     'mekanism:processing/tin/ingot/from_ore_smelting',
   ];
   removeById.forEach((id) => {
-    e.remove({id: id});
+    e.remove({ id: id });
   });
+
+  // Make wood chests from other mods craftable without conflicts
+  const woodChestMods = ['woodwevegot', 'twilightforest'];
+  woodChestMods.forEach((mod) => {
+    e.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: mod, output: '#c:chests/wooden' }, (r) => {
+      console.info(`Changing recipe: ${r.id}`);
+      let ingredients = r.originalRecipeIngredients;
+      let output = r.originalRecipeResult.id;
+      e.shaped(`2x ${output}`, ['###', '#C#', '###'], {
+        '#': ingredients[0],
+        C: '#c:chests/wooden',
+      }).id(r.getId());
+    });
+  });
+
+  // Misc
+  e.replaceInput({ type: 'minecraft:crafting_shaped', output: 'minecraft:hopper' }, '#c:chests', '#c:chests/wooden');
+  e.replaceInput({ type: 'minecraft:crafting_shaped', mod: 'handcrafted', input: '#c:chests' }, '#c:chests', '#c:chests/wooden');
 });
 
 ServerEvents.tags('item', (e) => {
   // ES Crystal Ingredient Conflicts
-  let crystals = {blaze: [], light: []};
+  let crystals = { blaze: [], light: [] };
   Ingredient.of('#eternal_starlight:blaze_crystal_ingredients').itemIds.forEach((item) => {
     crystals.blaze.push(item);
   });
