@@ -79,7 +79,7 @@ ServerEvents.recipes((e) => {
       console.info(`Changing recipe: ${r.id}`);
       let ingredients = r.originalRecipeIngredients;
       let output = r.originalRecipeResult.id;
-      e.shaped(`2x ${output}`, ['###', '#C#', '###'], {
+      e.shaped(`2x ${output}`, ['#C#', '###', '###'], {
         '#': ingredients[0],
         C: '#c:chests/wooden',
       }).id(r.getId());
