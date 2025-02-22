@@ -8,6 +8,7 @@
     "irons_jewelry",
     "pneumaticcraft",
     "farmersdelight",
+    "rusticdelight",
     "dumplings_delight",
     "sushigocrafting",
     "moremekanismprocessing"
@@ -32,13 +33,13 @@
     "c:seeds/{material}",
     "c:foods/raw_bacon",
     "c:foods/cooked_bacon",
-    "c:foods/calamari",
+    "c:foods/raw_calamari",
     "c:plastics"
   ],
-  "ignored_tags": [],
-  "ignored_items": ["farmersdelight:cabbage", "industrialforegoing:iron_gear", "industrialforegoing:gold_gear", "industrialforegoing:diamond_gear"],
+  "ignored_tags": ["c:foods/raw_squid"],
+  "ignored_items": ["farmersdelight:cabbage", "rusticdelight:calamari_slice", "industrialforegoing:iron_gear", "industrialforegoing:gold_gear", "industrialforegoing:diamond_gear"],
   "ignored_recipe_types": ["cucumber:shaped_tag"],
-  "ignored_recipe_ids": [],
+  "ignored_recipe_ids": ["rusticdelight:calamari_roll"],
   "recipe_viewer_hiding": true,
   "loot_unification": true,
   "ignored_loot_tables": []
