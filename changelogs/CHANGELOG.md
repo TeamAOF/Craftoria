@@ -1,6 +1,6 @@
 ## Craftoria | v1.15.0
 
-_NeoForge Loader 21.1.119_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.15.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.15.0.md)_
+_NeoForge Loader 21.1.122_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.15.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.15.0.md)_
 
 ### Changes/Improvements ⭐
 
@@ -30,7 +30,29 @@ _NeoForge Loader 21.1.119_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
 
 ### Added Mods ✅
 
-  * 
+  * [Deeper and Darker](https://www.curseforge.com/minecraft/mc-mods/deeperdarker)
+  * [Display Delight](https://www.curseforge.com/minecraft/mc-mods/display-delight)
+  * [EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot)
+  * [Extra Apoth Compat](https://www.curseforge.com/minecraft/mc-mods/extra-apoth-compat)
+  * [GTBC's SpellLib/API](https://www.curseforge.com/minecraft/mc-mods/gtbcs-spelllib)
+  * [Lithostitched](https://www.curseforge.com/minecraft/mc-mods/lithostitched)
+  * [MmmMmmMmmMmm (Target Dummy)](https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm)
+  * [Modern World Creation](https://www.curseforge.com/minecraft/mc-mods/modernworldcreation)
+  * [Moonlight Lib](https://www.curseforge.com/minecraft/mc-mods/selene)
+  * [Nyf's Spiders](https://www.curseforge.com/minecraft/mc-mods/nyfs-spiders)
+  * [Reliquified Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/reliquified-ars-nouveau)
+  * [Reliquified Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/reliquified-twilight-forest)
+  * [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries)
+  * [TooManyRecipeViewers (TMRV)](https://www.curseforge.com/minecraft/mc-mods/tmrv)
+  * [Traveler's Titles (NeoForge)](https://www.curseforge.com/minecraft/mc-mods/travelers-titles-neoforge)
+
+### Removed Mods ❌
+  * [Enhanced Celestials - Blood, Blue, & Harvest (Super) Moons](https://www.curseforge.com/minecraft/mc-mods/enhanced-celestials)
+  * [Hyperbox](https://www.curseforge.com/minecraft/mc-mods/hyperbox) (Replaced with Compact Machines)
+  * [Just Enough Items (JEI)](https://www.curseforge.com/minecraft/mc-mods/jei) (Replaced with TMRV compat layer)
+  * [Log Begone](https://www.curseforge.com/minecraft/mc-mods/log-begone) (Performance Issues)
+  * [Raised](https://www.curseforge.com/minecraft/mc-mods/raised)
+  * [RPG Companions: Tiny Dragons](https://www.curseforge.com/minecraft/mc-mods/rpg-companions-tiny-dragons) (MC Creator mod)
 
 ## Craftoria | v1.14.0
 

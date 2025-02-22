@@ -14,7 +14,7 @@
   * [AI-Improvements-1.21-0.5.3.jar](https://www.curseforge.com/minecraft/mc-mods/ai-improvements/files/5426792) (by [QueenOfMissiles](https://www.curseforge.com/members/QueenOfMissiles/projects))
   * [AkashicTome-1.8-29.jar](https://www.curseforge.com/minecraft/mc-mods/akashic-tome/files/6049929) (by [Vazkii](https://www.curseforge.com/members/Vazkii/projects))
   * [All-The-Wood-Weve-Got-NeoForge-2.2.0.jar](https://www.curseforge.com/minecraft/mc-mods/all-the-wood-weve-got/files/6189624) (by [AOCAWOL](https://www.curseforge.com/members/AOCAWOL/projects))
-  * [alltheleaks-0.1.14-beta+1.21.1-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/alltheleaks/files/6169072) (by [Uncandango](https://www.curseforge.com/members/Uncandango/projects))
+  * [alltheleaks-0.1.15-beta+1.21.1-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/alltheleaks/files/6223121) (by [Uncandango](https://www.curseforge.com/members/Uncandango/projects))
   * [almostunified-neoforge-1.21.1-1.2.3.jar](https://www.curseforge.com/minecraft/mc-mods/almost-unified/files/6014834) (by [AlmostReliable](https://www.curseforge.com/members/AlmostReliable/projects))
   * [alshanex_familiars-1.21.1_v1.1.jar](https://www.curseforge.com/minecraft/mc-mods/alshanexs-familiars/files/6212503) (by [alshanex](https://www.curseforge.com/members/alshanex/projects))
   * [alternate_current-mc1.21-1.9.0.jar](https://www.curseforge.com/minecraft/mc-mods/alternate-current/files/5665477) (by [SpaceWalkerRS](https://www.curseforge.com/members/SpaceWalkerRS/projects))
