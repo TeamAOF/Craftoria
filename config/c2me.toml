@@ -4,14 +4,11 @@ version = 3
 #        1,
 #        min(
 #            if( is_windows,
-#                (cpus / 1.6 - 2),
-#                (cpus / 1.2 - 2)
-#            ),
-#            if( is_j9vm,
-#                ( ( mem_gb - (if(is_client, 0.6, 0.2)) ) / 0.4 ),
-#                ( ( mem_gb - (if(is_client, 1.2, 0.6)) ) / 0.6 )
-#            )
-#        ) - if(is_client, 2, 0)
+#                (cpus / 1.6),
+#                (cpus / 1.3)
+#            )  - if(is_client, 1, 0),
+#            ( ( mem_gb - (if(is_client, 1.2, 0.6)) ) / 0.6 )
+#        )
 #    )
 # )  
 #  The expression for the default value of global executor parallelism. 
@@ -19,8 +16,14 @@ version = 3
 #  Available variables: is_windows, is_j9vm, is_client, cpus, mem_gb
 # 
 defaultGlobalExecutorParallelismExpression = "default"
-# (Default: 9) Configures the parallelism of global executor
+# (Default: 11) Configures the parallelism of global executor
 globalExecutorParallelism = "default"
+# (Default: 4) Sets the thread priority for worker threads
+# 
+# References:
+# - https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Thread.html#setPriority(int)
+# 
+threadPoolPriority = "default"
 
 [generalOptimizations]
 	# (Default: 100000) The task interval of mid-tick chunk tasks in nanoseconds (-1 to disable)  
@@ -147,7 +150,7 @@ globalExecutorParallelism = "default"
 [noTickViewDistance]
 	# (Default: true) Whether to enable no-tick view distance
 	enabled = "default"
-	# (Default: 18) No-tick view distance max concurrent chunk loads 
+	# (Default: 12) No-tick view distance max concurrent chunk loads 
 	#  Lower this for a better latency and higher this for a faster loading
 	maxConcurrentChunkLoads = "default"
 	# (Default: true) Whether to use compatibility mode to send chunks 
@@ -160,17 +163,6 @@ globalExecutorParallelism = "default"
 	# (Default: false) Whether to ensure correct chunks within normal render distance 
 	#  This will send chunks twice increasing network load
 	ensureChunkCorrectness = "default"
-	# (Default: 2048) Maximum view distance for no-tick view distance 
-	# 
-	# This allows you to specify the maximum view distance that no-tick view distance can support. 
-	# The maximum supported is 1073741823 and the minimum that make sense is 32, 
-	# This option is purely to save memory, as it needs to reserve memory for the maximum view distance 
-	# 
-	# Note: on the client side, `clientSideConfig.modifyMaxVDConfig.maxViewDistance` should also 
-	# be increased to actually expose the view distance in video settings 
-	# 
-	# 
-	maxViewDistance = "default"
 
 	[clientSideConfig.modifyMaxVDConfig]
 		# (Default: true) Whether to modify maximum view distance

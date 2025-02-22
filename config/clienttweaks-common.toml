@@ -1,4 +1,3 @@
-
 [tweaks]
 	#This option will let you climb ladders automatically by just looking upwards, rather than requiring a key to be held down.
 	autoClimbLadder = false
@@ -40,6 +39,8 @@
 	preventAccidentalMining = false
 	#This option will increase the hitbox of random-offset blocks in creative mode, making it easier to break them quickly.
 	creativeBreakingSupport = true
+	#This option will disable paving when holding a block in your offhand.
+	disablePavingWithBlockInOffhand = true
 
 [customization]
 	#Items that count as torches for the offhand-torch tweak options.
@@ -54,4 +55,3 @@
 	fireworkItems = ["minecraft:firework_rocket"]
 	#Blocks that should be protected in the prevent accidental mining tweak.
 	fragileBlocks = ["minecraft:large_amethyst_bud", "minecraft:medium_amethyst_bud", "minecraft:small_amethyst_bud", "minecraft:budding_amethyst"]
-

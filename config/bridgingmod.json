@@ -1,6 +1,9 @@
 {
 	"version": 2,
+	"__comment_enableBridgingAssist": "a.k.a. 'Reacharound Placement' in keybinds. The Quark thing.",
 	"enableBridgingAssist": true,
+	"minimumBridgeReachHorizontal": 2.2,
+	"minimumBridgeReachVertical": 1.0,
 	"onlyBridgeWhenCrouched": true,
 	"supportedBridgeAxes": "BOTH",
 	"supportedBridgeAxesWhenCrouched": "FALLBACK",
@@ -13,6 +16,9 @@
 	"skipTorchBridging": true,
 	"enableSlabAssist": true,
 	"enableNonSolidReplace": true,
+	"bridgingSnapStrength": 1.0,
+	"bridgingAdjacency": "CORNERS",
+	"perspectiveLock": "LET_BRIDGING_MOD_DECIDE",
 	"showDebugHighlight": true,
 	"showNonBridgingDebugHighlight": false,
 	"showDebugTrace": false

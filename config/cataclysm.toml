@@ -78,8 +78,8 @@
 
 [Block]
 	#Cursed Tombstone Summon cooldown Minute
-	# Default: 30
-	# Range: 3 ~ 300
+	# Default: 1
+	# Range: 1 ~ 300
 	"Cursed Tombstone Summon cooldown Minute" = 30
 
 ["Entity damage"]
@@ -231,6 +231,10 @@
 	# Default: 15
 	# Range: 0 ~ 20
 	"EnderGuardianBlockBreaking Z" = 15
+	#EnderGuardian's DamageTime
+	# Default: 30
+	# Range: 0 ~ 100
+	EnderGuardianDamageTime = 30
 
 ["Netherite Monstrosity"]
 	#Monstrosity's Lavabomb magazine.
@@ -273,6 +277,10 @@
 	"Monstrosity's prevent attacks from far away Range" = 18.0
 	#Monstrosity's block breaking ignore the MobGriefing
 	monstrosityBlockBreaking = true
+	#Monstrosity's DamageTime
+	# Default: 10
+	# Range: 0 ~ 100
+	MonstrosityDamageTime = 10
 
 ["Ender Golem"]
 	#Ender Golem's block breaking ignore the MobGriefing
@@ -317,6 +325,10 @@
 	IgnisDamageCap = 20.0
 	#Ignis's cracked block breaking ignore the MobGriefing
 	IgnisBlockBreaking = true
+	#Ignis's DamageTime
+	# Default: 15
+	# Range: 0 ~ 100
+	IgnisDamageTime = 15
 
 [revenant]
 	#Revenant's Health Multiplier
@@ -377,6 +389,10 @@
 	# Default: 0.06
 	# Range: 0.0 ~ 1.0
 	"The Harbinger's charge attack Hp Damage" = 0.06
+	#Harbinger's DamageTime
+	# Default: 12
+	# Range: 0 ~ 100
+	"The Harbinger DamageTime" = 12
 
 ["The Leviathan"]
 	#Leviathan's Health Multiplier
@@ -419,6 +435,10 @@
 	LeviathanBlockBreaking = true
 	#Leviathan Immune Out of Water
 	LeviathanImmuneOutofWater = true
+	#Leviathan's DamageTime
+	# Default: 15
+	# Range: 0 ~ 100
+	"Leviathan DamageTime" = 15
 
 ["The Baby Leviathan"]
 	#BabyLeviathan's Health Multiplier
@@ -499,6 +519,10 @@
 	# Default: 11.0
 	# Range: 0.0 ~ 1000000.0
 	"Remnant's EarthQuakeDamage" = 11.0
+	#Ancient Remnant's DamageTime
+	# Default: 12
+	# Range: 0 ~ 100
+	"Ancient Remnant DamageTime" = 12
 
 [Koboleton]
 	#Cause Koboleton to Drop Item In Hand Percent
@@ -560,7 +584,7 @@
 	# Range: 0.0 ~ 1000000.0
 	MaledictusNatureHealing = 10.0
 	#Maledictus's Phantom Halberd Damage
-	# Default: 10.0
+	# Default: 13.0
 	# Range: 0.0 ~ 1000000.0
 	"Maledictus' Phantom Halberd Damage'" = 10.0
 	#Maledictus's DamageCap
@@ -593,6 +617,10 @@
 	"Maledictus's Phantom Arrow Damage" = 5.0
 	#Maledictus's cracked block breaking ignore the MobGriefing
 	MaledictusBlockBreaking = true
+	#Maledictus's DamageTime
+	# Default: 30
+	# Range: 0 ~ 100
+	"Maledictus DamageTime" = 30
 
 [spawning]
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
@@ -648,7 +676,7 @@
 	# Range: 0 ~ 1000
 	AmethystCrabSpawnWeight = 1
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
-	# Default: 40
+	# Default: 20
 	# Range: > 0
 	AmethystCrabSpawnRolls = 40
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn

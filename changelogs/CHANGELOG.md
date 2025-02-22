@@ -1,3 +1,37 @@
+## Craftoria | v1.15.0
+
+_NeoForge Loader 21.1.119_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.15.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.15.0.md)_
+
+### Changes/Improvements ⭐
+
+* Reworked Occultism quest chapter **(thanks Eset)**
+* Added Quantum Nano Set quest.
+* Added custom textures/models for new Extended Industrialization entries.
+* Many improvements to loading times, both to menu & in-game.
+* Updated colorful hearts textures to match our custom ones.
+* Unified calamari recipes & loot tables.
+* Blacklisted BOMD bosses to be insta-killed with Mob Crusher.
+* Mining Skill Tree experience can now be obtained from all modded ores, not just vanilla.
+* Lowered Mining Speed per skill point from 3% to 2%.
+* Added new cape textures/models for Completionist, Developer, Staff & Builder. Expect info on how to obtain the Completionist Cape SOON.
+* Made radiation decay much faster.
+* Updated Pipez textures to match tech mods.
+* Wixie + AE2, Potion Diffuser, typos & reformat for Ars Nouveau quest chapter.
+* Disabled chunk loading through Flux Networks.
+* Allow chunkloading via Ars Additions ritual.
+
+### Bug Fixes 🪲
+
+* Fixed Keep Kayra dungeon not spawning.
+* Fixed modded wooden chest recipe conflicts.
+* Fixed CLAIM ALL not working for certain quests.
+* Fixed Mek Extras chemicals being lowercase.
+* Fixed missing loot table/tags for replicator MK 1.
+
+### Added Mods ✅
+
+  * 
+
 ## Craftoria | v1.14.0
 
 _NeoForge Loader 21.1.99_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.14.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.14.0.md)_

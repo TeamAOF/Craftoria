@@ -1,0 +1,88 @@
+{
+	"experience_per_level": {
+		"type": "values",
+		"data": {
+			"values": [
+				250,
+				250,
+				250,
+				250,
+				250,
+				250,
+				250,
+				250,
+				250,
+				250,
+				500,
+				500,
+				500,
+				500,
+				500,
+				500,
+				500,
+				500,
+				500,
+				500,
+				750
+			]
+		}
+	},
+	"sources": [
+		{
+			"type": "puffish_skills:mine_block",
+			"data": {
+				"variables": {
+					"silk_touch": {
+						"operations": [
+							{
+								"type": "get_tool_item_stack"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"nbt": "{Enchantments:[{id:\"minecraft:silk_touch\"}]}"
+								}
+							}
+						]
+					},
+					"ores": {
+						"operations": [
+							{
+								"type": "get_mined_block_state"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"block": "#c:ores"
+								}
+							}
+						]
+					},
+					"deepslate_ores": {
+						"operations": [
+							{
+								"type": "get_mined_block_state"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"block": "#c:ores_in_ground/deepslate"
+								}
+							}
+						]
+					}
+				},
+				"experience": [
+					{
+						"condition": "!silk_touch & (ores)",
+						"expression": "7"
+					},
+					{
+						"condition": "!silk_touch & (deepslate_ores)",
+						"expression": "9"
+					}
+				]
+			}
+		}
+	]
+}

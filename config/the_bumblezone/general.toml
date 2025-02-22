@@ -161,6 +161,11 @@
 	# Allow Bee Queen to respawn in Throne Pillar when located with fresh Throne Honey Compass.
 	#
 	beeQueenRespawning = true
+	#----------------------------
+	#
+	# Allow Bee Queen to pick up items off ground to do trading.
+	#
+	beeQueenGroundPickup = true
 
 ["Crystalline Flower Options"]
 	#----------------------------
@@ -312,3 +317,8 @@
 	# Default: 48000
 	# Range: 0 ~ 1000000
 	continuityEssenceCooldown = 48000
+	#----------------------------
+	#
+	# Whether the Blue Arena in Sempiternal Sanctum has the moving bubble block mechanic.
+	#
+	blueArenaBubblesMechanic = true

@@ -823,17 +823,17 @@
 			tasks: [
 				{
 					id: "74AAE024CE79231B"
-					item: { count: 1, id: "functionalstorage:collector_upgrade" }
+					item: { components: { "functionalstorage:direction": "north" }, count: 1, id: "functionalstorage:collector_upgrade" }
 					type: "item"
 				}
 				{
 					id: "64C18AADA9B037EB"
-					item: { count: 1, id: "functionalstorage:puller_upgrade" }
+					item: { components: { "functionalstorage:direction": "north" }, count: 1, id: "functionalstorage:puller_upgrade" }
 					type: "item"
 				}
 				{
 					id: "2B32953557331B4C"
-					item: { count: 1, id: "functionalstorage:pusher_upgrade" }
+					item: { components: { "functionalstorage:direction": "north" }, count: 1, id: "functionalstorage:pusher_upgrade" }
 					type: "item"
 				}
 			]
@@ -856,7 +856,7 @@
 				}
 				{
 					id: "48311562CA7DF51C"
-					item: { count: 1, id: "functionalstorage:redstone_upgrade" }
+					item: { components: { "functionalstorage:slot": 0 }, count: 1, id: "functionalstorage:redstone_upgrade" }
 					type: "item"
 				}
 				{

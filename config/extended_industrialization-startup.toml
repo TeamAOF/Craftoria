@@ -66,3 +66,11 @@ tesla_coil_range = 32
 	#Range: >= 0.1
 	[lethal_tesla_coil.damage]
 		superconductor = 2.147483647E9
+
+[runtime_generated_recipes]
+	#Whether composter recipes should be generated automatically at runtime or not
+	#Default: true
+	composter = true
+	#Whether canning machine recipes should be generated automatically at runtime or not
+	#Default: true
+	canning_machine = true

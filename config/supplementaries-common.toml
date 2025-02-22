@@ -217,7 +217,7 @@
 		# Default: 60
 		# Range: 0 ~ 500
 		cooldown = 60
-		music_disc_avast = true
+		music_disc_heave_ho = true
 
 		[functional.cannon.cannonball]
 			enabled = true
@@ -265,8 +265,6 @@
 	sconce = true
 	sconce_lever = true
 	pancake = true
-	netherite_door = true
-	netherite_trapdoor = true
 	checker_block = true
 	raked_gravel = true
 	feather_block = true
@@ -276,6 +274,7 @@
 	candle_holder = true
 	fire_pit = true
 	wicker_fence = true
+	fine_wood = true
 
 	[building.blackboard]
 		enabled = true
@@ -340,8 +339,8 @@
 	[building.pedestal]
 		enabled = true
 		#If enabled end crystals placed on a pedestals will provide an enchantment power bonus equivalent to 3 bookshelves
-		# Default: 3
-		# Range: 0 ~ 100
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
 		crystal_enchanting = 3
 
 	[building.ash]
@@ -375,15 +374,6 @@
 		enabled = true
 		sepia_globe = true
 
-	[building.sign_post]
-		enabled = true
-
-		[building.sign_post.way_sign]
-			#Entirely disables them from spawning
-			enabled = true
-			#With this option road signs will display the distance to the structure that they are pointing to
-			show_distance_text = true
-
 	[building.daub]
 		enabled = true
 		wattle_and_daub = true
@@ -411,6 +401,21 @@
 		enabled = true
 		#Makes so flower boxes can only contain one tall flower item per block
 		simple_mode = true
+
+	[building.way_sign]
+		enabled = true
+
+		[building.way_sign.road_signs]
+			#Entirely disables them from spawning
+			enabled = true
+			#With this option road signs will display the distance to the structure that they are pointing to
+			show_distance_text = true
+
+	[building.netherite_doors]
+		door = true
+		trapdoor = true
+		#Makes netherite doors and trapdoors unbreakable
+		unbreakable = false
 
 [tools]
 	candy = true
@@ -465,8 +470,10 @@
 			lifetime = 1200
 			#Can bubble break when touched on?
 			break_when_touched = true
-			#If true feather falling prevents breaking bubbles when stepping on them
-			feather_falling_prevents_breaking = true
+			#Max number of charges a bubble blower can hold
+			# Default: 200
+			# Range: 1 ~ 1000000
+			max_charges = 200
 
 	[tools.wrench]
 		enabled = true
@@ -569,6 +576,8 @@
 	# Default: 1.0
 	# Range: 0.0 ~ 10.0
 	red_merchant_spawn_multiplier = 1.0
+	#Disable startup messages and sanity check that the mod performs to inform of possible detected crashes that might occur due to issues
+	sanity_checks_messages = true
 
 #Vanilla tweaks
 [tweaks]
@@ -651,10 +660,6 @@
 		tinted_blocks_on_maps = true
 
 	[tweaks.placeable_books]
-		#Allows written books to be placed down. Requires shift clicking
-		written_books = true
-		#Allow books and enchanted books to be placed on the ground
-		enabled = true
 		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
 		# Default: 1.0
 		# Range: 0.0 ~ 5.0
@@ -713,3 +718,7 @@
 		# Default: 0.15
 		# Range: 0.0 ~ 1.0
 		chance_per_slime_size = 0.15
+
+	[tweaks.dragon_banner_pattern]
+		#Adds dragon banner pattern made from dragon head
+		enabled = true

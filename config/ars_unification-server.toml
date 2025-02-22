@@ -49,6 +49,12 @@ exceptions = []
 			# Range: 1 ~ 4
 			tier = 1
 
+		[crush.ae2.inscriber]
+			#Priority of AE2's Inscriber recipes, -1 to disable
+			# Default: 20
+			# Range: > -1
+			priority = 20
+
 		[cut.mekanism.sawmill]
 			#Priority of Mekanism's Sawmill recipes, -1 to disable
 			# Default: 100
@@ -78,3 +84,11 @@ exceptions = []
 			# Default: -1
 			# Range: > 100
 			priority = 100
+
+			[press.ae2.inscriber.circuit_printing]
+				#Priority of AE2's Inscriber circuit printing recipes, -1 to disable
+				# Default: 200
+				# Range: > -1
+				priority = 200
+				#List of allowed press item IDs
+				presses = ["ae2:calculation_processor_press", "ae2:engineering_processor_press", "ae2:logic_processor_press", "ae2:silicon_press", "megacells:accumulation_processor_press", "extendedae:concurrent_processor_press", "advanced_ae:quantum_processor_press", "appflux:energy_processor_press"]

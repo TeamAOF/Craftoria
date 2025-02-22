@@ -334,3 +334,14 @@
 	player_accessor_validation_time = 100
 	#A list of dimension names to blacklist for the Player Accessor feature.
 	player_accessor_blacklisted_dimensions = []
+
+#Time Crystals
+[time_crystal]
+	#Do you want to customize Time Crystal Growth Dimensions? If set to true, the following 3 fields MUST be populated. Don't leave any blank! Defaults to false, which means normal growth rules occur - Stage 1 = Overworld (or any other dimension besides Nether/End), Stage 2 = Nether, Stage 3 = End.
+	time_crystal_custom_dimensions = false
+	#A list of dimensions that Time Crystals can Advance to Stage 1 in.
+	time_crystal_stage_1_dims = []
+	#A list of dimensions that Time Crystals can Advance to Stage 2 in.
+	time_crystal_stage_2_dims = []
+	#A list of dimensions that Time Crystals can Advance to Stage 3 in.
+	time_crystal_stage_3_dims = []

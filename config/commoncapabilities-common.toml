@@ -7,6 +7,8 @@
 		analytics = true
 		#If the version checker should be enabled.
 		versionChecker = true
+		#Only enable this if you know what you are doing, as this will cause lag! This will log checks to the DataComparator where equal items have unequal data components.
+		debugLogUnequalItemDataComponents = false
 
 	[machine.general]
 		#The data component types that should be filtered away when checking equality.

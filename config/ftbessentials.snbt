@@ -153,6 +153,12 @@
 	
 	# Teleportation-related settings
 	teleportation: {
+		# If true, admin-level players (i.e. permission level >= 2) are exempt from
+		# the dimension controls defined in teleportation -> blacklists and
+		# in teleportation -> rtp -> dimension_blacklist/whitelist
+		# Default: true
+		admins_exempt_dimension_blacklists: true
+		
 		# Allows users to return to their previous location after teleporting (or dying)
 		back: {
 			# Cooldown between /back commands (in seconds)
@@ -203,6 +209,11 @@
 			
 			# Default: true
 			enabled: true
+			
+			# The minimum Y value for homes, as set by the /sethome command
+			# Default: -2147483648
+			# Range: -∞ ~ +∞
+			home_min_y: -2147483648
 			
 			# Max amount of homes a user can have.
 			# You can override this with FTB Ranks using ftbessentials.home.max
