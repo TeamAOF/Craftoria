@@ -1,3 +1,13 @@
+## Craftoria | v1.15.1
+
+_NeoForge Loader 21.1.122_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.15.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.15.1.md)_
+
+### Bug Fixes 🪲
+
+* Fixed server status in server list not showing up correctly.
+* Fixed server not stopping correctly.
+  ---
+
 ## Craftoria | v1.15.0
 
 _NeoForge Loader 21.1.122_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.15.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.15.0.md)_
@@ -55,6 +65,7 @@ _NeoForge Loader 21.1.122_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
   * [Log Begone](https://www.curseforge.com/minecraft/mc-mods/log-begone) (Performance Issues)
   * [Raised](https://www.curseforge.com/minecraft/mc-mods/raised)
   * [RPG Companions: Tiny Dragons](https://www.curseforge.com/minecraft/mc-mods/rpg-companions-tiny-dragons) (MC Creator mod)
+  ---
 
 ## Craftoria | v1.14.0
 
