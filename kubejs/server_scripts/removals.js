@@ -14,6 +14,8 @@ const globalItemRemovals = [
   'mekanism:dimensional_stabilizer',
   'pneumaticcraft:chunkloader_upgrade',
   'industrialforegoing:infinity_nuke',
+  'utilitarian:tiny_coal',
+  'utilitarian:tiny_charcoal',
 ];
 
 ServerEvents.recipes((event) => {

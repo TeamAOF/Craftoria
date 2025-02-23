@@ -1,4 +1,17 @@
 ServerEvents.recipes((e) => {
+  e.shaped('2x displaydelight:small_food_plate', ['AA'], {
+    A: '#minecraft:wooden_pressure_plates',
+  }).id('displaydelight:small_food_plate');
+
+  e.shaped('2x displaydelight:food_plate', ['A A', ' A '], {
+    A: '#minecraft:wooden_pressure_plates',
+  }).id('displaydelight:food_plate');
+
+  e.shaped('3x handcrafted:wood_plate', ['ABA'], {
+    A: '#minecraft:wooden_slabs',
+    B: '#minecraft:planks',
+  }).id('handcrafted:wood_plate');
+
   // Fixes Handcrafted Cupboards and Functional Storage 1x1 Drawers conflicting
   Ingredient.of('#handcrafted:cupboards').itemIds.forEach((item) => {
     e.remove({ output: item });
@@ -67,6 +80,16 @@ ServerEvents.recipes((e) => {
     'integrateddynamics:smelting/menril_log_filled_coal',
     'integrateddynamics:smelting/menril_log_coal',
     'mekanism:processing/tin/ingot/from_ore_smelting',
+    'farmersdelight:organic_compost_from_tree_bark',
+    'actuallyadditions:tagged_slime_block',
+    'farmersdelight:basket',
+    'minecraft:stick_from_bamboo_item',
+    'farmersdelight:paper_from_tree_bark',
+    'endermanoverhaul:ender_eye',
+    'farmersdelight:scaffolding_from_canvas',
+    'minecraft:scaffolding',
+    'minecraft:sticky_piston',
+    'dumplings_delight:chinese_cabbage_from_leaves',
   ];
   removeById.forEach((id) => {
     e.remove({ id: id });
@@ -76,7 +99,6 @@ ServerEvents.recipes((e) => {
   const woodChestMods = ['woodwevegot', 'twilightforest'];
   woodChestMods.forEach((mod) => {
     e.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: mod, output: '#c:chests/wooden' }, (r) => {
-      console.info(`Changing recipe: ${r.id}`);
       let ingredients = r.originalRecipeIngredients;
       let output = r.originalRecipeResult.id;
       e.shaped(`2x ${output}`, ['#C#', '###', '###'], {
@@ -84,11 +106,30 @@ ServerEvents.recipes((e) => {
         C: '#c:chests/wooden',
       }).id(r.getId());
     });
+
+    e.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: mod, output: '#c:barrels/wooden' }, (r) => {
+      let ingredients = r.originalRecipeIngredients;
+      let output = r.originalRecipeResult.id;
+      e.shaped(`2x ${output}`, ['PSP', 'PBP', 'PSP'], {
+        P: ingredients[0],
+        S: ingredients[1],
+        B: '#c:barrels/wooden',
+      }).id(r.getId());
+    });
+  });
+
+  e.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: 'twilightforest', output: /_trapped_chest$/ }, (r) => {
+    let ingredients = r.originalRecipeIngredients[0];
+    let output = r.originalRecipeResult.id;
+    e.shapeless(output, [ingredients.itemIds[0].replace('planks', 'chest'), 'minecraft:tripwire_hook']).id(r.getId());
   });
 
   // Misc
   e.replaceInput({ type: 'minecraft:crafting_shaped', output: 'minecraft:hopper' }, '#c:chests', '#c:chests/wooden');
   e.replaceInput({ type: 'minecraft:crafting_shaped', mod: 'handcrafted', input: '#c:chests' }, '#c:chests', '#c:chests/wooden');
+  e.replaceInput({ id: 'minecraft:trapped_chest' }, '#c:chests/wooden', 'minecraft:chest');
+  e.replaceInput({ id: 'dumplings_delight:chinese_cabbage_crate' }, '#c:crops/cabbage', 'farmersdelight:cabbage_leaf');
+  e.replaceInput({ id: 'farmersdelight:cabbage_from_leaves' }, '#c:crops/cabbage', 'farmersdelight:cabbage_leaf');
 });
 
 ServerEvents.tags('item', (e) => {
@@ -102,4 +143,6 @@ ServerEvents.tags('item', (e) => {
   });
   e.remove('eternal_starlight:lunar_crystal_ingredients', crystals.light);
   e.remove('eternal_starlight:light_crystal_ingredients', crystals.blaze);
+
+  e.remove('c:chests/wooden', 'minecraft:trapped_chest');
 });
