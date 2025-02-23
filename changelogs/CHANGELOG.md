@@ -8,6 +8,10 @@ _NeoForge Loader 21.1.122_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
 * Fixed recipe lookups within backpacks.
 * Fixed menu blur not loading off by default.
 * Fixed ALL existing recipe conflicts.
+
+### Removed Mods ❌
+
+* [Tiny Coal](https://www.curseforge.com/minecraft/mc-mods/tiny-coal)
 ---
 
 ## Craftoria | v1.15.1
@@ -71,6 +75,7 @@ _NeoForge Loader 21.1.122_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
   * [Traveler's Titles (NeoForge)](https://www.curseforge.com/minecraft/mc-mods/travelers-titles-neoforge)
 
 ### Removed Mods ❌
+
   * [Enhanced Celestials - Blood, Blue, & Harvest (Super) Moons](https://www.curseforge.com/minecraft/mc-mods/enhanced-celestials)
   * [Hyperbox](https://www.curseforge.com/minecraft/mc-mods/hyperbox) (Replaced with Compact Machines)
   * [Just Enough Items (JEI)](https://www.curseforge.com/minecraft/mc-mods/jei) (Replaced with TMRV compat layer)
