@@ -6,7 +6,7 @@ _NeoForge Loader 21.1.122_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
 
 * Fixed server status in server list not showing up correctly.
 * Fixed server not stopping correctly.
-  ---
+---
 
 ## Craftoria | v1.15.0
 
