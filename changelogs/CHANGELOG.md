@@ -1,3 +1,15 @@
+## Craftoria | v1.15.2
+
+_NeoForge Loader 21.1.122_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.15.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.15.2.md)_
+
+### Bug Fixes 🪲
+
+* Fixed a client crash when opening banks.
+* Fixed recipe lookups within backpacks.
+* Fixed menu blur not loading off by default.
+* Fixed ALL existing recipe conflicts.
+---
+
 ## Craftoria | v1.15.1
 
 _NeoForge Loader 21.1.122_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.15.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.15.1.md)_
