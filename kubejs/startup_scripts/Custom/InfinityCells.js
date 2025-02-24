@@ -63,5 +63,10 @@ StartupEvents.registry('item', (e) => {
 
   e.create('craftoria:infinity_cell_housing');
 
+  e.create('craftoria:dummy_warden_imprisonment', 'occultism:ritual_dummy')
+    .pentacleType('craft')
+    .displayName('Ritual: Imprisonment of the Warden')
+    .ritualTooltip('A ritual to imprison the Warden in an Infinity Cell, granting you infinite warden souls');
+
   global.infCells.forEach((cell) => createInfCell(cell.id, cell.type));
 });
