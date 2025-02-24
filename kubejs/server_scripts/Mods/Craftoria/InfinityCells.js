@@ -1,0 +1,23 @@
+ServerEvents.recipes((e) => {
+  e.recipes.occultism
+    .ritual(
+      'craftoria:infinity_soul_cell',
+      [
+        'industrialforegoingsouls:soul_laser_base',
+        'occultism:trinity_gem[entity_data={id:"occultism:possessed_warden"}]',
+        'industrialforegoing:stasis_chamber',
+        'ae2:spatial_cell_component_16',
+        'industrialforegoing:laser_drill',
+        'minecraft:reinforced_deepslate',
+        'industrialforegoing:laser_drill',
+        'minecraft:reinforced_deepslate',
+        'industrialforegoing:laser_drill',
+        'minecraft:reinforced_deepslate',
+        'industrialforegoing:laser_drill',
+        'minecraft:reinforced_deepslate',
+      ],
+      'craftoria:infinity_cell_housing',
+      'occultism:contact_eldritch_spirit'
+    )
+    .dummy('craftoria:dummy_warden_imprisonment');
+});

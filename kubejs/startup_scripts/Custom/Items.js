@@ -25,4 +25,9 @@ StartupEvents.registry('item', (e) => {
     .tag(`modern_industrialization:replicator_blacklist`)
     .tag(`craftoria:replicator_1_blacklist`)
     .rarity('Epic');
+
+  e.create('craftoria:dummy_warden_imprisonment', 'occultism:ritual_dummy')
+    .pentacleType('craft')
+    .displayName('Ritual: Imprisonment of the Warden')
+    .ritualTooltip('A ritual to imprison the Warden in an Infinity Cell, granting you infinite warden souls');
 });

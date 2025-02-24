@@ -3,6 +3,7 @@ const $Chem = Java.loadClass('mekanism.common.registries.MekanismChemicals');
 const $SoulKey = Java.loadClass('com.buuz135.soulplied_energistics.applied.SoulKey');
 const $FluxKey = Java.loadClass('com.glodblock.github.appflux.common.me.key.FluxKey');
 const $EnergyType = Java.loadClass('com.glodblock.github.appflux.common.me.key.type.EnergyType');
+// const $ExperienceKey = Java.loadClass('es.degrassi.appexp.me.key.ExperienceKey');
 
 /**
  * Add Infinity Cells.
@@ -17,12 +18,13 @@ global.infCells = [
   // { id: 'minecraft:sand', type: 'item' },
   // { id: 'minecraft:gravel', type: 'item' },
   { id: 'minecraft:lava', type: 'fluid' },
-  // { id: 'minecraft:milk', type: 'fluid' },
-  // { id: 'justdirethings:xp_fluid_source', type: 'fluid' },
-  // { id: 'modern_industrialization:uu_matter', type: 'fluid' },
+  { id: 'minecraft:milk', type: 'fluid' },
+  { id: 'justdirethings:xp_fluid_source', type: 'fluid' },
+  { id: 'modern_industrialization:uu_matter', type: 'fluid' },
   // { id: 'nuclear_waste', type: 'chemical' },
-  // { id: 'soul', type: 'soul' },
-  // { id: 'flux', type: 'flux' },
+  { id: 'soul', type: 'soul' },
+  { id: 'flux', type: 'flux' },
+  // { id: 'experience', type: 'experience' },
 ];
 
 StartupEvents.registry('item', (e) => {
@@ -50,6 +52,9 @@ StartupEvents.registry('item', (e) => {
       case 'flux':
         cell.type(() => $FluxKey.of($EnergyType.FE));
         break;
+      // case 'experience':
+      //   cell.type(() => $ExperienceKey.KEY);
+      //   break;
       default:
         console.error(`Invalid type '${type}' for Infinity Cell with ID '${id}'`);
         break;
