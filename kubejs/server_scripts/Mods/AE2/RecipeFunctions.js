@@ -3,176 +3,124 @@
 //This file contains functions for making recipes for AE2 and its addons.
 
 let ae2GenRecipeID = (name, type) => {
-  name = name.split(":")[1];
+  if (name.includes('x ')) name = name.split('x ')[1];
+  if (name.includes(':')) name = name.split(':')[1];
   return `craftoria:ae2/${type}/${name}`;
 };
 
 /**
  * @author WhitePhantom
  * @description ExtendedAE Crystal Assembler recipe
- * @param {object} event The event object, usually `event`. Required.
- * @param {Array} iFluid The input fluid. [fluid, amount]. Optional.
- * @param {Array} iInput The input items. [[item, amount], [item, amount]..] or [item, amount]. Required. Max 9 items.
- * @param {Array} iOutput The output item. [item, amount]. Required.
+ * @param {$RecipesKubeEvent_} event The event object, usually `event`. Required.
+ * @param {$Fluid_} iFluid The input fluid. ex '1000x minecraft:water'. Optional.
+ * @param {$Ingredient_[]} iInput The input items. ['2x minecraft:cobblestone', '3x minecraft:dirt']. Required. Max 9 items.
+ * @param {$Item_} iOutput The output item. ex '4x minecraft:chest'. Required.
  */
 let exAssembler = (event, iFluid, iInput, iOutput) => {
   let recipe = {
-    type: "extendedae:crystal_assembler",
+    type: 'extendedae:crystal_assembler',
     input_items: [],
-    output: {}
+    output: Item.of(iOutput).toJson(),
   };
 
   if (iFluid) {
-    recipe.input_fluid = {
-      ingredient: { fluid: iFluid[0] },
-      amount: iFluid[1]
-    };
+    let fluid = iFluid.includes('x ') ? iFluid.split('x ')[1] : iFluid;
+    let amount = iFluid.includes('x ') ? parseInt(iFluid.split('x ')[0]) : 1000;
+    recipe.input_fluid = { amount: amount, ingredient: { fluid: fluid } };
   }
 
-  if (iInput[0].length) {
-    iInput.forEach(input => {
-      if (input[0].includes("#")) {
-        input[0] = input[0].replace("#", "");
-        recipe.input_items.push({
-          ingredient: { tag: input[0] },
-          amount: input[1]
-        });
-      } else {
-        recipe.input_items.push({
-          ingredient: { item: input[0] },
-          amount: input[1]
-        });
-      }
+  if (Array.isArray(iInput)) {
+    if (iInput.length > 9) {
+      console.error(`exAssembler: Too many inputs. Max 9 inputs.`);
+      console.error(`Output: ${iOutput}, Inputs: ${iInput}`);
+      return;
+    }
+
+    iInput.forEach((input) => {
+      let item = input.includes('x ') ? input.split('x ')[1] : input;
+      let amount = input.includes('x ') ? parseInt(input.split('x ')[0]) : 1;
+      if (item.includes('#')) recipe.input_items.push({ amount: amount, ingredient: { tag: item.replace('#', '') } });
+      else recipe.input_items.push({ amount: amount, ingredient: { item: item } });
     });
   } else {
-    if (iInput[0].includes("#")) {
-      iInput[0] = iInput[0].replace("#", "");
-      recipe.input_items.push({
-        ingredient: { tag: iInput[0] },
-        amount: iInput[1]
-      });
-    } else {
-      recipe.input_items.push({
-        ingredient: { item: iInput[0] },
-        amount: iInput[1]
-      });
-    }
+    let item = iInput.includes('x ') ? iInput.split('x ')[1] : iInput;
+    let amount = iInput.includes('x ') ? parseInt(iInput.split('x ')[0]) : 1;
+    if (item.includes('#')) recipe.input_items.push({ amount: amount, ingredient: { tag: item.replace('#', '') } });
+    else recipe.input_items.push({ amount: amount, ingredient: { item: item } });
   }
 
-  recipe.output = {
-    id: iOutput[0],
-    count: iOutput[1]
-  };
-
-  let recipeID = ae2GenRecipeID(iOutput[0], "assembler");
-
-  event.custom(recipe).id(recipeID);
+  event.custom(recipe).id(ae2GenRecipeID(iOutput, 'assembler'));
 };
 
 /**
  * @author WhitePhantom
  * @description ExtendedAE Cutter recipe
- * @param {object} event The event object, usually `event`. Required.
- * @param {String} iInput The input item. Required.
- * @param {String} iOutput The output item. Required.
+ * @param {$RecipesKubeEvent_} event The event object, usually `event`. Required.
+ * @param {$Ingredient_} iInput The input item. Required.
+ * @param {$Item_} iOutput The output item. Required.
  */
 let exCutter = (event, iInput, iOutput) => {
   let recipe = {
-    type: "extendedae:circuit_cutter",
+    type: 'extendedae:circuit_cutter',
     input: {
       ingredient: {},
-      amount: parseInt(iInput.split('x ')[0])
+      amount: iInput.includes('x ') ? parseInt(iInput.split('x ')[0]) : 1,
     },
-    output: Item.of(iOutput).toJson()
+    output: Item.of(iOutput).toJson(),
   };
 
-  iInput = iInput.split('x ')[1];
-  if (iInput.includes("#")) recipe.input.ingredient.tag = iInput.replace("#", "");
+  if (iInput.includes('x ')) iInput = iInput.split('x ')[1];
+  if (iInput.includes('#')) recipe.input.ingredient.tag = iInput.replace('#', '');
   else recipe.input.ingredient.item = iInput;
 
-
-  let recipeID = ae2GenRecipeID(iOutput.split('x ')[1], "cutter");
-
-  event.custom(recipe).id(recipeID);
+  event.custom(recipe).id(ae2GenRecipeID(iOutput, 'cutter'));
 };
 
 /**
  * @author WhitePhantom
  * @description ExtendedAE Fixer recipe
- * @param {object} event The event object, usually `event`. Required.
- * @param {String} fuel The fuel item. Required.
- * @param {String} input The input block. Required.
- * @param {String} output The output block. Required.
- * @param {Number} chance Not sure what this does.
+ * @param {$RecipesKubeEvent_} event The event object, usually `event`. Required.
+ * @param {$Item_} fuel The fuel item. Required.
+ * @param {$Item_} input The input block. Required.
+ * @param {$Item_} output The output block. Required.
+ * @param {integer} chance Chance of affecting the block. Optional. Default is 8000. 10000 is 100%.
  */
 let exFixer = (event, fuel, input, output, chance) => {
   let recipe = {
-    type: "extendedae:crytal_fixer",
+    type: 'extendedae:crytal_fixer',
     fuel: {},
     input: { id: input },
     output: { id: output },
-    chance: chance || 8000
+    chance: chance || 8000,
   };
 
-  if (fuel.includes("#")) {
-    recipe.fuel.ingredient.tag = fuel.replace("#", "");
-  } else {
-    recipe.fuel.ingredient.item = fuel;
-  }
+  if (fuel.includes('#')) recipe.fuel.ingredient.tag = fuel.replace('#', '');
+  else recipe.fuel.ingredient.item = fuel;
 
-  let recipeID = ae2GenRecipeID(output, "fixer");
-
-  event.custom(recipe).id(recipeID);
+  event.custom(recipe).id(ae2GenRecipeID(output, 'fixer'));
 };
 
 /**
  * @author WhitePhantom
  * @description AE2 Inscriber recipe
- * @param {object} event The event object, usually `event`. Required.
- * @param {String} iType The inscriber type. inscribe or press. Required.
- * @param {String} middle The middle item. Required.
- * @param {String} top The top item. Optional.
- * @param {String} bottom The bottom item. Optional.
- * @param {Array} output The output item, [item, amount]. Required.
+ * @param {$RecipesKubeEvent_} event The event object, usually `event`. Required.
+ * @param {$InscriberProcessType_} iType The inscriber type. inscribe or press. Required.
+ * @param {$Ingredient_} middle The middle item. Required.
+ * @param {$Ingredient_} top The top item. Optional.
+ * @param {$Ingredient_} bottom The bottom item. Optional.
+ * @param {$Item_} output The output item. Required.
  */
 let ae2Inscriber = (event, iType, middle, top, bottom, output) => {
   let recipe = {
     type: `ae2:inscriber`,
     mode: iType,
-    ingredients: {
-      middle: {}
-    },
-    result: {}
+    ingredients: {},
+    result: Item.of(output).toJson(),
   };
 
-  if (middle.includes("#")) {
-    recipe.ingredients.middle = { tag: middle.replace("#", "") };
-  } else {
-    recipe.ingredients.middle = { item: middle };
-  }
+  recipe.ingredients.middle = Ingredient.of(middle).toJson();
+  if (top) recipe.ingredients.top = Ingredient.of(top).toJson();
+  if (bottom) recipe.ingredients.bottom = Ingredient.of(bottom).toJson();
 
-  if (top) {
-    if (top.includes("#")) {
-      recipe.ingredients.top = { tag: top.replace("#", "") };
-    } else {
-      recipe.ingredients.top = { item: top };
-    }
-  }
-
-  if (bottom) {
-    if (bottom.includes("#")) {
-      recipe.ingredients.bottom = { tag: bottom.replace("#", "") };
-    } else {
-      recipe.ingredients.bottom = { item: bottom };
-    }
-  }
-
-  recipe.result = {
-    id: output[0],
-    count: output[1]
-  };
-
-  let recipeID = ae2GenRecipeID(output[0], iType);
-
-  event.custom(recipe).id(recipeID);
+  event.custom(recipe).id(ae2GenRecipeID(output, iType));
 };
