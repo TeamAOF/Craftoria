@@ -159,6 +159,9 @@ ServerEvents.generateData('after_mods', (e) => {
           spawn_types: ['command'],
         },
       ],
+      constraints: {
+        dimensions: ['ae2:spatial_storage'],
+      },
     },
     attributes: [
       {
@@ -269,8 +272,8 @@ ServerEvents.generateData('after_mods', (e) => {
     bossData.entity = boss.entity;
     bossData.size = boss.size;
 
-    if (boss.spawn_conditions) bossData.basic_data.spawn_conditions = boss.spawn_conditions;
-    else bossData.basic_data.spawn_conditions = bomdTemplate.spawn_conditions;
+    bossData.basic_data.spawn_conditions = bomdTemplate.spawn_conditions;
+    bossData.basic_data.constraints = bomdTemplate.basic_data.constraints;
     if (boss.attributes) bossData.stats['apotheosis:mythic'].attribute_modifiers = boss.attributes;
     else bossData.stats['apotheosis:mythic'].attribute_modifiers = bomdTemplate.attributes;
     if (boss.effects) bossData.stats['apotheosis:mythic'].effects = boss.effects;
