@@ -131,6 +131,25 @@ ServerEvents.recipes((e) => {
     C: '#c:plastics',
   }).id('mekanism:cardboard_box');
 
+  // Replica
+  e.custom({
+    "type": "mekanism:nucleosynthesizing",
+    "chemical_input": {
+      "amount": 50,
+      "chemical": "craftoria:quantum_infusion"
+    },
+    "duration": 1000,
+    "item_input": {
+      "count": 1,
+      "item": "replication:raw_replica"
+    },
+    "output": {
+      "count": 1,
+      "id": "replication:replica_ingot"
+    },
+    "per_tick_usage": false
+    }),
+
   // MekaSuit / Weapons
   e.shaped('mekaweapons:katana_blade', ['  B', 'CB ', 'AC '], {
     A: '#c:ingots/steel',

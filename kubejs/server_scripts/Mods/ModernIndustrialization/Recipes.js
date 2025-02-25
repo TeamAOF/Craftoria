@@ -40,6 +40,9 @@ ServerEvents.recipes((e) => {
     e.replaceInput({mod: 'modern_industrialization'}, `#c:gears/${material}`, `modern_industrialization:${material}_gear`);
   });
 
+  e.remove({output: 'replication:replica_ingot'});
+  miElectrolyzer(e, ['advanced_ae:quantum_infusion_source', 200], ['replication:raw_replica', 1], null, ['replication:replica_ingot', 1], 8, 60)
+
   let cuttingMachine = (output, input) => {
     e.recipes.modern_industrialization
       .cutting_machine(2, 100)
