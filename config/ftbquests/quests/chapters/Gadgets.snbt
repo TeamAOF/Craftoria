@@ -325,7 +325,7 @@
 			y: -6.0d
 		}
 	]
-	order_index: 7
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
@@ -1052,6 +1052,83 @@
 				type: "item"
 			}]
 			x: -2.0d
+			y: -6.0d
+		}
+		{
+			id: "71B6DA56399050E1"
+			rewards: [{
+				id: "0EEC0A7AAA4735ED"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "2DD128CF491C799C"
+				item: { count: 1, id: "shrink:shrinking_device" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			id: "18416E8B02E02817"
+			rewards: [{
+				id: "7212A15C195E4C44"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "3EAC475D6EE10260"
+				item: { count: 1, id: "pylons:harvester_pylon" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -7.0d
+		}
+		{
+			id: "0E8B36B67840AADD"
+			rewards: [{
+				id: "522452B5A5609057"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0A13CC3B2B6A5525"
+				item: { count: 1, id: "pylons:expulsion_pylon" }
+				type: "item"
+			}]
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			id: "3B429F0556B85DF0"
+			rewards: [{
+				id: "5A025A20DD8FD11A"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "265BD532C3036CF7"
+				item: { count: 1, id: "pylons:interdiction_pylon" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			id: "7E194859BAD7B5A8"
+			rewards: [{
+				id: "70F2507BA8495C95"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0CE033E06E31FE63"
+				item: { count: 1, id: "pylons:infusion_pylon" }
+				type: "item"
+			}]
+			x: -5.0d
 			y: -6.0d
 		}
 	]

@@ -2,9 +2,9 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "Utility"
-	group: ""
+	group: "04696DE4EC4D4A94"
 	icon: {
-		id: "pipez:wrench"
+		id: "pipez:item_pipe"
 	}
 	id: "5BF964A2F3CAA6E8"
 	images: [
@@ -318,89 +318,9 @@
 			y: 1.6d
 		}
 	]
-	order_index: 4
+	order_index: 2
 	quest_links: [ ]
 	quests: [
-		{
-			dependencies: ["18416E8B02E02817"]
-			id: "0E8B36B67840AADD"
-			rewards: [{
-				id: "522452B5A5609057"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "0A13CC3B2B6A5525"
-				item: { count: 1, id: "pylons:expulsion_pylon" }
-				type: "item"
-			}]
-			x: -1.75d
-			y: 4.5d
-		}
-		{
-			dependencies: ["3B429F0556B85DF0"]
-			id: "7E194859BAD7B5A8"
-			rewards: [{
-				id: "70F2507BA8495C95"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "0CE033E06E31FE63"
-				item: { count: 1, id: "pylons:infusion_pylon" }
-				type: "item"
-			}]
-			x: 1.75d
-			y: 4.5d
-		}
-		{
-			id: "18416E8B02E02817"
-			rewards: [{
-				id: "7212A15C195E4C44"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			size: 2.0d
-			tasks: [{
-				id: "3EAC475D6EE10260"
-				item: { count: 1, id: "pylons:harvester_pylon" }
-				type: "item"
-			}]
-			x: -3.5d
-			y: 4.5d
-		}
-		{
-			dependencies: ["0E8B36B67840AADD"]
-			id: "3B429F0556B85DF0"
-			rewards: [{
-				id: "5A025A20DD8FD11A"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "265BD532C3036CF7"
-				item: { count: 1, id: "pylons:interdiction_pylon" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.5d
-		}
-		{
-			id: "71B6DA56399050E1"
-			rewards: [{
-				id: "0EEC0A7AAA4735ED"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			size: 2.0d
-			tasks: [{
-				id: "2DD128CF491C799C"
-				item: { count: 1, id: "shrink:shrinking_device" }
-				type: "item"
-			}]
-			x: 3.5d
-			y: 4.5d
-		}
 		{
 			hide_dependent_lines: true
 			id: "37AC7F3340783FD3"
