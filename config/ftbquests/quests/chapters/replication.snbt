@@ -9,43 +9,43 @@
 	id: "679ED31B5B1D91DA"
 	images: [
 		{
-			height: 2.0d
+			height: 1.8d
 			image: "ftbquests:textures/gui/replication.png"
-			order: 3
+			order: 100
 			rotation: 0.0d
 			width: 10.0d
-			x: 0.0d
-			y: -3.0d
+			x: -8.75d
+			y: 0.0d
 		}
 		{
-			color: 8533911
+			color: 11141290
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/ender.png"
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.0d
-			y: 1.5d
+			x: -5.0d
+			y: -3.25d
 		}
 		{
-			color: 4444519
+			color: 43520
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/earth.png"
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
 			x: -5.0d
-			y: -3.5d
+			y: 3.25d
 		}
 		{
-			color: 14408247
+			color: 5592575
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/living.png"
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: 1.0d
-			y: 1.5d
+			x: -12.5d
+			y: 3.25d
 		}
 		{
 			color: 13882323
@@ -54,75 +54,155 @@
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: -5.0d
-			y: -2.5d
+			x: -12.5d
+			y: -3.25d
 		}
 		{
-			color: 16761859
+			color: 16777045
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/nether.png"
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: 5.0d
-			y: -2.5d
+			x: -7.5d
+			y: -3.25d
 		}
 		{
-			color: 12149272
+			color: 16755200
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/organic.png"
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.0d
-			y: 3.5d
+			x: -10.0d
+			y: 3.25d
 		}
 		{
-			color: 1764351
+			color: 43690
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/precious.png"
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: 5.0d
-			y: -3.5d
+			x: -10.25d
+			y: -3.25d
 		}
 		{
-			color: 16712636
+			color: 11141120
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/quantum.png"
 			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: 1.0d
-			y: 3.5d
+			x: -7.25d
+			y: 3.25d
 		}
 		{
-			height: 4.0d
-			image: "replication:block/replica_ore"
-			rotation: 0.0d
-			width: 17.0d
-			x: -0.5d
-			y: -3.0d
-		}
-		{
-			alpha: 32
-			color: 0
-			height: 40.0d
-			image: "ftbquests:textures/shapes/square/shape.png"
-			order: 1
-			rotation: 0.0d
-			width: 40.0d
-			x: 0.0d
-			y: 1.5d
-		}
-		{
+			color: 11184810
 			height: 10.0d
 			image: "extendedae:block/assembler_matrix/frame_block_on"
 			rotation: 0.0d
 			width: 10.0d
 			x: 0.0d
-			y: 2.5d
+			y: 0.0d
+		}
+		{
+			color: 5635925
+			dev: true
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/shape.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			alpha: 32
+			color: 5000268
+			height: 3.0d
+			image: "ftbquests:textures/gui/replication.png"
+			order: 70
+			rotation: 0.0d
+			width: 9.0d
+			x: -9.75d
+			y: -1.5d
+		}
+		{
+			alpha: 32
+			color: 5000268
+			height: 3.0d
+			image: "ftbquests:textures/gui/replication.png"
+			order: 70
+			rotation: 0.0d
+			width: 9.0d
+			x: -9.75d
+			y: 1.25d
+		}
+		{
+			alpha: 96
+			color: 8947848
+			height: 1.8d
+			image: "ftbquests:textures/gui/replication.png"
+			order: 90
+			rotation: 0.0d
+			width: 10.0d
+			x: -8.75d
+			y: 0.5d
+		}
+		{
+			alpha: 96
+			color: 8947848
+			height: 1.8d
+			image: "ftbquests:textures/gui/replication.png"
+			order: 90
+			rotation: 0.0d
+			width: 10.0d
+			x: -8.75d
+			y: -0.5d
+		}
+		{
+			alpha: 64
+			color: 8947848
+			height: 1.8d
+			image: "ftbquests:textures/gui/replication.png"
+			order: 90
+			rotation: 0.0d
+			width: 10.0d
+			x: -8.75d
+			y: 1.0d
+		}
+		{
+			alpha: 64
+			color: 8947848
+			height: 1.8d
+			image: "ftbquests:textures/gui/replication.png"
+			order: 90
+			rotation: 0.0d
+			width: 10.0d
+			x: -8.75d
+			y: -1.0d
+		}
+		{
+			alpha: 32
+			color: 8947848
+			height: 1.8d
+			image: "ftbquests:textures/gui/replication.png"
+			order: 90
+			rotation: 0.0d
+			width: 10.0d
+			x: -8.75d
+			y: 1.5d
+		}
+		{
+			alpha: 64
+			color: 8947848
+			height: 1.8d
+			image: "ftbquests:textures/gui/replication.png"
+			order: 90
+			rotation: 0.0d
+			width: 10.0d
+			x: -8.75d
+			y: -1.5d
 		}
 	]
 	order_index: 1
@@ -138,7 +218,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4513758183EFECE7"]
@@ -149,7 +229,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4513758183EFECE7"]
@@ -160,7 +240,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7FCA9352AF05C235"]
@@ -171,7 +251,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["44ABC5C2552BF034"]
@@ -182,7 +262,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["7FCA9352AF05C235"]
@@ -193,7 +273,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7FCA9352AF05C235"]
@@ -204,7 +284,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4513758183EFECE7"]
@@ -215,7 +295,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["24A9E9A5E3B7B041"]
@@ -226,7 +306,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 4.5d
+			y: 2.0d
 		}
 	]
 }
