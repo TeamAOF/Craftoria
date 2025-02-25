@@ -17,13 +17,15 @@
 	chapter.42032FCAB6197EE7.title: "&cArmory"
 	chapter.4551BA86097AB1B5.title: "&2Agriculture"
 	chapter.5A3894BACC5E8994.title: "Theurgy"
-	chapter.5BF964A2F3CAA6E8.title: "&9Utilities"
+	chapter.5BF964A2F3CAA6E8.title: "Transportation"
+	chapter.679ED31B5B1D91DA.title: "Replication"
 	chapter.6A5B4531418CC297.title: "Modern Industrialization"
 	chapter.70FFEE37C7ABD690.title: "Applied Energistics"
 	chapter.7269FD2B5B0F0424.title: "Occultism"
 	chapter.75719C45F41E8B00.title: "Dimensions"
 	chapter.7B329826EADF9720.title: "&eGadgets"
 	chapter_group.01BEAD68B1D370D3.title: "&8&lMagic&r &d✡"
+	chapter_group.04696DE4EC4D4A94.title: "&8&lLogistics &b모"
 	chapter_group.066C799B2F5452CD.title: "&8&lTechnology&r &e⚡"
 	chapter_group.07A79347BA55DCA4.title: "&8&lAdventure&r &a🗡"
 	chapter_group.124F40AB6DD8433B.title: "Storage"
@@ -1224,6 +1226,14 @@
 		"You will want a decent supply of it."
 	]
 	quest.1CD1F5A08AE6E557.quest_subtitle: "Sparkling in the depths"
+	quest.1CD404EA948FF868.quest_desc: [
+		"Using this &bmachine&r you will &6transform&r any item with matter values into &dMatter."
+		""
+		"You'll notice when &6hovering&r certain items, they'll have &9Matter Values&r added to them."
+		""
+		"The exact values can be viewed by holding the &6Shift&r key while hovering said item."
+	]
+	quest.1CD404EA948FF868.quest_subtitle: "Transforms items into &dMatter"
 	quest.1D249BAAD819E83F.quest_desc: [
 		"This machine &6converts&r &bForge Energy&r (&9compatible with RF and many other mods’ energy&r) into &7compressed air&r. "
 		""
@@ -1597,6 +1607,12 @@
 	]
 	quest.24A4F1AA0BFFE867.quest_subtitle: "It's Getting &cHot&r In Here"
 	quest.24A4F1AA0BFFE867.title: "Electric Blast Furnace"
+	quest.24A9E9A5E3B7B041.quest_desc: [
+		"The &aIdentification Chamber&r will &6scan&r items to know their matter values and store them into &cchips&r. "
+		""
+		"Those &cChips&r can be stored in the &bChip Storage&r and will be available to the network."
+	]
+	quest.24A9E9A5E3B7B041.quest_subtitle: "Passport Please!"
 	quest.24AE78EE11D2AFFD.title: "Shards"
 	quest.24B44DAA8C43CF11.quest_desc: [
 		"The &bConfigurator&r works as not only a wrench, but a tool to &6configure&r just about any type of &ainput and &coutput&r."
@@ -1740,6 +1756,8 @@
 	]
 	quest.28A35996DE62CFA0.quest_subtitle: "Bigger storage \\& Wireless"
 	quest.28A35996DE62CFA0.title: "Only 10k? Where wireless?"
+	quest.28EB489B44A05070.quest_desc: ["&aReplicators&r will use the &dMatter&r stored in tanks to replicate the item from scratch and send it back to the &bterminal&r."]
+	quest.28EB489B44A05070.quest_subtitle: "Uses matter stored to create items."
 	quest.2909AE63FA355344.quest_desc: [
 		"Some &bquests&r will have &bT3 Codex&r &8(Ancient Codex Entry)&r reward."
 		""
@@ -2977,6 +2995,7 @@
 		"Ready to be an occultist?"
 	]
 	quest.448D7A215A175817.quest_subtitle: "Rituals and Spirits"
+	quest.44ABC5C2552BF034.quest_subtitle: "Stores matter for the &aDisintegrator"
 	quest.44B09234621BDBA6.quest_desc: ["This &6special&r &bpickaxe,&r while very &6brittle&r, will allow you to &6harvest&r Otherworld materials, such as &bIesnium&r, more effectively."]
 	quest.44B09234621BDBA6.quest_subtitle: "Demon's Dream Pickaxe"
 	quest.44D8D30BCD48C4C9.quest_desc: [
@@ -2986,6 +3005,13 @@
 	]
 	quest.44D8D30BCD48C4C9.title: "Elite Control Circuit"
 	quest.45013F74F5B4A93E.quest_desc: ["This Rod can locate &9Rare&r materials."]
+	quest.4513758183EFECE7.quest_desc: [
+		"&aReplication&r is a tech mod that allows you to &6replicate&r resources of similar types. "
+		""
+		"You can transform &edirt&r to &8stone&r but you can't transform &edirt&r to &bdiamonds&r."
+	]
+	quest.4513758183EFECE7.quest_subtitle: "Turn &dMatter&r into nearly anything."
+	quest.4513758183EFECE7.title: "&aReplication!"
 	quest.45138985A0F5164C.quest_desc: [
 		"The &bJetpack&r uses &7Hydrogen&r to allow you to fly. "
 		""
@@ -3173,6 +3199,7 @@
 		"Every time you eat &dPaste&r, it takes up &9128mb&r, no matter how much of the hunger bar it fills."
 	]
 	quest.478A6A8ADA223AEF.title: "Canteen"
+	quest.47A87F0901355498.quest_subtitle: "Used to store &cChips"
 	quest.47A8E5DC11E846C5.quest_desc: [
 		"  Before you can even make &bBronze&r, you'll need to put together a &b&oForge Hammer&r. It's pretty much a bigger &bAnvil&r, but it's just got a flat top so you won't be able to use it as an anvil."
 		""
@@ -4176,6 +4203,7 @@
 	quest.6385DB0FFD411ECB.quest_desc: ["The &bIron Stick&f does the same things, but with a block &6place&f maximum of 27 blocks."]
 	quest.6387004E98403CCE.quest_desc: ["The &bChemical Crystallizer&r uses &dpurified ore slurry&r and &9crystallizes&r it into crystals."]
 	quest.6387004E98403CCE.title: "Chemical Crystallizer"
+	quest.6392FB264D1B2E52.quest_subtitle: "Used within the &aIdentification Chamber"
 	quest.63B54338B8D5823B.quest_desc: [
 		"The &bColor Applicator can be used to &6paint&b colorable blocks&f, which include cables, wool, terracotta, glass, concrete and anything else you can think of&f. Use&b Paintballs or Specific Dyes&b to &6paint &fand &bsnowballs&6 to clean off the paint&f. Use the &bCharger&f to charge the Applicator."
 		""
@@ -4629,6 +4657,31 @@
 		"{image:justdirethings:item/portal_fluid_catalyst width:100 height:100 align:center}"
 	]
 	quest.6B275A372AE020A8.quest_subtitle: "More Fluidics"
+	quest.6B5431B3A107C9D5.quest_desc: [
+		"Once you have scanned some items and stored their values into &cchips&r you can use the &aReplication Terminal&r to &6request items&r. "
+		""
+		"With a request created &aReplicators&r will use the &dMatter&r stored in tanks to replicate the item from scratch and send it back to the &aterminal&r."
+		""
+		"{@pagebreak}"
+		""
+		"&dMatter&aOpedia&r is a searcheable list that will allow you to &6search&r what items have a specific &dMatter Value&r. "
+		""
+		"You can access using the button on the &9left&r of the &bSearch Bar&r in the &aReplication Terminal&r screen, you can also access it by clicking on the matter displays on the &9right&r of the terminal."
+		""
+		"In the search bar of the &dMatter&aOpedia&r you can use:"
+		""
+		"&l*&r &aearth>10&r will show all the items that have more than 10 earth"
+		""
+		"&l*&r &4nether=20&r will show all the items that have exactly 20 nether"
+		""
+		"&l*&r &dquantum<6&r will show all the items that have less than 6 quantum"
+		""
+		"&l*&r &2!earth&r will show all the items that don't have earth"
+		""
+		"&l*&r &7*metallic&r will show all the items that only have metallic"
+	]
+	quest.6B5431B3A107C9D5.quest_subtitle: "The interface of all operations."
+	quest.6B5431B3A107C9D5.title: "Replication Terminal"
 	quest.6B61D20396D57CB8.quest_desc: ["When a &bDiamond&r is &6thrown&r into &5Spiritfire&r, it becomes a Spirit Attuned Gem. You may need several."]
 	quest.6B61D20396D57CB8.quest_subtitle: "A thousand spirits in its facets"
 	quest.6BD625E5CA469914.quest_desc: [
@@ -5425,8 +5478,26 @@
 		"You can make &2biofuel&r by &6crushing down&r almost any &borganic based material&r."
 	]
 	quest.7FC6AE9DB7C1DA52.title: "Bio-Generator"
+	quest.7FCA9352AF05C235.quest_desc: [
+		"These pipes will &6automate&r some processes:"
+		""
+		"Transfer &6Power&r: "
+		"- They work like any other &bPower Pipe&r."
+		""
+		"Transfer &dMatter&r: "
+		"- From the &bDisintegrator&r to &bMatter Tanks&r "
+		""
+		"- From &d&lMatter Tanks&r to other &bmachines&r that need it."
+	]
+	quest.7FCA9352AF05C235.quest_subtitle: "Matter pipes will allow you to connect &aReplication&r machines."
 	quest.7FD0A63CDC267251.quest_desc: ["The number of entities spawned at once."]
 	quest.7FD0A63CDC267251.quest_subtitle: "+1 Spawn Count"
+	quest.7FD2368444636E93.quest_desc: [
+		"The Blacksmith can &6upgrade&r other &boccult familiars&r."
+		""
+		"It can also &6repair&r your &bequipment&r as you mine stone."
+	]
+	quest.7FD2368444636E93.quest_subtitle: "Enhance"
 	quest.7FD5FCEFE3697A7C.quest_desc: [
 		"For only a &omeasly&r &e8EU/t&r, the &bSteam Farmer&r can perform the following things:"
 		"- &6Tilling&r: When enabled, dirt blocks will be turned into farmland. This will not work unless water is supplied."
@@ -5434,12 +5505,6 @@
 		"- &6Harvesting&r: When there is enough output space provided, it will harvest fully grown crops and trees."
 		"- &6Plating&r: When supplied with crops or saplings, it will plant them on valid soil. Using different plating modes will plant them in different arrangements."
 	]
-	quest.7FD2368444636E93.quest_desc: [
-		"The Blacksmith can &6upgrade&r other &boccult familiars&r."
-		""
-		"It can also &6repair&r your &bequipment&r as you mine stone."
-	]
-	quest.7FD2368444636E93.quest_subtitle: "Enhance"
 	quest.7FD5FCEFE3697A7C.quest_subtitle: "What did the baby &ecorn&r say to the mama &ecorn&r?"
 	quest.7FEBDFAE021B3C56.quest_desc: ["Useful for &oreally&r big crafts."]
 	quest.7FEBDFAE021B3C56.title: "Mega Crafting Storage"

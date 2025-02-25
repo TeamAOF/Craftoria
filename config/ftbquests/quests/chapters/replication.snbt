@@ -1,0 +1,229 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "replication"
+	group: "04696DE4EC4D4A94"
+	icon: {
+		id: "replication:replicator"
+	}
+	id: "679ED31B5B1D91DA"
+	images: [
+		{
+			height: 2.0d
+			image: "ftbquests:textures/gui/replication.png"
+			order: 1
+			rotation: 0.0d
+			width: 10.0d
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			color: 8533911
+			height: 1.0d
+			image: "replication:textures/gui/mattertypes/ender.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			color: 3899689
+			height: 1.0d
+			image: "replication:textures/gui/mattertypes/earth.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			color: 14408247
+			height: 1.0d
+			image: "replication:textures/gui/mattertypes/living.png"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			color: 13882323
+			height: 1.0d
+			image: "replication:textures/gui/mattertypes/metallic.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			color: 16760097
+			height: 1.0d
+			image: "replication:textures/gui/mattertypes/nether.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			color: 12149272
+			height: 1.0d
+			image: "replication:textures/gui/mattertypes/organic.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.5d
+			y: -3.0d
+		}
+		{
+			color: 1764351
+			height: 1.0d
+			image: "replication:textures/gui/mattertypes/precious.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			color: 16712636
+			height: 1.0d
+			image: "replication:textures/gui/mattertypes/quantum.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			height: 4.0d
+			image: "replication:block/replica_ore"
+			order: -1
+			rotation: 0.0d
+			width: 17.0d
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			height: 25.0d
+			image: "modern_industrialization:block/quantum_machine_hull"
+			order: -2
+			rotation: 0.0d
+			width: 25.0d
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			alpha: 64
+			color: 0
+			height: 50.0d
+			image: "ftbquests:textures/shapes/square/background.png"
+			order: -2
+			rotation: 0.0d
+			width: 50.0d
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4513758183EFECE7"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "5CE91954DFF75831"
+				item: { count: 1, id: "replication:replica_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4513758183EFECE7"]
+			id: "7FCA9352AF05C235"
+			tasks: [{
+				id: "2856DD2FD071B536"
+				item: { count: 1, id: "replication:matter_network_pipe" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4513758183EFECE7"]
+			id: "6B5431B3A107C9D5"
+			tasks: [{
+				id: "6C9982EC3856DBEC"
+				item: { count: 1, id: "replication:replication_terminal" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7FCA9352AF05C235"]
+			id: "28EB489B44A05070"
+			tasks: [{
+				id: "734F9AFA37832572"
+				item: { count: 1, id: "replication:replicator" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["44ABC5C2552BF034"]
+			id: "1CD404EA948FF868"
+			tasks: [{
+				id: "2E7F87BD8F1928F3"
+				item: { count: 1, id: "replication:disintegrator" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7FCA9352AF05C235"]
+			id: "24A9E9A5E3B7B041"
+			tasks: [{
+				id: "37DB97220E6A4659"
+				item: { count: 1, id: "replication:identification_chamber" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7FCA9352AF05C235"]
+			id: "44ABC5C2552BF034"
+			tasks: [{
+				id: "1EE1897F01AC823C"
+				item: { count: 1, id: "replication:matter_tank" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4513758183EFECE7"]
+			id: "6392FB264D1B2E52"
+			tasks: [{
+				id: "2D476A44C540026B"
+				item: { count: 1, id: "replication:memory_chip" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["24A9E9A5E3B7B041"]
+			id: "47A87F0901355498"
+			tasks: [{
+				id: "15D9D30EE02F65B1"
+				item: { count: 1, id: "replication:chip_storage" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+	]
+}
