@@ -121,6 +121,7 @@ ServerEvents.recipes((e) => {
   oxidizing('200x craftoria:plutonium_oxide', '#c:ingots/plutonium');
   chem_infuser('400x mekanism:uranium_hexafluoride', '399x mekanism:hydrofluoric_acid', '1x craftoria:plutonium_oxide');
 
+  rotary('craftoria:quantum_infusion', 'advanced_ae:quantum_infusion_source');
   // Shaped
 
   // Cardboard Box

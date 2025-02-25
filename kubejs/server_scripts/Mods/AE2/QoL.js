@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
     200
   );
   mekCrush('extendedae:entro_dust', '#c:gems/entro').id('craftoria:mekanism/crushing/entro_dust');
-  exCutter(event, '1x extendedae:silicon_block', '9x ae2:printed_silicon');
+  exCutter(event, 'extendedae:silicon_block', '9x ae2:printed_silicon');
 
   //Megacells compat
   miPacker(
@@ -151,32 +151,27 @@ ServerEvents.recipes((event) => {
     event,
     null,
     [
-      ['ae2:calculation_processor_press', 1],
-      ['ae2:engineering_processor_press', 1],
-      ['ae2:logic_processor_press', 1],
-      ['ae2:silicon_press', 1],
-      ['extendedae:concurrent_processor_press', 1],
-      ['advanced_ae:quantum_processor_press', 1],
-      ['megacells:accumulation_processor_press', 1],
-      ['appflux:energy_processor_press', 1],
+      'ae2:calculation_processor_press',
+      'ae2:engineering_processor_press',
+      'ae2:logic_processor_press',
+      'ae2:silicon_press',
+      'extendedae:concurrent_processor_press',
+      'advanced_ae:quantum_processor_press',
+      'megacells:accumulation_processor_press',
+      'appflux:energy_processor_press',
     ],
-    ['craftoria:universal_press', 1]
+    'craftoria:universal_press'
   );
 
-  event.remove({output: 'extendedae:circuit_cutter'});
+  event.remove({ output: 'extendedae:circuit_cutter' });
   exAssembler(
     event,
     null,
-    [
-      ['extendedae:machine_frame', 1],
-      ['ae2:engineering_processor', 8],
-      ['craftoria:universal_press', 1],
-      ['minecraft:stonecutter', 1],
-    ],
-    ['extendedae:circuit_cutter', 1]
+    ['extendedae:machine_frame', '8x ae2:engineering_processor', 'craftoria:universal_press', 'minecraft:stonecutter'],
+    'extendedae:circuit_cutter'
   );
 
-  exCutter(event, '1x craftoria:1x_compressed_iron_block', '1x craftoria:universal_press');
+  exCutter(event, 'craftoria:1x_compressed_iron_block', '1x craftoria:universal_press');
 
   event.shapeless('4x ae2:crafting_accelerator', 'bigger_ae2:4_core_crafting_accelerator');
   event.shapeless('4x bigger_ae2:4_core_crafting_accelerator', 'bigger_ae2:16_core_crafting_accelerator');

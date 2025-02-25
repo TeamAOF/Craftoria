@@ -153,16 +153,15 @@ ServerEvents.generateData('after_mods', (e) => {
 
   let bomdTemplate = {
     basic_data: {
-      exclusions: [
+      spawn_conditions: [
         {
-          type: 'apotheosis:surface_type',
-          rule: 'needs_sky',
-        },
-        {
-          type: 'apotheosis:surface_type',
-          rule: 'cannot_see_sky',
+          type: 'apotheosis:spawn_type',
+          spawn_types: ['command'],
         },
       ],
+      constraints: {
+        dimensions: ['ae2:spatial_storage'],
+      },
     },
     attributes: [
       {
@@ -272,7 +271,9 @@ ServerEvents.generateData('after_mods', (e) => {
     bossData.basic_data.name = boss.name;
     bossData.entity = boss.entity;
     bossData.size = boss.size;
-    bossData.basic_data.exclusions = bomdTemplate.basic_data.exclusions;
+
+    bossData.basic_data.spawn_conditions = bomdTemplate.spawn_conditions;
+    bossData.basic_data.constraints = bomdTemplate.basic_data.constraints;
     if (boss.attributes) bossData.stats['apotheosis:mythic'].attribute_modifiers = boss.attributes;
     else bossData.stats['apotheosis:mythic'].attribute_modifiers = bomdTemplate.attributes;
     if (boss.effects) bossData.stats['apotheosis:mythic'].effects = boss.effects;

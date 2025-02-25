@@ -3,6 +3,7 @@ const $Chem = Java.loadClass('mekanism.common.registries.MekanismChemicals');
 const $SoulKey = Java.loadClass('com.buuz135.soulplied_energistics.applied.SoulKey');
 const $FluxKey = Java.loadClass('com.glodblock.github.appflux.common.me.key.FluxKey');
 const $EnergyType = Java.loadClass('com.glodblock.github.appflux.common.me.key.type.EnergyType');
+// const $ExperienceKey = Java.loadClass('es.degrassi.appexp.me.key.ExperienceKey');
 
 /**
  * Add Infinity Cells.
@@ -19,10 +20,11 @@ global.infCells = [
   { id: 'minecraft:lava', type: 'fluid' },
   // { id: 'minecraft:milk', type: 'fluid' },
   // { id: 'justdirethings:xp_fluid_source', type: 'fluid' },
-  // { id: 'modern_industrialization:uu_matter', type: 'fluid' },
+  { id: 'modern_industrialization:uu_matter', type: 'fluid' },
   // { id: 'nuclear_waste', type: 'chemical' },
-  // { id: 'soul', type: 'soul' },
-  // { id: 'flux', type: 'flux' },
+  { id: 'soul', type: 'soul' },
+  { id: 'flux', type: 'flux' },
+  // { id: 'experience', type: 'experience' },
 ];
 
 StartupEvents.registry('item', (e) => {
@@ -50,6 +52,9 @@ StartupEvents.registry('item', (e) => {
       case 'flux':
         cell.type(() => $FluxKey.of($EnergyType.FE));
         break;
+      // case 'experience':
+      //   cell.type(() => $ExperienceKey.KEY);
+      //   break;
       default:
         console.error(`Invalid type '${type}' for Infinity Cell with ID '${id}'`);
         break;
@@ -57,6 +62,11 @@ StartupEvents.registry('item', (e) => {
   };
 
   e.create('craftoria:infinity_cell_housing');
+
+  e.create('craftoria:dummy_warden_imprisonment', 'occultism:ritual_dummy')
+    .pentacleType('craft')
+    .displayName('Ritual: Imprisonment of the Warden')
+    .ritualTooltip('A ritual to imprison the Warden in an Infinity Cell, granting you infinite warden souls');
 
   global.infCells.forEach((cell) => createInfCell(cell.id, cell.type));
 });

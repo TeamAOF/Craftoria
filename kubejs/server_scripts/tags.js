@@ -128,6 +128,7 @@ ServerEvents.tags('fluid', (e) => {
   e.add('c:fuels/crude_oil', 'modern_industrialization:crude_oil');
 
   e.add('c:antimatter', 'craftoria:antimatter');
+  e.add('c:quantum_infusion_source', 'advanced_ae:quantum_infusion_source');
 });
 
 ServerEvents.tags('entity_type', (e) => {
@@ -135,10 +136,10 @@ ServerEvents.tags('entity_type', (e) => {
 
   e.add('mob_grinding_utils:no_swab', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/]);
 
-  e.add("industrialforegoing:mob_crusher_blacklist", [
-    "bosses_of_mass_destruction:obsidilith", 
-    "bosses_of_mass_destruction:lich", 
-    "bosses_of_mass_destruction:gauntlet", 
-    "bosses_of_mass_destruction:void_blossom"
+  e.add('industrialforegoing:mob_crusher_blacklist', [
+    'bosses_of_mass_destruction:obsidilith',
+    'bosses_of_mass_destruction:lich',
+    'bosses_of_mass_destruction:gauntlet',
+    'bosses_of_mass_destruction:void_blossom',
   ]);
 });
