@@ -135,7 +135,7 @@ ServerEvents.recipes((e) => {
   e.custom({
     "type": "mekanism:nucleosynthesizing",
     "chemical_input": {
-      "amount": 50,
+      "amount": 200,
       "chemical": "craftoria:quantum_infusion"
     },
     "duration": 1000,
