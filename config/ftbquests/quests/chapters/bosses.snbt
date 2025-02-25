@@ -1,0 +1,238 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bosses"
+	group: "07A79347BA55DCA4"
+	icon: {
+		id: "cataclysm:flame_eye"
+	}
+	id: "216D532684E20496"
+	images: [
+		{
+			height: 5.0d
+			image: "cataclysm:textures/entity/flame_strike_sigil.png"
+			order: -1
+			rotation: 0.0d
+			width: 5.0d
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			height: 1.25d
+			image: "ftbquests:textures/gui/cataclysm.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			height: 13.0d
+			image: "cataclysm:textures/entity/leviathan/dimensional_rift/dimensional_rift_grow_3.png"
+			order: -2
+			rotation: 0.0d
+			width: 13.0d
+			x: -1.0d
+			y: -0.75d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "cataclysm:flame_eye"
+			}
+			icon_scale: 2.0d
+			id: "63EC4C04DD5C0CA6"
+			rewards: [{
+				id: "454C00D4D0BE4002"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:ignis"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:ignis"
+				id: "51CC091941106CFA"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.25d
+			y: -2.25d
+		}
+		{
+			icon: {
+				id: "cataclysm:desert_eye"
+			}
+			icon_scale: 2.0d
+			id: "56723AEFD93C17F1"
+			rewards: [{
+				id: "4FEB0192B145B72E"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:remnant"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:ancient_remnant"
+				id: "19BD8D922F4A8FE7"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.15d
+			y: 1.25d
+		}
+		{
+			icon: {
+				id: "cataclysm:abyss_eye"
+			}
+			icon_scale: 2.0d
+			id: "0012F8780D9172DE"
+			rewards: [{
+				id: "1009829D5030C019"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:leviathan"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:the_leviathan"
+				id: "2AC6D58DC583066B"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.75d
+			y: -4.5d
+		}
+		{
+			icon: {
+				id: "cataclysm:mech_eye"
+			}
+			icon_scale: 2.0d
+			id: "5DBFD3F917C4E49C"
+			rewards: [{
+				id: "11C9A15666DB5F20"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:harbinger"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:the_harbinger"
+				id: "7053663FC510667A"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.0d
+			y: 2.75d
+		}
+		{
+			icon: {
+				id: "cataclysm:void_eye"
+			}
+			icon_scale: 2.0d
+			id: "4CA99DC1D953E1FB"
+			rewards: [{
+				id: "3BB6101EB5E097FD"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:ender_guardian"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				id: "12A7BADCD382CB68"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: -2.25d
+		}
+		{
+			icon: {
+				id: "cataclysm:monstrous_eye"
+			}
+			icon_scale: 2.0d
+			id: "72FF205D1C9A9178"
+			rewards: [{
+				id: "5170F3A77CE9DF35"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:monstrosity"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:netherite_monstrosity"
+				id: "3EFFB00A58530A74"
+				type: "kill"
+				value: 1L
+			}]
+			x: -4.65d
+			y: 0.85d
+		}
+		{
+			icon: {
+				id: "cataclysm:cursed_eye"
+			}
+			icon_scale: 2.0d
+			id: "4A559B47D164D1BB"
+			rewards: [{
+				id: "408DD0B04CB0265C"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:maledictus"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:maledictus"
+				id: "677791087AD42753"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.25d
+			y: -5.0d
+		}
+	]
+}
