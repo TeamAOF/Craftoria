@@ -11,115 +11,118 @@
 		{
 			height: 2.0d
 			image: "ftbquests:textures/gui/replication.png"
-			order: 1
+			order: 3
 			rotation: 0.0d
 			width: 10.0d
 			x: 0.0d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			color: 8533911
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/ender.png"
-			order: 2
+			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: 3.5d
-			y: -3.0d
+			x: -1.0d
+			y: 1.5d
 		}
 		{
-			color: 3899689
+			color: 4444519
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/earth.png"
-			order: 2
+			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: -2.5d
-			y: -3.0d
+			x: -5.0d
+			y: -3.5d
 		}
 		{
 			color: 14408247
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/living.png"
-			order: 2
+			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: -3.5d
-			y: -3.0d
+			x: 1.0d
+			y: 1.5d
 		}
 		{
 			color: 13882323
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/metallic.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: 1.5d
-			y: -3.0d
+			x: -5.0d
+			y: -2.5d
 		}
 		{
-			color: 16760097
+			color: 16761859
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/nether.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: 2.5d
-			y: -3.0d
+			x: 5.0d
+			y: -2.5d
 		}
 		{
 			color: 12149272
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/organic.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: 0.5d
-			y: -3.0d
+			x: -1.0d
+			y: 3.5d
 		}
 		{
 			color: 1764351
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/precious.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.5d
-			y: -3.0d
+			x: 5.0d
+			y: -3.5d
 		}
 		{
 			color: 16712636
 			height: 1.0d
 			image: "replication:textures/gui/mattertypes/quantum.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.0d
-			x: -0.5d
-			y: -3.0d
+			x: 1.0d
+			y: 3.5d
 		}
 		{
 			height: 4.0d
 			image: "replication:block/replica_ore"
-			order: -1
 			rotation: 0.0d
 			width: 17.0d
-			x: 0.0d
-			y: -1.5d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
-			height: 25.0d
-			image: "modern_industrialization:block/quantum_machine_hull"
-			order: -2
+			alpha: 32
+			color: 0
+			height: 40.0d
+			image: "ftbquests:textures/shapes/square/shape.png"
+			order: 1
 			rotation: 0.0d
-			width: 25.0d
+			width: 40.0d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			height: 10.0d
+			image: "extendedae:block/assembler_matrix/frame_block_on"
+			rotation: 0.0d
+			width: 10.0d
 			x: 0.0d
 			y: 2.5d
-		}
-		{
-			alpha: 64
-			color: 0
-			height: 50.0d
-			image: "ftbquests:textures/shapes/square/background.png"
-			order: -2
-			rotation: 0.0d
-			width: 50.0d
-			x: 0.0d
-			y: 2.0d
 		}
 	]
 	order_index: 1
@@ -128,7 +131,7 @@
 		{
 			id: "4513758183EFECE7"
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "5CE91954DFF75831"
 				item: { count: 1, id: "replication:replica_ingot" }

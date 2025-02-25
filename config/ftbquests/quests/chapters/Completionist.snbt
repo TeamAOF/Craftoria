@@ -22,7 +22,7 @@
 			image: "modern_industrialization:item/singularity"
 			rotation: 0.0d
 			width: 2.15d
-			x: 2.5d
+			x: 3.5d
 			y: -0.5d
 		}
 		{
@@ -30,7 +30,7 @@
 			image: "ae2:block/controller_lights"
 			rotation: 0.0d
 			width: 2.0d
-			x: -1.9999999999999982d
+			x: -2.9999999999999982d
 			y: 0.5d
 		}
 		{
@@ -38,7 +38,7 @@
 			image: "mekanism:ctm/thermal_evaporation_controller_on_led"
 			rotation: 0.0d
 			width: 2.5d
-			x: 5.0d
+			x: 6.0d
 			y: 0.5d
 		}
 		{
@@ -46,40 +46,40 @@
 			image: "powah:item/charged_snowball"
 			rotation: 0.0d
 			width: 2.5d
-			x: 6.5d
-			y: 2.5d
+			x: 6.65d
+			y: 3.0d
 		}
 		{
 			height: 2.5d
 			image: "extended_industrialization:block/machines/large_macerator/overlay_front_active"
 			rotation: 0.0d
 			width: 2.5d
-			x: -3.5d
-			y: 2.5d
+			x: -3.65d
+			y: 3.0d
 		}
 		{
 			height: 2.15d
 			image: "relics:item/space_dissector"
 			rotation: 0.0d
 			width: 2.15d
-			x: -3.5d
-			y: 5.45d
+			x: -3.65d
+			y: 5.550000000000001d
 		}
 		{
 			height: 1.5d
 			image: "ars_nouveau:block/fire_1"
 			rotation: 0.0d
 			width: 1.5d
-			x: -1.79d
-			y: 7.5d
+			x: -1.4900000000000002d
+			y: 7.0d
 		}
 		{
 			height: 3.25d
 			image: "irons_spellbooks:item/upgrade_orb_lightning"
 			rotation: 0.0d
 			width: 3.25d
-			x: 6.35d
-			y: 5.15d
+			x: 6.5d
+			y: 5.5d
 		}
 		{
 			height: 2.0d
@@ -87,7 +87,7 @@
 			rotation: 0.0d
 			width: 2.0d
 			x: 4.5d
-			y: 7.5d
+			y: 7.0d
 		}
 		{
 			height: 3.75d
@@ -102,8 +102,8 @@
 			image: "ars_nouveau:block/fire_1"
 			rotation: 180.0d
 			width: 1.5d
-			x: -1.79d
-			y: 8.25d
+			x: -1.4900000000000002d
+			y: 8.0d
 		}
 		{
 			height: 2.0d
@@ -111,7 +111,7 @@
 			rotation: 180.0d
 			width: 2.0d
 			x: 4.5d
-			y: 8.25d
+			y: 8.0d
 		}
 		{
 			height: 4.0d
@@ -127,7 +127,7 @@
 			image: "appflux:item/charged_redstone"
 			rotation: 0.0d
 			width: 2.85d
-			x: 0.5d
+			x: 1.5d
 			y: -0.4500000000000002d
 		}
 		{
@@ -137,6 +137,14 @@
 			width: 25.0d
 			x: 1.5d
 			y: 4.0d
+		}
+		{
+			height: 2.0d
+			image: "extendedae:block/assembler_matrix/frame_block_on"
+			rotation: 0.0d
+			width: 2.0d
+			x: -0.5d
+			y: -0.5d
 		}
 	]
 	order_index: 1
@@ -155,6 +163,7 @@
 				"739D2E03341174B1"
 				"375B2C2D89889153"
 				"1F0B8A0EBCBA4399"
+				"7A79DC2CE5CC9DEE"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -345,7 +354,7 @@
 				id: "752A63BD14A38E85"
 				type: "checkmark"
 			}]
-			x: -2.0d
+			x: -3.0d
 			y: 0.5d
 		}
 		{
@@ -434,7 +443,7 @@
 				id: "472C8EE4AE6F4ED2"
 				type: "checkmark"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: -0.5d
 		}
 		{
@@ -633,8 +642,8 @@
 				id: "44CE789BDE1EFCB1"
 				type: "checkmark"
 			}]
-			x: 5.0d
-			y: 0.5500000000000007d
+			x: 6.0d
+			y: 0.6000000000000001d
 		}
 		{
 			dependencies: [
@@ -668,7 +677,7 @@
 				id: "6C0BB72F6382FE4F"
 				type: "checkmark"
 			}]
-			x: 2.5d
+			x: 3.5d
 			y: -0.5d
 		}
 		{
@@ -740,8 +749,8 @@
 				id: "79794A87CBA37582"
 				type: "checkmark"
 			}]
-			x: 6.5d
-			y: 2.53d
+			x: 6.65d
+			y: 3.0d
 		}
 		{
 			dependencies: ["0597AF3E8B286CFA"]
@@ -771,8 +780,8 @@
 				id: "15ED212071C6CAF0"
 				type: "checkmark"
 			}]
-			x: -1.7999999999999998d
-			y: 7.85d
+			x: -1.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -859,7 +868,7 @@
 				type: "checkmark"
 			}]
 			x: 4.5d
-			y: 7.85d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1029,8 +1038,8 @@
 				id: "00CA3CB10A03DF62"
 				type: "checkmark"
 			}]
-			x: -3.4899999999999998d
-			y: 2.5199999999999996d
+			x: -3.65d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1132,8 +1141,8 @@
 				id: "6BD239D70099FED0"
 				type: "checkmark"
 			}]
-			x: -3.48d
-			y: 5.3999999999999995d
+			x: -3.65d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -1255,8 +1264,32 @@
 				id: "256831387C82AA19"
 				type: "checkmark"
 			}]
-			x: 6.5d
-			y: 5.3999999999999995d
+			x: 6.65d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"28EB489B44A05070"
+				"6B5431B3A107C9D5"
+				"44ABC5C2552BF034"
+				"7FCA9352AF05C235"
+				"1CD404EA948FF868"
+				"4513758183EFECE7"
+				"24A9E9A5E3B7B041"
+				"47A87F0901355498"
+				"6392FB264D1B2E52"
+			]
+			icon_scale: 1.25d
+			id: "7A79DC2CE5CC9DEE"
+			shape: "gear"
+			size: 1.8d
+			tasks: [{
+				id: "41F1C71C7B46E1FA"
+				item: { components: { "trofers:trophy": "trofers:replication" }, count: 1, id: "trofers:medium_pillar" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
 		}
 	]
 }
