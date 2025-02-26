@@ -19,9 +19,9 @@ By *right* or *left-clicking* in the air, you can open a GUI to enter precise bl
 
 In the GUI, you can also change the *Area type* for the tool, allowing you to preview the area in different configurations.
 
-The *GPS Area Tool* supports [Global Variables](../variables.md#global) like the basic [GPS Tool](./gps_tool.md#variables) does, but of course, *two* variables may be used.
+The *GPS Area Tool* supports [Global Variables](../programming/variables.md#global) like the basic [GPS Tool](./gps_tool.md#variables) does, but of course, *two* variables may be used.
 
-In a [Programmer](../programmer.md), *left-click* the programming area background with the *GPS Area Tool* to create a new [Area](../area.md) puzzle piece, or *left-click* on an existing [Area](../area.md) puzzle piece to update it with this tool's settings.
+In a [Programmer](../programming/programmer.md), *left-click* the programming area background with the *GPS Area Tool* to create a new [Area](../programming/area.md) puzzle piece, or *left-click* on an existing [Area](../programming/area.md) puzzle piece to update it with this tool's settings.
 
 Crafting a GPS Area Tool
 

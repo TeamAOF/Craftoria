@@ -10,11 +10,11 @@ item_ids:
 
 # Pneumatic Door
 
-This special door will open automatically if there is a player nearby, provided that it has sufficient [air pressure](../pressure.md). It has a base detection range of 2 blocks but this can be increased by inserting [Range Upgrades](../upgrades.md#range).
+This special door will open automatically if there is a player nearby, provided that it has sufficient [air pressure](../base_concepts/pressure.md). It has a base detection range of 2 blocks but this can be increased by inserting [Range Upgrades](../base_concepts/upgrades.md#range).
 
 To construct a *Pneumatic Door*, you must place a *Pneumatic Door Base* so that it's level with the *top half* of the door itself.
 
-*A double Pneumatic Door; left side is [camouflaged](../camo_applicator.md)**, right side is not*
+*A double Pneumatic Door; left side is [camouflaged](../tools/camo_applicator.md)**, right side is not*
 
 ![](pneumatic_door.png)
 

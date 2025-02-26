@@ -7,7 +7,7 @@ navigation:
 
 # Solar Cell
 
-The *Solar Cell* is used to craft and repair [Solar Compressors](../solar_compressor.md).
+The *Solar Cell* is used to craft and repair [Solar Compressors](../compressors/solar_compressor.md).
 
 **TODO:** Unsupported Patchouli page type **pneumaticcraft:assembly_system**
 

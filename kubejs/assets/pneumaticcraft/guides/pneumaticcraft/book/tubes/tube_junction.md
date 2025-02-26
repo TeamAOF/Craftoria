@@ -9,7 +9,7 @@ item_ids:
 
 # Tube Junction
 
-A *Tube Junction* is a very simple device which allows two [Pressure Tubes](./pressure_tubes.md) (of any [pressure tier](../pressure_tiers.md)) to cross each other without connecting.
+A *Tube Junction* is a very simple device which allows two [Pressure Tubes](./pressure_tubes.md) (of any [pressure tier](../base_concepts/pressure_tiers.md)) to cross each other without connecting.
 
 Crafting a Tube Junction
 

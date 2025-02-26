@@ -13,7 +13,7 @@ item_ids:
 
 *Plastic* is an important crafting component in <Color hex="#228">PneumaticCraft: Repressurized</Color>.
 
-*Molten Plastic* is made from [LPG](../refinery.md) and *Coal*, or [Biodiesel](../biodiesel.md) and *Charcoal* in the [Thermopneumatic Processing Plant](../thermopneumatic_processing_plant.md).
+*Molten Plastic* is made from [LPG](../manufacturing/refinery.md) and *Coal*, or [Biodiesel](../renewables/biodiesel.md) and *Charcoal* in the [Thermopneumatic Processing Plant](../manufacturing/thermopneumatic_processing_plant.md).
 
 **TODO:** Unsupported Patchouli page type **pneumaticcraft:thermo_plant**
 
@@ -31,17 +31,17 @@ item_ids:
 
 <ItemImage id="pneumaticcraft:plastic" />
 
-*Molten Plastic* can be solidified simply by pouring it into the world; it will turn into a *Plastic Sheet* within half a second or so. This is very easily automated with a [Liquid Hopper](../liquid_hopper.md) with a [Dispenser Upgrade](../upgrades.md#dispenser), and an [Omnidirectional Hopper](../omnidirectional_hopper.md).
+*Molten Plastic* can be solidified simply by pouring it into the world; it will turn into a *Plastic Sheet* within half a second or so. This is very easily automated with a [Liquid Hopper](../machines/liquid_hopper.md) with a [Dispenser Upgrade](../base_concepts/upgrades.md#dispenser), and an [Omnidirectional Hopper](../machines/omnidirectional_hopper.md).
 
 ## Plastic Sheet
 
 <ItemImage id="pneumaticcraft:plastic" />
 
-*Plastic Sheets* are produced by placing a bucket or [tank](../tanks.md) of *Molten Plastic* into an inventory with a [Heat Frame](../heat_frame.md) attached, and chilling the Heat Frame, ideally to below -80C (the colder the better). *Molten Plastic* will be consumed from the bucket or tank, and you will have a chance for a second *Plastic Sheet* for each 1000mB of Molten Plastic consumed.
+*Plastic Sheets* are produced by placing a bucket or [tank](../machines/tanks.md) of *Molten Plastic* into an inventory with a [Heat Frame](../semiblocks/heat_frame.md) attached, and chilling the Heat Frame, ideally to below -80C (the colder the better). *Molten Plastic* will be consumed from the bucket or tank, and you will have a chance for a second *Plastic Sheet* for each 1000mB of Molten Plastic consumed.
 
 ## Improving Yields
 
-An alternative way to solidify *Plastic Sheets* is to place a bucket or [tank](../tanks.md) of *Molten Plastic* into an inventory with a [Heat Frame](../heat_frame.md) attached, and chill the Heat Frame, ideally to below -80C (the colder the better). *Molten Plastic* will be consumed from the bucket or tank, and you will have a chance for a second *Plastic Sheet* for each 1000mB of Molten Plastic consumed.
+An alternative way to solidify *Plastic Sheets* is to place a bucket or [tank](../machines/tanks.md) of *Molten Plastic* into an inventory with a [Heat Frame](../semiblocks/heat_frame.md) attached, and chill the Heat Frame, ideally to below -80C (the colder the better). *Molten Plastic* will be consumed from the bucket or tank, and you will have a chance for a second *Plastic Sheet* for each 1000mB of Molten Plastic consumed.
 
 ## A Note on Tanks
 

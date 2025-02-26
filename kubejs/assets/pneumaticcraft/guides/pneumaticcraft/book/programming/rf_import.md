@@ -7,7 +7,7 @@ navigation:
 
 # Import RF Widget
 
-[Drones](../drone.md) have an internal buffer of 100,000 FE (Forge Energy).  Using this widget, you can import energy from an energy-providing block (e.g. a *Thermal Expansion Energy Cell* or *Immersive Engineering Capacitor*) to the drone's internal storage.
+[Drones](../tools/drone.md) have an internal buffer of 100,000 FE (Forge Energy).  Using this widget, you can import energy from an energy-providing block (e.g. a *Thermal Expansion Energy Cell* or *Immersive Engineering Capacitor*) to the drone's internal storage.
 
 *Despite its name, this widget imports FE (Forge Energy), not RF (Redstone Flux). The name is historical.*
 

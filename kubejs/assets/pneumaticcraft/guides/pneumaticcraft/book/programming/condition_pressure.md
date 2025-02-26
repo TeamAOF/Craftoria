@@ -9,7 +9,7 @@ navigation:
 
 This is a [Condition](./conditions.md) widget.
 
-The *Condition: Pressure* widget allows you to (remotely) check if the [pressure](../pressure.md) of the pneumatic block(s) in the connected [Area](./area.md) widget matches the configured pressure threshold.
+The *Condition: Pressure* widget allows you to (remotely) check if the [pressure](../base_concepts/pressure.md) of the pneumatic block(s) in the connected [Area](./area.md) widget matches the configured pressure threshold.
 
 *Condition: Pressure Widget*
 

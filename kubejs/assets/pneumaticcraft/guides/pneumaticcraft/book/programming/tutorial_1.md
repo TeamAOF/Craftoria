@@ -7,14 +7,14 @@ navigation:
 
 # Basic Drone Tutorial #1
 
-In this tutorial, we'll set up a simple program to make a [Drone](../drone.md) dig out an area. Before you start, you'll need:
+In this tutorial, we'll set up a simple program to make a [Drone](../tools/drone.md) dig out an area. Before you start, you'll need:
 
 
 - A [Programmer](./programmer.md) (of course)
 - (If you're not in Creative Mode) A *Chest* adjacent to the Programmer containing at least six [Puzzle Pieces](./puzzle_pieces.md) 
 - A *Chest* or any other inventory, containing a *Shovel* of any type
-- A basic [GPS Tool](../gps_tool.md) 
-- [GPS Area Tool](../gps_area_tool.md)
+- A basic [GPS Tool](../tools/gps_tool.md) 
+- [GPS Area Tool](../tools/gps_area_tool.md)
 
 Open the [Programmer](./programmer.md) GUI. On the right, you'll see a *tray* of <Color hex="#880">$(t:The virtual representations of Puzzle Pieces in the GUI are referred to as Programming Widgets)Programming Widgets$(/t:The virtual representations of Puzzle Pieces in the GUI are referred to as Programming Widgets)</Color>. There are multiple pages of these; you can either cycle through with the arrow buttons below the tray, or expand the tray by pressing *Space* or *Tab*.
 
@@ -52,7 +52,7 @@ Back in the Programmer GUI, take the *GPS Area Tool* and *left-click* it on the 
 
 At this point, there should be no red highlights indicating any errors: congratulations, you have a valid program!
 
-Finally, take a [Drone](../drone.md), and ensure it's been pressurized in a [Charging Station](../charging_station.md). Put the Drone item in the slot in the top right of the Programmer GUI and click the *⟶ (export)* button (you can name the Drone if you want, in the textfield to the left).
+Finally, take a [Drone](../tools/drone.md), and ensure it's been pressurized in a [Charging Station](../machines/charging_station.md). Put the Drone item in the slot in the top right of the Programmer GUI and click the *⟶ (export)* button (you can name the Drone if you want, in the textfield to the left).
 
 You'll get some audible feedback, and your Drone is programmed!
 

@@ -7,7 +7,7 @@ navigation:
 
 # Flow Control
 
-When a [Drone](../drone.md) is deployed, it immediately starts to execute its stored program. Execution flow occurs as follows:
+When a [Drone](../tools/drone.md) is deployed, it immediately starts to execute its stored program. Execution flow occurs as follows:
 - The program *always* begins at the [Start](./start.md) widget, of which there can be only one.
 - Flow normally proceeds *downward*; to the widget connected to the bottom of the current widget.
 

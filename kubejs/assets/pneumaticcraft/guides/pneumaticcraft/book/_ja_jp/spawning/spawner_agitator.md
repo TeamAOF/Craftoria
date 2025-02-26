@@ -15,7 +15,7 @@ item_ids:
 
 Mobファームはいかがですか？
 
-[物流コンフィギュレーター](../logistics_configurator.md)で*スニーク+右クリック*するか別の攪拌器を使用して削除します。
+[物流コンフィギュレーター](../logistics/logistics_configurator.md)で*スニーク+右クリック*するか別の攪拌器を使用して削除します。
 
 ## Apotheosis
 

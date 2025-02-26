@@ -14,7 +14,7 @@ Combinar um com outro item em uma bigorna destruirá o outro item e fará um liv
 
 Você sempre receberá metade dos encantamentos (arredondado para cima).
 
-Os encantamentos selecionados são baseados em sua [semente de encantamento](../seed.md).
+Os encantamentos selecionados são baseados em sua [semente de encantamento](../table/seed.md).
 
 <Recipe id="apotheosis:scrap_tome" />
 

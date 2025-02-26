@@ -10,7 +10,7 @@ item_ids:
 
 # Mob Duplicator
 
-A machine used to spawn mobs. When provided with power, [Essence](./essence.md) and any entity in a  [Mob Imprisonment Tool](../mib.md) it will spawn them around it. 
+A machine used to spawn mobs. When provided with power, [Essence](./essence.md) and any entity in a  [Mob Imprisonment Tool](../tools/mib.md) it will spawn them around it. 
 
 It will count the entities nearby and stop if there are too many.
 

@@ -17,7 +17,7 @@ The Transfer Gadget will have one of two colors:
 
 An <Color id="gold">output mode</Color> gadget extracts from the inventory/tank it's placed on, inserting to the neighbouring block, and an <Color id="blue">input mode</Color> gadget does the opposite. Resources are transferred at a rate of 1 item or 100mB fluid every 2 seconds.
 
-*Right-click* the *Transfer Gadget* with an empty hand or a [Logistics Configurator](../logistics_configurator.md) to toggle input/output mode. *Sneak+right-click* (or left-click - hit) to remove the *Transfer Gadget*.
+*Right-click* the *Transfer Gadget* with an empty hand or a [Logistics Configurator](../tools/logistics_configurator.md) to toggle input/output mode. *Sneak+right-click* (or left-click - hit) to remove the *Transfer Gadget*.
 
 Because of its low speed and cheap recipe, this is ideal for early-game item/fluid transfer where space might be limited.
 

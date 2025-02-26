@@ -9,7 +9,7 @@ item_ids:
 
 # Tag Workbench
 
-The *Tag Workbench* is used to produce *Tag Filters*, which are used to filter items by their [item tags](https://minecraft.gamepedia.com/Tag). E.g. treat all logs as the same item when filtering. Tag Filters can be placed in [Logistic Frame](../frames.md) filters, as well as [Item Filter](../item_filter.md) programming widgets as used by Drones, and will match any item that has an item tag from the Tag Filter's list.
+The *Tag Workbench* is used to produce *Tag Filters*, which are used to filter items by their [item tags](https://minecraft.gamepedia.com/Tag). E.g. treat all logs as the same item when filtering. Tag Filters can be placed in [Logistic Frame](../logistics/frames.md) filters, as well as [Item Filter](../programming/item_filter.md) programming widgets as used by Drones, and will match any item that has an item tag from the Tag Filter's list.
 
 ## Usage
 

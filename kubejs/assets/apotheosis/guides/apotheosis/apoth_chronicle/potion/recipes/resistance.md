@@ -11,7 +11,7 @@ navigation:
 
 Each level gives +20% damage reduction against all sources.
 
-You'll also need it to craft [Sundering](../sundering.md) potions.
+You'll also need it to craft [Sundering](../effects/sundering.md) potions.
 
 ## Brewing Recipe
 

@@ -52,7 +52,7 @@ Input-mode Interfaces will only accept items which are ingredients for a Pressur
 
 Output mode *Interfaces* will auto-eject into an adjacent inventory; this may or may not include other mods' pipes, depending on whether or not they look like an inventory to the interface.
 
-It costs 1000mL of [air](../pressure.md) per item transferred. This means, to transfer a full stack, the *Interface* needs 64000mL (4 bar for a basic 3x3x3 chamber). If the Interface seems to get 'stuck', it's just waiting for more pressure to build up.
+It costs 1000mL of [air](../base_concepts/pressure.md) per item transferred. This means, to transfer a full stack, the *Interface* needs 64000mL (4 bar for a basic 3x3x3 chamber). If the Interface seems to get 'stuck', it's just waiting for more pressure to build up.
 
 **Tips**
 - When compressing *Iron*, compress *Block of Iron*, since it will use only 1/9th of the air to move items in & out of the chamber.

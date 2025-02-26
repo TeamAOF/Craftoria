@@ -8,9 +8,9 @@ navigation:
 # Pocket Computer Addons
 
 We provide Pocket Computer upgrades for the following peripherals:
-- <Color id="blue">[Environment Detector](../environment_detector.md)</Color>
-- <Color id="blue">[Player Detector](../player_detector.md)</Color>
-- <Color id="blue">[Chat Box](../chat_box.md)</Color>
+- <Color id="blue">[Environment Detector](../peripherals/environment_detector.md)</Color>
+- <Color id="blue">[Player Detector](../peripherals/player_detector.md)</Color>
+- <Color id="blue">[Chat Box](../peripherals/chat_box.md)</Color>
 
 For the full documentation please see the <Color id="blue">[official wiki page](https://docs.intelligence-modding.de/items/pocket_computer/)</Color>!
 

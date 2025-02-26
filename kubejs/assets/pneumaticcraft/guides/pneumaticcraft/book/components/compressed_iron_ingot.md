@@ -7,5 +7,5 @@ navigation:
 
 # Compressed Iron Ingot
 
-See [Basic Materials](../basic_materials.md#compressed_iron_ingot).
+See [Basic Materials](../base_concepts/basic_materials.md#compressed_iron_ingot).
 

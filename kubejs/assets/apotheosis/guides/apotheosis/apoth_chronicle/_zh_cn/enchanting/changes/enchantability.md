@@ -8,7 +8,7 @@ navigation:
 
 # 附魔能力
 
-在原版中，所有没有明确[物品附魔能力](../enchantability.md)的物品默认为0。
+在原版中，所有没有明确[物品附魔能力](../table/enchantability.md)的物品默认为0。
 
 神化将默认值改为1。
 

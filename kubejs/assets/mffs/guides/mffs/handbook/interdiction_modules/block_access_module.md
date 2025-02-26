@@ -11,7 +11,7 @@ item_ids:
 
 <ItemImage id="mffs:block_access_module" />
 
-The <Color id="dark_purple">Block Access Module</Color> is an optional module for the [Interdiction Matrix](../interdiction_matrix.md). It enables a Matrix to inhibit a player's ability to right-click on a block and access its GUI screen.
+The <Color id="dark_purple">Block Access Module</Color> is an optional module for the [Interdiction Matrix](../machines/interdiction_matrix.md). It enables a Matrix to inhibit a player's ability to right-click on a block and access its GUI screen.
 
 Crafting the <Color id="dark_purple">Block Access Module().
 

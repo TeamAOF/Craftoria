@@ -11,7 +11,7 @@ navigation:
 
 每级对所有来源的伤害减少20%。
 
-你也需要它来酿造[破甲](../sundering.md)药水。
+你也需要它来酿造[破甲](../effects/sundering.md)药水。
 
 ## 酿造配方
 

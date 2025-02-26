@@ -22,5 +22,5 @@ Piercing causes thrown tridents to be able to hit additional enemies.
 
 Apotheosis also adds a method of creating tridents.
 
-Simply create an <Color id="blue">Inert Trident</Color> and upgrade it through [Infusion Enchanting](../infusion.md).
+Simply create an <Color id="blue">Inert Trident</Color> and upgrade it through [Infusion Enchanting](../table/infusion.md).
 

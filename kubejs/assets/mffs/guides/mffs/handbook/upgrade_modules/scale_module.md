@@ -14,7 +14,7 @@ item_ids:
 The <Color id="dark_purple">Scale Module</Color> can be placed in the upgrade slots of various MFFS machines to upgrade their distance capabilities. Its effects vary depending on the machine, but most commonly include: 
 - Incrasing force field size
 - Increasing interdiction area
-- Increasing the fuel boost in a [Coercion Deriver](../coercion_deriver.md)
+- Increasing the fuel boost in a [Coercion Deriver](../machines/coercion_deriver.md)
 
 Crafting the <Color id="dark_purple">Scale Module</Color>.
 

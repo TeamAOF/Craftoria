@@ -7,7 +7,7 @@ navigation:
 
 # Breaker Module
 
-This module tries to break a block, adjacent to the [Router](../item_router.md) in the module's [configured direction](../modules.md#direction).
+This module tries to break a block, adjacent to the [Router](../router/item_router.md) in the module's [configured direction](../intro/modules.md#direction).
 
 Most blocks are breakable, although anything with an unbreakable hardness (e.g. vanilla *Bedrock* or *End Portal*) can not be broken, nor can any fluid blocks. If the block is broken, its primary drop(s) will be automatically inserted into the item router's buffer, if possible.
 

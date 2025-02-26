@@ -8,7 +8,7 @@ navigation:
 
 # 出血
 
-<Color id="red">出血</Color>のポーションは、[太矢じりの矢](../../fletching.md#broadhead)で与えることができるデバフ効果と同じものを与える。
+<Color id="red">出血</Color>のポーションは、[太矢じりの矢](../../village/fletching.md#broadhead)で与えることができるデバフ効果と同じものを与える。
 
 2秒毎に継続的なダメージを受ける。
 

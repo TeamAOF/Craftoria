@@ -9,7 +9,7 @@ item_ids:
 
 # Electrostatic Compressor
 
-The *Electrostatic Compressor* is a [tier 2](../pressure_tiers.md) air [compressor](../pressure.md), which uses *lightning* for the energy to produce compressed air.
+The *Electrostatic Compressor* is a [tier 2](../base_concepts/pressure_tiers.md) air [compressor](../base_concepts/pressure.md), which uses *lightning* for the energy to produce compressed air.
 
 When it is struck by lightning it will instantly produce 200,000mL of air. Seems like a lot, but how often do you see a Charged Creeper sneaking around? You have to have it get struck.
 
@@ -29,7 +29,7 @@ To prevent a compressor from blowing up when the pressure gets too high after a 
 
 This dissipation only happens when the danger pressure of the compressor has been reached, not sooner. Each *Iron Bar* *directly* below the compressor (on the same Y axis) will dissipate up to 10,000mL of excess air. 
 
-Thus, with 10 compressors on a shared *grid*, <Color hex="#880">$(t:200000 / 10 = 20000 air produced per compressor; 10000 x 2 = 20000 air dissipated)only 2 grid blocks$(/t:200000 / 10 = 20000 air produced per compressor; 10000 x 2 = 20000 air dissipated)</Color> are needed below each compressor. (You could also add [Security Upgrades](../upgrades.md#security) to the compressor, but that's more expensive and less effective)
+Thus, with 10 compressors on a shared *grid*, <Color hex="#880">$(t:200000 / 10 = 20000 air produced per compressor; 10000 x 2 = 20000 air dissipated)only 2 grid blocks$(/t:200000 / 10 = 20000 air produced per compressor; 10000 x 2 = 20000 air dissipated)</Color> are needed below each compressor. (You could also add [Security Upgrades](../base_concepts/upgrades.md#security) to the compressor, but that's more expensive and less effective)
 
 To improve the chance of a strike, you can also place up to 10 grid blocks directly *above* the compressor to form a *lightning rod*. Each block will slightly improve the strike chance.
 

@@ -15,7 +15,7 @@ When placed on a vanilla *Spawner*, this item *agitates* the Spawner:
 
 Mob farm anyone?
 
-*Sneak-right-click* with a [Logistics Configurator](../logistics_configurator.md) or another agitator to remove it.
+*Sneak-right-click* with a [Logistics Configurator](../logistics/logistics_configurator.md) or another agitator to remove it.
 
 ## Apotheosis
 

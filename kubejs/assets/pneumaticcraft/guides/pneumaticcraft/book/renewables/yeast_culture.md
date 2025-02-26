@@ -13,7 +13,7 @@ navigation:
 
 <ItemImage id="minecraft:red_mushroom" />
 
-This will be the only method available to you initially. Fill a [Thermopneumatic Processing Plant](../thermopneumatic_processing_plant.md) with *Water*, and add some mushrooms. This method is a little slow (and will require a good supply of mushrooms), but will easily produce an initial stock of Yeast Culture.
+This will be the only method available to you initially. Fill a [Thermopneumatic Processing Plant](../manufacturing/thermopneumatic_processing_plant.md) with *Water*, and add some mushrooms. This method is a little slow (and will require a good supply of mushrooms), but will easily produce an initial stock of Yeast Culture.
 
 ## Method 1 (cont.)
 
@@ -39,5 +39,5 @@ Now, pour a bucket of *Water* into a block space adjacent to the culture; you wi
 
 It's important to note that the culture will spread when water is placed, not when sugar is added.
 
-This method can be automated with a little thought and design, even early in the game (hint: [Omnidirectional](../omnidirectional_hopper.md) and [Liquid](../liquid_hopper.md) Hoppers with [Dispenser Upgrades](../upgrades.md#dispenser) may be very helpful).
+This method can be automated with a little thought and design, even early in the game (hint: [Omnidirectional](../machines/omnidirectional_hopper.md) and [Liquid](../machines/liquid_hopper.md) Hoppers with [Dispenser Upgrades](../base_concepts/upgrades.md#dispenser) may be very helpful).
 

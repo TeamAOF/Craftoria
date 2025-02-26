@@ -16,7 +16,7 @@ navigation:
 TODO: Unsupported flag 'border'
 ![](pneumatic_armor.png)
 
-ただし、この防具はアップグレードの可能性が非常に高いです。アップグレードを使用するには(および防具を加圧するには)防具を[充填ステーション](../charging_station.md)に配置します。
+ただし、この防具はアップグレードの可能性が非常に高いです。アップグレードを使用するには(および防具を加圧するには)防具を[充填ステーション](../machines/charging_station.md)に配置します。
 
 すべての部分に共通するアップグレードについては次のページで説明します。部位固有のアップグレードについては各防具の部位のページで個別に説明します。
 
@@ -41,31 +41,31 @@ TODO: Unsupported flag 'border'
 
 <ItemImage id="pneumaticcraft:speed_upgrade" />
 
-[スピードアップグレード](../upgrades.md#speed)は各防具の起動時間を短縮します。さらに[エンティティトラッカー](../upgrades.md#entity_tracker)と[ブロックトラッカー](../upgrades.md#block_tracker)は[ヘルメット](./pneumatic_helmet.md)のロックオン時間を短縮し、[レギンス](./pneumatic_leggings.md)の実行速度を上げますが、[空気コスト](../pressure.md)がかかります。
+[スピードアップグレード](../base_concepts/upgrades.md#speed)は各防具の起動時間を短縮します。さらに[エンティティトラッカー](../base_concepts/upgrades.md#entity_tracker)と[ブロックトラッカー](../base_concepts/upgrades.md#block_tracker)は[ヘルメット](./pneumatic_helmet.md)のロックオン時間を短縮し、[レギンス](./pneumatic_leggings.md)の実行速度を上げますが、[空気コスト](../base_concepts/pressure.md)がかかります。
 
 <ItemImage id="pneumaticcraft:volume_upgrade" />
 
-[ボリュームアップグレード](../upgrades.md#volume)は各防具の部位の [空気貯蔵容量](../pressure.md)を増加させ、防具の充填にかかる時間が長くなりますが、使用時に圧力が失われるのが遅くなります。ボリュームアップグレードは25に制限されており、アップグレードを追加するほど効果は減少します。
+[ボリュームアップグレード](../base_concepts/upgrades.md#volume)は各防具の部位の [空気貯蔵容量](../base_concepts/pressure.md)を増加させ、防具の充填にかかる時間が長くなりますが、使用時に圧力が失われるのが遅くなります。ボリュームアップグレードは25に制限されており、アップグレードを追加するほど効果は減少します。
 
 <ItemImage id="pneumaticcraft:armor_upgrade" />
 
-[アーマーアップグレード](../upgrades.md#armor)は各防具の保護と耐久性を高めます。2つのアップグレードをインストールすると各部位は対応する*ダイヤモンドの防具*と同等になります。 最大4つのアップグレードでは保護は*ダイヤモンドの防具*よりも優れています。
+[アーマーアップグレード](../base_concepts/upgrades.md#armor)は各防具の保護と耐久性を高めます。2つのアップグレードをインストールすると各部位は対応する*ダイヤモンドの防具*と同等になります。 最大4つのアップグレードでは保護は*ダイヤモンドの防具*よりも優れています。
 
 <ItemImage id="pneumaticcraft:item_life_upgrade" />
 
-[アイテムライフアップグレード](../upgrades.md#item_life)は[空気](../pressure.md)のコストで防具の一部をゆっくりと修復します。各部位に最大5つのアップグレードをインストールでき、段階的に高速化されます(ただし、空気効率は低くなります)。
+[アイテムライフアップグレード](../base_concepts/upgrades.md#item_life)は[空気](../base_concepts/pressure.md)のコストで防具の一部をゆっくりと修復します。各部位に最大5つのアップグレードをインストールでき、段階的に高速化されます(ただし、空気効率は低くなります)。
 
 <ItemImage id="pneumaticcraft:gilded_upgrade" />
 
-[金メッキアップグレード](../upgrades.md#gilded)はどの防具にも取り付けることができ、*ピグリン達*を騙して実際に*金の防具*を着用していると信じ込ませます。愚かなピグリンたち。
+[金メッキアップグレード](../base_concepts/upgrades.md#gilded)はどの防具にも取り付けることができ、*ピグリン達*を騙して実際に*金の防具*を着用していると信じ込ませます。愚かなピグリンたち。
 
 ## Mekanismの放射線
 
 <ItemImage id="pneumaticcraft:radiation_shielding_upgrade" />
 
-[放射線防護アップグレード](../upgrades.md#radiation_shielding) は、Mekanism独自の[放射線防護ユニット](https://wiki.aidancbrady.com/wiki/Radiation_Shielding_Unit)と同様にMekanismの放射線の有害な影響に対する保護を提供します。完全な保護を受けるにはすべての防具の部位に防護アップグレードが装備されている必要があることに注意してください。
+[放射線防護アップグレード](../base_concepts/upgrades.md#radiation_shielding) は、Mekanism独自の[放射線防護ユニット](https://wiki.aidancbrady.com/wiki/Radiation_Shielding_Unit)と同様にMekanismの放射線の有害な影響に対する保護を提供します。完全な保護を受けるにはすべての防具の部位に防護アップグレードが装備されている必要があることに注意してください。
 
 ## Thaumcraft
 
-[Thaumcraft アップグレード](../upgrades.md#thaumcraft) は、対応する *Thaumaturgeの防具*と同等のvis割引を防具に提供します。さらに[ヘルメット](./helmet.md)にインストールされた Thaumcraft アップグレードは*Goggles of Revealing*として機能し、*オーラノード*を表示し、コンテナ内の*側面*の量を表示します。
+[Thaumcraft アップグレード](../base_concepts/upgrades.md#thaumcraft) は、対応する *Thaumaturgeの防具*と同等のvis割引を防具に提供します。さらに[ヘルメット](./helmet.md)にインストールされた Thaumcraft アップグレードは*Goggles of Revealing*として機能し、*オーラノード*を表示し、コンテナ内の*側面*の量を表示します。
 

@@ -10,11 +10,11 @@ item_ids:
 # Camouflage Applicator
 
 The *Camouflage Applicator* can be used to camouflage certain <Color hex="#228">PneumaticCraft: Repressurized</Color> blocks:
-- [Pressure Tubes](../pressure_tubes.md)
-- [Pneumatic Door Base](../pneumatic_door.md)
-- [Elevator Base & Caller](../elevators.md)
-- [Charging Station](../charging_station.md)
-- [Heat Pipe](../heat_pipe.md)
+- [Pressure Tubes](../tubes/pressure_tubes.md)
+- [Pneumatic Door Base](../machines/pneumatic_door.md)
+- [Elevator Base & Caller](../machines/elevators.md)
+- [Charging Station](../machines/charging_station.md)
+- [Heat Pipe](../machines/heat_pipe.md)
 
 *Right-click* any solid block to copy its appearance to the Applicator tool, or *sneak+right-click* to clear the copied block. 
 

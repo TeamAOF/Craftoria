@@ -23,7 +23,7 @@ If you aren't fond of the Nether, you can also venture to the Ocean, and create 
 
 <ItemImage id="apothic_enchanting:infused_hellshelf" />
 
-Once you reach Level 45, you'll need to explore [Infusion Enchanting](../infusion.md) to upgrade your shelves.
+Once you reach Level 45, you'll need to explore [Infusion Enchanting](../table/infusion.md) to upgrade your shelves.
 
 ## Reaching Level 60
 

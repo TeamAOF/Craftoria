@@ -7,7 +7,7 @@ navigation:
 
 # Rename Widget
 
-This widget renames the [Drone](../drone.md), as if you had *right-clicked* it with a *Name Tag*. The name is entered in the attached [Text](./text.md) widget.
+This widget renames the [Drone](../tools/drone.md), as if you had *right-clicked* it with a *Name Tag*. The name is entered in the attached [Text](./text.md) widget.
 
 ## Variables
 

@@ -8,7 +8,7 @@ navigation:
 
 # Bleeding
 
-<Color id="red">Bleeding</Color> is a negative effect applied by [Broadhead Arrows](../../fletching.md#broadhead).
+<Color id="red">Bleeding</Color> is a negative effect applied by [Broadhead Arrows](../../village/fletching.md#broadhead).
 
 It causes you to take damage every two seconds.
 

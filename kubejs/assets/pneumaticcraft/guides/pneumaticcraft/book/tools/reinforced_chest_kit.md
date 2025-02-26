@@ -9,7 +9,7 @@ item_ids:
 
 # Reinforced Chest Upgrade Kit
 
-The *Reinforced Chest Upgrade Kit* is a convenience which lets you upgrade any wooden chest to a [Reinforced Chest](../reinforced_chest.md) in-place, keeping the chest's items. Just *Sneak-Right-click* the upgrade kit against any wooden chest to upgrade it.
+The *Reinforced Chest Upgrade Kit* is a convenience which lets you upgrade any wooden chest to a [Reinforced Chest](../machines/reinforced_chest.md) in-place, keeping the chest's items. Just *Sneak-Right-click* the upgrade kit against any wooden chest to upgrade it.
 
 Note: You will get the *wooden chest* you used the upgrade kit on back as an item drop.
 

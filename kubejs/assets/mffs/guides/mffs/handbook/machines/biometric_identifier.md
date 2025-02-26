@@ -19,7 +19,7 @@ Crafting the <Color id="blue">Biometric Identifier</Color>.
 
 ## Usage
 
-To configure the <Color id="blue">Biometric Identifier</Color> to recognise a player, open its GUI screen and place an [Identification Card](../id_card.md) into the top-left item slot labeled <Color id="dark_green">Rights</Color>. If the Identification Card is blank and hasn't already been assigned, you can either shift-right-click while holding it in your hand to assign it to yourself, or shift-right-click another player to assign it to them.
+To configure the <Color id="blue">Biometric Identifier</Color> to recognise a player, open its GUI screen and place an [Identification Card](../tools/id_card.md) into the top-left item slot labeled <Color id="dark_green">Rights</Color>. If the Identification Card is blank and hasn't already been assigned, you can either shift-right-click while holding it in your hand to assign it to yourself, or shift-right-click another player to assign it to them.
 
 Next, set which permissions you wish the player to have by toggling the buttons on the right side of the GUI. Each button assigns the following permission:
 - **Warp**: Permit the player to bypass force fields by sneaking through them.
@@ -34,7 +34,7 @@ Next, set which permissions you wish the player to have by toggling the buttons 
 
 - **Remote Control**: Permit the player to use a remote control on machines linked to the Identifier.
 
-With the player's rights now assigned, move their card into any of the 9 slots along the bottom of the GUI screen to complete the process. To set yourself as the master of a <Color id="blue">Biometric Identifier</Color>, place an [Identification Card](../id_card.md) assigned to you into the item slot labeled <Color id="dark_green">Master</Color>.
+With the player's rights now assigned, move their card into any of the 9 slots along the bottom of the GUI screen to complete the process. To set yourself as the master of a <Color id="blue">Biometric Identifier</Color>, place an [Identification Card](../tools/id_card.md) assigned to you into the item slot labeled <Color id="dark_green">Master</Color>.
 
 The master user of a <Color id="blue">Biometric Identifier</Color> is <Color id="dark_red">automatically granted all permissions.</Color> Enable the <Color id="blue">Biometric Identifier</Color> by applying a Redstone signal or by clicking the Redstone Torch button in the top-left corner of its GUI. Once activated, the <Color id="blue">Biometric Identifier</Color> will light up and take effect.
 
@@ -49,7 +49,7 @@ TODO: Unsupported flag 'border'
 
 
 - While warping through a force field, a player must keep sneaking until they have fully exited the field barrier, otherwise they'll be killed.
-- [Identification Card](../id_card.md)s can't be removed from the Identifier while it's active.
+- [Identification Card](../tools/id_card.md)s can't be removed from the Identifier while it's active.
 - Passing through a force field can cause temporary Nausea IV.
 - A player in creative mode can always warp through a force field.
 

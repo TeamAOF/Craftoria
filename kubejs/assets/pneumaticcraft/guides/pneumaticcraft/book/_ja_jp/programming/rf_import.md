@@ -7,7 +7,7 @@ navigation:
 
 # RFインポートウィジェット
 
-[ドローン](../drone.md)には100,000FE(Forgeエネルギー)の内部バッファがあります。このウィジェットを使用するとエネルギーを提供するブロック(例: *Thermal ExpansionのEnergy Cell*または*Immersive Engineeringのキャパシタ*)からドローンの内部ストレージにエネルギーをインポートできます。
+[ドローン](../tools/drone.md)には100,000FE(Forgeエネルギー)の内部バッファがあります。このウィジェットを使用するとエネルギーを提供するブロック(例: *Thermal ExpansionのEnergy Cell*または*Immersive Engineeringのキャパシタ*)からドローンの内部ストレージにエネルギーをインポートできます。
 
 *こんな名前にもかかわらず、このウィジェットはRF(Redstone Flux)ではなくFE(Forgeエネルギー)をインポートします。名前は歴史的なものです。*
 

@@ -128,10 +128,10 @@ ServerEvents.recipes((event) => {
         E: 'ars_elemental:air_focus',
         F: 'ars_nouveau:ritual_flight',
         G: 'irons_spellbooks:cooldown_upgrade_orb',
-        H: 'minecraft:end_crystal'
+        H: 'minecraft:end_crystal',
       },
-      id: 'justdirethings:upgrade_flight'
-    }
+      id: 'justdirethings:upgrade_flight',
+    },
   ];
 
   recipes.forEach((recipe) => {
@@ -139,21 +139,25 @@ ServerEvents.recipes((event) => {
   });
 
   // JDT Raw Ore Processing
-  ['ferricore', 'blazegold', 'eclipsealloy'].forEach((ore) => {
-    event.recipes.mekanism.enriching(`4x justdirethings:raw_${ore}`, `justdirethings:raw_${ore}_ore`).id(`craftoria:justdirethings/enriching/${ore}`);
-    event.recipes.modern_industrialization
-      .macerator(2, 5 * 20)
-      .itemIn(`justdirethings:raw_${ore}_ore`)
-      .itemOut(`4x justdirethings:raw_${ore}`)
-      .id(`craftoria:justdirethings/macerator/${ore}`);
-  });
+  const jdtOres = {
+    metals: ['ferricore', 'blazegold', 'eclipsealloy'],
+    gems: ['celestigem', 'coal_t1', 'coal_t2', 'coal_t3', 'coal_t4'],
+  };
 
-  ['celestigem', 'coal_t1', 'coal_t2', 'coal_t3', 'coal_t4'].forEach((ore) => {
-    event.recipes.mekanism.enriching(`4x justdirethings:${ore}`, `justdirethings:raw_${ore}_ore`).id(`craftoria:justdirethings/enriching/${ore}`);
-    event.recipes.modern_industrialization
-      .macerator(2, 5 * 20)
-      .itemIn(`justdirethings:raw_${ore}_ore`)
-      .itemOut(`4x justdirethings:${ore}`)
-      .id(`craftoria:justdirethings/macerator/${ore}`);
+  Object.keys(jdtOres).forEach((oreType) => {
+    jdtOres[oreType].forEach((ore) => {
+      let output = oreType === 'metals' ? `4x justdirethings:raw_${ore}` : `4x justdirethings:${ore}`;
+      let input = `justdirethings:raw_${ore}_ore`;
+
+      event.recipes.mekanism.enriching(output, input).id(`craftoria:mekanism/enriching/${ore}`);
+      event.recipes.modern_industrialization
+        .macerator(2, 5 * 20)
+        .itemIn(input)
+        .itemOut(output)
+        .id(`craftoria:modern_industrialization/macerator/${ore}`);
+      event.recipes.occultism
+        .crushing(RecipeResult.of(output.split('x ')[1], output.split('x ')[0]), input, 5 * 20, 1, 4, true)
+        .id(`craftoria:justdirethings/crushing/${ore}`);
+    });
   });
 });

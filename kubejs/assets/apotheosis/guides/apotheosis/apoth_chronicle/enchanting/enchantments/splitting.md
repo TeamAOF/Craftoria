@@ -8,5 +8,5 @@ navigation:
 
 # Splitting
 
-See [Splitting](../splitting.md).
+See [Splitting](../anvil/splitting.md).
 

@@ -9,7 +9,7 @@ item_ids:
 
 # Manometer
 
-With a Manometer you can measure [pressure](../pressure.md) on a pneumatic network. Additionally, some Pneumatic machines/tubes have some special information about them. For instance, the [Safety Valve Tube Module](../safety_module.md) displays its safety threshold. So if you aren't feeling comfortable with redstone maths, this tool may be of use to you.
+With a Manometer you can measure [pressure](../base_concepts/pressure.md) on a pneumatic network. Additionally, some Pneumatic machines/tubes have some special information about them. For instance, the [Safety Valve Tube Module](../tubes/safety_module.md) displays its safety threshold. So if you aren't feeling comfortable with redstone maths, this tool may be of use to you.
 
 Crafting a Manometer
 

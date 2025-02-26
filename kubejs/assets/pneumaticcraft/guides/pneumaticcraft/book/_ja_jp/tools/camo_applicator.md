@@ -10,11 +10,11 @@ item_ids:
 # 迷彩塗布器
 
 *迷彩塗布器*は特定の<Color hex="#228">PneumaticCraft: Repressurized</Color>のブロックを偽装するために使用できます:
-- [圧力チューブ](../pressure_tubes.md)
-- [空気圧ドアベース](../pneumatic_door.md)
-- [エレベーターベースと呼出](../elevators.md)
-- [充填ステーション](../charging_station.md)
-- [ヒートパイプ](../heat_pipe.md)
+- [圧力チューブ](../tubes/pressure_tubes.md)
+- [空気圧ドアベース](../machines/pneumatic_door.md)
+- [エレベーターベースと呼出](../machines/elevators.md)
+- [充填ステーション](../machines/charging_station.md)
+- [ヒートパイプ](../machines/heat_pipe.md)
 
 *任意の固体ブロックを右クリック*して、その外観を塗布器にコピーするか*スニーク+右クリック*でコピーしたブロックをクリアします。
 

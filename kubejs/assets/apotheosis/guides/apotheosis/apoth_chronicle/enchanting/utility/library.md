@@ -36,5 +36,5 @@ The standard <Color id="blue">Enchantment Library</Color> has a <Color id="gold"
 
 The <Color id="blue">Library of Alexandria</Color> has a <Color id="gold">Level Capacity</Color> of thirty-one (XXXI).
 
-It cannot be crafted directly, and must be created using [Infusion Enchanting](../infusion.md).
+It cannot be crafted directly, and must be created using [Infusion Enchanting](../table/infusion.md).
 

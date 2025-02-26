@@ -9,13 +9,13 @@ item_ids:
 
 # Sentry Turret
 
-The *Sentry Turret* is an autonomous defensive weapon. It uses an integrated [Minigun](../minigun.md) and [Gun Ammo](../minigun_ammo.md) (which you must supply) to shoot entities within range. Its range is 16 blocks by default, but can be upgraded with [Range Upgrades](../upgrades.md#range) to a max of 32 blocks.
+The *Sentry Turret* is an autonomous defensive weapon. It uses an integrated [Minigun](../tools/minigun.md) and [Gun Ammo](../tools/minigun_ammo.md) (which you must supply) to shoot entities within range. Its range is 16 blocks by default, but can be upgraded with [Range Upgrades](../base_concepts/upgrades.md#range) to a max of 32 blocks.
 
-You do not need to provide [pressure](../pressure.md) for Sentry Turret to function, but you do need to provide [ammo](../minigun_ammo.md).
+You do not need to provide [pressure](../base_concepts/pressure.md) for Sentry Turret to function, but you do need to provide [ammo](../tools/minigun_ammo.md).
 
 <ItemImage id="pneumaticcraft:sentry_turret" />
 
-Potential targets for the *Sentry Turret* can be filtered by entering an [Entity Filter](../entity_filter.md) in the Turret's GUI; you can press & hold *F1* for a popup filter help page.
+Potential targets for the *Sentry Turret* can be filtered by entering an [Entity Filter](../base_concepts/entity_filter.md) in the Turret's GUI; you can press & hold *F1* for a popup filter help page.
 
 Newly-placed turrets have a default filter of *@mob*, but a turret with no filter will not attack the player who placed it.
 

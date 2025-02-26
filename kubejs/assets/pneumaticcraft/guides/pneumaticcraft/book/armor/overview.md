@@ -16,7 +16,7 @@ Compressed Iron Man
 TODO: Unsupported flag 'border'
 ![](pneumatic_armor.png)
 
-However, this armor is highly upgradable. To use upgrades (and to pressurize the armor), put the armor in a [Charging Station](../charging_station.md).
+However, this armor is highly upgradable. To use upgrades (and to pressurize the armor), put the armor in a [Charging Station](../machines/charging_station.md).
 
 Upgrades common to all pieces are described in the following pages. Piece-specific upgrades are described separately in the pages for each armor piece.
 
@@ -41,31 +41,31 @@ To adjust colors, just use the **Colors...** screen from the main armor GUI scre
 
 <ItemImage id="pneumaticcraft:speed_upgrade" />
 
-[Speed Upgrades](../upgrades.md#speed) reduce the startup time of each armor piece. In addition, they reduce the [Helmet](./pneumatic_helmet.md) lock-on time for [Entity Tracker](../upgrades.md#entity_tracker) and [Block Tracker](../upgrades.md#block_tracker), and increase the [Leggings](./pneumatic_leggings.md) run speed, but at an [air cost](../pressure.md).
+[Speed Upgrades](../base_concepts/upgrades.md#speed) reduce the startup time of each armor piece. In addition, they reduce the [Helmet](./pneumatic_helmet.md) lock-on time for [Entity Tracker](../base_concepts/upgrades.md#entity_tracker) and [Block Tracker](../base_concepts/upgrades.md#block_tracker), and increase the [Leggings](./pneumatic_leggings.md) run speed, but at an [air cost](../base_concepts/pressure.md).
 
 <ItemImage id="pneumaticcraft:volume_upgrade" />
 
-[Volume Upgrades](../upgrades.md#volume) increase the [air storage capacity](../pressure.md) of each armor piece, making them take longer to charge, but slower to lose pressure when in use. Volume Upgrades are limited to 25, and there are diminishing returns as you add more and more upgrades.
+[Volume Upgrades](../base_concepts/upgrades.md#volume) increase the [air storage capacity](../base_concepts/pressure.md) of each armor piece, making them take longer to charge, but slower to lose pressure when in use. Volume Upgrades are limited to 25, and there are diminishing returns as you add more and more upgrades.
 
 <ItemImage id="pneumaticcraft:armor_upgrade" />
 
-[Armor Upgrades](../upgrades.md#armor) increase the protection and toughness of each armor piece. With 2 upgrades installed, each piece is as good as the corresponding *Diamond Armor* piece.  With the maximum 4 upgrades, the protection is thus superior to *Diamond Armor*.
+[Armor Upgrades](../base_concepts/upgrades.md#armor) increase the protection and toughness of each armor piece. With 2 upgrades installed, each piece is as good as the corresponding *Diamond Armor* piece.  With the maximum 4 upgrades, the protection is thus superior to *Diamond Armor*.
 
 <ItemImage id="pneumaticcraft:item_life_upgrade" />
 
-[Item Life Upgrades](../upgrades.md#item_life) slowly repair the armor piece, at a cost of [air](../pressure.md). Up to 5 upgrades can be installed in each piece, providing incrementally faster (but less air-efficient) repair.
+[Item Life Upgrades](../base_concepts/upgrades.md#item_life) slowly repair the armor piece, at a cost of [air](../base_concepts/pressure.md). Up to 5 upgrades can be installed in each piece, providing incrementally faster (but less air-efficient) repair.
 
 <ItemImage id="pneumaticcraft:gilded_upgrade" />
 
-A [Gilded Upgrade](../upgrades.md#gilded) can be installed in any armor piece, and fools *Piglins* into believing that you're actually wearing *Gold Armor*. Silly Piglins.
+A [Gilded Upgrade](../base_concepts/upgrades.md#gilded) can be installed in any armor piece, and fools *Piglins* into believing that you're actually wearing *Gold Armor*. Silly Piglins.
 
 ## Mekanism Radiation
 
 <ItemImage id="pneumaticcraft:radiation_shielding_upgrade" />
 
-The [Radiation Shielding Upgrade](../upgrades.md#radiation_shielding) provides protection against the harmful effects of Mekanism radiation, same as Mekanism's own [Radiation Shielding Unit](https://wiki.aidancbrady.com/wiki/Radiation_Shielding_Unit). Note that you must have a Shielding Upgrade in every armor piece to receive full protection.
+The [Radiation Shielding Upgrade](../base_concepts/upgrades.md#radiation_shielding) provides protection against the harmful effects of Mekanism radiation, same as Mekanism's own [Radiation Shielding Unit](https://wiki.aidancbrady.com/wiki/Radiation_Shielding_Unit). Note that you must have a Shielding Upgrade in every armor piece to receive full protection.
 
 ## Thaumcraft
 
-[Thaumcraft Upgrades](../upgrades.md#thaumcraft) provide the armor piece with the equivalent vis discount of the corresponding *Thaumaturge's armor*.  In addition, a Thaumcraft Upgrade installed in the [Helmet](./helmet.md) acts as a *Goggles of Revealing*, showing *aura nodes* and displaying *aspect* amounts in containers.
+[Thaumcraft Upgrades](../base_concepts/upgrades.md#thaumcraft) provide the armor piece with the equivalent vis discount of the corresponding *Thaumaturge's armor*.  In addition, a Thaumcraft Upgrade installed in the [Helmet](./helmet.md) acts as a *Goggles of Revealing*, showing *aura nodes* and displaying *aspect* amounts in containers.
 

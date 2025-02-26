@@ -7,7 +7,7 @@ navigation:
 
 # エタノール
 
-*エタノール*は[酵母培養液](./yeast_culture.md)と*砂糖*を使用して[熱空気圧処理プラント](../thermopneumatic_processing_plant.md)で生成できます。これは[バイオディーゼル](./biodiesel.md)の構成要素の1つです。
+*エタノール*は[酵母培養液](./yeast_culture.md)と*砂糖*を使用して[熱空気圧処理プラント](../manufacturing/thermopneumatic_processing_plant.md)で生成できます。これは[バイオディーゼル](./biodiesel.md)の構成要素の1つです。
 
 このプロセスは温度に敏感です。熱空気処理プラントの温度を30℃から60℃の間に保つ必要があります。
 

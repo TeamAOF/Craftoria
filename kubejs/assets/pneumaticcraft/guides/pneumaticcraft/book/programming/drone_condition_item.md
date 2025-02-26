@@ -7,7 +7,7 @@ navigation:
 
 # Drone Condition: Item Widget
 
-The *Drone Condition: Item* widget allows you to check the inventory of this [Drone](../drone.md) for a certain amount of items. It will count up all matching items (specified by a connected [Item Filter](./item_filter.md), or no filter to count every item).
+The *Drone Condition: Item* widget allows you to check the inventory of this [Drone](../tools/drone.md) for a certain amount of items. It will count up all matching items (specified by a connected [Item Filter](./item_filter.md), or no filter to count every item).
 
 *Drone Condition: Item Widget*
 

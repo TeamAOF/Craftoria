@@ -8,5 +8,5 @@ navigation:
 
 # Sludge (Bucket)
 
-A fluid produced by the [Plant Gatherer](./plant_gatherer.md) and used in the [Sludge Refiner](../sludge_refiner.md).
+A fluid produced by the [Plant Gatherer](./plant_gatherer.md) and used in the [Sludge Refiner](../resource_production/sludge_refiner.md).
 

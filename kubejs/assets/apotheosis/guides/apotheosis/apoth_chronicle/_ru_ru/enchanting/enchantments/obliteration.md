@@ -8,5 +8,5 @@ navigation:
 
 # Уничтожение
 
-Смотреть [Уничтожение](../obliteration.md).
+Смотреть [Уничтожение](../anvil/obliteration.md).
 

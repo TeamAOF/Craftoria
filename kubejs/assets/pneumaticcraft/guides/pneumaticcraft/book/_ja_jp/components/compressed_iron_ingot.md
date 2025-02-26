@@ -7,5 +7,5 @@ navigation:
 
 # 圧縮鉄インゴット
 
-[基本材料](../basic_materials.md#compressed_iron_block)を参照してください。
+[基本材料](../base_concepts/basic_materials.md#compressed_iron_block)を参照してください。
 

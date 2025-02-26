@@ -7,5 +7,5 @@ navigation:
 
 # Block of Compressed Iron
 
-See [Basic Materials](../basic_materials.md#compressed_iron_block).
+See [Basic Materials](../base_concepts/basic_materials.md#compressed_iron_block).
 

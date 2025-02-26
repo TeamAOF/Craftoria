@@ -9,7 +9,7 @@ item_ids:
 
 # Safety Module
 
-This tube module is used to limit the [pressure](../pressure.md) in a tube to a certain value, preventing *explosions*; any excess pressure will be dispersed into the atmosphere, which means *energy loss*. Therefore, this module is best used in conjunction with the [Pressure Gauge Module](./pressure_gauge_module.md), which can emit redstone to turn compressors off.
+This tube module is used to limit the [pressure](../base_concepts/pressure.md) in a tube to a certain value, preventing *explosions*; any excess pressure will be dispersed into the atmosphere, which means *energy loss*. Therefore, this module is best used in conjunction with the [Pressure Gauge Module](./pressure_gauge_module.md), which can emit redstone to turn compressors off.
 
 The default threshold level of the *Safety Module* is 0.1 bar below the tube's danger level:
 - 4.9 bar for basic *Pressure Tubes*

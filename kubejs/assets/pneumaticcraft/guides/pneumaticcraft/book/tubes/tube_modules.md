@@ -9,7 +9,7 @@ navigation:
 
 *Tube modules* are components which can be attached to [Pressure Tubes](./pressure_tubes.md), either onto the side of the tube, or *inline* with the tube.
 
-Attached modules can be removed by *sneak+right-clicking* with a [Pneumatic Wrench](../pneumatic_wrench.md).
+Attached modules can be removed by *sneak+right-clicking* with a [Pneumatic Wrench](../tools/pneumatic_wrench.md).
 
 <a name="inline"></a>
 ## Inline Modules

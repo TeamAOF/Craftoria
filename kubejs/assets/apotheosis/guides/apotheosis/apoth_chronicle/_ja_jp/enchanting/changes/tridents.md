@@ -22,5 +22,5 @@ item_ids:
 
 Apotheosisの世界には、トライデントの作成方法が存在している。
 
-<Color id="blue">不活性なトライデント</Color>を作成し、[注入エンチャント](../infusion.md)でアップグレードすれば入手できる。
+<Color id="blue">不活性なトライデント</Color>を作成し、[注入エンチャント](../table/infusion.md)でアップグレードすれば入手できる。
 

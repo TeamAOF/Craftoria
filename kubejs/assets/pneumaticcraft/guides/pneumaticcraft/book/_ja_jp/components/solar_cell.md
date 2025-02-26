@@ -7,7 +7,7 @@ navigation:
 
 # 太陽電池
 
-*太陽電池*は[ソーラーコンプレッサー](../solar_compressor.md)の作成と修理に使用されます。
+*太陽電池*は[ソーラーコンプレッサー](../compressors/solar_compressor.md)の作成と修理に使用されます。
 
 **TODO:** Unsupported Patchouli page type **pneumaticcraft:assembly_system**
 

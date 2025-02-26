@@ -7,7 +7,7 @@ navigation:
 
 # Wait Widget
 
-The [Drone](../drone.md) will wait the specified amount of time, doing nothing. The time is specified by attaching a [Text](./text.md) widget, and entering a duration.
+The [Drone](../tools/drone.md) will wait the specified amount of time, doing nothing. The time is specified by attaching a [Text](./text.md) widget, and entering a duration.
 
 The following duration formats are accepted:
 - *20*: wait 1 second (20 ticks)

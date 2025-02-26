@@ -7,7 +7,7 @@ navigation:
 
 # コンピューター統合
 
-*ComputerCraft*または*Open Computers*がインストールされている場合、ほぼすべての<Color hex="#228">PneumaticCraft: Repressurized</Color>機械および[ドローン](../drone_interface.md)と対話できるようになります。
+*ComputerCraft*または*Open Computers*がインストールされている場合、ほぼすべての<Color hex="#228">PneumaticCraft: Repressurized</Color>機械および[ドローン](../machines/drone_interface.md)と対話できるようになります。
 
 ここにリストされているマシンはすべて、CC/OC周辺機器として対話できます。
 
@@ -24,14 +24,14 @@ Luaでは*m = peripheral.wrap(<side>)*を実行できます。ここで*<side>*�
 ## 一般的なメソッド
 
 以下のメソッドはすべての機械に共通です。*$$ <Color hex="#228">PneumaticCraft: Repressurized</Color>* 機械:
-- <Color hex="#800">getPressure()、getPressure(<side>)</Color>: 機械の圧力を取得します。<side>はオプションで、サイド固有の圧力を持つ [真空ポンプ](../vacuum_pump.md)にのみ役立ちます。
+- <Color hex="#800">getPressure()、getPressure(<side>)</Color>: 機械の圧力を取得します。<side>はオプションで、サイド固有の圧力を持つ [真空ポンプ](../machines/vacuum_pump.md)にのみ役立ちます。
 - <Color hex="#800">getDangerPressure()</Color>: 機械が爆発する危険がある圧力を取得します。
 - <Color hex="#800">getCriticalPressure()</Color>: 機械が確実に爆発する絶対最大圧力を取得します。
 
 ## 熱関連のメソッド
 
 以下のメソッドは[熱](./heat.md)の概念をサポートする*すべての<Color hex="#228">PneumaticCraft: Repressurized</Color>*機械に共通です:
-- <Color hex="#800">getTemperature()、getTemperature(<side>)</Color>: は機械の温度を取得します。<side>はオプションで、側面によって温度が異なる[ボルテックスチューブ](../vortex_tube.md)にのみ役立ちます。
+- <Color hex="#800">getTemperature()、getTemperature(<side>)</Color>: は機械の温度を取得します。<side>はオプションで、側面によって温度が異なる[ボルテックスチューブ](../machines/vortex_tube.md)にのみ役立ちます。
 
 <a name="air_cannon"></a>
 <ItemImage id="pneumaticcraft:air_cannon" />

@@ -9,7 +9,7 @@ item_ids:
 
 # Thermal Lagging
 
-As you're probably aware, <Color hex="#228">PneumaticCraft: Repressurized</Color> machines which use [Heat](../heat.md) will lose heat to the air, if left exposed. While you can cover these machines with pretty much any non-air, non-heat-conducting block, *Thermal Lagging* is particularly suitable for insulating machines.
+As you're probably aware, <Color hex="#228">PneumaticCraft: Repressurized</Color> machines which use [Heat](../base_concepts/heat.md) will lose heat to the air, if left exposed. While you can cover these machines with pretty much any non-air, non-heat-conducting block, *Thermal Lagging* is particularly suitable for insulating machines.
 
 <ItemImage id="pneumaticcraft:thermal_lagging" />
 

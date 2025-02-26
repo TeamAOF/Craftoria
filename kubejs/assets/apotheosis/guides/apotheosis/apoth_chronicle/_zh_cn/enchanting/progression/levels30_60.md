@@ -23,7 +23,7 @@ navigation:
 
 <ItemImage id="apothic_enchanting:infused_hellshelf" />
 
-一旦达到45级，你就需要探索[灌注附魔](../infusion.md)来升级你的书架。
+一旦达到45级，你就需要探索[灌注附魔](../table/infusion.md)来升级你的书架。
 
 ## 达到60级
 

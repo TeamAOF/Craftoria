@@ -22,5 +22,5 @@ Delici, fırlatılan üçlü mızrakların ek düşmanlara isabet etmesini sağl
 
 Apotheosis ayrıca üçlü mızraklar oluşturma yöntemi ekler.
 
-Sadece bir <Color id="blue">Hareketsiz Üçlü Mızrak</Color> oluşturun ve bunu [İnfüzyon Büyüsü](../infusion.md) ile yükseltin.
+Sadece bir <Color id="blue">Hareketsiz Üçlü Mızrak</Color> oluşturun ve bunu [İnfüzyon Büyüsü](../table/infusion.md) ile yükseltin.
 

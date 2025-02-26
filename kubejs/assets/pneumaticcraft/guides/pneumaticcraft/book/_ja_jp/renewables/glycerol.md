@@ -16,7 +16,7 @@ item_ids:
 
 <Recipe id="pneumaticcraft:bandage" />
 
-*砂糖*を使用すると出力が2倍になりますが気に入らない点はありますか？これにより貴重な[潤滑油](../lubricant.md)を節約できます。
+*砂糖*を使用すると出力が2倍になりますが気に入らない点はありますか？これにより貴重な[潤滑油](../components/lubricant.md)を節約できます。
 
 <Recipe id="pneumaticcraft:speed_upgrade_from_glycerol" />
 

@@ -8,5 +8,5 @@ navigation:
 
 # Разделение
 
-Смотреть [Разделение](../splitting.md).
+Смотреть [Разделение](../anvil/splitting.md).
 

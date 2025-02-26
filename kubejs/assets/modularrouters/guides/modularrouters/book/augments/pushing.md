@@ -9,7 +9,7 @@ item_ids:
 
 # Pushing Augment
 
-This augment can only be added to the [Extruder Mk1](../extruder_1.md) and [Extruder Mk2](../extruder_2.md) modules.
+This augment can only be added to the [Extruder Mk1](../modules/extruder_1.md) and [Extruder Mk2](../modules/extruder_2.md) modules.
 
 It can be stacked; each augment increases the force that entities are shoved when the module extrudes a block.
 

@@ -7,9 +7,9 @@ navigation:
 
 # PCB Blueprint
 
-The *PCB Blueprint* is a special component, required in the crafting of the [UV Light Box](../uv_light_box.md).
+The *PCB Blueprint* is a special component, required in the crafting of the [UV Light Box](../manufacturing/uv_light_box.md).
 
-It cannot be crafted normally, but must be traded for, usually via the [Amadron Tablet](../amadron_tablet.md), but possibly also via [Mechanic Villagers](../villagers.md).
+It cannot be crafted normally, but must be traded for, usually via the [Amadron Tablet](../tools/amadron_tablet.md), but possibly also via [Mechanic Villagers](../base_concepts/villagers.md).
 
 **TODO:** Unsupported Patchouli page type **pneumaticcraft:amadron_trade**
 

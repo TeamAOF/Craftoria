@@ -9,7 +9,7 @@ item_ids:
 
 # Programmer
 
-The *Programmer* is a machine used to program [Drones](../drone.md), using a visual programming system where [Puzzle Pieces](./puzzle_pieces.md) are assembled in a programming GUI. The *Programmer* does not require [pressure](../pressure.md) to operate.The rest of the *Programming* category has much more information about how to write Drone programs.
+The *Programmer* is a machine used to program [Drones](../tools/drone.md), using a visual programming system where [Puzzle Pieces](./puzzle_pieces.md) are assembled in a programming GUI. The *Programmer* does not require [pressure](../base_concepts/pressure.md) to operate.The rest of the *Programming* category has much more information about how to write Drone programs.
 
 Crafting a Programmer
 
@@ -33,7 +33,7 @@ When expanded, the tray will also show a textfield above where you can enter a f
 
 **3. Drone Slot**
 
-Place the [Drone](../drone.md) (or [Network Storage/API](../network_components.md)) to be programmed here. When ready to program the Drone, press the *⟶* button to write the program. You can use the textfield to the left to name the Drone, if you wish. You will hear audible feedback if successful.
+Place the [Drone](../tools/drone.md) (or [Network Storage/API](../components/network_components.md)) to be programmed here. When ready to program the Drone, press the *⟶* button to write the program. You can use the textfield to the left to name the Drone, if you wish. You will hear audible feedback if successful.
 
 You can also use the *⟵* button to import a program from a Drone (or Network Storage/API).
 
@@ -43,7 +43,7 @@ These radio buttons control which of the programming widgets are available in th
 
 **5. Player Inventory**
 
-Your own inventory; if you have any [GPS Tools](../gps_tool.md) or [GPS Area Tools](../gps_area_tool.md), you can click them on [Area](./area.md) or [Coordinate](./coordinate.md) widgets to transfer their settings to the widget.
+Your own inventory; if you have any [GPS Tools](../tools/gps_tool.md) or [GPS Area Tools](../tools/gps_area_tool.md), you can click them on [Area](./area.md) or [Coordinate](./coordinate.md) widgets to transfer their settings to the widget.
 
 **6. Navigation & Display Options**
 
@@ -65,14 +65,14 @@ The buttons along the left-hand edge of the GUI allow (in order):
 <a name="ids"></a>
 ## Progwidget IDs
 
-If you toggle on extended tooltip information with *F3+H*, you will notice that the tooltip for each programming widget also includes the internal widget ID at the end. This is primarily of benefit if you intend to do any drone programming with the [Drone Interface](../drone_interface.md) - the *setAction()* Lua method in the Drone Interface takes these IDs (the *pneumaticcraft:* prefix is optional) as a parameter.
+If you toggle on extended tooltip information with *F3+H*, you will notice that the tooltip for each programming widget also includes the internal widget ID at the end. This is primarily of benefit if you intend to do any drone programming with the [Drone Interface](../machines/drone_interface.md) - the *setAction()* Lua method in the Drone Interface takes these IDs (the *pneumaticcraft:* prefix is optional) as a parameter.
 
 ## Sharing Programs
 
 If you want to share your programs with other players, you have a couple of options:
 - You can use the *Pastebin* button to export your program to [pastebin.com](https://pastebin.com)
 - The *Pastebin* GUI also allows writing the program to the clipboard for copying & pasting
-- You can save your program to a [Drone](../drone.md) or [Network Storage/Network API](../network_components.md) and give the item to another player on your server.
+- You can save your program to a [Drone](../tools/drone.md) or [Network Storage/Network API](../components/network_components.md) and give the item to another player on your server.
 
 <a name="convert_relative"></a>
 ## Convert to Relative

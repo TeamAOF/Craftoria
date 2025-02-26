@@ -15,10 +15,10 @@ item_ids:
 
 *Logistics Frames* are attachable gadgets which are placed onto inventories or tanks to mark them as part of a *Logistics System*.
 
-Placed frames can be configured by *right-clicking* with a [Logistics Configurator](../logistics_configurator.md), and removed by *sneak+right-clicking* with the Configurator. Frames can also be configured in-hand by right-clicking the item form.
+Placed frames can be configured by *right-clicking* with a [Logistics Configurator](../tools/logistics_configurator.md), and removed by *sneak+right-clicking* with the Configurator. Frames can also be configured in-hand by right-clicking the item form.
 
 The following frame properties can be configured:
-- All Frames support *filtering* to control what items/fluids they will provide or accept. See also [Tag Filters](../tag_filter.md).
+- All Frames support *filtering* to control what items/fluids they will provide or accept. See also [Tag Filters](../tools/tag_filter.md).
 - The *Filter* side tab lets you configure whether filters match by *item NBT* or *mod ID*, and also whether the filter should be applied as a whitelist (default) or blacklist.
 
 

@@ -9,7 +9,7 @@ item_ids:
 
 # Kerosene Lamp
 
-A *Kerosene Lamp* is a powerful light source that runs on.. you guessed it, [Kerosene](../refinery.md). It is similar to the long range light sources you might be used to, like *Thaumcraft's Arcane Lamp)*.
+A *Kerosene Lamp* is a powerful light source that runs on.. you guessed it, [Kerosene](../manufacturing/refinery.md). It is similar to the long range light sources you might be used to, like *Thaumcraft's Arcane Lamp)*.
 
 *Technically, the lamp will run on any burnable fuel, but Kerosene is more efficient than any other fuel in this lamp, even LPG.*
 

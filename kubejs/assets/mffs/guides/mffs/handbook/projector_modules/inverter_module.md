@@ -11,7 +11,7 @@ item_ids:
 
 <ItemImage id="mffs:inverter_module" />
 
-The <Color id="dark_purple">Inverter Module</Color> can be placed in the matrix slots of [Force Field Projector](../projector.md)s to flip the projected shape inside out, creating a filled force field area.
+The <Color id="dark_purple">Inverter Module</Color> can be placed in the matrix slots of [Force Field Projector](../machines/projector.md)s to flip the projected shape inside out, creating a filled force field area.
 
 Crafting the <Color id="dark_purple">Inverter Module</Color>.
 

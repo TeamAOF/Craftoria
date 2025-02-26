@@ -14,7 +14,7 @@ A *Memory Stick* is a useful handheld device for extracting, storing, and restor
 - *Sneak + Right-click*: move one level of experience from the stick to yourself
 - *Left-click*: toggle XP auto-absorption, where any XP orbs you collect are automatically absorbed by the stick
 
-Experience stored in the Memory Stick can also be extracted as [Memory Essence](../memory_essence.md) fluid. To do this, simply *right-click* any [Fluid Tank](../tanks.md) to transfer XP to or from the tank (other mods' fluid tanks should also work fine here). Right-clicking an empty tank will attempt to transfer Memory Essence from the stick to the tank; right-clicking a tank with any Memory Essence will attempt to transfer from the tank to the stick.
+Experience stored in the Memory Stick can also be extracted as [Memory Essence](../base_concepts/memory_essence.md) fluid. To do this, simply *right-click* any [Fluid Tank](../machines/tanks.md) to transfer XP to or from the tank (other mods' fluid tanks should also work fine here). Right-clicking an empty tank will attempt to transfer Memory Essence from the stick to the tank; right-clicking a tank with any Memory Essence will attempt to transfer from the tank to the stick.
 
 ## Curios
 

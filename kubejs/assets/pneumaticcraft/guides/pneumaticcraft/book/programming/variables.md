@@ -33,9 +33,9 @@ There are three types of variable:
 <a name="global"></a>
 ## Global Variables
 
-Normal variables are unique per [Drone](../drone.md); they can't be shared. *Global variables*, however, *can* be shared. This allows Drones to communicate with each other.
+Normal variables are unique per [Drone](../tools/drone.md); they can't be shared. *Global variables*, however, *can* be shared. This allows Drones to communicate with each other.
 
-Additionally, [GPS Tools](../gps_tool.md) can link to and modify them, the [Universal Sensor](../universal_sensor.md) can emit a <Color hex="#f00">redstone signal</Color> based on them, and the [Remote](../remote.md) can display and modify them.
+Additionally, [GPS Tools](../tools/gps_tool.md) can link to and modify them, the [Universal Sensor](../machines/universal_sensor.md) can emit a <Color hex="#f00">redstone signal</Color> based on them, and the [Remote](../tools/remote.md) can display and modify them.
 
 ## Global Variables (cont.)
 
@@ -58,7 +58,7 @@ Several commands exist (usable by any player) to manipulate global variables:
 ## Special Variables
 
 The following special variables are recognised:
-- *$owner_pos*: the (head) blockpos of the player who owns the [Drone](../drone.md), or (0,0,0) if the owner is offline.
+- *$owner_pos*: the (head) blockpos of the player who owns the [Drone](../tools/drone.md), or (0,0,0) if the owner is offline.
 - *$drone_pos*: the blockpos of the drone itself.
 - *$player_pos=<name>*: the (head) blockpos of the player '<name>' (case insensitive), or (0,0,0) for invalid or offline player names.
 
@@ -82,7 +82,7 @@ Several older variables also exist which remain usable for compatibility reasons
 Sometimes it's useful to display the value of a variable for debugging purposes. You can display a variable's value in a few ways:
 - Using the [Rename](./rename.md) widget to show the variable as a drone's nameplate
 - Writing text with the [Edit Sign](./edit_sign.md) widget
-- Using a [label](../remote.md#label) in a [Remote](../remote.md).
+- Using a [label](../tools/remote.md#label) in a [Remote](../tools/remote.md).
 
 ## Debugging (cont.)
 
@@ -94,5 +94,5 @@ Note that the special & global variable prefixes still apply here, so to interpo
 
 You can also display only the X, Y or Z component of the coordinate by suffixing the variable name with *.x*, *.y* or *.z* respectively. E.g. to show the drone owner's Y coordinate, use *${$owner_pos.y}*.
 
-If the variable is an *item variable*, a *.id* suffix will get the item's registry ID instead of its display name (which is the default). This is particularly useful for displaying an item on an [Aphorism Tile](../aphorism_tile.md#items).
+If the variable is an *item variable*, a *.id* suffix will get the item's registry ID instead of its display name (which is the default). This is particularly useful for displaying an item on an [Aphorism Tile](../machines/aphorism_tile.md#items).
 

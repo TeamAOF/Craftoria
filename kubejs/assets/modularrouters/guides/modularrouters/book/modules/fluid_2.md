@@ -9,7 +9,7 @@ item_ids:
 
 # Fluid Module Mk2
 
-Like the [Fluid Module Mk1](./fluid_1.md), this module can transfer fluids into or out of the router, if it has a fluid-containing item in the buffer. However, this module can also target more distant locations, up to 12 blocks away (up to 24 with [Range Up Augments](../range_up.md)).
+Like the [Fluid Module Mk1](./fluid_1.md), this module can transfer fluids into or out of the router, if it has a fluid-containing item in the buffer. However, this module can also target more distant locations, up to 12 blocks away (up to 24 with [Range Up Augments](../augments/range_up.md)).
 
 *Sneak-right-click* any block with the module to set its target.
 

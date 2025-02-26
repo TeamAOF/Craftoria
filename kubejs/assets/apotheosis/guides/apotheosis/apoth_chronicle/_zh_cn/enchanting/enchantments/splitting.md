@@ -8,5 +8,5 @@ navigation:
 
 # 拆分
 
-查看[拆分](../splitting.md)词条。
+查看[拆分](../anvil/splitting.md)词条。
 

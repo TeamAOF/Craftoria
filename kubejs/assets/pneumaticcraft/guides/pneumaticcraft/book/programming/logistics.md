@@ -7,7 +7,7 @@ navigation:
 
 # Logistics Widget
 
-This widget makes the [Drone](../drone.md) behave like a [Logistics Drone](../logistics_drone.md), but allows some extra flexibility over the base Logistic Drone functionality:
+This widget makes the [Drone](../tools/drone.md) behave like a [Logistics Drone](../logistics/logistics_drone.md), but allows some extra flexibility over the base Logistic Drone functionality:
 - It can be used with other widgets, e.g. a [Standby](./standby.md) widget for more efficient air usage
 - A custom [Area](./area.md) can be defined (a standard Logistics Drone has a 33x33x33 area centered on the drone, which cannot be changed)
 

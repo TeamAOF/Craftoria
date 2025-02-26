@@ -7,7 +7,7 @@ navigation:
 
 # Inventory Import Widget
 
-This will make the [Drone](../drone.md) move to the nearest inventory within the specified [area](./area.md), extract items from that inventory and insert them into the *Drone's* inventory.
+This will make the [Drone](../tools/drone.md) move to the nearest inventory within the specified [area](./area.md), extract items from that inventory and insert them into the *Drone's* inventory.
 
 *Right-click* the widget for a setup GUI where you can specify the side the *Drone* should extract the items from. You can also specify the maximum number of items to import.
 

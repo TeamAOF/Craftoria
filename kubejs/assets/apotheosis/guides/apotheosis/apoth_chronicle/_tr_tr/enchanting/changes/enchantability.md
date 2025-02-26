@@ -8,7 +8,7 @@ navigation:
 
 # Büyülenebilirlik
 
-Vanilla'da, [Eşya Büyülenebilirliği](../enchantability.md) belirtilmeyen tüm eşyaların varsayılan büyülenebilirlik değeri sıfırdır.
+Vanilla'da, [Eşya Büyülenebilirliği](../table/enchantability.md) belirtilmeyen tüm eşyaların varsayılan büyülenebilirlik değeri sıfırdır.
 
 Apotheosis, bu varsayılan değeri bire değiştirir.
 

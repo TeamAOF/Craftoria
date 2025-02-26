@@ -8,5 +8,5 @@ navigation:
 
 # Obliteração
 
-Veja [obliteração](../obliteration.md).
+Veja [obliteração](../anvil/obliteration.md).
 

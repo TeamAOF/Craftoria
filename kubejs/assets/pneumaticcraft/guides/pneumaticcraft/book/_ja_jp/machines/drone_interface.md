@@ -9,7 +9,7 @@ item_ids:
 
 # ドローンインターフェース
 
-ドローンインターフェースは[ドローン](../drone.md)と通信するために使用される*ComputerCraft/OpenComputersの周辺機器*です。通信を行うには[コンピュータコントロールパズルピース](../computer_control.md)を使用して*ドローン*をプログラムします。
+ドローンインターフェースは[ドローン](../tools/drone.md)と通信するために使用される*ComputerCraft/OpenComputersの周辺機器*です。通信を行うには[コンピュータコントロールパズルピース](../programming/computer_control.md)を使用して*ドローン*をプログラムします。
 
 ドローンがコンピュータコントロールピースを実行するとパズルピースの領域内にある<Color hex="#880">$(t:ドローンインターフェースは一度に 1つのドローンにしか接続できません)使用可能な$(/t:ドローンインターフェースは一度に 1つのドローンにしか接続できません)</Color>*ドローンインターフェース*に接続しようとします。
 
@@ -39,7 +39,7 @@ m.setAction("standby")
 
 ## 例(続き)
 
-[プログラマー](../programmer.md)経由でドローンプログラムを記述する場合とは異なり、反対のプログラムは続行する前に掘削(および場所移動)アクションが完了するまで明示的にスタンバイする必要があることに気付くかもしれません。これはLuaコンピュータープログラムが別のスレッドで実行されており、ワールドと直接対話できないためです。このプログラムはドローンに次に何をすべきかを指示するだけで、ドローンに完了したかどうかを尋ねる必要があります。
+[プログラマー](../programming/programmer.md)経由でドローンプログラムを記述する場合とは異なり、反対のプログラムは続行する前に掘削(および場所移動)アクションが完了するまで明示的にスタンバイする必要があることに気付くかもしれません。これはLuaコンピュータープログラムが別のスレッドで実行されており、ワールドと直接対話できないためです。このプログラムはドローンに次に何をすべきかを指示するだけで、ドローンに完了したかどうかを尋ねる必要があります。
 
 ## abortAction()
 
@@ -53,7 +53,7 @@ m.setAction("standby")
 
 <Color hex="#800">addArea(<x1>,<y1>,<z1>,<x2>,<y2>,<z2>,<areaType>)</Color>
 
-ドローンの現在の保存エリアにエリアを追加します。後者の方法を使用する場合、x1/y1/z1は最初のポイント([GPSエリアツール](../gps_area_tool.md)のP1)を表し、x2/y2/z2は2番目のポイント、つまりGPSエリアツールのP2を表します。
+ドローンの現在の保存エリアにエリアを追加します。後者の方法を使用する場合、x1/y1/z1は最初のポイント([GPSエリアツール](../tools/gps_area_tool.md)のP1)を表し、x2/y2/z2は2番目のポイント、つまりGPSエリアツールのP2を表します。
 
 getAreaTypes()を使用して有効なエリアタイプを一覧表示できます。
 
@@ -79,13 +79,13 @@ addWhitelistLiquidFilter(...) と似ていますが、流体をブラックリ�
 
 <Color hex="#800">addWhitelistItemFilter(<item/block name>, <useNBT>, <useModSimilarity>)</Color>
 
-別のウィジェットの右側にある[アイテムフィルター](../item_filter.md)ウィジェットとして機能します。アイテム/ブロック名はレジストリ名です(例: *pneumaticcraft:pressure_tube*)。'useXXX'はすべて使用されるフィルターを決定するブール値です(アイテムフィルターウィジェットGUIと同様)。
+別のウィジェットの右側にある[アイテムフィルター](../programming/item_filter.md)ウィジェットとして機能します。アイテム/ブロック名はレジストリ名です(例: *pneumaticcraft:pressure_tube*)。'useXXX'はすべて使用されるフィルターを決定するブール値です(アイテムフィルターウィジェットGUIと同様)。
 
 ## addWhitelistLiquidFilter()
 
 <Color hex="#800">addWhitelistLiquidFilter(<流体名>)</Color>
 
-ピースの右側に[流体フィルター](../liquid_filter.md)ピースを配置したのと同じように動作します。流体のレジストリ名を指定する必要があります(例: *minecraft:water*)。
+ピースの右側に[流体フィルター](../programming/liquid_filter.md)ピースを配置したのと同じように動作します。流体のレジストリ名を指定する必要があります(例: *minecraft:water*)。
 
 ## addWhitelistText()
 
@@ -139,7 +139,7 @@ addWhitelistLiquidFilter(...) と似ていますが、流体をブラックリ�
 
 <Color hex="#800">evaluateCondition()</Color>
 
-true/falseを返します。[条件](../conditions.md)でのみ使用されます。条件が満たされているかどうかに応じてtrue/falseを返します。ドローン条件は<Color hex="#800">setAction()</Color>を設定した直後に確認できますが、非ドローン条件では<Color hex="#800">evaluateCondition()</Color>の結果が有効になる前に、<Color hex="#800">isActionDone()</Color>がtrueを返すまで待つ必要があります。
+true/falseを返します。[条件](../programming/conditions.md)でのみ使用されます。条件が満たされているかどうかに応じてtrue/falseを返します。ドローン条件は<Color hex="#800">setAction()</Color>を設定した直後に確認できますが、非ドローン条件では<Color hex="#800">evaluateCondition()</Color>の結果が有効になる前に、<Color hex="#800">isActionDone()</Color>がtrueを返すまで待つ必要があります。
 
 ## exitPiece()
 
@@ -163,7 +163,7 @@ true/falseを返します。[条件](../conditions.md)でのみ使用されま�
 
 <Color hex="#800">getAllActions()</Color>
 
-現在選択可能なすべてのアクション(*pneumaticcraft:dig*や*pneumaticcraft:place'*など)のテーブルを返します。これらの各アクションは[プログラマー](../programmer.md#ids)GUIで使用可能なプログラミングウィジェットに直接対応しています。
+現在選択可能なすべてのアクション(*pneumaticcraft:dig*や*pneumaticcraft:place'*など)のテーブルを返します。これらの各アクションは[プログラマー](../programming/programmer.md#ids)GUIで使用可能なプログラミングウィジェットに直接対応しています。
 
 注: *pneumaticcraft:*で始まるアクション(すべてデフォルトのアクション)の場合、*pneumaticcraft:*プレフィックスはオプションです。
 
@@ -199,7 +199,7 @@ true/falseを返します。[条件](../conditions.md)でのみ使用されま�
 
 <Color hex="#800">getVariable(<variable name>)</Color>
 
-このドローンから変数の値(x、y、z)を返します。[グローバル](../variables.md#global)(先頭に#)と[スペシャル](../variables.md#special)変数(先頭に$)を取得することもできます。
+このドローンから変数の値(x、y、z)を返します。[グローバル](../programming/variables.md#global)(先頭に#)と[スペシャル](../programming/variables.md#special)変数(先頭に$)を取得することもできます。
 
 ## hideArea()
 
@@ -229,7 +229,7 @@ true/falseを返します。[条件](../conditions.md)でのみ使用されま�
 
 <Color hex="#800">setAction(<action>)</Color>
 
-ドローンが実行するアクションを設定します。これは<Color hex="#800">getAllActions()</Color>によって返されるアクションの1つである必要があります。これらはF3+Hが切り替えられるとウィジェットのツールチップにアクション名が表示される[プログラマー](../programmer.md)GUIのプログラミングウィジェットに直接対応します。
+ドローンが実行するアクションを設定します。これは<Color hex="#800">getAllActions()</Color>によって返されるアクションの1つである必要があります。これらはF3+Hが切り替えられるとウィジェットのツールチップにアクション名が表示される[プログラマー](../programming/programmer.md)GUIのプログラミングウィジェットに直接対応します。
 
 プレフィックスが*pneumaticcraft:*の場合、そのプレフィックスはオプションであることに注意してください。
 
@@ -361,13 +361,13 @@ true/falseを返します。[条件](../conditions.md)でのみ使用されま�
 
 <Color hex="#800">setVariable(<variable name>, <x>, <y>, <z>)</Color>
 
-このドローンの[変数](../variables.md)を指定されたX/Y/Z座標に設定します。[グローバル変数](../variables.md#global)を設定することもできます。
+このドローンの[変数](../programming/variables.md)を指定されたX/Y/Z座標に設定します。[グローバル変数](../programming/variables.md#global)を設定することもできます。
 
 ## setVariable()
 
 <Color hex="#800">setVariable(<variable name>, <boolean>)</Color>
 
-このドローンの[変数](../coordinate_operator.md)を設定します。'true'は(1,0,0)を渡すことに相当し、'false'は(0,0,0)を渡すことに相当します。
+このドローンの[変数](../programming/coordinate_operator.md)を設定します。'true'は(1,0,0)を渡すことに相当し、'false'は(0,0,0)を渡すことに相当します。
 
 ## showArea()
 

@@ -8,5 +8,5 @@ navigation:
 
 # 分裂
 
-查看[分裂](../obliteration.md)词条。
+查看[分裂](../anvil/obliteration.md)词条。
 

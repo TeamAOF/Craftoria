@@ -42,7 +42,7 @@ item_ids:
 ## 稻草人盔甲
 
 <GameScene zoom={4}>
-  <Entity id="minecraft:armor_stand"data="{ArmorItems:[{id:'irons_spellbooks:pumpkin_boots',Count:1b},{id:'irons_spellbooks:pumpkin_leggings',Count:1b},{id:'irons_spellbooks:pumpkin_chestplate',Count:1b},{id:'irons_spellbooks:pumpkin_helmet',Count:1b}],NoBasePlate:1b}" />
+  <Entity id="minecraft:armor_stand" data="{ArmorItems:[{id:'irons_spellbooks:pumpkin_boots',Count:1b},{id:'irons_spellbooks:pumpkin_leggings',Count:1b},{id:'irons_spellbooks:pumpkin_chestplate',Count:1b},{id:'irons_spellbooks:pumpkin_helmet',Count:1b}],NoBasePlate:1b}" />
 </GameScene>
 
 ## 稀有材料

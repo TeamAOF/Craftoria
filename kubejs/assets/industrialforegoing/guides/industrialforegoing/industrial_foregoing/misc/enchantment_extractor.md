@@ -12,7 +12,7 @@ item_ids:
 
 This machine can extract enchantments from items when provided with a book. 
 
-It can function 2 ways, extract the enchantments into a book or it can extract the enchantment and transform it into [Essence](../essence.md).
+It can function 2 ways, extract the enchantments into a book or it can extract the enchantment and transform it into [Essence](../agr_husb/essence.md).
 
 
 

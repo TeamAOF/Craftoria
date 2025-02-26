@@ -9,7 +9,7 @@ item_ids:
 
 # Air Grate Module
 
-This module is used to attract/repel entities to/from the module. With positive [pressure](../pressure.md), the tube will blow entities away and with *negative* pressure it will suck entities towards it. Negative pressure is achieved with a [Vacuum Pump](../vacuum_pump.md). When item entities are close enough, they will automatically be inserted into any adjacent inventory, respecting sided inventories (like Furnaces).
+This module is used to attract/repel entities to/from the module. With positive [pressure](../base_concepts/pressure.md), the tube will blow entities away and with *negative* pressure it will suck entities towards it. Negative pressure is achieved with a [Vacuum Pump](../machines/vacuum_pump.md). When item entities are close enough, they will automatically be inserted into any adjacent inventory, respecting sided inventories (like Furnaces).
 
 The module's range can be expressed with these formulae:
 
@@ -30,7 +30,7 @@ You can right-click the module to make it show the affected range for a few seco
 <a name="active_cooling"></a>
 ## Heat Sink Cooling
 
-An Air Grate Module can also be used to actively cool [Heat Sinks](../heat_sink.md). The range in which Heat Sinks is cooled is a 3x3x3 cube in front of the Air Grate. This range is visualized when the module is placed down.
+An Air Grate Module can also be used to actively cool [Heat Sinks](../machines/heat_sink.md). The range in which Heat Sinks is cooled is a 3x3x3 cube in front of the Air Grate. This range is visualized when the module is placed down.
 
 The Air Grate will only cool Heat Sinks when it has a range of 3 blocks or more (so, 0.75 bar).
 
@@ -38,7 +38,7 @@ The Air Grate will only cool Heat Sinks when it has a range of 3 blocks or more 
 
 When you apply an [Module Expansion Card](./module_expansion_card.md), you gain control over which entities are affected by the module.
 
-You could set it up, for example, so that only a certain player gets affected, or only Creepers, or only items. This can be done by right clicking the upgraded module to open a GUI allowing an [entity filter](../entity_filter.md) to be defined.
+You could set it up, for example, so that only a certain player gets affected, or only Creepers, or only items. This can be done by right clicking the upgraded module to open a GUI allowing an [entity filter](../base_concepts/entity_filter.md) to be defined.
 
 Crafting a Air Grate Module
 

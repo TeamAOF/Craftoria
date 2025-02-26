@@ -9,7 +9,7 @@ item_ids:
 
 # Vacuum Pump
 
-The *Vacuum Pump* is a machine used to create... a vacuum. To do this the machine consumes [pressurized air](../pressure.md).
+The *Vacuum Pump* is a machine used to create... a vacuum. To do this the machine consumes [pressurized air](../base_concepts/pressure.md).
 
 Positive pressure should be applied on the <Color hex="#0c0">'+' side</Color>; when the minimal working pressure is reached, the *Vacuum Pump* starts pumping and the pressure on the <Color hex="#c00">'-' side</Color> drops, to a minimum of -1.0 bar, which is a vacuum.
 
@@ -20,13 +20,13 @@ Positive pressure should be applied on the <Color hex="#0c0">'+' side</Color>; w
 ## Applications
 
 The following uses exist for negative (vacuum) pressure:
-- Disenchanting: place an *enchanted item* or *Enchanted Book* with more than one enchantment and a vanilla *Book* in a [Pressure Chamber](../pressure_chamber.md) and give the chamber sufficient negative pressure. A random enchantment will transfer from the item to the book.
-- The [Air Grate Module](../air_grate_module.md), when given negative pressure, will attract entities to itself.
+- Disenchanting: place an *enchanted item* or *Enchanted Book* with more than one enchantment and a vanilla *Book* in a [Pressure Chamber](../manufacturing/pressure_chamber.md) and give the chamber sufficient negative pressure. A random enchantment will transfer from the item to the book.
+- The [Air Grate Module](../tubes/air_grate_module.md), when given negative pressure, will attract entities to itself.
 
 ## Applications (cont.)
 
 
-- Both the [Vacuum Trap](../vacuum_trap.md) and [Spawner Extractor](../spawner_extractor.md), devices required for making and using [Pressurized Spawners](../pressurized_spawner.md), need negative pressure to operate.
+- Both the [Vacuum Trap](../spawning/vacuum_trap.md) and [Spawner Extractor](../spawning/spawner_extractor.md), devices required for making and using [Pressurized Spawners](../spawning/pressurized_spawner.md), need negative pressure to operate.
 
 Crafting a Vacuum Pump
 

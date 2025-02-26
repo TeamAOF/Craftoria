@@ -9,7 +9,7 @@ item_ids:
 
 # Pressure Gauge Module
 
-This tube module shows the [pressure](../pressure.md) currently in the tube it's attached to. It also emits a (directional) <Color hex="#f00">redstone signal</Color> of which the strength equals:
+This tube module shows the [pressure](../base_concepts/pressure.md) currently in the tube it's attached to. It also emits a (directional) <Color hex="#f00">redstone signal</Color> of which the strength equals:
 
 <Color hex="#272">  strength = 2 x pressure</Color>
 

@@ -9,7 +9,7 @@ item_ids:
 
 # Regulator Module
 
-The Regulator Tube Module is an [inline](./tube_modules.md#inline) module used to limit the [pressure](../pressure.md) allowed through the tube. By default, the module will regulate the pressure to 4.9 bar (for both basic and advanced tubes) with no redstone signal, reducing toward 0 as the signal rises toward 15. This means a lever right beside a regulator closes it, preventing any air flow through it.
+The Regulator Tube Module is an [inline](./tube_modules.md#inline) module used to limit the [pressure](../base_concepts/pressure.md) allowed through the tube. By default, the module will regulate the pressure to 4.9 bar (for both basic and advanced tubes) with no redstone signal, reducing toward 0 as the signal rises toward 15. This means a lever right beside a regulator closes it, preventing any air flow through it.
 
 When the narrow side of the regulator reaches this pressure, no more air will be allowed through the tube. This principal can be used as a *transformer*: on the input (wide) side is high-pressure air, but the Regulator Tube limits the pressure on the output to the threshold pressure.
 

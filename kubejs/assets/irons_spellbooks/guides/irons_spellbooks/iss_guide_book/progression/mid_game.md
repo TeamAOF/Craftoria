@@ -42,7 +42,7 @@ You should also start to craft stronger armor using arcane cloth. In order to ge
 ## Scarecrow Armor
 
 <GameScene zoom={4}>
-  <Entity id="minecraft:armor_stand"data="{ArmorItems:[{id:'irons_spellbooks:pumpkin_boots',Count:1b},{id:'irons_spellbooks:pumpkin_leggings',Count:1b},{id:'irons_spellbooks:pumpkin_chestplate',Count:1b},{id:'irons_spellbooks:pumpkin_helmet',Count:1b}],NoBasePlate:1b}" />
+  <Entity id="minecraft:armor_stand" data="{ArmorItems:[{id:'irons_spellbooks:pumpkin_boots',Count:1b},{id:'irons_spellbooks:pumpkin_leggings',Count:1b},{id:'irons_spellbooks:pumpkin_chestplate',Count:1b},{id:'irons_spellbooks:pumpkin_helmet',Count:1b}],NoBasePlate:1b}" />
 </GameScene>
 
 ## Rare Materials

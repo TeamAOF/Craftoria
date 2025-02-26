@@ -39,23 +39,23 @@ Several blocks from mods will also function as static heat sources with differin
 
 <ItemImage id="pneumaticcraft:vortex_tube" />
 
-A [Vortex Tube](../vortex_tube.md) is a *dynamic heat source* which converts [pressure](./pressure.md) directly to heat and cold. It's highly recommended to put a [Heat Sink](../heat_sink.md) on the unused side of a Vortex Tube, for efficiency.
+A [Vortex Tube](../machines/vortex_tube.md) is a *dynamic heat source* which converts [pressure](./pressure.md) directly to heat and cold. It's highly recommended to put a [Heat Sink](../machines/heat_sink.md) on the unused side of a Vortex Tube, for efficiency.
 
 <ItemImage id="pneumaticcraft:heat_frame" />
 
-A [Heat Frame](../heat_frame.md) is a gadget that can be used to heat (or freeze!) items in any inventory. Note that Heat Frames will not absorb heat directly from a *static heat source*, but you could put a [Heat Pipe](../heat_pipe.md) beside it to transmit the heat.
+A [Heat Frame](../semiblocks/heat_frame.md) is a gadget that can be used to heat (or freeze!) items in any inventory. Note that Heat Frames will not absorb heat directly from a *static heat source*, but you could put a [Heat Pipe](../machines/heat_pipe.md) beside it to transmit the heat.
 
 <ItemImage id="pneumaticcraft:heat_sink" />
 
-A [Heat Sink](../heat_sink.md) is a block that can be used to efficiently disperse Heat (or cold!) from the block it's attached to, into the atmosphere.
+A [Heat Sink](../machines/heat_sink.md) is a block that can be used to efficiently disperse Heat (or cold!) from the block it's attached to, into the atmosphere.
 
 <ItemImage id="pneumaticcraft:heat_pipe" />
 
-A [Heat Pipe](../heat_pipe.md) is an insulated core of compressed iron which can transmit heat between blocks, without any thermal connection to adjacent air or fluid blocks. It's a more compact (and cheaper) alternative to using *Compressed Iron Blocks* to transmit heat. You can also attach *Heat Sinks* directly to a Heat Pipe.
+A [Heat Pipe](../machines/heat_pipe.md) is an insulated core of compressed iron which can transmit heat between blocks, without any thermal connection to adjacent air or fluid blocks. It's a more compact (and cheaper) alternative to using *Compressed Iron Blocks* to transmit heat. You can also attach *Heat Sinks* directly to a Heat Pipe.
 
 <ItemImage id="minecraft:furnace" />
 
-When connecting a vanilla *Furnace* to any dynamic heat source (such as a [Vortex Tube](../vortex_tube.md), but also blocks like the [Advanced Air Compressor](../advanced_air_compressor.md) which produces heat), the heat will be consumed by the Furnace to "fuel" it, making it possible to run Furnaces purely on heat, requiring no solid fuel. This is both convenient and more efficient.
+When connecting a vanilla *Furnace* to any dynamic heat source (such as a [Vortex Tube](../machines/vortex_tube.md), but also blocks like the [Advanced Air Compressor](../compressors/advanced_air_compressor.md) which produces heat), the heat will be consumed by the Furnace to "fuel" it, making it possible to run Furnaces purely on heat, requiring no solid fuel. This is both convenient and more efficient.
 
 ## Furnace (cont)
 

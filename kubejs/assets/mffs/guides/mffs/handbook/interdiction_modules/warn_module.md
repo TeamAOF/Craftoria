@@ -11,7 +11,7 @@ item_ids:
 
 <ItemImage id="mffs:warn_module" />
 
-The <Color id="dark_purple">Warn Module</Color> can be placed in the matrix slots of an [Interdiction Matrix](../interdiction_matrix.md) to periodically send a warning to all unathorized players within its Action Range.
+The <Color id="dark_purple">Warn Module</Color> can be placed in the matrix slots of an [Interdiction Matrix](../machines/interdiction_matrix.md) to periodically send a warning to all unathorized players within its Action Range.
 
 Crafting the <Color id="dark_purple">Warn Module</Color>.
 

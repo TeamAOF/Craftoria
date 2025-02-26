@@ -17,14 +17,14 @@ navigation:
 <ItemImage id="laserio:card_item{channel:0b" />
 <ItemImage id="exact:0b" />
 <ItemImage id="inv:{Items:[]" />
-<ItemImage id="Size:2}" />
+<ItemImage id="" />
 <ItemImage id="itemextractamt:1b" />
 <ItemImage id="itemextractspeed:20" />
 <ItemImage id="mode:0b" />
 <ItemImage id="priority:0s" />
 <ItemImage id="regulate:0b" />
 <ItemImage id="roundRobin:0" />
-<ItemImage id="sneaky:-1b}" />
+<ItemImage id="" />
 
 输入模式卡是抽取模式卡的有效目标。
 
@@ -33,28 +33,28 @@ navigation:
 <ItemImage id="laserio:card_item{channel:0b" />
 <ItemImage id="exact:0b" />
 <ItemImage id="inv:{Items:[]" />
-<ItemImage id="Size:2}" />
+<ItemImage id="" />
 <ItemImage id="itemextractamt:1b" />
 <ItemImage id="itemextractspeed:20" />
 <ItemImage id="mode:1b" />
 <ItemImage id="priority:0s" />
 <ItemImage id="regulate:0b" />
 <ItemImage id="roundRobin:0" />
-<ItemImage id="sneaky:-1b}" />
+<ItemImage id="" />
 
 抽取模式卡试图从相邻的方块提取对象。以物品为例，物品会从箱子被抽取并发送到一个输入卡。
 
 <ItemImage id="laserio:card_item{channel:0b" />
 <ItemImage id="exact:0b" />
 <ItemImage id="inv:{Items:[]" />
-<ItemImage id="Size:2}" />
+<ItemImage id="" />
 <ItemImage id="itemextractamt:1b" />
 <ItemImage id="itemextractspeed:20" />
 <ItemImage id="mode:2b" />
 <ItemImage id="priority:0s" />
 <ItemImage id="regulate:0b" />
 <ItemImage id="roundRobin:0" />
-<ItemImage id="sneaky:-1b}" />
+<ItemImage id="" />
 
 存储模式卡试图寻找它们过滤器中设定的物品，并从网络中其他输入模式节点拉取物品。
 

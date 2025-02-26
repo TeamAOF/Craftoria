@@ -9,7 +9,7 @@ navigation:
 
 This is a [Condition](./conditions.md) widget.
 
-The *Drone Condition: Pressure* widget allows you to check the [pressure](../pressure.md) of this [Drone](../drone.md).
+The *Drone Condition: Pressure* widget allows you to check the [pressure](../base_concepts/pressure.md) of this [Drone](../tools/drone.md).
 
 *Drone Condition: Pressure Widget*
 

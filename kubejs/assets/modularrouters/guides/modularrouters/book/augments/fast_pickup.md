@@ -9,7 +9,7 @@ item_ids:
 
 # Fast Pickup Augment
 
-This augment can only be added to the [Vacuum Module](../vacuum.md). It allows the Vacuum Module to ignore the normal pickup delay on dropped items - 40 ticks for items dropped by players, and 10 ticks for items dropped by other means (e.g. sheep shearing) - and pick up items as soon as it sees them.
+This augment can only be added to the [Vacuum Module](../modules/vacuum.md). It allows the Vacuum Module to ignore the normal pickup delay on dropped items - 40 ticks for items dropped by players, and 10 ticks for items dropped by other means (e.g. sheep shearing) - and pick up items as soon as it sees them.
 
 A max of one Fast Pickup Augment can be added.
 

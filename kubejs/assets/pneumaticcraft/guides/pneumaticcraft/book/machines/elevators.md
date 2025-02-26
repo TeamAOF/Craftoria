@@ -31,7 +31,7 @@ You can create bigger *Elevators* by placing more *Elevator Bases* next to each 
 
 ## Saving Air
 
-The *Elevator Base* can accept up to four [Charging Upgrades](../upgrades.md#charging), which allow it to reclaim used air when the elevator descends (normally descent costs no air but does not regenerate air either).
+The *Elevator Base* can accept up to four [Charging Upgrades](../base_concepts/upgrades.md#charging), which allow it to reclaim used air when the elevator descends (normally descent costs no air but does not regenerate air either).
 
 This comes at a cost of slower descent; with 4 upgrades installed, air is reclaimed at 60% of the cost to rise that distance, but descent will be 40% slower.
 
@@ -46,7 +46,7 @@ This comes at a cost of slower descent; with 4 upgrades installed, air is reclai
 
 In addition, an *Elevator Caller* will emit a <Color hex="#f00">redstone signal</Color> when the *Elevator* is at its floor, and providing a Caller with a <Color hex="#f00">redstone pulse</Color> will call the *Elevator* to its floor.
 
-Finally, the *Elevator Caller* can be camouflaged to look like other blocks with the [Camouflage Applicator](../camo_applicator.md) tool.
+Finally, the *Elevator Caller* can be camouflaged to look like other blocks with the [Camouflage Applicator](../tools/camo_applicator.md) tool.
 
 *A 3x3 Elevator with two visible Elevator Callers*
 

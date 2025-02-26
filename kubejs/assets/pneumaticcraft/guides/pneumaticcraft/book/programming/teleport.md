@@ -7,9 +7,9 @@ navigation:
 
 # Teleport Widget
 
-*Teleport* is the more expensive (in terms of [air](../pressure.md) used) version of the [Goto](./goto.md) widget, but just as straightforward: the [Drone](../drone.md) will teleport to the nearest reachable location within the specified [Area](./area.md).
+*Teleport* is the more expensive (in terms of [air](../base_concepts/pressure.md) used) version of the [Goto](./goto.md) widget, but just as straightforward: the [Drone](../tools/drone.md) will teleport to the nearest reachable location within the specified [Area](./area.md).
 
-The *Drone* uses 10000mL air to teleport, which is most of an un-upgraded *Drone's* capacity, so [Volume Upgrades](../upgrades.md#volume) are recommended.
+The *Drone* uses 10000mL air to teleport, which is most of an un-upgraded *Drone's* capacity, so [Volume Upgrades](../base_concepts/upgrades.md#volume) are recommended.
 
 *Now I'm here. Now I'm there.*
 

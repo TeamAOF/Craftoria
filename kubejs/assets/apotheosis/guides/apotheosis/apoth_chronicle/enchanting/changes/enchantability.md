@@ -8,7 +8,7 @@ navigation:
 
 # Enchantability
 
-In Vanilla, all items without an explicit [Item Enchantability](../enchantability.md) have a default of zero.
+In Vanilla, all items without an explicit [Item Enchantability](../table/enchantability.md) have a default of zero.
 
 Apotheosis changes the default to one.
 

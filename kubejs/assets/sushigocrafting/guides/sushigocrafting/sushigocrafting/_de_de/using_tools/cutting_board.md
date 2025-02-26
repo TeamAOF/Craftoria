@@ -14,7 +14,7 @@ item_ids:
 Das Zerkleinern deiner Zutaten ist ein wichtiger Schritt beim Kochen. Du kannst deine Zutaten platzieren, indem du mit der rechten Maustaste auf das Schneidebrett klickst und dann mit einem <Color id="gold">Hackmesser</Color> auf die Zutaten rechtsklickst, um sie zu zerkleinern. 
 Um Zutaten zu entfernen, halte die Schleichtaste(Sneak) gedrückt und klicke mit der rechten Maustaste auf das Schneidebrett. 
 
-[Ruhige Hände](../effects.md) werden dir beim Umgang mit den Schneidebrettern helfen.
+[Ruhige Hände](../getting_started/effects.md) werden dir beim Umgang mit den Schneidebrettern helfen.
 
 
 

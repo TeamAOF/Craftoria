@@ -11,7 +11,7 @@ item_ids:
 
 <ItemImage id="mffs:id_card" />
 
-MFFS <Color id="dark_purple">Identification Card</Color> are used in combination with the [Biometric Identifier](../biometric_identifier.md) to govern the rights and privileges of players.
+MFFS <Color id="dark_purple">Identification Card</Color> are used in combination with the [Biometric Identifier](../machines/biometric_identifier.md) to govern the rights and privileges of players.
 
 Crafting the <Color id="dark_purple">Identification Card</Color>.
 

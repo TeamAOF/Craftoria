@@ -9,7 +9,7 @@ item_ids:
 
 # Seismic Sensor
 
-A Seismic Sensor is an early game item used to track down [Oil](../oil.md). Unlike most tools, the sensor does not require [pressure](../pressure.md) to operate. When *right-clicked*, it will show whether or not Oil was found somewhere directly below the block the sensor was clicked on.
+A Seismic Sensor is an early game item used to track down [Oil](../base_concepts/oil.md). Unlike most tools, the sensor does not require [pressure](../base_concepts/pressure.md) to operate. When *right-clicked*, it will show whether or not Oil was found somewhere directly below the block the sensor was clicked on.
 
 A Seismic Sensor can have two results:
 
@@ -19,7 +19,7 @@ No Oil is found right under this block. Keep looking.
 
 <Color hex="#008">  Found Oil <distance>m below. It contains about <amount> buckets of Oil.</Color>
 
-Oil is found! The clicked block would be a suitable place to put a [Gas Lift](../gas_lift.md) to pump the Oil out.
+Oil is found! The clicked block would be a suitable place to put a [Gas Lift](../machines/gas_lift.md) to pump the Oil out.
 
 Crafting a Seismic Sensor
 

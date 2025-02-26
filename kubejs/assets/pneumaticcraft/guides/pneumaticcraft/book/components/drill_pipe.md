@@ -9,7 +9,7 @@ item_ids:
 
 # Drill Pipe
 
-*Drill Pipes* are required by the [Gas Lift](../gas_lift.md) to drill down to fluids.
+*Drill Pipes* are required by the [Gas Lift](../machines/gas_lift.md) to drill down to fluids.
 
 They are also suitable for use in general building, if you like.
 

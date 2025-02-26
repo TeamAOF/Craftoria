@@ -9,7 +9,7 @@ item_ids:
 
 # Speed Upgrade
 
-By default, a [router](../modular_router.md) ticks every 20 server ticks, or once per second. On each tick, every installed module is executed in order, left to right.
+By default, a [router](../router/modular_router.md) ticks every 20 server ticks, or once per second. On each tick, every installed module is executed in order, left to right.
 
 If you need a router to run faster than this, add *Speed Upgrades*; each Speed Upgrade reduces the tick interval by 2 server ticks, down to a minimum of every 2 server ticks (or 10 times per second).
 

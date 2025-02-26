@@ -17,11 +17,11 @@ A Router with a Security Upgrade installed can *only* be opened by players white
 
 ## Fake Players
 
-Several modules ([Placer](../placer.md), [Breaker](../breaker.md), [Activator](../activator.md)) do their work as a *fake player*. By default this is a player with the username *[Modular Routers]*, but when a security upgrade is installed, those modules operate as the upgrade's owner. This is much safer on multiplayer servers with claim protection than simply allowing *[Modular Routers]* to do anything with your claims.
+Several modules ([Placer](../modules/placer.md), [Breaker](../modules/breaker.md), [Activator](../modules/activator.md)) do their work as a *fake player*. By default this is a player with the username *[Modular Routers]*, but when a security upgrade is installed, those modules operate as the upgrade's owner. This is much safer on multiplayer servers with claim protection than simply allowing *[Modular Routers]* to do anything with your claims.
 
 ## Activator Attack Mode
 
-When the [Activator Module](../activator.md) is in *Attack Mode*, it will ignore any players whitelisted by a Security Upgrade installed in the Router. This is generally a good idea to avoid pain & suffering if you have a high-damage weapon in your Router...
+When the [Activator Module](../modules/activator.md) is in *Attack Mode*, it will ignore any players whitelisted by a Security Upgrade installed in the Router. This is generally a good idea to avoid pain & suffering if you have a high-damage weapon in your Router...
 
 <a name="override"></a>
 <ItemImage id="modularrouters:override_card" />

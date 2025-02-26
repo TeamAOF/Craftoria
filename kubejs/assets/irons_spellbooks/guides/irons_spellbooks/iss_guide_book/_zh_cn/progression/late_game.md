@@ -47,7 +47,7 @@ item_ids:
 ## 冰霜术士套装
 
 <GameScene zoom={4}>
-  <Entity id="minecraft:armor_stand"data="{ArmorItems:[{id:'irons_spellbooks:cryomancer_boots',Count:1b},{id:'irons_spellbooks:cryomancer_leggings',Count:1b},{id:'irons_spellbooks:cryomancer_chestplate',Count:1b},{id:'irons_spellbooks:cryomancer_helmet',Count:1b}],NoBasePlate:1b}" />
+  <Entity id="minecraft:armor_stand" data="{ArmorItems:[{id:'irons_spellbooks:cryomancer_boots',Count:1b},{id:'irons_spellbooks:cryomancer_leggings',Count:1b},{id:'irons_spellbooks:cryomancer_chestplate',Count:1b},{id:'irons_spellbooks:cryomancer_helmet',Count:1b}],NoBasePlate:1b}" />
 </GameScene>
 
 不同流派的套装均需要用到奥术布匹与一个独特的符文，按照这个模板制作。

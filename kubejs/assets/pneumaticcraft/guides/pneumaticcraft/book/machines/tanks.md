@@ -12,11 +12,11 @@ item_ids:
 
 # Tanks
 
-There are four fluid storage tanks, imaginatively titled the *Small Tank*, the *Medium Tank*, the *Large Tank*, and the *Huge Tank*. While [Liquid Hoppers](./liquid_hopper.md) are also suitable for fluid storage, these tanks provide denser storage and some useful stacking functionality, and don't automatically transfer fluids (although they can push fluids if a [Dispenser Upgrade](../upgrades.md#dispenser)) is added.
+There are four fluid storage tanks, imaginatively titled the *Small Tank*, the *Medium Tank*, the *Large Tank*, and the *Huge Tank*. While [Liquid Hoppers](./liquid_hopper.md) are also suitable for fluid storage, these tanks provide denser storage and some useful stacking functionality, and don't automatically transfer fluids (although they can push fluids if a [Dispenser Upgrade](../base_concepts/upgrades.md#dispenser)) is added.
 
 ## Stacking
 
-All four types of tank can be *stacked* vertically with each other, and formed into a sort-of-multiblock. To do this, right-click the tank with a [Wrench](../pneumatic_wrench.md); wrenching the top half will attempt to join the tank to the tank above, and vice versa for the tank below.
+All four types of tank can be *stacked* vertically with each other, and formed into a sort-of-multiblock. To do this, right-click the tank with a [Wrench](../tools/pneumatic_wrench.md); wrenching the top half will attempt to join the tank to the tank above, and vice versa for the tank below.
 
 Once tanks are stacked, any fluid in <Color hex="#880">$(t:If the fluid has a density of < 0, it will move up rather than down)higher tanks$(/t:If the fluid has a density of < 0, it will move up rather than down)</Color> will automatically flow down to lower tanks, assuming there is space.
 

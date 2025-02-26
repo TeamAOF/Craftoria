@@ -16,10 +16,10 @@ The Pneumatic Wrench is the *wrench* item for <Color hex="#228">PneumaticCraft: 
 - *Sneak+right-click* <Color hex="#228">PneumaticCraft: Repressurized</Color> machines to drop them as items, preserving any stored upgrades and air in the machine.
 
 
-- *Right-click* [Drones](../drones.md) to dismantle them, dropping them as an item.
-- *Right-click* [Pressure Tubes](../pressure_tubes.md) to close/re-open sections to isolate them from each other.
+- *Right-click* [Drones](../base_concepts/drones.md) to dismantle them, dropping them as an item.
+- *Right-click* [Pressure Tubes](../tubes/pressure_tubes.md) to close/re-open sections to isolate them from each other.
 
-The *Pneumatic Wrench* must be pressurized in a [Charging Station](../charging_station.md) before use.
+The *Pneumatic Wrench* must be pressurized in a [Charging Station](../machines/charging_station.md) before use.
 
 Crafting a Pneumatic Wrench
 

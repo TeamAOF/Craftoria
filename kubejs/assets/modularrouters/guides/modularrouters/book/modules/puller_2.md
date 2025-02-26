@@ -11,7 +11,7 @@ item_ids:
 
 This behaves like the [Puller Mk1](./puller_1.md), but can pull items from non-adjacent inventories.
 
-The inventory can be up to 12 blocks away (up to 24 with [Range Augments](../range_up.md)); clear line of sight is *not* required.
+The inventory can be up to 12 blocks away (up to 24 with [Range Augments](../augments/range_up.md)); clear line of sight is *not* required.
 
 
 - To select the target inventory, *Sneak-Right-click* the block with the Puller Mk2 module in hand. You will get a confirmation message.

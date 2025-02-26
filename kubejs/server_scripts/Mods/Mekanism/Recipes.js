@@ -84,6 +84,22 @@ ServerEvents.recipes((e) => {
     e.custom(recipe).id(makeID('rotary', chem, fluid));
   };
 
+  let nucleosynthesizing = (output, input, chem, duration) => {
+    let recipe = {
+      type: 'mekanism:nucleosynthesizing',
+      chemical_input: {
+        amount: parseInt(chem.split('x ')[0]) || 1000,
+        chemical: chem.split('x ')[1] || chem,
+      },
+      duration: duration || 100,
+      item_input: Ingredient.of(input).toJson(),
+      output: Item.of(output).toJson(),
+      per_tick_usage: false,
+    };
+
+    e.custom(recipe).id(makeID('nucleosynthesizing', output, input));
+  };
+
   let oxidizing = (output, input) => {
     let recipe = {
       type: 'mekanism:oxidizing',
@@ -132,23 +148,7 @@ ServerEvents.recipes((e) => {
   }).id('mekanism:cardboard_box');
 
   // Replica
-  e.custom({
-    "type": "mekanism:nucleosynthesizing",
-    "chemical_input": {
-      "amount": 200,
-      "chemical": "craftoria:quantum_infusion"
-    },
-    "duration": 1000,
-    "item_input": {
-      "count": 1,
-      "item": "replication:raw_replica"
-    },
-    "output": {
-      "count": 1,
-      "id": "replication:replica_ingot"
-    },
-    "per_tick_usage": false
-    }),
+  nucleosynthesizing('replication:replica_ingot', 'replication:raw_replica', '200x craftoria:quantum_infusion', 250);
 
   // MekaSuit / Weapons
   e.shaped('mekaweapons:katana_blade', ['  B', 'CB ', 'AC '], {

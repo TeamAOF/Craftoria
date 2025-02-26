@@ -12,7 +12,7 @@ item_ids:
 
 <Color id="gold">ヘドロ</Color>を何か有用なものに変える機械です。
 
-[植物採集機](../plant_gatherer.md)から取得した<Color id="gold">ヘドロ</Color>を供給すると<Color id="gold">何か</Color>を生成します。
+[植物採集機](../agr_hus/plant_gatherer.md)から取得した<Color id="gold">ヘドロ</Color>を供給すると<Color id="gold">何か</Color>を生成します。
 ただし、このプロセスには <Color id="gold">1,000</Color>FE/tが必要なので電力を蓄えておくようにしてください。
 
 

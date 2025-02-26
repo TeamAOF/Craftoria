@@ -14,7 +14,7 @@ item_ids:
 
 # Assembly System
 
-To be able to craft higher tier materials, you'll need an *Assembly System*; a collection of *Assembly Machines*. These machines communicate with each other when they're horizontally adjacent. Only one machine of each type can exist (with the exception of the *Assembly IO Unit*, see below). The assembly line runs on [compressed air](../pressure.md), but you only need to suuply air to the Assembly Controller to power the whole system.
+To be able to craft higher tier materials, you'll need an *Assembly System*; a collection of *Assembly Machines*. These machines communicate with each other when they're horizontally adjacent. Only one machine of each type can exist (with the exception of the *Assembly IO Unit*, see below). The assembly line runs on [compressed air](../base_concepts/pressure.md), but you only need to suuply air to the Assembly Controller to power the whole system.
 
 <ItemImage id="pneumaticcraft:assembly_controller" />
 

@@ -25,9 +25,9 @@ This can result in items being dropped on the ground, e.g. if a cow is clicked w
 
 ## Attack Entity
 
-This mode performs a left-click with the item in the router's buffer on a nearby *entity*, attacking it. This mode costs [Forge Energy](../energy.md) by default, unlike other modules.
+This mode performs a left-click with the item in the router's buffer on a nearby *entity*, attacking it. This mode costs [Forge Energy](../upgrades/energy.md) by default, unlike other modules.
 
-Note: while [Speed Upgrades](../speed.md) can be useful here, weapon cooldowns do apply, so excessive Speed Upgrades will just end up wasting energy and weapon durability.
+Note: while [Speed Upgrades](../upgrades/speed.md) can be useful here, weapon cooldowns do apply, so excessive Speed Upgrades will just end up wasting energy and weapon durability.
 
 The Activator has a range of about 4 blocks, similar to what an actual player has. The module can also be configured to look *Above* or *Below* (default is *Level*).
 

@@ -15,7 +15,7 @@ The Flow Detector Tube Module is an [inline](./tube_modules.md#inline) module wh
 
 E.g. with 20mL/tick of air flowing, the signal level will be 20*0.2=4.
 
-Note that *flow* is a different physical quantity to [pressure](../pressure.md). Flow is the amount of air traveling through a tube per tick. So if you have (say) an [Elevator](../elevators.md) which isn't running, the flow will be 0, but when it runs it will be consuming air, so the flow will be non-zero. So this module can be used to detect if a machine is using air.
+Note that *flow* is a different physical quantity to [pressure](../base_concepts/pressure.md). Flow is the amount of air traveling through a tube per tick. So if you have (say) an [Elevator](../machines/elevators.md) which isn't running, the flow will be 0, but when it runs it will be consuming air, so the flow will be non-zero. So this module can be used to detect if a machine is using air.
 
 The Flow Detector Module does not accept an [Module Expansion Card](./module_expansion_card.md).
 
