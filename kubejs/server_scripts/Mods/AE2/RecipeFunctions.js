@@ -12,11 +12,11 @@ let ae2GenRecipeID = (name, type) => {
  * @author WhitePhantom
  * @description ExtendedAE Crystal Assembler recipe
  * @param {$RecipesKubeEvent_} event The event object, usually `event`. Required.
- * @param {$Fluid_} iFluid The input fluid. ex '1000x minecraft:water'. Optional.
- * @param {$Ingredient_[]} iInput The input items. ['2x minecraft:cobblestone', '3x minecraft:dirt']. Required. Max 9 items.
  * @param {$Item_} iOutput The output item. ex '4x minecraft:chest'. Required.
+ * @param {$Ingredient_[]} iInput The input items. ['2x minecraft:cobblestone', '3x minecraft:dirt']. Required. Max 9 items.
+ * @param {$Fluid_} iFluid The input fluid. ex '1000x minecraft:water'. Optional.
  */
-let exAssembler = (event, iFluid, iInput, iOutput) => {
+let exAssembler = (event, iOutput, iInput, iFluid) => {
   let recipe = {
     type: 'extendedae:crystal_assembler',
     input_items: [],

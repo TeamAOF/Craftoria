@@ -23,7 +23,7 @@ ServerEvents.recipes((e) => {
 
   exAssembler(
     e,
-    '16000x minecraft:lava',
+    'craftoria:infinity_lava_cell',
     [
       'craftoria:infinity_cell_housing',
       'craftoria:fire_essence',
@@ -34,6 +34,32 @@ ServerEvents.recipes((e) => {
       '64x actuallyadditions:lava_factory_casing',
       '64x functionalstorage:dripping_upgrade',
     ],
-    'craftoria:infinity_lava_cell'
+    '16000x minecraft:lava'
   );
+
+  e.remove({ id: 'extendedae:water_cell' });
+  exAssembler(
+    e,
+    'extendedae:infinity_water_cell',
+    ['craftoria:infinity_cell_housing', 'reliquary:emperor_chalice', '16x functionalstorage:water_generator_upgrade', '64x sfm:water_tank'],
+    '16000x minecraft:water'
+  );
+
+  e.remove({ id: 'extendedae:cobblestone_cell' });
+  exAssembler(e, 'extendedae:infinity_cobblestone_cell', [
+    'craftoria:infinity_cell_housing',
+    '64x mekanism:upgrade_stone_generator',
+    '32x industrialforegoing:material_stonework_factory',
+    '16x craftoria:4x_compressed_cobblestone_block',
+  ]);
+
+  exAssembler(e, 'craftoria:infinity_cell_housing', [
+    '32x #c:ingots/replica',
+    '16x bigger_ae2:digital_singularity_cell_component',
+    '16x advanced_ae:quantum_alloy_plate',
+    '16x modern_industrialization:aluminum_tank',
+    // '16x modern_industrialization:aluminum_barrel', // Disabled due MI barrels not stacking
+    '4x mekanism_extras:cosmic_fluid_tank',
+    '4x mekanism_extras:cosmic_bin',
+  ]);
 });

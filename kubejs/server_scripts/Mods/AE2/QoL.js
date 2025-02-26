@@ -147,29 +147,21 @@ ServerEvents.recipes((event) => {
   );
 
   //Misc recipes
-  exAssembler(
-    event,
-    null,
-    [
-      'ae2:calculation_processor_press',
-      'ae2:engineering_processor_press',
-      'ae2:logic_processor_press',
-      'ae2:silicon_press',
-      'extendedae:concurrent_processor_press',
-      'advanced_ae:quantum_processor_press',
-      'megacells:accumulation_processor_press',
-      'appflux:energy_processor_press',
-    ],
-    'craftoria:universal_press'
-  );
+  exAssembler(event, 'craftoria:universal_press', [
+    'ae2:calculation_processor_press',
+    'ae2:engineering_processor_press',
+    'ae2:logic_processor_press',
+    'ae2:silicon_press',
+    'extendedae:concurrent_processor_press',
+    'advanced_ae:quantum_processor_press',
+    'megacells:accumulation_processor_press',
+    'appflux:energy_processor_press',
+  ]);
 
   event.remove({ output: 'extendedae:circuit_cutter' });
-  exAssembler(
-    event,
-    null,
-    ['extendedae:machine_frame', '8x ae2:engineering_processor', 'craftoria:universal_press', 'minecraft:stonecutter'],
-    'extendedae:circuit_cutter'
-  );
+  exAssembler(event, 'extendedae:circuit_cutter', [
+    ('extendedae:machine_frame', '8x ae2:engineering_processor', 'craftoria:universal_press', 'minecraft:stonecutter'),
+  ]);
 
   exCutter(event, 'craftoria:1x_compressed_iron_block', '1x craftoria:universal_press');
 
