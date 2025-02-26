@@ -210,6 +210,15 @@
 	quests: [
 		{
 			id: "4513758183EFECE7"
+			rewards: [{
+				count: 2
+				id: "6E844F1B4071A508"
+				item: {
+					count: 1
+					id: "replication:replica_ingot"
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
@@ -223,6 +232,15 @@
 		{
 			dependencies: ["4513758183EFECE7"]
 			id: "7FCA9352AF05C235"
+			rewards: [{
+				count: 8
+				id: "01F6631877DE7D24"
+				item: {
+					count: 1
+					id: "replication:matter_network_pipe"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "2856DD2FD071B536"
 				item: { count: 1, id: "replication:matter_network_pipe" }
@@ -278,6 +296,14 @@
 		{
 			dependencies: ["7FCA9352AF05C235"]
 			id: "44ABC5C2552BF034"
+			rewards: [{
+				id: "3D60D48529A2B8FE"
+				item: {
+					count: 1
+					id: "replication:matter_tank"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1EE1897F01AC823C"
 				item: { count: 1, id: "replication:matter_tank" }
@@ -289,6 +315,14 @@
 		{
 			dependencies: ["4513758183EFECE7"]
 			id: "6392FB264D1B2E52"
+			rewards: [{
+				id: "57C48CDEE74636B8"
+				item: {
+					count: 1
+					id: "replication:memory_chip"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "2D476A44C540026B"
 				item: { count: 1, id: "replication:memory_chip" }

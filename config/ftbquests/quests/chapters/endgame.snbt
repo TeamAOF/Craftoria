@@ -30,38 +30,31 @@
 			rotation: 0.0d
 			width: 7.0d
 			x: 7.0d
-			y: -4.0d
-		}
-		{
-			height: 13.0d
-			image: "twilightforest:textures/magic_paintings/lucid_lands/frame.png"
-			rotation: 0.0d
-			width: 18.0d
-			x: 3.5d
-			y: -1.5d
+			y: -3.6d
 		}
 		{
 			height: 6.0d
-			image: "mekanism_extras:block/models/multipart/cosmic_logistical_transporter"
+			image: "modern_industrialization:block/quantum_machine_hull_bottom"
 			rotation: 0.0d
 			width: 6.0d
 			x: 7.0d
 			y: 0.0d
 		}
 		{
-			height: 3.0d
-			image: "mekanism_extras:block/models/multipart/cosmic_logistical_transporter"
+			height: 1.75d
+			image: "ftbquests:textures/gui/infinity.png"
 			rotation: 0.0d
-			width: 3.0d
-			x: 7.0d
-			y: 0.0d
+			width: 8.0d
+			x: 15.0d
+			y: -3.5d
 		}
 		{
-			height: 7.5d
-			image: "pneumaticcraft:item/upgrades/upgrade_frame_4"
+			height: 6.25d
+			image: "extendedae:block/assembler_matrix/frame_block_on"
+			order: -1
 			rotation: 0.0d
-			width: 7.5d
-			x: 7.0d
+			width: 6.25d
+			x: 15.0d
 			y: 0.0d
 		}
 	]
@@ -91,7 +84,7 @@
 				}
 				type: "item"
 			}]
-			shape: "diamond"
+			shape: "none"
 			size: 2.0d
 			tasks: [{
 				id: "308B9266BA486383"
@@ -104,54 +97,54 @@
 		{
 			icon_scale: 1.25d
 			id: "0578945AE9664476"
-			shape: "octagon"
+			shape: "none"
 			size: 1.25d
 			tasks: [{
 				id: "4A43020AC5C525CD"
 				item: { count: 1, id: "craftoria:ice_essence" }
 				type: "item"
 			}]
-			x: 1.875d
-			y: -1.875d
+			x: 1.25d
+			y: -1.25d
 		}
 		{
 			icon_scale: 1.25d
 			id: "10534DA1BD464834"
-			shape: "octagon"
+			shape: "none"
 			size: 1.25d
 			tasks: [{
 				id: "0EB93EC3D4EA3B10"
 				item: { count: 1, id: "craftoria:fire_essence" }
 				type: "item"
 			}]
-			x: -1.875d
-			y: -1.875d
+			x: -1.25d
+			y: -1.25d
 		}
 		{
 			icon_scale: 1.25d
 			id: "3F146A658E5A01F3"
-			shape: "octagon"
+			shape: "none"
 			size: 1.25d
 			tasks: [{
 				id: "524EA476E025E175"
 				item: { count: 1, id: "craftoria:nature_essence" }
 				type: "item"
 			}]
-			x: -1.875d
-			y: 1.875d
+			x: -1.25d
+			y: 1.25d
 		}
 		{
 			icon_scale: 1.25d
 			id: "2B41DC5E4D733C9C"
-			shape: "octagon"
+			shape: "none"
 			size: 1.25d
 			tasks: [{
 				id: "3D0E96EF9F24002D"
 				item: { count: 1, id: "craftoria:dark_essence" }
 				type: "item"
 			}]
-			x: 1.875d
-			y: 1.875d
+			x: 1.25d
+			y: 1.25d
 		}
 		{
 			dependencies: [
@@ -188,7 +181,7 @@
 					type: "item"
 				}
 			]
-			shape: "hexagon"
+			shape: "none"
 			size: 2.0d
 			tasks: [{
 				id: "330C416FCE98EA61"
@@ -201,54 +194,123 @@
 		{
 			icon_scale: 1.5d
 			id: "4146E345FC6AAB2B"
-			shape: "hexagon"
+			shape: "none"
 			size: 1.25d
 			tasks: [{
 				id: "1A64DE105275E314"
 				item: { count: 1, id: "mekanism_extras:alloy_spectrum" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: -1.875d
+			x: 5.625d
+			y: -1.25d
 		}
 		{
 			icon_scale: 1.5d
 			id: "1ED5B7234F281C2E"
-			shape: "hexagon"
+			shape: "none"
 			size: 1.25d
 			tasks: [{
 				id: "2FFDBFE0D6E30704"
 				item: { count: 1, id: "mekanism_extras:alloy_spectrum" }
 				type: "item"
 			}]
-			x: 8.75d
-			y: 1.875d
+			x: 8.125d
+			y: 1.25d
 		}
 		{
 			icon_scale: 1.5d
 			id: "4F891C5403AA6A5A"
-			shape: "hexagon"
+			shape: "none"
 			size: 1.25d
 			tasks: [{
 				id: "0BFCCD6A6831FBD2"
 				item: { count: 1, id: "modern_industrialization:singularity" }
 				type: "item"
 			}]
-			x: 5.0d
-			y: 1.875d
+			x: 5.625d
+			y: 1.25d
 		}
 		{
 			icon_scale: 1.5d
 			id: "3B087D3FA0B7474B"
-			shape: "hexagon"
+			shape: "none"
 			size: 1.25d
 			tasks: [{
 				id: "190CD07784160C82"
 				item: { count: 1, id: "modern_industrialization:singularity" }
 				type: "item"
 			}]
-			x: 8.75d
-			y: -1.875d
+			x: 8.125d
+			y: -1.25d
+		}
+		{
+			icon_scale: 1.5d
+			id: "7B81E0A800E42F1F"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "06964D3F2CD8EF13"
+				item: { count: 1, id: "craftoria:infinity_cell_housing" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B81E0A800E42F1F"]
+			icon_scale: 1.5d
+			id: "2AEFF017387078A1"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "403E6DA53C713D43"
+				item: { count: 1, id: "craftoria:infinity_lava_cell" }
+				type: "item"
+			}]
+			x: 13.75d
+			y: -1.25d
+		}
+		{
+			dependencies: ["7B81E0A800E42F1F"]
+			icon_scale: 1.5d
+			id: "068F3773EAE24593"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "293E4F56C320E17E"
+				item: { count: 1, id: "extendedae:infinity_water_cell" }
+				type: "item"
+			}]
+			x: 16.25d
+			y: -1.25d
+		}
+		{
+			dependencies: ["7B81E0A800E42F1F"]
+			icon_scale: 1.5d
+			id: "4EFD3B64BB14D201"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "71B44269CDD4F2FE"
+				item: { count: 1, id: "extendedae:infinity_cobblestone_cell" }
+				type: "item"
+			}]
+			x: 13.75d
+			y: 1.25d
+		}
+		{
+			dependencies: ["7B81E0A800E42F1F"]
+			icon_scale: 1.5d
+			id: "15044F4AA1C9A215"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "68C6E2F5A3022793"
+				item: { count: 1, id: "craftoria:infinity_soul_cell" }
+				type: "item"
+			}]
+			x: 16.25d
+			y: 1.25d
 		}
 	]
 }
