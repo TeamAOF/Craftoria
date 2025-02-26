@@ -15,7 +15,7 @@ item_ids:
 
 <ItemImage id="pneumaticcraft:charging_station" />
 
-すべての種類のドローンと同様に、これらのドローンは動作するために[圧力](../pressure.md)を必要とし、空気が少なくなると[ディスペンサーアップグレード](./drone.md#charging)を備えた充填ステーションを自動的に探します。
+すべての種類のドローンと同様に、これらのドローンは動作するために[圧力](../base_concepts/pressure.md)を必要とし、空気が少なくなると[ディスペンサーアップグレード](./drone.md#charging)を備えた充填ステーションを自動的に探します。
 
 ## 範囲
 
@@ -33,7 +33,7 @@ item_ids:
 
 <ItemImage id="pneumaticcraft:minigun_upgrade" />
 
-ドローンには代わりに[ミニガンアップグレード](../upgrades.md#minigun)を装備することもできます。その場合は、代わりに[ミニガンの銃弾](./minigun_ammo.md)をインベントリに追加する必要があります。
+ドローンには代わりに[ミニガンアップグレード](../base_concepts/upgrades.md#minigun)を装備することもできます。その場合は、代わりに[ミニガンの銃弾](./minigun_ammo.md)をインベントリに追加する必要があります。
 
 ## pneumaticcraft:guard_drone (TODO)
 

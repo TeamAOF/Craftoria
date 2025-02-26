@@ -7,7 +7,7 @@ navigation:
 
 # Vegetable Oil
 
-*Vegetable Oil* can be produced in a [Thermopneumatic Processing Plant](../thermopneumatic_processing_plant.md) from various *seeds* and *crops*. Seeds tend to be a better source of oil than grown crops. Vegetable Oil is required in the production of [Biodiesel](./biodiesel.md).
+*Vegetable Oil* can be produced in a [Thermopneumatic Processing Plant](../manufacturing/thermopneumatic_processing_plant.md) from various *seeds* and *crops*. Seeds tend to be a better source of oil than grown crops. Vegetable Oil is required in the production of [Biodiesel](./biodiesel.md).
 
 **TODO:** Unsupported Patchouli page type **pneumaticcraft:thermo_plant**
 

@@ -36,5 +36,5 @@ A <Color id="blue">biblioteca de encantamentos</Color> padrão tem uma <Color id
 
 A <Color id="blue">Biblioteca de Alexandria</Color> tem <Color id="gold">capacidade de nível</Color> de trinta e um (XXXI).
 
-Não pode ser criada diretamente e deve ser criada usando [encantamento de infusão](../infusion.md).
+Não pode ser criada diretamente e deve ser criada usando [encantamento de infusão](../table/infusion.md).
 

@@ -22,5 +22,5 @@ Perfuração faz com que os tridentes lançados sejam capazes de atingir inimigo
 
 O Apotheosis também adiciona um método de criar tridentes.
 
-Basta criar um <Color id="blue">tridente inerte</Color> e melhora-lo por meio de [encantamento de infusão](../infusion.md).
+Basta criar um <Color id="blue">tridente inerte</Color> e melhora-lo por meio de [encantamento de infusão](../table/infusion.md).
 

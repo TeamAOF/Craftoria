@@ -7,7 +7,7 @@ navigation:
 
 # Fluid Import Widget
 
-The *Fluid Import Widget* will make the [Drone](../drone.md) move to the nearest tank within the specified [area](./area.md), extract fluid from that tank and it put it in its own tank.
+The *Fluid Import Widget* will make the [Drone](../tools/drone.md) move to the nearest tank within the specified [area](./area.md), extract fluid from that tank and it put it in its own tank.
 
 It can also suck up fluids from in-world fluid blocks, making the *Drone* act as a portable pump.
 

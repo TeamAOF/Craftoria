@@ -19,7 +19,7 @@ Crafting the <Color id="dark_purple">Remote Controller</Color>.
 
 ## Operation
 
-When activated, the Remote establishes a bidirectional matter stream with the machine it has been set to control. In doing so, a player is not only granted access to all the machine's configurable options, but can add and remove its items as well - like they were standing right beside it. A <Color id="dark_purple">Remote Controller</Color> does not need to be charged; it draws energy directly from a nearby MFFS machine using the same frequency. As such, a Remote cannot function if there is insufficient [Fortron](../fortron.md) available.
+When activated, the Remote establishes a bidirectional matter stream with the machine it has been set to control. In doing so, a player is not only granted access to all the machine's configurable options, but can add and remove its items as well - like they were standing right beside it. A <Color id="dark_purple">Remote Controller</Color> does not need to be charged; it draws energy directly from a nearby MFFS machine using the same frequency. As such, a Remote cannot function if there is insufficient [Fortron](../getting_started/fortron.md) available.
 
 ## Usage
 

@@ -9,7 +9,7 @@ item_ids:
 
 # Enchantment Factory
 
-This machine when provided with large amounts of [Essence](../essence.md) and an item it will enchant the item with a level <Color id="gold">30</Color>.
+This machine when provided with large amounts of [Essence](../agr_hus/essence.md) and an item it will enchant the item with a level <Color id="gold">30</Color>.
 
 
 

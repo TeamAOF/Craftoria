@@ -42,7 +42,7 @@ Conditions can be divided into two categories: *World Conditions* and *Drone Con
 
 World Conditions are used to check for things in the world, e.g. does a *Chest* have a certain number of items, or does a block exist somewhere?
 
-*Drone Conditions* specifically target the [Drone](../drone.md), e.g. does the Drone have a certain item, or have a certain pressure?
+*Drone Conditions* specifically target the [Drone](../tools/drone.md), e.g. does the Drone have a certain item, or have a certain pressure?
 
 All block-based *World Conditions* have an *Any/All* block option. This is used when you're checking multiple blocks at a time.
 - In *Any* mode, only *one* of the blocks in the selected [area](./area.md) needs to match for the condition to be *true*.

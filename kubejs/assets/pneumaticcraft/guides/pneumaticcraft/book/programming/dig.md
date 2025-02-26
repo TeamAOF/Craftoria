@@ -7,7 +7,7 @@ navigation:
 
 # Dig Widget
 
-The [Drone](../drone.md) will dig/mine the blocks within the specified [Area](./area.md). Items that are dropped from the blocks will not be picked up by the *Drone*. The order in which the blocks will be dug is similar to the [Place](./place.md) widget. Also in common with the *Place* widget, you can control if the area should be dug layer by layer (top to bottom or bottom to top).
+The [Drone](../tools/drone.md) will dig/mine the blocks within the specified [Area](./area.md). Items that are dropped from the blocks will not be picked up by the *Drone*. The order in which the blocks will be dug is similar to the [Place](./place.md) widget. Also in common with the *Place* widget, you can control if the area should be dug layer by layer (top to bottom or bottom to top).
 
 ## Using Tools
 

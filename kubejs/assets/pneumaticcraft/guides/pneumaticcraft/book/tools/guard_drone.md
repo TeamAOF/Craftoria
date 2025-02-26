@@ -15,7 +15,7 @@ A *Guard Drone* is a specialized non-programmable type of [Drone](./drone.md) wh
 
 <ItemImage id="pneumaticcraft:charging_station" />
 
-As with all types of Drone, these drones require [pressure](../pressure.md) to operate, and will automatically seek out [a Charging Station with a Dispenser Upgrade](./drone.md#charging) if low on air.
+As with all types of Drone, these drones require [pressure](../base_concepts/pressure.md) to operate, and will automatically seek out [a Charging Station with a Dispenser Upgrade](./drone.md#charging) if low on air.
 
 ## Range
 
@@ -33,7 +33,7 @@ The *Guard Drone* does not care what is in the inventory, so take care that you 
 
 <ItemImage id="pneumaticcraft:minigun_upgrade" />
 
-The drone may alternatively be equipped with a [Minigun Upgrade](../upgrades.md#minigun), in which case you should instead add [Minigun Ammo](./minigun_ammo.md) to the inventory.
+The drone may alternatively be equipped with a [Minigun Upgrade](../base_concepts/upgrades.md#minigun), in which case you should instead add [Minigun Ammo](./minigun_ammo.md) to the inventory.
 
 ## pneumaticcraft:guard_drone (TODO)
 

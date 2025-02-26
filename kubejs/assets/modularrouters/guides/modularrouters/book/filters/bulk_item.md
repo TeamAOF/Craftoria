@@ -22,7 +22,7 @@ This filter allows for high-performance matching of up to 54 different items, in
 
 **If** the module has a valid inventory targeted, two extra buttons appear on the GUI: a green **<Color id="dark_green">+</Color>** button to *merge* the target inventory's items, and a blue **<Color id="dark_blue">=</Color>** button to *load* the target inventory's items (overwriting the filter's current contents).
 
-This last configuration method is particularly useful combined with a [Sender Module](../sender_2.md) to implement a sorting system, since the Bulk Item Filter will remember what should be in an inventory, even if the actual inventory later gets emptied.
+This last configuration method is particularly useful combined with a [Sender Module](../modules/sender_2.md) to implement a sorting system, since the Bulk Item Filter will remember what should be in an inventory, even if the actual inventory later gets emptied.
 
 
 

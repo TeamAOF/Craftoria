@@ -11,7 +11,7 @@ item_ids:
 
 <ItemImage id="pneumaticcraft:jackhammer" />
 
-The *Pneumatic Jackhammer* is a highly versatile mining tool, which can break all types of block equally effectively, using [pressure](../pressure.md) to do so. Its mining speed and air capacity can be upgraded in a [Charging Station](../charging_station.md) with [Speed Upgrades](../upgrades.md#speed) and [Volume Upgrades](../upgrades.md#volume), respectively.
+The *Pneumatic Jackhammer* is a highly versatile mining tool, which can break all types of block equally effectively, using [pressure](../base_concepts/pressure.md) to do so. Its mining speed and air capacity can be upgraded in a [Charging Station](../machines/charging_station.md) with [Speed Upgrades](../base_concepts/upgrades.md#speed) and [Volume Upgrades](../base_concepts/upgrades.md#volume), respectively.
 
 ## Drill Bits
 
@@ -43,7 +43,7 @@ The Jackhammer cannot be enchanted normally in an *Enchanting Table*, but it is 
 
 This has the advantage of being easily swappable between a Silk Touch and a Fortune book, as you need.
 
-If you're finding it difficult to obtain the books you need (vanilla book enchanting being so very random), bear in mind that the [Pressure Chamber](../pressure_chamber.md) is able to strip enchantments from tools and place them on books.
+If you're finding it difficult to obtain the books you need (vanilla book enchanting being so very random), bear in mind that the [Pressure Chamber](../manufacturing/pressure_chamber.md) is able to strip enchantments from tools and place them on books.
 
 Crafting a Jackhammer
 

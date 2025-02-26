@@ -7,5 +7,5 @@ navigation:
 
 # タグフィルター
 
-[タグ作業台](../tag_workbench.md)を参照してください。
+[タグ作業台](../machines/tag_workbench.md)を参照してください。
 

@@ -25,5 +25,5 @@ A estante também ganhará <Color hex="#3DB53D">Eterna</Color> e $(arcano) basea
 
 Nota: os livros podem ser inseridos da mesma forma que você usa um porta-livros, e a estante deve estar em um slot de estante de livros válido para funcionar.
 
-Os encantamentos da lista negra serão refletidos na [tela de informação de encantamento](../info.md)$(/arcano).
+Os encantamentos da lista negra serão refletidos na [tela de informação de encantamento](../table/info.md)$(/arcano).
 

@@ -7,7 +7,7 @@ navigation:
 
 # Upgrade Matrix
 
-The *Upgrade Matrix* can be used in place of *Lapis Lazuli* for the crafting of any [upgrades](../upgrades.md). The advantage of using Upgrade Matrices is greatly decreased Lapis usage, which may be a boon if you have limited Lapis and many upgrades to craft.
+The *Upgrade Matrix* can be used in place of *Lapis Lazuli* for the crafting of any [upgrades](../base_concepts/upgrades.md). The advantage of using Upgrade Matrices is greatly decreased Lapis usage, which may be a boon if you have limited Lapis and many upgrades to craft.
 
 **TODO:** Unsupported Patchouli page type **pneumaticcraft:thermo_plant**
 

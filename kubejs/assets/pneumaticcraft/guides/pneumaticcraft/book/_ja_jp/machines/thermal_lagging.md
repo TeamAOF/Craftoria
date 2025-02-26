@@ -9,7 +9,7 @@ item_ids:
 
 # 断熱材
 
-ご存知のとおり[熱](../heat.md)を使用する<Color hex="#228">PneumaticCraft: Repressurized</Color>の機械は、露出したままにしておくと空気に熱を奪われます。これらの機械は空気や熱を伝導しないブロックであればどれでもカバーできますが、*断熱材*は機械の断熱に特に適しています。
+ご存知のとおり[熱](../base_concepts/heat.md)を使用する<Color hex="#228">PneumaticCraft: Repressurized</Color>の機械は、露出したままにしておくと空気に熱を奪われます。これらの機械は空気や熱を伝導しないブロックであればどれでもカバーできますが、*断熱材*は機械の断熱に特に適しています。
 
 <ItemImage id="pneumaticcraft:thermal_lagging" />
 

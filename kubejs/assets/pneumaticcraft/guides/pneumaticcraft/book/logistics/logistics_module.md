@@ -9,7 +9,7 @@ item_ids:
 
 # Logistics Module
 
-See [the Logistics Module entry](../logistics_module.md) in the *Pressure Tubes* section of the manual for full details.
+See [the Logistics Module entry](../tubes/logistics_module.md) in the *Pressure Tubes* section of the manual for full details.
 
 Crafting a Logistics Module
 

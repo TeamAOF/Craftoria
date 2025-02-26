@@ -9,7 +9,7 @@ item_ids:
 
 # Smart Chest Upgrade Kit
 
-The *Smart Chest Upgrade Kit* is a convenience which lets you upgrade any wooden chest or [Reinforced Chest](../reinforced_chest.md) to a [Smart Chest](../smart_chest.md) in-place, keeping the chest's items. Just *Sneak-Right-click* the upgrade kit against any valid chest to upgrade it.
+The *Smart Chest Upgrade Kit* is a convenience which lets you upgrade any wooden chest or [Reinforced Chest](../machines/reinforced_chest.md) to a [Smart Chest](../machines/smart_chest.md) in-place, keeping the chest's items. Just *Sneak-Right-click* the upgrade kit against any valid chest to upgrade it.
 
 
 

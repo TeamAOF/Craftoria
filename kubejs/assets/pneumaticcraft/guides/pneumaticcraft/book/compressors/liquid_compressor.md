@@ -9,7 +9,7 @@ item_ids:
 
 # Liquid Compressor
 
-The *Liquid Compressor* is a simple generator which can produce [compressed air](../pressure.md). It burns liquid fuels to do so; to see which fuels you can use and their effectiveness, open up the **Available Fuels** tab in the Liquid Compressor's GUI. Note that this also includes high-temperature fluids such as lava.
+The *Liquid Compressor* is a simple generator which can produce [compressed air](../base_concepts/pressure.md). It burns liquid fuels to do so; to see which fuels you can use and their effectiveness, open up the **Available Fuels** tab in the Liquid Compressor's GUI. Note that this also includes high-temperature fluids such as lava.
 
 Crafting a *Liquid Compressor*
 

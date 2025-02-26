@@ -41,7 +41,7 @@ navigation:
 ## 例(続き)
 
 
-- <Color hex="#800">@drone</Color>は[ドローン](../drone.md)に一致します
+- <Color hex="#800">@drone</Color>は[ドローン](../tools/drone.md)に一致します
 - <Color hex="#800">@mob(mod=minecraft)</Color>はMobに一致しますが、名前空間*minecraft*からのみに一致します
 - <Color hex="#800">クリーパー</Color>はクリーパーに一致します
 - <Color hex="#800">'MineMaarten'</Color> (or <Color hex="#800">"Minemaarten"</Color>)は'MineMaarten'と名付けられたエンティティに一致します
@@ -68,16 +68,16 @@ navigation:
 - <Color hex="#800">!Creeper;Zombie</Color>*はCreeperでもZombieでもないものに一致します。*
 - <Color hex="#800">Creeper;!Zombie</Color>*は<Color hex="#f00">無効です。</Color>: '!'はフィルターの先頭にのみ使用できます。
 
-**注:** プログラミングウィジェットを使用した[ドローン](../drone.md)のエンティティフィルターでは、'!'はサポートされていません。通常どおり左側のテキストウィジェットを接続します。
+**注:** プログラミングウィジェットを使用した[ドローン](../tools/drone.md)のエンティティフィルターでは、'!'はサポートされていません。通常どおり左側のテキストウィジェットを接続します。
 
 ## Related Chapters
 
-- [TODO](../micromissiles.md)
-- [TODO](../air_grate_module.md)
-- [TODO](../pneumatic_helmet.md)
-- [TODO](../sentry_turret.md)
-- [TODO](../universal_sensor.md)
-- [TODO](../text.md)
+- [TODO](../tools/micromissiles.md)
+- [TODO](../tubes/air_grate_module.md)
+- [TODO](../armor/pneumatic_helmet.md)
+- [TODO](../machines/sentry_turret.md)
+- [TODO](../machines/universal_sensor.md)
+- [TODO](../programming/text.md)
 
 *エンティティフィルタリングを使用する機械とツール*
 

@@ -7,7 +7,7 @@ navigation:
 
 # Fluid Export Widget
 
-The opposite of [Fluid Import](./liquid_import.md): the [Drone](../drone.md) will move to the nearest tank within the specified [Area](./area.md) to drop off fluid from its own tank.
+The opposite of [Fluid Import](./liquid_import.md): the [Drone](../tools/drone.md) will move to the nearest tank within the specified [Area](./area.md) to drop off fluid from its own tank.
 
 Additionally, the *Drone* can place fluid in the world: to do so, check the *Place fluid in world* option in the widget GUI. Beware, *Drones* can easily trap themselves while doing this!
 

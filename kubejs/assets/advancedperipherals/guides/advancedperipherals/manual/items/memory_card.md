@@ -9,7 +9,7 @@ item_ids:
 
 # Memory Card
 
-The <Color id="blue">[AR Goggles](./ar_goggles.md)</Color> can be used in combination with the <Color id="blue">[Inventory Manager](../inventory_manager.md)</Color> to communicate with the player's inventory.
+The <Color id="blue">[AR Goggles](./ar_goggles.md)</Color> can be used in combination with the <Color id="blue">[Inventory Manager](../peripherals/inventory_manager.md)</Color> to communicate with the player's inventory.
 
 Right click with the Memory Card in hand to assign it to yourself.
 

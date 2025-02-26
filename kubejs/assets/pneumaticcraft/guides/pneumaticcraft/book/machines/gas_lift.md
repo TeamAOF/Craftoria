@@ -9,9 +9,9 @@ item_ids:
 
 # Gas Lift
 
-A *Gas Lift* is a pump, basically. It uses [pressure](../pressure.md) to decrease the density of a fluid to force it upwards.
+A *Gas Lift* is a pump, basically. It uses [pressure](../base_concepts/pressure.md) to decrease the density of a fluid to force it upwards.
 
-When pressurized, it extrudes [Drill Pipes](../drill_pipe.md) (which you must provide) downwards until it hits any fluid block, at which point it will pump it. This makes it perfect for [Oil](../oil.md) extraction, as Oil might be deep underground.
+When pressurized, it extrudes [Drill Pipes](../components/drill_pipe.md) (which you must provide) downwards until it hits any fluid block, at which point it will pump it. This makes it perfect for [Oil](../base_concepts/oil.md) extraction, as Oil might be deep underground.
 
 Any solid block in the way will be broken, without yield. Breaking blocks uses up air; this is a very small amount for soft blocks like dirt or sand, but much more for hard blocks such as obsidian.
 

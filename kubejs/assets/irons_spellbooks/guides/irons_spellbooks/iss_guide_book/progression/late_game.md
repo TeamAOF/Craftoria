@@ -47,7 +47,7 @@ Dragonskin is dropped by the Ender Dragon
 ## Ex: Cryomancer Armor
 
 <GameScene zoom={4}>
-  <Entity id="minecraft:armor_stand"data="{ArmorItems:[{id:'irons_spellbooks:cryomancer_boots',Count:1b},{id:'irons_spellbooks:cryomancer_leggings',Count:1b},{id:'irons_spellbooks:cryomancer_chestplate',Count:1b},{id:'irons_spellbooks:cryomancer_helmet',Count:1b}],NoBasePlate:1b}" />
+  <Entity id="minecraft:armor_stand" data="{ArmorItems:[{id:'irons_spellbooks:cryomancer_boots',Count:1b},{id:'irons_spellbooks:cryomancer_leggings',Count:1b},{id:'irons_spellbooks:cryomancer_chestplate',Count:1b},{id:'irons_spellbooks:cryomancer_helmet',Count:1b}],NoBasePlate:1b}" />
 </GameScene>
 
 School armor is made from arcane cloth and a particular school rune, following this template

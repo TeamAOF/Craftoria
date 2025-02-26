@@ -33,7 +33,7 @@ There are nine filter slots, where you can insert ghost copies of any item or bl
 
 Most modules operate in a defined direction, relative to the router's facing. Here you can define the direction.
 
-Some modules (e.g. the [Sender Mk2](../sender2.md)) target a distant block directly, so do not have a definable direction. In this case, the direction selector will be blank.
+Some modules (e.g. the [Sender Mk2](../modules/sender2.md)) target a distant block directly, so do not have a definable direction. In this case, the direction selector will be blank.
 
 ## 3. Filter Control
 
@@ -43,7 +43,7 @@ Here there are several buttons which control:
 - Whether to match item NBT, e.g. enchantments
 - Whether to match by [item tags](https://minecraft.gamepedia.com/Tag)
 
-There is also a button here to control [Termination Behaviour](../termination.md), which is explained in a separate page.
+There is also a button here to control [Termination Behaviour](../router/termination.md), which is explained in a separate page.
 
 ## 4. Augments
 
@@ -53,7 +53,7 @@ The Augments which may be inserted here depend on the module type; not every mod
 
 ## 5. Extra Settings
 
-Some modules have some extra configuration options. For example, the [Detector Module](../detector.md) shown earlier has options to set the redstone output level, and whether the output signal should be a weak or strong redstone signal.
+Some modules have some extra configuration options. For example, the [Detector Module](../modules/detector.md) shown earlier has options to set the redstone output level, and whether the output signal should be a weak or strong redstone signal.
 
 Where modules have such options, they're shown on the right-hand side of the GUI.
 

@@ -8,7 +8,7 @@ navigation:
 
 # Sangramento
 
-<Color id="red">Sangramento</Color> é um efeito negativo aplicado por [flechas de sangramento](../../fletching.md#broadhead).
+<Color id="red">Sangramento</Color> é um efeito negativo aplicado por [flechas de sangramento](../../village/fletching.md#broadhead).
 
 Faz com que você receba dano a cada dois segundos.
 

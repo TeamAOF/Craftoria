@@ -9,7 +9,7 @@ item_ids:
 
 # Programmable Controller
 
-A Programmable Controller can do very similar things to what [Drones](../drone.md) can do. A program can be written in a [Programmer](./programmer.md), and saved to either a *Drone* or [Network API](../network_components.md#network_api). Either of these items can then be placed in the *Programmable Controller*. Provided that there is enough [pressure](../pressure.md), the *Programmable Controller* will execute the program just as it would when programmed onto a *Drone*. 
+A Programmable Controller can do very similar things to what [Drones](../tools/drone.md) can do. A program can be written in a [Programmer](./programmer.md), and saved to either a *Drone* or [Network API](../components/network_components.md#network_api). Either of these items can then be placed in the *Programmable Controller*. Provided that there is enough [pressure](../base_concepts/pressure.md), the *Programmable Controller* will execute the program just as it would when programmed onto a *Drone*. 
 
 There are a few differences, though:
 - A *Programmable Controller* uses a miniature version of a *Drone* - a *minidrone*. It's not a real entity, so no pathfinding is involved, and the *minidrone* can move through walls. This has the benefit of being more friendly to the server and more reliable in general.
@@ -24,7 +24,7 @@ The *Programmable Controller* is generally best suited to larger applications, s
 
 Any items or fluids that the *minidrone* collects can be interfaced via the sides of the *Programmable Controller* block.
 
-By default, the 'drone' has a single inventory slot, and a 16000mB tank. The inventory size can be increased by adding [Inventory Upgrades](../upgrades.md#inventory) (max 35), which also increases the tank size by 1000mB per upgrade.
+By default, the 'drone' has a single inventory slot, and a 16000mB tank. The inventory size can be increased by adding [Inventory Upgrades](../base_concepts/upgrades.md#inventory) (max 35), which also increases the tank size by 1000mB per upgrade.
 
 ## Interfacing (cont.)
 
@@ -34,7 +34,7 @@ All faces of the *Programmable Controller* can always be used to interface fluid
 
 ## Charging Items
 
-The Programmable Controller is capable of *charging* the minidrone's held item, i.e. the item in slot 0 of the drone's inventory. This includes both pressurizable items such as the [Jackhammer](../jackhammer.md), and items using *Forge Energy*. Air and/or FE from the Programmable Controller's own buffers is used to do this. Charging is disabled by default; enable it via the controller's GUI (*Held Item Charging* side tab).
+The Programmable Controller is capable of *charging* the minidrone's held item, i.e. the item in slot 0 of the drone's inventory. This includes both pressurizable items such as the [Jackhammer](../tools/jackhammer.md), and items using *Forge Energy*. Air and/or FE from the Programmable Controller's own buffers is used to do this. Charging is disabled by default; enable it via the controller's GUI (*Held Item Charging* side tab).
 
 Crafting a Programmable Controller
 

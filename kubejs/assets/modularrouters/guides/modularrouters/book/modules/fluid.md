@@ -19,7 +19,7 @@ The GUI also allows the maximum transfer rate to be set. Note this is the maximu
 
 The Fluid Module's filter slots will only accept fluid-containing items, and will filter by the contained fluid, not by the container item.
 
-Adding [Speed Upgrades](../speed.md) will not transfer fluids any faster, only more often. A Router with 9 speed upgrades will still only transfer 1 bucket per second, just more often and in smaller quantities. To increase the overall transfer rate, add [Fluid Transfer Upgrades](../fluid.md).
+Adding [Speed Upgrades](../upgrades/speed.md) will not transfer fluids any faster, only more often. A Router with 9 speed upgrades will still only transfer 1 bucket per second, just more often and in smaller quantities. To increase the overall transfer rate, add [Fluid Transfer Upgrades](../upgrades/fluid.md).
 
 Be very careful tinkering with Fluid Module settings if the router holds any dangerous fluids, such as a lava bucket. The router will not hesitate to pour lava over you if you get it wrong...
 

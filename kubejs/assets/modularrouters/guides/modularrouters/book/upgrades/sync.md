@@ -13,7 +13,7 @@ This upgrade is used to guarantee that two or more routers run at the same time.
 
 Any routers with this upgrade installed, with same the tuning value, and with the same number of [Speed Upgrades](./speed.md) installed, will always run on the same tick. The actual tuning value doesn't matter; only that the value is consistent across the routers you want to synchronise.
 
-This is particularly useful if you have a group of routers with [Extruder Modules](../extruder_1.md) installed, and want to ensure all modules extend/retract at exactly the same time.
+This is particularly useful if you have a group of routers with [Extruder Modules](../modules/extruder_1.md) installed, and want to ensure all modules extend/retract at exactly the same time.
 
 Advanced notes #1: the Sync Upgrade's tuning value actually specifies precisely when the router will run relative to its tick rate. E.g. routers tick every 20 server ticks by default; a Sync Upgrade with a tuning upgrade of 15 ensures the router *always* runs 15 ticks after that, and that applies to *all* routers with a 15-tuned Sync Upgrade. And a 16-tuned Sync Upgrade always runs 1 tick after a 15-tuned Sync Upgrade, at least for routers with the same number of [Speed Upgrades](./speed.md) installed...
 

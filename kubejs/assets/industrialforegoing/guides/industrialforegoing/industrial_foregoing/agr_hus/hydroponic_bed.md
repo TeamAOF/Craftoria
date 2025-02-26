@@ -12,7 +12,7 @@ item_ids:
 
 This machine when combined with power and <Color id="gold">water</Color> (or <Color id="gold">lava</Color> for nether crops) it will speed up growth crop a bit. 
 
-By providing very small amounts of [Ether Gas](../ether_gas.md) crops will grow much faster and they will be replanted automatically.
+By providing very small amounts of [Ether Gas](../resource_production/ether_gas.md) crops will grow much faster and they will be replanted automatically.
 
 
 

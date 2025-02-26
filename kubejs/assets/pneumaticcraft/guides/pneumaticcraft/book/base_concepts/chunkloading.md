@@ -16,7 +16,7 @@ This has important ramifications for designing reliable modded builds; if you wa
 
 - Vanilla has a */forceload* command to force one or more chunks to remain always loaded, but this does require op privileges to use
 - Many mods offer player-usable chunkloading solutions, e.g. *FTB Chunks*, *Chicken Chunks*, *Weirding Gadgets* and more.
-- The [Programmable Controller](../programmable_controller.md) from this mod offers some limited chunkloading functionality too.
+- The [Programmable Controller](../programming/programmable_controller.md) from this mod offers some limited chunkloading functionality too.
 
 ## Chunkloading Safety
 
@@ -27,5 +27,5 @@ The following hints will assist in building reliable chunkloaded systems:
 ## Chunkloading Safety (cont)
 
 
-- *Keep multiblocks within a single chunk if possible.* Even when all relevant chunks are chunkloaded, it's not ideal to have multiblocks like the [Pressure Chamber](../pressure_chamber.md) span two or more chunks.
+- *Keep multiblocks within a single chunk if possible.* Even when all relevant chunks are chunkloaded, it's not ideal to have multiblocks like the [Pressure Chamber](../manufacturing/pressure_chamber.md) span two or more chunks.
 

@@ -41,7 +41,7 @@ When you want to specify a certain entity *type* (e.g., animals, aggressive mobs
 ## Examples (cont.)
 
 
-- <Color hex="#800">@drone</Color> matches [Drones](../drone.md)
+- <Color hex="#800">@drone</Color> matches [Drones](../tools/drone.md)
 - <Color hex="#800">@mob(mod=minecraft)</Color> matches mobs, but only from the *minecraft* namespace
 - <Color hex="#800">Creeper</Color> matches creepers
 - <Color hex="#800">'MineMaarten'</Color> (or <Color hex="#800">"Minemaarten"</Color>) matches an entity named 'MineMaarten'
@@ -68,16 +68,16 @@ You can prefix a filter with '!' to negate the filter:
 - <Color hex="#800">!Creeper;Zombie</Color> matches anything that is neither a Creeper *nor* a Zombie
 - <Color hex="#800">Creeper;!Zombie</Color> is <Color hex="#f00">invalid</Color>: '!' can only go right at the start of a filter
 
-**Note:** for [Drone](../drone.md) entity filters using the [Text](../text.md) programming widget, '!' is not supported; connect the Text widget on the left, as normal.
+**Note:** for [Drone](../tools/drone.md) entity filters using the [Text](../programming/text.md) programming widget, '!' is not supported; connect the Text widget on the left, as normal.
 
 ## Related Chapters
 
-- [TODO](../micromissiles.md)
-- [TODO](../air_grate_module.md)
-- [TODO](../pneumatic_helmet.md)
-- [TODO](../sentry_turret.md)
-- [TODO](../universal_sensor.md)
-- [TODO](../text.md)
+- [TODO](../tools/micromissiles.md)
+- [TODO](../tubes/air_grate_module.md)
+- [TODO](../armor/pneumatic_helmet.md)
+- [TODO](../machines/sentry_turret.md)
+- [TODO](../machines/universal_sensor.md)
+- [TODO](../programming/text.md)
 
 *Machines & tools which use entity filtering*
 

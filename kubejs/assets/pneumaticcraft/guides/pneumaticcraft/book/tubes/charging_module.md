@@ -9,9 +9,9 @@ item_ids:
 
 # Charging Module
 
-This tube module allow you to charge (or discharge) pressurizable items in the inventory that it faces, e.g. a chest with your pneumatic tools, or [Air Canisters](../air_canister.md) for long-distance air transfer (perhaps through some kind of Ender inventory system).
+This tube module allow you to charge (or discharge) pressurizable items in the inventory that it faces, e.g. a chest with your pneumatic tools, or [Air Canisters](../components/air_canister.md) for long-distance air transfer (perhaps through some kind of Ender inventory system).
 
-You can also point this module at an [Aerial Interface](../aerial_interface.md) to charge items in your own player inventory.
+You can also point this module at an [Aerial Interface](../machines/aerial_interface.md) to charge items in your own player inventory.
 
 <ItemImage id="pneumaticcraft:module_expansion_card" />
 

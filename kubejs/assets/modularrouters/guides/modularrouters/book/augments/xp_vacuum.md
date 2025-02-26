@@ -9,7 +9,7 @@ item_ids:
 
 # XP Vacuum Augment
 
-This augment can only be added to a [Vacuum Module](../vacuum.md).
+This augment can only be added to a [Vacuum Module](../modules/vacuum.md).
 
 When this augment is added, the Vacuum Module will absorb experience orbs instead of items. The orbs will be converted into *Bottles o' Enchanting* at the rate of 7XP per bottle (which is the average amount of XP gained by breaking a Bottle o' Enchanting).
 

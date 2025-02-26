@@ -7,7 +7,7 @@ navigation:
 
 # コンピューターコントロールウィジェット
 
-*コンピューターコントロール*ウィジェットを使用すると、*ComputerCraft*または*OpenComputers*のコンピューターを介して[ドローン](../drone.md)を制御できます。これを行う方法の詳細については[ドローンインターフェース](../drone_interface.md)を参照してください。
+*コンピューターコントロール*ウィジェットを使用すると、*ComputerCraft*または*OpenComputers*のコンピューターを介して[ドローン](../tools/drone.md)を制御できます。これを行う方法の詳細については[ドローンインターフェース](../machines/drone_interface.md)を参照してください。
 
 *私の心はどこにあるのか*
 

@@ -9,7 +9,7 @@ item_ids:
 
 # Fluid Mixer
 
-A *Fluid Mixer* uses [pressure](../pressure.md) to combine two fluids into a resulting fluid and/or item. Its primary use is in [Biodiesel](../biodiesel.md) production.
+A *Fluid Mixer* uses [pressure](../base_concepts/pressure.md) to combine two fluids into a resulting fluid and/or item. Its primary use is in [Biodiesel](../renewables/biodiesel.md) production.
 
 The Fluid Mixer will run faster if more pressure is provided (but will also use air faster).
 

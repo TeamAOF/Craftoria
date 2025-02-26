@@ -17,7 +17,7 @@ item_ids:
 
 <ItemImage id="pneumaticcraft:logistics_configurator" />
 
-*物流コンフィギュレーター*は[転送ガジェット](../transfer_gadget.md)や[作物サポート](../crop_support.md)などの他の接続可能なガジェットを削除するためにも使用(*スニーク+右クリック*によって)できます。
+*物流コンフィギュレーター*は[転送ガジェット](../semiblocks/transfer_gadget.md)や[作物サポート](../semiblocks/crop_support.md)などの他の接続可能なガジェットを削除するためにも使用(*スニーク+右クリック*によって)できます。
 
 物流コンフィギュレーターのクラフト
 

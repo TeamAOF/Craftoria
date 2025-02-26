@@ -9,7 +9,7 @@ item_ids:
 
 # Detector Module
 
-This module doesn't actually manipulate items, but instead detects specific items in the router's buffer. If the buffer contents are matched by the module's filter, it will make the router emit a redstone signal in the [configured direction](../modules.md#direction).
+This module doesn't actually manipulate items, but instead detects specific items in the router's buffer. If the buffer contents are matched by the module's filter, it will make the router emit a redstone signal in the [configured direction](../intro/modules.md#direction).
 
 The signal level (default: 15) and signal type (default: weak) can be adjusted via the module GUI.
 

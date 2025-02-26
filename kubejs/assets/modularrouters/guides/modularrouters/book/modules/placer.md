@@ -9,7 +9,7 @@ item_ids:
 
 # Placer Module
 
-This module tries to place an item from the router's buffer as a block, adjacent to the router in the module's [configured direction](../modules.md#direction).
+This module tries to place an item from the router's buffer as a block, adjacent to the router in the module's [configured direction](../intro/modules.md#direction).
 - If the item isn't a block or the destination block space is obstructed, nothing will be done.
 - Normal Minecraft placement rules are followed; e.g. sugar cane can only be placed next to water on sand/dirt.
 

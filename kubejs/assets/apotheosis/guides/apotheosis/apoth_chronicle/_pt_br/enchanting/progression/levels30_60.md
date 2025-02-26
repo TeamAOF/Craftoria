@@ -23,7 +23,7 @@ Se você não gosta do Nether, você também pode se aventurar no oceano e criar
 
 <ItemImage id="apotheosis:infused_hellshelf" />
 
-Depois de alcançar o nível 45, você precisará explorar [encantamento de infusão](../infusion.md) para melhorar suas estantes.
+Depois de alcançar o nível 45, você precisará explorar [encantamento de infusão](../table/infusion.md) para melhorar suas estantes.
 
 ## Alcançando o nível 60
 

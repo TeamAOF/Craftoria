@@ -20,7 +20,7 @@ item_ids:
 <a name="compressed_iron_ingot"></a>
 <ItemImage id="pneumaticcraft:ingot_iron_compressed" />
 
-警告: 爆発の副作用としてインゴットの約20%が失われます。これを回避するには[圧力室](../pressure_chamber.md)で*圧縮鉄インゴット*を作成することもできます。ただし、*圧力室*自体を作成するには*圧縮鉄インゴット*がいくつか必要なので、初期に多少の損失は避けられません。
+警告: 爆発の副作用としてインゴットの約20%が失われます。これを回避するには[圧力室](../manufacturing/pressure_chamber.md)で*圧縮鉄インゴット*を作成することもできます。ただし、*圧力室*自体を作成するには*圧縮鉄インゴット*がいくつか必要なので、初期に多少の損失は避けられません。
 
 **TODO:** Unsupported Patchouli page type **pneumaticcraft:pressure_chamber**
 
@@ -29,7 +29,7 @@ item_ids:
 ```
 
 <a name="compressed_iron_block"></a>
-*圧縮鉄ブロック*は優れた[熱伝導体](./heat.md)であり、熱を発生する機械に[ヒートシンク](../heat_sink.md)を取り付けるための面を増やすために使用できます。ただし、[ヒートパイプ](../heat_pipe.md)も参照してください。
+*圧縮鉄ブロック*は優れた[熱伝導体](./heat.md)であり、熱を発生する機械に[ヒートシンク](../machines/heat_sink.md)を取り付けるための面を増やすために使用できます。ただし、[ヒートパイプ](../machines/heat_pipe.md)も参照してください。
 
 <Recipe id="pneumaticcraft:compressed_iron_block_from_ingot" />
 

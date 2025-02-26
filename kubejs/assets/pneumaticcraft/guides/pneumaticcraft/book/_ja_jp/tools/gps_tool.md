@@ -18,7 +18,7 @@ item_ids:
 <a name="variables"></a>
 ## グローバル変数のリンク
 
-[グローバル変数](../variables.md#global)は[ドローン](./drone.md)の高度な機能で[座標演算](../coordinate_operator.md)を介してアクセスします。
+[グローバル変数](../programming/variables.md#global)は[ドローン](./drone.md)の高度な機能で[座標演算](../programming/coordinate_operator.md)を介してアクセスします。
 
 空中で*GPSツール*を*右クリック*すると変数名を入力できます。
 
@@ -26,9 +26,9 @@ item_ids:
 
 ## Related Chapters
 
-- [TODO](../air_cannon.md)
-- [TODO](../universal_sensor.md)
-- [TODO](../programmer.md)
+- [TODO](../machines/air_cannon.md)
+- [TODO](../machines/universal_sensor.md)
+- [TODO](../programming/programmer.md)
 - [TODO](./amadron_tablet.md)
 
 *GPS Tool* を利用する機械とツール。

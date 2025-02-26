@@ -41,7 +41,7 @@ item_ids:
 
 # Upgrades
 
-*Upgrades* are craftable items which can be inserted into machines and some tools to enhance their functionality in some way. To add upgrades to tools, you will need a [Charging Station](../charging_station.md).
+*Upgrades* are craftable items which can be inserted into machines and some tools to enhance their functionality in some way. To add upgrades to tools, you will need a [Charging Station](../machines/charging_station.md).
 
 The precise effect of each upgrade varies by device; it's documented in the machine's GUI, or (for items) in the Charging Station's upgrade GUI.
 
@@ -78,12 +78,12 @@ Crafting a Block Tracker Upgrade
 <a name="speed"></a>
 Crafting a Speed Upgrade
 
-**Tip:** you can also use a [Liquid Hopper](../liquid_hopper.md) (or other modded tank) of [Lubricant](../lubricant.md) to craft multiple upgrades at a time!
+**Tip:** you can also use a [Liquid Hopper](../machines/liquid_hopper.md) (or other modded tank) of [Lubricant](../components/lubricant.md) to craft multiple upgrades at a time!
 
 <Recipe id="pneumaticcraft:speed_upgrade" />
 
 <a name="speed2"></a>
-Creating Speed Upgrades from [Glycerol](../glycerol.md)
+Creating Speed Upgrades from [Glycerol](../renewables/glycerol.md)
 
 <Recipe id="pneumaticcraft:speed_upgrade_from_glycerol" />
 

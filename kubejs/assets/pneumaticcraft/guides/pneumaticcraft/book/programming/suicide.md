@@ -7,7 +7,7 @@ navigation:
 
 # Suicide Widget
 
-The [Drone](../drone.md) will immediately turn into its item form, dropping as an item entity on the ground. Program execution is, of course, instantly terminated.
+The [Drone](../tools/drone.md) will immediately turn into its item form, dropping as an item entity on the ground. Program execution is, of course, instantly terminated.
 
 *That's all, folks*
 

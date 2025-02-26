@@ -9,9 +9,9 @@ item_ids:
 
 # UV Light Box
 
-The *UV Light Box* is a machine in which you can expose [PCB's](../pcb.md) to UV light, at certain places (which is determined by the [Blueprint](../pcb_blueprint.md) laying on top of the PCB).
+The *UV Light Box* is a machine in which you can expose [PCB's](../components/pcb.md) to UV light, at certain places (which is determined by the [Blueprint](../components/pcb_blueprint.md) laying on top of the PCB).
 
-The exposure process takes a maximum of 10 minutes; less if you add [Speed Upgrades](../upgrades.md#speed) to the machine.
+The exposure process takes a maximum of 10 minutes; less if you add [Speed Upgrades](../base_concepts/upgrades.md#speed) to the machine.
 
 After the full 10 minutes, you'll have a 100% chance that the *PCB* will be successfully etched in [Etching Acid](./etching_acid.md). You can however expose the PCB for a shorter time, which will result in a lower chance of the PCB successfully being etched.
 

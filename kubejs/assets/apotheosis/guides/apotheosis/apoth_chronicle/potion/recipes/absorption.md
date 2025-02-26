@@ -11,7 +11,7 @@ navigation:
 
 Each level grants 2 additional temporary hearts.
 
-However, these hearts don't refresh during the duration, so a [Potion Charm](../charm.md) is preferrable.
+However, these hearts don't refresh during the duration, so a [Potion Charm](../charms/charm.md) is preferrable.
 
 ## Brewing Recipe
 

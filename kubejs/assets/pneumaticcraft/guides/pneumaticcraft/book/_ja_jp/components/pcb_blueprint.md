@@ -7,9 +7,9 @@ navigation:
 
 # PCBブループリント
 
-*PCBブループリント*は[UVライトボックス](../uv_light_box.md)の作成に必要な特別なコンポーネントです。
+*PCBブループリント*は[UVライトボックス](../manufacturing/uv_light_box.md)の作成に必要な特別なコンポーネントです。
 
- 通常の作成はできず、通常は[アマドローンタブレット](../amadron_tablet.md)を介すか[メカニックの村人](../villagers.md)を介して取引する必要があります。
+ 通常の作成はできず、通常は[アマドローンタブレット](../tools/amadron_tablet.md)を介すか[メカニックの村人](../base_concepts/villagers.md)を介して取引する必要があります。
 
 **TODO:** Unsupported Patchouli page type **pneumaticcraft:amadron_trade**
 

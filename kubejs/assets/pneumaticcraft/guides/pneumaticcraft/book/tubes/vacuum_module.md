@@ -9,7 +9,7 @@ item_ids:
 
 # Vacuum Module
 
-The *Vacuum Module* does the same job as the [Vacuum Pump](../vacuum_pump.md) - provide negative pressure - but in a slightly more compact way. It can be placed on a vertical tube, unlike the full-size pump, which can be only be oriented horizontally.
+The *Vacuum Module* does the same job as the [Vacuum Pump](../machines/vacuum_pump.md) - provide negative pressure - but in a slightly more compact way. It can be placed on a vertical tube, unlike the full-size pump, which can be only be oriented horizontally.
 
 The advantage is compactness; the disadvantage is more limited upgradeability in terms of speed and volume.
 
@@ -21,7 +21,7 @@ Applying a <Color hex="#f00">redstone signal</Color> prevents the module running
 
 <ItemImage id="pneumaticcraft:module_expansion_card" />
 
-A [Module Expansion Card](./module_expansion_card.md) boosts the module's speed, roughly equivalent to adding 4 [Speed Upgrades](../upgrades.md#speed) to a Vacuum Pump. Similar to adding Speed Upgrades, this comes with a reduction in efficiency in terms of air usage at the positive side.
+A [Module Expansion Card](./module_expansion_card.md) boosts the module's speed, roughly equivalent to adding 4 [Speed Upgrades](../base_concepts/upgrades.md#speed) to a Vacuum Pump. Similar to adding Speed Upgrades, this comes with a reduction in efficiency in terms of air usage at the positive side.
 
 Crafting a Vacuum Module
 

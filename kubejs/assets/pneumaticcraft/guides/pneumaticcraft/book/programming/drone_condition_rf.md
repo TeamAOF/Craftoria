@@ -9,7 +9,7 @@ navigation:
 
 This is a [Condition](./conditions.md) widget.
 
-The *Drone Condition: RF* widget allows you to check the amount of *Forge Energy (FE)* carried by this [Drone](../drone.md).
+The *Drone Condition: RF* widget allows you to check the amount of *Forge Energy (FE)* carried by this [Drone](../tools/drone.md).
 
 *Despite its name, this widget checks FE, not RF (Redstone Flux). The name is historical.*
 

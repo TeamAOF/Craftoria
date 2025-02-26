@@ -7,7 +7,7 @@ navigation:
 
 # External Program Widget
 
-This widget will search for any inventory in the specified [Area](./area.md). For every inventory, it will go through each slot. When a [Drone](../drone.md) or [Network API](../network_components.md#network_api) is found, it will run the program stored on that item.
+This widget will search for any inventory in the specified [Area](./area.md). For every inventory, it will go through each slot. When a [Drone](../tools/drone.md) or [Network API](../components/network_components.md#network_api) is found, it will run the program stored on that item.
 
 When the program finishes, the *Drone* will move onto the next slot and/or inventory.
 

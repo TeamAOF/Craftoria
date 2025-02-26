@@ -11,7 +11,7 @@ navigation:
 
 Cada nível concede 2 corações temporários adicionais.
 
-No entanto, esses corações não são atualizados durante a duração, então um [amuleto de poção](../charm.md) é preferível.
+No entanto, esses corações não são atualizados durante a duração, então um [amuleto de poção](../charms/charm.md) é preferível.
 
 ## Receita de Fabricação de Poções
 

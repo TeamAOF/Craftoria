@@ -15,13 +15,13 @@ There are several scenarios where an Energy Upgrade is useful, detailed in the f
 
 ## 1. Routing Energy
 
-The [Energy Output](../energy_output.md) and [Energy Distributor](../energy_distributor.md) modules are both capable of actively pushing energy from the router's buffer to adjacent or nearby blocks.
+The [Energy Output](../modules/energy_output.md) and [Energy Distributor](../modules/energy_distributor.md) modules are both capable of actively pushing energy from the router's buffer to adjacent or nearby blocks.
 
 With these modules, you can effectively build an energy cell with limited wireless energy transfer capabilities.
 
 ## 2. Powering Modules
 
-By default, router modules do not cost any energy to run, with the exception of the [Activator Module](../activator.md) in attack mode. 
+By default, router modules do not cost any energy to run, with the exception of the [Activator Module](../modules/activator.md) in attack mode. 
 
 However, energy usage is configurable and it's possible that energy costs may apply to other modules in the pack you're playing; all modules list energy usage numbers in their tooltip where it applies.
 

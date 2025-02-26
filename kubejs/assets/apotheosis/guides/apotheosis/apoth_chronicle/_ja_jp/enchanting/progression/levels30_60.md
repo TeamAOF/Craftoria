@@ -23,7 +23,7 @@ navigation:
 
 <ItemImage id="apothic_enchanting:infused_hellshelf" />
 
-レベル45に到達したら、[注入エンチャント](../infusion.md)を利用して本棚をアップグレードしよう。
+レベル45に到達したら、[注入エンチャント](../table/infusion.md)を利用して本棚をアップグレードしよう。
 
 ## レベル60への道
 

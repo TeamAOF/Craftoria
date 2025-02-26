@@ -19,7 +19,7 @@ Crafting the <Color id="blue">Interdiction Matrix</Color>.
 
 ## Operation
 
-The space around an <Color id="blue">Interdiction Matrix</Color> is split up into two logical regions: **Action** and **Warning**. The action region radiates out from the Matrix itself by the same number of blocks as there are [<Color id="dark_purple">Scale Modules</Color>](../scale_module.md) installed. By default, the warning region continues from the edge of the action region (as a concentric sphere) by an additional 3 blocks.
+The space around an <Color id="blue">Interdiction Matrix</Color> is split up into two logical regions: **Action** and **Warning**. The action region radiates out from the Matrix itself by the same number of blocks as there are [<Color id="dark_purple">Scale Modules</Color>](../upgrade_modules/scale_module.md) installed. By default, the warning region continues from the edge of the action region (as a concentric sphere) by an additional 3 blocks.
 
 When a player moves into the warning area of an [Interdiction Matrix](./interdiction_matrix.md), it will send an alert message to say they have just entered its scanning range. If a player does not wish to experience first-hand which modules the Matrix has installed, they should not proceed closer. With no modules installed, an [Interdiction Matrix](./interdiction_matrix.md) doesn't really do anything. With [<Color id="dark_purple">modules</Color>](../interdiction_modules.md) installed, it can serve as a powerful defense system.
 

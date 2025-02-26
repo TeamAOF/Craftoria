@@ -15,7 +15,7 @@ To do so, an inventory and/or fluid tank needs to be selected by *right-clicking
 
 The tablet GUI is smart enough to figure out what you can buy by looking at the bound inventory and/or tank. When you order <Color hex="#880">$(t:Resources can be either items or fluids)resources$(/t:Resources can be either items or fluids)</Color>, a *Drone* will spawn to collect the resources you're paying with. Once collection is complete, a second *Drone* will arrive to deliver the purchased items.
 
-This is a way to get items you can't get otherwise, like the [PCB Blueprint](../pcb_blueprint.md) and [Assembly Programs](../assembly_programs.md). It also adds some random *Villager Trades*; these trades are re-shuffled daily.
+This is a way to get items you can't get otherwise, like the [PCB Blueprint](../components/pcb_blueprint.md) and [Assembly Programs](../manufacturing/assembly_programs.md). It also adds some random *Villager Trades*; these trades are re-shuffled daily.
 
 ## Player-Player Trading
 

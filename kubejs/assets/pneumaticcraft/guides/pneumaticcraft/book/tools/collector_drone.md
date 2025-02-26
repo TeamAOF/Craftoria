@@ -15,7 +15,7 @@ A *Collector Drone* is a specialized non-programmable type of [Drone](./drone.md
 
 <ItemImage id="pneumaticcraft:charging_station" />
 
-As with all types of Drone, these drones require [pressure](../pressure.md) to operate, and will automatically seek out [a Charging Station with a Dispenser Upgrade](./drone.md#charging) if low on air.
+As with all types of Drone, these drones require [pressure](../base_concepts/pressure.md) to operate, and will automatically seek out [a Charging Station with a Dispenser Upgrade](./drone.md#charging) if low on air.
 
 ## Item Filtering
 
@@ -23,7 +23,7 @@ The *Collector Drone* has some basic item filtering functionality. If deployed *
 
 If you want to change the drone's filter, you will need to wrench it and redeploy it.
 
-The *Collector Drone* has a default range of a 17x17x17 cube, centered on the block it was placed at. This range can be increased by adding up to 16 [Range Upgrades](../upgrades.md#range).
+The *Collector Drone* has a default range of a 17x17x17 cube, centered on the block it was placed at. This range can be increased by adding up to 16 [Range Upgrades](../base_concepts/upgrades.md#range).
 
 ## pneumaticcraft:collector_drone (TODO)
 

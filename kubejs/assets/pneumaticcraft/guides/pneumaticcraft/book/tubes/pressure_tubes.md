@@ -11,20 +11,20 @@ item_ids:
 
 Pressure Tubes are the primary device in <Color hex="#228">PneumaticCraft: Repressurized</Color> for transporting compressed air between compressors and machines.
 
-Unconnected tubes will leak air! However, the sides of a tube can be toggled open or shut by right-clicking with a [Pneumatic Wrench](../pneumatic_wrench.md). Wrenches from other mods may also work.
+Unconnected tubes will leak air! However, the sides of a tube can be toggled open or shut by right-clicking with a [Pneumatic Wrench](../tools/pneumatic_wrench.md). Wrenches from other mods may also work.
 
 ## Tubes!
 
-*Two Pressure Tubes with a [Pressure Gauge](./pressure_gauge_module.md)* *connecting an [Air Compressor](../air_compressor.md)* *and [Air Cannon](../air_cannon.md)*
+*Two Pressure Tubes with a [Pressure Gauge](./pressure_gauge_module.md)* *connecting an [Air Compressor](../compressors/air_compressor.md)* *and [Air Cannon](../machines/air_cannon.md)*
 
 TODO: Unsupported flag 'border'
 ![](pressure_tubes.png)
 
 Pressure Tubes can be fitted with [Tube Modules](./tube_modules.md), attachable components which add various types of functionality to the tube. See the individual pages for each module for more information.
 
-Pressure Tubes can be concealed with a [Camouflage Applicator](../camo_applicator.md).
+Pressure Tubes can be concealed with a [Camouflage Applicator](../tools/camo_applicator.md).
 
-There are three [tiers](../pressure_tiers.md) of tube:
+There are three [tiers](../base_concepts/pressure_tiers.md) of tube:
 
 - Tier 1 tubes can contain up to 5 bar of pressure, and have a capacity of 1000mL of air.
 - Tier 1.5 (Reinforced) tubes can handle up to 10 bar of pressure and also have a capacity of 1000mL.

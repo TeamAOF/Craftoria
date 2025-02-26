@@ -19,7 +19,7 @@ where <Color hex="#272">E</Color> is the efficiency.
 
 For instance, with the default efficiency of 40% and an input of 32EU/tick, the compressed air production equals <Color hex="#272">32 / 40 * 400 = 320mL/tick.</Color>
 
-Another factor that influences the efficiency is the machine's [heat](../heat.md). The machine needs to be cooled, as the efficiency will drop as the temperature rises, up to the point where no air is generated at all.
+Another factor that influences the efficiency is the machine's [heat](../base_concepts/heat.md). The machine needs to be cooled, as the efficiency will drop as the temperature rises, up to the point where no air is generated at all.
 
 Crafting an *Electric Compressor*
 

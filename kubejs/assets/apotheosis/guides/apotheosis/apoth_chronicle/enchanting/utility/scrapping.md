@@ -14,7 +14,7 @@ Combining one with another item in an anvil will destroy the other item, and mak
 
 You will always receive half of the enchantments (rounded up).
 
-The enchantments selected are based on your [Enchanting Seed](../seed.md).
+The enchantments selected are based on your [Enchanting Seed](../table/seed.md).
 
 <Recipe id="apothic_enchanting:scrap_tome" />
 

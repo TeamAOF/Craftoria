@@ -41,7 +41,7 @@ item_ids:
 
 # アップグレード
 
-*アップグレード*は機械や一部のツールに挿入して何らかの方法で機能を強化できる作成可能なアイテムです。ツールにアップグレードを追加するには[充填ステーション](../charging_station.md)が必要です。
+*アップグレード*は機械や一部のツールに挿入して何らかの方法で機能を強化できる作成可能なアイテムです。ツールにアップグレードを追加するには[充填ステーション](../machines/charging_station.md)が必要です。
 
 各アップグレードの正確な効果はデバイスによって異なります。マシンのGUIまたは(アイテムの場合)充填ステーションのアップグレードのGUIに記載されています。
 
@@ -78,12 +78,12 @@ item_ids:
 <a name="speed"></a>
 スピードアップグレードの作成
 
-**ヒント:** [流体ホッパー](../liquid_hopper.md)(またはその他MODのタンク)と[潤滑油](../lubricant.md)を使用して一度に複数のアップグレードを作成することもできます。
+**ヒント:** [流体ホッパー](../machines/liquid_hopper.md)(またはその他MODのタンク)と[潤滑油](../components/lubricant.md)を使用して一度に複数のアップグレードを作成することもできます。
 
 <Recipe id="pneumaticcraft:speed_upgrade" />
 
 <a name="speed2"></a>
-[グリセロール](../glycerol.md)からスピードアップグレードを作成します
+[グリセロール](../renewables/glycerol.md)からスピードアップグレードを作成します
 
 <Recipe id="pneumaticcraft:speed_upgrade_from_glycerol" />
 

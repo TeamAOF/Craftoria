@@ -11,7 +11,7 @@ item_ids:
 
 <ItemImage id="mffs:camouflage_module" />
 
-The <Color id="dark_purple">Camouflage Module</Color> can be used in a [Force Field Projector](../projector.md) to alter the appearance of the force field itself. With a <Color id="dark_purple">Camouflage Module</Color> installed, force fields may be disguised as regular blocks. For example, a force field might be masked as a wall of Stone. The <Color id="dark_purple">Camouflage Module</Color> can be used in combination with all Projector Modes.
+The <Color id="dark_purple">Camouflage Module</Color> can be used in a [Force Field Projector](../machines/projector.md) to alter the appearance of the force field itself. With a <Color id="dark_purple">Camouflage Module</Color> installed, force fields may be disguised as regular blocks. For example, a force field might be masked as a wall of Stone. The <Color id="dark_purple">Camouflage Module</Color> can be used in combination with all Projector Modes.
 
 Crafting the <Color id="dark_purple">Camouflage Module</Color>.
 

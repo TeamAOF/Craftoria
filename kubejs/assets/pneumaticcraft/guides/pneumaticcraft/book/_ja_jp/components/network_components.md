@@ -14,38 +14,38 @@ item_ids:
 
 # ネットワークコンポーネント
 
-これらのコンポーネントは主に[セキュリティステーション](../security_station.md)をセットアップするために使用されますが、一部はクラフトコンポーネントとしても使用され、[ネットワークストレージ](#network_storage)と[ネットワークAPI](#network_api)は[ドローン](../drone.md)のプログラムを保存するために使用できます。
+これらのコンポーネントは主に[セキュリティステーション](../machines/security_station.md)をセットアップするために使用されますが、一部はクラフトコンポーネントとしても使用され、[ネットワークストレージ](#network_storage)と[ネットワークAPI](#network_api)は[ドローン](../tools/drone.md)のプログラムを保存するために使用できます。
 
 <a name="diagnostic"></a>
-*診断サブルーチン*は[セキュリティステーション](../security_station.md)の必須コンポーネントです。
-これは[ハッキングの試み](../security_station.md#hacking)をハッカーまで追跡する役割を担っています。すべての*診断サブルーチン*がハッキングされた場合、*セキュリティステーション*は侵害されたことになります。
+*診断サブルーチン*は[セキュリティステーション](../machines/security_station.md)の必須コンポーネントです。
+これは[ハッキングの試み](../machines/security_station.md#hacking)をハッカーまで追跡する役割を担っています。すべての*診断サブルーチン*がハッキングされた場合、*セキュリティステーション*は侵害されたことになります。
 
 <Recipe id="pneumaticcraft:diagnostic_subroutine" />
 
 <a name="io_port"></a>
-*ネットワークIOポート*は[セキュリティステーション](../security_station.md)の必須コンポーネントです。
+*ネットワークIOポート*は[セキュリティステーション](../machines/security_station.md)の必須コンポーネントです。
 これは*セキュリティステーション*へのハッキング試行のエントリポイントです。
 
 <Recipe id="pneumaticcraft:network_io_port" />
 
 <a name="registry"></a>
-*ネットワークレジストリ*は[セキュリティステーション](../security_station.md)の必須コンポーネントです。
+*ネットワークレジストリ*は[セキュリティステーション](../machines/security_station.md)の必須コンポーネントです。
 これはハッカーのターゲットです。*すべての*レジストリがハッキングされた場合、*セキュリティステーション*が侵害されたことになります。
 
 <Recipe id="pneumaticcraft:network_registry" />
 
 <a name="node"></a>
-*ネットワークノード*は[セキュリティステーション](../security_station.md)内の汎用コンポーネントであり、必要なコンポーネント間の経路を形成するために使用されます。
+*ネットワークノード*は[セキュリティステーション](../machines/security_station.md)内の汎用コンポーネントであり、必要なコンポーネント間の経路を形成するために使用されます。
 
 <Recipe id="pneumaticcraft:network_node" />
 
 <a name="network_api"></a>
-*ネットワークAPI*は[ドローン](../drone.md)のプログラムを保存するために使用できます。プログラムには[パズルピース](../puzzle_pieces.md)が必要で、[プログラマブルコントローラー](../programmable_controller.md)または[外部プログラム](../external_program.md)ウィジェットでプログラムを実行するために使用できます。
+*ネットワークAPI*は[ドローン](../tools/drone.md)のプログラムを保存するために使用できます。プログラムには[パズルピース](../programming/puzzle_pieces.md)が必要で、[プログラマブルコントローラー](../programming/programmable_controller.md)または[外部プログラム](../programming/external_program.md)ウィジェットでプログラムを実行するために使用できます。
 
 <Recipe id="pneumaticcraft:network_api" />
 
 <a name="network_storage"></a>
-*ネットワークデータストレージ*は[ドローン](../drone.md)のプログラムを保存するために使用できます。プログラミングには[パズルピース](../puzzle_pieces.md)は必要ないため、プログラムの実行には使用できません。ただし、プログラムのライブラリを保存したり他のプレイヤーとプログラムを交換したりする場合には便利です。
+*ネットワークデータストレージ*は[ドローン](../tools/drone.md)のプログラムを保存するために使用できます。プログラミングには[パズルピース](../programming/puzzle_pieces.md)は必要ないため、プログラムの実行には使用できません。ただし、プログラムのライブラリを保存したり他のプレイヤーとプログラムを交換したりする場合には便利です。
 
 <Recipe id="pneumaticcraft:network_data_storage" />
 

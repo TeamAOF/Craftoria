@@ -28,7 +28,7 @@ A regex of 'ore' will match any items with 'ore' in their registry name ("iron_o
 
 ## Example 2
 
-Configure a [Player Module](../player.md) to extract from the player's main inventory, and put a regex filter containing <Color id="dark_blue">_ore</Color> in the module. This can be used to extract any ores from your inventory, regardless of where you are, into your ore processing system; very handy if you're mining far from your base and you want ores that you've mined to be sent home immediately.
+Configure a [Player Module](../modules/player.md) to extract from the player's main inventory, and put a regex filter containing <Color id="dark_blue">_ore</Color> in the module. This can be used to extract any ores from your inventory, regardless of where you are, into your ore processing system; very handy if you're mining far from your base and you want ores that you've mined to be sent home immediately.
 
 
 

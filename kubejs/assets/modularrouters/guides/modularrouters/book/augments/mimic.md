@@ -9,7 +9,7 @@ item_ids:
 
 # Mimic Augment
 
-This augment can only be added to the [Extruder Module Mk2](../extruder_2.md).
+This augment can only be added to the [Extruder Module Mk2](../modules/extruder_2.md).
 
 When present, any fake blocks extruded by the module take on the properties of the faked block, e.g. *Obsidian* is hard to break, *Glowstone* emits light, and *Redstone Blocks* emit a redstone signal.
 

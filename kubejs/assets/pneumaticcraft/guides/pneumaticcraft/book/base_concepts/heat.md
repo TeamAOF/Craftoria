@@ -21,7 +21,7 @@ navigation:
 <a name="insulation"></a>
 ## Insulation
 
-Machines will lose heat to the air if left exposed; this is particularly noticeable with the [Refinery](../refinery.md), which has many exposed faces, but is also true of any heat-conducting block, including [Compressed Iron Blocks](./basic_materials.md#compressed_iron_block).
+Machines will lose heat to the air if left exposed; this is particularly noticeable with the [Refinery](../manufacturing/refinery.md), which has many exposed faces, but is also true of any heat-conducting block, including [Compressed Iron Blocks](./basic_materials.md#compressed_iron_block).
 
 To avoid this heat loss, ensure that no faces are exposed to air blocks; any non-conducting block will do. It doesn't have to be a full block, either - *Trapdoors* and *slabs* will work fine.
 

@@ -7,7 +7,7 @@ navigation:
 
 # Inventory Export Widget
 
-The opposite of the [Inventory Import](./inventory_import.md) widget: the [Drone](../drone.md) will move to the nearest inventory within the specified [area](./area.md) to drop off items from the *Drone's* inventory.
+The opposite of the [Inventory Import](./inventory_import.md) widget: the [Drone](../tools/drone.md) will move to the nearest inventory within the specified [area](./area.md) to drop off items from the *Drone's* inventory.
 
 *Right-click* the widget for a setup GUI where you can specify the sides of the inventory the Drone should export items to. You can also specify a maximum number of items to export.
 

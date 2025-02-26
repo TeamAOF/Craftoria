@@ -17,7 +17,7 @@ By *right-clicking* it on any [Logistic Frame](./frames.md) it can configure var
 
 <ItemImage id="pneumaticcraft:logistics_configurator" />
 
-The *Logistics Configurator* can also be used to remove (by *Sneak right-clicking*) other attachable gadgets, such as the [Transfer Gadget](../transfer_gadget.md) and the [Crop Support](../crop_support.md).
+The *Logistics Configurator* can also be used to remove (by *Sneak right-clicking*) other attachable gadgets, such as the [Transfer Gadget](../semiblocks/transfer_gadget.md) and the [Crop Support](../semiblocks/crop_support.md).
 
 Crafting a Logistics Configurator
 

@@ -16,7 +16,7 @@ This chapter covers some miscellaneous items and crafting components.
 <a name="override"></a>
 <ItemImage id="modularrouters:override_card" />
 
-See [Security Upgrade](../security.md#override).
+See [Security Upgrade](../upgrades/security.md#override).
 
 
 

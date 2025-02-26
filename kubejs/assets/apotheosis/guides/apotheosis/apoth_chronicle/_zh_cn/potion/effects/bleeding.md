@@ -8,7 +8,7 @@ navigation:
 
 # 流血
 
-<Color id="red">流血</Color>是由[宽头箭](../../fletching.md#broadhead)施加的负面效果。
+<Color id="red">流血</Color>是由[宽头箭](../../village/fletching.md#broadhead)施加的负面效果。
 
 它使你每两秒受到一次伤害。
 

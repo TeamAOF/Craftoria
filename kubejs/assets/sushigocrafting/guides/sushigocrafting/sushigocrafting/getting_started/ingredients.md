@@ -8,7 +8,7 @@ navigation:
 
 # Ingredients
 
-Ingredients are 'usually' processed food ready to used when making food, most of them will have a weight to them and their weights can be combined in the crafting table or in a [Cooler Box](../cooler_box.md) to do it in automated way. 
+Ingredients are 'usually' processed food ready to used when making food, most of them will have a weight to them and their weights can be combined in the crafting table or in a [Cooler Box](../using_tools/cooler_box.md) to do it in automated way. 
 
 If ingredients don't combine it might be because it goes over the max amount.
 

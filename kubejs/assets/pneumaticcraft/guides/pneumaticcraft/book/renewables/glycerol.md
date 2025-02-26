@@ -16,7 +16,7 @@ item_ids:
 
 <Recipe id="pneumaticcraft:bandage" />
 
-Double the output of using *Sugar*, what's not to like? This will save on your precious [Lubricant](../lubricant.md).
+Double the output of using *Sugar*, what's not to like? This will save on your precious [Lubricant](../components/lubricant.md).
 
 <Recipe id="pneumaticcraft:speed_upgrade_from_glycerol" />
 

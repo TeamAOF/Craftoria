@@ -36,7 +36,7 @@ If you *sneak+right-click* the missile pod, a GUI will open allowing configurati
 
 
 - You can select between *Smart* and *Dumb* mode: in *Smart* mode, missiles will lock on to targets as described above, while in *Dumb* mode, missiles will simply fly in a straight line until they hit something, but with good speed and damage capability.
-- You can filter which entities to attack by entering an [entity filter](../entity_filter.md) in the **Entity Filter** field.
+- You can filter which entities to attack by entering an [entity filter](../base_concepts/entity_filter.md) in the **Entity Filter** field.
 
 
 - The **Save as Default** button causes the current settings to be saved and used for all newly-crafted missile pods. Note: settings are saved server-side.

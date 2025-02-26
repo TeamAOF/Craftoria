@@ -8,5 +8,5 @@ navigation:
 
 # 細断
 
- [細断を参照](../obliteration.md)
+ [細断を参照](../anvil/obliteration.md)
 

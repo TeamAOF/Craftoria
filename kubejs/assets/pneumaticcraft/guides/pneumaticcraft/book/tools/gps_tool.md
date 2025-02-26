@@ -18,7 +18,7 @@ Sneaking and scrolling the mouse wheel allows quick adjustment of the coordinate
 <a name="variables"></a>
 ## Linking Global Variables
 
-[Global Variables](../variables.md#global) are an advanced [Drone](../drone.md) feature, accessed via the [Coordinate Operator](../coordinate_operator.md).
+[Global Variables](../programming/variables.md#global) are an advanced [Drone](../base_concepts/drone.md) feature, accessed via the [Coordinate Operator](../programming/coordinate_operator.md).
 
 *Right-clicking* a *GPS Tool* in the air allows a variable name to be entered.
 
@@ -26,9 +26,9 @@ Now, that *Global Variable* will track the value of the *GPS Tool's* selected co
 
 ## Related Chapters
 
-- [TODO](../air_cannon.md)
-- [TODO](../universal_sensor.md)
-- [TODO](../programmer.md)
+- [TODO](../machines/air_cannon.md)
+- [TODO](../machines/universal_sensor.md)
+- [TODO](../programming/programmer.md)
 - [TODO](./amadron_tablet.md)
 
 Machines and tools that make use of the *GPS Tool*.

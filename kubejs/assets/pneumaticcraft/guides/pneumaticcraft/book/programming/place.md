@@ -7,13 +7,13 @@ navigation:
 
 # Place Widget
 
-The [Drone](../drone.md) will place blocks from its inventory in the world. It will place blocks in the [area](./area.md) specified, starting with locations that are closest to it.
+The [Drone](../tools/drone.md) will place blocks from its inventory in the world. It will place blocks in the [area](./area.md) specified, starting with locations that are closest to it.
 
 You can control the order in which blocks are placed: *Right-click* the widget to specify if the *Drone* should place blocks layer by layer, and if so from top to bottom or vice versa.
 
 ## Placing Random Blocks
 
-Normally, the *Drone* will place blocks from its inventory in order, starting from the first slot (bear in mind that drone inventories only have a single slot by default, but [Inventory Upgrades](../upgrades.md#inventory) can be used to increase that).
+Normally, the *Drone* will place blocks from its inventory in order, starting from the first slot (bear in mind that drone inventories only have a single slot by default, but [Inventory Upgrades](../base_concepts/upgrades.md#inventory) can be used to increase that).
 
 By checking the *Place Random Blocks* option, the *Drone* will select blocks at random from its inventory to place.
 

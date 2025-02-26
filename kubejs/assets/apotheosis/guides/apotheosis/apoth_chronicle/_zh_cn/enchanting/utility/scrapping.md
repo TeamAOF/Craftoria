@@ -14,7 +14,7 @@ navigation:
 
 你总会获得一半数量的魔咒（向上取整）。
 
-选择的魔咒是基于你的[附魔种子](../seed.md)。
+选择的魔咒是基于你的[附魔种子](../table/seed.md)。
 
 <Recipe id="apothic_enchanting:scrap_tome" />
 

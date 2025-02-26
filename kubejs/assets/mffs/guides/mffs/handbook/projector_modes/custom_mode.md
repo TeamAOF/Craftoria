@@ -21,11 +21,11 @@ Crafting the <Color id="dark_green">Custom Mode</Color>.
 
 Hold the <Color id="dark_green">Custom Mode</Color> item and use it on two blocks in the world. These two (primary and secondary) blocks will define a 3D space that the <Color id="dark_green">Custom Mode</Color> can analyse. As each block is clicked on, their coordinates in the world will be stored as 'Primary pos' and 'Secondary pos'. Use while sneaking to instruct the <Color id="dark_green">Custom Mode</Color> item to analyze and save all the blocks that exist between the selected points.
 
-When the Projector detects that a <Color id="dark_green">Custom Mode</Color> item has been entered into the correct slot, random holograms will continuously appear above it to indicate that the field pattern does not match any of the known mode shapes (this is a feature, not a bug). If desired, set where the force field should appear (in relation to the Projector) by adding [<Color id="dark_purple">Translation Modules</Color>](../translation_module.md) into the item slots marked by directional arrows.
+When the Projector detects that a <Color id="dark_green">Custom Mode</Color> item has been entered into the correct slot, random holograms will continuously appear above it to indicate that the field pattern does not match any of the known mode shapes (this is a feature, not a bug). If desired, set where the force field should appear (in relation to the Projector) by adding [<Color id="dark_purple">Translation Modules</Color>](../projector_modules/translation_module.md) into the item slots marked by directional arrows.
 
 ## Field Adjustment
 
-As with the other projector modes, <Color id="dark_green">Custom Mode</Color> force fields can be rotated and scaled using the [<Color id="dark_purple">Rotation</Color>](../rotation_module.md) and [<Color id="dark_purple">Scale Modules</Color>](../scale_module.md) respectively.
+As with the other projector modes, <Color id="dark_green">Custom Mode</Color> force fields can be rotated and scaled using the [<Color id="dark_purple">Rotation</Color>](../projector_modules/rotation_module.md) and [<Color id="dark_purple">Scale Modules</Color>](../upgrade_modules/scale_module.md) respectively.
 
 ## Projection
 
@@ -36,7 +36,7 @@ TODO: Unsupported flag 'border'
 
 ## Projection
 
-A <Color id="dark_green">Custom Mode</Color> field being projected with a [<Color id="dark_purple">Camouflage Module</Color>](../camouflage_module.md) applied.
+A <Color id="dark_green">Custom Mode</Color> field being projected with a [<Color id="dark_purple">Camouflage Module</Color>](../projector_modules/camouflage_module.md) applied.
 
 TODO: Unsupported flag 'border'
 ![](custom_mode_camo.png)

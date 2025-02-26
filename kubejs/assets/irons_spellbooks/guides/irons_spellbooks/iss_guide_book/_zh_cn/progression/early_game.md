@@ -42,6 +42,6 @@ item_ids:
 ## 流浪法师套装
 
 <GameScene zoom={4}>
-  <Entity id="minecraft:armor_stand"data="{ArmorItems:[{id:'irons_spellbooks:wandering_magician_boots',Count:1b},{id:'irons_spellbooks:wandering_magician_leggings',Count:1b},{id:'irons_spellbooks:wandering_magician_chestplate',Count:1b},{id:'irons_spellbooks:wandering_magician_helmet',Count:1b}],NoBasePlate:1b}" />
+  <Entity id="minecraft:armor_stand" data="{ArmorItems:[{id:'irons_spellbooks:wandering_magician_boots',Count:1b},{id:'irons_spellbooks:wandering_magician_leggings',Count:1b},{id:'irons_spellbooks:wandering_magician_chestplate',Count:1b},{id:'irons_spellbooks:wandering_magician_helmet',Count:1b}],NoBasePlate:1b}" />
 </GameScene>
 

@@ -11,7 +11,7 @@ navigation:
 
 Inventories & tanks can be marked with [Logistic Frames](./frames.md), attachable gadgets which control how items & fluids should be moved into and out of those blocks.
 
-Those inventories are then connected with [Logistics Drones](./logistics_drone.md) or [Pressure Tubes](../pressure_tubes.md) with [Logistics Modules](../logistics_module.md) attached.
+Those inventories are then connected with [Logistics Drones](./logistics_drone.md) or [Pressure Tubes](../tubes/pressure_tubes.md) with [Logistics Modules](../tubes/logistics_module.md) attached.
 
 The *Logistics System* is heavily inspired by [Factorio](https://wiki.factorio.com/Logistic_network), and if you've played that game, the concepts will be familiar. The primary difference is that this mod provides [Frames](./frames.md) to attach to existing inventories/tanks, rather than separate logistic chests.
 
@@ -19,7 +19,7 @@ The *Logistics System* is heavily inspired by [Factorio](https://wiki.factorio.c
 
 - [TODO](./frames.md)
 - [TODO](./logistics_drone.md)
-- [TODO](../logistics_module.md)
+- [TODO](../tubes/logistics_module.md)
 
 
 

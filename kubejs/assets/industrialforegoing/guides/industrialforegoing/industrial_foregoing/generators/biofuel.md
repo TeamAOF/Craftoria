@@ -10,5 +10,5 @@ navigation:
 
 A purple fluid made of plants, dyes and some questionable things like skulls in a [Bioreactor](./bioreactor.md). 
 
-Used in a [Biofuel Generator](./biofuel_generator.md) or in [Infinity Tools](../infinity_tools.md).
+Used in a [Biofuel Generator](./biofuel_generator.md) or in [Infinity Tools](../tools/infinity_tools.md).
 

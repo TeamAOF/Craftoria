@@ -13,7 +13,7 @@ navigation:
 
 <ItemImage id="minecraft:red_mushroom" />
 
-これは最初に利用できる唯一の方法です。[熱空気圧処理プラント](../thermopneumatic_processing_plant.md)に*水*を入れ、キノコをいくつか追加します。この方法は少し時間(キノコの供給が十分に必要)がかかりますが酵母培養液の初期在庫を簡単に生成できます。
+これは最初に利用できる唯一の方法です。[熱空気圧処理プラント](../manufacturing/thermopneumatic_processing_plant.md)に*水*を入れ、キノコをいくつか追加します。この方法は少し時間(キノコの供給が十分に必要)がかかりますが酵母培養液の初期在庫を簡単に生成できます。
 
 ## 方法その1(続き)
 
@@ -39,5 +39,5 @@ navigation:
 
 重要なのは砂糖を加えたときではなく、水を入れたときに培養が広がるということです。
 
-この方法はゲームの早い段階でも少し考えて設計すれば自動化できます(ヒント: [全方向ホッパー](../omnidirectional_hopper.md)と[流体ホッパー](../liquid_hopper.md)と[ディスペンサーアップブレード](../upgrades.md#dispenser)が非常に役立つ場合があります)。
+この方法はゲームの早い段階でも少し考えて設計すれば自動化できます(ヒント: [全方向ホッパー](../machines/omnidirectional_hopper.md)と[流体ホッパー](../machines/liquid_hopper.md)と[ディスペンサーアップブレード](../base_concepts/upgrades.md#dispenser)が非常に役立つ場合があります)。
 

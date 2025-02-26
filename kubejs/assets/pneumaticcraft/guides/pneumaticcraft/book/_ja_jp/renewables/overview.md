@@ -11,7 +11,7 @@ navigation:
 
 <ItemImage id="pneumaticcraft:yeast_culture_bucket" />
 
-手順1a: *酵母培養液*を作成します。キノコと水を用意して[熱空気圧処理プラント](../thermopneumatic_processing_plant.md)で混ぜます。TPPの温度が30℃から60℃の間になるようにする必要がありますが、これはバイオームと高度によって簡単な場合もあれば難しい場合もあります。
+手順1a: *酵母培養液*を作成します。キノコと水を用意して[熱空気圧処理プラント](../manufacturing/thermopneumatic_processing_plant.md)で混ぜます。TPPの温度が30℃から60℃の間になるようにする必要がありますが、これはバイオームと高度によって簡単な場合もあれば難しい場合もあります。
 
 <ItemImage id="minecraft:sugar" />
 
@@ -19,13 +19,13 @@ navigation:
 
 <ItemImage id="pneumaticcraft:ethanol_bucket" />
 
-手順2: *酵母培養液*と*砂糖*を[熱空気圧処理プラント](../thermopneumatic_processing_plant.md)に追加して*エタノール*を作成します。これは手順1aと非常によく似た方法で温度に依存します。
+手順2: *酵母培養液*と*砂糖*を[熱空気圧処理プラント](../manufacturing/thermopneumatic_processing_plant.md)に追加して*エタノール*を作成します。これは手順1aと非常によく似た方法で温度に依存します。
 
 <ItemImage id="pneumaticcraft:vegetable_oil_bucket" />
 
-手順3: [熱空気圧処理プラント](../thermopneumatic_processing_plant.md)で*種*または*作物*を少し圧力をかけて絞り、*植物油*を作ります。
+手順3: [熱空気圧処理プラント](../manufacturing/thermopneumatic_processing_plant.md)で*種*または*作物*を少し圧力をかけて絞り、*植物油*を作ります。
 
 <ItemImage id="pneumaticcraft:biodiesel_bucket" />
 
-手順4: *エタノール*と*植物油*を[流体ミキサー](../fluid_mixer.md)で混ぜます。おめでとうございます、再生可能燃料ができました！
+手順4: *エタノール*と*植物油*を[流体ミキサー](../manufacturing/fluid_mixer.md)で混ぜます。おめでとうございます、再生可能燃料ができました！
 

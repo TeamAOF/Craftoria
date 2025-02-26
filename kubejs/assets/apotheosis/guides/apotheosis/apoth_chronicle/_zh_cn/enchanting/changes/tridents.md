@@ -22,5 +22,5 @@ item_ids:
 
 神化还加入了一种制作三叉戟的方法。
 
-只需制作一个<Color id="blue">惰性三叉戟</Color>并通过[灌注附魔](../infusion.md)升级。
+只需制作一个<Color id="blue">惰性三叉戟</Color>并通过[灌注附魔](../table/infusion.md)升级。
 

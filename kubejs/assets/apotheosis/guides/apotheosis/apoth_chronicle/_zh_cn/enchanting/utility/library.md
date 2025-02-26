@@ -36,5 +36,5 @@ Shift-点击一个已储存的魔咒将提取尽可能多的等级。
 
 <Color id="blue">亚历山大图书馆</Color>的<Color id="gold">等级容量</Color>为31级（XXXI）。
 
-它不能直接合成，必须用[灌注附魔](../infusion.md)合成。
+它不能直接合成，必须用[灌注附魔](../table/infusion.md)合成。
 

@@ -9,7 +9,7 @@ item_ids:
 
 # Drone Interface
 
-The Drone Interface is a *ComputerCraft/OpenComputers peripheral* that's used to communicate with [Drones](../drone.md). To do so, program a *Drone* with a [Computer Control puzzle piece](../computer_control.md).
+The Drone Interface is a *ComputerCraft/OpenComputers peripheral* that's used to communicate with [Drones](../tools/drone.md). To do so, program a *Drone* with a [Computer Control puzzle piece](../programming/computer_control.md).
 
 When the Drone executes the Computer Control piece, it'll try to connect to an <Color hex="#880">$(t:A Drone Interface can only connect to one Drone at a time)available$(/t:A Drone Interface can only connect to one Drone at a time)</Color> *Drone Interface* located within the puzzle piece's area.
 
@@ -39,7 +39,7 @@ m.setAction("standby")
 
 ## Example (cont)
 
-You may notice that the program opposite has to explicitly wait until the Dig (and Goto) actions are done before continuing, unlike when writing Drone programs via the [Programmer](../programmer.md). This is because your Lua computer program is running in a separate thread and can't interact with the world directly; it just tells the drone what to do next, and needs to ask the drone if it's done yet.
+You may notice that the program opposite has to explicitly wait until the Dig (and Goto) actions are done before continuing, unlike when writing Drone programs via the [Programmer](../programming/programmer.md). This is because your Lua computer program is running in a separate thread and can't interact with the world directly; it just tells the drone what to do next, and needs to ask the drone if it's done yet.
 
 ## abortAction()
 
@@ -53,7 +53,7 @@ Stops the current running action.
 
 <Color hex="#800">addArea(<x1>,<y1>,<z1>,<x2>,<y2>,<z2>,<areaType>)</Color>
 
-Adds an area to the current stored area of the Drone. When using the latter method, x1/y1/z1 represent the first point (which would be P1 of an [GPS Area Tool](../gps_area_tool.md)), and x2/y2/z2 represent the second point, or P2 of the GPS Area Tool.
+Adds an area to the current stored area of the Drone. When using the latter method, x1/y1/z1 represent the first point (which would be P1 of an [GPS Area Tool](../tools/gps_area_tool.md)), and x2/y2/z2 represent the second point, or P2 of the GPS Area Tool.
 
 getAreaTypes() can be used to list the valid area types.
 
@@ -79,7 +79,7 @@ Adds a text to the blacklisted texts. Used to specify a filter for the "entity_a
 
 <Color hex="#800">addWhitelistItemFilter(<item/block name>, <useNBT>, <useModSimilarity>)</Color>
 
-Acts as an [Item Filter](../item_filter.md) widget on the right of another widget. The item/block name is the registry name, e.g. *pneumaticcraft:pressure_tube*. The 'useXXX' are all booleans that determine what filters will be used (as in the Item Filter widget GUI).
+Acts as an [Item Filter](../programming/item_filter.md) widget on the right of another widget. The item/block name is the registry name, e.g. *pneumaticcraft:pressure_tube*. The 'useXXX' are all booleans that determine what filters will be used (as in the Item Filter widget GUI).
 
 ## addWhitelistLiquidFilter()
 
@@ -139,7 +139,7 @@ Clears all stored whitelisted texts.
 
 <Color hex="#800">evaluateCondition()</Color>
 
-Returns true/false. Used in [conditions](../conditions.md) only. Will return true/false depending on whether or not the condition is satisfied. Drone Conditions can be checked right after setting <Color hex="#800">setAction()</Color>, but non-Drone conditions require that you wait until <Color hex="#800">isActionDone()</Color> returns true before the result of <Color hex="#800">evaluateCondition()</Color> is useful.
+Returns true/false. Used in [conditions](../programming/conditions.md) only. Will return true/false depending on whether or not the condition is satisfied. Drone Conditions can be checked right after setting <Color hex="#800">setAction()</Color>, but non-Drone conditions require that you wait until <Color hex="#800">isActionDone()</Color> returns true before the result of <Color hex="#800">evaluateCondition()</Color> is useful.
 
 ## exitPiece()
 
@@ -163,7 +163,7 @@ Returns a string that represents the last action set by <Color hex="#800">setAct
 
 <Color hex="#800">getAllActions()</Color>
 
-Returns a table of all the current selectable actions (like *pneumaticcraft:dig* or *pneumaticcraft:place'*. Each of these actions corresponds directly to a programming widget available in the [Programmer](../programmer.md#ids) GUI.
+Returns a table of all the current selectable actions (like *pneumaticcraft:dig* or *pneumaticcraft:place'*. Each of these actions corresponds directly to a programming widget available in the [Programmer](../programming/programmer.md#ids) GUI.
 
 Note: for actions which start with *pneumaticcraft:* (which is all default actions), the *pneumaticcraft:* prefix is optional.
 
@@ -199,7 +199,7 @@ e.g for *pneumaticcraft:speed_upgrade*, the name is "speed".
 
 <Color hex="#800">getVariable(<variable name>)</Color>
 
-Returns the value of the variable from this Drone (x, y and z). It is possible to get [global](../variables.md#global) (# prefix) and [special](../variables.md#special) variables ($ prefix) too.
+Returns the value of the variable from this Drone (x, y and z). It is possible to get [global](../programming/variables.md#global) (# prefix) and [special](../programming/variables.md#special) variables ($ prefix) too.
 
 ## hideArea()
 
@@ -229,7 +229,7 @@ Removes an area from the current stored area (equivalent to blacklisting the are
 
 <Color hex="#800">setAction(<action>)</Color>
 
-Set an action for the Drone to do. This should be one of the actions returned by <Color hex="#800">getAllActions()</Color>; these correspond directly to programming widgets in the [Programmer](../programmer.md) GUI, which shows the action name in widget tooltips when F3+H is toggled.
+Set an action for the Drone to do. This should be one of the actions returned by <Color hex="#800">getAllActions()</Color>; these correspond directly to programming widgets in the [Programmer](../programming/programmer.md) GUI, which shows the action name in widget tooltips when F3+H is toggled.
 
 Note that when the prefix is *pneumaticcraft:*, that prefix is optional.
 
@@ -361,13 +361,13 @@ Sets whether or not the Drone has a maximum number of actions performed on one b
 
 <Color hex="#800">setVariable(<variable name>, <x>, <y>, <z>)</Color>
 
-Sets a [variable](../variables.md) for this Drone to given X/Y/Z coordinates. It is possible to set [global variables](../variables.md#global).
+Sets a [variable](../programming/variables.md) for this Drone to given X/Y/Z coordinates. It is possible to set [global variables](../programming/variables.md#global).
 
 ## setVariable()
 
 <Color hex="#800">setVariable(<variable name>, <boolean>)</Color>
 
-Sets a [variable](../coordinate_operator.md) for this Drone. 'true' is equivalent to passing (1,0,0), and 'false' is equivalent to passing (0,0,0).
+Sets a [variable](../programming/coordinate_operator.md) for this Drone. 'true' is equivalent to passing (1,0,0), and 'false' is equivalent to passing (0,0,0).
 
 ## showArea()
 

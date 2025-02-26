@@ -7,7 +7,7 @@ navigation:
 
 # Edit Sign Widget
 
-This will edit all *Signs* and/or [Aphorism Tiles](../aphorism_tile.md) in the connected [Area](./area.md) to the text specified by the connected [Text](./text.md) widget(s).
+This will edit all *Signs* and/or [Aphorism Tiles](../machines/aphorism_tile.md) in the connected [Area](./area.md) to the text specified by the connected [Text](./text.md) widget(s).
 
 Each connected *Text* widget represents one line; by connecting multiple *Text* widgets, you can set a multi-line message.
 

@@ -9,7 +9,7 @@ item_ids:
 
 # Pressurized Spawner
 
-A *Pressurized Spawner* is a powerful device which uses [pressure](../pressure.md) to spawn mobs. It doesn't care about light levels or player proximity, and can be enabled/disabled via redstone.
+A *Pressurized Spawner* is a powerful device which uses [pressure](../base_concepts/pressure.md) to spawn mobs. It doesn't care about light levels or player proximity, and can be enabled/disabled via redstone.
 
 To use a Pressurized Spawner, you will need a [Spawner Core](./spawner_core.md) containing some captured mob essence, and at least 10 bar of pressure.
 

@@ -25,5 +25,5 @@ The shelf will also gain <Color hex="#3DB53D">Eterna</Color> and <Color hex="#A8
 
 Note: books can be inserted the same way you use a chiseled bookshelf, and the shelf must be in a valid bookshelf slot to operate.
 
-Blacklisted enchantments will be reflected in the [Enchanting Info Screen](../info.md).
+Blacklisted enchantments will be reflected in the [Enchanting Info Screen](../table/info.md).
 

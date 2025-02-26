@@ -9,7 +9,7 @@ item_ids:
 
 # Puller Module Mk1
 
-This module tries to pull the first eligible item from the adjacent inventory in its [configured direction](../modules.md#direction) into the router's buffer. If the buffer is full or contains something that stacks with nothing in the inventory, nothing will be pulled.
+This module tries to pull the first eligible item from the adjacent inventory in its [configured direction](../intro/modules.md#direction) into the router's buffer. If the buffer is full or contains something that stacks with nothing in the inventory, nothing will be pulled.
 
 
 

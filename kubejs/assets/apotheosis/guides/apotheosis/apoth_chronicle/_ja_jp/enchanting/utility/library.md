@@ -36,5 +36,5 @@ item_ids:
 
 <Color id="blue">アレクサンドリア書庫</Color>の<Color id="gold">レベル容量</Color>は31(XXXI)となっている。
 
-直接クラフトすることはできず、[注入エンチャント](../infusion.md)を使用して作成する必要がある。
+直接クラフトすることはできず、[注入エンチャント](../table/infusion.md)を使用して作成する必要がある。
 

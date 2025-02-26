@@ -8,5 +8,5 @@ navigation:
 
 # 分割
 
-[分割を参照](../splitting.md)
+[分割を参照](../anvil/splitting.md)
 

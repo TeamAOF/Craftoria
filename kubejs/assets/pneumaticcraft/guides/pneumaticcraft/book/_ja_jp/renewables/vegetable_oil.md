@@ -7,7 +7,7 @@ navigation:
 
 # 植物油
 
-*植物油*はさまざまな*種*と*作物*から[熱空気圧処理プラント](../thermopneumatic_processing_plant.md)で生産できます。種は栽培された作物よりも優れた油源になる傾向があります。植物油は[バイオディーゼル](./biodiesel.md)の生産に必要です。
+*植物油*はさまざまな*種*と*作物*から[熱空気圧処理プラント](../manufacturing/thermopneumatic_processing_plant.md)で生産できます。種は栽培された作物よりも優れた油源になる傾向があります。植物油は[バイオディーゼル](./biodiesel.md)の生産に必要です。
 
 **TODO:** Unsupported Patchouli page type **pneumaticcraft:thermo_plant**
 

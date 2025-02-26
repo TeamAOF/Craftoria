@@ -19,7 +19,7 @@ You can pipe *Empty PCB's* in on any side. Successfully-etched *Unassembled PCB'
 
 ## Heating
 
-Without [Heat](../heat.md), the Etching Tank takes 150 seconds to fully etch a PCB (although of course it can etch up to 25 in parallel). If you apply heat to the tank, you can further reduce the processing time, down to a minimum of 30 seconds; the hotter the tank gets, the faster the processing time. However, be warned that when heated, a small amount of Etching Acid will be used up while PCB's are being etched.
+Without [Heat](../base_concepts/heat.md), the Etching Tank takes 150 seconds to fully etch a PCB (although of course it can etch up to 25 in parallel). If you apply heat to the tank, you can further reduce the processing time, down to a minimum of 30 seconds; the hotter the tank gets, the faster the processing time. However, be warned that when heated, a small amount of Etching Acid will be used up while PCB's are being etched.
 
 Crafting a Etching Tank
 

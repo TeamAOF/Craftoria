@@ -10,7 +10,7 @@ item_ids:
 # Sender Module Mk2
 
 This module behaves like a [Sender Module Mk1](./sender_1.md), but has more powerful inventory targeting capabilities:
-- The target inventory can be up to 24 blocks away (up to 48 with [Range Augments](../range_up.md)).
+- The target inventory can be up to 24 blocks away (up to 48 with [Range Augments](../augments/range_up.md)).
 - Clear line of sight is *not* required.
 
 

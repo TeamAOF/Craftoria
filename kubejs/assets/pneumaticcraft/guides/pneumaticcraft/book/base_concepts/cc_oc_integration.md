@@ -7,7 +7,7 @@ navigation:
 
 # Computer Integration
 
-When *ComputerCraft* or *Open Computers* is installed, you'll be able to interact with almost every <Color hex="#228">PneumaticCraft: Repressurized</Color> machine, and [Drones](../drone_interface.md).
+When *ComputerCraft* or *Open Computers* is installed, you'll be able to interact with almost every <Color hex="#228">PneumaticCraft: Repressurized</Color> machine, and [Drones](../machines/drone_interface.md).
 
 Any of the machines listed here can be interacted with as CC/OC peripherals.
 
@@ -24,14 +24,14 @@ You will need to use an *Adapter* to connect your computer to $(pnc) machines; t
 ## Common Methods
 
 The following methods are common to *all* <Color hex="#228">PneumaticCraft: Repressurized</Color> machines:
-- <Color hex="#800">getPressure(), getPressure(<side>)</Color>: gets the machine's pressure. <side> is optional, only useful for the [Vacuum Pump](../vacuum_pump.md), which has side-specific pressures.
+- <Color hex="#800">getPressure(), getPressure(<side>)</Color>: gets the machine's pressure. <side> is optional, only useful for the [Vacuum Pump](../machines/vacuum_pump.md), which has side-specific pressures.
 - <Color hex="#800">getDangerPressure()</Color>: get the pressure at which the machine is at risk of explosion
 - <Color hex="#800">getCriticalPressure()</Color>: get the hard maximum pressure at which the machine will certainly explode
 
 ## Heat-Related Methods
 
 The following methods are common to *all* <Color hex="#228">PneumaticCraft: Repressurized</Color> machines which support the concept of [Heat](./heat.md):
-- <Color hex="#800">getTemperature(), getTemperature(<side>)</Color>: gets the machine's temperature. <side> is optional, only useful for the [Vortex Tube](../vortex_tube.md), which has different temperatures depending on the side.
+- <Color hex="#800">getTemperature(), getTemperature(<side>)</Color>: gets the machine's temperature. <side> is optional, only useful for the [Vortex Tube](../machines/vortex_tube.md), which has different temperatures depending on the side.
 
 <a name="air_cannon"></a>
 <ItemImage id="pneumaticcraft:air_cannon" />

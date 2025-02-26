@@ -4,6 +4,7 @@ navigation:
   icon: "pneumaticcraft:printed_circuit_board"
   parent: pneumaticcraft:components.md
 item_ids:
+  - pneumaticcraft:empty_pcb
   - pneumaticcraft:printed_circuit_board
 ---
 
@@ -11,7 +12,7 @@ item_ids:
 
 *プリント回路基板*(PCB)は多くの高機能機械やツールで使用される重要なコンポーネントです。*PCB*の作成にはいくつかの手順が必要です。
 
-まず、反対側に示すように[圧力室](../pressure_chamber.md)内に*空のPCB*を作成します。その後、2つの方法で続行できます(次のページを参照)。
+まず、反対側に示すように[圧力室](../manufacturing/pressure_chamber.md)内に*空のPCB*を作成します。その後、2つの方法で続行できます(次のページを参照)。
 
 **TODO:** Unsupported Patchouli page type **pneumaticcraft:pressure_chamber**
 
@@ -21,19 +22,19 @@ item_ids:
 
 ## 方法その1
 
-この方法は当初利用できる唯一の方法であり、追加の自動化と加熱インフラストラクチャがなければやや時間がかかります。*PCB*を[UVライトボックス](../uv_light_box.md)に入れて化学的に開発し、露光した*空のPCB*を[エッチングタンク](../etching_tank.md)に入れて*未組立のPCB*に変換することができます。
+この方法は当初利用できる唯一の方法であり、追加の自動化と加熱インフラストラクチャがなければやや時間がかかります。*PCB*を[UVライトボックス](../manufacturing/uv_light_box.md)に入れて化学的に開発し、露光した*空のPCB*を[エッチングタンク](../manufacturing/etching_tank.md)に入れて*未組立のPCB*に変換することができます。
 
-**TODO:** Unsupported Patchouli page type **patchouli:blasting**
+## 不良PCBのリサイクル
 
-```
-{"type":"blasting","title":"不良PCBのリサイクル","recipe":"pneumaticcraft:empty_pcb_from_failed_pcb","text":"*空のPCB*が[UVライトボックス](../uv_light_box.md)内で100%露光されていない場合、エッチングプロセスは失敗する可能性があります。*不良PCB*は*溶鉱炉*でリサイクルできます。"}
-```
+*空のPCB*が[UVライトボックス](../manufacturing/uv_light_box.md)内で100%露光されていない場合、エッチングプロセスは失敗する可能性があります。*不良PCB*は*溶鉱炉*でリサイクルできます。
+
+<Recipe id="pneumaticcraft:empty_pcb_from_failed_pcb" />
 
 ## 方法その2
 
 <ItemImage id="pneumaticcraft:assembly_controller" />
 
-[組立システム](../assembly_system.md)を作成できたら、それを使用して*組立プログラム: レーザー*で*空のPCB*を*未組立のPCB*に直接変換できます。この場合*UVライトボックス*で露光したり、*エッチングタンク*を使用する必要はありません。
+[組立システム](../manufacturing/assembly_system.md)を作成できたら、それを使用して*組立プログラム: レーザー*で*空のPCB*を*未組立のPCB*に直接変換できます。この場合*UVライトボックス*で露光したり、*エッチングタンク*を使用する必要はありません。
 
 ## 方法その2(続き)
 

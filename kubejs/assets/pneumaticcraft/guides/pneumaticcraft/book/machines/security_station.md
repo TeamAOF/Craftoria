@@ -19,9 +19,9 @@ This sounds great, but to set up a *Security Station* you need to do some things
 
 ## Setup
 
-To set up a *Security Station*, you must place [Network Components](../network_components.md) in the network grid to form a *network*. In every network there must be one [Diagnostic Subroutine](../network_components.md#diagnostic), one [Network IO Port](../network_components.md#io_port), and one [Network Registry](../network_components.md#registry).
+To set up a *Security Station*, you must place [Network Components](../components/network_components.md) in the network grid to form a *network*. In every network there must be one [Diagnostic Subroutine](../components/network_components.md#diagnostic), one [Network IO Port](../components/network_components.md#io_port), and one [Network Registry](../components/network_components.md#registry).
 
-These three special nodes must all be connected with each other, which is done with [Network Nodes](../network_components.md#node).
+These three special nodes must all be connected with each other, which is done with [Network Nodes](../components/network_components.md#node).
 
 ## Hacking Disabled
 
@@ -38,19 +38,19 @@ Placing *Network Node* components in larger stacks increases the *node rating*, 
 ## Hacker Tools
 
 There are a couple of useful items that hackers should try to obtain; neither are craftable and must be found in-world (villager trades or dungeon loot):
-- The [Nuke Virus](../nuke_virus.md), which can be used to insta-capture one node
-- The [STOP! Worm](../stop_worm.md), which can temporarily freeze a Diagnostic's trace progress.
+- The [Nuke Virus](../components/nuke_virus.md), which can be used to insta-capture one node
+- The [STOP! Worm](../components/stop_worm.md), which can temporarily freeze a Diagnostic's trace progress.
 
 ## Upgrades
 
 The *Security Station* takes a few upgrades:
-- [Entity Trackers](../upgrades.md#entity_tracker) increase the chance for the [hacker](#hacking) to be detected; there are diminishing returns, and the maximum protection is 99% per node hack attempt.
-- [Range Upgrades](../upgrades.md#range) increase the protected range of the station by 1 per upgrade, to a maximum of 16 blocks in every direction (for a max protected area of 33x33x33 blocks).
+- [Entity Trackers](../base_concepts/upgrades.md#entity_tracker) increase the chance for the [hacker](#hacking) to be detected; there are diminishing returns, and the maximum protection is 99% per node hack attempt.
+- [Range Upgrades](../base_concepts/upgrades.md#range) increase the protected range of the station by 1 per upgrade, to a maximum of 16 blocks in every direction (for a max protected area of 33x33x33 blocks).
 
 ## Upgrades (cont.)
 
 
-- [Security Upgrades](../upgrades.md#security) increase the number of *Security Upgrades* that hackers need in their [Pneumatic Helmet](../pneumatic_helmet.md) to start hacking. Note that hackers won't be told how many Security Upgrades they need, and the Security Station will deal a small amount of non-resistible damage to any player who tries to hack, but can't due to lack of Security Upgrades.
+- [Security Upgrades](../base_concepts/upgrades.md#security) increase the number of *Security Upgrades* that hackers need in their [Pneumatic Helmet](../armor/pneumatic_helmet.md) to start hacking. Note that hackers won't be told how many Security Upgrades they need, and the Security Station will deal a small amount of non-resistible damage to any player who tries to hack, but can't due to lack of Security Upgrades.
 
 ## Allowing Friends
 
@@ -65,7 +65,7 @@ When someone hacks your *Security Station*, you can see that in the **Problems**
 <a name="hacking"></a>
 ## Hacking
 
-To hack a *Security Station* that isn't yours, you need a [Pneumatic Helmet](../pneumatic_helmet.md) with at least one (and probably many) [Security Upgrades](../upgrades.md#security) installed. When you do this, a GUI similar to the one opposite appears. Watch [this video (very old but still relevant)](https://www.youtube.com/watch?v=Lgmpslbrrwo) for a guide on how to hack.
+To hack a *Security Station* that isn't yours, you need a [Pneumatic Helmet](../armor/pneumatic_helmet.md) with at least one (and probably many) [Security Upgrades](../base_concepts/upgrades.md#security) installed. When you do this, a GUI similar to the one opposite appears. Watch [this video (very old but still relevant)](https://www.youtube.com/watch?v=Lgmpslbrrwo) for a guide on how to hack.
 
 To capture a node, *left-click* it. To fortify a captured node, *right-click* it; fortified nodes take slightly longer for the Diagnostic to capture.
 
@@ -78,7 +78,7 @@ To capture a node, *left-click* it. To fortify a captured node, *right-click* it
 
 - Keep your *Security Station* well-concealed and well-protected.
 - You can protect an area with multiple *Security Stations*; all of them must be hacked.
-- Consider active defences, such as [Drones](../drone.md) with combat programs, or [Sentry Turrets](./sentry_turret.md)
+- Consider active defences, such as [Drones](../tools/drone.md) with combat programs, or [Sentry Turrets](./sentry_turret.md)
 - A hacked *Security Station* can be made to emit a <Color hex="#f00">redstone signal</Color>, which could trigger additional measures (TNT under the station, perhaps?)
 
 Crafting a Security Station

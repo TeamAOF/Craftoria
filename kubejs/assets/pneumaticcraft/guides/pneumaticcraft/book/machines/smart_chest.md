@@ -29,7 +29,7 @@ Faces configured to push items will try to send items from the Smart Chest to an
 
 Faces configured to pull items will try to pull items from an adjacent inventory on that face.
 
-If you install a [Magnet Upgrade](../upgrades.md#magnet), the chest can absorb nearby items on the ground. This only works for faces that have been configured to pull items; the default pickup area is a 3x3x3 cube adjacent to the pulling face, which can be increased with [Range Upgrades](../upgrades.md#range).
+If you install a [Magnet Upgrade](../base_concepts/upgrades.md#magnet), the chest can absorb nearby items on the ground. This only works for faces that have been configured to pull items; the default pickup area is a 3x3x3 cube adjacent to the pulling face, which can be increased with [Range Upgrades](../base_concepts/upgrades.md#range).
 
 Crafting a Smart Chest
 

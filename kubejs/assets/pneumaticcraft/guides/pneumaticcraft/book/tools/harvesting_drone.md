@@ -9,13 +9,13 @@ item_ids:
 
 # Harvesting Drone
 
-A *Harvesting Drone* is a specialized non-programmable type of [Drone](./drone.md) which will carry out [crop/tree harvesting](../harvest.md) tasks in a 17x17x17 cube centered on the block it's deployed at. The Drone will *not* pick up harvested items.
+A *Harvesting Drone* is a specialized non-programmable type of [Drone](./drone.md) which will carry out [crop/tree harvesting](../programming/harvest.md) tasks in a 17x17x17 cube centered on the block it's deployed at. The Drone will *not* pick up harvested items.
 
 ## Automatic Charging
 
 <ItemImage id="pneumaticcraft:charging_station" />
 
-As with all types of Drone, these drones require [pressure](../pressure.md) to operate, and will automatically seek out [a Charging Station with a Dispenser Upgrade](./drone.md#charging) if low on air.
+As with all types of Drone, these drones require [pressure](../base_concepts/pressure.md) to operate, and will automatically seek out [a Charging Station with a Dispenser Upgrade](./drone.md#charging) if low on air.
 
 ## pneumaticcraft:harvesting_drone (TODO)
 

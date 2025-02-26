@@ -13,8 +13,8 @@ item_ids:
 
 The <Color id="dark_purple">Speed Module</Color> can be placed in the upgrade slots of various MFFS machines to upgrade their performance. Its effects vary depending on the machine, but most commonly include: 
 - Speeding up force field projection
-- Increasing the [Fortron](../fortron.md) transfer limit of a [Fortron Capacitor](../fortron_capacitor.md)
-- Increasing the efficiency of a [Coercion Deriver](../coercion_deriver.md)
+- Increasing the [Fortron](../getting_started/fortron.md) transfer limit of a [Fortron Capacitor](../machines/fortron_capacitor.md)
+- Increasing the efficiency of a [Coercion Deriver](../machines/coercion_deriver.md)
 
 Crafting the <Color id="dark_purple">Speed Module</Color>.
 

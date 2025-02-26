@@ -11,7 +11,7 @@ item_ids:
 
 *空気圧チェストプレート*は4つある*空気圧の防具*のうちの1つです。
 
-他の3つの部位よりも[空気量](../pressure.md)が大きくなっています。
+他の3つの部位よりも[空気量](../base_concepts/pressure.md)が大きくなっています。
 
 空気圧チェストプレートのクラフト
 
@@ -19,7 +19,7 @@ item_ids:
 
 <ItemImage id="pneumaticcraft:security_upgrade" />
 
-[セキュリティアップグレード](../upgrades.md#security)をインストールするとチェストプレートは火や溶岩からの保護を提供しますがかなりの空気コストがかかります。チェストプレートから空気が急速に排出されて近くの炎を消して涼しく保ちます。近くの溶岩をゆっくりと固めることさえあります。
+[セキュリティアップグレード](../base_concepts/upgrades.md#security)をインストールするとチェストプレートは火や溶岩からの保護を提供しますがかなりの空気コストがかかります。チェストプレートから空気が急速に排出されて近くの炎を消して涼しく保ちます。近くの溶岩をゆっくりと固めることさえあります。
 
 ## セキュリティアップグレード(続き)
 
@@ -33,7 +33,7 @@ item_ids:
 
 <ItemImage id="pneumaticcraft:magnet_upgrade" />
 
-1つ以上の[マグネットアップグレード](../upgrades.md#magnet)がインストールされている場合、近くのアイテムとXP オーブが非常にわずかな空気コストであなたに引き寄せられます。基本範囲は5ブロックですが、アップグレードを追加することで最大10ブロックまで増やすことができます。
+1つ以上の[マグネットアップグレード](../base_concepts/upgrades.md#magnet)がインストールされている場合、近くのアイテムとXP オーブが非常にわずかな空気コストであなたに引き寄せられます。基本範囲は5ブロックですが、アップグレードを追加することで最大10ブロックまで増やすことができます。
 
 ## マグネットアップグレード(続き)
 
@@ -41,11 +41,11 @@ item_ids:
 
 <ItemImage id="pneumaticcraft:charging_upgrade" />
 
-1つ以上の[充填アップグレード](../upgrades.md#charging)がインストールされている場合、チェストプレートは着用または所持しているインベントリ内の他の空気圧アイテムを加圧する機能を獲得します。チェストプレートは自身の圧力レベルまでしかアイテムを充填しません。追加の充填アップグレード(最大6個)を追加すると充填速度が上がります。
+1つ以上の[充填アップグレード](../base_concepts/upgrades.md#charging)がインストールされている場合、チェストプレートは着用または所持しているインベントリ内の他の空気圧アイテムを加圧する機能を獲得します。チェストプレートは自身の圧力レベルまでしかアイテムを充填しません。追加の充填アップグレード(最大6個)を追加すると充填速度が上がります。
 
 <ItemImage id="pneumaticcraft:dispenser_upgrade" />
 
-[ディスペンサーアップグレード](../upgrades.md#dispenser)を使用すると、[空気砲](../air_cannon.md)と同様に*$(k:pneumaticcraft.chestplate.launcher)$(/k:pneumaticcraft.chestplate.launcher)*を押して放すことで、オフハンドスロットからアイテム/ブロックを発射できます。ランチャーを完全に充填するには15ティック(0.75秒)かかります。キーを早く放すと、速度を落として発射します。
+[ディスペンサーアップグレード](../base_concepts/upgrades.md#dispenser)を使用すると、[空気砲](../machines/air_cannon.md)と同様に*$(k:pneumaticcraft.chestplate.launcher)$(/k:pneumaticcraft.chestplate.launcher)*を押して放すことで、オフハンドスロットからアイテム/ブロックを発射できます。ランチャーを完全に充填するには15ティック(0.75秒)かかります。キーを早く放すと、速度を落として発射します。
 
 ## ディスペンサーアップグレード(続き)
 
@@ -56,13 +56,13 @@ item_ids:
 
 <ItemImage id="pneumaticcraft:range_upgrade" />
 
-チェストプレートにインストールされた [レンジアップグレード](../upgrades.md#range)はアクティブの間、ブロックインタラクション(近接攻撃ではない)の到達距離を3.5ブロック増加します。ただし、これには継続的な小さな空中コストが伴います。
+チェストプレートにインストールされた [レンジアップグレード](../base_concepts/upgrades.md#range)はアクティブの間、ブロックインタラクション(近接攻撃ではない)の到達距離を3.5ブロック増加します。ただし、これには継続的な小さな空中コストが伴います。
 
 ## 空調アップグレード
 
 <ItemImage id="pneumaticcraft:air_conditioning_upgrade" />
 
-最大4つの[空調アップグレード](../upgrades.md#air_conditioning)をインストールすると[Tough As Nails](https://minecraft.curseforge.com/projects/tough-as-nails) Modによって追加された環境温度の極端な変化からある程度保護されます。空調は体温が通常より高いか低いことを検出すると自動的に作動して均衡が回復すると解除されます。
+最大4つの[空調アップグレード](../base_concepts/upgrades.md#air_conditioning)をインストールすると[Tough As Nails](https://minecraft.curseforge.com/projects/tough-as-nails) Modによって追加された環境温度の極端な変化からある程度保護されます。空調は体温が通常より高いか低いことを検出すると自動的に作動して均衡が回復すると解除されます。
 
 ## 空調アップグレード(続き)
 

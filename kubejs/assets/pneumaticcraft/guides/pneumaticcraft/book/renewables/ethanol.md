@@ -7,7 +7,7 @@ navigation:
 
 # Ethanol
 
-*Ethanol* can be produced in a [Thermopneumatic Processing Plant](../thermopneumatic_processing_plant.md) with [Yeast Culture](./yeast_culture.md) and *Sugar*. It is one of the constituents of [Biodiesel](./biodiesel.md).
+*Ethanol* can be produced in a [Thermopneumatic Processing Plant](../manufacturing/thermopneumatic_processing_plant.md) with [Yeast Culture](./yeast_culture.md) and *Sugar*. It is one of the constituents of [Biodiesel](./biodiesel.md).
 
 This process is temperature-sensitive: you will need to keep the Thermopneumatic Processing Plant's temperature between 30°C and 60°C.
 

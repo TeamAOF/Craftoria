@@ -16,7 +16,7 @@ item_ids:
 <a name="override"></a>
 <ItemImage id="modularrouters:override_card" />
 
-[セキュリティアップグレード](../security.md#override)を参照してください。
+[セキュリティアップグレード](../upgrades/security.md#override)を参照してください。
 
 
 

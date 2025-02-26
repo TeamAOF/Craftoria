@@ -9,7 +9,7 @@ navigation:
 
 これは[条件](./conditions.md)ウィジェットです。
 
-*ドローン条件: 圧力*ウィジェットを使用するとこの[ドローン](../drone.md)の[圧力](../pressure.md)を確認できます。
+*ドローン条件: 圧力*ウィジェットを使用するとこの[ドローン](../tools/drone.md)の[圧力](../base_concepts/pressure.md)を確認できます。
 
 *ドローン条件: 圧力ウィジェット*
 

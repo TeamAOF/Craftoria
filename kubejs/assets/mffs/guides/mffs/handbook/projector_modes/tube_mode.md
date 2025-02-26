@@ -19,7 +19,7 @@ Crafting the <Color id="dark_green">Tube Mode</Color>.
 
 ## Field Adjustment
 
-Placing a [<Color id="dark_purple">Scale Module</Color>](../scale_module.md) into an item slot marked by a directional arrow will scale the field by 1 block in only that direction. For example, to increase the height of a force field by 1 block; add a [<Color id="dark_purple">Scale Module</Color>](../scale_module.md) into an item slot marked by a directional arrow pointing towards the top-left or top-right of the GUI screen.
+Placing a [<Color id="dark_purple">Scale Module</Color>](../upgrade_modules/scale_module.md) into an item slot marked by a directional arrow will scale the field by 1 block in only that direction. For example, to increase the height of a force field by 1 block; add a [<Color id="dark_purple">Scale Module</Color>](../upgrade_modules/scale_module.md) into an item slot marked by a directional arrow pointing towards the top-left or top-right of the GUI screen.
 
 ## Projection
 
