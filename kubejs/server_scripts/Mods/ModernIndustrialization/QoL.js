@@ -2,7 +2,7 @@ ServerEvents.recipes((e) => {
   let miMixer = e.recipes.modern_industrialization.mixer;
 
   let cobbleGen = (item, fluids) => {
-    e.remove({type: 'modern_industrialization:mixer', output: item});
+    e.remove({ type: 'modern_industrialization:mixer', output: item });
     miMixer(2, 100)
       .itemIn(item, 0)
       .itemOut(item)
@@ -40,4 +40,7 @@ ServerEvents.recipes((e) => {
     .itemIn('4x #c:dusts/redstone')
     .itemOut('morered:red_alloy_ingot')
     .id('craftoria:modern_industrialization/alloy_smelter/red_alloy_ingot');
+
+  e.recipes.modern_industrialization.mixer(2, 20).fluidOut('60x justdirethings:xp_fluid_source').itemIn('ars_nouveau:experience_gem');
+  e.recipes.modern_industrialization.mixer(2, 20).fluidOut('240x justdirethings:xp_fluid_source').itemIn('ars_nouveau:greater_experience_gem');
 });
