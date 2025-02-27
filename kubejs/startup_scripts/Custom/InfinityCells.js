@@ -4,6 +4,7 @@ const $SoulKey = Java.loadClass('com.buuz135.soulplied_energistics.applied.SoulK
 const $FluxKey = Java.loadClass('com.glodblock.github.appflux.common.me.key.FluxKey');
 const $EnergyType = Java.loadClass('com.glodblock.github.appflux.common.me.key.type.EnergyType');
 // const $ExperienceKey = Java.loadClass('es.degrassi.appexp.me.key.ExperienceKey');
+const $SourceKey = Java.loadClass('gripe._90.arseng.me.key.SourceKey');
 
 /**
  * Add Infinity Cells.
@@ -25,6 +26,7 @@ global.infCells = [
   { id: 'soul', type: 'soul' },
   { id: 'flux', type: 'flux' },
   // { id: 'experience', type: 'experience' },
+  { id: 'source', type: 'source' },
 ];
 
 StartupEvents.registry('item', (e) => {
@@ -55,6 +57,9 @@ StartupEvents.registry('item', (e) => {
       // case 'experience':
       //   cell.type(() => $ExperienceKey.KEY);
       //   break;
+      case 'source':
+        cell.type(() => $SourceKey.KEY);
+        break;
       default:
         console.error(`Invalid type '${type}' for Infinity Cell with ID '${id}'`);
         break;

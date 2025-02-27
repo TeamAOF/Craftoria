@@ -62,4 +62,19 @@ ServerEvents.recipes((e) => {
     '4x mekanism_extras:cosmic_fluid_tank',
     '4x mekanism_extras:cosmic_bin',
   ]);
+
+  arsEcnhApparatus(
+    e,
+    'craftoria:infinity_source_cell',
+    'craftoria:infinity_cell_housing',
+    [
+      'ars_nouveau:agronomic_sourcelink',
+      'ars_nouveau:volcanic_sourcelink',
+      'ars_nouveau:alchemical_sourcelink',
+      'ars_nouveau:mycelial_sourcelink',
+      'ars_nouveau:vitalic_sourcelink',
+      '3x ars_elemental:mark_of_mastery',
+    ],
+    100000
+  );
 });
