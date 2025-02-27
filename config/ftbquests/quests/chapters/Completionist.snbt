@@ -15,103 +15,7 @@
 			rotation: 0.0d
 			width: 4.0d
 			x: 1.5d
-			y: 3.0d
-		}
-		{
-			height: 2.15d
-			image: "modern_industrialization:item/singularity"
-			rotation: 0.0d
-			width: 2.15d
-			x: 3.5d
-			y: -0.5d
-		}
-		{
-			height: 2.0d
-			image: "ae2:block/controller_lights"
-			rotation: 0.0d
-			width: 2.0d
-			x: -2.9999999999999982d
-			y: 0.5d
-		}
-		{
-			height: 2.5d
-			image: "mekanism:ctm/thermal_evaporation_controller_on_led"
-			rotation: 0.0d
-			width: 2.5d
-			x: 6.0d
-			y: 0.5d
-		}
-		{
-			height: 2.5d
-			image: "powah:item/charged_snowball"
-			rotation: 0.0d
-			width: 2.5d
-			x: 6.65d
-			y: 3.0d
-		}
-		{
-			height: 2.5d
-			image: "extended_industrialization:block/machines/large_macerator/overlay_front_active"
-			rotation: 0.0d
-			width: 2.5d
-			x: -3.65d
-			y: 3.0d
-		}
-		{
-			height: 2.15d
-			image: "relics:item/space_dissector"
-			rotation: 0.0d
-			width: 2.15d
-			x: -3.65d
-			y: 5.550000000000001d
-		}
-		{
-			height: 1.5d
-			image: "ars_nouveau:block/fire_1"
-			rotation: 0.0d
-			width: 1.5d
-			x: -1.4900000000000002d
-			y: 7.0d
-		}
-		{
-			height: 3.25d
-			image: "irons_spellbooks:item/upgrade_orb_lightning"
-			rotation: 0.0d
-			width: 3.25d
-			x: 6.5d
-			y: 5.5d
-		}
-		{
-			height: 2.0d
-			image: "occultism:block/spirit_campfire_fire"
-			rotation: 0.0d
-			width: 2.0d
-			x: 4.5d
-			y: 7.0d
-		}
-		{
-			height: 3.75d
-			image: "irons_spellbooks:item/upgrade_orb_swirl"
-			rotation: 0.0d
-			width: 3.75d
-			x: 1.4d
-			y: 8.4d
-		}
-		{
-			height: 1.5d
-			image: "ars_nouveau:block/fire_1"
-			rotation: 180.0d
-			width: 1.5d
-			x: -1.4900000000000002d
-			y: 8.0d
-		}
-		{
-			height: 2.0d
-			image: "occultism:block/spirit_campfire_fire"
-			rotation: 180.0d
-			width: 2.0d
-			x: 4.5d
-			y: 8.0d
+			y: 3.5d
 		}
 		{
 			height: 4.0d
@@ -120,31 +24,23 @@
 			rotation: 180.0d
 			width: 4.0d
 			x: 1.5d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
-			height: 2.55d
-			image: "appflux:item/charged_redstone"
+			height: 1.0d
+			image: "ftbquests:textures/gui/completionist.png"
 			rotation: 0.0d
-			width: 2.85d
+			width: 7.0d
 			x: 1.5d
-			y: -0.4500000000000002d
+			y: 1.0d
 		}
 		{
-			height: 15.0d
-			image: "twilightforest:textures/magic_paintings/the_hostile_paradise/13_frame.png"
+			height: 13.5d
+			image: "twilightforest:textures/magic_paintings/darkness/frame.png"
 			rotation: 0.0d
-			width: 25.0d
+			width: 16.0d
 			x: 1.5d
-			y: 4.0d
-		}
-		{
-			height: 2.0d
-			image: "extendedae:block/assembler_matrix/frame_block_on"
-			rotation: 0.0d
-			width: 2.0d
-			x: -0.5d
-			y: -0.5d
+			y: 3.5d
 		}
 	]
 	order_index: 1
@@ -164,6 +60,7 @@
 				"375B2C2D89889153"
 				"1F0B8A0EBCBA4399"
 				"7A79DC2CE5CC9DEE"
+				"65AA8B8D22954941"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -192,6 +89,22 @@
 						}
 						count: 1
 						id: "trofers:large_plate"
+					}
+					type: "item"
+				}
+				{
+					id: "638E9168455C6DDA"
+					item: {
+						count: 1
+						id: "craftoria:infinity_flux_cell"
+					}
+					type: "item"
+				}
+				{
+					id: "5809055E8080AC85"
+					item: {
+						count: 1
+						id: "craftoria:infinity_uu_matter_cell"
 					}
 					type: "item"
 				}
@@ -354,8 +267,8 @@
 				id: "752A63BD14A38E85"
 				type: "checkmark"
 			}]
-			x: -3.0d
-			y: 0.25d
+			x: -3.5d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -444,7 +357,7 @@
 				type: "checkmark"
 			}]
 			x: 1.5d
-			y: -0.75d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -642,8 +555,8 @@
 				id: "44CE789BDE1EFCB1"
 				type: "checkmark"
 			}]
-			x: 6.0d
-			y: 0.25d
+			x: 6.5d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -677,8 +590,8 @@
 				id: "6C0BB72F6382FE4F"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: -0.75d
+			x: 4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -749,8 +662,8 @@
 				id: "79794A87CBA37582"
 				type: "checkmark"
 			}]
-			x: 6.65d
-			y: 2.85d
+			x: 7.0d
+			y: 2.75d
 		}
 		{
 			dependencies: ["0597AF3E8B286CFA"]
@@ -780,8 +693,8 @@
 				id: "15ED212071C6CAF0"
 				type: "checkmark"
 			}]
-			x: -1.5d
-			y: 7.25d
+			x: -4.0d
+			y: 4.75d
 		}
 		{
 			dependencies: [
@@ -867,8 +780,8 @@
 				id: "559E1439EDFA2BA9"
 				type: "checkmark"
 			}]
-			x: 4.5d
-			y: 7.25d
+			x: 7.0d
+			y: 4.75d
 		}
 		{
 			dependencies: [
@@ -931,8 +844,8 @@
 				id: "6B6E82D0312A8705"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: 8.25d
+			x: -2.9000000000000004d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1038,8 +951,8 @@
 				id: "00CA3CB10A03DF62"
 				type: "checkmark"
 			}]
-			x: -3.65d
-			y: 2.85d
+			x: -4.0d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -1141,8 +1054,8 @@
 				id: "6BD239D70099FED0"
 				type: "checkmark"
 			}]
-			x: -3.65d
-			y: 5.25d
+			x: -0.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -1264,8 +1177,8 @@
 				id: "256831387C82AA19"
 				type: "checkmark"
 			}]
-			x: 6.65d
-			y: 5.25d
+			x: 6.1d
+			y: 6.5d
 		}
 		{
 			dependencies: ["679ED31B5B1D91DA"]
@@ -1278,8 +1191,38 @@
 				item: { components: { "trofers:trophy": "trofers:replication" }, count: 1, id: "trofers:medium_pillar" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: -0.75d
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["216D532684E20496"]
+			icon: {
+				components: {
+					"trofers:trophy": "trofers:bosses"
+				}
+				id: "trofers:medium_pillar"
+			}
+			icon_scale: 0.75d
+			id: "65AA8B8D22954941"
+			rewards: [{
+				id: "5358434D18BCB827"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:bosses"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 2.5d
+			tasks: [{
+				id: "0D84F32752A47951"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 8.0d
 		}
 	]
 }

@@ -14,14 +14,13 @@
 	chapter.37D7FA3DAE36E099.title: "Just Dire Things"
 	chapter.3B4FADE31FB88E9F.title: "Iron's Spells"
 	chapter.40CEA39FE5F5225D.title: "Mekanism"
-	chapter.42032FCAB6197EE7.title: "&cArmory"
 	chapter.5A3894BACC5E8994.title: "Theurgy"
 	chapter.5BF964A2F3CAA6E8.title: "Transportation"
 	chapter.679ED31B5B1D91DA.title: "Replication"
 	chapter.6A5B4531418CC297.title: "Modern Industrialization"
 	chapter.70FFEE37C7ABD690.title: "Applied Energistics"
 	chapter.7269FD2B5B0F0424.title: "Occultism"
-	chapter.7B329826EADF9720.title: "&eGadgets"
+	chapter.7B329826EADF9720.title: "&3Gadgets"
 	chapter_group.01BEAD68B1D370D3.title: "&8&lMagic&r &d✡"
 	chapter_group.04696DE4EC4D4A94.title: "&8&lLogistics &b모"
 	chapter_group.066C799B2F5452CD.title: "&8&lTechnology&r &e⚡"
@@ -377,6 +376,23 @@
 	quest.0B94435972292812.title: "Spatial IO Port"
 	quest.0B98E8AC5CFB0FC2.quest_desc: ["Obtained when you let your&b Entroized Clusters &agrow&f to the &amax stage&f."]
 	quest.0BDF41399223A10A.quest_desc: ["Using a Scroll Forge and an Ender Pearl craft an Ender Scrolls."]
+	quest.0BF3E2C6D60A58BB.quest_desc: [
+		"&aEmotes&r can be accessed through the &6Quick Menu&r."
+		""
+		"Default keybind is \"&eB&r\". "
+		""
+		"I &3highly recommend&r changing this keybind to something else."
+		""
+		"You can see all the available &aEmotes&r by heading into the &7All Emotes&r menu through the button below the &6Quick Menu&r. "
+		""
+		"Configure the &6Quick Menu&r by pressing the &7Configure Emotes&r button. "
+		""
+		"Firstly, select the &aEmote&r of choice then the &cslot&r where you want it to be added to."
+		""
+		"&b&lDance Away!&r"
+	]
+	quest.0BF3E2C6D60A58BB.quest_subtitle: "I challenge you to a dance battle!"
+	quest.0BF3E2C6D60A58BB.title: "&aEmotes"
 	quest.0C1C61B4554B38E5.quest_desc: [
 		"The &bCombiner&r allows you to &6combine items&r together like a &dgem&r and &7stone&r to receive &8ore&r, &ewax&r and &ccopper&r to protect it from the elements, mixing dyes, and more. "
 		""
@@ -2006,9 +2022,17 @@
 	quest.2CB005B413D2B889.quest_desc: [
 		"Yes, you can be a model! "
 		""
-		"By using the &bTransmogrification Table&r, you can &6disguise&r &oany&r &bitem&r, &bblock&r, or &barmor&r as anything else, so long as it stays an &bitem&r. "
+		"By using the &bTransmogrification Table&r, you can &6disguise&r &oany&r &7item&r, &7block&r, or &7armor&r as anything else, so long as it stays an &7item&r. "
 		""
-		"Want to wear a block on your head? Do it! Cloak the strongest sword as a cookie? Why not? The combinations are endless. Strut &oyour&r style."
+		"Want to wear a block on your head? "
+		"Do it! "
+		""
+		"Cloak the strongest sword as a cookie? "
+		"Why not? "
+		""
+		"The combinations are endless. "
+		""
+		"&9Strut &oYour Style&r."
 	]
 	quest.2CB005B413D2B889.quest_subtitle: "Slay Queen!"
 	quest.2CB005B413D2B889.title: "&cBe &aa &9Fashion &eIcon&8!"
@@ -2668,7 +2692,7 @@
 	quest.3CABE90D2D99AAD0.title: "Crafting Formula"
 	quest.3CEBC51DB3555C3E.quest_subtitle: "Every Netherite tier has its own unique properties"
 	quest.3CF03758A5C98E5B.quest_desc: [
-		"This sword will add &5Projectile glyph&r at the start, so you don't need to include &5Form glyph&r in the spell."
+		"This bow will add &5Projectile glyph&r at the start, so you don't need to include &5Form glyph&r in the spell."
 		""
 		"- Arrow: &bAugment Arrow: Amplify&r"
 		"- Spell:"
@@ -2739,8 +2763,6 @@
 	]
 	quest.3E9D2DA07E8617EA.quest_subtitle: "Complete the quest chapter."
 	quest.3E9D2DA07E8617EA.title: "&6Theurgy"
-	quest.3E9DD2255D25B2D7.quest_desc: ["Check &bArmory chapter&r for armor \\& tools \\& trinkets."]
-	quest.3E9DD2255D25B2D7.title: "Where Armor, Tools?"
 	quest.3F0097CCBA02804C.quest_desc: ["The &bLarge Steam Furnace&r can &6smelt&r recipes in batches of up to 8 at a &a25%&r deduction of &eEU&r cost. Keep in mind, it &cwont&r do a mix of recipes, they &omust&r be the same type. If not, each type of recipe will be &6split&r into their batch of a max of 8."]
 	quest.3F0097CCBA02804C.quest_subtitle: "The Bigger, The Better!"
 	quest.3F146A658E5A01F3.quest_subtitle: "Dropped within the Trials of Awaken gateway. "
@@ -4029,7 +4051,6 @@
 	quest.5D584858B61E534B.quest_desc: ["This &bCatalyst &fslowly turns &bMercury &finto &dMercury Flux&r, a source of &6Energy&r for alchemical devices."]
 	quest.5D584858B61E534B.quest_subtitle: "Mercury = Flux"
 	quest.5D92326B02E9DC0F.title: "Belts"
-	quest.5DA3F6FF2AE6C081.quest_desc: ["The &bCharger &fwill charge all items put inside of it."]
 	quest.5DBFD3F917C4E49C.quest_subtitle: "Found by using the Eye of Mech"
 	quest.5DBFD3F917C4E49C.title: "&4Harbinger"
 	quest.5DD99224F29419C1.quest_desc: [
@@ -4312,6 +4333,8 @@
 		""
 		"{image:justdirethings:block/fluidplacert2_side width:100 height:100 align:center}"
 	]
+	quest.65AA8B8D22954941.quest_subtitle: "Complete the quest chapter."
+	quest.65AA8B8D22954941.title: "&5Boss Slayer"
 	quest.660EFAF144F70749.quest_desc: [
 		"  Time for a major upgrade! Previously you've only been able to produce electricity at 32 eu/t per turbine using the &bLV Steam Turbine&r, but now you'll be &6able to make a maximum of 128 eu/t&r out of the brand new &bMV Steam Turbine&r! Aside from the increase in energy production four-fold, it acts just like the &bLV Steam Turbine&r."
 		""
@@ -5196,7 +5219,7 @@
 		"Obviously, when the &6sun&r is down, no &epower&r is generated. "
 	]
 	quest.7610F9A545A15194.title: "Solar Generator"
-	quest.768973710C811CB1.quest_subtitle: "True Power! But With Fasion and Gadgets!"
+	quest.768973710C811CB1.quest_subtitle: "Mark 2, Fashion and more Gadgets!"
 	quest.768973710C811CB1.title: "&aQuantum Nano Set"
 	quest.76BA847F28ACE170.title: "Tier 2, 1:2"
 	quest.7723EF8CE359646F.quest_desc: ["This spirit will bring back &brandom ores&r - including &bdeepslate ores&r."]
@@ -5530,7 +5553,7 @@
 	quest.7E194859BAD7B5A8.quest_subtitle: "Applies potion effect to subjects in range"
 	quest.7E49DB806DD04701.quest_desc: [""]
 	quest.7ED9955750255A69.quest_subtitle: "Complete the quest chapter."
-	quest.7ED9955750255A69.title: "&5Ars Nouveau"
+	quest.7ED9955750255A69.title: "&dArs Nouveau"
 	quest.7EDF633DDB5DA2A1.quest_desc: ["Frozen Bones are dropped from Strays and are used to craft Ice Scrolls"]
 	quest.7EE57E9E41549AE8.quest_desc: ["The&b Molecular Assembler &fcarries out the operation defined by any &bPattern Providers&f place adjacent to it."]
 	quest.7EF829BFBBB4009B.quest_desc: [
@@ -5710,6 +5733,7 @@
 	task.601F7C69458E7589.title: "Welcome to Theurgy"
 	task.61ADF1E6345BC7E1.title: "Any #c:raw_materials/copper"
 	task.63DAD8D3277DA248.title: "Evolving Manufacturing Index"
+	task.64433571E92D5E65.title: "Emotes"
 	task.6544A3FD1B532809.title: "Summon a Demonic Husband"
 	task.659005F19206B35C.title: "Building Gadgets"
 	task.65A43DD683FB39E4.title: "Summon a Foliot Lumberjack"
