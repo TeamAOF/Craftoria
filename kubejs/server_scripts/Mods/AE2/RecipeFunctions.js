@@ -39,16 +39,15 @@ let exAssembler = (event, iOutput, iInput, iFluid) => {
     iInput.forEach((input) => {
       let item = input.includes('x ') ? input.split('x ')[1] : input;
       let amount = input.includes('x ') ? parseInt(input.split('x ')[0]) : 1;
-      if (item.includes('#')) recipe.input_items.push({ amount: amount, ingredient: { tag: item.replace('#', '') } });
-      else recipe.input_items.push({ amount: amount, ingredient: { item: item } });
+      recipe.input_items.push({ amount: amount, ingredient: Ingredient.of(item).toJson() });
     });
   } else {
     let item = iInput.includes('x ') ? iInput.split('x ')[1] : iInput;
     let amount = iInput.includes('x ') ? parseInt(iInput.split('x ')[0]) : 1;
-    if (item.includes('#')) recipe.input_items.push({ amount: amount, ingredient: { tag: item.replace('#', '') } });
-    else recipe.input_items.push({ amount: amount, ingredient: { item: item } });
+    recipe.input_items.push({ amount: amount, ingredient: Ingredient.of(item).toJson() });
   }
 
+  console.info(recipe);
   event.custom(recipe).id(ae2GenRecipeID(iOutput, 'assembler'));
 };
 
@@ -63,15 +62,11 @@ let exCutter = (event, iInput, iOutput) => {
   let recipe = {
     type: 'extendedae:circuit_cutter',
     input: {
-      ingredient: {},
+      ingredient: Ingredient.of(iInput).toJson(),
       amount: iInput.includes('x ') ? parseInt(iInput.split('x ')[0]) : 1,
     },
     output: Item.of(iOutput).toJson(),
   };
-
-  if (iInput.includes('x ')) iInput = iInput.split('x ')[1];
-  if (iInput.includes('#')) recipe.input.ingredient.tag = iInput.replace('#', '');
-  else recipe.input.ingredient.item = iInput;
 
   event.custom(recipe).id(ae2GenRecipeID(iOutput, 'cutter'));
 };
