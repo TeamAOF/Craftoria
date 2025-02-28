@@ -19,7 +19,11 @@ let ae2GenRecipeID = (name, type) => {
 let exAssembler = (event, iOutput, iInput, iFluid) => {
   let recipe = {
     type: 'extendedae:crystal_assembler',
-    input_items: [],
+    input_items: iInput.map((input) => {
+      let item = input.includes('x ') ? input.split('x ')[1] : input;
+      let amount = input.includes('x ') ? parseInt(input.split('x ')[0]) : 1;
+      return { amount: amount, ingredient: Ingredient.of(item).toJson() };
+    }),
     output: Item.of(iOutput).toJson(),
   };
 
@@ -29,25 +33,6 @@ let exAssembler = (event, iOutput, iInput, iFluid) => {
     recipe.input_fluid = { amount: amount, ingredient: { fluid: fluid } };
   }
 
-  if (Array.isArray(iInput)) {
-    if (iInput.length > 9) {
-      console.error(`exAssembler: Too many inputs. Max 9 inputs.`);
-      console.error(`Output: ${iOutput}, Inputs: ${iInput}`);
-      return;
-    }
-
-    iInput.forEach((input) => {
-      let item = input.includes('x ') ? input.split('x ')[1] : input;
-      let amount = input.includes('x ') ? parseInt(input.split('x ')[0]) : 1;
-      recipe.input_items.push({ amount: amount, ingredient: Ingredient.of(item).toJson() });
-    });
-  } else {
-    let item = iInput.includes('x ') ? iInput.split('x ')[1] : iInput;
-    let amount = iInput.includes('x ') ? parseInt(iInput.split('x ')[0]) : 1;
-    recipe.input_items.push({ amount: amount, ingredient: Ingredient.of(item).toJson() });
-  }
-
-  console.info(recipe);
   event.custom(recipe).id(ae2GenRecipeID(iOutput, 'assembler'));
 };
 
