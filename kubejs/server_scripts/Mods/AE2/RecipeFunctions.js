@@ -40,14 +40,14 @@ let exAssembler = (event, iOutput, iInput, iFluid) => {
  * @author WhitePhantom
  * @description ExtendedAE Cutter recipe
  * @param {$RecipesKubeEvent_} event The event object, usually `event`. Required.
- * @param {$Ingredient_} iInput The input item. Required.
  * @param {$Item_} iOutput The output item. Required.
+ * @param {$Ingredient_} iInput The input item. Required.
  */
-let exCutter = (event, iInput, iOutput) => {
+let exCutter = (event, iOutput, iInput) => {
   let recipe = {
     type: 'extendedae:circuit_cutter',
     input: {
-      ingredient: Ingredient.of(iInput).toJson(),
+      ingredient: Ingredient.of(iInput.includes('x ' ? iInput.split('x ')[1] : iInput)).toJson(),
       amount: iInput.includes('x ') ? parseInt(iInput.split('x ')[0]) : 1,
     },
     output: Item.of(iOutput).toJson(),
@@ -60,22 +60,19 @@ let exCutter = (event, iInput, iOutput) => {
  * @author WhitePhantom
  * @description ExtendedAE Fixer recipe
  * @param {$RecipesKubeEvent_} event The event object, usually `event`. Required.
- * @param {$Item_} fuel The fuel item. Required.
- * @param {$Item_} input The input block. Required.
  * @param {$Item_} output The output block. Required.
+ * @param {$Item_} input The input block. Required.
+ * @param {$Item_} fuel The fuel item. Required.
  * @param {integer} chance Chance of affecting the block. Optional. Default is 8000. 10000 is 100%.
  */
-let exFixer = (event, fuel, input, output, chance) => {
+let exFixer = (event, output, input, fuel, chance) => {
   let recipe = {
     type: 'extendedae:crytal_fixer',
-    fuel: {},
+    fuel: { ingredient: Ingredient.of(fuel).toJson() },
     input: { id: input },
     output: { id: output },
     chance: chance || 8000,
   };
-
-  if (fuel.includes('#')) recipe.fuel.ingredient.tag = fuel.replace('#', '');
-  else recipe.fuel.ingredient.item = fuel;
 
   event.custom(recipe).id(ae2GenRecipeID(output, 'fixer'));
 };
@@ -85,12 +82,12 @@ let exFixer = (event, fuel, input, output, chance) => {
  * @description AE2 Inscriber recipe
  * @param {$RecipesKubeEvent_} event The event object, usually `event`. Required.
  * @param {$InscriberProcessType_} iType The inscriber type. inscribe or press. Required.
+ * @param {$Item_} output The output item. Required.
  * @param {$Ingredient_} middle The middle item. Required.
  * @param {$Ingredient_} top The top item. Optional.
  * @param {$Ingredient_} bottom The bottom item. Optional.
- * @param {$Item_} output The output item. Required.
  */
-let ae2Inscriber = (event, iType, middle, top, bottom, output) => {
+let ae2Inscriber = (event, iType, output, middle, top, bottom) => {
   let recipe = {
     type: `ae2:inscriber`,
     mode: iType,

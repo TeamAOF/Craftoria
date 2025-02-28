@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
     200
   );
   mekCrush('extendedae:entro_dust', '#c:gems/entro').id('craftoria:mekanism/crushing/entro_dust');
-  exCutter(event, 'extendedae:silicon_block', '9x ae2:printed_silicon');
+  exCutter(event, '9x ae2:printed_silicon', 'extendedae:silicon_block');
 
   //Megacells compat
   miPacker(
@@ -163,7 +163,7 @@ ServerEvents.recipes((event) => {
     ('extendedae:machine_frame', '8x ae2:engineering_processor', 'craftoria:universal_press', 'minecraft:stonecutter'),
   ]);
 
-  exCutter(event, 'craftoria:1x_compressed_iron_block', '1x craftoria:universal_press');
+  exCutter(event, '1x craftoria:universal_press', 'craftoria:1x_compressed_iron_block');
 
   event.shapeless('4x ae2:crafting_accelerator', 'bigger_ae2:4_core_crafting_accelerator');
   event.shapeless('4x bigger_ae2:4_core_crafting_accelerator', 'bigger_ae2:16_core_crafting_accelerator');
