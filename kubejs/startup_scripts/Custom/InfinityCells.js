@@ -29,9 +29,12 @@ global.infCells = [
 ];
 
 StartupEvents.registry('item', (e) => {
+  /**
+   * @param {String} id
+   * @param {String} type
+   */
   let createInfCell = (id, type) => {
     let strippedId = id.includes(':') ? id.split(':')[1] : id;
-    if (type === 'fluid' && strippedId.includes('_source')) strippedId.replace('_source', '');
 
     let cell = e
       .create(`craftoria:infinity_${strippedId}_cell`, 'custom_infinity_cell')
