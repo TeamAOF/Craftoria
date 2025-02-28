@@ -1,75 +1,26 @@
 ServerEvents.recipes((e) => {
-
   // Snad
-  e.custom({
+  arsImbuement(
+    e,
+    'utilitarian:snad',
+    'minecraft:sand',
+    ['ars_nouveau:earth_essence', 'farmingforblockheads:red_fertilizer', 'farmingforblockheads:green_fertilizer'],
+    10000
+  );
 
-    "type": "ars_nouveau:imbuement",
-    "input": {
-      "item": "minecraft:sand"
-    },
-    "output": {
-      "count": 1,
-      "id": "utilitarian:snad"
-    },
-    "pedestalItems": [
-      {
-        "item": "ars_nouveau:earth_essence"
-      },
-      {
-        "item": "farmingforblockheads:red_fertilizer"
-      },
-      {
-        "item": "farmingforblockheads:green_fertilizer"
-      }
-    ],
-    "source": 10000
-  }).id("utilitarian:snad/snad");
+  arsImbuement(
+    e,
+    'utilitarian:red_snad',
+    'minecraft:red_sand',
+    ['ars_nouveau:earth_essence', 'farmingforblockheads:red_fertilizer', 'farmingforblockheads:green_fertilizer'],
+    10000
+  );
 
-  e.custom({
-
-    "type": "ars_nouveau:imbuement",
-    "input": {
-      "item": "minecraft:red_sand"
-    },
-    "output": {
-      "count": 1,
-      "id": "utilitarian:red_snad"
-    },
-    "pedestalItems": [
-      {
-        "item": "ars_nouveau:earth_essence"
-      },
-      {
-        "item": "farmingforblockheads:red_fertilizer"
-      },
-      {
-        "item": "farmingforblockheads:green_fertilizer"
-      }
-    ],
-    "source": 10000
-  }).id("utilitarian:snad/red_snad");
-
-  e.custom({
-
-    "type": "ars_nouveau:imbuement",
-    "input": {
-      "item": "minecraft:soul_sand"
-    },
-    "output": {
-      "count": 1,
-      "id": "utilitarian:soul_snad"
-    },
-    "pedestalItems": [
-      {
-        "item": "ars_nouveau:earth_essence"
-      },
-      {
-        "item": "farmingforblockheads:red_fertilizer"
-      },
-      {
-        "item": "farmingforblockheads:green_fertilizer"
-      }
-    ],
-    "source": 10000
-  }).id("utilitarian:snad/soul_snad");
+  arsImbuement(
+    e,
+    'utilitarian:soul_snad',
+    'minecraft:soul_sand',
+    ['ars_nouveau:earth_essence', 'farmingforblockheads:red_fertilizer', 'farmingforblockheads:green_fertilizer'],
+    10000
+  );
 });
