@@ -12,9 +12,9 @@
 		"eternal_starlight:starlight",
 		"javd:void",
 		"ae2:spatial_storage",
-    "jamd:end",
-    "jamd:mining",
-    "jamd:nether"
+		"jamd:end",
+		"jamd:mining",
+		"jamd:nether"
 		]
 	#The radius around the world spawn where the pylon is not allowed to operate.
 	#By default this uses the world spawn radius (/gamerule spawnRadius).
@@ -59,7 +59,9 @@
 	infusionDeniedEffects = [
 		"apothic_attributes:flying",
 		"reliquary:flight",
-		"ars_nouveau:flight"
+		"ars_nouveau:flight",
+    "irons_spellbooks:heartstop",
+    "irons_spellbooks:abyssal_shroud"
   ]
 	#The maximum potency that can be applied in the Infusion Pylon.
 	#This value is 0-indexed, so a Resistance V potion would be potency 4.
