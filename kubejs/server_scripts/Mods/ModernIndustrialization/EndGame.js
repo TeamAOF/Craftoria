@@ -70,7 +70,7 @@ ServerEvents.recipes((e) => {
     .id('craftoria:end_game/molten_iridium');
 
   Ingredient.all.except('#craftoria:replicator_1_blacklist').stacks.forEach((item) => {
-    e.recipes.modern_industrialization.replicator_1(8192, 20).itemOut(item.id).itemIn(item.id, 0).fluidIn('100x modern_industrialization:uu_matter');
+    e.recipes.modern_industrialization.replicator_1(8192, 20).itemOut(item.id).itemIn(item.id, 0).fluidIn('1000x modern_industrialization:uu_matter');
   });
   e.recipes.modern_industrialization
     .replicator_1(8192 * 128, 20 * 60 * 5)
