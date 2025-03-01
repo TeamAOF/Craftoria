@@ -87,7 +87,7 @@ ServerEvents.recipes((e) => {
     materials.forEach((material) => {
       let dust = getItemFromTag(`#c:dusts/${material}`);
       if (dust) {
-        if (Item.exists(`mekanism:dust_${material}`)) e.remove({type: 'mekanism:crushing', output: `mekanism:dust_${material}`});
+        if (Item.exists(`mekanism:dust_${material}`)) e.remove({ type: 'mekanism:crushing', output: `mekanism:dust_${material}` });
         if (checkTagSize(`#c:ingots/${material}`) > 0) crush(dust, `#c:ingots/${material}`);
         else if (checkTagSize(`#c:gems/${material}`) > 0) crush(dust, `#c:gems/${material}`);
       }
@@ -112,9 +112,5 @@ ServerEvents.recipes((e) => {
   //   oreProcessing(metal);
   // });
 
-  e.remove({mod: 'mekanism', output: 'mekanism:block_salt'});
-
-  // Removed to prevent progression skips in Modern Industrialization
-  e.remove({mod: 'moremekanismprocessing', output: '#c:nuggets'});
-  e.remove({mod: 'moremekanismprocessing', output: '#c:ingots'});
+  e.remove({ mod: 'mekanism', output: 'mekanism:block_salt' });
 });

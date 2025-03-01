@@ -2,7 +2,6 @@
 /**
  * This script is used to unify items from different mods.
  * It will replace items from the #c tag with the first mod(defined in modPriority) that has the item.
- * For now, @white.phantom signing off.
  */
 
 let getItemFromTag = (tag) => {
@@ -87,12 +86,6 @@ ServerEvents.tags('item', (e) => {
 });
 
 ServerEvents.recipes((e) => {
-  let yeets = ['mffs:steel_compound'];
-
-  yeets.forEach((id) => {
-    e.remove({ output: id });
-  });
-
   let replaceFilters = ['minecraft:crafting_shaped', 'minecraft:crafting_shapeless', 'minecraft:smelting', 'minecraft:blasting'];
 
   let tryReplace = (replace) => {
@@ -259,4 +252,19 @@ ServerEvents.recipes((e) => {
     mode: 'inscribe',
     result: Item.of('ae2:ender_dust').toJson(),
   }).id('ae2:inscriber/ender_dust');
+});
+
+ServerEvents.tags('item', (e) => {
+  const whitelistedIDs = ['dust_iridium', 'dust_nickel', 'dust_platinum', 'dust_silver', 'dust_titanium', 'dust_tungsten', 'dust_zinc'];
+  const tagsToCheck = ['c:gems', 'c:dusts'];
+  tagsToCheck.forEach((tag) => {
+    e.get(tag).objectIds.forEach((id) => {
+      if (id.namespace === 'moremekanismprocessing') {
+        if (!whitelistedIDs.includes(id.path)) {
+          console.log(`Removing tags from: ${id}`);
+          e.removeAllTagsFrom(id);
+        }
+      }
+    });
+  });
 });
