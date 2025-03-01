@@ -53,6 +53,14 @@ ServerEvents.recipes((e) => {
     '16x craftoria:4x_compressed_cobblestone_block',
   ]);
 
+  exAssembler(e, 'craftoria:infinity_xp_fluid_source_cell', [
+    'craftoria:infinity_cell_housing',
+    '4x justdirethings:experienceholder',
+    '4x sophisticatedbackpacks:xp_pump_upgrade',
+    '8x actuallyadditions:xp_solidifier',
+    'mekanism_extras:cosmic_fluid_tank[mekanism:fluids={fluid_tanks:[{amount:262144000,id:"justdirethings:xp_fluid_source"}]}]'
+  ]);
+
   exAssembler(e, 'craftoria:infinity_cell_housing', [
     '32x #c:ingots/replica',
     '16x bigger_ae2:digital_singularity_cell_component',

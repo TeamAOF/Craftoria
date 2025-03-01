@@ -6,8 +6,8 @@ modpack:
   
 install:
   mcVersion:
-  loaderVersion: 21.1.122
-  modpackUrl: https://mediafilez.forgecdn.net/files/6227/379/Craftoria-1.15.2.zip
+  loaderVersion: 21.1.128
+  modpackUrl: https://mediafilez.forgecdn.net/files/6251/956/Craftoria-1.16.0.zip
   installerUrl: "https://maven.neoforged.net/releases/net/neoforged/neoforge/{{@loaderversion@}}/neoforge-{{@loaderversion@}}-installer.jar"
   
   ignoreFiles:
@@ -24,7 +24,7 @@ install:
     ignoreProject: 
       - 737481 # Chat Toggle
       - 363363 # Extreme Sound Muffler
-      - 908741 # Sodium/Embeddium
+      - 908741 # Embeddium
       - 986380 # Lighty
       - 844662 # Entity Model Features
       - 568563 # Entity Texture Features
@@ -32,8 +32,7 @@ install:
       - 690971 # SeasonHUD
       - 455508 # Iris
       - 1089803 # Better Modlist
-      - 511319 # Reese's Sodium Options
-      - 570368 # Raised
+      - 925889 # Sounds
       
   baseInstallPath: 
   

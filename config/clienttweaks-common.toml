@@ -25,6 +25,8 @@
 	disableStepAssist = false
 	#This option will disable log stripping.
 	disableLogStripping = false
+	#This option will disable paving when holding a block in your offhand.
+	disablePavingWithBlockInOffhand = true
 	#This adds back the master volume slider to the options screen. Saves you a click!
 	masterVolumeSlider = true
 	#This adds back the music volume slider to the options screen. Saves you a click!
@@ -39,8 +41,6 @@
 	preventAccidentalMining = false
 	#This option will increase the hitbox of random-offset blocks in creative mode, making it easier to break them quickly.
 	creativeBreakingSupport = true
-	#This option will disable paving when holding a block in your offhand.
-	disablePavingWithBlockInOffhand = true
 
 [customization]
 	#Items that count as torches for the offhand-torch tweak options.
@@ -54,4 +54,4 @@
 	#Items that count as fireworks for the offhand-firework tweak options.
 	fireworkItems = ["minecraft:firework_rocket"]
 	#Blocks that should be protected in the prevent accidental mining tweak.
-	fragileBlocks = ["minecraft:large_amethyst_bud", "minecraft:medium_amethyst_bud", "minecraft:small_amethyst_bud", "minecraft:budding_amethyst"]
+	fragileBlocks = ["minecraft:budding_amethyst", "minecraft:small_amethyst_bud", "minecraft:medium_amethyst_bud", "minecraft:large_amethyst_bud"]

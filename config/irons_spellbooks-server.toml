@@ -1386,3 +1386,334 @@
 		SpellPowerMultiplier = 1.0
 		CooldownInSeconds = 15.0
 		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:infernal_strike"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 8
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "EPIC"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 1.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:tectonic_tremble"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 1
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 50.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:ashen_breath"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 12.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:conjure_ignited_reinforcement"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 100.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:abyss_fireball"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 8
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 20.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:bone_storm"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "EPIC"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 10.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:piercing_bone"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 8
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "EPIC"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 20.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:hellish_blade"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 60.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:incineration"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 10.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:desert_winds"]
+		Enabled = true
+		School = "irons_spellbooks:nature"
+		MaxLevel = 10
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 8.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:amethyst_puncture"]
+		Enabled = true
+		School = "irons_spellbooks:nature"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "UNCOMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 5.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:sandstorm"]
+		Enabled = true
+		School = "irons_spellbooks:nature"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 30.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:monolith_crash"]
+		Enabled = true
+		School = "irons_spellbooks:nature"
+		MaxLevel = 8
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "UNCOMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 40.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:pilfer"]
+		Enabled = true
+		School = "irons_spellbooks:evocation"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 100.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:void_rune"]
+		Enabled = true
+		School = "irons_spellbooks:ender"
+		MaxLevel = 10
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "UNCOMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 20.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:gravity_storm"]
+		Enabled = true
+		School = "irons_spellbooks:ender"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "EPIC"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 40.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:gravitation_pull"]
+		Enabled = true
+		School = "irons_spellbooks:ender"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 30.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:void_bulwark"]
+		Enabled = true
+		School = "irons_spellbooks:ender"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 50.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:conjure_thralls"]
+		Enabled = true
+		School = "irons_spellbooks:ice"
+		MaxLevel = 10
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 120.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:malevolent_battlefield"]
+		Enabled = true
+		School = "irons_spellbooks:ice"
+		MaxLevel = 10
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "EPIC"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 60.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:cursed_rush"]
+		Enabled = true
+		School = "irons_spellbooks:ice"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "EPIC"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 20.0
+		AllowCrafting = true
+
+	#cataclysm_spellbooks:abyssal
+	[Spells."cataclysm_spellbooks:depth_charge"]
+		Enabled = true
+		School = "cataclysm_spellbooks:abyssal"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 40.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:void_beam"]
+		Enabled = true
+		School = "cataclysm_spellbooks:abyssal"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "EPIC"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 20.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:abyssal_predator"]
+		Enabled = true
+		School = "cataclysm_spellbooks:abyssal"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 40.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:tidal_grab"]
+		Enabled = true
+		School = "cataclysm_spellbooks:abyssal"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "UNCOMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 50.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:dimensional_rift"]
+		Enabled = true
+		School = "cataclysm_spellbooks:abyssal"
+		MaxLevel = 6
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 120.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:abyssal_slash"]
+		Enabled = true
+		School = "cataclysm_spellbooks:abyssal"
+		MaxLevel = 8
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "UNCOMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 40.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:abyssal_blast"]
+		Enabled = true
+		School = "cataclysm_spellbooks:abyssal"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 450.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:summon_koboleton"]
+		Enabled = true
+		School = "irons_spellbooks:holy"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 80.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:conjure_koboldiator"]
+		Enabled = true
+		School = "irons_spellbooks:holy"
+		MaxLevel = 1
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 200.0
+		AllowCrafting = true

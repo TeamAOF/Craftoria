@@ -268,7 +268,7 @@
 				type: "item"
 			}]
 			x: 13.75d
-			y: -1.25d
+			y: -0.625d
 		}
 		{
 			dependencies: ["7B81E0A800E42F1F"]
@@ -282,7 +282,7 @@
 				type: "item"
 			}]
 			x: 16.25d
-			y: -1.25d
+			y: -0.625d
 		}
 		{
 			dependencies: ["7B81E0A800E42F1F"]
@@ -296,7 +296,7 @@
 				type: "item"
 			}]
 			x: 13.75d
-			y: 1.25d
+			y: 0.625d
 		}
 		{
 			dependencies: ["7B81E0A800E42F1F"]
@@ -310,7 +310,35 @@
 				type: "item"
 			}]
 			x: 16.25d
+			y: 0.625d
+		}
+		{
+			dependencies: ["7B81E0A800E42F1F"]
+			icon_scale: 1.5d
+			id: "3A472323E103FCEC"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "7FF5AEF318607EF7"
+				item: { count: 1, id: "craftoria:infinity_source_cell" }
+				type: "item"
+			}]
+			x: 15.0d
 			y: 1.25d
+		}
+		{
+			dependencies: ["7B81E0A800E42F1F"]
+			icon_scale: 1.5d
+			id: "07BA4E207E32944F"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "6B8E22A9D4C92EDB"
+				item: { count: 1, id: "craftoria:infinity_xp_fluid_source_cell" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.25d
 		}
 	]
 }

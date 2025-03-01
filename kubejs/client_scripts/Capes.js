@@ -17,13 +17,6 @@ CapeJS.addCapes((event) => {
 
     vip: [
       '18b5e4ed-614c-4235-85c0-3c1e68e979b5', // Nolij
-    ],
-
-    builder: [
-      '385f65ff-d4f0-4a0a-9a83-b91edabc32d9', // Yoosk
-      '0244b687-4f34-4c37-95e3-b87b3681655e', // Molly
-    ],
-    tester: [
       'f1cf0946-49c0-4047-9248-47c98820b2d3', // nitrofenix
       '7b8d1937-585f-4238-9914-d000a82528f9', // laxfan20
       'f118d448-2ad5-426b-8b63-9012caa9d2b2', // Leonxilofin
@@ -34,6 +27,12 @@ CapeJS.addCapes((event) => {
       'a1437e9f-8788-46c1-9307-367b5fdbdcb9', // Rohan82
       'cb4382d6-8124-4d0c-a53b-28d631ee78e1', // Rally_V
     ],
+
+    builder: [
+      '385f65ff-d4f0-4a0a-9a83-b91edabc32d9', // Yoosk
+      '0244b687-4f34-4c37-95e3-b87b3681655e', // Molly
+      'e9d889b1-5b90-412c-99c1-2af62f21369e', // BuilderBot
+    ]
   };
   for (const [cape, players] in capes) {
     for (const player of players) {

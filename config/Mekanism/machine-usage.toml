@@ -122,6 +122,8 @@ paintingMachine = 100
 # Default: 5000
 # Range: 0 ~ 9223372036854775807
 dimensionalStabilizer = 5000
+#If enabled, Chemical Injectors and Purification Chambers will consume a semi randomized amount of chemical each operation.
+randomizedConsumption = true
 
 #Settings for configuring Teleporter Energy Usage
 [teleporter]

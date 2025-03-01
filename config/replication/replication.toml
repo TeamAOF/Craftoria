@@ -1,0 +1,42 @@
+	[ReplicationConfig.RecipeCalculation]
+		#Setting this to 0 will disable the recipe calculation
+		# Default: 11
+		# Range: > 0
+		MAX_RECIPE_DEPTH = 11
+		# Default: 50
+		# Range: > 1
+		MAX_VISITED_RECIPES = 50
+
+	[ReplicationConfig.MatterPipe]
+		# Default: 2560
+		# Range: > 1
+		POWER_TRANSFER = 2560
+
+	[ReplicationConfig.IdentificationChamber]
+		#The progress shown in game will be double
+		# Default: 100
+		# Range: > 1
+		MAX_PROGRESS = 100
+		# Default: 5000
+		# Range: > 1
+		POWER_USAGE = 5000
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		IDENTIFICATION_PROGRESS = 0.5
+
+	[ReplicationConfig.Replicator]
+		#The progress shown in game will be double
+		# Default: 100
+		# Range: > 1
+		MAX_PROGRESS = 100
+		# Default: 80
+		# Range: > 1
+		POWER_TICK = 80
+
+	[ReplicationConfig.Disintegrator]
+		# Default: 40
+		# Range: > 1
+		MAX_PROGRESS = 40
+		# Default: 1500
+		# Range: > 1
+		POWER_USAGE = 1500

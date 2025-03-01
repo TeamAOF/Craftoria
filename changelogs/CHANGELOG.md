@@ -1,3 +1,66 @@
+## Craftoria | v1.16.0
+
+_NeoForge Loader 21.1.122_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.16.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.16.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added Infinity FE & UU-Matter Cells as reward for Completionist.
+* Added Replication quest chapter.
+* Added Bosses quest chapter.
+* Added the Replication Trophy.
+* Added a new Eternal quest chapter entry, Infinity Cell.
+* Added 11 new trophies for bosses.
+* Added the Infinity Cell Housing.
+* Changed recipes for Infinity Cobble & Water cells.
+* Added Infinity Lava Cell.
+* Added Infinity Warden Souls Cell.
+* Added Infinity Source Cell.
+* Added Infinity XP Cell.
+* Added chemical variant of Quantum Infusion.
+* Removed Creative Flight attribute from Apoth gear.
+* Added recipes to convert experience gems into fluid xp.
+* Added GuidME entries for all mods that used Patchouli.
+* Reordered quest chapter groups.
+* Removed Agriculture quest chapter (Being redone).
+* Added JDT Ore recipes to Occultism crusher.
+* MoreMekanismProcessing item/tag cleanup.
+
+### Bug Fixes 🪲
+
+* Fixed awaken bosses spawning naturally, no more 80k health abominations spawning in your face.
+* Fixed Powah reactors quest duplicate entry of Hardened.
+* Fixed Osmium Compressor not using resources past a certain speed.
+* Fixed a crash when using the bridging feature with banks/danks.
+* Fixed a bug where soulbound would delete your items upon death.
+
+### Added Mods ✅
+
+  * [Antique Trading Ship](https://www.curseforge.com/minecraft/mc-mods/antique-trading-ship)
+  * [AzureLib](https://www.curseforge.com/minecraft/mc-mods/azurelib)
+  * [Cataclysm: Spellbooks](https://www.curseforge.com/minecraft/mc-mods/cataclysm-spellbooks)
+  * [Chat Impressive Animation](https://www.curseforge.com/minecraft/mc-mods/chat-impressive-animation)
+  * [Emotecraft](https://www.curseforge.com/minecraft/mc-mods/emotecraft-forge)
+  * [Flat Bedrock](https://www.curseforge.com/minecraft/mc-mods/flat-bedrock)
+  * [Immersive UI](https://www.curseforge.com/minecraft/mc-mods/immersive-ui)
+  * [L_Ender 's Cataclysm](https://www.curseforge.com/minecraft/mc-mods/lendercataclysm)
+  * [Lionfish API](https://www.curseforge.com/minecraft/mc-mods/lionfish-api)
+  * [Loot Integrations: L_Ender 's Cataclysm](https://www.curseforge.com/minecraft/mc-mods/loot-integrations-cataclysm)
+  * [M.R.U](https://www.curseforge.com/minecraft/mc-mods/mru)
+  * [Occultism KubeJS](https://www.curseforge.com/minecraft/mc-mods/occultism-kubejs)
+  * [Replication](https://www.curseforge.com/minecraft/mc-mods/replication)
+  * [Sound Physics Remastered](https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered)
+  * [Sound​s](https://www.curseforge.com/minecraft/mc-mods/sound)
+  * [Stick It!](https://www.curseforge.com/minecraft/mc-mods/stick-it)
+  * [Wither Spawn Animation](https://www.curseforge.com/minecraft/mc-mods/wither-spawn-animation)
+  * [ZeroCore 2](https://www.curseforge.com/minecraft/mc-mods/zerocore)
+
+### Removed Mods ❌
+
+  * [Nyf's Spiders](https://www.curseforge.com/minecraft/mc-mods/nyfs-spiders) (Performance Issues)
+  * [PVP Flagging](https://www.curseforge.com/minecraft/mc-mods/pvp-flagging)
+  * [YetAnotherConfigLib](https://www.curseforge.com/minecraft/mc-mods/yacl)
+
+
 ## Craftoria | v1.15.2
 
 _NeoForge Loader 21.1.122_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.15.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.15.2.md)_

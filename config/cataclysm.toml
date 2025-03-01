@@ -7,14 +7,6 @@
 	shadersCompat = false
 	#ScreenShake(on/off)
 	"ScreenShake(on/off)" = true
-	#custombossbar(on/off)
-	"custombossbar(on/off)" = true
-	#BossMusic(on/off)
-	"BossMusic(on/off)" = true
-	#BossMusicVolume(denominator)
-	# Default: 1
-	# Range: 1 ~ 1000000
-	BossMusicVolume = 1
 
 [Weapon]
 	#Armor Infinity Durability(on/off)
@@ -584,7 +576,7 @@
 	# Range: 0.0 ~ 1000000.0
 	MaledictusNatureHealing = 10.0
 	#Maledictus's Phantom Halberd Damage
-	# Default: 13.0
+	# Default: 10.0
 	# Range: 0.0 ~ 1000000.0
 	"Maledictus' Phantom Halberd Damage'" = 10.0
 	#Maledictus's DamageCap
@@ -705,3 +697,17 @@
 	# Default: 2
 	# Range: 0 ~ 32
 	cursedPyramidHeightVariance = 2
+
+["bosses Common settings"]
+	#custombossbar(on/off)
+	"custombossbar(on/off)" = true
+	#BossMusic(on/off)
+	"BossMusic(on/off)" = true
+	#BossMusicVolume(denominator)
+	# Default: 1
+	# Range: 1 ~ 1000000
+	BossMusicVolume = 1
+	#If the boss leaves the summoned location and there is no target, it returns to the summoned location. When set to 0, it does not return
+	# Default: 20
+	# Range: 0 ~ 200
+	ReturnHome = 20
