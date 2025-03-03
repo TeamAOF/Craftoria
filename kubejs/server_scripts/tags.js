@@ -22,7 +22,7 @@ ServerEvents.tags('item', (e) => {
   e.remove('c:foods/garlic', 'dumplings_delight:garlic_clove');
 
   // Plastic
-  e.add('c:plastics', ['pneumaticcraft:plastic']);
+  e.add('c:plastics', ['pneumaticcraft:plastic', 'mekanism:hdpe_sheet']);
 
   // Dough / Flour
   e.add('c:doughs', ['refurbished_furniture:dough', 'farmersdelight:wheat_dough']);
