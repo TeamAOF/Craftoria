@@ -108,6 +108,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "117BB9C425915461"
+					item: {
+						count: 1
+						id: "create:creative_blaze_cake"
+					}
+					type: "item"
+				}
 			]
 			shape: "none"
 			size: 2.5d
@@ -459,6 +467,12 @@
 		}
 		{
 			dependencies: ["679ED31B5B1D91DA"]
+			icon: {
+				components: {
+					"trofers:trophy": "trofers:replication"
+				}
+				id: "trofers:medium_pillar"
+			}
 			icon_scale: 1.5d
 			id: "7A79DC2CE5CC9DEE"
 			rewards: [{
@@ -475,9 +489,8 @@
 			shape: "none"
 			size: 2.5d
 			tasks: [{
-				id: "41F1C71C7B46E1FA"
-				item: { components: { "trofers:trophy": "trofers:replication" }, count: 1, id: "trofers:medium_pillar" }
-				type: "item"
+				id: "6484D791025A2BF3"
+				type: "checkmark"
 			}]
 			x: -1.0d
 			y: -0.5d
