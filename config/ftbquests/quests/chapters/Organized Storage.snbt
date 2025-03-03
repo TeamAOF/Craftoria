@@ -10,7 +10,7 @@
 	images: [
 		{
 			height: 6.0d
-			image: "expandedstorage:item/wood_to_iron_conversion_kit"
+			image: "chipped:block/barrel/gilded_barrel_bottom"
 			order: 1
 			rotation: 0.0d
 			width: 6.0d
@@ -44,15 +44,6 @@
 			width: 6.0d
 			x: -6.0d
 			y: -3.0d
-		}
-		{
-			color: 1794724
-			height: 6.1d
-			image: "ftbquests:textures/gui/background_white.png"
-			rotation: 0.0d
-			width: 6.1d
-			x: 6.0d
-			y: 3.0d
 		}
 		{
 			alpha: 196
@@ -224,7 +215,10 @@
 	quests: [
 		{
 			icon: {
-				id: "expandedstorage:copper_chest"
+				components: {
+					"sophisticatedstorage:wood_type": "spruce"
+				}
+				id: "sophisticatedstorage:copper_chest"
 			}
 			id: "155DFB45ABCB5C6D"
 			rewards: [
@@ -246,17 +240,20 @@
 			]
 			shape: "hexagon"
 			tasks: [{
-				id: "715124C059F9FE13"
-				item: { count: 1, id: "expandedstorage:wood_to_copper_conversion_kit" }
+				id: "1C3F147E8680A559"
+				item: { count: 1, id: "sophisticatedstorage:basic_to_copper_tier_upgrade" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 1.0d
+			x: 5.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["155DFB45ABCB5C6D"]
 			icon: {
-				id: "expandedstorage:iron_chest"
+				components: {
+					"sophisticatedstorage:wood_type": "spruce"
+				}
+				id: "sophisticatedstorage:iron_chest"
 			}
 			icon_scale: 1.2d
 			id: "52C9829E2A5F03AC"
@@ -267,17 +264,20 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "745D712067771E10"
-				item: { count: 1, id: "expandedstorage:copper_to_iron_conversion_kit" }
+				id: "111952040017084D"
+				item: { count: 1, id: "sophisticatedstorage:copper_to_iron_tier_upgrade" }
 				type: "item"
 			}]
-			x: 6.8d
-			y: 1.6d
+			x: 7.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["52C9829E2A5F03AC"]
 			icon: {
-				id: "expandedstorage:gold_chest"
+				components: {
+					"sophisticatedstorage:wood_type": "spruce"
+				}
+				id: "sophisticatedstorage:gold_chest"
 			}
 			icon_scale: 1.4d
 			id: "68027ECCCFA79269"
@@ -288,17 +288,20 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "32BDE9F9BAFE430C"
-				item: { count: 1, id: "expandedstorage:iron_to_gold_conversion_kit" }
+				id: "33FD54B93D6815BD"
+				item: { count: 1, id: "sophisticatedstorage:iron_to_gold_tier_upgrade" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 2.25d
+			x: 5.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["68027ECCCFA79269"]
 			icon: {
-				id: "expandedstorage:diamond_chest"
+				components: {
+					"sophisticatedstorage:wood_type": "spruce"
+				}
+				id: "sophisticatedstorage:diamond_chest"
 			}
 			icon_scale: 1.6d
 			id: "26B779FF8E0F6C2E"
@@ -309,17 +312,20 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "29EA2C7E9D0C4FB3"
-				item: { count: 1, id: "expandedstorage:gold_to_diamond_conversion_kit" }
+				id: "7B0380D82B948875"
+				item: { count: 1, id: "sophisticatedstorage:gold_to_diamond_tier_upgrade" }
 				type: "item"
 			}]
-			x: 6.75d
-			y: 3.25d
+			x: 7.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["26B779FF8E0F6C2E"]
 			icon: {
-				id: "expandedstorage:obsidian_chest"
+				components: {
+					"sophisticatedstorage:wood_type": "spruce"
+				}
+				id: "sophisticatedstorage:netherite_chest"
 			}
 			icon_scale: 1.8d
 			id: "78B534077889E357"
@@ -330,140 +336,12 @@
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "1A20CF2115EF99E7"
-				item: { count: 1, id: "expandedstorage:diamond_to_obsidian_conversion_kit" }
+				id: "4F035F083B2E2B6C"
+				item: { count: 1, id: "sophisticatedstorage:diamond_to_netherite_tier_upgrade" }
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["78B534077889E357"]
-			icon: {
-				id: "expandedstorage:netherite_chest"
-			}
-			icon_scale: 2.0d
-			id: "07D9F58B45BC3954"
-			rewards: [{
-				id: "478027ECD5D60AB6"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "19798D8FD4EC73D8"
-				item: { count: 1, id: "expandedstorage:obsidian_to_netherite_conversion_kit" }
-				type: "item"
-			}]
-			x: 6.75d
-			y: 5.0d
-		}
-		{
-			id: "3D86F92ED2EB81E0"
-			rewards: [{
-				id: "7D3B7DDDE4FB5705"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "65C53028F60D7C60"
-				item: { count: 1, id: "expandedstorage:copper_barrel" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["3D86F92ED2EB81E0"]
-			icon_scale: 1.2d
-			id: "56F4BAD67722459B"
-			rewards: [{
-				id: "717075CC2E33672C"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "5554788B4D7DD676"
-				item: { count: 1, id: "expandedstorage:iron_barrel" }
-				type: "item"
-			}]
-			x: 5.2d
-			y: 1.6d
-		}
-		{
-			dependencies: ["56F4BAD67722459B"]
-			icon_scale: 1.4d
-			id: "1302EA5E30D3D4DA"
-			rewards: [{
-				id: "4A9605095A773D2C"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "32DBA2B2C2CCBF9C"
-				item: { count: 1, id: "expandedstorage:gold_barrel" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 2.4d
-		}
-		{
-			dependencies: ["1302EA5E30D3D4DA"]
-			icon_scale: 1.6d
-			id: "386306F91474CC2E"
-			rewards: [{
-				id: "5B023ED261AC4F1D"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "5005FE1F22D68092"
-				item: { count: 1, id: "expandedstorage:diamond_barrel" }
-				type: "item"
-			}]
-			x: 5.15d
-			y: 3.25d
-		}
-		{
-			dependencies: ["386306F91474CC2E"]
-			icon_scale: 1.8d
-			id: "0317946C6D59689A"
-			rewards: [{
-				id: "05F7E769A9BBE9A7"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "67A5C0C614885C16"
-				item: { count: 1, id: "expandedstorage:obsidian_barrel" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["0317946C6D59689A"]
-			icon_scale: 2.0d
-			id: "0AE32DA1943B0147"
-			rewards: [{
-				id: "2088C92F3603BF7A"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			shape: "hexagon"
-			size: 1.0d
-			tasks: [{
-				id: "2D7E64893F56449E"
-				item: { count: 1, id: "expandedstorage:netherite_barrel" }
-				type: "item"
-			}]
-			x: 5.15d
-			y: 5.0d
+			x: 5.5d
+			y: 4.5d
 		}
 		{
 			id: "2057D6E00AB5D98F"
