@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Enchantment Extractor"
-  icon: "industrialforegoing:enchantment_extractor"
+  title: 'Enchantment Extractor'
+  icon: 'industrialforegoing:enchantment_extractor'
   position: 4
   parent: industrialforegoing:misc.md
 item_ids:
@@ -10,11 +10,8 @@ item_ids:
 
 # Enchantment Extractor
 
-This machine can extract enchantments from items when provided with a book. 
+This machine can extract enchantments from items when provided with a book.
 
-It can function 2 ways, extract the enchantments into a book or it can extract the enchantment and transform it into [Essence](../agr_husb/essence.md).
-
-
+It can function 2 ways, extract the enchantments into a book or it can extract the enchantment and transform it into [Essence](../agr_hus/essence.md).
 
 <Recipe id="industrialforegoing:enchantment_extractor" />
-
