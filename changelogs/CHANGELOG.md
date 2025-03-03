@@ -40,7 +40,7 @@ The mod has been removed as Sophisticated Storage does it much better.
 
 ### Removed Mods ❌
 
-  * [Bla-Haj](https://www.curseforge.com/minecraft/mc-mods/project-1172424) (Replaced by better Blå-Haj)
+  * [Shorkie](https://www.curseforge.com/minecraft/mc-mods/project-1172424) (Replaced by better Blå-Haj)
   * [Expanded Storage](https://www.curseforge.com/minecraft/mc-mods/project-978068) (Overlaps with Sophisticated Storage, empty chests before updating!)
   * [Open Sesame](https://www.curseforge.com/minecraft/mc-mods/project-1098166) (Replaced with kubejs logic)
   * [Pave The Way](https://www.curseforge.com/minecraft/mc-mods/project-1064956) (Not used)
