@@ -24,6 +24,10 @@ ServerEvents.tags('item', (e) => {
   // Plastic
   e.add('c:plastics', ['pneumaticcraft:plastic']);
 
+  // Dough / Flour
+  e.add('c:doughs', ['refurbished_furniture:dough', 'farmersdelight:wheat_dough']);
+  e.add('c:flours', ['pneumaticcraft:wheat_flour', 'refurbished_furniture:wheat_flour']);
+
   // Knives
   e.add('occultism:tools/knife', '#c:tools/knife');
 
