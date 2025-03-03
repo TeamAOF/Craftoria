@@ -130,6 +130,14 @@ ServerEvents.tags('item', (e) => {
     'mob_grinding_utils:jumbo_tank',
 
     'framedblocks:framed_tank',
+
+    'supplementaries:sack',
+    'supplementaries:safe',
+    '#supplementaries:presents',
+    '#supplementaries:trapped_presents',
+    'supplementaries:jar',
+
+    'occultism:storage_controller_stabilized'
   ];
 
   const replicator_2_exclusions = [
