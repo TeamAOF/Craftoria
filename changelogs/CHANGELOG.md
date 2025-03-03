@@ -1,3 +1,54 @@
+## Craftoria | v1.17.0
+
+_NeoForge Loader 21.1.128_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.17.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.17.0.md)_
+
+# DISCLAIMER! 
+## Empty your Expanded Storage chests before updating! 
+The mod has been removed as Sophisticated Storage does it much better.
+
+
+### Changes/Improvements ⭐
+
+* Updated storage quests to match the changes.
+* Retextured Mob Grinding Utils to be more vanilla-like.
+* Retextured Lootr textures.
+* Added Pyrolyse Oven quest.
+* Replicator MK1 now uses 1B of UU-Matter.
+* Disabled Pylon flight.
+* Allow HDPE Sheet to be used in recipes using #c:plastics tag.
+* Revamped vanilla armor models.
+* Revamped Iron's armor models.
+* Updated Replicator MK2 blacklist to include Supplementaries & Occultism entries storing NBT.
+* Added opening double doors logic through kubejs, replaces the Open Sesame mod.
+
+### Bug Fixes 🪲
+
+* Fixed completionist replication quest dependencies.
+* Fixed missing circuit slicer recipes.
+
+### Added Mods ✅
+
+  * [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo)
+  * [Create](https://www.curseforge.com/minecraft/mc-mods/create)
+  * [Create Encased](https://www.curseforge.com/minecraft/mc-mods/create-encased)
+  * [Cryonic Config](https://www.curseforge.com/minecraft/mc-mods/cryonicconfig)
+  * [Desert Oasis](https://www.curseforge.com/minecraft/mc-mods/desert-oasis)
+  * [Desired Servers](https://www.curseforge.com/minecraft/mc-mods/desired-servers)
+  * [Neo-Blåhaj](https://www.curseforge.com/minecraft/mc-mods/neo-blahaj)
+  * [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat)
+  * [YetAnotherConfigLib](https://www.curseforge.com/minecraft/mc-mods/yacl)
+
+### Removed Mods ❌
+
+  * [Bla-Haj](https://www.curseforge.com/minecraft/mc-mods/project-1172424) (Replaced by better Blå-Haj)
+  * [Expanded Storage](https://www.curseforge.com/minecraft/mc-mods/project-978068) (Overlaps with Sophisticated Storage, empty chests before updating!)
+  * [Open Sesame](https://www.curseforge.com/minecraft/mc-mods/project-1098166) (Replaced with kubejs logic)
+  * [Pave The Way](https://www.curseforge.com/minecraft/mc-mods/project-1064956) (Not used)
+  * [Reasonable Defaults](https://www.curseforge.com/minecraft/mc-mods/project-1101933) (Replaced by Desired Servers)
+  * [Wither Spawn Animation](https://www.curseforge.com/minecraft/mc-mods/wither-spawn-animation)
+  * [ZeroCore 2](https://www.curseforge.com/minecraft/mc-mods/zerocore)
+  ---
+
 ## Craftoria | v1.16.0
 
 _NeoForge Loader 21.1.128_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.16.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.16.0.md)_
@@ -59,7 +110,7 @@ _NeoForge Loader 21.1.128_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
   * [Nyf's Spiders](https://www.curseforge.com/minecraft/mc-mods/nyfs-spiders) (Performance Issues)
   * [PVP Flagging](https://www.curseforge.com/minecraft/mc-mods/pvp-flagging)
   * [YetAnotherConfigLib](https://www.curseforge.com/minecraft/mc-mods/yacl)
-
+  ---
 
 ## Craftoria | v1.15.2
 

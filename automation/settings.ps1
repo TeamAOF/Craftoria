@@ -26,11 +26,11 @@ $MODPACK_NAME = "Craftoria"
 $CLIENT_NAME = "Craftoria"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.16.0"
+$MODPACK_VERSION = "1.17.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.15.2"
+$LAST_MODPACK_VERSION = "1.16.0"
 
 # Which modloader the modpack uses
 # Can be "forge" or "fabric"
@@ -201,4 +201,4 @@ $SERVER_FILE_DISPLAY_NAME = "Craftoria Server - $MODPACK_VERSION"
 $MODLIST_PATH = "$INSTANCE_ROOT/changelogs/modlist_$MODPACK_VERSION.md"
 $CHANGELOG_PATH = "$INSTANCE_ROOT/changelogs/changelog_mods_$MODPACK_VERSION.md"
 
-$FILES_TO_INCLUDE_IN_MODS_FOLDER = @("mods/cc-tweaked-1.21.1-forge-1.115.0.jar")
+$FILES_TO_INCLUDE_IN_MODS_FOLDER = @("mods/cc-tweaked-1.21.1-forge-1.115.1.jar")

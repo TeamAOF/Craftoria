@@ -16,6 +16,8 @@ const globalItemRemovals = [
   'industrialforegoing:infinity_nuke',
   'utilitarian:tiny_coal',
   'utilitarian:tiny_charcoal',
+  'create:copycat_step',
+  'create:copycat_panel'
 ];
 
 ServerEvents.recipes((event) => {
