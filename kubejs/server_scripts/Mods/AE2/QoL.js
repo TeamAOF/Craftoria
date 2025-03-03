@@ -160,7 +160,10 @@ ServerEvents.recipes((event) => {
 
   event.remove({ output: 'extendedae:circuit_cutter' });
   exAssembler(event, 'extendedae:circuit_cutter', [
-    ('extendedae:machine_frame', '8x ae2:engineering_processor', 'craftoria:universal_press', 'minecraft:stonecutter'),
+    'extendedae:machine_frame',
+    '8x ae2:engineering_processor',
+    'craftoria:universal_press',
+    'minecraft:stonecutter',
   ]);
 
   exCutter(event, '1x craftoria:universal_press', 'craftoria:1x_compressed_iron_block');

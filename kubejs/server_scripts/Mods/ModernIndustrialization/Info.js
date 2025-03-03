@@ -8,11 +8,12 @@ RecipeViewerEvents.addInformation('item', (e) => {
       `It's important to note that the Replicator Mk I is not capable of replicating exact copies of items that have NBT data, such as enchanted items or items with durability.`,
       `For some reason, it seems to be incapable of replicating fluids at all. Maybe we can fix that with a future upgrade?`,
       `In-case you're wondering, the Replicator Mk I is capable of replicating itself, but it will require a significant amount of UU matter and energy to do so.`,
+      `Note: You need to provide 8192eu worth of upgrades to the machine, otherwise it will not be able to replicate things.`,
     ],
     'modern_industrialization:replicator': [
       `The Replicator Mk II, the latest and greatest in replication technology!`,
       `Everything that the Replicator Mk I can do, the Replicator Mk II can do better! Though it has some downsides.`,
-      `It can replicate items significantly cheaper than the Replicator Mk I, requring 100 times less UU-Matter.`,
+      `It can replicate items significantly cheaper than the Replicator Mk I, requring 10 times less UU-Matter.`,
       `It is also capable of replicating items with NBT data, such as enchanted items or items with durability.`,
       `The problem with replicating fluids has been fixed, and the Replicator Mk II is capable of replicating fluids as well! Except for some energy dense fluids, such as Helium Plasma.`,
       `Another advantage of the Replicator Mk II is that it doesn't require power to replicate items thanks to its internal reactor.`,

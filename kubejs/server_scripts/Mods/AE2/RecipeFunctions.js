@@ -47,7 +47,7 @@ let exCutter = (event, iOutput, iInput) => {
   let recipe = {
     type: 'extendedae:circuit_cutter',
     input: {
-      ingredient: Ingredient.of(iInput.includes('x ' ? iInput.split('x ')[1] : iInput)).toJson(),
+      ingredient: Ingredient.of(iInput.includes('x ') ? iInput.split('x ')[1] : iInput).toJson(),
       amount: iInput.includes('x ') ? parseInt(iInput.split('x ')[0]) : 1,
     },
     output: Item.of(iOutput).toJson(),

@@ -23,4 +23,8 @@ ServerEvents.recipes((e) => {
     ['ars_nouveau:earth_essence', 'farmingforblockheads:red_fertilizer', 'farmingforblockheads:green_fertilizer'],
     10000
   );
+
+  e.remove({ output: 'utilitarian:snad' });
+  e.remove({ output: 'utilitarian:red_snad' });
+  e.remove({ output: 'utilitarian:soul_snad' });
 });
