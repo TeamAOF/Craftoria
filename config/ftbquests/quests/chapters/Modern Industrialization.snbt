@@ -180,8 +180,8 @@
 				item: { count: 1, id: "modern_industrialization:advanced_large_steam_boiler" }
 				type: "item"
 			}]
-			x: 32.0d
-			y: 2.0d
+			x: 33.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["24A4F1AA0BFFE867"]
@@ -2934,8 +2934,8 @@
 				item: { count: 1, id: "extended_industrialization:machine_chainer" }
 				type: "item"
 			}]
-			x: 30.5d
-			y: 2.0d
+			x: 32.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["40915337B7E427F8"]
@@ -3125,6 +3125,17 @@
 			]
 			x: 60.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["20A093E5684D2E30"]
+			id: "026C88446512DDB8"
+			tasks: [{
+				id: "5620BB74CBDE2955"
+				item: { count: 1, id: "industrialization_overdrive:pyrolyse_oven" }
+				type: "item"
+			}]
+			x: 31.0d
+			y: 3.0d
 		}
 	]
 }
