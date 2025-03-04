@@ -2,6 +2,45 @@
   "oreMultiplier": 1,
   "ores": [
     {
+      "ore_size": 14,
+      "discard_on_air_chance": 0.0,
+      "modifiers": [
+        {
+          "count": 32,
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:in_square"
+        },
+        {
+          "height": {
+            "min_inclusive": {
+              "above_bottom": 10
+            },
+            "max_inclusive": {
+              "below_top": 10
+            },
+            "type": "minecraft:uniform"
+          },
+          "type": "minecraft:height_range"
+        },
+        {
+          "type": "minecraft:biome"
+        }
+      ],
+      "targets": [
+        {
+          "target": {
+            "block": "minecraft:netherrack",
+            "predicate_type": "minecraft:block_match"
+          },
+          "state": {
+            "Name": "minecraft:nether_quartz_ore"
+          }
+        }
+      ]
+    },
+    {
       "ore_size": 3,
       "discard_on_air_chance": 0.0,
       "modifiers": [
@@ -15,10 +54,10 @@
         {
           "height": {
             "min_inclusive": {
-              "absolute": -64
+              "absolute": 0
             },
             "max_inclusive": {
-              "absolute": 50
+              "absolute": 128
             },
             "type": "minecraft:trapezoid"
           },
@@ -44,25 +83,21 @@
       ]
     },
     {
-      "ore_size": 33,
-      "discard_on_air_chance": 0.0,
+      "ore_size": 3,
+      "discard_on_air_chance": 1.0,
       "modifiers": [
-        {
-          "count": 4,
-          "type": "minecraft:count"
-        },
         {
           "type": "minecraft:in_square"
         },
         {
           "height": {
             "min_inclusive": {
-              "absolute": 27
+              "absolute": 8
             },
             "max_inclusive": {
-              "absolute": 36
+              "absolute": 24
             },
-            "type": "minecraft:uniform"
+            "type": "minecraft:trapezoid"
           },
           "type": "minecraft:height_range"
         },
@@ -73,11 +108,11 @@
       "targets": [
         {
           "target": {
-            "block": "minecraft:netherrack",
-            "predicate_type": "minecraft:block_match"
+            "tag": "minecraft:base_stone_nether",
+            "predicate_type": "minecraft:tag_match"
           },
           "state": {
-            "Name": "minecraft:magma_block"
+            "Name": "minecraft:ancient_debris"
           }
         }
       ]
@@ -157,46 +192,11 @@
       ]
     },
     {
-      "ore_size": 3,
-      "discard_on_air_chance": 1.0,
-      "modifiers": [
-        {
-          "type": "minecraft:in_square"
-        },
-        {
-          "height": {
-            "min_inclusive": {
-              "absolute": 8
-            },
-            "max_inclusive": {
-              "absolute": 24
-            },
-            "type": "minecraft:trapezoid"
-          },
-          "type": "minecraft:height_range"
-        },
-        {
-          "type": "minecraft:biome"
-        }
-      ],
-      "targets": [
-        {
-          "target": {
-            "tag": "minecraft:base_stone_nether",
-            "predicate_type": "minecraft:tag_match"
-          },
-          "state": {
-            "Name": "minecraft:ancient_debris"
-          }
-        }
-      ]
-    },
-    {
-      "ore_size": 14,
+      "ore_size": 33,
       "discard_on_air_chance": 0.0,
       "modifiers": [
         {
-          "count": 32,
+          "count": 4,
           "type": "minecraft:count"
         },
         {
@@ -205,10 +205,10 @@
         {
           "height": {
             "min_inclusive": {
-              "above_bottom": 10
+              "absolute": 27
             },
             "max_inclusive": {
-              "below_top": 10
+              "absolute": 36
             },
             "type": "minecraft:uniform"
           },
@@ -225,7 +225,7 @@
             "predicate_type": "minecraft:block_match"
           },
           "state": {
-            "Name": "minecraft:nether_quartz_ore"
+            "Name": "minecraft:magma_block"
           }
         }
       ]
