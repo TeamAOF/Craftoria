@@ -3,9 +3,9 @@
 _NeoForge Loader 21.1.128_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.17.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.17.0.md)_
 
 # DISCLAIMER! 
-## Empty your Expanded Storage chests before updating! 
-The mod has been removed as Sophisticated Storage does it much better.
-
+## Empty your Expanded Storage chests before updating!  
+The mod has been removed as Sophisticated Storage does it much better. 
+If you were to not empty them, do not worry! We've implemented a mod in place to convert them into a new storage container. Break it or empty it.
 
 ### Changes/Improvements ⭐
 
@@ -20,11 +20,13 @@ The mod has been removed as Sophisticated Storage does it much better.
 * Revamped Iron's armor models.
 * Updated Replicator MK2 blacklist to include Supplementaries & Occultism entries storing NBT.
 * Added opening double doors logic through kubejs, replaces the Open Sesame mod.
+* Unified coffee entries.
 
 ### Bug Fixes 🪲
 
 * Fixed completionist replication quest dependencies.
 * Fixed missing circuit slicer recipes.
+* Fixed a crash caused by Soulbound enchantment.
 
 ### Added Mods ✅
 
@@ -35,7 +37,9 @@ The mod has been removed as Sophisticated Storage does it much better.
   * [Desert Oasis](https://www.curseforge.com/minecraft/mc-mods/desert-oasis)
   * [Desired Servers](https://www.curseforge.com/minecraft/mc-mods/desired-servers)
   * [Neo-Blåhaj](https://www.curseforge.com/minecraft/mc-mods/neo-blahaj)
+  * [Snowy Fix](https://www.curseforge.com/minecraft/mc-mods/simple-snowy-fix-forge-fabric)
   * [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat)
+  * [Storage No Poof](https://www.curseforge.com/minecraft/mc-mods/storage-no-poof)
   * [YetAnotherConfigLib](https://www.curseforge.com/minecraft/mc-mods/yacl)
 
 ### Removed Mods ❌
