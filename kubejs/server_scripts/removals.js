@@ -29,8 +29,8 @@ ServerEvents.recipes((event) => {
     'mffs:steel_ingot',
     'industrialforegoing:laser_drill_ore/raw_materials/iridium',
     'modern_industrialization:materials/uranium/blast_furnace/dust',
-    'supplementaries:suspicious_gravel',
-    'supplementaries:suspicious_sand',
+    'supplementaries:sus_gravel',
+    'supplementaries:sus_sand',
   ];
 
   const output = [];
