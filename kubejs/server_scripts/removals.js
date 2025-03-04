@@ -17,7 +17,7 @@ const globalItemRemovals = [
   'utilitarian:tiny_coal',
   'utilitarian:tiny_charcoal',
   'create:copycat_step',
-  'create:copycat_panel'
+  'create:copycat_panel',
 ];
 
 ServerEvents.recipes((event) => {
@@ -29,6 +29,8 @@ ServerEvents.recipes((event) => {
     'mffs:steel_ingot',
     'industrialforegoing:laser_drill_ore/raw_materials/iridium',
     'modern_industrialization:materials/uranium/blast_furnace/dust',
+    'supplementaries:suspicious_gravel',
+    'supplementaries:suspicious_sand',
   ];
 
   const output = [];
