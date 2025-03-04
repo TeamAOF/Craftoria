@@ -26,6 +26,6 @@ With a suitable Electrolyzer setup and a Singularity, large amounts of energy ca
   <ItemIcon id="modern_industrialization:replicator" />
 </ItemGrid>
 
-With 1 mB of UU Matter, the replicator can duplicate (almost) any item in the game!
+With 100 mB of UU Matter, the replicator can duplicate (almost) any item in the game!
 
 Congratulations, it is now Yourcraft. Thanks for playing Modern Industrialization.
