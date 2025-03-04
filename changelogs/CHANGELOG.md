@@ -1,3 +1,17 @@
+## Craftoria | v1.17.1
+
+_NeoForge Loader 21.1.128_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.17.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.17.1.md)_
+
+### Changes/Improvements ⭐
+
+* Turned chat toggle off by default.
+
+### Bug Fixes 🪲
+
+* Fixed server not booting.
+* Fixed possible deadlock due to storage conversion.
+---
+
 ## Craftoria | v1.17.0
 
 _NeoForge Loader 21.1.128_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.17.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.17.0.md)_
