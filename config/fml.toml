@@ -31,5 +31,4 @@ earlyWindowSquir = false
 #Example dependency override for the mod with the id 'targetMod': dependency constraints (incompatibility clauses or restrictive version ranges) against mod 'dep1' are removed, and the mod will now load after the mod 'dep2'
 #dependencyOverrides.targetMod = ["-dep1", "+dep2"]
 [dependencyOverrides]
-	bridgingmod = ["-yet_another_config_lib_v3"]
 	mekanism_extras = ["-mekanism"]

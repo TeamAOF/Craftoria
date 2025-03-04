@@ -13,6 +13,10 @@ _NeoForge Loader 21.1.128_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
 * Fixed server not booting.
 * Fixed possible deadlock due to storage conversion.
 * Fixed sandpaper recipe.
+
+### Removed Mods ❌
+
+* [Bridging Mod](https://www.curseforge.com/minecraft/mc-mods/bridging-mod) (Crashes)
 ---
 
 ## Craftoria | v1.17.0
