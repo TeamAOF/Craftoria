@@ -7,7 +7,7 @@
  * Add the mods you want to prioritize here.
  * The first mod in the list will be the one that the item will be replaced with.
  */
-let modPriority = ['minecraft', 'modern_industrialization', 'mekanism', 'moremekanismprocessing'];
+let modPriority = ['minecraft', 'modern_industrialization', 'create', 'mekanism', 'moremekanismprocessing'];
 
 // Add the materials you want to unify here.
 let metals = [
