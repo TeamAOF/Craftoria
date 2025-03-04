@@ -4,12 +4,15 @@ _NeoForge Loader 21.1.128_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
 
 ### Changes/Improvements ⭐
 
-* Turned chat toggle off by default.
+* Turned team chat toggle off by default.
+* Added zinc ore to mining dimension.
+* Unify zinc properly.
 
 ### Bug Fixes 🪲
 
 * Fixed server not booting.
 * Fixed possible deadlock due to storage conversion.
+* Fixed sandpaper recipe.
 ---
 
 ## Craftoria | v1.17.0
