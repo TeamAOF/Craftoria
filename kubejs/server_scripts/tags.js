@@ -113,6 +113,8 @@ ServerEvents.tags('block', (e) => {
     'mekanism:restrictive_transporter',
     '#c:skulls',
     '@glassential',
+    'hostilenetworks:sim_chamber',
+    'hostilenetworks:loot_fabricator',
   ]);
 
   e.add('minecraft:mineable/axe', ['mekanism:cardboard_box']);
