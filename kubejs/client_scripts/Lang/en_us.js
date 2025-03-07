@@ -3,6 +3,7 @@ ClientEvents.lang('en_us', (e) => {
     'lef_tier.extended_industrialization.modern_industrialization.superconductor_coil': 'Superconductor',
     'rei_categories.modern_industrialization.electric_blast_furnace_superconductor_coil': 'EBF (Superconductor Tier)',
     'ebf_tier.modern_industrialization.superconductor_coil': 'Superconductor',
+    'pyro_tier.industrialization_overdrive.modern_industrialization.superconductor_coil': 'Superconductor',
 
     'block.modern_industrialization.replicator_1': 'Replicator Mk I',
     'block.modern_industrialization.replicator': 'Replicator Mk II',
