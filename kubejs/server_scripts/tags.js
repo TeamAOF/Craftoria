@@ -141,12 +141,7 @@ ServerEvents.tags('fluid', (e) => {
 ServerEvents.tags('entity_type', (e) => {
   e.add('ftbchunks:entity_interact_whitelist', ['minecraft:villager', 'minecraft:wandering_trader']);
 
-  e.add('mob_grinding_utils:no_swab', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/]);
+  e.add('mob_grinding_utils:no_swab', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/, '#neoforge:bosses']);
 
-  e.add('industrialforegoing:mob_crusher_blacklist', [
-    'bosses_of_mass_destruction:obsidilith',
-    'bosses_of_mass_destruction:lich',
-    'bosses_of_mass_destruction:gauntlet',
-    'bosses_of_mass_destruction:void_blossom',
-  ]);
+  e.add('industrialforegoing:mob_crusher_blacklist', ['#c:bosses', '#neoforge:bosses']);
 });
