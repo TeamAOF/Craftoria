@@ -115,6 +115,7 @@ ServerEvents.tags('block', (e) => {
     '@glassential',
     'hostilenetworks:sim_chamber',
     'hostilenetworks:loot_fabricator',
+    'ars_additions:ender_source_jar',
   ]);
 
   e.add('minecraft:mineable/axe', ['mekanism:cardboard_box']);
