@@ -29,12 +29,6 @@ ServerEvents.generateData('after_mods', (e) => {
         'minecraft:dragon_head',
         'minecraft:dragon_egg',
       ],
-      tierData: {
-        basic: 6,
-        advanced: 330,
-        superior: 930,
-        self_aware: 2000,
-      },
       dataPerKill: {
         faulty: 3,
         basic: 12,
