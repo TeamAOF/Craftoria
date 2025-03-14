@@ -4,7 +4,6 @@ _NeoForge Loader 21.1.133_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
 
 ### Changes/Improvements ⭐
 
-* Blacklist cataclysm bosses from swabbing.
 * Update Industrial Overdrive textures.
 * Update Awaken Essences textures, now animated.
 * Blacklist IF Mob Crusher from one shotting all bosses in general, if you were farming bosses this way, there are much better ways.
