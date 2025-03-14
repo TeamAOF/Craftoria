@@ -77,4 +77,12 @@ ServerEvents.recipes((e) => {
     .itemOut('modern_industrialization:replicator_1')
     .itemIn('modern_industrialization:replicator_1', 0)
     .fluidIn('16000x modern_industrialization:uu_matter');
+
+  miAssembler(8192 * 16, 20 * 50)
+    .itemOut('craftoria:cosmic_injector')
+    .itemIn('4x craftoria:cosmic_matter')
+    .itemIn('2x modern_industrialization:stainless_steel_rod')
+    .itemIn('2x minecraft:glass_pane')
+    .itemIn('4x modern_industrialization:bronze_plate')
+    .id('craftoria:end_game/cosmic_injector');
 });

@@ -113,6 +113,9 @@ ServerEvents.tags('block', (e) => {
     'mekanism:restrictive_transporter',
     '#c:skulls',
     '@glassential',
+    'hostilenetworks:sim_chamber',
+    'hostilenetworks:loot_fabricator',
+    'ars_additions:ender_source_jar',
   ]);
 
   e.add('minecraft:mineable/axe', ['mekanism:cardboard_box']);
@@ -120,6 +123,8 @@ ServerEvents.tags('block', (e) => {
   e.add('minecraft:storage_blocks/quartz', 'minecraft:quartz_block');
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
+
+  e.add('sereneseasons:greenhouse_glass', ['#minecraft:glass_blocks', 'actuallyadditions:greenhouse_glass']);
 
   // Block tags for quest usage
   e.add('craftoria:ae2_buddings', /^ae2:.*_budding_quartz/);
@@ -138,12 +143,7 @@ ServerEvents.tags('fluid', (e) => {
 ServerEvents.tags('entity_type', (e) => {
   e.add('ftbchunks:entity_interact_whitelist', ['minecraft:villager', 'minecraft:wandering_trader']);
 
-  e.add('mob_grinding_utils:no_swab', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/]);
+  e.add('mob_grinding_utils:no_swab', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/, '#neoforge:bosses']);
 
-  e.add('industrialforegoing:mob_crusher_blacklist', [
-    'bosses_of_mass_destruction:obsidilith',
-    'bosses_of_mass_destruction:lich',
-    'bosses_of_mass_destruction:gauntlet',
-    'bosses_of_mass_destruction:void_blossom',
-  ]);
+  e.add('industrialforegoing:mob_crusher_blacklist', ['#c:bosses', '#neoforge:bosses']);
 });
