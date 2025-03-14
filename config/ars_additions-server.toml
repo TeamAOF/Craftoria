@@ -51,3 +51,14 @@
 	# Default: 300
 	# Range: 0 ~ 900
 	effect_duration = 300
+
+#Ritual of Locate Structure
+[locator]
+	#The maximum number of threads in the async locator thread pool.
+	#There's no upper bound to this, however this should only be increased if you're experiencing
+	#simultaneous location lookups causing issues AND you have the hardware capable of handling
+	#the extra possible threads.
+	#The default of 1 should be suitable for most users.
+	# Default: 1
+	# Range: > 1
+	threads = 1

@@ -59,6 +59,10 @@
 	# Default: 30
 	# Range: 0 ~ 10000
 	jumpRingCost = 30
+	#How much durability to repair armor by every 10 seconds without any Thread of Repairing
+	# Default: 1
+	# Range: 0 ~ 10000
+	baseArmorRepairRate = 1
 
 #Blocks
 [block]

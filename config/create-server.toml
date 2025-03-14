@@ -438,6 +438,11 @@
 	#.
 	#Whether hostile mobs walking near a seat will start riding it.
 	seatHostileMobs = true
+	#.
+	#The amount of ticks a factory gauge waits between requests.
+	# Default: 100
+	# Range: > 5
+	factoryGaugeTimer = 100
 
 #.
 #Everything related to Schematic tools

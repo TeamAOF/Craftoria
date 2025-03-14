@@ -6,3 +6,5 @@ not_allowed_blocks = []
 consumeFacade = true
 #List of blocks that need z-fighting fixes. Supports '*' as a wildcard.
 z_fighting = ["ae2:cable_bus"]
+#List of blocks that should not render when covered by a facade. Supports '*' as a wildcard.
+hidden_when_facaded = []

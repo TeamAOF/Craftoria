@@ -1,3 +1,27 @@
+## Craftoria | v1.17.2
+
+_NeoForge Loader 21.1.133_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.17.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.17.2.md)_
+
+### Changes/Improvements ⭐
+
+* Blacklist cataclysm bosses from swabbing.
+* Update Industrial Overdrive textures.
+* Update Awaken Essences textures, now animated.
+* Blacklist IF Mob Crusher from one shotting all bosses in general, if you were farming bosses this way, there are much better ways.
+* Allow any type of glass to be used for the seasons green house system.
+* More updates to Sophisticated textures.
+* Blacklist cataclysm bosses from swabbing.
+* Update dragon model & loot pool for HNN.
+* Disabled Pilfer spell.
+
+### Added Mods ✅
+
+  * [Brewin' And Chewin'](https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin)
+  * [Bridging](https://www.curseforge.com/minecraft/mc-mods/bridging-mod)
+  * [Create: Bells & Whistles](https://www.curseforge.com/minecraft/mc-mods/bellsandwhistles)
+  * [JinxedLib](https://www.curseforge.com/minecraft/mc-mods/jinxedlib)
+---
+
 ## Craftoria | v1.17.1
 
 _NeoForge Loader 21.1.128_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.17.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.17.1.md)_

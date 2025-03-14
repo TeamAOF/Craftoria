@@ -6,6 +6,8 @@
 		# Default: 50
 		# Range: > 1
 		MAX_VISITED_RECIPES = 50
+		#If enabled, values of items that have a crafting remaining item like milk buckets in the cake recipe, will subtract their remaining item matter value from the calculation
+		SUBTRACT_CRAFTING_REMAINING_ITEM = true
 
 	[ReplicationConfig.MatterPipe]
 		# Default: 2560
@@ -48,3 +50,7 @@
 		# Default: 256000
 		# Range: > 1
 		CAPACITY = 256000
+
+	[ReplicationConfig.Client]
+		SHOW_PRESS_SHIFT_TEXT = true
+		SHOW_MATTER_TOOLTIP_VALUES_OUTSIDE_TERMINAL = true
