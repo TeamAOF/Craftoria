@@ -26,11 +26,11 @@ $MODPACK_NAME = "Craftoria"
 $CLIENT_NAME = "Craftoria"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.17.2"
+$MODPACK_VERSION = "1.17.3"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.17.1"
+$LAST_MODPACK_VERSION = "1.17.2"
 
 # Which modloader the modpack uses
 # Can be "forge" or "fabric"
@@ -91,7 +91,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"spark",
 	"ae2/client.json", 
 	"iris.properties",
-	"ae2-client.toml"
+	"ae2-client.toml",
+	"voicechat"
 	)
 
 # Accepts directories

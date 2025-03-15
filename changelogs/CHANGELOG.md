@@ -1,3 +1,24 @@
+## Craftoria | v1.17.3
+
+_NeoForge Loader 21.1.133_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.17.3.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.17.3.md)_
+
+### Changes/Improvements ⭐
+
+* Added Zinc Ore to MI Steel Drill (Quarry)
+* Added Zinc Ore > Raw in MI macerator.
+* Removed create config button from main menu.
+* Voicechat config folder is no longer shipped by default, leaving ur personal settings untouched.
+
+### Bug Fixes 🪲
+
+* Fixed an issue where EMI plugins wouldnt load correctly for Ars Nouveau.
+
+### Removed Mods ❌
+
+  * [Brewin' And Chewin'](https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin) (Too many issues right now)
+  * [XP Tome](https://www.curseforge.com/minecraft/mc-mods/xp-tome) (Overlaps with much better alternatives)
+---
+
 ## Craftoria | v1.17.2
 
 _NeoForge Loader 21.1.133_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.17.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.17.2.md)_
