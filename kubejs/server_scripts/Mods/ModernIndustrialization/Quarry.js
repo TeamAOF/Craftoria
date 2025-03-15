@@ -83,6 +83,7 @@ ServerEvents.recipes(event => {
     ["modern_industrialization:quartz_ore", 1, 0.2],
     ["powah:uraninite_ore", 1, 0.08],
     ["actuallyadditions:black_quartz_ore", 1, 0.15],
+    ["create:zinc_ore", 1, 0.2],
   ], 12, 600);
 
   // Gold Drill
