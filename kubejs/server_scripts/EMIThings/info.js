@@ -33,6 +33,9 @@ RecipeViewerEvents.addInformation('item', (e) => {
       `The Tesseract is unable to move things on its own, use a pipe or cable to move things to and from it.`,
       `Be sure to set the same frequency on both sides.`,
     ],
+    'craftoria:infinity_soul_cell': [
+      `For the trinity gem component of this ritual, craft a possessed warden spawn egg together with an empty trinity gem in any crafting grid.`,
+    ],
   };
 
   for (let [item, info] in entries) {
