@@ -1,0 +1,31 @@
+#Card settings
+[card]
+
+	#Fluid Card
+	[card.fluid_card]
+		#Millibuckets for Fluid Cards without Overclockers installed
+		# Default: 5000
+		# Range: > 0
+		base_milli_buckets_fluid = 5000
+		#Multiplier for Overclocker Cards - Number of Overclockers * this value = max millibuckets
+		# Default: 10000
+		# Range: > 0
+		multiplier_milli_buckets_fluid = 10000
+
+	#Energy Card
+	[card.energy_card]
+		#Maximum FE/T for Energy Cards
+		# Default: 1000000
+		# Range: > 0
+		max_fe_tick = 1000000
+
+	#Chemical Card
+	[card.chemical_card]
+		#Millibuckets for Chemical Cards without Overclockers installed (Only is Mekanism is installed)
+		# Default: 15000
+		# Range: > 0
+		base_milli_buckets_chemical = 15000
+		#Multiplier for Overclocker Cards - Number of Overclockers * this value = max millibuckets  (Only is Mekanism is installed)
+		# Default: 60000
+		# Range: > 0
+		multiplier_milli_buckets_chemical = 60000

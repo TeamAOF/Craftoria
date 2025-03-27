@@ -1,0 +1,56 @@
+{
+  "ability": {
+    "abilities": {
+      "impact": {
+        "requiredPoints": 1,
+        "requiredLevel": 0,
+        "maxLevel": 10,
+        "stats": {
+          "damage": {
+            "minInitialValue": 2.5,
+            "maxInitialValue": 5.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.25
+          },
+          "size": {
+            "minInitialValue": 2.5,
+            "maxInitialValue": 5.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.3
+          }
+        }
+      },
+      "sustainability": {
+        "requiredPoints": 1,
+        "requiredLevel": 0,
+        "maxLevel": 10,
+        "stats": {
+          "modifier": {
+            "minInitialValue": 0.75,
+            "maxInitialValue": 0.5,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "ADD",
+            "upgradeModifier": -0.05
+          }
+        }
+      }
+    }
+  },
+  "leveling": {
+    "initialCost": 100,
+    "maxLevel": 10,
+    "step": 200
+  },
+  "loot": {
+    "entries": {
+      "[\\w]+:chests\\/[\\w_\\/]*(frosz?|taiga|cold|winter|snow|icey?|glac)[\\w_\\/]*": 0.025,
+      "minecraft:chests/village/village_fletcher": 0.025,
+      "minecraft:chests/igloo_chest": 0.025
+    }
+  }
+}

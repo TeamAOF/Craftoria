@@ -1,0 +1,13 @@
+#Recipe Settings
+[recipes]
+	#A mapping of sulfur source to origin block. The key is the sulfur source, the value is the block.
+	#This is used by divination rod recipes to determine which (ore-)block to scan for, if e.g. a raw metal or ingot is used to craft the sulfur used in the rod. This also works for tags, prefixed with #.
+	#Format is: ["source=block", "#sourcetag=#blocktag", ...]
+	sulfurSourceToBlockMapping = []
+
+#Tooltip Handler Settings
+[tooltipHandler]
+	#Theurgy automatically adds tooltips for sulfur items.
+	#When adding a sulfur that is not in the 'theurgy' or 'kubejs' namespace, the namespace needs to be added to this list in order for the tooltip to show.
+	#Format is: ["<my_mod_namespace>", "<my_modpack_namespace>", ...]
+	additionalTooltipHandlerNamespaces = []

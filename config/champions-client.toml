@@ -1,0 +1,15 @@
+[hud]
+	#The x-offset for the champion HUD
+	# Default: 0
+	# Range: -1000 ~ 1000
+	hudXOffset = 0
+	#The y-offset for the champion HUD
+	# Default: 0
+	# Range: -1000 ~ 1000
+	hudYOffset = 0
+	#The distance, in blocks, from which the champion HUD can be seen
+	# Default: 50
+	# Range: 0 ~ 1000
+	hudRange = 50
+	#Set to true to move the WAILA overlay underneath the champion HUD
+	enableWailaIntegration = true

@@ -1,0 +1,16 @@
+[block_rendering]
+	#Whether to preview the state a hyperbox block will be placed as.
+	#Can be disabled if another placement preview mod is causing compatibility issues with this feature.
+	show_placement_preview = true
+	#Opacity (alpha value) of hyperbox placement preview
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	placement_preview_opacity = 0.4
+
+[nameplate_rendering]
+	#Minimum distance from a hyperbox to the player to render hyperbox nameplates from while not sneaking.
+	#If negative, nameplates will not be rendered while not sneaking.
+	nameplate_render_distance = -1.0
+	#Minimum distance from a hyperbox to the player to render hyperbox nameplates from while sneaking.
+	#If negative, nameplates will not be rendered while sneaking.
+	nameplate_sneaking_render_distance = 8.0

@@ -1,0 +1,13 @@
+#General settings
+[general]
+	#modpackProjectID is now deprecated and will be removed soon
+	# Default: 0
+	# Range: > 0
+	modpackProjectID = 1039252
+	#The name of the modpack
+	modpackName = "Craftoria"
+	#The version of the modpack
+	modpackVersion = "1.17.3"
+	#Use the metadata.json to determine the modpack version
+	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
+	useMetadata = false

@@ -1,0 +1,26 @@
+[durability]
+	#Should the Durability section be enabled?
+	enabled = true
+
+[enchantments]
+	#Should the fancied up Enchantment section be used?
+	enabled = true
+
+	[enchantments.color]
+		#The color curses should have
+		#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE, OBFUSCATED, BOLD, STRIKETHROUGH, UNDERLINE, ITALIC, RESET
+		curse = "RED"
+		#The color normal enchantments should have
+		#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE, OBFUSCATED, BOLD, STRIKETHROUGH, UNDERLINE, ITALIC, RESET
+		normal = "GREEN"
+		#The color max level enchantments should have
+		#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE, OBFUSCATED, BOLD, STRIKETHROUGH, UNDERLINE, ITALIC, RESET
+		max_level = "GOLD"
+
+[color]
+	#Should the fancied up Color section be used?
+	enabled = true
+
+[gap]
+	#Should sections of the tooltip have spacing between them?
+	enabled = true

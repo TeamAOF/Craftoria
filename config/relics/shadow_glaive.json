@@ -1,0 +1,81 @@
+{
+  "ability": {
+    "abilities": {
+      "saw": {
+        "requiredPoints": 1,
+        "requiredLevel": 5,
+        "maxLevel": 10,
+        "stats": {
+          "damage": {
+            "minInitialValue": 0.75,
+            "maxInitialValue": 1.5,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.2
+          },
+          "speed": {
+            "minInitialValue": 20.0,
+            "maxInitialValue": 15.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "ADD",
+            "upgradeModifier": -1.0
+          }
+        }
+      },
+      "glaive": {
+        "requiredPoints": 1,
+        "requiredLevel": 0,
+        "maxLevel": 10,
+        "stats": {
+          "damage": {
+            "minInitialValue": 2.0,
+            "maxInitialValue": 5.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.2
+          },
+          "recharge": {
+            "minInitialValue": 30.0,
+            "maxInitialValue": 10.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": -0.09
+          },
+          "bounces": {
+            "minInitialValue": 3.0,
+            "maxInitialValue": 5.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "ADD",
+            "upgradeModifier": 1.0
+          },
+          "radius": {
+            "minInitialValue": 2.5,
+            "maxInitialValue": 5.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.25
+          }
+        }
+      }
+    }
+  },
+  "leveling": {
+    "initialCost": 100,
+    "maxLevel": 10,
+    "step": 100
+  },
+  "loot": {
+    "entries": {
+      "minecraft:chests/ancient_city": 0.025,
+      "[\\w]+:chests\\/[\\w_\\/]*(end|warp)[\\w_\\/]*": 0.025,
+      "minecraft:chests/ancient_city_ice_box": 0.025,
+      "[\\w]+:chests\\/[\\w_\\/]*(warden|sculk|echo)[\\w_\\/]*": 0.025
+    }
+  }
+}

@@ -1,0 +1,49 @@
+	[general.general]
+		#If new processes can be created from guest languages. Only enable this on private servers and if you know what you are doing.
+		graalAllowCreateProcess = false
+		#The base energy usage for the scripting drive.
+		scriptingDriveBaseConsumption = 2
+		#If IO is allowed from guest languages. Only enable this on private servers and if you know what you are doing.
+		graalAllowIo = false
+		#If host class loading is allowed from guest languages. Only enable this on private servers and if you know what you are doing.
+		graalAllowHostClassLoading = false
+		#If new threads can be created from guest languages. Only enable this on private servers and if you know what you are doing.
+		graalAllowCreateThread = false
+		#The minimum number of ticks inbetween sending a script change packet from client to server.
+		terminalScriptingClientSyncTickInterval = 20
+		#If the native interface can be accessed from guest languages. Only enable this on private servers and if you know what you are doing.
+		graalAllowNative = false
+		#If experimental options can be used in guest languages. Only enable this on private servers and if you know what you are doing.
+		graalAllowExperimentalOptions = false
+		#The base energy usage for the scripting terminal.
+		terminalScriptingBaseConsumption = 1
+		#The maximum number of lines in stdout and stderr script log files. Set to -1 to disable limit.
+		maxLogLines = 2096
+		#If environment variables can be accessed from guest languages. Only enable this on private servers and if you know what you are doing.
+		graalAllowEnvironment = false
+		#The maximum number of statements that can be executed in one evaluation. This is to avoid infinite loops or very complex programs. Set to -1 to disable limit (not recommended).
+		graalStatementLimit = 16384
+		#Allows the guest application to access arrays as values with array elements.
+		graalAllowHostArrayAccess = true
+		#Allows the guest application to access lists as values with array elements and iterators.
+		graalAllowHostListAccess = true
+		#Allows the guest application to inherit access to allowed methods, i. e. implementations of allowed abstract and interface methods and overrides of allowed concrete methods. Only enable this on private servers and if you know what you are doing.
+		graalAllowHostAccessInheritance = false
+		#Allow guest languages to implement any Java interface. Only enable this on private servers and if you know what you are doing.
+		graalAllowHostAllImplementations = false
+		#Allows the guest application to access map as hash values.
+		graalAllowHostMapAccess = true
+		#Allow guest languages to implement (extend) any Java class. Only enable this on private servers and if you know what you are doing.
+		graalAllowHostAllClassImplementations = false
+		#If all Java public constructors should be accessible. Only enable this on private servers and if you know what you are doing.
+		graalAllowHostPublicAccess = false
+		#Allows the guest application to access iterables as values with iterators.
+		graalAllowHostIterableAccess = true
+		#Allows the guest application to access iterators as iterator values.
+		graalAllowHostIteratorAccess = true
+		#Allows the guest application to access java. nio. ByteBuffers as values with buffer elements.
+		graalAllowHostBufferAccess = true
+
+	[core.general]
+		#If the version checker should be enabled.
+		versionChecker = true

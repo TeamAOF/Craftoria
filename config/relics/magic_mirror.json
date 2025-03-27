@@ -1,0 +1,41 @@
+{
+  "ability": {
+    "abilities": {
+      "teleport": {
+        "requiredPoints": 1,
+        "requiredLevel": 0,
+        "maxLevel": 10,
+        "stats": {
+          "distance": {
+            "minInitialValue": 500.0,
+            "maxInitialValue": 1000.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.5
+          },
+          "cooldown": {
+            "minInitialValue": 60.0,
+            "maxInitialValue": 120.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": -0.05
+          }
+        }
+      }
+    }
+  },
+  "leveling": {
+    "initialCost": 100,
+    "maxLevel": 10,
+    "step": 200
+  },
+  "loot": {
+    "entries": {
+      "[\\w]+:chests\\/[\\w_\\/]*(mineshaft|city|stronghold)[\\w_\\/]*": 0.025,
+      "[\\w]+:chests\\/[\\w_\\/]*(pillag|outpost)[\\w_\\/]*": 0.025,
+      "minecraft:chests/woodland_mansion": 0.025
+    }
+  }
+}

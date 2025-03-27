@@ -1,0 +1,29 @@
+[General]
+	#minimum time between spawns in ticks
+	# Default: 100
+	# Range: > 1
+	"min tick time" = 75
+	#maximum time between spawns in ticks
+	# Default: 600
+	# Range: > 1
+	"max tick time" = 600
+	#Force spawns to occur regardless of conditions such as light level and elevation
+	"force spawns" = false
+	#do the items set as 'cursed item' and 'blessed item' make earths - set false to disable
+	"do items make earth" = true
+	#minimum distance cursed earth has to be away from players before it spawns mobs
+	# Default: 1
+	# Range: > 1
+	"spawn radius" = 1
+	#item used to create cursed earth
+	"cursed item" = "minecraft:wither_rose"
+	#item used to create blessed earth
+	"blessed item" = "cursedearth:blessed_flower"
+	#the light level above which cursed earth blocks burn - default 7 - allowed values 1 to 15
+	# Default: 7
+	# Range: 1 ~ 15
+	"burn light level" = 7
+	#does cursed earth die from light levels
+	"dies from light level" = true
+	#does cursed earth naturally spread
+	"naturally spreads" = true

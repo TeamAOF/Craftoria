@@ -1,0 +1,124 @@
+{
+  "ability": {
+    "abilities": {
+      "multiplying": {
+        "requiredPoints": 1,
+        "requiredLevel": 10,
+        "maxLevel": 10,
+        "stats": {
+          "amount": {
+            "minInitialValue": 0.05,
+            "maxInitialValue": 0.15,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.4
+          },
+          "chance": {
+            "minInitialValue": 0.05,
+            "maxInitialValue": 0.15,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_TOTAL",
+            "upgradeModifier": 0.128
+          },
+          "size": {
+            "minInitialValue": 0.05,
+            "maxInitialValue": 0.1,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_TOTAL",
+            "upgradeModifier": 0.1775
+          }
+        }
+      },
+      "explosion": {
+        "requiredPoints": 1,
+        "requiredLevel": 15,
+        "maxLevel": 10,
+        "stats": {
+          "size": {
+            "minInitialValue": 0.05,
+            "maxInitialValue": 0.25,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.15
+          }
+        }
+      },
+      "buffer": {
+        "requiredPoints": 1,
+        "requiredLevel": 5,
+        "maxLevel": 10,
+        "stats": {
+          "chance": {
+            "minInitialValue": 0.025,
+            "maxInitialValue": 0.075,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_TOTAL",
+            "upgradeModifier": 0.1
+          },
+          "capacity": {
+            "minInitialValue": 2.0,
+            "maxInitialValue": 5.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "ADD",
+            "upgradeModifier": 1.0
+          }
+        }
+      },
+      "spore": {
+        "requiredPoints": 1,
+        "requiredLevel": 0,
+        "maxLevel": 10,
+        "stats": {
+          "duration": {
+            "minInitialValue": 2.0,
+            "maxInitialValue": 4.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_TOTAL",
+            "upgradeModifier": 0.2
+          },
+          "damage": {
+            "minInitialValue": 0.25,
+            "maxInitialValue": 0.5,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_TOTAL",
+            "upgradeModifier": 0.1
+          },
+          "size": {
+            "minInitialValue": 0.1,
+            "maxInitialValue": 0.5,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.15
+          },
+          "cooldown": {
+            "minInitialValue": 15.0,
+            "maxInitialValue": 10.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_TOTAL",
+            "upgradeModifier": -0.1
+          }
+        }
+      }
+    }
+  },
+  "leveling": {
+    "initialCost": 100,
+    "maxLevel": 20,
+    "step": 100
+  },
+  "loot": {
+    "entries": {
+      "[\\w]+:chests\\/[\\w_\\/]*(jungle|temple)[\\w_\\/]*": 0.025
+    }
+  }
+}

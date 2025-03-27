@@ -1,0 +1,52 @@
+#MekaWeapons Settings. Joules to FE conversion: 2.5J = 1FE
+[weapons]
+
+	#Meka-Tana Settings
+	[weapons.meka_tana]
+		#Base damage of the Meka-Tana, multiply it with Attack Amplification Units.
+		base_damage = 50
+		#Attack speed of the Meka-Tana.
+		# Default: -2.4
+		# Range: -4.0 ~ 100.0
+		attack_speed = -2.4
+		#Cost in Joules of using the Meka-Tana to deal damage.
+		# Default: 625000
+		# Range: 0 ~ 9223372036854775807
+		energy_usage = 625000
+		#Cost in Joules of using the Meka-Tana to teleport 10 blocks.
+		# Default: 5000
+		# Range: 0 ~ 9223372036854775807
+		teleport_energy_usage = 5000
+		#Maximum distance a player can teleport with the Meka-Tana.
+		# Default: 100
+		# Range: 3 ~ 1024
+		max_teleport_reach = 100
+		#Base energy capacity of the Meka-Tana.
+		# Default: 16000000
+		# Range: 0 ~ 9223372036854775807
+		base_energy_capacity = 16000000
+		#Base charge rate of the Meka-Tana.
+		# Default: 350000
+		# Range: 0 ~ 9223372036854775807
+		base_charge_rate = 350000
+
+	#Meka-Bow Settings
+	[weapons.meka_bow]
+		#Attention: The final damage of Meka-Bow is based on how fast the arrow is going when it hits, multiply it with Attack Amplification Units.
+		base_damage = 50
+		#Cost in Joules of using the Meka-Bow.
+		# Default: 625000
+		# Range: 0 ~ 9223372036854775807
+		energy_usage = 625000
+		#Cost in Joules of using the Meka-Bow with flame mode active.
+		# Default: 825000
+		# Range: 0 ~ 9223372036854775807
+		fire_mode_energy_usage = 825000
+		#Base energy capacity of Meka-Bow.
+		# Default: 16000000
+		# Range: 0 ~ 9223372036854775807
+		base_energy_capacity = 16000000
+		#Base charge rate of Meka-Bow.
+		# Default: 350000
+		# Range: 0 ~ 9223372036854775807
+		base_charge_rate = 350000

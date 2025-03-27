@@ -1,0 +1,36 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+
+[equipmentRegister]
+by_name = [  ]
+by_tag = [
+    "#minecraft:swords",
+    "#minecraft:axes",
+    "#forge:tools/tridents",
+    "#c:spears",
+    "#c:tools/daggers",
+    "#c:tools/clubs",
+    "#c:tools/hammers",
+    "#c:tools/quarterstaves",
+    "#c:tools/spears",
+    "#c:tools/knife",
+    "#c:tools/spear"
+]
+by_modid = [
+    "weaponmod"
+]
+blacklist_by_name = [
+    "weaponmod:bullet",
+    "weaponmod:cannonball",
+    "weaponmod:shot",
+    "weaponmod:bolt",
+    "weaponmod:shell",
+    "weaponmod:musket-ironpart",
+    "weaponmod:blunder-ironpart",
+    "weaponmod:gun-stock",
+    "weaponmod:mortar-ironpart",
+    "weaponmod:dummy"
+]
+
+[rareCondition]
+rare_ordinal_min = 3

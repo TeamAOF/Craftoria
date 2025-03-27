@@ -1,0 +1,344 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "endgame"
+	group: ""
+	icon: {
+		id: "mekanism_extras:alloy_spectrum"
+	}
+	id: "2E72024B18414A17"
+	images: [
+		{
+			height: 6.0d
+			image: "relics:textures/abilities/phantom_boot/bridge.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 3.5d
+			image: "ftbquests:textures/gui/boss_rush_title.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: -0.1d
+			y: -4.2d
+		}
+		{
+			height: 2.0d
+			image: "ftbquests:textures/gui/cosmic_title.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 7.0d
+			y: -3.6d
+		}
+		{
+			height: 6.0d
+			image: "modern_industrialization:block/quantum_machine_hull_bottom"
+			rotation: 0.0d
+			width: 6.0d
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			height: 1.75d
+			image: "ftbquests:textures/gui/infinity.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 15.0d
+			y: -3.5d
+		}
+		{
+			height: 6.25d
+			image: "extendedae:block/assembler_matrix/frame_block_on"
+			order: -1
+			rotation: 0.0d
+			width: 6.25d
+			x: 15.0d
+			y: 0.0d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0578945AE9664476"
+				"10534DA1BD464834"
+				"2B41DC5E4D733C9C"
+				"3F146A658E5A01F3"
+			]
+			icon: {
+				components: {
+					"gateways:gateway": "craftoria:endless/boss"
+				}
+				id: "gateways:gate_pearl"
+			}
+			icon_scale: 1.5d
+			id: "7A73A6CC630BAA3F"
+			rewards: [{
+				id: "1C10621EAACBC1B0"
+				item: {
+					count: 1
+					id: "apotheosis:mythic_material"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "308B9266BA486383"
+				item: { components: { "gateways:gateway": "craftoria:endless/boss" }, count: 1, id: "gateways:gate_pearl" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon_scale: 1.25d
+			id: "0578945AE9664476"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "4A43020AC5C525CD"
+				item: { count: 1, id: "craftoria:ice_essence" }
+				type: "item"
+			}]
+			x: 1.25d
+			y: -1.25d
+		}
+		{
+			icon_scale: 1.25d
+			id: "10534DA1BD464834"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "0EB93EC3D4EA3B10"
+				item: { count: 1, id: "craftoria:fire_essence" }
+				type: "item"
+			}]
+			x: -1.25d
+			y: -1.25d
+		}
+		{
+			icon_scale: 1.25d
+			id: "3F146A658E5A01F3"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "524EA476E025E175"
+				item: { count: 1, id: "craftoria:nature_essence" }
+				type: "item"
+			}]
+			x: -1.25d
+			y: 1.25d
+		}
+		{
+			icon_scale: 1.25d
+			id: "2B41DC5E4D733C9C"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "3D0E96EF9F24002D"
+				item: { count: 1, id: "craftoria:dark_essence" }
+				type: "item"
+			}]
+			x: 1.25d
+			y: 1.25d
+		}
+		{
+			dependencies: [
+				"1ED5B7234F281C2E"
+				"4146E345FC6AAB2B"
+				"3B087D3FA0B7474B"
+				"4F891C5403AA6A5A"
+			]
+			icon_scale: 1.5d
+			id: "59FD22A238BC0378"
+			rewards: [
+				{
+					id: "3674351C1D7276EE"
+					item: {
+						count: 1
+						id: "mekanism_extras:cosmic_tier_installer"
+					}
+					type: "item"
+				}
+				{
+					id: "6D7206B8737F9837"
+					item: {
+						count: 1
+						id: "mekanism_extras:qio_drive_singularity"
+					}
+					type: "item"
+				}
+				{
+					id: "4EFCFE53FEBD80C4"
+					item: {
+						count: 1
+						id: "modern_industrialization:singularity"
+					}
+					type: "item"
+				}
+			]
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "330C416FCE98EA61"
+				item: { count: 1, id: "craftoria:cosmic_injector" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			icon_scale: 1.5d
+			id: "4146E345FC6AAB2B"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "1A64DE105275E314"
+				item: { count: 1, id: "mekanism_extras:alloy_spectrum" }
+				type: "item"
+			}]
+			x: 5.625d
+			y: -1.25d
+		}
+		{
+			icon_scale: 1.5d
+			id: "1ED5B7234F281C2E"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "2FFDBFE0D6E30704"
+				item: { count: 1, id: "mekanism_extras:alloy_spectrum" }
+				type: "item"
+			}]
+			x: 8.125d
+			y: 1.25d
+		}
+		{
+			icon_scale: 1.5d
+			id: "4F891C5403AA6A5A"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "0BFCCD6A6831FBD2"
+				item: { count: 1, id: "modern_industrialization:singularity" }
+				type: "item"
+			}]
+			x: 5.625d
+			y: 1.25d
+		}
+		{
+			icon_scale: 1.5d
+			id: "3B087D3FA0B7474B"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "190CD07784160C82"
+				item: { count: 1, id: "modern_industrialization:singularity" }
+				type: "item"
+			}]
+			x: 8.125d
+			y: -1.25d
+		}
+		{
+			icon_scale: 1.5d
+			id: "7B81E0A800E42F1F"
+			shape: "none"
+			size: 2.0d
+			tasks: [{
+				id: "06964D3F2CD8EF13"
+				item: { count: 1, id: "craftoria:infinity_cell_housing" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B81E0A800E42F1F"]
+			icon_scale: 1.5d
+			id: "2AEFF017387078A1"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "403E6DA53C713D43"
+				item: { count: 1, id: "craftoria:infinity_lava_cell" }
+				type: "item"
+			}]
+			x: 13.75d
+			y: -0.625d
+		}
+		{
+			dependencies: ["7B81E0A800E42F1F"]
+			icon_scale: 1.5d
+			id: "068F3773EAE24593"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "293E4F56C320E17E"
+				item: { count: 1, id: "extendedae:infinity_water_cell" }
+				type: "item"
+			}]
+			x: 16.25d
+			y: -0.625d
+		}
+		{
+			dependencies: ["7B81E0A800E42F1F"]
+			icon_scale: 1.5d
+			id: "4EFD3B64BB14D201"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "71B44269CDD4F2FE"
+				item: { count: 1, id: "extendedae:infinity_cobblestone_cell" }
+				type: "item"
+			}]
+			x: 13.75d
+			y: 0.625d
+		}
+		{
+			dependencies: ["7B81E0A800E42F1F"]
+			icon_scale: 1.5d
+			id: "15044F4AA1C9A215"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "68C6E2F5A3022793"
+				item: { count: 1, id: "craftoria:infinity_soul_cell" }
+				type: "item"
+			}]
+			x: 16.25d
+			y: 0.625d
+		}
+		{
+			dependencies: ["7B81E0A800E42F1F"]
+			icon_scale: 1.5d
+			id: "3A472323E103FCEC"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "7FF5AEF318607EF7"
+				item: { count: 1, id: "craftoria:infinity_source_cell" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["7B81E0A800E42F1F"]
+			icon_scale: 1.5d
+			id: "07BA4E207E32944F"
+			shape: "none"
+			size: 1.25d
+			tasks: [{
+				id: "6B8E22A9D4C92EDB"
+				item: { count: 1, id: "craftoria:infinity_xp_fluid_source_cell" }
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.25d
+		}
+	]
+}

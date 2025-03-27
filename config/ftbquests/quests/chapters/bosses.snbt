@@ -1,0 +1,629 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bosses"
+	group: "07A79347BA55DCA4"
+	icon: {
+		id: "cataclysm:monstrous_eye"
+	}
+	id: "216D532684E20496"
+	images: [
+		{
+			height: 5.0d
+			image: "cataclysm:textures/entity/flame_strike_sigil.png"
+			order: -1
+			rotation: 0.0d
+			width: 5.0d
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			height: 1.25d
+			image: "ftbquests:textures/gui/cataclysm.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			height: 13.0d
+			image: "cataclysm:textures/entity/leviathan/dimensional_rift/dimensional_rift_grow_3.png"
+			order: -2
+			rotation: 0.0d
+			width: 13.0d
+			x: -1.0d
+			y: -0.75d
+		}
+		{
+			height: 2.5d
+			image: "ftbquests:textures/gui/bomd.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -13.0d
+			y: -0.5d
+		}
+		{
+			color: 3527167
+			height: 10.0d
+			image: "cataclysm:textures/entity/soul_flame_strike_sigil.png"
+			order: -1
+			rotation: 0.0d
+			width: 10.0d
+			x: -13.0d
+			y: -0.5d
+		}
+		{
+			color: 2679039
+			height: 12.0d
+			image: "cataclysm:textures/particle/em_pulse.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: -13.0d
+			y: -0.5d
+		}
+		{
+			height: 2.5d
+			image: "ftbquests:textures/gui/twilight_forest.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -8.0d
+			y: 8.0d
+		}
+		{
+			color: 3538741
+			height: 15.0d
+			image: "cataclysm:textures/entity/leviathan/portal/abyss_portal_idle_3.png"
+			order: -1
+			rotation: 0.0d
+			width: 15.0d
+			x: -8.5d
+			y: 7.5d
+		}
+		{
+			color: 2490164
+			height: 10.0d
+			image: "cataclysm:textures/particle/shock_wave.png"
+			order: -1
+			rotation: 0.0d
+			width: 10.0d
+			x: -8.0d
+			y: 8.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "cataclysm:flame_eye"
+			}
+			icon_scale: 2.0d
+			id: "63EC4C04DD5C0CA6"
+			rewards: [{
+				id: "454C00D4D0BE4002"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:ignis"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:ignis"
+				id: "51CC091941106CFA"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.25d
+			y: -2.25d
+		}
+		{
+			icon: {
+				id: "cataclysm:desert_eye"
+			}
+			icon_scale: 2.0d
+			id: "56723AEFD93C17F1"
+			rewards: [{
+				id: "4FEB0192B145B72E"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:remnant"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:ancient_remnant"
+				id: "19BD8D922F4A8FE7"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.15d
+			y: 1.25d
+		}
+		{
+			icon: {
+				id: "cataclysm:abyss_eye"
+			}
+			icon_scale: 2.0d
+			id: "0012F8780D9172DE"
+			rewards: [{
+				id: "1009829D5030C019"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:leviathan"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:the_leviathan"
+				id: "2AC6D58DC583066B"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.75d
+			y: -4.5d
+		}
+		{
+			icon: {
+				id: "cataclysm:mech_eye"
+			}
+			icon_scale: 2.0d
+			id: "5DBFD3F917C4E49C"
+			rewards: [{
+				id: "11C9A15666DB5F20"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:harbinger"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:the_harbinger"
+				id: "7053663FC510667A"
+				type: "kill"
+				value: 1L
+			}]
+			x: -1.0d
+			y: 2.75d
+		}
+		{
+			icon: {
+				id: "cataclysm:void_eye"
+			}
+			icon_scale: 2.0d
+			id: "4CA99DC1D953E1FB"
+			rewards: [{
+				id: "3BB6101EB5E097FD"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:ender_guardian"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				id: "12A7BADCD382CB68"
+				type: "kill"
+				value: 1L
+			}]
+			x: 3.0d
+			y: -2.25d
+		}
+		{
+			icon: {
+				id: "cataclysm:monstrous_eye"
+			}
+			icon_scale: 2.0d
+			id: "72FF205D1C9A9178"
+			rewards: [{
+				id: "5170F3A77CE9DF35"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:monstrosity"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:netherite_monstrosity"
+				id: "3EFFB00A58530A74"
+				type: "kill"
+				value: 1L
+			}]
+			x: -4.65d
+			y: 0.85d
+		}
+		{
+			icon: {
+				id: "cataclysm:cursed_eye"
+			}
+			icon_scale: 2.0d
+			id: "4A559B47D164D1BB"
+			rewards: [{
+				id: "408DD0B04CB0265C"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:maledictus"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:maledictus"
+				id: "677791087AD42753"
+				type: "kill"
+				value: 1L
+			}]
+			x: 2.25d
+			y: -5.0d
+		}
+		{
+			icon: {
+				id: "bosses_of_mass_destruction:void_thorn"
+			}
+			icon_scale: 2.0d
+			id: "67785FD77E880DDB"
+			rewards: [{
+				id: "0C980246D50B21FF"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:void_blossom"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "bosses_of_mass_destruction:void_blossom"
+				id: "40D5F201E7163FEF"
+				type: "kill"
+				value: 1L
+			}]
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			icon: {
+				id: "bosses_of_mass_destruction:ancient_anima"
+			}
+			icon_scale: 2.0d
+			id: "19B550F54950E253"
+			rewards: [{
+				id: "631438B9F491FC6E"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:night_lich"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "bosses_of_mass_destruction:lich"
+				id: "3637ED395C95741B"
+				type: "kill"
+				value: 1L
+			}]
+			x: -16.5d
+			y: 2.25d
+		}
+		{
+			icon: {
+				id: "bosses_of_mass_destruction:obsidian_heart"
+			}
+			icon_scale: 2.0d
+			id: "413557ECF489FD2C"
+			rewards: [{
+				id: "64339EE56F512E7C"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:obsidilith"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.75d
+			tasks: [{
+				entity: "bosses_of_mass_destruction:obsidilith"
+				id: "2A77A54CC6F6173D"
+				type: "kill"
+				value: 1L
+			}]
+			x: -16.625d
+			y: -3.5d
+		}
+		{
+			icon: {
+				id: "bosses_of_mass_destruction:blazing_eye"
+			}
+			icon_scale: 2.0d
+			id: "4C357D8CF72B8F25"
+			rewards: [{
+				id: "64E71884ABC0520B"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:nether_gauntlet"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "bosses_of_mass_destruction:gauntlet"
+				id: "322747651F0F1DA7"
+				type: "kill"
+				value: 1L
+			}]
+			x: -9.75d
+			y: -3.75d
+		}
+		{
+			icon: {
+				id: "twilightforest:naga_trophy"
+			}
+			icon_scale: 2.0d
+			id: "7DA49A7F33A82D1C"
+			rewards: [{
+				id: "108E06ABDD851920"
+				item: {
+					count: 1
+					id: "twilightforest:trophy_pedestal"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.4d
+			tasks: [{
+				entity: "twilightforest:naga"
+				id: "261224C556B3CD95"
+				type: "kill"
+				value: 1L
+			}]
+			x: -10.0d
+			y: 11.5d
+		}
+		{
+			icon: {
+				id: "twilightforest:lich_trophy"
+			}
+			icon_scale: 2.0d
+			id: "63F26CC561D0B80D"
+			rewards: [{
+				id: "754A7B39065D5772"
+				item: {
+					count: 1
+					id: "twilightforest:trophy_pedestal"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.4d
+			tasks: [{
+				entity: "twilightforest:lich"
+				id: "5D33989EDAD1B723"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.75d
+			y: 11.5d
+		}
+		{
+			icon: {
+				id: "twilightforest:hydra_trophy"
+			}
+			icon_scale: 2.0d
+			id: "6531DF5573672E9E"
+			rewards: [{
+				id: "7232D696091F6EA6"
+				item: {
+					count: 1
+					id: "twilightforest:trophy_pedestal"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.4d
+			tasks: [{
+				entity: "twilightforest:hydra"
+				id: "3C33BD34E308ADF6"
+				type: "kill"
+				value: 1L
+			}]
+			x: -4.5d
+			y: 10.0d
+		}
+		{
+			icon: {
+				id: "twilightforest:ur_ghast_trophy"
+			}
+			icon_scale: 2.0d
+			id: "1D2EF18DBF02F6EB"
+			rewards: [{
+				id: "45C77AB273903A84"
+				item: {
+					count: 1
+					id: "twilightforest:trophy_pedestal"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.4d
+			tasks: [{
+				entity: "twilightforest:ur_ghast"
+				id: "44F102156C368A89"
+				type: "kill"
+				value: 1L
+			}]
+			x: -7.85d
+			y: 11.9d
+		}
+		{
+			icon: {
+				id: "twilightforest:snow_queen_trophy"
+			}
+			icon_scale: 2.0d
+			id: "5570CFF754032FDB"
+			rewards: [{
+				id: "75436D8E35BFFCAD"
+				item: {
+					count: 1
+					id: "twilightforest:trophy_pedestal"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.4d
+			tasks: [{
+				entity: "twilightforest:snow_queen"
+				id: "16DB6C336896D3E8"
+				type: "kill"
+				value: 1L
+			}]
+			x: -11.5d
+			y: 10.0d
+		}
+		{
+			icon: {
+				id: "twilightforest:minoshroom_trophy"
+			}
+			icon_scale: 2.0d
+			id: "7DB4E20D476B5786"
+			rewards: [{
+				id: "6C487C8E7F5F5B68"
+				item: {
+					count: 1
+					id: "twilightforest:trophy_pedestal"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.15d
+			tasks: [{
+				entity: "twilightforest:minoshroom"
+				id: "6427885F45EA8E31"
+				type: "kill"
+				value: 1L
+			}]
+			x: -11.499999999999998d
+			y: 5.749999999999999d
+		}
+		{
+			icon: {
+				id: "twilightforest:knight_phantom_trophy"
+			}
+			icon_scale: 2.0d
+			id: "692049F6F50CC017"
+			rewards: [{
+				id: "0811A81E634374EE"
+				item: {
+					count: 1
+					id: "twilightforest:trophy_pedestal"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.15d
+			tasks: [{
+				entity: "twilightforest:knight_phantom"
+				id: "1392F0BD16E728C4"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.8999999999999995d
+			y: 4.0249999999999995d
+		}
+		{
+			icon: {
+				id: "twilightforest:alpha_yeti_trophy"
+			}
+			icon_scale: 2.0d
+			id: "2209DC294580BF3D"
+			rewards: [{
+				id: "1562241E5BF45E85"
+				item: {
+					count: 1
+					id: "twilightforest:trophy_pedestal"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.15d
+			tasks: [{
+				entity: "twilightforest:alpha_yeti"
+				id: "68DE6BB782115D89"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			icon: {
+				id: "twilightforest:quest_ram_trophy"
+			}
+			icon_scale: 2.0d
+			id: "320C2F44DD138054"
+			rewards: [{
+				id: "62E834C933C860CC"
+				item: {
+					count: 1
+					id: "twilightforest:trophy_pedestal"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.15d
+			tasks: [{
+				id: "3E354ECFA430ED18"
+				item: { count: 1, id: "twilightforest:quest_ram_trophy" }
+				type: "item"
+			}]
+			x: -9.5d
+			y: 4.25d
+		}
+	]
+}

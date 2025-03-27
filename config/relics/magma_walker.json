@@ -1,0 +1,39 @@
+{
+  "ability": {
+    "abilities": {
+      "heat_resistance": {
+        "requiredPoints": 1,
+        "requiredLevel": 0,
+        "maxLevel": 0,
+        "stats": {}
+      },
+      "pace": {
+        "requiredPoints": 1,
+        "requiredLevel": 0,
+        "maxLevel": 10,
+        "stats": {
+          "time": {
+            "minInitialValue": 20.0,
+            "maxInitialValue": 50.0,
+            "minThresholdValue": 4.9E-324,
+            "maxThresholdValue": 1.7976931348623157E308,
+            "upgradeOperation": "MULTIPLY_BASE",
+            "upgradeModifier": 0.1
+          }
+        }
+      }
+    }
+  },
+  "leveling": {
+    "initialCost": 100,
+    "maxLevel": 10,
+    "step": 200
+  },
+  "loot": {
+    "entries": {
+      "minecraft:chests/ruined_portal": 0.025,
+      "[\\w]+:chests\\/[\\w_\\/]*(nether|hell|lava|magma|fire|burn|fortress)[\\w_\\/]*": 0.025,
+      "[\\w]+:chests\\/[\\w_\\/]*(bastion|piglin)[\\w_\\/]*": 0.025
+    }
+  }
+}

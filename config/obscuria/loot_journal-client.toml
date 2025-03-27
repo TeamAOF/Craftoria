@@ -1,0 +1,36 @@
+[Display]
+	#Allowed Values: CLASSIC, FLAT, TEXT
+	style = "CLASSIC"
+	useRarityColor = true
+	itemsColor = "FFFFFF"
+	groupedItemsColor = "FFFFFF"
+	experienceColor = "55FF55"
+	displayExperience = true
+	displayTotal = true
+
+[Positioning]
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	anchor = "BOTTOM_RIGHT"
+	# Default: 3
+	# Range: 0 ~ 256
+	anchorOffset = 3
+	# Default: 3
+	# Range: 0 ~ 16
+	notificationSeparation = 3
+	# Default: 6
+	# Range: 0 ~ 32
+	notificationLifetime = 6
+	# Default: 12
+	# Range: 1 ~ 64
+	maxVisibleNotifications = 12
+	# Default: 23
+	# Range: 0 ~ 256
+	maxQueuedNotifications = 23
+
+[Filtering]
+	#Allowed Values: ALL_WHITELISTED, ALL_BLACKLISTED
+	defaultBehavior = "ALL_WHITELISTED"
+	tabsBlacklist = []
+	itemsBlacklist = []
+	tabsWhitelist = []
+	itemsWhitelist = []

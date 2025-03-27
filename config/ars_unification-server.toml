@@ -1,0 +1,94 @@
+#List of Regular Expressions to deny recipe unification of
+exceptions = []
+
+		[crush.mekanism.crusher]
+			#Priority of Mekanism's Crusher recipes, -1 to disable
+			# Default: 100
+			# Range: > -1
+			priority = 100
+
+		[crush.enderio.sag_mill]
+			#Priority of Ender IO's SAG Mill recipes, -1 to disable
+			# Default: 110
+			# Range: > -1
+			priority = 110
+
+		[crush.integrateddynamics.squeezer]
+			#Priority of Integrated Dynamics's Squeezer recipes, -1 to disable
+			# Default: 120
+			# Range: > -1
+			priority = 120
+			#Use the Mechanical Squeezer's recipes instead
+			mechanical = true
+
+		[crush.actuallyadditions.crusher]
+			#Priority of Actually Additions's Crusher recipes, -1 to disable
+			# Default: 80
+			# Range: > -1
+			priority = 80
+
+		[crush.modern_industrialization.macerator]
+			#Priority of Modern Industrialization's Macerator recipes, -1 to disable
+			# Default: 90
+			# Range: > -1
+			priority = 90
+
+		[crush.immersiveengineering.crusher]
+			#Priority of Immersive Engineering's Crusher recipes, -1 to disable
+			# Default: 85
+			# Range: > -1
+			priority = 85
+
+		[crush.occultism.crusher]
+			#Priority of Occultism's Crusher recipes, -1 to disable
+			# Default: 115
+			# Range: > -1
+			priority = 115
+			#Tier to use for Occultism's Crusher
+			# Default: 1
+			# Range: 1 ~ 4
+			tier = 1
+
+		[crush.ae2.inscriber]
+			#Priority of AE2's Inscriber recipes, -1 to disable
+			# Default: 20
+			# Range: > -1
+			priority = 20
+
+		[cut.mekanism.sawmill]
+			#Priority of Mekanism's Sawmill recipes, -1 to disable
+			# Default: 100
+			# Range: > -1
+			priority = 100
+
+		[cut.modern_industrialization.cutting_machine]
+			#Priority of Modern Industrialization's Cutting Machine recipes, -1 to disable
+			# Default: -1
+			# Range: > -1
+			priority = -1
+
+		[cut.farmersdelight.cutting_board]
+			#Priority of Farmer's Delight's Cutting Board recipes, -1 to disable
+			# Default: 60
+			# Range: > -1
+			priority = 60
+
+		[cut.immersiveengineering.sawmill]
+			#Priority of Immersive Engineering's Sawmill recipes, -1 to disable
+			# Default: 80
+			# Range: > -1
+			priority = 80
+
+		[press.modern_industrialization.compressor]
+			#Priority of Modern Industrialization's Compressor recipes, -1 to disable
+			# Default: -1
+			# Range: > 100
+			priority = 100
+
+			[press.ae2.inscriber.circuit_printing]
+				#Priority of AE2's Inscriber circuit printing recipes, -1 to disable
+				# Default: 200
+				# Range: > -1
+				priority = 200
+				#List of allowed press item IDs
+				presses = ["ae2:calculation_processor_press", "ae2:engineering_processor_press", "ae2:logic_processor_press", "ae2:silicon_press", "megacells:accumulation_processor_press", "extendedae:concurrent_processor_press", "advanced_ae:quantum_processor_press", "appflux:energy_processor_press"]

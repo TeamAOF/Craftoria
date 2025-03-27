@@ -1,0 +1,21 @@
+[flux_cell]
+	#FE can be stored per byte.
+	# Default: 1048576
+	# Range: > 1
+	amount = 1048576
+
+[flux_accessor]
+	#The I/O limit of Flux Accessor. 0 means no limitation.
+	# Default: 0
+	# Range: 0 ~ 2147483647
+	io_limit = 0
+	#Allow Flux Accessor to charge ME network with stored FE.
+	enable = false
+
+[misc]
+	#Allow ME Import Bus to import energy like items/fluids.
+	enable = false
+
+[third_party_support]
+	#Enable MI-EU support.
+	enable_mi = false

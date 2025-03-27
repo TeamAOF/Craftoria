@@ -1,0 +1,32 @@
+#Base Chemical transfer rate (mB/tick)
+# Default: 1000
+# Range: > 1
+baseChemicalRate = 1000
+#Energy cost (FE) to run one operation for the Chemical Module Mk1
+# Default: 0
+# Range: > 0
+chemicalModuleEnergyCost = 0
+#Energy cost (FE) to run one operation for the Chemical Module Mk2
+# Default: 0
+# Range: > 0
+chemicalModule2EnergyCost = 0
+#Energy cost (FE) to run one operation for the Chemical Refill Module
+# Default: 0
+# Range: > 0
+chemicalRefillModuleEnergyCost = 0
+#Base range for Chemical Module Mk2 (no range upgrades)
+# Default: 12
+# Range: > 1
+chemicalModule2BaseRange = 12
+#Max range for Chemical Module Mk2
+# Default: 24
+# Range: > 1
+chemicalModule2MaxRange = 24
+#Chemical transfer rate increase per Chemical Transfer Upgrade
+# Default: 200
+# Range: > 1
+mBperChemicalUpgrade = 200
+#Whether to allow routers to transfer irradiated gases.
+#NOTE: Enabling this allows voiding nuclear waste and other gases with radiation without releasing the radiation!
+#However, tanks placed inside the router will still respect their radiation check no matter what this config value is
+radiationTransfer = false

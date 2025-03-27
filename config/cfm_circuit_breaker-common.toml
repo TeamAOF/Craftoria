@@ -1,0 +1,8 @@
+#The maximum amount of nodes in a network that can be powered by the circuit breaker.
+# Default: 128
+# Range: 1 ~ 1024
+maximumNodesInCircuitBreakerNetwork = 128
+#The radius (in blocks) within which the circuit breaker is disabled when a lightning bolt occurs.
+# Default: 30
+# Range: 15 ~ 1024
+lightningStrikeOutageRadius = 30

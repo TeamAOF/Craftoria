@@ -1,0 +1,34 @@
+# Enables wobbly items in advancement toasts.
+enableAdvancementToastItems: true
+# Enables curse formatting.
+enableCurseFormatting: true
+# Enables particles in the enchant(ing/ment) table.
+enableEnchantParticles: true
+# Enables floating item rotation.
+enableFloatingItemRotation: false
+# Enables the hotbar selector animation.
+enableHotbarSelectorAnimation: true
+# Enables hovering of matching items.
+enableMatchingItemHovering: true
+# Enables particles for rare items.
+enableRarityParticles: true
+# Enables screen shake.
+enableScreenShake: true
+# Enables vanilla slot highlighting
+enableVanillaSlotHighlighting: true
+# Affects the easing speed, that is applied to the rotation of the floating item.
+floatingItemEasingSpeed: 0.75
+# Affects the rotation amplitude of the floating item.
+floatingItemRotationAmplitude: 1.0
+# Affects the speed of the hotbar selector.
+hotbarSelectorSpeed: 3.0
+# Affects the size of the hovered item.
+hoveredItemScale: 1.125
+# Affects the hover amplitude of items, that match to the item that is carried in the cursor.
+matchingItemHoverAmplitude: 0.25
+# Moves the hotbar selector above the items. You might want to disable this, if you use resource packs that change the default selector texture.
+renderHotbarSelectorAboveItems: false
+# Screen shake amplitude.
+shakeAmplitude: 1.25
+# Screen shake timer in ticks.
+shakeTimer: 8

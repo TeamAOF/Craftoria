@@ -1,0 +1,65 @@
+abilitiesData:
+    abilities:
+        autophagy:
+            # Highest level to which the ability can be upgraded
+            maxLevel: 10
+            # Relic level at which the ability becomes unlocked
+            requiredLevel: 0
+            # Number of leveling points needed to increase the ability level
+            requiredPoints: 1
+            stats:
+                feed:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 2.0
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 1.0
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Modifier applied to the base value of the stat, depending on the [upgradeOperation] parameter.
+                    upgradeModifier: 0.15
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level. Supported operations include:
+                    # MULTIPLY_BASE: x + ((x * y) * z),
+                    # MULTIPLY_TOTAL: x * (y + 1)^z,
+                    # ADD: x + (y * z).
+                    # 
+                    # ...where x - Base stat value, y - Value of [upgradeModifier], z - Current relic level
+                    upgradeOperation: MULTIPLY_BASE
+        infusion:
+            # Highest level to which the ability can be upgraded
+            maxLevel: 10
+            # Relic level at which the ability becomes unlocked
+            requiredLevel: 5
+            # Number of leveling points needed to increase the ability level
+            requiredPoints: 1
+            stats:
+                duration:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 3.5
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 1.0
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Modifier applied to the base value of the stat, depending on the [upgradeOperation] parameter.
+                    upgradeModifier: 0.5
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level. Supported operations include:
+                    # MULTIPLY_BASE: x + ((x * y) * z),
+                    # MULTIPLY_TOTAL: x * (y + 1)^z,
+                    # ADD: x + (y * z).
+                    # 
+                    # ...where x - Base stat value, y - Value of [upgradeModifier], z - Current relic level
+                    upgradeOperation: MULTIPLY_BASE
+levelingData:
+    # Amount of experience required to level up to relic level 1
+    initialCost: 100
+    # Maximum level of the relic
+    maxLevel: 10
+    # Increment in experience required for each subsequent level of the relic
+    step: 100
+lootData:
+    # List of key-value pairs where the key is a textual identifier for the loot table (supporting regular expressions) and the value represents the probability of generating the relic within the specified bounds
+    entries:
+        '[\w]+:chests\/[\w_\/]*village[\w_\/]*': 0.025

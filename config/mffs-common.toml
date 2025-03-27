@@ -1,0 +1,51 @@
+[general]
+	#Turning this to false will make MFFS run without electricity or energy systems required. Great for vanilla!
+	enableElectricity = true
+	#Cache allows temporary data saving to decrease calculations required
+	useCache = true
+	#How many force field blocks can be generated per tick? Less reduces lag.
+	# Default: 1000000
+	# Range: > 0
+	maxFFGenPerTick = 1000000
+	#Allow server operators to bypass Force Field biometry
+	allowOpBiometryOverride = true
+	#Should the interdiction matrix interact with creative players?
+	interactCreative = true
+	#Max custom mode field scale
+	# Default: 200
+	# Range: > 0
+	maxCustomModeScale = 200
+	#Give players a copy of the MFFS guidebook when they first join a world
+	giveGuidebookOnFirstJoin = true
+
+[balance]
+	#Fortron catalyst production multiplier
+	# Default: 2.0
+	# Range: 0.0 ~ 10000.0
+	catalystMultiplier = 2.0
+	#The amount of ticks a single catalyst item lasts for
+	# Default: 200
+	# Range: 1 ~ 10000
+	catalystBurnTime = 200
+	#Energy to consume when the Interdiction Matrix kills a player
+	# Default: 0
+	# Range: > 0
+	interdictionMatrixKillEnergy = 0
+
+[coercion_deriver]
+	#FE to convert into 1 Fortron
+	# Default: 400
+	# Range: > 1
+	feCostPerFortron = 400
+	#FE to subtract when converting Fortron to FE
+	# Default: 1
+	# Range: > 0
+	fortronToFeLoss = 1
+	#Base limit of fortron produced per tick (20 per second). Scales with speed modules and catalyst.
+	# Default: 200
+	# Range: > 1
+	fortronPerTick = 200
+	#Production bonus per speed module. production = fortronPerTick + (fortronPerTick * speedModuleCount)... or x2 multiplicative
+	# Default: 200
+	# Range: > 1
+	fortronPerTickSpeedModule = 200

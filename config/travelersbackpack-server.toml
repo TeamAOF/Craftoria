@@ -1,0 +1,130 @@
+#Server config settings
+[server]
+
+	[server.backpackSettings]
+		enableTierUpgrades = true
+		#Enables equipping the backpack on right-click from the ground
+		rightClickEquip = true
+		#Enables unequipping the backpack on right-click on the ground with empty hand
+		rightClickUnequip = false
+		#Allows to use only equipped backpack
+		allowOnlyEquippedBackpack = false
+		#Backpack immune to any damage source (lava, fire), can't be destroyed, never disappears as floating item
+		invulnerableBackpack = true
+		#Tool slots accept any item
+		toolSlotsAcceptEverything = false
+		#List of items that can be put in tool slots (Use registry names, for example: "minecraft:apple", "minecraft:flint")
+		toolSlotsAcceptableItems = []
+		#List of items that can't be put in backpack inventory (Use registry names, for example: "minecraft:apple", "minecraft:flint")
+		blacklistedItems = []
+		#Allows putting shulker boxes and other items with inventory in backpack
+		allowShulkerBoxes = false
+		#Prevents backpack disappearing in void, spawns floating backpack above minimum Y when player dies in void
+		voidProtection = true
+		#Places backpack at place where player died
+		backpackDeathPlace = true
+		#Places backpack at place where player died, replacing all blocks that are breakable and do not have inventory (backpackDeathPlace must be true in order to work)
+		backpackForceDeathPlace = false
+		enableSleepingBagSpawnPoint = false
+		#If true, backpack can only be worn by placing it in accessories 'Back' slot
+		#WARNING - Remember to TAKE OFF BACKPACK BEFORE enabling or disabling this integration!! - if not you'll lose your backpack
+		accessoriesIntegration = false
+
+		#Leather Tier Backpack Settings
+		[server.backpackSettings.leatherTierBackpack]
+			#Number of inventory slots for the tier
+			#Range: 1 ~ 63
+			inventorySlotCount = 27
+			#Number of tool slots for the tier
+			#Range: 0 ~ 6
+			toolSlotCount = 2
+			#Tank capacity for the tier, 1000 equals 1 Bucket
+			#Range: 1 ~ 128000
+			tankCapacity = 3000
+
+		#Iron Tier Backpack Settings
+		[server.backpackSettings.ironTierBackpack]
+			#Number of inventory slots for the tier
+			#Range: 1 ~ 63
+			inventorySlotCount = 36
+			#Number of tool slots for the tier
+			#Range: 0 ~ 6
+			toolSlotCount = 3
+			#Tank capacity for the tier, 1000 equals 1 Bucket
+			#Range: 1 ~ 128000
+			tankCapacity = 4000
+
+		#Gold Tier Backpack Settings
+		[server.backpackSettings.goldTierBackpack]
+			#Number of inventory slots for the tier
+			#Range: 1 ~ 63
+			inventorySlotCount = 45
+			#Number of tool slots for the tier
+			#Range: 0 ~ 6
+			toolSlotCount = 4
+			#Tank capacity for the tier, 1000 equals 1 Bucket
+			#Range: 1 ~ 128000
+			tankCapacity = 5000
+
+		#Diamond Tier Backpack Settings
+		[server.backpackSettings.diamondTierBackpack]
+			#Number of inventory slots for the tier
+			#Range: 1 ~ 63
+			inventorySlotCount = 54
+			#Number of tool slots for the tier
+			#Range: 0 ~ 6
+			toolSlotCount = 5
+			#Tank capacity for the tier, 1000 equals 1 Bucket
+			#Range: 1 ~ 128000
+			tankCapacity = 6000
+
+		#Netherite Tier Backpack Settings
+		[server.backpackSettings.netheriteTierBackpack]
+			#Number of inventory slots for the tier
+			#Range: 1 ~ 63
+			inventorySlotCount = 63
+			#Number of tool slots for the tier
+			#Range: 0 ~ 6
+			toolSlotCount = 6
+			#Tank capacity for the tier, 1000 equals 1 Bucket
+			#Range: 1 ~ 128000
+			tankCapacity = 7000
+
+		#Crafting Upgrade Settings
+		[server.backpackSettings.craftingUpgrade]
+			enableUpgrade = true
+			#Whether crafting grid should save items
+			savesItems = true
+			#Newly crafted backpacks will have crafting upgrade included by default
+			includeByDefault = false
+
+	[server.world]
+		#Enables chance to spawn Zombie, Skeleton, Wither Skeleton, Piglin or Enderman with random backpack equipped
+		spawnEntitiesWithBackpack = true
+		#List of overworld entity types that can spawn with equipped backpack. DO NOT ADD anything to this list, because the game will crash, remove entries if mob should not spawn with backpack
+		possibleOverworldEntityTypes = ["minecraft:zombie", "minecraft:skeleton", "minecraft:enderman"]
+		#List of nether entity types that can spawn with equipped backpack. DO NOT ADD anything to this list, because the game will crash, remove entries if mob should not spawn with backpack
+		possibleNetherEntityTypes = ["minecraft:wither_skeleton", "minecraft:piglin"]
+		#List of backpacks that can spawn on overworld mobs
+		overworldBackpacks = ["travelersbackpack:standard", "travelersbackpack:diamond", "travelersbackpack:gold", "travelersbackpack:emerald", "travelersbackpack:iron", "travelersbackpack:lapis", "travelersbackpack:redstone", "travelersbackpack:coal", "travelersbackpack:bookshelf", "travelersbackpack:sandstone", "travelersbackpack:snow", "travelersbackpack:sponge", "travelersbackpack:cake", "travelersbackpack:cactus", "travelersbackpack:hay", "travelersbackpack:melon", "travelersbackpack:pumpkin", "travelersbackpack:creeper", "travelersbackpack:enderman", "travelersbackpack:skeleton", "travelersbackpack:spider", "travelersbackpack:bee", "travelersbackpack:wolf", "travelersbackpack:fox", "travelersbackpack:ocelot", "travelersbackpack:horse", "travelersbackpack:cow", "travelersbackpack:pig", "travelersbackpack:sheep", "travelersbackpack:chicken", "travelersbackpack:squid"]
+		#List of backpacks that can spawn on nether mobs
+		netherBackpacks = ["travelersbackpack:quartz", "travelersbackpack:nether", "travelersbackpack:blaze", "travelersbackpack:ghast", "travelersbackpack:magma_cube", "travelersbackpack:wither"]
+		#Defines spawn chance of entity with a backpack
+		#Range: 0.0 ~ 1.0
+		chance = 0.005
+
+	[server.backpackAbilities]
+		enableBackpackAbilities = true
+		#Newly crafted backpacks will have ability enabled by default
+		forceAbilityEnabled = true
+		#List of backpacks that are allowed to have an ability. DO NOT ADD anything to this list, because the game will crash, remove entries if backpack should not have ability
+		allowedAbilities = ["travelersbackpack:netherite", "travelersbackpack:diamond", "travelersbackpack:gold", "travelersbackpack:emerald", "travelersbackpack:iron", "travelersbackpack:lapis", "travelersbackpack:redstone", "travelersbackpack:bookshelf", "travelersbackpack:sponge", "travelersbackpack:cake", "travelersbackpack:cactus", "travelersbackpack:melon", "travelersbackpack:pumpkin", "travelersbackpack:creeper", "travelersbackpack:dragon", "travelersbackpack:enderman", "travelersbackpack:blaze", "travelersbackpack:ghast", "travelersbackpack:magma_cube", "travelersbackpack:spider", "travelersbackpack:wither", "travelersbackpack:bat", "travelersbackpack:bee", "travelersbackpack:ocelot", "travelersbackpack:cow", "travelersbackpack:chicken", "travelersbackpack:squid"]
+
+	[server.slownessDebuff]
+		#Player gets slowness effect, if carries too many backpacks in inventory
+		tooManyBackpacksSlowness = false
+		#Maximum number of backpacks, which can be carried in inventory, without slowness effect
+		#Range: 1 ~ 37
+		maxNumberOfBackpacks = 3
+		#Range: 0.1 ~ 5.0
+		slownessPerExcessedBackpack = 1.0

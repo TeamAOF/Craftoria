@@ -1,0 +1,70 @@
+#Mana
+[mana]
+	#Base mana regen in seconds
+	# Default: 5
+	# Range: > 0
+	baseRegen = 5
+	#Base max mana
+	# Default: 100
+	# Range: > 0
+	baseMax = 100
+	#How often max and regen will be calculated, in ticks. NOTE: Having the base mana regen AT LEAST this value is recommended.
+	# Default: 5
+	# Range: 1 ~ 20
+	updateInterval = 5
+	#Max mana bonus per glyph
+	# Default: 15
+	# Range: > 0
+	glyphmax = 15
+	#Max mana bonus for tier of book
+	# Default: 50
+	# Range: > 0
+	tierMax = 50
+	#Mana regen bonus for tier of book
+	# Default: 1
+	# Range: > 0
+	tierRegen = 1
+	#Mana Boost value per level
+	# Default: 25
+	# Range: > 0
+	manaBoost = 25
+	#(enchantment) Mana regen per second per level
+	# Default: 2
+	# Range: > 0
+	manaRegenEnchantment = 2
+	#Regen bonus per glyph
+	# Default: 0.33
+	# Range: 0.0 ~ 2.147483647E9
+	glyphRegen = 0.33
+
+[spell_casting]
+	#Enforce augment cap on casting? Turn this off if you are a pack maker and want to create more powerful items than players.
+	enforceCapOnCast = true
+	#Enforce glyph per spell limit on casting? Turn this off if you are a pack maker and want to create more powerful items than players.
+	enforceGlyphLimitOnCast = true
+
+[item]
+	#Cost per glyph in a codex
+	# Default: 10
+	# Range: > 0
+	codexCost = 10
+
+[warp_portals]
+	#Enable warp portals?
+	enableWarpPortals = true
+
+#Beta Features
+[beta]
+	#Allow crafting infinite spells. This is a beta feature and may cause crashes.
+	infiniteSpells = false
+	#Limits the crafting infinite spells beta, set a cap to the number of additional glyphs. This is a beta feature and may cause crashes.
+	# Default: 30
+	# Range: 10 ~ 1000
+	infiniteSpellLimit = 30
+
+#Blocks
+[blocks]
+	#Maximum storage lectern linking range
+	# Default: 30
+	# Range: > 1
+	lecternLinkRange = 30
