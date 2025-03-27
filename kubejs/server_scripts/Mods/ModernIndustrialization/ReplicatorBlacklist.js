@@ -115,6 +115,8 @@ ServerEvents.tags('item', (e) => {
     'modern_industrialization:singularity',
     'modern_industrialization:nuke',
 
+    /^extended_industrialization:nano_quantum_.*/,
+
     'gag:time_sand_pouch',
 
     'hyperbox:hyperbox',
