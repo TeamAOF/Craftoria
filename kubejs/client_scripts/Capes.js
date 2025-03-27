@@ -32,6 +32,22 @@ CapeJS.addCapes((event) => {
       '385f65ff-d4f0-4a0a-9a83-b91edabc32d9', // Yoosk
       '0244b687-4f34-4c37-95e3-b87b3681655e', // Molly
       'e9d889b1-5b90-412c-99c1-2af62f21369e', // BuilderBot
+    ],
+
+    completionist: [
+      '97184eb6-cc38-4c23-8468-a618634d6ffa', // Natte
+      '91088abe-0167-486b-a79a-7be62a6a7051', // Pink
+      '9a35d25b-451b-4a2e-9dce-377adf7e9760', // Tzwem
+      'd6330821-e3a3-4a84-a50b-fa886506b162', // Dino
+      'a835fbfd-3c92-4c6b-9347-4081ded4551a', // Rizul
+      '9118ec52-eb01-4eab-a083-c80beccf187b', // Super
+      '9300503d-de35-4d76-9baa-6cb6e5c20c8c', // North
+      '2dfb3780-434b-4e78-90f8-c08788700960', // Sundrop
+      'cd7cc8d4-47b9-42f3-a0db-934bad82bf1f', // FullestMirror
+      '26256eca-dad6-4f27-98e6-6444a02ebd9e', // Owlwix
+      'bde73f67-49b5-41e2-9c98-fee6a5f1c558', // TrollStomper
+      '10858dc2-939f-408c-8ad6-4d101159a20a', // Saidmakkass
+
     ]
   };
   for (const [cape, players] in capes) {
