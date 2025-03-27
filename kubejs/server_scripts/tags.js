@@ -4,7 +4,6 @@ ServerEvents.tags('item', (e) => {
   e.add('c:storage_blocks/fluix', 'ae2:fluix_block');
   e.add('c:storage_blocks/charged_redstone', 'appflux:charged_redstone_block');
 
-  e.add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet']);
   e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
@@ -41,7 +40,12 @@ ServerEvents.tags('item', (e) => {
   ]);
 
   // Curios
-  e.add('curios:curio', 'integratedterminals:terminal_storage_portable');
+  e.add('curios:curio', [
+    'simplemagnets:basicmagnet', 
+    'simplemagnets:advancedmagnet',
+    'integratedterminals:terminal_storage_portable',
+    'occultism:storage_remote',
+  ]);
 
   // Chisel Reborn
   Ingredient.of('@chisel').itemIds.forEach((id) => {
