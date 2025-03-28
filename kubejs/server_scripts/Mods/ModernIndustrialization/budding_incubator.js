@@ -3,7 +3,7 @@ MIRecipeEvents.customCondition(event => {
         (context, recipe) => {
             let be = context.getBlockEntity();
             let direction = be.orientation.facingDirection;
-            let pos = be.getBlockPos()['relative(net.minecraft.core.Direction,int)'](direction.getOpposite(), 2).above(2);
+            let pos = be.getBlockPos()['relative(net.minecraft.core.Direction,int)'](direction.getOpposite(), 1).above(1);
             let level = context.getLevel();
             let state = level.getBlockState(pos);
             return state.getId() == "ae2:flawless_budding_quartz"
@@ -25,7 +25,7 @@ MIRecipeEvents.customCondition(event => {
         (context, recipe) => {
             let be = context.getBlockEntity();
             let direction = be.orientation.facingDirection;
-            let pos = be.getBlockPos()['relative(net.minecraft.core.Direction,int)'](direction.getOpposite(), 2).above(2);
+            let pos = be.getBlockPos()['relative(net.minecraft.core.Direction,int)'](direction.getOpposite(), 1).above(1);
             let level = context.getLevel();
             let state = level.getBlockState(pos);
             return state.getId() == "minecraft:budding_amethyst"
@@ -47,7 +47,7 @@ MIRecipeEvents.customCondition(event => {
         (context, recipe) => {
             let be = context.getBlockEntity();
             let direction = be.orientation.facingDirection;
-            let pos = be.getBlockPos()['relative(net.minecraft.core.Direction,int)'](direction.getOpposite(), 2).above(2);
+            let pos = be.getBlockPos()['relative(net.minecraft.core.Direction,int)'](direction.getOpposite(), 1).above(1);
             let level = context.getLevel();
             let state = level.getBlockState(pos);
             return state.getId() == "extendedae:entro_budding_fully"
@@ -69,7 +69,7 @@ MIRecipeEvents.customCondition(event => {
         (context, recipe) => {
             let be = context.getBlockEntity();
             let direction = be.orientation.facingDirection;
-            let pos = be.getBlockPos()['relative(net.minecraft.core.Direction,int)'](direction.getOpposite(), 1);
+            let pos = be.getBlockPos()['relative(net.minecraft.core.Direction,int)'](direction.getOpposite(), 1).above(1);
             let level = context.getLevel();
             let state = level.getBlockState(pos);
             return state.getId() == "eternal_starlight:budding_thioquartz"
