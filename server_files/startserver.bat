@@ -21,10 +21,18 @@ java -version 2>&1 || GOTO JAVAERROR
 ECHO.
 IF %ERRORLEVEL% EQU 0 (
 	ECHO INFO: Found 64-bit Java
-	GOTO CHECK
+	GOTO CHECK_JAVA_VERSION
 ) ELSE (
     GOTO JAVAERROR
 )
+
+
+:CHECK_JAVA_VERSION
+REM Check actual Java version.
+FOR /f tokens^=2-5^ delims^=.-_^" %%j in ('java -fullversion 2^>^&1') do set "jver=%%j%%k%%l%%m"
+IF %jver% LSS 2100 ( GOTO JAVA_VERSION_ERROR )
+IF %jver% GEQ 2200 ( GOTO JAVA_VERSION_ERROR )
+GOTO CHECK
 
 
 :MAIN
@@ -45,7 +53,11 @@ IF NOT EXIST "%cd%\serverstarter-2.4.1.jar" (
 :JAVAERROR
 COLOR CF
 ECHO ERROR: Could not find 64-bit Java installed or in PATH
-PAUSE
+GOTO EOF
+
+:JAVA_VERSION_ERROR
+COLOR CF
+ECHO ERROR: Must use Java 21
 
 
 :EOF
