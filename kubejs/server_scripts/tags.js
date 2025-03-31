@@ -46,6 +46,9 @@ ServerEvents.tags('item', (e) => {
     'integratedterminals:terminal_storage_portable',
     'occultism:storage_remote',
   ]);
+  e.add('curios:curio', 'integratedterminals:terminal_storage_portable');
+  e.add('curios:body', 'mekanism:jetpack');
+  e.add('curios:body', 'mekanism:jetpack_armored');
 
   // Chisel Reborn
   Ingredient.of('@chisel').itemIds.forEach((id) => {

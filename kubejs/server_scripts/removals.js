@@ -18,6 +18,8 @@ const globalItemRemovals = [
   'utilitarian:tiny_charcoal',
   'create:copycat_step',
   'create:copycat_panel',
+  'mffs:anti_personnel_module',
+  'mffs:confiscation_module'
 ];
 
 ServerEvents.recipes((event) => {
