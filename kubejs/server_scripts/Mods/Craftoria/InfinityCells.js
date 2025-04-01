@@ -1,4 +1,9 @@
 ServerEvents.recipes((e) => {
+  e.shapeless('occultism:trinity_gem[entity_data={id:"occultism:possessed_warden"}]', [
+    'occultism:trinity_gem',
+    'occultism:spawn_egg/possessed_warden'
+  ]);
+  
   e.recipes.occultism
     .ritual(
       'craftoria:infinity_soul_cell',

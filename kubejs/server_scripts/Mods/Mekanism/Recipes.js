@@ -164,6 +164,20 @@ ServerEvents.recipes((e) => {
     D: 'mekanism_extras:cosmic_control_circuit',
   }).id('mekaweapons:bow_riser');
 
+  e.shaped('mekanism:jetpack', ['ADA','BCB',' B '], {
+    A: 'modern_industrialization:steel_ingot',
+    B: 'modern_industrialization:tin_double_ingot',
+    C: 'mekanism:ultimate_chemical_tank',
+    D: 'mekanism:ultimate_control_circuit',
+  }).id('mekanism:jetpack');
+
+  e.shaped('mekanism:jetpack_armored', ['A A','BCB',' D '], {
+    A: 'mekanism:dust_diamond',
+    B: 'modern_industrialization:bronze_double_ingot',
+    C: 'modern_industrialization:steel_block',
+    D: 'mekanism:jetpack',
+  }).id('mekanism:jetpack_armored');
+
   e.replaceInput({ id: 'mekanism:mekasuit_helmet' }, 'mekanism:ultimate_control_circuit', 'mekanism_extras:supreme_control_circuit');
   e.replaceInput({ id: 'mekanism:mekasuit_bodyarmor' }, 'mekanism:ultimate_control_circuit', 'mekanism_extras:supreme_control_circuit');
   e.replaceInput({ id: 'mekanism:mekasuit_pants' }, 'mekanism:ultimate_control_circuit', 'mekanism_extras:supreme_control_circuit');
