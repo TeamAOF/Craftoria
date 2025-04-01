@@ -8,4 +8,6 @@ navigation:
 
 # A mesa de encantamentos
 
+Esta seção aborda as mudanças na mesa de encantamentos.
+
 <SubPages />

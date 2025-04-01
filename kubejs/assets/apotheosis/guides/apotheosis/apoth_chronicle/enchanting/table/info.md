@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "The Info Menu"
-  icon: "apotheosis:textures/gui/book/question_mark.png"
+  title: 'The Info Menu'
+  icon: 'apotheosis:textures/gui/book/question_mark.png'
   parent: apotheosis:enchanting/table.md
 ---
 
@@ -57,5 +57,4 @@ Every enchantment has a rarity, and each rarity has a weight.
 
 The chance of selecting an enchantment is its individual weight divided by the total pool (of the weights of all available enchantments).
 
-<Color hex="#A800A8">Arcana</Color> can change the rarity weights.
-
+<Color id="dark_purple">Arcana</Color> can change the rarity weights.

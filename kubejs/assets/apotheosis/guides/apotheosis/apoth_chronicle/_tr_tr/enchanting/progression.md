@@ -8,4 +8,6 @@ navigation:
 
 # Seviye İlerlemesi
 
+Bu bölüm, Büyü Masası'nı nasıl yükselteceğine dair genel bir bakış sunar.
+
 <SubPages />

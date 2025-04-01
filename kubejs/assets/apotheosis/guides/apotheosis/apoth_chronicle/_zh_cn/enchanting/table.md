@@ -8,4 +8,6 @@ navigation:
 
 # 附魔台
 
+本章节介绍了对附魔台的改动。
+
 <SubPages />

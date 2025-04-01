@@ -7,4 +7,6 @@ navigation:
 
 # Itens utilitários
 
+Esta seção detalha todas as ferramentas usadas para tornar o encantamento mais fácil.
+
 <SubPages />

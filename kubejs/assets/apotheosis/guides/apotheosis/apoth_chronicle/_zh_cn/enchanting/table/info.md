@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "信息菜单"
-  icon: "apotheosis:textures/gui/book/question_mark.png"
+  title: '信息菜单'
+  icon: 'apotheosis:textures/gui/book/question_mark.png'
   parent: apotheosis:enchanting/table.md
 ---
 
@@ -57,5 +57,4 @@ navigation:
 
 选择一个魔咒的几率是其单独的权重除以总池（所有可用魔咒的权重）。
 
-<Color hex="#A800A8">阿卡那</Color>可以改变稀有度权重。
-
+<Color id="dark_purple">阿卡那</Color>可以改变稀有度权重。

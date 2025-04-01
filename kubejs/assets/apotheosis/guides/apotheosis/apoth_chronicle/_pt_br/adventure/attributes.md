@@ -7,4 +7,8 @@ navigation:
 
 # Atributos
 
+Além dos atributos originais, o Apotheosis adiciona uma variedade de novos atributos.
+
+Esta seção detalha todos eles.
+
 <SubPages />

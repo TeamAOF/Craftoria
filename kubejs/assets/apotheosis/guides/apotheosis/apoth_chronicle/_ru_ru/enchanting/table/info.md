@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Информационное меню"
-  icon: "apotheosis:textures/gui/book/question_mark.png"
+  title: 'Информационное меню'
+  icon: 'apotheosis:textures/gui/book/question_mark.png'
   parent: apotheosis:enchanting/table.md
 ---
 
@@ -57,5 +57,4 @@ navigation:
 
 Шанс выбора заклинания равен его индивидуальному весу, деленному на общий пул (из весов всех доступных заклинаний).
 
-<Color hex="#A800A8">Таинство</Color> может изменять веса редкости.
-
+<Color id="dark_purple">Таинство</Color> может изменять веса редкости.

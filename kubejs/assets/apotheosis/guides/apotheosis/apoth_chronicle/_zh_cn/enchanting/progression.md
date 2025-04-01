@@ -8,4 +8,6 @@ navigation:
 
 # 等级进展
 
+本章节概述了如何升级你的附魔台。
+
 <SubPages />

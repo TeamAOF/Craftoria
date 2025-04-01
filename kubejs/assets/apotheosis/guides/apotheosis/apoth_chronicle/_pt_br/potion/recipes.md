@@ -7,4 +7,6 @@ navigation:
 
 # Receitas de poções
 
+Esta seção detalha todas as novas receitas de poções do vanilla que foram adicionadas.
+
 <SubPages />

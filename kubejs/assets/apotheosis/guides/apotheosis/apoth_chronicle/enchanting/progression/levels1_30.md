@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Levels 1 - 30"
-  icon: "minecraft:bookshelf"
+  title: 'Levels 1 - 30'
+  icon: 'minecraft:bookshelf'
   parent: apotheosis:enchanting/progression.md
 ---
 
@@ -19,5 +19,4 @@ Reaching Level 30 is done in the usual way, with fifteen bookshelves.
 
 At this stage, there are a few basic options for increasing other stats.
 
-you can use Candles to increase <Color hex="#A800A8">Arcana</Color>, Skulls to increase <Color hex="#FC5454">Quanta</Color>, and Amethyst Clusters to increase <Color hex="#CCCC33">Rectification</Color>.
-
+You can use Candles to increase <Color id="dark_purple">Arcana</Color>, and Skulls to increase <Color id="red">Quanta</Color>.
