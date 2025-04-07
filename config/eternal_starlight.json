@@ -2,6 +2,7 @@
   "info": "This is the config file for Eternal Starlight",
   "enablePortalShader": true,
   "enableScreenShake": true,
+  "meteorDropRate": 5.0E-4,
   "crystalbornCatalystEnergyPerShard": 50,
   "laserBeamBreakBlocks": true,
   "mobsConfig": {
@@ -50,7 +51,8 @@
       "armor": 0.0,
       "attackDamage": 5.0,
       "followRange": 48.0,
-      "canSpawn": true
+      "canSpawn": true,
+      "spawnChance": 0.0
     },
     "tinyCreteor": {
       "maxHealth": 5.0,
@@ -177,6 +179,13 @@
       "attackDamageScale": 1.0,
       "followRange": 100.0,
       "canSpawn": true
+    }
+  },
+  "itemsConfig": {
+    "chainOfSouls": {
+      "maxRange": 64.0,
+      "soulAbsorbDamage": 2.0,
+      "healPercentage": 0.5
     }
   }
 }

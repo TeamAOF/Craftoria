@@ -52,6 +52,12 @@
 	#If enabled, will add resourcepacks to modlist.json
 	#After filename where will be ' (resourcepack)' suffix.
 	add_resourcepacks = false
+	#If enabled, will add modloader jar name to modlist, to easily track if user changed version of modloader.
+	add_modloader_jar_name = true
+	#If enabled, will add modlist.txt, with names of all mods to logs.
+	#false - only if general.help_link equals CHANGE_ME, will add modlist.txt to logs.
+	#true - anyways will add modlist.txt to logs.
+	force_add_full_modlist_as_log = false
 
 #Settings of '/crash_assistant crash' command feature.
 [crash_command]

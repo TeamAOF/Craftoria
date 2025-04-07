@@ -139,7 +139,9 @@ ServerEvents.tags('item', (e) => {
     '#supplementaries:trapped_presents',
     'supplementaries:jar',
 
-    'occultism:storage_controller_stabilized'
+    'occultism:storage_controller_stabilized',
+
+    /^.*creative./
   ];
 
   const replicator_2_exclusions = [

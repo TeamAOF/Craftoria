@@ -8,6 +8,11 @@ ClientEvents.lang('en_us', (e) => {
     'block.modern_industrialization.replicator_1': 'Replicator Mk I',
     'block.modern_industrialization.replicator': 'Replicator Mk II',
 
+    'machine_casing.modern_industrialization.sky_stone_brick_casing': 'Sky Stone Brick Casing',
+    'block.modern_industrialization.budding_incubator': 'Budding Incubator',
+    'rei_categories.modern_industrialization.budding_incubator': 'Budding Incubator',
+    'block.modern_industrialization.large_plasma_turbine': 'Large Plasma Turbine',
+
     // Renaming IF gears
     'item.industrialforegoing.iron_gear': 'Crude Iron Gear',
     'item.industrialforegoing.gold_gear': 'Crude Gold Gear',

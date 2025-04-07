@@ -49,6 +49,7 @@ CapeJS.addCapes((event) => {
       '10858dc2-939f-408c-8ad6-4d101159a20a', // Saidmakkass
       '275b2995-09b7-44a6-a645-b00ec89125da', // Snikey11
       '457625d6-9114-41ed-8d38-f5ddaa2aba66', // Blue98
+      'a6d59f07-2d8c-4f7e-9f1c-3714bd68f863', // VirlesFelyard
 
     ]
   };

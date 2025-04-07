@@ -30,13 +30,32 @@
 		enforce_minimum_width = false
 		# If enabled, some unnecessary text and spacing will be removed from equipment tooltips.
 		compact_tooltips = true
-		# Which items should have a 3D model rendered in the tooltip.  If set to "equipment", the model will only be rendered for items with durability.
+		# Which items should have a 3D model rendered in the tooltip.  If set to "equipment", the model will only be rendered for armor, tools, and items with durability.
 		#Allowed Values: NONE, EQUIPMENT, ALL
 		render_item_model = "EQUIPMENT"
 		# The speed at which 3D models in tooltips will rotate.  Lower values rotate faster, set to 0 to disable rotation.
 		# Default: 12.0
 		# Range: 0.0 ~ 50.0
 		model_rotation_speed = 12.0
+		# If enabled, the name separator will be shown for all tooltips.  If disabled, it will only be shown for item tooltips.
+		show_separator_for_empty = true
+		# If enabled, fixes a vanilla bug where displayed tooltip damage values are incorrect for weapons with the Sharpness enchantment.
+		fix_mc271840 = true
+		# (EXPERIMENTAL) The maximum width of tooltips.  Set to 0 for no limit.
+		# Default: 0
+		# Range: > 0
+		max_tooltip_width = 0
+		# (EXPERIMENTAL) The maximum height of tooltips.  Set to 0 for no limit.
+		# Default: 0
+		# Range: > 0
+		max_tooltip_height = 0
+		# (EXPERIMENTAL) If enabled, tooltips that are larger than the maximum height specified (or the screen if not specified) will be scrollable with the mouse wheel.
+		#Allowed Values: ALWAYS, WITH_KEYBIND, NEVER
+		enable_tooltip_scrolling = "NEVER"
+		# (EXPERIMENTAL) The speed at which tooltips will scroll when scrolling is enabled.
+		# Default: 10.0
+		# Range: 1.0 ~ 50.0
+		scroll_speed = 10.0
 
 	# Entry types:
 	#    Match all - Specifying just an asterisk (*) will match all items.  Examples: "*"

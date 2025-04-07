@@ -102,6 +102,8 @@ ServerEvents.tags('item', (e) => {
   e.add('minecraft:enchantable/durability', ['#craftoria:tridents']).remove('industrialforegoing:infinity_trident');
 
   e.remove('plonk:unplaceable', ['plonk:placed_items']);
+
+  e.add('industrialization_overdrive:multi_processing_array_blacklist', ['modern_industrialization:budding_incubator']);
 });
 
 ServerEvents.tags('block', (e) => {

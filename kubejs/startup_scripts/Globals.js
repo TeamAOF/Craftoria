@@ -28,4 +28,16 @@ global.customMIMachines = [
     sound: 'mi_sound_addon:replicator',
     soundDuration: 20,
   },
+  {
+    id: 'large_plasma_turbine',
+    casing: 'plasma_handling_iridium_machine_casing',
+    default_overlays: {
+      front: 'modern_industrialization:block/machines/steam_turbine/overlay_front_iridium',
+      front_active: 'modern_industrialization:block/machines/steam_turbine/overlay_front_active_iridium',
+    },
+  },
+  {
+    id: 'budding_incubator',
+    casing: 'sky_stone_brick_casing',
+  },
 ];

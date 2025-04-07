@@ -97,10 +97,6 @@ maxSolarNeutronActivatorRate = 64
 	blacklistFluxNetworks = false
 	#Disables Grand Power's higher throughput Forge Energy (FE/RF) power integration. Note: Blacklisting Forge Energy also disables this.
 	blacklistGrandPower = false
-	#How much energy is produced per mB of Hydrogen, also affects Electrolytic Separator usage, Ethene burn rate and Gas-Burning Generator energy capacity.
-	# Default: 200
-	# Range: 1 ~ 92233720368547
-	hydrogenEnergyDensity = 200
 	#Maximum Joules per mB of Steam. Also affects Thermoelectric Boiler.
 	# Default: 10
 	# Range: 0 ~ 9223372036854775807

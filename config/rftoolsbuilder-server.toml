@@ -1,0 +1,286 @@
+#Settings for the builder
+[builder]
+	#Maximum RF storage that the builder can hold
+	# Default: 1000000
+	# Range: > 0
+	builderMaxRF = 1000000
+	#RF per tick that the builder can receive
+	# Default: 20000
+	# Range: > 0
+	builderRFPerTick = 20000
+	#RF per block operation for the builder when used to build
+	# Default: 500
+	# Range: > 0
+	builderRfPerOperation = 500
+	#Base RF per block operation for the builder when used as a pump
+	# Default: 300
+	# Range: > 0
+	builderRfPerLiquid = 300
+	#Base RF per block operation for the builder when used as a quarry or voider (actual cost depends on hardness of block)
+	# Default: 300
+	# Range: > 0
+	builderRfPerQuarry = 300
+	#RF per block that is skipped (used when a filter is added to the builder)
+	# Default: 50
+	# Range: > 0
+	builderRfPerSkipped = 50
+	#RF per entity move operation for the builder
+	# Default: 5000
+	# Range: > 0
+	builderRfPerEntity = 5000
+	#RF per player move operation for the builder
+	# Default: 40000
+	# Range: > 0
+	builderRfPerPlayer = 40000
+	#Can Tile Entities be moved? 'forbidden' means never, 'whitelist' means only whitelisted, 'blacklist' means all except blacklisted, 'allowed' means all
+	#Allowed Values: MOVE_FORBIDDEN, MOVE_WHITELIST, MOVE_BLACKLIST, MOVE_ALLOWED
+	tileEntityMode = "MOVE_BLACKLIST"
+	#This is a list of blocks that are either blacklisted or whitelisted from the Builder when it tries to move tile entities (format <id>=<cost>)
+	blackWhiteListedBlocks = []
+	#Whitelist or blacklist block NBT data from being transferred over, set `true` to whitelist block, set `false` to blacklist block, every block not included in the list is blacklisted by default (format <id>=<boolean>)
+	blackWhiteListedNBTBlocks = ["minecraft:chest=false"]
+	#Maximum dimension for the space chamber
+	# Default: 128
+	# Range: 0 ~ 100000
+	maxSpaceChamberDimension = 128
+	#How many ticks we wait before collecting again (with the builder 'collect items' mode)
+	# Default: 10
+	# Range: > 0
+	collectTimer = 10
+	#The cost of collecting an item (builder 'collect items' mode))
+	# Default: 20
+	# Range: > 0
+	collectRFPerItem = 20
+	#How much more expensive a move accross dimensions is
+	# Default: 5.0
+	# Range: 0.0 ~ 1000000.0
+	dimensionCostFactor = 5.0
+	#The cost of collecting 1 XP level (builder 'collect items' mode))
+	# Default: 2.0
+	# Range: 0.0 ~ 1000000.0
+	collectRFPerXP = 2.0
+	#The RF/t per area to keep checking for items in a given area (builder 'collect items' mode))
+	# Default: 0.5
+	# Range: 0.0 ~ 1000000.0
+	collectRFPerTickPerArea = 0.5
+	#The RF per operation of the builder is multiplied with this factor when using the void shape card
+	# Default: 0.5
+	# Range: 0.0 ~ 1000000.0
+	voidShapeCardFactor = 0.5
+	#The RF per operation of the builder is multiplied with this factor when using the silk quarry shape card
+	# Default: 3.0
+	# Range: 0.0 ~ 1000000.0
+	silkquarryShapeCardFactor = 3.0
+	#The RF per operation of the builder is multiplied with this factor when using the fortune quarry shape card
+	# Default: 2.0
+	# Range: 0.0 ~ 1000000.0
+	fortunequarryShapeCardFactor = 2.0
+	#Use this block for the builder to replace with
+	quarryReplace = "minecraft:dirt"
+	#If true the quarry will also quarry tile entities. Otherwise it just ignores them
+	quarryTileEntities = true
+	#If true the quarry will chunkload a chunk at a time. If false the quarry will stop if a chunk is not loaded
+	quarryChunkloads = true
+	#If true we allow shape cards to be crafted. Note that in order to use the quarry system you must also enable this
+	shapeCardAllowed = true
+	#If true we allow quarry cards to be crafted
+	quarryAllowed = true
+	#If true we allow the clearing quarry cards to be crafted (these can be heavier on the server)
+	clearingQuarryAllowed = true
+	#The base speed (number of blocks per tick) of the quarry
+	# Default: 8
+	# Range: > 0
+	quarryBaseSpeed = 8
+	#Multiply the infusion factor with this value and add that to the quarry base speed
+	# Default: 20
+	# Range: > 0
+	quarryInfusionSpeedFactor = 20
+	#Maximum offset of the shape when a shape card is used in the builder
+	# Default: 260
+	# Range: > 0
+	maxBuilderOffset = 260
+	#Maximum dimension of the shape when a shape card is used in the builder
+	# Default: 512
+	# Range: > 0
+	maxBuilderDimension = 512
+	#If true we go back to the old (wrong) sphere/cylinder calculation for the builder/shield
+	oldSphereCylinderShape = false
+
+#Settings for the shield system
+[shield]
+	#Maximum RF storage that the shield block can hold
+	# Default: 200000
+	# Range: > 0
+	shieldMaxRF = 200000
+	#RF per tick that the shield block can receive
+	# Default: 5000
+	# Range: > 0
+	shieldRFPerTick = 5000
+	#Maximum size (in blocks) of a tier 1 shield
+	# Default: 256
+	# Range: 0 ~ 1000000
+	shieldMaxSize = 256
+	#Maximum offset of the shape when a shape card is used
+	# Default: 128
+	# Range: 0 ~ 100000
+	maxShieldOffset = 128
+	#Maximum dimension of the shape when a shape card is used
+	# Default: 256
+	# Range: 0 ~ 1000000
+	maxShieldDimension = 256
+	#Maximum distance at which you can add disjoint shield sections to a composed shield
+	# Default: 64
+	# Range: 0 ~ 10000
+	maxDisjointShieldDistance = 64
+	#Base amount of RF/tick for every 10 blocks in the shield (while active)
+	# Default: 8
+	# Range: > 0
+	shieldRfBase = 8
+	#RF/tick for every 10 blocks added in case of camo mode
+	# Default: 2
+	# Range: > 0
+	shieldRfCamo = 2
+	#RF/tick for every 10 block addeds in case of shield mode
+	# Default: 2
+	# Range: > 0
+	shieldRfShield = 2
+	#The amount of RF to consume for a single spike of damage for one entity
+	# Default: 1000
+	# Range: > 0
+	shieldRfDamage = 1000
+	#The amount of RF to consume for a single spike of damage for one entity (used in case of player-type damage)
+	# Default: 2000
+	# Range: > 0
+	shieldRfDamagePlayer = 2000
+	#The amount of damage to do for a single spike on one entity
+	# Default: 5.0
+	# Range: 0.0 ~ 1.0E9
+	shieldDamage = 5.0
+	#Set this to false if you don't want invisible shield rendering mode to be possible
+	allowInvisibleShield = true
+	#Amount of dimensional shards per looting kill. Remember that this is per block that does damage
+	# Default: 2
+	# Range: 0 ~ 256
+	shardsPerLootingKill = 2
+	#The looting kill bonus
+	# Default: 3
+	# Range: 0 ~ 256
+	lootingKillBonus = 3
+
+#Settings for the scanner, composer, and projector
+[scanner]
+	#Maximum RF storage that the scanner can hold
+	# Default: 500000
+	# Range: > 0
+	scannerMaxRF = 500000
+	#RF per tick that the scanner can receive
+	# Default: 20000
+	# Range: > 0
+	scannerRFPerTick = 20000
+	#Amount of RF needed per tick during the scan
+	# Default: 1000
+	# Range: > 0
+	scannerUsePerTick = 1000
+	#Amount of RF needed per tick during the scan for a remote scanner
+	# Default: 2000
+	# Range: > 0
+	remoteScannerUsePerTick = 2000
+	#Maximum RF storage that the locator can hold
+	# Default: 2000000
+	# Range: > 0
+	locatorMaxRF = 2000000
+	#RF per tick that the locator can receive
+	# Default: 20000
+	# Range: > 0
+	locatorRFPerTick = 20000
+	#Fixed amount of RF needed for a scan
+	# Default: 5000
+	# Range: > 0
+	locatorUsePerTickBase = 5000
+	#Base amount of RF needed for a scan per 16x16x16 subchunk
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0E9
+	locatorUsePerTickChunk = 0.1
+	#Additional amount of RF per 16x16x16 subchunk needed for a scan for hostile entities
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0E9
+	locatorUsePerTickHostile = 1.0
+	#Additional amount of RF per 16x16x16 subchunk needed for a scan for passive entities
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0E9
+	locatorUsePerTickPassive = 0.5
+	#Additional amount of RF per 16x16x16 subchunk needed for a scan for players
+	# Default: 2.0
+	# Range: 0.0 ~ 1.0E9
+	locatorUsePerTickPlayer = 2.0
+	#Additional amount of RF per 16x16x16 subchunk needed for a scan for low energy
+	# Default: 5.0
+	# Range: 0.0 ~ 1.0E9
+	locatorUsePerTickEnergy = 5.0
+	#Additional amount of RF per 16x16x16 subchunk needed for a filtered scan
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0E9
+	locatorFilterCost = 0.5
+	#Maximum RF storage that the projector can hold
+	# Default: 500000
+	# Range: > 0
+	projectorMaxRF = 500000
+	#RF per tick that the projector can receive
+	# Default: 10000
+	# Range: > 0
+	projectorRFPerTick = 10000
+	#RF/t for the projector while it is in use
+	# Default: 1000
+	# Range: > 0
+	projectorUsePerTick = 1000
+	#Number of ticks between every scan of the locator
+	# Default: 40
+	# Range: > 0
+	ticksPerLocatorScan = 40
+	#Maximum amount of entities in a single block to show markers/beacons for
+	# Default: 10
+	# Range: > 0
+	locatorEntitySafety = 10
+	#Maximum amount of 16x16 chunks we support for energy scanning
+	# Default: 25
+	# Range: > 0
+	locatorMaxEnergyChunks = 25
+	#Maximum offset of the shape when a shape card is used in the scanner/projector
+	# Default: 2048
+	# Range: > 0
+	maxScannerOffset = 2048
+	#Maximum dimension of the shape when a scanner/projector card is used
+	# Default: 512
+	# Range: 0 ~ 10000
+	maxScannerDimension = 512
+	#The amount of surface area the scanner will scan in a tick. Increasing this will increase the speed of the scanner but cause more strain on the server
+	# Default: 262144
+	# Range: 100 ~ 1073741824
+	surfaceAreaPerTick = 262144
+	#The amount of 'surface area' that the server will send to the client for the projector. Increasing this will increase the speed at which projections are ready but also increase the load for server and client
+	# Default: 40000
+	# Range: 100 ~ 10000000
+	planeSurfacePerTick = 40000
+
+#Settings for the mover system
+[mover]
+	#RF per tick/per block for the vehicle control module
+	# Default: 0
+	# Range: > 0
+	vehicleControlRFPerTick = 0
+	#RF per tick/per block for the vehicle status module
+	# Default: 2
+	# Range: > 0
+	vehicleStatusRFPerTick = 2
+	#Amount of RF used for one movement
+	# Default: 1000
+	# Range: > 0
+	rfPerMove = 1000
+	#Maximum RF storage that the mover controller can hold
+	# Default: 100000
+	# Range: > 0
+	moverControllerMaxRF = 100000
+	#RF per tick that the mover controller can receive
+	# Default: 1000
+	# Range: > 0
+	moverControllerRFPerTick = 1000

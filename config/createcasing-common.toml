@@ -9,9 +9,6 @@
 	#Can swap material between shafts,cogwheels and large cogwheels (includes brass,andesite and glass)
 	shaftCogwheelsSwappable = true
 	#.
-	#Should Brass/Copper/Train mixe faster
-	shouldCustomMixerMixeFaster = true
-	#.
 	#Should Wooden Shaft break if the speed is too high
 	shouldWoodenShaftBreak = true
 	#.
@@ -22,6 +19,12 @@
 	# Default: 32
 	# Range: 2 ~ 256
 	maxSpeedWoodenShaft = 32
+	#.
+	#Defines if the configurable requires a shaft to add a shaft to a face
+	configurableGearboxRequiresShaft = true
+	#.
+	#Defines if when the face is changed on the configurable gearbox, the opposite face should be also changed. It doesn't consume more shaft !
+	configurableGearboxChangeTwoFaces = false
 
 		#.
 		#Fine tune the kinetic stats of individual components
@@ -371,6 +374,12 @@
 				industrial_iron_encased_crimson_large_cogwheel = 0.0
 				railway_encased_acacia_large_cogwheel = 0.0
 				railway_encased_cherry_shaft = 0.0
+				andesite_configurable_gearbox = 0.0
+				creative_configurable_gearbox = 0.0
+				brass_configurable_gearbox = 0.0
+				copper_configurable_gearbox = 0.0
+				railway_configurable_gearbox = 0.0
+				industrial_iron_configurable_gearbox = 0.0
 
 			#.
 			#[in Stress Units]

@@ -1,4 +1,3 @@
-#Other Configuration
 [Misc]
 	#rarityConfig array values must sum to 1: [COMMON, UNCOMMON, RARE, EPIC, LEGENDARY]. Default: [.3d, .25d, .2d, .15d, .1d]
 	rarityConfig = [0.3, 0.25, 0.2, 0.15, 0.1]
@@ -34,6 +33,10 @@
 	manaRegenMultiplier = 1.0
 	#Whether merging scrolls with ink to upgrade them in the Arcane Anvil is enabled.
 	scrollMerging = true
+	#Whether mana is required in creative mode. Default: false
+	creativeMana = false
+	#Whether cooldowns are respected in creative mode. Default: false
+	creativeCooldowns = false
 
 ["Upgrade Overrides"]
 	#Use these lists to change what items can interact with the Arcane Anvil's upgrade system. This can also be done via datapack.
@@ -578,7 +581,6 @@
 		CooldownInSeconds = 120.0
 		AllowCrafting = true
 
-	#irons_spellbooks:ender
 	[Spells."irons_spellbooks:evasion"]
 		Enabled = true
 		School = "irons_spellbooks:ender"
@@ -889,7 +891,6 @@
 		CooldownInSeconds = 35.0
 		AllowCrafting = true
 
-	#irons_spellbooks:blood
 	[Spells."irons_spellbooks:raise_dead"]
 		Enabled = true
 		School = "irons_spellbooks:blood"
@@ -1387,6 +1388,96 @@
 		CooldownInSeconds = 15.0
 		AllowCrafting = true
 
+	[Spells."irons_spellbooks:fire_arrow"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 10
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 8.0
+		AllowCrafting = true
+
+	[Spells."irons_spellbooks:raise_hell"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 25.0
+		AllowCrafting = false
+
+	[Spells."irons_spellbooks:touch_dig"]
+		Enabled = true
+		School = "irons_spellbooks:nature"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 0.5
+		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:acid_rain"]
+		Enabled = true
+		School = "irons_spellbooks:nature"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "EPIC"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 30.0
+		AllowCrafting = true
+
+	#irons_spellbooks:ender
+	[Spells."gametechbcs_spellbooks:astral_sense"]
+		Enabled = true
+		School = "irons_spellbooks:ender"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 120.0
+		AllowCrafting = true
+
+	[Spells."irons_spellbooks:summon_swords"]
+		Enabled = true
+		School = "irons_spellbooks:ender"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 150.0
+		AllowCrafting = true
+
+	[Spells."gametechbcs_spellbooks:psychic_bolt"]
+		Enabled = true
+		School = "irons_spellbooks:eldritch"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "EPIC"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 40.0
+		AllowCrafting = true
+
+	#irons_spellbooks:blood
+	[Spells."gametechbcs_spellbooks:crimson_downpour"]
+		Enabled = true
+		School = "irons_spellbooks:blood"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "EPIC"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 40.0
+		AllowCrafting = true
+
 	[Spells."cataclysm_spellbooks:infernal_strike"]
 		Enabled = true
 		School = "irons_spellbooks:fire"
@@ -1395,7 +1486,7 @@
 		MinRarity = "EPIC"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 1.0
+		CooldownInSeconds = 20.0
 		AllowCrafting = true
 
 	[Spells."cataclysm_spellbooks:tectonic_tremble"]
@@ -1417,7 +1508,7 @@
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 12.0
+		CooldownInSeconds = 30.0
 		AllowCrafting = true
 
 	[Spells."cataclysm_spellbooks:conjure_ignited_reinforcement"]
@@ -1428,7 +1519,7 @@
 		MinRarity = "LEGENDARY"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 100.0
+		CooldownInSeconds = 150.0
 		AllowCrafting = true
 
 	[Spells."cataclysm_spellbooks:abyss_fireball"]
@@ -1439,7 +1530,7 @@
 		MinRarity = "RARE"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 20.0
+		CooldownInSeconds = 50.0
 		AllowCrafting = true
 
 	[Spells."cataclysm_spellbooks:bone_storm"]
@@ -1450,7 +1541,7 @@
 		MinRarity = "EPIC"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 10.0
+		CooldownInSeconds = 80.0
 		AllowCrafting = true
 
 	[Spells."cataclysm_spellbooks:piercing_bone"]
@@ -1461,7 +1552,7 @@
 		MinRarity = "EPIC"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 20.0
+		CooldownInSeconds = 50.0
 		AllowCrafting = true
 
 	[Spells."cataclysm_spellbooks:hellish_blade"]
@@ -1472,7 +1563,7 @@
 		MinRarity = "LEGENDARY"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 60.0
+		CooldownInSeconds = 90.0
 		AllowCrafting = true
 
 	[Spells."cataclysm_spellbooks:incineration"]
@@ -1483,7 +1574,18 @@
 		MinRarity = "LEGENDARY"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 10.0
+		CooldownInSeconds = 40.0
+		AllowCrafting = true
+
+	[Spells."cataclysm_spellbooks:conjure_amethyst_crab"]
+		Enabled = true
+		School = "irons_spellbooks:nature"
+		MaxLevel = 1
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 200.0
 		AllowCrafting = true
 
 	[Spells."cataclysm_spellbooks:desert_winds"]
@@ -1531,7 +1633,7 @@
 		AllowCrafting = true
 
 	[Spells."cataclysm_spellbooks:pilfer"]
-		Enabled = false
+		Enabled = true
 		School = "irons_spellbooks:evocation"
 		MaxLevel = 3
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
@@ -1717,3 +1819,19 @@
 		SpellPowerMultiplier = 1.0
 		CooldownInSeconds = 200.0
 		AllowCrafting = true
+
+	#Configure Boss Stats
+	["Boss Config".Tyros]
+		#Additional Health
+		additionalHealth = 0.0
+		#Additional Melee Attack Damage
+		additionalAttackDamage = 0.0
+		#Additional Spell Power (additive percent)
+		additionalSpellPower = 0.0
+
+#Other Configuration
+[Blocks]
+	#Whether Portal Frames can only be dyed by the block's owner. Default: true
+	portalFrameRestrictDye = true
+	#Whether Portal Frames can only be destroyed by the block's owner. Default: false
+	portalFrameRestrictBreaking = false
