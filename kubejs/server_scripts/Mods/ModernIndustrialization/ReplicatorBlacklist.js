@@ -9,6 +9,8 @@ ServerEvents.tags('item', (e) => {
     'megacells:bulk_item_cell',
     'megacells:radioactive_chemical_cell',
     'extendedae:package',
+    /^extendedae:.*_cell$/,
+    /^enderdrives:ender_disk_.*/,
 
     /^pneumaticcraft:.*_(tank|chest)$/,
     /^pneumaticcraft:.*drone/,
@@ -141,7 +143,9 @@ ServerEvents.tags('item', (e) => {
 
     'occultism:storage_controller_stabilized',
 
-    /^.*creative./
+    /^.*creative./,
+
+    '#create:packages',
   ];
 
   const replicator_2_exclusions = [
@@ -170,6 +174,7 @@ ServerEvents.tags('item', (e) => {
     'modern_industrialization:singularity',
     'modern_industrialization:nuke',
     /_bucket$/,
+    /^extendedae:.*_cell$/,
 
     // These make no sense to replicate, as they rely on having NBT data, which Replicator Mk I doesn't support, and I don't want to risk them causing issues.
     'extendedae:package',
@@ -197,12 +202,15 @@ ServerEvents.tags('item', (e) => {
     'hostilenetworks:data_model',
     'hostilenetworks:prediction',
     'sophisticatedstorageinmotion:storage_minecart',
+    '#create:packages',
   ];
 
   const replicator_1_exclusions = [
     'modern_industrialization:quantum_circuit',
     'modern_industrialization:quantum_circuit_board',
     'modern_industrialization:quantum_machine_casing',
+
+    'extendedae:void_cell',
   ];
 
   e.add('craftoria:replicator_1_blacklist', replicator_1_blacklist).remove(replicator_1_exclusions);

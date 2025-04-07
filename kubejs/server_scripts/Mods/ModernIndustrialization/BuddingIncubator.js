@@ -59,7 +59,7 @@ MIRecipeEvents.customCondition((event) => {
           } else return state.getValue(blockState.property) == blockState.value;
         } else return true;
       },
-      Text.of(condition.text instanceof Array ? condition.text.join('\n') : condition.text)
+      Text.of(Array.isArray(condition.text) ? condition.text.join('\n') : condition.text)
     );
   });
 });

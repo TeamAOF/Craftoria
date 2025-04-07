@@ -39,7 +39,8 @@ StartupEvents.registry('item', (e) => {
     let cell = e
       .create(`craftoria:infinity_${strippedId}_cell`, 'custom_infinity_cell')
       .texture(`craftoria:item/infinity_cells/${strippedId}`)
-      .cellModel(`craftoria:block/drive/infinity_${strippedId}_cell`);
+      .cellModel(`craftoria:block/drive/infinity_${strippedId}_cell`)
+      .tag(['modern_industrialization:replicator_blacklist', 'craftoria:replicator_1_blacklist']);
 
     switch (type) {
       case 'item':
