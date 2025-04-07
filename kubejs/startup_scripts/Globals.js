@@ -38,5 +38,6 @@ global.customMIMachines = [
   },
   {
     id: 'budding_incubator',
+    casing: 'sky_stone_brick_casing',
   },
 ];
