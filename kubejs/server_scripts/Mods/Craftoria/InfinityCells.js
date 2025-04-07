@@ -1,9 +1,11 @@
 ServerEvents.recipes((e) => {
+  const ars = ArsNouveauHelper(e);
+
   e.shapeless('occultism:trinity_gem[entity_data={id:"occultism:possessed_warden"}]', [
     'occultism:trinity_gem',
     'occultism:spawn_egg/possessed_warden'
   ]);
-  
+
   e.recipes.occultism
     .ritual(
       'craftoria:infinity_soul_cell',
@@ -76,8 +78,7 @@ ServerEvents.recipes((e) => {
     '4x mekanism_extras:cosmic_bin',
   ]);
 
-  arsEcnhApparatus(
-    e,
+  ars.enchantingApparatus(
     'craftoria:infinity_source_cell',
     'craftoria:infinity_cell_housing',
     [
