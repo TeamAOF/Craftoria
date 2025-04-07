@@ -29,6 +29,8 @@
 		# Default: 350000
 		# Range: 0 ~ 9223372036854775807
 		base_charge_rate = 350000
+		#Whether the Meka-Tana can be enchanted. False by default. Use at your own risk.
+		enchantments = false
 
 	#Meka-Bow Settings
 	[weapons.meka_bow]
@@ -50,3 +52,5 @@
 		# Default: 350000
 		# Range: 0 ~ 9223372036854775807
 		base_charge_rate = 350000
+		#Whether the Meka-Bow can be enchanted. False by default. Use at your own risk.
+		enchantments = false

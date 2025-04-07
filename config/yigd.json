@@ -7,6 +7,8 @@
       "usePercentRange": true,
       "lossRangeFrom": 0,
       "lossRangeTo": 100,
+      "weightedSelection": true,
+      "lossDropRule": "DESTROY",
       "percentChanceOfLoss": 50,
       "canLoseSoulbound": false,
       "includeModdedInventories": true
@@ -119,7 +121,8 @@
     "respawnHunger": -1,
     "resetSaturation": true,
     "respawnSaturation": -1.0,
-    "extraItemDrops": []
+    "extraItemDrops": [],
+    "treatBindingCurse": true
   },
   "compatConfig": {
     "enableAccessoriesCompat": true,

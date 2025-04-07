@@ -1,0 +1,129 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "wip"
+	group: ""
+	id: "7DD7526F1C5EEE18"
+	images: [
+		{
+			height: 2.0d
+			image: "ftbquests:textures/gui/minecraft_title.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -0.25d
+			y: -3.0d
+		}
+		{
+			height: 7.0d
+			image: "ae2:block/creative_energy_cell"
+			rotation: 0.0d
+			width: 7.0d
+			x: -0.25d
+			y: 1.0d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["655EB02C77A6DE88"]
+			icon_scale: 1.5d
+			id: "29C435AAB8F9010B"
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				id: "155893BB2BBCA4B6"
+				item: { count: 1, id: "pneumaticcraft:creative_compressed_iron_block" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.75d
+		}
+		{
+			dependencies: ["655EB02C77A6DE88"]
+			icon_scale: 1.5d
+			id: "3B0CCE4B595F9845"
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				id: "48C602CEBD382599"
+				item: { count: 1, id: "pneumaticcraft:creative_compressor" }
+				type: "item"
+			}]
+			x: 1.75d
+			y: 2.75d
+		}
+		{
+			dependencies: ["655EB02C77A6DE88"]
+			icon_scale: 1.5d
+			id: "35AAA8534336FC4B"
+			shape: "none"
+			size: 1.75d
+			tasks: [{
+				id: "510BE4D80D53EB97"
+				item: { count: 1, id: "create:creative_motor" }
+				type: "item"
+			}]
+			x: -0.25d
+			y: -1.25d
+		}
+		{
+			dependencies: ["655EB02C77A6DE88"]
+			icon_scale: 1.5d
+			id: "14EB026C42917D4D"
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				id: "497E78607E22512F"
+				item: { count: 1, id: "create:creative_blaze_cake" }
+				type: "item"
+			}]
+			x: -0.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["655EB02C77A6DE88"]
+			icon_scale: 1.5d
+			id: "4064F98FF7D0FD8E"
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				id: "4328BF68D9D54B4F"
+				item: { count: 1, id: "replication:creative_memory_chip" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			icon: {
+				id: "functionalstorage:creative_vending_upgrade"
+			}
+			icon_scale: 1.5d
+			id: "655EB02C77A6DE88"
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				id: "21E65C7D1CF085C3"
+				type: "checkmark"
+			}]
+			x: -0.25d
+			y: 1.0d
+		}
+		{
+			dependencies: ["655EB02C77A6DE88"]
+			icon_scale: 1.5d
+			id: "1401859E3FD5D242"
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				id: "34A9ED562D2F21EB"
+				item: { count: 1, id: "ars_nouveau:creative_spell_book" }
+				type: "item"
+			}]
+			x: 1.75d
+			y: -1.0d
+		}
+	]
+}

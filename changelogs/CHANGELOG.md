@@ -1,3 +1,53 @@
+## Craftoria | v1.18.0
+
+_NeoForge Loader 21.1.139_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.18.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.18.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added Completionist Cape ``@AK``
+* Added 2 new custom MI machines, the Budding Incubator and Large Plasma Turbine ``Inno``
+* Blacklisted Quantum Nano Armor to be replicated ``@AK``
+* Updated MI Tweaks textures ``@Facu``
+* Disabled tiny tnt & matter cannon block damage ``@Kazuhiko-Gushiken``
+* Prevent the usage of gates in compact machines ``@Exefer``
+* Added new models for the Paladin Armor and Boots of Speed ``@AK``
+* Added Curios support for Mekanism Jetpack ``@DVOA1DVOA1``
+* Buffed the Mekanism Jetpack & adjusted the recipe with it ``@DVOA1DVOA1``
+* Added custom sounds to BWG slabs & stairs ``AK``
+* Allow for matter tanks uncrafting ``@Exefer``
+* Disable Anti-Personnel and Confiscation modules in MFFS, prevents unintended item drops and theft caused by these modules ``@Exefer``
+* Updated all Aquaculture textures ``AK``
+* Enabled EMI batched renderer, this improves performance ``AK``
+* Added Bauxite Ore / Deepslate Bauxite Ore to miners ``nitrofenix``
+* Added recipes to crusher spirits for Cobblestone->Gravel, Gravel->Sand and Clay->Clay balls ``nitrofenix``
+
+### Bug Fixes 🪲
+
+* Fixed equipment compare not working correctly ``@AK``
+* Fixed incorrect config values for ethene being applied (Mekanism) ``@AK``
+* Fixed invalid quest rewards in Occultism quest chapter ``@AK``
+* Fixed an issue where the trinity gem in the Occultism ritual doesn't seem to function with partial NBT ``@nitrofenix``
+* Fixed an issue where you'd crash when opening a furnace on first server start.
+
+### Added Mods ✅
+
+  * [Animal Pens](https://www.curseforge.com/minecraft/mc-mods/animal-pens)
+  * [Ars Technica](https://www.curseforge.com/minecraft/mc-mods/ars-technica)
+  * [Create: Filters Anywhere](https://www.curseforge.com/minecraft/mc-mods/create-filters-anywhere)
+  * [Create: Trading Floor](https://www.curseforge.com/minecraft/mc-mods/create-trading-floor)
+  * [Create: Winery [Forge/NeoForge]](https://www.curseforge.com/minecraft/mc-mods/create-winery)
+  * [EMI Extra Integrations](https://www.curseforge.com/minecraft/mc-mods/extra-mod-integrations)
+  * [EnderDrives](https://www.curseforge.com/minecraft/mc-mods/enderdrives)
+  * [FTB Chunks - Modded Support](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-recoloured)
+  * [McJtyLib](https://www.curseforge.com/minecraft/mc-mods/mcjtylib)
+  * [NaNny (Fix NaN Health / Absorption)](https://www.curseforge.com/minecraft/mc-mods/nanny)
+  * [RFTools Base](https://www.curseforge.com/minecraft/mc-mods/rftools-base)
+  * [RFTools Builder](https://www.curseforge.com/minecraft/mc-mods/rftools-builder)
+  * [RFTools Utility](https://www.curseforge.com/minecraft/mc-mods/rftools-utility)
+  * [Sophisticated Storage Create Integration](https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage-create-integration)
+  * [Twilight Treehouses](https://www.curseforge.com/minecraft/mc-mods/twilight-treehouses)
+---
+
 ## Craftoria | v1.17.3
 
 _NeoForge Loader 21.1.133_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.17.3.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.17.3.md)_

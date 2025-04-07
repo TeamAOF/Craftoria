@@ -172,6 +172,8 @@
 	test3 = 0.0
 	#Disable incompatible mods warning screen
 	no_incompatible_mods_screen = false
+	#unfunny
+	"I am very boring" = false
 
 #Game tweaks
 [tweaks]
@@ -183,8 +185,6 @@
 	compass_right_click = false
 	#Renders an enchantment glint on placeable enchanted booksNote that turning this on will make book piles use tile renderer instead of baked models making them slower to render
 	placeable_books_glint = false
-	#Placeable books random colors
-	placeable_books_random_colors = ["brown", "orange", "yellow", "red", "green", "lime", "cyan", "blue", "purple"]
 	#Enables banner pattern tooltip image preview
 	banner_pattern_tooltip = true
 	#Enables paintings tooltip image preview

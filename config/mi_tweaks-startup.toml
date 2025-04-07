@@ -25,13 +25,26 @@
 	#DISABLED = No change will be made to MI's efficiency behavior
 	#ALWAYS_BASE = The efficiency will always be the base machine eu (or recipe eu if it's greater) + upgrades
 	#ALWAYS_MAX = The efficiency will always be forced to max
-	#USE_VOLTAGE = The speed of machines will be determined by their voltage (WARNING! This is designed specifically for pack creators, and existing recipes may not be accessible by all voltages, most notably EBF recipes. Use at your own risk. It is recommended when using this mode to modify recipes with higher EU costs to use the voltage recipe condition or the ebf coil recipe condition)
 	#Default: DISABLED
-	#Allowed Values: DISABLED, ALWAYS_BASE, ALWAYS_MAX, USE_VOLTAGE
+	#Allowed Values: DISABLED, ALWAYS_BASE, ALWAYS_MAX
 	hack = "DISABLED"
 	#Whether efficiency bar and multiblock efficiency data should be hidden or not
 	#Default: false
 	hide = false
+	#Whether the casing max overclock overrides (as per `casing_max_overclock_overrides`) should be used
+	#This only applies to electric machines. Also applies to multiblocks but uses the highest tier energy hatch's casing
+	#Note that when this is enabled, it will override any behavior relating to the max efficiency for the `hack` mode (for example, as in `USE_VOLTAGE`)
+	#Default: false
+	use_casing_max_overclock_overrides = false
+
+	#The base max EU/t a machine can run at for a given casing
+	#Range: > 0
+	[efficiency.casing_max_overclock_overrides]
+		superconductor = 8192
+		mv = 128
+		lv = 32
+		hv = 512
+		ev = 2048
 
 [machine_blueprints]
 	#Whether the learning system for blueprints is enabled or not. If true, then blueprints can be right-clicked to become learned

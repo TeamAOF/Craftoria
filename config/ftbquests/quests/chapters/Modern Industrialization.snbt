@@ -2487,10 +2487,10 @@
 			]
 			tasks: [{
 				id: "1A3467C5591FABC4"
-				item: { count: 1, id: "modern_industrialization:replicator" }
+				item: { count: 1, id: "modern_industrialization:replicator_1" }
 				type: "item"
 			}]
-			x: 62.0d
+			x: 61.5d
 			y: 0.0d
 		}
 		{
@@ -3155,6 +3155,36 @@
 			}]
 			x: 31.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["156575F76CAB51A0"]
+			id: "3E903D71F66D3DB4"
+			rewards: [
+				{
+					id: "0818FC7BDFA9640A"
+					item: {
+						count: 1
+						id: "craftoria:cosmic_injector"
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "56E483D332C2B93F"
+					item: {
+						count: 1
+						id: "modern_industrialization:quantum_circuit"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0282C498E6D1359E"
+				item: { count: 1, id: "modern_industrialization:replicator" }
+				type: "item"
+			}]
+			x: 63.0d
+			y: 0.0d
 		}
 	]
 }

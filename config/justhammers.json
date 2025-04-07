@@ -14,5 +14,9 @@
   "durabilityRepairPercentageNetherite": {
     "value": 100.0,
     "_comment": "The percentage of durability restored per repair item for netherite hammers"
+  },
+  "allowHammerBreaking": {
+    "value": false,
+    "_comment": "Set to true to allow hammers to break when running out of durability"
   }
 }

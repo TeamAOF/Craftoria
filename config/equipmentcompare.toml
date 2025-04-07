@@ -34,3 +34,5 @@
 		strict = false
 		# Item blacklist to disable comparisons for.  Add to prevent items from being compared when hovered over or equipped.  All Iceberg item selectors are supported (https://github.com/AHilyard/Iceberg/wiki/Item-Selectors-Documentation).
 		blacklist = []
+		# If accessories should be compared.  If false, only held items and armor will be compared.
+		compare_accessories = false

@@ -1,0 +1,34 @@
+{
+	ui: {
+		# Default: true
+		backspace_history: true
+		
+		# Default: false
+		chapter_panel_pinned: false
+		
+		# Default: false
+		old_scroll_wheel: false
+		
+		# Default: 2
+		# Range: -∞ ~ +∞
+		pinned_quests_inset_x: 2
+		
+		# Default: 2
+		# Range: -∞ ~ +∞
+		pinned_quests_inset_y: 2
+		
+		# Default: "right"
+		# Valid values: "top_left", "top", "top_right", "right", "bottom_right", "bottom", "bottom_left", "left"
+		pinned_quests_pos: "right"
+		
+		# Default: true
+		show_lock_icon: true
+	}
+	xlate: {
+		# Default: ""
+		editing_locale: ""
+		
+		# Default: true
+		hilite_missing: true
+	}
+}

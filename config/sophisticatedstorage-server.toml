@@ -6,6 +6,12 @@
 	# Default: 200
 	# Range: 0 ~ 1000
 	tooManyItemEntityDrops = 200
+	#Determines if limited barrel counts can be dyed to change their color
+	limitedBarrelCountDyeingEnabled = true
+	#Defines the maximum range of the controller at which it connects storage blocks to multiblock
+	# Default: 15
+	# Range: 4 ~ 64
+	controllerRange = 15
 
 	#Wood Barrel Settings
 	[server.WoodBarrel]

@@ -25,10 +25,16 @@
   "useCustomKeybindSystem": true,
   "showHotbarEngineGauge": true,
   "weaponsAreDestructive": false,
+  "dropAircraft": true,
   "dropInventory": true,
   "dropUpgrades": false,
   "regenerateHealthEveryNTicks": 0,
   "requireShiftForRepair": false,
+  "bombBayEntity": {
+    "minecraft:egg": "minecraft:chicken"
+  },
+  "rotaryCannonDamage": 5.0,
+  "heavyCrossBowVelocity": 3.0,
   "fuelList": {
     "minecraft:blaze_powder": 1200
   },
