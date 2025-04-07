@@ -8,4 +8,6 @@ navigation:
 
 # The Enchanting Table
 
+This section goes over the changes to the Enchanting Table.
+
 <SubPages />

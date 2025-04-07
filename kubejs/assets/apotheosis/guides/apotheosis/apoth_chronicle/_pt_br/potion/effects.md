@@ -7,4 +7,6 @@ navigation:
 
 # Novos efeitos
 
+Esta seção detalha os novos efeitos de poção adicionados pela Apotheosis.
+
 <SubPages />

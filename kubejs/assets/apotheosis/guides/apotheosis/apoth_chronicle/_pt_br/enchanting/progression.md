@@ -8,4 +8,6 @@ navigation:
 
 # Progressão de nível
 
+Esta seção oferece uma visão geral de como melhorar sua mesa de encantamentos.
+
 <SubPages />

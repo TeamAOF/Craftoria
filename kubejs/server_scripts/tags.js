@@ -4,7 +4,6 @@ ServerEvents.tags('item', (e) => {
   e.add('c:storage_blocks/fluix', 'ae2:fluix_block');
   e.add('c:storage_blocks/charged_redstone', 'appflux:charged_redstone_block');
 
-  e.add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet']);
   e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
@@ -41,9 +40,32 @@ ServerEvents.tags('item', (e) => {
   ]);
 
   // Curios
-  e.add('curios:curio', 'integratedterminals:terminal_storage_portable');
-  e.add('curios:body', 'mekanism:jetpack');
-  e.add('curios:body', 'mekanism:jetpack_armored');
+  e.add('curios:curio', [
+    'simplemagnets:basicmagnet',
+    'simplemagnets:advancedmagnet',
+    'integratedterminals:terminal_storage_portable',
+    'occultism:storage_remote',
+    'artifacts:whoopee_cushion',
+  ]);
+  e.add('curios:body', ['mekanism:jetpack', 'mekanism:jetpack_armored']);
+  e.add('curios:charm', ['reliquary:fortune_coin']);
+
+  // let curioToBody = [
+  //   'relics:midnight_robe',
+  //   'relics:elytra_booster',
+  //   'reliquified_twilight_forest:scaled_cloak',
+  //   'reliquified_ars_nouveau:cloak_of_concealment',
+  // ];
+
+  // curioToBody.forEach((id) => {
+  //   e.add('curios:body', id);
+  //   e.remove('curios:back', id);
+  // });
+
+  // e.add('curios:magic_trinket', /^alshanex_familiars:.*_trinket$/);
+  // e.add('curios:magic_curio', /^alshanex_familiars:.*_curio$/);
+
+  e.remove('curios:charm', ['phantoms_utilities:sleep_charm']);
 
   // Chisel Reborn
   Ingredient.of('@chisel').itemIds.forEach((id) => {
@@ -78,6 +100,8 @@ ServerEvents.tags('item', (e) => {
   e.add('minecraft:enchantable/trident', ['#craftoria:tridents']);
   e.add('minecraft:enchantable/vanishing', ['#craftoria:tridents']);
   e.add('minecraft:enchantable/durability', ['#craftoria:tridents']).remove('industrialforegoing:infinity_trident');
+
+  e.remove('plonk:unplaceable', ['plonk:placed_items']);
 });
 
 ServerEvents.tags('block', (e) => {
@@ -148,4 +172,8 @@ ServerEvents.tags('entity_type', (e) => {
   e.add('mob_grinding_utils:no_swab', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/, '#neoforge:bosses']);
 
   e.add('industrialforegoing:mob_crusher_blacklist', ['#c:bosses', '#neoforge:bosses']);
+});
+
+ServerEvents.tags('enchantment', (e) => {
+  e.remove('minecraft:non_treasure', ['apothic_enchanting:boon_of_the_earth']);
 });

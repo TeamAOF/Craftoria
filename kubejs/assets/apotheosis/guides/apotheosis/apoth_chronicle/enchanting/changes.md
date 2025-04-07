@@ -7,4 +7,8 @@ navigation:
 
 # Vanilla Changes
 
+This section covers new enchantable items, and mechanical changes.
+
+If any minor content changes occur, they'll be noted here.
+
 <SubPages />

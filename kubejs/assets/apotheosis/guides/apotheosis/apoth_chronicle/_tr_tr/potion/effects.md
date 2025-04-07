@@ -7,4 +7,6 @@ navigation:
 
 # Yeni Etkiler
 
+Bu bölüm, Apotheosis tarafından eklenen yeni iksir etkilerini detaylandırır.
+
 <SubPages />

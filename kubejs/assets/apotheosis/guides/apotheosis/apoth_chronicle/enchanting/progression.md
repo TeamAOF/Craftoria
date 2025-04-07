@@ -8,4 +8,6 @@ navigation:
 
 # Level Progression
 
+This section gives an overview of how to upgrade your Enchanting Table.
+
 <SubPages />

@@ -1,7 +1,7 @@
 ---
 navigation:
   title: "Life Steal"
-  icon: "attributeslib:textures/mob_effect/bleeding.png"
+  icon: "apothic_attributes:textures/mob_effect/bleeding.png"
   parent: apotheosis:adventure/attributes.md
 ---
 

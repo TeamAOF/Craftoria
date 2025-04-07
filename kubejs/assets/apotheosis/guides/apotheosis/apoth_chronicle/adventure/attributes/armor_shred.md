@@ -1,7 +1,7 @@
 ---
 navigation:
   title: "Armor Shred"
-  icon: "attributeslib:textures/mob_effect/sundering.png"
+  icon: "apothic_attributes:textures/mob_effect/sundering.png"
   parent: apotheosis:adventure/attributes.md
 ---
 

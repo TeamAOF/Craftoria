@@ -1,7 +1,7 @@
 ---
 navigation:
   title: "Bursting Vitality"
-  icon: "attributeslib:textures/mob_effect/vitality.png"
+  icon: "apothic_attributes:textures/mob_effect/vitality.png"
   parent: apotheosis:potion/effects.md
 ---
 

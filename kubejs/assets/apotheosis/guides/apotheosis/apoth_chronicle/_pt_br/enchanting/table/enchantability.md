@@ -1,15 +1,14 @@
 ---
 navigation:
-  title: "Encantabilidade do item"
-  icon: "minecraft:golden_sword"
+  title: 'Encantabilidade do item'
+  icon: 'minecraft:golden_sword'
   parent: apotheosis:enchanting/table.md
 ---
 
 # Encantabilidade do item
 
-No vanilla, a encantabilidade de um item contribui para seu <Color hex="#CC00CC">poder final</Color>.
+No vanilla, a encantabilidade de um item contribui para seu <Color id="dark_purple">poder final</Color>.
 
-O Apotheosis altera para fornecer um aumento direto de <Color hex="#A800A8">Arcana</Color>.
+O Apotheosis altera para fornecer um aumento direto de <Color id="dark_purple">Arcana</Color>.
 
-<Color hex="#A800A8">Arcana</Color> aumenta em 50% a encantabilidade de um item.
-
+<Color id="dark_purple">Arcana</Color> aumenta em 50% a encantabilidade de um item.

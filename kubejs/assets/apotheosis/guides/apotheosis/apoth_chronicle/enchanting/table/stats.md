@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Enchanting Stats"
-  icon: "minecraft:bookshelf"
+  title: 'Enchanting Stats'
+  icon: 'minecraft:bookshelf'
   parent: apotheosis:enchanting/table.md
 ---
 
@@ -15,32 +15,33 @@ Blocks that provide enchanting stats will have them on their tooltip.
 
 ## Eterna
 
-<Color hex="#3DB53D">Eterna</Color> is the primary stat of enchanting.
+<Color id="green">Eterna</Color> is the primary stat of enchanting.
 
-Each point of <Color hex="#3DB53D">Eterna</Color> increases the maximum enchanting level by two.
+Each point of <Color id="green">Eterna</Color> increases the maximum enchanting level by two.
 
-Some blocks can only provide <Color hex="#3DB53D">Eterna</Color> up to a certain maximum value.
+Some blocks can only provide <Color id="green">Eterna</Color> up to a certain maximum value.
 
 <a name="quanta"></a>
+
 ## Quanta
 
-<Color hex="#FC5454">Quanta</Color> is a secondary stat. It controls enchanting variance.
+<Color id="red">Quanta</Color> is a secondary stat. It controls enchanting variance.
 
-During enchanting, you have a <Color id="gold">Base Power</Color>, which is the level you spent to enchant with, and then a <Color hex="#CC00CC">Final Power</Color>, after all modifications.
+During enchanting, you have a <Color id="gold">Base Power</Color>, which is the level you spent to enchant with, and then a <Color id="dark_purple">Final Power</Color>, after all modifications.
 
-<Color hex="#FC5454">Quanta</Color> is one of the factors in the modification process.
+<Color id="red">Quanta</Color> is one of the factors in the modification process.
 
 A value is selected, between <Color id="dark_red">1 - Quanta</Color> and <Color id="blue">1 + Quanta</Color>.
 
-Your <Color hex="#CC00CC">Final Power</Color> is equal to that value multiplied by your <Color id="gold">Base Power</Color>.
+Your <Color id="dark_purple">Final Power</Color> is equal to that value multiplied by your <Color id="gold">Base Power</Color>.
 
-Higher <Color hex="#FC5454">Quanta</Color> values increase the power range, which means your enchantments are less consistent in their <Color hex="#CC00CC">Final Power</Color>.
+Higher <Color id="red">Quanta</Color> values increase the power range, which means your enchantments are less consistent in their <Color id="dark_purple">Final Power</Color>.
 
 ## Arcana
 
-<Color hex="#A800A8">Arcana</Color> is a secondary stat. It controls the rarity weights, and at certain thresholds will guarantee you get additional enchantments.
+<Color id="dark_purple">Arcana</Color> is a secondary stat. It controls the rarity weights, and at certain thresholds will guarantee you get additional enchantments.
 
-At 25% <Color hex="#A800A8">Arcana</Color>, you will always receive at least two enchantments. At 75%, you will always receive three.
+At 25% <Color id="dark_purple">Arcana</Color>, you will always receive at least two enchantments. At 75%, you will always receive three.
 
 By default, the rarities have the following weights:
 
@@ -49,24 +50,23 @@ Uncommon: 5
 Rare: 3
 Very Rare: 1
 
-Every 10% of <Color hex="#A800A8">Arcana</Color> changes the weights, eventually becoming fully inverted.
+Every 10% of <Color id="dark_purple">Arcana</Color> changes the weights, eventually becoming fully inverted.
 
-Hovering the <Color hex="#A800A8">Arcana</Color> Bar will show the current weights.
+Hovering the <Color id="dark_purple">Arcana</Color> Bar will show the current weights.
 
 <a name="rectification"></a>
-## Rectification
 
-Rectification is a tertiary stat. It directly impacts the lower bound of <Color hex="#FC5454">Quanta</Color> modifications.
+## Quantic Stability
 
-Recall that your <Color id="dark_red">Min Power</Color> is equal to <Color id="dark_red">1 - Quanta</Color>.
+Quantic Stability is a tertiary stat. It directly impacts the lower bound of <Color id="red">Quanta</Color> modifications.
 
-With Rectification (R), your <Color id="dark_red">Min Power</Color> is equal to <Color id="dark_red">1 - (1 - R) * Quanta</Color>.
+When present, you can no longer roll negative <Color id="red">Quanta</Color> modifiers.
 
-If that doesn't make a ton of sense, don't worry about it.
+## Quantic Math
 
-Just know that higher Rectification values are always a good thing.
+If you don't like math you can skip to the next page.
 
-You can also have negative Rectification, which is always bad.
+Normally, <Color id="red">Quanta</Color> rolls use a normal distribution across the entire range, but once stabilized, this shifts to a uniform distribution across the positive side.
 
 ## Clues
 
@@ -77,4 +77,3 @@ Each clue allows you to see one additional item in the preview window.
 When you can see every available enchantment, the text will change slightly.
 
 You can also drop to zero clues, and be able to see nothing.
-

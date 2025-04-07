@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "魔咒过滤"
-  icon: "apothic_enchanting:filtering_shelf"
+  title: '魔咒过滤'
+  icon: 'apothic_enchanting:filtering_shelf'
   parent: apotheosis:enchanting/utility.md
 ---
 
@@ -21,9 +21,8 @@ navigation:
 
 该魔咒将不再出现在附魔台中。
 
-该书架还将根据放入附魔书的数量获得<Color hex="#3DB53D">位阶</Color>和<Color hex="#A800A8">阿卡那</Color>。
+该书架还将根据放入附魔书的数量获得<Color id="green">位阶</Color>和<Color id="dark_purple">阿卡那</Color>。
 
 注意：放入附魔书的方式与使用雕纹书架的方式相同，书架必须位于有效的书架槽位中才能操作。
 
 被列入黑名单的魔咒将在[附魔信息界面](../table/info.md)显示。
-

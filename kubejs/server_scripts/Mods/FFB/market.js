@@ -4,14 +4,14 @@ ServerEvents.recipes((e) => {
       type: 'farmingforblockheads:market',
       category: `farmingforblockheads:${category}`,
       preset: `minecraft:${category}`,
-      result: {item: item, count: 1},
+      result: { item: item, count: 1 },
     };
 
     e.custom(recipe).id(`craftoria:ffb_market/${item.split(':')[0]}/${item.split(':')[1]}`);
   };
 
   let recipeExists = (item) => {
-    return e.containsRecipe({output: item, type: 'farmingforblockheads:market'});
+    return e.containsRecipe({ output: item, type: 'farmingforblockheads:market' });
   };
 
   const saplingBlacklist = [

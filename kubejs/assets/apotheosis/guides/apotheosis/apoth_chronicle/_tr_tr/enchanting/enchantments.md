@@ -7,4 +7,8 @@ navigation:
 
 # Yeni Büyüler
 
+Bu bölümdeki her girdi, bu modül tarafından eklenen yeni bir büyüyü detaylandırır.
+
+Diğer modüller tarafından eklenen büyüler burada kapsanmayacaktır.
+
 <SubPages />

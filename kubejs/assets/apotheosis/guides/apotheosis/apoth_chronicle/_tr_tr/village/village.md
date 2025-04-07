@@ -6,4 +6,6 @@ navigation:
 
 # Köy Modülü
 
+Köy Modülü, köy ve köylülerle ilgili çeşitli şeyler ekler.
+
 <SubPages />

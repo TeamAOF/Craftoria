@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Уровни 1 - 30"
-  icon: "minecraft:bookshelf"
+  title: 'Уровни 1 - 30'
+  icon: 'minecraft:bookshelf'
   parent: apotheosis:enchanting/progression.md
 ---
 
@@ -19,5 +19,4 @@ navigation:
 
 На данном этапе есть несколько основных вариантов увеличения других характеристик.
 
-Вы можете использовать Свечи для увеличения <Color hex="#A800A8">Таинство</Color>, Черепа для увеличения <Color hex="#FC5454">Кванты</Color> и Аметистовые Кластеры для увеличения <Color hex="#CCCC33">Исправление</Color>..
-
+Вы можете использовать Свечи для увеличения <Color id="dark_purple">Таинство</Color>, Черепа для увеличения <Color id="red">Кванты</Color> и Аметистовые Кластеры для увеличения <Color hex="#CCCC33">Исправление</Color>..
