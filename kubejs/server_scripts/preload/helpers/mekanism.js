@@ -3,7 +3,7 @@
  * @param {$RecipesKubeEvent_} event
  */
 function MekanismHelper(event) {
-  const makeRecipeId = (type, output, input) => {
+  let makeRecipeId = (type, output, input) => {
     return _makeID("mekanism", type, output, input);
   };
 
@@ -86,7 +86,7 @@ function MekanismHelper(event) {
       chemicalInput,
       duration
     ) {
-      const recipe = {
+      let recipe = {
         type: "mekanism:reaction",
         item_input: {
           type: "neoforge:compound",
@@ -104,7 +104,7 @@ function MekanismHelper(event) {
         recipe.item_input.children.push(Ingredient.of(item).toJson());
       });
 
-      const [fluidAmount, fluidId] = fluidInput.replace("x", "").split(" ");
+      let [fluidAmount, fluidId] = fluidInput.replace("x", "").split(" ");
       if (fluidId.includes("#")) {
         recipe.fluid_input.tag = fluidId.replace("#", "");
       } else {
@@ -112,7 +112,7 @@ function MekanismHelper(event) {
       }
       recipe.fluid_input.amount = parseInt(fluidAmount);
 
-      const [chemicalInputAmount, chemicalInputId] = chemicalInput
+      let [chemicalInputAmount, chemicalInputId] = chemicalInput
         .replace("x", "")
         .split(" ");
       if (chemicalInputId.includes("#")) {
@@ -122,7 +122,7 @@ function MekanismHelper(event) {
       }
       recipe.chemical_input.amount = parseInt(chemicalInputAmount);
 
-      const [chemicalOutputAmount, chemicalOutputId] = chemicalOutput
+      let [chemicalOutputAmount, chemicalOutputId] = chemicalOutput
         .replace("x", "")
         .split(" ");
       recipe.chemical_output.id = chemicalOutputId;
@@ -139,7 +139,7 @@ function MekanismHelper(event) {
      */
 
     rotaryCondensentrating(chemicalInput, fluidId) {
-      const recipe = {
+      let recipe = {
         type: "mekanism:rotary",
         chemical_input: {
           amount: 1,
@@ -169,8 +169,8 @@ function MekanismHelper(event) {
      * @param {number} duration
      */
     nucleosynthesizing(itemOutput, itemInput, chemicalInput, duration) {
-      const [chemicalAmount, chemicalId] = chemicalInput.split("x ");
-      const recipe = {
+      let [chemicalAmount, chemicalId] = chemicalInput.split("x ");
+      let recipe = {
         type: "mekanism:nucleosynthesizing",
         chemical_input: {
           amount: parseInt(chemicalAmount) || 1000,
@@ -191,8 +191,8 @@ function MekanismHelper(event) {
      * @param {$ItemStack_} itemInput
      * */
     oxidizing(chemicalOutput, itemInput) {
-      const [chemicalAmount, chemicalId] = chemicalOutput.split("x ");
-      const recipe = {
+      let [chemicalAmount, chemicalId] = chemicalOutput.split("x ");
+      let recipe = {
         type: "mekanism:oxidizing",
         input: Ingredient.of(itemInput).toJson(),
         output: {
@@ -217,8 +217,8 @@ function MekanismHelper(event) {
       secondaryItemOutput,
       secondaryItemChance
     ) {
-      const [mainItemAmount, mainItemId] = mainItemOutput.split("x ");
-      const recipe = {
+      let [mainItemAmount, mainItemId] = mainItemOutput.split("x ");
+      let recipe = {
         type: "mekanism:sawing",
         input: {
           count: 1,

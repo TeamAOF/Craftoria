@@ -3,25 +3,25 @@
 ////////////////////////
 
 ServerEvents.recipes((e) => {
+  const mi = ModernIndustrializationHelper(e);
+
   // Obsidian Dust
-  miMacerator(e, ['minecraft:obsidian', 1], [['mekanism:dust_obsidian', 4]], 2, 200);
+  mi.macerator(['minecraft:obsidian', 1], [['mekanism:dust_obsidian', 4]], 2, 200);
 
   // Ores > Raw
-  miMacerator(e, ['#c:ores/silver', 1], [['modern_industrialization:raw_silver', 3]], 2, 100);
-  miMacerator(e, ['#c:ores/mithril', 1], [['irons_spellbooks:raw_mithril', 3]], 2, 100);
-  miMacerator(e, ['#c:ores/black_quartz', 1], [['actuallyadditions:black_quartz', 2]], 2, 100);
-  miMacerator(e, ['#c:ores/zinc', 1], [['create:raw_zinc', 3]], 2, 100);
-
+  mi.macerator(['#c:ores/silver', 1], [['modern_industrialization:raw_silver', 3]], 2, 100);
+  mi.macerator(['#c:ores/mithril', 1], [['irons_spellbooks:raw_mithril', 3]], 2, 100);
+  mi.macerator(['#c:ores/black_quartz', 1], [['actuallyadditions:black_quartz', 2]], 2, 100);
+  mi.macerator(['#c:ores/zinc', 1], [['create:raw_zinc', 3]], 2, 100);
 
   e.replaceInput(
-    {id: 'industrialization_overdrive:machines/multi_processing_array/craft'},
+    { id: 'industrialization_overdrive:machines/multi_processing_array/craft' },
     'modern_industrialization:assembler',
     'extended_industrialization:processing_array'
   );
 
   // Mekanism Compat
-  miMacerator(
-    e,
+  mi.macerator(
     ['#c:ores/fluorite', 1],
     [
       ['mekanism:dust_fluorite', 4],
@@ -30,7 +30,7 @@ ServerEvents.recipes((e) => {
     2,
     100
   );
-  miCompressor(e, ['#c:dusts/fluorite', 1], ['mekanism:fluorite_gem', 1], 2, 50);
+  mi.compressor(['#c:dusts/fluorite', 1], ['mekanism:fluorite_gem', 1], 2, 50);
 
   e.shaped('mi_tweaks:flux_transformer', ['SS ', ' HC', 'SS '], {
     S: 'modern_industrialization:superconductor_cable',
@@ -39,11 +39,11 @@ ServerEvents.recipes((e) => {
   }).id('mi_tweaks:flux_transformer');
 
   ['gold', 'iron'].forEach((material) => {
-    e.replaceInput({mod: 'modern_industrialization'}, `#c:gears/${material}`, `modern_industrialization:${material}_gear`);
+    e.replaceInput({ mod: 'modern_industrialization' }, `#c:gears/${material}`, `modern_industrialization:${material}_gear`);
   });
 
-  e.remove({output: 'replication:replica_ingot'});
-  miElectrolyzer(e, ['advanced_ae:quantum_infusion_source', 200], ['replication:raw_replica', 1], null, ['replication:replica_ingot', 1], 8, 60)
+  e.remove({ output: 'replication:replica_ingot' });
+  mi.electrolyzer(['advanced_ae:quantum_infusion_source', 200], ['replication:raw_replica', 1], null, ['replication:replica_ingot', 1], 8, 60)
 
   let cuttingMachine = (output, input) => {
     e.recipes.modern_industrialization
@@ -57,7 +57,7 @@ ServerEvents.recipes((e) => {
   let madeCuttingRecipeFor = [];
   Ingredient.of('#minecraft:logs').itemIds.forEach((id) => {
     if ((!id.includes('log') && !id.includes('stem')) || id.includes('stripped')) return;
-    const {modID, itemId} = {modID: id.split(':')[0], itemId: id.split(':')[1]};
+    const { modID, itemId } = { modID: id.split(':')[0], itemId: id.split(':')[1] };
 
     if (modID === 'minecraft') return;
 
