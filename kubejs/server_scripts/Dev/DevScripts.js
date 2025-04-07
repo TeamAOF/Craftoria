@@ -11,7 +11,7 @@ if (global.devEnv) {
       const multiblock = target.block.entity;
       const { x, y, z } = target.block.pos;
       // const shape = entity.getActiveShape();
-      const shapeMatcher = entity.createShapeMatcher();
+      const shapeMatcher = multiblock.createShapeMatcher();
       const updatedBlocks = shapeMatcher.buildMultiblock(level);
 
       player.tell(`Built multiblock at ${x}, ${y}, ${z}`);
