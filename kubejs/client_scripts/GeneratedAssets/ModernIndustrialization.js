@@ -5,25 +5,16 @@ ClientEvents.generateAssets('after_mods', (e) => {
     });
 
     let modelJson = {
-      casing: 'lv',
-      default_overlays: {
+      casing: machine.casing || 'lv',
+      default_overlays: machine.default_overlays || {
         fluid_auto: 'modern_industrialization:block/overlays/fluid_auto',
-        front: `modern_industrialization:block/machines/${machine.id}/overlay_front`,
-        front_active: `modern_industrialization:block/machines/${machine.id}/overlay_front_active`,
+        front: `modern_industrialization:block/machines/${machine.overlay || machine.id}/overlay_front`,
+        front_active: `modern_industrialization:block/machines/${machine.overlay || machine.id}/overlay_front_active`,
         item_auto: 'modern_industrialization:block/overlays/item_auto',
         output: 'modern_industrialization:block/overlays/output',
       },
       loader: 'modern_industrialization:machine',
     };
-
-    if (machine.overlay) {
-      modelJson.default_overlays.front = `modern_industrialization:block/machines/${machine.overlay}/overlay_front`;
-      modelJson.default_overlays.front_active = `modern_industrialization:block/machines/${machine.overlay}/overlay_front_active`;
-    }
-
-    if (machine.casing) {
-      modelJson.casing = machine.casing;
-    }
 
     if (machine.hasSides) {
       if (machine.overlay) {
