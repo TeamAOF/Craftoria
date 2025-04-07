@@ -28,4 +28,10 @@ global.customMIMachines = [
     sound: 'mi_sound_addon:replicator',
     soundDuration: 20,
   },
+  {
+    id: 'large_plasma_turbine',
+  },
+  {
+    id: 'budding_incubator'
+  }
 ];
