@@ -66,6 +66,13 @@ ServerEvents.tags('item', (e) => {
     '@farmersdelight',
   ]);
 
+  // Modern Industrialization hammers
+
+  e.add('modern_industrialization:forge_hammer_tools', [
+    'craftoria:flimsy_hammer',
+    /^justhammers:(stone|iron|gold|diamond|netherite)_(impact|reinforced|reinforced_impact|destructor)_hammer$/,
+  ]);
+
   // Some tag fixes
   e.add('minecraft:swords', ['wstweaks:blaze_blade', 'wstweaks:lava_blade', 'industrialforegoing:infinity_hammer']);
   e.add('minecraft:pickaxes', ['industrialforegoing:infinity_drill']);
