@@ -79,7 +79,7 @@ function AE2Helper(event) {
      * @param {$Item_} fuel
      * @param {number} [chance=8000]
      */
-    crystalFixer(output, input, fuel) {
+    crystalFixer(output, input, fuel, chance) {
       let recipe = {
         type: "extendedae:crytal_fixer",
         input: { id: input },
