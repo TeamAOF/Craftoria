@@ -7,7 +7,7 @@ function AE2Helper(event) {
    * Generate a recipe ID based on output and recipe type
    * @param {string} type
    * @param {$Item_} output
-   * @returns {string}
+   * @returns {string} The generated recipe ID
    */
   let makeRecipeId = (type, output) => {
     let name = output.includes("x ") ? output.split("x ")[1] : output;

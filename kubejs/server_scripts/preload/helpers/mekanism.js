@@ -3,6 +3,13 @@
  * @param {$RecipesKubeEvent_} event
  */
 function MekanismHelper(event) {
+  /**
+ * Generate a recipe ID based on output, input and recipe type
+ * @param {string} type
+ * @param {$Item_} output
+ * @param {$Item_} input
+ * @returns {string} The generated recipe ID
+ */
   let makeRecipeId = (type, output, input) => {
     return _makeID("mekanism", type, output, input);
   };
@@ -76,7 +83,7 @@ function MekanismHelper(event) {
      * @param {$Fluid_} fluidInput
      * @param {$Chemical_} chemicalOutput
      * @param {$Chemical_} chemicalInput
-     * @param {number} duration
+     * @param {number} [duration]
      */
     reaction(
       itemOutput,
@@ -166,7 +173,7 @@ function MekanismHelper(event) {
      * @param {$ItemStack_} itemOutput
      * @param {$ItemStack_} itemInput
      * @param {$Chemical_} chemicalInput
-     * @param {number} duration
+     * @param {number} [duration]
      */
     nucleosynthesizing(itemOutput, itemInput, chemicalInput, duration) {
       let [chemicalAmount, chemicalId] = chemicalInput.split("x ");

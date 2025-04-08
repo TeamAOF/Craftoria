@@ -3,6 +3,12 @@
  * @param {$RecipesKubeEvent_} event
  */
 function ArsNouveauHelper(event) {
+  /**
+   * Generate a recipe ID based on output and recipe type
+   * @param {$Item_} output
+   * @param {string} type
+   * @returns {string} The generated recipe ID
+   */
   let makeRecipeId = (output, type) => {
     if (output.includes("x ")) output = output.split("x ")[1];
     if (output.includes(":")) output = output.split(":")[1];
@@ -15,8 +21,8 @@ function ArsNouveauHelper(event) {
      * @param {$ItemStack_} output The output item (e.g., '4x minecraft:chest'). Required.
      * @param {$ItemStack_} input The input item (e.g., 'minecraft:cobblestone'). Required.
      * @param {$ItemStack_[]} pedestalItems The pedestal items (e.g., ['minecraft:stick', 'minecraft:stick']). Required. Max 8.
-     * @param {number} sourceAmount The source amount (optional, default is 0).
-     * @param {boolean} keepNbt Whether to keep the NBT data of the reagent (optional, default is false).
+     * @param {number} [sourceAmount] The source amount (optional, default is 0).
+     * @param {boolean} [keepNbt] Whether to keep the NBT data of the reagent (optional, default is false).
      */
     enchantingApparatus(output, input, pedestalItems, sourceAmount, keepNbt) {
       let recipe = {
@@ -59,7 +65,7 @@ function ArsNouveauHelper(event) {
      * @param {$ItemStack_} output The output item (e.g., '4x minecraft:chest'). Required.
      * @param {$ItemStack_} input The input item (e.g., 'minecraft:cobblestone'). Required.
      * @param {$ItemStack_[]} pedestalItems The pedestal items (e.g., ['minecraft:stick', 'minecraft:stick']). Required. Max 8.
-     * @param {number} sourceAmount The source amount (optional, default is 1000).
+     * @param {number} [sourceAmount] The source amount (optional, default is 1000).
      */
     imbuementChamber(output, input, pedestalItems, sourceAmount) {
       let recipe = {

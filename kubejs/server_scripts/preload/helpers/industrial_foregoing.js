@@ -4,10 +4,10 @@
  */
 function IndustrialForegoingHelper(event) {
   /**
-   * Generates a consistent recipe ID for Industrial Foregoing
+   * Generate a recipe ID based on output and recipe type
    * @param {string} output
    * @param {string} type
-   * @returns {string}
+   * @returns {string} The generated recipe ID
    */
   let makeRecipeId = (output, type) => {
     let name = output;
