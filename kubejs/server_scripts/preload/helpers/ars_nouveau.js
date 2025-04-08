@@ -27,11 +27,11 @@ function ArsNouveauHelper(event) {
     enchantingApparatus(output, input, pedestalItems, sourceAmount, keepNbt) {
       let recipe = {
         type: "ars_nouveau:enchanting_apparatus",
-        keepNbtOfReagent: keepNbt || false,
+        keepNbtOfReagent: keepNbt ?? false,
         pedestalItems: [],
         reagent: Ingredient.of(input).toJson(),
         result: Item.of(output).toJson(),
-        sourceCost: sourceAmount || 0,
+        sourceCost: sourceAmount ?? 0,
       };
 
       let pedestalItemCount = 0;
@@ -73,7 +73,7 @@ function ArsNouveauHelper(event) {
         pedestalItems: [],
         input: Ingredient.of(input).toJson(),
         output: Item.of(output).toJson(),
-        source: sourceAmount || 1000,
+        source: sourceAmount ?? 1000,
       };
 
       let pedestalItemCount = 0;

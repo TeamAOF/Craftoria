@@ -104,7 +104,7 @@ function MekanismHelper(event) {
         fluid_input: {},
         chemical_input: {},
         chemical_output: {},
-        duration: duration || 100,
+        duration: duration ?? 100,
       };
 
       itemInputListWithCount[0].forEach((item) => {
@@ -183,7 +183,7 @@ function MekanismHelper(event) {
           amount: parseInt(chemicalAmount) || 1000,
           chemical: chemicalId || chemicalInput,
         },
-        duration: duration || 100,
+        duration: duration ?? 100,
         item_input: Ingredient.of(itemInput).toJson(),
         output: Item.of(itemOutput).toJson(),
         per_tick_usage: false,
