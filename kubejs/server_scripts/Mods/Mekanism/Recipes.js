@@ -61,7 +61,7 @@ ServerEvents.recipes((e) => {
   }).id('mekanism:jetpack');
 
   e.shaped('mekanism:jetpack_armored', ['A A', 'BCB', ' D '], {
-    A: 'mekanism:dust_diamond',
+    A: '#c:dusts/diamond',
     B: 'modern_industrialization:bronze_double_ingot',
     C: 'modern_industrialization:steel_block',
     D: 'mekanism:jetpack',

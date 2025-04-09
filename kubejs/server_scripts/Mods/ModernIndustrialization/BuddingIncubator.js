@@ -1,3 +1,5 @@
+const TIME_BUDDING_STAGE = Java.loadClass('com.direwolf20.justdirethings.common.blocks.resources.TimeCrystalBuddingBlock').STAGE;
+
 MIRecipeEvents.customCondition((event) => {
   const buddingConditions = {
     certus_budding: {
@@ -16,21 +18,48 @@ MIRecipeEvents.customCondition((event) => {
       block: 'eternal_starlight:budding_thioquartz',
       text: 'Place Budding Thioquartz in the center to produce Thioquartz Shard.',
     },
+    timecrystal_budding: {
+      block: 'justdirethings:time_crystal_budding_block',
+      text: ['Place Budding Time Crystal to produce Time Crystal.', 'Requires a stage 3 Budding Time Crystal Block.'],
+      blockState: {
+        property: TIME_BUDDING_STAGE,
+        value: TIME_BUDDING_STAGE.max,
+      },
+    },
   };
 
   Object.keys(buddingConditions).forEach((key) => {
     const condition = buddingConditions[key];
     event.register(
       key,
-      (context, recipe) => {
-        let be = context.getBlockEntity();
+      (ctx, recipe) => {
+        let be = ctx.getBlockEntity();
         let direction = be.orientation.facingDirection;
         let pos = be.getBlockPos()['relative(net.minecraft.core.Direction,int)'](direction.getOpposite(), 1).above(1);
-        let level = context.getLevel();
+        let level = ctx.getLevel();
         let state = level.getBlockState(pos);
-        return state.getId() == condition.block;
+
+        if (state.id != condition.block) return false;
+
+        if (condition.blockState) {
+          let blockState = condition.blockState;
+          if (Array.isArray(condition.blockState)) {
+            let allMatch = false;
+            for (let i = 0; i < condition.blockState.length; i++) {
+              blockState = blockState[i];
+
+              if (state.getValue(blockState.property) == blockState.value) {
+                allMatch = true;
+              } else {
+                allMatch = false;
+                break;
+              }
+            }
+            return allMatch;
+          } else return state.getValue(blockState.property) == blockState.value;
+        } else return true;
       },
-      Text.of(condition.text)
+      Text.of(Array.isArray(condition.text) ? condition.text.join('\n') : condition.text)
     );
   });
 });
@@ -39,26 +68,32 @@ ServerEvents.recipes((event) => {
   const budding_incubator = event.recipes.modern_industrialization.budding_incubator;
 
   budding_incubator(32, 500)
-    .fluidIn('water', 1000)
+    .fluidIn('1000x water')
     .itemOut('2x ae2:certus_quartz_crystal')
     .itemOut('ae2:certus_quartz_crystal', 0.33)
     .customCondition('certus_budding');
 
   budding_incubator(32, 500)
-    .fluidIn('water', 1000)
+    .fluidIn('1000x water')
     .itemOut('2x minecraft:amethyst_shard')
     .itemOut('minecraft:amethyst_shard', 0.33)
     .customCondition('amethyst_budding');
 
   budding_incubator(32, 500)
-    .fluidIn('water', 1000)
+    .fluidIn('1000x water')
     .itemOut('2x extendedae:entro_crystal')
     .itemOut('extendedae:entro_crystal', 0.33)
     .customCondition('entro_budding');
 
   budding_incubator(32, 500)
-    .fluidIn('eternal_starlight:ether', 100)
+    .fluidIn('100x eternal_starlight:ether')
     .itemOut('2x eternal_starlight:thioquartz_shard')
     .itemOut('eternal_starlight:thioquartz_shard', 0.33)
     .customCondition('thioquartz_budding');
+
+  budding_incubator(32, 500)
+    .fluidIn('100x justdirethings:time_fluid_source')
+    .itemOut('1x justdirethings:time_crystal')
+    .itemOut('justdirethings:time_crystal', 0.33)
+    .customCondition('timecrystal_budding');
 });

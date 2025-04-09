@@ -88,6 +88,13 @@ ServerEvents.tags('item', (e) => {
     '@farmersdelight',
   ]);
 
+  // Modern Industrialization hammers
+
+  e.add('modern_industrialization:forge_hammer_tools', [
+    'craftoria:flimsy_hammer',
+    /^justhammers:(stone|iron|gold|diamond|netherite)_(impact|reinforced|reinforced_impact|destructor)_hammer$/,
+  ]);
+
   // Some tag fixes
   e.add('minecraft:swords', ['wstweaks:blaze_blade', 'wstweaks:lava_blade', 'industrialforegoing:infinity_hammer']);
   e.add('minecraft:pickaxes', ['industrialforegoing:infinity_drill']);
@@ -169,11 +176,15 @@ ServerEvents.tags('fluid', (e) => {
 });
 
 ServerEvents.tags('entity_type', (e) => {
+  e.add("craftoria:mob_blacklist", ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/, '#neoforge:bosses'])
+
   e.add('ftbchunks:entity_interact_whitelist', ['minecraft:villager', 'minecraft:wandering_trader']);
 
-  e.add('mob_grinding_utils:no_swab', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/, '#neoforge:bosses']);
+  e.add('mob_grinding_utils:no_swab', "#craftoria:mob_blacklist");
 
   e.add('industrialforegoing:mob_crusher_blacklist', ['#c:bosses', '#neoforge:bosses']);
+
+  e.add("industrialforegoing:mob_duplicator_blacklist", "#craftoria:mob_blacklist");
 });
 
 ServerEvents.tags('enchantment', (e) => {
