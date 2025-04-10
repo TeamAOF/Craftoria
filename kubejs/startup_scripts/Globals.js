@@ -37,3 +37,5 @@ global.customMIMachines = [
     casing: 'sky_stone_brick_casing',
   },
 ];
+
+Platform.setModName("craftoria", "Craftoria");
