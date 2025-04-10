@@ -159,7 +159,7 @@ ServerEvents.tags('item', (e) => {
     'supplementaries:jar',
 
     'occultism:storage_controller_stabilized',
-  ];
+  ].concat(replicatorBlacklist);
 
   /**
    * @description Blacklist for Replicator Mk I.
@@ -188,7 +188,7 @@ ServerEvents.tags('item', (e) => {
     'irons_spellbooks:scroll',
     'hostilenetworks:data_model',
     'hostilenetworks:prediction',
-  ];
+  ].concat(replicatorBlacklist);
 
   /** @type {$Ingredient_[]} */
   const replicator_2_exclusions = [
@@ -214,6 +214,6 @@ ServerEvents.tags('item', (e) => {
     'extendedae:void_cell',
   ];
 
-  e.add('modern_industrialization:replicator_blacklist', replicatorBlacklist.concat(replicator_2_blacklist)).remove(replicator_2_exclusions);
-  e.add('craftoria:replicator_1_blacklist', replicatorBlacklist.concat(replicator_1_blacklist)).remove(replicator_1_exclusions);
+  e.add('modern_industrialization:replicator_blacklist', replicator_2_blacklist).remove(replicator_2_exclusions);
+  e.add('craftoria:replicator_1_blacklist', replicator_1_blacklist).remove(replicator_1_exclusions);
 });
