@@ -67,11 +67,13 @@ ServerEvents.tags('item', (e) => {
   ]);
 
   // Modern Industrialization hammers
-
   e.add('modern_industrialization:forge_hammer_tools', [
     'craftoria:flimsy_hammer',
     /^justhammers:(stone|iron|gold|diamond|netherite)_(impact|reinforced|reinforced_impact|destructor)_hammer$/,
   ]);
+
+  // Wooden Tier Storage
+  e.add('craftoria:storage/wooden', ['#c:chests/wooden', '#c:barrels/wooden',]);
 
   // Some tag fixes
   e.add('minecraft:swords', ['wstweaks:blaze_blade', 'wstweaks:lava_blade', 'industrialforegoing:infinity_hammer']);
