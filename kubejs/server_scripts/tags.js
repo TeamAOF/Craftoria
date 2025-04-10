@@ -17,6 +17,8 @@ ServerEvents.tags('item', (e) => {
   e.add('c:crops/garlic', 'dumplings_delight:garlic');
   e.add('c:crops/green_onion', 'dumplings_delight:greenonion');
 
+  e.add("actuallyadditions:coffee_beans", "rusticdelight:coffee_beans")
+
   e.remove('c:crops/garlic', 'dumplings_delight:garlic_clove');
   e.remove('c:foods/garlic', 'dumplings_delight:garlic_clove');
 
