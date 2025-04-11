@@ -22,6 +22,10 @@ ClientEvents.lang('en_us', (e) => {
     'craftoria.endless/boss': 'Endless Boss Gateway',
     'craftoria.bomd': 'Trials of Awaken',
 
+    // Custom Apotheosis Gems
+    "item.apotheosis.gem.apotheosis:core/manatide_gem": "Manatide Gem",
+    "item.apotheosis.gem.apotheosis:core/mana_goo": "Mana Goo",
+
     // Guidebooks
     'craftoria.guide_name': 'Craftoria Guidebook',
     'modern_industrialization.guide_name': 'MI Guidebook',

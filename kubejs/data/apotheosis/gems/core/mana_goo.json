@@ -1,0 +1,46 @@
+{
+  "type": "apotheosis:gem",
+  "constraints": {
+    "dimensions": ["minecraft:overworld"]
+  },
+  "unique": true,
+  "weights": {
+    "pinnacle": {
+      "quality": 2.0,
+      "weight": 50
+    }
+  },
+  "bonuses": [
+    {
+      "type": "apotheosis:multi_attribute",
+      "desc": "bonus.apotheosis:multi_attr.desc.and",
+      "gem_class": "apotheosis:boots",
+      "modifiers": [
+        {
+          "attribute": "ars_nouveau:ars_nouveau.perk.max_mana",
+          "operation": "add_multiplied_total",
+          "values": {
+            "cracked": 0.0125,
+            "chipped": 0.025,
+            "flawed": 0.05,
+            "normal": 0.1,
+            "flawless": 0.15,
+            "perfect": 0.225
+          }
+        },
+        {
+          "attribute": "ars_nouveau:ars_nouveau.perk.mana_regen",
+          "operation": "add_multiplied_total",
+          "values": {
+            "cracked": -0.015,
+            "chipped": -0.035,
+            "flawed": -0.05,
+            "normal": -0.065,
+            "flawless": -0.085,
+            "perfect": -0.1
+          }
+        }
+      ]
+    }
+  ]
+}

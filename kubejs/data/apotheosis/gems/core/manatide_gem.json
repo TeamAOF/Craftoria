@@ -1,0 +1,43 @@
+{
+  "type": "apotheosis:gem",
+  "constraints": {
+    "dimensions": ["minecraft:overworld"]
+  },
+  "min_purity": "flawed",
+  "unique": true,
+  "weights": {
+    "pinnacle": {
+      "quality": 2.0,
+      "weight": 50
+    }
+  },
+  "bonuses": [
+    {
+      "type": "apotheosis:multi_attribute",
+      "desc": "bonus.apotheosis:multi_attr.desc.and",
+      "gem_class": "apotheosis:helmet",
+      "modifiers": [
+        {
+          "attribute": "not_enough_glyphs:not_enough_glyphs.perk.mana_discount",
+          "operation": "add_multiplied_total",
+          "values": {
+            "flawed": 0.1,
+            "normal": 0.125,
+            "flawless": 0.15,
+            "perfect": 0.2
+          }
+        },
+        {
+          "attribute": "minecraft:generic.movement_speed",
+          "operation": "add_multiplied_total",
+          "values": {
+            "flawed": -0.2,
+            "normal": -0.25,
+            "flawless": -0.3,
+            "perfect": -0.35
+          }
+        }
+      ]
+    }
+  ]
+}
