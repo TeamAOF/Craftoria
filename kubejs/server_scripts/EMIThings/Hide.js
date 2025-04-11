@@ -9,8 +9,8 @@ RecipeViewerEvents.removeEntries('item', (event) => {
     event.remove(item);
   });
 
-  removedUpgrades.forEach((item) => {
-    event.remove(item);
+  disabledItems.forEach((item) => {
+    event.remove(item.id);
   });
 });
 

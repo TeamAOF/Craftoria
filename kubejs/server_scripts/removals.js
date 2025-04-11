@@ -20,6 +20,8 @@ const globalItemRemovals = [
   'create:copycat_panel',
 ];
 
+const disabledItems = [];
+
 ServerEvents.recipes((event) => {
   const id = [
     'appflux:inscriber/crush_diamond',
@@ -47,7 +49,21 @@ ServerEvents.recipes((event) => {
     event.remove({ output: output });
   });
 
-  removedUpgrades.forEach((output) => {
-    event.remove(output);
+  disabledItems.forEach((item) => {
+    event.remove(item.id);
   });
 });
+
+/**
+ * Disable item for better alternatives. Works the same way as globalItemRemovals.
+ * @param {$Item_} item - Item to disable.
+ * @param {String} alt - [OPTIONAL] Preferred alternative item name.
+ */
+const disableItem = (item, alt) => {
+  if (disabledItems.some((disabled) => disabled.id === item)) {
+    console.warn(`Item ${item} is already disabled.`);
+    return;
+  }
+  if (alt) disabledItems.push({ id: item, alt: alt });
+  else disabledItems.push({ id: item, alt: null });
+};

@@ -10,11 +10,18 @@ ItemEvents.modifyTooltips((e) => {
     ]);
   });
 
-  removedUpgrades.forEach((item) => {
-    e.add(item, [
-      Text.red('Item has been substituted with Sophisticated Backpacks upgrade'),
-      Text.red('Functionality is preserved')
-    ]);
+  disabledItems.forEach((item) => {
+    if(item.alt === null){
+      e.add(item.id, [
+        Text.red('This item has been disabled in favor of better alternatives.'),
+        Text.red('Its functionality remains intact, but it is no longer craftable.'),
+      ]);
+    }else{
+      e.add(item.id, [
+        Text.red(`This item has been disabled in favor of ${item.alt}.`),
+        Text.red('Its functionality remains intact, but it is no longer craftable.'),
+      ]);
+    }
   });
 
   e.add('pipe_connector:pipe_connector', { shift: true }, [Text.gold('Check EMI for supported pipes.')]);

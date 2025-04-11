@@ -1,5 +1,3 @@
-const removedUpgrades = [];
-
 {
     // Add sophisticatedstorage:upgrade tag to all upgrades from Sophisticated Backpacks
     // except for the ones that are incompatible with sophisticatedstorage.
@@ -17,10 +15,10 @@ const removedUpgrades = [];
         // Hide and remove old upgrades from Sophisticated Storage
         Ingredient.of('#sophisticatedstorage:upgrade').itemIds.forEach((id) => {
             if(!id.includes('sophisticatedbackpacks:')){
-                removedUpgrades.push(id);
+                disableItem(id, 'Sophisticated Backpacks Upgrades');
             };
         });
-        removedUpgrades.push('sophisticatedstorage:upgrade_base');
+        disableItem('sophisticatedstorage:upgrade_base', 'Sophisticated Backpacks Upgrades');
 
         // Add compatibility for Sophisticated Backpacks upgrades to Sophisticated Storage
         Ingredient.of('#sophisticatedbackpacks:upgrade').itemIds.forEach((id) => {
@@ -33,13 +31,14 @@ const removedUpgrades = [];
         e.add('sophisticatedbackpacks:upgrade', ['#sophisticatedstorage:upgrade'])
     });
 
-    ItemEvents.modifyTooltips((e) => {
+    // Add tooltips suggesting compatibility with Sophisticated Storage
+    ItemEvents.modifyTooltips(event => {
+        const disabledSet = new Set(disabledItems.map(item => item.id))
+
         Ingredient.of('#sophisticatedstorage:upgrade').itemIds.forEach((id) => {
-            if(!removedUpgrades.includes(id)){
-                e.add(id, [
-                    Text.gray('Compatible with sophisticated storage.'),
-                ]);
-            }
+          if (!disabledSet.has(id)) {
+            event.add(id, [Text.gray('Compatible with sophisticated storage.')]);
+          }
         });
     });
 }
