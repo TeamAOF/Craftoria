@@ -46,4 +46,8 @@ ServerEvents.recipes((event) => {
   globalItemRemovals.forEach((output) => {
     event.remove({ output: output });
   });
+
+  removedUpgrades.forEach((output) => {
+    event.remove(output);
+  });
 });

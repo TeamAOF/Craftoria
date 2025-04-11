@@ -10,6 +10,13 @@ ItemEvents.modifyTooltips((e) => {
     ]);
   });
 
+  removedUpgrades.forEach((item) => {
+    e.add(item, [
+      Text.red('Item has been substituted with Sophisticated Backpacks upgrade'),
+      Text.red('Functionality is preserved')
+    ]);
+  });
+
   e.add('pipe_connector:pipe_connector', { shift: true }, [Text.gold('Check EMI for supported pipes.')]);
   e.add('#cookingforblockheads:sinks', [Text.red("Doesn't provide infinite water.")]);
   e.add('eternal_starlight:red_starlight_crystal_shard', { shift: false }, holdShift);

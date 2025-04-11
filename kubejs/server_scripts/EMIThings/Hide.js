@@ -8,6 +8,10 @@ RecipeViewerEvents.removeEntries('item', (event) => {
   globalItemRemovals.forEach((item) => {
     event.remove(item);
   });
+
+  removedUpgrades.forEach((item) => {
+    event.remove(item);
+  });
 });
 
 RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
