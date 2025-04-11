@@ -144,8 +144,8 @@ ServerEvents.recipes((event) => {
     gems: ['celestigem', 'coal_t1', 'coal_t2', 'coal_t3', 'coal_t4'],
   };
 
-  Object.keys(jdtOres).forEach((oreType) => {
-    jdtOres[oreType].forEach((ore) => {
+  Object.entries(jdtOres).forEach(([oreType, ores]) => {
+    ores.forEach((ore) => {
       let output = oreType === 'metals' ? `4x justdirethings:raw_${ore}` : `4x justdirethings:${ore}`;
       let input = `justdirethings:raw_${ore}_ore`;
 

@@ -20,7 +20,6 @@ let checkTagSize = (tag) => {
   else return 0;
 };
 
-// Sort the array by modPriority.
 let sortArray = (array) => {
   return array.sort((a, b) => {
     a = `${a}`;
@@ -41,7 +40,7 @@ let sortArray = (array) => {
 ServerEvents.tags('item', (e) => {
   let tags = [];
 
-  for (let [material, types] of Object.entries(materials)) {
+  for (let [material, types] in materials) {
     switch (material) {
       case 'metals':
         metals.forEach((metal) => {
@@ -72,7 +71,7 @@ ServerEvents.tags('item', (e) => {
   }
 
   tags.forEach((tag) => {
-    let items = e.get(tag).getObjectIds();
+    let items = e.get(tag).objectIds;
     let sortedItems = [];
     items.forEach((item) => {
       sortedItems.push(item);
@@ -83,10 +82,39 @@ ServerEvents.tags('item', (e) => {
       e.add(tag, sortedItems);
     }
   });
+
+  const whitelistedIDs = [
+    'dust_iridium',
+    'dust_nickel',
+    'dust_platinum',
+    'dust_silver',
+    'dust_titanium',
+    'dust_tungsten',
+    'dust_zinc',
+  ];
+  const tagsToCheck = ['c:gems', 'c:dusts'];
+  tagsToCheck.forEach((tag) => {
+    e.get(tag).objectIds.forEach((id) => {
+      if (id.namespace === 'moremekanismprocessing') {
+        if (!whitelistedIDs.includes(id.path)) {
+          if (debug) console.log(`Removing tags from: ${id}`);
+          e.removeAllTagsFrom(id);
+        }
+      }
+    });
+  });
 });
 
 ServerEvents.recipes((e) => {
-  let replaceFilters = ['minecraft:crafting_shaped', 'minecraft:crafting_shapeless', 'minecraft:smelting', 'minecraft:blasting'];
+  const ars = ArsNouveauHelper(e);
+  const ae2 = AE2Helper(e);
+
+  let replaceFilters = [
+    'minecraft:crafting_shaped',
+    'minecraft:crafting_shapeless',
+    'minecraft:smelting',
+    'minecraft:blasting',
+  ];
 
   let tryReplace = (replace) => {
     let replaceWith = getItemFromTag(replace);
@@ -98,11 +126,11 @@ ServerEvents.recipes((e) => {
       e.replaceOutput(filters, replace, replaceWith);
       e.replaceInput(filters, replace, replace);
     } else if (debug) {
-      console.error(`Could not find item for tag: ${replace}`);
+      console.warn(`Could not find item for tag: ${replace}`);
     }
   };
 
-  for (let [material, types] of Object.entries(materials)) {
+  Object.entries(materials).forEach(([material, types]) => {
     switch (material) {
       case 'metals':
         metals.forEach((metal) => {
@@ -130,36 +158,9 @@ ServerEvents.recipes((e) => {
         console.error(`Unknown material: ${material}`);
         break;
     }
-  }
+  });
 
   e.replaceInput({}, 'minecraft:ender_pearl', '#c:ender_pearls');
-
-  let enchApparatusRecipe = (output, inputs, reagent, keepNbtOfReagent, sourceCost, id) => {
-    output = Item.of(output).toJson();
-    inputs = inputs.map((input) => Ingredient.of(input).toJson());
-    reagent = Ingredient.of(reagent).toJson();
-
-    e.custom({
-      type: 'ars_nouveau:enchanting_apparatus',
-      keepNbtOfReagent: keepNbtOfReagent,
-      reagent: reagent,
-      result: output,
-      pedestalItems: inputs,
-      sourceCost: sourceCost,
-    }).id(id);
-  };
-
-  let glyphRecipe = (output, inputs, xpCost, id) => {
-    output = Item.of(output).toJson();
-    inputs = inputs.map((input) => Ingredient.of(input).toJson());
-
-    e.custom({
-      type: 'ars_nouveau:glyph',
-      output: output,
-      inputs: inputs,
-      exp: xpCost,
-    }).id(id);
-  };
 
   e.custom({
     type: 'tankstorage:tank_link',
@@ -187,8 +188,9 @@ ServerEvents.recipes((e) => {
     result: { id: 'bankstorage:bank_link', count: 1 },
   }).id('bankstorage:bank_link');
 
-  enchApparatusRecipe(
+  ars.enchantingApparatus(
     'ars_additions:ender_source_jar',
+    'ars_nouveau:source_jar',
     [
       '#c:ender_pearls',
       '#c:ender_pearls',
@@ -199,72 +201,70 @@ ServerEvents.recipes((e) => {
       'minecraft:popped_chorus_fruit',
       'minecraft:popped_chorus_fruit',
     ],
-    'ars_nouveau:source_jar',
-    false,
     0,
+    false,
     'ars_additions:apparatus/ender_source_jar'
   );
 
-  enchApparatusRecipe(
+  ars.enchantingApparatus(
     'ars_additions:unstable_reliquary',
-    ['ars_nouveau:conjuration_essence', 'ars_nouveau:manipulation_essence', '#c:ender_pearls'],
     'ars_nouveau:mob_jar',
-    false,
+    [
+      'ars_nouveau:conjuration_essence',
+      'ars_nouveau:manipulation_essence',
+      '#c:ender_pearls',
+    ],
     0,
+    false,
     'ars_additions:apparatus/unstable_reliquary'
   );
 
-  enchApparatusRecipe(
+  ars.enchantingApparatus(
     'ars_nouveau:thread_wild_magic',
-    ['#c:ender_pearls', 'minecraft:rabbit_foot', 'minecraft:bone'],
     'ars_nouveau:blank_thread',
-    false,
+    ['#c:ender_pearls', 'minecraft:rabbit_foot', 'minecraft:bone'],
     0,
+    false,
     'ars_nouveau:thread_wild_magic'
   );
 
-  glyphRecipe(
+  ars.glyph(
     'ars_additions:glyph_recall',
-    ['ars_nouveau:conjuration_essence', '#c:ender_pearls', 'ars_nouveau:scryer_scroll', 'ars_nouveau:enchanters_eye'],
+    [
+      'ars_nouveau:conjuration_essence',
+      '#c:ender_pearls',
+      'ars_nouveau:scryer_scroll',
+      'ars_nouveau:enchanters_eye',
+    ],
     160,
     'ars_additions:glyph_recall'
   );
 
-  glyphRecipe(
+  ars.glyph(
     'ars_additions:glyph_mark',
-    ['ars_nouveau:manipulation_essence', '#c:ender_pearls', 'ars_nouveau:mob_jar', 'ars_nouveau:ritual_containment'],
+    [
+      'ars_nouveau:manipulation_essence',
+      '#c:ender_pearls',
+      'ars_nouveau:mob_jar',
+      'ars_nouveau:ritual_containment',
+    ],
     160,
     'ars_additions:glyph_mark'
   );
 
-  glyphRecipe(
+  ars.glyph(
     'ars_elemental:glyph_arc_projectile',
     ['minecraft:arrow', 'minecraft:snowball', 'minecraft:slime_ball', '#c:ender_pearls'],
     55,
     'ars_elemental:glyph_arc_projectile'
   );
 
-  e.custom({
-    type: 'ae2:inscriber',
-    ingredients: {
-      middle: Ingredient.of('#c:ender_pearls').toJson(),
-    },
-    mode: 'inscribe',
-    result: Item.of('ae2:ender_dust').toJson(),
-  }).id('ae2:inscriber/ender_dust');
-});
-
-ServerEvents.tags('item', (e) => {
-  const whitelistedIDs = ['dust_iridium', 'dust_nickel', 'dust_platinum', 'dust_silver', 'dust_titanium', 'dust_tungsten', 'dust_zinc'];
-  const tagsToCheck = ['c:gems', 'c:dusts'];
-  tagsToCheck.forEach((tag) => {
-    e.get(tag).objectIds.forEach((id) => {
-      if (id.namespace === 'moremekanismprocessing') {
-        if (!whitelistedIDs.includes(id.path)) {
-          console.log(`Removing tags from: ${id}`);
-          e.removeAllTagsFrom(id);
-        }
-      }
-    });
-  });
+  ae2.inscriber(
+    'inscribe',
+    'ae2:ender_dust',
+    '#c:ender_pearls',
+    null,
+    null,
+    'ae2:inscriber/ender_dust_press'
+  );
 });

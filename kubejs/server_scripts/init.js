@@ -13,11 +13,11 @@
 let debug = false;
 
 // Used for tooltips
-let holdShift = Text.gold("Hold [Shift] for more information");
+let holdShift = Text.gold('Hold [Shift] for more information');
 // Used for recipe IDs
-let _makeID = (mod, type, output, input) => {
-  output = output.split(":")[1].replace(" ", "_");
-  input = input.split(":")[1].replace(" ", "_");
+let _makeRecipeID = (mod, type, output, input) => {
+  output = output.split(':')[1].replace(' ', '_');
+  input = input.split(':')[1].replace(' ', '_');
 
   //console.info(`ID: craftoria:${mod}/${type}/${output}_from_${input}`);
   return `craftoria:${mod}/${type}/${output}_from_${input}`;

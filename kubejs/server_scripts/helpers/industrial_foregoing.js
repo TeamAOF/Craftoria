@@ -5,22 +5,22 @@
 function IndustrialForegoingHelper(event) {
   /**
    * Generate a recipe ID based on output and recipe type
-   * @param {string} output
    * @param {string} type
+   * @param {string} output
    * @returns {string} The generated recipe ID
    */
-  let makeRecipeId = (output, type) => {
+  let makeRecipeId = (type, output) => {
     let name = output;
     let amount = 1;
 
-    if (name.includes("x ")) {
-      [amount, name] = name.split("x ");
+    if (name.includes('x ')) {
+      [amount, name] = name.split('x ');
       amount = parseInt(amount);
     }
 
     if (Item.exists(name)) name = Item.of(name).registryId.path;
     else if (Fluid.exists(name)) name = Fluid.of(name).registryId.path;
-    else if (name.includes("[")) name = name.split("[")[0];
+    else if (name.includes('[')) name = name.split('[')[0];
 
     return `craftoria:industrial_foregoing/${type}/${amount}_${name}`;
   };
@@ -31,10 +31,11 @@ function IndustrialForegoingHelper(event) {
      * @param {Special.BlockTag[] | Special.Block[]} blockInput
      * @param {Special.Block} blockOutput
      * @param {number} [breakChance=0]
+     * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
      */
-    fluidExtraction(fluidOutput, blockInput, blockOutput, breakChance) {
+    fluidExtraction(fluidOutput, blockInput, blockOutput, breakChance, recipeID) {
       let recipe = {
-        type: "industrialforegoing:fluid_extractor",
+        type: 'industrialforegoing:fluid_extractor',
         breakChance: breakChance ?? 0,
         defaultRecipe: false,
         input: Ingredient.of(blockInput).toJson(),
@@ -44,7 +45,7 @@ function IndustrialForegoingHelper(event) {
         },
       };
 
-      event.custom(recipe).id(makeRecipeId(fluidOutput, "fluid_extractor"));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('fluid_extractor', fluidOutput));
     },
 
     /**
@@ -53,16 +54,11 @@ function IndustrialForegoingHelper(event) {
      * @param {number} [processingTime=100]
      * @param {$FluidIngredient_} [fluidInput]
      * @param {$Fluid_} [fluidOutput]
+     * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
      */
-    dissolutionChamber(
-      itemOutput,
-      itemInputs,
-      processingTime,
-      fluidInput,
-      fluidOutput
-    ) {
+    dissolutionChamber(itemOutput, itemInputs, processingTime, fluidInput, fluidOutput, recipeID) {
       let recipe = {
-        type: "industrialforegoing:dissolution_chamber",
+        type: 'industrialforegoing:dissolution_chamber',
         input: itemInputs.map((i) => Ingredient.of(i).toJson()),
         output: Item.of(itemOutput).toJson(),
         processingTime: processingTime ?? 100,
@@ -73,28 +69,29 @@ function IndustrialForegoingHelper(event) {
       }
 
       if (fluidInput) {
-        if (typeof fluidInput === "string" && fluidInput.includes("#")) {
-          let [amount, tag] = fluidInput.split("x ");
+        if (typeof fluidInput === 'string' && fluidInput.includes('#')) {
+          let [amount, tag] = fluidInput.split('x ');
           recipe.inputFluid = {
             amount: parseInt(amount),
-            tag: tag.replace("#", ""),
+            tag: tag.replace('#', ''),
           };
         } else {
           recipe.inputFluid = Fluid.of(fluidInput).toJson();
         }
       }
 
-      event.custom(recipe).id(makeRecipeId(itemOutput, "dissolution_chamber"));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('dissolution_chamber', itemOutput));
     },
 
     /**
      * @param {$Item_} itemOutput
      * @param {$Item_} catalyst
      * @param {$List_<$LaserDrillRarity> | $LaserDrillRarity} [rarityList]
+     * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
      */
-    oreLaserDrilling(itemOutput, catalyst, rarityList) {
+    oreLaserDrilling(itemOutput, catalyst, rarityList, recipeID) {
       let recipe = {
-        type: "industrialforegoing:laser_drill_ore",
+        type: 'industrialforegoing:laser_drill_ore',
         catalyst: Item.of(catalyst).toJson(),
         output: Item.of(itemOutput).toJson(),
         rarity: [],
@@ -112,7 +109,7 @@ function IndustrialForegoingHelper(event) {
             depth_max: 132,
             depth_min: 5,
             dimension_filter: {
-              blacklist: ["minecraft:the_end"],
+              blacklist: ['minecraft:the_end'],
               whitelist: [],
             },
             weight: 10,
@@ -122,7 +119,7 @@ function IndustrialForegoingHelper(event) {
             depth_max: 255,
             depth_min: 0,
             dimension_filter: {
-              blacklist: ["minecraft:the_end"],
+              blacklist: ['minecraft:the_end'],
               whitelist: [],
             },
             weight: 4,
@@ -130,7 +127,7 @@ function IndustrialForegoingHelper(event) {
         );
       }
 
-      event.custom(recipe).id(makeRecipeId(itemOutput, "ore_laser_drill"));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('laser_drill_ore', itemOutput));
     },
   };
 }

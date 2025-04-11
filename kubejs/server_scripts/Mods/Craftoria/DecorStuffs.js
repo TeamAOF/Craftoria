@@ -52,8 +52,8 @@ ServerEvents.tags('item', (e) => {
 
 ServerEvents.recipes((e) => {
   let recipeIDs = [];
-  const makeId = (output, input) => {
-    let recipeID = _makeID('decor_stuffs', 'stonecutting', output, input);
+  const makeRecipeID = (output, input) => {
+    let recipeID = _makeRecipeID('decor_stuffs', 'stonecutting', output, input);
     if (!recipeIDs.includes(recipeID)) recipeIDs.push(recipeID);
     else {
       // console.warn(`Duplicate recipe ID: ${recipeID}, adding a suffix`);
@@ -69,7 +69,11 @@ ServerEvents.recipes((e) => {
     .except('rechiseled:chisel')
     .stacks.forEach((item) => {
       const material = getMaterial(item.id);
-      if (material) e.stonecutting(item.id, [Ingredient.of(`#rechiseled:${material}`), `minecraft:${material}`]).id(makeId(item.id, `rechiseled:${material}`));
+      if (material)
+        e.stonecutting(item.id, [
+          Ingredient.of(`#rechiseled:${material}`),
+          `minecraft:${material}`,
+        ]).id(makeRecipeID(item.id, `rechiseled:${material}`));
     });
 
   let chippedThings = [];
@@ -84,11 +88,15 @@ ServerEvents.recipes((e) => {
 
   chippedThings.forEach((tag) => {
     Ingredient.of(tag).stacks.forEach((item) => {
-      e.stonecutting(item.id, [tag, `minecraft:${tag.split(':')[1]}`]).id(makeId(item.id, tag));
+      e.stonecutting(item.id, [tag, `minecraft:${tag.split(':')[1]}`]).id(
+        makeRecipeID(item.id, tag)
+      );
     });
   });
 
   Ingredient.of('#factory_blocks:factory').stacks.forEach((item) => {
-    e.stonecutting(item.id, '#factory_blocks:factory').id(makeId(item.id, 'factory_blocks:factory'));
+    e.stonecutting(item.id, '#factory_blocks:factory').id(
+      makeRecipeID(item.id, 'factory_blocks:factory')
+    );
   });
 });

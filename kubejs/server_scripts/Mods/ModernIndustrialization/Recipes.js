@@ -3,17 +3,32 @@
 ////////////////////////
 
 ServerEvents.recipes((e) => {
-  const mi = ModernIndustrializationHelper(e);
-  const assembler = e.recipes.modern_industrialization.assembler;
+  const { assembler, macerator, compressor, cutting_machine, electrolyzer } =
+    e.recipes.modern_industrialization;
 
   // Obsidian Dust
-  mi.macerator(['minecraft:obsidian', 1], [['mekanism:dust_obsidian', 4]], 2, 200);
+  macerator(2, 100)
+    .itemOut('4x mekanism:dust_obsidian')
+    .itemIn('#c:obsidians/normal')
+    .id('craftoria:mi/obsidian_dust');
 
   // Ores > Raw
-  mi.macerator(['#c:ores/silver', 1], [['modern_industrialization:raw_silver', 3]], 2, 100);
-  mi.macerator(['#c:ores/mithril', 1], [['irons_spellbooks:raw_mithril', 3]], 2, 100);
-  mi.macerator(['#c:ores/black_quartz', 1], [['actuallyadditions:black_quartz', 2]], 2, 100);
-  mi.macerator(['#c:ores/zinc', 1], [['create:raw_zinc', 3]], 2, 100);
+  macerator(2, 100)
+    .itemOut('3x modern_industrialization:raw_silver')
+    .itemIn('#c:ores/silver')
+    .id('craftoria:mi/ores/raw_silver');
+  macerator(2, 100)
+    .itemOut('3x irons_spellbooks:raw_mithril')
+    .itemIn('#c:ores/mithril')
+    .id('craftoria:mi/ores/raw_mithril');
+  macerator(2, 100)
+    .itemOut('2x actuallyadditions:black_quartz')
+    .itemIn('#c:ores/black_quartz')
+    .id('craftoria:mi/ores/black_quartz');
+  macerator(2, 100)
+    .itemOut('3x create:raw_zinc')
+    .itemIn('#c:ores/zinc')
+    .id('craftoria:mi/ores/raw_zinc');
 
   e.replaceInput(
     { id: 'industrialization_overdrive:machines/multi_processing_array/craft' },
@@ -22,16 +37,15 @@ ServerEvents.recipes((e) => {
   );
 
   // Mekanism Compat
-  mi.macerator(
-    ['#c:ores/fluorite', 1],
-    [
-      ['mekanism:dust_fluorite', 4],
-      ['mekanism:dust_fluorite', 4, 0.75],
-    ],
-    2,
-    100
-  );
-  mi.compressor(['#c:dusts/fluorite', 1], ['mekanism:fluorite_gem', 1], 2, 50);
+  macerator(2, 100)
+    .itemOut('4x mekanism:dust_fluorite')
+    .itemOut('4x mekanism:dust_fluorite', 0.75)
+    .itemIn('#c:ores/fluorite')
+    .id('craftoria:mi/ores/fluorite_dust');
+  compressor(2, 50)
+    .itemOut('mekanism:fluorite_gem')
+    .itemIn('#c:dusts/fluorite')
+    .id('craftoria:mi/ores/fluorite_gem');
 
   e.shaped('mi_tweaks:flux_transformer', ['SS ', ' HC', 'SS '], {
     S: 'modern_industrialization:superconductor_cable',
@@ -40,15 +54,22 @@ ServerEvents.recipes((e) => {
   }).id('mi_tweaks:flux_transformer');
 
   ['gold', 'iron'].forEach((material) => {
-    e.replaceInput({ mod: 'modern_industrialization' }, `#c:gears/${material}`, `modern_industrialization:${material}_gear`);
+    e.replaceInput(
+      { mod: 'modern_industrialization' },
+      `#c:gears/${material}`,
+      `modern_industrialization:${material}_gear`
+    );
   });
 
   e.remove({ output: 'replication:replica_ingot' });
-  mi.electrolyzer(['advanced_ae:quantum_infusion_source', 200], ['replication:raw_replica', 1], null, ['replication:replica_ingot', 1], 8, 60)
+  electrolyzer(8, 60)
+    .itemOut('replication:replica_ingot')
+    .itemIn('replication:raw_replica')
+    .fluidIn('200x advanced_ae:quantum_infusion_source')
+    .id('craftoria:mi/replication/replica_ingot_from_raw_replica');
 
   let cuttingMachine = (output, input) => {
-    e.recipes.modern_industrialization
-      .cutting_machine(2, 100)
+    cutting_machine(2, 100)
       .itemIn(input)
       .itemOut(output)
       .fluidIn('1x modern_industrialization:lubricant')
@@ -85,14 +106,17 @@ ServerEvents.recipes((e) => {
     let logTag = `#${baseID}_logs`;
 
     if (madeCuttingRecipeFor.includes(plank)) return;
-    if (modID === 'twilightforest' && Ingredient.of(logTag).empty) logTag = `#twilightforest:${type}wood_logs`;
+    if (modID === 'twilightforest' && Ingredient.of(logTag).empty)
+      logTag = `#twilightforest:${type}wood_logs`;
 
     if (Item.exists(strippedLog)) cuttingMachine(strippedLog, id);
-    if (Item.exists(wood) && Item.exists(strippedWood)) cuttingMachine(strippedWood, wood);
+    if (Item.exists(wood) && Item.exists(strippedWood))
+      cuttingMachine(strippedWood, wood);
 
     if (!madeCuttingRecipeFor.includes(plank)) {
       if (Item.exists(plank)) {
-        if (!Ingredient.of(`#${modID}:${type}_logs`).empty) cuttingMachine(`6x ${plank}`, `#${modID}:${type}_logs`);
+        if (!Ingredient.of(`#${modID}:${type}_logs`).empty)
+          cuttingMachine(`6x ${plank}`, `#${modID}:${type}_logs`);
         else {
           cuttingMachine(`6x ${plank}`, id);
           if (Item.exists(strippedLog)) cuttingMachine(`6x ${plank}`, strippedLog);
@@ -109,7 +133,7 @@ ServerEvents.recipes((e) => {
     .itemOut('modern_industrialization:large_plasma_turbine')
     .itemIn('64x modern_industrialization:plasma_turbine')
     .itemIn('4x modern_industrialization:quantum_upgrade')
-    .id('modern_industrialization:assembler_generated/quantum_age/generators/large_plasma_turbine');
+    .id('craftoria:mi/assembler/large_plasma_turbine');
 
   assembler(16, 200)
     .itemOut('modern_industrialization:budding_incubator')
@@ -117,5 +141,5 @@ ServerEvents.recipes((e) => {
     .itemIn('4x modern_industrialization:electronic_circuit')
     .itemIn('modern_industrialization:large_pump')
     .itemIn('modern_industrialization:advanced_machine_hull')
-    .id('modern_industrialization:assembler_generated/electric_age/custom/budding_incubator');
+    .id('craftoria:mi/assembler/budding_incubator');
 });

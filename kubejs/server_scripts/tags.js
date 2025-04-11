@@ -17,7 +17,7 @@ ServerEvents.tags('item', (e) => {
   e.add('c:crops/garlic', 'dumplings_delight:garlic');
   e.add('c:crops/green_onion', 'dumplings_delight:greenonion');
 
-  e.add("actuallyadditions:coffee_beans", "rusticdelight:coffee_beans")
+  e.add('actuallyadditions:coffee_beans', 'rusticdelight:roasted_coffee_beans');
 
   e.remove('c:crops/garlic', 'dumplings_delight:garlic_clove');
   e.remove('c:foods/garlic', 'dumplings_delight:garlic_clove');
@@ -97,7 +97,7 @@ ServerEvents.tags('item', (e) => {
   ]);
 
   // Wooden Tier Storage
-  e.add('craftoria:storage/wooden', ['#c:chests/wooden', '#c:barrels/wooden',]);
+  e.add('craftoria:storage/wooden', ['#c:chests/wooden', '#c:barrels/wooden']);
 
   // Some tag fixes
   e.add('minecraft:swords', ['wstweaks:blaze_blade', 'wstweaks:lava_blade', 'industrialforegoing:infinity_hammer']);
@@ -115,6 +115,9 @@ ServerEvents.tags('item', (e) => {
   e.remove('plonk:unplaceable', ['plonk:placed_items']);
 
   e.add('industrialization_overdrive:multi_processing_array_blacklist', ['modern_industrialization:budding_incubator']);
+
+  e.add('craftoria:grass', ['#biomeswevegone:grass', 'minecraft:short_grass', 'minecraft:seagrass']);
+  e.add('craftoria:tall_grass', ['#biomeswevegone:grass/tall', 'minecraft:tall_grass']);
 });
 
 ServerEvents.tags('block', (e) => {
@@ -180,15 +183,21 @@ ServerEvents.tags('fluid', (e) => {
 });
 
 ServerEvents.tags('entity_type', (e) => {
-  e.add("craftoria:mob_blacklist", ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/, '#neoforge:bosses'])
+  e.add('craftoria:mob_blacklist', [
+    'artifacts:mimic',
+    'minecraft:warden',
+    '#c:bosses',
+    /^occultism:(?!possessed).*$/,
+    '#neoforge:bosses',
+  ]);
 
   e.add('ftbchunks:entity_interact_whitelist', ['minecraft:villager', 'minecraft:wandering_trader']);
 
-  e.add('mob_grinding_utils:no_swab', "#craftoria:mob_blacklist");
+  e.add('mob_grinding_utils:no_swab', '#craftoria:mob_blacklist');
 
   e.add('industrialforegoing:mob_crusher_blacklist', ['#c:bosses', '#neoforge:bosses']);
 
-  e.add("industrialforegoing:mob_duplicator_blacklist", "#craftoria:mob_blacklist");
+  e.add('industrialforegoing:mob_duplicator_blacklist', '#craftoria:mob_blacklist');
 });
 
 ServerEvents.tags('enchantment', (e) => {

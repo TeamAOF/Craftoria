@@ -1,6 +1,6 @@
 ServerEvents.recipes((e) => {
-  let makeID = (type, input, output) => {
-    return _makeID('farmersdelight', type, input, output);
+  let makeRecipeID = (type, input, output) => {
+    return _makeRecipeID('farmersdelight', type, input, output);
   };
 
   let CuttingBoard = (outputs, inputs, tool, isAbility, sound) => {
@@ -41,7 +41,7 @@ ServerEvents.recipes((e) => {
     } else {
       recipe.tool = Ingredient.of(tool).toJson();
     }
-    e.custom(recipe).id(makeID('cutting', recipeID[0], recipeID[1]));
+    e.custom(recipe).id(makeRecipeID('cutting', recipeID[0], recipeID[1]));
   };
 
   ['minecraft:bread', 'moredelight:bread_slice'].forEach((toastItem) => {

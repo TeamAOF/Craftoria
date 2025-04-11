@@ -30,25 +30,22 @@
 function ModernIndustrializationHelper(event) {
   /**
    * Generates a recipe ID based on output and inputs
+   * @param {string} type The type of recipe (e.g., "assembler")
    * @param {MIRecipe} recipe The recipe object
    * @returns {string} The generated recipe ID
    */
-  let makeRecipeId = (recipe) => {
+  let makeRecipeId = (type, recipe) => {
     let output = recipe.item_outputs[0];
-    let outputString = `${output.item.split(":")[1]}_${output.amount}x`;
+    let outputString = `${output.item.split(':')[1]}_${output.amount}x`;
 
-    let inputString = "with_";
+    let inputString = 'with_';
     if (recipe.fluid_inputs?.length > 0) {
-      inputString += recipe.fluid_inputs
-        .map((input) => (input.fluid || input.tag).split(":")[1])
-        .join("_");
+      inputString += recipe.fluid_inputs.map((input) => (input.fluid || input.tag).split(':')[1]).join('_');
     } else {
-      inputString += recipe.item_inputs
-        .map((input) => (input.item || input.tag).split(":")[1])
-        .join("_");
+      inputString += recipe.item_inputs.map((input) => (input.item || input.tag).split(':')[1]).join('_');
     }
 
-    return `${outputString}_${inputString}`;
+    return `craftoria:mi/${type}/${outputString}_${inputString}`;
   };
 
   /**
@@ -81,7 +78,7 @@ function ModernIndustrializationHelper(event) {
       let [item, amount, probability] = input;
       let processed = {};
 
-      if (item.includes("#")) {
+      if (item.includes('#')) {
         processed.tag = item.slice(1); // to handle the tag
       } else {
         processed.item = item;
@@ -130,10 +127,7 @@ function ModernIndustrializationHelper(event) {
     }
     /** @param {MIItem} output */
     let processSingleOutput = (output) => {
-      if (
-        !Array.isArray(output) ||
-        (output.length !== 2 && output.length !== 3)
-      ) {
+      if (!Array.isArray(output) || (output.length !== 2 && output.length !== 3)) {
         console.error(`Invalid item output format: ${output}`);
         console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
         return;
@@ -194,8 +188,7 @@ function ModernIndustrializationHelper(event) {
       let processed = {};
 
       processed.amount = amount;
-      processed[fluid.includes("#") || fluid.includes("c:") ? "tag" : "fluid"] =
-        fluid;
+      processed[fluid.includes('#') || fluid.includes('c:') ? 'tag' : 'fluid'] = fluid;
 
       if (probability !== undefined) {
         processed.probability = probability;
@@ -237,10 +230,7 @@ function ModernIndustrializationHelper(event) {
     }
     /** @param {MIFluid} output */
     let processSingleOutput = (output) => {
-      if (
-        !Array.isArray(output) ||
-        (output.length !== 2 && output.length !== 3)
-      ) {
+      if (!Array.isArray(output) || (output.length !== 2 && output.length !== 3)) {
         console.error(`Invalid fluid output format: ${output}`);
         console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
         return;
@@ -282,7 +272,7 @@ function ModernIndustrializationHelper(event) {
      */
     assembler(fluidInputs, itemInputs, itemOutputs, eu, duration) {
       let recipe = {
-        type: "modern_industrialization:assembler",
+        type: 'modern_industrialization:assembler',
         duration: duration,
         eu: eu,
         fluid_inputs: [],
@@ -294,11 +284,7 @@ function ModernIndustrializationHelper(event) {
       processItemInputs(itemInputs, recipe, 9);
       processItemOutputs(itemOutputs, recipe, 3);
 
-      event
-        .custom(recipe)
-        .id(
-          `craftoria:modern_industrialization/assembler/${makeRecipeId(recipe)}`
-        );
+      event.custom(recipe).id(`${makeRecipeId('assembler', recipe)}`);
     },
 
     /**
@@ -310,16 +296,9 @@ function ModernIndustrializationHelper(event) {
      * @param {number} eu
      * @param {number} duration
      */
-    electrolyzer(
-      fluidInput,
-      itemInput,
-      fluidOutputs,
-      itemOutputs,
-      eu,
-      duration
-    ) {
+    electrolyzer(fluidInput, itemInput, fluidOutputs, itemOutputs, eu, duration) {
       let recipe = {
-        type: "modern_industrialization:electrolyzer",
+        type: 'modern_industrialization:electrolyzer',
         duration: duration,
         eu: eu,
         fluid_inputs: [],
@@ -333,13 +312,7 @@ function ModernIndustrializationHelper(event) {
       processItemInputs(itemInput, recipe, 1);
       processItemOutputs(itemOutputs, recipe, 4);
 
-      event
-        .custom(recipe)
-        .id(
-          `craftoria:modern_industrialization/electrolyzer/${makeRecipeId(
-            recipe
-          )}`
-        );
+      event.custom(recipe).id(makeRecipeId('electrolyzer', recipe));
     },
 
     /**
@@ -351,7 +324,7 @@ function ModernIndustrializationHelper(event) {
      */
     packer(itemInputs, itemOutput, eu, duration) {
       let recipe = {
-        type: "modern_industrialization:packer",
+        type: 'modern_industrialization:packer',
         duration: duration,
         eu: eu,
         item_inputs: [],
@@ -361,11 +334,7 @@ function ModernIndustrializationHelper(event) {
       processItemInputs(itemInputs, recipe, 3);
       processItemOutputs([itemOutput], recipe, 1);
 
-      event
-        .custom(recipe)
-        .id(
-          `craftoria:modern_industrialization/packer/${makeRecipeId(recipe)}`
-        );
+      event.custom(recipe).id(makeRecipeId('packer', recipe));
     },
 
     /**
@@ -377,7 +346,7 @@ function ModernIndustrializationHelper(event) {
      */
     unpacker(itemInput, itemOutputs, eu, duration) {
       let recipe = {
-        type: "modern_industrialization:unpacker",
+        type: 'modern_industrialization:unpacker',
         duration: duration,
         eu: eu,
         item_inputs: [],
@@ -387,11 +356,7 @@ function ModernIndustrializationHelper(event) {
       processItemInputs([itemInput], recipe, 1);
       processItemOutputs(itemOutputs, recipe, 2);
 
-      event
-        .custom(recipe)
-        .id(
-          `craftoria:modern_industrialization/unpacker/${makeRecipeId(recipe)}`
-        );
+      event.custom(recipe).id(makeRecipeId('unpacker', recipe));
     },
 
     /**
@@ -405,7 +370,7 @@ function ModernIndustrializationHelper(event) {
      */
     mixer(fluidInputs, itemInputs, fluidOutputs, itemOutputs, eu, duration) {
       let recipe = {
-        type: "modern_industrialization:mixer",
+        type: 'modern_industrialization:mixer',
         duration: duration,
         eu: eu,
         fluid_inputs: [],
@@ -419,9 +384,7 @@ function ModernIndustrializationHelper(event) {
       processItemInputs(itemInputs, recipe, 4);
       processItemOutputs(itemOutputs, recipe, 2);
 
-      event
-        .custom(recipe)
-        .id(`craftoria:modern_industrialization/mixer/${makeRecipeId(recipe)}`);
+      event.custom(recipe).id(makeRecipeId('mixer', recipe));
     },
 
     /**
@@ -433,16 +396,9 @@ function ModernIndustrializationHelper(event) {
      * @param {number} eu
      * @param {number} duration
      */
-    chemicalReactor(
-      fluidInputs,
-      itemInputs,
-      fluidOutputs,
-      itemOutputs,
-      eu,
-      duration
-    ) {
+    chemicalReactor(fluidInputs, itemInputs, fluidOutputs, itemOutputs, eu, duration) {
       let recipe = {
-        type: "modern_industrialization:chemical_reactor",
+        type: 'modern_industrialization:chemical_reactor',
         duration: duration,
         eu: eu,
         fluid_inputs: [],
@@ -456,13 +412,7 @@ function ModernIndustrializationHelper(event) {
       processItemInputs(itemInputs, recipe, 3);
       processItemOutputs(itemOutputs, recipe, 3);
 
-      event
-        .custom(recipe)
-        .id(
-          `craftoria:modern_industrialization/chemical_reactor/${makeRecipeId(
-            recipe
-          )}`
-        );
+      event.custom(recipe).id(makeRecipeId('chemical_reactor', recipe));
     },
 
     /**
@@ -475,7 +425,7 @@ function ModernIndustrializationHelper(event) {
      */
     cuttingMachine(fluidInput, itemInput, itemOutput, eu, duration) {
       let recipe = {
-        type: "modern_industrialization:cutting_machine",
+        type: 'modern_industrialization:cutting_machine',
         duration: duration,
         eu: eu,
         fluid_inputs: [],
@@ -487,13 +437,7 @@ function ModernIndustrializationHelper(event) {
       processItemInputs(itemInput, recipe, 1);
       processItemOutputs([itemOutput], recipe, 1);
 
-      event
-        .custom(recipe)
-        .id(
-          `craftoria:modern_industrialization/cutting_machine/${makeRecipeId(
-            recipe
-          )}`
-        );
+      event.custom(recipe).id(makeRecipeId('cutting_machine', recipe));
     },
 
     /**
@@ -505,7 +449,7 @@ function ModernIndustrializationHelper(event) {
      */
     compressor(itemInput, itemOutput, eu, duration) {
       let recipe = {
-        type: "modern_industrialization:compressor",
+        type: 'modern_industrialization:compressor',
         duration: duration,
         eu: eu,
         item_inputs: [],
@@ -515,13 +459,7 @@ function ModernIndustrializationHelper(event) {
       processItemInputs(itemInput, recipe, 1);
       processItemOutputs([itemOutput], recipe, 1);
 
-      event
-        .custom(recipe)
-        .id(
-          `craftoria:modern_industrialization/compressor/${makeRecipeId(
-            recipe
-          )}`
-        );
+      event.custom(recipe).id(makeRecipeId('compressor', recipe));
     },
 
     /**
@@ -533,7 +471,7 @@ function ModernIndustrializationHelper(event) {
      */
     macerator(itemInput, itemOutputs, eu, duration) {
       let recipe = {
-        type: "modern_industrialization:macerator",
+        type: 'modern_industrialization:macerator',
         duration: duration,
         eu: eu,
         item_inputs: [],
@@ -543,11 +481,7 @@ function ModernIndustrializationHelper(event) {
       processItemInputs(itemInput, recipe, 1);
       processItemOutputs(itemOutputs, recipe, 4);
 
-      event
-        .custom(recipe)
-        .id(
-          `craftoria:modern_industrialization/macerator/${makeRecipeId(recipe)}`
-        );
+      event.custom(recipe).id(makeRecipeId('macerator', recipe));
     },
 
     /**
@@ -561,7 +495,7 @@ function ModernIndustrializationHelper(event) {
      */
     centrifuge(fluidInput, itemInput, fluidOutputs, itemOutputs, eu, duration) {
       let recipe = {
-        type: "modern_industrialization:centrifuge",
+        type: 'modern_industrialization:centrifuge',
         duration: duration,
         eu: eu,
         fluid_inputs: [],
@@ -575,13 +509,7 @@ function ModernIndustrializationHelper(event) {
       processItemInputs(itemInput, recipe, 1);
       processItemOutputs(itemOutputs, recipe, 4);
 
-      event
-        .custom(recipe)
-        .id(
-          `craftoria:modern_industrialization/centrifuge/${makeRecipeId(
-            recipe
-          )}`
-        );
+      event.custom(recipe).id(makeRecipeId('centrifuge', recipe));
     },
 
     /**
@@ -593,7 +521,7 @@ function ModernIndustrializationHelper(event) {
      */
     polarizer(itemInputs, itemOutput, eu, duration) {
       let recipe = {
-        type: "modern_industrialization:polarizer",
+        type: 'modern_industrialization:polarizer',
         duration: duration,
         eu: eu,
         item_inputs: [],
@@ -603,11 +531,7 @@ function ModernIndustrializationHelper(event) {
       processItemInputs(itemInputs, recipe, 2);
       processItemOutputs([itemOutput], recipe, 1);
 
-      event
-        .custom(recipe)
-        .id(
-          `craftoria:modern_industrialization/polarizer/${makeRecipeId(recipe)}`
-        );
+      event.custom(recipe).id(makeRecipeId('polarizer', recipe));
     },
   };
 }
