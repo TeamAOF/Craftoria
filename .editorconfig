@@ -1,0 +1,18 @@
+# .editorconfig for code formatting and line endings
+
+# Top-most EditorConfig file
+root = true
+
+# Default settings for all files
+[*]
+charset = utf-8
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# File-specific line endings and types
+[*.sh]
+end_of_line = lf
+
+[*.bat]
+end_of_line = crlf
