@@ -83,15 +83,7 @@ ServerEvents.tags('item', (e) => {
     }
   });
 
-  const whitelistedIDs = [
-    'dust_iridium',
-    'dust_nickel',
-    'dust_platinum',
-    'dust_silver',
-    'dust_titanium',
-    'dust_tungsten',
-    'dust_zinc',
-  ];
+  const whitelistedIDs = ['dust_iridium', 'dust_nickel', 'dust_platinum', 'dust_silver', 'dust_titanium', 'dust_tungsten', 'dust_zinc'];
   const tagsToCheck = ['c:gems', 'c:dusts'];
   tagsToCheck.forEach((tag) => {
     e.get(tag).objectIds.forEach((id) => {
@@ -109,12 +101,7 @@ ServerEvents.recipes((e) => {
   const ars = ArsNouveauHelper(e);
   const ae2 = AE2Helper(e);
 
-  let replaceFilters = [
-    'minecraft:crafting_shaped',
-    'minecraft:crafting_shapeless',
-    'minecraft:smelting',
-    'minecraft:blasting',
-  ];
+  let replaceFilters = ['minecraft:crafting_shaped', 'minecraft:crafting_shapeless', 'minecraft:smelting', 'minecraft:blasting'];
 
   let tryReplace = (replace) => {
     let replaceWith = getItemFromTag(replace);
@@ -209,11 +196,7 @@ ServerEvents.recipes((e) => {
   ars.enchantingApparatus(
     'ars_additions:unstable_reliquary',
     'ars_nouveau:mob_jar',
-    [
-      'ars_nouveau:conjuration_essence',
-      'ars_nouveau:manipulation_essence',
-      '#c:ender_pearls',
-    ],
+    ['ars_nouveau:conjuration_essence', 'ars_nouveau:manipulation_essence', '#c:ender_pearls'],
     0,
     false,
     'ars_additions:apparatus/unstable_reliquary'
@@ -230,24 +213,14 @@ ServerEvents.recipes((e) => {
 
   ars.glyph(
     'ars_additions:glyph_recall',
-    [
-      'ars_nouveau:conjuration_essence',
-      '#c:ender_pearls',
-      'ars_nouveau:scryer_scroll',
-      'ars_nouveau:enchanters_eye',
-    ],
+    ['ars_nouveau:conjuration_essence', '#c:ender_pearls', 'ars_nouveau:scryer_scroll', 'ars_nouveau:enchanters_eye'],
     160,
     'ars_additions:glyph_recall'
   );
 
   ars.glyph(
     'ars_additions:glyph_mark',
-    [
-      'ars_nouveau:manipulation_essence',
-      '#c:ender_pearls',
-      'ars_nouveau:mob_jar',
-      'ars_nouveau:ritual_containment',
-    ],
+    ['ars_nouveau:manipulation_essence', '#c:ender_pearls', 'ars_nouveau:mob_jar', 'ars_nouveau:ritual_containment'],
     160,
     'ars_additions:glyph_mark'
   );
@@ -259,12 +232,5 @@ ServerEvents.recipes((e) => {
     'ars_elemental:glyph_arc_projectile'
   );
 
-  ae2.inscriber(
-    'inscribe',
-    'ae2:ender_dust',
-    '#c:ender_pearls',
-    null,
-    null,
-    'ae2:inscriber/ender_dust_press'
-  );
+  ae2.inscriber('inscribe', 'ae2:ender_dust', '#c:ender_pearls', null, null, 'ae2:inscriber/ender_dust');
 });

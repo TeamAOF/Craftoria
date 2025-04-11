@@ -7,15 +7,10 @@ ServerEvents.recipes((e) => {
   foregoing.fluidExtraction('1x justdirethings:xp_fluid_source', 'minecraft:sculk', 'minecraft:air', 0.1);
   foregoing.fluidExtraction('1x pneumaticcraft:yeast_culture', '#c:mushroom_blocks', 'minecraft:air', 0.01);
 
-  e.custom({
-    type: 'industrialforegoing:laser_drill_ore',
-    catalyst: {
-      item: 'industrialforegoing:brown_laser_lens',
-    },
-    output: {
-      item: 'minecraft:ancient_debris',
-    },
-    rarity: [
+  foregoing.oreLaserDrilling(
+    'minecraft:ancient_debris',
+    'industrialforegoing:brown_laser_lens',
+    [
       {
         biome_filter: {
           blacklist: [],
@@ -30,5 +25,6 @@ ServerEvents.recipes((e) => {
         weight: 1,
       },
     ],
-  }).id('industrialforegoing:laser_drill_ore/ancient_debris');
+    'industrialforegoing:laser_drill_ore/ancient_debris'
+  );
 });

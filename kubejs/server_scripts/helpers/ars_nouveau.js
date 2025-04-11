@@ -95,7 +95,7 @@ function ArsNouveauHelper(event) {
      * @description Creates a recipe for the Ars Nouveau Glyph.
      * @param {$ItemStack_} output The output item (e.g., '4x minecraft:chest'). Required.
      * @param {$ItemStack_[]} inputs The input items (e.g., ['minecraft:cobblestone', 'minecraft:stone']). Required.
-     * @param {number} xpCost The XP cost (e.g., 100). (optional, default is 0).
+     * @param {number} [xpCost] The XP cost (e.g., 100). (optional, default is 0).
      * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
      */
     glyph(output, inputs, xpCost, recipeID) {
@@ -110,14 +110,3 @@ function ArsNouveauHelper(event) {
     },
   };
 }
-// let glyphRecipe = (output, inputs, xpCost, id) => {
-//   output = Item.of(output).toJson();
-//   inputs = inputs.map((input) => Ingredient.of(input).toJson());
-
-//   e.custom({
-//     type: 'ars_nouveau:glyph',
-//     output: output,
-//     inputs: inputs,
-//     exp: xpCost,
-//   }).id(id);
-// };

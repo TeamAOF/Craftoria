@@ -1,4 +1,17 @@
 /**
+ * @typedef {Object} LaserDrillRarity
+ * @property {Object} biome_filter
+ * @property {Special.WorldgenBiome[]} biome_filter.blacklist
+ * @property {Special.WorldgenBiome[]} biome_filter.whitelist
+ * @property {number} [depth_max=319]
+ * @property {number} [depth_min=-64]
+ * @property {Object} dimension_filter
+ * @property {Special.Dimension[]} dimension_filter.blacklist
+ * @property {Special.Dimension[]} dimension_filter.whitelist
+ * @property {number} weight
+ */
+
+/**
  * Industrial Foregoing Recipe Helpers
  * @param {$RecipesKubeEvent_} event
  */
@@ -86,22 +99,22 @@ function IndustrialForegoingHelper(event) {
     /**
      * @param {$Item_} itemOutput
      * @param {$Item_} catalyst
-     * @param {$List_<$LaserDrillRarity> | $LaserDrillRarity} [rarityList]
+     * @param {LaserDrillRarity[] | LaserDrillRarity} [rarityList]
      * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
      */
     oreLaserDrilling(itemOutput, catalyst, rarityList, recipeID) {
       let recipe = {
         type: 'industrialforegoing:laser_drill_ore',
-        catalyst: Item.of(catalyst).toJson(),
-        output: Item.of(itemOutput).toJson(),
+        catalyst: Ingredient.of(catalyst).toJson(),
+        output: Ingredient.of(itemOutput).toJson(),
         rarity: [],
       };
 
       if (rarityList) {
         let rarities = Array.isArray(rarityList) ? rarityList : [rarityList];
-        for (let rarity of rarities) {
-          recipe.rarity.push(rarity);
-        }
+        rarities.forEach((r) => {
+          recipe.rarity.push(r);
+        });
       } else {
         recipe.rarity.push(
           {
