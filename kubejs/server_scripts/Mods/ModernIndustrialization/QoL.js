@@ -12,7 +12,8 @@ ServerEvents.recipes(e => {
       .id(`craftoria:mi/mixer/${item.split(':')[1]}`);
   };
 
-  [
+  /** @type {Special.Item[]} */
+  const cobbleItems = [
     // Vanilla
     'minecraft:cobblestone',
     'minecraft:granite',
@@ -33,7 +34,9 @@ ServerEvents.recipes(e => {
     'eternal_starlight:abysslate',
     'eternal_starlight:thermabysslate',
     'eternal_starlight:cryobysslate',
-  ].forEach(cobbleGen);
+  ];
+
+  cobbleItems.forEach(cobbleGen);
 
   alloy_smelter(4, 200)
     .itemIn('#morered:red_alloyable_ingots')

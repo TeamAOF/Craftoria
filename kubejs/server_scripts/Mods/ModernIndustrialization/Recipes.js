@@ -56,7 +56,8 @@ ServerEvents.recipes(e => {
   let madeCuttingRecipeFor = [];
   Ingredient.of('#minecraft:logs').itemIds.forEach(id => {
     if ((!id.includes('log') && !id.includes('stem')) || id.includes('stripped')) return;
-    const { modID, itemId } = { modID: id.split(':')[0], itemId: id.split(':')[1] };
+    /** @type {[Special.Mod, string]} */
+    const [modID, itemId] = id.split(':');
 
     if (modID === 'minecraft') return;
 

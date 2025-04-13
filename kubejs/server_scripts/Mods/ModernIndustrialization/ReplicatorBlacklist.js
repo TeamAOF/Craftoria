@@ -1,6 +1,6 @@
 ServerEvents.tags('item', e => {
   /**
-   * @description Blacklist for both Replicator Mk I and Mk II.
+   * Blacklist for both Replicator Mk I and Mk II.
    * @type {$Ingredient_[]}
    */
   const replicatorBlacklist = [
@@ -35,7 +35,7 @@ ServerEvents.tags('item', e => {
   ];
 
   /**
-   * @description Blacklist for Replicator Mk II.
+   * Blacklist for Replicator Mk II.
    * @type {$Ingredient_[]}
    */
   const replicator_2_blacklist = [
@@ -162,7 +162,7 @@ ServerEvents.tags('item', e => {
   ].concat(replicatorBlacklist);
 
   /**
-   * @description Blacklist for Replicator Mk I.
+   * Blacklist for Replicator Mk I.
    * @type {$Ingredient_[]}
    */
   const replicator_1_blacklist = [
@@ -205,6 +205,7 @@ ServerEvents.tags('item', e => {
     'modern_industrialization:quantum_circuit_board',
     'modern_industrialization:quantum_machine_casing',
   ];
+
   /** @type {$Ingredient_[]} */
   const replicator_1_exclusions = [
     'modern_industrialization:quantum_circuit',

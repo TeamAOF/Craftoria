@@ -1,4 +1,5 @@
 RecipeViewerEvents.removeEntries('item', event => {
+  /** @type {Special.Item[]} */
   let hideItems = [];
 
   hideItems.forEach(item => {

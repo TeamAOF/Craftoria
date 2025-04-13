@@ -1,6 +1,6 @@
 ServerEvents.recipes(e => {
   /**
-   * @description Apothic Spawners modifier recipe
+   * Apothic Spawners modifier recipe
    * @param {$Ingredient_} item Item used for the modifier. Required.
    * @param {Object} stats Stats for the main recipe. {value, limit} Required.
    * @param {Special.ApothicSpawnersSpawnerStat} spawnerModifier Spawner modifier type. Required.

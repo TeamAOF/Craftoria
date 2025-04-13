@@ -99,8 +99,8 @@ ServerEvents.tags('item', e => {
 
 ServerEvents.recipes(e => {
   const ars = ArsNouveauHelper(e);
-  const ae2 = AE2Helper(e);
-
+  const ae = AE2Helper(e);
+  /** @type {Special.RecipeSerializer[]} */
   let replaceFilters = ['minecraft:crafting_shaped', 'minecraft:crafting_shapeless', 'minecraft:smelting', 'minecraft:blasting'];
 
   let tryReplace = replace => {
@@ -232,5 +232,5 @@ ServerEvents.recipes(e => {
     'ars_elemental:glyph_arc_projectile'
   );
 
-  ae2.inscriber('inscribe', 'ae2:ender_dust', '#c:ender_pearls', null, null, 'ae2:inscriber/ender_dust');
+  ae.inscriber('inscribe', 'ae2:ender_dust', '#c:ender_pearls', null, null, 'ae2:inscriber/ender_dust');
 });

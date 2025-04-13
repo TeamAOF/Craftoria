@@ -1,4 +1,5 @@
 RecipeViewerEvents.addInformation('item', e => {
+  /** @type {Record<Special.Item, string[]>} */
   let entries = {
     // Add machine information here
     'modern_industrialization:replicator_1': [

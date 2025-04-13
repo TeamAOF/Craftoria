@@ -30,8 +30,8 @@ global.infCells = [
 
 StartupEvents.registry('item', e => {
   /**
-   * @param {String} id
-   * @param {String} type
+   * @param {string} id
+   * @param {string} type
    */
   let createInfCell = (id, type) => {
     let strippedId = id.includes(':') ? id.split(':')[1] : id;
