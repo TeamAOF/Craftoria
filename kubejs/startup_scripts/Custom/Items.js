@@ -39,6 +39,7 @@ ItemEvents.modification(event => {
   const pelletsEdible = [
     'mekanism:pellet_plutonium',
     'mekanism:pellet_polonium',
+    'mekanism:pellet_antimatter',
     'mekanism:yellow_cake_uranium'
   ]
 

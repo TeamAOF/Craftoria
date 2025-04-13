@@ -31,4 +31,17 @@ ItemEvents.foodEaten((event) => {
             player.potionEffects.add(effect, 600, 5, false, false);
         });
     }
+    if (item.id === 'mekanism:pellet_antimatter') {
+        let blackHoleEntity = level.createEntity('irons_spellbooks:black_hole');
+        // Set the entity's NBT data to make it bigger and last shorter
+        blackHoleEntity.setNbt({Damage: 0, Radius: 15, Age: 450});
+
+        // Summon black hole entity at player position and apply effects
+        player.tell(Text.red('MATTER IS COMPRESSING AROUND YOU!').bold());
+        pelletsEffects.forEach((effect) => {
+            player.potionEffects.add(effect, 600, 5, false, false);
+        });
+        blackHoleEntity.spawn();
+        blackHoleEntity.setPos(player.x, player.y, player.z);
+    }
 });
