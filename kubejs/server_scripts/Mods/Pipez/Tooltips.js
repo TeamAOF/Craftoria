@@ -1,4 +1,4 @@
-ItemEvents.modifyTooltips((event) => {
+ItemEvents.modifyTooltips(event => {
   let pipezUpgrades = {
     Default: ['4 items/20t', '50 mB/t', '256 FE/t', '200 mB/t'],
     Basic: ['8 items/15t', '100 mB/t', '1,024 FE/t', '400 mB/t'],
@@ -15,7 +15,7 @@ ItemEvents.modifyTooltips((event) => {
 
   let pipezPipes = ['pipez:item_pipe', 'pipez:fluid_pipe', 'pipez:energy_pipe', 'pipez:gas_pipe'];
 
-  pipezPipes.forEach((pipe) => {
+  pipezPipes.forEach(pipe => {
     let pipeIndex = pipezPipes.indexOf(pipe);
     event.add(pipe, { shift: false }, holdShift);
     event.add(pipe, { shift: true }, [
@@ -53,7 +53,11 @@ ItemEvents.modifyTooltips((event) => {
   }
 
   event.add('pipez:infinity_upgrade', { shift: false }, holdShift);
-  event.add('pipez:infinity_upgrade', { shift: true }, [Text.gold('Upgrade Stats:'), Text.yellow('All: 2,147,483,647/t'), Text.red('Use at your own risk.')]);
+  event.add('pipez:infinity_upgrade', { shift: true }, [
+    Text.gold('Upgrade Stats:'),
+    Text.yellow('All: 2,147,483,647/t'),
+    Text.red('Use at your own risk.'),
+  ]);
 
   event.add(['pipez:energy_pipe', 'pipez:universal_pipe'], [Text.red("Doesn't work properly with Mekanism.")]);
 });

@@ -40,9 +40,9 @@ function ModernIndustrializationHelper(event) {
 
     let inputString = 'with_';
     if (recipe.fluid_inputs?.length > 0) {
-      inputString += recipe.fluid_inputs.map((input) => (input.fluid || input.tag).split(':')[1]).join('_');
+      inputString += recipe.fluid_inputs.map(input => (input.fluid || input.tag).split(':')[1]).join('_');
     } else {
-      inputString += recipe.item_inputs.map((input) => (input.item || input.tag).split(':')[1]).join('_');
+      inputString += recipe.item_inputs.map(input => (input.item || input.tag).split(':')[1]).join('_');
     }
 
     return `craftoria:mi/${type}/${outputString}_${inputString}`;
@@ -68,7 +68,7 @@ function ModernIndustrializationHelper(event) {
     }
 
     /** @param {MIItem} input */
-    let processSingleInput = (input) => {
+    let processSingleInput = input => {
       if (!Array.isArray(input) || (input.length !== 2 && input.length !== 3)) {
         console.error(`Invalid item input format: ${input}`);
         console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
@@ -126,7 +126,7 @@ function ModernIndustrializationHelper(event) {
       recipe.item_outputs = [];
     }
     /** @param {MIItem} output */
-    let processSingleOutput = (output) => {
+    let processSingleOutput = output => {
       if (!Array.isArray(output) || (output.length !== 2 && output.length !== 3)) {
         console.error(`Invalid item output format: ${output}`);
         console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
@@ -178,7 +178,7 @@ function ModernIndustrializationHelper(event) {
     }
 
     /** @param {MIFluid} input */
-    let processSingleInput = (input) => {
+    let processSingleInput = input => {
       if (!Array.isArray(input) || (input.length !== 2 && input.length !== 3)) {
         console.error(`Invalid fluid input format: ${input}`);
         console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
@@ -229,7 +229,7 @@ function ModernIndustrializationHelper(event) {
       recipe.fluid_outputs = [];
     }
     /** @param {MIFluid} output */
-    let processSingleOutput = (output) => {
+    let processSingleOutput = output => {
       if (!Array.isArray(output) || (output.length !== 2 && output.length !== 3)) {
         console.error(`Invalid fluid output format: ${output}`);
         console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);

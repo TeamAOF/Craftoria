@@ -1,6 +1,6 @@
-ClientEvents.generateAssets('after_mods', (e) => {
-  global.customMIMachines.forEach((machine) => {
-    e.blockState(`modern_industrialization:${machine.id}`, (bs) => {
+ClientEvents.generateAssets('after_mods', e => {
+  global.customMIMachines.forEach(machine => {
+    e.blockState(`modern_industrialization:${machine.id}`, bs => {
       bs.simpleVariant('', `modern_industrialization:block/${machine.id}`);
     });
 
@@ -28,7 +28,7 @@ ClientEvents.generateAssets('after_mods', (e) => {
 
     e.json(`modern_industrialization:models/block/${machine.id}`, modelJson);
 
-    e.itemModel(`modern_industrialization:${machine.id}`, (im) => {
+    e.itemModel(`modern_industrialization:${machine.id}`, im => {
       im.parent(`modern_industrialization:block/${machine.id}`);
     });
   });
@@ -41,13 +41,13 @@ ClientEvents.generateAssets('after_mods', (e) => {
     brewery: ['mi_sound_addon:distillery'],
   };
 
-  global.customMIMachines.forEach((machine) => {
+  global.customMIMachines.forEach(machine => {
     if (machine.sound) {
       sounds[machine.id] = [machine.sound];
     }
   });
 
-  Object.keys(sounds).forEach((key) => {
+  Object.keys(sounds).forEach(key => {
     sounds[key] = {
       category: 'block',
       sounds: sounds[key],

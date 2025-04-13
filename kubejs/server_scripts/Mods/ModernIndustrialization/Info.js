@@ -1,4 +1,4 @@
-RecipeViewerEvents.addInformation('item', (e) => {
+RecipeViewerEvents.addInformation('item', e => {
   let entries = {
     // Add machine information here
     'modern_industrialization:replicator_1': [

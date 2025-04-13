@@ -1,11 +1,11 @@
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
   const ars = ArsNouveauHelper(e);
   const ae = AE2Helper(e);
 
-  e.shapeless(
-    'occultism:trinity_gem[entity_data={id:"occultism: possessed_warden"}]',
-    ['occultism:trinity_gem', 'occultism:spawn_egg/possessed_warden']
-  );
+  e.shapeless('occultism:trinity_gem[entity_data={id:"occultism: possessed_warden"}]', [
+    'occultism:trinity_gem',
+    'occultism:spawn_egg/possessed_warden',
+  ]);
 
   e.recipes.occultism
     .ritual(
@@ -47,12 +47,7 @@ ServerEvents.recipes((e) => {
   e.remove({ id: 'extendedae:water_cell' });
   ae.crystalAssembler(
     'extendedae:infinity_water_cell',
-    [
-      'craftoria:infinity_cell_housing',
-      'reliquary:emperor_chalice',
-      '16x functionalstorage:water_generator_upgrade',
-      '64x sfm:water_tank',
-    ],
+    ['craftoria:infinity_cell_housing', 'reliquary:emperor_chalice', '16x functionalstorage:water_generator_upgrade', '64x sfm:water_tank'],
     '16000x minecraft:water'
   );
 

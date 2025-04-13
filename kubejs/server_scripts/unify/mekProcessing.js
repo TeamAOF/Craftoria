@@ -1,9 +1,9 @@
 // priority: 997
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
   const mekanism = MekanismHelper(e);
 
-  [metals, gems].forEach((materials) => {
-    materials.forEach((material) => {
+  [metals, gems].forEach(materials => {
+    materials.forEach(material => {
       let dust = getItemFromTag(`#c:dusts/${material}`);
       if (dust) {
         if (Item.exists(`mekanism:dust_${material}`)) e.remove({ type: 'mekanism:crushing', output: `mekanism:dust_${material}` });

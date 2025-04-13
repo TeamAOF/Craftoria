@@ -1,10 +1,10 @@
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
   const mekanism = MekanismHelper(e);
 
   let ingredients = new Map();
 
   let crush = (output, inputTag, inputItem) => {
-    Ingredient.of(inputTag).itemIds.forEach((id) => {
+    Ingredient.of(inputTag).itemIds.forEach(id => {
       const [modID, itemId] = id.split(':');
 
       if (modID !== 'biomeswevegone') return;
@@ -87,7 +87,7 @@ ServerEvents.recipes((e) => {
   ];
 
   // QoL Recipes
-  bwg.forEach((bwg) => {
+  bwg.forEach(bwg => {
     let logs = `biomeswevegone:${bwg}_log`;
     if (bwg == 'florus') {
       logs = 'biomeswevegone:florus_stem';

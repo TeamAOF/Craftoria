@@ -1,4 +1,4 @@
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
   /**
    * @description Apothic Spawners modifier recipe
    * @param {$Ingredient_} item Item used for the modifier. Required.
@@ -47,19 +47,7 @@ ServerEvents.recipes((e) => {
     e.custom(recipeInverse).id(`${baseID}_inverse`);
   };
 
-  modifier(
-    'minecraft:sugar',
-    { value: -10, min: 100, max: 1600 },
-    'apothic_spawners:min_delay'
-  );
-  modifier(
-    'minecraft:clock',
-    { value: -10, min: 100, max: 1600 },
-    'apothic_spawners:max_delay'
-  );
-  modifier(
-    'minecraft:fermented_spider_eye',
-    { value: 1, max: 8, min: 1 },
-    'apothic_spawners:spawn_count'
-  );
+  modifier('minecraft:sugar', { value: -10, min: 100, max: 1600 }, 'apothic_spawners:min_delay');
+  modifier('minecraft:clock', { value: -10, min: 100, max: 1600 }, 'apothic_spawners:max_delay');
+  modifier('minecraft:fermented_spider_eye', { value: 1, max: 8, min: 1 }, 'apothic_spawners:spawn_count');
 });

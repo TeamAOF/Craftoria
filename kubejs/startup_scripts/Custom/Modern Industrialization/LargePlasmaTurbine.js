@@ -1,4 +1,4 @@
-MIMachineEvents.registerMachines((event) => {
+MIMachineEvents.registerMachines(event => {
   const largePlasmaTurbineHatchOut = event.hatchOf('energy_output');
   const largePlasmaTurbineHatchIn = event.hatchOf('fluid_input');
   const iridiumPipeMachineCasing = event.memberOfBlock('modern_industrialization:iridium_machine_casing_pipe');
@@ -24,7 +24,7 @@ MIMachineEvents.registerMachines((event) => {
     'large_plasma_turbine',
     largePlasmaTurbineShape,
     100000000,
-    (builder) => {
+    builder => {
       builder.fluid('modern_industrialization:helium_plasma', 100000);
     },
     'plasma_handling_iridium_machine_casing',

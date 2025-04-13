@@ -26,7 +26,7 @@ function AE2Helper(event) {
     crystalAssembler(output, inputs, fluid, recipeID) {
       let recipe = {
         type: 'extendedae:crystal_assembler',
-        input_items: inputs.map((input) => {
+        input_items: inputs.map(input => {
           let [amount, item] = input.includes('x ') ? input.split('x ') : [1, input];
           return {
             amount: parseInt(amount),

@@ -1,4 +1,4 @@
-ServerEvents.generateData('after_mods', (e) => {
+ServerEvents.generateData('after_mods', e => {
   // TODO: make this actually work
   let MakeBoss = (entity, name, constraints, valid_gear_sets, weights, stats) => {
     e.json(`craftoria:apothic_invaders/custom_bosses/${entity.split(':')[1]}`, {
@@ -265,7 +265,7 @@ ServerEvents.generateData('after_mods', (e) => {
     },
   ];
 
-  bomdBosses.forEach((boss) => {
+  bomdBosses.forEach(boss => {
     // First grab the invader template, then apply the bomd template on top of it, and finally apply the boss-specific data (if it exists)
     let bossData = invaderTemplate;
     bossData.basic_data.name = boss.name;

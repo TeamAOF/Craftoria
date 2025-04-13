@@ -1,10 +1,10 @@
 let REPLICATOR1;
 
-MIMachineEvents.registerRecipeTypes((event) => {
+MIMachineEvents.registerRecipeTypes(event => {
   REPLICATOR1 = event.register('replicator_1').withFluidInputs().withItemInputs().withItemOutputs();
 });
 
-MIMachineEvents.registerMachines((e) => {
+MIMachineEvents.registerMachines(e => {
   // prettier-ignore
   e.craftingSingleBlock(
     'Replicator MK I', 'replicator_1', REPLICATOR1, ['electric'],

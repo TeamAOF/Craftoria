@@ -1,4 +1,4 @@
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
   const { mixer } = e.recipes.modern_industrialization;
   const { alloy_smelter } = e.recipes.extended_industrialization;
 

@@ -1,4 +1,4 @@
-/** 
+/**
  * @typedef {Object} DataModel
  * @property {Special.EntityType[]} variants
  * @property {string} [nameColor]
@@ -30,17 +30,16 @@
 function generateModelData(entityId, data) {
   let [namespace, entityName] = entityId.split(':');
 
-  let outputPath = namespace === 'minecraft'
-    ? `hostilenetworks:data_models/${entityName}`
-    : `hostilenetworks:data_models/${namespace}/${entityName}`;
+  let outputPath =
+    namespace === 'minecraft' ? `hostilenetworks:data_models/${entityName}` : `hostilenetworks:data_models/${namespace}/${entityName}`;
 
   let drops = [];
 
-  data.fabricatorDrops.forEach((drop) => {
+  data.fabricatorDrops.forEach(drop => {
     if (drop.includes('#')) {
       Ingredient.of(drop)
         .except('#almostunified:hide')
-        .itemIds.forEach((drop) => {
+        .itemIds.forEach(drop => {
           const [count] = drop.split('x ');
           drops.push({ id: drop, count: parseInt(count) || 1 });
         });
@@ -50,9 +49,7 @@ function generateModelData(entityId, data) {
   });
 
   let modelJson = {
-    'neoforge:conditions': [
-      { type: 'neoforge:mod_loaded', modid: namespace },
-    ],
+    'neoforge:conditions': [{ type: 'neoforge:mod_loaded', modid: namespace }],
     entity: entityId,
     variants: [],
     name: {
@@ -78,7 +75,7 @@ function generateModelData(entityId, data) {
   return { outputPath: outputPath, modelJson: modelJson };
 }
 
-ServerEvents.generateData('after_mods', (event) => {
+ServerEvents.generateData('after_mods', event => {
   /**@type {Record<Special.EntityType, DataModel>} */
   const dataModels = {
     'artifacts:mimic': {

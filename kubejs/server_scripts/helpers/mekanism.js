@@ -98,7 +98,7 @@ function MekanismHelper(event) {
         duration: duration ?? 100,
       };
 
-      itemInputListWithCount[0].forEach((item) => {
+      itemInputListWithCount[0].forEach(item => {
         recipe.item_input.children.push(Ingredient.of(item).toJson());
       });
 

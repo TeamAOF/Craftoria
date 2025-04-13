@@ -1,11 +1,11 @@
-LootJS.lootTables((e) => {
-  e.create('craftoria:gate/mythic_affix').createPool((pool) => {
+LootJS.lootTables(e => {
+  e.create('craftoria:gate/mythic_affix').createPool(pool => {
     pool.addCustomEntry({
       type: 'apotheosis:random_affix_item',
       rarities: ['apotheosis:mythic'],
     });
   });
-  e.create('craftoria:gate/perfect_gem').createPool((pool) => {
+  e.create('craftoria:gate/perfect_gem').createPool(pool => {
     pool.addCustomEntry({
       type: 'apotheosis:random_gem',
       purities: ['perfect'],
@@ -13,7 +13,7 @@ LootJS.lootTables((e) => {
   });
 });
 
-ServerEvents.generateData('after_mods', (e) => {
+ServerEvents.generateData('after_mods', e => {
   /* Example of a gateway
   e.json('craftoria:gateways/small_boss', {
     size: 'small',
@@ -158,11 +158,11 @@ ServerEvents.generateData('after_mods', (e) => {
   };
 
   [
-    {id: 'lich', essence: 'ice'},
-    {id: 'obsidilith', essence: 'dark'},
-    {id: 'gauntlet', essence: 'fire'},
-    {id: 'void_blossom', essence: 'nature'},
-  ].forEach((boss) => {
+    { id: 'lich', essence: 'ice' },
+    { id: 'obsidilith', essence: 'dark' },
+    { id: 'gauntlet', essence: 'fire' },
+    { id: 'void_blossom', essence: 'nature' },
+  ].forEach(boss => {
     bomdGate.waves.push({
       entities: [
         {
@@ -173,7 +173,7 @@ ServerEvents.generateData('after_mods', (e) => {
       rewards: [
         {
           type: 'gateways:stack',
-          stack: {id: `craftoria:${boss.essence}_essence`},
+          stack: { id: `craftoria:${boss.essence}_essence` },
         },
         {
           type: 'gateways:loot_table',

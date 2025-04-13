@@ -1,4 +1,4 @@
-ServerEvents.generateData('after_mods', (e) => {
+ServerEvents.generateData('after_mods', e => {
   e.json('apotheosis:data_maps/item/loot_category_overrides', {
     values: {
       'mekaweapons:meka_tana': 'apotheosis:melee_weapon',

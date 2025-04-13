@@ -1,4 +1,4 @@
-ServerEvents.generateData('after_mods', (e) => {
+ServerEvents.generateData('after_mods', e => {
   /* Example of adding a custom gem
   e.json('craftoria:gems/core/godstone', {
     type: 'apotheosis:gem',

@@ -1,6 +1,6 @@
-ServerEvents.recipes((e) => {
-  ['duckling:pumpkin_pie', 'minecraft:pumpkin_pie', 'actuallyadditions:rice_dough'].forEach((id) => {
-    e.remove({id: id});
+ServerEvents.recipes(e => {
+  ['duckling:pumpkin_pie', 'minecraft:pumpkin_pie', 'actuallyadditions:rice_dough'].forEach(id => {
+    e.remove({ id: id });
   });
 
   e.shaped('cursedearth:blessed_flower', ['FFF', 'FWF', 'FFF'], {

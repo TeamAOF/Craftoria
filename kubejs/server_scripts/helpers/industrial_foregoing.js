@@ -72,7 +72,7 @@ function IndustrialForegoingHelper(event) {
     dissolutionChamber(itemOutput, itemInputs, processingTime, fluidInput, fluidOutput, recipeID) {
       let recipe = {
         type: 'industrialforegoing:dissolution_chamber',
-        input: itemInputs.map((i) => Ingredient.of(i).toJson()),
+        input: itemInputs.map(i => Ingredient.of(i).toJson()),
         output: Item.of(itemOutput).toJson(),
         processingTime: processingTime ?? 100,
       };
@@ -112,7 +112,7 @@ function IndustrialForegoingHelper(event) {
 
       if (rarityList) {
         let rarities = Array.isArray(rarityList) ? rarityList : [rarityList];
-        rarities.forEach((r) => {
+        rarities.forEach(r => {
           recipe.rarity.push(r);
         });
       } else {

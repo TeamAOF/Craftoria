@@ -1,7 +1,7 @@
 // This script opens two doors when a player right-clicks on a door.
 const $DoorBlock_ = Java.loadClass('net.minecraft.world.level.block.DoorBlock');
 
-BlockEvents.rightClicked((event) => {
+BlockEvents.rightClicked(event => {
   let { player, level, server, block } = event;
 
   let doorTag = 'minecraft:wooden_doors';
@@ -38,7 +38,7 @@ BlockEvents.rightClicked((event) => {
   /**
    * @param {$BlockContainerJS_} block
    */
-  let getNeighborDoor = (block) => {
+  let getNeighborDoor = block => {
     let doorState = block.blockState;
     let doorPos = block.pos;
     let neighbor = null;

@@ -2,7 +2,7 @@
 /// Made by Team AOF ///
 ////////////////////////
 
-ServerEvents.recipes((event) => {
+ServerEvents.recipes(event => {
   event
     .shaped('bigger_ae2:advanced_flux_cell_housing', ['GSG', 'SMS', 'RRR'], {
       G: 'ae2:quartz_glass',
