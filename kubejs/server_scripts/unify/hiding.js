@@ -1,7 +1,7 @@
-RecipeViewerEvents.removeEntries('item', (e) => {
+RecipeViewerEvents.removeEntries('item', e => {
   let unifyHide = [];
 
-  let hideItemsFromTag = (tag) => {
+  let hideItemsFromTag = tag => {
     try {
       let items = Ingredient.of(tag).itemIds;
       if (items.length > 1) {
@@ -12,7 +12,7 @@ RecipeViewerEvents.removeEntries('item', (e) => {
           unifyHide.push(items);
         } else {
           let groupedItems = groupByVariant(items);
-          Object.values(groupedItems).forEach((variantGroup) => {
+          Object.values(groupedItems).forEach(variantGroup => {
             let sortedByPriority = sortArray(variantGroup);
             if (sortedByPriority.length > 1) {
               if (debug) console.log(sortedByPriority.slice(1));
@@ -26,9 +26,9 @@ RecipeViewerEvents.removeEntries('item', (e) => {
     }
   };
 
-  let groupByVariant = (items) => {
+  let groupByVariant = items => {
     let groups = { regular: [], deepslate: [], nether: [], end: [] };
-    items.forEach((item) => {
+    items.forEach(item => {
       if (item.includes('deepslate')) groups.deepslate.push(item);
       else if (item.includes('nether')) groups.nether.push(item);
       else if (item.includes('end')) groups.end.push(item);
@@ -40,24 +40,23 @@ RecipeViewerEvents.removeEntries('item', (e) => {
   Object.entries(materials).forEach(([material, types]) => {
     switch (material) {
       case 'metals':
-        metals.forEach((metal) => {
-          types.forEach((type) => {
+        metals.forEach(metal => {
+          types.forEach(type => {
             hideItemsFromTag(`#c:${type}/${metal}`);
-            if (type === 'raw_materials')
-              hideItemsFromTag(`#c:storage_blocks/raw_${metal}`);
+            if (type === 'raw_materials') hideItemsFromTag(`#c:storage_blocks/raw_${metal}`);
           });
         });
         break;
       case 'gems':
-        gems.forEach((gem) => {
-          types.forEach((type) => {
+        gems.forEach(gem => {
+          types.forEach(type => {
             hideItemsFromTag(`#c:${type}/${gem}`);
           });
         });
         break;
       case 'misc':
-        misc.forEach((misc) => {
-          types.forEach((type) => {
+        misc.forEach(misc => {
+          types.forEach(type => {
             hideItemsFromTag(`#c:${type}/${misc}`);
           });
         });

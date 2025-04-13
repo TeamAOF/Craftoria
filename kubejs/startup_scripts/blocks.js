@@ -1,4 +1,4 @@
-StartupEvents.registry('block', (event) => {
+StartupEvents.registry('block', event => {
   event
     .create('craftoria:blaze_block')
     .displayName('Blaze Block')
@@ -77,10 +77,10 @@ StartupEvents.registry('block', (event) => {
     .tagBlock('minecraft:mineable/pickaxe')
     .tagItem('modern_industrialization:replicator_blacklist')
     .tagItem(`craftoria:replicator_2_blacklist`)
-    .item((item) => {
+    .item(item => {
       item
         .useAnimation('drink')
-        .useDuration((itemStack) => 20)
+        .useDuration(itemStack => 20)
         .use((level, player, hand) => true)
         .finishUsing((itemstack, level, entity) => {
           let effects = entity.potionEffects;

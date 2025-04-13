@@ -1,4 +1,4 @@
-ServerEvents.tags('item', (e) => {
+ServerEvents.tags('item', e => {
   /**
    * @description Blacklist for both Replicator Mk I and Mk II.
    * @type {$Ingredient_[]}

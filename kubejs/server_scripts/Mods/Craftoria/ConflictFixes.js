@@ -1,4 +1,4 @@
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
   e.shaped('2x displaydelight:small_food_plate', ['AA'], {
     A: '#minecraft:wooden_pressure_plates',
   }).id('displaydelight:small_food_plate');
@@ -13,7 +13,7 @@ ServerEvents.recipes((e) => {
   }).id('handcrafted:wood_plate');
 
   // Fixes Handcrafted Cupboards and Functional Storage 1x1 Drawers conflicting
-  Ingredient.of('#handcrafted:cupboards').itemIds.forEach((item) => {
+  Ingredient.of('#handcrafted:cupboards').itemIds.forEach(item => {
     e.remove({ output: item });
     let item2 = item.split(':')[1].replace('_cupboard', '');
     e.shaped(`3x ${item}`, ['AAA', 'BCB', 'AAA'], {
@@ -24,7 +24,7 @@ ServerEvents.recipes((e) => {
   });
 
   // Fixes Handcrafted Wool Sheets conflicting with Comforts Sleeping Bags
-  Color.DYE.forEach((wool) => {
+  Color.DYE.forEach(wool => {
     e.remove({ type: 'minecraft:crafting_shaped', output: `handcrafted:${wool}_sheet` });
 
     // Sheets
@@ -58,7 +58,11 @@ ServerEvents.recipes((e) => {
   // Minecarts
   e.replaceOutput({ id: 'utilitarian:utility/hopper_minecart' }, 'minecraft:chest_minecart', 'minecraft:hopper_minecart');
   e.replaceOutput({ id: 'utilitarian:utility/tnt_minecart' }, 'minecraft:chest_minecart', 'minecraft:tnt_minecart');
-  e.replaceInput({ id: 'utilitarian:utility/chest_minecart' }, '#c:chests', Ingredient.of('#c:chests/wooden').except('expandedstorage:wood_chest'));
+  e.replaceInput(
+    { id: 'utilitarian:utility/chest_minecart' },
+    '#c:chests',
+    Ingredient.of('#c:chests/wooden').except('expandedstorage:wood_chest')
+  );
   e.replaceInput({ id: 'minecraft:chest_minecart' }, '#c:chests', Ingredient.of('#c:chests/wooden').except('expandedstorage:wood_chest'));
 
   // BWG
@@ -91,14 +95,14 @@ ServerEvents.recipes((e) => {
     'minecraft:sticky_piston',
     'dumplings_delight:chinese_cabbage_from_leaves',
   ];
-  removeById.forEach((id) => {
+  removeById.forEach(id => {
     e.remove({ id: id });
   });
 
   // Make wood chests from other mods craftable without conflicts
   const woodChestMods = ['woodwevegot', 'twilightforest'];
-  woodChestMods.forEach((mod) => {
-    e.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: mod, output: '#c:chests/wooden' }, (r) => {
+  woodChestMods.forEach(mod => {
+    e.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: mod, output: '#c:chests/wooden' }, r => {
       let ingredients = r.originalRecipeIngredients;
       let output = r.originalRecipeResult.id;
       e.shaped(`2x ${output}`, ['#C#', '###', '###'], {
@@ -107,7 +111,7 @@ ServerEvents.recipes((e) => {
       }).id(r.getId());
     });
 
-    e.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: mod, output: '#c:barrels/wooden' }, (r) => {
+    e.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: mod, output: '#c:barrels/wooden' }, r => {
       let ingredients = r.originalRecipeIngredients;
       let output = r.originalRecipeResult.id;
       e.shaped(`2x ${output}`, ['PSP', 'PBP', 'PSP'], {
@@ -118,11 +122,18 @@ ServerEvents.recipes((e) => {
     });
   });
 
-  e.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: 'twilightforest', output: /_trapped_chest$/ }, (r) => {
-    let ingredients = r.originalRecipeIngredients[0];
-    let output = r.originalRecipeResult.id;
-    e.shapeless(output, [ingredients.itemIds[0].replace('planks', 'chest'), 'minecraft:tripwire_hook']).id(r.getId());
-  });
+  e.forEachRecipe(
+    {
+      type: 'minecraft:crafting_shaped',
+      mod: 'twilightforest',
+      output: /_trapped_chest$/,
+    },
+    r => {
+      let ingredients = r.originalRecipeIngredients[0];
+      let output = r.originalRecipeResult.id;
+      e.shapeless(output, [ingredients.itemIds[0].replace('planks', 'chest'), 'minecraft:tripwire_hook']).id(r.getId());
+    }
+  );
 
   // Misc
   e.replaceInput({ type: 'minecraft:crafting_shaped', output: 'minecraft:hopper' }, '#c:chests', '#c:chests/wooden');
@@ -132,13 +143,13 @@ ServerEvents.recipes((e) => {
   e.replaceInput({ id: 'farmersdelight:cabbage_from_leaves' }, '#c:crops/cabbage', 'farmersdelight:cabbage_leaf');
 });
 
-ServerEvents.tags('item', (e) => {
+ServerEvents.tags('item', e => {
   // ES Crystal Ingredient Conflicts
   let crystals = { blaze: [], light: [] };
-  Ingredient.of('#eternal_starlight:blaze_crystal_ingredients').itemIds.forEach((item) => {
+  Ingredient.of('#eternal_starlight:blaze_crystal_ingredients').itemIds.forEach(item => {
     crystals.blaze.push(item);
   });
-  Ingredient.of('#eternal_starlight:light_crystal_ingredients').itemIds.forEach((item) => {
+  Ingredient.of('#eternal_starlight:light_crystal_ingredients').itemIds.forEach(item => {
     crystals.light.push(item);
   });
   e.remove('eternal_starlight:lunar_crystal_ingredients', crystals.light);

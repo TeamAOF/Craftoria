@@ -2,7 +2,7 @@
 /// Made by Team AOF ///
 ////////////////////////
 
-ServerEvents.recipes((event) => {
+ServerEvents.recipes(event => {
   const recipes = [
     // Block Breaker
     {
@@ -134,7 +134,7 @@ ServerEvents.recipes((event) => {
     },
   ];
 
-  recipes.forEach((recipe) => {
+  recipes.forEach(recipe => {
     event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
   });
 
@@ -145,7 +145,7 @@ ServerEvents.recipes((event) => {
   };
 
   Object.entries(jdtOres).forEach(([oreType, ores]) => {
-    ores.forEach((ore) => {
+    ores.forEach(ore => {
       let output = oreType === 'metals' ? `4x justdirethings:raw_${ore}` : `4x justdirethings:${ore}`;
       let input = `justdirethings:raw_${ore}_ore`;
 

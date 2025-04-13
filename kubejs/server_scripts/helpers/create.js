@@ -22,7 +22,7 @@ function CreateHelper(event) {
    */
   const jsonArray = (items, isOutput) => {
     if (!Array.isArray(items)) items = [items];
-    items = items.map((element) => {
+    items = items.map(element => {
       let isFluid, isFluidTag;
       /** @type string */
       let id = element;
@@ -44,7 +44,11 @@ function CreateHelper(event) {
           isFluidTag = true;
           id = id.slice(1);
         }
-        element = { fluid: id, amount: amount, type: isFluidTag ? 'fluid_tag' : 'fluid_stack' };
+        element = {
+          fluid: id,
+          amount: amount,
+          type: isFluidTag ? 'fluid_tag' : 'fluid_stack',
+        };
         if (isFluidTag) {
           element.fluid_tag = id;
           delete element.fluid;
@@ -70,7 +74,7 @@ function CreateHelper(event) {
    * @param {Special.RecipeType} type - The type of recipe (e.g., 'mixing', 'compacting', etc.)
    * @returns {function(CreateResults, CreateIngredients, Special.RecipeId): void}
    */
-  const basicRecipe = (type) => (output, input, recipeID) => {
+  const basicRecipe = type => (output, input, recipeID) => {
     const recipe = {
       type: `create:${type}`,
       ingredients: jsonArray(input),

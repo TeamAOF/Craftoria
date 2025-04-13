@@ -1,4 +1,4 @@
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
   const mekanism = MekanismHelper(e);
 
   // QoL Recipes

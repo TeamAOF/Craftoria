@@ -38,4 +38,4 @@ global.customMIMachines = [
   },
 ];
 
-Platform.setModName("craftoria", "Craftoria");
+Platform.setModName('craftoria', 'Craftoria');

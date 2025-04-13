@@ -1,5 +1,5 @@
 // Currently adding information to EMI adds it twice, due to it also being added to JEI.
-RecipeViewerEvents.addInformation('fluid', (e) => {
+RecipeViewerEvents.addInformation('fluid', e => {
   let fluidEntries = {
     'justdirethings:unstable_portal_fluid_source': [
       'This fluid is used to make (stable)portal fluid.',
@@ -13,7 +13,7 @@ RecipeViewerEvents.addInformation('fluid', (e) => {
   }
 });
 
-RecipeViewerEvents.addInformation('item', (e) => {
+RecipeViewerEvents.addInformation('item', e => {
   let entries = {
     'cursedearth:cursed_earth': [
       `Can be acquired by sneaking and using a Wither Rose on Dirt.`,

@@ -37,7 +37,7 @@ function ArsNouveauHelper(event) {
 
       let pedestalItemCount = 0;
 
-      pedestalItems.forEach((pedestalItem) => {
+      pedestalItems.forEach(pedestalItem => {
         let [count, item] = pedestalItem.includes('x ') ? pedestalItem.split('x ') : [1, pedestalItem];
 
         for (let i = 0; i < parseInt(count); i++) {
@@ -74,7 +74,7 @@ function ArsNouveauHelper(event) {
 
       let pedestalItemCount = 0;
 
-      pedestalItems.forEach((pedestalItem) => {
+      pedestalItems.forEach(pedestalItem => {
         let [count, item] = pedestalItem.includes('x ') ? pedestalItem.split('x ') : [1, pedestalItem];
 
         for (let i = 0; i < parseInt(count); i++) {
@@ -103,7 +103,7 @@ function ArsNouveauHelper(event) {
         .custom({
           type: 'ars_nouveau:glyph',
           output: Item.of(output).toJson(),
-          inputs: inputs.map((input) => Ingredient.of(input).toJson()),
+          inputs: inputs.map(input => Ingredient.of(input).toJson()),
           exp: xpCost ?? 0,
         })
         .id(recipeID ?? makeRecipeId(output, 'glyph'));

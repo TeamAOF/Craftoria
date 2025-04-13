@@ -1,4 +1,4 @@
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
   const { assembler } = e.recipes.modern_industrialization;
 
   assembler(8, 100)

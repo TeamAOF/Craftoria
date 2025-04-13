@@ -1,8 +1,8 @@
-let getMaterial = (item) => {
+let getMaterial = item => {
   const material = item.split(':')[1];
   const parts = material.split('_');
 
-  const getAllCombinations = (arr) => {
+  const getAllCombinations = arr => {
     let combinations = [];
     for (let i = 0; i < arr.length; i++) {
       for (let j = i + 1; j <= arr.length; j++) {
@@ -23,10 +23,10 @@ let getMaterial = (item) => {
   console.warn(`Could not find material for item: ${item}`);
   return null;
 };
-ServerEvents.tags('item', (e) => {
+ServerEvents.tags('item', e => {
   Ingredient.of('@rechiseled')
     .except('rechiseled:chisel')
-    .itemIds.forEach((item) => {
+    .itemIds.forEach(item => {
       const material = getMaterial(item);
       if (material) {
         e.add(`rechiseled:${material}`, item);
@@ -50,7 +50,7 @@ ServerEvents.tags('item', (e) => {
   ]);
 });
 
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
   let recipeIDs = [];
   const makeRecipeID = (output, input) => {
     let recipeID = _makeRecipeID('decor_stuffs', 'stonecutting', output, input);
@@ -67,36 +67,31 @@ ServerEvents.recipes((e) => {
 
   Ingredient.of('@rechiseled')
     .except('rechiseled:chisel')
-    .stacks.forEach((item) => {
+    .stacks.forEach(item => {
       const material = getMaterial(item.id);
       if (material)
-        e.stonecutting(item.id, [
-          Ingredient.of(`#rechiseled:${material}`),
-          `minecraft:${material}`,
-        ]).id(makeRecipeID(item.id, `rechiseled:${material}`));
+        e.stonecutting(item.id, [Ingredient.of(`#rechiseled:${material}`), `minecraft:${material}`]).id(
+          makeRecipeID(item.id, `rechiseled:${material}`)
+        );
     });
 
   let chippedThings = [];
   Ingredient.of('@chipped')
     .except('#craftoria:decor_stations')
-    .stacks.forEach((item) => {
-      item.tags.forEach((tag) => {
+    .stacks.forEach(item => {
+      item.tags.forEach(tag => {
         if (chippedThings.includes(`#${tag}`)) return;
         if (tag.namespace === 'chipped') chippedThings.push(`#${tag}`);
       });
     });
 
-  chippedThings.forEach((tag) => {
-    Ingredient.of(tag).stacks.forEach((item) => {
-      e.stonecutting(item.id, [tag, `minecraft:${tag.split(':')[1]}`]).id(
-        makeRecipeID(item.id, tag)
-      );
+  chippedThings.forEach(tag => {
+    Ingredient.of(tag).stacks.forEach(item => {
+      e.stonecutting(item.id, [tag, `minecraft:${tag.split(':')[1]}`]).id(makeRecipeID(item.id, tag));
     });
   });
 
-  Ingredient.of('#factory_blocks:factory').stacks.forEach((item) => {
-    e.stonecutting(item.id, '#factory_blocks:factory').id(
-      makeRecipeID(item.id, 'factory_blocks:factory')
-    );
+  Ingredient.of('#factory_blocks:factory').stacks.forEach(item => {
+    e.stonecutting(item.id, '#factory_blocks:factory').id(makeRecipeID(item.id, 'factory_blocks:factory'));
   });
 });

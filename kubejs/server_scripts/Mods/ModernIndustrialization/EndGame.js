@@ -1,5 +1,6 @@
-ServerEvents.recipes((e) => {
-  const { assembler, blast_furnace, vacuum_freezer, heat_exchanger, replicator_1, implosion_compressor } = e.recipes.modern_industrialization;
+ServerEvents.recipes(e => {
+  const { assembler, blast_furnace, vacuum_freezer, heat_exchanger, replicator_1, implosion_compressor } =
+    e.recipes.modern_industrialization;
 
   assembler(1024 * 32, 20 * 60)
     .itemOut('modern_industrialization:replicator_1')
@@ -31,7 +32,7 @@ ServerEvents.recipes((e) => {
     .itemOut('modern_industrialization:quantum_upgrade')
     .id('craftoria:end_game/quantum_upgrade_from_quantium');
 
-  ['helmet', 'chestplate', 'leggings', 'boots', 'sword'].forEach((item) => {
+  ['helmet', 'chestplate', 'leggings', 'boots', 'sword'].forEach(item => {
     e.remove({ output: `modern_industrialization:quantum_${item}` });
     heat_exchanger(8192 * 16, 20 * 10)
       .itemIn(`craftoria:quantum_${item}_mold`, 0)
@@ -65,7 +66,7 @@ ServerEvents.recipes((e) => {
     .fluidOut('90x craftoria:molten_iridium')
     .id('craftoria:end_game/molten_iridium');
 
-  Ingredient.all.except('#craftoria:replicator_1_blacklist').stacks.forEach((item) => {
+  Ingredient.all.except('#craftoria:replicator_1_blacklist').stacks.forEach(item => {
     replicator_1(8192, 20).itemOut(item.id).itemIn(item.id, 0).fluidIn('1000x modern_industrialization:uu_matter');
   });
   replicator_1(8192 * 128, 20 * 60 * 5)

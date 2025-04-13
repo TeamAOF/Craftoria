@@ -1,8 +1,6 @@
-const TIME_BUDDING_STAGE = Java.loadClass(
-  'com.direwolf20.justdirethings.common.blocks.resources.TimeCrystalBuddingBlock'
-).STAGE;
+const TIME_BUDDING_STAGE = Java.loadClass('com.direwolf20.justdirethings.common.blocks.resources.TimeCrystalBuddingBlock').STAGE;
 
-MIRecipeEvents.customCondition((event) => {
+MIRecipeEvents.customCondition(event => {
   const buddingConditions = {
     certus_budding: {
       block: 'ae2:flawless_budding_quartz',
@@ -22,10 +20,7 @@ MIRecipeEvents.customCondition((event) => {
     },
     timecrystal_budding: {
       block: 'justdirethings:time_crystal_budding_block',
-      text: [
-        'Place Budding Time Crystal in the center to produce Time Crystal.',
-        'Requires a stage 3 Budding Time Crystal Block.',
-      ],
+      text: ['Place Budding Time Crystal in the center to produce Time Crystal.', 'Requires a stage 3 Budding Time Crystal Block.'],
       blockState: {
         property: TIME_BUDDING_STAGE,
         value: TIME_BUDDING_STAGE.max,
@@ -38,10 +33,7 @@ MIRecipeEvents.customCondition((event) => {
       key,
       (ctx, recipe) => {
         let be = ctx.blockEntity;
-        let pos = be.blockPos['relative(net.minecraft.core.Direction,int)'](
-          be.orientation.facingDirection.opposite,
-          1
-        ).above(1);
+        let pos = be.blockPos['relative(net.minecraft.core.Direction,int)'](be.orientation.facingDirection.opposite, 1).above(1);
         let state = ctx.level.getBlockState(pos);
 
         if (state.id != condition.block) return false;
@@ -65,7 +57,7 @@ MIRecipeEvents.customCondition((event) => {
   });
 });
 
-ServerEvents.recipes((event) => {
+ServerEvents.recipes(event => {
   const { budding_incubator } = event.recipes.modern_industrialization;
 
   budding_incubator(32, 500)

@@ -22,7 +22,7 @@ const globalItemRemovals = [
   'mffs:confiscation_module',
 ];
 
-ServerEvents.recipes((event) => {
+ServerEvents.recipes(event => {
   const id = [
     'appflux:inscriber/crush_diamond',
     'appflux:inscriber/crush_emerald',
@@ -37,15 +37,15 @@ ServerEvents.recipes((event) => {
 
   const output = [];
 
-  id.forEach((id) => {
+  id.forEach(id => {
     event.remove({ id: id });
   });
 
-  output.forEach((output) => {
+  output.forEach(output => {
     event.remove({ output: output });
   });
 
-  globalItemRemovals.forEach((output) => {
+  globalItemRemovals.forEach(output => {
     event.remove({ output: output });
   });
 });

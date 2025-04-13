@@ -1,4 +1,4 @@
-CapeJS.addCapes((event) => {
+CapeJS.addCapes(event => {
   const capes = {
     developer: [
       'e724b58d-7c66-4faa-9941-7b1b3df348a3', // TheInnocentFool
@@ -50,8 +50,7 @@ CapeJS.addCapes((event) => {
       '275b2995-09b7-44a6-a645-b00ec89125da', // Snikey11
       '457625d6-9114-41ed-8d38-f5ddaa2aba66', // Blue98
       'a6d59f07-2d8c-4f7e-9f1c-3714bd68f863', // VirlesFelyard
-
-    ]
+    ],
   };
   for (const [cape, players] in capes) {
     for (const player of players) {

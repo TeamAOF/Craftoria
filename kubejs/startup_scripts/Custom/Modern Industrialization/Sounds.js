@@ -1,4 +1,4 @@
-MISoundAddons.modifySounds((e) => {
+MISoundAddons.modifySounds(e => {
   let duration = {
     bending_machine: 23,
     alloy_smelter: 38,
@@ -7,13 +7,13 @@ MISoundAddons.modifySounds((e) => {
     brewery: 71,
   };
 
-  global.customMIMachines.forEach((machine) => {
+  global.customMIMachines.forEach(machine => {
     if (machine.sound && machine.soundDuration) {
       duration[machine.id] = machine.soundDuration;
     }
   });
 
-  Object.keys(duration).forEach((key) => {
+  Object.keys(duration).forEach(key => {
     e.modifyDuration(key, duration[key]);
   });
 });

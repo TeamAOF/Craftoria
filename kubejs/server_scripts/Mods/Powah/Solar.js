@@ -1,5 +1,4 @@
 ServerEvents.recipes(e => {
-
     let energizing = e.recipes.powah.energizing
 
     e.remove({ id: 'powah:crafting/solar_panel_starter' })

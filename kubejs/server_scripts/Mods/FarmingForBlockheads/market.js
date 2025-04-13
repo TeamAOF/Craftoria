@@ -1,4 +1,4 @@
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
   let market = (item, category) => {
     let recipe = {
       type: 'farmingforblockheads:market',
@@ -10,7 +10,7 @@ ServerEvents.recipes((e) => {
     e.custom(recipe).id(`craftoria:ffb_market/${item.split(':')[0]}/${item.split(':')[1]}`);
   };
 
-  let recipeExists = (item) => {
+  let recipeExists = item => {
     return e.containsRecipe({ output: item, type: 'farmingforblockheads:market' });
   };
 
@@ -37,12 +37,12 @@ ServerEvents.recipes((e) => {
     'ars_nouveau:magebloom_crop',
   ];
 
-  Ingredient.of('#minecraft:saplings').stacks.forEach((sapling) => {
+  Ingredient.of('#minecraft:saplings').stacks.forEach(sapling => {
     if (saplingBlacklist.includes(sapling.id) || recipeExists(sapling.id)) return;
     market(sapling.id, 'saplings');
   });
 
-  Ingredient.of('#c:seeds').stacks.forEach((seed) => {
+  Ingredient.of('#c:seeds').stacks.forEach(seed => {
     if (seedBlacklist.includes(seed.id) || recipeExists(seed.id)) return;
     market(seed.id, 'seeds');
   });

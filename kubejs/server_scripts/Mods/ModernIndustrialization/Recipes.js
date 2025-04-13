@@ -2,33 +2,17 @@
 /// Made by Team AOF ///
 ////////////////////////
 
-ServerEvents.recipes((e) => {
-  const { assembler, macerator, compressor, cutting_machine, electrolyzer } =
-    e.recipes.modern_industrialization;
+ServerEvents.recipes(e => {
+  const { assembler, macerator, compressor, cutting_machine, electrolyzer } = e.recipes.modern_industrialization;
 
   // Obsidian Dust
-  macerator(2, 100)
-    .itemOut('4x mekanism:dust_obsidian')
-    .itemIn('#c:obsidians/normal')
-    .id('craftoria:mi/obsidian_dust');
+  macerator(2, 100).itemOut('4x mekanism:dust_obsidian').itemIn('#c:obsidians/normal').id('craftoria:mi/obsidian_dust');
 
   // Ores > Raw
-  macerator(2, 100)
-    .itemOut('3x modern_industrialization:raw_silver')
-    .itemIn('#c:ores/silver')
-    .id('craftoria:mi/ores/raw_silver');
-  macerator(2, 100)
-    .itemOut('3x irons_spellbooks:raw_mithril')
-    .itemIn('#c:ores/mithril')
-    .id('craftoria:mi/ores/raw_mithril');
-  macerator(2, 100)
-    .itemOut('2x actuallyadditions:black_quartz')
-    .itemIn('#c:ores/black_quartz')
-    .id('craftoria:mi/ores/black_quartz');
-  macerator(2, 100)
-    .itemOut('3x create:raw_zinc')
-    .itemIn('#c:ores/zinc')
-    .id('craftoria:mi/ores/raw_zinc');
+  macerator(2, 100).itemOut('3x modern_industrialization:raw_silver').itemIn('#c:ores/silver').id('craftoria:mi/ores/raw_silver');
+  macerator(2, 100).itemOut('3x irons_spellbooks:raw_mithril').itemIn('#c:ores/mithril').id('craftoria:mi/ores/raw_mithril');
+  macerator(2, 100).itemOut('2x actuallyadditions:black_quartz').itemIn('#c:ores/black_quartz').id('craftoria:mi/ores/black_quartz');
+  macerator(2, 100).itemOut('3x create:raw_zinc').itemIn('#c:ores/zinc').id('craftoria:mi/ores/raw_zinc');
 
   e.replaceInput(
     { id: 'industrialization_overdrive:machines/multi_processing_array/craft' },
@@ -42,10 +26,7 @@ ServerEvents.recipes((e) => {
     .itemOut('4x mekanism:dust_fluorite', 0.75)
     .itemIn('#c:ores/fluorite')
     .id('craftoria:mi/ores/fluorite_dust');
-  compressor(2, 50)
-    .itemOut('mekanism:fluorite_gem')
-    .itemIn('#c:dusts/fluorite')
-    .id('craftoria:mi/ores/fluorite_gem');
+  compressor(2, 50).itemOut('mekanism:fluorite_gem').itemIn('#c:dusts/fluorite').id('craftoria:mi/ores/fluorite_gem');
 
   e.shaped('mi_tweaks:flux_transformer', ['SS ', ' HC', 'SS '], {
     S: 'modern_industrialization:superconductor_cable',
@@ -53,12 +34,8 @@ ServerEvents.recipes((e) => {
     C: '#c:fe_cables',
   }).id('mi_tweaks:flux_transformer');
 
-  ['gold', 'iron'].forEach((material) => {
-    e.replaceInput(
-      { mod: 'modern_industrialization' },
-      `#c:gears/${material}`,
-      `modern_industrialization:${material}_gear`
-    );
+  ['gold', 'iron'].forEach(material => {
+    e.replaceInput({ mod: 'modern_industrialization' }, `#c:gears/${material}`, `modern_industrialization:${material}_gear`);
   });
 
   e.remove({ output: 'replication:replica_ingot' });
@@ -77,7 +54,7 @@ ServerEvents.recipes((e) => {
   };
 
   let madeCuttingRecipeFor = [];
-  Ingredient.of('#minecraft:logs').itemIds.forEach((id) => {
+  Ingredient.of('#minecraft:logs').itemIds.forEach(id => {
     if ((!id.includes('log') && !id.includes('stem')) || id.includes('stripped')) return;
     const { modID, itemId } = { modID: id.split(':')[0], itemId: id.split(':')[1] };
 
@@ -106,17 +83,14 @@ ServerEvents.recipes((e) => {
     let logTag = `#${baseID}_logs`;
 
     if (madeCuttingRecipeFor.includes(plank)) return;
-    if (modID === 'twilightforest' && Ingredient.of(logTag).empty)
-      logTag = `#twilightforest:${type}wood_logs`;
+    if (modID === 'twilightforest' && Ingredient.of(logTag).empty) logTag = `#twilightforest:${type}wood_logs`;
 
     if (Item.exists(strippedLog)) cuttingMachine(strippedLog, id);
-    if (Item.exists(wood) && Item.exists(strippedWood))
-      cuttingMachine(strippedWood, wood);
+    if (Item.exists(wood) && Item.exists(strippedWood)) cuttingMachine(strippedWood, wood);
 
     if (!madeCuttingRecipeFor.includes(plank)) {
       if (Item.exists(plank)) {
-        if (!Ingredient.of(`#${modID}:${type}_logs`).empty)
-          cuttingMachine(`6x ${plank}`, `#${modID}:${type}_logs`);
+        if (!Ingredient.of(`#${modID}:${type}_logs`).empty) cuttingMachine(`6x ${plank}`, `#${modID}:${type}_logs`);
         else {
           cuttingMachine(`6x ${plank}`, id);
           if (Item.exists(strippedLog)) cuttingMachine(`6x ${plank}`, strippedLog);

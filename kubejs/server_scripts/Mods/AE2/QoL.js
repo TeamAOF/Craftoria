@@ -1,8 +1,7 @@
-ServerEvents.recipes((event) => {
+ServerEvents.recipes(event => {
   const ae = AE2Helper(event);
   const mekanism = MekanismHelper(event);
-  const { assembler, packer, mixer, electrolyzer, macerator } =
-    event.recipes.modern_industrialization;
+  const { assembler, packer, mixer, electrolyzer, macerator } = event.recipes.modern_industrialization;
   const { shapeless } = event;
 
   //QoL recipes
@@ -39,10 +38,7 @@ ServerEvents.recipes((event) => {
     .itemIn('#c:dusts/glowstone')
     .fluidIn('1000x minecraft:water', 0)
     .id('craftoria:appflux/redstone_crystal');
-  electrolyzer(8, 60)
-    .itemOut('appflux:charged_redstone')
-    .itemIn('appflux:redstone_crystal')
-    .id('craftoria:appflux/charged_redstone');
+  electrolyzer(8, 60).itemOut('appflux:charged_redstone').itemIn('appflux:redstone_crystal').id('craftoria:appflux/charged_redstone');
 
   //ExtendedAE compat
   assembler(8, 200)
@@ -56,10 +52,7 @@ ServerEvents.recipes((event) => {
     .itemIn('#c:gems/entro')
     .itemIn('extendedae:concurrent_processor_press', 0)
     .id('craftoria:extendedae/concurrent_processor_print');
-  macerator(2, 100)
-    .itemOut('extendedae:entro_dust')
-    .itemIn('#c:gems/entro')
-    .id('craftoria:extendedae/entro_dust');
+  macerator(2, 100).itemOut('extendedae:entro_dust').itemIn('#c:gems/entro').id('craftoria:extendedae/entro_dust');
   mixer(8, 100)
     .itemOut('extendedae:entro_ingot')
     .itemIn('#c:dusts/entro')
@@ -128,20 +121,8 @@ ServerEvents.recipes((event) => {
   ae.circuitCutter('1x craftoria:universal_press', 'craftoria:1x_compressed_iron_block');
 
   shapeless('4x ae2:crafting_accelerator', 'bigger_ae2:4_core_crafting_accelerator');
-  shapeless(
-    '4x bigger_ae2:4_core_crafting_accelerator',
-    'bigger_ae2:16_core_crafting_accelerator'
-  );
-  shapeless(
-    '4x bigger_ae2:16_core_crafting_accelerator',
-    'bigger_ae2:64_core_crafting_accelerator'
-  );
-  shapeless(
-    '4x bigger_ae2:64_core_crafting_accelerator',
-    'bigger_ae2:256_core_crafting_accelerator'
-  );
-  shapeless(
-    '4x bigger_ae2:256_core_crafting_accelerator',
-    'bigger_ae2:1024_core_crafting_accelerator'
-  );
+  shapeless('4x bigger_ae2:4_core_crafting_accelerator', 'bigger_ae2:16_core_crafting_accelerator');
+  shapeless('4x bigger_ae2:16_core_crafting_accelerator', 'bigger_ae2:64_core_crafting_accelerator');
+  shapeless('4x bigger_ae2:64_core_crafting_accelerator', 'bigger_ae2:256_core_crafting_accelerator');
+  shapeless('4x bigger_ae2:256_core_crafting_accelerator', 'bigger_ae2:1024_core_crafting_accelerator');
 });

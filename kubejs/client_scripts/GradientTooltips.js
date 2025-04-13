@@ -45,13 +45,13 @@
       console.error('GradientTooltips: Item id is required.');
       continue;
     }
-    ItemEvents.modifyTooltips((event) => {
-      event.modify(cname.id, (text) => {
+    ItemEvents.modifyTooltips(event => {
+      event.modify(cname.id, text => {
         text.dynamic(`gradient_${cname.id.split(':')[1]}`);
       });
     });
 
-    ItemEvents.dynamicTooltips(`gradient_${cname.id.split(':')[1]}`, (event) => {
+    ItemEvents.dynamicTooltips(`gradient_${cname.id.split(':')[1]}`, event => {
       if (!cname.name) cname.name = event.item.hoverName.string;
       if (!cname.nodes)
         cname.nodes = [

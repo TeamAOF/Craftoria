@@ -1,4 +1,4 @@
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
   e.shaped('craftoria:blaze_block', ['AAA', 'AAA', 'AAA'], {
     A: 'minecraft:blaze_rod',
   });
@@ -30,7 +30,10 @@ ServerEvents.recipes((e) => {
     s: '#c:slimeballs',
   }).id('craftoria:name_tag');
 
-  e.smelting('irons_spellbooks:mithril_scrap', 'irons_spellbooks:raw_mithril').xp(40).cookingTime(400).id('craftoria:irons/mithril_scrap_from_raw');
+  e.smelting('irons_spellbooks:mithril_scrap', 'irons_spellbooks:raw_mithril')
+    .xp(40)
+    .cookingTime(400)
+    .id('craftoria:irons/mithril_scrap_from_raw');
 
   e.shaped('phantoms_utilities:spray_can', [' T ', 'SPS', 'SDS'], {
     T: 'pneumaticcraft:pressure_tube',
@@ -54,6 +57,6 @@ ServerEvents.recipes((e) => {
 
   e.shaped('craftoria:flimsy_hammer', ['AAA', 'ABA', ' B '], {
     A: '#minecraft:wooden_pressure_plates',
-    B: '#c:rods/wooden'
+    B: '#c:rods/wooden',
   });
 });
