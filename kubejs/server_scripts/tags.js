@@ -96,6 +96,11 @@ ServerEvents.tags('item', (e) => {
     /^justhammers:(stone|iron|gold|diamond|netherite)_(impact|reinforced|reinforced_impact|destructor)_hammer$/,
   ]);
 
+  // Replication
+  e.add("replication:skip_calculation", [
+    "gateways:gate_pearl",
+  ])
+
   // Wooden Tier Storage
   e.add('craftoria:storage/wooden', ['#c:chests/wooden', '#c:barrels/wooden']);
 
