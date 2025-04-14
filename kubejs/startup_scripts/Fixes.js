@@ -1,6 +1,6 @@
-ItemEvents.modification((e) => {
-  ['helmet', 'chestplate', 'leggings', 'boots', 'sword'].forEach((qItem) => {
-    e.modify(`modern_industrialization:quantum_${qItem}`, (item) => {
+ItemEvents.modification(e => {
+  ['helmet', 'chestplate', 'leggings', 'boots', 'sword'].forEach(qItem => {
+    e.modify(`modern_industrialization:quantum_${qItem}`, item => {
       item.rarity = 'epic';
     });
   });
@@ -8,6 +8,6 @@ ItemEvents.modification((e) => {
 
 const $PolyLib = Java.loadClass('net.creeperhost.polylib.PolyLib');
 
-StartupEvents.postInit((e) => {
+StartupEvents.postInit(e => {
   $PolyLib.initPolyItemData(); // Fixes Shrink spamming logs.
 });

@@ -1,25 +1,60 @@
-ServerEvents.tags('item', (e) => {
+ServerEvents.tags('item', e => {
+  /**
+   * Blacklist for both Replicator Mk I and Mk II.
+   * @type {$Ingredient_[]}
+   */
+  const replicatorBlacklist = [
+    /^.*creative./,
+
+    'ae2:quantum_entangled_singularity',
+    'ae2wtlib:wireless_universal_terminal',
+    'extendedae:package',
+    /^extendedae:.*_cell$/,
+
+    'mekanism:pellet_antimatter',
+
+    /^modern_industrialization:quantum_.*/,
+    'modern_industrialization:replicator',
+    'modern_industrialization:replicator_1',
+    'modern_industrialization:helium_plasma_bucket',
+    'modern_industrialization:uu_matter_bucket',
+    'modern_industrialization:singularity',
+    'modern_industrialization:nuke',
+    /^extended_industrialization:nano_quantum_.*/,
+
+    'gag:time_sand_pouch',
+
+    /^sophisticated(storage|backpacks):.*(shulker|barrel|chest|backpack)/,
+    'sophisticatedstorageinmotion:storage_minecart',
+
+    '#create:packages',
+
+    /^industrialforegoing:infinity_.*/,
+
+    'shrink:shrink_bottle',
+  ];
+
+  /**
+   * Blacklist for Replicator Mk II.
+   * @type {$Ingredient_[]}
+   */
   const replicator_2_blacklist = [
+    /_bucket$/,
     /storage_cell/,
     /fe_.*_cell/,
     /portable_.*_cell/,
     'ae2:view_cell',
     'ae2:wireless_crafting_terminal',
-    'ae2wtlib:wireless_universal_terminal',
     'megacells:bulk_item_cell',
     'megacells:radioactive_chemical_cell',
-    'extendedae:package',
+    /^enderdrives:ender_disk_.*/,
 
     /^pneumaticcraft:.*_(tank|chest)$/,
     /^pneumaticcraft:.*drone/,
     'pneumaticcraft:liquid_hopper',
 
-    /^sophisticated(storage|backpacks):.*(shulker|barrel|chest|backpack)/,
-    'sophisticatedstorageinmotion:storage_minecart',
-
     /^functionalstorage/,
 
-    /^industrialforegoing:infinity_.*/,
     'industrialforegoing:mob_imprisonment_tool',
 
     /^mekanism:.*_(chest|tank|barrel)/,
@@ -74,7 +109,6 @@ ServerEvents.tags('item', (e) => {
     'mekanismgenerators:solar_generator',
     'mekanismgenerators:advanced_solar_generator',
     'mekanismgenerators:gas_burning_generator',
-    'mekanism:pellet_antimatter',
 
     /^mekanism_extras:.*_(chest|tank|barrel)/,
     /^mekanism_extras:.*_bin$/,
@@ -97,8 +131,6 @@ ServerEvents.tags('item', (e) => {
     'ars_elemental:caster_bag',
     'ars_additions:handy_haversack',
 
-    'shrink:shrink_bottle',
-
     'integrateddynamics:energy_battery',
 
     'justdirethings:creaturecatcher',
@@ -107,19 +139,6 @@ ServerEvents.tags('item', (e) => {
     'justdirethings:fuel_canister',
     'justdirethings:pocket_generator',
     'justdirethings:experienceholder',
-
-    /^modern_industrialization:quantum_.*/,
-    'modern_industrialization:replicator',
-    'modern_industrialization:replicator_1',
-    'modern_industrialization:helium_plasma_bucket',
-    'modern_industrialization:singularity',
-    'modern_industrialization:nuke',
-
-    /^extended_industrialization:nano_quantum_.*/,
-
-    'gag:time_sand_pouch',
-
-    'hyperbox:hyperbox',
 
     'apothic_enchanting:library',
     'apothic_enchanting:ender_library',
@@ -140,41 +159,14 @@ ServerEvents.tags('item', (e) => {
     'supplementaries:jar',
 
     'occultism:storage_controller_stabilized',
+  ].concat(replicatorBlacklist);
 
-    /^.*creative./
-  ];
-
-  const replicator_2_exclusions = [
-    /^functionalstorage:.*(upgrade|downgrade|tool|controller)/,
-    /^mekanism:dynamic_(tank|valve)/,
-    'industrialforegoing:infinity_charger',
-    'mekanism:scuba_tank',
-    /_radioactive_waste_barrel$/,
-    'tankstorage:tank_dock',
-    'tankstorage:tank_link',
-    'bankstorage:bank_dock',
-    'bankstorage:bank_link',
-    'modern_industrialization:quantum_circuit',
-    'modern_industrialization:quantum_circuit_board',
-    'modern_industrialization:quantum_machine_casing',
-  ];
-  e.add('modern_industrialization:replicator_blacklist', replicator_2_blacklist).remove(replicator_2_exclusions);
-
+  /**
+   * Blacklist for Replicator Mk I.
+   * @type {$Ingredient_[]}
+   */
   const replicator_1_blacklist = [
-    'mekanism:pellet_antimatter',
-    /^modern_industrialization:quantum_.*/,
-    'modern_industrialization:replicator',
-    'modern_industrialization:replicator_1',
-    'modern_industrialization:helium_plasma_bucket',
-    'modern_industrialization:uu_matter_bucket',
-    'modern_industrialization:singularity',
-    'modern_industrialization:nuke',
-    /_bucket$/,
-
     // These make no sense to replicate, as they rely on having NBT data, which Replicator Mk I doesn't support, and I don't want to risk them causing issues.
-    'extendedae:package',
-    'shrink:shrink_bottle',
-    'gag:time_sand_pouch',
     'tankstorage:tank_link',
     'bankstorage:bank_link',
     'minecraft:enchanted_book',
@@ -196,14 +188,33 @@ ServerEvents.tags('item', (e) => {
     'irons_spellbooks:scroll',
     'hostilenetworks:data_model',
     'hostilenetworks:prediction',
-    'sophisticatedstorageinmotion:storage_minecart',
-  ];
+  ].concat(replicatorBlacklist);
 
-  const replicator_1_exclusions = [
+  /** @type {$Ingredient_[]} */
+  const replicator_2_exclusions = [
+    /^functionalstorage:.*(upgrade|downgrade|tool|controller)/,
+    /^mekanism:dynamic_(tank|valve)/,
+    'industrialforegoing:infinity_charger',
+    'mekanism:scuba_tank',
+    /_radioactive_waste_barrel$/,
+    'tankstorage:tank_dock',
+    'tankstorage:tank_link',
+    'bankstorage:bank_dock',
+    'bankstorage:bank_link',
     'modern_industrialization:quantum_circuit',
     'modern_industrialization:quantum_circuit_board',
     'modern_industrialization:quantum_machine_casing',
   ];
 
+  /** @type {$Ingredient_[]} */
+  const replicator_1_exclusions = [
+    'modern_industrialization:quantum_circuit',
+    'modern_industrialization:quantum_circuit_board',
+    'modern_industrialization:quantum_machine_casing',
+
+    'extendedae:void_cell',
+  ];
+
+  e.add('modern_industrialization:replicator_blacklist', replicator_2_blacklist).remove(replicator_2_exclusions);
   e.add('craftoria:replicator_1_blacklist', replicator_1_blacklist).remove(replicator_1_exclusions);
 });

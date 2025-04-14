@@ -1,9 +1,5 @@
 // priority: 0
 
-const $DyeColor = Java.loadClass('net.minecraft.world.item.DyeColor');
-
-global.dyeColors = $DyeColor.values().map((color) => color.toString().toLowerCase());
-
 /**
  * Enables a few scripts that are only useful for development.
  * Make sure to disable this in production/before pushing to git.
@@ -28,4 +24,18 @@ global.customMIMachines = [
     sound: 'mi_sound_addon:replicator',
     soundDuration: 20,
   },
+  {
+    id: 'large_plasma_turbine',
+    casing: 'plasma_handling_iridium_machine_casing',
+    default_overlays: {
+      front: 'modern_industrialization:block/machines/steam_turbine/overlay_front_iridium',
+      front_active: 'modern_industrialization:block/machines/steam_turbine/overlay_front_active_iridium',
+    },
+  },
+  {
+    id: 'budding_incubator',
+    casing: 'sky_stone_brick_casing',
+  },
 ];
+
+Platform.setModName('craftoria', 'Craftoria');

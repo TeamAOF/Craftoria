@@ -1,6 +1,6 @@
-ServerEvents.recipes((e) => {
-  let makeID = (type, input, output) => {
-    return _makeID('farmersdelight', type, input, output);
+ServerEvents.recipes(e => {
+  let makeRecipeID = (type, input, output) => {
+    return _makeRecipeID('farmersdelight', type, input, output);
   };
 
   let CuttingBoard = (outputs, inputs, tool, isAbility, sound) => {
@@ -14,7 +14,7 @@ ServerEvents.recipes((e) => {
     if (sound) recipe.sound = { sound_id: sound };
 
     if (Array.isArray(outputs)) {
-      outputs.forEach((output) => {
+      outputs.forEach(output => {
         recipe.result.push({ item: Item.of(output).toJson() });
       });
       recipeID.push(outputs[0]);
@@ -24,7 +24,7 @@ ServerEvents.recipes((e) => {
     }
 
     if (Array.isArray(inputs)) {
-      inputs.forEach((input) => {
+      inputs.forEach(input => {
         recipe.ingredients.push(Ingredient.of(input).toJson());
       });
       recipeID.push(inputs[0]);
@@ -41,10 +41,10 @@ ServerEvents.recipes((e) => {
     } else {
       recipe.tool = Ingredient.of(tool).toJson();
     }
-    e.custom(recipe).id(makeID('cutting', recipeID[0], recipeID[1]));
+    e.custom(recipe).id(makeRecipeID('cutting', recipeID[0], recipeID[1]));
   };
 
-  ['minecraft:bread', 'moredelight:bread_slice'].forEach((toastItem) => {
+  ['minecraft:bread', 'moredelight:bread_slice'].forEach(toastItem => {
     e.custom({
       type: 'cookingforblockheads:toaster',
       ingredient: {

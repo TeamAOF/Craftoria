@@ -1,3 +1,4 @@
+// priority: 1001
 // Global variables used in server_scripts
 
 /**
@@ -13,8 +14,8 @@ let debug = false;
 
 // Used for tooltips
 let holdShift = Text.gold('Hold [Shift] for more information');
-
-let _makeID = (mod, type, output, input) => {
+// Used for recipe IDs
+let _makeRecipeID = (mod, type, output, input) => {
   output = output.split(':')[1].replace(' ', '_');
   input = input.split(':')[1].replace(' ', '_');
 

@@ -1,17 +1,22 @@
-RecipeViewerEvents.removeEntries('item', (event) => {
+RecipeViewerEvents.removeEntries('item', event => {
+  /** @type {Special.Item[]} */
   let hideItems = [];
 
-  hideItems.forEach((item) => {
+  hideItems.forEach(item => {
     event.remove(item);
   });
 
-  globalItemRemovals.forEach((item) => {
+  globalItemRemovals.forEach(item => {
     event.remove(item);
+  });
+
+  disabledItems.forEach((item) => {
+    event.remove(item.id);
   });
 });
 
-RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
-  ['apothic_attributes:extra_long_flying', 'apothic_attributes:long_flying', 'apothic_attributes:flying'].forEach((potion) => {
+RecipeViewerEvents.removeEntriesCompletely('item', event => {
+  ['apothic_attributes:extra_long_flying', 'apothic_attributes:long_flying', 'apothic_attributes:flying'].forEach(potion => {
     event.remove([
       Ingredient.of(`minecraft:potion[potion_contents={potion:"${potion}"}]`),
       Ingredient.of(`minecraft:splash_potion[potion_contents={potion:"${potion}"}]`),
@@ -22,6 +27,6 @@ RecipeViewerEvents.removeEntriesCompletely('item', (event) => {
   });
 });
 
-RecipeViewerEvents.removeCategories((e) => {
+RecipeViewerEvents.removeCategories(e => {
   e.remove(['chisel:chisel_recipes_category', 'modern_industrialization:replicator_1']);
 });

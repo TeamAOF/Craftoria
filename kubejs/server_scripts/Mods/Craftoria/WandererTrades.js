@@ -1,4 +1,4 @@
-ServerEvents.generateData('after_mods', (e) => {
+ServerEvents.generateData('after_mods', e => {
   e.json('apotheosis:wanderer_trades/rare_gear/stonebreaker', {
     type: 'placebo:basic_trade',
     input_1: {

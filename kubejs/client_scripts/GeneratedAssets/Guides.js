@@ -1,10 +1,14 @@
-ClientEvents.generateAssets('after_mods', (e) => {
+ClientEvents.generateAssets('after_mods', e => {
   const guides = [
-    { mod: 'modern_industrialization', text: 'Technology For Newbies', model: 'guidebook' },
+    {
+      mod: 'modern_industrialization',
+      text: 'Technology For Newbies',
+      model: 'guidebook',
+    },
     { mod: 'craftoria', text: 'Miscellaneous guides', model: 'logo' },
   ];
 
-  guides.forEach((guide) => {
+  guides.forEach(guide => {
     let guideJson = {
       item_settings: {
         display_name: {
