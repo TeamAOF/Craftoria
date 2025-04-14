@@ -37,7 +37,7 @@ _NeoForge Loader 21.1.147_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
 ### Removed Mods ❌
 * [Create: Winery](https://www.curseforge.com/minecraft/mc-mods/create-winery)
 * [Forgiving Void](https://www.curseforge.com/minecraft/mc-mods/forgiving-void)
-* [FTB Chunks - Modded Support](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-recoloured) (Perforance Issues)
+* [FTB Chunks - Modded Support](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-recoloured) (Performance Issues)
 ---
 
 ## Craftoria | v1.18.0
