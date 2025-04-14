@@ -167,6 +167,10 @@ ServerEvents.tags('item', e => {
     /^sophisticatedstorageinmotion:_.*/
   ].concat(replicatorBlacklist);
 
+  /**
+   * Blacklist for Replicator Mk I.
+   * @type {$Ingredient_[]}
+   */
   const replicator_1_blacklist = [
     // These make no sense to replicate, as they rely on having NBT data, which Replicator Mk I doesn't support, and I don't want to risk them causing issues.
     'tankstorage:tank_link',
