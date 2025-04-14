@@ -8,6 +8,10 @@ RecipeViewerEvents.removeEntries('item', event => {
   globalItemRemovals.forEach(item => {
     event.remove(item);
   });
+
+  disabledItems.forEach((item) => {
+    event.remove(item.id);
+  });
 });
 
 RecipeViewerEvents.removeEntriesCompletely('item', event => {
