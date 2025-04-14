@@ -221,10 +221,14 @@
 
 		[functional.cannon.cannonball]
 			enabled = true
-			#Cannonball pierce radius. The bigger this is the less piercing power it will have as it will waste more energy breaking these blocks
+			#Cannonball power scaling. Higher values will make cannonballs have more energy. Reminder that the damage and breaking power of a cannonball is proportional to its energy (speed squared) times this constant
+			# Default: 3.5
+			# Range: 0.0 ~ 100.0
+			power_scaling = 3.5
+			#Radius of the 'explosion' when a cannonball hits a block. Set to 0 to disable
 			# Default: 1.1
-			# Range: 0.0 ~ 5.0
-			radius = 1.1
+			# Range: 0.0 ~ 10.0
+			break_radius = 1.1
 
 	[functional.present]
 		enabled = true

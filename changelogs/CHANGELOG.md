@@ -1,6 +1,48 @@
+## Craftoria | v1.19.0
+
+_NeoForge Loader 21.1.147_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.19.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.19.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added just hammers compat with MI Forge and add QoL (Flimsy Hammer) ``DVOA1``
+* Added a new skill tree, Magic ``AK``
+* Blacklisted Infinity Cells from Replicator ``AK``
+* Blacklisted Sophisticated Motion entries from Replicator ``AK``
+* Added time crystal recipe to Budding Incubator ``Phantom``
+* Added QoL recipes for JDT in MI Mixer ``Phantom``
+* Whitelist JAMD Nether for IF laser drilling ancient debris ``Exefer``
+* Unify coffee beans between Actually Additions and Rustic Delight ``Exefer``
+* Make mekanism pellets and yellow cake edible ``DVOA1``
+* Unify Sophisticated Backpacks Upgrades with Sophisticated Storage ``DVOA1``
+* New Lootr texture designs ``AK``
+* New Apoth texture designs ``AK``
+
+### Bug Fixes 🪲
+
+* Fixed scrolling in AE2 terminals.
+* Fixed a bug where showcased item icons wouldnt show if chat was closed.
+* Potentially fixed a bug where permanent blindness effect would be applied if not loading into the world/dimension quickly enough.
+* Update armored jetpack recipe to use diamond dusts tag.
+* Fixed custom MI machines missing loottable.
+* Fixed sophisticated storage controller recipe accepting only one type of chest/barrel.
+* Fixed a bug where you wouldnt be able to fully delete worlds.
+
+### Added Mods ✅
+
+* [Create: Ender Link](https://www.curseforge.com/minecraft/mc-mods/create-ender-link)
+* [Pufferfish's Unofficial Additions](https://www.curseforge.com/minecraft/mc-mods/pufferfishs-unofficial-additions)
+* [Reliquified L_Ender 's Cataclysm](https://www.curseforge.com/minecraft/mc-mods/reliquified-l-ender-s-cataclysm)
+* [Iron's Spells 'n Spellbooks Skill Tree](https://www.curseforge.com/minecraft/mc-mods/unofficial-irons-spells-n-spellbooks-skill-tree)
+
+### Removed Mods ❌
+* [Create: Winery](https://www.curseforge.com/minecraft/mc-mods/create-winery)
+* [Forgiving Void](https://www.curseforge.com/minecraft/mc-mods/forgiving-void)
+* [FTB Chunks - Modded Support](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-recoloured) (Perforance Issues)
+---
+
 ## Craftoria | v1.18.0
 
-_NeoForge Loader 21.1.139_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.18.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.18.0.md)_
+_NeoForge Loader 21.1.145_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.18.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.18.0.md)_
 
 ### Changes/Improvements ⭐
 

@@ -1,5 +1,5 @@
 # Don't change this! Version used to track needed updates.
-version = 0
+version = 1
 
 # Scrolls up a 'page' in the Config GUI
 
@@ -7,8 +7,11 @@ version = 0
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 266
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "page.up"
 
 # Scrolls down a 'page' in the Config GUI
 
@@ -16,8 +19,11 @@ key = 266
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 267
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "page.down"
 
 # Scrolls to the top of the Config GUI
 
@@ -25,8 +31,11 @@ key = 267
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 268
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "home"
 
 # Scrolls to the bottom of the Config GUI
 
@@ -34,8 +43,11 @@ key = 268
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 269
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "end"
 
 # Copies the currently hovered or focused config setting
 
@@ -43,8 +55,11 @@ key = 269
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 67
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "c"
 
 # Pastes the last-copied setting into a compatible new setting
 
@@ -52,8 +67,11 @@ key = 67
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 86
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "v"
 
 # Not currently used by Fzzy Config - cuts the selected information to a copy buffer
 
@@ -61,8 +79,11 @@ key = 86
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 88
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "x"
 
 # Saves changes made to the current Config and sends updates to the server
 
@@ -70,8 +91,11 @@ key = 88
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 83
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "s"
 
 # Undos changes made from newest to oldest change
 
@@ -79,8 +103,11 @@ key = 83
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 90
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "z"
 
 # Opens the context menu for the currently hovered or selected element
 
@@ -88,8 +115,11 @@ key = 90
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "mouse"
-key = 1
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "mouse.right"
 
 # Backs out to the previous config screen
 
@@ -97,8 +127,11 @@ key = 1
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 259
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "backspace"
 
 # Opens the 'Go-To' menu (Not used to focus the search bar)
 
@@ -106,8 +139,11 @@ key = 259
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 69
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "e"
 
 # Opens the GUI info menu
 
@@ -115,8 +151,11 @@ key = 69
 ctrl = "default"
 shift = "default"
 alt = "default"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 290
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "f1"
 
 # Fully exits all open config GUIs (and saves them as applicable)
 
@@ -124,8 +163,11 @@ key = 290
 ctrl = "false"
 shift = "true"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 256
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "escape"
 
 # Focuses the Config GUI search bar
 
@@ -133,15 +175,21 @@ key = 256
 ctrl = "true"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 70
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "f"
 
 [[find]]
 ctrl = "false"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 292
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "f3"
 
 # Opens the context menu for the currently hovered or selected element
 
@@ -149,15 +197,21 @@ key = 292
 ctrl = "false"
 shift = "true"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 299
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "f10"
 
 [[contextKeyboard]]
 ctrl = "false"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 348
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "menu"
 
 # Not currently used by Fzzy Config - A universal 'Enter' keybind
 
@@ -165,12 +219,18 @@ key = 348
 ctrl = "false"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 257
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "enter"
 
 [[act]]
 ctrl = "false"
 shift = "false"
 alt = "false"
+# 'keyboard' or 'mouse'
 type = "keyboard"
-key = 335
+# String representation of the key, or the integer keycode
+# Convert minecraft names: 'key.keyboard.pause' -> 'pause' or 'key.mouse.right' -> 'mouse.right'.
+key = "keypad.enter"

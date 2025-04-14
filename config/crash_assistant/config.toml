@@ -11,7 +11,7 @@
 	kill_old_app = true
 	#If options.txt doesn't exist, the default language will be used.
 	default_lang = "en_us"
-	#List of blacklisted log files. This files won't show in GUI logs list.
+	#List of blacklisted log files (checked with startswith()). This files won't show in GUI logs list.
 	blacklisted_logs = []
 	#Append comment text with notice about sending screenshot of this gui tells nothing to modpack creators.
 	show_dont_send_screenshot_of_gui_notice = true
@@ -19,6 +19,10 @@
 	#If help_link equals 'CHANGE_ME', this value will be ignored and gnomebot.dev used.
 	#Supported values: mclo.gs / gnomebot.dev
 	upload_to = "gnomebot.dev"
+	#Animate border to request user attention even more.
+	screenshot_of_gui_notice_animated_border = true
+	#Animate border to request user attention even more.
+	upload_all_animated_border = true
 
 #Here you can change text of lang placeHolders.
 #Also you can change any text in lang files.
@@ -101,4 +105,14 @@
 	enabled = true
 	#Show funny related gif in warning message.
 	show_gif = true
+
+#Settings of analysis feature.
+#Analysing logs for most common reasons of crashes and displaying recommendations with fixes.
+[analysis]
+	#Enable feature.
+	enabled = true
+	#Here you can disable some Analysis by class names.
+	#List of them can be found here: dev.kostromdan.mods.crash_assistant.app.logs_analyser.crash_reasons
+	#For example "Create6Addons"
+	blacklisted_reasons = []
 

@@ -105,10 +105,14 @@ frame_skip_recipe = false
 	squirrelRefreshRate = 600
 	#If enabled, soulbound enchantment can appear in randomly enchanted loot chests.
 	soulbound_loot = true
-	#Define the maximum number of pierce that a lens can apply to a spell.
+	#Define the maximum number of pierce that a piercing lens can apply to a projectile.
 	# Default: 10
 	# Range: > 1
 	pierceLensLimit = 10
+	#Define the maximum number of glyph that a chain lens can add to a projectile. This limit includes the existing glyphs on the projectile.
+	# Default: 15
+	# Range: > 1
+	chainLensLimit = 15
 
 [Mobs-Disabled]
 	#If true, the wandering mages will target players too, unless they wear the focus of the same school.
