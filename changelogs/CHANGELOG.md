@@ -16,13 +16,13 @@ _NeoForge Loader 21.1.147_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
 * Unify Sophisticated Backpacks Upgrades with Sophisticated Storage ``DVOA1``
 * New Lootr texture designs ``AK``
 * New Apoth texture designs ``AK``
+* Update armored jetpack recipe ``Phantom``
 
 ### Bug Fixes 🪲
 
 * Fixed scrolling in AE2 terminals.
 * Fixed a bug where showcased item icons wouldnt show if chat was closed.
 * Potentially fixed a bug where permanent blindness effect would be applied if not loading into the world/dimension quickly enough.
-* Update armored jetpack recipe to use diamond dusts tag.
 * Fixed custom MI machines missing loottable.
 * Fixed sophisticated storage controller recipe accepting only one type of chest/barrel.
 * Fixed a bug where you wouldnt be able to fully delete worlds.
