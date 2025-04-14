@@ -23,9 +23,9 @@ const globalItemRemovals = [
   'mffs:confiscation_module',
 ];
 
-ServerEvents.recipes(event => {
-  /** @type {Special.RecipeId[]} */
 const disabledItems = [];
+ServerEvents.recipes((event) => {
+  /** @type {Special.RecipeId[]} */
 
   const id = [
     'appflux:inscriber/crush_diamond',
