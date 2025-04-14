@@ -12,5 +12,5 @@ Prismatic Cobwebs can be combined with an item in an anvil to remove all curses.
 
 
 
-<Recipe id="apotheosis:prismatic_web" />
+<Recipe id="apothic_enchanting:prismatic_web" />
 

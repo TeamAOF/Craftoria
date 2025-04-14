@@ -1,0 +1,85 @@
+["Mekanism Weaponry Config"]
+	#Cooldown in ticks between when gun can be shot
+	# Default: 6
+	# Range: > 0
+	plasmaRifleCooldown = 6
+	#How much FE should be drained from the guns battery every shot
+	# Default: 250
+	# Range: > 0
+	plasmaRifleEnergyUsage = 250
+	#How many ticks it should take to reload the weapon
+	# Default: 45
+	# Range: > 0
+	plasmaRifleReloadTime = 45
+	#How much heat should accumulate every shot
+	# Default: 20
+	# Range: > 0
+	plasmaRifleHeatPerShot = 20
+	#How much energy the gun can store
+	# Default: 10000
+	# Range: > 0
+	plasmaRifleEnergyCapacity = 10000
+	#How fast the gun battery can charge/discharge
+	# Default: 1000
+	# Range: > 0
+	plasmaRifleEnergyTransfer = 1000
+	#Cooldown in ticks between when gun can be shot
+	# Default: 20
+	# Range: > 0
+	railgunCooldown = 20
+	#How much FE should be drained from the guns battery every shot
+	# Default: 1000
+	# Range: > 0
+	railgunEnergyUsage = 1000
+	#How many ticks it should take to reload the weapon
+	# Default: 55
+	# Range: > 0
+	railgunReloadTime = 55
+	#Max ammo the gun can hold
+	# Default: 5
+	# Range: > 1
+	railgunMaxAmmo = 5
+	#How much energy the gun can store
+	# Default: 100000
+	# Range: > 0
+	railgunEnergyCapacity = 100000
+	#How fast the gun battery can charge/discharge
+	# Default: 10000
+	# Range: > 0
+	railgunEnergyTransfer = 10000
+	#Cooldown in ticks between when gun can be shot
+	# Default: 4
+	# Range: > 0
+	teslaMinigunCooldown = 4
+	#How much FE should be drained from the guns battery every shot
+	# Default: 1000
+	# Range: > 0
+	teslaMinigunEnergyUsage = 1000
+	#How many ticks it should take to reload the weapon
+	# Default: 100
+	# Range: > 0
+	teslaMinigunReloadTime = 100
+	#How much heat should accumulate every shot
+	# Default: 5
+	# Range: > 0
+	teslaMinigunHeatPerShot = 5
+	#How much energy the gun can store
+	# Default: 100000
+	# Range: > 0
+	teslaMinigunEnergyCapacity = 100000
+	#How fast the gun battery can charge/discharge
+	# Default: 10000
+	# Range: > 0
+	teslaMinigunEnergyTransfer = 10000
+	#How much FE should be drained from the battery every shot
+	# Default: 1000
+	# Range: > 0
+	gauntletEnergyUsage = 1000
+	#How much energy the gauntlet battery can store
+	# Default: 10000
+	# Range: > 0
+	gauntletEnergyCapacity = 10000
+	#How fast the gauntlet battery can charge/discharge
+	# Default: 1000
+	# Range: > 0
+	gauntletEnergyTransfer = 1000

@@ -1,4 +1,4 @@
-ClientEvents.lang('en_us', (event) => {
+ClientEvents.lang('en_us', event => {
   event.addAll('enchdesc', {
     'tooltip.enchdesc.hold': '§6Hold §eShift §6to view enchantment descriptions.§r',
     'tooltip.enchdesc.embellish': ' ◊ %s: %s',
@@ -25,7 +25,8 @@ ClientEvents.lang('en_us', (event) => {
     'enchantment.minecraft.power.desc': 'Increases the damage of arrows fired from the bow.',
     'enchantment.minecraft.punch.desc': 'Increases the knockback strength of arrows fired by the bow.',
     'enchantment.minecraft.flame.desc': 'Arrows fired from the bow will deal additional fire damage.',
-    'enchantment.minecraft.infinity.desc': 'Allows the bow to fire normal arrows for free. You must have at least one arrow for this to work.',
+    'enchantment.minecraft.infinity.desc':
+      'Allows the bow to fire normal arrows for free. You must have at least one arrow for this to work.',
     'enchantment.minecraft.luck_of_the_sea.desc': 'Increases the chance of getting good loot while fishing.',
     'enchantment.minecraft.lure.desc': 'Decreases the amount of time it takes for a fish to bite the hook.',
     'enchantment.minecraft.depth_strider.desc': 'Increases movement speed while underwater.',

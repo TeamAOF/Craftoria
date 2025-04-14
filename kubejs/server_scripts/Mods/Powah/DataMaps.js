@@ -1,4 +1,4 @@
-ServerEvents.generateData('after_mods', (e) => {
+ServerEvents.generateData('after_mods', e => {
   e.json('powah:data_maps/fluid/fluid_coolant', {
     values: {
       '#c:water': {

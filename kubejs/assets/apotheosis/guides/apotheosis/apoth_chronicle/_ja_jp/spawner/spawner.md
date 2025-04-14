@@ -6,4 +6,6 @@ navigation:
 
 # スポナーモジュール
 
+スポナーモジュールによって、<Color id="blue">モブスポナー</Color>を移動したり変更したりすることができます。
+
 <SubPages />

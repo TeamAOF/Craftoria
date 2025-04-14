@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "エンチャントの種類"
-  icon: "minecraft:emerald"
+  title: 'エンチャントの種類'
+  icon: 'minecraft:emerald'
   position: -1
   parent: apotheosis:enchanting/enchantments.md
 ---
@@ -18,19 +18,18 @@ Apotheosisはエンチャントに3つの新しいサブカテゴリーを導入
 
 <Color id="dark_green">傑作</Color>エンチャントは最も強力で希少なエンチャントを表します。
 
-受け取るには常に最低でも55の<Color hex="#CC00CC">Final Power</Color>が必要です。
+受け取るには常に最低でも55の<Color id="dark_purple">Final Power</Color>が必要です。
 
 ## 諸刃
 
 <Color id="dark_purple">諸刃</Color>エンチャントは常に、良い効果と悪い効果を1つずつ持っています。
 
-受け取るには常に最低でも45の<Color hex="#CC00CC">Final Power</Color>が必要です
+受け取るには常に最低でも45の<Color id="dark_purple">Final Power</Color>が必要です
 
 ## 代償
 
 <Color id="dark_red">代償</Color>エンチャントには、その効果に応じた体力コストが付いて回ります。
 
-効果を受けるには常に少なくとも65<Color hex="#CC00CC">Final Power</Color> が必要です。
+効果を受けるには常に少なくとも65<Color id="dark_purple">Final Power</Color> が必要です。
 
 これらは <Color id="red">呪い</Color>とみなされます.
-

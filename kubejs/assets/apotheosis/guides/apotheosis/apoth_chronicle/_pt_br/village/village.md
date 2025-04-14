@@ -6,4 +6,6 @@ navigation:
 
 # Módulo de vila
 
+O módulo de vila adiciona várias coisas relacionadas a vilas e aldeões.
+
 <SubPages />

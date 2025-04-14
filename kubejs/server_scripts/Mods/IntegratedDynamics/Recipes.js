@@ -1,4 +1,4 @@
-ServerEvents.recipes((e) => {
+ServerEvents.recipes(e => {
   e.custom({
     type: 'integrateddynamics:squeezer',
     input_item: Ingredient.of('ars_nouveau:experience_gem').toJson(),

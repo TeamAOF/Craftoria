@@ -28,7 +28,7 @@ global.infCells = [
   { id: 'source', type: 'source' },
 ];
 
-StartupEvents.registry('item', (e) => {
+StartupEvents.registry('item', e => {
   /**
    * @param {String} id
    * @param {String} type
@@ -39,7 +39,8 @@ StartupEvents.registry('item', (e) => {
     let cell = e
       .create(`craftoria:infinity_${strippedId}_cell`, 'custom_infinity_cell')
       .texture(`craftoria:item/infinity_cells/${strippedId}`)
-      .cellModel(`craftoria:block/drive/infinity_${strippedId}_cell`);
+      .cellModel(`craftoria:block/drive/infinity_${strippedId}_cell`)
+      .tag(['modern_industrialization:replicator_blacklist', 'craftoria:replicator_1_blacklist']);
 
     switch (type) {
       case 'item':
@@ -73,5 +74,5 @@ StartupEvents.registry('item', (e) => {
     .displayName('Ritual: Imprisonment of the Warden')
     .ritualTooltip('A ritual to imprison the Warden in an Infinity Cell, granting you infinite warden souls');
 
-  global.infCells.forEach((cell) => createInfCell(cell.id, cell.type));
+  global.infCells.forEach(cell => createInfCell(cell.id, cell.type));
 });

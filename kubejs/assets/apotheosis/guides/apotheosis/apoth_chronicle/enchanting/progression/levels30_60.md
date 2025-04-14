@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Levels 30 - 60"
-  icon: "apothic_enchanting:hellshelf"
+  title: 'Levels 30 - 60'
+  icon: 'apothic_enchanting:hellshelf'
   parent: apotheosis:enchanting/progression.md
 ---
 
@@ -33,17 +33,18 @@ Create a few more of the type of shelf you were using, infuse them, and upgrade 
 
 These new shelves, on top of your old ones, will let you reach Level 60.
 
-## Other Stats
+## Enchanting Clues
 
 <ItemImage id="apothic_enchanting:sightshelf" />
 
 You now have access to better options for increasing other stats.
 
-On top of the bonuses from Hellshelves and Seashelves, you may now also create <Color id="blue">Sightshelves</Color> to increase your <Color hex="#00AAAA">Enchanting Clues</Color>.
+On top of the bonuses from Hellshelves and Seashelves, you may now also create <Color id="blue">Sightshelves</Color> to increase your <Color id="dark_aqua">Enchanting Clues</Color>.
 
-## Other Stats
+## Quantic Stability
 
-If you have a stable supply of Amethyst, you can also make <Color id="blue">Rectifiers</Color> to further increase your <Color hex="#CCCC33">Rectification</Color>.
+By performing the infusion to create a Budding Amethyst, you can craft a <Color id="blue">Bookshelf of Stability</Color>.
 
-<Recipe id="apothic_enchanting:rectifier" />
+This will prevent you from receiving negative Quanta rolls.
 
+<Recipe id="apothic_enchanting:geode_shelf" />

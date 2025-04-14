@@ -1,5 +1,83 @@
-ServerEvents.generateData('after_mods', (e) => {
-  const models = {
+/**
+ * @typedef {Object} DataModel
+ * @property {Special.EntityType[]} variants
+ * @property {string} [nameColor]
+ * @property {Object} [display]
+ * @property {number} [display.scale]
+ * @property {number} [display.y_offset]
+ * @property {number} simCost
+ * @property {Special.Item} baseDrop
+ * @property {(Special.Item|Special.ItemTag)[]} fabricatorDrops
+ * @property {Object} tierData
+ * @property {number} [tierData.faulty]
+ * @property {number} [tierData.basic]
+ * @property {number} [tierData.advanced]
+ * @property {number} [tierData.superior]
+ * @property {number} [tierData.self_aware]
+ * @property {Object} dataPerKill
+ * @property {number} [dataPerKill.faulty]
+ * @property {number} [dataPerKill.basic]
+ * @property {number} [dataPerKill.advanced]
+ * @property {number} [dataPerKill.superior]
+ * @property {number} [dataPerKill.self_aware]
+ */
+
+/**
+ * Helper function to generate model data for Hostile Neural Networks
+ * @param {Special.EntityType} entityId
+ * @param {DataModel} data
+ */
+function generateModelData(entityId, data) {
+  let [namespace, entityName] = entityId.split(':');
+
+  let outputPath =
+    namespace === 'minecraft' ? `hostilenetworks:data_models/${entityName}` : `hostilenetworks:data_models/${namespace}/${entityName}`;
+
+  let drops = [];
+
+  data.fabricatorDrops.forEach(drop => {
+    if (drop.includes('#')) {
+      Ingredient.of(drop)
+        .except('#almostunified:hide')
+        .itemIds.forEach(drop => {
+          const [count] = drop.split('x ');
+          drops.push({ id: drop, count: parseInt(count) || 1 });
+        });
+    } else {
+      drops.push(Item.of(drop).toJson());
+    }
+  });
+
+  let modelJson = {
+    'neoforge:conditions': [{ type: 'neoforge:mod_loaded', modid: namespace }],
+    entity: entityId,
+    variants: [],
+    name: {
+      translate: `entity.${namespace}.${entityName}`,
+      color: data.nameColor ?? '#55FF55',
+    },
+    display: data.display ?? {},
+    sim_cost: data.simCost,
+    input: {
+      item: 'hostilenetworks:prediction_matrix',
+    },
+    base_drop: {
+      id: data.baseDrop,
+      count: 1,
+    },
+    trivia: `hostilenetworks.trivia.${entityName}`,
+    fabricator_drops: drops,
+  };
+
+  if (data.tierData) modelJson.tier_data = data.tierData;
+  if (data.dataPerKill) modelJson.data_per_kill = data.dataPerKill;
+
+  return { outputPath: outputPath, modelJson: modelJson };
+}
+
+ServerEvents.generateData('after_mods', event => {
+  /**@type {Record<Special.EntityType, DataModel>} */
+  const dataModels = {
     'artifacts:mimic': {
       simCost: 2560,
       baseDrop: 'hostilenetworks:end_prediction',
@@ -43,57 +121,8 @@ ServerEvents.generateData('after_mods', (e) => {
     },
   };
 
-  for (let [entity, data] in models) {
-    let modID = entity.split(':')[0];
-    let entityID = entity.split(':')[1];
-
-    let path = modID === 'minecraft' ? `hostilenetworks:data_models/${entityID}` : `hostilenetworks:data_models/${modID}/${entityID}`;
-    let drops = [];
-
-    data.fabricatorDrops.forEach((drop) => {
-      if (drop.includes('#')) {
-        Ingredient.of(drop)
-          .except('#almostunified:hide')
-          .itemIds.forEach((drop) => {
-            drops.push({ id: drop, count: parseInt(drop.split('x ')) || 1 });
-          });
-      } else {
-        drops.push(Item.of(drop).toJson());
-      }
-    });
-
-    let modelData = {
-      'neoforge:conditions': [
-        {
-          type: 'neoforge:mod_loaded',
-          modid: modID,
-        },
-      ],
-      entity: entity,
-      variants: [],
-      name: {
-        translate: `entity.${modID}.${entityID}`,
-        color: data.nameColor || '#55FF55',
-      },
-      display: {},
-      sim_cost: data.simCost,
-      input: {
-        item: 'hostilenetworks:prediction_matrix',
-      },
-      base_drop: {
-        id: data.baseDrop,
-        count: 1,
-      },
-      trivia: `hostilenetworks.trivia.${entityID}`,
-      fabricator_drops: drops,
-      // tier_data: data.tierData,
-      // data_per_kill: data.dataPerKill,
-    };
-
-    if (data.tierData) modelData.tier_data = data.tierData;
-    if (data.dataPerKill) modelData.data_per_kill = data.dataPerKill;
-    if (data.display) modelData.display = data.display;
-
-    e.json(path, modelData);
+  for (let [entityId, modelData] of Object.entries(dataModels)) {
+    let { outputPath, modelJson } = generateModelData(entityId, modelData);
+    event.json(outputPath, modelJson);
   }
 });

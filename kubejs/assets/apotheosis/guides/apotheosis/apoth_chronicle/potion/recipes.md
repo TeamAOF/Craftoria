@@ -7,4 +7,6 @@ navigation:
 
 # Potion Recipes
 
+This section details all the new vanilla potion recipes that are added.
+
 <SubPages />

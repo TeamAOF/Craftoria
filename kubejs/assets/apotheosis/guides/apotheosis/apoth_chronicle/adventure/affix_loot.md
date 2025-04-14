@@ -7,4 +7,8 @@ navigation:
 
 # Affix Loot
 
+While adventuring, you may encounter items with various bonuses.
+
+These are Affix Items, relics of the past with varying degrees of power.
+
 <SubPages />

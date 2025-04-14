@@ -8,4 +8,6 @@ navigation:
 
 # Büyü Masası
 
+Bu bölüm, Büyü Masası'ndaki değişiklikleri kapsar.
+
 <SubPages />

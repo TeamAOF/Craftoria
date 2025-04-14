@@ -8,3 +8,15 @@ consumeFacade = true
 z_fighting = ["ae2:cable_bus"]
 #List of blocks that should not render when covered by a facade. Supports '*' as a wildcard.
 hidden_when_facaded = []
+#Config version. Increment to apply changes.
+# Default: 1
+# Range: > 1
+configVersion = 1
+#Previous config version. Do not modify manually.
+# Default: 0
+# Range: > 0
+lastConfigVersion = 0
+#List of additional blocks added in this version.
+added_blocks = ["industrialforegoingsouls:soul_network_pipe", "industrialforegoingsouls:soul_surge", "modern_industrialization:pipe"]
+#List of blocks from the previous version. Do not modify manually.
+last_version_blocks = []

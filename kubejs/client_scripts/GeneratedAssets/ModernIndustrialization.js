@@ -1,29 +1,20 @@
-ClientEvents.generateAssets('after_mods', (e) => {
-  global.customMIMachines.forEach((machine) => {
-    e.blockState(`modern_industrialization:${machine.id}`, (bs) => {
+ClientEvents.generateAssets('after_mods', e => {
+  global.customMIMachines.forEach(machine => {
+    e.blockState(`modern_industrialization:${machine.id}`, bs => {
       bs.simpleVariant('', `modern_industrialization:block/${machine.id}`);
     });
 
     let modelJson = {
-      casing: 'lv',
-      default_overlays: {
+      casing: machine.casing || 'lv',
+      default_overlays: machine.default_overlays || {
         fluid_auto: 'modern_industrialization:block/overlays/fluid_auto',
-        front: `modern_industrialization:block/machines/${machine.id}/overlay_front`,
-        front_active: `modern_industrialization:block/machines/${machine.id}/overlay_front_active`,
+        front: `modern_industrialization:block/machines/${machine.overlay || machine.id}/overlay_front`,
+        front_active: `modern_industrialization:block/machines/${machine.overlay || machine.id}/overlay_front_active`,
         item_auto: 'modern_industrialization:block/overlays/item_auto',
         output: 'modern_industrialization:block/overlays/output',
       },
       loader: 'modern_industrialization:machine',
     };
-
-    if (machine.overlay) {
-      modelJson.default_overlays.front = `modern_industrialization:block/machines/${machine.overlay}/overlay_front`;
-      modelJson.default_overlays.front_active = `modern_industrialization:block/machines/${machine.overlay}/overlay_front_active`;
-    }
-
-    if (machine.casing) {
-      modelJson.casing = machine.casing;
-    }
 
     if (machine.hasSides) {
       if (machine.overlay) {
@@ -37,7 +28,7 @@ ClientEvents.generateAssets('after_mods', (e) => {
 
     e.json(`modern_industrialization:models/block/${machine.id}`, modelJson);
 
-    e.itemModel(`modern_industrialization:${machine.id}`, (im) => {
+    e.itemModel(`modern_industrialization:${machine.id}`, im => {
       im.parent(`modern_industrialization:block/${machine.id}`);
     });
   });
@@ -50,13 +41,13 @@ ClientEvents.generateAssets('after_mods', (e) => {
     brewery: ['mi_sound_addon:distillery'],
   };
 
-  global.customMIMachines.forEach((machine) => {
+  global.customMIMachines.forEach(machine => {
     if (machine.sound) {
       sounds[machine.id] = [machine.sound];
     }
   });
 
-  Object.keys(sounds).forEach((key) => {
+  Object.keys(sounds).forEach(key => {
     sounds[key] = {
       category: 'block',
       sounds: sounds[key],

@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "情報メニュー"
-  icon: "apotheosis:textures/gui/book/question_mark.png"
+  title: '情報メニュー'
+  icon: 'apotheosis:textures/gui/book/question_mark.png'
   parent: apotheosis:enchanting/table.md
 ---
 
@@ -57,5 +57,4 @@ navigation:
 
 エンチャントが選択される確率は、その個々の重みを（使用可能なすべてのエンチャントの重みの）合計プールで割り出したものである。
 
-また、レアリティの重みは<Color hex="#A800A8">アルカナ</Color>によって変化する。
-
+また、レアリティの重みは<Color id="dark_purple">アルカナ</Color>によって変化する。

@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "O menu de informações"
-  icon: "apotheosis:textures/gui/book/question_mark.png"
+  title: 'O menu de informações'
+  icon: 'apotheosis:textures/gui/book/question_mark.png'
   parent: apotheosis:enchanting/table.md
 ---
 
@@ -57,5 +57,4 @@ Cada encantamento tem uma raridade, e cada raridade tem um peso.
 
 A chance de selecionar um encantamento é seu peso individual dividido pelo conjunto total (dos pesos de todos os encantamentos disponíveis).
 
-<Color hex="#A800A8">Arcana</Color> pode alterar os pesos de raridade.
-
+<Color id="dark_purple">Arcana</Color> pode alterar os pesos de raridade.

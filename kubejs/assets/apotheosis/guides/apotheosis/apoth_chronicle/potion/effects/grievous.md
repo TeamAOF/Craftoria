@@ -1,7 +1,7 @@
 ---
 navigation:
   title: "Grievous Wounds"
-  icon: "attributeslib:textures/mob_effect/grievous.png"
+  icon: "apothic_attributes:textures/mob_effect/grievous.png"
   parent: apotheosis:potion/effects.md
 ---
 

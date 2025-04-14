@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "エンチャントのフィルタリング"
-  icon: "apothic_enchanting:filtering_shelf"
+  title: 'エンチャントのフィルタリング'
+  icon: 'apothic_enchanting:filtering_shelf'
   parent: apotheosis:enchanting/utility.md
 ---
 
@@ -21,9 +21,8 @@ navigation:
 
 その後、そのエンチャントはエンチャントテーブルで使用できなくなります。
 
-また、本棚は収納した本の数に応じて<Color hex="#3DB53D">エテルナ</Color>と<Color hex="#A800A8">アルカナ</Color>を得ることができる。
+また、本棚は収納した本の数に応じて<Color id="green">エテルナ</Color>と<Color id="dark_purple">アルカナ</Color>を得ることができる。
 
 注: 本は、模様入りの本棚を使用と同じ方法で収納でき、本棚が有効な本棚設置箇所になければ動作しない。
 
 ブラックリストに登録されたエンチャントは、[エンチャント情報画面](../table/info.md)に反映される。
-

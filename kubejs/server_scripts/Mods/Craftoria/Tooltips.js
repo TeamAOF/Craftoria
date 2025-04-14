@@ -1,7 +1,7 @@
 // Tooltips for items/blocks added by Craftoria
 // or things that would've had too little stuff to warrant their own file/folder.
-ItemEvents.modifyTooltips((e) => {
-  globalItemRemovals.forEach((item) => {
+ItemEvents.modifyTooltips(e => {
+  globalItemRemovals.forEach(item => {
     e.add(item, [
       Text.red('This item has been disabled.'),
       Text.red("If you're playing in singleplayer, or are a server admin,"),

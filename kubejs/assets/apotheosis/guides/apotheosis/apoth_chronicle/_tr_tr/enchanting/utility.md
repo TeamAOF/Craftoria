@@ -7,4 +7,6 @@ navigation:
 
 # Yardımcı Eşyalar
 
+Bu bölüm, büyü yapmayı kolaylaştırmak için kullanılan tüm rastgele araçları detaylandırır.
+
 <SubPages />

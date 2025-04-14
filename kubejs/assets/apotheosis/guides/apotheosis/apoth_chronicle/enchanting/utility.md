@@ -7,4 +7,6 @@ navigation:
 
 # Utility Items
 
+This section details all the random tools used to make enchanting easier.
+
 <SubPages />

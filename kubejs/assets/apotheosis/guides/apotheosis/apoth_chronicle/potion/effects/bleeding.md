@@ -1,7 +1,7 @@
 ---
 navigation:
   title: "Bleeding"
-  icon: "attributeslib:textures/mob_effect/bleeding.png"
+  icon: "apothic_attributes:textures/mob_effect/bleeding.png"
   position: 1
   parent: apotheosis:potion/effects.md
 ---

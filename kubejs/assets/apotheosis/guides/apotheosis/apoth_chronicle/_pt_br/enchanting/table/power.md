@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Poder de encantamento"
-  icon: "minecraft:experience_bottle"
+  title: 'Poder de encantamento'
+  icon: 'minecraft:experience_bottle'
   parent: apotheosis:enchanting/table.md
 ---
 
@@ -15,17 +15,16 @@ Este capítulo explica esse processo.
 
 Primeiro, veremos como os encantamentos são selecionados.
 
-Cada encantamento tem uma <Color id="dark_purple">função de poder</Color>, que controla o que <Color hex="#CC00CC">poder final</Color> disponibilizará em um nível específico.
+Cada encantamento tem uma <Color id="dark_purple">função de poder</Color>, que controla o que <Color id="dark_purple">poder final</Color> disponibilizará em um nível específico.
 
 Depois de tudo os encantamentos disponíveis são reunidos, alguns são selecionados aleatoriamente com base em seus pesos.
 
-O cálculo do <Color hex="#CC00CC">poder final</Color> é feito com os seguintes passos:
+O cálculo do <Color id="dark_purple">poder final</Color> é feito com os seguintes passos:
 
 Inicialmente, você tem um <Color id="gold">poder base</Color>, que é o nível que você gastou enquanto encantava.
 
-Então, <Color hex="#FC5454">Quanta</Color> e a retificação modificam seu <Color id="gold">poder base</Color> para produzir seu <Color hex="#CC00CC">poder final</Color>.
+Então, <Color id="red">Quanta</Color> e a retificação modificam seu <Color id="gold">poder base</Color> para produzir seu <Color id="dark_purple">poder final</Color>.
 
-Os detalhes de como cada status modifica seu <Color id="gold">poder base</Color> podem ser encontrados em [<Color hex="#FC5454">Quanta</Color>](./stats.md#quanta) e entradas de [retificação](./stats.md#rectification).
+Os detalhes de como cada status modifica seu <Color id="gold">poder base</Color> podem ser encontrados em [<Color id="red">Quanta</Color>](./stats.md#quanta) e entradas de [retificação](./stats.md#rectification).
 
-Normalmente, um <Color hex="#CC00CC">poder final</Color> maior lhe dará acesso a encantamentos de nível superior.
-
+Normalmente, um <Color id="dark_purple">poder final</Color> maior lhe dará acesso a encantamentos de nível superior.

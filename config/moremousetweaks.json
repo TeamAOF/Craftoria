@@ -5,15 +5,16 @@
     "scrollCreativeTabs": true,
     "quickCrafting": true,
     "qcOverflowMode": "INVENTORY",
-    "hotbarMode": "MERGE",
-    "extraSlotMode": "MERGE",
-    "matchByType": false,
+    "hotbarScope": "HOTBAR",
+    "extraSlotScope": "EXTRA",
+    "alwaysMatchByType": false,
     "typeMatchTags": [
       "enchantable/weapon",
       "enchantable/mining",
       "enchantable/armor"
     ],
-    "allOfKindModifier": "CTRL",
-    "wholeStackModifier": "SHIFT"
+    "hotbarMode": "MERGE",
+    "extraSlotMode": "MERGE",
+    "matchByType": false
   }
 }

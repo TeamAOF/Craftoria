@@ -7,4 +7,8 @@ navigation:
 
 # Ek Özellik Ganimeti
 
+Maceradayken çeşitli bonuslara sahip eşyalarla karşılaşabilirsin.
+
+Bunlar, geçmişin kalıntıları olan ve farklı güç seviyelerine sahip Ek Özellik Eşyalarıdır.
+
 <SubPages />

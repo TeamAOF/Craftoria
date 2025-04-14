@@ -1,5 +1,5 @@
-ClientEvents.generateAssets('after_mods', (e) => {
-  global.infCells.forEach((cell) => {
+ClientEvents.generateAssets('after_mods', e => {
+  global.infCells.forEach(cell => {
     let strippedId = cell.id.includes(':') ? cell.id.split(':')[1] : cell.id;
 
     e.json(`craftoria:models/block/drive/infinity_${strippedId}_cell`, {

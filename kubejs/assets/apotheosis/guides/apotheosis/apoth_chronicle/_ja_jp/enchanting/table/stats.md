@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "エンチャント属性"
-  icon: "minecraft:bookshelf"
+  title: 'エンチャント属性'
+  icon: 'minecraft:bookshelf'
   parent: apotheosis:enchanting/table.md
 ---
 
@@ -15,32 +15,33 @@ Apotheosisでは、エンチャント結果はレベル以外によっても変�
 
 ## エテルナ
 
-<Color hex="#3DB53D">エテルナ</Color>はエンチャントのメイン属性となっている。
+<Color id="green">エテルナ</Color>はエンチャントのメイン属性となっている。
 
-<Color hex="#3DB53D">エテルナ</Color>1ポイントにつき、最大エンチャントレベルを2上昇させる。
+<Color id="green">エテルナ</Color>1ポイントにつき、最大エンチャントレベルを2上昇させる。
 
-いくつかのブロックによって、<Color hex="#3DB53D">エテルナ</Color>をその時の上限値まで底上げできる。
+いくつかのブロックによって、<Color id="green">エテルナ</Color>をその時の上限値まで底上げできる。
 
 <a name="quanta"></a>
+
 ## クアンタ
 
-<Color hex="#FC5454">クアンタ</Color>は第二属性であり、エンチャントの変化の幅を制御する。
+<Color id="red">クアンタ</Color>は第二属性であり、エンチャントの変化の幅を制御する。
 
-エンチャントのプロセスには、費やしたレベルである<Color id="gold">基本能力</Color>と、様々な調整の結果として得られる<Color hex="#CC00CC">最終的なエンチャントレベル</Color>という要素がある。
+エンチャントのプロセスには、費やしたレベルである<Color id="gold">基本能力</Color>と、様々な調整の結果として得られる<Color id="dark_purple">最終的なエンチャントレベル</Color>という要素がある。
 
-<Color hex="#FC5454">クアンタ</Color>はこの調整プロセスにおける因子の1つである。
+<Color id="red">クアンタ</Color>はこの調整プロセスにおける因子の1つである。
 
 <Color id="dark_red">1 - クアンタ</Color>から<Color id="blue">1 + クアンタ</Color>の間から値が選ばれる。
 
-<Color hex="#CC00CC">最終的なエンチャントレベル</Color>は、その値と<Color id="gold">基本能力</Color>の積となる。
+<Color id="dark_purple">最終的なエンチャントレベル</Color>は、その値と<Color id="gold">基本能力</Color>の積となる。
 
-<Color hex="#FC5454">クアンタ</Color>が大きくなるとその幅も大きくなるので、それに伴い<Color hex="#CC00CC">最終的なエンチャントレベル</Color>は不安定になる。
+<Color id="red">クアンタ</Color>が大きくなるとその幅も大きくなるので、それに伴い<Color id="dark_purple">最終的なエンチャントレベル</Color>は不安定になる。
 
 ## アルカナ
 
-もう1つの第二属性は<Color hex="#A800A8">アルカナ</Color>と呼ばれる。これはレアリティの重み付けを制御し、 あるしきい値ごとに追加のエンチャントが得られることを保証する。
+もう1つの第二属性は<Color id="dark_purple">アルカナ</Color>と呼ばれる。これはレアリティの重み付けを制御し、 あるしきい値ごとに追加のエンチャントが得られることを保証する。
 
-例えば<Color hex="#A800A8">アルカナ</Color>が25%の場合、最低でも2つのエンチャントが付与される。また75%の場合は、その数は3つになる。
+例えば<Color id="dark_purple">アルカナ</Color>が25%の場合、最低でも2つのエンチャントが付与される。また75%の場合は、その数は3つになる。
 
 基本設定としては、レアリティには以下の重み付けがなされている。
 
@@ -49,18 +50,19 @@ Apotheosisでは、エンチャント結果はレベル以外によっても変�
 レア: 3
 ベリーレア: 1
 
-<Color hex="#A800A8">アルカナ</Color>が10%増えるごとに重みは変化していき、最終的に完全に逆転する（ベリーレアの重みが最も大きくなる）。
+<Color id="dark_purple">アルカナ</Color>が10%増えるごとに重みは変化していき、最終的に完全に逆転する（ベリーレアの重みが最も大きくなる）。
 
-<Color hex="#A800A8">アルカナ</Color>バーにカーソルを合わせると、現在の重み付けを見ることができる。
+<Color id="dark_purple">アルカナ</Color>バーにカーソルを合わせると、現在の重み付けを見ることができる。
 
 <a name="rectification"></a>
+
 ## 調和
 
-<Color hex="#CCCC33">調和</Color>は第三属性であり、<Color hex="#FC5454">クアンタ</Color>調整の下限値に直接影響を与える。
+<Color hex="#CCCC33">調和</Color>は第三属性であり、<Color id="red">クアンタ</Color>調整の下限値に直接影響を与える。
 
 上述のとおり<Color id="dark_red">最小出力</Color>は<Color id="dark_red">1 - クアンタ</Color>に等しい。ここで
 
-<Color hex="#CCCC33">調和</Color>要素（Rと置く）を取り入れると、<Color id="dark_red">最小出力</Color>を求める計算式は、<Color id="dark_red">1 - (1 - R) * クアンタ</Color>と書ける。
+<Color hex="#CCCC33">調和</Color>要素（Rと置く）を取り入れると、<Color id="dark_red">最小出力</Color>を求める計算式は、<Color id="dark_red">1 - (1 - R) \* クアンタ</Color>と書ける。
 
 ここに書いてある全てを理解できなくてもあまり大きな問題にはならないだろう。
 
@@ -77,4 +79,3 @@ Apotheosisでは、エンチャント結果はレベル以外によっても変�
 <Color hex="#00AAAA">エンチャントのヒント</Color>によって付与可能なエンチャント数の上限まで見通せているとき、表示テキストが少し変化するだろう。
 
 <Color hex="#00AAAA">エンチャントのヒント</Color>の値はゼロにすることも可能だが、そうなるとエンチャントのプレビューには何も表示されない。
-

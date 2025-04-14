@@ -1,4 +1,4 @@
-ItemEvents.modifyTooltips((e) => {
+ItemEvents.modifyTooltips(e => {
   // AE2WTLib
   e.add('ae2wtlib:quantum_bridge_card', { shift: false }, holdShift);
   e.add('ae2wtlib:quantum_bridge_card', { shift: true }, [

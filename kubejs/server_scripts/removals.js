@@ -18,6 +18,8 @@ const globalItemRemovals = [
   'utilitarian:tiny_charcoal',
   'create:copycat_step',
   'create:copycat_panel',
+  'mffs:anti_personnel_module',
+  'mffs:confiscation_module',
 ];
 
 const disabledItems = [];
@@ -37,15 +39,15 @@ ServerEvents.recipes((event) => {
 
   const output = [];
 
-  id.forEach((id) => {
+  id.forEach(id => {
     event.remove({ id: id });
   });
 
-  output.forEach((output) => {
+  output.forEach(output => {
     event.remove({ output: output });
   });
 
-  globalItemRemovals.forEach((output) => {
+  globalItemRemovals.forEach(output => {
     event.remove({ output: output });
   });
 

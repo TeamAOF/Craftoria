@@ -1,4 +1,4 @@
-ServerEvents.generateData('after_mods', (e) => {
+ServerEvents.generateData('after_mods', e => {
   e.json('extended_industrialization:data_maps/block/large_electric_furnace_tier', {
     values: {
       'modern_industrialization:superconductor_coil': {

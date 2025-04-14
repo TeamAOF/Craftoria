@@ -6,4 +6,6 @@ navigation:
 
 # Village Module
 
+The Village Module adds various village and villager related things.
+
 <SubPages />

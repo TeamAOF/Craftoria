@@ -1,0 +1,44 @@
+#Adjust these variables for Technomancer armor settings
+[Technomancer]
+	#Max mana bonus for each armor piece
+	# Default: 100
+	# Range: 0 ~ 10000
+	armorMaxMana = 100
+	#Mana regen bonus for each armor piece
+	# Default: 4
+	# Range: 0 ~ 100
+	armorManaRegen = 4
+	#If enabled, schematic cannons will fire faster when players wearing the full Technomancer set are nearby schematic cannons
+	schematicCannonSpeedBoostEnabled = true
+	#Range for above-mentioned perk, if enabled.
+	schematicCannonSpeedBoostRange = 8.0
+
+#Adjust these variables for block settings
+[Blocks]
+	#Determines the multiplier used in the cost for generating rotation, defaults to 4.0
+	# Default: 4.0
+	# Range: 0.0 ~ 100.0
+	sourceMotorSpeedToSourceMultiplier = 4.0
+
+#Logic related to Fuse
+["Glyph - Fuse"]
+	fluidCanBePlaced = true
+	fluidSourcesCanBePlaced = true
+	# Default: 16
+	# Range: 1 ~ 256
+	fluidMaxPlacementsPerFuse = 16
+
+#Entity tweakable (Wrench) cooldown settings for source relays and spell runes
+["Entity cooldown"]
+	# Default: 5
+	# Range: 0 ~ 40
+	runeMinCooldown = 5
+	# Default: 600
+	# Range: 40 ~ 6000
+	runeMaxCooldown = 600
+	# Default: 5
+	# Range: 0 ~ 40
+	relayMinCooldown = 5
+	# Default: 600
+	# Range: 40 ~ 6000
+	relayMaxCooldown = 600

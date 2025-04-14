@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Augmenting"
-  icon: "apotheosis:augmenting_table"
+  title: 'Augmenting'
+  icon: 'apotheosis:augmenting_table'
   position: 5
   parent: apotheosis:adventure/affix_loot.md
 item_ids:
@@ -25,7 +25,7 @@ The Augmenting Table has two input slots.
 
 The upper slot holds the item you wish to augment, which must be an affix item.
 
-Typically, you should only augment items of at least <Color hex="#ED7014">Mythic</Color> rarity, though you could consider augmenting <Color hex="#BB00BB">Epic</Color> ones as well.
+Typically, you should only augment items of at least <Color id="gold">Mythic</Color> rarity, though you could consider augmenting <Color id="dark_purple">Epic</Color> ones as well.
 
 ## Input Slots
 
@@ -50,4 +50,3 @@ The second operation of the augmenting table is to reroll an affix.
 This costs one <Color id="blue">Sigil of Enhancement</Color> and swaps out the selected affix for another one of the same type.
 
 The alternative options will be shown on the left.
-

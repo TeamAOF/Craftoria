@@ -1,7 +1,7 @@
 ---
 navigation:
   title: "Sundering"
-  icon: "attributeslib:textures/mob_effect/sundering.png"
+  icon: "apothic_attributes:textures/mob_effect/sundering.png"
   parent: apotheosis:potion/effects.md
 ---
 
