@@ -6,7 +6,7 @@ function AE2Helper(event) {
   /**
    * Generate a recipe ID based on output and recipe type
    * @param {string} type
-   * @param {$Item_} output
+   * @param {Special.Item} output
    * @returns {string} The generated recipe ID
    */
   let makeRecipeId = (type, output) => {
@@ -18,9 +18,9 @@ function AE2Helper(event) {
   return {
     /**
      * ExtendedAE Crystal Assembler Recipe
-     * @param {$Item_} output
+     * @param {$ItemStack_} output
      * @param {$Ingredient_[]} inputs
-     * @param {$Fluid_} [fluid]
+     * @param {Special.Fluid} [fluid]
      * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
      */
     crystalAssembler(output, inputs, fluid, recipeID) {
@@ -49,7 +49,7 @@ function AE2Helper(event) {
 
     /**
      * ExtendedAE Circuit Cutter Recipe
-     * @param {$Item_} output
+     * @param {$ItemStack_} output
      * @param {$Ingredient_} input
      * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
      */
@@ -91,7 +91,7 @@ function AE2Helper(event) {
     /**
      * AE2 Inscriber Recipe
      * @param {$InscriberProcessType_} mode
-     * @param {$Item_} output
+     * @param {$ItemStack_} output
      * @param {$Ingredient_} middle
      * @param {$Ingredient_} [top]
      * @param {$Ingredient_} [bottom]

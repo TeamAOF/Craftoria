@@ -1,13 +1,13 @@
 /**
- * @typedef {[$Item_, number, number?]} MIItem A tuple of [item, amount, probability?]
- * @typedef {[$Fluid_, number, number?]} MIFluid A tuple of [fluid, amount, probability?]
+ * @typedef {[Special.Item, number, number?]} MIItem A tuple of [item, amount, probability?]
+ * @typedef {[Special.Fluid, number, number?]} MIFluid A tuple of [fluid, amount, probability?]
  */
 
 /**
  * @typedef {Object} MIRecipeInput
- * @property {$Item_} [item] - The item ID
+ * @property {Special.Item} [item] - The item ID
  * @property {string} [tag] - The item tag
- * @property {$Fluid_} [fluid] - The fluid ID
+ * @property {Special.Fluid} [fluid] - The fluid ID
  * @property {number} amount - The amount required/produced
  * @property {number} [probability] - The probability (optional)
  */

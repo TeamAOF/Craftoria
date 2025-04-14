@@ -1,4 +1,5 @@
 ServerEvents.generateData('after_mods', event => {
+  /** @type {Record<Special.Item, Special.Item>} */
   const overrides = {
     'actuallyadditions:black_quartz': 'actuallyadditions:black_quartz_block',
     'minecraft:brick': 'minecraft:bricks',

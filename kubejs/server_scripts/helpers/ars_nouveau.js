@@ -5,7 +5,7 @@
 function ArsNouveauHelper(event) {
   /**
    * Generate a recipe ID based on output and recipe type
-   * @param {$Item_} output
+   * @param {Special.Item} output
    * @param {string} type
    * @returns {string} The generated recipe ID
    */
@@ -17,7 +17,7 @@ function ArsNouveauHelper(event) {
 
   return {
     /**
-     * @description Creates a recipe for the Ars Nouveau Enchanting Apparatus.
+     * Creates a recipe for the Ars Nouveau Enchanting Apparatus.
      * @param {$ItemStack_} output The output item (e.g., '4x minecraft:chest'). Required.
      * @param {$ItemStack_} input The input item (e.g., 'minecraft:cobblestone'). Required.
      * @param {$ItemStack_[]} pedestalItems The pedestal items (e.g., ['minecraft:stick', 'minecraft:stick']). Required. Max 8.
@@ -56,7 +56,7 @@ function ArsNouveauHelper(event) {
     },
 
     /**
-     * @description Creates a recipe for the Ars Nouveau Imbuement Chamber.
+     * Creates a recipe for the Ars Nouveau Imbuement Chamber.
      * @param {$ItemStack_} output The output item (e.g., '4x minecraft:chest'). Required.
      * @param {$ItemStack_} input The input item (e.g., 'minecraft:cobblestone'). Required.
      * @param {$ItemStack_[]} pedestalItems The pedestal items (e.g., ['minecraft:stick', 'minecraft:stick']). Required. Max 8.
@@ -92,7 +92,7 @@ function ArsNouveauHelper(event) {
     },
 
     /**
-     * @description Creates a recipe for the Ars Nouveau Glyph.
+     * Creates a recipe for the Ars Nouveau Glyph.
      * @param {$ItemStack_} output The output item (e.g., '4x minecraft:chest'). Required.
      * @param {$ItemStack_[]} inputs The input items (e.g., ['minecraft:cobblestone', 'minecraft:stone']). Required.
      * @param {number} [xpCost] The XP cost (e.g., 100). (optional, default is 0).

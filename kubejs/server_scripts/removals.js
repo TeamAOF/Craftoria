@@ -1,3 +1,4 @@
+/** @type {Special.Item[]} */
 const globalItemRemovals = [
   'megacells:mega_interface',
   'megacells:cable_mega_interface',
@@ -22,9 +23,10 @@ const globalItemRemovals = [
   'mffs:confiscation_module',
 ];
 
+ServerEvents.recipes(event => {
+  /** @type {Special.RecipeId[]} */
 const disabledItems = [];
 
-ServerEvents.recipes((event) => {
   const id = [
     'appflux:inscriber/crush_diamond',
     'appflux:inscriber/crush_emerald',
@@ -37,6 +39,7 @@ ServerEvents.recipes((event) => {
     'supplementaries:sus_sand',
   ];
 
+  /** @type {Special.Item[]} */
   const output = [];
 
   id.forEach(id => {

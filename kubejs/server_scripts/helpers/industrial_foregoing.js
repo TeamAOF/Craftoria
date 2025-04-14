@@ -40,7 +40,7 @@ function IndustrialForegoingHelper(event) {
 
   return {
     /**
-     * @param {$Fluid_} fluidOutput
+     * @param {Special.Fluid} fluidOutput
      * @param {Special.BlockTag[] | Special.Block[]} blockInput
      * @param {Special.Block} blockOutput
      * @param {number} [breakChance=0]
@@ -62,11 +62,11 @@ function IndustrialForegoingHelper(event) {
     },
 
     /**
-     * @param {$Item_} itemOutput
+     * @param {$ItemStack_} itemOutput
      * @param {$Ingredient_[]} itemInputs
      * @param {number} [processingTime=100]
      * @param {$FluidIngredient_} [fluidInput]
-     * @param {$Fluid_} [fluidOutput]
+     * @param {Special.Fluid} [fluidOutput]
      * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
      */
     dissolutionChamber(itemOutput, itemInputs, processingTime, fluidInput, fluidOutput, recipeID) {
@@ -97,8 +97,8 @@ function IndustrialForegoingHelper(event) {
     },
 
     /**
-     * @param {$Item_} itemOutput
-     * @param {$Item_} catalyst
+     * @param {Special.Item} itemOutput
+     * @param {Special.Item} catalyst
      * @param {LaserDrillRarity[] | LaserDrillRarity} [rarityList]
      * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
      */

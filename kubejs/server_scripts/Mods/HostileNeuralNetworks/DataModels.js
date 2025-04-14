@@ -7,7 +7,7 @@
  * @property {number} [display.y_offset]
  * @property {number} simCost
  * @property {Special.Item} baseDrop
- * @property {(Special.Item|Special.ItemTag)[]} fabricatorDrops
+ * @property {($ItemStack_|Special.ItemTag)[]} fabricatorDrops
  * @property {Object} tierData
  * @property {number} [tierData.faulty]
  * @property {number} [tierData.basic]
@@ -76,7 +76,7 @@ function generateModelData(entityId, data) {
 }
 
 ServerEvents.generateData('after_mods', event => {
-  /**@type {Record<Special.EntityType, DataModel>} */
+  /** @type {Record<Special.EntityType, DataModel>} */
   const dataModels = {
     'artifacts:mimic': {
       simCost: 2560,

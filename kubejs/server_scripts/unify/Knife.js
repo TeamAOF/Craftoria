@@ -1,5 +1,7 @@
 {
+  /** @type {Special.Mod[]} */
   let modWhitelist = ['farmersdelight', 'moredelight', 'arsdelight', 'twilightdelight', 'ends_delight'];
+  /** @type {Special.Item[]} */
   let itemWhitelist = ['aquaculture:neptunium_fillet_knife'];
 
   ServerEvents.recipes(e => {

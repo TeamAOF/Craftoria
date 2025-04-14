@@ -6,7 +6,7 @@ function MekanismHelper(event) {
   /**
    * Generate a recipe ID based on output, input and recipe type
    * @param {string} type
-   * @param {$Item_} output
+   * @param {Special.Item} output
    * @param {$Ingredient_} input
    * @returns {string} The generated recipe ID
    */
@@ -77,7 +77,7 @@ function MekanismHelper(event) {
     /**
      * @param {$ItemStack_} itemOutput
      * @param {[$ItemStack_[], number]} itemInputListWithCount
-     * @param {$Fluid_} fluidInput
+     * @param {Special.Fluid} fluidInput
      * @param {$Chemical_} chemicalOutput
      * @param {$Chemical_} chemicalInput
      * @param {number} [duration]
@@ -127,7 +127,7 @@ function MekanismHelper(event) {
 
     /**
      * @param {$Chemical_} chemicalInput
-     * @param {$Fluid_} fluidId
+     * @param {Special.Fluid} fluidId
      * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
      */
 

@@ -1,6 +1,6 @@
 /**
  * @typedef {($Ingredient_|$FluidIngredient_)[]|($Ingredient_|$FluidIngredient_)} CreateIngredients
- * @typedef {($Item_|$Fluid_)[]|($Item_|$Fluid_)} CreateResults
+ * @typedef {(Special.Item|Special.Fluid)[]|(Special.Item|Special.Fluid)} CreateResults
  */
 
 /**

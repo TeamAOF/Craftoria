@@ -13,10 +13,10 @@ ServerEvents.recipes(event => {
 
   /**
    * Modern Industrialization Quarry Recipe
-   * @param {Array} input Add the input item, amount and probability(1 being 100%, 0.01 being 1%) as an array.
-   * @param {Array} outputs Add the output items, amount and probability(1 being 100%, 0.01 being 1%) as an array of arrays.
-   * @param {int} eu EU/t consumed by the machine.
-   * @param {int} duration Duration of the recipe in ticks.
+   * @param {MIItem} input Add the input item, amount and probability(1 being 100%, 0.01 being 1%) as an array.
+   * @param {MIItem[]} outputs Add the output items, amount and probability(1 being 100%, 0.01 being 1%) as an array of arrays.
+   * @param {number} eu EU/t consumed by the machine.
+   * @param {number} duration Duration of the recipe in ticks.
    * @param {boolean} overwrite Should the recipe overwrite the existing one. (Default: true) Usefull for updating recipes.
    */
   let MIQuarry = (input, outputs, eu, duration, overwrite) => {

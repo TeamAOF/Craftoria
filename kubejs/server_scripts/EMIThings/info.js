@@ -1,6 +1,7 @@
 // Currently adding information to EMI adds it twice, due to it also being added to JEI.
 RecipeViewerEvents.addInformation('fluid', e => {
-  let fluidEntries = {
+  /** @type {Record<Special.Fluid, string[]>} */
+  const entries = {
     'justdirethings:unstable_portal_fluid_source': [
       'This fluid is used to make (stable)portal fluid.',
       'It must be made in a vanilla End Biome,',
@@ -8,13 +9,14 @@ RecipeViewerEvents.addInformation('fluid', e => {
     ],
   };
 
-  for (let [fluid, info] in fluidEntries) {
+  for (let [fluid, info] of Object.entries(entries)) {
     e.add(fluid, info);
   }
 });
 
 RecipeViewerEvents.addInformation('item', e => {
-  let entries = {
+  /** @type {Record<Special.Item, string[]>} */
+  const entries = {
     'cursedearth:cursed_earth': [
       `Can be acquired by sneaking and using a Wither Rose on Dirt.`,
       `Spawns hostile mobs at a fast pace.`,
@@ -38,7 +40,7 @@ RecipeViewerEvents.addInformation('item', e => {
     ],
   };
 
-  for (let [item, info] in entries) {
+  for (let [item, info] of Object.entries(entries)) {
     if (info.length > 0)
       for (let i = 0; i < info.length - 1; i++) {
         info[i] += '\n';

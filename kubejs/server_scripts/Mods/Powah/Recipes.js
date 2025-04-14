@@ -1,5 +1,6 @@
 ServerEvents.recipes(e => {
   let energizing = e.recipes.powah.energizing;
+
   e.remove({ id: 'powah:crafting/reactor_starter' });
 
   e.shaped('powah:reactor_starter', ['ABA', 'BCB', 'ABA'], {
