@@ -32,6 +32,16 @@ ServerEvents.tags('item', e => {
     /^industrialforegoing:infinity_.*/,
 
     'shrink:shrink_bottle',
+
+    /^craftoria:infinity_.*/,
+
+    /^sophisticatedstorageinmotion.*/,
+
+    'supplementaries:sack',
+    'supplementaries:safe',
+    '#supplementaries:presents',
+    '#supplementaries:trapped_presents',
+    'supplementaries:jar',
   ];
 
   /**
@@ -152,19 +162,7 @@ ServerEvents.tags('item', e => {
 
     'framedblocks:framed_tank',
 
-    'supplementaries:sack',
-    'supplementaries:safe',
-    '#supplementaries:presents',
-    '#supplementaries:trapped_presents',
-    'supplementaries:jar',
-
     'occultism:storage_controller_stabilized',
-
-    /^.*creative./,
-
-    /^craftoria:infinity_.*/,
-
-    /^sophisticatedstorageinmotion:_.*/
   ].concat(replicatorBlacklist);
 
   /**
