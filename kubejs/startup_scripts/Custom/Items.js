@@ -39,3 +39,24 @@ StartupEvents.registry('item', e => {
     .tag(`craftoria:replicator_1_blacklist`)
     .rarity('Epic');
 });
+
+ItemEvents.modification(event => {
+
+  const pelletsEdible = [
+    'mekanism:pellet_plutonium',
+    'mekanism:pellet_polonium',
+    'mekanism:pellet_antimatter',
+    'mekanism:yellow_cake_uranium'
+  ]
+
+  pelletsEdible.forEach((pellet) => {
+    event.modify(pellet, item => {
+      item.food = {
+        nutrition: 1000,
+        saturation: 1000,
+        eatSeconds: 2,
+        canAlwaysEat: true
+      };
+    });
+  });
+});
