@@ -35,6 +35,9 @@ ServerEvents.recipes(e => {
 
     // Ars Nouveau
     'ars_nouveau:magebloom_crop',
+
+    // Actually Additions
+    'actuallyadditions:coffee_beans',
   ];
 
   Ingredient.of('#minecraft:saplings').stacks.forEach(sapling => {
