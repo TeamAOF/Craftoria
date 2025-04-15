@@ -58,8 +58,8 @@ function ModernIndustrializationHelper(event) {
     if (!inputs) return;
 
     if (!Array.isArray(inputs)) {
-      console.error(`Invalid item input format: ${inputs}`);
-      console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
+      logError(`Invalid item input format: ${inputs}`);
+      logError(`Erroring recipe: ${JSON.stringify(recipe)}`);
       return;
     }
 
@@ -70,8 +70,8 @@ function ModernIndustrializationHelper(event) {
     /** @param {MIItem} input */
     let processSingleInput = input => {
       if (!Array.isArray(input) || (input.length !== 2 && input.length !== 3)) {
-        console.error(`Invalid item input format: ${input}`);
-        console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
+        logError(`Invalid item input format: ${input}`);
+        logError(`Erroring recipe: ${JSON.stringify(recipe)}`);
         return;
       }
 
@@ -96,8 +96,8 @@ function ModernIndustrializationHelper(event) {
     if (Array.isArray(inputs[0])) {
       // Handle multiple item inputs
       if (inputs.length > maxInputs) {
-        console.error(`Too many item inputs. Max is ${maxInputs}.`);
-        console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
+        logError(`Too many item inputs. Max is ${maxInputs}.`);
+        logError(`Erroring recipe: ${JSON.stringify(recipe)}`);
         return;
       }
       inputs.forEach(processSingleInput);
@@ -117,8 +117,8 @@ function ModernIndustrializationHelper(event) {
     if (!outputs) return;
 
     if (!Array.isArray(outputs)) {
-      console.error(`Invalid item output format: ${outputs}`);
-      console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
+      logError(`Invalid item output format: ${outputs}`);
+      logError(`Erroring recipe: ${JSON.stringify(recipe)}`);
       return;
     }
 
@@ -128,8 +128,8 @@ function ModernIndustrializationHelper(event) {
     /** @param {MIItem} output */
     let processSingleOutput = output => {
       if (!Array.isArray(output) || (output.length !== 2 && output.length !== 3)) {
-        console.error(`Invalid item output format: ${output}`);
-        console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
+        logError(`Invalid item output format: ${output}`);
+        logError(`Erroring recipe: ${JSON.stringify(recipe)}`);
         return;
       }
 
@@ -148,8 +148,8 @@ function ModernIndustrializationHelper(event) {
 
     if (Array.isArray(outputs[0])) {
       if (outputs.length > maxOutputs) {
-        console.error(`Too many item outputs. Max is ${maxOutputs}.`);
-        console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
+        logError(`Too many item outputs. Max is ${maxOutputs}.`);
+        logError(`Erroring recipe: ${JSON.stringify(recipe)}`);
         return;
       }
       outputs.forEach(processSingleOutput);
@@ -168,8 +168,8 @@ function ModernIndustrializationHelper(event) {
     if (!inputs) return;
 
     if (!Array.isArray(inputs)) {
-      console.error(`Invalid fluid input format: ${inputs}`);
-      console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
+      logError(`Invalid fluid input format: ${inputs}`);
+      logError(`Erroring recipe: ${JSON.stringify(recipe)}`);
       return;
     }
 
@@ -180,8 +180,8 @@ function ModernIndustrializationHelper(event) {
     /** @param {MIFluid} input */
     let processSingleInput = input => {
       if (!Array.isArray(input) || (input.length !== 2 && input.length !== 3)) {
-        console.error(`Invalid fluid input format: ${input}`);
-        console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
+        logError(`Invalid fluid input format: ${input}`);
+        logError(`Erroring recipe: ${JSON.stringify(recipe)}`);
         return;
       }
       let [fluid, amount, probability] = input;
@@ -199,8 +199,8 @@ function ModernIndustrializationHelper(event) {
 
     if (Array.isArray(inputs[0])) {
       if (inputs.length > maxInputs) {
-        console.error(`Too many fluid inputs. Max is ${maxInputs}.`);
-        console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
+        logError(`Too many fluid inputs. Max is ${maxInputs}.`);
+        logError(`Erroring recipe: ${JSON.stringify(recipe)}`);
         return;
       }
       inputs.forEach(processSingleInput);
@@ -220,8 +220,8 @@ function ModernIndustrializationHelper(event) {
     if (!outputs) return;
 
     if (!Array.isArray(outputs)) {
-      console.error(`Invalid fluid output format: ${outputs}`);
-      console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
+      logError(`Invalid fluid output format: ${outputs}`);
+      logError(`Erroring recipe: ${JSON.stringify(recipe)}`);
       return;
     }
 
@@ -231,8 +231,8 @@ function ModernIndustrializationHelper(event) {
     /** @param {MIFluid} output */
     let processSingleOutput = output => {
       if (!Array.isArray(output) || (output.length !== 2 && output.length !== 3)) {
-        console.error(`Invalid fluid output format: ${output}`);
-        console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
+        logError(`Invalid fluid output format: ${output}`);
+        logError(`Erroring recipe: ${JSON.stringify(recipe)}`);
         return;
       }
 
@@ -251,8 +251,8 @@ function ModernIndustrializationHelper(event) {
 
     if (Array.isArray(outputs[0])) {
       if (outputs.length > maxOutputs) {
-        console.error(`Too many fluid outputs. Max is ${maxOutputs}.`);
-        console.error(`Erroring recipe: ${JSON.stringify(recipe)}`);
+        logError(`Too many fluid outputs. Max is ${maxOutputs}.`);
+        logError(`Erroring recipe: ${JSON.stringify(recipe)}`);
         return;
       }
       outputs.forEach(processSingleOutput);

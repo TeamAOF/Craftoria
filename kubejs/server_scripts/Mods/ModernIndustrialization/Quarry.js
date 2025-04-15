@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
       item_outputs: [],
     };
     if (input.length != 3 || outputs.length == 0) {
-      console.error(`Invalid Quarry Recipe: ${input[0]} is invalid, check the recipe format.`);
+      logError(`Invalid Quarry Recipe: ${input[0]} is invalid, check the recipe format.`);
       return;
     }
     recipe.item_inputs.item = input[0];
@@ -37,12 +37,12 @@ ServerEvents.recipes(event => {
 
     outputs.forEach(output => {
       if (output.length != 3) {
-        console.error(`Invalid Quarry Recipe: ${input[0]}. ${output[0]} is invalid, check the recipe format.`);
+        logError(`Invalid Quarry Recipe: ${input[0]}. ${output[0]} is invalid, check the recipe format.`);
         return;
       }
 
       if (Item.exists(output[0]) == false) {
-        console.warn(`Invalid Quarry Recipe: ${input[0]}. ${output[0]} does not exist.`);
+        logWarn(`Invalid Quarry Recipe: ${input[0]}. ${output[0]} does not exist.`);
         return;
       }
 

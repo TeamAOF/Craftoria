@@ -18,15 +18,15 @@ const $Integer = Java.loadClass('java.lang.Integer');
 const $Boolean = Java.loadClass('java.lang.Boolean');
 
 /**
- * Toggles debug mode, make sure to set this to false when not in dev environment
- * it will spam the console with a lot of information
+ * Choose the debug level for logging.
  * Different toggles:
- * - false: Disables debug mode
- * - 'all': Enables all debug messages
- * - 'deprecation': Enables deprecation debug messages
- * - 'unify': Enables all unify debug messages
+ * - 'none' : Disables logging entirely
+ * - 'error': Enables logging for errors only
+ * - 'warn' : Enables logging for warnings
+ * - 'info' : Enables logging for info messages
+ * - 'debug': Enables logging for debug messages
  */
-const debug = false;
+const debug = 'error';
 
 // Used for tooltips
 const holdShift = Text.gold('Hold [Shift] for more information');
@@ -71,4 +71,43 @@ const _makeRecipeID = (mod, type, output, input) => {
 
   //console.info(`ID: craftoria:${mod}/${type}/${output}_from_${input}`);
   return `craftoria:${mod}/${type}/${output}_from_${input}`;
+};
+
+const debugToInt = () => {
+  switch (debug) {
+    case 'error':
+      return 1;
+    case 'warn':
+      return 2;
+    case 'info':
+      return 3;
+    case 'debug':
+      return 4;
+    default:
+      return 0;
+  }
+};
+
+/** Logs a message to the console. Error level. */
+const logError = message => {
+  if (debugToInt() < 1) return;
+  console.error(`[Craftoria] ${message}`);
+};
+
+/** Logs a message to the console. Warning level. */
+const logWarn = message => {
+  if (debugToInt() < 2) return;
+  console.warn(`[Craftoria] ${message}`);
+};
+
+/** Logs a message to the console. Info level. */
+const logInfo = message => {
+  if (debugToInt() < 3) return;
+  console.info(`[Craftoria] ${message}`);
+};
+
+/** Logs a message to the console. Debug level. */
+const logDebug = message => {
+  if (debugToInt() < 4) return;
+  console.debug(`[Craftoria] ${message}`);
 };

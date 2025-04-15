@@ -20,7 +20,7 @@ let getMaterial = item => {
     if (Item.exists(`minecraft:${part}`)) return part;
   }
 
-  console.warn(`Could not find material for item: ${item}`);
+  logWarn(`Could not find material for item: ${item}`);
   return null;
 };
 ServerEvents.tags('item', e => {
@@ -56,7 +56,7 @@ ServerEvents.recipes(e => {
     let recipeID = _makeRecipeID('decor_stuffs', 'stonecutting', output, input);
     if (!recipeIDs.includes(recipeID)) recipeIDs.push(recipeID);
     else {
-      // console.warn(`Duplicate recipe ID: ${recipeID}, adding a suffix`);
+      logWarn(`Duplicate recipe ID: ${recipeID}, adding a suffix`);
       let i = 1;
       while (recipeIDs.includes(`${recipeID}_${i}`)) i++;
       recipeID = `${recipeID}_${i}`;

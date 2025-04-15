@@ -15,7 +15,7 @@ let getItemFromTag = tag => {
 let checkTagSize = tag => {
   let itemIds = Ingredient.of(tag).itemIds;
   let size = itemIds.length;
-  if (debug) console.log(`Found ${size} items for tag: ${tag}`);
+  logInfo(`Found ${size} items for tag: ${tag}`);
   if (itemIds[0] !== 'minecraft:barrier') return size;
   else return 0;
 };
@@ -65,7 +65,7 @@ ServerEvents.tags('item', e => {
         });
         break;
       default:
-        console.error(`Unknown material: ${material}`);
+        logError(`Unknown material: ${material}`);
         break;
     }
   }
@@ -89,7 +89,7 @@ ServerEvents.tags('item', e => {
     e.get(tag).objectIds.forEach(id => {
       if (id.namespace === 'moremekanismprocessing') {
         if (!whitelistedIDs.includes(id.path)) {
-          if (debug) console.log(`Removing tags from: ${id}`);
+          logInfo(`Removing tags from: ${id}`);
           e.removeAllTagsFrom(id);
         }
       }
@@ -112,8 +112,8 @@ ServerEvents.recipes(e => {
       });
       e.replaceOutput(filters, replace, replaceWith);
       e.replaceInput(filters, replace, replace);
-    } else if (debug) {
-      console.warn(`Could not find item for tag: ${replace}`);
+    } else {
+      logWarn(`Could not find item for tag: ${replace}`);
     }
   };
 
@@ -142,7 +142,7 @@ ServerEvents.recipes(e => {
         });
         break;
       default:
-        console.error(`Unknown material: ${material}`);
+        logDebug(`Unknown material: ${material}`);
         break;
     }
   });

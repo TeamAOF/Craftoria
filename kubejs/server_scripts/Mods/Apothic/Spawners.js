@@ -35,7 +35,7 @@ ServerEvents.recipes(e => {
       recipe.stat_changes.push(recipeEntry);
       recipeInverse.stat_changes.push(recipeInverseEntry);
     } else {
-      console.warn('Not enough keys in stats to proceed!');
+      logWarn('Not enough keys in stats to proceed!');
       return;
     }
 

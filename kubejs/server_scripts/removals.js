@@ -24,7 +24,7 @@ const globalItemRemovals = [
 ];
 
 const disabledItems = [];
-ServerEvents.recipes((event) => {
+ServerEvents.recipes(event => {
   /** @type {Special.RecipeId[]} */
 
   const id = [
@@ -54,7 +54,7 @@ ServerEvents.recipes((event) => {
     event.remove({ output: output });
   });
 
-  disabledItems.forEach((item) => {
+  disabledItems.forEach(item => {
     event.remove(item.id);
   });
 });
@@ -65,8 +65,8 @@ ServerEvents.recipes((event) => {
  * @param {String} alt - [OPTIONAL] Preferred alternative item name.
  */
 const disableItem = (item, alt) => {
-  if (disabledItems.some((disabled) => disabled.id === item)) {
-    console.warn(`Item ${item} is already disabled.`);
+  if (disabledItems.some(disabled => disabled.id === item)) {
+    logInfo(`Item ${item} is already disabled.`);
     return;
   }
   if (alt) disabledItems.push({ id: item, alt: alt });
