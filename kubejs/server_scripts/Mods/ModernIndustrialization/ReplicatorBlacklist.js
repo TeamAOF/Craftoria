@@ -49,7 +49,6 @@ ServerEvents.tags('item', e => {
    * @type {$Ingredient_[]}
    */
   const replicator_2_blacklist = [
-    /_bucket$/,
     /storage_cell/,
     /fe_.*_cell/,
     /portable_.*_cell/,
@@ -170,6 +169,8 @@ ServerEvents.tags('item', e => {
    * @type {$Ingredient_[]}
    */
   const replicator_1_blacklist = [
+    /_bucket$/,
+
     // These make no sense to replicate, as they rely on having NBT data, which Replicator Mk I doesn't support, and I don't want to risk them causing issues.
     'tankstorage:tank_link',
     'bankstorage:bank_link',
