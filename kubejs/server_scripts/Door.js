@@ -1,4 +1,12 @@
-// This script opens two doors when a player right-clicks on a door.
+/**
+ * Open doors with pressure plates, buttons, and levers.
+ *
+ * Can also open doors by right-clicking them.
+ *
+ * Handles doors, trapdoors, and fence gates.
+ *
+ * Has a recursive door opening feature.
+ */
 function doubleDoor() {
   const enableRecursiveOpen = true; // Enable recursive door opening
 
