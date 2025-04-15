@@ -23,10 +23,11 @@ const globalItemRemovals = [
   'mffs:confiscation_module',
 ];
 
+/** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
 const disabledItems = [];
+
 ServerEvents.recipes(event => {
   /** @type {Special.RecipeId[]} */
-
   const id = [
     'appflux:inscriber/crush_diamond',
     'appflux:inscriber/crush_emerald',
@@ -55,20 +56,21 @@ ServerEvents.recipes(event => {
   });
 
   disabledItems.forEach(item => {
-    event.remove(item.id);
+    if (item.altId) event.replaceInput({ input: item.id }, item.id, item.altId);
+    else event.remove({ output: item.id });
   });
 });
 
 /**
- * Disable item for better alternatives. Works the same way as globalItemRemovals.
- * @param {$Item_} item - Item to disable.
- * @param {String} alt - [OPTIONAL] Preferred alternative item name.
+ * Disable item for better alternatives. Works nearly the same way as globalItemRemovals, but allows for item replacement.
+ * @param {Special.Item} item - Item to disable.
+ * @param {string} [altText] - [OPTIONAL] Preferred alternative item name.
+ * @param {Special.Item} [altId] - [OPTIONAL] Alternative itemid.
  */
-const disableItem = (item, alt) => {
+const disableItem = (item, altText, altId) => {
   if (disabledItems.some(disabled => disabled.id === item)) {
     logInfo(`Item ${item} is already disabled.`);
     return;
   }
-  if (alt) disabledItems.push({ id: item, alt: alt });
-  else disabledItems.push({ id: item, alt: null });
+  disabledItems.push({ id: item, alt: altText, altId: altId });
 };

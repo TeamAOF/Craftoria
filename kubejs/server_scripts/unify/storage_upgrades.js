@@ -21,7 +21,7 @@
         disableItem(id, 'Sophisticated Backpacks Upgrades');
       }
     });
-    disableItem('sophisticatedstorage:upgrade_base', 'Sophisticated Backpacks Upgrades');
+    disableItem('sophisticatedstorage:upgrade_base', 'Sophisticated Backpacks Upgrades', 'sophisticatedbackpacks:upgrade_base');
 
     // Add compatibility for Sophisticated Backpacks upgrades to Sophisticated Storage
     Ingredient.of('#sophisticatedbackpacks:upgrade').itemIds.forEach(id => {
@@ -43,9 +43,5 @@
         event.add(id, [Text.gray('Compatible with sophisticated storage.')]);
       }
     });
-  });
-
-  ServerEvents.recipes(event => {
-    event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'sophisticatedstorage:upgrade_base', 'sophisticatedbackpacks:upgrade_base');
   });
 }
