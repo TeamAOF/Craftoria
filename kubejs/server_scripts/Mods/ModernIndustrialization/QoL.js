@@ -52,6 +52,14 @@ ServerEvents.recipes(e => {
     .fluidOut('240x justdirethings:xp_fluid_source')
     .itemIn('ars_nouveau:greater_experience_gem')
     .id('craftoria:mi/mixer/greater_experience_gem_to_xp_fluid');
+  mixer(2, 20)
+    .fluidOut('960x justdirethings:xp_fluid_source')
+    .itemIn('ars_technica:giant_experience_gem')
+    .id('craftoria:mi/mixer/giant_experience_gem_to_xp_fluid');
+  mixer(2, 20)
+    .fluidOut('3840x justdirethings:xp_fluid_source')
+    .itemIn('ars_technica:gargantuan_experience_gem')
+    .id('craftoria:mi/mixer/gargantuan_experience_gem_to_xp_fluid');
 
   mixer(2, 20)
     .fluidOut('justdirethings:polymorphic_fluid_source')
