@@ -8,14 +8,11 @@
     'sophisticatedbackpacks:battery_upgrade',
     'sophisticatedbackpacks:everlasting_upgrade',
     'sophisticatedbackpacks:inception_upgrade',
-    'sophisticatedbackpacks:tool_swapper_upgrade'
+    'sophisticatedbackpacks:tool_swapper_upgrade',
   ];
 
   // Exclude upgrades that are unique to Sophisticated Storage
-  let storageUnique = [
-    'sophisticatedstorage:hopper_upgrade',
-    'sophisticatedstorage:advanced_hopper_upgrade'
-  ];
+  let storageUnique = ['sophisticatedstorage:hopper_upgrade', 'sophisticatedstorage:advanced_hopper_upgrade'];
 
   ServerEvents.tags('item', e => {
     // Hide and remove old upgrades from Sophisticated Storage
@@ -46,5 +43,9 @@
         event.add(id, [Text.gray('Compatible with sophisticated storage.')]);
       }
     });
+  });
+
+  ServerEvents.recipes(event => {
+    event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'sophisticatedstorage:upgrade_base', 'sophisticatedbackpacks:upgrade_base');
   });
 }
