@@ -56,7 +56,7 @@ ServerEvents.tags('item', e => {
     'ae2:wireless_crafting_terminal',
     'megacells:bulk_item_cell',
     'megacells:radioactive_chemical_cell',
-    /^enderdrives:ender_disk_.*/,
+    /^enderdrives:.*_disk/,
 
     /^pneumaticcraft:.*_(tank|chest)$/,
     /^pneumaticcraft:.*drone/,
