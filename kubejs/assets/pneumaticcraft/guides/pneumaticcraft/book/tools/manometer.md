@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Manometer"
-  icon: "pneumaticcraft:manometer[pneumaticcraft:air=30000]"
+  title: 'Manometer'
+  icon: 'pneumaticcraft:manometer'
   parent: pneumaticcraft:tools.md
 item_ids:
   - pneumaticcraft:manometer
@@ -17,5 +17,4 @@ Crafting a Manometer
 
 ## Other Mods
 
-With mods such as *The One Probe* or *WAILA/HWYLA* installed, the *Manometer* may be of limited use.
-
+With mods such as _The One Probe_ or _WAILA/HWYLA_ installed, the _Manometer_ may be of limited use.

@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Eclipse Alloy Boots"
-  icon: "justdirethings:eclipsealloy_boots[justdirethings:forge_energy=500000]"
+  title: 'Eclipse Alloy Boots'
+  icon: 'justdirethings:eclipsealloy_boots'
   position: 23
   parent: justdirethings:armor.md
 item_ids:
@@ -14,7 +14,4 @@ These advanced boots store up to 500,000 FE, providing excellent mobility and en
 
 ## Eclipse Alloy Boots Crafting
 
-
-
 <Recipe id="justdirethings:eclipsealloy_boots" />
-

@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Eclipse Alloy Chestplate"
-  icon: "justdirethings:eclipsealloy_chestplate[justdirethings:forge_energy=500000]"
+  title: 'Eclipse Alloy Chestplate'
+  icon: 'justdirethings:eclipsealloy_chestplate'
   position: 21
   parent: justdirethings:armor.md
 item_ids:
@@ -14,7 +14,4 @@ This top-tier chestplate utilizes 500,000 FE of Forge Energy, offering unprecede
 
 ## Eclipse Alloy Chestplate Crafting
 
-
-
 <Recipe id="justdirethings:eclipsealloy_chestplate" />
-

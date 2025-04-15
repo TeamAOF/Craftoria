@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Celestigem Sword"
-  icon: "justdirethings:celestigem_sword[justdirethings:forge_energy=10000]"
+  title: 'Celestigem Sword'
+  icon: 'justdirethings:celestigem_sword'
   position: 13
   parent: justdirethings:tools.md
 item_ids:
@@ -15,4 +15,3 @@ An upgrade to [Blazegold Sword](./tool_blazegold_sword.md), this sword uses Forg
 Celestigem Sword Crafting
 
 <Recipe id="justdirethings:celestigem_sword" />
-

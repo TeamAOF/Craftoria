@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Celestigem Bow"
-  icon: "justdirethings:bow_celestigem[justdirethings:forge_energy=10000]"
+  title: 'Celestigem Bow'
+  icon: 'justdirethings:bow_celestigem'
   position: 18
   parent: justdirethings:tools.md
 item_ids:
@@ -17,4 +17,3 @@ This bow features 3 'Potion Canister slots', allowing for customized effects. Lo
 Celestigem Bow Crafting
 
 <Recipe id="justdirethings:bow_celestigem" />
-

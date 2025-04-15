@@ -1,7 +1,7 @@
 ---
 navigation:
   title: "Portal Gun"
-  icon: "justdirethings:portalgun[justdirethings:forge_energy=100000]"
+  icon: "justdirethings:portalgun"
   position: 10
   parent: justdirethings:items.md
 item_ids:

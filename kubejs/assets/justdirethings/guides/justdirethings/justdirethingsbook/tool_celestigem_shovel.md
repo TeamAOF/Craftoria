@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Celestigem Shovel"
-  icon: "justdirethings:celestigem_shovel[justdirethings:forge_energy=10000]"
+  title: 'Celestigem Shovel'
+  icon: 'justdirethings:celestigem_shovel'
   position: 15
   parent: justdirethings:tools.md
 item_ids:
@@ -15,4 +15,3 @@ Building upon [Blazegold Shovel](./tool_blazegold_shovel.md), this shovel operat
 Celestigem Shovel Crafting
 
 <Recipe id="justdirethings:celestigem_shovel" />
-

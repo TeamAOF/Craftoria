@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Camouflage Applicator"
-  icon: "pneumaticcraft:camo_applicator[pneumaticcraft:air=30000]"
+  title: 'Camouflage Applicator'
+  icon: 'pneumaticcraft:camo_applicator'
   parent: pneumaticcraft:tools.md
 item_ids:
   - pneumaticcraft:camo_applicator
@@ -9,16 +9,17 @@ item_ids:
 
 # Camouflage Applicator
 
-The *Camouflage Applicator* can be used to camouflage certain <Color hex="#228">PneumaticCraft: Repressurized</Color> blocks:
+The _Camouflage Applicator_ can be used to camouflage certain <Color id="dark_green">PneumaticCraft: Repressurized</Color> blocks:
+
 - [Pressure Tubes](../tubes/pressure_tubes.md)
 - [Pneumatic Door Base](../machines/pneumatic_door.md)
 - [Elevator Base & Caller](../machines/elevators.md)
 - [Charging Station](../machines/charging_station.md)
 - [Heat Pipe](../machines/heat_pipe.md)
 
-*Right-click* any solid block to copy its appearance to the Applicator tool, or *sneak+right-click* to clear the copied block. 
+_Right-click_ any solid block to copy its appearance to the Applicator tool, or _sneak+right-click_ to clear the copied block.
 
-Then, *right-click* any camouflageable block (see above) to apply or remove camouflage.
+Then, _right-click_ any camouflageable block (see above) to apply or remove camouflage.
 
 You'll need an actual block in your inventory to apply it as camouflage, which gets used (but you get it back when you remove the camouflage).
 
@@ -27,4 +28,3 @@ You can also uncamouflage a camouflaged block by breaking it with a pick or othe
 Crafting a Camouflage Applicator
 
 <Recipe id="pneumaticcraft:camo_applicator" />
-

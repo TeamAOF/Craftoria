@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Eclipse Alloy Pickaxe"
-  icon: "justdirethings:eclipsealloy_pickaxe[justdirethings:forge_energy=500000]"
+  title: 'Eclipse Alloy Pickaxe'
+  icon: 'justdirethings:eclipsealloy_pickaxe'
   position: 21
   parent: justdirethings:tools.md
 item_ids:
@@ -10,11 +10,10 @@ item_ids:
 
 # Eclipse Alloy Pickaxe
 
-The Eclipse Alloy Pickaxe combines immense durability with powerful energy storage, making it perfect for harvesting even the toughest materials. 
+The Eclipse Alloy Pickaxe combines immense durability with powerful energy storage, making it perfect for harvesting even the toughest materials.
 
 It is capable of supporting high-level mining enhancements.
 
 Eclipse Alloy Pickaxe Crafting
 
 <Recipe id="justdirethings:eclipsealloy_pickaxe" />
-

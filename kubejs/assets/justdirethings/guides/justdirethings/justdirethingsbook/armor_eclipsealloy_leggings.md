@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Eclipse Alloy Leggings"
-  icon: "justdirethings:eclipsealloy_leggings[justdirethings:forge_energy=500000]"
+  title: 'Eclipse Alloy Leggings'
+  icon: 'justdirethings:eclipsealloy_leggings'
   position: 22
   parent: justdirethings:armor.md
 item_ids:
@@ -14,7 +14,4 @@ Crafted for ultimate endurance, these leggings are powered by 500,000 FE of Forg
 
 ## Eclipse Alloy Leggings Crafting
 
-
-
 <Recipe id="justdirethings:eclipsealloy_leggings" />
-

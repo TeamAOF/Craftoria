@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Building Materials"
-  icon: "pneumaticcraft:reinforced_bricks"
+  title: 'Building Materials'
+  icon: 'pneumaticcraft:reinforced_bricks'
   parent: pneumaticcraft:base_concepts.md
 item_ids:
   - pneumaticcraft:reinforced_stone
@@ -23,39 +23,29 @@ item_ids:
 
 # Building Materials
 
-<Color hex="#228">PneumaticCraft: Repressurized</Color> adds a collection of *Reinforced Stone* block types, which are made with some *Stone* and a little *Compressed Iron*. Many crafting recipes require some form of Reinforced Stone.
+<Color id="dark_green">PneumaticCraft: Repressurized</Color> adds a collection of _Reinforced Stone_ block types, which are made with some _Stone_ and a little _Compressed Iron_. Many crafting recipes require some form of Reinforced Stone.
 
 Reinforced Stone blocks are also very suitable for building with, and all types have a high blast resistance.
 
 <ItemImage id="pneumaticcraft:compressed_stone" />
 
-In addition, *Compressed Stone*, and its various products, may be useful for aesthetic purposes. Like *Reinforced Stone*, it has excellent blast resistance.
-
-
+In addition, _Compressed Stone_, and its various products, may be useful for aesthetic purposes. Like _Reinforced Stone_, it has excellent blast resistance.
 
 <Recipe id="pneumaticcraft:reinforced_stone" />
 
 <Recipe id="pneumaticcraft:reinforced_stone_slab" />
 
-
-
 <Recipe id="pneumaticcraft:reinforced_bricks" />
 
 <Recipe id="pneumaticcraft:reinforced_bricks_from_tile" />
-
-
 
 <Recipe id="pneumaticcraft:reinforced_brick_tile" />
 
 <Recipe id="pneumaticcraft:reinforced_brick_stairs" />
 
-
-
 <Recipe id="pneumaticcraft:reinforced_brick_slab" />
 
 <Recipe id="pneumaticcraft:reinforced_brick_wall" />
-
-
 
 <Recipe id="pneumaticcraft:reinforced_brick_pillar" />
 
@@ -65,27 +55,18 @@ In addition, *Compressed Stone*, and its various products, may be useful for aes
 {"type":"pneumaticcraft:pressure_chamber","recipe":"pneumaticcraft:pressure_chamber/compressed_stone"}
 ```
 
-
-
 <Recipe id="pneumaticcraft:compressed_stone_slab" />
 
 <Recipe id="pneumaticcraft:compressed_brick_pillar" />
-
-
 
 <Recipe id="pneumaticcraft:compressed_bricks" />
 
 <Recipe id="pneumaticcraft:compressed_bricks_from_tile" />
 
-
-
 <Recipe id="pneumaticcraft:compressed_brick_tile" />
 
 <Recipe id="pneumaticcraft:compressed_brick_stairs" />
 
-
-
 <Recipe id="pneumaticcraft:compressed_brick_slab" />
 
 <Recipe id="pneumaticcraft:compressed_brick_wall" />
-

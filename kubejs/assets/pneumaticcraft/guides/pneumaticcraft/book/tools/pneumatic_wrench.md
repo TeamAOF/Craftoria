@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Pneumatic Wrench"
-  icon: "pneumaticcraft:pneumatic_wrench[pneumaticcraft:air=30000]"
+  title: 'Pneumatic Wrench'
+  icon: 'pneumaticcraft:pneumatic_wrench'
   parent: pneumaticcraft:tools.md
 item_ids:
   - pneumaticcraft:pneumatic_wrench
@@ -9,19 +9,16 @@ item_ids:
 
 # Pneumatic Wrench
 
-The Pneumatic Wrench is the *wrench* item for <Color hex="#228">PneumaticCraft: Repressurized</Color>. You can use it for a variety of tasks, including:
+The Pneumatic Wrench is the _wrench_ item for <Color id="dark_green">PneumaticCraft: Repressurized</Color>. You can use it for a variety of tasks, including:
 
+- _Right-click_ vanilla and modded blocks to rotate them
+- _Sneak+right-click_ <Color id="dark_green">PneumaticCraft: Repressurized</Color> machines to drop them as items, preserving any stored upgrades and air in the machine.
 
-- *Right-click* vanilla and modded blocks to rotate them
-- *Sneak+right-click* <Color hex="#228">PneumaticCraft: Repressurized</Color> machines to drop them as items, preserving any stored upgrades and air in the machine.
+- _Right-click_ [Drones](../base_concepts/drones.md) to dismantle them, dropping them as an item.
+- _Right-click_ [Pressure Tubes](../tubes/pressure_tubes.md) to close/re-open sections to isolate them from each other.
 
-
-- *Right-click* [Drones](../base_concepts/drones.md) to dismantle them, dropping them as an item.
-- *Right-click* [Pressure Tubes](../tubes/pressure_tubes.md) to close/re-open sections to isolate them from each other.
-
-The *Pneumatic Wrench* must be pressurized in a [Charging Station](../machines/charging_station.md) before use.
+The _Pneumatic Wrench_ must be pressurized in a [Charging Station](../machines/charging_station.md) before use.
 
 Crafting a Pneumatic Wrench
 
 <Recipe id="pneumaticcraft:pneumatic_wrench" />
-
