@@ -1,4 +1,12 @@
 ServerEvents.recipes(e => {
+  for (let [entry, ore] of Object.entries(global.customOres)) {
+    const { block } = ore.registry;
+    if (block)
+      e.shaped(`craftoria:${entry}_block`, ['AAA', 'AAA', 'AAA'], {
+        A: `craftoria:${entry}_ingot`,
+      });
+  }
+
   e.shaped('craftoria:blaze_block', ['AAA', 'AAA', 'AAA'], {
     A: 'minecraft:blaze_rod',
   });

@@ -2,61 +2,61 @@ StartupEvents.registry('block', event => {
   event
     .create('craftoria:blaze_block')
     .displayName('Blaze Block')
-    .soundType('deepslate_bricks')
+    .soundType(SoundType.DEEPSLATE_BRICKS)
     .hardness(3)
     .resistance(2)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('minecraft:needs_iron_tool')
+    .tagBlock(HarvestLevel.IRON)
     .requiresTool(true);
 
   event
     .create('craftoria:smokey_bricks')
     .displayName('Smokey Brick')
-    .soundType('deepslate_bricks')
+    .soundType(SoundType.DEEPSLATE_BRICKS)
     .hardness(3)
     .resistance(2)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('minecraft:needs_stone_tool')
+    .tagBlock(HarvestLevel.STONE)
     .requiresTool(true);
 
   event
     .create('craftoria:smokey_bricks_slab', 'slab')
     .displayName('Smokey Brick Slab')
-    .soundType('deepslate_bricks')
+    .soundType(SoundType.DEEPSLATE_BRICKS)
     .hardness(3)
     .resistance(2)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('minecraft:needs_stone_tool')
+    .tagBlock(HarvestLevel.STONE)
     .requiresTool(true);
 
   event
     .create('craftoria:smokey_bricks_stairs', 'stairs')
     .displayName('Smokey Brick Stairs')
-    .soundType('deepslate_bricks')
+    .soundType(SoundType.DEEPSLATE_BRICKS)
     .hardness(3)
     .resistance(2)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('minecraft:needs_stone_tool')
+    .tagBlock(HarvestLevel.STONE)
     .requiresTool(true);
 
   event
     .create('craftoria:smokey_bricks_wall', 'wall')
     .displayName('Smokey Brick Wall')
-    .soundType('deepslate_bricks')
+    .soundType(SoundType.DEEPSLATE_BRICKS)
     .hardness(3)
     .resistance(2)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('minecraft:needs_stone_tool')
+    .tagBlock(HarvestLevel.STONE)
     .requiresTool(true);
 
   event
     .create('craftoria:smokey_bricks_button', 'button')
     .displayName('Smokey Brick Button')
-    .soundType('deepslate_bricks')
+    .soundType(SoundType.DEEPSLATE_BRICKS)
     .hardness(3)
     .resistance(2)
     .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('minecraft:needs_stone_tool')
+    .tagBlock(HarvestLevel.STONE)
     .requiresTool(true);
 
   event
@@ -72,7 +72,7 @@ StartupEvents.registry('block', event => {
     .box(13, 8, 7, 16, 10, 9, true)
     .box(0, 8, 7, 3, 10, 9, true)
     .box(0, 10, 7, 2, 14, 9, true)
-    .soundType('metal')
+    .soundType(SoundType.METAL)
     .property(BlockProperties.WATERLOGGED)
     .tagBlock('minecraft:mineable/pickaxe')
     .tagItem('modern_industrialization:replicator_blacklist')

@@ -52,4 +52,31 @@ global.customMIMachines = [
   // },
 ];
 
+const HarvestLevel = {
+  WOOD: 'neoforge:needs_wood_tool',
+  STONE: 'minecraft:needs_stone_tool',
+  IRON: 'minecraft:needs_iron_tool',
+  DIAMOND: 'minecraft:needs_diamond_tool',
+  NETHERITE: 'neoforge:needs_netherite_tool',
+};
+
+global.HarvestLevel = HarvestLevel;
+
+global.customOres = {
+  akite: {
+    name: 'Akite',
+    worldGen: {
+      stone: false,
+      deepslate: true,
+      nether: false,
+      end: false,
+      harvestLevel: HarvestLevel.NETHERITE,
+    },
+    registry: {
+      nugget: false,
+      block: true,
+    },
+  },
+};
+
 Platform.setModName('craftoria', 'Craftoria');
