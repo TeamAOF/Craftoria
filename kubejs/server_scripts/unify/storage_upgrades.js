@@ -16,7 +16,8 @@
 
   ServerEvents.tags('item', e => {
     // Hide and remove old upgrades from Sophisticated Storage
-    Ingredient.of('#sophisticatedstorage:upgrade').itemIds.forEach(id => {
+    e.get('sophisticatedstorage:upgrade').getObjectIds().forEach(obj => {
+      const id = obj.toString();
       if (!id.includes('sophisticatedbackpacks:') && !storageUnique.includes(id)) {
         disableItem(id, 'Sophisticated Backpacks Upgrades');
       }
@@ -24,7 +25,8 @@
     disableItem('sophisticatedstorage:upgrade_base', 'Sophisticated Backpacks Upgrades', 'sophisticatedbackpacks:upgrade_base');
 
     // Add compatibility for Sophisticated Backpacks upgrades to Sophisticated Storage
-    Ingredient.of('#sophisticatedbackpacks:upgrade').itemIds.forEach(id => {
+    e.get('sophisticatedbackpacks:upgrade').getObjectIds().forEach(obj => {
+      const id = obj.toString();
       if (!storageIncompatible.includes(id)) {
         e.add('sophisticatedstorage:upgrade', id);
       }
@@ -34,7 +36,6 @@
     e.add('sophisticatedbackpacks:upgrade', ['#sophisticatedstorage:upgrade']);
   });
 
-  // Add tooltips suggesting compatibility with Sophisticated Storage
   ItemEvents.modifyTooltips(event => {
     const disabledSet = new Set(disabledItems.map(item => item.id));
 
