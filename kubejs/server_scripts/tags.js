@@ -108,6 +108,21 @@ ServerEvents.tags('item', e => {
   // Wooden Tier Storage
   e.add('craftoria:storage/wooden', ['#c:chests/wooden', '#c:barrels/wooden']);
 
+  // Sounds
+  let wrenchesSoundsBlacklist = ['pneumaticcraft:pneumatic_wrench', 'ae2:nether_quartz_wrench', 'ae2:certus_quartz_wrench']
+  e.get('c:wrenches').getObjectIds().forEach(obj => {
+    const id = obj.toString();
+    if(!wrenchesSoundsBlacklist.includes(id)){e.add('craftoria:sounds/generic_wrenches', id);}
+  });
+
+  let platesSoundsBlacklist = ['create:cardboard']
+  e.get('c:plates').getObjectIds().forEach(obj => {
+    const id = obj.toString();
+    if(!platesSoundsBlacklist.includes(id)){e.add('craftoria:sounds/plates', id);}
+  });
+
+  e.add('craftoria:sounds/glass', ['#minecraft:glass_blocks', '#minecraft:glass_panes', '#c:glass_blocks', '#c:glass_panes', '@glassential'])
+
   // Some tag fixes
   e.add('minecraft:swords', ['wstweaks:blaze_blade', 'wstweaks:lava_blade', 'industrialforegoing:infinity_hammer']);
   e.add('minecraft:pickaxes', ['industrialforegoing:infinity_drill']);
