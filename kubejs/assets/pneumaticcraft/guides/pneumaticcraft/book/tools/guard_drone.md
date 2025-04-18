@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Guard Drone"
-  icon: "pneumaticcraft:guard_drone[pneumaticcraft:air=120000]"
+  title: 'Guard Drone'
+  icon: 'pneumaticcraft:guard_drone'
   parent: pneumaticcraft:tools.md
 item_ids:
   - pneumaticcraft:guard_drone
@@ -9,7 +9,7 @@ item_ids:
 
 # Guard Drone
 
-A *Guard Drone* is a specialized non-programmable type of [Drone](./drone.md) which should be deployed against any inventory block. It will import one item to use as a weapon and attack any in-range mobs with it.
+A _Guard Drone_ is a specialized non-programmable type of [Drone](./drone.md) which should be deployed against any inventory block. It will import one item to use as a weapon and attack any in-range mobs with it.
 
 ## Automatic Charging
 
@@ -19,7 +19,7 @@ As with all types of Drone, these drones require [pressure](../base_concepts/pre
 
 ## Range
 
-The *Guard Drone* will target any hostile mobs within 16 blocks horizontally of its deployment position, 8 blocks up, and 5 blocks down.
+The _Guard Drone_ will target any hostile mobs within 16 blocks horizontally of its deployment position, 8 blocks up, and 5 blocks down.
 
 The reason for the smaller vertical range is to minimize detection of mobs in caves deep below and teleporting to them, which wastes air and leaves you wondering what's happened to your Drone.
 
@@ -27,7 +27,7 @@ The reason for the smaller vertical range is to minimize detection of mobs in ca
 
 <ItemImage id="minecraft:netherite_sword" />
 
-The *Guard Drone* does not care what is in the inventory, so take care that you a put a useful melee weapon in there. If & when the weapon breaks and there are no replacements in the inventory, the drone will continue to fight unarmed, which is very ineffective.
+The _Guard Drone_ does not care what is in the inventory, so take care that you a put a useful melee weapon in there. If & when the weapon breaks and there are no replacements in the inventory, the drone will continue to fight unarmed, which is very ineffective.
 
 ## Ranged Combat
 
@@ -44,4 +44,3 @@ The drone may alternatively be equipped with a [Minigun Upgrade](../base_concept
 Crafting a Guard Drone
 
 <Recipe id="pneumaticcraft:guard_drone" />
-

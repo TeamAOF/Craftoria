@@ -46,8 +46,8 @@ function ArsNouveauHelper(event) {
         }
 
         if (pedestalItemCount > 8) {
-          console.error('Ars Nouveau Enchanting Apparatus pedestal items count exceeded 8. Please check the recipe.');
-          console.error(`Recipe output: ${output}, Recipe input: ${input}, Recipe pedestal items: ${pedestalItems}`);
+          logError('Ars Nouveau Enchanting Apparatus pedestal items count exceeded 8. Please check the recipe.');
+          logError(`Recipe output: ${output}, Recipe input: ${input}, Recipe pedestal items: ${pedestalItems}`);
           return;
         }
       });
@@ -83,8 +83,8 @@ function ArsNouveauHelper(event) {
         }
 
         if (pedestalItemCount > 8) {
-          console.error('Ars Nouveau Imbuement Chamber pedestal items count exceeded 8. Please check the recipe.');
-          console.error(`Recipe output: ${output}, Recipe input: ${input}, Recipe pedestal items: ${pedestalItems}`);
+          logError('Ars Nouveau Imbuement Chamber pedestal items count exceeded 8. Please check the recipe.');
+          logError(`Recipe output: ${output}, Recipe input: ${input}, Recipe pedestal items: ${pedestalItems}`);
           return;
         }
       });

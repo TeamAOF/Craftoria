@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Celestigem Helmet"
-  icon: "justdirethings:celestigem_helmet[justdirethings:forge_energy=10000]"
+  title: 'Celestigem Helmet'
+  icon: 'justdirethings:celestigem_helmet'
   position: 9
   parent: justdirethings:armor.md
 item_ids:
@@ -14,7 +14,4 @@ The Celestigem Helmet harnesses Forge Energy for durability, storing up to 10,00
 
 ## Celestigem Helmet Crafting
 
-
-
 <Recipe id="justdirethings:celestigem_helmet" />
-

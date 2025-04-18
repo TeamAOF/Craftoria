@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Celestigem Leggings"
-  icon: "justdirethings:celestigem_leggings[justdirethings:forge_energy=10000]"
+  title: 'Celestigem Leggings'
+  icon: 'justdirethings:celestigem_leggings'
   position: 11
   parent: justdirethings:armor.md
 item_ids:
@@ -14,7 +14,4 @@ Celestigem Leggings utilize Forge Energy, boasting a 10,000 FE capacity for enha
 
 ## Celestigem Leggings Crafting
 
-
-
 <Recipe id="justdirethings:celestigem_leggings" />
-

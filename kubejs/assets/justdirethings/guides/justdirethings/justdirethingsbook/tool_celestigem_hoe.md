@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Celestigem Hoe"
-  icon: "justdirethings:celestigem_hoe[justdirethings:forge_energy=10000]"
+  title: 'Celestigem Hoe'
+  icon: 'justdirethings:celestigem_hoe'
   position: 17
   parent: justdirethings:tools.md
 item_ids:
@@ -17,4 +17,3 @@ If the hoe has 'teleport drops' ability, and is bound to an inventory, the soil 
 Celestigem Hoe Crafting
 
 <Recipe id="justdirethings:celestigem_hoe" />
-

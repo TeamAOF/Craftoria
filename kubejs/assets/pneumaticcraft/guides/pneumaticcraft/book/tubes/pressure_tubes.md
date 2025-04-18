@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Pressure Tubes"
-  icon: "pneumaticcraft:pressure_tube"
+  title: 'Pressure Tubes'
+  icon: 'pneumaticcraft:pressure_tube'
   parent: pneumaticcraft:tubes.md
 item_ids:
   - pneumaticcraft:pressure_tube
@@ -9,13 +9,13 @@ item_ids:
 
 # Pressure Tubes
 
-Pressure Tubes are the primary device in <Color hex="#228">PneumaticCraft: Repressurized</Color> for transporting compressed air between compressors and machines.
+Pressure Tubes are the primary device in <Color id="dark_green">PneumaticCraft: Repressurized</Color> for transporting compressed air between compressors and machines.
 
 Unconnected tubes will leak air! However, the sides of a tube can be toggled open or shut by right-clicking with a [Pneumatic Wrench](../tools/pneumatic_wrench.md). Wrenches from other mods may also work.
 
 ## Tubes!
 
-*Two Pressure Tubes with a [Pressure Gauge](./pressure_gauge_module.md)* *connecting an [Air Compressor](../compressors/air_compressor.md)* *and [Air Cannon](../machines/air_cannon.md)*
+_Two Pressure Tubes with a [Pressure Gauge](./pressure_gauge_module.md)_ _connecting an [Air Compressor](../compressors/air_compressor.md)_ _and [Air Cannon](../machines/air_cannon.md)_
 
 TODO: Unsupported flag 'border'
 ![](pressure_tubes.png)
@@ -46,4 +46,3 @@ Crafting a Pressure Tube
 ```
 {"anchor":"advanced","type":"pneumaticcraft:assembly_system","recipe":"pneumaticcraft:assembly/advanced_pressure_tube"}
 ```
-

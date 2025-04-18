@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Voidshift Wand"
-  icon: "justdirethings:voidshift_wand[justdirethings:forge_energy=10000]"
+  title: 'Voidshift Wand'
+  icon: 'justdirethings:voidshift_wand'
   position: 6
   parent: justdirethings:items.md
 item_ids:
@@ -20,7 +20,4 @@ You can also shorten the max distance traveled, and toggle on or off the player 
 
 ## Voidshift Wand Crafting
 
-
-
 <Recipe id="justdirethings:voidshift_wand" />
-

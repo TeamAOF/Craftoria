@@ -1,7 +1,7 @@
 ---
 navigation:
   title: "Time Wand"
-  icon: "justdirethings:time_wand[justdirethings:forge_energy=100000]"
+  icon: "justdirethings:time_wand"
   position: 7
   parent: justdirethings:items.md
 item_ids:

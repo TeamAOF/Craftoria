@@ -1,7 +1,7 @@
 ---
 navigation:
   title: "Eclipsegate Wand"
-  icon: "justdirethings:eclipsegate_wand[justdirethings:forge_energy=100000]"
+  icon: "justdirethings:eclipsegate_wand"
   position: 7
   parent: justdirethings:items.md
 item_ids:
@@ -16,7 +16,7 @@ In addition to the [Voidshift Wand](./item_voidshift_wand.md) abilities, you can
 
 After a few moments the original blocks will return as they were. Block Entities like chests are not affected.
 
-The setting screen lets you adjust the range of this ability. 
+The setting screen lets you adjust the range of this ability.
 
 ## Eclipsegate Wand Crafting
 

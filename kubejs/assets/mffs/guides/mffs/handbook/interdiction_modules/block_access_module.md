@@ -13,11 +13,11 @@ item_ids:
 
 The <Color id="dark_purple">Block Access Module</Color> is an optional module for the [Interdiction Matrix](../machines/interdiction_matrix.md). It enables a Matrix to inhibit a player's ability to right-click on a block and access its GUI screen.
 
-Crafting the <Color id="dark_purple">Block Access Module().
+Crafting the <Color id="dark_purple">Block Access Module</Color>.
 
 <Recipe id="mffs:block_access_module" />
 
 ## Operation
 
-If an unauthorized player tries to right-click a block or machine located within the action range of an Interdiction Matrix (equipped with the <Color id="dark_purple">Block Access Module</Color></Color>), they will not be permitted to open its GUI. As we would expect, blocks or machines outside the action area can be used normally.
+If an unauthorized player tries to right-click a block or machine located within the action range of an Interdiction Matrix (equipped with the <Color id="dark_purple">Block Access Module</Color>), they will not be permitted to open its GUI. As we would expect, blocks or machines outside the action area can be used normally.
 

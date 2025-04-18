@@ -49,7 +49,6 @@ ServerEvents.tags('item', e => {
    * @type {$Ingredient_[]}
    */
   const replicator_2_blacklist = [
-    /_bucket$/,
     /storage_cell/,
     /fe_.*_cell/,
     /portable_.*_cell/,
@@ -57,7 +56,7 @@ ServerEvents.tags('item', e => {
     'ae2:wireless_crafting_terminal',
     'megacells:bulk_item_cell',
     'megacells:radioactive_chemical_cell',
-    /^enderdrives:ender_disk_.*/,
+    /^enderdrives:.*_disk/,
 
     /^pneumaticcraft:.*_(tank|chest)$/,
     /^pneumaticcraft:.*drone/,
@@ -170,6 +169,8 @@ ServerEvents.tags('item', e => {
    * @type {$Ingredient_[]}
    */
   const replicator_1_blacklist = [
+    /_bucket$/,
+
     // These make no sense to replicate, as they rely on having NBT data, which Replicator Mk I doesn't support, and I don't want to risk them causing issues.
     'tankstorage:tank_link',
     'bankstorage:bank_link',

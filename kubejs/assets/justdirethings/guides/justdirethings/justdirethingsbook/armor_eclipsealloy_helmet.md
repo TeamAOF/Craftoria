@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Eclipse Alloy Helmet"
-  icon: "justdirethings:eclipsealloy_helmet[justdirethings:forge_energy=500000]"
+  title: 'Eclipse Alloy Helmet'
+  icon: 'justdirethings:eclipsealloy_helmet'
   position: 20
   parent: justdirethings:armor.md
 item_ids:
@@ -14,7 +14,4 @@ The Eclipse Alloy Helmet is the pinnacle of armor technology, using Forge Energy
 
 ## Eclipse Alloy Helmet Crafting
 
-
-
 <Recipe id="justdirethings:eclipsealloy_helmet" />
-

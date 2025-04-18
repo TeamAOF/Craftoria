@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Celestigem Chestplate"
-  icon: "justdirethings:celestigem_chestplate[justdirethings:forge_energy=10000]"
+  title: 'Celestigem Chestplate'
+  icon: 'justdirethings:celestigem_chestplate'
   position: 10
   parent: justdirethings:armor.md
 item_ids:
@@ -14,7 +14,4 @@ The Celestigem Chestplate uses Forge Energy for its functionality, equipped with
 
 ## Celestigem Chestplate Crafting
 
-
-
 <Recipe id="justdirethings:celestigem_chestplate" />
-

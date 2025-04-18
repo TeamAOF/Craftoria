@@ -1,35 +1,34 @@
 ClientEvents.generateAssets('after_mods', e => {
   global.customMIMachines.forEach(machine => {
-    e.blockState(`modern_industrialization:${machine.id}`, bs => {
-      bs.simpleVariant('', `modern_industrialization:block/${machine.id}`);
+    /** @type {{id: string, mod: Special.Mod, casing: string}} */
+    let { id, mod, overlay } = machine;
+    if (!mod) mod = 'modern_industrialization';
+
+    e.blockState(`${mod}:${id}`, bs => {
+      bs.simpleVariant('', `${mod}:block/${id}`);
     });
 
     let modelJson = {
       casing: machine.casing || 'lv',
       default_overlays: machine.default_overlays || {
         fluid_auto: 'modern_industrialization:block/overlays/fluid_auto',
-        front: `modern_industrialization:block/machines/${machine.overlay || machine.id}/overlay_front`,
-        front_active: `modern_industrialization:block/machines/${machine.overlay || machine.id}/overlay_front_active`,
         item_auto: 'modern_industrialization:block/overlays/item_auto',
         output: 'modern_industrialization:block/overlays/output',
+        front: `${mod}:block/machines/${overlay || id}/overlay_front`,
+        front_active: `${mod}:block/machines/${overlay || id}/overlay_front_active`,
       },
       loader: 'modern_industrialization:machine',
     };
 
     if (machine.hasSides) {
-      if (machine.overlay) {
-        modelJson.default_overlays.side = `modern_industrialization:block/machines/${machine.overlay}/overlay_side`;
-        modelJson.default_overlays.side_active = `modern_industrialization:block/machines/${machine.overlay}/overlay_side_active`;
-      } else {
-        modelJson.default_overlays.side = `modern_industrialization:block/machines/${machine.id}/overlay_side`;
-        modelJson.default_overlays.side_active = `modern_industrialization:block/machines/${machine.id}/overlay_side_active`;
-      }
+      modelJson.default_overlays.side = `${mod}:block/machines/${overlay || id}/overlay_side`;
+      modelJson.default_overlays.side_active = `${mod}:block/machines/${overlay || id}/overlay_side_active`;
     }
 
-    e.json(`modern_industrialization:models/block/${machine.id}`, modelJson);
+    e.json(`${mod}:models/block/${id}`, modelJson);
 
-    e.itemModel(`modern_industrialization:${machine.id}`, im => {
-      im.parent(`modern_industrialization:block/${machine.id}`);
+    e.itemModel(`${mod}:${id}`, im => {
+      im.parent(`${mod}:block/${id}`);
     });
   });
 

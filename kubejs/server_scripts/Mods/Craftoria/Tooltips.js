@@ -10,13 +10,13 @@ ItemEvents.modifyTooltips(e => {
     ]);
   });
 
-  disabledItems.forEach((item) => {
-    if(item.alt === null){
+  disabledItems.forEach(item => {
+    if (!item.alt) {
       e.add(item.id, [
         Text.red('This item has been disabled in favor of better alternatives.'),
         Text.red('Its functionality remains intact, but it is no longer craftable.'),
       ]);
-    }else{
+    } else {
       e.add(item.id, [
         Text.red(`This item has been disabled in favor of ${item.alt}.`),
         Text.red('Its functionality remains intact, but it is no longer craftable.'),

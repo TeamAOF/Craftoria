@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Celestigem Axe"
-  icon: "justdirethings:celestigem_axe[justdirethings:forge_energy=10000]"
+  title: 'Celestigem Axe'
+  icon: 'justdirethings:celestigem_axe'
   position: 16
   parent: justdirethings:tools.md
 item_ids:
@@ -15,4 +15,3 @@ Advancing from [Blazegold Axe](./tool_blazegold_axe.md), this axe harnesses Forg
 Celestigem Axe Crafting
 
 <Recipe id="justdirethings:celestigem_axe" />
-

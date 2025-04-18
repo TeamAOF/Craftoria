@@ -7,6 +7,8 @@ ServerEvents.tags('block', e => {
 
 LootJS.lootTables(e => {
   global.customMIMachines.forEach(machine => {
-    e.create(`modern_industrialization:blocks/${machine.id}`).createPool().addEntry(`modern_industrialization:${machine.id}`);
+    e.create(`${machine.mod ?? 'modern_industrialization'}:blocks/${machine.id}`)
+      .createPool()
+      .addEntry(`${machine.mod ?? 'modern_industrialization'}:${machine.id}`);
   });
 });

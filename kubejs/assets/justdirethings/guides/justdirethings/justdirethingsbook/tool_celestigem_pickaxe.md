@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Celestigem Pickaxe"
-  icon: "justdirethings:celestigem_pickaxe[justdirethings:forge_energy=10000]"
+  title: 'Celestigem Pickaxe'
+  icon: 'justdirethings:celestigem_pickaxe'
   position: 14
   parent: justdirethings:tools.md
 item_ids:
@@ -15,4 +15,3 @@ Enhancing the [Blazegold Pickaxe](./tool_blazegold_pickaxe.md) with Forge Energy
 Celestigem Pickaxe Crafting
 
 <Recipe id="justdirethings:celestigem_pickaxe" />
-

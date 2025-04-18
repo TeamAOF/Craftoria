@@ -5,7 +5,7 @@ RecipeViewerEvents.removeEntries('item', e => {
     try {
       let items = Ingredient.of(tag).itemIds;
       if (items.length > 1) {
-        if (debug) console.log(`Found ${items.length} items for tag: ${tag}`);
+        logInfo(`Found ${items.length} items for tag: ${tag}`);
         items = sortArray(items.toArray());
         if (!items[0].includes('ore')) {
           let _ = items.shift();
@@ -15,14 +15,14 @@ RecipeViewerEvents.removeEntries('item', e => {
           Object.values(groupedItems).forEach(variantGroup => {
             let sortedByPriority = sortArray(variantGroup);
             if (sortedByPriority.length > 1) {
-              if (debug) console.log(sortedByPriority.slice(1));
+              logInfo(sortedByPriority.slice(1));
               unifyHide.push(sortedByPriority.slice(1));
             }
           });
         }
       }
     } catch (error) {
-      if (debug) console.error(`Could not find item for tag: ${tag}`);
+      logError(`Could not find item for tag: ${tag}`);
     }
   };
 
@@ -62,7 +62,7 @@ RecipeViewerEvents.removeEntries('item', e => {
         });
         break;
       default:
-        console.error(`Unknown material: ${material}`);
+        logError(`Unknown material: ${material}`);
         break;
     }
   });

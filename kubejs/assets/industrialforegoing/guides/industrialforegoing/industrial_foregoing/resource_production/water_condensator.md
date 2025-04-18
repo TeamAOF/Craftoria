@@ -13,10 +13,7 @@ item_ids:
 A machine that generates <Color id="gold">water</Color> from surrounding sourceblocks.
 
 When adjacent to at least <Color id="gold">2 water source blocks</Color>, it will start working.
-Adding additional source blocks and supplying <Color id="gold">1000()RF per operation, will make the machine significally faster.
-
-
+Adding additional source blocks and supplying <Color id="gold">1000RF per operation</Color>, will make the machine significally faster.
 
 <Recipe id="industrialforegoing:water_condensator" />
 
-</Color>
