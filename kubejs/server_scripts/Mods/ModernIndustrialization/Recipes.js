@@ -3,7 +3,7 @@
 ////////////////////////
 
 ServerEvents.recipes(e => {
-  const { assembler, macerator, compressor, cutting_machine, electrolyzer } = e.recipes.modern_industrialization;
+  const { assembler, macerator, compressor, cutting_machine, electrolyzer, chemical_reactor } = e.recipes.modern_industrialization;
 
   // Obsidian Dust
   macerator(2, 100).itemOut('4x mekanism:dust_obsidian').itemIn('#c:obsidians/normal').id('craftoria:mi/obsidian_dust');
@@ -102,6 +102,22 @@ ServerEvents.recipes(e => {
       }
     }
   });
+
+  // Powah Conversion
+
+  chemical_reactor(10, 240)
+    .itemIn('powah:uraninite')
+    .itemIn('modern_industrialization:iron_dust')
+    .fluidIn('100x modern_industrialization:sulfuric_acid')
+    .itemOut('modern_industrialization:uranium_dust')
+    .fluidOut('75x modern_industrialization:sulfuric_acid')
+    .id('craftoria:mi/chemical_reactor/uranium');
+
+  chemical_reactor(10, 120)
+    .itemOut('powah:uraninite')
+    .itemIn('modern_industrialization:uranium_dust')
+    .fluidIn('25x mekanism:oxygen')
+    .id('craftoria:mi/chemical_reactor/uraninite');
 
   // Our custom machines
   assembler(2000000, 5000)
