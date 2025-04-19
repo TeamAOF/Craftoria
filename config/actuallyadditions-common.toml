@@ -80,7 +80,7 @@
 	#By default, the Vertical Digger mines everything that is in the 'forge:ores' block/item tags. If there is one that it can't mine, but should be able to, put its REGISTRY NAME here. These are the actual registered Item Names, the ones you use, for example, when using the /give Command. This Config Option only applies if the miner is in Ores Only Mode.
 	verticalDiggerExtraWhitelist = []
 	#By default, the Vertical Digger mines everything that is in the 'forge:ores' block/item tags. If there is one that it can mine, but shouldn't be able to, put its REGISTRY NAME here. These are the actual registered Item Names, the ones you use, for example, when using the /give Command. This Config Option will apply in both modes.
-	verticalDiggerBlacklist = []
+	verticalDiggerBlacklist = ["craftoria:deepslate_akite_ore"]
 
 #Worldgen Settings
 [worldgenSettings]
