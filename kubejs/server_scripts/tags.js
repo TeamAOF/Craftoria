@@ -175,7 +175,7 @@ ServerEvents.tags('block', e => {
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
 
-  e.add('sereneseasons:greenhouse_glass', ['#minecraft:glass_blocks', 'actuallyadditions:greenhouse_glass']);
+  e.add('sereneseasons:greenhouse_glass', ['#minecraft:glass_blocks', /glass^/]);
 
   // Block tags for quest usage
   e.add('craftoria:ae2_buddings', /^ae2:.*_budding_quartz/);
