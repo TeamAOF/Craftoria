@@ -2,8 +2,14 @@
 KeyBindJSEvents.modify(event => {
   const none = GLFW.GLFW_KEY_UNKNOWN;
   /**
-   * Put your keybinds here.
-   * @type {Object.<string, {key?: number, modifier?: $KeyModifier_, category?: string}>}
+   * Keybinds to modify. All values are optional, but at least one must be set.
+   * @type {Object.<string, {key?: number, modifier?: $KeyModifier_, category?: string, mod?: Special.Mod, remove?: boolean}>}
+   * - string: The keybind to modify.
+   * - key: The key for the bind. (GLFW key code)
+   * - modifier: The modifier for the bind. ("control"| "shift" | "alt" | "none")
+   * - category: The category for the bind. (e.g. "key.categories.movement")
+   * - mod: Used for overriding the mod to check for. (e.g. "minecraft", "the_bumblezone", etc.)
+   * - remove: Whether to remove the keybind. (true|false)
    */
   const keys = {
     // Movement
@@ -11,10 +17,10 @@ KeyBindJSEvents.modify(event => {
     'key.the_bumblezone.beehemoth_down': { category: 'key.categories.movement' },
 
     // Inventory
-    'key.trashslot.toggle': { key: GLFW.GLFW_KEY_PERIOD, category: 'key.categories.inventory', mod: 'minecraft' },
-    'key.trashslot.toggle_lock': { category: 'key.categories.inventory', mod: 'minecraft' },
-    'key.trashslot.delete': { category: 'key.categories.inventory', mod: 'minecraft' },
-    'key.trashslot.delete_all': { category: 'key.categories.inventory', mod: 'minecraft' },
+    'key.trashslot.toggle': { key: GLFW.GLFW_KEY_PERIOD, category: 'key.categories.inventory' },
+    'key.trashslot.toggle_lock': { category: 'key.categories.inventory' },
+    'key.trashslot.delete': { category: 'key.categories.inventory' },
+    'key.trashslot.delete_all': { category: 'key.categories.inventory' },
 
     // Creative Mode
     'key.loadToolbarActivator': { key: none, mod: 'minecraft' },
@@ -129,7 +135,7 @@ KeyBindJSEvents.modify(event => {
     let isModLoaded = global.modList.contains(mod);
     if (!isModLoaded) {
       // Skip if the mod is not loaded, to avoid errors.
-      // console.log(`Skipping: ${k} -> ${v} (${mod} not loaded)`);
+      console.warn(`Skipping: ${k} -> ${v} (${mod} not loaded)`);
       continue;
     }
 
