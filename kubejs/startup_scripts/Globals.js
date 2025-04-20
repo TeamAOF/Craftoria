@@ -6,6 +6,11 @@
  */
 global.devEnv = false;
 
+global.modList = Platform.getMods().keySet();
+global.modList.forEach(mod => {
+  console.log(`Mod: ${mod}`);
+});
+
 /**
  * The list of custom MI machines to generate assets/data for. (Models, sounds, tags, etc.)
  * Possible values for each machine:

@@ -77,15 +77,11 @@ ClientEvents.lang('en_us', e => {
     }
   });
 
-  const modList = [];
-  Platform.getMods().forEach(mod => {
-    modList.push(mod);
-  });
-
   for (const [k, v] of Object.entries(langEntries)) {
     /** @type {Array<string>} */
     let langParts = k.split('.');
-    let mod = langParts.find(part => modList.includes(part));
+    let mod = langParts.find(part => global.modList.contains(part));
+    console.log(`${mod} ${k} -> ${v}`);
     e.add(mod, k, v);
   }
 

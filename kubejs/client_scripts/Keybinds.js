@@ -2,7 +2,7 @@
 KeyBindJSEvents.modify(event => {
   const none = GLFW.GLFW_KEY_UNKNOWN;
   /**
-   * Put your keybinds here. If you want to remove a keybind, set it to null.
+   * Put your keybinds here.
    * @type {Object.<string, {key?: number, modifier?: $KeyModifier_, category?: string}>}
    */
   const keys = {
@@ -11,20 +11,20 @@ KeyBindJSEvents.modify(event => {
     'key.the_bumblezone.beehemoth_down': { category: 'key.categories.movement' },
 
     // Inventory
-    'key.trashslot.toggle': { key: GLFW.GLFW_KEY_PERIOD, category: 'key.categories.inventory' },
-    'key.trashslot.toggle_lock': { category: 'key.categories.inventory' },
-    'key.trashslot.delete': { category: 'key.categories.inventory' },
-    'key.trashslot.delete_all': { category: 'key.categories.inventory' },
+    'key.trashslot.toggle': { key: GLFW.GLFW_KEY_PERIOD, category: 'key.categories.inventory', mod: 'minecraft' },
+    'key.trashslot.toggle_lock': { category: 'key.categories.inventory', mod: 'minecraft' },
+    'key.trashslot.delete': { category: 'key.categories.inventory', mod: 'minecraft' },
+    'key.trashslot.delete_all': { category: 'key.categories.inventory', mod: 'minecraft' },
 
     // Creative Mode
-    'key.loadToolbarActivator': { key: none },
-    'key.saveToolbarActivator': { key: none },
+    'key.loadToolbarActivator': { key: none, mod: 'minecraft' },
+    'key.saveToolbarActivator': { key: none, mod: 'minecraft' },
 
     // Multiplayer
-    'key.command': { key: none },
-    'key.socialInteractions': { key: none },
+    'key.command': { key: none, mod: 'minecraft' },
+    'key.socialInteractions': { key: none, mod: 'minecraft' },
     'key.showcaseitem.showcaseitem': { key: GLFW.GLFW_KEY_T, modifier: 'shift', category: 'key.categories.multiplayer' },
-    Toggle: { key: GLFW.GLFW_KEY_U, category: 'key.categories.multiplayer' },
+    Toggle: { key: GLFW.GLFW_KEY_U, category: 'key.categories.multiplayer', mod: 'chattoggle' },
 
     // Miscellaneous
     'key.toastcontrol.clear': { category: 'key.categories.misc' },
@@ -33,7 +33,7 @@ KeyBindJSEvents.modify(event => {
     'key.puffish_skills.open': { category: 'key.categories.misc' },
     'key.lighty.enable': { key: GLFW.GLFW_KEY_F8, category: 'key.categories.misc' },
     'key.lighty.toggle': { key: GLFW.GLFW_KEY_F7, category: 'key.categories.misc' },
-    'key.open_muffler_gui': { category: 'key.categories.misc' },
+    'key.open_muffler_gui': { category: 'key.categories.misc', mod: 'extremesoundmuffler' },
 
     // Building
     // 'key.bridgingmod.toggle_bridging': { category: 'category.craftoria.building' },
@@ -52,14 +52,14 @@ KeyBindJSEvents.modify(event => {
     'ponder.keyinfo.ponder': { category: 'category.craftoria.guides' },
     'keybind.advancedperipherals.description': { category: 'category.craftoria.guides' },
     'key.ars_nouveau.open_documentation': { category: 'category.craftoria.guides' },
-    'key.openManual': { category: 'category.craftoria.guides' },
+    'key.openManual': { category: 'category.craftoria.guides', mod: 'mcjtylib' },
 
     // Curios
     'key.curios.open.desc': { key: none },
     'key.hostilenetworks.open_deep_learner': { key: none, category: 'key.curios.category' },
     'simplemagnets.keys.toggle': { modifier: 'shift', category: 'key.curios.category' },
     'keybind.reliquary.fortune_coin': { key: none, category: 'key.curios.category' },
-    'key.actualladditions.crafting_stick_open.desc': { key: none, category: 'key.curios.category' },
+    'key.actualladditions.crafting_stick_open.desc': { key: none, category: 'key.curios.category', mod: 'actuallyadditions' },
     'key.ars_nouveau.head_curio_hotkey': { key: none, category: 'key.curios.category' },
     'key.ars_elemental.open_pouch': { key: none, category: 'key.curios.category' },
     'supplementaries.keybind.quiver': { key: none, category: 'key.curios.category' },
@@ -111,19 +111,29 @@ KeyBindJSEvents.modify(event => {
     'framedblocks.key.wipe_cache': { key: none },
 
     // Removed keybinds
-    'key.apotheosis.compare_equipment': null,
-    'key.apotheosis.link_item_to_chat': null,
-    'key.modmenu.open_menu': null,
-    'key.modernfix.config': null,
-    'artifacts.key.night_vision_goggles.toggle': null,
-    'artifacts.key.helium_flamingo.activate': null,
-    'artifacts.key.universal_attractor.toggle': null,
-    'key.kubejs.kubedex': null,
-    'nolijium.toggle_light_level_overlay': null,
+    'key.apotheosis.compare_equipment': { remove: true },
+    'key.apotheosis.link_item_to_chat': { remove: true },
+    'key.modmenu.open_menu': { remove: true, mod: 'mod_menu' },
+    'key.modernfix.config': { remove: true },
+    'artifacts.key.night_vision_goggles.toggle': { remove: true },
+    'artifacts.key.helium_flamingo.activate': { remove: true },
+    'artifacts.key.universal_attractor.toggle': { remove: true },
+    'key.kubejs.kubedex': { remove: true },
+    'nolijium.toggle_light_level_overlay': { remove: true },
   };
 
   for (let [k, v] of Object.entries(keys)) {
-    if (v != null) {
+    /** @type {Array<string>} */
+    let keyParts = k.split('.');
+    let mod = v.mod ?? keyParts.find(part => global.modList.contains(part));
+    let isModLoaded = global.modList.contains(mod);
+    if (!isModLoaded) {
+      // Skip if the mod is not loaded, to avoid errors.
+      console.log(`Skipping: ${k} -> ${v} (${mod} not loaded)`);
+      continue;
+    }
+
+    if (!v.remove) {
       if (v.key) {
         console.log(`Keybind: ${k} -> ${v.key}`);
         event.modifyKey(k, v.key);
