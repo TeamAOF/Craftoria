@@ -1,5 +1,6 @@
 // requires: keybindjs
 KeyBindJSEvents.modify(event => {
+  const none = GLFW.GLFW_KEY_UNKNOWN;
   /**
    * Put your keybinds here. If you want to remove a keybind, set it to null.
    * @type {Object.<string, {key?: number, modifier?: $KeyModifier_, category?: string}>}
@@ -16,51 +17,60 @@ KeyBindJSEvents.modify(event => {
     'key.trashslot.delete_all': { category: 'key.categories.inventory' },
 
     // Creative Mode
-    'key.loadToolbarActivator': { key: GLFW.GLFW_KEY_UNKNOWN },
-    'key.saveToolbarActivator': { key: GLFW.GLFW_KEY_UNKNOWN },
+    'key.loadToolbarActivator': { key: none },
+    'key.saveToolbarActivator': { key: none },
 
     // Multiplayer
-    'key.command': { key: GLFW.GLFW_KEY_UNKNOWN },
-    'key.socialInteractions': { key: GLFW.GLFW_KEY_UNKNOWN },
+    'key.command': { key: none },
+    'key.socialInteractions': { key: none },
     'key.showcaseitem.showcaseitem': { key: GLFW.GLFW_KEY_T, modifier: 'shift', category: 'key.categories.multiplayer' },
     Toggle: { key: GLFW.GLFW_KEY_U, category: 'key.categories.multiplayer' },
 
     // Miscellaneous
     'key.toastcontrol.clear': { category: 'key.categories.misc' },
     'key.stickit.place': { category: 'key.categories.misc' },
-    'desc.seasonhud.keybind.options': { key: GLFW.GLFW_KEY_UNKNOWN, category: 'key.categories.misc' },
+    'desc.seasonhud.keybind.options': { key: none, category: 'key.categories.misc' },
     'key.puffish_skills.open': { category: 'key.categories.misc' },
     'key.lighty.enable': { key: GLFW.GLFW_KEY_F8, category: 'key.categories.misc' },
     'key.lighty.toggle': { key: GLFW.GLFW_KEY_F7, category: 'key.categories.misc' },
     'key.open_muffler_gui': { category: 'key.categories.misc' },
 
-    // Ars Nouveau
+    // Building
+    // 'key.bridgingmod.toggle_bridging': { category: 'category.craftoria.building' },
+
+    // Tools
+    'mininggadgets.text.open_gui': { category: 'category.craftoria.tools' },
+    'justdirethings.key.toolUI': { category: 'category.craftoria.tools' },
+    'justdirethings.key.toggle_tool': { category: 'category.craftoria.tools' },
+    // 'key.modern_industrialization.toggle_3x3': { category: 'category.craftoria.tools' },
 
     // Applied Energistics 2
-    'key.extendedae.viewpattern': { key: GLFW.GLFW_KEY_UNKNOWN, category: 'key.ae2.category' },
+    'key.extendedae.viewpattern': { key: none, category: 'key.ae2.category' },
 
     // Guides
     'key.guideme.guide': { category: 'category.craftoria.guides' },
     'ponder.keyinfo.ponder': { category: 'category.craftoria.guides' },
     'keybind.advancedperipherals.description': { category: 'category.craftoria.guides' },
     'key.ars_nouveau.open_documentation': { category: 'category.craftoria.guides' },
+    'key.openManual': { category: 'category.craftoria.guides' },
 
     // Curios
-    'key.curios.open.desc': { key: GLFW.GLFW_KEY_UNKNOWN },
-    'key.hostilenetworks.open_deep_learner': { key: GLFW.GLFW_KEY_UNKNOWN, category: 'key.curios.category' },
+    'key.curios.open.desc': { key: none },
+    'key.hostilenetworks.open_deep_learner': { key: none, category: 'key.curios.category' },
     'simplemagnets.keys.toggle': { modifier: 'shift', category: 'key.curios.category' },
-    'keybind.reliquary.fortune_coin': { key: GLFW.GLFW_KEY_UNKNOWN, category: 'key.curios.category' },
-    'key.actualladditions.crafting_stick_open.desc': { key: GLFW.GLFW_KEY_UNKNOWN, category: 'key.curios.category' },
-    'key.ars_nouveau.head_curio_hotkey': { key: GLFW.GLFW_KEY_UNKNOWN, category: 'key.curios.category' },
-    'key.ars_elemental.open_pouch': { key: GLFW.GLFW_KEY_UNKNOWN, category: 'key.curios.category' },
+    'keybind.reliquary.fortune_coin': { key: none, category: 'key.curios.category' },
+    'key.actualladditions.crafting_stick_open.desc': { key: none, category: 'key.curios.category' },
+    'key.ars_nouveau.head_curio_hotkey': { key: none, category: 'key.curios.category' },
+    'key.ars_elemental.open_pouch': { key: none, category: 'key.curios.category' },
+    'supplementaries.keybind.quiver': { key: none, category: 'key.curios.category' },
 
     // Placebo
-    'placebo.toggleTrails': { key: GLFW.GLFW_KEY_UNKNOWN },
-    'placebo.toggleWings': { key: GLFW.GLFW_KEY_UNKNOWN },
+    'placebo.toggleTrails': { key: none },
+    'placebo.toggleWings': { key: none },
 
     // Deeper & Darker
-    'key.deeperdarker.boost': { key: GLFW.GLFW_KEY_UNKNOWN },
-    'key.deeperdarker.transmit': { key: GLFW.GLFW_KEY_UNKNOWN },
+    'key.deeperdarker.boost': { key: none },
+    'key.deeperdarker.transmit': { key: none },
 
     // FTB
     'key.ftbchunks.claim_manager': { category: 'category.craftoria.ftb' },
@@ -74,23 +84,31 @@ KeyBindJSEvents.modify(event => {
     'key.ftbteams.open_gui': { category: 'category.craftoria.ftb' },
 
     // Jade
-    'key.jade.narrate': { key: GLFW.GLFW_KEY_UNKNOWN },
-    'key.jade.config': { key: GLFW.GLFW_KEY_UNKNOWN },
-    'key.jade.show_overlay': { key: GLFW.GLFW_KEY_UNKNOWN },
-    'key.jade.show_recipes': { key: GLFW.GLFW_KEY_UNKNOWN },
-    'key.jade.show_uses': { key: GLFW.GLFW_KEY_UNKNOWN },
-    'key.jade.toggle_liquid': { key: GLFW.GLFW_KEY_UNKNOWN },
+    'key.jade.narrate': { key: none },
+    'key.jade.config': { key: none },
+    'key.jade.show_overlay': { key: none },
+    'key.jade.show_recipes': { key: none },
+    'key.jade.show_uses': { key: none },
+    'key.jade.toggle_liquid': { key: none },
 
     // Mekanism
     'key.gmut.vertical_speed': { category: 'constants.mekanism.mod_name' },
 
     // SFM
-    'key.sfm.item_inspector.activation_key': { key: GLFW.GLFW_KEY_UNKNOWN },
+    'key.sfm.item_inspector.activation_key': { key: none },
 
     // Sophisticated Backpacks
-    'keybind.sophisticatedbackpacks.toggle_upgrade_1': { key: GLFW.GLFW_KEY_UNKNOWN, modifier: 'none' },
-    'keybind.sophisticatedbackpacks.toggle_upgrade_2': { key: GLFW.GLFW_KEY_UNKNOWN, modifier: 'none' },
+    'keybind.sophisticatedbackpacks.toggle_upgrade_1': { key: none, modifier: 'none' },
+    'keybind.sophisticatedbackpacks.toggle_upgrade_2': { key: none, modifier: 'none' },
     'keybind.sophisticatedstorage.sort': { category: 'keybind.sophisticatedbackpacks.category' },
+
+    // Iris
+    'iris.keybind.reload': { key: none },
+    'iris.keybind.shaderPackSelection': { key: none },
+    'iris.keybind.toggleShaders': { key: none },
+
+    // FramedBlocks
+    'framedblocks.key.wipe_cache': { key: none },
 
     // Removed keybinds
     'key.apotheosis.compare_equipment': null,

@@ -1,5 +1,5 @@
 ClientEvents.lang('en_us', e => {
-  /** @type {Object.<string, string>} */
+  /** @type {Object.<Special.LangKey, string>} */
   let langEntries = {
     'lef_tier.extended_industrialization.modern_industrialization.superconductor_coil': 'Superconductor',
     'rei_categories.modern_industrialization.electric_blast_furnace_superconductor_coil': 'EBF (Superconductor Tier)',
@@ -28,6 +28,8 @@ ClientEvents.lang('en_us', e => {
     'chemical.mekanism_extras.spectrum': 'Spectrum',
 
     // Keybinds
+    'category.craftoria.building': 'Building',
+    'category.craftoria.tools': 'Tools',
     'category.craftoria.guides': 'Guides',
     'category.craftoria.ftb': 'FTB',
     'key.excavein.excavein.modifier.none': '[Modifier] None',
@@ -56,49 +58,38 @@ ClientEvents.lang('en_us', e => {
     'key.lighty.enable': '[Lighty] Open Light Overlay Menu',
     'key.lighty.toggle': '[Lighty] Toggle Light Overlay',
     'key.ars_nouveau.head_curio_hotkey': '[Ars] Head Curio Menu',
+    'key.extendedae.viewpattern': '[ExAE] View Pattern',
+    'justdirethings.key.toggle_tool': '[JDT] Toggle Tool Abilities',
+    'justdirethings.key.toolUI': '[JDT] Open Tool Settings',
+    'mininggadgets.text.open_gui': '[Mining Gadgets] Open Gadget Settings',
   };
 
   // Adding custom MI machines to lang entries
   global.customMIMachines.forEach(machine => {
-    let langValue = machine.id.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    let langKey = `${machine.mod ?? 'modern_industrialization'}.${machine.id}`;
     if (machine.lang) {
-      let langKey = `${machine.mod ?? 'modern_industrialization'}.${machine.id}`;
       for (const [key, value] of Object.entries(machine.lang)) {
         langEntries[`${key}.${langKey}`] = value;
       }
     } else {
-      let langKey = `block.${machine.mod ?? 'modern_industrialization'}.${machine.id}`;
-      langEntries[langKey] = langValue;
+      let langValue = machine.id.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      langEntries[`block.${langKey}`] = langValue;
     }
+  });
+
+  const modList = [];
+  Platform.getMods().forEach(mod => {
+    modList.push(mod);
   });
 
   for (const [k, v] of Object.entries(langEntries)) {
     /** @type {Array<string>} */
     let langParts = k.split('.');
-    let mod = langParts[1];
-    let isItem = langParts[0] === 'item';
-    let isBlock = langParts[0] === 'block';
-    let isOther;
-    switch (langParts[0]) {
-      case 'chemical':
-      case 'key':
-      case 'keybind':
-      case 'keybinds':
-        isOther = true;
-        break;
-      default:
-        isOther = false;
-    }
-
-    if (isItem || isBlock) {
-      let id = langParts.slice(1).join('.').replace(/\./, ':');
-      if (isItem) e.renameItem(id, v);
-      else e.renameBlock(id, v);
-    } else if (isOther) {
-      e.add(mod, k, v);
-    } else e.add('craftoria', k, v);
+    let mod = langParts.find(part => modList.includes(part));
+    e.add(mod, k, v);
   }
 
-  // Special case for this, wth is this translation key????
+  // Special cases
   e.add('chattoggle', 'Toggle', 'Toggle Team Chat');
+  e.add('mcjtylib', 'key.openManual', '[RFTools] Open Manual');
 });
