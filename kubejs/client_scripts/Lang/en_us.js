@@ -81,7 +81,7 @@ ClientEvents.lang('en_us', e => {
     /** @type {Array<string>} */
     let langParts = k.split('.');
     let mod = langParts.find(part => global.modList.contains(part));
-    console.log(`${mod} ${k} -> ${v}`);
+    // console.log(`${mod} ${k} -> ${v}`);
     e.add(mod, k, v);
   }
 
