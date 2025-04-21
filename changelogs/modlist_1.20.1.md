@@ -103,7 +103,6 @@
   * [cookingforblockheads-neoforge-1.21.1-21.1.13.jar](https://www.curseforge.com/minecraft/mc-mods/cooking-for-blockheads/files/6446777) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
   * [Corgilib-NeoForge-1.21.1-5.0.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/corgilib/files/6002859) (by [Corgi_Taco](https://www.curseforge.com/members/Corgi_Taco/projects))
   * [coroutil-neoforge-1.21.0-1.3.8.jar](https://www.curseforge.com/minecraft/mc-mods/coroutil/files/5622966) (by [Corosus](https://www.curseforge.com/members/Corosus/projects))
-  * [couplings-neoforge-1.21.1-1.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/couplings-revamped/files/6300140) (by [ryankshah](https://www.curseforge.com/members/ryankshah/projects))
   * [craftingstation-neoforge-1.21-2.jar](https://www.curseforge.com/minecraft/mc-mods/crafting-station/files/5569165) (by [tfarecnim](https://www.curseforge.com/members/tfarecnim/projects))
   * [craftingtweaks-neoforge-1.21.1-21.1.5.jar](https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks/files/6023041) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
   * [craftoria_core-0.3.0.jar](https://www.curseforge.com/minecraft/mc-mods/craftoria-core/files/6446543) (by [WhitePhantom](https://www.curseforge.com/members/WhitePhantom/projects))

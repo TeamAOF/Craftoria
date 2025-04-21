@@ -5,6 +5,11 @@ _NeoForge Loader 21.1.160_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
 ### Bug Fixes 🪲
 
 * Fixed skills not loading properly.
+* Potentially fix a crash when villagers interact with doors.
+
+### Removed Mods ❌
+
+  * [Couplings Revamped](https://www.curseforge.com/minecraft/mc-mods/couplings-revamped)
 ---
 
 ## Craftoria | v1.20.0
