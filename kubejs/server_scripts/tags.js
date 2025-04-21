@@ -145,7 +145,7 @@ ServerEvents.tags('block', e => {
   ]);
 
   e.add('ae2:blacklisted/spatial', ['justdirethings:time_crystal_budding_block']);
-  e.add('mekanism:cardboard_blacklist', ['justdirethings:time_crystal_budding_block']);
+  e.add('mekanism:cardboard_blacklist', ['justdirethings:time_crystal_budding_block', '@waystones']);
 
   Color.DYE.forEach(color => {
     e.add('c:glass_blocks', `#chipped:${color}_stained_glass`);
@@ -175,7 +175,7 @@ ServerEvents.tags('block', e => {
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
 
-  e.add('sereneseasons:greenhouse_glass', ['#minecraft:glass_blocks', 'actuallyadditions:greenhouse_glass']);
+  e.add('sereneseasons:greenhouse_glass', ['#minecraft:glass_blocks', /glass$/]);
 
   // Block tags for quest usage
   e.add('craftoria:ae2_buddings', /^ae2:.*_budding_quartz/);

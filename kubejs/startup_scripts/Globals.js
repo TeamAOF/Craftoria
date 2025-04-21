@@ -6,6 +6,8 @@
  */
 global.devEnv = false;
 
+global.modList = Platform.getMods().keySet();
+
 /**
  * The list of custom MI machines to generate assets/data for. (Models, sounds, tags, etc.)
  * Possible values for each machine:
