@@ -1,3 +1,36 @@
+## Craftoria | v1.19.1
+
+_NeoForge Loader 21.1.147_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.19.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.19.1.md)_
+
+### Changes/Improvements ⭐
+
+* Buffed Budding Incubator recipes ``Phantom``
+* Added ars technica xp gems -> xp fluid recipes to MI + ID ``Phantom``
+* Corrected MI armor HUD positions overlapping with others ``Phantom``
+* Added uraninite conversion to uranium with chemical reactor ``DVOA1``
+* Changed default keybind of team chat toggle from Y to U ``AK``
+* Changed default keybind of showcase item from SHIFT + X to SHIFT + T ``AK``
+* Grouped modded keybinds into categories ``Phantom``
+* Lowered max mekanism upgrades from 32 to 16 ``Phantom``
+* Added waystones to cardboard box blacklist ``Phantom``
+
+### Bug Fixes 🪲
+
+* Fixed Sophisticated Storage Upgrade unification not loading on first world join.
+* Fixed sophisticated hopper upgrade not being craftable.
+* Fixed crashes with cataclysm summoner spells.
+* Fixed soph storage input output and io recipes.
+* Fixed an issue where showcased items wouldnt show icon if chat not open.
+* Fixed large configurable chest item output overlay not being visible.
+
+### Added Mods ✅
+
+* 
+
+### Removed Mods ❌
+* 
+---
+
 ## Craftoria | v1.19.0
 
 _NeoForge Loader 21.1.147_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.19.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.19.0.md)_
