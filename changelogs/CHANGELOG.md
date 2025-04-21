@@ -25,10 +25,20 @@ _NeoForge Loader 21.1.147_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
 
 ### Added Mods ✅
 
-* 
+  * [Apotheosis x Iron's Spellbooks Compat](https://www.curseforge.com/minecraft/mc-mods/apotheosis-x-irons-spellbooks-compat)
+  * [Couplings Revamped](https://www.curseforge.com/minecraft/mc-mods/couplings-revamped)
+  * [Craftoria Core](https://www.curseforge.com/minecraft/mc-mods/craftoria-core)
+  * [Iron's Spells 'n Spellbooks Dynamic Skill Trees](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks-dynamic-skill-trees)
+  * [KeyBindJS](https://www.curseforge.com/minecraft/mc-mods/keybindjs)
+  * [QoM: Excavein](https://www.curseforge.com/minecraft/mc-mods/excavein)
 
 ### Removed Mods ❌
-* 
+
+  * [Create: Trading Floor](https://www.curseforge.com/minecraft/mc-mods/create-trading-floor) (Performance Issues)
+  * [FTB Ultimine (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge) (Replaced)
+  * [My Nether's Delight](https://www.curseforge.com/minecraft/mc-mods/my-nethers-delight) (Too Outdated)
+  * [Storage No Poof](https://www.curseforge.com/minecraft/mc-mods/storage-no-poof) (Not needed anymore)
+  * [Unofficial Iron's Spells 'n Spellbooks Skill Tree](https://www.curseforge.com/minecraft/mc-mods/unofficial-irons-spells-n-spellbooks-skill-tree) (Replaced)
 ---
 
 ## Craftoria | v1.19.0
