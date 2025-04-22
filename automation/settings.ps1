@@ -92,7 +92,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"ae2/client.json", 
 	"iris.properties",
 	"ae2-client.toml",
-	"voicechat"
+	"voicechat",
+	"nolijium.json5"
 	)
 
 # Accepts directories
