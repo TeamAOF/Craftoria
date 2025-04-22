@@ -65,17 +65,16 @@ ClientEvents.lang('en_us', e => {
   };
 
   // Adding custom MI machines to lang entries
-  global.customMIMachines.forEach(machine => {
-    let langKey = `${machine.mod ?? 'modern_industrialization'}.${machine.id}`;
+  for (let [id, machine] of Object.entries(global.customMIMachines)) {
+    let langKey = `${machine.mod ?? 'modern_industrialization'}.${id}`;
     if (machine.lang) {
-      for (const [key, value] of Object.entries(machine.lang)) {
+      for (let [key, value] of Object.entries(machine.lang)) {
         langEntries[`${key}.${langKey}`] = value;
       }
     } else {
-      let langValue = machine.id.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-      langEntries[`block.${langKey}`] = langValue;
+      langEntries[`block.${langKey}`] = machine.name;
     }
-  });
+  }
 
   for (const [k, v] of Object.entries(langEntries)) {
     /** @type {Array<string>} */
