@@ -1,14 +1,14 @@
 ServerEvents.tags('block', e => {
-  global.customMIMachines.forEach(machine => {
-    e.add('minecraft:mineable/pickaxe', `modern_industrialization:${machine.id}`);
-    e.add('minecraft:needs_stone_tool', `modern_industrialization:${machine.id}`);
-  });
+  for (let [id, machine] of Object.entries(global.customMIMachines)) {
+    let block = `${machine.mod ?? 'modern_industrialization'}:${id}`;
+    e.add('minecraft:mineable/pickaxe', block);
+    e.add('minecraft:needs_stone_tool', block);
+  }
 });
 
 LootJS.lootTables(e => {
-  global.customMIMachines.forEach(machine => {
-    e.create(`${machine.mod ?? 'modern_industrialization'}:blocks/${machine.id}`)
-      .createPool()
-      .addEntry(`${machine.mod ?? 'modern_industrialization'}:${machine.id}`);
-  });
+  for (let [id, machine] of Object.entries(global.customMIMachines)) {
+    let block = `${machine.mod ?? 'modern_industrialization'}:${id}`;
+    e.create(block, 'block').firstPool().addEntry(block);
+  }
 });

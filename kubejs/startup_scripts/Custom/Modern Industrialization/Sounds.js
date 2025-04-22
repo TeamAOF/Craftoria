@@ -7,11 +7,11 @@ MISoundAddons.modifySounds(e => {
     brewery: 71,
   };
 
-  global.customMIMachines.forEach(machine => {
+  for (let [id, machine] of Object.entries(global.customMIMachines)) {
     if (machine.sound && machine.soundDuration) {
-      duration[machine.id] = machine.soundDuration;
+      duration[id] = machine.soundDuration;
     }
-  });
+  }
 
   Object.keys(duration).forEach(key => {
     e.modifyDuration(key, duration[key]);
