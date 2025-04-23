@@ -60,11 +60,15 @@ const customMIMachines = {
   //   mod: 'mi_tweaks',
   //   casing: 'plasma_handling_iridium_machine_casing',
   // },
-  // batch_budding_incubator: {
-  //   name: 'Budding Incubator',
-  //   casing: 'sky_stone_brick_casing',
-  //   mod: 'mi_tweaks',
-  // },
+  batch_budding_incubator: {
+    name: 'Budding Incubator',
+    casing: 'sky_stone_brick_casing',
+    mod: 'mi_tweaks',
+    default_overlays: {
+      front: 'modern_industrialization:block/machines/budding_incubator/overlay_front',
+      front_active: 'modern_industrialization:block/machines/budding_incubator/overlay_front_active',
+    },
+  },
 };
 
 global.customMIMachines = customMIMachines;

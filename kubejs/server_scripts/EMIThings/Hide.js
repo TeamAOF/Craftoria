@@ -10,9 +10,11 @@ RecipeViewerEvents.removeEntries('item', event => {
     event.remove(item);
   });
 
-  disabledItems.forEach((item) => {
+  disabledItems.forEach(item => {
     event.remove(item.id);
   });
+
+  event.remove('modern_industrialization:budding_incubator');
 });
 
 RecipeViewerEvents.removeEntriesCompletely('item', event => {
@@ -25,6 +27,8 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
       Ingredient.of(`apotheosis:potion_charm[potion_contents={potion:"${potion}"}]`),
     ]);
   });
+
+  event.remove(Ingredient.of('@displaydelight').except(['displaydelight:food_plate', 'displaydelight:small_food_plate']));
 });
 
 RecipeViewerEvents.removeCategories(e => {

@@ -73,6 +73,7 @@ ClientEvents.lang('en_us', e => {
       }
     } else {
       langEntries[`block.${langKey}`] = machine.name;
+      langEntries[`rei_categories.${langKey}`] = machine.name;
     }
   }
 

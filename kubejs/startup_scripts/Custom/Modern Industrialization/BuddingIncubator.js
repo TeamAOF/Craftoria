@@ -41,37 +41,37 @@ MIMachineEvents.registerMachines(event => {
   );
 });
 
-// MITweaksMachineEvents.registerBatchMultiblocks(event => {
-//   const noHatch = event.noHatch();
-//   const buddingIncubatorhatch = event.hatchOf('fluid_input', 'item_output', 'energy_input');
-//   const accelerator = event.memberOfBlock('ae2:growth_accelerator');
-//   const glassSlab = event.memberOfBlock('glassential:glass_slab');
-//   const brick = event.memberOfBlock('ae2:sky_stone_brick');
+MITweaksMachineEvents.registerBatchMultiblocks(event => {
+  const noHatch = event.noHatch();
+  const buddingIncubatorhatch = event.hatchOf('fluid_input', 'item_output', 'energy_input');
+  const accelerator = event.memberOfBlock('ae2:growth_accelerator');
+  const glassSlab = event.memberOfBlock('glassential:glass_slab');
+  const brick = event.memberOfBlock('ae2:sky_stone_brick');
 
-//   const buddingIncubatorShape = event
-//     .layeredShape('modern_industrialization:sky_stone_brick_casing', [
-//       ['HHH', 'BAB', 'GGG'],
-//       ['HHH', 'A A', 'GGG'],
-//       ['H#H', 'BAB', 'GGG'],
-//     ])
-//     .key('H', brick, buddingIncubatorhatch)
-//     .key('B', brick, noHatch)
-//     .key('A', accelerator, noHatch)
-//     .key('G', glassSlab, noHatch)
-//     .build();
+  const buddingIncubatorShape = event
+    .layeredShape('modern_industrialization:sky_stone_brick_casing', [
+      ['HHH', 'BAB', 'GGG'],
+      ['HHH', 'A A', 'GGG'],
+      ['H#H', 'BAB', 'GGG'],
+    ])
+    .key('H', brick, buddingIncubatorhatch)
+    .key('B', brick, noHatch)
+    .key('A', accelerator, noHatch)
+    .key('G', glassSlab, noHatch)
+    .build();
 
-//   event.electric(
-//     'Budding Incubator',
-//     'batch_budding_incubator',
-//     BUDDING_INCUBATOR,
-//     buddingIncubatorShape,
-//     workStations => workStations.add('modern_industrialization:budding_incubator'),
-//     'modern_industrialization:sky_stone_brick_casing',
-//     'budding_incubator',
-//     true,
-//     false,
-//     false,
-//     16,
-//     0.75
-//   );
-// });
+  event.electric(
+    'Budding Incubator',
+    'batch_budding_incubator',
+    BUDDING_INCUBATOR,
+    buddingIncubatorShape,
+    workStations => workStations.add('modern_industrialization:budding_incubator'),
+    'modern_industrialization:sky_stone_brick_casing',
+    'budding_incubator',
+    true,
+    false,
+    false,
+    8,
+    0.75
+  );
+});
