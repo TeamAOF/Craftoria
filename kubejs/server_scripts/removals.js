@@ -56,8 +56,10 @@ ServerEvents.recipes(event => {
   });
 
   disabledItems.forEach(item => {
-    if (item.altId) event.replaceInput({ input: item.id }, item.id, item.altId);
-    else event.remove({ output: item.id });
+    if (item.altId) {
+      event.replaceInput({ input: item.id }, item.id, item.altId);
+      event.remove({ output: item.id });
+    } else event.remove({ output: item.id });
   });
 });
 
