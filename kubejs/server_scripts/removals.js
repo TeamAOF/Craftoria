@@ -38,6 +38,7 @@ ServerEvents.recipes(event => {
     'modern_industrialization:materials/uranium/blast_furnace/dust',
     'supplementaries:sus_gravel',
     'supplementaries:sus_sand',
+    'mekanism:sawing/torch',
   ];
 
   /** @type {Special.Item[]} */
