@@ -31,4 +31,5 @@ ItemEvents.modifyTooltips(e => {
     Text.lightPurple('Can be found in the Starlight dimension within the Crystalized biomes.'),
   ]);
   e.add('modern_industrialization:budding_incubator', [Text.red('Deprecated. You can convert it to the new one in your crafting grid.')]);
+  e.add('modern_industrialization:nuke', Text.darkGray("No, it won't explode."));
 });
