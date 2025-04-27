@@ -168,9 +168,10 @@ ServerEvents.tags('block', e => {
     'hostilenetworks:sim_chamber',
     'hostilenetworks:loot_fabricator',
     'ars_additions:ender_source_jar',
+    'animal_pen:aquarium_block',
   ]);
 
-  e.add('minecraft:mineable/axe', ['mekanism:cardboard_box']);
+  e.add('minecraft:mineable/axe', ['mekanism:cardboard_box', '#animal_pen:animal_pens']);
 
   e.add('minecraft:storage_blocks/quartz', 'minecraft:quartz_block');
 
