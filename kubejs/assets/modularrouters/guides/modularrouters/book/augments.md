@@ -7,4 +7,6 @@ navigation:
 
 # Augments
 
+Module Augments can be installed in Modules to enhance or extend their functionality
+
 <SubPages />

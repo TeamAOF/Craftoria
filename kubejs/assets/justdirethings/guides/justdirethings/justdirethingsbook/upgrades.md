@@ -7,4 +7,6 @@ navigation:
 
 # Upgrades
 
+Armor and Tools can both accept upgrades, which are detailed here.
+
 <SubPages />

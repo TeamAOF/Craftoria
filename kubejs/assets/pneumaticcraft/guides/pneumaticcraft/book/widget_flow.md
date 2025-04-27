@@ -8,4 +8,6 @@ navigation:
 
 # Flow Control Widgets
 
+Widgets that affect the program flow.
+
 <SubPages />

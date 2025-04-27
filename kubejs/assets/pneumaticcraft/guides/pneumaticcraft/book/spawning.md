@@ -7,4 +7,6 @@ navigation:
 
 # Mob Spawning
 
+Some machines and gadgets for controlled spawning of mobs.
+
 <SubPages />

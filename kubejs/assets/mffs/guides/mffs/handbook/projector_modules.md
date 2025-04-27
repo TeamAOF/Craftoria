@@ -7,4 +7,6 @@ navigation:
 
 # Projector Modules
 
+Available upgrade modules for your Force Field Projector.
+
 <SubPages />

@@ -7,4 +7,6 @@ navigation:
 
 # Tools
 
+Each of the tools has a bunch of cool abilities - some assembly required!
+
 <SubPages />

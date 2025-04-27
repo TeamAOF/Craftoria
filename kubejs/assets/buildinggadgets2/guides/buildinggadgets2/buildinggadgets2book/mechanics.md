@@ -7,4 +7,6 @@ navigation:
 
 # Mechanics
 
+Stuff you can do besides build
+
 <SubPages />

@@ -7,4 +7,6 @@ navigation:
 
 # Upgrade Modules
 
+Universally available upgrade modules for your Force Field machines.
+
 <SubPages />

@@ -7,4 +7,6 @@ navigation:
 
 # Using your tools
 
+Your hands are your best tool
+
 <SubPages />

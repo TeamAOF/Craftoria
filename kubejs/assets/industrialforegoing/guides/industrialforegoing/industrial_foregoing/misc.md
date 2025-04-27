@@ -7,4 +7,6 @@ navigation:
 
 # Misc
 
+Random stuff
+
 <SubPages />

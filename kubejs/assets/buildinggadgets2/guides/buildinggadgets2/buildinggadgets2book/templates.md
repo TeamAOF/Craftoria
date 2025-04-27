@@ -7,4 +7,6 @@ navigation:
 
 # Templates
 
+How to use templates
+
 <SubPages />

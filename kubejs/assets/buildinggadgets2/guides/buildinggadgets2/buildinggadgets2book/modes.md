@@ -7,4 +7,6 @@ navigation:
 
 # Building Modes
 
+Different building modes for the gadgets
+
 <SubPages />

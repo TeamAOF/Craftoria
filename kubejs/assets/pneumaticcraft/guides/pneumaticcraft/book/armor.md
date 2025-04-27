@@ -7,4 +7,6 @@ navigation:
 
 # Pneumatic Armor
 
+A full suit of highly-upgradable armor with a wide range of powerful abilities.
+
 <SubPages />

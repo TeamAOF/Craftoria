@@ -7,4 +7,6 @@ navigation:
 
 # Interdiction Modules
 
+Available upgrade modules for your Interdiction Matrix.
+
 <SubPages />

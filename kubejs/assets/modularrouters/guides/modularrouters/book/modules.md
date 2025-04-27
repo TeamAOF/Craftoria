@@ -7,4 +7,6 @@ navigation:
 
 # Modules
 
+Modules are placed into a Modular Router and define the router's functionality.
+
 <SubPages />
