@@ -185,6 +185,7 @@ ServerEvents.tags('block', e => {
     'tesseract:tesseract',
     'tankstorage:tank_dock',
     'bankstorage:bank_dock',
+    'moderndynamics:machine_extender',
   ]);
 
   // Block tags for quest usage
