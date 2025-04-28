@@ -179,6 +179,14 @@ ServerEvents.tags('block', e => {
 
   e.add('sereneseasons:greenhouse_glass', ['#minecraft:glass_blocks', /glass$/]);
 
+  e.add('extended_industrialization:machine_chainer/linkable', [
+    '@functionalstorage',
+    'entangled:block',
+    'tesseract:tesseract',
+    'tankstorage:tank_dock',
+    'bankstorage:bank_dock',
+  ]);
+
   // Block tags for quest usage
   e.add('craftoria:ae2_buddings', /^ae2:.*_budding_quartz/);
   e.add('craftoria:exae_buddings', /^extendedae:entro_budding_/);
