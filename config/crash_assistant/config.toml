@@ -23,6 +23,9 @@
 	screenshot_of_gui_notice_animated_border = true
 	#Animate border to request user attention even more.
 	upload_all_animated_border = true
+	#Before uploading the first log, requires the user to accept the privacy policy.
+	#Disabling this option may be illegal in some countries if you are modpack creator. Disable at your own risk.
+	enable_privacy_policy_acceptance = true
 
 #Here you can change text of lang placeHolders.
 #Also you can change any text in lang files.
@@ -93,6 +96,8 @@
 	one_line_logs = true
 	#Adds line in log list about this Intel processor can be corrupted.
 	intel_corrupted_notification = true
+	#Puts problematic frame from hs_err to message.
+	put_problematic_frame_to_message = true
 
 [greeting]
 	#You don't need to touch this option.

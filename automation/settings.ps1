@@ -26,11 +26,11 @@ $MODPACK_NAME = "Craftoria"
 $CLIENT_NAME = "Craftoria"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.20.1"
+$MODPACK_VERSION = "1.20.2"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.20.0"
+$LAST_MODPACK_VERSION = "1.20.1"
 
 # Which modloader the modpack uses
 # Can be "forge" or "fabric"
@@ -84,7 +84,8 @@ $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @(
 	"shaderpacks",
 	"defaultconfigs",
 	"kubejs",
-	"emotes"
+	"emotes",
+	"version_info.json"
 	)
 
 $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
@@ -93,7 +94,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"iris.properties",
 	"ae2-client.toml",
 	"voicechat",
-	"nolijium.json5"
+	"nolijium.json5",
+	"ars_nouveau/search_index"
 	)
 
 # Accepts directories

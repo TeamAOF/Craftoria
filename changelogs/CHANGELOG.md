@@ -1,3 +1,28 @@
+## Craftoria | v1.20.2
+
+_NeoForge Loader 21.1.168_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.20.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.20.2.md)_
+
+### Changes/Improvements ⭐
+
+* Added quantum tier MI hatches ``Phantom``
+* Make (MD)machine extender work with (EI)machine chainers ``Phantom``
+* Added more linkable blocks to machine chainer ``Phantom``
+* Added oxidizing recipes for osmium ``Phantom``
+* Removed sawing torch recipe ``Phantom``
+* Removed cooldowns for excavein ``Phantom``
+* Added clarification tooltips for MI Nuke ``Phantom``
+* Lowered FoodExhaustionMultiplier for excavein from 2.0 to 1.2 ``Phantom``
+* Swapped to the default(linear) quest progression mode, flexible causes more trouble than it's worth ``Phantom``
+* Made the budding incubator into a batch crafter ``Phantom``
+* Added update available button to main menu ``DVOA1``
+
+### Added Mods ✅
+
+  * [Ars Controle](https://www.curseforge.com/minecraft/mc-mods/ars-controle)
+  * [Mekanism Curios](https://www.curseforge.com/minecraft/mc-mods/mekanism-curios)
+  * [MP-CCTweaked.](https://www.curseforge.com/minecraft/mc-mods/mp-cct)
+---
+
 ## Craftoria | v1.20.1
 
 _NeoForge Loader 21.1.160_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.20.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.20.1.md)_

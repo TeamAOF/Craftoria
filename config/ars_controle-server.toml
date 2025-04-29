@@ -1,0 +1,12 @@
+#Config for Warping Spell Prism
+[warping_spell_prism]
+	#Max Source cost of Warping Spell Prism (1 Source Jar = 10000 Source)
+	max_cost = -1
+	#The minimum distance before Warping Spell Prism costs Source
+	cost_min_distance = 1024
+	#Source Cost per block of Warping Spell Prism
+	cost_per_block = 0.03125
+	#Source Cost when crossing dimensions of Warping Spell Prism
+	dimension_cost = 2000
+	#How long the Warping Spell Prism will load chunks after a teleport in ticks
+	load_time = 600

@@ -7,35 +7,35 @@
 		#QIO Drivers
 		[tier.Items.qio_drivers]
 			#The number of items that the Absolute QIO Drive can store.
-			# Default: 128000000000
+			# Default: 512000000000
 			# Range: 1 ~ 9223372036854775807
 			absoluteCount = 128000000000
 			#The number of types that the Absolute QIO Drive can store.
-			# Default: 16384
+			# Default: 131072
 			# Range: > 1
 			absoluteTypes = 16384
 			#The number of items that the Supreme QIO Drive can store.
-			# Default: 1048000000000
+			# Default: 65536000000000
 			# Range: 1 ~ 9223372036854775807
 			supremeCount = 1048000000000
 			#The number of types that the Supreme QIO Drive can store.
-			# Default: 65536
+			# Default: 2097152
 			# Range: > 1
 			supremeTypes = 65536
 			#The number of items that the Cosmic QIO Drive can store.
-			# Default: 8000000000000
+			# Default: 33554432000000000
 			# Range: 1 ~ 9223372036854775807
 			cosmicCount = 8000000000000
 			#The number of types that the Cosmic QIO Drive can store.
-			# Default: 262144
+			# Default: 33554432
 			# Range: > 1
 			cosmicTypes = 262144
 			#The number of items that the Infinite QIO Drive can store.
-			# Default: 16000000000000
+			# Default: 9223372036854775807
 			# Range: 1 ~ 9223372036854775807
 			infiniteCount = 16000000000000
 			#The number of types that the Infinite QIO Drive can store.
-			# Default: 1048576
+			# Default: 2147483647
 			# Range: > 1
 			infiniteTypes = 1048576
 
@@ -45,11 +45,11 @@
 		#Bins
 		[tier.Storages.bins]
 			#The number of items Absolute bins can store.
-			# Default: 2097152
+			# Default: 1048576
 			# Range: > 1
 			absoluteStorage = 2097152
 			#The number of items Supreme bins can store.
-			# Default: 16777216
+			# Default: 8388608
 			# Range: > 1
 			supremeStorage = 16777216
 			#The number of items Cosmic bins can store.
@@ -57,7 +57,7 @@
 			# Range: > 1
 			cosmicStorage = 134217728
 			#The number of items Infinite bins can store.
-			# Default: 1073741824
+			# Default: 2147483647
 			# Range: > 1
 			infiniteStorage = 1073741824
 
@@ -169,35 +169,35 @@
 		#Chemical Tanks
 		[tier.Storages.chemical_tanks]
 			#Storage size of Absolute chemical tanks in mB.
-			# Default: 32768000
+			# Default: 131072000
 			# Range: 1 ~ 9223372036854775807
 			absoluteStorage = 32768000
 			#Output rate of Absolute chemical tanks in mB.
-			# Default: 2048000
+			# Default: 65536000
 			# Range: 1 ~ 9223372036854775807
 			absoluteOutput = 2048000
 			#Storage size of Supreme chemical tanks in mB.
-			# Default: 131072000
+			# Default: 4194304000
 			# Range: 1 ~ 9223372036854775807
 			supremeStorage = 131072000
 			#Output rate of Supreme chemical tanks in mB.
-			# Default: 8192000
+			# Default: 2097150000
 			# Range: 1 ~ 9223372036854775807
 			supremeOutput = 8192000
 			#Storage size of Cosmic chemical tanks in mB.
-			# Default: 524288000
+			# Default: 268435456000
 			# Range: 1 ~ 9223372036854775807
 			cosmicStorage = 524288000
 			#Output rate of Cosmic chemical tanks in mB.
-			# Default: 32768000
+			# Default: 134217728000
 			# Range: 1 ~ 9223372036854775807
 			cosmicOutput = 32768000
 			#Storage size of Infinite chemical tanks in mB.
-			# Default: 4194304000
+			# Default: 34359738368000
 			# Range: 1 ~ 9223372036854775807
 			infiniteStorage = 4194304000
 			#Output rate of Infinite chemical tanks in mB.
-			# Default: 131072000
+			# Default: 17179869184000
 			# Range: 1 ~ 9223372036854775807
 			infiniteOutput = 131072000
 
@@ -277,70 +277,70 @@
 		#Mechanical Pipes
 		[tier.transmitters.fluid]
 			#Capacity of Absolute Mechanical Pipe in mb.
-			# Default: 512000
+			# Default: 1024000
 			# Range: 1 ~ 9223372036854775807
 			absoluteMechanicalPipesCapacity = 512000
 			#Pump rate of Absolute Mechanical Pipe in mb.
-			# Default: 128000
+			# Default: 256000
 			# Range: 1 ~ 2147483647
 			absoluteMechanicalPipesPullAmount = 128000
 			#Capacity of Supreme Mechanical Pipe in mb.
-			# Default: 2048000
+			# Default: 8192000
 			# Range: 1 ~ 9223372036854775807
 			supremeMechanicalPipesCapacity = 2048000
 			#Pump rate of Supreme Mechanical Pipe in mb.
-			# Default: 512000
+			# Default: 2048000
 			# Range: 1 ~ 2147483647
 			supremeMechanicalPipesPullAmount = 512000
 			#Capacity of Cosmic Mechanical Pipe in mb.
-			# Default: 8192000
+			# Default: 65536000
 			# Range: 1 ~ 9223372036854775807
 			cosmicMechanicalPipesCapacity = 8192000
 			#Pump rate of Cosmic Mechanical Pipe in mb.
-			# Default: 2048000
+			# Default: 16384000
 			# Range: 1 ~ 2147483647
 			cosmicMechanicalPipesPullAmount = 2048000
 			#Capacity of Infinite Mechanical Pipe in mb.
-			# Default: 32768000
+			# Default: 524288000
 			# Range: 1 ~ 9223372036854775807
 			infiniteMechanicalPipesCapacity = 32768000
 			#Pump rate of Infinite Mechanical Pipe in mb.
-			# Default: 8192000
+			# Default: 131072000
 			# Range: 1 ~ 2147483647
 			infiniteMechanicalPipesPullAmount = 8192000
 
 		#Pressurized Tubes
 		[tier.transmitters.chemical]
 			#Capacity of Absolute Pressurized Tube in mb.
-			# Default: 4096000
+			# Default: 8192000
 			# Range: 1 ~ 9223372036854775807
 			absolutePressurizedTubesCapacity = 4096000
 			#Pump rate of Absolute Pressurized Tube in mb.
-			# Default: 1024000
+			# Default: 2048000
 			# Range: 1 ~ 9223372036854775807
 			absolutePressurizedTubesPullAmount = 1024000
 			#Capacity of Supreme Pressurized Tube in mb.
-			# Default: 16384000
+			# Default: 65536000
 			# Range: 1 ~ 9223372036854775807
 			supremePressurizedTubesCapacity = 16384000
 			#Pump rate of Supreme Pressurized Tube in mb.
-			# Default: 4096000
+			# Default: 16384000
 			# Range: 1 ~ 9223372036854775807
 			supremePressurizedTubesPullAmount = 4096000
 			#Capacity of Cosmic Pressurized Tube in mb.
-			# Default: 65536000
+			# Default: 524288000
 			# Range: 1 ~ 9223372036854775807
 			cosmicPressurizedTubesCapacity = 65536000
 			#Pump rate of Cosmic Pressurized Tube in mb.
-			# Default: 16384000
+			# Default: 131072000
 			# Range: 1 ~ 9223372036854775807
 			cosmicPressurizedTubesPullAmount = 16384000
 			#Capacity of Infinite Pressurized Tube in mb.
-			# Default: 262144000
+			# Default: 4194304000
 			# Range: 1 ~ 9223372036854775807
 			infinitePressurizedTubesCapacity = 262144000
 			#Pump rate of Infinite Pressurized Tube in mb.
-			# Default: 65536000
+			# Default: 1048576000
 			# Range: 1 ~ 9223372036854775807
 			infinitePressurizedTubesPullAmount = 65536000
 

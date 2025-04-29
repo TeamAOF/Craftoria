@@ -82,15 +82,15 @@
 #Configuration for the EnderDB database parameters.
 [ender_db]
 	#Number of pending WAL entries before merging
-	# Default: 1000
+	# Default: 100
 	# Range: 1 ~ 10000
 	merge_buffer_threshold = 1000
 	#Minimum time (ms) between WAL commits
 	# Default: 2500
-	# Range: 500 ~ 60000
+	# Range: 100 ~ 60000
 	min_commit_interval_ms = 2500
 	#Maximum time (ms) between WAL commits
-	# Default: 60000
+	# Default: 5000
 	# Range: 500 ~ 60000
 	max_commit_interval_ms = 60000
 	#Minimum time (ms) between DB flush commits
