@@ -1,7 +1,7 @@
 #Amount of ticks for block selection cooldown (default = 2s - 40)
 # Default: 40
 # Range: 0 ~ 12096000
-SelectionCooldown = 40
+SelectionCooldown = 0
 #Amount of ticks that get added to the block selection cooldown (default = 0)
 # Default: 0
 # Range: 0 ~ 12096000
@@ -19,7 +19,7 @@ RequiresHunger = true
 #Causes Food Loss to be Multiplied when mining amount of  blocks (default = 2.0)
 # Default: 2.0
 # Range: 0.0 ~ 1000.0
-FoodExhaustionMultiplier = 2.0
+FoodExhaustionMultiplier = 1.2
 #Amount of Hearts to be taken when mining for said block in selection (default = 0)
 # Default: 0
 # Range: 0 ~ 10000

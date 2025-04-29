@@ -7,4 +7,6 @@ navigation:
 
 # Armor
 
+Each of the armor pieces has a bunch of cool abilities - some assembly required!
+
 <SubPages />

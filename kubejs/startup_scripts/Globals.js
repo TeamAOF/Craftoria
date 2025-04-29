@@ -60,13 +60,49 @@ const customMIMachines = {
   //   mod: 'mi_tweaks',
   //   casing: 'plasma_handling_iridium_machine_casing',
   // },
-  // batch_budding_incubator: {
-  //   name: 'Budding Incubator',
-  //   casing: 'sky_stone_brick_casing',
-  //   mod: 'mi_tweaks',
-  // },
+  batch_budding_incubator: {
+    name: 'Budding Incubator',
+    casing: 'sky_stone_brick_casing',
+    mod: 'mi_tweaks',
+    default_overlays: {
+      front: 'modern_industrialization:block/machines/budding_incubator/overlay_front',
+      front_active: 'modern_industrialization:block/machines/budding_incubator/overlay_front_active',
+    },
+  },
+};
+
+/**
+ * @typedef {Object} CustomMIHatches
+ * @property {string} name - The part name.
+ * @property {string} casing - The casing type.
+ * @property {Object} types - The types of the part.
+ * @property {string} [types.energy] - Cable tier ID.
+ * @property {number} [types.fluid] - Max fluid capacity for the hatch, in buckets.
+ * @property {Object} [types.item] - Item hatch properties.
+ * @property {number} types.item.rows - Number of rows for the hatch.
+ * @property {number} types.item.columns - Number of columns for the hatch.
+ * @property {number} types.item.posX - The X position of the first slot.
+ * @property {number} types.item.posY - The Y position of the first slot.
+ */
+
+/** @type {Record<string, CustomMIHatches} */
+const customMIHatches = {
+  quantum: {
+    name: 'Quantum',
+    casing: 'superconductor',
+    types: {
+      fluid: 2147483647,
+      item: {
+        rows: 3,
+        columns: 9,
+        posX: 8,
+        posY: 18,
+      },
+    },
+  },
 };
 
 global.customMIMachines = customMIMachines;
+global.customMIHatches = customMIHatches;
 
 Platform.setModName('craftoria', 'Craftoria');

@@ -6,4 +6,6 @@ navigation:
 
 # Effects
 
+New effects added by Twilight's Flavor and Delight
+
 <SubPages />

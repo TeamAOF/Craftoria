@@ -6,4 +6,6 @@ navigation:
 
 # Getting Started
 
+How to get basic stuff
+
 <SubPages />

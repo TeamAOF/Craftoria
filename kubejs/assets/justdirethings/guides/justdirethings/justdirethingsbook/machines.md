@@ -7,4 +7,6 @@ navigation:
 
 # Machines
 
+Lots of machines - focused mainly around automation!
+
 <SubPages />

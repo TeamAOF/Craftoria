@@ -70,6 +70,7 @@ ServerEvents.recipes(e => {
   e.replaceInput({ id: 'minecraft:bookshelf' }, '#minecraft:planks', Ingredient.of('#minecraft:planks').except('@biomeswevegone'));
 
   // Duplicate removals
+  /** @type {Special.RecipeId[]} */
   let removeById = [
     'dumplings_delight:eggplant_seeds',
     'duckling:cake',
@@ -86,12 +87,7 @@ ServerEvents.recipes(e => {
     'mekanism:processing/tin/ingot/from_ore_smelting',
     'farmersdelight:organic_compost_from_tree_bark',
     'actuallyadditions:tagged_slime_block',
-    'farmersdelight:basket',
-    'minecraft:stick_from_bamboo_item',
-    'farmersdelight:paper_from_tree_bark',
     'endermanoverhaul:ender_eye',
-    'farmersdelight:scaffolding_from_canvas',
-    'minecraft:scaffolding',
     'minecraft:sticky_piston',
     'dumplings_delight:chinese_cabbage_from_leaves',
   ];

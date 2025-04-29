@@ -62,33 +62,31 @@ ServerEvents.recipes(e => {
     .id('craftoria:mi/mixer/gargantuan_experience_gem_to_xp_fluid');
 
   mixer(2, 20)
-    .fluidOut('justdirethings:polymorphic_fluid_source')
+    .fluidOut('justdirethings:time_fluid_source')
     .fluidIn('water')
     .itemIn('justdirethings:polymorphic_catalyst')
-    .id('craftoria:mi/mixer/polymorphic_fluid');
-  mixer(2, 20)
-    .fluidOut('justdirethings:time_fluid_source')
-    .fluidIn('justdirethings:polymorphic_fluid_source')
     .itemIn('justdirethings:time_crystal')
     .id('craftoria:mi/mixer/time_fluid');
   mixer(2, 20)
     .fluidOut('justdirethings:unstable_portal_fluid_source')
-    .fluidIn('justdirethings:polymorphic_fluid_source')
+    .fluidIn('water')
+    .itemIn('justdirethings:polymorphic_catalyst')
     .itemIn('justdirethings:portal_fluid_catalyst')
     .id('craftoria:mi/mixer/unstable_portal_fluid');
   mixer(2, 20)
-    .fluidOut('justdirethings:unrefined_t4_fluid_source')
-    .fluidIn('justdirethings:refined_t3_fluid_source')
-    .itemIn('justdirethings:coal_t4')
-    .id('craftoria:mi/mixer/unrefined_t4_fluid_source');
+    .fluidOut('justdirethings:unrefined_t2_fluid_source')
+    .fluidIn('water')
+    .itemIn('justdirethings:polymorphic_catalyst')
+    .itemIn('justdirethings:coal_t2')
+    .id('craftoria:mi/mixer/unrefined_t2_fluid_source');
   mixer(2, 20)
     .fluidOut('justdirethings:unrefined_t3_fluid_source')
     .fluidIn('justdirethings:refined_t2_fluid_source')
     .itemIn('justdirethings:coal_t3')
     .id('craftoria:mi/mixer/unrefined_t3_fluid_source');
   mixer(2, 20)
-    .fluidOut('justdirethings:unrefined_t2_fluid_source')
-    .fluidIn('justdirethings:polymorphic_fluid_source')
-    .itemIn('justdirethings:coal_t2')
-    .id('craftoria:mi/mixer/unrefined_t2_fluid_source');
+    .fluidOut('justdirethings:unrefined_t4_fluid_source')
+    .fluidIn('justdirethings:refined_t3_fluid_source')
+    .itemIn('justdirethings:coal_t4')
+    .id('craftoria:mi/mixer/unrefined_t4_fluid_source');
 });

@@ -7,4 +7,6 @@ navigation:
 
 # Projector Modes
 
+Various available field shapes for your Force Field Projector.
+
 <SubPages />

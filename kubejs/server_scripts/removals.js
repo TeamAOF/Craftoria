@@ -38,6 +38,7 @@ ServerEvents.recipes(event => {
     'modern_industrialization:materials/uranium/blast_furnace/dust',
     'supplementaries:sus_gravel',
     'supplementaries:sus_sand',
+    'mekanism:sawing/torch',
   ];
 
   /** @type {Special.Item[]} */
@@ -56,8 +57,10 @@ ServerEvents.recipes(event => {
   });
 
   disabledItems.forEach(item => {
-    if (item.altId) event.replaceInput({ input: item.id }, item.id, item.altId);
-    else event.remove({ output: item.id });
+    if (item.altId) {
+      event.replaceInput({ input: item.id }, item.id, item.altId);
+      event.remove({ output: item.id });
+    } else event.remove({ output: item.id });
   });
 });
 

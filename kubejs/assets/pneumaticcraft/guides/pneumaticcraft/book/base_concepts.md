@@ -6,4 +6,6 @@ navigation:
 
 # Base Concepts
 
+Some base concepts for the <Color hex="#228">PneumaticCraft: Repressurized</Color> mod.
+
 <SubPages />

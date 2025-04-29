@@ -8,4 +8,6 @@ navigation:
 
 # Other Widgets
 
+Any widgets which don't fit into any of the other categories.
+
 <SubPages />

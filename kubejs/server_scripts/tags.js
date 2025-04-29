@@ -5,6 +5,7 @@ ServerEvents.tags('item', e => {
   e.add('c:storage_blocks/charged_redstone', 'appflux:charged_redstone_block');
 
   e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
+  e.add('ars_controle:ritual_blacklist', ['ars_nouveau:ritual_flight']);
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
   e.removeAll('apothic_enchanting:boon_drops');
@@ -167,15 +168,25 @@ ServerEvents.tags('block', e => {
     'hostilenetworks:sim_chamber',
     'hostilenetworks:loot_fabricator',
     'ars_additions:ender_source_jar',
+    'animal_pen:aquarium_block',
   ]);
 
-  e.add('minecraft:mineable/axe', ['mekanism:cardboard_box']);
+  e.add('minecraft:mineable/axe', ['mekanism:cardboard_box', '#animal_pen:animal_pens']);
 
   e.add('minecraft:storage_blocks/quartz', 'minecraft:quartz_block');
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
 
   e.add('sereneseasons:greenhouse_glass', ['#minecraft:glass_blocks', /glass$/]);
+
+  e.add('extended_industrialization:machine_chainer/linkable', [
+    '@functionalstorage',
+    'entangled:block',
+    'tesseract:tesseract',
+    'tankstorage:tank_dock',
+    'bankstorage:bank_dock',
+    'moderndynamics:machine_extender',
+  ]);
 
   // Block tags for quest usage
   e.add('craftoria:ae2_buddings', /^ae2:.*_budding_quartz/);

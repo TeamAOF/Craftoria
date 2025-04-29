@@ -1,5 +1,5 @@
 // priority: 2147483647
-// Global variables used in server_scripts
+// Global variables/functions used in server_scripts
 
 const $NeighborNotifyEvent = Java.loadClass('net.neoforged.neoforge.event.level.BlockEvent$NeighborNotifyEvent');
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand');

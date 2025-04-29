@@ -7,4 +7,6 @@ navigation:
 
 # Renewables
 
+<Color hex="#228">PneumaticCraft: Repressurized</Color> has a collection of processes to produce some renewable resources, in particular Biodiesel.
+
 <SubPages />

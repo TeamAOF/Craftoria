@@ -8,4 +8,6 @@ navigation:
 
 # Condition Widgets
 
+Widgets that evaluate conditions.
+
 <SubPages />

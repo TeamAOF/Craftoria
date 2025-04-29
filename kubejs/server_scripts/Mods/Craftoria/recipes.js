@@ -42,12 +42,6 @@ ServerEvents.recipes(e => {
     D: 'industrialforegoing:dye_mixer',
   }).id('phantoms_utilities:spray_can');
 
-  e.replaceOutput(
-    { id: 'modern_industrialization:guide_book' },
-    'modern_industrialization:guidebook',
-    'guideme:guide[guideme:guide_id="modern_industrialization:guide"]'
-  );
-
   e.shapeless('guideme:guide[guideme:guide_id="craftoria:guide"]', ['minecraft:book', 'minecraft:dirt']).id('craftoria:guide');
 
   e.shapeless(

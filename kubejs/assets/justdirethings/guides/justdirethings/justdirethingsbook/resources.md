@@ -7,4 +7,6 @@ navigation:
 
 # Resources
 
+The new resources added by the mod
+
 <SubPages />

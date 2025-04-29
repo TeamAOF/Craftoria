@@ -127,10 +127,29 @@ ServerEvents.recipes(e => {
     .id('craftoria:mi/assembler/large_plasma_turbine');
 
   assembler(16, 200)
-    .itemOut('modern_industrialization:budding_incubator')
+    .itemOut('mi_tweaks:batch_budding_incubator')
     .itemIn('16x ae2:growth_accelerator')
     .itemIn('4x modern_industrialization:electronic_circuit')
     .itemIn('modern_industrialization:large_pump')
     .itemIn('modern_industrialization:advanced_machine_hull')
     .id('craftoria:mi/assembler/budding_incubator');
+
+  e.shapeless('mi_tweaks:batch_budding_incubator', 'modern_industrialization:budding_incubator');
+
+  e.shaped('modern_industrialization:quantum_fluid_input_hatch', ['T', 'H'], {
+    T: 'modern_industrialization:quantum_tank',
+    H: 'modern_industrialization:quantum_machine_hull',
+  }).id('craftoria:mi/quantum_fluid_input_hatch');
+  e.shaped('modern_industrialization:quantum_fluid_output_hatch', ['H', 'T'], {
+    T: 'modern_industrialization:quantum_tank',
+    H: 'modern_industrialization:quantum_machine_hull',
+  }).id('craftoria:mi/quantum_fluid_output_hatch');
+  e.shaped('modern_industrialization:quantum_item_input_hatch', ['T', 'H'], {
+    T: 'modern_industrialization:quantum_barrel',
+    H: 'modern_industrialization:quantum_machine_hull',
+  }).id('craftoria:mi/quantum_item_input_hatch');
+  e.shaped('modern_industrialization:quantum_item_output_hatch', ['H', 'T'], {
+    T: 'modern_industrialization:quantum_barrel',
+    H: 'modern_industrialization:quantum_machine_hull',
+  }).id('craftoria:mi/quantum_item_output_hatch');
 });

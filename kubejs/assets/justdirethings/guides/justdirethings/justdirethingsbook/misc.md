@@ -7,4 +7,6 @@ navigation:
 
 # Miscellaneous
 
+Stuff that didn't quite fit into a category!
+
 <SubPages />

@@ -73,7 +73,20 @@ ClientEvents.lang('en_us', e => {
       }
     } else {
       langEntries[`block.${langKey}`] = machine.name;
+      langEntries[`rei_categories.${langKey}`] = machine.name;
     }
+  }
+
+  for (let [id, hatch] of Object.entries(global.customMIHatches)) {
+    let { name, types } = hatch;
+    let key = `block.modern_industrialization.${id}`;
+
+    Object.keys(types).forEach(type => {
+      ['input', 'output'].forEach(io => {
+        let langKey = `${key}_${type}_${io}_hatch`;
+        langEntries[langKey] = toMcCase(`${name} ${type} ${io} Hatch`);
+      });
+    });
   }
 
   for (const [k, v] of Object.entries(langEntries)) {

@@ -5,6 +5,8 @@ ServerEvents.recipes(e => {
   mekanism.metallurgicInfusing('4x mekanism:dust_refined_obsidian', 'minecraft:obsidian', '40x mekanism:diamond');
   mekanism.metallurgicInfusing('9x mekanism:alloy_infused', '#c:storage_blocks/copper', '90x mekanism:redstone');
   mekanism.metallurgicInfusing('9x mekanism:basic_control_circuit', '#c:storage_blocks/osmium', '180x mekanism:redstone');
+  mekanism.oxidizing('200x mekanism:osmium', '#c:ingots/osmium');
+  mekanism.oxidizing('1800x mekanism:osmium', '#c:storage_blocks/osmium');
 
   // MI Compat
   mekanism.enriching('2x modern_industrialization:lignite_coal', '#c:ores/lignite_coal');

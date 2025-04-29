@@ -7,4 +7,6 @@ navigation:
 
 # Tools
 
+Just like you
+
 <SubPages />

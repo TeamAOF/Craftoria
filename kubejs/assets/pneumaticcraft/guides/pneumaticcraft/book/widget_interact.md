@@ -8,4 +8,6 @@ navigation:
 
 # World Interaction Widgets
 
+Widgets that interact with the world in some way.
+
 <SubPages />

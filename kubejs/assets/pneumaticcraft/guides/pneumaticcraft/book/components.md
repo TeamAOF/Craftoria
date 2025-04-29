@@ -7,4 +7,6 @@ navigation:
 
 # Components
 
+Miscellaneous items used as crafting components.
+
 <SubPages />

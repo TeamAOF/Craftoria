@@ -7,4 +7,6 @@ navigation:
 
 # Machines
 
+Machines and other devices which provide useful functionality, many of which require [pressure](./pressure.md) to do so.
+
 <SubPages />

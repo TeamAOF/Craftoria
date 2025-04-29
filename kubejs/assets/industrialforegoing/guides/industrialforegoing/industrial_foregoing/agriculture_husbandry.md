@@ -7,4 +7,6 @@ navigation:
 
 # Agriculture and Husbrandry
 
+Moo it and plant it
+
 <SubPages />

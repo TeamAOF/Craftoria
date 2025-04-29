@@ -6,4 +6,6 @@ navigation:
 
 # Tricks
 
+New block interactions added by Twilight's Flavor and Delight
+
 <SubPages />

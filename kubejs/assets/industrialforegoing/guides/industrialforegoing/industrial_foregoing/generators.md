@@ -7,4 +7,6 @@ navigation:
 
 # Generators
 
+Big boi power
+
 <SubPages />

@@ -6,4 +6,6 @@ navigation:
 
 # Introduction
 
+Welcome to <Color hex="#228">Modular Routers</Color> !
+
 <SubPages />

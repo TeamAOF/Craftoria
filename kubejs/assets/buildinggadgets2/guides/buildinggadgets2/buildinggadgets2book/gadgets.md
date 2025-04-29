@@ -6,4 +6,6 @@ navigation:
 
 # Gadgets
 
+The gadgets!
+
 <SubPages />
