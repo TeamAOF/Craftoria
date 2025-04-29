@@ -52,4 +52,53 @@ ClientEvents.generateAssets('after_mods', e => {
   });
 
   e.json('mi_sound_addon:sounds', sounds);
+
+  for (let [id, hatch] of Object.entries(global.customMIHatches)) {
+    let mod = 'modern_industrialization';
+    let { casing, types } = hatch;
+    if (!casing || !types) {
+      console.error(`Error registering '${id}' hatch: Missing required properties.`);
+      continue;
+    }
+
+    let modelJson = {
+      casing: casing,
+      default_overlays: {
+        fluid_auto: 'modern_industrialization:block/overlays/fluid_auto',
+        item_auto: 'modern_industrialization:block/overlays/item_auto',
+        output: 'modern_industrialization:block/overlays/output',
+      },
+      loader: 'modern_industrialization:machine',
+    };
+
+    Object.keys(types).forEach(type => {
+      let hatchModel = modelJson;
+      hatchModel.default_overlays.front = `${mod}:block/machines/hatch_${type}/overlay_front`;
+      hatchModel.default_overlays.side = `${mod}:block/machines/hatch_${type}/overlay_side`;
+
+      ['input', 'output'].forEach(io => {
+        e.blockState(`${mod}:${id}_${type}_${io}_hatch`, bs => {
+          bs.simpleVariant('', `${mod}:block/${id}_${type}_${io}_hatch`);
+        });
+        e.itemModel(`${mod}:${id}_${type}_${io}_hatch`, im => {
+          im.parent(`${mod}:block/${id}_${type}_${io}_hatch`);
+        });
+
+        e.json(`${mod}:models/block/${id}_${type}_${io}_hatch`, hatchModel);
+
+        // console.log(`Registered hatch: ${id}_${type}_${io}_hatch`);
+        // console.log(`With model: ${mod}:models/block/${id}_${type}_${io}_hatch`);
+
+        // for (let [k, v] of Object.entries(hatchModel)) {
+        //   let logMsg = `Model property: ${k} ->`;
+        //   if (k === 'default_overlays') {
+        //     console.log(logMsg);
+        //     Object.entries(v).forEach(([overlayKey, overlayValue]) => {
+        //       console.log(`  ${overlayKey}: ${overlayValue}`);
+        //     });
+        //   } else console.log(`${logMsg} ${v}`);
+        // }
+      });
+    });
+  }
 });

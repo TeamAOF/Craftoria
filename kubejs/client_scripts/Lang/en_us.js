@@ -77,6 +77,18 @@ ClientEvents.lang('en_us', e => {
     }
   }
 
+  for (let [id, hatch] of Object.entries(global.customMIHatches)) {
+    let { name, types } = hatch;
+    let key = `block.modern_industrialization.${id}`;
+
+    Object.keys(types).forEach(type => {
+      ['input', 'output'].forEach(io => {
+        let langKey = `${key}_${type}_${io}_hatch`;
+        langEntries[langKey] = toMcCase(`${name} ${type} ${io} Hatch`);
+      });
+    });
+  }
+
   for (const [k, v] of Object.entries(langEntries)) {
     /** @type {Array<string>} */
     let langParts = k.split('.');

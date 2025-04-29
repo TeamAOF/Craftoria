@@ -71,6 +71,38 @@ const customMIMachines = {
   },
 };
 
+/**
+ * @typedef {Object} CustomMIHatches
+ * @property {string} name - The part name.
+ * @property {string} casing - The casing type.
+ * @property {Object} types - The types of the part.
+ * @property {string} [types.energy] - Cable tier ID.
+ * @property {number} [types.fluid] - Max fluid capacity for the hatch, in buckets.
+ * @property {Object} [types.item] - Item hatch properties.
+ * @property {number} types.item.rows - Number of rows for the hatch.
+ * @property {number} types.item.columns - Number of columns for the hatch.
+ * @property {number} types.item.posX - The X position of the first slot.
+ * @property {number} types.item.posY - The Y position of the first slot.
+ */
+
+/** @type {Record<string, CustomMIHatches} */
+const customMIHatches = {
+  quantum: {
+    name: 'Quantum',
+    casing: 'superconductor',
+    types: {
+      fluid: 2147483647,
+      item: {
+        rows: 3,
+        columns: 9,
+        posX: 8,
+        posY: 18,
+      },
+    },
+  },
+};
+
 global.customMIMachines = customMIMachines;
+global.customMIHatches = customMIHatches;
 
 Platform.setModName('craftoria', 'Craftoria');
