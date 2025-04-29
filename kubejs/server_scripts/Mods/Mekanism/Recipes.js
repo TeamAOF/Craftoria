@@ -8,6 +8,10 @@ ServerEvents.recipes(e => {
   mekanism.oxidizing('200x mekanism:osmium', '#c:ingots/osmium');
   mekanism.oxidizing('1800x mekanism:osmium', '#c:storage_blocks/osmium');
 
+  // Create Compat
+  mekanism.metallurgicInfusing('create:rose_quartz', '#c:gems/quartz', '80x mekanism:redstone');
+  mekanism.enriching('create:polished_rose_quartz', 'create:rose_quartz');
+
   // MI Compat
   mekanism.enriching('2x modern_industrialization:lignite_coal', '#c:ores/lignite_coal');
   mekanism.crushing('modern_industrialization:lignite_coal_dust', '#c:gems/lignite_coal');
