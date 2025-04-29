@@ -20,6 +20,7 @@ _NeoForge Loader 21.1.168_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
 
   * [Ars Controle](https://www.curseforge.com/minecraft/mc-mods/ars-controle)
   * [Mekanism Curios](https://www.curseforge.com/minecraft/mc-mods/mekanism-curios)
+  * [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad)
 ---
 
 ## Craftoria | v1.20.1

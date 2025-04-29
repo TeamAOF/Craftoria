@@ -6,6 +6,7 @@
 
   * [Ars Controle](https://www.curseforge.com/minecraft/mc-mods/ars-controle) (by [qther](https://www.curseforge.com/members/qther/projects))
   * [Mekanism Curios](https://www.curseforge.com/minecraft/mc-mods/mekanism-curios) (by [TonimatasDEV](https://www.curseforge.com/members/TonimatasDEV/projects))
+  * [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad) (by [terrariumearth](https://www.curseforge.com/members/terrariumearth/projects))
 
 ### Changed
 
@@ -38,6 +39,7 @@
   * [fusion-1.2.7-neoforge-mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures/files/6417104) -> [fusion-1.2.7b-neoforge-mc1.21.jar](https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures/files/6453834)
   * [Glassential-renewed-neoforge-1.21.1-3.1.6.jar](https://www.curseforge.com/minecraft/mc-mods/glassential-renewed/files/6335000) -> [Glassential-renewed-neoforge-1.21.1-3.1.7.jar](https://www.curseforge.com/minecraft/mc-mods/glassential-renewed/files/6449450)
   * [industrialforegoing-1.21-3.6.25.jar](https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing/files/6418862) -> [industrialforegoing-1.21-3.6.29.jar](https://www.curseforge.com/minecraft/mc-mods/industrial-foregoing/files/6473752)
+  * [industrialization_overdrive-1.8.1+1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/industrialization-overdrive/files/6375569) -> [industrialization_overdrive-1.8.2+1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/industrialization-overdrive/files/6476647)
   * [irons_jewelry-1.21.1-1.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/irons-jewelry/files/6423705) -> [irons_jewelry-1.21.1-1.3.0.jar](https://www.curseforge.com/minecraft/mc-mods/irons-jewelry/files/6464318)
   * [irons_spells_dynamic_skilltree_1.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks-dynamic-skill-trees/files/6440113) -> [irons_spells_dynamic_skilltree_1.0.4.jar](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks-dynamic-skill-trees/files/6473237)
   * [JustEnoughMekanismMultiblocks-1.21.1-7.6.jar](https://www.curseforge.com/minecraft/mc-mods/just-enough-mekanism-multiblocks/files/6299689) -> [JustEnoughMekanismMultiblocks-1.21.1-7.7.jar](https://www.curseforge.com/minecraft/mc-mods/just-enough-mekanism-multiblocks/files/6462078)
