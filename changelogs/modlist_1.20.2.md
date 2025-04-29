@@ -112,7 +112,6 @@
   * [create-1.21.1-6.0.4.jar](https://www.curseforge.com/minecraft/mc-mods/create/files/6323264) (by [simibubi](https://www.curseforge.com/members/simibubi/projects))
   * [Create Encased-1.21.1-1.7.1-fix2.jar](https://www.curseforge.com/minecraft/mc-mods/create-encased/files/6387195) (by [iglee42](https://www.curseforge.com/members/iglee42/projects))
   * [createenderlink-1.1.0+mc1.21.1-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/create-ender-link/files/6442820) (by [Cotrin](https://www.curseforge.com/members/Cotrin/projects))
-  * [createfiltersanywhere-1.4-1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/create-filters-anywhere/files/6375850) (by [the_iwolfking](https://www.curseforge.com/members/the_iwolfking/projects))
   * [CreativeCore_NEOFORGE_v2.13.2_mc1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/creativecore/files/6410119) (by [CreativeMD](https://www.curseforge.com/members/CreativeMD/projects))
   * [CreeperOverhaul-neoforge-1.21.1-4.0.6.jar](https://www.curseforge.com/minecraft/mc-mods/creeper-overhaul/files/6051279) (by [joosh_7889](https://www.curseforge.com/members/joosh_7889/projects))
   * [cristellib-neoforge-1.2.8.jar](https://www.curseforge.com/minecraft/mc-mods/cristel-lib/files/5692888) (by [Cristelknight](https://www.curseforge.com/members/Cristelknight/projects))

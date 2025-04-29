@@ -8,6 +8,10 @@
   * [Mekanism Curios](https://www.curseforge.com/minecraft/mc-mods/mekanism-curios) (by [TonimatasDEV](https://www.curseforge.com/members/TonimatasDEV/projects))
   * [Tempad](https://www.curseforge.com/minecraft/mc-mods/tempad) (by [terrariumearth](https://www.curseforge.com/members/terrariumearth/projects))
 
+### Removed
+
+  * [Create: Filters Anywhere](https://www.curseforge.com/minecraft/mc-mods/create-filters-anywhere) (by [the_iwolfking](https://www.curseforge.com/members/the_iwolfking/projects))
+
 ### Changed
 
   * [AE2NetworkAnalyzer-1.21-2.1.0-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/ae2-network-analyser/files/6394376) -> [AE2NetworkAnalyzer-1.21-2.1.1-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/ae2-network-analyser/files/6465849)
