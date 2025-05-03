@@ -13,7 +13,7 @@ Welcome the the world of Apotheosis.
 
 Welcome to the world of Apotheosis.
 
-**Apotheosis** is organized into <Color id="dark_aqua">Modules<Color/>, and so is the content of this book.
+**Apotheosis** is organized into <Color id="dark_aqua">Modules</Color>, and so is the content of this book.
 
 - [Adventure Module](./adventure/adventure.md)
 - [Enchanting Module](./enchanting/enchanting.md)

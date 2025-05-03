@@ -110,17 +110,33 @@ ServerEvents.tags('item', e => {
   e.add('craftoria:storage/wooden', ['#c:chests/wooden', '#c:barrels/wooden']);
 
   // Some tag fixes
-  e.add('minecraft:swords', ['wstweaks:blaze_blade', 'wstweaks:lava_blade', 'industrialforegoing:infinity_hammer']);
+  e.add('minecraft:swords', [
+    'wstweaks:blaze_blade',
+    'wstweaks:lava_blade',
+    'industrialforegoing:infinity_hammer',
+    'mekaweapons:meka_tana',
+  ]);
   e.add('minecraft:pickaxes', ['industrialforegoing:infinity_drill']);
   e.add('minecraft:shovels', ['industrialforegoing:infinity_drill']);
   e.add('minecraft:axes', ['industrialforegoing:infinity_saw']);
-  e.add('craftoria:tridents', ['industrialforegoing:infinity_trident']);
-  e.add('c:tools/melee_weapon', ['#craftoria:tridents']);
-  e.add('c:tools/ranged_weapon', ['#craftoria:tridents']);
-  e.add('c:tools/spear', ['#craftoria:tridents']);
-  e.add('minecraft:enchantable/trident', ['#craftoria:tridents']);
-  e.add('minecraft:enchantable/vanishing', ['#craftoria:tridents']);
-  e.add('minecraft:enchantable/durability', ['#craftoria:tridents']).remove('industrialforegoing:infinity_trident');
+  e.add('c:tools/bow', ['mekaweapons:meka_bow']);
+  e.add('c:tools/melee_weapon', ['industrialforegoing:infinity_trident', 'mekaweapons:meka_tana']);
+  e.add('c:tools/ranged_weapon', ['industrialforegoing:infinity_trident', 'mekaweapons:meka_bow']);
+  e.add('c:tools/spear', 'industrialforegoing:infinity_trident');
+
+  /**
+   * @param {string[]} tags
+   * @param {$Ingredient_|$Ingredient_[]} item
+   */
+  let addToEnchantable = (tags, item) => {
+    tags.forEach(tag => {
+      e.add(`minecraft:enchantable/${tag}`, item);
+    });
+  };
+
+  addToEnchantable(['bow', 'vanishing'], 'mekaweapons:meka_bow');
+  addToEnchantable(['mining_loot', 'vanishing', 'mining'], 'mekanism:meka_tool');
+  addToEnchantable(['trident', 'vanishing'], 'industrialforegoing:infinity_trident');
 
   e.remove('plonk:unplaceable', ['plonk:placed_items']);
 
@@ -169,6 +185,7 @@ ServerEvents.tags('block', e => {
     'hostilenetworks:loot_fabricator',
     'ars_additions:ender_source_jar',
     'animal_pen:aquarium_block',
+    'moderndynamics:machine_extender',
   ]);
 
   e.add('minecraft:mineable/axe', ['mekanism:cardboard_box', '#animal_pen:animal_pens']);

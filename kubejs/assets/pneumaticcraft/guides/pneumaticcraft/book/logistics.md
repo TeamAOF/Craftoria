@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Logistics"
-  icon: "pneumaticcraft:logistics_drone[pneumaticcraft:air=120000]"
+  title: 'Logistics'
+  icon: 'pneumaticcraft:logistics_drone'
   position: 8
 ---
 

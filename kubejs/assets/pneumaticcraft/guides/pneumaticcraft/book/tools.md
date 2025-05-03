@@ -1,7 +1,7 @@
 ---
 navigation:
-  title: "Tools"
-  icon: "pneumaticcraft:pneumatic_wrench[pneumaticcraft:air=30000]"
+  title: 'Tools'
+  icon: 'pneumaticcraft:pneumatic_wrench'
   position: 6
 ---
 
