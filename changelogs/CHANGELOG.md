@@ -1,3 +1,27 @@
+## Craftoria | v1.20.3
+
+_NeoForge Loader 21.1.169_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.20.3.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.20.3.md)_
+
+### Changes/Improvements ⭐
+
+* Added Rose Quartz recipes in meka machines ``Phantom``
+* Made meka-tana & bow enchantable ``Phantom``
+
+### Added Mods ✅
+
+* [FTB Ultimine](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge)
+
+### Removed Mods ❌
+
+* [QoM: Excavein](https://www.curseforge.com/minecraft/mc-mods/excavein) (too many bugs)
+
+### Bug Fixes 🪲
+
+* Fixed an issue where opening the Portable QIO while it's in the Curios slot wasnt possible.
+* Fixed an issue where lapis would be deleted when mined.
+* Fixed an issue where tape drives would crash your game.
+---
+
 ## Craftoria | v1.20.2
 
 _NeoForge Loader 21.1.168_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.20.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.20.2.md)_

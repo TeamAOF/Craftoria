@@ -1,0 +1,123 @@
+{
+    // The version of the config file. Do not change this unless you know what you are doing.
+    "rconfig:version": 0,
+    // Whether or not Time Doors are allowed to be opened to dimensions other than the one they are in.
+    "allow_interdimensional_travel": true,
+    // Whether or not Time Doors are allowed to be opened to the same dimension they are in.
+    "allow_intradimensional_travel": true,
+    // Whether or not locations can be saved to the Tempad.
+    "allow_location_saving": true,
+    /*
+     * The maximum amount of locations that the Time Twister will save location history for.
+     * Type: Integer
+     */
+    "max_history_size": 512,
+    "timedoor": {
+        /*
+         * The distance between the Time Door and the player when placed.
+         * Type: Integer
+         */
+        "placement_distance": 3,
+        // Whether or not the Time Door should log when it is opened in the console.
+        "log_when_open": false,
+        /*
+         * The cost that any device requires to open a timedoor for 10 seconds
+         * Type: Integer
+         */
+        "cost_per_door": 1000,
+        /*
+         * The cost that any device requires to open add 1 second to a timedoor's life
+         * Type: Integer
+         */
+        "cost_to_persist": 10,
+        /*
+         * The amount of time in ticks that a Time Door will remain open
+         * Type: Integer
+         */
+        "time_in_world": 200
+    },
+    "timedoor_projector": {
+        /*
+         * The amount of fuel that the Rudimentary Tempad can store.
+         * Type: Integer
+         */
+        "capacity": 4000
+    },
+    "tempad": {
+        /*
+         * The amount of fuel that the Tempad can store (without the time twister being installed).
+         * Type: Integer
+         */
+        "capacity": 6000,
+        /*
+         * The maximum range that you can set the portal position to be
+         * Type: Integer
+         */
+        "max_offset": 5
+    },
+    "time_twister": {
+        /*
+         * The amount of fuel that the Time Twister can store.
+         * Type: Integer
+         */
+        "capacity": 3000,
+        /*
+         * The cost that the Time Twister consumes to backtrack to a location
+         * Type: Integer
+         */
+        "cost_to_backtrack": 500
+    },
+    "chronometer": {
+        /*
+         * The amount of fuel that the Chronometer can store.
+         * Type: Integer
+         */
+        "capacity": 0,
+        /*
+         * The amount of time it takes for the Chronometer to generate 1 chronon (in ticks).
+         * Type: Integer
+         */
+        "generation_rate": 36,
+        /*
+         * The amount of chronons generated everytime the Chronometer does a tick of work.
+         * Type: Integer
+         */
+        "generation_amount": 1
+    },
+    "chronon_cell": {
+        /*
+         * The amount of fuel that the Capacitor can store.
+         * Type: Integer
+         */
+        "capacity": 2000
+    },
+    "metronome": {
+        /*
+         * The amount of fuel that the Chronometer can store.
+         * Type: Integer
+         */
+        "capacity": 6000,
+        /*
+         * The amount of time it takes for the Chronometer to generate 1 chronon (in ticks).
+         * Type: Integer
+         */
+        "generation_rate": 24,
+        /*
+         * The number of chronons generated everytime the Chronometer does a tick of work.
+         * Type: Integer
+         */
+        "generation_amount": 1,
+        // Whether or not the number of chronons generated per cycle is scaled to the number of metronomes placed
+        "should_scale_generation": true,
+        /*
+         * The number of chronons thats transferred to each internal slot or to a neighboring block per tick.
+         * Type: Integer
+         */
+        "transfer_rate": 20,
+        /*
+         * Whether or not the number of chronons generated per cycle is scaled to the number of metronomes placed
+         * Type: Integer
+         */
+        "jump_start_amount": 2000
+    }
+}

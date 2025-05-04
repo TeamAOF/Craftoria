@@ -1,5 +1,8 @@
 [Tweaks]
 	#Maximum speed/energy upgrades a machine can accept, values higher than 32 are not recommended
 	# Default: 32
-	# Range: 8 ~ 64
+	# Range: > 8
 	maxUpgrades = 16
+	#Allow Meka Armor/Tool to be enchanted
+	#Note: You will need to add the items to the enchantable tags yourself, this mod does not do that for you
+	enchantableMekaGear = false

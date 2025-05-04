@@ -1,0 +1,26 @@
+#Max internal volume of the foundry multiblock
+# Default: 200
+# Range: > 1
+foundryMaxVolume = 200
+#Max circumference of the foundry multiblock
+# Default: 200
+# Range: > 1
+foundryMaxCircumference = 200
+#Max height of the foundry multiblock
+# Default: 20
+# Range: > 1
+foundryMaxHeight = 20
+#Number of mb per block volume
+# Default: 1000
+# Range: > 1
+foundryFluidCapacityPerBlockVolume = 1000
+#Should an active foundry damage entities inside it
+foundryDamageEntities = true
+#Should an active foundry collect items dropped inside it
+foundryCollectItems = true
+#Should an active foundry render its inventory inside the multiblock
+foundryRenderInventory = true
+#The cooling time of cast items is the number of mb used in the recipe divided by this number
+# Default: 4.0
+# Range: 1.0 ~ 2.147483647E9
+foundryCoolingModifier = 4.0
