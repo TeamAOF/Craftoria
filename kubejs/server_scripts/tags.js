@@ -42,34 +42,6 @@ ServerEvents.tags('item', e => {
     'mekanism:ultimate_tier_installer',
   ]);
 
-  // Curios
-  e.add('curios:curio', [
-    'simplemagnets:basicmagnet',
-    'simplemagnets:advancedmagnet',
-    'integratedterminals:terminal_storage_portable',
-    'occultism:storage_remote',
-    'artifacts:whoopee_cushion',
-  ]);
-  e.add('curios:body', ['mekanism:jetpack', 'mekanism:jetpack_armored']);
-  e.add('curios:charm', ['reliquary:fortune_coin']);
-
-  // let curioToBody = [
-  //   'relics:midnight_robe',
-  //   'relics:elytra_booster',
-  //   'reliquified_twilight_forest:scaled_cloak',
-  //   'reliquified_ars_nouveau:cloak_of_concealment',
-  // ];
-
-  // curioToBody.forEach((id) => {
-  //   e.add('curios:body', id);
-  //   e.remove('curios:back', id);
-  // });
-
-  // e.add('curios:magic_trinket', /^alshanex_familiars:.*_trinket$/);
-  // e.add('curios:magic_curio', /^alshanex_familiars:.*_curio$/);
-
-  e.remove('curios:charm', ['phantoms_utilities:sleep_charm']);
-
   // Chisel Reborn
   Ingredient.of('@chisel').itemIds.forEach(id => {
     if (id !== 'chisel:chisel') {
