@@ -4,13 +4,6 @@ LootJS.lootTables(e => {
       pool.addEntry(`craftoria:${element}_essence`);
     });
   });
-
-  e.forEachTable(table => {
-    if (table.location.namespace !== 'craftoria') return;
-    if (!table.location.path.includes('bonus')) return;
-    console.log(table.location.toString());
-    console.log(table);
-  });
 });
 
 ServerEvents.generateData('after_mods', e => {
