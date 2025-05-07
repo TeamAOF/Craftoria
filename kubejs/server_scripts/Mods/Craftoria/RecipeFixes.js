@@ -9,4 +9,6 @@ ServerEvents.recipes(e => {
   e.shaped('actuallyadditions:rice_dough', ['RR', 'R '], {
     R: '#c:crops/rice',
   }).id('craftoria:rice_dough');
+
+  e.replaceInput({ id: 'occultism:crushing/coal_dust_from_tag' }, '#minecraft:coals', 'minecraft:coal');
 });
