@@ -196,6 +196,8 @@ ServerEvents.tags('entity_type', e => {
 
   e.add('ftbchunks:entity_interact_whitelist', ['minecraft:villager', 'minecraft:wandering_trader']);
 
+  e.add('apothic_spawners:blacklisted_from_spawners', ['#craftoria:mob_blacklist']);
+
   e.add('mob_grinding_utils:no_swab', '#craftoria:mob_blacklist');
 
   e.add('industrialforegoing:mob_crusher_blacklist', ['#c:bosses', '#neoforge:bosses']);
