@@ -286,10 +286,10 @@ ServerEvents.generateData('after_mods', e => {
 
     bossData.basic_data.spawn_conditions = bomdTemplate.spawn_conditions;
     bossData.basic_data.constraints = bomdTemplate.basic_data.constraints;
-    if (boss.attributes) bossData.stats['apotheosis:mythic'].attribute_modifiers = boss.attributes;
-    else bossData.stats['apotheosis:mythic'].attribute_modifiers = bomdTemplate.attributes;
-    if (boss.effects) bossData.stats['apotheosis:mythic'].effects = boss.effects;
-    else bossData.stats['apotheosis:mythic'].effects = bomdTemplate.effects;
+
+    bossData.stats['apotheosis:mythic'].attribute_modifiers = boss.attributes ?? bomdTemplate.attributes;
+    bossData.stats['apotheosis:mythic'].effects = boss.effects ?? bomdTemplate.effects;
+
     if (boss.bonus_loot) boss.bonus_loot.forEach(loot => bossData.basic_data.bonus_loot.push(loot));
     e.json(`craftoria:apothic_invaders/custom_bosses/${boss.entity.split(':')[1]}`, bossData);
   });
