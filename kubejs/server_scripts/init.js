@@ -64,13 +64,10 @@ const getServerLevel = levelAccessor => {
  * @param {string} input The input item
  */
 const _makeRecipeID = (mod, type, output, input) => {
-  output = output.split(':')[1].replace(' ', '_');
-  input = input.split(':')[1].replace(' ', '_');
-
-  if (type.includes(':')) type = type.split(':')[1];
-
-  //console.info(`ID: craftoria:${mod}/${type}/${output}_from_${input}`);
-  return `craftoria:${mod}/${type}/${output}_from_${input}`;
+  output = ID.path(output).replace(' ', '_');
+  input = ID.path(input).replace(' ', '_');
+  logDebug(`ID: ${`craftoria:${mod}/${ID.path(type)}/${output}_from_${input}`}`);
+  return `craftoria:${mod}/${ID.path(type)}/${output}_from_${input}`;
 };
 
 const debugToInt = () => {

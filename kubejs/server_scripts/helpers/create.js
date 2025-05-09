@@ -1,3 +1,4 @@
+// priority: 10000
 /**
  * @typedef {($Ingredient_|$FluidIngredient_)[]|($Ingredient_|$FluidIngredient_)} CreateIngredients
  * @typedef {(Special.Item|Special.Fluid)[]|(Special.Item|Special.Fluid)} CreateResults

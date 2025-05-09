@@ -1,3 +1,4 @@
+// priority: 10000
 /**
  * AE2 and ExtendedAE Recipe Helpers
  * @param {$RecipesKubeEvent_} event
@@ -14,7 +15,6 @@ function AE2Helper(event) {
     name = name.includes(':') ? name.split(':')[1] : name;
     return `craftoria:ae2/${type}/${name}`;
   };
-
   return {
     /**
      * ExtendedAE Crystal Assembler Recipe

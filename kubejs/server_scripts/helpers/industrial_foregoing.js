@@ -1,3 +1,4 @@
+// priority: 10000
 /**
  * @typedef {Object} LaserDrillRarity
  * @property {Object} biome_filter

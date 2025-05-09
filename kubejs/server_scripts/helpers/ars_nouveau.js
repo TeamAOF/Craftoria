@@ -1,3 +1,4 @@
+// priority: 10000
 /**
  * Ars Nouveau Recipe Helpers
  * @param {$RecipesKubeEvent_} event

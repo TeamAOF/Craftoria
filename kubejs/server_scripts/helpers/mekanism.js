@@ -1,3 +1,4 @@
+// priority: 10000
 /**
  * Mekanism Recipe Helpers
  * @param {$RecipesKubeEvent_} event
