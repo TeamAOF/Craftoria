@@ -204,7 +204,3 @@ ServerEvents.tags('entity_type', e => {
 
   e.add('industrialforegoing:mob_duplicator_blacklist', '#craftoria:mob_blacklist');
 });
-
-ServerEvents.tags('enchantment', e => {
-  e.remove('minecraft:non_treasure', ['apothic_enchanting:boon_of_the_earth']);
-});

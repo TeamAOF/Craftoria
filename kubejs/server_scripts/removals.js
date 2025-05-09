@@ -39,6 +39,7 @@ ServerEvents.recipes(event => {
     'supplementaries:sus_gravel',
     'supplementaries:sus_sand',
     'mekanism:sawing/torch',
+    'ars_elemental:soulbound_1',
   ];
 
   /** @type {Special.Item[]} */
