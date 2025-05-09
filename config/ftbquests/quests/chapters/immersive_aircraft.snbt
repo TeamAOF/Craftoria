@@ -1,0 +1,78 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "immersive_aircraft"
+	group: "07A79347BA55DCA4"
+	id: "5158EB105DEA1F80"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "73A75FEFDFB27A5C"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "70AE8391066173F0"
+				item: { count: 1, id: "immersive_aircraft:gyrodyne" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			id: "4E062B9B4960632D"
+			size: 1.5d
+			tasks: [{
+				id: "37B0135E8835D5B4"
+				item: { count: 1, id: "immersive_aircraft:airship" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			id: "5A5583EA02C78372"
+			size: 2.0d
+			tasks: [{
+				id: "12ADCA4E8C498DB9"
+				item: { count: 1, id: "immersive_aircraft:cargo_airship" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			id: "0075009DEEA010B7"
+			size: 2.0d
+			tasks: [{
+				id: "6C47BEA3D58A8B87"
+				item: { count: 1, id: "immersive_aircraft:warship" }
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			id: "16F37A3E31EBDA50"
+			size: 2.0d
+			tasks: [{
+				id: "67525B96CAEDAFC9"
+				item: { count: 1, id: "immersive_aircraft:biplane" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			id: "217C5C65AFC95842"
+			size: 1.5d
+			tasks: [{
+				id: "25444F50D9316FA3"
+				item: { count: 1, id: "immersive_aircraft:quadrocopter" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.5d
+		}
+	]
+}
