@@ -150,6 +150,6 @@
 [blockentity]
 	#White/Blacklist for Block Entities. Allow/Prevent blocks with BEs from being placed by stick.
 	#You can either add block ids like minecraft:chest or mod ids like minecraft
-	BEList = ["chiselsandbits", "mekanism", "waystones"]
+	BEList = ["chiselsandbits", "waystones"]
 	#If set to TRUE, treat BEList as a whitelist, otherwise blacklist
 	BEWhitelist = false
