@@ -21,6 +21,8 @@ const globalItemRemovals = [
   'create:copycat_panel',
   'mffs:anti_personnel_module',
   'mffs:confiscation_module',
+  'pylons:infusion_pylon',
+  'pylons:potion_filter',
 ];
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
