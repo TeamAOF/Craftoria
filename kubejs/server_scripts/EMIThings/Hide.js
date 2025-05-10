@@ -14,7 +14,7 @@ RecipeViewerEvents.removeEntries('item', event => {
     event.remove(item.id);
   });
 
-  event.remove('modern_industrialization:budding_incubator');
+  event.remove(['modern_industrialization:budding_incubator', 'modern_industrialization:ooze_lab']);
 });
 
 RecipeViewerEvents.removeEntriesCompletely('item', event => {

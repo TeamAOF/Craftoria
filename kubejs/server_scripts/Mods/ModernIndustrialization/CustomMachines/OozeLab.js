@@ -23,18 +23,22 @@ ServerEvents.recipes(event => {
    * @param {number} time
    */
   const oozeLabRecipe = (itemIn, itemOut, fluidIn, fluidOut, time) => {
-    const recipe = event.recipes.modern_industrialization.ooze_lab(1, Math.max(1, Math.floor(time / 100)));
+    const recipe = event.recipes.modern_industrialization.ooze_lab(8, Math.max(1, Math.floor(time / 100)));
+    let inputThing = ID.path(itemIn || fluidIn);
+    let outputThing = ID.path(itemOut || fluidOut);
 
-    recipe.itemIn('minecraft:sculk', 0.05);
+    recipe.itemIn('minecraft:sculk', 0.025);
     if (itemIn) recipe.itemIn(itemIn);
     if (itemOut) {
-      if (replaceOut[itemOut]) recipe.itemOut(replaceOut[itemOut]);
-      else recipe.itemOut(itemOut);
+      if (replaceOut[itemOut]) {
+        recipe.itemOut(replaceOut[itemOut]);
+        outputThing = ID.path(replaceOut[itemOut]);
+      } else recipe.itemOut(itemOut);
     }
     if (fluidIn) recipe.fluidIn(fluidIn);
     if (fluidOut) recipe.fluidOut(fluidOut);
 
-    recipe;
+    recipe.id(`craftoria:mi/ooze_lab/${inputThing}_to_${outputThing}`);
   };
 
   event.forEachRecipe([{ type: 'justdirethings:goospread' }, { type: 'justdirethings:goospread_tag' }], kubeRecipe => {
