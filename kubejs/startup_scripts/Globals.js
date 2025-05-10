@@ -69,10 +69,10 @@ const customMIMachines = {
       front_active: 'modern_industrialization:block/machines/budding_incubator/overlay_front_active',
     },
   },
-  // ooze_lab: {
-  //   name: 'Ooze Lab',
-  //   casing: 'factory_grate',
-  // },
+  ooze_lab: {
+    name: 'Ooze Lab [DUMMY]',
+    casing: 'factory_grate',
+  },
   // batch_ooze_lab: {
   //   name: 'Ooze Lab',
   //   casing: 'factory_grate',

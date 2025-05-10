@@ -76,6 +76,7 @@ ClientEvents.lang('en_us', e => {
       }
     } else {
       langEntries[`block.${langKey}`] = machine.name;
+      if (machine.name.includes(' [DUMMY]')) machine.name = machine.name.replace(' [DUMMY]', '');
       langEntries[`rei_categories.${langKey}`] = machine.name;
     }
   }
