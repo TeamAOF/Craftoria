@@ -51,15 +51,15 @@ const customMIMachines = {
       front_active: 'modern_industrialization:block/machines/steam_turbine/overlay_front_active_iridium',
     },
   },
-  budding_incubator: {
-    name: 'Budding Incubator',
-    casing: 'sky_stone_brick_casing',
-  },
   // 'particle_accelerator': {
   //   name: 'Particle Accelerator',
   //   mod: 'mi_tweaks',
   //   casing: 'plasma_handling_iridium_machine_casing',
   // },
+  budding_incubator: {
+    name: 'Budding Incubator [DUMMY]',
+    casing: 'sky_stone_brick_casing',
+  },
   batch_budding_incubator: {
     name: 'Budding Incubator',
     casing: 'sky_stone_brick_casing',
@@ -69,6 +69,19 @@ const customMIMachines = {
       front_active: 'modern_industrialization:block/machines/budding_incubator/overlay_front_active',
     },
   },
+  // ooze_lab: {
+  //   name: 'Ooze Lab',
+  //   casing: 'factory_grate',
+  // },
+  // batch_ooze_lab: {
+  //   name: 'Ooze Lab',
+  //   casing: 'factory_grate',
+  //   mod: 'mi_tweaks',
+  //   default_overlays: {
+  //     front: 'modern_industrialization:block/machines/ooze_lab/overlay_front',
+  //     front_active: 'modern_industrialization:block/machines/ooze_lab/overlay_front_active',
+  //   },
+  // },
 };
 
 /**
@@ -102,7 +115,15 @@ const customMIHatches = {
   },
 };
 
+/** @type {Record<string, Special.Block} */
+const customMICasings = {
+  sky_stone_brick_casing: 'ae2:sky_stone_brick',
+  tiled_blackstone_casing: 'chipped:tiled_blackstone',
+  factory_grate: 'factory_blocks:grate',
+};
+
 global.customMIMachines = customMIMachines;
 global.customMIHatches = customMIHatches;
+global.customMICasings = customMICasings;
 
 Platform.setModName('craftoria', 'Craftoria');
