@@ -1,5 +1,5 @@
 [*]
-background:          ftbquests:textures/gui/background_warm_black.png; color=#F8ffffff  ; tile_size=64
+background:          ftbquests:textures/gui/background_warm_black.png; color=#F8ffffff; tile_size=64
 extra_quest_shapes:  diamond, pentagon, hexagon, octagon, heart, gear
 
 text_color:          #FFFFFF
@@ -180,6 +180,13 @@ background:                         apotheosis:textures/advancements/bg/apoth.pn
 # Bosses
 [216D532684E20496]
 background:                         craftoria:textures/gui/sky.png
+
+# Immersive Aircraft
+[5158EB105DEA1F80]
+#background:                         ftbquests:textures/shapes/square/shape.png; color=#76d6ff; tile_size=64
+#background:                         ftbquests:textures/shapes/square/shape.png; color=#abc6ff; tile_size=64
+#background:                         ftbquests:textures/gui/endless_sky.png
+background:                         ftbquests:textures/gui/sky.png
 
 # Modern Industrialization
 [6A5B4531418CC297]
