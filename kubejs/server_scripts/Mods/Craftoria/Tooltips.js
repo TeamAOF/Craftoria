@@ -30,5 +30,12 @@ ItemEvents.modifyTooltips(e => {
   e.add('eternal_starlight:red_starlight_crystal_shard', { shift: true }, [
     Text.lightPurple('Can be found in the Starlight dimension within the Crystalized biomes.'),
   ]);
+
+  e.add(
+    'mi_tweaks:batch_ooze_lab',
+    { shift: true },
+    Text.gray('Needs ').append(Text.green('Time Fluid')).append(Text.gray(' between the glass and the goo.'))
+  );
+
   e.add('modern_industrialization:nuke', Text.darkGray("No, it won't explode."));
 });
