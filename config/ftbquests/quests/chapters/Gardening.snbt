@@ -1,0 +1,900 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "Gardening"
+	group: "5016E3C5975D88DE"
+	id: "36F47DCAC3D28F1B"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "443DFD3FB9E0BA2F"
+			tasks: [{
+				id: "268DC896793A48C7"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["443DFD3FB9E0BA2F"]
+			id: "2C4E81B5F427DECD"
+			tasks: [{
+				id: "310C3BFD53972F70"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"2C4E81B5F427DECD"
+				"310C3BFD53972F70"
+			]
+			id: "13A991D769FF6E2A"
+			tasks: [
+				{
+					id: "5397C5FA8788480F"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:seeds/rice)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "73B852C41DE1F864"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:crops/rice)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"310C3BFD53972F70"
+				"2C4E81B5F427DECD"
+			]
+			id: "6F760612E07E3CBA"
+			tasks: [
+				{
+					id: "583D442E9246056C"
+					item: { count: 1, id: "sushigocrafting:soy_seeds" }
+					type: "item"
+				}
+				{
+					id: "1F050DBDD525D019"
+					item: { count: 1, id: "sushigocrafting:soy_bean" }
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2C4E81B5F427DECD"]
+			id: "4D02897DB2CE4C25"
+			tasks: [
+				{
+					id: "1CF10A5C15E94FE0"
+					item: { count: 1, id: "sushigocrafting:wasabi_seeds" }
+					type: "item"
+				}
+				{
+					id: "5179F26DB4ADB5F2"
+					item: { count: 1, id: "sushigocrafting:wasabi_root" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2C4E81B5F427DECD"]
+			id: "7946DBB127444E4D"
+			tasks: [
+				{
+					id: "166576BF60E3EAF4"
+					item: { count: 1, id: "sushigocrafting:cucumber_seeds" }
+					type: "item"
+				}
+				{
+					id: "53254D4E6F73BEEE"
+					item: { count: 1, id: "sushigocrafting:cucumber" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2C4E81B5F427DECD"]
+			id: "6A7715246D7D7BD4"
+			tasks: [
+				{
+					id: "0F03E1709CAF5A76"
+					item: { count: 1, id: "sushigocrafting:sesame_seeds" }
+					type: "item"
+				}
+				{
+					id: "72ED01E9F4BA0329"
+					item: { components: { "sushigocrafting:amount": 50 }, count: 1, id: "sushigocrafting:sesame_seed" }
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2C4E81B5F427DECD"]
+			id: "4DC59BCF8833CC3C"
+			tasks: [
+				{
+					id: "56D464DACE01B3B5"
+					item: { count: 1, id: "sushigocrafting:avocado_sapling" }
+					type: "item"
+				}
+				{
+					id: "31DBE4685D1FAE05"
+					item: { count: 1, id: "sushigocrafting:avocado" }
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6131E5E910CDFFBF"]
+			id: "59EE97EF70F6F962"
+			tasks: [
+				{
+					id: "0FF55D7FA5CEAD32"
+					item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:seeds/flax)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "51B66D84E716EA66"
+					item: { count: 1, id: "supplementaries:flax" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["59EC9D8641CF67B8"]
+			id: "3068A4024A893DF9"
+			tasks: [
+				{
+					id: "35FC3D759D4FB494"
+					item: { count: 1, id: "biomeswevegone:pale_pumpkin_seeds" }
+					type: "item"
+				}
+				{
+					id: "78B34E039ADF2853"
+					item: { count: 1, id: "biomeswevegone:pale_pumpkin" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["443DFD3FB9E0BA2F"]
+			id: "1687FEFDB90272B0"
+			tasks: [{
+				id: "0BA54BE324AE1978"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "4D36978500540A70"
+			tasks: [
+				{
+					id: "61A92E5A351323AD"
+					item: { count: 1, id: "farmersdelight:cabbage_seeds" }
+					type: "item"
+				}
+				{
+					id: "0BB87BD197310404"
+					item: { count: 1, id: "farmersdelight:cabbage" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "0BFB97280F4E46AD"
+			tasks: [
+				{
+					id: "7E8DC09F7CB7864B"
+					item: { count: 1, id: "farmersdelight:tomato_seeds" }
+					type: "item"
+				}
+				{
+					id: "05F8B7B1900C6121"
+					item: { count: 1, id: "farmersdelight:tomato" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "180DF0A4F48D98B9"
+			tasks: [{
+				id: "227A7AB2725E619A"
+				item: { count: 1, id: "farmersdelight:onion" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "66F6ED45F592A609"
+			tasks: [
+				{
+					id: "6FEB75FBD0737E6E"
+					item: { count: 1, id: "rusticdelight:cotton_seeds" }
+					type: "item"
+				}
+				{
+					id: "3EB79784DF1AB7F5"
+					item: { count: 1, id: "rusticdelight:cotton_boll" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "4ACA16837329BE5D"
+			tasks: [
+				{
+					id: "6D8500EC12F6A850"
+					item: { count: 1, id: "rusticdelight:bell_pepper_seeds" }
+					type: "item"
+				}
+				{
+					id: "00B7F86E52820C73"
+					item: { count: 1, id: "rusticdelight:bell_pepper_green" }
+					type: "item"
+				}
+				{
+					id: "0A13FFBC3F75D8B3"
+					item: { count: 1, id: "rusticdelight:bell_pepper_yellow" }
+					type: "item"
+				}
+				{
+					id: "2AC85F691DC7C0F2"
+					item: { count: 1, id: "rusticdelight:bell_pepper_red" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "51ECF72F223BDB3A"
+			tasks: [{
+				id: "54511D7C14FFFA92"
+				item: { count: 1, id: "rusticdelight:coffee_beans" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "1FE6C137EC44302C"
+			tasks: [{
+				id: "4E775BAB4EB29C69"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:crops/garlic)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "65043D06CD1BCB53"
+			tasks: [
+				{
+					id: "74B7922DA229BDE0"
+					item: { count: 1, id: "dumplings_delight:garlic_chive_seeds" }
+					type: "item"
+				}
+				{
+					id: "4972A1A3E1D10FCD"
+					item: { count: 1, id: "dumplings_delight:garlic_chive" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "1FE951C1CC0D3EF1"
+			tasks: [{
+				id: "74A3CD68B229C7BD"
+				item: { count: 1, id: "dumplings_delight:greenonion" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "7931987BD172464D"
+			tasks: [
+				{
+					id: "129DDDFCB83257B8"
+					item: { count: 1, id: "dumplings_delight:fennel_seeds" }
+					type: "item"
+				}
+				{
+					id: "2D020041F49AC7EE"
+					item: { count: 1, id: "dumplings_delight:fennel" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "43CC79E605DA3F6E"
+			tasks: [
+				{
+					id: "1060A3BCB9271D3F"
+					item: { count: 1, id: "dumplings_delight:eggplant_seeds" }
+					type: "item"
+				}
+				{
+					id: "6343F4B6C84C23D5"
+					item: { count: 1, id: "dumplings_delight:eggplant" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6131E5E910CDFFBF"]
+			id: "569CE57C377AB1B7"
+			tasks: [
+				{
+					id: "2A8B957930B4ED2D"
+					item: { count: 1, id: "actuallyadditions:canola_seeds" }
+					type: "item"
+				}
+				{
+					id: "74CAE25F931D4644"
+					item: { count: 1, id: "actuallyadditions:canola" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			dependency_requirement: "all_started"
+			id: "377DAEFC2CA2C122"
+			tasks: [
+				{
+					id: "13AFB71ACADB708F"
+					item: { count: 1, id: "fruitsdelight:hawberry_sapling" }
+					type: "item"
+				}
+				{
+					id: "5595D74A16A3B12C"
+					item: { count: 1, id: "fruitsdelight:hawberry" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "7AFED4254BA881B2"
+			tasks: [
+				{
+					id: "0A1AD24DDBE518B6"
+					item: { count: 1, id: "fruitsdelight:bayberry_sapling" }
+					type: "item"
+				}
+				{
+					id: "0115BD35022F75A7"
+					item: { count: 1, id: "fruitsdelight:bayberry" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "60225C11880C3534"
+			tasks: [
+				{
+					id: "08D7E370DDD274A6"
+					item: { count: 1, id: "fruitsdelight:blueberry_bush" }
+					type: "item"
+				}
+				{
+					id: "5BA5DAB517687C02"
+					item: { count: 1, id: "fruitsdelight:blueberry" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "6D0926D173AA5D06"
+			tasks: [{
+				id: "416AC6D736BA997D"
+				item: { count: 1, id: "fruitsdelight:cranberry" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "1C99FD35D2C4EAF7"
+			tasks: [
+				{
+					id: "3BEEAE6EBDB0042E"
+					item: { count: 1, id: "fruitsdelight:orange_sapling" }
+					type: "item"
+				}
+				{
+					id: "44DEE7EE48AF7804"
+					item: { count: 1, id: "fruitsdelight:orange" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "2BF12A2184F8E99D"
+			tasks: [
+				{
+					id: "411D03C99226ED68"
+					item: { count: 1, id: "fruitsdelight:persimmon_sapling" }
+					type: "item"
+				}
+				{
+					id: "1D8D6362F368F838"
+					item: { count: 1, id: "fruitsdelight:persimmon" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "6F1F240CD3A5CB1F"
+			tasks: [
+				{
+					id: "7D4D7DFF4BF375F4"
+					item: { count: 1, id: "fruitsdelight:lemon_seeds" }
+					type: "item"
+				}
+				{
+					id: "5C1BF22ADBE4A7D2"
+					item: { count: 1, id: "fruitsdelight:lemon" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["443DFD3FB9E0BA2F"]
+			id: "59EC9D8641CF67B8"
+			tasks: [{
+				id: "41EC40C5739AA13D"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["59EC9D8641CF67B8"]
+			id: "7D9DFB393DF498B1"
+			tasks: [{
+				id: "04460B9C91DE1F20"
+				item: { count: 1, id: "biomeswevegone:blueberries" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "125623C9AD439EB9"
+			tasks: [
+				{
+					id: "3B1A85D34D09B611"
+					item: { count: 1, id: "fruitsdelight:pear_sapling" }
+					type: "item"
+				}
+				{
+					id: "164739A3F122DEF3"
+					item: { count: 1, id: "fruitsdelight:pear" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "35CDB75FB5067520"
+			tasks: [
+				{
+					id: "64EDACC1E5CE705A"
+					item: { count: 1, id: "fruitsdelight:apple_sapling" }
+					type: "item"
+				}
+				{
+					id: "4595E9444BDDA4BC"
+					item: { count: 1, id: "minecraft:apple" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["59EC9D8641CF67B8"]
+			id: "044EA6B07D6C3E41"
+			tasks: [
+				{
+					id: "3CDCC15A631D1D94"
+					item: { count: 1, id: "biomeswevegone:skyris_sapling" }
+					type: "item"
+				}
+				{
+					id: "5EE0A576F1FACE62"
+					item: { count: 1, id: "biomeswevegone:green_apple" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["443DFD3FB9E0BA2F"]
+			id: "6131E5E910CDFFBF"
+			tasks: [{
+				id: "17EAF020DF15D376"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "2A4193454BA15A9E"
+			tasks: [
+				{
+					id: "2AD579A5D6855485"
+					item: { count: 1, id: "fruitsdelight:durian_sapling" }
+					type: "item"
+				}
+				{
+					id: "3E512AC2895CEC08"
+					item: { count: 1, id: "fruitsdelight:durian" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "3C2B6ABA8420BF3B"
+			tasks: [
+				{
+					id: "6C26BAA0F46C8A54"
+					item: { count: 1, id: "fruitsdelight:mango_sapling" }
+					type: "item"
+				}
+				{
+					id: "6110586612247581"
+					item: { count: 1, id: "fruitsdelight:mango" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "65210BAE0163445F"
+			tasks: [
+				{
+					id: "0C78E80CA2F0CF6B"
+					item: { count: 1, id: "fruitsdelight:lychee_sapling" }
+					type: "item"
+				}
+				{
+					id: "22370AA117B0D2A7"
+					item: { count: 1, id: "fruitsdelight:lychee" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6131E5E910CDFFBF"]
+			id: "2ABCACEBACE7A37D"
+			tasks: [
+				{
+					id: "634DD5B7429956F4"
+					item: { count: 1, id: "integrateddynamics:menril_sapling" }
+					type: "item"
+				}
+				{
+					id: "532F270BA0B86908"
+					item: { count: 1, id: "integrateddynamics:menril_berries" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6131E5E910CDFFBF"]
+			id: "293C22FC12999302"
+			tasks: [
+				{
+					id: "3AFBCDD0976A8C57"
+					item: { count: 1, id: "eternal_starlight:lunar_sapling" }
+					type: "item"
+				}
+				{
+					id: "299EE4AC9D722B5C"
+					item: { count: 1, id: "eternal_starlight:lunar_berries" }
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6131E5E910CDFFBF"]
+			id: "4EF336CC2C697C6E"
+			tasks: [{
+				id: "16F4B84DFCEB4BFA"
+				item: { count: 1, id: "deeperdarker:bloom_berries" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["59EC9D8641CF67B8"]
+			id: "306E118494E0FA08"
+			tasks: [{
+				id: "6C54C1D4FABF5B90"
+				item: { count: 1, id: "biomeswevegone:blue_glowcane_shoot" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["59EC9D8641CF67B8"]
+			id: "20F0FCFAEBDE57D1"
+			tasks: [{
+				id: "669B787025545DBE"
+				item: { count: 1, id: "biomeswevegone:green_glowcane_shoot" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["59EC9D8641CF67B8"]
+			id: "06573610058AE660"
+			tasks: [{
+				id: "0CB22198171C8395"
+				item: { count: 1, id: "biomeswevegone:red_glowcane_shoot" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["59EC9D8641CF67B8"]
+			id: "132ED1F976F1D0AB"
+			tasks: [{
+				id: "1BD1BD58CBD7A2A9"
+				item: { count: 1, id: "biomeswevegone:yellow_glowcane_shoot" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["59EC9D8641CF67B8"]
+			id: "65F98AFE7EC4CE62"
+			tasks: [
+				{
+					id: "33181E1238B9162D"
+					item: { count: 1, id: "biomeswevegone:baobab_sapling" }
+					type: "item"
+				}
+				{
+					id: "3FFFD5D62F244A8A"
+					item: { count: 1, id: "biomeswevegone:baobab_fruit" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["59EC9D8641CF67B8"]
+			id: "525D3BBD78692516"
+			tasks: [
+				{
+					id: "00CC9EF7340AC92F"
+					item: { count: 1, id: "biomeswevegone:spirit_sapling" }
+					type: "item"
+				}
+				{
+					id: "71B9317516302CFB"
+					item: { count: 1, id: "biomeswevegone:soul_fruit" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["59EC9D8641CF67B8"]
+			id: "3AA43F4E91E31E82"
+			tasks: [
+				{
+					id: "3B099CC6C9DECB3B"
+					item: { count: 1, id: "biomeswevegone:yucca_sapling" }
+					type: "item"
+				}
+				{
+					id: "3FEA7C6C33389858"
+					item: { count: 1, id: "biomeswevegone:yucca_fruit" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["59EC9D8641CF67B8"]
+			id: "76C83F5BB91BA6A4"
+			tasks: [
+				{
+					id: "2535AEBDC1D18964"
+					item: { count: 1, id: "biomeswevegone:white_puffball_spores" }
+					type: "item"
+				}
+				{
+					id: "517715066D542ADA"
+					item: { count: 1, id: "biomeswevegone:white_puffball_cap" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "7BC09DD0D14DE860"
+			tasks: [
+				{
+					id: "2ED09A5780D28F43"
+					item: { count: 1, id: "fruitsdelight:pineapple_sapling" }
+					type: "item"
+				}
+				{
+					id: "56DE0B5114C1CC7D"
+					item: { count: 1, id: "fruitsdelight:pineapple" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "55B4497680B48819"
+			tasks: [
+				{
+					id: "6D06EA18455807AF"
+					item: { count: 1, id: "fruitsdelight:peach_sapling" }
+					type: "item"
+				}
+				{
+					id: "2806890273934212"
+					item: { count: 1, id: "fruitsdelight:peach" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "28D8463C6036B3BF"
+			tasks: [
+				{
+					id: "014AFC57B91A0153"
+					item: { count: 1, id: "fruitsdelight:hamimelon_seeds" }
+					type: "item"
+				}
+				{
+					id: "11CDF04A16EF717A"
+					item: { count: 1, id: "fruitsdelight:hamimelon" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "5B34A2176998C9A4"
+			tasks: [
+				{
+					id: "7BAF748A64F1B87D"
+					item: { count: 1, id: "fruitsdelight:fig_sapling" }
+					type: "item"
+				}
+				{
+					id: "34EED377FCCBACA8"
+					item: { count: 1, id: "fruitsdelight:fig" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1687FEFDB90272B0"]
+			id: "0DC8081D9EA61411"
+			tasks: [
+				{
+					id: "5EB555D73149B2F5"
+					item: { count: 1, id: "fruitsdelight:kiwi_sapling" }
+					type: "item"
+				}
+				{
+					id: "6206BAFDC18FC613"
+					item: { count: 1, id: "fruitsdelight:kiwi" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.5d
+		}
+	]
+}
