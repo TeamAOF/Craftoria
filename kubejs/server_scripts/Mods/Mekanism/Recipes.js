@@ -7,6 +7,7 @@ ServerEvents.recipes(e => {
   mekanism.metallurgicInfusing('9x mekanism:basic_control_circuit', '#c:storage_blocks/osmium', '180x mekanism:redstone');
   mekanism.oxidizing('200x mekanism:osmium', '#c:ingots/osmium');
   mekanism.oxidizing('1800x mekanism:osmium', '#c:storage_blocks/osmium');
+  mekanism.oxidizing('1600x mekanism:osmium', 'mekanism_extras:enriched_osmium');
 
   // Create Compat
   mekanism.metallurgicInfusing('create:rose_quartz', '#c:gems/quartz', '80x mekanism:redstone');
