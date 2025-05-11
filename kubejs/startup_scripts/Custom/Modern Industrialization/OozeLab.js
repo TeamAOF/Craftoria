@@ -11,7 +11,7 @@ MIMachineEvents.registerMachines(event => {
   const grate = event.memberOfBlock('factory_blocks:grate');
   const rGrate = event.memberOfBlock('factory_blocks:rgrate');
   const reactorGlass = event.memberOfBlock('mekanismgenerators:reactor_glass');
-  const timeFluid = event.memberOfBlock('justdirethings:portal_fluid_block');
+  const timeFluid = event.memberOfBlock('justdirethings:time_fluid_block');
   const goo = event.memberOfBlock('justdirethings:gooblock_tier4');
   const oozeLabShapeBuilder = event.startShape('factory_grate');
 
@@ -33,7 +33,7 @@ MIMachineEvents.registerMachines(event => {
         } else if (z === 1) {
           block = reactorGlass;
         } else if (z === 2) {
-          continue; // placeholder for timeFluid
+          block = timeFluid;
         } else if (z === 3) {
           block = goo;
         }
@@ -63,7 +63,7 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
   const grate = event.memberOfBlock('factory_blocks:grate');
   const rGrate = event.memberOfBlock('factory_blocks:rgrate');
   const reactorGlass = event.memberOfBlock('mekanismgenerators:reactor_glass');
-  const timeFluid = event.memberOfBlock('justdirethings:portal_fluid_block');
+  const timeFluid = event.memberOfBlock('justdirethings:time_fluid_block');
   const goo = event.memberOfBlock('justdirethings:gooblock_tier4');
   const oozeLabShapeBuilder = event.startShape('factory_grate');
 
@@ -85,7 +85,7 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
         } else if (z === 1) {
           block = reactorGlass;
         } else if (z === 2) {
-          continue; // placeholder for timeFluid
+          block = timeFluid;
         } else if (z === 3) {
           block = goo;
         }
