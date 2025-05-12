@@ -3,19 +3,26 @@
 ////////////////////////
 
 ServerEvents.recipes(e => {
-  const { assembler, macerator, compressor, cutting_machine, electrolyzer, chemical_reactor } = e.recipes.modern_industrialization;
+  // prettier-ignore
+  const { assembler, macerator, compressor, cutting_machine, electrolyzer, chemical_reactor, oil_drilling_rig } = e.recipes.modern_industrialization;
 
-  // Obsidian Dust
-  macerator(2, 100).itemOut('4x mekanism:dust_obsidian').itemIn('#c:obsidians/normal').id('craftoria:mi/obsidian_dust');
+  macerator(2, 100).itemOut('4x mekanism:dust_obsidian').itemIn('#c:obsidians/normal').id('craftoria:mi/macerator/obsidian_dust');
+  macerator(4, 20)
+    .itemOut('advanced_ae:quantum_infused_dust')
+    .itemIn('advanced_ae:shattered_singularity')
+    .id('craftoria:mi/macerator/quantum_infused_dust');
 
   // Ores > Raw
-  macerator(2, 100).itemOut('3x modern_industrialization:raw_silver').itemIn('#c:ores/silver').id('craftoria:mi/ores/raw_silver');
-  macerator(2, 100).itemOut('3x irons_spellbooks:raw_mithril').itemIn('#c:ores/mithril').id('craftoria:mi/ores/raw_mithril');
-  macerator(2, 100).itemOut('2x actuallyadditions:black_quartz').itemIn('#c:ores/black_quartz').id('craftoria:mi/ores/black_quartz');
-  macerator(2, 100).itemOut('3x create:raw_zinc').itemIn('#c:ores/zinc').id('craftoria:mi/ores/raw_zinc');
+  macerator(2, 100).itemOut('3x modern_industrialization:raw_silver').itemIn('#c:ores/silver').id('craftoria:mi/macerator/ores/raw_silver');
+  macerator(2, 100).itemOut('3x irons_spellbooks:raw_mithril').itemIn('#c:ores/mithril').id('craftoria:mi/macerator/ores/raw_mithril');
+  macerator(2, 100)
+    .itemOut('2x actuallyadditions:black_quartz')
+    .itemIn('#c:ores/black_quartz')
+    .id('craftoria:mi/macerator/ores/black_quartz');
+  macerator(2, 100).itemOut('3x create:raw_zinc').itemIn('#c:ores/zinc').id('craftoria:mi/macerator/ores/raw_zinc');
 
   e.replaceInput(
-    { id: 'industrialization_overdrive:machines/multi_processing_array/craft' },
+    { output: 'industrialization_overdrive:multi_processing_array' },
     'modern_industrialization:assembler',
     'extended_industrialization:processing_array'
   );
@@ -104,7 +111,6 @@ ServerEvents.recipes(e => {
   });
 
   // Powah Conversion
-
   chemical_reactor(10, 240)
     .itemIn('powah:uraninite')
     .itemIn('modern_industrialization:iron_dust')
@@ -147,17 +153,23 @@ ServerEvents.recipes(e => {
   e.shaped('modern_industrialization:quantum_fluid_input_hatch', ['T', 'H'], {
     T: 'modern_industrialization:quantum_tank',
     H: 'modern_industrialization:quantum_machine_hull',
-  }).id('craftoria:mi/quantum_fluid_input_hatch');
+  }).id('craftoria:mi/shaped/quantum_fluid_input_hatch');
   e.shaped('modern_industrialization:quantum_fluid_output_hatch', ['H', 'T'], {
     T: 'modern_industrialization:quantum_tank',
     H: 'modern_industrialization:quantum_machine_hull',
-  }).id('craftoria:mi/quantum_fluid_output_hatch');
+  }).id('craftoria:mi/shaped/quantum_fluid_output_hatch');
   e.shaped('modern_industrialization:quantum_item_input_hatch', ['T', 'H'], {
     T: 'modern_industrialization:quantum_barrel',
     H: 'modern_industrialization:quantum_machine_hull',
-  }).id('craftoria:mi/quantum_item_input_hatch');
+  }).id('craftoria:mi/shaped/quantum_item_input_hatch');
   e.shaped('modern_industrialization:quantum_item_output_hatch', ['H', 'T'], {
     T: 'modern_industrialization:quantum_barrel',
     H: 'modern_industrialization:quantum_machine_hull',
-  }).id('craftoria:mi/quantum_item_output_hatch');
+  }).id('craftoria:mi/shaped/quantum_item_output_hatch');
+
+  oil_drilling_rig(64, 100)
+    .fluidOut('16000x minecraft:lava')
+    .itemIn('modern_industrialization:gold_drill', 0.25)
+    .id('craftoria:mi/oil_rig/lava')
+    .dimension('nether');
 });
