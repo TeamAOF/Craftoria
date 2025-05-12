@@ -124,6 +124,7 @@ KeyBindJSEvents.modify(event => {
     'artifacts.key.night_vision_goggles.toggle': { remove: true },
     'artifacts.key.helium_flamingo.activate': { remove: true },
     'artifacts.key.universal_attractor.toggle': { remove: true },
+    'artifacts.key.charm_of_shrinking.toggle': { remove: true },
     'key.kubejs.kubedex': { remove: true },
     'nolijium.toggle_light_level_overlay': { remove: true },
   };

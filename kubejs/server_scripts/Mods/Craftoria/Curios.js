@@ -135,4 +135,5 @@ ServerEvents.tags('item', e => {
   e.add('curios:curio', ['simplemagnets:basicmagnet', 'simplemagnets:advancedmagnet', 'artifacts:whoopee_cushion']);
   e.add('curios:body', ['mekanism:jetpack', 'mekanism:jetpack_armored']);
   e.add('curios:charm', ['reliquary:fortune_coin']);
+  e.add('curios:feet', ['mekanism:free_runners', 'mekanism:free_runners_armored']);
 });
