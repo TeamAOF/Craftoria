@@ -38,6 +38,9 @@ StartupEvents.registry('item', e => {
     .tag(`modern_industrialization:replicator_blacklist`)
     .tag(`craftoria:replicator_1_blacklist`)
     .rarity('Epic');
+  e.create('craftoria:garlic_bread')
+		.displayName('Garlic Bread')
+  	.food(food => { food.saturation(1).nutrition(6).eatSeconds(2)});
 });
 
 ItemEvents.modification(event => {
