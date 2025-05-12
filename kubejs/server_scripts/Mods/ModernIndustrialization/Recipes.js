@@ -170,6 +170,6 @@ ServerEvents.recipes(e => {
   oil_drilling_rig(64, 100)
     .fluidOut('16000x minecraft:lava')
     .itemIn('modern_industrialization:gold_drill', 0.25)
-    .id('craftoria:mi/oil_rig/lava')
-    .dimension('nether');
+    .dimension('minecraft:the_nether')
+    .id('craftoria:mi/oil_rig/lava');
 });
