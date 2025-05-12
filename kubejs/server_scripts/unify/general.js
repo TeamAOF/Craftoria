@@ -233,4 +233,37 @@ ServerEvents.recipes(e => {
   );
 
   ae.inscriber('inscribe', 'ae2:ender_dust', '#c:ender_pearls', null, null, 'ae2:inscriber/ender_dust');
+
+  e.forEachRecipe({ type: 'pneumaticcraft:thermo_plant' }, kubeRecipe => {
+    let recipe = JSON.parse(kubeRecipe.json.toString());
+    let modifiedRecipe = false;
+
+    if (recipe?.outputs?.fluid_output?.id == 'pneumaticcraft:lubricant') {
+      recipe.outputs.fluid_output.id = 'modern_industrialization:lubricant';
+      modifiedRecipe = true;
+    }
+
+    if (!modifiedRecipe) return;
+
+    logDebug(`Recipe: ${kubeRecipe.getId()}`, `JSON: ${kubeRecipe.json.toString()}`);
+    e.custom(recipe).id(kubeRecipe.getId());
+  });
+
+  e.forEachRecipe({ type: 'pneumaticcraft:amadron' }, kubeRecipe => {
+    let recipe = JSON.parse(kubeRecipe.json.toString());
+    let modifiedRecipe = false;
+
+    if (recipe?.output?.resource?.id == 'pneumaticcraft:lubricant') {
+      recipe.output.resource.id = 'modern_industrialization:lubricant';
+      modifiedRecipe = true;
+    } else if (recipe?.input?.resource?.id == 'pneumaticcraft:lubricant') {
+      recipe.input.resource.id = 'modern_industrialization:lubricant';
+      modifiedRecipe = true;
+    }
+
+    if (!modifiedRecipe) return;
+
+    logDebug(`Recipe: ${kubeRecipe.getId()}`, `JSON: ${kubeRecipe.json.toString()}`);
+    e.custom(recipe).id(kubeRecipe.getId());
+  });
 });

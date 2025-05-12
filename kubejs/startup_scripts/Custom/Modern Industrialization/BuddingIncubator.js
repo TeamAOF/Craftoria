@@ -23,21 +23,17 @@ MIMachineEvents.registerMachines(event => {
     .key('G', glassSlab, noHatch)
     .build();
 
+  // prettier-ignore
   event.simpleElectricCraftingMultiBlock(
-    'Budding Incubator',
-    'budding_incubator',
-    BUDDING_INCUBATOR,
-    buddingIncubatorShape,
+    'Budding Incubator', 'budding_incubator',
+    BUDDING_INCUBATOR, buddingIncubatorShape,
     event.progressBar(77, 33, 'arrow'),
     itemInputs => {},
-    itemOutputs => itemOutputs.addSlots(102, 35, 1, 4),
-    fluidInputs => fluidInputs.addSlots(56, 35, 1, 2),
+    itemOutputs => itemOutputs.addSlots(102, 35, 1, 2),
+    fluidInputs => fluidInputs.addSlots(56, 35, 1, 1),
     fluidOutputs => {},
-    'sky_stone_brick_casing',
-    'budding_incubator',
-    true,
-    false,
-    false
+    'sky_stone_brick_casing', 'budding_incubator',
+    true, false, false
   );
 });
 
@@ -60,18 +56,13 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
     .key('G', glassSlab, noHatch)
     .build();
 
+  // prettier-ignore
   event.electric(
-    'Budding Incubator',
-    'batch_budding_incubator',
-    BUDDING_INCUBATOR,
-    buddingIncubatorShape,
+    'Budding Incubator', 'batch_budding_incubator',
+    BUDDING_INCUBATOR, buddingIncubatorShape,
     workStations => workStations.add('modern_industrialization:budding_incubator'),
-    'modern_industrialization:sky_stone_brick_casing',
-    'budding_incubator',
-    true,
-    false,
-    false,
-    8,
-    0.75
+    'modern_industrialization:sky_stone_brick_casing', 'budding_incubator',
+    true, false, false,
+    8, 0.75
   );
 });

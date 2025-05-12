@@ -1,3 +1,4 @@
+// priority: 10000
 /**
  * @typedef {[Special.Item, number, number?]} MIItem A tuple of [item, amount, probability?]
  * @typedef {[Special.Fluid, number, number?]} MIFluid A tuple of [fluid, amount, probability?]

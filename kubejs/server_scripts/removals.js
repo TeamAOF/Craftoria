@@ -21,6 +21,8 @@ const globalItemRemovals = [
   'create:copycat_panel',
   'mffs:anti_personnel_module',
   'mffs:confiscation_module',
+  'pylons:infusion_pylon',
+  'pylons:potion_filter',
 ];
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
@@ -39,6 +41,7 @@ ServerEvents.recipes(event => {
     'supplementaries:sus_gravel',
     'supplementaries:sus_sand',
     'mekanism:sawing/torch',
+    'ars_elemental:soulbound_1',
   ];
 
   /** @type {Special.Item[]} */

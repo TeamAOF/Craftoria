@@ -7,7 +7,9 @@ ClientEvents.lang('en_us', e => {
     'pyro_tier.industrialization_overdrive.modern_industrialization.superconductor_coil': 'Superconductor',
 
     'block.modern_industrialization.replicator': 'Replicator Mk II',
-    'machine_casing.modern_industrialization.sky_stone_brick_casing': 'Sky Stone Brick Casing',
+
+    // Curio slots
+    'curios.identifier.qio': 'Terminal',
 
     // Renaming IF gears
     'item.industrialforegoing.iron_gear': 'Crude Iron Gear',
@@ -32,21 +34,6 @@ ClientEvents.lang('en_us', e => {
     'category.craftoria.tools': 'Tools',
     'category.craftoria.guides': 'Guides',
     'category.craftoria.ftb': 'FTB',
-    'key.excavein.excavein.modifier.none': '[Modifier] None',
-    'key.excavein.excavein.modifier.side': '[Modifier] Side',
-    'key.excavein.excavein.modifier.surface': '[Modifier] Surface',
-    'key.excavein.excavein.shape.diagonal_tunnel': '[Shape] Diagonal Tunnel',
-    'key.excavein.excavein.shape.excavate': '[Shape] Excavate',
-    'key.excavein.excavein.shape.large_tunnel': '[Shape] Large Tunnel',
-    'key.excavein.excavein.shape.selection': '[Shape] Selection',
-    'key.excavein.excavein.shape.tunnel': '[Shape] Tunnel',
-    'key.excavein.excavein.shape.vein': '[Shape] Vein',
-    'key.excavein.modifier_scroll': 'Modifier Scroll',
-    'key.excavein.next_modifier': 'Next Modifier',
-    'key.excavein.next_shape': 'Next Shape',
-    'key.excavein.prev_modifier': 'Previous Modifier',
-    'key.excavein.prev_shape': 'Previous Shape',
-    'key.excavein.selection_activation': 'Activate',
     'key.theurgy.category': 'Theurgy',
     'keybind.advancedperipherals.description': '[Adv Peripherals] Show Description',
     'key.ars_nouveau.open_documentation': '[Ars] Open Documentation',
@@ -73,7 +60,13 @@ ClientEvents.lang('en_us', e => {
       }
     } else {
       langEntries[`block.${langKey}`] = machine.name;
-      langEntries[`rei_categories.${langKey}`] = machine.name;
+      if (!id.includes('batch_')) {
+        let category = `${machine.name}`;
+        if (category.includes(' [DUMMY]')) category = category.replace(' [DUMMY]', '');
+        // console.log(`Adding rei_categories.${langKey} -> ${category}`);
+        langEntries[`rei_categories.${langKey}`] = category;
+        if (machine.mod === 'mi_tweaks') langEntries[`rei_categories.modern_industrialization.${id}`] = category;
+      }
     }
   }
 

@@ -13,7 +13,7 @@ ServerEvents.tags('item', e => {
   // Crops & Seeds
   e.add('c:seeds/cabbage', ['farmersdelight:cabbage_seeds', 'dumplings_delight:chinese_cabbage_seeds']);
   e.add('c:seeds/tomato', 'farmersdelight:tomato_seeds');
-  e.add('c:seeds/rice', 'sushigocrafting:rice_seeds');
+  e.add('c:seeds/rice', 'farmersdelight:rice');
   e.add('c:seeds/eggplant', 'dumplings_delight:eggplant_seeds');
   e.add('c:crops/garlic', 'dumplings_delight:garlic');
   e.add('c:crops/green_onion', 'dumplings_delight:greenonion');
@@ -41,34 +41,6 @@ ServerEvents.tags('item', e => {
     'modern_industrialization:basic_machine_hull',
     'mekanism:ultimate_tier_installer',
   ]);
-
-  // Curios
-  e.add('curios:curio', [
-    'simplemagnets:basicmagnet',
-    'simplemagnets:advancedmagnet',
-    'integratedterminals:terminal_storage_portable',
-    'occultism:storage_remote',
-    'artifacts:whoopee_cushion',
-  ]);
-  e.add('curios:body', ['mekanism:jetpack', 'mekanism:jetpack_armored']);
-  e.add('curios:charm', ['reliquary:fortune_coin']);
-
-  // let curioToBody = [
-  //   'relics:midnight_robe',
-  //   'relics:elytra_booster',
-  //   'reliquified_twilight_forest:scaled_cloak',
-  //   'reliquified_ars_nouveau:cloak_of_concealment',
-  // ];
-
-  // curioToBody.forEach((id) => {
-  //   e.add('curios:body', id);
-  //   e.remove('curios:back', id);
-  // });
-
-  // e.add('curios:magic_trinket', /^alshanex_familiars:.*_trinket$/);
-  // e.add('curios:magic_curio', /^alshanex_familiars:.*_curio$/);
-
-  e.remove('curios:charm', ['phantoms_utilities:sleep_charm']);
 
   // Chisel Reborn
   Ingredient.of('@chisel').itemIds.forEach(id => {
@@ -224,13 +196,11 @@ ServerEvents.tags('entity_type', e => {
 
   e.add('ftbchunks:entity_interact_whitelist', ['minecraft:villager', 'minecraft:wandering_trader']);
 
+  e.add('apothic_spawners:blacklisted_from_spawners', ['#craftoria:mob_blacklist']);
+
   e.add('mob_grinding_utils:no_swab', '#craftoria:mob_blacklist');
 
   e.add('industrialforegoing:mob_crusher_blacklist', ['#c:bosses', '#neoforge:bosses']);
 
   e.add('industrialforegoing:mob_duplicator_blacklist', '#craftoria:mob_blacklist');
-});
-
-ServerEvents.tags('enchantment', e => {
-  e.remove('minecraft:non_treasure', ['apothic_enchanting:boon_of_the_earth']);
 });

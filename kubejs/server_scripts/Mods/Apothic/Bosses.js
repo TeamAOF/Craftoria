@@ -1,3 +1,11 @@
+LootJS.lootTables(e => {
+  ['ice', 'fire', 'nature', 'dark'].forEach(element => {
+    e.create(`craftoria:bonus/${element}_essence`).createPool(pool => {
+      pool.addEntry(`craftoria:${element}_essence`);
+    });
+  });
+});
+
 ServerEvents.generateData('after_mods', e => {
   // TODO: make this actually work
   let MakeBoss = (entity, name, constraints, valid_gear_sets, weights, stats) => {
@@ -123,7 +131,7 @@ ServerEvents.generateData('after_mods', e => {
   let invaderTemplate = {
     type: 'apotheosis:invader',
     basic_data: {
-      bonus_loot: ['apotheosis:bonus/rare_boss_drops'],
+      bonus_loot: ['apotheosis:entity/boss_drops', 'apotheosis:entity/rare_boss_drops'],
       valid_gear_sets: {
         haven: ['#haven_ranged'],
         frontier: ['#frontier_ranged'],
@@ -238,6 +246,7 @@ ServerEvents.generateData('after_mods', e => {
         height: 3.6,
         width: 1.2,
       },
+      bonus_loot: ['craftoria:bonus/ice_essence'],
     },
     {
       entity: 'bosses_of_mass_destruction:obsidilith',
@@ -246,14 +255,16 @@ ServerEvents.generateData('after_mods', e => {
         height: 3.6,
         width: 1.2,
       },
+      bonus_loot: ['craftoria:bonus/dark_essence'],
     },
     {
       entity: 'bosses_of_mass_destruction:gauntlet',
       name: 'Herbert',
       size: {
-        height: 3.6,
-        width: 1.2,
+        height: 1,
+        width: 1,
       },
+      bonus_loot: ['craftoria:bonus/fire_essence'],
     },
     {
       entity: 'bosses_of_mass_destruction:void_blossom',
@@ -262,22 +273,24 @@ ServerEvents.generateData('after_mods', e => {
         height: 3.6,
         width: 1.2,
       },
+      bonus_loot: ['craftoria:bonus/nature_essence'],
     },
   ];
 
   bomdBosses.forEach(boss => {
     // First grab the invader template, then apply the bomd template on top of it, and finally apply the boss-specific data (if it exists)
-    let bossData = invaderTemplate;
+    let bossData = JSON.parse(JSON.stringify(invaderTemplate));
     bossData.basic_data.name = boss.name;
     bossData.entity = boss.entity;
     bossData.size = boss.size;
 
     bossData.basic_data.spawn_conditions = bomdTemplate.spawn_conditions;
     bossData.basic_data.constraints = bomdTemplate.basic_data.constraints;
-    if (boss.attributes) bossData.stats['apotheosis:mythic'].attribute_modifiers = boss.attributes;
-    else bossData.stats['apotheosis:mythic'].attribute_modifiers = bomdTemplate.attributes;
-    if (boss.effects) bossData.stats['apotheosis:mythic'].effects = boss.effects;
-    else bossData.stats['apotheosis:mythic'].effects = bomdTemplate.effects;
+
+    bossData.stats['apotheosis:mythic'].attribute_modifiers = boss.attributes ?? bomdTemplate.attributes;
+    bossData.stats['apotheosis:mythic'].effects = boss.effects ?? bomdTemplate.effects;
+
+    if (boss.bonus_loot) boss.bonus_loot.forEach(loot => bossData.basic_data.bonus_loot.push(loot));
     e.json(`craftoria:apothic_invaders/custom_bosses/${boss.entity.split(':')[1]}`, bossData);
   });
 });

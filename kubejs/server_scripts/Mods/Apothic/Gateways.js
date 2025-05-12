@@ -157,12 +157,7 @@ ServerEvents.generateData('after_mods', e => {
     ],
   };
 
-  [
-    { id: 'lich', essence: 'ice' },
-    { id: 'obsidilith', essence: 'dark' },
-    { id: 'gauntlet', essence: 'fire' },
-    { id: 'void_blossom', essence: 'nature' },
-  ].forEach(boss => {
+  ['lich', 'obsidilith', 'gauntlet', 'void_blossom'].forEach(boss => {
     bomdGate.waves.push({
       entities: [
         {
@@ -171,10 +166,6 @@ ServerEvents.generateData('after_mods', e => {
         },
       ],
       rewards: [
-        {
-          type: 'gateways:stack',
-          stack: { id: `craftoria:${boss.essence}_essence` },
-        },
         {
           type: 'gateways:loot_table',
           loot_table: 'craftoria:gate/mythic_affix',

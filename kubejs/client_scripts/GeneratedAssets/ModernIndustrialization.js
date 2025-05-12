@@ -7,6 +7,7 @@ ClientEvents.generateAssets('after_mods', e => {
     brewery: ['mi_sound_addon:distillery'],
   };
 
+  // Machine states and models
   for (let [id, machine] of Object.entries(global.customMIMachines)) {
     /** @type {{mod: Special.Mod, casing: string,overlay: string}} */
     let { mod, overlay, casing } = machine;
@@ -53,6 +54,7 @@ ClientEvents.generateAssets('after_mods', e => {
 
   e.json('mi_sound_addon:sounds', sounds);
 
+  // Hatch states and models
   for (let [id, hatch] of Object.entries(global.customMIHatches)) {
     let mod = 'modern_industrialization';
     let { casing, types } = hatch;
@@ -85,20 +87,15 @@ ClientEvents.generateAssets('after_mods', e => {
         });
 
         e.json(`${mod}:models/block/${id}_${type}_${io}_hatch`, hatchModel);
-
-        // console.log(`Registered hatch: ${id}_${type}_${io}_hatch`);
-        // console.log(`With model: ${mod}:models/block/${id}_${type}_${io}_hatch`);
-
-        // for (let [k, v] of Object.entries(hatchModel)) {
-        //   let logMsg = `Model property: ${k} ->`;
-        //   if (k === 'default_overlays') {
-        //     console.log(logMsg);
-        //     Object.entries(v).forEach(([overlayKey, overlayValue]) => {
-        //       console.log(`  ${overlayKey}: ${overlayValue}`);
-        //     });
-        //   } else console.log(`${logMsg} ${v}`);
-        // }
       });
+    });
+  }
+
+  // Casing models
+  for (let [id, block] of Object.entries(global.customMICasings)) {
+    e.json(`modern_industrialization:models/machine_casing/${id}`, {
+      loader: 'modern_industrialization:use_block_model',
+      block: block,
     });
   }
 });

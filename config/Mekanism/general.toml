@@ -262,7 +262,7 @@ maxSolarNeutronActivatorRate = 64
 	#Ratio of temperature to output amount produced.
 	# Default: 0.4
 	# Range: 0.001 ~ 1000000.0
-	tempMultiplier = 0.4
+	tempMultiplier = 0.8
 	#Heat capacity of Thermal Evaporation Plant layers. This increases the amount of energy needed to increase temperature.
 	# Default: 100.0
 	# Range: 1.0 ~ 1000000.0
@@ -274,7 +274,7 @@ maxSolarNeutronActivatorRate = 64
 	#Amount of output fluid (mB) that the evaporation plant can store.
 	# Default: 10000
 	# Range: > 1
-	outputTankCapacity = 10000
+	outputTankCapacity = 64000
 
 #Settings for configuring the Supercritical Phase Shifter
 [sps]

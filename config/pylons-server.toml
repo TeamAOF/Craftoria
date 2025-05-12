@@ -53,25 +53,17 @@
 	#Effects that may be used in the Infusion Pylon.
 	#List may include either effect IDs (like `minecraft:strength`) or an entire namespace (like `minecraft`).
 	#If the list is empty, then all effects will be allowed except for those specifically denied.
-	infusionAllowedEffects = []
+	infusionAllowedEffects = [
+ 		"minecraft:glowing"
+	]
 	#Effects that may not be used in the Infusion Pylon.
 	#This list will override the allowed effect list.
-	infusionDeniedEffects = [
-		"apothic_attributes:flying",
-		"reliquary:flight",
-		"ars_nouveau:flight",
-		"irons_spellbooks:heartstop",
-		"irons_spellbooks:abyssal_shroud",
-		"irons_spellbooks:evasion",
-		"gametechbcs_spellbooks:flames_reborn",
-		"gametechbcs_spellbooks:reversal",
-		"relics"
-  ]
+	infusionDeniedEffects = []
 	#The maximum potency that can be applied in the Infusion Pylon.
 	#This value is 0-indexed, so a Resistance V potion would be potency 4.
 	# Default: 3
 	# Range: 0 ~ 255
-	infusionMaximumPotency = 3
+	infusionMaximumPotency = 0
 
 [harvester_pylon]
 	#Delay between harvest attempts (in ticks).
