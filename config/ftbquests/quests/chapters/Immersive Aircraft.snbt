@@ -13,18 +13,98 @@
 			image: "ftbquests:textures/shapes/diamond/shape.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: 0.0d
-			y: 1.25d
+			x: -2.25d
+			y: 0.0d
 		}
 		{
-			alpha: 32
-			color: 0
-			height: 15.0d
-			image: "ftbquests:textures/shapes/square/shape.png"
+			height: 4.0d
+			image: "ftbquests:textures/gui/immair_airship.png"
 			rotation: 0.0d
-			width: 25.0d
-			x: 10.5d
-			y: -0.25d
+			width: 4.0d
+			x: 8.25d
+			y: 3.0d
+		}
+		{
+			height: 4.0d
+			image: "ftbquests:textures/gui/immair_biplane.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			height: 4.0d
+			image: "ftbquests:textures/gui/immair_gyrodyne.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -7.0d
+			y: 3.25d
+		}
+		{
+			height: 2.0d
+			image: "ftbquests:textures/gui/immair_quadrocopter.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: 5.25d
+		}
+		{
+			height: 5.0d
+			image: "ftbquests:textures/gui/immair_warship.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			alpha: 128
+			color: 16382457
+			height: 2.0d
+			image: "ftbquests:textures/shapes/diamond/shape.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: 1.75d
+		}
+		{
+			alpha: 128
+			color: 16382457
+			height: 2.0d
+			image: "ftbquests:textures/shapes/diamond/shape.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 2.25d
+			y: 0.0d
+		}
+		{
+			alpha: 128
+			color: 16382457
+			height: 2.0d
+			image: "ftbquests:textures/shapes/diamond/shape.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: -1.75d
+		}
+		{
+			alpha: 128
+			color: 16382457
+			height: 2.0d
+			image: "ftbquests:textures/shapes/diamond/shape.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 4.75d
+			y: 0.0d
+		}
+		{
+			alpha: 128
+			color: 16382457
+			height: 2.0d
+			image: "ftbquests:textures/shapes/diamond/shape.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -5.25d
+			y: 0.0d
 		}
 	]
 	order_index: 3
@@ -38,7 +118,7 @@
 				item: { count: 1, id: "immersive_aircraft:gyrodyne" }
 				type: "item"
 			}]
-			x: 4.0d
+			x: 4.5d
 			y: 0.0d
 		}
 		{
@@ -72,7 +152,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			id: "16F37A3E31EBDA50"
@@ -83,7 +163,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			id: "217C5C65AFC95842"
@@ -93,7 +173,7 @@
 				item: { count: 1, id: "immersive_aircraft:quadrocopter" }
 				type: "item"
 			}]
-			x: -4.0d
+			x: -5.0d
 			y: 0.0d
 		}
 	]
