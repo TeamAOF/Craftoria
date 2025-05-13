@@ -40,7 +40,7 @@ StartupEvents.registry('item', e => {
     .rarity('Epic');
   e.create('craftoria:garlic_bread')
 		.displayName('Garlic Bread')
-  	.food(food => { food.saturation(1).nutrition(8).eatSeconds(2)});
+  	.food(food => { food.nutrition(3).saturation(1).eatSeconds(3)});
 });
 
 ItemEvents.modification(event => {

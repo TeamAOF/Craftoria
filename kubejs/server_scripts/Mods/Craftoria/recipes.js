@@ -54,6 +54,6 @@ ServerEvents.recipes(e => {
     B: '#c:rods/wooden',
   });
   
-  e.shapeless('craftoria:garlic_bread', ['moredelight:toast', 'dumplings_delight:garlic_clove', 'dumplings_delight:garlic_chive']);
+  e.shapeless('2x craftoria:garlic_bread', ['minecraft:bread', '2x dumplings_delight:garlic_clove', 'dumplings_delight:garlic_chive']);
   
 });
