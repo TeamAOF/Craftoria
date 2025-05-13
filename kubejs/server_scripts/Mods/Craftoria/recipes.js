@@ -53,4 +53,7 @@ ServerEvents.recipes(e => {
     A: '#minecraft:wooden_pressure_plates',
     B: '#c:rods/wooden',
   });
+  
+  e.shapeless('craftoria:garlic_bread', ['moredelight:toast', 'dumplings_delight:garlic_clove', 'dumplings_delight:garlic_chive']);
+  
 });
