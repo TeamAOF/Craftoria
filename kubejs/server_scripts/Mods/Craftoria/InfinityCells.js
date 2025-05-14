@@ -64,7 +64,7 @@ ServerEvents.recipes(e => {
     '4x justdirethings:experienceholder',
     '4x sophisticatedbackpacks:xp_pump_upgrade',
     '8x actuallyadditions:xp_solidifier',
-    'mekanism_extras:cosmic_fluid_tank[mekanism:fluids={fluid_tanks:[{amount:262144000,id:"justdirethings: xp_fluid_source"}]}]',
+    'mekanism_extras:cosmic_fluid_tank[mekanism:fluids={fluid_tanks:[{amount:262144000,id:"justdirethings:xp_fluid_source"}]}]',
   ]);
 
   ae.crystalAssembler('craftoria:infinity_cell_housing', [
