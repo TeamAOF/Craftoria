@@ -39,26 +39,27 @@ StartupEvents.registry('item', e => {
     .tag(`craftoria:replicator_1_blacklist`)
     .rarity('Epic');
   e.create('craftoria:garlic_bread')
-		.displayName('Garlic Bread')
-  	.food(food => { food.nutrition(3).saturation(1).eatSeconds(3)});
+    .displayName('Garlic Bread')
+    .food(food => {
+      food.nutrition(3).saturation(1).eatSeconds(3);
+    });
 });
 
 ItemEvents.modification(event => {
-
   const pelletsEdible = [
     'mekanism:pellet_plutonium',
     'mekanism:pellet_polonium',
     'mekanism:pellet_antimatter',
-    'mekanism:yellow_cake_uranium'
-  ]
+    'mekanism:yellow_cake_uranium',
+  ];
 
-  pelletsEdible.forEach((pellet) => {
+  pelletsEdible.forEach(pellet => {
     event.modify(pellet, item => {
       item.food = {
         nutrition: 1000,
         saturation: 1000,
         eatSeconds: 2,
-        canAlwaysEat: true
+        canAlwaysEat: true,
       };
     });
   });

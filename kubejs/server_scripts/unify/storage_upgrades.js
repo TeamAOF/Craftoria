@@ -16,21 +16,25 @@
 
   ServerEvents.tags('item', e => {
     // Hide and remove old upgrades from Sophisticated Storage
-    e.get('sophisticatedstorage:upgrade').getObjectIds().forEach(obj => {
-      const id = obj.toString();
-      if (!id.includes('sophisticatedbackpacks:') && !storageUnique.includes(id)) {
-        disableItem(id, 'Sophisticated Backpacks Upgrades');
-      }
-    });
+    e.get('sophisticatedstorage:upgrade')
+      .getObjectIds()
+      .forEach(obj => {
+        const id = obj.toString();
+        if (!id.includes('sophisticatedbackpacks:') && !storageUnique.includes(id)) {
+          disableItem(id, 'Sophisticated Backpacks Upgrades');
+        }
+      });
     disableItem('sophisticatedstorage:upgrade_base', 'Sophisticated Backpacks Upgrades', 'sophisticatedbackpacks:upgrade_base');
 
     // Add compatibility for Sophisticated Backpacks upgrades to Sophisticated Storage
-    e.get('sophisticatedbackpacks:upgrade').getObjectIds().forEach(obj => {
-      const id = obj.toString();
-      if (!storageIncompatible.includes(id)) {
-        e.add('sophisticatedstorage:upgrade', id);
-      }
-    });
+    e.get('sophisticatedbackpacks:upgrade')
+      .getObjectIds()
+      .forEach(obj => {
+        const id = obj.toString();
+        if (!storageIncompatible.includes(id)) {
+          e.add('sophisticatedstorage:upgrade', id);
+        }
+      });
 
     // Allow Sophisticated Backpacks to use Sophisticated Storage upgrades
     e.add('sophisticatedbackpacks:upgrade', ['#sophisticatedstorage:upgrade']);
