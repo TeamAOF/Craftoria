@@ -71,8 +71,8 @@
 			order: 100
 			rotation: 0.0d
 			width: 1.0d
-			x: -10.0d
-			y: 7.0d
+			x: -10.5d
+			y: 6.5d
 		}
 		{
 			alpha: 128
@@ -130,6 +130,23 @@
 	quests: [
 		{
 			id: "73A75FEFDFB27A5C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "34458FB85E84330D"
+					table_id: 1006251021478117193L
+					type: "random"
+				}
+				{
+					count: 8
+					id: "41F17C62D6AA069D"
+					item: {
+						count: 1
+						id: "minecraft:apple"
+					}
+					type: "item"
+				}
+			]
 			size: 2.0d
 			tasks: [{
 				id: "70AE8391066173F0"
@@ -141,6 +158,12 @@
 		}
 		{
 			id: "4E062B9B4960632D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3FCFF36B1244309B"
+				table_id: 1006251021478117193L
+				type: "random"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "37B0135E8835D5B4"
@@ -152,6 +175,12 @@
 		}
 		{
 			id: "5A5583EA02C78372"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A4BE8B0227084EC"
+				table_id: 1006251021478117193L
+				type: "random"
+			}]
 			size: 2.0d
 			tasks: [{
 				id: "12ADCA4E8C498DB9"
@@ -163,6 +192,12 @@
 		}
 		{
 			id: "0075009DEEA010B7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0196200F671941D6"
+				table_id: 1006251021478117193L
+				type: "random"
+			}]
 			size: 2.5d
 			tasks: [{
 				id: "6C47BEA3D58A8B87"
@@ -174,6 +209,12 @@
 		}
 		{
 			id: "16F37A3E31EBDA50"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "255A0BEFC0C2BEC8"
+				table_id: 1006251021478117193L
+				type: "random"
+			}]
 			size: 2.5d
 			tasks: [{
 				id: "67525B96CAEDAFC9"
@@ -185,6 +226,12 @@
 		}
 		{
 			id: "217C5C65AFC95842"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "147F6A52229CD965"
+				table_id: 1006251021478117193L
+				type: "random"
+			}]
 			size: 1.5d
 			tasks: [{
 				id: "25444F50D9316FA3"
