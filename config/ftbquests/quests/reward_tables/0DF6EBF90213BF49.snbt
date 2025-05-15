@@ -1,0 +1,31 @@
+{
+	icon: {
+		id: "immersive_aircraft:biplane"
+	}
+	id: "0DF6EBF90213BF49"
+	loot_size: 1
+	order_index: 15
+	rewards: [
+		{ id: "44BCAEC55E185D42", item: { count: 1, id: "immersive_aircraft:industrial_gears" } }
+		{ id: "042138CAF08294D7", item: { count: 1, id: "immersive_aircraft:gyroscope" } }
+		{ id: "62B22E9A3829753E", item: { count: 1, id: "immersive_aircraft:hull_reinforcement" } }
+		{ id: "7EC817B57609A67C", item: { count: 1, id: "immersive_aircraft:improved_landing_gear" } }
+		{ id: "6FA26BCE2350BF94", item: { count: 1, id: "immersive_aircraft:enhanced_propeller" } }
+		{
+			count: 3
+			id: "4FB6CE4ED2637B19"
+			item: {
+				count: 1
+				id: "immersive_aircraft:sail"
+			}
+		}
+		{
+			count: 8
+			id: "6731BF058B405FD9"
+			item: {
+				count: 1
+				id: "minecraft:coal_block"
+			}
+		}
+	]
+}
