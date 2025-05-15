@@ -8,103 +8,121 @@
 	images: [
 		{
 			alpha: 128
-			color: 16382457
-			height: 2.0d
+			color: 16711680
+			height: 2.5d
 			image: "ftbquests:textures/shapes/diamond/shape.png"
 			rotation: 0.0d
-			width: 2.0d
-			x: -2.25d
-			y: 0.0d
+			width: 2.5d
+			x: 0.8d
+			y: 2.2d
 		}
 		{
-			height: 4.0d
-			image: "ftbquests:textures/gui/immair_airship.png"
-			rotation: 0.0d
-			width: 4.0d
-			x: 8.25d
+			height: 6.0d
+			hover: ["Air Caravan"]
+			image: "ftbquests:textures/gui/immair_cargoship_b.png"
+			rotation: -2.5d
+			width: 6.0d
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			height: 7.0d
+			hover: ["Da' plane! Da' Plane!"]
+			image: "ftbquests:textures/gui/immair_biplane_b.png"
+			rotation: -10.0d
+			width: 7.0d
+			x: 7.0d
 			y: 3.0d
 		}
 		{
-			height: 4.0d
-			image: "ftbquests:textures/gui/immair_biplane.png"
+			height: 7.0d
+			hover: ["Witness me!"]
+			image: "ftbquests:textures/gui/immair_warship_b.png"
 			rotation: 0.0d
-			width: 4.0d
-			x: -5.5d
+			width: 7.0d
+			x: -6.5d
 			y: -4.0d
-		}
-		{
-			height: 4.0d
-			image: "ftbquests:textures/gui/immair_gyrodyne.png"
-			rotation: 0.0d
-			width: 4.0d
-			x: -7.0d
-			y: 3.25d
-		}
-		{
-			height: 2.0d
-			image: "ftbquests:textures/gui/immair_quadrocopter.png"
-			rotation: 0.0d
-			width: 2.0d
-			x: 0.0d
-			y: 5.25d
 		}
 		{
 			height: 5.0d
-			image: "ftbquests:textures/gui/immair_warship.png"
+			hover: ["On a wing and a prayer"]
+			image: "ftbquests:textures/gui/immair_gyrodyne_b.png"
 			rotation: 0.0d
 			width: 5.0d
-			x: 7.0d
-			y: -4.0d
+			x: -6.5d
+			y: 3.0d
 		}
 		{
-			alpha: 128
-			color: 16382457
-			height: 2.0d
-			image: "ftbquests:textures/shapes/diamond/shape.png"
+			color: 43520
+			dev: true
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/shape.png"
+			order: 100
 			rotation: 0.0d
-			width: 2.0d
+			width: 1.0d
 			x: 0.0d
-			y: 1.75d
-		}
-		{
-			alpha: 128
-			color: 16382457
-			height: 2.0d
-			image: "ftbquests:textures/shapes/diamond/shape.png"
-			rotation: 0.0d
-			width: 2.0d
-			x: 2.25d
 			y: 0.0d
 		}
 		{
-			alpha: 128
-			color: 16382457
-			height: 2.0d
-			image: "ftbquests:textures/shapes/diamond/shape.png"
+			color: 43520
+			dev: true
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/shape.png"
+			order: 100
 			rotation: 0.0d
-			width: 2.0d
-			x: 0.0d
-			y: -1.75d
+			width: 1.0d
+			x: -10.0d
+			y: 4.0d
 		}
 		{
 			alpha: 128
-			color: 16382457
+			color: 16711680
 			height: 2.0d
 			image: "ftbquests:textures/shapes/diamond/shape.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: 4.75d
-			y: 0.0d
+			x: -0.9d
+			y: 1.5d
 		}
 		{
 			alpha: 128
-			color: 16382457
+			color: 16711680
+			height: 1.5d
+			image: "ftbquests:textures/shapes/diamond/shape.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -1.4d
+			y: -0.1d
+		}
+		{
+			alpha: 128
+			color: 255
+			height: 2.5d
+			image: "ftbquests:textures/shapes/diamond/shape.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: -0.8d
+			y: -2.2d
+		}
+		{
+			alpha: 128
+			color: 255
 			height: 2.0d
 			image: "ftbquests:textures/shapes/diamond/shape.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: -5.25d
-			y: 0.0d
+			x: 0.9d
+			y: -1.5d
+		}
+		{
+			alpha: 128
+			color: 255
+			height: 1.5d
+			image: "ftbquests:textures/shapes/diamond/shape.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 1.4d
+			y: 0.1d
 		}
 	]
 	order_index: 3
@@ -118,18 +136,18 @@
 				item: { count: 1, id: "immersive_aircraft:gyrodyne" }
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.0d
+			x: -0.9d
+			y: 1.7d
 		}
 		{
 			id: "4E062B9B4960632D"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "37B0135E8835D5B4"
 				item: { count: 1, id: "immersive_aircraft:airship" }
 				type: "item"
 			}]
-			x: -2.0d
+			x: 1.3d
 			y: 0.0d
 		}
 		{
@@ -140,40 +158,40 @@
 				item: { count: 1, id: "immersive_aircraft:cargo_airship" }
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.0d
+			x: 0.9d
+			y: -1.7d
 		}
 		{
 			id: "0075009DEEA010B7"
-			size: 2.0d
+			size: 2.5d
 			tasks: [{
 				id: "6C47BEA3D58A8B87"
 				item: { count: 1, id: "immersive_aircraft:warship" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: -1.05d
+			y: -2.2d
 		}
 		{
 			id: "16F37A3E31EBDA50"
-			size: 2.0d
+			size: 2.5d
 			tasks: [{
 				id: "67525B96CAEDAFC9"
 				item: { count: 1, id: "immersive_aircraft:biplane" }
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.5d
+			x: 1.05d
+			y: 2.2d
 		}
 		{
 			id: "217C5C65AFC95842"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				id: "25444F50D9316FA3"
 				item: { count: 1, id: "immersive_aircraft:quadrocopter" }
 				type: "item"
 			}]
-			x: -5.0d
+			x: -1.3d
 			y: 0.0d
 		}
 	]
