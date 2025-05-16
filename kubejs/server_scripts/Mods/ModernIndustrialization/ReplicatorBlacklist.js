@@ -71,6 +71,8 @@ ServerEvents.tags('item', e => {
 
     '#create:toolboxes',
 
+    'eternal_starlight:golem_steel_crate',
+
     /^pneumaticcraft:.*_(tank|chest)$/,
     /^pneumaticcraft:.*drone/,
     'pneumaticcraft:liquid_hopper',
