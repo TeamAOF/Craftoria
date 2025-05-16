@@ -31,6 +31,7 @@ export default [
       '@stylistic/js/semi': ['error', 'always'],
       '@stylistic/js/comma-dangle': ['error', 'only-multiline'],
       '@stylistic/js/no-tabs': 'error',
+      '@stylistic/js/object-curly-spacing': ['error', 'always'],
     },
   },
 ];

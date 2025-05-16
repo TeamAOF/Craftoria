@@ -70,6 +70,7 @@ function harvestCropBlock(block, crop, player, stack) {
 
     try {
       block.setBlockState(getAgeZero(block.blockState), UPDATE_NEIGHBORS_FLAG);
+      player.swing();
       logDebug('Harvested crop!');
     } catch (e) {
       logError(`Failed to reset crop state: ${e.message}`);

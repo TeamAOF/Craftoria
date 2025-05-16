@@ -22,7 +22,7 @@ ServerEvents.recipes(e => {
 
   // prettier-ignore
   const solarPanels = [
-    { output: 'powah:solar_panel_starter', input: 'powah:photoelectric_pane', circuit: 'mekanism:basic_control_circuit', capacitor: 'powah:capacitor_basic', energy: 10000},
+    { output: 'powah:solar_panel_starter', input: 'powah:photoelectric_pane', circuit: 'mekanism:basic_control_circuit', capacitor: 'powah:capacitor_basic', energy: 10000 },
     { output: 'powah:solar_panel_basic', input: 'powah:solar_panel_starter', circuit: 'mekanism:advanced_control_circuit', capacitor: 'powah:capacitor_basic_large', energy: 100000 },
     { output: 'powah:solar_panel_hardened', input: 'powah:solar_panel_basic', circuit: 'mekanism:advanced_control_circuit', capacitor: 'powah:capacitor_hardened', energy: 500000 },
     { output: 'powah:solar_panel_blazing', input: 'powah:solar_panel_hardened', circuit: 'mekanism:elite_control_circuit', capacitor: 'powah:capacitor_blazing', energy: 1000000 },
