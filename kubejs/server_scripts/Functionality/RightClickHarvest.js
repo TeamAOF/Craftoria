@@ -37,43 +37,31 @@ function isPlayerActionValid(player, hand) {
  * @param {import('net.minecraft.world.item.ItemStack')} stack
  */
 function harvestCropBlock(block, crop, player, stack) {
-  try {
-    if (!isMature(block.blockState)) {
-      logDebug('This crop is not fully grown.');
-      return;
-    }
-
-    logDebug('Harvesting crop...');
-    // Get the drops from the block
-    let drops = block.getDrops(player, stack);
-    let removedASeed = false;
-
-    for (let i = 0; i < drops.length; i++) {
-      let drop = drops[i];
-      if (drop.id === crop.item.id && !removedASeed) {
-        removedASeed = true;
-        drop.count--;
-      }
-      if (drop.count <= 0 || drop.empty) continue;
-
-      try {
-        block.popItem(drop);
-        logDebug(`Dropped ${drop.count}x ${drop.id}`);
-      } catch (e) {
-        logError(`Failed to drop item: ${e.message}`);
-      }
-    }
-
-    try {
-      block.setBlockState(getAgeZero(block.blockState), UPDATE_NEIGHBORS_FLAG);
-      player.swing();
-      logDebug('Harvested crop!');
-    } catch (e) {
-      logError(`Failed to reset crop state: ${e.message}`);
-    }
-  } catch (e) {
-    logError(`Error during harvest: ${e.message}`);
+  if (!isMature(block.blockState)) {
+    logDebug('This crop is not fully grown.');
+    return;
   }
+
+  logDebug('Harvesting crop...');
+  // Get the drops from the block
+  let drops = block.getDrops(player, stack);
+  let removedASeed = false;
+
+  for (let i = 0; i < drops.length; i++) {
+    let drop = drops[i];
+    if (drop.id === crop.item.id && !removedASeed) {
+      removedASeed = true;
+      drop.count--;
+    }
+    if (drop.count <= 0 || drop.empty) continue;
+
+    block.popItem(drop);
+    logDebug(`Dropped ${drop.count}x ${drop.id}`);
+  }
+
+  block.setBlockState(getAgeZero(block.blockState), UPDATE_NEIGHBORS_FLAG);
+  player.swing();
+  logDebug('Harvested crop!');
 }
 
 /**
