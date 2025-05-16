@@ -2,7 +2,6 @@
 const $CropBlock = Java.loadClass('net.minecraft.world.level.block.CropBlock');
 const $CocoaBlock = Java.loadClass('net.minecraft.world.level.block.CocoaBlock');
 const $NetherWartBlock = Java.loadClass('net.minecraft.world.level.block.NetherWartBlock');
-// const $StemBlock = Java.loadClass('net.minecraft.world.level.block.StemBlock');
 
 // Constants
 const UPDATE_NEIGHBORS_FLAG = 10;
@@ -14,9 +13,6 @@ BlockEvents.rightClicked(event => {
 
   if (toHarvest instanceof $CropBlock || toHarvest instanceof $CocoaBlock || toHarvest instanceof $NetherWartBlock) {
     harvestCropBlock(block, toHarvest, player, item);
-    // Maybe implement these later?
-    // } else if (toHarvest instanceof $StemBlock) {
-    //   harvestStemBlock(event, block, toHarvest);
   } else {
     logDebug('You right clicked a block that is not a crop block!');
   }
@@ -78,16 +74,6 @@ function harvestCropBlock(block, crop, player, stack) {
   } catch (e) {
     logError(`Error during harvest: ${e.message}`);
   }
-}
-
-/**
- * @param {$BlockRightClickedKubeEvent_} event
- * @param {$BlockContainerJS_} block
- * @param {$StemBlock_} stem
- */
-function harvestStemBlock(event, block, stem) {
-  logDebug('Harvesting stem block...');
-  // This is for melon/pumpkin, not sure if I should implement this
 }
 
 /**
