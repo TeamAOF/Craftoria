@@ -69,6 +69,8 @@ ServerEvents.tags('item', e => {
 
     '#modern_industrialization:tanks',
 
+    '#create:toolboxes',
+
     /^pneumaticcraft:.*_(tank|chest)$/,
     /^pneumaticcraft:.*drone/,
     'pneumaticcraft:liquid_hopper',
