@@ -19,8 +19,8 @@ ServerEvents.recipes(e => {
   // Function to process the collection and generate recipes
   let processCrushingRecipes = () => {
     ingredients.forEach((value, key) => {
-      var output = value[0];
-      var ingredient = value[1];
+      let output = value[0];
+      let ingredient = value[1];
       mekanism.crushing(output, ingredient);
     });
   };

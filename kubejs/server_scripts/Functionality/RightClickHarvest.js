@@ -4,13 +4,16 @@ const $CocoaBlock = Java.loadClass('net.minecraft.world.level.block.CocoaBlock')
 const $NetherWartBlock = Java.loadClass('net.minecraft.world.level.block.NetherWartBlock');
 // const $StemBlock = Java.loadClass('net.minecraft.world.level.block.StemBlock');
 
+// Constants
+const UPDATE_NEIGHBORS_FLAG = 10;
+
 BlockEvents.rightClicked(event => {
-  const { block, player, hand } = event;
+  const { block, player, hand, item } = event;
   if (!isPlayerActionValid(player, hand)) return;
   const toHarvest = block.blockState.block;
 
   if (toHarvest instanceof $CropBlock || toHarvest instanceof $CocoaBlock || toHarvest instanceof $NetherWartBlock) {
-    harvestCropBlock(event, block, toHarvest);
+    harvestCropBlock(block, toHarvest, player, item);
     // Maybe implement these later?
     // } else if (toHarvest instanceof $StemBlock) {
     //   harvestStemBlock(event, block, toHarvest);
@@ -32,32 +35,48 @@ function isPlayerActionValid(player, hand) {
 
 /**
  *
- * @param {$BlockRightClickedKubeEvent_} event
  * @param {$BlockContainerJS_} block
  * @param {$CropBlock_|$CocoaBlock_|$NetherWartBlock_} crop
+ * @param {$Player_} player
+ * @param {import('net.minecraft.world.item.ItemStack')} stack
  */
-function harvestCropBlock(event, block, crop) {
-  if (!isMature(block.blockState)) {
-    logDebug('This crop is not fully grown.');
-    return;
-  }
-  logDebug('Harvesting crop...');
-  // Get the drops from the block
-  const drops = block.drops;
-  let removedASeed = false;
-  drops.forEach(drop => {
-    if (drop.id === crop.item.id && !removedASeed) {
-      removedASeed = true;
-      drop.count--;
+function harvestCropBlock(block, crop, player, stack) {
+  try {
+    if (!isMature(block.blockState)) {
+      logDebug('This crop is not fully grown.');
+      return;
     }
-    if (drop.count <= 0) return;
-    block.popItem(drop);
-    logDebug(`Dropped ${drop.count}x ${drop.id}`);
-  });
 
-  block.setBlockState(getAgeZero(block.blockState), 10);
+    logDebug('Harvesting crop...');
+    // Get the drops from the block
+    let drops = block.getDrops(player, stack);
+    let removedASeed = false;
 
-  logDebug('Harvested crop!');
+    for (let i = 0; i < drops.length; i++) {
+      let drop = drops[i];
+      if (drop.id === crop.item.id && !removedASeed) {
+        removedASeed = true;
+        drop.count--;
+      }
+      if (drop.count <= 0 || drop.empty) continue;
+
+      try {
+        block.popItem(drop);
+        logDebug(`Dropped ${drop.count}x ${drop.id}`);
+      } catch (e) {
+        logError(`Failed to drop item: ${e.message}`);
+      }
+    }
+
+    try {
+      block.setBlockState(getAgeZero(block.blockState), UPDATE_NEIGHBORS_FLAG);
+      logDebug('Harvested crop!');
+    } catch (e) {
+      logError(`Failed to reset crop state: ${e.message}`);
+    }
+  } catch (e) {
+    logError(`Error during harvest: ${e.message}`);
+  }
 }
 
 /**

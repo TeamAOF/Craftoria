@@ -72,16 +72,16 @@ const _makeRecipeID = (mod, type, output, input) => {
 
 const debugToInt = () => {
   switch (debug) {
-    case 'error':
-      return 1;
-    case 'warn':
-      return 2;
-    case 'info':
-      return 3;
-    case 'debug':
-      return 4;
-    default:
-      return 0;
+  case 'error':
+    return 1;
+  case 'warn':
+    return 2;
+  case 'info':
+    return 3;
+  case 'debug':
+    return 4;
+  default:
+    return 0;
   }
 };
 

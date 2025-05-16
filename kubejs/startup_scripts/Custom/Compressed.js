@@ -104,8 +104,8 @@ StartupEvents.registry('block', event => {
         .hardness(i)
         .resistance(6)
         .tagBoth(`craftoria:${c}x_compressed`)
-        .tagItem(`modern_industrialization:replicator_blacklist`)
-        .tagItem(`craftoria:replicator_1_blacklist`)
+        .tagItem('modern_industrialization:replicator_blacklist')
+        .tagItem('craftoria:replicator_1_blacklist')
         .tagBlock(`minecraft:mineable/${block.tool || 'pickaxe'}`)
         .modelGenerator(m => {
           m.parent('minecraft:block/cube');

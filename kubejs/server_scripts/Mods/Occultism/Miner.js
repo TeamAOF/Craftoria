@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
   event.recipes.occultism.miner(
-    //item, count, weight
+    // item, count, weight
     WeightedRecipeResult.of('modern_industrialization:bauxite_ore', 1, 250),
     '#occultism:miners/ores'
   );

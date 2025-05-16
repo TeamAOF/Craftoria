@@ -1,6 +1,6 @@
-////////////////////////
-/// Made by Team AOF ///
-////////////////////////
+// //////////////////////
+// / Made by Team AOF ///
+// //////////////////////
 
 ServerEvents.recipes(e => {
   // prettier-ignore
@@ -76,9 +76,9 @@ ServerEvents.recipes(e => {
       madeCuttingRecipeFor.push('biomeswevegone:florus_planks');
       return;
     } else if (id.includes('archwood')) {
-      if (madeCuttingRecipeFor.includes(`ars_nouveau:archwood_planks`)) return;
+      if (madeCuttingRecipeFor.includes('ars_nouveau:archwood_planks')) return;
       cuttingMachine('6x ars_nouveau:archwood_planks', '#c:logs/archwood');
-      madeCuttingRecipeFor.push(`ars_nouveau:archwood_planks`);
+      madeCuttingRecipeFor.push('ars_nouveau:archwood_planks');
       return;
     }
 

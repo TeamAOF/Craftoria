@@ -1,4 +1,4 @@
-// Priority: 998
+// priority: 998
 /**
  * This script is used to unify items from different mods.
  * It will replace items from the #c tag with the first mod(defined in modPriority) that has the item.
@@ -42,31 +42,31 @@ ServerEvents.tags('item', e => {
 
   for (let [material, types] in materials) {
     switch (material) {
-      case 'metals':
-        metals.forEach(metal => {
-          types.forEach(type => {
-            tags.push(`c:${type}/${metal}`);
-            if (type === 'raw_materials') tags.push(`c:storage_blocks/raw_${metal}`);
-          });
+    case 'metals':
+      metals.forEach(metal => {
+        types.forEach(type => {
+          tags.push(`c:${type}/${metal}`);
+          if (type === 'raw_materials') tags.push(`c:storage_blocks/raw_${metal}`);
         });
-        break;
-      case 'gems':
-        gems.forEach(gem => {
-          types.forEach(type => {
-            tags.push(`c:${type}/${gem}`);
-          });
+      });
+      break;
+    case 'gems':
+      gems.forEach(gem => {
+        types.forEach(type => {
+          tags.push(`c:${type}/${gem}`);
         });
-        break;
-      case 'misc':
-        misc.forEach(misc => {
-          types.forEach(type => {
-            tags.push(`c:${type}/${misc}`);
-          });
+      });
+      break;
+    case 'misc':
+      misc.forEach(misc => {
+        types.forEach(type => {
+          tags.push(`c:${type}/${misc}`);
         });
-        break;
-      default:
-        logError(`Unknown material: ${material}`);
-        break;
+      });
+      break;
+    default:
+      logError(`Unknown material: ${material}`);
+      break;
     }
   }
 
@@ -119,31 +119,31 @@ ServerEvents.recipes(e => {
 
   Object.entries(materials).forEach(([material, types]) => {
     switch (material) {
-      case 'metals':
-        metals.forEach(metal => {
-          types.forEach(type => {
-            tryReplace(`#c:${type}/${metal}`);
-            if (type === 'raw_materials') tryReplace(`#c:storage_blocks/raw_${metal}`);
-          });
+    case 'metals':
+      metals.forEach(metal => {
+        types.forEach(type => {
+          tryReplace(`#c:${type}/${metal}`);
+          if (type === 'raw_materials') tryReplace(`#c:storage_blocks/raw_${metal}`);
         });
-        break;
-      case 'gems':
-        gems.forEach(gem => {
-          types.forEach(type => {
-            tryReplace(`#c:${type}/${gem}`);
-          });
+      });
+      break;
+    case 'gems':
+      gems.forEach(gem => {
+        types.forEach(type => {
+          tryReplace(`#c:${type}/${gem}`);
         });
-        break;
-      case 'misc':
-        misc.forEach(misc => {
-          types.forEach(type => {
-            tryReplace(`#c:${type}/${misc}`);
-          });
+      });
+      break;
+    case 'misc':
+      misc.forEach(misc => {
+        types.forEach(type => {
+          tryReplace(`#c:${type}/${misc}`);
         });
-        break;
-      default:
-        logDebug(`Unknown material: ${material}`);
-        break;
+      });
+      break;
+    default:
+      logDebug(`Unknown material: ${material}`);
+      break;
     }
   });
 
