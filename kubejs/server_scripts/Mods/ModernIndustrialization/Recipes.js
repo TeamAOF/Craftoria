@@ -3,7 +3,6 @@
 // //////////////////////
 
 ServerEvents.recipes(e => {
-  // prettier-ignore
   const { assembler, macerator, compressor, cutting_machine, electrolyzer, chemical_reactor, oil_drilling_rig } = e.recipes.modern_industrialization;
 
   macerator(2, 100).itemOut('4x mekanism:dust_obsidian').itemIn('#c:obsidians/normal').id('craftoria:mi/macerator/obsidian_dust');

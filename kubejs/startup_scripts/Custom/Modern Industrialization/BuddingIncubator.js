@@ -23,7 +23,6 @@ MIMachineEvents.registerMachines(event => {
     .key('G', glassSlab, noHatch)
     .build();
 
-  // prettier-ignore
   event.simpleElectricCraftingMultiBlock(
     'Budding Incubator', 'budding_incubator',
     BUDDING_INCUBATOR, buddingIncubatorShape,
@@ -56,7 +55,6 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
     .key('G', glassSlab, noHatch)
     .build();
 
-  // prettier-ignore
   event.electric(
     'Budding Incubator', 'batch_budding_incubator',
     BUDDING_INCUBATOR, buddingIncubatorShape,

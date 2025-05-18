@@ -5,7 +5,6 @@ MIMachineEvents.registerRecipeTypes(event => {
 });
 
 MIMachineEvents.registerMachines(e => {
-  // prettier-ignore
   e.craftingSingleBlock(
     'Replicator MK I', 'replicator_1', REPLICATOR1, ['electric'],
     -1, e.progressBar(85, 34, 'arrow'), e.efficiencyBar(38, 62), e.energyBar(14, 35),

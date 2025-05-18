@@ -44,7 +44,6 @@ MIMachineEvents.registerMachines(event => {
   }
   const oozeLabShape = oozeLabShapeBuilder.build();
 
-  // prettier-ignore
   event.simpleElectricCraftingMultiBlock(
     'Ooze Lab', 'ooze_lab',
     OOZE_LAB, oozeLabShape,
@@ -96,7 +95,6 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
   }
   const oozeLabShape = oozeLabShapeBuilder.build();
 
-  // prettier-ignore
   event.electric(
     'Ooze Lab', 'batch_ooze_lab',
     OOZE_LAB, oozeLabShape,

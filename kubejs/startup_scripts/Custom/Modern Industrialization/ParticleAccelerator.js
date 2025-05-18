@@ -7,7 +7,6 @@ MITweaksMachineEvents.registerBatchMultiblocks(e => {
   const neodymiumBlock = e.memberOfBlock('modern_industrialization:neodymium_block');
   const platinumBlock = e.memberOfBlock('modern_industrialization:platinum_block');
 
-  // prettier-ignore
   const particleAcceleratorShape = e.layeredShape('stainless_steel_machine_casing_pipe', [
     ['                                 ', '             QQQQQQQ             ', '            QQQQQQQQQ            ', '             QQQQQQQ             ', '                                 '],
     ['             SSSSSSS             ', '          QQQ   P   QQQ          ', '          QQ   N N   QQ          ', '          QQQ   P   QQQ          ', '             SSSSSSS             '],
