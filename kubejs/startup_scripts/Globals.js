@@ -86,6 +86,15 @@ const customMIMachines = {
       front_active: 'extended_industrialization:block/machines/brewery/overlay_front_active',
     },
   },
+  model_synthesizer: {
+    name: 'Model Synthesizer [DUMMY]',
+    casing: 'steel',
+  },
+  batch_model_synthesizer: {
+    name: 'Model Synthesizer',
+    casing: 'steel',
+    mod: 'mi_tweaks',
+  },
 };
 
 /**
