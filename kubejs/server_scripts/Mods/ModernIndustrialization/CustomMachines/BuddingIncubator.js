@@ -73,7 +73,7 @@ MIRecipeEvents.customCondition(event => {
 });
 
 ServerEvents.recipes(event => {
-  const { budding_incubator } = event.recipes.modern_industrialization;
+  const { budding_incubator, assembler } = event.recipes.modern_industrialization;
 
   /**
    * @param {$FluidStack_|$ItemStack_} stack
@@ -97,4 +97,14 @@ ServerEvents.recipes(event => {
       .customCondition(key)
       .id(`craftoria:mi/budding_incubator/${key}`);
   });
+
+  assembler(16, 200)
+    .itemOut('mi_tweaks:batch_budding_incubator')
+    .itemIn('16x ae2:growth_accelerator')
+    .itemIn('4x modern_industrialization:electronic_circuit')
+    .itemIn('modern_industrialization:large_pump')
+    .itemIn('modern_industrialization:advanced_machine_hull')
+    .id('craftoria:mi/assembler/budding_incubator');
+
+  event.shapeless('mi_tweaks:batch_budding_incubator', 'modern_industrialization:budding_incubator');
 });

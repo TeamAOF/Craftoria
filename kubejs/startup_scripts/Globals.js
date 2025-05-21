@@ -94,6 +94,10 @@ const customMIMachines = {
     name: 'Model Synthesizer',
     casing: 'vect5',
     mod: 'mi_tweaks',
+    default_overlays: {
+      front: 'modern_industrialization:block/machines/model_synthesizer/overlay_front',
+      front_active: 'modern_industrialization:block/machines/model_synthesizer/overlay_front_active',
+    },
   },
 };
 

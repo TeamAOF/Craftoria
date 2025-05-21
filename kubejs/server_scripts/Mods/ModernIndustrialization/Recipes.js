@@ -131,24 +131,6 @@ ServerEvents.recipes(e => {
     .itemIn('4x modern_industrialization:quantum_upgrade')
     .id('craftoria:mi/assembler/large_plasma_turbine');
 
-  assembler(16, 200)
-    .itemOut('mi_tweaks:batch_budding_incubator')
-    .itemIn('16x ae2:growth_accelerator')
-    .itemIn('4x modern_industrialization:electronic_circuit')
-    .itemIn('modern_industrialization:large_pump')
-    .itemIn('modern_industrialization:advanced_machine_hull')
-    .id('craftoria:mi/assembler/budding_incubator');
-
-  e.shapeless('mi_tweaks:batch_budding_incubator', 'modern_industrialization:budding_incubator');
-
-  assembler(16, 200) // TODO: different recipe?
-    .itemOut('mi_tweaks:batch_ooze_lab')
-    .itemIn('8x justdirethings:gooblock_tier4')
-    .itemIn('4x modern_industrialization:electronic_circuit')
-    .itemIn('modern_industrialization:large_pump')
-    .itemIn('modern_industrialization:advanced_machine_hull')
-    .id('craftoria:mi/assembler/ooze_lab');
-
   e.shaped('modern_industrialization:quantum_fluid_input_hatch', ['T', 'H'], {
     T: 'modern_industrialization:quantum_tank',
     H: 'modern_industrialization:quantum_machine_hull',

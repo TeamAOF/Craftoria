@@ -1,5 +1,5 @@
 ServerEvents.recipes(event => {
-  const { model_synthesizer } = event.recipes.modern_industrialization;
+  const { model_synthesizer, assembler } = event.recipes.modern_industrialization;
 
   event.resourceManager.getResourceStack(ID.mc('hostilenetworks:data_models')).forEach(resource => {
     let source = resource.source();
@@ -40,4 +40,13 @@ ServerEvents.recipes(event => {
     if (multiple < 16) return 16;
     return multiple;
   }
+
+  assembler(16, 200)
+    .itemOut('mi_tweaks:batch_model_synthesizer')
+    .itemIn('8x hostilenetworks:sim_chamber')
+    .itemIn('8x hostilenetworks:loot_fabricator')
+    .itemIn('4x modern_industrialization:electronic_circuit')
+    .itemIn('4x modern_industrialization:robot_arm')
+    .itemIn('modern_industrialization:advanced_machine_hull')
+    .id('craftoria:mi/assembler/model_synthesizer');
 });
