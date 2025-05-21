@@ -3,51 +3,36 @@ let MODEL_SYNTHESIZER;
 MIMachineEvents.registerRecipeTypes(event => {
   MODEL_SYNTHESIZER = event.register('model_synthesizer').withItemInputs().withItemOutputs();
 });
-// THE SHAPE/BLOCKS ARE NOT FINALIZED
+
 MIMachineEvents.registerMachines(event => {
   const noHatch = event.noHatch();
   const synthHatch = event.hatchOf('item_input', 'item_output', 'energy_input');
 
-  const casing = event.memberOfBlock('modern_industrialization:steel_machine_casing');
-  const glass = event.memberOfBlock('mekanismgenerators:reactor_glass');
-  const rGrate = event.memberOfBlock('factory_blocks:rgrate');
-  const pipe = event.memberOfBlock('create:fluid_pipe');
-  const glowPanel = event.memberOfBlock('create:rose_quartz_lamp');
+  const azur14 = event.memberOfBlock('xtonesreworked:azur_block_14');
+  const vect4 = event.memberOfBlock('xtonesreworked:vect_block_4');
+  const vect5 = event.memberOfBlock('xtonesreworked:vect_block_5');
+  const vect7 = event.memberOfBlock('xtonesreworked:vect_block_7');
+  const vect10 = event.memberOfBlock('xtonesreworked:vect_block_10');
+  const vect14 = event.memberOfBlock('xtonesreworked:vect_block_14');
+  const glass = event.memberOfBlock('chipped:clear_leaded_glass');
+  const lightBlue = event.memberOfBlock('luminax:light_blue_luminax_block');
 
-  const sb = event.startShape('steel');
-
-  for (let y = 0; y < 5; y++) {
-    let topBot = (y === 0 || y === 4);
-
-    for (let x = -3; x <= 3; x++) {
-      let sideX = (x === -3 || x === 3);
-
-      for (let z = 0; z < 5; z++) {
-        if (z === 0 && !topBot) {
-          sb.add(x, y, z, pipe, noHatch);
-          continue;
-        }
-
-        let isEdge = topBot || sideX || z === 4;
-        let block = casing;
-        let hatch = isEdge ? synthHatch : noHatch;
-
-        if (topBot) {
-          block = casing;
-        } else if (sideX || z === 4) {
-          block = rGrate;
-        } else if (z === 2 || z === 1) {
-          block = glass;
-        } else if (z === 3) {
-          block = glowPanel;
-        }
-
-        sb.add(x, y, z, block, hatch);
-      }
-    }
-  }
-
-  const modelSynthShape = sb.build();
+  const modelSynthShape = event.layeredShape('vect5', [
+    ['XVVVX', 'CAAAC', 'CAEAC', 'CAAAC', 'XVVVX'],
+    ['VAAAV', 'ABBBA', 'ABBBA', 'ABBBA', 'VAAAV'],
+    ['VAEAV', 'ABBBA', 'EBBBE', 'ABBBA', 'VAEAV'],
+    ['VAAAV', 'ABBBA', 'ABBBA', 'ABBBA', 'VAAAV'],
+    ['XV#VX', 'CGGGC', 'CGFGC', 'CGGGC', 'XVVVX'],
+  ])
+    .key('C', vect4, noHatch)
+    .key('V', vect5, synthHatch)
+    .key('X', vect7, noHatch)
+    .key('E', vect10, noHatch)
+    .key('F', vect14, noHatch)
+    .key('A', azur14, noHatch)
+    .key('B', lightBlue, noHatch)
+    .key('G', glass, noHatch)
+    .build();
 
   event.simpleElectricCraftingMultiBlock(
     'Model Synthesizer', 'model_synthesizer',
@@ -64,47 +49,31 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
   const noHatch = event.noHatch();
   const synthHatch = event.hatchOf('item_input', 'item_output', 'energy_input');
 
-  const casing = event.memberOfBlock('modern_industrialization:steel_machine_casing');
-  const glass = event.memberOfBlock('mekanismgenerators:reactor_glass');
-  const rGrate = event.memberOfBlock('factory_blocks:rgrate');
-  const pipe = event.memberOfBlock('create:fluid_pipe');
-  const glowPanel = event.memberOfBlock('create:rose_quartz_lamp');
+  const azur14 = event.memberOfBlock('xtonesreworked:azur_block_14');
+  const vect4 = event.memberOfBlock('xtonesreworked:vect_block_4');
+  const vect5 = event.memberOfBlock('xtonesreworked:vect_block_5');
+  const vect7 = event.memberOfBlock('xtonesreworked:vect_block_7');
+  const vect10 = event.memberOfBlock('xtonesreworked:vect_block_10');
+  const vect14 = event.memberOfBlock('xtonesreworked:vect_block_14');
+  const glass = event.memberOfBlock('chipped:clear_leaded_glass');
+  const lightBlue = event.memberOfBlock('luminax:light_blue_luminax_block');
 
-  const sb = event.startShape('steel');
-
-  for (let y = 0; y < 5; y++) {
-    let topBot = (y === 0 || y === 4);
-
-    for (let x = -3; x <= 3; x++) {
-      let sideX = (x === -3 || x === 3);
-
-      for (let z = 0; z < 5; z++) {
-
-        if (z === 0 && !topBot) {
-          sb.add(x, y, z, pipe, noHatch);
-          continue;
-        }
-
-        let isEdge = topBot || sideX || z === 4;
-        let block = casing;
-        let hatch = isEdge ? synthHatch : noHatch;
-
-        if (topBot) {
-          block = casing;
-        } else if (sideX || z === 4) {
-          block = rGrate;
-        } else if (z === 2 || z === 1) {
-          block = glass;
-        } else if (z === 3) {
-          block = glowPanel;
-        }
-
-        sb.add(x, y, z, block, hatch);
-      }
-    }
-  }
-
-  const modelSynthShape = sb.build();
+  const modelSynthShape = event.layeredShape('vect5', [
+    ['XVVVX', 'CAAAC', 'CAEAC', 'CAAAC', 'XVVVX'],
+    ['VAAAV', 'ABBBA', 'ABBBA', 'ABBBA', 'VAAAV'],
+    ['VAEAV', 'ABBBA', 'EBBBE', 'ABBBA', 'VAEAV'],
+    ['VAAAV', 'ABBBA', 'ABBBA', 'ABBBA', 'VAAAV'],
+    ['XV#VX', 'CGGGC', 'CGFGC', 'CGGGC', 'XVVVX'],
+  ])
+    .key('X', vect7, noHatch)
+    .key('C', vect4, noHatch)
+    .key('V', vect5, synthHatch)
+    .key('E', vect10, noHatch)
+    .key('A', azur14, noHatch)
+    .key('B', lightBlue, noHatch)
+    .key('G', glass, noHatch)
+    .key('F', vect14, noHatch)
+    .build();
 
   event.electric(
     'Model Synthesizer', 'batch_model_synthesizer',
