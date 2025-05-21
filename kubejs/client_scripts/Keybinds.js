@@ -133,29 +133,16 @@ KeyBindJSEvents.modify(event => {
     /** @type {Array<string>} */
     let keyParts = k.split('.');
     let mod = v.mod ?? keyParts.find(part => global.modList.contains(part));
-    let isModLoaded = global.modList.contains(mod);
-    if (!isModLoaded) {
+    if (!Platform.isLoaded(mod)) {
       // Skip if the mod is not loaded, to avoid errors.
       console.warn(`Skipping: ${k} -> ${v} (${mod} not loaded)`);
       continue;
     }
 
     if (!v.remove) {
-      if (v.key) {
-        // console.log(`Keybind: ${k} -> ${v.key}`);
-        event.modifyKey(k, v.key);
-      }
-      if (v.modifier) {
-        // console.log(`Keybind: ${k} -> ${v.modifier}`);
-        event.modifyModifier(k, v.modifier);
-      }
-      if (v.category) {
-        // console.log(`Keybind: ${k} -> ${v.category}`);
-        event.modifyCategory(k, v.category);
-      }
-    } else {
-      // console.log(`Keybind: ${k} -> removed`);
-      event.remove(k);
-    }
+      if (v.key) event.modifyKey(k, v.key);
+      if (v.modifier) event.modifyModifier(k, v.modifier);
+      if (v.category) event.modifyCategory(k, v.category);
+    } else event.remove(k);
   }
 });

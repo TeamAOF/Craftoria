@@ -13,7 +13,8 @@ StartupEvents.registry('item', e => {
     .tag('modern_industrialization:forge_hammer_tools')
     .rarity('Common')
     .maxDamage(60)
-    .unstackable();
+    .unstackable()
+    .parentModel('minecraft:item/handheld');
 
   e.create('craftoria:ice_essence').displayName('§bEssence of Ice').tooltip('Dropped by the Apothic Lich in the Trial of Awaken gateway.');
   e.create('craftoria:fire_essence')
