@@ -12,7 +12,6 @@ MIMachineEvents.registerMachines(event => {
   const vect4 = event.memberOfBlock('xtonesreworked:vect_block_4');
   const vect5 = event.memberOfBlock('xtonesreworked:vect_block_5');
   const vect7 = event.memberOfBlock('xtonesreworked:vect_block_7');
-  const vect10 = event.memberOfBlock('xtonesreworked:vect_block_10');
   const vect14 = event.memberOfBlock('xtonesreworked:vect_block_14');
   const glass = event.memberOfBlock('chipped:clear_leaded_glass');
   const lightBlue = event.memberOfBlock('luminax:light_blue_luminax_block');
@@ -22,13 +21,12 @@ MIMachineEvents.registerMachines(event => {
     ['VAAAV', 'ABBBA', 'ABBBA', 'ABBBA', 'VAAAV'],
     ['VAEAV', 'ABBBA', 'EBBBE', 'ABBBA', 'VAEAV'],
     ['VAAAV', 'ABBBA', 'ABBBA', 'ABBBA', 'VAAAV'],
-    ['XV#VX', 'CGGGC', 'CGFGC', 'CGGGC', 'XVVVX'],
+    ['XV#VX', 'CGGGC', 'CGEGC', 'CGGGC', 'XVVVX'],
   ])
     .key('C', vect4, noHatch)
     .key('V', vect5, synthHatch)
     .key('X', vect7, noHatch)
-    .key('E', vect10, noHatch)
-    .key('F', vect14, noHatch)
+    .key('E', vect14, noHatch)
     .key('A', azur14, noHatch)
     .key('B', lightBlue, noHatch)
     .key('G', glass, noHatch)
@@ -53,7 +51,6 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
   const vect4 = event.memberOfBlock('xtonesreworked:vect_block_4');
   const vect5 = event.memberOfBlock('xtonesreworked:vect_block_5');
   const vect7 = event.memberOfBlock('xtonesreworked:vect_block_7');
-  const vect10 = event.memberOfBlock('xtonesreworked:vect_block_10');
   const vect14 = event.memberOfBlock('xtonesreworked:vect_block_14');
   const glass = event.memberOfBlock('chipped:clear_leaded_glass');
   const lightBlue = event.memberOfBlock('luminax:light_blue_luminax_block');
@@ -63,16 +60,15 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
     ['VAAAV', 'ABBBA', 'ABBBA', 'ABBBA', 'VAAAV'],
     ['VAEAV', 'ABBBA', 'EBBBE', 'ABBBA', 'VAEAV'],
     ['VAAAV', 'ABBBA', 'ABBBA', 'ABBBA', 'VAAAV'],
-    ['XV#VX', 'CGGGC', 'CGFGC', 'CGGGC', 'XVVVX'],
+    ['XV#VX', 'CGGGC', 'CGEGC', 'CGGGC', 'XVVVX'],
   ])
     .key('X', vect7, noHatch)
     .key('C', vect4, noHatch)
     .key('V', vect5, synthHatch)
-    .key('E', vect10, noHatch)
+    .key('E', vect14, noHatch)
     .key('A', azur14, noHatch)
     .key('B', lightBlue, noHatch)
     .key('G', glass, noHatch)
-    .key('F', vect14, noHatch)
     .build();
 
   event.electric(
