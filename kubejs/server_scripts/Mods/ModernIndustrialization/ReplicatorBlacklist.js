@@ -40,8 +40,6 @@ ServerEvents.tags('item', e => {
     '#supplementaries:presents',
     '#supplementaries:trapped_presents',
     'supplementaries:jar',
-
-    'xycraft_machines:foil'
   ];
 
   /**
@@ -136,6 +134,8 @@ ServerEvents.tags('item', e => {
     'framedblocks:framed_tank',
 
     'replication:matter_tank',
+
+    'xycraft_machines:foil'
   ].concat(replicatorBlacklist);
 
   /**
