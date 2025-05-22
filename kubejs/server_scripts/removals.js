@@ -283,15 +283,7 @@ ServerEvents.generateData('after_mods', event => {
    * @param {string} path - The path to the data.
    * @param {string} type - The of data to be removed.
    */
-  const Yeet = (path, type) => {
-    event.json(`${ID.namespace(path)}:${type}/${ID.path(path)}`, {
-      'neoforge:conditions': [
-        {
-          type: 'neoforge:false',
-        },
-      ],
-    });
-  };
+  const Yeet = (path, type) => event.json(`${ID.namespace(path)}:${type}/${ID.path(path)}`, { 'neoforge:conditions': [{ type: 'neoforge:false' }] });
 
   lootTablesToYeet.forEach(id => Yeet(id, 'loot_table'));
   lootModifiersToYeet.forEach(id => Yeet(id, 'loot_modifiers'));

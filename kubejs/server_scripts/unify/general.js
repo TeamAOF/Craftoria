@@ -83,7 +83,7 @@ ServerEvents.tags('item', e => {
     }
   });
 
-  const whitelistedIDs = ['dust_iridium', 'dust_nickel', 'dust_platinum', 'dust_silver', 'dust_titanium', 'dust_tungsten', 'dust_zinc'];
+  const whitelistedIDs = ['dust_iridium', 'dust_nickel', 'dust_platinum', 'dust_silver', 'dust_titanium', 'dust_tungsten', 'dust_zinc', 'dust_aluminum'];
   const tagsToCheck = ['c:gems', 'c:dusts'];
   tagsToCheck.forEach(tag => {
     e.get(tag).objectIds.forEach(id => {

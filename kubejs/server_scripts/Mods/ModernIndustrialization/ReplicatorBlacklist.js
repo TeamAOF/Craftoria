@@ -40,6 +40,8 @@ ServerEvents.tags('item', e => {
     '#supplementaries:presents',
     '#supplementaries:trapped_presents',
     'supplementaries:jar',
+
+    'xycraft_machines:foil'
   ];
 
   /**

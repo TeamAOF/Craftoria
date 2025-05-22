@@ -60,8 +60,10 @@ ServerEvents.recipes(e => {
     D: 'mekanism_extras:cosmic_control_circuit',
   }).id('mekaweapons:bow_riser');
 
-  e.replaceInput({ id: 'mekanism:mekasuit_helmet' }, 'mekanism:ultimate_control_circuit', 'mekanism_extras:supreme_control_circuit');
-  e.replaceInput({ id: 'mekanism:mekasuit_bodyarmor' }, 'mekanism:ultimate_control_circuit', 'mekanism_extras:supreme_control_circuit');
-  e.replaceInput({ id: 'mekanism:mekasuit_pants' }, 'mekanism:ultimate_control_circuit', 'mekanism_extras:supreme_control_circuit');
-  e.replaceInput({ id: 'mekanism:mekasuit_boots' }, 'mekanism:ultimate_control_circuit', 'mekanism_extras:supreme_control_circuit');
+  e.replaceInput([
+    { id: 'mekanism:mekasuit_helmet' },
+    { id: 'mekanism:mekasuit_bodyarmor' },
+    { id: 'mekanism:mekasuit_pants' },
+    { id: 'mekanism:mekasuit_boots' },
+  ], 'mekanism:ultimate_control_circuit', 'mekanism_extras:supreme_control_circuit');
 });

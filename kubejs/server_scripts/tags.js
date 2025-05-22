@@ -8,7 +8,6 @@ ServerEvents.tags('item', e => {
   e.add('ars_controle:ritual_blacklist', ['ars_nouveau:ritual_flight']);
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
-  e.removeAll('apothic_enchanting:boon_drops');
 
   // Crops & Seeds
   e.add('c:seeds/cabbage', ['farmersdelight:cabbage_seeds', 'dumplings_delight:chinese_cabbage_seeds']);
