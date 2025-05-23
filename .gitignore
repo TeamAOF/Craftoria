@@ -1,42 +1,34 @@
 # Project Infrastructure
 # ---
+/*
+
+!/automation
+!/changelogs
+!/config
+!/defaultconfigs
+!/emotes
+!/kubejs
+!/server_files
+!/.gitignore
+!/.gitattributes
+!/manifest.json
+!/.github
+!.editorconfig
+!.prettierrc.json
+!InstanceSync.jar
+!MODLIST.md
+!README.md
+!minecraftinstance.json
+!user-prefs.json
+!version-info.json
+
 Server Test/
 knownkeys.txt
 automation/secrets.ps1
 .curseclient
 
-# MC Stuff
-# ---
-/mods/
-/debug/
-logs/
-local/
-saves/
-downloads/
-.mixin.out/
-screenshots/
-profileImage/
-crash-reports/
-fancymenu_data/
-
-servers.dat
-servers.dat_old
-options.txt
-command_history.txt
-icon.png
-
 # Specific Mod Junk
 # ---
-XaeroWaypoints/
-XaeroWorldMap/
-/journeymap/
-/ESM/
-realms_persistence.json
-usercache.json
-usernamecache.json
-emi.json
-patchouli_data.json
-TrashSlotSaveState.json
 config/embeddium-fingerprint.json
 config/spark/activity.json
 config/ars_nouveau/search_index/
@@ -49,24 +41,21 @@ resourcepacks/*.zip
 .DS_Store
 Thumbs.db
 
-
 # Misc.
 # ---
 ModListCreator-5.0.0-fatjar.jar
 
-*.log
+# VSCode
+!/.vscode
+/.vscode/*
+!/.vscode/*.code-workspace
+!/.vscode/extensions.json
 
-shaderpacks/
+# ProbeJS
+/kubejs/probe
+/kubejs/config/probejs.json
+/kubejs/config/probe-settings.json
+/kubejs/*/jsconfig.json
 
-.probe
-kubejs/*/jsconfig.json
-kubejs/config/probe-settings.json
-kubejs/config/web_server.json
-
-spark-modernfix/
-
-cherishedworlds-favorites.dat
-
-.vscode/
-
-.gitignore_local
+# Downloadable dependencies
+**/node_modules

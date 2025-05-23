@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
   const { assembler, packer, mixer, electrolyzer, macerator } = event.recipes.modern_industrialization;
   const { shapeless } = event;
 
-  //QoL recipes
+  // QoL recipes
   assembler(2, 100)
     .itemOut('8x ae2:fluix_covered_cable')
     .itemIn('8x ae2:fluix_glass_cable')
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
   shapeless('4x ae2:fluix_covered_cable', 'ae2:fluix_covered_dense_cable');
   shapeless('4x ae2:fluix_smart_cable', 'ae2:fluix_smart_dense_cable');
 
-  //AppFlux compat
+  // AppFlux compat
   assembler(2, 100)
     .itemOut('appflux:energy_processor')
     .itemIn('appflux:printed_energy_processor')
@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
     .id('craftoria:appflux/redstone_crystal');
   electrolyzer(8, 60).itemOut('appflux:charged_redstone').itemIn('appflux:redstone_crystal').id('craftoria:appflux/charged_redstone');
 
-  //ExtendedAE compat
+  // ExtendedAE compat
   assembler(8, 200)
     .itemOut('extendedae:concurrent_processor')
     .itemIn('extendedae:concurrent_processor_print')
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
   mekanism.crushing('extendedae:entro_dust', '#c:gems/entro');
   ae.circuitCutter('9x ae2:printed_silicon', 'extendedae:silicon_block');
 
-  //Megacells compat
+  // Megacells compat
   assembler(8, 200)
     .itemOut('megacells:accumulation_processor')
     .itemIn('megacells:printed_accumulation_processor')
@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
     .fluidIn('1000x minecraft:lava', 0)
     .id('craftoria:megacells/sky_osmium_ingot');
 
-  //Misc recipes
+  // Misc recipes
   ae.crystalAssembler('craftoria:universal_press', [
     'ae2:calculation_processor_press',
     'ae2:engineering_processor_press',

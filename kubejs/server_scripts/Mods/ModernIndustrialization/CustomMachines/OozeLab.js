@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+  const { ooze_lab, assembler } = event.recipes.modern_industrialization;
+
   /**
    * Hardcoded replacements for the output of the ooze lab recipes.
    * @type {Record<Special.Item, Special.Item}
@@ -23,7 +25,7 @@ ServerEvents.recipes(event => {
    * @param {number} time
    */
   const oozeLabRecipe = (itemIn, itemOut, fluidIn, fluidOut, time) => {
-    const recipe = event.recipes.modern_industrialization.ooze_lab(8, Math.max(1, Math.floor(time / 100)));
+    const recipe = ooze_lab(8, Math.max(1, Math.floor(time / 100)));
     let inputThing = ID.path(itemIn || fluidIn);
     let outputThing = ID.path(itemOut || fluidOut);
 
@@ -57,4 +59,12 @@ ServerEvents.recipes(event => {
     else if (isTag) oozeLabRecipe(`#${input}`, output, null, null, time);
     else logError(`Ooze Lab recipe not found for input: ${input}, output: ${output}, ID: ${kubeRecipe.getId()}`);
   });
+
+  assembler(16, 200) // TODO: different recipe?
+    .itemOut('mi_tweaks:batch_ooze_lab')
+    .itemIn('8x justdirethings:gooblock_tier4')
+    .itemIn('4x modern_industrialization:electronic_circuit')
+    .itemIn('4x modern_industrialization:large_pump')
+    .itemIn('modern_industrialization:advanced_machine_hull')
+    .id('craftoria:mi/assembler/ooze_lab');
 });

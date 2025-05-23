@@ -76,7 +76,7 @@ StartupEvents.registry('block', event => {
     .property(BlockProperties.WATERLOGGED)
     .tagBlock('minecraft:mineable/pickaxe')
     .tagItem('modern_industrialization:replicator_blacklist')
-    .tagItem(`craftoria:replicator_2_blacklist`)
+    .tagItem('craftoria:replicator_2_blacklist')
     .item(item => {
       item
         .useAnimation('drink')

@@ -86,6 +86,19 @@ const customMIMachines = {
       front_active: 'extended_industrialization:block/machines/brewery/overlay_front_active',
     },
   },
+  model_synthesizer: {
+    name: 'Model Synthesizer [DUMMY]',
+    casing: 'vect5',
+  },
+  batch_model_synthesizer: {
+    name: 'Model Synthesizer',
+    casing: 'vect5',
+    mod: 'mi_tweaks',
+    default_overlays: {
+      front: 'modern_industrialization:block/machines/model_synthesizer/overlay_front',
+      front_active: 'modern_industrialization:block/machines/model_synthesizer/overlay_front_active',
+    },
+  },
 };
 
 /**
@@ -124,6 +137,7 @@ const customMICasings = {
   sky_stone_brick_casing: 'ae2:sky_stone_brick',
   tiled_blackstone_casing: 'chipped:tiled_blackstone',
   factory_grate: 'factory_blocks:grate',
+  vect5: 'xtonesreworked:vect_block_5',
 };
 
 global.customMIMachines = customMIMachines;

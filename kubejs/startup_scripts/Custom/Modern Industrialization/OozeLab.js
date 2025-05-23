@@ -44,7 +44,6 @@ MIMachineEvents.registerMachines(event => {
   }
   const oozeLabShape = oozeLabShapeBuilder.build();
 
-  // prettier-ignore
   event.simpleElectricCraftingMultiBlock(
     'Ooze Lab', 'ooze_lab',
     OOZE_LAB, oozeLabShape,
@@ -68,17 +67,17 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
   const oozeLabShapeBuilder = event.startShape('factory_grate');
 
   for (let y = 0; y < 5; y++) {
-    let isTopBottom = y === 0 || y === 4;
+    let topBot = y === 0 || y === 4;
     for (let x = -3; x <= 3; x++) {
       let isLeftRight = x === -3 || x === 3;
       for (let z = 0; z < 5; z++) {
-        if (z === 0 && !isTopBottom) continue; // Skip the first layer if not top or bottom
-        let isEdge = (x === -3 || x === 3 || z === 4 || z === 0) && isTopBottom;
+        if (z === 0 && !topBot) continue; // Skip the first layer if not top or bottom
+        let isEdge = (x === -3 || x === 3 || z === 4 || z === 0) && topBot;
 
         let block = grate;
         let hatch = isEdge ? oozeLabHatch : noHatch;
 
-        if (isTopBottom) {
+        if (topBot) {
           block = grate;
         } else if (z === 4 || isLeftRight) {
           block = rGrate;
@@ -96,7 +95,6 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
   }
   const oozeLabShape = oozeLabShapeBuilder.build();
 
-  // prettier-ignore
   event.electric(
     'Ooze Lab', 'batch_ooze_lab',
     OOZE_LAB, oozeLabShape,

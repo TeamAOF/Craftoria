@@ -13,7 +13,8 @@ StartupEvents.registry('item', e => {
     .tag('modern_industrialization:forge_hammer_tools')
     .rarity('Common')
     .maxDamage(60)
-    .unstackable();
+    .unstackable()
+    .parentModel('minecraft:item/handheld');
 
   e.create('craftoria:ice_essence').displayName('§bEssence of Ice').tooltip('Dropped by the Apothic Lich in the Trial of Awaken gateway.');
   e.create('craftoria:fire_essence')
@@ -30,32 +31,36 @@ StartupEvents.registry('item', e => {
   e.create('craftoria:radonium').displayName('§aRadonium');
   e.create('craftoria:cosmic_matter')
     .displayName('§dCosmic Matter')
-    .tag(`modern_industrialization:replicator_blacklist`)
-    .tag(`craftoria:replicator_1_blacklist`)
+    .tag('modern_industrialization:replicator_blacklist')
+    .tag('craftoria:replicator_1_blacklist')
     .rarity('Epic');
   e.create('craftoria:cosmic_injector')
     .displayName('§dCosmic Injector')
-    .tag(`modern_industrialization:replicator_blacklist`)
-    .tag(`craftoria:replicator_1_blacklist`)
+    .tag('modern_industrialization:replicator_blacklist')
+    .tag('craftoria:replicator_1_blacklist')
     .rarity('Epic');
+  e.create('craftoria:garlic_bread')
+    .displayName('Garlic Bread')
+    .food(food => {
+      food.nutrition(3).saturation(1).eatSeconds(3);
+    });
 });
 
 ItemEvents.modification(event => {
-
   const pelletsEdible = [
     'mekanism:pellet_plutonium',
     'mekanism:pellet_polonium',
     'mekanism:pellet_antimatter',
-    'mekanism:yellow_cake_uranium'
-  ]
+    'mekanism:yellow_cake_uranium',
+  ];
 
-  pelletsEdible.forEach((pellet) => {
+  pelletsEdible.forEach(pellet => {
     event.modify(pellet, item => {
       item.food = {
         nutrition: 1000,
         saturation: 1000,
         eatSeconds: 2,
-        canAlwaysEat: true
+        canAlwaysEat: true,
       };
     });
   });

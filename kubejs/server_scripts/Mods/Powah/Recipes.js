@@ -20,15 +20,14 @@ ServerEvents.recipes(e => {
     }).id(`powah:crafting/${id}`);
   });
 
-  // prettier-ignore
   const solarPanels = [
-    { output: 'powah:solar_panel_starter', input: 'powah:photoelectric_pane', circuit: 'mekanism:basic_control_circuit', capacitor: 'powah:capacitor_basic', energy: 10000,},
-    { output: 'powah:solar_panel_basic', input: 'powah:solar_panel_starter', circuit: 'mekanism:advanced_control_circuit', capacitor: 'powah:capacitor_basic_large', energy: 100000, },
-    { output: 'powah:solar_panel_hardened', input: 'powah:solar_panel_basic', circuit: 'mekanism:advanced_control_circuit', capacitor: 'powah:capacitor_hardened', energy: 500000, },
-    { output: 'powah:solar_panel_blazing', input: 'powah:solar_panel_hardened', circuit: 'mekanism:elite_control_circuit', capacitor: 'powah:capacitor_blazing', energy: 1000000, },
-    { output: 'powah:solar_panel_niotic', input: 'powah:solar_panel_blazing', circuit: 'mekanism:elite_control_circuit', capacitor: 'powah:capacitor_niotic', energy: 10000000, },
-    { output: 'powah:solar_panel_spirited', input: 'powah:solar_panel_niotic', circuit: 'mekanism:ultimate_control_circuit', capacitor: 'powah:capacitor_spirited', energy: 50000000, },
-    { output: 'powah:solar_panel_nitro', input: 'powah:solar_panel_spirited', circuit: 'mekanism:ultimate_control_circuit', capacitor: 'powah:capacitor_nitro', energy: 100000000, },
+    { output: 'powah:solar_panel_starter', input: 'powah:photoelectric_pane', circuit: 'mekanism:basic_control_circuit', capacitor: 'powah:capacitor_basic', energy: 10000 },
+    { output: 'powah:solar_panel_basic', input: 'powah:solar_panel_starter', circuit: 'mekanism:advanced_control_circuit', capacitor: 'powah:capacitor_basic_large', energy: 100000 },
+    { output: 'powah:solar_panel_hardened', input: 'powah:solar_panel_basic', circuit: 'mekanism:advanced_control_circuit', capacitor: 'powah:capacitor_hardened', energy: 500000 },
+    { output: 'powah:solar_panel_blazing', input: 'powah:solar_panel_hardened', circuit: 'mekanism:elite_control_circuit', capacitor: 'powah:capacitor_blazing', energy: 1000000 },
+    { output: 'powah:solar_panel_niotic', input: 'powah:solar_panel_blazing', circuit: 'mekanism:elite_control_circuit', capacitor: 'powah:capacitor_niotic', energy: 10000000 },
+    { output: 'powah:solar_panel_spirited', input: 'powah:solar_panel_niotic', circuit: 'mekanism:ultimate_control_circuit', capacitor: 'powah:capacitor_spirited', energy: 50000000 },
+    { output: 'powah:solar_panel_nitro', input: 'powah:solar_panel_spirited', circuit: 'mekanism:ultimate_control_circuit', capacitor: 'powah:capacitor_nitro', energy: 100000000 },
   ];
 
   solarPanels.forEach(_ => {

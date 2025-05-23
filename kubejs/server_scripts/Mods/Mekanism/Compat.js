@@ -11,15 +11,15 @@ ServerEvents.recipes(e => {
     if (skippedModIDs.includes(modID)) return;
 
     if (id.includes('archwood')) {
-      if (madeCuttingRecipeFor.includes(`ars_nouveau:archwood_planks`)) return;
+      if (madeCuttingRecipeFor.includes('ars_nouveau:archwood_planks')) return;
       // Special case for Ars Nouveau
-      mekanism.sawing(`6x ars_nouveau:archwood_planks`, '#c:logs/archwood', 'mekanism:sawdust', 0.25);
-      mekanism.sawing(`ars_nouveau:archwood_planks`, 'ars_nouveau:archwood_pressure_plate', '2x mekanism:sawdust', 0.25);
-      mekanism.sawing(`2x ars_nouveau:archwood_planks`, 'ars_nouveau:archwood_fence_gate', '4x minecraft:stick', 1);
-      mekanism.sawing(`2x ars_nouveau:archwood_planks`, 'ars_nouveau:archwood_door');
-      mekanism.sawing(`3x ars_nouveau:archwood_planks`, 'ars_nouveau:archwood_trapdoor');
+      mekanism.sawing('6x ars_nouveau:archwood_planks', '#c:logs/archwood', 'mekanism:sawdust', 0.25);
+      mekanism.sawing('ars_nouveau:archwood_planks', 'ars_nouveau:archwood_pressure_plate', '2x mekanism:sawdust', 0.25);
+      mekanism.sawing('2x ars_nouveau:archwood_planks', 'ars_nouveau:archwood_fence_gate', '4x minecraft:stick', 1);
+      mekanism.sawing('2x ars_nouveau:archwood_planks', 'ars_nouveau:archwood_door');
+      mekanism.sawing('3x ars_nouveau:archwood_planks', 'ars_nouveau:archwood_trapdoor');
 
-      madeCuttingRecipeFor.push(`ars_nouveau:archwood_planks`);
+      madeCuttingRecipeFor.push('ars_nouveau:archwood_planks');
       return;
     }
 

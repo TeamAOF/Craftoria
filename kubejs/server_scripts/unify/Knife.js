@@ -26,5 +26,14 @@
       hiddenKnives.push(item.id);
     });
     e.add('almostunified:hide', hiddenKnives);
+
+    [
+      'refurbished_furniture:items',
+      'refurbished_furniture:kitchen',
+      'refurbished_furniture:outdoors',
+      'refurbished_furniture:tools/knives',
+    ].forEach(tag => {
+      e.add(tag, Ingredient.of('#c:tools/knife').itemIds);
+    });
   });
 }

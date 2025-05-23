@@ -69,6 +69,10 @@ ServerEvents.tags('item', e => {
 
     '#modern_industrialization:tanks',
 
+    '#create:toolboxes',
+
+    'eternal_starlight:golem_steel_crate',
+
     /^pneumaticcraft:.*_(tank|chest)$/,
     /^pneumaticcraft:.*drone/,
     'pneumaticcraft:liquid_hopper',
@@ -130,6 +134,8 @@ ServerEvents.tags('item', e => {
     'framedblocks:framed_tank',
 
     'replication:matter_tank',
+
+    'xycraft_machines:foil'
   ].concat(replicatorBlacklist);
 
   /**

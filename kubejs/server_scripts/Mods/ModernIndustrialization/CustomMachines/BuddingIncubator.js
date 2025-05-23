@@ -18,6 +18,8 @@ const buddingConditions = {
     text: 'Place Budding Fully Entroized Fluix in the center to produce Entro Crystal.',
     fluid: '1000x water',
     item: '8x extendedae:entro_crystal',
+    eu: 16,
+    time: 15 * 20
   },
   thioquartz_budding: {
     block: 'eternal_starlight:budding_thioquartz',
@@ -32,8 +34,10 @@ const buddingConditions = {
       property: TIME_BUDDING_STAGE,
       value: TIME_BUDDING_STAGE.max,
     },
-    fluid: '100x justdirethings:time_fluid_source',
+    fluid: '250x justdirethings:time_fluid_source',
     item: '1x justdirethings:time_crystal',
+    eu: 32,
+    time: 20 * 20,
   },
 };
 
@@ -69,7 +73,7 @@ MIRecipeEvents.customCondition(event => {
 });
 
 ServerEvents.recipes(event => {
-  const { budding_incubator } = event.recipes.modern_industrialization;
+  const { budding_incubator, assembler } = event.recipes.modern_industrialization;
 
   /**
    * @param {$FluidStack_|$ItemStack_} stack
@@ -85,12 +89,22 @@ ServerEvents.recipes(event => {
   };
 
   Object.entries(buddingConditions).forEach(([key, value]) => {
-    let { fluid, item } = value;
-    budding_incubator(8, 10 * 20)
+    let { fluid, item, eu, time } = value;
+    budding_incubator(eu || 8, time || 10 * 20)
       .fluidIn(fluid)
       .itemOut(item)
       .itemOut(getHalfFromStack(item), 0.33)
       .customCondition(key)
-      .id(`craftoria:mi/budding_incubator/${item.split(':')[1]}`);
+      .id(`craftoria:mi/budding_incubator/${key}`);
   });
+
+  assembler(16, 200)
+    .itemOut('mi_tweaks:batch_budding_incubator')
+    .itemIn('16x ae2:growth_accelerator')
+    .itemIn('4x modern_industrialization:electronic_circuit')
+    .itemIn('modern_industrialization:large_pump')
+    .itemIn('modern_industrialization:advanced_machine_hull')
+    .id('craftoria:mi/assembler/budding_incubator');
+
+  event.shapeless('mi_tweaks:batch_budding_incubator', 'modern_industrialization:budding_incubator');
 });

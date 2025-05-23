@@ -1,6 +1,6 @@
-////////////////////////
-/// Made by Team AOF ///
-////////////////////////
+// //////////////////////
+// / Made by Team AOF ///
+// //////////////////////
 
 ServerEvents.recipes(event => {
   let miQuarryRecipeIDs = [];
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
       miQuarryRecipeIDs.forEach(recipe => {
         if (!recipe.includes(tempID)) return;
 
-        //console.log(`Removing Recipe: ${tempID}`);
+        // console.log(`Removing Recipe: ${tempID}`);
         event.remove({ id: tempID });
       });
     }

@@ -28,7 +28,7 @@
  * @param {DataModel} data
  */
 function generateModelData(entityId, data) {
-  let [namespace, entityName] = entityId.split(':');
+  let { namespace, path: entityName } = ID.mc(entityId);
 
   let outputPath =
     namespace === 'minecraft' ? `hostilenetworks:data_models/${entityName}` : `hostilenetworks:data_models/${namespace}/${entityName}`;
@@ -58,9 +58,7 @@ function generateModelData(entityId, data) {
     },
     display: data.display ?? {},
     sim_cost: data.simCost,
-    input: {
-      item: 'hostilenetworks:prediction_matrix',
-    },
+    input: Ingredient.of(data.input ?? 'hostilenetworks:prediction_matrix').toJson(),
     base_drop: {
       id: data.baseDrop,
       count: 1,
@@ -74,6 +72,8 @@ function generateModelData(entityId, data) {
 
   return { outputPath: outputPath, modelJson: modelJson };
 }
+
+let globalDataModels = {};
 
 ServerEvents.generateData('after_mods', event => {
   /** @type {Record<Special.EntityType, DataModel>} */
@@ -119,10 +119,35 @@ ServerEvents.generateData('after_mods', event => {
         scale: 0.25,
       },
     },
+    'minecraft:warden': {
+      simCost: 2560,
+      baseDrop: 'hostilenetworks:end_prediction',
+      fabricatorDrops: [
+        'deeperdarker:heart_of_the_deep',
+        'deeperdarker:warden_carapace',
+        'apothic_enchanting:warden_tendril',
+        '2x minecraft:echo_shard',
+        '4x minecraft:sculk_catalyst',
+        '64x minecraft:sculk',
+      ],
+      nameColor: '#05343F',
+      display: {
+        y_offset: -0.15,
+        scale: 0.65,
+      },
+    },
   };
+
+  globalDataModels = dataModels;
 
   for (let [entityId, modelData] of Object.entries(dataModels)) {
     let { outputPath, modelJson } = generateModelData(entityId, modelData);
+
+    if (modelJson.fabricator_drops.length === 0) {
+      logWarn(`Skipping ${entityId} because it has no fabricator drops`);
+      continue;
+    }
+
     event.json(outputPath, modelJson);
   }
 });

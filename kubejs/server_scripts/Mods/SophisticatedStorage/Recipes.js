@@ -24,7 +24,7 @@ ServerEvents.recipes(e => {
     S: '#c:stones',
     G: 'minecraft:gold_ingot',
   }).id('sophisticatedstorage:storage_output');
-  
+
   // Sophisticated Storage Storage IO
   e.shaped('sophisticatedstorage:storage_io', ['SPS', 'RBG', 'SPS'], {
     B: '#craftoria:storage/wooden',

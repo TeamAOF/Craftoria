@@ -1,4 +1,4 @@
-//Priority: 999
+// priority: 999
 /**
  * This file defines the global variables used in the unification scripts.
  */

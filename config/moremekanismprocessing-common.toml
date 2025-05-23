@@ -4,7 +4,7 @@
 	showOreNotExistRecipes = false
 	#Each recipes output item be determined by this list.
 	#First is Highest.
-	recipeOutputPriority = ["alltheores", "create", "immersiveengineering"]
+	recipeOutputPriority = ["modern_industrialization", "alltheores", "create", "immersiveengineering"]
 
 #processingLevel: Set ores processing max level
 #    5 : can into up x5 (able all procssing)
@@ -19,7 +19,7 @@
 	[ores.aluminum]
 		# Default: 5
 		# Range: 0 ~ 5
-		processingLevel = 0
+		processingLevel = 2
 		#Disable recipe what smelting/blasting dust into ingot.
 		disableDustCooking = true
 
@@ -103,7 +103,7 @@
 	[ores.iridium]
 		# Default: 5
 		# Range: 0 ~ 5
-		processingLevel = 5
+		processingLevel = 2
 		#Disable recipe what smelting/blasting dust into ingot.
 		disableDustCooking = true
 
@@ -134,7 +134,7 @@
 	[ores.platinum]
 		# Default: 5
 		# Range: 0 ~ 5
-		processingLevel = 5
+		processingLevel = 2
 		#Disable recipe what smelting/blasting dust into ingot.
 		disableDustCooking = true
 
@@ -177,14 +177,14 @@
 	[ores.titanium]
 		# Default: 5
 		# Range: 0 ~ 5
-		processingLevel = 5
+		processingLevel = 2
 		#Disable recipe what smelting/blasting dust into ingot.
 		disableDustCooking = true
 
 	[ores.tungsten]
 		# Default: 5
 		# Range: 0 ~ 5
-		processingLevel = 5
+		processingLevel = 2
 		#Disable recipe what smelting/blasting dust into ingot.
 		disableDustCooking = true
 

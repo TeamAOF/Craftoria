@@ -45,7 +45,7 @@ ItemEvents.modifyTooltips(e => {
     let totalBlocks = Math.pow(9, i);
     let shortTotalBlocks = abbrNum(totalBlocks, 1);
     let longTotalBlocks = addDecimals(totalBlocks);
-    //console.log(shortTotalBlocks);
+    // console.log(shortTotalBlocks);
     Ingredient.of(`#craftoria:${i}x_compressed`).itemIds.forEach(item => {
       item = item
         .split(':')[1]
