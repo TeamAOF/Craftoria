@@ -45,13 +45,13 @@ function ArsNouveauHelper(event) {
           pedestalItemCount++;
           recipe.pedestalItems.push(Ingredient.of(item).toJson());
         }
-
-        if (pedestalItemCount > 8) {
-          logError('Ars Nouveau Enchanting Apparatus pedestal items count exceeded 8. Please check the recipe.');
-          logError(`Recipe output: ${output}, Recipe input: ${input}, Recipe pedestal items: ${pedestalItems}`);
-          return;
-        }
       });
+
+      if (pedestalItemCount > 8) {
+        logError('Ars Nouveau Enchanting Apparatus pedestal items count exceeded 8. Please check the recipe.');
+        logError(`Recipe output: ${output}, Recipe input: ${input}, Recipe pedestal items: ${pedestalItems}`);
+        return;
+      }
 
       event.custom(recipe).id(recipeID ?? makeRecipeId(output, 'enchanting_apparatus'));
     },
@@ -82,13 +82,14 @@ function ArsNouveauHelper(event) {
           pedestalItemCount++;
           recipe.pedestalItems.push(Ingredient.of(item).toJson());
         }
-
-        if (pedestalItemCount > 8) {
-          logError('Ars Nouveau Imbuement Chamber pedestal items count exceeded 8. Please check the recipe.');
-          logError(`Recipe output: ${output}, Recipe input: ${input}, Recipe pedestal items: ${pedestalItems}`);
-          return;
-        }
       });
+
+      if (pedestalItemCount > 8) {
+        logError('Ars Nouveau Imbuement Chamber pedestal items count exceeded 8. Please check the recipe.');
+        logError(`Recipe output: ${output}, Recipe input: ${input}, Recipe pedestal items: ${pedestalItems}`);
+        return;
+      }
+
       event.custom(recipe).id(recipeID ?? makeRecipeId(output, 'imbuement_chamber'));
     },
 

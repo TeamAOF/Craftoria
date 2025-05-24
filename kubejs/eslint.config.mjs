@@ -18,6 +18,8 @@ export default [
       'no-unexpected-multiline': 'off',
       'no-var': 'error',
       'no-useless-escape': 'warn',
+      'no-useless-return': 'warn',
+      'prefer-destructuring': ['error', { object: true, array: false }],
       'space-infix-ops': ['error', { int32Hint: true }],
       '@stylistic/indent': ['error', 2],
       '@stylistic/spaced-comment': 'error',

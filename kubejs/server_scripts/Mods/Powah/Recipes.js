@@ -1,5 +1,5 @@
 ServerEvents.recipes(e => {
-  let energizing = e.recipes.powah.energizing;
+  let { energizing } = e.recipes.powah;
 
   const reactors = [
     { id: 'reactor_starter', capacitor: 'capacitor_basic_tiny', previous: 'dielectric_casing' },

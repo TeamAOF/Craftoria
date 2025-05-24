@@ -13,7 +13,7 @@ let getItemFromTag = tag => {
 };
 
 let checkTagSize = tag => {
-  let itemIds = Ingredient.of(tag).itemIds;
+  let { itemIds } = Ingredient.of(tag);
   let size = itemIds.length;
   logInfo(`Found ${size} items for tag: ${tag}`);
   if (itemIds[0] !== 'minecraft:barrier') return size;

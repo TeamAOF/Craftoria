@@ -35,5 +35,15 @@
       "**/*.json.gz": true,
       "**/*.bak": true,
     },
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "always",
+      "source.fixAll": "always"
+    },
+    "eslint.codeActionsOnSave.rules": [
+      "!no-useless-escape",
+      "!no-useless-return",
+      "*"
+    ],
+    "eslint.codeActionsOnSave.mode": "all",
   }
 }

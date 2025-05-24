@@ -13,7 +13,7 @@ ItemEvents.modifyTooltips(event => {
 
 ItemEvents.dynamicTooltips('ench_desc', event => {
   const EMBELLISH_TEXT = (name, description) => Text.translate('tooltip.enchdesc.embellish', name, description);
-  const enchantments = event.item.enchantments;
+  const { enchantments } = event.item;
   enchantments.keySet().forEach(ench => {
     let descriptionId = `enchantment.${ench.registeredName.replace(':', '.')}`;
     event.add(EMBELLISH_TEXT(Text.translate(descriptionId), Text.translate(`${descriptionId}.desc`).darkGray()));
