@@ -13,8 +13,8 @@
       "path": "../kubejs"
     },
     {
-      "name": "KubeJS Logs",
-      "path": "../logs/kubejs"
+      "name": "Logs",
+      "path": "../logs"
     },
     {
       "name": "Configs",
@@ -29,5 +29,11 @@
       "path": "../config/ftbquests/quests"
     }
   ],
-  "settings": {}
+  "settings": {
+    "files.exclude": {
+      "**/*.log.gz": true,
+      "**/*.json.gz": true,
+      "**/*.bak": true,
+    },
+  }
 }
