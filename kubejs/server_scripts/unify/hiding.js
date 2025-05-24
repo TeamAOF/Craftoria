@@ -39,31 +39,31 @@ RecipeViewerEvents.removeEntries('item', e => {
 
   Object.entries(materials).forEach(([material, types]) => {
     switch (material) {
-    case 'metals':
-      metals.forEach(metal => {
-        types.forEach(type => {
-          hideItemsFromTag(`#c:${type}/${metal}`);
-          if (type === 'raw_materials') hideItemsFromTag(`#c:storage_blocks/raw_${metal}`);
+      case 'metals':
+        metals.forEach(metal => {
+          types.forEach(type => {
+            hideItemsFromTag(`#c:${type}/${metal}`);
+            if (type === 'raw_materials') hideItemsFromTag(`#c:storage_blocks/raw_${metal}`);
+          });
         });
-      });
-      break;
-    case 'gems':
-      gems.forEach(gem => {
-        types.forEach(type => {
-          hideItemsFromTag(`#c:${type}/${gem}`);
+        break;
+      case 'gems':
+        gems.forEach(gem => {
+          types.forEach(type => {
+            hideItemsFromTag(`#c:${type}/${gem}`);
+          });
         });
-      });
-      break;
-    case 'misc':
-      misc.forEach(misc => {
-        types.forEach(type => {
-          hideItemsFromTag(`#c:${type}/${misc}`);
+        break;
+      case 'misc':
+        misc.forEach(misc => {
+          types.forEach(type => {
+            hideItemsFromTag(`#c:${type}/${misc}`);
+          });
         });
-      });
-      break;
-    default:
-      logError(`Unknown material: ${material}`);
-      break;
+        break;
+      default:
+        logError(`Unknown material: ${material}`);
+        break;
     }
   });
 
