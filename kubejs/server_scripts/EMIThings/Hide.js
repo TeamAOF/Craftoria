@@ -1,3 +1,4 @@
+// priority: -1100
 RecipeViewerEvents.removeEntries('item', event => {
   /** @type {Special.Item[]} */
   let hideItems = [];

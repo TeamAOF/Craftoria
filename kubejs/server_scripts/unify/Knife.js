@@ -1,3 +1,4 @@
+// priority: 997
 {
   /** @type {Special.Mod[]} */
   let modWhitelist = ['farmersdelight', 'moredelight', 'arsdelight', 'twilightdelight', 'ends_delight'];

@@ -1,3 +1,4 @@
+// priority: 990
 RecipeViewerEvents.removeEntries('item', e => {
   let unifyHide = [];
 

@@ -1,3 +1,4 @@
+// priority: -1000
 /** @type {Special.Item[]} */
 const globalItemRemovals = [
   'megacells:mega_interface',
