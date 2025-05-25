@@ -1,6 +1,7 @@
 ServerEvents.recipes(e => {
   let makeRecipeID = (type, input, output) => {
-    return _makeRecipeID('farmersdelight', type, input, output);
+    input = Array.isArray(input) ? input : [input];
+    return _makeRecipeID('farmersdelight', type, input[0], output);
   };
 
   /**
@@ -68,8 +69,7 @@ ServerEvents.recipes(e => {
       result: Item.of(output).toJson(),
       ingredient: Ingredient.of(input).toJson(),
     };
-
-    e.custom(recipe).id(makeRecipeID('refurb_cutting', output, input));
+    e.custom(recipe).id(makeRecipeID('refurb_cutting', Array.isArray(input) ? input[0] : input, output));
   };
 
   for (const [output, input] of Object.entries(sushigocrafting)) {
@@ -87,7 +87,7 @@ ServerEvents.recipes(e => {
     /** @type {{id: string, count: number}} */
     let { id: output, count: outputCount } = result[0].item;
     if (!outputCount) outputCount = 1;
-    let input = ingredients[0].item || `#${ingredients[0].tag}`;
-    refurbCutting(`${outputCount}x ${output}`, input);
+    let inputs = ingredients.map(ingredient => ingredient.item || `#${ingredient.tag}`);
+    refurbCutting(`${outputCount}x ${output}`, inputs);
   });
 });
