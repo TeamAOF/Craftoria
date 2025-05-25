@@ -34,12 +34,8 @@ ServerEvents.recipes(e => {
   ['minecraft:bread', 'moredelight:bread_slice'].forEach(toastItem => {
     e.custom({
       type: 'cookingforblockheads:toaster',
-      ingredient: {
-        item: toastItem,
-      },
-      result: {
-        item: 'moredelight:toast',
-      },
+      ingredient: Ingredient.of(toastItem).toJson(),
+      result: Item.of('moredelight:toast').toJson(),
     });
   });
 
@@ -55,17 +51,43 @@ ServerEvents.recipes(e => {
     cuttingBoard(`${resultCount || 1}x ${resultId}`, ingredient, '#c:tools/knife');
   });
 
-  /** @type {Record<$Ingredient_, Special.Item>} */
+  /** @type {Record<Special.Item, $Ingredient_>} */
   const sushigocrafting = {
-    'minecraft:cod' : 'sushigocrafting:imitation_crab',
-    '#c:fruits/avocado' : 'sushigocrafting:avocado_slices',
-    '#c:crops/cucumber' : 'sushigocrafting:cucumber_slices',
-    '#c:crops/wasabi_root' : 'sushigocrafting:wasabi_paste',
-    '#c:raw_fishes/tuna' : 'sushigocrafting:tuna_fillet',
-    '#c:raw_fishes/salmon' : 'sushigocrafting:salmon_fillet',
+    'sushigocrafting:imitation_crab' : 'minecraft:cod',
+    'sushigocrafting:avocado_slices' : '#c:fruits/avocado',
+    'sushigocrafting:cucumber_slices' : '#c:crops/cucumber',
+    'sushigocrafting:wasabi_paste' : '#c:crops/wasabi_root',
+    'sushigocrafting:tuna_fillet' : '#c:raw_fishes/tuna',
+    'sushigocrafting:salmon_fillet' : '#c:raw_fishes/salmon',
   };
 
-  for (const [input, output] of Object.entries(sushigocrafting)) {
+
+  let refurbCutting = (output, input) => {
+    let recipe = {
+      type: 'refurbished_furniture:cutting_board_slicing',
+      result: Item.of(output).toJson(),
+      ingredient: Ingredient.of(input).toJson(),
+    };
+
+    e.custom(recipe).id(makeRecipeID('refurb_cutting', output, input));
+  };
+
+  for (const [output, input] of Object.entries(sushigocrafting)) {
     cuttingBoard(output, input, '#c:tools/knife');
+    refurbCutting(output, input);
   }
+
+  e.forEachRecipe({ type:'farmersdelight:cutting' }, kubeRecipe=>{
+    let recipeJson = JSON.parse(kubeRecipe.json.toString());
+
+    /** @type {{result: $ItemStack_[], ingredients: $Ingredient_[]}} */
+    let { result, ingredients } = recipeJson;
+    if (recipeJson?.tool?.tag !== 'c:tools/knife') return;
+
+    /** @type {{id: string, count: number}} */
+    let { id: output, count: outputCount } = result[0].item;
+    if (!outputCount) outputCount = 1;
+    let input = ingredients[0].item || `#${ingredients[0].tag}`;
+    refurbCutting(`${outputCount}x ${output}`, input);
+  });
 });
