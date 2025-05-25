@@ -7,14 +7,6 @@ RecipeViewerEvents.removeEntries('item', event => {
     event.remove(item);
   });
 
-  globalItemRemovals.forEach(item => {
-    event.remove(item);
-  });
-
-  disabledItems.forEach(item => {
-    event.remove(item.id);
-  });
-
   event.remove(['modern_industrialization:budding_incubator', 'modern_industrialization:ooze_lab', 'modern_industrialization:model_synthesizer']);
 });
 
@@ -27,6 +19,12 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
       Ingredient.of(`minecraft:tipped_arrow[potion_contents={potion:"${potion}"}]`),
       Ingredient.of(`apotheosis:potion_charm[potion_contents={potion:"${potion}"}]`),
     ]);
+  });
+
+  event.remove(globalItemRemovals);
+
+  disabledItems.forEach(item => {
+    event.remove(item.id);
   });
 
   event.remove(Ingredient.of('@displaydelight').except(['displaydelight:food_plate', 'displaydelight:small_food_plate']));
