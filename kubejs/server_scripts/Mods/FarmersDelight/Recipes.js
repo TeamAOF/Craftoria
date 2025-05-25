@@ -1,7 +1,6 @@
 ServerEvents.recipes(e => {
   let makeRecipeID = (type, input, output) => {
-    input = Array.isArray(input) ? input : [input];
-    return _makeRecipeID('farmersdelight', type, input[0], output);
+    return _makeRecipeID('farmersdelight', type, input, output);
   };
 
   /**
