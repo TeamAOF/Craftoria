@@ -122,7 +122,7 @@ ServerEvents.recipes(e => {
     B: 'minecraft:bamboo_trapdoor',
   }).id('mcwwindows:bamboo_shutter');
 
-  ['oak_log', 'spruce_log', 'birch_log', 'jungle_log', 'acacia_log', 'dark_oak_log', 'mangrove_log', 'cherry_log', 'bamboo_block', 'crimson_stem', 'warped_stem', 'glass'].forEach(shaft => {
+  ['oak_log', 'spruce_log', 'birch_log', 'jungle_log', 'acacia_log', 'dark_oak_log', 'mangrove_log', 'cherry_log', 'bamboo_block', 'crimson_stem', 'warped_stem'].forEach(shaft => {
     let shaft2 = shaft.replace('_log', '').replace('_stem', '').replace('_block', '');
     e.stonecutting(`4x createcasing:${shaft2}_shaft`, `minecraft:stripped_${shaft}`).id(`createcasing:crafting/shafts/${shaft2}_shaft`);
   });
