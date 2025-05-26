@@ -57,8 +57,8 @@ ItemEvents.modification(event => {
   pelletsEdible.forEach(pellet => {
     event.modify(pellet, item => {
       item.food = {
-        nutrition: 1000,
-        saturation: 1000,
+        nutrition: 1,
+        saturation: 0,
         eatSeconds: 2,
         canAlwaysEat: true,
       };
