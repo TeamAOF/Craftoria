@@ -38,4 +38,6 @@ ItemEvents.modifyTooltips(e => {
   );
 
   e.add('modern_industrialization:nuke', Text.darkGray("No, it won't explode."));
+
+  e.add('craftoria:terminal', Text.gray('Auto builds Modern Industrialization multiblocks.'));
 });
