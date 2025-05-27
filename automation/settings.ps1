@@ -26,11 +26,11 @@ $MODPACK_NAME = "Craftoria"
 $CLIENT_NAME = "Craftoria"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.21.0"
+$MODPACK_VERSION = "1.21.1"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.20.3"
+$LAST_MODPACK_VERSION = "1.21.0"
 
 # Which modloader the modpack uses
 # Can be "forge" or "fabric"
@@ -99,7 +99,7 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	)
 
 # Accepts directories
-$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt")
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "shaderpacks/ComplementaryUnbound_r5.5.1 + EuphoriaPatches_1.6.4.zip")
 
 #=====================================================================//
 #  SERVER FILE SETTINGS

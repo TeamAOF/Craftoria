@@ -1,4 +1,17 @@
 
+# Craftoria | v1.21.1
+
+_Neoforge 21.1.172_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.21.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.21.1.md)_
+
+### Removed Mods ❌
+
+[Iris & Oculus Flywheel Compat](https://www.curseforge.com/minecraft/mc-mods/iris-flywheel-compat) (Crashes)
+
+### Bug Fixes 🪲
+
+* Fixed quests missing names `Phantom`
+
+
 # Craftoria | v1.21.0
 
 _Neoforge 21.1.172_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.21.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.21.0.md)_

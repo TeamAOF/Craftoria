@@ -8,8 +8,8 @@ from pathlib import Path
 
 # -------------- CONFIGS ----------------
 GIT_REPO_PATH = Path(r'C:\Users\antho\curseforge\minecraft\Instances\Craftoria-Dev')  # Change this to your local git repo path
-PACK_VER = '1.21.0' # Change this to your pack version
-OLD_PACK_VER = '1.20.3' # Change this to your old pack version, used for modlist changelog
+PACK_VER = '1.21.1' # Change this to your pack version
+OLD_PACK_VER = '1.21.0' # Change this to your old pack version, used for modlist changelog
 FILE_ID = "/123456"  # Can be empty
 
 NAMES_LOOKUP = {
