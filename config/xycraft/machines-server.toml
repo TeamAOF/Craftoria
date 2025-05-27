@@ -1,0 +1,98 @@
+[Blocks]
+	#Allow the Water Block to fill a fluid container with water in hand
+	water_block_fills_container = true
+	#Allow the Fluid Void to empty a fluid container in hand
+	fluid_void_empties_container = true
+	#How many planters in a line are allowed to accelerate a plant growth
+	# Default: 16
+	# Range: 1 ~ 128
+	planter_limit = 16
+	#How far a player may fly before severing the connection of the Balloon on a stick. Note, this is not a sphere.
+	# Default: 9
+	# Range: 3 ~ 32
+	balloon_on_a_stick_radius = 9
+	#How large of a radius should the player be able to fly around a hover pylon
+	# Default: 16
+	# Range: 8 ~ 64
+	hover_pylon_range = 16
+	#How large of a radius should the collector be allowed to pick up items
+	# Default: 3
+	# Range: 1 ~ 64
+	collector_pickup_range = 3
+
+	[Blocks.LightField]
+		#How Large of a radius should spawns be prevented
+		# Default: 24
+		# Range: 4 ~ 512
+		light_field_range = 24
+		#Determines if a light field block can prevent a siege from occurring.
+		light_field_siege_prevention = true
+		#Determines if a light field block can prevent endermen from warping to within the field range.
+		light_field_ender_warp_prevention = true
+
+	[Blocks.HydroPump]
+		#How much fluid can the hydro pump push in a single cycle in milli-buckets
+		# Default: 100
+		# Range: 0 ~ 1000000000
+		hydro_pump_fluid_push_amount = 100
+		#How much fluid can the hydro pump push in a single cycle in milli-buckets while water logged
+		# Default: 1000
+		# Range: 0 ~ 1000000000
+		hydro_pump_fluid_push_amount_water_logged = 1000
+		#How much fluid can an external source pull in milli-buckets
+		# Default: 1000000000
+		# Range: 0 ~ 1000000000
+		hydro_pump_fluid_external_pull_amount = 1000000000
+
+	[Blocks.VoidContainment]
+		#How many items can the void containment pull in a single process
+		# Default: 8
+		# Range: 0 ~ 576
+		void_containment_item_pull_amount = 8
+		#How much fluid can the void containment pull in a single process in milli-buckets
+		# Default: 1000
+		# Range: 0 ~ 1000000000
+		void_containment_fluid_pull_amount = 1000
+		#How much forge energy can the void containment pull in a single process
+		# Default: 100
+		# Range: 0 ~ 1000000000
+		void_containment_power_pull_amount = 100
+
+	#How much can a Creative Selector can create. Note, this is only how much it can push, anything pulling can pull as much as it desires!
+	[Blocks.Selector]
+		#How many items can the selector push per cycle
+		# Default: 64
+		# Range: 1 ~ 576
+		selector_item_amount = 64
+		#How much fluid can the selector push per cycle in milli-buckets
+		# Default: 1000000000
+		# Range: 1 ~ 1000000000
+		selector_fluid_amount = 1000000000
+
+	#Cuboid fluid storage.
+	[MultiBlocks.Tank]
+		#Maximum dimensions of a tank. A single dimension is measured from wall to wall (inclusive).
+		# Default: 13
+		# Range: 3 ~ 33
+		tank_size_limit = 13
+		#How much fluid can be stored for each empty air block in the defined box. Measured in milli-buckets (mB)
+		# Default: 8000
+		# Range: 1 ~ 64000
+		tank_storage_per_block = 8000
+
+[PowerItems]
+	#The amount of power the durable cell can store
+	# Default: 500
+	# Range: 1 ~ 1000000000
+	durable_cell_capacity = 500
+	#The amount of power the gauntlet needs to use an action (example is placing or destroying a block is one action)
+	# Default: 5
+	# Range: 0 ~ 1000000000
+	flare_rod_cost = 5
+
+#These features can be tweaked, but consider carefully if you absolutely need to
+[Internals]
+	#Amount of fluid a single Extractor can hold internally. This is recommended to keep low or default unless you are making a custom pack with a recipe that requires a large fluid output
+	# Default: 1000
+	# Range: 1000 ~ 10000
+	extractor_buffer = 1000

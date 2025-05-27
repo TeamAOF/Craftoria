@@ -1,10 +1,9 @@
 {
-  "info": "This is the config file for Eternal Starlight",
   "enablePortalShader": true,
   "enableScreenShake": true,
-  "meteorDropRate": 5.0E-4,
-  "crystalbornCatalystEnergyPerShard": 50,
+  "aethersentMeteorDropRate": 5.0E-4,
   "laserBeamBreakBlocks": true,
+  "mobMaxTearyTicks": 200,
   "mobsConfig": {
     "boarwarf": {
       "maxHealth": 30.0,
@@ -61,6 +60,13 @@
       "followRange": 48.0,
       "canSpawn": true
     },
+    "stranghoul": {
+      "maxHealth": 40.0,
+      "armor": 2.0,
+      "attackDamage": 2.0,
+      "followRange": 32.0,
+      "canSpawn": true
+    },
     "ent": {
       "maxHealth": 10.0,
       "armor": 0.0,
@@ -69,6 +75,13 @@
     "ratlin": {
       "maxHealth": 15.0,
       "armor": 0.0,
+      "canSpawn": true
+    },
+    "zombifiedRatlin": {
+      "maxHealth": 20.0,
+      "armor": 2.0,
+      "attackDamage": 3.0,
+      "followRange": 35.0,
       "canSpawn": true
     },
     "shadowSnail": {
@@ -186,6 +199,7 @@
       "maxRange": 64.0,
       "soulAbsorbDamage": 2.0,
       "healPercentage": 0.5
-    }
+    },
+    "crystalbornCatalystEnergyPerShard": 50
   }
 }

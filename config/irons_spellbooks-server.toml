@@ -1820,6 +1820,17 @@
 		CooldownInSeconds = 200.0
 		AllowCrafting = true
 
+	[Spells."hazennstuff:chaotic_teleport"]
+		Enabled = true
+		School = "irons_spellbooks:ender"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "UNCOMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 2.0
+		AllowCrafting = true
+
 	#Configure Boss Stats
 	["Boss Config".Tyros]
 		#Additional Health

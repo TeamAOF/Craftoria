@@ -1,3 +1,74 @@
+
+# Craftoria | v1.21.0
+
+_Neoforge 21.1.172_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.21.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.21.0.md)_
+
+### Changes/Improvements ⭐
+
+* Rename builder tool to `Terminal`, add texture `Phantom`
+* Survival friendly MI multiblock builder tool `Phantom`
+* Re-set cryo to a REALISTIC value. lower ether to be realistic (also its easy to get) and add Helium 3 for near absolute zero `Inno`
+* FD cutting board recipes in refurb furniture cutting board `Phantom`
+* FD cutting board compat for SushiGoCrafting & Furniture Mod slicing recipes `Phantom`
+* Kube, stop adding barrier to things, or SO HELP ME `Phantom`
+* Fix: Skip barrier drops in DataModels and add warning for empty fabricator drops `Phantom`
+* Add texture and recipe for Model Synthesizer `Phantom`
+* Model Synthesizer(MI Multi) and related recipes(Slightly W.I.P still) `Phantom`
+* A chapter for Immersive Aircraft (#558) `Blue`
+* Right-click crop harvesting(via KubeJS instead of mod) `Phantom`
+* Added macerator recipe for shattered singualrity to quantum infused dust? `Inno`
+* Free Runners in curio slots `Phantom`
+* Added Gardening Quest Chapter (#554) `VES`
+* Make it batched `Phantom`
+* Unify *lube* `Phantom`
+* Add a blacklist tag to apothic spawners `Phantom`
+* Add Curios slot customization `Phantom`
+* Add essence loot to bosses instead of gates. `Phantom`
+
+### Added Mods ✅
+
+[Create: Enchantment Industry](https://www.curseforge.com/minecraft/mc-mods/create-enchantment-industry)
+[Ars Elemancy](https://www.curseforge.com/minecraft/mc-mods/ars-elemancy)
+[Hazen 'N Stuff](https://www.curseforge.com/minecraft/mc-mods/hazen-n-stuff)
+[Replication AE2 Bridge](https://www.curseforge.com/minecraft/mc-mods/replication-ae2-bridge)
+[Advancements Reloaded](https://www.curseforge.com/minecraft/mc-mods/advancements-reloaded)
+[Create Stock Bridge](https://www.curseforge.com/minecraft/mc-mods/create-stock-bridge)
+[Inline](https://www.curseforge.com/minecraft/mc-mods/inline)
+[Subtle Effects](https://www.curseforge.com/minecraft/mc-mods/subtle-effects)
+[Advanced Loot Info](https://www.curseforge.com/minecraft/mc-mods/advanced-loot-info)
+[Create: Filters Anywhere](https://www.curseforge.com/minecraft/mc-mods/create-filters-anywhere)
+[Iris & Oculus Flywheel Compat](https://www.curseforge.com/minecraft/mc-mods/iris-flywheel-compat)
+[Potion Icons](https://www.curseforge.com/minecraft/mc-mods/potion-icons)
+[Create: Connected](https://www.curseforge.com/minecraft/mc-mods/create-connected)
+[XyCraft](https://www.curseforge.com/minecraft/mc-mods/xycraft)
+[More Sound](https://www.curseforge.com/minecraft/mc-mods/more-sound)
+[XyCraft: World](https://www.curseforge.com/minecraft/mc-mods/xycraft-world)
+[XyCraft: Override](https://www.curseforge.com/minecraft/mc-mods/xycraft-override)
+[XyCraft: Machines](https://www.curseforge.com/minecraft/mc-mods/xycraft-machines)
+[Torchmaster Remaster](https://www.curseforge.com/minecraft/texture-packs/torchmaster-remaster)
+[StarbuncleMania](https://www.curseforge.com/minecraft/mc-mods/starbunclemania)
+[Twilight Forest: JAPPA Pack (official addon)](https://www.curseforge.com/minecraft/texture-packs/twilight-forest-jappa-pack)
+[Create: Dragons Plus](https://www.curseforge.com/minecraft/mc-mods/create-dragons-plus)
+
+### Removed Mods ❌
+
+[RightClickHarvest](https://www.curseforge.com/minecraft/mc-mods/rightclickharvest)
+[Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)
+[EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot)
+[project-1231343](https://www.curseforge.com/minecraft/mc-mods/project-1231343)
+
+### Bug Fixes 🪲
+
+* Fixed conflictus fixus `Phantom`
+* Fixed fix eslint rule `Phantom`
+* Fixed mek steel advancement `Phantom`
+* Fixed model Synthesizer not having recipes for updated Data Models `Phantom`
+* Fixed knife unification not working properly for refurbished furniture `Phantom`
+* Fixed move things, fix a recipe replacement. `Phantom`
+* Fixed occultism transmuting charcoal/lignite into regular coal `Phantom`
+* Fixed remove debug loot table logging `Phantom`
+* Fixed tapedrives crashing; disable tape drives until they're fixed `Phantom`
+
 ## Craftoria | v1.20.3
 
 _NeoForge Loader 21.1.169_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.20.3.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.20.3.md)_

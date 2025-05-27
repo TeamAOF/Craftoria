@@ -36,6 +36,54 @@
          */
         "time_in_world": 200
     },
+    "chronometer": {
+        /*
+         * The amount of fuel that the Chronometer can store.
+         * Type: Integer
+         */
+        "capacity": 0,
+        /*
+         * The amount of time it takes for the Chronometer to generate 1 chronon (in ticks).
+         * Type: Integer
+         */
+        "generation_rate": 36,
+        /*
+         * The amount of chronons generated everytime the Chronometer does a tick of work.
+         * Type: Integer
+         */
+        "generation_amount": 1
+    },
+    "chronon_generator": {
+        /*
+         * The amount of fuel that the Chronometer can store.
+         * Type: Integer
+         */
+        "capacity": 0,
+        /*
+         * The amount of time it takes for the Chronometer to generate 1 chronon (in ticks).
+         * Type: Integer
+         */
+        "generation_rate": 48,
+        /*
+         * The amount of chronons generated everytime the Chronometer does a tick of work.
+         * Type: Integer
+         */
+        "generation_amount": 1
+    },
+    "chronon_cell": {
+        /*
+         * The amount of fuel that the Capacitor can store.
+         * Type: Integer
+         */
+        "capacity": 2000
+    },
+    "chronon_battery": {
+        /*
+         * The amount of fuel that the Battery can store.
+         * Type: Integer
+         */
+        "capacity": 4000
+    },
     "timedoor_projector": {
         /*
          * The amount of fuel that the Rudimentary Tempad can store.
@@ -67,30 +115,6 @@
          */
         "cost_to_backtrack": 500
     },
-    "chronometer": {
-        /*
-         * The amount of fuel that the Chronometer can store.
-         * Type: Integer
-         */
-        "capacity": 0,
-        /*
-         * The amount of time it takes for the Chronometer to generate 1 chronon (in ticks).
-         * Type: Integer
-         */
-        "generation_rate": 36,
-        /*
-         * The amount of chronons generated everytime the Chronometer does a tick of work.
-         * Type: Integer
-         */
-        "generation_amount": 1
-    },
-    "chronon_cell": {
-        /*
-         * The amount of fuel that the Capacitor can store.
-         * Type: Integer
-         */
-        "capacity": 2000
-    },
     "metronome": {
         /*
          * The amount of fuel that the Chronometer can store.
@@ -119,5 +143,12 @@
          * Type: Integer
          */
         "jump_start_amount": 2000
+    },
+    "chronomark": {
+        /*
+         * The maximum range that you can set the portal position to be
+         * Type: Integer
+         */
+        "max_offset": 5
     }
 }

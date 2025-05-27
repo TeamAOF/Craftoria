@@ -18,5 +18,14 @@
     ],
     "//default": [],
     "value": []
+  },
+  "load_datapacks_dir": {
+    "//": [
+      "Some launchers like CurseForge install data packs to the datapacks folder       ",
+      "(.minecraft/datapacks). When enabled, OpenLoader will always check that folder  ",
+      "for pack files.                                                                 "
+    ],
+    "//default": true,
+    "value": true
   }
 }

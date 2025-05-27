@@ -98,6 +98,8 @@
 	intel_corrupted_notification = true
 	#Puts problematic frame from hs_err to message.
 	put_problematic_frame_to_message = true
+	#Puts analysis result(names of crash reasons) to message, instead of just count.
+	put_analysis_result_to_message = true
 
 [greeting]
 	#You don't need to touch this option.
@@ -120,4 +122,10 @@
 	#List of them can be found here: dev.kostromdan.mods.crash_assistant.app.logs_analyser.crash_reasons
 	#For example "Create6Addons"
 	blacklisted_reasons = []
+
+#Checks crash_assistant compatibility with other incompatible mods.
+#Highly unrecommended to disable!
+[compatibility]
+	#Enable feature.
+	enabled = true
 

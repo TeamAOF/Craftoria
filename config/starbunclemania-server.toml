@@ -1,0 +1,32 @@
+["General Configs"]
+	#Value of milli-bucket of fluid converted in source by the sourcelink
+	#Example entry: "minecraft:lava=1.6"
+	fluid_to_source = []
+	#Source cost to make a bucket of liquid source.
+	# Default: 1000
+	# Range: > 1
+	source_condense_cost = 1000
+	#Transfer rate of the fluid starbuncles
+	# Default: 1000
+	# Range: > 1
+	starbucket_ratio = 1000
+	#Transfer rate of the energy starbuncles
+	# Default: 100000
+	# Range: > 1
+	starbattery_ratio = 100000
+	#Transfer rate of the gas starbuncles
+	# Default: 1000
+	# Range: > 1
+	starballoon_ratio = 1000
+	#Threshold of the fluid starbuncles, lower this if you need them to check and fill more often.
+	# Default: 250
+	# Range: > 1
+	starbucket_threshold = 250
+	#Threshold rate of the energy starbuncles, lower this if you need them to check and fill more often.
+	# Default: 1000
+	# Range: > 1
+	starbattery_threshold = 1000
+	#Threshold rate of the gas starbuncles, lower this if you need them to check and fill more often.
+	# Default: 250
+	# Range: > 1
+	starballoon_threshold = 250

@@ -129,6 +129,26 @@
 	# Default: 16
 	# Range: > 0
 	greedyVerticalSearchRange = 16
+	#The time in ticks it takes to cast the day time ritual.
+	# Default: 100
+	# Range: > 0
+	dayTimeToCast = 100
+	#The time in ticks it takes to cast the night time ritual.
+	# Default: 100
+	# Range: > 0
+	nightTimeToCast = 100
+	#The time in ticks it takes to cast the rain ritual.
+	# Default: 200
+	# Range: > 0
+	rainTimeToCast = 200
+	#The time in ticks it takes to cast the thunder ritual.
+	# Default: 300
+	# Range: > 0
+	thunderTimeToCast = 300
+	#The time in ticks it takes to cast the clear weather ritual.
+	# Default: 100
+	# Range: > 0
+	clearWeatherTimeToCast = 100
 
 #Ritual Settings
 [rituals]
@@ -155,3 +175,9 @@
 	anyOreDivinationRod = false
 	#Miners head to the output in the Dimensional Mineshaft before it breaks
 	minerOutputBeforeBreak = false
+	#Allow miners enchanted with efficiency mine faster
+	minerEfficiency = true
+	#Allow miners enchanted with fortune to has a chance of mine extra results each operation
+	minerFortune = true
+	#Don't damage chalks on use
+	unbreakableChalks = false

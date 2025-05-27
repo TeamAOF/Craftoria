@@ -1,0 +1,17 @@
+[Visuals]
+	#How fast a ui should change states each tick (example between two colors)
+	# Default: 0.015
+	# Range: 0.001 ~ 4.0
+	ui_interpolation_rate = 0.015
+	#The unit that should be displayed when measuring fluids. Buckets, Liters, and Units are interchangeable.
+	#Allowed Values: Buckets, Liters, Units
+	fluid_unit = "Buckets"
+
+#Used primarily for debugging or pack creation. May not be ideal to have turned on when playing the game or publishing a pack.
+["Debug Settings"]
+	#Show item tags in the tooltip of an item, when using advanced tooltips (F3 + h).
+	show_item_tags = false
+	#Play a ding and print a message upon successful reload
+	show_reload_message = true
+	#Display recipes that would otherwise be hidden to the player in a recipe viewer
+	show_hidden_recipes = false
