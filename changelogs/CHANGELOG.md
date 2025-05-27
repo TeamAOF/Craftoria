@@ -5,18 +5,14 @@ _Neoforge 21.1.172_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 
 ### Changes/Improvements ⭐
 
-* Rename builder tool to `Terminal`, add texture `Phantom`
 * Survival friendly MI multiblock builder tool `Phantom`
 * Re-set cryo to a REALISTIC value. lower ether to be realistic (also its easy to get) and add Helium 3 for near absolute zero `Inno`
 * FD cutting board recipes in refurb furniture cutting board `Phantom`
 * FD cutting board compat for SushiGoCrafting & Furniture Mod slicing recipes `Phantom`
-* Kube, stop adding barrier to things, or SO HELP ME `Phantom`
-* Fix: Skip barrier drops in DataModels and add warning for empty fabricator drops `Phantom`
-* Add texture and recipe for Model Synthesizer `Phantom`
-* Model Synthesizer(MI Multi) and related recipes(Slightly W.I.P still) `Phantom`
+* Model Synthesizer(MI Multi) and related recipes `Phantom`
 * A chapter for Immersive Aircraft (#558) `Blue`
 * Right-click crop harvesting(via KubeJS instead of mod) `Phantom`
-* Added macerator recipe for shattered singualrity to quantum infused dust? `Inno`
+* Added macerator recipe for shattered singualrity to quantum infused dust `Inno`
 * Free Runners in curio slots `Phantom`
 * Unify *lube* `Phantom`
 * Add a blacklist tag to apothic spawners `Phantom`
