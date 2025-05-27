@@ -1,11 +1,4 @@
 // priority: 2147483647
-
-/**
- * Enables a few scripts that are only useful for development.
- * Make sure to disable this in production/before pushing to git.
- */
-global.devEnv = false;
-
 global.modList = Platform.getMods().keySet();
 
 /**
