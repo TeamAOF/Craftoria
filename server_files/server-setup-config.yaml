@@ -7,7 +7,7 @@ modpack:
 install:
   mcVersion:
   loaderVersion: 21.1.172
-  modpackUrl: https://mediafilez.forgecdn.net/files/6584/886/Craftoria-1.21.0.zip
+  modpackUrl: https://mediafilez.forgecdn.net/files/6585/101/Craftoria-1.21.0.zip
   installerUrl: "https://maven.neoforged.net/releases/net/neoforged/neoforge/{{@loaderversion@}}/neoforge-{{@loaderversion@}}-installer.jar"
   
   ignoreFiles:
@@ -34,6 +34,7 @@ install:
       - 1089803 # Better Modlist
       - 925889 # Sounds
       - 1112793 # Perception
+      - 1133580 # Smithing Template Viewer
       
   baseInstallPath: 
   

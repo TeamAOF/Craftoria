@@ -43,6 +43,7 @@ _Neoforge 21.1.172_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 [StarbuncleMania](https://www.curseforge.com/minecraft/mc-mods/starbunclemania)  
 [Twilight Forest: JAPPA Pack (official addon)](https://www.curseforge.com/minecraft/texture-packs/twilight-forest-jappa-pack)  
 [Create: Dragons Plus](https://www.curseforge.com/minecraft/mc-mods/create-dragons-plus)  
+[Observable](https://www.curseforge.com/minecraft/mc-mods/observable)  
 
 ### Removed Mods ❌
 
