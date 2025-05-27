@@ -18,8 +18,6 @@ _Neoforge 21.1.172_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 * Right-click crop harvesting(via KubeJS instead of mod) `Phantom`
 * Added macerator recipe for shattered singualrity to quantum infused dust? `Inno`
 * Free Runners in curio slots `Phantom`
-* Added Gardening Quest Chapter (#554) `VES`
-* Make it batched `Phantom`
 * Unify *lube* `Phantom`
 * Add a blacklist tag to apothic spawners `Phantom`
 * Add Curios slot customization `Phantom`
@@ -27,35 +25,35 @@ _Neoforge 21.1.172_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 
 ### Added Mods ✅
 
-[Create: Enchantment Industry](https://www.curseforge.com/minecraft/mc-mods/create-enchantment-industry)
-[Ars Elemancy](https://www.curseforge.com/minecraft/mc-mods/ars-elemancy)
-[Hazen 'N Stuff](https://www.curseforge.com/minecraft/mc-mods/hazen-n-stuff)
-[Replication AE2 Bridge](https://www.curseforge.com/minecraft/mc-mods/replication-ae2-bridge)
-[Advancements Reloaded](https://www.curseforge.com/minecraft/mc-mods/advancements-reloaded)
-[Create Stock Bridge](https://www.curseforge.com/minecraft/mc-mods/create-stock-bridge)
-[Inline](https://www.curseforge.com/minecraft/mc-mods/inline)
-[Subtle Effects](https://www.curseforge.com/minecraft/mc-mods/subtle-effects)
-[Advanced Loot Info](https://www.curseforge.com/minecraft/mc-mods/advanced-loot-info)
-[Create: Filters Anywhere](https://www.curseforge.com/minecraft/mc-mods/create-filters-anywhere)
-[Iris & Oculus Flywheel Compat](https://www.curseforge.com/minecraft/mc-mods/iris-flywheel-compat)
-[Potion Icons](https://www.curseforge.com/minecraft/mc-mods/potion-icons)
-[Create: Connected](https://www.curseforge.com/minecraft/mc-mods/create-connected)
-[XyCraft](https://www.curseforge.com/minecraft/mc-mods/xycraft)
-[More Sound](https://www.curseforge.com/minecraft/mc-mods/more-sound)
-[XyCraft: World](https://www.curseforge.com/minecraft/mc-mods/xycraft-world)
-[XyCraft: Override](https://www.curseforge.com/minecraft/mc-mods/xycraft-override)
-[XyCraft: Machines](https://www.curseforge.com/minecraft/mc-mods/xycraft-machines)
-[Torchmaster Remaster](https://www.curseforge.com/minecraft/texture-packs/torchmaster-remaster)
-[StarbuncleMania](https://www.curseforge.com/minecraft/mc-mods/starbunclemania)
-[Twilight Forest: JAPPA Pack (official addon)](https://www.curseforge.com/minecraft/texture-packs/twilight-forest-jappa-pack)
-[Create: Dragons Plus](https://www.curseforge.com/minecraft/mc-mods/create-dragons-plus)
+[Create: Enchantment Industry](https://www.curseforge.com/minecraft/mc-mods/create-enchantment-industry)  
+[Ars Elemancy](https://www.curseforge.com/minecraft/mc-mods/ars-elemancy)  
+[Hazen 'N Stuff](https://www.curseforge.com/minecraft/mc-mods/hazen-n-stuff)  
+[Replication AE2 Bridge](https://www.curseforge.com/minecraft/mc-mods/replication-ae2-bridge)  
+[Advancements Reloaded](https://www.curseforge.com/minecraft/mc-mods/advancements-reloaded)  
+[Create Stock Bridge](https://www.curseforge.com/minecraft/mc-mods/create-stock-bridge)  
+[Inline](https://www.curseforge.com/minecraft/mc-mods/inline)  
+[Subtle Effects](https://www.curseforge.com/minecraft/mc-mods/subtle-effects)  
+[Advanced Loot Info](https://www.curseforge.com/minecraft/mc-mods/advanced-loot-info)  
+[Create: Filters Anywhere](https://www.curseforge.com/minecraft/mc-mods/create-filters-anywhere)  
+[Iris & Oculus Flywheel Compat](https://www.curseforge.com/minecraft/mc-mods/iris-flywheel-compat)  
+[Potion Icons](https://www.curseforge.com/minecraft/mc-mods/potion-icons)  
+[Create: Connected](https://www.curseforge.com/minecraft/mc-mods/create-connected)  
+[XyCraft](https://www.curseforge.com/minecraft/mc-mods/xycraft)  
+[More Sound](https://www.curseforge.com/minecraft/mc-mods/more-sound)  
+[XyCraft: World](https://www.curseforge.com/minecraft/mc-mods/xycraft-world)  
+[XyCraft: Override](https://www.curseforge.com/minecraft/mc-mods/xycraft-override)  
+[XyCraft: Machines](https://www.curseforge.com/minecraft/mc-mods/xycraft-machines)  
+[Torchmaster Remaster](https://www.curseforge.com/minecraft/texture-packs/torchmaster-remaster)  
+[StarbuncleMania](https://www.curseforge.com/minecraft/mc-mods/starbunclemania)  
+[Twilight Forest: JAPPA Pack (official addon)](https://www.curseforge.com/minecraft/texture-packs/twilight-forest-jappa-pack)  
+[Create: Dragons Plus](https://www.curseforge.com/minecraft/mc-mods/create-dragons-plus)  
 
 ### Removed Mods ❌
 
-[RightClickHarvest](https://www.curseforge.com/minecraft/mc-mods/rightclickharvest)
-[Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)
-[EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot)
-[project-1231343](https://www.curseforge.com/minecraft/mc-mods/project-1231343)
+[RightClickHarvest](https://www.curseforge.com/minecraft/mc-mods/rightclickharvest)  
+[Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)  
+[EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot)  
+[project-1231343](https://www.curseforge.com/minecraft/mc-mods/project-1231343)  
 
 ### Bug Fixes 🪲
 
