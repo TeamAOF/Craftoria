@@ -44,6 +44,16 @@ StartupEvents.registry('item', e => {
     .food(food => {
       food.nutrition(3).saturation(1).eatSeconds(3);
     });
+
+  // Electric screwdriver - Used for autobuilding MI multiblocks
+  e.create('craftoria:electric_screwdriver')
+    .displayName('Electric Screwdriver')
+    .rarity('Rare')
+    .unstackable()
+    .parentModel('minecraft:item/handheld');
+
+  // Dev Items
+  e.create('craftoria:multiblock_generator').unstackable(); // Used for generating KubeJS code for MI multiblocks.
 });
 
 ItemEvents.modification(event => {
