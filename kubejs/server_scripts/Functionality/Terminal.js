@@ -1,5 +1,5 @@
-// This script allows you to autobuild MI multiblocks by right-clicking with an electric screwdriver in your main hand.
-ItemEvents.firstRightClicked('craftoria:electric_screwdriver', event => {
+// This script allows you to autobuild MI multiblocks by right-clicking with a terminal in your main hand.
+ItemEvents.firstRightClicked('craftoria:terminal', event => {
   const { player, target, level } = event;
 
   if (target.type !== 'block') return; // Don't bother if it's not a block
