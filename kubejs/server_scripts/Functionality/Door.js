@@ -40,18 +40,18 @@ function doubleDoor() {
    */
   function getOppositeDir(dir) {
     switch (dir) {
-    case Direction.NORTH:
-      return Direction.SOUTH;
-    case Direction.SOUTH:
-      return Direction.NORTH;
-    case Direction.EAST:
-      return Direction.WEST;
-    case Direction.WEST:
-      return Direction.EAST;
-    case Direction.UP:
-      return Direction.DOWN;
-    case Direction.DOWN:
-      return Direction.UP;
+      case Direction.NORTH:
+        return Direction.SOUTH;
+      case Direction.SOUTH:
+        return Direction.NORTH;
+      case Direction.EAST:
+        return Direction.WEST;
+      case Direction.WEST:
+        return Direction.EAST;
+      case Direction.UP:
+        return Direction.DOWN;
+      case Direction.DOWN:
+        return Direction.UP;
     }
     return null; // Return null if no match found
   }

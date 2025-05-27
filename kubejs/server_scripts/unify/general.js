@@ -13,7 +13,7 @@ let getItemFromTag = tag => {
 };
 
 let checkTagSize = tag => {
-  let itemIds = Ingredient.of(tag).itemIds;
+  let { itemIds } = Ingredient.of(tag);
   let size = itemIds.length;
   logInfo(`Found ${size} items for tag: ${tag}`);
   if (itemIds[0] !== 'minecraft:barrier') return size;
@@ -42,31 +42,31 @@ ServerEvents.tags('item', e => {
 
   for (let [material, types] in materials) {
     switch (material) {
-    case 'metals':
-      metals.forEach(metal => {
-        types.forEach(type => {
-          tags.push(`c:${type}/${metal}`);
-          if (type === 'raw_materials') tags.push(`c:storage_blocks/raw_${metal}`);
+      case 'metals':
+        metals.forEach(metal => {
+          types.forEach(type => {
+            tags.push(`c:${type}/${metal}`);
+            if (type === 'raw_materials') tags.push(`c:storage_blocks/raw_${metal}`);
+          });
         });
-      });
-      break;
-    case 'gems':
-      gems.forEach(gem => {
-        types.forEach(type => {
-          tags.push(`c:${type}/${gem}`);
+        break;
+      case 'gems':
+        gems.forEach(gem => {
+          types.forEach(type => {
+            tags.push(`c:${type}/${gem}`);
+          });
         });
-      });
-      break;
-    case 'misc':
-      misc.forEach(misc => {
-        types.forEach(type => {
-          tags.push(`c:${type}/${misc}`);
+        break;
+      case 'misc':
+        misc.forEach(misc => {
+          types.forEach(type => {
+            tags.push(`c:${type}/${misc}`);
+          });
         });
-      });
-      break;
-    default:
-      logError(`Unknown material: ${material}`);
-      break;
+        break;
+      default:
+        logError(`Unknown material: ${material}`);
+        break;
     }
   }
 
@@ -119,31 +119,31 @@ ServerEvents.recipes(e => {
 
   Object.entries(materials).forEach(([material, types]) => {
     switch (material) {
-    case 'metals':
-      metals.forEach(metal => {
-        types.forEach(type => {
-          tryReplace(`#c:${type}/${metal}`);
-          if (type === 'raw_materials') tryReplace(`#c:storage_blocks/raw_${metal}`);
+      case 'metals':
+        metals.forEach(metal => {
+          types.forEach(type => {
+            tryReplace(`#c:${type}/${metal}`);
+            if (type === 'raw_materials') tryReplace(`#c:storage_blocks/raw_${metal}`);
+          });
         });
-      });
-      break;
-    case 'gems':
-      gems.forEach(gem => {
-        types.forEach(type => {
-          tryReplace(`#c:${type}/${gem}`);
+        break;
+      case 'gems':
+        gems.forEach(gem => {
+          types.forEach(type => {
+            tryReplace(`#c:${type}/${gem}`);
+          });
         });
-      });
-      break;
-    case 'misc':
-      misc.forEach(misc => {
-        types.forEach(type => {
-          tryReplace(`#c:${type}/${misc}`);
+        break;
+      case 'misc':
+        misc.forEach(misc => {
+          types.forEach(type => {
+            tryReplace(`#c:${type}/${misc}`);
+          });
         });
-      });
-      break;
-    default:
-      logDebug(`Unknown material: ${material}`);
-      break;
+        break;
+      default:
+        logDebug(`Unknown material: ${material}`);
+        break;
     }
   });
 

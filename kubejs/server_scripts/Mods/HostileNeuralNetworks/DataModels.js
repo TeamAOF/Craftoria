@@ -40,8 +40,11 @@ function generateModelData(entityId, data) {
       Ingredient.of(drop)
         .except('#almostunified:hide')
         .itemIds.forEach(drop => {
-          const [count] = drop.split('x ');
-          drops.push({ id: drop, count: parseInt(count) || 1 });
+          if (drop === 'minecraft:barrier') {
+            logWarn(`Skipping ${entityId} drop entry because it is a barrier`);
+            return;
+          }
+          drops.push(Item.of(drop).toJson());
         });
     } else {
       drops.push(Item.of(drop).toJson());
@@ -144,6 +147,8 @@ ServerEvents.generateData('after_mods', event => {
     let { outputPath, modelJson } = generateModelData(entityId, modelData);
 
     if (modelJson.fabricator_drops.length === 0) {
+      // TODO: Remove this once we have a better way to handle this
+      // Currently mimic errors as tags load too late for this on first load, but works *after* a reload.
       logWarn(`Skipping ${entityId} because it has no fabricator drops`);
       continue;
     }

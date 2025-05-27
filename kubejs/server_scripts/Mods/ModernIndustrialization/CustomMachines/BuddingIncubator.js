@@ -53,7 +53,7 @@ MIRecipeEvents.customCondition(event => {
         if (state.id != condition.block) return false;
 
         if (condition.blockState) {
-          let blockState = condition.blockState;
+          let { blockState } = condition;
 
           if (Array.isArray(blockState)) {
             let allMatch = false;

@@ -86,31 +86,62 @@ ServerEvents.recipes(e => {
     'integrateddynamics:smelting/menril_log_coal',
     'mekanism:processing/tin/ingot/from_ore_smelting',
     'farmersdelight:organic_compost_from_tree_bark',
+    'farmersdelight:paper_from_tree_bark',
     'actuallyadditions:tagged_slime_block',
     'endermanoverhaul:ender_eye',
     'minecraft:sticky_piston',
     'dumplings_delight:chinese_cabbage_from_leaves',
+    'supplementaries:awnings/awning_dark_gray',
+    'refurbished_furniture:dough',
   ];
+
+  let types = ['terracotta', 'stained_glass', 'stained_glass_pane_from_glass_pane'];
+  Color.DYE.forEach(dye => {
+    types.forEach(type => {
+      removeById.push(`minecraft:${dye}_${type}`);
+    });
+
+    e.shaped(`2x mcwwindows:${dye}_mosaic_glass`, ['DGG', 'GGG', 'DGG'], {
+      D: `#c:dyes/${dye}`,
+      G: `minecraft:${dye}_stained_glass`,
+    }).id(`mcwwindows:${dye}_mosaic_glass`);
+
+    if (Item.exists(`mcwholidays:${dye}_ornament`))
+      e.stonecutting(`mcwholidays:${dye}_ornament` , `minecraft:${dye}_stained_glass`).id(`mcwholidays:${dye}_ornament`);
+    // why you gotta be like this???
+    else if (dye === 'light_gray') e.stonecutting('mcwholidays:silver_ornament', 'minecraft:light_gray_stained_glass').id('mcwholidays:silver_ornament');
+
+    e.remove({ id: `arts_and_crafts:dye_${dye}_carpet_with_bleached_carpet` });
+  });
+
   removeById.forEach(id => {
     e.remove({ id: id });
   });
+
+  e.shaped('3x mcwwindows:bamboo_shutter', ['B','B','B'],{
+    B: 'minecraft:bamboo_trapdoor',
+  }).id('mcwwindows:bamboo_shutter');
+
+  ['oak_log', 'spruce_log', 'birch_log', 'jungle_log', 'acacia_log', 'dark_oak_log', 'mangrove_log', 'cherry_log', 'bamboo_block', 'crimson_stem', 'warped_stem'].forEach(shaft => {
+    let shaft2 = shaft.replace('_log', '').replace('_stem', '').replace('_block', '');
+    e.stonecutting(`4x createcasing:${shaft2}_shaft`, `minecraft:stripped_${shaft}`).id(`createcasing:crafting/shafts/${shaft2}_shaft`);
+  });
+
 
   // Make wood chests from other mods craftable without conflicts
   const woodChestMods = ['woodwevegot', 'twilightforest'];
   woodChestMods.forEach(mod => {
     e.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: mod, output: '#c:chests/wooden' }, r => {
-      let ingredients = r.originalRecipeIngredients;
-      let output = r.originalRecipeResult.id;
-      e.shaped(`2x ${output}`, ['#C#', '###', '###'], {
+      let { originalRecipeIngredients: ingredients, originalRecipeResult: result } = r;
+      e.shaped(`2x ${result.id}`, ['#C#', '###', '###'], {
         '#': ingredients[0],
         C: '#c:chests/wooden',
       }).id(r.getId());
     });
 
     e.forEachRecipe({ type: 'minecraft:crafting_shaped', mod: mod, output: '#c:barrels/wooden' }, r => {
-      let ingredients = r.originalRecipeIngredients;
-      let output = r.originalRecipeResult.id;
-      e.shaped(`2x ${output}`, ['PSP', 'PBP', 'PSP'], {
+      let { originalRecipeIngredients: ingredients, originalRecipeResult: result } = r;
+      e.shaped(`2x ${result.id}`, ['PSP', 'PBP', 'PSP'], {
         P: ingredients[0],
         S: ingredients[1],
         B: '#c:barrels/wooden',
@@ -125,9 +156,8 @@ ServerEvents.recipes(e => {
       output: /_trapped_chest$/,
     },
     r => {
-      let ingredients = r.originalRecipeIngredients[0];
-      let output = r.originalRecipeResult.id;
-      e.shapeless(output, [ingredients.itemIds[0].replace('planks', 'chest'), 'minecraft:tripwire_hook']).id(r.getId());
+      let { originalRecipeIngredients: ingredients, originalRecipeResult: result } = r;
+      e.shapeless(result.id, [ingredients[0].itemIds[0].replace('planks', 'chest'), 'minecraft:tripwire_hook']).id(r.getId());
     }
   );
 

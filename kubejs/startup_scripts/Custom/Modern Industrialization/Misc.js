@@ -11,18 +11,18 @@ MIMachineEvents.registerHatches(event => {
     // Go through types and register them
     for (let [type, typeValue] of Object.entries(types)) {
       switch (type) {
-      case 'fluid':
-        event.fluid(name, id, casing, typeValue);
-        break;
-      case 'item':
-        event.item(name, id, casing, typeValue.rows, typeValue.columns, typeValue.posX, typeValue.posY);
-        break;
-      case 'energy':
-        event.energy(typeValue);
-        break;
-      default:
-        console.error(`Error registering hatch: Unknown type ${type}.`);
-        break;
+        case 'fluid':
+          event.fluid(name, id, casing, typeValue);
+          break;
+        case 'item':
+          event.item(name, id, casing, typeValue.rows, typeValue.columns, typeValue.posX, typeValue.posY);
+          break;
+        case 'energy':
+          event.energy(typeValue);
+          break;
+        default:
+          console.error(`Error registering hatch: Unknown type ${type}.`);
+          break;
       }
     }
   }

@@ -83,7 +83,9 @@ StartupEvents.registry('block', event => {
     { name: 'Refined Obsidian', texture: 'block_refined_obsidian', modID: 'mekanism' },
     { name: 'Refined Glowstone', texture: 'block_refined_glowstone', modID: 'mekanism' },
     { name: 'Fluorite', texture: 'block_fluorite', modID: 'mekanism' },
-    { name: 'Charcoal', texture: 'block_charcoal', modID: 'mekanism' },
+
+    // Just Dire Things
+    { name: 'Charcoal', texture: 'charcoal', modID: 'justdirethings' },
 
     // AE2 + Addons
     { name: 'Fluix', texture: 'fluix_block', modID: 'ae2' },

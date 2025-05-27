@@ -3,56 +3,90 @@ ServerEvents.recipes(e => {
     return _makeRecipeID('farmersdelight', type, input, output);
   };
 
-  let CuttingBoard = (outputs, inputs, tool, isAbility, sound) => {
+  /**
+   *
+   * @param {$ItemStack_|$ItemStack_[]} outputs
+   * @param {$Ingredient_|$Ingredient_[]} inputs
+   * @param {$Ingredient_} tool
+   * @param {boolean} isAbility
+   * @param {string} sound
+   */
+  let cuttingBoard = (outputs, inputs, tool, isAbility, sound) => {
     let recipe = {
       type: 'farmersdelight:cutting',
       ingredients: [],
       result: [],
-      tool: {},
+      tool: isAbility ? { type: 'farmersdelight:item_ability', action: tool } : Ingredient.of(tool).toJson()
     };
-    let recipeID = [];
     if (sound) recipe.sound = { sound_id: sound };
 
-    if (Array.isArray(outputs)) {
-      outputs.forEach(output => {
-        recipe.result.push({ item: Item.of(output).toJson() });
-      });
-      recipeID.push(outputs[0]);
-    } else {
-      recipe.result.push({ item: Item.of(outputs).toJson() });
-      recipeID.push(outputs);
-    }
+    // Handle outputs
+    let outputItems = Array.isArray(outputs) ? outputs : [outputs];
+    recipe.result = outputItems.map(output => ({ item: Item.of(output).toJson() }));
 
-    if (Array.isArray(inputs)) {
-      inputs.forEach(input => {
-        recipe.ingredients.push(Ingredient.of(input).toJson());
-      });
-      recipeID.push(inputs[0]);
-    } else {
-      recipe.ingredients.push(Ingredient.of(inputs).toJson());
-      recipeID.push(inputs);
-    }
+    // Handle inputs
+    let inputItems = Array.isArray(inputs) ? inputs : [inputs];
+    recipe.ingredients = inputItems.map(input => Ingredient.of(input).toJson());
 
-    if (isAbility) {
-      recipe.tool = {
-        type: 'farmersdelight:item_ability',
-        action: tool,
-      };
-    } else {
-      recipe.tool = Ingredient.of(tool).toJson();
-    }
-    e.custom(recipe).id(makeRecipeID('cutting', recipeID[0], recipeID[1]));
+    e.custom(recipe).id(makeRecipeID('cutting', outputItems[0], inputItems[0]));
   };
 
   ['minecraft:bread', 'moredelight:bread_slice'].forEach(toastItem => {
     e.custom({
       type: 'cookingforblockheads:toaster',
-      ingredient: {
-        item: toastItem,
-      },
-      result: {
-        item: 'moredelight:toast',
-      },
+      ingredient: Ingredient.of(toastItem).toJson(),
+      result: Item.of('moredelight:toast').toJson(),
     });
+  });
+
+  e.forEachRecipe({ type:'refurbished_furniture:cutting_board_slicing' }, kubeRecipe => {
+    let recipeJson = JSON.parse(kubeRecipe.json.toString());
+    let { result: { id: resultId, count: resultCount }, ingredient: { item: ingredient } } = recipeJson;
+
+    if (!Item.exists(resultId) || !Item.exists(ingredient)) {
+      logError(`${resultId} or ${ingredient} does not exist`, recipeJson);
+      return;
+    }
+
+    cuttingBoard(`${resultCount || 1}x ${resultId}`, ingredient, '#c:tools/knife');
+  });
+
+  /** @type {Record<Special.Item, $Ingredient_>} */
+  const sushigocrafting = {
+    'sushigocrafting:imitation_crab' : 'minecraft:cod',
+    'sushigocrafting:avocado_slices' : '#c:fruits/avocado',
+    'sushigocrafting:cucumber_slices' : '#c:crops/cucumber',
+    'sushigocrafting:wasabi_paste' : '#c:crops/wasabi_root',
+    'sushigocrafting:tuna_fillet' : '#c:raw_fishes/tuna',
+    'sushigocrafting:salmon_fillet' : '#c:raw_fishes/salmon',
+  };
+
+
+  let refurbCutting = (output, input) => {
+    let recipe = {
+      type: 'refurbished_furniture:cutting_board_slicing',
+      result: Item.of(output).toJson(),
+      ingredient: Ingredient.of(input).toJson(),
+    };
+    e.custom(recipe).id(makeRecipeID('refurb_cutting', Array.isArray(input) ? input[0] : input, output));
+  };
+
+  for (const [output, input] of Object.entries(sushigocrafting)) {
+    cuttingBoard(output, input, '#c:tools/knife');
+    refurbCutting(output, input);
+  }
+
+  e.forEachRecipe({ type:'farmersdelight:cutting' }, kubeRecipe=>{
+    let recipeJson = JSON.parse(kubeRecipe.json.toString());
+
+    /** @type {{result: $ItemStack_[], ingredients: $Ingredient_[]}} */
+    let { result, ingredients } = recipeJson;
+    if (recipeJson?.tool?.tag !== 'c:tools/knife') return;
+
+    /** @type {{id: string, count: number}} */
+    let { id: output, count: outputCount } = result[0].item;
+    if (!outputCount) outputCount = 1;
+    let inputs = ingredients.map(ingredient => ingredient.item || `#${ingredient.tag}`);
+    refurbCutting(`${outputCount}x ${output}`, inputs);
   });
 });

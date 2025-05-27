@@ -55,4 +55,11 @@ ServerEvents.recipes(e => {
   });
 
   e.shapeless('2x craftoria:garlic_bread', ['minecraft:bread', '2x dumplings_delight:garlic_clove', 'dumplings_delight:garlic_chive']);
+
+  e.shaped('craftoria:terminal', ['DPD','TET'], {
+    P: '#c:glass_panes',
+    D: 'modern_industrialization:diode',
+    T: 'modern_industrialization:transistor',
+    E: 'modern_industrialization:electronic_circuit',
+  }).id('craftoria:terminal');
 });

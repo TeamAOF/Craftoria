@@ -1,3 +1,4 @@
+// priority: -1000
 /** @type {Special.Item[]} */
 const globalItemRemovals = [
   'megacells:mega_interface',
@@ -82,6 +83,13 @@ const disableItem = (item, altText, altId) => {
 };
 
 ServerEvents.generateData('after_mods', event => {
+
+  /** @type {string[]} */
+  const miscYeets = [
+    'dumplings_delight:loot_modifiers/add_calamari_squid',
+    'apotheosis:affixes/armor/attribute/unbound',
+  ];
+
   /** @type {Special.LootTable[]} */
   const lootTablesToYeet = [
     // Erroring loot tables, removed to prevent log spam (authors don't check for existance of the items/mods...)
@@ -218,9 +226,6 @@ ServerEvents.generateData('after_mods', event => {
     'mekanism_extras:blocks/naquadah_reactor_controller',
   ];
 
-  /** @type {string[]} */
-  const lootModifiersToYeet = ['dumplings_delight:add_calamari_squid'];
-
   /** @type {Special.RecipeId[]} */
   const recipesToYeet = [
     // Erroring recipes, removed to prevent log spam (authors don't check for existance of the items/mods... and some of these are just in the wrong namespace too...)
@@ -281,12 +286,12 @@ ServerEvents.generateData('after_mods', event => {
 
   /**
    * @param {string} path - The path to the data.
-   * @param {string} type - The of data to be removed.
+   * @param {string} [type] - The type of data to be removed. If not provided, the path will be used as is.
    */
-  const Yeet = (path, type) => event.json(`${ID.namespace(path)}:${type}/${ID.path(path)}`, { 'neoforge:conditions': [{ type: 'neoforge:false' }] });
+  const Yeet = (path, type) => event.json(`${ID.namespace(path)}:${type ? `${type}/` : ''}${ID.path(path)}`, { 'neoforge:conditions': [{ type: 'neoforge:false' }] });
 
   lootTablesToYeet.forEach(id => Yeet(id, 'loot_table'));
-  lootModifiersToYeet.forEach(id => Yeet(id, 'loot_modifiers'));
   recipesToYeet.forEach(id => Yeet(id, 'recipe'));
   advancementsToYeet.forEach(id => Yeet(id, 'advancement'));
+  miscYeets.forEach(id => Yeet(id));
 });

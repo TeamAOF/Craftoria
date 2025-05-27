@@ -1,6 +1,8 @@
 // priority: 2147483647
 // Global variables/functions used in server_scripts
 
+const $Direction = Java.loadClass('net.minecraft.core.Direction');
+const $MultiblockMachineBlockEntity = Java.loadClass('aztech.modern_industrialization.machines.multiblocks.MultiblockMachineBlockEntity');
 const $NeighborNotifyEvent = Java.loadClass('net.neoforged.neoforge.event.level.BlockEvent$NeighborNotifyEvent');
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand');
 const $BlockPos = Java.loadClass('net.minecraft.core.BlockPos');
@@ -72,16 +74,16 @@ const _makeRecipeID = (mod, type, output, input) => {
 
 const debugToInt = () => {
   switch (debug) {
-  case 'error':
-    return 1;
-  case 'warn':
-    return 2;
-  case 'info':
-    return 3;
-  case 'debug':
-    return 4;
-  default:
-    return 0;
+    case 'error':
+      return 1;
+    case 'warn':
+      return 2;
+    case 'info':
+      return 3;
+    case 'debug':
+      return 4;
+    default:
+      return 0;
   }
 };
 

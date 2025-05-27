@@ -43,27 +43,27 @@ StartupEvents.registry('item', e => {
       .tag(['modern_industrialization:replicator_blacklist', 'craftoria:replicator_1_blacklist']);
 
     switch (type) {
-    case 'item':
-      cell.itemType(id);
-      break;
-    case 'fluid':
-      cell.fluidType(id);
-      break;
-    case 'chemical':
-      cell.type(() => $MekKey.of($Chem[id.toUpperCase()].getStack(1000)));
-      break;
-    case 'soul':
-      cell.type(() => $SoulKey.INSTANCE);
-      break;
-    case 'flux':
-      cell.type(() => $FluxKey.of($EnergyType.FE));
-      break;
-    case 'source':
-      cell.type(() => $SourceKey.KEY);
-      break;
-    default:
-      console.error(`Invalid type '${type}' for Infinity Cell with ID '${id}'`);
-      break;
+      case 'item':
+        cell.itemType(id);
+        break;
+      case 'fluid':
+        cell.fluidType(id);
+        break;
+      case 'chemical':
+        cell.type(() => $MekKey.of($Chem[id.toUpperCase()].getStack(1000)));
+        break;
+      case 'soul':
+        cell.type(() => $SoulKey.INSTANCE);
+        break;
+      case 'flux':
+        cell.type(() => $FluxKey.of($EnergyType.FE));
+        break;
+      case 'source':
+        cell.type(() => $SourceKey.KEY);
+        break;
+      default:
+        console.error(`Invalid type '${type}' for Infinity Cell with ID '${id}'`);
+        break;
     }
   };
 

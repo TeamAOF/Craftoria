@@ -1,3 +1,4 @@
+// priority: 995
 {
   // Add sophisticatedstorage:upgrade tag to all upgrades from Sophisticated Backpacks
   // except for the ones that are incompatible with sophisticatedstorage.
