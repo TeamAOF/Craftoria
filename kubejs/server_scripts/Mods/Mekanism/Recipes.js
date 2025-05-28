@@ -39,7 +39,7 @@ ServerEvents.recipes(e => {
   // Cardboard Box
   e.shaped('mekanism:cardboard_box', ['A A', 'ACA', 'BAB'], {
     A: 'mekanism:sawdust',
-    B: 'sophisticatedstorage:packing_tape',
+    B: '#c:slimeballs',
     C: '#c:plastics',
   }).id('mekanism:cardboard_box');
 
