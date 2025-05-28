@@ -17,7 +17,7 @@ ServerEvents.recipes(e => {
     }
   }
 
-  e.shaped('2x xycraft_world:aluminum_torch', ['I', 'S'], { I: '#c:ingots/aluminum', S: 'stick' }).id('xycraft_world:shaped/aluminum_torch');
+  e.shaped('2x xycraft_world:aluminum_torch', ['I', 'S'], { I: '#c:dusts/bauxite', S: 'stick' }).id('xycraft_world:shaped/aluminum_torch');
   e.stonecutting('xycraft_world:aluminum_bricks', '#c:ingots/iron').id('xycraft_world:shaped/aluminum_bricks');
   e.remove([{ id: 'xycraft_world:smelting/aluminum' }, { id: 'xycraft_world:blasting/aluminum' }]);
 });

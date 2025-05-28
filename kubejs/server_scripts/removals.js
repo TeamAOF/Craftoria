@@ -24,6 +24,12 @@ const globalItemRemovals = [
   'mffs:confiscation_module',
   'pylons:infusion_pylon',
   'pylons:potion_filter',
+  'xycraft_world:raw_aluminum',
+  'xycraft_world:raw_aluminum_block',
+  'xycraft_world:aluminum_ore_stone',
+  'xycraft_world:aluminum_ore_deepslate',
+  'xycraft_world:aluminum_ore_kivi',
+  'create:crushed_raw_aluminum'
 ];
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
@@ -43,17 +49,26 @@ ServerEvents.recipes(event => {
     'supplementaries:sus_sand',
     'mekanism:sawing/torch',
     'ars_elemental:soulbound_1',
+    'industrialforegoing:laser_drill_ore/raw_materials/aluminum',
+    'occultism:miner/ores/aluminum_ore',
+    'occultism:miner/eldritch/raw_aluminum',
   ];
 
   /** @type {Special.Item[]} */
-  const output = [];
+  const inputRemovals = [
+    'xycraft_world:raw_aluminum',
+    'xycraft_world:raw_aluminum_block',
+    'xycraft_world:aluminum_ore_stone',
+    'xycraft_world:aluminum_ore_deepslate',
+    'xycraft_world:aluminum_ore_kivi',
+  ];
 
   id.forEach(id => {
     event.remove({ id: id });
   });
 
-  output.forEach(output => {
-    event.remove({ output: output });
+  inputRemovals.forEach(input => {
+    event.remove({ input: input });
   });
 
   globalItemRemovals.forEach(output => {
@@ -88,6 +103,9 @@ ServerEvents.generateData('after_mods', event => {
   const miscYeets = [
     'dumplings_delight:loot_modifiers/add_calamari_squid',
     'apotheosis:affixes/armor/attribute/unbound',
+    'xycraft_world:worldgen/configured_feature/ore_aluminum',
+    'xycraft_world:worldgen/placed_feature/ore_aluminum',
+    'xycraft_world:neoforge/biome_modifier/ore_aluminum',
   ];
 
   /** @type {Special.LootTable[]} */

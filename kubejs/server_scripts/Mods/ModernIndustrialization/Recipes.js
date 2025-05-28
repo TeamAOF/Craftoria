@@ -23,17 +23,6 @@ ServerEvents.recipes(e => {
     .itemIn('#c:ores/zinc')
     .id('craftoria:mi/macerator/ores/raw_zinc');
 
-  macerator(2, 100)
-    .itemOut('3x xycraft_world:raw_aluminum')
-    .itemIn('#c:ores/aluminum')
-    .id('craftoria:mi/macerator/ores/raw_aluminum');
-
-  macerator(2, 100)
-    .itemOut('modern_industrialization:aluminum_dust')
-    .itemOut('modern_industrialization:aluminum_dust', 0.5)
-    .itemIn('#c:raw_materials/aluminum')
-    .id('craftoria:mi/macerator/ores/aluminum_dust');
-
   e.replaceInput(
     { output: 'industrialization_overdrive:multi_processing_array' },
     'modern_industrialization:assembler',
