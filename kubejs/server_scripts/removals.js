@@ -52,6 +52,7 @@ ServerEvents.recipes(event => {
     'industrialforegoing:laser_drill_ore/raw_materials/aluminum',
     'occultism:miner/ores/aluminum_ore',
     'occultism:miner/eldritch/raw_aluminum',
+    'occultism:miner/master/stellarite',
   ];
 
   /** @type {Special.Item[]} */
