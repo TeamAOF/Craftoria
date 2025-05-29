@@ -16,7 +16,7 @@ NAMES_LOOKUP = {
     'WhitePhant0m': 'Phantom', # Use the name you want to show in the changelog
     'Kazuhiko-Gushiken': 'Inno',
     'ImAK': 'AK',
-    'Dietrich Friday': 'Blue'
+    'Dietrich Friday': 'SubordinalBlue'
 }
 
 BRANCH_NAME = 'main'
