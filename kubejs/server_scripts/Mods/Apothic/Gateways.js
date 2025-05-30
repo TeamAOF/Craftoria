@@ -162,7 +162,7 @@ ServerEvents.generateData('after_mods', e => {
       entities: [
         {
           type: 'apotheosis:invader',
-          invader: `craftoria:custom_bosses/${boss.id}`,
+          invader: `craftoria:custom_bosses/${boss}`,
         },
       ],
       rewards: [
