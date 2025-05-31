@@ -1,4 +1,21 @@
 
+# Craftoria | v1.21.2
+
+_Neoforge 21.1.172_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.21.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.21.2.md)_
+
+### Changes/Improvements ⭐
+
+* Remove xycraft aluminum, completely `Phantom`
+
+
+### Bug Fixes 🪲
+
+* Fixed set Balm to version .44, for now `SubordinalBlue`
+* Fixed resolve undefined invader path for custom bosses (#572) `Exefer`
+* Fixed cardboard box recipe `Phantom`
+* Fixed SubtleEffects config: grindstone particles off `Lingaurdium`
+
+
 # Craftoria | v1.21.1
 
 _Neoforge 21.1.172_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.21.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.21.1.md)_
