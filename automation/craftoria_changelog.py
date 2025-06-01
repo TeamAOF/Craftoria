@@ -6,8 +6,15 @@ from pathlib import Path
 from datetime import datetime
 from urllib.request import urlopen
 
+def get_cwd():
+    p = Path(__file__).resolve().parent
+    for parent in [p, *p.parents]:
+        if (parent / 'minecraftinstance.json').exists():
+            return parent
+
 # ---------------------- CONFIG ----------------------
-GIT_REPO_PATH = Path(r'C:\Users\antho\curseforge\minecraft\Instances\Craftoria-Dev')
+CWD = get_cwd()
+GIT_REPO_PATH = CWD # Replace with `Path("<repo_path>)` if needed
 PACK_VER = '1.21.1'
 OLD_PACK_VER = '1.21.0'
 FILE_ID = "/123456"
