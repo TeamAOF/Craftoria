@@ -4,7 +4,7 @@ import json
 import subprocess
 from pathlib import Path
 from datetime import datetime
-import requests
+from urllib.request import urlopen
 
 # ---------------------- CONFIG ----------------------
 GIT_REPO_PATH = Path(r'C:\Users\antho\curseforge\minecraft\Instances\Craftoria-Dev')
@@ -41,7 +41,7 @@ OLD_INSTANCE_PATH = Path(r'C:\Users\antho\curseforge\minecraft\Instances\Craftor
 # Load JSON data
 new_inst = json.loads(INSTANCE_PATH.read_text(encoding='utf-8', errors='ignore'))
 old_inst = (
-    requests.get(f"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/{BRANCH_NAME}/minecraftinstance.json").json()
+    json.loads(urlopen(f"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/{BRANCH_NAME}/minecraftinstance.json").read())
     if USE_GITHUB_INSTANCE
     else json.loads(OLD_INSTANCE_PATH.read_text(encoding='utf-8', errors='ignore'))
 )
