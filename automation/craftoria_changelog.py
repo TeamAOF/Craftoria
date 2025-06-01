@@ -16,7 +16,7 @@ NAMES_LOOKUP = {
     'WhitePhant0m': 'Phantom',
     'Kazuhiko-Gushiken': 'Inno',
     'ImAK': 'AK',
-    'Dietrich Friday': 'Blue'
+    'Dietrich Friday': 'SubordinalBlue'
 }
 
 BRANCH_NAME = 'main'
