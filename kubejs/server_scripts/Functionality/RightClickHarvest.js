@@ -11,11 +11,8 @@ BlockEvents.rightClicked(event => {
   if (!isPlayerActionValid(player, hand)) return;
   const toHarvest = block.blockState.block;
 
-  if (toHarvest instanceof $CropBlock || toHarvest instanceof $CocoaBlock || toHarvest instanceof $NetherWartBlock) {
-    harvestCropBlock(block, toHarvest, player, item);
-  } else {
-    logDebug('You right clicked a block that is not a crop block!');
-  }
+  if (toHarvest instanceof $CropBlock || toHarvest instanceof $CocoaBlock || toHarvest instanceof $NetherWartBlock)
+    if (harvestCropBlock(block, toHarvest, player, item)) event.cancel();
 });
 
 /**
@@ -39,7 +36,7 @@ function isPlayerActionValid(player, hand) {
 function harvestCropBlock(block, crop, player, stack) {
   if (!isMature(block.blockState)) {
     logDebug('This crop is not fully grown.');
-    return;
+    return false;
   }
 
   logDebug('Harvesting crop...');
@@ -62,6 +59,7 @@ function harvestCropBlock(block, crop, player, stack) {
   block.setBlockState(getAgeZero(block.blockState), UPDATE_NEIGHBORS_FLAG);
   player.swing();
   logDebug('Harvested crop!');
+  return true;
 }
 
 /**
