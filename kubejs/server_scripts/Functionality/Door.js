@@ -13,6 +13,8 @@ function doubleDoor() {
   const prevPoweredPos = Utils.newList(); // List of previously powered positions
   const prevButtonPos = new Map(); // Map of previously powered button positions
 
+  const blacklistTag = 'craftoria:no_double_open';
+
   /**
    *
    * @param {$BlockPos_} pos
@@ -39,21 +41,7 @@ function doubleDoor() {
    * @returns {$EnumProperty_<$DirectionProperty_>}
    */
   function getOppositeDir(dir) {
-    switch (dir) {
-      case Direction.NORTH:
-        return Direction.SOUTH;
-      case Direction.SOUTH:
-        return Direction.NORTH;
-      case Direction.EAST:
-        return Direction.WEST;
-      case Direction.WEST:
-        return Direction.EAST;
-      case Direction.UP:
-        return Direction.DOWN;
-      case Direction.DOWN:
-        return Direction.UP;
-    }
-    return null; // Return null if no match found
+    return $Direction.byName(dir.getName()).opposite;
   }
 
   /**
@@ -112,7 +100,7 @@ function doubleDoor() {
 
     for (const aroundPos of searchArea) {
       let aroundState = level.getBlockState(aroundPos);
-      if (isDoorBlock(aroundState)) {
+      if (isAllowedDoor(aroundState)) {
         doorPos = aroundPos;
         break;
       }
@@ -139,7 +127,7 @@ function doubleDoor() {
     if (!hand.equals($InteractionHand.MAIN_HAND)) return; // Skip if not main hand
     if (player.shiftKeyDown) return; // Skip if player is sneaking
     const blockState = level.getBlockState(blockPos);
-    if (!isDoorBlock(blockState)) return; // Skip if block is not a door
+    if (!isAllowedDoor(blockState)) return; // Skip if block is not a allowed door
     if (!canOpenByHand(blockState)) return; // Skip if block cannot be opened by hand
     processDoor(player, level, blockPos, blockState, null); // Process the door
   }
@@ -149,9 +137,13 @@ function doubleDoor() {
    * @param {$BlockState_} blockState
    * @returns boolean
    */
-  function isDoorBlock(blockState) {
+  function isAllowedDoor(blockState) {
     const { block } = blockState;
-    return block instanceof $DoorBlock || block instanceof $TrapDoorBlock || block instanceof $FenceGateBlock;
+    if (block instanceof $DoorBlock || block instanceof $TrapDoorBlock || block instanceof $FenceGateBlock) {
+      if (block.hasTag(blacklistTag)) return false;
+      return true;
+    }
+    return false;
   }
 
   const DOOR_UPDATE_FLAGS = 10; // Block update flags for setBlock
@@ -222,7 +214,7 @@ function doubleDoor() {
     for (const dir of Direction.ALL_SET) {
       let neighborPos = blockPos.relative(dir);
       let neighborState = level.getBlockState(neighborPos);
-      if (isDoorBlock(neighborState) && neighborState.block.name.equals(blockType.name)) {
+      if (isAllowedDoor(neighborState) && neighborState.block.name.equals(blockType.name)) {
         neighbors.add(neighborPos.immutable());
       }
     }
@@ -277,7 +269,7 @@ function doubleDoor() {
 
             // Check if it's a matching door
             let neighborState = level.getBlockState(neighborPos);
-            if (isDoorBlock(neighborState) && neighborState.block.name.equals(blockType.name)) {
+            if (isAllowedDoor(neighborState) && neighborState.block.name.equals(blockType.name)) {
               // Only create immutable objects when we need to store them
               toOpen.add(neighborPos.immutable());
               queue.push(neighborPos.immutable());
@@ -322,7 +314,7 @@ function doubleDoor() {
      * @param {$BlockState_} blockState
      */
     onDoorClick(level, player, hand, blockPos, blockState) {
-      if (isDoorBlock(blockState)) onDoorClick(level, player, hand, blockPos);
+      if (isAllowedDoor(blockState)) onDoorClick(level, player, hand, blockPos);
     },
   };
 }

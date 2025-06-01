@@ -179,6 +179,10 @@ ServerEvents.tags('block', e => {
   // Block tags for quest usage
   e.add('craftoria:ae2_buddings', /^ae2:.*_budding_quartz/);
   e.add('craftoria:exae_buddings', /^extendedae:entro_budding_/);
+
+  e.add('craftoria:no_double_open', [
+    /^create:.*_door$/,
+  ]);
 });
 
 ServerEvents.tags('fluid', e => {
