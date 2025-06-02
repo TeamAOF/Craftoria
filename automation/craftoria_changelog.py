@@ -2,6 +2,7 @@ import os
 import re
 import json
 import subprocess
+import logging
 from pathlib import Path
 from datetime import datetime
 from urllib.request import urlopen
@@ -46,6 +47,10 @@ USE_GITHUB_INSTANCE = True
 OLD_INSTANCE_PATH = Path(r'C:\Users\antho\curseforge\minecraft\Instances\Craftoria\minecraftinstance.json')
 # ----------------------------------------------------
 
+# Load LOGGER
+logging.basicConfig(format='[%(asctime)s] [%(levelname)s] %(message)s', datefmt='%H:%M:%S', level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 # Load JSON data
 new_inst = json.loads(INSTANCE_PATH.read_text(encoding='utf-8', errors='ignore'))
 old_inst = (
@@ -67,9 +72,9 @@ added_ids = new_ids - old_ids
 removed_ids = old_ids - new_ids
 common_ids = new_ids & old_ids
 
-print(f"Added Mods: {len(added_ids)}")
-print(f"Removed Mods: {len(removed_ids)}")
-print(f"Common Mods: {len(common_ids)}")
+logger.info(f"Added Mods: {len(added_ids)}")
+logger.info(f"Removed Mods: {len(removed_ids)}")
+logger.info(f"Common Mods: {len(common_ids)}")
 
 # Format mod links
 format_link = lambda m: f"* [{re.sub(r"[\'~`*\"]", "", m['name'])}]({m['webSiteURL']})"
@@ -121,20 +126,20 @@ if not git_path:
 if not GIT_REPO_PATH.exists():
     raise FileNotFoundError(f"Repo path doesn't exist: {GIT_REPO_PATH}")
 
-print(f"Git found at: {git_path}")
+logger.info(f"Git found at: {git_path}")
 
 def exec_command(args: list):
     result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=GIT_REPO_PATH)
     if result.stderr:
-        print('Error during the execution of a command:', result.stderr)
-        print('Exiting...')
+        logger.error('Error during the execution of a command:', result.stderr)
+        logger.error('Exiting...')
         exit(1)
     return result.stdout
 
 # Obtaining last release commit hash
 
 if USE_CUTOFF_HASH and CUTOFF_COMMIT_HASH == None:
-    print('Starting search for last release tag...')
+    logger.info('Starting search for last release tag...')
     search_args = ['git', 'log', f'--max-count={SEARCH_DEPTH}', '--pretty=format:%H|%s', BRANCH_NAME]
     commits = exec_command(search_args).splitlines()
     version_bump_regex = re.compile(r'version bump \d+\.\d+(?:\.\d+)?$')
@@ -142,13 +147,15 @@ if USE_CUTOFF_HASH and CUTOFF_COMMIT_HASH == None:
         commit_hash, commit_message = commit.split('|')
         try:
             tag = subprocess.check_output(['git', 'describe', '--tags', '--exact-match', commit_hash], stderr=subprocess.DEVNULL, text=True, cwd=GIT_REPO_PATH).strip()
-            print(f'Found tag "{tag}" on commit {commit_hash}')
+            logger.info(f'Found tag "{tag}" on commit {commit_hash}')
             CUTOFF_COMMIT_HASH = commit_hash
             break
         except subprocess.CalledProcessError:
-            print(f'Commit "{commit_hash}" did not have a tag')
-            print('Checking for version bump commit message...')
-            if version_bump_regex.search(commit_message): CUTOFF_COMMIT_HASH = commit_hash
+            logger.debug(f'Commit "{commit_hash}" did not have a tag')
+            logger.debug('Checking for version bump commit message...')
+            if version_bump_regex.search(commit_message):
+                logger.info(f'Found version bump commit {commit_hash}')
+                CUTOFF_COMMIT_HASH = commit_hash
             pass
 
 # Get all commits since a date or a commit hash 
@@ -163,7 +170,7 @@ raw_commits_copy = raw_commits[:]
 for commit in raw_commits_copy:
     if commit.startswith('Revert'):
         reverted = commit.removeprefix('Revert ').replace('"','').strip()
-        print(f'Reverted commit: {reverted}')
+        logger.info(f'Reverted commit: {reverted}')
         
         cleaned = reverted
         for gitname, name in NAMES_LOOKUP.items():
@@ -174,7 +181,7 @@ for commit in raw_commits_copy:
         elif cleaned in raw_commits:
             raw_commits.remove(cleaned)
         else:
-            print(f"Couldn't remove: '{reverted}' or '{cleaned}'")
+            logger.warning(f"Couldn't remove: '{reverted}' or '{cleaned}'")
 
 # Filter commits
 
@@ -247,6 +254,7 @@ def save_on_file(file_path: Path, content, append: bool = True):
         file_path.write_text(content, encoding='utf-8')
 
 if SAVE_ON_FILE:
+    logger.info('Saving on file...')
     save_on_file(CHANGELOG_FILE_PATH, changelog)
     save_on_file(MODLIST_FILE_PATH, modlist, False)
     save_on_file(MODLIST_CHANGELOG_FILE_PATH, mod_changelog, False)
