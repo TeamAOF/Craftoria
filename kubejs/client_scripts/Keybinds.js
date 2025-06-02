@@ -133,16 +133,29 @@ KeyBindJSEvents.modify(event => {
     /** @type {Array<string>} */
     let keyParts = k.split('.');
     let mod = v.mod ?? keyParts.find(part => global.modList.contains(part));
+
+    // Skip if the mod is not loaded, to avoid errors.
     if (!Platform.isLoaded(mod)) {
-      // Skip if the mod is not loaded, to avoid errors.
-      console.warn(`Skipping: ${k} -> ${v} (${mod} not loaded)`);
+      console.warn(`Skipping: ${k} -> ${JSON.stringify(v)} (${mod} not loaded)`);
       continue;
     }
 
-    if (!v.remove) {
-      if (v.key) event.modifyKey(k, v.key);
-      if (v.modifier) event.modifyModifier(k, v.modifier);
-      if (v.category) event.modifyCategory(k, v.category);
-    } else event.remove(k);
+    // Skip if the keybind doesn't exist but the mod is present
+    if (KeyBindUtil.findKeyMappingInAllKeyMapping(k) == null) {
+      console.warn(`Skipping: ${k} -> ${JSON.stringify(v)} (Keybinding not found)`);
+      continue;
+    }
+
+    try {
+      if (!v.remove) {
+        if (v.key) event.modifyKey(k, v.key);
+        if (v.modifier) event.modifyModifier(k, v.modifier);
+        if (v.category) event.modifyCategory(k, v.category);
+      } else event.remove(k);
+    } catch({message}) {
+      // unknown error case. 
+      // This keybinding script isnt critical so we dont want to stop client loading
+      console.warn(`Unable to fully modify Keybind ${k} due to error: ${message}`);
+    }
   }
 });
