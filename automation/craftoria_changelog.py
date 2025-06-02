@@ -30,6 +30,7 @@ BRANCH_NAME = 'main'
 USE_CUTOFF_HASH = False
 CUTOFF_DATE = datetime(2025, 5, 1).strftime('%Y-%m-%d')
 CUTOFF_COMMIT_HASH = None # Set this to the last commit hash you want to consider
+SEARCH_DEPTH = 100
 
 FEAT_WHITELIST = ['add', 'implement', 'feature', 'feat', 'chapter']
 FIX_WHITELIST = ['fix', 'bug', 'resolve', 'patch']
@@ -122,15 +123,40 @@ if not GIT_REPO_PATH.exists():
 
 print(f"Git found at: {git_path}")
 
+def exec_command(args: list):
+    result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=GIT_REPO_PATH)
+    if result.stderr:
+        print('Error during the execution of a command:', result.stderr)
+        print('Exiting...')
+        exit(1)
+    return result.stdout
+
+# Obtaining last release commit hash
+
+if USE_CUTOFF_HASH and CUTOFF_COMMIT_HASH == None:
+    print('Starting search for last release tag...')
+    search_args = ['git', 'log', f'--max-count={SEARCH_DEPTH}', '--pretty=format:%H|%s', BRANCH_NAME]
+    commits = exec_command(search_args).splitlines()
+    version_bump_regex = re.compile(r'version bump \d+\.\d+(?:\.\d+)?$')
+    for commit in commits:
+        commit_hash, commit_message = commit.split('|')
+        try:
+            tag = subprocess.check_output(['git', 'describe', '--tags', '--exact-match', commit_hash], stderr=subprocess.DEVNULL, text=True, cwd=GIT_REPO_PATH).strip()
+            print(f'Found tag "{tag}" on commit {commit_hash}')
+            CUTOFF_COMMIT_HASH = commit_hash
+            break
+        except subprocess.CalledProcessError:
+            print(f'Commit "{commit_hash}" did not have a tag')
+            print('Checking for version bump commit message...')
+            if version_bump_regex.search(commit_message): CUTOFF_COMMIT_HASH = commit_hash
+            pass
+
+# Get all commits since a date or a commit hash 
+
 if not USE_CUTOFF_HASH: git_args = [git_path, 'log', f'--since={CUTOFF_DATE}', '--pretty=format:%s `%an`', BRANCH_NAME]
 else: git_args = [git_path, 'log', f'{CUTOFF_COMMIT_HASH}..{BRANCH_NAME}', '--pretty=format:%s `%an`']
 
-result = subprocess.run(git_args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=GIT_REPO_PATH)
-if result.stderr:
-    print('Error:', result.stderr)
-    exit(1)
-
-raw_commits = result.stdout.splitlines()
+raw_commits = exec_command(git_args).splitlines()
 
 # Remove reverted commits
 raw_commits_copy = raw_commits[:]
@@ -149,6 +175,8 @@ for commit in raw_commits_copy:
             raw_commits.remove(cleaned)
         else:
             print(f"Couldn't remove: '{reverted}' or '{cleaned}'")
+
+# Filter commits
 
 features, fixes = [], []
 
