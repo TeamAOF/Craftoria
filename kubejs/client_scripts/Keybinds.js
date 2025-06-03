@@ -152,10 +152,10 @@ KeyBindJSEvents.modify(event => {
         if (v.modifier) event.modifyModifier(k, v.modifier);
         if (v.category) event.modifyCategory(k, v.category);
       } else event.remove(k);
-    } catch({message}) {
-      // unknown error case. 
+    } catch(e) {
+      // unknown error case.
       // This keybinding script isnt critical so we dont want to stop client loading
-      console.warn(`Unable to fully modify Keybind ${k} due to error: ${message}`);
+      console.warn(`Unable to fully modify Keybind ${k} due to error: ${e.message}`);
     }
   }
 });
