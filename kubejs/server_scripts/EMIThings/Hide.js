@@ -6,8 +6,6 @@ RecipeViewerEvents.removeEntries('item', event => {
   hideItems.forEach(item => {
     event.remove(item);
   });
-
-  event.remove(['modern_industrialization:budding_incubator', 'modern_industrialization:ooze_lab', 'modern_industrialization:model_synthesizer']);
 });
 
 RecipeViewerEvents.removeEntriesCompletely('item', event => {

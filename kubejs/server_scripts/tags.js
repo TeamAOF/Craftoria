@@ -111,8 +111,6 @@ ServerEvents.tags('item', e => {
 
   e.remove('plonk:unplaceable', ['plonk:placed_items']);
 
-  e.add('industrialization_overdrive:multi_processing_array_blacklist', ['modern_industrialization:budding_incubator']);
-
   e.add('craftoria:grass', ['#biomeswevegone:grass', 'minecraft:short_grass', 'minecraft:seagrass']);
   e.add('craftoria:tall_grass', ['#biomeswevegone:grass/tall', 'minecraft:tall_grass']);
 });
