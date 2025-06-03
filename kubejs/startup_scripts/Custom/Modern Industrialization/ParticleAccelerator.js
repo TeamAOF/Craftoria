@@ -50,17 +50,10 @@ MITweaksMachineEvents.registerBatchMultiblocks(e => {
     .build();
 
   e.electric(
-    'Particle Accelerator',
-    'particle_accelerator',
-    e.getRecipeType('modern_industrialization:fusion_reactor'),
-    particleAcceleratorShape,
+    'Particle Accelerator', 'particle_accelerator',
+    e.getRecipeType('modern_industrialization:fusion_reactor'), particleAcceleratorShape,
     workStations => workStations.add('modern_industrialization:fusion_reactor'),
-    'plasma_handling_iridium_machine_casing',
-    'particle_accelerator',
-    true,
-    false,
-    false,
-    128,
-    0.5
+    'plasma_handling_iridium_machine_casing', 'particle_accelerator', true, false, false,
+    128, 0.5
   );
 });
