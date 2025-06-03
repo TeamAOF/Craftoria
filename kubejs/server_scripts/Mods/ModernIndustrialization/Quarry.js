@@ -63,5 +63,6 @@ ServerEvents.recipes(event => {
     .itemOut('powah:uraninite_ore_dense', 0.02)
     .itemOut('mekanism:fluorite_ore', 0.3)
     .itemOut('irons_spellbooks:mithril_ore', 0.02)
+    .itemOut('replication:deepslate_replica_ore', 0.02)
     .id('modern_industrialization:quarry/titanium');
 });
