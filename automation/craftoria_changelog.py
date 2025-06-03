@@ -6,6 +6,7 @@ import logging
 from pathlib import Path
 from datetime import datetime
 from urllib.request import urlopen
+from urllib.error import HTTPError
 
 def get_cwd():
     p = Path(__file__).resolve().parent
@@ -14,6 +15,8 @@ def get_cwd():
             return parent
 
 # ---------------------- CONFIG ----------------------
+USE_COLORS = True # Whether to use colors for logging
+
 CWD = get_cwd()
 GIT_REPO_PATH = CWD # Replace with `Path("<repo_path>)` if needed
 PACK_VER = '1.21.3'
@@ -33,9 +36,9 @@ CUTOFF_DATE = datetime(2025, 5, 1).strftime('%Y-%m-%d')
 CUTOFF_COMMIT_HASH = None # Leave empty for auto-search
 SEARCH_DEPTH = 100
 
-FEAT_WHITELIST = ['add', 'implement', 'feature', 'feat', 'chapter']
+FEAT_WHITELIST = ['add', 'implement', 'feature', 'feat', 'chapter', 'quest']
 FIX_WHITELIST = ['fix', 'bug', 'resolve', 'patch']
-GENERAL_BLACKLIST = ['refactor', 'debug', 'vscode', 'config', 'sure', 'revert', 'lab', 'dev', 'nope', 'nuh', 'eslint', 'prettier', 'prettify']
+GENERAL_BLACKLIST = ['merge', 'refactor', 'debug', 'vscode', 'config', 'sure', 'revert', 'lab', 'dev', 'nope', 'nuh', 'eslint', 'prettier', 'prettify']
 
 SAVE_ON_FILE = True
 CHANGELOG_FILE_PATH = GIT_REPO_PATH / 'changelogs' / 'CHANGELOG.md'
@@ -48,10 +51,27 @@ OLD_INSTANCE_PATH = Path(r'C:\Users\antho\curseforge\minecraft\Instances\Craftor
 # ----------------------------------------------------
 
 # Load LOGGER
-logging.basicConfig(format='[%(asctime)s] [%(levelname)s] %(message)s', datefmt='%H:%M:%S', level=logging.INFO)
-logger = logging.getLogger(__name__)
+LOGGING_LEVEL = logging.DEBUG
+
+if USE_COLORS:
+    class ColoredFormatter(logging.Formatter):
+        COLORS = {logging.DEBUG: "\033[90m", logging.INFO: "\033[94m", logging.WARNING: "\033[93m", logging.ERROR: "\033[91m", logging.CRITICAL: "\033[1;91m",}
+        RESET = "\033[0m"
+        def format(self, record):
+            color = self.COLORS.get(record.levelno, self.RESET)
+            msg = super().format(record)
+            return f"{color}{msg}{self.RESET}"
+    handler = logging.StreamHandler()
+    handler.setFormatter(ColoredFormatter('[%(asctime)s] [%(levelname)s] %(message)s', '%H:%M:%S'))
+    logger = logging.getLogger(__name__)
+    logger.setLevel(LOGGING_LEVEL)
+    logger.handlers = [handler]
+else:
+    logging.basicConfig(format='[%(asctime)s] [%(levelname)s] %(message)s', datefmt='%H:%M:%S', level=LOGGING_LEVEL)
+    logger = logging.getLogger(__name__)
 
 # Load JSON data
+
 new_inst = json.loads(INSTANCE_PATH.read_text(encoding='utf-8', errors='ignore'))
 old_inst = (
     json.loads(urlopen(f"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/{BRANCH_NAME}/minecraftinstance.json").read())
@@ -59,7 +79,8 @@ old_inst = (
     else json.loads(OLD_INSTANCE_PATH.read_text(encoding='utf-8', errors='ignore'))
 )
 
-# Helper: Filter mods
+# Filter mods
+
 filter_mods = lambda inst: {
     a['addonID']: a for a in inst.get('installedAddons', []) if a.get('gameID') == 432
 }
@@ -77,6 +98,7 @@ logger.info(f"Removed Mods: {len(removed_ids)}")
 logger.info(f"Common Mods: {len(common_ids)}")
 
 # Format mod links
+
 format_link = lambda m: f"* [{re.sub(r"[\'~`*\"]", "", m['name'])}]({m['webSiteURL']})"
 format_mod = lambda m: f"* [{re.sub(r"[\'~`*\"]", "", m['name'])}]({m['webSiteURL']}) - (by [{m['primaryAuthor']}](https://www.curseforge.com/members/{m['primaryAuthor']}/projects))"
 
@@ -132,7 +154,6 @@ def exec_command(args: list):
     result = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=GIT_REPO_PATH)
     if result.stderr:
         logger.error('Error during the execution of a command:', result.stderr)
-        logger.error('Exiting...')
         exit(1)
     return result.stdout
 
@@ -166,6 +187,7 @@ else: git_args = [git_path, 'log', f'{CUTOFF_COMMIT_HASH}..{BRANCH_NAME}', '--pr
 raw_commits = exec_command(git_args).splitlines()
 
 # Remove reverted commits
+
 raw_commits_copy = raw_commits[:]
 for commit in raw_commits_copy:
     if commit.startswith('Revert'):
@@ -189,16 +211,35 @@ features, fixes = [], []
 
 for msg in raw_commits:
     lower_msg = msg.lower()
+    logger.debug(f'Commit message to filter: {lower_msg}')
+    cleaned = ''
     if any(w in lower_msg for w in FEAT_WHITELIST) and not any(w in lower_msg for w in GENERAL_BLACKLIST):
-        cleaned = re.sub(r'^(feat:|feature:|added:|implement(ed)?:)?', '', msg, flags=re.IGNORECASE).strip()
+        cleaned = re.sub(r'^(feat|feature|added|implement(?:ed)?)(\([^)]+\))?:?\s*', '', lower_msg, flags=re.IGNORECASE).strip()
+        
+        cleaned = re.sub(r'^(add|remove)\b', lambda m: m.group(0) + ('d' if m.group(0).endswith('e') else 'ed'), cleaned)
+        
         for gitname, name in NAMES_LOOKUP.items(): cleaned = cleaned.replace(gitname, name)
-        features.append(f'* {cleaned[0].upper() + cleaned[1:]}')
+        cleaned = cleaned[0].upper() + cleaned[1:]
+        
+        if len(cleaned.strip().split()) > 2:
+            features.append(f'* {cleaned}')
     elif any(w in lower_msg for w in FIX_WHITELIST) and not any(w in lower_msg for w in GENERAL_BLACKLIST):
-        cleaned = re.sub(r'^(fix:|bugfix:|bug:|resolved:|patch:)?', '', msg, flags=re.IGNORECASE).strip()
+        cleaned = re.sub(r'^(fix|bugfix|bug|resolved|patch)(\([^)]+\))?:?\s*', '', lower_msg, flags=re.IGNORECASE).strip()
+        
+        cleaned = re.sub(r'^(fix|patch|resolve)\b', lambda m: m.group(0) + ('d' if m.group(0).endswith('e') else 'ed'), cleaned)
+        
         for gitname, name in NAMES_LOOKUP.items(): cleaned = cleaned.replace(gitname, name)
-        fixes.append(f'* {cleaned[0].lower() + cleaned[1:]}')
+        cleaned = cleaned[0].upper() + cleaned[1:]
+        
+        if len(cleaned.strip().split()) > 2:
+            fixes.append(f'* {cleaned}')
+
+# Remove any possible duplicate
+
+fixes, features = list(set(fixes)), list(set(features))
 
 # Format output
+
 mention = "" if SAVE_ON_FILE else "<@&1252725960948711444>"
 craftoria = "" if SAVE_ON_FILE else " <:craftoria:1276650441869885531>"
 
