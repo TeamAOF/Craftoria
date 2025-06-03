@@ -2,6 +2,123 @@
   "oreMultiplier": 1,
   "ores": [
     {
+      "ore_size": 10,
+      "discard_on_air_chance": 0.0,
+      "modifiers": [
+        {
+          "count": 20,
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:in_square"
+        },
+        {
+          "height": {
+            "min_inclusive": {
+              "above_bottom": 10
+            },
+            "max_inclusive": {
+              "below_top": 10
+            },
+            "type": "minecraft:uniform"
+          },
+          "type": "minecraft:height_range"
+        },
+        {
+          "type": "minecraft:biome"
+        }
+      ],
+      "targets": [
+        {
+          "target": {
+            "block": "minecraft:netherrack",
+            "predicate_type": "minecraft:block_match"
+          },
+          "state": {
+            "Name": "minecraft:nether_gold_ore"
+          }
+        }
+      ]
+    },
+    {
+      "ore_size": 33,
+      "discard_on_air_chance": 0.0,
+      "modifiers": [
+        {
+          "count": 4,
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:in_square"
+        },
+        {
+          "height": {
+            "min_inclusive": {
+              "absolute": 27
+            },
+            "max_inclusive": {
+              "absolute": 36
+            },
+            "type": "minecraft:uniform"
+          },
+          "type": "minecraft:height_range"
+        },
+        {
+          "type": "minecraft:biome"
+        }
+      ],
+      "targets": [
+        {
+          "target": {
+            "block": "minecraft:netherrack",
+            "predicate_type": "minecraft:block_match"
+          },
+          "state": {
+            "Name": "minecraft:magma_block"
+          }
+        }
+      ]
+    },
+    {
+      "ore_size": 8,
+      "discard_on_air_chance": 0.0,
+      "modifiers": [
+        {
+          "count": 8,
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:in_square"
+        },
+        {
+          "height": {
+            "min_inclusive": {
+              "absolute": 2
+            },
+            "max_inclusive": {
+              "absolute": 40
+            },
+            "type": "minecraft:uniform"
+          },
+          "type": "minecraft:height_range"
+        },
+        {
+          "type": "minecraft:biome"
+        }
+      ],
+      "targets": [
+        {
+          "target": {
+            "tag": "minecraft:base_stone_nether",
+            "predicate_type": "minecraft:tag_match"
+          },
+          "state": {
+            "Name": "rftoolsbase:dimensionalshard_nether"
+          }
+        }
+      ]
+    },
+    {
       "ore_size": 14,
       "discard_on_air_chance": 0.0,
       "modifiers": [
@@ -118,45 +235,6 @@
       ]
     },
     {
-      "ore_size": 10,
-      "discard_on_air_chance": 0.0,
-      "modifiers": [
-        {
-          "count": 20,
-          "type": "minecraft:count"
-        },
-        {
-          "type": "minecraft:in_square"
-        },
-        {
-          "height": {
-            "min_inclusive": {
-              "above_bottom": 10
-            },
-            "max_inclusive": {
-              "below_top": 10
-            },
-            "type": "minecraft:uniform"
-          },
-          "type": "minecraft:height_range"
-        },
-        {
-          "type": "minecraft:biome"
-        }
-      ],
-      "targets": [
-        {
-          "target": {
-            "block": "minecraft:netherrack",
-            "predicate_type": "minecraft:block_match"
-          },
-          "state": {
-            "Name": "minecraft:nether_gold_ore"
-          }
-        }
-      ]
-    },
-    {
       "ore_size": 2,
       "discard_on_air_chance": 1.0,
       "modifiers": [
@@ -187,123 +265,6 @@
           },
           "state": {
             "Name": "minecraft:ancient_debris"
-          }
-        }
-      ]
-    },
-    {
-      "ore_size": 33,
-      "discard_on_air_chance": 0.0,
-      "modifiers": [
-        {
-          "count": 4,
-          "type": "minecraft:count"
-        },
-        {
-          "type": "minecraft:in_square"
-        },
-        {
-          "height": {
-            "min_inclusive": {
-              "absolute": 27
-            },
-            "max_inclusive": {
-              "absolute": 36
-            },
-            "type": "minecraft:uniform"
-          },
-          "type": "minecraft:height_range"
-        },
-        {
-          "type": "minecraft:biome"
-        }
-      ],
-      "targets": [
-        {
-          "target": {
-            "block": "minecraft:netherrack",
-            "predicate_type": "minecraft:block_match"
-          },
-          "state": {
-            "Name": "minecraft:magma_block"
-          }
-        }
-      ]
-    },
-    {
-      "ore_size": 33,
-      "discard_on_air_chance": 0.0,
-      "modifiers": [
-        {
-          "count": 2,
-          "type": "minecraft:count"
-        },
-        {
-          "type": "minecraft:in_square"
-        },
-        {
-          "height": {
-            "min_inclusive": {
-              "absolute": 5
-            },
-            "max_inclusive": {
-              "absolute": 31
-            },
-            "type": "minecraft:uniform"
-          },
-          "type": "minecraft:height_range"
-        },
-        {
-          "type": "minecraft:biome"
-        }
-      ],
-      "targets": [
-        {
-          "target": {
-            "block": "minecraft:netherrack",
-            "predicate_type": "minecraft:block_match"
-          },
-          "state": {
-            "Name": "minecraft:blackstone"
-          }
-        }
-      ]
-    },
-    {
-      "ore_size": 10,
-      "discard_on_air_chance": 0.0,
-      "modifiers": [
-        {
-          "count": 10,
-          "type": "minecraft:count"
-        },
-        {
-          "type": "minecraft:in_square"
-        },
-        {
-          "height": {
-            "min_inclusive": {
-              "above_bottom": 10
-            },
-            "max_inclusive": {
-              "below_top": 10
-            },
-            "type": "minecraft:uniform"
-          },
-          "type": "minecraft:height_range"
-        },
-        {
-          "type": "minecraft:biome"
-        }
-      ],
-      "targets": [
-        {
-          "target": {
-            "block": "minecraft:netherrack",
-            "predicate_type": "minecraft:block_match"
-          },
-          "state": {
-            "Name": "minecraft:nether_gold_ore"
           }
         }
       ]
@@ -382,6 +343,84 @@
           },
           "state": {
             "Name": "minecraft:gravel"
+          }
+        }
+      ]
+    },
+    {
+      "ore_size": 33,
+      "discard_on_air_chance": 0.0,
+      "modifiers": [
+        {
+          "count": 2,
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:in_square"
+        },
+        {
+          "height": {
+            "min_inclusive": {
+              "absolute": 5
+            },
+            "max_inclusive": {
+              "absolute": 31
+            },
+            "type": "minecraft:uniform"
+          },
+          "type": "minecraft:height_range"
+        },
+        {
+          "type": "minecraft:biome"
+        }
+      ],
+      "targets": [
+        {
+          "target": {
+            "block": "minecraft:netherrack",
+            "predicate_type": "minecraft:block_match"
+          },
+          "state": {
+            "Name": "minecraft:blackstone"
+          }
+        }
+      ]
+    },
+    {
+      "ore_size": 10,
+      "discard_on_air_chance": 0.0,
+      "modifiers": [
+        {
+          "count": 10,
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:in_square"
+        },
+        {
+          "height": {
+            "min_inclusive": {
+              "above_bottom": 10
+            },
+            "max_inclusive": {
+              "below_top": 10
+            },
+            "type": "minecraft:uniform"
+          },
+          "type": "minecraft:height_range"
+        },
+        {
+          "type": "minecraft:biome"
+        }
+      ],
+      "targets": [
+        {
+          "target": {
+            "block": "minecraft:netherrack",
+            "predicate_type": "minecraft:block_match"
+          },
+          "state": {
+            "Name": "minecraft:nether_gold_ore"
           }
         }
       ]
