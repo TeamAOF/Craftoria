@@ -72,12 +72,26 @@ else:
 
 # Load JSON data
 
-new_inst = json.loads(INSTANCE_PATH.read_text(encoding='utf-8', errors='ignore'))
-old_inst = (
-    json.loads(urlopen(f"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/{BRANCH_NAME}/minecraftinstance.json").read())
-    if USE_GITHUB_INSTANCE
-    else json.loads(OLD_INSTANCE_PATH.read_text(encoding='utf-8', errors='ignore'))
-)
+try:
+    new_inst = json.loads(INSTANCE_PATH.read_text(encoding='utf-8', errors='ignore'))
+except FileNotFoundError:
+    logger.error('New instance file or dir not found!')
+    exit(1)
+
+try:
+    old_inst = (
+        json.loads(urlopen(f"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/{BRANCH_NAME}/minecraftinstance.json").read())
+        if USE_GITHUB_INSTANCE
+        else json.loads(OLD_INSTANCE_PATH.read_text(encoding='utf-8', errors='ignore'))
+    )
+except HTTPError as e:
+    logger.error(f'An error occured while trying to fetch the old instance from github! \n\t{e}')
+    try:
+        logger.info('[FALLBACK] Using local instance...')
+        old_inst = json.loads(OLD_INSTANCE_PATH.read_text(encoding='utf-8', errors='ignore'))
+    except FileNotFoundError:
+        logger.error('[FALLBACK] File or dir not found...')
+        exit(1)
 
 # Filter mods
 
@@ -144,9 +158,11 @@ def better_which(cmd):
 
 git_path = better_which('git')
 if not git_path:
-    raise SyntaxError("Git not found, install it and add it to your PATH")
+    logger.error("Git not found, install it and add it to your PATH")
+    exit(1)
 if not GIT_REPO_PATH.exists():
-    raise FileNotFoundError(f"Repo path doesn't exist: {GIT_REPO_PATH}")
+    logger.error(f"Repo path doesn't exist: {GIT_REPO_PATH}")
+    exit(1)
 
 logger.info(f"Git found at: {git_path}")
 
