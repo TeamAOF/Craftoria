@@ -16,8 +16,8 @@ def get_cwd():
 # ---------------------- CONFIG ----------------------
 CWD = get_cwd()
 GIT_REPO_PATH = CWD # Replace with `Path("<repo_path>)` if needed
-PACK_VER = '1.21.1'
-OLD_PACK_VER = '1.21.0'
+PACK_VER = '1.21.3'
+OLD_PACK_VER = '1.21.2'
 FILE_ID = "/123456"
 
 NAMES_LOOKUP = {
@@ -28,14 +28,14 @@ NAMES_LOOKUP = {
 }
 
 BRANCH_NAME = 'main'
-USE_CUTOFF_HASH = False
+USE_CUTOFF_HASH = True
 CUTOFF_DATE = datetime(2025, 5, 1).strftime('%Y-%m-%d')
-CUTOFF_COMMIT_HASH = None # Set this to the last commit hash you want to consider
+CUTOFF_COMMIT_HASH = None # Leave empty for auto-search
 SEARCH_DEPTH = 100
 
 FEAT_WHITELIST = ['add', 'implement', 'feature', 'feat', 'chapter']
 FIX_WHITELIST = ['fix', 'bug', 'resolve', 'patch']
-GENERAL_BLACKLIST = ['vscode', 'config', 'sure', 'revert', 'lab', 'dev', 'nope', 'nuh', 'eslint', 'prettier', 'prettify']
+GENERAL_BLACKLIST = ['refactor', 'debug', 'vscode', 'config', 'sure', 'revert', 'lab', 'dev', 'nope', 'nuh', 'eslint', 'prettier', 'prettify']
 
 SAVE_ON_FILE = True
 CHANGELOG_FILE_PATH = GIT_REPO_PATH / 'changelogs' / 'CHANGELOG.md'
@@ -196,58 +196,81 @@ for msg in raw_commits:
     elif any(w in lower_msg for w in FIX_WHITELIST) and not any(w in lower_msg for w in GENERAL_BLACKLIST):
         cleaned = re.sub(r'^(fix:|bugfix:|bug:|resolved:|patch:)?', '', msg, flags=re.IGNORECASE).strip()
         for gitname, name in NAMES_LOOKUP.items(): cleaned = cleaned.replace(gitname, name)
-        
-        fixes.append(f'* Fixed {cleaned[0].lower() + cleaned[1:]}')
+        fixes.append(f'* {cleaned[0].lower() + cleaned[1:]}')
 
 # Format output
-mention = "<@&1252725960948711444>" if not SAVE_ON_FILE else ""
-craftoria = " <:craftoria:1276650441869885531>" if not SAVE_ON_FILE else ""
-links = (f'\n\n### Links\n\n<:curseforge:1117579334031511634> **[Download](https://www.curseforge.com/minecraft/modpacks/craftoria/files{FILE_ID})**\n'
-         '📜 **[Changelog](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/CHANGELOG.md)**\n') if not SAVE_ON_FILE else ""
+mention = "" if SAVE_ON_FILE else "<@&1252725960948711444>"
+craftoria = "" if SAVE_ON_FILE else " <:craftoria:1276650441869885531>"
 
-header = (f"\n_{' '.join(new_inst['baseModLoader']['name'].split('-')).title()}_ | "
-          f"_[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_{PACK_VER}.md)_ | "
-          f"_[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_{PACK_VER}.md)_\n") if SAVE_ON_FILE else ""
+if SAVE_ON_FILE:
+    links = ""
+    header = (
+        f"\n_{' '.join(new_inst['baseModLoader']['name'].split('-')).title()}_ | "
+        f"_[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_{PACK_VER}.md)_ | "
+        f"_[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_{PACK_VER}.md)_"
+    )
+else:
+    links = (
+        f"\n### Links\n\n"
+        f"<:curseforge:1117579334031511634> **[Download](https://www.curseforge.com/minecraft/modpacks/craftoria/files{FILE_ID})**\n"
+        f"📜 **[Changelog](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/CHANGELOG.md)**"
+    )
+    header = ""
 
-new_mods_section = "\n### Added Mods ✅\n\n" + ("\n".join(added_modlinks_formatted) or '* No new mods') if added_ids else ''
-rm_mods_section = "\n### Removed Mods ❌\n\n" + ("\n".join(removed_modlinks_formatted) or '* No removed mods') if removed_ids else ''
+new_mods_section = ""
+if added_ids:
+    new_mods_section = "\n### Added Mods ✅\n\n" + "\n".join(added_modlinks_formatted)
 
-changelog = f'''{mention}
-#%s Craftoria | v{PACK_VER}{craftoria}
-{header}
-### Changes/Improvements ⭐
+rm_mods_section = ""
+if removed_ids:
+    rm_mods_section = "\n### Removed Mods ❌\n\n" + "\n".join(removed_modlinks_formatted)
 
-{('\n'.join(features) or '* No new features')}
-{new_mods_section}
-{rm_mods_section}
+## Format changelog
 
-### Bug Fixes 🪲
+changelog = [
+    mention,
+    f"# {craftoria} Craftoria | v{PACK_VER}{craftoria}",
+    header,
+]
 
-{('\n'.join(fixes) or '* No bug fixes')}
-{links}'''.replace('#%s', '#' + craftoria)
+if features: changelog.append(f"\n### Changes/Improvements ⭐\n\n{'\n'.join(features)}")
 
-modlist = f'''# Craftoria - v{PACK_VER}
+if new_mods_section: changelog.append(new_mods_section)
+if rm_mods_section: changelog.append(rm_mods_section)
 
-{('\n'.join(modlist_formatted) or '* No new mods')}'''
+if fixes: changelog.append(f"\n### Bug Fixes 🪲\n\n{'\n'.join(fixes)}")
 
-mod_changelog = f'''## Craftoria - {OLD_PACK_VER} -> {PACK_VER}
+if links: changelog.append(links)
 
-### neoforge - {old_inst['baseModLoader']['name'].split('-')[1]} -> {new_inst['baseModLoader']['name'].split('-')[1]}
+## Format modlist
 
-### Added
-{('\n'.join(added_modlist_formatted) or '* No new mods')}
+modlist = [
+    f'# Craftoria - v{PACK_VER}',
+    f'\n\n{('\n'.join(modlist_formatted) or '* No new mods')}'
+]
 
-### Removed
-{('\n'.join(removed_modlist_formatted) or '* No removed mods')}
+## Format Mod Changelog
 
-### Updated
-{('\n'.join(common_modlist_formatted) or '* No updated mods')}'''
+mod_changelog = [
+    f'## Craftoria - {OLD_PACK_VER} -> {PACK_VER}',
+    f'\n\n### neoforge - {old_inst['baseModLoader']['name'].split('-')[1]} -> {new_inst['baseModLoader']['name'].split('-')[1]}',
+    f'\n### Added\n\n{('\n'.join(added_modlist_formatted) or '* No new mods')}',
+    f'\n### Removed\n\n{('\n'.join(removed_modlist_formatted) or '* No removed mods')}',
+    f'\n### Updated{('\n'.join(common_modlist_formatted) or '* No updated mods')}'
+]
 
 # Save or print
+
+def convert_to_multiline(lines: list):
+    output = ''
+    for n, line in enumerate(lines): 
+        output += f'\n{line}' if n > 1 else line
+    return output
 
 def save_on_file(file_path: Path, content, append: bool = True):
     file_path.parent.mkdir(parents=True, exist_ok=True)
     if append:
+        if file_path.read_text(encoding='utf-8').splitlines()[0] != '': content += '\n'
         existing = file_path.read_text(encoding='utf-8') if file_path.exists() else ""
         file_path.write_text(content + "\n" + existing, encoding='utf-8')
     else:
@@ -255,8 +278,8 @@ def save_on_file(file_path: Path, content, append: bool = True):
 
 if SAVE_ON_FILE:
     logger.info('Saving on file...')
-    save_on_file(CHANGELOG_FILE_PATH, changelog)
-    save_on_file(MODLIST_FILE_PATH, modlist, False)
-    save_on_file(MODLIST_CHANGELOG_FILE_PATH, mod_changelog, False)
+    save_on_file(CHANGELOG_FILE_PATH, convert_to_multiline(changelog))
+    save_on_file(MODLIST_FILE_PATH, convert_to_multiline(modlist), False)
+    save_on_file(MODLIST_CHANGELOG_FILE_PATH, convert_to_multiline(mod_changelog), False)
 else:
-    print(changelog, "\n---\n", modlist, "\n---\n", mod_changelog)
+    print(convert_to_multiline(changelog))

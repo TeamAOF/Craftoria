@@ -9,8 +9,6 @@ This document explains how to set up, configure, and run the `craftoria_changelo
 1. [Prerequisites](#prerequisites)
 2. [File Placement](#file-placement)
 3. [Configuration](#configuration)
-
-   * [Configuration Variables](#configuration-variables)
 4. [Running the Script](#running-the-script)
 5. [Troubleshooting](#troubleshooting)
 6. [Frequently Asked Questions](#frequently-asked-questions)
@@ -52,7 +50,7 @@ Before using the script, ensure the following are installed and accessible from 
 
 Place `craftoria_changelog.py` in the root directory of your modpack repository. The structure should look like this:
 
-```
+```bash
 /path/to/your-repo/
 ├─ <anywhere_in_repo>/craftoria_changelog.py
 ├─ minecraftinstance.json
@@ -78,7 +76,7 @@ Edit these values before running the script:
 * `FILE_ID`: (Optional) Curseforge file ID.
 * `NAMES_LOOKUP`: Maps Git usernames to display names.
 * `BRANCH_NAME`: Git branch to compare against.
-* `USE_CUTOFF_HASH`: Whether to use commit has instead of date.
+* `USE_CUTOFF_HASH`: Whether to use commit hash instead of date. (Leave empty for auto-search of last release)
 * `FEAT_WHITELIST` / `FIX_WHITELIST`: Commit keywords for classification.
 * `GENERAL_BLACKLIST`: Commit keywords to exclude.
 * `SAVE_ON_FILE`: If `True`, changelogs are written to disk.
