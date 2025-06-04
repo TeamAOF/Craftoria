@@ -7,10 +7,10 @@ import {
   writeTextToFile,
 } from "./utils";
 import { $, Glob } from "bun";
-import packMetadata from "../../pack.toml";
+import packMetadata from "../../../pack.toml";
 
 const CONFIG = {
-  gitRepoPath: path.resolve(import.meta.dir, "..", ".."),
+  gitRepoPath: path.resolve(import.meta.dir, "..", "..", ".."),
   packVersion: null,
   oldPackVersion: null,
   fileId: "123456", // Do not change this
@@ -182,9 +182,9 @@ async function generateChangelog() {
     throw new Error("Git is required but was not found on the system.");
   }
 
-  await initializeConfig();
-
   $.cwd(CONFIG.gitRepoPath);
+
+  await initializeConfig();
 
   const [oldPackMetadata, oldMods] = await getCommitMetadataFiles(
     CONFIG.cutoffCommitHash
@@ -259,6 +259,6 @@ async function generateChangelog() {
 }
 
 generateChangelog().catch(error => {
-  console.error("An error occurred during changelog generation:", error);
+  console.error("An error occurred during changelog generation:\n", error);
   process.exit(1);
 });
