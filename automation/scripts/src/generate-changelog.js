@@ -158,7 +158,7 @@ function generateChangelogContent(features, fixes, addedMods, removedMods) {
     `${links}\n---`,
   ].filter(Boolean);
 
-  if (sections.length < 4) sections.splice(-1, 0, "\n\n* Nothing changed");
+  if (sections.length === 2) sections.splice(-1, 0, "\n\n* Nothing changed");
 
   return sections.join("");
 }
@@ -172,6 +172,8 @@ function generateModChangelog(addedMods, removedMods, changedMods, oldPackMetada
     removedMods.length && `### Removed\n${removedMods.join("\n")}`,
     changedMods.length && `### Updated\n${changedMods.join("\n")}`,
   ].filter(Boolean);
+
+  if (sections.length === 1) sections.push("* Nothing changed");
 
   return sections.join("\n\n");
 }
