@@ -19,4 +19,7 @@ StartupEvents.registry('item', e => {
         }
       });
   };
+
+  orbHelper('mana_regen', ['eternal_starlight:item/orb_of_prophecy_inventory', 'irons_spellbooks:item/upgrade_orb_swirl', 'irons_spellbooks:item/upgrade_orb_mana']);
+  orbHelper('spell_power', ['alshanex_familiars:item/mysterious_orb', 'irons_spellbooks:item/upgrade_orb_lightning', 'irons_spellbooks:item/upgrade_orb_mana']);
 });
