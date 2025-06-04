@@ -22,6 +22,10 @@
 !user-prefs.json
 !version-info.json
 !/mods/
+!/resourcepacks/
+/resourcepacks/*.zip
+!/shaderpacks/
+/shaderpacks/*.zip
 !/index.toml
 !/pack.toml
 !/.packwizignore
@@ -45,7 +49,6 @@ config/ars_nouveau/search_index/
 # ---
 *.bak
 /*.zip
-resourcepacks/*.zip
 .DS_Store
 Thumbs.db
 
