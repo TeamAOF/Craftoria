@@ -113,6 +113,8 @@ ServerEvents.tags('item', e => {
 
   e.add('craftoria:grass', ['#biomeswevegone:grass', 'minecraft:short_grass', 'minecraft:seagrass']);
   e.add('craftoria:tall_grass', ['#biomeswevegone:grass/tall', 'minecraft:tall_grass']);
+
+  e.add('craftoria:upgrade_orbs', /.*_upgrade_orb$/);
 });
 
 ServerEvents.tags('block', e => {
