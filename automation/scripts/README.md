@@ -34,12 +34,20 @@ Only `feat` and `fix` commits appear in the changelog. To exclude a commit, use 
 
 **Good:** `feat(quests): add mycelial reactor quest` - imperative verb shows action taken
 
-**Important:** Bump pack version in [`pack.toml`](../../pack.toml) first, or the script will warn you.
+**Important:** Bump pack version in [`pack.toml`](../../../pack.toml) first, or the script will warn you.
 
 Run inside a git repository so it can detect your uncommitted `pack.toml` changes:
 
+You can run this inside `automation/scripts` (your current working directory):
+
 ```bash
-bun run scripts/generate-changelog.js
+bun generate-changelog
+```
+
+Or from anywhere:
+
+```bash
+bun path/to/generate-changelog.js
 ```
 
 The script auto-detects the last version bump, analyzes changes, processes mod updates, and generates formatted output. No editing is required.
