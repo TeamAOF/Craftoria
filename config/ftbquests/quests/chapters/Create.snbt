@@ -1,0 +1,70 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: "none"
+	default_quest_size: 2.0d
+	filename: "Create"
+	group: "066C799B2F5452CD"
+	icon: {
+		id: "createcasing:acacia_large_cogwheel"
+	}
+	id: "0644AB97E8D8839B"
+	images: [
+		{
+			height: 1.0d
+			image: "ftbquests:textures/gui/belt_scroll.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			color: 255
+			height: 1.0d
+			hover: ["Read Me"]
+			image: "ftbquests:textures/shapes/circle/shape.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4F987C54768D8E3D"]
+			icon_scale: 2.0d
+			id: "67CA3CEE5DE80DCD"
+			tasks: [{
+				id: "2163BC2B1DCF79CF"
+				item: { count: 1, id: "create:large_cogwheel" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			icon_scale: 2.0d
+			id: "4F987C54768D8E3D"
+			tasks: [{
+				id: "4E430337F8180287"
+				item: { count: 1, id: "create:cogwheel" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			icon_scale: 2.0d
+			id: "66855DBE37DB5CD1"
+			tasks: [{
+				id: "5E578E73AAA6051B"
+				item: { count: 1, id: "create:shaft" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+	]
+}
