@@ -95,6 +95,9 @@ ServerEvents.tags('item', e => {
   e.add('c:tools/ranged_weapon', ['industrialforegoing:infinity_trident', 'mekaweapons:meka_bow']);
   e.add('c:tools/spear', 'industrialforegoing:infinity_trident');
 
+  e.add('animal_pen:can_attack_pen', ['#c:tools/melee_weapon', '#c:tools/knife']);
+  e.add('animal_pen:can_attack_aquarium', ['#c:tools/melee_weapon', '#c:tools/knife']);;
+
   /**
    * @param {string[]} tags
    * @param {$Ingredient_|$Ingredient_[]} item
