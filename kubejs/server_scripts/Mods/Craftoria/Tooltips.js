@@ -2,12 +2,21 @@
 // or things that would've had too little stuff to warrant their own file/folder.
 ItemEvents.modifyTooltips(e => {
   globalItemRemovals.forEach(item => {
-    e.add(item, [
-      Text.red('This item has been disabled.'),
-      Text.red("If you're playing in singleplayer, or are a server admin,"),
-      Text.red("if you want to enable it, go to 'kubejs/removals.js'"),
-      Text.red('and remove the item from globalItemRemovals.'),
-    ]);
+    if (typeof item === 'object' && item.item) {
+      e.add(item.item, [
+        Text.red(`This item has been disabled for reason: ${item.reason}.`),
+        Text.red("If you're playing in singleplayer, or are a server admin,"),
+        Text.red("if you want to enable it, go to 'kubejs/removals.js'"),
+        Text.red('and remove the item from globalItemRemovals.'),
+      ]);
+    } else {
+      e.add(item, [
+        Text.red('This item has been disabled.'),
+        Text.red("If you're playing in singleplayer, or are a server admin,"),
+        Text.red("if you want to enable it, go to 'kubejs/removals.js'"),
+        Text.red('and remove the item from globalItemRemovals.'),
+      ]);
+    }
   });
 
   disabledItems.forEach(item => {
