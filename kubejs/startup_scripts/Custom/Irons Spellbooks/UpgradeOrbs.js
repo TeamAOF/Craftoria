@@ -14,8 +14,8 @@ StartupEvents.registry('item', e => {
             m.texture(`layer${i}`, `${layers[i]}`);
           }
         } else {
-          m.texture('layer0', `irons_spellbooks:item/upgrade_orb_base`);
-          m.texture('layer1', `irons_spellbooks:item/upgrade_orb_swirl`);
+          m.texture('layer0', 'irons_spellbooks:item/upgrade_orb_base');
+          m.texture('layer1', 'irons_spellbooks:item/upgrade_orb_swirl');
         }
       });
   };
