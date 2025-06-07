@@ -49,4 +49,10 @@ ItemEvents.modifyTooltips(e => {
   e.add('modern_industrialization:nuke', Text.darkGray("No, it won't explode."));
 
   e.add('craftoria:terminal', Text.gray('Auto builds Modern Industrialization multiblocks.'));
+  e.add('craftoria:infinity_soul_cell', [
+    Text.darkGray('For the trinity gem component of this items recipe'),
+    Text.darkGray('craft a possessed warden spawn egg together with'),
+    Text.darkGray('an empty trinity gem in any crafting grid'),
+    Text.darkGray("As you can't use the captured warden for the ritual, for now"),
+  ]);
 });
