@@ -183,8 +183,15 @@ ServerEvents.tags('block', e => {
   e.add('craftoria:ae2_buddings', /^ae2:.*_budding_quartz/);
   e.add('craftoria:exae_buddings', /^extendedae:entro_budding_/);
 
-  e.add('craftoria:no_double_open', [
-    /^create:.*_door$/,
+  e.add('craftoria:no_double_open', [/^create:.*_door$/]);
+
+  e.add('cable_facades:supports_facade', [
+    'sfm:fancy_cable',
+    'computercraft:cable',
+    'replication:matter_network_pipe',
+    /^simplemagnets:(basic|advanced)_demagnetization_coil$/,
+    '@moderndynamics',
+    '@trashcans'
   ]);
 });
 
