@@ -172,11 +172,13 @@ ServerEvents.tags('block', e => {
 
   e.add('extended_industrialization:machine_chainer/linkable', [
     '@functionalstorage',
-    'entangled:block',
-    'tesseract:tesseract',
+    'modularrouters:modular_router',
     'tankstorage:tank_dock',
     'bankstorage:bank_dock',
     'moderndynamics:machine_extender',
+    'ae2:interface',
+    'extendedae:ex_interface',
+    'extendedae:oversize_interface',
   ]);
 
   // Block tags for quest usage
