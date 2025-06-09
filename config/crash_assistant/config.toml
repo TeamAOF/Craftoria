@@ -13,16 +13,10 @@
 	default_lang = "en_us"
 	#List of blacklisted log files (checked with startswith()). This files won't show in GUI logs list.
 	blacklisted_logs = []
-	#Append comment text with notice about sending screenshot of this gui tells nothing to modpack creators.
-	show_dont_send_screenshot_of_gui_notice = true
 	#Anyways log will be uploaded to mclo.gs, but with this option you can wrap link to gnomebot.dev for better formatting.
 	#If help_link equals 'CHANGE_ME', this value will be ignored and gnomebot.dev used.
 	#Supported values: mclo.gs / gnomebot.dev
 	upload_to = "gnomebot.dev"
-	#Animate border to request user attention even more.
-	screenshot_of_gui_notice_animated_border = true
-	#Animate border to request user attention even more.
-	upload_all_animated_border = true
 	#Before uploading the first log, requires the user to accept the privacy policy.
 	#Disabling this option may be illegal in some countries if you are modpack creator. Disable at your own risk.
 	enable_privacy_policy_acceptance = true
@@ -100,6 +94,9 @@
 	put_problematic_frame_to_message = true
 	#Puts analysis result(names of crash reasons) to message, instead of just count.
 	put_analysis_result_to_message = true
+	#Color modified mods count/analysis in msg with ANSI.
+	#Can be needed to be disabled if issues are reported to something not supporting ANSI codeblocks, like GitHub.
+	color_message = true
 
 [greeting]
 	#You don't need to touch this option.
@@ -128,4 +125,24 @@
 [compatibility]
 	#Enable feature.
 	enabled = true
+
+#You can customise GUI with this options.
+[gui_customisation]
+	#Append comment text with notice about sending screenshot of this gui tells nothing to modpack creators.
+	show_dont_send_screenshot_of_gui_notice = true
+	#Animate border to request user attention even more.
+	screenshot_of_gui_notice_animated_border = true
+	#You can make Upload All Button bigger/smaller to request user attention.
+	#Default Swing font size is 12, Default for this button in crash assistant is 16.
+	#Not recommended to set it more than 16, as it will affect the increase of GUI size because all text won't fit.
+	upload_all_button_font_size = 16
+	#Same as upload_all_button_font_size, but for Request Help button.
+	request_help_button_font_size = 16
+	#You can change Upload All Button color to request user attention.
+	#format is "R_G_B", range is 0-255, for example "255_0_0" is red color. Use "default" to use default swing color.
+	#Default for this button is "0_178_0" (dark green color).
+	upload_all_button_foreground_color = "0_178_0"
+	#Same as upload_all_button_foreground_color, but for Request Help button.
+	#Default for this button is "0_0_178" (dark blue color).
+	request_help_button_foreground_color = "0_0_178"
 

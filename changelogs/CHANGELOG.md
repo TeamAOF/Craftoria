@@ -1,3 +1,34 @@
+#  Craftoria | v1.21.3
+
+_Neoforge 21.1.176_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.21.3.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.21.3.md)_
+
+### Changes/Improvements ⭐
+
+* Discord server link to readme `konstantin petrukhnov`
+* Change mixer jdt fluid recipes to use polymorphic flud; add a recipe for polymorphic fluid in mixer `whitephant0m`
+* Disable perception shake module `exefer`
+* Added xychorium ores to mi quarry (bronze drill); add kivi to mi quarry (copper drill) `whitephant0m`
+* Made knives and melee weapons able to attack animal pens `whitephant0m`
+* Added replica ore to mi quarry (titanium drill) `whitephant0m`
+* Added codex of evolution, a spell book with unlimited potential - wip `whitephant0m`
+* Added missing keybinding and generic error handling to keybindjs script `linguardium`
+* Added cable facade support to more cables, and misc blocks `whitephant0m`
+* Added mana regen & spell power upgrade orbs - wip `whitephant0m`
+* Additions/removals for ei machine chainer allow list `whitephant0m`
+
+### Added Mods ✅
+
+* [KubeJS Irons Spells](https://www.curseforge.com/minecraft/mc-mods/kubejs-irons-spells)
+
+### Bug Fixes 🪲
+
+* Fixed broken meka/bwg compat recipes `ak`
+* Fixed candle recipe conflicts `whitephant0m`
+* Don't run our double door logic on create doors, fixing weird behaviour with said doors `whitephant0m`
+* Fixed some dupes involving paradox machine `whitephant0m`
+* Fixed double harvesting on certain crops `whitephant0m`
+* Fixed jdt xp fluid not being usable in `create: enchantment industry` enchant book printing `whitephant0m`
+* Disable copycat blocks recipes until they are fixed `whitephant0m`
 
 # Craftoria | v1.21.2
 

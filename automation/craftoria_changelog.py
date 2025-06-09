@@ -46,7 +46,7 @@ MODLIST_FILE_PATH = GIT_REPO_PATH / 'changelogs' / f'modlist_{PACK_VER}.md'
 MODLIST_CHANGELOG_FILE_PATH = GIT_REPO_PATH / 'changelogs' / f'changelog_mods_{PACK_VER}.md'
 INSTANCE_PATH = GIT_REPO_PATH / 'minecraftinstance.json'
 
-USE_GITHUB_INSTANCE = True
+USE_GITHUB_INSTANCE = False
 OLD_INSTANCE_PATH = Path(r'C:\Users\antho\curseforge\minecraft\Instances\Craftoria\minecraftinstance.json')
 # ----------------------------------------------------
 

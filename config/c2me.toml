@@ -102,6 +102,8 @@ threadPoolPriority = "default"
 	useEndBiomeCache = "default"
 	# (Default: true) Whether to enable StructureWeightSampler optimizations to accelerate world generation
 	# 
+	# Set to false for the following reasons: 
+	# Incompatible with twilightforest@4.7.3196 (*) (defined in c2me) 
 	optimizeStructureWeightSampler = "default"
 
 [chunkSystem]
@@ -153,12 +155,13 @@ threadPoolPriority = "default"
 	# This applies a rough filter to filter out fluids that are definitely not going to flow
 	# 
 	filterFluidPostProcessing = "default"
-	# (Default: false) Whether to enable low memory mode
+	# (Default: false) Whether to use legacy scheduling for neighbor chunks
 	# 
-	# This will attempt to aggressively unload unneeded chunks, saving memory at the cost of additional
-	# overhead when generating new chunks.
+	# Enabling this restores the behavior of always loading in neighbor chunks when a chunk is loaded.
 	# 
-	lowMemoryMode = "default"
+	# This is currently deprecated and will be removed in the future.
+	# 
+	useLegacyScheduling = "default"
 
 [noTickViewDistance]
 	# (Default: true) Whether to enable no-tick view distance

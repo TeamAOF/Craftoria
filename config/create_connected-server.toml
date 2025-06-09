@@ -21,6 +21,19 @@ vesselHeatMultiplier = 0.5
 # Default: 18
 # Range: 0 ~ 18
 vesselMaxLevel = 18
+#.
+#RPM of a Kinetic Battery when discharging
+# Default: 64
+# Range: 0 ~ 256
+batteryDischargeRPM = 64
+#.
+#Max capacity of a Kinetic Battery in su-hours
+# Default: 512.0
+# Range: 0.0 ~ 8192.0
+batteryCapacity = 512.0
+#.
+#Allow Redstone Links to have wildcards in both slots [restart required]
+allowDualWildcardLink = false
 
 	#.
 	#Fine tune the kinetic stats of individual components
@@ -47,6 +60,7 @@ vesselMaxLevel = 18
 			freewheel_clutch = 0.0
 			overstress_clutch = 0.0
 			inverted_clutch = 0.0
+			kinetic_battery = 64.0
 
 		#.
 		#[in Stress Units]
@@ -54,3 +68,4 @@ vesselMaxLevel = 18
 		[stressValues.v1.capacity]
 			crank_wheel = 8.0
 			large_crank_wheel = 8.0
+			kinetic_battery = 32.0
