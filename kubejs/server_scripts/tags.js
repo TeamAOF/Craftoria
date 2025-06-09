@@ -95,6 +95,9 @@ ServerEvents.tags('item', e => {
   e.add('c:tools/ranged_weapon', ['industrialforegoing:infinity_trident', 'mekaweapons:meka_bow']);
   e.add('c:tools/spear', 'industrialforegoing:infinity_trident');
 
+  e.add('animal_pen:can_attack_pen', ['#c:tools/melee_weapon', '#c:tools/knife']);
+  e.add('animal_pen:can_attack_aquarium', ['#c:tools/melee_weapon', '#c:tools/knife']);
+
   /**
    * @param {string[]} tags
    * @param {$Ingredient_|$Ingredient_[]} item
@@ -113,6 +116,8 @@ ServerEvents.tags('item', e => {
 
   e.add('craftoria:grass', ['#biomeswevegone:grass', 'minecraft:short_grass', 'minecraft:seagrass']);
   e.add('craftoria:tall_grass', ['#biomeswevegone:grass/tall', 'minecraft:tall_grass']);
+
+  e.add('craftoria:upgrade_orbs', /.*_upgrade_orb$/);
 });
 
 ServerEvents.tags('block', e => {
@@ -167,19 +172,28 @@ ServerEvents.tags('block', e => {
 
   e.add('extended_industrialization:machine_chainer/linkable', [
     '@functionalstorage',
-    'entangled:block',
-    'tesseract:tesseract',
+    'modularrouters:modular_router',
     'tankstorage:tank_dock',
     'bankstorage:bank_dock',
     'moderndynamics:machine_extender',
+    'ae2:interface',
+    'extendedae:ex_interface',
+    'extendedae:oversize_interface',
   ]);
 
   // Block tags for quest usage
   e.add('craftoria:ae2_buddings', /^ae2:.*_budding_quartz/);
   e.add('craftoria:exae_buddings', /^extendedae:entro_budding_/);
 
-  e.add('craftoria:no_double_open', [
-    /^create:.*_door$/,
+  e.add('craftoria:no_double_open', [/^create:.*_door$/]);
+
+  e.add('cable_facades:supports_facade', [
+    'sfm:fancy_cable',
+    'computercraft:cable',
+    'replication:matter_network_pipe',
+    /^simplemagnets:(basic|advanced)_demagnetization_coil$/,
+    '@moderndynamics',
+    '@trashcans'
   ]);
 });
 
@@ -204,4 +218,6 @@ ServerEvents.tags('entity_type', e => {
   e.add('industrialforegoing:mob_crusher_blacklist', ['#c:bosses', '#neoforge:bosses']);
 
   e.add('industrialforegoing:mob_duplicator_blacklist', '#craftoria:mob_blacklist');
+
+  e.add('justdirethings:paradox_deny', ['occultism:foliot', 'mekanism:robit', 'ars_nouveau:animated_block', '@create']);
 });

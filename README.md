@@ -14,3 +14,7 @@ Follow the instructions below to get your workspace setup:
 4. Open the CurseForge App and you should see the modpack. If you already had CurseForge App open, restart it.
 
 You're done!
+
+# Discord server
+
+Official discord server (Team AOF): https://discord.gg/6rkdm48

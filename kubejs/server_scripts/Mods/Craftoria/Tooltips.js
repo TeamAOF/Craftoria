@@ -2,12 +2,21 @@
 // or things that would've had too little stuff to warrant their own file/folder.
 ItemEvents.modifyTooltips(e => {
   globalItemRemovals.forEach(item => {
-    e.add(item, [
-      Text.red('This item has been disabled.'),
-      Text.red("If you're playing in singleplayer, or are a server admin,"),
-      Text.red("if you want to enable it, go to 'kubejs/removals.js'"),
-      Text.red('and remove the item from globalItemRemovals.'),
-    ]);
+    if (typeof item === 'object' && item.item) {
+      e.add(item.item, [
+        Text.red(`This item has been disabled for reason: ${item.reason}.`),
+        Text.red("If you're playing in singleplayer, or are a server admin,"),
+        Text.red("if you want to enable it, go to 'kubejs/removals.js'"),
+        Text.red('and remove the item from globalItemRemovals.'),
+      ]);
+    } else {
+      e.add(item, [
+        Text.red('This item has been disabled.'),
+        Text.red("If you're playing in singleplayer, or are a server admin,"),
+        Text.red("if you want to enable it, go to 'kubejs/removals.js'"),
+        Text.red('and remove the item from globalItemRemovals.'),
+      ]);
+    }
   });
 
   disabledItems.forEach(item => {
@@ -40,4 +49,10 @@ ItemEvents.modifyTooltips(e => {
   e.add('modern_industrialization:nuke', Text.darkGray("No, it won't explode."));
 
   e.add('craftoria:terminal', Text.gray('Auto builds Modern Industrialization multiblocks.'));
+  e.add('craftoria:infinity_soul_cell', [
+    Text.darkGray('For the trinity gem component of this items recipe'),
+    Text.darkGray('craft a possessed warden spawn egg together with'),
+    Text.darkGray('an empty trinity gem in any crafting grid'),
+    Text.darkGray("As you can't use the captured warden for the ritual, for now"),
+  ]);
 });

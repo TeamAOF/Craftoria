@@ -19,7 +19,11 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
     ]);
   });
 
-  event.remove(globalItemRemovals);
+  const globalRemovals = globalItemRemovals.map(item => {
+    if (typeof item === 'object') return item.item;
+    return item;
+  });
+  event.remove(globalRemovals);
 
   disabledItems.forEach(item => {
     event.remove(item.id);

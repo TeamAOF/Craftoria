@@ -1,5 +1,8 @@
 LootJS.lootTables(e => {
-  let removeLoot = globalItemRemovals;
+  let removeLoot = globalItemRemovals.map(item => {
+    if (typeof item === 'object') return item.item;
+    return item;
+  });
   removeLoot.push('artifacts:eternal_steak', 'artifacts:everlasting_beef');
 
   e.forEachTable(table => {

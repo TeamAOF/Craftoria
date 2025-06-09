@@ -1,4 +1,6 @@
 ServerEvents.recipes(e => {
+  const { mixer } = e.recipes.modern_industrialization;
+
   e.shaped('2x displaydelight:small_food_plate', ['AA'], {
     A: '#minecraft:wooden_pressure_plates',
   }).id('displaydelight:small_food_plate');
@@ -107,18 +109,28 @@ ServerEvents.recipes(e => {
     }).id(`mcwwindows:${dye}_mosaic_glass`);
 
     if (Item.exists(`mcwholidays:${dye}_ornament`))
-      e.stonecutting(`mcwholidays:${dye}_ornament` , `minecraft:${dye}_stained_glass`).id(`mcwholidays:${dye}_ornament`);
+      e.stonecutting(`mcwholidays:${dye}_ornament`, `minecraft:${dye}_stained_glass`).id(`mcwholidays:${dye}_ornament`);
     // why you gotta be like this???
     else if (dye === 'light_gray') e.stonecutting('mcwholidays:silver_ornament', 'minecraft:light_gray_stained_glass').id('mcwholidays:silver_ornament');
 
     e.remove({ id: `arts_and_crafts:dye_${dye}_carpet_with_bleached_carpet` });
+
+    e.remove({ id: `utilitarian:utility/redying/${dye}_candle` });
+    e.shapeless(`minecraft:${dye}_candle`, ['#craftoria:vanilla_candles', `#c:dyes/${dye}`]).id(`minecraft:${dye}_candle`);
+    mixer(2, 100)
+      .itemOut(`minecraft:${dye}_candle`)
+      .itemIn(`#c:dyes/${dye}`)
+      .itemIn('#craftoria:vanilla_candles')
+      .id(`modern_industrialization:dyes/${dye}/mixer/candle`);
+
+    e.shapeless(`occultism:large_candle_${dye}`, ['#occultism:candles', `#c:dyes/${dye}`]).id(`occultism:crafting/large_candle_${dye}`);
   });
 
   removeById.forEach(id => {
     e.remove({ id: id });
   });
 
-  e.shaped('3x mcwwindows:bamboo_shutter', ['B','B','B'],{
+  e.shaped('3x mcwwindows:bamboo_shutter', ['B', 'B', 'B'], {
     B: 'minecraft:bamboo_trapdoor',
   }).id('mcwwindows:bamboo_shutter');
 
@@ -182,4 +194,6 @@ ServerEvents.tags('item', e => {
   e.remove('eternal_starlight:light_crystal_ingredients', crystals.blaze);
 
   e.remove('c:chests/wooden', 'minecraft:trapped_chest');
+
+  e.add('craftoria:vanilla_candles', ['minecraft:candle', `/^minecraft:(${Color.DYE.keySet().toArray().join('|')})_candle$/`]);
 });

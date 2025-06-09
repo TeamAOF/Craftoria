@@ -261,9 +261,63 @@ ServerEvents.generateData('after_mods', e => {
       entity: 'bosses_of_mass_destruction:gauntlet',
       name: 'Herbert',
       size: {
-        height: 1,
-        width: 1,
+        height: 3.6,
+        width: 1.2,
       },
+      attributes: [
+        {
+          attribute: 'minecraft:generic.max_health',
+          operation: 'add_multiplied_base',
+          value: {
+            min: 90.0,
+            max: 140.0,
+          },
+        },
+        {
+          attribute: 'minecraft:generic.movement_speed',
+          operation: 'add_multiplied_base',
+          value: {
+            min: 0.35,
+            max: 0.65,
+          },
+        },
+        {
+          attribute: 'apothic_attributes:fire_damage',
+          operation: 'add_value',
+          value: {
+            min: 30.0,
+            max: 40.0,
+          },
+        },
+        {
+          attribute: 'apothic_attributes:projectile_damage',
+          operation: 'add_multiplied_base',
+          value: {
+            min: 2.75,
+            max: 5.5,
+          },
+        },
+        {
+          attribute: 'minecraft:generic.knockback_resistance',
+          operation: 'add_value',
+          value: 1.0,
+        },
+        {
+          attribute: 'minecraft:generic.armor',
+          operation: 'add_value',
+          value: 5000.0,
+        },
+        {
+          attribute: 'minecraft:generic.armor',
+          operation: 'add_multiplied_total',
+          value: 5000.0,
+        },
+        {
+          attribute: 'minecraft:generic.armor_toughness',
+          operation: 'add_value',
+          value: 20.0,
+        },
+      ],
       bonus_loot: ['craftoria:bonus/fire_essence'],
     },
     {

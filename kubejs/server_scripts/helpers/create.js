@@ -10,17 +10,27 @@
  */
 function CreateHelper(event) {
   const makeRecipeId = (type, output) => {
+    /** @param {Arra} arr */
+    const flatten = arr => {
+      if (!Array.isArray(arr)) return arr;
+      return arr.reduce((flat, toFlatten) => {
+        return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
+      }, []);
+    };
+
+    if (Array.isArray(output)) output = flatten(output)[0];
+
     let name = output.includes('x ') ? output.split('x ')[1] : output;
     name = name.includes(':') ? name.split(':')[1] : name;
     return `craftoria:create/${type}/${name}`;
   };
 
   /**
-   *
-   * @param {CreateIngredients|CreateResults} items
-   * @param {boolean} isOutput
-   * @returns {($Ingredient_|$FluidIngredient_)[]}
-   */
+     *
+     * @param {CreateIngredients|CreateResults} items
+     * @param {boolean} isOutput
+     * @returns {($Ingredient_|$FluidIngredient_)[]}
+     */
   const jsonArray = (items, isOutput) => {
     if (!Array.isArray(items)) items = [items];
     items = items.map(element => {
@@ -41,6 +51,16 @@ function CreateHelper(event) {
           id = item;
         }
 
+
+        if (isOutput) {
+          element = {
+            id: id,
+            amount: amount,
+          };
+
+          return element;
+        }
+
         if (id.includes('#')) {
           isFluidTag = true;
           id = id.slice(1);
@@ -54,6 +74,7 @@ function CreateHelper(event) {
           element.fluid_tag = id;
           delete element.fluid;
         }
+
       } else {
         element = isOutput ? Item.of(element).toJson() : Ingredient.of(element).toJson();
       }
@@ -61,8 +82,6 @@ function CreateHelper(event) {
       if (typeof element === 'object' && element !== null) return element;
       else throw new Error(`Invalid element: ${element}`);
     });
-
-    console.log('Return', items);
     return items;
   };
 
@@ -71,10 +90,10 @@ function CreateHelper(event) {
   };
 
   /**
-   * Creates a basic recipe function for Create mod
-   * @param {Special.RecipeType} type - The type of recipe (e.g., 'mixing', 'compacting', etc.)
-   * @returns {function(CreateResults, CreateIngredients, Special.RecipeId): void}
-   */
+     * Creates a basic recipe function for Create mod
+     * @param {Special.RecipeType} type - The type of recipe (e.g., 'mixing', 'compacting', etc.)
+     * @returns {function(CreateResults, CreateIngredients, Special.RecipeId): void}
+     */
   const basicRecipe = type => (output, input, recipeID) => {
     const recipe = {
       type: `create:${type}`,

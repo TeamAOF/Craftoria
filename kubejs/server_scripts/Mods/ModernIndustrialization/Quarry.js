@@ -3,7 +3,7 @@
 // //////////////////////
 
 ServerEvents.recipes(event => {
-  const { quarry } = event.recipes.modern_industrialization
+  const { quarry } = event.recipes.modern_industrialization;
 
   // Copper Drill
   quarry(4, 600)

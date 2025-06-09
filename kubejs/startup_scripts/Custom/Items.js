@@ -52,7 +52,9 @@ StartupEvents.registry('item', e => {
     .unstackable();
 
   // Dev Items
-  e.create('craftoria:multiblock_generator').unstackable(); // Used for generating KubeJS code for MI multiblocks.
+  e.create('craftoria:multiblock_generator')
+    .texture('craftoria:item/dev')
+    .unstackable(); // Used for generating KubeJS code for MI multiblocks.
 });
 
 ItemEvents.modification(event => {
