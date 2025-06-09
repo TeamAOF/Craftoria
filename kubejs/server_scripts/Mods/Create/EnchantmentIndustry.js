@@ -13,3 +13,8 @@ ServerEvents.generateData('after_mods', event => {
     }
   });
 });
+
+ServerEvents.recipes(event => {
+  const create = CreateHelper(event);
+  create.mixing([['1x create_enchantment_industry:experience', true]], [['20x #c:experience', true]]);
+});
