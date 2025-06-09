@@ -4,16 +4,14 @@ _Neoforge 21.1.176_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 
 ### Changes/Improvements ⭐
 
-* Discord server link to readme `konstantin petrukhnov`
 * Change mixer jdt fluid recipes to use polymorphic flud; add a recipe for polymorphic fluid in mixer `whitephant0m`
 * Disable perception shake module `exefer`
-* Added xychorium ores to mi quarry (bronze drill); add kivi to mi quarry (copper drill) `whitephant0m`
+* Added xychorium ores to mi quarry (bronze drill) `whitephant0m`
+* add kivi to mi quarry (copper drill) `whitephant0m`
 * Made knives and melee weapons able to attack animal pens `whitephant0m`
 * Added replica ore to mi quarry (titanium drill) `whitephant0m`
-* Added codex of evolution, a spell book with unlimited potential - wip `whitephant0m`
 * Added missing keybinding and generic error handling to keybindjs script `linguardium`
 * Added cable facade support to more cables, and misc blocks `whitephant0m`
-* Added mana regen & spell power upgrade orbs - wip `whitephant0m`
 * Additions/removals for ei machine chainer allow list `whitephant0m`
 
 ### Added Mods ✅
