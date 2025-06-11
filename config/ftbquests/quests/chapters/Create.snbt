@@ -564,8 +564,8 @@
 				item: { count: 1, id: "create:cogwheel" }
 				type: "item"
 			}]
-			x: -2.1d
-			y: -26.5d
+			x: -4.3d
+			y: -27.4d
 		}
 		{
 			id: "66855DBE37DB5CD1"
@@ -647,8 +647,8 @@
 				item: { count: 1, id: "create:precision_mechanism" }
 				type: "item"
 			}]
-			x: 21.3d
-			y: 9.2d
+			x: 16.1d
+			y: 10.9d
 		}
 		{
 			id: "7F4BD83F2D567FF0"
@@ -1069,8 +1069,8 @@
 				item: { count: 1, id: "create:mechanical_arm" }
 				type: "item"
 			}]
-			x: 16.2d
-			y: 10.4d
+			x: 16.1d
+			y: 8.7d
 		}
 		{
 			id: "4788E4092A488C9E"
@@ -1109,8 +1109,8 @@
 				item: { count: 1, id: "create:depot" }
 				type: "item"
 			}]
-			x: -23.4d
-			y: -12.2d
+			x: -23.9d
+			y: -13.8d
 		}
 		{
 			id: "33C2042F320B2D34"
@@ -1119,8 +1119,8 @@
 				item: { count: 1, id: "create:chute" }
 				type: "item"
 			}]
-			x: -22.7d
-			y: -10.1d
+			x: -23.3d
+			y: -11.3d
 		}
 		{
 			id: "4AAFD7E0D868844A"
@@ -1139,8 +1139,8 @@
 				item: { count: 1, id: "create:item_vault" }
 				type: "item"
 			}]
-			x: -20.3d
-			y: -9.8d
+			x: -18.7d
+			y: -12.3d
 		}
 		{
 			id: "0807F0094282C2D5"
@@ -1219,8 +1219,8 @@
 				item: { count: 1, id: "create:crushing_wheel" }
 				type: "item"
 			}]
-			x: 17.6d
-			y: 7.8d
+			x: 18.4d
+			y: 8.3d
 		}
 		{
 			id: "0EFB32C64C146682"
@@ -1399,8 +1399,8 @@
 				item: { count: 1, id: "create:mechanical_piston" }
 				type: "item"
 			}]
-			x: -19.2d
-			y: -12.1d
+			x: -17.7d
+			y: -14.8d
 		}
 		{
 			id: "04C07CE4F7258BF5"
@@ -1409,8 +1409,8 @@
 				item: { count: 1, id: "create:mechanical_bearing" }
 				type: "item"
 			}]
-			x: -18.5d
-			y: -10.4d
+			x: -16.5d
+			y: -13.0d
 		}
 		{
 			id: "07821D28021BB440"
@@ -1479,8 +1479,8 @@
 				item: { count: 1, id: "create:cart_assembler" }
 				type: "item"
 			}]
-			x: -24.0d
-			y: -14.9d
+			x: -24.2d
+			y: -15.8d
 		}
 		{
 			id: "619BC1F1094F4EFA"
@@ -1499,8 +1499,8 @@
 				item: { count: 1, id: "create:piston_extension_pole" }
 				type: "item"
 			}]
-			x: -19.6d
-			y: -14.4d
+			x: -19.3d
+			y: -14.7d
 		}
 		{
 			id: "1CACDF56CB395997"
@@ -1509,8 +1509,178 @@
 				item: { count: 1, id: "create:extendo_grip" }
 				type: "item"
 			}]
-			x: 23.85d
-			y: 9.05d
+			x: 22.0d
+			y: 7.6d
+		}
+		{
+			id: "38EF4E7FE82B62A6"
+			tasks: [{
+				id: "24A2D9C6DDA17474"
+				item: { count: 1, id: "create:clockwork_bearing" }
+				type: "item"
+			}]
+			x: 22.3d
+			y: 9.6d
+		}
+		{
+			id: "3E1B0CBA0889C0AE"
+			tasks: [{
+				id: "151A360078E135CB"
+				item: { count: 1, id: "create:gantry_carriage" }
+				type: "item"
+			}]
+			x: -22.9d
+			y: -8.3d
+		}
+		{
+			id: "10BD50384893753F"
+			tasks: [{
+				id: "3ACEA26E3218C5FC"
+				item: { count: 1, id: "create:gantry_shaft" }
+				type: "item"
+			}]
+			x: -22.0d
+			y: -7.3d
+		}
+		{
+			id: "21B6DE76E735A196"
+			tasks: [{
+				id: "31A08E80F7ADEBDF"
+				item: { count: 1, id: "create:linear_chassis" }
+				type: "item"
+			}]
+			x: -18.2d
+			y: -17.6d
+		}
+		{
+			id: "51649293068FE93D"
+			tasks: [{
+				id: "72BB090C668F2A2F"
+				item: { count: 1, id: "create:radial_chassis" }
+				type: "item"
+			}]
+			x: -18.0d
+			y: -10.4d
+		}
+		{
+			id: "3594EFD40D059EA3"
+			tasks: [{
+				id: "426B36879A8AA156"
+				item: { count: 1, id: "create:nixie_tube" }
+				type: "item"
+			}]
+			x: 17.7d
+			y: 15.2d
+		}
+		{
+			id: "497660DB9611C67C"
+			tasks: [{
+				id: "3D3A9BBBA4067EA2"
+				item: { count: 1, id: "create:smart_chute" }
+				type: "item"
+			}]
+			x: 22.7d
+			y: 0.15d
+		}
+		{
+			id: "45664AAC3ACCEF36"
+			tasks: [{
+				id: "34BA35CFE3607771"
+				item: { count: 1, id: "create:content_observer" }
+				type: "item"
+			}]
+			x: 24.4d
+			y: 2.45d
+		}
+		{
+			id: "238794C3DE2B79BA"
+			tasks: [{
+				id: "6495EB23EBE33556"
+				item: { count: 1, id: "create:nozzle" }
+				type: "item"
+			}]
+			x: 18.25d
+			y: -7.25d
+		}
+		{
+			id: "53ECE17FBD95392C"
+			tasks: [{
+				id: "1A0C6B49A942B1FA"
+				item: { count: 1, id: "create:windmill_bearing" }
+				type: "item"
+			}]
+			x: -15.7d
+			y: -11.0d
+		}
+		{
+			id: "55AEBE2068711237"
+			tasks: [{
+				id: "0A14264316E3CE11"
+				item: { count: 1, id: "create:water_wheel" }
+				type: "item"
+			}]
+			x: -1.45d
+			y: -26.0d
+		}
+		{
+			id: "5BBB106761FD65C7"
+			tasks: [{
+				id: "0327B21FD3EEA7AD"
+				item: { count: 1, id: "create:large_water_wheel" }
+				type: "item"
+			}]
+			x: -2.05d
+			y: -28.25d
+		}
+		{
+			id: "38DF71D9CB5045F2"
+			tasks: [{
+				id: "39F6F6EA8AE6C81D"
+				item: { count: 1, id: "create:flywheel" }
+				type: "item"
+			}]
+			x: 21.85d
+			y: -3.4d
+		}
+		{
+			id: "264DA461C59E31C3"
+			tasks: [{
+				id: "313986BB897F4E61"
+				item: { count: 1, id: "create:blaze_cake" }
+				type: "item"
+			}]
+			x: 5.1d
+			y: 22.3d
+		}
+		{
+			id: "10391A74418CA104"
+			tasks: [{
+				id: "3963000F3550EEAC"
+				item: { count: 1, id: "create:rope_pulley" }
+				type: "item"
+			}]
+			x: -20.65d
+			y: -9.45d
+		}
+		{
+			id: "77AFB8F019AAB73C"
+			tasks: [{
+				id: "67D3E6E46FD57477"
+				item: { count: 1, id: "create:white_sail" }
+				type: "item"
+			}]
+			x: -15.55d
+			y: -9.35d
+		}
+		{
+			id: "231404F75545A149"
+			tasks: [{
+				id: "4575C4599A6AB76D"
+				item: { count: 1, id: "create:elevator_pulley" }
+				type: "item"
+			}]
+			x: 21.85d
+			y: 3.35d
 		}
 	]
 }
