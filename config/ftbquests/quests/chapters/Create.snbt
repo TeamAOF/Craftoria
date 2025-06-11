@@ -1,7 +1,7 @@
 {
 	always_invisible: true
 	default_hide_dependency_lines: false
-	default_quest_shape: "none"
+	default_quest_shape: "square"
 	default_quest_size: 2.0d
 	filename: "Create"
 	group: "066C799B2F5452CD"
@@ -31,16 +31,6 @@
 			width: 2.0d
 			x: 27.45d
 			y: 0.75d
-		}
-		{
-			color: 13421772
-			height: 2.0d
-			image: "ftbquests:textures/shapes/square/outline.png"
-			order: 11
-			rotation: 0.0d
-			width: 2.0d
-			x: 31.2d
-			y: -6.599999999999998d
 		}
 		{
 			height: 1.0d
@@ -388,16 +378,6 @@
 			y: -9.84d
 		}
 		{
-			alpha: 192
-			height: 2.0d
-			image: "ftbquests:textures/shapes/square/background.png"
-			order: 11
-			rotation: 0.0d
-			width: 2.0d
-			x: 31.25d
-			y: 2.950000000000003d
-		}
-		{
 			color: 4796183
 			height: 9.25d
 			image: "ftbquests:textures/shapes/square/shape.png"
@@ -407,70 +387,12 @@
 			y: -0.2d
 		}
 		{
-			alpha: 192
-			height: 1.0d
-			image: "ftbquests:textures/shapes/square/background.png"
-			order: 11
-			rotation: 0.0d
-			width: 1.0d
-			x: 37.1d
-			y: -2.700000000000001d
-		}
-		{
-			height: 1.0d
-			image: "ftbquests:textures/gui/toolbox_slot_transparent.png"
-			order: 10
-			rotation: 0.0d
-			width: 1.0d
-			x: 38.0d
-			y: -2.8500000000000014d
-		}
-		{
-			color: 5855927
-			height: 1.0d
-			image: "ftbquests:textures/shapes/square/shape.png"
-			order: 9
-			rotation: 0.0d
-			width: 1.0d
-			x: 37.65d
-			y: -3.0d
-		}
-		{
 			height: 2.0d
 			image: "ftbquests:textures/gui/toolbox_open.png"
 			rotation: 0.0d
 			width: 2.0d
 			x: 5.2d
 			y: 3.55d
-		}
-		{
-			height: 1.5d
-			image: "ftbquests:textures/gui/toolbox_slot_transparent.png"
-			order: 10
-			rotation: 0.0d
-			width: 1.5d
-			x: 34.1d
-			y: 0.85d
-		}
-		{
-			color: 5855927
-			height: 1.5d
-			image: "ftbquests:textures/shapes/square/shape.png"
-			order: 9
-			rotation: 0.0d
-			width: 1.5d
-			x: 34.1d
-			y: 0.85d
-		}
-		{
-			alpha: 192
-			height: 1.5d
-			image: "ftbquests:textures/shapes/square/background.png"
-			order: 11
-			rotation: 0.0d
-			width: 1.5d
-			x: 34.1d
-			y: 0.85d
 		}
 		{
 			height: 10.0d
@@ -568,14 +490,13 @@
 		}
 		{
 			id: "6DDD8661181840F1"
-			shape: "none"
 			tasks: [{
 				id: "42BD406C9E194F72"
 				item: { count: 1, id: "create:cardboard_package_12x12" }
 				type: "item"
 			}]
-			x: -2.16d
-			y: 2.0d
+			x: -10.16d
+			y: 7.9d
 		}
 		{
 			id: "3F3600B6701641E0"
@@ -599,7 +520,6 @@
 		}
 		{
 			id: "3B6674B3B91BD8B4"
-			shape: "none"
 			tasks: [{
 				id: "7A1AA2C1BD228C04"
 				item: { count: 1, id: "create:belt_connector" }
@@ -636,8 +556,8 @@
 				item: { count: 1, id: "create:precision_mechanism" }
 				type: "item"
 			}]
-			x: 16.1d
-			y: 10.9d
+			x: 17.7d
+			y: 8.6d
 		}
 		{
 			id: "7F4BD83F2D567FF0"
@@ -911,8 +831,8 @@
 				item: { count: 1, id: "create:package_frogport" }
 				type: "item"
 			}]
-			x: -12.1d
-			y: 8.6d
+			x: -12.16d
+			y: 8.4d
 		}
 		{
 			id: "1C699E7F615D68A7"
@@ -931,7 +851,7 @@
 				item: { count: 1, id: "create:packager" }
 				type: "item"
 			}]
-			x: -7.8d
+			x: -7.66d
 			y: 10.4d
 		}
 		{
@@ -941,8 +861,8 @@
 				item: { count: 1, id: "create:repackager" }
 				type: "item"
 			}]
-			x: -12.4d
-			y: 10.5d
+			x: -12.66d
+			y: 10.4d
 		}
 		{
 			id: "55359056540E1A96"
@@ -952,7 +872,7 @@
 				type: "item"
 			}]
 			x: -10.16d
-			y: 13.0d
+			y: 13.1d
 		}
 		{
 			id: "578394EC869C10AB"
@@ -961,8 +881,8 @@
 				item: { count: 1, id: "create:chain_conveyor" }
 				type: "item"
 			}]
-			x: -7.9d
-			y: 12.5d
+			x: -8.16d
+			y: 12.4d
 		}
 		{
 			id: "248CD41AE2A92573"
@@ -971,8 +891,8 @@
 				item: { count: 1, id: "create:stock_link" }
 				type: "item"
 			}]
-			x: -7.9d
-			y: 8.6d
+			x: -8.16d
+			y: 8.4d
 		}
 		{
 			id: "038AAFBA1E0DEF7E"
@@ -1058,8 +978,8 @@
 				item: { count: 1, id: "create:mechanical_arm" }
 				type: "item"
 			}]
-			x: 16.1d
-			y: 8.7d
+			x: 18.4d
+			y: 13.4d
 		}
 		{
 			id: "4788E4092A488C9E"
@@ -1068,8 +988,8 @@
 				item: { count: 1, id: "create:rotation_speed_controller" }
 				type: "item"
 			}]
-			x: 20.9d
-			y: 12.5d
+			x: 17.1d
+			y: 11.4d
 		}
 		{
 			id: "2B482168EC0C6EB8"
@@ -1078,8 +998,8 @@
 				item: { count: 1, id: "create:cardboard_helmet" }
 				type: "item"
 			}]
-			x: -10.16d
-			y: 8.2d
+			x: 24.1d
+			y: 15.0d
 		}
 		{
 			id: "488424BE711AE0F1"
@@ -1198,8 +1118,8 @@
 				item: { count: 1, id: "create:crushing_wheel" }
 				type: "item"
 			}]
-			x: 18.4d
-			y: 8.3d
+			x: 22.2d
+			y: 13.0d
 		}
 		{
 			id: "0EFB32C64C146682"
@@ -1218,8 +1138,8 @@
 				item: { count: 1, id: "create:electron_tube" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: 10.6d
+			x: 15.8d
+			y: 9.1d
 		}
 		{
 			id: "1A6929801D08F2C5"
@@ -1238,8 +1158,8 @@
 				item: { count: 1, id: "create:mechanical_crafter" }
 				type: "item"
 			}]
-			x: 20.4d
-			y: 10.5d
+			x: 19.5d
+			y: 8.2d
 		}
 		{
 			id: "594BC97607EEE341"
@@ -1268,8 +1188,8 @@
 				item: { count: 1, id: "create:adjustable_chain_gearshift" }
 				type: "item"
 			}]
-			x: 23.3d
-			y: 12.2d
+			x: 18.9d
+			y: 11.3d
 		}
 		{
 			id: "6AB303BEA478C0F3"
@@ -1278,8 +1198,8 @@
 				item: { count: 1, id: "create:sequenced_gearshift" }
 				type: "item"
 			}]
-			x: 19.1d
-			y: 12.7d
+			x: 22.1d
+			y: 10.4d
 		}
 		{
 			id: "0C53E42899D3D271"
@@ -1328,8 +1248,8 @@
 				item: { count: 1, id: "create:brass_funnel" }
 				type: "item"
 			}]
-			x: 22.5d
-			y: -3.6d
+			x: 14.16d
+			y: -2.0d
 		}
 		{
 			id: "30FC83AF65C13591"
@@ -1338,8 +1258,8 @@
 				item: { count: 1, id: "create:brass_tunnel" }
 				type: "item"
 			}]
-			x: 18.0d
-			y: -3.3d
+			x: 9.84d
+			y: -2.0d
 		}
 		{
 			id: "3F0B58522B009779"
@@ -1348,7 +1268,7 @@
 				item: { count: 1, id: "create:potato_cannon" }
 				type: "item"
 			}]
-			x: 16.8d
+			x: 20.5d
 			y: 13.0d
 		}
 		{
@@ -1418,8 +1338,8 @@
 				item: { count: 1, id: "create:mechanical_roller" }
 				type: "item"
 			}]
-			x: 20.1d
-			y: 7.8d
+			x: 24.1d
+			y: 12.5d
 		}
 		{
 			id: "6711E72048BBDB08"
@@ -1468,8 +1388,8 @@
 				item: { count: 1, id: "create:extendo_grip" }
 				type: "item"
 			}]
-			x: 22.0d
-			y: 7.6d
+			x: 21.4d
+			y: 8.0d
 		}
 		{
 			id: "38EF4E7FE82B62A6"
@@ -1478,8 +1398,8 @@
 				item: { count: 1, id: "create:clockwork_bearing" }
 				type: "item"
 			}]
-			x: 22.3d
-			y: 9.6d
+			x: 20.4d
+			y: 10.8d
 		}
 		{
 			id: "3E1B0CBA0889C0AE"
@@ -1525,8 +1445,8 @@
 				item: { count: 1, id: "create:nixie_tube" }
 				type: "item"
 			}]
-			x: 17.7d
-			y: 15.2d
+			x: 20.2d
+			y: 15.4d
 		}
 		{
 			id: "497660DB9611C67C"
@@ -1535,8 +1455,8 @@
 				item: { count: 1, id: "create:smart_chute" }
 				type: "item"
 			}]
-			x: 18.5d
-			y: 3.4d
+			x: 9.84d
+			y: 2.0d
 		}
 		{
 			id: "45664AAC3ACCEF36"
@@ -1545,8 +1465,8 @@
 				item: { count: 1, id: "create:content_observer" }
 				type: "item"
 			}]
-			x: 23.0d
-			y: 3.5d
+			x: 14.16d
+			y: 2.0d
 		}
 		{
 			id: "238794C3DE2B79BA"
@@ -1639,8 +1559,28 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item_tag(create:table_cloths))", "minecraft:custom_name": "\"Create: Table Cloths\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -12.2d
-			y: 12.5d
+			x: -12.16d
+			y: 12.4d
+		}
+		{
+			id: "2A08F71925AE775E"
+			tasks: [{
+				id: "4C7CCD299F90B107"
+				item: { count: 1, id: "create:display_board" }
+				type: "item"
+			}]
+			x: 18.3d
+			y: 15.9d
+		}
+		{
+			id: "5D5FC5420738FDE8"
+			tasks: [{
+				id: "46859373962ECC37"
+				item: { count: 1, id: "create:cardboard" }
+				type: "item"
+			}]
+			x: -2.16d
+			y: 2.0d
 		}
 	]
 }
