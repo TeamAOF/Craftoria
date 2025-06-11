@@ -1,7 +1,7 @@
 {
 	always_invisible: true
 	default_hide_dependency_lines: false
-	default_quest_shape: "square"
+	default_quest_shape: "none"
 	default_quest_size: 2.0d
 	filename: "Create"
 	group: "066C799B2F5452CD"
@@ -59,14 +59,6 @@
 			width: 2.0d
 			x: -2.16d
 			y: -2.0d
-		}
-		{
-			height: 2.0d
-			image: "ftbquests:textures/gui/toolbox_slot.png"
-			rotation: 0.0d
-			width: 2.0d
-			x: 31.5d
-			y: -2.8999999999999986d
 		}
 		{
 			color: 5855927
@@ -290,7 +282,7 @@
 		}
 		{
 			height: 10.0d
-			image: "ftbquests:textures/gui/toolbox_ui_b.png"
+			image: "ftbquests:textures/gui/toolbox_interior_with_arrow.png"
 			order: 1
 			rotation: 0.0d
 			width: 10.0d
@@ -308,7 +300,7 @@
 		}
 		{
 			height: 10.0d
-			image: "ftbquests:textures/gui/toolbox_ui_b_no_arrow.png"
+			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
 			width: 10.0d
@@ -482,7 +474,7 @@
 		}
 		{
 			height: 10.0d
-			image: "ftbquests:textures/gui/toolbox_ui_b_no_arrow.png"
+			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
 			width: 10.0d
@@ -491,7 +483,7 @@
 		}
 		{
 			height: 10.0d
-			image: "ftbquests:textures/gui/toolbox_ui_b_no_arrow.png"
+			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
 			width: 10.0d
@@ -500,7 +492,7 @@
 		}
 		{
 			height: 10.0d
-			image: "ftbquests:textures/gui/toolbox_ui_b_no_arrow.png"
+			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
 			width: 10.0d
@@ -509,7 +501,7 @@
 		}
 		{
 			height: 10.0d
-			image: "ftbquests:textures/gui/toolbox_ui_b_no_arrow.png"
+			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
 			width: 10.0d
@@ -518,7 +510,7 @@
 		}
 		{
 			height: 10.0d
-			image: "ftbquests:textures/gui/toolbox_ui_b_no_arrow.png"
+			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
 			width: 10.0d
@@ -527,7 +519,7 @@
 		}
 		{
 			height: 10.0d
-			image: "ftbquests:textures/gui/toolbox_ui_b_no_arrow.png"
+			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
 			width: 10.0d
@@ -536,7 +528,7 @@
 		}
 		{
 			height: 10.0d
-			image: "ftbquests:textures/gui/toolbox_ui_b_no_arrow.png"
+			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
 			width: 10.0d
@@ -786,11 +778,18 @@
 		}
 		{
 			id: "2697B8077174B870"
-			tasks: [{
-				id: "16E01FEA937C291C"
-				item: { count: 1, id: "create:copper_diving_helmet" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "16E01FEA937C291C"
+					item: { count: 1, id: "create:copper_diving_helmet" }
+					type: "item"
+				}
+				{
+					id: "5B32708DE2FDF257"
+					item: { count: 1, id: "create:copper_diving_boots" }
+					type: "item"
+				}
+			]
 			x: 12.600000000000001d
 			y: -6.9d
 		}
@@ -811,8 +810,8 @@
 				item: { count: 1, id: "create:wrench" }
 				type: "item"
 			}]
-			x: -3.3d
-			y: 18.3d
+			x: -2.16d
+			y: 10.0d
 		}
 		{
 			id: "26AC949F1C3C6214"
@@ -999,8 +998,8 @@
 					type: "item"
 				}
 			]
-			x: -3.2d
-			y: 20.1d
+			x: -0.16d
+			y: 9.5d
 		}
 		{
 			id: "1F71E19AD3CFCABC"
@@ -1009,8 +1008,8 @@
 				item: { count: 1, id: "create:schematicannon" }
 				type: "item"
 			}]
-			x: -0.3d
-			y: 22.2d
+			x: 1.84d
+			y: 14.0d
 		}
 		{
 			id: "32DC17E21BF26228"
@@ -1019,8 +1018,8 @@
 				item: { count: 1, id: "create:schematic_table" }
 				type: "item"
 			}]
-			x: -2.2d
-			y: 22.0d
+			x: -2.16d
+			y: 14.0d
 		}
 		{
 			id: "3254374A45D0D708"
@@ -1029,8 +1028,8 @@
 				item: { count: 1, id: "create:empty_schematic" }
 				type: "item"
 			}]
-			x: 2.2d
-			y: 20.3d
+			x: -0.16d
+			y: 14.5d
 		}
 		{
 			id: "3EFED58FAE46B366"
@@ -1039,8 +1038,8 @@
 				item: { count: 1, id: "create:super_glue" }
 				type: "item"
 			}]
-			x: -0.4d
-			y: 20.4d
+			x: -2.66d
+			y: 12.0d
 		}
 		{
 			id: "39716053AAD8ABF2"
@@ -1049,8 +1048,8 @@
 				item: { count: 1, id: "create:hand_crank" }
 				type: "item"
 			}]
-			x: 2.3d
-			y: 18.3d
+			x: 1.84d
+			y: 10.0d
 		}
 		{
 			id: "6B022CC9A87E6329"
@@ -1209,8 +1208,8 @@
 				item: { count: 1, id: "create:deployer" }
 				type: "item"
 			}]
-			x: 17.8d
-			y: -0.3d
+			x: 9.34d
+			y: 0.0d
 		}
 		{
 			id: "7938CF0A65011F0B"
@@ -1309,8 +1308,8 @@
 				item: { count: 1, id: "create:blaze_burner" }
 				type: "item"
 			}]
-			x: 23.0d
-			y: -0.5d
+			x: 14.34d
+			y: 0.0d
 		}
 		{
 			id: "6FD3C9B4EF558332"
@@ -1319,8 +1318,8 @@
 				item: { count: 1, id: "create:brass_casing" }
 				type: "item"
 			}]
-			x: 20.2d
-			y: -3.6d
+			x: 11.84d
+			y: -2.5d
 		}
 		{
 			id: "6CF338A73F212B79"
@@ -1341,16 +1340,6 @@
 			}]
 			x: 18.0d
 			y: -3.3d
-		}
-		{
-			id: "4F5D70AF80C444DC"
-			tasks: [{
-				id: "1A84232970D5114C"
-				item: { count: 1, id: "create:brass_table_cloth" }
-				type: "item"
-			}]
-			x: -12.2d
-			y: 12.7d
 		}
 		{
 			id: "3F0B58522B009779"
@@ -1435,12 +1424,12 @@
 		{
 			id: "6711E72048BBDB08"
 			tasks: [{
-				id: "640A4AC3E8C0740E"
-				item: { count: 1, id: "create:brown_toolbox" }
+				id: "6D905184F58E0245"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(create:toolboxes))", "minecraft:custom_name": "\"Create: Toolbox\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -0.5d
-			y: 18.2d
+			x: -0.16d
+			y: 12.0d
 		}
 		{
 			id: "79288A7251986136"
@@ -1610,8 +1599,8 @@
 				item: { count: 1, id: "create:flywheel" }
 				type: "item"
 			}]
-			x: 20.4d
-			y: -0.4d
+			x: 11.84d
+			y: 0.0d
 		}
 		{
 			id: "264DA461C59E31C3"
@@ -1620,8 +1609,8 @@
 				item: { count: 1, id: "create:blaze_cake" }
 				type: "item"
 			}]
-			x: 1.4d
-			y: 22.1d
+			x: 2.34d
+			y: 12.0d
 		}
 		{
 			id: "10391A74418CA104"
@@ -1640,18 +1629,18 @@
 				item: { count: 1, id: "create:elevator_pulley" }
 				type: "item"
 			}]
-			x: 20.8d
-			y: 3.1d
+			x: 11.84d
+			y: 2.5d
 		}
 		{
 			id: "39439ACCD1EBE773"
 			tasks: [{
-				id: "27749D78EFBEC4CD"
-				item: { count: 1, id: "create:black_table_cloth" }
+				id: "22F30AC48085A5EE"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(create:table_cloths))", "minecraft:custom_name": "\"Create: Table Cloths\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: -18.4d
-			y: 11.6d
+			x: -12.2d
+			y: 12.5d
 		}
 	]
 }
