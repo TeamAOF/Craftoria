@@ -45,9 +45,10 @@ StartupEvents.registry('item', e => {
       food.nutrition(3).saturation(1).eatSeconds(3);
     });
 
-  // Electric screwdriver - Used for autobuilding MI multiblocks
+  // Deprecated - to be removed in the future
   e.create('craftoria:terminal')
-    .displayName('Terminal')
+    .displayName('Terminal - Deprecated')
+    .tooltip(Text.red('Deprecated, you can convert this to the new terminal by crafting it in your crafting grid.'))
     .rarity('Rare')
     .unstackable();
 
