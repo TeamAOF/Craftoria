@@ -11,28 +11,6 @@
 	id: "0644AB97E8D8839B"
 	images: [
 		{
-			color: 255
-			dev: true
-			height: 1.0d
-			hover: ["Read Me"]
-			image: "ftbquests:textures/shapes/circle/shape.png"
-			order: 200
-			rotation: 0.0d
-			width: 1.0d
-			x: -0.16d
-			y: 0.0d
-		}
-		{
-			alpha: 192
-			height: 2.0d
-			image: "ftbquests:textures/shapes/square/background.png"
-			order: 11
-			rotation: 0.0d
-			width: 2.0d
-			x: 27.45d
-			y: 0.75d
-		}
-		{
 			height: 1.0d
 			image: "ftbchunks:textures/square_border.png"
 			rotation: 0.0d
@@ -119,76 +97,6 @@
 			width: 2.0d
 			x: 1.84d
 			y: -2.0d
-		}
-		{
-			alpha: 192
-			height: 2.0d
-			image: "ftbquests:textures/shapes/square/background.png"
-			order: 11
-			rotation: 0.0d
-			width: 2.0d
-			x: 26.3d
-			y: -1.85d
-		}
-		{
-			alpha: 192
-			height: 2.0d
-			image: "ftbquests:textures/shapes/square/background.png"
-			order: 11
-			rotation: 0.0d
-			width: 2.0d
-			x: 26.95d
-			y: -0.75d
-		}
-		{
-			alpha: 192
-			height: 2.0d
-			image: "ftbquests:textures/shapes/square/background.png"
-			order: 11
-			rotation: 0.0d
-			width: 2.0d
-			x: 27.6d
-			y: -0.7999999999999998d
-		}
-		{
-			alpha: 192
-			height: 2.0d
-			image: "ftbquests:textures/shapes/square/background.png"
-			order: 11
-			rotation: 0.0d
-			width: 2.0d
-			x: 27.35d
-			y: -0.95d
-		}
-		{
-			alpha: 192
-			height: 2.0d
-			image: "ftbquests:textures/shapes/square/background.png"
-			order: 11
-			rotation: 0.0d
-			width: 2.0d
-			x: 26.5d
-			y: -2.65d
-		}
-		{
-			alpha: 192
-			height: 2.0d
-			image: "ftbquests:textures/shapes/square/background.png"
-			order: 11
-			rotation: 0.0d
-			width: 2.0d
-			x: 26.8d
-			y: -1.0d
-		}
-		{
-			alpha: 192
-			height: 2.0d
-			image: "ftbquests:textures/shapes/square/background.png"
-			order: 11
-			rotation: 0.0d
-			width: 2.0d
-			x: 27.2d
-			y: -1.25d
 		}
 		{
 			color: 14540253
@@ -295,7 +203,7 @@
 			rotation: 0.0d
 			width: 10.0d
 			x: 10.0d
-			y: -10.0d
+			y: -11.0d
 		}
 		{
 			color: 10843910
@@ -331,11 +239,11 @@
 			color: 12400147
 			height: 9.25d
 			image: "ftbquests:textures/shapes/square/shape.png"
-			order: 1
+			order: 2
 			rotation: 0.0d
 			width: 9.25d
 			x: -10.16d
-			y: -9.84d
+			y: -10.8d
 		}
 		{
 			color: 5855927
@@ -374,8 +282,8 @@
 			order: 1
 			rotation: 0.0d
 			width: 9.25d
-			x: 9.82d
-			y: -9.84d
+			x: 9.84d
+			y: -10.8d
 		}
 		{
 			color: 4796183
@@ -406,11 +314,11 @@
 		{
 			height: 10.0d
 			image: "ftbquests:textures/gui/toolbox_interior.png"
-			order: 2
+			order: 1
 			rotation: 0.0d
 			width: 10.0d
 			x: -10.0d
-			y: -10.0d
+			y: -11.0d
 		}
 		{
 			height: 10.0d
@@ -556,8 +464,8 @@
 				item: { count: 1, id: "create:precision_mechanism" }
 				type: "item"
 			}]
-			x: 17.7d
-			y: 8.6d
+			x: 7.1d
+			y: 9.5d
 		}
 		{
 			id: "7F4BD83F2D567FF0"
@@ -576,8 +484,8 @@
 				item: { count: 1, id: "create:fluid_pipe" }
 				type: "item"
 			}]
-			x: 7.2d
-			y: -10.5d
+			x: 7.1d
+			y: -11.5d
 		}
 		{
 			id: "55DBF04C81688194"
@@ -586,8 +494,8 @@
 				item: { count: 1, id: "create:item_drain" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: -8.700000000000001d
+			x: 8.899999999999999d
+			y: -9.700000000000001d
 		}
 		{
 			id: "41183734EB2C28FF"
@@ -596,8 +504,8 @@
 				item: { count: 1, id: "create:spout" }
 				type: "item"
 			}]
-			x: 7.2d
-			y: -8.700000000000001d
+			x: 7.1d
+			y: -9.700000000000001d
 		}
 		{
 			id: "3723D86B327384DB"
@@ -606,8 +514,8 @@
 				item: { count: 1, id: "create:portable_fluid_interface" }
 				type: "item"
 			}]
-			x: 12.6d
-			y: -8.700000000000001d
+			x: 12.5d
+			y: -9.700000000000001d
 		}
 		{
 			id: "73A48DA93F67805B"
@@ -616,8 +524,8 @@
 				item: { count: 1, id: "create:smart_fluid_pipe" }
 				type: "item"
 			}]
-			x: 10.8d
-			y: -10.5d
+			x: 10.7d
+			y: -11.5d
 		}
 		{
 			id: "19A71430646BD65B"
@@ -626,8 +534,8 @@
 				item: { count: 1, id: "create:mechanical_pump" }
 				type: "item"
 			}]
-			x: 9.0d
-			y: -10.5d
+			x: 8.899999999999999d
+			y: -11.5d
 		}
 		{
 			id: "3F6730383CCC8BB0"
@@ -636,8 +544,8 @@
 				item: { count: 1, id: "create:basin" }
 				type: "item"
 			}]
-			x: 12.6d
-			y: -12.3d
+			x: 12.5d
+			y: -13.3d
 		}
 		{
 			id: "6227304103E32C74"
@@ -653,8 +561,8 @@
 					type: "item"
 				}
 			]
-			x: 10.8d
-			y: -12.3d
+			x: 10.7d
+			y: -13.3d
 		}
 		{
 			id: "120AAA5FECD27573"
@@ -663,8 +571,8 @@
 				item: { count: 1, id: "create:fluid_valve" }
 				type: "item"
 			}]
-			x: 12.6d
-			y: -10.5d
+			x: 12.5d
+			y: -11.5d
 		}
 		{
 			id: "088E87F861406342"
@@ -673,8 +581,8 @@
 				item: { count: 1, id: "create:hose_pulley" }
 				type: "item"
 			}]
-			x: 10.8d
-			y: -8.700000000000001d
+			x: 10.7d
+			y: -9.700000000000001d
 		}
 		{
 			id: "08DD0CB24FD0B193"
@@ -683,8 +591,8 @@
 				item: { count: 1, id: "create:copper_valve_handle" }
 				type: "item"
 			}]
-			x: 9.000000000000004d
-			y: -12.3d
+			x: 8.900000000000002d
+			y: -13.3d
 		}
 		{
 			id: "6BE74683BED141EF"
@@ -693,8 +601,8 @@
 				item: { count: 1, id: "create:copper_casing" }
 				type: "item"
 			}]
-			x: 7.2d
-			y: -12.3d
+			x: 7.1d
+			y: -13.3d
 		}
 		{
 			id: "2697B8077174B870"
@@ -710,8 +618,8 @@
 					type: "item"
 				}
 			]
-			x: 12.600000000000001d
-			y: -6.9d
+			x: 12.5d
+			y: -7.9d
 		}
 		{
 			id: "4DCA027828C2921C"
@@ -720,8 +628,8 @@
 				item: { components: { "create:banktank_air": 900 }, count: 1, id: "create:copper_backtank" }
 				type: "item"
 			}]
-			x: 10.8d
-			y: -6.9d
+			x: 10.7d
+			y: -7.9d
 		}
 		{
 			id: "77968A26B3D90399"
@@ -978,8 +886,8 @@
 				item: { count: 1, id: "create:mechanical_arm" }
 				type: "item"
 			}]
-			x: 18.4d
-			y: 13.4d
+			x: 8.899999999999999d
+			y: 7.7d
 		}
 		{
 			id: "4788E4092A488C9E"
@@ -988,18 +896,40 @@
 				item: { count: 1, id: "create:rotation_speed_controller" }
 				type: "item"
 			}]
-			x: 17.1d
-			y: 11.4d
+			x: 7.1d
+			y: 13.1d
 		}
 		{
 			id: "2B482168EC0C6EB8"
-			tasks: [{
-				id: "107C75290E3DA6FF"
-				item: { count: 1, id: "create:cardboard_helmet" }
-				type: "item"
-			}]
-			x: 24.1d
-			y: 15.0d
+			tasks: [
+				{
+					id: "107C75290E3DA6FF"
+					item: { count: 1, id: "create:cardboard_helmet" }
+					type: "item"
+				}
+				{
+					id: "0F63E14E3ABE7A7E"
+					item: { count: 1, id: "create:cardboard_chestplate" }
+					type: "item"
+				}
+				{
+					id: "1F82BE27B142194E"
+					item: { count: 1, id: "create:cardboard_leggings" }
+					type: "item"
+				}
+				{
+					id: "410307AC8B2B970C"
+					item: { count: 1, id: "create:cardboard_boots" }
+					type: "item"
+				}
+				{
+					id: "42938F8D339E7D21"
+					item: { count: 1, id: "create:cardboard_sword" }
+					type: "item"
+				}
+			]
+			x: 10.7d
+			y: 13.1d
 		}
 		{
 			id: "488424BE711AE0F1"
@@ -1009,7 +939,7 @@
 				type: "item"
 			}]
 			x: -12.9d
-			y: -10.5d
+			y: -11.7d
 		}
 		{
 			id: "4E3578FC24ACF39B"
@@ -1019,7 +949,7 @@
 				type: "item"
 			}]
 			x: -9.3d
-			y: -12.3d
+			y: -13.5d
 		}
 		{
 			id: "33C2042F320B2D34"
@@ -1029,7 +959,7 @@
 				type: "item"
 			}]
 			x: -11.1d
-			y: -12.3d
+			y: -13.5d
 		}
 		{
 			id: "4AAFD7E0D868844A"
@@ -1039,7 +969,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -12.3d
+			y: -13.5d
 		}
 		{
 			id: "754EC4FE62F454E8"
@@ -1049,7 +979,7 @@
 				type: "item"
 			}]
 			x: -12.9d
-			y: -12.3d
+			y: -13.5d
 		}
 		{
 			id: "0807F0094282C2D5"
@@ -1059,7 +989,7 @@
 				type: "item"
 			}]
 			x: -11.1d
-			y: -10.5d
+			y: -11.7d
 		}
 		{
 			id: "434D7EDCDD954B40"
@@ -1118,8 +1048,8 @@
 				item: { count: 1, id: "create:crushing_wheel" }
 				type: "item"
 			}]
-			x: 22.2d
-			y: 13.0d
+			x: 10.7d
+			y: 9.5d
 		}
 		{
 			id: "0EFB32C64C146682"
@@ -1138,8 +1068,8 @@
 				item: { count: 1, id: "create:electron_tube" }
 				type: "item"
 			}]
-			x: 15.8d
-			y: 9.1d
+			x: 7.1d
+			y: 7.7d
 		}
 		{
 			id: "1A6929801D08F2C5"
@@ -1148,8 +1078,8 @@
 				item: { count: 1, id: "create:steam_engine" }
 				type: "item"
 			}]
-			x: 9.000000000000004d
-			y: -6.9d
+			x: 8.900000000000002d
+			y: -7.9d
 		}
 		{
 			id: "23988FD7E2EEF319"
@@ -1158,8 +1088,8 @@
 				item: { count: 1, id: "create:mechanical_crafter" }
 				type: "item"
 			}]
-			x: 19.5d
-			y: 8.2d
+			x: 7.1d
+			y: 11.3d
 		}
 		{
 			id: "594BC97607EEE341"
@@ -1169,7 +1099,7 @@
 				type: "item"
 			}]
 			x: -2.9d
-			y: -11.0d
+			y: -11.1d
 		}
 		{
 			id: "404A9FFCA3DF600D"
@@ -1178,8 +1108,8 @@
 				item: { count: 1, id: "create:gearshift" }
 				type: "item"
 			}]
-			x: 0.7d
-			y: -11.0d
+			x: 0.6999999999999997d
+			y: -11.1d
 		}
 		{
 			id: "5773319EE8B3D45C"
@@ -1188,8 +1118,8 @@
 				item: { count: 1, id: "create:adjustable_chain_gearshift" }
 				type: "item"
 			}]
-			x: 18.9d
-			y: 11.3d
+			x: 8.899999999999999d
+			y: 9.5d
 		}
 		{
 			id: "6AB303BEA478C0F3"
@@ -1198,8 +1128,8 @@
 				item: { count: 1, id: "create:sequenced_gearshift" }
 				type: "item"
 			}]
-			x: 22.1d
-			y: 10.4d
+			x: 8.899999999999999d
+			y: 13.1d
 		}
 		{
 			id: "0C53E42899D3D271"
@@ -1209,7 +1139,7 @@
 				type: "item"
 			}]
 			x: -1.1d
-			y: -11.0d
+			y: -11.1d
 		}
 		{
 			id: "0C18429AFD83973C"
@@ -1218,8 +1148,8 @@
 				item: { count: 1, id: "create:encased_chain_drive" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -11.0d
+			x: 2.5000000000000004d
+			y: -11.1d
 		}
 		{
 			id: "5D852AA1930E1019"
@@ -1268,8 +1198,8 @@
 				item: { count: 1, id: "create:potato_cannon" }
 				type: "item"
 			}]
-			x: 20.5d
-			y: 13.0d
+			x: 10.7d
+			y: 7.7d
 		}
 		{
 			id: "607FFC2B7A0F972A"
@@ -1279,7 +1209,7 @@
 				type: "item"
 			}]
 			x: -9.3d
-			y: -8.6d
+			y: -9.899999999999999d
 		}
 		{
 			id: "04C07CE4F7258BF5"
@@ -1289,7 +1219,7 @@
 				type: "item"
 			}]
 			x: -12.9d
-			y: -6.8d
+			y: -8.099999999999998d
 		}
 		{
 			id: "07821D28021BB440"
@@ -1299,7 +1229,7 @@
 				type: "item"
 			}]
 			x: -2.9d
-			y: -9.2d
+			y: -9.299999999999999d
 		}
 		{
 			id: "29A942B4C3E9A502"
@@ -1308,8 +1238,8 @@
 				item: { count: 1, id: "create:mechanical_saw" }
 				type: "item"
 			}]
-			x: 0.7d
-			y: -9.2d
+			x: 0.6999999999999997d
+			y: -9.299999999999999d
 		}
 		{
 			id: "6E3F0C072B55467B"
@@ -1319,7 +1249,7 @@
 				type: "item"
 			}]
 			x: -1.1d
-			y: -9.2d
+			y: -9.299999999999999d
 		}
 		{
 			id: "220163965130D8C7"
@@ -1328,8 +1258,8 @@
 				item: { count: 1, id: "create:mechanical_plough" }
 				type: "item"
 			}]
-			x: 2.5d
-			y: -9.2d
+			x: 2.5000000000000004d
+			y: -9.299999999999999d
 		}
 		{
 			id: "1FA90B3E33E0DFEE"
@@ -1338,8 +1268,8 @@
 				item: { count: 1, id: "create:mechanical_roller" }
 				type: "item"
 			}]
-			x: 24.1d
-			y: 12.5d
+			x: 10.7d
+			y: 11.3d
 		}
 		{
 			id: "6711E72048BBDB08"
@@ -1359,7 +1289,7 @@
 				type: "item"
 			}]
 			x: -9.3d
-			y: -10.5d
+			y: -11.7d
 		}
 		{
 			id: "619BC1F1094F4EFA"
@@ -1369,7 +1299,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -10.5d
+			y: -11.7d
 		}
 		{
 			id: "2976D5A533FDEE8F"
@@ -1379,7 +1309,7 @@
 				type: "item"
 			}]
 			x: -7.5d
-			y: -8.6d
+			y: -9.899999999999999d
 		}
 		{
 			id: "1CACDF56CB395997"
@@ -1388,8 +1318,8 @@
 				item: { count: 1, id: "create:extendo_grip" }
 				type: "item"
 			}]
-			x: 21.4d
-			y: 8.0d
+			x: 12.5d
+			y: 7.7d
 		}
 		{
 			id: "38EF4E7FE82B62A6"
@@ -1398,8 +1328,8 @@
 				item: { count: 1, id: "create:clockwork_bearing" }
 				type: "item"
 			}]
-			x: 20.4d
-			y: 10.8d
+			x: 8.899999999999999d
+			y: 11.3d
 		}
 		{
 			id: "3E1B0CBA0889C0AE"
@@ -1416,7 +1346,7 @@
 				}
 			]
 			x: -9.3d
-			y: -6.8d
+			y: -8.099999999999998d
 		}
 		{
 			id: "21B6DE76E735A196"
@@ -1426,7 +1356,7 @@
 				type: "item"
 			}]
 			x: -12.9d
-			y: -8.6d
+			y: -9.899999999999999d
 		}
 		{
 			id: "51649293068FE93D"
@@ -1436,7 +1366,7 @@
 				type: "item"
 			}]
 			x: -11.1d
-			y: -8.6d
+			y: -9.899999999999999d
 		}
 		{
 			id: "3594EFD40D059EA3"
@@ -1445,8 +1375,8 @@
 				item: { count: 1, id: "create:nixie_tube" }
 				type: "item"
 			}]
-			x: 20.2d
-			y: 15.4d
+			x: 12.5d
+			y: 11.3d
 		}
 		{
 			id: "497660DB9611C67C"
@@ -1475,8 +1405,8 @@
 				item: { count: 1, id: "create:nozzle" }
 				type: "item"
 			}]
-			x: 7.2d
-			y: -6.9d
+			x: 7.1d
+			y: -7.9d
 		}
 		{
 			id: "53ECE17FBD95392C"
@@ -1493,7 +1423,7 @@
 				}
 			]
 			x: -7.5d
-			y: -6.8d
+			y: -8.099999999999998d
 		}
 		{
 			id: "55AEBE2068711237"
@@ -1540,7 +1470,7 @@
 				type: "item"
 			}]
 			x: -11.1d
-			y: -6.8d
+			y: -8.099999999999998d
 		}
 		{
 			id: "231404F75545A149"
@@ -1553,24 +1483,14 @@
 			y: 2.5d
 		}
 		{
-			id: "39439ACCD1EBE773"
-			tasks: [{
-				id: "22F30AC48085A5EE"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(create:table_cloths))", "minecraft:custom_name": "\"Create: Table Cloths\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
-			}]
-			x: -12.16d
-			y: 12.4d
-		}
-		{
 			id: "2A08F71925AE775E"
 			tasks: [{
 				id: "4C7CCD299F90B107"
 				item: { count: 1, id: "create:display_board" }
 				type: "item"
 			}]
-			x: 18.3d
-			y: 15.9d
+			x: 12.5d
+			y: 9.5d
 		}
 		{
 			id: "5D5FC5420738FDE8"
@@ -1581,6 +1501,38 @@
 			}]
 			x: -2.16d
 			y: 2.0d
+		}
+		{
+			id: "36F22AA68C1841F6"
+			tasks: [
+				{
+					id: "4B2B082C7370E05D"
+					item: { count: 1, id: "create:netherite_diving_helmet" }
+					type: "item"
+				}
+				{
+					id: "341345E9F9339A7C"
+					item: { count: 1, id: "create:netherite_diving_boots" }
+					type: "item"
+				}
+				{
+					id: "2EB8BD38E2DD66E6"
+					item: { components: { "create:banktank_air": 900 }, count: 1, id: "create:netherite_backtank" }
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 13.1d
+		}
+		{
+			id: "047A5CFAEBBE7E4E"
+			tasks: [{
+				id: "64D51B82E2CEFA98"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(create:table_cloths))", "minecraft:custom_name": "\"Create: Table Cloths\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -12.16d
+			y: 12.4d
 		}
 	]
 }
