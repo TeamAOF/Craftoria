@@ -55,4 +55,9 @@ ItemEvents.modifyTooltips(e => {
     Text.darkGray('an empty trinity gem in any crafting grid'),
     Text.darkGray("As you can't use the captured warden for the ritual, for now"),
   ]);
+
+  e.add('occultism:butcher_knife', [
+    Text.yellow('Replaced by Farmers Delight knives'),
+    Text.yellow('They have the same functionality'),
+  ]);
 });
