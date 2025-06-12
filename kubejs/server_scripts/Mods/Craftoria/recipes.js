@@ -56,6 +56,5 @@ ServerEvents.recipes(e => {
 
   e.shapeless('2x craftoria:garlic_bread', ['minecraft:bread', '2x dumplings_delight:garlic_clove', 'dumplings_delight:garlic_chive']);
 
-  if (Item.exists('industrialization_overdrive:terminal')) // Check exists only for sake of KJS scripts not failing because I haven't yet released the version of Industrialization Overdrive that adds the terminal.
-    e.shapeless('industrialization_overdrive:terminal', 'craftoria:terminal').id('craftoria:terminal_conversion');
+  e.shapeless('industrialization_overdrive:terminal', 'craftoria:terminal').id('craftoria:terminal_conversion');
 });
