@@ -23,6 +23,23 @@ ServerEvents.recipes(e => {
     .itemIn('#c:ores/zinc')
     .id('craftoria:mi/macerator/ores/raw_zinc');
 
+
+  [
+    '#c:ores/xychorium/blue',
+    '#c:ores/xychorium/green',
+    '#c:ores/xychorium/red',
+    '#c:ores/xychorium/dark',
+    '#c:ores/xychorium/light',
+  ].forEach(tag => {
+    let output = `xycraft_world:xychorium_gem_${tag.split('/')[2]}`;
+
+    macerator(2, 100)
+      .itemOut(`6x ${output}`)
+      .itemOut(`3x ${output}`, 0.5)
+      .itemIn(tag)
+      .id(`craftoria:mi/macerator/ores/xychorium_gem_${tag.split('/')[2]}`);
+  });
+
   e.replaceInput(
     { output: 'industrialization_overdrive:multi_processing_array' },
     'modern_industrialization:assembler',
