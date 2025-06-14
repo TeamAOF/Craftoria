@@ -9,12 +9,12 @@ LootJS.lootTables(e => {
     table.removeItem(removeLoot);
   });
 
-  e.create('bosses_of_mass_destruction:entities/obsidilith', 'entity').createPool(pool => {
-    pool.addEntry(LootEntry.of('bosses_of_mass_destruction:obsidian_heart').setCount(2));
-  });
-  e.create('bosses_of_mass_destruction:entities/gauntlet', 'entity').createPool(pool => {
-    pool.addEntry(LootEntry.of('bosses_of_mass_destruction:blazing_eye').setCount(2));
-  });
+  e.clearLootTables(/^bosses_of_mass_destruction:chests\/(obsidilith|gauntlet)$/);
+  e.create('bosses_of_mass_destruction:entities/obsidilith', 'entity')
+    .createPool().addEntry('2x bosses_of_mass_destruction:obsidian_heart');
+
+  e.create('bosses_of_mass_destruction:entities/gauntlet', 'entity')
+    .createPool().addEntry('2x bosses_of_mass_destruction:blazing_eye');
 
   e.getEntityTable('ender_dragon')
     .firstPool()
@@ -23,6 +23,10 @@ LootJS.lootTables(e => {
   e.getEntityTable('armadillo')
     .firstPool()
     .addEntry(LootEntry.of('armadillo_scute').setCount([0, 3]).applyEnchantmentBonus('looting', [0, 1]));
+
+  e.getEntityTable('turtle')
+    .createPool()
+    .addEntry(LootEntry.of('turtle_scute').setCount([0, 3]).applyEnchantmentBonus('looting', [0, 1]));
 });
 
 LootJS.modifiers(e => {
