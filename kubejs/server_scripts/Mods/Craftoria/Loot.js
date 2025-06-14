@@ -19,6 +19,10 @@ LootJS.lootTables(e => {
   e.getEntityTable('ender_dragon')
     .firstPool()
     .addEntry(LootEntry.of('dragon_head').randomChanceWithEnchantment('looting', [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]));
+
+  e.getEntityTable('armadillo')
+    .firstPool()
+    .addEntry(LootEntry.of('armadillo_scute').setCount([0, 3]).applyEnchantmentBonus('looting', [0, 1]));
 });
 
 LootJS.modifiers(e => {
