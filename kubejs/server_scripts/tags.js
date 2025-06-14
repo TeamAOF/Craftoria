@@ -118,6 +118,12 @@ ServerEvents.tags('item', e => {
   e.add('craftoria:tall_grass', ['#biomeswevegone:grass/tall', 'minecraft:tall_grass']);
 
   e.add('craftoria:upgrade_orbs', /.*_upgrade_orb$/);
+
+  e.add('c:ores/xychorium/green', /^xycraft_world:xychorium_ore_(stone|deepslate|kivi)_green/);
+  e.add('c:ores/xychorium/blue', /^xycraft_world:xychorium_ore_(stone|deepslate|kivi)_blue/);
+  e.add('c:ores/xychorium/red', /^xycraft_world:xychorium_ore_(stone|deepslate|kivi)_red/);
+  e.add('c:ores/xychorium/dark', /^xycraft_world:xychorium_ore_(stone|deepslate|kivi)_dark/);
+  e.add('c:ores/xychorium/light', /^xycraft_world:xychorium_ore_(stone|deepslate|kivi)_light/);
 });
 
 ServerEvents.tags('block', e => {

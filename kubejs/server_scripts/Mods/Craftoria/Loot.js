@@ -22,7 +22,7 @@ LootJS.lootTables(e => {
 });
 
 LootJS.modifiers(e => {
-  e.removeGlobalModifiers(['dumplings_delight:add_calamari']);
+  e.removeGlobalModifiers('dumplings_delight:add_calamari');
 });
 
 ServerEvents.generateData('after_mods', e => {

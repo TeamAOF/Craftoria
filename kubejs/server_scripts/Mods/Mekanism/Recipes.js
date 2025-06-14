@@ -28,6 +28,17 @@ ServerEvents.recipes(e => {
   // AA Compat
   mekanism.enriching('2x actuallyadditions:black_quartz', '#c:ores/black_quartz');
 
+  // XyCraft
+  [
+    '#c:ores/xychorium/blue',
+    '#c:ores/xychorium/green',
+    '#c:ores/xychorium/red',
+    '#c:ores/xychorium/dark',
+    '#c:ores/xychorium/light',
+  ].forEach(tag => {
+    mekanism.enriching(`6x xycraft_world:xychorium_gem_${tag.split('/')[2]}`, tag);
+  });
+
   // New Stuff
   mekanism.rotaryCondensentrating('mekanism:antimatter', 'craftoria:antimatter');
   mekanism.rotaryCondensentrating('craftoria:quantum_infusion', 'advanced_ae:quantum_infusion_source');

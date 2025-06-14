@@ -48,11 +48,11 @@ ServerEvents.recipes(event => {
     .itemOut('minecraft:gold_ore', 0.15)
     .itemOut('minecraft:redstone_ore', 0.2)
     .itemOut('mekanism:osmium_ore', 0.12)
-    .itemOut('xycraft_world:xychorium_ore_stone_blue', 0.4)
-    .itemOut('xycraft_world:xychorium_ore_stone_green', 0.4)
-    .itemOut('xycraft_world:xychorium_ore_stone_red', 0.4)
-    .itemOut('xycraft_world:xychorium_ore_stone_dark', 0.4)
-    .itemOut('xycraft_world:xychorium_ore_stone_light', 0.4)
+    .itemOut('xycraft_world:xychorium_ore_stone_blue', 0.2)
+    .itemOut('xycraft_world:xychorium_ore_stone_green', 0.2)
+    .itemOut('xycraft_world:xychorium_ore_stone_red', 0.2)
+    .itemOut('xycraft_world:xychorium_ore_stone_dark', 0.2)
+    .itemOut('xycraft_world:xychorium_ore_stone_light', 0.2)
     .id('modern_industrialization:quarry/bronze');
 
   // Titanium Drill
