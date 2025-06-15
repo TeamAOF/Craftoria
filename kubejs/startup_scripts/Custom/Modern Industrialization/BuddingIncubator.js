@@ -23,9 +23,29 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
     .key('G', glassSlab, noHatch)
     .build();
 
+  const barrier = event.memberOfBlock('minecraft:barrier');
+  const failShape = event
+    .layeredShape('modern_industrialization:sky_stone_brick_casing', [
+      ['#', 'B', 'B'],
+    ])
+    .key('B', barrier, noHatch)
+    .build();
+
+  event.electricStandalone(
+    'Budding Incubator', 'budding_incubator',
+    BUDDING_INCUBATOR, buddingIncubatorShape,
+    event.progressBar(77, 33, 'arrow'),
+    _ => {},
+    itemOutputs => itemOutputs.addSlots(102, 35, 2, 1),
+    fluidInputs => fluidInputs.addSlots(56, 35, 1, 1),
+    _ => {},
+    'modern_industrialization:sky_stone_brick_casing', 'budding_incubator', true, false, false,
+    8, 0.75
+  );
+
   event.electricStandalone(
     'Budding Incubator', 'batch_budding_incubator',
-    BUDDING_INCUBATOR, buddingIncubatorShape,
+    BUDDING_INCUBATOR, failShape,
     event.progressBar(77, 33, 'arrow'),
     _ => {},
     itemOutputs => itemOutputs.addSlots(102, 35, 2, 1),

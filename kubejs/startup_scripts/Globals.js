@@ -49,7 +49,7 @@ const customMIMachines = {
   //   mod: 'mi_tweaks',
   //   casing: 'plasma_handling_iridium_machine_casing',
   // },
-  batch_budding_incubator: {
+  budding_incubator: {
     name: 'Budding Incubator',
     casing: 'sky_stone_brick_casing',
     mod: 'mi_tweaks',
@@ -58,7 +58,7 @@ const customMIMachines = {
       front_active: 'modern_industrialization:block/machines/budding_incubator/overlay_front_active',
     },
   },
-  batch_ooze_lab: {
+  ooze_lab: {
     name: 'Ooze Lab',
     casing: 'factory_grate',
     mod: 'mi_tweaks',
@@ -67,7 +67,7 @@ const customMIMachines = {
       front_active: 'extended_industrialization:block/machines/brewery/overlay_front_active',
     },
   },
-  batch_model_synthesizer: {
+  model_synthesizer: {
     name: 'Model Synthesizer',
     casing: 'vect5',
     mod: 'mi_tweaks',
@@ -75,6 +75,18 @@ const customMIMachines = {
       front: 'modern_industrialization:block/machines/model_synthesizer/overlay_front',
       front_active: 'modern_industrialization:block/machines/model_synthesizer/overlay_front_active',
     },
+  },
+  batch_budding_incubator: {
+    name: 'Budding Incubator - Deprecated',
+    mod: 'mi_tweaks',
+  },
+  batch_ooze_lab: {
+    name: 'Ooze Lab - Deprecated',
+    mod: 'mi_tweaks',
+  },
+  batch_model_synthesizer: {
+    name: 'Model Synthesizer - Deprecated',
+    mod: 'mi_tweaks',
   },
 };
 

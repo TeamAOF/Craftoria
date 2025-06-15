@@ -41,14 +41,15 @@ ItemEvents.modifyTooltips(e => {
   ]);
 
   e.add(
-    'mi_tweaks:batch_ooze_lab',
+    'mi_tweaks:ooze_lab',
     { shift: true },
     Text.gray('Needs ').append(Text.green('Time Fluid')).append(Text.gray(' between the glass and the goo.'))
   );
 
+  e.add(/^mi_tweaks:batch_.*/, Text.red('Deprecated, convert in your crafting grid to the new version.'));
+
   e.add('modern_industrialization:nuke', Text.darkGray("No, it won't explode."));
 
-  e.add('craftoria:terminal', Text.gray('Auto builds Modern Industrialization multiblocks.'));
   e.add('craftoria:infinity_soul_cell', [
     Text.darkGray('For the trinity gem component of this items recipe'),
     Text.darkGray('craft a possessed warden spawn egg together with'),

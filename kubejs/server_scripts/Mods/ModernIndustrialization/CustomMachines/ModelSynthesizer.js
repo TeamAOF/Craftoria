@@ -86,11 +86,13 @@ ServerEvents.recipes(event => {
   }
 
   assembler(16, 200)
-    .itemOut('mi_tweaks:batch_model_synthesizer')
+    .itemOut('mi_tweaks:model_synthesizer')
     .itemIn('8x hostilenetworks:sim_chamber')
     .itemIn('8x hostilenetworks:loot_fabricator')
     .itemIn('4x modern_industrialization:electronic_circuit')
     .itemIn('4x modern_industrialization:robot_arm')
     .itemIn('modern_industrialization:advanced_machine_hull')
     .id('craftoria:mi/assembler/model_synthesizer');
+
+  event.shapeless('mi_tweaks:model_synthesizer', 'mi_tweaks:batch_model_synthesizer');
 });

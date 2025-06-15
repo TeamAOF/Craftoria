@@ -44,9 +44,29 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
   }
   const oozeLabShape = oozeLabShapeBuilder.build();
 
+  const barrier = event.memberOfBlock('minecraft:barrier');
+  const failShape = event
+    .layeredShape('modern_industrialization:sky_stone_brick_casing', [
+      ['#', 'B', 'B'],
+    ])
+    .key('B', barrier, noHatch)
+    .build();
+
+  event.electricStandalone(
+    'Ooze Lab', 'ooze_lab',
+    OOZE_LAB, oozeLabShape,
+    event.progressBar(77, 33, 'arrow'),
+    itemInputs => itemInputs.addSlots(56 - 18, 35, 2, 1),
+    itemOutputs => itemOutputs.addSlots(102, 35, 1, 1),
+    fluidInputs => fluidInputs.addSlots(56, 35 + 18, 1, 1),
+    fluidOutputs => fluidOutputs.addSlots(102, 35 + 18, 1, 1),
+    'factory_grate', 'ooze_lab', true, false, false,
+    8, 0.75
+  );
+
   event.electricStandalone(
     'Ooze Lab', 'batch_ooze_lab',
-    OOZE_LAB, oozeLabShape,
+    OOZE_LAB, failShape,
     event.progressBar(77, 33, 'arrow'),
     itemInputs => itemInputs.addSlots(56 - 18, 35, 2, 1),
     itemOutputs => itemOutputs.addSlots(102, 35, 1, 1),

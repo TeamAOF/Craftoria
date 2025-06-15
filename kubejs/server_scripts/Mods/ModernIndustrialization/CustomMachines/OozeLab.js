@@ -60,11 +60,13 @@ ServerEvents.recipes(event => {
     else logError(`Ooze Lab recipe not found for input: ${input}, output: ${output}, ID: ${kubeRecipe.getId()}`);
   });
 
-  assembler(16, 200) // TODO: different recipe?
-    .itemOut('mi_tweaks:batch_ooze_lab')
+  assembler(16, 200)
+    .itemOut('mi_tweaks:ooze_lab')
     .itemIn('8x justdirethings:gooblock_tier4')
     .itemIn('4x modern_industrialization:electronic_circuit')
     .itemIn('4x modern_industrialization:large_pump')
     .itemIn('modern_industrialization:advanced_machine_hull')
     .id('craftoria:mi/assembler/ooze_lab');
+
+  event.shapeless('mi_tweaks:ooze_lab', 'mi_tweaks:batch_ooze_lab');
 });
