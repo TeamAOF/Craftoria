@@ -435,6 +435,7 @@
 				xp: 100
 			}]
 			tasks: [{
+				count: 32L
 				id: "547446940C42E3B4"
 				item: { count: 1, id: "create:andesite_alloy" }
 				type: "item"
@@ -2304,6 +2305,7 @@
 				id: "ftbquests:custom_icon"
 			}
 			id: "55696F71CC09E588"
+			min_width: 300
 			size: 3.0d
 			tasks: [
 				{
@@ -2314,6 +2316,12 @@
 					count: 64L
 					id: "23CEF2C8D7834150"
 					item: { count: 64, id: "minecraft:andesite" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "70215EE727E02AE1"
+					item: { count: 65, id: "create:zinc_nugget" }
 					type: "item"
 				}
 			]
