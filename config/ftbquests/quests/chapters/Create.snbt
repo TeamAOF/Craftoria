@@ -189,6 +189,7 @@
 		}
 		{
 			height: 10.0d
+			hover: ["Tools"]
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -230,7 +231,6 @@
 			color: 12400147
 			height: 9.25d
 			image: "ftbquests:textures/shapes/square/shape.png"
-			order: 1
 			rotation: 0.0d
 			width: 9.25d
 			x: -10.16d
@@ -295,6 +295,7 @@
 		}
 		{
 			height: 10.0d
+			hover: ["Mechanical Basics"]
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -304,8 +305,8 @@
 		}
 		{
 			height: 10.0d
+			hover: ["Brass"]
 			image: "ftbquests:textures/gui/toolbox_interior.png"
-			order: 1
 			rotation: 0.0d
 			width: 10.0d
 			x: -10.0d
@@ -313,6 +314,7 @@
 		}
 		{
 			height: 10.0d
+			hover: ["Transportation"]
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -322,6 +324,7 @@
 		}
 		{
 			height: 10.0d
+			hover: ["Factory Smarts"]
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -331,6 +334,7 @@
 		}
 		{
 			height: 10.0d
+			hover: ["Specials"]
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -340,6 +344,7 @@
 		}
 		{
 			height: 10.0d
+			hover: ["Trains"]
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -349,6 +354,7 @@
 		}
 		{
 			height: 10.0d
+			hover: ["Plumbing"]
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -363,6 +369,77 @@
 			width: 1.0d
 			x: -10.16d
 			y: 10.6d
+		}
+		{
+			height: 1.5d
+			image: "ftbquests:textures/gui/title_brass.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: -10.16d
+			y: -14.9d
+		}
+		{
+			height: 3.5d
+			image: "ftbquests:textures/gui/title_transportation.png"
+			order: 3
+			rotation: 0.0d
+			width: 3.5d
+			x: -12.16d
+			y: -4.2d
+		}
+		{
+			height: 3.5d
+			image: "ftbquests:textures/gui/title_factory.png"
+			order: 3
+			rotation: 0.0d
+			width: 3.5d
+			x: -10.16d
+			y: 6.1d
+		}
+		{
+			height: 3.5d
+			image: "ftbquests:textures/gui/title_mechanical.png"
+			order: 3
+			rotation: 0.0d
+			width: 3.5d
+			x: -0.16d
+			y: -16.3d
+		}
+		{
+			height: 1.5d
+			image: "ftbquests:textures/gui/title_tools.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.5d
+			x: 9.84d
+			y: -14.9d
+		}
+		{
+			height: 2.25d
+			image: "ftbquests:textures/gui/title_plumbing.png"
+			order: 3
+			rotation: 0.0d
+			width: 2.25d
+			x: 11.84d
+			y: -4.25d
+		}
+		{
+			height: 1.75d
+			image: "ftbquests:textures/gui/title_trains.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.75d
+			x: 9.84d
+			y: 6.1d
+		}
+		{
+			height: 2.0d
+			image: "ftbquests:textures/gui/title_specials.png"
+			order: 3
+			rotation: 0.0d
+			width: 2.0d
+			x: -0.16d
+			y: 7.7d
 		}
 	]
 	order_index: 6
