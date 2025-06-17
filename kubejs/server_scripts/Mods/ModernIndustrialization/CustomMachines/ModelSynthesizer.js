@@ -6,20 +6,20 @@ ServerEvents.recipes(event => {
   event.resourceManager.getResourceStack(ID.mc('hostilenetworks:data_models')).forEach(resource => {
     let source = resource.source();
 
-    source.listResources('server_data', 'hostilenetworks', 'data_models', (_, io) => {
+    source.listResources('server_data', 'hostilenetworks', 'data_models', (resLoc, io) => {
       let modelJson = bytesToJson(io.get().readAllBytes());
       let { entity, input, base_drop, fabricator_drops, sim_cost } = modelJson;
       let { namespace: entityNamespace, path: entityPath } = ID.mc(entity);
       if (dataModels[ID.mc(entity)]) return; // Skip if we found it in the global data models (new or overridden models by us)
       if (!Platform.isLoaded(entityNamespace)) return;
-      let modelData = entityNamespace === 'minecraft' ? entityPath : `${entityNamespace}/${entityPath}`;
+      let modelLoc = `${resLoc.namespace}:${resLoc.path.replace('data_models/', '').replace('.json', '')}`;
 
       fabricator_drops.forEach((/** @type {{ id: Special.Item; count: number; }} */ drop) => {
         if (!Item.exists(drop.id)) return;
         let output = Item.of(drop.id, drop.count);
         let baseDrop = Item.of(base_drop.id, base_drop.count || 1);
         let recipe = model_synthesizer(getNearestMultipleOfSixteen(sim_cost / 8), 20 * 5)
-          .itemIn(`hostilenetworks:data_model[hostilenetworks:data_model="hostilenetworks:${modelData}"]`, 0)
+          .itemIn(`hostilenetworks:data_model[hostilenetworks:data_model="${modelLoc}"]`, 0)
           .itemIn(input)
           .itemOut(output);
         if (Item.exists(base_drop.id)) recipe.itemOut(baseDrop);
