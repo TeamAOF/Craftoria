@@ -45,7 +45,7 @@
       "discard_on_air_chance": 0.0,
       "modifiers": [
         {
-          "count": 10,
+          "count": 20,
           "type": "minecraft:count"
         },
         {
@@ -84,7 +84,7 @@
       "discard_on_air_chance": 0.0,
       "modifiers": [
         {
-          "count": 10,
+          "count": 20,
           "type": "minecraft:count"
         },
         {
@@ -123,7 +123,7 @@
       "discard_on_air_chance": 0.0,
       "modifiers": [
         {
-          "count": 10,
+          "count": 20,
           "type": "minecraft:count"
         },
         {
@@ -153,6 +153,45 @@
           },
           "state": {
             "Name": "create:crimsite"
+          }
+        }
+      ]
+    },
+    {
+      "ore_size": 5,
+      "discard_on_air_chance": 0.0,
+      "modifiers": [
+        {
+          "count": 20,
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:in_square"
+        },
+        {
+          "height": {
+            "min_inclusive": {
+              "above_bottom": 0
+            },
+            "max_inclusive": {
+              "absolute": 64
+            },
+            "type": "minecraft:uniform"
+          },
+          "type": "minecraft:height_range"
+        },
+        {
+          "type": "minecraft:biome"
+        }
+      ],
+      "targets": [
+        {
+          "target": {
+            "tag": "minecraft:stone_ore_replaceables",
+            "predicate_type": "minecraft:tag_match"
+          },
+          "state": {
+            "Name": "create:veridium"
           }
         }
       ]
