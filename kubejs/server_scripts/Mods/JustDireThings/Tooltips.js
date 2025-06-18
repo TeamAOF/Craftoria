@@ -6,4 +6,6 @@ ItemEvents.modifyTooltips(event => {
     if (!Item.exists(oreId)) oreId = oreId.replace('raw_', '');
     event.add(oreId, [Text.gray(`Can be gained from breaking Raw ${ore} Ore.`), Text.gray('Check EMI for how to make the ore.')]);
   });
+
+  event.add(/^justdirethings:raw_.*_ore$/, Text.red('DOES NOT NATURALLY SPAWN! It is crafted.'));
 });
