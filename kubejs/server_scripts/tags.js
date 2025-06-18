@@ -217,13 +217,10 @@ ServerEvents.tags('entity_type', e => {
 
   e.add('ftbchunks:entity_interact_whitelist', ['minecraft:villager', 'minecraft:wandering_trader']);
 
+  e.add('justdirethings:creature_catcher_deny', ['ars_nouveau:dummy']);
   e.add('apothic_spawners:blacklisted_from_spawners', ['#craftoria:mob_blacklist']);
-
   e.add('mob_grinding_utils:no_swab', '#craftoria:mob_blacklist');
-
   e.add('industrialforegoing:mob_crusher_blacklist', ['#c:bosses', '#neoforge:bosses']);
-
   e.add('industrialforegoing:mob_duplicator_blacklist', '#craftoria:mob_blacklist');
-
   e.add('justdirethings:paradox_deny', ['occultism:foliot', 'mekanism:robit', 'ars_nouveau:animated_block', '@create']);
 });
