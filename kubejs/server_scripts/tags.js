@@ -124,6 +124,16 @@ ServerEvents.tags('item', e => {
   e.add('c:ores/xychorium/red', /^xycraft_world:xychorium_ore_(stone|deepslate|kivi)_red/);
   e.add('c:ores/xychorium/dark', /^xycraft_world:xychorium_ore_(stone|deepslate|kivi)_dark/);
   e.add('c:ores/xychorium/light', /^xycraft_world:xychorium_ore_(stone|deepslate|kivi)_light/);
+
+  e.remove('ae2:pattern_provider', '@advanced_ae');
+  e.remove('advanced_ae:adv_pattern_provider', [
+    'advanced_ae:adv_pattern_provider',
+    'advanced_ae:adv_pattern_provider_part',
+  ]);
+  e.add('advanced_ae:adv_extended_pattern_provider', [
+    'advanced_ae:adv_pattern_provider',
+    'advanced_ae:adv_pattern_provider_part',
+  ]);
 });
 
 ServerEvents.tags('block', e => {
