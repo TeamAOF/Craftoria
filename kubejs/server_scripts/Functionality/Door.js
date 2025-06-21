@@ -321,11 +321,13 @@ function doubleDoor() {
 
 const { onNeighborNotify, onDoorClick } = doubleDoor();
 
+/* Disabled due to performance issues. Porting this whole script into a standalone mod later.
 NativeEvents.onEvent($NeighborNotifyEvent, event => {
   const { pos, state } = event;
   const level = getServerLevel(event.level);
   if (level) onNeighborNotify(level, pos, state);
 });
+*/
 
 BlockEvents.rightClicked(event => {
   const { level, player, hand, block } = event;
