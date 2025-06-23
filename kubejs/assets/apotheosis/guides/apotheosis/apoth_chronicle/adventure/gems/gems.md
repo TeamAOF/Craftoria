@@ -18,7 +18,7 @@ Gems may give different bonuses in different items, and can be upgraded.
 
 ## Purity
 
-Each gem has a Purity, ranging from <Color id="gray">Cracked</Color> to <Color id="gold">Perfect</Color>.
+Each gem has a Purity, ranging from <Color id="common">Cracked</Color> to <Color id="gold">Perfect</Color>.
 
 The purity alone determines the strength of the gem, and higher purity gems are more expensive to upgrade.
 
@@ -36,7 +36,7 @@ To socket a gem into an item, combine the two in a Smithing Table.
 
 Each gem states which items it may fit in.
 
-Some gems are <Color id="dark_red">Unique</Color>, meaning that only one copy of that gem may be socketed in an item.
+Some gems are <Color id="unique">Unique</Color>, meaning that only one copy of that gem may be socketed in an item.
 
 ## Removing Gems
 

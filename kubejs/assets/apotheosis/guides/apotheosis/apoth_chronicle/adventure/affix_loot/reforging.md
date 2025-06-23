@@ -16,7 +16,7 @@ Through the raw potential of <Color id="blue">Rarity Materials</Color> and the v
 
 Reforging is not limited to items that already have affixes, and can be performed with any valid item.
 
-To begin reforging, craft a <Color hex="#5555FF">Simple Reforging Table</Color>, which allows you to reforge items up to <Color hex="#5555FF">Rare</Color> rarity.
+To begin reforging, craft a <Color id="rare">Simple Reforging Table</Color>, which allows you to reforge items up to <Color id="rare">Rare</Color> rarity.
 
 <Recipe id="apotheosis:simple_reforging_table" />
 
@@ -48,7 +48,7 @@ For each rarity, there is a base cost of experience, sigils, and materials. The 
 
 To reforge your item, simply click the desired choice.
 
-To reforge items of <Color hex="#BB00BB">Epic</Color> rarity or higher, you'll need to upgrade your <Color hex="#5555FF">Simple Reforging Table</Color> into a <Color hex="#BB00BB">Reforging Table</Color>.
+To reforge items of <Color id="epic">Epic</Color> rarity or higher, you'll need to upgrade your <Color id="rare">Simple Reforging Table</Color> into a <Color id="epic">Reforging Table</Color>.
 
 <Recipe id="apotheosis:reforging_table" />
 

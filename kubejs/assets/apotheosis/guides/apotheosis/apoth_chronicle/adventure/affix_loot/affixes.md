@@ -29,7 +29,7 @@ These can only be found on Rare+ items.
 
 ## Sockets
 
-A Socket is a special type of affix that simply provides a vessel for a [Gem](./gems.md).
+A Socket is a special type of affix that simply provides a vessel for a [Gem](../gems/gems.md).
 
 Gems can convey great bonuses, but can be difficult to find.
 

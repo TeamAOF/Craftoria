@@ -25,7 +25,7 @@ The Augmenting Table has two input slots.
 
 The upper slot holds the item you wish to augment, which must be an affix item.
 
-Typically, you should only augment items of at least <Color id="gold">Mythic</Color> rarity, though you could consider augmenting <Color id="dark_purple">Epic</Color> ones as well.
+Typically, you should only augment items of at least <Color id="mythic">Mythic</Color> rarity, though you could consider augmenting <Color id="epic">Epic</Color> ones as well.
 
 ## Input Slots
 
