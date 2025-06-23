@@ -9,8 +9,8 @@ $INSTANCE_ROOT = ("$PSScriptRoot/.." | Resolve-Path)
 $CURSEFORGE_USER = "HiAmAK"
 
 # For details see: https://www.curseforge.com/account/api-tokens
-# Defined in secrets.ps1 
-# $CURSEFORGE_TOKEN = 
+# Defined in secrets.ps1
+# $CURSEFORGE_TOKEN =
 
 # ProjectID can be found on the modpack's Curseforge Projects page, under "About This Project"
 $CURSEFORGE_PROJECT_ID = 1039252
@@ -36,6 +36,9 @@ $LAST_MODPACK_VERSION = "1.21.2"
 # Can be "forge" or "fabric"
 # default: "forge"
 $MODLOADER = "neoforge"
+
+# Version of the modloader
+$MODLOADER_VERSION = "21.1.176"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -79,33 +82,19 @@ $MODLIST_CREATOR_JAR = "ModListCreator-5.0.0-fatjar.jar"
 
 $CLIENT_FILE_AUTHOR = "TeamAOE"
 
-$FOLDERS_TO_INCLUDE_IN_CLIENT_FILES = @(
-	"config",
-	"shaderpacks",
-	"defaultconfigs",
-	"kubejs",
-	"emotes",
-	"version_info.json"
-	)
-
-$CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
-	"spark",
-	"ae2/client.json", 
-	"iris.properties",
-	"ae2-client.toml",
-	"voicechat",
-	"nolijium.json5",
-	"ars_nouveau/search_index"
-	)
-
-# Accepts directories
-$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "local/ftbultimine-client.snbt", "shaderpacks/ComplementaryUnbound_r5.5.1 + EuphoriaPatches_1.6.4.zip")
+# NOTE: The following settings are no longer used when using packwiz:
+# - FOLDERS_TO_INCLUDE_IN_CLIENT_FILES (handled by packwiz configuration)
+# - CONFIGS_TO_REMOVE_FROM_CLIENT_FILES (handled by packwiz configuration)
+# - FOLDERS_TO_REMOVE_FROM_CLIENT_FILES (handled by packwiz configuration)
+# - FILES_TO_INCLUDE_IN_MODS_FOLDER (handled by packwiz mod management)
+#
+# Configure file inclusion/exclusion through ".packwizignore"
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
 #=====================================================================//
 
-# $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES has been moved to remove-client-mods.ps1 
+# $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES has been moved to remove-client-mods.ps1
 
 $SERVER_FILES_FOLDER = "$INSTANCE_ROOT/server_files"
 
@@ -140,7 +129,7 @@ $ENABLE_SERVER_FILE_MODULE = $true
 $ENABLE_SERVERSTARTER_MODULE = $true
 
 # Toggle automatic changelog generator on/off
-# This module requires an older modpack manifest zip to be present, 
+# This module requires an older modpack manifest zip to be present,
 # $LAST_MODPACK_VERSION must be set, and the manifest naming must be consistent.
 # Default: $false
 $ENABLE_CHANGELOG_GENERATOR_MODULE = $false
@@ -154,7 +143,7 @@ $ENABLE_MODLIST_CREATOR_MODULE = $false
 $MODLIST_PATH = "$INSTANCE_ROOT/changelogs/modlist_$MODPACK_VERSION.md"
 
 # Toggle removal and re-download of jars on/off.
-# Setting this to true will ensure that you always have the latest 
+# Setting this to true will ensure that you always have the latest
 # Twitch Export Builder and ChangelogGenerator, but increases the
 # amount of time this script takes to execute.
 # Default: $false
@@ -164,7 +153,7 @@ $ENABLE_ALWAYS_UPDATE_JARS = $false
 # This will create a new release on your issue-tracker when using the modpack uploader.
 # See below link for info:
 # Default: $false
-$ENABLE_GITHUB_RELEASE_MODULE = $false	
+$ENABLE_GITHUB_RELEASE_MODULE = $false
 
 
 
@@ -204,5 +193,3 @@ $SERVER_FILE_DISPLAY_NAME = "Craftoria Server - $MODPACK_VERSION"
 # Path to the ModListCreators output file
 $MODLIST_PATH = "$INSTANCE_ROOT/changelogs/modlist_$MODPACK_VERSION.md"
 $CHANGELOG_PATH = "$INSTANCE_ROOT/changelogs/changelog_mods_$MODPACK_VERSION.md"
-
-$FILES_TO_INCLUDE_IN_MODS_FOLDER = @("mods/cc-tweaked-1.21.1-forge-1.115.1.jar")
