@@ -211,6 +211,13 @@ ServerEvents.tags('block', e => {
     '@moderndynamics',
     '@trashcans'
   ]);
+
+  e.add('justdirethings:tick_speed_deny', [
+    '@modern_industrialization',
+    '@mi_tweaks',
+    '@extended_industrialization',
+    '@industrialization_overdrive',
+  ]);
 });
 
 ServerEvents.tags('fluid', e => {
