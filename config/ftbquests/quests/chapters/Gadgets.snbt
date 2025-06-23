@@ -324,6 +324,68 @@
 			x: 0.0d
 			y: -6.0d
 		}
+		{
+			height: 3.0d
+			image: "shrink:item/shrinking_device_no_power"
+			order: 3
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			alpha: 128
+			height: 5.0d
+			image: "shrink:item/shrinking_device_no_power"
+			order: 1
+			rotation: 0.0d
+			width: 5.0d
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			alpha: 192
+			height: 4.0d
+			image: "shrink:item/shrinking_device_no_power"
+			order: 2
+			rotation: 0.0d
+			width: 4.0d
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			height: 2.0d
+			image: "pylons:item/player_filter"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.0d
+			y: -7.0d
+		}
+		{
+			height: 2.0d
+			image: "pylons:item/mob_filter"
+			rotation: 0.0d
+			width: 2.0d
+			x: -4.5d
+			y: -5.6d
+		}
+		{
+			height: 2.0d
+			image: "pylons:item/lifeless_filter"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.5d
+			y: -5.6d
+		}
+		{
+			alpha: 96
+			height: 6.0d
+			image: "shrink:item/shrinking_device_no_power"
+			rotation: 0.0d
+			width: 6.0d
+			x: 6.0d
+			y: -6.0d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]
@@ -1039,13 +1101,15 @@
 			y: -6.0d
 		}
 		{
+			icon_scale: 2.0d
 			id: "71B6DA56399050E1"
 			rewards: [{
 				id: "0EEC0A7AAA4735ED"
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
-			size: 2.0d
+			shape: "rsquare"
+			size: 1.0d
 			tasks: [{
 				id: "2DD128CF491C799C"
 				item: { count: 1, id: "shrink:shrinking_device" }
@@ -1061,14 +1125,15 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
-			size: 1.0d
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "3EAC475D6EE10260"
 				item: { count: 1, id: "pylons:harvester_pylon" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: -7.0d
+			x: -4.4d
+			y: -7.6d
 		}
 		{
 			id: "0E8B36B67840AADD"
@@ -1077,13 +1142,15 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "0A13CC3B2B6A5525"
 				item: { count: 1, id: "pylons:expulsion_pylon" }
 				type: "item"
 			}]
-			x: -7.0d
-			y: -6.0d
+			x: -7.8d
+			y: -7.6d
 		}
 		{
 			id: "3B429F0556B85DF0"
@@ -1092,6 +1159,8 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				id: "265BD532C3036CF7"
 				item: { count: 1, id: "pylons:interdiction_pylon" }
@@ -1099,21 +1168,6 @@
 			}]
 			x: -6.0d
 			y: -5.0d
-		}
-		{
-			id: "7E194859BAD7B5A8"
-			rewards: [{
-				id: "70F2507BA8495C95"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "0CE033E06E31FE63"
-				item: { count: 1, id: "pylons:infusion_pylon" }
-				type: "item"
-			}]
-			x: -5.0d
-			y: -6.0d
 		}
 	]
 }
