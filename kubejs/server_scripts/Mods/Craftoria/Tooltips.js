@@ -13,7 +13,7 @@ ItemEvents.modifyTooltips(e => {
       e.add(item, [
         Text.red('This item has been disabled.'),
         Text.red("If you're playing in singleplayer, or are a server admin,"),
-        Text.red("if you want to enable it, go to 'kubejs/removals.js'"),
+        Text.red("and you want to enable it, go to 'kubejs/removals.js'"),
         Text.red('and remove the item from globalItemRemovals.'),
       ]);
     }
