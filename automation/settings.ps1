@@ -109,6 +109,11 @@ $CONTENTS_TO_ZIP = @()
 #  MODULES
 # =====================================================================//
 
+# Toggle automatic updating of pack.toml based on values in this file.
+# Uses $MODPACK_NAME for name, $MODPACK_VERSION for version, $MODLOADER and $MODLOADER_VERSION for modloader version.
+# Default: $true
+$UPDATE_PACK_TOML = $true
+
 # Toggle automatic building of the manifest zip on/off
 # Default: $true
 $ENABLE_CLIENT_FILE_MODULE = $true

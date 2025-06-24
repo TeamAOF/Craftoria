@@ -323,6 +323,7 @@ function New-GitHubRelease {
 }
 
 function Update-PackToml {
+  if ($UPDATE_PACK_TOML) {
     Write-Host
     Write-Host "Updating pack.toml with settings..." -ForegroundColor Cyan
     Write-Host
@@ -365,6 +366,7 @@ function Update-PackToml {
         Write-Host "Error running packwiz refresh: $_" -ForegroundColor Red
         throw "Failed to run packwiz refresh: $_"
     }
+  }
 }
 
 function Update-Modlist {
