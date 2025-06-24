@@ -217,6 +217,7 @@ ServerEvents.tags('block', e => {
     '@mi_tweaks',
     '@extended_industrialization',
     '@industrialization_overdrive',
+    '@industrialforegoingsouls',
   ]);
 });
 
