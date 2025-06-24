@@ -1,16 +1,19 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-$manifest = "manifest.json"
-$minecraftInstanceFile = "minecraftinstance.json"
-$overridesFolder = "overrides"
-$modsFolder = "$overridesFolder/mods"
 $secretsFile = "secrets.ps1"
+$outputFolder = "$PSScriptRoot/exports"  # Output folder for generated files
 
 function Validate-SecretsFile {
     if (!(Test-Path "$PSScriptRoot/$secretsFile")) {
         Write-Host "You need a valid CurseForge API Token in a $secretsFile file" -ForegroundColor Red
         Write-Host "Creating $secretsFile" -ForegroundColor Cyan
-        New-Item -Path $PSScriptRoot -ItemType File -Name $secretsFile -Value "# To generate an API token go to: https://authors.curseforge.com/account/api-tokens `n $CURSEFORGE_TOKEN = `"your-curseforge-token-here`""
+
+        $secretsContent = @"
+# To generate an API token go to: https://authors.curseforge.com/account/api-tokens
+`$CURSEFORGE_TOKEN = "your-curseforge-token-here"
+"@
+
+        New-Item -Path $PSScriptRoot -ItemType File -Name $secretsFile -Value $secretsContent
     }
 }
 
@@ -27,13 +30,13 @@ function Get-GitHubRelease {
         [string]
         $file
     )
-	
+
     $response = Invoke-RestMethod -Uri "https://api.github.com/repos/$repo/releases"
 
     $matchingRelease = $response.assets -match $file
     if ($matchingRelease) {
         $downloadUrl = $matchingRelease.browser_download_url
-    
+
         Remove-Item $file -ErrorAction SilentlyContinue
 
         Write-Host "Dowloading $file..."
@@ -46,166 +49,81 @@ function Get-GitHubRelease {
 }
 
 function Test-ForDependencies {
-    $is7zAvailable = Get-Command 7z
+    $isPackwizAvailable = Get-Command packwiz -ErrorAction SilentlyContinue
+    if (-not $isPackwizAvailable) {
+        Clear-Host
+        Write-Host
+        Write-Host "Install packwiz and add its folder to the environment variable 'Path'`n" -ForegroundColor Red
+        Write-Host "packwiz can be downloaded here: " -NoNewline
+        Write-Host "https://github.com/WhitePhant0m/packwiz/releases" -ForegroundColor Blue
+        Write-Host
+        Write-Host "When you're done, rerun this script.`n"
+
+        throw "packwiz not available. Please follow the instructions above."
+    }
+
+    $is7zAvailable = Get-Command 7z -ErrorAction SilentlyContinue
     if (-not $is7zAvailable) {
         Clear-Host
-        Write-Host 
+        Write-Host
         Write-Host "Install 7zip and add its folder to the environment variable 'Path'`n" -ForegroundColor Red
         Write-Host "7zip can be downloaded here: " -NoNewline
         Write-Host "https://www.7-zip.org/download.html" -ForegroundColor Blue
-        Write-Host 
+        Write-Host "Note: 7zip is required for server file creation."
+        Write-Host
         Write-Host "When you're done, rerun this script.`n"
 
-        throw "7zip not command available. Please follow the instructions above." 
+        throw "7zip not available. Please follow the instructions above."
     }
 
-    $isCurlAvailable = Get-Command $curl
+    $isCurlAvailable = Get-Command $curl -ErrorAction SilentlyContinue
 
     if (-not $isCurlAvailable) {
         Clear-Host
-        Write-Host 
+        Write-Host
         Write-Host "Install Curl and add its folder to the environment variable 'Path'`n" -ForegroundColor Red
         Write-Host "Curl can be downloaded here: " -NoNewline
         Write-Host "https://curl.se/download.html" -ForegroundColor Blue
         Write-Host "To install it, simply unzip the folder somewhere and point path to it."
-        Write-Host 
+        Write-Host
         Write-Host "When you're done, rerun this script.`n"
 
-        throw "curl not available. Please follow the instructions above." 
+        throw "curl not available. Please follow the instructions above."
     }
 }
 
 function New-ClientFiles {
     if ($ENABLE_CLIENT_FILE_MODULE) {
-        Write-Host 
-        Write-Host "Creating Client Files..." -ForegroundColor Cyan
-        Write-Host 
+        Write-Host
+        Write-Host "Creating Client Files using packwiz..." -ForegroundColor Cyan
+        Write-Host
 
-        $clientZip = "$CLIENT_ZIP_NAME.zip"
+        # Create output folder if it doesn't exist
+        if (!(Test-Path $outputFolder)) {
+            New-Item -ItemType Directory -Path $outputFolder | Out-Null
+            Write-Host "Created output folder: $outputFolder" -ForegroundColor Cyan
+        }
+
+        $clientZip = "$outputFolder/$CLIENT_ZIP_NAME.zip"
 
         Remove-Item $clientZip -Recurse -Force -ErrorAction SilentlyContinue
-        
-        
-        New-ManifestJson
 
-        if (Test-Path -PathType Container $overridesFolder) {
-            Write-Host "The folder 'overrides' will be removed by manifest generation." -ForegroundColor Red
-            Write-Host "Press any key to proceed, CTRL + C To cancel."
-            pause
-        }
+        Write-Host "Running packwiz cf export..." -ForegroundColor Cyan
 
-        Remove-Item $overridesFolder -Force -Recurse -ErrorAction SilentlyContinue
-        New-Item -ItemType Directory $overridesFolder
-        
-        $FOLDERS_TO_INCLUDE_IN_CLIENT_FILES | ForEach-Object {
-            Write-Host "Adding " -ForegroundColor Cyan -NoNewline
-            Write-Host $_ -ForegroundColor Blue -NoNewline
-            Write-Host " to client files." -ForegroundColor Cyan
-            $destinationFolder = "$overridesFolder/$_" | Split-Path
-            if (!(Test-Path -Path $destinationFolder)) {
-                New-Item $destinationFolder -Type Directory
+        try {
+            # Run packwiz cf export to create the CurseForge-compatible zip file
+            & packwiz cf export --output $clientZip
+
+            if (Test-Path $clientZip) {
+                Write-Host "Client files $clientZip created successfully using packwiz!" -ForegroundColor Green
+            } else {
+                throw "packwiz cf export did not create the expected output file"
             }
-            Copy-Item -Path $_ -Destination "$overridesFolder/$_" -Recurse
         }
-
-        if (Test-Path -PathType Container $modsFolder) {
-            Write-Host "The folder 'mods' will be removed by manifest generation." -ForegroundColor Red
-            Write-Host "Press any key to proceed, CTRL + C To cancel."
-            pause
+        catch {
+            Write-Host "Error running packwiz cf export: $_" -ForegroundColor Red
+            throw "Failed to create client files using packwiz: $_"
         }
-
-        Remove-Item $modsFolder -Force -Recurse -ErrorAction SilentlyContinue
-        New-Item -ItemType Directory $modsFolder
-
-        $FILES_TO_INCLUDE_IN_MODS_FOLDER | ForEach-Object {
-            Write-Host "Adding " -ForegroundColor Cyan -NoNewline
-            Write-Host $_ -ForegroundColor Blue -NoNewline
-            Write-Host " to client files." -ForegroundColor Cyan
-            $destinationFolder = "$overridesFolder/$_" | Split-Path
-            if (!(Test-Path -Path $destinationFolder)) {
-                New-Item $destinationFolder -Type Directory
-            }
-            Copy-Item -Path $_ -Destination "$overridesFolder/$_" -Recurse
-        }
-
-        Remove-BlacklistedFiles
-
-        # Zipping up the newly created overrides folder and $manifest
-        7z a $clientZip ($overridesFolder, $manifest) -r -sdel
-
-        # Remove-Item $manifest -Force -Recurse -ErrorAction SilentlyContinue
-        Write-Host "Client files $clientZip created!" -ForegroundColor Green
-
-    }
-}
-
-function New-ManifestJson {
-    if (!(Test-Path $minecraftInstanceFile)) {
-        Write-Host "Generating a $manifest requires a $minecraftInstanceFile file." -ForegroundColor Red
-    }
-
-    $minecraftInstanceJson = Get-Content $minecraftInstanceFile | ConvertFrom-Json
-
-    $mods = [System.Collections.ArrayList]@()
-    foreach ($addon in $minecraftInstanceJson.installedAddons) {
-        $mods.Add(@{
-                required    = $true
-                projectID   = $addon.addonID
-                fileID      = $addon.installedFile.id
-                downloadUrl = $addon.installedFile.downloadUrl
-            }) > $null
-    }
-
-    $modloaderId = $minecraftInstanceJson.baseModLoader.name
-
-    if ($MODLOADER -eq "fabric") {
-        # Example output: "fabric-0.13.3-1.18.1"
-        $splitModloaderId = $modloaderId -split "-"
-        # Only keep "fabric-0.13.3"
-        $modloaderId = $splitModloaderId[0] + "-" + $splitModloaderId[1]
-    }
-
-    $jsonOutput = @{
-        minecraft       = @{
-            version    = $minecraftInstanceJson.baseModLoader.minecraftVersion
-            modLoaders = @(@{
-                    id      = $modloaderId
-                    primary = $true
-                })
-        }
-        manifestType    = "minecraftModpack"
-        manifestVersion = 1
-        name            = $MODPACK_NAME
-        version         = $MODPACK_VERSION
-        author          = $CLIENT_FILE_AUTHOR
-        files           = $mods
-        overrides       = "overrides"
-    } 
-
-    Remove-Item $manifest -Force -Recurse -ErrorAction SilentlyContinue
-    $jsonString = $jsonOutput | ConvertTo-Json -Depth 3
-    $outfile = "$INSTANCE_ROOT/$manifest"
-    [System.IO.File]::WriteAllLines($outfile, $jsonString)
-    Write-Host "$manifest created!" -ForegroundColor Green
-}
-
-function Remove-BlacklistedFiles {
-    if ($ENABLE_CLIENT_FILE_MODULE -or $ENABLE_SERVER_FILE_MODULE) {    
-        $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES | ForEach-Object {
-            Write-Host "Removing overrides/$_"
-            Remove-Item -Path "overrides/$_" -Recurse -ErrorAction SilentlyContinue
-        }
-    
-        $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES | ForEach-Object {
-            Write-Host "Removing overrides/config/$_"
-            Remove-Item -Path "overrides/config/$_" -Recurse -ErrorAction SilentlyContinue
-        }
-    
-        Write-Host "Removing all .bak files from overrides" -ForegroundColor Cyan
-        Get-ChildItem "overrides/*.bak" | ForEach-Object { 
-            Write-Host "Removing $($_.FullName)"
-            Remove-Item -Path $_.FullName -Force -ErrorAction SilentlyContinue
-        }    
     }
 }
 
@@ -213,24 +131,24 @@ function New-Changelog {
     if ($ENABLE_CHANGELOG_GENERATOR_MODULE `
             -and $null -ne $MODPACK_VERSION `
             -and $null -ne $LAST_MODPACK_VERSION `
-            -and (Test-Path "$INSTANCE_ROOT/$LAST_MODPACK_ZIP_NAME.zip") `
-            -and (Test-Path "$INSTANCE_ROOT/$CLIENT_ZIP_NAME.zip")
+            -and (Test-Path "$outputFolder/$LAST_MODPACK_ZIP_NAME.zip") `
+            -and (Test-Path "$outputFolder/$CLIENT_ZIP_NAME.zip")
     ) {
         if (-not (Test-Path $CHANGELOG_GENERATOR_JAR) -or $ENABLE_ALWAYS_UPDATE_JARS) {
             Remove-Item $CHANGELOG_GENERATOR_JAR -Recurse -Force -ErrorAction SilentlyContinue
             Get-GitHubRelease -repo "ModdingX/ModListCreator" -file $CHANGELOG_GENERATOR_JAR
         }
-        Write-Host 
+        Write-Host
         Write-Host "Generating mod changelog..." -ForegroundColor Cyan
-        Write-Host 
+        Write-Host
 
         Remove-Item $CHANGELOG_PATH -ErrorAction SilentlyContinue
 
         java -jar $CHANGELOG_GENERATOR_JAR `
             changelog `
             --output $CHANGELOG_PATH `
-            --new "$CLIENT_ZIP_NAME.zip" `
-            --old "$LAST_MODPACK_ZIP_NAME.zip"
+            --new "$outputFolder/$CLIENT_ZIP_NAME.zip" `
+            --old "$outputFolder/$LAST_MODPACK_ZIP_NAME.zip"
 
         Write-Host "Mod changelog generated!" -ForegroundColor Green
     }
@@ -238,14 +156,11 @@ function New-Changelog {
 
 function Push-ClientFiles {
     if ($ENABLE_MODPACK_UPLOADER_MODULE) {
+        # Note: When using packwiz, file inclusion/exclusion is handled through ".packwizignore"
 
-        if ($ENABLE_CLIENT_FILE_MODULE -eq $false) {
-            Remove-BlacklistedFiles
-        }
-
-        # This ugly json seems to be a necessity, 
+        # This ugly json seems to be a necessity,
         # I have yet to get @{} and ConvertTo-Json to work with the CurseForge Upload API
-        $CLIENT_METADATA = 
+        $CLIENT_METADATA =
         "{
             changelog: `'$CLIENT_CHANGELOG`',
             changelogType: `'$CLIENT_CHANGELOG_TYPE`',
@@ -258,7 +173,7 @@ function Push-ClientFiles {
         Write-Host "Client Metadata:" -ForegroundColor Cyan
         Write-Host
         Write-Host $CLIENT_METADATA -ForegroundColor Blue
-        
+
         Write-Host
         Write-Host "Uploading client files to https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" -ForegroundColor Green
         Write-Host
@@ -269,9 +184,9 @@ function Push-ClientFiles {
             -H "Accept: application/json" `
             -H X-Api-Token:$CURSEFORGE_TOKEN `
             -F metadata=$CLIENT_METADATA `
-            -F file=@"$CLIENT_ZIP_NAME.zip" `
+            -F file=@"$outputFolder/$CLIENT_ZIP_NAME.zip" `
             --progress-bar | ConvertFrom-Json
-       
+
 
         $clientFileReturnId = $response.id
 
@@ -280,9 +195,9 @@ function Push-ClientFiles {
             throw "Failed to upload client files: $response"
         }
 
-        Write-Host 
+        Write-Host
         Write-Host "Uploaded modpack!" -ForegroundColor Green
-        Write-Host 
+        Write-Host
         Write-Host "Return Id: $clientFileReturnId" -ForegroundColor Cyan
         Write-Host
 
@@ -305,7 +220,7 @@ function Update-FileLinkInServerFiles {
         # CurseForge replaces whitespace in filenames with + in their CDN urls
         $sanitizedClientZipName = $CLIENT_ZIP_NAME.Replace(" ", "+")
         $curseForgeCdnUrl = "https://mediafilez.forgecdn.net/files/$idPart1/$idPart2/$sanitizedClientZipName.zip"
-        $content = (Get-Content -Path $SERVER_SETUP_CONFIG_PATH) -replace "https://mediafilez.forgecdn.net/files/\d+/\d+/.*.zip", $curseForgeCdnUrl 
+        $content = (Get-Content -Path $SERVER_SETUP_CONFIG_PATH) -replace "https://mediafilez.forgecdn.net/files/\d+/\d+/.*.zip", $curseForgeCdnUrl
         [System.IO.File]::WriteAllLines(($SERVER_SETUP_CONFIG_PATH | Resolve-Path), $content)
 
         if ($ENABLE_SERVER_FILE_MODULE) {
@@ -319,14 +234,18 @@ function New-ServerFiles {
         [int]$ClientFileReturnId
     )
     if ($ENABLE_SERVER_FILE_MODULE) {
-        $serverZip = "$SERVER_ZIP_NAME.zip"
+        # Create output folder if it doesn't exist
+        if (!(Test-Path $outputFolder)) {
+            New-Item -ItemType Directory -Path $outputFolder | Out-Null
+        }
+
+        $serverZip = "$outputFolder/$SERVER_ZIP_NAME.zip"
         Remove-Item $serverZip -Force -ErrorAction SilentlyContinue
-        Write-Host 
+        Write-Host
         Write-Host "Creating server files..." -ForegroundColor Cyan
-        Write-Host 
+        Write-Host
         7z a -tzip $serverZip "$SERVER_FILES_FOLDER/*"
-        Move-Item -Path "automation/$serverZip" -Destination $serverZip -ErrorAction SilentlyContinue
-        Write-Host "Server files created!" -ForegroundColor Green
+        Write-Host "Server files created: $serverZip" -ForegroundColor Green
 
         if ($ENABLE_MODPACK_UPLOADER_MODULE) {
             Push-ServerFiles -clientFileReturnId $clientFileReturnId
@@ -339,9 +258,9 @@ function Push-ServerFiles {
         [int]$clientFileReturnId
     )
     if ($ENABLE_SERVER_FILE_MODULE -and $ENABLE_MODPACK_UPLOADER_MODULE) {
-        $serverFilePath = "$SERVER_ZIP_NAME.zip"
+        $serverFilePath = "$outputFolder/$SERVER_ZIP_NAME.zip"
 
-        $SERVER_METADATA = 
+        $SERVER_METADATA =
         "{
         'changelog': `'$SERVER_CHANGELOG`',
         'changelogType': `'$SERVER_CHANGELOG_TYPE`',
@@ -350,9 +269,9 @@ function Push-ServerFiles {
         'releaseType': `'$SERVER_RELEASE_TYPE`'
         }"
 
-        Write-Host 
+        Write-Host
         Write-Host "Uploading server files..." -ForegroundColor Cyan
-        Write-Host 
+        Write-Host
 
         $serverFileResponse = & $curl `
             --url "https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" `
@@ -378,11 +297,11 @@ function New-GitHubRelease {
 
         $Base64Token = [System.Convert]::ToBase64String([char[]]$GITHUB_TOKEN);
         $Uri = "https://api.github.com/repos/$GITHUB_NAME/$GITHUB_REPOSITORY/releases?access_token=$GITHUB_TOKEN"
-    
+
         $Headers = @{
             Authorization = 'Basic {0}' -f $Base64Token;
         };
-    
+
         $Body = @{
             tag_name         = $MODPACK_VERSION
             target_commitish = 'master'
@@ -392,15 +311,62 @@ function New-GitHubRelease {
             prerelease       = $false
         } | ConvertTo-Json
 
-    
-        Write-Host 
+
+        Write-Host
         Write-Host "Making GitHub Release..." -ForegroundColor Green
-        Write-Host 
-    
+        Write-Host
+
         Invoke-RestMethod -Headers $Headers -Uri $Uri -Body $Body -Method Post
-        
+
         Start-Process Powershell.exe -Argument "-NoProfile -Command github_changelog_generator"
     }
+}
+
+function Update-PackToml {
+  if ($UPDATE_PACK_TOML) {
+    Write-Host
+    Write-Host "Updating pack.toml with settings..." -ForegroundColor Cyan
+    Write-Host
+
+    $packTomlPath = "$INSTANCE_ROOT/pack.toml"
+
+    if (!(Test-Path $packTomlPath)) {
+        Write-Host "pack.toml not found at $packTomlPath" -ForegroundColor Red
+        throw "pack.toml file is required for packwiz operation"
+    }
+
+    # Read the current pack.toml content
+    $packTomlContent = Get-Content $packTomlPath -Raw
+
+    # Update name, version, and author using regex replacement
+    $packTomlContent = $packTomlContent -replace '(?m)^name\s*=\s*".*"', "name = `"$MODPACK_NAME`""
+    $packTomlContent = $packTomlContent -replace '(?m)^author\s*=\s*".*"', "author = `"$CLIENT_FILE_AUTHOR`""
+    $packTomlContent = $packTomlContent -replace '(?m)^version\s*=\s*".*"', "version = `"$MODPACK_VERSION`""
+
+    # Update modloader version in the [versions] section
+    $packTomlContent = $packTomlContent -replace "(?m)^$MODLOADER\s*=\s*`".*`"", "$MODLOADER = `"$MODLOADER_VERSION`""
+
+    # Write the updated content back to pack.toml
+    [System.IO.File]::WriteAllText($packTomlPath, $packTomlContent)
+
+    Write-Host "Updated pack.toml:" -ForegroundColor Green
+    Write-Host "  name = `"$MODPACK_NAME`"" -ForegroundColor Cyan
+    Write-Host "  author = `"$CLIENT_FILE_AUTHOR`"" -ForegroundColor Cyan
+    Write-Host "  version = `"$MODPACK_VERSION`"" -ForegroundColor Cyan
+    Write-Host "  $MODLOADER = `"$MODLOADER_VERSION`"" -ForegroundColor Cyan
+
+    Write-Host
+    Write-Host "Running packwiz refresh..." -ForegroundColor Cyan
+
+    try {
+        & packwiz refresh
+        Write-Host "packwiz refresh completed successfully!" -ForegroundColor Green
+    }
+    catch {
+        Write-Host "Error running packwiz refresh: $_" -ForegroundColor Red
+        throw "Failed to run packwiz refresh: $_"
+    }
+  }
 }
 
 function Update-Modlist {
@@ -413,9 +379,9 @@ function Update-Modlist {
         Write-Host
         Write-Host "Generating Modlist..."
         Write-Host
-	
+
         Remove-Item $MODLIST_PATH -ErrorAction SilentlyContinue
-        java -jar $MODLIST_CREATOR_JAR modlist --output $MODLIST_PATH --detailed "$CLIENT_ZIP_NAME.zip"
+        java -jar $MODLIST_CREATOR_JAR modlist --output $MODLIST_PATH --detailed "$outputFolder/$CLIENT_ZIP_NAME.zip"
         Copy-Item -Path $MODLIST_PATH -Destination "$INSTANCE_ROOT/MODLIST.md"
     }
 }
@@ -440,6 +406,7 @@ else {
 
 Test-ForDependencies
 Validate-SecretsFile
+Update-PackToml
 New-ClientFiles
 Push-ClientFiles
 if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {

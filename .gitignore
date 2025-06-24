@@ -21,11 +21,24 @@
 !minecraftinstance.json
 !user-prefs.json
 !version-info.json
+!/mods/
+!/resourcepacks/
+/resourcepacks/*.zip
+!/shaderpacks/
+/shaderpacks/*.zip
+!/index.toml
+!/pack.toml
+!/.packwizignore
 
 Server Test/
 knownkeys.txt
 automation/secrets.ps1
+automation/exports
 .curseclient
+
+/mods/*.jar
+/mods/.index
+*.disabled
 
 # Specific Mod Junk
 # ---
@@ -37,7 +50,6 @@ config/ars_nouveau/search_index/
 # ---
 *.bak
 /*.zip
-resourcepacks/*.zip
 .DS_Store
 Thumbs.db
 
