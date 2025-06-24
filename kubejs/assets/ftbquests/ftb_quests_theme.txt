@@ -105,6 +105,15 @@ dependency_line_thickness:          0.5
 dependency_line_uncompleted_color:  #F8ccb400
 dependency_line_unavailable_color:  #88ccb400
 
+# Create
+[0644AB97E8D8839B]
+background:                         ftbquests:textures/gui/background_white.png; color=#042029; tile_size=64
+dependency_line_texture:            ftbquests:textures/gui/belt_scroll.png
+dependency_line_thickness:          1
+dependency_line_selected_speed:     0.5
+dependency_line_unselected_speed:   0.75
+
+
 # Organized Storage
 [1CFBA632673ABBFD]
 dependency_line_uncompleted_color:  #F8fcf4dc
@@ -126,7 +135,7 @@ dependency_line_uncompleted_color:  #F8ffeee4
 
 # Mekanism: Ore Processing
 [33E8845C982DC0F2]
-background:                         ftbquests:textures/gui/background_white.png; color=#F8738a05  ; tile_size=64
+background:                         ftbquests:textures/gui/background_white.png; color=#F8738a05; tile_size=64
 dependency_line_texture:            ftbquests:textures/gui/flowing_mekanism.png
 dependency_line_completed_color:    #F8eae3cb
 dependency_line_uncompleted_color:  #C8eae3cb
