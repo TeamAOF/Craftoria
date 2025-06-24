@@ -218,7 +218,8 @@ ServerEvents.tags('block', e => {
     '@extended_industrialization',
     '@industrialization_overdrive',
     '@industrialforegoingsouls',
-  ]);
+    '@justdirethings',
+  ]).remove([/^justdirethings:gooblock_tier.$/]);
 });
 
 ServerEvents.tags('fluid', e => {
