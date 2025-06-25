@@ -223,6 +223,7 @@ ServerEvents.tags('block', e => {
     '@industrialization_overdrive',
     '@industrialforegoingsouls',
     '@justdirethings',
+    '@laserio',
   ]).remove([/^justdirethings:gooblock_tier.$/]);
 });
 
