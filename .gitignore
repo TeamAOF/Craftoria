@@ -8,6 +8,9 @@
 !/defaultconfigs
 !/emotes
 !/kubejs
+!/mods
+!/resourcepacks
+!/shaderpacks
 !/server_files
 !/.gitignore
 !/.gitattributes
@@ -36,6 +39,10 @@ automation/exports
 
 /mods/*.jar
 /mods/.index
+/resourcepacks/*.zip
+/resourcepacks/*/
+/shaderpacks/*.zip
+/shaderpacks/*/
 *.disabled
 
 # Specific Mod Junk
