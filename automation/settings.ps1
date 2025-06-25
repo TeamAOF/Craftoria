@@ -33,12 +33,15 @@ $MODPACK_VERSION = "1.21.3"
 $LAST_MODPACK_VERSION = "1.21.2"
 
 # Which modloader the modpack uses
-# Can be "forge" or "fabric"
-# default: "forge"
-$MODLOADER = "neoforge"
+# Use proper capitalization for display (e.g., "NeoForge", "Fabric", "Forge")
+# Script will automatically convert to lowercase where needed for technical compatibility
+$MODLOADER = "NeoForge"
 
 # Version of the modloader
 $MODLOADER_VERSION = "21.1.176"
+
+# Minecraft Version (for display purposes)
+$MINECRAFT_VERSION = "1.21.1"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS

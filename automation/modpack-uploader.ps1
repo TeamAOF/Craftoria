@@ -344,7 +344,8 @@ function Update-PackToml {
     $packTomlContent = $packTomlContent -replace '(?m)^version\s*=\s*".*"', "version = `"$MODPACK_VERSION`""
 
     # Update modloader version in the [versions] section
-    $packTomlContent = $packTomlContent -replace "(?m)^$MODLOADER\s*=\s*`".*`"", "$MODLOADER = `"$MODLOADER_VERSION`""
+    $modloaderLower = $MODLOADER.ToLower()
+    $packTomlContent = $packTomlContent -replace "(?m)^$modloaderLower\s*=\s*`".*`"", "$modloaderLower = `"$MODLOADER_VERSION`""
 
     # Write the updated content back to pack.toml
     [System.IO.File]::WriteAllText($packTomlPath, $packTomlContent)
@@ -353,7 +354,7 @@ function Update-PackToml {
     Write-Host "  name = `"$MODPACK_NAME`"" -ForegroundColor Cyan
     Write-Host "  author = `"$CLIENT_FILE_AUTHOR`"" -ForegroundColor Cyan
     Write-Host "  version = `"$MODPACK_VERSION`"" -ForegroundColor Cyan
-    Write-Host "  $MODLOADER = `"$MODLOADER_VERSION`"" -ForegroundColor Cyan
+    Write-Host "  $modloaderLower = `"$MODLOADER_VERSION`"" -ForegroundColor Cyan
 
     Write-Host
     Write-Host "Running packwiz refresh..." -ForegroundColor Cyan
@@ -393,6 +394,46 @@ function Remove-LeadingZero {
     return [int]$text
 }
 
+function Update-VersionFiles {
+    Write-Host
+    Write-Host "Updating version information in config files..." -ForegroundColor Cyan
+    Write-Host
+
+    # Update version_info.json
+    $versionInfoPath = "$INSTANCE_ROOT/version_info.json"
+    if (Test-Path $versionInfoPath) {
+        $versionInfo = Get-Content $versionInfoPath | ConvertFrom-Json
+        $versionInfo.version = $MODPACK_VERSION
+        $versionInfoJson = $versionInfo | ConvertTo-Json -Depth 3
+        [System.IO.File]::WriteAllLines($versionInfoPath, $versionInfoJson)
+        Write-Host "Updated version_info.json: version = `"$MODPACK_VERSION`"" -ForegroundColor Green
+    }
+
+    # Update bcc-common.toml
+    $bccConfigPath = "$INSTANCE_ROOT/config/bcc-common.toml"
+    if (Test-Path $bccConfigPath) {
+        $bccContent = Get-Content $bccConfigPath -Raw
+        $bccContent = $bccContent -replace '(?m)^(\s*)modpackName\s*=\s*".*"', "`$1modpackName = `"$MODPACK_NAME`""
+        $bccContent = $bccContent -replace '(?m)^(\s*)modpackVersion\s*=\s*".*"', "`$1modpackVersion = `"$MODPACK_VERSION`""
+        [System.IO.File]::WriteAllText($bccConfigPath, $bccContent)
+        Write-Host "Updated bcc-common.toml: modpackName = `"$MODPACK_NAME`", modpackVersion = `"$MODPACK_VERSION`"" -ForegroundColor Green
+    }
+
+    # Update FancyMenu craftoria.txt
+    $fancyMenuPath = "$INSTANCE_ROOT/config/fancymenu/customization/craftoria.txt"
+    if (Test-Path $fancyMenuPath) {
+        $fancyMenuContent = Get-Content $fancyMenuPath -Raw
+        $displayModloader = $MODLOADER
+        # Update the version text in the FancyMenu layout
+        $newVersionText = "$MODPACK_NAME - $MODPACK_VERSION%n%Minecraft $MINECRAFT_VERSION/$displayModloader"
+        $fancyMenuContent = $fancyMenuContent -replace '(?m)^(\s*)source\s*=\s*.*%n%.*', "`$1source = $newVersionText"
+        [System.IO.File]::WriteAllText($fancyMenuPath, $fancyMenuContent)
+        Write-Host "Updated craftoria.txt: source = `"$newVersionText`"" -ForegroundColor Green
+    }
+
+    Write-Host "Version file updates completed!" -ForegroundColor Green
+}
+
 $startLocation = Get-Location
 Set-Location $INSTANCE_ROOT
 
@@ -406,6 +447,7 @@ else {
 
 Test-ForDependencies
 Validate-SecretsFile
+Update-VersionFiles
 Update-PackToml
 New-ClientFiles
 Push-ClientFiles
