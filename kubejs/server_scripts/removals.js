@@ -33,7 +33,13 @@ const globalItemRemovals = [
 ];
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
-const disabledItems = [];
+const disabledItems = [
+  { id: 'bigger_ae2:4_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_4' },
+  { id: 'bigger_ae2:16_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_16' },
+  { id: 'bigger_ae2:64_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_64' },
+  { id: 'bigger_ae2:256_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_256' },
+  { id: 'bigger_ae2:1024_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_1k' },
+];
 
 ServerEvents.recipes(event => {
   /** @type {Special.RecipeId[]} */
@@ -78,6 +84,7 @@ ServerEvents.recipes(event => {
 
   disabledItems.forEach(item => {
     if (item.altId) {
+      event.shapeless(item.altId, [item.id]);
       event.replaceInput({ input: item.id }, item.id, item.altId);
       event.remove({ output: item.id });
     } else event.remove({ output: item.id });
