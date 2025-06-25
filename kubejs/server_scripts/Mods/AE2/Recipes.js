@@ -26,4 +26,30 @@ ServerEvents.recipes(event => {
     'extendedae:concurrent_processor',
     '6x #ae2:glass_cable'
   ], null, 'advanced_ae:eaelargeappupgrade');
+
+  ae2.crystalAssembler('expandedae:exp_pattern_provider', [
+    '#extendedae:extended_pattern_provider',
+    '4x ae2:capacity_card',
+    '4x ae2:engineering_processor',
+  ], null, 'expandedae:crafting/exp_pattern_provider');
+
+  event.shapeless('expandedae:exp_pattern_provider_upgrade', [
+    '#expandedae:exp_pattern_provider',
+    '#ae2:metal_ingots',
+  ]).id('expandedae:crafting/exp_pattern_provider_upgrade');
+
+  /** @type {Special.RecipeId[]} */
+  const toAE2Metal = [
+    'extendedae:ex_pattern_provider_upgrade',
+    'extendedae:ex_interface_upgrade',
+    'extendedae:ex_bus_upgrade_alt',
+    'extendedae:ex_bus_upgrade',
+    'extendedae:ex_pattern_access_terminal_upgrade',
+    'extendedae:ex_drive_upgrade',
+    'advanced_ae:smallappupgrade',
+  ];
+
+  toAE2Metal.forEach(id => {
+    event.replaceInput({ id: id }, 'minecraft:iron_ingot', '#ae2:metal_ingots');
+  });
 });
