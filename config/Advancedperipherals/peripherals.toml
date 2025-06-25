@@ -70,6 +70,10 @@
 		chatBoxWrapCommand = true
 		#These commands below will not be able to send by 'run_command' or 'suggest_command' action. It will match as prefix if starts with '/', other wise use regex pattern
 		chatBoxBannedCommands = ["/execute", "/op", "/deop", "/gamemode", "/gamerule", "/stop", "/give", "/fill", "/setblock", "/summon", "/whitelist", "^/ban-(?:ip)?\\s*", "^/pardon-(?:ip)?\\s*", "^/save-(?:on|off)\\s*"]
+		#Defines the maximal number of characters in a message. Depending on the modpack and server, too large messages can't unexpectedly disconnect players
+		# Default: 1024
+		# Range: 0 ~ 8192
+		chatBoxMessageSize = 1024
 
 	[Peripherals.ME_Bridge]
 		#Enable the Me Bridge or not.

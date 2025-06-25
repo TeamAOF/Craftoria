@@ -8,7 +8,7 @@ mod_parents = []
 	sorting = "ASCENDING"
 	#Makes list more compacted
 	compact_list = false
-	#Allowed Values: CLASSIC, REPLACE_REALMS, SHRINK, ICON
+	#Allowed Values: CLASSIC, REPLACE_REALMS, SHRINK, SHRINK_LEFT, ICON
 	mods_button_style = "CLASSIC"
 	#Allowed Values: REPLACE, INSERT, ICON
 	game_menu_button_style = "REPLACE"
@@ -56,6 +56,8 @@ mod_parents = []
 	library_list = []
 	#Add id of the badge to hide it
 	hide_badge = []
+	#Hides search bar and drag and drop text, also moves mod's icon up
+	hide_screen_top = false
 
 	#deprecated
 	[hide.disable_default_badges_section]

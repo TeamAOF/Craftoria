@@ -1831,6 +1831,17 @@
 		CooldownInSeconds = 2.0
 		AllowCrafting = true
 
+	[Spells."irons_spellbooks:pocket_dimension"]
+		Enabled = true
+		School = "irons_spellbooks:eldritch"
+		MaxLevel = 1
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 60.0
+		AllowCrafting = true
+
 	#Configure Boss Stats
 	["Boss Config".Tyros]
 		#Additional Health

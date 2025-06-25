@@ -61,7 +61,24 @@
     },
     "treatBindingCurse": true,
     "generateGraveInVoid": true,
-    "lowestGraveY": 3,
+    "minimumGraveYLevel": [
+      {
+        "key": "minecraft:overworld",
+        "value": -60
+      },
+      {
+        "key": "minecraft:the_nether",
+        "value": 3
+      },
+      {
+        "key": "minecraft:the_end",
+        "value": 3
+      },
+      {
+        "key": "misc",
+        "value": 3
+      }
+    ],
     "generateOnlyWithinBorder": true,
     "ignoredDeathTypes": [],
     "unlockable": true,

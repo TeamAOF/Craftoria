@@ -230,6 +230,13 @@
 			# Range: 0.0 ~ 10.0
 			break_radius = 1.1
 
+		[functional.cannon.cannon_boat]
+			enabled = true
+			#Cannon boat recoil multiplier. Higher values will make the cannon boat recoil more when firing a cannonball
+			# Default: 0.5
+			# Range: 0.0 ~ 5.0
+			recoil_multiplier = 0.5
+
 	[functional.present]
 		enabled = true
 		trapped_present = true
@@ -377,6 +384,8 @@
 	[building.globe]
 		enabled = true
 		sepia_globe = true
+		#Displays current coordinates when using a globe
+		show_coordinates = true
 
 	[building.daub]
 		enabled = true
@@ -668,8 +677,6 @@
 		mixed_books = false
 		#Allow books and enchanted books to be placed on the ground
 		enabled = true
-		#Allows written books to be placed down. Requires shift clicking
-		written_books = true
 
 	[tweaks.zombie_horse]
 		#Feed a stack of rotten flesh to a skeleton horse to buff him up to a zombie horse
@@ -705,8 +712,6 @@
 		enabled = true
 		#Allow slimeballs to be thrown
 		throwable_slimeballs = true
-		#Show a slime overlay when you hit an entity with a slimeball
-		overlay = true
 		#Thrown slimeballs will shortly nerf the player jump height. Disable if you don't want this effect as it can be quite powerful
 		#Allowed Values: NEVER, ALWAYS, NORMAL_DIFFICULTY, HARD_DIFFICULTY
 		hinders_jump = "NORMAL_DIFFICULTY"
@@ -722,3 +727,9 @@
 	[tweaks.dragon_banner_pattern]
 		#Adds dragon banner pattern made from dragon head
 		enabled = true
+
+	[tweaks.clock_and_compass]
+		#Allow to right click with a clock to display current time in numerical form
+		clock_right_click = true
+		#Allow to right click with a compass to display current coordinates in numerical form
+		compass_right_click = false

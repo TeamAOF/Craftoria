@@ -14,13 +14,16 @@ anvilBreakParticles = true
 anvilUseParticles = true
 grindstoneUseParticles = false
 smithingTableUseParticles = true
+stonecutterUseParticles = true
+cauldronUseParticles = true
+cauldronCleanItemSounds = true
+compostingCompostParticles = true
+compostingItemParticles = true
 commandBlockParticles = "ON"
 slimeBlockBounceSounds = true
 beaconParticlesDisplayType = "ON"
 beaconParticlesDensity = 10
 beaconParticlesSpeed = 1.0
-compostingCompostParticles = true
-compostingItemParticles = true
 respawnAnchorParticles = true
 beehiveShearParticles = true
 endPortalParticles = true
@@ -40,10 +43,12 @@ vegetationFirefliesSpawnType = "FLOWERS_ONLY"
 replacePowderSnowFlakes = true
 lavaCauldronEffects = true
 enderEyePlacedRings = true
+enderEyePlacedRingsDuration = 10
 enderEyePlacedParticlesDisplayType = "BOTH"
 eyeColors = [
     [ "minecraft:ender_eye", { r = 122, g = 186, b = 171 } ]
 ]
+endPortalFrameParticlesDisplayType = "SMOKE"
 replaceOminousVaultConnection = true
 
 [sparks]
