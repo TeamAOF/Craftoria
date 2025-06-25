@@ -225,6 +225,12 @@ ServerEvents.tags('block', e => {
     '@justdirethings',
     '@laserio',
   ]).remove([/^justdirethings:gooblock_tier.$/]);
+
+  e.add('industrialforegoingsouls:cant_accelerate', [
+    '@industrialforegoingsouls',
+    '@justdirethings',
+    '@laserio',
+  ]).remove([/^justdirethings:gooblock_tier.$/]);
 });
 
 ServerEvents.tags('fluid', e => {
