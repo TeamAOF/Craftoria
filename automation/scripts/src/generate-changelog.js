@@ -34,10 +34,18 @@ async function initializeConfig() {
   CONFIG.packVersion ||= packMetadata.version;
 
   const [oldPackMetadata] = await getCommitMetadataFiles(CONFIG.cutoffCommitHash);
-  CONFIG.oldPackVersion ||= oldPackMetadata.version;
 
-  if (CONFIG.oldPackVersion === CONFIG.packVersion) {
-    throw new Error("You did not bump the pack version!");
+  if (oldPackMetadata) {
+    CONFIG.oldPackVersion ||= oldPackMetadata.version;
+
+    if (CONFIG.oldPackVersion === CONFIG.packVersion) {
+      throw new Error("You did not bump the pack version!");
+    }
+  } else {
+    // If no pack.toml exists in old commit, we can't compare versions
+    // Set a fallback old version or skip version comparison
+    CONFIG.oldPackVersion ||= "unknown";
+    console.warn("Old commit doesn't have pack.toml, version comparison skipped");
   }
 }
 
@@ -45,6 +53,15 @@ async function getCommitMetadataFiles(commitHash) {
   const folderName = `craftoria-${commitHash}-${Date.now()}`;
   const folderPath = path.join(os.tmpdir(), folderName);
   const packwizGlob = new Glob("*.pw.toml");
+
+  // Check if pack.toml exists in this commit before trying to archive it
+  try {
+    await $`git cat-file -e ${commitHash}:pack.toml`;
+  } catch (error) {
+    // pack.toml doesn't exist in this commit, return null to indicate no packwiz data
+    console.warn(`pack.toml not found in commit ${commitHash}, skipping mod comparison for this commit`);
+    return [null, {}];
+  }
 
   await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} pack.toml mods/`;
   await $`mkdir ${folderPath}`;
@@ -166,7 +183,7 @@ function generateChangelogContent(features, fixes, addedMods, removedMods) {
 function generateModChangelog(addedMods, removedMods, changedMods, oldPackMetadata) {
   const sections = [
     `## Craftoria - ${CONFIG.oldPackVersion} -> ${CONFIG.packVersion}`,
-    packMetadata.versions.neoforge !== oldPackMetadata.versions.neoforge &&
+    oldPackMetadata && packMetadata.versions.neoforge !== oldPackMetadata.versions.neoforge &&
       `### NeoForge - ${oldPackMetadata.versions.neoforge} -> ${packMetadata.versions.neoforge}`,
     addedMods.length && `### Added\n${addedMods.join("\n")}`,
     removedMods.length && `### Removed\n${removedMods.join("\n")}`,
