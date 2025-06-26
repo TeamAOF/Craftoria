@@ -16,9 +16,10 @@ LootJS.lootTables(e => {
   e.create('bosses_of_mass_destruction:entities/gauntlet', 'entity')
     .createPool().addEntry('2x bosses_of_mass_destruction:blazing_eye');
 
-  e.getEntityTable('ender_dragon')
-    .firstPool()
-    .addEntry(LootEntry.of('dragon_head').randomChanceWithEnchantment('looting', [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]));
+  if (!Platform.isLoaded('pastel'))
+    e.getEntityTable('ender_dragon')
+      .firstPool()
+      .addEntry(LootEntry.of('dragon_head').randomChanceWithEnchantment('looting', [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]));
 
   e.getEntityTable('armadillo')
     .firstPool()
