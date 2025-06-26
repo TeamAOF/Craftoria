@@ -1,6 +1,5 @@
 ServerEvents.recipes(event => {
   const { model_synthesizer, assembler } = event.recipes.modern_industrialization;
-
   let dataModels = globalDataModels;
 
   event.resourceManager.getResourceStack(ID.mc('hostilenetworks:data_models')).forEach(resource => {
@@ -13,16 +12,18 @@ ServerEvents.recipes(event => {
       if (dataModels[ID.mc(entity)]) return; // Skip if we found it in the global data models (new or overridden models by us)
       if (!Platform.isLoaded(entityNamespace)) return;
       let modelLoc = `${resLoc.namespace}:${resLoc.path.replace('data_models/', '').replace('.json', '')}`;
+      let euCost = getNearestMultipleOfSixteen(sim_cost / 8);
 
       fabricator_drops.forEach((/** @type {{ id: Special.Item; count: number; }} */ drop) => {
         if (!Item.exists(drop.id)) return;
         let output = Item.of(drop.id, drop.count);
         let baseDrop = Item.of(base_drop.id, base_drop.count || 1);
-        let recipe = model_synthesizer(getNearestMultipleOfSixteen(sim_cost / 8), 20 * 5)
+        let recipe = model_synthesizer(euCost, 20 * 5)
           .itemIn(`hostilenetworks:data_model[hostilenetworks:data_model="${modelLoc}"]`, 0)
           .itemIn(input)
           .itemOut(output);
-        if (Item.exists(base_drop.id)) recipe.itemOut(baseDrop);
+        if (Item.exists(base_drop.id)) recipe.itemOut(baseDrop, 0.99999);
+        recipe.itemOut(`${Math.ceil(euCost / 8)}x ars_nouveau:greater_experience_gem`, 0.99999);
         recipe.id(`craftoria:mi/model_synthesizer/${entityPath}/${ID.path(output)}`);
       });
     });
@@ -33,6 +34,7 @@ ServerEvents.recipes(event => {
     let { namespace: entityNamespace, path: entityPath } = ID.mc(entity);
     if (!Platform.isLoaded(entityNamespace)) continue;
     let modelData = entityNamespace === 'minecraft' ? entityPath : `${entityNamespace}/${entityPath}`;
+    let euCost = getNearestMultipleOfSixteen(simCost / 8);
 
     fabricatorDrops.forEach((/** @type {$ItemStack_} */ drop) => {
       if (drop.includes('#')) {
@@ -48,21 +50,23 @@ ServerEvents.recipes(event => {
         drops.forEach(drop => {
           if (!Item.exists(drop.id)) return;
           let output = Item.of(drop.id, drop.count);
-          let recipe = model_synthesizer(getNearestMultipleOfSixteen(simCost / 8), 20 * 5)
+          let recipe = model_synthesizer(euCost, 20 * 5)
             .itemIn(`hostilenetworks:data_model[hostilenetworks:data_model="hostilenetworks:${modelData}"]`, 0)
             .itemIn(Ingredient.of(data.input || 'hostilenetworks:prediction_matrix', 1))
             .itemOut(output);
-          if (Item.exists(baseDrop)) recipe.itemOut(baseDrop);
+          if (Item.exists(baseDrop)) recipe.itemOut(baseDrop, 0.99999);
+          recipe.itemOut(`${Math.ceil(euCost / 8)}x ars_nouveau:greater_experience_gem`, 0.99999);
           recipe.id(`craftoria:mi/model_synthesizer/${entityPath}/${ID.path(output)}`);
         });
       } else {
         let output = Item.of(drop);
         if (!Item.exists(output.id) || output.id === 'minecraft:air') return;
-        let recipe = model_synthesizer(getNearestMultipleOfSixteen(simCost / 8), 20 * 5)
+        let recipe = model_synthesizer(euCost, 20 * 5)
           .itemIn(`hostilenetworks:data_model[hostilenetworks:data_model="hostilenetworks:${modelData}"]`, 0)
           .itemIn(Ingredient.of(data.input || 'hostilenetworks:prediction_matrix', 1))
           .itemOut(output);
-        if (Item.exists(baseDrop)) recipe.itemOut(baseDrop);
+        if (Item.exists(baseDrop)) recipe.itemOut(baseDrop, 0.99999);
+        recipe.itemOut(`${Math.ceil(euCost / 8)}x ars_nouveau:greater_experience_gem`, 0.99999);
         recipe.id(`craftoria:mi/model_synthesizer/${entityPath}/${ID.path(output)}`);
       }
     });

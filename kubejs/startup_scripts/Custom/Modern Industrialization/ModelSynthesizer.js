@@ -43,9 +43,9 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
   event.electricStandalone(
     'Model Synthesizer', 'model_synthesizer',
     MODEL_SYNTHESIZER, modelSynthShape,
-    event.progressBar(77 - 16, 33, 'arrow'),
-    itemInputs => itemInputs.addSlots(56 - 18 - 16, 35, 2, 1),
-    itemOutputs => itemOutputs.addSlots(102 - 16, 35, 2, 1),
+    event.progressBar(77 - 32, 33, 'arrow'),
+    itemInputs => itemInputs.addSlots(56 - 18 - 32, 35, 2, 1),
+    itemOutputs => itemOutputs.addSlots(102 - 32, 35, 3, 1),
     _ => { }, _ => { },
     'steel', 'model_synthesizer', true, false, false,
     8, 0.75
