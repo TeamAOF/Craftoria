@@ -1,3 +1,44 @@
+# Craftoria | v1.22.0
+
+_Neoforge_ 21.1.176 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.22.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.22.0.md)_
+
+### Changes/Improvements ⭐
+
+* Model Syntheziser now produces XP gems (each 8 eu/t gives one gem) `Phantom`
+* Deprecated BiggerAE2 crafting accelerators - SWAP TO EXPANDEDAE ONES `Phantom`
+* Blacklisted all of MI(+addons) from being tick accelerated via JDT `Phantom`
+* Made a bunch of recipes use wooden chests, instead of any chest `Phantom`
+* Buff oversize interfaces fluid stocking capacity from 64B -> 1024B `Phantom`
+* Disable shake module `AK`
+* Xychorium ores can now be processed with MI or Mekanism `Phantom`
+* Hide drowning bubbles in first person `AK`
+
+### Added Mods ✅
+
+* [Better Advancements](https://curseforge.com/projects/272515)
+* [Common Network](https://curseforge.com/projects/806044)
+* [Crystalix](https://curseforge.com/projects/1187033)
+* [EMI Loot](https://curseforge.com/projects/681783)
+* [Expanded AE](https://curseforge.com/projects/1213351)
+* [Iron's Apothic Invaders](https://curseforge.com/projects/1260996)
+* [Little Big Redstone](https://curseforge.com/projects/1180560)
+* [Mowzie's Mobs](https://curseforge.com/projects/250498)
+* [Particle Effects Reforged](https://curseforge.com/projects/1274497)
+* [Transfer Labels](https://curseforge.com/projects/1184406)
+* [What's Your Build](https://curseforge.com/projects/1233310)
+
+### Removed Mods ❌
+
+* [Advanced Loot Info](https://curseforge.com/projects/1205426)
+* [Advancements Reloaded](https://curseforge.com/projects/1113876)
+
+### Bug Fixes 🪲
+
+* Blacklist ars nouveau dummy from JDT creature catcher to prevent client crashes `Phantom`
+* Use correct resource location for data models, fixing errored models in recipes `Phantom`
+* Fixed gas burner(ethene) power gen re-balance missing `Phantom`
+* Pnc lube task out, mi lube task in `SubordinalBlue`
+---
 #  Craftoria | v1.21.3
 
 _Neoforge 21.1.176_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.21.3.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.21.3.md)_
