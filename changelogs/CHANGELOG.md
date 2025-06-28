@@ -1,3 +1,15 @@
+# Craftoria | v1.22.1
+
+_Neoforge_ 21.1.176 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.22.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.22.1.md)_
+
+### Removed Mods ❌
+
+* [Expanded AE](https://curseforge.com/projects/1213351)(fails to boot on server)
+
+### Bug Fixes 🪲
+
+* Fixed Server failing to boot(removed `Particle Effects Reforged` from server side) `Phantom`
+---
 # Craftoria | v1.22.0
 
 _Neoforge_ 21.1.176 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.22.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.22.0.md)_

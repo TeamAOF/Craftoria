@@ -34,11 +34,11 @@ const globalItemRemovals = [
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
 const disabledItems = [
-  { id: 'bigger_ae2:4_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_4' },
-  { id: 'bigger_ae2:16_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_16' },
-  { id: 'bigger_ae2:64_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_64' },
-  { id: 'bigger_ae2:256_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_256' },
-  { id: 'bigger_ae2:1024_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_1k' },
+  // { id: 'bigger_ae2:4_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_4' },
+  // { id: 'bigger_ae2:16_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_16' },
+  // { id: 'bigger_ae2:64_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_64' },
+  // { id: 'bigger_ae2:256_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_256' },
+  // { id: 'bigger_ae2:1024_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_1k' },
 ];
 
 ServerEvents.recipes(event => {

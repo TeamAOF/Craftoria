@@ -27,16 +27,16 @@ ServerEvents.recipes(event => {
     '6x #ae2:glass_cable'
   ], null, 'advanced_ae:eaelargeappupgrade');
 
-  ae2.crystalAssembler('expandedae:exp_pattern_provider', [
-    '#extendedae:extended_pattern_provider',
-    '4x ae2:capacity_card',
-    '4x ae2:engineering_processor',
-  ], null, 'expandedae:crafting/exp_pattern_provider');
+  // ae2.crystalAssembler('expandedae:exp_pattern_provider', [
+  //   '#extendedae:extended_pattern_provider',
+  //   '4x ae2:capacity_card',
+  //   '4x ae2:engineering_processor',
+  // ], null, 'expandedae:crafting/exp_pattern_provider');
 
-  event.shapeless('expandedae:exp_pattern_provider_upgrade', [
-    '#expandedae:exp_pattern_provider',
-    '#ae2:metal_ingots',
-  ]).id('expandedae:crafting/exp_pattern_provider_upgrade');
+  // event.shapeless('expandedae:exp_pattern_provider_upgrade', [
+  //   '#expandedae:exp_pattern_provider',
+  //   '#ae2:metal_ingots',
+  // ]).id('expandedae:crafting/exp_pattern_provider_upgrade');
 
   /** @type {Special.RecipeId[]} */
   const toAE2Metal = [
