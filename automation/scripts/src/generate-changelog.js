@@ -7,7 +7,22 @@ import {
   writeTextToFile,
 } from "./utils";
 import { $, Glob } from "bun";
-import packMetadata from "../../../pack.toml";
+
+// Try to import pack.toml first, fallback to minecraftinstance.json
+let packMetadata;
+try {
+  packMetadata = require("../../../pack.toml");
+} catch (error) {
+  console.warn("pack.toml not found, using minecraftinstance.json as fallback");
+  const instanceData = require("../../../minecraftinstance.json");
+  packMetadata = {
+    version: "unknown", // Extract from instance name or set default
+    versions: {
+      minecraft: instanceData.minecraftVersion || instanceData.gameVersion,
+      neoforge: instanceData.baseModLoader?.forgeVersion || "unknown"
+    }
+  };
+}
 
 const CONFIG = {
   gitRepoPath: path.resolve(import.meta.dir, "..", "..", ".."),
@@ -38,14 +53,14 @@ async function initializeConfig() {
   if (oldPackMetadata) {
     CONFIG.oldPackVersion ||= oldPackMetadata.version;
 
-    if (CONFIG.oldPackVersion === CONFIG.packVersion) {
+    // Only check version comparison if both versions are available and not "unknown"
+    if (CONFIG.oldPackVersion !== "unknown" && CONFIG.packVersion !== "unknown" && CONFIG.oldPackVersion === CONFIG.packVersion) {
       throw new Error("You did not bump the pack version!");
     }
   } else {
-    // If no pack.toml exists in old commit, we can't compare versions
-    // Set a fallback old version or skip version comparison
+    // If no metadata exists in old commit, we can't compare versions
     CONFIG.oldPackVersion ||= "unknown";
-    console.warn("Old commit doesn't have pack.toml, version comparison skipped");
+    console.warn("Old commit doesn't have pack metadata, version comparison skipped");
   }
 }
 
@@ -54,34 +69,115 @@ async function getCommitMetadataFiles(commitHash) {
   const folderPath = path.join(os.tmpdir(), folderName);
   const packwizGlob = new Glob("*.pw.toml");
 
-  // Check if pack.toml exists in this commit before trying to archive it
+  // Check if pack.toml exists in this commit first
+  let hasPackToml = false;
+  let hasInstanceJson = false;
+
   try {
     await $`git cat-file -e ${commitHash}:pack.toml`;
+    hasPackToml = true;
   } catch (error) {
-    // pack.toml doesn't exist in this commit, return null to indicate no packwiz data
-    console.warn(`pack.toml not found in commit ${commitHash}, skipping mod comparison for this commit`);
-    return [null, {}];
+    // pack.toml doesn't exist, check for minecraftinstance.json
+    try {
+      await $`git cat-file -e ${commitHash}:minecraftinstance.json`;
+      hasInstanceJson = true;
+    } catch (error2) {
+      console.warn(`Neither pack.toml nor minecraftinstance.json found in commit ${commitHash}, skipping mod comparison for this commit`);
+      return [null, {}];
+    }
   }
 
-  await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} pack.toml mods/`;
+  // Archive the appropriate files
+  if (hasPackToml) {
+    await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} pack.toml mods/ resourcepacks/ shaderpacks/`;
+  } else {
+    await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} minecraftinstance.json`;
+  }
+
   await $`mkdir ${folderPath}`;
   await $`tar -xf ${folderPath}.tar -C ${folderPath}`;
 
-  const scannedFiles = await Array.fromAsync(
-    packwizGlob.scan({ cwd: `${folderPath}/mods`, absolute: true })
-  );
+  let packMetadata;
+  let modsMetadata = {};
 
-  const packMetadata = require(`${folderPath}/pack.toml`);
-  const modsMetadata = Object.fromEntries(
-    scannedFiles
-      .map(filePath => {
-        const metadata = require(filePath);
-        const updateInfo = getUpdateInfo(metadata);
-        const projectId = updateInfo["project-id"];
-        if (projectId) return [projectId, metadata];
-      })
-      .filter(Boolean)
-  );
+  if (hasPackToml) {
+    // Use pack.toml
+    packMetadata = require(`${folderPath}/pack.toml`);
+
+    // Scan mods, resourcepacks, and shaderpacks folders
+    const folders = ['mods', 'resourcepacks', 'shaderpacks'];
+
+    for (const folder of folders) {
+      try {
+        const scannedFiles = await Array.fromAsync(
+          packwizGlob.scan({ cwd: `${folderPath}/${folder}`, absolute: true })
+        );
+
+        const folderMods = Object.fromEntries(
+          scannedFiles
+            .map(filePath => {
+              const metadata = require(filePath);
+              const updateInfo = getUpdateInfo(metadata);
+              const projectId = updateInfo["project-id"];
+              if (projectId) {
+                // Add category information to metadata
+                metadata._category = folder;
+                return [projectId, metadata];
+              }
+            })
+            .filter(Boolean)
+        );
+
+        // Merge with existing modsMetadata
+        Object.assign(modsMetadata, folderMods);
+      } catch (error) {
+        // Folder might not exist in this commit, continue
+        console.warn(`Folder ${folder} not found in commit ${commitHash}`);
+      }
+    }
+  } else {
+    // Use minecraftinstance.json as fallback
+    const instanceData = require(`${folderPath}/minecraftinstance.json`);
+    packMetadata = {
+      version: "unknown", // Can't determine pack version from instance file
+      versions: {
+        minecraft: instanceData.minecraftVersion || instanceData.gameVersion,
+        neoforge: instanceData.baseModLoader?.forgeVersion || "unknown"
+      }
+    };
+
+    // Extract mod information from installedAddons
+    if (instanceData.installedAddons && Array.isArray(instanceData.installedAddons)) {
+      modsMetadata = Object.fromEntries(
+        instanceData.installedAddons
+          .filter(addon => addon.addonID && addon.installedFile) // Only process valid addons
+          .map(addon => {
+            // Determine category based on path
+            const categoryPath = addon.categorySection?.path || 'mods';
+
+            // Create a structure similar to packwiz format for compatibility
+            const metadata = {
+              name: addon.name,
+              filename: addon.installedFile.fileName,
+              download: {
+                hash: addon.installedFile.id.toString(), // Use file ID as hash for comparison
+                url: addon.installedFile.downloadUrl
+              },
+              update: {
+                curseforge: {
+                  "project-id": addon.addonID,
+                  "file-id": addon.installedFile.id
+                }
+              },
+              _category: categoryPath // Add category information
+            };
+            return [addon.addonID.toString(), metadata];
+          })
+      );
+    }
+
+    console.warn(`Using minecraftinstance.json for commit ${commitHash} - mod comparison available but limited`);
+  }
 
   await $`rm -rf ${folderPath}.tar ${folderPath}`;
 
@@ -110,6 +206,26 @@ function compareModCollections(oldMods, currentMods) {
   return { newMods, removedMods, updatedMods };
 }
 
+function categorizeItems(items) {
+  const categorized = {
+    mods: {},
+    resourcepacks: {},
+    shaderpacks: {}
+  };
+
+  for (const [projectId, metadata] of Object.entries(items)) {
+    const category = metadata._category || 'mods';
+    if (categorized[category]) {
+      categorized[category][projectId] = metadata;
+    } else {
+      // Fallback to mods if unknown category
+      categorized.mods[projectId] = metadata;
+    }
+  }
+
+  return categorized;
+}
+
 function getUpdateInfo(metadata) {
   const [updateKey] = Object.keys(metadata.update);
   return metadata.update[updateKey];
@@ -118,13 +234,11 @@ function getUpdateInfo(metadata) {
 function formatModLink(metadata, useFileName = false, authorName) {
   const updateInfo = getUpdateInfo(metadata);
   const displayName = useFileName ? metadata.filename : metadata.name;
-  return `* [${displayName}](https://curseforge.com/projects/${
-    updateInfo["project-id"]
-  })${
-    authorName
+  return `* [${displayName}](https://curseforge.com/projects/${updateInfo["project-id"]
+    })${authorName
       ? ` - (by [${authorName}](https://www.curseforge.com/members/${authorName}/projects))`
       : ""
-  }`;
+    }`;
 }
 
 function formatUpdateLink(id, oldMods, currentMods) {
@@ -154,23 +268,27 @@ function processCommits(rawCommits) {
   };
 }
 
-function generateChangelogContent(features, fixes, addedMods, removedMods) {
+function generateChangelogContent(features, fixes, addedCategories, removedCategories) {
   const mention = CONFIG.saveToFile ? "" : "<@&1252725960948711444>\n";
   const craftoriaEmoji = CONFIG.saveToFile ? "" : " <:craftoria:1276650441869885531>";
   const links = CONFIG.saveToFile
     ? ""
     : `\n\n### Links\n\n<:curseforge:1117579334031511634> **[Download](https://www.curseforge.com/minecraft/modpacks/craftoria/files/${CONFIG.fileId})**\n📜 **[Changelog](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/CHANGELOG.md)**`;
+  const neoforgeVersion = packMetadata.versions?.neoforge || "unknown";
   const header = CONFIG.saveToFile
-    ? `\n_Neoforge_ ${packMetadata.versions.neoforge} | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_${CONFIG.packVersion}.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_${CONFIG.packVersion}.md)_`
+    ? `\n_Neoforge_ ${neoforgeVersion} | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_${CONFIG.packVersion}.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_${CONFIG.packVersion}.md)_`
     : "";
 
   const sections = [
-    `${mention}#${CONFIG.saveToFile ? "" : craftoriaEmoji} Craftoria | v${
-      CONFIG.packVersion
+    `${mention}#${CONFIG.saveToFile ? "" : craftoriaEmoji} Craftoria | v${CONFIG.packVersion
     }${craftoriaEmoji}\n${header}`,
     features.length && `\n\n### Changes/Improvements ⭐\n\n${features.join("\n")}`,
-    addedMods.length && `\n\n### Added Mods ✅\n\n${addedMods.join("\n")}`,
-    removedMods.length && `\n\n### Removed Mods ❌\n\n${removedMods.join("\n")}`,
+    addedCategories.mods.length && `\n\n### Added Mods ✅\n\n${addedCategories.mods.join("\n")}`,
+    addedCategories.resourcepacks.length && `\n\n### Added Resource Packs 🎨\n\n${addedCategories.resourcepacks.join("\n")}`,
+    addedCategories.shaderpacks.length && `\n\n### Added Shader Packs ✨\n\n${addedCategories.shaderpacks.join("\n")}`,
+    removedCategories.mods.length && `\n\n### Removed Mods ❌\n\n${removedCategories.mods.join("\n")}`,
+    removedCategories.resourcepacks.length && `\n\n### Removed Resource Packs 🗑️\n\n${removedCategories.resourcepacks.join("\n")}`,
+    removedCategories.shaderpacks.length && `\n\n### Removed Shader Packs 🗑️\n\n${removedCategories.shaderpacks.join("\n")}`,
     fixes.length && `\n\n### Bug Fixes 🪲\n\n${fixes.join("\n")}`,
     `${links}\n---`,
   ].filter(Boolean);
@@ -180,14 +298,23 @@ function generateChangelogContent(features, fixes, addedMods, removedMods) {
   return sections.join("");
 }
 
-function generateModChangelog(addedMods, removedMods, changedMods, oldPackMetadata) {
+function generateModChangelog(addedCategories, removedCategories, changedCategories, oldPackMetadata) {
   const sections = [
     `## Craftoria - ${CONFIG.oldPackVersion} -> ${CONFIG.packVersion}`,
-    oldPackMetadata && packMetadata.versions.neoforge !== oldPackMetadata.versions.neoforge &&
-      `### NeoForge - ${oldPackMetadata.versions.neoforge} -> ${packMetadata.versions.neoforge}`,
-    addedMods.length && `### Added\n${addedMods.join("\n")}`,
-    removedMods.length && `### Removed\n${removedMods.join("\n")}`,
-    changedMods.length && `### Updated\n${changedMods.join("\n")}`,
+    oldPackMetadata &&
+    oldPackMetadata.versions &&
+    packMetadata.versions &&
+    packMetadata.versions.neoforge !== oldPackMetadata.versions.neoforge &&
+    `### NeoForge - ${oldPackMetadata.versions.neoforge} -> ${packMetadata.versions.neoforge}`,
+    addedCategories.mods.length && `### Added Mods\n${addedCategories.mods.join("\n")}`,
+    addedCategories.resourcepacks.length && `### Added Resource Packs\n${addedCategories.resourcepacks.join("\n")}`,
+    addedCategories.shaderpacks.length && `### Added Shader Packs\n${addedCategories.shaderpacks.join("\n")}`,
+    removedCategories.mods.length && `### Removed Mods\n${removedCategories.mods.join("\n")}`,
+    removedCategories.resourcepacks.length && `### Removed Resource Packs\n${removedCategories.resourcepacks.join("\n")}`,
+    removedCategories.shaderpacks.length && `### Removed Shader Packs\n${removedCategories.shaderpacks.join("\n")}`,
+    changedCategories.mods.length && `### Updated Mods\n${changedCategories.mods.join("\n")}`,
+    changedCategories.resourcepacks.length && `### Updated Resource Packs\n${changedCategories.resourcepacks.join("\n")}`,
+    changedCategories.shaderpacks.length && `### Updated Shader Packs\n${changedCategories.shaderpacks.join("\n")}`,
   ].filter(Boolean);
 
   if (sections.length === 1) sections.push("* Nothing changed");
@@ -214,15 +341,29 @@ async function generateChangelog() {
     currentMods
   );
 
-  const addedLinks = Object.values(newMods)
-    .map(metadata => formatModLink(metadata))
-    .sort();
-  const removedLinks = Object.values(removedMods)
-    .map(metadata => formatModLink(metadata))
-    .sort();
-  const changedLinks = Object.keys(updatedMods)
-    .map(id => formatUpdateLink(id, oldMods, currentMods))
-    .sort();
+  // Categorize items by type
+  const addedCategories = categorizeItems(newMods);
+  const removedCategories = categorizeItems(removedMods);
+  const updatedCategories = categorizeItems(updatedMods);
+
+  // Generate links for each category
+  const addedLinks = {
+    mods: Object.values(addedCategories.mods).map(metadata => formatModLink(metadata)).sort(),
+    resourcepacks: Object.values(addedCategories.resourcepacks).map(metadata => formatModLink(metadata)).sort(),
+    shaderpacks: Object.values(addedCategories.shaderpacks).map(metadata => formatModLink(metadata)).sort()
+  };
+
+  const removedLinks = {
+    mods: Object.values(removedCategories.mods).map(metadata => formatModLink(metadata)).sort(),
+    resourcepacks: Object.values(removedCategories.resourcepacks).map(metadata => formatModLink(metadata)).sort(),
+    shaderpacks: Object.values(removedCategories.shaderpacks).map(metadata => formatModLink(metadata)).sort()
+  };
+
+  const changedLinks = {
+    mods: Object.keys(updatedCategories.mods).map(id => formatUpdateLink(id, oldMods, currentMods)).sort(),
+    resourcepacks: Object.keys(updatedCategories.resourcepacks).map(id => formatUpdateLink(id, oldMods, currentMods)).sort(),
+    shaderpacks: Object.keys(updatedCategories.shaderpacks).map(id => formatUpdateLink(id, oldMods, currentMods)).sort()
+  };
 
   const rawCommits = (
     await $`git log ${CONFIG.cutoffCommitHash}..${CONFIG.referenceCommit} --pretty="%s \`%an\`"`.text()
