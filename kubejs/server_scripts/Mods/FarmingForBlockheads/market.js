@@ -28,6 +28,10 @@ ServerEvents.recipes(e => {
     'occultism:otherworld_sapling_natural',
   ];
 
+  Color.DYE.forEach(color => {
+    saplingBlacklist.push(`pastel:${color}_sapling`);
+  });
+
   const seedBlacklist = [
     // Minecraft
     'minecraft:torchflower_seeds',
