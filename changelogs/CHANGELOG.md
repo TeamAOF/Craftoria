@@ -1,3 +1,16 @@
+# Craftoria | v1.22.2
+
+_Neoforge_ 21.1.176 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.22.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.22.2.md)_
+
+### Added Mods ✅
+
+* [Exposure: Polaroid](https://curseforge.com/projects/1207005)
+* [Exposure](https://curseforge.com/projects/871755)
+
+### Removed Mods ❌
+
+* [What's Your Build](https://curseforge.com/projects/1233310)
+---
 # Craftoria | v1.22.1
 
 _Neoforge_ 21.1.176 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.22.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.22.1.md)_
