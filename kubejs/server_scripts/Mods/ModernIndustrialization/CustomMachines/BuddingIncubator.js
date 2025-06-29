@@ -81,8 +81,8 @@ const buddingConditions = {
 };
 
 MIRecipeEvents.customCondition(event => {
-  for (let [key, condition] of Object.entries(buddingConditions)) {
-    if (!Platform.isLoaded(ID.namespace(condition.block))) continue;
+  Object.entries(buddingConditions).forEach(([key, condition]) => {
+    if (!Platform.isLoaded(ID.namespace(condition.block))) return;
     event.register(
       key,
       (ctx, recipe) => {
@@ -109,7 +109,7 @@ MIRecipeEvents.customCondition(event => {
       },
       Text.of(Array.isArray(condition.text) ? condition.text.join('\n') : condition.text)
     );
-  }
+  });
 });
 
 ServerEvents.recipes(event => {
