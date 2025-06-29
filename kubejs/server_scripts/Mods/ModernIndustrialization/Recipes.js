@@ -173,4 +173,14 @@ ServerEvents.recipes(e => {
     .itemIn('modern_industrialization:gold_drill', 0.25)
     .dimension('minecraft:the_nether')
     .id('craftoria:mi/oil_rig/lava');
+	
+  // Prediction Matrix
+  assembler(8, 100)
+    .itemOut('16x hostilenetworks:prediction_matrix')
+    .itemIn('4x #c:glass_panes')
+    .itemIn('minecraft:clay_ball')
+    .itemIn('minecraft:gold_ingot')
+    .itemIn('minecraft:iron_ingot')
+    .id('craftoria:mi/assembler/prediction_matrix');
+
 });
