@@ -1256,11 +1256,18 @@
 				table_id: 4417308367866402422L
 				type: "random"
 			}]
-			tasks: [{
-				id: "2DFC260537CECA36"
-				item: { count: 1, id: "create:empty_schematic" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "664F487C64D046FE"
+					item: { count: 1, id: "create:schematic_and_quill" }
+					type: "item"
+				}
+				{
+					id: "62C2EBBA954EC9E1"
+					item: { count: 1, id: "create:empty_schematic" }
+					type: "item"
+				}
+			]
 			x: 9.9d
 			y: -8.1d
 		}
