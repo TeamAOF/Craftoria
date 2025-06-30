@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
         A: 'justdirethings:celestigem',
         B: '#c:ingots/steel',
         C: 'justdirethings:blockbreakert1',
-        D: 'mekanismtools:diamond_paxel',
+        D: 'actuallyadditions:diamond_aiot',
         E: '#craftoria:hulls/advanced',
       },
       id: 'justdirethings:blockbreakert2',

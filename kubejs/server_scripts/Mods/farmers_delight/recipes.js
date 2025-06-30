@@ -31,15 +31,7 @@ ServerEvents.recipes(e => {
     e.custom(recipe).id(makeRecipeID('cutting', outputItems[0], inputItems[0]));
   };
 
-  ['minecraft:bread', 'moredelight:bread_slice'].forEach(toastItem => {
-    e.custom({
-      type: 'cookingforblockheads:toaster',
-      ingredient: Ingredient.of(toastItem).toJson(),
-      result: Item.of('moredelight:toast').toJson(),
-    });
-  });
-
-  e.forEachRecipe({ type:'refurbished_furniture:cutting_board_slicing' }, kubeRecipe => {
+  e.forEachRecipe({ type: 'refurbished_furniture:cutting_board_slicing' }, kubeRecipe => {
     let recipeJson = JSON.parse(kubeRecipe.json.toString());
     let { result: { id: resultId, count: resultCount }, ingredient: { item: ingredient } } = recipeJson;
 
@@ -53,12 +45,12 @@ ServerEvents.recipes(e => {
 
   /** @type {Record<Special.Item, $Ingredient_>} */
   const sushigocrafting = {
-    'sushigocrafting:imitation_crab' : 'minecraft:cod',
-    'sushigocrafting:avocado_slices' : '#c:fruits/avocado',
-    'sushigocrafting:cucumber_slices' : '#c:crops/cucumber',
-    'sushigocrafting:wasabi_paste' : '#c:crops/wasabi_root',
-    'sushigocrafting:tuna_fillet' : '#c:raw_fishes/tuna',
-    'sushigocrafting:salmon_fillet' : '#c:raw_fishes/salmon',
+    'sushigocrafting:imitation_crab': 'minecraft:cod',
+    'sushigocrafting:avocado_slices': '#c:fruits/avocado',
+    'sushigocrafting:cucumber_slices': '#c:crops/cucumber',
+    'sushigocrafting:wasabi_paste': '#c:crops/wasabi_root',
+    'sushigocrafting:tuna_fillet': '#c:raw_fishes/tuna',
+    'sushigocrafting:salmon_fillet': '#c:raw_fishes/salmon',
   };
 
 
@@ -76,7 +68,7 @@ ServerEvents.recipes(e => {
     refurbCutting(output, input);
   }
 
-  e.forEachRecipe({ type:'farmersdelight:cutting' }, kubeRecipe=>{
+  e.forEachRecipe({ type: 'farmersdelight:cutting' }, kubeRecipe => {
     let recipeJson = JSON.parse(kubeRecipe.json.toString());
 
     /** @type {{result: $ItemStack_[], ingredients: $Ingredient_[]}} */

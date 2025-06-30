@@ -14,12 +14,11 @@ StartupEvents.registry('item', e => {
             m.texture(`layer${i}`, `${layers[i]}`);
           }
         } else {
-          m.texture('layer0', 'irons_spellbooks:item/upgrade_orb_base');
-          m.texture('layer1', 'irons_spellbooks:item/upgrade_orb_swirl');
+          m.texture('layer0', 'craftoria:item/wip');
         }
       });
   };
 
-  orbHelper('mana_regen', ['eternal_starlight:item/orb_of_prophecy_inventory', 'irons_spellbooks:item/upgrade_orb_swirl', 'irons_spellbooks:item/upgrade_orb_mana']);
-  orbHelper('spell_power', ['alshanex_familiars:item/mysterious_orb', 'irons_spellbooks:item/upgrade_orb_lightning', 'irons_spellbooks:item/upgrade_orb_mana']);
+  orbHelper('mana_regen'/* , ['eternal_starlight:item/orb_of_prophecy_inventory', 'irons_spellbooks:item/upgrade_orb_swirl', 'irons_spellbooks:item/upgrade_orb_mana']*/);
+  orbHelper('spell_power'/* , ['alshanex_familiars:item/mysterious_orb', 'irons_spellbooks:item/upgrade_orb_lightning', 'irons_spellbooks:item/upgrade_orb_mana']*/);
 });

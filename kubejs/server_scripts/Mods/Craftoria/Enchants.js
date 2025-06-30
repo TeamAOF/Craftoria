@@ -1,6 +1,6 @@
 ServerEvents.generateData('after_mods', e => {
   /** @type {Special.Enchantment} */
-  const enchantsToDisable = ['ars_elemental:soulbound', 'deeperdarker:catalysis'];
+  const enchantsToDisable = ['ars_elemental:soulbound'];
 
   enchantsToDisable.forEach(enchant => {
     let { namespace, path } = ID.mc(enchant);
@@ -12,8 +12,4 @@ ServerEvents.generateData('after_mods', e => {
       ],
     });
   });
-});
-
-ServerEvents.tags('enchantment', e => {
-  e.remove('minecraft:treasure', ['deeperdarker:catalysis']);
 });

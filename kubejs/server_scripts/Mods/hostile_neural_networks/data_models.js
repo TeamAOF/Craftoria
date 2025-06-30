@@ -126,8 +126,6 @@ ServerEvents.generateData('after_mods', event => {
       simCost: 2560,
       baseDrop: 'hostilenetworks:end_prediction',
       fabricatorDrops: [
-        'deeperdarker:heart_of_the_deep',
-        'deeperdarker:warden_carapace',
         'apothic_enchanting:warden_tendril',
         '2x minecraft:echo_shard',
         '4x minecraft:sculk_catalyst',

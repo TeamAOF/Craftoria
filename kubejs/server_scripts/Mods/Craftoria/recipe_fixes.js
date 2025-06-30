@@ -10,8 +10,6 @@ ServerEvents.recipes(e => {
     R: '#c:crops/rice',
   }).id('craftoria:rice_dough');
 
-  e.smelting('create:zinc_ingot', '#c:dusts/zinc').id('moremekanismprocessing:processing/zinc/ingot/from_dust_smelting');
-
   e.replaceInput({ id: 'occultism:crushing/coal_dust_from_tag' }, '#minecraft:coals', 'minecraft:coal');
 
   /** @type {Special.RecipeId[]} */

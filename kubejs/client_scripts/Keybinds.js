@@ -15,12 +15,7 @@ KeyBindJSEvents.modify(event => {
     // Movement
     'key.the_bumblezone.beehemoth_up': { category: 'key.categories.movement' },
     'key.the_bumblezone.beehemoth_down': { category: 'key.categories.movement' },
-
-    // Inventory
-    'key.trashslot.toggle': { key: GLFW.GLFW_KEY_PERIOD, category: 'key.categories.inventory' },
-    'key.trashslot.toggle_lock': { category: 'key.categories.inventory' },
-    'key.trashslot.delete': { category: 'key.categories.inventory' },
-    'key.trashslot.delete_all': { category: 'key.categories.inventory' },
+    'key.modern_industrialization.toggle_flight': { category: 'key.categories.movement' },
 
     // Creative Mode
     'key.loadToolbarActivator': { key: none, mod: 'minecraft' },
@@ -48,7 +43,7 @@ KeyBindJSEvents.modify(event => {
     'mininggadgets.text.open_gui': { category: 'category.craftoria.tools' },
     'justdirethings.key.toolUI': { category: 'category.craftoria.tools' },
     'justdirethings.key.toggle_tool': { category: 'category.craftoria.tools' },
-    // 'key.modern_industrialization.toggle_3x3': { category: 'category.craftoria.tools' },
+    'key.modern_industrialization.toggle_3x3': { category: 'category.craftoria.tools' },
 
     // Applied Energistics 2
     'key.extendedae.viewpattern': { key: none, category: 'key.ae2.category' },
@@ -73,10 +68,6 @@ KeyBindJSEvents.modify(event => {
     // Placebo
     'placebo.toggleTrails': { key: none },
     'placebo.toggleWings': { key: none },
-
-    // Deeper & Darker
-    'key.deeperdarker.boost': { key: none },
-    'key.deeperdarker.transmit': { key: none },
 
     // FTB
     'key.ftbchunks.claim_manager': { category: 'category.craftoria.ftb' },
@@ -152,7 +143,7 @@ KeyBindJSEvents.modify(event => {
         if (v.modifier) event.modifyModifier(k, v.modifier);
         if (v.category) event.modifyCategory(k, v.category);
       } else event.remove(k);
-    } catch(e) {
+    } catch (e) {
       // unknown error case.
       // This keybinding script isnt critical so we dont want to stop client loading
       console.warn(`Unable to fully modify Keybind ${k} due to error: ${e.message}`);

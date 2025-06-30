@@ -49,6 +49,8 @@ ClientEvents.lang('en_us', e => {
     'justdirethings.key.toggle_tool': '[JDT] Toggle Tool Abilities',
     'justdirethings.key.toolUI': '[JDT] Open Tool Settings',
     'mininggadgets.text.open_gui': '[Mining Gadgets] Open Gadget Settings',
+    'key.modern_industrialization.toggle_flight': '[MI] Toggle Flight',
+    'key.modern_industrialization.toggle_3x3': '[MI] Toggle 3x3 Mode',
 
     // XyCraft
     'block.xycraft_world.aluminum_bricks': 'Iron Bricks',
