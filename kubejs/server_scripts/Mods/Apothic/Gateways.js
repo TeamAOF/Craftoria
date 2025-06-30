@@ -137,7 +137,7 @@ ServerEvents.generateData('after_mods', e => {
     spawn_algorithm: 'gateways:inward_spiral',
   });
 
-  let bomdGate = {
+  let trialsGate = {
     size: 'large',
     color: 'rainbow',
     waves: [],
@@ -158,7 +158,7 @@ ServerEvents.generateData('after_mods', e => {
   };
 
   ['maledictus', 'ender_guardian', 'ignis', 'ancient_remnant'].forEach(boss => {
-    bomdGate.waves.push({
+    trialsGate.waves.push({
       entities: [
         {
           type: 'apotheosis:invader',
@@ -184,5 +184,5 @@ ServerEvents.generateData('after_mods', e => {
     });
   });
 
-  e.json('craftoria:gateways/trials', bomdGate);
+  e.json('craftoria:gateways/trials', trialsGate);
 });

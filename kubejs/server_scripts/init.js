@@ -110,3 +110,10 @@ const logDebug = message => {
   if (debugToInt() < 4) return;
   console.debug(`[Craftoria] ${message}`);
 };
+
+PlayerEvents.loggedIn(event => {
+  if (!event.player.stages.has('first_join')) {
+    event.player.give(Item.of('ftbquests:book'));
+    event.player.stages.add('first_join');
+  }
+});
