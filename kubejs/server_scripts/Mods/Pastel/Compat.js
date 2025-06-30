@@ -1,5 +1,3 @@
-
-// requires: pastel
 ServerEvents.recipes(e => {
   const create = CreateHelper(e);
   const { modern_industrialization, occultism } = e.recipes;

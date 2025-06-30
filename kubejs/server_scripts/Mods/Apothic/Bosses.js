@@ -159,7 +159,7 @@ ServerEvents.generateData('after_mods', e => {
     },
   };
 
-  let bomdTemplate = {
+  let bossTemplate = {
     basic_data: {
       spawn_conditions: [
         {
@@ -238,9 +238,9 @@ ServerEvents.generateData('after_mods', e => {
     ],
   };
 
-  let bomdBosses = [
+  let bossData = [
     {
-      entity: 'bosses_of_mass_destruction:lich',
+      entity: 'cataclysm:maledictus',
       name: 'Merasmus',
       size: {
         height: 3.6,
@@ -249,7 +249,7 @@ ServerEvents.generateData('after_mods', e => {
       bonus_loot: ['craftoria:bonus/ice_essence'],
     },
     {
-      entity: 'bosses_of_mass_destruction:obsidilith',
+      entity: 'cataclysm:ender_guardian',
       name: 'HOL 8000',
       size: {
         height: 3.6,
@@ -258,70 +258,16 @@ ServerEvents.generateData('after_mods', e => {
       bonus_loot: ['craftoria:bonus/dark_essence'],
     },
     {
-      entity: 'bosses_of_mass_destruction:gauntlet',
+      entity: 'cataclysm:ignis',
       name: 'Herbert',
       size: {
         height: 3.6,
         width: 1.2,
       },
-      attributes: [
-        {
-          attribute: 'minecraft:generic.max_health',
-          operation: 'add_multiplied_base',
-          value: {
-            min: 90.0,
-            max: 140.0,
-          },
-        },
-        {
-          attribute: 'minecraft:generic.movement_speed',
-          operation: 'add_multiplied_base',
-          value: {
-            min: 0.35,
-            max: 0.65,
-          },
-        },
-        {
-          attribute: 'apothic_attributes:fire_damage',
-          operation: 'add_value',
-          value: {
-            min: 30.0,
-            max: 40.0,
-          },
-        },
-        {
-          attribute: 'apothic_attributes:projectile_damage',
-          operation: 'add_multiplied_base',
-          value: {
-            min: 2.75,
-            max: 5.5,
-          },
-        },
-        {
-          attribute: 'minecraft:generic.knockback_resistance',
-          operation: 'add_value',
-          value: 1.0,
-        },
-        {
-          attribute: 'minecraft:generic.armor',
-          operation: 'add_value',
-          value: 5000.0,
-        },
-        {
-          attribute: 'minecraft:generic.armor',
-          operation: 'add_multiplied_total',
-          value: 5000.0,
-        },
-        {
-          attribute: 'minecraft:generic.armor_toughness',
-          operation: 'add_value',
-          value: 20.0,
-        },
-      ],
       bonus_loot: ['craftoria:bonus/fire_essence'],
     },
     {
-      entity: 'bosses_of_mass_destruction:void_blossom',
+      entity: 'cataclysm:ancient_remnant',
       name: 'Captain Hector',
       size: {
         height: 3.6,
@@ -331,20 +277,20 @@ ServerEvents.generateData('after_mods', e => {
     },
   ];
 
-  bomdBosses.forEach(boss => {
+  bossData.forEach(boss => {
     // First grab the invader template, then apply the bomd template on top of it, and finally apply the boss-specific data (if it exists)
     let bossData = JSON.parse(JSON.stringify(invaderTemplate));
     bossData.basic_data.name = boss.name;
     bossData.entity = boss.entity;
     bossData.size = boss.size;
 
-    bossData.basic_data.spawn_conditions = bomdTemplate.spawn_conditions;
-    bossData.basic_data.constraints = bomdTemplate.basic_data.constraints;
+    bossData.basic_data.spawn_conditions = bossTemplate.spawn_conditions;
+    bossData.basic_data.constraints = bossTemplate.basic_data.constraints;
 
-    bossData.stats['apotheosis:mythic'].attribute_modifiers = boss.attributes ?? bomdTemplate.attributes;
-    bossData.stats['apotheosis:mythic'].effects = boss.effects ?? bomdTemplate.effects;
+    bossData.stats['apotheosis:mythic'].attribute_modifiers = boss.attributes ?? bossTemplate.attributes;
+    bossData.stats['apotheosis:mythic'].effects = boss.effects ?? bossTemplate.effects;
 
     if (boss.bonus_loot) boss.bonus_loot.forEach(loot => bossData.basic_data.bonus_loot.push(loot));
-    e.json(`craftoria:apothic_invaders/custom_bosses/${boss.entity.split(':')[1]}`, bossData);
+    e.json(`craftoria:apothic_invaders/custom_bosses/${ID.path(boss.entity)}`, bossData);
   });
 });

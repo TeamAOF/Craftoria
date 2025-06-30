@@ -7,12 +7,12 @@ ServerEvents.recipes(event => {
   );
 
   // BOMD Gateway
-  event.recipes.actuallyadditions.empowering(Item.of('gateways:gate_pearl[gateways:gateway="craftoria:bomd"]'), 'minecraft:ender_pearl', [
-    'bosses_of_mass_destruction:ancient_anima',
-    'bosses_of_mass_destruction:blazing_eye',
-    'bosses_of_mass_destruction:obsidian_heart',
-    'bosses_of_mass_destruction:void_thorn',
-  ]);
+  // event.recipes.actuallyadditions.empowering(Item.of('gateways:gate_pearl[gateways:gateway="craftoria:bomd"]'), 'minecraft:ender_pearl', [
+  //   'bosses_of_mass_destruction:ancient_anima',
+  //   'bosses_of_mass_destruction:blazing_eye',
+  //   'bosses_of_mass_destruction:obsidian_heart',
+  //   'bosses_of_mass_destruction:void_thorn',
+  // ]);
 
   // Cosmic Matter
   event.recipes.actuallyadditions.empowering(Item.of('craftoria:cosmic_matter'), 'advanced_ae:quantum_alloy', [

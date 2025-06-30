@@ -157,7 +157,7 @@ ServerEvents.generateData('after_mods', e => {
     ],
   };
 
-  ['lich', 'obsidilith', 'gauntlet', 'void_blossom'].forEach(boss => {
+  ['maledictus', 'ender_guardian', 'ignis', 'ancient_remnant'].forEach(boss => {
     bomdGate.waves.push({
       entities: [
         {
