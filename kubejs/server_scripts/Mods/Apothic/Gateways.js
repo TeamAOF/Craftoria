@@ -184,5 +184,5 @@ ServerEvents.generateData('after_mods', e => {
     });
   });
 
-  e.json('craftoria:gateways/bomd', bomdGate);
+  e.json('craftoria:gateways/trials', bomdGate);
 });

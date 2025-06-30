@@ -18,7 +18,7 @@ ClientEvents.lang('en_us', e => {
 
     // Gateways
     'craftoria.endless/boss': 'Endless Boss Gateway',
-    'craftoria.bomd': 'Trials of Awaken',
+    'craftoria.trials': 'Trials of Awaken',
 
     // Guidebooks
     'craftoria.guide_name': 'Craftoria Guidebook',
