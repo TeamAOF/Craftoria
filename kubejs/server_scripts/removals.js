@@ -298,6 +298,8 @@ ServerEvents.generateData('after_mods', event => {
     'create:crushing/sculk_stone_coal_ore',
     'create:cutting/stripped_echo_log',
     'mekaweapons:module_arrowvelocity_unit',
+    'pastel:mod_integration/ae2/blasting/pure_certus_quartz',
+    'pastel:mod_integration/ae2/blasting/pure_fluix',
   ];
 
   /** @type {string[]} */
