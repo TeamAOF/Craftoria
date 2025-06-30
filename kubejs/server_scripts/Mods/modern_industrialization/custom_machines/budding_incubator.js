@@ -146,6 +146,4 @@ ServerEvents.recipes(event => {
     .itemIn('modern_industrialization:large_pump')
     .itemIn('modern_industrialization:advanced_machine_hull')
     .id('craftoria:mi/assembler/budding_incubator');
-
-  event.shapeless('mi_tweaks:budding_incubator', 'mi_tweaks:batch_budding_incubator');
 });
