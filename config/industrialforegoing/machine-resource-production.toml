@@ -4,7 +4,7 @@
 		#Amount of Power Consumed per Tick - Default: [60FE]
 		powerPerTick = 60
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 100000
 		#Max Amount of Stored Fluid [Meat] - Default: [8000mB]
 		maxTankSize = 8000
 		#Max Amount of Output Fluid  - Default: [8000mB]
@@ -14,7 +14,7 @@
 		#Amount of Power Consumed per Tick - Default: [40FE]
 		powerPerTick = 40
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 100000
 		#Amount of ticks for 2x production - Default: [20 * 5 FE]
 		ticksFor2XProduction = 100
 		#Amount of ticks for 3x production - Default: [20 * 45 FE]
@@ -28,7 +28,7 @@
 		#Amount of Power Consumed per Tick - Default: [40FE]
 		powerPerTick = 40
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 100000
 		#Max Amount of Stored Fluid [Water] - Default: [8000mB]
 		maxWaterTankSize = 1000
 
@@ -46,7 +46,7 @@
 		#Amount of Power Consumed per Tick - Default: [40FE]
 		powerPerTick = 40
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 100000
 		#Max Amount of Stored Fluid - Default: [8000mB]
 		maxTankSize = 8000
 
@@ -64,7 +64,7 @@
 		#Amount of Power Consumed per Tick - Default: [400FE]
 		powerPerOperation = 1000
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 100000
 		#Max Amount of Stored Fluid [Meat] - Default: [8000mB]
 		maxMeatTankSize = 4000
 		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
@@ -76,7 +76,7 @@
 		#Amount of Power Consumed per Tick - Default: [1000FE]
 		powerPerOperation = 1000
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 100000
 
 	[MachineResourceProductionConfig.HydroponicBedConfig]
 		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
@@ -84,7 +84,7 @@
 		#Amount of Power Consumed per Operation - Default: [1000FE]
 		powerPerOperation = 1000
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 100000
 
 	[MachineResourceProductionConfig.WaterCondensatorConfig]
 		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
@@ -92,7 +92,7 @@
 		#Amount of Power Consumed per Tick - Default: [400FE]
 		powerPerOperation = 1000
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 100000
 		#Max Amount of Stored Fluid [Water] - Default: [8000mB]
 		maxWaterTankSize = 16000
 
@@ -100,7 +100,7 @@
 		#Amount of Power Consumed per Tick - Default: [40FE]
 		powerPerTick = 40
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 100000
 		#Max Amount of Stored Fluid [Sludge] - Default: [8000mB]
 		maxSludgeTankSize = 8000
 
@@ -126,7 +126,7 @@
 		#Amount of Power Consumed per Tick - Default: [60FE]
 		powerPerTick = 60
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 100000
 		#Max Amount of Stored Fluid [Water] - Default: [2000mB]
 		maxWaterTankSize = 16000
 		#Max Amount of Stored Fluid [Lava] - Default: [2000mB]
@@ -144,7 +144,7 @@
 		#Amount of Power Consumed per Tick - Default: [400FE]
 		powerPerTick = 40
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 100000
 		#Max Amount of Stored Fluid [Essence] - Default: [8000mB]
 		maxEssenceTankSize = 16000
 
@@ -154,7 +154,7 @@
 		#Amount of Power Consumed per Tick - Default: [5000FE]
 		powerPerOperation = 5000
 		#Max Stored Power [FE] - Default: [20000 FE]
-		maxStoredPower = 20000
+		maxStoredPower = 200000
 
 	[MachineResourceProductionConfig.FluidCollectorConfig]
 		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
@@ -162,7 +162,7 @@
 		#Amount of Power Consumed per Tick - Default: [400FE]
 		powerPerOperation = 1000
 		#Max Stored Power [FE] - Default: [10000 FE]
-		maxStoredPower = 10000
+		maxStoredPower = 100000
 		#Max Amount of Stored Fluid [Output] - Default: [8000mB]
 		maxOutputTankSize = 16000
 
@@ -172,6 +172,6 @@
 		#Amount of Power Consumed per Operation - Default: [3000FE]
 		powerPerOperation = 3000
 		#Max Stored Power [FE] - Default: [20000 FE]
-		maxStoredPower = 20000
+		maxStoredPower = 200000
 		#Chance to increase the executions of the current processor, 0.1 = 10% chance - Default: [0.1]
 		chanceToIncreaseExecutions = 0.1
