@@ -6,7 +6,10 @@
 	filename: "Create"
 	group: "066C799B2F5452CD"
 	icon: {
-		id: "create:goggles"
+		components: {
+			"ftbquests:icon": "ftbquests:textures/gui/create_logo.png"
+		}
+		id: "ftbquests:custom_icon"
 	}
 	id: "0644AB97E8D8839B"
 	images: [
@@ -754,18 +757,11 @@
 				table_id: 4417308367866402422L
 				type: "random"
 			}]
-			tasks: [
-				{
-					id: "0904AEE20CCAD32F"
-					item: { count: 1, id: "create:fluid_tank" }
-					type: "item"
-				}
-				{
-					id: "1A3FF49DA9B547C0"
-					item: { count: 1, id: "create_connected:fluid_vessel" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0904AEE20CCAD32F"
+				item: { count: 1, id: "create:fluid_tank" }
+				type: "item"
+			}]
 			x: 12.7d
 			y: -2.7d
 		}
@@ -979,8 +975,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "5B831D9050F98E5B"
-				item: { count: 1, id: "create:yellow_seat" }
+				id: "140F487510C24AD5"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(create:seats))", "minecraft:custom_name": "\"Create Seats\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 9.84d
@@ -1256,11 +1252,18 @@
 				table_id: 4417308367866402422L
 				type: "random"
 			}]
-			tasks: [{
-				id: "2DFC260537CECA36"
-				item: { count: 1, id: "create:empty_schematic" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "664F487C64D046FE"
+					item: { count: 1, id: "create:schematic_and_quill" }
+					type: "item"
+				}
+				{
+					id: "62C2EBBA954EC9E1"
+					item: { count: 1, id: "create:empty_schematic" }
+					type: "item"
+				}
+			]
 			x: 9.9d
 			y: -8.1d
 		}
@@ -2230,6 +2233,7 @@
 		{
 			dependencies: ["51F5C6D60D719DC4"]
 			id: "38DF71D9CB5045F2"
+			min_width: 250
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "0328707DA457C4F4"
@@ -2382,7 +2386,7 @@
 				id: "ftbquests:custom_icon"
 			}
 			id: "55696F71CC09E588"
-			min_width: 300
+			min_width: 380
 			size: 3.0d
 			tasks: [
 				{
