@@ -1,4 +1,4 @@
-## Craftoria - 1.21.0
+## Craftoria - 1.21.1
 
   * [accelerated-decay-neoforge-21.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/accelerated-decay/files/5433036) (by [ErrorMikey](https://www.curseforge.com/members/ErrorMikey/projects))
   * [actuallyadditions-1.3.19+mc1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/actually-additions/files/6485010) (by [Ellpeck](https://www.curseforge.com/members/Ellpeck/projects))
@@ -234,7 +234,6 @@
   * [integratedtunnels-1.21.1-neoforge-1.8.38.jar](https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels/files/6563487) (by [kroeser](https://www.curseforge.com/members/kroeser/projects))
   * [inventoryessentials-neoforge-1.21.1-21.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/inventory-essentials/files/6179258) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
   * [InventoryProfilesNext-neoforge-1.21-2.1.8.jar](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next/files/6508839) (by [mirinimi](https://www.curseforge.com/members/mirinimi/projects))
-  * [iris-flywheel-compat-NeoForge-2.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/iris-flywheel-compat/files/6518788) (by [leon_mout](https://www.curseforge.com/members/leon_mout/projects))
   * [iris-neoforge-1.8.8+mc1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/irisshaders/files/6213632) (by [coderbot](https://www.curseforge.com/members/coderbot/projects))
   * [irons_jewelry-1.21.1-1.4.0.jar](https://www.curseforge.com/minecraft/mc-mods/irons-jewelry/files/6511172) (by [Iron431](https://www.curseforge.com/members/Iron431/projects))
   * [irons_spellbooks-1.21.1-3.12.1.jar](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks/files/6556085) (by [Iron431](https://www.curseforge.com/members/Iron431/projects))
