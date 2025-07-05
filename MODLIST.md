@@ -1,4 +1,4 @@
-## Craftoria - 1.21.1
+## Craftoria - 1.21.2
 
   * [accelerated-decay-neoforge-21.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/accelerated-decay/files/5433036) (by [ErrorMikey](https://www.curseforge.com/members/ErrorMikey/projects))
   * [actuallyadditions-1.3.19+mc1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/actually-additions/files/6485010) (by [Ellpeck](https://www.curseforge.com/members/Ellpeck/projects))
@@ -58,7 +58,7 @@
   * [AutochefsDelight-1.21.1-NeoForge-2.0.2.jar](https://www.curseforge.com/minecraft/mc-mods/autochefs-delight/files/6158604) (by [Snownee](https://www.curseforge.com/members/Snownee/projects))
   * [azurelib-neo-1.21.1-2.3.29-alpha.jar](https://www.curseforge.com/minecraft/mc-mods/azurelib/files/6004979) (by [AzureDoomC](https://www.curseforge.com/members/AzureDoomC/projects))
   * [bwncr-neoforge-1.21.1-3.20.3.jar](https://www.curseforge.com/minecraft/mc-mods/bad-wither-no-cookie-reloaded/files/6172735) (by [Kreezxil](https://www.curseforge.com/members/Kreezxil/projects))
-  * [balm-neoforge-1.21.1-21.0.45.jar](https://www.curseforge.com/minecraft/mc-mods/balm/files/6552755) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
+  * [balm-neoforge-1.21.1-21.0.44.jar](https://www.curseforge.com/minecraft/mc-mods/balm/files/6520602) (by [BlayTheNinth](https://www.curseforge.com/members/BlayTheNinth/projects))
   * [bankstorage-1.5.1+1.21.jar](https://www.curseforge.com/minecraft/mc-mods/bank-storage/files/6253249) (by [Natte](https://www.curseforge.com/members/Natte/projects))
   * [barbequesdelight-1.2.0+3.jar](https://www.curseforge.com/minecraft/mc-mods/barbeques-delight/files/6313936) (by [lcy0x1](https://www.curseforge.com/members/lcy0x1/projects))
   * [bellsandwhistles-0.4.7-1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/bellsandwhistles/files/6299879) (by [a0a7](https://www.curseforge.com/members/a0a7/projects))
