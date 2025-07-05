@@ -300,8 +300,8 @@ function formatModlistLink(metadata, authorName, modInfo = null) {
     ? `https://www.curseforge.com/minecraft/${urlPath}/${modInfo.slug}/files/${updateInfo["file-id"]}`
     : `https://curseforge.com/projects/${updateInfo["project-id"]}/files/${updateInfo["file-id"]}`;
 
-  return `* [${displayName}](${modUrl})${authorName
-    ? ` - (by [${authorName}](https://www.curseforge.com/members/${authorName}/projects))`
+  return `  * [${displayName}](${modUrl})${authorName
+    ? ` (by [${authorName}](https://www.curseforge.com/members/${authorName}/projects))`
     : ""
     }`;
 }
@@ -649,7 +649,7 @@ async function generateChangelog() {
       writeTextToFile(paths.changelog, changelog, true),
       writeTextToFile(paths.modlist, modlist),
       writeTextToFile(paths.modChangelog, modChangelog),
-      // writeTextToFile(paths.rootModlist, modlist), // not sure if I'll update the modlist in the root folder, as it's a little too outdated, and history would be messed up
+      writeTextToFile(paths.rootModlist, modlist),
     ]);
     console.log(CLI_ARGS.testMode ? "Test mode: Changelogs saved to files." : "Changelogs saved to files.");
   } else {
