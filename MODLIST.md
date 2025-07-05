@@ -1,4 +1,4 @@
-## Craftoria - 1.22.0
+## Craftoria - 1.22.1
 
   * [accelerated-decay-neoforge-21.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/accelerated-decay/files/5433036) (by [ErrorMikey](https://www.curseforge.com/members/ErrorMikey/projects))
   * [actuallyadditions-1.3.19+mc1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/actually-additions/files/6485010) (by [Ellpeck](https://www.curseforge.com/members/Ellpeck/projects))
@@ -162,7 +162,6 @@
   * [eternalstarlight-0.4.3+1.21.1+neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/eternal-starlight/files/6498203) (by [leo4096](https://www.curseforge.com/members/leo4096/projects))
   * [EuphoriaPatcher-1.6.5-r5.5.1-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/euphoria-patches/files/6653765) (by [SpacEagle17](https://www.curseforge.com/members/SpacEagle17/projects))
   * [ExtendedAE-1.21-2.2.15-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/ex-pattern-provider/files/6628645) (by [GlodBlock](https://www.curseforge.com/members/GlodBlock/projects))
-  * [expandedae-2.0.4.jar](https://www.curseforge.com/minecraft/mc-mods/expanded-ae/files/6695726) (by [Kolja](https://www.curseforge.com/members/Kolja/projects))
   * [extended-industrialization-1.14.15-1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/extended-industrialization/files/6689245) (by [swedzish](https://www.curseforge.com/members/swedzish/projects))
   * [extra_apoth_compat-1.0.4.jar](https://www.curseforge.com/minecraft/mc-mods/extra-apoth-compat/files/6370960) (by [TheWinABagel](https://www.curseforge.com/members/TheWinABagel/projects))
   * [extra-mod-integrations-all-neoforge-1.0.2+1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/extra-mod-integrations/files/6384504) (by [Kneelawk](https://www.curseforge.com/members/Kneelawk/projects))
