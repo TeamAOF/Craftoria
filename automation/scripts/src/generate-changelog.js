@@ -300,8 +300,8 @@ function formatModlistLink(metadata, authorName, modInfo = null) {
     ? `https://www.curseforge.com/minecraft/${urlPath}/${modInfo.slug}/files/${updateInfo["file-id"]}`
     : `https://curseforge.com/projects/${updateInfo["project-id"]}/files/${updateInfo["file-id"]}`;
 
-  return `* [${displayName}](${modUrl})${authorName
-    ? ` - (by [${authorName}](https://www.curseforge.com/members/${authorName}/projects))`
+  return `  * [${displayName}](${modUrl})${authorName
+    ? ` (by [${authorName}](https://www.curseforge.com/members/${authorName}/projects))`
     : ""
     }`;
 }
