@@ -649,7 +649,7 @@ async function generateChangelog() {
       writeTextToFile(paths.changelog, changelog, true),
       writeTextToFile(paths.modlist, modlist),
       writeTextToFile(paths.modChangelog, modChangelog),
-      // writeTextToFile(paths.rootModlist, modlist), // not sure if I'll update the modlist in the root folder, as it's a little too outdated, and history would be messed up
+      writeTextToFile(paths.rootModlist, modlist),
     ]);
     console.log(CLI_ARGS.testMode ? "Test mode: Changelogs saved to files." : "Changelogs saved to files.");
   } else {
