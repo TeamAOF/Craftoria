@@ -251,6 +251,7 @@ ServerEvents.generateData('after_mods', event => {
     'mekaweapons:module_arrowvelocity_unit',
     'pastel:mod_integration/ae2/blasting/pure_certus_quartz',
     'pastel:mod_integration/ae2/blasting/pure_fluix',
+    'minecraft:cake', // Some mod overrides this recipe, causing errors
   ];
 
   /** @type {string[]} */

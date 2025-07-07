@@ -44,6 +44,10 @@
 	#nicknames of players, who considered as modpack creator.
 	#Only this players can overwrite modlist.json
 	#If this feature is enabled and this array is empty, will be appended with nickname of current player.
+	#-----------------------------------------------------------------------------------------------------
+	#Warning! This is not displayed anywhere, it's just tech param used for modlist feature to work correctly.
+	#Here must be actual nicknames of people who work with the modpack and publishing releases!
+	#-----------------------------------------------------------------------------------------------------
 	modpack_creators = ["White_Phant0m", "HeyAmAK"]
 	#If enabled, modlist.json will be overwritten on every launch(first tick of TitleScreen),
 	#then game is launched by modpack creator.

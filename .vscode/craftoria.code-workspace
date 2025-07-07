@@ -17,16 +17,20 @@
       "path": "../logs"
     },
     {
-      "name": "Configs",
+      "name": "Configs (Local)",
       "path": "../config"
     },
     {
+      "name": "Configs (Pack)",
+      "path": "../packwiz/config"
+    },
+    {
       "name": "Default Configs",
-      "path": "../defaultconfigs"
+      "path": "../packwiz/defaultconfigs"
     },
     {
       "name": "Quests",
-      "path": "../config/ftbquests/quests"
+      "path": "../packwiz/config/ftbquests/quests"
     }
   ],
   "settings": {
@@ -34,9 +38,6 @@
       "**/*.log.gz": true,
       "**/*.json.gz": true,
       "**/*.bak": true,
-      "**/*.jar": true,
-      "**/*.jar.disabled": true,
-      "mods/.index": true,
     },
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "always",

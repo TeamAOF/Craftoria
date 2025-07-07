@@ -77,7 +77,6 @@ ServerEvents.recipes(e => {
     'dumplings_delight:eggplant_seeds',
     'duckling:cake',
     'utilitarian:utility/logs_to_chests',
-    'minecraft:cake',
     'mekanism:sulfur_dye',
     'minecraft:coal_from_blasting_deepslate_coal_ore',
     'mekanism:processing/lead/ingot/from_ore_blasting',

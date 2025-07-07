@@ -3,57 +3,31 @@
 /*
 
 !/automation
-!/changelogs
-!/config
-!/defaultconfigs
-!/emotes
+!/packwiz
 !/kubejs
-!/mods
-!/resourcepacks
-!/shaderpacks
+!/changelogs
 !/server_files
 !/.gitignore
 !/.gitattributes
-!/manifest.json
 !/.github
 !.editorconfig
-!.prettierrc.json
 !InstanceSync.jar
 !MODLIST.md
 !README.md
-!minecraftinstance.json
-!user-prefs.json
-!version-info.json
-!/mods/*.pw.toml
-!/resourcepacks/*.pw.toml
-!/shaderpacks/*.pw.toml
-!/index.toml
-!/pack.toml
-!/.packwizignore
 
-Server Test/
 knownkeys.txt
 automation/secrets.ps1
 automation/exports
-.curseclient
 
-/mods/*.jar
-/mods/.index
-/resourcepacks/*.zip
-/resourcepacks/*/
-/shaderpacks/*.zip
-/shaderpacks/*/
+/packwiz/*.zip
 *.disabled
 
-# Specific Mod Junk
-# ---
-/config/embeddium-fingerprint.json
-/config/spark/activity.json
-/config/ars_nouveau/search_index/
-/config/nolijium.json5
-/config/inventoryprofilesnext/*
-!/config/inventoryprofilesnext/integrationHints
-!/config/inventoryprofilesnext/inventoryprofiles.json
+!/config
+/config/*
+!/config/crash_assistant
+!/config/fancymenu
+!/config/ftbquests
+/config/ftbquests/client-config.snbt
 
 # System Files / Misc.
 # ---
@@ -73,10 +47,6 @@ ModListCreator-5.0.0-fatjar.jar
 !/.vscode/extensions.json
 
 # ProbeJS
-/kubejs/probe
-/kubejs/config/probejs.json
-/kubejs/config/probe-settings.json
-/kubejs/*/jsconfig.json
 .probe
 
 # Downloadable dependencies

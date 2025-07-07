@@ -4,7 +4,10 @@
 	filename: "Utility"
 	group: "04696DE4EC4D4A94"
 	icon: {
-		id: "pipez:item_pipe"
+		components: {
+			"ftbquests:missing_item": "pipez:item_pipe"
+		}
+		id: "ftbquests:missing_item"
 	}
 	id: "5BF964A2F3CAA6E8"
 	images: [
@@ -758,7 +761,7 @@
 			}]
 			tasks: [{
 				id: "1BFD5710604560E1"
-				item: { count: 1, id: "pipez:item_pipe" }
+				item: { components: { "ftbquests:missing_item": "pipez:item_pipe" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -774,7 +777,7 @@
 			}]
 			tasks: [{
 				id: "3ED0A899B752D56F"
-				item: { count: 1, id: "pipez:fluid_pipe" }
+				item: { components: { "ftbquests:missing_item": "pipez:fluid_pipe" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 7.5d
@@ -790,7 +793,7 @@
 			}]
 			tasks: [{
 				id: "2420C5FFD9312CBF"
-				item: { count: 1, id: "pipez:energy_pipe" }
+				item: { components: { "ftbquests:missing_item": "pipez:energy_pipe" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 8.0d
@@ -806,7 +809,7 @@
 			}]
 			tasks: [{
 				id: "7D3B6D8006E458BA"
-				item: { count: 1, id: "pipez:universal_pipe" }
+				item: { components: { "ftbquests:missing_item": "pipez:universal_pipe" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -822,7 +825,7 @@
 			}]
 			tasks: [{
 				id: "255289E9C4E04077"
-				item: { count: 1, id: "pipez:gas_pipe" }
+				item: { components: { "ftbquests:missing_item": "pipez:gas_pipe" }, count: 1, id: "ftbquests:missing_item" }
 				type: "item"
 			}]
 			x: 4.0d
@@ -839,22 +842,22 @@
 			tasks: [
 				{
 					id: "7D9C32694681D16E"
-					item: { count: 1, id: "pipez:basic_upgrade" }
+					item: { components: { "ftbquests:missing_item": "pipez:basic_upgrade" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "0AD70C9DC0513C20"
-					item: { count: 1, id: "pipez:improved_upgrade" }
+					item: { components: { "ftbquests:missing_item": "pipez:improved_upgrade" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "191048FDF9112EC7"
-					item: { count: 1, id: "pipez:advanced_upgrade" }
+					item: { components: { "ftbquests:missing_item": "pipez:advanced_upgrade" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "6DFD96E4FFAC5F10"
-					item: { count: 1, id: "pipez:ultimate_upgrade" }
+					item: { components: { "ftbquests:missing_item": "pipez:ultimate_upgrade" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]
@@ -873,12 +876,12 @@
 			tasks: [
 				{
 					id: "11DE21AE45EB2803"
-					item: { count: 1, id: "pipez:wrench" }
+					item: { components: { "ftbquests:missing_item": "pipez:wrench" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 				{
 					id: "720FDE6DCA8720E7"
-					item: { count: 1, id: "pipez:filter_destination_tool" }
+					item: { components: { "ftbquests:missing_item": "pipez:filter_destination_tool" }, count: 1, id: "ftbquests:missing_item" }
 					type: "item"
 				}
 			]

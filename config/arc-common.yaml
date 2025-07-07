@@ -1,8 +1,0 @@
-block:
-  #The maximum size of the block pos cache, used to not drop double drops on placed blocks
-  #Minimum value: -2147483648, Maximum value: 2147483647, Default value: 10000
-  max_block_pos_cache_size: 10000
-debug:
-  #if true, debug mode is enabled
-  #Default value: false
-  is_debug: false

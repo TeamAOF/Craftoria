@@ -4,7 +4,10 @@
 	filename: "Mekanism Ore Processing"
 	group: "066C799B2F5452CD"
 	icon: {
-		id: "moremekanismprocessing:dirty_dust_cinnabar"
+		components: {
+			"ftbquests:missing_item": "moremekanismprocessing:dirty_dust_cinnabar"
+		}
+		id: "ftbquests:missing_item"
 	}
 	id: "33E8845C982DC0F2"
 	order_index: 3
