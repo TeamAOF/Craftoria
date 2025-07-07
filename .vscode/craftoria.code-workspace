@@ -27,6 +27,10 @@
     {
       "name": "Quests",
       "path": "../config/ftbquests/quests"
+    },
+    {
+      "name": "Mods",
+      "path": "../mods",
     }
   ],
   "settings": {
@@ -34,6 +38,9 @@
       "**/*.log.gz": true,
       "**/*.json.gz": true,
       "**/*.bak": true,
+      "**/*.jar": true,
+      "**/*.jar.disabled": true,
+      "mods/.index": true,
     },
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "always",
