@@ -11,7 +11,7 @@ import { $, Glob } from "bun";
 // Try to import pack.toml first, fallback to minecraftinstance.json
 let packMetadata;
 try {
-  packMetadata = require("../../../pack.toml");
+  packMetadata = require("../../../packwiz/pack.toml");
 } catch (error) {
   console.warn("pack.toml not found, using minecraftinstance.json as fallback");
   const instanceData = require("../../../minecraftinstance.json");
@@ -74,7 +74,7 @@ async function getCommitMetadataFiles(commitHash) {
   let hasInstanceJson = false;
 
   try {
-    await $`git cat-file -e ${commitHash}:pack.toml`;
+    await $`git cat-file -e ${commitHash}:packwiz/pack.toml`;
     hasPackToml = true;
   } catch (error) {
     // pack.toml doesn't exist, check for minecraftinstance.json
@@ -82,14 +82,14 @@ async function getCommitMetadataFiles(commitHash) {
       await $`git cat-file -e ${commitHash}:minecraftinstance.json`;
       hasInstanceJson = true;
     } catch (error2) {
-      console.warn(`Neither pack.toml nor minecraftinstance.json found in commit ${commitHash}, skipping mod comparison for this commit`);
+      console.warn(`Neither packwiz/pack.toml nor minecraftinstance.json found in commit ${commitHash}, skipping mod comparison for this commit`);
       return [null, {}];
     }
   }
 
   // Archive the appropriate files
   if (hasPackToml) {
-    await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} pack.toml mods/ resourcepacks/ shaderpacks/`;
+    await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} packwiz/pack.toml packwiz/mods/ packwiz/resourcepacks/ packwiz/shaderpacks/`;
   } else {
     await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} minecraftinstance.json`;
   }
@@ -102,10 +102,10 @@ async function getCommitMetadataFiles(commitHash) {
 
   if (hasPackToml) {
     // Use pack.toml
-    packMetadata = require(`${folderPath}/pack.toml`);
+    packMetadata = require(`${folderPath}/packwiz/pack.toml`);
 
     // Scan mods, resourcepacks, and shaderpacks folders
-    const folders = ['mods', 'resourcepacks', 'shaderpacks'];
+    const folders = ['packwiz/mods', 'packwiz/resourcepacks', 'packwiz/shaderpacks'];
 
     for (const folder of folders) {
       try {
@@ -121,7 +121,8 @@ async function getCommitMetadataFiles(commitHash) {
               const projectId = updateInfo["project-id"];
               if (projectId) {
                 // Add category information to metadata
-                metadata._category = folder;
+                // Extract the category from the folder path (e.g., 'packwiz/mods' -> 'mods')
+                metadata._category = folder.split('/')[1];
                 return [projectId, metadata];
               }
             })

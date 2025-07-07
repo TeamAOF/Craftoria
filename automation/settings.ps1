@@ -38,7 +38,7 @@ $LAST_MODPACK_VERSION = "1.22.1"
 $MODLOADER = "NeoForge"
 
 # Version of the modloader
-$MODLOADER_VERSION = "21.1.176"
+$MODLOADER_VERSION = "21.1.187"
 
 # Minecraft Version (for display purposes)
 $MINECRAFT_VERSION = "1.21.1"

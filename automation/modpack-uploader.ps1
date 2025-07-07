@@ -111,8 +111,10 @@ function New-ClientFiles {
         Write-Host "Running packwiz cf export..." -ForegroundColor Cyan
 
         try {
-            # Run packwiz cf export to create the CurseForge-compatible zip file
+            # Change to packwiz directory and run packwiz cf export to create the CurseForge-compatible zip file
+            Push-Location "$INSTANCE_ROOT/packwiz"
             & packwiz cf export --output $clientZip
+            Pop-Location
 
             if (Test-Path $clientZip) {
                 Write-Host "Client files $clientZip created successfully using packwiz!" -ForegroundColor Green
@@ -121,6 +123,7 @@ function New-ClientFiles {
             }
         }
         catch {
+            Pop-Location -ErrorAction SilentlyContinue
             Write-Host "Error running packwiz cf export: $_" -ForegroundColor Red
             throw "Failed to create client files using packwiz: $_"
         }
@@ -328,7 +331,7 @@ function Update-PackToml {
     Write-Host "Updating pack.toml with settings..." -ForegroundColor Cyan
     Write-Host
 
-    $packTomlPath = "$INSTANCE_ROOT/pack.toml"
+    $packTomlPath = "$INSTANCE_ROOT/packwiz/pack.toml"
 
     if (!(Test-Path $packTomlPath)) {
         Write-Host "pack.toml not found at $packTomlPath" -ForegroundColor Red
@@ -360,10 +363,13 @@ function Update-PackToml {
     Write-Host "Running packwiz refresh..." -ForegroundColor Cyan
 
     try {
+        Push-Location "$INSTANCE_ROOT/packwiz"
         & packwiz refresh
+        Pop-Location
         Write-Host "packwiz refresh completed successfully!" -ForegroundColor Green
     }
     catch {
+        Pop-Location -ErrorAction SilentlyContinue
         Write-Host "Error running packwiz refresh: $_" -ForegroundColor Red
         throw "Failed to run packwiz refresh: $_"
     }
@@ -400,7 +406,7 @@ function Update-VersionFiles {
     Write-Host
 
     # Update version_info.json
-    $versionInfoPath = "$INSTANCE_ROOT/version_info.json"
+    $versionInfoPath = "$INSTANCE_ROOT/packwiz/version_info.json"
     if (Test-Path $versionInfoPath) {
         $versionInfo = Get-Content $versionInfoPath | ConvertFrom-Json
         $versionInfo.version = $MODPACK_VERSION
@@ -410,7 +416,7 @@ function Update-VersionFiles {
     }
 
     # Update bcc-common.toml
-    $bccConfigPath = "$INSTANCE_ROOT/config/bcc-common.toml"
+    $bccConfigPath = "$INSTANCE_ROOT/packwiz/config/bcc-common.toml"
     if (Test-Path $bccConfigPath) {
         $bccContent = Get-Content $bccConfigPath -Raw
         $bccContent = $bccContent -replace '(?m)^(\s*)modpackName\s*=\s*".*"', "`$1modpackName = `"$MODPACK_NAME`""
@@ -420,7 +426,7 @@ function Update-VersionFiles {
     }
 
     # Update FancyMenu craftoria.txt
-    $fancyMenuPath = "$INSTANCE_ROOT/config/fancymenu/customization/craftoria.txt"
+    $fancyMenuPath = "$INSTANCE_ROOT/packwiz/config/fancymenu/customization/craftoria.txt"
     if (Test-Path $fancyMenuPath) {
         $fancyMenuContent = Get-Content $fancyMenuPath -Raw
         $displayModloader = $MODLOADER

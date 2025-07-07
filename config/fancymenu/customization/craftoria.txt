@@ -101,7 +101,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = 
+  label =
   navigatable = true
   element_type = custom_button
   instance_identifier = a835456d-616a-4710-b254-c4e76c351964-1719250980199
@@ -133,7 +133,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = 
+  label =
   navigatable = true
   element_type = custom_button
   instance_identifier = 44526a66-6cbe-438d-b009-05e0982db822-1719252668618
@@ -165,7 +165,7 @@ element {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = 
+  label =
   navigatable = true
   element_type = custom_button
   instance_identifier = 1a7cecd4-353b-4dd8-b4de-ebd0977a8066-1719271872454
@@ -196,7 +196,7 @@ vanilla_button {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = 
+  label =
   navigatable = true
   element_type = vanilla_button
   instance_identifier = 400358
@@ -232,7 +232,7 @@ vanilla_button {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = 
+  label =
   navigatable = true
   element_type = vanilla_button
   instance_identifier = mc_titlescreen_singleplayer_button
@@ -292,14 +292,14 @@ vanilla_button {
 
 element {
   button_element_executable_block_identifier = 3d1a42be-543f-4cb7-b0bf-cb9c130e88cd-1745871606493
-  [executable_action_instance:ae5fa8a3-51f9-420a-8f92-0feba922d6af-1745871999441][action_type:openlink] = {"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/main/version_info.json","json_path":"$.version_url"}}
+  [executable_action_instance:ae5fa8a3-51f9-420a-8f92-0feba922d6af-1745871999441][action_type:openlink] = {"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/main/packwiz/version_info.json","json_path":"$.version_url"}}
   [executable_block:3d1a42be-543f-4cb7-b0bf-cb9c130e88cd-1745871606493][type:generic] = [executables:ae5fa8a3-51f9-420a-8f92-0feba922d6af-1745871999441;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  hoverlabel = {"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/main/version_info.json","json_path":"$.version"}}
-  description = A new update is available ({"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/main/version_info.json","json_path":"$.version"}})
+  hoverlabel = {"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/main/packwiz/version_info.json","json_path":"$.version"}}
+  description = A new update is available ({"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/main/packwiz/version_info.json","json_path":"$.version"}})
   label = Update
   navigatable = true
   widget_active_state_requirement_container_identifier = 4beb552c-9d0d-4d17-8810-f0bd5bc36af6-1745871606493
@@ -339,8 +339,8 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 01aee581-8f10-4e6e-8a0f-204a5ffba0ee-1745871606493
   [loading_requirement_container_meta:01aee581-8f10-4e6e-8a0f-204a5ffba0ee-1745871606493] = [groups:][instances:6335916b-152e-43eb-9890-8bced20a3900-1745871770261;cdb92bb6-2cc8-47fb-8eb7-75794b476b8f-1745872680511;]
-  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if_not][req_id:6335916b-152e-43eb-9890-8bced20a3900-1745871770261] = ["mode":"equals","text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/main/version_info.json","json_path":"$.version"}}","compare_with":"{"placeholder":"json","values":{"source":"{"placeholder":"absolute_path","values":{"short_path":"version_info.json"}}","json_path":"$.version"}}"]$
-  [loading_requirement:is_internet_connection_available][requirement_mode:if][req_id:cdb92bb6-2cc8-47fb-8eb7-75794b476b8f-1745872680511] = 
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if_not][req_id:6335916b-152e-43eb-9890-8bced20a3900-1745871770261] = ["mode":"equals","text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/main/packwiz/version_info.json","json_path":"$.version"}}","compare_with":"{"placeholder":"json","values":{"source":"{"placeholder":"absolute_path","values":{"short_path":"version_info.json"}}","json_path":"$.version"}}"]$
+  [loading_requirement:is_internet_connection_available][requirement_mode:if][req_id:cdb92bb6-2cc8-47fb-8eb7-75794b476b8f-1745872680511] =
   enable_parallax = false
   parallax_intensity = 0.5
   invert_parallax = false
@@ -382,8 +382,8 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = e0d764b7-027d-4856-8f44-82115b3300e7-1745873020640
   [loading_requirement_container_meta:e0d764b7-027d-4856-8f44-82115b3300e7-1745873020640] = [groups:][instances:c6525dcb-43d9-44c7-b4bb-a1e2f1ed0d26-1745873506852;8a8b842a-3526-4dc1-92f3-0c215985085a-1745874788466;af62ac36-f93c-4464-911b-0c98526da439-1745874807650;]
-  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if_not][req_id:8a8b842a-3526-4dc1-92f3-0c215985085a-1745874788466] = ["mode":"equals","text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/main/version_info.json","json_path":"$.version"}}","compare_with":"{"placeholder":"json","values":{"source":"{"placeholder":"absolute_path","values":{"short_path":"version_info.json"}}","json_path":"$.version"}}"]$
-  [loading_requirement:is_internet_connection_available][requirement_mode:if][req_id:af62ac36-f93c-4464-911b-0c98526da439-1745874807650] = 
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if_not][req_id:8a8b842a-3526-4dc1-92f3-0c215985085a-1745874788466] = ["mode":"equals","text":"{"placeholder":"json","values":{"source":"https://raw.githubusercontent.com/TeamAOF/Craftoria/refs/heads/main/packwiz/version_info.json","json_path":"$.version"}}","compare_with":"{"placeholder":"json","values":{"source":"{"placeholder":"absolute_path","values":{"short_path":"version_info.json"}}","json_path":"$.version"}}"]$
+  [loading_requirement:is_internet_connection_available][requirement_mode:if][req_id:af62ac36-f93c-4464-911b-0c98526da439-1745874807650] =
   enable_parallax = false
   parallax_intensity = 0.5
   invert_parallax = false
@@ -476,7 +476,7 @@ vanilla_button {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = 
+  label =
   navigatable = true
   element_type = vanilla_button
   instance_identifier = mc_titlescreen_multiplayer_button
@@ -544,7 +544,7 @@ vanilla_button {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = 
+  label =
   navigatable = true
   element_type = vanilla_button
   instance_identifier = mc_titlescreen_quit_button
@@ -612,7 +612,7 @@ vanilla_button {
   nine_slice_custom_background = false
   nine_slice_border_x = 5
   nine_slice_border_y = 5
-  label = 
+  label =
   navigatable = true
   element_type = vanilla_button
   instance_identifier = mc_titlescreen_options_button
