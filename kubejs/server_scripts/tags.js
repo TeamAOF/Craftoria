@@ -134,10 +134,10 @@ ServerEvents.tags('item', e => {
     'advanced_ae:adv_pattern_provider',
     'advanced_ae:adv_pattern_provider_part',
   ]);
-  // e.add('expandedae:exp_pattern_provider', [
-  //   'expandedae:exp_pattern_provider',
-  //   'expandedae:exp_pattern_provider_part',
-  // ]);
+  e.add('expandedae:exp_pattern_provider', [
+    'expandedae:exp_pattern_provider',
+    'expandedae:exp_pattern_provider_part',
+  ]);
 });
 
 ServerEvents.tags('block', e => {
