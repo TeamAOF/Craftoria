@@ -6,10 +6,6 @@ const globalItemRemovals = [
   'megacells:mega_pattern_provider',
   'megacells:cable_mega_pattern_provider',
   'megacells:mega_crafting_accelerator',
-  'bigger_ae2:advanced_item_cell_housing',
-  'bigger_ae2:quantum_item_storage_cell',
-  'bigger_ae2:digital_singularity_item_storage_cell',
-  'bigger_ae2:quantum_flux_storage_cell',
   'chisel:chisel',
   'ae2:spatial_anchor',
   'mekanism:upgrade_anchor',
@@ -30,14 +26,15 @@ const globalItemRemovals = [
   'create:crushed_raw_aluminum'
 ];
 
-/** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
-const disabledItems = [
-  // { id: 'bigger_ae2:4_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_4' },
-  // { id: 'bigger_ae2:16_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_16' },
-  // { id: 'bigger_ae2:64_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_64' },
-  // { id: 'bigger_ae2:256_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_256' },
-  // { id: 'bigger_ae2:1024_core_crafting_accelerator', altId: 'expandedae:exp_crafting_accelerator_1k' },
-];
+/**
+ * @typedef {Object} DisabledItem
+ * @property {Special.Item} id - The item to disable.
+ * @property {string} [alt] - [OPTIONAL] Preferred alternative item name, used in the tooltips of the disabled item.
+ * @property {Special.Item} [altId] - [OPTIONAL] Alternative itemid, if provided, it will add a shapeless recipe to convert the original item to the alternative item.
+ */
+
+/** @type {DisabledItem[]} */
+const disabledItems = [];
 
 ServerEvents.recipes(event => {
   /** @type {Special.RecipeId[]} */

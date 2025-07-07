@@ -5,14 +5,12 @@
 ServerEvents.recipes(event => {
   const ae2 = AE2Helper(event);
 
-  event
-    .shaped('bigger_ae2:advanced_flux_cell_housing', ['GSG', 'SMS', 'RRR'], {
-      G: 'ae2:quartz_glass',
-      S: 'ae2:sky_dust',
-      M: 'appflux:core_256m',
-      R: 'appflux:harden_insulating_resin',
-    })
-    .id('bigger_ae2:advanced_flux_cell_housing');
+  // event.shaped('bigger_ae2:advanced_flux_cell_housing', ['GSG', 'SMS', 'RRR'], {
+  //   G: 'ae2:quartz_glass',
+  //   S: 'ae2:sky_dust',
+  //   M: 'appflux:core_256m',
+  //   R: 'appflux:harden_insulating_resin',
+  // }).id('bigger_ae2:advanced_flux_cell_housing');
 
   event.replaceInput({ id: 'advanced_ae:quantum_helmet' }, 'minecraft:netherite_helmet', 'mekanism:mekasuit_helmet');
   event.replaceInput({ id: 'advanced_ae:quantum_chest' }, 'minecraft:netherite_chestplate', 'mekanism:mekasuit_bodyarmor');
@@ -27,16 +25,16 @@ ServerEvents.recipes(event => {
     '6x #ae2:glass_cable'
   ], null, 'advanced_ae:eaelargeappupgrade');
 
-  // ae2.crystalAssembler('expandedae:exp_pattern_provider', [
-  //   '#extendedae:extended_pattern_provider',
-  //   '4x ae2:capacity_card',
-  //   '4x ae2:engineering_processor',
-  // ], null, 'expandedae:crafting/exp_pattern_provider');
+  ae2.crystalAssembler('expandedae:exp_pattern_provider', [
+    '#extendedae:extended_pattern_provider',
+    '4x ae2:capacity_card',
+    '4x ae2:engineering_processor',
+  ], null, 'expandedae:crafting/exp_pattern_provider');
 
-  // event.shapeless('expandedae:exp_pattern_provider_upgrade', [
-  //   '#expandedae:exp_pattern_provider',
-  //   '#ae2:metal_ingots',
-  // ]).id('expandedae:crafting/exp_pattern_provider_upgrade');
+  event.shapeless('expandedae:exp_pattern_provider_upgrade', [
+    '#expandedae:exp_pattern_provider',
+    '#ae2:metal_ingots',
+  ]).id('expandedae:crafting/exp_pattern_provider_upgrade');
 
   /** @type {Special.RecipeId[]} */
   const toAE2Metal = [
