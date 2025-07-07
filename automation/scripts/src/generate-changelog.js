@@ -72,24 +72,39 @@ async function getCommitMetadataFiles(commitHash) {
   // Check if pack.toml exists in this commit first
   let hasPackToml = false;
   let hasInstanceJson = false;
+  let isLegacyStructure = false;
 
   try {
     await $`git cat-file -e ${commitHash}:packwiz/pack.toml`;
     hasPackToml = true;
   } catch (error) {
-    // pack.toml doesn't exist, check for minecraftinstance.json
+    // packwiz/pack.toml doesn't exist, check for legacy pack.toml in root
     try {
-      await $`git cat-file -e ${commitHash}:minecraftinstance.json`;
-      hasInstanceJson = true;
+      await $`git cat-file -e ${commitHash}:pack.toml`;
+      hasPackToml = true;
+      isLegacyStructure = true;
+      console.log(`Using legacy structure for commit ${commitHash} (pack.toml in root)`);
     } catch (error2) {
-      console.warn(`Neither packwiz/pack.toml nor minecraftinstance.json found in commit ${commitHash}, skipping mod comparison for this commit`);
-      return [null, {}];
+      // pack.toml doesn't exist anywhere, check for minecraftinstance.json
+      try {
+        await $`git cat-file -e ${commitHash}:minecraftinstance.json`;
+        hasInstanceJson = true;
+      } catch (error3) {
+        console.warn(`Neither packwiz/pack.toml, pack.toml, nor minecraftinstance.json found in commit ${commitHash}, skipping mod comparison for this commit`);
+        return [null, {}];
+      }
     }
   }
 
   // Archive the appropriate files
   if (hasPackToml) {
-    await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} packwiz/pack.toml packwiz/mods/ packwiz/resourcepacks/ packwiz/shaderpacks/`;
+    if (isLegacyStructure) {
+      // Legacy structure: pack.toml, mods/, resourcepacks/, shaderpacks/ in root
+      await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} pack.toml mods/ resourcepacks/ shaderpacks/`;
+    } else {
+      // New structure: everything under packwiz/
+      await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} packwiz/pack.toml packwiz/mods/ packwiz/resourcepacks/ packwiz/shaderpacks/`;
+    }
   } else {
     await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} minecraftinstance.json`;
   }
@@ -102,10 +117,13 @@ async function getCommitMetadataFiles(commitHash) {
 
   if (hasPackToml) {
     // Use pack.toml
-    packMetadata = require(`${folderPath}/packwiz/pack.toml`);
+    const packTomlPath = isLegacyStructure ? `${folderPath}/pack.toml` : `${folderPath}/packwiz/pack.toml`;
+    packMetadata = require(packTomlPath);
 
     // Scan mods, resourcepacks, and shaderpacks folders
-    const folders = ['packwiz/mods', 'packwiz/resourcepacks', 'packwiz/shaderpacks'];
+    const folders = isLegacyStructure
+      ? ['mods', 'resourcepacks', 'shaderpacks']
+      : ['packwiz/mods', 'packwiz/resourcepacks', 'packwiz/shaderpacks'];
 
     for (const folder of folders) {
       try {
@@ -121,8 +139,11 @@ async function getCommitMetadataFiles(commitHash) {
               const projectId = updateInfo["project-id"];
               if (projectId) {
                 // Add category information to metadata
-                // Extract the category from the folder path (e.g., 'packwiz/mods' -> 'mods')
-                metadata._category = folder.split('/')[1];
+                // Extract the category from the folder path
+                const categoryName = isLegacyStructure
+                  ? folder  // 'mods', 'resourcepacks', 'shaderpacks'
+                  : folder.split('/')[1]; // 'packwiz/mods' -> 'mods'
+                metadata._category = categoryName;
                 return [projectId, metadata];
               }
             })
@@ -277,50 +298,50 @@ function generateChangelogContent(features, fixes, addedCategories, removedCateg
     : `\n\n### Links\n\n<:curseforge:1117579334031511634> **[Download](https://www.curseforge.com/minecraft/modpacks/craftoria/files/${CONFIG.fileId})**\n📜 **[Changelog](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/CHANGELOG.md)**`;
   const neoforgeVersion = packMetadata.versions?.neoforge || "unknown";
   const header = CONFIG.saveToFile
-    ? `\n_Neoforge_ ${neoforgeVersion} | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_${CONFIG.packVersion}.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_${CONFIG.packVersion}.md)_`
+    ? `\n\n_Neoforge ${neoforgeVersion}_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_${CONFIG.packVersion}.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_${CONFIG.packVersion}.md)_`
     : "";
 
   const sections = [
-    `${mention}#${CONFIG.saveToFile ? "" : craftoriaEmoji} Craftoria | v${CONFIG.packVersion
-    }${craftoriaEmoji}\n${header}`,
-    features.length && `\n\n### Changes/Improvements ⭐\n\n${features.join("\n")}`,
-    addedCategories.mods.length && `\n\n### Added Mods ✅\n\n${addedCategories.mods.join("\n")}`,
-    addedCategories.resourcepacks.length && `\n\n### Added Resource Packs 🎨\n\n${addedCategories.resourcepacks.join("\n")}`,
-    addedCategories.shaderpacks.length && `\n\n### Added Shader Packs ✨\n\n${addedCategories.shaderpacks.join("\n")}`,
-    removedCategories.mods.length && `\n\n### Removed Mods ❌\n\n${removedCategories.mods.join("\n")}`,
-    removedCategories.resourcepacks.length && `\n\n### Removed Resource Packs 🗑️\n\n${removedCategories.resourcepacks.join("\n")}`,
-    removedCategories.shaderpacks.length && `\n\n### Removed Shader Packs 🗑️\n\n${removedCategories.shaderpacks.join("\n")}`,
-    fixes.length && `\n\n### Bug Fixes 🪲\n\n${fixes.join("\n")}`,
-    `${links}\n---`,
+    `${mention}# ${CONFIG.saveToFile ? "" : craftoriaEmoji}Craftoria | v${CONFIG.packVersion}${craftoriaEmoji}${header}`,
+    features.length && `\n### Changes/Improvements ⭐\n\n${features.join("\n")}`,
+    addedCategories.mods.length && `\n### Added Mods ✅\n\n${addedCategories.mods.join("\n")}`,
+    addedCategories.resourcepacks.length && `\n### Added Resource Packs 🎨\n\n${addedCategories.resourcepacks.join("\n")}`,
+    addedCategories.shaderpacks.length && `\n### Added Shader Packs ✨\n\n${addedCategories.shaderpacks.join("\n")}`,
+    removedCategories.mods.length && `\n### Removed Mods ❌\n\n${removedCategories.mods.join("\n")}`,
+    removedCategories.resourcepacks.length && `\n### Removed Resource Packs 🗑️\n\n${removedCategories.resourcepacks.join("\n")}`,
+    removedCategories.shaderpacks.length && `\n### Removed Shader Packs 🗑️\n\n${removedCategories.shaderpacks.join("\n")}`,
+    fixes.length && `\n### Bug Fixes 🪲\n\n${fixes.join("\n")}`,
+    links && links,
+    CONFIG.saveToFile && "\n---",
   ].filter(Boolean);
 
-  if (sections.length === 2) sections.splice(-1, 0, "\n\n* Nothing changed");
+  if (sections.length === 2) sections.splice(-1, 0, "\n### Changes\n\n* Nothing changed");
 
-  return sections.join("");
+  return sections.join("\n") + "\n";
 }
 
 function generateModChangelog(addedCategories, removedCategories, changedCategories, oldPackMetadata) {
   const sections = [
-    `## Craftoria - ${CONFIG.oldPackVersion} -> ${CONFIG.packVersion}`,
+    `# Craftoria - ${CONFIG.oldPackVersion} -> ${CONFIG.packVersion}`,
     oldPackMetadata &&
     oldPackMetadata.versions &&
     packMetadata.versions &&
     packMetadata.versions.neoforge !== oldPackMetadata.versions.neoforge &&
-    `### NeoForge - ${oldPackMetadata.versions.neoforge} -> ${packMetadata.versions.neoforge}`,
-    addedCategories.mods.length && `### Added Mods\n${addedCategories.mods.join("\n")}`,
-    addedCategories.resourcepacks.length && `### Added Resource Packs\n${addedCategories.resourcepacks.join("\n")}`,
-    addedCategories.shaderpacks.length && `### Added Shader Packs\n${addedCategories.shaderpacks.join("\n")}`,
-    removedCategories.mods.length && `### Removed Mods\n${removedCategories.mods.join("\n")}`,
-    removedCategories.resourcepacks.length && `### Removed Resource Packs\n${removedCategories.resourcepacks.join("\n")}`,
-    removedCategories.shaderpacks.length && `### Removed Shader Packs\n${removedCategories.shaderpacks.join("\n")}`,
-    changedCategories.mods.length && `### Updated Mods\n${changedCategories.mods.join("\n")}`,
-    changedCategories.resourcepacks.length && `### Updated Resource Packs\n${changedCategories.resourcepacks.join("\n")}`,
-    changedCategories.shaderpacks.length && `### Updated Shader Packs\n${changedCategories.shaderpacks.join("\n")}`,
+    `## NeoForge - ${oldPackMetadata.versions.neoforge} -> ${packMetadata.versions.neoforge}`,
+    addedCategories.mods.length && `### Added Mods\n\n${addedCategories.mods.join("\n")}`,
+    addedCategories.resourcepacks.length && `### Added Resource Packs\n\n${addedCategories.resourcepacks.join("\n")}`,
+    addedCategories.shaderpacks.length && `### Added Shader Packs\n\n${addedCategories.shaderpacks.join("\n")}`,
+    removedCategories.mods.length && `### Removed Mods\n\n${removedCategories.mods.join("\n")}`,
+    removedCategories.resourcepacks.length && `### Removed Resource Packs\n\n${removedCategories.resourcepacks.join("\n")}`,
+    removedCategories.shaderpacks.length && `### Removed Shader Packs\n\n${removedCategories.shaderpacks.join("\n")}`,
+    changedCategories.mods.length && `### Updated Mods\n\n${changedCategories.mods.join("\n")}`,
+    changedCategories.resourcepacks.length && `### Updated Resource Packs\n\n${changedCategories.resourcepacks.join("\n")}`,
+    changedCategories.shaderpacks.length && `### Updated Shader Packs\n\n${changedCategories.shaderpacks.join("\n")}`,
   ].filter(Boolean);
 
-  if (sections.length === 1) sections.push("* Nothing changed");
+  if (sections.length === 1) sections.push("\n### Changes\n\n* Nothing changed");
 
-  return sections.join("\n\n");
+  return sections.join("\n\n") + "\n";
 }
 
 // Main function
@@ -385,7 +406,7 @@ async function generateChangelog() {
     )
   )
     .sort()
-    .join("\n")}`;
+    .join("\n")}\n`;
   const modChangelog = generateModChangelog(
     addedLinks,
     removedLinks,
