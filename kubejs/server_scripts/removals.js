@@ -14,6 +14,7 @@ const globalItemRemovals = [
   'industrialforegoing:infinity_nuke',
   'utilitarian:tiny_coal',
   'utilitarian:tiny_charcoal',
+  { item: /^create_connected:copycat_.*/, reason: 'use copycats+ blocks instead' },
   'pylons:infusion_pylon',
   'pylons:potion_filter',
   'xycraft_world:raw_aluminum',
