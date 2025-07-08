@@ -455,7 +455,6 @@
 		"The block can be &6disabled&r with &bredstone,&r and the lamp's &bdurability&r can be &6measured&r by a &bcomparator.&r With some simple wiring, you can stop your miners' lamps from breaking before it is too late."
 	]
 	quest.0C91DF887A33A8E6.quest_subtitle: "It's not void mining; it's pocket dimension mining"
-	quest.0C9D9AFD7C5C9F97.quest_desc: ["The &bNetherite Stick&f does the same things, but with a block &6place&f maximum of 1024 blocks."]
 	quest.0CE7E899D54A6AE8.quest_subtitle: "Congratulations! You've completed AE2!"
 	quest.0CE7E899D54A6AE8.title: "&bApplied Energistics &d100%"
 	quest.0D1AFCAD90FAA4F9.quest_desc: ["This Rod is pre-attuned to find a &aCommon&r material."]
@@ -2875,7 +2874,7 @@
 	quest.407D04C17AA78E09.quest_subtitle: "You might need these"
 	quest.407D04C17AA78E09.title: "Capacitors"
 	quest.407FD46B5C5A1EC0.quest_desc: [
-		"The &bStickiest Stick&f is the first iteration of a set of &9five&f Construction Sticks that allow you to build at quicker rates with more precision. This one can &6build&f with a max of &9three&f blocks in many different modes."
+		"Construction Sticks allow you to build at quicker rates with more precision, in many different modes."
 		""
 		"&6Using&f the apostrophe keybind ('), you can open the &9options screen&f. Here you can do many things:"
 		"- &bReplacement&f let's you decide if you want to &6replace&f certain blocks such as fluids, snow, and tallgrass."
@@ -2883,13 +2882,20 @@
 		"- &bMatching&f let's you decide if you want it to &6match&f to similar blocks (dirt/grass types), exact blocks, or any blocks."
 		"- &bDirection&f let's you &6place&f blocks with the direction of either the &9target block&f or the &9player&f."
 		"- &bRandom&f let's you &6randomize&f placed blocks from your hotbar."
-		""
+		"{@pagebreak}"
 		"&6Check&f your keybinds under the category name: \"&bConstruction Sticks&f\" to set automatic keybinds to &btoggle direction&f, &brestriction&f, and &bupgrade&f. You can also &6configure&f keybinds for &bShowing Previous&f action and &bUndo Operation&f."
 		""
 		"When &6holding down&f the keybind for \"&bShow Previous&f\" it will &6highlight&f your last operation's blocks in &agreen&f. Pressing the \"&bUndo Operation&f\" keybind and &6right clicking&f will &6undo&f your last placement of blocks."
 		""
 		"Having blocks in your offhand will &6place&f those instead of the block you're looking at."
 		"Having containers like &bshulker boxes&f, &bbundles&f, and many other containers can provide building blocks for the stick."
+		"{@pagebreak}"
+		"Here's all the tiers of construction sticks and their block placement limits:"
+		"- &bWood&r: 3"
+		"- &bCopper&r: 9"
+		"- &bIron&r: 27"
+		"- &bDiamond&r: 128"
+		"- &bNetherite&r: 1024"
 	]
 	quest.40915337B7E427F8.quest_desc: ["  A cable capable of transferring enough energy for your entire factory, &b10 times over&r, within a single cable. This is &bpeak&r power transfer."]
 	quest.40915337B7E427F8.quest_subtitle: "I'm a Real Live Wire"
@@ -4270,7 +4276,6 @@
 	]
 	quest.60868DF852E6028B.title: "Extra Gear"
 	quest.60A38769895A0B14.title: "Bank's Dock and Link"
-	quest.60A4B6B0601C837C.quest_desc: ["The &bCopper Stick&f does the same things, but with a block &6place&f maximum of 9 blocks."]
 	quest.60AEE273431548B6.quest_desc: ["Place a &bPressure Disperser&r throughout a turbine and boiler to properly regulate the &7blowoff of pressure&r."]
 	quest.60AEE273431548B6.title: "Pressure Disperser"
 	quest.60F4F5FE0C3748C3.quest_desc: [
@@ -4374,7 +4379,6 @@
 		"You can also link some other items to your &bME System&f other than just the &bWireless Terminals&f, such as &bBuilding Gadgets&f."
 	]
 	quest.6353B0AB7EFFA163.quest_subtitle: "add this here"
-	quest.6385DB0FFD411ECB.quest_desc: ["The &bIron Stick&f does the same things, but with a block &6place&f maximum of 27 blocks."]
 	quest.6387004E98403CCE.quest_desc: ["The &bChemical Crystallizer&r uses &dpurified ore slurry&r and &9crystallizes&r it into crystals."]
 	quest.6387004E98403CCE.title: "Chemical Crystallizer"
 	quest.6392FB264D1B2E52.quest_subtitle: "Used within the &aIdentification Chamber"
@@ -4610,7 +4614,6 @@
 	quest.681A718388A97FFC.title: "Muffling Upgrade"
 	quest.682D1178AF51998C.quest_desc: ["Craft any Rune that goes best with the magic armor or upgrade orb that you want."]
 	quest.683CF11DB8361F81.quest_desc: ["Used as a housing to hold MEGA Storage Component, for (Mekanism) Chemical Storage."]
-	quest.683EEA78F71AC153.quest_desc: ["The &bDiamond Stick&f does the same things, but with a block &6place&f maximum of 128 blocks."]
 	quest.68493CE96FD68EBA.title: "Cryomancer"
 	quest.68721F148E2805FB.quest_desc: [
 		"Your first &bSpell Book&r will allow you to start &6collecting&r and using &bspells&r."
@@ -5843,6 +5846,7 @@
 	task.429785464C6CD059.title: "Any #minecraft:axes"
 	task.443D8F4CD01CC0C9.title: "Summon a Parrot \"Familiar\""
 	task.4552085BF5330776.title: "OK, Let Me Cook"
+	task.46797D7788260932.title: "Construction Sticks"
 	task.487C2DBC60537E92.title: "Specialty Travelers Backpacks"
 	task.4B733AF93D7D28C4.title: "check the filter"
 	task.4CE3EEAAF41AE050.title: "Summon a Foliot Janitor"
