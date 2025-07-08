@@ -92,10 +92,7 @@
 		{
 			dependencies: ["78EDBDED3BFEC145"]
 			icon: {
-				components: {
-					"ftbquests:missing_item": "mekanismtools:steel_pickaxe"
-				}
-				id: "ftbquests:missing_item"
+				id: "cataclysm:black_steel_pickaxe"
 			}
 			id: "21E1E62AA4761EE2"
 			tasks: [{
@@ -261,11 +258,8 @@
 			rewards: [{
 				id: "1EA74B0DEA01464D"
 				item: {
-					components: {
-						"ftbquests:missing_item": "sereneseasons:season_sensor"
-					}
 					count: 1
-					id: "ftbquests:missing_item"
+					id: "eclipticseasons:calendar"
 				}
 				type: "item"
 			}]

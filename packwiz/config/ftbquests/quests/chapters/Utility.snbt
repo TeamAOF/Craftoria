@@ -4,10 +4,7 @@
 	filename: "Utility"
 	group: "04696DE4EC4D4A94"
 	icon: {
-		components: {
-			"ftbquests:missing_item": "pipez:item_pipe"
-		}
-		id: "ftbquests:missing_item"
+		id: "pipe_connector:pipe_connector"
 	}
 	id: "5BF964A2F3CAA6E8"
 	images: [
@@ -29,26 +26,6 @@
 			y: 0.0d
 		}
 		{
-			height: 6.0d
-			image: "pipez:item/filter_destination_tool"
-			order: 1
-			rotation: 0.0d
-			width: 6.0d
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			alpha: 128
-			color: 0
-			height: 1.5d
-			image: "ftbquests:textures/shapes/circle/background.png"
-			order: 10
-			rotation: 0.0d
-			width: 1.5d
-			x: 6.1d
-			y: 0.1d
-		}
-		{
 			color: 11499527
 			height: 6.0d
 			image: "ftbquests:textures/gui/background_white.png"
@@ -56,82 +33,6 @@
 			width: 6.0d
 			x: -6.0d
 			y: 0.0d
-		}
-		{
-			alpha: 192
-			color: 2193095
-			height: 6.0d
-			image: "ftbquests:textures/gui/background_white.png"
-			rotation: 0.0d
-			width: 6.0d
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			alpha: 128
-			color: 0
-			height: 1.0d
-			image: "ftbquests:textures/shapes/circle/background.png"
-			order: 10
-			rotation: 0.0d
-			width: 1.0d
-			x: 4.6d
-			y: -1.4d
-		}
-		{
-			alpha: 128
-			color: 0
-			height: 1.0d
-			image: "ftbquests:textures/shapes/circle/background.png"
-			order: 10
-			rotation: 0.0d
-			width: 1.0d
-			x: 7.6d
-			y: -1.4d
-		}
-		{
-			alpha: 128
-			color: 0
-			height: 1.0d
-			image: "ftbquests:textures/shapes/circle/background.png"
-			order: 10
-			rotation: 0.0d
-			width: 1.0d
-			x: 8.1d
-			y: 0.1d
-		}
-		{
-			alpha: 128
-			color: 0
-			height: 1.0d
-			image: "ftbquests:textures/shapes/circle/background.png"
-			order: 10
-			rotation: 0.0d
-			width: 1.0d
-			x: 7.6d
-			y: 1.6d
-		}
-		{
-			alpha: 128
-			color: 0
-			height: 1.0d
-			image: "ftbquests:textures/shapes/circle/background.png"
-			order: 10
-			rotation: 0.0d
-			width: 1.0d
-			x: 4.6d
-			y: 1.6d
-		}
-		{
-			alpha: 128
-			color: 0
-			height: 1.0d
-			image: "ftbquests:textures/shapes/circle/background.png"
-			order: 10
-			rotation: 0.0d
-			width: 1.0d
-			x: 4.1d
-			y: 0.1d
 		}
 		{
 			alpha: 128
@@ -319,6 +220,14 @@
 			width: 1.0d
 			x: -1.4d
 			y: 1.6d
+		}
+		{
+			height: 6.0d
+			image: "sfm:block/manager_top"
+			rotation: 0.0d
+			width: 6.0d
+			x: 6.0d
+			y: 0.0d
 		}
 	]
 	order_index: 3
@@ -752,141 +661,42 @@
 			y: -0.5000000000000004d
 		}
 		{
-			dependencies: ["6441C36C63A59445"]
-			id: "090BF67B44B9D1D2"
-			rewards: [{
-				id: "05029F33F570B304"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "1BFD5710604560E1"
-				item: { components: { "ftbquests:missing_item": "pipez:item_pipe" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["6441C36C63A59445"]
-			id: "41F841EBEDB8FE0E"
-			rewards: [{
-				id: "16DEA3DC86C05E36"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "3ED0A899B752D56F"
-				item: { components: { "ftbquests:missing_item": "pipez:fluid_pipe" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 7.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["6441C36C63A59445"]
-			id: "66B8D778206EDB1D"
-			rewards: [{
-				id: "5AB41DCD0582D7DD"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "2420C5FFD9312CBF"
-				item: { components: { "ftbquests:missing_item": "pipez:energy_pipe" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 8.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6441C36C63A59445"]
-			id: "01E18B9CD0724388"
-			rewards: [{
-				id: "27F6E6A65CAAAD7C"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "7D3B6D8006E458BA"
-				item: { components: { "ftbquests:missing_item": "pipez:universal_pipe" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 4.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["6441C36C63A59445"]
-			id: "05FDE552764AE920"
-			rewards: [{
-				id: "7A80009AA2DE91B5"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			tasks: [{
-				id: "255289E9C4E04077"
-				item: { components: { "ftbquests:missing_item": "pipez:gas_pipe" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6441C36C63A59445"]
-			id: "0FB6106D73ABB512"
-			rewards: [{
-				id: "60B815EE42955E41"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
+			id: "4CD484A8E80C1D2F"
 			tasks: [
 				{
-					id: "7D9C32694681D16E"
-					item: { components: { "ftbquests:missing_item": "pipez:basic_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+					id: "6D9FFE45507F18C1"
+					item: { count: 1, id: "sfm:manager" }
 					type: "item"
 				}
 				{
-					id: "0AD70C9DC0513C20"
-					item: { components: { "ftbquests:missing_item": "pipez:improved_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+					id: "5DF09683E9958FBE"
+					item: { count: 1, id: "sfm:disk" }
 					type: "item"
 				}
 				{
-					id: "191048FDF9112EC7"
-					item: { components: { "ftbquests:missing_item": "pipez:advanced_upgrade" }, count: 1, id: "ftbquests:missing_item" }
+					id: "4BC7BD45706AAB58"
+					item: { count: 1, id: "sfm:labelgun" }
 					type: "item"
 				}
 				{
-					id: "6DFD96E4FFAC5F10"
-					item: { components: { "ftbquests:missing_item": "pipez:ultimate_upgrade" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-			]
-			x: 7.5d
-			y: -1.5d
-		}
-		{
-			hide_dependent_lines: true
-			id: "6441C36C63A59445"
-			rewards: [{
-				id: "2F80590D291D701C"
-				table_id: 6467551270008706529L
-				type: "random"
-			}]
-			size: 1.5d
-			tasks: [
-				{
-					id: "11DE21AE45EB2803"
-					item: { components: { "ftbquests:missing_item": "pipez:wrench" }, count: 1, id: "ftbquests:missing_item" }
-					type: "item"
-				}
-				{
-					id: "720FDE6DCA8720E7"
-					item: { components: { "ftbquests:missing_item": "pipez:filter_destination_tool" }, count: 1, id: "ftbquests:missing_item" }
+					count: 16L
+					id: "2CBF1BB5DE0ABE0E"
+					item: { count: 16, id: "sfm:cable" }
 					type: "item"
 				}
 			]
 			x: 6.0d
 			y: 0.0d
+		}
+		{
+			id: "36E44D81A660A049"
+			tasks: [{
+				id: "44D5B706671D6455"
+				item: { count: 1, id: "pipe_connector:pipe_connector" }
+				type: "item"
+			}]
+			x: 5.95d
+			y: -3.75d
 		}
 	]
 }
