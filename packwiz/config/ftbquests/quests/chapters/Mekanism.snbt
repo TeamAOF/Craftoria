@@ -19,7 +19,7 @@
 		}
 		{
 			height: 20.0d
-			image: "ftbquests:textures/mek_palette.png"
+			image: "ftbchunks:textures/topography_palette.png"
 			order: 1
 			rotation: 0.0d
 			width: 84.0d
@@ -37,7 +37,7 @@
 		}
 		{
 			height: 20.0d
-			image: "ftbquests:textures/mek_palette.png"
+			image: "ftbchunks:textures/topography_palette.png"
 			order: 2
 			rotation: 180.0d
 			width: 84.0d
@@ -1427,22 +1427,6 @@
 				type: "item"
 			}]
 			x: 14.58d
-			y: -1.46d
-		}
-		{
-			dependencies: ["110B0C8DD2FD5BE7"]
-			id: "60868DF852E6028B"
-			rewards: [{
-				id: "10ABC73DC2D72B68"
-				table_id: 4994078666422690054L
-				type: "random"
-			}]
-			tasks: [{
-				id: "3C2BC3C17CF238DF"
-				item: { components: { "ftbquests:missing_item": "mekanismtools:osmium_paxel" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: 1.46d
 			y: -1.46d
 		}
 		{
