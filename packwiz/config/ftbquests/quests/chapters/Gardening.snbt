@@ -4,6 +4,9 @@
 	default_quest_shape: ""
 	filename: "Gardening"
 	group: "5016E3C5975D88DE"
+	icon: {
+		id: "minecraft:wheat"
+	}
 	id: "36F47DCAC3D28F1B"
 	order_index: 0
 	quest_links: [ ]
@@ -679,17 +682,6 @@
 			]
 			x: -3.5d
 			y: 2.5d
-		}
-		{
-			dependencies: ["6131E5E910CDFFBF"]
-			id: "4EF336CC2C697C6E"
-			tasks: [{
-				id: "16F4B84DFCEB4BFA"
-				item: { components: { "ftbquests:missing_item": "deeperdarker:bloom_berries" }, count: 1, id: "ftbquests:missing_item" }
-				type: "item"
-			}]
-			x: -3.5d
-			y: 3.5d
 		}
 		{
 			dependencies: ["59EC9D8641CF67B8"]
