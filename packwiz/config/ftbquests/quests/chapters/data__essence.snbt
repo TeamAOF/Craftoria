@@ -4,19 +4,638 @@
 	default_quest_shape: ""
 	filename: "data__essence"
 	group: "01BEAD68B1D370D3"
+	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
 	icon: {
 		id: "datanessence:data_tablet"
 	}
 	id: "1039FA46CF876BA6"
 	order_index: 5
 	quest_links: [ ]
-	quests: [{
-		id: "6C165AB4E90457B3"
-		tasks: [{
-			id: "3B9810E6BFB85158"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			icon: {
+				id: "datanessence:data_tablet"
+			}
+			id: "6C165AB4E90457B3"
+			rewards: [
+				{
+					id: "1240EEA87D1C984B"
+					item: {
+						count: 1
+						id: "datanessence:essence_shard"
+					}
+					random_bonus: 7
+					type: "item"
+				}
+				{
+					id: "463793E38C0402C2"
+					item: {
+						count: 1
+						id: "minecraft:raw_copper"
+					}
+					random_bonus: 15
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7B9689F0B56A9282"
+					item: { count: 1, id: "datanessence:locator" }
+					type: "item"
+				}
+				{
+					id: "1E35F067281750F0"
+					item: { count: 1, id: "datanessence:data_tablet" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6C165AB4E90457B3"]
+			icon: {
+				id: "datanessence:data_bank"
+			}
+			id: "06A0594D9425F6D1"
+			tasks: [{
+				id: "5F2DC4AC07F4110A"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6C165AB4E90457B3"]
+			icon: {
+				id: "datanessence:fabricator"
+			}
+			id: "6D8219D4D1CC11D4"
+			rewards: [{
+				count: 4
+				id: "368CD89CBB1583D1"
+				item: {
+					count: 1
+					id: "minecraft:obsidian"
+				}
+				random_bonus: 4
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4F12048751B8FA6E"
+					item: { count: 1, id: "datanessence:essence_redirector" }
+					type: "item"
+				}
+				{
+					id: "343FF9EFCCB4C4BA"
+					item: { count: 1, id: "datanessence:fabricator" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6C165AB4E90457B3"]
+			icon: {
+				id: "datanessence:essence_burner"
+			}
+			id: "14B475ADF6EA90D8"
+			rewards: [
+				{
+					count: 4
+					id: "3C0D82D90DF7BCE6"
+					item: {
+						count: 1
+						id: "datanessence:essence_wire"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "667C434E265094E3"
+					item: {
+						count: 1
+						id: "datanessence:essence_point"
+					}
+					type: "item"
+				}
+				{
+					id: "279D101CFFF28687"
+					item: {
+						count: 1
+						id: "datanessence:essence_shard"
+					}
+					random_bonus: 7
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7F841A7434B72A9B"
+					item: { count: 1, id: "datanessence:essence_wire" }
+					type: "item"
+				}
+				{
+					id: "04138BBCE67939DF"
+					item: { count: 1, id: "datanessence:essence_point" }
+					type: "item"
+				}
+				{
+					id: "510AC9A2D9AE19FA"
+					item: { count: 1, id: "datanessence:essence_burner" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6D8219D4D1CC11D4"
+				"14B475ADF6EA90D8"
+			]
+			id: "37BD4E649A568646"
+			rewards: [{
+				id: "41D82E6449B428C4"
+				item: {
+					count: 1
+					id: "datanessence:data_drive"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D64069015205797"
+				item: { count: 1, id: "datanessence:infuser" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["14B475ADF6EA90D8"]
+			icon: {
+				id: "datanessence:item_wire"
+			}
+			id: "63AFD980D4FB91D9"
+			tasks: [
+				{
+					id: "1C1425D3F5964197"
+					item: { count: 1, id: "datanessence:item_point" }
+					type: "item"
+				}
+				{
+					id: "64348B9EEBEE5643"
+					item: { count: 1, id: "datanessence:item_wire" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["14B475ADF6EA90D8"]
+			icon: {
+				id: "datanessence:fluid_wire"
+			}
+			id: "1AADBE7BE264EE0A"
+			tasks: [
+				{
+					id: "52D2CCABF32FCEF5"
+					item: { count: 1, id: "datanessence:fluid_point" }
+					type: "item"
+				}
+				{
+					id: "6820836FD5EB75EE"
+					item: { count: 1, id: "datanessence:fluid_wire" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1AADBE7BE264EE0A"
+				"63AFD980D4FB91D9"
+			]
+			id: "4066BF80CA7AA936"
+			tasks: [
+				{
+					id: "71F5AEAC00A2F335"
+					item: { count: 1, id: "datanessence:essence_buffer" }
+					type: "item"
+				}
+				{
+					id: "5328BD8901D0F600"
+					item: { count: 1, id: "datanessence:item_buffer" }
+					type: "item"
+				}
+				{
+					id: "441BBC3F12A39960"
+					item: { count: 1, id: "datanessence:fluid_buffer" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6D8219D4D1CC11D4"]
+			id: "5334CC83B76C9E67"
+			rewards: [
+				{
+					id: "2CD344DD6F3143CD"
+					item: {
+						count: 1
+						id: "datanessence:acceleration_lens"
+					}
+					type: "item"
+				}
+				{
+					id: "4D2DFFE8B508547A"
+					item: {
+						count: 1
+						id: "datanessence:attracting_lens"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "61B47824DB8B3178"
+				item: { count: 1, id: "datanessence:laser_emitter" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			id: "3D48365559F6142B"
+			optional: true
+			tasks: [{
+				id: "23792F0DCB62F265"
+				item: { count: 1, id: "datanessence:hammer_and_chisel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5334CC83B76C9E67"
+				"5326E5CBA3E28AAC"
+			]
+			icon: {
+				id: "datanessence:essence_sword"
+			}
+			id: "278A7D8337B5C692"
+			rewards: [{
+				id: "10024C8C1DC884EA"
+				item: {
+					count: 1
+					id: "datanessence:essence_bomb"
+				}
+				random_bonus: 3
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "086D6BA74B1EB10C"
+					item: { count: 1, id: "datanessence:essence_sword" }
+					type: "item"
+				}
+				{
+					id: "258911EEBFC56C03"
+					item: { count: 1, id: "datanessence:essence_bomb" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["13BED9A2EDE1E4BC"]
+			icon: {
+				id: "datanessence:traversite_trudgers"
+			}
+			id: "769FA1520FD3A225"
+			tasks: [{
+				id: "7DAC40A38D85745E"
+				item: { count: 1, id: "datanessence:traversite_trudgers" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["37BD4E649A568646"]
+			id: "1C0A1DF541A7181A"
+			tasks: [{
+				id: "78863E7B3D51B066"
+				item: { count: 1, id: "datanessence:drying_table" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["37BD4E649A568646"]
+			id: "265E953D3E30D402"
+			rewards: [
+				{
+					id: "6359EEE06993FD1B"
+					item: {
+						count: 1
+						id: "datanessence:panel_mold"
+					}
+					type: "item"
+				}
+				{
+					id: "317B769A03795625"
+					item: {
+						count: 1
+						id: "datanessence:rod_mold"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "1C26A4BAD8F5ADF6"
+				item: { count: 1, id: "datanessence:metal_shaper" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"6D8219D4D1CC11D4"
+				"37BD4E649A568646"
+			]
+			id: "5326E5CBA3E28AAC"
+			rewards: [{
+				count: 32
+				id: "0FBA56A887A9751B"
+				item: {
+					count: 1
+					id: "datanessence:traversite_road"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A720713C87993DD"
+				item: { count: 1, id: "datanessence:traversite_road" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["37BD4E649A568646"]
+			id: "7B93A18B479C406D"
+			tasks: [{
+				id: "7346DF7BFF68B5B5"
+				item: { count: 1, id: "datanessence:essence_breaker" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["37BD4E649A568646"]
+			id: "69B0C29E275F2006"
+			rewards: [
+				{
+					id: "7CC24960CD96969A"
+					item: {
+						count: 1
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+				{
+					id: "7572D78C6B011256"
+					item: {
+						count: 1
+						id: "create:fluid_pipe"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "218288DAE9613254"
+				item: { count: 1, id: "datanessence:item_filter" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"37BD4E649A568646"
+				"4066BF80CA7AA936"
+				"278A7D8337B5C692"
+			]
+			icon: {
+				id: "datanessence:speed_upgrade"
+			}
+			id: "13BED9A2EDE1E4BC"
+			rewards: [
+				{
+					id: "0C65B5DC7206610D"
+					item: {
+						count: 1
+						id: "datanessence:cognizant_cube"
+					}
+					type: "item"
+				}
+				{
+					id: "473547E88DC510B5"
+					item: {
+						count: 1
+						id: "datanessence:music_disc_player"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3A943250BC4C392D"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["13BED9A2EDE1E4BC"]
+			icon: {
+				id: "datanessence:sprite_book_flora"
+			}
+			id: "3903D8705A8B3D55"
+			tasks: [
+				{
+					id: "7DF425A529EE6DB0"
+					item: { count: 1, id: "datanessence:lensing_crystal" }
+					type: "item"
+				}
+				{
+					id: "3683AC0EF49C9954"
+					item: { count: 1, id: "datanessence:bonding_powder" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3903D8705A8B3D55"]
+			icon: {
+				id: "datanessence:ender_pearl_capture"
+			}
+			id: "461BDC4BD877261B"
+			rewards: [{
+				count: 8
+				id: "4BC9D3C01AEBB6EB"
+				item: {
+					count: 1
+					id: "datanessence:ender_pearl_relay"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "110DD19995E7B33C"
+					item: { count: 1, id: "datanessence:ender_pearl_capture" }
+					type: "item"
+				}
+				{
+					id: "331A43CD6B057C49"
+					item: { count: 1, id: "datanessence:ender_pearl_destination" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["13BED9A2EDE1E4BC"]
+			id: "0B1333243B316BB9"
+			tasks: [{
+				id: "573B26A2ADA2CA80"
+				item: { count: 1, id: "datanessence:entropic_processor" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3903D8705A8B3D55"]
+			id: "55957E77177DB57D"
+			rewards: [{
+				count: 4
+				id: "3324FC65034F18EF"
+				item: {
+					count: 1
+					id: "datanessence:warp_capsule"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "27186B6C0A36260D"
+				item: { count: 1, id: "datanessence:warp_capsule" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3903D8705A8B3D55"]
+			id: "05F31E23D5DAA3E9"
+			tasks: [{
+				id: "4AB4F9BBFAF9EF7F"
+				item: { count: 1, id: "datanessence:illumination_rod" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["13BED9A2EDE1E4BC"]
+			id: "1D6AD73438894911"
+			tasks: [{
+				id: "445D8CF89AA77CE3"
+				item: { count: 1, id: "datanessence:essence_leech" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["13BED9A2EDE1E4BC"]
+			id: "449B86D4839DE438"
+			tasks: [{
+				id: "555339272235D2A8"
+				item: { count: 1, id: "datanessence:industrial_plant_siphon" }
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["13BED9A2EDE1E4BC"]
+			id: "54385D4C97A11637"
+			tasks: [{
+				id: "6A5F07ED0D095C27"
+				item: { count: 1, id: "datanessence:synthesis_chamber" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3903D8705A8B3D55"]
+			id: "6B1AB43BA423AF45"
+			tasks: [{
+				id: "06E3076E2097ACC2"
+				item: { count: 1, id: "datanessence:transcendental_tether" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["13BED9A2EDE1E4BC"]
+			id: "19EA93E9F4230DDB"
+			tasks: [{
+				id: "6F3B5533519256D2"
+				item: { count: 1, id: "datanessence:mineral_purification_chamber" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["13BED9A2EDE1E4BC"]
+			id: "6DF81F4065F90E51"
+			tasks: [{
+				id: "7B440EB483574D8E"
+				item: { count: 1, id: "datanessence:auto-fabricator" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3903D8705A8B3D55"]
+			id: "6CB00B7033C8B29B"
+			tasks: [{
+				id: "6E0055E04956C480"
+				item: { count: 1, id: "datanessence:mineral_finding_rod" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.5d
+		}
+	]
 }
