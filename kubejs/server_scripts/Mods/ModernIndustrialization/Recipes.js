@@ -183,4 +183,18 @@ ServerEvents.recipes(e => {
     .itemIn('minecraft:iron_ingot')
     .id('craftoria:mi/assembler/prediction_matrix');
 
+  // Quartz Fiber
+  assembler(8, 100)
+    .itemOut('3x ae2:quartz_fiber')
+    .itemIn('6x #c:glass_blocks')
+    .itemIn('3x ae2:certus_quartz_dust')
+    .id('craftoria:mi/assembler/quartz_fiber');
+
+  // Fluix ME Glass Cable
+  assembler(8, 100)
+    .itemOut('4x ae2:fluix_glass_cable')
+    .itemIn('ae2:quartz_fiber')
+    .itemIn('2x ae2:fluix_crystal')
+    .id('craftoria:mi/assembler/fluix_glass_cable');
+
 });
