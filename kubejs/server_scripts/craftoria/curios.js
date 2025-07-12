@@ -106,13 +106,6 @@ ServerEvents.tags('item', e => {
     e.add('curios:face', id);
   });
 
-  /* Can't change these, their effects are hardcoded to the slot, takes a bit more work to get them working.
-  e.remove('curios:necklace', /^alshanex_familiars:.*_trinket$/);
-  e.remove('curios:ring', /^alshanex_familiars:.*_curio$/);
-  e.add('curios:magic_trinket', /^alshanex_familiars:.*_trinket$/);
-  e.add('curios:magic_curio', /^alshanex_familiars:.*_curio$/);
-  */
-
   e.get('curios:curio').objectIds.forEach(objId => {
     if (objId.namespace.includes('ae2') || objId.namespace.includes('extendedae') || objId.namespace.includes('ae2wtlib')) {
       e.remove('curios:curio', objId);
