@@ -21,7 +21,17 @@ ServerEvents.recipes(event => {
     return recipe;
   };
 
-  Ingredient.of('#minecraft:flowers').except('#minecraft:leaves').itemIds.forEach(flower => {
+  /** @type {Special.Item[]} */
+  const growBlacklist = [
+    '#minecraft:leaves',
+    '@pastel',
+    'occultism:otherflower_natural',
+    'minecraft:mangrove_propagule',
+    'supplementaries:wild_flax',
+    'minecart:chorus_flower',
+  ];
+
+  Ingredient.of('#minecraft:flowers').except(growBlacklist).itemIds.forEach(flower => {
     growPlant(flower, 'water', null, 32, 20 * 60)
       .id(`craftoria:mi/growth_chamber/grow_1x_${ID.path(flower)}`);
 
