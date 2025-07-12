@@ -91,8 +91,8 @@ ClientEvents.lang('en_us', e => {
         langEntries[`${key}.${langKey}`] = value;
       }
     } else {
-      langEntries[`block.${langKey}`] = machine.name;
-      let category = `${machine.name}`;
+      langEntries[`block.${langKey}`] = machine.name ?? toMcCase(id);
+      let category = `${machine.name ?? toMcCase(id)}`;
       // console.log(`Adding rei_categories.${langKey} -> ${category}`);
       langEntries[`rei_categories.${langKey}`] = category;
       if (machine.mod === 'mi_tweaks') langEntries[`rei_categories.modern_industrialization.${id}`] = category;

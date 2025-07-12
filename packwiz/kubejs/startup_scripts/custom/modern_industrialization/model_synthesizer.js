@@ -40,6 +40,7 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
     itemOutputs => itemOutputs.addSlots(102 - 32, 35, 3, 1),
     _ => { }, _ => { },
     'steel', 'model_synthesizer', true, false, false,
-    8, 0.75
+    8, 0.75,
+    true
   );
 });

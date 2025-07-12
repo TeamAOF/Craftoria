@@ -53,6 +53,7 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
     fluidInputs => fluidInputs.addSlots(56, 35 + 18, 1, 1),
     fluidOutputs => fluidOutputs.addSlots(102, 35 + 18, 1, 1),
     'factory_grate', 'ooze_lab', true, false, false,
-    8, 0.75
+    8, 0.75,
+    true
   );
 });

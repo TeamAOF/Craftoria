@@ -54,6 +54,7 @@ MITweaksMachineEvents.registerBatchMultiblocks(e => {
     e.getRecipeType('modern_industrialization:fusion_reactor'), particleAcceleratorShape,
     workStations => workStations.add('modern_industrialization:fusion_reactor'),
     'plasma_handling_iridium_machine_casing', 'particle_accelerator', true, false, false,
-    128, 0.5
+    128, 0.5,
+    true
   );
 });

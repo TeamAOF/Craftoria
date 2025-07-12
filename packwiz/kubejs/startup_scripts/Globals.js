@@ -37,7 +37,6 @@ const customMIMachines = {
     soundDuration: 20,
   },
   large_plasma_turbine: {
-    name: 'Large Plasma Turbine',
     casing: 'plasma_handling_iridium_machine_casing',
     default_overlays: {
       front: 'modern_industrialization:block/machines/steam_turbine/overlay_front_iridium',
@@ -45,12 +44,10 @@ const customMIMachines = {
     },
   },
   // 'particle_accelerator': {
-  //   name: 'Particle Accelerator',
   //   mod: 'mi_tweaks',
   //   casing: 'plasma_handling_iridium_machine_casing',
   // },
   budding_incubator: {
-    name: 'Budding Incubator',
     casing: 'sky_stone_brick_casing',
     mod: 'mi_tweaks',
     default_overlays: {
@@ -59,7 +56,6 @@ const customMIMachines = {
     },
   },
   ooze_lab: {
-    name: 'Ooze Lab',
     casing: 'factory_grate',
     mod: 'mi_tweaks',
     default_overlays: {
@@ -68,12 +64,18 @@ const customMIMachines = {
     },
   },
   model_synthesizer: {
-    name: 'Model Synthesizer',
     casing: 'vect5',
     mod: 'mi_tweaks',
     default_overlays: {
       front: 'modern_industrialization:block/machines/model_synthesizer/overlay_front',
       front_active: 'modern_industrialization:block/machines/model_synthesizer/overlay_front_active',
+    },
+  },
+  growth_chamber: {
+    casing: 'steel',
+    default_overlays: {
+      front: 'extended_industrialization:block/machines/farmer/overlay_front',
+      front_active: 'extended_industrialization:block/machines/farmer/overlay_front_active',
     },
   },
 };

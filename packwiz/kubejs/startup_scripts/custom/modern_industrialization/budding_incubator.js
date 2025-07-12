@@ -32,6 +32,7 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
     fluidInputs => fluidInputs.addSlots(56, 35, 1, 1),
     _ => { },
     'modern_industrialization:sky_stone_brick_casing', 'budding_incubator', true, false, false,
-    8, 0.75
+    8, 0.75,
+    true
   );
 });
