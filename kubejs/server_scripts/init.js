@@ -67,7 +67,7 @@ const getServerLevel = levelAccessor => {
  */
 const _makeRecipeID = (mod, type, output, input) => {
   output = ID.path(output).replace(' ', '_');
-  input = ID.path(input).replace(' ', '_');
+  input = input ? ID.path(input).replace(' ', '_') : '';
   logDebug(`ID: ${`craftoria:${mod}/${ID.path(type)}/${output}_from_${input}`}`);
   return `craftoria:${mod}/${ID.path(type)}/${output}_from_${input}`;
 };
