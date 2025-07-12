@@ -12,8 +12,6 @@ const globalItemRemovals = [
   'mekanism:dimensional_stabilizer',
   'pneumaticcraft:chunkloader_upgrade',
   'industrialforegoing:infinity_nuke',
-  'utilitarian:tiny_coal',
-  'utilitarian:tiny_charcoal',
   { item: /^create_connected:copycat_.*/, reason: 'use copycats+ blocks instead' },
   'pylons:infusion_pylon',
   'pylons:potion_filter',
@@ -22,7 +20,7 @@ const globalItemRemovals = [
   'xycraft_world:aluminum_ore_stone',
   'xycraft_world:aluminum_ore_deepslate',
   'xycraft_world:aluminum_ore_kivi',
-  'create:crushed_raw_aluminum'
+  'create:crushed_raw_aluminum',
 ];
 
 /**
@@ -33,7 +31,13 @@ const globalItemRemovals = [
  */
 
 /** @type {DisabledItem[]} */
-const disabledItems = [];
+const disabledItems = [
+  { id: 'utilitarian:tiny_coal', alt: 'Coal Fragment', altId: 'malum:coal_fragment' },
+  { id: 'utilitarian:tiny_charcoal', alt: 'Charcoal Fragment', altId: 'malum:charcoal_fragment' },
+  { id: 'datanessence:coal_lump', alt: 'Coal Fragment', altId: 'malum:coal_fragment' },
+  { id: 'actuallyadditions:tiny_coal', alt: 'Coal Fragment', altId: 'malum:coal_fragment' },
+  { id: 'actuallyadditions:tiny_charcoal', alt: 'Charcoal Fragment', altId: 'malum:charcoal_fragment' },
+];
 
 ServerEvents.recipes(event => {
   /** @type {Special.RecipeId[]} */
@@ -51,6 +55,11 @@ ServerEvents.recipes(event => {
     'occultism:miner/ores/aluminum_ore',
     'occultism:miner/eldritch/raw_aluminum',
     'occultism:miner/master/stellarite',
+    'actuallyadditions:tiny_to_coal',
+    'actuallyadditions:tiny_to_charcoal',
+    'utilitarian:tiny_fuel/coal',
+    'utilitarian:tiny_fuel/charcoal',
+    'datanessence:crafting/coal_from_lumps',
   ];
 
   /** @type {Special.Item[]} */

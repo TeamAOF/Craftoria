@@ -1,7 +1,21 @@
 // priority: -1100
 RecipeViewerEvents.removeEntries('item', event => {
   /** @type {Special.Item[]} */
-  let hideItems = [];
+  let hideItems = [
+    'rep_ae2_bridge:earth',
+    'rep_ae2_bridge:nether',
+    'rep_ae2_bridge:organic',
+    'rep_ae2_bridge:ender',
+    'rep_ae2_bridge:metallic',
+    'rep_ae2_bridge:precious',
+    'rep_ae2_bridge:living',
+    'rep_ae2_bridge:quantum',
+    'createstockbridge:request_pattern',
+    'xycraft_core:errored',
+    'databank:megastructure_save',
+    'ftblibrary:icon_item',
+    'stickit:placed_items',
+  ];
 
   hideItems.forEach(item => {
     event.remove(item);
