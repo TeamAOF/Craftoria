@@ -1,16 +1,9 @@
 ServerEvents.recipes(e => {
-  const create = CreateHelper(e);
   const arsNouveau = ArsNouveauHelper(e);
-  const { modern_industrialization, occultism } = e.recipes;
-  const mekanism = MekanismHelper(e);
+  const dne = DataNEssenceHelper(e);
+  const { occultism } = e.recipes;
 
   Color.DYE.forEach(color => {
-    // create.crushing(450)
-    //   .itemIn(`pastel:${color}_leaves`)
-    //   .itemOut(`pastel:${color}_pigment`)
-    //   .itemOut(`pastel:${color}_sapling`, 0.02)
-    //   .id(`craftoria:pastel/crushing/${color}_leaves_to_pigment`);
-
     arsNouveau.crush([
       { stack: `pastel:${color}_pigment`, chance: 1 },
       { stack: `pastel:${color}_sapling`, chance: 0.02 }
@@ -20,31 +13,56 @@ ServerEvents.recipes(e => {
   e.remove({ id: 'occultism:crushing/amethyst_dust_from_gem' });
 
   const gems = ['amethyst', 'topaz', 'citrine', 'onyx', 'moonstone'];
+  const powderCounts = {
+    shard: 2,
+    block: 1,
+    small_bud: 4,
+    medium_bud: 6,
+    large_bud: 8,
+    cluster: 16
+  };
 
   gems.forEach(gem => {
-    let shardItem = Ingredient.of(`#pastel:${gem}_crystals`).itemIds.toArray().find(id => id.includes('_shard'));
+    for (let [key, count] of Object.entries(powderCounts)) {
+      let item = `pastel:${gem}_powder`;
+      let output = `${count}x ${item}`;
+      let input;
 
-    // if (gem !== 'amethyst')
-    //   create.crushing(150)
-    //     .itemIn(`pastel:${gem}_block`)
-    //     .itemOut(`3x pastel:${gem}_shard`)
-    //     .itemOut(`pastel:${gem}_shard`, 0.5)
-    //     .id(`craftoria:pastel/create_crushing/${gem}_block_to_shard`);
+      if (gem !== 'amethyst') {
+        switch (key) {
+          case 'small_bud':
+            input = `pastel:small_${gem}_bud`;
+            break;
+          case 'medium_bud':
+            input = `pastel:medium_${gem}_bud`;
+            break;
+          case 'large_bud':
+            input = `pastel:large_${gem}_bud`;
+            break;
+          default:
+            input = `pastel:${gem}_${key}`;
+            break;
+        }
+      } else {
+        switch (key) {
+          case 'small_bud':
+            input = 'minecraft:small_amethyst_bud';
+            break;
+          case 'medium_bud':
+            input = 'minecraft:medium_amethyst_bud';
+            break;
+          case 'large_bud':
+            input = 'minecraft:large_amethyst_bud';
+            break;
+          default:
+            input = `minecraft:amethyst_${key}`;
+            break;
+        }
+      }
 
-    // create.milling(450)
-    //   .itemIn(shardItem)
-    //   .itemOut(`2x pastel:${gem}_powder`)
-    //   .id(`craftoria:pastel/create_milling/${gem}_shard_to_powder`);
-
-    // modern_industrialization.macerator(2, 100)
-    //   .itemIn(shardItem)
-    //   .itemOut(`2x pastel:${gem}_powder`)
-    //   .id(`craftoria:pastel/mi_macerator/${gem}_shard_to_powder`);
-
-    // mekanism.crushing(`2x pastel:${gem}_powder`, shardItem, `craftoria:pastel/mekanism_crushing/${gem}_shard_to_powder`);
-
-
-    occultism.crushing(RecipeResult.of(`pastel:${gem}_powder`, 2), shardItem, 200, -1, -1, true).id(`craftoria:pastel/occultism_crushing/${gem}_shard_to_powder`);
-    arsNouveau.crush(`2x pastel:${gem}_powder`, shardItem, `craftoria:pastel/ars_nouveau_crush/${gem}_shard_to_powder`);
+      occultism.crushing(RecipeResult.of(`pastel:${gem}_powder`, count), input, 200, -1, -1, true).id(`craftoria:pastel/occultism_crushing/${gem}_${key}_to_powder`);
+      arsNouveau.crush(output, input, `craftoria:pastel/ars_nouveau_crush/${gem}_${key}_to_powder`);
+      if (key !== 'shard') dne.entropic_processing(output, input, 100, `craftoria:pastel/dne_entropic_processing/${gem}_${key}_to_powder`);
+    }
   });
 });
