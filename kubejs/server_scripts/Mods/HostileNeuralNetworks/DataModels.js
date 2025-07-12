@@ -139,6 +139,57 @@ ServerEvents.generateData('after_mods', event => {
         scale: 0.65,
       },
     },
+    'irons_spellbooks:citadel_keeper': {
+      simCost: 2560,
+      baseDrop: 'hostilenetworks:nether_prediction',
+      fabricatorDrops: [
+        'irons_spellbooks:cinder_essence',
+        'minecraft:netherite_scrap',
+      ],
+      tierData: {
+        basic: 30,
+        advanced: 330,
+        superior: 930,
+        self_aware: 2000,
+      },
+      dataPerKill: {
+        faulty: 1,
+        basic: 10,
+        advanced: 20,
+        superior: 30,
+      },
+      nameColor: '#FF5500',
+      display: {
+        y_offset: -0.15,
+        scale: 0.65,
+      },
+    },
+    'irons_spellbooks:dead_king': {
+      simCost: 4096,
+      baseDrop: 'hostilenetworks:overworld_prediction',
+      fabricatorDrops: [
+        'irons_spellbooks:legendary_ink',
+        'irons_spellbooks:blank_rune',
+        'irons_spellbooks:arcane_essence',
+      ],
+      tierData: {
+        basic: 30,
+        advanced: 330,
+        superior: 930,
+        self_aware: 2000,
+      },
+      dataPerKill: {
+        faulty: 1,
+        basic: 12,
+        advanced: 30,
+        superior: 45,
+      },
+      nameColor: '#FF5500',
+      display: {
+        y_offset: -0.15,
+        scale: 0.65,  
+      },
+    },
   };
 
   globalDataModels = dataModels;
