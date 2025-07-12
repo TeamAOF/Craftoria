@@ -117,3 +117,16 @@ PlayerEvents.loggedIn(event => {
     event.player.stages.add('first_join');
   }
 });
+
+/**
+ * @param {$FluidIngredient_} fluidIngredient
+ */
+const FluidIngredient = fluidIngredient => {
+  let [fluidAmount, fluidId] = fluidIngredient.includes('x ') ? fluidIngredient.split('x ') : [1000, fluidIngredient];
+  let fluidJson = { amount: parseInt(fluidAmount) };
+
+  if (fluidId.includes('#')) fluidJson.tag = fluidId.sclice(1);
+  else fluidJson.id = fluidId;
+
+  return fluidJson;
+};
