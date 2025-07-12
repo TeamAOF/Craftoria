@@ -179,6 +179,15 @@ ServerEvents.recipes(e => {
   e.replaceInput({ id: 'minecraft:trapped_chest' }, '#c:chests/wooden', 'minecraft:chest');
   e.replaceInput({ id: 'dumplings_delight:chinese_cabbage_crate' }, '#c:crops/cabbage', 'farmersdelight:cabbage_leaf');
   e.replaceInput({ id: 'farmersdelight:cabbage_from_leaves' }, '#c:crops/cabbage', 'farmersdelight:cabbage_leaf');
+
+  e.shaped('crystalix:crystalix_wand', [
+    '  D',
+    ' S ',
+    'S  ',
+  ], {
+    D: '#c:gems/amethyst',
+    S: 'minecraft:stick',
+  }).id('crystalix:crystalix_wand');
 });
 
 ServerEvents.tags('item', e => {
