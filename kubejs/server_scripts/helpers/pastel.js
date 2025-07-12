@@ -197,4 +197,4 @@ function PastelHelper(event) {
       event.custom(recipe).id(recipeID ?? makeRecipeId('spirit_instiller', output, [ingredient1, ingredient2, centerIngredient]));
     },
   };
-};
+}

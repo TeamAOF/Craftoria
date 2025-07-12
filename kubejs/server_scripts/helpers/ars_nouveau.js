@@ -152,4 +152,4 @@ function ArsNouveauHelper(event) {
       event.custom(recipe).id(recipeID ?? makeRecipeId(outputNames, 'crush'));
     }
   };
-};
+}
