@@ -110,5 +110,46 @@ function ArsNouveauHelper(event) {
         })
         .id(recipeID ?? makeRecipeId(output, 'glyph'));
     },
+
+    /**
+     * @typedef {Object} ChancedRangedOutput
+     * @property {Special.Item} stack The item to output.
+     * @property {number} [chance] The chance of the item being output (0-1).
+     * @property {number} [maxRange] The maximum range of items to output.
+     */
+
+    /**
+     * Creates a Crushing glyph recipe.
+     * @param {ChancedRangedOutput[]|Special.Item[]} outputs - The output items, can be a single item or an array of items.
+     * @param {$Ingredient_} input - The input item to crush.
+     * @param {Special.RecipeId} [recipeID] - The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
+     */
+    crush(outputs, input, recipeID) {
+      outputs = Array.isArray(outputs) ? outputs : [outputs];
+
+      let recipe = {
+        type: 'ars_nouveau:crush',
+        output: [],
+        input: Ingredient.of(input).toJson(),
+      };
+
+      outputs.forEach(output => {
+        if (typeof output === 'string') {
+          recipe.output.push({
+            stack: Item.of(output).toJson(),
+            chance: 1,
+            maxRange: 1,
+          });
+        } else {
+          recipe.output.push({
+            stack: Item.of(output.stack).toJson(),
+            chance: output.chance || 1,
+            maxRange: output.maxRange || 1,
+          });
+        }
+      });
+      let outputNames = outputs.map(output => typeof output === 'string' ? output : output.stack).join('_');
+      event.custom(recipe).id(recipeID ?? makeRecipeId(outputNames, 'crush'));
+    }
   };
-}
+};
