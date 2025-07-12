@@ -149,9 +149,7 @@ function DataNEssenceHelper(event) {
       if (fluidInput2) recipe.fluid_input2 = FluidIngredient(fluidInput2);
       if (itemInput) recipe.item_input = Ingredient.of(itemInput).toJson();
       if (essenceCost) recipe.essence_cost = essenceCost;
-
-      if (recipeID) return event.custom(recipe);
-      else event.custom(recipe).id(makeRecipeId('fluid_mixer', output, fluidInput1));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('fluid_mixer', output, fluidInput1));
     },
 
     /**
@@ -168,9 +166,7 @@ function DataNEssenceHelper(event) {
         input: Ingredient.of(input).toJson(),
         time: time || 100,
       };
-
-      if (recipeID) return event.custom(recipe);
-      else event.custom(recipe).id(makeRecipeId('entropic_processing', output, input));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('entropic_processing', output, input));
     },
 
     /**
@@ -190,9 +186,7 @@ function DataNEssenceHelper(event) {
         essence_cost: essenceCost4(essenceCost),
         time: time || 100,
       };
-
-      if (recipeID) return event.custom(recipe);
-      else event.custom(recipe).id(makeRecipeId('infusion', output, input));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('infusion', output, input));
     },
 
     /**
@@ -218,9 +212,7 @@ function DataNEssenceHelper(event) {
       for (let [k, v] of Object.entries(patternKey)) {
         recipe.key[k] = Ingredient.of(v).toJson();
       }
-
-      if (recipeID) return event.custom(recipe);
-      else event.custom(recipe).id(makeRecipeId('fabrication', output, pattern));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('fabrication', output, pattern));
     }
   };
 }

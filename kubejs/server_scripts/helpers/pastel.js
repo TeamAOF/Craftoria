@@ -39,9 +39,7 @@ function PastelHelper(event) {
       };
 
       if (reqAdvancement) recipe.required_advancement = reqAdvancement;
-
-      if (recipeID) return event.custom(recipe);
-      else event.custom(recipe).id(makeRecipeId('cinderhearth', outputs[0], ingredient));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('cinderhearth', outputs[0], ingredient));
     },
 
     /**
@@ -66,10 +64,7 @@ function PastelHelper(event) {
       };
 
       if (reqAdvancement) recipe.required_advancement = reqAdvancement;
-
-
-      if (recipeID) return event.custom(recipe);
-      else event.custom(recipe).id(makeRecipeId('converting', output, ingredient));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('converting', output, ingredient));
     },
 
     /**
@@ -114,9 +109,7 @@ function PastelHelper(event) {
       }
 
       if (reqAdvancement) recipe.required_advancement = reqAdvancement;
-
-      if (recipeID) return event.custom(recipe);
-      else event.custom(recipe).id(makeRecipeId('pedestal', output, null));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('pedestal', output, null));
     },
 
     /**
@@ -152,9 +145,7 @@ function PastelHelper(event) {
       }
 
       if (reqAdvancement) recipe.required_advancement = reqAdvancement;
-
-      if (recipeID) return event.custom(recipe);
-      else event.custom(recipe).id(makeRecipeId('fusion_shrine', output, ingredients));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('fusion_shrine', output, ingredients));
     },
 
     /**
@@ -177,9 +168,7 @@ function PastelHelper(event) {
       };
 
       if (reqAdvancement) recipe.required_advancement = reqAdvancement;
-
-      if (recipeID) return event.custom(recipe);
-      else event.custom(recipe).id(makeRecipeId('enchanter', output, ingredients));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('enchanter', output, ingredients));
     },
 
     /**
@@ -205,9 +194,7 @@ function PastelHelper(event) {
       };
 
       if (reqAdvancement) recipe.required_advancement = reqAdvancement;
-
-      if (recipeID) return event.custom(recipe);
-      else event.custom(recipe).id(makeRecipeId('spirit_instiller', output, [ingredient1, ingredient2, centerIngredient]));
+      event.custom(recipe).id(recipeID ?? makeRecipeId('spirit_instiller', output, [ingredient1, ingredient2, centerIngredient]));
     },
   };
 };
