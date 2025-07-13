@@ -1,9 +1,135 @@
+#Goo settings
+[goo]
+	#Can goo randomly die, needing to be revived by right clicking with an item?
+	goo_can_die = true
+	#The random chance that a goo block can 'die' when it finishes crafting. Set to 1.0 to guarantee it dies every time.  Default is 0.1, which is a 10% chance.
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	goo_death_chance = 0.1
+
 #General settings
 [general]
 	#The minimum tick speed machines can be set to. Defaults to 1, meaning every tick
 	# Default: 1
 	# Range: 1 ~ 100
 	minimum_machine_tick_speed = 1
+
+#Ability settings: For disabling certain abilities
+[abilities]
+	#mobscanner
+	mobscanner = true
+	#oreminer
+	oreminer = true
+	#orescanner
+	orescanner = true
+	#lawnmower
+	lawnmower = true
+	#skysweeper
+	skysweeper = true
+	#treefeller
+	treefeller = true
+	#leafbreaker
+	leafbreaker = true
+	#runspeed
+	runspeed = true
+	#walkspeed
+	walkspeed = true
+	#stepheight
+	stepheight = true
+	#jumpboost
+	jumpboost = true
+	#mindfog
+	mindfog = true
+	#invulnerability
+	invulnerability = true
+	#potionarrow
+	potionarrow = true
+	#smelter
+	smelter = true
+	#smoker
+	smoker = true
+	#hammer
+	hammer = true
+	#lavarepair
+	lavarepair = true
+	#cauterizewounds
+	cauterizewounds = true
+	#airburst
+	airburst = true
+	#swimspeed
+	swimspeed = true
+	#groundstomp
+	groundstomp = true
+	#extinguish
+	extinguish = true
+	#stupefy
+	stupefy = true
+	#splash
+	splash = true
+	#polymorph_random
+	polymorph_random = true
+	#dropteleport
+	dropteleport = true
+	#voidshift
+	voidshift = true
+	#negatefalldamage
+	negatefalldamage = true
+	#nightvision
+	nightvision = true
+	#elytra
+	elytra = true
+	#decoy
+	decoy = true
+	#lingering
+	lingering = true
+	#homing
+	homing = true
+	#waterbreathing
+	waterbreathing = true
+	#orexray
+	orexray = true
+	#glowing
+	glowing = true
+	#instabreak
+	instabreak = true
+	#eclipsegate
+	eclipsegate = true
+	#deathprotection
+	deathprotection = true
+	#debuffremover
+	debuffremover = true
+	#earthquake
+	earthquake = true
+	#noai
+	noai = true
+	#flight
+	flight = true
+	#lavaimmunity
+	lavaimmunity = true
+	#phase
+	phase = true
+	#timeprotection
+	timeprotection = true
+	#polymorph_target
+	polymorph_target = true
+	#epicarrow
+	epicarrow = true
+	#The maximum number of blocks that a Ferricore tool can break as a result of abilities, such as ore miner or tree feller.
+	# Default: 64
+	# Range: 1 ~ 2048
+	tool_max_break_ferricore = 64
+	#The maximum number of blocks that a Blazegold tool can break as a result of abilities, such as ore miner or tree feller.
+	# Default: 128
+	# Range: 1 ~ 2048
+	tool_max_break_blazegold = 128
+	#The maximum number of blocks that a Celestigem tool can break as a result of abilities, such as ore miner or tree feller.
+	# Default: 192
+	# Range: 1 ~ 2048
+	tool_max_break_celestigem = 192
+	#The maximum number of blocks that a Eclipse Alloy tool can break as a result of abilities, such as ore miner or tree feller.
+	# Default: 256
+	# Range: 1 ~ 2048
+	tool_max_break_eclipsealloy = 256
 
 #Generator T1
 [generator_t1]
@@ -111,132 +237,6 @@
 	# Range: > 1
 	portal_gun_v2_rf_cost = 5000
 
-#Ability settings: For disabling certain abilities
-[abilities]
-	#mobscanner
-	mobscanner = true
-	#oreminer
-	oreminer = true
-	#orescanner
-	orescanner = true
-	#lawnmower
-	lawnmower = true
-	#skysweeper
-	skysweeper = true
-	#treefeller
-	treefeller = true
-	#leafbreaker
-	leafbreaker = true
-	#runspeed
-	runspeed = true
-	#walkspeed
-	walkspeed = true
-	#stepheight
-	stepheight = true
-	#jumpboost
-	jumpboost = true
-	#mindfog
-	mindfog = true
-	#invulnerability
-	invulnerability = true
-	#smelter
-	smelter = true
-	#smoker
-	smoker = true
-	#hammer
-	hammer = true
-	#lavarepair
-	lavarepair = true
-	#cauterizewounds
-	cauterizewounds = true
-	#airburst
-	airburst = true
-	#dropteleport
-	dropteleport = true
-	#voidshift
-	voidshift = true
-	#orexray
-	orexray = true
-	#glowing
-	glowing = true
-	#instabreak
-	instabreak = true
-	#eclipsegate
-	eclipsegate = true
-	#swimspeed
-	swimspeed = true
-	#groundstomp
-	groundstomp = true
-	#extinguish
-	extinguish = true
-	#stupefy
-	stupefy = true
-	#negatefalldamage
-	negatefalldamage = true
-	#nightvision
-	nightvision = true
-	#elytra
-	elytra = true
-	#decoy
-	decoy = true
-	#deathprotection
-	deathprotection = true
-	#debuffremover
-	debuffremover = true
-	#earthquake
-	earthquake = true
-	#noai
-	noai = true
-	#flight
-	flight = true
-	#lavaimmunity
-	lavaimmunity = true
-	#phase
-	phase = true
-	#potionarrow
-	potionarrow = true
-	#splash
-	splash = true
-	#lingering
-	lingering = true
-	#homing
-	homing = true
-	#epicarrow
-	epicarrow = true
-	#timeprotection
-	timeprotection = true
-	#The maximum number of blocks that a Ferricore tool can break as a result of abilities, such as ore miner or tree feller.
-	# Default: 64
-	# Range: 1 ~ 2048
-	tool_max_break_ferricore = 64
-	#The maximum number of blocks that a Blazegold tool can break as a result of abilities, such as ore miner or tree feller.
-	# Default: 128
-	# Range: 1 ~ 2048
-	tool_max_break_blazegold = 128
-	#The maximum number of blocks that a Celestigem tool can break as a result of abilities, such as ore miner or tree feller.
-	# Default: 192
-	# Range: 1 ~ 2048
-	tool_max_break_celestigem = 192
-	#The maximum number of blocks that a Eclipse Alloy tool can break as a result of abilities, such as ore miner or tree feller.
-	# Default: 256
-	# Range: 1 ~ 2048
-	tool_max_break_eclipsealloy = 256
-	#waterbreathing
-	waterbreathing = true
-	#polymorph_random
-	polymorph_random = true
-	#polymorph_target
-	polymorph_target = true
-
-#Goo settings
-[goo]
-	#Can goo randomly die, needing to be revived by right clicking with an item?
-	goo_can_die = true
-	#The random chance that a goo block can 'die' when it finishes crafting. Set to 1.0 to guarantee it dies every time.  Default is 0.1, which is a 10% chance.
-	# Default: 0.1
-	# Range: 0.0 ~ 1.0
-	goo_death_chance = 0.1
-
 #Time Wand
 [time_wand]
 	#The maximum amount of Forge Energy the Time Wand can hold in its buffer
@@ -254,7 +254,34 @@
 	#The maximum speed multiplier that can be applied using a Time Wand. This value should be a power of two.
 	time_wand_max_multiplier = 256
 	#Can fake players use the Time Wand (Like in the clickers)?
-	time_wand_fake_player_allowed = true
+	time_wand_fake_player_allowed = false
+
+#Polymorphic Wand
+[polymorphic_wand]
+	#The polymorphic fluid cost to use the polymorph wand
+	# Default: 100
+	# Range: > 1
+	polymorphic_wand_fluid_cost = 100
+	#The amount of fluid the Polymorphic Wand can hold
+	# Default: 2000
+	# Range: > 1
+	polymorphic_wand_max_fluid = 2000
+	#The FE cost to use the Advanced Polymorphic Wand
+	# Default: 50000
+	# Range: > 1
+	polymorphic_wand_v2_fe_cost = 50000
+	#The amount of FE the Advanced Polymorphic Wand can hold
+	# Default: 1000000
+	# Range: > 1
+	polymorphic_wand_v2_fe_capacity = 1000000
+	#The polymorphic fluid cost to use the Advanced Polymorphic Wand
+	# Default: 250
+	# Range: > 1
+	polymorphic_wand_v2_fluid_cost = 250
+	#The amount of fluid the Advanced Polymorphic Wand can hold
+	# Default: 8000
+	# Range: > 1
+	polymorphic_wand_v2_max_fluid = 8000
 
 #Paradox Machine
 [paradox_machine]
@@ -296,33 +323,6 @@
 	paradox_energy_max = 100.0
 	#Use a more restrictive data filtering for mobs cloned by the paradox machine. When enabled, most modded mobs may not work very well.  When disabled, theres a small chance of item dupe bugs.  Recommended to leave this set to false, and add any mobs that allow dupes to the paradox machines deny entity tag.
 	paradox_restricted_mobs = false
-
-#Polymorphic Wand
-[polymorphic_wand]
-	#The polymorphic fluid cost to use the polymorph wand
-	# Default: 100
-	# Range: > 1
-	polymorphic_wand_fluid_cost = 100
-	#The amount of fluid the Polymorphic Wand can hold
-	# Default: 2000
-	# Range: > 1
-	polymorphic_wand_max_fluid = 2000
-	#The FE cost to use the Advanced Polymorphic Wand
-	# Default: 50000
-	# Range: > 1
-	polymorphic_wand_v2_fe_cost = 50000
-	#The amount of FE the Advanced Polymorphic Wand can hold
-	# Default: 1000000
-	# Range: > 1
-	polymorphic_wand_v2_fe_capacity = 1000000
-	#The polymorphic fluid cost to use the Advanced Polymorphic Wand
-	# Default: 250
-	# Range: > 1
-	polymorphic_wand_v2_fluid_cost = 250
-	#The amount of fluid the Advanced Polymorphic Wand can hold
-	# Default: 8000
-	# Range: > 1
-	polymorphic_wand_v2_max_fluid = 8000
 
 #Player Accessor
 [player_accessor]
