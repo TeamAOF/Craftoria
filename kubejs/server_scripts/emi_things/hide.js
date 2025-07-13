@@ -1,4 +1,12 @@
 // priority: -1100
+const $EnchHooks = Java.loadClass('dev.shadowsoffire.apothic_enchanting.asm.EnchHooks');
+const $Registries = Java.loadClass('net.minecraft.core.registries.Registries');
+const enchBooksToKeep = [];
+Registry.access().access().lookupOrThrow($Registries.ENCHANTMENT).listElements().forEach(ench => {
+  enchBooksToKeep.push(`minecraft:enchanted_book[stored_enchantments={levels:{"${ench.key().location()}":${$EnchHooks.getMaxLevel(ench)}}}]`);
+});
+
+
 RecipeViewerEvents.removeEntries('item', event => {
   /** @type {Special.Item[]} */
   let hideItems = [
@@ -21,6 +29,8 @@ RecipeViewerEvents.removeEntries('item', event => {
   hideItems.forEach(item => {
     event.remove(item);
   });
+
+  event.remove(Ingredient.of('enchanted_book').except(enchBooksToKeep));
 });
 
 RecipeViewerEvents.removeEntriesCompletely('item', event => {
