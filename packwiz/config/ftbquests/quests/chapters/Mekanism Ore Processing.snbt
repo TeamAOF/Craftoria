@@ -221,7 +221,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "173B8953C4ECF03C"
-				item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:iron_ingot)item(minecraft:gold_ingot)item(minecraft:copper_ingot)item(mekanism:dust_osmium)item(modern_industrialization:tin_ingot)item(modern_industrialization:lead_ingot)item(modern_industrialization:uranium_ingot)item(modern_industrialization:iridium_ingot)item(modern_industrialization:nickel_ingot)item(modern_industrialization:silver_ingot))", "minecraft:custom_name": "\"Ingots\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:iron_ingot)item(minecraft:gold_ingot)item(minecraft:copper_ingot)item(mekanism:ingot_osmium)item(modern_industrialization:tin_ingot)item(modern_industrialization:lead_ingot)item(modern_industrialization:uranium_ingot)item(modern_industrialization:iridium_ingot)item(modern_industrialization:nickel_ingot)item(modern_industrialization:silver_ingot))", "minecraft:custom_name": "\"Ingots\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -312,7 +312,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "3C57ABFDA04D05E7"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:dirty_dust_iron)item(mekanism:dirty_dust_gold)item(mekanism:dirty_dust_osmium)item(mekanism:dirty_dust_copper)item(mekanism:dirty_dust_tin)item(mekanism:dirty_dust_lead)item(mekanism:dirty_dust_uranium)item(moremekanismprocessing:dirty_dust_iridium)item(moremekanismprocessing:dirty_dust_nickel)item(moremekanismprocessing:dirty_dust_platinum)item(moremekanismprocessing:dirty_dust_silver)item(moremekanismprocessing:dirty_dust_titanium)item(moremekanismprocessing:dirty_dust_tungsten))", "minecraft:custom_name": "\"Dirty Dusts\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "item_tag(mekanism:dirty_dusts)", "minecraft:custom_name": "\"Dirty Dusts\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -332,7 +332,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "7E06B7B8534A6AD6"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:clump_iron)item(mekanism:clump_gold)item(mekanism:clump_osmium)item(mekanism:clump_copper)item(mekanism:clump_tin)item(mekanism:clump_lead)item(mekanism:clump_uranium)item(moremekanismprocessing:clump_iridium)item(moremekanismprocessing:clump_nickel)item(moremekanismprocessing:clump_platinum)item(moremekanismprocessing:clump_silver)item(moremekanismprocessing:clump_titanium)item(moremekanismprocessing:clump_tungsten))", "minecraft:custom_name": "\"Clumps\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "item_tag(mekanism:clumps)", "minecraft:custom_name": "\"Clumps\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -352,7 +352,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "121218D232DE02CD"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:crystal_iron)item(mekanism:crystal_gold)item(mekanism:crystal_osmium)item(mekanism:crystal_copper)item(mekanism:crystal_tin)item(mekanism:crystal_lead)item(mekanism:crystal_uranium)item(moremekanismprocessing:crystal_iridium)item(moremekanismprocessing:crystal_nickel)item(moremekanismprocessing:crystal_platinum)item(moremekanismprocessing:crystal_silver)item(moremekanismprocessing:crystal_titanium)item(moremekanismprocessing:crystal_tungsten))", "minecraft:custom_name": "\"Crystals\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "item_tag(mekanism:crystals)", "minecraft:custom_name": "\"Crystals\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -1061,7 +1061,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "22B462F02C239237"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:shard_iron)item(mekanism:shard_gold)item(mekanism:shard_osmium)item(mekanism:shard_copper)item(mekanism:shard_tin)item(mekanism:shard_lead)item(mekanism:shard_uranium)item(moremekanismprocessing:shard_iridium)item(moremekanismprocessing:shard_nickel)item(moremekanismprocessing:shard_platinum)item(moremekanismprocessing:shard_silver)item(moremekanismprocessing:shard_titanium)item(moremekanismprocessing:shard_tungsten))", "minecraft:custom_name": "\"Shards\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "item_tag(mekanism:shards)", "minecraft:custom_name": "\"Shards\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 2.5d
