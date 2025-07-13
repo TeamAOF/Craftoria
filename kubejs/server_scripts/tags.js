@@ -141,6 +141,16 @@ ServerEvents.tags('item', e => {
     'expandedae:exp_pattern_provider',
     'expandedae:exp_pattern_provider_part',
   ]);
+
+  e.add('c:music_discs', [
+    '#minecraft:music_discs',
+    'vanillabackport:music_disc_tears',
+    'vanillabackport:music_disc_lava_chicken',
+    'cataclysm:music_disc_maledictus',
+    'rubinated_nether:music_disc_shimmer',
+    'irons_spellbooks:music_disc_dead_king_lullaby',
+    'irons_spellbooks:music_disc_flame_still_burns'
+  ]);
 });
 
 ServerEvents.tags('block', e => {
