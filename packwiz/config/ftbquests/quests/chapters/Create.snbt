@@ -1,12 +1,15 @@
 {
-	always_invisible: true
+	always_invisible: false
 	default_hide_dependency_lines: true
 	default_quest_shape: "none"
 	default_quest_size: 2.0d
 	filename: "Create"
 	group: "066C799B2F5452CD"
 	icon: {
-		id: "create:goggles"
+		components: {
+			"ftbquests:icon": "ftbquests:textures/gui/create_logo.png"
+		}
+		id: "ftbquests:custom_icon"
 	}
 	id: "0644AB97E8D8839B"
 	images: [
@@ -448,6 +451,7 @@
 		{
 			dependencies: ["3F3600B6701641E0"]
 			id: "4F987C54768D8E3D"
+			min_width: 275
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "49822FAD09E9545F"
@@ -754,18 +758,11 @@
 				table_id: 4417308367866402422L
 				type: "random"
 			}]
-			tasks: [
-				{
-					id: "0904AEE20CCAD32F"
-					item: { count: 1, id: "create:fluid_tank" }
-					type: "item"
-				}
-				{
-					id: "1A3FF49DA9B547C0"
-					item: { count: 1, id: "create_connected:fluid_vessel" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0904AEE20CCAD32F"
+				item: { count: 1, id: "create:fluid_tank" }
+				type: "item"
+			}]
 			x: 12.7d
 			y: -2.7d
 		}
@@ -979,8 +976,8 @@
 				type: "random"
 			}]
 			tasks: [{
-				id: "5B831D9050F98E5B"
-				item: { count: 1, id: "create:yellow_seat" }
+				id: "140F487510C24AD5"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(create:seats))", "minecraft:custom_name": "\"Create Seats\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 9.84d
@@ -1057,6 +1054,7 @@
 		{
 			dependencies: ["5D5FC5420738FDE8"]
 			id: "1FDE63D5EA5DA3CB"
+			min_width: 225
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "4D315AF310E6D6E8"
@@ -1256,11 +1254,18 @@
 				table_id: 4417308367866402422L
 				type: "random"
 			}]
-			tasks: [{
-				id: "2DFC260537CECA36"
-				item: { count: 1, id: "create:empty_schematic" }
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "664F487C64D046FE"
+					item: { count: 1, id: "create:schematic_and_quill" }
+					type: "item"
+				}
+				{
+					id: "62C2EBBA954EC9E1"
+					item: { count: 1, id: "create:empty_schematic" }
+					type: "item"
+				}
+			]
 			x: 9.9d
 			y: -8.1d
 		}
@@ -1318,6 +1323,7 @@
 		{
 			dependencies: ["78D8E2EB66607AAA"]
 			id: "4788E4092A488C9E"
+			min_width: 220
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "14599A09292F4200"
@@ -1493,6 +1499,7 @@
 		{
 			dependencies: ["3F3600B6701641E0"]
 			id: "0541F90AD95B4B5E"
+			min_width: 250
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "6E657B8B4F4A96DF"
@@ -1681,6 +1688,7 @@
 		{
 			dependencies: ["78D8E2EB66607AAA"]
 			id: "5773319EE8B3D45C"
+			min_width: 225
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "2254E9781B421EF6"
@@ -1732,6 +1740,7 @@
 		{
 			dependencies: ["3F3600B6701641E0"]
 			id: "0C18429AFD83973C"
+			min_width: 300
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "3B28F09030C05BF4"
@@ -1902,6 +1911,7 @@
 		{
 			dependencies: ["3F3600B6701641E0"]
 			id: "6E3F0C072B55467B"
+			min_width: 240
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "35CFB13FECEB66F6"
@@ -2206,6 +2216,7 @@
 		{
 			dependencies: ["3F3600B6701641E0"]
 			id: "55AEBE2068711237"
+			min_width: 260
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "7FFFA1004BA2C8CD"
@@ -2230,6 +2241,7 @@
 		{
 			dependencies: ["51F5C6D60D719DC4"]
 			id: "38DF71D9CB5045F2"
+			min_width: 250
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "0328707DA457C4F4"
@@ -2247,6 +2259,7 @@
 		{
 			dependencies: ["038AAFBA1E0DEF7E"]
 			id: "264DA461C59E31C3"
+			min_width: 225
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "32E22FF64D0E8620"
@@ -2331,6 +2344,7 @@
 		{
 			dependencies: ["78D8E2EB66607AAA"]
 			id: "36F22AA68C1841F6"
+			min_width: 250
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "71050EAEC0087029"
@@ -2382,7 +2396,7 @@
 				id: "ftbquests:custom_icon"
 			}
 			id: "55696F71CC09E588"
-			min_width: 300
+			min_width: 380
 			size: 3.0d
 			tasks: [
 				{
