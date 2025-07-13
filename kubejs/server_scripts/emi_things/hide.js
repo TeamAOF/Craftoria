@@ -15,6 +15,7 @@ RecipeViewerEvents.removeEntries('item', event => {
     'databank:megastructure_save',
     'ftblibrary:icon_item',
     'stickit:placed_items',
+    /naquadah/
   ];
 
   hideItems.forEach(item => {
