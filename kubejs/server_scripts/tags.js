@@ -230,10 +230,6 @@ ServerEvents.tags('block', e => {
   ]);
 
   e.add('justdirethings:tick_speed_deny', [
-    '@modern_industrialization',
-    '@mi_tweaks',
-    '@extended_industrialization',
-    '@industrialization_overdrive',
     '@industrialforegoingsouls',
     '@justdirethings',
     '@laserio',
