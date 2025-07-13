@@ -58,11 +58,11 @@ function MekanismHelper(event) {
     },
     /**
      * @param {$ItemStack_} output
-     * @param {$ItemStack_} input
+     * @param {$Chemical_} input
      * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
      */
     crystallizing(output, input, recipeID) {
-      event.recipes.mekanism.crystallizing(output, input).id(makeRecipeId('crystallizing', output, input));
+      event.recipes.mekanism.crystallizing(output, input).id(recipeID ?? makeRecipeId('crystallizing', output, input));
     },
     /**
      * @param {$Chemical_} output
@@ -201,7 +201,7 @@ function MekanismHelper(event) {
     },
     /**
      * @param {$ItemStack_} output
-     * @param {$ItemStack_} input
+     * @param {$Ingredient_} input
      * @param {$ItemStack_} secondaryOutput Secondary output item (optional).
      * @param {number} secondaryChance Chance of secondary output (optional, default is 100).
      * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
@@ -219,6 +219,38 @@ function MekanismHelper(event) {
       }
 
       event.custom(recipe).id(recipeID ?? makeRecipeId('sawing', output, input));
+    },
+
+    /**
+     * @param {Special.Item} output
+     * @param {$Ingredient_} input
+     * @param {$Chemical_} chemicalInput
+     * @param {boolean} [perTick] Whether chemicals get consumed per tick instead of on completing recipe (optional, default is false).
+     * @param {Special.RecipeId} [recipeID]
+     */
+    purifying(output, input, chemicalInput, perTick, recipeID) {
+      event.recipes.mekanism.purifying(output, input, chemicalInput, perTick || false).id(recipeID ?? makeRecipeId('purifying', output, input));
+    },
+
+    /**
+     * @param {$Chemical_} output
+     * @param {$FluidIngredient_} fluid
+     * @param {$Chemical_} input
+     * @param {Special.RecipeId} [recipeID]
+     */
+    washing(output, fluid, input, recipeID) {
+      event.recipes.mekanism.washing(output, fluid, input).id(recipeID ?? makeRecipeId('washing', output, input));
+    },
+
+    /**
+     * @param {$Chemical_} output
+     * @param {$Ingredient_} input
+     * @param {$Chemical_} chemInput
+     * @param {boolean} [perTick] Whether chemicals get consumed per tick instead of on completing recipe (optional, default is false).
+     * @param {Special.RecipeId} [recipeID] The recipe ID, can be used to overwrite recipes (optional, default is generated based on recipe parameters).
+     */
+    dissolution(output, input, chemInput, perTick, recipeID) {
+      event.recipes.mekanism.dissolution(output, input, chemInput, perTick || false).id(recipeID ?? makeRecipeId('dissolution', output, input));
     },
   };
 }
