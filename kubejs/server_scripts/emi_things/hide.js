@@ -1,13 +1,18 @@
 // priority: -1100
-const $EnchHooks = Java.loadClass('dev.shadowsoffire.apothic_enchanting.asm.EnchHooks');
-const $Registries = Java.loadClass('net.minecraft.core.registries.Registries');
-const enchBooksToKeep = [];
-Registry.access().access().lookupOrThrow($Registries.ENCHANTMENT).listElements().forEach(ench => {
-  enchBooksToKeep.push(`minecraft:enchanted_book[stored_enchantments={levels:{"${ench.key().location()}":${$EnchHooks.getMaxLevel(ench)}}}]`);
-});
-
-
 RecipeViewerEvents.removeEntries('item', event => {
+  const $EnchHooks = Java.loadClass('dev.shadowsoffire.apothic_enchanting.asm.EnchHooks');
+  const enchBooksToKeep = [];
+  Registry.access().access().lookupOrThrow('enchantment').listElements().forEach(ench => {
+    enchBooksToKeep.push(`minecraft:enchanted_book[stored_enchantments={levels:{"${ench.key().location()}":${$EnchHooks.getMaxLevel(ench)}}}]`);
+  });
+
+  const allFluids = [];
+  Registry.of('fluid').forEach(reg => {
+    if (reg.id === 'minecraft:empty') return;
+    if (reg.id.includes('flowing')) return;
+    allFluids.push(reg.id);
+  });
+
   /** @type {Special.Item[]} */
   let hideItems = [
     'rep_ae2_bridge:earth',
@@ -95,7 +100,7 @@ RecipeViewerEvents.removeEntries('item', event => {
   };
 
   // Special handling for shulker boxes & backpacks
-  let DyeColor = Java.loadClass('net.minecraft.world.item.DyeColor');
+  const DyeColor = Java.loadClass('net.minecraft.world.item.DyeColor');
   DyeColor.values().forEach(color => {
     let textureDiffuseColor = color.getTextureDiffuseColor();
     event.remove(applyColors('sophisticatedstorage:shulker_box', textureDiffuseColor));
@@ -113,6 +118,10 @@ RecipeViewerEvents.removeEntries('item', event => {
   event.remove(applyColors('sophisticatedstorage:shulker_box', YELLOW, LIME));
   storageTiers.forEach(tier => {
     event.remove(applyColors(`sophisticatedstorage:${tier}_shulker_box`, YELLOW, LIME));
+  });
+
+  allFluids.forEach(fluid => {
+    event.remove(`xycraft_machines:foil[xycraft_core:fluid_container={amount:250,id:"${fluid}"}]`);
   });
 });
 
