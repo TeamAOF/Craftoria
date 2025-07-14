@@ -57,6 +57,12 @@ ItemEvents.modifyTooltips(e => {
     Text.darkGray("As you can't use the captured warden for the ritual, for now"),
   ]);
 
+  e.add('craftoria:wardens_meat', [
+    Text.gray('Meat from a Warden'),
+    Text.gray('Obtained through dubious means'),
+    Text.darkRed('Eat at your own risk!'),
+  ]);
+
   e.add('occultism:butcher_knife', [
     Text.yellow('Replaced by Farmers Delight knives'),
     Text.yellow('They have the same functionality'),

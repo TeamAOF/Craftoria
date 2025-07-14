@@ -46,6 +46,18 @@ StartupEvents.registry('item', e => {
     .food(food => {
       food.nutrition(3).saturation(1).eatSeconds(3);
     });
+  e.create('craftoria:wardens_meat')
+    .displayName("Warden's Meat")
+    .food(food => {
+      food.nutrition(4).saturation(0.5).eatSeconds(3);
+      food.effect('minecraft:wither', 3600, 2, 1);
+      food.effect('minecraft:poison', 3600, 2, 1);
+      food.effect('minecraft:hunger', 3600, 3, 1);
+      food.effect('minecraft:mining_fatigue', 3600, 9, 1);
+    })
+    .rarity('Epic')
+    .tag('c:hidden_from_recipe_viewers')
+    .texture('minecraft:item/brick');
 
   // Dev Items
   e.create('craftoria:multiblock_generator')
