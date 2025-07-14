@@ -227,8 +227,8 @@
 				item: { count: 1, id: "appflux:fe_cell_housing" }
 				type: "item"
 			}]
-			x: -8.0d
-			y: 6.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2805DA3A1F411588"]
@@ -243,8 +243,8 @@
 				item: { count: 1, id: "appflux:harden_insulating_resin" }
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.0d
+			x: -1.0d
+			y: -5.5d
 		}
 		{
 			id: "67F060243167F8BF"
@@ -285,8 +285,8 @@
 				item: { count: 1, id: "appflux:insulating_resin" }
 				type: "item"
 			}]
-			x: -4.0d
-			y: 6.0d
+			x: -2.0d
+			y: -5.5d
 		}
 		{
 			id: "77978ED3AC1DFA26"
@@ -647,40 +647,13 @@
 				table_id: 3188555497912671082L
 				type: "random"
 			}]
-			tasks: [
-				{
-					id: "51981EBFB2E0B57E"
-					item: { count: 1, id: "advanced_ae:quantum_core" }
-					type: "item"
-				}
-				{
-					id: "4FDC19BFBC40953A"
-					item: { count: 1, id: "advanced_ae:data_entangler" }
-					type: "item"
-				}
-				{
-					id: "185810BD94B3A9DA"
-					item: { count: 1, id: "advanced_ae:quantum_multi_threader" }
-					type: "item"
-				}
-				{
-					id: "41FD178F76D83F4F"
-					item: { count: 1, id: "advanced_ae:quantum_accelerator" }
-					type: "item"
-				}
-				{
-					id: "253E536043DBF3EA"
-					item: { components: { "ftbfiltersystem:filter": "or(item(advanced_ae:quantum_storage_128)item(advanced_ae:quantum_storage_256))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-					type: "item"
-				}
-				{
-					id: "453F975DAD1DF09E"
-					item: { count: 1, id: "advanced_ae:quantum_structure" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "51981EBFB2E0B57E"
+				item: { count: 1, id: "advanced_ae:quantum_core" }
+				type: "item"
+			}]
 			x: 9.5d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -871,6 +844,66 @@
 			}]
 			x: 5.0d
 			y: -7.5d
+		}
+		{
+			dependencies: ["6AA1309271A6C960"]
+			id: "53E06C2AC4E28AD2"
+			tasks: [
+				{
+					id: "2936D428CEF58C81"
+					item: { count: 1, id: "advanced_ae:quantum_helmet" }
+					type: "item"
+				}
+				{
+					id: "032E25522A1A8C57"
+					item: { count: 1, id: "advanced_ae:quantum_chestplate" }
+					type: "item"
+				}
+				{
+					id: "3457A71AC7922F52"
+					item: { count: 1, id: "advanced_ae:quantum_leggings" }
+					type: "item"
+				}
+				{
+					id: "1A0D011584B2D549"
+					item: { count: 1, id: "advanced_ae:quantum_boots" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: -4.0d
+		}
+		{
+			id: "391C16C192D593B0"
+			tasks: [{
+				id: "421B396F724C9A69"
+				item: { count: 1, id: "advanced_ae:quantum_processor_press" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["391C16C192D593B0"]
+			id: "6AA1309271A6C960"
+			tasks: [{
+				id: "258A65CB9397BB81"
+				item: { count: 1, id: "advanced_ae:quantum_processor" }
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["53E06C2AC4E28AD2"]
+			id: "3CC4ECD43855FED6"
+			tasks: [{
+				id: "5C5BAE31310449E7"
+				item: { count: 1, id: "advanced_ae:quantum_upgrade_base" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: -4.0d
 		}
 	]
 }
