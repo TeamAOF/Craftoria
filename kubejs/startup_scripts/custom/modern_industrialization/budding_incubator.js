@@ -8,7 +8,7 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
   const noHatch = event.noHatch();
   const buddingIncubatorhatch = event.hatchOf('fluid_input', 'item_output', 'energy_input');
   const accelerator = event.memberOfBlock('ae2:growth_accelerator');
-  const glassSlab = event.memberOfBlock('glassential:glass_slab');
+  const glassSlab = event.memberOfBlock('mo_glass:glass_slab');
   const brick = event.memberOfBlock('ae2:sky_stone_brick');
 
   const buddingIncubatorShape = event

@@ -187,7 +187,7 @@ ServerEvents.tags('block', e => {
     'mekanism:diversion_transporter',
     'mekanism:restrictive_transporter',
     '#c:skulls',
-    '@glassential',
+    '@mo_glass',
     'hostilenetworks:sim_chamber',
     'hostilenetworks:loot_fabricator',
     'ars_additions:ender_source_jar',
