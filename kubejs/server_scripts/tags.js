@@ -95,6 +95,9 @@ ServerEvents.tags('item', e => {
   e.add('c:tools/ranged_weapon', ['industrialforegoing:infinity_trident', 'mekaweapons:meka_bow']);
   e.add('c:tools/spear', 'industrialforegoing:infinity_trident');
 
+  e.add('hazennstuff:armors/helmet', 'hazennstuff:fireblossom_crown');
+  e.add('hazennstuff:armors/tiers/pure/helmet', 'hazennstuff:fireblossom_crown');
+
   e.add('animal_pen:can_attack_pen', ['#c:tools/melee_weapon', '#c:tools/knife']);
   e.add('animal_pen:can_attack_aquarium', ['#c:tools/melee_weapon', '#c:tools/knife']);
 
@@ -111,6 +114,7 @@ ServerEvents.tags('item', e => {
   addToEnchantable(['bow', 'vanishing'], 'mekaweapons:meka_bow');
   addToEnchantable(['mining_loot', 'vanishing', 'mining'], 'mekanism:meka_tool');
   addToEnchantable(['trident', 'vanishing'], 'industrialforegoing:infinity_trident');
+  addToEnchantable(['armor', 'durability', 'equippable', 'head_armor', 'vanishing'], 'hazennstuff:fireblossom_crown');
 
   e.remove('plonk:unplaceable', ['plonk:placed_items']);
 
