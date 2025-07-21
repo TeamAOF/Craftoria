@@ -89,7 +89,7 @@ ServerEvents.tags('item', e => {
   ]);
   e.add('minecraft:pickaxes', ['industrialforegoing:infinity_drill']);
   e.add('minecraft:shovels', ['industrialforegoing:infinity_drill']);
-  e.add('minecraft:axes', ['industrialforegoing:infinity_saw']);
+  e.add('minecraft:axes', ['industrialforegoing:infinity_saw', 'hazennstuff:skyscorcher']);
   e.add('c:tools/bow', ['mekaweapons:meka_bow']);
   e.add('c:tools/melee_weapon', ['industrialforegoing:infinity_trident', 'mekaweapons:meka_tana']);
   e.add('c:tools/ranged_weapon', ['industrialforegoing:infinity_trident', 'mekaweapons:meka_bow']);
@@ -100,6 +100,8 @@ ServerEvents.tags('item', e => {
 
   e.add('animal_pen:can_attack_pen', ['#c:tools/melee_weapon', '#c:tools/knife']);
   e.add('animal_pen:can_attack_aquarium', ['#c:tools/melee_weapon', '#c:tools/knife']);
+
+  e.remove('minecraft:axes', ['hazennstuff:skyuscorcher']);
 
   /**
    * @param {string[]} tags
