@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     .id('craftoria:appflux/energy_processor');
   packer(8, 200)
     .itemOut('appflux:printed_energy_processor')
-    .itemIn('appflux:printed_energy_processor')
+    .itemIn('appflux:charged_redstone')
     .itemIn('appflux:energy_processor_press', 0)
     .id('craftoria:appflux/printed_energy_processor');
   mixer(8, 100)
