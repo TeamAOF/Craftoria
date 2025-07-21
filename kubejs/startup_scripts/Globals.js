@@ -76,18 +76,6 @@ const customMIMachines = {
       front_active: 'modern_industrialization:block/machines/model_synthesizer/overlay_front_active',
     },
   },
-  batch_budding_incubator: {
-    name: 'Budding Incubator - Deprecated',
-    mod: 'mi_tweaks',
-  },
-  batch_ooze_lab: {
-    name: 'Ooze Lab - Deprecated',
-    mod: 'mi_tweaks',
-  },
-  batch_model_synthesizer: {
-    name: 'Model Synthesizer - Deprecated',
-    mod: 'mi_tweaks',
-  },
 };
 
 /**

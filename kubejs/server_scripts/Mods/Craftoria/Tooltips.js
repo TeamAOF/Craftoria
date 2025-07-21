@@ -40,13 +40,9 @@ ItemEvents.modifyTooltips(e => {
     Text.lightPurple('Can be found in the Starlight dimension within the Crystalized biomes.'),
   ]);
 
-  e.add(
-    'mi_tweaks:ooze_lab',
-    { shift: true },
+  e.add('mi_tweaks:ooze_lab', { shift: true },
     Text.gray('Needs ').append(Text.green('Time Fluid')).append(Text.gray(' between the glass and the goo.'))
   );
-
-  e.add(/^mi_tweaks:batch_.*/, Text.red('Deprecated, convert in your crafting grid to the new version.'));
 
   e.add('modern_industrialization:nuke', Text.darkGray("No, it won't explode."));
 
