@@ -61,4 +61,9 @@ ItemEvents.modifyTooltips(e => {
     Text.yellow('Replaced by Farmers Delight knives'),
     Text.yellow('They have the same functionality'),
   ]);
+
+  for (const [id, machine] of Object.entries(global.customMIMachines)) {
+    let machineID = `${machine.mod ?? 'modern_industrialization'}:${id}`;
+    e.add(machineID, Text.blue('Added by Craftoria').italic());
+  }
 });
