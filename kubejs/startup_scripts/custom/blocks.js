@@ -1,6 +1,5 @@
-StartupEvents.registry('block', event => {
-  event
-    .create('craftoria:blaze_block')
+StartupEvents.registry('block', e => {
+  e.create('craftoria:blaze_block')
     .displayName('Blaze Block')
     .soundType('deepslate_bricks')
     .hardness(3)
@@ -9,8 +8,7 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_iron_tool')
     .requiresTool(true);
 
-  event
-    .create('craftoria:smokey_bricks')
+  e.create('craftoria:smokey_bricks')
     .displayName('Smokey Brick')
     .soundType('deepslate_bricks')
     .hardness(3)
@@ -19,8 +17,7 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_stone_tool')
     .requiresTool(true);
 
-  event
-    .create('craftoria:smokey_bricks_slab', 'slab')
+  e.create('craftoria:smokey_bricks_slab', 'slab')
     .displayName('Smokey Brick Slab')
     .soundType('deepslate_bricks')
     .hardness(3)
@@ -29,8 +26,7 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_stone_tool')
     .requiresTool(true);
 
-  event
-    .create('craftoria:smokey_bricks_stairs', 'stairs')
+  e.create('craftoria:smokey_bricks_stairs', 'stairs')
     .displayName('Smokey Brick Stairs')
     .soundType('deepslate_bricks')
     .hardness(3)
@@ -39,8 +35,7 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_stone_tool')
     .requiresTool(true);
 
-  event
-    .create('craftoria:smokey_bricks_wall', 'wall')
+  e.create('craftoria:smokey_bricks_wall', 'wall')
     .displayName('Smokey Brick Wall')
     .soundType('deepslate_bricks')
     .hardness(3)
@@ -49,8 +44,7 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_stone_tool')
     .requiresTool(true);
 
-  event
-    .create('craftoria:smokey_bricks_button', 'button')
+  e.create('craftoria:smokey_bricks_button', 'button')
     .displayName('Smokey Brick Button')
     .soundType('deepslate_bricks')
     .hardness(3)
@@ -59,8 +53,7 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_stone_tool')
     .requiresTool(true);
 
-  event
-    .create('craftoria:completionist_cup', 'cardinal')
+  e.create('craftoria:completionist_cup', 'cardinal')
     .displayName('Completionist Cup')
     .defaultCutout()
     .box(14, 10, 7, 16, 14, 9, true)

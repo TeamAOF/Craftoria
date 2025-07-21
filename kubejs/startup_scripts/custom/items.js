@@ -60,9 +60,20 @@ StartupEvents.registry('item', e => {
     .texture('minecraft:item/brick');
 
   // Dev Items
+
+  /**
+   * Used for generating code for a custom MI multiblock.
+   * Usage:
+   * Build the multiblock structure in-game,
+   * use any controller block as a placeholder,
+   * right-click the bottom left corner of the multiblock with this item,
+   * do the same for the top right corner but while sneaking,
+   * then right-click the item while not looking at a block to generate the code.
+   * The code will be printed to `server.log`, as well as a short clickable message which will copy the code to clipboard.
+   */
   e.create('craftoria:multiblock_generator')
     .texture('craftoria:item/dev')
-    .unstackable(); // Used for generating KubeJS code for MI multiblocks.
+    .unstackable();
 });
 
 ItemEvents.modification(event => {
