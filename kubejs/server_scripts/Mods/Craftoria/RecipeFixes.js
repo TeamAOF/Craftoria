@@ -1,7 +1,21 @@
 ServerEvents.recipes(e => {
-  ['duckling:pumpkin_pie', 'minecraft:pumpkin_pie', 'actuallyadditions:rice_dough'].forEach(id => {
+  [
+    'duckling:pumpkin_pie',
+    'actuallyadditions:rice_dough',
+  ].forEach(id => {
     e.remove({ id: id });
   });
+
+  e.shaped('cake', [
+    ' M ',
+    'SES',
+    ' D ',
+  ], {
+    M: '#c:foods/milk',
+    S: '#c:sugars',
+    E: '#c:eggs',
+    D: '#c:foods/dough',
+  }).id('create:crafting/curiosities/cake');
 
   e.replaceInput({}, 'minecraft:crafting_table', '#c:player_workstations/crafting_tables');
 
