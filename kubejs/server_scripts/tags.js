@@ -240,6 +240,11 @@ ServerEvents.tags('block', e => {
     '@justdirethings',
     '@laserio',
   ]).remove([/^justdirethings:gooblock_tier.$/]);
+
+  Registry.access().getAllTags('block').forEach(tag => {
+    if (!tag.path.endsWith('_immune')) return;
+    e.add(tag, ['yigd:grave']);
+  });
 });
 
 ServerEvents.tags('fluid', e => {
