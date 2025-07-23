@@ -143,7 +143,7 @@ ServerEvents.generateData('after_mods', event => {
       simCost: 2560,
       baseDrop: 'hostilenetworks:nether_prediction',
       fabricatorDrops: [
-        'irons_spellbooks:cinder_essence',
+        '16x irons_spellbooks:cinder_essence',
         'minecraft:netherite_scrap',
       ],
       tierData: {
@@ -158,7 +158,7 @@ ServerEvents.generateData('after_mods', event => {
         advanced: 20,
         superior: 30,
       },
-      nameColor: '#FF5500',
+      nameColor: '#ff701e',
       display: {
         y_offset: -0.15,
         scale: 0.65,
@@ -170,7 +170,7 @@ ServerEvents.generateData('after_mods', event => {
       fabricatorDrops: [
         'irons_spellbooks:legendary_ink',
         'irons_spellbooks:blank_rune',
-        'irons_spellbooks:arcane_essence',
+        '16x irons_spellbooks:arcane_essence',
       ],
       tierData: {
         basic: 30,

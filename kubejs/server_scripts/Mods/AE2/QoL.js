@@ -15,6 +15,24 @@ ServerEvents.recipes(event => {
     .itemIn('8x ae2:fluix_glass_cable')
     .fluidIn('40x modern_industrialization:synthetic_rubber')
     .id('craftoria:mi/fluix_covered_cable_from_fluix_glass_cable_synthetic_rubber');
+  // AE2 cables
+  assembler(2, 100)
+    .itemOut('ae2:fluix_smart_cable')
+    .itemIn('ae2:fluix_covered_cable')
+    .itemIn('minecraft:redstone')
+    .itemIn('minecraft:glowstone_dust')
+    .id('craftoria:mi/fluix_smart_cable_assembler');
+  packer(8, 200)
+    .itemOut('ae2:fluix_smart_dense_cable')
+    .itemIn('4x ae2:fluix_smart_cable')
+    .itemIn('modern_industrialization:packer_double_ingot_template', 0)
+    .id('craftoria:mi/fluix_smart_dense_cable_packer');
+  packer(8, 200)
+    .itemOut('ae2:fluix_covered_dense_cable')
+    .itemIn('4x ae2:fluix_covered_cable')
+    .itemIn('modern_industrialization:packer_double_ingot_template', 0)
+    .id('craftoria:mi/fluix_covered_dense_cable_packer');
+  
 
   shapeless('4x ae2:fluix_covered_cable', 'ae2:fluix_covered_dense_cable');
   shapeless('4x ae2:fluix_smart_cable', 'ae2:fluix_smart_dense_cable');
@@ -28,7 +46,7 @@ ServerEvents.recipes(event => {
     .id('craftoria:appflux/energy_processor');
   packer(8, 200)
     .itemOut('appflux:printed_energy_processor')
-    .itemIn('appflux:printed_energy_processor')
+    .itemIn('appflux:charged_redstone')
     .itemIn('appflux:energy_processor_press', 0)
     .id('craftoria:appflux/printed_energy_processor');
   mixer(8, 100)
