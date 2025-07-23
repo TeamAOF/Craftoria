@@ -1,7 +1,21 @@
 ServerEvents.recipes(e => {
-  ['duckling:pumpkin_pie', 'minecraft:pumpkin_pie', 'actuallyadditions:rice_dough'].forEach(id => {
+  [
+    'duckling:pumpkin_pie',
+    'actuallyadditions:rice_dough',
+  ].forEach(id => {
     e.remove({ id: id });
   });
+
+  e.shaped('cake', [
+    ' M ',
+    'SES',
+    ' D ',
+  ], {
+    M: '#c:foods/milk',
+    S: '#c:sugars',
+    E: '#c:eggs',
+    D: '#c:foods/dough',
+  }).id('create:crafting/curiosities/cake');
 
   e.replaceInput({}, 'minecraft:crafting_table', '#c:player_workstations/crafting_tables');
 
@@ -52,4 +66,20 @@ ServerEvents.recipes(e => {
     recipeJson.pedestalItems.forEach(entry => { if (entry.tag === 'c:chests') entry.tag = 'c:chests/wooden'; });
     e.custom(recipeJson).id(kubeRecipe.getId());
   });
+
+  e.custom({
+    type: 'minecraft:smithing_transform',
+    template: {
+      item: 'irons_spellbooks:arcane_rune'
+    },
+    base: {
+      item: 'hazennstuff:miner_helmet'
+    },
+    addition: {
+      item: 'irons_spellbooks:archevoker_helmet'
+    },
+    result: {
+      id: 'hazennstuff:spectral_spelunker_helmet'
+    }
+  }).id('hazennstuff:smithing/spectral_spelunker_armor/spectral_spelunker_helmet');
 });

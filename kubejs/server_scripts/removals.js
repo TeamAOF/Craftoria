@@ -29,7 +29,8 @@ const globalItemRemovals = [
   'xycraft_world:aluminum_ore_stone',
   'xycraft_world:aluminum_ore_deepslate',
   'xycraft_world:aluminum_ore_kivi',
-  'create:crushed_raw_aluminum'
+  'create:crushed_raw_aluminum',
+  'create:crushed_raw_platinum',
 ];
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
@@ -59,6 +60,9 @@ ServerEvents.recipes(event => {
     'occultism:miner/ores/aluminum_ore',
     'occultism:miner/eldritch/raw_aluminum',
     'occultism:miner/master/stellarite',
+    'create:crushing/platinum_ore',
+    'create:crushing/raw_platinum',
+    'create:crushing/raw_platinum_block',
   ];
 
   /** @type {Special.Item[]} */

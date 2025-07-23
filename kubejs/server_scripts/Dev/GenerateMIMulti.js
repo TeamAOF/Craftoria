@@ -70,24 +70,19 @@ function getCharForBlock(blockId, block, mapping, charCodeRef, player) {
         return null;
       }
     } else if (blockId !== 'minecraft:air') {
-      while (true) {
-        if (charCodeRef.value === 91) { // charCode for '[' (after 'Z')
-          charCodeRef.value = 97; // charCode for 'a'
-          continue; // Re-evaluate
-        }
-        if (charCodeRef.value === 123) { // charCode for '{' (after 'z') - Ran out of A-Z, a-z
-          player.tell(Text.red(`Too many unique non-controller block types (${mapping.size}). Ran out of A-Z, a-z characters.`));
-          return null; // Ran out of A-Z, a-z characters, abort. Why do you need more than 52? Too complex IMHO.
-        }
-        break; // Character found and valid
-      }
-
-      // Check mapping size limit (52 unique chars: A-Z, a-z)
+      // Check mapping size limit first (52 unique chars: A-Z, a-z)
       if (mapping.size >= 52 && !mapping.has(blockId)) {
         player.tell(Text.red(`Too many unique block types (${mapping.size}). Max supported is 52 (A-Z, a-z). Block ID: ${blockId}`));
         player.tell(Text.red('If you really need more, you can change the character set in the script.'));
         player.tell(Text.red('But in my honest opinion, 52 unique blocks is already too many.'));
         return null;
+      }
+
+      if (charCodeRef.value === 91) { // charCode for '[' (after 'Z')
+        charCodeRef.value = 97; // charCode for 'a'
+      } else if (charCodeRef.value === 123) { // charCode for '{' (after 'z') - Ran out of A-Z, a-z
+        player.tell(Text.red(`Too many unique non-controller block types (${mapping.size}). Ran out of A-Z, a-z characters.`));
+        return null; // Ran out of A-Z, a-z characters, abort. Why do you need more than 52? Too complex IMHO.
       }
       charForThisBlock = String.fromCharCode(charCodeRef.value);
       mapping.set(blockId, charForThisBlock);

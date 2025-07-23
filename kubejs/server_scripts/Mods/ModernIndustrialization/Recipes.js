@@ -173,4 +173,28 @@ ServerEvents.recipes(e => {
     .itemIn('modern_industrialization:gold_drill', 0.25)
     .dimension('minecraft:the_nether')
     .id('craftoria:mi/oil_rig/lava');
+
+  // Prediction Matrix
+  assembler(8, 100)
+    .itemOut('16x hostilenetworks:prediction_matrix')
+    .itemIn('4x #c:glass_panes')
+    .itemIn('minecraft:clay_ball')
+    .itemIn('minecraft:gold_ingot')
+    .itemIn('minecraft:iron_ingot')
+    .id('craftoria:mi/assembler/prediction_matrix');
+
+  // Quartz Fiber
+  assembler(8, 100)
+    .itemOut('3x ae2:quartz_fiber')
+    .itemIn('6x #c:glass_blocks')
+    .itemIn('3x ae2:certus_quartz_dust')
+    .id('craftoria:mi/assembler/quartz_fiber');
+
+  // Fluix ME Glass Cable
+  assembler(8, 100)
+    .itemOut('4x ae2:fluix_glass_cable')
+    .itemIn('ae2:quartz_fiber')
+    .itemIn('2x ae2:fluix_crystal')
+    .id('craftoria:mi/assembler/fluix_glass_cable');
+
 });

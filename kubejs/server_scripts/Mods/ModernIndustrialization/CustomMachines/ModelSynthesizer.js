@@ -97,6 +97,4 @@ ServerEvents.recipes(event => {
     .itemIn('4x modern_industrialization:robot_arm')
     .itemIn('modern_industrialization:advanced_machine_hull')
     .id('craftoria:mi/assembler/model_synthesizer');
-
-  event.shapeless('mi_tweaks:model_synthesizer', 'mi_tweaks:batch_model_synthesizer');
 });

@@ -67,6 +67,4 @@ ServerEvents.recipes(event => {
     .itemIn('4x modern_industrialization:large_pump')
     .itemIn('modern_industrialization:advanced_machine_hull')
     .id('craftoria:mi/assembler/ooze_lab');
-
-  event.shapeless('mi_tweaks:ooze_lab', 'mi_tweaks:batch_ooze_lab');
 });

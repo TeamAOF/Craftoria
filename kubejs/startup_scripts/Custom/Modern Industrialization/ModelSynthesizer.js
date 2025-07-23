@@ -32,31 +32,12 @@ MITweaksMachineEvents.registerBatchMultiblocks(event => {
     .key('G', glass, noHatch)
     .build();
 
-  const barrier = event.memberOfBlock('minecraft:barrier');
-  const failShape = event
-    .layeredShape('modern_industrialization:sky_stone_brick_casing', [
-      ['#', 'B', 'B'],
-    ])
-    .key('B', barrier, noHatch)
-    .build();
-
   event.electricStandalone(
     'Model Synthesizer', 'model_synthesizer',
     MODEL_SYNTHESIZER, modelSynthShape,
     event.progressBar(77 - 32, 33, 'arrow'),
     itemInputs => itemInputs.addSlots(56 - 18 - 32, 35, 2, 1),
     itemOutputs => itemOutputs.addSlots(102 - 32, 35, 3, 1),
-    _ => { }, _ => { },
-    'steel', 'model_synthesizer', true, false, false,
-    8, 0.75
-  );
-
-  event.electricStandalone(
-    'Model Synthesizer', 'batch_model_synthesizer',
-    MODEL_SYNTHESIZER, failShape,
-    event.progressBar(77 - 16, 33, 'arrow'),
-    itemInputs => itemInputs.addSlots(56 - 18 - 16, 35, 2, 1),
-    itemOutputs => itemOutputs.addSlots(102 - 16, 35, 2, 1),
     _ => { }, _ => { },
     'steel', 'model_synthesizer', true, false, false,
     8, 0.75

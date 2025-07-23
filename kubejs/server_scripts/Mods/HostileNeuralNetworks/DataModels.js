@@ -187,7 +187,7 @@ ServerEvents.generateData('after_mods', event => {
       nameColor: '#FF5500',
       display: {
         y_offset: -0.15,
-        scale: 0.65,  
+        scale: 0.65,
       },
     },
   };

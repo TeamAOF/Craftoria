@@ -1,3 +1,33 @@
+# Craftoria | v1.23.0
+
+_Neoforge_ 21.1.193 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.23.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.23.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added Create Quests `SubordinalBlue`
+* Added Create - MI QoL recipes `Phantom`
+* Add Ancient Knight & Dead King to HNN `KaiserHua1901`
+* Increased power buffers for IF machines `Андрей Червов`
+
+### Added Mods ✅
+
+* [EMIffect (Status Effects EMI Plugin)](https://curseforge.com/projects/735528)
+* [Mech Trowel](https://curseforge.com/projects/1288799)
+
+### Removed Mods ❌
+
+* [Just Enough Effect Descriptions (JEED)](https://curseforge.com/projects/532286)
+* [Moderately Enough Effect Descriptions (MEED)](https://curseforge.com/projects/918638)
+
+### Bug Fixes 🪲
+
+* Fixed Fireblossom Battlemage Crown not being enchantable `Phantom`
+* Fixed spectral spelunker helmet not being craftable `Phantom`
+* Fixed printed energy circtuit MI recipe using the wrong input `Phantom`
+* Fix `crystalix wand - diamond stick` recipe conflict `Phantom`
+* Fixed Budding Incubator not working `Phantom`
+
+---
 # Craftoria | v1.22.2
 
 _Neoforge_ 21.1.176 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.22.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.22.2.md)_
@@ -146,36 +176,36 @@ _Neoforge 21.1.172_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 
 ### Added Mods ✅
 
-[Create: Enchantment Industry](https://www.curseforge.com/minecraft/mc-mods/create-enchantment-industry)  
-[Ars Elemancy](https://www.curseforge.com/minecraft/mc-mods/ars-elemancy)  
-[Hazen 'N Stuff](https://www.curseforge.com/minecraft/mc-mods/hazen-n-stuff)  
-[Replication AE2 Bridge](https://www.curseforge.com/minecraft/mc-mods/replication-ae2-bridge)  
-[Advancements Reloaded](https://www.curseforge.com/minecraft/mc-mods/advancements-reloaded)  
-[Create Stock Bridge](https://www.curseforge.com/minecraft/mc-mods/create-stock-bridge)  
-[Inline](https://www.curseforge.com/minecraft/mc-mods/inline)  
-[Subtle Effects](https://www.curseforge.com/minecraft/mc-mods/subtle-effects)  
-[Advanced Loot Info](https://www.curseforge.com/minecraft/mc-mods/advanced-loot-info)  
-[Create: Filters Anywhere](https://www.curseforge.com/minecraft/mc-mods/create-filters-anywhere)  
-[Iris & Oculus Flywheel Compat](https://www.curseforge.com/minecraft/mc-mods/iris-flywheel-compat)  
-[Potion Icons](https://www.curseforge.com/minecraft/mc-mods/potion-icons)  
-[Create: Connected](https://www.curseforge.com/minecraft/mc-mods/create-connected)  
-[XyCraft](https://www.curseforge.com/minecraft/mc-mods/xycraft)  
-[More Sound](https://www.curseforge.com/minecraft/mc-mods/more-sound)  
-[XyCraft: World](https://www.curseforge.com/minecraft/mc-mods/xycraft-world)  
-[XyCraft: Override](https://www.curseforge.com/minecraft/mc-mods/xycraft-override)  
-[XyCraft: Machines](https://www.curseforge.com/minecraft/mc-mods/xycraft-machines)  
-[Torchmaster Remaster](https://www.curseforge.com/minecraft/texture-packs/torchmaster-remaster)  
-[StarbuncleMania](https://www.curseforge.com/minecraft/mc-mods/starbunclemania)  
-[Twilight Forest: JAPPA Pack (official addon)](https://www.curseforge.com/minecraft/texture-packs/twilight-forest-jappa-pack)  
-[Create: Dragons Plus](https://www.curseforge.com/minecraft/mc-mods/create-dragons-plus)  
-[Observable](https://www.curseforge.com/minecraft/mc-mods/observable)  
+[Create: Enchantment Industry](https://www.curseforge.com/minecraft/mc-mods/create-enchantment-industry)
+[Ars Elemancy](https://www.curseforge.com/minecraft/mc-mods/ars-elemancy)
+[Hazen 'N Stuff](https://www.curseforge.com/minecraft/mc-mods/hazen-n-stuff)
+[Replication AE2 Bridge](https://www.curseforge.com/minecraft/mc-mods/replication-ae2-bridge)
+[Advancements Reloaded](https://www.curseforge.com/minecraft/mc-mods/advancements-reloaded)
+[Create Stock Bridge](https://www.curseforge.com/minecraft/mc-mods/create-stock-bridge)
+[Inline](https://www.curseforge.com/minecraft/mc-mods/inline)
+[Subtle Effects](https://www.curseforge.com/minecraft/mc-mods/subtle-effects)
+[Advanced Loot Info](https://www.curseforge.com/minecraft/mc-mods/advanced-loot-info)
+[Create: Filters Anywhere](https://www.curseforge.com/minecraft/mc-mods/create-filters-anywhere)
+[Iris & Oculus Flywheel Compat](https://www.curseforge.com/minecraft/mc-mods/iris-flywheel-compat)
+[Potion Icons](https://www.curseforge.com/minecraft/mc-mods/potion-icons)
+[Create: Connected](https://www.curseforge.com/minecraft/mc-mods/create-connected)
+[XyCraft](https://www.curseforge.com/minecraft/mc-mods/xycraft)
+[More Sound](https://www.curseforge.com/minecraft/mc-mods/more-sound)
+[XyCraft: World](https://www.curseforge.com/minecraft/mc-mods/xycraft-world)
+[XyCraft: Override](https://www.curseforge.com/minecraft/mc-mods/xycraft-override)
+[XyCraft: Machines](https://www.curseforge.com/minecraft/mc-mods/xycraft-machines)
+[Torchmaster Remaster](https://www.curseforge.com/minecraft/texture-packs/torchmaster-remaster)
+[StarbuncleMania](https://www.curseforge.com/minecraft/mc-mods/starbunclemania)
+[Twilight Forest: JAPPA Pack (official addon)](https://www.curseforge.com/minecraft/texture-packs/twilight-forest-jappa-pack)
+[Create: Dragons Plus](https://www.curseforge.com/minecraft/mc-mods/create-dragons-plus)
+[Observable](https://www.curseforge.com/minecraft/mc-mods/observable)
 
 ### Removed Mods ❌
 
-[RightClickHarvest](https://www.curseforge.com/minecraft/mc-mods/rightclickharvest)  
-[Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)  
-[EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot)  
-[project-1231343](https://www.curseforge.com/minecraft/mc-mods/project-1231343)  
+[RightClickHarvest](https://www.curseforge.com/minecraft/mc-mods/rightclickharvest)
+[Better Advancements](https://www.curseforge.com/minecraft/mc-mods/better-advancements)
+[EMI Loot](https://www.curseforge.com/minecraft/mc-mods/emi-loot)
+[project-1231343](https://www.curseforge.com/minecraft/mc-mods/project-1231343)
 
 ### Bug Fixes 🪲
 
@@ -460,9 +490,9 @@ _NeoForge Loader 21.1.128_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria
 
 _NeoForge Loader 21.1.128_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.17.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.17.0.md)_
 
-# DISCLAIMER! 
-## Empty your Expanded Storage chests before updating!  
-The mod has been removed as Sophisticated Storage does it much better. 
+# DISCLAIMER!
+## Empty your Expanded Storage chests before updating!
+The mod has been removed as Sophisticated Storage does it much better.
 If you were to not empty them, do not worry! We've implemented a mod in place to convert them into a new storage container. Break it or empty it.
 
 ### Changes/Improvements ⭐
@@ -815,27 +845,27 @@ _NeoForge Loader 21.1.93_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
 ### Bosses Of Mass Destruction 👹
 
-* Lich health has been increased 
+* Lich health has been increased
 **(300 > 1000)**
-* Lich damage has been increased 
+* Lich damage has been increased
 **(9 > 15)**
-* Obsidilith health has been increased 
+* Obsidilith health has been increased
 **(300 > 900)**
-* Obsidilith armor has been increased 
+* Obsidilith armor has been increased
 **(14 > 17)**
-* Obsidilith damage has been increased 
+* Obsidilith damage has been increased
 **(16 > 20)**
-* Gauntlet health has been increased 
+* Gauntlet health has been increased
 **(250 > 800)**
-* Gauntlet armor has been increased 
+* Gauntlet armor has been increased
 **(8 > 11)**
-* Gauntlet damage has been increased 
+* Gauntlet damage has been increased
 **(16 > 20)**
-* Void Blossom health has been increased 
+* Void Blossom health has been increased
 **(350 > 1100)**
-* Void Blossom armor has been increased 
+* Void Blossom armor has been increased
 **(4 > 6)**
-* Void Blossom damage has been increased 
+* Void Blossom damage has been increased
 **(12 > 20)**
 
 ### Bug Fixes 🪲
@@ -1174,7 +1204,7 @@ _NeoForge Loader 21.1.66_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
 * Disabled MI-EU third party support through AppFlux.
 * Allow feeding trough quest to be completed with either FFB or AFT variant.
-* Disabled Menu Background Blurriness by default as it was causing issues with certain GUIs (This will only apply to new instances, turn it off in accessibility settings). 
+* Disabled Menu Background Blurriness by default as it was causing issues with certain GUIs (This will only apply to new instances, turn it off in accessibility settings).
 * Added a second EU server.
 * Bridging assist now only activates on crouch.
 * Allow ID Portable Storage Terminal to be used in ANY curios slot.
@@ -1377,7 +1407,7 @@ _NeoForge Loader 21.1.57_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
 _NeoForge Loader 21.1.56_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.3.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.3.0.md)_
 
-## DISCLAIMER: 
+## DISCLAIMER:
 * Relics levels are reset with this update due to internal changes, there's a button in its GUI to solve this.
 * Easy Villagers is removed, empty them before updating.
 
@@ -1508,7 +1538,7 @@ _NeoForge Loader 21.1.51_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 [Advanced Solar Generator]
 * **Energy Generation:** 300 -> 600
 
-[Heat Generator] 
+[Heat Generator]
 * **Energy Generation:** 200 -> 500
 
 [Fission Reactor]
@@ -1739,7 +1769,7 @@ _NeoForge Loader 21.1.23_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
 ### Removed Mods ❌
 
-  * [Catalogue](https://www.curseforge.com/minecraft/mc-mods/catalogue) 
+  * [Catalogue](https://www.curseforge.com/minecraft/mc-mods/catalogue)
   * [GraveStone Mod](https://www.curseforge.com/minecraft/mc-mods/gravestone-mod)
 ---
 
@@ -2022,7 +2052,7 @@ _NeoForge Loader 21.0.98_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 * Added an Universal Press for ExAE cutter.
 * Added a NBT clear recipe for LaserIO chem card(works the same as other nbt clears for cards from the mod)
 * Remove/Hide BiggerAE2 item cell and Megacells Interface/Pattern Provider.
-* New Replicator recipe.  
+* New Replicator recipe.
 ![](https://i.imgur.com/JRP5wlE.png)
 
 ### Added Mods ✅
@@ -2131,7 +2161,7 @@ _NeoForge Loader 21.0.81_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 ### Recipes 🪵
 
 * Removed unintentional ways of obtaining barriers.
-* New Iron Farm recipe, made harder to craft.  
+* New Iron Farm recipe, made harder to craft.
 ![](https://i.imgur.com/tVC6Q8S.png)
 ---
 
@@ -2332,28 +2362,28 @@ _NeoForge Loader 21.0.41_ | _[Mod Updates](https://github.com/TeamAOF/Craftoria/
 
 ### Recipes 🪵
 
-* New Sink recipe, made harder.  
+* New Sink recipe, made harder.
 ![](https://i.imgur.com/xvDMvDj.png)
 
-* New Advanced Block Breaker recipe, made harder.  
+* New Advanced Block Breaker recipe, made harder.
 ![](https://i.imgur.com/uCI0MYO.png)
 
-* New Advanced Block Placer recipe, made harder.  
+* New Advanced Block Placer recipe, made harder.
 ![](https://i.imgur.com/ZkWDzkx.png)
 
-* New Advanced Clicker recipe, made harder.  
+* New Advanced Clicker recipe, made harder.
 ![](https://i.imgur.com/qGDQ5le.png)
 
-* New Advanced Sensor recipe, made harder.  
+* New Advanced Sensor recipe, made harder.
 ![](https://i.imgur.com/Lyi75CG.png)
 
-* New Advanced Dropper recipe, made harder.  
+* New Advanced Dropper recipe, made harder.
 ![](https://i.imgur.com/Jo9J52X.png)
 
-* New Advanced Fluid Placer/Collector recipe, made harder.  
+* New Advanced Fluid Placer/Collector recipe, made harder.
 ![](https://i.imgur.com/poZl96t.png)
 
-* New Blazebloom Goo recipe, made harder.  
+* New Blazebloom Goo recipe, made harder.
 ![](https://i.imgur.com/O1xZ0UW.png)
 ---
 
