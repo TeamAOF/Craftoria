@@ -22,6 +22,12 @@ ServerEvents.recipes(event => {
     .itemIn('minecraft:redstone')
     .itemIn('minecraft:glowstone_dust')
     .id('craftoria:mi/fluix_smart_cable_assembler');
+  assembler(2, 100)
+    .itemOut('ae2:fluix_smart_dense_cable') 
+    .itemIn('ae2:fluix_covered_dense_cable')
+    .itemIn('minecraft:redstone')
+    .itemIn('minecraft:glowstone_dust')
+    .id('craftoria:mi/fluix_smart_dense_cable_assembler');
   packer(8, 200)
     .itemOut('ae2:fluix_smart_dense_cable')
     .itemIn('4x ae2:fluix_smart_cable')
