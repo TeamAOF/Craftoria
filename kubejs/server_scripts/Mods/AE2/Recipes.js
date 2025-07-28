@@ -1,5 +1,5 @@
 // //////////////////////
-// / Made by Team AOF ///
+// / Made by Team AOE ///
 // //////////////////////
 
 ServerEvents.recipes(event => {
