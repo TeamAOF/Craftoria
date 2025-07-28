@@ -33,4 +33,18 @@ ServerEvents.generateData('after_mods', e => {
       },
     },
   });
+
+  e.json('modern_industrialization:data_maps/fluid/fluid_fuels', {
+    values: {
+      'justdirethings:refined_t4_fluid_source': {
+        eu_per_mb: 800
+      },
+      'justdirethings:refined_t3_fluid_source': {
+        eu_per_mb: 400
+      },
+      'justdirethings:refined_t2_fluid_source': {
+        eu_per_mb: 200
+      },
+    }
+  });
 });
