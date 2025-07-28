@@ -255,11 +255,9 @@ ServerEvents.generateData('after_mods', event => {
 
   /** @type {Special.RecipeId[]} */
   const recipesToYeet = [
-    // Erroring recipes, removed to prevent log spam (authors don't check for existance of the items/mods... and some of these are just in the wrong namespace too...)
+    // Erroring recipes, removed to prevent log spam
     'mekaweapons:module_arrowvelocity_unit',
-    'pastel:mod_integration/ae2/blasting/pure_certus_quartz',
-    'pastel:mod_integration/ae2/blasting/pure_fluix',
-    'minecraft:cake', // Some mod overrides this recipe, causing errors
+    'mechtrowel:wand_upgrade',
   ];
 
   /** @type {string[]} */
