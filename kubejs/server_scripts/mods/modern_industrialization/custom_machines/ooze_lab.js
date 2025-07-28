@@ -10,10 +10,10 @@ ServerEvents.recipes(event => {
     'justdirethings:raw_blazegold_ore': 'justdirethings:blazegold_block',
     'justdirethings:raw_celestigem_ore': 'justdirethings:celestigem_block',
     'justdirethings:raw_eclipsealloy_ore': 'justdirethings:eclipsealloy_block',
-    'justdirethings:raw_coal_t1_ore': 'justdirethings:coalblock_t1',
-    'justdirethings:raw_coal_t2_ore': 'justdirethings:coalblock_t2',
-    'justdirethings:raw_coal_t3_ore': 'justdirethings:coalblock_t3',
-    'justdirethings:raw_coal_t4_ore': 'justdirethings:coalblock_t4',
+    'justdirethings:raw_coal_t1_ore': '4x justdirethings:coal_t1',
+    'justdirethings:raw_coal_t2_ore': '4x justdirethings:coal_t2',
+    'justdirethings:raw_coal_t3_ore': '4x justdirethings:coal_t3',
+    'justdirethings:raw_coal_t4_ore': '4x justdirethings:coal_t4',
   };
 
   /**
