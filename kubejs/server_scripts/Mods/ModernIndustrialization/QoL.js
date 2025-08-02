@@ -34,6 +34,29 @@ ServerEvents.recipes(e => {
     'eternal_starlight:abysslate',
     'eternal_starlight:thermabysslate',
     'eternal_starlight:cryobysslate',
+
+    // Create
+    'create:asurine',
+    'create:crimsite',
+    'create:limestone',
+    'create:ochrum',
+    'create:veridium',
+
+    // Arts & Crafts
+    'arts_and_crafts:gypsum',
+    'arts_and_crafts:soapstone',
+    'arts_and_crafts:verdant_pietraforte',
+    'arts_and_crafts:ochre_pietraforte',
+    'arts_and_crafts:umber_pietraforte',
+    'arts_and_crafts:marlot_pietraforte',
+    'arts_and_crafts:jet_pietraforte',
+    'arts_and_crafts:ivory_pietraforte',
+    'arts_and_crafts:hazel_pietraforte',
+    'arts_and_crafts:beige_pietraforte',
+
+    // Oh, The Biomes We've Gone
+    'biomeswevegone:dacite',
+    'biomeswevegone:white_dacite',
   ];
 
   cobbleItems.forEach(cobbleGen);
