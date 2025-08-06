@@ -45,6 +45,27 @@ ServerEvents.generateData('after_mods', e => {
       'justdirethings:refined_t2_fluid_source': {
         eu_per_mb: 200
       },
+      'pneumaticcraft:lpg': {
+        eu_per_mb: 720
+      },
+      'pneumaticcraft:gasoline': {
+        eu_per_mb: 600
+      },
+      'pneumaticcraft:kerosene': {
+        eu_per_mb: 440
+      },
+      'pneumaticcraft:diesel': {
+        eu_per_mb: 400
+      },
+      'pneumaticcraft:biodiesel': {
+        eu_per_mb: 250
+      },
+      'pneumaticcraft:ethanol': {
+        eu_per_mb: 160
+      },
+      'pneumaticcraft:oil': {
+        eu_per_mb: 16
+      },
     }
   });
 });
