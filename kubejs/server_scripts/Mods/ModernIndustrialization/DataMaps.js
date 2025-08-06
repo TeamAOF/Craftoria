@@ -37,13 +37,13 @@ ServerEvents.generateData('after_mods', e => {
   e.json('modern_industrialization:data_maps/fluid/fluid_fuels', {
     values: {
       'justdirethings:refined_t4_fluid_source': {
-        eu_per_mb: 800
+        eu_per_mb: 2592
       },
       'justdirethings:refined_t3_fluid_source': {
-        eu_per_mb: 400
+        eu_per_mb: 864
       },
       'justdirethings:refined_t2_fluid_source': {
-        eu_per_mb: 200
+        eu_per_mb: 288
       },
     }
   });
