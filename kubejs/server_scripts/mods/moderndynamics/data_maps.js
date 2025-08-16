@@ -61,17 +61,14 @@ ServerEvents.generateData('after_mods', e => {
 
   Object.entries(upgrades).forEach(([id, data]) => {
     let path = `modern_dynamics:attachment_upgrades/${ID.namespace(id)}/${ID.path(id)}`;
-
-    let json = JSON.parse(JSON.stringify(data));
-
-    json.item = id;
-    json['neoforge:conditions'] = [
+    data.item = id;
+    data['neoforge:conditions'] = [
       {
         type: 'neoforge:mod_loaded',
         modid: ID.namespace(id),
       }
     ];
 
-    e.json(path, json);
+    e.json(path, data);
   });
 });
