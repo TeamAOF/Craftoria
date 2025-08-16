@@ -19,23 +19,23 @@ ItemEvents.modifyTooltips(event => {
     let pipeIndex = pipezPipes.indexOf(pipe);
     event.add(pipe, { shift: false }, holdShift);
     event.add(pipe, { shift: true }, [
-      Text.gold('Transfer Rates:'),
-      Text.white(`Default: ${pipDef[pipeIndex]}`),
-      Text.green(`Basic: ${pipBas[pipeIndex]}`),
-      Text.aqua(`Improved: ${pipImp[pipeIndex]}`),
-      Text.aqua(`Advanced: ${pipAdv[pipeIndex]}`),
-      Text.red(`Ultimate: ${pipUlt[pipeIndex]}`),
+      Text.translate('tooltip.pipez.title.transfer_rates').gold(),
+      Text.translate('tooltip.pipez.tier.default', pipDef[pipeIndex]).white(),
+      Text.translate('tooltip.pipez.tier.basic', pipBas[pipeIndex]).green(),
+      Text.translate('tooltip.pipez.tier.improved', pipImp[pipeIndex]).aqua(),
+      Text.translate('tooltip.pipez.tier.advanced', pipAdv[pipeIndex]).aqua(),
+      Text.translate('tooltip.pipez.tier.ultimate', pipUlt[pipeIndex]).red(),
     ]);
   });
 
   event.add('pipez:universal_pipe', { shift: false }, holdShift);
   event.add('pipez:universal_pipe', { shift: true }, [
-    Text.gold('Transfer Rates: (item | fluid | energy | gas)'),
-    Text.white(`Default: ${pipDef[0]} | ${pipDef[1]} | ${pipDef[2]} | ${pipDef[3]}`),
-    Text.green(`Basic: ${pipBas[0]} | ${pipBas[1]} | ${pipBas[2]} | ${pipBas[3]}`),
-    Text.aqua(`Improved: ${pipImp[0]} | ${pipImp[1]} | ${pipImp[2]} | ${pipImp[3]}`),
-    Text.aqua(`Advanced: ${pipAdv[0]} | ${pipAdv[1]} | ${pipAdv[2]} | ${pipAdv[3]}`),
-    Text.red(`Ultimate: ${pipUlt[0]} | ${pipUlt[1]} | ${pipUlt[2]} | ${pipUlt[3]}`),
+    Text.translate('tooltip.pipez.title.transfer_rates_universal').gold(),
+    Text.translate('tooltip.pipez.tier.default_universal', pipDef[0], pipDef[1], pipDef[2], pipDef[3]).white(),
+    Text.translate('tooltip.pipez.tier.basic_universal', pipBas[0], pipBas[1], pipBas[2], pipBas[3]).green(),
+    Text.translate('tooltip.pipez.tier.improved_universal', pipImp[0], pipImp[1], pipImp[2], pipImp[3]).aqua(),
+    Text.translate('tooltip.pipez.tier.advanced_universal', pipAdv[0], pipAdv[1], pipAdv[2], pipAdv[3]).aqua(),
+    Text.translate('tooltip.pipez.tier.ultimate_universal', pipUlt[0], pipUlt[1], pipUlt[2], pipUlt[3]).red(),
   ]);
 
   for (let [k, v] in pipezUpgrades) {
@@ -44,20 +44,20 @@ ItemEvents.modifyTooltips(event => {
     let upID = `pipez:${k.toLowerCase()}_upgrade`;
     event.add(upID, { shift: false }, holdShift);
     event.add(upID, { shift: true }, [
-      Text.gold('Upgrade Stats:'),
-      Text.yellow(`Item: ${stats[0]}`),
-      Text.aqua(`Fluid: ${stats[1]}`),
-      Text.red(`Energy: ${stats[2]}`),
-      Text.green(`Gas: ${stats[3]}`),
+      Text.translate('tooltip.pipez.title.upgrade_stats').gold(),
+      Text.translate('tooltip.pipez.stat.item', stats[0]).yellow(),
+      Text.translate('tooltip.pipez.stat.fluid', stats[1]).aqua(),
+      Text.translate('tooltip.pipez.stat.energy', stats[2]).red(),
+      Text.translate('tooltip.pipez.stat.gas', stats[3]).green(),
     ]);
   }
 
   event.add('pipez:infinity_upgrade', { shift: false }, holdShift);
   event.add('pipez:infinity_upgrade', { shift: true }, [
-    Text.gold('Upgrade Stats:'),
-    Text.yellow('All: 2,147,483,647/t'),
-    Text.red('Use at your own risk.'),
+    Text.translate('tooltip.pipez.title.upgrade_stats').gold(),
+    Text.translate('tooltip.pipez.stat.all', '2,147,483,647/t').yellow(),
+    Text.translate('tooltip.pipez.infinity.risk_warning').red(),
   ]);
 
-  event.add(['pipez:energy_pipe', 'pipez:universal_pipe'], [Text.red("Doesn't work properly with Mekanism.")]);
+  event.add(['pipez:energy_pipe', 'pipez:universal_pipe'], [Text.translate('tooltip.pipez.warning.mekanism').red()]);
 });

@@ -12,7 +12,7 @@ StartupEvents.registry('item', e => {
   e.create('craftoria:codex_of_evolution', 'spellbook')
     .texture('craftoria:item/wip')
     .displayName('Codex of Evolution')
-    .tooltip(Text.darkGray('A spell book with unlimited potential').italic())
+    .tooltip(Text.translate('tooltip.craftoria.codex_of_evolution').italic().darkGray())
     .rarity('hazennstuff:divine')
     .setMaxSpellSlots(0);
 });

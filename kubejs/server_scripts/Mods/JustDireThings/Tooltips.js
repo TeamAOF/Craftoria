@@ -1,11 +1,19 @@
 ItemEvents.modifyTooltips(event => {
-  let direOres = ['Ferricore', 'Blazegold', 'Celestigem', 'Eclipse Alloy'];
+  const direOres = [
+    { id: 'ferricore',     localKey: 'block.justdirethings.raw_ferricore_ore' },
+    { id: 'blazegold',     localKey: 'block.justdirethings.raw_blazegold_ore' },
+    { id: 'celestigem',    localKey: 'block.justdirethings.raw_celestigem_ore' },
+    { id: 'eclipsealloy',  localKey: 'block.justdirethings.raw_eclipsealloy_ore' }
+  ];
 
   direOres.forEach(ore => {
-    let oreId = `justdirethings:raw_${ore.toLowerCase().replace(' ', '')}`;
+    let oreId = `justdirethings:raw_${ore.id}`;
     if (!Item.exists(oreId)) oreId = oreId.replace('raw_', '');
-    event.add(oreId, [Text.gray(`Can be gained from breaking Raw ${ore} Ore.`), Text.gray('Check EMI for how to make the ore.')]);
+    event.add(oreId, [
+      Text.translate('tooltip.justdirethings.raw_ore.source_info', Text.translate(ore.localKey)).gray(),
+      Text.translate('tooltip.justdirethings.raw_ore.check_emi').gray()
+    ]);
   });
 
-  event.add(/^justdirethings:raw_.*_ore$/, Text.red('DOES NOT NATURALLY SPAWN! It is crafted.'));
+  event.add(/^justdirethings:raw_.*_ore$/, Text.translate('tooltip.justdirethings.raw_ore.crafting_note').red());
 });

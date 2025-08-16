@@ -1,4 +1,5 @@
 {
+  "comment_1": "item/block/fliud/chemical",
   "block.craftoria.blaze_block": "Blaze Block",
   "block.craftoria.smokey_bricks": "Smokey Brick",
   "block.craftoria.smokey_bricks_slab": "Smokey Brick Slab",
@@ -645,6 +646,7 @@
   "block.craftoria.7x_compressed_charged_redstone_block": "7x Compressed Charged Redstone Block",
   "block.craftoria.8x_compressed_charged_redstone_block": "8x Compressed Charged Redstone Block",
   "block.craftoria.9x_compressed_charged_redstone_block": "9x Compressed Charged Redstone Block",
+
   "item.craftoria.infinity_cell_housing": "Infinity Cell Housing",
   "item.craftoria.dummy_warden_imprisonment": "Ritual: Imprisonment of the Warden",
   "item.craftoria.infinity_lava_cell": "ME Infinity Lava Cell",
@@ -676,9 +678,50 @@
   "item.craftoria.cosmic_injector": "§dCosmic Injector",
   "item.craftoria.garlic_bread": "Garlic Bread",
   "item.craftoria.multiblock_generator": "Multiblock Generator",
+
   "fluid_type.craftoria.quantium": "Quantium",
   "fluid_type.craftoria.molten_iridium": "Molten Iridium",
   "fluid_type.craftoria.antimatter": "Antimatter",
   "chemical.craftoria.plutonium_oxide": "Plutonium Oxide",
-  "chemical.craftoria.quantum_infusion": "Quantum Infusion (Chemical)"
+  "chemical.craftoria.quantum_infusion": "Quantum Infusion (Chemical)",
+
+  "comment_2": "tooltip",
+  "tooltip.craftoria.hold_shift": "Hold [Shift] for more information",
+  "tooltip.craftoria.ice_essence": "Dropped by the Apothic Lich in the Trial of Awaken gateway.",
+  "tooltip.craftoria.fire_essence": "Dropped by the Apothic Gauntlet in the Trial of Awaken gateway.",
+  "tooltip.craftoria.nature_essence": "Dropped by the Apothic Void Blossom in the Trial of Awaken gateway.",
+  "tooltip.craftoria.dark_essence": "Dropped by the Apothic Obsidilith in the Trial of Awaken gateway.",
+  "tooltip.craftoria.codex_of_evolution": "A spell book with unlimited potential",
+  "tooltip.craftoria.dummy_warden_imprisonment": "A ritual to imprison the Warden in an Infinity Cell, granting you infinite warden souls",
+
+  "tooltip.ae2wtlib.quantum_bridge_card.1": "Add this card to your wireless terminal to allow it to connect to a Quantum Ring",
+  "tooltip.ae2wtlib.quantum_bridge_card.2": "by adding a Quantum Entangled Singularity to the Quantum Ring and terminal.",
+  "tooltip.ae2wtlib.quantum_bridge_card.3": "This will allow you to access your ME system from anywhere in the world.",
+
+  "tooltip.justdirethings.raw_ore.source_info": "Can be gained from breaking %s.",
+  "tooltip.justdirethings.raw_ore.check_emi": "Check EMI for how to make the ore.",
+  "tooltip.justdirethings.raw_ore.crafting_note": "DOES NOT NATURALLY SPAWN! It is crafted.",
+
+  "tooltip.pipez.title.transfer_rates": "Transfer Rates:",
+  "tooltip.pipez.title.transfer_rates_universal": "Transfer Rates: (item | fluid | energy | gas)",
+  "tooltip.pipez.title.upgrade_stats": "Upgrade Stats:",
+  "tooltip.pipez.tier.default": "Default: %s",
+  "tooltip.pipez.tier.basic": "Basic: %s",
+  "tooltip.pipez.tier.improved": "Improved: %s",
+  "tooltip.pipez.tier.advanced": "Advanced: %s",
+  "tooltip.pipez.tier.ultimate": "Ultimate: %s",
+  "tooltip.pipez.tier.default_universal": "Default: %s | %s | %s | %s",
+  "tooltip.pipez.tier.basic_universal": "Basic: %s | %s | %s | %s",
+  "tooltip.pipez.tier.improved_universal": "Improved: %s | %s | %s | %s",
+  "tooltip.pipez.tier.advanced_universal": "Advanced: %s | %s | %s | %s",
+  "tooltip.pipez.tier.ultimate_universal": "Ultimate: %s | %s | %s | %s",
+  "tooltip.pipez.stat.item": "Item: %s",
+  "tooltip.pipez.stat.fluid": "Fluid: %s",
+  "tooltip.pipez.stat.energy": "Energy: %s",
+  "tooltip.pipez.stat.gas": "Gas: %s",
+  "tooltip.pipez.stat.all": "All: %s",
+  "tooltip.pipez.infinity.risk_warning": "Use at your own risk.",
+  "tooltip.pipez.warning.mekanism": "Doesn't work properly with Mekanism.",
+
+  "tooltip.sophisticatedstorage.upgrade": "Compatible with sophisticated storage."
 }
