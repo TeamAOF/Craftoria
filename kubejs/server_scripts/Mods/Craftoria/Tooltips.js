@@ -4,17 +4,17 @@ ItemEvents.modifyTooltips(e => {
   globalItemRemovals.forEach(item => {
     if (typeof item === 'object' && item.item) {
       e.add(item.item, [
-        Text.red(`This item has been disabled for reason: ${item.reason}.`),
-        Text.red("If you're playing in singleplayer, or are a server admin,"),
-        Text.red("if you want to enable it, go to 'kubejs/removals.js'"),
-        Text.red('and remove the item from globalItemRemovals.'),
+        Text.translate('tooltip.kubejs.removal.with_reason', item.reason).red(),
+        Text.translate('tooltip.kubejs.removal.admin_notice_1').red(),
+        Text.translate('tooltip.kubejs.removal.admin_notice_2_legacy').red(),
+        Text.translate('tooltip.kubejs.removal.admin_notice_3').red(),
       ]);
     } else {
       e.add(item, [
-        Text.red('This item has been disabled.'),
-        Text.red("If you're playing in singleplayer, or are a server admin,"),
-        Text.red("and you want to enable it, go to 'kubejs/server_scripts/removals.js'"),
-        Text.red('and remove the item from globalItemRemovals.'),
+        Text.translate('tooltip.kubejs.removal.generic').red(),
+        Text.translate('tooltip.kubejs.removal.admin_notice_1').red(),
+        Text.translate('tooltip.kubejs.removal.admin_notice_2').red(),
+        Text.translate('tooltip.kubejs.removal.admin_notice_3').red(),
       ]);
     }
   });
@@ -22,44 +22,46 @@ ItemEvents.modifyTooltips(e => {
   disabledItems.forEach(item => {
     if (item.alt || item.altId) {
       e.add(item.id, [
-        Text.red(`This item has been disabled in favor of ${item.alt || Item.of(item.altId).hoverName.string}.`),
-        Text.red('Its functionality remains intact, but it is no longer craftable.'),
+        Text.translate('tooltip.kubejs.disabled.in_favor_of', item.alt || Item.of(item.altId).hoverName.string).red(),     // Untested, disabledItems is null
+        Text.translate('tooltip.kubejs.disabled.functionality_remains').red(),
       ]);
     } else {
       e.add(item.id, [
-        Text.red('This item has been disabled in favor of better alternatives.'),
-        Text.red('Its functionality remains intact, but it is no longer craftable.'),
+        Text.translate('tooltip.kubejs.disabled.better_alternatives').red(),
+        Text.translate('tooltip.kubejs.disabled.functionality_remains').red(),
       ]);
     }
   });
 
-  e.add('pipe_connector:pipe_connector', { shift: true }, [Text.gold('Check EMI for supported pipes.')]);
-  e.add('#cookingforblockheads:sinks', [Text.red("Doesn't provide infinite water.")]);
+  e.add('pipe_connector:pipe_connector', { shift: true }, [Text.translate('tooltip.pipe_connector.info').gold()]);
+  e.add('#cookingforblockheads:sinks', [Text.translate('tooltip.cookingforblockheads.sink.no_infinite_water').red()]);
   e.add('eternal_starlight:red_starlight_crystal_shard', { shift: false }, holdShift);
   e.add('eternal_starlight:red_starlight_crystal_shard', { shift: true }, [
-    Text.lightPurple('Can be found in the Starlight dimension within the Crystalized biomes.'),
+    Text.translate('tooltip.eternal_starlight.red_crystal_shard.location').lightPurple(),
   ]);
 
   e.add('mi_tweaks:ooze_lab', { shift: true },
-    Text.gray('Needs ').append(Text.green('Time Fluid')).append(Text.gray(' between the glass and the goo.'))
+    Text.translate('tooltip.mi_tweaks.ooze_lab.needs').gray()
+      .append(Text.translate('tooltip.mi_tweaks.ooze_lab.fluid').green())
+      .append(Text.translate('tooltip.mi_tweaks.ooze_lab.location').gray())
   );
 
-  e.add('modern_industrialization:nuke', Text.darkGray("No, it won't explode."));
+  e.add('modern_industrialization:nuke', Text.translate('tooltip.modern_industrialization.nuke.no_explode').darkGray());
 
   e.add('craftoria:infinity_soul_cell', [
-    Text.darkGray('For the trinity gem component of this items recipe'),
-    Text.darkGray('craft a possessed warden spawn egg together with'),
-    Text.darkGray('an empty trinity gem in any crafting grid'),
-    Text.darkGray("As you can't use the captured warden for the ritual, for now"),
+    Text.translate('tooltip.craftoria.infinity_soul_cell.line1').darkGray(),
+    Text.translate('tooltip.craftoria.infinity_soul_cell.line2').darkGray(),
+    Text.translate('tooltip.craftoria.infinity_soul_cell.line3').darkGray(),
+    Text.translate('tooltip.craftoria.infinity_soul_cell.line4').darkGray(),
   ]);
 
   e.add('occultism:butcher_knife', [
-    Text.yellow('Replaced by Farmers Delight knives'),
-    Text.yellow('They have the same functionality'),
+    Text.translate('tooltip.occultism.butcher_knife.line1').yellow(),
+    Text.translate('tooltip.occultism.butcher_knife.line2').yellow(),
   ]);
 
   for (const [id, machine] of Object.entries(global.customMIMachines)) {
     let machineID = `${machine.mod ?? 'modern_industrialization'}:${id}`;
-    e.add(machineID, Text.blue('Added by Craftoria').italic());
+    e.add(machineID, Text.translate('tooltip.kubejs.added_by_craftoria').blue().italic());
   }
 });
