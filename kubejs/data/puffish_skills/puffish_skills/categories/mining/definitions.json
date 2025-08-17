@@ -1,40 +1,44 @@
 {
-	"fortune+0.1": {
-		"title": "+0.1 Fortune",
-		"icon": {
-			"type": "item",
-			"data": {
-				"item": "diamond"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:fortune",
-					"value": 0.1,
-					"operation": "addition"
-				}
-			}
-		]
-	},
-	"mining_speed+2%": {
-		"title": "+2% Mining Speed",
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "haste"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:mining_speed",
-					"value": 0.02,
-					"operation": "multiply_base"
-				}
-			}
-		]
-	}
+    "fortune+0.1": {
+        "title": {
+            "translate": "puffish_skills.categories.fortune+0.1.title"
+        },
+        "icon": {
+            "type": "item",
+            "data": {
+                "item": "diamond"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_skills:fortune",
+                    "value": 0.1,
+                    "operation": "addition"
+                }
+            }
+        ]
+    },
+    "mining_speed+2%": {
+        "title": {
+            "translate": "puffish_skills.categories.mining_speed+2%.title"
+        },
+        "icon": {
+            "type": "effect",
+            "data": {
+                "effect": "haste"
+            }
+        },
+        "rewards": [
+            {
+                "type": "puffish_skills:attribute",
+                "data": {
+                    "attribute": "puffish_skills:mining_speed",
+                    "value": 0.02,
+                    "operation": "multiply_base"
+                }
+            }
+        ]
+    }
 }
