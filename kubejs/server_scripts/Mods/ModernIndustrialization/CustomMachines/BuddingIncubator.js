@@ -14,19 +14,19 @@ const TIME_BUDDING_STAGE = Java.loadClass('com.direwolf20.justdirethings.common.
 const buddingConditions = {
   certus: {
     block: 'ae2:flawless_budding_quartz',
-    text: 'Place Flawless Budding Certus Quartz in the center to produce Certus Quartz Crystal.',
+    textKey: 'info.mi.budding.certus',
     fluid: '1000x water',
     item: '8x ae2:certus_quartz_crystal',
   },
   amethyst: {
     block: 'minecraft:budding_amethyst',
-    text: 'Place Budding Amethyst in the center to produce Amethyst Shard.',
+    textKey: 'info.mi.budding.amethyst',
     fluid: '1000x water',
     item: '8x minecraft:amethyst_shard',
   },
   entro: {
     block: 'extendedae:entro_budding_fully',
-    text: 'Place Budding Fully Entroized Fluix in the center to produce Entro Crystal.',
+    textKey: 'info.mi.budding.entro',
     fluid: '1000x water',
     item: '8x extendedae:entro_crystal',
     eu: 16,
@@ -34,13 +34,16 @@ const buddingConditions = {
   },
   thioquartz: {
     block: 'eternal_starlight:budding_thioquartz',
-    text: 'Place Budding Thioquartz in the center to produce Thioquartz Shard.',
+    textKey: 'info.mi.budding.thioquartz',
     fluid: '100x eternal_starlight:ether',
     item: '4x eternal_starlight:thioquartz_shard',
   },
   timecrystal: {
     block: 'justdirethings:time_crystal_budding_block',
-    text: ['Place Budding Time Crystal in the center to produce Time Crystal.', 'Requires a stage 3 Budding Time Crystal Block.'],
+    textKey: [
+        'info.mi.budding.timecrystal.line1', 
+        'info.mi.budding.timecrystal.line2'
+    ],
     blockState: {
       property: TIME_BUDDING_STAGE,
       value: TIME_BUDDING_STAGE.max,
@@ -52,19 +55,19 @@ const buddingConditions = {
   },
   topaz: {
     block: 'pastel:budding_topaz',
-    text: 'Place Budding Topaz in the center to produce Topaz Shard.',
+    textKey: 'info.mi.budding.topaz',
     fluid: '1000x water',
     item: '8x pastel:topaz_shard',
   },
   citrine: {
     block: 'pastel:budding_citrine',
-    text: 'Place Budding Citrine in the center to produce Citrine Shard.',
+    textKey: 'info.mi.budding.citrine',
     fluid: '1000x water',
     item: '8x pastel:citrine_shard',
   },
   onyx: {
     block: 'pastel:budding_onyx',
-    text: 'Place Budding Onyx in the center to produce Onyx Shard.',
+    textKey: 'info.mi.budding.onyx',
     fluid: '1000x water',
     item: '4x pastel:onyx_shard',
     eu: 16,
@@ -72,7 +75,7 @@ const buddingConditions = {
   },
   moonstone: {
     block: 'pastel:budding_moonstone',
-    text: 'Place Budding Moonstone in the center to produce Moonstone Shard.',
+    textKey: 'info.mi.budding.moonstone',
     fluid: '1000x water',
     item: '2x pastel:moonstone_shard',
     eu: 16,
@@ -83,6 +86,23 @@ const buddingConditions = {
 MIRecipeEvents.customCondition(event => {
   Object.entries(buddingConditions).forEach(([key, condition]) => {
     if (!Platform.isLoaded(ID.namespace(condition.block))) return;
+
+    let descriptionComponent;
+    let keyArray, firstKey, restKeys; 
+
+    if (Array.isArray(condition.textKey)) {
+      keyArray = condition.textKey; 
+      firstKey = keyArray[0];
+      restKeys = keyArray.slice(1);
+
+      descriptionComponent = Text.translate(firstKey);
+      restKeys.forEach(nextKey => {
+        descriptionComponent.append('\n').append(Text.translate(nextKey));
+      });
+    } else {
+      descriptionComponent = Text.translate(condition.textKey);
+    }
+    
     event.register(
       key,
       (ctx, recipe) => {
@@ -107,7 +127,7 @@ MIRecipeEvents.customCondition(event => {
           } else return state.getValue(blockState.property) == blockState.value;
         } else return true;
       },
-      Text.of(Array.isArray(condition.text) ? condition.text.join('\n') : condition.text)
+      descriptionComponent
     );
   });
 });
