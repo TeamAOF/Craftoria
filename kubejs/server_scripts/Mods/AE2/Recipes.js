@@ -6,6 +6,14 @@ ServerEvents.recipes(event => {
   const ae2 = AE2Helper(event);
 
   event
+    .shaped('bigger_ae2:advanced_fluid_cell_housing', ['GSG', 'S S', 'RRR'], {
+      G: 'ae2:quartz_glass',
+      S: 'ae2:sky_dust',
+      R: 'minecraft:diamond',
+    })
+    .id('bigger_ae2:advanced_fluid_cell_housing');
+
+  event
     .shaped('bigger_ae2:advanced_flux_cell_housing', ['GSG', 'SMS', 'RRR'], {
       G: 'ae2:quartz_glass',
       S: 'ae2:sky_dust',
@@ -13,6 +21,22 @@ ServerEvents.recipes(event => {
       R: 'appflux:harden_insulating_resin',
     })
     .id('bigger_ae2:advanced_flux_cell_housing');
+
+  event
+    .shaped('bigger_ae2:advanced_chemical_cell_housing', ['GSG', 'S S', 'RRR'], {
+      G: 'ae2:quartz_glass',
+      S: 'ae2:sky_dust',
+      R: 'mekanism:ingot_refined_obsidian',
+    })
+    .id('bigger_ae2:advanced_chemical_cell_housing');
+
+  event
+    .shaped('bigger_ae2:advanced_source_cell_housing', ['GSG', 'S S', 'RRR'], {
+      G: 'ae2:quartz_glass',
+      S: 'ae2:sky_dust',
+      R: 'ars_nouveau:source_gem',
+    })
+    .id('bigger_ae2:advanced_source_cell_housing');
 
   event.replaceInput({ id: 'advanced_ae:quantum_helmet' }, 'minecraft:netherite_helmet', 'mekanism:mekasuit_helmet');
   event.replaceInput({ id: 'advanced_ae:quantum_chest' }, 'minecraft:netherite_chestplate', 'mekanism:mekasuit_bodyarmor');
