@@ -25,7 +25,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "462A315212B07945"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:energized_smelter)item(mekanism:basic_smelting_factory)item(mekanism:advanced_smelting_factory)item(mekanism:elite_smelting_factory)item(mekanism:ultimate_smelting_factory))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.smelting"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:energized_smelter)item(mekanism:basic_smelting_factory)item(mekanism:advanced_smelting_factory)item(mekanism:elite_smelting_factory)item(mekanism:ultimate_smelting_factory))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.smelting\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -6.0d
@@ -46,7 +46,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "5A349EFBA574731A"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:enrichment_chamber)item(mekanism:basic_enriching_factory)item(mekanism:advanced_enriching_factory)item(mekanism:elite_enriching_factory)item(mekanism:ultimate_enriching_factory))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.enriching"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:enrichment_chamber)item(mekanism:basic_enriching_factory)item(mekanism:advanced_enriching_factory)item(mekanism:elite_enriching_factory)item(mekanism:ultimate_enriching_factory))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.enriching\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -4.0d
@@ -63,7 +63,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "58B9379A71483DD6"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:crusher)item(mekanism:basic_crushing_factory)item(mekanism:advanced_crushing_factory)item(mekanism:elite_crushing_factory)item(mekanism:ultimate_crushing_factory))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.crushing"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:crusher)item(mekanism:basic_crushing_factory)item(mekanism:advanced_crushing_factory)item(mekanism:elite_crushing_factory)item(mekanism:ultimate_crushing_factory))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.crushing\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -2.0d
@@ -87,7 +87,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "254F5B2785C08B60"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:purification_chamber)item(mekanism:basic_purifying_factory)item(mekanism:advanced_purifying_factory)item(mekanism:elite_purifying_factory)item(mekanism:ultimate_purifying_factory))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.purifying"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:purification_chamber)item(mekanism:basic_purifying_factory)item(mekanism:advanced_purifying_factory)item(mekanism:elite_purifying_factory)item(mekanism:ultimate_purifying_factory))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.purifying\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.0d
@@ -109,7 +109,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "69E28305E625CCD2"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:chemical_injection_chamber)item(mekanism:basic_injecting_factory)item(mekanism:advanced_injecting_factory)item(mekanism:elite_injecting_factory)item(mekanism:ultimate_injecting_factory))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.injecting"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:chemical_injection_chamber)item(mekanism:basic_injecting_factory)item(mekanism:advanced_injecting_factory)item(mekanism:elite_injecting_factory)item(mekanism:ultimate_injecting_factory))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.injecting\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 2.0d
@@ -184,7 +184,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "7206B162C5B4E0B8"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/silver))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.tier_1_ores_1_1"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/silver))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.tier_1_ores_1_1\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -7.5d
@@ -201,7 +201,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "6937E64C02FCC35E"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.tier_2_ores_1_2"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.tier_2_ores_1_2\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -221,7 +221,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "173B8953C4ECF03C"
-				item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:iron_ingot)item(minecraft:gold_ingot)item(minecraft:copper_ingot)item(mekanism:dust_osmium)item(modern_industrialization:tin_ingot)item(modern_industrialization:lead_ingot)item(modern_industrialization:uranium_ingot)item(modern_industrialization:iridium_ingot)item(modern_industrialization:nickel_ingot)item(modern_industrialization:silver_ingot))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.ingots"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:iron_ingot)item(minecraft:gold_ingot)item(minecraft:copper_ingot)item(mekanism:dust_osmium)item(modern_industrialization:tin_ingot)item(modern_industrialization:lead_ingot)item(modern_industrialization:uranium_ingot)item(modern_industrialization:iridium_ingot)item(modern_industrialization:nickel_ingot)item(modern_industrialization:silver_ingot))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.ingots\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -241,7 +241,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "52F8438ABCEAC05B"
-				item: { components: { "ftbfiltersystem:filter": "or(item(modern_industrialization:iron_dust)item(modern_industrialization:gold_dust)item(modern_industrialization:copper_dust)item(mekanism:dust_osmium)item(modern_industrialization:tin_dust)item(modern_industrialization:lead_dust)item(modern_industrialization:uranium_dust)item(modern_industrialization:iridium_dust)item(modern_industrialization:nickel_dust)item(modern_industrialization:platinum_dust)item(modern_industrialization:silver_dust)item(modern_industrialization:titanium_dust)item(modern_industrialization:tungsten_dust))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.dusts"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(modern_industrialization:iron_dust)item(modern_industrialization:gold_dust)item(modern_industrialization:copper_dust)item(mekanism:dust_osmium)item(modern_industrialization:tin_dust)item(modern_industrialization:lead_dust)item(modern_industrialization:uranium_dust)item(modern_industrialization:iridium_dust)item(modern_industrialization:nickel_dust)item(modern_industrialization:platinum_dust)item(modern_industrialization:silver_dust)item(modern_industrialization:titanium_dust)item(modern_industrialization:tungsten_dust))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.dusts\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -258,7 +258,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "7B48C21DF0E38AA3"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.tier_3_ores_1_3"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.tier_3_ores_1_3\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -275,7 +275,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "384605660D8EEB3F"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.tier_4_ores_1_4"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.tier_4_ores_1_4\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -292,7 +292,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "3404171FB712C24D"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.tier_5_ores_1_5"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:iron_ores)item_tag(minecraft:gold_ores)item_tag(minecraft:copper_ores)item_tag(c:ores/osmium)item_tag(c:ores/tin)item_tag(c:ores/lead)item_tag(c:ores/uranium)item_tag(c:ores/iridium)item_tag(c:ores/nickel)item_tag(c:ores/platinum)item_tag(c:ores/silver)item_tag(c:ores/titanium)item_tag(c:ores/tungsten))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.tier_5_ores_1_5\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 9.5d
@@ -312,7 +312,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "3C57ABFDA04D05E7"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:dirty_dust_iron)item(mekanism:dirty_dust_gold)item(mekanism:dirty_dust_osmium)item(mekanism:dirty_dust_copper)item(mekanism:dirty_dust_tin)item(mekanism:dirty_dust_lead)item(mekanism:dirty_dust_uranium)item(moremekanismprocessing:dirty_dust_iridium)item(moremekanismprocessing:dirty_dust_nickel)item(moremekanismprocessing:dirty_dust_platinum)item(moremekanismprocessing:dirty_dust_silver)item(moremekanismprocessing:dirty_dust_titanium)item(moremekanismprocessing:dirty_dust_tungsten))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.dirty_dusts"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:dirty_dust_iron)item(mekanism:dirty_dust_gold)item(mekanism:dirty_dust_osmium)item(mekanism:dirty_dust_copper)item(mekanism:dirty_dust_tin)item(mekanism:dirty_dust_lead)item(mekanism:dirty_dust_uranium)item(moremekanismprocessing:dirty_dust_iridium)item(moremekanismprocessing:dirty_dust_nickel)item(moremekanismprocessing:dirty_dust_platinum)item(moremekanismprocessing:dirty_dust_silver)item(moremekanismprocessing:dirty_dust_titanium)item(moremekanismprocessing:dirty_dust_tungsten))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.dirty_dusts\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -1.5d
@@ -332,7 +332,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "7E06B7B8534A6AD6"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:clump_iron)item(mekanism:clump_gold)item(mekanism:clump_osmium)item(mekanism:clump_copper)item(mekanism:clump_tin)item(mekanism:clump_lead)item(mekanism:clump_uranium)item(moremekanismprocessing:clump_iridium)item(moremekanismprocessing:clump_nickel)item(moremekanismprocessing:clump_platinum)item(moremekanismprocessing:clump_silver)item(moremekanismprocessing:clump_titanium)item(moremekanismprocessing:clump_tungsten))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.clumps"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:clump_iron)item(mekanism:clump_gold)item(mekanism:clump_osmium)item(mekanism:clump_copper)item(mekanism:clump_tin)item(mekanism:clump_lead)item(mekanism:clump_uranium)item(moremekanismprocessing:clump_iridium)item(moremekanismprocessing:clump_nickel)item(moremekanismprocessing:clump_platinum)item(moremekanismprocessing:clump_silver)item(moremekanismprocessing:clump_titanium)item(moremekanismprocessing:clump_tungsten))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.clumps\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -352,7 +352,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "121218D232DE02CD"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:crystal_iron)item(mekanism:crystal_gold)item(mekanism:crystal_osmium)item(mekanism:crystal_copper)item(mekanism:crystal_tin)item(mekanism:crystal_lead)item(mekanism:crystal_uranium)item(moremekanismprocessing:crystal_iridium)item(moremekanismprocessing:crystal_nickel)item(moremekanismprocessing:crystal_platinum)item(moremekanismprocessing:crystal_silver)item(moremekanismprocessing:crystal_titanium)item(moremekanismprocessing:crystal_tungsten))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.crystals"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:crystal_iron)item(mekanism:crystal_gold)item(mekanism:crystal_osmium)item(mekanism:crystal_copper)item(mekanism:crystal_tin)item(mekanism:crystal_lead)item(mekanism:crystal_uranium)item(moremekanismprocessing:crystal_iridium)item(moremekanismprocessing:crystal_nickel)item(moremekanismprocessing:crystal_platinum)item(moremekanismprocessing:crystal_silver)item(moremekanismprocessing:crystal_titanium)item(moremekanismprocessing:crystal_tungsten))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.crystals\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 4.5d
@@ -905,7 +905,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "69AE927A266FC41C"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:chemical_injection_chamber)item(mekanism:basic_injecting_factory)item(mekanism:advanced_injecting_factory)item(mekanism:elite_injecting_factory)item(mekanism:ultimate_injecting_factory))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.injecting"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:chemical_injection_chamber)item(mekanism:basic_injecting_factory)item(mekanism:advanced_injecting_factory)item(mekanism:elite_injecting_factory)item(mekanism:ultimate_injecting_factory))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.injecting\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -8.0d
@@ -1061,7 +1061,7 @@
 			size: 0.5d
 			tasks: [{
 				id: "22B462F02C239237"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:shard_iron)item(mekanism:shard_gold)item(mekanism:shard_osmium)item(mekanism:shard_copper)item(mekanism:shard_tin)item(mekanism:shard_lead)item(mekanism:shard_uranium)item(moremekanismprocessing:shard_iridium)item(moremekanismprocessing:shard_nickel)item(moremekanismprocessing:shard_platinum)item(moremekanismprocessing:shard_silver)item(moremekanismprocessing:shard_titanium)item(moremekanismprocessing:shard_tungsten))", "minecraft:custom_name": "{"translate": "custom_name.quests.mekanism_ore_processing.shards"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(mekanism:shard_iron)item(mekanism:shard_gold)item(mekanism:shard_osmium)item(mekanism:shard_copper)item(mekanism:shard_tin)item(mekanism:shard_lead)item(mekanism:shard_uranium)item(moremekanismprocessing:shard_iridium)item(moremekanismprocessing:shard_nickel)item(moremekanismprocessing:shard_platinum)item(moremekanismprocessing:shard_silver)item(moremekanismprocessing:shard_titanium)item(moremekanismprocessing:shard_tungsten))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.mekanism_ore_processing.shards\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 2.5d

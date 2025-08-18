@@ -731,7 +731,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "2DE3EFD4F2F7C1C9"
-				item: { components: { "ftbfiltersystem:filter": "or(item(mininggadgets:mininggadget_simple)item(mininggadgets:mininggadget_fancy)item(mininggadgets:mininggadget))", "minecraft:custom_name": "{"translate": "custom_name.quests.gadgets.any_mining_gadget"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				item: { components: { "ftbfiltersystem:filter": "or(item(mininggadgets:mininggadget_simple)item(mininggadgets:mininggadget_fancy)item(mininggadgets:mininggadget))", "minecraft:custom_name": "{\"translate\": \"custom_name.quests.gadgets.any_mining_gadget\"}" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 7.800000000000001d
