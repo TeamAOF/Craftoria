@@ -29,6 +29,8 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
     event.remove(item.id);
   });
 
+  event.remove(['megacells:bulk_cell_component', 'bigger_ae2:quantum_cell_component']);
+
   event.remove(Ingredient.of('@displaydelight').except(['displaydelight:food_plate', 'displaydelight:small_food_plate']));
 });
 

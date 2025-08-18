@@ -14,10 +14,36 @@ ServerEvents.recipes(event => {
     })
     .id('bigger_ae2:advanced_flux_cell_housing');
 
+  event
+    .shaped('bigger_ae2:digital_singularity_cell_component', ['ASA', 'QGQ', 'AQA'], {
+      A: 'megacells:accumulation_processor',
+      S: 'ae2:spatial_cell_component_128',
+      Q: 'advanced_ae:quantum_storage_component',
+      G: 'ae2:quartz_vibrant_glass',
+    })
+    .id('bigger_ae2:digital_singularity_cell_component');
+
   event.replaceInput({ id: 'advanced_ae:quantum_helmet' }, 'minecraft:netherite_helmet', 'mekanism:mekasuit_helmet');
   event.replaceInput({ id: 'advanced_ae:quantum_chest' }, 'minecraft:netherite_chestplate', 'mekanism:mekasuit_bodyarmor');
   event.replaceInput({ id: 'advanced_ae:quantum_leggings' }, 'minecraft:netherite_leggings', 'mekanism:mekasuit_pants');
   event.replaceInput({ id: 'advanced_ae:quantum_boots' }, 'minecraft:netherite_boots', 'mekanism:mekasuit_boots');
+
+  event.replaceInput({ id: 'megacells:cells/standard/bulk_item_cell' }, 'megacells:bulk_cell_component', 'bigger_ae2:digital_singularity_cell_component');
+  event.replaceInput({ id: 'enderdrives:ender_storage_component_1k_advanced' }, 'advanced_ae:quantum_storage_component', 'bigger_ae2:digital_singularity_cell_component');
+
+  event.replaceInput({ id: 'bigger_ae2:quantum_fluid_storage_cell' }, 'bigger_ae2:quantum_cell_component', 'advanced_ae:quantum_storage_component');
+  event.replaceInput({ id: 'bigger_ae2:quantum_chemical_storage_cell' }, 'bigger_ae2:quantum_cell_component', 'advanced_ae:quantum_storage_component');
+  event.replaceInput({ id: 'bigger_ae2:quantum_source_storage_cell' }, 'bigger_ae2:quantum_cell_component', 'advanced_ae:quantum_storage_component');
+
+  // TODO: figure out a way to make disassembly of Bigger AE2's quantum cells directly give Advanced AE's quantum storage components.
+
+  event.remove({ id: 'bigger_ae2:quantum_cell_component' });
+  event.shapeless('advanced_ae:quantum_storage_component', 'bigger_ae2:quantum_cell_component')
+    .id('advanced_ae:quantum_storage_component_from_bigger_ae2_quantum_cell_component');
+
+  event.remove({ id: 'megacells:crafting/bulk_cell_component' });
+  event.shapeless('bigger_ae2:digital_singularity_cell_component', 'megacells:bulk_cell_component')
+    .id('bigger_ae2:digital_singularity_cell_component_from_megacells_bulk_cell_component');
 
   ae2.crystalAssembler('advanced_ae:adv_pattern_provider_capacity_upgrade', [
     '#ae2:metal_ingots',
