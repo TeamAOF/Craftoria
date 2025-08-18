@@ -3,14 +3,14 @@ RecipeViewerEvents.addInformation('fluid', e => {
   /** @type {Record<Special.Fluid, string[]>} */
   const entries = {
     'justdirethings:unstable_portal_fluid_source': [
-      'This fluid is used to make (stable)portal fluid.',
-      'It must be made in a vanilla End Biome,',
-      'otherwise it will vaporize when made.',
+      'info.justdirethings.unstable_portal_fluid.line1',
+      'info.justdirethings.unstable_portal_fluid.line2',
+      'info.justdirethings.unstable_portal_fluid.line3',
     ],
   };
 
-  for (let [fluid, info] of Object.entries(entries)) {
-    e.add(fluid, info);
+  for (const [fluid, keys] of Object.entries(entries)) {
+    e.add(fluid, keys.map(key => Text.translate(key)));
   }
 });
 
@@ -18,31 +18,26 @@ RecipeViewerEvents.addInformation('item', e => {
   /** @type {Record<Special.Item, string[]>} */
   const entries = {
     'cursedearth:cursed_earth': [
-      'Can be acquired by sneaking and using a Wither Rose on Dirt.',
-      'Spawns hostile mobs at a fast pace.',
-      'Spreads to nearby dirt blocks.',
-      'Burns at light level 7 or above.',
+      'info.cursedearth.cursed_earth.line1',
+      'info.cursedearth.cursed_earth.line2',
+      'info.cursedearth.cursed_earth.line3',
+      'info.cursedearth.cursed_earth.line4',
     ],
     'cursedearth:blessed_earth': [
-      'Can be acquired by sneaking and using a Blessed Flower on Dirt.',
-      'Spawns passive mobs at a fast pace.',
-      'Spreads to nearby dirt blocks.',
+      'info.cursedearth.blessed_earth.line1',
+      'info.cursedearth.blessed_earth.line2',
+      'info.cursedearth.blessed_earth.line3',
     ],
     'tesseract:tesseract': [
-      'A block that can transfer items, fluids, and energy wirelessly.',
-      'Either the sending or receiving side must be next to a "container" block, like a chest or a tank.',
-      'A direct pipe to pipe won\'t work, unless the pipe can store items, fluids, or energy. Ex. Mekanism\'s Universal Cable.',
-      'The Tesseract is unable to move things on its own, use a pipe or cable to move things to and from it.',
-      'Be sure to set the same frequency on both sides.',
+      'info.tesseract.tesseract.line1',
+      'info.tesseract.tesseract.line2',
+      'info.tesseract.tesseract.line3',
+      'info.tesseract.tesseract.line4',
+      'info.tesseract.tesseract.line5',
     ],
   };
 
-  for (let [item, info] of Object.entries(entries)) {
-    if (info.length > 0)
-      for (let i = 0; i < info.length - 1; i++) {
-        info[i] += '\n';
-      }
-
-    e.add(item, info);
+  for (const [item, keys] of Object.entries(entries)) {
+    e.add(item, keys.map(key => Text.translate(key)));
   }
 });

@@ -51,8 +51,8 @@ ItemEvents.modifyTooltips(e => {
         .split(':')[1]
         .replace('_compressed', '')
         .replace(/([0-9])x_/, '');
-      e.add(`craftoria:${i}x_compressed_${item}`, { shift: false }, Text.gold(`Total Blocks: ${shortTotalBlocks}`));
-      e.add(`craftoria:${i}x_compressed_${item}`, { shift: true }, Text.gold(`Total Blocks: ${longTotalBlocks}`));
+      e.add(`craftoria:${i}x_compressed_${item}`, { shift: false }, Text.translate('tooltip.craftoria.compressed.total_blocks', shortTotalBlocks).gold());
+      e.add(`craftoria:${i}x_compressed_${item}`, { shift: true }, Text.translate('tooltip.craftoria.compressed.total_blocks', longTotalBlocks).gold());
     });
   }
 });
