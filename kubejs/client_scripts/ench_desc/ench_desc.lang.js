@@ -1,3 +1,5 @@
+// Deprecated, replaced by language files
+/*
 ClientEvents.lang('en_us', event => {
   event.addAll('enchdesc', {
     'tooltip.enchdesc.hold': '§6Hold §eShift §6to view enchantment descriptions.§r',
@@ -52,3 +54,4 @@ ClientEvents.lang('en_us', event => {
     'enchantment.ars_elemental.soulbound.desc': 'Preserve items on death.',
   });
 });
+*/

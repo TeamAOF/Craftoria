@@ -31,7 +31,7 @@ const $Boolean = Java.loadClass('java.lang.Boolean');
 const debug = 'error';
 
 // Used for tooltips
-const holdShift = Text.gold('Hold [Shift] for more information');
+const holdShift = Text.translate('tooltip.craftoria.hold_shift').gold();
 
 /**
  * Converts a JavaScript number to a Java Integer.
