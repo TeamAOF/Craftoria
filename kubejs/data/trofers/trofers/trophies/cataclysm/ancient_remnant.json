@@ -1,0 +1,49 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cataclysm"
+      ]
+    }
+  ],
+  "colors": {
+    "accent": "#dbb86a",
+    "base": "#606060"
+  },
+  "display": {
+    "scale": 0.15
+  },
+  "effects": {
+    "sound": {
+      "id": "cataclysm:remnant_bite"
+    }
+  },
+  "entity": {
+    "id": "cataclysm:ancient_ancient_remnant",
+    "tag": {
+      "HandItems": [
+        {
+          "count": 1,
+          "id": "cataclysm:khopesh"
+        },
+        {}
+      ]
+    }
+  },
+  "name": {
+    "color": "#dbb86a",
+    "translate": "trophy.trofers.composed",
+    "with": [
+      {
+        "translate": "entity.cataclysm.ancient_remnant"
+      }
+    ]
+  }
+}

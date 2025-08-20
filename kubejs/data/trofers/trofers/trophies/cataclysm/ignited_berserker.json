@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cataclysm"
+      ]
+    }
+  ],
+  "colors": {
+    "accent": "#fcc753",
+    "base": "#606060"
+  },
+  "display": {
+    "scale": 0.25
+  },
+  "effects": {
+    "sound": {
+      "id": "cataclysm:ignis_death"
+    }
+  },
+  "entity": {
+    "id": "cataclysm:ignited_berserker"
+  },
+  "name": {
+    "color": "#fcc753",
+    "translate": "trophy.trofers.composed",
+    "with": [
+      {
+        "translate": "entity.cataclysm.ignited_berserker"
+      }
+    ]
+  }
+}

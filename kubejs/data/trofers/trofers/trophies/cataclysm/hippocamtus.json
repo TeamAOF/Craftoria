@@ -1,0 +1,40 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "cataclysm"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "cataclysm"
+      ]
+    }
+  ],
+  "colors": {
+    "accent": "#ee9c35",
+    "base": "#606060"
+  },
+  "display": {
+    "scale": 0.25
+  },
+  "effects": {
+    "sound": {
+      "id": "cataclysm:hippocamtus_idle"
+    }
+  },
+  "entity": {
+    "id": "cataclysm:hippocamtus"
+  },
+  "name": {
+    "color": "#ee9c35",
+    "translate": "trophy.trofers.composed",
+    "with": [
+      {
+        "translate": "entity.cataclysm.hippocamtus"
+      }
+    ]
+  }
+}
