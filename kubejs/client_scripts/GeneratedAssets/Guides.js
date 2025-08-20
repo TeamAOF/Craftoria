@@ -1,5 +1,9 @@
 ClientEvents.generateAssets('after_mods', e => {
-  const guides = [{ mod: 'craftoria', text: 'Miscellaneous guides', model: 'logo' }];
+  const guides = [{ 
+    mod: 'craftoria', 
+    tooltipKey: 'tooltip.craftoria.guide.description',
+    model: 'logo' 
+  }];
 
   guides.forEach(guide => {
     let guideJson = {
@@ -8,7 +12,9 @@ ClientEvents.generateAssets('after_mods', e => {
           type: 'translatable',
           translate: `${guide.mod}.guide_name`,
         },
-        tooltip_lines: [Text.gray(guide.text).italic()],
+        tooltip_lines: [
+          Text.translate(guide.tooltipKey).gray().italic()
+        ],
         model: `${guide.mod}:item/${guide.model}`,
       },
     };

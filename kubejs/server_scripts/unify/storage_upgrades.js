@@ -46,7 +46,7 @@
 
     Ingredient.of('#sophisticatedstorage:upgrade').itemIds.forEach(id => {
       if (!disabledSet.has(id)) {
-        event.add(id, [Text.gray('Compatible with sophisticated storage.')]);
+        event.add(id, [Text.translate('tooltip.sophisticatedstorage.upgrade').gray()]);
       }
     });
   });

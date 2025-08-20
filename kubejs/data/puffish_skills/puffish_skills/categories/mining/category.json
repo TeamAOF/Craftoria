@@ -1,11 +1,13 @@
 {
-	"unlocked_by_default": true,
-	"title": "Mining",
-	"icon": {
-		"type": "item",
-		"data": {
-			"item": "diamond_pickaxe"
-		}
-	},
-	"background": "textures/gui/advancements/backgrounds/stone.png"
+    "unlocked_by_default": true,
+    "title": {
+        "translate": "puffish_skills.category.mining.title"
+    },
+    "icon": {
+        "type": "item",
+        "data": {
+            "item": "diamond_pickaxe"
+        }
+    },
+    "background": "textures/gui/advancements/backgrounds/stone.png"
 }
