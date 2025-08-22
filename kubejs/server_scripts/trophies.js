@@ -23,6 +23,31 @@ ServerEvents.generateData('after_mods', event => {
     trophy_base: 'trofers:small_plate',
   };
 
+
+  /**
+  
+  JSON temeplate
+
+  "": {
+    "folder": "",
+    "entity": "mod:nome",
+    "name": "entity.mod.nome",
+    "accent_color": "#ffffff",
+    "effects": {"sound": {"id": "ars_nouveau:ignis_death"}},
+    "nbt": "{OnGround:1b,Act:1,Phase:0}",
+    "display": {"scale": 0.25, "offset":[0.0, 0.0, 2.0]},
+    "tag": { 
+      "HandItems": [{"count": 1, "id": "irons_spellbooks:pyrium_staff"},{}],
+      "ArmorItems": [
+        { "count": 1, "id": "irons_spellbooks:archevoker_boots" },
+        { "count": 1, "id": "irons_spellbooks:archevoker_leggings" },
+        { "count": 1, "id": "irons_spellbooks:archevoker_chestplate" },
+        { "count": 1, "id": "irons_spellbooks:archevoker_helmet" }
+      ]
+    } 
+  }
+  
+  */
   // Loop su ogni trofeo
   Object.entries(trophies).forEach(([id, data]) => {
     // Creiamo un nome univoco e valido per il trofeo
@@ -63,6 +88,10 @@ ServerEvents.generateData('after_mods', event => {
       trophy.effects = data.effects;
     }
 
+    if(data.tag){
+      trophy.entity.tag = data.tag;
+    }
+    
     // Salva il JSON nella cartella trofei di Trofers, usando il nome univoco
     event.json(`trofers:trofers/trophies/${trophy_name}`, trophy);
 
