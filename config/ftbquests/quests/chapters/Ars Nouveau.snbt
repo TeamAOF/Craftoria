@@ -2651,7 +2651,7 @@
 					id: "409ABE58A225C159"
 					item: {
 						components: {
-							"minecraft:custom_name": "{\"italic\":false,\"translate\":\"custom_name.quests.ars_nouveau.warden_meat\"}"
+							"minecraft:custom_name": "{\"italic\":false,\"text\":\"Warden's Meat\"}"
 							"minecraft:food": {
 								effects: [
 									{
@@ -2707,10 +2707,10 @@
 								saturation: 4.0f
 							}
 							"minecraft:lore": [
-                            					"{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.quests.ars_nouveau.meat_from_a_warden\"}",
-                            					"{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.quests.ars_nouveau.obtained_through_a_dubious_mean\"}",
-                            					"{\"color\":\"dark_red\",\"italic\":false,\"translate\":\"lore.quests.ars_nouveau.eat_at_your_own_risk\"}"
-                        	]
+								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Meat from a Warden\"}"
+								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Obtained through a dubious mean\"}"
+								"{\"color\":\"dark_red\",\"italic\":false,\"text\":\"Eat at your own risk!\"}"
+							]
 							"minecraft:rarity": "epic"
 						}
 						count: 1
