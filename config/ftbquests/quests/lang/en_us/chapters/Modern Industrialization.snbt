@@ -1,0 +1,927 @@
+{
+	quest.02272D430F08B1DC.quest_desc: [
+		"  Now you can make a large tank! This is a tank multi-block that can store 64,000mb &oper&r block within the total volume the tank takes up, air blocks and solid."
+		""
+		"  When you place down a Large Tank, open it's GUI and check out the top left. It'll let you choose which size you want. "
+		""
+		"  Once you've chosen, hold out your trusty wrench and a hologram will show you where to place blocks."
+		""
+		"  Use a Large Tank Hatch too. It works just like other hatches, aside from it only being a point of access to the tank. It'll input and output from any hatches you put on it."
+	]
+	quest.026C88446512DDB8.quest_subtitle: "Can run &eCoke Oven&r recipes in batches."
+	quest.04A69DE982F47E64.quest_desc: [
+		"  Time for another major upgrade! Now you'll be able to make a &6maximum of 512 eu/t&r out of the new &bHV Steam Turbine&r! Aside from the increase in energy production four-fold (again), it acts just like the LV and &bMV Steam Turbine&r."
+		""
+		"  You'll need to use a new set of cables for HV now. You'll need to use &bAluminum&r or &bKanthal&r cables to be able to transfer this new HV tier of power."
+	]
+	quest.04A69DE982F47E64.title: "HV Steam Turbine"
+	quest.069382B7A2FC7D35.quest_desc: [
+		"Will &6calcify&r and &close&r efficiency over time to a minimum of &e33%&r efficiency when not using &bDistilled Water&r. "
+		""
+		"Using an &bAxe&r on the &bBoiler&r will reset its calcification."
+	]
+	quest.069382B7A2FC7D35.quest_subtitle: "Uses Solar Energy instead of Fossil Fuel."
+	quest.0729CB454B970201.quest_desc: [
+		"  This is the &bBronze Drill&r. This will give you the main ores that you'll need to expand further."
+		""
+		"  Check the outputs in &6EMI&r and make sure you know that the drill has a chance of breaking, so don't just make 1."
+	]
+	quest.0729CB454B970201.title: "Bronze Drill"
+	quest.07FE9074247583EE.quest_desc: [
+		"  Now, you might have noticed I said \"usually\" when talking about interacting with the controller. This means items and &6fluids cannot be inputted or outputted from the controller&r, but information can; in the sense of statistics. Looking into the controller you will see a few things: Shape Validity, Status, Progress, Recipe Base, and Recipe Current."
+		""
+		"  The Shape Validation will let you know if the &6multiblock is built correctly or not&r. It will not tell you if you are missing or have too many hatches on the multiblock, so you need to decide that for yourself. Keep in mind that multiblock structures &omay&r share blocks with one another so long as these overlapping block do NOT contain a hatch."
+		""
+		"  Status will let you know the current status of the Multiblock. If it's idle or if it's active."
+		""
+		"  Progress will show you the progress, slowly building a percent to 100%. Depending on the speed of the process, the faster the percent will rise."
+		""
+		"  Recipe Base shows the &6base recipe energy/steam consumption&r. Depending on what you're making, it uses a minimum amount of energy/steam, but it can use more to speed up the process. This doesn't happen on steam machines so I won't got too far into it now."
+		""
+		"  Recipe Current is the&6 current amount of energy/steam being actually consumed&r."
+	]
+	quest.07FE9074247583EE.title: "Multiblock Controllers"
+	quest.08C3213E848BFD0C.quest_desc: [
+		"The &bOverdrive Module&f will &6prevent&f the efficiency of an &belectric machine&f from going down, but &6force&f the machine to use &cfull power&f all the time, even if it isn't &6processing&f anything."
+		""
+		"The effiency &owill&r reset if the recipe the machine is &6processing&f changes."
+	]
+	quest.091C2772ED417247.quest_desc: [
+		"  Now that you're producing energy in the &6medium voltage tier&r, you'll need to make sure your machines can accept that new found power."
+		""
+		"  Normally, &6cables wont even connect to machines if they aren't of the same tier&r. But, by placing an &bAdvanced Machine Hull&r (or higher tier) into the slot in the top right of the machine, you'll have upgraded the machine to the tier of power it associates with it."
+		""
+		"  By default, electric machines are already at the &bBasic Machine Hull&r tier and there is no need to put &bBasic Machine Hulls&r into the slot. I'll show you which hulls are for which power tier."
+		""
+		"  &6Make sure you check for which machines &oactually&r&6 need the upgrades&r so you aren't wasting resources on machines that don't really need the extra boost."
+	]
+	quest.091C2772ED417247.title: "Hull Upgrades"
+	quest.0AC7D844C55119E1.quest_desc: [
+		"  This is no &bMonkey Wrench&r, but you better hope you can move like one in the future."
+		""
+		"  Using a &bWrench&r, you can &6rotate&r &oalmost&r &bany machine&r by &6right-clicking&6 and &rpick up&r&o almost&r any &bpipe&r, &bfluid&r or &bnot&r."
+		""
+		"  You can &6shift-right-click&o on a &bmachine&r to &6configure&r the &boutput side&r. When you're &6holding&r the &bWrench&r, you can &6hover&r over any face of the &bmachine&r and you'll get a &bgrid&r of sorts. &6Shift-rick-clicking&o on the &bmiddle square&r will set the &boutput face&r to the side the &bgrid&r is on. Doing so to the rectangles will &6place the output&r to the face &690&r degrees relative to the corner elected to allow for &6configuration&r in hard to reach spaces. Finally the small &bsquares&r in each corner will set the output to the &bopposite&r side of the grid."
+		""
+		"  Remember, you cannot &6break&r the machine using the &bWrench&r, it WILL &6destroy&r it and you &6wont&r get it back. Just use your trusty &bPickaxe&r instead."
+	]
+	quest.0AC7D844C55119E1.title: "Wrench"
+	quest.0B2FF8169FD3812D.quest_desc: [
+		"  &bSteel Hatches&r have &6double the capacity of bronze hatches&r, increasing one inventory slot to 2, and increasing a multi-block's max steam usage rate from 2 EU/t to 4 EU/t. As long as there is a single steel fluid input hatch receiving steam, your entire multi-block is upgraded to a \"steel tier.\""
+		""
+		"  Allowing multiblocks to use 4 EU/t means exactly what you think it does, it doubles the top speed of the processes."
+		""
+		"  A &bSteel Boiler&r will produce twice as much steam as a bronze one. That means it will max out at &o16 EU/t&r instead of 8. The &bSteel Water Pump&r will also produce twice as much &bWater&r as it's bronze counterpart, so a max of 250mb of &bWater&r fro every adjacent water source for up to 2000mb of &bWater&r every 5 seconds."
+	]
+	quest.0B2FF8169FD3812D.quest_subtitle: "Waiting for Something to Hatch?"
+	quest.0B2FF8169FD3812D.title: "Steel Hatches"
+	quest.0C6D0B1C1AF75292.quest_desc: [
+		"  Winston? You're god damn right."
+		""
+		"  The &bChemical Reactor&r can be used as an enclosed machine to take advantage of the&6 chemical reaction between substances&r in this world to make new things."
+		""
+		"  The &bChemical Reactor&r will encourage these reactions and keep them isolated so you won't be hurt or get sick from released fumes, liquids, or solids."
+		""
+		"  Now, what do you say? Let's get cookin'."
+	]
+	quest.0C6D0B1C1AF75292.quest_subtitle: "Say My Name!"
+	quest.0C6D0B1C1AF75292.title: "Chemical Reactor"
+	quest.0ED4263270D37EF6.quest_desc: [
+		"&eDiesel Accessories&r"
+		""
+		"  There's a few powerful &6diesel fueled&r tools and accessories that you can use to assist you in expanding your factory even more. Here there are:"
+		""
+		" &#8226; First is a &bDiesel Drill&r, a huge upgrade from your old steam drill. The difference is, this one you can't use a 3x3 function anymore, but you can &6toggle between Silk Touch and Fortune III&r with a simple shift right-click. The more powerful the fuel in it, the faster it'll mine."
+		""
+		" &#8226; Second is a &bDiesel Chainsaw&r. The chainsaw has the exact same functionality as the drill, but instead it's for cutting down trees and the like to replace your axe."
+		""
+		" &#8226; Third is a &bDiesel Jetpack&r. Yes, you heard me right. A jetpack. The &6stronger the fuel&r in it the &6faster you'll fly&r. Use your \"V\" key to toggle the jetpack on and off. Let your wings free and fly with the power of technology! &oAnd a bit of fuel...&r"
+	]
+	quest.0ED4263270D37EF6.title: "Diesel Accessories"
+	quest.1081BFCAB3F07FFF.quest_desc: [
+		"  Need a steamy upgrade? I know I do! The &bLarge Steam Boiler&r is an upgraded version of the smaller bronze and steel boilers. &6It uses fuel 8 times faster&r than the Furnace, but it produces &6256 mb/t of steam&r when at max temperature. Make sure you don't forget to provide it &bWater&r!"
+		""
+		"  The main block you'll need is &bBronze Plated Bricks&r, but you'll also need other blocks shown in your EMI. The &bLarge Steam Boiler&r is comprised of one layer of &bHeatproof Machine Casings&r with layers of &6Bronze Plated Bricks&r and &6Pipe Machine Casings&r."
+		""
+		"  The Controller is on the second layer, on top of the &bHeatproof Machine Casings&r. &6Don't forget you can use your &bWrench&r &6to show the shape of the multiblock and placement of the blocks needed for it&r. The required hatches must be placed on the bottom layer. You'll need a way to input water and a solid fuel, as well as a way to extract &bSteam&r."
+	]
+	quest.1081BFCAB3F07FFF.title: "Large Steam Boiler"
+	quest.1094111FB9512D75.quest_desc: [
+		"  There are three &bSmall Diesel Generators&r that are the beginning of power generation via fluids or gases. You can use your EMI to check for how much EU will be produced per millibucket of each type of fuel."
+		""
+		"  The &bLV Diesel Generator&r will produce up to 64 eu/t, the &bMV Diesel Generator&r will produce up to 256 eu/t, and the &bHV Diesel Generator&r will produce up to 1024 eu/t."
+		""
+		"  &bDiesel Generators&r &6will only use fuel when they need to&r, so don't worry about wasting fuel when you aren't actually using any power. Although, if you need a constant supply of energy, you can put these fluid fuels into the &bLarge Steam Boiler&r (and higher tiers of of it) instead of only items."
+		""
+		"  A fully heated &bLarge Steam Boiler&r &6will produce the same amount of energy as a &bMV Diesel Generator&r would produce using the same quantity of fuel."
+	]
+	quest.1094111FB9512D75.title: "Diesel Generator"
+	quest.135FBE79D4415F15.quest_desc: [
+		"  Before you even ask, the answer is no. These &bnukes&r do &onot&r explode. These are nukes without it's detonator. "
+		""
+		"  These are used explicitly for use in the &bImplosion Compressor&r."
+	]
+	quest.135FBE79D4415F15.title: "Legalized Nuclear Bomb"
+	quest.141E3D92CBA9F1B3.quest_desc: [
+		"  This is a new electric machine that uses centripetal force to &6separate mixtures and items made of multiple materials into separate items&r."
+		""
+		"  In simple terms, it splits items by spinning them very fast. For example, you can use it to make &bCarbon Dust&r by centrifuging &bCoal Dust&r to unlock a better recipe for &bSteel&r and &bSilicon&r."
+	]
+	quest.141E3D92CBA9F1B3.title: "Centrifuge"
+	quest.156575F76CAB51A0.quest_desc: [
+		" You have reached &dINFINITY&r. "
+		""
+		"You are not bound by what you can and cannot make any longer. "
+		""
+		"Your &6capabilities&r are now near &blimitless&r. "
+		""
+		"Use your &dUniversally Useable Matter&r to &6duplicate&r anything you desire; with one &dlimits&r. "
+		""
+		"Remember, &dmatter&r cannot be created from &bnothing&r, so trying to &6duplicate&r highly &bcompressed&r blocks or a &bbackpack&r full of &bitems&r will be a fruitless endeavor. "
+		""
+		"Other than that, you are free to do as you please. Use this new found &6power&r wisely!"
+	]
+	quest.156575F76CAB51A0.quest_subtitle: "Legal Duplication"
+	quest.156575F76CAB51A0.title: "&dReplicator (MK I)"
+	quest.162DD68C3B91FC5E.quest_desc: [
+		"  We have a lot to cover."
+		""
+		"  Cable networks have hard limitations on the amount of energy they will pull into the network depending on the tier. you can see a few stats below..."
+		""
+		"    Max Transfer Rate: 256 EU/t"
+		"    Material: Tin"
+		""
+		""
+		"    Max Transfer Rate: 1024 EU/t"
+		"    Material: Electrum"
+		""
+		""
+		"    Max Transfer Rate: 8192 EU/t"
+		"    Material: Aluminum"
+		""
+		""
+		"    Max Transfer Rate: 65536 EU/t"
+		"    Material: Annealed Copper"
+		""
+		""
+		"  Now, the input and transfer rate is hard capped, but the discharge rate is infinite. This mean, for example, a LV cable network can provide more than 256 EU/t for a short amount of time. The larger the cable network, the larger the internal cable buffer. All this \"stored\" energy can be discharged almost instantaneously if given a place to go to."
+		""
+		"  Do keep in mind that &6each tier of cable will &oonly&r &6connect to it's respective tier electric machine&r. A LV cable will not connect to steam machines, MV machines, or HV machines. The method that each machine uses to process and use electricity is different depending on the strength of the power it receives."
+		""
+		"  If you want to transfer more energy than the cable tier allows you to, you can either create multiple cable networks or use &bTransformers&r. &bTransformers&r allow you to step up or step down your power. This means, for example, &6you can take LV power and turn it into HV power and vice versa&r."
+		""
+		"  As you'll see, an &oX&r to &oY&r transformer will connect to &oY&r cables on its output side and &oX&r cables on its 5 input sides. &6You can use your &bWrench&r &6to configure which side the output is&r."
+		""
+		"  Cables follow the same rules that fluid and item pipes follow. Using a &bWrench&r on them will disconnect connections and shift right clicking will break them, this time losing the power in that specific section of cable network."
+		""
+		"  P.S. Cables from Modern Industrialization, connected to any medium that accepts FE power, will 10x the power from EU to FE. There is an upgrade to this down the line, so look out for it!"
+	]
+	quest.162DD68C3B91FC5E.title: "Energy Transfer"
+	quest.163BCEEEE08F3898.quest_desc: [
+		"  The &bPolarizer&r, well, polarizes stuff! What this means is that it's ||electrons|| are lined up and thus the metal you feed into it becomes magnetic."
+		""
+		"  &bPolarized Rods&r don't have the most uses, but &6using them for the automation of motors is perfect&r!"
+		"{image:modern_industrialization:block/machines/polarizer/overlay_front_active width:32 height:32 align:center}"
+	]
+	quest.163BCEEEE08F3898.title: "Polarizer"
+	quest.164F4710E109F7F2.quest_desc: [
+		"  Time for that beautifully shining &bOrange Ingot&r? You'll need to grab some of the &bCopper&r and &bTin&r dust you get from the &bForge Hammer&r to make it. It's a simple mixture of &63:1&r &bCopper&r to &bTin&r in your crafting grid. Once you &6progress&r, you'll find a way to produce this mixture more &6efficiently&r since you're spilling some &bdust&r making it on hand."
+		""
+		"  Now that you're entering the &aSteam Age&r with this &bBronze&r, I'll give you some &6tips&r on the &bmachines&r you'll be making. Remember that &bSteam Machines&r will accept inputs from &6any side&r, be it&b items, steam or another fluid&r. You can &6lock&r their slots by &6clicking&r on the &bpadlock&r looking button in the &binterface&r. "
+		""
+		"&6Locked&r slots will make sure the machine &6only&r accepts one type of &bitem&r or &bfluid&r per slot."
+		""
+		"  Every &bmachine&r has an &boutput side&r as well, and you can &6enable&r &bauto-output&b from inside the &rinterface&r. Using your trusty &bWrench&r you can &6adjust&r the output side with ease!"
+		""
+		"  If you don't want so &bmany items&r in the slots at a time, &6use&r that &bScroll Wheel&r of yours to &6adjust&r the maximum number of &bitems&r stored at a time."
+		""
+		"  &cP.S.&r Right clicking on a &bsteam machine&r with &7gunpowder&r will double it's &6speed&r and &6steam consumption&r. Keep that in mind when looking at recipes. That &7gunpowder&r may just save you a trip to hell."
+	]
+	quest.164F4710E109F7F2.title: "Your First Bronze"
+	quest.16AAEB122CDC1A46.quest_desc: [
+		"{image:modern_industrialization:block/machines/mixer/overlay_top_active width:32 height:32 align:center}"
+		"  A sleek bronze Casing with a shining metal bowl where mixing blades are lowered into to &6mix&r up a plethora of different things! You can &6mix dusts&r with a higher output since you wont be spilling any anymore."
+		""
+		"  It doesn't only mix dusts, but also fluids. Example: &eLubricant&r!"
+	]
+	quest.16AAEB122CDC1A46.title: "Bronze Mixer"
+	quest.16E5B09AA7E6A487.quest_desc: [
+		"  &bConveyor Belts&r are used to move items around within your machines."
+		""
+		"  They use &bMotors&r to turn and &bRubber Sheets&r as a platform to move."
+		""
+		"  &6You should automate these&r."
+	]
+	quest.16E5B09AA7E6A487.quest_subtitle: "All Aboard the Item Express!"
+	quest.16E5B09AA7E6A487.title: "Conveyor Belts"
+	quest.176524D0E4475298.quest_desc: [
+		"  With your freshly drilled &bCrude Oil&r you can make a large array of items, however &6you will need to refine it to use it&r. Currently it's pretty useless in an industrial sense."
+		""
+		"  That's where the &bDistillery&r comes into play! &6You can refine or &odistill&r &6fluids into it's lighter parts&r. With this &bDistillery&r you can only refine down to one fluid at a time."
+		""
+		"  Just keep working, soon enough you'll be able to extract many fluids at once."
+	]
+	quest.176524D0E4475298.title: "Distillery"
+	quest.186F257352F2E844.quest_desc: ["  This machine calls for a whole 'nother level of strength. Time to put that new &bTitanium&r you've made to use. The &bPressurizer&r allows you to pressurize &bWater&r &6into &bHP&r&6, or &bhigh pressure, water&6 and &r&bSteam&r &6into &bHP Steam&r. It also works the other way around to depressurize the fluids. The &bPressurizer&r also &6allows you to collect &bLiquid Air&r &6via the &bAir Intake&r, plus it's much more efficient than the &bVacuum Freezer&r."]
+	quest.186F257352F2E844.title: "Pressurizer"
+	quest.18DED87B3E23350F.quest_subtitle: "Can run recipes of any electric multiblock machine provided to it in batches."
+	quest.1910E0D1BB24E94D.quest_desc: [
+		"To produce &eenergy&r, the &bSolar Panel&r needs a matching tier &bPhotovoltaic Cell&r in its &6inventory&r."
+		""
+		"By supplying &9Distilled Water&r to the &bSolar Panel&r, the &bPhotovoltaic Cell&r in its slot will last &a2x&r as long!"
+		""
+		"&eEnergy generation&r rates are determined by how high the &6sun&r is in the &bsky&r and if the &bsky&r is &avisible&r."
+	]
+	quest.1910E0D1BB24E94D.quest_subtitle: "Be better for the &aenvironment&r!"
+	quest.1910E0D1BB24E94D.title: "Solar Panels"
+	quest.1987DF7742136DC4.quest_desc: [
+		"  Remember when I said the &bDistillery&r could only output one type of fluid per cycle? Well, this is your upgrade!"
+		""
+		"  &6You can choose how many layers you'd like to, up to 9&r, and it'll output one fluid &oper layer&r!"
+		""
+		"  To choose which size you want to have the &bDistillation Tower&r set to, use the selector in the top left of it's screen. Happy Distilling!"
+	]
+	quest.1987DF7742136DC4.title: "Distillation Tower"
+	quest.1AE719655A757BF1.quest_desc: [
+		"  The drill that will push you into the far bounds of technology."
+		""
+		"  Made of that super light yet strong &bTitanium&r from before, you'll be able to power your reactors and enter the quantum age."
+	]
+	quest.1AE719655A757BF1.title: "Titanium Drill"
+	quest.1C25114D2AF71C35.quest_desc: [
+		"  Using &bIndustrial TNT&r, the &bImplosion Compressor&r is able to compress the dusts and ingots of the most resistant materials. This includes &bTungsten&r, &bBlast-proof Alloy&r, &bBeryllium&r and finally &bDiamonds&r! Some of those materials will be very important for your journey into nuclear fission."
+		""
+		"  Now, you've probably noticed that in your journey, you've been able to make &bBlast-proof Alloy Plates&b and &rTungsten Nuggets&r within your everyday compressor, despite it being a pretty inefficient process. Well now, using the &bImplosion Compressor&r, you'll be able to do it faster and even more efficient!"
+	]
+	quest.1C25114D2AF71C35.title: "Implosion Compressor"
+	quest.1CA2825FFA775BBE.quest_desc: [
+		"  This is a new electric machine that uses strong electric currents to split materials into different parts."
+		""
+		"  Most notably, you can &6split &bWater&r &6into it's two major components: &bHydrogen&r &6and &bOxygen&r."
+		""
+		"  This process is called&6 Electrolysis&r and it works by using electric current to split ||ionic compounds|| into their elements."
+	]
+	quest.1CA2825FFA775BBE.title: "Electrolyzer"
+	quest.1CC910880728D896.quest_desc: [
+		"  Did you have fun with &bNuclear Fission&r? Well, it's time for &bNuclear Fusion&r!"
+		""
+		"  Instead of splitting a heavy, unstable nucleus into two lighter nuclei, &bfusion&r will combine together two light nuclei which in turn releases vast amounts of energy."
+		""
+		"  This energy can be contained and used to produce &bHelium Plasma&r, an extremely energy dense fluid that can be used as the best power source in the world."
+		""
+		"  You can combine gaseous fuels such as &bDeuterium&r, &bTritium&r and/or &bHelium-3&r to produce various combinations of Helium Plasma, Tritium, Deuterium, and Hydrogen."
+		""
+		"  Keep in mind, this fusion takes a lot of energy to start going, but can produce much more as a result."
+	]
+	quest.1CC910880728D896.title: "Fusion Reactor"
+	quest.1D57C823A1F0203C.quest_desc: [
+		"  I've got the &bperfect tool&r for you, it'll just take a bit of &6time to craft&r. It's a &bSteam Mining Drill&r! These can &6mine&r in a &6much larger&r grid than regular ol' &bPickaxes&r can; &63x3&r to be exact. Not only will you be able to &6mine more efficiently&r, but you'll be able to make beautiful &btunnels&r with ease."
+		""
+		"  Want to know something cool? This &bdrill&r &6&osilk touches&r blocks as well! I know right? It's awesome! This way you'll get &6&oway&r more bang for your buck when you pair it with the &bForge Hammer&r since you can &6crush&r &bFull Ores&r instead of starting from &bRaw Ores&r."
+		""
+		"  One small... would you call it a &6downside&r? You need to &6power&r it. For some reason, the &bdrill&r itself &6never&r actually &6breaks&r, but you'll need to feed it &bWater&r and some type of &bBurnable Fuel&r; for example &bCoal&r or &bLignite&r. Just &6Right Click&r the &bfuel items&r into your &bdrill&r within your &binventory&r to&6 fill it up&r!"
+		""
+		"  &aTips&r: &6Carry around&r a &bWater Bucket&r. Not only will this allow you to &6negate fall damage&r if you're skilled enough, but also as a source of &bWater&r to run your &bdrill&r off of. For some reason, depending on the use case, this world's &bWater Sources&r are infinite; use this to your advantage."
+		""
+		"  &aMore Tips&r: &6Crouch to mine&r &bsingle blocks&r, if you need! They'll still be in their &6Silktouch&r form, but it wont do the &63x3&r, incase you need to mine &bblocks&r more delicately."
+	]
+	quest.1D57C823A1F0203C.quest_subtitle: "Cling, Clang, Cling, Clang!"
+	quest.1D57C823A1F0203C.title: "Steam Mining Drill"
+	quest.20A093E5684D2E30.quest_desc: [
+		"  Even more advanced electronics! These circuit boards are aluminum based and allow for more complex machinery."
+		""
+		"  I'd recommend &6automating&r the &bElectronic Circuit&r as you'll &6need them&r for many of the &bMV upgrades&r as well as the new machines you'll be able to make."
+	]
+	quest.20A093E5684D2E30.title: "&bThe Midgame Age!"
+	quest.215606B3A894512E.quest_desc: [
+		"  Do you see those percents on each ore in the quarry outputs?"
+		""
+		"  Those are &oindividual&r percents. &6Each ore has it's own individual chance&r. "
+		""
+		"  If you place a bronze item output hatch, you'll only get one ore, but the chance that another ore is produced is still there, and thus it could be lost if there is no space for it."
+		""
+		"  &6Place multiple item output hatches, preferably steel, to increase maximum possible outputs.&r"
+	]
+	quest.215606B3A894512E.title: "Quarry Tips"
+	quest.21584ECDBB6907DE.quest_desc: [
+		" &aCalm down, Calm down!&r A &btick&r is the &6shortest amount&r of time that can be &6recorded&r."
+		""
+		"  It's about a &620th&r of a &bsecond&r. The world runs off these \"&bticks&r\" and you can &6use them&r to &byour&r advantage!"
+	]
+	quest.21584ECDBB6907DE.title: "What's a Tick?"
+	quest.21939E58707A7756.quest_desc: ["The &bLarge Macerator&r can &6macerate&r recipes in batches of up to 8 at a &a25%&r deduction of &eEU&r cost. Keep in mind, it &cwont&r do a mix of recipes, they &omust&r be the same type. If not, each type of recipe will be &6split&r into their batch of a max of 8."]
+	quest.21939E58707A7756.quest_subtitle: "Can run recipes in batches."
+	quest.21EDEEE1A1B82B53.quest_desc: ["  Processing the &bIridium Ore&r from your &bTitanium Drills&r, you can begin to produce &bIridium Dust&r which will be needed for &bSuperconductor Dust&r, a material capable of extraordinary power transfer and storage."]
+	quest.21EDEEE1A1B82B53.title: "Raw Iridium"
+	quest.22420EF3089DD7F6.quest_desc: ["  Your first taste of true &4a&r&6u&r&et&r&2o&r&am&r&ba&r&3t&r&9i&r&do&r&5n&r! This is also the first machine you'll want to make a lot of. The &bAssembler&r allows you to &6automate&r almost all recipes related to the machines. Check your &bEMI&r to see which recipes you are allowed to automate using the &bAssembler&r. You can setup up to &63 recipes in one assembler&r by using &6slot locking&r. Just remember that it will make as many of the first recipe before it moves onto the next, &6so never put multiple high demand recipes into a single assembler&r."]
+	quest.22420EF3089DD7F6.title: "Assembler"
+	quest.2472B23BC0C28C6C.quest_desc: [
+		"  Remember those \"ticks\" we talked about? How each one is a twentieth of a second?"
+		""
+		"  Well you've reached &othat&r level of machine processing. Given enough power input, each machine recipe, no matter the machine, as long as it's electric, will only take a single tick."
+		""
+		"  Do be aware that the amount of power these machines can use will be immense, so use them wisely."
+	]
+	quest.2472B23BC0C28C6C.title: "Quantum Upgrade"
+	quest.24A4F1AA0BFFE867.quest_desc: [
+		"  This is the electric version of the &bSteam Blast Furnace&r. The &bElectric Blast Furnace (aka EBF)&r uses induction heating to produce extreme temperatures, unlocking a plethora of new recipes. Plus, it's &6overclock is bounded to 128 EU/t by default&r, just like other multi-block electric machines."
+		""
+		"  The &bElectronic Blast Furnace&r or &bEBF&r is made out of purely &bHeatproof Machine Casings&r and &bCupronickel Coils&r. &6Use your &bWrench&r &6to see the mutliblock's shape and block placement&r. The controller is placed on the bottom layer and hatches and be placed on the top or bottom layer."
+		""
+		" &6Don't forget to add an Energy Input Hatch(es)&r or the EBF won't have any energy to run! Start with a &bLV Energy Input Hatch&r and you can upgrade to higher tier &bEnergy Input Hatches&r when you have the appropriate power tiers. Remember, the &bLV Energy Input Hatch&r will only connect to &bLV cables&r."
+		""
+		"  You'll also need item or fluid input hatches and item or fluid output hatches based off of the use case of the &bEBF&r. Check your EMI for it's new recipes and choose hatches based off your needs."
+	]
+	quest.24A4F1AA0BFFE867.quest_subtitle: "It's Getting &cHot&r In Here"
+	quest.24A4F1AA0BFFE867.title: "Electric Blast Furnace"
+	quest.250D1E2BFE6E0D50.quest_desc: [
+		"  Upgrade those &bLarge Steam Boilers&r already! "
+		""
+		"  This advanced version can &6quadruple the &bSteam&r &6production to 1024 mb/t of steam at full temperature&r."
+		""
+		"  It's a little taller so remember to use the &bWrench&r to see multiblock shape and block placement."
+	]
+	quest.250D1E2BFE6E0D50.quest_subtitle: "Double Efficiency!"
+	quest.250D1E2BFE6E0D50.title: "Advanced Large Steam Boiler"
+	quest.268B0F87CC431A51.quest_desc: ["- Needs &bCasing&r for cable tier to convert from (&eLV&r by default)."]
+	quest.268B0F87CC431A51.quest_subtitle: "Easier Conversion!"
+	quest.27A396E8628B269E.quest_desc: ["  The &bGold Drill&r produces ores and building blocks that you'd expect to find in the confines of the Nether Region."]
+	quest.27A396E8628B269E.title: "Gold Drill"
+	quest.29D05998ADC8ACF5.quest_desc: ["  A super advanced processor to push the overclocking capabilities of your machine to it's limits and soon enough, something a bit more... &cNuclear&r."]
+	quest.29D05998ADC8ACF5.title: "Processing Unit"
+	quest.29E6ED5067027F08.quest_desc: [
+		"- Can run &6recipes&r of any single block &eelectric&r crafting &bmachine&r provided to it in batches."
+		""
+		"- Batch size is determined by the amount of &bmachines&r provided to it."
+		""
+		"- Insert &eelectric&r crafting machines to run in &6parallel&r."
+	]
+	quest.2B1717F5D6E20B79.quest_desc: [
+		"  With an &bElectrolyzer&r, enough time and power, and your freshly made &bSingularity&r, you can extract large amounts of energy through &bQuantum Hawking Radiation&r in the form of &bUniversally Usable Matter&r, also known simply as &dUU Matter&r."
+		""
+		"  This is, the very &ofabric&r of the &9universe&r."
+	]
+	quest.2B1717F5D6E20B79.title: "UU Matter Bucket"
+	quest.2B4BFD88DF1A934D.quest_desc: ["  It is a third the weight of steel, yet ductile and highly malleable. It's made from heating up and extracting it from &bBauxite&r. You can do this in your newly formed &bEBF&r. &6Make sure to automate &bAluminum&r production as you'll end up using A LOT of it&r."]
+	quest.2B4BFD88DF1A934D.quest_subtitle: "It's Gonna be Al, Right?"
+	quest.2B4BFD88DF1A934D.title: "Aluminum"
+	quest.2BC64E1EB1BCE14D.quest_desc: [
+		"  The &bStainless Steel Drill&r is a new drill that &6can be used in &oboth&r&6 the &bQuarry&r &6and the &bOil Drilling Rig&r."
+		""
+		"  For the quarry, you'll obtain some new rare resources that will be extremely beneficial for the future."
+		""
+		"  In the drilling rig, you'll be able to pump out &bShale Oil&r which can be distilled into &bHelium&r, &bSulfuric Crude Oil&r, and &bSulfuric Naphtha&r."
+	]
+	quest.2BC64E1EB1BCE14D.title: "Stainless Steel Drill"
+	quest.2C4CA092A557205E.quest_desc: [
+		"  1985 called from 2015, it wants it's anti-gravity technology back!"
+		""
+		"  The &bGravi-chestplate&r uses a superconductor cable coiled around a platinum core to produce a space altering field around the player, inverting the gravitational pull, enough so to lift a player off the floor."
+		""
+		"  It's controlled by regulating the power to the coils facing in multiple directions. Since it affects the gravitational field, you wont take any fall damage, though due to the components that make up the &bGravi-chestplate&r being fragile and complex, it won't protect against other types of damage."
+		""
+		"  &6It uses EU (and a lot of it) to function&r, so it can be charged by right clicking a block that can output energy."
+	]
+	quest.2C4CA092A557205E.title: "Gravi-chestplate"
+	quest.2D4170B5AD28DCBF.quest_desc: [
+		"  The best single block &bDiesel Generator&r you can make. &6It'll output up to 1024 eu/t&r from any of the various fluids listed in your EMI."
+		""
+		"  Now, this isn't the best generator that'll take fluid fuels. There's such thing as a &bLarge Diesel Generator&r which will ask for &bHighly Advanced Machine Hulls&r; though it's worth it when you hear &6it'll generate up to 16,384 eu/t&r!"
+	]
+	quest.2D4170B5AD28DCBF.title: "HV Diesel Generator"
+	quest.2F66F85A601AC908.quest_desc: [
+		"{image:modern_industrialization:block/machines/macerator/overlay_top_active width:32 height:32 align:center}"
+		"  Now you can &6hemiquadruple your ores&r! This means you'll have a 50% chance to extract an extra dust from your &bRaw Ore&r. You can also turn a &bFull Ore&r and extract a lot of &bRaw Ore&r from it using the &bMacerator&r."
+		""
+		"  Being a &bMacerator&r, you can throw some metal items in to &6recycle them back into dusts&r, good way to get a little bit out of an adventuring trip or an old tool."
+	]
+	quest.2F66F85A601AC908.title: "Bronze Macerator"
+	quest.2FB2FE782B1103D6.quest_desc: [
+		"  Your second multi-block: The &bSteam Blast Furnace&r! This one is nearly the same, with the only difference being it's one taller and uses &bFire Clay Bricks&r instead of regular &bBricks&r."
+		""
+		"  Use the same trick with the &bWrench&r &6to show you the block placements&r and don't forget you'll need only &63 hatches&r this time. They're the same as the &bCoke Oven&r, without the fluid output hatch, not yet anyway!"
+		""
+		"  You will use this &bSteam Blast Furnace&r to make your first &bSteel&r!"
+	]
+	quest.2FB2FE782B1103D6.title: "Steam Blast Furnace"
+	quest.3143EA7DF096CE61.quest_desc: [
+		"  A new machine! This one can only be made in steel; it really needs that extra strength."
+		""
+		"  The &bPacker&r can perform simple crafts for you. You can &6automate double ingots, pipes, many types of bricks, and more&r! Check your EMI for more recipes."
+	]
+	quest.3143EA7DF096CE61.title: "Steel Packer"
+	quest.325D7C592E2FB05A.quest_desc: [
+		"  The &bultimate&r state of solid matter, compressed so tightly until it is a point of infinite density and gravity."
+		""
+		"  Although, you can contain this to use it for various applications. You are holding... &bInfinity&r."
+	]
+	quest.325D7C592E2FB05A.title: "Singularity"
+	quest.3357A8B614D477B6.quest_desc: [
+		"  A new machine, the little sibling to the &bPacker&r! This one can only be made in steel; it really needs that extra strength."
+		""
+		"  &6The unpacker can perform simple crafts for you, such as converting dusts into tiny dusts&r. Check your EMI for more recipes."
+	]
+	quest.3357A8B614D477B6.title: "Steel Unpacker"
+	quest.335BFE2345DAFE03.quest_desc: [
+		"For the &bElectric Chain Saw&r:"
+		"- Press &6Left Shift&r and &6Right Click&r to swap between &bFortune/Looting&r and &bSilk Touch&r."
+		""
+		"For the &bElectric Mining Drill&r:"
+		"- Press &6Left Shift&r and &6Right Click&r to swap between &bFortune&r and &bSilk Touch&r."
+		""
+		"For &bBoth&r:"
+		"- Use &6Alt&r and &6Mouse Scroll&r to change mining speeds."
+	]
+	quest.335BFE2345DAFE03.title: "Electric Accessories"
+	quest.33D0760B5FEF7C46.quest_desc: [
+		"  &oThis&r is the ultimate generator."
+		""
+		"  The &bPlasma Turbine&r uses &bHelium Plasma&r to produce energy, &6up to 1,048,576 EU/t&r. This is about 100,000 EU per millibucket of &bHelium Plasma&r, and a &6consumption rate of about 11 mb/t&r."
+		""
+		"  As long as you know how to care for your factory, you will &onever&r need to worry about power ever again."
+	]
+	quest.33D0760B5FEF7C46.title: "Plasma Turbine"
+	quest.3761B64135EA94C0.quest_desc: [
+		"  You'll finally be able to construct a &bNuclear Reactor&r that uses different types of &bFluid&r and &bFuel Rods&r to produce various gaseous fuels, &bSteam&r in massive quantities, and radioactive materials."
+		""
+		"  The &bNuclear Reactor&r is not for the faint of heart. You'll need to keep watch on the gauges for thermal and neutron interaction when constructing one of four different sized reactors."
+		""
+		"  If you give up with developing your knowledge and patterns on the reactor, come back to me and I'll explain all about how it works."
+		""
+		"  For now, I wish you luck!"
+	]
+	quest.3761B64135EA94C0.quest_subtitle: "That's Mr. Fusion to You!"
+	quest.3761B64135EA94C0.title: "Nuclear Reactor"
+	quest.37F3ABF113A1D399.quest_desc: [
+		"  The &bLV Energy Input Hatch&r is like a giant electrical inlet. As I've stated before, you need an &bEnergy Input Hatch&r to power multi-block electrical machines."
+		""
+		"  Do remember that you can upgrade the multiblock machine by replacing the &bEnergy Input Hatch&r with an upgraded tier, increasing the maximum power rate for recipes and increasing overall overclocking capabilities."
+	]
+	quest.37F3ABF113A1D399.title: "LV Energy Input Hatch"
+	quest.39CF27CAC4EE33DB.quest_desc: [
+		"- Press &6Right Click&r on &9Still Water&r or &9Flowing Water&r to fill."
+		""
+		"- Place &8Fuel&r inside the &bChainsaw&r using &6Right Click&r."
+		""
+		"- Toggle &eSilk Touch&r with &6Left Shift&r + &6Right Click&r."
+	]
+	quest.39CF27CAC4EE33DB.quest_subtitle: "Brrrr!"
+	quest.39FCE3168C26B863.quest_desc: [
+		"  Once you have a stockpile of this &bSuper Powered Coal&r, you can start diverting away from you bronze machines. They're slow and such a bright orange; blinding to the eyes."
+		""
+		"  Making &bCoal Coke&r is just heating &bCoal&r with the absence of oxygen. It doesn't allow it to burn and thus puts it through a destructive distillation process. Once you have it though, you'll be able to start working on &bSteel&r and steel machines speeding up processing times at the cost of more steam being used."
+		""
+		"  &6You'll be aiming for the creation of a &bQuarry&r soon so that it can dig for you&r. Imagine never needing to go mining for ores ever again!"
+	]
+	quest.39FCE3168C26B863.title: "Coke"
+	quest.3C3519AFEBBAEC70.quest_desc: [
+		"  &bPistons&r use rotational force to extend a rod out with a lot of possible force."
+		""
+		"  This is very useful for compressing things, as well as packing things. &6You should automate these&r."
+	]
+	quest.3C3519AFEBBAEC70.quest_subtitle: "Metal Punch"
+	quest.3C3519AFEBBAEC70.title: "Pistons"
+	quest.3DF6354F7AC8D4A4.quest_desc: ["  Now that you can start your journey into the chemicals branching off from &bCrude Oil&r, you can produce upgrades for your machines! All of the electric machines you've used up until now have has a maximum overclock of 32 eu/t. Now, you can increase that maximum, depending on the tier of upgrade you use. Check your EMI to see how much EU each upgrade raises."]
+	quest.3DF6354F7AC8D4A4.title: "Upgrades"
+	quest.3E903D71F66D3DB4.quest_subtitle: "N2O Turbo-Charged!"
+	quest.3E903D71F66D3DB4.title: "&6Replicator (MK II)"
+	quest.3F0097CCBA02804C.quest_desc: ["The &bLarge Steam Furnace&r can &6smelt&r recipes in batches of up to 8 at a &a25%&r deduction of &eEU&r cost. Keep in mind, it &cwont&r do a mix of recipes, they &omust&r be the same type. If not, each type of recipe will be &6split&r into their batch of a max of 8."]
+	quest.3F0097CCBA02804C.quest_subtitle: "The Bigger, The Better!"
+	quest.40148704F9175B05.quest_desc: [
+		"Ensuring you have keybinds set, &rhold&r shift over the &bHelmet&r piece to see which key you must press to enable &5Night Vision&r."
+		""
+		"Do the same for the &bLeggings&r and &bBoots&r for &5Speed Boost&r and &5Step Boost&r respectively."
+		""
+		"The armor can also be &6Dyed&r and &6Trimmed&r."
+	]
+	quest.40148704F9175B05.quest_subtitle: "Tech Fashion!"
+	quest.40148704F9175B05.title: "&aNano Suit"
+	quest.40915337B7E427F8.quest_desc: ["  A cable capable of transferring enough energy for your entire factory, &b10 times over&r, within a single cable. This is &bpeak&r power transfer."]
+	quest.40915337B7E427F8.quest_subtitle: "I'm a Real Live Wire"
+	quest.40915337B7E427F8.title: "Superconductor Cable"
+	quest.41D1344A31FEA6DF.quest_desc: [
+		"  &bKanthal Coils&r are a new type of coiling for your &bEBF&r, &6allowing for a higher power draw&r and the capability to generate even more heat. Be careful, don't want to get burned. Ouch!"
+		""
+		"&bKanthal Coils&r wont automatically cause your &bEBF&r to start heating up to the &6higher temperatures&r. The controlling computer has the capabilities, you just need to adjust values to allow it to take full advantage of the upgrade."
+		""
+		"  In this case, it's been simplified for you. Enter the &bcontroller GUI&r and in the &6top left corner&r, you'll see a set of arrows. Press the one pointing to the right and it will change the settings from &bCupronickel&r tier to &bKanthal&r tier."
+		""
+		"  Easy, right?"
+	]
+	quest.41D1344A31FEA6DF.title: "Kanthal Coils"
+	quest.42D6CC67AB29D7DA.quest_desc: [
+		"  You've finally reached &bDigital Circuits&r!"
+		""
+		"  This is where the true power begins. Increase the overclocking capabilities of your machines even further than before, brand new ores from the quarries."
+		""
+		"  &6You should automate these&r."
+	]
+	quest.42D6CC67AB29D7DA.title: "&9The Lategame Age"
+	quest.439D48E9647FC8C2.quest_desc: [
+		"  Steam machines need, well, &bSteam&r! The way to get it is to make a &bSteam Boiler&r! The &bSteam Boiler&r will gradually consume almost any &6fuel&r you give it to heat up. When it's at a high enough temperature, it will begin to produce &bSteam&r so long as there is &bWater&r in it's &6internal tank&r; if not, you'd be wasting fuel."
+		""
+		"  Or you can put a &bWater Bucket&r into a &bFurnace&r to obtain a &bSteam Bucket&r. In this world is seems that fluid containers keep any fluid inside of them, having a persistent temperature and bound to the confined container; so don't worry about it condensing down into water or escaping. With &bSteam&r pre-boiler, you can make a &bCompressor&r to save on &bBronze Plates&r."
+		""
+		"  It might seem a bit expensive at this current moment, but remember that you can practically triple your ores using the &bForge Hammer&r. Not to mention that in due time, when you have your first two machines, it will become more than twice less expensive than before!"
+		""
+		"  The &bBoiler&r will automatically begin to produce and send the &bSteam&r to adjacent machines or connected pipes, &6up to 8 millibuckets per tick.&r"
+		""
+		"  Bronze machines can only process recipes up to 2 energy unit per tick. You might see it as \"2 EU/t\" when using the machines. 1 millibucket of steam is the same as 1 EU; I for one am really glad it's a very simple conversion cause I'm not a fan of math. Once your &bBoiler&r is at maximum temperature, it can supply 4 machines with &bSteam&r simultaneously! Now &othat's&r hot."
+	]
+	quest.439D48E9647FC8C2.title: "Bronze Boiler"
+	quest.43DB398322EF99BD.quest_desc: [
+		"The &bSteel Alloy Smelter&r allows you to create &9alloys&r from two different ingots &owithout&r needing to &6mix&r the dusts in a &bMixer&r first. Check your &dEMI&r to see which alloys can be made this way."
+		""
+		"You can also use any &6combination&r of equal amounts of resources to create an alloy, such as &anine&r tiny dust + &anine&r nuggets."
+		""
+		"What you &ocannot&r do is &anine&r tiny dust + &aone&r ingot, as the amounts are different."
+	]
+	quest.43DB398322EF99BD.quest_subtitle: "Mixing &etwo&r materials together for &6alloys&r."
+	quest.454FF6E2926163F7.quest_desc: [
+		"  Honestly, I cant blame you. Though if you've come here after you've made your super awesome reactor out of curiosity, I commend you. But for those of you that needed the help, why don't we begin? Pay attention!"
+		""
+		"  The &bNuclear Reactor&r can produce 100s of times more EU/t than diesel can. It comes in several sizes from &bsmall&r to &bextreme&r."
+		""
+		"  How it works under the hood can be a bit overwhelming, nevertheless, you don't need to understand the details to be able to design a powerful reactor."
+		""
+		"  &6Note that in this world, the &bNuclear Reactor&r &6&ocannot&r &6explode, emit radiation, or otherwise damage the surrounding area&r. The only thing that it can damage is the items you put in it if the temperature gets too high, which I'll elaborate on more later. You should feel free to experiment, and enjoy your new life as a nuclear scientist!"
+		""
+		"  The main component is the &bNuclear Casing&r which is made with &bNuclear Alloy&r; a mix of &bcadmium&r, &bberyllium&r and &bblast-proof alloy&r."
+		""
+		"  The upper part of the structure accepts &bNuclear Item&r or &bFluid Hatches&r or just simple casings. &6Those are the inputs and outputs of the reactor&r."
+		""
+		"  Each hatch has one input, whether that be either item or fluid, and two outputs. The input slots will form a grid, displayed in the reactor's control panel (accessible by right-clicking on the controller)."
+		""
+		"  &6Each hatch has a temperature&r and stores heat which can be dissipated in several ways. The heat will naturally move to an adjacent hatch or to the outside if the hatch is on the edge, though this  will cause the heat to be lost. The speed of this process is equal to the hatch's content's heat transfer coefficient, which can be found in your EMI, multiplied by the temperature difference. The heat can also be extracted in a fluid hatch by &bproducing steam&r. &6A temperature above an item's maximum temperature will destroy it&r."
+		""
+		"  The core nuclear reactor elements are &bneutrons&r. Those are produced by the &bnuclear fuel&r. There are two type of neutrons, &bfast&r and &bthermal&r: the fast carry energy while the thermal do not. Neutrons move in a straight line until they encounter an element or exit the reactor, though for fast neutrons, their energy is then lost. The flow of neutrons is shown in the reactor control panel."
+		""
+		"  When a neutron encounters a non-empty hatch, two things can happen, being either the neutron is &babsorbed&r or &bscattered&r. &6A scattered neutron will randomly change direction&r. If the scattered neutron is fast, it has a chance of slowing down, becoming a thermal one. This transfers the energy from the neutron to the hatch in the form of heat. An &6absorbed neutron stops its course and also transfers its energy if it was a fast neutron&r."
+		""
+		"  The number of absorbed neutrons in a single hatch can be seen in the control panel. The probability for each processes is shown in your EMI. Those will strongly depend on the hatch's content and the neutron type, either fast or thermal.&6 Nuclear fuels absorb thermal neutrons far better&r."
+		""
+		"  When a neutron, either fast or thermal, is absorbed in nuclear fuel, more neutrons are generated. Those are always fast neutrons and have random direction. &6Their generation is accompanied by the direct release of energy in the form of additional heat in the hatch&r."
+		""
+		"  Above a certain threshold, the number of generated neutrons will decrease with the temperature until reaching zero. &6This process wastes some energy, but guarantees the stability of the reactor&r. The number of generated neutrons, effective efficiency, the direct energy and temperature threshold are all shown in your EMI."
+		""
+		"  Each nuclear component has maximum number of absorptions. &6When reached, the item is either destroyed or transformed into a depleted variant&r. This is particularly useful for nuclear fuel because some part of &6the &bU238&r &6is transformed into &bPlutonium&r &6in its depleted variant&r, meaning some of it can be transformed back into fuel."
+		""
+		"  The same thing happens for fluids, where a bit of fluid is transformed after each neutron absorption. This can be used to mass produce useful isotopes like &bdeuterium&r and &btritium&r. In both cases, the outcome is shown in your EMI."
+	]
+	quest.454FF6E2926163F7.title: "Give up?"
+	quest.45F0194CF3DCA5DD.quest_desc: [
+		"  &bLignite&r is a truly abundant &bfuel source&r that can be &6found&r in the world. It's pretty much &bCoal&r, but brown. "
+		""
+		"  It has a lower carbon content despite &6burning&r the same amount as &bCoal&r; created the same way too."
+		""
+		"  This means you can keep your real &bCoal&r for other &6projects&r or &6recipes&r, keep &bLignite&r to &6fuel&r your &bSteam Mining Drill&r instead."
+	]
+	quest.45F0194CF3DCA5DD.title: "Lignite Coal"
+	quest.469641436BC858D3.quest_desc: [
+		"  Have you read the &bBook&r? Well, I'll give you a rundown of this &6technological journey&r anyway; you'll thank me."
+		""
+		"{image:modern_industrialization:item/guidebook width:32 height:32 align:center}"
+		"  What you'll be doing is practically &o&aModern Industrialization&r&r, using a plethora of different mechanics from &bLogistics&r to &6Distillation&r, allowing for &6Total Automation&r. I'll give some &6examples&r:"
+		""
+		"  You'll have access to powerful &bLogistics Tools&r such as &bMultipart Items&r and &bFluid Pipes&r as well as &bEnergy Cables&r. This means up to three of each can go into a &bSingle Block&r!"
+		""
+		"  You won't ever need to go mining for resources again as you'll have the ability to construct &bQuarries&r for continuous resource generation!"
+		""
+		"  You'll eventually need to &6power&r all your &bMachines&r, &bSteam&r or not. You'll have to use &bSteam&r and &bOil&r processed into &bDiesel&r through &6Distillation&r, &6Nuclear Fission&r, and at total mechanical dominance: &6Fusion&r. You can boost energy transfer rates using &bHigher Voltages&r."
+		""
+		"  Never want to &6manually&r put together a &bGear&r, &bHammer&r or &bRod&r ever again? Good thing this is a world for you to design. You'll be able to make a machine for just about anything! Total automation is completely possible and you can do it while flying around with a &bGravi-Chestplate&r."
+		""
+		"  &aAre you ready for the journey of a lifetime?&r &cTime to get going!&r"
+		""
+		"  &6P.S&r. If you ever get stumped up with a machine, go ahead and hold that &bGuide Book&r of yours while &6hovering&r over a &bMachine&r or &bMultiblock&r. It'll give you some &bextra info&r."
+	]
+	quest.469641436BC858D3.title: "Modern Industrialization"
+	quest.4722157BC8D3B965.quest_desc: [
+		"  A sleek bronze casing with a vicious spinning blade inside will give you even &6better cutting ratios&r than you ever experienced using your &bForge Hammer&r. &aTime for extra bolts, gears, rings, and rods!&r"
+		""
+		"  Just remember that you can't cut for free. This machine runs off &bSteam&r and uses &bLubricant&r to make clean cuts without overheating. &bLubricant&r can be produced inside of the &bMixer&r, using &bRedstone&r and one of the various hydrocarbons. I suggest checking out the &bCoke Oven's&r products. You may find something to &6mix&r with &bRedstone&r!"
+	]
+	quest.4722157BC8D3B965.title: "Bronze Cutting Machine"
+	quest.475DC864A0BC0F1F.quest_desc: [
+		"  As stated before, you can upgrade your bronze machines into steel machines."
+		""
+		"  Create the &bSteel Upgrade&r and install it onto any bronze machine &6using a smithing table or packer&r."
+	]
+	quest.475DC864A0BC0F1F.title: "Faster Machines?"
+	quest.47A8E5DC11E846C5.quest_desc: [
+		"  Before you can even make &bBronze&r, you'll need to put together a &b&oForge Hammer&r. It's pretty much a bigger &bAnvil&r, but it's just got a flat top so you won't be able to use it as an anvil."
+		""
+		"  Use it to make the basics such as &bPlates&r and &bRods&r. Though, &6slamming&r the &bForge Hammer&r with an &bIngot&r can be very &6inefficient&r and you'll get &6less&r out of your &bIngot&r due to &6damaged&r or &6chipped&r metal."
+		""
+		"  If you &6craft yourself&r one of the various &bHammers&r, you'll &6increase the efficiency&r and your output; AKA the ratio increases. Once you use a &bHammer&r, more formations of that &bIngot&r will open up to you. Be smart with your resources as the &bHammer&r won't last forever as its durability will eventually &6diminish&r till it breaks."
+		""
+		"  You can also use the &bForge Hammer&r as a way of getting more &bRaw Ore&r out of your &bOres&r. Again, using the &bHammer&r will give you &6more&r at the cost of durability."
+	]
+	quest.47A8E5DC11E846C5.title: "Poor Man's Compressor"
+	quest.47C1108CF46C81FC.quest_desc: ["  &6The &bAluminum Drill&r &6allows you to drill for &bCrude Oil&r. It'll find pockets of oil in the ground and automatically pump it up through the drill and to the surface."]
+	quest.47C1108CF46C81FC.title: "Aluminum Drill"
+	quest.4980C231ECDB0BF2.quest_desc: ["  The &bSteel Drill&r gives you the rest of the &6more commonly used ores&r that you'll need for further progression in your journey to total automation, but also in your journey of the world itself. Check your EMI for all the possible outputs."]
+	quest.4980C231ECDB0BF2.title: "Steel Drill"
+	quest.4A5466E364B85AEF.quest_desc: [
+		"  Darker and cooler than Iron... Plus about 1000 times stronger. It's time to make some &bSteel&r! Use that coal coke you produced earlier and crush it down to a pile of dust. Then, combine that with iron dust to get your &bUncooked Steel Dust&r. Remember, &6using the &bMixer&r will increase your output.&r"
+		""
+		"  Now, remember the finest steel has to go through the hottest fire; so we'll be using the &6Steam Blast Furnace&r to reach the extreme temperatures required to melt down the powdered mixture and fuse them together."
+		""
+		"  Now that you have obtained steel, you can upgrade your bronze machines with &bSteel Machine Upgrades&r. Steel machines can process recipes up to 4 EU/t and will &6process recipes at twice the speed than normal&r as long as the energy usage doesn't go above 4 EU/t. With this higher roof of energy usage, you might be able to make new things now."
+	]
+	quest.4A5466E364B85AEF.title: "&7Your First Steel!"
+	quest.4D5787F48ECCB000.quest_desc: [
+		"The &bSteel Brewery&r can &6automatically&r brew &afour&r potions at a time at a considerably quicker rate than a regular brewing stand."
+		""
+		"Remember it needs &eBlazing Essence&r in place of &6Blaze Powder&r."
+	]
+	quest.4D5787F48ECCB000.quest_subtitle: "Brews &e4&r potions at a time."
+	quest.50BFFEAF92B72965.quest_desc: [
+		"  The &bCoke Oven&r is a large structure, larger than only a single block. This &6multiblock structure&r is used to take &bCoal&r or &bCoal Dust&r and heat it in a location with the absence of air and producing &bCoal Coke&r and occasionally some &bCreosote Oil&r. You can use &bCreosote Oil&r for the production of &bLubricant&r and &bCoal Coke&r for &bSteel Ingots&r or just a powerful &6fuel&r lasting 4x as long!"
+		""
+		"  The &bCoke Oven&r block here is the role of the &6central controller&r. You will place other blocks surrounding it in a pattern that will eventually construct the full multiblock."
+		""
+		"  Every multiblock is managed by a controller, but you usually cannot interact with the controller directly but instead through &6input and output hatches&r that you place in certain spots of the multiblock. "
+		""
+		"  You'll need a &bFluid Input Hatch&r to handle an input of &bSteam&r to power the &bCoke Oven&r, an &bItem Input Hatch&r as a way to input the &bCoal&r and an &bItem Output Hatch&r to output the &bCoke&r. A &bFluid Output Hatch&r is not required and will allow the multiblock to run without it, but with it you can extract the &6Creosote  Oil&r from the &bCoal&r. Normally if you don't have enough of the correct hatches required, the multiblock will not function."
+		""
+		"  If you hold a &bWrench&r, a projection of the blocks needed for the rest of the multiblock will show after you've placed down the controller block. The specific holographic block will disappear if the correct block is placed, or will turn red if the block in that location is incorrect."
+		""
+		"  If you hold a hatch in your hand, there will be green highlighted location where the hatches can go. If you placed the hatch outside of those highlighted locations, the multiblock will not recognize the hatch."
+		""
+		"  One the &bCoke Oven&r controller states that it's shape is valid, you can &6insert&r &bSteam&r though the &bFluid Input Hatch&r. Puting &bCoal&r or &bCoal Dust&r into the &bItem Input Hatch&r will allow the &bCoke Oven&r to fire up and start producing. If it doesn't work, retrace your steps and find out what went wrong."
+	]
+	quest.50BFFEAF92B72965.title: "Coke Oven"
+	quest.5401B18217772D6C.quest_desc: [
+		"  You can use the &bHeat Exchanger&r to, well, exchange heat. You can recover the &bHigh Pressure Water&r to be used for another cycle. "
+		""
+		"  Remember that &6pressurizing &bWater&r &6into &bHigh Pressure Water&r &6costs a lot of energy&r, but the turbine wont necessarily give it back."
+	]
+	quest.5401B18217772D6C.title: "Heat Exchanger"
+	quest.54BF53CB70636C3F.quest_desc: [
+		"  Enslave the Winter season in a supercooled aluminum frame. How does removing air cool something down? I'll give an example using water:"
+		""
+		"  By evacuating the chamber, pressure drops below the boiling point; but the water then loses energy through boiling and evaporation, then freezes."
+	]
+	quest.54BF53CB70636C3F.title: "Vacuum Freezer"
+	quest.5676B5FD97FB10C3.quest_desc: [
+		"  This is the &bBronze Furnace&r and despite it being just as slow as your regular &bFurnace&r, the difference is that this one &6uses &o20&r&6 times less fuel&r!"
+		""
+		"  Thank &bSteam&r for being so efficient!"
+	]
+	quest.5676B5FD97FB10C3.quest_subtitle: "It's Smelting Time!"
+	quest.5676B5FD97FB10C3.title: "Bronze Furnace"
+	quest.58CA2853D9620919.quest_desc: [
+		"The &bBasic Upgrade&f is an upgrade you can &6create&f with only simple components to &9speed&f up your machines."
+		""
+		"Each adds to the max &eenergy&f cap by &62EU/t&f."
+	]
+	quest.5C8D7BD3DA61109F.quest_desc: [
+		"  You've reached the electric version of the &bQuarry&r! This one allows you to produce ores at an even faster rate than before &oand&r gives you more options for drills."
+		""
+		"  &6Now you'll be able to use &bSteel&r&6, &bGold&r&6, &bStainless Steel&r&6, and &bTitanium Drills&r to finish off the rest of the ore production and truly fulfill my promise of never needing to mine for ores ever again!"
+		""
+		"  The structure is &oexactly&r the same as the &bSteam Quarry's&r aside from needing an &bEnergy Input Hatch&r instead of a &bFluid Input Hatch&r.&6 Make sure you've automated your &bBronze Drills&r&r by now or else it'll be a pain to keep your quarries running."
+	]
+	quest.5C8D7BD3DA61109F.quest_subtitle: "Resources Go BRRR!"
+	quest.5C8D7BD3DA61109F.title: "Electric Quarry"
+	quest.5DD99224F29419C1.quest_desc: [
+		"  This is your moment to produce true &6electricity&r using the &bSteam&r you've been making up until now. The &bLV Steam Turbine&r will convert every &61 mb of Steam into 1 EU&r of energy and will do this up to 32 times a tick, making a &6maximum energy production rate of 32 EU/t&r."
+		""
+		"  The &bSteam Turbine&r will automatically send electricity to any machine connected directly to its output side. It will also only connect to cables placed on its output side."
+		""
+		"  The first one you'll make is of the Low Voltage tier. There are higher tier steam turbines, but you aren't quite there yet."
+	]
+	quest.5DD99224F29419C1.title: "LV Steam Turbine"
+	quest.61748279816F2D7F.quest_desc: [
+		"The &bRedstone Control Module&f is meant to let you control your machines with &credstone&f! &6Right Clicking&f the module in your hand will &6change&f it's setting from the machine requiring a &9High Signal&f to &9Low Signal&f and vice versa. Then place it into the &credstone&f module slot."
+		""
+		"What this means is:"
+		"- While the setting is on &9High Signal&f, the machine will only &6function&f if it is given a &credstone&f signal. No &credstone&f signal will turn it off."
+		"- While the setting is on &9Low Signal&f, the machine will only &6function&f if it is not given a &credstone&f signal. A &credstone&f signal will turn it off."
+	]
+	quest.62B245A23CA62678.quest_desc: [
+		"  The &bpipes&r you'll &6craft&r to &6transport&r the many &bliquids&r and &bgasses&r &6can only contain a single&r type of &bfluid&r at a time and they &6wont&r connect directly to &6empty&r &bpipes&r or &bcontainers&r and &bmachines&r automatically, so make sure to use that &bWrench&r to &6configure&r them properly."
+		""
+		"  You can &6forcefully&r initiate a connection by &6right-clicking&r the center of the &bpipe&r with your &bWrench&r, or by &6right-clicking&r a &bblock&r with a &bpipe&r in &byour hand&r; thought it *6won't consume&r the &bpipe&r, just connect it."
+		""
+		"  &aEvery tick&r, "
+		"the &bFluid Pipe&r will &6attempt&r to evenly &6extract&r from all &bconnected blocks&r and then attempt to &6insert&r that into all other &bconnected blocks&r. "
+		""
+		"  &aFew other tips you might enjoy&r:"
+		"Use them wisely and abuse them to your &6complete advantage&r: You can have up to &63&r &bpipes&r in a&b single block&r for ultimate compact-ness! Luckily, &bpipes&r of &bdifferent color&r will &6&onever&r &6connect&r. Finally, &6right-clicking&r a &bpipe&r with a &bWrench&r will &6change&r the connection type and &6shift-right-clicking&r will drop the pipe."
+		""
+		"  &cTime for some spaghetti?&r"
+	]
+	quest.62B245A23CA62678.title: "Fluid Transportation"
+	quest.640DB4139DF8AFA4.quest_desc: [
+		"  The &bQuantum Circuit&r. The pinnacle of computing technology."
+		""
+		"  The beginning to the most advanced machines you could possibly imagine."
+		""
+		"  From here on out, &athere are no limits to your imagination&r."
+	]
+	quest.640DB4139DF8AFA4.title: "&dThe Endgame"
+	quest.64287B360B07BEBB.quest_desc: ["- &6Connect/Chain&r up to a &cmax&r of &a64&r machines of choice together."]
+	quest.64287B360B07BEBB.quest_subtitle: "Chain Them Up!"
+	quest.660EFAF144F70749.quest_desc: [
+		"  Time for a major upgrade! Previously you've only been able to produce electricity at 32 eu/t per turbine using the &bLV Steam Turbine&r, but now you'll be &6able to make a maximum of 128 eu/t&r out of the brand new &bMV Steam Turbine&r! Aside from the increase in energy production four-fold, it acts just like the &bLV Steam Turbine&r."
+		""
+		"  One thing to keep in mind is that &6you wont be able to use the same cables as you were able to before&r. Now you'll need to use &bCupronickel&r or &bElectrum&r cables to be able to transfer this new MV tier of power."
+	]
+	quest.660EFAF144F70749.title: "MV Steam Turbine"
+	quest.668453E081A6C57B.quest_desc: [
+		"  Forged in the heart of supernovas, &bTitanium&r has the highest strength to weight ratio. It's as strong as steel for 45% less mass, making it extremely powerful for its weight."
+		""
+		"  It isn't magnetic, corrosive, nor does it conduct electricity so using it for parts of a machine can be extremely beneficial."
+		""
+		"  Its pink color comes from something?"
+	]
+	quest.668453E081A6C57B.title: "Titanium"
+	quest.67F2212453B81446.quest_desc: [
+		"  A mixed ingot containing an ingot of &bIridium&r sandwiched between two ingots of &bBlast-proof Alloy Ingots&r, ready to produce an extremely strong &bIridium Plate&r."
+		""
+		"  Speaking of sandwiches, it looks a bit &btasty&r, doesn't it?"
+	]
+	quest.67F2212453B81446.title: "Mixed Iridium Ingot"
+	quest.698235E8EC974A7F.quest_desc: [
+		"This machine does a better job at making &bCurved Plates &rand &bRings&r than the &6Compressor."
+		""
+		"It's &6speedier&r and &6better&r. Does crafts at double the speeds!"
+	]
+	quest.698235E8EC974A7F.quest_subtitle: "Is this gym equipment?"
+	quest.6BD625E5CA469914.quest_desc: [
+		"  The last step before total overclock, the most tame but beneficial upgrade, the one and only &bHighly Advanced Upgrade&r!"
+		""
+		"  Each and every one of these added to your machine &6increases its max possible power consumption by 512 eu/t&r. Only a single one of these bad boys will boost your machine to the moon!"
+		""
+		"  Use them wisely, they are pretty pricey to make."
+	]
+	quest.6BD625E5CA469914.title: "Highly Advanced Upgrade"
+	quest.6C96992416059AC4.quest_desc: [
+		"For the &bUltimate Laser Drill&r:"
+		"- It can be &6dyed&r!"
+		"- Press &6Left Shift&r + &6Right Button&r to swap between &5Fortune/Looting&r and &5Silk Touch&r."
+		"- Use &6Alt&r + &6Mouse Scroll&r to change mining speed."
+		"- Press &6Y&r while held or &6Right Button&r while hovered to toggle &53x3 mining&r."
+	]
+	quest.6C96992416059AC4.quest_subtitle: "The \"Do It All\" Tool!"
+	quest.6CA941AE132445D9.quest_desc: [
+		"  &bMachine Hulls&r contain the main electronics to allow machines to run. There are different tiers to machine hulls, each allowing you to upgrade your machines. The &bBasic Machine Hull&r is the base of every machine that takes LV power."
+		""
+		"  If you want your machine to accept MV power, you must upgrade it using an &bAdvanced Machine Hull&r. You can do this by &6right clicking the machine with the upgraded hull&r in your hand or by placing it in the top right slot of the machine's GUI that seems to have a small isometric cube depiction. You can do the same with higher tier hulls as they will allow for higher tier power sources."
+	]
+	quest.6CA941AE132445D9.quest_subtitle: "The Electronic Heart"
+	quest.6CA941AE132445D9.title: "Machine Hulls"
+	quest.6EBFFFB567687A1E.quest_desc: [
+		"  &bStainless Steel&r is just about as strong as regular steel, but &bStainless Steel&r will never corrode, rust, or stain. This is the first metal that you can't just throw into a furnace and call it a day."
+		""
+		"  &6You need to create its dust&r from four ingredients: &bIron&r, &bChromium&r, &bManganese&r, and &bNickel&r. Then, after you heat it up to extreme temperatures in your EBF, you need to use the &bVacuum Freezer&r to cool down the red hot ingot to be usable. "
+	]
+	quest.6EBFFFB567687A1E.title: "Stainless Steel"
+	quest.6EF133E0EC49BC33.quest_desc: [
+		"  Flexible, non-conductive, and strong. &bRubber&r will be a major part of every electric machine. You can produce it by &6mixing&r &bPaper&r with either &bSynthetic Oil&r or &bSynthetic Rubber&r. Mix the &bCoke Dust&r you made with &bWater&r in a &bMixer&r to produce &bRaw Synthetic Oil&r. Use a &bSteam Blast Furnace&r to produce these two fluids. &bSynthetic Rubber&r is more difficult to obtain, &6but will yield more rubber per sheet of paper&r."
+		""
+		"  Remember that you'll need a &olot&r of &bRubber Sheets&r in the long run, so you'll need to make them constantly. Note that you can use &bWood&r to &6grind down&r and turn into &bWood Pulp&r which can then be turned into &bPaper&r with a high output yield."
+	]
+	quest.6EF133E0EC49BC33.title: "Rubber"
+	quest.6F57A2A5AA6E3F49.quest_desc: [
+		"  Oil is a black flammable liquid that forms in the ground over a very &overy&r long time. &6Using a &bDrilling Rig&r&6, you can drill into the ground and extract this oil&r."
+		""
+		"  Oil isn't the only thing that can be pumped from the floor though. Using different types of drills decide which fluid to mine for. Use your EMI to see which drills mine for which fluid."
+		""
+		"  P.S. Don't forget, this is one of those very complex multiblocks. &6Use your &bWrench&r &6to show you how to build it&r!"
+	]
+	quest.6F57A2A5AA6E3F49.quest_subtitle: "Sweet, Sweet Oil"
+	quest.6F57A2A5AA6E3F49.title: "Oil Drilling Rig"
+	quest.6F63B60042A7F6AE.quest_desc: [
+		"{image:modern_industrialization:block/machines/compressor/overlay_front_active width:32 height:32 align:center}"
+		"  This is the &bCompressor&r and probably the first machine you'd want to build. Being able to &6turn ingots into plates&r at a 1:1 ratio is extremely helpful during the steam age."
+		""
+		"  You save on resources and won't need to burn through hammers just to collect enough plates for your first project."
+		""
+		"  It can also take those &bDouble Ingots&r that you can stack with the forge hammer into &o2&r plates, saving steam and time."
+	]
+	quest.6F63B60042A7F6AE.title: "Bronze Compressor"
+	quest.6F6898DC529D1120.quest_desc: [
+		"  Remember when I told you that you could build a &bQuarry&r so that you'd never need to go mining for resources again? Well, this is the time! It wont get you &oeverything&r, but it will get you a lot of the main ores. &oEverything&r comes later."
+		""
+		"  The &bSteam Quarry&r is a steam powered multiblock machine that uses different &6drills&r that you install onto it to dig deeper than bedrock and retrieves ores straight from the below, whatever might be under there."
+		""
+		"  You can check which ores this method will provide by checking EMI. I recommend that you have multiple&b Steam Blast Furnaces&r running before you begin putting together the &bQuarry&r because &6this will use a LOT of &r&bSteel&r."
+	]
+	quest.6F6898DC529D1120.title: "Infinite Resources?"
+	quest.707EBB99AA8F4C57.quest_desc: [
+		"  Time to make your first wire; long strings of highly conductive metals for the transfer of electricity. &6You can combine these plain wires with your &bRubber Sheets&r &6to make &bCables&r. "
+		""
+		"  Make sure you put enough rubber around those wires, don't want to get shocked!"
+	]
+	quest.707EBB99AA8F4C57.quest_subtitle: "Wire! Zap!"
+	quest.707EBB99AA8F4C57.title: "Steel Wiremill"
+	quest.71776A6A96EB037C.quest_desc: [
+		"  &bFire Clay&r is a &6mixture&r of plain river &bClay&r and &bBrick Dust&r as a tempering agent, then &6re-fired&r to harden it to make it withstand extreme temperatures."
+		""
+		"  To make the &bBrick Dust&r you can use your good ol' &bForge Hammer&r and use it to &6crush&r plain &bBricks&r. You can also use other machines like the &bMacerator&r to make this process more efficient. "
+	]
+	quest.71776A6A96EB037C.title: "Fire Clay"
+	quest.7342F6461382E839.quest_desc: [
+		"You have &areached&r the final step to &binvincibility&r. "
+		""
+		"&bArmor&r infused with &dQuantum Technology&r to &6repel&r all &cphysical&r and &5magical&r attacks. "
+		""
+		"You cannot die, not even by a &6God's Smite&r. "
+		""
+		"You can now &6fly freely&r without the need of &eelectricity&r. "
+		""
+		"This &bset of armor&r interacts directly with the &dquantum realm&r to alter space and time surrounding you. "
+		""
+		"Theoretically, you sitll be &6stationary&r, and space will just be &6moving&r relative to you. --This-- is the &6power&r you wield."
+		""
+		" This &bsword&r can and will slice through &banything&r in it's path. "
+		""
+		"The edge of it's blade has the &aability&r to cleave through time and erase any &eentity&r you choose from existence. Use this &6power&r responsibly."
+	]
+	quest.7342F6461382E839.quest_subtitle: "True Power!"
+	quest.7342F6461382E839.title: "&dQuantum Armory"
+	quest.742A5BB44F257D8E.quest_desc: [
+		"  &bItem Pipes&r work just about the same as &bFluid Pipes&r, aside from &6they will transport items and is much more configurable&r. Just like &bFluid pipes&r, they will not connect to inventories by default, but you still can force a connection. If you right click a connection without a &bWrench&r, you'll see a filter."
+		""
+		"  This filter can be set to many different items at the same time and by default is set to whitelist. This means only items in the filter will be transported through the connection. Blacklist will disallow any items set to the filter to be transported through the connection."
+		""
+		"  Item pipes will insert items into higher priorities first, and transfer 16 items &6every 3 seconds&r, but can be upgraded with &bMotors&r for higher thoughput."
+	]
+	quest.742A5BB44F257D8E.title: "Item Transportation"
+	quest.7436F6599E2D79C1.quest_desc: [
+		"- Can by &6Dyed&r and &6Trimmed&r!"
+		""
+		"- Toggle &6Creative Flight&r by pressing &eN&r."
+	]
+	quest.7436F6599E2D79C1.quest_subtitle: "Gravi-chestplate but in black!"
+	quest.74C5FDC3B1E74586.quest_desc: [
+		"The &bFlux Transformer&r is a powerful machine that let's you practically &6multiply&r the type of energy called &eEU&r into the energy of &eFE&r. It's so powerful infact, it &6multiplies&r the power output by &a50&r (5x more than default)!"
+		""
+		"Keep in mind, you can't loop the &aenergy&r back around, it's a &cone-way&r process."
+	]
+	quest.74C5FDC3B1E74586.title: "Flux Transformer"
+	quest.7533E0212EFE326D.quest_subtitle: "When placed facing into a &ebeehive&r, &6honey&r will be extracted in &bfluid form&r."
+	quest.7593E582FA928061.quest_desc: [
+		"  This is the &bCopper Drill&r. This will give you &6stones and dirts&r, mostly used as building materials."
+		""
+		"  Check the outputs in EMI and make sure you know that &6the drill has a chance of breaking&r, so don't just make one."
+	]
+	quest.7593E582FA928061.title: "Copper Drill"
+	quest.768973710C811CB1.quest_subtitle: "Mark 2, Fashion and more Gadgets!"
+	quest.768973710C811CB1.title: "&aQuantum Nano Set"
+	quest.779C3C6B89AD2526.quest_desc: [
+		"  Electric machines work exactly the same as steam machines, except from the fact &6they require electricity to function instead of steam&r and they can progressively overclock recipes to up to 32 EU/t (for now)."
+		""
+		"  You can use your EMI to view the recipes for the electric versions of the machines you are already familiar with. The recipes are more complex and will require more specific machine oriented parts."
+		""
+		"  Your first main part will be the &bAnalog Circuits&r. This will be the main circuit for the LV machines as well as the base for high tier circuits and machines. &6You should automate this as soon as possible&r."
+		""
+		"  I strongly suggest that you begin to automate parts as soon as you possibly can. I'll let you know which parts you should automate as we come across them. Doing so will make electric machines practically free as you wont need to manually craft any components by yourself!"
+	]
+	quest.779C3C6B89AD2526.quest_subtitle: "Time for a Major Upgrade"
+	quest.779C3C6B89AD2526.title: "&eThe Electric Age!"
+	quest.791CAEBAE57EF0E1.quest_desc: ["  &bMotors&r take electricity and produce a rotational force. You'll use motors to create many of the machines and other components in the future. &6You should automate these&r."]
+	quest.791CAEBAE57EF0E1.quest_subtitle: "You Spin Me Right 'Round"
+	quest.791CAEBAE57EF0E1.title: "Motors"
+	quest.7AF270EF635B11CF.quest_desc: [
+		"  Created by &6compressing&r three of the strongest materials you've used in your journey up until now."
+		""
+		"- &bTungsten&r, a metal with an &6extremely high melting point and a density&r that cannot be beaten."
+		""
+		"- &bTitanium&r, a &6corrosion resistant&r, &6strong yet light weight&6 material."
+		""
+		"- &bStainless Steel&r, &6rust resistant&r to the extreme."
+		""
+		"  This is the strongest plate you will ever forge. "
+	]
+	quest.7AF270EF635B11CF.title: "Blast-proof Alloy Plate"
+	quest.7BDBE300D4B0B1F7.quest_subtitle: "Bone Meal Overflow!"
+	quest.7C0FA555C5FE00D1.quest_desc: [
+		"  &bRobotic Arms&r are ways to automatically move things around within a machine."
+		""
+		"  These can be very complex components and thus are made of &bSteel&r to stay strong and prevent internal damage."
+		""
+		"  &6You should automate these&r."
+	]
+	quest.7C0FA555C5FE00D1.quest_subtitle: "Beep Boop"
+	quest.7C0FA555C5FE00D1.title: "Robotic Arms"
+	quest.7D0CF81F7E703B71.quest_desc: [
+		"{image:modern_industrialization:block/machines/water_pump/overlay_front_active width:32 height:32 align:center}"
+		""
+		"  Wondering about automatic &bWater&r pumping are you? Good thing you can do nearly anything you want! A &bWater Pump&r will automatically collect &bWater&r and &6transfer it to adjacent blocks&r. Make sure to place water sources surrounding the pump horizontally, give it &bSteam&r, and it will start producing &bWater&r for 1 EU/t."
+		""
+		"  The &bBronze Water Pump&r will produce &6125mb of &bWater&r for every adjacent water source every 5 seconds&r, allowing for a maximum output of 1000mb every 5 seconds."
+	]
+	quest.7D0CF81F7E703B71.title: "Bronze Water Pump"
+	quest.7FD5FCEFE3697A7C.quest_desc: [
+		"For only a &omeasly&r &e8EU/t&r, the &bSteam Farmer&r can perform the following things:"
+		"- &6Tilling&r: When enabled, dirt blocks will be turned into farmland. This will not work unless water is supplied."
+		"- &6Hydrating&r: When supplied with water, tilled soil will be hydrated."
+		"- &6Harvesting&r: When there is enough output space provided, it will harvest fully grown crops and trees."
+		"- &6Plating&r: When supplied with crops or saplings, it will plant them on valid soil. Using different plating modes will plant them in different arrangements."
+	]
+	quest.7FD5FCEFE3697A7C.quest_subtitle: "What did the baby &ecorn&r say to the mama &ecorn&r?"
+}

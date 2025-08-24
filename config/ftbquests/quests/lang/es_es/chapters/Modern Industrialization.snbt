@@ -1,0 +1,924 @@
+{
+	quest.02272D430F08B1DC.quest_desc: [
+		"¡Ahora puedes hacer un tanque grande! Este es un multibloque de tanque que puede almacenar 64,000mb &opor&r bloque dentro del volumen total que ocupa el tanque, bloques de aire y sólidos."
+		""
+		"Cuando coloques un Tanque Grande, abre su GUI y mira en la esquina superior izquierda. Te permitirá elegir qué tamaño deseas."
+		""
+		"Una vez que hayas elegido, sostén tu llave de confianza y un holograma te mostrará dónde colocar los bloques."
+		""
+		"También usa una Escotilla de Tanque Grande. Funciona como otras escotillas, excepto que solo es un punto de acceso al tanque. Introducirá y extraerá de cualquier escotilla que coloques en él."
+	]
+	quest.026C88446512DDB8.quest_subtitle: "Puede ejecutar recetas de &eHorno de Coque&r en lotes."
+	quest.04A69DE982F47E64.quest_desc: [
+		"¡Hora de otra gran mejora! Ahora podrás hacer un &6máximo de 512 eu/t&r con la nueva &bTurbina de Vapor HV&r! Además del aumento de producción de energía cuatro veces (de nuevo), actúa igual que las turbinas de vapor &bLV&r y &bMV&r."
+		""
+		"Necesitarás usar un nuevo conjunto de cables para HV ahora. Necesitarás usar cables de &bAluminio&r o &bKanthal&r para poder transferir este nuevo nivel de potencia HV."
+	]
+	quest.04A69DE982F47E64.title: "Turbina de Vapor HV"
+	quest.069382B7A2FC7D35.quest_desc: [
+		"Se &6calcificará&r y &lperderá&r eficiencia con el tiempo hasta un mínimo de &e33%&r de eficiencia cuando no se use &bAgua Destilada&r."
+		""
+		"Usar un &bHacha&r en la &bCaldera&r restablecerá su calcificación."
+	]
+	quest.069382B7A2FC7D35.quest_subtitle: "Usa Energía Solar en lugar de Combustible Fósil."
+	quest.0729CB454B970201.quest_desc: [
+		"  Este es el &bTaladro de Bronce&r. Te dará los minerales principales que necesitarás para expandirte más."
+		""
+		"  Revisa los resultados en &6EMI&r y asegúrate de saber que el taladro tiene una posibilidad de romperse, así que no hagas solo 1."
+	]
+	quest.0729CB454B970201.title: "Taladro de Bronce"
+	quest.07FE9074247583EE.quest_desc: [
+		"  Ahora, quizás hayas notado que dije \"generalmente\" al hablar de interactuar con el controlador. Esto significa que los ítems y &6fluidos no pueden introducirse o extraerse del controlador&r, pero la información sí; en el sentido de estadísticas. Al mirar el controlador verás algunas cosas: Validez de la Forma, Estado, Progreso, Receta Base y Receta Actual."
+		""
+		"  La Validación de Forma te permitirá saber si el &6multibloque está construido correctamente o no&r. No te dirá si te faltan o tienes demasiadas escotillas en el multibloque, así que debes decidirlo por ti mismo. Ten en cuenta que las estructuras de multibloques &opueden&r compartir bloques entre sí siempre que estos bloques superpuestos NO contengan una escotilla."
+		""
+		"  El Estado te permitirá saber el estado actual del Multibloque. Si está inactivo o activo."
+		""
+		"  El Progreso te mostrará el progreso, aumentando lentamente un porcentaje hasta el 100%. Dependiendo de la velocidad del proceso, más rápido aumentará el porcentaje."
+		""
+		"  Receta Base muestra el &6consumo de energía/vapor base de la receta&r. Dependiendo de lo que estés haciendo, usa una cantidad mínima de energía/vapor, pero puede usar más para acelerar el proceso. Esto no ocurre en máquinas de vapor, así que no entraré en detalles ahora."
+		""
+		"  Receta Actual es la &6cantidad actual de energía/vapor que se está consumiendo realmente&r."
+	]
+	quest.07FE9074247583EE.title: "Controladores de Multibloques"
+	quest.08C3213E848BFD0C.quest_desc: [
+		"El &bMódulo de Sobremarcha&f &6evitará&f que la eficiencia de una &bmáquina eléctrica&f disminuya, pero &6forzará&f a la máquina a usar &cpoder completo&f todo el tiempo, incluso si no está &6procesando&f nada."
+		""
+		"La eficiencia &ose restablecerá&r si cambia la receta que la máquina está &6procesando&f."
+	]
+	quest.091C2772ED417247.quest_desc: [
+		"  Ahora que estás produciendo energía en el &6nivel de voltaje medio&r, necesitarás asegurarte de que tus máquinas puedan aceptar esa nueva potencia."
+		""
+		"  Normalmente, los &6cables ni siquiera se conectarán a máquinas si no son del mismo nivel&r. Pero, colocando un &bCasco de Máquina Avanzado&r (o de nivel superior) en la ranura en la parte superior derecha de la máquina, habrás actualizado la máquina al nivel de potencia asociado."
+		""
+		"  Por defecto, las máquinas eléctricas ya están en el nivel de &bCasco de Máquina Básico&r y no es necesario colocar &bCascos de Máquina Básicos&r en la ranura. Te mostraré qué cascos son para qué nivel de potencia."
+		""
+		"  &6Asegúrate de verificar qué máquinas &orealmente&r&6 necesitan las mejoras&r para no desperdiciar recursos en máquinas que realmente no necesitan el impulso extra."
+	]
+	quest.091C2772ED417247.title: "Mejoras de Casco"
+	quest.0AC7D844C55119E1.quest_desc: [
+		"  Esto no es una &bLlave Inglesa&r, pero mejor espera que puedas moverte como una en el futuro."
+		""
+		"  Usando una &bLlave&r, puedes &6rotar&r &ocasi&r &bcualquier máquina&r &6haciendo clic derecho&r y &rrecoger&r &ocasi&r cualquier &btubería&r, &bfluido&r o &bno&r."
+		""
+		"  Recuerda, no puedes &6romper&r la máquina usando la &bLlave Inglesa&r, la &6destruirás&r y &6no&r la recuperarás. Solo usa tu confiable &bPico&r en su lugar."
+	]
+	quest.0AC7D844C55119E1.title: "Wrench"
+	quest.0B2FF8169FD3812D.quest_desc: [
+		"  &bLas compuertas de acero&r tienen &6el doble de capacidad que las de bronce&r, aumentando una ranura de inventario a 2, y aumentando la tasa máxima de uso de vapor de una multibloque de 2 EU/t a 4 EU/t. Mientras haya una sola compuerta de entrada de fluido de acero recibiendo vapor, toda tu multibloque se actualiza a un \"nivel de acero\"."
+		""
+		"  Permitir que los multibloques usen 4 EU/t significa exactamente lo que piensas, duplica la velocidad máxima de los procesos."
+		""
+		"  Una &bCaldera de Acero&r producirá el doble de vapor que una de bronce. Eso significa que alcanzará un máximo de &o16 EU/t&r en lugar de 8. La &bBomba de Agua de Acero&r también producirá el doble de &bAgua&r que su contraparte de bronce, es decir, un máximo de 250mb de &bAgua&r por cada fuente de agua adyacente hasta 2000mb de &bAgua&r cada 5 segundos."
+	]
+	quest.0B2FF8169FD3812D.quest_subtitle: "¿Esperando que salga del cascarón?"
+	quest.0B2FF8169FD3812D.title: "Compuertas de Acero"
+	quest.0C6D0B1C1AF75292.quest_desc: [
+		"  ¿Winston? Tienes toda la maldita razón."
+		""
+		"  El &bReactor Químico&r puede usarse como una máquina cerrada para aprovechar la &6reacción química entre sustancias&r en este mundo para crear cosas nuevas."
+		""
+		"  El &bReactor Químico&r fomentará estas reacciones y las mantendrá aisladas para que no te lastimes o enfermes por los gases, líquidos o sólidos liberados."
+		""
+		"  Ahora, ¿qué dices? Pongámonos a cocinar."
+	]
+	quest.0C6D0B1C1AF75292.quest_subtitle: "¡Di Mi Nombre!"
+	quest.0C6D0B1C1AF75292.title: "Reactor Químico"
+	quest.0ED4263270D37EF6.quest_desc: [
+		"&eAccesorios Diésel&r"
+		""
+		"  Hay algunas herramientas y accesorios &6alimentados por diésel&r que puedes usar para ayudarte a expandir tu fábrica aún más. Aquí están:"
+		""
+		" &#8226; Primero está el &bTaladro Diésel&r, una gran mejora de tu viejo taladro de vapor. La diferencia es que este no puede usar una función 3x3, pero puedes &6alternar entre Toque de Seda y Fortuna III&r con un simple clic derecho mientras agachas. Cuanto más potente sea el combustible, más rápido minará."
+		""
+		" &#8226; Segundo está la &bMotosierra Diésel&r. La motosierra tiene la misma funcionalidad que el taladro, pero es para cortar árboles y similares, reemplazando tu hacha."
+		""
+		" &#8226; El tercero es un &bJetpack Diesel&r. Sí, me escuchaste bien. Un jetpack. &6Cuanto más fuerte sea el combustible&r que uses, &6más rápido volarás&r. Usa la tecla \"V\" para activar y desactivar el jetpack. ¡Deja libres tus alas y vuela con el poder de la tecnología! &oY un poco de combustible...&r"
+	]
+	quest.0ED4263270D37EF6.title: "Accesorios Diesel"
+	quest.1081BFCAB3F07FFF.quest_desc: [
+		"  ¿Necesitas una mejora caliente? ¡Yo también! La &bCaldera de Vapor Grande&r es una versión mejorada de las calderas más pequeñas de bronce y acero. &6Usa combustible 8 veces más rápido&r que el Horno, pero produce &6256 mb/t de vapor&r a temperatura máxima. ¡Asegúrate de no olvidar proporcionarle &bAgua&r!"
+		""
+		"  El bloque principal que necesitarás son los &bLadrillos Chapados en Bronce&r, pero también necesitarás otros bloques que se muestran en tu EMI. La &bCaldera de Vapor Grande&r está compuesta por una capa de &bCarcasas de Máquina Resistentes al Calor&r con capas de &6Ladrillos Chapados en Bronce&r y &6Carcasas de Máquina de Tuberías&r."
+		""
+		"  El Controlador está en la segunda capa, encima de las &bCarcasas de Máquina Resistentes al Calor&r. &6No olvides que puedes usar tu &bLlave Inglesa&r &6para mostrar la forma del multibloque y la colocación de los bloques necesarios&r. Las escotillas requeridas deben colocarse en la capa inferior. Necesitarás una forma de introducir agua y un combustible sólido, así como una forma de extraer &bVapor&r."
+	]
+	quest.1081BFCAB3F07FFF.title: "Caldera de Vapor Grande"
+	quest.1094111FB9512D75.quest_desc: [
+		"  Hay tres &bGeneradores Diesel Pequeños&r que son el comienzo de la generación de energía mediante fluidos o gases. Puedes usar tu EMI para ver cuántos EU se producirán por milibucket de cada tipo de combustible."
+		""
+		"  El &bGenerador Diesel LV&r producirá hasta 64 eu/t, el &bGenerador Diesel MV&r producirá hasta 256 eu/t, y el &bGenerador Diesel HV&r producirá hasta 1024 eu/t."
+		""
+		"  Los &bGeneradores Diesel&r &6solo usarán combustible cuando lo necesiten&r, así que no te preocupes por desperdiciar combustible cuando no estés usando energía. Aunque, si necesitas un suministro constante de energía, puedes poner estos combustibles fluidos en la &bCaldera de Vapor Grande&r (y niveles superiores) en lugar de solo objetos."
+		""
+		"  Una &bCaldera de Vapor Grande&r completamente calentada &6producirá la misma cantidad de energía que un &bGenerador Diesel MV&r produciría usando la misma cantidad de combustible."
+	]
+	quest.1094111FB9512D75.title: "Generador Diesel"
+	quest.135FBE79D4415F15.quest_desc: [
+		"  Antes de que preguntes, la respuesta es no. Estas &bbombas nucleares&r &ono&r explotan. Estas son bombas nucleares sin su detonador."
+		""
+		"  Se usan explícitamente en el &bCompresor de Implosión&r."
+	]
+	quest.135FBE79D4415F15.title: "Bomba Nuclear Legalizada"
+	quest.141E3D92CBA9F1B3.quest_desc: [
+		"  Esta es una nueva máquina eléctrica que usa fuerza centrífuga para &6separar mezclas y objetos hechos de múltiples materiales en objetos separados&r."
+		""
+		"  En términos simples, divide los objetos haciéndolos girar muy rápido. Por ejemplo, puedes usarla para hacer &bPolvo de Carbono&r centrifugando &bPolvo de Carbón&r y desbloquear una mejor receta para &bAcero&r y &bSilicio&r."
+	]
+	quest.141E3D92CBA9F1B3.title: "Centrífuga"
+	quest.156575F76CAB51A0.quest_desc: [
+		" Has alcanzado el &dINFINITO&r."
+		""
+		"Ya no estás limitado por lo que puedes o no puedes hacer."
+		""
+		"Tus &6capacidades&r ahora son casi &bilimitadas&r."
+		""
+		"Usa tu &bMateria Universalmente Utilizable&r para &6duplicar&r lo que desees; con un &dlimite&r."
+		""
+		"Recuerda, la &dmateria&r no puede crearse de la &bnada&r, así que intentar &6duplicar&r bloques altamente &bcomprimidos&r o una &bmochila&r llena de &bobjetos&r será un esfuerzo inútil."
+		""
+		"Por lo demás, eres libre de hacer lo que quieras. ¡Usa este nuevo &6poder&r con sabiduría!"
+	]
+	quest.156575F76CAB51A0.quest_subtitle: "Duplicación Legal"
+	quest.156575F76CAB51A0.title: "&dReplicador (MK I)"
+	quest.162DD68C3B91FC5E.quest_desc: [
+		"  Tenemos mucho que cubrir."
+		""
+		"  Las redes de cables tienen limitaciones estrictas en la cantidad de energía que extraerán a la red según su nivel. Puedes ver algunas estadísticas a continuación..."
+		""
+		"    Tasa Máx. de Transferencia: 256 EU/t"
+		"    Material: Estaño"
+		""
+		""
+		"    Tasa Máx. de Transferencia: 1024 EU/t"
+		"    Material: Electrum"
+		""
+		""
+		"    Tasa Máx. de Transferencia: 8192 EU/t"
+		"    Material: Aluminio"
+		""
+		""
+		"    Tasa Máx. de Transferencia: 65536 EU/t"
+		"    Material: Cobre Recocido"
+		""
+		""
+		"  Ahora, la entrada y la tasa de transferencia tienen un límite estricto, pero la tasa de descarga es infinita. Esto significa, por ejemplo, que una red de cables LV puede proporcionar más de 256 EU/t por un corto tiempo. Cuanto más grande sea la red de cables, más grande será el búfer interno de los cables. Toda esta energía \"almacenada\" puede descargarse casi instantáneamente si tiene un lugar a donde ir."
+		""
+		"  Ten en cuenta que &6cada nivel de cable &osolo&r &6se conectará a su respectiva máquina eléctrica de nivel&r. Un cable LV no se conectará a máquinas de vapor, máquinas MV o máquinas HV. El método que cada máquina usa para procesar y usar electricidad es diferente según la potencia que reciba."
+		""
+		"  Si deseas transferir más energía de la que permite el nivel del cable, puedes crear múltiples redes de cables o usar &bTransformadores&r. Los &bTransformadores&r te permiten aumentar o disminuir tu energía. Esto significa, por ejemplo, &6que puedes tomar energía LV y convertirla en energía HV y viceversa&r."
+		""
+		"  Como verás, un transformador de &oX&r a &oY&r se conectará a cables &oY&r en su lado de salida y a cables &oX&r en sus 5 lados de entrada. &6Puedes usar tu &bLlave Inglesa&r &6para configurar qué lado es la salida&r."
+		""
+		"  Los cables siguen las mismas reglas que las tuberías de fluidos y objetos. Usar una &bLlave Inglesa&r en ellos desconectará las conexiones y hacer shift + click derecho los romperá, perdiendo esta vez la energía en esa sección específica de la red de cables."
+	]
+	quest.162DD68C3B91FC5E.title: "Transferencia de Energía"
+	quest.163BCEEEE08F3898.quest_desc: [
+		"  El &bPolarizador&r, ¡bueno, polariza cosas! Lo que esto significa es que sus ||electrones|| se alinean y así el metal que introduces se vuelve magnético."
+		""
+		"  Las &bBarras Polarizadas&r no tienen muchos usos, pero &6usarlas para la automatización de motores es perfecto&r!"
+		"{image:modern_industrialization:block/machines/polarizer/overlay_front_active width:32 height:32 align:center}"
+	]
+	quest.163BCEEEE08F3898.title: "Polarizador"
+	quest.164F4710E109F7F2.quest_desc: [
+		"  ¿Hora de ese hermoso &bLingote Naranja&r brillante? Necesitarás conseguir un poco de polvo de &bCobre&r y &bEstaño&r que obtienes con el &bMartillo de Forja&r para fabricarlo. Es una mezcla simple de &63:1&r &bCobre&r por &bEstaño&r en tu cuadrícula de crafteo. Una vez que &6avances&r, encontrarás una manera de producir esta mezcla de forma más &6eficiente&r, ya que actualmente desperdicias algo de &bpolvo&r al hacerlo manualmente."
+		""
+		"  Ahora que estás entrando en la &aEra del Vapor&r con este &bBronce&r, te daré algunos &6consejos&r sobre las &bmáquinas&r que construirás. Recuerda que las &bMáquinas de Vapor&r aceptan entradas por &6cualquier lado&r, ya sean &bítems, vapor u otro fluido&r. Puedes &6bloquear&r sus ranuras &6haciendo clic&r en el botón con forma de &bcandado&r en la &binterfaz&r."
+		""
+		"&6Las ranuras bloqueadas&r aseguran que la máquina &6solo&r acepte un tipo de &bítem&r o &bfluido&r por ranura."
+		""
+		"  Cada &bmáquina&r también tiene un &blado de salida&r, y puedes &6activar&r la &bauto-extracción&b desde la &rinterfaz&r. ¡Usando tu confiable &bLlave Inglesa&r puedes &6ajustar&r el lado de salida fácilmente!"
+		""
+		"  Si no quieres tener &btantos ítems&r en las ranuras a la vez, &6usa&r la &bRueda del Scroll&r para &6ajustar&r el número máximo de &bítems&r almacenados simultáneamente."
+	]
+	quest.164F4710E109F7F2.title: "Tu Primer Bronce"
+	quest.16AAEB122CDC1A46.quest_desc: [
+		"{image:modern_industrialization:block/machines/mixer/overlay_top_active width:32 height:32 align:center}"
+		"  ¡Un elegante carcasa de bronce con un cuenco metálico brillante donde se bajan las cuchillas para &6mezclar&r una gran variedad de cosas! Puedes &6mezclar polvos&r con mayor producción ya que no desperdiciarás más."
+		""
+		"  No solo mezcla polvos, sino también fluidos. Ejemplo: &eLubricante&r!"
+	]
+	quest.16AAEB122CDC1A46.title: "Mezclador de Bronce"
+	quest.16E5B09AA7E6A487.quest_desc: [
+		"  Las &bCintas Transportadoras&r se usan para mover ítems entre tus máquinas."
+		""
+		"  Usan &bMotores&r para girar y &bLáminas de Goma&r como plataforma para moverse."
+		""
+		"  &6Deberías automatizar esto&r."
+	]
+	quest.16E5B09AA7E6A487.quest_subtitle: "¡Todos a Bordo del Expreso de Ítems!"
+	quest.16E5B09AA7E6A487.title: "Cintas Transportadoras"
+	quest.176524D0E4475298.quest_desc: [
+		"  Con tu recién extraído &bPetróleo Crudo&r puedes hacer una gran variedad de ítems, sin embargo &6necesitarás refinarlo para usarlo&r. Actualmente es bastante inútil en términos industriales."
+		""
+		"  ¡Ahí es donde entra la &bDestilería&r! &6Puedes refinar o &odestilar&r &6fluidos en sus partes más ligeras&r. Con esta &bDestilería&r solo puedes refinar un fluido a la vez."
+		""
+		"  Sigue trabajando, pronto podrás extraer muchos fluidos a la vez."
+	]
+	quest.176524D0E4475298.title: "Destilería"
+	quest.186F257352F2E844.quest_desc: ["  Esta máquina requiere un nivel de fuerza completamente nuevo. ¡Hora de usar ese &bTitanio&r que has fabricado! El &bPresurizador&r te permite presurizar &bAgua&r &6en &bHP&r&6, o &bagua a alta presión&6, y &r&bVapor&r &6en &bVapor HP&r. También funciona al revés para despresurizar los fluidos. El &bPresurizador&r también &6te permite recolectar &bAire Líquido&r &6mediante la &bToma de Aire&r, además es mucho más eficiente que el &bCongelador al Vacío&r."]
+	quest.186F257352F2E844.title: "Presurizador"
+	quest.18DED87B3E23350F.quest_subtitle: "Puede ejecutar recetas de cualquier máquina eléctrica multibloque proporcionada en lotes."
+	quest.1910E0D1BB24E94D.quest_desc: [
+		"Para producir &eenergía&r, el &bPanel Solar&r necesita una &bCélula Fotovoltaica&r de nivel correspondiente en su &6inventario&r."
+		""
+		"Al suministrar &9Agua Destilada&r al &bPanel Solar&r, la &bCélula Fotovoltaica&r en su ranura durará &a2x&r más."
+		""
+		"Las tasas de &egeneración de energía&r dependen de qué tan alto esté el &6sol&r en el &bcielo&r y si el &bcielo&r está &avisible&r."
+	]
+	quest.1910E0D1BB24E94D.quest_subtitle: "¡Sé mejor para el &aambiente&r!"
+	quest.1910E0D1BB24E94D.title: "Paneles Solares"
+	quest.1987DF7742136DC4.quest_desc: [
+		"  ¿Recuerdas que dije que la &bDestilería&r solo podía producir un tipo de fluido por ciclo? ¡Bueno, esta es tu mejora!"
+		""
+		"  &6Puedes elegir cuántas capas quieres, hasta 9&r, ¡y producirá un fluido &opor capa&r!"
+		""
+		"  Para elegir el tamaño que deseas para la &bTorre de Destilación&r, usa el selector en la esquina superior izquierda de su pantalla. ¡Feliz destilación!"
+	]
+	quest.1987DF7742136DC4.title: "Torre de Destilación"
+	quest.1AE719655A757BF1.quest_desc: [
+		"  El taladro que te llevará a los límites más lejanos de la tecnología."
+		""
+		"  Hecho de ese &bTitanio&r súper ligero pero resistente, podrás alimentar tus reactores y entrar en la era cuántica."
+	]
+	quest.1AE719655A757BF1.title: "Taladro de Titanio"
+	quest.1C25114D2AF71C35.quest_desc: [
+		"  Usando &bTNT Industrial&r, el &bCompresor de Implosión&r puede comprimir los polvos y lingotes de los materiales más resistentes. Esto incluye &bTungsteno&r, &bAleación a Prueba de Explosiones&r, &bBerilio&r y finalmente &bDiamantes&r! Algunos de estos materiales serán muy importantes para tu viaje hacia la fisión nuclear."
+		""
+		"  Ahora, probablemente hayas notado que en tu viaje, has podido hacer &bPlacas de Aleación a Prueba de Explosiones&b y &rPepitas de Tungsteno&r con tu compresor normal, aunque es un proceso bastante ineficiente. ¡Bueno, ahora, usando el &bCompresor de Implosión&r, podrás hacerlo más rápido y eficiente!"
+	]
+	quest.1C25114D2AF71C35.title: "Compresor de Implosión"
+	quest.1CA2825FFA775BBE.quest_desc: [
+		"  Esta es una nueva máquina eléctrica que usa corrientes eléctricas fuertes para dividir materiales en diferentes partes."
+		""
+		"  Más notablemente, puedes &6dividir &bAgua&r &6en sus dos componentes principales: &bHidrógeno&r &6y &bOxígeno&r."
+		""
+		"  Este proceso se llama &6Electrólisis&r y funciona usando corriente eléctrica para dividir ||compuestos iónicos|| en sus elementos."
+	]
+	quest.1CA2825FFA775BBE.title: "Electrolizador"
+	quest.1CC910880728D896.quest_desc: [
+		"  ¿Te divertiste con la &bFisión Nuclear&r? ¡Bueno, es hora de la &bFusión Nuclear&r!"
+		""
+		"  En lugar de dividir un núcleo pesado e inestable en dos núcleos más ligeros, la &bfusión&r combinará dos núcleos ligeros, lo que libera grandes cantidades de energía."
+		""
+		"  Esta energía puede contenerse y usarse para producir &bPlasma de Helio&r, un fluido extremadamente denso en energía que puede usarse como la mejor fuente de energía del mundo."
+		""
+		"  Puedes combinar combustibles gaseosos como &bDeuterio&r, &bTritio&r y/o &bHelio-3&r para producir varias combinaciones de Plasma de Helio, Tritio, Deuterio e Hidrógeno."
+		""
+		"  Ten en cuenta que esta fusión requiere mucha energía para comenzar, pero puede producir mucha más como resultado."
+	]
+	quest.1CC910880728D896.title: "Reactor de Fusión"
+	quest.1D57C823A1F0203C.quest_desc: [
+		"  Tengo la &bherramienta perfecta&r para ti, solo tomará un poco de &6tiempo fabricarla&r. ¡Es un &bTaladro Minero a Vapor&r! Estos pueden &6minar&r en una cuadrícula &6mucho más grande&r que los &bPicos&r normales; &63x3&r para ser exactos. No solo podrás &6minar más eficientemente&r, sino que también podrás hacer hermosos &btúneles&r con facilidad."
+		""
+		"  ¿Quieres saber algo genial? ¡Este &btaladro&r también &6&opuede picar con toque de seda&r! ¿Increíble, no? De esta manera obtendrás &6&omucho&r más beneficio cuando lo combines con el &bMartillo de Forja&r, ya que puedes &6triturar&r &bMinerales Completos&r en lugar de empezar con &bMinerales en Bruto&r."
+		""
+		"  Un pequeño... ¿lo llamarías &6inconveniente&r? Necesitas &6alimentarlo&r. Por alguna razón, el &btaladro&r en sí &6nunca&r se &6rompe&r, pero necesitarás darle &bAgua&r y algún tipo de &bCombustible&r; por ejemplo, &bCarbón&r o &bLignito&r. ¡Solo &6Haz Clic Derecho&r con los &bcombustibles&r en tu &btaladro&r dentro de tu &binventario&r para &6llenarlo&r!"
+		""
+		"  &aConsejos&r: &6Lleva&r un &bCubo de Agua&r. No solo te permitirá &6evitar daño por caída&r si eres lo suficientemente hábil, sino también como fuente de &bAgua&r para hacer funcionar tu &btaladro&r. Por alguna razón, dependiendo del caso, las &bFuentes de Agua&r en este mundo son infinitas; usa esto a tu favor."
+		""
+		"  &aMás Consejos&r: &6Agáchate para minar&r &bbloques individuales&r, si lo necesitas. Seguirán estando en su forma &6con toque de seda&r, pero no hará el &63x3&r, en caso de que necesites minar &bbloques&r con más delicadeza."
+	]
+	quest.1D57C823A1F0203C.quest_subtitle: "¡Cling, Clang, Cling, Clang!"
+	quest.1D57C823A1F0203C.title: "Taladro Minero a Vapor"
+	quest.20A093E5684D2E30.quest_desc: [
+		"  ¡Electrónica aún más avanzada! Estas placas de circuito están basadas en aluminio y permiten maquinaria más compleja."
+		""
+		"  Recomendaría &6automatizar&r el &bCircuito Electrónico&r ya que los &6necesitarás&r para muchas de las &bmejoras MV&r y las nuevas máquinas que podrás fabricar."
+	]
+	quest.20A093E5684D2E30.title: "&b¡La Era del Midgame!"
+	quest.215606B3A894512E.quest_desc: [
+		"  ¿Ves esos porcentajes en cada mineral en los resultados de la cantera?"
+		""
+		"  Esos son porcentajes &oindividuales&r. &6Cada mineral tiene su propia chance individual&r. "
+		""
+		"  Si colocas una salida de objetos de bronce, solo obtendrás un mineral, pero la chance de que otro mineral se produzca sigue ahí, y podría perderse si no hay espacio para él."
+		""
+		"  &6Coloca múltiples salidas de objetos, preferiblemente de acero, para aumentar la cantidad máxima de resultados posibles.&r"
+	]
+	quest.215606B3A894512E.title: "Consejos de Cantera"
+	quest.21584ECDBB6907DE.quest_desc: [
+		" &a¡Tranquilo, tranquilo!&r Un &btick&r es el &6tiempo más corto&r que puede ser &6registrado&r."
+		""
+		"  Es aproximadamente &61/20&r de un &bsegundo&r. El mundo funciona con estos \"&bticks&r\" y puedes &6usarlos&r a &btu&r favor!"
+	]
+	quest.21584ECDBB6907DE.title: "¿Qué es un Tick?"
+	quest.21939E58707A7756.quest_desc: ["El &bMacerador Grande&r puede &6macerar&r recetas en lotes de hasta 8 con un &a25%&r de reducción en el costo de &eEU&r. Ten en cuenta que &cno&r hará una mezcla de recetas, &odeben&r ser del mismo tipo. Si no, cada tipo de receta se &6dividirá&r en su lote máximo de 8."]
+	quest.21939E58707A7756.quest_subtitle: "Puede procesar recetas en lotes."
+	quest.21EDEEE1A1B82B53.quest_desc: ["  Procesando el &bMineral de Iridio&r de tus &bTaladros de Titanio&r, puedes comenzar a producir &bPolvo de Iridio&r que se necesitará para &bPolvo Superconductor&r, un material capaz de transferencia y almacenamiento de energía extraordinarios."]
+	quest.21EDEEE1A1B82B53.title: "Iridio en Bruto"
+	quest.22420EF3089DD7F6.quest_desc: ["  ¡Tu primer vistazo a la verdadera &4a&r&6u&r&et&r&2o&r&am&r&ba&r&3t&r&9i&r&do&r&5n&r! Esta es también la primera máquina que querrás hacer en cantidad. El &bEnsamblador&r te permite &6automatizar&r casi todas las recetas relacionadas con máquinas. Revisa tu &bEMI&r para ver qué recetas puedes automatizar usando el &bEnsamblador&r. Puedes configurar hasta &63 recetas en un ensamblador&r usando &6bloqueo de espacios&r. Solo recuerda que hará tantas de la primera receta como pueda antes de pasar a la siguiente, &6así que nunca pongas múltiples recetas de alta demanda en un solo ensamblador&r."]
+	quest.22420EF3089DD7F6.title: "Ensamblador"
+	quest.2472B23BC0C28C6C.quest_desc: [
+		"  ¿Recuerdas esos \"ticks\" de los que hablamos? ¿Cómo cada uno es un veinteavo de segundo?"
+		""
+		"  Bueno, has alcanzado &oese&r nivel de procesamiento de máquinas. Con suficiente energía, cada receta de máquina, sin importar cuál, siempre que sea eléctrica, tomará solo un tick."
+		""
+		"  Ten en cuenta que la cantidad de energía que estas máquinas pueden usar será inmensa, así que úsalas sabiamente."
+	]
+	quest.2472B23BC0C28C6C.title: "Mejora Cuántica"
+	quest.24A4F1AA0BFFE867.quest_desc: [
+		"  Esta es la versión eléctrica del &bHorno de Vapor&r. El &bHorno Eléctrico (o EBF)&r usa calentamiento por inducción para producir temperaturas extremas, desbloqueando una plétora de nuevas recetas. Además, su &6overclock está limitado a 128 EU/t por defecto&r, como otras máquinas eléctricas multibloque."
+		""
+		"  El &bHorno Eléctrico&r o &bEBF&r está hecho puramente de &bCarcasas de Máquina Resistentes al Calor&r y &bBobinas de Cuproníquel&r. &6Usa tu &bLlave Inglesa&r &6para ver la forma del multibloque y la colocación de bloques&r. El controlador se coloca en la capa inferior y las escotillas pueden colocarse en la capa superior o inferior."
+		""
+		" &6¡No olvides agregar Escotillas de Entrada de Energía&r o el EBF no tendrá energía para funcionar! Comienza con una &bEscotilla de Entrada LV&r y puedes actualizar a &bEscotillas de Entrada de mayor nivel&r cuando tengas los niveles de energía apropiados. Recuerda, la &bEscotilla de Entrada LV&r solo se conectará a &bcables LV&r."
+		""
+		"  También necesitarás escotillas de entrada/salida de objetos o fluidos según el caso de uso del &bEBF&r. Revisa tu EMI para sus nuevas recetas y elige escotillas según tus necesidades."
+	]
+	quest.24A4F1AA0BFFE867.quest_subtitle: "Se está poniendo &cCaliente&r Aquí Adentro"
+	quest.24A4F1AA0BFFE867.title: "Horno Eléctrico"
+	quest.250D1E2BFE6E0D50.quest_desc: [
+		"  ¡Actualiza esos &bGrandes Calderos de Vapor&r ya! "
+		""
+		"  Esta versión avanzada puede &6cuadriplicar la &bproducción de Vapor&r a 1024 mb/t de vapor a temperatura máxima&r."
+		""
+		"  Es un poco más alto, así que recuerda usar la &bLlave Inglesa&r para ver la forma del multibloque y colocación."
+	]
+	quest.250D1E2BFE6E0D50.quest_subtitle: "¡Doble Eficiencia!"
+	quest.250D1E2BFE6E0D50.title: "Caldero de Vapor Grande Avanzado"
+	quest.268B0F87CC431A51.quest_desc: ["- Necesita &bCarcasa&r para convertir el cable de nivel (&eLV&r por defecto)."]
+	quest.268B0F87CC431A51.quest_subtitle: "¡Conversión más fácil!"
+	quest.27A396E8628B269E.quest_desc: ["  El &bTaladro de Oro&r produce minerales y bloques que esperarías encontrar en las profundidades del Nether."]
+	quest.27A396E8628B269E.title: "Taladro de Oro"
+	quest.29D05998ADC8ACF5.quest_desc: ["  Un procesador súper avanzado para llevar las capacidades de overclocking de tu máquina al límite y pronto, algo más... &cnuclear&r."]
+	quest.29D05998ADC8ACF5.title: "Unidad de Procesamiento"
+	quest.29E6ED5067027F08.quest_desc: [
+		"- Puede ejecutar &6recetas&r de cualquier &bmáquina&r eléctrica de &ecrafting&r en lotes."
+		""
+		"- El tamaño del lote lo determina la cantidad de &bmáquinas&r proporcionadas."
+		""
+		"- Inserta máquinas eléctricas de crafting para ejecutar en &6paralelo&r."
+	]
+	quest.2B1717F5D6E20B79.quest_desc: [
+		"  Con un &bElectrolizador&r, suficiente tiempo y energía, y tu recién hecha &bSingularidad&r, puedes extraer grandes cantidades de energía mediante &bRadiación Hawking Cuántica&r en forma de &bMateria Universalmente Utilizable&r, o simplemente &dMateria UU&r."
+		""
+		"  Esto es, el &otejido&r mismo del &9universo&r."
+	]
+	quest.2B1717F5D6E20B79.title: "Cubo de Materia UU"
+	quest.2B4BFD88DF1A934D.quest_desc: ["  Es un tercio del peso del acero, pero dúctil y maleable. Se obtiene calentando y extrayéndolo de la &bBauxita&r. Puedes hacerlo en tu nuevo &bEBF&r. &6Automatiza la producción de &bAluminio&r porque usarás MUCHO&r."]
+	quest.2B4BFD88DF1A934D.quest_subtitle: "Todo va a estar bien, ¿verdad?"
+	quest.2B4BFD88DF1A934D.title: "Aluminio"
+	quest.2BC64E1EB1BCE14D.quest_desc: [
+		"  El &bTaladro de Acero Inoxidable&r es un nuevo taladro que &6puede usarse en &oambos&r&6 la &bCantera&r &6y el &bEquipo de Perforación&r."
+		""
+		"  En la cantera, obtendrás nuevos recursos raros que serán extremadamente beneficiosos."
+		""
+		"  En el equipo de perforación, podrás extraer &bAceite de Esquisto&r que puede destilarse en &bHelio&r, &bPetróleo Sulfúrico&r y &bNafta Sulfúrica&r."
+	]
+	quest.2BC64E1EB1BCE14D.title: "Taladro de Acero Inoxidable"
+	quest.2C4CA092A557205E.quest_desc: [
+		"  ¡1985 llamó desde 2015, quiere su tecnología anti-gravedad de vuelta!"
+		""
+		"  La &bPlacagravi&r usa un cable superconductor enrollado alrededor de un núcleo de platino para invertir la gravedad alrededor del jugador."
+		""
+		"  No recibirás daño por caída, pero los componentes frágiles no protegen contra otros daños."
+		""
+		"  &6Usa EU (y mucha)&r, puede cargarse haciendo clic derecho en bloques que emitan energía."
+	]
+	quest.2C4CA092A557205E.title: "Placagravi"
+	quest.2D4170B5AD28DCBF.quest_desc: [
+		"  El mejor &bGenerador Diésel&r de un solo bloque. &6Produce hasta 1024 eu/t&r de varios fluidos listados en tu EMI."
+		""
+		"  Pero existe un &bGenerador Diésel Grande&r que requiere &bCarcasas Altamente Avanzadas&r y &6genera hasta 16,384 eu/t&r!"
+	]
+	quest.2D4170B5AD28DCBF.title: "Generador Diésel HV"
+	quest.2F66F85A601AC908.quest_desc: [
+		"{image:modern_industrialization:block/machines/macerator/overlay_top_active width:32 height:32 align:center}"
+		"  Ahora puedes &6hemicuadruplicar tus minerales&r con 50% de chance de polvo extra. También procesar &bMineral Completo&r en mucho &bMineral en Bruto&r."
+		""
+		"  Recicla ítems metálicos en polvos."
+	]
+	quest.2F66F85A601AC908.title: "Macerador de Bronce"
+	quest.2FB2FE782B1103D6.quest_desc: [
+		"  Tu segundo multibloque: ¡El &bHorno de Vapor Mejorado&r! Similar pero más alto y con &bLadrillos de Arcilla Refractaria&r."
+		""
+		"  Usa el &bLlave&r para ver la estructura y solo necesitas &6escotillas&r."
+		""
+		"  Aquí fabricarás tu primer &bAcero&r!"
+	]
+	quest.2FB2FE782B1103D6.title: "Horno de Vapor Mejorado"
+	quest.3143EA7DF096CE61.quest_desc: [
+		"  ¡Una nueva máquina de acero!"
+		""
+		"  El &bEmpaquetador&r realiza crafts simples como lingotes dobles, tuberías y ladrillos."
+	]
+	quest.3143EA7DF096CE61.title: "Empaquetador de Acero"
+	quest.325D7C592E2FB05A.quest_desc: [
+		"  El &bestado definitivo&r de la materia, comprimido hasta ser un punto de densidad y gravedad infinitas."
+		""
+		"  Contenido, puedes usarlo para varias aplicaciones. Estás sosteniendo... &bInfinito&r."
+	]
+	quest.325D7C592E2FB05A.title: "Singularidad"
+	quest.3357A8B614D477B6.quest_desc: [
+		"  La versión pequeña del &bEmpaquetador&r, también de acero."
+		""
+		"  &6Deshace crafts&r como convertir polvos en polvos diminutos."
+	]
+	quest.3357A8B614D477B6.title: "Desempacador de Acero"
+	quest.335BFE2345DAFE03.quest_desc: [
+		"Para la &bMotosierra Eléctrica&r:"
+		"- &6Shift + Clic Derecho&r cambia entre &bFortuna/Saqueo&r y &bToque de Seda&r."
+		""
+		"Para el &bTaladro Minero Eléctrico&r:"
+		"- &6Shift + Clic Derecho&r cambia entre &bFortuna&r y &bToque de Seda&r."
+		""
+		"Para &bAmbos&r:"
+		"- Usa &6Alt + Scroll&r para cambiar velocidades."
+	]
+	quest.335BFE2345DAFE03.title: "Accesorios Eléctricos"
+	quest.33D0760B5FEF7C46.quest_desc: [
+		"  &oEste&r es el generador definitivo."
+		""
+		"  La &bTurbina de Plasma&r usa &bPlasma de Helio&r para producir energía, &6hasta 1,048,576 EU/t&r. Genera ~100,000 EU por milibucket y consume &6~11 mb/t&r."
+		""
+		"  Si sabes mantener tu fábrica, &onunca&r volverás a preocuparte por energía."
+	]
+	quest.33D0760B5FEF7C46.title: "Turbina de Plasma"
+	quest.3761B64135EA94C0.quest_desc: [
+		"  Finalmente podrás construir un &bReactor Nuclear&r que use &bFluidos&r y &bBarras de Combustible&r para producir combustibles gaseosos, &bVapor&r en masa y materiales radiactivos."
+		""
+		"  El &bReactor Nuclear&r no es para débiles. Debes monitorear medidores térmicos y de neutrones al construir uno de cuatro tamaños posibles."
+		""
+		"  Si necesitas ayuda, vuelve y te explicaré cómo funciona."
+		""
+		"  ¡Buena suerte!"
+	]
+	quest.3761B64135EA94C0.quest_subtitle: "¡Es Sr. Fusión para ti!"
+	quest.3761B64135EA94C0.title: "Reactor Nuclear"
+	quest.37F3ABF113A1D399.quest_desc: [
+		"  La &bEscotilla de Entrada de Energía LV&r es como una gran entrada eléctrica. Como mencioné antes, necesitas una &bEscotilla de Entrada de Energía&r para alimentar máquinas eléctricas multibloque."
+		""
+		"  Recuerda que puedes mejorar la máquina multibloque reemplazando la &bEscotilla de Entrada de Energía&r con una de mayor nivel, aumentando la tasa máxima de energía para las recetas y mejorando las capacidades de overclocking."
+	]
+	quest.37F3ABF113A1D399.title: "Escotilla de Entrada de Energía LV"
+	quest.39CF27CAC4EE33DB.quest_desc: [
+		"- Presiona &6Clic Derecho&r en &9Agua Tranquila&r o &9Agua Fluida&r para llenar."
+		""
+		"- Coloca &8Combustible&r dentro de la &bMotosierra&r usando &6Clic Derecho&r."
+		""
+		"- Activa &eToque de Seda&r con &6Shift Izquierdo&r + &6Clic Derecho&r."
+	]
+	quest.39CF27CAC4EE33DB.quest_subtitle: "¡Brrrr!"
+	quest.39FCE3168C26B863.quest_desc: [
+		"  Una vez que tengas una reserva de este &bCarbón Súper Potenciado&r, puedes empezar a alejarte de tus máquinas de bronce. Son lentas y de un naranja muy brillante; cegadoras para los ojos."
+		""
+		"  Hacer &bCoque de Carbón&r es simplemente calentar &bCarbón&r en ausencia de oxígeno. Esto no le permite arder y lo somete a un proceso de destilación destructiva. Una vez que lo tengas, podrás empezar a trabajar con &bAcero&r y máquinas de acero, acelerando los tiempos de procesamiento a costa de usar más vapor."
+		""
+		"  &6Pronto buscarás crear una &bCantera&r para que excave por ti&r. ¡Imagina no tener que minar minerales nunca más!"
+	]
+	quest.39FCE3168C26B863.title: "Coque"
+	quest.3C3519AFEBBAEC70.quest_desc: [
+		"  Los &bPistones&r usan fuerza rotacional para extender una varilla con mucha fuerza posible."
+		""
+		"  Esto es muy útil para comprimir cosas, así como para empaquetar. &6Deberías automatizar estos&r."
+	]
+	quest.3C3519AFEBBAEC70.quest_subtitle: "Golpe de Metal"
+	quest.3C3519AFEBBAEC70.title: "Pistones"
+	quest.3DF6354F7AC8D4A4.quest_desc: ["  Ahora que puedes comenzar tu viaje en los químicos derivados del &bPetróleo Crudo&r, ¡puedes producir mejoras para tus máquinas! Todas las máquinas eléctricas que has usado hasta ahora han tenido un overclock máximo de 32 eu/t. Ahora, puedes aumentar ese máximo, dependiendo del nivel de mejora que uses. Revisa tu EMI para ver cuánto EU aumenta cada mejora."]
+	quest.3DF6354F7AC8D4A4.title: "Mejoras"
+	quest.3E903D71F66D3DB4.quest_subtitle: "¡Turboalimentado con N2O!"
+	quest.3E903D71F66D3DB4.title: "&6Replicador (MK II)"
+	quest.3F0097CCBA02804C.quest_desc: ["La &bGran Horno de Vapor&r puede &6fundir&r recetas en lotes de hasta 8 con una deducción del &a25%&r en el costo de &eEU&r. Ten en cuenta que &cno&r hará una mezcla de recetas, deben &oser&r del mismo tipo. Si no, cada tipo de receta se &6dividirá&r en su lote de un máximo de 8."]
+	quest.3F0097CCBA02804C.quest_subtitle: "¡Cuanto Más Grande, Mejor!"
+	quest.40148704F9175B05.quest_desc: [
+		"Asegurándote de tener teclas asignadas, mantén &rshift&r sobre la pieza del &bCasco&r para ver qué tecla debes presionar para activar la &5Visión Nocturna&r."
+		""
+		"Haz lo mismo para los &bGrebas&r y &bBotas&r para el &5Impulso de Velocidad&r y &5Impulso de Paso&r respectivamente."
+		""
+		"La armadura también puede ser &6Teñida&r y &6Recortada&r."
+	]
+	quest.40148704F9175B05.quest_subtitle: "¡Moda Tecnológica!"
+	quest.40148704F9175B05.title: "&aTraje Nano"
+	quest.40915337B7E427F8.quest_desc: ["  Un cable capaz de transferir suficiente energía para toda tu fábrica, &b10 veces más&r, en un solo cable. Esto es &bla cúspide&r de la transferencia de energía."]
+	quest.40915337B7E427F8.quest_subtitle: "¡Soy un cable de verdad!"
+	quest.40915337B7E427F8.title: "Cable Superconductor"
+	quest.41D1344A31FEA6DF.quest_desc: [
+		"  Las &bBobinas de Kanthal&r son un nuevo tipo de bobina para tu &bEBF&r, &6permitiendo un mayor consumo de energía&r y la capacidad de generar aún más calor. Ten cuidado, ¡no querrás quemarte! ¡Ay!"
+		""
+		"Las &bBobinas de Kanthal&r no harán que tu &bEBF&r comience a calentarse automáticamente a las &6temperaturas más altas&r. La computadora de control tiene las capacidades, solo necesitas ajustar los valores para aprovechar al máximo la mejora."
+		""
+		"  En este caso, se ha simplificado para ti. Entra en la &bGUI del controlador&r y en la &6esquina superior izquierda&r, verás un conjunto de flechas. Presiona la que apunta a la derecha y cambiará la configuración del nivel &bCuproníquel&r al nivel &bKanthal&r."
+		""
+		"  ¿Fácil, verdad?"
+	]
+	quest.41D1344A31FEA6DF.title: "Bobinas de Kanthal"
+	quest.42D6CC67AB29D7DA.quest_desc: [
+		"  ¡Finalmente has llegado a los &bCircuitos Digitales&r!"
+		""
+		"  Aquí es donde comienza el verdadero poder. Aumenta las capacidades de overclocking de tus máquinas aún más que antes, nuevos minerales de las canteras."
+		""
+		"  &6Deberías automatizar estos&r."
+	]
+	quest.42D6CC67AB29D7DA.title: "&9La Era del Endgame"
+	quest.439D48E9647FC8C2.quest_desc: [
+		"  ¡Las máquinas de vapor necesitan, bueno, &bVapor&r! La forma de obtenerlo es haciendo una &bCaldera de Vapor&r! La &bCaldera de Vapor&r consumirá gradualmente casi cualquier &6combustible&r que le des para calentarse. Cuando esté a una temperatura suficientemente alta, comenzará a producir &bVapor&r siempre que haya &bAgua&r en su &6tanque interno&r; de lo contrario, estarás desperdiciando combustible."
+		""
+		"  O puedes poner un &bCubo de Agua&r en un &bHorno&r para obtener un &bCubo de Vapor&r. En este mundo parece que los contenedores de fluidos mantienen cualquier fluido dentro de ellos, con una temperatura persistente y confinada al contenedor; así que no te preocupes por que se condense en agua o se escape. Con &bVapor&r pre-caldera, puedes hacer un &bCompresor&r para ahorrar en &bPlanchas de Bronce&r."
+		""
+		"  Puede parecer un poco caro en este momento, pero recuerda que puedes prácticamente triplicar tus minerales usando el &bMartillo de Forja&r. ¡Sin mencionar que, con el tiempo, cuando tengas tus dos primeras máquinas, será más del doble de barato que antes!"
+		""
+		"  La &bCaldera&r comenzará automáticamente a producir y enviar el &bVapor&r a máquinas adyacentes o tuberías conectadas, &6hasta 8 milibuckets por tick.&r"
+		""
+		"  Las máquinas de bronce solo pueden procesar recetas de hasta 2 unidades de energía por tick. Puedes verlo como \"2 EU/t\" al usar las máquinas. 1 milibucket de vapor es igual a 1 EU; por mi parte, me alegra que sea una conversión muy simple porque no soy fanático de las matemáticas. ¡Una vez que tu &bCaldera&r esté a temperatura máxima, puede suministrar 4 máquinas con &bVapor&r simultáneamente! Eso sí que es caliente."
+	]
+	quest.439D48E9647FC8C2.title: "Caldera de Bronce"
+	quest.43DB398322EF99BD.quest_desc: [
+		"El &bFundidor de Aleaciones de Acero&r te permite crear &9aleaciones&r a partir de dos lingotes diferentes &osin&r necesidad de &6mezclar&r primero los polvos en un &bMezclador&r. Revisa tu &dEMI&r para ver qué aleaciones se pueden hacer así."
+		""
+		"También puedes usar cualquier &6combinación&r de cantidades iguales de recursos para crear una aleación, como &a9&r polvos diminutos + &a9&r pepitas."
+		""
+		"Lo que &ono&r puedes hacer es &a9&r polvos diminutos + &a1&r lingote, ya que las cantidades son diferentes."
+	]
+	quest.43DB398322EF99BD.quest_subtitle: "Mezclar &edos&r materiales para &6aleaciones&r."
+	quest.454FF6E2926163F7.quest_desc: [
+		"  Honestamente, no puedo culparte. Aunque si llegaste aquí después de hacer tu súper reactor por curiosidad, te felicito. Pero para aquellos que necesitan ayuda, ¿por qué no comenzamos? ¡Presta atención!"
+		""
+		"  El &bReactor Nuclear&r puede producir cientos de veces más EU/t que el diesel. Viene en varios tamaños desde &bpequeño&r hasta &bextremo&r."
+		""
+		"  Cómo funciona internamente puede ser abrumador, sin embargo, no necesitas entender los detalles para diseñar un reactor potente."
+		""
+		"  &6Nota que en este mundo, el &bReactor Nuclear&r &6&ono&r &6puede explotar, emitir radiación o dañar el área circundante&r. Lo único que puede dañar son los objetos que pongas en él si la temperatura sube demasiado, lo cual explicaré más adelante. ¡Siéntete libre de experimentar y disfruta tu nueva vida como científico nuclear!"
+		""
+		"  El componente principal es el &bRevestimiento Nuclear&r hecho con &bAleación Nuclear&r; una mezcla de &bcadmio&r, &bberilio&r y &baleación a prueba de explosiones&r."
+		""
+		"  La parte superior de la estructura acepta &bEscotillas de Objetos/Fluidos Nucleares&r o simplemente revestimientos. &6Estas son las entradas y salidas del reactor&r."
+		""
+		"  Cada escotilla tiene una entrada, ya sea para objetos o fluidos, y dos salidas. Las ranuras de entrada formarán una cuadrícula, mostrada en el panel de control del reactor (accesible con clic derecho en el controlador)."
+		""
+		"  &6Cada escotilla tiene una temperatura&r y almacena calor que puede disiparse de varias formas. El calor se moverá naturalmente a una escotilla adyacente o al exterior si está en el borde, aunque esto hará que se pierda calor. La velocidad de este proceso depende del coeficiente de transferencia de calor del contenido de la escotilla (encontrable en tu EMI), multiplicado por la diferencia de temperatura. El calor también puede extraerse en una escotilla de fluidos &bproduciendo vapor&r. &6Una temperatura superior al máximo de un objeto lo destruirá&r."
+		""
+		"  Los elementos centrales son los &bneutrones&r, producidos por el &bcombustible nuclear&r. Hay dos tipos: &brápidos&r (con energía) y &btérmicos&r (sin energía). Los neutrones se mueven en línea recta hasta chocar con un elemento o salir del reactor (perdiendo energía si son rápidos). El flujo se muestra en el panel de control."
+		""
+		"  Cuando un neutrón choca con una escotilla no vacía, puede ser &babsorbido&r o &bdispersado&r. &6Un neutrón dispersado cambia de dirección aleatoriamente&r. Si era rápido, puede ralentizarse y volverse térmico, transfiriendo energía como calor. &6Un neutrón absorbido detiene su curso y también transfiere energía si era rápido&r."
+		""
+		"  La cantidad de neutrones absorbidos por escotilla se ve en el panel. Las probabilidades de cada proceso (encontrables en EMI) dependen del contenido y tipo de neutrón. &6Los combustibles nucleares absorben mejor los neutrones térmicos&r."
+		""
+		"  Cuando un neutrón es absorbido por combustible nuclear, genera más neutrones rápidos (con dirección aleatoria) y libera calor adicional. &6Este calor extra va a la escotilla&r."
+		""
+		"  Sobre cierto umbral, la generación de neutrones disminuye con la temperatura hasta cero. &6Esto desperdicia algo de energía pero garantiza estabilidad&r. Los valores exactos se muestran en EMI."
+		""
+		"  Cada componente nuclear tiene un límite de absorciones. &6Al alcanzarlo, el objeto se destruye o se transforma&r. Esto es útil para combustible nuclear, ya que parte del &bU238&r se convierte en &bPlutonio&r en su versión agotada, pudiendo reciclarse."
+		""
+		"  Lo mismo ocurre con fluidos, donde una porción se transforma tras cada absorción. Esto permite producir isótopos como &bdeuterio&r y &btritio&r en masa. Los resultados específicos se muestran en EMI."
+	]
+	quest.454FF6E2926163F7.title: "¿Te rindes?"
+	quest.45F0194CF3DCA5DD.quest_desc: [
+		"  El &bLignito&r es una &bfuente de combustible&r verdaderamente abundante que puede &6encontrarse&r en el mundo. Es básicamente &bCarbón&r, pero marrón. "
+		""
+		"  Tiene menor contenido de carbono a pesar de &6quemarse&r igual que el &bCarbón&r; se crea de la misma manera también."
+		""
+		"  Esto significa que puedes guardar tu &bCarbón&r real para otros &6proyectos&r o &6recetas&r, usando &bLignito&r para &6alimentar&r tu &bTaladro Minero de Vapor&r."
+	]
+	quest.45F0194CF3DCA5DD.title: "Carbón Lignito"
+	quest.469641436BC858D3.quest_desc: [
+		"  ¿Leíste el &bLibro&r? De todos modos, te daré un resumen de este &6viaje tecnológico&r; me lo agradecerás."
+		""
+		"{image:modern_industrialization:item/guidebook width:32 height:32 align:center}"
+		"  Lo que harás es prácticamente &o&aIndustrialización Moderna&r&r, usando mecánicas como &bLogística&r y &6Destilación&r para lograr &6Automatización Total&r. Algunos &6ejemplos&r:"
+		""
+		"  Tendrás poderosas &bHerramientas Logísticas&r como &bObjetos Multiparte&r, &bTuberías de Fluidos&r y &bCables de Energía&r. ¡Hasta tres de cada uno pueden coexistir en un &bMismo Bloque&r!"
+		""
+		"  ¡Nunca más necesitarás minar recursos, pues podrás construir &bCanteras&r para generación continua!"
+		""
+		"  Necesitarás &6alimentar&r tus &bMáquinas&r con &bVapor&r, &bPetróleo&r procesado en &bDiesel&r, &6Fisión Nuclear&r y, en el cenit: &6Fusión&r. Usa &bMayor Voltaje&r para mejorar tasas de transferencia."
+		""
+		"  ¿Cansado de &6fabricar manualmente&r &bEngranajes&r, &bMartillos&r o &bVarillas&r? En este mundo puedes diseñar máquinas para casi todo. ¡La automatización total es posible mientras vuelas con un &bGravi-Peto&r!"
+		""
+		"  &a¿Listo para el viaje de tu vida?&r &c¡Es hora de comenzar!&r"
+		""
+		"  &6P.D.&r Si te atascas con una máquina, sostén tu &bLibro Guía&r mientras &6apuntas&r a una &bMáquina&r o &bMultibloque&r. Te dará &binformación adicional&r."
+	]
+	quest.469641436BC858D3.title: "Industrialización Moderna"
+	quest.4722157BC8D3B965.quest_desc: [
+		"  Un elegante revestimiento de bronce con una cuchilla giratoria en su interior proporciona &6ratios de corte&r superiores a los del &bMartillo de Forja&r. &a¡Hora de hacer más tornillos, engranajes, anillos y varillas!&r"
+		""
+		"  Recuerda que el corte no es gratis. Esta máquina usa &bVapor&r y &bLubricante&r para evitar sobrecalentamientos. El &bLubricante&r se produce en el &bMezclador&r con &bRedstone&r e hidrocarburos. ¡Revisa los productos del &bHorno de Coque&r para encontrar algo que &6mezclar&r con &bRedstone&r!"
+	]
+	quest.4722157BC8D3B965.title: "Máquina de Corte de Bronce"
+	quest.475DC864A0BC0F1F.quest_desc: [
+		"  Como se mencionó antes, puedes mejorar tus máquinas de bronce a acero."
+		""
+		"  Crea la &bMejora de Acero&r e instálala en cualquier máquina de bronce &6usando una mesa de herrería o empaquetadora&r."
+	]
+	quest.475DC864A0BC0F1F.title: "¿Máquinas más rápidas?"
+	quest.47A8E5DC11E846C5.quest_desc: [
+		"  Antes de hacer &bBronce&r, necesitarás un &b&oMartillo de Forja&r. Es básicamente un &bYunque&r más grande, pero sin superficie curva, así que no podrás usarlo como tal."
+		""
+		"  Úsalo para lo básico: &bPlanchas&r y &bVarillas&r. Sin embargo, &6golpear&r el &bMartillo&r con un &bLingote&r es &6ineficiente&r y perderás parte del material por &6daños&r."
+		""
+		"  Si &6fabricas&r un &bMartillo&r adecuado, &6mejorarás la eficiencia&r y la producción. Cada martillo desbloquea nuevas formas para sus lingotes. Usa tus recursos sabiamente, pues los martillos tienen durabilidad limitada."
+		""
+		"  También puedes usar el &bMartillo de Forja&r para extraer más &bMineral en Bruto&r de tus &bMinerales&r. Nuevamente, los martilles aumentan la producción a costa de durabilidad."
+	]
+	quest.47A8E5DC11E846C5.title: "Compresor del Pobre"
+	quest.47C1108CF46C81FC.quest_desc: ["  El &bTaladro de Aluminio&r &6te permite perforar en busca de &bPetróleo Crudo&r. Encontrará depósitos subterráneos y los bombeará automáticamente a la superficie."]
+	quest.47C1108CF46C81FC.title: "Taladro de Aluminio"
+	quest.4980C231ECDB0BF2.quest_desc: ["  El &bTaladro de Acero&r te da acceso a los &6minerales más usados&r para avanzar hacia la automatización total y la exploración del mundo. Revisa tu EMI para ver todas las salidas posibles."]
+	quest.4980C231ECDB0BF2.title: "Taladro de Acero"
+	quest.4A5466E364B85AEF.quest_desc: [
+		"  Más oscuro y resistente que el hierro... unas 1000 veces más. ¡Es hora de hacer &bAcero&r! Usa el coque de carbón que produjiste, tritúralo a polvo y combínalo con polvo de hierro para obtener &bPolvo de Acero Sin Cocinar&r. Recuerda: &6usar el &bMezclador&r aumenta la producción.&r"
+		""
+		"  El mejor acero requiere el fuego más intenso, así que usaremos el &bAlto Horno de Vapor&r para alcanzar las temperaturas necesarias."
+		""
+		"  Con acero obtenido, puedes mejorar tus máquinas de bronce con &bMejoras de Acero&r. Estas máquinas procesan recetas de hasta 4 EU/t al &6doble de velocidad&r (si no superan el límite de energía). Este techo más alto también permite nuevas recetas."
+	]
+	quest.4A5466E364B85AEF.title: "&7¡Tu Primer Acero!"
+	quest.4D5787F48ECCB000.quest_desc: [
+		"La &bCervecería de Acero&r puede &6fabricar&r &acuatro&r pociones a la vez, mucho más rápido que un soporte de pociones normal."
+		""
+		"Recuerda que necesita &eEsencia Ardiente&r en lugar de &6Polvo de Blaze&r."
+	]
+	quest.4D5787F48ECCB000.quest_subtitle: "Prepara &e4&r pociones a la vez."
+	quest.50BFFEAF92B72965.quest_desc: [
+		"  El &bHorno de Coque&r es una estructura grande (multibloque) que calienta &bCarbón&r o &bPolvo de Carbón&r en ausencia de aire, produciendo &bCoque&r y a veces &bAceite de Creosota&r. Usa el &bAceite&r para hacer &bLubricante&r y el &bCoque&r para &bLingotes de Acero&r o como &6combustible&r 4x más duradero!"
+		""
+		"  El bloque &bHorno de Coque&r actúa como &6controlador central&r. Coloca otros bloques alrededor siguiendo el patrón del multibloque."
+		""
+		"  Cada multibloque se gestiona desde su controlador, pero normalmente interactúas mediante &6escotillas de entrada/salida&r colocadas en posiciones específicas."
+		""
+		"  Necesitarás:"
+		"- &bEscotilla de Fluidos&r para &bVapor&r (energía)"
+		"- &bEscotilla de Objetos&r para &bCarbón&r"
+		"- &bEscotilla de Salida&r para &bCoque&r"
+		"- Opcional: &bEscotilla de Salida de Fluidos&r para &6Aceite de Creosota&r"
+		""
+		"  Con una &bLlave&r en mano, verás una proyección holográfica de los bloques requeridos. Los bloques correctos harán desaparecer el holograma, los incorrectos lo volverán rojo."
+		""
+		"  Al sostener una escotilla, verás ubicaciones destacadas en verde donde colocarla. Fuera de esas zonas, el multibloque no la reconocerá."
+		""
+		"  Cuando el controlador indique que la forma es válida, inserta &bVapor&r y &bCarbón&r para comenzar. Si no funciona, revisa tu configuración."
+	]
+	quest.50BFFEAF92B72965.title: "Horno de Coque"
+	quest.5401B18217772D6C.quest_desc: [
+		"  Puedes usar el &bIntercambiador de Calor&r para, bueno, intercambiar calor. Puedes recuperar el &bAgua a Alta Presión&r para usarla en otro ciclo. "
+		""
+		"  Recuerda que &6presurizar &bAgua&r &6en &bAgua a Alta Presión&r &6cuesta mucha energía&r, pero la turbina no necesariamente la devolverá."
+	]
+	quest.5401B18217772D6C.title: "Intercambiador de Calor"
+	quest.54BF53CB70636C3F.quest_desc: [
+		"  Esclaviza la temporada de invierno en un marco de aluminio superenfriado. ¿Cómo es que remover aire enfría algo? Daré un ejemplo usando agua:"
+		""
+		"  Al evacuar la cámara, la presión cae por debajo del punto de ebullición; pero el agua luego pierde energía al hervir y evaporarse, luego se congela."
+	]
+	quest.54BF53CB70636C3F.title: "Congelador al Vacío"
+	quest.5676B5FD97FB10C3.quest_desc: [
+		"  Este es el &bHorno de Bronce&r y a pesar de ser tan lento como tu &bHorno&r regular, ¡la diferencia es que este &6usa &o20&r&6 veces menos combustible&r!"
+		""
+		"  ¡Gracias &bVapor&r por ser tan eficiente!"
+	]
+	quest.5676B5FD97FB10C3.quest_subtitle: "¡Es hora de fundir!"
+	quest.5676B5FD97FB10C3.title: "Horno de Bronce"
+	quest.58CA2853D9620919.quest_desc: [
+		"La &bMejora Básica&f es una mejora que puedes &6crear&f con solo componentes simples para &9acelerar&f tus máquinas."
+		""
+		"Cada una añade &62EU/t&f al límite máximo de &eenergía&f."
+	]
+	quest.5C8D7BD3DA61109F.quest_desc: [
+		"¡Has llegado a la versión eléctrica del &bCantero&r! Este te permite producir minerales incluso más rápido que antes &oy&r te da más opciones para taladros."
+		""
+		"&6Ahora podrás usar taladros de &bAcero&r&6, &bOro&r&6, &bAcero Inoxidable&r&6 y &bTitanio&r para terminar la producción de minerales y ¡cumplir mi promesa de nunca más necesitar minar minerales!"
+		""
+		"La estructura es &oexactamente&r la misma que la del &bCantero a Vapor&r, excepto que necesita una &bEscotilla de Entrada de Energía&r en lugar de una &bEscotilla de Entrada de Fluidos&r.&6 Asegúrate de haber automatizado tus &bTaladros de Bronce&r&r para ahora o será un dolor mantener tus canteros funcionando."
+	]
+	quest.5C8D7BD3DA61109F.quest_subtitle: "¡Los Recursos van BRRR!"
+	quest.5C8D7BD3DA61109F.title: "Cantero Eléctrico"
+	quest.5DD99224F29419C1.quest_desc: [
+		"Este es tu momento para producir &6electricidad real&r usando el &bVapor&r que has estado haciendo hasta ahora. La &bTurbina de Vapor LV&r convertirá cada &61 mb de Vapor en 1 EU&r de energía y lo hará hasta 32 veces por tick, produciendo una &6tasa máxima de energía de 32 EU/t&r."
+		""
+		"La &bTurbina de Vapor&r enviará electricidad automáticamente a cualquier máquina conectada directamente a su lado de salida. Solo se conectará a cables colocados en su lado de salida."
+		""
+		"La primera que harás es de nivel Bajo Voltaje. Hay turbinas de vapor de nivel superior, pero aún no has llegado allí."
+	]
+	quest.5DD99224F29419C1.title: "Turbina de Vapor LV"
+	quest.61748279816F2D7F.quest_desc: [
+		"¡El &bMódulo de Control de Redstone&f está hecho para que controles tus máquinas con &credstone&f! &6Haz Clic Derecho&f en el módulo en tu mano para &6cambiar&f su configuración de que la máquina requiera una &9Señal Alta&f a &9Señal Baja&f y viceversa. Luego colócalo en el espacio del módulo de &credstone&f."
+		""
+		"Esto significa:"
+		"- Cuando la configuración está en &9Señal Alta&f, la máquina solo &6funcionará&f si recibe una señal de &credstone&f. Sin señal de &credstone&f, se apagará."
+		"- Cuando la configuración está en &9Señal Baja&f, la máquina solo &6funcionará&f si no recibe una señal de &credstone&f. Una señal de &credstone&f la apagará."
+	]
+	quest.62B245A23CA62678.quest_desc: [
+		"Las &btuberías&r que &6fabriques&r para &6transportar&r los muchos &blíquidos&r y &bgases&r &6solo pueden contener un tipo&r de &bfluido&r a la vez y &6no se conectarán&r automáticamente a &btuberías vacías&r o &bcontenedores&r y &bmáquinas&r, así que asegúrate de usar esa &bLlave&r para &6configurarlas&r adecuadamente."
+		""
+		"Puedes &6forzar&r una conexión &6haciendo clic derecho&r en el centro de la &btubería&r con tu &bLlave&r, o &6haciendo clic derecho&r en un &bbloque&r con una &btubería&r en &btu mano&r; aunque *6no consumirá&r la &btubería&r, solo la conectará."
+		""
+		"&aCada tick&r, la &bTubería de Fluidos&r intentará &6extraer&r uniformemente de todos los &bbloques conectados&r y luego intentará &6insertar&r eso en todos los otros &bbloques conectados&r. "
+		""
+		"&aAlgunos otros consejos que podrían gustarte&r:"
+		"Úsalos sabiamente y abusa de ellos para tu &6ventaja completa&r: ¡Puedes tener hasta &63&r &btuberías&r en un &bsolo bloque&r para máxima compacidad! Por suerte, las &btuberías&r de &bcolores diferentes&r &6nunca&r se &6conectarán&r. Finalmente, &6hacer clic derecho&r en una &btubería&r con una &bLlave&r &6cambiará&r el tipo de conexión y &6shift+clic derecho&r soltará la tubería."
+		""
+		"&c¿Hora de un poco de espagueti?"
+	]
+	quest.62B245A23CA62678.title: "Transporte de Fluidos"
+	quest.640DB4139DF8AFA4.quest_desc: [
+		"  El &bCircuito Cuántico&r. La cúspide de la tecnología informática."
+		""
+		"  El comienzo de las máquinas más avanzadas que puedas imaginar."
+		""
+		"  A partir de aquí, &ano hay límites para tu imaginación&r."
+	]
+	quest.640DB4139DF8AFA4.title: "&dEl Endgame"
+	quest.64287B360B07BEBB.quest_desc: ["- &6Conecta/Encadena&r hasta un &cmáximo&r de &a64&r máquinas de tu elección."]
+	quest.64287B360B07BEBB.quest_subtitle: "¡Encadénalas!"
+	quest.660EFAF144F70749.quest_desc: [
+		"¡Hora de una gran mejora! Anteriormente solo podías producir electricidad a 32 eu/t por turbina usando la &bTurbina de Vapor LV&r, pero ahora podrás &6hacer un máximo de 128 eu/t&r con la nueva &bTurbina de Vapor MV&r! Además del aumento de producción de energía, funciona igual que la &bTurbina de Vapor LV&r."
+		""
+		"Algo a tener en cuenta es que &6no podrás usar los mismos cables que antes&r. Ahora necesitarás cables de &bCuproníquel&r o &bElectrum&r para transferir este nuevo nivel MV de energía."
+	]
+	quest.660EFAF144F70749.title: "Turbina de Vapor MV"
+	quest.668453E081A6C57B.quest_desc: [
+		"Forjado en el corazón de las supernovas, el &bTitanio&r tiene la mayor relación resistencia-peso. Es tan fuerte como el acero con un 45% menos de masa, lo que lo hace extremadamente potente para su peso."
+		""
+		"No es magnético, no es corrosivo, ni conduce electricidad, por lo que usarlo para partes de máquinas puede ser extremadamente beneficioso."
+		""
+		"¿Su color rosa proviene de algo?"
+	]
+	quest.668453E081A6C57B.title: "Titanio"
+	quest.67F2212453B81446.quest_desc: [
+		"Un lingote mixto que contiene un lingote de &bIridio&r intercalado entre dos lingotes de &bLingotes de Aleación a Prueba de Explosiones&r, listo para producir una &bPlaca de Iridio&r extremadamente resistente."
+		""
+		"Hablando de sandwiches, ¿no parece un poco &bsabroso&r?"
+	]
+	quest.67F2212453B81446.title: "Lingote de Iridio Mixto"
+	quest.698235E8EC974A7F.quest_desc: [
+		"Esta máquina hace un mejor trabajo fabricando &bPlacas Curvadas&r y &bAnillos&r que el &6Compresor."
+		""
+		"Es &6más rápida&r y &6mejor&r. ¡Fabrica al doble de velocidad!"
+	]
+	quest.698235E8EC974A7F.quest_subtitle: "¿Esto es equipo de gimnasio?"
+	quest.6BD625E5CA469914.quest_desc: [
+		"El último paso antes del overclock total, la mejora más domable pero beneficiosa, ¡el único e incomparable &bMejora Altamente Avanzada&r!"
+		""
+		"Cada una de estas añadidas a tu máquina &6aumenta su consumo máximo de energía posible en 512 eu/t&r. ¡Solo una de estas bellezas impulsará tu máquina hasta la luna!"
+		""
+		"Úsalas sabiamente, son bastante costosas de fabricar."
+	]
+	quest.6BD625E5CA469914.title: "Mejora Altamente Avanzada"
+	quest.6C96992416059AC4.quest_desc: [
+		"Para el &bTaladro Láser Definitivo&r:"
+		"- Se puede &6teñir&r!"
+		"- Presiona &6Shift Izquierdo&r + &6Botón Derecho&r para cambiar entre &5Fortuna/Saqueo&r y &5Toque de Seda&r."
+		"- Usa &6Alt&r + &6Rueda del Ratón&r para cambiar la velocidad de minería."
+		"- Presiona &6Y&r mientras lo sostienes o &6Botón Derecho&r al pasar el cursor para activar la &5minería 3x3&r."
+	]
+	quest.6C96992416059AC4.quest_subtitle: "¡La herramienta \"Hazlo Todo\"!"
+	quest.6CA941AE132445D9.quest_desc: [
+		"Los &bCascos de Máquina&r contienen la electrónica principal para permitir que las máquinas funcionen. Hay diferentes niveles de cascos de máquina, cada uno permitiéndote mejorar tus máquinas. El &bCasco de Máquina Básico&r es la base de toda máquina que use energía LV."
+		""
+		"Si quieres que tu máquina acepte energía MV, debes mejorarla usando un &bCasco de Máquina Avanzado&r. Puedes hacer esto &6haciendo clic derecho en la máquina con el casco mejorado&r en tu mano o colocándolo en la ranura superior derecha de la GUI de la máquina que parece tener una pequeña representación isométrica de un cubo. Puedes hacer lo mismo con cascos de nivel superior, ya que permitirán fuentes de energía de mayor nivel."
+	]
+	quest.6CA941AE132445D9.quest_subtitle: "El Corazón Electrónico"
+	quest.6CA941AE132445D9.title: "Cascos de Máquina"
+	quest.6EBFFFB567687A1E.quest_desc: [
+		"El &bAcero Inoxidable&r es casi tan fuerte como el acero normal, pero el &bAcero Inoxidable&r nunca se corroerá, oxidará o manchará. Este es el primer metal que no puedes simplemente meter en un horno y listo."
+		""
+		"&6Necesitas crear su polvo&r a partir de cuatro ingredientes: &bHierro&r, &bCromo&r, &bManganeso&r y &bNíquel&r. Luego, después de calentarlo a temperaturas extremas en tu HEA, necesitas usar el &bCongelador al Vacío&r para enfriar el lingote al rojo vivo y que sea utilizable."
+	]
+	quest.6EBFFFB567687A1E.title: "Acero Inoxidable"
+	quest.6EF133E0EC49BC33.quest_desc: [
+		"Flexible, no conductor y resistente. El &bCaucho&r será una parte importante de toda máquina eléctrica. Puedes producirlo &6mezclando&r &bPapel&r con &bAceite Sintético&r o &bCaucho Sintético&r. Mezcla el &bPolvo de Coque&r que hiciste con &bAgua&r en una &bMezcladora&r para producir &bAceite Sintético Crudo&r. Usa un &bHorno de Vapor&r para producir estos dos fluidos. El &bCaucho Sintético&r es más difícil de obtener, &6pero producirá más caucho por hoja de papel&r."
+		""
+		"Recuerda que necesitarás &bmuchas&r &bHojas de Caucho&r a largo plazo, así que tendrás que fabricarlas constantemente. Nota que puedes usar &bMadera&r para &6triturar&r y convertirla en &bPulpa de Madera&r que luego puede convertirse en &bPapel&r con un alto rendimiento."
+	]
+	quest.6EF133E0EC49BC33.title: "Caucho"
+	quest.6F57A2A5AA6E3F49.quest_desc: [
+		"El petróleo es un líquido negro inflamable que se forma en el suelo durante un tiempo &omuy muy&r largo. &6Usando una &bPlataforma de Perforación&r&6, puedes perforar el suelo y extraer este petróleo&r."
+		""
+		"El petróleo no es lo único que se puede bombear del suelo. Usando diferentes tipos de brocas decides qué fluido extraer. Usa tu EMI para ver qué brocas extraen qué fluidos."
+		""
+		"P.D. No olvides, este es uno de esos multibloques muy complejos. &6¡Usa tu &bLlave&r &6para mostrarte cómo construirlo&r!"
+	]
+	quest.6F57A2A5AA6E3F49.quest_subtitle: "Dulce, Dulce Petróleo"
+	quest.6F57A2A5AA6E3F49.title: "Plataforma de Perforación Petrolera"
+	quest.6F63B60042A7F6AE.quest_desc: [
+		"{image:modern_industrialization:block/machines/compressor/overlay_front_active width:32 height:32 align:center}"
+		"  Este es el &bCompresor&r y probablemente la primera máquina que querrás construir. Poder &6convertir lingotes en placas&r en una proporción 1:1 es extremadamente útil durante la era del vapor."
+		""
+		"  Ahorras recursos y no necesitarás gastar martillos solo para recolectar suficientes placas para tu primer proyecto."
+		""
+		"  También puede tomar esos &bLingotes Dobles&r que puedes apilar con el martillo de forja y convertirlos en &o2&r placas, ahorrando vapor y tiempo."
+	]
+	quest.6F63B60042A7F6AE.title: "Compresor de Bronce"
+	quest.6F6898DC529D1120.quest_desc: [
+		"  ¿Recuerdas cuando te dije que podías construir una &bCantera&r para que nunca más necesites minar recursos? ¡Bueno, ese momento ha llegado! No te dará &otodo&r, pero te dará muchos de los minerales principales. &oTodo&r viene después."
+		""
+		"  La &bCantera de Vapor&r es una máquina de múltiples bloques accionada por vapor que utiliza diferentes &6taladros&r que instalas en ella para cavar más profundo que el lecho de roca y extraer minerales directamente desde abajo, lo que sea que haya allí."
+		""
+		"  Puedes ver qué minerales proporciona este método consultando EMI. Te recomiendo que tengas varios &bAltos Hornos de Vapor&r funcionando antes de comenzar a armar la &bCantera&r porque &6esto usará MUCHO &r&bAcero&r."
+	]
+	quest.6F6898DC529D1120.title: "¿Recursos Infinitos?"
+	quest.707EBB99AA8F4C57.quest_desc: [
+		"  Hora de hacer tu primer cable; hebras largas de metales altamente conductivos para la transferencia de electricidad. &6Puedes combinar estos cables simples con tus &bHojas de Goma&r &6para hacer &bCables&r. "
+		""
+		"  ¡Asegúrate de poner suficiente goma alrededor de esos cables, no querrás electrocutarte!"
+	]
+	quest.707EBB99AA8F4C57.quest_subtitle: "¡Cable! ¡Zas!"
+	quest.707EBB99AA8F4C57.title: "Molino de Cable de Acero"
+	quest.71776A6A96EB037C.quest_desc: [
+		"  La &bArcilla Refractaria&r es una &6mezcla&r de &bArcilla&r común de río y &bPolvo de Ladrillo&r como agente templador, luego &6re-cocida&r para endurecerla y que resista temperaturas extremas."
+		""
+		"  Para hacer el &bPolvo de Ladrillo&r puedes usar tu buen &bMartillo de Forja&r y usarlo para &6triturar&r simples &bLadrillos&r. También puedes usar otras máquinas como el &bTriturador&r para hacer este proceso más eficiente. "
+	]
+	quest.71776A6A96EB037C.title: "Arcilla Refractaria"
+	quest.7342F6461382E839.quest_desc: [
+		"Has &allegado&r al paso final hacia la &binvencibilidad&r. "
+		""
+		"&bArmadura&r infundida con &dTecnología Cuántica&r para &6repeler&r todos los &cataques físicos&r y &5mágicos&r. "
+		""
+		"No puedes morir, ni siquiera por un &6Golpe Divino&r. "
+		""
+		"Ahora puedes &6volar libremente&r sin necesidad de &eelectricidad&r. "
+		""
+		"Este &bconjunto de armadura&r interactúa directamente con el &dreino cuántico&r para alterar el espacio y el tiempo a tu alrededor. "
+		""
+		"Teóricamente, sigues &6estacionario&r, y el espacio simplemente se &6mueve&r en relación a ti. --Este-- es el &6poder&r que posees."
+		""
+		" Esta &bespada&r puede y cortará &bcualquier cosa&r en su camino. "
+		""
+		"El filo de su hoja tiene la &ahabilidad&r de cortar a través del tiempo y borrar cualquier &eentidad&r que elijas de la existencia. Usa este &6poder&r con responsabilidad."
+	]
+	quest.7342F6461382E839.quest_subtitle: "¡Verdadero Poder!"
+	quest.7342F6461382E839.title: "&dArsenal Cuántico"
+	quest.742A5BB44F257D8E.quest_desc: [
+		"  Las &bTuberías de Objetos&r funcionan casi igual que las &bTuberías de Fluidos&r, excepto que &6transportan objetos y son mucho más configurables&r. Al igual que las &bTuberías de Fluidos&r, no se conectarán a inventarios por defecto, pero aún puedes forzar una conexión. Si haces clic derecho en una conexión sin una &bLlave Inglesa&r, verás un filtro."
+		""
+		"  Este filtro se puede configurar para muchos objetos diferentes al mismo tiempo y por defecto está en lista blanca. Esto significa que solo los objetos en el filtro se transportarán a través de la conexión. La lista negra evitará que cualquier objeto configurado en el filtro se transporte a través de la conexión."
+		""
+		"  Las tuberías de objetos insertarán objetos en prioridades más altas primero y transferirán 16 objetos &6cada 3 segundos&r, pero se pueden mejorar con &bMotores&r para mayor capacidad."
+	]
+	quest.742A5BB44F257D8E.title: "Transporte de Objetos"
+	quest.7436F6599E2D79C1.quest_desc: [
+		"- ¡Se puede &6Teñir&r y &6Recortar&r!"
+		""
+		"- Alterna el &6Vuelo Creativo&r presionando &eN&r."
+	]
+	quest.7436F6599E2D79C1.quest_subtitle: "Placa de gravedad pero en negro!"
+	quest.74C5FDC3B1E74586.quest_desc: [
+		"El &bTransformador de Flujo&r es una máquina poderosa que te permite prácticamente &6multiplicar&r el tipo de energía llamada &eEU&r en la energía de &eFE&r. De hecho, es tan poderosa que &6multiplica&r la salida de energía por &a25&r!"
+		""
+		"Ten en cuenta que no puedes hacer un bucle con la &aenergía&r, es un proceso &cunidireccional&r."
+	]
+	quest.74C5FDC3B1E74586.title: "Transformador de Flujo"
+	quest.7533E0212EFE326D.quest_subtitle: "Cuando se coloca frente a una &ecolmena&r, se extraerá &6miel&r en &bforma de fluido&r."
+	quest.7593E582FA928061.quest_desc: [
+		"  Este es el &bTaladro de Cobre&r. Te dará &6piedras y tierras&r, principalmente usados como materiales de construcción."
+		""
+		"  Revisa los resultados en EMI y ten en cuenta que &6el taladro tiene posibilidad de romperse&r, así que no hagas solo uno."
+	]
+	quest.7593E582FA928061.title: "Taladro de Cobre"
+	quest.768973710C811CB1.quest_subtitle: "¡Mark 2, Moda y más Gadgets!"
+	quest.768973710C811CB1.title: "&aConjunto Nano Cuántico"
+	quest.779C3C6B89AD2526.quest_desc: [
+		"  Las máquinas eléctricas funcionan igual que las de vapor, excepto que &6requieren electricidad en lugar de vapor&r y pueden sobrecargar progresivamente recetas hasta 32 EU/t (por ahora)."
+		""
+		"  Puedes usar tu EMI para ver las recetas de las versiones eléctricas de las máquinas que ya conoces. Las recetas son más complejas y requerirán partes más específicas para máquinas."
+		""
+		"  Tu primera parte principal serán los &bCircuitos Analógicos&r. Este será el circuito principal para máquinas LV y la base para circuitos y máquinas de alto nivel. &6Deberías automatizar esto lo antes posible&r."
+		""
+		"  Te sugiero encarecidamente que comiences a automatizar partes tan pronto como puedas. Te avisaré qué partes deberías automatizar a medida que las encontremos. ¡Hacerlo hará que las máquinas eléctricas sean prácticamente gratuitas ya que no necesitarás fabricar manualmente ningún componente!"
+	]
+	quest.779C3C6B89AD2526.quest_subtitle: "Hora de una Gran Actualización"
+	quest.779C3C6B89AD2526.title: "&e¡La Era Eléctrica!"
+	quest.791CAEBAE57EF0E1.quest_desc: ["  Los &bMotores&r toman electricidad y producen fuerza rotacional. Usarás motores para crear muchas máquinas y otros componentes en el futuro. &6Deberías automatizar estos&r."]
+	quest.791CAEBAE57EF0E1.quest_subtitle: "Me Haces Girar"
+	quest.791CAEBAE57EF0E1.title: "Motores"
+	quest.7AF270EF635B11CF.quest_desc: [
+		"  Creado al &6comprimir&r tres de los materiales más fuertes que has usado en tu viaje hasta ahora."
+		""
+		"- &bTungsteno&r, un metal con un &6punto de fusión extremadamente alto y una densidad&r inigualable."
+		""
+		"- &bTitanio&r, un material &6resistente a la corrosión&r, &6fuerte pero ligero&6."
+		""
+		"- &bAcero Inoxidable&r, &6resistente al óxido&r al extremo."
+		""
+		"  Esta es la placa más fuerte que jamás forjarás. "
+	]
+	quest.7AF270EF635B11CF.title: "Placa de Aleación a Prueba de Explosiones"
+	quest.7BDBE300D4B0B1F7.quest_subtitle: "¡Exceso de Polvo de Huesos!"
+	quest.7C0FA555C5FE00D1.quest_desc: [
+		"  Los &bBrazos Robóticos&r son formas de mover cosas automáticamente dentro de una máquina."
+		""
+		"  Estos pueden ser componentes muy complejos y por eso están hechos de &bAcero&r para mantenerse fuertes y prevenir daños internos."
+		""
+		"  &6Deberías automatizar estos&r."
+	]
+	quest.7C0FA555C5FE00D1.quest_subtitle: "Bip Bop"
+	quest.7C0FA555C5FE00D1.title: "Brazos Robóticos"
+	quest.7D0CF81F7E703B71.quest_desc: [
+		"{image:modern_industrialization:block/machines/water_pump/overlay_front_active width:32 height:32 align:center}"
+		""
+		"  ¿Pensando en el bombeo automático de &bAgua&r? ¡Qué bueno que puedes hacer casi cualquier cosa que quieras! Una &bBomba de Agua&r recolectará &bAgua&r automáticamente y la &6transferirá a bloques adyacentes&r. Asegúrate de colocar fuentes de agua alrededor de la bomba horizontalmente, dale &bVapor&r, y comenzará a producir &bAgua&r por 1 EU/t."
+		""
+		"  La &bBomba de Agua de Bronce&r producirá &6125mb de &bAgua&r por cada fuente de agua adyacente cada 5 segundos&r, permitiendo una salida máxima de 1000mb cada 5 segundos."
+	]
+	quest.7D0CF81F7E703B71.title: "Bomba de Agua de Bronce"
+	quest.7FD5FCEFE3697A7C.quest_desc: [
+		"Por solo &omiserables&r &e8EU/t&r, el &bAgricultor de Vapor&r puede realizar lo siguiente:"
+		"- &6Labrar&r: Cuando está activado, convierte bloques de tierra en tierra de cultivo. Esto no funcionará a menos que se suministre agua."
+		"- &6Hidratar&r: Cuando se suministra agua, hidrata la tierra labrada."
+		"- &6Cosechar&r: Cuando hay suficiente espacio de salida, cosecha cultivos y árboles maduros."
+		"- &6Plantar&r: Cuando se suministran cultivos o brotes, los planta en tierra válida. Usando diferentes modos de plantación los colocará en diferentes arreglos."
+	]
+	quest.7FD5FCEFE3697A7C.quest_subtitle: "¿Qué le dijo el bebé &emaíz&r a la mamá &emaíz&r?"
+}
