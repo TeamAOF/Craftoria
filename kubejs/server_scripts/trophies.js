@@ -96,7 +96,7 @@ ServerEvents.generateData('after_mods', event => {
     event.json(`trofers:trofers/trophies/${trophy_name}`, trophy);
 
     // Aggiungi il trofeo alla lista dei drop, usando il nome univoco
-    drops.trophies[data.entity] = `trofers:trophies/${trophy_name}`;
+    drops.trophies[data.entity] = `trofers:${trophy_name}`;
   });
 
   
@@ -129,4 +129,5 @@ ServerEvents.recipes(event => {
       });
     });
   });
+
 });
