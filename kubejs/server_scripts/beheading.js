@@ -1,5 +1,5 @@
 EntityEvents.death("player", (event) => {
-  console.log("player morto");
+  //console.log("player morto");
 
   let { entity, source } = event;
 
