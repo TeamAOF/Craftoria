@@ -144,6 +144,8 @@ ServerEvents.tags('item', e => {
   //   'expandedae:exp_pattern_provider',
   //   'expandedae:exp_pattern_provider_part',
   // ]);
+
+  e.remove('curios:cosmetic', 'hazennstuff:ears_a');
 });
 
 ServerEvents.tags('block', e => {

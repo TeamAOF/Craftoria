@@ -302,6 +302,7 @@ ServerEvents.generateData('after_mods', event => {
     'create:crushing/sculk_stone_coal_ore',
     'create:cutting/stripped_echo_log',
     'mekaweapons:module_arrowvelocity_unit',
+    'mechtrowel:wand_upgrade'
   ];
 
   /** @type {string[]} */
