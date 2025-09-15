@@ -28,6 +28,8 @@
 	transportLeashed = "ENABLED"
 	#List of entities that cannot be teleported, either as pet, leashed, or on warp plates.
 	entityDenyList = ["minecraft:wither"]
+	#Set to true to enable warp modifier items for applying status effects on teleports.
+	enableModifiers = true
 
 [inventoryButton]
 	#Set to 'NONE' for no inventory button. Set to 'NEAREST' for an inventory button that teleports to the nearest waystone. Set to 'ANY' for an inventory button that opens the waystone selection menu. Set to a waystone name for an inventory button that teleports to a specifically named waystone.

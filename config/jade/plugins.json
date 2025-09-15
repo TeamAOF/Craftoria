@@ -76,6 +76,9 @@
   "entangled": {
     "entangled_block_component": true
   },
+  "ftbquests": {
+    "barrier": true
+  },
   "jade": {
     "coordinates.rel": false,
     "registry_name.special": false,
@@ -144,6 +147,10 @@
     "framed_item_frame": true,
     "framed_block_generic": true
   },
+  "compactmachines": {
+    "show_owner": false,
+    "bound_machine": true
+  },
   "jade_access": {
     "held_item": true,
     "sign": true,
@@ -192,6 +199,7 @@
     "router": true
   },
   "xycraft": {
+    "energy_pipe_debug": true,
     "tank_component": true,
     "extractor_component": true
   },
@@ -200,6 +208,10 @@
   },
   "jadeaddons": {
     "equipment_requirement": ""
+  },
+  "exposure": {
+    "lightroom": true,
+    "photograph_frame": true
   },
   "jadeaddons.lootr": {
     "info": true

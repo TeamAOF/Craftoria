@@ -1,0 +1,24 @@
+#Enable replace mode functionality
+replaceModeEnabled = true
+#Maximum number of palettes that can be stored (will be rounded to nearest multiple of 7)
+# Default: 28
+# Range: 7 ~ 70
+maxPalettes = 28
+#Maximum number of blocks that can be placed in one wand mode action as default
+# Default: 64
+# Range: 1 ~ 256
+wandMaxBlocks = 64
+#Maximum range from clicked block for wand mode
+# Default: 64
+# Range: 2 ~ 256
+wandMaxRange = 64
+#Enable wand upgrade functionality
+wandUpgradeEnabled = true
+#Enable wand capacity upgrade functionality
+wandCapacityUpgradeEnabled = true
+#Allow wand mode without requiring upgrade item (default: false)
+wandModeWithoutUpgrade = false
+#List of blocks that cannot be replaced (e.g., 'minecraft:bedrock')
+replaceBlacklistBlocks = ["minecraft:bedrock", "minecraft:end_portal", "minecraft:command_block", "minecraft:barrier"]
+#List of block tags that cannot be replaced (e.g., '#minecraft:wither_immune')
+replaceBlacklistTags = ["#minecraft:wither_immune"]

@@ -169,6 +169,10 @@
 	# Default: 0.0
 	# Range: 0.0 ~ 1.7976931348623157E308
 	scuba_air_usage_per_block_depth = 0.0
+	#Jetboots height limit before cutting out, relative to world max build height
+	# Default: 64
+	# Range: > -2147483648
+	jet_boots_height_limit = 64
 
 [advanced]
 	#When set to true, the Kerosene Lamp's fake air blocks won't be registered and therefore removed from the world. Useful if this causes trouble (it shouldn't though)

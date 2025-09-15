@@ -1,3 +1,8 @@
+#How long the delay is between breaking another block with an actuator without letting go of the `Destroy` hotkey.
+# Default: 2
+# Range: 0 ~ 5
+actuator_pickup_delay = 2
+
 [Visuals]
 	#How fast a ui should change states each tick (example between two colors)
 	# Default: 0.015
@@ -15,3 +20,5 @@
 	show_reload_message = true
 	#Display recipes that would otherwise be hidden to the player in a recipe viewer
 	show_hidden_recipes = false
+	#To help isolate the number of blockstates each mod adds. Only turn this on if you are building a pack and wanting to help debug the amount of blocks your client has. (This runs at level join)
+	show_blockstate_counts = false

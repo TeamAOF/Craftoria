@@ -2,8 +2,15 @@
 version = 0
 redstoneBlockDust = true
 redstoneBlockDustDensity = "DEFAULT"
-glowstoneBlockDustDisplayType = "ON"
+redstoneDustEmittingBlocks = [
+    "minecraft:redstone_block"
+]
+glowstoneBlockDust = true
 glowstoneBlockDustDensity = "DEFAULT"
+glowstoneDustEmittingBlocks = [
+    "minecraft:glowstone"
+]
+netherOnlyGlowstoneBlockDust = false
 beehivesHaveSleepingZs = true
 torchflowerSmoke = "DEFAULT"
 torchflowerFlames = true
@@ -20,6 +27,7 @@ cauldronCleanItemSounds = true
 compostingCompostParticles = true
 compostingItemParticles = true
 commandBlockParticles = "ON"
+commandBlockParticlesDensity = 1.0
 slimeBlockBounceSounds = true
 beaconParticlesDisplayType = "ON"
 beaconParticlesDensity = 10
@@ -30,6 +38,10 @@ endPortalParticles = true
 leavesDecayEffects = true
 farmlandDestroyEffects = true
 amethystSparkleDisplayType = "ON"
+amethystSparkleEmittingBlocks = [
+    "minecraft:amethyst_block",
+    "minecraft:budding_amethyst"
+]
 amethystSparkleSounds = true
 floweringAzaleaPetals = true
 sculkBlockSculkDust = true
@@ -38,8 +50,6 @@ sculkShriekerDestroySouls = true
 sculkCatalystDestroySouls = true
 calibratedSculkSensorAmethystSparkle = true
 campfireSizzlingSoundVolume = 0.5
-vegetationFirefliesDensity = 30
-vegetationFirefliesSpawnType = "FLOWERS_ONLY"
 replacePowderSnowFlakes = true
 lavaCauldronEffects = true
 enderEyePlacedRings = true
@@ -49,7 +59,9 @@ eyeColors = [
     [ "minecraft:ender_eye", { r = 122, g = 186, b = 171 } ]
 ]
 endPortalFrameParticlesDisplayType = "SMOKE"
+endPortalFrameParticlesDensity = 1.0
 replaceOminousVaultConnection = true
+cobwebMovementSounds = true
 
 [sparks]
 removeVanillaCampfireSparks = true
@@ -59,7 +71,9 @@ fireSparks = true
 campfireSparks = true
 torchSparks = true
 lanternSparksDensity = 5
-lavaSparks = "ON"
+lavaSparksDisplayType = "ON"
+lavaSparksDensity = 1.0
+brewingStandSparks = true
 
 [updatedSmoke]
 candleSmoke = true
@@ -72,6 +86,8 @@ campfireDowseSmoke = true
 lavaFizzSteam = true
 replaceCampfireFoodSmoke = true
 spongeDryingOutSteam = true
+replaceRainEvaporationSteam = true
+lavaCauldronsEvaporateRain = true
 spawnLogic = "BRIGHTNESS"
 steamingWater = false
 boilingWater = false
@@ -104,7 +120,9 @@ dustyBlocks = [
     "minecraft:red_concrete_powder",
     "minecraft:black_concrete_powder"
 ]
-fallingDust = true
-fallingDustStartDistance = 3
-landDust = true
-landSound = true
+whileFallingDust = true
+whileFallingDustStartDistance = 3
+onLandDust = true
+onLandSound = true
+weakSupportDust = true
+weakSupportDustDensity = 1

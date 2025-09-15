@@ -1,4 +1,11 @@
 {
+	# Select the currency implementation to use
+	# Note: currently Neoforge-only
+	# DEFAULT: use Magic Coins if installed, otherwise no currency plugin
+	# Default: "default"
+	# Valid values: "default", "magic_coins"
+	currency_selector: "default"
+	
 	# Only show waystones that have been discovered
 	# Default: true
 	only_show_known_waystones: true

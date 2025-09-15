@@ -76,6 +76,13 @@
 		}
 	}
 	
+	# Cross-mod integration
+	integration: {
+		# If true, and FTB Team Bases is installed, then the '/spawn' command will instead send players to the lobby
+		# Default: true
+		team_bases_spawn_override: true
+	}
+	
 	# Miscellaneous features and utilities
 	misc: {
 		# Allows users to access an Anvil GUI without needing an Anvil.
@@ -232,6 +239,22 @@
 		jump: {
 			# Default: true
 			enabled: true
+		}
+		playerspawn: {
+			# Cooldown between /playerspawn commands (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.playerspawn.cooldown
+			# Default: 10
+			# Range: 0 ~ 604800
+			cooldown: 10
+			
+			# Default: true
+			enabled: true
+			
+			# Warm-up time before /playerspawn command executes (in seconds)
+			# You can override this with FTB Ranks using ftbessentials.playerspawn.warmup
+			# Default: 0
+			# Range: 0 ~ 604800
+			warmup: 0
 		}
 		
 		# Allows players to teleport to a random point in the Wilderness

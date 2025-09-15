@@ -8,7 +8,7 @@
 	cost_per_block = 0.03125
 	#Source Cost when crossing dimensions of Warping Spell Prism
 	dimension_cost = 2000
-	#How long the Warping Spell Prism will load chunks after a teleport in ticks
+	#How long the Warping Spell Prism will load chunks (in ticks) after a teleport
 	load_time = 600
 
 #Config for Warp Scroll Holder
@@ -17,3 +17,8 @@
 	# Default: 1000
 	# Range: > 0
 	cost = 1000
+
+#Config for Warp Scroll Holder
+[scryers_linkage]
+	#How long the Scryer's Linkage will load chunks (in ticks) after its target is requested
+	load_time = 600

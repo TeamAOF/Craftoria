@@ -1,0 +1,13 @@
+[instant_camera]
+	#Min/max focal ranges of an Instant Camera.
+	#Allowed range: 10-300
+	#Default: 20-40
+	focal_range = "20-40"
+	#Default size of an exposure image taken with Instant Camera. High values take more disk space and can cause lag. Default: 240
+	# Default: 240
+	# Range: 1 ~ 2048
+	frame_size = 240
+	#How many Slides can Instant Camera hold at once. Default: 12
+	# Default: 12
+	# Range: 1 ~ 64
+	slide_capacity = 12

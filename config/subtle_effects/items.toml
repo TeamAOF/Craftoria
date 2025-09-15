@@ -10,3 +10,25 @@ waterEvaporateFromBucketSteam = true
 waterBucketUseParticles = true
 lavaBucketUseParticles = true
 powderSnowBucketUseParticles = true
+lingeringPotionClouds = true
+splashPotionClouds = true
+
+[itemRarity]
+particlesDisplayType = "ON"
+particleColorType = "NAME_COLOR"
+mixedColorName = true
+useItemBorder = true
+colorOverrides = [  ]
+particleMaxHeight = 1.0
+particleMaxSpeed = 1.0
+particleDensity = 1.0
+
+[projectiles]
+enderPearlTrail = true
+xpBottleParticlesDisplayType = "DEFAULT"
+xpBottleParticlesDensity = 10
+eggSmashSoundVolume = 0.5
+eggSplatParticles = true
+snowballTrailDensity = 0.5
+snowballPoofsHaveSnowflakes = true
+snowballPoofSoundVolume = 0.3

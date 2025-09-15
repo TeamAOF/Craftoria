@@ -143,6 +143,16 @@
 		# Default: 0.07500000298023224
 		# Range: 0.0 ~ 0.5
 		experienceLanternPullForceMultiplier = 0.07500000298023224
+		#.
+		#If the printing banner patterns function of Printers should be enabled.
+		#[@cui:RequiresReload:server]
+		enableBannerPatternPrinting = true
+		#.
+		#The amount of liquid a Grindstone Drain can hold (mB).
+		#[@cui:RequiresReload:server]
+		# Default: 1000
+		# Range: > 5000
+		mechanicalGrindstoneFluidCapacity = 5000
 
 	#.
 	#Parameters and abilities of enchantment operating components

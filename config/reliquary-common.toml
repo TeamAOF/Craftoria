@@ -19,6 +19,8 @@ mobDropsEnabled = true
 	passivePedestal = false
 	#Disable recipes to craft spawn eggs from fragments
 	disableSpawnEggRecipes = false
+	#Disable all charms and their recipes
+	charms = false
 
 #Potions related settings
 [potions]
@@ -408,7 +410,7 @@ mobDropsEnabled = true
 	#Rending Gale settings
 	[items.rendingGale]
 		#Number of feathers the rending gale can hold
-		# Default: 30000
+		# Default: 300
 		# Range: > 0
 		chargeLimit = 30000
 		#Number of feathers used when the rending gale is cast in flight mode

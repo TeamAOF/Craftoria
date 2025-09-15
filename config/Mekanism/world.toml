@@ -488,3 +488,96 @@ userWorldGenVersion = 0
 	# Default: 1
 	# Range: 0 ~ 2031
 	halfHeight = 1
+
+#Generation Settings for Naquadah ore.
+[naquadah]
+	#Determines if Naquadah ore should be added to world generation.
+	shouldGenerate = true
+
+	#Small Naquadah Vein Generation Settings.
+	[naquadah.small]
+		#Determines if Small Naquadah Veins should be added to world generation. Note: Requires generating naquadah ore to be enabled.
+		shouldGenerate = true
+		#Chance that Small Naquadah Veins generates in a chunk.
+		# Default: 8
+		# Range: 1 ~ 256
+		perChunk = 8
+		#Maximum number of blocks in a Small Naquadah Vein.
+		# Default: 4
+		# Range: 1 ~ 64
+		maxVeinSize = 4
+		#Chance that blocks that are directly exposed to air in a Small Naquadah Vein are not placed.
+		# Default: 0.0
+		# Range: 0.0 ~ 1.0
+		discardChanceOnAirExposure = 0.0
+		#Distribution shape for placing Small Naquadah Veins.
+		#Allowed Values: TRAPEZOID, UNIFORM
+		shape = "TRAPEZOID"
+		#Half length of short side of trapezoid, only used if the shape is Trapezoid. A value of zero means the shape is a triangle.
+		plateau = 0
+
+		#Minimum (inclusive) height anchor for Small Naquadah Veins. This defines the minimum y-level that Small Naquadah Veins can spawn at.
+		[naquadah.small.minInclusive]
+			#The type of anchor. This is used to define how the value is used in calculating the y-level.
+			#Absolute (y = value)
+			#Above Bottom (y = minY + value)
+			#Below Top (y = depth - 1 + minY - value)
+			#Allowed Values: ABSOLUTE, ABOVE_BOTTOM, BELOW_TOP
+			type = "ABSOLUTE"
+			#Value used for calculating the y-level for the anchor based on the type.
+			value = -62
+
+		#Maximum (inclusive) height anchor for Small Naquadah Veins. This defines the maximum y-level that Small Naquadah Veins can spawn at.
+		[naquadah.small.maxInclusive]
+			#The type of anchor. This is used to define how the value is used in calculating the y-level.
+			#Absolute (y = value)
+			#Above Bottom (y = minY + value)
+			#Below Top (y = depth - 1 + minY - value)
+			#Allowed Values: ABSOLUTE, ABOVE_BOTTOM, BELOW_TOP
+			type = "ABSOLUTE"
+			#Value used for calculating the y-level for the anchor based on the type.
+			value = -59
+
+	#Middle Naquadah Vein Generation Settings.
+	[naquadah.middle]
+		#Determines if Middle Naquadah Veins should be added to world generation. Note: Requires generating naquadah ore to be enabled.
+		shouldGenerate = true
+		#Chance that Middle Naquadah Veins generates in a chunk.
+		# Default: 24
+		# Range: 1 ~ 256
+		perChunk = 24
+		#Maximum number of blocks in a Middle Naquadah Vein.
+		# Default: 6
+		# Range: 1 ~ 64
+		maxVeinSize = 6
+		#Chance that blocks that are directly exposed to air in a Middle Naquadah Vein are not placed.
+		# Default: 0.0
+		# Range: 0.0 ~ 1.0
+		discardChanceOnAirExposure = 0.0
+		#Distribution shape for placing Middle Naquadah Veins.
+		#Allowed Values: TRAPEZOID, UNIFORM
+		shape = "TRAPEZOID"
+		#Half length of short side of trapezoid, only used if the shape is Trapezoid. A value of zero means the shape is a triangle.
+		plateau = 0
+
+		#Minimum (inclusive) height anchor for Middle Naquadah Veins. This defines the minimum y-level that Middle Naquadah Veins can spawn at.
+		[naquadah.middle.minInclusive]
+			#The type of anchor. This is used to define how the value is used in calculating the y-level.
+			#Absolute (y = value)
+			#Above Bottom (y = minY + value)
+			#Below Top (y = depth - 1 + minY - value)
+			#Allowed Values: ABSOLUTE, ABOVE_BOTTOM, BELOW_TOP
+			type = "ABSOLUTE"
+			#Value used for calculating the y-level for the anchor based on the type.
+			value = 10
+
+		#Maximum (inclusive) height anchor for Middle Naquadah Veins. This defines the maximum y-level that Middle Naquadah Veins can spawn at.
+		[naquadah.middle.maxInclusive]
+			#The type of anchor. This is used to define how the value is used in calculating the y-level.
+			#Absolute (y = value)
+			#Above Bottom (y = minY + value)
+			#Below Top (y = depth - 1 + minY - value)
+			#Allowed Values: ABSOLUTE, ABOVE_BOTTOM, BELOW_TOP
+			type = "ABSOLUTE"
+			#Value used for calculating the y-level for the anchor based on the type.
+			value = 30

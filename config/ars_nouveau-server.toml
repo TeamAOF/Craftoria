@@ -53,18 +53,22 @@
 	#Enable warp portals?
 	enableWarpPortals = true
 
-#Beta Features
-[beta]
-	#Allow crafting infinite spells. This is a beta feature and may cause crashes.
-	infiniteSpells = false
-	#Limits the crafting infinite spells beta, set a cap to the number of additional glyphs. This is a beta feature and may cause crashes.
-	# Default: 30
-	# Range: 10 ~ 1000
-	infiniteSpellLimit = 30
-
 #Blocks
 [blocks]
 	#Maximum storage lectern linking range
 	# Default: 30
 	# Range: > 1
 	lecternLinkRange = 30
+	#Maximum range of the decor blossom
+	# Default: 30
+	# Range: > 1
+	decorBlossomRange = 30
+
+#Infinite Spells Mode
+[spell_length]
+	#If Enabled, the value below will be added to the base glyph limit for spellbooks.
+	infiniteSpells = false
+	#Only used if infinite spells is true, increases or decreases the spell length limit in spellbooks..
+	# Default: 30
+	# Range: -9 ~ 1000
+	infiniteSpellLimit = 30

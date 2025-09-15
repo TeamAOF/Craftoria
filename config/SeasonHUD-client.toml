@@ -25,7 +25,7 @@
 
 		[SeasonHUD.HUD.Colors]
 			#Display the season name in a color?
-			#(true/false)
+			#(true/false)Default is true.
 			season_name_color = true
 			#The RGB color (decimal) for spring.
 			#(256 * 256 * r) + (256 * g) + (b) is the formula.
@@ -65,10 +65,6 @@
 			wet_color = 2068975
 
 	[SeasonHUD.Season]
-		#Require the calendar item to be in the players inventory to show the HUD?
-		#(true/false)
-		#Default is false.
-		need_calendar = false
 		#Show the Tropical seasons (Wet/Dry) in Tropical Biomes.
 		#Will not change the season behavior in the biomes.
 		#(true/false)
@@ -76,26 +72,19 @@
 		enable_show_tropical_season = true
 		#Show sub-season (i.e. Early Winter, Mid Autumn, Late Spring) instead of basic season?
 		#(true/false)
-		# Default is true.
+		# Default is .true.
 		enable_show_sub_season = true
 		#Show the day of the current Season/Sub-Season?
-		#Default is SHOW_DAY.
+		#Default is .SHOW_DAY.
 		#Allowed Values: NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS
 		enable_show_day = "SHOW_DAY"
-		#Having the calendar item shows the detailed version of the HUDDefault is false.
-		calendar_detail = false
-		#Change if you are using a Minecraft day length other than vanilla value and using Fabric Seasons.
-		#Default Minecraft day is 24000.
-		# Default: 24000
-		# Range: > 0
-		day_length = 24000
 
 	[SeasonHUD.Minimap]
 		#Enable integration with minimap mods?
 		#(true/false)
-		#Default is true.
+		#Default is .true.
 		enable_minimap_integration = false
 		#Show the default SeasonHUD display when the minimap is hidden?
 		#(true/false)
-		#Default is false.
+		#Default is .false.
 		enable_show_minimap_hidden = false

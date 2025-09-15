@@ -1,22 +1,22 @@
 {
   "options": {
-    "interactionRateServer": 10,
-    "interactionRateClient": 1,
-    "scrollCreativeTabs": true,
-    "quickCrafting": true,
-    "qcOverflowMode": "INVENTORY",
+    "interactionIntervalMp": 5,
+    "interactionIntervalSp": 1,
     "hotbarScope": "HOTBAR",
     "extraSlotScope": "EXTRA",
-    "matchingSlotsKey": 341,
-    "dropKey": 342,
     "alwaysMatchByType": false,
     "typeMatchTags": [
       "enchantable/weapon",
       "enchantable/mining",
       "enchantable/armor"
     ],
-    "hotbarMode": "MERGE",
-    "extraSlotMode": "MERGE",
-    "matchByType": false
+    "scrollCreativeTabs": true,
+    "scrollRecipeBookTabs": true,
+    "scrollRecipeBookPages": true,
+    "useQuickCrafting": true,
+    "qcSingleCraftMode": "CURSOR_INVENTORY",
+    "useQuickTrading": true,
+    "dropKey": 342,
+    "matchingSlotsKey": 341
   }
 }

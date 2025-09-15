@@ -96,3 +96,13 @@
 	# Default: 1000
 	# Range: 1000 ~ 10000
 	extractor_buffer = 1000
+
+["Compat Content"]
+	#The maximum rate a Mekanical Condenser can convert Chemicals to Fluids.
+	# Default: 250
+	# Range: 1 ~ 1000000000
+	max_condenser_rate = 250
+	#The maximum rate a Mekanical Evaporator can convert Fluids to Chemicals
+	# Default: 250
+	# Range: 1 ~ 1000000000
+	max_evaporator_rate = 250

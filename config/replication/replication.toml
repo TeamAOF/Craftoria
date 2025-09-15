@@ -34,6 +34,12 @@
 		# Default: 80
 		# Range: > 1
 		POWER_TICK = 80
+		# Default: 0.8
+		# Range: 0.0 ~ 1.0
+		ENCLOSURE_SPEED_MULTIPLIER = 0.8
+		# Default: 1.1
+		# Range: 0.0 ~ 1.7976931348623157E308
+		ENCLOSURE_POWER_MULTIPLIER = 1.1
 
 	[ReplicationConfig.Disintegrator]
 		# Default: 40

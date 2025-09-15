@@ -19,6 +19,9 @@
 	# Default: 100
 	# Range: > 1
 	very_hot_items_burn_time = 100
+	#Whether item fuels should be blocked in multiblock boilers
+	#Default: false
+	disable_item_fuel_in_multiblock_boilers = false
 
 [efficiency]
 	#The machine efficiency hack mode to use. Only applies to electric machines

@@ -1,6 +1,6 @@
 # Enables wobbly items in advancement toasts.
 enableAdvancementToastItems: true
-# Enables curse formatting.
+# Enables special formatting for items with cursed enchantments.
 enableCurseFormatting: true
 # Enables particles in the enchant(ing/ment) table.
 enableEnchantParticles: true
@@ -20,6 +20,8 @@ enableVanillaSlotHighlighting: true
 floatingItemEasingSpeed: 0.75
 # Affects the rotation amplitude of the floating item.
 floatingItemRotationAmplitude: 1.0
+# Affects the size of the floating item.
+floatingItemScale: 1.4
 # Affects the speed of the hotbar selector.
 hotbarSelectorSpeed: 3.0
 # Affects the size of the hovered item.

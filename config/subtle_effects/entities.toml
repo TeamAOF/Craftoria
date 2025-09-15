@@ -1,10 +1,13 @@
 # Don't change this! Version used to track needed updates.
 version = 0
-enderPearlTrail = true
+chickenFeathers = true
+parrotFeathers = true
+snowGolemSnowflakes = true
 allayMagicDensity = 0.2
 vexMagicDensity = 0.2
 sheepShearFluff = true
 improvedDragonFireballTrail = true
+dragonsBreathClouds = true
 commandBlockMinecartParticles = "ON"
 endCrystalParticles = true
 minecartSparksDisplayType = "DEFAULT"
@@ -17,22 +20,15 @@ replaceSpellCasterParticles = true
 ironGolemCrackParticles = true
 spectralArrowParticles = true
 wardenDeathSoulParticles = true
-xpBottleParticlesDisplayType = "DEFAULT"
-xpBottleParticlesDensity = 10
-eggSmashSoundVolume = 0.5
-eggSplatParticles = true
 freezingSnowFlakes = true
 featherTicklingPandas = true
 improvedPandaSneezes = true
-snowballTrailDensity = 0.5
-snowballPoofsHaveSnowflakes = true
-snowballPoofSoundVolume = 0.3
 villagerWorkAtWorkstationParticles = true
-
-[attacked]
-chickenFeathers = true
-parrotFeathers = true
-snowGolemSnowflakes = true
+improvedBrownMooshroomFeedingEffects = true
+improvedMooshroomShearingEffects = true
+replaceBlazeSmoke = true
+animalFeedingParticles = true
+animalFeedingSoundVolume = 1.0
 
 [sleeping]
 playerSnoreChance = 1.0
@@ -92,16 +88,6 @@ flames = true
 sparks = true
 sounds = true
 extinguishSteam = true
-
-[itemRarity]
-particlesDisplayType = "ON"
-particleColorType = "NAME_COLOR"
-mixedColorName = true
-useItemBorder = true
-colorOverrides = [  ]
-particleMaxHeight = 1.0
-particleMaxSpeed = 1.0
-particleDensity = 1.0
 
 [explosives]
 tntUpdateSmoke = true

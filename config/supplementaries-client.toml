@@ -193,6 +193,8 @@
 	mob_head_shaders = true
 	#Sends your current chat when you die while typing
 	send_chat_on_death = true
+	#Makes enderman heads use vanilla texture. Enable for texture pack support
+	enderman_head_texture_pack_support = true
 
 	[tweaks.colored_maps]
 		#Needs the server config with same name on. If on here it will ignore the server one and keep vanilla colors

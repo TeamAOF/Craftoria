@@ -1,10 +1,6 @@
 # Don't change this! Version used to track needed updates.
 version = 0
 biomeColorRain = true
-flameGeyserSpawnChance = 0
-flameGeyserSoundVolume = 0.5
-flameGeyserActiveTime = 300
-flameGeyserInactiveTime = 500
 
 [biomes]
 biomeParticlesRadius = 32
@@ -12,11 +8,6 @@ mushroomSporeBiomes = [
     "minecraft:mushroom_fields"
 ]
 mushroomSporeDensity = 10
-fireflyBiomes = [
-    "minecraft:swamp",
-    "minecraft:mangrove_swamp"
-]
-fireflyDensity = 6
 pollenBiomes = [
     "minecraft:flower_forest",
     "minecraft:sunflower_plains"
@@ -26,3 +17,60 @@ sculkDustBiomes = [
     "minecraft:deep_dark"
 ]
 sculkDustDensity = 5
+
+[geysers]
+useUpdatedSmoke = false
+flameGeyserSpawnChance = 5
+flameGeyserSoundVolume = 0.5
+flameGeyserActiveTime = 300
+flameGeyserInactiveTime = 500
+smokeGeyserSpawnChance = 5
+smokeGeyserSoundVolume = 0.2
+smokeGeyserActiveTime = 300
+smokeGeyserInactiveTime = 500
+bubbleGeyserSpawnChance = 5
+bubbleGeyserSoundVolume = 0.5
+bubbleGeyserActiveTime = 300
+bubbleGeyserInactiveTime = 500
+
+[fireflies]
+firefliesEnabled = true
+dimensionBlocklist = [
+    "twilightforest:twilight_forest_type"
+]
+biomesBlocklist = [  ]
+biomesAllowlist = [
+    "minecraft:lush_caves"
+]
+spawnableBlocks = [
+    "minecraft:short_grass",
+    "minecraft:tall_grass",
+    "minecraft:poppy",
+    "minecraft:dandelion",
+    "minecraft:peony",
+    "minecraft:blue_orchid",
+    "minecraft:allium",
+    "minecraft:azure_bluet",
+    "minecraft:orange_tulip",
+    "minecraft:pink_tulip",
+    "minecraft:red_tulip",
+    "minecraft:white_tulip",
+    "minecraft:oxeye_daisy",
+    "minecraft:cornflower",
+    "minecraft:lily_of_the_valley",
+    "minecraft:sunflower",
+    "minecraft:lilac",
+    "minecraft:rose_bush",
+    "minecraft:pink_petals",
+    "minecraft:flowering_azalea"
+]
+defaultDensity = 3
+ignoredSeasons = "DEFAULT"
+fireflyType = "ORIGINAL"
+fireflySoundVolume = 1.0
+onlyAllowInHabitatBiomes = false
+habitatBiomes = [
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp"
+]
+habitatBiomeDensity = 3

@@ -218,6 +218,9 @@
 		# Range: 0 ~ 500
 		cooldown = 60
 		music_disc_heave_ho = true
+		#Makes TNT-like block shot from a cannon explode on impact
+		#Allowed Values: IGNITE, IGNITE_ON_IMPACT, NONE
+		explode_tnt = "IGNITE"
 
 		[functional.cannon.cannonball]
 			enabled = true
@@ -452,6 +455,8 @@
 		only_works_in_curio = false
 		#Arrows you pickup will try to go in a quiver if available provided it has some arrow of the same explosionType
 		quiver_pickup = true
+		#If enabled, the quiver skeleton spawn chance will depend on the local difficulty of the world. If disabled, it will always be the same
+		quiver_skeleton_spawn_depend_on_global_difficulty = true
 
 	[tools.lunch_basket]
 		enabled = true
@@ -513,6 +518,8 @@
 		# Default: 64
 		# Range: 0 ~ 500
 		bound_distance = 64
+		#Allows flute to be unbound. Unbound flutes will search for pets in a radius and teleport them to the player
+		unbound = false
 
 	[tools.bomb]
 		enabled = true
@@ -697,7 +704,7 @@
 	[tweaks.bad_luck_tweaks]
 		#Hit a void cat, get the unluck
 		cat_unluck = true
-		#If you have unluck you are more likely to get hit by a lighting
+		#If you have unluck you are more likely to get hit by a lighting. Holding a lightning rod also causes this
 		lightning_unluck = true
 
 	[tweaks.item_lore]

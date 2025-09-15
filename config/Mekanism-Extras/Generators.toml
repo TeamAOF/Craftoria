@@ -1,0 +1,45 @@
+#Settings for configuring Hohlraum
+[naquadah_hohlraum]
+	#Hohlraum capacity in mB.
+	# Default: 100
+	# Range: 1 ~ 9223372036854775807
+	maxGas = 100
+	#Rate in mB/t at which Hohlraum can accept Nq-U Fuel.
+	# Default: 1
+	# Range: 1 ~ 9223372036854775807
+	fillRate = 1
+
+#Settings for configuring Naquadah Reactors
+[naquadah_reactor]
+	#Affects the Injection Rate, Max Temp, and Ignition Temp.
+	# Default: 10000000
+	# Range: 0 ~ 9223372036854775807
+	energyPerFusionFuel = 10000000
+	#The fraction of the heat dissipated from the case that is converted to Joules.
+	# Default: 0.1
+	# Range: 0.0 ~ 1.0
+	thermocoupleEfficiency = 0.1
+	#The fraction of heat from the casing that can be transferred to all sources that are not water. Will impact max heat, heat transfer to thermodynamic conductors, and power generation.
+	# Default: 0.1
+	# Range: 0.001 ~ 1.0
+	casingThermalConductivity = 0.1
+	#The fraction of the heat from the casing that is dissipated to water when water cooling is in use. Will impact max heat, and steam generation.
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	waterHeatingRatio = 0.3
+	#Amount of fuel (mB) that the naquadah reactor can store.
+	# Default: 1000
+	# Range: 2 ~ 1000000
+	fuelCapacity = 1000
+	#Amount of energy (Joules) the naquadah reactor can store.
+	# Default: 10000000000
+	# Range: 1 ~ 9223372036854775807
+	energyCapacity = 10000000000
+	#Amount of water (mB) per injection rate that the naquadah reactor can store. Max = injectionRate * waterPerInjection
+	# Default: 1000000
+	# Range: 1 ~ 21913098
+	waterPerInjection = 1000000
+	#Amount of steam (mB) per injection rate that the naquadah reactor can store. Max = injectionRate * steamPerInjection
+	# Default: 100000000
+	# Range: 1 ~ 94116041192395671
+	poloniumPerInjection = 100000000

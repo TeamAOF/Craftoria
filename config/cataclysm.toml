@@ -5,6 +5,8 @@
 	"setThirdPerson(on/off)" = true
 	#Forced viewpoint change when hit by a grab attack
 	"setFirstPerson(on/off)" = true
+	#Off the Custom Rendering
+	shadersCompat = false
 
 [Weapon]
 	#Armor Infinity Durability(on/off)
@@ -731,12 +733,6 @@
 ["bosses Common settings"]
 	#custombossbar(on/off)
 	"custombossbar(on/off)" = true
-	#BossMusic(on/off)
-	"BossMusic(on/off)" = true
-	#BossMusicVolume(denominator)
-	# Default: 1
-	# Range: 1 ~ 1000000
-	BossMusicVolume = 1
 	#If the boss leaves the summoned location and there is no target, it returns to the summoned location. When set to 0, it does not return
 	# Default: 20
 	# Range: 0 ~ 200
@@ -809,3 +805,31 @@
 	# Default: 0.04
 	# Range: 0.0 ~ 1000000.0
 	"Scylla's Lightning Storm HP Damage" = 0.04
+	#Scylla weather change
+	"Scylla Weather Change" = true
+
+["bosses Music"]
+	#BossMusic(on/off)
+	"BossMusic(on/off)" = true
+	#BossMusicVolume(denominator)
+	# Default: 1
+	# Range: 1 ~ 1000000
+	BossMusicVolume = 1
+	#Enable separate music per boss phase
+	"IgnisSeparatePhaseMusic(on/off)" = true
+	#Enable separate music per boss phase
+	"EnderGuardianSeparatePhaseMusic(on/off)" = true
+	#Enable separate music per boss phase
+	"LeviathanSeparatePhaseMusic(on/off)" = true
+
+["Boss Respawner"]
+	#on/off
+	MonstrosityRespawner = true
+	#on/off
+	EnderGuardianRespawner = true
+	#on/off
+	HarbingerRespawner = true
+	#on/off
+	RemnantRespawner = true
+	#on/off
+	ScyllaRespawner = true

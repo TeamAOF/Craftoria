@@ -3,11 +3,11 @@
 	# Default: 7
 	# Range: 5 ~ 12
 	quantumComputerMaxSize = 7
-	#Define the maximum amount of multi threaders per Quantum Computer Multiblock.
+	#Define the amount of Threads per Quantum Computer Accelerator.
 	# Default: 8
 	# Range: 4 ~ 16
 	quantumComputerAcceleratorThreads = 8
-	#Define the maximum amount of multi threaders per Quantum Computer Multiblock.
+	#Define the maximum amount of Multi Threaders per Quantum Computer Multiblock.
 	# Default: 1
 	# Range: 1 ~ 2
 	quantumComputerMaxMultiThreaders = 1
@@ -85,3 +85,9 @@
 	# Default: 30
 	# Range: 5 ~ 100
 	quantumArmorPercentageDamageAbsorption = 30
+
+[Miscellaneous]
+	#Define the size of the cache for the Throughput Monitor. Only affects "Per minute" and "Per 10 minutes" configurations. Higher values will increase precison, but will make the monitor react slower to changes.
+	# Default: 80
+	# Range: 40 ~ 400
+	throughputMonitorCacheSize = 80

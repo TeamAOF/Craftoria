@@ -15,11 +15,11 @@
 	noOffhandTorchWithBlock = true
 	#This prevents torches from being placed from your offhand if you have food in your main hand.
 	noOffhandTorchWithFood = true
-	#This prevents torches from being placed from your off hand if you have an empty main hand.
+	#This prevents torches from being placed from your offhand if you have an empty main hand.
 	noOffhandTorchWithEmptyHand = false
 	#This restricts torches to be placed from the offhand only when you're holding a tool in your main hand.
 	offhandTorchWithToolOnly = false
-	#This prevents fireworks from being launched from your off hand if you are wearing an Elytra, unless you're flying.
+	#This prevents fireworks from being launched from your offhand if you are wearing an Elytra, unless you're flying.
 	noOffhandFireworksWithElytra = true
 	#This option will disable step assist added by other mods.
 	disableStepAssist = false
@@ -41,6 +41,10 @@
 	preventAccidentalMining = false
 	#This option will increase the hitbox of random-offset blocks in creative mode, making it easier to break them quickly.
 	creativeBreakingSupport = true
+	#This prevents the last durability from being used up.
+	doNotUseLastMending = false
+	#This prevents items from being used from your offhand if you have food in your main hand.
+	noOffhandUseWithFood = false
 
 [customization]
 	#Items that count as torches for the offhand-torch tweak options.
