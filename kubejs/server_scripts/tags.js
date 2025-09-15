@@ -5,7 +5,6 @@ ServerEvents.tags('item', e => {
   e.add('c:storage_blocks/charged_redstone', 'appflux:charged_redstone_block');
 
   e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
-  e.add('ars_controle:ritual_blacklist', ['ars_nouveau:ritual_flight']);
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
 
