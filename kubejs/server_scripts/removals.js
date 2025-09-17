@@ -18,8 +18,6 @@ const globalItemRemovals = [
   'industrialforegoing:infinity_nuke',
   'utilitarian:tiny_coal',
   'utilitarian:tiny_charcoal',
-  { item: /^create:copycat_.*/, reason: 'crashes with shaders enabled' },
-  { item: /^create_connected:copycat_.*/, reason: 'crashes with shaders enabled' },
   'mffs:anti_personnel_module',
   'mffs:confiscation_module',
   'pylons:infusion_pylon',
