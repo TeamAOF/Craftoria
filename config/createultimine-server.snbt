@@ -1,0 +1,14 @@
+# Server-specific configuration for Create Ultimine
+# This file is meant for server administrators to control user behaviour.
+
+{
+	features: {
+		# Right-click with any applicable items held in hand with the Ultimine key held to apply onto any blocks
+		# Default: true
+		manual_application: true
+		
+		# Right-click with an wrench with the Ultimine key held to interact blocks (e.g. rotate, breaking)
+		# Default: true
+		right_click_wrench: true
+	}
+}
