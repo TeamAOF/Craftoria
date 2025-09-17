@@ -30,48 +30,6 @@ const $Boolean = Java.loadClass('java.lang.Boolean');
  */
 const debug = 'error';
 
-// Used for tooltips
-const holdShift = Text.translate('tooltip.craftoria.hold_shift').gold();
-
-/**
- * Converts a JavaScript number to a Java Integer.
- * @param {*} n number to convert
- * @returns {number}
- */
-const toJavaInt = n => $Integer.valueOf(n.toString());
-
-/**
- * Converts a JavaScript boolean to a Java Boolean.
- * @param {*} n boolean to convert
- * @returns {boolean}
- */
-const toJavaBool = n => $Boolean.valueOf(n.toString());
-
-/**
- * Returns the server level from the level accessor.
- * @param {$LevelAccessor_} levelAccessor
- * @returns {$ServerLevel_}
- */
-const getServerLevel = levelAccessor => {
-  if (levelAccessor.clientSide) return null;
-  if (levelAccessor instanceof $ServerLevel) return levelAccessor;
-  return null;
-};
-
-/**
- * Used for recipe IDs
- * @param {Special.Mod} mod The mod name
- * @param {Special.RecipeType} type The recipe type
- * @param {string} output The output item
- * @param {string} input The input item
- */
-const _makeRecipeID = (mod, type, output, input) => {
-  output = ID.path(output).replace(' ', '_');
-  input = ID.path(input).replace(' ', '_');
-  logDebug(`ID: ${`craftoria:${mod}/${ID.path(type)}/${output}_from_${input}`}`);
-  return `craftoria:${mod}/${ID.path(type)}/${output}_from_${input}`;
-};
-
 const debugToInt = () => {
   switch (debug) {
     case 'error':
@@ -109,4 +67,66 @@ const logInfo = message => {
 const logDebug = message => {
   if (debugToInt() < 4) return;
   console.debug(`[Craftoria] ${message}`);
+};
+
+// Used for tooltips
+const holdShift = Text.translate('tooltip.craftoria.hold_shift').gold();
+
+/**
+ * Converts a JavaScript number to a Java Integer.
+ * @param {*} n number to convert
+ * @returns {number}
+ */
+const toJavaInt = n => $Integer.valueOf(n.toString());
+
+/**
+ * Converts a JavaScript boolean to a Java Boolean.
+ * @param {*} n boolean to convert
+ * @returns {boolean}
+ */
+const toJavaBool = n => $Boolean.valueOf(n.toString());
+
+/**
+ * Returns the server level from the level accessor.
+ * @param {$LevelAccessor_} levelAccessor
+ * @returns {$ServerLevel_}
+ */
+const getServerLevel = levelAccessor => {
+  if (levelAccessor.clientSide) return null;
+  if (levelAccessor instanceof $ServerLevel) return levelAccessor;
+  return null;
+};
+
+/**
+   * Check if a tag is empty or resolves to barrier
+   * @param {Special.ItemTag} tag
+   * @returns {boolean}
+   */
+const isTagEmpty = (tag) => {
+  const isEmpty = Ingredient.of(tag).empty;
+  if (!isEmpty) {
+    const items = Ingredient.of(tag).itemIds;
+    if (items.length === 1 && items[0] === 'minecraft:barrier') {
+      logDebug(`Tag ${tag} is empty (barrier)`);
+      return true;
+    }
+    logDebug(`Tag ${tag} is not empty (${items.length} items)`);
+    return false;
+  }
+  logDebug(`Tag ${tag} is empty`);
+  return true;
+};
+
+/**
+ * Used for recipe IDs
+ * @param {Special.Mod} mod The mod name
+ * @param {Special.RecipeType} type The recipe type
+ * @param {string} output The output item
+ * @param {string} input The input item
+ */
+const _makeRecipeID = (mod, type, output, input) => {
+  output = ID.path(output).replace(' ', '_');
+  input = ID.path(input).replace(' ', '_');
+  logDebug(`ID: ${`craftoria:${mod}/${ID.path(type)}/${output}_from_${input}`}`);
+  return `craftoria:${mod}/${ID.path(type)}/${output}_from_${input}`;
 };
