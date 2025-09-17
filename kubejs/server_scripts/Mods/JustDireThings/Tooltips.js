@@ -1,9 +1,9 @@
 ItemEvents.modifyTooltips(event => {
   const direOres = [
-    { id: 'ferricore',     localKey: 'block.justdirethings.raw_ferricore_ore' },
-    { id: 'blazegold',     localKey: 'block.justdirethings.raw_blazegold_ore' },
-    { id: 'celestigem',    localKey: 'block.justdirethings.raw_celestigem_ore' },
-    { id: 'eclipsealloy',  localKey: 'block.justdirethings.raw_eclipsealloy_ore' }
+    { id: 'ferricore', localKey: 'block.justdirethings.raw_ferricore_ore' },
+    { id: 'blazegold', localKey: 'block.justdirethings.raw_blazegold_ore' },
+    { id: 'celestigem', localKey: 'block.justdirethings.raw_celestigem_ore' },
+    { id: 'eclipsealloy', localKey: 'block.justdirethings.raw_eclipsealloy_ore' }
   ];
 
   direOres.forEach(ore => {

@@ -1,8 +1,8 @@
 ClientEvents.generateAssets('after_mods', e => {
-  const guides = [{ 
-    mod: 'craftoria', 
+  const guides = [{
+    mod: 'craftoria',
     tooltipKey: 'tooltip.craftoria.guide.description',
-    model: 'logo' 
+    model: 'logo'
   }];
 
   guides.forEach(guide => {
