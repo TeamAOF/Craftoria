@@ -29,6 +29,10 @@ const globalItemRemovals = [
   'xycraft_world:aluminum_ore_stone',
   'xycraft_world:aluminum_ore_deepslate',
   'xycraft_world:aluminum_ore_kivi',
+  'xycraft_machines:aluminum_dirty_dust',
+  'xycraft_machines:aluminum_shard',
+  'xycraft_machines:aluminum_crystal',
+  'xycraft_machines:aluminum_clump',
   'create:crushed_raw_aluminum',
   'create:crushed_raw_platinum',
 ];

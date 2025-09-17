@@ -1,5 +1,10 @@
 ServerEvents.recipes(e => {
+  e.remove({ mod: 'xycraft_world', output: '#c:ingots/aluminum' });
+  e.remove({ mod: 'xycraft_machines', output: '#c:dusts/aluminum' });
+  e.remove({ mod: 'xycraft_machines', output: '#c:ingots/aluminum' });
+
   const mods = [
+    'xycraft',
     'xycraft_core',
     'xycraft_machines',
     'xycraft_override',
@@ -17,7 +22,6 @@ ServerEvents.recipes(e => {
     }
   }
 
-  e.shaped('2x xycraft_world:aluminum_torch', ['I', 'S'], { I: '#c:dusts/bauxite', S: 'stick' }).id('xycraft_world:shaped/aluminum_torch');
-  e.stonecutting('xycraft_world:aluminum_bricks', '#c:ingots/iron').id('xycraft_world:shaped/aluminum_bricks');
-  e.remove([{ id: 'xycraft_world:smelting/aluminum' }, { id: 'xycraft_world:blasting/aluminum' }]);
+  e.shaped('2x xycraft_world:aluminum_torch', ['I', 'S'], { I: '#c:dusts/bauxite', S: 'stick' }).id('xycraft:shaped/aluminum_torch');
+  e.stonecutting('xycraft_world:aluminum_bricks', '#c:ingots/iron').id('xycraft:shaped/aluminum_bricks');
 });
