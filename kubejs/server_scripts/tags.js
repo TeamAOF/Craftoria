@@ -32,6 +32,7 @@ ServerEvents.tags('item', e => {
   e.add('occultism:tools/knife', '#c:tools/knife');
 
   e.remove('c:foods/raw_calamari', 'rusticdelight:calamari_slice');
+  e.add('rusticdelight:calamari_roll_ingredients', 'rusticdelight:calamari_slice');
 
   // Machine Frames
   e.add('craftoria:hulls/advanced', [
