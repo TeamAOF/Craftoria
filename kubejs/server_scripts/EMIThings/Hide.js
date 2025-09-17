@@ -33,5 +33,10 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
 });
 
 RecipeViewerEvents.removeCategories(e => {
-  e.remove(['chisel:chisel_recipes_category', 'modern_industrialization:replicator_1']);
+  e.remove([
+    'chisel:chisel_recipes_category',
+    'modern_industrialization:replicator_1',
+    'ftbquests:loot_crate',
+    'create_dragons_plus:ending' // Currently always errors out when trying to display, will unhide when fixed
+  ]);
 });
