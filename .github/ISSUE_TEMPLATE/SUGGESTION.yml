@@ -1,15 +1,15 @@
 name: General Suggestion
 description: Suggest a change or addition you'd like in the modpack
-labels: [Suggestion]
+labels: ["suggestion"]
 body:
   - type: markdown
     attributes:
       value: |
-      
+
         ## Pointers before submitting a suggestion:
-        
+
         - Check for similar suggestions in the **Issues & Discussions sections**.
-          
+
   - type: textarea
     id: description
     attributes:

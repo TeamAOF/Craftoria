@@ -10,7 +10,7 @@ body:
       value: |
         ## Pointers before submitting a bug report:
         - Double check the **Issue Tracker** if said issue has already been reported.
-        
+
   - type: input
     id: version
     attributes:
@@ -48,8 +48,8 @@ body:
       label: "Have you modified the modpack?"
       description: "Have you added mods, changed configs, changed scripts or similar?"
       options:
-        - 'No'
-        - 'Yes'
+        - "No"
+        - "Yes"
     validations:
       required: true
 
@@ -66,9 +66,9 @@ body:
     attributes:
       label: "Did the issue happen in singleplayer or on a server?"
       options:
-        - 'Singleplayer'
-        - 'Server'
-        - 'Both'
+        - "Singleplayer"
+        - "Server"
+        - "Both"
     validations:
       required: true
 
