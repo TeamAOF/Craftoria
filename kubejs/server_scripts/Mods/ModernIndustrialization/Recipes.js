@@ -110,14 +110,14 @@ ServerEvents.recipes(e => {
     let logTag = `#${baseID}_logs`;
 
     if (madeCuttingRecipeFor.includes(plank)) return;
-    if (modID === 'twilightforest' && Ingredient.of(logTag).empty) logTag = `#twilightforest:${type}wood_logs`;
+    if (modID === 'twilightforest' && Ingredient.of(logTag).hasNoItems()) logTag = `#twilightforest:${type}wood_logs`;
 
     if (Item.exists(strippedLog)) cuttingMachine(strippedLog, id);
     if (Item.exists(wood) && Item.exists(strippedWood)) cuttingMachine(strippedWood, wood);
 
     if (!madeCuttingRecipeFor.includes(plank)) {
       if (Item.exists(plank)) {
-        if (!Ingredient.of(`#${modID}:${type}_logs`).empty) cuttingMachine(`6x ${plank}`, `#${modID}:${type}_logs`);
+        if (!Ingredient.of(`#${modID}:${type}_logs`).hasNoItems()) cuttingMachine(`6x ${plank}`, `#${modID}:${type}_logs`);
         else {
           cuttingMachine(`6x ${plank}`, id);
           if (Item.exists(strippedLog)) cuttingMachine(`6x ${plank}`, strippedLog);

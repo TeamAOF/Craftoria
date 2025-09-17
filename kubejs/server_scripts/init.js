@@ -98,26 +98,6 @@ const getServerLevel = levelAccessor => {
 };
 
 /**
-   * Check if a tag is empty or resolves to barrier
-   * @param {Special.ItemTag} tag
-   * @returns {boolean}
-   */
-const isTagEmpty = (tag) => {
-  const isEmpty = Ingredient.of(tag).empty;
-  if (!isEmpty) {
-    const items = Ingredient.of(tag).itemIds;
-    if (items.length === 1 && items[0] === 'minecraft:barrier') {
-      logDebug(`Tag ${tag} is empty (barrier)`);
-      return true;
-    }
-    logDebug(`Tag ${tag} is not empty (${items.length} items)`);
-    return false;
-  }
-  logDebug(`Tag ${tag} is empty`);
-  return true;
-};
-
-/**
  * Used for recipe IDs
  * @param {Special.Mod} mod The mod name
  * @param {Special.RecipeType} type The recipe type

@@ -146,8 +146,7 @@ ServerEvents.tags('item', e => {
 
   e.remove('curios:cosmetic', 'hazennstuff:ears_a');
 
-  e.add('hazennstuff:wisewood_logs', Ingredient.of('#hazennstuff:blocks/wisewood_logs').itemIds);
-  e.remove('hazennstuff:blocks/wisewood_logs', Ingredient.of('#hazennstuff:blocks/wisewood_logs').itemIds);
+  e.add('hazennstuff:wisewood_logs', '#hazennstuff:blocks/wisewood_logs');
 });
 
 ServerEvents.tags('block', e => {

@@ -32,10 +32,10 @@ ServerEvents.recipes(e => {
     let logTag = `#${baseID}_logs`;
 
     if (madeCuttingRecipeFor.includes(plank)) return;
-    if (modID === 'twilightforest' && isTagEmpty(logTag)) logTag = `#twilightforest:${type}wood_logs`;
+    if (modID === 'twilightforest' && Ingredient.of(logTag).hasNoItems()) logTag = `#twilightforest:${type}wood_logs`;
 
     if (Item.exists(plank)) {
-      if (!isTagEmpty(logTag)) mekanism.sawing(`6x ${plank}`, logTag, 'mekanism:sawdust', 0.25);
+      if (!Ingredient.of(logTag).hasNoItems()) mekanism.sawing(`6x ${plank}`, logTag, 'mekanism:sawdust', 0.25);
       else {
         mekanism.sawing(`6x ${plank}`, id, 'mekanism:sawdust', 0.25);
         if (Item.exists(strippedLog)) mekanism.sawing(`6x ${plank}`, strippedLog, 'mekanism:sawdust', 0.25);
