@@ -265,3 +265,28 @@ ServerEvents.tags('entity_type', e => {
   e.add('industrialforegoing:mob_duplicator_blacklist', '#craftoria:mob_blacklist');
   e.add('justdirethings:paradox_deny', ['occultism:foliot', 'mekanism:robit', 'ars_nouveau:animated_block', '@create']);
 });
+
+ServerEvents.tags('enchantment', e => {
+  
+// Minecraft Enchantment tags
+  e.add('minecraft:exclusive_set/damage', [
+    'deeperdarker:sculk_smite'
+  ]);
+
+  e.add('minecraft:non_treasure', [
+    'deeperdarker:sculk_smite',
+    'deeperdarker:volume',
+    'deeperdarker:reverberation'
+  ]);
+
+// Common Enchantment tags
+  e.add('c:weapon_damage_enhancements',[
+    'deeperdarker:sculk_smite'
+  ]);
+
+// Deeper and Darker Enchantment Tags (not yet in mod update but will be)
+  e.add('deeperdarker:resonarium_excludes', [
+    'minecraft:fire_protection'
+  ]);
+
+});
