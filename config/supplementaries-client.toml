@@ -172,6 +172,8 @@
 	no_incompatible_mods_screen = false
 	#unfunny
 	"I am very boring" = false
+	#Allowed Values: ALWAYS, CACHED, CACHED_ZIPPED, NEVER
+	dynamic_assets_generation_mode = "CACHED"
 
 #Game tweaks
 [tweaks]

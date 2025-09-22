@@ -1,0 +1,422 @@
+#Settings for configuring QIO Drivers
+[qio_drivers]
+	#The number of items that the Absolute QIO Drive can store.
+	# Default: 512000000000
+	# Range: 1 ~ 9223372036854775807
+	absoluteCount = 512000000000
+	#The number of types that the Absolute QIO Drive can store.
+	# Default: 131072
+	# Range: > 1
+	absoluteType = 131072
+	#The number of items that the Supreme QIO Drive can store.
+	# Default: 65536000000000
+	# Range: 1 ~ 9223372036854775807
+	supremeCount = 65536000000000
+	#The number of types that the Supreme QIO Drive can store.
+	# Default: 2097152
+	# Range: > 1
+	supremeType = 2097152
+	#The number of items that the Cosmic QIO Drive can store.
+	# Default: 33554432000000000
+	# Range: 1 ~ 9223372036854775807
+	cosmicCount = 33554432000000000
+	#The number of types that the Cosmic QIO Drive can store.
+	# Default: 33554432
+	# Range: > 1
+	cosmicType = 33554432
+	#The number of items that the Infinite QIO Drive can store.
+	# Default: 9223372036854775807
+	# Range: 1 ~ 9223372036854775807
+	infiniteCount = 9223372036854775807
+	#The number of types that the Infinite QIO Drive can store.
+	# Default: 2147483647
+	# Range: > 1
+	infiniteType = 2147483647
+
+#Settings for configuring Bins
+[bins]
+	#The number of items Absolute bins can store.
+	# Default: 1048576
+	# Range: > 1
+	absoluteStorage = 1048576
+	#The number of items Supreme bins can store.
+	# Default: 8388608
+	# Range: > 1
+	supremeStorage = 8388608
+	#The number of items Cosmic bins can store.
+	# Default: 134217728
+	# Range: > 1
+	cosmicStorage = 134217728
+	#The number of items Infinite bins can store.
+	# Default: 2147483647
+	# Range: > 1
+	infiniteStorage = 2147483647
+
+#Settings for configuring Induction Cells and Providers
+[induction]
+	#Maximum number of Joules Absolute induction cells can store.
+	# Default: 32768000000000
+	# Range: 1 ~ 9223372036854775807
+	absoluteStorage = 32768000000000
+	#Maximum number of Joules Supreme induction cells can store.
+	# Default: 262144000000000
+	# Range: 1 ~ 9223372036854775807
+	supremeStorage = 262144000000000
+	#Maximum number of Joules Cosmic induction cells can store.
+	# Default: 2097152000000000
+	# Range: 1 ~ 9223372036854775807
+	cosmicStorage = 2097152000000000
+	#Maximum number of Joules Infinite induction cells can store.
+	# Default: 9223372036854775807
+	# Range: 1 ~ 9223372036854775807
+	infiniteStorage = 9223372036854775807
+	#Maximum number of Joules Absolute induction providers can output or accept.
+	# Default: 1048576000
+	# Range: 1 ~ 9223372036854775807
+	absoluteOutput = 1048576000
+	#Maximum number of Joules Supreme induction providers can output or accept.
+	# Default: 8388608000
+	# Range: 1 ~ 9223372036854775807
+	supremeOutput = 8388608000
+	#Maximum number of Joules Cosmic induction providers can output or accept.
+	# Default: 67108864000
+	# Range: 1 ~ 9223372036854775807
+	cosmicOutput = 67108864000
+	#Maximum number of Joules Infinite induction providers can output or accept.
+	# Default: 536870912000
+	# Range: 1 ~ 9223372036854775807
+	infiniteOutput = 536870912000
+
+#Settings for configuring Energy Cubes
+[energy_cubes]
+	#Maximum number of Joules Absolute energy cubes can store.
+	# Default: 1024000000
+	# Range: 1 ~ 9223372036854775807
+	absoluteStorage = 1024000000
+	#Output rate in Joules of Absolute energy cubes.
+	# Default: 1024000
+	# Range: 1 ~ 9223372036854775807
+	absoluteOutput = 1024000
+	#Maximum number of Joules Supreme energy cubes can store.
+	# Default: 4096000000
+	# Range: 1 ~ 9223372036854775807
+	supremeStorage = 4096000000
+	#Output rate in Joules of Supreme energy cubes.
+	# Default: 4096000
+	# Range: 1 ~ 9223372036854775807
+	supremeOutput = 4096000
+	#Maximum number of Joules Cosmic energy cubes can store.
+	# Default: 16384000000
+	# Range: 1 ~ 9223372036854775807
+	cosmicStorage = 16384000000
+	#Output rate in Joules of Cosmic energy cubes.
+	# Default: 16384000
+	# Range: 1 ~ 9223372036854775807
+	cosmicOutput = 16384000
+	#Maximum number of Joules Infinite energy cubes can store.
+	# Default: 65536000000
+	# Range: 1 ~ 9223372036854775807
+	infiniteStorage = 65536000000
+	#Output rate in Joules of Infinite energy cubes.
+	# Default: 65536000
+	# Range: 1 ~ 9223372036854775807
+	infiniteOutput = 65536000
+
+#Settings for configuring Fluid Tanks
+[fluid_tanks]
+	#Storage size of Absolute fluid tanks in mB.
+	# Default: 4096000
+	# Range: > 1
+	absoluteStorage = 4096000
+	#Output rate of Absolute fluid tanks in mB.
+	# Default: 2048000
+	# Range: > 1
+	absoluteOutput = 2048000
+	#Storage size of Supreme fluid tanks in mB.
+	# Default: 32768000
+	# Range: > 1
+	supremeStorage = 32768000
+	#Output rate of Supreme fluid tanks in mB.
+	# Default: 16384000
+	# Range: > 1
+	supremeOutput = 16384000
+	#Storage size of Cosmic fluid tanks in mB.
+	# Default: 262144000
+	# Range: > 1
+	cosmicStorage = 262144000
+	#Output rate of Cosmic fluid tanks in mB.
+	# Default: 131072000
+	# Range: > 1
+	cosmicOutput = 131072000
+	#Storage size of Infinite fluid tanks in mB.
+	# Default: 2097152000
+	# Range: > 1
+	infiniteStorage = 2097152000
+	#Output rate of Infinite fluid tanks in mB.
+	# Default: 1048576000
+	# Range: > 1
+	infiniteOutput = 1048576000
+
+#Settings for configuring Chemical Tanks
+[chemical_tanks]
+	#Storage size of Absolute chemical tanks in mB.
+	# Default: 131072000
+	# Range: 1 ~ 9223372036854775807
+	absoluteStorage = 131072000
+	#Output rate of Absolute chemical tanks in mB.
+	# Default: 65536000
+	# Range: 1 ~ 9223372036854775807
+	absoluteOutput = 65536000
+	#Storage size of Supreme chemical tanks in mB.
+	# Default: 4194304000
+	# Range: 1 ~ 9223372036854775807
+	supremeStorage = 4194304000
+	#Output rate of Supreme chemical tanks in mB.
+	# Default: 2097150000
+	# Range: 1 ~ 9223372036854775807
+	supremeOutput = 2097150000
+	#Storage size of Cosmic chemical tanks in mB.
+	# Default: 268435456000
+	# Range: 1 ~ 9223372036854775807
+	cosmicStorage = 268435456000
+	#Output rate of Cosmic chemical tanks in mB.
+	# Default: 134217728000
+	# Range: 1 ~ 9223372036854775807
+	cosmicOutput = 134217728000
+	#Storage size of Infinite chemical tanks in mB.
+	# Default: 34359738368000
+	# Range: 1 ~ 9223372036854775807
+	infiniteStorage = 34359738368000
+	#Output rate of Infinite chemical tanks in mB.
+	# Default: 17179869184000
+	# Range: 1 ~ 9223372036854775807
+	infiniteOutput = 17179869184000
+
+#Settings for configuring Radioactive Waste Barrels
+[radioactive_barrels]
+	#Amount of gas (mB) that can be stored in Absolute Radioactive Waste Barrel.
+	# Default: 2048000
+	# Range: 1 ~ 9223372036854775807
+	absoluteStorage = 2048000
+	#Number of ticks required for radioactive gas stored in Absolute Radioactive Waste Barrel to decay radioactiveWasteBarrelDecayAmount mB.
+	# Default: 20
+	# Range: > 1
+	absoluteProcessTicks = 20
+	#Number of mB of gas that decay every radioactiveWasteBarrelProcessTicks ticks when stored in Absolute Radioactive Waste Barrel. Set to zero to disable decay all together. (Gases in the mekanism:waste_barrel_decay_blacklist tag will not decay).
+	# Default: 4
+	# Range: 0 ~ 9223372036854775807
+	absoluteDecayAmount = 4
+	#Amount of gas (mB) that can be stored in Supreme Radioactive Waste Barrel.
+	# Default: 8192000
+	# Range: 1 ~ 9223372036854775807
+	supremeStorage = 8192000
+	#Number of ticks required for radioactive gas stored in Supreme Radioactive Waste Barrel to decay radioactiveWasteBarrelDecayAmount mB.
+	# Default: 10
+	# Range: > 1
+	supremeProcessTicks = 10
+	#Number of mB of gas that decay every radioactiveWasteBarrelProcessTicks ticks when stored in Supreme Radioactive Waste Barrel. Set to zero to disable decay all together. (Gases in the mekanism:waste_barrel_decay_blacklist tag will not decay).
+	# Default: 16
+	# Range: 0 ~ 9223372036854775807
+	supremeDecayAmount = 16
+	#Amount of gas (mB) that can be stored in Cosmic Radioactive Waste Barrel.
+	# Default: 32768000
+	# Range: 1 ~ 9223372036854775807
+	cosmicStorage = 32768000
+	#Number of ticks required for radioactive gas stored in Cosmic Radioactive Waste Barrel to decay radioactiveWasteBarrelDecayAmount mB.
+	# Default: 5
+	# Range: > 1
+	cosmicProcessTicks = 5
+	#Number of mB of gas that decay every radioactiveWasteBarrelProcessTicks ticks when stored in Cosmic Radioactive Waste Barrel. Set to zero to disable decay all together. (Gases in the mekanism:waste_barrel_decay_blacklist tag will not decay).
+	# Default: 64
+	# Range: 0 ~ 9223372036854775807
+	cosmicDecayAmount = 64
+	#Amount of gas (mB) that can be stored in Infinite Radioactive Waste Barrel.
+	# Default: 131072000
+	# Range: 1 ~ 9223372036854775807
+	infiniteStorage = 131072000
+	#Number of ticks required for radioactive gas stored in Infinite Radioactive Waste Barrel to decay radioactiveWasteBarrelDecayAmount mB.
+	# Default: 5
+	# Range: > 1
+	infiniteProcessTicks = 5
+	#Number of mB of gas that decay every radioactiveWasteBarrelProcessTicks ticks when stored in Infinite Radioactive Waste Barrel. Set to zero to disable decay all together. (Gases in the mekanism:waste_barrel_decay_blacklist tag will not decay).
+	# Default: 256
+	# Range: 0 ~ 9223372036854775807
+	infiniteDecayAmount = 256
+
+#Settings for configuring Transmitters
+[transmitters]
+
+	#Settings for configuring Universal Cables
+	[transmitters.energy]
+		#Internal buffer in Joules of Absolute Universal Cable.
+		# Default: 65536000
+		# Range: 1 ~ 9223372036854775807
+		absoluteCapacity = 65536000
+		#Internal buffer in Joules of Supreme Universal Cable.
+		# Default: 524288000
+		# Range: 1 ~ 9223372036854775807
+		supremeCapacity = 524288000
+		#Internal buffer in Joules of Cosmic Universal Cable.
+		# Default: 4194304000
+		# Range: 1 ~ 9223372036854775807
+		cosmicCapacity = 4194304000
+		#Internal buffer in Joules of Infinite Universal Cable.
+		# Default: 33554432000
+		# Range: 1 ~ 9223372036854775807
+		infiniteCapacity = 33554432000
+
+	#Settings for configuring Mechanical Pipes
+	[transmitters.fluid]
+		#Capacity of Absolute Mechanical Pipe in mb.
+		# Default: 1024000
+		# Range: 1 ~ 9223372036854775807
+		absoluteCapacity = 1024000
+		#Pump rate of Absolute Mechanical Pipe in mb.
+		# Default: 256000
+		# Range: 1 ~ 2147483647
+		absolutePullAmount = 256000
+		#Capacity of Supreme Mechanical Pipe in mb.
+		# Default: 8192000
+		# Range: 1 ~ 9223372036854775807
+		supremeCapacity = 8192000
+		#Pump rate of Supreme Mechanical Pipe in mb.
+		# Default: 2048000
+		# Range: 1 ~ 2147483647
+		supremePullAmount = 2048000
+		#Capacity of Cosmic Mechanical Pipe in mb.
+		# Default: 65536000
+		# Range: 1 ~ 9223372036854775807
+		cosmicCapacity = 65536000
+		#Pump rate of Cosmic Mechanical Pipe in mb.
+		# Default: 16384000
+		# Range: 1 ~ 2147483647
+		cosmicPullAmount = 16384000
+		#Capacity of Infinite Mechanical Pipe in mb.
+		# Default: 524288000
+		# Range: 1 ~ 9223372036854775807
+		infiniteCapacity = 524288000
+		#Pump rate of Infinite Mechanical Pipe in mb.
+		# Default: 131072000
+		# Range: 1 ~ 2147483647
+		infinitePullAmount = 131072000
+
+	#Settings for configuring Pressurized Tubes
+	[transmitters.chemical]
+		#Capacity of Absolute Pressurized Tube in mb.
+		# Default: 8192000
+		# Range: 1 ~ 9223372036854775807
+		absoluteCapacity = 8192000
+		#Pump rate of Absolute Pressurized Tube in mb.
+		# Default: 2048000
+		# Range: 1 ~ 9223372036854775807
+		absolutePullAmount = 2048000
+		#Capacity of Supreme Pressurized Tube in mb.
+		# Default: 65536000
+		# Range: 1 ~ 9223372036854775807
+		supremeCapacity = 65536000
+		#Pump rate of Supreme Pressurized Tube in mb.
+		# Default: 16384000
+		# Range: 1 ~ 9223372036854775807
+		supremePullAmount = 16384000
+		#Capacity of Cosmic Pressurized Tube in mb.
+		# Default: 524288000
+		# Range: 1 ~ 9223372036854775807
+		cosmicCapacity = 524288000
+		#Pump rate of Cosmic Pressurized Tube in mb.
+		# Default: 131072000
+		# Range: 1 ~ 9223372036854775807
+		cosmicPullAmount = 131072000
+		#Capacity of Infinite Pressurized Tube in mb.
+		# Default: 4194304000
+		# Range: 1 ~ 9223372036854775807
+		infiniteCapacity = 4194304000
+		#Pump rate of Infinite Pressurized Tube in mb.
+		# Default: 1048576000
+		# Range: 1 ~ 9223372036854775807
+		infinitePullAmount = 1048576000
+
+	#Settings for configuring Logistical Transporters
+	[transmitters.item]
+		#Five times the travel speed in m/s of Absolute Logistical Transporter.
+		# Default: 55
+		# Range: 1 ~ 2147483647
+		absoluteSpeed = 55
+		#Item throughput rate of Absolute Logistical Transporter in items/half second.
+		# Default: 128
+		# Range: 1 ~ 2147483647
+		absolutePullAmount = 128
+		#Five times the travel speed in m/s of Absolute Logistical Transporter.
+		# Default: 60
+		# Range: 1 ~ 2147483647
+		supremeSpeed = 60
+		#Item throughput rate of Supreme Logistical Transporter in items/half second.
+		# Default: 256
+		# Range: 1 ~ 2147483647
+		supremePullAmount = 256
+		#Five times the travel speed in m/s of Cosmic Logistical Transporter.
+		# Default: 70
+		# Range: 1 ~ 2147483647
+		cosmicSpeed = 70
+		#Item throughput rate of Cosmic Logistical Transporter in items/half second.
+		# Default: 512
+		# Range: 1 ~ 2147483647
+		cosmicPullAmount = 512
+		#Five times the travel speed in m/s of Cosmic Logistical Transporter.
+		# Default: 100
+		# Range: 1 ~ 2147483647
+		infiniteSpeed = 100
+		#Item throughput rate of Infinite Logistical Transporter in items/half second.
+		# Default: 1024
+		# Range: 1 ~ 2147483647
+		infinitePullAmount = 1024
+
+	#Settings for configuring Thermodynamic Conductors
+	[transmitters.heat]
+		#Conduction value of Absolute Thermodynamic Conductor.
+		# Default: 10
+		# Range: 1 ~ 9223372036854775807
+		absoluteConduction = 10
+		#Heat capacity of Absolute Thermodynamic Conductor.
+		# Default: 1
+		# Range: 1 ~ 9223372036854775807
+		absoluteCapacity = 1
+		#Insulation value of Absolute Thermodynamic Conductor.
+		# Default: 400000
+		# Range: 1 ~ 9223372036854775807
+		absoluteInsulation = 400000
+		#Conduction value of Supreme Thermodynamic Conductor.
+		# Default: 15
+		# Range: 1 ~ 9223372036854775807
+		supremeConduction = 15
+		#Heat capacity of Supreme Thermodynamic Conductor.
+		# Default: 1
+		# Range: 1 ~ 9223372036854775807
+		supremeCapacity = 1
+		#Insulation value of Supreme Thermodynamic Conductor.
+		# Default: 800000
+		# Range: 1 ~ 9223372036854775807
+		supremeInsulation = 800000
+		#Conduction value of Cosmic Thermodynamic Conductor.
+		# Default: 20
+		# Range: 1 ~ 9223372036854775807
+		cosmicConduction = 20
+		#Heat capacity of Cosmic Thermodynamic Conductor.
+		# Default: 1
+		# Range: 1 ~ 9223372036854775807
+		cosmicCapacity = 1
+		#Insulation value of Cosmic Thermodynamic Conductor.
+		# Default: 1000000
+		# Range: 1 ~ 9223372036854775807
+		cosmicInsulation = 1000000
+		#Conduction value of Infinite Thermodynamic Conductor.
+		# Default: 25
+		# Range: 1 ~ 9223372036854775807
+		infiniteConduction = 25
+		#Heat capacity of Infinite Thermodynamic Conductor.
+		# Default: 1
+		# Range: 1 ~ 9223372036854775807
+		infiniteCapacity = 1
+		#Insulation value of Infinite Thermodynamic Conductor.
+		# Default: 4000000
+		# Range: 1 ~ 9223372036854775807
+		infiniteInsulation = 4000000

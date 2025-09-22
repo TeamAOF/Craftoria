@@ -272,9 +272,19 @@
   // Allows to set how many different animal variants can be stored per item.
   // Players will not be able to store more different variants than this value.
   // Be aware, this increases NBT data size, so not recommended to put infinite amount.
-  // Default value = 10
+  // Default value = 16
   "max_stored_animal_variants": 10,
+  // Allows to set if interactions with animal pens/aquariums should trigger advancements.
+  // Triggered Criteria: player_interacted_with_entity, bred_animals, filled_bucket, player_killed_entity
+  // Default value = false
+  "trigger_advancements": false,
+  // Allows to set if interactions with animal pens/aquariums should increase statistics.
+  // Increased Statistics: Animals Bred, Mob Kills, Use Item <item>, Kill Entity <entity>
+  // Default value = false
+  "increase_statistics": false,
   // Set of animals that are blocked from picking up.
   "blocked_animals": [
-  ]
+  ],
+  // Debug code to indicate problems.
+  "debug": false
 }
