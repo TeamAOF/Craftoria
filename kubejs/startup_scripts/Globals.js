@@ -122,3 +122,4 @@ global.customMIHatches = customMIHatches;
 global.customMICasings = customMICasings;
 
 Platform.setModName('craftoria', 'Craftoria');
+Platform.setModName('mi_tweaks', 'Craftoria');

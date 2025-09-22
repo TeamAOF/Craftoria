@@ -61,6 +61,8 @@ ItemEvents.modifyTooltips(e => {
   ]);
 
   for (const [id, machine] of Object.entries(global.customMIMachines)) {
+    if (machine.mod == 'mi_tweaks') continue; // Skip mi_tweaks machines, their Mod name tooltip is overridden via a startup script.
+
     let machineID = `${machine.mod ?? 'modern_industrialization'}:${id}`;
     e.add(machineID, Text.translate('tooltip.craftoria.added_by_craftoria').blue().italic());
   }
