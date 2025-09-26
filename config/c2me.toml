@@ -178,6 +178,12 @@ threadPoolPriority = "default"
 	# Only applies when useLegacyScheduling is disabled.
 	# 
 	lowMemoryMode = "default"
+	# (Default: true) Whether to delay full chunk events to after full chunk future have been completed
+	# This restores the buggy behavior in NeoForge that the ecosystem have been relying on
+	# 
+	# Do not change this unless you know what you are doing
+	# 
+	delayFullChunkEvents = "default"
 
 [noTickViewDistance]
 	# (Default: true) Whether to enable no-tick view distance

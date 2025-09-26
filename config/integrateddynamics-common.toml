@@ -115,6 +115,8 @@
 		partOffsetRenderDistance = 16
 		#The maximum values that Part Offset items will have when dropped from a broken part.
 		enchancementOffsetPartDropValue = 4
+		#When true, disable the collision for cable.
+		disableCableCollision = false
 
 	[machine.cable]
 		#If cable shapes should be determined dynamically. Disable this if FPS issues would occur.

@@ -36,6 +36,10 @@
 	out_of_working_range_malfunction = true
 	#If owner of the Camera Stand is not in range, closest player will be chosen to create and render a photo. Default: true
 	fallback_to_other_players = true
+	#Other players can be chosen for Interplanar Projector exposure, if owner is not in range.
+	#WARNING: If enabled, projector will attempt to load an image from other player's computer (or use their PC to load from URL). Potentially, this can be used for malicious intents.
+	#Default: false
+	fallback_to_other_players_projector = false
 
 [capture]
 	#Default size of an exposure image. High values take more disk space and can cause lag. Default: 320

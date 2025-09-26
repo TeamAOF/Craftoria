@@ -541,7 +541,7 @@
 			tasks: [{
 				count: 8L
 				id: "120BD9BBBD88191E"
-				item: { count: 8, id: "ars_nouveau:sourcestone" }
+				item: { count: 1, id: "ars_nouveau:sourcestone" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -556,8 +556,9 @@
 				type: "random"
 			}]
 			tasks: [{
+				count: 8L
 				id: "772457230933D493"
-				item: { count: 8, id: "ars_nouveau:arcane_pedestal" }
+				item: { count: 1, id: "ars_nouveau:arcane_pedestal" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -2660,8 +2661,8 @@
 											duration: 3600
 											id: "minecraft:wither"
 											"neoforge:cures": [
-												"protected_by_totem"
 												"milk"
+												"protected_by_totem"
 											]
 											show_icon: 1b
 										}
@@ -2672,8 +2673,8 @@
 											duration: 3600
 											id: "minecraft:poison"
 											"neoforge:cures": [
-												"protected_by_totem"
 												"milk"
+												"protected_by_totem"
 											]
 											show_icon: 1b
 										}
@@ -2684,8 +2685,8 @@
 											duration: 3600
 											id: "minecraft:hunger"
 											"neoforge:cures": [
-												"protected_by_totem"
 												"milk"
+												"protected_by_totem"
 											]
 											show_icon: 1b
 										}
@@ -2696,8 +2697,8 @@
 											duration: 3600
 											id: "minecraft:mining_fatigue"
 											"neoforge:cures": [
-												"protected_by_totem"
 												"milk"
+												"protected_by_totem"
 											]
 											show_icon: 1b
 										}
