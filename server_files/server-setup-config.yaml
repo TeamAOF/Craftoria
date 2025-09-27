@@ -6,8 +6,8 @@ modpack:
 
 install:
   mcVersion:
-  loaderVersion: 21.1.193
-  modpackUrl: https://mediafilez.forgecdn.net/files/6795/753/Craftoria-1.23.0.zip
+  loaderVersion: 21.1.209
+  modpackUrl: https://mediafilez.forgecdn.net/files/7037/20/Craftoria-1.24.0.zip
   installerUrl: "https://maven.neoforged.net/releases/net/neoforged/neoforge/{{@loaderversion@}}/neoforge-{{@loaderversion@}}-installer.jar"
 
   ignoreFiles:
@@ -36,6 +36,10 @@ install:
       - 1112793 # Perception
       - 1133580 # Smithing Template Viewer
       - 1274497 # Particle Effects Reforged
+      - 1254143 # Colorwheel
+      - 1285475 # Colorwheel Patcher
+      - 646146 # Raise Sound Limit Simplified
+      - 1351246 # Iris/Oculus Shader Folder
 
   baseInstallPath:
 

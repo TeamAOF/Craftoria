@@ -1,3 +1,53 @@
+# Craftoria | v1.24.0
+
+_Neoforge_ 21.1.209 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.24.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.24.0.md)_
+
+### Changes/Improvements ⭐
+
+* Re-enabled Create Copycat blocks, as they don't crash with shaders anymore `Phantom`
+* Added more heat blocks for PNC `Phantom`
+* Un-blacklist flight from portable brazier `Phantom`
+* Made JDT fluid fuels usable as MI fuels `Phantom`
+* Nerf OozeLab recipe for JDT coals, from blocks to 4 coal `Phantom`
+* PT_BR quest localization `PrincessStelllar`
+
+### Added Mods ✅
+
+* [Ace's Spell Utils](https://curseforge.com/projects/1299492)
+* [Colorwheel](https://curseforge.com/projects/1254143)
+* [Colorwheel Patcher](https://curseforge.com/projects/1285475)
+* [Create Ultimine](https://curseforge.com/projects/1231381)
+* [Create: Pattern Schematics](https://curseforge.com/projects/1072349)
+* [FamiliarsLib](https://curseforge.com/projects/1316458)
+* [FastFurnace](https://curseforge.com/projects/299540)
+* [FastSuite](https://curseforge.com/projects/475117)
+* [Iris Shader Folder](https://curseforge.com/projects/1351246)
+* [Quests Lang Splitter](https://curseforge.com/projects/1326856)
+* [Raise Sound Limit Simplified](https://curseforge.com/projects/646146)
+* [Yukami's Sophisticated Backpack Tab](https://curseforge.com/projects/1343253)
+
+### Added Resource Packs 🎨
+
+* [Fresh Moves](https://curseforge.com/projects/990406)
+* [Pixel's Simple HUD](https://curseforge.com/projects/1273695)
+
+### Removed Mods ❌
+
+* [Hardened Armadillos](https://curseforge.com/projects/1001266)
+
+### Removed Resource Packs 🗑️
+
+* [Detailed Animations](https://curseforge.com/projects/1019617)
+* [miles's Enhanced Hud](https://curseforge.com/projects/434950)
+
+### Bug Fixes 🪲
+
+* Fixed RD Calamari Rolls being uncraftable `Phantom`
+* Fixed "Implosion Compressor" and "Pressurizer" not using correct hatch textures/models `Phantom`
+* Fixed cataclysm bosses destroying graves `Phantom`
+* Fixed crash with Ars Nouveau book
+* A lot of other miscellaneous bug fixes that came with mod updates
+---
 # Craftoria | v1.23.0
 
 _Neoforge_ 21.1.193 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.23.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.23.0.md)_
