@@ -1,3 +1,18 @@
+# Craftoria | v1.24.1
+
+_Neoforge_ 21.1.209 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.24.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.24.1.md)_
+
+### Removed Mods ❌
+
+* [Raise Sound Limit Simplified](https://curseforge.com/projects/646146)
+
+### Bug Fixes 🪲
+
+* Fixed Neptunium bow not being enchantable with mending/unbreaking `Phantom`
+* Fixed Severing/Sculk smite being unobtainable through enchanting `Linguardium`
+* Fixed Emblem of Devotion crashing when worn without a spell `Phantom`
+* Fixed constant stuttering due to sounds `Phantom`
+---
 # Craftoria | v1.24.0
 
 _Neoforge_ 21.1.209 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.24.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.24.0.md)_
