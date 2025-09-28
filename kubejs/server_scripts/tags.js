@@ -117,6 +117,7 @@ ServerEvents.tags('item', e => {
   addToEnchantable(['mining_loot', 'vanishing', 'mining'], 'mekanism:meka_tool');
   addToEnchantable(['trident', 'vanishing'], 'industrialforegoing:infinity_trident');
   addToEnchantable(['armor', 'durability', 'equippable', 'head_armor', 'vanishing'], 'hazennstuff:fireblossom_crown');
+  addToEnchantable(['durability', 'vanishing'], 'aquaculture:neptunium_bow');
 
   e.remove('plonk:unplaceable', ['plonk:placed_items']);
 
@@ -267,8 +268,8 @@ ServerEvents.tags('entity_type', e => {
 });
 
 ServerEvents.tags('enchantment', e => {
-  
-// Minecraft Enchantment tags
+
+  // Minecraft Enchantment tags
   e.add('minecraft:exclusive_set/damage', [
     'deeperdarker:sculk_smite'
   ]);
@@ -279,12 +280,12 @@ ServerEvents.tags('enchantment', e => {
     'deeperdarker:reverberation'
   ]);
 
-// Common Enchantment tags
-  e.add('c:weapon_damage_enhancements',[
+  // Common Enchantment tags
+  e.add('c:weapon_damage_enhancements', [
     'deeperdarker:sculk_smite'
   ]);
 
-// Deeper and Darker Enchantment Tags (not yet in mod update but will be)
+  // Deeper and Darker Enchantment Tags (not yet in mod update but will be)
   e.add('deeperdarker:resonarium_excludes', [
     'minecraft:fire_protection'
   ]);
