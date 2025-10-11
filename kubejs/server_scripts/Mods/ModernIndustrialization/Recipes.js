@@ -198,8 +198,8 @@ ServerEvents.recipes(e => {
     .id('craftoria:mi/assembler/fluix_glass_cable');
 
   centrifuge(8, 100)
-    .itemIn("10x #c:foods/raw_meat")
-    .fluidOut('100x industrialforegoing:pink_slime')
+    .itemIn("4x #c:foods/raw_meat")
+    .fluidOut('200x industrialforegoing:pink_slime')
     .id('craftoria:mi/centrifuge/pink_slime');
 
 });
