@@ -3,7 +3,7 @@
 // //////////////////////
 
 ServerEvents.recipes(e => {
-  const { assembler, macerator, compressor, cutting_machine, electrolyzer, chemical_reactor, oil_drilling_rig, centrifuge} = e.recipes.modern_industrialization;
+  const { assembler, macerator, compressor, cutting_machine, electrolyzer, chemical_reactor, oil_drilling_rig, centrifuge } = e.recipes.modern_industrialization;
 
   macerator(2, 100).itemOut('4x mekanism:dust_obsidian').itemIn('#c:obsidians/normal').id('craftoria:mi/macerator/obsidian_dust');
   macerator(4, 20)
@@ -200,6 +200,6 @@ ServerEvents.recipes(e => {
   centrifuge(8, 100)
     .itemIn("10x #c:foods/raw_meat")
     .fluidOut('100x industrialforegoing:pink_slime')
-    .id('craftoria:mi/centrifuge/pink_slime_from_MI');
+    .id('craftoria:mi/centrifuge/pink_slime');
 
 });
