@@ -65,6 +65,7 @@ ServerEvents.recipes(event => {
     'create:crushing/platinum_ore',
     'create:crushing/raw_platinum',
     'create:crushing/raw_platinum_block',
+    'xycraft_machines:compat/mek/compressor/aluminum_sheet_temp'
   ];
 
   /** @type {Special.Item[]} */
