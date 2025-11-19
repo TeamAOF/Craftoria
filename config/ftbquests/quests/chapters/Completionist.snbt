@@ -53,6 +53,7 @@
 				"1F0B8A0EBCBA4399"
 				"7A79DC2CE5CC9DEE"
 				"65AA8B8D22954941"
+				"678A65A6A3461CFC"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -416,7 +417,7 @@
 				id: "6BD239D70099FED0"
 				type: "checkmark"
 			}]
-			x: -0.5d
+			x: -1.0d
 			y: 7.5d
 		}
 		{
@@ -506,8 +507,22 @@
 				id: "0D84F32752A47951"
 				type: "checkmark"
 			}]
-			x: 3.5d
-			y: 8.0d
+			x: 1.5d
+			y: 8.35d
+		}
+		{
+			dependencies: ["1910D05CD66EC477"]
+			icon_scale: 1.5d
+			id: "678A65A6A3461CFC"
+			shape: "none"
+			size: 2.5d
+			tasks: [{
+				id: "4CD8949CB5636754"
+				item: { components: { "trofers:trophy": "trofers:fishing" }, count: 1, id: "trofers:medium_pillar" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.5d
 		}
 	]
 }
