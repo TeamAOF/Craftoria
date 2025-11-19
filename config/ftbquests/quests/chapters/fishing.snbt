@@ -1,0 +1,251 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "fishing"
+	group: "5016E3C5975D88DE"
+	icon: {
+		id: "starcatcher:starcatcher_rod"
+	}
+	id: "1910D05CD66EC477"
+	images: [
+		{
+			height: 2.0d
+			image: "ftbquests:textures/gui/fishing.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:item/fishing_rod"
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.3d
+			y: -2.35d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:textures/entity/fishing_hook.png"
+			rotation: 25.0d
+			width: 2.0d
+			x: 5.3d
+			y: -2.45d
+		}
+		{
+			height: 10.0d
+			image: "biomeswevegone:textures/gui/hanging_signs/skyris.png"
+			order: -1
+			rotation: 0.0d
+			width: 10.0d
+			x: 1.5d
+			y: 1.55d
+		}
+		{
+			height: 1.0d
+			image: "starcatcher:item/trophy_bronze"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.15d
+			y: 0.08d
+		}
+		{
+			height: 1.0d
+			image: "starcatcher:item/trophy_silver"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.45d
+			y: 0.05d
+		}
+		{
+			height: 1.0d
+			image: "starcatcher:item/trophy_gold"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.75d
+			y: 0.05d
+		}
+		{
+			height: 1.0d
+			image: "starcatcher:item/true_blue_bottle"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.4d
+			y: 4.8d
+		}
+		{
+			height: 1.0d
+			image: "aquaculture:item/jellyfish"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.6d
+			y: 1.35d
+		}
+		{
+			height: 1.0d
+			image: "starcatcher:item/fish_bones"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.3d
+			y: 1.3d
+		}
+		{
+			height: 1.0d
+			image: "aquaculture:item/lockbox"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.4d
+			y: 4.7d
+		}
+		{
+			height: 1.0d
+			image: "aquaculture:item/treasure_chest"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.45d
+			y: 3.35d
+		}
+		{
+			height: 1.0d
+			image: "starcatcher:item/frugal_bobber"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.35d
+			y: 2.7d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3F3C9A6F590496AD"]
+			id: "3295D859B01FA315"
+			rewards: [{
+				count: 16
+				id: "3ADF6249907AC659"
+				item: {
+					count: 1
+					id: "aquaculture:box"
+				}
+				type: "item"
+			}]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "0DD97F314CE5F5E0"
+				item: { count: 1, id: "starcatcher:starcatcher_guide" }
+				type: "item"
+			}]
+			x: 1.55d
+			y: 2.9d
+		}
+		{
+			id: "3F3C9A6F590496AD"
+			rewards: [{
+				count: 16
+				id: "2C6CFAAC7CE2CEA9"
+				item: {
+					count: 1
+					id: "aquaculture:box"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "155CF85BC21B5B08"
+				item: { count: 1, id: "starcatcher:starcatcher_rod" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.35d
+		}
+		{
+			dependencies: ["3295D859B01FA315"]
+			id: "4B99345AECD80EC2"
+			rewards: [{
+				count: 16
+				id: "40DF10C7FEDF80B6"
+				item: {
+					count: 1
+					id: "aquaculture:lockbox"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3DBEEDD4E336AF9A"
+				item: { count: 1, id: "minecraft:brush" }
+				type: "item"
+			}]
+			x: 2.9d
+			y: 2.9d
+		}
+		{
+			dependencies: ["4B99345AECD80EC2"]
+			id: "0ABC6D5601DCD95F"
+			rewards: [{
+				count: 16
+				id: "13B875D94E29638C"
+				item: {
+					count: 1
+					id: "aquaculture:treasure_chest"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "691E6AA922761E29"
+					item: { components: { "ftbfiltersystem:filter": "or(item(starcatcher:shiny_hook)item(starcatcher:gold_hook)item(starcatcher:mossy_hook)item(starcatcher:crystal_hook)item(starcatcher:stone_hook)item(starcatcher:split_hook)item(starcatcher:stabilizing_hook)item(starcatcher:heavy_hook))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "7376AAE3B45AD4B9"
+					item: { components: { "ftbfiltersystem:filter": "or(item(starcatcher:creeper_bobber)item(starcatcher:glitter_bobber)item(starcatcher:colorful_bobber)item(starcatcher:frugal_bobber)item(starcatcher:steady_bobber)item(starcatcher:impatient_bobber)item(starcatcher:frog_bobber)item(starcatcher:kimbe_bobber)item(starcatcher:clear_bobber))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 2.9d
+			y: 4.45d
+		}
+		{
+			dependencies: ["3F3C9A6F590496AD"]
+			id: "2C42A6E79A5242F0"
+			rewards: [{
+				count: 16
+				id: "0C8F806BE3996506"
+				item: {
+					count: 1
+					id: "aquaculture:treasure_chest"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "02DFB662F73867FF"
+				item: { components: { "ftbfiltersystem:filter": "or(item(starcatcher:cherry_bait)item(starcatcher:lush_bait)item(starcatcher:sculk_bait)item(starcatcher:dripstone_bait)item(starcatcher:murkwater_bait)item(starcatcher:legendary_bait)item(starcatcher:meteorological_bait))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3295D859B01FA315"]
+			id: "5D0F6404B76F480E"
+			rewards: [{
+				count: 16
+				id: "6261BC5CD1612BCA"
+				item: {
+					count: 1
+					id: "aquaculture:lockbox"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7652C148D455797D"
+				item: { count: 1, id: "starcatcher:fish_spotter" }
+				type: "item"
+			}]
+			x: 0.1d
+			y: 2.9d
+		}
+	]
+}
