@@ -9,30 +9,64 @@
 	id: "0CF7A598566497C7"
 	images: [
 		{
-			height: 4.0d
+			height: 5.0d
 			image: "relics:textures/gui/description/general/tab.png"
 			order: -1
-			rotation: 0.0d
-			width: 4.0d
-			x: 1.5d
-			y: 3.5d
+			rotation: -90.0d
+			width: 2.0d
+			x: -13.45d
+			y: 2.5999999999999996d
 		}
 		{
-			height: 4.0d
+			height: 5.0d
 			image: "relics:textures/gui/description/general/tab.png"
 			order: -1
-			rotation: 180.0d
-			width: 4.0d
-			x: 1.5d
-			y: 4.5d
+			rotation: 90.0d
+			width: 2.0d
+			x: -9.5d
+			y: 2.5999999999999996d
 		}
 		{
-			height: 1.0d
+			height: 7.0d
 			image: "ftbquests:textures/gui/completionist.png"
 			rotation: 0.0d
 			width: 7.0d
-			x: 1.5d
-			y: 1.0d
+			x: -11.42d
+			y: 1.65d
+		}
+		{
+			height: 7.0d
+			image: "ftbquests:textures/gui/trophy_shelf_long.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: -11.5d
+			y: 4.65d
+		}
+		{
+			height: 7.0d
+			image: "ftbquests:textures/gui/trophy_shelf_long.png"
+			order: -1
+			rotation: 0.0d
+			width: 12.0d
+			x: -11.5d
+			y: 6.4d
+		}
+		{
+			height: 7.0d
+			image: "ftbquests:textures/gui/trophy_shelf_long.png"
+			order: -2
+			rotation: 0.0d
+			width: 12.0d
+			x: -11.5d
+			y: 8.2d
+		}
+		{
+			height: 7.0d
+			image: "ftbquests:textures/gui/trophy_shelf.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: -3.25d
+			y: 8.05d
 		}
 	]
 	order_index: 1
@@ -108,8 +142,8 @@
 				id: "029B80BE103230CD"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: 4.5d
+			x: -3.25d
+			y: 8.0d
 		}
 		{
 			dependencies: ["70FFEE37C7ABD690"]
@@ -139,8 +173,8 @@
 				id: "752A63BD14A38E85"
 				type: "checkmark"
 			}]
-			x: -3.5d
-			y: 0.75d
+			x: -15.5d
+			y: 4.625d
 		}
 		{
 			dependencies: ["37D7FA3DAE36E099"]
@@ -170,8 +204,8 @@
 				id: "472C8EE4AE6F4ED2"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: -0.5d
+			x: -12.9d
+			y: 4.625d
 		}
 		{
 			dependencies: ["40CEA39FE5F5225D"]
@@ -201,8 +235,8 @@
 				id: "44CE789BDE1EFCB1"
 				type: "checkmark"
 			}]
-			x: 6.5d
-			y: 0.75d
+			x: -10.3d
+			y: 4.625d
 		}
 		{
 			dependencies: ["6A5B4531418CC297"]
@@ -232,8 +266,8 @@
 				id: "6C0BB72F6382FE4F"
 				type: "checkmark"
 			}]
-			x: 4.0d
-			y: -0.5d
+			x: -11.6d
+			y: 4.625d
 		}
 		{
 			dependencies: ["01B56BD678E7745B"]
@@ -263,8 +297,8 @@
 				id: "79794A87CBA37582"
 				type: "checkmark"
 			}]
-			x: 7.0d
-			y: 2.75d
+			x: -9.0d
+			y: 4.625d
 		}
 		{
 			dependencies: ["0597AF3E8B286CFA"]
@@ -294,8 +328,8 @@
 				id: "15ED212071C6CAF0"
 				type: "checkmark"
 			}]
-			x: -4.0d
-			y: 4.75d
+			x: -14.875d
+			y: 6.375d
 		}
 		{
 			dependencies: ["7269FD2B5B0F0424"]
@@ -325,8 +359,8 @@
 				id: "559E1439EDFA2BA9"
 				type: "checkmark"
 			}]
-			x: 7.0d
-			y: 4.75d
+			x: -8.25d
+			y: 6.375d
 		}
 		{
 			dependencies: ["5A3894BACC5E8994"]
@@ -356,8 +390,8 @@
 				id: "6B6E82D0312A8705"
 				type: "checkmark"
 			}]
-			x: -2.9000000000000004d
-			y: 6.5d
+			x: -10.5d
+			y: 6.375d
 		}
 		{
 			dependencies: ["04AD21E8ACC60AFD"]
@@ -386,8 +420,8 @@
 				id: "00CA3CB10A03DF62"
 				type: "checkmark"
 			}]
-			x: -4.0d
-			y: 2.75d
+			x: -7.7d
+			y: 4.625d
 		}
 		{
 			dependencies: ["2A4C06811555B5D0"]
@@ -417,8 +451,8 @@
 				id: "6BD239D70099FED0"
 				type: "checkmark"
 			}]
-			x: -1.0d
-			y: 7.5d
+			x: -13.75d
+			y: 8.25d
 		}
 		{
 			dependencies: ["3B4FADE31FB88E9F"]
@@ -447,8 +481,8 @@
 				id: "256831387C82AA19"
 				type: "checkmark"
 			}]
-			x: 6.1d
-			y: 6.5d
+			x: -12.625d
+			y: 6.375d
 		}
 		{
 			dependencies: ["679ED31B5B1D91DA"]
@@ -477,8 +511,8 @@
 				id: "6484D791025A2BF3"
 				type: "checkmark"
 			}]
-			x: -1.0d
-			y: -0.5d
+			x: -14.2d
+			y: 4.625d
 		}
 		{
 			dependencies: ["216D532684E20496"]
@@ -488,7 +522,7 @@
 				}
 				id: "trofers:medium_pillar"
 			}
-			icon_scale: 0.75d
+			icon_scale: 1.5d
 			id: "65AA8B8D22954941"
 			rewards: [{
 				id: "5358434D18BCB827"
@@ -507,13 +541,24 @@
 				id: "0D84F32752A47951"
 				type: "checkmark"
 			}]
-			x: 1.5d
-			y: 8.35d
+			x: -11.525d
+			y: 8.25d
 		}
 		{
 			dependencies: ["1910D05CD66EC477"]
 			icon_scale: 1.5d
 			id: "678A65A6A3461CFC"
+			rewards: [{
+				id: "0D1E284357B48C6D"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:fishing"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
 			shape: "none"
 			size: 2.5d
 			tasks: [{
@@ -521,8 +566,8 @@
 				item: { components: { "trofers:trophy": "trofers:fishing" }, count: 1, id: "trofers:medium_pillar" }
 				type: "item"
 			}]
-			x: 4.0d
-			y: 7.5d
+			x: -9.25d
+			y: 8.25d
 		}
 	]
 }

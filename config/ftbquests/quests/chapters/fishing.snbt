@@ -9,12 +9,12 @@
 	id: "1910D05CD66EC477"
 	images: [
 		{
-			height: 2.0d
+			height: 7.0d
 			image: "ftbquests:textures/gui/fishing.png"
 			rotation: 0.0d
 			width: 7.0d
-			x: 1.5d
-			y: -2.5d
+			x: 1.55d
+			y: -2.85d
 		}
 		{
 			height: 2.0d
@@ -279,9 +279,10 @@
 				type: "item"
 			}]
 			x: 0.30000000000000004d
-			y: -0.9000000000000001d
+			y: -0.9750000000000001d
 		}
 		{
+			dependencies: ["4ED1400E2AAAAAE1"]
 			id: "30A0D33361D77D7E"
 			rewards: [{
 				count: 64
@@ -303,6 +304,7 @@
 			y: -0.9600000000000002d
 		}
 		{
+			dependencies: ["30A0D33361D77D7E"]
 			id: "29AD1060C129C86F"
 			rewards: [{
 				count: 64
@@ -345,6 +347,7 @@
 			y: 2.0125d
 		}
 		{
+			dependencies: ["621168DCC2A3B3F3"]
 			id: "4A25E60DD359F959"
 			rewards: [{
 				count: 8
@@ -366,6 +369,7 @@
 			y: 3.4125000000000005d
 		}
 		{
+			dependencies: ["4A25E60DD359F959"]
 			id: "287A6A75537FF79C"
 			rewards: [{
 				count: 64
