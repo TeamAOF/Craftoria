@@ -14,7 +14,7 @@
 			rotation: 0.0d
 			width: 7.0d
 			x: 1.55d
-			y: -2.85d
+			y: -1.65d
 		}
 		{
 			height: 2.0d
@@ -145,6 +145,15 @@
 			width: 1.25d
 			x: -2.2d
 			y: -2.2d
+		}
+		{
+			height: 3.0d
+			image: "modern_industrialization:fluid/high_pressure_water_still"
+			order: -1
+			rotation: 0.0d
+			width: 5.0d
+			x: 1.5d
+			y: -1.42d
 		}
 	]
 	order_index: 1
@@ -278,8 +287,8 @@
 				item: { components: { "minecraft:item_name": "\"Trophy of Pitiful Fishing\"", "starcatcher:trophy": { all: { total: 10 }, custom_name: "Trophy of Pitiful Fishing", fish_properties: { fish: "starcatcher:trophy_bronze" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_bronze" }
 				type: "item"
 			}]
-			x: 0.30000000000000004d
-			y: -0.9750000000000001d
+			x: 7.200000000000001d
+			y: 2.0d
 		}
 		{
 			dependencies: ["4ED1400E2AAAAAE1"]
@@ -294,14 +303,14 @@
 				type: "item"
 			}]
 			shape: "none"
-			size: 1.6d
+			size: 1.75d
 			tasks: [{
 				id: "285134647C8E9555"
 				item: { components: { "minecraft:item_name": "\"Trophy of Skilled Fishing\"", "starcatcher:trophy": { all: { total: 25 }, custom_name: "Trophy of Skilled Fishing", fish_properties: { fish: "starcatcher:trophy_silver" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_silver" }
 				type: "item"
 			}]
-			x: 1.4400000000000002d
-			y: -0.9600000000000002d
+			x: 7.215000000000002d
+			y: 3.4d
 		}
 		{
 			dependencies: ["30A0D33361D77D7E"]
@@ -316,14 +325,14 @@
 				type: "item"
 			}]
 			shape: "none"
-			size: 1.7d
+			size: 2.0d
 			tasks: [{
 				id: "2FA6F7811973B494"
 				item: { components: { "minecraft:item_name": "\"Trophy of Masterful Fishing\"", "starcatcher:trophy": { all: { total: 50 }, custom_name: "Trophy of Masterful Fishing", fish_properties: { fish: "starcatcher:trophy_gold" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_gold" }
 				type: "item"
 			}]
-			x: 2.72d
-			y: -0.935d
+			x: 7.2250000000000005d
+			y: 5.0d
 		}
 		{
 			id: "621168DCC2A3B3F3"
@@ -344,7 +353,7 @@
 				type: "item"
 			}]
 			x: -3.9375000000000004d
-			y: 2.0125d
+			y: 2.0d
 		}
 		{
 			dependencies: ["621168DCC2A3B3F3"]
@@ -366,7 +375,7 @@
 				type: "item"
 			}]
 			x: -3.9375000000000004d
-			y: 3.4125000000000005d
+			y: 3.4d
 		}
 		{
 			dependencies: ["4A25E60DD359F959"]
@@ -388,7 +397,7 @@
 				type: "item"
 			}]
 			x: -3.9375000000000004d
-			y: 4.987500000000001d
+			y: 5.0d
 		}
 	]
 }
