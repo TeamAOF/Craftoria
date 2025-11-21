@@ -1,3 +1,17 @@
+# Craftoria | v1.25.1
+
+_Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.25.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.25.1.md)_
+
+### Changes/Improvements ⭐
+
+* Balance Just Dire Things fluid fuel values ``James103``
+* Make Bigger AE2 advanced cell housing recipes more consistent ``James103``
+
+### Bug Fixes 🪲
+
+* Fixed server not downloading mods correctly ``AK``
+---
+
 # Craftoria | v1.25.0
 
 _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.25.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.25.0.md)_
