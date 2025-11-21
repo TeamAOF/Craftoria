@@ -14,6 +14,7 @@ _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 ### Bug Fixes 🪲
 
 * Fixed server not downloading mods correctly ``AK``
+* Fixed comp shaders not showing up in list ``AK``
 ---
 
 # Craftoria | v1.25.0
