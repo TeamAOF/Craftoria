@@ -8,3 +8,7 @@
 	#This mod uses hardcoded check to remove annoying eating animation while plating some foods.
 	# Try setting this to true if there are any related issues(can't eat foods, can't plate foods, etc.). (only applicable for Forge version)
 	Disable-Eating-Animation-Fix = false
+	#Whether to drop the food block item when food block is broken by silktouch
+	SilkTouchDropFoodBlock = true
+	#Should wandering traders sell food block items that are unobtainable in survival due to missing compat?
+	WanderingTraderSellFoodBlock = true

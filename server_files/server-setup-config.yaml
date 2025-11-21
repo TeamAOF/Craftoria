@@ -6,7 +6,7 @@ modpack:
 
 install:
   mcVersion:
-  loaderVersion: 21.1.209
+  loaderVersion: 21.1.215
   modpackUrl: https://mediafilez.forgecdn.net/files/7040/845/Craftoria-1.24.1.zip
   installerUrl: "https://maven.neoforged.net/releases/net/neoforged/neoforge/{{@loaderversion@}}/neoforge-{{@loaderversion@}}-installer.jar"
 
@@ -40,6 +40,7 @@ install:
       - 1285475 # Colorwheel Patcher
       - 646146 # Raise Sound Limit Simplified
       - 1351246 # Iris/Oculus Shader Folder
+      - 1326436 # Fancy Toasts
 
   baseInstallPath:
 

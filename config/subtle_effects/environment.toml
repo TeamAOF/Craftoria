@@ -21,14 +21,31 @@ sculkDustDensity = 5
 [geysers]
 useUpdatedSmoke = false
 flameGeyserSpawnChance = 5
+flameGeyserSpawnableBlocks = [
+    "minecraft:netherrack",
+    "minecraft:blackstone",
+    "minecraft:soul_soil"
+]
 flameGeyserSoundVolume = 0.5
 flameGeyserActiveTime = 300
 flameGeyserInactiveTime = 500
 smokeGeyserSpawnChance = 5
+smokeGeyserSpawnableBlocks = [
+    "minecraft:netherrack",
+    "minecraft:blackstone",
+    "minecraft:soul_soil"
+]
 smokeGeyserSoundVolume = 0.2
 smokeGeyserActiveTime = 300
 smokeGeyserInactiveTime = 500
 bubbleGeyserSpawnChance = 5
+bubbleGeyserSpawnableBlocks = [
+    "minecraft:sand",
+    "minecraft:red_sand",
+    "minecraft:gravel",
+    "minecraft:dirt",
+    "minecraft:clay"
+]
 bubbleGeyserSoundVolume = 0.5
 bubbleGeyserActiveTime = 300
 bubbleGeyserInactiveTime = 500
@@ -74,3 +91,16 @@ habitatBiomes = [
     "minecraft:mangrove_swamp"
 ]
 habitatBiomeDensity = 3
+
+[waterfalls]
+waterfallsEnabled = true
+smallWaterfallsEnabled = true
+waterfallUpdateFrequency = 6
+randomizeWaterfallParticleRotation = false
+mediumWaterfallParticleDensity = 1.0
+mediumWaterfallHeightThreshold = 6
+forceSpawnMediumWaterfallParticles = true
+largeWaterfallsEnabled = true
+largeWaterfallParticleDensity = 1.0
+largeWaterfallHeightThreshold = 10
+forceSpawnLargeWaterfallParticles = true

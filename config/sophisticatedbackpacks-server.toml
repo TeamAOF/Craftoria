@@ -20,6 +20,8 @@
 	tickDedupeLogicDisabled = false
 	#Determines if backpacks can be placed in container items (those that check for return value of canFitInsideContainerItems)
 	canBePlacedInContainerItems = false
+	#If true, disallows all blocks from connecting to backpacks
+	allBlockConnectionsDisallowed = false
 
 	#Leather Backpack Settings
 	[server.leatherBackpack]

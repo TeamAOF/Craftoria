@@ -104,3 +104,14 @@
 	#If set to DETAILED, the Trapdoor Texture Rotation overlay will show detailed info
 	#Allowed Values: HIDDEN, ICON, DETAILED
 	trapdoorTextureRotationMode = "DETAILED"
+	#Controls the maximum visibility of all overlays
+	#- If set to HIDDEN, the overlays will be completely hidden.
+	#- If set to ICON, the overlays will only show an icon.
+	#- If set to DETAILED, the overlays will show detailed info.
+	#Allowed Values: HIDDEN, ICON, DETAILED
+	maxOverlayMode = "DETAILED"
+	#If set to HIDDEN, the Copycat Style overlay will be completely hidden
+	#If set to ICON, the Copycat Style overlay will only show an icon
+	#If set to DETAILED, the Copycat Style overlay will show detailed info
+	#Allowed Values: HIDDEN, ICON, DETAILED
+	copycatStyleMode = "DETAILED"

@@ -1,10 +1,13 @@
-# The maximum distance that electricity nodes and connections can be seen by the camera.
-# Valid range: 1 to 128 (inclusive)
-electricityViewDistance = 48
+# The maximum speed the ceiling fan will spin when powered. This is visual only and does not affect damage.
+# Valid range: 1 to 50 (inclusive)
+ceilingFanMaxSpeed = 50.0
 # If enabled, shows an overlay on the HUD to help with cutting board slicing and combining recipes.
 # Note: This is an experimental feature.
 # Valid values: true, false
 showCuttingBoardHelper = false
+# The maximum distance that electricity nodes and connections can be seen by the camera.
+# Valid range: 1 to 128 (inclusive)
+electricityViewDistance = 48
 # If enabled, displays a toast notification when another player rings one of your doorbells.
 # Valid values: true, false
 doorbellNotification = true

@@ -63,3 +63,7 @@
 		terminalStoragePacketMaxInstances = 512
 		#If the version checker should be enabled.
 		versionChecker = true
+		#If client-received packets should be deserialized in a separate thread.
+		packetDeserializationEnableMultithreading = true
+		#If client-directed packets should be serialized in a separate thread.
+		packetSerializationEnableMultithreading = true

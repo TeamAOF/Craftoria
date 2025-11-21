@@ -1,0 +1,14 @@
+# Defines when Jade should be displayed
+# Default: ALWAYS
+# ALWAYS - Always show Jade when looking at a block
+# WAND - Only show Jade when holding a wand
+# NEVER - Never show Jade
+#Allowed Values: ALWAYS, WAND, NEVER
+jade_mode = "ALWAYS"
+# Defines whether wand information should be displayed and where
+# Default: TOP_RIGHT
+# NONE - Do not display overlay
+# TOP_LEFT - Anchor overlay to top-left corner
+# TOP_RIGHT - Anchor overlay to top-right corner
+#Allowed Values: NONE, TOP_LEFT, TOP_RIGHT
+wand_info = "TOP_RIGHT"

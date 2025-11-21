@@ -282,7 +282,16 @@
   // Increased Statistics: Animals Bred, Mob Kills, Use Item <item>, Kill Entity <entity>
   // Default value = false
   "increase_statistics": false,
+  // Allows to toggle if cooldowns should be shown only while player is crouching (true).
+  // or be visible all the time (false).
+  // Default value = true
+  "show_cooldowns_while_crouching": true,
+  // Allows to toggle if all interactions (even without cooldown) should be rendered
+  // above animal pen or aquarium
+  // Default value = false
+  "show_all_interactions_above": false,
   // Set of animals that are blocked from picking up.
+  // Pickable animals in vanilla minecraft: https://minecraft.wiki/w/Animal#List_of_animals
   "blocked_animals": [
   ],
   // Debug code to indicate problems.

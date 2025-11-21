@@ -217,3 +217,11 @@
 	minerFortune = true
 	#Don't damage chalks on use
 	unbreakableChalks = false
+	#Maximum distance the Entity Wormhole random teleport (RTP) feature can reach.
+	# Default: 4096
+	# Range: > 0
+	maxDistanceRTP = 4096
+	#Maximum number of attempts to find a safe place for the RTP.
+	# Default: 99
+	# Range: > 0
+	maxTryRTP = 99

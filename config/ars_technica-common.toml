@@ -42,3 +42,16 @@
 	# Default: 600
 	# Range: 40 ~ 6000
 	relayMaxCooldown = 600
+
+#Transmutation Turret settings
+["Transmutation Turret"]
+	#Source cost multiplier for transmutation turret, defaults to 2.0
+	# Default: 2.0
+	# Range: 0.1 ~ 10.0
+	transmutationTurretSourceCostMultiplier = 2.0
+
+#Obliterate settings
+["Glyph - Obliterate"]
+	# Default: 0.15
+	# Range: 0.0 ~ 5.0
+	obliterateFortuneBaseChance = 0.15

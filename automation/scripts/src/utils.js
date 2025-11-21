@@ -49,25 +49,24 @@ export async function getLatestBumpCommitHash(branchName = "HEAD") {
 }
 
 export async function getModInfo(projectId) {
-  const response = await fetch(`https://api.curse.tools/v1/cf/mods/${projectId}`, {
-    redirect: "follow",
-    headers: {
-      Accept: "application/json",
-    },
-  });
+  try {
+    const response = await fetch(`https://api.curse.tools/v1/cf/mods/${projectId}`, {
+      redirect: "follow",
+      headers: {
+        Accept: "application/json",
+      },
+      signal: AbortSignal.timeout(10000) // 10 second timeout
+    });
 
-  if (response.status !== 200) {
-    if (response.status === 403) {
-      console.error(`Failed to fetch mod info at ${response.url}: Bad CF Token`);
-    } else {
-      console.error(`Failed to fetch mod info at ${response.url}: ${response.status}`);
+    if (response.status !== 200) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
     }
-    process.exit(1);
+
+    const { data } = await response.json();
+    return data;
+  } catch (error) {
+    throw new Error(`Failed to fetch mod info for project ${projectId}: ${error.message}`);
   }
-
-  const { data } = await response.json();
-
-  return data;
 }
 
 /** @param {string} str */

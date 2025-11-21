@@ -121,3 +121,5 @@ ClientEvents.lang('en_us', e => {
   e.add('chattoggle', 'Toggle', 'Toggle Team Chat');
   e.add('mcjtylib', 'key.openManual', '[RFTools] Open Manual');
 });
+
+

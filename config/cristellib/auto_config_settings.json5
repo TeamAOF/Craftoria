@@ -1,0 +1,22 @@
+/*
+Auto-Config Settings
+The Config for Cristel Lib's automated structure config generation.
+*/
+{
+	// Mods where automatic structure config generation is disabled.
+	"blacklistedMods": [],
+	// Mods where automatic screen generation for structure configs is disabled.
+	"clientExcludedMods": [],
+	/* This list lets you override the default settings provided by mod authors.
+	   If you add a mod that is blacklisted by default (in the two other lists)
+	   you can now remove it without it getting added back automatically.
+	   Proceed at your own risk.
+	*/
+	"modOverrideWhitelist": [],
+	// Disable automatic structure config generation.
+	"disableAutoConfig": false,
+	// Disable automatic screen generation for structure configs.
+	"disableAutoConfigScreens": false,
+	// Set the default sub path of all automatically generated configs. Requires a RESTART to apply!
+	"autoConfigSubPath": "cristellib/"
+}

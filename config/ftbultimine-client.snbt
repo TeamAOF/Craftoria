@@ -9,6 +9,10 @@
 		# Does the player need to be holding the Ultimine key to cycle through shapes with the keyboard?
 		# Default: true
 		require_ultimine_key_for_cycling: true
+		
+		# When true, display the newly-selected shape as a hotbar message after an Ultimine shape change
+		# Default: false
+		shape_feedback_hotbar_message: false
 	}
 	overlay: {
 		# Default: 2
