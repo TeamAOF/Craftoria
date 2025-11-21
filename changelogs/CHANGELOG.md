@@ -10,6 +10,7 @@ _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 ### Removed Mods ❌
 
 * [Advancement Plaques](https://curseforge.com/projects/499826)
+* [Item Zoom](https://curseforge.com/projects/261725)
 
 ### Bug Fixes 🪲
 
