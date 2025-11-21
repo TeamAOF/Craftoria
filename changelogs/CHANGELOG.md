@@ -7,6 +7,10 @@ _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 * Balance Just Dire Things fluid fuel values ``James103``
 * Make Bigger AE2 advanced cell housing recipes more consistent ``James103``
 
+### Removed Mods ❌
+
+* [Advancement Plaques](https://curseforge.com/projects/499826)
+
 ### Bug Fixes 🪲
 
 * Fixed server not downloading mods correctly ``AK``
