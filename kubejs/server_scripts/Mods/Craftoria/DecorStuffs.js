@@ -87,7 +87,8 @@ ServerEvents.recipes(e => {
 
   chippedThings.forEach(tag => {
     Ingredient.of(tag).stacks.forEach(item => {
-      e.stonecutting(item.id, [tag, `minecraft:${tag.split(':')[1]}`]).id(makeRecipeID(item.id, tag));
+      let chippedIngredient = `minercraft:${ID.path(tag)}`;
+      if (Item.exists(chippedIngredient)) e.stonecutting(item.id, [tag, chippedIngredient]).id(makeRecipeID(item.id, tag));
     });
   });
 

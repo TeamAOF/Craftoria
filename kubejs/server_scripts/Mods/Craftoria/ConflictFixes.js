@@ -60,12 +60,6 @@ ServerEvents.recipes(e => {
   // Minecarts
   e.replaceOutput({ id: 'utilitarian:utility/hopper_minecart' }, 'minecraft:chest_minecart', 'minecraft:hopper_minecart');
   e.replaceOutput({ id: 'utilitarian:utility/tnt_minecart' }, 'minecraft:chest_minecart', 'minecraft:tnt_minecart');
-  e.replaceInput(
-    { id: 'utilitarian:utility/chest_minecart' },
-    '#c:chests',
-    Ingredient.of('#c:chests/wooden').except('expandedstorage:wood_chest')
-  );
-  e.replaceInput({ id: 'minecraft:chest_minecart' }, '#c:chests', Ingredient.of('#c:chests/wooden').except('expandedstorage:wood_chest'));
 
   // BWG
   e.replaceInput({ id: 'minecraft:crafting_table' }, '#minecraft:planks', Ingredient.of('#minecraft:planks').except('@biomeswevegone'));

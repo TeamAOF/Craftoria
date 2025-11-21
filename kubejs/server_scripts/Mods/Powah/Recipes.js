@@ -1,5 +1,14 @@
 ServerEvents.recipes(e => {
-  let { energizing } = e.recipes.powah;
+  let energizing = (output, inputs, energy) => {
+    let recipe = e.custom({
+      type: 'powah:energizing',
+      ingredients: inputs.map(input => Ingredient.of(input).toJson()),
+      energy: energy,
+      result: Item.of(output).toJson(),
+    });
+
+    return recipe;
+  };
 
   const reactors = [
     { id: 'reactor_starter', capacitor: 'capacitor_basic_tiny', previous: 'dielectric_casing' },
