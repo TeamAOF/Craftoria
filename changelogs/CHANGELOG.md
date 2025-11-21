@@ -1,3 +1,58 @@
+# Craftoria | v1.25.0
+
+_Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.25.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.25.0.md)_
+
+### Changes/Improvements ⭐
+
+* Change textures of lootr chests `AK`
+* Remove transportation quest chapter `AK`
+* Redesign Gadgets & Personal Storage quest chapters `AK`
+* Redesigned completionist quest chapter `AK`
+* Ultimine now requires a tool `AK`
+* Menril logs (normal and enriched) can now be ultimined together `AK`
+* Retextured enchantment level text `AK`
+* Retextured/modeled all vanilla animals `AK`
+* Add fishing quest chapter requirement for Completionist `AK`
+* Lowered floatingItemScale from 1.4 to 1.2 `AK`
+* Add fishing quest chapter `AK`
+
+### Added Mods ✅
+
+* [\[Let's Do Addon\] Compat](https://curseforge.com/projects/992333)
+* [\[Let's Do Addon\] EMI Compat](https://curseforge.com/projects/1063821)
+* [\[Let's Do\] API ](https://curseforge.com/projects/864599)
+* [\[Let's Do\] Beachparty](https://curseforge.com/projects/858691)
+* [\[Let's Do\] Brewery - Farm&Charm Compat](https://curseforge.com/projects/1038106)
+* [\[Let's Do\] Farm & Charm](https://curseforge.com/projects/1038103)
+* [\[Let's Do\] HerbalBrews](https://curseforge.com/projects/951221)
+* [\[Let's Do\] Vinery](https://curseforge.com/projects/704465)
+* [Achievements Optimizer](https://curseforge.com/projects/912788)
+* [Apothic Compats](https://curseforge.com/projects/1188699)
+* [Fancy Toasts | Better Advancements](https://curseforge.com/projects/1326436)
+* [ItemZoom](https://curseforge.com/projects/261725)
+* [LambDynamicLights](https://curseforge.com/projects/393442)
+* [MekaGenJei (Mekanism Generator addon)](https://curseforge.com/projects/1347827)
+* [Plushie Buddies](https://curseforge.com/projects/990265)
+* [Rubinated Nether](https://curseforge.com/projects/1096362)
+* [Seasonal Let's Do](https://curseforge.com/projects/1302716)
+* [Starcatcher](https://curseforge.com/projects/1357603)
+* [YUNG's Cave Biomes (Forge/NeoForge)](https://curseforge.com/projects/1111586)
+
+### Added Resource Packs 🎨
+
+* [Construction Sticks Grips](https://curseforge.com/projects/1374261)
+* [Excalibur | Aquaculture 2](https://curseforge.com/projects/1143307)
+* [Icons - Numerals](https://curseforge.com/projects/1380493)
+
+### Removed Mods ❌
+
+* [Create: Ender Link](https://curseforge.com/projects/1233526)
+
+### Bug Fixes 🪲
+
+* SGC rice crop dropping the wrong output of rice `AK`
+* Aluminum plate bypass recipe `AK`
+---
 # Craftoria | v1.24.1
 
 _Neoforge_ 21.1.209 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.24.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.24.1.md)_

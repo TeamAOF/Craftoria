@@ -55,7 +55,7 @@ export async function getModInfo(projectId) {
       headers: {
         Accept: "application/json",
       },
-      signal: AbortSignal.timeout(10000) // 10 second timeout
+      signal: AbortSignal.timeout(1000000) // 10 second timeout
     });
 
     if (response.status !== 200) {

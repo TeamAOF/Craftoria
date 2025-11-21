@@ -1879,6 +1879,173 @@
 		CooldownInSeconds = 10.0
 		AllowCrafting = true
 
+	[Spells."hazennstuff:spectral_axe"]
+		Enabled = true
+		School = "irons_spellbooks:evocation"
+		MaxLevel = 8
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 3.0
+		AllowCrafting = true
+
+	#hazennstuff:radiance
+	[Spells."hazennstuff:syringe_barrage"]
+		Enabled = true
+		School = "hazennstuff:radiance"
+		MaxLevel = 10
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "COMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 2.0
+		AllowCrafting = true
+
+	#hazennstuff:shadow
+	[Spells."hazennstuff:nights_edge_strike"]
+		Enabled = true
+		School = "hazennstuff:shadow"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "COMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 15.0
+		AllowCrafting = true
+
+	[Spells."hazennstuff:golden_shower"]
+		Enabled = true
+		School = "irons_spellbooks:holy"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 3.0
+		AllowCrafting = true
+
+	[Spells."hazennstuff:brimstone_hellblast"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 25.0
+		AllowCrafting = true
+
+	[Spells."hazennstuff:scorching_slash"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 3
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 15.0
+		AllowCrafting = true
+
+	[Spells."hazennstuff:cinderous_step"]
+		Enabled = true
+		School = "irons_spellbooks:fire"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "UNCOMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 12.0
+		AllowCrafting = true
+
+	[Spells."hazennstuff:counterspell_spider_lily"]
+		Enabled = true
+		School = "irons_spellbooks:nature"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "COMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 4.0
+		AllowCrafting = true
+
+	[Spells."hazennstuff:thorn_chakram"]
+		Enabled = true
+		School = "irons_spellbooks:nature"
+		MaxLevel = 10
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "COMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 1.0
+		AllowCrafting = true
+
+	[Spells."hazennstuff:shard_sword"]
+		Enabled = true
+		School = "irons_spellbooks:nature"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "COMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 15.0
+		AllowCrafting = true
+
+	[Spells."hazennstuff:death_sentence"]
+		Enabled = true
+		School = "irons_spellbooks:nature"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "COMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 15.0
+		AllowCrafting = true
+
+	[Spells."hazennstuff:crystal_volley"]
+		Enabled = true
+		School = "irons_spellbooks:ice"
+		MaxLevel = 10
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "UNCOMMON"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 16.0
+		AllowCrafting = true
+
+	[Spells."hazennstuff:ice_arrow"]
+		Enabled = true
+		School = "irons_spellbooks:ice"
+		MaxLevel = 10
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 8.0
+		AllowCrafting = true
+
+	[Spells."hazennstuff:soul_seekers"]
+		Enabled = true
+		School = "irons_spellbooks:eldritch"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "LEGENDARY"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 15.0
+		AllowCrafting = true
+
+	[Spells."hazennstuff:energy_burst"]
+		Enabled = true
+		School = "irons_spellbooks:lightning"
+		MaxLevel = 5
+		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
+		MinRarity = "RARE"
+		ManaCostMultiplier = 1.0
+		SpellPowerMultiplier = 1.0
+		CooldownInSeconds = 6.0
+		AllowCrafting = true
+
 	#Configure Boss Stats
 	["Boss Config".Tyros]
 		#Additional Health
