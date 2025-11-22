@@ -54,6 +54,11 @@ ServerEvents.recipes(e => {
     P: 'minecraft:paper',
   }).id('mcwholidays:stars_wall_deco');
 
+   // Vinery
+  e.shaped('6x vinery:grapevine_stem', ['A', 'A', 'A'], {
+    A: '#minecraft:logs',
+  }).id('vinery:grapevine_stem');
+
   // Thaumon
   e.replaceInput({ id: 'thaumon:ancient_stone_bricks' }, 'thaumon:ancient_stone', 'thaumon:polished_ancient_stone');
 
