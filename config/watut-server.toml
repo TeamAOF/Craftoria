@@ -9,7 +9,7 @@
 	# Range: > 5
 	dynamicGuiTickSendRateOfGUIUpdates = 10
 	#If enabled, only sends the initial image of a players gui, does not constantly update after it's been opened.
-	dynamicGuiDontSendConstantGUIUpdates = false
+	dynamicGuiDontSendConstantGUIUpdates = true
 	#Blur is used to prevent nasty aliasing/flicker artifacts at the cost of clarity
 	# Default: 1
 	# Range: 0 ~ 2
@@ -23,7 +23,7 @@
 	#Disables the background rendering for most guis, might hide things like JEI or other things count as background rendering
 	dynamicGuiDisableBackgroundRendering = true
 	#Show items being transferred between player and container
-	showItemsBeingTransferredBetweenPlayerAndContainer = true
+	showItemsBeingTransferredBetweenPlayerAndContainer = false
 	#How close another player has to be to another player to see what they're doing in GUI, item transferring, mouse movement, etc
 	# Default: 10
 	# Range: > 0
