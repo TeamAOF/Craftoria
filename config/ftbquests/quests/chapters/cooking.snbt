@@ -4,7 +4,10 @@
 	filename: "cooking"
 	group: "5016E3C5975D88DE"
 	icon: {
-		id: "farm_and_charm:cooking_pot"
+		components: {
+			"ftbquests:missing_item": "farm_and_charm:cooking_pot"
+		}
+		id: "ftbquests:missing_item"
 	}
 	id: "51BB74521F2334FA"
 	order_index: 0

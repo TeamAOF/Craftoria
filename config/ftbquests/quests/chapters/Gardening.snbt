@@ -5,7 +5,10 @@
 	filename: "Gardening"
 	group: "5016E3C5975D88DE"
 	icon: {
-		id: "brewery:dried_wheat"
+		components: {
+			"ftbquests:missing_item": "brewery:dried_wheat"
+		}
+		id: "ftbquests:missing_item"
 	}
 	id: "36F47DCAC3D28F1B"
 	order_index: 2

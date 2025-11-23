@@ -1,3 +1,19 @@
+# Craftoria | v1.25.2
+
+_Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.25.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.25.2.md)_
+
+### Changes/Improvements ⭐
+
+* Change to require no tool to ultimine `AK`
+
+### Bug Fixes 🪲
+
+* Excessive saturation sync packets from animals `AK`
+* Missing textures for MI quarries `AK`
+* Client-side crash on servers when breaking placed trophies `AK`
+* Jade ui disappearing after an achievement `AK`
+* Recipe conflict for grapevine stem `AK`
+---
 # Craftoria | v1.25.1
 
 _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.25.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.25.1.md)_
