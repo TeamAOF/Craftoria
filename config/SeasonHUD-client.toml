@@ -72,19 +72,22 @@
 		enable_show_tropical_season = true
 		#Show sub-season (i.e. Early Winter, Mid Autumn, Late Spring) instead of basic season?
 		#(true/false)
-		# Default is .true.
+		# Default is true.
 		enable_show_sub_season = true
 		#Show the day of the current Season/Sub-Season?
-		#Default is .SHOW_DAY.
+		#Default is SHOW_DAY.
 		#Allowed Values: NONE, SHOW_DAY, SHOW_WITH_TOTAL_DAYS
 		enable_show_day = "SHOW_DAY"
+		#Show the current fertility of the biome
+		#Default is false.
+		enable_show_fertility = false
 
 	[SeasonHUD.Minimap]
 		#Enable integration with minimap mods?
 		#(true/false)
-		#Default is .true.
+		#Default is true.
 		enable_minimap_integration = false
 		#Show the default SeasonHUD display when the minimap is hidden?
 		#(true/false)
-		#Default is .false.
+		#Default is false.
 		enable_show_minimap_hidden = false

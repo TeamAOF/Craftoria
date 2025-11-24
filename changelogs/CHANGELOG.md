@@ -1,3 +1,16 @@
+# Craftoria | v1.25.3
+
+_Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.25.3.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.25.3.md)_
+
+### Removed Mods ❌
+
+* [Toast Control](https://curseforge.com/projects/271740)
+
+### Bug Fixes 🪲
+
+* Advancements not showing up correctly `AK`
+* Water flickering, hopefully `AK`
+---
 # Craftoria | v1.25.2
 
 _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.25.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.25.2.md)_
