@@ -14,17 +14,11 @@
     "dumplings_delight",
     "sushigocrafting",
     "moremekanismprocessing",
-    "refurbished_furniture"
+    "refurbished_furniture",
+    "rubinated_nether"
   ],
   "priority_overrides": {},
-  "stone_variants": [
-    "stone",
-    "andesite",
-    "deepslate",
-    "diorite",
-    "granite",
-    "nether"
-  ],
+  "stone_variants": ["stone", "andesite", "deepslate", "diorite", "granite", "nether"],
   "tags": [
     "c:dusts/{material}",
     "c:gears/{material}",
@@ -37,25 +31,21 @@
     "c:rods/{material}",
     "c:storage_blocks/raw_{material}",
     "c:storage_blocks/{material}",
-    "c:wires/{material}"
+    "c:wires/{material}",
+    "c:tiny_dusts/{material}",
+    "c:crops/{material}",
+    "c:seeds/{material}",
+    "c:foods/raw_bacon",
+    "c:foods/cooked_bacon",
+    "c:foods/raw_calamari",
+    "c:plastics",
+    "c:doughs",
+    "c:flours"
   ],
-  "ignored_tags": [
-    "c:foods/raw_squid"
-  ],
-  "ignored_items": [
-    "mekanism:hdpe_sheet",
-    "industrialforegoing:gold_gear",
-    "rusticdelight:calamari_slice",
-    "industrialforegoing:diamond_gear",
-    "farmersdelight:cabbage",
-    "industrialforegoing:iron_gear"
-  ],
-  "ignored_recipe_types": [
-    "cucumber:shaped_tag"
-  ],
-  "ignored_recipe_ids": [
-    "rusticdelight:calamari_roll"
-  ],
+  "ignored_tags": ["c:foods/raw_squid"],
+  "ignored_items": ["mekanism:hdpe_sheet", "farmersdelight:cabbage", "rusticdelight:calamari_slice", "industrialforegoing:iron_gear", "industrialforegoing:gold_gear", "industrialforegoing:diamond_gear"],
+  "ignored_recipe_types": ["cucumber:shaped_tag"],
+  "ignored_recipe_ids": ["rusticdelight:calamari_roll"],
   "recipe_viewer_hiding": true,
   "loot_unification": true,
   "ignored_loot_tables": []
