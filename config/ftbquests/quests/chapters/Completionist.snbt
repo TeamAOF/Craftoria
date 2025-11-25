@@ -546,6 +546,12 @@
 		}
 		{
 			dependencies: ["1910D05CD66EC477"]
+			icon: {
+				components: {
+					"trofers:trophy": "trofers:fishing"
+				}
+				id: "trofers:medium_pillar"
+			}
 			icon_scale: 1.5d
 			id: "678A65A6A3461CFC"
 			rewards: [{
@@ -562,9 +568,8 @@
 			shape: "none"
 			size: 2.5d
 			tasks: [{
-				id: "4CD8949CB5636754"
-				item: { components: { "trofers:trophy": "trofers:fishing" }, count: 1, id: "trofers:medium_pillar" }
-				type: "item"
+				id: "0252085507ED5488"
+				type: "checkmark"
 			}]
 			x: -9.25d
 			y: 8.125d
