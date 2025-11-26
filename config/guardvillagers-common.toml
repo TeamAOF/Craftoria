@@ -35,6 +35,19 @@
 	# Default: 1.0
 	# Range: -999.9000244140625 ~ 999.0
 	"Chance for guards to lose durability" = 1.0
+	"Allow guards to sink temporarily to fight mobs that are under water?" = true
+	"Mobs that guards actively protect when they get targeted" = ["minecraft:villager", "guardvillagers:guard", "minecraft:iron_golem"]
+	#Mobs in this list also won't get hurt by a guard's arrow if the config option to disable guard arrows hurting villagers is enabled.
+	"Mobs that guards actively protect when they get hurt" = ["minecraft:villager", "guardvillagers:guard", "minecraft:iron_golem"]
+	# Default: 8.0
+	# Range: 0.0 ~ 1.0E8
+	"Guard crossbow attack radius" = 8.0
+	#Guards are placed in the middle, thus more advanced placement should be done via datapacks
+	"Structure pieces that spawn guards" = ["minecraft:village/common/iron_golem"]
+	# Default: 6
+	# Range: 0 ~ 100000000
+	"How many guards should spawn in a village?" = 6
+	"Allow guards to convert to zombie villagers upon being killed by zombies?" = true
 
 ["raids and illagers"]
 	#This makes Illagers run from polar bears, as anyone with common sense would.
@@ -67,3 +80,15 @@
 	"Have it so blacksmiths heal golems under 60 health?" = true
 	#Professions that can be converted into guards
 	"Profession Whitelist for guard conversion" = ["nitwit", "none"]
+	"Profession Whitelist for healing ai for clerics" = ["cleric"]
+	"Profession Whitelist for golem repair ai" = ["armorer, weaponsmith"]
+	"Profession Whitelist for guard weaponry repair ai" = ["weaponsmith", "armorer", "toolsmith"]
+	# Default: 3
+	# Range: 0 ~ 1000000
+	"How many times a cleric can heal a guard in one day" = 3
+	# Default: 3
+	# Range: 0 ~ 1000000
+	"How many times a smith villager can heal a golem in one day" = 3
+	# Default: 3
+	# Range: 0 ~ 1000000
+	"How many times a villager can heal a guard's equipment in one day" = 3

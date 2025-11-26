@@ -1,3 +1,26 @@
+# Craftoria | v1.25.4
+
+_Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.25.4.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.25.4.md)_
+
+### Changes/Improvements ⭐
+
+* Allow any flowers in supplementaries flower boxes `AK`
+* Unify rubies `AK`
+
+### Removed Mods ❌
+
+* [Apothic Compats](https://curseforge.com/projects/1188699)
+* [CoroUtil](https://curseforge.com/projects/237749)
+* [Inline](https://curseforge.com/projects/971167)
+* [Potion Icons](https://curseforge.com/projects/1272135)
+* [What Are They Up To (Watut)](https://curseforge.com/projects/945479)
+
+### Bug Fixes 🪲
+
+* Incorrect task for completionist fishing quest `AK`
+* Trophies crashing on server when they had null data (for real this time) `AK`
+---
+
 # Craftoria | v1.25.3
 
 _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.25.3.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.25.3.md)_
