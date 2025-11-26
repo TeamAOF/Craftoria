@@ -1,4 +1,4 @@
-# Craftoria - v1.25.4
+# Craftoria - v1.26.0
 
 ## Mods
 
@@ -18,7 +18,6 @@
   * [All-The-Wood-Weve-Got-NeoForge-2.2.3.jar](https://www.curseforge.com/minecraft/mc-mods/all-the-wood-weve-got/files/6989900) (by [AOCAWOL](https://www.curseforge.com/members/AOCAWOL/projects))
   * [alltheleaks-1.1.3+1.21.1-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/alltheleaks/files/7259391) (by [Uncandango](https://www.curseforge.com/members/Uncandango/projects))
   * [almostunified-neoforge-1.21.1-1.3.0.jar](https://www.curseforge.com/minecraft/mc-mods/almost-unified/files/6847936) (by [AlmostReliable](https://www.curseforge.com/members/AlmostReliable/projects))
-  * [alshanex_familiars-1.21.1_v3.0.jar](https://www.curseforge.com/minecraft/mc-mods/alshanexs-familiars/files/6825732) (by [alshanex](https://www.curseforge.com/members/alshanex/projects))
   * [alternate_current-mc1.21-1.9.0.jar](https://www.curseforge.com/minecraft/mc-mods/alternate-current/files/5665477) (by [SpaceWalkerRS](https://www.curseforge.com/members/SpaceWalkerRS/projects))
   * [AmbientSounds_NEOFORGE_v6.3.1_mc1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/ambientsounds/files/7226584) (by [CreativeMD](https://www.curseforge.com/members/CreativeMD/projects))
   * [animal_feeding_trough-1.1.2+1.21-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/animal-feeding-trough/files/5617654) (by [Slexom](https://www.curseforge.com/members/Slexom/projects))
@@ -167,7 +166,6 @@
   * [extrasponges-neoforge-1.21-1.6.1.jar](https://www.curseforge.com/minecraft/mc-mods/extra-sponges/files/5904250) (by [UltrusBot](https://www.curseforge.com/members/UltrusBot/projects))
   * [ExtremeSoundMuffler-3.51_NeoForge-1.21.jar](https://www.curseforge.com/minecraft/mc-mods/extreme-sound-muffler/files/6875184) (by [LeoBeliik](https://www.curseforge.com/members/LeoBeliik/projects))
   * [factory_blocks-neoforge-1.4.0+mc1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/factory-blocks/files/6266334) (by [Slaincow](https://www.curseforge.com/members/Slaincow/projects))
-  * [familiarslib-1.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/familiarslib/files/6824093) (by [alshanex](https://www.curseforge.com/members/alshanex/projects))
   * [fancymenu_neoforge_3.8.1_MC_1.21.1.jar](https://www.curseforge.com/minecraft/mc-mods/fancymenu/files/7256741) (by [Keksuccino](https://www.curseforge.com/members/Keksuccino/projects))
   * [fancytoasts-neoforge-1.21.1-1.4.4.1.jar](https://www.curseforge.com/minecraft/mc-mods/fancy-toasts/files/7233467) (by [Bivrik](https://www.curseforge.com/members/Bivrik/projects))
   * [farmers-cutting-oh-the-biomes-weve-gone-1.21.1-2.1-neoforge.jar](https://www.curseforge.com/minecraft/mc-mods/farmers-cutting-oh-the-biomes-weve-gone/files/6274107) (by [Joshcraft2002](https://www.curseforge.com/members/Joshcraft2002/projects))

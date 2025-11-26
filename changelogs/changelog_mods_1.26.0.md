@@ -1,8 +1,10 @@
-## Craftoria - 1.25.3 -> 1.25.4
+## Craftoria - 1.25.3 -> 1.26.0
 
 ### Removed Mods
+* [Alshanex's Familiars](https://curseforge.com/projects/1171602)
 * [Apothic Compats](https://curseforge.com/projects/1188699)
 * [CoroUtil](https://curseforge.com/projects/237749)
+* [FamiliarsLib](https://curseforge.com/projects/1316458)
 * [Inline](https://curseforge.com/projects/971167)
 * [Potion Icons](https://curseforge.com/projects/1272135)
 * [What Are They Up To (Watut)](https://curseforge.com/projects/945479)
