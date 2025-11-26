@@ -58,6 +58,15 @@ ServerEvents.recipes(e => {
         .itemIn('64x modern_industrialization:nuke')
         .itemOut(`extended_industrialization:nano_quantum_${item}`)
         .id(`craftoria:end_game/nano_quantum_${item}`);
+    } else {
+      e.remove({ output: 'extended_industrialization:nano_quantum_saber' });
+      implosion_compressor(1, 10)
+        .itemIn('modern_industrialization:quantum_sword')
+        .itemIn('extended_industrialization:nano_saber')
+        .itemIn('64x modern_industrialization:nuke')
+        .itemIn('64x modern_industrialization:nuke')
+        .itemOut('extended_industrialization:nano_quantum_saber')
+        .id('craftoria:end_game/nano_quantum_saber');
     }
   });
 
