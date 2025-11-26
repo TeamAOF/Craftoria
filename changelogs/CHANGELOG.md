@@ -1,6 +1,6 @@
-# Craftoria | v1.25.4
+# Craftoria | v1.26.0
 
-_Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.25.4.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.25.4.md)_
+_Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.26.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.26.0.md)_
 
 ### Changes/Improvements ⭐
 
@@ -9,8 +9,10 @@ _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 
 ### Removed Mods ❌
 
+* [Alshanex's Familiars](https://curseforge.com/projects/1171602)
 * [Apothic Compats](https://curseforge.com/projects/1188699)
 * [CoroUtil](https://curseforge.com/projects/237749)
+* [FamiliarsLib](https://curseforge.com/projects/1316458)
 * [Inline](https://curseforge.com/projects/971167)
 * [Potion Icons](https://curseforge.com/projects/1272135)
 * [What Are They Up To (Watut)](https://curseforge.com/projects/945479)
