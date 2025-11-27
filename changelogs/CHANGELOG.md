@@ -1,3 +1,29 @@
+# Craftoria | v1.27.0
+
+_Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.27.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.27.0.md)_
+
+## DISCLAIMER: New map mod who dis? Be sure to backup your worlds before updating!
+
+### Changes/Improvements ⭐
+
+* Disable sorting through inv essentials `AK`
+
+### Added Mods ✅
+
+* [FTB Chunks x Xaero's Compat](https://curseforge.com/projects/1357724)
+* [Xaero's Maps x Waystones](https://curseforge.com/projects/1340197)
+* [Xaero's Minimap](https://curseforge.com/projects/263420)
+* [Xaero's World Map](https://curseforge.com/projects/317780)
+
+### Bug Fixes 🪲
+
+* Crashing using fish locator & rod `AK`
+* Iron's Spells 'n Spellbooks cooldowns not showing correctly `AK`
+* Fishing trophy quests completable with any trophy `AK`
+* Invisible names above players `AK`
+* Missing ores in mining dimension `AK`
+---
+
 # Craftoria | v1.26.0
 
 _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.26.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.26.0.md)_

@@ -48,6 +48,14 @@
 	# Range: 0 ~ 100000000
 	"How many guards should spawn in a village?" = 6
 	"Allow guards to convert to zombie villagers upon being killed by zombies?" = true
+	#If a guard is fighting a mob underwater and the vertical distance between that mob and the guard is larger than this, the guard will instead float up to not take the risk of drowning
+	# Default: 8
+	# Range: 0 ~ 100000000
+	"Depth value for guards fighting underwater mobs" = 8
+	#Angle is determined by taking the arccos of the inputted value, for example -1 is a straight 180 degree angle thus if that value is inputted guards will only check straight ahead to see if any friendly mobs are in the way.
+	# Default: -0.9
+	# Range: -1000000.0 ~ 1000000.0
+	"Angle of how ranged guards determine if a friendly mob is infront of them before firing" = -0.9
 
 ["raids and illagers"]
 	#This makes Illagers run from polar bears, as anyone with common sense would.
