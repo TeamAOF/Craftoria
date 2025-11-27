@@ -6,10 +6,6 @@
 * [Xaero's Minimap](https://curseforge.com/projects/263420)
 * [Xaero's World Map](https://curseforge.com/projects/317780)
 
-### Removed Mods
-* [Alshanex's Familiars](https://curseforge.com/projects/1171602)
-* [FamiliarsLib](https://curseforge.com/projects/1316458)
-
 ### Updated Mods
 * [balm-neoforge-1.21.1-21.0.54.jar](https://www.curseforge.com/minecraft/mc-mods/balm/files/7087416) -> [balm-neoforge-1.21.1-21.0.55.jar](https://www.curseforge.com/minecraft/mc-mods/balm/files/7264790)
 * [c2me-neoforge-mc1.21.1-0.3.0+alpha.0.87.jar](https://www.curseforge.com/minecraft/mc-mods/c2me/files/7199400) -> [c2me-neoforge-mc1.21.1-0.3.0+alpha.0.88.jar](https://www.curseforge.com/minecraft/mc-mods/c2me/files/7263293)
