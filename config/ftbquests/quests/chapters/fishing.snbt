@@ -285,6 +285,7 @@
 			tasks: [{
 				id: "18DB91FAFFC46B5D"
 				item: { components: { "minecraft:item_name": "\"Trophy of Pitiful Fishing\"", "starcatcher:trophy": { all: { total: 10 }, custom_name: "Trophy of Pitiful Fishing", fish_properties: { fish: "starcatcher:trophy_bronze" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_bronze" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 7.200000000000001d
@@ -307,6 +308,7 @@
 			tasks: [{
 				id: "285134647C8E9555"
 				item: { components: { "minecraft:item_name": "\"Trophy of Skilled Fishing\"", "starcatcher:trophy": { all: { total: 25 }, custom_name: "Trophy of Skilled Fishing", fish_properties: { fish: "starcatcher:trophy_silver" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_silver" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 7.215000000000002d
@@ -329,6 +331,7 @@
 			tasks: [{
 				id: "2FA6F7811973B494"
 				item: { components: { "minecraft:item_name": "\"Trophy of Masterful Fishing\"", "starcatcher:trophy": { all: { total: 50 }, custom_name: "Trophy of Masterful Fishing", fish_properties: { fish: "starcatcher:trophy_gold" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_gold" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 7.2250000000000005d
@@ -350,6 +353,7 @@
 			tasks: [{
 				id: "6D9D40FE0D5B0F7F"
 				item: { components: { "minecraft:item_name": "\"Trophy of Flowing Fishes\"", "starcatcher:trophy": { all: { unique: 75 }, custom_name: "Trophy of Flowing Fishes", fish_properties: { fish: "starcatcher:trophy_silver" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_silver" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: -3.9375000000000004d
@@ -372,6 +376,7 @@
 			tasks: [{
 				id: "2FBB40299068EDBB"
 				item: { components: { "minecraft:item_name": "\"Trophy of Infinite Fishes\"", "starcatcher:trophy": { all: { unique: 134 }, custom_name: "Trophy of Infinite Fishes", fish_properties: { fish: "starcatcher:trophy_gold" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_gold" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: -3.9375000000000004d
@@ -394,6 +399,7 @@
 			tasks: [{
 				id: "12F508D7D48DFED3"
 				item: { components: { "minecraft:item_name": "\"Trophy of the Older Angler\"", "starcatcher:trophy": { common: { total: 100, unique: 50 }, custom_name: "Trophy of the Older Angler", epic: { total: 20, unique: 12 }, fish_properties: { fish: "starcatcher:trophy_gold" }, legendary: { total: 10, unique: 8 }, rare: { total: 30, unique: 17 }, trophy_type: "trophy", uncommon: { total: 50, unique: 25 } } }, count: 1, id: "starcatcher:trophy_gold" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: -3.9375000000000004d
