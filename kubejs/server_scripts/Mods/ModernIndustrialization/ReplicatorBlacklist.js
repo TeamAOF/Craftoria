@@ -31,6 +31,7 @@ ServerEvents.tags('item', e => {
     '@sophisticatedstorageinmotion',
 
     '#create:packages',
+    /^create:.*_contraption/,
 
     /^industrialforegoing:infinity_(?!charger).*/,
 
