@@ -65,7 +65,9 @@ ServerEvents.recipes(event => {
     'create:crushing/platinum_ore',
     'create:crushing/raw_platinum',
     'create:crushing/raw_platinum_block',
-    'xycraft_machines:compat/mek/compressor/aluminum_sheet_temp'
+    'xycraft_machines:compat/mek/compressor/aluminum_sheet_temp',
+    /rubinated_nether:bronze/,
+    'minecraft:blaze_rod_from_smelting_bronze_rod'
   ];
 
   /** @type {Special.Item[]} */

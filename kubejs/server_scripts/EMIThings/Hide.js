@@ -1,7 +1,9 @@
 // priority: -1100
 RecipeViewerEvents.removeEntries('item', event => {
   /** @type {Special.Item[]} */
-  let hideItems = [];
+  let hideItems = [
+    /rubinated_nether:bronze/,
+  ];
 
   hideItems.forEach(item => {
     event.remove(item);
