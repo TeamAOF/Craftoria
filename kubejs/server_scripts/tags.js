@@ -100,6 +100,9 @@ ServerEvents.tags('item', e => {
   e.add('animal_pen:can_attack_pen', ['#c:tools/melee_weapon', '#c:tools/knife']);
   e.add('animal_pen:can_attack_aquarium', ['#c:tools/melee_weapon', '#c:tools/knife']);
 
+  e.add('minecraft:signs', ['ars_nouveau:archwood_sign', 'beachparty:palm_sign']);
+  e.add('minecraft:hanging_signs', ['ars_nouveau:archwood_hanging_sign', 'beachparty:palm_hanging_sign']);
+
   e.remove('minecraft:axes', ['hazennstuff:skyuscorcher']);
 
   /**
@@ -192,7 +195,9 @@ ServerEvents.tags('block', e => {
     'moderndynamics:machine_extender',
   ]);
 
-  e.add('minecraft:mineable/axe', ['mekanism:cardboard_box', '#animal_pen:animal_pens']);
+  e.add('minecraft:mineable/axe', ['mekanism:cardboard_box', '#animal_pen:animal_pens', 'ars_nouveau:archwood_sign']);
+
+  e.add('c:mineable/paxel', ['ars_nouveau:archwood_sign', 'ars_nouveau:archwood_hanging_sign']);
 
   e.add('minecraft:storage_blocks/quartz', 'minecraft:quartz_block');
 
