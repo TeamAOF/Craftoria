@@ -1,10 +1,13 @@
 # Don't change this! Version used to track needed updates.
 version = 0
-enderPearlTrail = true
+chickenFeathers = true
+parrotFeathers = true
+snowGolemSnowflakes = true
 allayMagicDensity = 0.2
 vexMagicDensity = 0.2
 sheepShearFluff = true
 improvedDragonFireballTrail = true
+dragonsBreathClouds = true
 commandBlockMinecartParticles = "ON"
 endCrystalParticles = true
 minecartSparksDisplayType = "DEFAULT"
@@ -17,22 +20,18 @@ replaceSpellCasterParticles = true
 ironGolemCrackParticles = true
 spectralArrowParticles = true
 wardenDeathSoulParticles = true
-xpBottleParticlesDisplayType = "DEFAULT"
-xpBottleParticlesDensity = 10
-eggSmashSoundVolume = 0.5
-eggSplatParticles = true
 freezingSnowFlakes = true
 featherTicklingPandas = true
 improvedPandaSneezes = true
-snowballTrailDensity = 0.5
-snowballPoofsHaveSnowflakes = true
-snowballPoofSoundVolume = 0.3
 villagerWorkAtWorkstationParticles = true
-
-[attacked]
-chickenFeathers = true
-parrotFeathers = true
-snowGolemSnowflakes = true
+improvedBrownMooshroomFeedingEffects = true
+improvedMooshroomShearingEffects = true
+replaceBlazeSmoke = true
+animalFeedingParticles = true
+animalFeedingSoundVolume = 1.0
+underwaterEntityPoofBubbles = true
+improvedWetWolfShakeEffects = true
+improvedVillagerSweatingEffects = true
 
 [sleeping]
 playerSnoreChance = 1.0
@@ -50,18 +49,20 @@ adjustNameTagWhenSleeping = true
 
 [humanoids]
 drowningBubblesDisplayType = "THIRD_PERSON_ONLY"
-drowningBubblesDensity = 10
+drowningBubblesDensity = 3
 drowningBubbleAlpha = 1.0
 forceDrowningBubblesToColumn = false
 potionRingsDisplayType = "DEFAULT"
 potionRingsParticleType = "BOTH"
+potionRingsScale = 1.0
+potionRingsAlpha = 1.0
 NPCsHavePotionRings = true
 
 [humanoids.frostyBreath]
 displayType = "THIRD_PERSON_ONLY"
 alpha = 0.5
 waitTime = 60
-seasons = "WINTER_ONLY"
+seasons = "DEFAULT"
 additionalBiomes = [  ]
 
 [humanoids.player]
@@ -93,19 +94,25 @@ sparks = true
 sounds = true
 extinguishSteam = true
 
-[itemRarity]
-particlesDisplayType = "ON"
-particleColorType = "NAME_COLOR"
-mixedColorName = true
-useItemBorder = true
-colorOverrides = [  ]
-particleMaxHeight = 1.0
-particleMaxSpeed = 1.0
-particleDensity = 1.0
-
 [explosives]
 tntUpdateSmoke = true
 tntFlamesDensity = 1
 tntSparks = true
 creeperSmoke = "UPDATED"
 creeperSparks = true
+
+[splashes]
+splashEffects = true
+splashRipples = true
+splashDroplets = true
+splashBubbles = true
+explosionsCauseSplashes = true
+splashOverlayTint = 0.2
+splashOverlayAlpha = 0.8
+splashVelocityThreshold = 0.35
+entityBlocklist = [  ]
+secondarySplash = true
+secondarySplashRipples = false
+secondarySplashVelocityThreshold = 0.3
+lavaSplashes = true
+lavaSplashRipples = true

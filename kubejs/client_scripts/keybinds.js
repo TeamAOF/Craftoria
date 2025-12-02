@@ -71,7 +71,7 @@ KeyBindJSEvents.modify(event => {
 
     // FTB
     'key.ftbchunks.claim_manager': { category: 'category.craftoria.ftb' },
-    'key.ftbchunks.map': { category: 'category.craftoria.ftb' },
+    'key.ftbchunks.map': { key: none, category: 'category.craftoria.ftb', remove: true},
     'key.ftbchunks.add_waypoint': { category: 'category.craftoria.ftb' },
     'key.ftbchunks.toggle_minimap': { category: 'category.craftoria.ftb' },
     'key.ftbchunks.waypoint_manager': { category: 'category.craftoria.ftb' },
@@ -106,6 +106,9 @@ KeyBindJSEvents.modify(event => {
 
     // FramedBlocks
     'framedblocks.key.wipe_cache': { key: none },
+
+    // Voice Mod
+    'key.mute_microphone': { key: none, mod: 'voicechat', remove: true},
 
     // Removed keybinds
     'key.apotheosis.compare_equipment': { remove: true },

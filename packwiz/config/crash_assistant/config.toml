@@ -123,8 +123,15 @@
 	#On first world join of modpack creator if set to false shows greeting, then self enables.
 	shown_greeting = true
 
+[greeting]
+	#You don't need to touch this option.
+	#On first world join of modpack creator if set to false shows greeting, then self enables.
+	shown_greeting = true
+
 #You can customise GUI with this options.
 [gui_customisation]
+	#Will hide Upload All Button from GUI.
+	disable_upload_all_button = false
 	#Append comment text with notice about sending screenshot of this gui tells nothing to modpack creators.
 	show_dont_send_screenshot_of_gui_notice = true
 	#Animate border to request user attention even more.
@@ -135,6 +142,8 @@
 	upload_all_button_font_size = 16
 	#Same as upload_all_button_font_size, but for Request Help button.
 	request_help_button_font_size = 16
+	#Same as upload_all_button_font_size, but for the Simple Mode toggle button.
+	simple_mode_button_font_size = 16
 	#You can change Upload All Button color to request user attention.
 	#format is "R_G_B", range is 0-255, for example "255_0_0" is red color. Use "default" to use default swing color.
 	#Default for this button is "0_178_0" (dark green color).
@@ -142,6 +151,36 @@
 	#Same as upload_all_button_foreground_color, but for Request Help button.
 	#Default for this button is "0_0_178" (dark blue color).
 	request_help_button_foreground_color = "0_0_178"
+	#Same as upload_all_button_foreground_color, but for the Simple Mode toggle button.
+	simple_mode_button_foreground_color = "0_0_178"
+	#Same as upload_all_button_font_size, but for Auto-Fix button (in integrated GPU warning).
+	auto_fix_button_font_size = 16
+	#Same as upload_all_button_foreground_color, but for Auto-Fix button (in integrated GPU warning).
+	#Default for this button is "0_178_0" (dark green color).
+	auto_fix_button_foreground_color = "0_178_0"
+	#Path to a modpack logo to display in the top of the GUI.
+	#Path is relative to the Minecraft instance folder. Leave empty to disable.
+	modpack_logo_path = ""
+	#If true, the logo will be larger, Replacing a some of `don't send screenshot` notice.
+	#If false, it will be smaller and logo will be end right where the `don't send screenshot` notice starts.
+	#You should try both, but most likely:
+	#- If you have some long text in the discord description, you will love the small one.
+	#- If the text is short, you will love the large one.
+	modpack_logo_large_mode = false
+	#Limit modpack logo height. Default is -1, which means it's calculated automatically.
+	#By default, this should not be needed. But if you have heavily customized GUI or using
+	#a rectangle logo instead of square, you may want to decrease its size, so this option could be needed in such case. 
+	limit_modpack_logo_height = -1
+	#This option would be needed only if you limited modpack logo height.
+	#Otherwise, the logo will consume all available horizontal space.
+	#If true, the logo will be centered. If false, it will be aligned to the top. 
+	modpack_logo_aligned_center = true
+
+#Checks crash_assistant compatibility with other incompatible mods.
+#Highly unrecommended to disable!
+[compatibility]
+	#Enable feature.
+	enabled = true
 
 #Checks crash_assistant compatibility with other incompatible mods.
 #Highly unrecommended to disable!

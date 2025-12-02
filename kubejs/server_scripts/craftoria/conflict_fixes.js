@@ -54,18 +54,17 @@ ServerEvents.recipes(e => {
     P: 'minecraft:paper',
   }).id('mcwholidays:stars_wall_deco');
 
+   // Vinery
+  e.shaped('6x vinery:grapevine_stem', ['A', 'A', 'A'], {
+    A: '#minecraft:logs',
+  }).id('vinery:grapevine_stem');
+
   // Thaumon
   e.replaceInput({ id: 'thaumon:ancient_stone_bricks' }, 'thaumon:ancient_stone', 'thaumon:polished_ancient_stone');
 
   // Minecarts
   e.replaceOutput({ id: 'utilitarian:utility/hopper_minecart' }, 'minecraft:chest_minecart', 'minecraft:hopper_minecart');
   e.replaceOutput({ id: 'utilitarian:utility/tnt_minecart' }, 'minecraft:chest_minecart', 'minecraft:tnt_minecart');
-  e.replaceInput(
-    { id: 'utilitarian:utility/chest_minecart' },
-    '#c:chests',
-    Ingredient.of('#c:chests/wooden').except('expandedstorage:wood_chest')
-  );
-  e.replaceInput({ id: 'minecraft:chest_minecart' }, '#c:chests', Ingredient.of('#c:chests/wooden').except('expandedstorage:wood_chest'));
 
   // BWG
   e.replaceInput({ id: 'minecraft:crafting_table' }, '#minecraft:planks', Ingredient.of('#minecraft:planks').except('@biomeswevegone'));
@@ -76,6 +75,7 @@ ServerEvents.recipes(e => {
   let removeById = [
     'dumplings_delight:eggplant_seeds',
     'duckling:cake',
+    'farmersdelight:cake_from_milk_bottle',
     'utilitarian:utility/logs_to_chests',
     'mekanism:sulfur_dye',
     'minecraft:coal_from_blasting_deepslate_coal_ore',
@@ -90,11 +90,40 @@ ServerEvents.recipes(e => {
     'farmersdelight:paper_from_tree_bark',
     'actuallyadditions:tagged_slime_block',
     'endermanoverhaul:ender_eye',
-    'minecraft:sticky_piston',
     'dumplings_delight:chinese_cabbage_from_leaves',
     'supplementaries:awnings/awning_dark_gray',
     'refurbished_furniture:dough',
+    'actuallyadditions:tagged_sticky_piston',
+    'xycraft_machines:shaped/sticky_piston_tagged',
+    'biomeswevegone:pumpkin_pie',
+    'duckling:pumpkin_pie',
+    'xycraft_machines:shaped/lead_tagged',
   ];
+
+  e.shaped('2x minecraft:lead', [
+    'SS ',
+    'SB ',
+    '  S'
+  ], {
+    S: '#c:strings',
+    B: '#c:slimeballs',
+  }).id('minecraft:lead');
+
+  e.shaped('cake', [
+    'MMM',
+    'SES',
+    'WWW'
+  ], {
+    M: '#c:foods/milk',
+    S: '#c:sugars',
+    E: '#c:eggs',
+    W: '#c:crops/wheat',
+  }).id('minecraft:cake');
+
+  e.shaped('sticky_piston', ['S', 'P'], {
+    S: '#c:slimeballs',
+    P: 'minecraft:piston',
+  }).id('minecraft:sticky_piston');
 
   let types = ['terracotta', 'stained_glass', 'stained_glass_pane_from_glass_pane'];
   Color.DYE.forEach(dye => {
@@ -102,7 +131,7 @@ ServerEvents.recipes(e => {
       removeById.push(`minecraft:${dye}_${type}`);
     });
 
-    e.shaped(`2x mcwwindows:${dye}_mosaic_glass`, ['DGG', 'GGG', 'DGG'], {
+    e.shaped(`2x mcwwindows:${dye}_mosaic_glass`, ['DGG', 'GGG', 'GGG'], {
       D: `#c:dyes/${dye}`,
       G: `minecraft:${dye}_stained_glass`,
     }).id(`mcwwindows:${dye}_mosaic_glass`);
@@ -113,6 +142,8 @@ ServerEvents.recipes(e => {
     else if (dye === 'light_gray') e.stonecutting('mcwholidays:silver_ornament', 'minecraft:light_gray_stained_glass').id('mcwholidays:silver_ornament');
 
     e.remove({ id: `arts_and_crafts:dye_${dye}_carpet_with_bleached_carpet` });
+    e.remove({ id: `arts_and_crafts:dye_${dye}_wool_with_bleached_wool` });
+    e.remove({ id: `arts_and_crafts:dye_${dye}_bed_with_bleached_bed` });
 
     e.remove({ id: `utilitarian:utility/redying/${dye}_candle` });
     e.shapeless(`minecraft:${dye}_candle`, ['#craftoria:vanilla_candles', `#c:dyes/${dye}`]).id(`minecraft:${dye}_candle`);

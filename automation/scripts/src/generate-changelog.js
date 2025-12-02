@@ -542,6 +542,88 @@ function generateModChangelog(addedCategories, removedCategories, changedCategor
   return sections.join("\n\n") + "\n";
 }
 
+// Parse command line arguments for testing
+function parseArgs() {
+  const args = process.argv.slice(2);
+  const parsed = {
+    testMode: false,
+    fromCommit: null,
+    toCommit: null,
+    fromVersion: null,
+    toVersion: null,
+    help: false
+  };
+
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i];
+    switch (arg) {
+      case '--test':
+      case '-t':
+        parsed.testMode = true;
+        CONFIG.saveToFile = false; // Don't save files in test mode by default
+        break;
+      case '--from-commit':
+        parsed.fromCommit = args[++i];
+        break;
+      case '--to-commit':
+        parsed.toCommit = args[++i];
+        break;
+      case '--from-version':
+        parsed.fromVersion = args[++i];
+        break;
+      case '--to-version':
+        parsed.toVersion = args[++i];
+        break;
+      case '--save':
+        CONFIG.saveToFile = true;
+        break;
+      case '--help':
+      case '-h':
+        parsed.help = true;
+        break;
+    }
+  }
+
+  if (parsed.help) {
+    console.log(`
+Changelog Generation Tool
+
+Usage: bun generate-changelog.js [options]
+
+Options:
+  --test, -t                Enable test mode (disables file saving by default)
+  --from-commit <hash>      Compare from this commit hash
+  --to-commit <hash>        Compare to this commit hash (default: HEAD)
+  --from-version <version>  Override the old pack version for display
+  --to-version <version>    Override the new pack version for display
+  --save                    Save files even in test mode
+  --help, -h                Show this help message
+
+Examples:
+  # Test changelog between two commits
+  node generate-changelog.js --test --from-commit abc123 --to-commit def456
+
+  # Test with custom version names
+  node generate-changelog.js --test --from-commit abc123 --from-version "1.21.0" --to-version "1.22.0"
+
+  # Test and save files
+  node generate-changelog.js --test --from-commit abc123 --save
+`);
+    process.exit(0);
+  }
+
+  return parsed;
+}
+
+const CLI_ARGS = parseArgs();
+
+// Validate CLI arguments
+if (CLI_ARGS.testMode && !CLI_ARGS.fromCommit) {
+  console.error("Error: --test mode requires --from-commit to be specified");
+  console.log("Use --help for usage information");
+  process.exit(1);
+}
+
 // Main function
 async function generateChangelog() {
   if (!Bun.which("git")) {
@@ -767,6 +849,16 @@ async function generateChangelog() {
       console.log("\n=== LEGACY MODLIST (MODLIST.md) ===\n", legacyModlist);
     }
   }
+}
+
+function getSortKey(metadata, useFileName = false) {
+  const displayName = useFileName ? metadata.filename : metadata.name;
+  // Remove common prefixes and suffixes for better sorting
+  return displayName
+    .toLowerCase()
+    .replace(/^the\s+/i, '') // Remove "The " prefix
+    .replace(/\.(jar|zip)$/i, '') // Remove file extensions
+    .trim();
 }
 
 generateChangelog().catch(error => {

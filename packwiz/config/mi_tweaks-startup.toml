@@ -1,3 +1,6 @@
+#Default: mi_tweaks
+machine_namespace = "mi_tweaks"
+
 [tweaks]
 	#Whether water pumps require a water biome (river or ocean) to operate
 	#Default: false
@@ -19,6 +22,12 @@
 	# Default: 100
 	# Range: > 1
 	very_hot_items_burn_time = 100
+	#Whether item fuels should be blocked in multiblock boilers
+	#Default: false
+	disable_item_fuel_in_multiblock_boilers = false
+	#Whether temperature and fuel consumption should be locked when a redstone module locks a multiblock boiler, rather than losing fuel and heat
+	#Default: false
+	lock_boiler_temperature_with_redstone = false
 
 [efficiency]
 	#The machine efficiency hack mode to use. Only applies to electric machines

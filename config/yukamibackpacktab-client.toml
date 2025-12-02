@@ -1,0 +1,9 @@
+#Yukami Backpack Tab Configuration
+[general]
+	#Position of the inventory tabs
+	#Valid values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	tabPosition = "TOP_LEFT"
+	#Additional blocks that should have tabs enabled
+	#Format: modID:block_name (e.g., 'minecraft:chest', 'sophisticatedbackpacks:backpack')
+	additionalTabBlocks = []

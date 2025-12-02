@@ -5,14 +5,12 @@ ServerEvents.tags('item', e => {
   e.add('c:storage_blocks/charged_redstone', 'appflux:charged_redstone_block');
 
   e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
-  e.add('ars_controle:ritual_blacklist', ['ars_nouveau:ritual_flight']);
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
 
   // Crops & Seeds
   e.add('c:seeds/cabbage', ['farmersdelight:cabbage_seeds', 'dumplings_delight:chinese_cabbage_seeds']);
   e.add('c:seeds/tomato', 'farmersdelight:tomato_seeds');
-  e.add('c:seeds/rice', 'farmersdelight:rice');
   e.add('c:seeds/eggplant', 'dumplings_delight:eggplant_seeds');
   e.add('c:crops/garlic', 'dumplings_delight:garlic');
   e.add('c:crops/green_onion', 'dumplings_delight:greenonion');
@@ -33,6 +31,7 @@ ServerEvents.tags('item', e => {
   e.add('occultism:tools/knife', '#c:tools/knife');
 
   e.remove('c:foods/raw_calamari', 'rusticdelight:calamari_slice');
+  e.add('rusticdelight:calamari_roll_ingredients', 'rusticdelight:calamari_slice');
 
   // Machine Frames
   e.add('craftoria:hulls/advanced', [
@@ -95,6 +94,9 @@ ServerEvents.tags('item', e => {
   e.add('c:tools/ranged_weapon', ['industrialforegoing:infinity_trident', 'mekaweapons:meka_bow']);
   e.add('c:tools/spear', 'industrialforegoing:infinity_trident');
 
+  e.add('hazennstuff:armors/helmet', 'hazennstuff:fireblossom_crown');
+  e.add('hazennstuff:armors/tiers/pure/helmet', 'hazennstuff:fireblossom_crown');
+
   e.add('animal_pen:can_attack_pen', ['#c:tools/melee_weapon', '#c:tools/knife']);
   e.add('animal_pen:can_attack_aquarium', ['#c:tools/melee_weapon', '#c:tools/knife']);
 
@@ -114,6 +116,8 @@ ServerEvents.tags('item', e => {
   addToEnchantable(['bow', 'vanishing'], 'mekaweapons:meka_bow');
   addToEnchantable(['mining_loot', 'vanishing', 'mining'], 'mekanism:meka_tool');
   addToEnchantable(['trident', 'vanishing'], 'industrialforegoing:infinity_trident');
+  addToEnchantable(['armor', 'durability', 'equippable', 'head_armor', 'vanishing'], 'hazennstuff:fireblossom_crown');
+  addToEnchantable(['durability', 'vanishing'], 'aquaculture:neptunium_bow');
 
   e.remove('plonk:unplaceable', ['plonk:placed_items']);
 

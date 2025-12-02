@@ -1,5 +1,5 @@
 ServerEvents.recipes(e => {
-  const { mixer } = e.recipes.modern_industrialization;
+  const { mixer, compressor } = e.recipes.modern_industrialization;
   const { alloy_smelter } = e.recipes.extended_industrialization;
 
   let cobbleGen = (item, fluids) => {
@@ -65,7 +65,7 @@ ServerEvents.recipes(e => {
     .itemIn('#morered:red_alloyable_ingots')
     .itemIn('4x #c:dusts/redstone')
     .itemOut('morered:red_alloy_ingot')
-    .id('craftoria:mi/alloy_smelter/red_alloy_ingot');
+    .id('craftoria:ei/alloy_smelter/red_alloy_ingot');
 
   mixer(2, 20)
     .fluidOut('60x justdirethings:xp_fluid_source')
@@ -114,4 +114,64 @@ ServerEvents.recipes(e => {
     .fluidIn('justdirethings:refined_t3_fluid_source')
     .itemIn('justdirethings:coal_t4')
     .id('craftoria:mi/mixer/unrefined_t4_fluid_source');
+
+  const createCasings = {
+    'create:brass_casing': '#c:ingots/brass',
+    'create:copper_casing': '#c:ingots/copper',
+    'create:andesite_casing': 'create:andesite_alloy',
+  };
+
+  Object.entries(createCasings).forEach(([casing, input]) => {
+    mixer(2, 100)
+      .itemOut(casing)
+      .itemIn(input)
+      .itemIn('#c:stripped_logs')
+      .id(`craftoria:mi/mixer/${ID.path(casing)}_log`);
+
+    mixer(2, 100)
+      .itemOut(casing)
+      .itemIn(input)
+      .itemIn('#c:stripped_woods')
+      .id(`craftoria:mi/mixer/${ID.path(casing)}_wood`);
+  });
+
+  mixer(2, 100)
+    .itemOut('create:railway_casing')
+    .itemIn('create:sturdy_sheet')
+    .itemIn('create:brass_casing')
+    .id('craftoria:mi/mixer/railway_casing');
+
+  mixer(4, 100)
+    .itemOut('create:andesite_alloy')
+    .itemIn('#c:nuggets/iron')
+    .itemIn('minecraft:andesite')
+    .id('craftoria:mi/mixer/andesite_alloy_iron');
+
+  mixer(4, 100)
+    .itemOut('create:andesite_alloy')
+    .itemIn('#c:nuggets/zinc')
+    .itemIn('minecraft:andesite')
+    .id('craftoria:mi/mixer/andesite_alloy_zinc');
+
+  alloy_smelter(8, 200)
+    .itemOut('2x create:brass_ingot')
+    .itemIn('#c:ingots/copper')
+    .itemIn('#c:ingots/zinc')
+    .id('craftoria:ei/alloy_smelter/brass_ingot');
+
+  compressor(2, 100)
+    .itemOut('create:brass_sheet')
+    .itemIn('#c:ingots/brass')
+    .id('craftoria:mi/compressor/brass_sheet');
+
+  compressor(2, 20)
+    .itemOut('create:cardboard')
+    .itemIn('create:pulp')
+    .id('craftoria:mi/compressor/cardboard');
+
+  mixer(2, 20)
+    .itemOut('create:pulp')
+    .itemIn('4x #create:pulpifiable')
+    .fluidIn('250x water')
+    .id('craftoria:mi/mixer/cardboard_box');
 });
