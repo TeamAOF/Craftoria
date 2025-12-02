@@ -22,3 +22,11 @@ wandModeWithoutUpgrade = false
 replaceBlacklistBlocks = ["minecraft:bedrock", "minecraft:end_portal", "minecraft:command_block", "minecraft:barrier"]
 #List of block tags that cannot be replaced (e.g., '#minecraft:wither_immune')
 replaceBlacklistTags = ["#minecraft:wither_immune"]
+#Enable variant block auto-conversion upgrade functionality (Chipped, Rechiseled, etc.)
+chippedConversionUpgradeEnabled = true
+#Enable reach upgrade functionality
+reachUpgradeEnabled = true
+#Additional block reach distance granted by reach upgrade
+# Default: 4.0
+# Range: 0.0 ~ 16.0
+reachUpgradeBonus = 4.0

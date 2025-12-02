@@ -1,21 +1,29 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "target": "ES2015",
-        "lib": [
-            "ES5",
-            "ES2015"
-        ],
-        "rootDir": ".",
-        "typeRoots": [
-            "../../.probe/startup/probe-types"
-        ],
-        "baseUrl": "../../.probe/startup/probe-types",
-        "skipLibCheck": true
-    },
     "include": [
         "./**/*.js",
-        "./**/*.ts",
-        null
-    ]
+        "./**/*.ts"
+    ],
+    "compilerOptions": {
+        "module": "none",
+        "moduleResolution": "node",
+        "allowJs": true,
+        "checkJs": false,
+        "target": "ES2015",
+        "disableSizeLimit": true,
+        "noEmit": true,
+        "assumeChangesOnlyAffectDirectDependencies": true,
+        "rootDir": ".",
+        "baseUrl": "../../.probe/packages",
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "lib": [
+            "ES2015",
+            "ES2016.Array.Include",
+            "ES2017.Object"
+        ],
+        "typeRoots": [
+            "../../.probe/packages",
+            "../../.probe/startup"
+        ]
+    }
 }
