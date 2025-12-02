@@ -236,7 +236,6 @@ ServerEvents.tags('block', e => {
     '@industrialforegoingsouls',
     '@justdirethings',
     '@laserio',
-    '@modern_industrialization'
   ]).remove([/^justdirethings:gooblock_tier.$/]);
 
   Registry.access().getAllTags('block').forEach(tag => {
