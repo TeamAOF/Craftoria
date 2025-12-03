@@ -1,6 +1,5 @@
 const $MekKey = Java.loadClass('me.ramidzkh.mekae2.ae2.MekanismKey');
 const $Chem = Java.loadClass('mekanism.common.registries.MekanismChemicals');
-const $SoulKey = Java.loadClass('com.buuz135.soulplied_energistics.applied.SoulKey');
 const $FluxKey = Java.loadClass('com.glodblock.github.appflux.common.me.key.FluxKey');
 const $EnergyType = Java.loadClass('com.glodblock.github.appflux.common.me.key.type.EnergyType');
 const $SourceKey = Java.loadClass('gripe._90.arseng.me.key.SourceKey');
@@ -23,7 +22,6 @@ global.infCells = [
   { id: 'justdirethings:xp_fluid_source', type: 'fluid' },
   { id: 'modern_industrialization:uu_matter', type: 'fluid' },
   // { id: 'nuclear_waste', type: 'chemical' },
-  { id: 'soul', type: 'soul' },
   { id: 'flux', type: 'flux' },
   { id: 'source', type: 'source' },
 ];
@@ -52,9 +50,6 @@ StartupEvents.registry('item', e => {
       case 'chemical':
         cell.type(() => $MekKey.of($Chem[id.toUpperCase()].getStack(1000)));
         break;
-      case 'soul':
-        cell.type(() => $SoulKey.INSTANCE);
-        break;
       case 'flux':
         cell.type(() => $FluxKey.of($EnergyType.FE));
         break;
@@ -68,11 +63,6 @@ StartupEvents.registry('item', e => {
   };
 
   e.create('craftoria:infinity_cell_housing');
-
-  e.create('craftoria:dummy_warden_imprisonment', 'occultism:ritual_dummy')
-    .pentacleType('craft')
-    .displayName('Ritual: Imprisonment of the Warden')
-    .ritualTooltip(Text.translate('tooltip.craftoria.dummy_warden_imprisonment'));
 
   global.infCells.forEach(cell => createInfCell(cell.id, cell.type));
 });

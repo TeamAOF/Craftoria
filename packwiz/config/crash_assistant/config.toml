@@ -131,7 +131,7 @@
 	#Warning! This is not displayed anywhere, it's just tech param used for modlist feature to work correctly.
 	#Here must be actual nicknames of people who work with the modpack and publishing releases!
 	#-----------------------------------------------------------------------------------------------------
-	modpack_creators = []
+	modpack_creators = ["White_Phant0m"]
 	#If enabled, modlist.json will be overwritten on every launch(first tick of TitleScreen),
 	#then game is launched by modpack creator.
 	#So you won't forget to save it before publishing.
@@ -195,7 +195,7 @@
 [greeting]
 	#You don't need to touch this option.
 	#On first world join of modpack creator if set to false shows greeting, then self enables.
-	shown_greeting = false
+	shown_greeting = true
 
 #You can customise GUI with this options.
 [gui_customisation]

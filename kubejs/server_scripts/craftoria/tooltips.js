@@ -4,17 +4,17 @@ ItemEvents.modifyTooltips(e => {
   globalItemRemovals.forEach(item => {
     if (typeof item === 'object' && item.item) {
       e.add(item.item, [
-        Text.translate('tooltip.kubejs.removal.with_reason', item.reason).red(),
-        Text.translate('tooltip.kubejs.removal.admin_notice_1').red(),
-        Text.translate('tooltip.kubejs.removal.admin_notice_2_legacy').red(),
-        Text.translate('tooltip.kubejs.removal.admin_notice_3').red(),
+        Text.translate('tooltip.craftoria.removal.with_reason', item.reason).red(),
+        Text.translate('tooltip.craftoria.removal.admin_notice_1').red(),
+        Text.translate('tooltip.craftoria.removal.admin_notice_2_legacy').red(),
+        Text.translate('tooltip.craftoria.removal.admin_notice_3').red(),
       ]);
     } else {
       e.add(item, [
-        Text.translate('tooltip.kubejs.removal.generic').red(),
-        Text.translate('tooltip.kubejs.removal.admin_notice_1').red(),
-        Text.translate('tooltip.kubejs.removal.admin_notice_2').red(),
-        Text.translate('tooltip.kubejs.removal.admin_notice_3').red(),
+        Text.translate('tooltip.craftoria.removal.generic').red(),
+        Text.translate('tooltip.craftoria.removal.admin_notice_1').red(),
+        Text.translate('tooltip.craftoria.removal.admin_notice_2').red(),
+        Text.translate('tooltip.craftoria.removal.admin_notice_3').red(),
       ]);
     }
   });
@@ -22,13 +22,13 @@ ItemEvents.modifyTooltips(e => {
   disabledItems.forEach(item => {
     if (item.alt || item.altId) {
       e.add(item.id, [
-        Text.translate('tooltip.kubejs.disabled.in_favor_of', item.alt || Item.of(item.altId).hoverName.string).red(),     // Untested, disabledItems is null
-        Text.translate('tooltip.kubejs.disabled.functionality_remains').red(),
+        Text.translate('tooltip.craftoria.disabled.in_favor_of', item.alt || Item.of(item.altId).hoverName.string).red(),     // Untested, disabledItems is null
+        Text.translate('tooltip.craftoria.disabled.functionality_remains').red(),
       ]);
     } else {
       e.add(item.id, [
-        Text.translate('tooltip.kubejs.disabled.better_alternatives').red(),
-        Text.translate('tooltip.kubejs.disabled.functionality_remains').red(),
+        Text.translate('tooltip.craftoria.disabled.better_alternatives').red(),
+        Text.translate('tooltip.craftoria.disabled.functionality_remains').red(),
       ]);
     }
   });
@@ -47,13 +47,6 @@ ItemEvents.modifyTooltips(e => {
   );
 
   e.add('modern_industrialization:nuke', Text.translate('tooltip.modern_industrialization.nuke.no_explode').darkGray());
-
-  e.add('craftoria:infinity_soul_cell', [
-    Text.translate('tooltip.craftoria.infinity_soul_cell.line1').darkGray(),
-    Text.translate('tooltip.craftoria.infinity_soul_cell.line2').darkGray(),
-    Text.translate('tooltip.craftoria.infinity_soul_cell.line3').darkGray(),
-    Text.translate('tooltip.craftoria.infinity_soul_cell.line4').darkGray(),
-  ]);
 
   e.add('craftoria:wardens_meat', [
     Text.gray('Meat from a Warden'),
