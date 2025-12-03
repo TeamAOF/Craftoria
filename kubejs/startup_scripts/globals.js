@@ -49,7 +49,7 @@ const customMIMachines = {
   // },
   budding_incubator: {
     casing: 'sky_stone_brick_casing',
-    mod: 'mi_tweaks',
+    mod: 'craftoria',
     default_overlays: {
       front: 'modern_industrialization:block/machines/budding_incubator/overlay_front',
       front_active: 'modern_industrialization:block/machines/budding_incubator/overlay_front_active',
@@ -57,7 +57,7 @@ const customMIMachines = {
   },
   ooze_lab: {
     casing: 'factory_grate',
-    mod: 'mi_tweaks',
+    mod: 'craftoria',
     default_overlays: {
       front: 'extended_industrialization:block/machines/brewery/overlay_front',
       front_active: 'extended_industrialization:block/machines/brewery/overlay_front_active',
@@ -65,7 +65,7 @@ const customMIMachines = {
   },
   model_synthesizer: {
     casing: 'vect5',
-    mod: 'mi_tweaks',
+    mod: 'craftoria',
     default_overlays: {
       front: 'modern_industrialization:block/machines/model_synthesizer/overlay_front',
       front_active: 'modern_industrialization:block/machines/model_synthesizer/overlay_front_active',
@@ -124,4 +124,3 @@ global.customMIHatches = customMIHatches;
 global.customMICasings = customMICasings;
 
 Platform.setModName('craftoria', 'Craftoria');
-Platform.setModName('mi_tweaks', 'Craftoria');
