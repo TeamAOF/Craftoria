@@ -2,14 +2,14 @@ RecipeViewerEvents.addInformation('item', e => {
   /** @type {Record<Special.Item, string[]>}*/
   let entries = {
     // Add machine information here
-    'modern_industrialization:replicator_1': [
-      'info.modern_industrialization.replicator_1.line1',
-      'info.modern_industrialization.replicator_1.line2',
-      'info.modern_industrialization.replicator_1.line3',
-      'info.modern_industrialization.replicator_1.line4',
-      'info.modern_industrialization.replicator_1.line5',
-      'info.modern_industrialization.replicator_1.line6',
-      'info.modern_industrialization.replicator_1.line7',
+    'modern_industrialization:replicator_prototype': [
+      'info.modern_industrialization.replicator_prototype.line1',
+      'info.modern_industrialization.replicator_prototype.line2',
+      'info.modern_industrialization.replicator_prototype.line3',
+      'info.modern_industrialization.replicator_prototype.line4',
+      'info.modern_industrialization.replicator_prototype.line5',
+      'info.modern_industrialization.replicator_prototype.line6',
+      'info.modern_industrialization.replicator_prototype.line7',
     ],
     'modern_industrialization:replicator': [
       'info.modern_industrialization.replicator.line1',

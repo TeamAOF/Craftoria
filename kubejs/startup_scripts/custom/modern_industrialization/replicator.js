@@ -1,12 +1,12 @@
-let REPLICATOR1;
+let REPLICATOR_PROTOTYPE;
 
 MIMachineEvents.registerRecipeTypes(event => {
-  REPLICATOR1 = event.register('replicator_1').withFluidInputs().withItemInputs().withItemOutputs();
+  REPLICATOR_PROTOTYPE = event.register('replicator_prototype').withFluidInputs().withItemInputs().withItemOutputs();
 });
 
 MIMachineEvents.registerMachines(e => {
   e.craftingSingleBlock(
-    'Replicator MK I', 'replicator_1', REPLICATOR1, ['electric'],
+    'Replicator Prototype', 'replicator_prototype', REPLICATOR_PROTOTYPE, ['electric'],
     -1, e.progressBar(85, 34, 'arrow'), e.efficiencyBar(38, 62), e.energyBar(14, 35),
     // Number of slots: item Input, Output, Fluid Input, Output
     1, 1, 1, 0,

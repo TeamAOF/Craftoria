@@ -29,8 +29,8 @@ global.modList = Platform.getMods().keySet();
  * @type {Record<string, CustomMIMachine>}
  */
 const customMIMachines = {
-  replicator_1: {
-    name: 'Replicator Mk I',
+  replicator_prototype: {
+    name: 'Replicator Prototype',
     overlay: 'replicator',
     hasSides: true,
     sound: 'mi_sound_addon:replicator',
