@@ -3,6 +3,7 @@ RecipeViewerEvents.removeEntries('item', event => {
   /** @type {Special.Item[]} */
   let hideItems = [
     /rubinated_nether:bronze/,
+    /^mekanism:creative_.*/
   ];
 
   hideItems.forEach(item => {
