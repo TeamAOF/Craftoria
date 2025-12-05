@@ -14,8 +14,8 @@ _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 
 ### Removed Mods ❌
 
-* [Industrial Foregoing Souls](https://curseforge.com/projects/904394)
-* [Soulplied Energistics](https://curseforge.com/projects/1143614)
+* [Industrial Foregoing Souls](https://curseforge.com/projects/904394) (Balancing Reasons)
+* [Soulplied Energistics](https://curseforge.com/projects/1143614) (Balancing Reasons)
 
 ### Bug Fixes 🪲
 
