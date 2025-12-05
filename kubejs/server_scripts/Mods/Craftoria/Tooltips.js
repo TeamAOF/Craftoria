@@ -48,12 +48,14 @@ ItemEvents.modifyTooltips(e => {
 
   e.add('modern_industrialization:nuke', Text.translate('tooltip.modern_industrialization.nuke.no_explode').darkGray());
 
+  /*
   e.add('craftoria:infinity_soul_cell', [
     Text.translate('tooltip.craftoria.infinity_soul_cell.line1').darkGray(),
     Text.translate('tooltip.craftoria.infinity_soul_cell.line2').darkGray(),
     Text.translate('tooltip.craftoria.infinity_soul_cell.line3').darkGray(),
     Text.translate('tooltip.craftoria.infinity_soul_cell.line4').darkGray(),
   ]);
+  */
 
   e.add('occultism:butcher_knife', [
     Text.translate('tooltip.occultism.butcher_knife.line1').yellow(),

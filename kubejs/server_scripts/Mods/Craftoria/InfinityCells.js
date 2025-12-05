@@ -7,6 +7,7 @@ ServerEvents.recipes(e => {
     'occultism:spawn_egg/possessed_warden',
   ]);
 
+  /*
   e.recipes.occultism
     .ritual(
       'craftoria:infinity_soul_cell',
@@ -28,6 +29,7 @@ ServerEvents.recipes(e => {
       'occultism:contact_eldritch_spirit'
     )
     .dummy('craftoria:dummy_warden_imprisonment');
+    */
 
   ae.crystalAssembler(
     'craftoria:infinity_lava_cell',

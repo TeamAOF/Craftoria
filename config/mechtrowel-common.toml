@@ -22,3 +22,23 @@ wandModeWithoutUpgrade = false
 replaceBlacklistBlocks = ["minecraft:bedrock", "minecraft:end_portal", "minecraft:command_block", "minecraft:barrier"]
 #List of block tags that cannot be replaced (e.g., '#minecraft:wither_immune')
 replaceBlacklistTags = ["#minecraft:wither_immune"]
+#Enable variant block auto-conversion upgrade functionality (Chipped, Rechiseled, etc.)
+chippedConversionUpgradeEnabled = true
+#Enable reach upgrade functionality
+reachUpgradeEnabled = true
+#Additional block reach distance granted by reach upgrade
+# Default: 4.0
+# Range: 0.0 ~ 16.0
+reachUpgradeBonus = 4.0
+#Durability of the Mech Trowel (0 = infinite/no durability)
+# Default: 0
+# Range: 0 ~ 10000
+trowelDurability = 0
+#Durability cost per single block placement
+# Default: 1
+# Range: 1 ~ 100
+singlePlaceDurabilityCost = 1
+#Durability cost per wand mode action
+# Default: 8
+# Range: 1 ~ 100
+wandPlaceDurabilityCost = 8

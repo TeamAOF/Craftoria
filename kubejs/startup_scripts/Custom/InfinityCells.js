@@ -1,6 +1,5 @@
 const $MekKey = Java.loadClass('me.ramidzkh.mekae2.ae2.MekanismKey');
 const $Chem = Java.loadClass('mekanism.common.registries.MekanismChemicals');
-const $SoulKey = Java.loadClass('com.buuz135.soulplied_energistics.applied.SoulKey');
 const $FluxKey = Java.loadClass('com.glodblock.github.appflux.common.me.key.FluxKey');
 const $EnergyType = Java.loadClass('com.glodblock.github.appflux.common.me.key.type.EnergyType');
 const $SourceKey = Java.loadClass('gripe._90.arseng.me.key.SourceKey');
@@ -23,7 +22,7 @@ global.infCells = [
   { id: 'justdirethings:xp_fluid_source', type: 'fluid' },
   { id: 'modern_industrialization:uu_matter', type: 'fluid' },
   // { id: 'nuclear_waste', type: 'chemical' },
-  { id: 'soul', type: 'soul' },
+  // { id: 'soul', type: 'soul' },
   { id: 'flux', type: 'flux' },
   { id: 'source', type: 'source' },
 ];

@@ -18,6 +18,8 @@
 	check_world_border = false
 	#checks structure pieces as well as structure starts when determining if a structure contains a position, more accurate but may cause lag (default true)
 	perform_piecewise_check = true
+	#if true, accessing a Lootr container will bypass spawn protection
+	bypass_spawn_protection = true
 
 [whitelist]
 	#configuration for specific whitelisting and blacklisting of dimensions, loot tables and modids
@@ -35,7 +37,7 @@
 	loot_table_blacklist = []
 	#list of modids whose loot tables shouldn't be converted (in the format of ["modid", "other_modid"])
 	loot_modid_blacklist = []
-	#list of loot tables whose conversion causes problems (in the same format as `loot_table_tlacklist`)
+	#list of loot tables whose conversion causes problems (in the same format as `loot_table_blacklist`)
 	problematic_loot_tables = ["twilightforest:structures/stronghold_boss", "atum:chests/pharaoh"]
 
 [breaking]
@@ -89,6 +91,8 @@
 	start_decay_while_ticking = false
 	#overriding decay_loot_tables, decay_modids and decay_dimensions: all chests will decay after being trapped for the first time
 	decay_all = false
+	#when true, decayed containers will be replaced with their equivalent vanilla block instead of being removed
+	replace_when_decayed = false
 
 [refresh]
 	#configuration options for refreshing containers

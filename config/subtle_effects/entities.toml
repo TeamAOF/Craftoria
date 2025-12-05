@@ -1,8 +1,10 @@
 # Don't change this! Version used to track needed updates.
 version = 0
-chickenFeathers = true
-parrotFeathers = true
-snowGolemSnowflakes = true
+attackedChickenFeathers = true
+attackedParrotFeathers = true
+attackedSnowGolemSnowflakes = true
+attackedSheepFluff = true
+attackedSlimeSlime = true
 allayMagicDensity = 0.2
 vexMagicDensity = 0.2
 sheepShearFluff = true
@@ -88,10 +90,15 @@ mobRunning = false
 playerRunningRequiresSpeed = false
 
 [burning]
-smoke = "DEFAULT"
-flames = true
-sparks = true
-sounds = true
+smokeType = "DEFAULT"
+smokeDensity = 1.0
+flamesDensity = 1.0
+sparksDensity = 1.0
+soundVolume = 0.3
+entityBlocklist = [
+    "minecraft:lightning_bolt"
+]
+overrideDyedFlamesEffects = true
 extinguishSteam = true
 
 [explosives]

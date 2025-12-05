@@ -1,3 +1,28 @@
+# Craftoria | v1.28.0
+
+_Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.28.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.28.0.md)_
+
+### Changes/Improvements ⭐
+
+* Remove bronze entries of rubinated nether `AK`
+* Added reversable recipes for dyed ae2 cables, smart and covered `Inno`
+* Disabled ftbchunks death waypoints, xaeros' already has that `Phantom`
+
+### Added Mods ✅
+
+* [Entity Culling](https://curseforge.com/projects/448233)
+
+### Removed Mods ❌
+
+* [Industrial Foregoing Souls](https://curseforge.com/projects/904394)
+* [Soulplied Energistics](https://curseforge.com/projects/1143614)
+
+### Bug Fixes 🪲
+
+* Ender dragon model `AK`
+* Fishing quest trophies using incorrect NBT `AK`
+---
+
 # Craftoria | v1.27.0
 
 _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.27.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.27.0.md)_
