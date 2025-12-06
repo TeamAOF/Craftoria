@@ -1,29 +1,25 @@
-import path from "node:path";
-import os from "node:os";
-import { parseArgs as utilParseArgs } from "node:util";
-import {
-  capitalize,
-  getLatestBumpCommitHash,
-  getModInfo,
-  writeTextToFile,
-} from "./utils";
 import { $, Glob } from "bun";
+import os from "node:os";
+import path from "node:path";
+import { parseArgs } from "node:util";
+import { capitalize, getLatestBumpCommitHash, getModInfo, writeTextToFile } from "./utils";
 
-// Try to import pack.toml first, fallback to minecraftinstance.json
-let packMetadata;
-try {
-  packMetadata = require("../../../pack.toml");
-} catch (error) {
-  console.warn("pack.toml not found, using minecraftinstance.json as fallback");
-  const instanceData = require("../../../minecraftinstance.json");
-  packMetadata = {
-    version: "unknown", // Extract from instance name or set default
-    versions: {
-      minecraft: instanceData.minecraftVersion || instanceData.gameVersion,
-      neoforge: instanceData.baseModLoader?.forgeVersion || "unknown"
-    }
-  };
-}
+// Load pack metadata with fallback
+const packMetadata = (() => {
+  try {
+    return require("../../../pack.toml");
+  } catch {
+    console.warn("pack.toml not found, using minecraftinstance.json as fallback");
+    const instanceData = require("../../../minecraftinstance.json");
+    return {
+      version: "unknown",
+      versions: {
+        minecraft: instanceData.minecraftVersion || instanceData.gameVersion,
+        neoforge: instanceData.baseModLoader?.forgeVersion || "unknown"
+      }
+    };
+  }
+})();
 
 const CONFIG = {
   gitRepoPath: path.resolve(import.meta.dir, "..", "..", ".."),
@@ -45,169 +41,200 @@ const CONFIG = {
   },
 };
 
+// Parse CLI arguments
+const CLI_ARGS = (() => {
+  const { values } = parseArgs({
+    options: {
+      test: { type: "boolean", default: false },
+      fromCommit: { type: "string" },
+      toCommit: { type: "string" },
+      fromVersion: { type: "string" },
+      toVersion: { type: "string" },
+      save: { type: "boolean", default: false },
+      help: { type: "boolean", default: false }
+    },
+  });
+  
+  if (values.help) {
+    console.log(`
+Changelog Generation Tool
+
+Usage: bun generate-changelog.js [options]
+
+Options:
+  --test, -t                Enable test mode (disables file saving by default)
+  --from-commit <hash>      Compare from this commit hash
+  --to-commit <hash>        Compare to this commit hash (default: HEAD)
+  --from-version <version>  Override the old pack version for display
+  --to-version <version>    Override the new pack version for display
+  --save                    Save files even in test mode
+  --help, -h                Show this help message
+
+Examples:
+  # Test changelog between two commits
+  bun generate-changelog.js --test --from-commit abc123 --to-commit def456
+
+  # Test with custom version names
+  bun generate-changelog.js --test --from-commit abc123 --from-version "1.21.0" --to-version "1.22.0"
+
+  # Test and save files
+  bun generate-changelog.js --test --from-commit abc123 --save
+`);
+    process.exit(0);
+  }
+
+  if (values.test) CONFIG.saveToFile = false;
+  if (values.save) CONFIG.saveToFile = true;
+
+  return values;
+})();
+
+// Validate CLI arguments
+if (CLI_ARGS.test && !CLI_ARGS.fromCommit) {
+  console.error("Error: --test mode requires --from-commit to be specified");
+  console.log("Use --help for usage information");
+  process.exit(1);
+}
+
 async function initializeConfig() {
-  // Use CLI arguments if provided, otherwise use defaults
-  if (CLI_ARGS.testMode && CLI_ARGS.fromCommit) {
-    CONFIG.cutoffCommitHash = CLI_ARGS.fromCommit;
-  } else {
-    CONFIG.cutoffCommitHash ||= await getLatestBumpCommitHash(CONFIG.referenceCommit);
-  }
+  // Set commit hashes
+  CONFIG.cutoffCommitHash = CLI_ARGS.fromCommit || 
+    await getLatestBumpCommitHash(CONFIG.referenceCommit);
+  
+  if (CLI_ARGS.toCommit) CONFIG.referenceCommit = CLI_ARGS.toCommit;
 
-  if (CLI_ARGS.testMode && CLI_ARGS.toCommit) {
-    CONFIG.referenceCommit = CLI_ARGS.toCommit;
-  }
-
-  // Override pack versions if provided via CLI
-  if (CLI_ARGS.toVersion) {
-    CONFIG.packVersion = CLI_ARGS.toVersion;
-  } else {
-    CONFIG.packVersion ||= packMetadata.version;
-  }
+  // Set pack versions
+  CONFIG.packVersion = CLI_ARGS.toVersion || packMetadata.version;
 
   const [oldPackMetadata] = await getCommitMetadataFiles(CONFIG.cutoffCommitHash);
+  CONFIG.oldPackVersion = CLI_ARGS.fromVersion || 
+    oldPackMetadata?.version || 
+    "unknown";
 
-  if (CLI_ARGS.fromVersion) {
-    CONFIG.oldPackVersion = CLI_ARGS.fromVersion;
-  } else if (oldPackMetadata) {
-    CONFIG.oldPackVersion ||= oldPackMetadata.version;
-  } else {
-    // If no metadata exists in old commit, we can't compare versions
-    CONFIG.oldPackVersion ||= "unknown";
+  if (CONFIG.oldPackVersion === "unknown") {
     console.warn("Old commit doesn't have pack metadata, version comparison skipped");
   }
 
-  // Skip version bump check in test mode or when using custom versions
-  if (!CLI_ARGS.testMode && !CLI_ARGS.fromVersion && !CLI_ARGS.toVersion) {
-    // Only check version comparison if both versions are available and not "unknown"
-    if (CONFIG.oldPackVersion !== "unknown" && CONFIG.packVersion !== "unknown" && CONFIG.oldPackVersion === CONFIG.packVersion) {
-      throw new Error("You did not bump the pack version!");
-    }
+  // Version bump validation (skip in test mode or with custom versions)
+  const shouldValidate = !CLI_ARGS.test && !CLI_ARGS.fromVersion && !CLI_ARGS.toVersion;
+  if (shouldValidate && CONFIG.oldPackVersion !== "unknown" && 
+      CONFIG.packVersion !== "unknown" && CONFIG.oldPackVersion === CONFIG.packVersion) {
+    throw new Error("You did not bump the pack version!");
   }
 
-  // Log the comparison being made
-  if (CLI_ARGS.testMode) {
+  if (CLI_ARGS.test) {
     console.log(`Test mode: Comparing ${CONFIG.oldPackVersion} (${CONFIG.cutoffCommitHash}) -> ${CONFIG.packVersion} (${CONFIG.referenceCommit})`);
   }
 }
 
 async function getCommitMetadataFiles(commitHash) {
-  const folderName = `craftoria-${commitHash}-${Date.now()}`;
-  const folderPath = path.join(os.tmpdir(), folderName);
-  const packwizGlob = new Glob("*.pw.toml");
+  const folderPath = path.join(os.tmpdir(), `craftoria-${commitHash}-${Date.now()}`);
 
-  // Check if pack.toml exists in this commit first
-  let hasPackToml = false;
-  let hasInstanceJson = false;
+  // Check which metadata file exists
+  const hasPackToml = await checkFileExists(commitHash, "pack.toml");
+  const hasInstanceJson = !hasPackToml && await checkFileExists(commitHash, "minecraftinstance.json");
 
-  try {
-    await $`git cat-file -e ${commitHash}:pack.toml`;
-    hasPackToml = true;
-  } catch (error) {
-    // pack.toml doesn't exist, check for minecraftinstance.json
-    try {
-      await $`git cat-file -e ${commitHash}:minecraftinstance.json`;
-      hasInstanceJson = true;
-    } catch (error2) {
-      console.warn(`Neither pack.toml nor minecraftinstance.json found in commit ${commitHash}, skipping mod comparison for this commit`);
-      return [null, {}];
-    }
+  if (!hasPackToml && !hasInstanceJson) {
+    console.warn(`Neither pack.toml nor minecraftinstance.json found in commit ${commitHash}`);
+    return [null, {}];
   }
 
-  // Archive the appropriate files
-  if (hasPackToml) {
-    await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} pack.toml mods/ resourcepacks/ shaderpacks/`;
-  } else {
-    await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} minecraftinstance.json`;
-  }
-
+  // Archive and extract
+  const archiveFiles = hasPackToml 
+    ? "pack.toml mods/ resourcepacks/ shaderpacks/"
+    : "minecraftinstance.json";
+  
+  await $`git archive --format=tar --output=${folderPath}.tar ${commitHash} ${archiveFiles}`;
   await $`mkdir ${folderPath}`;
   await $`tar -xf ${folderPath}.tar -C ${folderPath}`;
 
-  let packMetadata;
-  let modsMetadata = {};
+  let packMetadata, modsMetadata = {};
 
   if (hasPackToml) {
-    // Use pack.toml
     packMetadata = require(`${folderPath}/pack.toml`);
-
-    // Scan mods, resourcepacks, and shaderpacks folders
-    const folders = ['mods', 'resourcepacks', 'shaderpacks'];
-
-    for (const folder of folders) {
-      try {
-        const scannedFiles = await Array.fromAsync(
-          packwizGlob.scan({ cwd: `${folderPath}/${folder}`, absolute: true })
-        );
-
-        const folderMods = Object.fromEntries(
-          scannedFiles
-            .map(filePath => {
-              const metadata = require(filePath);
-              const updateInfo = getUpdateInfo(metadata);
-              const projectId = updateInfo["project-id"];
-              if (projectId) {
-                // Add category information to metadata
-                metadata._category = folder;
-                return [projectId, metadata];
-              }
-            })
-            .filter(Boolean)
-        );
-
-        // Merge with existing modsMetadata
-        Object.assign(modsMetadata, folderMods);
-      } catch (error) {
-        // Folder might not exist in this commit, continue
-        console.warn(`Folder ${folder} not found in commit ${commitHash}`);
-      }
-    }
+    modsMetadata = await extractModsFromPackwiz(folderPath, commitHash);
   } else {
-    // Use minecraftinstance.json as fallback
-    const instanceData = require(`${folderPath}/minecraftinstance.json`);
-    packMetadata = {
-      version: "unknown", // Can't determine pack version from instance file
-      versions: {
-        minecraft: instanceData.minecraftVersion || instanceData.gameVersion,
-        neoforge: instanceData.baseModLoader?.forgeVersion || "unknown"
-      }
-    };
-
-    // Extract mod information from installedAddons
-    if (instanceData.installedAddons && Array.isArray(instanceData.installedAddons)) {
-      modsMetadata = Object.fromEntries(
-        instanceData.installedAddons
-          .filter(addon => addon.addonID && addon.installedFile) // Only process valid addons
-          .map(addon => {
-            // Determine category based on path
-            const categoryPath = addon.categorySection?.path || 'mods';
-
-            // Create a structure similar to packwiz format for compatibility
-            const metadata = {
-              name: addon.name,
-              filename: addon.installedFile.fileName,
-              download: {
-                hash: addon.installedFile.id.toString(), // Use file ID as hash for comparison
-                url: addon.installedFile.downloadUrl
-              },
-              update: {
-                curseforge: {
-                  "project-id": addon.addonID,
-                  "file-id": addon.installedFile.id
-                }
-              },
-              _category: categoryPath // Add category information
-            };
-            return [addon.addonID.toString(), metadata];
-          })
-      );
-    }
-
+    const result = extractModsFromInstance(`${folderPath}/minecraftinstance.json`);
+    packMetadata = result.packMetadata;
+    modsMetadata = result.modsMetadata;
     console.warn(`Using minecraftinstance.json for commit ${commitHash} - mod comparison available but limited`);
   }
 
   await $`rm -rf ${folderPath}.tar ${folderPath}`;
-
   return [packMetadata, modsMetadata];
+}
+
+async function checkFileExists(commitHash, filename) {
+  try {
+    await $`git cat-file -e ${commitHash}:${filename}`;
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function extractModsFromPackwiz(folderPath, commitHash) {
+  const folders = ["mods", "resourcepacks", "shaderpacks"];
+  const allMods = {};
+
+  for (const folder of folders) {
+    try {
+      const files = await Array.fromAsync(
+        new Glob("*.pw.toml").scan({ cwd: `${folderPath}/${folder}`, absolute: true })
+      );
+
+      for (const filePath of files) {
+        const metadata = require(filePath);
+        const projectId = getUpdateInfo(metadata)["project-id"];
+        if (projectId) {
+          metadata.category = folder;
+          allMods[projectId] = metadata;
+        }
+      }
+    } catch {
+      console.warn(`Folder ${folder} not found in commit ${commitHash}`);
+    }
+  }
+
+  return allMods;
+}
+
+function extractModsFromInstance(filePath) {
+  const instanceData = require(filePath);
+  
+  const packMetadata = {
+    version: "unknown",
+    versions: {
+      minecraft: instanceData.minecraftVersion || instanceData.gameVersion,
+      neoforge: instanceData.baseModLoader?.forgeVersion || "unknown"
+    }
+  };
+
+  const modsMetadata = {};
+  
+  if (instanceData.installedAddons?.length) {
+    for (const addon of instanceData.installedAddons) {
+      if (!addon.addonID || !addon.installedFile) continue;
+
+      modsMetadata[addon.addonID.toString()] = {
+        name: addon.name,
+        filename: addon.installedFile.fileName,
+        download: {
+          hash: addon.installedFile.id.toString(),
+          url: addon.installedFile.downloadUrl
+        },
+        update: {
+          curseforge: {
+            "project-id": addon.addonID,
+            "file-id": addon.installedFile.id
+          }
+        },
+        category: addon.categorySection?.path || "mods"
+      };
+    }
+  }
+
+  return { packMetadata, modsMetadata };
 }
 
 function compareModCollections(oldMods, currentMods) {
@@ -215,38 +242,27 @@ function compareModCollections(oldMods, currentMods) {
   const removedMods = {};
   const updatedMods = {};
 
-  for (const [projectId, metadata] of Object.entries(currentMods)) {
-    if (!(projectId in oldMods)) {
-      newMods[projectId] = metadata;
-    } else if (metadata.download.hash !== oldMods[projectId].download.hash) {
-      updatedMods[projectId] = metadata;
+  for (const [id, metadata] of Object.entries(currentMods)) {
+    if (!oldMods[id]) {
+      newMods[id] = metadata;
+    } else if (metadata.download.hash !== oldMods[id].download.hash) {
+      updatedMods[id] = metadata;
     }
   }
 
-  for (const [projectId, metadata] of Object.entries(oldMods)) {
-    if (!(projectId in currentMods)) {
-      removedMods[projectId] = metadata;
-    }
+  for (const [id, metadata] of Object.entries(oldMods)) {
+    if (!currentMods[id]) removedMods[id] = metadata;
   }
 
   return { newMods, removedMods, updatedMods };
 }
 
 function categorizeItems(items) {
-  const categorized = {
-    mods: {},
-    resourcepacks: {},
-    shaderpacks: {}
-  };
+  const categorized = { mods: {}, resourcepacks: {}, shaderpacks: {} };
 
-  for (const [projectId, metadata] of Object.entries(items)) {
-    const category = metadata._category || 'mods';
-    if (categorized[category]) {
-      categorized[category][projectId] = metadata;
-    } else {
-      // Fallback to mods if unknown category
-      categorized.mods[projectId] = metadata;
-    }
+  for (const [id, metadata] of Object.entries(items)) {
+    const category = metadata.category || "mods";
+    (categorized[category] || categorized.mods)[id] = metadata;
   }
 
   return categorized;
@@ -257,84 +273,67 @@ function getUpdateInfo(metadata) {
   return metadata.update[updateKey];
 }
 
+function getCategoryUrlPath(category) {
+  const paths = { resourcepacks: "texture-packs", shaderpacks: "shaders" };
+  return paths[category] || "mc-mods";
+}
+
+function escapeMarkdown(text) {
+  return text.replace(/\[/g, "\\[").replace(/\]/g, "\\]");
+}
+
 function formatModLink(metadata, useFileName = false, authorName, modInfo = null) {
   const updateInfo = getUpdateInfo(metadata);
-  const rawDisplayName = useFileName ? metadata.filename : metadata.name;
-  // Escape square brackets in the display name for Markdown
-  const displayName = rawDisplayName.replace(/\[/g, '\\[').replace(/\]/g, '\\]');
-
-  // Determine the correct URL path based on category
-  let urlPath = 'mc-mods'; // default for mods
-  if (metadata._category === 'resourcepacks') {
-    urlPath = 'texture-packs';
-  } else if (metadata._category === 'shaderpacks') {
-    urlPath = 'shaders';
-  }
-
-  // Use mod slug if modInfo is provided, otherwise fall back to project ID
-  const modUrl = modInfo && modInfo.slug
+  const displayName = escapeMarkdown(useFileName ? metadata.filename : metadata.name);
+  const urlPath = getCategoryUrlPath(metadata.category);
+  
+  const modUrl = modInfo?.slug
     ? `https://www.curseforge.com/minecraft/${urlPath}/${modInfo.slug}`
     : `https://curseforge.com/projects/${updateInfo["project-id"]}`;
 
-  return `* [${displayName}](${modUrl})${authorName
+  const authorLink = authorName 
     ? ` - (by [${authorName}](https://www.curseforge.com/members/${authorName}/projects))`
-    : ""
-    }`;
+    : "";
+
+  return `* [${displayName}](${modUrl})${authorLink}`;
 }
 
 function formatModlistLink(metadata, authorName, modInfo = null) {
   const updateInfo = getUpdateInfo(metadata);
-  const rawDisplayName = metadata.filename;
-  // Escape square brackets in the display name for Markdown
-  const displayName = rawDisplayName.replace(/\[/g, '\\[').replace(/\]/g, '\\]');
-
-  // Determine the correct URL path based on category
-  let urlPath = 'mc-mods'; // default for mods
-  if (metadata._category === 'resourcepacks') {
-    urlPath = 'texture-packs';
-  } else if (metadata._category === 'shaderpacks') {
-    urlPath = 'shaders';
-  }
-
-  // Use mod slug and file ID if modInfo is provided, otherwise fall back to project ID
-  const modUrl = modInfo && modInfo.slug
+  const displayName = escapeMarkdown(metadata.filename);
+  const urlPath = getCategoryUrlPath(metadata.category);
+  
+  const modUrl = modInfo?.slug
     ? `https://www.curseforge.com/minecraft/${urlPath}/${modInfo.slug}/files/${updateInfo["file-id"]}`
     : `https://curseforge.com/projects/${updateInfo["project-id"]}/files/${updateInfo["file-id"]}`;
 
-  return `  * [${displayName}](${modUrl})${authorName
+  const authorLink = authorName
     ? ` (by [${authorName}](https://www.curseforge.com/members/${authorName}/projects))`
-    : ""
-    }`;
+    : "";
+
+  return `  * [${displayName}](${modUrl})${authorLink}`;
 }
 
 async function formatUpdateLink(id, oldMods, currentMods) {
-  const [newMod, oldMod] = [currentMods[id], oldMods[id]];
+  const [oldMod, newMod] = [oldMods[id], currentMods[id]];
   const [oldUpdate, newUpdate] = [getUpdateInfo(oldMod), getUpdateInfo(newMod)];
-
-  // Escape square brackets in filenames for Markdown
-  const oldFilename = oldMod.filename.replace(/\[/g, '\\[').replace(/\]/g, '\\]');
-  const newFilename = newMod.filename.replace(/\[/g, '\\[').replace(/\]/g, '\\]');
-
-  // Determine the correct URL path based on category
-  let urlPath = 'mc-mods'; // default for mods
-  if (oldMod._category === 'resourcepacks') {
-    urlPath = 'texture-packs';
-  } else if (oldMod._category === 'shaderpacks') {
-    urlPath = 'shaders';
-  }
-
-  // Get mod info to retrieve the slug for correct URL formatting
+  
+  const oldFilename = escapeMarkdown(oldMod.filename);
+  const newFilename = escapeMarkdown(newMod.filename);
+  const urlPath = getCategoryUrlPath(oldMod.category);
+  
   const modInfo = await getModInfo(oldUpdate["project-id"]);
-  const modSlug = modInfo.slug;
-
-  return `* [${oldFilename}](https://www.curseforge.com/minecraft/${urlPath}/${modSlug}/files/${oldUpdate["file-id"]}) -> [${newFilename}](https://www.curseforge.com/minecraft/${urlPath}/${modSlug}/files/${newUpdate["file-id"]})`;
+  const baseUrl = `https://www.curseforge.com/minecraft/${urlPath}/${modInfo.slug}/files`;
+  
+  return `* [${oldFilename}](${baseUrl}/${oldUpdate["file-id"]}) -> [${newFilename}](${baseUrl}/${newUpdate["file-id"]})`;
 }
 
 function formatCommit(message) {
+  let formatted = message;
   for (const [gitName, displayName] of Object.entries(CONFIG.namesLookup)) {
-    message = message.replace(gitName, displayName);
+    formatted = formatted.replace(gitName, displayName);
   }
-  return `* ${capitalize(message.trim())}`;
+  return `* ${capitalize(formatted.trim())}`;
 }
 
 function extractCommitsByType(commits, regex) {
@@ -363,8 +362,7 @@ function generateChangelogContent(features, fixes, addedCategories, removedCateg
     : "";
 
   const sections = [
-    `${mention}#${CONFIG.saveToFile ? "" : craftoriaEmoji} Craftoria | v${CONFIG.packVersion
-    }${craftoriaEmoji}\n${header}`,
+    `${mention}#${CONFIG.saveToFile ? "" : craftoriaEmoji} Craftoria | v${CONFIG.packVersion}${craftoriaEmoji}\n${header}`,
     features.length && `\n\n### Changes/Improvements ⭐\n\n${features.join("\n")}`,
     addedCategories.mods.length && `\n\n### Added Mods ✅\n\n${addedCategories.mods.join("\n")}`,
     addedCategories.resourcepacks.length && `\n\n### Added Resource Packs 🎨\n\n${addedCategories.resourcepacks.join("\n")}`,
@@ -384,9 +382,7 @@ function generateChangelogContent(features, fixes, addedCategories, removedCateg
 function generateModChangelog(addedCategories, removedCategories, changedCategories, oldPackMetadata) {
   const sections = [
     `## Craftoria - ${CONFIG.oldPackVersion} -> ${CONFIG.packVersion}`,
-    oldPackMetadata &&
-    oldPackMetadata.versions &&
-    packMetadata.versions &&
+    oldPackMetadata?.versions && packMetadata.versions &&
     packMetadata.versions.neoforge !== oldPackMetadata.versions.neoforge &&
     `### NeoForge - ${oldPackMetadata.versions.neoforge} -> ${packMetadata.versions.neoforge}`,
     addedCategories.mods.length && `### Added Mods\n${addedCategories.mods.join("\n")}`,
@@ -405,236 +401,112 @@ function generateModChangelog(addedCategories, removedCategories, changedCategor
   return sections.join("\n\n");
 }
 
-// Parse command line arguments for testing
-function parseArgs() {
-  const { values: parsed } = utilParseArgs({
-    options: {
-      test: { type: "boolean", default: false },
-      fromCommit: { type: "string" },
-      toCommit: { type: "string" },
-      fromVersion: { type: "string" },
-      toVersion: { type: "string" },
-      save: { type: "boolean", default: false },
-      help: { type: "boolean", default: false }
-    },
-  });
-
-  if (parsed.test) {
-    CONFIG.saveToFile = false;
-  }
-
-  if (parsed.save) {
-    CONFIG.saveToFile = true;
-  }
-  
-  if (parsed.help) {
-    console.log(`
-Changelog Generation Tool
-
-Usage: bun generate-changelog.js [options]
-
-Options:
-  --test, -t                Enable test mode (disables file saving by default)
-  --from-commit <hash>      Compare from this commit hash
-  --to-commit <hash>        Compare to this commit hash (default: HEAD)
-  --from-version <version>  Override the old pack version for display
-  --to-version <version>    Override the new pack version for display
-  --save                    Save files even in test mode
-  --help, -h                Show this help message
-
-Examples:
-  # Test changelog between two commits
-  node generate-changelog.js --test --from-commit abc123 --to-commit def456
-
-  # Test with custom version names
-  node generate-changelog.js --test --from-commit abc123 --from-version "1.21.0" --to-version "1.22.0"
-
-  # Test and save files
-  node generate-changelog.js --test --from-commit abc123 --save
-`);
-    process.exit(0);
-  }
-
-  return parsed;
+function getSortKey(metadata, useFileName = false) {
+  const displayName = useFileName ? metadata.filename : metadata.name;
+  return displayName
+    .toLowerCase()
+    .replace(/^the\s+/i, "")
+    .replace(/\.(jar|zip)$/i, "")
+    .trim();
 }
 
-const CLI_ARGS = parseArgs();
-
-// Validate CLI arguments
-if (CLI_ARGS.testMode && !CLI_ARGS.fromCommit) {
-  console.error("Error: --test mode requires --from-commit to be specified");
-  console.log("Use --help for usage information");
-  process.exit(1);
+async function sortAndFormatItems(items, formatter) {
+  const sorted = Object.values(items).sort((a, b) => 
+    getSortKey(a).localeCompare(getSortKey(b))
+  );
+  return sorted.map(formatter);
 }
 
-// Main function
+async function sortAndFormatUpdates(ids, oldMods, currentMods) {
+  const sorted = ids.sort((a, b) => 
+    getSortKey(currentMods[a]).localeCompare(getSortKey(currentMods[b]))
+  );
+  return Promise.all(sorted.map(id => formatUpdateLink(id, oldMods, currentMods)));
+}
+
 async function generateChangelog() {
   if (!Bun.which("git")) {
     throw new Error("Git is required but was not found on the system.");
   }
 
   $.cwd(CONFIG.gitRepoPath);
-
   await initializeConfig();
 
   const fromCommit = CLI_ARGS.fromCommit || CONFIG.cutoffCommitHash;
   const toCommit = CLI_ARGS.toCommit || CONFIG.referenceCommit;
 
-  // Override pack versions if specified in CLI arguments
-  if (CLI_ARGS.fromVersion) {
-    CONFIG.oldPackVersion = CLI_ARGS.fromVersion;
-  }
-  if (CLI_ARGS.toVersion) {
-    CONFIG.packVersion = CLI_ARGS.toVersion;
-  }
-
   const [oldPackMetadata, oldMods] = await getCommitMetadataFiles(fromCommit);
   const [, currentMods] = await getCommitMetadataFiles(toCommit);
-  const { newMods, removedMods, updatedMods } = compareModCollections(
-    oldMods,
-    currentMods
-  );
+  const { newMods, removedMods, updatedMods } = compareModCollections(oldMods, currentMods);
 
-  // Categorize items by type
+  // Categorize and format links
   const addedCategories = categorizeItems(newMods);
   const removedCategories = categorizeItems(removedMods);
   const updatedCategories = categorizeItems(updatedMods);
 
-  // Generate links for each category
   const addedLinks = {
-    mods: Object.values(addedCategories.mods)
-      .sort((a, b) => getSortKey(a).localeCompare(getSortKey(b)))
-      .map(metadata => formatModLink(metadata)),
-    resourcepacks: Object.values(addedCategories.resourcepacks)
-      .sort((a, b) => getSortKey(a).localeCompare(getSortKey(b)))
-      .map(metadata => formatModLink(metadata)),
-    shaderpacks: Object.values(addedCategories.shaderpacks)
-      .sort((a, b) => getSortKey(a).localeCompare(getSortKey(b)))
-      .map(metadata => formatModLink(metadata))
+    mods: await sortAndFormatItems(addedCategories.mods, m => formatModLink(m)),
+    resourcepacks: await sortAndFormatItems(addedCategories.resourcepacks, m => formatModLink(m)),
+    shaderpacks: await sortAndFormatItems(addedCategories.shaderpacks, m => formatModLink(m))
   };
 
   const removedLinks = {
-    mods: Object.values(removedCategories.mods)
-      .sort((a, b) => getSortKey(a).localeCompare(getSortKey(b)))
-      .map(metadata => formatModLink(metadata)),
-    resourcepacks: Object.values(removedCategories.resourcepacks)
-      .sort((a, b) => getSortKey(a).localeCompare(getSortKey(b)))
-      .map(metadata => formatModLink(metadata)),
-    shaderpacks: Object.values(removedCategories.shaderpacks)
-      .sort((a, b) => getSortKey(a).localeCompare(getSortKey(b)))
-      .map(metadata => formatModLink(metadata))
+    mods: await sortAndFormatItems(removedCategories.mods, m => formatModLink(m)),
+    resourcepacks: await sortAndFormatItems(removedCategories.resourcepacks, m => formatModLink(m)),
+    shaderpacks: await sortAndFormatItems(removedCategories.shaderpacks, m => formatModLink(m))
   };
 
   const changedLinks = {
-    mods: await Promise.all(
-      Object.keys(updatedCategories.mods)
-        .sort((a, b) => getSortKey(currentMods[a]).localeCompare(getSortKey(currentMods[b])))
-        .map(id => formatUpdateLink(id, oldMods, currentMods))
-    ),
-    resourcepacks: await Promise.all(
-      Object.keys(updatedCategories.resourcepacks)
-        .sort((a, b) => getSortKey(currentMods[a]).localeCompare(getSortKey(currentMods[b])))
-        .map(id => formatUpdateLink(id, oldMods, currentMods))
-    ),
-    shaderpacks: await Promise.all(
-      Object.keys(updatedCategories.shaderpacks)
-        .sort((a, b) => getSortKey(currentMods[a]).localeCompare(getSortKey(currentMods[b])))
-        .map(id => formatUpdateLink(id, oldMods, currentMods))
-    )
+    mods: await sortAndFormatUpdates(Object.keys(updatedCategories.mods), oldMods, currentMods),
+    resourcepacks: await sortAndFormatUpdates(Object.keys(updatedCategories.resourcepacks), oldMods, currentMods),
+    shaderpacks: await sortAndFormatUpdates(Object.keys(updatedCategories.shaderpacks), oldMods, currentMods)
   };
 
-  const rawCommits = (
-    await $`git log ${fromCommit}..${toCommit} --pretty="%s \`%an\`"`.text()
-  )
+  // Process commits
+  const rawCommits = (await $`git log ${fromCommit}..${toCommit} --pretty="%s \`%an\`"`.text())
     .split("\n")
     .filter(Boolean);
 
   const { features, fixes } = processCommits(rawCommits);
-
   const changelog = generateChangelogContent(features, fixes, addedLinks, removedLinks);
 
-  // Categorize current mods for the modlist
+  // Generate modlist
   const currentCategories = categorizeItems(currentMods);
-
-  // Generate categorized modlist sections
   const modlistSections = [];
 
-  // Mods section
-  if (Object.keys(currentCategories.mods).length > 0) {
-    const sortedMods = Object.values(currentCategories.mods)
-      .sort((a, b) => getSortKey(a, true).localeCompare(getSortKey(b, true)));
-    const modEntries = await Promise.all(
-      sortedMods.map(async metadata => {
-        const updateInfo = getUpdateInfo(metadata);
-        const modInfo = await getModInfo(updateInfo["project-id"]);
-        return formatModlistLink(metadata, modInfo.authors[0].name, modInfo);
-      })
-    );
-    modlistSections.push(`## Mods\n\n${modEntries.join("\n")}`);
-  }
+  for (const [categoryName, categoryItems] of Object.entries(currentCategories)) {
+    if (Object.keys(categoryItems).length === 0) continue;
 
-  // Resource Packs section
-  if (Object.keys(currentCategories.resourcepacks).length > 0) {
-    const sortedResourcepacks = Object.values(currentCategories.resourcepacks)
-      .sort((a, b) => getSortKey(a, true).localeCompare(getSortKey(b, true)));
-    const resourcepackEntries = await Promise.all(
-      sortedResourcepacks.map(async metadata => {
+    const sorted = Object.values(categoryItems).sort((a, b) => 
+      getSortKey(a, true).localeCompare(getSortKey(b, true))
+    );
+    
+    const entries = await Promise.all(
+      sorted.map(async metadata => {
         const updateInfo = getUpdateInfo(metadata);
         const modInfo = await getModInfo(updateInfo["project-id"]);
         return formatModlistLink(metadata, modInfo.authors[0].name, modInfo);
       })
     );
-    modlistSections.push(`## Resource Packs\n\n${resourcepackEntries.join("\n")}`);
-  }
 
-  // Shader Packs section
-  if (Object.keys(currentCategories.shaderpacks).length > 0) {
-    const sortedShaderpacks = Object.values(currentCategories.shaderpacks)
-      .sort((a, b) => getSortKey(a, true).localeCompare(getSortKey(b, true)));
-    const shaderpackEntries = await Promise.all(
-      sortedShaderpacks.map(async metadata => {
-        const updateInfo = getUpdateInfo(metadata);
-        const modInfo = await getModInfo(updateInfo["project-id"]);
-        return formatModlistLink(metadata, modInfo.authors[0].name, modInfo);
-      })
-    );
-    modlistSections.push(`## Shader Packs\n\n${shaderpackEntries.join("\n")}`);
+    const categoryTitle = categoryName.split(/(?=[A-Z])/).map(capitalize).join(" ");
+    modlistSections.push(`## ${categoryTitle}\n\n${entries.join("\n")}`);
   }
 
   const modlist = `# Craftoria - v${CONFIG.packVersion}\n\n${modlistSections.join("\n\n")}`;
-
-  const modChangelog = generateModChangelog(
-    addedLinks,
-    removedLinks,
-    changedLinks,
-    oldPackMetadata
-  );
+  const modChangelog = generateModChangelog(addedLinks, removedLinks, changedLinks, oldPackMetadata);
 
   if (CONFIG.saveToFile) {
-    const paths = {
-      changelog: path.join(CONFIG.gitRepoPath, "changelogs", "CHANGELOG.md"),
-      modlist: path.join(
-        CONFIG.gitRepoPath,
-        "changelogs",
-        `modlist_${CONFIG.packVersion}.md`
-      ),
-      modChangelog: path.join(
-        CONFIG.gitRepoPath,
-        "changelogs",
-        `changelog_mods_${CONFIG.packVersion}.md`
-      ),
-      rootModlist: path.join(CONFIG.gitRepoPath, "MODLIST.md"),
-    };
-
+    const baseDir = path.join(CONFIG.gitRepoPath, "changelogs");
     await Promise.all([
-      writeTextToFile(paths.changelog, changelog, true),
-      writeTextToFile(paths.modlist, modlist),
-      writeTextToFile(paths.modChangelog, modChangelog),
-      writeTextToFile(paths.rootModlist, modlist),
+      writeTextToFile(path.join(baseDir, "CHANGELOG.md"), changelog, true),
+      writeTextToFile(path.join(baseDir, `modlist_${CONFIG.packVersion}.md`), modlist),
+      writeTextToFile(path.join(baseDir, `changelog_mods_${CONFIG.packVersion}.md`), modChangelog),
+      writeTextToFile(path.join(CONFIG.gitRepoPath, "MODLIST.md"), modlist),
     ]);
-    console.log(CLI_ARGS.testMode ? "Test mode: Changelogs saved to files." : "Changelogs saved to files.");
+    console.log(CLI_ARGS.test ? "Test mode: Changelogs saved to files." : "Changelogs saved to files.");
   } else {
-    if (CLI_ARGS.testMode) {
+    if (CLI_ARGS.test) {
       console.log("=== TEST MODE RESULTS ===");
       console.log(`Comparing: ${CONFIG.oldPackVersion} -> ${CONFIG.packVersion}`);
       console.log(`Commits: ${CONFIG.cutoffCommitHash} -> ${CONFIG.referenceCommit}`);
@@ -642,16 +514,6 @@ async function generateChangelog() {
     }
     console.log(changelog, "\n---\n", modlist, "\n---\n", modChangelog);
   }
-}
-
-function getSortKey(metadata, useFileName = false) {
-  const displayName = useFileName ? metadata.filename : metadata.name;
-  // Remove common prefixes and suffixes for better sorting
-  return displayName
-    .toLowerCase()
-    .replace(/^the\s+/i, '') // Remove "The " prefix
-    .replace(/\.(jar|zip)$/i, '') // Remove file extensions
-    .trim();
 }
 
 generateChangelog().catch(error => {
