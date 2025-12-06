@@ -1,5 +1,6 @@
 import path from "node:path";
 import os from "node:os";
+import { parseArgs as utilParseArgs } from "node:util";
 import {
   capitalize,
   getLatestBumpCommitHash,
@@ -406,46 +407,26 @@ function generateModChangelog(addedCategories, removedCategories, changedCategor
 
 // Parse command line arguments for testing
 function parseArgs() {
-  const args = process.argv.slice(2);
-  const parsed = {
-    testMode: false,
-    fromCommit: null,
-    toCommit: null,
-    fromVersion: null,
-    toVersion: null,
-    help: false
-  };
+  const { values: parsed } = utilParseArgs({
+    options: {
+      test: { type: "boolean", default: false },
+      fromCommit: { type: "string" },
+      toCommit: { type: "string" },
+      fromVersion: { type: "string" },
+      toVersion: { type: "string" },
+      save: { type: "boolean", default: false },
+      help: { type: "boolean", default: false }
+    },
+  });
 
-  for (let i = 0; i < args.length; i++) {
-    const arg = args[i];
-    switch (arg) {
-      case '--test':
-      case '-t':
-        parsed.testMode = true;
-        CONFIG.saveToFile = false; // Don't save files in test mode by default
-        break;
-      case '--from-commit':
-        parsed.fromCommit = args[++i];
-        break;
-      case '--to-commit':
-        parsed.toCommit = args[++i];
-        break;
-      case '--from-version':
-        parsed.fromVersion = args[++i];
-        break;
-      case '--to-version':
-        parsed.toVersion = args[++i];
-        break;
-      case '--save':
-        CONFIG.saveToFile = true;
-        break;
-      case '--help':
-      case '-h':
-        parsed.help = true;
-        break;
-    }
+  if (parsed.test) {
+    CONFIG.saveToFile = false;
   }
 
+  if (parsed.save) {
+    CONFIG.saveToFile = true;
+  }
+  
   if (parsed.help) {
     console.log(`
 Changelog Generation Tool
