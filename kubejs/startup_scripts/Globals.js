@@ -54,8 +54,8 @@ const customMIMachines = {
     casing: 'sky_stone_brick_casing',
     mod: 'mi_tweaks',
     default_overlays: {
-      front: 'modern_industrialization:block/machines/budding_incubator/overlay_front',
-      front_active: 'modern_industrialization:block/machines/budding_incubator/overlay_front_active',
+      front: 'craftoria:block/machines/budding_incubator/overlay_front',
+      front_active: 'craftoria:block/machines/budding_incubator/overlay_front_active',
     },
   },
   ooze_lab: {
@@ -63,8 +63,8 @@ const customMIMachines = {
     casing: 'factory_grate',
     mod: 'mi_tweaks',
     default_overlays: {
-      front: 'extended_industrialization:block/machines/brewery/overlay_front',
-      front_active: 'extended_industrialization:block/machines/brewery/overlay_front_active',
+      front: 'craftoria:block/machines/ooze_lab/overlay_front',
+      front_active: 'craftoria:block/machines/ooze_lab/overlay_front_active',
     },
   },
   model_synthesizer: {
@@ -72,8 +72,8 @@ const customMIMachines = {
     casing: 'vect5',
     mod: 'mi_tweaks',
     default_overlays: {
-      front: 'modern_industrialization:block/machines/model_synthesizer/overlay_front',
-      front_active: 'modern_industrialization:block/machines/model_synthesizer/overlay_front_active',
+      front: 'craftoria:block/machines/model_synthesizer/overlay_front',
+      front_active: 'craftoria:block/machines/model_synthesizer/overlay_front_active',
     },
   },
 };
