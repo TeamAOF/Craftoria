@@ -60,6 +60,10 @@ ServerEvents.recipes(event => {
     else logError(`Ooze Lab recipe not found for input: ${input}, output: ${output}, ID: ${kubeRecipe.getId()}`);
   });
 
+  oozeLabRecipe('justdirethings:gooblock_tier1', 'justdirethings:gooblock_tier2', null, null, 10 * 20);
+  oozeLabRecipe('justdirethings:gooblock_tier2', 'justdirethings:gooblock_tier3', null, null, 20 * 20);
+  oozeLabRecipe('justdirethings:gooblock_tier3', 'justdirethings:gooblock_tier4', null, null, 30 * 20);
+
   assembler(16, 200)
     .itemOut('mi_tweaks:ooze_lab')
     .itemIn('8x justdirethings:gooblock_tier4')
