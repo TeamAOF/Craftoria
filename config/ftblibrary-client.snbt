@@ -25,6 +25,16 @@
 	}
 	sidebar: {
 		buttons: {
+			"ftbteams:my_team": {
+				enabled: true
+				x: 2
+				y: 0
+			}
+			"ftbquests:quests": {
+				enabled: true
+				x: 3
+				y: 0
+			}
 			"ftbchunks:chunks": {
 				enabled: true
 				x: 0
@@ -57,22 +67,7 @@
 			}
 			"ftbchunks:claim_chunks": {
 				enabled: true
-				x: 2
-				y: 0
-			}
-			"ftblibrary:toggle/rain": {
-				enabled: false
-				x: -1
-				y: -1
-			}
-			"ftbteams:my_team": {
-				enabled: true
-				x: 3
-				y: 0
-			}
-			"ftbquests:quests": {
-				enabled: true
-				x: 4
+				x: 1
 				y: 0
 			}
 			"ftblibrary:toggle/day": {
@@ -85,10 +80,10 @@
 				x: 3
 				y: 1
 			}
-			"leaderboards:leaderboards": {
-				enabled: true
-				x: 1
-				y: 0
+			"ftblibrary:toggle/rain": {
+				enabled: false
+				x: -1
+				y: -1
 			}
 		}
 		

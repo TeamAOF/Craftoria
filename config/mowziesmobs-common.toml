@@ -11,7 +11,7 @@
 		suns_blessing_duration = 60
 		# Default: 1.0
 		# Range: 0.0 ~ 1.7976931348623157E308
-		suns_blessing_attack_multiplier = 1.1
+		suns_blessing_attack_multiplier = 1.0
 		#Cost in minutes of using the solar beam ability.
 		# Default: 5
 		# Range: > 0
@@ -25,11 +25,11 @@
 			#Multiply armor damage reduction by this amount. See official Minecraft Wiki for an explanation of how armor damage reduction works.
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			damage_reduction_multiplier = 1.1
+			damage_reduction_multiplier = 1.0
 			#Multiply armor toughness by this amount. See official Minecraft Wiki for an explanation of how armor toughness works.
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			toughness_multiplier = 1.1
+			toughness_multiplier = 1.0
 
 	[tools_and_abilities.axe_of_a_thousand_metals]
 		#Set to true for the Axe of a Thousand Metals to have limited durability.
@@ -39,7 +39,7 @@
 			#Tool attack damage
 			# Default: 9.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			attack_damage = 10.0
+			attack_damage = 9.0
 			#Tool attack speed
 			# Default: 0.8999999761581421
 			# Range: 0.0 ~ 1.7976931348623157E308
@@ -57,17 +57,17 @@
 			#Multiply armor damage reduction by this amount. See official Minecraft Wiki for an explanation of how armor damage reduction works.
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			damage_reduction_multiplier = 1.1
+			damage_reduction_multiplier = 1.0
 			#Multiply armor toughness by this amount. See official Minecraft Wiki for an explanation of how armor toughness works.
 			# Default: 1.0
 			# Range: 0.0 ~ 1.7976931348623157E308
-			toughness_multiplier = 1.1
+			toughness_multiplier = 1.0
 
 	[tools_and_abilities.ice_crystal]
 		#Multiply all damage done with the ice crystal by this amount.
 		# Default: 1.0
 		# Range: 0.0 ~ 1.7976931348623157E308
-		attack_multiplier = 1.2
+		attack_multiplier = 1.0
 		#Set to true for the ice crystal to have limited durability.
 		#Prevents regeneration in inventory.
 		breakable = false
