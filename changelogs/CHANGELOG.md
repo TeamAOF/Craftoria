@@ -1,3 +1,34 @@
+# Craftoria | v1.29.0
+
+_Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.29.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.29.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added scylla boss entry to bosses quest chapter `AK`
+* Disabled name-tags on dropped items `AK`
+* Clean up mekanism quest chapter `AK`
+* Buff all cataclysm bosses, gear & weapons `AK`
+* Removed infinity souls cell quest `AK`
+* Recipe for converting lower tier JDT goos into higher tier ones in Ooze Lab `Phantom`
+* New textures for custom MI machines `Phantom`
+* Remove MI ores from Mekanism ore processing `Phantom`
+
+### Added Mods ✅
+
+* [Leaderboards](https://curseforge.com/projects/1367888)
+* [MekaJadeUpgrades (Mekanism addon)](https://curseforge.com/projects/1400118)
+* [Re:Animal](https://curseforge.com/projects/1387943)
+* [Ribbits](https://curseforge.com/projects/622967)
+
+### Removed Mods ❌
+
+* [Mowzie's Mobs](https://curseforge.com/projects/250498)
+
+### Bug Fixes 🪲
+
+* Bogged model `AK`
+* Fixed inventory updates causing more than usual amounts of lag `Phantom`
+---
 # Craftoria | v1.28.0
 
 _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.28.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.28.0.md)_
