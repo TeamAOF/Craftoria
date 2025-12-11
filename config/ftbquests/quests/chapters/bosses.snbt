@@ -174,8 +174,8 @@
 				type: "kill"
 				value: 1L
 			}]
-			x: -3.75d
-			y: -4.5d
+			x: -1.125d
+			y: -5.1000000000000005d
 		}
 		{
 			icon: {
@@ -624,6 +624,34 @@
 			}]
 			x: -9.5d
 			y: 4.25d
+		}
+		{
+			icon: {
+				id: "cataclysm:storm_eye"
+			}
+			icon_scale: 2.0d
+			id: "630EF1A8715E2D90"
+			rewards: [{
+				id: "41BC95AC566433E7"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:scylla"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			tasks: [{
+				entity: "cataclysm:scylla"
+				id: "18FB976EC364831C"
+				type: "kill"
+				value: 1L
+			}]
+			x: -3.7500000000000004d
+			y: -4.65d
 		}
 	]
 }
