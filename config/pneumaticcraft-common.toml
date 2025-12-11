@@ -9,9 +9,9 @@
 	# Default: 250000
 	# Range: > 1
 	max_programming_area = 250000
-	#Fluids at least as hot as this temperature (Kelvin) will be auto-registered as Liquid Compressor fuels, the quality being dependent on fluid temperature.
+	#Fluids at least as hot as this temperature (Kelvin) will be auto-registered as Liquid Compressor fuels, the quality being dependent on fluid temperature. Setting this to -1 completely disables hot fluids from being usable as fuels.
 	# Default: 373
-	# Range: > 0
+	# Range: > -1
 	min_fluid_fuel_temperature = 373
 	#Should dyes be used up when coloring things (Drones, Logistics Modules, Redstone Modules)?
 	use_up_dyes_when_coloring = false
