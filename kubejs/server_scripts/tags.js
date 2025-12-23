@@ -238,9 +238,20 @@ ServerEvents.tags('block', e => {
     '@laserio',
   ]).remove([/^justdirethings:gooblock_tier.$/]);
 
-  Registry.access().getAllTags('block').forEach(tag => {
-    if (!tag.path.endsWith('_immune')) return;
-    e.add(tag, ['yigd:grave']);
+  let immuneTags = [
+    'cataclysm:clawdian_immune',
+    'cataclysm:remnant_immune',
+    'cataclysm:altar_destroy_immune',
+    'cataclysm:scylla_immune',
+    'cataclysm:ignis_immune',
+    'cataclysm:harbinger_immune',
+    'cataclysm:leviathan_immune',
+    'cataclysm:maledictus_immune',
+    'cataclysm:netherite_monstrosity_immune',
+  ];
+
+  immuneTags.forEach(tag => {
+    e.add(tag, ['yigd:grave'])
   });
 });
 
