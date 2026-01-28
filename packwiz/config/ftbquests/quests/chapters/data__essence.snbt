@@ -494,15 +494,26 @@
 				id: "datanessence:ender_pearl_capture"
 			}
 			id: "461BDC4BD877261B"
-			rewards: [{
-				count: 8
-				id: "4BC9D3C01AEBB6EB"
-				item: {
-					count: 1
-					id: "datanessence:ender_pearl_relay"
+			rewards: [
+				{
+					count: 8
+					id: "4BC9D3C01AEBB6EB"
+					item: {
+						count: 1
+						id: "datanessence:ender_pearl_relay"
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "54487827C93F8763"
+					item: {
+						count: 1
+						id: "minecraft:ender_pearl"
+					}
+					random_bonus: 3
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "110DD19995E7B33C"
@@ -546,8 +557,8 @@
 				item: { count: 1, id: "datanessence:warp_capsule" }
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.0d
+			x: 4.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["3903D8705A8B3D55"]
@@ -558,7 +569,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 5.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["13BED9A2EDE1E4BC"]
@@ -636,6 +647,29 @@
 			}]
 			x: -5.5d
 			y: 5.5d
+		}
+		{
+			dependencies: ["37BD4E649A568646"]
+			id: "7C07D1FEEA69FBF7"
+			tasks: [{
+				id: "287A92619AC0A99F"
+				item: { count: 1, id: "datanessence:survey_tunneler" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3903D8705A8B3D55"]
+			hide_until_deps_complete: true
+			id: "4AA75E9C5C89B7C4"
+			tasks: [{
+				id: "227A5E571A32C1C1"
+				item: { count: 1, id: "datanessence:twining_lantern" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
 		}
 	]
 }
