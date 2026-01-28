@@ -541,7 +541,7 @@
 			tasks: [{
 				count: 8L
 				id: "120BD9BBBD88191E"
-				item: { count: 8, id: "ars_nouveau:sourcestone" }
+				item: { count: 1, id: "ars_nouveau:sourcestone" }
 				type: "item"
 			}]
 			x: -5.5d
@@ -556,8 +556,9 @@
 				type: "random"
 			}]
 			tasks: [{
+				count: 8L
 				id: "772457230933D493"
-				item: { count: 8, id: "ars_nouveau:arcane_pedestal" }
+				item: { count: 1, id: "ars_nouveau:arcane_pedestal" }
 				type: "item"
 			}]
 			x: -3.5d
@@ -2650,71 +2651,8 @@
 					count: 16
 					id: "409ABE58A225C159"
 					item: {
-						components: {
-							"minecraft:custom_name": "{\"italic\":false,\"text\":\"Warden's Meat\"}"
-							"minecraft:food": {
-								effects: [
-									{
-										effect: {
-											amplifier: 2b
-											duration: 3600
-											id: "minecraft:wither"
-											"neoforge:cures": [
-												"protected_by_totem"
-												"milk"
-											]
-											show_icon: 1b
-										}
-									}
-									{
-										effect: {
-											amplifier: 2b
-											duration: 3600
-											id: "minecraft:poison"
-											"neoforge:cures": [
-												"protected_by_totem"
-												"milk"
-											]
-											show_icon: 1b
-										}
-									}
-									{
-										effect: {
-											amplifier: 3b
-											duration: 3600
-											id: "minecraft:hunger"
-											"neoforge:cures": [
-												"protected_by_totem"
-												"milk"
-											]
-											show_icon: 1b
-										}
-									}
-									{
-										effect: {
-											amplifier: 9b
-											duration: 3600
-											id: "minecraft:mining_fatigue"
-											"neoforge:cures": [
-												"protected_by_totem"
-												"milk"
-											]
-											show_icon: 1b
-										}
-									}
-								]
-								nutrition: 4
-								saturation: 4.0f
-							}
-							"minecraft:lore": [
-								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Meat from a Warden\"}"
-								"{\"color\":\"gray\",\"italic\":false,\"text\":\"Obtained through a dubious mean\"}"
-								"{\"color\":\"dark_red\",\"italic\":false,\"text\":\"Eat at your own risk!\"}"
-							]
-							"minecraft:rarity": "epic"
-						}
 						count: 1
-						id: "minecraft:brick"
+						id: "craftoria:wardens_meat"
 					}
 					type: "item"
 				}

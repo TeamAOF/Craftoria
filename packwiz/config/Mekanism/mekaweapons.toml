@@ -1,49 +1,57 @@
 #MekaWeapons Settings. Joules to FE conversion: 2.5J = 1FE
 [weapons]
+	#Transfer energy rate of the Wireless Charger (Magnetizer), in Joules per tick.
+	# Default: 1250000
+	# Range: 0 ~ 9223372036854775807
+	wireless_charge_rate = 1250000
 
 	#Meka-Tana Settings
 	[weapons.meka_tana]
-		#Base damage of the Meka-Tana, multiply it with Attack Amplification Units.
+		#Base damage of Meka-Tana
 		base_damage = 50
-		#Attack speed of the Meka-Tana.
+		#Attack speed of Meka-Tana.
 		# Default: -2.4
 		# Range: -4.0 ~ 100.0
 		attack_speed = -2.4
-		#Cost in Joules of using the Meka-Tana to deal damage.
+		#Cost in Joules of using Meka-Tana to deal damage.
 		# Default: 625000
 		# Range: 0 ~ 9223372036854775807
 		energy_usage = 625000
-		#Cost in Joules of using the Meka-Tana to teleport 10 blocks.
+		#Cost in Joules of using Meka-Tana to teleport 10 blocks.
 		# Default: 5000
 		# Range: 0 ~ 9223372036854775807
 		teleport_energy_usage = 5000
-		#Maximum distance a player can teleport with the Meka-Tana.
+		#Maximum distance a player can teleport with Meka-Tana.
 		# Default: 100
 		# Range: 3 ~ 1024
 		max_teleport_reach = 100
-		#Base energy capacity of the Meka-Tana.
+		#Base energy capacity of Meka-Tana.
 		# Default: 16000000
 		# Range: 0 ~ 9223372036854775807
 		base_energy_capacity = 16000000
-		#Base charge rate of the Meka-Tana.
+		#Base charge rate of Meka-Tana.
 		# Default: 350000
 		# Range: 0 ~ 9223372036854775807
 		base_charge_rate = 350000
-		#Whether the Meka-Tana can be enchanted. False by default. Use at your own risk.
+		#Whether Meka-Tana can be enchanted. False by default. Use at your own risk.
 		enchantments = true
+		#Additional cost in Joules of using Meka-Tana to perform a sweeping attack.
+		# Default: 125000
+		# Range: 0 ~ 9223372036854775807
+		sweeping_attack_energy_usage = 125000
+		#Cost in Joules of using Meka-Tana to apply Looting effect to a mob.
+		# Default: 125000
+		# Range: 0 ~ 9223372036854775807
+		looting_energy_usage = 125000
 
 	#Meka-Bow Settings
 	[weapons.meka_bow]
 		#Attention: The final damage of Meka-Bow is based on how fast the arrow is going when it hits, multiply it with Attack Amplification Units.
 		base_damage = 50
-		#Cost in Joules of using the Meka-Bow.
+		#Cost in Joules of using Meka-Bow.
 		# Default: 625000
 		# Range: 0 ~ 9223372036854775807
 		energy_usage = 625000
-		#Cost in Joules of using the Meka-Bow with flame mode active.
-		# Default: 825000
-		# Range: 0 ~ 9223372036854775807
-		fire_mode_energy_usage = 825000
 		#Base energy capacity of Meka-Bow.
 		# Default: 16000000
 		# Range: 0 ~ 9223372036854775807
@@ -52,5 +60,25 @@
 		# Default: 350000
 		# Range: 0 ~ 9223372036854775807
 		base_charge_rate = 350000
-		#Whether the Meka-Bow can be enchanted. False by default. Use at your own risk.
+		#Whether Meka-Bow can be enchanted. False by default. Use at your own risk.
 		enchantments = true
+		#Cost in Joules of using Meka-Bow with Energy Arrow Unit active, per shot.
+		# Default: 625000
+		# Range: 0 ~ 9223372036854775807
+		energy_arrow_usage = 625000
+		#Cost in Joules of using Meka-Bow with Auto-Fire active, per shot.
+		# Default: 125000
+		# Range: 0 ~ 9223372036854775807
+		autofire_energy_usage = 125000
+		#Cost in Joules of using Meka-Bow with Draw Speed Unit active, multiplied by unit amount, per shot.
+		# Default: 125000
+		# Range: 0 ~ 9223372036854775807
+		draw_speed_usage = 125000
+		#Cost in Joules of using Meka-Bow with Gravity Dampener Unit active, per shot.
+		# Default: 125000
+		# Range: 0 ~ 9223372036854775807
+		gravity_dampener_usage = 125000
+		#Cost in Joules of using Meka-Bow to apply Looting effect to a mob.
+		# Default: 125000
+		# Range: 0 ~ 9223372036854775807
+		looting_energy_usage = 125000

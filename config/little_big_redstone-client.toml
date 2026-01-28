@@ -1,0 +1,22 @@
+#The amount of time (in ticks) sticky notes remain on the screen before fading away.
+#Default: 40
+# Default: 40
+# Range: > 0
+sticky_note_in_world_view_linger_time = 40
+#The scale to apply to the in-world sticky note view on the screen.
+#1 results in the sticky note view being 180x180.
+#Default: 0.5
+# Default: 0.5
+# Range: 0.0 ~ 4.0
+sticky_note_in_world_view_scale = 0.5
+#The scale to apply to the tooltip sticky note view on the screen.
+#1 results in the sticky note view being 180x180.
+#Default: 0.5
+# Default: 0.5
+# Range: 0.0 ~ 4.0
+sticky_note_tooltip_view_scale = 0.5
+#The amount of time (in ticks) the floppy disk item display remain on the screen before fading away.
+#Default: 40
+# Default: 40
+# Range: > 0
+floppy_disk_view_linger_time = 40

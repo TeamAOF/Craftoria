@@ -172,6 +172,8 @@
 	test3 = 0.0
 	#unfunny
 	"I am very boring" = false
+	#Allowed Values: ALWAYS, CACHED, CACHED_ZIPPED, NEVER
+	dynamic_assets_generation_mode = "CACHED"
 
 #Game tweaks
 [tweaks]
@@ -193,6 +195,8 @@
 	mob_head_shaders = true
 	#Sends your current chat when you die while typing
 	send_chat_on_death = true
+	#Makes enderman heads use vanilla texture. Enable for texture pack support
+	enderman_head_texture_pack_support = true
 
 	[tweaks.colored_maps]
 		#Show a slime overlay when you hit an entity with a slimeball

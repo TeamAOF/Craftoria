@@ -1,0 +1,216 @@
+[*]
+background:          ftbquests:textures/gui/background_warm_black.png; color=#F8ffffff; tile_size=64
+extra_quest_shapes:  diamond, pentagon, hexagon, octagon, heart, gear
+
+text_color:          #FFFFFF
+hover_text_color:    #FFFFA0
+disabled_text_color: #999999
+
+widget_border:     #1B1D1E
+widget_background: #44000000
+symbol_in:         #9BC600
+symbol_out:        #408300
+
+button:                hollow_rectangle:{{widget_border}}
+panel:                 {{container_slot}}
+disabled_button:       hollow_rectangle:{{widget_border}}
+hover_button:          {{button}} + {{widget_background}}; padding=1
+context_menu:          hollow_rectangle:{{widget_border}}; round_edges + {{background}}; color=#B4B4B4; padding=1
+scroll_bar_background: {{widget_background}}
+scroll_bar:            {{button}} + {{widget_background}}; padding=1
+container_slot:        {{button}}; padding=-1
+text_box:              part:minecraft:textures/gui/container/enchanting_table.png; pos=0,185,108,19; corner=6
+
+icon:                 none
+check_icon:           builtin
+add_icon:             builtin
+alert_icon:           ftbquests:textures/gui/alert.png
+support_icon:         ftblibrary:textures/icons/support.png
+wiki_icon:            ftbquests:textures/gui/info.png
+wiki_url:             -
+pin_icon_on:          ftbquests:textures/gui/pin.png; color=#F8BD1C
+pin_icon_off:         ftbquests:textures/gui/pin.png; color=#DBDBDB
+editor_icon_on:       ftbquests:textures/gui/editor.png; color=#F8BD1C
+editor_icon_off:      ftbquests:textures/gui/editor.png; color=#DBDBDB
+hidden_icon:          ftbquests:textures/gui/hidden.png; color=#DBDBDB
+link_icon:            ftbquests:textures/gui/link.png; color=#DBDBDB
+save_icon:            ftbquests:textures/gui/save.png
+settings_icon:        ftbquests:textures/gui/settings.png
+prefs_icon:           ftblibrary:icons/player
+close_icon:           ftbquests:textures/gui/close.png
+emergency_items_icon: ftbquests:textures/gui/emergency_items.png; color=#F3D9FF
+guide_icon:           ftbquests:textures/gui/guide.png; color=#EF9E1A
+modpack_icon:         ftbquests:textures/item/book.png
+reward_table_icon:    ftblibrary:icons/money_bag
+shop_icon:            ftbquests:textures/gui/shop.png; color=#EF9E1A
+collect_rewards_icon: ftbquests:textures/gui/collect_rewards.png; color=#EF9E1A
+delete_icon:          ftblibrary:icons/remove
+reload_icon:          ftblibrary:icons/refresh
+download_icon:        ftblibrary:icons/down
+edit_icon:            ftblibrary:icons/settings
+move_up_icon:         ftblibrary:icons/up
+move_down_icon:       ftblibrary:icons/down
+left_arrow:           ftblibrary:icons/left
+right_arrow:          ftblibrary:icons/right
+
+full_screen_quest:                  0
+tasks_text_color:                   #5555FF
+rewards_text_color:                 #FFAA00
+quest_view_background:              {{context_menu}}
+quest_view_border:                  {{widget_border}}
+quest_view_title:                   #AAAAAA
+quest_completed_color:              #C891C43F
+quest_started_color:                #C873B6AC
+quest_not_started_color:            #96FFFFFF
+quest_locked_color:                 #C8A45031
+dependency_line_texture:            ftbquests:textures/gui/flowing_a.png
+dependency_line_completed_color:    #91C43F
+dependency_line_uncompleted_color:  #F8B3B3A3
+dependency_line_unavailable_color:  #A8B3B3A3
+dependency_line_requires_color:     #A45031
+dependency_line_required_for_color: #73B6AC
+dependency_line_selected_speed:     1.5
+dependency_line_unselected_speed:   1.5
+dependency_line_thickness:          0.4
+quest_spacing:                      1.0
+pinned_quest_size:                  0.75
+
+checkmark_task_active:   minecraft:textures/gui/sprites/pending_invite/accept_highlighted.png
+checkmark_task_inactive: minecraft:textures/gui/sprites/pending_invite/accept.png
+
+# Powah
+[01B56BD678E7745B]
+background:                         ftbquests:textures/gui/bg_powah.png; color=#a0a0a0; tile_size=64
+#dependency_line_unavailable_color:  #f8fcf4dc
+
+# Completionist
+[0CF7A598566497C7]
+background:                         ftbquests:textures/gui/completionist_background.png
+
+# PneumaticCraft
+[04AD21E8ACC60AFD]
+dependency_line_texture:            pneumaticcraft:textures/block/fluid/memory_essence_flow.png
+dependency_line_thickness:          0.75
+dependency_line_uncompleted_color:  #88fcf4dc
+dependency_line_requires_color:     #c8323d
+dependency_line_required_for_color: #0065d7
+
+# Ars Nouveau
+[0597AF3E8B286CFA]
+background:                         ars_nouveau:textures/block/ghostweave.png; color=#404040; tile_size=32
+dependency_line_texture:            ars_nouveau:textures/block/mage_block_transparent.png
+dependency_line_selected_speed:     1
+dependency_line_unselected_speed:   1
+dependency_line_thickness:          0.5
+dependency_line_uncompleted_color:  #F8ccb400
+dependency_line_unavailable_color:  #88ccb400
+
+# Create
+[0644AB97E8D8839B]
+background:                         ftbquests:textures/gui/background_white.png; color=#042029; tile_size=64
+dependency_line_texture:            ftbquests:textures/gui/belt_scroll.png
+dependency_line_thickness:          1
+dependency_line_selected_speed:     0.5
+dependency_line_unselected_speed:   0.75
+quest_view_title:                   #fcf4dc
+quest_view_border:                  #c6c6c6
+widget_border:                      #c6c6c6
+widget_background:                  #0a2933
+quest_view_background:              hollow_rectangle:#eae3cb; round_edges + #eae3cb; color=#0a2933; padding=1
+context_menu:                       hollow_rectangle:#c6c6c6; round_edges + #0a2933; color=#0a2933; padding=1
+
+# Organized Storage
+[1CFBA632673ABBFD]
+dependency_line_uncompleted_color:  #F8fcf4dc
+dependency_line_unavailable_color:  #88fcf4dc
+
+# Monster Mayhem 
+[26E59C8DBA7F6FE3]
+dependency_line_texture:            minecraft:textures/particle/heart.png
+dependency_line_thickness:          0.4
+dependency_line_unselected_speed:   0.75
+
+# Personal Storage
+[2B64DA0213E9FC7B]
+background:                         ftbquests:textures/gui/background_warm_black.png
+dependency_line_unavailable_color:  #A8819090
+
+# Welcome
+[3188AC6C440F7520]
+dependency_line_uncompleted_color:  #F8ffeee4
+
+# Mekanism: Ore Processing
+[33E8845C982DC0F2]
+background:                         ftbquests:textures/gui/background_white.png; color=#F8738a05; tile_size=64
+dependency_line_texture:            ftbquests:textures/gui/flowing_mekanism.png
+dependency_line_completed_color:    #F8eae3cb
+dependency_line_uncompleted_color:  #C8eae3cb
+dependency_line_unavailable_color:  #A8eae3cb
+dependency_line_selected_speed:     1.0
+dependency_line_unselected_speed:   0.5
+
+# Iron Spells
+[3B4FADE31FB88E9F]
+dependency_line_texture:            irons_spellbooks:textures/entity/portal/portal_round.png
+dependency_line_thickness:          0.5
+dependency_line_unselected_speed:   0.25
+dependency_line_uncompleted_color:  #FF808080
+dependency_line_unavailable_color:  #8F808080
+
+# Mekanism
+[40CEA39FE5F5225D]
+dependency_line_texture:            ftbquests:textures/gui/flowing_mekanism.png
+dependency_line_uncompleted_color:  #F8C8C8C8
+dependency_line_unavailable_color:  #88C8C8C8
+dependency_line_selected_speed:     1.0
+dependency_line_unselected_speed:   0.5
+
+# Theurgy
+[5A3894BACC5E8994]
+background:                         ftbquests:textures/gui/background_white.png; color=#110a1a; tile_size=64
+dependency_line_texture:            theurgy:textures/block/sal_ammoniac/still.png
+dependency_line_uncompleted_color:  #C0f7eff6
+dependency_line_unavailable_color:  #A8f7eff6
+
+# Replication
+[679ED31B5B1D91DA]
+dependency_line_texture:            replication:textures/block/shader.png
+dependency_line_uncompleted_color:  #ff88ffaa
+background:                         ftbquests:textures/gui/background_white.png; color=#aa000000  ; tile_size=64
+
+# AE2
+[70FFEE37C7ABD690]
+dependency_line_texture:            ftbquests:textures/gui/lines_ae2.png
+dependency_line_unavailable_color:  #80B3B3A3
+
+# Occultism
+[7269FD2B5B0F0424]
+background:                         ftbquests:textures/gui/background_warm_black.png; color=#F0a81900; tile_size=64
+dependency_line_texture:            occultism:textures/gui/book/summoning.png
+
+# Apotheosis
+[2E72024B18414A17]
+background:                         apotheosis:textures/advancements/bg/apoth.png; tile_size=64
+
+# Bosses
+[216D532684E20496]
+background:                         craftoria:textures/gui/sky.png
+
+# Immersive Aircraft
+[5158EB105DEA1F80]
+background:                         ftbquests:textures/gui/double_sky.png
+
+# Modern Industrialization
+[6A5B4531418CC297]
+background:                         craftoria:textures/gui/mi.png
+dependency_line_completed_color:    #F8fcf4dc
+dependency_line_uncompleted_color:  #A8fcf4dc
+dependency_line_unavailable_color:  #68fcf4dc
+
+# Fishing
+[1910D05CD66EC477]
+background:                         ftbquests:textures/gui/fishing_bg.png
+
+# Gadgets
+[7B329826EADF9720]
+background:                         ftbquests:textures/gui/background_warm.png

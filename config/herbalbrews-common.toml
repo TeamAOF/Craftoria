@@ -1,0 +1,27 @@
+	[items.banner]
+		#Enable or disable the effect granted by banners.
+		giveEffect = true
+		#Enable or disable the tooltip display for banners.
+		showTooltip = true
+
+	[items.hat]
+		#Enable or disable magic damage reduction provided by the hat.
+		damageReductionEnabled = true
+		#Percentage of magic damage reduction provided by the hat (0-100).
+		# Default: 40
+		# Range: 0 ~ 100
+		damageReductionAmount = 40
+
+[blocks]
+	#Duration of the drying process in ticks. (20 ticks = 1 second)
+	# Default: 900
+	# Range: > 0
+	dryingDuration = 900
+	#Duration of the brewing process in ticks. (20 ticks = 1 second)
+	# Default: 1200
+	# Range: > 0
+	brewingDuration = 1200
+	#Duration of the jug's effect in ticks. (20 ticks = 1 second)
+	# Default: 900
+	# Range: > 0
+	jugEffectDuration = 900

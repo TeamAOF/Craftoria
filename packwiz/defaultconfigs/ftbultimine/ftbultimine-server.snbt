@@ -1,4 +1,22 @@
 # Default config file that will be copied to saves\New World (3)\serverconfig\ftbultimine-server.snbt if it doesn't exist!
 # Just copy any values you wish to override in here!
 
-{ }
+{
+	misc: {
+		# These tags will be considered the same block when checking for blocks to Ultimine in shapeless mining mode
+		# Default: ["minecraft:base_stone_overworld", "c:*_ores", "forge:ores/*"]
+		merge_tags: [
+			"minecraft:base_stone_overworld"
+			"c:*_ores"
+			"c:ores/*"
+			"forge:ores/*"
+			"integrateddynamics:menril_logs"
+		]
+	}
+
+    costs_limits: {
+		# Require a damageable tool, or an item in the 'ftbultimine:tools' tag, to ultimine.
+		# Default: false
+		require_tool: false
+    }
+}

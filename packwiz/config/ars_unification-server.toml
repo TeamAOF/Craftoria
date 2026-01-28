@@ -92,3 +92,13 @@ exceptions = []
 				priority = 100
 				#List of allowed press item IDs
 				presses = ["ae2:calculation_processor_press", "ae2:engineering_processor_press", "ae2:logic_processor_press", "ae2:silicon_press", "megacells:accumulation_processor_press", "extendedae:concurrent_processor_press", "advanced_ae:quantum_processor_press", "appflux:energy_processor_press"]
+
+		[compat.ars_technica.transmutation_focus]
+			#Whether to double amount of items processed by Cut when a Focus of Transmutation from Ars Technica is equipped.
+			cut_double_processing_amount = true
+			#Whether to double chance based outputs for Cut-type recipes when a Focus of Transmutation from Ars Technica is equipped.
+			cut_double_chance_outputs = true
+			#Whether to double amount of items processed by Flatten when a Focus of Transmutation from Ars Technica is equipped.
+			press_double_processing_amount = true
+			#Whether to double chance based outputs for Press-type recipes when a Focus of Transmutation from Ars Technica is equipped.
+			press_double_chance_outputs = true

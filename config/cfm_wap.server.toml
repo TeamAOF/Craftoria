@@ -1,0 +1,11 @@
+# Electricity related properties
+[electricity]
+	# The maximum amount of links that can be connected to a circuit breaker.
+	# Valid range: 1 to 256 (inclusive)
+	maximumLinksPerCircuitBreaker = 16
+	# The maximum amount of nodes in a network that can be powered by the circuit breaker.
+	# Valid range: 1 to 1024 (inclusive)
+	maximumNodesInCircuitBreakerNetwork = 128
+	# The radius (in blocks) within which the circuit breaker is disabled when a lightning bolt occurs.
+	# Valid range: 15 to 1024 (inclusive)
+	lightningStrikeOutageRadius = 30

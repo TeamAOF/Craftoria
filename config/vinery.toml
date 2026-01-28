@@ -1,0 +1,93 @@
+[Blocks]
+	#Total fermentation time in ticks
+	# Default: 6000
+	# Range: > 1
+	totalFermentationTime = 6000
+	#Maximum fluid level in the Fermentation Barrel
+	# Default: 100
+	# Range: 10 ~ 1000
+	maxFluidLevel = 100
+	#How much Fluid a Grapejuice Bottle fills
+	# Default: 25
+	# Range: 1 ~ 1000
+	maxFluidPerJuice = 25
+	#Apple Press mashing time in ticks
+	# Default: 600
+	# Range: 1 ~ 1000
+	applePressMaxMashingProgress = 600
+	#Apple Press fermenting time in ticks
+	# Default: 800
+	# Range: 1 ~ 1000
+	applePressMaxFermentingProgress = 800
+	#Chance for cherries to grow
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	cherryGrowthChance = 0.4
+	#Chance for apples to grow
+	# Default: 0.4
+	# Range: 0.0 ~ 1.0
+	appleGrowthChance = 0.4
+	#Chance for grapes to grow
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	grapeGrowthChance = 0.5
+
+	[Items.Wine]
+		#Maximum level for wine
+		# Default: 5
+		# Range: 1 ~ 10
+		maxLevel = 5
+		#Start duration for wine in seconds
+		# Default: 1800
+		# Range: 1 ~ 100000
+		startDuration = 1800
+		#Duration per year in seconds
+		# Default: 200
+		# Range: 1 ~ 10000
+		durationPerYear = 200
+		#Days per year
+		# Default: 24
+		# Range: 1 ~ 100
+		daysPerYear = 24
+		#Years per effect level
+		# Default: 6
+		# Range: 1 ~ 100
+		yearsPerEffectLevel = 6
+		#Maximum duration in seconds
+		# Default: 15000
+		# Range: 1 ~ 100000
+		maxDuration = 15000
+
+	[Items.Banner]
+		#Set to false to disable the banner's effect.
+		giveEffect = true
+		#Set to false to hide the banner's tooltip. If giveEffect is false, showTooltip is automatically false.
+		showTooltip = true
+
+	[Items.Basket]
+		#List of item IDs that are blacklisted from being placed in the picnic basket. Format: 'modid:itemname'
+		basketBlacklist = ["vinery:basket"]
+
+	[Items.WanderingTrader]
+		#Chance for the custom trader to spawn. Range: 0.0 to 1.0
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		spawnChance = 0.5
+		#If true, the trader will spawn with mules.
+		spawnWithMules = true
+		#Spawn delay for the trader in ticks.
+		# Default: 48000
+		# Range: > 1
+		spawnDelay = 48000
+
+	[Items.VillagerTrades]
+		#List of trades for Level 1. Format: item|price|quantity|maxUses|isSelling
+		level1Trades = ["vinery:red_grape|5|4|5|false", "vinery:white_grape|5|4|5|false", "vinery:red_grape_seeds|2|1|1|true", "vinery:white_grape_seeds|2|1|1|true"]
+		#List of trades for Level 2. Format: item|price|quantity|maxUses|isSelling
+		level2Trades = ["vinery:wine_bottle|1|2|7|true"]
+		#List of trades for Level 3. Format: item|price|quantity|maxUses|isSelling
+		level3Trades = ["vinery:flower_box|3|1|10|true", "vinery:white_grape_bag|7|1|10|true", "vinery:red_grape_bag|7|1|10|true"]
+		#List of trades for Level 4. Format: item|price|quantity|maxUses|isSelling
+		level4Trades = ["vinery:basket|4|1|10|true", "vinery:flower_pot_big|5|1|10|true", "vinery:window|12|1|10|true", "vinery:dark_cherry_beam|6|1|10|true", "vinery:taiga_red_grape_seeds|2|1|5|true", "vinery:taiga_white_grape_seeds|2|1|5|true"]
+		#List of trades for Level 5. Format: item|price|quantity|maxUses|isSelling
+		level5Trades = ["vinery:wine_box|10|1|10|true", "vinery:lilitu_wine|4|1|10|true", "vinery:calendar|12|1|15|true"]
