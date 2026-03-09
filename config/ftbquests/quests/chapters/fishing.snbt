@@ -83,7 +83,7 @@
 		}
 		{
 			height: 1.0d
-			image: "starcatcher:item/frugal_bobber"
+			image: "starcatcher:item/steady_bobber"
 			rotation: 0.0d
 			width: 1.0d
 			x: 4.35d
@@ -217,12 +217,12 @@
 			tasks: [
 				{
 					id: "691E6AA922761E29"
-					item: { components: { "ftbfiltersystem:filter": "or(item(starcatcher:shiny_hook)item(starcatcher:gold_hook)item(starcatcher:mossy_hook)item(starcatcher:crystal_hook)item(starcatcher:stone_hook)item(starcatcher:split_hook)item(starcatcher:stabilizing_hook)item(starcatcher:heavy_hook))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "or(item(starcatcher:bobber)item(starcatcher:steady_bobber)item(starcatcher:clear_bobber)item(starcatcher:aqua_bobber)item(starcatcher:vanilla_bobber))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 				{
 					id: "7376AAE3B45AD4B9"
-					item: { components: { "ftbfiltersystem:filter": "or(item(starcatcher:creeper_bobber)item(starcatcher:glitter_bobber)item(starcatcher:colorful_bobber)item(starcatcher:frugal_bobber)item(starcatcher:steady_bobber)item(starcatcher:impatient_bobber)item(starcatcher:frog_bobber)item(starcatcher:kimbe_bobber)item(starcatcher:clear_bobber))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "or(item(starcatcher:hook)item(starcatcher:crystal_hook)item(starcatcher:shiny_hook)item(starcatcher:gold_hook)item(starcatcher:mossy_hook)item(starcatcher:stone_hook)item(starcatcher:split_hook)item(starcatcher:heavy_hook))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 			]
@@ -263,7 +263,7 @@
 			}]
 			tasks: [{
 				id: "7652C148D455797D"
-				item: { count: 1, id: "starcatcher:fish_spotter" }
+				item: { count: 1, id: "starcatcher:fish_radar" }
 				type: "item"
 			}]
 			x: 0.15d
@@ -284,7 +284,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "18DB91FAFFC46B5D"
-				item: { components: { "minecraft:item_name": "{\"translate\":\"Trophy of Pitiful Fishing\"}", "starcatcher:trophy": { all: { total: 10 }, custom_name: "Trophy of Pitiful Fishing", fish_properties: { fish: "starcatcher:trophy_bronze" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_bronze" }
+				item: { components: { "starcatcher:trophy": { all: { total: 50, unique: 20 }, always_show: 1b, fish_properties: { bait_restrictions: { consumes_bait: 1b, correct_bait_chance_added: 0, correct_baits: [ ] }, base_chance: 5, catch_info: { always_spawn_entity: 0b, entity: "starcatcher:fish", fish_bucket: "starcatcher:missingno", item: "starcatcher:trophy_bronze", treasure: "starcatcher:waterlogged_satchel" }, daytime: "all", difficulty: { decay: 1.0f, missPenalty: 5, modifiers: [ ], speed: 9, sweetspots: [ { color_as_int: 65280, hitbox_size_in_pixels: 22, is_flip: 0b, moving_rate: 0.0f, reward: 15, sweet_spot_type: "starcatcher:normal", texture_path: "starcatcher:textures/gui/minigame/spots/normal.png", vanishing_rate: 0.0f }, { color_as_int: 65280, hitbox_size_in_pixels: 22, is_flip: 0b, moving_rate: 0.0f, reward: 15, sweet_spot_type: "starcatcher:normal", texture_path: "starcatcher:textures/gui/minigame/spots/normal.png", vanishing_rate: 0.0f } ] }, has_guide_entry: 1b, rarity: "common", size_and_weight: { average_size_cm: 41.0f, average_weight_grams: 2001.0f, deviation_size_cm: 21.0f, deviation_weight_grams: 701.0f }, skips_minigame: 0b, weather: "all", world_restrictions: { above_y: -2147483648, below_y: 2147483647, biomes: [ ], biomes_blacklist: [ ], biomes_blacklist_tags: [ ], biomes_tags: [ ], dimensions: [ ], dimensions_blacklist: [ ], fluids: ["minecraft:water"], seasons: ["all"] } }, percentage_chance_to_catch: 100.0f, progress: { }, repeatable: 1b, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_bronze" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -307,7 +307,7 @@
 			size: 1.75d
 			tasks: [{
 				id: "285134647C8E9555"
-				item: { components: { "minecraft:item_name": "{\"translate\":\"Trophy of Skilled Fishing\"}", "starcatcher:trophy": { all: { total: 25 }, custom_name: "Trophy of Skilled Fishing", fish_properties: { fish: "starcatcher:trophy_silver" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_silver" }
+				item: { components: { "starcatcher:trophy": { all: { total: 100, unique: 50 }, always_show: 1b, fish_properties: { bait_restrictions: { consumes_bait: 1b, correct_bait_chance_added: 0, correct_baits: [ ] }, base_chance: 5, catch_info: { always_spawn_entity: 0b, entity: "starcatcher:fish", fish_bucket: "starcatcher:missingno", item: "starcatcher:trophy_silver", treasure: "starcatcher:waterlogged_satchel" }, daytime: "all", difficulty: { decay: 1.0f, missPenalty: 5, modifiers: [ ], speed: 9, sweetspots: [ { color_as_int: 65280, hitbox_size_in_pixels: 22, is_flip: 0b, moving_rate: 0.0f, reward: 15, sweet_spot_type: "starcatcher:normal", texture_path: "starcatcher:textures/gui/minigame/spots/normal.png", vanishing_rate: 0.0f }, { color_as_int: 65280, hitbox_size_in_pixels: 22, is_flip: 0b, moving_rate: 0.0f, reward: 15, sweet_spot_type: "starcatcher:normal", texture_path: "starcatcher:textures/gui/minigame/spots/normal.png", vanishing_rate: 0.0f } ] }, has_guide_entry: 1b, rarity: "common", size_and_weight: { average_size_cm: 41.0f, average_weight_grams: 2001.0f, deviation_size_cm: 21.0f, deviation_weight_grams: 701.0f }, skips_minigame: 0b, weather: "all", world_restrictions: { above_y: -2147483648, below_y: 2147483647, biomes: [ ], biomes_blacklist: [ ], biomes_blacklist_tags: [ ], biomes_tags: [ ], dimensions: [ ], dimensions_blacklist: [ ], fluids: ["minecraft:water"], seasons: ["all"] } }, percentage_chance_to_catch: 100.0f, progress: { }, repeatable: 1b, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_silver" }
 				match_components: "strict"
 				type: "item"
 			}]
@@ -330,112 +330,11 @@
 			size: 2.0d
 			tasks: [{
 				id: "2FA6F7811973B494"
-				item: { components: { "minecraft:item_name": "{\"translate\":\"Trophy of Masterful Fishing\"}", "starcatcher:trophy": { all: { total: 50 }, custom_name: "Trophy of Masterful Fishing", fish_properties: { fish: "starcatcher:trophy_gold" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_gold" }
+				item: { components: { "starcatcher:trophy": { all: { total: 200, unique: 0 }, always_show: 1b, fish_properties: { bait_restrictions: { consumes_bait: 1b, correct_bait_chance_added: 0, correct_baits: [ ] }, base_chance: 5, catch_info: { always_spawn_entity: 0b, entity: "starcatcher:fish", fish_bucket: "starcatcher:missingno", item: "starcatcher:trophy_gold", treasure: "starcatcher:waterlogged_satchel" }, daytime: "all", difficulty: { decay: 1.0f, missPenalty: 5, modifiers: [ ], speed: 9, sweetspots: [ { color_as_int: 65280, hitbox_size_in_pixels: 22, is_flip: 0b, moving_rate: 0.0f, reward: 15, sweet_spot_type: "starcatcher:normal", texture_path: "starcatcher:textures/gui/minigame/spots/normal.png", vanishing_rate: 0.0f }, { color_as_int: 65280, hitbox_size_in_pixels: 22, is_flip: 0b, moving_rate: 0.0f, reward: 15, sweet_spot_type: "starcatcher:normal", texture_path: "starcatcher:textures/gui/minigame/spots/normal.png", vanishing_rate: 0.0f } ] }, has_guide_entry: 1b, rarity: "common", size_and_weight: { average_size_cm: 41.0f, average_weight_grams: 2001.0f, deviation_size_cm: 21.0f, deviation_weight_grams: 701.0f }, skips_minigame: 0b, weather: "all", world_restrictions: { above_y: -2147483648, below_y: 2147483647, biomes: [ ], biomes_blacklist: [ ], biomes_blacklist_tags: [ ], biomes_tags: [ ], dimensions: [ ], dimensions_blacklist: [ ], fluids: ["minecraft:water"], seasons: ["all"] } }, percentage_chance_to_catch: 100.0f, progress: { common: { total: 0, unique: 44 }, epic: { total: 0, unique: 16 }, legendary: { total: 0, unique: 10 }, rare: { total: 0, unique: 15 }, uncommon: { total: 0, unique: 23 } }, repeatable: 1b, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_gold" }
 				match_components: "strict"
 				type: "item"
 			}]
 			x: 7.2250000000000005d
-			y: 5.0d
-		}
-		{
-			id: "621168DCC2A3B3F3"
-			rewards: [{
-				count: 8
-				id: "66AA927C5A39B0F3"
-				item: {
-					count: 1
-					id: "starcatcher:scalding_treasure"
-				}
-				type: "item"
-			}]
-			shape: "none"
-			size: 1.75d
-			tasks: [{
-				id: "6D9D40FE0D5B0F7F"
-				item: { components: { "minecraft:item_name": "{\"translate\":\"Trophy of Flowing Fishes\"}", "starcatcher:trophy": { all: { unique: 50 }, custom_name: "Trophy of Flowing Fishes", fish_properties: { fish: "starcatcher:trophy_silver" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_silver" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: -3.9375000000000004d
-			y: 2.0d
-		}
-		{
-			dependencies: ["621168DCC2A3B3F3"]
-			id: "4A25E60DD359F959"
-			rewards: [{
-				count: 8
-				id: "2979B34562CF7228"
-				item: {
-					count: 1
-					id: "starcatcher:treasure"
-				}
-				type: "item"
-			}]
-			shape: "none"
-			size: 1.75d
-			tasks: [{
-				id: "2FBB40299068EDBB"
-				item: { components: { "minecraft:item_name": "{\"translate\":\"Trophy of Infinite Fishes\"}", "starcatcher:trophy": { all: { unique: 90 }, custom_name: "Trophy of Infinite Fishes", fish_properties: { fish: "starcatcher:trophy_gold" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_gold" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: -3.9375000000000004d
-			y: 3.4d
-		}
-		{
-			dependencies: ["4A25E60DD359F959"]
-			icon: {
-				components: {
-					"minecraft:item_name": "\"Trophy of the Older Angler\""
-					"starcatcher:trophy": {
-						common: {
-							total: 100
-							unique: 50
-						}
-						custom_name: "Trophy of the Older Angler"
-						epic: {
-							total: 20
-							unique: 12
-						}
-						fish_properties: {
-							fish: "starcatcher:trophy_gold"
-						}
-						legendary: {
-							total: 10
-							unique: 8
-						}
-						rare: {
-							total: 30
-							unique: 17
-						}
-						trophy_type: "trophy"
-						uncommon: {
-							total: 50
-							unique: 25
-						}
-					}
-				}
-				id: "starcatcher:trophy_gold"
-			}
-			id: "287A6A75537FF79C"
-			rewards: [{
-				count: 64
-				id: "717881047D9EB828"
-				item: {
-					count: 1
-					id: "starcatcher:treasure"
-				}
-				type: "item"
-			}]
-			shape: "none"
-			size: 1.75d
-			tasks: [{
-				id: "12F508D7D48DFED3"
-				item: { components: { "minecraft:item_name": "{\"translate\":\"Trophy of the Older Angler\"}", "starcatcher:trophy": { all: { total: 200 }, common: { unique: 36 }, custom_name: "Trophy of the Older Angler", epic: { unique: 13 }, fish_properties: { fish: "starcatcher:trophy_gold" }, legendary: { unique: 8 }, rare: { unique: 14 }, trophy_type: "trophy", uncommon: { unique: 23 } } }, count: 1, id: "starcatcher:trophy_gold" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: -3.9375000000000004d
 			y: 5.0d
 		}
 	]
