@@ -13,4 +13,8 @@ ServerEvents.recipes(e => {
 
   e.smelting('modern_industrialization:silver_ingot', 'create:crushed_raw_silver');
   e.smelting('modern_industrialization:nickel_ingot', 'create:crushed_raw_nickel');
+  create.pressing()
+    .itemOut('modern_industrialization:tin_plate')
+    .itemIn('modern_industrialization:tin_ingot')
+    .id('craftoria:create/pressing/tin_ingot_to_tin_plate')
 });
