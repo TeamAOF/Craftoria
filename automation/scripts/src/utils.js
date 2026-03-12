@@ -1,32 +1,27 @@
 import { $ } from "bun";
-import fs from "node:fs/promises";
 import path from "node:path";
 
 /**
- * Writes text to a file.
- * Creates parent directories if they don't exist.
- * @param {string} filePath The path to the file.
- * @param {string} content The text content to write.
- * @param {boolean} [prepend=false] Whether to prepend to existing content (default: false).
+ * Writes text to a file, creating parent directories if needed.
+ * @param {string} filePath - The path to the file
+ * @param {string} content - The text content to write
+ * @param {boolean} [prepend=false] - Whether to prepend to existing content (default: false)
  */
 export async function writeTextToFile(filePath, content, prepend = false) {
-  const dir = path.dirname(filePath);
-  if (!(await fs.exists(dir))) {
-    await fs.mkdir(dir, { recursive: true });
-  }
+  await $`mkdir -p ${path.dirname(filePath)}`;
   const file = Bun.file(filePath);
 
-  if (prepend && (await file.exists())) {
-    file.write(`${content}\n${await file.text()}`);
+  if (prepend && await file.exists()) {
+    await file.write(`${content}\n${await file.text()}`);
   } else {
-    file.write(content);
+    await file.write(content);
   }
 }
 
 /**
  * Gets the commit hash of the latest version bump.
- * @param {string} [branchName="HEAD"] - Branch to search.
- * @returns {Promise<string>} The commit hash.
+ * @param {string} [branchName="HEAD"] - Branch to search
+ * @returns {Promise<string>} The commit hash
  */
 export async function getLatestBumpCommitHash(branchName = "HEAD") {
   const [latestTagCommitHash, tagRefs] = (
@@ -49,24 +44,18 @@ export async function getLatestBumpCommitHash(branchName = "HEAD") {
 }
 
 export async function getModInfo(projectId) {
-  try {
-    const response = await fetch(`https://api.curse.tools/v1/cf/mods/${projectId}`, {
-      redirect: "follow",
-      headers: {
-        Accept: "application/json",
-      },
-      signal: AbortSignal.timeout(1000000) // 10 second timeout
-    });
+  const response = await fetch(`https://api.curse.tools/v1/cf/mods/${projectId}`, {
+    redirect: "follow",
+    headers: { Accept: "application/json" },
+    signal: AbortSignal.timeout(10000) // 10 second timeout
+  });
 
-    if (response.status !== 200) {
-      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-    }
-
-    const { data } = await response.json();
-    return data;
-  } catch (error) {
-    throw new Error(`Failed to fetch mod info for project ${projectId}: ${error.message}`);
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
   }
+
+  const { data } = await response.json();
+  return data;
 }
 
 /** @param {string} str */
