@@ -1,3 +1,22 @@
+# Craftoria | v1.30.0
+
+_Neoforge_ 21.1.219 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.30.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.30.0.md)_
+
+### Changes/Improvements ⭐
+
+* Disable filled Mekanism tanks in creative/emi `Phantom`
+* Added Ender's Cataclysm trofers `JohnTrinca`
+
+### Added Mods ✅
+
+* [Revelationary](https://curseforge.com/projects/656526)
+* [Spectrum](https://curseforge.com/projects/556967)
+
+### Bug Fixes 🪲
+
+* Fixed cataclysm bosses destroying graves(again) `Phantom`
+* Add missing sign tags `exefer`
+---
 # Craftoria | v1.29.0
 
 _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.29.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.29.0.md)_
