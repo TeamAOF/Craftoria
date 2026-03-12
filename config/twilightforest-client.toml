@@ -30,3 +30,22 @@ auroraBiomes = ["twilightforest:glacier"]
 prettifyOreMeterGui = true
 #Makes Charms when triggered display like the Totem of Undying instead of our own effects.
 totemCharmAnimation = false
+#When this option is off, slow falling is the default. Holding the sneak key makes you fall at normal speed. When this option is on, normal falling is the default. Holding the sneak key activates slow falling.
+travellersWingsGradualGlide = true
+
+#Controls where various elements render when using the Item Display Modifier on Traveller's Gear.
+["Item Display Modifier Settings"]
+	#Defines the starting X offset for all display modifiers on the screen.
+	# Default: 4
+	# Range: > -2147483648
+	screenOffsetX = 4
+	#Defines the starting Y offset for all display modifiers on the screen.
+	# Default: 4
+	# Range: > -2147483648
+	screenOffsetY = 4
+	#Defines the scale of all display modifiers on the screen.
+	# Default: 1.0
+	# Range: 0.1 ~ 10.0
+	screenScale = 1.0
+	#If ON, the clock upgrade displays time in 24-hour format instead of 12-hour format.
+	twentyFourHourFormat = true

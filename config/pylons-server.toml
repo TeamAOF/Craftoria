@@ -4,18 +4,7 @@
 
 [expulsion_pylon]
 	#Which dimensions the Expulsion Pylon is allowed to operate in.
-	expulsionAllowedDimensions = [
-		"minecraft:overworld",
-		"minecraft:the_nether",
-		"minecraft:the_end",
-		"twilightforest:twilight_forest",
-		"eternal_starlight:starlight",
-		"javd:void",
-		"ae2:spatial_storage",
-		"jamd:end",
-		"jamd:mining",
-		"jamd:nether"
-		]
+	expulsionAllowedDimensions = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end", "twilightforest:twilight_forest", "eternal_starlight:starlight", "javd:void", "ae2:spatial_storage", "jamd:end", "jamd:mining", "jamd:nether"]
 	#The radius around the world spawn where the pylon is not allowed to operate.
 	#By default this uses the world spawn radius (/gamerule spawnRadius).
 	#This config will only take effect if it is larger than the world spawn radius.
@@ -53,11 +42,10 @@
 	#Effects that may be used in the Infusion Pylon.
 	#List may include either effect IDs (like `minecraft:strength`) or an entire namespace (like `minecraft`).
 	#If the list is empty, then all effects will be allowed except for those specifically denied.
-	infusionAllowedEffects = [
- 		"minecraft:glowing"
-	]
+	infusionAllowedEffects = ["minecraft:glowing"]
 	#Effects that may not be used in the Infusion Pylon.
 	#This list will override the allowed effect list.
+	#Effects may also be added to the pylons:infusion_banned tag.
 	infusionDeniedEffects = []
 	#The maximum potency that can be applied in the Infusion Pylon.
 	#This value is 0-indexed, so a Resistance V potion would be potency 4.

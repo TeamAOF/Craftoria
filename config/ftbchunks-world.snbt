@@ -91,18 +91,6 @@
 		# Valid values: "largest", "owner", "sum", "average"
 		party_limit_mode: "largest"
 	}
-	custom_behaviour: {
-		chunks_with_custom_y: [ ]
-		
-		# Custom minimum Y level to scan when rendering map, used if use_custom_min_y_level is true
-		# Default: -32768
-		# Range: -32768 ~ 32767
-		custom_min_y_level: -32768
-		
-		# Override minimum Y level used when rendering map
-		# Default: false
-		use_custom_min_y_level: false
-	}
 	dev: {
 		# Enable dev commands
 		# Default: false

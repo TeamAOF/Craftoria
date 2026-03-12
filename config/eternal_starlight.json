@@ -38,6 +38,13 @@
       "followRange": 16.0,
       "canSpawn": true
     },
+    "seeker": {
+      "maxHealth": 25.0,
+      "armor": 0.0,
+      "attackDamage": 3.0,
+      "followRange": 16.0,
+      "canSpawn": true
+    },
     "thirstWalker": {
       "maxHealth": 40.0,
       "armor": 0.0,
@@ -155,7 +162,8 @@
       "armor": 15.0,
       "attackDamage": 5.0,
       "followRange": 200.0,
-      "canSpawn": true
+      "canSpawn": true,
+      "canAlwaysHurtWhenFighting": false
     },
     "starlightGolem": {
       "maxHealth": 220.0,
@@ -209,6 +217,10 @@
     "crystalbornCatalyst": {
       "maxRange": 128,
       "energyPerShard": 50
+    },
+    "alloyFurnace": {
+      "totalOverheatTicks": 12000,
+      "explosionRadius": 3
     }
   }
 }

@@ -20,3 +20,5 @@ populateNeighborTable = false
 replacePropertyMap = true
 #Deduplicate vertex data of baked quads in the basic model implementations
 bakedQuadDeduplication = true
+#Save memory overhead from empty data component maps/patched
+dataComponentPatch = true

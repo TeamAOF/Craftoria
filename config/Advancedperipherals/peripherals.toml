@@ -24,6 +24,8 @@
 		# Default: 100
 		# Range: > 0
 		playerPosPreciseMaxRange = 100
+		#Returns a play in any function even when they are in spectator
+		showSpectators = true
 
 	[Peripherals.Energy_Detector]
 		#Enable the Energy Detector or not.

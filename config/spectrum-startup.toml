@@ -1,0 +1,169 @@
+#The duration in milliseconds ingame recipe/unlock popups stay on the screen
+toast_milliseconds = 7500
+#The reverb decay time for sound effects in Spectrum's dimension
+dimension_reverb_decay_time = 8.0
+#The reverb density for sound effects in Spectrum's dimension
+dimension_reverb_density = 0.5
+wind_sim = false
+#Affects how often the wind simulation updates - A lower number makes the simulation smoother, but increases the performance impact significantly
+wind_sim_interval = 3
+reduced_wind_particles = false
+#Post process shaders
+post_process_shaders = true
+#Light Blocks emit particles without holding a Radiance Staff
+always_spawn_light_block_particles = false
+#Items transported by a Pastel Network spawn particles
+pastel_network_particles = true
+#Adjusts the general brightness of the dimension (0 = default; 1 = darkening disabled
+dimension_brightness_mod = 0.0
+#Mod Integration Packs to not load (in case of mod compat errors). Put the mod id of the mod with integration pack conflict here
+integration_packs_to_skip_loading = []
+#Add some advanced tooltips to items, like if Sculk Shriekers are able to summon the Warden
+add_item_tooltips = true
+#The vanilla anvil caps enchantment levels at the max level for the enchantment
+#So enchanted books that exceed the enchantments natural max level get capped
+#If true the bedrock anvil will not cap the enchantments level to it's natural max level
+bedrock_anvil_can_exceed_max_vanilla_enchantment_level = false
+#The chance that an Enderman is holding a special treasure block on spawn
+#Separate value for Endermen spawning in the end, since there are LOTS of them there
+#Those blocks do not gate progression, so it is not that drastic not finding any right away.
+#Better to let players stumble about them organically instead of forcing it.
+enderman_holding_treasure_chance = 0.1
+enderman_holding_treasure_chance_in_end = 0.0075
+#Dimensions where shooting stars spawn for players. Shooting Stars will only spawn for players with sufficient progress in the mod
+shooting_star_dimensions = ["minecraft:overworld", "starry_skies:overworld", "paradise_lost:paradise_lost"]
+#Shooting star spawns are checked every night between time 13000 and 22000, every 100 ticks (so 100 chances per night).
+#By default, there is a 0.0075 ^= 0.75 % chance at each of those check times. Making it ~1 shooting star spawn
+#per night per player that unlocked the required progression.
+shooting_star_spawn_chance = 0.0075
+#Dimensions where lightning strikes can spawn Storm Stones
+storm_stone_dimensions = ["minecraft:overworld", "starry_skies:overworld", "paradise_lost:paradise_lost"]
+#Chance for a lightning strike to spawn a Storm Stone
+storm_stone_spawn_chance = 0.4
+#The time in ticks it takes a Pigment Pedestal to craft a vanilla Crafting Table recipe without upgrades
+#Setting this to <=0 will make the Pedestal not able to be used for crafting Crafting Table recipes.
+#
+vanilla_recipe_crafting_time_tioks = 40
+#How much an item gets repaired when crafting it with Moonstruck Nectar
+repair_anything_recipe_repair_percentage = 0.33
+#How fast decay will be spreading on random tick
+#can be used to slow down propagation speed of decay in the worlds
+#decay does use very few resources, but if your fear of someone letting decay
+#spread free or using higher random tick rates than vanilla you can limit the spreading rate here
+#
+#Fading and Failing do no real harm to the world. If you turn up these values too high players
+#may lack the feedback they need that what they are doing is correct
+#
+#1.0: Every random tick (default)
+#0.5: Every second random tick
+#0.0: Never (forbidden - players would be unable to progress)
+fading_spread_chance_on_random_tick = 1.0
+failing_spread_chance_on_random_tick = 1.0
+ruin_spread_chance_on_random_tick = 1.0
+forfeiture_spread_chance_on_random_tick = 1.0
+#Whether bottles can be used to pick up decay. Default is true.
+can_bottle_up_fading = true
+can_bottle_up_failing = true
+can_bottle_up_ruin = true
+can_bottle_up_forfeiture = true
+#Whether decay can take over block entities. Defaults to false.
+fading_can_destroy_block_entities = false
+failing_can_destroy_block_entities = false
+ruin_can_destroy_block_entities = false
+forfeiture_can_destroy_block_entities = true
+#When a player places decay, add an entry to the server log
+log_placing_of_decay = true
+#Allow End Portals to be aligned in any shape, not only 3x3
+allow_dynamic_end_portal_shape = true
+#The audio volume for Spectrums crafting blocks. Set to 0.0 to turn those sounds off completely.
+block_sound_volume = 0.5
+#The volume for audio that plays when close to certain ores
+ore_aura_sound_volume = 0.5
+#When empty, enchantments that the player has not unlocked show up with a scattered name. You can use a different name here
+name_for_unrevealed_enchantments = ""
+#Exuberance increases experience gained when killing mobs. With 25% bonus XP and 5 levels this would mean 2,25x XP on max level
+exuberance_bonus_experience_percent_per_level = 0.25
+#In vanilla, crits are a flat 50 % damage bonus. Improved Critical increases this damage by additional 50 % per level by default
+improved_critical_extra_damage_multiplier_per_level = 0.5
+#Flat additional damage dealt with each level of the First Strike enchantment
+first_strike_damage_per_level = 2.0
+#The percentile a mobs armor/hand stacks are being dropped when hit with a Disarming enchanted weapon per the enchantments level
+disarming_chance_per_level_mobs = 0.01
+#If > 0 the Disarming Enchantment is able to remove armor and hand tools from a hit player. Should be a far smaller chance than for mobs
+disarming_chance_per_level_players = 0.001
+#Experience dropped my mined infested blocks is multiplied by this value
+pest_control_experience_multiplier = 2.0
+#The duration a glow ink sac gives night vision when wearing a glow vision helmet in seconds
+glow_vision_goggles_duration = 240
+#If the Omni Accelerator should be able to have interactions in PvP that can drain the targets XP, modify their equipment, ... (configured via the requires_omni_accelerator_pvp_enabled item tag)
+omni_accelerator_pvp = false
+gemstone_armor_helmet_protection = 3
+gemstone_armor_chestplate_protection = 7
+gemstone_armor_leggings_protection = 5
+gemstone_armor_boots_protection = 4
+gemstone_armor_toughness = 0.0
+gemstone_armor_knockback_resistance = 0.0
+gemstone_armor_weakness_amplifier = 1
+gemstone_armor_slowness_amplifier = 1
+gemstone_armor_absorption_amplifier = 0
+gemstone_armor_resistance_amplifier = 0
+gemstone_armor_regeneration_amplifier = 0
+gemstone_armor_speed_amplifier = 1
+bedrock_armor_helmet_protection = 5
+bedrock_armor_leggings_protection = 9
+bedrock_armor_chestplate_protection = 12
+bedrock_armor_boots_protection = 5
+bedrock_armor_toughness = 3.0
+bedrock_armor_knockback_resistance = 0.3
+#Tool Material Stats
+low_health_durability = 16
+low_health_mining_speed = 4.0
+low_health_attack_damage = 2.0
+low_health_enchantability = 10
+voiding_durability = 1143
+voiding_mining_speed = 20.0
+voiding_attack_damage = 1.0
+voiding_enchantability = 5
+bedrock_mining_speed = 15.0
+bedrock_attack_damage = 5.0
+bedrock_enchantability = 3
+draconic_durability = 10000
+draconic_mining_speed = 11.5
+draconic_attack_damage = 7.0
+draconic_enchantability = 1
+malachite_durability = 1536
+malachite_mining_speed = 14.0
+malachite_attack_damage = 5.0
+malachite_enchantability = 20
+glass_crest_durability = 6144
+glass_crest_mining_speed = 18.0
+glass_crest_attack_damage = 10.0
+glass_crest_enchantability = 5
+verdigris_durability = 1536
+verdigris_mining_speed = 7.0
+verdigris_attack_damage = 2.5
+verdigris_enchantability = 14
+nectar_durability = 6144
+nectar_mining_speed = 9.5
+nectar_attack_damage = 9.0
+nectar_enchantability = 30
+dreamflayer_durability = 650
+dreamflayer_mining_speed = 5.0
+dreamflayer_attack_damage = 2.0
+dreamflayer_enchantability = 20
+nightfall_durability = 650
+nightfall_mining_speed = 2.0
+nightfall_attack_damage = 1.0
+nightfall_enchantability = 0
+max_level_for_effects_in_lesser_potion_pendant = 3
+max_level_for_effects_in_greater_potion_pendant = 1
+#True will prevent the spread of Decay blocks in claims.
+#Only enable when necessary and communicate to your players that those blocks will not work in their claims.
+#If any player comes to the Spectrum devs claiming that decay does not spread for them, and therefore they could not progress
+#You will get put on the 'bad pack devs' list and this config setting removed again
+#
+decay_is_stopped_by_supported_claim_mods = false
+#By Default, Roughly Enough Items will show a 'recipe not unlocked yet' screen for not yet unlocked recipes.
+#Setting this value to false will instead not show this screen, showing no recipes whatsoever, until unlocked
+#
+rei_lists_unrevealed_recipes_as_not_unlocked = true

@@ -3,7 +3,7 @@
 	enable_dungeon_loot = true
 	#Efficiency of fuel buckets as furnace fuel (default 0.05 means 1 bucket of LPG smelts 450 items in a vanilla furnace)
 	# Default: 0.05
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	fuel_bucket_efficiency = 0.05
 	#Maximum number of blocks in the area defined in an Area Programming Puzzle Piece
 	# Default: 250000
@@ -25,11 +25,11 @@
 	bandage_use_time = 40
 	#Health points restored on bandage use (1 health = half a heart).
 	# Default: 6.0
-	# Range: 1.0 ~ 1.7976931348623157E308
+	# Range: 1.0 ~ Infinity
 	bandage_health_restored = 6.0
 	#Damage inflicted by stepping on a Plastic Construction Brick™ without any protection
 	# Default: 3.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	plastic_brick_damage = 3.0
 	#Show tank fluids with the The One Probe when sneaking? Note that TOP has its own support for showing tanks, which by default requires a Probe to be held, or a Probe-enabled helmet to be worn.
 	top_shows_fluids = false
@@ -39,13 +39,15 @@
 	oil_world_gen_dimension_whitelist = []
 	#Oil worldgen blacklist by dimension ID: add dimension ID's to this list if you don't want oil lake worldgen to happen there. You can wildcard this; e.g 'modid:*' blacklists ALL dimensions of namespace 'modid'.
 	oil_world_gen_dimension_blacklist = []
+	#If true, oil lakes will not generate within the bounds of any structure. If false, the structure tag 'pneumaticcraft:no_oil_lakes' is used to define which structures should not have oil lakes in them
+	no_oil_lakes_in_structures = true
 
 [machines]
 	#Aerial Interface backwards compat: allow pre-0.8.0 behaviour of getting player's armor inventory from top face, even with Dispenser Upgrade installed
 	aerial_interface_armor_compat = true
 	#Chance per tick of Crop Supports causing a growth tick. The default, 0.002, is roughly 2.5 times faster than the vanilla growth rate
 	# Default: 0.002
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	crop_sticks_growth_boost_chance = 0.002
 	#Changing this value will alter the pressurized air production of the Electric Compressor. The input, EU, will stay the same
 	# Default: 40
@@ -65,13 +67,13 @@
 	flux_compressor_efficiency = 40
 	#The amount to multiply the air production of the solar compressor by.
 	# Default: 1.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	solar_compressor_multiplier = 1.0
 	#Can the Kerosene Lamp burn any kind of fuel?  If false, only Kerosene can be burnt
 	kerosene_lamp_can_use_any_fuel = true
 	#Kerosene Lamp fuel efficiency: higher values mean fuel will last longer in the lamp
 	# Default: 1.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	kerosene_lamp_fuel_efficiency = 1.0
 	#The amount of air produced by using 100 MJ (Minecraft Joules) in the flux compressor
 	# Default: 40
@@ -167,7 +169,7 @@
 	scuba_min_air_usage_increase_depth = 0
 	#Extra air usage (on top of 'scuba_multiplier') per block below the threshold depth (see 'scuba_min_air_usage_increase_depth')
 	# Default: 0.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	scuba_air_usage_per_block_depth = 0.0
 	#Jetboots height limit before cutting out, relative to world max build height
 	# Default: 64
@@ -187,7 +189,7 @@
 [micromissiles]
 	#Base explosion damage (modified by missile setup)
 	# Default: 1.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	base_explosion_damage = 1.0
 	#Do micromissile explosions cause terrain damage? Note: when set to true, the 'tntExplosionDropDecay' gamerule is used to determine block drops.
 	damage_terrain = false
@@ -213,7 +215,7 @@
 [minigun]
 	#Armor Piercing Ammo damage multiplier (relative to standard ammo)
 	# Default: 1.25
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	ap_ammo_damage_multiplier = 1.25
 	#Armor Piercing Ammo percentage chance to ignore target's armor
 	# Default: 100
@@ -225,7 +227,7 @@
 	armor_piercing_ammo_cartridge_size = 500
 	#Base bullet damage of the Sentry Gun, Handheld Minigun, and Drone Minigun, before ammo bonuses are considered
 	# Default: 6.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	base_damage = 6.0
 	#Base range of Minigun, before Range Upgrades are considered
 	# Default: 50
@@ -237,7 +239,7 @@
 	explosive_ammo_cartridge_size = 250
 	#Minigun Explosive Ammo damage multiplier (relative to standard ammo)
 	# Default: 0.2
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	explosive_ammo_damage_multiplier = 0.2
 	#Explosive Ammo base percentage chance to cause an explosion
 	# Default: 50
@@ -245,7 +247,7 @@
 	explosive_ammo_explosion_chance = 50
 	#Minigun Explosive Ammo explosion power (ref: 2 = creeper, 4 = TNT
 	# Default: 1.5
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	explosive_ammo_explosion_power = 1.5
 	#Does Minigun Explosive Ammo damage terrain?
 	explosive_ammo_terrain_damage = false
@@ -287,7 +289,7 @@
 	standard_ammo_cartridge_size = 2000
 	#Weighted Ammo air usage multiplier (relative to standard ammo)
 	# Default: 8.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	weighted_ammo_air_usage_multiplier = 8.0
 	#Weighted Ammo cartridge size
 	# Default: 500
@@ -295,11 +297,11 @@
 	weighted_ammo_cartridge_size = 500
 	#Weighted Ammo damage multiplier (relative to standard ammo)
 	# Default: 2.5
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	weighted_ammo_damage_multiplier = 2.5
 	#Weighted Ammo range multiplier (relative to standard ammo)
 	# Default: 0.2
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	weighted_ammo_range_multiplier = 0.2
 	#Show particles when a block is hit by minigun fire? Looks good, but consumes some network bandwidth.
 	block_hit_particles = true
@@ -311,7 +313,7 @@
 [integration]
 	#Immersive Engineering: External Heater heat/FE.  The amount of PneumaticCraft heat added by using 1 FE in the heater.
 	# Default: 0.01
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	ie_external_heater_heat_per_fe = 0.01
 	#Immersive Engineering: External Heater FE/t. Set to 0 to disable External Heater integration entirely.
 	# Default: 100
@@ -319,12 +321,24 @@
 	ie_external_heater_fe_per_tick = 100
 	#Mekanism thermal resistance multiplier. Larger values mean slower heat transfer between Mekanism and PneumaticCraft blocks.
 	# Default: 5.0
-	# Range: 1.0 ~ 1.7976931348623157E308
+	# Range: 1.0 ~ Infinity
 	mek_thermal_resistance_factor = 5.0
 	#Mekanism <-> PneumaticCraft heat conversion efficiency. Set to 0 to disable Mekanism heat integration entirely. Note that Mekanism and PNC use a similar heat system, but scale things quite differently (Mekanism heaters produces a LOT of heat by PneumaticCraft standards), so conversion efficiency tuning is important for inter-mod balance.
 	# Default: 0.01
 	# Range: 0.0 ~ 2.0
 	mek_thermal_conversion_efficiency = 0.01
+	#Floor value for the cooling effect of cold heat-handling blocks. Lower this to make the effect of very cold blocks more pronounced.
+	# Default: -2.0
+	# Range: -Infinity ~ 0.0
+	cold_sweat_block_cooling = -2.0
+	#Ceiling value for the heating effect of hot heat-handling blocks. Raise this to make the effect of very hot blocks more pronounced.
+	# Default: 2.0
+	# Range: 0.0 ~ Infinity
+	cold_sweat_block_heating = 2.0
+	#How efficient is the Air Conditioning upgrade in the PNC Armor?
+	# Default: 1.0
+	# Range: 0.01 ~ 10.0
+	cold_sweat_air_con_efficiency = 1.0
 
 [recipes]
 	#Does Molten Plastic solidify to Plastic Sheets when poured into the world? If set to false, then Heat Frame cooling is the only other way to make Plastic Sheets (by default).
@@ -363,15 +377,15 @@
 [heat]
 	#Default thermal resistance for solid blocks
 	# Default: 500.0
-	# Range: 4.9E-324 ~ 1.7976931348623157E308
+	# Range: -Infinity ~ Infinity
 	block_thermal_resistance = 500.0
 	#Default thermal resistance for fluid blocks
 	# Default: 100.0
-	# Range: 4.9E-324 ~ 1.7976931348623157E308
+	# Range: -Infinity ~ Infinity
 	fluid_thermal_resistance = 100.0
 	#Thermal resistance of air; controls how fast blocks lose heat to air when exposed
 	# Default: 100.0
-	# Range: 1.0 ~ 1.7976931348623157E308
+	# Range: 1.0 ~ Infinity
 	air_thermal_resistance = 100.0
 	#Default heat capacity for fluid blocks
 	# Default: 10000
@@ -391,11 +405,11 @@
 [logistics]
 	#Logistics Module air usage per item per block distance
 	# Default: 1.0
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	item_transport_cost = 1.0
 	#Logistics Module air usage per mB of fluid per block distance
 	# Default: 0.02
-	# Range: 0.0 ~ 1.7976931348623157E308
+	# Range: 0.0 ~ Infinity
 	fluid_transport_cost = 0.02
 	#Minimum pressure for a Logistics Module to function
 	# Default: 3.0

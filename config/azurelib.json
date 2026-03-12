@@ -1,3 +1,37 @@
 {
-  "useVanillaUseKey": true
+  "bool": true,
+  "number": 15,
+  "longNumber": 16644564564561651,
+  "floatNumber": 151.3123,
+  "doubleNumber": 316.15646556,
+  "string": "random text",
+  "color": "#33AADD",
+  "color2": "#66771166",
+  "boolArray": [
+    false,
+    false,
+    true,
+    false
+  ],
+  "intArray": [
+    153,
+    123,
+    54
+  ],
+  "longArray": [
+    13,
+    56,
+    133
+  ],
+  "floatArray": [
+    500.0,
+    1561.23
+  ],
+  "stringArray": [
+    "minecraft:test"
+  ],
+  "testEnum": "C",
+  "nestedTest": {
+    "testInt": 13
+  }
 }

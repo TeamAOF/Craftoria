@@ -1,2 +1,6 @@
 #Defines whether or not mana steal should drain the mana of the target entity. Default is true
 "Mana Steal drains mana" = true
+#Defines the minimum refinement ratio for a domain to automatically overwhelm another domain in a clash. Default is 1.5, must be above 1.
+"Refinement victory factor" = 1.5
+#Whether or not dev mode should be active - this means all loggers will be visible. Default is false
+"Enable Dev mode" = false

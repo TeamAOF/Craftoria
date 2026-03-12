@@ -81,6 +81,11 @@
 	# Default: 0
 	# Range: 0 ~ 100
 	direct_capture_delay_frames = 0
+	#Sets the game to 'panoramic mode' when capturing the image with background capture method (default).
+	#Enabling this might fix some graphical issues, such as water being invisible.
+	#If captured images are still not looking properly - enable 'force_direct_capture'.
+	#Default: false
+	background_capture_use_panoramic_mode = false
 
 [render]
 	#Makes photos in Photograph Frame render with alignment to 16 pixel grid (like paintings). Just for fun. Default: false

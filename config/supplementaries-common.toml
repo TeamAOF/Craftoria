@@ -75,6 +75,7 @@
 		shuffle_containers = true
 
 	[redstone.pulley_block]
+		#Pulleys are automatically disabled if 'rope' feature is disabled
 		enabled = true
 		#Chance for a new mineshaft elevator piece to spawn
 		# Default: 0.035
@@ -107,13 +108,15 @@
 		block_side_attachment = true
 		#Makes sliding down ropes as fast as free falling, still negating fall damage
 		slide_on_fall = true
-		#In case you want to disable supplementaries ropes you can specify here another mod rope and they will be used for rope arrows and in mineshafts instead
-		rope_override = "supplementaries:rope"
 		#Enables horizontal placement of ropes. Disabling will make ropes always non solid
 		horizontal_ropes = true
 		#Use this config to turn allow supplementaries to replace all items tagged as #supplementaries:ropes with supplementaries own rope or turn them to air instead. This is applied to all loot tables (chests and drops)
 		#Allowed Values: REPLACE, NONE, REMOVE
 		replace_in_loot_tables = "NONE"
+		#Also internally disables Galleons, Pulleys, Buntings, Rope arrows and rope mineshaft.
+		#Also disables compat blocks such as supplementaries Farmers Delight rope tomatoes and Decorative blocks rope chandeliers.
+		#Also reminder that you can disable any item from any mod with a recipe (datapack) + JEI hide
+		enabled = true
 
 	[functional.jar]
 		enabled = true
@@ -193,10 +196,12 @@
 
 	[functional.soap]
 		enabled = true
-		#Dyed Bock types that cannot be cleaned with soap
+		#Dyed Bock/Item types that cannot be cleaned with soap
 		clean_blacklist = ["minecraft:glazed_terracotta", "botania:mystical_flower", "mna:chimerite_crystal", "botania:floating_flower", ",minecraft:mushroom", "botania:mushroom", "botania:tall_mystical_flower", "botania:petal_block", "morered:network_cable", "xycraft_world:glowing_shiny_aurey_block", "xycraft_world:shiny_aurey_block", "xycraft_world:rgb_lamp", "xycraft_world:glowing_rgb_viewer", "xycraft_world:glowing_matte_rgb_block", "xycraft_world:rgb_lamp_pole"]
+		#Allows soap to clean blocks in-world. Disable to prevent in-world block cleaning while keeping soap item and recipes functional
+		block_cleaning_enabled = true
 
-		#This is a map of special blocks that can be cleaned with soap
+		#This is a map of special blocks that can be cleaned with soap. For items you will also need to add a recipe
 		[functional.soap.special_blocks]
 			"quark:dirty_glass" = "minecraft:glass"
 			"minecraft:sticky_piston" = "minecraft:piston"
@@ -279,9 +284,8 @@
 	stone_lamp = true
 	stone_tile = true
 	blackstone_tile = true
+	#Buntings are automatically disabled if 'rope' feature is disabled
 	bunting = true
-	sconce = true
-	sconce_lever = true
 	pancake = true
 	checker_block = true
 	raked_gravel = true
@@ -293,6 +297,10 @@
 	fire_pit = true
 	wicker_fence = true
 	fine_wood = true
+
+	[building.sconce]
+		enabled = true
+		sconce_lever = true
 
 	[building.blackboard]
 		enabled = true
@@ -525,6 +533,7 @@
 		bypass_when_on = "MAIN_HAND"
 
 	[tools.rope_arrow]
+		#Rope arrows are automatically disabled if 'rope' feature is disabled
 		enabled = true
 		#Max number of rope items allowed to be stored inside a rope arrow
 		# Default: 32
@@ -625,10 +634,6 @@
 #Vanilla tweaks
 [tweaks]
 
-	[tweaks.shulker_helmet]
-		#Allows wearing shulker shells
-		enabled = true
-
 	[tweaks.golden_apple_disenchant]
 		enabled = true
 
@@ -686,14 +691,6 @@
 		#Shows a death marker on your map when you die. Requires a recovery compass in player inventory or similar
 		#Allowed Values: OFF, WITH_COMPASS, ALWAYS
 		death_marker = "WITH_COMPASS"
-		#If Quark is installed adventurer maps will be replaced by adventurer quills. These will not lag the server when generating
-		quill_adventurer_maps = true
-		#If Quark is installed replaces buried treasure and mansion maps with their equivalent quill form. This removes the lag spike they create when generating
-		quill_vanilla_maps = true
-		#Miminum search radius for quill. Used to incrase the radius of vanilla searches. For reference buried treasures are at 50 and locate is at 100 chunks
-		# Default: 75
-		# Range: 10 ~ 600
-		min_search_radius = 75
 		#Makes blocks tagged as 'tinted_on_map' use their tint color. This allows for accurate biome colors for water and grass as well as other custom block that use any tint
 		tinted_blocks_on_maps = true
 
@@ -771,6 +768,8 @@
 		clock_right_click = true
 		#Allow to right click with a compass to display current coordinates in numerical form
 		compass_right_click = false
+		#Allow these features to work in dimensions like nether or end where normally clocks don't work
+		works_in_unnatural_dimensions = false
 
 	[tweaks.ai_tweaks]
 		#Allows pillagers to use cannon boats. Add more entities to the 'supplementaries:can_use_cannon_boat' tag to allow them to use cannon boats as well

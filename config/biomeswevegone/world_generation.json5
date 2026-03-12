@@ -57,9 +57,9 @@
 	},
 	// How much each BWG region weighs. This weight applies to all 3 BWG Regions
 	"region_weight": 8,
-	// Whether to add bwg flowers and features to Vanilla Biomes (Config Option for Fabric Only)
+	// Whether to add BWG flowers and features to Vanilla Biomes (Config Option for Fabric and NeoForge. No Option available for Forge, These will be enabled, and you will need to make a Datapack to disable them.)
 	"vanilla_additions": true,
-	// BWG Features that we add to Vanilla Biomes
+	// BWG Features that we add to Vanilla Biomes (Fine Grained Feature Selection only available for Fabric, and Only work if above config option is true)
 	"enabled_vanilla_additions": {
 		"biomeswevegone:vanilla/forest_flowers": true,
 		"biomeswevegone:vanilla/flower_warm": true,

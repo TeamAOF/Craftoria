@@ -16,6 +16,21 @@ farmer_fertilizer_max_random_ticks = 80
 # Default: 32
 # Range: > 1
 tesla_coil_range = 32
+#The maximum size tier allowed for the Processing Array.
+#WARNING: Changing this and then loading a world with a Processing Array that has a selected tier beyond this value
+#         will crash. If you must change this for an existing world, I recommend downgrading all of the existing
+#         Processing Arrays and then making the change to this config option.
+#1 = 8, 2 = 16, 3 = 32, 4 = 64 (default)
+#Default: 4
+# Default: 4
+# Range: 1 ~ 4
+processing_array_max_size = 4
+#The multiplier applied to the transfer rate of machine chainers. The base transfer rate is equal to the max transfer rate of the cable tier of the chainer (as per the hull).
+#Set to 0 for infinite transfer.
+#Default: 3
+# Default: 3
+# Range: 0 ~ 1000
+machine_chainer_max_transfer_multiplier = 3
 
 [batching_machines]
 	#The maximum batch size to use for the Large Steam Macerator

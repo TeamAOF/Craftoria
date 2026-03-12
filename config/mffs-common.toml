@@ -49,3 +49,11 @@
 	# Default: 200
 	# Range: > 1
 	fortronPerTickSpeedModule = 200
+
+[force_field]
+	#Prevent authorized players from taking damage when passing through force fields
+	disableForceFieldDamageForAuthorizedPlayers = false
+	#Remove confusion and slowness effects for authorized players passing through force fields
+	disableForceFieldEffectsForAuthorizedPlayers = false
+	#Allow authorized players to walk through force fields without sneaking. WARNING: May cause occasional clipping issues on horizontal platforms.
+	allowWalkThroughForceFields = false
