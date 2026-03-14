@@ -20,6 +20,7 @@ automation/secrets.ps1
 automation/exports
 
 /packwiz/*.zip
+/packwiz/mods/mods
 *.disabled
 
 !/config
@@ -29,6 +30,11 @@ automation/exports
 !/config/fancymenu
 !/config/ftbquests
 !/defaultconfigs
+
+# Using Quests Lang Splitter
+/packwiz/config/ftbquests/quests/lang/*.snbt
+/packwiz/config/ftbquests/quests/lang/recovery/*.snbt
+/packwiz/config/ftbquests/quests/lang/**/*.snbt_merged
 
 # System Files / Misc.
 # ---
