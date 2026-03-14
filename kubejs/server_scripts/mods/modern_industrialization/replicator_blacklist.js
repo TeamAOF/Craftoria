@@ -1,6 +1,6 @@
 ServerEvents.tags('item', e => {
   /**
-   * Blacklist for both Replicator Mk I and Mk II.
+   * Blacklist for both Replicators.
    * @type {$Ingredient_[]}
    */
   const replicatorBlacklist = [
@@ -15,7 +15,7 @@ ServerEvents.tags('item', e => {
 
     /^modern_industrialization:quantum_.*/,
     'modern_industrialization:replicator',
-    'modern_industrialization:replicator_1',
+    'modern_industrialization:replicator_prototype',
     'modern_industrialization:helium_plasma_bucket',
     'modern_industrialization:uu_matter_bucket',
     'modern_industrialization:singularity',
@@ -47,7 +47,7 @@ ServerEvents.tags('item', e => {
   ];
 
   /**
-   * Exclusions for both Replicator Mk I and Mk II.
+   * Exclusions for both Replicators
    * Mostly used to remove items from the blacklist that were added via regex/tags.
    * @type {$Ingredient_[]}
    */
@@ -58,10 +58,10 @@ ServerEvents.tags('item', e => {
   ];
 
   /**
-   * Blacklist for Replicator Mk II.
+   * Blacklist for Replicator (real).
    * @type {$Ingredient_[]}
    */
-  const replicator_2_blacklist = [
+  const replicator_blacklist = [
     /storage_cell/,
     /fe_.*_cell/,
     /portable_.*_cell/,
@@ -143,13 +143,13 @@ ServerEvents.tags('item', e => {
   ].concat(replicatorBlacklist);
 
   /**
-   * Blacklist for Replicator Mk I.
+   * Blacklist for Replicator Prototype.
    * @type {$Ingredient_[]}
    */
-  const replicator_1_blacklist = [
+  const replicator_prototype_blacklist = [
     /_bucket$/,
 
-    // These make no sense to replicate, as they rely on having NBT data, which Replicator Mk I doesn't support, and I don't want to risk them causing issues.
+    // These make no sense to replicate, as they rely on having NBT data, which Replicator Prototype doesn't support, and I don't want to risk them causing issues.
     /^(tank|bank)storage:(tank|bank)_link$/,
     /^(minecraft|reliquary):((splash|lingering)_)?potion$/,
     /^(minecraft|reliquary):tipped_arrow$/,
@@ -167,7 +167,7 @@ ServerEvents.tags('item', e => {
   ].concat(replicatorBlacklist);
 
   /** @type {$Ingredient_[]} */
-  const replicator_2_exclusions = [
+  const replicator_exclusions = [
     /^mekanism:dynamic_(tank|valve)/,
     'mekanism:scuba_tank',
     /_radioactive_waste_barrel$/,
@@ -177,8 +177,8 @@ ServerEvents.tags('item', e => {
   ].concat(replicatorExclusions);
 
   /** @type {$Ingredient_[]} */
-  const replicator_1_exclusions = ['extendedae:void_cell'].concat(replicatorExclusions);
+  const replicator_prototype_exclusions = ['extendedae:void_cell'].concat(replicatorExclusions);
 
-  e.add('modern_industrialization:replicator_blacklist', replicator_2_blacklist).remove(replicator_2_exclusions);
-  e.add('craftoria:replicator_1_blacklist', replicator_1_blacklist).remove(replicator_1_exclusions);
+  e.add('modern_industrialization:replicator_blacklist', replicator_blacklist).remove(replicator_exclusions);
+  e.add('craftoria:replicator_prototype_blacklist', replicator_prototype_blacklist).remove(replicator_prototype_exclusions);
 });

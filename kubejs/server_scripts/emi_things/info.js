@@ -17,17 +17,6 @@ RecipeViewerEvents.addInformation('fluid', e => {
 RecipeViewerEvents.addInformation('item', e => {
   /** @type {Record<Special.Item, string[]>} */
   const entries = {
-    'cursedearth:cursed_earth': [
-      'info.cursedearth.cursed_earth.line1',
-      'info.cursedearth.cursed_earth.line2',
-      'info.cursedearth.cursed_earth.line3',
-      'info.cursedearth.cursed_earth.line4',
-    ],
-    'cursedearth:blessed_earth': [
-      'info.cursedearth.blessed_earth.line1',
-      'info.cursedearth.blessed_earth.line2',
-      'info.cursedearth.blessed_earth.line3',
-    ],
     'tesseract:tesseract': [
       'info.tesseract.tesseract.line1',
       'info.tesseract.tesseract.line2',

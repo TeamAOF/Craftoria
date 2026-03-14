@@ -1,5 +1,5 @@
 ServerEvents.recipes(e => {
-  const { assembler, blast_furnace, vacuum_freezer, heat_exchanger, replicator_1, implosion_compressor } =
+  const { assembler, blast_furnace, vacuum_freezer, heat_exchanger, replicator_prototype, implosion_compressor } =
     e.recipes.modern_industrialization;
 
   assembler(1024 * 32, 20 * 60)
@@ -75,12 +75,12 @@ ServerEvents.recipes(e => {
     .fluidOut('90x craftoria:molten_iridium')
     .id('craftoria:end_game/molten_iridium');
 
-  Ingredient.all.except('#craftoria:replicator_1_blacklist').stacks.forEach(item => {
-    replicator_1(8192, 20).itemOut(item.id).itemIn(item.id, 0).fluidIn('1000x modern_industrialization:uu_matter');
+  Ingredient.all.except('#craftoria:replicator_prototype_blacklist').stacks.forEach(item => {
+    replicator_prototype(8192, 20).itemOut(item.id).itemIn(item.id, 0).fluidIn('1000x modern_industrialization:uu_matter');
   });
-  replicator_1(8192 * 128, 20 * 60 * 5)
-    .itemOut('modern_industrialization:replicator_1')
-    .itemIn('modern_industrialization:replicator_1', 0)
+  replicator_prototype(8192 * 128, 20 * 60 * 5)
+    .itemOut('modern_industrialization:replicator_prototype')
+    .itemIn('modern_industrialization:replicator_prototype', 0)
     .fluidIn('16000x modern_industrialization:uu_matter');
 
   assembler(8192 * 16, 20 * 50)

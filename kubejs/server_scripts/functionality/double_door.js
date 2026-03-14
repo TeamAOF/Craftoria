@@ -3,7 +3,7 @@
  *
  * Can also open doors by right-clicking them.
  *
- * Handles doors, trapdoors, and fence gates.
+ * Handles doors and fence gates.
  *
  * Has a recursive door opening feature.
  */
@@ -133,13 +133,13 @@ function doubleDoor() {
   }
 
   /**
-   * Checks if the block is a door, trapdoor, or fence gate.
+   * Checks if the block is a door or fence gate.
    * @param {$BlockState_} blockState
    * @returns boolean
    */
   function isAllowedDoor(blockState) {
     const { block } = blockState;
-    if (block instanceof $DoorBlock || block instanceof $TrapDoorBlock || block instanceof $FenceGateBlock) {
+    if (block instanceof $DoorBlock || block instanceof $FenceGateBlock) {
       if (block.hasTag(blacklistTag)) return false;
       return true;
     }
@@ -189,8 +189,6 @@ function doubleDoor() {
 
       if (block instanceof $DoorBlock) {
         level.setBlock(pos, state.setValue($DoorBlock.OPEN, targetOpen), DOOR_UPDATE_FLAGS);
-      } else if (block instanceof $TrapDoorBlock) {
-        level.setBlock(pos, state.setValue(BlockProperties.OPEN, targetOpen), DOOR_UPDATE_FLAGS);
       } else if (block instanceof $FenceGateBlock) {
         level.setBlock(pos, state.setValue($DoorBlock.OPEN, targetOpen), DOOR_UPDATE_FLAGS);
       }
@@ -290,8 +288,6 @@ function doubleDoor() {
   function canOpenByHand(blockState) {
     const { block } = blockState;
     if (block instanceof $DoorBlock) return block.type().canOpenByHand(); // Check if the door can be opened by hand
-    // Check if the trapdoor is wooden (the one I want I can't access, will do with a tag for now)
-    else if (block instanceof $TrapDoorBlock) return block.hasTag('minecraft:wooden_trapdoors');
     return true; // Return true for other blocks (fence gates, etc.)
   }
 

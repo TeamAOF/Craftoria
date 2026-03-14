@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
   });
 
   assembler(16, 200)
-    .itemOut('mi_tweaks:ooze_lab')
+    .itemOut('craftoria:ooze_lab')
     .itemIn('8x justdirethings:gooblock_tier4')
     .itemIn('4x modern_industrialization:electronic_circuit')
     .itemIn('4x modern_industrialization:large_pump')

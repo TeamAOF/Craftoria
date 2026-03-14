@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
   }
 
   assembler(16, 200)
-    .itemOut('mi_tweaks:model_synthesizer')
+    .itemOut('craftoria:model_synthesizer')
     .itemIn('8x hostilenetworks:sim_chamber')
     .itemIn('8x hostilenetworks:loot_fabricator')
     .itemIn('4x modern_industrialization:electronic_circuit')

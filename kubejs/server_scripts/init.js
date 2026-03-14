@@ -9,7 +9,6 @@ const $BlockPos = Java.loadClass('net.minecraft.core.BlockPos');
 const $WeightedPressurePlateBlock = Java.loadClass('net.minecraft.world.level.block.WeightedPressurePlateBlock');
 const $PressurePlateBlock = Java.loadClass('net.minecraft.world.level.block.PressurePlateBlock');
 const $FenceGateBlock = Java.loadClass('net.minecraft.world.level.block.FenceGateBlock');
-const $TrapDoorBlock = Java.loadClass('net.minecraft.world.level.block.TrapDoorBlock');
 const $ButtonBlock = Java.loadClass('net.minecraft.world.level.block.ButtonBlock');
 const $LeverBlock = Java.loadClass('net.minecraft.world.level.block.LeverBlock');
 const $DoorBlock = Java.loadClass('net.minecraft.world.level.block.DoorBlock');

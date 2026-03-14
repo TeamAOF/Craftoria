@@ -255,7 +255,6 @@ ServerEvents.generateData('after_mods', event => {
   const recipesToYeet = [
     // Erroring recipes, removed to prevent log spam
     'mekaweapons:module_arrowvelocity_unit',
-    'mechtrowel:wand_upgrade',
   ];
 
   /** @type {string[]} */

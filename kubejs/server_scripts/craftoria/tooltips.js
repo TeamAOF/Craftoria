@@ -61,6 +61,6 @@ ItemEvents.modifyTooltips(e => {
 
   for (const [id, machine] of Object.entries(global.customMIMachines)) {
     let machineID = `${machine.mod ?? 'modern_industrialization'}:${id}`;
-    e.add(machineID, Text.translate('tooltip.kubejs.added_by_craftoria').blue().italic());
+    e.add(machineID, Text.translate('tooltip.craftoria.added_by_craftoria').blue().italic());
   }
 });

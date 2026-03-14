@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
   }
 
   assembler(16, 200)
-    .itemOut('mi_tweaks:budding_incubator')
+    .itemOut('craftoria:budding_incubator')
     .itemIn('16x ae2:growth_accelerator')
     .itemIn('4x modern_industrialization:electronic_circuit')
     .itemIn('modern_industrialization:large_pump')

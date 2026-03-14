@@ -6,13 +6,6 @@ RecipeViewerEvents.removeEntries('item', event => {
     enchBooksToKeep.push(`minecraft:enchanted_book[stored_enchantments={levels:{"${ench.key().location()}":${$EnchHooks.getMaxLevel(ench)}}}]`);
   });
 
-  const allFluids = [];
-  Registry.of('fluid').forEach(reg => {
-    if (reg.id === 'minecraft:empty') return;
-    if (reg.id.includes('flowing')) return;
-    allFluids.push(reg.id);
-  });
-
   /** @type {Special.Item[]} */
   let hideItems = [
     'createstockbridge:request_pattern',
@@ -21,6 +14,10 @@ RecipeViewerEvents.removeEntries('item', event => {
     'ftblibrary:icon_item',
     'stickit:placed_items',
     /naquadah/,
+    '@tinymultiblocklib',
+    '@aces_spell_utils',
+    '@gtbcs_spell_lib',
+    'moonlight:spawn_box'
   ];
 
   hideItems.forEach(item => {
@@ -111,20 +108,16 @@ RecipeViewerEvents.removeEntries('item', event => {
   storageTiers.forEach(tier => {
     event.remove(applyColors(`sophisticatedstorage:${tier}_shulker_box`, YELLOW, LIME));
   });
-
-  allFluids.forEach(fluid => {
-    event.remove(`xycraft_machines:foil[xycraft_core:fluid_container={amount:250,id:"${fluid}"}]`);
-  });
 });
 
 RecipeViewerEvents.removeEntriesCompletely('item', event => {
   ['apothic_attributes:extra_long_flying', 'apothic_attributes:long_flying', 'apothic_attributes:flying'].forEach(potion => {
     event.remove([
-      Ingredient.of(`minecraft: potion[potion_contents = { potion: "${potion}" }]`),
-      Ingredient.of(`minecraft: splash_potion[potion_contents = { potion: "${potion}" }]`),
-      Ingredient.of(`minecraft: lingering_potion[potion_contents = { potion: "${potion}" }]`),
-      Ingredient.of(`minecraft: tipped_arrow[potion_contents = { potion: "${potion}" }]`),
-      Ingredient.of(`apotheosis: potion_charm[potion_contents = { potion: "${potion}" }]`),
+      Ingredient.of(`minecraft:potion[potion_contents={potion:"${potion}"}]`),
+      Ingredient.of(`minecraft:splash_potion[potion_contents={potion:"${potion}"}]`),
+      Ingredient.of(`minecraft:lingering_potion[potion_contents={potion:"${potion}"}]`),
+      Ingredient.of(`minecraft:tipped_arrow[potion_contents={potion:"${potion}"}]`),
+      Ingredient.of(`apotheosis:potion_charm[potion_contents={potion:"${potion}"}]`),
     ]);
   });
 
@@ -142,5 +135,5 @@ RecipeViewerEvents.removeEntriesCompletely('item', event => {
 });
 
 RecipeViewerEvents.removeCategories(e => {
-  e.remove(['chisel:chisel_recipes_category', 'modern_industrialization:replicator_1']);
+  e.remove(['chisel:chisel_recipes_category', 'modern_industrialization:replicator_prototype']);
 });

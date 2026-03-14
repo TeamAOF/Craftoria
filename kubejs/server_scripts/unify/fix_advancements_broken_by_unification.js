@@ -1,4 +1,4 @@
-ServerEvents.generateData('after_mods',event=>{
+ServerEvents.generateData('after_mods', event => {
   const advancements = {
     'actuallyadditions:pickup_coffee': {
       parent: 'actuallyadditions:craft_coal_generator',
@@ -36,7 +36,7 @@ ServerEvents.generateData('after_mods',event=>{
           conditions: {
             items: [
               {
-                items: 'modern_industrialization:steel_ingot'
+                items: '#c:ingots/steel'
               }
             ]
           },

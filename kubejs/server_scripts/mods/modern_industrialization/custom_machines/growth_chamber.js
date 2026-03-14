@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     'occultism:otherflower_natural',
     'minecraft:mangrove_propagule',
     'supplementaries:wild_flax',
-    'minecart:chorus_flower',
+    'minecraft:chorus_flower',
   ];
 
   Ingredient.of('#minecraft:flowers').except(growBlacklist).itemIds.forEach(flower => {
