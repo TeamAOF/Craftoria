@@ -1,0 +1,702 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "Utility"
+	group: "04696DE4EC4D4A94"
+	icon: {
+		id: "pipe_connector:pipe_connector"
+	}
+	id: "5BF964A2F3CAA6E8"
+	images: [
+		{
+			height: 6.0d
+			image: "morered:block/hexidecrubrometer_8"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.0d
+			y: -4.440892098500626E-16d
+		}
+		{
+			height: 6.0d
+			image: "laserio:textures/gui/buttons/settings.png"
+			order: 1
+			rotation: 0.0d
+			width: 6.0d
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			color: 11499527
+			height: 6.0d
+			image: "ftbquests:textures/gui/background_white.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.4d
+			y: -1.4d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.9d
+			y: -1.9d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.4d
+			y: -1.4d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.9d
+			y: 0.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.4d
+			y: 1.6d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.9d
+			y: 2.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.4d
+			y: 1.6d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.9d
+			y: 0.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.5d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.5d
+			x: -5.9d
+			y: 0.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.5d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.5d
+			x: 0.1d
+			y: 0.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.9d
+			y: -0.4d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.9d
+			y: -1.9d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.1d
+			y: -1.9d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.1d
+			y: -0.4d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.6d
+			y: 1.6d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.1d
+			y: 2.1d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 10
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.4d
+			y: 1.6d
+		}
+		{
+			height: 6.0d
+			image: "sfm:block/manager_top"
+			rotation: 0.0d
+			width: 6.0d
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			hide_dependent_lines: true
+			id: "59E054B650938A07"
+			rewards: [{
+				id: "2F629DACD9576C75"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "3C9265519EEBCC88"
+				item: { count: 1, id: "laserio:laser_wrench" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "46E08123E5953C3D"
+			rewards: [{
+				id: "1A64BEB6AD1FE633"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "1ED940D7030FDD66"
+					item: { count: 1, id: "laserio:laser_connector" }
+					type: "item"
+				}
+				{
+					id: "52C1530555DE8F51"
+					item: { count: 1, id: "laserio:laser_connector_advanced" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "418FA3EE6F4EE948"
+			rewards: [{
+				id: "4366AC1C62AA90D1"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "05DBBBC8E49BD11A"
+				item: { count: 1, id: "laserio:laser_node" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "7A2FF16532A0043F"
+			rewards: [{
+				id: "36B20D0D5C975A8B"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "2620721E45B98344"
+					item: { count: 1, id: "laserio:card_item" }
+					type: "item"
+				}
+				{
+					id: "7B38B01370F6CD7B"
+					item: { count: 1, id: "laserio:card_fluid" }
+					type: "item"
+				}
+				{
+					id: "124C6D159385F0A7"
+					item: { count: 1, id: "laserio:card_energy" }
+					type: "item"
+				}
+				{
+					id: "5EAF355A58D3410D"
+					item: { count: 1, id: "laserio:card_redstone" }
+					type: "item"
+				}
+				{
+					id: "015BF159189FC30D"
+					item: { count: 1, id: "laserio:card_chemical" }
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "06125490438D9357"
+			rewards: [{
+				id: "1D6E28BD7996F120"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "23E945F97A7EEE1C"
+					item: { count: 1, id: "laserio:filter_basic" }
+					type: "item"
+				}
+				{
+					id: "541C2AD77AF9553D"
+					item: { count: 1, id: "laserio:filter_count" }
+					type: "item"
+				}
+				{
+					id: "77599FDBE4142AF1"
+					item: { count: 1, id: "laserio:filter_tag" }
+					type: "item"
+				}
+				{
+					id: "3FD2BA831A78C15D"
+					item: { count: 1, id: "laserio:filter_mod" }
+					type: "item"
+				}
+				{
+					id: "153DD5DCBCB98977"
+					item: { count: 1, id: "laserio:filter_nbt" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "3E5DDCBCAFDFB971"
+			rewards: [{
+				id: "6641459FD808BCCB"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "64708B076F915372"
+				item: { count: 1, id: "laserio:logic_chip_raw" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "3542FC68C1224CA1"
+			rewards: [{
+				id: "58C47A8C1C688946"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "699A28E007A765DF"
+				item: { count: 1, id: "laserio:logic_chip" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "173307167511B2FB"
+			rewards: [{
+				id: "2171AF6FB54FF32E"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3E8F3E84E2CA8543"
+				item: { count: 1, id: "laserio:overclocker_card" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37AC7F3340783FD3"]
+			id: "55356D002A3B2BA0"
+			rewards: [{
+				id: "5653487412BD0C7A"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "62EDE6AEFF7F4289"
+				item: { count: 1, id: "laserio:overclocker_node" }
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			id: "7BE64AF022E35ADE"
+			rewards: [{
+				id: "22121F37ACB40703"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "30728D980D112B06"
+				item: { count: 1, id: "morered:red_alloy_ingot" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.440892098500626E-16d
+		}
+		{
+			id: "00545D267282C024"
+			rewards: [{
+				id: "655C4CC0C50F065B"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "556CE23F4D124FAE"
+				item: { count: 1, id: "morered:soldering_table" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.9999999999999996d
+		}
+		{
+			id: "0F06B5CFCD65EF0E"
+			rewards: [{
+				id: "7F9CABB1BA7AA485"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "14DC117A9D730DBA"
+					item: { count: 1, id: "morered:bundled_cable_relay_plate" }
+					type: "item"
+				}
+				{
+					id: "5B7AB6D84C0CC416"
+					item: { count: 1, id: "morered:bundled_cable_post" }
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			id: "207E271D018B5217"
+			rewards: [{
+				id: "2E96508AC9E69C18"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "646E624BA84FE33C"
+					item: { count: 1, id: "morered:not_gate" }
+					type: "item"
+				}
+				{
+					id: "19326D7941F45BD4"
+					item: { count: 1, id: "morered:nor_gate" }
+					type: "item"
+				}
+				{
+					id: "4DBE5FBBD5E940B4"
+					item: { count: 1, id: "morered:nand_gate" }
+					type: "item"
+				}
+				{
+					id: "6CD521E4516B67C7"
+					item: { count: 1, id: "morered:or_gate" }
+					type: "item"
+				}
+				{
+					id: "537B4C112A1926D9"
+					item: { count: 1, id: "morered:and_gate" }
+					type: "item"
+				}
+				{
+					id: "06840041EA9D31CA"
+					item: { count: 1, id: "morered:xor_gate" }
+					type: "item"
+				}
+				{
+					id: "280C0B754FB71723"
+					item: { count: 1, id: "morered:xnor_gate" }
+					type: "item"
+				}
+				{
+					id: "7F9CAA3B567CABF5"
+					item: { count: 1, id: "morered:and_2_gate" }
+					type: "item"
+				}
+				{
+					id: "48EB61E87791B866"
+					item: { count: 1, id: "morered:nand_2_gate" }
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			id: "0CFA35BB55D9CBA4"
+			rewards: [{
+				id: "0E71C7FAA7EC6F3F"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "134C00FF37EF97DC"
+					item: { count: 1, id: "morered:bitwise_diode" }
+					type: "item"
+				}
+				{
+					id: "417085B9F902911A"
+					item: { count: 1, id: "morered:bitwise_not_gate" }
+					type: "item"
+				}
+				{
+					id: "3B99CAA212309108"
+					item: { count: 1, id: "morered:bitwise_or_gate" }
+					type: "item"
+				}
+				{
+					id: "612EC7164B794698"
+					item: { count: 1, id: "morered:bitwise_and_gate" }
+					type: "item"
+				}
+				{
+					id: "38AE900A20DC8617"
+					item: { count: 1, id: "morered:bitwise_xor_gate" }
+					type: "item"
+				}
+				{
+					id: "598AE74C139432ED"
+					item: { count: 1, id: "morered:bitwise_xnor_gate" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -0.5000000000000004d
+		}
+		{
+			id: "14B3A6FF79F02AF0"
+			rewards: [{
+				id: "3206DF269840B468"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "023AD1E611C7969E"
+					item: { count: 1, id: "morered:red_alloy_wire" }
+					type: "item"
+				}
+				{
+					id: "355CC0B34BC9FEF7"
+					item: { count: 1, id: "morered:white_network_cable" }
+					type: "item"
+				}
+				{
+					id: "72FE14490FBA6EFA"
+					item: { count: 1, id: "morered:bundled_network_cable" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.4999999999999996d
+		}
+		{
+			id: "6D1CE6758B529DDC"
+			rewards: [{
+				id: "2AF80EA181F2180C"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4073906C494CB1CF"
+				item: { count: 1, id: "morered:hexidecrubrometer" }
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.4999999999999996d
+		}
+		{
+			id: "364A81E9AE697A31"
+			rewards: [{
+				id: "19DEEAD0447395EF"
+				table_id: 6467551270008706529L
+				type: "random"
+			}]
+			tasks: [
+				{
+					id: "48DF1392D1950771"
+					item: { count: 1, id: "morered:latch" }
+					type: "item"
+				}
+				{
+					id: "5FA8D877E5A698AD"
+					item: { count: 1, id: "morered:pulse_gate" }
+					type: "item"
+				}
+				{
+					id: "777D2C1388F4FB2B"
+					item: { count: 1, id: "morered:diode" }
+					type: "item"
+				}
+				{
+					id: "74A19264C83B1A22"
+					item: { count: 1, id: "morered:redwire_post_plate" }
+					type: "item"
+				}
+				{
+					id: "33BE5755498F5BAF"
+					item: { count: 1, id: "morered:redwire_post_relay_plate" }
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -0.5000000000000004d
+		}
+		{
+			id: "4CD484A8E80C1D2F"
+			tasks: [
+				{
+					id: "6D9FFE45507F18C1"
+					item: { count: 1, id: "sfm:manager" }
+					type: "item"
+				}
+				{
+					id: "5DF09683E9958FBE"
+					item: { count: 1, id: "sfm:disk" }
+					type: "item"
+				}
+				{
+					id: "4BC7BD45706AAB58"
+					item: { count: 1, id: "sfm:labelgun" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2CBF1BB5DE0ABE0E"
+					item: { count: 1, id: "sfm:cable" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "36E44D81A660A049"
+			tasks: [{
+				id: "44D5B706671D6455"
+				item: { count: 1, id: "pipe_connector:pipe_connector" }
+				type: "item"
+			}]
+			x: 5.95d
+			y: -3.75d
+		}
+	]
+}
