@@ -40,10 +40,10 @@ ItemEvents.modifyTooltips(e => {
     Text.translate('tooltip.eternal_starlight.red_crystal_shard.location').lightPurple(),
   ]);
 
-  e.add('mi_tweaks:ooze_lab', { shift: true },
-    Text.translate('tooltip.mi_tweaks.ooze_lab.needs').gray()
-      .append(Text.translate('tooltip.mi_tweaks.ooze_lab.fluid').green())
-      .append(Text.translate('tooltip.mi_tweaks.ooze_lab.location').gray())
+  e.add('craftoria:ooze_lab', { shift: true },
+    Text.translate('tooltip.craftoria.ooze_lab.needs').gray()
+      .append(Text.translate('tooltip.craftoria.ooze_lab.fluid').green())
+      .append(Text.translate('tooltip.craftoria.ooze_lab.location').gray())
   );
 
   e.add('modern_industrialization:nuke', Text.translate('tooltip.modern_industrialization.nuke.no_explode').darkGray());

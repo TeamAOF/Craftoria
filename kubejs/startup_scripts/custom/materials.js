@@ -38,9 +38,9 @@ StartupEvents.registry('item', event => {
   });
 });
 
-// StartupEvents.registry('mekanism:chemical', event => {
-//   mekMaterials.forEach(material => {
-//     event.create(`craftoria:clean_${material.name}_slurry`, 'clean_slurry').tint(Color.of(material.color).rgb).ore(`c:ores/${material.name}`);
-//     event.create(`craftoria:dirty_${material.name}_slurry`, 'dirty_slurry').tint(Color.of(material.color).rgb).ore(`c:ores/${material.name}`);
-//   });
-// });
+StartupEvents.registry('mekanism:chemical', event => {
+  mekMaterials.forEach(material => {
+    event.create(`craftoria:clean_${material.name}_slurry`, 'mekanism:clean_slurry').tint(material.color).ore(`c:ores/${material.name}`);
+    event.create(`craftoria:dirty_${material.name}_slurry`, 'mekanism:dirty_slurry').tint(material.color).ore(`c:ores/${material.name}`);
+  });
+});

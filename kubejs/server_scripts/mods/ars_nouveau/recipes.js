@@ -5,21 +5,21 @@ ServerEvents.recipes(e => {
   ars.imbuementChamber(
     'utilitarian:snad',
     'minecraft:sand',
-    ['ars_nouveau:earth_essence', 'farmingforblockheads:red_fertilizer', 'farmingforblockheads:green_fertilizer'],
+    ['ars_nouveau:earth_essence', 'ars_nouveau:water_essence', 'farm_and_charm:fertilizer'],
     10000
   );
 
   ars.imbuementChamber(
     'utilitarian:red_snad',
     'minecraft:red_sand',
-    ['ars_nouveau:earth_essence', 'farmingforblockheads:red_fertilizer', 'farmingforblockheads:green_fertilizer'],
+    ['ars_nouveau:earth_essence', 'ars_nouveau:water_essence', 'farm_and_charm:fertilizer'],
     10000
   );
 
   ars.imbuementChamber(
     'utilitarian:soul_snad',
     'minecraft:soul_sand',
-    ['ars_nouveau:earth_essence', 'farmingforblockheads:red_fertilizer', 'farmingforblockheads:green_fertilizer'],
+    ['ars_nouveau:earth_essence', 'ars_nouveau:water_essence', 'farm_and_charm:fertilizer'],
     10000
   );
 

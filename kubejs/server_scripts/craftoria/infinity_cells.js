@@ -42,7 +42,7 @@ ServerEvents.recipes(e => {
 
   ae.crystalAssembler('craftoria:infinity_cell_housing', [
     '32x #c:ingots/replica',
-    '16x bigger_ae2:digital_singularity_cell_component',
+    // '16x bigger_ae2:digital_singularity_cell_component',
     '16x advanced_ae:quantum_alloy_plate',
     '16x modern_industrialization:stainless_steel_tank',
     // '16x modern_industrialization:stainless_steel_barrel', // Disabled due MI barrels not stacking

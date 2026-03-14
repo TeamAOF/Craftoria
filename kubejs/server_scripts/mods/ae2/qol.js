@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     .itemIn('minecraft:glowstone_dust')
     .id('craftoria:mi/fluix_smart_cable_assembler');
   assembler(2, 100)
-    .itemOut('ae2:fluix_smart_dense_cable') 
+    .itemOut('ae2:fluix_smart_dense_cable')
     .itemIn('ae2:fluix_covered_dense_cable')
     .itemIn('minecraft:redstone')
     .itemIn('minecraft:glowstone_dust')
@@ -38,7 +38,6 @@ ServerEvents.recipes(event => {
     .itemIn('4x ae2:fluix_covered_cable')
     .itemIn('modern_industrialization:packer_double_ingot_template', 0)
     .id('craftoria:mi/fluix_covered_dense_cable_packer');
-  
 
   shapeless('4x ae2:fluix_covered_cable', 'ae2:fluix_covered_dense_cable');
   shapeless('4x ae2:fluix_smart_cable', 'ae2:fluix_smart_dense_cable');
@@ -62,7 +61,10 @@ ServerEvents.recipes(event => {
     .itemIn('#c:dusts/glowstone')
     .fluidIn('1000x minecraft:water', 0)
     .id('craftoria:appflux/redstone_crystal');
-  electrolyzer(8, 60).itemOut('appflux:charged_redstone').itemIn('appflux:redstone_crystal').id('craftoria:appflux/charged_redstone');
+  electrolyzer(8, 60)
+    .itemOut('appflux:charged_redstone')
+    .itemIn('appflux:redstone_crystal')
+    .id('craftoria:appflux/charged_redstone');
 
   // ExtendedAE compat
   assembler(8, 200)
@@ -76,7 +78,10 @@ ServerEvents.recipes(event => {
     .itemIn('#c:gems/entro')
     .itemIn('extendedae:concurrent_processor_press', 0)
     .id('craftoria:extendedae/concurrent_processor_print');
-  macerator(2, 100).itemOut('extendedae:entro_dust').itemIn('#c:gems/entro').id('craftoria:extendedae/entro_dust');
+  macerator(2, 100)
+    .itemOut('extendedae:entro_dust')
+    .itemIn('#c:gems/entro')
+    .id('craftoria:extendedae/entro_dust');
   mixer(8, 100)
     .itemOut('extendedae:entro_ingot')
     .itemIn('#c:dusts/entro')

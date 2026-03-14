@@ -3,24 +3,24 @@ ServerEvents.recipes(e => {
     e.recipes.modern_industrialization;
 
   assembler(1024 * 32, 20 * 60)
-    .itemOut('modern_industrialization:replicator_1')
+    .itemOut('modern_industrialization:replicator_prototype')
     .itemIn('modern_industrialization:quantum_machine_hull')
     .itemIn('16x modern_industrialization:quantum_circuit')
     .itemIn('4x modern_industrialization:quantum_tank')
     .itemIn('4x modern_industrialization:quantum_barrel')
     .fluidIn('8000x modern_industrialization:uu_matter')
     .fluidIn('8x craftoria:quantium')
-    .id('craftoria:end_game/replicator_1');
+    .id('craftoria:end_game/replicator_prototype');
 
   assembler(8192 * 64, 20 * 50)
     .itemOut('modern_industrialization:replicator')
-    .itemIn('modern_industrialization:replicator_1')
+    .itemIn('modern_industrialization:replicator_prototype')
     .itemIn('mekanism_extras:infinite_bin')
     .itemIn('mekanism_extras:infinite_fluid_tank')
     .itemIn('4x craftoria:cosmic_injector')
     .fluidIn('16000x modern_industrialization:uu_matter')
     .fluidIn('32x craftoria:quantium')
-    .id('craftoria:end_game/replicator_2');
+    .id('craftoria:end_game/replicator_real');
 
   blast_furnace(8192 * 16, 20 * 20)
     .itemIn('modern_industrialization:quantum_upgrade')

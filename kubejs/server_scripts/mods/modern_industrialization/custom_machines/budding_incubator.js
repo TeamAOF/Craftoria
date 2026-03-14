@@ -41,8 +41,8 @@ const buddingConditions = {
   timecrystal: {
     block: 'justdirethings:time_crystal_budding_block',
     textKey: [
-        'info.mi.budding.timecrystal.line1', 
-        'info.mi.budding.timecrystal.line2'
+      'info.mi.budding.timecrystal.line1',
+      'info.mi.budding.timecrystal.line2'
     ],
     blockState: {
       property: TIME_BUDDING_STAGE,
@@ -88,10 +88,10 @@ MIRecipeEvents.customCondition(event => {
     if (!Platform.isLoaded(ID.namespace(condition.block))) return;
 
     let descriptionComponent;
-    let keyArray, firstKey, restKeys; 
+    let keyArray, firstKey, restKeys;
 
     if (Array.isArray(condition.textKey)) {
-      keyArray = condition.textKey; 
+      keyArray = condition.textKey;
       firstKey = keyArray[0];
       restKeys = keyArray.slice(1);
 
@@ -102,7 +102,7 @@ MIRecipeEvents.customCondition(event => {
     } else {
       descriptionComponent = Text.translate(condition.textKey);
     }
-    
+
     event.register(
       key,
       (ctx, recipe) => {

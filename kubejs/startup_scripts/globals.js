@@ -44,7 +44,7 @@ const customMIMachines = {
     },
   },
   // 'particle_accelerator': {
-  //   mod: 'mi_tweaks',
+  //   mod: 'craftoria',
   //   casing: 'plasma_handling_iridium_machine_casing',
   // },
   budding_incubator: {
