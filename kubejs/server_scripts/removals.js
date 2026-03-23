@@ -6,19 +6,34 @@ const globalItemRemovals = [
   'megacells:mega_pattern_provider',
   'megacells:cable_mega_pattern_provider',
   'megacells:mega_crafting_accelerator',
+
   'chisel:chisel',
+
   'ae2:spatial_anchor',
+
   'mekanism:upgrade_anchor',
   'mekanism:dimensional_stabilizer',
+
   'pneumaticcraft:chunkloader_upgrade',
+
   'industrialforegoing:infinity_nuke',
+
   { item: /^create_connected:copycat_.*/, reason: 'use copycats+ blocks instead' },
+
   'xycraft_world:raw_aluminum',
   'xycraft_world:raw_aluminum_block',
   'xycraft_world:aluminum_ore_stone',
   'xycraft_world:aluminum_ore_deepslate',
   'xycraft_world:aluminum_ore_kivi',
+
   'create:crushed_raw_aluminum',
+
+  'justdynathings:goo_upgrader_t4',
+  /^justdynathings:.*_goo$/,
+  /^justdynathings:echoing_budding_.*/,
+  /^justdynathings:(ferricore|blazegold|celestigem|eclipse_alloy)_solar_panel$/,
+  'justdynathings:ticker',
+  'justdynathings:reforger',
 ];
 
 /**

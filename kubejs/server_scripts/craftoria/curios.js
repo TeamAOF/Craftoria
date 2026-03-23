@@ -17,6 +17,16 @@ ServerEvents.generateData('after_mods', event => {
       size: 4,
       isOverride: true,
     },
+    rings: {
+      size: 0,
+      replace: true,
+      isOverride: true,
+    },
+    waist: {
+      size: 0,
+      replace: true,
+      isOverride: true,
+    },
     // robe: {
     //   add_cosmetic: true,
     // },
@@ -116,6 +126,7 @@ ServerEvents.tags('item', e => {
   e.remove('curios:hands', 'occultism:storage_remote');
   e.remove('curios:charm', ['phantoms_utilities:sleep_charm']);
   e.remove('curios:belt', ['ars_additions:warp_index', 'ars_additions:stabilized_warp_index']);
+  // e.removeAll('curios:rings');
 
   e.add('curios:qio', [
     'occultism:storage_remote',
@@ -128,4 +139,6 @@ ServerEvents.tags('item', e => {
   e.add('curios:charm', ['reliquary:fortune_coin']);
   e.add('curios:feet', ['mekanism:free_runners', 'mekanism:free_runners_armored']);
   e.add('curios:teleporter', ['tempad:tempad']);
+  e.add('curios:ring', ['cataclysm:ring_of_grudged']);
+  e.add('curios:belt', ['cataclysm:belt_of_beginner']);
 });

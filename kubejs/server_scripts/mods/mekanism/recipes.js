@@ -64,6 +64,15 @@ ServerEvents.recipes(e => {
     C: 'mekanism_extras:alloy_shining',
   }).id('mekaweapons:katana_blade');
 
+  e.shaped('mekaweapons:meka_tana', ['ABA', 'CDC', 'EFE'], {
+    A: 'mekanism_extras:cosmic_control_circuit',
+    B: 'mekaweapons:katana_blade',
+    C: 'mekanism:hdpe_sheet',
+    D: '#c:ingots/steel',
+    E: 'mekanism:pellet_polonium',
+    F: 'mekanism:basic_induction_cell',
+  }).id('mekaweapons:meka_tana');
+
   e.shaped('mekaweapons:bow_riser', ['DAD', 'BCB'], {
     A: '#c:ingots/steel',
     B: 'mekanism:ingot_refined_obsidian',
