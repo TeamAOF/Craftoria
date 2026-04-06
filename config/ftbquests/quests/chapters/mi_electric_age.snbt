@@ -347,8 +347,8 @@
 			image: "modern_industrialization:block/machines/steam_turbine/overlay_front_active"
 			rotation: 0.0d
 			width: 2.25d
-			x: 23.9d
-			y: 10.15d
+			x: 3.05d
+			y: -7.55d
 		}
 		{
 			height: 10.0d
@@ -376,20 +376,21 @@
 			y: 11.1d
 		}
 		{
-			height: 4.0d
+			height: 1.0d
 			image: "modern_industrialization:textures/gradient_maps/aluminum.png"
-			rotation: 0.0d
-			width: 16.0d
-			x: -1.35d
-			y: -10.8d
+			order: 1
+			rotation: 180.0d
+			width: 3.0d
+			x: 46.7d
+			y: -18.7d
 		}
 		{
-			height: 4.0d
+			height: 1.0d
 			image: "modern_industrialization:textures/gradient_maps/electrum.png"
-			rotation: 0.0d
-			width: 16.0d
-			x: -1.05d
-			y: -15.2d
+			rotation: 180.0d
+			width: 9.0d
+			x: 49.300000000000004d
+			y: -16.7d
 		}
 		{
 			height: 4.0d
@@ -400,22 +401,23 @@
 			y: -13.05d
 		}
 		{
-			height: 4.0d
-			image: "modern_industrialization:textures/gradient_maps/annealed_electrum.png"
+			height: 1.0d
+			image: "modern_industrialization:textures/gradient_maps/annealed_copper.png"
+			order: 3
 			rotation: 0.0d
-			width: 16.0d
-			x: -1.35d
-			y: -19.65d
+			width: 6.0d
+			x: 48.0d
+			y: -17.7d
 		}
 		{
 			color: 16755200
-			height: 1.75d
+			height: 2.0d
 			image: "modern_industrialization:textures/gui/milogo.png"
 			order: 100
 			rotation: 0.0d
-			width: 1.75d
-			x: -21.799999999999997d
-			y: -5.75d
+			width: 2.0d
+			x: 15.55d
+			y: -18.95d
 		}
 		{
 			height: 1.0d
@@ -452,8 +454,101 @@
 			x: 0.0d
 			y: 0.0d
 		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:textures/gradient_maps/electrum.png"
+			rotation: 0.0d
+			width: 21.0d
+			x: 56.95d
+			y: -18.7d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:textures/gradient_maps/aluminum.png"
+			rotation: 180.0d
+			width: 18.0d
+			x: 58.2d
+			y: -17.7d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:textures/gradient_maps/annealed_copper.png"
+			order: 3
+			rotation: 0.0d
+			width: 15.0d
+			x: 59.6d
+			y: -16.7d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:textures/gradient_maps/aluminum.png"
+			order: 1
+			rotation: 0.0d
+			width: 12.0d
+			x: 50.6d
+			y: -15.7d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:textures/gradient_maps/electrum.png"
+			rotation: 180.0d
+			width: 12.0d
+			x: 60.85d
+			y: -15.7d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:textures/gradient_maps/electrum.png"
+			rotation: 180.0d
+			width: 8.0d
+			x: 50.05d
+			y: -8.049999999999999d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:textures/gradient_maps/annealed_copper.png"
+			order: 3
+			rotation: 0.0d
+			width: 8.0d
+			x: 55.7d
+			y: -8.299999999999999d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:textures/gradient_maps/aluminum.png"
+			rotation: 0.0d
+			width: 9.0d
+			x: 62.1d
+			y: -14.7d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:textures/gradient_maps/annealed_copper.png"
+			order: 3
+			rotation: 180.0d
+			width: 15.0d
+			x: 51.85d
+			y: -14.7d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:textures/gradient_maps/electrum.png"
+			rotation: 0.0d
+			width: 18.0d
+			x: 53.150000000000006d
+			y: -13.7d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:textures/gradient_maps/annealed_copper.png"
+			order: 3
+			rotation: 180.0d
+			width: 6.0d
+			x: 63.35d
+			y: -13.7d
+		}
 	]
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -539,8 +634,8 @@
 				item: { count: 1, id: "modern_industrialization:assembler" }
 				type: "item"
 			}]
-			x: 21.9d
-			y: 3.65d
+			x: 22.65d
+			y: 3.6d
 		}
 		{
 			dependencies: ["20A093E5684D2E30"]
@@ -608,8 +703,8 @@
 				item: { count: 1, id: "modern_industrialization:conveyor" }
 				type: "item"
 			}]
-			x: 24.9d
-			y: 6.65d
+			x: 24.5d
+			y: 6.6000000000000005d
 		}
 		{
 			dependencies: ["176524D0E4475298"]
@@ -694,8 +789,8 @@
 					type: "item"
 				}
 			]
-			x: 41.6d
-			y: 6.55d
+			x: 37.6d
+			y: 12.3d
 		}
 		{
 			dependencies: ["6F57A2A5AA6E3F49"]
@@ -853,8 +948,8 @@
 				item: { count: 1, id: "modern_industrialization:tin_cable" }
 				type: "item"
 			}]
-			x: 22.9d
-			y: 12.15d
+			x: 23.5d
+			y: 12.299999999999999d
 		}
 		{
 			dependencies: ["5C8D7BD3DA61109F"]
@@ -928,8 +1023,8 @@
 					type: "item"
 				}
 			]
-			x: 42.6d
-			y: 6.55d
+			x: 37.0d
+			y: 13.55d
 		}
 		{
 			dependencies: ["20A093E5684D2E30"]
@@ -967,8 +1062,8 @@
 				item: { count: 1, id: "modern_industrialization:hv_diesel_generator" }
 				type: "item"
 			}]
-			x: 40.6d
-			y: 6.55d
+			x: 37.9d
+			y: 11.1d
 		}
 		{
 			dependencies: ["42D6CC67AB29D7DA"]
@@ -997,11 +1092,10 @@
 				item: { count: 1, id: "modern_industrialization:hv_steam_turbine" }
 				type: "item"
 			}]
-			x: 39.6d
-			y: 6.55d
+			x: 38.1d
+			y: 13.9d
 		}
 		{
-			dependencies: ["6EBFFFB567687A1E"]
 			id: "41D1344A31FEA6DF"
 			rewards: [{
 				count: 8
@@ -1018,8 +1112,8 @@
 				item: { count: 1, id: "modern_industrialization:kanthal_coil" }
 				type: "item"
 			}]
-			x: 38.9d
-			y: 15.9d
+			x: 39.3d
+			y: 12.05d
 		}
 		{
 			dependencies: ["779C3C6B89AD2526"]
@@ -1061,8 +1155,8 @@
 					type: "item"
 				}
 			]
-			x: 23.9d
-			y: 11.65d
+			x: 24.4d
+			y: 11.75d
 		}
 		{
 			dependencies: ["24A4F1AA0BFFE867"]
@@ -1091,7 +1185,7 @@
 				item: { count: 1, id: "modern_industrialization:lv_steam_turbine" }
 				type: "item"
 			}]
-			x: 23.9d
+			x: 24.3d
 			y: 10.15d
 		}
 		{
@@ -1110,8 +1204,8 @@
 				item: { count: 1, id: "modern_industrialization:basic_machine_hull" }
 				type: "item"
 			}]
-			x: 21.9d
-			y: 6.65d
+			x: 22.65d
+			y: 6.6000000000000005d
 		}
 		{
 			dependencies: ["779C3C6B89AD2526"]
@@ -1129,8 +1223,8 @@
 				item: { count: 1, id: "modern_industrialization:motor" }
 				type: "item"
 			}]
-			x: 20.4d
-			y: 6.65d
+			x: 21.7d
+			y: 6.6000000000000005d
 		}
 		{
 			dependencies: ["091C2772ED417247"]
@@ -1220,8 +1314,8 @@
 				item: { count: 1, id: "modern_industrialization:piston" }
 				type: "item"
 			}]
-			x: 18.9d
-			y: 6.65d
+			x: 20.75d
+			y: 6.6000000000000005d
 		}
 		{
 			dependencies: ["5DD99224F29419C1"]
@@ -1263,8 +1357,8 @@
 				item: { count: 1, id: "modern_industrialization:processing_unit" }
 				type: "item"
 			}]
-			x: 40.25d
-			y: 10.15d
+			x: 38.15d
+			y: 10.2d
 		}
 		{
 			dependencies: ["779C3C6B89AD2526"]
@@ -1282,8 +1376,8 @@
 				item: { count: 1, id: "modern_industrialization:robot_arm" }
 				type: "item"
 			}]
-			x: 23.4d
-			y: 6.65d
+			x: 23.55d
+			y: 6.6000000000000005d
 		}
 		{
 			dependencies: ["54BF53CB70636C3F"]
@@ -1313,8 +1407,8 @@
 				item: { count: 1, id: "modern_industrialization:stainless_steel_ingot" }
 				type: "item"
 			}]
-			x: 33.85d
-			y: 10.95d
+			x: 34.15d
+			y: 10.2d
 		}
 		{
 			dependencies: ["42D6CC67AB29D7DA"]
@@ -1334,8 +1428,8 @@
 				item: { count: 1, id: "modern_industrialization:stainless_steel_drill" }
 				type: "item"
 			}]
-			x: 37.4d
-			y: 11.35d
+			x: 35.2d
+			y: 12.05d
 		}
 		{
 			dependencies: ["5C8D7BD3DA61109F"]
@@ -1366,7 +1460,7 @@
 				item: { count: 1, id: "modern_industrialization:analog_circuit" }
 				type: "item"
 			}]
-			x: 21.9d
+			x: 22.65d
 			y: 10.15d
 		}
 		{
@@ -1389,8 +1483,8 @@
 				item: { count: 1, id: "modern_industrialization:digital_circuit" }
 				type: "item"
 			}]
-			x: 34.85d
-			y: 10.15d
+			x: 35.6d
+			y: 10.2d
 		}
 		{
 			dependencies: ["24A4F1AA0BFFE867"]
@@ -1521,8 +1615,8 @@
 					type: "item"
 				}
 			]
-			x: 19.9d
-			y: 11.65d
+			x: 21.05d
+			y: 11.75d
 		}
 		{
 			dependencies: ["779C3C6B89AD2526"]
@@ -1541,8 +1635,8 @@
 				item: { count: 1, id: "extended_industrialization:lv_solar_panel" }
 				type: "item"
 			}]
-			x: 20.9d
-			y: 12.15d
+			x: 21.85d
+			y: 12.299999999999999d
 		}
 		{
 			dependencies: ["6EBFFFB567687A1E"]
@@ -1569,7 +1663,7 @@
 				}
 			]
 			x: 34.15d
-			y: 14.05d
+			y: 14.2d
 		}
 		{
 			dependencies: ["42D6CC67AB29D7DA"]
@@ -1611,8 +1705,8 @@
 					type: "item"
 				}
 			]
-			x: 43.6d
-			y: 6.55d
+			x: 35.65d
+			y: 14.15d
 		}
 		{
 			dependencies: ["2B4BFD88DF1A934D"]
@@ -1711,8 +1805,8 @@
 				item: { count: 1, id: "modern_industrialization:redstone_control_module" }
 				type: "item"
 			}]
-			x: 21.9d
-			y: 12.65d
+			x: 22.65d
+			y: 12.899999999999999d
 		}
 		{
 			dependencies: ["20A093E5684D2E30"]
@@ -1771,8 +1865,8 @@
 				item: { count: 1, id: "modern_industrialization:highly_advanced_upgrade" }
 				type: "item"
 			}]
-			x: 41.75d
-			y: 10.15d
+			x: 39.2d
+			y: 10.2d
 		}
 	]
 }
