@@ -981,7 +981,7 @@
 		}
 		{
 			height: 2.0d
-			image: "extended_industrialization:block/steel_plated_bricks"
+			image: "modern_industrialization:block/casings/steel/top"
 			rotation: 0.0d
 			width: 2.0d
 			x: 3.3d
@@ -1069,8 +1069,8 @@
 			order: 999
 			rotation: 0.0d
 			width: 28.0d
-			x: -14.35d
-			y: 12.55d
+			x: -19.0d
+			y: 24.0d
 		}
 		{
 			height: 1.5d
@@ -1743,8 +1743,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 2.0d
-			x: 3.55d
-			y: 7.1d
+			x: -22.5d
+			y: -4.0d
 		}
 		{
 			alpha: 192
@@ -1752,16 +1752,16 @@
 			image: "minecraft:block/dirt4"
 			rotation: 0.0d
 			width: 2.0d
-			x: 3.5d
-			y: 7.1d
+			x: -22.55d
+			y: -4.0d
 		}
 		{
 			height: 2.0d
 			image: "minecraft:block/stone"
 			rotation: 0.0d
 			width: 2.0d
-			x: 6.65d
-			y: 10.35d
+			x: -19.4d
+			y: -0.75d
 		}
 		{
 			height: 2.0d
@@ -1769,16 +1769,16 @@
 			order: 2
 			rotation: 0.0d
 			width: 2.0d
-			x: 6.65d
-			y: 10.35d
+			x: -19.4d
+			y: -0.75d
 		}
 		{
 			height: 2.0d
 			image: "minecraft:block/grass_block_side"
 			rotation: 0.0d
 			width: 2.0d
-			x: 6.65d
-			y: 8.65d
+			x: -19.4d
+			y: -2.4499999999999993d
 		}
 		{
 			height: 2.0d
@@ -1786,8 +1786,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 2.0d
-			x: 6.65d
-			y: 8.65d
+			x: -19.4d
+			y: -2.4499999999999993d
 		}
 		{
 			color: 7780891
@@ -1813,8 +1813,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 2.0d
-			x: 0.05d
-			y: 11.1d
+			x: -26.0d
+			y: 0.0d
 		}
 		{
 			height: 25.0d
@@ -2003,8 +2003,8 @@
 			order: 2
 			rotation: 0.0d
 			width: 2.0d
-			x: 7.75d
-			y: 13.15d
+			x: -18.3d
+			y: 2.0500000000000007d
 		}
 		{
 			height: 2.0d
@@ -2012,8 +2012,8 @@
 			order: 1
 			rotation: 90.0d
 			width: 2.0d
-			x: 2.1d
-			y: 14.15d
+			x: -23.95d
+			y: 3.0500000000000007d
 		}
 		{
 			height: 2.0d
@@ -2021,8 +2021,8 @@
 			order: 1
 			rotation: 90.0d
 			width: 2.0d
-			x: 2.85d
-			y: 14.15d
+			x: -23.2d
+			y: 3.0500000000000007d
 		}
 		{
 			color: 5614335
@@ -2030,16 +2030,16 @@
 			image: "minecraft:block/water_still"
 			rotation: 0.0d
 			width: 0.5d
-			x: 4.45d
-			y: 14.25d
+			x: -21.6d
+			y: 3.1500000000000004d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:fluid/steam_still"
 			rotation: 0.0d
 			width: 0.5d
-			x: 2.8d
-			y: 11.65d
+			x: -23.25d
+			y: 0.5500000000000007d
 		}
 		{
 			height: 2.0d
@@ -2399,8 +2399,8 @@
 			image: "minecraft:block/grass_block_side"
 			rotation: 0.0d
 			width: 2.0d
-			x: 6.85d
-			y: 15.95d
+			x: -19.2d
+			y: 4.85d
 		}
 		{
 			color: 7780891
@@ -2411,6 +2411,186 @@
 			width: 2.0d
 			x: 15.75d
 			y: 1.75d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/deepslate"
+			rotation: 0.0d
+			width: 2.0d
+			x: -19.0d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/deepslate_tin_ore"
+			rotation: 0.0d
+			width: 2.0d
+			x: -17.0d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/stone"
+			rotation: 0.0d
+			width: 2.0d
+			x: -15.0d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/iron_ore"
+			rotation: 0.0d
+			width: 2.0d
+			x: -13.0d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/dirt4"
+			rotation: 0.0d
+			width: 2.0d
+			x: -11.0d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/grass_block_side"
+			rotation: 0.0d
+			width: 2.0d
+			x: -9.0d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/casings/bricks/side"
+			rotation: 0.0d
+			width: 2.0d
+			x: -1.0d
+			y: 10.0d
+		}
+		{
+			color: 13092807
+			height: 2.0d
+			image: "modern_industrialization:block/casings/firebricks/side"
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.0d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/casings/bronze/top"
+			rotation: 0.0d
+			width: 2.0d
+			x: -3.0d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/casings/steel/top"
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			color: 5614335
+			height: 2.0d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: 12.0d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/2"
+			rotation: 0.0d
+			width: 2.0d
+			x: 5.0d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/oak_log"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: 10.0d
+		}
+		{
+			color: 7780891
+			height: 2.0d
+			image: "minecraft:block/oak_leaves"
+			order: 2
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: 8.0d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/casings/bricked_bronze"
+			rotation: 0.0d
+			width: 2.0d
+			x: -5.0d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:fluid/steam_still"
+			rotation: 0.0d
+			width: 2.0d
+			x: -5.0d
+			y: 12.0d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/forge_hammer"
+			rotation: 0.0d
+			width: 2.0d
+			x: -9.0d
+			y: 12.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/furnace_front_on"
+			rotation: 0.0d
+			width: 2.0d
+			x: -11.0d
+			y: 12.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/blast_furnace_front_on"
+			rotation: 0.0d
+			width: 2.0d
+			x: -15.0d
+			y: 13.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/iron_block"
+			rotation: 0.0d
+			width: 2.0d
+			x: -13.0d
+			y: 7.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:block/copper_block"
+			rotation: 0.0d
+			width: 2.0d
+			x: -11.0d
+			y: 8.0d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/bronze_block"
+			rotation: 0.0d
+			width: 2.0d
+			x: -16.0d
+			y: 6.0d
 		}
 	]
 	order_index: 4
