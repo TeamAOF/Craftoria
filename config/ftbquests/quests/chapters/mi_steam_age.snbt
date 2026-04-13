@@ -585,7 +585,7 @@
 		}
 		{
 			height: 4.0d
-			image: "extended_industrialization:block/machines/large_macerator/overlay_front_active"
+			image: "ftbquests:textures/shapes/circle/shape.png"
 			order: 5
 			rotation: 0.0d
 			width: 4.0d
@@ -1071,15 +1071,53 @@
 			y: 0.05d
 		}
 		{
-			alpha: 128
+			height: 1.5d
+			image: "ftbquests:textures/shapes/hexagon/shape.png"
+			order: 999
+			rotation: 0.0d
+			width: 1.5d
+			x: -8.35d
+			y: -0.05d
+		}
+		{
+			alpha: 64
 			color: 0
-			height: 1.0d
+			height: 16.0d
+			image: "ftbquests:textures/shapes/square/shape.png"
+			order: 999
+			rotation: 0.0d
+			width: 28.0d
+			x: -13.75d
+			y: 9.75d
+		}
+		{
+			height: 1.5d
 			image: "ftbquests:textures/shapes/circle/shape.png"
 			order: 999
 			rotation: 0.0d
-			width: 1.0d
-			x: -8.3d
-			y: 0.0d
+			width: 1.5d
+			x: -6.35d
+			y: -0.05d
+		}
+		{
+			color: 0
+			height: 1.75d
+			image: "ftbquests:textures/shapes/hexagon/shape.png"
+			order: 990
+			rotation: 0.0d
+			width: 1.75d
+			x: -8.35d
+			y: -0.05d
+		}
+		{
+			color: 170
+			height: 1.75d
+			image: "ftbquests:textures/shapes/circle/shape.png"
+			order: 990
+			rotation: 0.0d
+			width: 1.75d
+			x: -6.35d
+			y: -0.05d
 		}
 	]
 	order_index: 4
@@ -1164,6 +1202,8 @@
 					type: "item"
 				}
 			]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "18FE204843C5AD4B"
 				item: { count: 1, id: "modern_industrialization:bronze_cutting_machine" }
@@ -1448,6 +1488,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				count: 12L
 				id: "2861CBF8587BAF58"
@@ -1655,6 +1697,7 @@
 			y: -0.05000000000000071d
 		}
 		{
+			icon_scale: 2.0d
 			id: "47A8E5DC11E846C5"
 			rewards: [{
 				id: "06A6A1333E794B0B"
@@ -1664,6 +1707,7 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
 			tasks: [{
 				id: "1701ECD01D028A98"
 				item: { count: 1, id: "modern_industrialization:forge_hammer" }
@@ -1869,8 +1913,8 @@
 				id: "21BB58081C262578"
 				type: "checkmark"
 			}]
-			x: -8.349999999999998d
-			y: 1.9499999999999993d
+			x: -9.35d
+			y: 4.75d
 		}
 		{
 			dependencies: ["47A8E5DC11E846C5"]
@@ -1884,6 +1928,7 @@
 				}
 				type: "item"
 			}]
+			size: 2.0d
 			tasks: [{
 				count: 16L
 				id: "5D8A79CA9A57EBCC"
