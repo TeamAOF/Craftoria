@@ -585,15 +585,6 @@
 		}
 		{
 			height: 4.0d
-			image: "ftbquests:textures/shapes/circle/shape.png"
-			order: 5
-			rotation: 0.0d
-			width: 4.0d
-			x: -1.05d
-			y: 0.05d
-		}
-		{
-			height: 4.0d
 			image: "modern_industrialization:block/bronze_plated_bricks"
 			rotation: 0.0d
 			width: 4.0d
@@ -1087,8 +1078,8 @@
 			order: 999
 			rotation: 0.0d
 			width: 28.0d
-			x: -13.75d
-			y: 9.75d
+			x: -14.35d
+			y: 12.55d
 		}
 		{
 			height: 1.5d
@@ -1118,6 +1109,130 @@
 			width: 1.75d
 			x: -6.35d
 			y: -0.05d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.5d
+			image: "modern_industrialization:item/copper_drill"
+			order: 1000
+			rotation: 0.0d
+			width: 1.5d
+			x: 3.35d
+			y: -4.1d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/machines/hatch_item/overlay_front"
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.65d
+			y: -4.15d
+		}
+		{
+			color: 5614335
+			height: 2.0d
+			image: "minecraft:block/water_flow"
+			order: 10
+			rotation: 0.0d
+			width: 2.0d
+			x: -3.0d
+			y: -8.9d
+		}
+		{
+			color: 5614335
+			height: 2.0d
+			image: "minecraft:block/water_flow"
+			order: 10
+			rotation: -90.0d
+			width: 2.0d
+			x: -4.7d
+			y: -10.6d
+		}
+		{
+			alpha: 192
+			height: 1.5d
+			image: "minecraft:block/stone"
+			rotation: 0.0d
+			width: 1.5d
+			x: 12.6d
+			y: -16.25d
+		}
+		{
+			alpha: 64
+			height: 4.0d
+			image: "ftbquests:textures/shapes/square/shape.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 7.4d
+			y: -17.15d
+		}
+		{
+			height: 4.0d
+			image: "extended_industrialization:block/steel_plated_bricks"
+			order: 10
+			rotation: 0.0d
+			width: 4.0d
+			x: 12.1d
+			y: -13.35d
+		}
+		{
+			alpha: 192
+			height: 1.5d
+			image: "minecraft:block/stone"
+			rotation: 0.0d
+			width: 1.5d
+			x: 12.65d
+			y: -14.95d
+		}
+		{
+			alpha: 192
+			height: 1.5d
+			image: "minecraft:block/stone"
+			rotation: 0.0d
+			width: 1.5d
+			x: 11.4d
+			y: -14.95d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/machines/water_pump/overlay_front_active"
+			rotation: 0.0d
+			width: 2.0d
+			x: 14.85d
+			y: -2.5d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/machines/boiler/overlay_front_active"
+			rotation: 0.0d
+			width: 2.0d
+			x: 16.75d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/machines/compressor/overlay_front_active"
+			rotation: 0.0d
+			width: 2.0d
+			x: 19.15d
+			y: -2.5d
+		}
+		{
+			height: 2.0d
+			image: "extended_industrialization:block/machines/bending_machine/overlay_front_active"
+			rotation: 0.0d
+			width: 2.0d
+			x: 22.95d
+			y: -2.25d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/machines/cutting_machine/overlay_front_active"
+			rotation: 0.0d
+			width: 2.0d
+			x: 21.05d
+			y: -2.35d
 		}
 	]
 	order_index: 4
@@ -1209,8 +1324,8 @@
 				item: { count: 1, id: "modern_industrialization:bronze_cutting_machine" }
 				type: "item"
 			}]
-			x: -3.0d
-			y: -4.35d
+			x: -1.8d
+			y: -4.2d
 		}
 		{
 			dependencies: ["0B2FF8169FD3812D"]
@@ -1447,13 +1562,15 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "0227FC6834BFBF74"
 				item: { count: 1, id: "modern_industrialization:copper_drill" }
 				type: "item"
 			}]
-			x: 4.300000000000001d
-			y: -4.300000000000001d
+			x: 3.3d
+			y: -4.2d
 		}
 		{
 			dependencies: ["4A5466E364B85AEF"]
