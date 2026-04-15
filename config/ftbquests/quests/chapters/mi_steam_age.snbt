@@ -1069,8 +1069,8 @@
 			order: 999
 			rotation: 0.0d
 			width: 28.0d
-			x: -5.6d
-			y: 37.0d
+			x: -2.7d
+			y: -7.0d
 		}
 		{
 			height: 1.5d
@@ -1078,8 +1078,8 @@
 			order: 999
 			rotation: 0.0d
 			width: 1.5d
-			x: -6.35d
-			y: -0.05d
+			x: -11.5d
+			y: 1.5d
 		}
 		{
 			color: 0
@@ -1098,8 +1098,8 @@
 			order: 990
 			rotation: 0.0d
 			width: 1.75d
-			x: -6.35d
-			y: -0.05d
+			x: -11.3d
+			y: 2.2d
 		}
 		{
 			alpha: 128
@@ -3492,6 +3492,74 @@
 			x: 17.5d
 			y: 15.1d
 		}
+		{
+			color: 7373444
+			height: 2.0d
+			image: "ftbquests:textures/gui/fade_linear.png"
+			order: 777
+			rotation: 0.0d
+			width: 2.0d
+			x: -16.0d
+			y: 6.0d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/bronze_block"
+			rotation: 0.0d
+			width: 2.0d
+			x: -16.0d
+			y: 7.6d
+		}
+		{
+			height: 2.0d
+			image: "modern_industrialization:block/bronze_block"
+			rotation: 27.0d
+			width: 2.0d
+			x: -18.8d
+			y: 7.7d
+		}
+		{
+			color: 7373444
+			height: 2.0d
+			image: "ftbquests:textures/gui/fade_linear_noisy_b.png"
+			order: 777
+			rotation: 0.0d
+			width: 2.0d
+			x: -16.0d
+			y: 7.6d
+		}
+		{
+			color: 7373444
+			height: 2.0d
+			image: "ftbquests:textures/gui/fade_linear.png"
+			order: 777
+			rotation: 27.0d
+			width: 2.0d
+			x: -18.8d
+			y: 7.7d
+		}
+		{
+			alpha: 128
+			color: 0
+			height: 1.25d
+			image: "modern_industrialization:item/bronze_ingot"
+			order: 600
+			rotation: 0.0d
+			width: 1.25d
+			x: -12.9d
+			y: 0.1d
+		}
+		{
+			alpha: 196
+			color: 0
+			height: 1.5d
+			image: "ftbquests:textures/shapes/circle/background.png"
+			order: 666
+			rotation: 0.0d
+			width: 1.5d
+			x: -12.2d
+			y: 0.9d
+		}
 	]
 	order_index: 4
 	quest_links: [ ]
@@ -3712,6 +3780,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "1B8C5BC953BE2479"
 				item: { count: 1, id: "modern_industrialization:bronze_mixer" }
@@ -3772,6 +3842,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [
 				{
 					id: "444AEA4B9D32610C"
@@ -4293,6 +4365,7 @@
 		}
 		{
 			dependencies: ["47A8E5DC11E846C5"]
+			icon_scale: 1.5d
 			id: "164F4710E109F7F2"
 			rewards: [{
 				count: 16
@@ -4303,6 +4376,7 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
 			size: 2.0d
 			tasks: [{
 				count: 16L
@@ -4310,8 +4384,8 @@
 				item: { count: 1, id: "modern_industrialization:bronze_ingot" }
 				type: "item"
 			}]
-			x: -6.349999999999998d
-			y: -0.05000000000000071d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2FB2FE782B1103D6"]
@@ -4452,6 +4526,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "5EEBC974BA139EC9"
 				item: { count: 1, id: "extended_industrialization:bronze_bending_machine" }
@@ -4551,6 +4627,8 @@
 					type: "item"
 				}
 			]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "7F7A756D92A64A36"
 				item: { count: 1, id: "extended_industrialization:steam_chainsaw" }
