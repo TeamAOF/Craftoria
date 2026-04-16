@@ -1,7 +1,7 @@
 {
 	autofocus_id: "469641436BC858D3"
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "hexagon"
 	filename: "mi_steam_age"
 	group: "066C799B2F5452CD"
 	icon: {
@@ -44,10 +44,11 @@
 		{
 			height: 2.0d
 			image: "modern_industrialization:fluid/steam_still"
+			order: 1
 			rotation: 0.0d
 			width: 2.0d
-			x: -0.1d
-			y: -7.55d
+			x: -0.5d
+			y: -8.0d
 		}
 		{
 			height: 2.0d
@@ -60,10 +61,11 @@
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
 			rotation: 0.0d
 			width: 2.0d
-			x: -0.10000000000000142d
-			y: -5.85d
+			x: -0.5d
+			y: -6.2d
 		}
 		{
 			height: 2.0d
@@ -98,20 +100,21 @@
 			y: -7.55d
 		}
 		{
-			height: 2.0d
+			height: 1.0d
 			image: "modern_industrialization:fluid/steam_still"
+			order: 1
 			rotation: 0.0d
-			width: 2.0d
-			x: -3.5d
-			y: -5.85d
+			width: 1.0d
+			x: -3.1d
+			y: -5.4d
 		}
 		{
-			height: 2.0d
+			height: 1.0d
 			image: "modern_industrialization:fluid/steam_still"
 			rotation: 0.0d
-			width: 2.0d
-			x: -3.5d
-			y: -4.15d
+			width: 1.0d
+			x: -6.3d
+			y: -9.2d
 		}
 		{
 			height: 2.0d
@@ -680,26 +683,28 @@
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/bricks/side"
+			order: 1
 			rotation: 0.0d
 			width: 2.0d
-			x: -0.1d
-			y: -4.15d
+			x: -0.4999999999999986d
+			y: -4.4d
 		}
 		{
-			height: 2.0d
+			height: 1.0d
 			image: "modern_industrialization:block/casings/bricks/side"
+			order: 1
 			rotation: 0.0d
-			width: 2.0d
-			x: -1.8d
-			y: -4.15d
+			width: 1.0d
+			x: -2.2d
+			y: -4.5d
 		}
 		{
-			height: 2.0d
+			height: 1.0d
 			image: "modern_industrialization:block/casings/bricks/side"
 			rotation: 0.0d
-			width: 2.0d
-			x: -1.8d
-			y: -5.85d
+			width: 1.0d
+			x: -2.1d
+			y: -6.6d
 		}
 		{
 			color: 13092807
@@ -908,18 +913,20 @@
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
 			rotation: 0.0d
 			width: 2.0d
-			x: 3.3d
-			y: -4.15d
+			x: 3.1000000000000014d
+			y: -4.4d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
 			rotation: 0.0d
 			width: 2.0d
-			x: 1.6d
-			y: -4.15d
+			x: 1.3000000000000016d
+			y: -4.4d
 		}
 		{
 			color: 13092807
@@ -974,35 +981,39 @@
 		{
 			height: 2.0d
 			image: "extended_industrialization:block/steel_plated_bricks"
+			order: 1
 			rotation: 0.0d
 			width: 2.0d
-			x: 1.6d
-			y: -7.55d
+			x: 1.3000000000000003d
+			y: -8.0d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel/top"
+			order: 1
 			rotation: 0.0d
 			width: 2.0d
-			x: 3.3d
-			y: -5.85d
+			x: 3.1000000000000014d
+			y: -6.2d
 		}
 		{
 			color: 13092807
 			height: 2.0d
 			image: "modern_industrialization:block/casings/firebricks/side"
+			order: 1
 			rotation: 0.0d
 			width: 2.0d
-			x: 1.6d
-			y: -5.85d
+			x: 1.3000000000000016d
+			y: -6.2d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:fluid/steam_still"
+			order: 1
 			rotation: 0.0d
 			width: 2.0d
-			x: 3.3d
-			y: -7.55d
+			x: 3.0999999999999996d
+			y: -8.0d
 		}
 		{
 			color: 5614335
@@ -1069,8 +1080,8 @@
 			order: 999
 			rotation: 0.0d
 			width: 28.0d
-			x: -2.7d
-			y: -7.0d
+			x: 55.6d
+			y: 20.6d
 		}
 		{
 			height: 1.5d
@@ -1115,10 +1126,11 @@
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/machines/hatch_item/overlay_front"
+			order: 2
 			rotation: 0.0d
 			width: 2.0d
-			x: 1.65d
-			y: -4.15d
+			x: 1.4d
+			y: -4.4d
 		}
 		{
 			color: 5614335
@@ -1818,14 +1830,6 @@
 			y: 0.0d
 		}
 		{
-			height: 25.0d
-			image: "ftbquests:textures/gui/double_sky.png"
-			rotation: 180.0d
-			width: 25.0d
-			x: 43.1d
-			y: -15.05d
-		}
-		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/firebricks/side"
 			rotation: 0.0d
@@ -2081,24 +2085,24 @@
 			image: "modern_industrialization:block/casings/steel/ctm/8"
 			rotation: 0.0d
 			width: 2.0d
-			x: 36.3d
-			y: 15.4d
+			x: 38.45d
+			y: 12.0d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel/ctm/8"
 			rotation: 0.0d
 			width: 2.0d
-			x: 35.8d
-			y: 13.75d
+			x: 37.35d
+			y: 12.3d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel/ctm/8"
 			rotation: -90.0d
 			width: 2.0d
-			x: 3.6999999999999997d
-			y: 24.099999999999998d
+			x: 4.2d
+			y: 24.6d
 		}
 		{
 			height: 2.0d
@@ -2716,96 +2720,96 @@
 			image: "modern_industrialization:block/casings/steel/top"
 			rotation: -90.0d
 			width: 2.0d
-			x: -1.4d
-			y: 22.4d
+			x: -1.2d
+			y: 22.8d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/2"
 			rotation: -90.0d
 			width: 2.0d
-			x: 0.2999999999999998d
-			y: 20.7d
+			x: 0.6d
+			y: 21.0d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/1"
 			rotation: -90.0d
 			width: 2.0d
-			x: -1.4d
-			y: 20.7d
+			x: -1.2d
+			y: 21.0d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/2"
 			rotation: -90.0d
 			width: 2.0d
-			x: 1.9999999999999996d
-			y: 20.7d
+			x: 2.4d
+			y: 21.0d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/2"
 			rotation: -90.0d
 			width: 2.0d
-			x: 0.2999999999999998d
-			y: 24.099999999999998d
+			x: 0.6d
+			y: 24.6d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/2"
 			rotation: -90.0d
 			width: 2.0d
-			x: 1.9999999999999996d
-			y: 24.099999999999998d
+			x: 2.3999999999999995d
+			y: 24.6d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/1"
 			rotation: -90.0d
 			width: 2.0d
-			x: -1.4d
-			y: 24.099999999999998d
+			x: -1.2d
+			y: 24.6d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel/top"
 			rotation: -90.0d
 			width: 2.0d
-			x: 5.399999999999999d
-			y: 22.4d
+			x: 6.000000000000001d
+			y: 22.8d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel/top"
 			rotation: -90.0d
 			width: 2.0d
-			x: 5.399999999999999d
-			y: 20.7d
+			x: 6.0d
+			y: 21.0d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel/top"
 			rotation: -90.0d
 			width: 2.0d
-			x: 5.399999999999999d
-			y: 24.099999999999998d
+			x: 6.0d
+			y: 24.6d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel/top"
 			rotation: -90.0d
 			width: 2.0d
-			x: 3.6999999999999997d
-			y: 22.4d
+			x: 4.2d
+			y: 22.8d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/steel/ctm/8"
 			rotation: -90.0d
 			width: 2.0d
-			x: 3.6999999999999997d
-			y: 20.7d
+			x: 4.2d
+			y: 21.0d
 		}
 		{
 			height: 2.0d
@@ -2813,8 +2817,8 @@
 			order: 5
 			rotation: -90.0d
 			width: 2.0d
-			x: 5.399999999999999d
-			y: 22.4d
+			x: 6.000000000000001d
+			y: 22.8d
 		}
 		{
 			height: 2.0d
@@ -2822,8 +2826,8 @@
 			order: 2
 			rotation: -90.0d
 			width: 2.0d
-			x: 5.399999999999999d
-			y: 20.7d
+			x: 6.0d
+			y: 21.0d
 		}
 		{
 			height: 2.0d
@@ -2831,8 +2835,8 @@
 			order: 2
 			rotation: -90.0d
 			width: 2.0d
-			x: 3.6999999999999997d
-			y: 22.4d
+			x: 4.2d
+			y: 22.8d
 		}
 		{
 			height: 2.0d
@@ -2840,8 +2844,8 @@
 			order: 2
 			rotation: -90.0d
 			width: 2.0d
-			x: 5.399999999999999d
-			y: 24.099999999999998d
+			x: 6.0d
+			y: 24.6d
 		}
 		{
 			height: 2.0d
@@ -2849,8 +2853,8 @@
 			order: 4
 			rotation: -90.0d
 			width: 2.0d
-			x: 0.4d
-			y: 22.4d
+			x: 0.6d
+			y: 22.8d
 		}
 		{
 			height: 2.0d
@@ -2858,16 +2862,16 @@
 			order: 4
 			rotation: -90.0d
 			width: 2.0d
-			x: 1.9999999999999996d
-			y: 22.4d
+			x: 2.4d
+			y: 22.8d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/firebricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 0.3d
-			y: 19.0d
+			x: 0.6d
+			y: 19.2d
 		}
 		{
 			height: 2.0d
@@ -3082,16 +3086,16 @@
 			image: "minecraft:block/stone"
 			rotation: -90.0d
 			width: 2.0d
-			x: 8.6d
-			y: 26.5d
+			x: 8.799999999999999d
+			y: 26.699999999999996d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/bricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 0.3d
-			y: 25.8d
+			x: 0.4d
+			y: 26.4d
 		}
 		{
 			height: 2.0d
@@ -3106,16 +3110,16 @@
 			image: "modern_industrialization:fluid/steam_still"
 			rotation: 0.0d
 			width: 2.0d
-			x: -3.1d
-			y: 20.7d
+			x: -3.0d
+			y: 21.0d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:fluid/steam_still"
 			rotation: 0.0d
 			width: 2.0d
-			x: -3.1d
-			y: 19.0d
+			x: -3.0d
+			y: 19.2d
 		}
 		{
 			height: 2.0d
@@ -3154,8 +3158,8 @@
 			image: "modern_industrialization:fluid/steam_still"
 			rotation: 0.0d
 			width: 2.0d
-			x: -1.4d
-			y: 19.0d
+			x: -1.2d
+			y: 19.2d
 		}
 		{
 			height: 2.0d
@@ -3339,56 +3343,56 @@
 			image: "modern_industrialization:block/casings/firebricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 2.0d
-			y: 19.0d
+			x: 2.4d
+			y: 19.2d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/firebricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 3.7d
-			y: 19.0d
+			x: 4.200000000000001d
+			y: 19.2d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/firebricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 5.4d
-			y: 19.0d
+			x: 6.000000000000002d
+			y: 19.2d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/firebricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 0.3d
-			y: 17.3d
+			x: 0.6000000000000001d
+			y: 17.4d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/firebricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 2.0d
-			y: 17.3d
+			x: 2.4000000000000004d
+			y: 17.4d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/firebricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 3.7d
-			y: 17.3d
+			x: 4.2d
+			y: 17.4d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/firebricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 5.4d
-			y: 17.3d
+			x: 6.000000000000003d
+			y: 17.4d
 		}
 		{
 			height: 2.0d
@@ -3396,8 +3400,8 @@
 			order: 2
 			rotation: -90.0d
 			width: 2.0d
-			x: 3.7d
-			y: 19.0d
+			x: 4.200000000000001d
+			y: 19.2d
 		}
 		{
 			height: 2.0d
@@ -3405,48 +3409,48 @@
 			order: 2
 			rotation: -90.0d
 			width: 2.0d
-			x: 2.0d
-			y: 17.3d
+			x: 2.4000000000000004d
+			y: 17.4d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/bricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 2.0d
-			y: 25.8d
+			x: 2.2999999999999994d
+			y: 26.4d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/bricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 3.7d
-			y: 25.8d
+			x: 4.200000000000001d
+			y: 26.4d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/bricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 0.3d
-			y: 27.5d
+			x: 0.4d
+			y: 28.2d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/bricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 2.0d
-			y: 27.5d
+			x: 2.2999999999999994d
+			y: 28.2d
 		}
 		{
 			height: 2.0d
 			image: "modern_industrialization:block/casings/bricks/side"
 			rotation: -90.0d
 			width: 2.0d
-			x: 3.7d
-			y: 27.5d
+			x: 4.200000000000001d
+			y: 28.2d
 		}
 		{
 			height: 2.0d
@@ -3454,8 +3458,8 @@
 			order: 4
 			rotation: -90.0d
 			width: 2.0d
-			x: 2.0d
-			y: 25.8d
+			x: 2.2999999999999994d
+			y: 26.4d
 		}
 		{
 			height: 2.0d
@@ -3463,8 +3467,8 @@
 			order: 2
 			rotation: -90.0d
 			width: 2.0d
-			x: 3.7d
-			y: 27.5d
+			x: 4.200000000000001d
+			y: 28.2d
 		}
 		{
 			height: 1.0d
@@ -3560,6 +3564,556 @@
 			x: -12.2d
 			y: 0.9d
 		}
+		{
+			height: 16.0d
+			image: "modern_industrialization:textures/gradient_maps/quartz.png"
+			rotation: 0.0d
+			width: 24.0d
+			x: 30.2d
+			y: 32.75d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.1d
+			y: -4.5d
+		}
+		{
+			color: 13092807
+			height: 1.0d
+			image: "modern_industrialization:block/casings/firebricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.2d
+			y: -5.4d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 28.75d
+			y: 20.45d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 28.85d
+			y: 21.45d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 32.849999999999994d
+			y: 20.1d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 31.05d
+			y: 19.200000000000003d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 31.95d
+			y: 19.200000000000003d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 32.849999999999994d
+			y: 19.200000000000003d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 31.05d
+			y: 18.299999999999997d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 31.95d
+			y: 18.299999999999997d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 32.849999999999994d
+			y: 18.299999999999997d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/coke_oven/overlay_front_active"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 31.95d
+			y: 19.200000000000003d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 32.849999999999994d
+			y: 20.1d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/hatch_fluid/overlay_front"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 33.75d
+			y: 19.200000000000003d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/hatch_fluid/overlay_front"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 31.95d
+			y: 20.1d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 33.75d
+			y: 19.200000000000003d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 30.2d
+			y: 22.35d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 31.95d
+			y: 20.1d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 31.05d
+			y: 20.1d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/hatch_item/overlay_front"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 32.8d
+			y: 22.35d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/hatch_item/overlay_front"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 31.1d
+			y: 20.1d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/hatch_item/overlay_front"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 32.849999999999994d
+			y: 20.1d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/steel/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 36.45d
+			y: 18.3d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/firebricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 33.75d
+			y: 18.300000000000004d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/firebricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 34.650000000000006d
+			y: 18.300000000000004d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/firebricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 37.099999999999994d
+			y: 21.5d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/firebricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 33.75d
+			y: 16.5d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/firebricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 38.7d
+			y: 20.85d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/firebricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 34.650000000000006d
+			y: 16.5d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/firebricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 34.650000000000006d
+			y: 19.200000000000003d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/firebricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 33.75d
+			y: 17.4d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 31.2d
+			y: 22.4d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 34.650000000000006d
+			y: 17.4d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/1"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 36.45d
+			y: 14.7d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/1"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 34.650000000000006d
+			y: 14.7d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/steam_blast_furnace/overlay_front_active"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 32.3d
+			y: 22.85d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/steam_blast_furnace/overlay_front_active"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 33.75d
+			y: 18.300000000000004d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/hatch_fluid/overlay_front"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 33.5d
+			y: 22.3d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/hatch_item/overlay_front"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 34.650000000000006d
+			y: 17.450000000000003d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/hatch_item/overlay_front"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 32.849999999999994d
+			y: 17.4d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 32.849999999999994d
+			y: 17.4d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/steel/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 35.55d
+			y: 14.7d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/1"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 37.85d
+			y: 22.5d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/2"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 36.45d
+			y: 15.6d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/2"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 36.45d
+			y: 16.5d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/steel/ctm/8"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 35.6d
+			y: 23.2d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/steel/ctm/8"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 39.55d
+			y: 18.45d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/steel/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 35.55d
+			y: 17.400000000000006d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/steam_quarry/overlay_front_active"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 39.55d
+			y: 22.5d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/steam_quarry/overlay_front_active"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 35.55d
+			y: 17.400000000000006d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/steel/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 34.35d
+			y: 23.1d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 35.55d
+			y: 18.3d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/hatch_item/overlay_front"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 36.45d
+			y: 18.3d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/hatch_fluid/overlay_front"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 35.6d
+			y: 18.3d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/firebricks/side"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 32.849999999999994d
+			y: 16.5d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/steel_machine_casing_pipe/ctm/2"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 34.650000000000006d
+			y: 15.6d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/machines/hatch_item/overlay_front"
+			order: 2
+			rotation: 0.0d
+			width: 1.0d
+			x: 36.45d
+			y: 17.4d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 34.4d
+			y: 22.45d
+		}
+		{
+			height: 1.0d
+			image: "modern_industrialization:block/casings/bronze/top"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 36.45d
+			y: 17.4d
+		}
+		{
+			alpha: 128
+			color: 3289650
+			height: 16.0d
+			image: "minecraft:block/cobbled_deepslate4"
+			rotation: 0.0d
+			width: 24.0d
+			x: -1.65d
+			y: -5.4d
+		}
 	]
 	order_index: 4
 	quest_links: [ ]
@@ -3583,13 +4137,15 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "1FC48C73D2617DAD"
 				item: { count: 1, id: "modern_industrialization:bronze_boiler" }
 				type: "item"
 			}]
-			x: -1.8499999999999979d
-			y: 1.4499999999999993d
+			x: -1.95d
+			y: 1.55d
 		}
 		{
 			dependencies: ["164F4710E109F7F2"]
@@ -3603,6 +4159,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "351F5193ED239DE2"
 				item: { count: 1, id: "modern_industrialization:bronze_compressor" }
@@ -3650,8 +4208,8 @@
 				item: { count: 1, id: "modern_industrialization:bronze_cutting_machine" }
 				type: "item"
 			}]
-			x: -2.3d
-			y: -4.6d
+			x: -2.7d
+			y: -5.0d
 		}
 		{
 			dependencies: ["0B2FF8169FD3812D"]
@@ -3665,6 +4223,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "06824537D41E9EE0"
 				item: { count: 1, id: "modern_industrialization:bronze_drill" }
@@ -3685,6 +4245,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "59DEACFB61E466AF"
 				item: { count: 1, id: "modern_industrialization:bronze_furnace" }
@@ -3761,6 +4323,8 @@
 					type: "item"
 				}
 			]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "1B7B79CC3EA48846"
 				item: { count: 1, id: "modern_industrialization:bronze_macerator" }
@@ -3793,6 +4357,8 @@
 		{
 			dependencies: ["439D48E9647FC8C2"]
 			id: "7D0CF81F7E703B71"
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "4E159C67BBE791A9"
 				item: { count: 1, id: "modern_industrialization:bronze_water_pump" }
@@ -3812,6 +4378,8 @@
 				}
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [
 				{
 					id: "40F57042FF459F82"
@@ -3914,6 +4482,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				count: 2L
 				id: "6DF61D45AADBE5F1"
@@ -3958,6 +4528,8 @@
 				}
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				count: 16L
 				id: "3EA158095473D911"
@@ -4029,6 +4601,8 @@
 					type: "item"
 				}
 			]
+			shape: "none"
+			size: 2.0d
 			tasks: [
 				{
 					count: 13L
@@ -4069,6 +4643,8 @@
 				}
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				count: 16L
 				id: "5B2E3D1DEC23894C"
@@ -4093,6 +4669,8 @@
 				}
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 2.0d
 			tasks: [{
 				count: 64L
 				id: "3E9D3FEE6BC2456C"
@@ -4105,6 +4683,8 @@
 		{
 			dependencies: ["164F4710E109F7F2"]
 			id: "0AC7D844C55119E1"
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "70F99B7CA575EA24"
 				item: { count: 1, id: "modern_industrialization:wrench" }
@@ -4144,7 +4724,6 @@
 			y: -0.05000000000000071d
 		}
 		{
-			icon_scale: 2.0d
 			id: "47A8E5DC11E846C5"
 			rewards: [{
 				id: "06A6A1333E794B0B"
@@ -4155,6 +4734,7 @@
 				type: "item"
 			}]
 			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "1701ECD01D028A98"
 				item: { count: 1, id: "modern_industrialization:forge_hammer" }
@@ -4166,12 +4746,13 @@
 		{
 			dependencies: ["0B2FF8169FD3812D"]
 			id: "215606B3A894512E"
+			size: 1.0d
 			tasks: [{
 				id: "4C1ADCBD61B1673D"
 				type: "checkmark"
 			}]
-			x: 5.7499999999999964d
-			y: -4.9d
+			x: 5.8500000000000005d
+			y: -6.45d
 		}
 		{
 			dependencies: [
@@ -4192,6 +4773,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [
 				{
 					id: "194A4D1A06BA38B9"
@@ -4245,13 +4828,15 @@
 					type: "item"
 				}
 			]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "6F3F92B0E4582953"
 				item: { count: 1, id: "modern_industrialization:steam_mining_drill" }
 				type: "item"
 			}]
-			x: -7.849999999999998d
-			y: -2.0500000000000007d
+			x: -8.3d
+			y: -2.1d
 		}
 		{
 			dependencies: ["6F6898DC529D1120"]
@@ -4264,6 +4849,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [
 				{
 					id: "425B46DC3FA1B410"
@@ -4305,6 +4892,8 @@
 					type: "item"
 				}
 			]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "37D8CFE9758008F3"
 				item: { count: 1, id: "modern_industrialization:steel_packer" }
@@ -4325,6 +4914,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "192E54C81A3A9721"
 				item: { count: 1, id: "modern_industrialization:steel_unpacker" }
@@ -4345,6 +4936,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "26EB9D54317B4999"
 				item: { count: 1, id: "modern_industrialization:steel_wiremill" }
@@ -4365,7 +4958,6 @@
 		}
 		{
 			dependencies: ["47A8E5DC11E846C5"]
-			icon_scale: 1.5d
 			id: "164F4710E109F7F2"
 			rewards: [{
 				count: 16
@@ -4376,8 +4968,8 @@
 				}
 				type: "item"
 			}]
-			shape: "none"
-			size: 2.0d
+			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				count: 16L
 				id: "5D8A79CA9A57EBCC"
@@ -4399,6 +4991,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "60A23D5BC8230A7F"
 				item: { count: 1, id: "modern_industrialization:steel_ingot" }
@@ -4420,6 +5014,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "262F2B11609713B3"
 				item: { count: 1, id: "extended_industrialization:bronze_solar_boiler" }
@@ -4440,6 +5036,8 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [
 				{
 					id: "1E09888165DDF005"
@@ -4488,6 +5086,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [
 				{
 					id: "7FD544BE3034661E"
@@ -4544,6 +5144,8 @@
 				table_id: 6467551270008706529L
 				type: "random"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "29C411995F48226C"
 				item: { count: 1, id: "extended_industrialization:bronze_composter" }
@@ -4575,6 +5177,8 @@
 					type: "item"
 				}
 			]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "06DBB82E4EC2A048"
 				item: { count: 1, id: "extended_industrialization:steel_alloy_smelter" }
@@ -4586,6 +5190,8 @@
 		{
 			dependencies: ["4A5466E364B85AEF"]
 			id: "4D5787F48ECCB000"
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "4B0F3317AD9CA7C7"
 				item: { count: 1, id: "extended_industrialization:steel_brewery" }
@@ -4597,6 +5203,8 @@
 		{
 			dependencies: ["4A5466E364B85AEF"]
 			id: "7533E0212EFE326D"
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "27A91E3CC8996927"
 				item: { count: 1, id: "extended_industrialization:steel_honey_extractor" }
@@ -4634,8 +5242,8 @@
 				item: { count: 1, id: "extended_industrialization:steam_chainsaw" }
 				type: "item"
 			}]
-			x: -8.849999999999998d
-			y: -2.0500000000000007d
+			x: -9.8d
+			y: -2.2d
 		}
 		{
 			dependencies: ["707EBB99AA8F4C57"]
@@ -4649,6 +5257,8 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			tasks: [{
 				id: "697A8DF04C324B2B"
 				item: { count: 1, id: "modern_industrialization:rubber_sheet" }
