@@ -32,8 +32,8 @@
 			order: 200
 			rotation: 0.0d
 			width: 25.0d
-			x: 0.25d
-			y: 0.35d
+			x: 0.0d
+			y: -14.85d
 		}
 		{
 			alpha: 32
@@ -43,8 +43,8 @@
 			order: 500
 			rotation: 0.0d
 			width: 25.0d
-			x: 0.3d
-			y: 15.4d
+			x: 1.4d
+			y: 23.95d
 		}
 		{
 			height: 1.0d
@@ -1098,7 +1098,7 @@
 			color: 5614335
 			height: 1.0d
 			image: "minecraft:textures/environment/end_sky.png"
-			order: 55
+			order: 95
 			rotation: 0.0d
 			width: 1.0d
 			x: 2.220446049250313E-16d
@@ -1108,7 +1108,7 @@
 			color: 5614335
 			height: 1.0d
 			image: "minecraft:textures/environment/end_sky.png"
-			order: 55
+			order: 95
 			rotation: 0.0d
 			width: 1.0d
 			x: -0.85d
@@ -1118,7 +1118,7 @@
 			color: 5614335
 			height: 1.0d
 			image: "minecraft:textures/environment/end_sky.png"
-			order: 55
+			order: 95
 			rotation: 0.0d
 			width: 1.0d
 			x: 0.0d
@@ -1128,7 +1128,7 @@
 			color: 5614335
 			height: 1.0d
 			image: "minecraft:textures/environment/end_sky.png"
-			order: 55
+			order: 95
 			rotation: 0.0d
 			width: 1.0d
 			x: 0.85d
@@ -1138,7 +1138,7 @@
 			color: 5614335
 			height: 1.0d
 			image: "minecraft:textures/environment/end_sky.png"
-			order: 55
+			order: 95
 			rotation: 0.0d
 			width: 1.0d
 			x: 1.7d
@@ -1148,21 +1148,21 @@
 			color: 5614335
 			height: 1.0d
 			image: "minecraft:textures/environment/end_sky.png"
-			order: 55
+			order: 95
 			rotation: 0.0d
 			width: 1.0d
 			x: -1.7d
 			y: -2.6d
 		}
 		{
-			alpha: 192
+			alpha: 64
 			height: 5.0d
 			image: "modern_industrialization:textures/gradient_maps/aluminum.png"
-			order: 90
-			rotation: 135.0d
-			width: 5.0d
+			order: 97
+			rotation: 90.0d
+			width: 2.0d
 			x: 0.0d
-			y: -2.55d
+			y: -2.15d
 		}
 		{
 			height: 1.0d
@@ -2723,8 +2723,8 @@
 			order: 51
 			rotation: 90.0d
 			width: 10.0d
-			x: 0.0d
-			y: -3.0d
+			x: 22.6d
+			y: -13.75d
 		}
 		{
 			color: 5020202
@@ -2937,15 +2937,15 @@
 			y: 6.6d
 		}
 		{
-			alpha: 128
-			color: 16777045
+			alpha: 92
+			color: 16733695
 			height: 7.0d
 			image: "ftbquests:textures/gui/fade_linear.png"
 			order: 90
 			rotation: -135.0d
-			width: 10.0d
-			x: 5.95d
-			y: -2.65d
+			width: 15.0d
+			x: 14.4d
+			y: -7.55d
 		}
 		{
 			height: 1.0d
@@ -4632,6 +4632,87 @@
 			width: 1.0d
 			x: -9.35d
 			y: 7.6d
+		}
+		{
+			height: 7.0d
+			image: "modern_industrialization:textures/gradient_maps/aluminum.png"
+			order: 51
+			rotation: 135.0d
+			width: 10.0d
+			x: -6.95d
+			y: -2.0d
+		}
+		{
+			height: 7.0d
+			image: "modern_industrialization:textures/gradient_maps/aluminum.png"
+			order: 51
+			rotation: -135.0d
+			width: 10.0d
+			x: 14.3d
+			y: -4.4d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/lava_still"
+			order: 300
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.15d
+			y: 10.25d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/pointed_dripstone_down_tip"
+			order: 310
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.85d
+			y: 9.9d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/pointed_dripstone_down_tip_merge"
+			order: 310
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.85d
+			y: 9.85d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/pointed_dripstone_up_tip_merge"
+			order: 310
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.85d
+			y: 10.7d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/pointed_dripstone_up_tip"
+			order: 310
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.9d
+			y: 10.75d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/cracked_deepslate_bricks"
+			order: 290
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.25d
+			y: 9.95d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/ladder"
+			order: 310
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.8d
+			y: 9.9d
 		}
 	]
 	order_index: 9
