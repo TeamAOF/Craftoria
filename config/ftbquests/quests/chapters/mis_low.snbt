@@ -17,12 +17,14 @@
 			y: 0.0d
 		}
 		{
+			alpha: 64
 			height: 8.0d
 			image: "modern_industrialization:textures/gradient_maps/quartz.png"
-			rotation: 0.0d
-			width: 12.0d
-			x: -20.5d
-			y: -2.85d
+			order: 600
+			rotation: 90.0d
+			width: 8.0d
+			x: -19.25d
+			y: 0.0d
 		}
 		{
 			height: 1.0d
@@ -1708,8 +1710,8 @@
 			order: 50
 			rotation: 90.0d
 			width: 8.0d
-			x: 0.05d
-			y: -6.05d
+			x: -9.15d
+			y: -6.6d
 		}
 		{
 			height: 0.5d
@@ -1825,8 +1827,8 @@
 			order: 500
 			rotation: 0.0d
 			width: 1.0d
-			x: -0.8499999999999996d
-			y: -0.55d
+			x: -13.5d
+			y: 0.95d
 		}
 		{
 			height: 1.0d
@@ -1834,8 +1836,8 @@
 			order: 500
 			rotation: 0.0d
 			width: 1.0d
-			x: 0.0d
-			y: -0.55d
+			x: -12.649999999999999d
+			y: 0.95d
 		}
 		{
 			height: 1.0d
@@ -1843,8 +1845,8 @@
 			order: 500
 			rotation: 0.0d
 			width: 1.0d
-			x: 0.8499999999999996d
-			y: -0.55d
+			x: -11.8d
+			y: 0.95d
 		}
 		{
 			height: 1.0d
@@ -1852,8 +1854,8 @@
 			order: 500
 			rotation: 0.0d
 			width: 1.0d
-			x: 1.7000000000000002d
-			y: -0.55d
+			x: -10.95d
+			y: 0.95d
 		}
 		{
 			height: 1.0d
@@ -1861,8 +1863,8 @@
 			order: 500
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.7000000000000002d
-			y: -0.55d
+			x: -14.35d
+			y: 0.95d
 		}
 		{
 			color: 26367
@@ -2575,8 +2577,8 @@
 			order: 550
 			rotation: 0.0d
 			width: 1.0d
-			x: -7.1d
-			y: 1.55d
+			x: -7.95d
+			y: 0.85d
 		}
 		{
 			color: 5020202
@@ -2744,6 +2746,399 @@
 			width: 1.0d
 			x: 8.7d
 			y: 3.1d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.55d
+			y: 3.7d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top1"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.55d
+			y: 4.55d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top2"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.55d
+			y: 5.4d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top3"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.4d
+			y: 5.4d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top4"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.4d
+			y: 4.55d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top5"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.4d
+			y: 3.7d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top6"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.4d
+			y: 2.85d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top7"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.4d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/grass_block_side"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.55d
+			y: 6.25d
+		}
+		{
+			color: 16645629
+			height: 1.0d
+			image: "minecraft:block/grass_block_side"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.4d
+			y: 6.25d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/grass_block_side"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.25d
+			y: 6.25d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/grass_block_side"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.1d
+			y: 6.25d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/grass_block_side"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.95d
+			y: 6.25d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/grass_block_side"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.8d
+			y: 6.25d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/grass_block_side"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.65d
+			y: 6.25d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/grass_block_side"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -9.35d
+			y: 6.25d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/grass_block_side"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -8.5d
+			y: 6.25d
+		}
+		{
+			color: 16771855
+			height: 4.0d
+			image: "ftbquests:textures/shapes/square/background.png"
+			order: 100
+			rotation: 0.0d
+			width: 4.0d
+			x: 0.0d
+			y: -2.55d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top5"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.25d
+			y: 4.55d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top5"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.25d
+			y: 5.4d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top5"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.1d
+			y: 5.4d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top5"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.25d
+			y: 3.7d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.25d
+			y: 2.85d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top3"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.25d
+			y: 2.0d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top1"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.95d
+			y: 5.4d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top6"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.1d
+			y: 4.55d
+		}
+		{
+			color: 26367
+			height: 1.0d
+			image: "minecraft:block/water_still"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.85d
+			y: -0.55d
+		}
+		{
+			color: 26367
+			height: 1.0d
+			image: "minecraft:block/water_still"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -0.55d
+		}
+		{
+			color: 26367
+			height: 1.0d
+			image: "minecraft:block/water_still"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.05d
+			y: -3.2d
+		}
+		{
+			color: 26367
+			height: 1.0d
+			image: "minecraft:block/water_still"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.85d
+			y: 0.35d
+		}
+		{
+			color: 26367
+			height: 1.0d
+			image: "minecraft:block/water_still"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.7d
+			y: -0.55d
+		}
+		{
+			color: 26367
+			height: 1.0d
+			image: "minecraft:block/water_still"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.7d
+			y: -0.55d
+		}
+		{
+			color: 7851263
+			height: 4.0d
+			image: "ftbquests:textures/shapes/square/shape.png"
+			order: 110
+			rotation: 0.0d
+			width: 28.0d
+			x: -5.65d
+			y: -14.1d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/kelp_plant"
+			order: 590
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.55d
+			y: -2.25d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/kelp_plant"
+			order: 606
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.0d
+			y: -1.4d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/kelp_plant"
+			order: 606
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.0d
+			y: -2.2d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:textures/mob_effect/water_breathing.png"
+			order: 606
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.3d
+			y: -0.9d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/filled_map"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.3d
+			y: 1.25d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:textures/map/map_background.png"
+			order: 666
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.05d
+			y: 2.1d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/stripped_dark_oak_log"
+			order: 666
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.55d
+			y: 3.4d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/dark_oak_log"
+			order: 666
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.55d
+			y: 3.2d
 		}
 	]
 	order_index: 7
