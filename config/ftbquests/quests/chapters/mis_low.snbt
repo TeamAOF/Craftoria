@@ -1316,7 +1316,7 @@
 		}
 		{
 			height: 1.0d
-			image: "extended_industrialization:block/casings/annealed_copper_tesla/2"
+			image: "extended_industrialization:block/casings/electrum_tesla/2"
 			order: 800
 			rotation: 90.0d
 			width: 1.0d
@@ -2067,12 +2067,12 @@
 		}
 		{
 			height: 1.0d
-			image: "minecraft:block/stone"
-			order: 700
+			image: "minecraft:block/stone4"
+			order: 500
 			rotation: 0.0d
 			width: 1.0d
-			x: 13.0d
-			y: 3.75d
+			x: 12.75d
+			y: 0.95d
 		}
 		{
 			color: 5614335
@@ -2759,24 +2759,6 @@
 		}
 		{
 			height: 1.0d
-			image: "minecraft:block/grass_block_side"
-			order: 9989
-			rotation: 0.0d
-			width: 1.0d
-			x: -8.25d
-			y: 1.85d
-		}
-		{
-			height: 1.0d
-			image: "minecraft:block/grass_block_side"
-			order: 9989
-			rotation: 0.0d
-			width: 1.0d
-			x: -7.3500000000000005d
-			y: 1.85d
-		}
-		{
-			height: 1.0d
 			image: "minecraft:block/sand"
 			order: 500
 			rotation: 0.0d
@@ -2819,8 +2801,8 @@
 			order: 500
 			rotation: 0.0d
 			width: 1.0d
-			x: 5.5d
-			y: 8.85d
+			x: 6.8d
+			y: 7.9d
 		}
 		{
 			color: 11329415
@@ -3313,8 +3295,8 @@
 			order: 500
 			rotation: 0.0d
 			width: 1.0d
-			x: -2.55d
-			y: 5.95d
+			x: -0.05d
+			y: 7.9d
 		}
 		{
 			color: 6863705
@@ -3461,8 +3443,8 @@
 			order: 500
 			rotation: 0.0d
 			width: 1.0d
-			x: 5.1d
-			y: 0.85d
+			x: 10.55d
+			y: 1.55d
 		}
 		{
 			color: 10804738
@@ -3529,8 +3511,8 @@
 			order: 500
 			rotation: 0.0d
 			width: 1.0d
-			x: 2.55d
-			y: 5.95d
+			x: 7.65d
+			y: 5.1d
 		}
 		{
 			color: 6863705
@@ -3539,8 +3521,8 @@
 			order: 500
 			rotation: 0.0d
 			width: 1.0d
-			x: 3.4d
-			y: 5.1d
+			x: 8.5d
+			y: 4.25d
 		}
 		{
 			color: 6863705
@@ -4120,20 +4102,20 @@
 		{
 			height: 1.0d
 			image: "minecraft:block/stone"
-			order: 500
+			order: 502
 			rotation: 0.0d
 			width: 1.0d
-			x: 5.95d
-			y: 0.85d
+			x: 9.4d
+			y: 3.25d
 		}
 		{
 			height: 1.0d
 			image: "minecraft:block/powder_snow"
-			order: 502
+			order: 501
 			rotation: 0.0d
 			width: 1.0d
-			x: 12.1d
-			y: 0.0d
+			x: 12.6d
+			y: 2.1d
 		}
 		{
 			height: 1.0d
@@ -4413,8 +4395,8 @@
 			order: 500
 			rotation: 0.0d
 			width: 1.0d
-			x: 5.1d
-			y: 0.0d
+			x: 13.65d
+			y: 2.35d
 		}
 		{
 			height: 1.0d
@@ -4706,6 +4688,604 @@
 			width: 1.0d
 			x: -12.25d
 			y: -1.95d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.55d
+			y: 7.2d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_side_overlay"
+			order: 510
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.95d
+			y: 7.7d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/dirt"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.4d
+			y: 5.95d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/dirt"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.25d
+			y: 5.95d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_side_overlay"
+			order: 510
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.1d
+			y: 7.4d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.9d
+			y: 8.6d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.1d
+			y: 4.25d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.5d
+			y: 5.1d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.3d
+			y: 7.6d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 502
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.6d
+			y: 3.75d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.75d
+			y: 9.15d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.7d
+			y: 8.35d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.75d
+			y: 7.75d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.95d
+			y: 7.8d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/dirt"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.1d
+			y: 0.85d
+		}
+		{
+			color: 10804738
+			height: 1.0d
+			image: "minecraft:block/grass_block_side_overlay"
+			order: 510
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.15d
+			y: 4.55d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/dirt"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.9d
+			y: 4.6d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.1d
+			y: 8.95d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.6d
+			y: 9.2d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.25d
+			y: 5.4d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.4d
+			y: 7.8d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: 7.95d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.35d
+			y: 8.15d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.35d
+			y: 8.05d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.35d
+			y: 8.65d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.9d
+			y: 8.35d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.35d
+			y: 8.3d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.5d
+			y: 8.35d
+		}
+		{
+			color: 11329415
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.85d
+			y: 9.15d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/grass_block_snow"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 11.05d
+			y: 0.3d
+		}
+		{
+			color: 10804738
+			height: 1.0d
+			image: "minecraft:block/grass_block_side_overlay"
+			order: 510
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.1d
+			y: 0.85d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.55d
+			y: 5.95d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "minecraft:block/water_flow"
+			order: 700
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.8d
+			y: 4.25d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.8d
+			y: 5.1d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.8d
+			y: 4.25d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.8d
+			y: 5.95d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.85d
+			y: 7.7d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.95d
+			y: 7.55d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.95d
+			y: 1.7d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "minecraft:block/water_flow"
+			order: 700
+			rotation: 0.0d
+			width: 1.0d
+			x: 6.8d
+			y: 5.1d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.45d
+			y: 7.0d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_top"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.95d
+			y: 5.95d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "minecraft:block/water_flow"
+			order: 700
+			rotation: 90.0d
+			width: 1.0d
+			x: 5.95d
+			y: 5.95d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "minecraft:block/water_flow"
+			order: 700
+			rotation: 90.0d
+			width: 1.0d
+			x: 6.8d
+			y: 5.95d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "ftbquests:block/water_still_opaque"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.35d
+			y: 8.15d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "minecraft:block/water_still"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.1d
+			y: 5.9d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "ftbquests:block/water_still_opaque"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.5d
+			y: 5.95d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "minecraft:block/water_flow"
+			order: 700
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.95d
+			y: 1.7d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "minecraft:block/water_flow"
+			order: 700
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.95d
+			y: 0.85d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/ice"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.95d
+			y: 0.85d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/dirt"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.1d
+			y: 5.95d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/dirt"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.3d
+			y: 7.15d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/dirt"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.4d
+			y: 5.1d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/dirt"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.95d
+			y: 6.8d
+		}
+		{
+			color: 6863705
+			height: 1.0d
+			image: "minecraft:block/grass_block_side_overlay"
+			order: 510
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.1d
+			y: 5.9d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "ftbquests:block/water_still_opaque"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.8d
+			y: 7.15d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "ftbquests:block/water_still_opaque"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.75d
+			y: 7.75d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "minecraft:block/water_still"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.5d
+			y: 7.3d
+		}
+		{
+			color: 5614335
+			height: 1.0d
+			image: "minecraft:block/water_still"
+			order: 600
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.15d
+			y: 5.05d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/dirt"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.1d
+			y: 7.4d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:block/dirt"
+			order: 500
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.25d
+			y: 5.15d
 		}
 	]
 	order_index: 7
