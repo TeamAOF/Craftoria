@@ -58,7 +58,7 @@
 [simple_mode]
 	#If enabled, the GUI starts in simple mode with logs hidden and a single "Show Logs (Expert Mode)" button.
 	#Disabled by default.
-	enabled = false
+	enabled = true
 	#If true, modpack creators always see the Expert Mode with logs visible, even if simple mode is enabled.
 	prevent_for_modpack_creators = true
 	#If true, hides the mod list changes section while simple mode is active.
@@ -249,7 +249,7 @@
 	#Enable feature.
 	#Note: This option is ignored if general.help_link is default (CHANGE_ME).
 	#Notifies if in your community (Discord/GitHub) piracy is not supported. Recommended to enable for modpacks.
-	enabled = false
+	enabled = true
 	#Delay in seconds for the OK button when piracy warning is shown.
 	#Set to 0 or -1 to disable the delay.
 	delay = 10
@@ -290,9 +290,9 @@
 	#Not recommended to set it more than 16, as it will affect the increase of GUI size because all text won't fit.
 	upload_all_button_font_size = 16
 	#Same as upload_all_button_font_size, but for Request Help button.
-	request_help_button_font_size = 16
+	request_help_button_font_size = 14
 	#Same as upload_all_button_font_size, but for the Simple Mode toggle button.
-	simple_mode_button_font_size = 16
+	simple_mode_button_font_size = 10
 	#You can change Upload All Button color to request user attention.
 	#format is "R_G_B", range is 0-255, for example "255_0_0" is red color. Use "default" to use default swing color.
 	#Default for this button is "0_178_0" (dark green color).
@@ -317,7 +317,7 @@
 	screenshot_of_gui_notice_text_color = "255_0_0"
 	#Color of the button blinking on success action (e.g. upload all finished).
 	#format is "R_G_B", range is 0-255.
-	#Default is "100_255_100" (light green).
+  #Default is "100_255_100" (light green).
 	blinking_button_success_color = "100_255_100"
 	#Color of the button blinking on attention request (e.g. click on link in description).
 	#format is "R_G_B", range is 0-255.
