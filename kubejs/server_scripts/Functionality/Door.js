@@ -287,13 +287,13 @@ function doubleDoor() {
    * @param {$BlockState_} blockState
    * @returns boolean
    */
-/*   function canOpenByHand(blockState) {
+  function canOpenByHand(blockState) {
     const { block } = blockState;
     if (block instanceof $DoorBlock) return block.type().canOpenByHand(); // Check if the door can be opened by hand
     // Check if the trapdoor is wooden (the one I want I can't access, will do with a tag for now)
-    else if (block instanceof $TrapDoorBlock) return block.hasTag('minecraft:wooden_trapdoors');
+    //else if (block instanceof $TrapDoorBlock) return block.hasTag('minecraft:wooden_trapdoors');
     return true; // Return true for other blocks (fence gates, etc.)
-  } */
+  }
 
   return {
     /**
