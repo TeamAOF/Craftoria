@@ -1,7 +1,8 @@
 {
 	autofocus_id: "668453E081A6C57B"
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "none"
+	default_quest_size: 2.0d
 	filename: "mi_quantum_age"
 	group: "066C799B2F5452CD"
 	icon: {
@@ -704,7 +705,7 @@
 			rotation: 0.0d
 			width: 1.5d
 			x: 9.0d
-			y: 4.75d
+			y: 5.5d
 		}
 		{
 			alpha: 128
@@ -715,8 +716,8 @@
 			order: 2000
 			rotation: 0.0d
 			width: 1.5d
-			x: 8.25d
-			y: 5.5d
+			x: 9.5d
+			y: 6.0d
 		}
 		{
 			click: "#587D73D979FA9D28"
@@ -727,8 +728,8 @@
 			order: 2020
 			rotation: 0.0d
 			width: 1.5d
-			x: 9.75d
-			y: 4.0d
+			x: 8.5d
+			y: 5.0d
 		}
 		{
 			alpha: 128
@@ -739,7 +740,7 @@
 			rotation: 0.0d
 			width: 1.5d
 			x: 9.0d
-			y: 4.75d
+			y: 5.5d
 		}
 		{
 			color: 15393739
@@ -748,19 +749,29 @@
 			order: 2021
 			rotation: 0.0d
 			width: 1.5d
-			x: 9.75d
-			y: 4.0d
+			x: 8.5d
+			y: 5.0d
 		}
 		{
 			alpha: 128
 			color: 16577756
 			height: 1.5d
 			image: "ftbquests:textures/shapes/square/outline.png"
-			order: 2021
+			order: 2001
 			rotation: 0.0d
 			width: 1.5d
-			x: 8.25d
-			y: 5.5d
+			x: 9.5d
+			y: 6.0d
+		}
+		{
+			color: 16733695
+			height: 1.0d
+			image: "ftbquests:textures/shapes/circle/shape.png"
+			order: 2000
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.25d
+			y: 0.0d
 		}
 	]
 	order_index: 9
@@ -783,8 +794,8 @@
 				item: { count: 1, id: "modern_industrialization:titanium_ingot" }
 				type: "item"
 			}]
-			x: 3.7d
-			y: 19.599999999999998d
+			x: -9.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["668453E081A6C57B"]
@@ -803,8 +814,8 @@
 				item: { count: 1, id: "industrialization_overdrive:multi_processing_array" }
 				type: "item"
 			}]
-			x: 3.7d
-			y: 22.099999999999998d
+			x: -7.75d
+			y: 4.0d
 		}
 		{
 			dependencies: ["668453E081A6C57B"]
@@ -824,8 +835,8 @@
 				item: { count: 1, id: "modern_industrialization:titanium_drill" }
 				type: "item"
 			}]
-			x: 5.7d
-			y: 21.099999999999998d
+			x: -5.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["668453E081A6C57B"]
@@ -844,8 +855,8 @@
 				item: { count: 1, id: "modern_industrialization:blastproof_alloy_plate" }
 				type: "item"
 			}]
-			x: 5.7d
-			y: 19.599999999999998d
+			x: -7.25d
+			y: 0.5d
 		}
 		{
 			dependencies: ["668453E081A6C57B"]
@@ -864,8 +875,8 @@
 				item: { count: 1, id: "modern_industrialization:raw_iridium" }
 				type: "item"
 			}]
-			x: 5.7d
-			y: 18.099999999999998d
+			x: -5.25d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -900,8 +911,8 @@
 					type: "item"
 				}
 			]
-			x: 3.7d
-			y: 16.099999999999998d
+			x: -7.75d
+			y: -2.5d
 		}
 		{
 			dependencies: ["21EDEEE1A1B82B53"]
@@ -915,13 +926,15 @@
 				}
 				type: "item"
 			}]
+			shape: "none"
+			size: 3.0d
 			tasks: [{
 				id: "09C9E520F68836E7"
 				item: { count: 1, id: "modern_industrialization:superconductor_cable" }
 				type: "item"
 			}]
-			x: 7.7d
-			y: 18.099999999999998d
+			x: -2.75d
+			y: -1.5d
 		}
 		{
 			dependencies: ["7AF270EF635B11CF"]
@@ -949,8 +962,8 @@
 				item: { count: 1, id: "modern_industrialization:implosion_compressor" }
 				type: "item"
 			}]
-			x: 7.7d
-			y: 19.599999999999998d
+			x: -5.25d
+			y: 0.5d
 		}
 		{
 			dependencies: ["40915337B7E427F8"]
@@ -960,8 +973,8 @@
 				item: { count: 1, id: "modern_industrialization:gravichestplate" }
 				type: "item"
 			}]
-			x: 8.2d
-			y: 16.599999999999998d
+			x: -0.25d
+			y: -1.5d
 		}
 		{
 			dependencies: ["40915337B7E427F8"]
@@ -980,8 +993,8 @@
 				item: { count: 1, id: "extended_industrialization:ultimate_laser_drill" }
 				type: "item"
 			}]
-			x: 7.2d
-			y: 16.599999999999998d
+			x: -2.75d
+			y: -3.5d
 		}
 		{
 			dependencies: ["2C4CA092A557205E"]
@@ -991,8 +1004,8 @@
 				item: { count: 1, id: "extended_industrialization:nano_gravichestplate" }
 				type: "item"
 			}]
-			x: 8.2d
-			y: 15.1d
+			x: -0.25d
+			y: -3.5d
 		}
 		{
 			dependencies: ["1C25114D2AF71C35"]
@@ -1011,8 +1024,8 @@
 				item: { count: 1, id: "modern_industrialization:mixed_ingot_iridium" }
 				type: "item"
 			}]
-			x: 9.699999999999996d
-			y: 18.599999999999998d
+			x: -2.75d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1C25114D2AF71C35"]
@@ -1055,18 +1068,20 @@
 					type: "item"
 				}
 			]
-			x: 9.699999999999996d
-			y: 20.599999999999998d
+			x: -2.75d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3761B64135EA94C0"]
 			id: "454FF6E2926163F7"
+			shape: "circle"
+			size: 1.0d
 			tasks: [{
 				id: "1BD6E4CB629D8E7A"
 				type: "checkmark"
 			}]
-			x: 9.699999999999996d
-			y: 22.099999999999998d
+			x: -2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3761B64135EA94C0"]
@@ -1085,8 +1100,8 @@
 				item: { count: 1, id: "modern_industrialization:nuke" }
 				type: "item"
 			}]
-			x: 11.699999999999996d
-			y: 20.599999999999998d
+			x: -0.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["67F2212453B81446"]
@@ -1104,8 +1119,8 @@
 				item: { count: 1, id: "modern_industrialization:quantum_circuit" }
 				type: "item"
 			}]
-			x: 11.699999999999996d
-			y: 18.599999999999998d
+			x: -0.25d
+			y: 0.5d
 		}
 		{
 			dependencies: ["640DB4139DF8AFA4"]
@@ -1138,8 +1153,8 @@
 					type: "item"
 				}
 			]
-			x: 13.699999999999996d
-			y: 19.099999999999998d
+			x: 2.25d
+			y: 0.5d
 		}
 		{
 			dependencies: ["135FBE79D4415F15"]
@@ -1158,8 +1173,8 @@
 				item: { count: 1, id: "modern_industrialization:singularity" }
 				type: "item"
 			}]
-			x: 13.699999999999996d
-			y: 20.599999999999998d
+			x: 2.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["325D7C592E2FB05A"]
@@ -1177,8 +1192,8 @@
 				item: { count: 1, id: "modern_industrialization:uu_matter_bucket" }
 				type: "item"
 			}]
-			x: 16.199999999999996d
-			y: 20.599999999999998d
+			x: 4.75d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1CC910880728D896"]
@@ -1211,8 +1226,8 @@
 					type: "item"
 				}
 			]
-			x: 16.199999999999996d
-			y: 19.099999999999998d
+			x: 4.75d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1245,8 +1260,8 @@
 				item: { count: 1, id: "modern_industrialization:replicator_1" }
 				type: "item"
 			}]
-			x: 17.699999999999996d
-			y: 19.599999999999998d
+			x: 6.75d
+			y: 0.5d
 		}
 		{
 			dependencies: ["156575F76CAB51A0"]
@@ -1270,13 +1285,14 @@
 					type: "item"
 				}
 			]
+			size: 3.0d
 			tasks: [{
 				id: "0282C498E6D1359E"
 				item: { count: 1, id: "modern_industrialization:replicator" }
 				type: "item"
 			}]
-			x: 19.199999999999996d
-			y: 19.599999999999998d
+			x: 8.75d
+			y: 0.5d
 		}
 		{
 			dependencies: ["2472B23BC0C28C6C"]
@@ -1305,8 +1321,8 @@
 				item: { count: 1, id: "mi_tweaks:flux_transformer" }
 				type: "item"
 			}]
-			x: 18.199999999999996d
-			y: 17.599999999999998d
+			x: 6.75d
+			y: -1.5d
 		}
 		{
 			dependencies: ["640DB4139DF8AFA4"]
@@ -1324,8 +1340,8 @@
 				item: { count: 1, id: "modern_industrialization:quantum_upgrade" }
 				type: "item"
 			}]
-			x: 16.199999999999996d
-			y: 17.599999999999998d
+			x: 4.75d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2472B23BC0C28C6C"]
@@ -1365,8 +1381,8 @@
 					type: "item"
 				}
 			]
-			x: 16.199999999999996d
-			y: 16.099999999999998d
+			x: 4.75d
+			y: -3.5d
 		}
 		{
 			dependencies: ["7342F6461382E839"]
@@ -1402,8 +1418,8 @@
 					type: "item"
 				}
 			]
-			x: 16.199999999999996d
-			y: 14.6d
+			x: 6.75d
+			y: -3.5d
 		}
 	]
 }
