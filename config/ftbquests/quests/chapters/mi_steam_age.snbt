@@ -695,40 +695,43 @@
 		}
 		{
 			alpha: 128
+			click: "#53A9F74C4BFE02D2"
 			color: 16755200
-			height: 2.0d
+			height: 1.5d
 			hover: ["MI: The Electric Age"]
 			image: "modern_industrialization:textures/gui/milogo.png"
-			order: 101
+			order: 2010
 			rotation: 0.0d
-			width: 2.0d
-			x: 4.55d
-			y: 8.8d
+			width: 1.5d
+			x: 9.0d
+			y: 4.75d
 		}
 		{
-			height: 2.0d
+			height: 1.5d
 			hover: ["MI: The Steam Age"]
 			image: "modern_industrialization:textures/gui/milogo.png"
-			order: 103
+			order: 2020
 			rotation: 0.0d
-			width: 2.0d
-			x: 2.55d
-			y: 8.9d
+			width: 1.5d
+			x: 8.25d
+			y: 5.5d
 		}
 		{
-			alpha: 64
+			alpha: 128
+			click: "#587D73D979FA9D28"
 			color: 16733695
-			height: 2.0d
+			height: 1.5d
 			hover: ["MI: The Quantum Age"]
 			image: "modern_industrialization:textures/gui/milogo.png"
-			order: 100
+			order: 2000
 			rotation: 0.0d
-			width: 2.0d
-			x: 6.65d
-			y: 8.75d
+			width: 1.5d
+			x: 9.75d
+			y: 4.0d
 		}
 		{
 			color: 16733695
+			dev: true
 			height: 1.0d
 			image: "ftbquests:textures/shapes/circle/shape.png"
 			order: 1000
@@ -736,6 +739,39 @@
 			width: 1.0d
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			alpha: 128
+			color: 16577756
+			height: 1.5d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			order: 2011
+			rotation: 0.0d
+			width: 1.5d
+			x: 9.0d
+			y: 4.75d
+		}
+		{
+			alpha: 128
+			color: 15393739
+			height: 1.5d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			order: 2001
+			rotation: 0.0d
+			width: 1.5d
+			x: 9.75d
+			y: 4.0d
+		}
+		{
+			alpha: 192
+			color: 16577756
+			height: 1.5d
+			image: "ftbquests:textures/shapes/square/outline.png"
+			order: 2021
+			rotation: 0.0d
+			width: 1.5d
+			x: 8.25d
+			y: 5.5d
 		}
 	]
 	order_index: 5
