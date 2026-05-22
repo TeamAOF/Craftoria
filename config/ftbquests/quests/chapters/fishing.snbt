@@ -156,7 +156,7 @@
 			y: -1.42d
 		}
 	]
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -217,12 +217,12 @@
 			tasks: [
 				{
 					id: "691E6AA922761E29"
-					item: { components: { "ftbfiltersystem:filter": "or(item(starcatcher:bobber)item(starcatcher:steady_bobber)item(starcatcher:clear_bobber)item(starcatcher:aqua_bobber)item(starcatcher:vanilla_bobber))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "or(item_tag(starcatcher:hooks))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 				{
 					id: "7376AAE3B45AD4B9"
-					item: { components: { "ftbfiltersystem:filter": "or(item(starcatcher:hook)item(starcatcher:crystal_hook)item(starcatcher:shiny_hook)item(starcatcher:gold_hook)item(starcatcher:mossy_hook)item(starcatcher:stone_hook)item(starcatcher:split_hook)item(starcatcher:heavy_hook))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "or(item_tag(starcatcher:bobbers))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 			]
@@ -284,12 +284,12 @@
 			size: 1.5d
 			tasks: [{
 				id: "18DB91FAFFC46B5D"
-				item: { components: { "starcatcher:trophy": { all: { total: 50, unique: 20 }, always_show: 1b, fish_properties: { bait_restrictions: { consumes_bait: 1b, correct_bait_chance_added: 0, correct_baits: [ ] }, base_chance: 5, catch_info: { always_spawn_entity: 0b, entity: "starcatcher:fish", fish_bucket: "starcatcher:missingno", item: "starcatcher:trophy_bronze", treasure: "starcatcher:waterlogged_satchel" }, daytime: "all", difficulty: { decay: 1.0f, missPenalty: 5, modifiers: [ ], speed: 9, sweetspots: [ { color_as_int: 65280, hitbox_size_in_pixels: 22, is_flip: 0b, moving_rate: 0.0f, reward: 15, sweet_spot_type: "starcatcher:normal", texture_path: "starcatcher:textures/gui/minigame/spots/normal.png", vanishing_rate: 0.0f }, { color_as_int: 65280, hitbox_size_in_pixels: 22, is_flip: 0b, moving_rate: 0.0f, reward: 15, sweet_spot_type: "starcatcher:normal", texture_path: "starcatcher:textures/gui/minigame/spots/normal.png", vanishing_rate: 0.0f } ] }, has_guide_entry: 1b, rarity: "common", size_and_weight: { average_size_cm: 41.0f, average_weight_grams: 2001.0f, deviation_size_cm: 21.0f, deviation_weight_grams: 701.0f }, skips_minigame: 0b, weather: "all", world_restrictions: { above_y: -2147483648, below_y: 2147483647, biomes: [ ], biomes_blacklist: [ ], biomes_blacklist_tags: [ ], biomes_tags: [ ], dimensions: [ ], dimensions_blacklist: [ ], fluids: ["minecraft:water"], seasons: ["all"] } }, percentage_chance_to_catch: 100.0f, progress: { }, repeatable: 1b, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_bronze" }
+				item: { count: 1, id: "starcatcher:trophy_copper" }
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 7.200000000000001d
-			y: 2.0d
+			x: 7.205000000000003d
+			y: 1.6500000000000001d
 		}
 		{
 			dependencies: ["4ED1400E2AAAAAE1"]
@@ -307,12 +307,12 @@
 			size: 1.75d
 			tasks: [{
 				id: "285134647C8E9555"
-				item: { components: { "starcatcher:trophy": { all: { total: 100, unique: 50 }, always_show: 1b, fish_properties: { bait_restrictions: { consumes_bait: 1b, correct_bait_chance_added: 0, correct_baits: [ ] }, base_chance: 5, catch_info: { always_spawn_entity: 0b, entity: "starcatcher:fish", fish_bucket: "starcatcher:missingno", item: "starcatcher:trophy_silver", treasure: "starcatcher:waterlogged_satchel" }, daytime: "all", difficulty: { decay: 1.0f, missPenalty: 5, modifiers: [ ], speed: 9, sweetspots: [ { color_as_int: 65280, hitbox_size_in_pixels: 22, is_flip: 0b, moving_rate: 0.0f, reward: 15, sweet_spot_type: "starcatcher:normal", texture_path: "starcatcher:textures/gui/minigame/spots/normal.png", vanishing_rate: 0.0f }, { color_as_int: 65280, hitbox_size_in_pixels: 22, is_flip: 0b, moving_rate: 0.0f, reward: 15, sweet_spot_type: "starcatcher:normal", texture_path: "starcatcher:textures/gui/minigame/spots/normal.png", vanishing_rate: 0.0f } ] }, has_guide_entry: 1b, rarity: "common", size_and_weight: { average_size_cm: 41.0f, average_weight_grams: 2001.0f, deviation_size_cm: 21.0f, deviation_weight_grams: 701.0f }, skips_minigame: 0b, weather: "all", world_restrictions: { above_y: -2147483648, below_y: 2147483647, biomes: [ ], biomes_blacklist: [ ], biomes_blacklist_tags: [ ], biomes_tags: [ ], dimensions: [ ], dimensions_blacklist: [ ], fluids: ["minecraft:water"], seasons: ["all"] } }, percentage_chance_to_catch: 100.0f, progress: { }, repeatable: 1b, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_silver" }
+				item: { count: 1, id: "starcatcher:trophy_iron" }
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 7.215000000000002d
-			y: 3.4d
+			x: 7.200000000000001d
+			y: 2.975000000000001d
 		}
 		{
 			dependencies: ["30A0D33361D77D7E"]
@@ -330,12 +330,84 @@
 			size: 2.0d
 			tasks: [{
 				id: "2FA6F7811973B494"
-				item: { components: { "starcatcher:trophy": { all: { total: 200, unique: 0 }, always_show: 1b, fish_properties: { bait_restrictions: { consumes_bait: 1b, correct_bait_chance_added: 0, correct_baits: [ ] }, base_chance: 5, catch_info: { always_spawn_entity: 0b, entity: "starcatcher:fish", fish_bucket: "starcatcher:missingno", item: "starcatcher:trophy_gold", treasure: "starcatcher:waterlogged_satchel" }, daytime: "all", difficulty: { decay: 1.0f, missPenalty: 5, modifiers: [ ], speed: 9, sweetspots: [ { color_as_int: 65280, hitbox_size_in_pixels: 22, is_flip: 0b, moving_rate: 0.0f, reward: 15, sweet_spot_type: "starcatcher:normal", texture_path: "starcatcher:textures/gui/minigame/spots/normal.png", vanishing_rate: 0.0f }, { color_as_int: 65280, hitbox_size_in_pixels: 22, is_flip: 0b, moving_rate: 0.0f, reward: 15, sweet_spot_type: "starcatcher:normal", texture_path: "starcatcher:textures/gui/minigame/spots/normal.png", vanishing_rate: 0.0f } ] }, has_guide_entry: 1b, rarity: "common", size_and_weight: { average_size_cm: 41.0f, average_weight_grams: 2001.0f, deviation_size_cm: 21.0f, deviation_weight_grams: 701.0f }, skips_minigame: 0b, weather: "all", world_restrictions: { above_y: -2147483648, below_y: 2147483647, biomes: [ ], biomes_blacklist: [ ], biomes_blacklist_tags: [ ], biomes_tags: [ ], dimensions: [ ], dimensions_blacklist: [ ], fluids: ["minecraft:water"], seasons: ["all"] } }, percentage_chance_to_catch: 100.0f, progress: { common: { total: 0, unique: 44 }, epic: { total: 0, unique: 16 }, legendary: { total: 0, unique: 10 }, rare: { total: 0, unique: 15 }, uncommon: { total: 0, unique: 23 } }, repeatable: 1b, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_gold" }
+				item: { count: 1, id: "starcatcher:trophy_gold" }
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 7.2250000000000005d
-			y: 5.0d
+			x: 7.205000000000002d
+			y: 4.65d
+		}
+		{
+			dependencies: ["29AD1060C129C86F"]
+			hide_dependency_lines: true
+			id: "04F6F95B5880770D"
+			rewards: [{
+				count: 64
+				id: "1BE079362DCABD56"
+				item: {
+					count: 1
+					id: "aquaculture:treasure_chest"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 2.25d
+			tasks: [{
+				id: "6F8FA5CD1CE219BC"
+				item: { count: 1, id: "starcatcher:trophy_emerald" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.575d
+		}
+		{
+			dependencies: ["04F6F95B5880770D"]
+			hide_dependency_lines: true
+			id: "7283C1B759AF0F5F"
+			rewards: [{
+				count: 64
+				id: "0F15DFD13C721714"
+				item: {
+					count: 1
+					id: "aquaculture:treasure_chest"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 2.5d
+			tasks: [{
+				id: "0E23CA2700218E72"
+				item: { count: 1, id: "starcatcher:trophy_diamond" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -4.4875d
+			y: 3.2625d
+		}
+		{
+			dependencies: ["7283C1B759AF0F5F"]
+			hide_dependency_lines: true
+			id: "15FC55072AB16B86"
+			rewards: [{
+				count: 64
+				id: "3EEB756742A98933"
+				item: {
+					count: 1
+					id: "aquaculture:treasure_chest"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 3.0d
+			tasks: [{
+				id: "1EAAA78F391E8D77"
+				item: { count: 1, id: "starcatcher:trophy_of_the_older_angler" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -4.4625d
+			y: 5.137500000000001d
 		}
 	]
 }
