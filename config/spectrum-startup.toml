@@ -40,10 +40,6 @@ shooting_star_spawn_chance = 0.0075
 storm_stone_dimensions = ["minecraft:overworld", "starry_skies:overworld", "paradise_lost:paradise_lost"]
 #Chance for a lightning strike to spawn a Storm Stone
 storm_stone_spawn_chance = 0.4
-#The time in ticks it takes a Pigment Pedestal to craft a vanilla Crafting Table recipe without upgrades
-#Setting this to <=0 will make the Pedestal not able to be used for crafting Crafting Table recipes.
-#
-vanilla_recipe_crafting_time_tioks = 40
 #How much an item gets repaired when crafting it with Moonstruck Nectar
 repair_anything_recipe_repair_percentage = 0.33
 #How fast decay will be spreading on random tick
@@ -81,8 +77,6 @@ block_sound_volume = 0.5
 ore_aura_sound_volume = 0.5
 #When empty, enchantments that the player has not unlocked show up with a scattered name. You can use a different name here
 name_for_unrevealed_enchantments = ""
-#Exuberance increases experience gained when killing mobs. With 25% bonus XP and 5 levels this would mean 2,25x XP on max level
-exuberance_bonus_experience_percent_per_level = 0.25
 #In vanilla, crits are a flat 50 % damage bonus. Improved Critical increases this damage by additional 50 % per level by default
 improved_critical_extra_damage_multiplier_per_level = 0.5
 #Flat additional damage dealt with each level of the First Strike enchantment
@@ -90,7 +84,7 @@ first_strike_damage_per_level = 2.0
 #The percentile a mobs armor/hand stacks are being dropped when hit with a Disarming enchanted weapon per the enchantments level
 disarming_chance_per_level_mobs = 0.01
 #If > 0 the Disarming Enchantment is able to remove armor and hand tools from a hit player. Should be a far smaller chance than for mobs
-disarming_chance_per_level_players = 0.001
+disarming_chance_per_level_players = 0.0025
 #Experience dropped my mined infested blocks is multiplied by this value
 pest_control_experience_multiplier = 2.0
 #The duration a glow ink sac gives night vision when wearing a glow vision helmet in seconds
@@ -167,3 +161,7 @@ decay_is_stopped_by_supported_claim_mods = false
 #Setting this value to false will instead not show this screen, showing no recipes whatsoever, until unlocked
 #
 rei_lists_unrevealed_recipes_as_not_unlocked = true
+#The time in ticks it takes a Pigment Pedestal to craft a vanilla Crafting Table recipe without upgrades
+#Setting this to <=0 will make the Pedestal not able to be used for crafting Crafting Table recipes.
+#
+vanilla_recipe_crafting_time_ticks = 40

@@ -22,3 +22,5 @@ added_blocks = ["modern_industrialization:pipe"]
 last_version_blocks = []
 #Whether new blocks for the config should be fetched from the network.
 auto_update_config = true
+#List of blocks that need a slight scale-up when facaded (e.g. Create mod blocks). Supports '*' as a wildcard.
+scale_up_blocks = ["*create*"]

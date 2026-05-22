@@ -142,8 +142,6 @@
 [general]
 	#Disables Optifine warn screen
 	no_optifine_warn_screen = false
-	#Disables Amendments suggestion screen
-	no_amendments_screen = true
 	#Enable Quark style config button on main menu. Needs Configured installed to work
 	config_button = false
 	#Config button Y offset
@@ -158,10 +156,12 @@
 	custom_configured_screen = true
 	#Disable incompatible mods warning screen
 	no_incompatible_mods_screen = false
-	#unfunny
-	"I am very boring" = false
 	#Allowed Values: ALWAYS, CACHED, CACHED_ZIPPED, NEVER
 	dynamic_assets_generation_mode = "CACHED"
+	#unfunny
+	"I am very boring and I don't want any Easter Egg" = false
+	#Enable Supplementaries to base textures off external Resource Packs rather than mod's default textures. 
+	use_external_resource_pack = false
 
 #Game tweaks
 [tweaks]

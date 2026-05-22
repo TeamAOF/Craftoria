@@ -70,10 +70,13 @@ underwaterBlockBreakBubbles = true
 decoratedPotsSpawnBubbles = true
 openingBarrelsSpawnsBubbles = true
 openingChestsSpawnsBubbles = true
-chestsOpenRandomlyUnderwater = true
+chestsOpenRandomlyUnderwaterFrequency = 5
 randomChestOpeningNeedsSoulSand = false
 dispenseItemBubbles = true
 rainIncreasesLeavesSpawningParticles = true
+purpleMonsterSpawnerParticles = false
+monsterSpawnerSpawnMobSoundVolume = 1.0
+monsterSpawnerAmbientSoundVolume = 1.0
 
 [sparks]
 removeVanillaCampfireSparks = true
@@ -86,6 +89,7 @@ lanternSparksDensity = 5
 lavaSparksDisplayType = "ON"
 lavaSparksDensity = 1.0
 brewingStandSparks = true
+monsterSpawnerSparks = true
 
 [updatedSmoke]
 candleSmoke = true

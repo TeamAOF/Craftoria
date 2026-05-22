@@ -1,0 +1,38 @@
+#EmbersTextAPI Server Configuration
+[general]
+	#Enable the welcome message shown to players on first join
+	welcomeMessageEnabled = false
+
+#Player Markup Access
+#Controls which players can use markup tags like <rainbow> in chat
+[markup]
+	#Permission mode: NONE (no restrictions), WHITELIST (only listed players), BLACKLIST (listed players blocked)
+	markupPermissionMode = "NONE"
+	#Player UUIDs for the whitelist/blacklist
+	markupPlayerList = []
+	#Tags stripped from player-authored chat markup (e.g. ["glitch", "neon"]). Does not affect API-sent messages.
+	disallowedMarkupTags = []
+
+#Server-side Message Limits
+[messages]
+	#Server-enforced max message duration in ticks. 0 = unlimited. 1200 = 60 seconds.
+	# Default: 1200
+	# Range: 0 ~ 72000
+	maxServerMessageDuration = 1200
+	#Server-enforced max simultaneous messages per player. 0 = unlimited.
+	# Default: 10
+	# Range: 0 ~ 100
+	maxServerActiveMessages = 10
+	#Max pending steps per queue channel. 0 = unlimited. Prevents memory exhaustion.
+	# Default: 50
+	# Range: 0 ~ 1000
+	maxQueueSize = 50
+	#If non-empty, only listed effects are allowed in server-sent messages. Empty = all allowed.
+	allowedEffects = []
+
+#Anvil
+[anvil]
+	#Maximum number of characters allowed when renaming an item in an anvil. Vanilla default is 50.
+	# Default: 50
+	# Range: > 1
+	anvilNameMaxLength = 50

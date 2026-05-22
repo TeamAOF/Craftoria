@@ -1,3 +1,31 @@
+# Craftoria | v1.31.0
+
+_Neoforge_ 21.1.230 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.31.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.31.0.md)_
+
+### Changes/Improvements ⭐
+
+* Updated completionist quest chapter background `AK`
+* Improved player animations `AK`
+* More fishing trophies, more quests! `AK`
+* Disabled starcatcher book on spawn `AK`
+* Disabled Chromatic Aberration module `AK`
+* Split MI quests into 3 chapters `SubordinalBlue`
+* Added all MI plate to create press `Kaiser`
+
+### Added Mods ✅
+
+* [Delight Lib](https://curseforge.com/projects/1531135)
+* [HazentouveLib](https://curseforge.com/projects/1528722)
+* [Iron's Lib](https://curseforge.com/projects/1492763)
+
+### Added Resource Packs 🎨
+
+* [Craftoria Chinese Translation Resource](https://curseforge.com/projects/1484077)
+
+### Removed Mods ❌
+
+* [Xaero's Maps x Waystones](https://curseforge.com/projects/1340197)
+---
 # Craftoria | v1.30.0
 
 _Neoforge_ 21.1.219 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.30.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.30.0.md)_

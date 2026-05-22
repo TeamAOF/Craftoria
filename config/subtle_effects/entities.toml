@@ -34,6 +34,8 @@ animalFeedingSoundVolume = 1.0
 underwaterEntityPoofBubbles = true
 improvedWetWolfShakeEffects = true
 improvedVillagerSweatingEffects = true
+magmaCubeLandSparks = true
+snowGolemStepSounds = true
 
 [sleeping]
 playerSnoreChance = 1.0
@@ -112,7 +114,8 @@ creeperSparks = true
 splashEffects = true
 splashRipples = true
 splashDroplets = true
-splashBubbles = true
+splashDropletSounds = true
+waterSplashBubbles = true
 explosionsCauseSplashes = true
 splashOverlayTint = 0.2
 splashOverlayAlpha = 0.8
@@ -121,5 +124,3 @@ entityBlocklist = [  ]
 secondarySplash = true
 secondarySplashRipples = false
 secondarySplashVelocityThreshold = 0.3
-lavaSplashes = true
-lavaSplashRipples = true

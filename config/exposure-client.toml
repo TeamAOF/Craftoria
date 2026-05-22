@@ -87,6 +87,21 @@
 	#Default: false
 	background_capture_use_panoramic_mode = false
 
+	[capture.loading]
+		#Loading from file will only accept a path relative to game directory, when on the dedicated server (multiplayer).
+		#This option is for protection against malicious actions using Projector or load commands.
+		#Default: false
+		multiplayer_file_loading_only_from_game_dir = false
+		#How loading from URL should behave when on the dedicated server (multiplayer).
+		#This option is for protection against malicious actions using Projector or load commands.
+		#Default: ONLY_ALLOWED_DOMAINS
+		#Allowed Values: ALL, ONLY_ALLOWED_DOMAINS, NONE
+		multiplayer_url_loading = "ONLY_ALLOWED_DOMAINS"
+		#List of allowed domains for loading from URl, if 'multiplayer_url_loading' is set to ONLY_ALLOWED_DOMAINS.
+		multiplayer_url_loading_allowed_domains = ["i.imgur.com", "cdn.discordapp.com", "media.discordapp.net", "raw.githubusercontent.com"]
+		#List of allowed domains for loading from URl, if 'multiplayer_url_loading' is set to ONLY_ALLOWED_DOMAINS.
+		multiplayer_url_loading_allowed_subdomains = [".imgur.com", ".discordapp.com"]
+
 [render]
 	#Makes photos in Photograph Frame render with alignment to 16 pixel grid (like paintings). Just for fun. Default: false
 	pixel_perfect_photograph_frame = false

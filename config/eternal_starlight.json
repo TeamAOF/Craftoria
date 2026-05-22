@@ -1,6 +1,14 @@
 {
+  "enableDataFixer": false,
+  "blockUnknownAttachmentWarning": true,
   "enablePortalShader": true,
   "enableScreenShake": true,
+  "enableLootChest": true,
+  "enableBossRespawn": true,
+  "bossRespawnCooldown": 36000,
+  "spawnInEternalStarlight": false,
+  "respawnInEternalStarlight": false,
+  "startWithGuidebook": false,
   "aethersentMeteorDropRate": 5.0E-4,
   "aethersentMeteorReplaceBlocks": false,
   "mobMaxTearyTicks": 200,
@@ -206,9 +214,17 @@
       "attackDamage": 3.0,
       "followRange": 64.0,
       "canSpawn": true
+    },
+    "solarCreeper": {
+      "maxHealth": 250.0,
+      "armor": 10.0,
+      "attackDamageScale": 1.0,
+      "followRange": 200.0,
+      "canSpawn": true
     }
   },
   "itemsConfig": {
+    "playerAethersentMeteorDamageScale": 1.0,
     "chainOfSouls": {
       "maxRange": 64.0,
       "soulAbsorbDamage": 2.0,

@@ -20,3 +20,9 @@ sticky_note_tooltip_view_scale = 0.5
 # Default: 40
 # Range: > 0
 floppy_disk_view_linger_time = 40
+#The number of threads to use for pathfinding wires in microchips.
+#Be careful editing this value.
+#Default: 2
+# Default: 2
+# Range: > 0
+microchip_wire_pathfinding_threads = 2

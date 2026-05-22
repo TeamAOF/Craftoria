@@ -339,6 +339,8 @@
 	# Default: 1.0
 	# Range: 0.01 ~ 10.0
 	cold_sweat_air_con_efficiency = 1.0
+	#If true, Aerial Interfaces can access a player's curios slots
+	curios_aerial_interface_access = true
 
 [recipes]
 	#Does Molten Plastic solidify to Plastic Sheets when poured into the world? If set to false, then Heat Frame cooling is the only other way to make Plastic Sheets (by default).
