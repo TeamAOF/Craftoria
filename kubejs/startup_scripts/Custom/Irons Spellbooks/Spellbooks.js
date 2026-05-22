@@ -13,6 +13,6 @@ StartupEvents.registry('item', e => {
     .texture('craftoria:item/wip')
     .displayName('Codex of Evolution')
     .tooltip(Text.translate('tooltip.craftoria.codex_of_evolution').italic().darkGray())
-    .rarity('hazennstuff:cosmic')
+    .rarity('aces_spell_utils:cosmic')
     .setMaxSpellSlots(0);
 });
