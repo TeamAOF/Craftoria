@@ -89,8 +89,11 @@ background:                         ftbquests:textures/gui/completionist_backgro
 
 # PneumaticCraft
 [04AD21E8ACC60AFD]
-dependency_line_texture:            pneumaticcraft:textures/block/fluid/memory_essence_flow.png
-dependency_line_thickness:          0.75
+#dependency_line_texture:            pneumaticcraft:textures/block/fluid/memory_essence_flow.png
+#dependency_line_thickness:          0.75
+dependency_line_texture:            ftbquests:textures/gui/floating_dash.png
+dependency_line_completed_color:    #80FFFFFF
+dependency_line_thickness:          0.5
 dependency_line_uncompleted_color:  #88fcf4dc
 dependency_line_requires_color:     #c8323d
 dependency_line_required_for_color: #0065d7
@@ -206,6 +209,46 @@ background:                         craftoria:textures/gui/mi.png
 dependency_line_completed_color:    #F8fcf4dc
 dependency_line_uncompleted_color:  #A8fcf4dc
 dependency_line_unavailable_color:  #68fcf4dc
+
+# MI: The Steam Age
+[2D12E0E71DEC99E9]
+background:                         ftbquests:textures/gui/background_white.png; color=#536870; tile_size=64
+dependency_line_texture:            ftbquests:textures/gui/floating_dash.png
+dependency_line_unavailable_color:  #FFFFFF
+dependency_line_uncompleted_color:  #FFFFFF
+dependency_line_completed_color:    #80FFFFFF
+dependency_line_thickness:          0.5
+
+# MI: The Electric Age
+[53A9F74C4BFE02D2]
+background:                         ftbquests:textures/gui/background_white.png; color=#475b62; tile_size=64
+dependency_line_texture:            ftbquests:textures/gui/floating_dash.png
+dependency_line_unavailable_color:  #FFFFFF
+dependency_line_uncompleted_color:  #FFFFFF
+dependency_line_completed_color:    #80FFFFFF
+dependency_line_thickness:          0.5
+
+# MI: The Quantum Age
+[587D73D979FA9D28]
+background:                         ftbquests:textures/gui/background_white.png; color=#0a2933; tile_size=64
+dependency_line_texture:            ftbquests:textures/gui/floating_dash.png
+dependency_line_unavailable_color:  #FFFFFF
+dependency_line_uncompleted_color:  #FFFFFF
+dependency_line_completed_color:    #80FFFFFF
+dependency_line_thickness:          0.5
+
+
+# mis_high.a
+[050D9D730255541D]
+background:                         ftbquests:textures/gui/background_white.png; color=#eae3cb; tile_size=64
+
+# mis_high.b
+[150D9D730255541D]
+background:                         ftbquests:textures/gui/background_white.png; color=#eae3cb; tile_size=64
+
+# mis_low
+[32F0606615E8B3CA]
+background:                         ftbquests:textures/gui/background_white.png; color=#073642; tile_size=64
 
 # Fishing
 [1910D05CD66EC477]
