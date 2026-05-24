@@ -62,6 +62,13 @@ ServerEvents.recipes(e => {
   // Thaumon
   e.replaceInput({ id: 'thaumon:ancient_stone_bricks' }, 'thaumon:ancient_stone', 'thaumon:polished_ancient_stone');
 
+  // Supplementaries
+  // item_shelf conflicts with Twilight Forest's drying_rack(s)
+  //e.remove({ id: 'supplementaries:item_shelf' });
+  e.shaped('supplementaries:item_shelf', [' A ', ' A ', ' A '], {
+    A: '#minecraft:wooden_slabs',
+  }).id('supplementaries:item_shelf');
+
   // Minecarts
   e.replaceOutput({ id: 'utilitarian:utility/hopper_minecart' }, 'minecraft:chest_minecart', 'minecraft:hopper_minecart');
   e.replaceOutput({ id: 'utilitarian:utility/tnt_minecart' }, 'minecraft:chest_minecart', 'minecraft:tnt_minecart');
