@@ -199,7 +199,7 @@
 [too_many_changes_warning]
 	#Set to the positive integer to enable feature. Set to negative integer to disable.
 	#How many changes end user should make for warning to be displayed.
-	count = -1
+	count = 1
 	#With this option, you can select the formulation of this warning, currently supported:
 	#   - NOTIFY: Just saying to the end user that what they made many changes and adding random mods or clicking
 	#the "Update All" button is not a good idea without proper testing. It is expected to crash.
