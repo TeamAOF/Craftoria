@@ -3,7 +3,14 @@
   /** @type {Special.Mod[]} */
   let modWhitelist = ['farmersdelight', 'moredelight', 'arsdelight', 'twilightdelight', 'ends_delight'];
   /** @type {Special.Item[]} */
-  let itemWhitelist = ['aquaculture:neptunium_fillet_knife'];
+  let itemWhitelist = [
+    'aquaculture:neptunium_fillet_knife',
+    // Multitools/workstaffs that carry #c:tools/knife but function as paxels, not plain knives;
+    // keep their recipes and EMI visibility instead of unifying them away (#810).
+    'spectrum:multitool',
+    'spectrum:glass_crest_workstaff',
+    'spectrum:malachite_workstaff',
+  ];
 
   ServerEvents.recipes(e => {
     Ingredient.of('#c:tools/knife').stacks.forEach(item => {
