@@ -1,9 +1,18 @@
 // priority: 997
 {
   /** @type {Special.Mod[]} */
-  let modWhitelist = ['farmersdelight', 'moredelight', 'arsdelight', 'twilightdelight', 'ends_delight'];
+  let modWhitelist = [
+    'farmersdelight',
+    'moredelight',
+    'arsdelight',
+    'twilightdelight',
+    'ends_delight',
+    'spectrum',
+  ];
   /** @type {Special.Item[]} */
-  let itemWhitelist = ['aquaculture:neptunium_fillet_knife'];
+  let itemWhitelist = [
+    'aquaculture:neptunium_fillet_knife',
+  ];
 
   ServerEvents.recipes(e => {
     Ingredient.of('#c:tools/knife').stacks.forEach(item => {
