@@ -204,8 +204,8 @@ ServerEvents.recipes(e => {
 
   // Ether Gas
   chemical_reactor(10, 240)
-    .fluidOut('industrialforegoing:ether_gas', 10)
-    .fluidOut('modern_industrialization:hydrochloric_acid', 90)
+    .fluidOut('industrialforegoing:ether_gas', 50)
+    .fluidOut('modern_industrialization:hydrochloric_acid', 50)
     .itemIn('minecraft:nether_star', 0)
     .fluidIn('modern_industrialization:hydrochloric_acid', 100)
     .id('craftoria:mi/chemical_reactor/ether_gas');
