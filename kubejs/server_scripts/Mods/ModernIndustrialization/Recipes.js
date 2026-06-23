@@ -202,4 +202,11 @@ ServerEvents.recipes(e => {
     .fluidOut('200x industrialforegoing:pink_slime')
     .id('craftoria:mi/centrifuge/pink_slime');
 
+  // Ether Gas
+  chemical_reactor(10, 240)
+    .fluidOut('industrialforegoing:ether_gas', 10)
+    .fluidOut('modern_industrialization:hydrochloric_acid', 90)
+    .itemIn('minecraft:nether_star', 0)
+    .fluidIn('modern_industrialization:hydrochloric_acid', 100)
+    .id('craftoria:mi/chemical_reactor/ether_gas');
 });
