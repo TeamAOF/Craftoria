@@ -47,6 +47,7 @@ ServerEvents.tags('item', e => {
     'sophisticatedbackpacks:chipped/mason_table_upgrade',
     'sophisticatedbackpacks:chipped/alchemy_bench_upgrade',
     'sophisticatedbackpacks:chipped/tinkering_table_upgrade',
+    'sophisticatedbackpacks:battery_upgrade',
 
     '#create:packages',
     /^create:.*_contraption/,
