@@ -1,6 +1,6 @@
 # Installing Craftoria
 
-*** Java 21 is required ***
+*** Java 21 or Java 25 is required ***
 
   The command "java -version" is a useful check.
 
