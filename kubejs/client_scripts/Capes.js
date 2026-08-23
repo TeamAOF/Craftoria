@@ -51,6 +51,19 @@ CapeJS.addCapes(event => {
       '457625d6-9114-41ed-8d38-f5ddaa2aba66', // Blue98
       'a6d59f07-2d8c-4f7e-9f1c-3714bd68f863', // VirlesFelyard
       '2abddb63-afd6-4149-bd65-76402adadbc7', // Killerfox
+
+      "85e987e5-bb15-4e17-ba2b-cc6d3adfc539", // KatTheFox
+      "47c3b220-ad5d-49cb-96f8-115d13392bb0", // FoxTheKat
+      "d3c951e6-824d-41fc-a73d-2a957c1575b1", // Tlp300
+      "4efde68a-eded-4e52-b6c0-5169242c7f0a", // PastelTheKobold
+      "5ae09fa4-41a8-4817-b08c-2f5d3e9d8883", // Aelus_
+      "c64e469e-7c62-4411-ad29-d3906522c514", // MaKuronie
+      "d95c8351-5f24-40e9-9c13-be87588df35b", // imMorphi
+      "5268a9df-dc9e-412c-9461-05ad4b3261df", // Helyos07
+      "09c1065b-20e6-4f73-9ca5-2d66384425a3", // czozp
+      "0bbce79c-09a4-4d9a-9911-58abca1f00df", // amfs987
+      "1323319f-3e52-492c-b0ea-c18c83971f6e", // Alpha_Hunter_2
+
     ],
   };
   for (const [cape, players] in capes) {
