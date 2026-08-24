@@ -10,7 +10,7 @@ ServerEvents.tags('item', e => {
 
   // Crops & Seeds
   e.add('c:seeds/cabbage', ['farmersdelight:cabbage_seeds', 'dumplings_delight:chinese_cabbage_seeds']);
-  e.add('c:seeds/tomato', 'farmersdelight:tomato_seeds');
+  e.add('c:seeds/tomato', ['farmersdelight:tomato_seeds', 'farm_and_charm:tomato_seeds']);
   e.add('c:seeds/eggplant', 'dumplings_delight:eggplant_seeds');
   e.add('c:crops/garlic', 'dumplings_delight:garlic');
   e.add('c:crops/green_onion', 'dumplings_delight:greenonion');

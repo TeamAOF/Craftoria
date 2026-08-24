@@ -307,7 +307,9 @@ ServerEvents.generateData('after_mods', event => {
     'create:crushing/sculk_stone_coal_ore',
     'create:cutting/stripped_echo_log',
     'mekaweapons:module_arrowvelocity_unit',
-    'mechtrowel:wand_upgrade'
+    'mechtrowel:wand_upgrade',
+    // Recipes removed for balancing / unification
+    'farm_and_charm:seeds_tomato'
   ];
 
   /** @type {string[]} */
