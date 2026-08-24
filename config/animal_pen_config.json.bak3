@@ -1,0 +1,51 @@
+{
+  // A cooldown value in game ticks between attacks that players can perform on animal pens.
+  // Default value: 5 game tick
+  "attack_cooldown": 5,
+  // Allows to set maximal amount of animals in the pen.
+  // Setting 0 will remove any limit.
+  "animal_limit_in_pen": 2147483647,
+  // Allows to enable mob growing in animal pen.
+  // The more animals are inside it, the larger it will be.
+  "animal_pen_mob_can_grow": false,
+  // Allows to change default mob size in pen.
+  "animal_pen_mob_size": 0.33,
+  // Allows to enable aquarium mob growing.
+  // The more animals are inside it, the larger it will be.
+  "aquarium_mob_can_grow": false,
+  // Allows to change default mob size in aquarium.
+  "aquarium_mob_size": 0.33,
+  // Allows to enable aviary mobs growing.
+  // The more mobs are inside it, the larger it will be.
+  "aviary_mob_can_grow": false,
+  // Allows to change default mob size in aviary.
+  "aviary_mob_size": 0.33,
+  // Allows to set how fast animals grows in pen and aquarium.
+  // Each animal is multiplied by given value to get end size.
+  // This option works only if animals_can_grow or water_animals_can_grow is enabled.
+  // Default value = 0.001
+  "growth_multiplier": 0.001,
+  // Allows to set how many different animal variants can be stored per item.
+  // Players will not be able to store more different variants than this value.
+  // Be aware, this increases NBT data size, so not recommended to put infinite amount.
+  // Default value = 16
+  "max_stored_animal_variants": 10,
+  // Allows to set if interactions with animal pens/aquariums should trigger advancements.
+  // Triggered Criteria: player_interacted_with_entity, bred_animals, filled_bucket, player_killed_entity
+  // Default value = false
+  "trigger_advancements": false,
+  // Allows to set if interactions with animal pens/aquariums should increase statistics.
+  // Increased Statistics: Animals Bred, Mob Kills, Use Item <item>, Kill Entity <entity>
+  // Default value = false
+  "increase_statistics": false,
+  // Allows to toggle if cooldowns should be shown only while player is crouching (true).
+  // or be visible all the time (false).
+  // Default value = false
+  "show_cooldowns_while_crouching": true,
+  // Allows to toggle if all interactions (evenNumber without cooldown) should be rendered
+  // above animal pen or aquarium
+  // Default value = false
+  "show_all_interactions_above": false,
+  // Debug code to indicate problems.
+  "debug": false
+}

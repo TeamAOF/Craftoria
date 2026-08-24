@@ -1,26 +1,58 @@
 # Default: 0.0
 # Range: -20.0 ~ 20.0
 hit_delay = 0.0
-#Allowed Values: METRIC, IMPERIAL, CHEESEBURGER, FOOTBALL, DEVELOPER_HEIGHT, BANANA, DUCK, SPACE_WHALE, SCIENTIFIC
+#Allowed Values: METRIC, IMPERIAL, CHEESEBURGER, DEVELOPER, BANANA, DUCK, SPACE_WHALE, SCIENTIFIC
 units = "METRIC"
 #Allowed Values: ALPHABETICAL_UP, ALPHABETICAL_DOWN, MOD_UP, MOD_DOWN, RARITY_UP, RARITY_DOWN, CAUGHT_UP, CAUGHT_DOWN
 sort = "RARITY_DOWN"
-enable_villager_sound = true
-enable_hit_sound = true
+#Should play the hit sound
 enable_miss_sound = true
-#Whether to use the vanilla partial ticks for minigame smoothing or a custom implementation from 1.20
-#Vanilla should look better for most people
-vanilla_partial_ticks = true
 #If enabled the new fish notifications will be removed when hovering on the index, instead of only when visiting the specific fish entry
 remove_notif_on_hover = true
+#Shows a bunch of extra text info during the minigame for debugging
+debug = false
+# Default: 1000
+# Range: > 100
+overlay_update_frequency = 1000
+#Controls whether sounds for reeling, failing minigame, completing minigame etc should play
+enable_tackle_sound = true
+#Should sweet-spots play the hit sounds
+enable_hit_sounds = true
 
-[minigame_window]
+[ui_settings]
+	# Default: 0.0
+	# Range: -10000.0 ~ 10000.0
+	minigame_x_offset = 0.0
+	# Default: 0.0
+	# Range: -10000.0 ~ 10000.0
+	minigame_y_offset = 0.0
 	# Default: 1.5
 	# Range: 0.1 ~ 6.0
 	minigame_scale = 1.5
-	# Default: 0
-	# Range: -10000 ~ 10000
-	minigame_x_offset = 0
-	# Default: 0
-	# Range: -10000 ~ 10000
-	minigame_y_offset = 0
+	# Default: 0.0
+	# Range: -10000.0 ~ 10000.0
+	tournament_x_offset = 0.0
+	# Default: 0.0
+	# Range: -10000.0 ~ 10000.0
+	tournament_y_offset = 0.0
+	# Default: 1.0
+	# Range: -10000.0 ~ 10000.0
+	tournament_scale = 1.0
+	# Default: 0.0
+	# Range: -10000.0 ~ 10000.0
+	radar_x_offset = 0.0
+	# Default: 80.0
+	# Range: -10000.0 ~ 10000.0
+	radar_y_offset = 80.0
+	# Default: 1.0
+	# Range: -10000.0 ~ 10000.0
+	radar_scale = 1.0
+	# Default: 0.0
+	# Range: -10000.0 ~ 10000.0
+	tracker_x_offset = 0.0
+	# Default: -50.0
+	# Range: -10000.0 ~ 10000.0
+	tracker_y_offset = -50.0
+	# Default: 1.0
+	# Range: -10000.0 ~ 10000.0
+	tracker_scale = 1.0

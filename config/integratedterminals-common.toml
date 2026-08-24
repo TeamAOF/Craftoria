@@ -1,3 +1,25 @@
+	[core.general]
+		#If client-received packets should be deserialized in a separate thread.
+		packetDeserializationEnableMultithreading = true
+		#If client-directed packets should be serialized in a separate thread.
+		packetSerializationEnableMultithreading = true
+		#The limit for the number of leaves in a tree-based crafting plan after which it won't be sent to the client anymore.
+		terminalStorageMaxTreePlanSize = 64
+		#If an anonymous mod startup analytics request may be sent to our analytics service.
+		analytics = true
+		#If the crafting planners can work on separate thread. WARNING: THIS IS UNSAFE, AND WILL CAUSE SOME JOBS TO FAIL!!!
+		craftingPlannerEnableMultithreading = false
+		#The maximum number of terminal storage crafting recipes that can be sent in a single packet. Reduce this when you have packet overflows.
+		terminalStoragePacketMaxRecipes = 128
+		#If crafting plans should default to the tree-based view. If false, it will default to the flattened view.
+		terminalStorageDefaultToCraftingPlanTree = false
+		#The number of threads that the crafting plan calculator can use.
+		craftingPlannerThreads = 2
+		#The maximum number of terminal storage instances that can be sent in a single packet. Reduce this when you have packet overflows.
+		terminalStoragePacketMaxInstances = 512
+		#If the version checker should be enabled.
+		versionChecker = true
+
 	[machine.general]
 		#The number of items that should be selected when clicking on an item in the storage terminal.
 		guiStorageItemInitialQuantity = 64
@@ -45,25 +67,3 @@
 		syncItemStorageAndCraftingTabStates = true
 		#The number of columns in the medium scale of the storage terminal.
 		guiStorageScaleMediumColumns = 10
-
-	[core.general]
-		#The limit for the number of leaves in a tree-based crafting plan after which it won't be sent to the client anymore.
-		terminalStorageMaxTreePlanSize = 64
-		#If an anonymous mod startup analytics request may be sent to our analytics service.
-		analytics = true
-		#If the crafting planners can work on separate thread.
-		craftingPlannerEnableMultithreading = false
-		#The maximum number of terminal storage crafting recipes that can be sent in a single packet. Reduce this when you have packet overflows.
-		terminalStoragePacketMaxRecipes = 128
-		#If crafting plans should default to the tree-based view. If false, it will default to the flattened view.
-		terminalStorageDefaultToCraftingPlanTree = false
-		#The number of threads that the crafting plan calculator can use.
-		craftingPlannerThreads = 2
-		#The maximum number of terminal storage instances that can be sent in a single packet. Reduce this when you have packet overflows.
-		terminalStoragePacketMaxInstances = 512
-		#If the version checker should be enabled.
-		versionChecker = true
-		#If client-received packets should be deserialized in a separate thread.
-		packetDeserializationEnableMultithreading = true
-		#If client-directed packets should be serialized in a separate thread.
-		packetSerializationEnableMultithreading = true

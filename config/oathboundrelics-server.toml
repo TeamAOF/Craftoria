@@ -1,0 +1,799 @@
+[oathbound_relic]
+	#If true, players receive an Oathbound Relic the first time they join the world.
+	giveStarterOathboundRelic = true
+	#Maximum health points lost per unreclaimed Soul Gem. 1.0 = half a heart, 2.0 = one full heart.
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	soulFractureMaxHealthLossPerGem = 1.0
+	#Radius in blocks for the owner to consume their Soul Gem.
+	# Default: 1.25
+	# Range: 0.25 ~ 8.0
+	soulGemPickupRadius = 1.25
+	#If true, Branded players take extra incoming damage.
+	enableFrailty = true
+	#Incoming damage multiplier. 2.0 = 100% more damage taken.
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	incomingDamageMultiplier = 2.0
+	#If true, nearby neutral mobs become hostile to Branded players.
+	enableProvocation = true
+	#How often, in ticks, nearby neutral mobs are provoked. 20 = once per second.
+	# Default: 20
+	# Range: 1 ~ 1200
+	neutralAggroInterval = 20
+	#Range in blocks for provoking nearby neutral mobs.
+	# Default: 16.0
+	# Range: 1.0 ~ 128.0
+	neutralAggroRange = 16.0
+	#If true, armor becomes less effective for Branded players.
+	enableShatteredPlate = true
+	#Armor effectiveness multiplier. 0.70 = armor is 30% less effective.
+	# Default: 0.7
+	# Range: 0.0 ~ 1.0
+	armorEffectiveness = 0.7
+	#If true, Branded players pay health on their first successful damaging attack after the cooldown expires.
+	enableBloodToll = true
+	#Health points consumed by Blood Toll. 1.0 = half a heart.
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	bloodTollHealthCost = 1.0
+	#Cooldown in ticks between Blood Toll triggers. 60 ticks = 3 seconds.
+	# Default: 60
+	# Range: 0 ~ 72000
+	bloodTollCooldownTicks = 60
+	#If true, fire lingers longer on Branded players.
+	enableLivingEmber = true
+	#Minimum fire ticks maintained while the Branded player is burning. 20 ticks = 1 second.
+	# Default: 200
+	# Range: 0 ~ 12000
+	minFireTicks = 200
+	#If true, Branded players suffer a penalty after respawning.
+	enableSoulFracture = true
+	#Weakness duration after respawn, in ticks.
+	# Default: 600
+	# Range: 0 ~ 72000
+	respawnWeaknessDurationTicks = 600
+	#Weakness amplifier after respawn. 0 = Weakness I.
+	# Default: 0
+	# Range: 0 ~ 255
+	respawnWeaknessAmplifier = 0
+	#Slowness duration after respawn, in ticks.
+	# Default: 300
+	# Range: 0 ~ 72000
+	respawnSlownessDurationTicks = 300
+	#Slowness amplifier after respawn. 0 = Slowness I.
+	# Default: 0
+	# Range: 0 ~ 255
+	respawnSlownessAmplifier = 0
+	#If true, Branded players cannot sleep.
+	enableWakefulDoom = true
+
+[blessings]
+	#Optional custom attribute modifiers added to the Oathbound Relic.
+	#Blank by default. Add entries only if you want extra blessings or curses.
+	#Format: attribute_id;amount;operation;type;display_name
+	#operation: ADD_VALUE, ADD_MULTIPLIED_BASE, or ADD_MULTIPLIED_TOTAL
+	#type: blessing or curse
+	#Example blessing: minecraft:generic.max_health;4.0;ADD_VALUE;blessing;Max Health
+	#Example curse: minecraft:generic.movement_speed;-0.10;ADD_MULTIPLIED_TOTAL;curse;Movement Speed
+	customAttributes = []
+	#If true, the Branded player gains bonus Looting.
+	enableLootingBlessing = true
+	#Bonus looting levels. 1 = Looting I equivalent.
+	# Default: 1
+	# Range: 0 ~ 5
+	lootingBonus = 1
+	#If true, the Branded player gains bonus Fortune.
+	enableFortuneBlessing = true
+	#Bonus fortune levels. 1 = Fortune I equivalent.
+	# Default: 1
+	# Range: 0 ~ 5
+	fortuneBonus = 1
+	#If true, mobs drop more XP for the Branded player.
+	enableXpBlessing = true
+	#XP multiplier from kills. 2.0 = double XP.
+	# Default: 6.0
+	# Range: 1.0 ~ 10.0
+	xpMultiplier = 6.0
+	#If true, the Branded player gets bonus enchanting power at nearby tables.
+	enableEnchantingBlessing = true
+	#Bonus enchanting power levels added to nearby tables.
+	# Default: 10
+	# Range: 0 ~ 30
+	enchantingPowerBonus = 10
+	#If true, the Branded player gains bonus attack speed.
+	enableAttackSpeedBlessing = true
+	#Bonus attack speed (additive). 0.5 = noticeably faster.
+	# Default: 0.5
+	# Range: 0.0 ~ 4.0
+	attackSpeedBonus = 0.5
+	#If true, the Branded player gains absorption when low on health.
+	enableAbsorptionBlessing = true
+	#Health threshold in health points. 6.0 = 3 hearts.
+	# Default: 8.0
+	# Range: 1.0 ~ 20.0
+	absorptionThreshold = 8.0
+	#Absorption amount in health points. 4.0 = 2 hearts.
+	# Default: 4.0
+	# Range: 1.0 ~ 40.0
+	absorptionAmount = 4.0
+
+	[bound_curios.ashen_nail]
+		#If true, Ashen Nail can grant bonus damage while burning.
+		enabled = true
+		#Damage multiplier while the player is burning. 1.35 = 35% more damage.
+		# Default: 1.35
+		# Range: 0.0 ~ 100.0
+		burningDamageMultiplier = 1.35
+
+	[bound_curios.gravebell_locket]
+		#If true, Gravebell Locket grants buffs on kill.
+		enabled = true
+		#Speed duration in ticks.
+		# Default: 160
+		# Range: 0 ~ 72000
+		speedDurationTicks = 160
+		#Speed amplifier. 0 = Speed I.
+		# Default: 0
+		# Range: 0 ~ 255
+		speedAmplifier = 0
+		#Regeneration duration in ticks.
+		# Default: 80
+		# Range: 0 ~ 72000
+		regenerationDurationTicks = 80
+		#Regeneration amplifier. 0 = Regeneration I.
+		# Default: 0
+		# Range: 0 ~ 255
+		regenerationAmplifier = 0
+
+	[bound_curios.hunters_sigil]
+		#If true, Hunter's Sigil grants bonus damage against enemies targeting you.
+		enabled = true
+		#Damage multiplier when the target is already targeting the player. 1.25 = 25% more damage.
+		# Default: 1.25
+		# Range: 0.0 ~ 100.0
+		damageMultiplier = 1.25
+
+	[bound_curios.pilgrims_thorn]
+		#If true, Pilgrim's Thorn can grant a movement speed bonus.
+		enabled = true
+		#Additive movement speed bonus. 0.10 = +10% movement speed.
+		# Default: 0.1
+		# Range: 0.0 ~ 10.0
+		movementSpeedBonus = 0.1
+
+	[free_relics.shroud_of_the_forsaken]
+		#If true, Shroud of the Forsaken can trigger when the player is brought low.
+		enabled = true
+		#Trigger threshold in health points. 6.0 = 3 hearts.
+		# Default: 6.0
+		# Range: 0.0 ~ 20.0
+		lowHealthThreshold = 6.0
+		#Damage multiplier applied to the triggering hit. 0.60 = take 40% less damage from that hit.
+		# Default: 0.6
+		# Range: 0.0 ~ 100.0
+		damageMultiplier = 0.6
+		#Resistance effects duration in ticks.
+		# Default: 100
+		# Range: 0 ~ 72000
+		resistanceDurationTicks = 100
+		#Resistance amplifier. 1 = Resistance II.
+		# Default: 1
+		# Range: 0 ~ 255
+		resistanceAmplifier = 1
+		#Cooldown in ticks.
+		# Default: 1200
+		# Range: 0 ~ 72000
+		cooldownTicks = 1200
+
+	[free_relics.vulture_charm]
+		#If true, Vulture Charm grants bonus XP from kills.
+		enabled = true
+		#XP multiplier from kills. 1.50 = 50% more XP.
+		# Default: 1.5
+		# Range: 1.0 ~ 100.0
+		xpMultiplier = 1.5
+
+	[free_relics.hollow_eye]
+		#If true, Hollow Eye strips away blindness, darkness, and nearby invisibility.
+		enabled = true
+		#If true, Hollow Eye removes Blindness from the wearer.
+		clearBlindness = true
+		#If true, Hollow Eye removes Darkness from the wearer.
+		clearDarkness = true
+		#Radius in blocks for revealing invisible nearby entities.
+		# Default: 16.0
+		# Range: 1.0 ~ 256.0
+		revealInvisibleRadius = 16.0
+		#Glowing duration applied to invisible nearby entities.
+		# Default: 60
+		# Range: 0 ~ 72000
+		revealInvisibleDurationTicks = 60
+		#How often to scan for invisible nearby entities.
+		# Default: 20
+		# Range: 1 ~ 1200
+		revealInvisibleIntervalTicks = 20
+
+	[free_relics.censer_of_ash]
+		#If true, Censer of Ash boosts damage against burning enemies and marks them.
+		enabled = true
+		#Damage multiplier against burning enemies. 1.20 = 20% more damage.
+		# Default: 1.2
+		# Range: 0.0 ~ 100.0
+		damageMultiplier = 1.2
+		#Radius in blocks for scanning burning entities.
+		# Default: 12.0
+		# Range: 1.0 ~ 256.0
+		glowRadius = 12.0
+		#Glowing duration applied to burning entities, in ticks.
+		# Default: 40
+		# Range: 0 ~ 72000
+		glowDurationTicks = 40
+		#How often to scan for burning entities, in ticks.
+		# Default: 20
+		# Range: 1 ~ 1200
+		scanIntervalTicks = 20
+
+	[free_relics.mourners_thread]
+		#If true, Mourner's Thread restores hunger and health on kill.
+		enabled = true
+		#Food restored on kill.
+		# Default: 4
+		# Range: 0 ~ 20
+		foodRestored = 4
+		#Saturation restored on kill.
+		# Default: 0.6
+		# Range: 0.0 ~ 20.0
+		saturationRestored = 0.6
+		#Health restored on kill. 2.0 = 1 heart.
+		# Default: 2.0
+		# Range: 0.0 ~ 40.0
+		healAmount = 2.0
+
+	[free_relics.thornbound_carapace]
+		#If true, Thornbound Carapace reflects incoming damage to attackers.
+		enabled = true
+		#Percent of incoming damage reflected. 0.20 = 20%.
+		# Default: 0.2
+		# Range: 0.0 ~ 1.0
+		reflectPercent = 0.2
+
+	[free_relics.voidstep_band]
+		#If true, Voidstep Band negates fall damage.
+		enabled = true
+
+	[free_relics.executioners_coin]
+		#If true, Executioner's Coin grants bonus damage against low-health targets.
+		enabled = true
+		#Target health threshold as a percent of max health. 0.30 = 30%.
+		# Default: 0.3
+		# Range: 0.0 ~ 1.0
+		healthThresholdPercent = 0.3
+		#Damage multiplier against low-health targets. 1.30 = 30% more damage.
+		# Default: 1.3
+		# Range: 0.0 ~ 100.0
+		damageMultiplier = 1.3
+
+	[free_relics.relic_of_the_last_breath]
+		#If true, Relic of the Last Breath can prevent lethal damage.
+		enabled = true
+		#Health to set after surviving the lethal hit. 1.0 = half a heart.
+		# Default: 1.0
+		# Range: 0.1 ~ 20.0
+		postTriggerHealth = 1.0
+		#Absorption duration in ticks.
+		# Default: 200
+		# Range: 0 ~ 72000
+		absorptionDurationTicks = 200
+		#Absorption amplifier. 1 = Absorption II.
+		# Default: 1
+		# Range: 0 ~ 255
+		absorptionAmplifier = 1
+		#Regeneration duration in ticks.
+		# Default: 120
+		# Range: 0 ~ 72000
+		regenerationDurationTicks = 120
+		#Regeneration amplifier. 1 = Regeneration II.
+		# Default: 1
+		# Range: 0 ~ 255
+		regenerationAmplifier = 1
+		#Cooldown in ticks.
+		# Default: 6000
+		# Range: 0 ~ 1728000
+		cooldownTicks = 6000
+
+	[free_relics.torch_of_gravesong]
+		#If true, Torch of Gravesong deals bonus damage to undead and grants Strength on undead kills.
+		enabled = true
+		#Damage multiplier against undead. 1.25 = 25% more damage.
+		# Default: 1.25
+		# Range: 0.0 ~ 100.0
+		undeadDamageMultiplier = 1.25
+		#Strength duration in ticks after killing undead.
+		# Default: 120
+		# Range: 0 ~ 72000
+		strengthDurationTicks = 120
+		#Strength amplifier. 0 = Strength I.
+		# Default: 0
+		# Range: 0 ~ 255
+		strengthAmplifier = 0
+
+[sloth_weapon]
+	#If true, Sloth: Lethargic Flail is enabled.
+	enabled = true
+	#How many branded ticks are needed to reach 100% progress.
+	# Default: 360000
+	# Range: 1 ~ 9223372036854775807
+	slothWeaponMaxBrandedTicks = 360000
+	#Progress percent required to use Branded weapons. 0.995 = 99.5%
+	# Default: 0.995
+	# Range: 0.0 ~ 1.0
+	slothWeaponRequiredBrandedPercent = 0.995
+	#How often to scan the player's inventory for the weapon burden effects.
+	# Default: 10
+	# Range: 1 ~ 200
+	inventoryCheckIntervalTicks = 10
+	#Movement speed modifier while the weapon exists anywhere in inventory. -0.50 = 50 percent slower.
+	# Default: -0.5
+	# Range: -1.0 ~ 10.0
+	inventoryMoveSpeedMultiplier = -0.5
+	#Extra exhaustion added per second while the weapon exists anywhere in inventory.
+	# Default: 0.05
+	# Range: 0.0 ~ 10.0
+	inventoryExhaustionPerSecond = 0.05
+	#If true, creative players may always use the Lethargic Flail.
+	enableCreativeBrandedTimeBypass = true
+	#Base duration of Laziness stacks in ticks.
+	# Default: 1200
+	# Range: 0 ~ 72000
+	lazinessDurationTicks = 1200
+	#How many Laziness stacks are added when using the sweeping attack.
+	# Default: 3
+	# Range: 0 ~ 64
+	sweepLazinessStacks = 3
+	#Damage multiplier for the sweeping attack. 0.75 = 75% damage.
+	# Default: 0.75
+	# Range: 0.0 ~ 100.0
+	sweepDamageMultiplier = 0.75
+	#Radius in blocks for the sweeping attack.
+	# Default: 10.0
+	# Range: 1.0 ~ 128.0
+	sweepRadius = 10.0
+	#Duration of the enemy debuff applied by the sweeping attack.
+	# Default: 200
+	# Range: 0 ~ 72000
+	sweepEnemyDebuffDurationTicks = 200
+	#Cooldown in ticks for the thrown cube attack.
+	# Default: 600
+	# Range: 0 ~ 72000
+	cubeCooldownTicks = 600
+	#Stun duration in ticks for the thrown cube attack.
+	# Default: 200
+	# Range: 0 ~ 72000
+	cubeStunDurationTicks = 200
+	#Damage multiplier for the thrown cube. 0.75 = 75% damage.
+	# Default: 0.75
+	# Range: 0.0 ~ 100.0
+	cubeDamageMultiplier = 0.75
+
+[pride_weapon]
+	#If true, Pride: Vanity's Edge is enabled.
+	enabled = true
+	#How often, in ticks, Vanity's Edge updates its dynamic state.
+	# Default: 10
+	# Range: 1 ~ 200
+	maintenanceIntervalTicks = 10
+	#How often, in ticks, Vanity's Edge applies its ally suppression aura while held.
+	# Default: 20
+	# Range: 1 ~ 200
+	allyAuraIntervalTicks = 20
+	#Health percentage threshold for the high health attack speed bonus. 0.80 = above 80 percent health.
+	# Default: 0.8
+	# Range: 0.0 ~ 1.0
+	highHealthAttackSpeedThreshold = 0.8
+	#Attack speed bonus while above the high health threshold. 0.10 = +10 percent.
+	# Default: 0.1
+	# Range: 0.0 ~ 10.0
+	highHealthAttackSpeedBonus = 0.1
+	#Bonus damage granted for every 2 HP above half health.
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	highHealthBonusDamagePerTwoHp = 2.0
+	#Radius in blocks for suppressing allies, companions, and pets while the weapon is held.
+	# Default: 12.0
+	# Range: 1.0 ~ 128.0
+	allySuppressionRadius = 12.0
+	#Duration of the ally suppression debuff in ticks.
+	# Default: 40
+	# Range: 0 ~ 72000
+	allySuppressionDurationTicks = 40
+	#Health points lost if a successful hit does not kill the target. 1.0 = half a heart.
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	nonKillSelfDamage = 1.0
+	#Duration of each kill-based attack speed stack in ticks.
+	# Default: 3600
+	# Range: 0 ~ 72000
+	killStackDurationTicks = 3600
+	#Attack speed granted by each kill stack.
+	# Default: 0.1
+	# Range: 0.0 ~ 10.0
+	killStackAttackSpeedBonus = 0.1
+	#Attack damage lost for every 2 armor points while the weapon exists in inventory.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	armorPenaltyPerTwoArmor = 1.0
+	#Upper health threshold for the mid-health weakness band. 0.50 = 50 percent.
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	midHealthUpperThreshold = 0.5
+	#Lower health threshold for the mid-health weakness band. 0.30 = 30 percent.
+	# Default: 0.0
+	# Range: 0.0 ~ 1.0
+	midHealthLowerThreshold = 0.0
+	#Damage penalty multiplier applied in the mid-health band. -0.50 = 50 percent less damage.
+	# Default: -0.5
+	# Range: -1.0 ~ 10.0
+	midHealthDamagePenaltyMultiplier = -0.5
+	#Attack speed penalty multiplier applied in the mid-health band. -0.50 = 50 percent less attack speed.
+	# Default: -0.5
+	# Range: -1.0 ~ 10.0
+	midHealthAttackSpeedPenaltyMultiplier = -0.5
+	#Health percentage threshold for rolling Losing Pride or Bravery. 0.30 = below 30 percent.
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	lowHealthThreshold = 0.3
+	#Chance to receive Losing Pride when rolling below the low health threshold. 0.60 = 60 percent.
+	# Default: 0.6
+	# Range: 0.0 ~ 1.0
+	losingPrideChance = 0.6
+	#Duration of Losing Pride or Bravery in ticks.
+	# Default: 12000
+	# Range: 0 ~ 1728000
+	outcomeDurationTicks = 12000
+	#Incoming healing multiplier while Losing Pride is active. 0.80 = 20 percent less healing.
+	# Default: 0.8
+	# Range: 0.0 ~ 10.0
+	losingPrideHealingMultiplier = 0.8
+	#Regeneration amplifier granted by Bravery. 4 = Regeneration V.
+	# Default: 4
+	# Range: 0 ~ 255
+	braveryRegenerationAmplifier = 4
+
+[envy_weapon]
+	#If true, Envy: Covetfang is enabled.
+	enabled = true
+	#How often, in ticks, Covetfang updates its dynamic state.
+	# Default: 10
+	# Range: 1 ~ 200
+	maintenanceIntervalTicks = 10
+	#How long a claimed Coveted Target lasts, in ticks.
+	# Default: 400
+	# Range: 1 ~ 72000
+	claimDurationTicks = 400
+	#Cooldown in ticks after claiming a Coveted Target.
+	# Default: 160
+	# Range: 0 ~ 72000
+	claimCooldownTicks = 160
+	#Maximum range in blocks for tracking the claimed Coveted Target.
+	# Default: 48.0
+	# Range: 1.0 ~ 256.0
+	claimTrackRadius = 48.0
+	#Glowing duration applied to the Coveted Target.
+	# Default: 40
+	# Range: 0 ~ 72000
+	covetedGlowDurationTicks = 40
+	#Bonus damage granted per envy score category matched against the target.
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	bonusDamagePerEnvyScore = 2.0
+	#Extra bonus damage dealt to a claimed Coveted Target if it is genuinely superior to you.
+	# Default: 2.0
+	# Range: 0.0 ~ 100.0
+	covetedTargetExtraDamage = 2.0
+	#Maximum total bonus damage Covetfang can gain from envy scoring.
+	# Default: 12.0
+	# Range: 0.0 ~ 1000.0
+	bonusDamageCap = 12.0
+	#Health points lost if a successful hit does not kill the target. 1.0 = half a heart.
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	baseNonKillSelfDamage = 1.0
+	#Additional self-damage when striking something beneath you that gives no envy score and is not your claimed target.
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	hollowComparisonExtraSelfDamage = 1.0
+	#Duration in ticks for stolen strengths gained from slaying a claimed target.
+	# Default: 900
+	# Range: 0 ~ 1728000
+	stolenStrengthDurationTicks = 900
+	#Bonus max health granted when Covetfang steals vitality.
+	# Default: 4.0
+	# Range: 0.0 ~ 100.0
+	stolenVitalityMaxHealthBonus = 4.0
+	#Bonus armor granted when Covetfang steals plating.
+	# Default: 4.0
+	# Range: 0.0 ~ 100.0
+	stolenPlatingArmorBonus = 4.0
+	#Movement speed bonus granted when Covetfang steals swiftness. 0.15 = +15 percent.
+	# Default: 0.15
+	# Range: 0.0 ~ 10.0
+	stolenSwiftnessMoveSpeedBonus = 0.15
+	#Attack speed bonus granted when Covetfang steals ferocity.
+	# Default: 0.2
+	# Range: 0.0 ~ 10.0
+	stolenFerocityAttackSpeedBonus = 0.2
+	#Attack damage lost for each beneficial effect on the wielder while Covetfang exists in inventory.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	beneficialEffectAttackDamagePenalty = 1.0
+	#Health percentage threshold for Covetfang's desperate or hopeless comparison effects. 0.30 = below 30 percent.
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	lowHealthThreshold = 0.3
+	#Radius in blocks for checking whether something stronger is nearby while low on health.
+	# Default: 16.0
+	# Range: 1.0 ~ 256.0
+	desperateWantScanRadius = 16.0
+	#Health restored on successful hit while below the low health threshold and something stronger is nearby. 1.0 = half a heart.
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	desperateWantHealOnHit = 1.0
+	#Movement speed bonus while below the low health threshold and something stronger is nearby. 0.20 = +20 percent.
+	# Default: 0.2
+	# Range: 0.0 ~ 10.0
+	desperateWantMoveSpeedBonus = 0.2
+	#Damage penalty while below the low health threshold and nothing worthy of envy is nearby. -0.35 = 35 percent less damage.
+	# Default: -0.35
+	# Range: -1.0 ~ 10.0
+	hopelessComparisonDamagePenalty = -0.35
+	#Movement speed penalty while below the low health threshold and nothing worthy of envy is nearby. -0.20 = 20 percent slower.
+	# Default: -0.2
+	# Range: -1.0 ~ 10.0
+	hopelessComparisonMoveSpeedPenalty = -0.2
+	#Movement speed bonus while actively pursuing a claimed Coveted Target. 0.10 = +10 percent.
+	# Default: 0.1
+	# Range: 0.0 ~ 10.0
+	covetedPursuitMoveSpeedBonus = 0.1
+
+[wrath_weapon]
+	#If true, Wrath: Ruinwake is enabled.
+	enabled = true
+	#Maximum Grudge stacks Ruinwake can hold.
+	# Default: 5
+	# Range: 1 ~ 64
+	maxGrudgeStacks = 5
+	#Multiplicative melee damage gained per Grudge stack. 0.08 = 8 percent.
+	# Default: 0.08
+	# Range: 0.0 ~ 10.0
+	damageBonusPerStack = 0.08
+	#Ticks out of combat before one Grudge stack decays.
+	# Default: 200
+	# Range: 20 ~ 72000
+	stackDecayTicks = 200
+	#Radius in blocks for Ruinwake's right-click shockwave.
+	# Default: 6.0
+	# Range: 1.0 ~ 64.0
+	releaseRadius = 6.0
+	#Base attack damage multiplier for Ruinwake's shockwave.
+	# Default: 0.45
+	# Range: 0.0 ~ 100.0
+	releaseBaseDamageMultiplier = 0.45
+	#Additional shockwave damage multiplier per consumed Grudge stack.
+	# Default: 0.17
+	# Range: 0.0 ~ 100.0
+	releaseDamagePerStack = 0.17
+	#Knockback strength applied by Ruinwake's shockwave.
+	# Default: 1.2
+	# Range: 0.0 ~ 10.0
+	releaseKnockback = 1.2
+	#Weakness duration applied by Ruinwake's shockwave.
+	# Default: 160
+	# Range: 0 ~ 72000
+	weaknessDurationTicks = 160
+	#Cooldown in ticks for Ruinwake's shockwave.
+	# Default: 240
+	# Range: 0 ~ 72000
+	releaseCooldownTicks = 240
+	#Health lost per consumed Grudge stack if the shockwave kills nothing.
+	# Default: 1.0
+	# Range: 0.0 ~ 20.0
+	failureSelfDamagePerStack = 1.0
+
+	[bearer_curios.oathbound_reliquary]
+		#If true, Oathbound Reliquary is enabled.
+		enabled = true
+		#Additional charm slots granted while the Reliquary is worn.
+		# Default: 2
+		# Range: 0 ~ 16
+		bonusCharmSlots = 2
+		#Health threshold in health points for the emergency regeneration effect.
+		# Default: 10.0
+		# Range: 0.0 ~ 40.0
+		lowHealthThreshold = 10.0
+		#Absorption refresh duration in ticks.
+		# Default: 220
+		# Range: 0 ~ 72000
+		absorptionDurationTicks = 220
+		#Absorption amplifier. 0 = Absorption I.
+		# Default: 0
+		# Range: 0 ~ 255
+		absorptionAmplifier = 0
+		#Regeneration duration while below the low health threshold.
+		# Default: 80
+		# Range: 0 ~ 72000
+		regenerationDurationTicks = 80
+		#Regeneration amplifier. 0 = Regeneration I.
+		# Default: 0
+		# Range: 0 ~ 255
+		regenerationAmplifier = 0
+		#How many of the newer bearer curios must be equipped before the Reliquary adds Hunger.
+		# Default: 3
+		# Range: 0 ~ 16
+		hungerCurioThreshold = 3
+		#Hunger duration in ticks while overburdened.
+		# Default: 120
+		# Range: 0 ~ 72000
+		hungerDurationTicks = 120
+		#Hunger amplifier. 0 = Hunger I.
+		# Default: 0
+		# Range: 0 ~ 255
+		hungerAmplifier = 0
+
+	[bearer_curios.brandkeepers_mercy]
+		#If true, Brandkeeper's Mercy can suppress the Provocation curse for a nearly fully attuned bearer.
+		enabled = true
+
+	[bearer_curios.chain_of_the_penitent]
+		#If true, Chain of the Penitent stores damage taken as Penance.
+		enabled = true
+		#How much Penance is gained from damage taken.
+		# Default: 1.5
+		# Range: 0.0 ~ 100.0
+		penanceGainMultiplier = 1.5
+		#Maximum stored Penance.
+		# Default: 40.0
+		# Range: 0.0 ~ 1000.0
+		maxPenance = 40.0
+		#Maximum bonus damage added when consuming stored Penance.
+		# Default: 12.0
+		# Range: 0.0 ~ 1000.0
+		maxBonusDamage = 12.0
+		#Glowing duration applied to the struck target when Penance is consumed.
+		# Default: 100
+		# Range: 0 ~ 72000
+		markDurationTicks = 100
+
+	[bearer_curios.eye_of_the_sleepless_witness]
+		#If true, Eye of the Sleepless Witness is enabled.
+		enabled = true
+		#If true, the bearer receives infinite Night Vision while worn.
+		nightVision = true
+		#Nearby hostile reveal radius while moving.
+		# Default: 14.0
+		# Range: 1.0 ~ 256.0
+		revealRadiusMoving = 14.0
+		#Nearby hostile reveal radius while standing still.
+		# Default: 24.0
+		# Range: 1.0 ~ 256.0
+		revealRadiusStill = 24.0
+		#Glowing duration applied to nearby hostiles.
+		# Default: 60
+		# Range: 0 ~ 72000
+		glowDurationTicks = 60
+		#Oakskin Resistance duration in ticks.
+		# Default: 80
+		# Range: 0 ~ 72000
+		oakskinDurationTicks = 80
+		#Oakskin Resistance amplifier. 0 = Resistance I.
+		# Default: 0
+		# Range: 0 ~ 255
+		oakskinAmplifier = 0
+		#Maximum horizontal movement squared for Oakskin to count as 'holding your ground'.
+		# Default: 0.02
+		# Range: 0.0 ~ 4.0
+		oakskinMovementThreshold = 0.02
+
+	[bearer_curios.censer_of_hollow_prayer]
+		#If true, Censer of Hollow Prayer is enabled.
+		enabled = true
+		#Effect radius in blocks around the wearer.
+		# Default: 5.0
+		# Range: 1.0 ~ 256.0
+		radius = 5.0
+		#Weakness duration applied to nearby monsters.
+		# Default: 80
+		# Range: 0 ~ 72000
+		weaknessDurationTicks = 80
+		#Weakness amplifier. 0 = Weakness I.
+		# Default: 0
+		# Range: 0 ~ 255
+		weaknessAmplifier = 0
+		#Slowness duration applied to nearby monsters.
+		# Default: 80
+		# Range: 0 ~ 72000
+		slownessDurationTicks = 80
+		#Slowness amplifier. 0 = Slowness I.
+		# Default: 0
+		# Range: 0 ~ 255
+		slownessAmplifier = 0
+		#Regeneration duration granted while enemies are nearby.
+		# Default: 80
+		# Range: 0 ~ 72000
+		regenerationDurationTicks = 80
+		#Regeneration amplifier. 0 = Regeneration I.
+		# Default: 0
+		# Range: 0 ~ 255
+		regenerationAmplifier = 0
+		#How many nearby monsters count as a crowd.
+		# Default: 3
+		# Range: 1 ~ 64
+		crowdThreshold = 3
+		#Absorption duration granted in crowds.
+		# Default: 100
+		# Range: 0 ~ 72000
+		absorptionDurationTicks = 100
+		#Absorption amplifier in crowds. 1 = Absorption II.
+		# Default: 1
+		# Range: 0 ~ 255
+		absorptionAmplifier = 1
+
+	[bearer_curios.nail_of_the_first_martyr]
+		#If true, Nail of the First Martyr is enabled.
+		enabled = true
+		#Martyr's Claim stack duration in ticks.
+		# Default: 120
+		# Range: 0 ~ 72000
+		claimDurationTicks = 120
+		#How many Martyr's Claim stacks are needed before the target becomes Judged.
+		# Default: 5
+		# Range: 1 ~ 64
+		maxStacks = 5
+		#Judged duration in ticks.
+		# Default: 200
+		# Range: 0 ~ 72000
+		judgedDurationTicks = 200
+		#Haste duration granted when slaying a Judged target.
+		# Default: 200
+		# Range: 0 ~ 72000
+		hasteDurationTicks = 200
+		#Haste amplifier. 1 = Haste II.
+		# Default: 1
+		# Range: 0 ~ 255
+		hasteAmplifier = 1
+		#Absorption duration granted when slaying a Judged target.
+		# Default: 200
+		# Range: 0 ~ 72000
+		absorptionDurationTicks = 200
+		#Absorption amplifier. 1 = Absorption II.
+		# Default: 1
+		# Range: 0 ~ 255
+		absorptionAmplifier = 1
+
+	[basic_rings.gold_ring]
+		#If true, Gold Ring is enabled.
+		enabled = true
+		#Armor bonus granted by Gold Ring.
+		# Default: 1.0
+		# Range: 0.0 ~ 100.0
+		armorBonus = 1.0
+
+	[basic_rings.cyan_ring]
+		#If true, Cyan Ring is enabled.
+		enabled = true
+		#Armor bonus granted by Cyan Ring.
+		# Default: 2.0
+		# Range: 0.0 ~ 100.0
+		armorBonus = 2.0
+
+	[basic_rings.nebula_ring]
+		#If true, Fractured Ash Ring is enabled.
+		enabled = true
+		#Armor bonus granted by Nebula Ring.
+		# Default: 3.0
+		# Range: 0.0 ~ 100.0
+		armorBonus = 3.0
+		#Additional ring slots granted by Fractured Ash Ring while worn.
+		# Default: 1
+		# Range: 0 ~ 8
+		extraRingSlots = 1

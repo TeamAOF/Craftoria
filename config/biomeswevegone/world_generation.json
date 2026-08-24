@@ -1,0 +1,88 @@
+{
+  "biomes": {
+    "biomeswevegone:allium_shrubland": true,
+    "biomeswevegone:amaranth_grassland": true,
+    "biomeswevegone:araucaria_savanna": true,
+    "biomeswevegone:aspen_boreal": true,
+    "biomeswevegone:atacama_outback": true,
+    "biomeswevegone:baobab_savanna": true,
+    "biomeswevegone:basalt_barrera": true,
+    "biomeswevegone:bayou": true,
+    "biomeswevegone:black_forest": true,
+    "biomeswevegone:canadian_shield": true,
+    "biomeswevegone:cika_woods": true,
+    "biomeswevegone:coconino_meadow": true,
+    "biomeswevegone:coniferous_forest": true,
+    "biomeswevegone:crag_gardens": true,
+    "biomeswevegone:crimson_tundra": true,
+    "biomeswevegone:cypress_swamplands": true,
+    "biomeswevegone:cypress_wetlands": true,
+    "biomeswevegone:dacite_ridges": true,
+    "biomeswevegone:dacite_shore": true,
+    "biomeswevegone:dead_sea": true,
+    "biomeswevegone:ebony_woods": true,
+    "biomeswevegone:enchanted_tangle": true,
+    "biomeswevegone:eroded_borealis": false,
+    "biomeswevegone:firecracker_chaparral": true,
+    "biomeswevegone:forgotten_forest": true,
+    "biomeswevegone:fragment_jungle": true,
+    "biomeswevegone:frosted_coniferous_forest": true,
+    "biomeswevegone:frosted_taiga": true,
+    "biomeswevegone:howling_peaks": true,
+    "biomeswevegone:ironwood_gour": true,
+    "biomeswevegone:jacaranda_jungle": true,
+    "biomeswevegone:lush_stacks": true,
+    "biomeswevegone:maple_taiga": true,
+    "biomeswevegone:mojave_desert": true,
+    "biomeswevegone:orchard": true,
+    "biomeswevegone:overgrowth_woodlands": true,
+    "biomeswevegone:pale_bog": true,
+    "biomeswevegone:prairie": true,
+    "biomeswevegone:pumpkin_valley": true,
+    "biomeswevegone:rainbow_beach": true,
+    "biomeswevegone:red_rock_peaks": true,
+    "biomeswevegone:red_rock_valley": true,
+    "biomeswevegone:redwood_thicket": true,
+    "biomeswevegone:rose_fields": true,
+    "biomeswevegone:rugged_badlands": true,
+    "biomeswevegone:sakura_grove": true,
+    "biomeswevegone:shattered_glacier": true,
+    "biomeswevegone:sierra_badlands": true,
+    "biomeswevegone:skyris_vale": true,
+    "biomeswevegone:temperate_grove": true,
+    "biomeswevegone:tropical_rainforest": true,
+    "biomeswevegone:weeping_witch_forest": true,
+    "biomeswevegone:white_mangrove_marshes": true,
+    "biomeswevegone:windswept_desert": true,
+    "biomeswevegone:zelkova_forest": true
+  },
+  "region_1_weight": 8,
+  "region_2_weight": 8,
+  "region_3_weight": 8,
+  "vanilla_additions": {
+    "comment": "Setting this to False will disable all vanilla additions, making the enabled_vanilla_additions section ignored.  (Only Available on Fabric and NeoForge)",
+    "value": true
+  },
+  "individual_vanilla_additions": {
+    "biomeswevegone:palm_trees": {
+      "comment": "Will add Palm Trees to minecraft:beach.",
+      "value": true
+    },
+    "biomeswevegone:vanilla/flower_default": {
+      "comment": "Will add Flower Patch, Clover Patch, White Anemone, Pink Anemone, Orange Daisy, Horseweed and rose to minecraft:old_growth_pine_taiga, minecraft:old_growth_spruce_taiga, minecraft:windswept_hills, minecraft:windswept_gravelly_hills, minecraft:windswept_forest, minecraft:desert, minecraft:snowy_plains, minecraft:ice_spikes, minecraft:windswept_savanna, minecraft:forest, minecraft:old_growth_birch_forest, minecraft:birch_forest, minecraft:taiga, minecraft:snowy_taiga, minecraft:dark_forest.",
+      "value": true
+    },
+    "biomeswevegone:vanilla/forest_flowers": {
+      "comment": "Will add Flower Patch, Clover Patch, Blue Rose Bush and Blue Berry Bushes to minecraft:forest, minecraft:dark_forest.",
+      "value": true
+    },
+    "biomeswevegone:vanilla/flower_warm": {
+      "comment": "Will add Flower Patch, Clover Patch, White Anemone, Pink Anemone, Orange Daisy, Horseweed and rose to minecraft:sparse_jungle, minecraft:jungle, minecraft:bamboo_jungle, minecraft:savanna, minecraft:savanna_plateau.",
+      "value": true
+    },
+    "biomeswevegone:vanilla/flower_plains": {
+      "comment": "Will add Green/Cyan/Magenta/Purple/Yellow Tulips, Rose, Orange Daisy, Flower and Clover Patches to minecraft:plains, minecraft:sunflower_plains.",
+      "value": true
+    }
+  }
+}

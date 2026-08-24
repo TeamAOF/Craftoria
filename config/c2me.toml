@@ -7,7 +7,7 @@ version = 3
 #                (cpus / 1.6),
 #                (cpus / 1.3)
 #            )  - if(is_client, 1, 0),
-#            ( ( mem_gb - (if(is_client, 1.2, 0.6)) ) / 0.6 )
+#            ( ( mem_gb - (if(is_client, 1.0, 0.5)) ) / 0.6 )
 #        )
 #    )
 # )  
@@ -52,15 +52,6 @@ threadPoolPriority = "default"
 [ioSystem]
 	# (Default: true) Whether to use the optimized implementation of IO system
 	replaceImpl = "default"
-	# (Default: false) EXPERIMENTAL FEATURE
-	# This replaces the way your chunks are saved.
-	# Please keep regular backups of your world if you are using this feature,
-	# and report any world issues you encounter with this feature to our GitHub.
-	# 
-	# Whether to use the fast reduced allocation chunk serializer
-	# (may cause incompatibility with other mods)
-	# 
-	gcFreeChunkSerializer = "default"
 	# (Default: 8192) Soft limit for io worker nbt cache
 	chunkDataCacheSoftLimit = "default"
 	# (Default: 32678) Hard limit for io worker nbt cache
@@ -77,9 +68,16 @@ threadPoolPriority = "default"
 	# 
 	# 
 	enforceSafeWorldRandomAccess = "default"
+	# (Default: true)  
+	#  Whether to disable the shutdown hook of log4j2 on dedicated servers.
+	#  Enabling this also makes the JVM exit when the dedicated server is considered fully shut down.
+	#  This option have no effect on client-side.
+	#  We has historically been doing this, and this config option allows you to disable this behavior.
+	# 
+	disableLoggingShutdownHook = "default"
 
 [vanillaWorldGenOptimizations]
-	# (Default: false) Whether to use density function compiler to accelerate world generation
+	# (Default: true) Whether to use density function compiler to accelerate world generation
 	# 
 	# Density function: https://minecraft.wiki/w/Density_function
 	# 
@@ -99,12 +97,19 @@ threadPoolPriority = "default"
 	# This is no longer included in lithium-fabric 
 	# (may cause incompatibility with other mods)
 	# 
+	# Set to false for the following reasons: 
+	# Incompatible with biolith@3.0.14 (*) (defined in c2me) 
 	useEndBiomeCache = "default"
 	# (Default: true) Whether to enable StructureWeightSampler optimizations to accelerate world generation
 	# 
 	# Set to false for the following reasons: 
 	# Incompatible with twilightforest@4.8.3345 (*) (defined in c2me) 
 	optimizeStructureWeightSampler = "default"
+	# (Default: true) Enables the built-in integrations with other worldgen mods in density function compiler.
+	# 
+	# Depends on vanillaWorldGenOptimizations.useDensityFunctionCompiler
+	# 
+	enableBuiltinDFCIntegrations = "default"
 
 [chunkSystem]
 	# (Default: true) Whether to enable async serialization
@@ -125,11 +130,13 @@ threadPoolPriority = "default"
 	# in a single world instance
 	# 
 	allowPOIUnloading = "default"
-	# (Default: false) This option workarounds MC-276863, a bug that makes mushrooms appear in non-postprocessed chunks
+	# (Default: true) This option workarounds MC-276863, a bug that makes mushrooms appear in non-postprocessed chunks
 	# This bug is amplified with notickvd as it exposes non-postprocessed chunks to players
 	# 
 	# This should not affect other worldgen behavior and game mechanics in general
 	# 
+	# Set to false for the following reasons: 
+	# Incompatible with twilightforest@4.8.3345 (*) (defined in c2me) 
 	suppressGhostMushrooms = "default"
 	# (Default: true) Whether to synchronize the management of player tickets
 	# 
@@ -155,9 +162,11 @@ threadPoolPriority = "default"
 	# This applies a rough filter to filter out fluids that are definitely not going to flow
 	# 
 	filterFluidPostProcessing = "default"
-	# (Default: true) Whether to use legacy scheduling for neighbor chunks
+	# (Default: false) Whether to use legacy scheduling for neighbor chunks
 	# 
 	# Enabling this restores the behavior of always loading in neighbor chunks when a chunk is loaded.
+	# 
+	# This is currently deprecated and will be removed in the future.
 	# 
 	useLegacyScheduling = "default"
 	# (Default: false) Whether to enable low memory mode
@@ -169,19 +178,15 @@ threadPoolPriority = "default"
 	# (Default: true) Whether to delay full chunk events to after full chunk future have been completed
 	# This restores the buggy behavior in NeoForge that the ecosystem have been relying on
 	# 
+	# Enabling this will almost certainly break vanilla behavior, disabled by default on fabric
 	# Do not change this unless you know what you are doing
 	# 
 	delayFullChunkEvents = "default"
 
 [noTickViewDistance]
-	# (Default: true) Whether to enable no-tick view distance
-	enabled = "default"
-	# (Default: 12) No-tick view distance max concurrent chunk loads 
+	# (Default: 33) No-tick view distance max concurrent chunk loads 
 	#  Lower this for a better latency and higher this for a faster loading
 	maxConcurrentChunkLoads = "default"
-	# (Default: true) Whether to use compatibility mode to send chunks 
-	#  This may fix some mod compatibility issues
-	compatibilityMode = "default"
 	# (Default: true) Enable server-side support for extended render distance protocol (c2me:ext_render_distance_v1)
 	# This allows requesting render distances higher than 127 chunks from the server
 	# 

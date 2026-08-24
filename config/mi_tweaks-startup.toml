@@ -1,32 +1,23 @@
-#Default: mi_tweaks
 machine_namespace = "mi_tweaks"
 
 [tweaks]
 	#Whether water pumps require a water biome (river or ocean) to operate
-	#Default: false
 	require_water_biome_for_pump = false
 	#Whether the voltage of a machine should be displayed. This includes displaying voltage of hatches and hulls
-	#Default: false
 	display_machine_voltage = false
 	#Whether efficiency should be locked when a redstone module locks a machine, rather than just the crafting operation
-	#Default: false
 	lock_efficiency_with_redstone = true
 	#Whether wrenches should render multiblock shapes in world. If false, then only blueprints will be able to render multiblock shapes in world
-	#Default: true
 	wrenches_render_multiblock_shapes = true
 	#Whether the tooltip on the energy bar should display the current energy consumption of the machine
-	#Default: false
 	display_energy_consumption_on_energy_bar = true
 	#The duration in ticks of burn time to apply when holding an item tagged mi_tweaks:very_hot
-	#Default: 100
 	# Default: 100
 	# Range: > 1
 	very_hot_items_burn_time = 100
 	#Whether item fuels should be blocked in multiblock boilers
-	#Default: false
 	disable_item_fuel_in_multiblock_boilers = false
 	#Whether temperature and fuel consumption should be locked when a redstone module locks a multiblock boiler, rather than losing fuel and heat
-	#Default: false
 	lock_boiler_temperature_with_redstone = false
 
 [efficiency]
@@ -34,16 +25,13 @@ machine_namespace = "mi_tweaks"
 	#DISABLED = No change will be made to MI's efficiency behavior
 	#ALWAYS_BASE = The efficiency will always be the base machine eu (or recipe eu if it's greater) + upgrades
 	#ALWAYS_MAX = The efficiency will always be forced to max
-	#Default: DISABLED
 	#Allowed Values: DISABLED, ALWAYS_BASE, ALWAYS_MAX
 	hack = "DISABLED"
 	#Whether efficiency bar and multiblock efficiency data should be hidden or not
-	#Default: false
 	hide = false
 	#Whether the casing max overclock overrides (as per `casing_max_overclock_overrides`) should be used
 	#This only applies to electric machines. Also applies to multiblocks but uses the highest tier energy hatch's casing
 	#Note that when this is enabled, it will override any behavior relating to the max efficiency for the `hack` mode (for example, as in `USE_VOLTAGE`)
-	#Default: false
 	use_casing_max_overclock_overrides = false
 
 	#The base max EU/t a machine can run at for a given casing
@@ -57,7 +45,6 @@ machine_namespace = "mi_tweaks"
 
 [machine_blueprints]
 	#Whether the learning system for blueprints is enabled or not. If true, then blueprints can be right-clicked to become learned
-	#Default: false
 	learning = false
 	#The list of machine ids (accepts regex) that require blueprints to place
 	#This is only used if any type of machine blueprint requirement is enabled
@@ -70,48 +57,39 @@ machine_namespace = "mi_tweaks"
 	#INVENTORY_OR_LEARN = The blueprint must be in the inventory of the player or it needs to have been learned
 	[machine_blueprints.required]
 		#The machine blueprint requirement mode to use for displaying the tooltip warning
-		#Default: DISABLED
 		#Allowed Values: DISABLED, INVENTORY, LEARN, INVENTORY_OR_LEARN
 		tooltip = "DISABLED"
 		#The machine blueprint requirement mode to use for placing machines
-		#Default: DISABLED
 		#Allowed Values: DISABLED, INVENTORY, LEARN, INVENTORY_OR_LEARN
 		placing = "DISABLED"
 		#The machine blueprint requirement mode to use for rendering hatch positions when holding hatches
-		#Default: DISABLED
 		#Allowed Values: DISABLED, INVENTORY, LEARN, INVENTORY_OR_LEARN
 		rendering_hatches = "DISABLED"
 
 [flux_transformer]
 	#The EU capacity of the Flux Transformer
-	#Default: 204800
 	# Default: 204800
 	# Range: 1 ~ 9223372036854775807
 	capacity = 76800000000
 	#The max FE extractable at a time for the Flux Transformer
-	#Default: 9223372036854775807
 	# Default: 9223372036854775807
 	# Range: 1 ~ 9223372036854775807
 	max_extract = 9223372036854775807
 	#The multiplier to apply on the EU to get FE
-	#Default: 1.0
 	# Default: 1.0
 	# Range: 0.1 ~ 1.7976931348623157E308
 	conversion_rate = 50.0
 
 [eu_transformer]
 	#The EU capacity of the EU Transformer
-	#Default: 204800
 	# Default: 204800
 	# Range: 1 ~ 9223372036854775807
 	capacity = 204800
 	#The multiplier to apply on the FE to get EU
-	#Default: 1.0
 	# Default: 1.0
 	# Range: 0.1 ~ 1.7976931348623157E308
 	conversion_rate = 1.0
 	#The max FE insertable at a time for the EU Transformer
-	#Default: 9223372036854775807
 	# Default: 9223372036854775807
 	# Range: 1 ~ 9223372036854775807
 	max_insert = 9223372036854775807

@@ -1,0 +1,17 @@
+[ui]
+	gui_enabled = true
+	gui_button_enabled = true
+	tooltip_enabled = true
+	#Render the diet-tier HUD widget.
+	hud_enabled = true
+	#Screen edge the diet-tier HUD widget is positioned relative to.
+	#Allowed Values: TOP_LEFT, TOP_CENTER, TOP_RIGHT, MIDDLE_LEFT, MIDDLE_CENTER, MIDDLE_RIGHT, BOTTOM_LEFT, BOTTOM_CENTER, BOTTOM_RIGHT
+	hud_anchor = "TOP_RIGHT"
+	#Horizontal pixel offset from the anchor. Set in-game with the Move HUD button on the nutrition screen.
+	# Default: -6
+	# Range: -4096 ~ 4096
+	hud_offset_x = -6
+	#Vertical pixel offset from the anchor.
+	# Default: 6
+	# Range: -4096 ~ 4096
+	hud_offset_y = 6

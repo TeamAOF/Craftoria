@@ -1,0 +1,90 @@
+#.
+#Parameters and abilities about Stats
+[stats]
+	#.
+	#.
+	#The max Eterna a Brass Bookshelf can provide.
+	#[@cui:RequiresReload:server]
+	# Default: 25
+	# Range: 1 ~ 100
+	brassBookshelfMaxEterna = 25
+	#.
+	#The max Quanta a Brass Bookshelf can provide.
+	#[@cui:RequiresReload:server]
+	# Default: 0.25
+	# Range: 0.009999999776482582 ~ 1.0
+	brassBookshelfMaxQuanta = 0.25
+	#.
+	#The max Arcana a Brass Bookshelf can provide.
+	#[@cui:RequiresReload:server]
+	# Default: 0.25
+	# Range: 0.009999999776482582 ~ 1.0
+	brassBookshelfMaxArcana = 0.25
+	#.
+	#Brass Bookshelf can provide treasures.
+	#[@cui:RequiresReload:server]
+	brassBookshelfAllowTreasures = true
+	#.
+	#The max Eterna Brass Bookshelves can provide.
+	#[@cui:RequiresReload:server]
+	# Default: 100
+	# Range: 1 ~ 100
+	multipleBrassBookshelfMaxEterna = 100
+	#.
+	#Creative Bookshelf can provide treasures.
+	#[@cui:RequiresReload:server]
+	creativeBookshelfAllowTreasures = true
+
+#.
+#Parameters and abilities of fluids and fluid operating components
+[fluids]
+	#.
+	#.
+	#The amount of liquid an Infuser can hold (mB).
+	#[@cui:RequiresReload:server]
+	# Default: 4000
+	# Range: > 1000
+	infuserFluidCapacity = 4000
+
+	#.
+	#Fine tune the kinetic stats of individual components
+	[stressValues.v1]
+
+		#.
+		#.
+		#[in Stress Units]
+		#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+		[stressValues.v1.impact]
+			brass_bookshelf = 4.0
+
+	#.
+	#Parameters and abilities of various utility components
+	[stressValues.utility]
+		#.
+		#.
+		#The max entities an Ender Woven Bag can store.
+		#[@cui:RequiresReload:server]
+		# Default: 6
+		# Range: > 0
+		enderWovenBagCapacity = 6
+		#.
+		#Whether the Ender Woven Bag will pull in entities from nearby.
+		enderWovenBagPullToggle = true
+		#.
+		#Whether the Ender Woven Bag will pull in bosses from nearby.
+		enderWovenBagPullBossToggle = false
+		#.
+		#The range at which entities will be pulled into the lantern.
+		# Default: 5
+		# Range: > 0
+		enderWovenBagPullRadius = 5
+		#.
+		#Modifier for the amount of force with which to pull entities.
+		# Default: 0.10000000149011612
+		# Range: 0.0 ~ 0.5
+		enderWovenBagPullForceMultiplier = 0.10000000149011612
+		#.
+		#The duration of being disabled after releasing mob when on contraption, in tick.
+		# Default: 60
+		# Range: > 0
+		enderWovenBagStopDisableDurationAfterReleasingOnContraption = 60

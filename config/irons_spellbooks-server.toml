@@ -18,7 +18,7 @@
 	allowCauldronBrewing = true
 	#Whether or not Furled Map items should skip chunks when searching for structures (only find new structures). Can impact performance while searching. Default: true
 	furledMapSkipsExistingChunks = true
-	#Whether or not casting items should apply all attributes while in the offhand, or just magic related ones. Default: true
+	#[Deprecated] Whether or not casting items should apply all attributes while in the offhand, or just magic related ones. Default: true
 	applyAllMultihandAttributes = true
 	#Whether or not creepers should be healed and become fire immune when struck by lightning. Default: true
 	betterCreeperThunderHit = true
@@ -70,6 +70,8 @@
 		additionalAttackDamage = 0.0
 		#Additional Spell Power (additive percent)
 		additionalSpellPower = 0.0
+		#[Experimental] Whether Tyros has an Ominous Bossfight. Default: false
+		tyrosOminousEnabled = false
 
 	["Boss Config"."Dead King"]
 		#Additional Health

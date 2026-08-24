@@ -25,6 +25,9 @@
 	#.
 	#Defines if when the face is changed on the configurable gearbox, the opposite face should be also changed. It doesn't consume more shaft !
 	configurableGearboxChangeTwoFaces = false
+	#.
+	#Does the encased variants of the blocks use their own stress keys or the base block stress keys (default false, use base block stress keys)
+	encasedBlocksUsesOwnKeys = false
 
 		#.
 		#Fine tune the kinetic stats of individual components
@@ -610,9 +613,68 @@
 				shadow_steel_encased_brass_shaft = 0.0
 				weathered_iron_encased_copper_shaft = 0.0
 				creative_encased_copper_large_cogwheel = 0.0
+				zinc_encased_oak_cogwheel = 0.0
+				zinc_encased_jungle_cogwheel = 0.0
+				zinc_encased_birch_cogwheel = 0.0
+				zinc_mechanical_pump = 4.0
+				zinc_encased_oak_large_cogwheel = 0.0
+				zinc_encased_birch_large_cogwheel = 0.0
+				zinc_encased_acacia_large_cogwheel = 0.0
+				zinc_encased_crimson_shaft = 0.0
+				zinc_encased_mangrove_large_cogwheel = 0.0
+				zinc_encased_cherry_cogwheel = 0.0
+				zinc_encased_cogwheel = 0.0
+				zinc_encased_zinc_large_cogwheel = 0.0
+				zinc_encased_dark_oak_cogwheel = 0.0
+				zinc_encased_copper_cogwheel = 0.0
+				zinc_encased_warped_shaft = 0.0
+				zinc_encased_dark_oak_shaft = 0.0
+				zinc_encased_mangrove_shaft = 0.0
+				zinc_encased_birch_shaft = 0.0
+				zinc_encased_warped_cogwheel = 0.0
+				zinc_encased_spruce_shaft = 0.0
+				zinc_encased_jungle_large_cogwheel = 0.0
+				zinc_encased_andesite_large_cogwheel = 0.0
+				zinc_encased_cherry_large_cogwheel = 0.0
+				zinc_encased_large_cogwheel = 0.0
+				zinc_encased_glass_shaft = 0.0
+				brass_hose_pulley = 4.0
+				zinc_encased_brass_cogwheel = 0.0
+				zinc_encased_jungle_shaft = 0.0
+				zinc_encased_copper_shaft = 0.0
+				zinc_encased_zinc_shaft = 0.0
+				andesite_mechanical_pump = 4.0
+				zinc_encased_bamboo_shaft = 0.0
+				zinc_encased_crimson_large_cogwheel = 0.0
+				zinc_encased_crimson_cogwheel = 0.0
+				zinc_encased_brass_shaft = 0.0
+				zinc_encased_oak_shaft = 0.0
+				zinc_encased_shaft = 0.0
+				zinc_encased_copper_large_cogwheel = 0.0
+				zinc_encased_brass_large_cogwheel = 0.0
+				zinc_encased_warped_large_cogwheel = 0.0
+				zinc_encased_acacia_cogwheel = 0.0
+				zinc_encased_andesite_cogwheel = 0.0
+				zinc_encased_bamboo_cogwheel = 0.0
+				zinc_encased_mangrove_cogwheel = 0.0
+				zinc_encased_acacia_shaft = 0.0
+				zinc_encased_mldeg_shaft = 0.0
+				zinc_encased_bamboo_large_cogwheel = 0.0
+				zinc_hose_pulley = 4.0
+				zinc_encased_cherry_shaft = 0.0
+				andesite_hose_pulley = 4.0
+				zinc_encased_zinc_cogwheel = 0.0
+				zinc_encased_dark_oak_large_cogwheel = 0.0
+				brass_mechanical_pump = 4.0
 
 			#.
 			#[in Stress Units]
 			#Configure how much stress a source can accommodate for.
 			[kinetics.stressValues.v2.capacity]
 				creative_cogwheel = 16384.0
+				zinc_steam_engine = 1024.0
+				andesite_valve_handle = 8.0
+				zinc_valve_handle = 8.0
+				andesite_steam_engine = 1024.0
+				brass_steam_engine = 1024.0
+				brass_valve_handle = 8.0

@@ -8,13 +8,11 @@
 		# Default: -1
 		# Range: > -1
 		playerDetMaxRange = -1
-		#Activates the "getPlayerPos" function of the Player Detector
+		#Activates the `getPlayer` function of the Player Detector
 		enablePlayerPosFunction = true
-		#Adds more information to `getPlayerPos` of the Player Detector. Like rotation and dimension
+		#Adds more information to `getPlayer` of the Player Detector. Like rotation and dimension
 		morePlayerInformation = true
-		#If true, the player detector can observe players which aren't in the same dimension as the detector itself. `playerDetMaxRange` needs to be infinite(-1) for it to work.
-		chatBoxMultiDimensional = true
-		#If true, add random error to `getPlayerPos` player position that varies based on how far the player is from the detector. Prevents getting the exact position of players far from the detector.
+		#If true, add random error to `getPlayer` player position that varies based on how far the player is from the detector. Prevents getting the exact position of players far from the detector.
 		enablePlayerPosRandomError = false
 		#The maximum amount of error (in blocks) that can be applied to each axis of the player's position.
 		# Default: 1000
@@ -24,15 +22,21 @@
 		# Default: 100
 		# Range: > 0
 		playerPosPreciseMaxRange = 100
-		#Returns a play in any function even when they are in spectator
+		#Returns a player in any function even when they are in spectator
 		showSpectators = true
+		#Let player detector fire events for certain player activities. Such as `player_join`, `player_leave`.
+		enablePlayerEvents = true
+		#If true, the player detector can observe players which aren't in the same dimension as the detector itself. `playerDetMaxRange` needs to be infinite(-1) for it to work.
+		playerDetMultiDimensional = true
+		#Allows `getPlayer` return a player statistics queryer
+		playerSpyStatistics = true
 
 	[Peripherals.Energy_Detector]
 		#Enable the Energy Detector or not.
 		enableEnergyDetector = true
 		#Defines the maximum energy flow of the energy detector.
 		# Default: 2147483647
-		# Range: > 1
+		# Range: > 0
 		energyDetectorMaxFlow = 2147483647
 
 	[Peripherals.NBT_Storage]
@@ -70,12 +74,14 @@
 		chatBoxPreventRunCommand = false
 		#If true, the chat box will wrap and execute 'run_command' or 'suggest_command' action with zero permission, in order to prevent operators accidently run dangerous commands.
 		chatBoxWrapCommand = true
-		#These commands below will not be able to send by 'run_command' or 'suggest_command' action. It will match as prefix if starts with '/', other wise use regex pattern
+		#These commands won't send via 'run_command' or 'suggest_command' action. It will match as a regex pattern if starts with '^', otherwise will match as prefix. '/' prefix should not present.
 		chatBoxBannedCommands = ["/execute", "/op", "/deop", "/gamemode", "/gamerule", "/stop", "/give", "/fill", "/setblock", "/summon", "/whitelist", "^/ban-(?:ip)?\\s*", "^/pardon-(?:ip)?\\s*", "^/save-(?:on|off)\\s*"]
-		#Defines the maximal number of characters in a message. Depending on the modpack and server, too large messages can't unexpectedly disconnect players
+		#Defines the maximal number of characters in a message. Depending on the modpack and server, large message may unexpectedly disconnect players
 		# Default: 1024
 		# Range: 0 ~ 8192
 		chatBoxMessageSize = 1024
+		#If true, chat box will 'broadcast' the messages instead of sending one individually to each player. This option does not affect anything directly, and relies on other mods to utilise this behavior (for example, mods that bridge minecraft chat to other platforms can intercept broadcasted messages and relay them, unlike individually sent ones). This option will only go in effect if `chatBoxMaxRange` is set to `-1` and `chatBoxMultiDimensional` is also set to `true`.
+		chatBoxBroadcast = true
 
 	[Peripherals.ME_Bridge]
 		#Enable the Me Bridge or not.
@@ -97,17 +103,11 @@
 		#Enable the Environment Detector or not.
 		enableEnvironmentDetector = true
 
-	[Peripherals.AR_Controller]
-		#Enable the AR goggles or not.
-		enableARGoggles = true
-
 	[Peripherals.Inventory_Manager]
 		#Enable the inventory manager or not.
 		enableInventoryManager = true
-
-	[Peripherals.Redstone_Integrator]
-		#Enable the redstone integrator or not.
-		enableRedstoneIntegrator = true
+		#Enable items transfer methods for inventory manager
+		enableItemsTransfer = true
 
 	[Peripherals.Block_Reader]
 		#Enable the block reader or not.
@@ -146,48 +146,6 @@
 		disablePocketFuelConsumption = true
 
 	[Peripherals.Operations]
-		# Default: 1000
-		# Range: > 0
-		digCooldown = 1000
-		# Default: 1
-		# Range: > 0
-		digCost = 1
-		# Default: 5000
-		# Range: > 0
-		useOnBlockCooldown = 5000
-		# Default: 1
-		# Range: > 0
-		useOnBlockCost = 1
-		# Default: 1000
-		# Range: > 0
-		suckCooldown = 1000
-		# Default: 1
-		# Range: > 0
-		suckCost = 1
-		# Default: 2500
-		# Range: > 0
-		useOnAnimalCooldown = 2500
-		# Default: 10
-		# Range: > 0
-		useOnAnimalCost = 10
-		# Default: 50000
-		# Range: > 0
-		captureAnimalCooldown = 50000
-		# Default: 100
-		# Range: > 0
-		captureAnimalCost = 100
-		# Default: 1000
-		# Range: > 0
-		warpCooldown = 1000
-		# Default: 1
-		# Range: > 0
-		warpCost = 1
-		# Default: 1000
-		# Range: > 0
-		accurePlaceCooldown = 1000
-		# Default: 1
-		# Range: > 0
-		accurePlaceCost = 1
 		# Default: 2000
 		# Range: > 0
 		scanBlocksCooldown = 2000
@@ -212,6 +170,144 @@
 		# Default: 0.17
 		# Range: 0.1 ~ 1.7976931348623157E308
 		scanEntitiesExtraBlockCost = 0.17
-		# Default: 100
+		# Default: 1000
 		# Range: > 0
 		chatMessageCooldown = 100
+		# Default: 2500
+		# Range: > 0
+		scanShipsCooldown = 2500
+		# Default: 24
+		# Range: > 1
+		scanShipsMaxFreeRadius = 24
+		# Default: 160
+		# Range: > 1
+		scanShipsMaxCostRadius = 160
+		# Default: 0.17
+		# Range: 0.1 ~ 1.7976931348623157E308
+		scanShipsExtraBlockCost = 0.17
+		# Default: 5000
+		# Range: > 0
+		saddleCaptureCooldown = 5000
+
+		[Peripherals.Operations.dig]
+			# Default: 1000
+			# Range: > 0
+			Cooldown = 1000
+			# Default: 1
+			# Range: > 0
+			Cost = 1
+
+		[Peripherals.Operations.useOnBlock]
+			# Default: 5000
+			# Range: > 0
+			Cooldown = 5000
+			# Default: 1
+			# Range: > 0
+			Cost = 1
+
+		[Peripherals.Operations.updateBlock]
+			# Default: 500
+			# Range: > 0
+			Cooldown = 500
+			# Default: 1
+			# Range: > 0
+			Cost = 1
+
+		[Peripherals.Operations.suck]
+			# Default: 1000
+			# Range: > 0
+			Cooldown = 1000
+			# Default: 1
+			# Range: > 0
+			Cost = 1
+
+		[Peripherals.Operations.useOnAnimal]
+			# Default: 2500
+			# Range: > 0
+			Cooldown = 2500
+			# Default: 10
+			# Range: > 0
+			Cost = 10
+
+		[Peripherals.Operations.captureAnimal]
+			# Default: 50000
+			# Range: > 0
+			Cooldown = 50000
+			# Default: 100
+			# Range: > 0
+			Cost = 100
+
+		[Peripherals.Operations.warp]
+			# Default: 1000
+			# Range: > 0
+			Cooldown = 1000
+			# Default: 1
+			# Range: > 0
+			Cost = 1
+
+		[Peripherals.Operations.accurePlace]
+			# Default: 1000
+			# Range: > 0
+			Cooldown = 1000
+			# Default: 1
+			# Range: > 0
+			Cost = 1
+
+		[Peripherals.Operations.preparePortal]
+			# Default: 3000
+			# Range: > 0
+			Cooldown = 3000
+			# Default: 600
+			# Range: > 0
+			Cost = 600
+
+		[Peripherals.Operations.activePortal]
+			# Default: 60000
+			# Range: > 0
+			Cooldown = 60000
+			# Default: 1
+			# Range: > 0
+			Cost = 1
+
+		[Peripherals.Operations.mountShip]
+			# Default: 1000
+			# Range: > 0
+			Cooldown = 1000
+			# Default: 1
+			# Range: > 0
+			Cost = 1
+
+	[Peripherals.Distance_Detector]
+		#Enable the distance detector or not.
+		enableDistanceDetector = true
+		#Maximum range of the distance detector
+		# Default: 64.0
+		# Range: 0.0 ~ 2.147483647E9
+		distanceDetectorRange = 64.0
+		#Defines how often the distance detector updates it's distance if periodically updates are enabled. 
+		#Periodically updates exists so we do not need to run "getDistance" on the main thread which eliminates the 1 tick yield of the lua function
+		# Default: 2
+		# Range: 1 ~ 100
+		maxUpdateRate = 2
+
+	[Peripherals.Fluid_Detector]
+		#Enable the Fluid Detector or not.
+		enableFluidDetector = true
+		#Defines the maximum fluid flow of the fluid detector.
+		# Default: 2147483647
+		# Range: > 0
+		fluidDetectorMaxFlow = 2147483647
+
+	[Peripherals.Gas_Detector]
+		#Enable the Gas Detector or not.
+		enableGasDetector = true
+		#Defines the maximum gas flow of the gas detector.
+		# Default: 2147483647
+		# Range: > 0
+		gasDetectorMaxFlow = 2147483647
+
+	[Peripherals.Saddle_Turtle]
+		#Enable saddle turtle
+		enableSaddleTurtle = true
+		#Allow saddle turtle to capture player
+		allowSaddleTurtleCapturePlayer = true

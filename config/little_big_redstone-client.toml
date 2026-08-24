@@ -1,28 +1,34 @@
 #The amount of time (in ticks) sticky notes remain on the screen before fading away.
-#Default: 40
 # Default: 40
 # Range: > 0
 sticky_note_in_world_view_linger_time = 40
-#The scale to apply to the in-world sticky note view on the screen.
-#1 results in the sticky note view being 180x180.
-#Default: 0.5
-# Default: 0.5
-# Range: 0.0 ~ 4.0
-sticky_note_in_world_view_scale = 0.5
 #The scale to apply to the tooltip sticky note view on the screen.
 #1 results in the sticky note view being 180x180.
-#Default: 0.5
 # Default: 0.5
 # Range: 0.0 ~ 4.0
 sticky_note_tooltip_view_scale = 0.5
 #The amount of time (in ticks) the floppy disk item display remain on the screen before fading away.
-#Default: 40
 # Default: 40
 # Range: > 0
 floppy_disk_view_linger_time = 40
 #The number of threads to use for pathfinding wires in microchips.
 #Be careful editing this value.
-#Default: 2
 # Default: 2
 # Range: > 0
 microchip_wire_pathfinding_threads = 2
+
+[sticky_note_in_world_view]
+	#The width and height to display the in-world sticky note view on the screen.
+	# Default: 90
+	# Range: 45 ~ 180
+	size = 90
+	#The X position where the in-world sticky note view should display on the screen.
+	#Stored as a percentage.
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	x = 0.01
+	#The Y position where the in-world sticky note view should display on the screen.
+	#Stored as a percentage.
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	y = 0.01

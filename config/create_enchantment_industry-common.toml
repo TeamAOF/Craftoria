@@ -1,0 +1,13 @@
+#.
+#Enable/Disable features of Create: Enchantment Industry
+#Mods depending on certain features may forcibly enable/disable them, in that case, the corresponding config will be ignored
+#[@cui:RequiresReload:both]
+[features]
+
+	#.
+	#.
+	#Processing Feature Elements
+	[features.processing]
+		#.
+		#If Classic Blaze Enchanter should be enabled
+		"processing/classic_blaze_enchanter" = false

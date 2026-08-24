@@ -1,0 +1,19 @@
+[config]
+	#Show Patchouli as book list button icon
+	patchouliAsButtonIcon = false
+	#Extra book item ids to treat as books in the open logic.
+	customBookIds = []
+	#These won't appear in the book list.
+	ignoredBookIds = []
+	#Horizontal offset for the books pane, relative to left of inventory panel.
+	# Default: -22
+	# Range: > -2147483648
+	pinnedBooksXOffset = -22
+	#Vertical offset for the books pane, relative to top of inventory panel.
+	# Default: -1
+	# Range: > -2147483648
+	pinnedBooksYOffset = -1
+	#If true, removes registered guide items on log-in. Prevents players from spawning with a bunch of books.
+	removeGuideItemsOnLogIn = true
+	#If true, disables Azazel Guide item drop.
+	disableAzazelGuideDrop = true

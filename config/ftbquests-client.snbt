@@ -1,4 +1,20 @@
 {
+	changelog: {
+		# Default: false
+		always_show: false
+		
+		# Default: 0.75
+		# Range: 0.25 ~ 2.0
+		font_scale: 0.75d
+		
+		# Default: 10
+		# Range: 1 ~ 50
+		max_lines: 10
+		
+		# Default: 3.5
+		# Range: 1.0 ~ 100.0
+		show_time: 3.5d
+	}
 	notifications: {
 		# Default: true
 		completion_sounds: true
@@ -16,6 +32,9 @@
 		# Valid values: "file", "chapter"
 		auto_pin_follows: "chapter"
 		
+		# Default: true
+		pinned_exclude_flexible: true
+		
 		# Default: 2
 		# Range: -∞ ~ +∞
 		pinned_quests_inset_x: 2
@@ -31,6 +50,10 @@
 		# Default: 0.75
 		# Range: 0.25 ~ 2.0
 		pinned_quests_scale: 0.75d
+		
+		# Default: "all"
+		# Valid values: "all", "quests_only", "hidden"
+		pinned_visibility: "all"
 	}
 	ui: {
 		# Default: true

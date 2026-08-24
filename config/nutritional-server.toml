@@ -1,0 +1,41 @@
+[nutrition]
+	#Global multiplier for nutrient yield from food.
+	# Default: 1.0
+	# Range: 0.0 ~ 100.0
+	multiplier = 1.0
+	#Percentage of nutrient value lost per additional nutrient on the same food. 15 = 15% per extra.
+	# Default: 15.0
+	# Range: 0.0 ~ 100.0
+	loss_per_extra_nutrient = 15.0
+	#Allow eating when hunger is full. Required for survival in peaceful mode.
+	allow_overeating = false
+	#Fallback starting value for a nutrient when its definition does not set one.
+	# Default: 50.0
+	# Range: 0.0 ~ 100.0
+	starting_default = 50.0
+
+[decay]
+	#Master switch for nutrient decay.
+	enabled = true
+	#Global multiplier for decay rate. Stacks with per-nutrient decay and the nutrient_decay_rate attribute.
+	# Default: 1.0
+	# Range: -100.0 ~ 100.0
+	multiplier = 1.0
+
+[death]
+	#Floor value below which the death penalty stops removing more.
+	# Default: 30.0
+	# Range: 0.0 ~ 100.0
+	penalty_floor = 30.0
+	#Amount subtracted from each nutrient on death.
+	# Default: 15.0
+	# Range: 0.0 ~ 100.0
+	penalty_amount = 15.0
+	#If true, nutrients below the floor at death are raised to the floor.
+	penalty_reset_below_floor = true
+
+[logging]
+	#Log items referenced by nutrient/food_hint JSON that are not present in the item registry.
+	missing_food = false
+	#Log food items that have no nutrient mapping.
+	missing_nutrients = false

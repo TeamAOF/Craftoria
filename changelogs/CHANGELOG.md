@@ -1,3 +1,64 @@
+# Craftoria | v1.32.0
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.32.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.32.0.md)_
+
+### Changes/Improvements ⭐
+
+* Add completionist capes to new winners `AK`
+* Disabled advanced peripherals book on spawn `AK`
+* Removed trophy of the older angler quest `AK`
+* Enable team sharing for fishes caught `AK`
+* Added Ether Gas Recipe to Chemical Reactor `KaiserHua1901`
+
+### Added Mods ✅
+
+* [Adventurer Skills \[Pufferfish's Skills\]](https://curseforge.com/projects/1397003)
+* [Ars Musique](https://curseforge.com/projects/1477190)
+* [Biolith](https://curseforge.com/projects/852512)
+* [Boss Checklist](https://curseforge.com/projects/1355708)
+* [Can't Sleep Clowns Will Eat Me](https://curseforge.com/projects/430957)
+* [Create: Hypertubes](https://curseforge.com/projects/1281336)
+* [Create: Schematic Checker](https://curseforge.com/projects/1357430)
+* [Critters and Companions](https://curseforge.com/projects/574913)
+* [Crystal Chronicles - Iron's Spells 'n Spellbooks](https://curseforge.com/projects/1153374)
+* [Data Anchor](https://curseforge.com/projects/1203668)
+* [Dawn Of Time](https://curseforge.com/projects/312359)
+* [EMI QoL Tweaks](https://curseforge.com/projects/1623482)
+* [Enhanced Celestials 2: Core](https://curseforge.com/projects/1621796)
+* [Enhanced Celestials 2: Default Lunar Events](https://curseforge.com/projects/1621820)
+* [Enhanced Celestials 2: Shader Support](https://curseforge.com/projects/1621851)
+* [Enigmatic Arcana ](https://curseforge.com/projects/1371571)
+* [Gaze - A Malum Addon](https://curseforge.com/projects/1273454)
+* [Guide Shelf](https://curseforge.com/projects/1500922)
+* [Invasive Optimizations](https://curseforge.com/projects/1528432)
+* [Lodestone](https://curseforge.com/projects/616457)
+* [Malum](https://curseforge.com/projects/484064)
+* [Multi Builder Tool](https://curseforge.com/projects/827020)
+* [Neo Vitae](https://curseforge.com/projects/1404763)
+* [Oathbound Relics](https://curseforge.com/projects/1503076)
+* [Punchy! - First person animations](https://curseforge.com/projects/1374153)
+* [Rechiseled: Applied Energistics 2](https://curseforge.com/projects/1483822)
+* [Sodium](https://curseforge.com/projects/394468)
+* [Sodium Extra](https://curseforge.com/projects/447673)
+* [Spectral Decorations](https://curseforge.com/projects/990498)
+* [Wireless Terminal Color!](https://curseforge.com/projects/1602480)
+
+### Removed Mods ❌
+
+* [Cable Facades](https://curseforge.com/projects/1140577)
+* [Embeddium](https://curseforge.com/projects/908741)
+* [Flat Bedrock (Forge / Fabric)](https://curseforge.com/projects/398623)
+* [Monocle](https://curseforge.com/projects/1007288)
+* [Re:Animal](https://curseforge.com/projects/1387943)
+
+### Bug Fixes 🪲
+
+* Balancing changes to cataclysm bosses/items not applying `AK`
+* 'Farm & Charm' tomato seeds missing from `c:seeds/tomato` tag `Joe Clack`
+* Fixed Knife unification from disabling Spectrums Multitools `Phantom`
+* (work-around) disable post-process-shaders in Spectrum `SubordinalBlue`
+* Incorrect MI overlay textures used `AK`
+---
 # Craftoria | v1.31.0
 
 _Neoforge_ 21.1.230 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.31.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.31.0.md)_

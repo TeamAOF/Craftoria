@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "Welcome"
+	filename: "welcome"
 	group: ""
 	icon: {
 		id: "minecraft:wooden_pickaxe"
@@ -11,6 +11,7 @@
 		{
 			alpha: 1
 			height: 1.0d
+			id: "688EC7E9897432DB"
 			image: "ftbquests:textures/gui/background_white.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -19,6 +20,7 @@
 		}
 		{
 			height: 3.5d
+			id: "30DFCBABE15BD8B1"
 			image: "ftbquests:textures/gui/title_facu_craftoria.png"
 			order: 10
 			rotation: 0.0d
@@ -28,6 +30,7 @@
 		}
 		{
 			height: 14.0d
+			id: "533FE5FA8DA8FA7E"
 			image: "ftbquests:textures/gui/masked_main_b.png"
 			rotation: 0.0d
 			width: 14.0d
@@ -37,6 +40,7 @@
 		{
 			color: 0
 			height: 1.0d
+			id: "5C272CCE0759E1AC"
 			image: "ftbquests:textures/shapes/circle/shape.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -273,7 +277,7 @@
 		{
 			dependencies: ["78EDBDED3BFEC145"]
 			icon: {
-				id: "ars_nouveau:thread_sharp_paper"
+				id: "not_enough_glyphs:thread_sharp_paper"
 			}
 			id: "42F50CA00F913A46"
 			tasks: [{

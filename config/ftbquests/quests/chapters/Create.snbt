@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: true
 	default_quest_shape: "none"
 	default_quest_size: 2.0d
-	filename: "Create"
+	filename: "create"
 	group: "066C799B2F5452CD"
 	icon: {
 		components: {
@@ -14,6 +14,7 @@
 	images: [
 		{
 			height: 1.0d
+			id: "27F8178BA88E00D8"
 			image: "ftbchunks:textures/square_border.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -23,6 +24,7 @@
 		{
 			color: 12400147
 			height: 2.0d
+			id: "7035E6001AF5F279"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 9
 			rotation: 0.0d
@@ -33,6 +35,7 @@
 		{
 			color: 5855927
 			height: 2.0d
+			id: "3E8D687AED602409"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 9
 			rotation: 0.0d
@@ -43,6 +46,7 @@
 		{
 			color: 12983407
 			height: 2.0d
+			id: "2411A893CEF08D78"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 9
 			rotation: 0.0d
@@ -53,6 +57,7 @@
 		{
 			color: 13704228
 			height: 2.0d
+			id: "66D1B61E56833BD6"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 9
 			rotation: 0.0d
@@ -63,6 +68,7 @@
 		{
 			color: 10843910
 			height: 2.0d
+			id: "491CA44296F6DC29"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 9
 			rotation: 0.0d
@@ -73,6 +79,7 @@
 		{
 			color: 2462342
 			height: 2.0d
+			id: "2DF6AE1F9871F1FA"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 9
 			rotation: 0.0d
@@ -83,6 +90,7 @@
 		{
 			color: 2193095
 			height: 2.0d
+			id: "5620F286C177947E"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 9
 			rotation: 0.0d
@@ -93,6 +101,7 @@
 		{
 			color: 7571973
 			height: 2.0d
+			id: "39231151A64D55BC"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 9
 			rotation: 0.0d
@@ -103,6 +112,7 @@
 		{
 			color: 14540253
 			height: 2.0d
+			id: "728E820F478EECF8"
 			image: "ftbquests:textures/gui/toolbox_slot_transparent.png"
 			order: 10
 			rotation: 0.0d
@@ -113,6 +123,7 @@
 		{
 			color: 14540253
 			height: 2.0d
+			id: "63FCDED2A1901452"
 			image: "ftbquests:textures/gui/toolbox_slot_transparent.png"
 			order: 10
 			rotation: 0.0d
@@ -123,6 +134,7 @@
 		{
 			color: 14540253
 			height: 2.0d
+			id: "677645917D27DB9B"
 			image: "ftbquests:textures/gui/toolbox_slot_transparent.png"
 			order: 10
 			rotation: 0.0d
@@ -133,6 +145,7 @@
 		{
 			color: 14540253
 			height: 2.0d
+			id: "326827BE447E071C"
 			image: "ftbquests:textures/gui/toolbox_slot_transparent.png"
 			order: 10
 			rotation: 0.0d
@@ -143,6 +156,7 @@
 		{
 			color: 14540253
 			height: 2.0d
+			id: "43F4816506EEBBE3"
 			image: "ftbquests:textures/gui/toolbox_slot_transparent.png"
 			order: 10
 			rotation: 0.0d
@@ -153,6 +167,7 @@
 		{
 			color: 14540253
 			height: 2.0d
+			id: "5858B632FD623230"
 			image: "ftbquests:textures/gui/toolbox_slot_transparent.png"
 			order: 10
 			rotation: 0.0d
@@ -163,6 +178,7 @@
 		{
 			color: 14540253
 			height: 2.0d
+			id: "2C8153B9A4C2875F"
 			image: "ftbquests:textures/gui/toolbox_slot_transparent.png"
 			order: 10
 			rotation: 0.0d
@@ -173,6 +189,7 @@
 		{
 			color: 14540253
 			height: 2.0d
+			id: "56BBBEB26EB5D0DE"
 			image: "ftbquests:textures/gui/toolbox_slot_transparent.png"
 			order: 10
 			rotation: 0.0d
@@ -182,6 +199,7 @@
 		}
 		{
 			height: 10.0d
+			id: "75952E095CAAD34D"
 			image: "ftbquests:textures/gui/toolbox_interior_with_arrow.png"
 			order: 1
 			rotation: 0.0d
@@ -191,7 +209,7 @@
 		}
 		{
 			height: 10.0d
-			hover: ["Tools"]
+			id: "20F705FCA4914948"
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -202,6 +220,7 @@
 		{
 			color: 10843910
 			height: 9.25d
+			id: "3BDCDC62784F720B"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 1
 			rotation: 0.0d
@@ -212,6 +231,7 @@
 		{
 			color: 12983407
 			height: 9.25d
+			id: "728C37A8D4A2F198"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 1
 			rotation: 0.0d
@@ -222,6 +242,7 @@
 		{
 			color: 13704228
 			height: 9.25d
+			id: "686DD85FBE524BEA"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 1
 			rotation: 0.0d
@@ -232,6 +253,7 @@
 		{
 			color: 12400147
 			height: 9.25d
+			id: "1C66F9AA53272F43"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			rotation: 0.0d
 			width: 9.25d
@@ -241,6 +263,7 @@
 		{
 			color: 5855927
 			height: 9.25d
+			id: "01470375E1EAC911"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 1
 			rotation: 0.0d
@@ -251,6 +274,7 @@
 		{
 			color: 2193095
 			height: 9.25d
+			id: "483D1A51BD7BBDCB"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 1
 			rotation: 0.0d
@@ -261,6 +285,7 @@
 		{
 			color: 2462342
 			height: 9.25d
+			id: "398268AC6E4B36CB"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 1
 			rotation: 0.0d
@@ -271,6 +296,7 @@
 		{
 			color: 7571973
 			height: 9.25d
+			id: "52D776BE20C9EA1D"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			order: 1
 			rotation: 0.0d
@@ -281,6 +307,7 @@
 		{
 			color: 4796183
 			height: 9.25d
+			id: "128508F289C1CEFD"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			rotation: 0.0d
 			width: 9.25d
@@ -289,6 +316,7 @@
 		}
 		{
 			height: 2.0d
+			id: "770D78B0CC1ED075"
 			image: "ftbquests:textures/gui/toolbox_open.png"
 			rotation: 0.0d
 			width: 2.0d
@@ -297,7 +325,7 @@
 		}
 		{
 			height: 10.0d
-			hover: ["Mechanical Basics"]
+			id: "7DA7B9F4CB44AADC"
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -307,7 +335,7 @@
 		}
 		{
 			height: 10.0d
-			hover: ["Brass"]
+			id: "3CF0F77E92FC46E7"
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			rotation: 0.0d
 			width: 10.0d
@@ -316,7 +344,7 @@
 		}
 		{
 			height: 10.0d
-			hover: ["Transportation"]
+			id: "54197A78B708BB14"
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -326,7 +354,7 @@
 		}
 		{
 			height: 10.0d
-			hover: ["Factory Smarts"]
+			id: "0F5B0C6345D2D15B"
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -336,7 +364,7 @@
 		}
 		{
 			height: 10.0d
-			hover: ["Specials"]
+			id: "0C37DE768D94A385"
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -346,7 +374,7 @@
 		}
 		{
 			height: 10.0d
-			hover: ["Trains"]
+			id: "017B9EEE990B7CB6"
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -356,7 +384,7 @@
 		}
 		{
 			height: 10.0d
-			hover: ["Plumbing"]
+			id: "49AA2A6DAD246A83"
 			image: "ftbquests:textures/gui/toolbox_interior.png"
 			order: 2
 			rotation: 0.0d
@@ -366,6 +394,7 @@
 		}
 		{
 			height: 1.0d
+			id: "6073D951B11AF0BF"
 			image: "ftbquests:textures/shapes/square/shape.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -374,6 +403,7 @@
 		}
 		{
 			height: 1.5d
+			id: "07DBFA05D48C7A7F"
 			image: "ftbquests:textures/gui/title_brass.png"
 			rotation: 0.0d
 			width: 1.5d
@@ -382,6 +412,7 @@
 		}
 		{
 			height: 3.5d
+			id: "11A97EAB39836B6E"
 			image: "ftbquests:textures/gui/title_transportation.png"
 			order: 3
 			rotation: 0.0d
@@ -391,6 +422,7 @@
 		}
 		{
 			height: 3.5d
+			id: "0B3BFE2BCA6CAC90"
 			image: "ftbquests:textures/gui/title_factory.png"
 			order: 3
 			rotation: 0.0d
@@ -400,6 +432,7 @@
 		}
 		{
 			height: 3.5d
+			id: "76185E198C141E52"
 			image: "ftbquests:textures/gui/title_mechanical.png"
 			order: 3
 			rotation: 0.0d
@@ -409,6 +442,7 @@
 		}
 		{
 			height: 1.5d
+			id: "40E759A8F682D04E"
 			image: "ftbquests:textures/gui/title_tools.png"
 			order: 3
 			rotation: 0.0d
@@ -418,6 +452,7 @@
 		}
 		{
 			height: 2.25d
+			id: "49FCF743964ECC08"
 			image: "ftbquests:textures/gui/title_plumbing.png"
 			order: 3
 			rotation: 0.0d
@@ -427,6 +462,7 @@
 		}
 		{
 			height: 1.75d
+			id: "337F116EB970368F"
 			image: "ftbquests:textures/gui/title_trains.png"
 			order: 3
 			rotation: 0.0d
@@ -436,6 +472,7 @@
 		}
 		{
 			height: 2.0d
+			id: "1B05457F226B187F"
 			image: "ftbquests:textures/gui/title_specials.png"
 			order: 3
 			rotation: 0.0d

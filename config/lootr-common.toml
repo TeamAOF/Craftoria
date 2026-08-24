@@ -29,6 +29,10 @@
 	convert_item_frames = true
 	#whether or not to output a warning to the log when a suitable block entity has no loot table and is skipped during conversion
 	skip_logging_no_loot_table_at_generation = true
+	#the default delay between ticks. the higher this value, the slower it takes for containers to determine they should refresh, decay, or start refreshing or decaying
+	# Default: 20
+	# Range: > 0
+	tick_delay = 20
 
 [whitelist]
 	#configuration for specific whitelisting and blacklisting of dimensions, loot tables and modids

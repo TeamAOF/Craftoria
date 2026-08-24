@@ -4,6 +4,7 @@
   "attack_cooldown": 5,
   // Allows to set maximal amount of animals in the pen.
   // Setting 0 will remove any limit.
+  // Default 0
   "animal_limit_in_pen": 2147483647,
   // Allows to enable mob growing in animal pen.
   // The more animals are inside it, the larger it will be.
@@ -46,6 +47,9 @@
   // above animal pen or aquarium
   // Default value = false
   "show_all_interactions_above": false,
+  // Allows to toggle if dispensers should be block from interacting with animal pens, aviaries, and aquariums
+  // Default value = false
+  "block_dispenser_interaction": false,
   // Debug code to indicate problems.
   "debug": false
 }

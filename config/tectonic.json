@@ -1,5 +1,4 @@
 {
-  "__notice": "Tectonic has a config screen that explains every setting if you go to the in-game mod menu! You can also find config info here -> https://github.com/Apollounknowndev/tectonic/wiki/Config",
   "biomes": {
     "temperature_multiplier": 1.0,
     "temperature_offset": 0.0,
@@ -9,39 +8,67 @@
     "vegetation_scale": 0.25
   },
   "caves": {
+    // Whether old caves/ravines should generate. Game restart required!
     "carvers_enabled": true,
+    // Density added to cheese caves. Lower values = bigger cheese caves.
     "cheese_additive": 0.27,
+    // The standard expansive, large cheese-shaped caves.
     "cheese_enabled": true,
+    // The distance in depth between the start and end of the depth cutoff. 0.1 means caves close over ~12 blocks, 0.0 means caves cut off at the `depth_cutoff_start` value immediately.
     "depth_cutoff_size": 0.1,
+    // The depth noise value that caves stop generating. 0.1 cuts off caves ~12 blocks below the surface, 0.5 cuts off caves ~64 blocks below the surface.
     "depth_cutoff_start": 0.1,
+    // Density added to noodle caves. Lower values = bigger noodle caves.
     "noodle_additive": -0.075,
+    // The narrow, claustrophobic noodle-shaped caves.
     "noodle_enabled": true,
+    // Alters ore generation to generate at more acceptable levels when min_y is lowered.
     "ore_fix": false,
+    // The tunneling, medium sized spaghetti-shaped caves.
     "spaghetti_enabled": true
   },
   "continents": {
+    // Horizontally scales continents. Lower values = larger continents and oceans between them.
     "continents_scale": 0.13,
+    // Horizontally scales erosion, primarily impacting mountains. Lower values = thicker mountain ranges and terrain between them.
     "erosion_scale": 0.25,
+    // The threshold where plateau terrain becomes flatter terrain. Positive numbers favor flat terrain and negative numbers favor plateau terrain.
     "flat_terrain_skew": 0.1,
+    // Some jungles generate massive pillars that can extend upwards of a hundred blocks tall.
     "jungle_pillars": true,
+    // Skews terrain towards or away from oceans. Lower values = more oceans. Above -0.45, deep oceans will not spawn! Above -0.2, oceans will not spawn!
     "ocean_offset": -0.8,
+    // Horizontally scales the ridge noise, primarily impacting rivers and terrain around them like plateaus. Lower values = wider rivers and terrain between them.
     "ridge_scale": 0.25,
+    // Underground rivers under snowy biomes will generate with ice.
     "river_ice": false,
+    // Underground rivers will rarely generate with hanging lanterns.
     "river_lanterns": true,
+    // Some Plains biomes generate very smooth, hilly terrain.
     "rolling_hills": true,
+    // Rivers that reach mountain ranges continue underground, allowing smoother boat exploration.
     "underground_rivers": true
   },
-  "experimental": {},
+  "experimental": {
+    "alternate_continents_scaling": false,
+    "alternate_erosion_scaling": false
+  },
   "general": {
+    // When disabled, the mod lays dormant and does nothing. Game restart required!
     "mod_enabled": true,
+    // Offsets the y-level snow in cold biomes like Taigas starts at.
     "snow_start_offset": 128
   },
   "global_terrain": {
+    // Increases the effects of Vertical Scale on mountainous terrain. This will increase the scale of mountains and plateaus faster than lowlands.
     "elevation_boost": 0.0,
+    // Rare, deep underground tunnels of lava sometimes generate at the bottom of the world.
     "lava_tunnels": true,
     "max_y": 320,
     "min_y": -64,
+    // Greatly smoothens out the terrain like Tectonic v2, removing staircasing artifacts at the cost of strange/broken generation in deep oceans and windswept biomes.
     "ultrasmooth": false,
+    // Vertically stretches terrain above sea level. Doubling this value will double the surface's height at a given point from sea level.
     "vertical_scale": 1.125
   },
   "islands": {
@@ -52,9 +79,13 @@
   },
   "minor_version": 1,
   "oceans": {
+    // 0 is at sea level, -0.5 is 64 blocks below sea level.
     "deep_ocean_depth": -0.45,
+    // Offsets (vanilla) ocean monuments to adjust for deeper oceans.
     "monument_offset": -30,
+    // 0 is at sea level, -0.5 is 64 blocks below sea level.
     "ocean_depth": -0.15,
+    // Removes the surface ice from Frozen Oceans, making them as navigable as Deep Frozen Oceans.
     "remove_frozen_ocean_ice": false
   }
 }

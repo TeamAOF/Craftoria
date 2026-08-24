@@ -8,10 +8,23 @@ jobs:
   #the maximum amount of jobs a player can have
   #Minimum value: 0, Maximum value: 2147483647, Default value: 2147483647
   max_jobs: 2147483647
+  #if true, a message will be shown to all players when they level up a job
+  #Default value: true
+  broadcast_level_up_messages: true
+  experience:
+    #if true, the player's job XP gain will be shown in the action bar, when they gain XP
+    #Default value: true
+    show_xp_in_action_bar: true
+    #multiplier for the amount of job XP a player gains
+    #Minimum value: 0.0, Maximum value: 1.7976931348623157E308, Default value: 1.0
+    xp_multiplier: 1.0
+    #if true, decimal values will be used for job XP.
+    #Default value: false
+    use_decimal_values_for_xp: false
   coins:
     #the amount of coins a player gets when they level up a job
-    #Minimum value: 0, Maximum value: 2147483647, Default value: 1
-    coins_per_level_up: 1
+    #Minimum value: 0.0, Maximum value: 1.7976931348623157E308, Default value: 1.0
+    coins_per_level_up: 1.0
 debug:
   #if true, debug mode is enabled
   #Default value: false

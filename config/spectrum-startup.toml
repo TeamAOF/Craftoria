@@ -30,13 +30,13 @@ bedrock_anvil_can_exceed_max_vanilla_enchantment_level = false
 #Better to let players stumble about them organically instead of forcing it.
 enderman_holding_treasure_chance = 0.1
 enderman_holding_treasure_chance_in_end = 0.0075
-#Dimensions where shooting stars spawn for players. Shooting Stars will only spawn for players with sufficient progress in the mod
+#Dimensions where Shooting Stars spawn for players. Shooting Stars will only spawn for players with sufficient progress in the mod.
 shooting_star_dimensions = ["minecraft:overworld", "starry_skies:overworld", "paradise_lost:paradise_lost"]
-#Shooting star spawns are checked every night between time 13000 and 22000, every 100 ticks (so 100 chances per night).
+#Shooting Star spawns are checked every night between time 13000 and 22000, every 100 ticks (so 100 chances per night).
 #By default, there is a 0.0075 ^= 0.75 % chance at each of those check times. Making it ~1 shooting star spawn
 #per night per player that unlocked the required progression.
 shooting_star_spawn_chance = 0.0075
-#Dimensions where lightning strikes can spawn Storm Stones
+#Dimensions where lightning strikes will cause Storm Stones to spawn. Storm Stones will only be visible for players with sufficient progress in the mod.
 storm_stone_dimensions = ["minecraft:overworld", "starry_skies:overworld", "paradise_lost:paradise_lost"]
 #Chance for a lightning strike to spawn a Storm Stone
 storm_stone_spawn_chance = 0.4
@@ -109,15 +109,6 @@ bedrock_armor_chestplate_protection = 12
 bedrock_armor_boots_protection = 5
 bedrock_armor_toughness = 3.0
 bedrock_armor_knockback_resistance = 0.3
-#Tool Material Stats
-low_health_durability = 16
-low_health_mining_speed = 4.0
-low_health_attack_damage = 2.0
-low_health_enchantability = 10
-voiding_durability = 1143
-voiding_mining_speed = 20.0
-voiding_attack_damage = 1.0
-voiding_enchantability = 5
 bedrock_mining_speed = 15.0
 bedrock_attack_damage = 5.0
 bedrock_enchantability = 3
@@ -133,22 +124,10 @@ glass_crest_durability = 6144
 glass_crest_mining_speed = 18.0
 glass_crest_attack_damage = 10.0
 glass_crest_enchantability = 5
-verdigris_durability = 1536
-verdigris_mining_speed = 7.0
-verdigris_attack_damage = 2.5
-verdigris_enchantability = 14
-nectar_durability = 6144
-nectar_mining_speed = 9.5
-nectar_attack_damage = 9.0
-nectar_enchantability = 30
 dreamflayer_durability = 650
 dreamflayer_mining_speed = 5.0
 dreamflayer_attack_damage = 2.0
 dreamflayer_enchantability = 20
-nightfall_durability = 650
-nightfall_mining_speed = 2.0
-nightfall_attack_damage = 1.0
-nightfall_enchantability = 0
 max_level_for_effects_in_lesser_potion_pendant = 3
 max_level_for_effects_in_greater_potion_pendant = 1
 #True will prevent the spread of Decay blocks in claims.
@@ -165,3 +144,39 @@ rei_lists_unrevealed_recipes_as_not_unlocked = true
 #Setting this to <=0 will make the Pedestal not able to be used for crafting Crafting Table recipes.
 #
 vanilla_recipe_crafting_time_ticks = 40
+#Required Ink for one Block placed by the Constructor's Staff
+constructors_staff_ink_cost_per_block = 1
+#Required Ink for one Block placed by the Exchanging Staff
+exchanging_staff_ink_cost_per_block = 5
+#Allow the creation of portals using Ruin
+#Allowed Values: CREATE_PORTALS, PROTECT_LOWEST_OVERWORLD_LEVEL, NO_PORTALS
+dimension_portals = "CREATE_PORTALS"
+#Charged Creepers will drop Spectrum exclusive mob head when killing creatures
+charged_creepers_drop_spectrum_mob_heads = false
+#Tool Material Stats
+gemstone_durability = 16
+gemstone_mining_speed = 4.0
+gemstone_attack_damage = 2.0
+gemstone_enchantability = 10
+oblivion_durability = 1143
+oblivion_mining_speed = 20.0
+oblivion_attack_damage = 1.0
+oblivion_enchantability = 5
+knotted_sword_durability = 1536
+knotted_sword_mining_speed = 7.0
+knotted_sword_attack_damage = 2.5
+knotted_sword_enchantability = 14
+nectar_lance_durability = 6144
+nectar_lance_mining_speed = 9.5
+nectar_lance_attack_damage = 9.0
+nectar_lance_enchantability = 30
+nightfalls_blade_durability = 650
+nightfalls_blade_mining_speed = 2.0
+nightfalls_blade_attack_damage = 1.0
+nightfalls_blade_enchantability = 1
+#The chance for Dripstone to fill a Cauldron with Dragonrot
+dragonrot_dripstone_drip_chance = 0.01
+#The chance for Dripstone to fill a Cauldron with Liquid Crystal
+liquid_crystal_dripstone_drip_chance = 0.01
+#The chance for Dripstone to fill a Cauldron with Midnight Solution
+midnight_solution_dripstone_drip_chance = 0.01
