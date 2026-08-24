@@ -1,3 +1,15 @@
+# Craftoria | v1.32.1
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.32.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.32.1.md)_
+
+### Removed Mods ❌
+
+* [Guide Shelf](https://curseforge.com/projects/1500922)
+
+### Bug Fixes 🪲
+
+* Connection issues to servers `AK`
+---
 # Craftoria | v1.32.0
 
 _Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.32.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.32.0.md)_
@@ -28,7 +40,6 @@ _Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 * [Enhanced Celestials 2: Shader Support](https://curseforge.com/projects/1621851)
 * [Enigmatic Arcana ](https://curseforge.com/projects/1371571)
 * [Gaze - A Malum Addon](https://curseforge.com/projects/1273454)
-* [Guide Shelf](https://curseforge.com/projects/1500922)
 * [Invasive Optimizations](https://curseforge.com/projects/1528432)
 * [Lodestone](https://curseforge.com/projects/616457)
 * [Malum](https://curseforge.com/projects/484064)
