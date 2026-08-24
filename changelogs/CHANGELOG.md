@@ -19,7 +19,6 @@ _Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 * [Can't Sleep Clowns Will Eat Me](https://curseforge.com/projects/430957)
 * [Create: Hypertubes](https://curseforge.com/projects/1281336)
 * [Create: Schematic Checker](https://curseforge.com/projects/1357430)
-* [Critters and Companions](https://curseforge.com/projects/574913)
 * [Crystal Chronicles - Iron's Spells 'n Spellbooks](https://curseforge.com/projects/1153374)
 * [Data Anchor](https://curseforge.com/projects/1203668)
 * [Dawn Of Time](https://curseforge.com/projects/312359)
