@@ -585,5 +585,36 @@
 			x: -9.25d
 			y: 8.125d
 		}
+		{
+			dependencies: ["5A3894BACC5E8994"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"trofers:trophy": "trofers:theurgy"
+				}
+				id: "trofers:medium_pillar"
+			}
+			icon_scale: 1.5d
+			id: "12C3E39C224DE93B"
+			rewards: [{
+				id: "689DBEDEC36B9695"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:theurgy"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 2.5d
+			tasks: [{
+				id: "50CAC3B83A609BD8"
+				type: "checkmark"
+			}]
+			x: -11.5d
+			y: 12.25d
+		}
 	]
 }
