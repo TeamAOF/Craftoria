@@ -1,5 +1,4 @@
 {
-	autofocus_id: "7C8727CEB9850F24"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "neo_vitae"
@@ -8,7 +7,58 @@
 		id: "neovitae:ara_vitae"
 	}
 	id: "0A7BE8A17BDD53E9"
-	images: [ ]
+	images: [
+		{
+			click_action: "none:"
+			height: 2.5d
+			id: "4D8421A9BD923682"
+			image: "neovitae:textures/particle/ritual.png"
+			rotation: 0.0d
+			width: 2.5d
+			x: 2.1d
+			y: 1.2d
+		}
+		{
+			click_action: "none:"
+			height: 2.0d
+			id: "03CB4756BD0971E6"
+			image: "neovitae:block/rune_2_charging_e"
+			rotation: 0.0d
+			width: 2.0d
+			x: 13.4d
+			y: 2.8d
+		}
+		{
+			click_action: "none:"
+			height: 2.0d
+			id: "2BAEC167861CC888"
+			image: "neovitae:block/rune_2_acceleration_e"
+			rotation: 0.0d
+			width: 2.0d
+			x: 8.45d
+			y: -3.1d
+		}
+		{
+			click_action: "none:"
+			height: 2.0d
+			id: "17631CADBED88743"
+			image: "neovitae:block/rune_2_efficiency_e"
+			rotation: 0.0d
+			width: 2.0d
+			x: 14.9d
+			y: -2.25d
+		}
+		{
+			click_action: "none:"
+			height: 4.0d
+			id: "50CEAD0E57EFF05E"
+			image: "ftbquests:textures/gui/neovitae.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 1.15d
+			y: -2.25d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -17,6 +67,19 @@
 				id: "neovitae:ara_vitae"
 			}
 			id: "7C8727CEB9850F24"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "61EB63E89BEA41C6"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "442FF696C5E02116"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			shape: "hexagon"
 			size: 1.25d
 			tasks: [
@@ -37,6 +100,19 @@
 		{
 			dependencies: ["7C8727CEB9850F24"]
 			id: "418CB5EC1FE8CB1A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "55D16A3CEA385F1B"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "516EE274F99D8A25"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "165F1949BCDD7F0D"
 				item: { count: 1, id: "neovitae:blood_orb_weak" }
@@ -54,6 +130,19 @@
 				id: "neovitae:guide_book"
 			}
 			id: "35D797292DAB5C89"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "26201F990D6DDB2C"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "487202926091A580"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [
 				{
 					id: "48FB263370BC5A3A"
@@ -75,6 +164,19 @@
 				id: "twilightforest:fiery_blood"
 			}
 			id: "3376D278202F2B4C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5D0A73D41D6954F2"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "5B35E7DA3EF71D22"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "3806B1953C936A92"
 				type: "checkmark"
@@ -85,6 +187,19 @@
 		{
 			dependencies: ["3376D278202F2B4C"]
 			id: "7A0A29CC4F524CEE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2292D24444441D54"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "7F11FDDF90882CC1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				count: 8L
 				id: "02878E547F2CEB84"
@@ -97,6 +212,19 @@
 		{
 			dependencies: ["7A0A29CC4F524CEE"]
 			id: "3B7D0C01193B6FB3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0F6E07D1D5D784B1"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "184472516D6E333D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "46DBAE66F97438E6"
 				item: { components: { "ftbfiltersystem:filter": "or(item(neovitae:rune_sacrifice)item(neovitae:rune_sacrifice_self)item(neovitae:rune_capacity)item(neovitae:rune_capacity_augmented)item(neovitae:rune_charging)item(neovitae:rune_speed)item(neovitae:rune_acceleration)item(neovitae:rune_dislocation)item(neovitae:rune_orb)item(neovitae:rune_efficiency))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -111,6 +239,19 @@
 				id: "neovitae:blood_orb_apprentice"
 			}
 			id: "108E216EC6911B77"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "45C92B34BCD90FA5"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "2E2EE211FD46AE7F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "30F99B253DEBACC2"
 				item: { count: 1, id: "neovitae:blood_orb_apprentice" }
@@ -122,6 +263,19 @@
 		{
 			dependencies: ["108E216EC6911B77"]
 			id: "3A3B3EACB9321FF3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "348B951D066F61A4"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "012AC1CDD6F0CC94"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "23C6A37F990EDB9F"
 				item: { count: 1, id: "neovitae:hellfire_forge" }
@@ -133,6 +287,19 @@
 		{
 			dependencies: ["3A3B3EACB9321FF3"]
 			id: "03A2DAC1A090CC65"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "674E623A778DF116"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "0B9FA5AC08F61EF7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "480E9CFA1CEE6479"
 				item: { components: { "ftbfiltersystem:filter": "or(item(neovitae:spiritus_gem_common)item(neovitae:spiritus_gem_greater)item(neovitae:spiritus_gem_grand))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -144,6 +311,19 @@
 		{
 			dependencies: ["53C28D1A140CA4A6"]
 			id: "7997AD44CC428BDC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3562C55A8C5D773F"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "3CE8D7C917DFFD38"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "2AAA726C47A75ED7"
 				item: { count: 1, id: "neovitae:vas_maleficum" }
@@ -155,6 +335,19 @@
 		{
 			dependencies: ["7997AD44CC428BDC"]
 			id: "6F92D6C797F9C931"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "43FE65AFA553E86E"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "546C471A288F8952"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "5FB75FB669C56BA1"
 				item: { count: 1, id: "neovitae:crystallarium_maleficum" }
@@ -166,6 +359,19 @@
 		{
 			dependencies: ["0935BFDC4F0B4C6C"]
 			id: "49BDD5CCF648A04D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1A9E17BFCF241E3C"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "73D05F07DC76AB9F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "587031F90295DD4A"
 				item: { count: 1, id: "neovitae:blood_orb_magician" }
@@ -177,6 +383,19 @@
 		{
 			dependencies: ["03A2DAC1A090CC65"]
 			id: "53C28D1A140CA4A6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "592C888D52187227"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "3AE912056D92D02E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "753B3D09A302E973"
 				item: { components: { "ftbfiltersystem:filter": "or(item(neovitae:raw_crystal_shard)item(neovitae:spiritus_ruina_shard)item(neovitae:spiritus_nihilum_shard)item(neovitae:spiritus_vindicta_shard)item(neovitae:spiritus_invictus_shard))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -188,6 +407,19 @@
 		{
 			dependencies: ["6F92D6C797F9C931"]
 			id: "0935BFDC4F0B4C6C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "31B7E2BF2DF1D47A"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "1DD747CA09AC9B4A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				count: 4L
 				id: "5F4E3EA983D1DD19"
@@ -200,6 +432,19 @@
 		{
 			dependencies: ["49BDD5CCF648A04D"]
 			id: "384E0A6178B5AA5B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "705B109EE6AB3B99"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "487173AF4FECE131"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "74EA288EED7CCE71"
 				item: { components: { "ftbfiltersystem:filter": "or(item(neovitae:rune_2_sacrifice)item(neovitae:rune_2_sacrifice_self)item(neovitae:rune_2_capacity)item(neovitae:rune_2_capacity_augmented)item(neovitae:rune_2_charging)item(neovitae:rune_2_speed)item(neovitae:rune_2_acceleration)item(neovitae:rune_2_dislocation)item(neovitae:rune_2_orb)item(neovitae:rune_2_efficiency))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -214,6 +459,19 @@
 				id: "neovitae:ritual_diviner"
 			}
 			id: "5E978B85065D1E32"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6138749CA58FF43A"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "5DE6B6590A293FB9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [
 				{
 					id: "75F3287630978A33"
@@ -237,6 +495,19 @@
 		{
 			dependencies: ["5E978B85065D1E32"]
 			id: "0B7267B31A1CCECA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "083857626B2B7F0C"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "7D01509DA3175B65"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				count: 4L
 				id: "231D3A30F08C3F2C"
@@ -252,6 +523,19 @@
 				id: "minecraft:oak_leaves"
 			}
 			id: "695071B9E6FB490A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5B81ADF075F832B7"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "6672F19A4633046D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "537A156153014C88"
 				type: "checkmark"
@@ -265,6 +549,19 @@
 				id: "minecraft:wheat"
 			}
 			id: "52CA774E9F825514"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A29C13DFAEE56A6"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "1422AB37812C07F4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "66A70863F595A874"
 				type: "checkmark"
@@ -278,6 +575,19 @@
 				id: "minecraft:oak_sapling"
 			}
 			id: "42D39031CFD335C9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "23AE0203D742F3A9"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "39D1F956BF632267"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "43CE51B3EC9945C1"
 				type: "checkmark"
@@ -288,6 +598,19 @@
 		{
 			dependencies: ["0B7267B31A1CCECA"]
 			id: "61AAFF003014ABBC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "35597C029F5B0709"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "66D316296318116F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "0B05BBB53E8316C3"
 				item: { count: 1, id: "neovitae:tabula_vitae" }
@@ -299,6 +622,19 @@
 		{
 			dependencies: ["61AAFF003014ABBC"]
 			id: "5946631C59C788DC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3BC17F2AAF96546C"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "6366CEFF46CB9132"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "3B4F83B90A4727CE"
 				item: { count: 1, id: "neovitae:sigil_holding" }
@@ -310,6 +646,19 @@
 		{
 			dependencies: ["61AAFF003014ABBC"]
 			id: "4CFB8A6C9DF9988A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "109F1A0E5091FED0"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "40252C65362929F0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "5352ED52B33D4D2E"
 				item: { count: 1, id: "neovitae:sigil_teleposition" }
@@ -321,6 +670,19 @@
 		{
 			dependencies: ["61AAFF003014ABBC"]
 			id: "73FC0402BA6033FA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "73DB6F90D430E6EE"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "387CAFE19320EBF5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "13C3CBCF6974887B"
 				item: { count: 1, id: "neovitae:sigil_phantom_bridge" }
@@ -332,6 +694,19 @@
 		{
 			dependencies: ["61AAFF003014ABBC"]
 			id: "6C86EFABDB60BE68"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0AB998633F4E9EC7"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "7FFF1908D3768296"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "264A0160C68A480A"
 				item: { count: 1, id: "neovitae:sigil_blood_light" }
@@ -343,6 +718,19 @@
 		{
 			dependencies: ["26C7705667EB55E8"]
 			id: "4F144C6D995FED7E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "40D8E15F6BB14232"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "2E57C1A6C8886BC5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "289B1EE9F3F6893B"
 				item: { count: 1, id: "neovitae:blood_orb_master" }
@@ -360,6 +748,19 @@
 				id: "gateways:gate_pearl"
 			}
 			id: "7FAF52B083F86C57"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "59ED01EF761061D0"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "015CCA3670211E3C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "3DB56E07AB808234"
 				type: "checkmark"
@@ -370,6 +771,19 @@
 		{
 			dependencies: ["7FAF52B083F86C57"]
 			id: "6AD3F5CE39D98B03"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "555EAFD8472B335A"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "1B92E43CE66DC4A0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				dimension: "neovitae:dungeon"
 				id: "2C09A94F4D84DD6E"
@@ -381,6 +795,19 @@
 		{
 			dependencies: ["6AD3F5CE39D98B03"]
 			id: "7D740352BE81EBAD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "34E3B04F6A05F6D7"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "52CF8E6A1145F813"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "51B280AD931A2CF4"
 				item: { components: { "ftbfiltersystem:filter": "or(item(neovitae:raw_demonite)item(neovitae:dungeon_ore))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
@@ -393,6 +820,19 @@
 			dependencies: ["6AD3F5CE39D98B03"]
 			id: "42C757350BE9280A"
 			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "25BC6459A58B6387"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "43385A614AF7D910"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [
 				{
 					entity: "neovitae:daemonium_animaris"
@@ -464,6 +904,19 @@
 				id: "neovitae:bloodstone_brick"
 			}
 			id: "26C7705667EB55E8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "48223A5E16677A1B"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "194EA0177A0E8503"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				count: 4L
 				id: "7617B5CAABCD437A"
@@ -476,6 +929,19 @@
 		{
 			dependencies: ["4F144C6D995FED7E"]
 			id: "7E88E36EDE4C0BF0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "647CDD19BE787C40"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "7ED741789D144E26"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				count: 4L
 				id: "32A097B1A2B582FD"
@@ -488,6 +954,19 @@
 		{
 			dependencies: ["03107F356240B036"]
 			id: "5A52426AC47A1FE3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "754341B8C468B4DF"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "05CBC8A16BBB2679"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				count: 4L
 				id: "6B9E8E60ED726A5F"
@@ -500,6 +979,19 @@
 		{
 			dependencies: ["7E88E36EDE4C0BF0"]
 			id: "03107F356240B036"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2293E7DCCBC735C8"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "55E242A3B029E5D6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "4B2ABDAA92B2A26C"
 				item: { count: 1, id: "neovitae:blood_orb_archmage" }
@@ -511,6 +1003,19 @@
 		{
 			dependencies: ["5A52426AC47A1FE3"]
 			id: "5EC47502FEDE944B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2EB1473EF53DEEF7"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "5A900297A48AFE8F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "06BD49164B95E9A2"
 				item: { count: 1, id: "neovitae:blood_orb_transcendent" }
@@ -522,6 +1027,19 @@
 		{
 			dependencies: ["3A3B3EACB9321FF3"]
 			id: "0BB01161ABEFCC8A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6B6C51A12D7C27F6"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "112EB33D859230F3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [
 				{
 					id: "0DCAC0B181D7CF7C"
@@ -540,6 +1058,19 @@
 		{
 			dependencies: ["4F144C6D995FED7E"]
 			id: "0DD2816485683CE6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "323942AE83E4FD68"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "711C9B2BB40BACED"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [
 				{
 					id: "7B47E193EF0C60B4"
@@ -567,17 +1098,49 @@
 		}
 		{
 			dependencies: ["0DD2816485683CE6"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/check"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "7F5D66A96BCE339D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7E0D34259332C708"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "50F726E399E2B1AF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "38084EDBEB9647AD"
 				type: "checkmark"
 			}]
-			x: 3.9d
-			y: -2.5d
+			x: 5.05d
+			y: -2.7d
 		}
 		{
 			dependencies: ["0BB01161ABEFCC8A"]
 			id: "4DE8993F6A7F096B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "71EF6672D55DB1B1"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+				{
+					id: "19AFA16DFCEC84C8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
 			tasks: [{
 				id: "62755E55EE348E1A"
 				item: { count: 1, id: "neovitae:lex_vitae" }
