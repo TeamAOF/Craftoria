@@ -13,4 +13,12 @@
 	# Default: 0
 	# Range: 0 ~ 2147483647
 	limited_lives: 0
+	
+	# If >0, teams can contain no more than this number of players.
+	# If 0, there is no limit to team sizes.
+	# Note: if this setting is altered and teams larger than the new value already exist on the server
+	# they will be allowed to continue at their current size, but not able to invite new members.
+	# Default: 0
+	# Range: 0 ~ 2147483647
+	max_party_size: 0
 }

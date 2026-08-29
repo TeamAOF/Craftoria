@@ -1,15 +1,18 @@
 {
   "fancyAdvancementToastsEnabled": true,
   "fancyQuestToastsEnabled": true,
-  "advancementToastsEnabled": true,
-  "recipeToastsEnabled": true,
-  "systemToastsEnabled": true,
-  "tutorialToastsEnabled": true,
+  "fancyQuestlogToastsEnabled": true,
+  "toastsToIgnore": [],
   "typesToIgnore": {
     "TASK": false,
     "GOAL": false,
     "CHALLENGE": false
   },
-  "toastsToIgnore": [],
-  "version": 1
+  "questTypesToIgnore": {
+    "TASK": false,
+    "QUEST": false,
+    "CHAPTER": false,
+    "BOOK": false
+  },
+  "version": 2
 }

@@ -1,0 +1,68 @@
+#Animus Startup Configuration
+#These values are loaded at startup and available during mod registration.
+#Changes require a game restart to take effect.
+[startup]
+
+	#Ritual Area Ranges
+	#These values define the initial default ranges for rituals.
+	#Can be adjusted via ritual stone GUI at runtime.
+	#Requires game restart to take effect.
+	[startup.ritualRanges]
+
+		[startup.ritualRanges.culling]
+			#Horizontal range in blocks for Ritual of Culling effect area
+			# Default: 10
+			# Range: 1 ~ 64
+			horizontalRange = 10
+			#Vertical range in blocks (extends both above AND below the ritual stone)
+			# Default: 10
+			# Range: 1 ~ 64
+			verticalRange = 10
+
+		[startup.ritualRanges.endlessGreed]
+			#Horizontal range in blocks for Ritual of Endless Greed effect area
+			# Default: 7
+			# Range: 1 ~ 32
+			horizontalRange = 7
+			#Vertical range in blocks for Ritual of Endless Greed effect area
+			# Default: 5
+			# Range: 1 ~ 32
+			verticalRange = 5
+
+		[startup.ritualRanges.serenity]
+			#Radius in blocks for Ritual of Serenity spawn prevention
+			# Default: 48
+			# Range: 1 ~ 256
+			radius = 48
+
+		[startup.ritualRanges.noliteIgnem]
+			#Radius in blocks for Ritual of Nolite Ignem fire extinguishing
+			# Default: 64
+			# Range: 1 ~ 256
+			radius = 64
+
+		[startup.ritualRanges.relentlessTides]
+			#Horizontal radius in blocks for Ritual of Relentless Tides fluid placement
+			# Default: 32
+			# Range: 1 ~ 64
+			horizontalRange = 32
+			#Maximum vertical depth in blocks for fluid placement
+			# Default: 128
+			# Range: 1 ~ 256
+			verticalDepth = 128
+
+		[startup.ritualRanges.siphon]
+			#Horizontal radius in blocks for Ritual of Siphon fluid extraction
+			# Default: 32
+			# Range: 1 ~ 64
+			horizontalRange = 32
+			#Maximum vertical depth in blocks for fluid extraction
+			# Default: 128
+			# Range: 1 ~ 256
+			verticalDepth = 128
+
+		[startup.ritualRanges.persistence]
+			#Chunk radius for Ritual of Persistence chunk loading (in chunks, not blocks)
+			# Default: 3
+			# Range: 1 ~ 16
+			chunkRadius = 3

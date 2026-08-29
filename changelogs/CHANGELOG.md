@@ -1,3 +1,26 @@
+# Craftoria | v1.33.0
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.33.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.33.0.md)_
+
+### Changes/Improvements ⭐
+
+* Removed AIOT's in favor of paxels `AK`
+* Add neo vitae as requirement for completionist `AK`
+* Added neo vitae quest chapter `AK`
+
+### Added Mods ✅
+
+* [Animus](https://curseforge.com/projects/229664)
+* [Create Deco](https://curseforge.com/projects/509285)
+
+### Removed Mods ❌
+
+* [Rubinated Nether](https://curseforge.com/projects/1096362)
+
+### Bug Fixes 🪲
+
+* EMI not appending Mod ID names on tooltips `AK`
+---
 # Craftoria | v1.32.1
 
 _Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.32.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.32.1.md)_

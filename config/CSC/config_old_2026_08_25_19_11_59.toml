@@ -1,7 +1,7 @@
 
 # #----------------------------------------------------------------------
 # CSC config version. If this value is different from the current CSC version, the old config will be archived and a fresh config will be generated.
-ConfigVersion = "2.27.45"
+ConfigVersion = "2.27.43"
 
 # #----------------------------------------------------------------------
 #     Welcome to CSC! CSC (formerly Create:SchematicChecker | Create: Schematic Validator)
@@ -27,16 +27,11 @@ UUID = "07f74018-263e-4cee-9574-3cdc12c6c474"
     # The time if checker is timeout!
     DelayTime = 10
     # #----------------------------------------------------------------------
-    # Whether to show the startup security notice for mod id whitelist mode
-    ShowWhitelistModeNotice = false
-    # #----------------------------------------------------------------------
-    # Whether to remove entities. When set to true, entities inside the schematic will be cleared, except those listed in the whitelist.
-    # Enabling this feature can prevent all potential entity NBT duplication exploits, and also block armor stands from obtaining creative items.
-    # It is recommended to enable this feature!
-    KillEntity = true
-    # #----------------------------------------------------------------------
     # Whether to enable mod id whitelist mode. Recommended to enable, as it can directly eliminate blueprint vulnerabilities caused by unfamiliar mods
     WhiteListModEnable = true
+    # #----------------------------------------------------------------------
+    # Whether to show the startup security notice for mod id whitelist mode
+    ShowWhitelistModeNotice = false
     # #----------------------------------------------------------------------
     # Only mods listed here will be allowed to retain NBT. Enter the modid (e.g., for minecraft:dirt, enter minecraft)
     WhiteListModList = [
@@ -106,6 +101,11 @@ UUID = "07f74018-263e-4cee-9574-3cdc12c6c474"
         "minecraft:container",
         "minecraft:attribute_modifiers" ]
     # #----------------------------------------------------------------------
+    # Whether to remove entities. When set to true, entities inside the schematic will be cleared, except those listed in the whitelist.
+    # Enabling this feature can prevent all potential entity NBT duplication exploits, and also block armor stands from obtaining creative items.
+    # It is recommended to enable this feature!
+    KillEntity = true
+    # #----------------------------------------------------------------------
     # When the KillEntity feature is set to false, this feature will be enabled. Any entity listed here will be removed from the schematic.
     # However, entities in the whitelist cannot be removed, so do not use the same ID in both lists.
     BanEntity = [
@@ -148,7 +148,7 @@ UUID = "07f74018-263e-4cee-9574-3cdc12c6c474"
     # If disabled, fluid tank mismatch keeps the original behavior: mark as cheat and block upload.
     TryRemoveFluidTankNotKill = true
     # #----------------------------------------------------------------------
-    # Fix Create pipe duplication of lava from Quark lava-logged blocks. Disabled by default; enable it to apply the fix.
+    # Fix Create pipe duplication of lava from Quark lava-logged blocks. Recommended to keep enabled.
     fixQuarkLavaFluidloggedDuplication = true
     # #----------------------------------------------------------------------
     # Validate player chain-conveyor riding packets to prevent forged movement time or position. Enabled by default; disabling restores Create's original behavior.
