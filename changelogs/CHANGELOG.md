@@ -1,3 +1,16 @@
+# Craftoria | v1.33.1
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.33.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.33.1.md)_
+
+### Removed Mods ❌
+
+* [Punchy! - First person animations](https://curseforge.com/projects/1374153)
+* [Yukami's Sophisticated Backpack Tab](https://curseforge.com/projects/1343253)
+
+### Bug Fixes 🪲
+
+* Incorrect max enchant power cap & oathbound relic disappearing on death `AK`
+---
 # Craftoria | v1.33.0
 
 _Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.33.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.33.0.md)_
