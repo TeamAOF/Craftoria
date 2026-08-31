@@ -62,6 +62,12 @@ ServerEvents.recipes(e => {
   // Thaumon
   e.replaceInput({ id: 'thaumon:ancient_stone_bricks' }, 'thaumon:ancient_stone', 'thaumon:polished_ancient_stone');
 
+  // Create Deco 
+  // Iron Support conficts with 'industrialforegoing:iron_gear'
+  e.shaped('4x createdeco:iron_support', ['I I', '   ', 'I I'],{
+    I: 'minecraft:iron_ingot',
+  }).id('createdeco:iron_support');
+
   // Supplementaries
   // item_shelf conflicts with Twilight Forest's drying_rack(s)
   //e.remove({ id: 'supplementaries:item_shelf' });
