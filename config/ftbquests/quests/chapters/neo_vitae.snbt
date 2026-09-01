@@ -25,8 +25,8 @@
 			image: "neovitae:block/rune_2_charging_e"
 			rotation: 0.0d
 			width: 2.0d
-			x: 13.4d
-			y: 2.8d
+			x: 13.15d
+			y: 3.2d
 		}
 		{
 			click_action: "none:"
@@ -45,8 +45,8 @@
 			image: "neovitae:block/rune_2_efficiency_e"
 			rotation: 0.0d
 			width: 2.0d
-			x: 14.9d
-			y: -2.25d
+			x: 14.05d
+			y: -2.05d
 		}
 		{
 			click_action: "none:"
@@ -55,8 +55,8 @@
 			image: "ftbquests:textures/gui/neovitae.png"
 			rotation: 0.0d
 			width: 8.0d
-			x: 1.15d
-			y: -2.25d
+			x: 0.75d
+			y: -2.3d
 		}
 	]
 	order_index: 2
@@ -94,7 +94,7 @@
 					type: "item"
 				}
 			]
-			x: -0.9d
+			x: -1.75d
 			y: -0.5d
 		}
 		{
@@ -118,11 +118,11 @@
 				item: { count: 1, id: "neovitae:blood_orb_weak" }
 				type: "item"
 			}]
-			x: 0.75d
+			x: -0.25d
 			y: -0.5d
 		}
 		{
-			dependencies: ["418CB5EC1FE8CB1A"]
+			dependencies: ["61AAFF003014ABBC"]
 			icon: {
 				components: {
 					"modonomicon:book_id": "neovitae:guide"
@@ -155,7 +155,7 @@
 					type: "item"
 				}
 			]
-			x: 2.35d
+			x: 2.5d
 			y: -0.5d
 		}
 		{
@@ -309,7 +309,7 @@
 			y: 3.25d
 		}
 		{
-			dependencies: ["53C28D1A140CA4A6"]
+			dependencies: ["03A2DAC1A090CC65"]
 			id: "7997AD44CC428BDC"
 			rewards: [
 				{
@@ -329,8 +329,8 @@
 				item: { count: 1, id: "neovitae:vas_maleficum" }
 				type: "item"
 			}]
-			x: 7.85d
-			y: 2.0d
+			x: 7.9d
+			y: 3.25d
 		}
 		{
 			dependencies: ["7997AD44CC428BDC"]
@@ -354,7 +354,7 @@
 				type: "item"
 			}]
 			x: 7.9d
-			y: 0.9d
+			y: 2.05d
 		}
 		{
 			dependencies: ["0935BFDC4F0B4C6C"]
@@ -381,7 +381,7 @@
 			y: -0.25d
 		}
 		{
-			dependencies: ["03A2DAC1A090CC65"]
+			dependencies: ["6F92D6C797F9C931"]
 			id: "53C28D1A140CA4A6"
 			rewards: [
 				{
@@ -401,11 +401,11 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(neovitae:raw_crystal_shard)item(neovitae:spiritus_ruina_shard)item(neovitae:spiritus_nihilum_shard)item(neovitae:spiritus_vindicta_shard)item(neovitae:spiritus_invictus_shard))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 7.85d
-			y: 3.25d
+			x: 7.9d
+			y: 0.85d
 		}
 		{
-			dependencies: ["6F92D6C797F9C931"]
+			dependencies: ["53C28D1A140CA4A6"]
 			id: "0935BFDC4F0B4C6C"
 			rewards: [
 				{
@@ -596,7 +596,7 @@
 			y: 2.35d
 		}
 		{
-			dependencies: ["0B7267B31A1CCECA"]
+			dependencies: ["418CB5EC1FE8CB1A"]
 			id: "61AAFF003014ABBC"
 			rewards: [
 				{
@@ -616,11 +616,11 @@
 				item: { count: 1, id: "neovitae:tabula_vitae" }
 				type: "item"
 			}]
-			x: 12.2d
-			y: -0.25d
+			x: 1.15d
+			y: -0.5d
 		}
 		{
-			dependencies: ["61AAFF003014ABBC"]
+			dependencies: ["0B7267B31A1CCECA"]
 			id: "5946631C59C788DC"
 			rewards: [
 				{
@@ -640,11 +640,11 @@
 				item: { count: 1, id: "neovitae:sigil_holding" }
 				type: "item"
 			}]
-			x: 14.2d
-			y: -0.8d
+			x: 13.35d
+			y: -0.55d
 		}
 		{
-			dependencies: ["61AAFF003014ABBC"]
+			dependencies: ["0B7267B31A1CCECA"]
 			id: "4CFB8A6C9DF9988A"
 			rewards: [
 				{
@@ -664,11 +664,11 @@
 				item: { count: 1, id: "neovitae:sigil_teleposition" }
 				type: "item"
 			}]
-			x: 13.55d
-			y: 1.15d
+			x: 13.7d
+			y: 1.5d
 		}
 		{
-			dependencies: ["61AAFF003014ABBC"]
+			dependencies: ["0B7267B31A1CCECA"]
 			id: "73FC0402BA6033FA"
 			rewards: [
 				{
@@ -688,11 +688,11 @@
 				item: { count: 1, id: "neovitae:sigil_phantom_bridge" }
 				type: "item"
 			}]
-			x: 13.55d
-			y: -1.65d
+			x: 12.5d
+			y: -1.2d
 		}
 		{
-			dependencies: ["61AAFF003014ABBC"]
+			dependencies: ["0B7267B31A1CCECA"]
 			id: "6C86EFABDB60BE68"
 			rewards: [
 				{
@@ -712,8 +712,8 @@
 				item: { count: 1, id: "neovitae:sigil_blood_light" }
 				type: "item"
 			}]
-			x: 14.2d
-			y: 0.35d
+			x: 13.8d
+			y: 0.45d
 		}
 		{
 			dependencies: ["26C7705667EB55E8"]
