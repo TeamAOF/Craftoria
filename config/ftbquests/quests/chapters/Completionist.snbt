@@ -9,26 +9,6 @@
 	id: "0CF7A598566497C7"
 	images: [
 		{
-			height: 5.0d
-			id: "5CF118DAB4B91D3C"
-			image: "relics:textures/gui/description/general/tab.png"
-			order: -1
-			rotation: -90.0d
-			width: 2.0d
-			x: -13.45d
-			y: 2.5999999999999996d
-		}
-		{
-			height: 5.0d
-			id: "1E273D4EF898C20F"
-			image: "relics:textures/gui/description/general/tab.png"
-			order: -1
-			rotation: 90.0d
-			width: 2.0d
-			x: -9.5d
-			y: 2.5999999999999996d
-		}
-		{
 			height: 7.0d
 			id: "18263E959B926050"
 			image: "ftbquests:textures/gui/completionist.png"
@@ -36,15 +16,6 @@
 			width: 7.0d
 			x: -11.42d
 			y: 1.65d
-		}
-		{
-			height: 7.0d
-			id: "1989E26FA940A29C"
-			image: "ftbquests:textures/gui/trophy_shelf_long.png"
-			rotation: 0.0d
-			width: 12.0d
-			x: -11.5d
-			y: 4.65d
 		}
 		{
 			height: 7.0d
@@ -74,6 +45,16 @@
 			width: 7.0d
 			x: -3.25d
 			y: 8.05d
+		}
+		{
+			click_action: "none:"
+			height: 7.0d
+			id: "1989E26FA940A29C"
+			image: "ftbquests:textures/gui/trophy_shelf_long.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: -11.5d
+			y: 4.65d
 		}
 	]
 	order_index: 1
