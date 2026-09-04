@@ -130,6 +130,7 @@ KeyBindJSEvents.modify(event => {
     'artifacts.key.charm_of_shrinking.toggle': { remove: true },
     'key.kubejs.kubedex': { remove: true },
     'nolijium.toggle_light_level_overlay': { remove: true },
+    'key_key.emiaddon.share_hovered_item': { remove: true },
   };
 
   for (let [k, v] of Object.entries(keys)) {
