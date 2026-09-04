@@ -1,5 +1,9 @@
 #Whether upgrades should be allowed in the Multi Processing Array
 allow_upgrades_in_multi_processing_array = true
+#How many levels of Extended Industrialization Machine Chainers to copy; 0 disables copying and -1 is unlimited
+# Default: -1
+# Range: -1 ~ 1024
+machine_chainer_copy_depth = -1
 
 [batching_machines]
 	#The multiplier to use for the EU cost of the Multi Processing Array

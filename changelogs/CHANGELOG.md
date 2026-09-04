@@ -1,3 +1,15 @@
+# Craftoria | v1.33.2
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.33.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.33.2.md)_
+
+### Changes/Improvements ⭐
+
+* Reordered some neo vitae quests `AK`
+
+### Bug Fixes 🪲
+
+* Create Deco iron support with IF iron gear `Kaiser`
+---
 # Craftoria | v1.33.1
 
 _Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.33.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.33.1.md)_

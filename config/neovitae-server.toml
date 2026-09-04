@@ -60,7 +60,12 @@ evolution_upgrade_points = 300
 	# Default: 1.0
 	# Range: 0.1 ~ 10.0
 	growth_speed = 1.0
-	#Minimum spiritus in chunk before crystals start growing (200 = vanilla)
+	#Reference saturation for the crystal growth rate curve. This is NOT a minimum:
+	#a cluster grows in any chunk holding more than 0.5 spiritus of its aspect.
+	#Rate is (1 / this) * sqrt(spiritus / this) progress per second and a segment
+	#completes at 1.0, so a segment takes roughly this many seconds in a chunk sitting
+	#at exactly this saturation, longer below it and shorter above.
+	#Raise to slow all crystal growth, lower to speed it up.
 	# Default: 200.0
 	# Range: 1.0 ~ 1000.0
 	growth_threshold = 200.0
@@ -158,3 +163,9 @@ evolution_upgrade_points = 300
 	# Default: 5
 	# Range: 1 ~ 64
 	vertical_range = 5
+
+[sigil_of_necromancy]
+	#Maximum summons a single player may have alive at once. 0 removes the per-player limit.
+	# Default: 10
+	# Range: 0 ~ 1024
+	max_summons_per_player = 10
