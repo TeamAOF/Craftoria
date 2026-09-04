@@ -1,4 +1,24 @@
+# Enables automatic GUI scaling for Relics description screens. Disable this to use Minecraft's configured GUI scale instead.
+enabledAutoScale: true
 # Toggles advanced configuration files, allowing customization of most of the mod's functionality. May contain WIP content that may change in the future.
 # 
 # Activating this feature may lead to unintended consequences, so use it only if you know what you're doing. If any part of the mod update involves changes to the configuration file values, these changes will not be applied automatically. You will need to manually update the necessary sections or reset them to their original state.
 enabledExtendedConfigs: false
+# A list of entity IDs that cannot be revived by the Hunting Belt.
+huntingBeltRevivalEntitiesBlacklist:
+- ars_nouveau:animated_block
+- ars_nouveau:animated_head
+# A list of entity attributes that are ignored by the Ring of The Seven Deadly Sins' gluttony ability.
+ringOfSDSGluttonyAttributesBlacklist:
+- minecraft:generic.gravity
+- minecraft:generic.scale
+- additionalentityattributes:generic.width
+- additionalentityattributes:generic.height
+- additionalentityattributes:generic.hitbox_scale
+- additionalentityattributes:generic.hitbox_width
+- additionalentityattributes:generic.hitbox_height
+- additionalentityattributes:generic.model_scale
+- additionalentityattributes:generic.model_width
+- additionalentityattributes:generic.model_height
+- ars_nouveau:ars_nouveau.perk.weight
+- ars_nouveau:ars_nouveau.perk.wixie

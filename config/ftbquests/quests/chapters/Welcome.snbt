@@ -113,40 +113,47 @@
 					"relics:data": {
 						abilities: {
 							abilities: {
-								teleport: {
-									extender: {
-										cooldown: 0
-										cooldownCap: 0
-										ticking: 0b
-									}
+								devotion: {
 									lock: {
 										breaks: 5
 									}
 									points: 0
-									research: {
-										links: { }
-										researched: 0b
-									}
 									stats: {
-										cooldown: {
-											initialValue: 76.74979d
+										absorption_cap: {
+											initialQuality: 8
 										}
-										distance: {
-											initialValue: 640.83509d
+										absorption_hearts: {
+											initialQuality: 8
+										}
+										max_glyphs: {
+											initialQuality: 1
+										}
+										max_orbs: {
+											initialQuality: 6
+										}
+										preservation_chance: { }
+										propagation_chance: {
+											initialQuality: 7
+										}
+										propagation_radius: {
+											initialQuality: 3
+										}
+										propagation_targets: {
+											initialQuality: 7
+										}
+										spawn_interval: {
+											initialQuality: 5
 										}
 									}
 								}
 							}
+							synergies: { }
 						}
-						leveling: {
-							experience: 0
-							level: 0
-							luck: 0
-							points: 0
-						}
+						leveling: { }
+						statistic: { }
 					}
 				}
-				id: "relics:magic_mirror"
+				id: "reliquified_ars_nouveau:emblem_of_devotion"
 			}
 			id: "2E7A46639993CCDE"
 			tasks: [{

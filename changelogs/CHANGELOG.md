@@ -1,3 +1,20 @@
+# Craftoria | v1.34.0
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.34.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.34.0.md)_
+
+## DISCLAIMER: Added new relics system, old relics will be removed!
+
+### Changes/Improvements ⭐
+
+* Remove broken share hovered item feature on Y keypress `AK`
+* NEW RELICS SYSTEM, backup your worlds as old relics are deleted `AK`
+
+### Removed Mods ❌
+
+* [Deeper and Darker](https://curseforge.com/projects/659011)
+* [Reliquified L_Ender 's Cataclysm](https://curseforge.com/projects/1232116)
+* [Reliquified Twilight Forest](https://curseforge.com/projects/1186617)
+---
 # Craftoria | v1.33.2
 
 _Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.33.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.33.2.md)_
