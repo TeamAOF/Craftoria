@@ -8,6 +8,7 @@
     'twilightdelight',
     'ends_delight',
     'spectrum',
+    'occultism',
   ];
   /** @type {Special.Item[]} */
   let itemWhitelist = [
