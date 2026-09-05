@@ -57,11 +57,6 @@ ItemEvents.modifyTooltips(e => {
   ]);
   */
 
-  e.add('occultism:butcher_knife', [
-    Text.translate('tooltip.occultism.butcher_knife.line1').yellow(),
-    Text.translate('tooltip.occultism.butcher_knife.line2').yellow(),
-  ]);
-
   for (const [id, machine] of Object.entries(global.customMIMachines)) {
     if (machine.mod == 'mi_tweaks') continue; // Skip mi_tweaks machines, their Mod name tooltip is overridden via a startup script.
 
