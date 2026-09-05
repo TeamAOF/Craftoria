@@ -63,6 +63,7 @@ CapeJS.addCapes(event => {
       "09c1065b-20e6-4f73-9ca5-2d66384425a3", // czozp
       "0bbce79c-09a4-4d9a-9911-58abca1f00df", // amfs987
       "1323319f-3e52-492c-b0ea-c18c83971f6e", // Alpha_Hunter_2
+      "57af9674-53c9-48fa-890e-9a7ce1ba1daa", // Sainthozier
 
     ],
   };
