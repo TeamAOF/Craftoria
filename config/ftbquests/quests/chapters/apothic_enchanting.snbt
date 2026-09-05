@@ -1,0 +1,288 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "hexagon"
+	default_quest_size: 1.25d
+	filename: "apothic_enchanting"
+	group: "07A79347BA55DCA4"
+	icon: {
+		id: "apothic_enchanting:apothic_enchanting_table"
+	}
+	id: "7DAD240FB8B141AC"
+	images: [{
+		click_action: "none:"
+		height: 5.0d
+		id: "0969D7E9415B50AD"
+		image: "ftbquests:textures/gui/apothic_enchanting.png"
+		rotation: 0.0d
+		width: 10.0d
+		x: -6.5d
+		y: 0.95d
+	}]
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "apothic_enchanting:apothic_enchanting_table"
+			}
+			id: "1CD3AD0FB5604882"
+			rewards: [{
+				id: "037A6DAF58FFED83"
+				type: "xp_levels"
+				xp_levels: 2
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "57F02AA9BFBA7624"
+				item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:enchanting_table)item(apothic_enchanting:apothic_enchanting_table))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1CD3AD0FB5604882"]
+			icon: {
+				id: "apothic_enchanting:raven_enchanting_table"
+			}
+			id: "14DDF01D6F7D46A7"
+			rewards: [{
+				id: "2B188528F6694D7B"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "27583FA285732590"
+				item: { count: 1, id: "apothic_enchanting:raven_enchanting_table" }
+				type: "item"
+			}]
+			x: -1.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1CD3AD0FB5604882"]
+			icon: {
+				id: "apothic_enchanting:hellshelf"
+			}
+			id: "3A41A00BEF324EF3"
+			rewards: [{
+				id: "77F18737678B78C1"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "24A76A503F53AA7B"
+				item: { components: { "ftbfiltersystem:filter": "or(item(apothic_enchanting:basic_bookshelf)item(apothic_enchanting:hellshelf)item(apothic_enchanting:blazing_hellshelf)item(apothic_enchanting:glowing_hellshelf)item(apothic_enchanting:infused_hellshelf)item(apothic_enchanting:seashelf)item(apothic_enchanting:infused_seashelf)item(apothic_enchanting:crystal_seashelf)item(apothic_enchanting:heart_seashelf)item(apothic_enchanting:dormant_deepshelf)item(apothic_enchanting:deepshelf)item(apothic_enchanting:echoing_deepshelf)item(apothic_enchanting:soul_touched_deepshelf)item(apothic_enchanting:echoing_sculkshelf)item(apothic_enchanting:soul_touched_sculkshelf)item(apothic_enchanting:endshelf)item(apothic_enchanting:pearl_endshelf)item(apothic_enchanting:draconic_endshelf)item(apothic_enchanting:beeshelf)item(apothic_enchanting:melonshelf)item(apothic_enchanting:stoneshelf)item(apothic_enchanting:sightshelf)item(apothic_enchanting:sightshelf_t2)item(apothic_enchanting:treasure_shelf)item(apothic_enchanting:geode_shelf))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.7550000000000001d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1CD3AD0FB5604882"]
+			icon: {
+				id: "apothic_enchanting:library"
+			}
+			id: "557B8123056FBF8C"
+			rewards: [{
+				id: "3F4619D683FF2ABA"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "2D891ACDDBA9291F"
+				item: { count: 1, id: "apothic_enchanting:library" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.4375d
+		}
+		{
+			dependencies: ["557B8123056FBF8C"]
+			icon: {
+				id: "apothic_enchanting:ender_library"
+			}
+			id: "10BD26FC074B3066"
+			rewards: [{
+				id: "7B89E6BEFD0AA146"
+				type: "xp_levels"
+				xp_levels: 8
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "7B5DD6D198B057EA"
+				item: { count: 1, id: "apothic_enchanting:ender_library" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.8125d
+		}
+		{
+			dependencies: ["1CD3AD0FB5604882"]
+			icon: {
+				id: "apothic_enchanting:helmet_tome"
+			}
+			id: "7C11028E6B1F402B"
+			rewards: [{
+				id: "127ED594D8B51B33"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "597ECA1E95F8C178"
+				item: { components: { "ftbfiltersystem:filter": "or(item(apothic_enchanting:helmet_tome)item(apothic_enchanting:chestplate_tome)item(apothic_enchanting:leggings_tome)item(apothic_enchanting:boots_tome))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -1.75d
+			y: 2.6875d
+		}
+		{
+			dependencies: ["1CD3AD0FB5604882"]
+			icon: {
+				id: "apothic_enchanting:weapon_tome"
+			}
+			id: "2936EE38CEAB4337"
+			rewards: [{
+				id: "559F195A7F414AD0"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "3D356B345CE153FC"
+					item: { count: 1, id: "apothic_enchanting:weapon_tome" }
+					type: "item"
+				}
+				{
+					id: "4BF9065EF1280511"
+					item: { count: 1, id: "apothic_enchanting:bow_tome" }
+					type: "item"
+				}
+			]
+			x: 0.625d
+			y: 2.6875d
+		}
+		{
+			dependencies: ["1CD3AD0FB5604882"]
+			icon: {
+				id: "apothic_enchanting:pickaxe_tome"
+			}
+			id: "7A699D1A92A84C51"
+			rewards: [{
+				id: "6788E87F571A4D94"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [
+				{
+					id: "101D25C939262FB1"
+					item: { count: 1, id: "apothic_enchanting:pickaxe_tome" }
+					type: "item"
+				}
+				{
+					id: "220D5F1091F2592B"
+					item: { count: 1, id: "apothic_enchanting:other_tome" }
+					type: "item"
+				}
+				{
+					id: "4055F3C4BF74B8CC"
+					item: { count: 1, id: "apothic_enchanting:fishing_tome" }
+					type: "item"
+				}
+			]
+			x: 1.8125d
+			y: 2.6875d
+		}
+		{
+			dependencies: ["21474801C1472EF7"]
+			icon: {
+				id: "apothic_enchanting:improved_scrap_tome"
+			}
+			id: "51E14807C39F4111"
+			rewards: [{
+				id: "67B5142E85774908"
+				type: "xp_levels"
+				xp_levels: 4
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "13987D558E501F4A"
+				item: { count: 1, id: "apothic_enchanting:improved_scrap_tome" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["51E14807C39F4111"]
+			icon: {
+				id: "apothic_enchanting:extraction_tome"
+			}
+			id: "5C8DA6A4F83731BC"
+			rewards: [{
+				id: "3FB2013C2108AA1D"
+				type: "xp_levels"
+				xp_levels: 6
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "21F4A142138F5380"
+				item: { count: 1, id: "apothic_enchanting:extraction_tome" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.3125d
+		}
+		{
+			dependencies: ["1CD3AD0FB5604882"]
+			id: "21474801C1472EF7"
+			rewards: [{
+				id: "061325DAFEA7EAA2"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "7091E97F4AC9D7A3"
+				item: { count: 1, id: "apothic_enchanting:scrap_tome" }
+				type: "item"
+			}]
+			x: -0.5625d
+			y: 2.6875d
+		}
+		{
+			dependencies: ["3A41A00BEF324EF3"]
+			id: "7F3584DB86B09C4D"
+			rewards: [{
+				id: "5861193BBAF7F267"
+				type: "xp_levels"
+				xp_levels: 3
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "1605ACA907712B09"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(minecraft:candles)item(minecraft:zombie_head)item(minecraft:creeper_head)item(minecraft:piglin_head)item(minecraft:wither_skeleton_skull))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.75d
+			y: -1.4375d
+		}
+	]
+}
