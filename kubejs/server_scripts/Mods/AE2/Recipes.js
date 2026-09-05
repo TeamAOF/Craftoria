@@ -43,6 +43,10 @@ ServerEvents.recipes(event => {
   event.replaceInput({ id: 'advanced_ae:quantum_leggings' }, 'minecraft:netherite_leggings', 'mekanism:mekasuit_pants');
   event.replaceInput({ id: 'advanced_ae:quantum_boots' }, 'minecraft:netherite_boots', 'mekanism:mekasuit_boots');
 
+  event.replaceInput({ id: 'advanced_ae:flight_card' }, 'minecraft:elytra', 'mekanism:module_elytra_unit');
+  event.replaceInput({ id: 'advanced_ae:flight_card' }, 'minecraft:tnt', 'eternal_starlight:aetherstrike_rocket');
+  event.replaceInput({ id: 'advanced_ae:flight_card' }, 'minecraft:feather', 'modern_industrialization:electronic_circuit');
+
   ae2.crystalAssembler('advanced_ae:adv_pattern_provider_capacity_upgrade', [
     '#ae2:metal_ingots',
     '3x ae2:capacity_card',
