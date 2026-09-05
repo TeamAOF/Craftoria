@@ -105,6 +105,11 @@ ServerEvents.tags('item', e => {
 
   e.remove('minecraft:axes', ['hazennstuff:skyuscorcher']);
 
+  // Artifacts
+  e.remove('artifacts:artifacts', ['artifacts:everlasting_beef', 'artifacts:eternal_steak']);
+  e.remove('reliquified_artifacts:mimic_loot', ['artifacts:everlasting_beef', 'artifacts:eternal_steak']);
+  e.remove('reliquified_artifacts:mimificable', ['artifacts:everlasting_beef', 'artifacts:eternal_steak']);
+
   /**
    * @param {string[]} tags
    * @param {$Ingredient_|$Ingredient_[]} item
