@@ -381,7 +381,6 @@
 		}
 		{
 			dependencies: ["04F6F95B5880770D"]
-			hide_dependency_lines: true
 			id: "7283C1B759AF0F5F"
 			rewards: [{
 				count: 64
@@ -402,6 +401,38 @@
 			}]
 			x: -4.4875d
 			y: 3.2625d
+		}
+		{
+			dependencies: ["7283C1B759AF0F5F"]
+			id: "59B0B5B66DA2BFE4"
+			rewards: [
+				{
+					count: 64
+					id: "2370260B7CAF2FE9"
+					item: {
+						count: 1
+						id: "aquaculture:treasure_chest"
+					}
+					type: "item"
+				}
+				{
+					id: "66B976C1B8692FF4"
+					item: {
+						count: 1
+						id: "spectrum:fishcake"
+					}
+					type: "item"
+				}
+			]
+			shape: "none"
+			size: 3.0d
+			tasks: [{
+				id: "075A7A11E5E21306"
+				item: { count: 1, id: "starcatcher:trophy_of_the_older_angler" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.25d
 		}
 	]
 }
