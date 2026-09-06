@@ -37,7 +37,14 @@ const globalItemRemovals = [
   'actuallyadditions:gold_aiot',
   'actuallyadditions:diamond_aiot',
   'actuallyadditions:netherite_aiot',
-  'malum:charcoal_fragment'
+  'malum:charcoal_fragment',
+  'malum:coal_fragment',
+  'farm_and_charm:onion_bag',
+  'farm_and_charm:carrot_bag',
+  'vinery:apple_bag',
+  'farm_and_charm:beetroot_bag',
+  'farm_and_charm:tomato_bag',
+  'farm_and_charm:potato_bag'
 ];
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
