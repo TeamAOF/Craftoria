@@ -110,6 +110,9 @@ ServerEvents.tags('item', e => {
   e.remove('reliquified_artifacts:mimic_loot', ['artifacts:everlasting_beef', 'artifacts:eternal_steak']);
   e.remove('reliquified_artifacts:mimificable', ['artifacts:everlasting_beef', 'artifacts:eternal_steak']);
 
+  // Portable Brazier Blacklist
+  e.add('ars_controle:ritual_blacklist', ['ars_nouveau:ritual_flight']);
+
   /**
    * @param {string[]} tags
    * @param {$Ingredient_|$Ingredient_[]} item
@@ -170,7 +173,7 @@ ServerEvents.tags('block', e => {
     '#minecraft:anvil',
     'minecraft:bell',
     'yigd:grave',
-    '#lootr:containers',
+    '#lootr:containers'
   ]);
 
   e.add('ae2:blacklisted/spatial', ['justdirethings:time_crystal_budding_block']);
@@ -277,7 +280,18 @@ ServerEvents.tags('fluid', e => {
 ServerEvents.tags('entity_type', e => {
   e.add('craftoria:mob_blacklist', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/, '#neoforge:bosses']);
 
-  e.add('ftbchunks:entity_interact_whitelist', ['minecraft:villager', 'minecraft:wandering_trader']);
+  e.add('ftbchunks:entity_interact_whitelist', 
+    [
+      'minecraft:villager', 
+      'minecraft:wandering_trader', 
+      'immersive_aircraft:airship', 
+      'immersive_aircraft:cargo_airship', 
+      'immersive_aircraft:warship', 
+      'immersive_aircraft:biplane', 
+      'immersive_aircraft:gyrodyne', 
+      'immersive_aircraft:quadrocopter', 
+      'immersive_aircraft:bamboo_hopper'
+    ]);
 
   e.add('justdirethings:creature_catcher_deny', ['ars_nouveau:dummy']);
   e.add('apothic_spawners:blacklisted_from_spawners', ['#craftoria:mob_blacklist']);
