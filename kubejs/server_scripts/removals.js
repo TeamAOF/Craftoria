@@ -36,7 +36,8 @@ const globalItemRemovals = [
   'actuallyadditions:iron_aiot',
   'actuallyadditions:gold_aiot',
   'actuallyadditions:diamond_aiot',
-  'actuallyadditions:netherite_aiot'
+  'actuallyadditions:netherite_aiot',
+  'malum:charcoal_fragment'
 ];
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
