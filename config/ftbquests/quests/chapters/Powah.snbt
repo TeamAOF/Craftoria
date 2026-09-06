@@ -350,5 +350,72 @@
 			x: 1.5d
 			y: -3.5d
 		}
+		{
+			id: "4E95AAAA75D6580D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3F38F61C0572A853"
+				table_id: 293955719965110351L
+				type: "random"
+			}]
+			tasks: [{
+				id: "41098F9E3C40944B"
+				item: { count: 1, id: "powah:crystal_blazing" }
+				type: "item"
+			}]
+			x: -2.2d
+			y: 5.35d
+		}
+		{
+			dependencies: ["4E95AAAA75D6580D"]
+			id: "1145827C7C632640"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4B08EBA0D8F3FA14"
+				table_id: 293955719965110351L
+				type: "random"
+			}]
+			tasks: [{
+				id: "224AD40FCFA08DF5"
+				item: { count: 1, id: "powah:crystal_niotic" }
+				type: "item"
+			}]
+			x: -0.75d
+			y: 5.35d
+		}
+		{
+			dependencies: ["1145827C7C632640"]
+			id: "7934FE9F747233C8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "10EF77015A27E009"
+				table_id: 293955719965110351L
+				type: "random"
+			}]
+			tasks: [{
+				id: "336E6744804CB8EC"
+				item: { count: 1, id: "powah:crystal_spirited" }
+				type: "item"
+			}]
+			x: 0.75d
+			y: 5.35d
+		}
+		{
+			dependencies: ["7934FE9F747233C8"]
+			id: "44E666039F7893C2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6A0E23A8DC0C3706"
+				table_id: 293955719965110351L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4460D7781D48FFF2"
+				item: { count: 1, id: "powah:crystal_nitro" }
+				type: "item"
+			}]
+			x: 2.2d
+			y: 5.35d
+		}
 	]
 }

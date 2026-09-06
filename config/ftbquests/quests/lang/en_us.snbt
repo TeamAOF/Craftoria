@@ -32,6 +32,7 @@
 	chapter.70FFEE37C7ABD690.title: "Applied Energistics"
 	chapter.7269FD2B5B0F0424.title: "Occultism"
 	chapter.7B329826EADF9720.title: "Gadgets"
+	chapter.7DAD240FB8B141AC.title: "Apothic Enchanting"
 	chapter.7DD7526F1C5EEE18.title: "WIP"
 	chapter_group.01BEAD68B1D370D3.title: "&8&lMagic&r &d✡"
 	chapter_group.04696DE4EC4D4A94.title: "&8&lLogistics &b모"
@@ -136,7 +137,13 @@
 		""
 		"Use a &bSmithing Table&f to apply the upgrade to your stick, using a &credstone block&f as the material."
 	]
-	quest.0119F518ACD8568D.quest_subtitle: "+Redstone Control"
+	quest.0119F518ACD8568D.quest_desc: [
+		"The &bSilent Spawner Rune&f makes the spawner operate without its usual sound."
+		""
+		"Because sometimes your mob farm needs to shut up."
+	]
+	quest.0119F518ACD8568D.quest_subtitle: "No more rattling cages"
+	quest.0119F518ACD8568D.title: "Silent Spawner Rune"
 	quest.011E9553CDCAE218.quest_desc: ["Quadrupling that storage capacity are we?"]
 	quest.011E9553CDCAE218.title: "4k Storage Component"
 	quest.012B064DED21DCD3.quest_desc: [
@@ -330,7 +337,7 @@
 		"The &bDynamo&r also &6produces&r &4heat&r, which needs to be managed to prevent a &closs&r in &aefficiency&r."
 	]
 	quest.04F037CA65BF5379.title: "triggers/hints/malachite_page0"
-	quest.04F6F95B5880770D.quest_subtitle: "Catch &a200&r total fishes and &d10&r unique legendary fishes."
+	quest.04F6F95B5880770D.quest_subtitle: "Catch &a200&r total fishes and &610&r unique golden fishes."
 	quest.04FDBE32E074B566.title: "hidden/solve_every_preservation_ruin"
 	quest.05106B85AD5F2114.title: "unlocks/equipment/resonant_pickaxe"
 	quest.05204F6C709B47BE.title: "unlocks/blocks/ender_blocks"
@@ -918,6 +925,9 @@
 	quest.0FE33633653DE3D8.title: "milestones/unlock_pastel_node_coloring"
 	quest.0FE6DFF73BE7AA10.quest_desc: ["&aLime&r Chalk is needed to summon spirits greater than Foliot. It certifies your mastery of the basics of occultism."]
 	quest.0FE6DFF73BE7AA10.quest_subtitle: "Knowledge"
+	quest.0FEDFA203E344F6E.quest_desc: ["Pickaxe, Fishing and Other Tomes cover specialized item categories. The Other Tome accepts enchantments that do not fit the other categories."]
+	quest.0FEDFA203E344F6E.quest_subtitle: "Target specialized enchants"
+	quest.0FEDFA203E344F6E.title: "Tomes of Utility"
 	quest.0FFAA1AD3D5FDBD2.title: "hidden/collect_vanilla/glow_lichen"
 	quest.10221C7A8C482A6C.title: "unlocks/malachite/malachite_tools"
 	quest.10391A74418CA104.quest_desc: [
@@ -954,6 +964,18 @@
 	quest.1094111FB9512D75.title: "Diesel Generator"
 	quest.109C9BB979CF8F23.title: "milestones/unlock_overenchanting_with_enchanter"
 	quest.10A77FA1A0155EFC.title: "unlocks/upgrades/upgrade_efficiency"
+	quest.10BD26FC074B3066.quest_desc: [
+		"The ultimate evolution of the &bEnchantment Library&r."
+		""
+		"The &zLibrary of Alexandria&r greatly expands your ability to store enchantments, making it easier to build and maintain a collection of powerful enchanted books."
+		""
+		"Store your accumulated enchantment knowledge here and retrieve it whenever you need it, instead of keeping piles of enchanted books in storage."
+		""
+		"This is the final step in building a dedicated enchantment library."
+		""
+		"Tip: Combine this with the &eTome of Extraction&r to safely move powerful enchantments from existing gear into your collection."
+	]
+	quest.10BD26FC074B3066.quest_subtitle: "Master the Art of Enchanting"
 	quest.10DE06AD0C054F60.title: "milestones/reveal_blood_orchid_petals"
 	quest.1103A1D59725AF3E.title: "unlocks/enchantments/vanilla_luck"
 	quest.110A09E98407AD4E.title: "hidden/collect_pigment/blue"
@@ -973,6 +995,15 @@
 	quest.110B0C8DD2FD5BE7.quest_subtitle: "A world of automation awaits!"
 	quest.110B0C8DD2FD5BE7.title: "&fWelcome to &aMekanism"
 	quest.11337DF29B892F12.title: "hidden/collect_blazing_crystal"
+	quest.1145827C7C632640.quest_desc: [
+		"&7Harness the power of &bNiotic Energy&7."
+		""
+		"&7Niotic Crystals are used to create more advanced &ePowah&7 components and machines."
+		""
+		"&7Craft one to continue your journey toward &bgreater power&7."
+	]
+	quest.1145827C7C632640.quest_subtitle: "The Power of Water"
+	quest.1145827C7C632640.title: "&bNiotic Crystal"
 	quest.115D4B48932268A1.title: "hidden/entity_interact/eraser"
 	quest.1163C83EDF1B6C25.title: "unlocks/reagents/moonstruck_nectar"
 	quest.116A34A78C49E637.title: "unlocks/reagents/nectardew_burgeon"
@@ -1121,8 +1152,20 @@
 	quest.149E278A2E9EFE34.title: "hidden/collect_cookbooks/brewers_handbook"
 	quest.14A9BFD8547DFDA0.title: "triggers/hints/resonance_shards_page0"
 	quest.14B0F4CA0DE629A2.title: "unlocks/reagents/prickly_bayleaf"
-	quest.14F545E632726FEE.quest_desc: ["Spawned mobs will be set on fire."]
-	quest.14F545E632726FEE.quest_subtitle: "+ Burning"
+	quest.14DDF01D6F7D46A7.quest_desc: [
+		"&bThe Enchanting Table of the Raven&r allows direct customization of the core enchanting stats. "
+		""
+		"Use it when you want &eprecise control&r over your enchanting setup."
+	]
+	quest.14DDF01D6F7D46A7.quest_subtitle: "Manual stat control"
+	quest.14DDF01D6F7D46A7.title: "The Raven Knows"
+	quest.14F545E632726FEE.quest_desc: [
+		"An &bInfused Spawner Rune&f is a powered-up version of the basic spawner rune."
+		""
+		"It is required for some of the strongest spawner upgrades."
+	]
+	quest.14F545E632726FEE.quest_subtitle: "A rune charged with power"
+	quest.14F545E632726FEE.title: "Infused Spawner Rune"
 	quest.15008EFBA92CC3DC.quest_desc: [
 		"You can open the AE2 guide by holding G on almost any AE2 item."
 		""
@@ -1742,6 +1785,9 @@
 		"You will want a decent supply of it."
 	]
 	quest.1CD1F5A08AE6E557.quest_subtitle: "Sparkling in the depths"
+	quest.1CD3AD0FB5604882.quest_desc: ["Craft the &bApothic Enchanting Table&r and begin using &2Eterna&r, &4Quanta&r and &5Arcana&r to push enchanting beyond vanilla limits, with progression reaching level 100."]
+	quest.1CD3AD0FB5604882.quest_subtitle: "Begin the overhaul"
+	quest.1CD3AD0FB5604882.title: "The Secrets of Enchanting"
 	quest.1CD404EA948FF868.quest_desc: [
 		"Using this &bmachine&r you will &6transform&r any item with matter values into &dMatter."
 		""
@@ -1925,8 +1971,13 @@
 	]
 	quest.1F828E56F64FFD15.quest_subtitle: "Purple Fire?"
 	quest.1F828E56F64FFD15.title: "Spiritfire"
-	quest.1F88FCB1B73FF882.quest_desc: ["The total number of entities allowed nearby."]
-	quest.1F88FCB1B73FF882.quest_subtitle: "+2 Max Entities"
+	quest.1F88FCB1B73FF882.quest_desc: [
+		"The &bInitial Health Spawner Rune&f modifies the initial health of mobs spawned by the spawner."
+		""
+		"Useful for creating easier or tougher mob farms."
+	]
+	quest.1F88FCB1B73FF882.quest_subtitle: "Choose how healthy they start"
+	quest.1F88FCB1B73FF882.title: "Initial Health Spawner Rune"
 	quest.1F96BF9252C4CBDB.title: "unlocks/redstone/block_breaker"
 	quest.1F9A1456487655B0.quest_desc: [
 		"Using your &bTeleportation Core&r, construct a &9Teleporter&r to allow you to instantly travel across any distance. "
@@ -1951,8 +2002,13 @@
 	quest.1FB75AA6712A5C21.title: "milestones/reveal_radiating_ender"
 	quest.1FC5E6868C1D094F.title: "hidden/collect_clover"
 	quest.1FD1C62AFB6E02F1.title: "hidden/status_effects/effect_prolonging"
-	quest.1FD59C1147BCE34F.quest_desc: ["The spawner ignores spawn conditions."]
-	quest.1FD59C1147BCE34F.quest_subtitle: "+ Ignores Conditions"
+	quest.1FD59C1147BCE34F.quest_desc: [
+		"The &bEchoing Spawner Rune&f modifies a spawner to create additional spawning behavior."
+		""
+		"Perfect for taking an already productive spawner and making it even more productive."
+	]
+	quest.1FD59C1147BCE34F.quest_subtitle: "One mob? How about more?"
+	quest.1FD59C1147BCE34F.title: "Echoing Spawner Rune"
 	quest.1FDE63D5EA5DA3CB.quest_desc: ["If Internet Protocol has ports, than &bPackage Frogports&r must be part of CCP: Chain Conveyor Protocol."]
 	quest.1FDE63D5EA5DA3CB.quest_subtitle: "Not where frogs land and take off from."
 	quest.1FF9C1E9ECCBB353.title: "unlocks/reagents/prickly_bayleaf"
@@ -2077,6 +2133,16 @@
 	quest.2133B29DE47BDC25.title: "Advanced Combining Factory"
 	quest.2139A7BBDFA6E7D6.title: "unlocks/blocks/memories"
 	quest.213A645E6835D59B.title: "unlocks/trinkets/fanciful_tuff_ring"
+	quest.21474801C1472EF7.quest_desc: [
+		"A &bTome of Scrapping&r lets you remove enchantments from an item and recover them as enchanted books."
+		""
+		"The process is lossy - only half of the item's enchantments are recovered, and the original item is destroyed."
+		""
+		"For a complete extraction without destroying the item, use a Tome of Extraction instead."
+		""
+		"Tip: Use the &bTome of Superior Scrapping&r if you want to recover all of the enchantments but don't mind sacrificing the item."
+	]
+	quest.21474801C1472EF7.quest_subtitle: "Salvage Enchantments"
 	quest.215606B3A894512E.quest_desc: [
 		"  Do you see those percents on each ore in the quarry outputs?"
 		""
@@ -2332,8 +2398,13 @@
 	quest.251775B75C302453.title: "unlocks/equipment/tender_pickaxe"
 	quest.25339AD354B69F7A.title: "unlocks/reagents/fermented_spider_eye"
 	quest.2536E1F98777C73A.title: "unlocks/enchantments/first_strike"
-	quest.253FA8D6C09E2BD5.quest_desc: ["Spawned entities will make no noise."]
-	quest.253FA8D6C09E2BD5.quest_subtitle: "+ Silent"
+	quest.253FA8D6C09E2BD5.quest_desc: [
+		"The &bSpawn Range Spawner Rune&f changes the area around a spawner in which mobs can appear."
+		""
+		"More range means more room for your spawning setup."
+	]
+	quest.253FA8D6C09E2BD5.quest_subtitle: "Give your spawner some reach"
+	quest.253FA8D6C09E2BD5.title: "Spawn Range Spawner Rune"
 	quest.2542E07590089FAD.title: "unlocks/enchantments/vanilla_damage"
 	quest.2546E587B258691F.title: "unlocks/reagents/raw_azurite"
 	quest.2564593A0A5E287A.title: "unlocks/reagents/paltaeria_fragments"
@@ -2465,6 +2536,9 @@
 	quest.292875386D7B9981.quest_desc: ["&bUraninite &fis a ore you can get from &6mining&f. You can also get it from the &bMI Quarry&f. &bUraninite&f is a key part in powah and is used in alot of recipes and to power the &breactor."]
 	quest.292875386D7B9981.quest_subtitle: "Might want to put some gloves on"
 	quest.292875386D7B9981.title: "&aUraninite"
+	quest.2936EE38CEAB4337.quest_desc: ["&bWeapon&r and &bBow Tomes&r focus on combat-related enchantments and help keep your specialized enchantment collections organized."]
+	quest.2936EE38CEAB4337.quest_subtitle: "Target combat enchantments"
+	quest.2936EE38CEAB4337.title: "Tomes of Combat"
 	quest.293C22FC12999302.title: "Lunar Berries"
 	quest.294687276C7FEA05.title: "hidden/collect_vanilla/wither_skeleton_skull"
 	quest.294DAE3110CB6162.title: "milestones/unlock_complex_reagents"
@@ -2784,8 +2858,13 @@
 	quest.2D5A0399B7FFA5DB.quest_desc: ["The Cthulhu allows you to &6breathe&r &bunderwater&r."]
 	quest.2D5A0399B7FFA5DB.quest_subtitle: "Adopt an eldritch horror today"
 	quest.2D7A0E39E2FB8EF8.title: "unlocks/blocks/fusion_shrine"
-	quest.2D8FB52E37D7D96C.quest_desc: ["The spawner does not need a nearby player."]
-	quest.2D8FB52E37D7D96C.quest_subtitle: "+ Ignores Players"
+	quest.2D8FB52E37D7D96C.quest_desc: [
+		"The &bIgnore Light Spawner Rune&f removes light-level restrictions from the spawner."
+		""
+		"Let your mobs spawn without having to build a pitch-black room."
+	]
+	quest.2D8FB52E37D7D96C.quest_subtitle: "Light doesn't matter anymore"
+	quest.2D8FB52E37D7D96C.title: "Ignore Light Spawner Rune"
 	quest.2D9B4753070575FD.title: "unlocks/blocks/titration_barrel"
 	quest.2DAE44549D0FDD55.quest_desc: [
 		"&bSource Jars&r are used to store &5source&r."
@@ -3135,8 +3214,13 @@
 		"- Distance: &930 blocks&r."
 	]
 	quest.33CD5343AFBF853C.quest_subtitle: "Source Transfer"
-	quest.33CDCAD12E8F6828.quest_desc: ["The maximum number of ticks between spawns."]
-	quest.33CDCAD12E8F6828.quest_subtitle: "-10 Max Spawn Delay"
+	quest.33CDCAD12E8F6828.quest_desc: [
+		"The &bSummit Spawner Upgrade Rune&f further enhances a spawner's core statistics."
+		""
+		"For serious mob production, this is where things start getting ridiculous."
+	]
+	quest.33CDCAD12E8F6828.quest_subtitle: "Reach the summit"
+	quest.33CDCAD12E8F6828.title: "Summit Spawner Upgrade Rune"
 	quest.33CEED6232901CE5.quest_desc: ["&6Used&r with the &bVaccum Trap&r, this machine will &6suck up&r any &7mobs&r near it and put them in a &bSpawner Core&r, for that too work you must first &6craft&r a &bSpawner Core&r and &6insert&r into the a &bVaccum Trap&r."]
 	quest.33D0760B5FEF7C46.quest_desc: [
 		"  &oThis&r is the ultimate generator."
@@ -3267,8 +3351,13 @@
 	quest.35D797292DAB5C89.quest_desc: ["Obtain &bScriptura Vitae&r and begin generating &4Essentia Vitae&r."]
 	quest.35D797292DAB5C89.quest_subtitle: "Learn to turn life itself into energy."
 	quest.35D797292DAB5C89.title: "Blood Is Power"
-	quest.35F320164724B44C.quest_desc: ["The minimum number of ticks between spawns."]
-	quest.35F320164724B44C.quest_subtitle: "-10 Min Spawn Delay"
+	quest.35F320164724B44C.quest_desc: [
+		"The &bAscent Spawner Upgrade Rune&f is a stronger tier of spawner upgrade."
+		""
+		"Higher-tier runes provide more powerful improvements to your spawner."
+	]
+	quest.35F320164724B44C.quest_subtitle: "Take your spawner higher"
+	quest.35F320164724B44C.title: "Ascent Spawner Upgrade Rune"
 	quest.35F6CAD5BE56A32A.quest_desc: [
 		"  &bShadowpulse Soil&r behaves like the previous &bsoil&r tier, but &6grows crops faster still&r.  "
 		""
@@ -3532,6 +3621,25 @@
 	]
 	quest.3A3B3EACB9321FF3.quest_subtitle: "Some things can only be forged in hellfire."
 	quest.3A3B3EACB9321FF3.title: "The Hellfire Forge"
+	quest.3A41A00BEF324EF3.quest_desc: [
+		"Shelves are the foundation of an Apothic Enchanting setup. Different shelves provide different combinations of &2Eterna&f, &4Quanta&f, and &5Arcana&f, allowing you to customize your Enchanting Table."
+		""
+		"There are &e32&r valid bookshelf positions around an &bApothic Enchanting Table&f. "
+		""
+		"Shelves need an &7air block&r between them and the table to provide their stats."
+		""
+		"&2Eterna&r determines the available enchantment level and how powerful your enchantments can be."
+		""
+		"&4Quanta&f changes the enchantment pool, increasing the variety of enchantments available. However, too much Quanta can also make weaker enchantments more likely."
+		""
+		"&5Arcana&r influences the rarity and quality of the enchantments you can obtain."
+		""
+		"Each shelf has its own &2Eterna cap&f. Once that limit is reached, additional Eterna from that shelf is ignored."
+		""
+		"&aTip:&r Experiment with different shelf combinations to find the perfect balance of Eterna, Quanta, and Arcana for your enchanting setup."
+	]
+	quest.3A41A00BEF324EF3.quest_subtitle: "Build Your Enchanting Setup"
+	quest.3A41A00BEF324EF3.title: "Bookshelves"
 	quest.3A5A59C7AEA670C7.quest_desc: ["&bAviar's Circle&r is the first pentacle you will prepare. It is for &6summoning Foliot&r. &6Refer&r to the &bDictionary of Spirits&r for how to lay it out."]
 	quest.3A5A59C7AEA670C7.quest_subtitle: "First ritual"
 	quest.3A5A59C7AEA670C7.title: "Aviar's Circle"
@@ -3767,8 +3875,13 @@
 	quest.3F6730383CCC8BB0.quest_desc: ["Don’t be fooled… it may appear similar to the humble &bcauldron,&r but is flexible enough to work with &bBelts&r, &bFluid Pipes&r, and &bMechanical Mixers&r and &bPresses&r—&6enabling&r the automation of many recipes."]
 	quest.3F6AE77956C0C242.title: "unlocks/blocks/colored_spore_blossoms"
 	quest.3F7184426BDAB333.title: "mod_integration/the_bumblezone/lime_life"
-	quest.3F73EC8E087E2920.quest_desc: ["Spawned mobs will drop extra loot, increasing with level."]
-	quest.3F73EC8E087E2920.quest_subtitle: "+I Echoing"
+	quest.3F73EC8E087E2920.quest_desc: [
+		"The &bBurning Spawner Rune&f adds a fiery effect to mobs spawned by the spawner."
+		""
+		"Your mob farm just got considerably hotter."
+	]
+	quest.3F73EC8E087E2920.quest_subtitle: "Turn up the heat"
+	quest.3F73EC8E087E2920.title: "Burning Spawner Rune"
 	quest.3F7F938A54C50396.title: "triggers/hints/stratine_page0"
 	quest.3F8B9421E85C047D.title: "Water for Chemical Washing"
 	quest.3FB60EC2EE4D0435.quest_desc: [
@@ -3933,8 +4046,13 @@
 	quest.4207ADF2CB254C6B.title: "Painting Machine"
 	quest.421774BEF4C39A35.title: "hidden/status_effects/swiftness"
 	quest.4235B76A24C9803B.title: "hidden/collect_cookbooks/imbrifer_cookbook"
-	quest.423B29BD8DAC8C3D.quest_desc: ["The spawner will always spawn a baby entity when possible."]
-	quest.423B29BD8DAC8C3D.quest_subtitle: "+ Youthful"
+	quest.423B29BD8DAC8C3D.quest_desc: [
+		"The &bPinnacle Spawner Upgrade Rune&f is the highest tier of the standard spawner upgrade path."
+		""
+		"Maximum power. Maximum mobs. Maximum chaos."
+	]
+	quest.423B29BD8DAC8C3D.quest_subtitle: "The peak of spawner upgrades"
+	quest.423B29BD8DAC8C3D.title: "Pinnacle Spawner Upgrade Rune"
 	quest.424D78530B1D7833.title: "hidden/break_nightdew_vine"
 	quest.426E8A110A1A7AA0.title: "unlocks/trinkets/fanciful_gloves"
 	quest.427B70B9D14A1A51.title: "Movement Upgrades"
@@ -4109,6 +4227,15 @@
 		"The &6processing power&r to handle computations of a &cmuch higher level&r."
 	]
 	quest.44D8D30BCD48C4C9.title: "Elite Control Circuit"
+	quest.44E666039F7893C2.quest_desc: [
+		"&7The pinnacle of &cPowah&7 crystal technology."
+		""
+		"&7Nitro Crystals contain an immense amount of energy, pushing &ePowah&7 technology to its limits."
+		""
+		"&7Craft one to unlock the most powerful tier of &cenergy&7."
+	]
+	quest.44E666039F7893C2.quest_subtitle: "Power Unleashed"
+	quest.44E666039F7893C2.title: "&4Nitro Crystal"
 	quest.44E7864DB926EC46.title: "unlocks/reagents/stratine_fragments"
 	quest.44F1547CBC3ACB89.title: "unlocks/gemstone_lights/citrine"
 	quest.44F194EDF903B301.title: "hidden/status_effects/any_sleep"
@@ -4225,8 +4352,13 @@
 	quest.462944FD21A92AED.quest_desc: ["&4Infused Alloy&r is the first alloy you'll make, comprised of &cinfusing redstone&r into &6copper&r making an extra conductive metal that you'll use for &acircuitry&r. "]
 	quest.462944FD21A92AED.title: "Infused Alloy"
 	quest.462C71F79E98794D.title: "hidden/status_effects/lightweight"
-	quest.465ECB57BFCF5291.quest_desc: ["Spawned entities will have no AI."]
-	quest.465ECB57BFCF5291.quest_subtitle: "+ No AI"
+	quest.465ECB57BFCF5291.quest_desc: [
+		"The &bNo AI Spawner Rune&f disables artificial intelligence for mobs spawned by the spawner."
+		""
+		"Useful for efficient farms where mobs don't need to think."
+	]
+	quest.465ECB57BFCF5291.quest_subtitle: "Brains are optional"
+	quest.465ECB57BFCF5291.title: "No AI Spawner Rune"
 	quest.4670BD132DF4A70E.quest_desc: [
 		"This is the last CPU you'll ever need, it handles all the crafting jobs you throw at it."
 		""
@@ -4358,6 +4490,9 @@
 	quest.48212961977655E7.quest_subtitle: "You cant brush your teeth with it"
 	quest.48212961977655E7.title: "Dielectric Paste"
 	quest.482DC8C72E5A554E.title: "unlocks/malachite/malachite_tools"
+	quest.4841C5EDEF024D88.quest_desc: ["These tomes behave like enchanted books but only accept enchantments for their item category. Armor tomes cover helmets, chestplates, leggings and boots."]
+	quest.4841C5EDEF024D88.quest_subtitle: "Target your armor enchants"
+	quest.4841C5EDEF024D88.title: "Tomes of Armor"
 	quest.4846245A2E432955.title: "triggers/hints/paltaeria_page0"
 	quest.48605F890D3FE014.title: "unlocks/upgrades/upgrade_efficiency"
 	quest.4861D856CE0B5C93.quest_desc: [
@@ -4400,8 +4535,13 @@
 	]
 	quest.48E96D243486D38E.quest_subtitle: "From Here to There"
 	quest.48EBF0050F86CEC8.title: "unlocks/enchantments/razing_crafting"
-	quest.48F4ED8C915995DC.quest_desc: ["The spawner ignores light levels."]
-	quest.48F4ED8C915995DC.quest_subtitle: "+ Ignores Light"
+	quest.48F4ED8C915995DC.quest_desc: [
+		"The &bIgnore Conditions Spawner Rune&f makes the spawner ignore normal spawning conditions."
+		""
+		"When vanilla says no, this rune says yes."
+	]
+	quest.48F4ED8C915995DC.quest_subtitle: "Rules are meant to be broken"
+	quest.48F4ED8C915995DC.title: "Ignore Conditions Spawner Rune"
 	quest.490893BE626478EF.title: "hidden/collect_pigment/lime"
 	quest.490DAA80628EDA26.title: "milestones/reveal_blood_orchid_petals"
 	quest.4914DA1D409FF641.title: "unlocks/reagents/moonstone_powder"
@@ -4471,8 +4611,13 @@
 	quest.4A1114FF93286E91.title: "unlocks/food/lucky_roll"
 	quest.4A178A26F111B91E.title: "unlocks/blocks/midnight_aberration"
 	quest.4A25E60DD359F959.quest_subtitle: "Catch &d134&r unique fishes."
-	quest.4A476B25B5A3E88D.quest_desc: ["The radius (in blocks) that mobs can spawn in."]
-	quest.4A476B25B5A3E88D.quest_subtitle: "+2 Spawn Range"
+	quest.4A476B25B5A3E88D.quest_desc: [
+		"The &bYouthful Spawner Rune&f modifies a spawner so that spawned mobs remain youthful."
+		""
+		"Useful when you need a reliable source of baby mobs."
+	]
+	quest.4A476B25B5A3E88D.quest_subtitle: "Keep your mobs young"
+	quest.4A476B25B5A3E88D.title: "Youthful Spawner Rune"
 	quest.4A4F74D82183B266.title: "hidden/entity_interact/lizard"
 	quest.4A5466E364B85AEF.quest_desc: [
 		"  Darker and cooler than Iron... Plus about 1000 times stronger. It's time to make some &bSteel&r! Use that coal coke you produced earlier and crush it down to a pile of dust. Then, combine that with iron dust to get your &bUncooked Steel Dust&r. Remember, &6using the &bMixer&r will increase your output.&r"
@@ -4703,6 +4848,15 @@
 	]
 	quest.4E8963E1C18ADBAB.quest_subtitle: "Warning: This is not for eggs"
 	quest.4E91750FEC86B624.title: "unlocks/items/celestial_pocketwatch"
+	quest.4E95AAAA75D6580D.quest_desc: [
+		"&7Harness the power of blazing energy."
+		""
+		"&7Blazing Crystals are an important step toward more advanced &ePowah&7 machines and components."
+		""
+		"&7Craft one to begin your journey into stronger forms of &cenergy&7."
+	]
+	quest.4E95AAAA75D6580D.quest_subtitle: "The Power of Fire"
+	quest.4E95AAAA75D6580D.title: "&6Blazing Crystal"
 	quest.4E97BABA7D6B07FE.quest_desc: [
 		"Passive crop \\& tree farm."
 		""
@@ -4844,8 +4998,13 @@
 		"Place them ontop of each other directly under the &bControl Rod Assemblies&r."
 	]
 	quest.4FBA0ECAC8AEBCD8.title: "Nuclear Fission"
-	quest.4FDD66D88C90C951.quest_desc: ["To obtain the &bSpawner &fyou must &6break &fa &bvanilla spawner &fwith&a Silk Touch&f. Every &bSpawner&f will have the same stats and can be modified to be better."]
-	quest.4FDD66D88C90C951.title: "&cApothic Spawners"
+	quest.4FDD66D88C90C951.quest_desc: [
+		"A &bSpawner&f is the foundation of automated mob spawning."
+		""
+		"Obtain a spawner to begin modifying how it behaves."
+	]
+	quest.4FDD66D88C90C951.quest_subtitle: "The beginning of your monster factory"
+	quest.4FDD66D88C90C951.title: "Spawner"
 	quest.4FDF62C7C5CE48D2.title: "hidden/entity_interact/preservation_turret"
 	quest.4FE20198B455DFF5.title: "hidden/status_effects/any_sleep"
 	quest.4FF8642DA112007C.title: "hidden/status_effects/advanced_sleep"
@@ -4975,6 +5134,9 @@
 		"Right click which crouching to change build mode."
 	]
 	quest.51B59A987F916C7A.quest_subtitle: "A portable storage solution!"
+	quest.51E14807C39F4111.quest_desc: ["&bThe Improved Tome of Scrapping&r is the upgraded version for recovering enchantments more effectively when dismantling enchanted gear."]
+	quest.51E14807C39F4111.quest_subtitle: "Recover More"
+	quest.51E14807C39F4111.title: "Superior Scrapping"
 	quest.51E386BC7692D06C.quest_desc: ["To &6establish&r a &6Mercurial Logistics network&r, these &bWires&r must be used to &6link&r between in- and outputs. &bConnection Nodes&r allow for multiple wires to converge to one point, if needed."]
 	quest.51E386BC7692D06C.title: "Mercurial Connections"
 	quest.51E7DAE4251C75EA.title: "unlocks/food/tarts"
@@ -5222,6 +5384,16 @@
 	quest.5570CFF754032FDB.quest_subtitle: "Can be found in a colorful tower in the &3Glaciers&r."
 	quest.5570CFF754032FDB.title: "&9Snow Queen"
 	quest.557712EEE274540E.title: "hidden/collect_pigment/brown"
+	quest.557B8123056FBF8C.quest_desc: [
+		"&bThe Enchantment Library&r provides a convenient way to store and manage enchantments."
+		""
+		"Enchanted books can be deposited into the &bLibrary&r and later retrieved when needed, allowing you to build up a collection of useful enchantments without filling your storage with countless books."
+		""
+		"&bThe Library&r is especially useful for keeping &6valuable&r or &drare&r enchantments until you have the perfect piece of gear to apply them to."
+		""
+		"Tip: Pair the &bLibrary&r with the &eTome of Extraction&r to safely transfer enchantments from your existing gear into books for storage."
+	]
+	quest.557B8123056FBF8C.quest_subtitle: "Store Your Enchantments"
 	quest.55975A100465B9B5.title: "triggers/hints/preservation_ruins_page0"
 	quest.55A5C20E17BD3038.quest_desc: [
 		"The Tool of All Tools. "
@@ -5380,6 +5552,7 @@
 	quest.59552E5C69FBC99E.title: "hidden/collect_stratine_gem"
 	quest.596057832C440706.title: "Dielectric"
 	quest.599ED4665AC4455D.title: "triggers/hints/quitoxic_reeds_page0"
+	quest.59B0B5B66DA2BFE4.quest_subtitle: "Catch ALL &z131&r fishes."
 	quest.59BB6A488F452783.title: "unlocks/redstone/item_detector"
 	quest.59CF110755612E1F.title: "milestones/reveal_azurite"
 	quest.59E9687611B389CB.title: "triggers/hints/fading_page0"
@@ -5497,6 +5670,20 @@
 	]
 	quest.5C8D7BD3DA61109F.quest_subtitle: "Resources Go BRRR!"
 	quest.5C8D7BD3DA61109F.title: "Electric Quarry"
+	quest.5C8DA6A4F83731BC.quest_desc: [
+		"The ultimate tool for salvaging enchantments."
+		""
+		"Use a &bTome of Extraction&r on an enchanted item in an &9Anvil&r to transfer all of its enchantments onto an &eEnchanted Book&r."
+		""
+		"Unlike the &bTome of Scrapping&r, the original item is preserved."
+		""
+		"&bTome of Scrapping&r: Extracts half of the enchantments and destroys the item."
+		"&bTome of Superior Scrapping&r: Extracts all enchantments but destroys the item."
+		"&bTome of Extraction&r: Extracts all enchantments and preserves the item."
+		""
+		"Perfect for moving valuable enchantments onto better gear without losing the original item."
+	]
+	quest.5C8DA6A4F83731BC.quest_subtitle: "Extract Without Sacrifice"
 	quest.5C98D9127F4CEB74.quest_desc: [
 		"Several types of &bSalt&r exist, each used to create &6different resources&r in the end."
 		""
@@ -6336,6 +6523,9 @@
 	]
 	quest.6A6C19E36893381B.title: "Formulaic Assemblicator"
 	quest.6A7718AD2FDFBFAD.title: "unlocks/food/bodacious_berry_bar"
+	quest.6A9D0A5F16C94F3F.quest_desc: ["The Enchanting Table of the Raven allows the core enchanting stats to be customized manually. Use it when you want direct control over your enchanting setup."]
+	quest.6A9D0A5F16C94F3F.quest_subtitle: "Manual stat control"
+	quest.6A9D0A5F16C94F3F.title: "The Raven Knows"
 	quest.6A9DAB624949191E.quest_desc: ["The &bElite Enriching Factory&r can process up to &a7&r recipes at the same time, containing the same \"&eAuto-Sort&r\" function."]
 	quest.6A9DAB624949191E.title: "Elite Enriching Factory"
 	quest.6AB303BEA478C0F3.quest_desc: ["&6Programmable&r Rotation Control!"]
@@ -6542,7 +6732,13 @@
 		"  &6You need to create its dust&r from four ingredients: &bIron&r, &bChromium&r, &bManganese&r, and &bNickel&r. Then, after you heat it up to extreme temperatures in your EBF, you need to use the &bVacuum Freezer&r to cool down the red hot ingot to be usable. "
 	]
 	quest.6EBFFFB567687A1E.title: "Stainless Steel"
-	quest.6EC57118E3771D72.quest_subtitle: "-5% Initial Health"
+	quest.6EC57118E3771D72.quest_desc: [
+		"The &bIgnore Players Spawner Rune&f changes player-related spawning conditions."
+		""
+		"Use it when you want your spawner to care less about players being nearby."
+	]
+	quest.6EC57118E3771D72.quest_subtitle: "Who's that player?"
+	quest.6EC57118E3771D72.title: "Ignore Players Spawner Rune"
 	quest.6EDBFB47B2F8E6BA.quest_desc: ["The most powerful controlled spirit of all, &bMarid&r offer many benefits to master summoners."]
 	quest.6EDBFB47B2F8E6BA.quest_subtitle: "Masterful"
 	quest.6EDFD510DC096B12.quest_desc: [
@@ -6761,7 +6957,7 @@
 	quest.72598DB6FC138E79.title: "unlocks/enchantments/vanilla_projectile"
 	quest.7277A0413086D71A.quest_desc: ["&6Right-click&f a &bFluix Block &fwith an &bEntro Seed&f to turn it into a &bEntroized Fluix Budding&f."]
 	quest.7281A850FDD2EA35.title: "hidden/solve_every_preservation_ruin"
-	quest.7283C1B759AF0F5F.quest_subtitle: "Catch all &6140&r fishes."
+	quest.7283C1B759AF0F5F.quest_subtitle: "Catch &a500&r total fishes and &d10&r unique legendary fishes."
 	quest.72845761EA8EA5BC.title: "unlocks/gemstone_lights/amethyst"
 	quest.728B2D5E65E7736A.title: "hidden/collect_vanilla/echo_shard"
 	quest.7290F8670BBBF12E.quest_desc: ["The &bME Active Formation Plane&f works like the regular &bFormation Plane&r, except it pulls the blocks/items from the system without you having to push to it, pretty handy, isn't it?"]
@@ -7117,6 +7313,15 @@
 	quest.79288A7251986136.quest_subtitle: "Contraptions on Minecraft Carts? Yes!"
 	quest.792D502E1321B0FE.title: "triggers/hints/nightdew_sprout_page0"
 	quest.7931987BD172464D.title: "Fennel"
+	quest.7934FE9F747233C8.quest_desc: [
+		"&7Harness the power of &aSpirited Energy&7."
+		""
+		"&7Spirited Crystals contain a potent energy drawn from the forces of nature, allowing for even more advanced &ePowah&7 technology."
+		""
+		"&7Craft one to take another step toward &2greater power&7."
+	]
+	quest.7934FE9F747233C8.quest_subtitle: "Essence of Nature"
+	quest.7934FE9F747233C8.title: "&aSpirited Crystal"
 	quest.7938CF0A65011F0B.quest_desc: ["Vacuum tube, thermionic valve, &bElectron Tube&r—by any name it’s a cool looking item and a key ingredient for Create components that have “smarts”."]
 	quest.793EACF284F5CFF6.title: "unlocks/reagents/nightdew_sprout"
 	quest.7946DBB127444E4D.title: "Cucumber"
@@ -7161,6 +7366,13 @@
 	quest.7A447129529A7681.title: "unlocks/blocks/modular_explosives"
 	quest.7A5466B9F5C79793.quest_desc: ["&bFoliot&r are the first type of spirit you will work with, and the least dangerous."]
 	quest.7A5466B9F5C79793.quest_subtitle: "Learning"
+	quest.7A699D1A92A84C51.quest_desc: [
+		"&8Pickaxes&r, &3Fishing&r and &9Other Tomes&r cover specialized item categories. "
+		""
+		"&9The Other Tome&r handles enchantments that do not fit the other categories."
+	]
+	quest.7A699D1A92A84C51.quest_subtitle: "Specialized categories"
+	quest.7A699D1A92A84C51.title: "Tomes of Utility"
 	quest.7A6C1605F32F695F.quest_desc: [
 		"This oven makes it possible to &6calcinate&r a variety of materials into &bAlchemical Salt&r."
 		""
@@ -7236,8 +7448,13 @@
 	]
 	quest.7B86C9C90997B3E3.quest_subtitle: "&oA little hexing?"
 	quest.7B86C9C90997B3E3.title: "&5Magic?!"
-	quest.7B88129FF5C9145F.quest_desc: ["How far a player can be before spawning stops."]
-	quest.7B88129FF5C9145F.quest_subtitle: "+4 Activation Range"
+	quest.7B88129FF5C9145F.quest_desc: [
+		"The &bRedstone Control Spawner Rune&f allows redstone to control the spawner."
+		""
+		"Perfect for switches, timers, and automated farm control."
+	]
+	quest.7B88129FF5C9145F.quest_subtitle: "Put the spawner on a leash"
+	quest.7B88129FF5C9145F.title: "Redstone Control Spawner Rune"
 	quest.7B95981B60CD11BE.quest_desc: [
 		"This sword will add &5Touch glyph&r at the start, so you don't need to include &5Form glyph&r in the spell"
 		""
@@ -7287,6 +7504,9 @@
 	]
 	quest.7C0FA555C5FE00D1.quest_subtitle: "Beep Boop"
 	quest.7C0FA555C5FE00D1.title: "Robotic Arms"
+	quest.7C11028E6B1F402B.quest_desc: ["&bArmor Tomes&r restrict their stored enchantments to the relevant armor category, making focused gear progression much easier."]
+	quest.7C11028E6B1F402B.quest_subtitle: "Target armor enchantments"
+	quest.7C11028E6B1F402B.title: "Tomes of Armor"
 	quest.7C201074DDBAE831.quest_desc: ["I guess that entire biome could disappear into your &bME Storage..."]
 	quest.7C201074DDBAE831.title: "256k Storage Component"
 	quest.7C21D7C40BD9A61E.title: "hidden/collect_pigment/red"
@@ -7419,6 +7639,21 @@
 	]
 	quest.7F10CB765C7796E1.title: "unlocks/blocks/blood_orchid"
 	quest.7F24E9392D118D31.title: "unlocks/colored_lamps/pink_lamp"
+	quest.7F3584DB86B09C4D.quest_desc: [
+		"Your enchanting setup isn't limited to &bShelves&f."
+		""
+		"Certain blocks can provide additional bonuses when placed around your &bApothic Enchanting Table&f."
+		""
+		"&6Candles&f increase the &2Eterna&f of your enchanting setup, helping you reach higher enchantment levels."
+		""
+		"&6Mob Heads and Skulls&f provide different bonuses depending on the type used. Some can improve your &4Quanta&f, &2Arcana&f, or other enchanting stats."
+		""
+		"These effects work alongside your shelves, allowing you to fine-tune your enchanting setup without replacing valuable shelf slots."
+		""
+		"&aTip:&r Experiment with different candles and mob heads to squeeze extra stats out of your enchanting setup.&f"
+	]
+	quest.7F3584DB86B09C4D.quest_subtitle: "Enhance Your Enchanting Setup"
+	quest.7F3584DB86B09C4D.title: "Enchanting Catalysts"
 	quest.7F3A28754CD6AD41.quest_desc: [
 		"  &6Transforms&b:"
 		""
@@ -7494,8 +7729,13 @@
 		"- From &d&lMatter Tanks&r to other &bmachines&r that need it."
 	]
 	quest.7FCA9352AF05C235.quest_subtitle: "Matter pipes will allow you to connect &aReplication&r machines."
-	quest.7FD0A63CDC267251.quest_desc: ["The number of entities spawned at once."]
-	quest.7FD0A63CDC267251.quest_subtitle: "+1 Spawn Count"
+	quest.7FD0A63CDC267251.quest_desc: [
+		"The &bFrontier Spawner Upgrade Rune&f improves the basic spawning statistics of a spawner."
+		""
+		"Use it to push your spawner beyond its vanilla limits."
+	]
+	quest.7FD0A63CDC267251.quest_subtitle: "The first tier of spawner upgrades"
+	quest.7FD0A63CDC267251.title: "Frontier Spawner Upgrade Rune"
 	quest.7FD2368444636E93.quest_desc: [
 		"The Blacksmith can &6upgrade&r other &boccult familiars&r."
 		""
@@ -7513,6 +7753,93 @@
 	quest.7FEBDFAE021B3C56.quest_desc: ["Useful for &oreally&r big crafts."]
 	quest.7FEBDFAE021B3C56.title: "Mega Crafting Storage"
 	quest.7FF0A973396E9236.title: "hidden/status_effects/fatal_slumber"
+	quest.83E3E680A82352AE.quest_desc: ["The endgame library can store vastly more powerful enchanted books. Build it once your enchanting setup can meet the highest requirements."]
+	quest.83E3E680A82352AE.quest_subtitle: "The final library"
+	quest.83E3E680A82352AE.title: "Ender Library"
+	quest.85A619B9D50AD2E1.quest_desc: ["The strongest Sculkshelf variants demand the Deep Dark's rarest materials. &9Soul-Touched Sculkshelves&r are essential for the final enchanting setups."]
+	quest.85A619B9D50AD2E1.quest_subtitle: "The deepest shelf"
+	quest.85A619B9D50AD2E1.title: "Soul-Touched Sculkshelves"
+	quest.88A62C4CD6184F4C.quest_desc: ["Collect the Deep Dark and End shelves that push enchanting into the late game, from Dormant Deepshelves through the specialized Deepshelf and Sculkshelf variants and finally the End shelves."]
+	quest.88A62C4CD6184F4C.quest_subtitle: "Reach the highest tiers"
+	quest.88A62C4CD6184F4C.title: "Deep & End Shelves"
+	quest.8C1F828B31B54F68.quest_desc: ["Weapon and Bow Tomes restrict enchanting to the relevant combat enchantments, making it easier to build focused gear."]
+	quest.8C1F828B31B54F68.quest_subtitle: "Target your combat enchants"
+	quest.8C1F828B31B54F68.title: "Tomes of Combat"
+	quest.9906694CDC25DA55.quest_desc: ["Take the Seashelf path even further with &bHeart Seashelves&r. These provide a powerful boost for Arcana-focused enchanting."]
+	quest.9906694CDC25DA55.quest_subtitle: "Follow your heart"
+	quest.9906694CDC25DA55.title: "Heart Seashelves"
+	quest.9BFCAE52421B47DE.quest_desc: ["Upgrade to the Library of Alexandria for a much larger enchantment storage capacity and easier searching, storing and extracting."]
+	quest.9BFCAE52421B47DE.quest_subtitle: "Ultimate storage"
+	quest.9BFCAE52421B47DE.title: "Library of Alexandria"
+	quest.9D8487E98AEEFDA4.quest_desc: ["Bring some Nether power into your enchanting setup. &4Blazing Hellshelves&r push the Hellshelf path further and provide stronger enchanting stats."]
+	quest.9D8487E98AEEFDA4.quest_subtitle: "Burn brighter"
+	quest.9D8487E98AEEFDA4.title: "Blazing Hellshelves"
+	quest.9E9DC6728D304D10.quest_desc: ["The Enchantment Library stores enchantments as level-one-equivalent points, letting you build a reusable collection instead of keeping every enchanted book."]
+	quest.9E9DC6728D304D10.quest_subtitle: "Store your enchantments"
+	quest.9E9DC6728D304D10.title: "The Enchantment Library"
+	quest.A1B2C3D4E5F60101.quest_desc: ["Collect the core shelves used to build your enchanting setup, from the Basic Bookshelf through Hellshelves, Seashelves, Infused variants, and their advanced Hell and Sea upgrades."]
+	quest.A1B2C3D4E5F60101.quest_subtitle: "Master the first enchanting shelves"
+	quest.A1B2C3D4E5F60101.title: "Core Shelf Collection"
+	quest.A1B2C3D4E5F60202.quest_desc: ["Collect the Deep-Dark and End shelves that carry enchanting progression from the Deep tier into the final End tier."]
+	quest.A1B2C3D4E5F60202.quest_subtitle: "Descend into the final tiers"
+	quest.A1B2C3D4E5F60202.title: "Deep & End Shelves"
+	quest.A1B2C3D4E5F60303.quest_desc: ["Collect the specialized shelves for tuning your enchanting stats and controlling what the table reveals, including Sight, Filtration, Treasure, Stability, and alternate stat shelves."]
+	quest.A1B2C3D4E5F60303.quest_subtitle: "Fine-tune your enchanting setup"
+	quest.A1B2C3D4E5F60303.title: "Specialized Shelves"
+	quest.AA46DA6273BC417E.quest_desc: ["The upgraded scrapping tome pulls all enchantments from the item, but still destroys the original item."]
+	quest.AA46DA6273BC417E.quest_subtitle: "Recover everything"
+	quest.AA46DA6273BC417E.title: "Superior Scrapping"
+	quest.AEC0FF7742D55E2A.quest_desc: ["Awaken the &9Dormant Deepshelves&r to create &9Deepshelves&r. This raises the ceiling of your enchanting setup considerably."]
+	quest.AEC0FF7742D55E2A.quest_subtitle: "Wake the shelves"
+	quest.AEC0FF7742D55E2A.title: "Deepshelves"
+	quest.B35364D2CDE34D79.quest_desc: ["The Library of Alexandria is the upgraded library with a much larger storage capacity. Search, store and extract enchantments without filling your storage system with enchanted books."]
+	quest.B35364D2CDE34D79.quest_subtitle: "Ultimate storage"
+	quest.B35364D2CDE34D79.title: "Library of Alexandria"
+	quest.B429990E9F924B2B.quest_desc: ["The Tome of Scrapping removes enchantments from an item, but the process is lossy and the original item is destroyed."]
+	quest.B429990E9F924B2B.quest_subtitle: "Recover what you can"
+	quest.B429990E9F924B2B.title: "Tome of Scrapping"
+	quest.B5AAA6C5E2E6480F.quest_desc: ["Collect the specialized shelves that modify or focus enchanting behavior, including Sight, Aquatic Filtration, Arcane Treasures, Stability, and alternative stat shelves."]
+	quest.B5AAA6C5E2E6480F.quest_subtitle: "Tune your enchanting setup"
+	quest.B5AAA6C5E2E6480F.title: "Specialized Shelves"
+	quest.B7985847833E9B2B.quest_desc: ["Store your enchanted books in the &5Enchantment Library&r and build up a reusable collection of enchantments instead of constantly gambling at the table."]
+	quest.B7985847833E9B2B.quest_subtitle: "Never lose an enchantment again"
+	quest.B7985847833E9B2B.title: "Enchantment Library"
+	quest.C48C52C5D7F50AD0.quest_desc: ["With enough enchanting power, &4Hellshelves&r can be &dInfused&r into &4Infused Hellshelves&r. These are required for the next stage of progression."]
+	quest.C48C52C5D7F50AD0.quest_subtitle: "Power through infusion"
+	quest.C48C52C5D7F50AD0.title: "Infused Hellshelves"
+	quest.C718F7F4300A189B.quest_desc: ["&6Sightshelves&r improve the enchanting table's ability to offer useful enchantments. They are an important part of a specialized enchanting setup."]
+	quest.C718F7F4300A189B.quest_subtitle: "Better enchanting rolls"
+	quest.C718F7F4300A189B.title: "Sightshelves"
+	quest.CC1AF2381D604D0D.quest_desc: ["Craft the Apothic Enchanting Table and step into a redesigned enchanting system. The table uses three primary stats: Eterna, Quanta and Arcana, and can reach up to level 100."]
+	quest.CC1AF2381D604D0D.quest_subtitle: "Begin the overhaul"
+	quest.CC1AF2381D604D0D.title: "The Secrets of Enchanting"
+	quest.CEC7743FCDAA58F8.quest_desc: ["Infuse your Deepshelves with the power of the &9Echo Shard&r to create &9Echoing Deepshelves&r and dramatically increase Arcana."]
+	quest.CEC7743FCDAA58F8.quest_subtitle: "Echoes from below"
+	quest.CEC7743FCDAA58F8.title: "Echoing Deepshelves"
+	quest.D3F42AB6E92F4F2B.quest_desc: ["The Tome of Extraction retrieves all enchantments while leaving the original item intact. This is the safest way to strip valuable enchantments."]
+	quest.D3F42AB6E92F4F2B.quest_subtitle: "Perfect extraction"
+	quest.D3F42AB6E92F4F2B.title: "Tome of Extraction"
+	quest.DC60C99CC44B0A51.quest_desc: ["Combine End materials with an &dEndshelf&r to create the &dPearlescent Endshelf&r, pushing your enchanting setup even further."]
+	quest.DC60C99CC44B0A51.quest_subtitle: "Pearlescent perfection"
+	quest.DC60C99CC44B0A51.title: "Pearlescent Endshelf"
+	quest.E32566974C65FFB9.quest_desc: ["Upgrade your &6Sightshelves&r into their stronger form for even more control over your enchanting rolls."]
+	quest.E32566974C65FFB9.quest_subtitle: "More control, more power"
+	quest.E32566974C65FFB9.title: "Greater Sightshelves"
+	quest.E4A33D19B6E660FC.quest_desc: ["&4Hellshelves&r are your first step into stronger enchanting. They provide &cQuanta&r and &aEterna&r, letting you push the enchanting table beyond vanilla limits."]
+	quest.E4A33D19B6E660FC.quest_subtitle: "Welcome to the Nether path"
+	quest.E4A33D19B6E660FC.title: "Hellshelves"
+	quest.E9C84862D3889B37.quest_desc: ["Start your journey into &5Apothic Enchanting&r. The upgraded enchanting system expands vanilla enchanting with new shelves, three enchanting stats, infusion, and powerful tools."]
+	quest.E9C84862D3889B37.quest_subtitle: "Enchanting is about to get serious"
+	quest.E9C84862D3889B37.title: "Enchanting Reforged"
+	quest.E9DB0716190C5F56.quest_desc: ["Infusing &bSeashelves&r unlocks a stronger version with improved enchanting stats. This is the sea-side route into advanced enchanting."]
+	quest.E9DB0716190C5F56.quest_subtitle: "Power through infusion"
+	quest.E9DB0716190C5F56.title: "Infused Seashelves"
+	quest.EF7059E8DA084305.quest_desc: ["The Tome of Extraction removes enchantments while preserving the original item, making it the preferred option when you want to keep valuable gear intact."]
+	quest.EF7059E8DA084305.quest_subtitle: "Perfect extraction"
+	quest.EF7059E8DA084305.title: "Tome of Extraction"
+	quest.F2F097789CBF49CE.quest_desc: ["The Enchantment Library stores enchanted books as points, measured in level-one equivalents. Insert higher-level enchantments once to unlock those levels for extraction later."]
+	quest.F2F097789CBF49CE.quest_subtitle: "Store your enchantments"
+	quest.F2F097789CBF49CE.title: "The Enchantment Library"
 	reward_table.0DF6EBF90213BF49.title: "Immersive Aircraft"
 	reward_table.1CD342FEDCDF6159.title: "Mekanism T3"
 	reward_table.1D192DA13A51FB61.title: "JDT 2"
@@ -7531,8 +7858,10 @@
 	task.0020C1E77C424CB0.title: "Look at Spiritfire"
 	task.00CA3CB10A03DF62.title: "PNC 100%"
 	task.013281B2076D21ED.title: "Helpful Tips \\& Tricks"
+	task.0223DC40BCB8FF6D.title: "Obtain a Pinnacle Spawner Upgrade Rune"
 	task.02D1703C79A7F3EF.title: "Any #c:logs/archwood"
 	task.04FBCF96BB8F176A.title: "Vein be gone!"
+	task.06D736F223A44B10.title: "Obtain an Ascent Spawner Upgrade Rune"
 	task.0B2C0AF7B7B4B841.title: "Thermodynamic Conductors"
 	task.0BA54BE324AE1978.title: "How Delightful!"
 	task.0D974A2537B460E2.title: "Upgrades AAAAAAAAAAAAHHHHHHHHH"
@@ -7545,6 +7874,9 @@
 	task.1531CE8CE061AFC3.title: "Any #handcrafted:chests"
 	task.15E07774D19A4B1A.title: "Exploration? Machines? Magic?"
 	task.160306663D203B48.title: "Guilds and Claims"
+	task.1605ACA907712B09.title: "Skulls and Candles"
+	task.170444FFD4D57753.title: "Obtain a Youthful Spawner Rune"
+	task.175253B942A04EEB.title: "Apothic Enchanting Table"
 	task.17EAF020DF15D376.title: "Miscellaneous Origins"
 	task.1A36A5D48C75BE0D.title: "Any #minecraft:candles"
 	task.1ACF33BDD92D15DA.title: "KILL the Pope"
@@ -7554,16 +7886,22 @@
 	task.1F5A29E07CD58234.title: "Hats"
 	task.203841AC95941F00.title: "Welcome to Create!"
 	task.2103677DA5F292DE.title: "Summon a Dragon Familiar"
+	task.2144D7AA3F8732C4.title: "Obtain an Ignore Conditions Spawner Rune"
 	task.21895164503139CA.title: "Water for Condensentrator"
 	task.22E777BE43621489.title: "Any #handcrafted:chests"
+	task.247993FCB25C4979.title: "Chestplate Tome"
+	task.24A76A503F53AA7B.title: "Bookshelves"
+	task.24EFDA7774F27E3E.title: "Obtain a Silent Spawner Rune"
 	task.253E536043DBF3EA.title: "Quantum Computer Storage"
 	task.256831387C82AA19.title: "Iron's Spells 'n Spellbooks"
 	task.268DC896793A48C7.title: "Forage Time!"
+	task.276086CF0F30A677.title: "Obtain an Echoing Spawner Rune"
 	task.2772306CF31750FD.title: "Any #minecraft:coals"
 	task.2836DAFB8BAF8D7B.title: "Summon a Headless Ratman Familiar"
 	task.296A456AF1F00270.title: "Summon an Otherstone Trader"
 	task.2A1C946A44A39D6F.title: "Make Primogel Soil"
 	task.2A344C35DC371D0C.title: "Tier Installers"
+	task.2C366BDF75DC4677.title: "Boots Tome"
 	task.2DCC056348E9BB4B.title: "Summon a Demonic Wife"
 	task.2E011A6CEC3FE9F6.title: "Pressurized Tubes"
 	task.2FA7F24545E1C37E.title: "Start Here"
@@ -7573,12 +7911,14 @@
 	task.32CCFEEA0A624C11.title: "Make Blazebloom Soil"
 	task.336881A8652FA9A0.title: "Summon a Foliot Crusher (there's no advancement, sorry!)"
 	task.339C2D373170BE2F.title: "Be a Fashion Icon!"
+	task.33A9CF7021C14EFE.title: "Pickaxe Tome"
 	task.33DEB184944AC7D0.title: "Water"
 	task.3404171FB712C24D.title: "Tier 5 Ores, 1:5"
 	task.341F7CB191A0790A.title: "Universal Cables"
 	task.3716986BD12061AA.title: "Any #c:raw_materials/gold"
 	task.37DECFA02129E0B8.title: "Summon a Deer Familiar"
 	task.38084EDBEB9647AD.title: "Sentient Evolution"
+	task.39BEE58652B540A6.title: "Tome of Scrapping"
 	task.3BC634992A1E9BAD.title: "Observe: &2Any Entro Budding&r"
 	task.3C8E0C3D705AB65F.title: "Any #c:raw_materials/iron"
 	task.3ED23CC07C23FD76.title: "&bWelcome To Occultism"
@@ -7591,7 +7931,9 @@
 	task.43CE51B3EC9945C1.title: "&aRitual of Fallen Trees"
 	task.443D8F4CD01CC0C9.title: "Summon a Parrot \"Familiar\""
 	task.4552085BF5330776.title: "OK, Let Me Cook"
+	task.45BD3F9D0F2542F6.title: "Obtain a Summit Spawner Upgrade Rune"
 	task.46DBAE66F97438E6.title: "Runes"
+	task.47F4FCBBFF748733.title: "Obtain an Initial Health Spawner Rune"
 	task.480E9CFA1CEE6479.title: "Spiritus Gems"
 	task.4CE3EEAAF41AE050.title: "Summon a Foliot Janitor"
 	task.4D5812F798FB8C8C.title: "&dTheurgy &9100%"
@@ -7599,6 +7941,7 @@
 	task.4E775BAB4EB29C69.title: "Any #c:crops/garlic"
 	task.4F4699F9117BC270.title: "Pre-Programmed Drones"
 	task.4F7787C0557CF5CC.title: "Apo The Carist"
+	task.4FE35A4D3D394847.title: "Tome of Superior Scrapping"
 	task.51B280AD931A2CF4.title: "Demonite"
 	task.52C834FDFA57A474.title: "Summon a Beholder Familiar"
 	task.5327B3CEDA60D4BE.title: "Any #c:raw_materials/silver"
@@ -7606,10 +7949,14 @@
 	task.5397C5FA8788480F.title: "Any #c:seeds/rice"
 	task.54E5D81FEE18AF83.title: "Pyromancer"
 	task.570D439C4AC9F64C.title: "World Tiers"
+	task.57F02AA9BFBA7624.title: "Enchanting Tables"
 	task.58AC1E8BBD7EAB5B.title: "Summon a Mummy Familiar"
+	task.597ECA1E95F8C178.title: "Tomes of Armor"
+	task.5B790B22E115CEB3.title: "Obtain a Frontier Spawner Upgrade Rune"
 	task.5CB700830F80DFD8.title: "Water for Chemical Washing"
 	task.5D5634634E3879E5.title: "Summon a Bat Familiar"
 	task.5DAF1EE0903D876A.title: "Machines?"
+	task.5F8B536CAF189745.title: "Obtain a No AI Spawner Rune"
 	task.601F7C69458E7589.title: "Welcome to Theurgy"
 	task.61ADF1E6345BC7E1.title: "Any #c:raw_materials/copper"
 	task.63DAD8D3277DA248.title: "Evolving Manufacturing Index"
@@ -7621,9 +7968,12 @@
 	task.66BF2FED6B091A68.title: "Exploration!"
 	task.691E6AA922761E29.title: "Hooks"
 	task.6C6C366D034AF5C7.title: "Summon an Otherworld Sapling Trader"
+	task.6F144EF786A94E4E.title: "Obtain a Spawner"
+	task.6FB11D0A0557436E.title: "Leggings Tome"
 	task.708EE345AEBB270B.title: "Make ShadowPulse Soil"
 	task.7206B162C5B4E0B8.title: "Ores at Tier 1"
 	task.7376AAE3B45AD4B9.title: "Bobbers"
+	task.73A3951918C37F02.title: "Obtain an Ignore Players Spawner Rune"
 	task.73B852C41DE1F864.title: "Any #c:crops/rice"
 	task.73DFBACC98E080BC.title: "Any Knife"
 	task.741F21CA04FBCB90.title: "Logistical Transporters"
@@ -7632,9 +7982,89 @@
 	task.7537E40C4FAB6D5C.title: "Welcome To Powah"
 	task.753B3D09A302E973.title: "Raw Spiritus Crystals"
 	task.7617B5CAABCD437A.title: "Bloodstones"
+	task.77E3B3D6695EEA80.title: "Obtain a Spawn Range Spawner Rune"
+	task.79D7E3E9EA637474.title: "Obtain an Ignore Light Spawner Rune"
 	task.7A0371393E813129.title: "Observe: &2Any Certus Budding&r"
 	task.7AB3BAEAA2E50F06.title: "Archevoker"
 	task.7C14A87514F74DF9.title: "Make VoidShimmer Soil"
+	task.7CE607F3982231BE.title: "Obtain an Infused Spawner Rune"
+	task.7D142E8CAEC8F089.title: "Obtain a Burning Spawner Rune"
 	task.7DFBA79EE9616973.title: "Mechanical Pipes"
 	task.7E36340AFD8F91C6.title: "Summon a Greedy Familiar"
+	task.7FEC3AD51BEF4E49.title: "Obtain a Redstone Control Spawner Rune"
+	task.84EB28F1381349B8.title: "Crystalline Seashelf"
+	task.895E2F9BAA454807.title: "Dormant Deepshelf"
+	task.904057D0E79138E0.title: "Obtain Sightshelves"
+	task.97CBC57B39A746E1.title: "Enchantment Library"
+	task.996058D35CC8487D.title: "Heart-Forged Seashelf"
+	task.9BA0F676C4B2415A.title: "Blazing Hellshelf"
+	task.A05A04665031813A.title: "Obtain Endshelves"
+	task.A0CE15B5EB0A4C7F.title: "Seashelf"
+	task.A5758AE17B72429A.title: "Obtain Tome of Extraction"
+	task.A92DCC21A41243E0.title: "Infused Seashelf"
+	task.AD83E88D1D813602.title: "Obtain Seashelves"
+	task.AECF10D13CE24EED.title: "Helmet Tome"
+	task.B1C2D3E4F5A10001.title: "Basic Bookshelf"
+	task.B1C2D3E4F5A10002.title: "Hellshelf"
+	task.B1C2D3E4F5A10003.title: "Seashelf"
+	task.B1C2D3E4F5A10004.title: "Infused Hellshelf"
+	task.B1C2D3E4F5A10005.title: "Infused Seashelf"
+	task.B1C2D3E4F5A10006.title: "Blazing Hellshelf"
+	task.B1C2D3E4F5A10007.title: "Glowing Hellshelf"
+	task.B1C2D3E4F5A10008.title: "Crystalline Seashelf"
+	task.B1C2D3E4F5A10009.title: "Heart-Forged Seashelf"
+	task.B1C2D3E4F5A20001.title: "Dormant Deepshelf"
+	task.B1C2D3E4F5A20002.title: "Deepshelf"
+	task.B1C2D3E4F5A20003.title: "Echoing Deepshelf"
+	task.B1C2D3E4F5A20004.title: "Soul-Touched Deepshelf"
+	task.B1C2D3E4F5A20005.title: "Echoing Sculkshelf"
+	task.B1C2D3E4F5A20006.title: "Soul-Touched Sculkshelf"
+	task.B1C2D3E4F5A20007.title: "Endshelf"
+	task.B1C2D3E4F5A20008.title: "Pearlescent Endshelf"
+	task.B1C2D3E4F5A20009.title: "Draconic Endshelf"
+	task.B1C2D3E4F5A30001.title: "Beeshelf"
+	task.B1C2D3E4F5A30002.title: "Melonshelf"
+	task.B1C2D3E4F5A30003.title: "Stoneshelf"
+	task.B1C2D3E4F5A30004.title: "Hellshelf of Sight"
+	task.B1C2D3E4F5A30005.title: "Hellshelf of Masterful Sight"
+	task.B1C2D3E4F5A30006.title: "Seashelf of Aquatic Filtration"
+	task.B1C2D3E4F5A30007.title: "Deepshelf of Arcane Treasures"
+	task.B1C2D3E4F5A30008.title: "Geode-Encased Bookshelf of Stability"
+	task.BB668679DACD421F.title: "Deepshelf"
+	task.BD2C64C395D748A4.title: "Pickaxe Tome"
+	task.BECA22A42F0A47BD.title: "Helmet Tome"
+	task.BFF8AE86BFC16894.title: "Obtain Dormant Deepshelves"
+	task.C4742F94C21649BB.title: "Other Tome"
+	task.C6EF6BF795B64A1F.title: "Draconic Endshelf"
+	task.C8C27D9CE8264E5C.title: "Deepshelf of Arcane Treasures"
+	task.C90CF74FBBFA21F6.title: "Obtain Pearlescent Endshelf"
+	task.CA5579782D12EA69.title: "Obtain Glowing Hellshelves"
+	task.CAA1DBB713554233.title: "Tome of Extraction"
+	task.CC66DC7A84C2FE93.title: "Obtain Infused Seashelves"
+	task.CD7201557E334814.title: "Library of Alexandria"
+	task.D14CC2DB644D4764.title: "Echoing Deepshelf"
+	task.D327D3B8E0014048.title: "Basic Bookshelf"
+	task.D37E1B8A6A044C9C.title: "Tome of Extraction"
+	task.D5F572C15996468B.title: "Endshelf"
+	task.D6F62351D9C64EA4.title: "Geode-Encased Bookshelf of Stability"
+	task.D869BFFF90454E2A.title: "Beeshelf"
+	task.D93D47DEAA254A67.title: "Tome of Scrapping"
+	task.DD6F2E35656B4C4A.title: "Infused Hellshelf"
+	task.DD7616C5A5B54E96.title: "Other Tome"
+	task.DDEEB6AB657F4194.title: "Library of Alexandria"
+	task.DF85894A58F843E9.title: "Weapon Tome"
+	task.E0451B3140DD4531.title: "Enchanting Table of the Raven"
+	task.E0A1991D253D43FA.title: "Melonshelf"
+	task.E6329BA37CC041B4.title: "Obtain Hellshelves"
+	task.E676B60D41B24E65.title: "Soul-Touched Sculkshelf"
+	task.E6CC23D968A047D7.title: "Bow Tome"
+	task.E86945B4F8C51899.title: "Obtain Enchantment Library"
+	task.EA34C1210B0AE0FC.title: "Obtain Deepshelves"
+	task.EB3EE867EFD04E8B.title: "Weapon Tome"
+	task.EE5E473B56784521.title: "Enchantment Library"
+	task.F1E78B3E448D4F0E.title: "Fishing Tome"
+	task.F45FAC246D8E4498.title: "Leggings Tome"
+	task.F5E1785AF604322A.title: "Obtain Echoing Sculkshelves"
+	task.F656EF42DE5945E0.title: "Hellshelf"
+	task.FF1097F9E03A403A.title: "Echoing Sculkshelf"
 }
