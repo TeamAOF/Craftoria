@@ -1,0 +1,27 @@
+#Anchor Effect Settings
+[anchor_effect]
+	#Allow non-OP players to use Anchor effect on other players.
+	#When set to false (default), only OP players can anchor other players.
+	#When set to true, any player can anchor other players.
+	allowNonOpAnchorOnPlayers = false
+
+#Large Explosion Settings
+[large_explosion]
+	#Hard per-tick block destruction budget for large explosions.
+	# Default: 256
+	# Range: 1 ~ 1000000
+	maxBlocksPerTick = 256
+
+#Multiphase cast device settings
+[multiphase]
+	#Default tick delay (in ticks) for multiphase device slots. Minimum 1 (20 times per second).
+	# Default: 10
+	# Range: 1 ~ 20
+	defaultTickDelay = 10
+
+#Filial item settings
+[filial]
+	#Spell power bonus granted per filial (held offhand or embedded in staff).
+	# Default: 3
+	# Range: 0 ~ 100
+	powerBonus = 3

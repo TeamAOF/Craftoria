@@ -1,3 +1,90 @@
+# Craftoria | v1.35.0
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.35.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.35.0.md)_
+
+## DISCLAIMER: This update overhauls quite a big portion of the modlist, backup your worlds before updating!
+
+### Changes/Improvements ⭐
+
+* Much improved performance `AK`
+* Unified zinc plates in recipes `AK`
+* Allow immersive aircrafts to be interactable with in claims `AK`
+* Disable Malum spawner spirit drops to prevent lag `AK`
+* New recipe for Flight Card (Advanced AE) `AK`
+* Blacklisted Flight Ritual from portable brazier relay `AK`
+* Changed how oathbound relic is given, now through welcome quest `AK`
+* Reworked Monster Mayhem quest chapter for updated apothic spawners `AK`
+* Added back Trophy of the Older Angel quest task in fishing `AK`
+* Added apothic enchanting quest chapter `AK`
+* Reworked Powah quest chapter `AK`
+* Updated textures for new SB upgrades `AK`
+
+### Added Mods ✅
+
+* [AE2 Tangible Bookmarks](https://curseforge.com/projects/1394275)
+* [Applied Construction Sticks](https://curseforge.com/projects/1452253)
+* [Applied Pneumatics](https://curseforge.com/projects/1355087)
+* [Applied Replicatics](https://curseforge.com/projects/1440118)
+* [Ars Zero](https://curseforge.com/projects/1377482)
+* [Cobweb](https://curseforge.com/projects/968456)
+* [Create Crafts & Additions](https://curseforge.com/projects/439890)
+* [Create Factory Logistics](https://curseforge.com/projects/1218807)
+* [EMI: Create Schematics](https://curseforge.com/projects/940673)
+* [Fast Paintings](https://curseforge.com/projects/883287)
+* [Ixeris](https://curseforge.com/projects/1285307)
+* [Mekanism: Ponders](https://curseforge.com/projects/1448575)
+* [Myotus Lib](https://curseforge.com/projects/1496024)
+* [Platform](https://curseforge.com/projects/997634)
+* [Prometheus](https://curseforge.com/projects/1365195)
+* [Reliquified Iron's Spells 'n Spellbooks](https://curseforge.com/projects/1216851)
+* [Reliquified L_Ender 's Cataclysm](https://curseforge.com/projects/1232116)
+* [Reliquified L_Ender 's Cataclysm new relics fix](https://curseforge.com/projects/1665965)
+* [Reliquified Twilight Forest](https://curseforge.com/projects/1186617)
+* [Reliquified Twilight Forest new relics fix](https://curseforge.com/projects/1664403)
+* [Simple Backups](https://curseforge.com/projects/583228)
+* [Soul fire'd](https://curseforge.com/projects/662413)
+* [Spice of Life: Carrot Edition](https://curseforge.com/projects/277616)
+* [Vanilla Backport](https://curseforge.com/projects/417430)
+
+### Removed Mods ❌
+
+* [Advanced Netherite (Forge / NeoForge)](https://curseforge.com/projects/495336)
+* [Antique Trading Ship](https://curseforge.com/projects/1034045)
+* [Better Advancements](https://curseforge.com/projects/272515)
+* [Blue Flame Burning](https://curseforge.com/projects/656551)
+* [Charging Gadgets](https://curseforge.com/projects/399757)
+* [Dawn Of Time](https://curseforge.com/projects/312359)
+* [Dungeon Crawl](https://curseforge.com/projects/324973)
+* [Extra Sponges](https://curseforge.com/projects/457043)
+* [Integrated Crafting](https://curseforge.com/projects/287357)
+* [Integrated Terminals](https://curseforge.com/projects/295910)
+* [JamLib](https://curseforge.com/projects/623764)
+* [JustHammers](https://curseforge.com/projects/681606)
+* [Loot Integrations: Dungeon Crawl](https://curseforge.com/projects/1137456)
+* [McJtyLib](https://curseforge.com/projects/233105)
+* [More Dragon Eggs](https://curseforge.com/projects/358700)
+* [More Totems Of Undying](https://curseforge.com/projects/357265)
+* [Noisium (archived)](https://curseforge.com/projects/930207)
+* [Ranged Pumps](https://curseforge.com/projects/247496)
+* [Replication AE2 Bridge](https://curseforge.com/projects/1264781)
+* [RFTools Base](https://curseforge.com/projects/326041)
+* [RFTools Builder](https://curseforge.com/projects/347706)
+* [RFTools Utility](https://curseforge.com/projects/342466)
+* [Sawmill House](https://curseforge.com/projects/1039188)
+* [Simple Pocket Machines](https://curseforge.com/projects/1090864)
+* [Small horse stable](https://curseforge.com/projects/1069321)
+* [Sussy Sniffers](https://curseforge.com/projects/1083346)
+* [TheObsidianBoat](https://curseforge.com/projects/510648)
+* [TrashSlot](https://curseforge.com/projects/235577)
+* [Useful Hats](https://curseforge.com/projects/347337)
+
+### Bug Fixes 🪲
+
+* Broken models/textures of certain mobs `AK`
+* Recipe conflicts between crop bags & crates `AK`
+* Recipe conflict between tiny charcoal & charcoal fragment `AK`
+* Discord rich presence not loading correctly `AK`
+---
 # Craftoria | v1.34.0
 
 _Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.34.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.34.0.md)_

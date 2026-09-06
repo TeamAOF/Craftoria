@@ -1,0 +1,8 @@
+#Blight forest biome (requires TerraBlender). Set to 0 to disable.
+[blight_forest]
+	#TerraBlender region weight for Blight Forest. Set this to the same value as
+	#Ars Nouveau's Archwood region for approximately equal Forest replacement frequency.
+	#Requires a full restart and only affects newly generated chunks.
+	# Default: 10
+	# Range: > 0
+	weight = 10

@@ -1,0 +1,42 @@
+#General settings
+[general]
+	#Is Enabled?
+	enabled = true
+	#Cost
+	# Default: 50
+	# Range: > -2147483648
+	cost = 50
+	#Is Starter Glyph?
+	starter = false
+	#The maximum number of times this glyph may appear in a single spell
+	# Default: 3
+	# Range: 1 ~ 10
+	per_spell_limit = 3
+	#The tier of the glyph
+	# Default: 3
+	# Range: 1 ~ 99
+	glyph_tier = 3
+	#Limits the number of times a given augment may be applied to a given effect
+	#Example entry: "glyph_amplify=5"
+	augment_limits = ["ars_nouveau:glyph_split=3", "ars_nouveau:glyph_sensitive=1", "ars_nouveau:glyph_amplify=10", "ars_nouveau:glyph_dampen=1"]
+	#How much an augment should cost when used on this effect or form. This overrides the default cost in the augment config.
+	#Example entry: "glyph_amplify=50"
+	augment_cost_overrides = []
+	#Prevents the given glyph from being used in the same spell as the given glyph
+	#Example entry: "glyph_burst"
+	invalid_combos = []
+
+	#Effect Beam Settings
+	[general.effect_beam]
+		#Mana cost multiplier for beam resolver. Each resolve (on hit) costs this percentage of the forwarded spell's total mana cost. Default is 0.1 (10%).
+		# Default: 0.1
+		# Range: 0.0 ~ 1.0
+		beamResolverManaCostMultiplier = 0.1
+		#Base magic damage dealt by the beam per tick. Default is 0.5.
+		# Default: 0.5
+		# Range: 0.0 ~ 100.0
+		beamBaseDamage = 0.5
+		#Additional damage per Amplify augment level. Default is 0.5.
+		# Default: 0.5
+		# Range: 0.0 ~ 100.0
+		beamAmplifyDamageBonus = 0.5

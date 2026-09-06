@@ -92,6 +92,10 @@
 	connector_ignore_face_check = true
 	#Allows blocks attached to a connector to freely pass energy to and from the connector network.
 	connector_allow_passive_io = true
+	#The maximum stored amount in the connector network internal buffer.
+	# Default: 80000
+	# Range: > 80000
+	connector_network_internal_buffer = 80000
 
 #Accumulator
 [accumulator]
@@ -184,3 +188,35 @@
 	# Default: 2.0
 	# Range: 0.0 ~ 3.4028234663852886E38
 	barbed_wire_damage = 2.0
+	#If the effects of the amulets should be enabled or not.
+	amulet_effect_enabled = true
+	#Passive charge rate of the Electrum Amulet in average FE/t when held in main or offhand.
+	# Default: 2
+	# Range: > 0
+	electrum_amulet_charge_rate = 2
+	#Maximum energy the Capacitor item can store in FE.
+	# Default: 5000
+	# Range: > 1
+	capacitor_capacity = 5000
+	#Max FE per transfer operation for the Capacitor item.
+	# Default: 500
+	# Range: > 1
+	capacitor_charge_rate = 500
+
+#Liquid Blaze Burner
+[liquid_blaze_burner]
+	#Liquid Blaze Burner internal liquid storage capacity (in mB). A value less than 1000 prevents players from refilling with a bucket.
+	# Default: 4000
+	# Range: > 100
+	liquid_blaze_burner_max_liquid_capacity = 4000
+	#Liquid Blaze Burner internal heat capacity (in ticks).
+	# Default: 10000
+	# Range: > 0
+	liquid_blaze_burner_max_heat_capacity = 10000
+
+#Compatibility
+[compatibility]
+	#Energy capacity of the Docking Connector (Aeronautics/Simulated).
+	# Default: 80000
+	# Range: > 1
+	docking_connector_capacity = 80000
