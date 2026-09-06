@@ -18,19 +18,8 @@ const globalItemRemovals = [
   'industrialforegoing:infinity_nuke',
   'utilitarian:tiny_coal',
   'utilitarian:tiny_charcoal',
-  'mffs:anti_personnel_module',
-  'mffs:confiscation_module',
   'pylons:infusion_pylon',
   'pylons:potion_filter',
-  'xycraft_world:raw_aluminum',
-  'xycraft_world:raw_aluminum_block',
-  'xycraft_world:aluminum_ore_stone',
-  'xycraft_world:aluminum_ore_deepslate',
-  'xycraft_world:aluminum_ore_kivi',
-  'xycraft_machines:aluminum_dirty_dust',
-  'xycraft_machines:aluminum_shard',
-  'xycraft_machines:aluminum_crystal',
-  'xycraft_machines:aluminum_clump',
   'create:crushed_raw_aluminum',
   'create:crushed_raw_platinum',
   'actuallyadditions:wooden_aiot',
@@ -38,8 +27,7 @@ const globalItemRemovals = [
   'actuallyadditions:iron_aiot',
   'actuallyadditions:gold_aiot',
   'actuallyadditions:diamond_aiot',
-  'actuallyadditions:netherite_aiot',
-  'ars_controle:portable_brazier_relay'
+  'actuallyadditions:netherite_aiot'
 ];
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
@@ -57,8 +45,6 @@ ServerEvents.recipes(event => {
     'appflux:inscriber/crush_diamond',
     'appflux:inscriber/crush_emerald',
     'modern_industrialization:electric_age/machine/assembler/replicator',
-    'mffs:steel_compound',
-    'mffs:steel_ingot',
     'industrialforegoing:laser_drill_ore/raw_materials/iridium',
     'modern_industrialization:materials/uranium/blast_furnace/dust',
     'supplementaries:sus_gravel',
@@ -72,17 +58,12 @@ ServerEvents.recipes(event => {
     'create:crushing/platinum_ore',
     'create:crushing/raw_platinum',
     'create:crushing/raw_platinum_block',
-    'xycraft_machines:compat/mek/compressor/aluminum_sheet_temp',
     'minecraft:blaze_rod_from_smelting_bronze_rod'
   ];
 
   /** @type {Special.Item[]} */
   const inputRemovals = [
-    'xycraft_world:raw_aluminum',
-    'xycraft_world:raw_aluminum_block',
-    'xycraft_world:aluminum_ore_stone',
-    'xycraft_world:aluminum_ore_deepslate',
-    'xycraft_world:aluminum_ore_kivi',
+
   ];
 
   id.forEach(id => {
@@ -126,9 +107,6 @@ ServerEvents.generateData('after_mods', event => {
   const miscYeets = [
     'dumplings_delight:loot_modifiers/add_calamari_squid',
     'apotheosis:affixes/armor/attribute/unbound',
-    'xycraft_world:worldgen/configured_feature/ore_aluminum',
-    'xycraft_world:worldgen/placed_feature/ore_aluminum',
-    'xycraft_world:neoforge/biome_modifier/ore_aluminum',
   ];
 
   /** @type {Special.LootTable[]} */

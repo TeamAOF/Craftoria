@@ -69,5 +69,4 @@ RecipeViewerEvents.removeEntries('item', e => {
   });
 
   e.remove(unifyHide);
-  e.remove(['mekanism:block_salt', 'mffs:steel_compound']);
 });
