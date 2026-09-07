@@ -44,7 +44,8 @@ const globalItemRemovals = [
   'vinery:apple_bag',
   'farm_and_charm:beetroot_bag',
   'farm_and_charm:tomato_bag',
-  'farm_and_charm:potato_bag'
+  'farm_and_charm:potato_bag',
+  /^extendedae_plus:\d+x_crafting_accelerator$/
 ];
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
