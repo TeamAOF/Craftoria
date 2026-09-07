@@ -76,7 +76,12 @@ ServerEvents.recipes(event => {
     'create:crushing/raw_platinum',
     'create:crushing/raw_platinum_block',
     'xycraft_machines:compat/mek/compressor/aluminum_sheet_temp',
-    'minecraft:blaze_rod_from_smelting_bronze_rod'
+    'minecraft:blaze_rod_from_smelting_bronze_rod',
+    /mekanism:processing\/.*\/ore\/deepslate_from_raw/,
+    /mekanism:processing\/.*\/ore\/from_raw/,
+    /mekanism:processing\/.*\/to_(deepslate_)?ore/,
+    'mekanism_extras:processing/naquadah/ore/end_from_raw',
+    'mekanism:processing/gold/ore/nether_from_raw'
   ];
 
   /** @type {Special.Item[]} */
