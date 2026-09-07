@@ -14,6 +14,10 @@ ringOfSDSGluttonyAttributesBlacklist:
 - minecraft:generic.scale
 - minecraft:friction_modifier
 - minecraft:air_drag_modifier
+- minecraft:generic.burning_time
+- minecraft:generic.movement_speed
+- minecraft:player.sneaking_speed
+- minecraft:generic.step_height
 - additionalentityattributes:generic.width
 - additionalentityattributes:generic.height
 - additionalentityattributes:generic.hitbox_scale
@@ -22,5 +26,7 @@ ringOfSDSGluttonyAttributesBlacklist:
 - additionalentityattributes:generic.model_scale
 - additionalentityattributes:generic.model_width
 - additionalentityattributes:generic.model_height
+- additionalentityattributes:generic.water_speed
 - ars_nouveau:ars_nouveau.perk.weight
 - ars_nouveau:ars_nouveau.perk.wixie
+- caelus:fall_flying
