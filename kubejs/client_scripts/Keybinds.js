@@ -145,7 +145,7 @@ KeyBindJSEvents.modify(event => {
     }
 
     // Skip if the keybind doesn't exist but the mod is present
-    if (KeyBindUtil.findKeyMappingInAllKeyMapping(k) == null) {
+    if (KeyBindUtil.getKeyMapping(k) == null) {
       console.warn(`Skipping: ${k} -> ${JSON.stringify(v)} (Keybinding not found)`);
       continue;
     }
