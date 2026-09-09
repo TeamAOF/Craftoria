@@ -5,12 +5,12 @@ ServerEvents.generateData('after_mods', event => {
         'neoforge:conditions': [
           {
             type: 'neoforge:mod_loaded',
-            modid: 'justdirethings'
-          }
+            modid: 'justdirethings',
+          },
         ],
-        'neoforge:value': 20
-      }
-    }
+        'neoforge:value': 20,
+      },
+    },
   });
 });
 

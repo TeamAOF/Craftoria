@@ -30,7 +30,7 @@ const buddingConditions = {
     fluid: '1000x water',
     item: '8x extendedae:entro_crystal',
     eu: 16,
-    time: 15 * 20
+    time: 15 * 20,
   },
   thioquartz: {
     block: 'eternal_starlight:budding_thioquartz',
@@ -42,7 +42,7 @@ const buddingConditions = {
     block: 'justdirethings:time_crystal_budding_block',
     textKey: [
       'info.mi.budding.timecrystal.line1',
-      'info.mi.budding.timecrystal.line2'
+      'info.mi.budding.timecrystal.line2',
     ],
     blockState: {
       property: TIME_BUDDING_STAGE,
@@ -71,7 +71,7 @@ const buddingConditions = {
     fluid: '1000x water',
     item: '4x pastel:onyx_shard',
     eu: 16,
-    time: 15 * 20
+    time: 15 * 20,
   },
   moonstone: {
     block: 'pastel:budding_moonstone',
@@ -79,7 +79,7 @@ const buddingConditions = {
     fluid: '1000x water',
     item: '2x pastel:moonstone_shard',
     eu: 16,
-    time: 15 * 20
+    time: 15 * 20,
   },
 };
 

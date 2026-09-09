@@ -5,14 +5,14 @@ ServerEvents.recipes(event => {
       thermalResistance: 5000,
       heatCapacity: 10000,
       transforms: { cold: 'irons_spellbooks:brazier[lit=false]' },
-      predicates: { lit: 'true' }
+      predicates: { lit: 'true' },
     },
     'irons_spellbooks:brazier_soul': {
       temperature: 2000,
       thermalResistance: 2500,
       heatCapacity: 10000,
       transforms: { cold: 'irons_spellbooks:brazier_soul[lit=false]' },
-      predicates: { lit: 'true' }
+      predicates: { lit: 'true' },
     },
   };
 
@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
       thermalResistance: props.thermalResistance,
       heatCapacity: props.heatCapacity,
       transforms: props.transforms,
-      predicates: props.predicates
+      predicates: props.predicates,
     }).id(`craftoria:pneumaticcraft/heat_properties/${block.replace(':', '_')}`);
   });
 });

@@ -36,7 +36,7 @@ LootJS.lootTables(e => {
     'biomeswevegone:green_glowcane_shoot',
     'biomeswevegone:red_glowcane_shoot',
     'biomeswevegone:yellow_glowcane_shoot',
-    'biomeswevegone:pale_pumpkin_seeds'
+    'biomeswevegone:pale_pumpkin_seeds',
   ].forEach(item => {
     sniffa.addEntry(item);
   });

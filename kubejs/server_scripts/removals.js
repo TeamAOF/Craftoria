@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
     /mekanism:processing\/.*\/ore\/from_raw/,
     /mekanism:processing\/.*\/to_(deepslate_)?ore/,
     'mekanism_extras:processing/naquadah/ore/end_from_raw',
-    'mekanism:processing/gold/ore/nether_from_raw'
+    'mekanism:processing/gold/ore/nether_from_raw',
   ];
 
   /** @type {Special.Item[]} */

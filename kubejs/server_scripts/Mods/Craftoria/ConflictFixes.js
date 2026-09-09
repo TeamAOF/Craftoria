@@ -116,7 +116,7 @@ ServerEvents.recipes(e => {
   e.shaped('2x minecraft:lead', [
     'SS ',
     'SB ',
-    '  S'
+    '  S',
   ], {
     S: '#c:strings',
     B: '#c:slimeballs',
@@ -125,7 +125,7 @@ ServerEvents.recipes(e => {
   e.shaped('cake', [
     'MMM',
     'SES',
-    'WWW'
+    'WWW',
   ], {
     M: '#c:foods/milk',
     S: '#c:sugars',

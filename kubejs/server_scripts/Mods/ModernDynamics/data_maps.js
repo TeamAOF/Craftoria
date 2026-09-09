@@ -66,7 +66,7 @@ ServerEvents.generateData('after_mods', e => {
       {
         type: 'neoforge:mod_loaded',
         modid: ID.namespace(id),
-      }
+      },
     ];
 
     e.json(path, data);

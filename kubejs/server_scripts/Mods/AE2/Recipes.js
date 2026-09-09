@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
     '3x ae2:capacity_card',
     '3x minecraft:crafting_table',
     'extendedae:concurrent_processor',
-    '6x #ae2:glass_cable'
+    '6x #ae2:glass_cable',
   ], null, 'advanced_ae:eaelargeappupgrade');
 
   // ae2.crystalAssembler('expandedae:exp_pattern_provider', [
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
   // added reversable recipes for dyed ae2 cables, covered and not. - inno
   const reversablePairs = [
     { a: 'smart_cable', b: 'smart_dense_cable', sCount: 4, dCount: 1 },
-    { a: 'covered_cable', b: 'covered_dense_cable', sCount: 4, dCount: 1 }
+    { a: 'covered_cable', b: 'covered_dense_cable', sCount: 4, dCount: 1 },
   ];
 
   Color.DYE.forEach(color => {

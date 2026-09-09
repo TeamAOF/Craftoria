@@ -158,7 +158,7 @@ ServerEvents.tags('item', e => {
 
     'replication:matter_tank',
 
-    'xycraft_machines:foil'
+    'xycraft_machines:foil',
   ].concat(replicatorBlacklist);
 
   /**

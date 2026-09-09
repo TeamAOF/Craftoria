@@ -15,7 +15,7 @@ ServerEvents.generateData('after_mods', e => {
     },
     'modern_industrialization:helium_3': {
       temperature: -272,
-    }
+    },
   };
 
   e.json('powah:data_maps/fluid/fluid_coolant', {

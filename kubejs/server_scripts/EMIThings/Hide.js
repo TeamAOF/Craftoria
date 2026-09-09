@@ -42,6 +42,6 @@ RecipeViewerEvents.removeCategories(e => {
     'create_dragons_plus:ending', // Currently always errors out when trying to display, will unhide when fixed
     'mekmm:replicator',
     'mekmm:fluid_replicator',
-    'mekmm:chemical_replicator'
+    'mekmm:chemical_replicator',
   ]);
 });

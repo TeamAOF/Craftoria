@@ -109,7 +109,7 @@ ServerEvents.recipes(e => {
     { output: /mekanism_extras:.*_factory/ },
   ], [
     'mekanism:pellet_polonium',
-    'mekanism:pellet_plutonium'
+    'mekanism:pellet_plutonium',
   ], 'mekmm:uu_matter');
 
   e.replaceInput(

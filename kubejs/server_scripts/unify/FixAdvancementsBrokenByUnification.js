@@ -7,27 +7,27 @@ ServerEvents.generateData('after_mods',event=>{
           conditions: {
             items: [
               {
-                items: 'rusticdelight:coffee_beans'
-              }
-            ]
+                items: 'rusticdelight:coffee_beans',
+              },
+            ],
           },
-          trigger: 'minecraft:inventory_changed'
-        }
+          trigger: 'minecraft:inventory_changed',
+        },
       },
       display: {
         description: {
-          translate: 'achievement.actuallyadditions.pickUpCoffee.desc'
+          translate: 'achievement.actuallyadditions.pickUpCoffee.desc',
         },
         icon: {
           count: 1,
-          id: 'rusticdelight:coffee_beans'
+          id: 'rusticdelight:coffee_beans',
         },
         title: {
-          translate: 'achievement.actuallyadditions.pickUpCoffee'
-        }
+          translate: 'achievement.actuallyadditions.pickUpCoffee',
+        },
       },
       requirements: [['coffee_beans']],
-      sends_telemetry_event: true
+      sends_telemetry_event: true,
     },
     'mekanism:steel_ingot': {
       parent: 'mekanism:metallurgic_infuser',
@@ -36,32 +36,32 @@ ServerEvents.generateData('after_mods',event=>{
           conditions: {
             items: [
               {
-                items: 'modern_industrialization:steel_ingot'
-              }
-            ]
+                items: 'modern_industrialization:steel_ingot',
+              },
+            ],
           },
-          trigger: 'minecraft:inventory_changed'
-        }
+          trigger: 'minecraft:inventory_changed',
+        },
       },
       display: {
         description: {
-          translate: 'advancements.mekanism.steel_ingot.description'
+          translate: 'advancements.mekanism.steel_ingot.description',
         },
         icon: {
           count: 1,
-          id: 'modern_industrialization:steel_ingot'
+          id: 'modern_industrialization:steel_ingot',
         },
         title: {
-          translate: 'advancements.mekanism.steel_ingot.title'
-        }
+          translate: 'advancements.mekanism.steel_ingot.title',
+        },
       },
       requirements: [
         [
-          'ingot_steel'
-        ]
+          'ingot_steel',
+        ],
       ],
-      sends_telemetry_event: true
-    }
+      sends_telemetry_event: true,
+    },
   };
 
   for (const [id, advancement] of Object.entries(advancements)) {

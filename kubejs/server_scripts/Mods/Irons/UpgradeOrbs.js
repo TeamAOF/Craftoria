@@ -17,7 +17,7 @@ ServerEvents.generateData('before_mods', event => {
       attribute: attribute,
       containerItem: {
         count: 1,
-        id: `craftoria:${type}_upgrade_orb`
+        id: `craftoria:${type}_upgrade_orb`,
       },
       operation: operation,
     });

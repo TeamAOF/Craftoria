@@ -173,7 +173,7 @@ ServerEvents.tags('block', e => {
     '#minecraft:anvil',
     'minecraft:bell',
     'yigd:grave',
-    '#lootr:containers'
+    '#lootr:containers',
   ]);
 
   e.add('ae2:blacklisted/spatial', ['justdirethings:time_crystal_budding_block']);
@@ -236,7 +236,7 @@ ServerEvents.tags('block', e => {
     'replication:matter_network_pipe',
     /^simplemagnets:(basic|advanced)_demagnetization_coil$/,
     '@moderndynamics',
-    '@trashcans'
+    '@trashcans',
   ]);
 
   e.add('justdirethings:tick_speed_deny', [
@@ -292,7 +292,7 @@ ServerEvents.tags('entity_type', e => {
       'immersive_aircraft:biplane',
       'immersive_aircraft:gyrodyne',
       'immersive_aircraft:quadrocopter',
-      'immersive_aircraft:bamboo_hopper'
+      'immersive_aircraft:bamboo_hopper',
     ]);
 
   e.add('justdirethings:creature_catcher_deny', ['ars_nouveau:dummy']);
@@ -307,23 +307,23 @@ ServerEvents.tags('enchantment', e => {
 
   // Minecraft Enchantment tags
   e.add('minecraft:exclusive_set/damage', [
-    'deeperdarker:sculk_smite'
+    'deeperdarker:sculk_smite',
   ]);
 
   e.add('minecraft:non_treasure', [
     'deeperdarker:sculk_smite',
     'deeperdarker:volume',
-    'deeperdarker:reverberation'
+    'deeperdarker:reverberation',
   ]);
 
   // Common Enchantment tags
   e.add('c:weapon_damage_enhancements', [
-    'deeperdarker:sculk_smite'
+    'deeperdarker:sculk_smite',
   ]);
 
   // Deeper and Darker Enchantment Tags (not yet in mod update but will be)
   e.add('deeperdarker:resonarium_excludes', [
-    'minecraft:fire_protection'
+    'minecraft:fire_protection',
   ]);
 
 });

@@ -6,21 +6,21 @@ ServerEvents.generateData('after_mods', event => {
     'neoforge:conditions': [
       {
         type: 'neoforge:mod_loaded',
-        modid: 'cataclysm'
-      }
+        modid: 'cataclysm',
+      },
     ],
     conditions: [
       { condition: 'minecraft:killed_by_player' },
-      { condition: 'trofers:random_trophy_chance' }
+      { condition: 'trofers:random_trophy_chance' },
     ],
     'fabric:load_conditions': [
       {
         condition: 'fabric:all_mods_loaded',
-        values: ['cataclysm']
-      }
+        values: ['cataclysm'],
+      },
     ],
     trophies: {},
-    trophy_base: 'trofers:small_plate'
+    trophy_base: 'trofers:small_plate',
   };
 
   // Loop su ogni trofeo
@@ -32,20 +32,20 @@ ServerEvents.generateData('after_mods', event => {
     let trophy = {
       colors: {
         base: '#606060',
-        accent: data.accent_color
+        accent: data.accent_color,
       },
       entity: {
-        id: data.entity
+        id: data.entity,
       },
       name: {
         color: data.accent_color,
         translate: 'trophy.trofers.composed',
         with: [
           {
-            translate: data.name
-          }
-        ]
-      }
+            translate: data.name,
+          },
+        ],
+      },
     };
 
     // alcune variabili con un default

@@ -16,7 +16,7 @@ ServerEvents.recipes(e => {
       type: 'farmersdelight:cutting',
       ingredients: [],
       result: [],
-      tool: isAbility ? { type: 'farmersdelight:item_ability', action: tool } : Ingredient.of(tool).toJson()
+      tool: isAbility ? { type: 'farmersdelight:item_ability', action: tool } : Ingredient.of(tool).toJson(),
     };
     if (sound) recipe.sound = { sound_id: sound };
 
