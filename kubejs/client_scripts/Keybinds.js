@@ -115,10 +115,12 @@ KeyBindJSEvents.modify(event => {
     'artifacts.key.helium_flamingo.activate': { remove: true },
     'artifacts.key.universal_attractor.toggle': { remove: true },
     'artifacts.key.charm_of_shrinking.toggle': { remove: true },
+    'artifacts.key.charm_of_sinking.toggle': { remove: true },
+    'artifacts.key.scarf_of_invisibility.toggle': { remove: true },
     'key.kubejs.kubedex': { remove: true },
     'nolijium.toggle_light_level_overlay': { remove: true },
     'key.emiaddon.share_hovered_item': { remove: true },
-    'key.inventoryessentials.sort_inventory': { remove:true },
+    'key.inventoryessentials.sort_inventory': { remove: true },
   };
 
 
@@ -145,7 +147,7 @@ KeyBindJSEvents.modify(event => {
         if (v.modifier) event.modifyModifier(k, v.modifier);
         if (v.category) event.modifyCategory(k, v.category);
       } else event.remove(k);
-    } catch(e) {
+    } catch (e) {
       // unknown error case.
       // This keybinding script isnt critical so we dont want to stop client loading
       console.warn(`Unable to fully modify Keybind ${k} due to error: ${e.message}`);
