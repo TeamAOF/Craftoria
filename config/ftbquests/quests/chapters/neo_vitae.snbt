@@ -15,8 +15,8 @@
 			image: "neovitae:textures/particle/ritual.png"
 			rotation: 0.0d
 			width: 2.5d
-			x: 2.1d
-			y: 1.2d
+			x: 0.95d
+			y: 1.05d
 		}
 		{
 			click_action: "none:"
@@ -55,8 +55,8 @@
 			image: "ftbquests:textures/gui/neovitae.png"
 			rotation: 0.0d
 			width: 8.0d
-			x: 0.75d
-			y: -2.3d
+			x: -0.65d
+			y: -2.35d
 		}
 	]
 	order_index: 2
@@ -94,7 +94,7 @@
 					type: "item"
 				}
 			]
-			x: -1.75d
+			x: -3.15d
 			y: -0.5d
 		}
 		{
@@ -118,7 +118,7 @@
 				item: { count: 1, id: "neovitae:blood_orb_weak" }
 				type: "item"
 			}]
-			x: -0.25d
+			x: -1.65d
 			y: -0.5d
 		}
 		{
@@ -155,7 +155,7 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
+			x: 1.1d
 			y: -0.5d
 		}
 		{
@@ -181,7 +181,7 @@
 				id: "3806B1953C936A92"
 				type: "checkmark"
 			}]
-			x: 3.9d
+			x: 2.5000000000000004d
 			y: -0.5d
 		}
 		{
@@ -206,7 +206,7 @@
 				item: { count: 1, id: "neovitae:rune_blank" }
 				type: "item"
 			}]
-			x: 3.9d
+			x: 2.5000000000000004d
 			y: 0.75d
 		}
 		{
@@ -230,7 +230,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item(neovitae:rune_sacrifice)item(neovitae:rune_sacrifice_self)item(neovitae:rune_capacity)item(neovitae:rune_capacity_augmented)item(neovitae:rune_charging)item(neovitae:rune_speed)item(neovitae:rune_acceleration)item(neovitae:rune_dislocation)item(neovitae:rune_orb)item(neovitae:rune_efficiency))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 3.9d
+			x: 2.5000000000000004d
 			y: 2.0d
 		}
 		{
@@ -257,7 +257,7 @@
 				item: { count: 1, id: "neovitae:blood_orb_apprentice" }
 				type: "item"
 			}]
-			x: 3.9d
+			x: 2.5000000000000004d
 			y: 3.25d
 		}
 		{
@@ -281,11 +281,11 @@
 				item: { count: 1, id: "neovitae:hellfire_forge" }
 				type: "item"
 			}]
-			x: 5.2d
+			x: 3.8000000000000003d
 			y: 3.25d
 		}
 		{
-			dependencies: ["3A3B3EACB9321FF3"]
+			dependencies: ["0935BFDC4F0B4C6C"]
 			id: "03A2DAC1A090CC65"
 			rewards: [
 				{
@@ -357,7 +357,7 @@
 			y: 2.05d
 		}
 		{
-			dependencies: ["0935BFDC4F0B4C6C"]
+			dependencies: ["26C7705667EB55E8"]
 			id: "49BDD5CCF648A04D"
 			rewards: [
 				{
@@ -405,7 +405,7 @@
 			y: 0.85d
 		}
 		{
-			dependencies: ["53C28D1A140CA4A6"]
+			dependencies: ["3A3B3EACB9321FF3"]
 			id: "0935BFDC4F0B4C6C"
 			rewards: [
 				{
@@ -426,8 +426,8 @@
 				item: { count: 1, id: "neovitae:blood_stained_glass" }
 				type: "item"
 			}]
-			x: 7.9d
-			y: -0.25d
+			x: 5.1d
+			y: 3.25d
 		}
 		{
 			dependencies: ["49BDD5CCF648A04D"]
@@ -616,7 +616,7 @@
 				item: { count: 1, id: "neovitae:tabula_vitae" }
 				type: "item"
 			}]
-			x: 1.15d
+			x: -0.25d
 			y: -0.5d
 		}
 		{
@@ -716,7 +716,7 @@
 			y: 0.45d
 		}
 		{
-			dependencies: ["26C7705667EB55E8"]
+			dependencies: ["0FC1A7168D389575"]
 			id: "4F144C6D995FED7E"
 			rewards: [
 				{
@@ -899,7 +899,7 @@
 			y: -3.25d
 		}
 		{
-			dependencies: ["0935BFDC4F0B4C6C"]
+			dependencies: ["53C28D1A140CA4A6"]
 			icon: {
 				id: "neovitae:bloodstone_brick"
 			}
@@ -923,7 +923,7 @@
 				item: { components: { "ftbfiltersystem:filter": "or(item_tag(neovitae:altar/bloodstones))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
-			x: 6.5d
+			x: 7.85d
 			y: -0.25d
 		}
 		{
@@ -943,9 +943,8 @@
 				}
 			]
 			tasks: [{
-				count: 4L
-				id: "32A097B1A2B582FD"
-				item: { count: 1, id: "neovitae:hellforged_block" }
+				id: "72F89F43852EBF65"
+				item: { components: { "ftbfiltersystem:filter": "or(item(neovitae:crystal_cluster)item(neovitae:crystal_cluster_brick))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 6.5d
@@ -953,6 +952,9 @@
 		}
 		{
 			dependencies: ["03107F356240B036"]
+			icon: {
+				id: "neovitae:dungeon_metal_d"
+			}
 			id: "5A52426AC47A1FE3"
 			rewards: [
 				{
@@ -968,10 +970,8 @@
 				}
 			]
 			tasks: [{
-				count: 4L
-				id: "6B9E8E60ED726A5F"
-				item: { components: { "ftbfiltersystem:filter": "or(item_tag(neovitae:altar/t6_capstones))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
-				type: "item"
+				id: "7888504476FED179"
+				type: "checkmark"
 			}]
 			x: 6.55d
 			y: -4.95d
@@ -1052,7 +1052,7 @@
 					type: "item"
 				}
 			]
-			x: 5.2d
+			x: 3.8000000000000003d
 			y: 2.0d
 		}
 		{
@@ -1146,8 +1146,33 @@
 				item: { count: 1, id: "neovitae:lex_vitae" }
 				type: "item"
 			}]
-			x: 5.2d
+			x: 3.8000000000000003d
 			y: 0.75d
+		}
+		{
+			dependencies: ["26C7705667EB55E8"]
+			id: "0FC1A7168D389575"
+			rewards: [
+				{
+					id: "3E4016EF59A1EB1C"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2500DBDB65878F37"
+					table_id: 6467551270008706529L
+					type: "random"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "0B8A560A2A1E5114"
+				item: { count: 1, id: "neovitae:hellforged_block" }
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.25d
 		}
 	]
 }
