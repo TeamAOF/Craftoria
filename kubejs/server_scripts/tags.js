@@ -264,8 +264,10 @@ ServerEvents.tags('block', e => {
   ];
 
   immuneTags.forEach(tag => {
-    e.add(tag, ['yigd:grave'])
+    e.add(tag, ['yigd:grave']);
   });
+
+  e.remove('sfm:anvil_disenchanting', ['minecraft:obsidian', 'minecraft:crying_obsidian']);
 });
 
 ServerEvents.tags('fluid', e => {
@@ -280,16 +282,16 @@ ServerEvents.tags('fluid', e => {
 ServerEvents.tags('entity_type', e => {
   e.add('craftoria:mob_blacklist', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/, '#neoforge:bosses']);
 
-  e.add('ftbchunks:entity_interact_whitelist', 
+  e.add('ftbchunks:entity_interact_whitelist',
     [
-      'minecraft:villager', 
-      'minecraft:wandering_trader', 
-      'immersive_aircraft:airship', 
-      'immersive_aircraft:cargo_airship', 
-      'immersive_aircraft:warship', 
-      'immersive_aircraft:biplane', 
-      'immersive_aircraft:gyrodyne', 
-      'immersive_aircraft:quadrocopter', 
+      'minecraft:villager',
+      'minecraft:wandering_trader',
+      'immersive_aircraft:airship',
+      'immersive_aircraft:cargo_airship',
+      'immersive_aircraft:warship',
+      'immersive_aircraft:biplane',
+      'immersive_aircraft:gyrodyne',
+      'immersive_aircraft:quadrocopter',
       'immersive_aircraft:bamboo_hopper'
     ]);
 

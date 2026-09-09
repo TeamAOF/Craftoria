@@ -45,7 +45,9 @@ const globalItemRemovals = [
   'farm_and_charm:beetroot_bag',
   'farm_and_charm:tomato_bag',
   'farm_and_charm:potato_bag',
-  /^extendedae_plus:\d+x_crafting_accelerator$/
+  /^extendedae_plus:\d+x_crafting_accelerator$/,
+  'sfm:xp_shard',
+  'sfm:xp_goop',
 ];
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
@@ -324,7 +326,8 @@ ServerEvents.generateData('after_mods', event => {
     'mekaweapons:module_arrowvelocity_unit',
     'mechtrowel:wand_upgrade',
     // Recipes removed for balancing / unification
-    'farm_and_charm:seeds_tomato'
+    'farm_and_charm:seeds_tomato',
+    'sfm:enchanted_book_copy',
   ];
 
   /** @type {string[]} */
