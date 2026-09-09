@@ -78,21 +78,43 @@ ServerEvents.recipes(e => {
     { id: 'mekanism:mekasuit_boots' },
   ], 'mekanism:ultimate_control_circuit', 'mekanism_extras:supreme_control_circuit');
 
-    // Large Heat Generator
-    e.replaceInput([
+  // Large Heat Generator
+  e.replaceInput([
     { id: 'mekmm:large_heat_generator' },
   ], 'mekanism:ultimate_fluid_tank', 'mekanism_extras:supreme_fluid_tank');
 
-      e.replaceInput([
+  e.replaceInput([
     { id: 'mekmm:large_heat_generator' },
   ], 'mekanism:robit', 'mekanism_extras:supreme_tier_installer');
 
-    // Large Wind Generator
-    e.replaceInput([
+     e.replaceInput([
+    { id: 'mekmm:large_heat_generator' },
+  ], 'modern_industrialization:steel_block', 'craftoria:5x_compressed_steel_block');
+
+  // Large Wind Generator
+  e.replaceInput([
     { id: 'mekmm:large_wind_generator' },
   ], 'mekanism:ultimate_induction_cell', 'mekanism_extras:infinite_induction_cell');
 
-      e.replaceInput([
+  e.replaceInput([
     { id: 'mekmm:large_wind_generator' },
   ], 'mekanism:robit', 'mekanism_extras:infinite_tier_installer');
+
+   e.replaceInput([
+    { id: 'mekmm:large_wind_generator' },
+  ], 'modern_industrialization:steel_block', 'craftoria:5x_compressed_steel_block');
+
+  // Infinite Tier
+  e.replaceInput([
+    { output: /mekanism_extras:.*_factory/ },
+  ], [
+    'mekanism:pellet_polonium',
+    'mekanism:pellet_plutonium'
+  ], 'mekmm:uu_matter');
+
+  e.replaceInput(
+    [{ output: 'mekanism_extras:infinite_tier_installer' }],
+    ['mekanism:pellet_plutonium', 'mekanism:pellet_polonium'],
+    'mekmm:uu_matter'
+  );
 });
