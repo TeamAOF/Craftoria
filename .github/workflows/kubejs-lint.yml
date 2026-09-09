@@ -3,6 +3,9 @@ name: KubeJS lint
 on:
   push:
 
+permissions:
+  contents: write
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -23,5 +26,21 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint KubeJS
+      - name: Fix KubeJS lint issues
+        run: npx eslint . --fix
+
+      - name: Verify KubeJS lint
         run: npx eslint .
+
+      - name: Commit and push fixes
+        working-directory: .
+        run: |
+          if git diff --quiet; then
+            echo "No lint fixes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add kubejs
+          git commit -m "style: auto-fix KubeJS lint issues"
+          git push
