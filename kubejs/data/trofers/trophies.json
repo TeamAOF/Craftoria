@@ -19,5 +19,93 @@
     "name": "entity.ars_nouveau.wilden_stalker",
     "accent_color": "#6b6348",
     "effects": {"sound": {"id": "ars_nouveau:ignis_death"}}
+  },
+  "archevoker": {
+    "folder": "irons_spellbooks",
+    "entity": "irons_spellbooks:archevoker",
+    "name": "entity.irons_spellbooks.archevoker",
+    "accent_color": "#2e2235",
+    "effects": {"sound": {"id": "ars_nouveau:ignis_death"}},
+    "tag": { 
+      "HandItems": [{"count": 1, "id": "irons_spellbooks:evoker_spell_book"},{}],
+      "ArmorItems": [
+        { "count": 1, "id": "irons_spellbooks:archevoker_boots" },
+        { "count": 1, "id": "irons_spellbooks:archevoker_leggings" },
+        { "count": 1, "id": "irons_spellbooks:archevoker_chestplate" },
+        { "count": 1, "id": "irons_spellbooks:archevoker_helmet" }
+      ]
+    }
+  },
+  "cryomancer": {
+    "folder": "irons_spellbooks",
+    "entity": "irons_spellbooks:cryomancer",
+    "name": "entity.irons_spellbooks.cryomancer",
+    "accent_color": "#fafafa",
+    "effects": {"sound": {"id": "ars_nouveau:ignis_death"}},
+    "tag": { 
+      "HandItems": [{"count": 1, "id": "irons_spellbooks:ice_staff"},{}],
+      "ArmorItems": [
+        { "count": 1, "id": "irons_spellbooks:cryomancer_boots" },
+        { "count": 1, "id": "irons_spellbooks:cryomancer_leggings" },
+        { "count": 1, "id": "irons_spellbooks:cryomancer_chestplate" },
+        { "count": 1, "id": "irons_spellbooks:cryomancer_helmet" }
+      ]
+    }
+  },
+  "pyromancer": {
+    "folder": "irons_spellbooks",
+    "entity": "irons_spellbooks:pyromancer",
+    "name": "entity.irons_spellbooks.pyromancer",
+    "accent_color": "#570001",
+    "effects": {"sound": {"id": "ars_nouveau:ignis_death"}},
+    "tag": { 
+      "HandItems": [{"count": 1, "id": "irons_spellbooks:pyrium_staff"},{}],
+      "ArmorItems": [
+        { "count": 1, "id": "irons_spellbooks:pyromancer_boots" },
+        { "count": 1, "id": "irons_spellbooks:pyromancer_leggings" },
+        { "count": 1, "id": "irons_spellbooks:pyromancer_chestplate" },
+        { "count": 1, "id": "irons_spellbooks:pyromancer_helmet" }
+      ]
+    }
+  },
+  "priest": {
+    "folder": "irons_spellbooks",
+    "entity": "irons_spellbooks:priest",
+    "name": "entity.irons_spellbooks.priest",
+    "accent_color": "#2e2235",
+    "effects": {"sound": {"id": "ars_nouveau:ignis_death"}},
+    "tag": { 
+      "HandItems": [{"count": 1, "id": "irons_spellbooks:graybeard_staff"},{}],
+      "ArmorItems": [
+        { "count": 1, "id": "irons_spellbooks:priest_boots" },
+        { "count": 1, "id": "irons_spellbooks:priest_leggings" },
+        { "count": 1, "id": "irons_spellbooks:priest_chestplate" },
+        { "count": 1, "id": "irons_spellbooks:priest_helmet" }
+      ]
+    }
+  },
+  "necromancer": {
+    "folder": "irons_spellbooks",
+    "entity": "irons_spellbooks:necromancer",
+    "name": "entity.irons_spellbooks.necromancer",
+    "accent_color": "#442f23",
+    "effects":{"sound":{"id": "ars_nouveau:ignis_death"}},
+    "tag":{ "ArmorItems": [{},{},{},{"count": 1, "id": "irons_spellbooks:tarnished_helmet"}]}
+  },
+  "ancient_knight": {
+    "folder": "irons_spellbooks",
+    "entity": "irons_spellbooks:citadel_keeper",
+    "name": "entity.irons_spellbooks.citadel_keeper",
+    "accent_color": "#593f50",
+    "effects":{"sound":{"id": "ars_nouveau:ignis_death"}},
+    "tag":{"HandItems": [{"count": 1, "id": "irons_spellbooks:keeper_flamberge"},{}]}
+  },
+  "apothecarist": {
+    "folder": "irons_spellbooks",
+    "entity": "irons_spellbooks:apothecarist",
+    "name": "entity.irons_spellbooks.apothecarist",
+    "accent_color": "#593f50",
+    "effects":{"sound":{"id": "ars_nouveau:ignis_death"}},
+    "tag":{"ArmorItems":[{},{},{"count": 1, "id":"irons_spellbooks:plagued_chestplate"},{}]}
   }
 }
