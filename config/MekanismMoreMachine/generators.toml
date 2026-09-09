@@ -1,0 +1,61 @@
+#Settings for configuring Large Heat Generators
+[large_heat_generator]
+	#Amount of energy in Joules the Large Heat Generator produces per tick. largeHeatGeneration + largeHeatGenerationLava * lavaSides + largeHeatGenerationNether. Note: lavaSides is how many sides are adjacent to lava, this includes the block itself if it is lava logged allowing for a max of 81 "sides".
+	# Default: 1000
+	# Range: 0 ~ 9223372036854775807
+	largeHeatGeneration = 4000
+	#Multiplier of effectiveness of Lava that is adjacent to the Large Heat Generator.
+	# Default: 350
+	# Range: 0 ~ 113868790578454022
+	largeHeatGenerationLava = 25
+	#Add this amount of Joules to the energy produced by a large heat generator if it is in an 'ultrawarm' dimension, in vanilla this is just the Nether.
+	# Default: 750
+	# Range: 0 ~ 9223372036854775807
+	largeHeatGenerationNether = 1000
+	#The capacity in mB of the fluid tank in the Large Heat Generator.
+	# Default: 240000
+	# Range: > 1
+	tankCapacity = 240000
+	#The amount of lava in mB that gets consumed to transfer largeHeatGeneration Joules to the Large Heat Generator.
+	largeHeatGenerationFluidRate = 10
+
+#Settings for configuring Large Gas-Burning Generators
+[large_gas_generator]
+	#The capacity in mB of the chemical tank in the Large Gas-Burning Generator.
+	# Default: 180000
+	# Range: 1 ~ 9223372036854775807
+	tankCapacity = 180000
+
+#Settings for configuring Large Wind Generators
+[large_wind_generator]
+	#Minimum energy generation in Joules/t that the Large Wind Generator can produce.
+	# Default: 2250000
+	# Range: 0 ~ 9223372036854775807
+	generationMin = 225000
+	#Maximum energy generation in Joules/t that the Large Wind Generator can produce.
+	# Default: 3750000
+	# Range: 0 ~ 9223372036854775807
+	generationMax = 375000
+
+#Settings for configuring Solar Heat Generators
+[solar_heat_generator]
+	#Temperature in Kelvin where coolant heat transfer starts.
+	# Default: 1400.0
+	# Range: 1.0 ~ 1.7976931348623157E308
+	targetConversionTemperature = 1400.0
+	#Temperature in Kelvin where the generation thermal factor reaches one.
+	# Default: 242820.0
+	# Range: 1.0 ~ 1.7976931348623157E308
+	ratedGenerationTemperature = 242820.0
+	#Temperature in Kelvin where reflector durability starts being consumed.
+	# Default: 50000.0
+	# Range: 1.0 ~ 1.7976931348623157E308
+	reflectorDamageThreshold = 50000.0
+	#Reflector durability consumed each tick per Kelvin above the reflector damage threshold.
+	# Default: 5.0E-7
+	# Range: 0.0 ~ 1.7976931348623157E308
+	reflectorDamageRate = 5.0E-7
+	#Heat gained per tick from each reflector at full sun.
+	# Default: 15.0
+	# Range: 0.0 ~ 1.7976931348623157E308
+	heatGainPerReflector = 15.0

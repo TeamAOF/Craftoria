@@ -1,0 +1,10 @@
+#Settings for configuring the Wireless Transmission Station tank capacities
+[wireless_transmission_station_tank_capacity]
+	#The capacity in mB of the chemical tank in the Wireless Transmission Station.
+	# Default: 10000
+	# Range: 1 ~ 9223372036854775807
+	chemicalTankCapacity = 10000
+	#The capacity in mB of the fluid tank in the Wireless Transmission Station.
+	# Default: 10000
+	# Range: > 1000
+	fluidTankCapacity = 10000

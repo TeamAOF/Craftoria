@@ -1,0 +1,59 @@
+#Energy per operation in Joules of: Recycler
+# Default: 50
+# Range: 0 ~ 9223372036854775807
+recycler = 50
+#Energy per operation in Joules of: Planting Station
+# Default: 50
+# Range: 0 ~ 9223372036854775807
+plantingStation = 50
+#Energy per operation in Joules of: CNC Stamper
+# Default: 50
+# Range: 0 ~ 9223372036854775807
+cnc_stamper = 50
+#Energy per operation in Joules of: CNC Lathe
+# Default: 50
+# Range: 0 ~ 9223372036854775807
+cnc_lathe = 50
+#Energy per operation in Joules of: CNC Rolling Mill
+# Default: 50
+# Range: 0 ~ 9223372036854775807
+cnc_rollingMill = 50
+#Energy per operation in Joules of: Presser
+# Default: 50
+# Range: 0 ~ 9223372036854775807
+presser = 50
+#Energy per operation in Joules of: Ambient Gas Collector
+# Default: 100
+# Range: 0 ~ 9223372036854775807
+ambientGasCollector = 100
+#Energy per operation in Joules of: Large Rotary Condensentrator
+# Default: 50
+# Range: 0 ~ 9223372036854775807
+largeRotaryCondensentrator = 50
+#Energy per operation in Joules of: Large Chemical Infuser
+# Default: 100
+# Range: 0 ~ 9223372036854775807
+largeChemicalInfuser = 100
+#Energy per operation in Joules of: Large Antiprotonic Nucleosynthesizer
+# Default: 100000
+# Range: 0 ~ 9223372036854775807
+largeAntiprotonicNucleosynthesizer = 100000
+#Energy per operation in Joules of: Large Pigment Mixer
+# Default: 100
+# Range: 0 ~ 9223372036854775807
+largePigmentMixer = 100
+
+#Settings for configuring Replicator Energy Usage
+[replicator]
+	#Energy per operation in Joules of: Item Replicator
+	# Default: 102400
+	# Range: 0 ~ 9223372036854775807
+	itemReplicator = 102400
+	#Energy per operation in Joules of: Fluid Replicator
+	# Default: 102400
+	# Range: 0 ~ 9223372036854775807
+	fluidReplicator = 102400
+	#Energy per operation in Joules of: Chemical Replicator
+	# Default: 102400
+	# Range: 0 ~ 9223372036854775807
+	chemicalReplicator = 102400

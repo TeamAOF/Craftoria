@@ -77,4 +77,22 @@ ServerEvents.recipes(e => {
     { id: 'mekanism:mekasuit_pants' },
     { id: 'mekanism:mekasuit_boots' },
   ], 'mekanism:ultimate_control_circuit', 'mekanism_extras:supreme_control_circuit');
+
+    // Large Heat Generator
+    e.replaceInput([
+    { id: 'mekmm:large_heat_generator' },
+  ], 'mekanism:ultimate_fluid_tank', 'mekanism_extras:supreme_fluid_tank');
+
+      e.replaceInput([
+    { id: 'mekmm:large_heat_generator' },
+  ], 'mekanism:robit', 'mekanism_extras:supreme_tier_installer');
+
+    // Large Wind Generator
+    e.replaceInput([
+    { id: 'mekmm:large_wind_generator' },
+  ], 'mekanism:ultimate_induction_cell', 'mekanism_extras:infinite_induction_cell');
+
+      e.replaceInput([
+    { id: 'mekmm:large_wind_generator' },
+  ], 'mekanism:robit', 'mekanism_extras:infinite_tier_installer');
 });
