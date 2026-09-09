@@ -10,14 +10,16 @@ huntingBeltRevivalEntitiesBlacklist:
 - ars_nouveau:animated_head
 # A list of entity attributes that are ignored by the Ring of The Seven Deadly Sins' gluttony ability.
 ringOfSDSGluttonyAttributesBlacklist:
-- minecraft:generic.gravity
-- minecraft:generic.scale
 - minecraft:friction_modifier
 - minecraft:air_drag_modifier
+- minecraft:generic.gravity
+- minecraft:generic.scale
 - minecraft:generic.burning_time
 - minecraft:generic.movement_speed
-- minecraft:player.sneaking_speed
 - minecraft:generic.step_height
+- minecraft:player.sneaking_speed
+- minecraft:player.block_interaction_range
+- minecraft:player.entity_interaction_range
 - additionalentityattributes:generic.width
 - additionalentityattributes:generic.height
 - additionalentityattributes:generic.hitbox_scale
