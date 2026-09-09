@@ -1,3 +1,46 @@
+# Craftoria | v1.36.0
+
+_Neoforge_ 21.1.249 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.36.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.36.0.md)_
+
+### Changes/Improvements ⭐
+
+* Remove gadgets & storage quest chapters `AK`
+* Lowered chance of finding relics from 20% > 10% `AK`
+* Removed SFM enchant removal/duping `Phantom`
+* Added EMI item groups. `Phantom`
+* Revamped milestone progression for eating different foods `AK`
+* Infinite tier in mekanism now requires UU-Matter `AK`
+* Added quests for lunar events, food diversion & endgame to Welcome quest chapter `AK`
+* Added the apotheosis quest chapter `AK`
+* Nerfed apoth gem, weapon, & armor attributes by 50% `AK`
+* Removed share hovered item on Y `AK`
+* Reworked mekanism quests, now split into 3 chapters `AK`
+* Unified bio mass in recipes `AK`
+* Changed the recipe of Sigil of Temporal Dominance' `AK`
+* Xaeros settings now save between updating `AK`
+* Removed ore recipes in mekanism combiner `AK`
+* Unified quartz dust across recipes `AK`
+* Buffed Powah Reactor recipe `Phantom`
+
+### Added Mods ✅
+
+* [AE2 WCWT](https://curseforge.com/projects/1546802)
+* [Apothic Nerf](https://curseforge.com/projects/1684312)
+* [BEER - Bookshelf Extended Enchanting Reach](https://curseforge.com/projects/1274736)
+* [Cognition (Experience Obelisk)](https://curseforge.com/projects/579484)
+* [ExtendedAE-Plus](https://curseforge.com/projects/1337639)
+* [ForgedPaginatedAdvancements](https://curseforge.com/projects/1264512)
+* [KubeJS NeoVitae](https://curseforge.com/projects/1595222)
+* [Mekanism:More Machine](https://curseforge.com/projects/1275257)
+* [Reliable EMI (REMI)](https://curseforge.com/projects/1411826)
+
+### Bug Fixes 🪲
+
+* Fixed incorrections in neo vitae quest chapter progression `AK`
+* Fix Graves in Spectrums dimension spawning in the ceiling `Phantom`
+* Fixed MI Overdrive Module slot not having a texture `Phantom`
+* Fixed Mining dimension missing ores `AK`
+---
 # Craftoria | v1.35.0
 
 _Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.35.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.35.0.md)_

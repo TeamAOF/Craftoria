@@ -1,0 +1,12 @@
+#Toolkit slot count. At least 18 slots are required for the two toolkit hotbars.
+# Default: 64
+# Range: 18 ~ 640
+toolkitSlotCount = 64
+#Whether the pattern management area actively refreshes provider lists while it is open.
+patternProviderActiveRefresh = true
+#Max non-empty pattern slots synced to the client per provider in the pattern management area.
+#Slots beyond this limit are hidden in the terminal (a warning is logged).
+#Large values increase packet size; the whole provider list must stay under Minecraft's 8 MiB packet limit.
+# Default: 1024
+# Range: 64 ~ 8192
+maxSyncedSlotsPerProvider = 1024

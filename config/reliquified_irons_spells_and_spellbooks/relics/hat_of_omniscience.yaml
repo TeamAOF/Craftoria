@@ -1,0 +1,12 @@
+abilitiesData:
+    abilities: {
+        }
+levelingData:
+    # Amount of experience required to level up to relic level 1
+    initialCost: 100.0
+    # Increment in experience required for each subsequent level of the relic
+    step: 100.0
+lootData:
+    # List of conditions for obtaining the relic. Supports both direct ID specification and regular expressions.
+    entries: [
+        ]

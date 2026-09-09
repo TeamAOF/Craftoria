@@ -1,0 +1,329 @@
+abilitiesData:
+    abilities:
+        phase:
+            # Highest level to which the ability can be upgraded
+            maxLevel: 10
+            # Relic level at which the ability becomes unlocked
+            requiredLevel: 0
+            # Number of leveling points needed to increase the ability level
+            requiredPoints: 1
+            stats:
+                attack_damage:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 0.5
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.25
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 2.50008
+                attack_speed:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 0.5
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.25
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 2.50008
+                max_health:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 0.5
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.25
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 1.4999
+                health_regeneration:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 0.5
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.25
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 1.4999
+                duration:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 10.0
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 5.0
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 120.0
+                modifier:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 0.25
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.1
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 1.50001
+        invisibility:
+            # Highest level to which the ability can be upgraded
+            maxLevel: 10
+            # Relic level at which the ability becomes unlocked
+            requiredLevel: 5
+            # Number of leveling points needed to increase the ability level
+            requiredPoints: 1
+            stats:
+                brightness:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 0.25
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.0
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.1
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 0.0
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 0.74995
+                cooldown:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 10.0
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 15.0
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 0.0
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 1.002
+                damage:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 0.5
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.25
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 2.50008
+        constellation:
+            # Highest level to which the ability can be upgraded
+            maxLevel: 10
+            # Relic level at which the ability becomes unlocked
+            requiredLevel: 10
+            # Number of leveling points needed to increase the ability level
+            requiredPoints: 1
+            stats:
+                star_chance:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 0.2
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.0
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.1
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 0.0
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:logarithmic
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 0.90001
+                constellation_radius:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 7.0
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 5.0
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 0.0
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 25.018
+                tremor_duration:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 1.0
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.25
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 9.998
+                explosion_radius:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 1.0
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.5
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 7.501
+                explosion_damage:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 5.0
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 1.0
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 49.99
+                star_lifetime:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 15.0
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 10.0
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 120.0225
+                stun_duration:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 2.5
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 1.0
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:logarithmic
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 10.00004
+        starfall:
+            # Highest level to which the ability can be upgraded
+            maxLevel: 10
+            # Relic level at which the ability becomes unlocked
+            requiredLevel: 15
+            # Number of leveling points needed to increase the ability level
+            requiredPoints: 1
+            stats:
+                chance:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 0.25
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.0
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.1
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 0.0
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 0.7505
+                radius:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 2.0
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 1.0
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 9.997
+                damage:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 0.5
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.25
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 4.999
+                stun:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 0.5
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.25
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 10.00125
+                bounce_chance:
+                    # Maximum base value of the stat. A random value within this range is assigned when the relic is first created
+                    maxInitialValue: 0.15
+                    # Maximum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    maxThresholdValue: 1.7976931348623157E308
+                    # Minimum base value of the stat. A random value within this range is assigned when the relic is first created
+                    minInitialValue: 0.05
+                    # Minimum threshold value for the stat, representing hard limits that cannot be surpassed through ability level upgrades or other methods
+                    minThresholdValue: 4.9E-324
+                    # Type of mathematical operation used to calculate the stat's value based on the ability level.
+                    scalingModel: relics:multiplicative_base
+                    # Value the stat reaches when both the stat quality and ability level are at their maximum.
+                    targetValue: 0.4998
+levelingData:
+    # Amount of experience required to level up to relic level 1
+    initialCost: 1000.0
+    # Increment in experience required for each subsequent level of the relic
+    step: 100.0
+lootData:
+    # List of conditions for obtaining the relic. Supports both direct ID specification and regular expressions.
+    entries:
+    -   biomes:
+        - .*
+        dimensions:
+        - minecraft:the_end
+        tables:
+        - '[\w]+:chests\/[\w_\/]*[\w]+[\w_\/]*'
+        weight: 100
+    -   biomes:
+        - .*
+        dimensions:
+        - .*
+        tables:
+        - '[\w]+:chests\/[\w_\/]*(end|stronghold)[\w_\/]*'
+        weight: 500

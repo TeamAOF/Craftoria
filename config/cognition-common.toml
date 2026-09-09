@@ -1,0 +1,147 @@
+["Allowed Experience Fluids"]
+	#Add IDs of fluids you want the obelisk to support here in the form mod_id:fluid_name. Fluids have to be tagged forge:experience.
+	AllowedFluids = ["mob_grinding_utils:fluid_xp", "cofh_core:experience", "industrialforegoing:essence", "sophisticatedcore:xp_still", "enderio:fluid_xp_juice_still", "reliquary:xp_still"]
+
+["Experience Obelisk Capacity"]
+	#The fluid capacity of the obelisk in mB. Default = 100000000, which is ~1072 levels' worth. Ensure that the new value is divisible by 20.
+	#Warning: setting this value above the default may lead to unintended loss or gain of XP. This is due to a rounding error in Minecraft's XP handling
+	# Default: 100000000
+	# Range: 1000 ~ 2147483640
+	Capacity = 100000000
+
+["Enlightened Amulet"]
+	#The range of the enlightened amulet in blocks. Accepts decimals.
+	# Default: 8.0
+	# Range: 1.0 ~ 16.0
+	Range = 8.0
+	#Whether the enlightened amulet ignores orbs spawned by Experience Fountains.
+	IgnoresFountainOrbs = true
+	#Whether the enlightened amulet ignores orbs spawned by Infected Bookshelves.
+	IgnoresBookshelfOrbs = false
+
+["Binding Range"]
+	#The binding range of the Staff of Attunement & Memory Tablet in blocks. Accepts decimals.
+	#Lower this if you experience issues with bound blocks not working correctly.
+	# Default: 48.0
+	# Range: 4.0 ~ 100.0
+	Range = 48.0
+
+["Enable Name Formatting Recipes"]
+	#Whether custom recipes that allow for the changing of item name color & formatting are enabled.
+	Formatting = true
+
+["Fluorescent Jelly"]
+	#How many hunger points Fluorescent Jelly gives the player. Set to 0 to disable eating completely.
+	Nutrition = 2
+	#How much saturation Fluorescent Jelly gives the player.
+	Saturation = 1.0
+
+["Cognitive Bow"]
+	#Whether to show the projectile velocity & accuracy boost in the tooltip.
+	#Disable this if tooltip components are being displayed in the wrong order.
+	Show = true
+
+["Bookshelf Settings"]
+	#The chance that infected bookshelves of any kind drop Forgotten Dust upon decaying.
+	#Set this value to 0.0 to prevent drops from decaying bookshelves completely
+	# Default: 0.33
+	# Range: 0.0 ~ 1.0
+	DropDustChance = 0.33
+	#Whether Infected Bookshelves are permeable to Forgotten Dust item entities.
+	ShelvesPermeableToDust = false
+
+	["Bookshelf Settings"."Infected Bookshelves"]
+		#The minimum spawn delay of Infected Bookshelves in ticks.
+		# Default: 300
+		# Range: 1 ~ 10000
+		SpawnDelayMin = 300
+		#The maximum spawn delay of Infected Bookshelves in ticks.
+		# Default: 500
+		# Range: 1 ~ 10000
+		SpawnDelayMax = 500
+		#The XP value of spawned orbs.
+		# Default: 12
+		# Range: 1 ~ 32767
+		OrbValue = 12
+		#The number of spawns until the bookshelf decays.
+		# Default: 50
+		# Range: 1 ~ 10000
+		Spawns = 50
+		#The chance for an Infected Bookshelf to infect a valid adjacent block every second.
+		# Default: 0.02
+		# Range: 0.0 ~ 1.0
+		Infectivity = 0.02
+
+	["Bookshelf Settings"."Infected Enchanted Bookshelves"]
+		#The minimum spawn delay of Enchanted Bookshelves in ticks.
+		# Default: 300
+		# Range: 1 ~ 10000
+		SpawnDelayMin = 300
+		#The maximum spawn delay of Enchanted Bookshelves in ticks.
+		# Default: 500
+		# Range: 1 ~ 10000
+		SpawnDelayMax = 500
+		#The XP value of spawned orbs.
+		# Default: 24
+		# Range: 1 ~ 32767
+		OrbValue = 24
+		#The number of spawns until the bookshelf decays.
+		# Default: 100
+		# Range: 1 ~ 10000
+		Spawns = 100
+		#The chance for an Enchanted Bookshelf to infect a valid adjacent block every second.
+		# Default: 0.02
+		# Range: 0.0 ~ 1.0
+		Infectivity = 0.02
+
+	["Bookshelf Settings"."Infected Archiver's Bookshelves"]
+		#The minimum spawn delay of Archiver's Bookshelves in ticks.
+		# Default: 300
+		# Range: 1 ~ 10000
+		SpawnDelayMin = 300
+		#The maximum spawn delay of Archiver's Bookshelves in ticks.
+		# Default: 500
+		# Range: 1 ~ 10000
+		SpawnDelayMax = 500
+		#The XP value of spawned orbs.
+		# Default: 12
+		# Range: 1 ~ 32767
+		OrbValue = 12
+		#The number of spawns until the bookshelf decays.
+		# Default: 100
+		# Range: 1 ~ 10000
+		Spawns = 100
+		#The chance for an Archiver's Bookshelf to infect a valid adjacent block every second.
+		# Default: 0.02
+		# Range: 0.0 ~ 1.0
+		Infectivity = 0.02
+
+["Agar Settings"]
+	#The bonus that Insightful & Extravagant Agar apply to bookshelves sharing a face.
+	# Default: 1.35
+	# Range: 0.0 ~ 4.0
+	AgarFaceBonus = 1.35
+	#The bonus that Insightful & Extravagant Agar apply to bookshelves sharing an edge.
+	# Default: 1.15
+	# Range: 0.0 ~ 4.0
+	AgarEdgeBonus = 1.15
+	#The bonus that Insightful & Extravagant Agar apply to bookshelves sharing a vertex.
+	# Default: 1.1
+	# Range: 0.0 ~ 4.0
+	AgarVertexBonus = 1.1
+	#Whether Agar blocks emit light. Set this to false if you are using intensive shader settings and are experiencing fps drops.
+	AgarEmitsLight = true
+	#Whether Agar blocks are permeable to Forgotten Dust item entities.
+	AgarPermeableToDust = false
+	#The chance for a Nutrient Agar block to infect a valid adjacent block every second.
+	# Default: 0.005
+	# Range: 0.0 ~ 1.0
+	NutrientAgarInfectivity = 0.005
+	#The chance for an Insightful Agar block to infect a valid adjacent block every second.
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	InsightfulAgarInfectivity = 0.01
+	#The chance for an Extravagant Agar block to infect a valid adjacent block every second.
+	# Default: 0.02
+	# Range: 0.0 ~ 1.0
+	ExtravagantAgarInfectivity = 0.02

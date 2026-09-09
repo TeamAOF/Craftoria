@@ -50,8 +50,8 @@
 				item: { count: 1, id: "mekanism:pellet_antimatter" }
 				type: "item"
 			}]
-			x: 14.100000000000003d
-			y: 1.0999999999999999d
+			x: 14.1d
+			y: 1.55d
 		}
 		{
 			dependencies: ["79515634992D02A3"]
@@ -67,7 +67,7 @@
 				type: "item"
 			}]
 			x: 14.100000000000003d
-			y: -0.2d
+			y: -0.19d
 		}
 		{
 			dependencies: ["44D8D30BCD48C4C9"]
@@ -99,8 +99,8 @@
 				item: { count: 1, id: "mekanism:atomic_disassembler" }
 				type: "item"
 			}]
-			x: 10.1d
-			y: -1.35d
+			x: 7.8d
+			y: -1.65d
 		}
 		{
 			dependencies: ["40EB78C0AF30096E"]
@@ -285,8 +285,8 @@
 				item: { count: 1, id: "mekanism:digital_miner" }
 				type: "item"
 			}]
-			x: 10.1d
-			y: -0.25d
+			x: 6.75d
+			y: -1.65d
 		}
 		{
 			dependencies: ["21E51BEA3B8E3EDC"]
@@ -400,23 +400,6 @@
 			]
 			x: 7.7d
 			y: 4.55d
-		}
-		{
-			dependencies: ["1D482F0D9AF8D17E"]
-			id: "56C5ECD3430B6A55"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5088510B93B762CE"
-				table_id: 2077077515542683993L
-				type: "random"
-			}]
-			tasks: [{
-				id: "6062D34004392C3A"
-				item: { count: 1, id: "mekanism:hdpe_elytra" }
-				type: "item"
-			}]
-			x: 10.1d
-			y: 0.8d
 		}
 		{
 			dependencies: ["534B63750942C433"]
@@ -578,7 +561,7 @@
 				type: "item"
 			}]
 			x: 11.25d
-			y: 3.45d
+			y: 2.25d
 		}
 		{
 			dependencies: [
@@ -665,23 +648,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["1D482F0D9AF8D17E"]
-			id: "247E497BC6DE25CE"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1D1B1430B04B68C9"
-				table_id: 2077077515542683993L
-				type: "random"
-			}]
-			tasks: [{
-				id: "6CD0F1533A23D5FD"
-				item: { count: 1, id: "mekanism:robit" }
-				type: "item"
-			}]
-			x: 6.7d
-			y: -1.65d
-		}
-		{
 			dependencies: ["5021D7D55A0B3533"]
 			id: "27B6C6079B5FE918"
 			rewards: [{
@@ -743,7 +709,7 @@
 				type: "item"
 			}]
 			x: 11.25d
-			y: 2.2500000000000004d
+			y: 3.45d
 		}
 		{
 			dependencies: ["508A650402DC24F5"]
@@ -759,7 +725,7 @@
 				type: "item"
 			}]
 			x: 12.650000000000004d
-			y: 2.2500000000000004d
+			y: 3.45d
 		}
 		{
 			dependencies: ["462944FD21A92AED"]
@@ -823,31 +789,7 @@
 				type: "item"
 			}]
 			x: 14.110000000000005d
-			y: 2.2500000000000004d
-		}
-		{
-			dependencies: ["1D482F0D9AF8D17E"]
-			id: "1F9A1456487655B0"
-			rewards: [{
-				id: "255F4EAE35ECF809"
-				table_id: 2077077515542683993L
-				type: "random"
-			}]
-			tasks: [
-				{
-					id: "4834A40F6B93A63E"
-					item: { count: 1, id: "mekanism:teleporter" }
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "63BA13F30F620A1E"
-					item: { count: 1, id: "mekanism:teleporter_frame" }
-					type: "item"
-				}
-			]
-			x: 7.8d
-			y: -1.65d
+			y: 3.45d
 		}
 		{
 			dependencies: [
@@ -915,6 +857,134 @@
 			}]
 			x: 1.35d
 			y: 4.2d
+		}
+		{
+			dependencies: ["3B0AB80C9FAD48F2"]
+			id: "4910472BC0B2C21F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3135073919E64D69"
+				table_id: 2077077515542683993L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3A453878C6E7BB6D"
+				item: { count: 1, id: "mekmm:uu_matter" }
+				type: "item"
+			}]
+			x: 14.1d
+			y: -2.3d
+		}
+		{
+			dependencies: [
+				"3B0AB80C9FAD48F2"
+				"51AA69CA71174757"
+			]
+			id: "4E4D64D09F7C66A5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4F38828B898945D3"
+					table_id: 2077077515542683993L
+					type: "random"
+				}
+				{
+					id: "4EDA4F8156A03C51"
+					item: {
+						count: 1
+						id: "mekanism_extras:alloy_shining"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "63613350211051DD"
+				item: { count: 1, id: "mekanism_extras:cosmic_control_circuit" }
+				type: "item"
+			}]
+			x: 11.25d
+			y: -0.19999999999999996d
+		}
+		{
+			dependencies: ["4E4D64D09F7C66A5"]
+			id: "622ED4F67300C2F5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4CF6C42B34541552"
+					table_id: 2077077515542683993L
+					type: "random"
+				}
+				{
+					id: "3B2B05FCEE32FA15"
+					item: {
+						count: 1
+						id: "mekanism_extras:alloy_spectrum"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "500CE0870EF027E4"
+				item: { count: 1, id: "mekanism_extras:infinite_control_circuit" }
+				type: "item"
+			}]
+			x: 11.25d
+			y: -1.45d
+		}
+		{
+			dependencies: ["566D039774A4DB9D"]
+			id: "51AA69CA71174757"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "14BE52BD79A8D891"
+					table_id: 2077077515542683993L
+					type: "random"
+				}
+				{
+					id: "4856FB201DB553F8"
+					item: {
+						count: 1
+						id: "mekanism_extras:alloy_thermonuclear"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "384E381EB55F10F5"
+				item: { count: 1, id: "mekanism_extras:supreme_control_circuit" }
+				type: "item"
+			}]
+			x: 11.25d
+			y: 1.0000000000000002d
+		}
+		{
+			dependencies: ["69B079DABB860AEF"]
+			id: "2AB012D0C1DCD827"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "40D06031ABBDBD97"
+					table_id: 2077077515542683993L
+					type: "random"
+				}
+				{
+					id: "76D9FA1CE7984B8A"
+					item: {
+						count: 1
+						id: "mekanism_extras:alloy_radiance"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "748DFF687D61C7C4"
+				item: { count: 1, id: "mekanism_extras:absolute_control_circuit" }
+				type: "item"
+			}]
+			x: 8.45d
+			y: -0.25d
 		}
 	]
 }

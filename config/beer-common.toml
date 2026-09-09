@@ -1,0 +1,18 @@
+#Enable item-based enchanting table modifications. Default: true
+enableItemModifiers = true
+#Amount each item use modifies the range. Default: 1
+# Default: 1
+# Range: 1 ~ 10
+modifierAmountPerUse = 1
+#Maximum item modifiers allowed per axis (positive or negative). Default: 5
+# Default: 5
+# Range: 1 ~ 32
+maxItemModifiersPerAxis = 5
+#Whether items are consumed when modifying enchanting tables. Default: true
+consumeItems = true
+#Enable XP costs for item modifiers. Increasing costs XP, decreasing gives XP back. Default: false
+enableXpCosts = false
+#XP cost per modifier level. Increasing costs this much XP, decreasing gives back this much XP. Default: 50
+# Default: 50
+# Range: > 1
+xpCostPerModifier = 50

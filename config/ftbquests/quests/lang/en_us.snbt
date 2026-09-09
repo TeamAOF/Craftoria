@@ -1,5 +1,6 @@
 {
 	chapter.001B56BD678E7745.title: "Powah"
+	chapter.0138B258F57524B9.title: "Cultivation"
 	chapter.01B56BD678E7745B.title: "Powah"
 	chapter.04AD21E8ACC60AFD.title: "PneumaticCraft"
 	chapter.0597AF3E8B286CFA.title: "Ars Nouveau"
@@ -7,6 +8,7 @@
 	chapter.08639B8433F4CD50.title: "&2Nature's Blessing"
 	chapter.09343C303E49C46F.title: "Mekanism: Power"
 	chapter.0A7BE8A17BDD53E9.title: "Neo Vitae"
+	chapter.0CB064DDBC477A56.title: "Culinary Arts"
 	chapter.0CF7A598566497C7.title: "&6Completionist"
 	chapter.1910D05CD66EC477.title: "Fishing"
 	chapter.1CFBA632673ABBFD.title: "Organized Storage"
@@ -27,11 +29,11 @@
 	chapter.58ABCA8D818937AA.title: "Mekanism: Logistics"
 	chapter.5A3894BACC5E8994.title: "Theurgy"
 	chapter.5BF964A2F3CAA6E8.title: "Transportation"
+	chapter.61F4FCD929EE04DC.title: "Apotheosis"
 	chapter.679ED31B5B1D91DA.title: "Replication"
 	chapter.6A5B4531418CC297.title: "Modern Industrialization"
 	chapter.70FFEE37C7ABD690.title: "Applied Energistics"
 	chapter.7269FD2B5B0F0424.title: "Occultism"
-	chapter.7B329826EADF9720.title: "Gadgets"
 	chapter.7DAD240FB8B141AC.title: "Apothic Enchanting"
 	chapter_group.01BEAD68B1D370D3.title: "&8&lMagic&r &d✡"
 	chapter_group.04696DE4EC4D4A94.title: "&8&lLogistics &b모"
@@ -161,6 +163,23 @@
 	quest.0190B84440390307.title: "milestones/reveal_colored_trees_k"
 	quest.0190F6A2514D43A0.title: "unlocks/pylons/topaz_pylon"
 	quest.01A6F161BE896642.title: "unlocks/blocks/moonstone_semi_permeable_glass"
+	quest.01D3ED8EDE07740B.quest_desc: [
+		"The &6Pinnacle&r is the highest World Tier."
+		""
+		"Equip a complete set of &5Epic&r Affix Gear:"
+		""
+		"&5Epic Helmet"
+		"&5Epic Chestplate"
+		"&5Epic Leggings"
+		"&5Epic Boots"
+		"&5Epic Weapon"
+		""
+		"Then defeat the &cEnder Dragon&r."
+		""
+		"Complete both requirements to reach the &6Pinnacle&r."
+	]
+	quest.01D3ED8EDE07740B.quest_subtitle: "The final World Tier awaits."
+	quest.01D3ED8EDE07740B.title: "&z&lPinnacle"
 	quest.01E8A006742F7A00.quest_desc: [
 		"By default, the Actuator's storage space is not the largest."
 		""
@@ -447,6 +466,17 @@
 		"  Check the outputs in &6EMI&r and make sure you know that the drill has a chance of breaking, so don't just make 1."
 	]
 	quest.0729CB454B970201.title: "Bronze Drill"
+	quest.07428CAC35BEA69B.quest_desc: [
+		"The &5Reforging Table&r provides a more powerful way to reshape your Affix Gear."
+		""
+		"Place an Affix Item inside to replace its current Affixes with a new combination."
+		""
+		"Reforging uses &6Rarity Materials&r and reforging resources."
+		""
+		"Use it when an item's rarity and potential are worth keeping, but its Affixes aren't."
+	]
+	quest.07428CAC35BEA69B.quest_subtitle: "Good gear can still have bad Affixes."
+	quest.07428CAC35BEA69B.title: "&dReforge Your Gear"
 	quest.0759B7F600186AEE.title: "unlocks/reagents/aether_vestiges"
 	quest.07681F1014BDE3EC.title: "unlocks/enchantments/inventory_insertion"
 	quest.07701C64A0D9692D.title: "unlocks/head_fusion/nightdew_recipes"
@@ -585,9 +615,19 @@
 	quest.0931F12CD1767D8A.title: "unlocks/blocks/pure_pastel_network"
 	quest.09336DBAFB15EF52.quest_desc: ["The &bAdvanced Mechanical Pipe&r has a per-pipe capacity of &98,000mb&r and a per-\"&apull&r\" pipe flow rate of &91,000mb/t&r."]
 	quest.09336DBAFB15EF52.title: "Advanced Mechanical Pipe"
-	quest.0935BFDC4F0B4C6C.quest_desc: ["Expand your &bAra Vitae&r to its third tier and prepare your network for more powerful transmutations."]
-	quest.0935BFDC4F0B4C6C.quest_subtitle: "Your blood network is beginning to evolve."
-	quest.0935BFDC4F0B4C6C.title: "The Third Circle"
+	quest.0935BFDC4F0B4C6C.quest_desc: [
+		"It's time to expand your Ara Vitae."
+		""
+		"Add a second ring of &d16 Runes&f, one level lower and farther out than the first."
+		""
+		"The new positions give you more room for &dSpecialized Runes&f, allowing you to further customize your altar."
+		""
+		"Complete the four pillars and cap them with &dBlood Stained Glass&f."
+		""
+		"Your altar now contains &d24 Runes&f."
+	]
+	quest.0935BFDC4F0B4C6C.quest_subtitle: "The altar grows"
+	quest.0935BFDC4F0B4C6C.title: "The Second Circle"
 	quest.0953429970AEBCDF.title: "unlocks/food/rabbit_poison"
 	quest.095BF2791DB52A57.title: "unlocks/glowblocks/magenta_glowblock"
 	quest.097ACA8114CD8DA8.quest_desc: ["The &bElite Crushing Factory&r can process up to &a7&r crushing processes at the same time, containing the same \"&eAuto-Sort&r\" function."]
@@ -949,6 +989,19 @@
 	quest.0F9C5537FE9B18AE.title: "triggers/hints/failing_page1"
 	quest.0FA3C7049E71EA4A.quest_desc: ["You planning on owning a &bQuarry&f anytime soon?"]
 	quest.0FA3C7049E71EA4A.title: "64k Storage Component"
+	quest.0FC1A7168D389575.quest_desc: [
+		"Your Ara Vitae continues to grow."
+		""
+		"Add a fourth ring of &d48 Runes&f, once again one level lower and farther out."
+		""
+		"Use &dSpecialized Runes&f to tailor the altar toward your needs, or use their &5Reinforced&f variants for even stronger effects."
+		""
+		"Complete the four pillars with &4Hellforged Blocks&f."
+		""
+		"Your altar now contains &d100 Runes&f."
+	]
+	quest.0FC1A7168D389575.quest_subtitle: "Into the depths"
+	quest.0FC1A7168D389575.title: "The Fourth Circle"
 	quest.0FD8AA0E3F027C07.title: "unlocks/head_fusion/basic_recipes"
 	quest.0FDA602713778AF0.title: "Tier 3, 1:3"
 	quest.0FE33633653DE3D8.title: "milestones/unlock_pastel_node_coloring"
@@ -1317,6 +1370,17 @@
 	quest.1610E88D5231E670.quest_subtitle: "Concentrate fluids through evaporation"
 	quest.1610E88D5231E670.title: "Thermal Evaporation Controller"
 	quest.1616D2562B53A5CF.title: "unlocks/trinkets/greater_potion_pendant"
+	quest.162DAA9CC7C05079.quest_desc: [
+		"Not every Affix Item comes with the Affixes you want."
+		""
+		"The &5Simple Reforging Table&r lets you reforge equipment and replace its current Affixes with a new combination."
+		""
+		"It's a simple way to improve promising gear without needing the full reforging setup."
+		""
+		"Craft a &5Simple Reforging Table&r and try your luck."
+	]
+	quest.162DAA9CC7C05079.quest_subtitle: "Sometimes a little luck is all you need."
+	quest.162DAA9CC7C05079.title: "Simple Reforging"
 	quest.162DD68C3B91FC5E.quest_desc: [
 		"  We have a lot to cover."
 		""
@@ -1936,6 +2000,15 @@
 	quest.1D8772B99DEB6713.title: "unlocks/items/constructors_staff"
 	quest.1D8AC53A32259BAC.title: "unlocks/equipment/nectar_lance"
 	quest.1D8AE51797C03EBA.title: "hidden/collect_paltaeria_gem"
+	quest.1D9FEC69371DC538.quest_desc: [
+		"Found the perfect Affix Gear, but it doesn't have enough &bSockets&r?"
+		""
+		"A &bSigil of Socketing&r can add another socket to compatible Affix Gear."
+		""
+		"Use one to make room for another Gem."
+	]
+	quest.1D9FEC69371DC538.quest_subtitle: "The right gear deserves more sockets."
+	quest.1D9FEC69371DC538.title: "More Room"
 	quest.1DB31363F98670AC.title: "triggers/hints/paltaeria_page0"
 	quest.1DC93BC7BD5BEFD7.title: "unlocks/pylons/any_pylon"
 	quest.1DD0A8761724524C.title: "mod_integration/the_bumblezone/purple_knowing"
@@ -2280,14 +2353,20 @@
 	quest.21B6DE76E735A196.quest_desc: ["&bLiner Chasis&r and &bRotational Chassis&r &6help&r build contraptions without superglue."]
 	quest.21C20AAD334EE92F.title: "unlocks/items/bottomless_bundle"
 	quest.21E1E62AA4761EE2.quest_desc: [
-		"You might be curious as to what I meant when I mentioned these things, so I'll &6offer&r you a rundown. "
+		"There is far more to this world than simply gathering resources and building machines."
 		""
-		"If you decide not to take my &6insight&r, I won't take it harshly and will let you &abegin your journey&r. "
+		"The &eMoon&f can bring strange events to the night sky, from peaceful &aHarvest Moons&f to dangerous &cBlood Moons&f."
 		""
-		"I wish you luck."
+		"Food is more than just something to fill your hunger. Eating a &6diverse diet&f can grant powerful benefits, including &cadditional hearts&f and other effects."
+		""
+		"And if you've made it this far, don't assume you've reached the end."
+		""
+		"&5Custom bosses&f, &dendgame content&f, and challenges await those willing to push beyond the normal limits."
+		""
+		"Explore, experiment, and see how far you can take your journey."
 	]
-	quest.21E1E62AA4761EE2.quest_subtitle: "&oPick A Card. Any Card"
-	quest.21E1E62AA4761EE2.title: "&aExploration? &5Magic? &eMachines?"
+	quest.21E1E62AA4761EE2.quest_subtitle: "There’s more to this world than meets the eye."
+	quest.21E1E62AA4761EE2.title: "&9Beyond the Ordinary"
 	quest.21E51BEA3B8E3EDC.quest_desc: [
 		"&8Steel&r!"
 		""
@@ -2594,9 +2673,19 @@
 	quest.26A44EDA4AABFF6F.title: "&cWelcome &eto &aPNC"
 	quest.26AC949F1C3C6214.quest_desc: ["Brassy, black sided, and very stylish."]
 	quest.26BB351259DAB59B.title: "unlocks/trinkets/take_off_belt"
-	quest.26C7705667EB55E8.quest_desc: ["Upgrade your &bAra Vitae&r to its fourth tier by adding the required &bRunes&r and &bCapstones&r, unlocking greater &bVitae&r capacity and access to more powerful blood magic."]
-	quest.26C7705667EB55E8.quest_subtitle: "Your altar now rivals the power of ancient magic."
-	quest.26C7705667EB55E8.title: "The Fourth Circle"
+	quest.26C7705667EB55E8.quest_desc: [
+		"The Ara Vitae demands more than blood now."
+		""
+		"Add another ring of &d28 Runes&f, one level lower and farther out."
+		""
+		"More rune positions become available, giving you even greater control over your altar."
+		""
+		"Place &cBloodstone Bricks&f at the four corners to complete the circle."
+		""
+		"Your altar now contains &d52 Runes&f."
+	]
+	quest.26C7705667EB55E8.quest_subtitle: "Beyond the blood"
+	quest.26C7705667EB55E8.title: "The Third Circle"
 	quest.26CD3D7488C51839.title: "hidden/collect_all_jade_vine_products"
 	quest.26E5494402066DB9.title: "triggers/hints/stargazing_page1"
 	quest.26E8913A415EA76B.title: "unlocks/blocks/titration_barrel"
@@ -2642,6 +2731,15 @@
 		"Without anything &6connected&r to it, it's as strong as the frame, but with something &6connected&r it provides a &a1 way&r protected passage in or out of the core."
 	]
 	quest.2821236A1E8FEF73.title: "Fusion Reactor Port"
+	quest.282C623AA0870088.quest_desc: [
+		"The &bGem Cutting Table&r allows you to improve your Gems."
+		""
+		"It uses &bGem Dust&r and &6Rarity Materials&r to increase a Gem's power."
+		""
+		"Craft a &bGem Cutting Table&r and start refining your Gems."
+	]
+	quest.282C623AA0870088.quest_subtitle: "Better Gems require better tools."
+	quest.282C623AA0870088.title: "Cut to Size"
 	quest.28446B1AE6F96B4C.title: "unlocks/resources/spectral_shard"
 	quest.2857AB5D96C7AD5C.title: "unlocks/colored_lamps/blue_lamp"
 	quest.286229410FA571B7.quest_desc: ["&6Prevents&r collisions and &6controls&r the flow of scheduled trains."]
@@ -2679,6 +2777,21 @@
 	quest.2936EE38CEAB4337.quest_subtitle: "Target combat enchantments"
 	quest.2936EE38CEAB4337.title: "Tomes of Combat"
 	quest.293C22FC12999302.title: "Lunar Berries"
+	quest.2943A8844EAD8107.quest_desc: [
+		"Not all equipment is created equal."
+		""
+		"Some weapons and armor can be found with"
+		"powerful &dAffixes&r attached to them."
+		""
+		"These Affixes can grant everything from"
+		"increased damage and durability to entirely"
+		"new abilities."
+		""
+		"Find your first piece of &dAffix Gear&r and"
+		"begin your journey into Apotheosis."
+	]
+	quest.2943A8844EAD8107.quest_subtitle: "There is more to your gear than meets the eye."
+	quest.2943A8844EAD8107.title: "&5A New Power"
 	quest.294687276C7FEA05.title: "hidden/collect_vanilla/wither_skeleton_skull"
 	quest.294DAE3110CB6162.title: "milestones/unlock_complex_reagents"
 	quest.294F8A492B54F540.title: "hidden/status_effects/magic_annulation"
@@ -2800,6 +2913,16 @@
 		"Each \"&apull&r\" tube is limited to &964,000mb/t&r."
 	]
 	quest.2AABAC42E7880AA1.title: "Elite Pressurized Tube"
+	quest.2AB012D0C1DCD827.quest_desc: [
+		"The &eAbsolute Control Circuit&r pushes &bMekanism&r circuitry beyond the &6Ultimate&r tier."
+		""
+		"Crafted by combining an &6Ultimate Control Circuit&r with &eRadiant Alloy&r, these circuits are the foundation for the next generation of &5endgame machinery&r."
+		""
+		"The &eAbsolute&r tier unlocks powerful factories, energy systems, storage, and eventually the &cSupreme Control Circuit&r."
+		""
+		"&6One step closer to the absolute limit.&r"
+	]
+	quest.2AB012D0C1DCD827.quest_subtitle: "Absolute precision"
 	quest.2AB5183A0BD8D387.quest_desc: [
 		"Used to multiply you crafting speed without taking up the space"
 		""
@@ -3064,14 +3187,30 @@
 	]
 	quest.2E73C8EDF463F426.title: "unlocks/gemstone_lights/any"
 	quest.2E7A46639993CCDE.quest_desc: [
-		"Any world will have secrets &6hidden&r beyond the visible, whether that be tucked &6under the surface&r or in a completely different &6dimension&r."
+		"Every world has secrets hidden beyond the visible, whether underground or in distant dimensions."
 		""
-		"Never overlook something that looks &6out of place&r, you might just discover something new."
+		"Sometimes, you don't even need to leave home to find something unusual."
 		""
-		"Confidence is a good thing, but always stay &6geared up&r and &6safe&r; it might save your life one day."
+		"The moon can bring special events to the night sky, each changing how you spend the night."
+		""
+		"&aHarvest Moon"
+		"A great time to harvest your crops, with increased drops from eligible crops."
+		""
+		"&9Blue Moon"
+		"A lucky night that grants a Luck effect, making it a great time for fishing and other Luck-based activities."
+		""
+		"&cBlood Moon"
+		"A dangerous night where hostile mobs become far more threatening, and sleeping won't save you."
+		""
+		"&5Super Moon"
+		"A giant moon that makes it easier to find slimes."
+		""
+		"Some events also have &6Super variants&r, making their effects even stronger."
+		""
+		"Keep an eye on the moon and the messages announcing each event. You never know when the night might be worth staying awake for."
 	]
 	quest.2E7A46639993CCDE.quest_subtitle: "Around the mountain she comes!"
-	quest.2E7A46639993CCDE.title: "&bExploration!"
+	quest.2E7A46639993CCDE.title: "&bLunar Events"
 	quest.2E81F371817EC492.title: "hidden/entity_interact/eraser"
 	quest.2E883FCCA2FB281B.quest_desc: ["By setting up two &bQuantum Rings&f, you can connect your &bME System&f to anywhere in the world. Connect the first one to your &bME System&f and the second one where you wish to have your &bME System&f linked. You'll need 2 &bEntangled Singularities&f, place one of them in each &bQuantum Ring&f, after which they'll be linked together."]
 	quest.2E883FCCA2FB281B.quest_subtitle: "A piece of art"
@@ -3656,6 +3795,27 @@
 		""
 		"I mean, come on—the first time you &6drove&r a train in Create felt awesome, didn’t it? Damn right."
 	]
+	quest.382C37A47810F0CF.quest_desc: [
+		"Affix Gear comes in five rarities:"
+		""
+		"&7Common&r — Basic equipment with few special stats."
+		"&aUncommon&r — More Affixes and occasional Gem Sockets."
+		"&9Rare&r — Multiple Affixes with Sockets becoming more common."
+		"&5Epic&r — Powerful effect Affixes and multiple Gem Sockets."
+		"&6Mythic&r — Maximum Affixes and the strongest stats."
+		""
+		"To reach the &6Frontier&r, equip a complete set of &7Common&r Affix Gear:"
+		""
+		"&7Common Helmet"
+		"&7Common Chestplate"
+		"&7Common Leggings"
+		"&7Common Boots"
+		"&7Common Weapon"
+		""
+		"Use &fCtrl + T&r to manage your World Tier."
+	]
+	quest.382C37A47810F0CF.quest_subtitle: "Reach World Tier: Frontier"
+	quest.382C37A47810F0CF.title: "&aThe Frontier"
 	quest.3845860EEADB2093.title: "unlocks/food/reprise"
 	quest.384DA51D9FA435CA.title: "unlocks/items/ink_assortment"
 	quest.384E0A6178B5AA5B.quest_desc: ["Craft your first &bReinforced Rune&r and unlock stronger modifications for your &bAra Vitae&r."]
@@ -3689,6 +3849,23 @@
 	]
 	quest.38E1A4E0A032E377.quest_subtitle: "Remote transferrence"
 	quest.38E1A4E0A032E377.title: "Storage Access"
+	quest.38E5EBCA2079EF22.quest_desc: [
+		"The &6Ascent&r demands stronger gear and a stronger opponent."
+		""
+		"Equip a complete set of &aUncommon&r Affix Gear:"
+		""
+		"&aUncommon Helmet"
+		"&aUncommon Chestplate"
+		"&aUncommon Leggings"
+		"&aUncommon Boots"
+		"&aUncommon Weapon"
+		""
+		"Then defeat an &cApothic Invader&r."
+		""
+		"Complete both requirements to reach the &6Ascent&r."
+	]
+	quest.38E5EBCA2079EF22.quest_subtitle: "The Frontier was only the beginning."
+	quest.38E5EBCA2079EF22.title: "&6The Ascent"
 	quest.38EF4E7FE82B62A6.quest_subtitle: "Never be late, be late, for a very important date."
 	quest.38F4C0DE98642F73.title: "unlocks/blocks/item_bowl"
 	quest.390323A83EB8009A.quest_desc: [
@@ -3889,16 +4066,24 @@
 	quest.3BF97D7E831330C3.title: "unlocks/pylons/citrine_pylon"
 	quest.3C030EEDD604F040.title: "unlocks/blocks/ominous_sapling"
 	quest.3C1D103FCEF249C8.quest_desc: [
-		"Don't you just &clove&r the aroma of &8smoke&r and &egasoline fumes&r? "
+		"The journey doesn't end when you reach the end."
 		""
-		"&4Don't pollute the world too much&r! "
+		"Beyond the usual progression lies a &5custom endgame&r built specifically to push your limits."
 		""
-		"I guess it might be a good &btrade off&r; lazy equals &cpollution&r! "
+		"&bPowerful machines&r, &dunique recipes&r, &6custom materials&r, and &cdeadly bosses&r await those who are prepared to go further."
 		""
-		"&6Use&r the &bGuide Books&r you get, they will be &avery helpful&r!"
+		"Some challenges will demand more than just good equipment. You'll need to master your machines, optimize your gear, and make use of everything you've learned along the way."
+		""
+		"And when you think you've reached the top..."
+		""
+		"&5Something even stronger may be waiting.&r"
+		""
+		"The end isn't the destination."
+		""
+		"&6It's only the beginning of the real challenge.&r"
 	]
-	quest.3C1D103FCEF249C8.quest_subtitle: "&o*AGGRESSIVE FACTORY NOISES*"
-	quest.3C1D103FCEF249C8.title: "&eMachines?"
+	quest.3C1D103FCEF249C8.quest_subtitle: "The real challenge starts here."
+	quest.3C1D103FCEF249C8.title: "&dBeyond the End"
 	quest.3C2B6ABA8420BF3B.title: "Mangos"
 	quest.3C3519AFEBBAEC70.quest_desc: [
 		"  &bPistons&r use rotational force to extend a rod out with a lot of possible force."
@@ -3907,6 +4092,23 @@
 	]
 	quest.3C3519AFEBBAEC70.quest_subtitle: "Metal Punch"
 	quest.3C3519AFEBBAEC70.title: "Pistons"
+	quest.3C5915D24087ED3D.quest_desc: [
+		"The &6Summit&r demands even better equipment."
+		""
+		"Equip a complete set of &9Rare&r Affix Gear:"
+		""
+		"&9Rare Helmet"
+		"&9Rare Chestplate"
+		"&9Rare Leggings"
+		"&9Rare Boots"
+		"&9Rare Weapon"
+		""
+		"Then defeat the &cWither&r."
+		""
+		"Complete both requirements to reach the &6Summit&r."
+	]
+	quest.3C5915D24087ED3D.quest_subtitle: "Only the strongest reach the top."
+	quest.3C5915D24087ED3D.title: "&4The Summit"
 	quest.3C6E442CEB73191F.quest_desc: [
 		"The &bGas-Burning Generator&r can use a plethora of &cflammable gases&r to generate &eelectricity&r. "
 		""
@@ -4058,6 +4260,17 @@
 	quest.3F6730383CCC8BB0.quest_desc: ["Don’t be fooled… it may appear similar to the humble &bcauldron,&r but is flexible enough to work with &bBelts&r, &bFluid Pipes&r, and &bMechanical Mixers&r and &bPresses&r—&6enabling&r the automation of many recipes."]
 	quest.3F6AE77956C0C242.title: "unlocks/blocks/colored_spore_blossoms"
 	quest.3F7184426BDAB333.title: "mod_integration/the_bumblezone/lime_life"
+	quest.3F72C49DDD72A5AD.quest_desc: [
+		"The &5Augmenting Table&r lets you improve individual Affixes."
+		""
+		"Use &5Sigils of Enhancement&r to upgrade an Affix or reroll it."
+		""
+		"Unlike reforging, you can work on a specific Affix without replacing the entire set."
+		""
+		"Use augmentation to fine-tune your best equipment."
+	]
+	quest.3F72C49DDD72A5AD.quest_subtitle: "Good Affixes can become great ones."
+	quest.3F72C49DDD72A5AD.title: "Perfect the Affix"
 	quest.3F73EC8E087E2920.quest_desc: [
 		"The &bBurning Spawner Rune&f adds a fiery effect to mobs spawned by the spawner."
 		""
@@ -4206,6 +4419,18 @@
 	quest.418CB5EC1FE8CB1A.quest_desc: ["Use the &bAra Vitae&r to create your first &bNovicius Orb of Vitae&r."]
 	quest.418CB5EC1FE8CB1A.quest_subtitle: "Blood is the price. Power is the reward."
 	quest.418CB5EC1FE8CB1A.title: "The First Sacrifice"
+	quest.41986354B4227FFE.quest_desc: [
+		"Some Affix Gear come with empty &bSockets&r."
+		""
+		"To socket a Gem, use a &fSmithing Table&r."
+		""
+		"Place your &dAffix Gear&r in the left slot and an &bApothic Gem&r in the right slot."
+		""
+		"If the item has an available socket, the Gem will be added to the equipment and its bonuses will take effect."
+		""
+		"Choose your Gems carefully - their effects can make a major difference to your build."
+	]
+	quest.41986354B4227FFE.quest_subtitle: "Your Gems need somewhere to go."
 	quest.41A6A67501853BDF.title: "unlocks/items/pipe_bomb"
 	quest.41BFB47E0B652609.title: "unlocks/food/gin"
 	quest.41D1344A31FEA6DF.quest_desc: [
@@ -4724,6 +4949,12 @@
 	quest.48F4ED8C915995DC.title: "Ignore Conditions Spawner Rune"
 	quest.490893BE626478EF.title: "hidden/collect_pigment/lime"
 	quest.490DAA80628EDA26.title: "milestones/reveal_blood_orchid_petals"
+	quest.4910472BC0B2C21F.quest_desc: [
+		"&dUU-Matter&r is a highly advanced material from &bMekanism: MoreMachine&r, created through the manipulation of &bantimatter&r."
+		""
+		"It’s an incredibly powerful resource used for crafting some of the most advanced machines and materials in the pack."
+	]
+	quest.4910472BC0B2C21F.quest_subtitle: "A Material Beyond Matter"
 	quest.4914DA1D409FF641.title: "unlocks/reagents/moonstone_powder"
 	quest.4915063F38BA7C3C.title: "unlocks/ampoules/pure_bloodstone_ampoule"
 	quest.493D07C3866529A2.title: "unlocks/reagents/amethyst_powder"
@@ -5013,6 +5244,16 @@
 	]
 	quest.4E3578FC24ACF39B.quest_subtitle: "Items... Hold Still!"
 	quest.4E40590273222C82.title: "unlocks/reagents/citrine_powder"
+	quest.4E4D64D09F7C66A5.quest_desc: [
+		"The &dCosmic Control Circuit&r pushes &bMekanism&r's circuitry beyond conventional limits."
+		""
+		"Crafted by combining a &6Supreme Control Circuit&r with &dShining Alloy&r, these circuits are required for some of the most &5advanced&r machinery available."
+		""
+		"If you thought &6Supreme&r was the end of the road, think again."
+		""
+		"&dThe cosmos awaits.&r"
+	]
+	quest.4E4D64D09F7C66A5.quest_subtitle: "Control on a cosmic scale"
 	quest.4E52622A45D0C018.title: "hidden/visit_dd_biomes/deep_barrens"
 	quest.4E56C9A5F225A883.quest_subtitle: "A way to tick accelerate blocks."
 	quest.4E56C9A5F225A883.title: "&6Gadgets Against Grind"
@@ -5310,6 +5551,18 @@
 	]
 	quest.51710E8906D3A164.title: "unlocks/colored_lamps/black_lamp"
 	quest.51A8026A0F8A83B1.quest_desc: ["Emeralds can be found while mining, exploring, or trading with villagers and is used to craft the Evocation Scrolls."]
+	quest.51AA69CA71174757.quest_desc: [
+		"The &cSupreme Control Circuit&r takes &bMekanism&r circuitry to a whole new level."
+		""
+		"Crafted by combining an &eAbsolute Control Circuit&r with &cThermonuclear Alloy&r, these circuits unlock some of the most &5powerful&r machines and infrastructure available."
+		""
+		"But Supreme is far from the end."
+		""
+		"&dCosmic&r and &zInfinite&r circuits await beyond this tier, pushing your technology even further."
+		""
+		"&6The real endgame starts here.&r"
+	]
+	quest.51AA69CA71174757.quest_subtitle: "The next level of control"
 	quest.51B466B08FCE34C4.title: "unlocks/trinkets/ring_of_denser_steps"
 	quest.51B59A987F916C7A.quest_desc: [
 		"A portable storage device that can store from &a256&r up to &c1 BILLION&r items per slot."
@@ -5516,6 +5769,22 @@
 	quest.541C68336E6C7510.title: "Basic Crushing Factory"
 	quest.545750D0050FBCE5.title: "hidden/collect_rock_candy"
 	quest.54610795321AD33F.title: "unlocks/food/gatorwine"
+	quest.546445899EA26829.quest_desc: [
+		"Apothic Gems have different levels of &bPurity&r."
+		""
+		"&7Cracked&r"
+		"&aChipped&r"
+		"&9Flawed&r"
+		"&5Normal&r"
+		"&6Flawless&r"
+		"&zPerfect&r"
+		""
+		"The &bGem Cutting Table&r can increase a Gem's Purity."
+		""
+		"Create a &bFlawless Gem&r to push your Gems to their highest normal purity."
+	]
+	quest.546445899EA26829.quest_subtitle: "A Gem's purity matters just as much as its rarity."
+	quest.546445899EA26829.title: "&6Flawless"
 	quest.5476DF2DEAE96862.title: "hidden/collect_dragonjag"
 	quest.54AEA60B155237DD.title: "unlocks/gemstone_chimes/any_chime"
 	quest.54BCC1A0203B2351.quest_desc: ["If you want to speed up the &6growth &fof your &bCrystals&f, you can &6place &bGrowth Accelerators&f adjacent to the &bBudding Block&f. The &bGrowth Accelerator&f requires power from either the top or the bottom."]
@@ -5818,8 +6087,18 @@
 	quest.5A4ABDA1103A6C98.title: "unlocks/colored_saplings/light_blue_sapling"
 	quest.5A4E9D4056DA2C67.quest_desc: ["The &bElite Universal Cable&r can hold &e409.6 kFE per cable&r in the network and each additional cable adds &e409.6 kFE/t&r to the total network trasmission rate."]
 	quest.5A4E9D4056DA2C67.title: "Elite Universal Cable"
-	quest.5A52426AC47A1FE3.quest_desc: ["Complete the final tier of the &bAra Vitae&r and prepare yourself for the ultimate Orb of Vitae."]
-	quest.5A52426AC47A1FE3.quest_subtitle: "You stand at the threshold of true mastery."
+	quest.5A52426AC47A1FE3.quest_desc: [
+		"The Ara Vitae has reached its final form."
+		""
+		"With every circle completed, more rune positions become available, allowing you to further specialize your altar with &dSpecialized Runes&f and their &5Reinforced&f variants."
+		""
+		"Complete the final circle and bring your Ara Vitae to its &5Transcendent&f potential."
+		""
+		"There is no higher circle."
+		""
+		"Whatever comes next, you'll have to discover for yourself."
+	]
+	quest.5A52426AC47A1FE3.quest_subtitle: "Beyond mortal limits"
 	quest.5A52426AC47A1FE3.title: "The Sixth Circle"
 	quest.5A5583EA02C78372.quest_desc: [
 		"An upgraded airship, with heaps of storage space."
@@ -6203,6 +6482,16 @@
 	]
 	quest.62284E06EA07E87E.title: "Tier 2 Glyphs"
 	quest.622B2BB2FBD4206B.title: "unlocks/enchantments/vanilla_luck"
+	quest.622ED4F67300C2F5.quest_desc: [
+		"The &zInfinite Control Circuit&r is the pinnacle of circuitry."
+		""
+		"Crafted from a &dCosmic Control Circuit&r and &6Shining Alloy&r, it unlocks the most &5advanced&r machinery and infrastructure available."
+		""
+		"From &aInfinite Factories&r to &4Infinite Induction&r systems, this circuit is the key to pushing your technology beyond conventional limits."
+		""
+		"&6There is no higher tier.&r"
+	]
+	quest.622ED4F67300C2F5.quest_subtitle: "Beyond the limits"
 	quest.623C03AB9B2CAC8E.title: "unlocks/glowblocks/red_glowblock"
 	quest.623CE97E3A7064D7.title: "unlocks/filtering"
 	quest.623E42BC12E14090.title: "unlocks/colored_lamps/gray_lamp"
@@ -6231,6 +6520,17 @@
 		"  &cTime for some spaghetti?&r"
 	]
 	quest.62B245A23CA62678.title: "Fluid Transportation"
+	quest.62CF33223F7108D6.quest_desc: [
+		"Not every Affix Item is worth keeping."
+		""
+		"The &5Salvaging Table&r lets you break down unwanted Affix Gear into &6Rarity Materials&r."
+		""
+		"These materials are useful for improving your equipment and progressing through Apotheosis."
+		""
+		"Craft a &5Salvaging Table&r and put your unwanted loot to use."
+	]
+	quest.62CF33223F7108D6.quest_subtitle: "Unwanted gear can still be useful."
+	quest.62CF33223F7108D6.title: "Salvaging"
 	quest.62D4A797B2F27D3A.title: "milestones/reveal_colored_trees_w"
 	quest.62D623A128D69DBE.title: "unlocks/reagents/storm_stone"
 	quest.62E0363693E5DFF7.title: "hidden/collect_pigment/orange"
@@ -6315,6 +6615,18 @@
 	quest.64CF2863FA5296C1.title: "unlocks/glowblocks/yellow_glowblock"
 	quest.64D625C86F3AB75C.quest_desc: ["The Beholder makes nearby mobs &bglow&r, and &6shoots&r lasers at your &benemies&r."]
 	quest.64D625C86F3AB75C.quest_subtitle: "I'mma firin mah lazer"
+	quest.64F025DAA4A9D40C.quest_desc: [
+		"All Apotheosis Gems can be reduced to"
+		"&bGem Dust&r through crushing."
+		""
+		"One method is to crush them with an"
+		"&fAnvil&r in-world."
+		""
+		"Once you've crushed a few Gems with an"
+		"&fAnvil&r, you can create and use the"
+		"&5Salvaging Table&r instead."
+	]
+	quest.64F025DAA4A9D40C.quest_subtitle: "Not every Gem needs to remain intact."
 	quest.65043D06CD1BCB53.title: "Garlic Chives"
 	quest.650A739F152A7E40.title: "hidden/collect_vanilla/quartz"
 	quest.65210BAE0163445F.title: "Lychee"
@@ -7421,6 +7733,15 @@
 	quest.74FD59F4E07638D7.title: "unlocks/items/bag_of_holding"
 	quest.75236541ACB0E7F3.title: "hidden/collect_vanilla/glowstone_dust"
 	quest.752A279624C0F94B.title: "unlocks/reagents/topaz_powder"
+	quest.752C5D1FE766F040.quest_desc: [
+		"Two &bFlawless Gems&r of the same type and rarity can be combined at the &bGem Cutting Table&r to create a &6Perfect Gem&r."
+		""
+		"Perfect Gems represent the highest possible Purity."
+		""
+		"Create one and take your Gems to their absolute limit."
+	]
+	quest.752C5D1FE766F040.quest_subtitle: "There is no room for improvement."
+	quest.752C5D1FE766F040.title: "&z&lPerfect"
 	quest.75314301D343802D.title: "hidden/visit_dd_biomes/razor_edge"
 	quest.75328AC468F1E9FD.title: "unlocks/trinkets/puff_circlet"
 	quest.7533E0212EFE326D.quest_subtitle: "When placed facing into a &ebeehive&r, &6honey&r will be extracted in &bfluid form&r."
@@ -7661,8 +7982,16 @@
 		"- Deploying on top of an &3inventory&r containing a &bHoe&r will tell the drone to &6replant&r any &acrops&r it harvests within its area."
 	]
 	quest.79F451F9C8D02A69.quest_desc: ["Now that you have a &bConcurrent Processor &fyou can now craft some more items to help you through &aExtenedAE&f."]
-	quest.7A0A29CC4F524CEE.quest_desc: ["Expand your &bAra Vitae&r with its first ring of &bBlank Runes&r and unlock the next stage of Vitaemancy."]
-	quest.7A0A29CC4F524CEE.quest_subtitle: "The altar is only the beginning."
+	quest.7A0A29CC4F524CEE.quest_desc: [
+		"The Ara Vitae can be expanded beyond its humble beginnings."
+		""
+		"Build the first circle with &d8 Runes&f, one level below the altar."
+		""
+		"The four cardinal positions can be filled with &dSpecialized Runes&f, while the diagonal positions remain inactive for now."
+		""
+		"Choose your runes carefully - each one can change how your altar performs."
+	]
+	quest.7A0A29CC4F524CEE.quest_subtitle: "The beginning of something greater"
 	quest.7A0A29CC4F524CEE.title: "The First Circle"
 	quest.7A0D5428B17233EF.title: "unlocks/food/restoration_tea"
 	quest.7A447129529A7681.title: "unlocks/blocks/modular_explosives"
@@ -7740,16 +8069,20 @@
 	quest.7B81E0A800E42F1F.title: "&dInfinity Cells"
 	quest.7B821A8C8A97FA30.title: "Sulfur"
 	quest.7B86C9C90997B3E3.quest_desc: [
-		"&aYou heard right&r! "
+		"You hear right!"
 		""
-		"&6Harness&r the &bmana&r surrounding you and &6break the limits&r of what's possible! "
+		"Eating a variety of foods isn't just good for your appetite."
 		""
-		"&6Use&r &dmagic&r to &6assist you&r in your &aday&r to &aday&r activites or to help &6fight off&r the &cdangers of&r &0the night&r. "
+		"Every &adifferent food&r you eat brings you closer to a permanent &cheart&r increase. With &a50 milestones&r spread across all &e1,097 foods&r, there's always another reason to expand your menu."
 		""
-		"&6Discover &cthe &9impossible&r."
+		"The first heart comes at just &e10 foods&r, while the final heart requires you to discover &e1,097 unique foods&r."
+		""
+		"Your progress is tracked in the &dFood Book&r, showing which foods you've already tried and how far you are from your next milestone."
+		""
+		"&6Explore, cook, and try everything you can find!&r"
 	]
-	quest.7B86C9C90997B3E3.quest_subtitle: "&oA little hexing?"
-	quest.7B86C9C90997B3E3.title: "&5Magic?!"
+	quest.7B86C9C90997B3E3.quest_subtitle: "A little variety goes a long way!"
+	quest.7B86C9C90997B3E3.title: "&6Taste the World"
 	quest.7B88129FF5C9145F.quest_desc: [
 		"The &bRedstone Control Spawner Rune&f allows redstone to control the spawner."
 		""
@@ -7911,8 +8244,18 @@
 	quest.7E141B9A82750F83.title: "hidden/collect_ash_and_slush"
 	quest.7E3BD249213C7036.title: "unlocks/trinkets/azure_dike_belt"
 	quest.7E49DB806DD04701.quest_desc: [""]
-	quest.7E88E36EDE4C0BF0.quest_desc: ["Expand your &bAra Vitae&r to its fifth tier by adding the required &bRunes&r and &bCapstone Blocks&r, unlocking greater &bVitae&r power and access to the most advanced transmutations and rituals."]
-	quest.7E88E36EDE4C0BF0.quest_subtitle: "You are no longer merely a practitioner."
+	quest.7E88E36EDE4C0BF0.quest_desc: [
+		"One final expansion remains."
+		""
+		"Add the widest ring of &d72 Runes&f, one level below and farther out than the previous circle."
+		""
+		"With so many rune positions available, you can heavily specialize your altar with &dSpeed&f, &bCapacity&f, &eCharging&f, &cSacrifice&f and other specialized runes."
+		""
+		"Crown the four pillars with &5Crystal Clusters&f or &5Crystal Cluster Bricks&f."
+		""
+		"Your Ara Vitae now contains &d172 Runes&f and has reached its maximum construction tier."
+	]
+	quest.7E88E36EDE4C0BF0.quest_subtitle: "The final ascent"
 	quest.7E88E36EDE4C0BF0.title: "The Fifth Circle"
 	quest.7EAA0A13EF60E267.title: "hidden/visit_dd_biomes/deep_barrens"
 	quest.7EBDCA060A3CC055.title: "unlocks/blocks/shimmerstone_lights"
@@ -8160,6 +8503,7 @@
 	task.0B2C0AF7B7B4B841.title: "Thermodynamic Conductors"
 	task.0B9C85688F6EEAFB.title: "Fluid Tanks"
 	task.0BA54BE324AE1978.title: "How Delightful!"
+	task.0D4D94F0997C1769.title: "Reach World Tier: Ascent"
 	task.0D974A2537B460E2.title: "Upgrades AAAAAAAAAAAAHHHHHHHHH"
 	task.0FA270C84C6558F4.title: "Clean Slurry"
 	task.0FF55D7FA5CEAD32.title: "Any #c:seeds/flax"
@@ -8234,9 +8578,12 @@
 	task.46DBAE66F97438E6.title: "Runes"
 	task.47F4FCBBFF748733.title: "Obtain an Initial Health Spawner Rune"
 	task.480E9CFA1CEE6479.title: "Spiritus Gems"
+	task.498AC4BAB884D0A6.title: "Reach World Tier: Summit"
+	task.4C7021388543ED23.title: "Obtain any Affix item"
 	task.4CE3EEAAF41AE050.title: "Summon a Foliot Janitor"
 	task.4D5812F798FB8C8C.title: "&dTheurgy &9100%"
 	task.4D63FA888F0497B5.title: "Summon a Cthulhu Familiar"
+	task.4E146480AAEB65FB.title: "Reach World Tier: Pinnacle"
 	task.4E775BAB4EB29C69.title: "Any #c:crops/garlic"
 	task.4F4699F9117BC270.title: "Pre-Programmed Drones"
 	task.4F7787C0557CF5CC.title: "Apo The Carist"
@@ -8253,6 +8600,7 @@
 	task.58AC1E8BBD7EAB5B.title: "Summon a Mummy Familiar"
 	task.597ECA1E95F8C178.title: "Tomes of Armor"
 	task.59BF158D97C90086.title: "Bins"
+	task.5B40B4748A49BE45.title: "Rare Materials"
 	task.5B790B22E115CEB3.title: "Obtain a Frontier Spawner Upgrade Rune"
 	task.5CB700830F80DFD8.title: "Water for Chemical Washing"
 	task.5D5634634E3879E5.title: "Summon a Bat Familiar"
@@ -8260,6 +8608,7 @@
 	task.5F8B536CAF189745.title: "Obtain a No AI Spawner Rune"
 	task.601F7C69458E7589.title: "Welcome to Theurgy"
 	task.61ADF1E6345BC7E1.title: "Any #c:raw_materials/copper"
+	task.62E5D383DDDA0BBE.title: "Fill the Socket"
 	task.63DAD8D3277DA248.title: "Evolving Manufacturing Index"
 	task.64433571E92D5E65.title: "Emotes"
 	task.644BA76D2324EF21.title: "Induction Providers"
@@ -8268,12 +8617,15 @@
 	task.65B2D0E35B083E82.title: "Survival of the Fittest"
 	task.66A70863F595A874.title: "Ritual of Harvest"
 	task.66BF2FED6B091A68.title: "Exploration!"
+	task.68AA0F8A3FADC35E.title: "Perfect Gems"
 	task.691E6AA922761E29.title: "Hooks"
+	task.6BDAFFD29A7695BF.title: "Obtain a Rare Affix Item"
 	task.6C6C366D034AF5C7.title: "Summon an Otherworld Sapling Trader"
 	task.6F144EF786A94E4E.title: "Obtain a Spawner"
 	task.6FB11D0A0557436E.title: "Leggings Tome"
 	task.708EE345AEBB270B.title: "Make ShadowPulse Soil"
 	task.7206B162C5B4E0B8.title: "Ores at Tier 1"
+	task.72F89F43852EBF65.title: "Crystal Clusters"
 	task.7376AAE3B45AD4B9.title: "Bobbers"
 	task.73A3951918C37F02.title: "Obtain an Ignore Players Spawner Rune"
 	task.73B852C41DE1F864.title: "Any #c:crops/rice"
@@ -8285,6 +8637,7 @@
 	task.753B3D09A302E973.title: "Raw Spiritus Crystals"
 	task.7617B5CAABCD437A.title: "Bloodstones"
 	task.77E3B3D6695EEA80.title: "Obtain a Spawn Range Spawner Rune"
+	task.780048015B8387EE.title: "Flawless Gems"
 	task.79D7E3E9EA637474.title: "Obtain an Ignore Light Spawner Rune"
 	task.7A0371393E813129.title: "Observe: &2Any Certus Budding&r"
 	task.7AB3BAEAA2E50F06.title: "Archevoker"
