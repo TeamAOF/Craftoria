@@ -1,4 +1,6 @@
 ClientEvents.generateAssets('after_mods', event => {
+  let debug = false;
+
   /**
    * Used to create REMI stack groups.
    * @param {import("@special/types").SpecialTypes.ModId | 'craftoria' | 'c'} mod Mod ID to use.
@@ -19,17 +21,19 @@ ClientEvents.generateAssets('after_mods', event => {
 
       Ingredient.of(elem).itemIds.forEach(id => {
         if (Item.exists(id)) group.contents.push(id);
-        else console.warn(`Item ${id} does not exist!`);
+        else console.error(`Item ${id} does not exist!`);
       });
     }
 
     if (group.contents.length == 0) {
-      console.warn(`Failed to create group ${mod}:stack_groups/${name}, it was empty!`);
+      console.error(`Failed to create group ${mod}:stack_groups/${name}, it was empty!`);
       return;
     }
 
-    console.info(`Creating group ${mod}:stack_groups/${name}:`);
-    console.info(JSON.stringify(group));
+    if (debug) {
+      console.info(`Creating group ${mod}:stack_groups/${name}:`);
+      console.info(JSON.stringify(group));
+    }
 
     event.json(`${mod}:stack_groups/${name}`, group);
   };
