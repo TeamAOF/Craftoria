@@ -7,7 +7,7 @@ ClientEvents.generateAssets('after_mods', event => {
    * Used to create REMI stack groups.
    * @param {import("@special/types").SpecialTypes.ModId | 'craftoria' | 'c'} mod Mod ID to use.
    * @param {string} name The name of the group
-   * @param {import("@special/types").RegistryTypes.ItemTag | import("@special/types").RegistryTypes.Item[] | import("@special/types").RegistryTypes.Item} data Items/Fluids/etc to group.
+   * @param {import("@package/net/minecraft/world/item/crafting").$Ingredient_} data Items/Fluids/etc to group.
    * @param {'item' | 'fluid' | 'chemical'} [type] Type of group, 'item' is assumed if missing.
    */
   let add = (mod, name, data, type) => {
@@ -594,4 +594,16 @@ ClientEvents.generateAssets('after_mods', event => {
   });
 
   add('apotheosis', 'potion_charms', 'apotheosis:potion_charm');
+  add('modern_industrialization', 'barrels', '#modern_industrialization:barrels');
+  add('woodwevegot', 'barrels', '#woodwevegot:barrels');
+  add('arts_and_crafts', 'verdrant_pietraforte', /^arts_and_crafts:.*verdrant_pietraforte/);
+  add('arts_and_crafts', 'umber_pietraforte', /^arts_and_crafts:.*umber_pietraforte/);
+  add('arts_and_crafts', 'ochre_pietraforte', /^arts_and_crafts:.*ochre_pietraforte/);
+  add('arts_and_crafts', 'marlot_pietraforte', /^arts_and_crafts:.*marlot_pietraforte/);
+  add('arts_and_crafts', 'jet_pietraforte', /^arts_and_crafts:.*jet_pietraforte/);
+  add('arts_and_crafts', 'ivory_pietraforte', /^arts_and_crafts:.*ivory_pietraforte/);
+  add('arts_and_crafts', 'hazel_pietraforte', /^arts_and_crafts:.*hazel_pietraforte/);
+  add('arts_and_crafts', 'beige_pietraforte', /^arts_and_crafts:.*beige_pietraforte/);
+  add('ae2wtlib', 'wireless_terminals', /.*:wireless.*terminal$/);
+  add('gateways', 'gate_pearls', 'gateways:gate_pearl');
 });
