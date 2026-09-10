@@ -4,11 +4,12 @@
     "kubejs",
     "modern_industrialization",
     "justdirethings",
+    "occultism",
+    "mekmm",
     "mekanism",
     "farmersdelight",
     "create",
     "createaddition",
-    "occultism",
     "irons_jewelry",
     "pneumaticcraft",
     "rusticdelight",
@@ -21,7 +22,14 @@
     "mekmm"
   ],
   "priority_overrides": {},
-  "stone_variants": ["stone", "andesite", "deepslate", "diorite", "granite", "nether"],
+  "stone_variants": [
+    "stone",
+    "andesite",
+    "deepslate",
+    "diorite",
+    "granite",
+    "nether"
+  ],
   "tags": [
     "c:dusts/{material}",
     "c:gears/{material}",
@@ -46,10 +54,23 @@
     "c:flours",
     "c:fuels/bio"
   ],
-  "ignored_tags": ["c:foods/raw_squid"],
-  "ignored_items": ["mekanism:hdpe_sheet", "farmersdelight:cabbage", "rusticdelight:calamari_slice", "industrialforegoing:iron_gear", "industrialforegoing:gold_gear", "industrialforegoing:diamond_gear"],
-  "ignored_recipe_types": ["cucumber:shaped_tag"],
-  "ignored_recipe_ids": ["rusticdelight:calamari_roll"],
+  "ignored_tags": [
+    "c:foods/raw_squid"
+  ],
+  "ignored_items": [
+    "mekanism:hdpe_sheet",
+    "farmersdelight:cabbage",
+    "rusticdelight:calamari_slice",
+    "industrialforegoing:iron_gear",
+    "industrialforegoing:gold_gear",
+    "industrialforegoing:diamond_gear"
+  ],
+  "ignored_recipe_types": [
+    "cucumber:shaped_tag"
+  ],
+  "ignored_recipe_ids": [
+    "rusticdelight:calamari_roll"
+  ],
   "recipe_viewer_hiding": true,
   "loot_unification": true,
   "ignored_loot_tables": []
