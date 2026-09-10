@@ -6,6 +6,7 @@ _Neoforge_ 21.1.249 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 
 * Remove gadgets & storage quest chapters `AK`
 * Lowered chance of finding relics from 20% > 10% `AK`
+* Nerfed tick acceleration items `Phantom`
 * Removed SFM enchant removal/duping `Phantom`
 * Added EMI item groups. `Phantom`
 * Revamped milestone progression for eating different foods `AK`
@@ -27,6 +28,7 @@ _Neoforge_ 21.1.249 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 * [AE2 WCWT](https://curseforge.com/projects/1546802)
 * [Apothic Nerf](https://curseforge.com/projects/1684312)
 * [BEER - Bookshelf Extended Enchanting Reach](https://curseforge.com/projects/1274736)
+* [Better P2P](https://curseforge.com/projects/538092)
 * [Cognition (Experience Obelisk)](https://curseforge.com/projects/579484)
 * [ExtendedAE-Plus](https://curseforge.com/projects/1337639)
 * [ForgedPaginatedAdvancements](https://curseforge.com/projects/1264512)
@@ -41,6 +43,7 @@ _Neoforge_ 21.1.249 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 * Fix Graves in Spectrums dimension spawning in the ceiling `Phantom`
 * Fixed MI Overdrive Module slot not having a texture `Phantom`
 * Fixed Mining dimension missing ores `AK`
+* Fixed warm pig variant glitching out `AK`
 ---
 # Craftoria | v1.35.0
 

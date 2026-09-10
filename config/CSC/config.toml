@@ -195,7 +195,7 @@ UUID = "07f74018-263e-4cee-9574-3cdc12c6c474"
     enableManualConfig = false
     # #----------------------------------------------------------------------
     # Enable automatic update reminders. When set to true, if CSC has vulnerabilities that require a version update to fix, a reminder will be sent
-    UpdateInfo = true
+    UpdateInfo = false
     # #----------------------------------------------------------------------
     # Upload samples classified as CannotCheck, Problem, Cheat, or modified by mod whitelist filtering. Default is true; samples are used only to improve CSC detection rules.
     report = true
