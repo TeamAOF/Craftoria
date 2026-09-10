@@ -160,7 +160,7 @@ ServerEvents.tags('item', e => {
 
   e.add('hazennstuff:wisewood_logs', '#hazennstuff:blocks/wisewood_logs');
 
-    // Silver
+  // Silver
   e.add('c:ores/silver', 'mekanism:silver_ore');
   e.add('c:ores/silver', 'mekanism:deepslate_silver_ore');
 });
@@ -273,7 +273,7 @@ ServerEvents.tags('block', e => {
 
   e.remove('sfm:anvil_disenchanting', ['minecraft:obsidian', 'minecraft:crying_obsidian']);
 
-      // Silver
+  // Silver
   e.add('c:ores/silver', 'mekanism:silver_ore');
   e.add('c:ores/silver', 'mekanism:deepslate_silver_ore');
 });
