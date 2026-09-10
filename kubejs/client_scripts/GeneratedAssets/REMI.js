@@ -5,7 +5,7 @@ ClientEvents.generateAssets('after_mods', event => {
    * Used to create REMI stack groups.
    * @param {import("@special/types").SpecialTypes.ModId | 'craftoria' | 'c'} mod Mod ID to use.
    * @param {string} name The name of the group
-   * @param {import("@special/types").RegistryTypes.ItemTag} data Items/Fluids/etc to group.
+   * @param {import("@special/types").RegistryTypes.ItemTag | import("@special/types").RegistryTypes.Item[] | import("@special/types").RegistryTypes.Item} data Items/Fluids/etc to group.
    * @param {'item' | 'fluid' | 'chemical'} [type] Type of group, 'item' is assumed if missing.
    */
   let add = (mod, name, data, type) => {
@@ -14,20 +14,36 @@ ClientEvents.generateAssets('after_mods', event => {
       contents: [],
     };
 
-    data = Array.isArray(data) ? data : [data];
+    let isTag = false;
 
-    for (let i = 0; i < data.length; i++) {
-      let elem = data[i];
+    if (!Array.isArray(data)) {
 
-      Ingredient.of(elem).itemIds.forEach(id => {
-        if (Item.exists(id)) group.contents.push(id);
-        else console.error(`Item ${id} does not exist!`);
-      });
+      if (!(data instanceof RegExp) && data.startsWith('#')) {
+        group.type = 'remi:tag';
+        group.tag = data.slice(1);
+        delete group.contents;
+
+        isTag = true;
+      } else {
+        data = [data];
+      }
     }
 
-    if (group.contents.length == 0) {
-      console.error(`Failed to create group ${mod}:stack_groups/${name}, it was empty!`);
-      return;
+
+    if (!isTag) {
+      for (let i = 0; i < data.length; i++) {
+        let elem = data[i];
+
+        Ingredient.of(elem).itemIds.forEach(id => {
+          if (Item.exists(id)) group.contents.push(id);
+          else console.warn(`Item ${id} does not exist!`);
+        });
+      }
+
+      if (group.contents.length == 0) {
+        console.warn(`Failed to create group ${mod}:stack_groups/${name}, it was empty!`);
+        return;
+      }
     }
 
     if (debug) {
@@ -43,7 +59,7 @@ ClientEvents.generateAssets('after_mods', event => {
   add('hostilenetworks', 'predictions', 'hostilenetworks:prediction');
   add('neovitae', 'upgrade_tomes', 'neovitae:upgrade_tome');
   add('occultism', 'impure_chalk', /^occultism:chalk_.*_impure$/);
-  add('occultism', 'pure_chalk', '#occultism:tools/chalk');
+  add('occultism', 'pure_chalk', /^occultism:chalk_(?!.*_impure$)[a-z_]+$/);
   add('occultism', 'occult_rituals', /^occultism:ritual_dummy\/.*/);
   add('apothic_enchanting', 'tomes', '#apothic_enchanting:tomes');
   add('arts_and_crafts', 'chalk_sticks', '#arts_and_crafts:chalk_sticks');
