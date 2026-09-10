@@ -606,4 +606,170 @@ ClientEvents.generateAssets('after_mods', event => {
   add('arts_and_crafts', 'beige_pietraforte', /^arts_and_crafts:.*beige_pietraforte/);
   add('ae2wtlib', 'wireless_terminals', /.*:wireless.*terminal$/);
   add('gateways', 'gate_pearls', 'gateways:gate_pearl');
+
+  const mcwMaterials = '(?:acacia|asian_red|bamboo|birch|cherry|crimson|dark_oak|dry_bamboo|jungle|mangrove|oak|spruce|warped)';
+  const mcwColors = '(?:black|blue|brown|cyan|gray|green|light_blue|light_gray|lime|magenta|orange|pink|purple|red|white|yellow)';
+  const mcwPattern = (mod, pattern) =>
+    new RegExp(`^${mod}:(?:${pattern})$`);
+  const mcwSuffixGroups = function () {
+    let groups = {};
+    for (let i = 0; i < arguments.length; i++) {
+      let suffix = arguments[i];
+      groups[suffix.endsWith('s') ? suffix : `${suffix}s`] = `.*_${suffix}`;
+    }
+    return groups;
+  };
+
+  const mcwGroups = {
+    mcwbridges: Object.assign({
+      bridges: '.*_bridge',
+      bridge_lighting: 'bridge_(?:lantern|torch|lights)',
+      bridge_tools: 'pliers',
+    }, mcwSuffixGroups('bridge_pier', 'bridge_stair', 'bridge_middle', 'rail_bridge')),
+
+    mcwdoors: Object.assign({
+      barn_doors: '.*_barn(?:_glass)?_door',
+      glass_doors: '.*(?:bark_)?glass_door',
+      japanese_doors: '.*_japanese\\d*_door',
+      stable_doors: '.*_stable(?:_head)?_door',
+      metal_doors: 'metal(?:_.+)?_door',
+      garage_doors: 'garage_.+_door',
+      door_prints: 'print_.*',
+      special_doors: '(?:iron|wooden)_portcullis|(?:jail_door|sliding_glass_door|store_door)',
+    }, mcwSuffixGroups(
+      'bamboo_door', 'beach_door', 'classic_door', 'cottage_door', 'four_panel_door',
+      'modern_door', 'mystic_door', 'nether_door', 'paper_door', 'swamp_door',
+      'tropical_door', 'waffle_door', 'western_door', 'whispering_door'
+    )),
+
+    mcwfences: {
+      wooden_gates: `${mcwMaterials}_.+_gate`,
+      wooden_fences: `${mcwMaterials}(?:_.+)?_fence`,
+      wooden_hedges: `(?:flowering_)?azalea_hedge|${mcwMaterials}_hedge`,
+      horse_fences: '.*_horse_fence',
+      picket_fences: '.*_picket_fence',
+      stockade_fences: '.*_stockade_fence',
+      wired_fences: '.*_wired_fence',
+      pyramid_gates: '.*_pyramid_gate',
+      railing_gates: '.*_railing_gate(?:_stonecutter)?',
+      grass_topped_walls: '.*_grass_topped_wall',
+      pillar_walls: '.*_pillar_wall',
+      modern_walls: 'modern_.*_wall(?:_stonecutter)?',
+      railing_walls: 'railing_.*_wall(?:_stonecutter)?',
+      metal_fences: '.*metal_fence(?:_gate)?',
+      cheval_de_frise: '(?:iron|wooden)_cheval_de_frise',
+    },
+
+    mcwholidays: {
+      balloons: '.*_balloon',
+      presents: '.*_presents?',
+      stockings: '.*_stockings?',
+      christmas_tree_segments: '(?:.*_)?(?:decorated_)?christmas_tree_(?:base|bottom|middle|top)',
+      pine_tree_segments: '(?:snow_covered_|snowy_)?pine_(?:bottom|middle|top)',
+      candy_canes: '.*_?candy_cane(?:_block|_slab|_slim|_stairs)?',
+      ornaments: '.*_ornament',
+      garlands: '(?!.*_lights$).*garland.*',
+      garland_lights: '.*garland.*_lights',
+      string_lights: '.*(?:string_lights|cube_string_lights|tiny_string_lights)',
+      snowmen: 'snowman.*',
+      icicles: 'icicle.*',
+      snow_decorations: '(?:snowy_(?:fern|grass|grass_block|tall_fern|tall_grass)|unmeltable_snow)',
+      snowy_foliage: 'snowy_(?:oak|spruce)_leaves(?:_carpet)?',
+      autumn_foliage: '(?:brown|mixed|orange|red|yellow)_oak_leaves(?:_carpet)?',
+      mistletoe: 'mistletoe',
+      hay_decorations: '(?:laying|standing)_hay_bale|hay_wheelbarrow',
+      wood_piles: 'pile_of_.*_wood',
+      wooden_sleds: 'wooden_sled',
+      holiday_trinkets: '(?:single|couple)_bells?|single_potions?|(?:pair_of|three)_potions',
+      pumpkin_decorations: '.*pumpkin.*',
+      cobwebs: '.*cobweb',
+      ghosts: '.*ghost.*',
+      skeletons: '.*skeleton.*',
+      witch_decorations: 'witch_.*',
+      spooky_creatures: '(?:bat|spider).*',
+      grave_markers: '.*gravestone|(?:stone|wooden)_cross',
+      harvest_decorations: 'scarecrow|standing_(?:broomstick|rake|shovel)',
+      holiday_doormats: '.*_doormat',
+      holiday_wall_decorations: '.*_wall_deco.*',
+    },
+
+    mcwlights: {
+      ceiling_fan_lights: '.*_ceiling_fan_light',
+      ceiling_lights: `${mcwColors}_ceiling_light`,
+      lamps: `${mcwColors}_lamp`,
+      paper_lamps: '.*paper_lamp',
+      garden_lights: '.*garden_light',
+      street_lights: '(?:soul_)?(?:classic_|double_)?street_lamp',
+      lanterns: '(?:bell|chain|covered|cross|festive|striped|tavern)_lantern',
+      wall_lanterns: '(?:bell|chain|covered|cross|festive|striped|tavern)_wall_lantern|wall_lantern',
+      wall_lamps: '.*wall_lamp',
+      tiki_torches: `(?:soul_)?${mcwMaterials}_tiki_torch`,
+      torches: '(?:framed|iron_framed|reinforced|rustic|upgraded)_torch',
+      chandeliers: '.*chandelier',
+      candle_holders: '.*candle_holder',
+      chains: '(?:copper|golden)_chain',
+      lava_lamps: 'lava_lamp',
+      light_slabs: '(?:glowstone|redstone_lamp|sea_lantern|shroomlight)_slab',
+    },
+
+    mcwpaths: Object.assign({
+      planks_paths: `${mcwMaterials}_planks_path`,
+      soil_paths: '(?:dirt|gravel|podzol|red_sand|sand)_path_block',
+    }, mcwSuffixGroups(
+      'diamond_paving', 'basket_weave_paving', 'clover_paving',
+      'crystal_floor_path', 'crystal_floor_slab', 'crystal_floor_stairs', 'crystal_floor',
+      'dumble_paving', 'flagstone_path', 'flagstone_slab', 'flagstone_stairs', 'flagstone',
+      'honeycomb_paving', 'running_bond_path', 'running_bond_slab', 'running_bond_stairs', 'running_bond',
+      'square_paving', 'strewn_rocky_path',
+      'windmill_weave_path', 'windmill_weave_slab', 'windmill_weave_stairs', 'windmill_weave'
+    )),
+
+    mcwroofs: Object.assign({
+      roofs: '(?!.*_(?:attic|lower|steep|top|upper_lower|upper_steep)_roof$).*_roof',
+      lower_roofs: '(?!.*_upper_lower_roof$).*_lower_roof',
+      steep_roofs: '(?!.*_upper_steep_roof$).*_steep_roof',
+      gutters: 'gutter.*|rain_gutter',
+    }, mcwSuffixGroups(
+      'attic_roof', 'top_roof', 'upper_lower_roof', 'upper_steep_roof',
+      'roof_block', 'roof_slab', 'striped_awning'
+    )),
+
+    mcwstairs: mcwSuffixGroups(
+      'balcony', 'bulk_stairs', 'compact_stairs', 'loft_stairs',
+      'platform', 'railing', 'skyline_stairs', 'terrace_stairs'
+    ),
+
+    mcwtrpdoors: Object.assign({
+      bamboo_trapdoors: '.*_bamboo_trapdoor|bamboo_trapdoor',
+      metal_trapdoors: 'metal.*_trapdoor',
+      trapdoor_prints: 'print_.*',
+    }, mcwSuffixGroups(
+      'bark_trapdoor', 'barn_trapdoor', 'barred_trapdoor', 'barrel_trapdoor', 'beach_trapdoor',
+      'blossom_trapdoor', 'classic_trapdoor', 'cottage_trapdoor', 'four_panel_trapdoor',
+      'glass_trapdoor', 'mystic_trapdoor', 'paper_trapdoor', 'ranch_trapdoor', 'swamp_trapdoor',
+      'tropical_trapdoor', 'whispering_trapdoor'
+    )),
+
+    mcwwindows: {
+      resizeable_windows: '(?!.*(?:pane|four)_window$).*_window',
+      rectangle_windows: '(?!.*(?:pane|four)_window2$).*_window2',
+      one_pane_windows: '.*pane_window',
+      four_pane_windows: '.*four_window',
+      shutters: '.*shutter',
+      blinds: '.*blinds',
+      curtain_rods: '.*curtain_rod',
+      curtains: `${mcwColors}_curtain`,
+      decorative_glass: `(?:${mcwColors}_mosaic_glass(?:_pane)?|one_way_glass(?:_pane)?)`,
+      gothic_windows: '.*_gothic',
+      arrow_slits: '.*arrow_slit',
+      parapets: '.*parapet',
+      window_bases: 'window_(?:half_bar_|centre_bar_)?base',
+    },
+  };
+
+  Object.entries(mcwGroups).forEach(([mod, groups]) => {
+    Object.entries(groups).forEach(([name, pattern]) => {
+      add(mod, name, mcwPattern(mod, pattern));
+    });
+  });
 });
