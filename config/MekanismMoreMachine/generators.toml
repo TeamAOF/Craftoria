@@ -31,11 +31,11 @@
 	#Minimum energy generation in Joules/t that the Large Wind Generator can produce.
 	# Default: 2250000
 	# Range: 0 ~ 9223372036854775807
-	generationMin = 225000
+	generationMin = 500000
 	#Maximum energy generation in Joules/t that the Large Wind Generator can produce.
 	# Default: 3750000
 	# Range: 0 ~ 9223372036854775807
-	generationMax = 375000
+	generationMax = 750000
 
 #Settings for configuring Solar Heat Generators
 [solar_heat_generator]

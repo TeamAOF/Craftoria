@@ -32,6 +32,7 @@ _Neoforge_ 21.1.249 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/m
 * [ForgedPaginatedAdvancements](https://curseforge.com/projects/1264512)
 * [KubeJS NeoVitae](https://curseforge.com/projects/1595222)
 * [Mekanism:More Machine](https://curseforge.com/projects/1275257)
+* [Nether Descent](https://www.curseforge.com/projects/1357097)
 * [Reliable EMI (REMI)](https://curseforge.com/projects/1411826)
 
 ### Bug Fixes 🪲
