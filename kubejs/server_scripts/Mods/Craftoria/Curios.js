@@ -92,12 +92,11 @@ ServerEvents.tags('item', e => {
   */
 
   const toFace = [
-    /^artifacts:.*_scarf$/,
+    /^artifacts:.*scarf/,
     'artifacts:snorkel',
     'artifacts:night_vision_goggles',
     'ars_technica:spy_monocle',
     'create:goggles',
-    'reliquified_twilight_forest:goblin_nose',
     'occultism:otherworld_goggles',
   ];
 
@@ -120,13 +119,10 @@ ServerEvents.tags('item', e => {
     }
   });
 
-  e.remove('curios:curio', ['integratedterminals:terminal_storage_portable']);
   e.remove('curios:hands', 'occultism:storage_remote');
-  e.remove('curios:charm', ['phantoms_utilities:sleep_charm']);
   e.remove('curios:belt', ['ars_additions:warp_index', 'ars_additions:stabilized_warp_index']);
 
   e.add('curios:qio', [
-    'integratedterminals:terminal_storage_portable',
     'occultism:storage_remote',
     'ars_additions:warp_index',
     'ars_additions:stabilized_warp_index',
