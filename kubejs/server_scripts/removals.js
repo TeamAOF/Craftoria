@@ -48,6 +48,8 @@ const globalItemRemovals = [
   'mekmm:fluid_replicator',
   'mekmm:chemical_replicator',
   'mekmm:replicator',
+  /mekmm:.*_replicating_factory/,
+  /mekanism_extras:.*_replicating_factory/,
   /^extendedae_plus:\d+x_crafting_accelerator$/,
   'sfm:xp_shard',
   'sfm:xp_goop',
