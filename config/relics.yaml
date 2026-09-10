@@ -1,7 +1,7 @@
 # Enables automatic GUI scaling for Relics description screens. Disable this to use Minecraft's configured GUI scale instead.
 enabledAutoScale: true
 # Toggles advanced configuration files, allowing customization of most of the mod's functionality. May contain WIP content that may change in the future.
-# 
+#
 # Activating this feature may lead to unintended consequences, so use it only if you know what you're doing. If any part of the mod update involves changes to the configuration file values, these changes will not be applied automatically. You will need to manually update the necessary sections or reset them to their original state.
 enabledExtendedConfigs: true
 # A list of entity IDs that cannot be revived by the Hunting Belt.
@@ -17,6 +17,7 @@ ringOfSDSGluttonyAttributesBlacklist:
 - minecraft:generic.burning_time
 - minecraft:generic.movement_speed
 - minecraft:generic.step_height
+- minecraft:generic.jump_strength
 - minecraft:player.sneaking_speed
 - minecraft:player.block_interaction_range
 - minecraft:player.entity_interaction_range
