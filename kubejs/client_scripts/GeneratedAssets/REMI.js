@@ -1,6 +1,8 @@
 ClientEvents.generateAssets('after_mods', event => {
   let debug = false;
 
+  let groupIDs = [];
+
   /**
    * Used to create REMI stack groups.
    * @param {import("@special/types").SpecialTypes.ModId | 'craftoria' | 'c'} mod Mod ID to use.
@@ -17,7 +19,6 @@ ClientEvents.generateAssets('after_mods', event => {
     let isTag = false;
 
     if (!Array.isArray(data)) {
-
       if (!(data instanceof RegExp) && data.startsWith('#')) {
         group.type = 'remi:tag';
         group.tag = data.slice(1);
@@ -46,12 +47,20 @@ ClientEvents.generateAssets('after_mods', event => {
       }
     }
 
+    let groupID = `${mod}:stack_groups/${name}`;
+    if (groupIDs.includes(groupID)) {
+      console.warn(`Group ${groupID} already exists!`);
+      console.warn(`Group data: ${JSON.stringify(group)}`);
+      return;
+    }
+
     if (debug) {
-      console.info(`Creating group ${mod}:stack_groups/${name}:`);
+      console.info(`Creating group ${groupID}:`);
       console.info(JSON.stringify(group));
     }
 
-    event.json(`${mod}:stack_groups/${name}`, group);
+    groupIDs.push(groupID);
+    event.json(groupID, group);
   };
 
   add('create_connected', 'fan_catalysts', /^create_connected:.*_catalyst.*/);
@@ -567,4 +576,22 @@ ClientEvents.generateAssets('after_mods', event => {
   add('xycraft', 'crafting_groups/cloud/aluminum', '#xycraft:crafting_groups/cloud/aluminum');
   add('xycraft', 'crafting_groups/cloud/kivi', '#xycraft:crafting_groups/cloud/kivi');
   add('xycraft', 'crafting_groups/kivi', '#xycraft:crafting_groups/kivi');
+  add('sophisticatedstorageinmotion', 'sophisticated_minecarts', 'sophisticatedstorageinmotion:storage_minecart');
+  add('sophisticatedstorageinmotion', 'sophisticated_boats', 'sophisticatedstorageinmotion:storage_boat');
+  add('sophisticatedbackpacks', 'sophisticated_backpacks', 'sophisticatedbackpacks:backpack');
+  add('sophisticatedstorage', 'storage_connectors', /^sophisticatedstorage:.*_storage_connector$/);
+
+  let soph_tiers = ['copper', 'iron', 'gold', 'diamond', 'netherite'];
+  let soph_types = ['barrel', 'chest', 'shulker_box'];
+
+  soph_types.forEach(type => {
+    add('sophisticatedstorage', `sophisticated_${type}s`, `sophisticatedstorage:${type}`);
+    if (type == 'barrel') for (let i = 1; i <= 4; i++) add('sophisticatedstorage', `sophisticated_limited_${type}_${i}s`, `sophisticatedstorage:limited_${type}_${i}`);
+    soph_tiers.forEach(tier => {
+      add('sophisticatedstorage', `sophisticated_${tier}_${type}s`, `sophisticatedstorage:${tier}_${type}`);
+      if (type == 'barrel') for (let i = 1; i <= 4; i++) add('sophisticatedstorage', `sophisticated_limited_${tier}_${type}_${i}s`, `sophisticatedstorage:limited_${tier}_${type}_${i}`);
+    });
+  });
+
+  add('apotheosis', 'potion_charms', 'apotheosis:potion_charm');
 });
