@@ -1,3 +1,4 @@
+// requires: remi
 ClientEvents.generateAssets('after_mods', event => {
   let debug = false;
 
