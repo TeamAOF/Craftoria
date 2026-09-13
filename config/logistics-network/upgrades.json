@@ -1,0 +1,42 @@
+{
+  "none": {
+    "minTicks": 20,
+    "itemBatch": 8,
+    "fluidBatch": 500,
+    "energyBatch": 2000,
+    "chemicalBatch": 500,
+    "sourceBatch": 500
+  },
+  "iron": {
+    "minTicks": 10,
+    "itemBatch": 16,
+    "fluidBatch": 1000,
+    "energyBatch": 10000,
+    "chemicalBatch": 1000,
+    "sourceBatch": 1000
+  },
+  "gold": {
+    "minTicks": 5,
+    "itemBatch": 32,
+    "fluidBatch": 5000,
+    "energyBatch": 50000,
+    "chemicalBatch": 5000,
+    "sourceBatch": 5000
+  },
+  "diamond": {
+    "minTicks": 1,
+    "itemBatch": 64,
+    "fluidBatch": 20000,
+    "energyBatch": 250000,
+    "chemicalBatch": 20000,
+    "sourceBatch": 20000
+  },
+  "netherite": {
+    "minTicks": 1,
+    "itemBatch": 10000,
+    "fluidBatch": 1000000,
+    "energyBatch": 2147483647,
+    "chemicalBatch": 1000000,
+    "sourceBatch": 1000000
+  }
+}

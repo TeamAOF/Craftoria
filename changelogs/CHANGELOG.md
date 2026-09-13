@@ -1,3 +1,27 @@
+# Craftoria | v1.37.0
+
+_Neoforge_ 21.1.249 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.37.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.37.0.md)_
+
+### Changes/Improvements ⭐
+
+* Disabled typing sounds `AK`
+
+### Added Mods ✅
+
+* [Async Logger](https://curseforge.com/projects/1491426)
+* [Create: Copycats+](https://curseforge.com/projects/968398)
+* [Logistics Network](https://curseforge.com/projects/1448257)
+
+### Removed Mods ❌
+
+* [Create Factory Logistics](https://curseforge.com/projects/1218807)
+* [Enderman Overhaul](https://curseforge.com/projects/574409)
+* [Reliable EMI (REMI)](https://curseforge.com/projects/1411826)
+
+### Bug Fixes 🪲
+
+* Fixed performance issues on right click checks `AK`
+---
 # Craftoria | v1.36.0
 
 _Neoforge_ 21.1.249 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.36.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.36.0.md)_

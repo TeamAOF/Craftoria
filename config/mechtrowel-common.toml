@@ -48,3 +48,7 @@ ae2UpgradeEnabled = true
 gradientEnabled = true
 #Enable Refined Storage integration upgrade functionality
 rsUpgradeEnabled = true
+#List of blocks the trowel will never place (e.g., 'minecraft:tnt')
+placeBlacklistBlocks = []
+#List of block tags the trowel will never place (e.g., '#minecraft:beds')
+placeBlacklistTags = ["#comforts:sleeping_bags", "#comforts:hammocks"]

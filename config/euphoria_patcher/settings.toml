@@ -1,5 +1,5 @@
 # This file stores configuration options for the Euphoria Patcher mod
-# Made for version 1.10.0
+# Made for version 1.10.1
 # Thank you for using Euphoria Patches - SpacEagle17
 
 [display]
@@ -48,6 +48,14 @@
 	# Modes: 'enabled' (embeds invisibly), 'disabled' (no embedding), 'debug' (embeds normally and saves a visual -debug screenshot to verify bit placement. Purely a visual check, no extra data stored).
 	# Default = enabled
 	doEmbedShaderSettingsInScreenshots = "enabled"
+
+	# Number of extra shader copies to keep in RAM per dimension. Prevents long reload times when switching between dimensions.
+	# Uses ~50 MB RAM per extra dimension. Lower if there is limited memory available.
+	# It only caches the extra dimension(s) once visited.
+	# If more dimensions than this threshold are visited, the oldest cached dimension will be removed.
+	# 0 = rebuild on every change (slower but no extra ram usage), 2 = two extra dimensions apart from the current one can be cached. Increase if frequently visiting more modded dimensions or decrease if you have limited memory.
+	# Default = 2
+	extraDimensionShaderCacheSize = 2
 
 	# Option that enables or disables automatic merging of the fragmented block.properties files into the main block.properties file.
 	# The properties files inside "Euphoria Patches/shaders/properties/" will be merged into a single block.properties file at the specified interval if any of them have changed.

@@ -26,11 +26,11 @@ $MODPACK_NAME = "Craftoria"
 $CLIENT_NAME = "Craftoria"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "1.36.0"
+$MODPACK_VERSION = "1.37.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "1.35.0"
+$LAST_MODPACK_VERSION = "1.36.0"
 
 # Which modloader the modpack uses
 # Use proper capitalization for display (e.g., "NeoForge", "Fabric", "Forge")
