@@ -53,19 +53,19 @@ const buddingConditions = {
     eu: 32,
     time: 20 * 20,
   },
-  topaz: {
+  topaz_pastel: {
     block: 'pastel:budding_topaz',
     textKey: 'info.mi.budding.topaz',
     fluid: '1000x water',
     item: '8x pastel:topaz_shard',
   },
-  citrine: {
+  citrine_pastel: {
     block: 'pastel:budding_citrine',
     textKey: 'info.mi.budding.citrine',
     fluid: '1000x water',
     item: '8x pastel:citrine_shard',
   },
-  onyx: {
+  onyx_pastel: {
     block: 'pastel:budding_onyx',
     textKey: 'info.mi.budding.onyx',
     fluid: '1000x water',
@@ -73,7 +73,7 @@ const buddingConditions = {
     eu: 16,
     time: 15 * 20,
   },
-  moonstone: {
+  moonstone_pastel: {
     block: 'pastel:budding_moonstone',
     textKey: 'info.mi.budding.moonstone',
     fluid: '1000x water',
@@ -81,19 +81,19 @@ const buddingConditions = {
     eu: 16,
     time: 15 * 20,
   },
-  topaz: {
+  topaz_spectrum: {
     block: 'spectrum:budding_topaz',
     textKey: 'info.mi.budding.topaz',
     fluid: '1000x water',
     item: '8x spectrum:topaz_shard',
   },
-  citrine: {
+  citrine_spectrum: {
     block: 'spectrum:budding_citrine',
     textKey: 'info.mi.budding.citrine',
     fluid: '1000x water',
     item: '8x spectrum:citrine_shard',
   },
-  onyx: {
+  onyx_spectrum: {
     block: 'spectrum:budding_onyx',
     textKey: 'info.mi.budding.onyx',
     fluid: '1000x water',
@@ -101,7 +101,7 @@ const buddingConditions = {
     eu: 16,
     time: 15 * 20,
   },
-  moonstone: {
+  moonstone_spectrum: {
     block: 'spectrum:budding_moonstone',
     textKey: 'info.mi.budding.moonstone',
     fluid: '1000x water',
