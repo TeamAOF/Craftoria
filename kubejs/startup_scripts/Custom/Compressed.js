@@ -105,6 +105,7 @@ StartupEvents.registry('block', event => {
         .soundType(block.soundType || 'metal')
         .hardness(i)
         .resistance(6)
+        .tagBoth(`craftoria:compressed_${blockId}`)
         .tagBoth(`craftoria:${c}x_compressed`)
         .tagItem('modern_industrialization:replicator_blacklist')
         .tagItem('craftoria:replicator_1_blacklist')

@@ -81,6 +81,34 @@ const buddingConditions = {
     eu: 16,
     time: 15 * 20,
   },
+  topaz: {
+    block: 'spectrum:budding_topaz',
+    textKey: 'info.mi.budding.topaz',
+    fluid: '1000x water',
+    item: '8x spectrum:topaz_shard',
+  },
+  citrine: {
+    block: 'spectrum:budding_citrine',
+    textKey: 'info.mi.budding.citrine',
+    fluid: '1000x water',
+    item: '8x spectrum:citrine_shard',
+  },
+  onyx: {
+    block: 'spectrum:budding_onyx',
+    textKey: 'info.mi.budding.onyx',
+    fluid: '1000x water',
+    item: '4x spectrum:onyx_shard',
+    eu: 16,
+    time: 15 * 20,
+  },
+  moonstone: {
+    block: 'spectrum:budding_moonstone',
+    textKey: 'info.mi.budding.moonstone',
+    fluid: '1000x water',
+    item: '2x spectrum:moonstone_shard',
+    eu: 16,
+    time: 15 * 20,
+  },
 };
 
 MIRecipeEvents.customCondition(event => {
