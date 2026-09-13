@@ -331,6 +331,7 @@ NativeEvents.onEvent($NeighborNotifyEvent, event => {
 
 BlockEvents.rightClicked(event => {
   const { level, player, hand, block } = event;
+  if (player instanceof $FakePlayer) return;
   const { pos, blockState } = block;
   onDoorClick(level, player, hand, pos, blockState);
 });

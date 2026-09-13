@@ -1,3 +1,5 @@
+const $FakePlayer = Java.loadClass('net.neoforged.neoforge.common.util.FakePlayer');
+
 // const $FakePlayer = Java.loadClass('net.neoforged.neoforge.common.util.FakePlayer');
 const $CropBlock = Java.loadClass('net.minecraft.world.level.block.CropBlock');
 const $CocoaBlock = Java.loadClass('net.minecraft.world.level.block.CocoaBlock');
@@ -22,6 +24,7 @@ BlockEvents.rightClicked(event => {
  * @returns {boolean}
  */
 function isPlayerActionValid(player, hand) {
+  if (player instanceof $FakePlayer) return false;
   if (hand !== 'MAIN_HAND' || player.spectator || player.shiftKeyDown) return false;
   return true;
 }
