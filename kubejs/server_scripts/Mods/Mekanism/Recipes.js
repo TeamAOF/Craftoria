@@ -89,20 +89,20 @@ ServerEvents.recipes(e => {
 
   e.replaceInput([
     { id: 'mekmm:large_heat_generator' },
-  ], 'modern_industrialization:steel_block', 'craftoria:5x_compressed_steel_block');
+  ], 'modern_industrialization:steel_block', 'craftoria:4x_compressed_steel_block');
 
   // Large Wind Generator
   e.replaceInput([
     { id: 'mekmm:large_wind_generator' },
-  ], 'mekanism:ultimate_induction_cell', 'mekanism_extras:infinite_induction_cell');
+  ], 'mekanism:ultimate_induction_cell', 'mekanism_extras:cosmic_induction_cell');
 
   e.replaceInput([
     { id: 'mekmm:large_wind_generator' },
-  ], 'mekanism:robit', 'mekanism_extras:infinite_tier_installer');
+  ], 'mekanism:robit', 'mekanism_extras:cosmic_tier_installer');
 
   e.replaceInput([
     { id: 'mekmm:large_wind_generator' },
-  ], 'modern_industrialization:steel_block', 'craftoria:5x_compressed_steel_block');
+  ], 'modern_industrialization:steel_block', 'craftoria:4x_compressed_steel_block');
 
   // Infinite Tier
   e.replaceInput([
