@@ -595,8 +595,11 @@ ClientEvents.generateAssets('after_mods', event => {
   });
 
   add('apotheosis', 'potion_charms', 'apotheosis:potion_charm');
+  add('apotheosis', 'gems', 'apotheosis:gem');
   add('modern_industrialization', 'barrels', '#modern_industrialization:barrels');
   add('woodwevegot', 'barrels', '#woodwevegot:barrels');
+
+  // Arts and Crafts
   add('arts_and_crafts', 'verdrant_pietraforte', /^arts_and_crafts:.*verdrant_pietraforte/);
   add('arts_and_crafts', 'umber_pietraforte', /^arts_and_crafts:.*umber_pietraforte/);
   add('arts_and_crafts', 'ochre_pietraforte', /^arts_and_crafts:.*ochre_pietraforte/);
@@ -605,9 +608,12 @@ ClientEvents.generateAssets('after_mods', event => {
   add('arts_and_crafts', 'ivory_pietraforte', /^arts_and_crafts:.*ivory_pietraforte/);
   add('arts_and_crafts', 'hazel_pietraforte', /^arts_and_crafts:.*hazel_pietraforte/);
   add('arts_and_crafts', 'beige_pietraforte', /^arts_and_crafts:.*beige_pietraforte/);
+
   add('ae2wtlib', 'wireless_terminals', /.*:wireless.*terminal$/);
+
   add('gateways', 'gate_pearls', 'gateways:gate_pearl');
 
+  // Macaw's
   const mcwMaterials = '(?:acacia|asian_red|bamboo|birch|cherry|crimson|dark_oak|dry_bamboo|jungle|mangrove|oak|spruce|warped)';
   const mcwColors = '(?:black|blue|brown|cyan|gray|green|light_blue|light_gray|lime|magenta|orange|pink|purple|red|white|yellow)';
   const mcwPattern = (mod, pattern) =>
@@ -773,4 +779,25 @@ ClientEvents.generateAssets('after_mods', event => {
       add(mod, name, mcwPattern(mod, pattern));
     });
   });
+
+  // Reliquary
+  add('reliquary', 'mob_charm_fragments', 'reliquary:mob_charm_fragment');
+  add('reliquary', 'mob_charms', 'reliquary:mob_charm');
+  add('reliquary', 'potion_essences', 'reliquary:potion_essence');
+  add('reliquary', 'tipped_arrows', 'reliquary:tipped_arrow');
+  add('reliquary', 'potions', 'reliquary:potion');
+  add('reliquary', 'splash_potions', 'reliquary:splash_potion');
+  add('reliquary', 'lingering_potions', 'reliquary:lingering_potion');
+  add('reliquary', 'magazines', /^reliquary:magazines\/.*/);
+  add('reliquary', 'bullets', /^reliquary:bullets\/.*/);
+  add('reliquary', 'pedestals', /^reliquary:pedestals\/.*/);
+
+  const compressedMaterials = [];
+  global.compressedBlocks.forEach(block => compressedMaterials.push(block.name.replace(' ', '_').toLowerCase()));
+
+  compressedMaterials.forEach(material => {
+    add('craftoria', `compressed_${material}_blocks`, `#craftoria:compressed_${material}`);
+  });
+
+  add('xycraft_machines', 'foils', 'xycraft_machines:foil');
 });

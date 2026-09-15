@@ -3,12 +3,11 @@ let nonSortedCompressedBlocks = [];
 StartupEvents.registry('block', event => {
   /**
    * Compressed Blocks
-   * Parameters:
-   * name: Name of the block
-   * texture: Texture of the block, usually same as the block id, without the mod id
-   * modID: Mod ID of the block
-   * soundType: (Optional) Sound type of the block, defaults to metal, see https://kubejs.com/wiki/ref/SoundType for more info
-   * tool: (Optional) Tool for mining the block, defaults to pickaxe
+   * @param {string} name Name of the block
+   * @param {string} texture Texture of the block, usually same as the block id, without the mod id
+   * @param {string} modID Mod ID of the block
+   * @param {string} [soundType] (Optional) Sound type of the block, defaults to metal, see https://kubejs.com/wiki/ref/SoundType for more info
+   * @param {string} [tool] (Optional) Tool for mining the block, defaults to pickaxe
    */
   let compressedBlocks = [
     // Minecraft
@@ -93,6 +92,8 @@ StartupEvents.registry('block', event => {
     { name: 'Entro', texture: 'entro_block', modID: 'extendedae' },
     { name: 'Charged Redstone', texture: 'charged_redstone_block', modID: 'appflux' },
   ];
+
+  global.compressedBlocks = compressedBlocks;
 
   compressedBlocks.forEach(block => {
     for (let i = 1; i < 10; i++) {
