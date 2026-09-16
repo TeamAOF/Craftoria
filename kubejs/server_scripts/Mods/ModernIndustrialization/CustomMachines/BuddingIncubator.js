@@ -109,6 +109,14 @@ const buddingConditions = {
     eu: 16,
     time: 15 * 20,
   },
+  latra: {
+    block: 'extendedae_plus:lattra_budding_fully',
+    textKey: 'info.mi.budding.lattra',
+    fluid: '1000x water',
+    item: '2x extendedae_plus:lattra_crystal',
+    eu: 16,
+    time: 15 * 20,
+  },
 };
 
 MIRecipeEvents.customCondition(event => {
