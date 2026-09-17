@@ -43,7 +43,7 @@ ServerEvents.recipes(e => {
   mekanism.rotaryCondensentrating('mekanism:antimatter', 'craftoria:antimatter');
   mekanism.rotaryCondensentrating('craftoria:quantum_infusion', 'advanced_ae:quantum_infusion_source');
   mekanism.oxidizing('200x craftoria:plutonium_oxide', '#c:ingots/plutonium');
-  mekanism.chemicalInfusing('400x mekanism:uranium_hexafluoride', '399x mekanism:hydrofluoric_acid', '1x craftoria:plutonium_oxide');
+  mekanism.chemicalInfusing('400x mekanism:uranium_hexafluoride', '200x mekanism:hydrofluoric_acid', '1x craftoria:plutonium_oxide');
 
   // Shaped
 
