@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
     let source = resource.source();
 
     source.listResources('server_data', 'hostilenetworks', 'data_models', (resLoc, io) => {
+      if (resLoc.path.contains('blocks/')) return; // Skip block models, we only want entity models
       let modelJson = bytesToJson(io.get().readAllBytes());
       let { entity, input, base_drop, fabricator_drops, sim_cost } = modelJson;
       let { namespace: entityNamespace, path: entityPath } = ID.mc(entity);
