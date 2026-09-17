@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "Completionist"
+	filename: "completionist"
 	group: ""
 	icon: {
 		id: "craftoria:completionist"
@@ -9,25 +9,8 @@
 	id: "0CF7A598566497C7"
 	images: [
 		{
-			height: 5.0d
-			image: "relics:textures/gui/description/general/tab.png"
-			order: -1
-			rotation: -90.0d
-			width: 2.0d
-			x: -13.45d
-			y: 2.5999999999999996d
-		}
-		{
-			height: 5.0d
-			image: "relics:textures/gui/description/general/tab.png"
-			order: -1
-			rotation: 90.0d
-			width: 2.0d
-			x: -9.5d
-			y: 2.5999999999999996d
-		}
-		{
 			height: 7.0d
+			id: "18263E959B926050"
 			image: "ftbquests:textures/gui/completionist.png"
 			rotation: 0.0d
 			width: 7.0d
@@ -36,14 +19,7 @@
 		}
 		{
 			height: 7.0d
-			image: "ftbquests:textures/gui/trophy_shelf_long.png"
-			rotation: 0.0d
-			width: 12.0d
-			x: -11.5d
-			y: 4.65d
-		}
-		{
-			height: 7.0d
+			id: "1742F4C5EB690600"
 			image: "ftbquests:textures/gui/trophy_shelf_long.png"
 			order: -1
 			rotation: 0.0d
@@ -53,6 +29,7 @@
 		}
 		{
 			height: 7.0d
+			id: "50EA61180B686A6C"
 			image: "ftbquests:textures/gui/trophy_shelf_long.png"
 			order: -2
 			rotation: 0.0d
@@ -62,11 +39,22 @@
 		}
 		{
 			height: 7.0d
+			id: "3C4B7706B7848ECC"
 			image: "ftbquests:textures/gui/trophy_shelf.png"
 			rotation: 0.0d
 			width: 7.0d
 			x: -3.25d
 			y: 8.05d
+		}
+		{
+			click_action: "none:"
+			height: 7.0d
+			id: "1989E26FA940A29C"
+			image: "ftbquests:textures/gui/trophy_shelf_long.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: -11.5d
+			y: 4.65d
 		}
 	]
 	order_index: 1
@@ -88,6 +76,7 @@
 				"7A79DC2CE5CC9DEE"
 				"65AA8B8D22954941"
 				"678A65A6A3461CFC"
+				"12C3E39C224DE93B"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -208,7 +197,11 @@
 			y: 4.625d
 		}
 		{
-			dependencies: ["40CEA39FE5F5225D"]
+			dependencies: [
+				"40CEA39FE5F5225D"
+				"58ABCA8D818937AA"
+				"09343C303E49C46F"
+			]
 			hide_dependency_lines: true
 			icon: {
 				components: {
@@ -239,7 +232,11 @@
 			y: 4.625d
 		}
 		{
-			dependencies: ["6A5B4531418CC297"]
+			dependencies: [
+				"2D12E0E71DEC99E9"
+				"53A9F74C4BFE02D2"
+				"587D73D979FA9D28"
+			]
 			hide_dependency_lines: true
 			icon: {
 				components: {
@@ -270,7 +267,6 @@
 			y: 4.625d
 		}
 		{
-			dependencies: ["01B56BD678E7745B"]
 			hide_dependency_lines: true
 			icon: {
 				components: {
@@ -328,8 +324,8 @@
 				id: "15ED212071C6CAF0"
 				type: "checkmark"
 			}]
-			x: -14.875d
-			y: 6.375d
+			x: -15.75d
+			y: 6.5d
 		}
 		{
 			dependencies: ["7269FD2B5B0F0424"]
@@ -359,8 +355,8 @@
 				id: "559E1439EDFA2BA9"
 				type: "checkmark"
 			}]
-			x: -8.375d
-			y: 6.375d
+			x: -9.25d
+			y: 6.5d
 		}
 		{
 			dependencies: ["5A3894BACC5E8994"]
@@ -390,8 +386,8 @@
 				id: "6B6E82D0312A8705"
 				type: "checkmark"
 			}]
-			x: -10.5d
-			y: 6.375d
+			x: -11.375d
+			y: 6.5d
 		}
 		{
 			dependencies: ["04AD21E8ACC60AFD"]
@@ -481,8 +477,8 @@
 				id: "256831387C82AA19"
 				type: "checkmark"
 			}]
-			x: -12.75d
-			y: 6.375d
+			x: -13.625d
+			y: 6.5d
 		}
 		{
 			dependencies: ["679ED31B5B1D91DA"]
@@ -573,6 +569,37 @@
 			}]
 			x: -9.25d
 			y: 8.125d
+		}
+		{
+			dependencies: ["0A7BE8A17BDD53E9"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"trofers:trophy": "trofers:neo_vitae"
+				}
+				id: "trofers:medium_pillar"
+			}
+			icon_scale: 1.5d
+			id: "12C3E39C224DE93B"
+			rewards: [{
+				id: "767610B07FEA496C"
+				item: {
+					components: {
+						"trofers:trophy": "trofers:neo_vitae"
+					}
+					count: 1
+					id: "trofers:medium_pillar"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 2.5d
+			tasks: [{
+				id: "50CAC3B83A609BD8"
+				type: "checkmark"
+			}]
+			x: -7.25d
+			y: 6.5d
 		}
 	]
 }

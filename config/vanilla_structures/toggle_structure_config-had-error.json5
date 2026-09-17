@@ -1,0 +1,74 @@
+/*
+This config makes it possible to switch off any Minecraft structure.
+To disable a structure, simply set the value of that structure to "false".
+To change the rarity of a structure category use the structure placement config.
+
+=====
+Created by Cristel Lib
+*/
+{
+	"ancient_cities": {
+		"ancient_city": true
+	},
+	"buried_treasures": {
+		"buried_treasure": true
+	},
+	"desert_pyramids": {
+		"desert_pyramid": true
+	},
+	"end_cities": {
+		"end_city": true
+	},
+	"igloos": {
+		"igloo": true
+	},
+	"jungle_temples": {
+		"jungle_pyramid": true
+	},
+	"nether_complexes": {
+		"bastion_remnant": true,
+		"fortress": true
+	},
+	"nether_fossils": {
+		"nether_fossil": true
+	},
+	"ocean_monuments": {
+		"monument": true
+	},
+	"ocean_ruins": {
+		"ocean_ruin_cold": true,
+		"ocean_ruin_warm": true
+	},
+	"pillager_outposts": {
+		"pillager_outpost": true
+	},
+	"ruined_portals": {
+		"ruined_portal": true,
+		"ruined_portal_desert": true,
+		"ruined_portal_jungle": true,
+		"ruined_portal_mountain": true,
+		"ruined_portal_nether": true,
+		"ruined_portal_ocean": true,
+		"ruined_portal_swamp": true
+	},
+	"shipwrecks": {
+		"shipwreck": true,
+		"shipwreck_beached": true
+	},
+	"strongholds": {
+		"stronghold": true
+	},
+	"swamp_huts": {
+		"swamp_hut": true
+	},
+	"villages": {
+		"village_desert": true,
+		"village_plains": true,
+		"village_savanna": true,
+		"village_snowy": true,
+		"village_taiga": true
+	},
+	"woodland_mansions": {
+		"mansion": true
+	}
+}

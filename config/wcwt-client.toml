@@ -1,0 +1,36 @@
+#If true: failed pattern uploads fall back to the pattern edit slot first. If false: fall back to the pattern cache first.
+patternUploadFailFallbackToEditor = false
+#If true: encoding a pattern also fills the pattern-provider search field when pattern upload is disabled. If false: the field is filled only when pattern upload is enabled.
+autoFillPatternProviderSearchWhenUploadDisabled = true
+#If true: the EAEP fill-search hotkey also fills the WCWT pattern-management search field. The terminal search field is always filled.
+fillSearchHotkeySyncPatternManagement = true
+#If false: disable WCWT JEI/EMI recipe pull and encoding transfer handling, including preview highlights.
+enableRecipePullTransfer = true
+#If true: JEI/EMI recipe transfers switch the manual workspace to crafting or smithing when the recipe type is known.
+autoSwitchManualWorkspaceOnRecipeTransfer = true
+#If false: pattern management shift quick moves use normal clicks only. Saving wcwt-client.toml usually reloads without restart.
+patternManagementShiftQuick = true
+#If true: when the pattern management search filters by a pattern's inputs or outputs, matching pattern slots are highlighted.
+patternManagementSearchHighlight = true
+#If true: the batch pattern multiplier also applies to the current processing pattern in the pattern editor. Saving wcwt-client.toml usually reloads without restart.
+patternMultiplierApplyToEditorProcessing = true
+#If true: when JEI transfers ingredients into the WCWT pattern encoding area, matching items from the JEI bookmark list are preferred first, in bookmark order. If false: use the existing WCWT/AE2 selection logic only.
+preferJeiBookmarksForPatternEncoding = true
+#If true: when JEI/EMI recipe transfer has multiple matching item candidates, WCWT favorited ME terminal items are preferred before the existing selection logic. Disabled by default to preserve AE2-like behavior.
+preferWcwtFavoritesForRecipeTransfer = false
+#If true: opening the toolkit expands it in the pattern management area instead of the right-side panel.
+expandToolkitInManagementArea = false
+#If true: show the first two toolkit rows as left and right HUD hotbars while in the world.
+showToolkitHotbars = true
+#If true: empty pattern-provider slots are collapsed into one summary slot in the management area.
+patternManagementAutoCompactEmptySlots = true
+#If true: EMI craftable actions (left-click / Shift+left-click on a bookmarked or recipe-context stack) fill the full recipe into WCWT, same as the recipe-page + button.
+emiPreviewRecipeFill = true
+#Remembers whether the management-area toolkit was open the last time this client closed the terminal.
+lastManagementToolkitOpen = false
+#Remembers whether the AE2 view cells panel was visible the last time this client toggled it in WCWT.
+lastViewCellsPanelVisible = true
+#If true: favorited ME terminal entries are displayed before non-favorited entries in WCWT.
+favoritedItemsFirst = false
+#Serialized client-side favorite AE keys for WCWT terminal sorting and overlays.
+favoritedKeys = []

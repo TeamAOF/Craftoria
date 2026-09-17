@@ -1,0 +1,83 @@
+#Base energy storage in Joules of: Recycler
+# Default: 20000
+# Range: 1 ~ 9223372036854775807
+recycler = 20000
+#Base energy storage in Joules of: Planting Station
+# Default: 80000
+# Range: 1 ~ 9223372036854775807
+plantingStation = 80000
+#Base energy storage in Joules of: CNC Stamper
+# Default: 20000
+# Range: 1 ~ 9223372036854775807
+cnc_stamper = 20000
+#Base energy storage in Joules of: CNC Lathe
+# Default: 20000
+# Range: 1 ~ 9223372036854775807
+cnc_lathe = 20000
+#Base energy storage in Joules of: CNC Rolling Mill
+# Default: 20000
+# Range: 1 ~ 9223372036854775807
+cnc_rollingMill = 20000
+#Base energy storage in Joules of: Presser
+# Default: 20000
+# Range: 1 ~ 9223372036854775807
+presser = 20000
+#Base energy storage in Joules of: Ambient Gas Collector
+# Default: 40000
+# Range: 1 ~ 9223372036854775807
+ambientGasCollector = 40000
+#Base energy storage in Joules of: Wireless Charging Station
+# Default: 40000000
+# Range: 1 ~ 9223372036854775807
+wirelessChargingStation = 40000000
+#Base energy storage in Joules of: Wireless Transmitter Station
+# Default: 400000000
+# Range: 1 ~ 9223372036854775807
+wirelessTransmitterStation = 400000000
+#Base energy storage in Joules of: Large Rotary Condensentrator
+# Default: 4096000
+# Range: 1 ~ 9223372036854775807
+largeRotaryCondensentrator = 4096000
+#Base energy storage in Joules of: Large Chemical Infuser
+# Default: 4096000
+# Range: 1 ~ 9223372036854775807
+largeChemicalInfuser = 4096000
+#Base energy storage in Joules of: Large Electrolytic Separator
+# Default: 4096000
+# Range: 1 ~ 9223372036854775807
+largeElectrolyticSeparator = 4096000
+#Base energy storage in Joules of: Large Antiprotonic Nucleosynthesizer
+# Default: 51200000000
+# Range: 1 ~ 9223372036854775807
+largeAntiprotonicNucleosynthesizer = 51200000000
+#Base energy storage in Joules of: Large Pigment Mixer
+# Default: 4096000
+# Range: 1 ~ 9223372036854775807
+largePigmentMixer = 4096000
+#Base energy storage in Joules of: Large Heat Generator
+# Default: 256600000
+# Range: 1 ~ 9223372036854775807
+largeHeatGenerator = 256600000
+#Base energy storage in Joules of: Large Wind Generator
+# Default: 256600000
+# Range: 1 ~ 9223372036854775807
+largeWindGenerator = 256600000
+#Base energy storage in Joules of: Solar Heat Generator
+# Default: 256600000
+# Range: 1 ~ 9223372036854775807
+solarHeatGenerator = 256600000
+
+#Settings for configuring Replicator Energy Storage
+[replicator]
+	#Base energy storage in Joules of: Item Replicator
+	# Default: 102400000
+	# Range: 1 ~ 9223372036854775807
+	itemReplicator = 102400000
+	#Base energy storage in Joules of: Fluid Replicator
+	# Default: 102400000
+	# Range: 1 ~ 9223372036854775807
+	fluidReplicator = 102400000
+	#Base energy storage in Joules of: Chemical Replicator
+	# Default: 102400000
+	# Range: 1 ~ 9223372036854775807
+	chemicalReplicator = 102400000

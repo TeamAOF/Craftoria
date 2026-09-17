@@ -1,0 +1,803 @@
+// requires: remi
+ClientEvents.generateAssets('after_mods', event => {
+  let debug = false;
+
+  let groupIDs = [];
+
+  /**
+   * Used to create REMI stack groups.
+   * @param {import("@special/types").SpecialTypes.ModId | 'craftoria' | 'c'} mod Mod ID to use.
+   * @param {string} name The name of the group
+   * @param {import("@package/net/minecraft/world/item/crafting").$Ingredient_} data Items/Fluids/etc to group.
+   * @param {'item' | 'fluid' | 'chemical'} [type] Type of group, 'item' is assumed if missing.
+   */
+  let add = (mod, name, data, type) => {
+    let group = {
+      type: 'remi:group',
+      contents: [],
+    };
+
+    let isTag = false;
+
+    if (!Array.isArray(data)) {
+      if (!(data instanceof RegExp) && data.startsWith('#')) {
+        group.type = 'remi:tag';
+        group.tag = data.slice(1);
+        delete group.contents;
+
+        isTag = true;
+      } else {
+        data = [data];
+      }
+    }
+
+
+    if (!isTag) {
+      for (let i = 0; i < data.length; i++) {
+        let elem = data[i];
+
+        Ingredient.of(elem).itemIds.forEach(id => {
+          if (Item.exists(id)) group.contents.push(id);
+          else console.warn(`Item ${id} does not exist!`);
+        });
+      }
+
+      if (group.contents.length == 0) {
+        console.warn(`Failed to create group ${mod}:stack_groups/${name}, it was empty!`);
+        return;
+      }
+    }
+
+    let groupID = `${mod}:stack_groups/${name}`;
+    if (groupIDs.includes(groupID)) {
+      console.warn(`Group ${groupID} already exists!`);
+      console.warn(`Group data: ${JSON.stringify(group)}`);
+      return;
+    }
+
+    if (debug) {
+      console.info(`Creating group ${groupID}:`);
+      console.info(JSON.stringify(group));
+    }
+
+    groupIDs.push(groupID);
+    event.json(groupID, group);
+  };
+
+  add('create_connected', 'fan_catalysts', /^create_connected:.*_catalyst.*/);
+  add('hostilenetworks', 'data_models', 'hostilenetworks:data_model');
+  add('hostilenetworks', 'predictions', 'hostilenetworks:prediction');
+  add('neovitae', 'upgrade_tomes', 'neovitae:upgrade_tome');
+  add('occultism', 'impure_chalk', /^occultism:chalk_.*_impure$/);
+  add('occultism', 'pure_chalk', /^occultism:chalk_(?!.*_impure$)[a-z_]+$/);
+  add('occultism', 'occult_rituals', /^occultism:ritual_dummy\/.*/);
+  add('apothic_enchanting', 'tomes', '#apothic_enchanting:tomes');
+  add('arts_and_crafts', 'chalk_sticks', '#arts_and_crafts:chalk_sticks');
+  add('arts_and_crafts', 'paintbrushes', '#arts_and_crafts:paintbrushes');
+  add('barbequesdelight', 'grilled_skewers', '#barbequesdelight:grilled_skewers');
+  add('barbequesdelight', 'raw_skewers', '#barbequesdelight:raw_skewers');
+  add('blahaj', 'plushies', '#blahaj:plushies');
+  add('c', 'alloys', '#c:alloys');
+  add('c', 'chests/wooden', '#c:chests/wooden');
+  add('c', 'circuits', '#c:circuits');
+  add('c', 'wires', '#c:wires');
+  add('chipped', 'acacia_log', '#chipped:acacia_log');
+  add('chipped', 'acacia_planks', '#chipped:acacia_planks');
+  add('chipped', 'amethyst_block', '#chipped:amethyst_block');
+  add('chipped', 'ancient_debris', '#chipped:ancient_debris');
+  add('chipped', 'andesite', '#chipped:andesite');
+  add('chipped', 'barrel', '#chipped:barrel');
+  add('chipped', 'basalt', '#chipped:basalt');
+  add('chipped', 'birch_log', '#chipped:birch_log');
+  add('chipped', 'birch_planks', '#chipped:birch_planks');
+  add('chipped', 'black_concrete', '#chipped:black_concrete');
+  add('chipped', 'black_glazed_terracotta', '#chipped:black_glazed_terracotta');
+  add('chipped', 'black_stained_glass', '#chipped:black_stained_glass');
+  add('chipped', 'black_stained_glass_pane', '#chipped:black_stained_glass_pane');
+  add('chipped', 'black_terracotta', '#chipped:black_terracotta');
+  add('chipped', 'black_wool', '#chipped:black_wool');
+  add('chipped', 'blackstone', '#chipped:blackstone');
+  add('chipped', 'blue_concrete', '#chipped:blue_concrete');
+  add('chipped', 'blue_glazed_terracotta', '#chipped:blue_glazed_terracotta');
+  add('chipped', 'blue_ice', '#chipped:blue_ice');
+  add('chipped', 'blue_stained_glass', '#chipped:blue_stained_glass');
+  add('chipped', 'blue_stained_glass_pane', '#chipped:blue_stained_glass_pane');
+  add('chipped', 'blue_terracotta', '#chipped:blue_terracotta');
+  add('chipped', 'blue_wool', '#chipped:blue_wool');
+  add('chipped', 'bone_block', '#chipped:bone_block');
+  add('chipped', 'bookshelf', '#chipped:bookshelf');
+  add('chipped', 'borderless_bricks', '#chipped:borderless_bricks');
+  add('chipped', 'bricks', '#chipped:bricks');
+  add('chipped', 'brown_concrete', '#chipped:brown_concrete');
+  add('chipped', 'brown_glazed_terracotta', '#chipped:brown_glazed_terracotta');
+  add('chipped', 'brown_mushroom', '#chipped:brown_mushroom');
+  add('chipped', 'brown_mushroom_block', '#chipped:brown_mushroom_block');
+  add('chipped', 'brown_stained_glass', '#chipped:brown_stained_glass');
+  add('chipped', 'brown_stained_glass_pane', '#chipped:brown_stained_glass_pane');
+  add('chipped', 'brown_terracotta', '#chipped:brown_terracotta');
+  add('chipped', 'brown_wool', '#chipped:brown_wool');
+  add('chipped', 'calcite', '#chipped:calcite');
+  add('chipped', 'carved_pumpkin', '#chipped:carved_pumpkin');
+  add('chipped', 'cherry_log', '#chipped:cherry_log');
+  add('chipped', 'clay', '#chipped:clay');
+  add('chipped', 'coal_block', '#chipped:coal_block');
+  add('chipped', 'cobblestone', '#chipped:cobblestone');
+  add('chipped', 'cobweb', '#chipped:cobweb');
+  add('chipped', 'crimson_fungus', '#chipped:crimson_fungus');
+  add('chipped', 'crimson_planks', '#chipped:crimson_planks');
+  add('chipped', 'crimson_roots', '#chipped:crimson_roots');
+  add('chipped', 'crimson_stem', '#chipped:crimson_stem');
+  add('chipped', 'crying_obsidian', '#chipped:crying_obsidian');
+  add('chipped', 'cyan_concrete', '#chipped:cyan_concrete');
+  add('chipped', 'cyan_glazed_terracotta', '#chipped:cyan_glazed_terracotta');
+  add('chipped', 'cyan_stained_glass', '#chipped:cyan_stained_glass');
+  add('chipped', 'cyan_stained_glass_pane', '#chipped:cyan_stained_glass_pane');
+  add('chipped', 'cyan_terracotta', '#chipped:cyan_terracotta');
+  add('chipped', 'cyan_wool', '#chipped:cyan_wool');
+  add('chipped', 'dark_oak_log', '#chipped:dark_oak_log');
+  add('chipped', 'dark_oak_planks', '#chipped:dark_oak_planks');
+  add('chipped', 'dark_prismarine', '#chipped:dark_prismarine');
+  add('chipped', 'deepslate', '#chipped:deepslate');
+  add('chipped', 'diamond_block', '#chipped:diamond_block');
+  add('chipped', 'diorite', '#chipped:diorite');
+  add('chipped', 'dirt', '#chipped:dirt');
+  add('chipped', 'dried_kelp_block', '#chipped:dried_kelp_block');
+  add('chipped', 'dripstone_block', '#chipped:dripstone_block');
+  add('chipped', 'emerald_block', '#chipped:emerald_block');
+  add('chipped', 'end_stone', '#chipped:end_stone');
+  add('chipped', 'gilded_blackstone', '#chipped:gilded_blackstone');
+  add('chipped', 'glass', '#chipped:glass');
+  add('chipped', 'glass_pane', '#chipped:glass_pane');
+  add('chipped', 'glowstone', '#chipped:glowstone');
+  add('chipped', 'gold_block', '#chipped:gold_block');
+  add('chipped', 'granite', '#chipped:granite');
+  add('chipped', 'gravel', '#chipped:gravel');
+  add('chipped', 'gray_concrete', '#chipped:gray_concrete');
+  add('chipped', 'gray_glazed_terracotta', '#chipped:gray_glazed_terracotta');
+  add('chipped', 'gray_stained_glass', '#chipped:gray_stained_glass');
+  add('chipped', 'gray_stained_glass_pane', '#chipped:gray_stained_glass_pane');
+  add('chipped', 'gray_terracotta', '#chipped:gray_terracotta');
+  add('chipped', 'gray_wool', '#chipped:gray_wool');
+  add('chipped', 'green_concrete', '#chipped:green_concrete');
+  add('chipped', 'green_glazed_terracotta', '#chipped:green_glazed_terracotta');
+  add('chipped', 'green_stained_glass', '#chipped:green_stained_glass');
+  add('chipped', 'green_stained_glass_pane', '#chipped:green_stained_glass_pane');
+  add('chipped', 'green_terracotta', '#chipped:green_terracotta');
+  add('chipped', 'green_wool', '#chipped:green_wool');
+  add('chipped', 'hay_block', '#chipped:hay_block');
+  add('chipped', 'ice', '#chipped:ice');
+  add('chipped', 'iron_bars', '#chipped:iron_bars');
+  add('chipped', 'iron_block', '#chipped:iron_block');
+  add('chipped', 'jack_o_lantern', '#chipped:jack_o_lantern');
+  add('chipped', 'jungle_log', '#chipped:jungle_log');
+  add('chipped', 'jungle_planks', '#chipped:jungle_planks');
+  add('chipped', 'ladder', '#chipped:ladder');
+  add('chipped', 'lantern', '#chipped:lantern');
+  add('chipped', 'lapis_block', '#chipped:lapis_block');
+  add('chipped', 'light_blue_concrete', '#chipped:light_blue_concrete');
+  add('chipped', 'light_blue_glazed_terracotta', '#chipped:light_blue_glazed_terracotta');
+  add('chipped', 'light_blue_stained_glass', '#chipped:light_blue_stained_glass');
+  add('chipped', 'light_blue_stained_glass_pane', '#chipped:light_blue_stained_glass_pane');
+  add('chipped', 'light_blue_terracotta', '#chipped:light_blue_terracotta');
+  add('chipped', 'light_blue_wool', '#chipped:light_blue_wool');
+  add('chipped', 'light_gray_concrete', '#chipped:light_gray_concrete');
+  add('chipped', 'light_gray_glazed_terracotta', '#chipped:light_gray_glazed_terracotta');
+  add('chipped', 'light_gray_stained_glass', '#chipped:light_gray_stained_glass');
+  add('chipped', 'light_gray_stained_glass_pane', '#chipped:light_gray_stained_glass_pane');
+  add('chipped', 'light_gray_terracotta', '#chipped:light_gray_terracotta');
+  add('chipped', 'light_gray_wool', '#chipped:light_gray_wool');
+  add('chipped', 'lily_pad', '#chipped:lily_pad');
+  add('chipped', 'lime_concrete', '#chipped:lime_concrete');
+  add('chipped', 'lime_glazed_terracotta', '#chipped:lime_glazed_terracotta');
+  add('chipped', 'lime_stained_glass', '#chipped:lime_stained_glass');
+  add('chipped', 'lime_stained_glass_pane', '#chipped:lime_stained_glass_pane');
+  add('chipped', 'lime_terracotta', '#chipped:lime_terracotta');
+  add('chipped', 'lime_wool', '#chipped:lime_wool');
+  add('chipped', 'lodestone', '#chipped:lodestone');
+  add('chipped', 'magenta_concrete', '#chipped:magenta_concrete');
+  add('chipped', 'magenta_glazed_terracotta', '#chipped:magenta_glazed_terracotta');
+  add('chipped', 'magenta_stained_glass', '#chipped:magenta_stained_glass');
+  add('chipped', 'magenta_stained_glass_pane', '#chipped:magenta_stained_glass_pane');
+  add('chipped', 'magenta_terracotta', '#chipped:magenta_terracotta');
+  add('chipped', 'magenta_wool', '#chipped:magenta_wool');
+  add('chipped', 'magma_block', '#chipped:magma_block');
+  add('chipped', 'mangrove_log', '#chipped:mangrove_log');
+  add('chipped', 'mangrove_roots', '#chipped:mangrove_roots');
+  add('chipped', 'melon', '#chipped:melon');
+  add('chipped', 'moss_block', '#chipped:moss_block');
+  add('chipped', 'mossy_cobblestone', '#chipped:mossy_cobblestone');
+  add('chipped', 'mossy_stone_bricks', '#chipped:mossy_stone_bricks');
+  add('chipped', 'mud', '#chipped:mud');
+  add('chipped', 'mud_bricks', '#chipped:mud_bricks');
+  add('chipped', 'mushroom_stem', '#chipped:mushroom_stem');
+  add('chipped', 'nether_bricks', '#chipped:nether_bricks');
+  add('chipped', 'nether_sprouts', '#chipped:nether_sprouts');
+  add('chipped', 'nether_wart_block', '#chipped:nether_wart_block');
+  add('chipped', 'netherite_block', '#chipped:netherite_block');
+  add('chipped', 'netherrack', '#chipped:netherrack');
+  add('chipped', 'oak_log', '#chipped:oak_log');
+  add('chipped', 'oak_planks', '#chipped:oak_planks');
+  add('chipped', 'obsidian', '#chipped:obsidian');
+  add('chipped', 'ochre_froglight', '#chipped:ochre_froglight');
+  add('chipped', 'orange_concrete', '#chipped:orange_concrete');
+  add('chipped', 'orange_glazed_terracotta', '#chipped:orange_glazed_terracotta');
+  add('chipped', 'orange_stained_glass', '#chipped:orange_stained_glass');
+  add('chipped', 'orange_stained_glass_pane', '#chipped:orange_stained_glass_pane');
+  add('chipped', 'orange_terracotta', '#chipped:orange_terracotta');
+  add('chipped', 'orange_wool', '#chipped:orange_wool');
+  add('chipped', 'packed_ice', '#chipped:packed_ice');
+  add('chipped', 'packed_mud', '#chipped:packed_mud');
+  add('chipped', 'pearlescent_froglight', '#chipped:pearlescent_froglight');
+  add('chipped', 'pink_concrete', '#chipped:pink_concrete');
+  add('chipped', 'pink_glazed_terracotta', '#chipped:pink_glazed_terracotta');
+  add('chipped', 'pink_stained_glass', '#chipped:pink_stained_glass');
+  add('chipped', 'pink_stained_glass_pane', '#chipped:pink_stained_glass_pane');
+  add('chipped', 'pink_terracotta', '#chipped:pink_terracotta');
+  add('chipped', 'pink_wool', '#chipped:pink_wool');
+  add('chipped', 'pointed_dripstone', '#chipped:pointed_dripstone');
+  add('chipped', 'prismarine', '#chipped:prismarine');
+  add('chipped', 'pumpkin', '#chipped:pumpkin');
+  add('chipped', 'purple_concrete', '#chipped:purple_concrete');
+  add('chipped', 'purple_glazed_terracotta', '#chipped:purple_glazed_terracotta');
+  add('chipped', 'purple_stained_glass', '#chipped:purple_stained_glass');
+  add('chipped', 'purple_stained_glass_pane', '#chipped:purple_stained_glass_pane');
+  add('chipped', 'purple_terracotta', '#chipped:purple_terracotta');
+  add('chipped', 'purple_wool', '#chipped:purple_wool');
+  add('chipped', 'purpur_block', '#chipped:purpur_block');
+  add('chipped', 'quartz_block', '#chipped:quartz_block');
+  add('chipped', 'raw_copper_block', '#chipped:raw_copper_block');
+  add('chipped', 'raw_gold_block', '#chipped:raw_gold_block');
+  add('chipped', 'raw_iron_block', '#chipped:raw_iron_block');
+  add('chipped', 'red_concrete', '#chipped:red_concrete');
+  add('chipped', 'red_glazed_terracotta', '#chipped:red_glazed_terracotta');
+  add('chipped', 'red_mushroom', '#chipped:red_mushroom');
+  add('chipped', 'red_mushroom_block', '#chipped:red_mushroom_block');
+  add('chipped', 'red_nether_bricks', '#chipped:red_nether_bricks');
+  add('chipped', 'red_sandstone', '#chipped:red_sandstone');
+  add('chipped', 'red_stained_glass', '#chipped:red_stained_glass');
+  add('chipped', 'red_stained_glass_pane', '#chipped:red_stained_glass_pane');
+  add('chipped', 'red_terracotta', '#chipped:red_terracotta');
+  add('chipped', 'red_wool', '#chipped:red_wool');
+  add('chipped', 'redstone_block', '#chipped:redstone_block');
+  add('chipped', 'redstone_lamp', '#chipped:redstone_lamp');
+  add('chipped', 'redstone_torch', '#chipped:redstone_torch');
+  add('chipped', 'sandstone', '#chipped:sandstone');
+  add('chipped', 'sea_lantern', '#chipped:sea_lantern');
+  add('chipped', 'shroomlight', '#chipped:shroomlight');
+  add('chipped', 'smooth_stone', '#chipped:smooth_stone');
+  add('chipped', 'snow_block', '#chipped:snow_block');
+  add('chipped', 'soul_lantern', '#chipped:soul_lantern');
+  add('chipped', 'soul_sand', '#chipped:soul_sand');
+  add('chipped', 'sponge', '#chipped:sponge');
+  add('chipped', 'spruce_log', '#chipped:spruce_log');
+  add('chipped', 'spruce_planks', '#chipped:spruce_planks');
+  add('chipped', 'stone', '#chipped:stone');
+  add('chipped', 'stripped_acacia_log', '#chipped:stripped_acacia_log');
+  add('chipped', 'stripped_birch_log', '#chipped:stripped_birch_log');
+  add('chipped', 'stripped_cherry_log', '#chipped:stripped_cherry_log');
+  add('chipped', 'stripped_crimson_stem', '#chipped:stripped_crimson_stem');
+  add('chipped', 'stripped_dark_oak_log', '#chipped:stripped_dark_oak_log');
+  add('chipped', 'stripped_jungle_log', '#chipped:stripped_jungle_log');
+  add('chipped', 'stripped_mangrove_log', '#chipped:stripped_mangrove_log');
+  add('chipped', 'stripped_oak_log', '#chipped:stripped_oak_log');
+  add('chipped', 'stripped_spruce_log', '#chipped:stripped_spruce_log');
+  add('chipped', 'stripped_warped_stem', '#chipped:stripped_warped_stem');
+  add('chipped', 'terracotta', '#chipped:terracotta');
+  add('chipped', 'torch', '#chipped:torch');
+  add('chipped', 'tuff', '#chipped:tuff');
+  add('chipped', 'verdant_froglight', '#chipped:verdant_froglight');
+  add('chipped', 'vine', '#chipped:vine');
+  add('chipped', 'warped_fungus', '#chipped:warped_fungus');
+  add('chipped', 'warped_roots', '#chipped:warped_roots');
+  add('chipped', 'warped_stem', '#chipped:warped_stem');
+  add('chipped', 'warped_wart_block', '#chipped:warped_wart_block');
+  add('chipped', 'waxed_copper_block', '#chipped:waxed_copper_block');
+  add('chipped', 'waxed_exposed_copper_block', '#chipped:waxed_exposed_copper_block');
+  add('chipped', 'waxed_oxidized_copper', '#chipped:waxed_oxidized_copper');
+  add('chipped', 'waxed_weathered_copper', '#chipped:waxed_weathered_copper');
+  add('chipped', 'white_concrete', '#chipped:white_concrete');
+  add('chipped', 'white_glazed_terracotta', '#chipped:white_glazed_terracotta');
+  add('chipped', 'white_stained_glass', '#chipped:white_stained_glass');
+  add('chipped', 'white_stained_glass_pane', '#chipped:white_stained_glass_pane');
+  add('chipped', 'white_terracotta', '#chipped:white_terracotta');
+  add('chipped', 'white_wool', '#chipped:white_wool');
+  add('chipped', 'yellow_concrete', '#chipped:yellow_concrete');
+  add('chipped', 'yellow_glazed_terracotta', '#chipped:yellow_glazed_terracotta');
+  add('chipped', 'yellow_stained_glass', '#chipped:yellow_stained_glass');
+  add('chipped', 'yellow_stained_glass_pane', '#chipped:yellow_stained_glass_pane');
+  add('chipped', 'yellow_terracotta', '#chipped:yellow_terracotta');
+  add('chipped', 'yellow_wool', '#chipped:yellow_wool');
+  add('chisel', 'nether_brick', '#chisel:nether_brick');
+  add('chisel', 'purpur', '#chisel:purpur');
+  add('chisel', 'quartz', '#chisel:quartz');
+  add('comforts', 'hammocks', '#comforts:hammocks');
+  add('comforts', 'sleeping_bags', '#comforts:sleeping_bags');
+  add('cookingforblockheads', 'cabinets', '#cookingforblockheads:cabinets');
+  add('cookingforblockheads', 'connectors', '#cookingforblockheads:connectors');
+  add('cookingforblockheads', 'cooking_tables', '#cookingforblockheads:cooking_tables');
+  add('cookingforblockheads', 'counters', '#cookingforblockheads:counters');
+  add('cookingforblockheads', 'fridges', '#cookingforblockheads:fridges');
+  add('cookingforblockheads', 'ovens', '#cookingforblockheads:ovens');
+  add('cookingforblockheads', 'sinks', '#cookingforblockheads:sinks');
+  add('create', 'crushed_raw_materials', '#create:crushed_raw_materials');
+  add('create', 'postboxes', '#create:postboxes');
+  add('create', 'seats', '#create:seats');
+  add('create', 'table_cloths', '#create:table_cloths');
+  add('create', 'toolboxes', '#create:toolboxes');
+  add('create', 'valve_handles', '#create:valve_handles');
+  add('createaddition', 'spools', '#createaddition:spools');
+  add('crystal_chronicles', 'bismuth/full_blocks/cyan', '#crystal_chronicles:bismuth/full_blocks/cyan');
+  add('crystal_chronicles', 'bismuth/full_blocks/purple', '#crystal_chronicles:bismuth/full_blocks/purple');
+  add('crystal_chronicles', 'bismuth/full_blocks/rainbow', '#crystal_chronicles:bismuth/full_blocks/rainbow');
+  add('crystal_chronicles', 'bismuth/full_blocks/violet', '#crystal_chronicles:bismuth/full_blocks/violet');
+  add('crystal_chronicles', 'bismuth/full_blocks/yellow', '#crystal_chronicles:bismuth/full_blocks/yellow');
+  add('curios', 'an_focus', '#curios:an_focus');
+  add('curios', 'rune', '#curios:rune');
+  add('eternal_starlight', 'yeti_fur', '#eternal_starlight:yeti_fur');
+  add('eternal_starlight', 'yeti_fur_carpets', '#eternal_starlight:yeti_fur_carpets');
+  add('factory_blocks', 'factory', '#factory_blocks:factory');
+  add('farmersdelight', 'cabinets', '#farmersdelight:cabinets');
+  add('functionalstorage', 'drawer_1x1', '#functionalstorage:drawer_1x1');
+  add('functionalstorage', 'drawer_1x2', '#functionalstorage:drawer_1x2');
+  add('functionalstorage', 'drawer_2x2', '#functionalstorage:drawer_2x2');
+  add('glassential', 'doors/dyed', '#glassential:doors/dyed');
+  add('glassential', 'trapdoors/dyed', '#glassential:trapdoors/dyed');
+  add('handcrafted', 'benches', '#handcrafted:benches');
+  add('handcrafted', 'chairs', '#handcrafted:chairs');
+  add('handcrafted', 'corner_trims', '#handcrafted:corner_trims');
+  add('handcrafted', 'couches', '#handcrafted:couches');
+  add('handcrafted', 'counters', '#handcrafted:counters');
+  add('handcrafted', 'crockery', '#handcrafted:crockery');
+  add('handcrafted', 'cupboards', '#handcrafted:cupboards');
+  add('handcrafted', 'cushions', '#handcrafted:cushions');
+  add('handcrafted', 'desks', '#handcrafted:desks');
+  add('handcrafted', 'dining_benches', '#handcrafted:dining_benches');
+  add('handcrafted', 'drawers', '#handcrafted:drawers');
+  add('handcrafted', 'nightstands', '#handcrafted:nightstands');
+  add('handcrafted', 'pillar_trims', '#handcrafted:pillar_trims');
+  add('handcrafted', 'pots', '#handcrafted:pots');
+  add('handcrafted', 'sheets', '#handcrafted:sheets');
+  add('handcrafted', 'shelves', '#handcrafted:shelves');
+  add('handcrafted', 'side_tables', '#handcrafted:side_tables');
+  add('handcrafted', 'tables', '#handcrafted:tables');
+  add('handcrafted', 'trophies', '#handcrafted:trophies');
+  add('hostilenetworks', 'generalized_predictions', '#hostilenetworks:generalized_predictions');
+  add('integrateddynamics', 'parts', '#integrateddynamics:parts');
+  add('little_big_redstone', 'floppy_disks', '#little_big_redstone:floppy_disks');
+  add('little_big_redstone', 'logic_arrays', '#little_big_redstone:logic_arrays');
+  add('little_big_redstone', 'logic_components', '#little_big_redstone:logic_components');
+  add('little_big_redstone', 'microchips', '#little_big_redstone:microchips');
+  add('little_big_redstone', 'sticky_notes', '#little_big_redstone:sticky_notes');
+  add('luminax', 'blocks', '#luminax:blocks');
+  add('luminax', 'dim_blocks', '#luminax:dim_blocks');
+  add('malum', 'fractured_impetus', '#malum:fractured_impetus');
+  add('malum', 'impetus', '#malum:impetus');
+  add('malum', 'metal_nodes', '#malum:metal_nodes');
+  add('mekanism', 'clumps', '#mekanism:clumps');
+  add('mekanism', 'crystals', '#mekanism:crystals');
+  add('mekanism', 'dirty_dusts', '#mekanism:dirty_dusts');
+  add('mekanism', 'enriched', '#mekanism:enriched');
+  add('mekanism_extras', 'enriched', '#mekanism_extras:enriched');
+  add('mekanism', 'shards', '#mekanism:shards');
+  add('minecraft', 'bundles', '#minecraft:bundles');
+  add('minecraft', 'harnesses', '#minecraft:harnesses');
+  add('minecraft', 'sand', '#minecraft:sand');
+  add('modern_industrialization', 'fluid_pipes', '#modern_industrialization:fluid_pipes');
+  add('modern_industrialization', 'item_pipes', '#modern_industrialization:item_pipes');
+  add('modern_industrialization', 'me_wires', '#modern_industrialization:me_wires');
+  add('modularrouters', 'augments', '#modularrouters:augments');
+  add('modularrouters', 'filters', '#modularrouters:filters');
+  add('modularrouters', 'modules', '#modularrouters:modules');
+  add('modularrouters', 'upgrades', '#modularrouters:upgrades');
+  add('morered', 'colored_network_cables', '#morered:colored_network_cables');
+  add('powah', 'ender_cells', '#powah:ender_cells');
+  add('powah', 'ender_gates', '#powah:ender_gates');
+  add('powah', 'energizing_rods', '#powah:energizing_rods');
+  add('powah', 'energy_cables', '#powah:energy_cables');
+  add('powah', 'energy_cells', '#powah:energy_cells');
+  add('powah', 'energy_dischargers', '#powah:energy_dischargers');
+  add('powah', 'energy_hoppers', '#powah:energy_hoppers');
+  add('powah', 'furnators', '#powah:furnators');
+  add('powah', 'magmators', '#powah:magmators');
+  add('powah', 'player_transmitters', '#powah:player_transmitters');
+  add('powah', 'reactors', '#powah:reactors');
+  add('powah', 'solar_panels', '#powah:solar_panels');
+  add('powah', 'thermo_generators', '#powah:thermo_generators');
+  add('rechiseled', 'acacia_planks', '#rechiseled:acacia_planks');
+  add('rechiseled', 'amethyst_block', '#rechiseled:amethyst_block');
+  add('rechiseled', 'andesite', '#rechiseled:andesite');
+  add('rechiseled', 'bamboo_planks', '#rechiseled:bamboo_planks');
+  add('rechiseled', 'basalt', '#rechiseled:basalt');
+  add('rechiseled', 'birch_planks', '#rechiseled:birch_planks');
+  add('rechiseled', 'blackstone', '#rechiseled:blackstone');
+  add('rechiseled', 'blue_ice', '#rechiseled:blue_ice');
+  add('rechiseled', 'bone_block', '#rechiseled:bone_block');
+  add('rechiseled', 'cherry_planks', '#rechiseled:cherry_planks');
+  add('rechiseled', 'coal_block', '#rechiseled:coal_block');
+  add('rechiseled', 'cobbled_deepslate', '#rechiseled:cobbled_deepslate');
+  add('rechiseled', 'cobblestone', '#rechiseled:cobblestone');
+  add('rechiseled', 'copper_block', '#rechiseled:copper_block');
+  add('rechiseled', 'crimson_planks', '#rechiseled:crimson_planks');
+  add('rechiseled', 'dark_oak_planks', '#rechiseled:dark_oak_planks');
+  add('rechiseled', 'dark_prismarine', '#rechiseled:dark_prismarine');
+  add('rechiseled', 'diamond_block', '#rechiseled:diamond_block');
+  add('rechiseled', 'diorite', '#rechiseled:diorite');
+  add('rechiseled', 'dirt', '#rechiseled:dirt');
+  add('rechiseled', 'emerald_block', '#rechiseled:emerald_block');
+  add('rechiseled', 'end_stone', '#rechiseled:end_stone');
+  add('rechiseled', 'glowstone', '#rechiseled:glowstone');
+  add('rechiseled', 'gold_block', '#rechiseled:gold_block');
+  add('rechiseled', 'granite', '#rechiseled:granite');
+  add('rechiseled', 'iron_block', '#rechiseled:iron_block');
+  add('rechiseled', 'jungle_planks', '#rechiseled:jungle_planks');
+  add('rechiseled', 'lapis_block', '#rechiseled:lapis_block');
+  add('rechiseled', 'mangrove_planks', '#rechiseled:mangrove_planks');
+  add('rechiseled', 'nether_bricks', '#rechiseled:nether_bricks');
+  add('rechiseled', 'netherite_block', '#rechiseled:netherite_block');
+  add('rechiseled', 'netherrack', '#rechiseled:netherrack');
+  add('rechiseled', 'oak_planks', '#rechiseled:oak_planks');
+  add('rechiseled', 'obsidian', '#rechiseled:obsidian');
+  add('rechiseled', 'prismarine', '#rechiseled:prismarine');
+  add('rechiseled', 'purpur_block', '#rechiseled:purpur_block');
+  add('rechiseled', 'quartz_block', '#rechiseled:quartz_block');
+  add('rechiseled', 'red_nether_bricks', '#rechiseled:red_nether_bricks');
+  add('rechiseled', 'red_sandstone', '#rechiseled:red_sandstone');
+  add('rechiseled', 'redstone_block', '#rechiseled:redstone_block');
+  add('rechiseled', 'sandstone', '#rechiseled:sandstone');
+  add('rechiseled', 'spruce_planks', '#rechiseled:spruce_planks');
+  add('rechiseled', 'stone', '#rechiseled:stone');
+  add('rechiseled', 'warped_planks', '#rechiseled:warped_planks');
+  add('rechiseledae', 'certus_quartz_block', '#rechiseledae:certus_quartz_block');
+  add('refurbished_furniture', 'bathroom', '#refurbished_furniture:bathroom');
+  add('refurbished_furniture', 'coloured_kitchen_cabinetry', '#refurbished_furniture:coloured_kitchen_cabinetry');
+  add('refurbished_furniture', 'coloured_kitchen_drawers', '#refurbished_furniture:coloured_kitchen_drawers');
+  add('refurbished_furniture', 'coloured_kitchen_sinks', '#refurbished_furniture:coloured_kitchen_sinks');
+  add('refurbished_furniture', 'coloured_kitchen_storage_cabinets', '#refurbished_furniture:coloured_kitchen_storage_cabinets');
+  add('refurbished_furniture', 'coolers', '#refurbished_furniture:coolers');
+  add('refurbished_furniture', 'grills', '#refurbished_furniture:grills');
+  add('refurbished_furniture', 'lamps', '#refurbished_furniture:lamps');
+  add('refurbished_furniture', 'sofas', '#refurbished_furniture:sofas');
+  add('refurbished_furniture', 'stools', '#refurbished_furniture:stools');
+  add('refurbished_furniture', 'trampolines', '#refurbished_furniture:trampolines');
+  add('refurbished_furniture', 'wooden_kitchen_cabinetry', '#refurbished_furniture:wooden_kitchen_cabinetry');
+  add('refurbished_furniture', 'wooden_kitchen_drawers', '#refurbished_furniture:wooden_kitchen_drawers');
+  add('refurbished_furniture', 'wooden_kitchen_sinks', '#refurbished_furniture:wooden_kitchen_sinks');
+  add('refurbished_furniture', 'wooden_kitchen_storage_cabinets', '#refurbished_furniture:wooden_kitchen_storage_cabinets');
+  add('simplylight', 'any_bulb', '#simplylight:any_bulb');
+  add('simplylight', 'any_edge_light', '#simplylight:any_edge_light');
+  add('simplylight', 'any_edge_light_top', '#simplylight:any_edge_light_top');
+  add('simplylight', 'any_fixture', '#simplylight:any_fixture');
+  add('simplylight', 'any_lamp_off', '#simplylight:any_lamp_off');
+  add('simplylight', 'any_lamp_on', '#simplylight:any_lamp_on');
+  add('simplylight', 'any_panel', '#simplylight:any_panel');
+  add('simplylight', 'any_post', '#simplylight:any_post');
+  add('simplylight', 'any_rod', '#simplylight:any_rod');
+  add('simplylight', 'any_slab', '#simplylight:any_slab');
+  add('sophisticatedbackpacks', 'upgrade', '#sophisticatedbackpacks:upgrade');
+  add('spectrum', 'basal_marbles', '#spectrum:basal_marbles');
+  add('spectrum', 'basalts', '#spectrum:basalts');
+  add('spectrum', 'black_logs', '#spectrum:black_logs');
+  add('spectrum', 'blackslags', '#spectrum:blackslags');
+  add('spectrum', 'blue_logs', '#spectrum:blue_logs');
+  add('spectrum', 'brown_logs', '#spectrum:brown_logs');
+  add('spectrum', 'calcites', '#spectrum:calcites');
+  add('spectrum', 'citrine_crystals', '#spectrum:citrine_crystals');
+  add('spectrum', 'colored_planks', '#spectrum:colored_planks');
+  add('spectrum', 'cyan_logs', '#spectrum:cyan_logs');
+  add('spectrum', 'dragonbone_blocks', '#spectrum:dragonbone_blocks');
+  add('spectrum', 'dragonjags', '#spectrum:dragonjags');
+  add('spectrum', 'gray_logs', '#spectrum:gray_logs');
+  add('spectrum', 'green_logs', '#spectrum:green_logs');
+  add('spectrum', 'idols', '#spectrum:idols');
+  add('spectrum', 'ink_containers', '#spectrum:ink_containers');
+  add('spectrum', 'light_blue_logs', '#spectrum:light_blue_logs');
+  add('spectrum', 'light_gray_logs', '#spectrum:light_gray_logs');
+  add('spectrum', 'lime_logs', '#spectrum:lime_logs');
+  add('spectrum', 'magenta_logs', '#spectrum:magenta_logs');
+  add('spectrum', 'moonstone_crystals', '#spectrum:moonstone_crystals');
+  add('spectrum', 'noxwood_amphoras', '#spectrum:noxwood_amphoras');
+  add('spectrum', 'onyx_crystals', '#spectrum:onyx_crystals');
+  add('spectrum', 'orange_logs', '#spectrum:orange_logs');
+  add('spectrum', 'pedestals', '#spectrum:pedestals');
+  add('spectrum', 'pigments', '#spectrum:pigments');
+  add('spectrum', 'pink_logs', '#spectrum:pink_logs');
+  add('spectrum', 'pure_resources', '#spectrum:pure_resources');
+  add('spectrum', 'purple_logs', '#spectrum:purple_logs');
+  add('spectrum', 'pyrite', '#spectrum:pyrite');
+  add('spectrum', 'red_logs', '#spectrum:red_logs');
+  add('spectrum', 'resplendent_feathers', '#spectrum:resplendent_feathers');
+  add('spectrum', 'shale_clays', '#spectrum:shale_clays');
+  add('spectrum', 'topaz_crystals', '#spectrum:topaz_crystals');
+  add('spectrum', 'white_logs', '#spectrum:white_logs');
+  add('spectrum', 'yellow_logs', '#spectrum:yellow_logs');
+  add('starcatcher', 'bobbers', '#starcatcher:bobbers');
+  add('starcatcher', 'hats', '#starcatcher:hats');
+  add('starcatcher', 'hooks', '#starcatcher:hooks');
+  add('starcatcher', 'rods', '#starcatcher:rods');
+  add('starcatcher', 'tackle_boxes', '#starcatcher:tackle_boxes');
+  add('starcatcher', 'templates', '#starcatcher:templates');
+  add('starcatcher', 'worms', '#starcatcher:worms');
+  add('supplementaries', 'awnings', '#supplementaries:awnings');
+  add('supplementaries', 'bamboo_spikes', '#supplementaries:bamboo_spikes');
+  add('supplementaries', 'presents', '#supplementaries:presents');
+  add('supplementaries', 'way_signs', '#supplementaries:way_signs');
+  add('the_bumblezone', 'ancient_wax/full_blocks', '#the_bumblezone:ancient_wax/full_blocks');
+  add('the_bumblezone', 'ancient_wax/slabs', '#the_bumblezone:ancient_wax/slabs');
+  add('the_bumblezone', 'ancient_wax/stairs', '#the_bumblezone:ancient_wax/stairs');
+  add('the_bumblezone', 'bee_queen/dedicated_trade_tags/modded/cookingforblockheads_kitchen_floors', '#the_bumblezone:bee_queen/dedicated_trade_tags/modded/cookingforblockheads_kitchen_floors');
+  add('the_bumblezone', 'bee_queen/dedicated_trade_tags/modded/utilitarian_soliciting_carpets', '#the_bumblezone:bee_queen/dedicated_trade_tags/modded/utilitarian_soliciting_carpets');
+  add('the_bumblezone', 'bee_queen/dedicated_trade_tags/modded/utilitarian_trapped_soliciting_carpets', '#the_bumblezone:bee_queen/dedicated_trade_tags/modded/utilitarian_trapped_soliciting_carpets');
+  add('the_bumblezone', 'carvable_wax', '#the_bumblezone:carvable_wax');
+  add('the_bumblezone', 'luminescent_wax/channels', '#the_bumblezone:luminescent_wax/channels');
+  add('the_bumblezone', 'luminescent_wax/corners', '#the_bumblezone:luminescent_wax/corners');
+  add('the_bumblezone', 'string_curtains', '#the_bumblezone:string_curtains');
+  add('the_bumblezone', 'super_candles', '#the_bumblezone:super_candles');
+  add('theurgy', 'alchemical_niters', '#theurgy:alchemical_niters');
+  add('theurgy', 'alchemical_sulfurs', '#theurgy:alchemical_sulfurs');
+  add('theurgy', 'alchemical_sulfurs/common', '#theurgy:alchemical_sulfurs/common');
+  add('theurgy', 'alchemical_sulfurs/earthen_matters', '#theurgy:alchemical_sulfurs/earthen_matters');
+  add('theurgy', 'alchemical_sulfurs/logs', '#theurgy:alchemical_sulfurs/logs');
+  add('theurgy', 'alchemical_sulfurs/precious', '#theurgy:alchemical_sulfurs/precious');
+  add('twilightforest', 'trophies', '#twilightforest:trophies');
+  add('waystones', 'sharestones', '#waystones:sharestones');
+  add('waystones', 'waystones', '#waystones:waystones');
+  add('xtonesreworked', 'agon', '#xtonesreworked:agon');
+  add('xtonesreworked', 'azur', '#xtonesreworked:azur');
+  add('xtonesreworked', 'bitt', '#xtonesreworked:bitt');
+  add('xtonesreworked', 'cray', '#xtonesreworked:cray');
+  add('xtonesreworked', 'fort', '#xtonesreworked:fort');
+  add('xtonesreworked', 'iszm', '#xtonesreworked:iszm');
+  add('xtonesreworked', 'jelt', '#xtonesreworked:jelt');
+  add('xtonesreworked', 'korp', '#xtonesreworked:korp');
+  add('xtonesreworked', 'kryp', '#xtonesreworked:kryp');
+  add('xtonesreworked', 'lair', '#xtonesreworked:lair');
+  add('xtonesreworked', 'lave', '#xtonesreworked:lave');
+  add('xtonesreworked', 'mint', '#xtonesreworked:mint');
+  add('xtonesreworked', 'myst', '#xtonesreworked:myst');
+  add('xtonesreworked', 'reds', '#xtonesreworked:reds');
+  add('xtonesreworked', 'reed', '#xtonesreworked:reed');
+  add('xtonesreworked', 'roen', '#xtonesreworked:roen');
+  add('xtonesreworked', 'sols', '#xtonesreworked:sols');
+  add('xtonesreworked', 'sync', '#xtonesreworked:sync');
+  add('xtonesreworked', 'tank', '#xtonesreworked:tank');
+  add('xtonesreworked', 'vect', '#xtonesreworked:vect');
+  add('xtonesreworked', 'vena', '#xtonesreworked:vena');
+  add('xtonesreworked', 'zane', '#xtonesreworked:zane');
+  add('xtonesreworked', 'zech', '#xtonesreworked:zech');
+  add('xtonesreworked', 'zest', '#xtonesreworked:zest');
+  add('xtonesreworked', 'zeta', '#xtonesreworked:zeta');
+  add('xtonesreworked', 'zion', '#xtonesreworked:zion');
+  add('xtonesreworked', 'zkul', '#xtonesreworked:zkul');
+  add('xtonesreworked', 'zoea', '#xtonesreworked:zoea');
+  add('xtonesreworked', 'zome', '#xtonesreworked:zome');
+  add('xtonesreworked', 'zone', '#xtonesreworked:zone');
+  add('xtonesreworked', 'zorg', '#xtonesreworked:zorg');
+  add('xtonesreworked', 'ztyl', '#xtonesreworked:ztyl');
+  add('xtonesreworked', 'zyth', '#xtonesreworked:zyth');
+  add('xycraft', 'crafting_groups/cloud/aluminum', '#xycraft:crafting_groups/cloud/aluminum');
+  add('xycraft', 'crafting_groups/cloud/kivi', '#xycraft:crafting_groups/cloud/kivi');
+  add('xycraft', 'crafting_groups/kivi', '#xycraft:crafting_groups/kivi');
+  add('sophisticatedstorageinmotion', 'sophisticated_minecarts', 'sophisticatedstorageinmotion:storage_minecart');
+  add('sophisticatedstorageinmotion', 'sophisticated_boats', 'sophisticatedstorageinmotion:storage_boat');
+  add('sophisticatedbackpacks', 'sophisticated_backpacks', 'sophisticatedbackpacks:backpack');
+  add('sophisticatedstorage', 'storage_connectors', /^sophisticatedstorage:.*_storage_connector$/);
+
+  let soph_tiers = ['copper', 'iron', 'gold', 'diamond', 'netherite'];
+  let soph_types = ['barrel', 'chest', 'shulker_box'];
+
+  soph_types.forEach(type => {
+    add('sophisticatedstorage', `sophisticated_${type}s`, `sophisticatedstorage:${type}`);
+    if (type == 'barrel') for (let i = 1; i <= 4; i++) add('sophisticatedstorage', `sophisticated_limited_${type}_${i}s`, `sophisticatedstorage:limited_${type}_${i}`);
+    soph_tiers.forEach(tier => {
+      add('sophisticatedstorage', `sophisticated_${tier}_${type}s`, `sophisticatedstorage:${tier}_${type}`);
+      if (type == 'barrel') for (let i = 1; i <= 4; i++) add('sophisticatedstorage', `sophisticated_limited_${tier}_${type}_${i}s`, `sophisticatedstorage:limited_${tier}_${type}_${i}`);
+    });
+  });
+
+  add('apotheosis', 'potion_charms', 'apotheosis:potion_charm');
+  add('apotheosis', 'gems', 'apotheosis:gem');
+  add('modern_industrialization', 'barrels', '#modern_industrialization:barrels');
+  add('woodwevegot', 'barrels', '#woodwevegot:barrels');
+
+  // Arts and Crafts
+  add('arts_and_crafts', 'verdrant_pietraforte', /^arts_and_crafts:.*verdrant_pietraforte/);
+  add('arts_and_crafts', 'umber_pietraforte', /^arts_and_crafts:.*umber_pietraforte/);
+  add('arts_and_crafts', 'ochre_pietraforte', /^arts_and_crafts:.*ochre_pietraforte/);
+  add('arts_and_crafts', 'marlot_pietraforte', /^arts_and_crafts:.*marlot_pietraforte/);
+  add('arts_and_crafts', 'jet_pietraforte', /^arts_and_crafts:.*jet_pietraforte/);
+  add('arts_and_crafts', 'ivory_pietraforte', /^arts_and_crafts:.*ivory_pietraforte/);
+  add('arts_and_crafts', 'hazel_pietraforte', /^arts_and_crafts:.*hazel_pietraforte/);
+  add('arts_and_crafts', 'beige_pietraforte', /^arts_and_crafts:.*beige_pietraforte/);
+
+  add('ae2wtlib', 'wireless_terminals', /.*:wireless.*terminal$/);
+
+  add('gateways', 'gate_pearls', 'gateways:gate_pearl');
+
+  // Macaw's
+  const mcwMaterials = '(?:acacia|asian_red|bamboo|birch|cherry|crimson|dark_oak|dry_bamboo|jungle|mangrove|oak|spruce|warped)';
+  const mcwColors = '(?:black|blue|brown|cyan|gray|green|light_blue|light_gray|lime|magenta|orange|pink|purple|red|white|yellow)';
+  const mcwPattern = (mod, pattern) =>
+    new RegExp(`^${mod}:(?:${pattern})$`);
+  const mcwSuffixGroups = function () {
+    let groups = {};
+    for (let i = 0; i < arguments.length; i++) {
+      let suffix = arguments[i];
+      groups[suffix.endsWith('s') ? suffix : `${suffix}s`] = `.*_${suffix}`;
+    }
+    return groups;
+  };
+
+  const mcwGroups = {
+    mcwbridges: Object.assign({
+      bridges: '.*_bridge',
+      bridge_lighting: 'bridge_(?:lantern|torch|lights)',
+      bridge_tools: 'pliers',
+    }, mcwSuffixGroups('bridge_pier', 'bridge_stair', 'bridge_middle', 'rail_bridge')),
+
+    mcwdoors: Object.assign({
+      barn_doors: '.*_barn(?:_glass)?_door',
+      glass_doors: '.*(?:bark_)?glass_door',
+      japanese_doors: '.*_japanese\\d*_door',
+      stable_doors: '.*_stable(?:_head)?_door',
+      metal_doors: 'metal(?:_.+)?_door',
+      garage_doors: 'garage_.+_door',
+      door_prints: 'print_.*',
+      special_doors: '(?:iron|wooden)_portcullis|(?:jail_door|sliding_glass_door|store_door)',
+    }, mcwSuffixGroups(
+      'bamboo_door', 'beach_door', 'classic_door', 'cottage_door', 'four_panel_door',
+      'modern_door', 'mystic_door', 'nether_door', 'paper_door', 'swamp_door',
+      'tropical_door', 'waffle_door', 'western_door', 'whispering_door'
+    )),
+
+    mcwfences: {
+      wooden_gates: `${mcwMaterials}_.+_gate`,
+      wooden_fences: `${mcwMaterials}(?:_.+)?_fence`,
+      wooden_hedges: `(?:flowering_)?azalea_hedge|${mcwMaterials}_hedge`,
+      horse_fences: '.*_horse_fence',
+      picket_fences: '.*_picket_fence',
+      stockade_fences: '.*_stockade_fence',
+      wired_fences: '.*_wired_fence',
+      pyramid_gates: '.*_pyramid_gate',
+      railing_gates: '.*_railing_gate(?:_stonecutter)?',
+      grass_topped_walls: '.*_grass_topped_wall',
+      pillar_walls: '.*_pillar_wall',
+      modern_walls: 'modern_.*_wall(?:_stonecutter)?',
+      railing_walls: 'railing_.*_wall(?:_stonecutter)?',
+      metal_fences: '.*metal_fence(?:_gate)?',
+      cheval_de_frise: '(?:iron|wooden)_cheval_de_frise',
+    },
+
+    mcwholidays: {
+      balloons: '.*_balloon',
+      presents: '.*_presents?',
+      stockings: '.*_stockings?',
+      christmas_tree_segments: '(?:.*_)?(?:decorated_)?christmas_tree_(?:base|bottom|middle|top)',
+      pine_tree_segments: '(?:snow_covered_|snowy_)?pine_(?:bottom|middle|top)',
+      candy_canes: '.*_?candy_cane(?:_block|_slab|_slim|_stairs)?',
+      ornaments: '.*_ornament',
+      garlands: '(?!.*_lights$).*garland.*',
+      garland_lights: '.*garland.*_lights',
+      string_lights: '.*(?:string_lights|cube_string_lights|tiny_string_lights)',
+      snowmen: 'snowman.*',
+      icicles: 'icicle.*',
+      snow_decorations: '(?:snowy_(?:fern|grass|grass_block|tall_fern|tall_grass)|unmeltable_snow)',
+      snowy_foliage: 'snowy_(?:oak|spruce)_leaves(?:_carpet)?',
+      autumn_foliage: '(?:brown|mixed|orange|red|yellow)_oak_leaves(?:_carpet)?',
+      mistletoe: 'mistletoe',
+      hay_decorations: '(?:laying|standing)_hay_bale|hay_wheelbarrow',
+      wood_piles: 'pile_of_.*_wood',
+      wooden_sleds: 'wooden_sled',
+      holiday_trinkets: '(?:single|couple)_bells?|single_potions?|(?:pair_of|three)_potions',
+      pumpkin_decorations: '.*pumpkin.*',
+      cobwebs: '.*cobweb',
+      ghosts: '.*ghost.*',
+      skeletons: '.*skeleton.*',
+      witch_decorations: 'witch_.*',
+      spooky_creatures: '(?:bat|spider).*',
+      grave_markers: '.*gravestone|(?:stone|wooden)_cross',
+      harvest_decorations: 'scarecrow|standing_(?:broomstick|rake|shovel)',
+      holiday_doormats: '.*_doormat',
+      holiday_wall_decorations: '.*_wall_deco.*',
+    },
+
+    mcwlights: {
+      ceiling_fan_lights: '.*_ceiling_fan_light',
+      ceiling_lights: `${mcwColors}_ceiling_light`,
+      lamps: `${mcwColors}_lamp`,
+      paper_lamps: '.*paper_lamp',
+      garden_lights: '.*garden_light',
+      street_lights: '(?:soul_)?(?:classic_|double_)?street_lamp',
+      lanterns: '(?:bell|chain|covered|cross|festive|striped|tavern)_lantern',
+      wall_lanterns: '(?:bell|chain|covered|cross|festive|striped|tavern)_wall_lantern|wall_lantern',
+      wall_lamps: '.*wall_lamp',
+      tiki_torches: `(?:soul_)?${mcwMaterials}_tiki_torch`,
+      torches: '(?:framed|iron_framed|reinforced|rustic|upgraded)_torch',
+      chandeliers: '.*chandelier',
+      candle_holders: '.*candle_holder',
+      chains: '(?:copper|golden)_chain',
+      lava_lamps: 'lava_lamp',
+      light_slabs: '(?:glowstone|redstone_lamp|sea_lantern|shroomlight)_slab',
+    },
+
+    mcwpaths: Object.assign({
+      planks_paths: `${mcwMaterials}_planks_path`,
+      soil_paths: '(?:dirt|gravel|podzol|red_sand|sand)_path_block',
+    }, mcwSuffixGroups(
+      'diamond_paving', 'basket_weave_paving', 'clover_paving',
+      'crystal_floor_path', 'crystal_floor_slab', 'crystal_floor_stairs', 'crystal_floor',
+      'dumble_paving', 'flagstone_path', 'flagstone_slab', 'flagstone_stairs', 'flagstone',
+      'honeycomb_paving', 'running_bond_path', 'running_bond_slab', 'running_bond_stairs', 'running_bond',
+      'square_paving', 'strewn_rocky_path',
+      'windmill_weave_path', 'windmill_weave_slab', 'windmill_weave_stairs', 'windmill_weave'
+    )),
+
+    mcwroofs: Object.assign({
+      roofs: '(?!.*_(?:attic|lower|steep|top|upper_lower|upper_steep)_roof$).*_roof',
+      lower_roofs: '(?!.*_upper_lower_roof$).*_lower_roof',
+      steep_roofs: '(?!.*_upper_steep_roof$).*_steep_roof',
+      gutters: 'gutter.*|rain_gutter',
+    }, mcwSuffixGroups(
+      'attic_roof', 'top_roof', 'upper_lower_roof', 'upper_steep_roof',
+      'roof_block', 'roof_slab', 'striped_awning'
+    )),
+
+    mcwstairs: mcwSuffixGroups(
+      'balcony', 'bulk_stairs', 'compact_stairs', 'loft_stairs',
+      'platform', 'railing', 'skyline_stairs', 'terrace_stairs'
+    ),
+
+    mcwtrpdoors: Object.assign({
+      bamboo_trapdoors: '.*_bamboo_trapdoor|bamboo_trapdoor',
+      metal_trapdoors: 'metal.*_trapdoor',
+      trapdoor_prints: 'print_.*',
+    }, mcwSuffixGroups(
+      'bark_trapdoor', 'barn_trapdoor', 'barred_trapdoor', 'barrel_trapdoor', 'beach_trapdoor',
+      'blossom_trapdoor', 'classic_trapdoor', 'cottage_trapdoor', 'four_panel_trapdoor',
+      'glass_trapdoor', 'mystic_trapdoor', 'paper_trapdoor', 'ranch_trapdoor', 'swamp_trapdoor',
+      'tropical_trapdoor', 'whispering_trapdoor'
+    )),
+
+    mcwwindows: {
+      resizeable_windows: '(?!.*(?:pane|four)_window$).*_window',
+      rectangle_windows: '(?!.*(?:pane|four)_window2$).*_window2',
+      one_pane_windows: '.*pane_window',
+      four_pane_windows: '.*four_window',
+      shutters: '.*shutter',
+      blinds: '.*blinds',
+      curtain_rods: '.*curtain_rod',
+      curtains: `${mcwColors}_curtain`,
+      decorative_glass: `(?:${mcwColors}_mosaic_glass(?:_pane)?|one_way_glass(?:_pane)?)`,
+      gothic_windows: '.*_gothic',
+      arrow_slits: '.*arrow_slit',
+      parapets: '.*parapet',
+      window_bases: 'window_(?:half_bar_|centre_bar_)?base',
+    },
+  };
+
+  Object.entries(mcwGroups).forEach(([mod, groups]) => {
+    Object.entries(groups).forEach(([name, pattern]) => {
+      add(mod, name, mcwPattern(mod, pattern));
+    });
+  });
+
+  // Reliquary
+  add('reliquary', 'mob_charm_fragments', 'reliquary:mob_charm_fragment');
+  add('reliquary', 'mob_charms', 'reliquary:mob_charm');
+  add('reliquary', 'potion_essences', 'reliquary:potion_essence');
+  add('reliquary', 'tipped_arrows', 'reliquary:tipped_arrow');
+  add('reliquary', 'potions', 'reliquary:potion');
+  add('reliquary', 'splash_potions', 'reliquary:splash_potion');
+  add('reliquary', 'lingering_potions', 'reliquary:lingering_potion');
+  add('reliquary', 'magazines', /^reliquary:magazines\/.*/);
+  add('reliquary', 'bullets', /^reliquary:bullets\/.*/);
+  add('reliquary', 'pedestals', /^reliquary:pedestals\/.*/);
+
+  const compressedMaterials = [];
+  global.compressedBlocks.forEach(block => compressedMaterials.push(block.name.replace(' ', '_').toLowerCase()));
+
+  compressedMaterials.forEach(material => {
+    add('craftoria', `compressed_${material}_blocks`, `#craftoria:compressed_${material}`);
+  });
+
+  add('xycraft_machines', 'foils', 'xycraft_machines:foil');
+});

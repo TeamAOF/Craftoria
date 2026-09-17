@@ -3,16 +3,16 @@ ClientEvents.generateAssets('after_mods', e => {
     filters: [
       {
         id: '/emi:/crafting/repairing/',
-        category: 'minecraft:crafting'
+        category: 'minecraft:crafting',
       },
       {
         id: '/emi:/grindstone/repairing/',
-        category: 'emi:grinding'
+        category: 'emi:grinding',
       },
       {
         id: '/emi:/anvil/repairing/tool/',
-        category: 'emi:grinding'
+        category: 'emi:grinding',
       },
-    ]
+    ],
   });
 });

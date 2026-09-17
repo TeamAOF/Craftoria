@@ -1,3 +1,374 @@
+# Craftoria | v1.37.0
+
+_Neoforge_ 21.1.249 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.37.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.37.0.md)_
+
+### Changes/Improvements ⭐
+
+* Disabled typing sounds `AK`
+
+### Added Mods ✅
+
+* [Async Logger](https://curseforge.com/projects/1491426)
+* [Create: Copycats+](https://curseforge.com/projects/968398)
+* [Logistics Network](https://curseforge.com/projects/1448257)
+
+### Removed Mods ❌
+
+* [Create Factory Logistics](https://curseforge.com/projects/1218807)
+* [Enderman Overhaul](https://curseforge.com/projects/574409)
+* [Reliable EMI (REMI)](https://curseforge.com/projects/1411826)
+
+### Bug Fixes 🪲
+
+* Fixed performance issues on right click checks `AK`
+---
+# Craftoria | v1.36.0
+
+_Neoforge_ 21.1.249 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.36.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.36.0.md)_
+
+### Changes/Improvements ⭐
+
+* Remove gadgets & storage quest chapters `AK`
+* Lowered chance of finding relics from 20% > 10% `AK`
+* Nerfed tick acceleration items `Phantom`
+* Removed SFM enchant removal/duping `Phantom`
+* Added EMI item groups. `Phantom`
+* Revamped milestone progression for eating different foods `AK`
+* Infinite tier in mekanism now requires UU-Matter `AK`
+* Added quests for lunar events, food diversion & endgame to Welcome quest chapter `AK`
+* Added the apotheosis quest chapter `AK`
+* Nerfed apoth gem, weapon, & armor attributes by 50% `AK`
+* Removed share hovered item on Y `AK`
+* Reworked mekanism quests, now split into 3 chapters `AK`
+* Unified bio mass in recipes `AK`
+* Changed the recipe of Sigil of Temporal Dominance' `AK`
+* Xaeros settings now save between updating `AK`
+* Removed ore recipes in mekanism combiner `AK`
+* Unified quartz dust across recipes `AK`
+* Buffed Powah Reactor recipe `Phantom`
+
+### Added Mods ✅
+
+* [AE2 WCWT](https://curseforge.com/projects/1546802)
+* [Apothic Nerf](https://curseforge.com/projects/1684312)
+* [BEER - Bookshelf Extended Enchanting Reach](https://curseforge.com/projects/1274736)
+* [Better P2P](https://curseforge.com/projects/538092)
+* [Cognition (Experience Obelisk)](https://curseforge.com/projects/579484)
+* [ExtendedAE-Plus](https://curseforge.com/projects/1337639)
+* [ForgedPaginatedAdvancements](https://curseforge.com/projects/1264512)
+* [KubeJS NeoVitae](https://curseforge.com/projects/1595222)
+* [Mekanism:More Machine](https://curseforge.com/projects/1275257)
+* [Nether Descent](https://www.curseforge.com/projects/1357097)
+* [Reliable EMI (REMI)](https://curseforge.com/projects/1411826)
+
+### Bug Fixes 🪲
+
+* Fixed incorrections in neo vitae quest chapter progression `AK`
+* Fix Graves in Spectrums dimension spawning in the ceiling `Phantom`
+* Fixed MI Overdrive Module slot not having a texture `Phantom`
+* Fixed Mining dimension missing ores `AK`
+* Fixed warm pig variant glitching out `AK`
+---
+# Craftoria | v1.35.0
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.35.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.35.0.md)_
+
+## DISCLAIMER: This update overhauls quite a big portion of the modlist, backup your worlds before updating!
+
+### Changes/Improvements ⭐
+
+* Much improved performance `AK`
+* Unified zinc plates in recipes `AK`
+* Allow immersive aircrafts to be interactable with in claims `AK`
+* Disable Malum spawner spirit drops to prevent lag `AK`
+* New recipe for Flight Card (Advanced AE) `AK`
+* Blacklisted Flight Ritual from portable brazier relay `AK`
+* Changed how oathbound relic is given, now through welcome quest `AK`
+* Reworked Monster Mayhem quest chapter for updated apothic spawners `AK`
+* Added back Trophy of the Older Angel quest task in fishing `AK`
+* Added apothic enchanting quest chapter `AK`
+* Reworked Powah quest chapter `AK`
+* Updated textures for new SB upgrades `AK`
+
+### Added Mods ✅
+
+* [AE2 Tangible Bookmarks](https://curseforge.com/projects/1394275)
+* [Applied Construction Sticks](https://curseforge.com/projects/1452253)
+* [Applied Pneumatics](https://curseforge.com/projects/1355087)
+* [Applied Replicatics](https://curseforge.com/projects/1440118)
+* [Ars Zero](https://curseforge.com/projects/1377482)
+* [Cobweb](https://curseforge.com/projects/968456)
+* [Create Crafts & Additions](https://curseforge.com/projects/439890)
+* [Create Factory Logistics](https://curseforge.com/projects/1218807)
+* [EMI: Create Schematics](https://curseforge.com/projects/940673)
+* [Fast Paintings](https://curseforge.com/projects/883287)
+* [Ixeris](https://curseforge.com/projects/1285307)
+* [Mekanism: Ponders](https://curseforge.com/projects/1448575)
+* [Myotus Lib](https://curseforge.com/projects/1496024)
+* [Platform](https://curseforge.com/projects/997634)
+* [Prometheus](https://curseforge.com/projects/1365195)
+* [Reliquified Iron's Spells 'n Spellbooks](https://curseforge.com/projects/1216851)
+* [Reliquified L_Ender 's Cataclysm](https://curseforge.com/projects/1232116)
+* [Reliquified L_Ender 's Cataclysm new relics fix](https://curseforge.com/projects/1665965)
+* [Simple Backups](https://curseforge.com/projects/583228)
+* [Soul fire'd](https://curseforge.com/projects/662413)
+* [Spice of Life: Carrot Edition](https://curseforge.com/projects/277616)
+* [Vanilla Backport](https://curseforge.com/projects/417430)
+
+### Removed Mods ❌
+
+* [Advanced Netherite (Forge / NeoForge)](https://curseforge.com/projects/495336)
+* [Antique Trading Ship](https://curseforge.com/projects/1034045)
+* [Better Advancements](https://curseforge.com/projects/272515)
+* [Blue Flame Burning](https://curseforge.com/projects/656551)
+* [Charging Gadgets](https://curseforge.com/projects/399757)
+* [Dawn Of Time](https://curseforge.com/projects/312359)
+* [Dungeon Crawl](https://curseforge.com/projects/324973)
+* [Extra Sponges](https://curseforge.com/projects/457043)
+* [Integrated Crafting](https://curseforge.com/projects/287357)
+* [Integrated Terminals](https://curseforge.com/projects/295910)
+* [JamLib](https://curseforge.com/projects/623764)
+* [JustHammers](https://curseforge.com/projects/681606)
+* [Loot Integrations: Dungeon Crawl](https://curseforge.com/projects/1137456)
+* [McJtyLib](https://curseforge.com/projects/233105)
+* [Modular Force Field Systems](https://www.curseforge.com/minecraft/mc-mods/mffs)
+* [More Dragon Eggs](https://curseforge.com/projects/358700)
+* [More Totems Of Undying](https://curseforge.com/projects/357265)
+* [Noisium (archived)](https://curseforge.com/projects/930207)
+* [Ranged Pumps](https://curseforge.com/projects/247496)
+* [Replication AE2 Bridge](https://curseforge.com/projects/1264781)
+* [RFTools Base](https://curseforge.com/projects/326041)
+* [RFTools Builder](https://curseforge.com/projects/347706)
+* [RFTools Utility](https://curseforge.com/projects/342466)
+* [Sawmill House](https://curseforge.com/projects/1039188)
+* [Simple Pocket Machines](https://curseforge.com/projects/1090864)
+* [Small horse stable](https://curseforge.com/projects/1069321)
+* [Sussy Sniffers](https://curseforge.com/projects/1083346)
+* [TheObsidianBoat](https://curseforge.com/projects/510648)
+* [TrashSlot](https://curseforge.com/projects/235577)
+* [Useful Hats](https://curseforge.com/projects/347337)
+
+### Bug Fixes 🪲
+
+* Broken models/textures of certain mobs `AK`
+* Recipe conflicts between crop bags & crates `AK`
+* Recipe conflict between tiny charcoal & charcoal fragment `AK`
+* Discord rich presence not loading correctly `AK`
+---
+# Craftoria | v1.34.0
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.34.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.34.0.md)_
+
+## DISCLAIMER: Added new relics system, old relics will be removed!
+
+### Changes/Improvements ⭐
+
+* Remove broken share hovered item feature on Y keypress `AK`
+* NEW RELICS SYSTEM, backup your worlds as old relics are deleted `AK`
+
+### Removed Mods ❌
+
+* [Deeper and Darker](https://curseforge.com/projects/659011)
+* [Reliquified L_Ender 's Cataclysm](https://curseforge.com/projects/1232116)
+* [Reliquified Twilight Forest](https://curseforge.com/projects/1186617)
+---
+# Craftoria | v1.33.2
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.33.2.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.33.2.md)_
+
+### Changes/Improvements ⭐
+
+* Reordered some neo vitae quests `AK`
+
+### Bug Fixes 🪲
+
+* Create Deco iron support with IF iron gear `Kaiser`
+---
+# Craftoria | v1.33.1
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.33.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.33.1.md)_
+
+### Removed Mods ❌
+
+* [Punchy! - First person animations](https://curseforge.com/projects/1374153)
+* [Yukami's Sophisticated Backpack Tab](https://curseforge.com/projects/1343253)
+
+### Bug Fixes 🪲
+
+* Incorrect max enchant power cap & oathbound relic disappearing on death `AK`
+---
+# Craftoria | v1.33.0
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.33.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.33.0.md)_
+
+### Changes/Improvements ⭐
+
+* Removed AIOT's in favor of paxels `AK`
+* Add neo vitae as requirement for completionist `AK`
+* Added neo vitae quest chapter `AK`
+
+### Added Mods ✅
+
+* [Animus](https://curseforge.com/projects/229664)
+* [Create Deco](https://curseforge.com/projects/509285)
+
+### Removed Mods ❌
+
+* [Rubinated Nether](https://curseforge.com/projects/1096362)
+
+### Bug Fixes 🪲
+
+* EMI not appending Mod ID names on tooltips `AK`
+---
+# Craftoria | v1.32.1
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.32.1.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.32.1.md)_
+
+### Removed Mods ❌
+
+* [Guide Shelf](https://curseforge.com/projects/1500922)
+
+### Bug Fixes 🪲
+
+* Connection issues to servers `AK`
+---
+# Craftoria | v1.32.0
+
+_Neoforge_ 21.1.248 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.32.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.32.0.md)_
+
+### Changes/Improvements ⭐
+
+* Add completionist capes to new winners `AK`
+* Disabled advanced peripherals book on spawn `AK`
+* Removed trophy of the older angler quest `AK`
+* Enable team sharing for fishes caught `AK`
+* Added Ether Gas Recipe to Chemical Reactor `KaiserHua1901`
+
+### Added Mods ✅
+
+* [Adventurer Skills \[Pufferfish's Skills\]](https://curseforge.com/projects/1397003)
+* [Ars Musique](https://curseforge.com/projects/1477190)
+* [Biolith](https://curseforge.com/projects/852512)
+* [Boss Checklist](https://curseforge.com/projects/1355708)
+* [Can't Sleep Clowns Will Eat Me](https://curseforge.com/projects/430957)
+* [Create: Hypertubes](https://curseforge.com/projects/1281336)
+* [Create: Schematic Checker](https://curseforge.com/projects/1357430)
+* [Crystal Chronicles - Iron's Spells 'n Spellbooks](https://curseforge.com/projects/1153374)
+* [Data Anchor](https://curseforge.com/projects/1203668)
+* [Dawn Of Time](https://curseforge.com/projects/312359)
+* [EMI QoL Tweaks](https://curseforge.com/projects/1623482)
+* [Enhanced Celestials 2: Core](https://curseforge.com/projects/1621796)
+* [Enhanced Celestials 2: Default Lunar Events](https://curseforge.com/projects/1621820)
+* [Enhanced Celestials 2: Shader Support](https://curseforge.com/projects/1621851)
+* [Enigmatic Arcana ](https://curseforge.com/projects/1371571)
+* [Gaze - A Malum Addon](https://curseforge.com/projects/1273454)
+* [Invasive Optimizations](https://curseforge.com/projects/1528432)
+* [Lodestone](https://curseforge.com/projects/616457)
+* [Malum](https://curseforge.com/projects/484064)
+* [Multi Builder Tool](https://curseforge.com/projects/827020)
+* [Neo Vitae](https://curseforge.com/projects/1404763)
+* [Oathbound Relics](https://curseforge.com/projects/1503076)
+* [Punchy! - First person animations](https://curseforge.com/projects/1374153)
+* [Rechiseled: Applied Energistics 2](https://curseforge.com/projects/1483822)
+* [Sodium](https://curseforge.com/projects/394468)
+* [Sodium Extra](https://curseforge.com/projects/447673)
+* [Spectral Decorations](https://curseforge.com/projects/990498)
+* [Wireless Terminal Color!](https://curseforge.com/projects/1602480)
+
+### Removed Mods ❌
+
+* [Cable Facades](https://curseforge.com/projects/1140577)
+* [Embeddium](https://curseforge.com/projects/908741)
+* [Flat Bedrock (Forge / Fabric)](https://curseforge.com/projects/398623)
+* [Monocle](https://curseforge.com/projects/1007288)
+* [Re:Animal](https://curseforge.com/projects/1387943)
+
+### Bug Fixes 🪲
+
+* Balancing changes to cataclysm bosses/items not applying `AK`
+* 'Farm & Charm' tomato seeds missing from `c:seeds/tomato` tag `Joe Clack`
+* Fixed Knife unification from disabling Spectrums Multitools `Phantom`
+* (work-around) disable post-process-shaders in Spectrum `SubordinalBlue`
+* Incorrect MI overlay textures used `AK`
+---
+# Craftoria | v1.31.0
+
+_Neoforge_ 21.1.230 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.31.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.31.0.md)_
+
+### Changes/Improvements ⭐
+
+* Updated completionist quest chapter background `AK`
+* Improved player animations `AK`
+* More fishing trophies, more quests! `AK`
+* Disabled starcatcher book on spawn `AK`
+* Disabled Chromatic Aberration module `AK`
+* Split MI quests into 3 chapters `SubordinalBlue`
+* Added all MI plate to create press `Kaiser`
+
+### Added Mods ✅
+
+* [Delight Lib](https://curseforge.com/projects/1531135)
+* [HazentouveLib](https://curseforge.com/projects/1528722)
+* [Iron's Lib](https://curseforge.com/projects/1492763)
+
+### Added Resource Packs 🎨
+
+* [Craftoria Chinese Translation Resource](https://curseforge.com/projects/1484077)
+
+### Removed Mods ❌
+
+* [Xaero's Maps x Waystones](https://curseforge.com/projects/1340197)
+---
+# Craftoria | v1.30.0
+
+_Neoforge_ 21.1.219 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.30.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.30.0.md)_
+
+### Changes/Improvements ⭐
+
+* Disable filled Mekanism tanks in creative/emi `Phantom`
+* Added Ender's Cataclysm trofers `JohnTrinca`
+
+### Added Mods ✅
+
+* [Revelationary](https://curseforge.com/projects/656526)
+* [Spectrum](https://curseforge.com/projects/556967)
+
+### Bug Fixes 🪲
+
+* Fixed cataclysm bosses destroying graves(again) `Phantom`
+* Add missing sign tags `exefer`
+---
+# Craftoria | v1.29.0
+
+_Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.29.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.29.0.md)_
+
+### Changes/Improvements ⭐
+
+* Added scylla boss entry to bosses quest chapter `AK`
+* Disabled name-tags on dropped items `AK`
+* Clean up mekanism quest chapter `AK`
+* Buff all cataclysm bosses, gear & weapons `AK`
+* Removed infinity souls cell quest `AK`
+* Recipe for converting lower tier JDT goos into higher tier ones in Ooze Lab `Phantom`
+* New textures for custom MI machines `Phantom`
+* Remove MI ores from Mekanism ore processing `Phantom`
+
+### Added Mods ✅
+
+* [Leaderboards](https://curseforge.com/projects/1367888)
+* [MekaJadeUpgrades (Mekanism addon)](https://curseforge.com/projects/1400118)
+* [Re:Animal](https://curseforge.com/projects/1387943)
+* [Ribbits](https://curseforge.com/projects/622967)
+
+### Removed Mods ❌
+
+* [Mowzie's Mobs](https://curseforge.com/projects/250498)
+
+### Bug Fixes 🪲
+
+* Bogged model `AK`
+* Fixed inventory updates causing more than usual amounts of lag `Phantom`
+---
 # Craftoria | v1.28.0
 
 _Neoforge_ 21.1.215 | _[Mod Updates](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/changelog_mods_1.28.0.md)_ | _[Modlist](https://github.com/TeamAOF/Craftoria/blob/main/changelogs/modlist_1.28.0.md)_

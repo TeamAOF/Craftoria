@@ -1,0 +1,15 @@
+[defaults]
+	#Default transfer lock state for newly created nulls.
+	defaultTransferLocked = false
+	#Default auto-pickup state for newly created DeepNulls.
+	defaultAutoPickupEnabled = true
+	#Default auto-feeding state when the upgrade is installed.
+	defaultAutoFeedingEnabled = true
+	#Default auto-smelting state when the upgrade is installed.
+	defaultAutoSmeltingEnabled = true
+	#Default Stoneworks target item count for newly created DeepNulls.
+	# Default: 1
+	# Range: > 0
+	defaultStoneworksAmount = 1
+	#Enable the Crafting Tweaks clear-grid integration that returns JEI-filled ingredients back into DeepNulls instead of normal player inventory.
+	enableCraftingTweaksReturnIntegration = true

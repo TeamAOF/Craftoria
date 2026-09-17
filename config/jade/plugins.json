@@ -73,6 +73,9 @@
   "apothic_spawners": {
     "spawner": true
   },
+  "hostilenetworks": {
+    "io_port_mode": true
+  },
   "entangled": {
     "entangled_block_component": true
   },
@@ -106,6 +109,16 @@
     "crafting_monitor": true,
     "part_name": true
   },
+  "extendedae_plus": {
+    "labeled_wireless_component": true,
+    "wt_locked": true,
+    "wt_frequency": true,
+    "wt_network_usable": true,
+    "wt_master_mode": true,
+    "wt_channels": true,
+    "wt_master_location": true,
+    "wt_owner": true
+  },
   "tesseract": {
     "tesseract": true,
     "remove_default": true
@@ -129,6 +142,9 @@
   "waystones": {
     "waystone": true
   },
+  "neovitae": {
+    "block_info": true
+  },
   "cookingforblockheads": {
     "fridge": true,
     "oven": true,
@@ -136,6 +152,9 @@
     "preservation_chamber": true,
     "milk_jar": true,
     "toaster": true
+  },
+  "beer": {
+    "beer": true
   },
   "barbequesdelight": {
     "grill": true
@@ -158,6 +177,9 @@
     "entity": true,
     "entity_variant": true
   },
+  "mekajadeupgrade": {
+    "upgrades": true
+  },
   "pneumaticcraft": {
     "pneumatic": true,
     "tube_module": true,
@@ -166,12 +188,19 @@
     "camo": true,
     "semiblock": true
   },
+  "logisticsnetworks": {
+    "logistics_node_entity": true,
+    "node_attached": true
+  },
   "apotheosis": {
     "adventure": true
   },
   "modern_industrialization": {
     "overclock": true,
     "pipe": true
+  },
+  "ars_zero": {
+    "entity_mana": true
   },
   "occultism": {
     "foliot": true,
@@ -220,6 +249,7 @@
     "crystalix_block": true
   },
   "twilightforest": {
+    "drying_rack": true,
     "chiseled_bookshelf_spawner": true,
     "quest_ram_wool": true
   },

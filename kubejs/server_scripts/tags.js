@@ -10,7 +10,7 @@ ServerEvents.tags('item', e => {
 
   // Crops & Seeds
   e.add('c:seeds/cabbage', ['farmersdelight:cabbage_seeds', 'dumplings_delight:chinese_cabbage_seeds']);
-  e.add('c:seeds/tomato', 'farmersdelight:tomato_seeds');
+  e.add('c:seeds/tomato', ['farmersdelight:tomato_seeds', 'farm_and_charm:tomato_seeds']);
   e.add('c:seeds/eggplant', 'dumplings_delight:eggplant_seeds');
   e.add('c:crops/garlic', 'dumplings_delight:garlic');
   e.add('c:crops/green_onion', 'dumplings_delight:greenonion');
@@ -100,7 +100,18 @@ ServerEvents.tags('item', e => {
   e.add('animal_pen:can_attack_pen', ['#c:tools/melee_weapon', '#c:tools/knife']);
   e.add('animal_pen:can_attack_aquarium', ['#c:tools/melee_weapon', '#c:tools/knife']);
 
+  e.add('minecraft:signs', ['ars_nouveau:archwood_sign', 'beachparty:palm_sign']);
+  e.add('minecraft:hanging_signs', ['ars_nouveau:archwood_hanging_sign', 'beachparty:palm_hanging_sign']);
+
   e.remove('minecraft:axes', ['hazennstuff:skyuscorcher']);
+
+  // Artifacts
+  e.remove('artifacts:artifacts', ['artifacts:everlasting_beef', 'artifacts:eternal_steak']);
+  e.remove('reliquified_artifacts:mimic_loot', ['artifacts:everlasting_beef', 'artifacts:eternal_steak']);
+  e.remove('reliquified_artifacts:mimificable', ['artifacts:everlasting_beef', 'artifacts:eternal_steak']);
+
+  // Portable Brazier Blacklist
+  e.add('ars_controle:ritual_blacklist', ['ars_nouveau:ritual_flight']);
 
   /**
    * @param {string[]} tags
@@ -148,6 +159,10 @@ ServerEvents.tags('item', e => {
   e.remove('curios:cosmetic', 'hazennstuff:ears_a');
 
   e.add('hazennstuff:wisewood_logs', '#hazennstuff:blocks/wisewood_logs');
+
+  // Silver
+  e.add('c:ores/silver', 'mekanism:silver_ore');
+  e.add('c:ores/silver', 'mekanism:deepslate_silver_ore');
 });
 
 ServerEvents.tags('block', e => {
@@ -192,7 +207,9 @@ ServerEvents.tags('block', e => {
     'moderndynamics:machine_extender',
   ]);
 
-  e.add('minecraft:mineable/axe', ['mekanism:cardboard_box', '#animal_pen:animal_pens']);
+  e.add('minecraft:mineable/axe', ['mekanism:cardboard_box', '#animal_pen:animal_pens', 'ars_nouveau:archwood_sign']);
+
+  e.add('c:mineable/paxel', ['ars_nouveau:archwood_sign', 'ars_nouveau:archwood_hanging_sign']);
 
   e.add('minecraft:storage_blocks/quartz', 'minecraft:quartz_block');
 
@@ -223,7 +240,7 @@ ServerEvents.tags('block', e => {
     'replication:matter_network_pipe',
     /^simplemagnets:(basic|advanced)_demagnetization_coil$/,
     '@moderndynamics',
-    '@trashcans'
+    '@trashcans',
   ]);
 
   e.add('justdirethings:tick_speed_deny', [
@@ -238,10 +255,27 @@ ServerEvents.tags('block', e => {
     '@laserio',
   ]).remove([/^justdirethings:gooblock_tier.$/]);
 
-  Registry.access().getAllTags('block').forEach(tag => {
-    if (!tag.path.endsWith('_immune')) return;
+  let immuneTags = [
+    'cataclysm:clawdian_immune',
+    'cataclysm:remnant_immune',
+    'cataclysm:altar_destroy_immune',
+    'cataclysm:scylla_immune',
+    'cataclysm:ignis_immune',
+    'cataclysm:harbinger_immune',
+    'cataclysm:leviathan_immune',
+    'cataclysm:maledictus_immune',
+    'cataclysm:netherite_monstrosity_immune',
+  ];
+
+  immuneTags.forEach(tag => {
     e.add(tag, ['yigd:grave']);
   });
+
+  e.remove('sfm:anvil_disenchanting', ['minecraft:obsidian', 'minecraft:crying_obsidian']);
+
+  // Silver
+  e.add('c:ores/silver', 'mekanism:silver_ore');
+  e.add('c:ores/silver', 'mekanism:deepslate_silver_ore');
 });
 
 ServerEvents.tags('fluid', e => {
@@ -256,7 +290,18 @@ ServerEvents.tags('fluid', e => {
 ServerEvents.tags('entity_type', e => {
   e.add('craftoria:mob_blacklist', ['artifacts:mimic', 'minecraft:warden', '#c:bosses', /^occultism:(?!possessed).*$/, '#neoforge:bosses']);
 
-  e.add('ftbchunks:entity_interact_whitelist', ['minecraft:villager', 'minecraft:wandering_trader']);
+  e.add('ftbchunks:entity_interact_whitelist',
+    [
+      'minecraft:villager',
+      'minecraft:wandering_trader',
+      'immersive_aircraft:airship',
+      'immersive_aircraft:cargo_airship',
+      'immersive_aircraft:warship',
+      'immersive_aircraft:biplane',
+      'immersive_aircraft:gyrodyne',
+      'immersive_aircraft:quadrocopter',
+      'immersive_aircraft:bamboo_hopper',
+    ]);
 
   e.add('justdirethings:creature_catcher_deny', ['ars_nouveau:dummy']);
   e.add('apothic_spawners:blacklisted_from_spawners', ['#craftoria:mob_blacklist']);
@@ -270,23 +315,23 @@ ServerEvents.tags('enchantment', e => {
 
   // Minecraft Enchantment tags
   e.add('minecraft:exclusive_set/damage', [
-    'deeperdarker:sculk_smite'
+    'deeperdarker:sculk_smite',
   ]);
 
   e.add('minecraft:non_treasure', [
     'deeperdarker:sculk_smite',
     'deeperdarker:volume',
-    'deeperdarker:reverberation'
+    'deeperdarker:reverberation',
   ]);
 
   // Common Enchantment tags
   e.add('c:weapon_damage_enhancements', [
-    'deeperdarker:sculk_smite'
+    'deeperdarker:sculk_smite',
   ]);
 
   // Deeper and Darker Enchantment Tags (not yet in mod update but will be)
   e.add('deeperdarker:resonarium_excludes', [
-    'minecraft:fire_protection'
+    'minecraft:fire_protection',
   ]);
 
 });

@@ -198,8 +198,14 @@ ServerEvents.recipes(e => {
     .id('craftoria:mi/assembler/fluix_glass_cable');
 
   centrifuge(8, 100)
-    .itemIn("4x #c:foods/raw_meat")
+    .itemIn('4x #c:foods/raw_meat')
     .fluidOut('200x industrialforegoing:pink_slime')
     .id('craftoria:mi/centrifuge/pink_slime');
 
+  // Ether Gas
+  chemical_reactor(10, 240)
+    .fluidOut('industrialforegoing:ether_gas', 50)
+    .itemIn('minecraft:nether_star', 0)
+    .fluidIn('modern_industrialization:hydrochloric_acid', 100)
+    .id('craftoria:mi/chemical_reactor/ether_gas');
 });

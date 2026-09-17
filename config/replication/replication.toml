@@ -8,6 +8,8 @@
 		MAX_VISITED_RECIPES = 50
 		#If enabled, values of items that have a crafting remaining item like milk buckets in the cake recipe, will subtract their remaining item matter value from the calculation
 		SUBTRACT_CRAFTING_REMAINING_ITEM = true
+		#Recipes from the mods on this list will get ignored when calculating matter values
+		IGNORED_RECIPE_MODS = ["ae2qolrecipes"]
 
 	[ReplicationConfig.MatterPipe]
 		# Default: 2560

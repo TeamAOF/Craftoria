@@ -1,0 +1,38 @@
+#Whether nodes should drop their item when the attached block is broken.
+dropNodeItem = true
+#Enable debug overlays and diagnostic logging.
+debugMode = false
+#Controls who can access nodes and networks. Allowed values: Teams, All, Allies.
+nodeAccessMode = "Teams"
+
+[backoff]
+	#Maximum backoff ticks for item, fluid, chemical, and source transfers.
+	# Default: 40
+	# Range: 1 ~ 200
+	backoffMaxTicks = 40
+	#Enable backoff for item transfers
+	backoffItem = true
+	#Enable backoff for fluid transfers
+	backoffFluid = true
+	#Enable backoff for energy transfers
+	backoffEnergy = true
+	#Enable backoff for chemical transfers
+	backoffChemical = true
+	#Enable backoff for source transfers
+	backoffSource = true
+
+[async]
+	#Plan item transfers on worker threads. Disable to force the synchronous path.
+	asyncPlanning = true
+	#Worker threads for transfer planning. 0 = auto (min(4, cores - 2)).
+	# Default: 0
+	# Range: 0 ~ 16
+	asyncWorkerThreads = 0
+	#Microseconds per tick spent committing plans. At least one plan always commits.
+	# Default: 2000
+	# Range: 100 ~ 50000
+	asyncCommitBudgetUs = 2000
+	#Safety valve. A network with more occupied slots than this falls back to synchronous.
+	# Default: 200000
+	# Range: 1000 ~ 5000000
+	asyncMaxOccupiedSlots = 200000

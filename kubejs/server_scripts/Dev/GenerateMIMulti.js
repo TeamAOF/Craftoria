@@ -127,12 +127,12 @@ ItemEvents.firstRightClicked('craftoria:multiblock_generator', event => {
   const min = {
     x: Math.min(pos1.x, pos2.x),
     y: Math.min(pos1.y, pos2.y),
-    z: Math.min(pos1.z, pos2.z)
+    z: Math.min(pos1.z, pos2.z),
   };
   const max = {
     x: Math.max(pos1.x, pos2.x),
     y: Math.max(pos1.y, pos2.y),
-    z: Math.max(pos1.z, pos2.z)
+    z: Math.max(pos1.z, pos2.z),
   };
 
   const sizeX = max.x - min.x + 1;

@@ -2,7 +2,58 @@
   "oreMultiplier": 1,
   "ores": [
     {
-      "ore_size": 10,
+      "ore_size": 6,
+      "discard_on_air_chance": 0.0,
+      "modifiers": [
+        {
+          "ore_type": {
+            "type": "naquadah",
+            "index": 1
+          },
+          "retro_gen": false,
+          "type": "mekanism:disableable"
+        },
+        {
+          "count": {
+            "ore_type": {
+              "type": "naquadah",
+              "index": 1
+            },
+            "type": "mekanism:configurable_constant"
+          },
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:in_square"
+        },
+        {
+          "height": {
+            "ore_type": {
+              "type": "naquadah",
+              "index": 1
+            },
+            "type": "mekanism:configurable"
+          },
+          "type": "minecraft:height_range"
+        },
+        {
+          "type": "minecraft:biome"
+        }
+      ],
+      "targets": [
+        {
+          "target": {
+            "block": "minecraft:end_stone",
+            "predicate_type": "minecraft:block_match"
+          },
+          "state": {
+            "Name": "mekanism_extras:end_naquadah_ore"
+          }
+        }
+      ]
+    },
+    {
+      "ore_size": 6,
       "discard_on_air_chance": 0.0,
       "modifiers": [
         {
@@ -15,7 +66,7 @@
         {
           "height": {
             "min_inclusive": {
-              "absolute": 2
+              "absolute": -64
             },
             "max_inclusive": {
               "absolute": 80
@@ -31,11 +82,89 @@
       "targets": [
         {
           "target": {
-            "tag": "minecraft:end_stones",
-            "predicate_type": "minecraft:tag_match"
+            "block": "minecraft:end_stone",
+            "predicate_type": "minecraft:block_match"
           },
           "state": {
-            "Name": "rftoolsbase:dimensionalshard_end"
+            "Name": "hazennstuff:zenalite_end_stone_ore"
+          }
+        }
+      ]
+    },
+    {
+      "ore_size": 9,
+      "discard_on_air_chance": 0.0,
+      "modifiers": [
+        {
+          "count": 5,
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:in_square"
+        },
+        {
+          "height": {
+            "min_inclusive": {
+              "above_bottom": 20
+            },
+            "max_inclusive": {
+              "absolute": 120
+            },
+            "type": "minecraft:uniform"
+          },
+          "type": "minecraft:height_range"
+        },
+        {
+          "type": "minecraft:biome"
+        }
+      ],
+      "targets": [
+        {
+          "target": {
+            "block": "minecraft:end_stone",
+            "predicate_type": "minecraft:block_match"
+          },
+          "state": {
+            "Name": "oathboundrelics:aredrite_ore"
+          }
+        }
+      ]
+    },
+    {
+      "ore_size": 4,
+      "discard_on_air_chance": 0.3,
+      "modifiers": [
+        {
+          "count": 4,
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:in_square"
+        },
+        {
+          "height": {
+            "min_inclusive": {
+              "above_bottom": 0
+            },
+            "max_inclusive": {
+              "below_top": 0
+            },
+            "type": "minecraft:trapezoid"
+          },
+          "type": "minecraft:height_range"
+        },
+        {
+          "type": "minecraft:biome"
+        }
+      ],
+      "targets": [
+        {
+          "target": {
+            "block": "minecraft:end_stone",
+            "predicate_type": "minecraft:block_match"
+          },
+          "state": {
+            "Name": "spectrum:paltaeria_ore"
           }
         }
       ]

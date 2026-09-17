@@ -261,6 +261,19 @@
 	# Default: 40000
 	# Range: 100 ~ 10000000
 	planeSurfacePerTick = 40000
+	#How many ticks to wait before sending the next projector preview plane to clients. Increase this to spread setup load over time
+	# Default: 5
+	# Range: 1 ~ 200
+	projectorPlaneSendInterval = 5
+	#Log aggregated statistics about projector preview packet compression. Intended as a diagnostic for scan/blockstate-heavy previews
+	projectorCompressionLogging = true
+	#How many projector preview planes to aggregate before logging one compression summary line
+	# Default: 64
+	# Range: 1 ~ 100000
+	projectorCompressionLogInterval = 64
+	#Compression codec to use for projector preview planes. LEGACY_RLE is the previous path, PACKED_BITS uses palette-sized bit packing for comparison
+	#Allowed Values: LEGACY_RLE, PACKED_BITS
+	projectorCompressionCodec = "LEGACY_RLE"
 
 #Settings for the mover system
 [mover]

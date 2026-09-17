@@ -4,10 +4,30 @@
  */
 
 /**
- * Add the mods you want to prioritize here.
+ * Add the mods you want to prioritize here. Please make sure to mirror this with Almost Unified mod priorities
  * The first mod in the list will be the one that the item will be replaced with.
  */
-let modPriority = ['minecraft', 'modern_industrialization', 'justdirethings', 'mekanism', 'create', 'moremekanismprocessing'];
+let modPriority = [
+  'minecraft',
+  'kubejs',
+  'modern_industrialization',
+  'justdirethings',
+  'occultism',
+  'mekmm',
+  'mekanism',
+  'farmersdelight',
+  'create',
+  'createaddition',
+  'irons_jewelry',
+  'pneumaticcraft',
+  'rusticdelight',
+  'dumplings_delight',
+  'sushigocrafting',
+  'moremekanismprocessing',
+  'refurbished_furniture',
+  'createdeco',
+  'createcasing',
+];
 
 // Add the materials you want to unify here.
 let metals = [

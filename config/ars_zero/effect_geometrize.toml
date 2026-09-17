@@ -1,0 +1,41 @@
+#General settings
+[general]
+	#Is Enabled?
+	enabled = true
+	#Cost
+	# Default: 100
+	# Range: > -2147483648
+	cost = 100
+	#Is Starter Glyph?
+	starter = false
+	#The maximum number of times this glyph may appear in a single spell
+	# Default: 2147483647
+	# Range: > 1
+	per_spell_limit = 2147483647
+	#The tier of the glyph
+	# Default: 3
+	# Range: 1 ~ 99
+	glyph_tier = 3
+	#Limits the number of times a given augment may be applied to a given effect
+	#Example entry: "glyph_amplify=5"
+	augment_limits = ["ars_zero:augment_hollow=1", "ars_zero:augment_cube=1", "ars_zero:augment_sphere=1", "ars_zero:augment_flatten=1"]
+	#How much an augment should cost when used on this effect or form. This overrides the default cost in the augment config.
+	#Example entry: "glyph_amplify=50"
+	augment_cost_overrides = []
+	#Prevents the given glyph from being used in the same spell as the given glyph
+	#Example entry: "glyph_burst"
+	invalid_combos = []
+
+	#Geometrize Effect Settings
+	[general.geometrize]
+		#Maximum size for geometry structures.
+		#Size is the structure edge length in blocks. Default is 32.
+		# Default: 32
+		# Range: 1 ~ 128
+		maxSize = 32
+		#Mana cost multiplier for generic geometry entity resolver.
+		#Each block resolved by the generic geometry entity costs this percentage of the forwarded spell's total mana cost.
+		#Default is 0.05 (5%).
+		# Default: 0.05
+		# Range: 0.0 ~ 1.0
+		geometryEntityGenericResolverManaCostMultiplier = 0.05

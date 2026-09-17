@@ -81,9 +81,9 @@ maxSolarNeutronActivatorRate = 64
 #Settings for configuring Prefilled Tanks
 [prefilled]
 	#Add filled variants of creative fluid tanks to creative/recipe viewers for all registered fluids.
-	fluidTanks = true
+	fluidTanks = false
 	#Add filled variants of creative chemical tanks to creative/recipe viewers for all registered chemicals. Note: This includes radioactive ones that normally can't be stored in chemical tanks.
-	chemicalTanks = true
+	chemicalTanks = false
 
 #Settings for configuring Energy Conversions
 [energy_conversion]

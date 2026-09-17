@@ -4,6 +4,18 @@
 bridgeEnergyConsumption = 500
 #Enable aggressive debug logging for troubleshooting (includes network state dumps and reconnection logs)
 enableDebugLogging = false
-#Path to directory containing replication bridge matter declaration files
-#Default: 'config'
+#Legacy option (unused). Custom matter items are auto-created from the matter type registry;
+#rep_ae2_bridge_matters.json is no longer read or written.
 bridgeCustomMatterConfigPath = "config"
+#Enable the Titanium NetworkManager mixin that prevents 'Element network is null' crashes
+#during world loading. This fixes a race condition in Titanium's mergeNetworksIntoOne()
+#that affects ALL Replication network blocks (pipes, replicators, etc.).
+#Only disable this if another mod provides the same fix or it causes conflicts.
+#Requires game restart to take effect.
+enableNetworkManagerFix = true
+#Enable the Replication NetworkBlockEntity mixin that wraps addElement() in onLoad()
+#with a try-catch safety net. This prevents ANY RuntimeException during network
+#element registration from crashing the server.
+#Only disable this if another mod provides the same fix or it causes conflicts.
+#Requires game restart to take effect.
+enableNetworkBlockEntityFix = true

@@ -1,7 +1,7 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "Welcome"
+	filename: "welcome"
 	group: ""
 	icon: {
 		id: "minecraft:wooden_pickaxe"
@@ -11,6 +11,7 @@
 		{
 			alpha: 1
 			height: 1.0d
+			id: "688EC7E9897432DB"
 			image: "ftbquests:textures/gui/background_white.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -19,6 +20,7 @@
 		}
 		{
 			height: 3.5d
+			id: "30DFCBABE15BD8B1"
 			image: "ftbquests:textures/gui/title_facu_craftoria.png"
 			order: 10
 			rotation: 0.0d
@@ -28,6 +30,7 @@
 		}
 		{
 			height: 14.0d
+			id: "533FE5FA8DA8FA7E"
 			image: "ftbquests:textures/gui/masked_main_b.png"
 			rotation: 0.0d
 			width: 14.0d
@@ -37,6 +40,7 @@
 		{
 			color: 0
 			height: 1.0d
+			id: "5C272CCE0759E1AC"
 			image: "ftbquests:textures/shapes/circle/shape.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -80,6 +84,14 @@
 					}
 					type: "item"
 				}
+				{
+					id: "36FC286DC4907734"
+					item: {
+						count: 1
+						id: "oathboundrelics:oathbound_relic"
+					}
+					type: "item"
+				}
 			]
 			size: 1.5d
 			tasks: [{
@@ -106,43 +118,10 @@
 			dependencies: ["21E1E62AA4761EE2"]
 			icon: {
 				components: {
-					"relics:data": {
-						abilities: {
-							abilities: {
-								teleport: {
-									extender: {
-										cooldown: 0
-										cooldownCap: 0
-										ticking: 0b
-									}
-									lock: {
-										breaks: 5
-									}
-									points: 0
-									research: {
-										links: { }
-										researched: 0b
-									}
-									stats: {
-										cooldown: {
-											initialValue: 76.74979d
-										}
-										distance: {
-											initialValue: 640.83509d
-										}
-									}
-								}
-							}
-						}
-						leveling: {
-							experience: 0
-							level: 0
-							luck: 0
-							points: 0
-						}
-					}
+					"apotheosis:gem": "apotheosis:core/lunar"
+					"apotheosis:purity": "perfect"
 				}
-				id: "relics:magic_mirror"
+				id: "apotheosis:gem"
 			}
 			id: "2E7A46639993CCDE"
 			tasks: [{
@@ -155,12 +134,17 @@
 		{
 			dependencies: ["21E1E62AA4761EE2"]
 			icon: {
-				components: {
-					"occultism:spirit_name": "Harmid"
-				}
-				id: "occultism:book_of_binding_bound_djinni"
+				id: "minecraft:carrot"
 			}
 			id: "7B86C9C90997B3E3"
+			rewards: [{
+				id: "197D2218B956BE03"
+				item: {
+					count: 1
+					id: "solcarrot:food_book"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1D870ED2303FAE8A"
 				type: "checkmark"
@@ -273,7 +257,7 @@
 		{
 			dependencies: ["78EDBDED3BFEC145"]
 			icon: {
-				id: "ars_nouveau:thread_sharp_paper"
+				id: "not_enough_glyphs:thread_sharp_paper"
 			}
 			id: "42F50CA00F913A46"
 			tasks: [{

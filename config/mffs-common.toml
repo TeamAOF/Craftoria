@@ -49,3 +49,7 @@
 	# Default: 200
 	# Range: > 1
 	fortronPerTickSpeedModule = 200
+
+[force_field]
+	#Remove confusion and slowness effects for authorized players passing through force fields
+	disableForceFieldEffectsForAuthorizedPlayers = false

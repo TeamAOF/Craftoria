@@ -30,7 +30,7 @@ const buddingConditions = {
     fluid: '1000x water',
     item: '8x extendedae:entro_crystal',
     eu: 16,
-    time: 15 * 20
+    time: 15 * 20,
   },
   thioquartz: {
     block: 'eternal_starlight:budding_thioquartz',
@@ -42,7 +42,7 @@ const buddingConditions = {
     block: 'justdirethings:time_crystal_budding_block',
     textKey: [
       'info.mi.budding.timecrystal.line1',
-      'info.mi.budding.timecrystal.line2'
+      'info.mi.budding.timecrystal.line2',
     ],
     blockState: {
       property: TIME_BUDDING_STAGE,
@@ -53,33 +53,69 @@ const buddingConditions = {
     eu: 32,
     time: 20 * 20,
   },
-  topaz: {
+  topaz_pastel: {
     block: 'pastel:budding_topaz',
     textKey: 'info.mi.budding.topaz',
     fluid: '1000x water',
     item: '8x pastel:topaz_shard',
   },
-  citrine: {
+  citrine_pastel: {
     block: 'pastel:budding_citrine',
     textKey: 'info.mi.budding.citrine',
     fluid: '1000x water',
     item: '8x pastel:citrine_shard',
   },
-  onyx: {
+  onyx_pastel: {
     block: 'pastel:budding_onyx',
     textKey: 'info.mi.budding.onyx',
     fluid: '1000x water',
     item: '4x pastel:onyx_shard',
     eu: 16,
-    time: 15 * 20
+    time: 15 * 20,
   },
-  moonstone: {
+  moonstone_pastel: {
     block: 'pastel:budding_moonstone',
     textKey: 'info.mi.budding.moonstone',
     fluid: '1000x water',
     item: '2x pastel:moonstone_shard',
     eu: 16,
-    time: 15 * 20
+    time: 15 * 20,
+  },
+  topaz_spectrum: {
+    block: 'spectrum:budding_topaz',
+    textKey: 'info.mi.budding.topaz',
+    fluid: '1000x water',
+    item: '8x spectrum:topaz_shard',
+  },
+  citrine_spectrum: {
+    block: 'spectrum:budding_citrine',
+    textKey: 'info.mi.budding.citrine',
+    fluid: '1000x water',
+    item: '8x spectrum:citrine_shard',
+  },
+  onyx_spectrum: {
+    block: 'spectrum:budding_onyx',
+    textKey: 'info.mi.budding.onyx',
+    fluid: '1000x water',
+    item: '4x spectrum:onyx_shard',
+    eu: 16,
+    time: 15 * 20,
+  },
+  moonstone_spectrum: {
+    block: 'spectrum:budding_moonstone',
+    textKey: 'info.mi.budding.moonstone',
+    fluid: '1000x water',
+    item: '2x spectrum:moonstone_shard',
+    eu: 16,
+    time: 15 * 20,
+  },
+  latra: {
+    block: 'extendedae_plus:lattra_budding_fully',
+    textKey: 'info.mi.budding.lattra',
+    fluid: '1000x water',
+    item: '2x extendedae_plus:lattra_crystal',
+    eu: 16,
+    time: 15 * 20,
   },
 };
 

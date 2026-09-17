@@ -18,8 +18,6 @@ const globalItemRemovals = [
   'industrialforegoing:infinity_nuke',
   'utilitarian:tiny_coal',
   'utilitarian:tiny_charcoal',
-  'mffs:anti_personnel_module',
-  'mffs:confiscation_module',
   'pylons:infusion_pylon',
   'pylons:potion_filter',
   'xycraft_world:raw_aluminum',
@@ -33,6 +31,28 @@ const globalItemRemovals = [
   'xycraft_machines:aluminum_clump',
   'create:crushed_raw_aluminum',
   'create:crushed_raw_platinum',
+  'actuallyadditions:wooden_aiot',
+  'actuallyadditions:stone_aiot',
+  'actuallyadditions:iron_aiot',
+  'actuallyadditions:gold_aiot',
+  'actuallyadditions:diamond_aiot',
+  'actuallyadditions:netherite_aiot',
+  'malum:charcoal_fragment',
+  'malum:coal_fragment',
+  'farm_and_charm:onion_bag',
+  'farm_and_charm:carrot_bag',
+  'vinery:apple_bag',
+  'farm_and_charm:beetroot_bag',
+  'farm_and_charm:tomato_bag',
+  'farm_and_charm:potato_bag',
+  'mekmm:fluid_replicator',
+  'mekmm:chemical_replicator',
+  'mekmm:replicator',
+  /mekmm:.*_replicating_factory/,
+  /mekanism_extras:.*_replicating_factory/,
+  /^extendedae_plus:\d+x_crafting_accelerator$/,
+  'sfm:xp_shard',
+  'sfm:xp_goop',
 ];
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
@@ -50,8 +70,6 @@ ServerEvents.recipes(event => {
     'appflux:inscriber/crush_diamond',
     'appflux:inscriber/crush_emerald',
     'modern_industrialization:electric_age/machine/assembler/replicator',
-    'mffs:steel_compound',
-    'mffs:steel_ingot',
     'industrialforegoing:laser_drill_ore/raw_materials/iridium',
     'modern_industrialization:materials/uranium/blast_furnace/dust',
     'supplementaries:sus_gravel',
@@ -66,8 +84,12 @@ ServerEvents.recipes(event => {
     'create:crushing/raw_platinum',
     'create:crushing/raw_platinum_block',
     'xycraft_machines:compat/mek/compressor/aluminum_sheet_temp',
-    /rubinated_nether:bronze/,
-    'minecraft:blaze_rod_from_smelting_bronze_rod'
+    'minecraft:blaze_rod_from_smelting_bronze_rod',
+    /mekanism:processing\/.*\/ore\/deepslate_from_raw/,
+    /mekanism:processing\/.*\/ore\/from_raw/,
+    /mekanism:processing\/.*\/to_(deepslate_)?ore/,
+    'mekanism_extras:processing/naquadah/ore/end_from_raw',
+    'mekanism:processing/gold/ore/nether_from_raw',
   ];
 
   /** @type {Special.Item[]} */
@@ -307,7 +329,10 @@ ServerEvents.generateData('after_mods', event => {
     'create:crushing/sculk_stone_coal_ore',
     'create:cutting/stripped_echo_log',
     'mekaweapons:module_arrowvelocity_unit',
-    'mechtrowel:wand_upgrade'
+    'mechtrowel:wand_upgrade',
+    // Recipes removed for balancing / unification
+    'farm_and_charm:seeds_tomato',
+    'sfm:enchanted_book_copy',
   ];
 
   /** @type {string[]} */

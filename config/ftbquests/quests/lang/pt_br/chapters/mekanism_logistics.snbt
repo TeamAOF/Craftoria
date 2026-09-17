@@ -1,0 +1,122 @@
+{
+	quest.05A0AC380BB141A0.quest_desc: ["O &bTransportador Restritivo&r é um tipo de &bTransportador Logístico&r que praticamente funciona como um tubo de \"&6excesso&r\". Assim que os &3itens&r não tiverem para onde ir, eles &6viajarão&r através do &bTransportador Restritivo&r."]
+	quest.05A0AC380BB141A0.title: "Transportador Restritivo"
+	quest.0DA354D54D288D20.quest_desc: [
+		"O &bCondutor Termodinâmico Básico&r é usado para conduzir &4calor&r de um local para outro. "
+		""
+		"Cada condutor adicionado à &crede termodinâmica&r aumenta sua &4capacidade de calor&r total em &a1.0&r, embora toda a rede manterá uma condução de &e5.0&r e um isolamento de &c10.0&r"
+		""
+		"As capacidades de isolamento dos &bCondutores Termodinâmicos&r dependem do &2bioma&r. "
+		""
+		"Se você estiver em um bioma &cquente/caloroso&r, a eficiência de transferência é &amaior&r; se você estiver em um bioma &bfrio/congelado&r, a eficiência de transferência é &cmenor&r."
+	]
+	quest.0DA354D54D288D20.title: "Condutor Termodinâmico Básico"
+	quest.124D18DDDDC4D102.quest_desc: [
+		"O &bCabo Universal Básico&r tem uma capacidade de &e3.2 kFE/t&r por cabo. O que isso significa é que, cada cabo em uma rede adiciona &e3.2 kFE&r ao &3buffer&r interno total da rede de cabos &oe&r à taxa total de transferência da rede."
+		""
+		"Por exemplo: Se você tiver &a10&r cabos básicos em uma rede, o &3buffer&r total seria &e32.0 kFE&r e a taxa total de transferência da rede seria &e32.0 kFE/t&r."
+	]
+	quest.124D18DDDDC4D102.title: "Cabo Universal Básico"
+	quest.1646940008F2A109.quest_desc: [
+		"O &bDicionário&r é usado para descobrir as &9tags&r usadas para um &bitem&r ou &bbloco&r. "
+		""
+		"Isso será muito útil ao &6configurar&r filtros."
+	]
+	quest.183E523C25CC6C3F.quest_desc: [
+		"O &bTransportador Logístico Básico&r é usado para &6transportar itens&r de um ponto a outro."
+		""
+		"Cada tubo de \"&cpuxar&r\" pode trazer &a2&r itens por segundo para uma rede de transportadores. "
+		""
+		"O tubo em si permite apenas uma taxa de transferência de &e1.0 metro por segundo&r. Essa é a velocidade na qual o item voa através do tubo. "
+		""
+		"Níveis mais altos de &btubos&r podem aumentar isso drasticamente."
+		""
+		"Embora, apesar do limite do tubo de \"&cpuxar&r\", o limite de \"&aempurrar&r\" para um contêiner ou máquina é infinito, contanto que você consiga colocá-lo na rede."
+	]
+	quest.183E523C25CC6C3F.title: "Transportador Logístico Básico"
+	quest.24B44DAA8C43CF11.quest_desc: [
+		"O &bConfigurador&r funciona não apenas como uma chave inglesa, mas como uma ferramenta para &6configurar&r praticamente qualquer tipo de &aentrada e &csaída&r."
+		""
+		"Segurando &6SHIFT&r e &6rolando&r permitirá que você selecione qual &3modo&r você quer usar. Os modos aparecem no canto inferior esquerdo da sua tela."
+		""
+		"Quando em um modo &eCONFIGURAR&r, dependendo do tipo você pode &6configurar&r o lado de uma &bmáquina&r sem precisar usar a tela interna da GUI para isso."
+		""
+		"Quando no modo &7ESVAZIAR&r, você usa &6SHIFT CLIQUE-DIREITO&r para esvaziar uma máquina de itens."
+		""
+		"Quando no modo &aGIRAR, você pode girar máquinas usando &6CLIQUE-DIREITO&r &oe&f &6SHIFT CLIQUE-DIREITO&r dependendo da orientação que você quer relativa ao lado que você clica. "
+		""
+		"Se você usar &6CLIQUE-DIREITO&r, a face da &bmáquina&r virará para o lado que você clicou. "
+		""
+		"Se você usar &6SHIFT CLIQUE-DIREITO&r, a face da &bmáquina&r será oposta à face que você clicou."
+		""
+		"Quando no modo &9CHAVE INGLESA&r, você pode usar &6SHIFT CLIQUE-DIREITO&r em uma máquina para quebrá-la, salvando seus &bitens&r, &eenergia&r, e &dconfigurações&r."
+	]
+	quest.24B44DAA8C43CF11.title: "Configurador"
+	quest.2571BC62616A45AB.quest_desc: [
+		"Este é seu &bPainel OIQ&r. "
+		""
+		"É onde você acessará todos os seus &bitens&r. "
+		""
+		"Elegante e escuro; ele caberá em quase qualquer lugar."
+	]
+	quest.2571BC62616A45AB.title: "Painel OIQ"
+	quest.264F371D2A18EAEC.quest_desc: [
+		"O &bTubo Pressurizado Básico&r é capaz de &6transportar&r uma pletora de coisas diferentes, como &egases&r, &atipos de infusão&r, &dpigmentos&r e &5polpas&r."
+		""
+		"Cada tubo adicionado à rede adiciona &94.000mb/t&r de capacidade total da rede e taxa de transferência base. "
+		""
+		"Se o tubo em si estiver &6puxando&r o conteúdo para ele, o tubo de puxar é limitado a &9750mb/t&r. "
+		""
+		"Se a máquina ou contêiner empurrar automaticamente o conteúdo para o tubo, então a taxa de transferência é &94000mb/t&r para cada tubo na rede."
+	]
+	quest.264F371D2A18EAEC.title: "Tubo Pressurizado Básico"
+	quest.2E97456B0ED0AB1A.quest_desc: [
+		"A &bBomba Elétrica&r é o método &eprincipal&r para coletar &7líquidos&r em massa do mundo."
+		""
+		"Colocando-a um bloco acima do &7líquido&r que você quer bombear, forneça &eenergia&r, e &9tubulação&r ou &9tanque&r acima dela para começar a &6bombear&r líquido. "
+		""
+		"&bMelhorias&r podem aumentar drasticamente a velocidade de sua taxa de bombeamento. "
+		""
+		"Uma dica para você: ela não consome &9blocos de fonte de água&r."
+	]
+	quest.2E97456B0ED0AB1A.title: "Bomba Elétrica"
+	quest.30D584EAD9243548.quest_desc: [
+		"O &bPreenchedor Fluídico&r permite que você o &6alimente&r com um &7líquido&r e ele preencherá espaços abertos sob ele com &7aquele líquido&r. "
+		""
+		"Isso permite que você faça lagos inteiros de qualquer &7fluido&r que você queira."
+	]
+	quest.30D584EAD9243548.title: "Preenchedor Fluídico"
+	quest.39A4FF688D140EC2.quest_desc: ["O &bOrganizador Logístico&r é uma &6máquina de separação automática baseada em filtros&r que permite que você não apenas &6envie&r &3itens&r de um inventário para outro diretamente com um &bfiltro&r, mas também escolha para onde você quer que o item filtrado (ou não filtrado) vá dentro de uma rede. Você pode usar o &bDicionário&r para encontrar tags de item e bloco para &6ajudar&r você a ter filtros mais específicos."]
+	quest.39A4FF688D140EC2.title: "Organizador Logístico"
+	quest.43985FE38B0EBCB5.quest_desc: [
+		"O &bTubo Mecânico Básico&r é usado para transportar &7líquidos&r através de uma rede de tubos."
+		""
+		"Cada tubo adicionado a uma rede adiciona &92000mb&r de um buffer. Este buffer é também a vazão teórica total."
+		""
+		"A taxa de bomba de &9250mb/t&r aplica-se apenas a cada tubo de \"&cpuxar&r\". Tubos de \"&aEmpurrar&r\" não são limitados."
+		""
+		"Por exemplo: Se você colocou dois tubos de \"puxar\", &9500mb/t&r de um &7líquido&r serão puxados para a rede de tubos, e &9500mb/t&r serão empurrados para fora dela em quaisquer tubos de \"&aempurrar&r\" disponíveis (mesmo apenas 1 se você tiver dessa forma)."
+	]
+	quest.43985FE38B0EBCB5.title: "Tubo Mecânico Básico"
+	quest.4CA2A53F4C298E2B.quest_desc: [
+		"O &bPainel Portátil OIQ&r permitirá que você acesse seu &dSistema de Armazenamento OIQ&r de qualquer lugar no mundo. "
+		""
+		"Muito conveniente."
+	]
+	quest.4CA2A53F4C298E2B.title: "Painel Portátil OIQ"
+	quest.67A41E4D6BCA5F2B.quest_desc: ["Este é o coração do sistema de Orquestração de Itens Quânticos. Você armazenará seus discos OIQ aqui. Proteja-o com sua vida."]
+	quest.67A41E4D6BCA5F2B.title: "Matriz de Discos OIQ"
+	quest.6EA29403BF85B19C.quest_desc: [
+		"Seu primeiro &ddisco OIQ&r. "
+		""
+		"Ele contém &a16.000&r itens e &3128&r tipos diferentes de itens. "
+		""
+		"Ele só fica maior a partir daqui."
+	]
+	quest.6EA29403BF85B19C.title: "Disco OIQ"
+	task.0B2C0AF7B7B4B841.title: "Condutores Termodinâmicos"
+	task.2E011A6CEC3FE9F6.title: "Tubos Pressurizados"
+	task.341F7CB191A0790A.title: "Cabos Universais"
+	task.741F21CA04FBCB90.title: "Transportadores Logísticos"
+	task.7DFBA79EE9616973.title: "Tubos Mecânicos"
+}

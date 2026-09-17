@@ -31,6 +31,10 @@
 	# Default: 0.5
 	# Range: 0.0 ~ 1.0
 	grapeGrowthChance = 0.5
+	#Multiplier for grape growth speed
+	# Default: 1.0
+	# Range: 0.0 ~ 10.0
+	grapeGrowthMultiplier = 1.0
 
 	[Items.Wine]
 		#Maximum level for wine
@@ -63,10 +67,6 @@
 		giveEffect = true
 		#Set to false to hide the banner's tooltip. If giveEffect is false, showTooltip is automatically false.
 		showTooltip = true
-
-	[Items.Basket]
-		#List of item IDs that are blacklisted from being placed in the picnic basket. Format: 'modid:itemname'
-		basketBlacklist = ["vinery:basket"]
 
 	[Items.WanderingTrader]
 		#Chance for the custom trader to spawn. Range: 0.0 to 1.0

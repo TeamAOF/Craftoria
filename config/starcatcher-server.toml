@@ -1,2 +1,74 @@
-show_exclamation_mark_particle = true
 enable_minigame = true
+#Award guide when joining the world/server once per player
+give_guide = false
+#Enables/disables the ability to bonemeal block for worms.
+enable_worms = true
+#Enables/disables fishes caught being unlocked for all online team members.
+#Offline players won't be awarded the entry.
+enable_ftb_team_sharing = true
+#Adjusts the vanishing rate, useful if you want to adjust the fishes' difficulty globally.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+vanishing_rate_multiplier = 1.0
+#Adjusts the moving sweet-spots speed, useful if you want to adjust the fishes' difficulty globally.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+moving_speed_multiplier = 1.0
+#Adjusts the penalty for missing rate, useful if you want to adjust the fishes' difficulty globally.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+penalty_multiplier = 1.0
+#Adjusts the fish decay rate, useful if you want to adjust the fishes' difficulty globally.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+decay_multiplier = 1.0
+#Hides entries in the guide book until one has been caught.
+hide_entries_until_found = true
+#Adjusts the fish's HP, useful if you want to adjust the fishes' difficulty globally.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+hp_multiplier = 1.0
+#If enabled the size, weight, percentile, rarity & golden values will be saved to the item for displaying
+save_data_to_items = true
+#How many ticks should the bobber bobble for before being allowed to catch a fish (excluding modifiers)
+# Default: 100
+# Range: 0 ~ 999999
+base_min_ticks = 100
+#How many ticks at the maximum should the bobber bob for (excluding modifiers)
+# Default: 300
+# Range: 0 ~ 999999
+base_max_ticks = 300
+#The rod weight to fish every tick (out of 1)
+# Default: 0.005
+# Range: 0.0 ~ 1.0
+base_chance = 0.005
+#Restricts items placeable inside the tackle box to #starcatcher:placeable_in_tacle_box
+restrict_tackle_box_to_tag = true
+#Controls the maximum scale of the fish model based on the size and weight percentile
+# Default: 1.5
+# Range: 0.0 ~ 100.0
+fish_percentile_size_max_scale = 1.5
+#Controls the minimum scale of the fish model based on the size and weight percentile
+# Default: 0.5
+# Range: 0.0 ~ 100.0
+fish_percentile_size_min_scale = 0.5
+#Sets the maximum number of fishes the tackle box can store in its 'infinite slot'
+# Default: 900
+# Range: 0 ~ 999
+max_tackle_box_fish_storage = 900
+#Award rod & guide the first time a player fishes with a vanilla fishing rod
+give_rod = true
+#Adjusts the handle speed, useful if you want to adjust the fishes' difficulty globally.
+# Default: 1.0
+# Range: 0.0 ~ 100.0
+handle_speed_multiplier = 1.0
+#Hides the treasure item during minigame
+hide_treasures = false
+#Hides the catch during minigame
+hide_catches = false
+#Enable Starcatcher's fishing rod durability
+enable_rod_durability = false
+#Allows players to use a keybind to open the guide without having the item
+allow_guide_keybind = true
+#Whether players should see and access the guide help pages
+enable_guide_help_pages = true

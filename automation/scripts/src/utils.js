@@ -48,24 +48,35 @@ export async function getLatestBumpCommitHash(branchName = "HEAD") {
   }
 }
 
-export async function getModInfo(projectId) {
-  try {
-    const response = await fetch(`https://api.curse.tools/v1/cf/mods/${projectId}`, {
-      redirect: "follow",
-      headers: {
-        Accept: "application/json",
-      },
-      signal: AbortSignal.timeout(1000000) // 10 second timeout
-    });
+export async function getModInfo(projectId, retries = 3) {
+  const url = `https://api.curse.tools/v1/cf/mods/${projectId}`;
 
-    if (response.status !== 200) {
-      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    try {
+      const response = await fetch(url, {
+        redirect: "follow",
+        headers: {
+          Accept: "application/json",
+        },
+        signal: AbortSignal.timeout(15000) // 15 second timeout
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+
+      const { data } = await response.json();
+      return data;
+    } catch (error) {
+      if (attempt === retries) {
+        throw new Error(
+          `Failed to fetch mod info for project ${projectId} after ${retries} attempts: ${error.message}`
+        );
+      }
+
+      // wait 2 seconds before retry
+      await new Promise((resolve) => setTimeout(resolve, 2000));
     }
-
-    const { data } = await response.json();
-    return data;
-  } catch (error) {
-    throw new Error(`Failed to fetch mod info for project ${projectId}: ${error.message}`);
   }
 }
 

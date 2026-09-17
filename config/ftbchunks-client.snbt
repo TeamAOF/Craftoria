@@ -55,6 +55,11 @@
 		# Default: false
 		chunk_grid: false
 		
+		# Claim mode for the chunk claiming screen
+		# Default: "freehand"
+		# Valid values: "freehand", "rectangle", "circle"
+		claim_mode: "freehand"
+		
 		# Show claimed chunks on the map
 		# Default: true
 		claimed_chunks_on_map: true
@@ -133,38 +138,38 @@
 		# Default: true
 		entity_heads: true
 		entity_icon: {
+			"aquaculture:perch": false
+			"minecraft:glow_squid": true
+			"minecraft:squid": true
+			"minecraft:chicken": true
+			"minecraft:zombie_villager": true
+			"artifacts:mimic": true
+			"aquaculture:bluegill": false
+			"creeperoverhaul:dripstone_creeper": true
+			"creeperoverhaul:bamboo_creeper": true
+			"minecraft:axolotl": true
+			"aquaculture:piranha": false
+			"minecraft:witch": true
+			"minecraft:cow": true
+			"minecraft:bat": true
+			"minecraft:spider": true
+			"vinery:mule": true
 			"minecraft:parrot": true
-			"creeperoverhaul:cave_creeper": true
-			"irons_spellbooks:necromancer": true
+			"minecraft:horse": true
 			"minecraft:sheep": false
+			"vinery:wandering_winemaker": true
+			"minecraft:fox": true
+			"creeperoverhaul:cave_creeper": true
+			"aquaculture:arrau_turtle": false
+			"ars_nouveau:starbuncle": true
 			"minecraft:pig": true
 			"duckling:duck": true
-			"creeperoverhaul:dripstone_creeper": true
-			"aquaculture:perch": false
-			"minecraft:zombie": true
-			"minecraft:axolotl": true
+			"irons_spellbooks:necromancer": true
 			"minecraft:enderman": true
-			"minecraft:horse": true
-			"aquaculture:piranha": false
-			"creeperoverhaul:bamboo_creeper": true
-			"minecraft:creeper": true
-			"minecraft:skeleton": true
-			"aquaculture:arrau_turtle": false
-			"minecraft:spider": true
-			"vinery:wandering_winemaker": true
-			"minecraft:cow": true
 			"aquaculture:tambaqui": false
-			"minecraft:zombie_villager": true
-			"aquaculture:bluegill": false
-			"minecraft:chicken": true
-			"minecraft:fox": true
-			"minecraft:squid": true
-			"minecraft:bat": true
-			"minecraft:glow_squid": true
-			"artifacts:mimic": true
-			"ars_nouveau:starbuncle": true
-			"vinery:mule": true
-			"minecraft:witch": true
+			"minecraft:skeleton": true
+			"minecraft:creeper": true
+			"minecraft:zombie": true
 		}
 		
 		# Minimap font scaling (values not a multiple of 0.5 may look bad)
@@ -191,6 +196,7 @@
 			"ftbchunks:game_time"
 			"ftbchunks:real_time"
 			"ftbchunks:debug"
+			"seasonhud:season"
 		]
 		info_settings: { }
 		

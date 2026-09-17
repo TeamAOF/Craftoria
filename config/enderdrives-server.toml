@@ -7,6 +7,12 @@
 	enable_ender_disk_256k = true
 	enable_ender_disk_creative = true
 	enable_tape_disk = true
+	enable_ender_fluid_disk_1k = true
+	enable_ender_fluid_disk_4k = true
+	enable_ender_fluid_disk_16k = true
+	enable_ender_fluid_disk_64k = true
+	enable_ender_fluid_disk_256k = true
+	enable_ender_fluid_disk_creative = true
 
 #Controls which network scopes are allowed on ender drives.
 [ender_scope]
@@ -126,3 +132,30 @@
 	# Default: 18.0
 	# Range: 1.0 ~ 20.0
 	autobenchmark_min_tps = 18.0
+
+#Configuration for Ender Drive fluid type limits.
+[ender_fluid_disk]
+	#Max FLUID types for Ender Fluid Disk 1k
+	# Default: 1
+	# Range: > 1
+	fluid_type_limit_1k = 1
+	#Max FLUID types for Ender Fluid Disk 4k
+	# Default: 4
+	# Range: > 1
+	fluid_type_limit_4k = 4
+	#Max FLUID types for Ender Fluid Disk 16k
+	# Default: 8
+	# Range: > 1
+	fluid_type_limit_16k = 8
+	#Max FLUID types for Ender Fluid Disk 64k
+	# Default: 16
+	# Range: > 1
+	fluid_type_limit_64k = 16
+	#Max FLUID types for Ender Fluid Disk 256k
+	# Default: 64
+	# Range: > 1
+	fluid_type_limit_256k = 64
+	#Max FLUID types for Creative Ender Fluid Disk
+	# Default: 2147483647
+	# Range: > 1
+	fluid_type_limit_creative = 2147483647

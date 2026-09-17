@@ -1,0 +1,7 @@
+[upgrade]
+	#Enables QoL behavior without requiring the Terminal Bookmark Interact Card. When false, bookmark interaction and bookmark amount rendering require the upgrade card in the terminal upgrade slot.
+	QoL = false
+
+[performance]
+	#Allows AE2TB to look up AE storage amounts for recipe-viewer bookmark entries. Disable this on the server/common config to skip the bookmark amount lookup entirely if it causes performance issues.
+	enableBookmarkAmountCounting = true

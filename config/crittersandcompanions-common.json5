@@ -1,0 +1,283 @@
+{
+	configVersion: 2,
+	spawning: {
+		prevent_monster_spawns_in_lush_caves: false,
+		leaf_insect: [
+			{
+				biome_spec: "#c:is_jungle",
+				weight: 14,
+				min: 1,
+				max: 1
+			},
+			{
+				biome_spec: "#c:is_forest",
+				weight: 6,
+				min: 1,
+				max: 1
+			}
+		],
+		red_panda: [
+			{
+				biome_spec: "#c:is_jungle",
+				weight: 8,
+				min: 1,
+				max: 2
+			}
+		],
+		jumping_spider: [
+			{
+				biome_spec: "#c:is_jungle",
+				weight: 2,
+				min: 1,
+				max: 1
+			},
+			{
+				biome_spec: "#c:is_forest",
+				weight: 2,
+				min: 1,
+				max: 1
+			},
+			{
+				biome_spec: "#c:is_lush",
+				weight: 4,
+				min: 1,
+				max: 1
+			}
+		],
+		ferret: [
+			{
+				biome_spec: "#c:is_forest",
+				weight: 3,
+				min: 2,
+				max: 3
+			},
+			{
+				biome_spec: "#c:is_plains",
+				weight: 4,
+				min: 2,
+				max: 3
+			}
+		],
+		sea_bunny: [
+			{
+				biome_spec: "minecraft:ocean",
+				weight: 16,
+				min: 1,
+				max: 2
+			},
+			{
+				biome_spec: "minecraft:deep_ocean",
+				weight: 16,
+				min: 1,
+				max: 2
+			},
+			{
+				biome_spec: "minecraft:warm_ocean",
+				weight: 32,
+				min: 1,
+				max: 4
+			},
+			{
+				biome_spec: "minecraft:lukewarm_ocean",
+				weight: 16,
+				min: 1,
+				max: 4
+			},
+			{
+				biome_spec: "minecraft:deep_lukewarm_ocean",
+				weight: 16,
+				min: 1,
+				max: 4
+			}
+		],
+		dumbo_octopus: [
+			{
+				biome_spec: "minecraft:ocean",
+				weight: 4,
+				min: 1,
+				max: 1
+			},
+			{
+				biome_spec: "minecraft:deep_ocean",
+				weight: 4,
+				min: 1,
+				max: 1
+			},
+			{
+				biome_spec: "minecraft:warm_ocean",
+				weight: 8,
+				min: 1,
+				max: 1
+			},
+			{
+				biome_spec: "minecraft:lukewarm_ocean",
+				weight: 6,
+				min: 1,
+				max: 1
+			},
+			{
+				biome_spec: "minecraft:deep_lukewarm_ocean",
+				weight: 6,
+				min: 1,
+				max: 1
+			}
+		],
+		otter: [
+			{
+				biome_spec: "#c:is_river",
+				weight: 1,
+				min: 2,
+				max: 4
+			}
+		],
+		koi_fish: [
+			{
+				biome_spec: "#c:is_river",
+				weight: 2,
+				min: 2,
+				max: 5
+			}
+		],
+		dragonfly: [
+			{
+				biome_spec: "#c:is_river",
+				weight: 4,
+				min: 1,
+				max: 1
+			},
+			{
+				biome_spec: "#c:is_swamp",
+				weight: 5,
+				min: 1,
+				max: 1
+			},
+			{
+				biome_spec: "#c:is_lush",
+				weight: 10,
+				min: 1,
+				max: 1
+			}
+		],
+		shima_enaga: [
+			{
+				biome_spec: "#c:is_snowy",
+				weight: 3,
+				min: 2,
+				max: 3
+			}
+		],
+		ladybug: [
+			{
+				biome_spec: "#c:is_forest",
+				weight: 6,
+				min: 1,
+				max: 3
+			},
+			{
+				biome_spec: "#c:is_lush",
+				weight: 10,
+				min: 1,
+				max: 2
+			},
+			{
+				biome_spec: "#c:is_floral",
+				weight: 12,
+				min: 1,
+				max: 2
+			}
+		],
+		stag_beetle: [
+			{
+				biome_spec: "#c:is_forest",
+				weight: 4,
+				min: 1,
+				max: 2
+			},
+			{
+				biome_spec: "#c:is_lush",
+				weight: 10,
+				min: 1,
+				max: 2
+			}
+		],
+		roly_poly: [
+			{
+				biome_spec: "#c:is_forest",
+				weight: 5,
+				min: 1,
+				max: 3
+			},
+			{
+				biome_spec: "#c:is_lush",
+				weight: 10,
+				min: 1,
+				max: 2
+			},
+			{
+				biome_spec: "#c:is_swamp",
+				weight: 10,
+				min: 1,
+				max: 2
+			}
+		],
+		snail: [
+			{
+				biome_spec: "#c:is_forest",
+				weight: 5,
+				min: 1,
+				max: 2
+			},
+			{
+				biome_spec: "#c:is_lush",
+				weight: 8,
+				min: 1,
+				max: 2
+			},
+			{
+				biome_spec: "#c:is_swamp",
+				weight: 10,
+				min: 1,
+				max: 2
+			}
+		],
+		stick_bug: [
+			{
+				biome_spec: "#c:is_forest",
+				weight: 4,
+				min: 1,
+				max: 2
+			},
+			{
+				biome_spec: "#c:is_lush",
+				weight: 10,
+				min: 1,
+				max: 2
+			}
+		],
+		weevil: [
+			{
+				biome_spec: "#c:is_forest",
+				weight: 4,
+				min: 1,
+				max: 3
+			},
+			{
+				biome_spec: "#c:is_lush",
+				weight: 10,
+				min: 1,
+				max: 2
+			}
+		]
+	},
+	necklace: {
+		swim_speed: 0.2,
+		drowned_range_debuff: 0.1,
+		guardian_range_debuff: 0.1
+	},
+	grapplingHook: {
+		launch_speed: 1.0,
+		max_speed: 2.0,
+		max_distance: 32.0,
+		enable_durability: true
+	}
+}

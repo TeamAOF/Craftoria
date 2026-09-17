@@ -22,7 +22,7 @@ ServerEvents.recipes(e => {
 
   reactors.forEach(_ => {
     let { id, capacitor, previous } = _;
-    e.shaped(`powah:${id}`, ['ABA', 'BCB', 'ABA'], {
+    e.shaped(`2x powah:${id}`, ['ABA', 'CBC', 'ABA'], {
       A: 'powah:uraninite',
       B: `powah:${capacitor}`,
       C: `powah:${previous}`,

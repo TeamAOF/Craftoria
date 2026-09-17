@@ -139,7 +139,7 @@ function doubleDoor() {
    */
   function isAllowedDoor(blockState) {
     const { block } = blockState;
-    if (block instanceof $DoorBlock || block instanceof $TrapDoorBlock || block instanceof $FenceGateBlock) {
+    if (block instanceof $DoorBlock /* || block instanceof $TrapDoorBlock*/ || block instanceof $FenceGateBlock) {
       if (block.hasTag(blacklistTag)) return false;
       return true;
     }
@@ -189,8 +189,8 @@ function doubleDoor() {
 
       if (block instanceof $DoorBlock) {
         level.setBlock(pos, state.setValue($DoorBlock.OPEN, targetOpen), DOOR_UPDATE_FLAGS);
-      } else if (block instanceof $TrapDoorBlock) {
-        level.setBlock(pos, state.setValue(BlockProperties.OPEN, targetOpen), DOOR_UPDATE_FLAGS);
+        /*       } else if (block instanceof $TrapDoorBlock) {
+        level.setBlock(pos, state.setValue(BlockProperties.OPEN, targetOpen), DOOR_UPDATE_FLAGS); */
       } else if (block instanceof $FenceGateBlock) {
         level.setBlock(pos, state.setValue($DoorBlock.OPEN, targetOpen), DOOR_UPDATE_FLAGS);
       }
@@ -291,7 +291,7 @@ function doubleDoor() {
     const { block } = blockState;
     if (block instanceof $DoorBlock) return block.type().canOpenByHand(); // Check if the door can be opened by hand
     // Check if the trapdoor is wooden (the one I want I can't access, will do with a tag for now)
-    else if (block instanceof $TrapDoorBlock) return block.hasTag('minecraft:wooden_trapdoors');
+    // else if (block instanceof $TrapDoorBlock) return block.hasTag('minecraft:wooden_trapdoors');
     return true; // Return true for other blocks (fence gates, etc.)
   }
 
@@ -331,6 +331,7 @@ NativeEvents.onEvent($NeighborNotifyEvent, event => {
 
 BlockEvents.rightClicked(event => {
   const { level, player, hand, block } = event;
+  if (player instanceof $FakePlayer) return;
   const { pos, blockState } = block;
   onDoorClick(level, player, hand, pos, blockState);
 });

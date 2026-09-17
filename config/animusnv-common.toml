@@ -1,0 +1,628 @@
+#Animus Configuration
+[animusnv]
+
+	[animusnv.general]
+		#Mute the Ender Dragon death sound
+		muteDragon = false
+		#Mute the Wither spawn sound
+		muteWither = false
+		#Allow rituals to kill mobs with potion effects
+		canKillBuffedMobs = true
+		#Amount of blood to add to altar per Blood Apple
+		# Default: 50
+		# Range: 1 ~ 10000
+		bloodPerApple = 50
+
+	[animusnv.rituals]
+		#Allow Ritual of Culling to kill boss monsters (Wither, Ender Dragon, etc.)
+		killBoss = true
+		#Extra EV cost for killing boss monsters
+		# Default: 25000
+		# Range: 0 ~ 1000000
+		bossCost = 25000
+		#Allow Ritual of Culling to destroy primed TNT
+		CullingKillsTnT = true
+		#Enable debug logging for Ritual of Culling
+		CullingDebug = false
+		#Horizontal range in blocks for Ritual of Culling effect area
+		# Default: 10
+		# Range: 1 ~ 64
+		cullingRange = 10
+		#Vertical range in blocks for Ritual of Culling effect area (extends both above AND below the ritual stone)
+		# Default: 10
+		# Range: 1 ~ 64
+		cullingVerticalRange = 10
+		#DEPRECATED - No longer used. EV values are now determined by NeoVitae's entity_sacrifice_value datamap. Customize via datapacks at: data/<namespace>/data_maps/entity_type/entity_sacrifice_value.json
+		# Default: 200
+		# Range: 1 ~ 10000
+		cullingLpPerKill = 200
+		#EV cost per mob spawned by Ritual of Animal Luring
+		# Default: 1000
+		# Range: 1 ~ 100000
+		animalLuringCost = 1000
+		#Range in blocks for Ritual of Steadfast Heart absorption effect
+		# Default: 128
+		# Range: 1 ~ 512
+		steadfastHeartRange = 128
+		#Refresh time in ticks for Ritual of Steadfast Heart (20 ticks = 1 second)
+		# Default: 60
+		# Range: 1 ~ 6000
+		steadfastHeartRefreshTime = 60
+		#Maximum absorption amplifier for Ritual of Steadfast Heart (0 = 1 heart, 4 = 5 hearts)
+		# Default: 4
+		# Range: 0 ~ 10
+		steadfastHeartMaxAmplifier = 4
+		#Maximum range in blocks the Ritual Tinkerer can expand Ritual of Nature's Leach to (it starts at 8)
+		# Default: 32
+		# Range: 1 ~ 64
+		naturesLeachRange = 32
+		#Base refresh time in ticks for Ritual of Nature's Leach (before Spiritus modifier)
+		# Default: 80
+		# Range: 1 ~ 6000
+		naturesLeachBaseSpeed = 80
+		#Amount of EV gained per block consumed by Ritual of Nature's Leach
+		# Default: 50
+		# Range: 1 ~ 1000
+		naturesLeachLpPerBlock = 50
+		#Maximum damage to repair per item with Ritual of Reparare each interval
+		# Default: 1
+		# Range: 1 ~ 100
+		reparareRitualRepairAmount = 1
+		#Ticks between repair attempts for Ritual of Reparare (20 ticks = 1 second)
+		# Default: 100
+		# Range: 20 ~ 6000
+		reparareRitualInterval = 100
+		#EV cost per damage point repaired by Ritual of Reparare
+		# Default: 50
+		# Range: 1 ~ 1000
+		reparareRitualEVPerDamage = 50
+		#Chunk radius for Ritual of Persistence chunk loading (in chunks, not blocks)
+		# Default: 3
+		# Range: 1 ~ 16
+		persistenceChunkRadius = 3
+		#EV consumed each second the Ritual of Persistence is active (the key name is legacy; this is not per game tick)
+		# Default: 100
+		# Range: 1 ~ 10000
+		persistenceEVPerTick = 100
+		#Radius in blocks for Ritual of Serenity spawn prevention
+		# Default: 48
+		# Range: 1 ~ 256
+		serenityRadius = 48
+		#EV consumed each second the Ritual of Serenity is active (the key name is legacy; this is not per game tick)
+		# Default: 1
+		# Range: 1 ~ 10000
+		serenityEVPerTick = 1
+		#Radius in blocks for Ritual of Nolite Ignem fire extinguishing
+		# Default: 64
+		# Range: 1 ~ 256
+		noliteIgnemRadius = 64
+		#EV cost per fire block extinguished by Ritual of Nolite Ignem
+		# Default: 10
+		# Range: 1 ~ 1000
+		noliteIgnemEVPerFire = 10
+		#Horizontal radius in blocks for Ritual of Relentless Tides fluid placement
+		# Default: 32
+		# Range: 1 ~ 64
+		relentlessTidesRange = 32
+		#Maximum vertical depth in blocks for Ritual of Relentless Tides fluid placement
+		# Default: 128
+		# Range: 1 ~ 256
+		relentlessTidesDepth = 128
+		#EV cost per fluid block placed by Ritual of Relentless Tides
+		# Default: 50
+		# Range: 1 ~ 1000
+		relentlessTidesEVPerPlacement = 50
+		#Horizontal radius in blocks for Ritual of Siphon fluid extraction
+		# Default: 32
+		# Range: 1 ~ 64
+		siphonRange = 32
+		#Maximum vertical depth in blocks for Ritual of Siphon fluid extraction
+		# Default: 128
+		# Range: 1 ~ 256
+		siphonDepth = 128
+		#EV cost per fluid block extracted by Ritual of Siphon
+		# Default: 50
+		# Range: 1 ~ 1000
+		siphonEVPerExtraction = 50
+		#Block to place where fluid is extracted by Ritual of Siphon
+		#Use format: modid:blockname
+		#Examples: animusnv:antilife, minecraft:stone, minecraft:cobblestone
+		#Default: animusnv:antilife
+		siphonReplacementBlock = "animusnv:antilife"
+		#Radius in blocks to search for Ara Vitaes for Ritual of Source Vitaeum
+		# Default: 8
+		# Range: 1 ~ 32
+		sourceVitaeumAltarRange = 8
+		#Base exchange rate shared by both Source/EV conversion rituals
+		#Ritual of Source Vitaeum converts X Source into 1 EV
+		#Ritual of Ars Vitae converts X EV into 1 Source
+		#Both directions pay the same rate, so round-tripping loses value
+		# Default: 10
+		# Range: 1 ~ 1000
+		sourceVitaeumBaseConversion = 10
+		#Radius in blocks to check for other Master Ritual Stones (each doubles the conversion cost)
+		# Default: 10
+		# Range: 1 ~ 32
+		sourceVitaeumPenaltyRadius = 10
+		#Amount of Source to attempt to convert per cycle
+		# Default: 100
+		# Range: 10 ~ 10000
+		sourceVitaeumSourcePerCycle = 100
+		#Radius in blocks to check for other Master Ritual Stones (each doubles the conversion cost)
+		# Default: 10
+		# Range: 1 ~ 32
+		arsVitaePenaltyRadius = 10
+		#Amount of Source to attempt to produce per cycle
+		# Default: 100
+		# Range: 10 ~ 10000
+		arsVitaeSourcePerCycle = 100
+		#Radius in blocks for Ritual of Floral Supremacy effect area
+		# Default: 8
+		# Range: 1 ~ 32
+		floralSupremacyRadius = 8
+		#EV cost per flower supercharged by Ritual of Floral Supremacy
+		# Default: 50
+		# Range: 1 ~ 1000
+		floralSupremacyEVPerFlower = 50
+		#Horizontal radius in blocks for Ritual of Luna light harvesting
+		# Default: 32
+		# Range: 1 ~ 64
+		lunaHorizontalRange = 32
+		#Vertical depth below ritual stone for Ritual of Luna light harvesting
+		#Searches from ritual stone downward to this depth
+		#Set to -1 to search all blocks down to world bottom
+		#Default: 64
+		# Default: 64
+		# Range: -1 ~ 256
+		lunaVerticalRange = 64
+		#Horizontal radius in blocks for Ritual of Sol light placement
+		# Default: 32
+		# Range: 1 ~ 64
+		solHorizontalRange = 32
+		#Vertical depth below ritual stone for Ritual of Sol light placement
+		#Searches from ritual stone downward to this depth
+		#Set to -1 to search all blocks down to world bottom
+		#Default: 64
+		# Default: 64
+		# Range: -1 ~ 256
+		solVerticalRange = 64
+		#Disallow items enhanced by the Imperfect Ritual of Enhancement from being processed by the Ritual of Unmaking
+		#When true, items with the AnimusEnhanced tag will be skipped
+		#Default: true
+		unmakingDisallowEnhanced = true
+		#Enable player-like kills for Ritual of Culling when raw Spiritus is available
+		#When enabled and Raw Spiritus is present, mobs are killed as if the ritual owner killed them
+		#This enables player-only drops like blaze rods from blazes
+		#Default: true
+		cullingPlayerKillDrops = true
+		#Chance (0.0 to 1.0) to consume 1 raw Spiritus when killing a mob with player-like kill
+		#Only applies when cullingPlayerKillDrops is enabled
+		#Default: 0.1 (10% chance)
+		# Default: 0.1
+		# Range: 0.0 ~ 1.0
+		cullingWillConsumeChance = 0.1
+
+		#Ritual of Endless Greed - Collects mob drops into a container
+		[animusnv.rituals.endlessGreed]
+			#Horizontal range in blocks for Ritual of Endless Greed effect area
+			# Default: 7
+			# Range: 1 ~ 32
+			range = 7
+			#Vertical range in blocks for Ritual of Endless Greed effect area
+			# Default: 5
+			# Range: 1 ~ 32
+			verticalRange = 5
+			#EV cost per item collected by Ritual of Endless Greed
+			# Default: 1
+			# Range: 0 ~ 100
+			lpPerItem = 1
+			#Base EV cost per refresh cycle for Ritual of Endless Greed
+			# Default: 5
+			# Range: 0 ~ 1000
+			refreshCost = 5
+
+		#Upkeep for rituals that run on a timer.
+		#Cost is the EV drained once per refresh, not per game tick.
+		#Time is how many game ticks pass between refreshes (20 ticks = 1 second).
+		#Lowering a refresh time makes that ritual act more often, and therefore cost more EV over time.
+		[animusnv.rituals.refresh]
+			#Ticks between refreshes for Ritual of Animal Luring
+			# Default: 400
+			# Range: 1 ~ 12000
+			animalLuringTime = 400
+			#EV drained from the owner's Anima per entity culled by Ritual of Culling
+			# Default: 75
+			# Range: 0 ~ 100000
+			cullingCost = 75
+			#Ticks between refreshes for Ritual of Culling
+			# Default: 25
+			# Range: 1 ~ 12000
+			cullingTime = 25
+			#EV drained per refresh by Ritual of Entropy
+			# Default: 1
+			# Range: 0 ~ 100000
+			entropyCost = 1
+			#Ticks between refreshes for Ritual of Entropy
+			# Default: 1
+			# Range: 1 ~ 12000
+			entropyTime = 1
+			#EV drained per refresh by Ritual of Luna
+			# Default: 1
+			# Range: 0 ~ 100000
+			lunaCost = 1
+			#Ticks between refreshes for Ritual of Luna
+			# Default: 5
+			# Range: 1 ~ 12000
+			lunaTime = 5
+			#EV drained per refresh by Ritual of Nature's Leach
+			# Default: 10
+			# Range: 0 ~ 100000
+			naturesLeachCost = 10
+			#Ticks between refreshes for Ritual of Nolite Ignem
+			# Default: 20
+			# Range: 1 ~ 12000
+			noliteIgnemTime = 20
+			#Ticks between refreshes for Ritual of Persistence
+			# Default: 20
+			# Range: 1 ~ 12000
+			persistenceTime = 20
+			#Ticks between refreshes for Ritual of Relentless Tides
+			# Default: 10
+			# Range: 1 ~ 12000
+			relentlessTidesTime = 10
+			#Ticks between refreshes for Ritual of Serenity
+			# Default: 20
+			# Range: 1 ~ 12000
+			serenityTime = 20
+			#Ticks between refreshes for Ritual of Siphon
+			# Default: 10
+			# Range: 1 ~ 12000
+			siphonTime = 10
+			#EV drained per refresh by Ritual of Sol
+			# Default: 1
+			# Range: 0 ~ 100000
+			solCost = 1
+			#Ticks between refreshes for Ritual of Sol
+			# Default: 5
+			# Range: 1 ~ 12000
+			solTime = 5
+			#Ticks between refreshes for Ritual of Source Vitaeum
+			# Default: 40
+			# Range: 1 ~ 12000
+			sourceVitaeumTime = 40
+			#Ticks between refreshes for Ritual of Ars Vitae
+			# Default: 40
+			# Range: 1 ~ 12000
+			arsVitaeTime = 40
+			#EV drained per affected player by Ritual of the Steadfast Heart
+			# Default: 100
+			# Range: 0 ~ 100000
+			steadfastHeartCost = 100
+			#EV drained per refresh by Ritual of Unmaking
+			# Default: 0
+			# Range: 0 ~ 100000
+			unmakingCost = 0
+			#Ticks between refreshes for Ritual of Unmaking
+			# Default: 20
+			# Range: 1 ~ 12000
+			unmakingTime = 20
+
+	[animusnv.sigils]
+		#EV cost for Sigil of Consumption per block
+		# Default: 25
+		# Range: 1 ~ 10000
+		antiLifeConsumption = 25
+		#Range of Sigil of Consumption in blocks
+		# Default: 8
+		# Range: 1 ~ 64
+		antiLifeRange = 8
+		#Range of Sigil of Builder in blocks
+		# Default: 64
+		# Range: 1 ~ 256
+		builderRange = 64
+		#Range of Sigil of Nature's Leach for consuming blocks in the world (in blocks)
+		# Default: 8
+		# Range: 1 ~ 64
+		leachRange = 8
+		#Minimum number of fishing loot rolls when Sigil of Storm targets water
+		#Set both min and max to 0 to disable fish spawning
+		# Default: 2
+		# Range: 0 ~ 64
+		stormFishLootMin = 2
+		#Maximum number of fishing loot rolls when Sigil of Storm targets water
+		#Set both min and max to 0 to disable fish spawning
+		# Default: 5
+		# Range: 0 ~ 64
+		stormFishLootMax = 5
+		#Maximum damage to repair per item with Sigil of Reparare each interval
+		# Default: 10
+		# Range: 1 ~ 100
+		reparareRepairAmount = 10
+		#Ticks between repair attempts for Sigil of Reparare (20 ticks = 1 second)
+		# Default: 100
+		# Range: 20 ~ 6000
+		reparareInterval = 100
+		#EV cost per damage point repaired by Sigil of Reparare
+		# Default: 50
+		# Range: 1 ~ 1000
+		reparareEVPerDamage = 50
+		#EV cost per use of Sigil of the Free Soul
+		# Default: 5000
+		# Range: 1 ~ 10000
+		freeSoulEVCost = 5000
+		#Duration in seconds for spectator mode when using Sigil of the Free Soul
+		# Default: 10
+		# Range: 1 ~ 600
+		freeSoulDuration = 10
+		#Cooldown in seconds before Sigil of the Free Soul can prevent death again
+		# Default: 60
+		# Range: 1 ~ 600
+		freeSoulCooldown = 60
+		#Default radius in blocks for Sigil of Equivalency block replacement (min: 1, max: 32)
+		# Default: 1
+		# Range: 1 ~ 32
+		sigilEquivalencyRadius = 1
+		#EV cost per block replaced by Sigil of Equivalency
+		# Default: 1
+		# Range: 1 ~ 10000
+		sigilEquivalencyEVCost = 1
+		#Number of blocks to replace per tick with Sigil of Equivalency (lower = less lag)
+		# Default: 5
+		# Range: 1 ~ 100
+		sigilEquivalencyBlocksPerTick = 5
+
+		#Sigil of the Monk - unarmed combat enhancement
+		[animusnv.sigils.monk]
+			#Bonus unarmed damage when Sigil of the Monk is active
+			#This damage is added when attacking with empty hands
+			#Default: 10
+			# Default: 10.0
+			# Range: 0.0 ~ 100.0
+			unarmedDamage = 10.0
+			#EV cost per second while Sigil of the Monk is active
+			#Default: 100 (5 EV per tick × 20 ticks)
+			#Set to 0 to disable EV drain
+			# Default: 100
+			# Range: 0 ~ 10000
+			lpPerSecond = 100
+
+	[animusnv.hurtCooldown]
+		#How will the Hurt Cooldown (iframes) be affected
+		#DISABLED: No changes to vanilla behavior
+		#WHITELIST: Only listed damage sources have no iframes
+		#BLACKLIST: All except listed damage sources have no iframes
+		#Allowed Values: DISABLED, WHITELIST, BLACKLIST
+		mode = "BLACKLIST"
+		#If true, bosses will have no iframes
+		affectBosses = false
+		#If true, players will have no iframes
+		affectPlayers = false
+		#List of damage source types for whitelist/blacklist
+		sources = ["inFire", "inWall", "cactus", "lightningBolt", "lava", "outOfWorld"]
+
+	[animusnv.bloodCore]
+		#Enable debug logging for Blood Core tree spreading
+		debug = false
+		#Ticks between leaf regrowth attempts (when spreading is enabled)
+		#Lower = faster regrowth. Default: 100 (5 seconds)
+		# Default: 100
+		# Range: 20 ~ 6000
+		leafRegrowthSpeed = 100
+		#Radius in blocks for blood tree spreading
+		# Default: 16
+		# Range: 1 ~ 32
+		treeSpreadRadius = 16
+		#Base interval in ticks between tree spreading attempts
+		#Default: 600 (30 seconds)
+		# Default: 600
+		# Range: 200 ~ 12000
+		treeSpreadInterval = 600
+
+	[animusnv.arsNouveau]
+		#Amount of Source consumed by Arcane Rune per drain cycle
+		#Default: 20 Source per cycle
+		# Default: 20
+		# Range: 1 ~ 10000
+		arcaneRuneDrainAmount = 20
+		#Interval in ticks between Arcane Rune source drain cycles
+		#Default: 200 ticks (10 seconds)
+		# Default: 200
+		# Range: 20 ~ 6000
+		arcaneRuneDrainInterval = 200
+
+		#Sentient Armor Integration
+		[animusnv.arsNouveau.sentientArmor]
+			#Enable Sentient Armor XP gain from Ars Nouveau spell casting
+			#Default: true
+			enabled = true
+			#Base XP granted to Sentient Armor per glyph cast
+			#Actual XP = base × number of glyphs in spell
+			#Default: 5
+			# Default: 5
+			# Range: 1 ~ 1000
+			baseXP = 5
+
+	[animusnv.botania]
+		#EV to Mana conversion rate
+		#Used by Sigil of Boundless Nature and other EV-to-mana items
+		#Default: 2 mana per 1 EV consumed
+		# Default: 2
+		# Range: 1 ~ 100
+		evToManaConversionRate = 2
+		#Spiritus to Mana conversion rate
+		#Used by Diabolical Fungi and other will-to-mana generating flowers
+		#Default: 250 mana per 1 Spiritus consumed
+		# Default: 250
+		# Range: 1 ~ 1000
+		spiritusToManaConversionRate = 250
+		#Mana consumption rate for Rune of Unleashed Nature
+		#Mana consumed per second to maintain acceleration bonus
+		#Default: 10 mana per second
+		# Default: 10
+		# Range: 1 ~ 1000
+		unleashedNatureManaDrain = 10
+
+	#Weapon Settings
+	[animusnv.weapons]
+
+		#Sentient Bow - Spiritus powered bow
+		[animusnv.weapons.sentientBow]
+			#Amount of Spiritus consumed per arrow fired
+			#Default: 1.0
+			# Default: 1.0
+			# Range: 0.0 ~ 100.0
+			willCostPerShot = 1.0
+
+		#Hellforged Bow - EV powered bow with charged shots
+		[animusnv.weapons.hellforgedBow]
+			#Base EV cost per shot (before charging)
+			#Default: 5
+			# Default: 5
+			# Range: 0 ~ 10000
+			baseLpCost = 5
+			#EV consumed per tick while charging beyond normal draw
+			#At max charge (70 ticks), this totals 3500 EV for the charge alone
+			#Default: 50
+			# Default: 50
+			# Range: 0 ~ 1000
+			lpPerChargeTick = 50
+			#Maximum charge time in ticks (20 ticks = 1 second)
+			#Default: 70 (3.5 seconds)
+			# Default: 70
+			# Range: 20 ~ 200
+			maxChargeTicks = 70
+			#Maximum damage at full charge
+			#Default: 40.0
+			# Default: 40.0
+			# Range: 1.0 ~ 200.0
+			maxDamage = 40.0
+			#HP percentage threshold for execute effect (0.15 = 15%)
+			#At full charge, targets below this HP are instantly killed
+			#Set to 0 to disable execute
+			#Default: 0.15
+			# Default: 0.15
+			# Range: 0.0 ~ 1.0
+			executeThreshold = 0.15
+
+		#EV-Powered Spell Casting
+		[animusnv.ironsSpells.evCasting]
+			#Enable EV-powered spell casting
+			#When enabled, spells can consume EV instead of mana
+			#Default: true
+			enableEVCasting = true
+			#EV cost per mana point when casting spells with EV
+			#Higher values make spell casting more expensive
+			#Example: 100 means a spell costing 50 mana requires 5,000 EV
+			#Default: 100 EV per mana
+			# Default: 100
+			# Range: 1 ~ 1000
+			evPerMana = 100
+			#Require a Blood Orb in inventory or curio slot to use EV for spell casting
+			#If false, any player with EV in their Anima can use it
+			#Default: true
+			requireBloodOrb = true
+			#Allow spells to consume both mana and EV if player doesn't have enough of either
+			#Example: If a spell costs 100 mana and player has 60 mana + enough EV,
+			#it will consume 60 mana + EV equivalent of 40 mana
+			#Default: true
+			allowHybridCasting = true
+			#Show EV cost equivalent in spell tooltips when hovering over spells
+			#Default: true
+			showEVCostInTooltip = true
+
+		#Blood-Infused Spellbook
+		[animusnv.ironsSpells.bloodInfusedSpellbook]
+			#Enable Blood-Infused Spellbooks
+			#Default: true
+			enabled = true
+			#EV cost to infuse spellbook to Tier 1 (altar recipe, no orb needed)
+			# Default: 5000
+			# Range: 100 ~ 1000000
+			tier1EVCost = 5000
+			#EV cost to infuse spellbook to Tier 2 (Discipulus Orb of Vitae)
+			# Default: 10000
+			# Range: 100 ~ 1000000
+			tier2EVCost = 10000
+			#EV cost to infuse spellbook to Tier 3 (Veneficus Orb of Vitae)
+			# Default: 25000
+			# Range: 100 ~ 1000000
+			tier3EVCost = 25000
+			#EV cost to infuse spellbook to Tier 4 (Magus Orb of Vitae)
+			# Default: 50000
+			# Range: 100 ~ 1000000
+			tier4EVCost = 50000
+			#EV cost to infuse spellbook to Tier 5 (Dominus Orb of Vitae)
+			# Default: 100000
+			# Range: 100 ~ 1000000
+			tier5EVCost = 100000
+			#EV cost to infuse spellbook to Tier 6 (Divinus Orb of Vitae)
+			# Default: 175000
+			# Range: 100 ~ 1000000
+			tier6EVCost = 175000
+
+		#Sigil of Crimson Will
+		[animusnv.ironsSpells.sigilCrimsonWill]
+			#Enable Sigil of Crimson Will
+			#Default: true
+			enabled = true
+			#EV cost per mana point when empowering spells with Crimson Will
+			#This is in addition to normal spell costs
+			#Default: 50 EV per mana (half of normal EV casting cost)
+			# Default: 50
+			# Range: 1 ~ 1000
+			evPerMana = 50
+
+		#Sanguine Scrolls
+		[animusnv.ironsSpells.sanguineScrolls]
+			#Enable Sanguine Scrolls
+			#Default: true
+			enabled = true
+			#EV cost multiplier for Sanguine Scrolls
+			#Multiplied with spell mana cost and evPerMana
+			#Example: 1.5 means spell costs mana × evPerMana × 1.5 EV
+			#Default: 1.5 (50% more expensive than spellbook casting)
+			# Default: 1.5
+			# Range: 1.0 ~ 5.0
+			evCostMultiplier = 1.5
+			#Durability multiplier for Sanguine Scrolls
+			#Base durabilities: Blank=50, Reinforced=100, Imbued=200, Demon=400, Ethereal=600
+			#Example: 2.0 doubles all durability values
+			#Default: 1.0
+			# Default: 1.0
+			# Range: 0.1 ~ 10.0
+			durabilityMultiplier = 1.0
+			#Require Blood Orb in inventory to craft Sanguine Scrolls at altar
+			#Default: false
+			requireBloodOrbToCraft = false
+
+		#Sentient Armor Integration
+		[animusnv.ironsSpells.sentientArmor]
+			#Enable Sentient Armor XP gain from spell casting
+			#Default: true
+			enabled = true
+			#Base XP granted to Sentient Armor per spell cast
+			#Actual XP = base × spell level × rarity multiplier
+			#Rarity multipliers: Common=1.0, Uncommon=1.5, Rare=2.0, Epic=3.0, Legendary=5.0
+			#Default: 10
+			# Default: 10
+			# Range: 1 ~ 1000
+			baseXP = 10
+
+	#Sanguine Rectifier (EvilCraft Compat)
+	[animusnv.sanguineRectifier]
+		#EV consumed per 1mB of EvilCraft blood produced. Set to 0 to disable EV-to-Blood conversion.
+		# Default: 1
+		# Range: 0 ~ 100
+		evPerBlood = 1
+		#Base transfer rate in mB/tick (scales with altar speed runes)
+		# Default: 100
+		# Range: 1 ~ 10000
+		baseTransferRate = 100
+		#Internal blood tank capacity in mB
+		# Default: 16000
+		# Range: 1000 ~ 256000
+		tankCapacity = 16000
+		#Altar search range in blocks (cube radius)
+		# Default: 10
+		# Range: 3 ~ 32
+		searchRange = 10

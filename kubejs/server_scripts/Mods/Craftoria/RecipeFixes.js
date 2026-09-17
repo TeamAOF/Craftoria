@@ -70,16 +70,16 @@ ServerEvents.recipes(e => {
   e.custom({
     type: 'minecraft:smithing_transform',
     template: {
-      item: 'irons_spellbooks:arcane_rune'
+      item: 'irons_spellbooks:arcane_rune',
     },
     base: {
-      item: 'hazennstuff:miner_helmet'
+      item: 'hazennstuff:miner_helmet',
     },
     addition: {
-      item: 'irons_spellbooks:archevoker_helmet'
+      item: 'irons_spellbooks:archevoker_helmet',
     },
     result: {
-      id: 'hazennstuff:spectral_spelunker_helmet'
-    }
+      id: 'hazennstuff:spectral_spelunker_helmet',
+    },
   }).id('hazennstuff:smithing/spectral_spelunker_armor/spectral_spelunker_helmet');
 });

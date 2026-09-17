@@ -3,12 +3,11 @@ let nonSortedCompressedBlocks = [];
 StartupEvents.registry('block', event => {
   /**
    * Compressed Blocks
-   * Parameters:
-   * name: Name of the block
-   * texture: Texture of the block, usually same as the block id, without the mod id
-   * modID: Mod ID of the block
-   * soundType: (Optional) Sound type of the block, defaults to metal, see https://kubejs.com/wiki/ref/SoundType for more info
-   * tool: (Optional) Tool for mining the block, defaults to pickaxe
+   * @param {string} name Name of the block
+   * @param {string} texture Texture of the block, usually same as the block id, without the mod id
+   * @param {string} modID Mod ID of the block
+   * @param {string} [soundType] (Optional) Sound type of the block, defaults to metal, see https://kubejs.com/wiki/ref/SoundType for more info
+   * @param {string} [tool] (Optional) Tool for mining the block, defaults to pickaxe
    */
   let compressedBlocks = [
     // Minecraft
@@ -94,6 +93,8 @@ StartupEvents.registry('block', event => {
     { name: 'Charged Redstone', texture: 'charged_redstone_block', modID: 'appflux' },
   ];
 
+  global.compressedBlocks = compressedBlocks;
+
   compressedBlocks.forEach(block => {
     for (let i = 1; i < 10; i++) {
       let blockId = block.name.replace(' ', '_').toLowerCase();
@@ -105,6 +106,7 @@ StartupEvents.registry('block', event => {
         .soundType(block.soundType || 'metal')
         .hardness(i)
         .resistance(6)
+        .tagBoth(`craftoria:compressed_${blockId}`)
         .tagBoth(`craftoria:${c}x_compressed`)
         .tagItem('modern_industrialization:replicator_blacklist')
         .tagItem('craftoria:replicator_1_blacklist')

@@ -1,0 +1,40 @@
+#mB of Unstable Dimensional Gas collected by the Ambient Gas Collector.
+# Default: 1
+# Range: 1 ~ 1000
+gasCollectAmount = 1
+#Amount of Energy(joules) an item can receive per tick from a Wireless Charging Station.
+# Default: 100000
+# Range: 0 ~ 9223372036854775807
+wirelessChargingStationChargingRate = 100000
+
+#Custom Replicator Recipes
+[replicator_recipes]
+	#The recipes added here will be added to the item replicator. Write using modId:registeredName#amount, # followed by the amount(not null or zero) of UU matter consumed. For example:["minecraft:stone#10","mekanism:basic_bin#100"]
+	itemReplicatorRecipe = []
+	#The recipes added here will be added to the fluid replicator. Write using modId:registeredName#amount, # followed by the amount(not null or zero) of UU matter consumed. For example:["minecraft:water#10","mekanism:heavy_water#100"]
+	fluidReplicatorRecipe = []
+	#The recipes added here will be added to the chemical replicator. Write using modId:registeredName#amount, # followed by the amount(not null or zero) of UU matter consumed. For example:["mekanism:oxygen#10","mekanism:hydrogen#100"]
+	chemicalReplicatorRecipe = []
+
+#Wireless Transmission Station Max Output Rate
+[wireless_transmission_station_max_output_rate]
+	#Set the maximum energy transmission rate during wireless transmission
+	# Default: 10000000
+	# Range: 1 ~ 9223372036854775807
+	energyRate = 10000000
+	#Set the maximum fluids transmission rate during wireless transmission
+	# Default: 10000
+	# Range: > 1
+	fluidsRate = 10000
+	#Set the maximum chemicals transmission rate during wireless transmission
+	# Default: 40000
+	# Range: 1 ~ 9223372036854775807
+	chemicalsRate = 40000
+	#Set the maximum items transmission rate during wireless transmission
+	# Default: 64
+	# Range: 1 ~ 64
+	itemsRate = 64
+	#Set the maximum heat transmission rate during wireless transmission
+	# Default: 1.6777216E7
+	# Range: 0.1 ~ 9.223372036854776E18
+	heatRate = 1.6777216E7

@@ -1,0 +1,34 @@
+#Bard's Bandeau Settings
+[bards_bandeau]
+	#How many seconds effects last, and how often effects are reapplied. Higher numbers may reduce lag, and cause effects to linger longer a song stops playing. Lower numbers may increase lag, and improve the usefulness of one-time re-application effects like Instant Health.
+	# Default: 7
+	# Range: 1 ~ 300
+	bandeauEffectLength = 7
+	#The potion/effect level to be applied. 0 is equivalent to a level I potion.
+	# Default: 0
+	# Range: 0 ~ 254
+	bandeauEffectLevel = 0
+	#Maximum number of monsters receiving effects per effect-application.
+	# Default: 10
+	# Range: 1 ~ 254
+	maxMonstersAffected = 10
+	#Maximum number of players receiving effects per effect-application.
+	# Default: 5
+	# Range: 1 ~ 254
+	maxPlayersAffected = 5
+	#Monsters within this many blocks (all directions), receive negative effects.
+	# Default: 8.0
+	# Range: 1.0 ~ 254.0
+	monsterRange = 8.0
+	#Players within this many blocks (all directions), receive positive effects.
+	# Default: 20.0
+	# Range: 1.0 ~ 254.0
+	playerRange = 20.0
+	#Multiply the original potion duration by this value when applying area potion effects. 1.0 means 100% of the original potion duration. 0.1 means 10% of the original duration.
+	# Default: 0.2
+	# Range: 0.1 ~ 1.0
+	potionDurationMultiplier = 0.2
+	#Disc-specific effects that cannot be applied. Ex: ["minecraft:saturation", "ars_nouveau:blasting"]. This value does not restrict potion effects.
+	effectsBanlist = ["ars_nouveau:blasting", "ars_nouveau:snare", "minecraft:saturation"]
+	#Fallback effects for discs without a configured effect. Ex: ["minecraft:night_vision", "ars_nouveau:recovery"].
+	discFallbackEffects = []

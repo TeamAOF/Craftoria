@@ -10,6 +10,7 @@
 	images: [
 		{
 			height: 7.0d
+			id: "7CF14A88EB92960A"
 			image: "ftbquests:textures/gui/fishing.png"
 			rotation: 0.0d
 			width: 7.0d
@@ -18,6 +19,7 @@
 		}
 		{
 			height: 2.0d
+			id: "1CB68C45475AB1B5"
 			image: "minecraft:item/fishing_rod"
 			rotation: 0.0d
 			width: 2.0d
@@ -26,6 +28,7 @@
 		}
 		{
 			height: 2.0d
+			id: "7B180B1A0B8C4257"
 			image: "minecraft:textures/entity/fishing_hook.png"
 			rotation: 25.0d
 			width: 2.0d
@@ -34,6 +37,7 @@
 		}
 		{
 			height: 10.0d
+			id: "559B5998EBEAC270"
 			image: "biomeswevegone:textures/gui/hanging_signs/skyris.png"
 			order: -1
 			rotation: 0.0d
@@ -43,6 +47,7 @@
 		}
 		{
 			height: 1.0d
+			id: "7FD466CFDB07D91F"
 			image: "starcatcher:item/true_blue_bottle"
 			rotation: 0.0d
 			width: 1.0d
@@ -51,6 +56,7 @@
 		}
 		{
 			height: 1.0d
+			id: "3A32A8601EF5183B"
 			image: "aquaculture:item/jellyfish"
 			rotation: 0.0d
 			width: 1.0d
@@ -59,6 +65,7 @@
 		}
 		{
 			height: 1.0d
+			id: "164642023962C4E8"
 			image: "starcatcher:item/fish_bones"
 			rotation: 0.0d
 			width: 1.0d
@@ -67,6 +74,7 @@
 		}
 		{
 			height: 1.0d
+			id: "2CDED71477C1DA8C"
 			image: "aquaculture:item/lockbox"
 			rotation: 0.0d
 			width: 1.0d
@@ -75,6 +83,7 @@
 		}
 		{
 			height: 1.0d
+			id: "69CED458B5FA5E34"
 			image: "aquaculture:item/treasure_chest"
 			rotation: 0.0d
 			width: 1.0d
@@ -83,7 +92,8 @@
 		}
 		{
 			height: 1.0d
-			image: "starcatcher:item/frugal_bobber"
+			id: "4F1C319A4A907EE9"
+			image: "starcatcher:item/steady_bobber"
 			rotation: 0.0d
 			width: 1.0d
 			x: 4.35d
@@ -91,6 +101,7 @@
 		}
 		{
 			height: 8.0d
+			id: "4ABF5CB77196DFE2"
 			image: "supplementaries:block/daub_frame"
 			order: -2
 			rotation: 0.0d
@@ -100,6 +111,7 @@
 		}
 		{
 			height: 2.0d
+			id: "23B81D099D540B33"
 			image: "gag:item/fishing_dynamite"
 			rotation: 0.0d
 			width: 2.0d
@@ -108,6 +120,7 @@
 		}
 		{
 			height: 2.0d
+			id: "1DDF1A327539108A"
 			image: "aquaculture:item/double_obsidian_hook"
 			rotation: 25.0d
 			width: 2.0d
@@ -116,6 +129,7 @@
 		}
 		{
 			height: 1.25d
+			id: "524C53652D58ED00"
 			image: "hazennstuff:block/arcane_block_lightning"
 			rotation: 0.0d
 			width: 1.25d
@@ -124,6 +138,7 @@
 		}
 		{
 			height: 1.25d
+			id: "5837406035326C80"
 			image: "hazennstuff:block/arcane_block_nature"
 			rotation: 0.0d
 			width: 1.25d
@@ -132,6 +147,7 @@
 		}
 		{
 			height: 1.25d
+			id: "59320AD06CA106F8"
 			image: "create:block/palettes/framed_glass"
 			rotation: 0.0d
 			width: 1.25d
@@ -140,6 +156,7 @@
 		}
 		{
 			height: 1.25d
+			id: "7580757A043D1773"
 			image: "create:block/palettes/framed_glass"
 			rotation: 0.0d
 			width: 1.25d
@@ -148,6 +165,7 @@
 		}
 		{
 			height: 3.0d
+			id: "66F57F96A13D93DF"
 			image: "modern_industrialization:fluid/high_pressure_water_still"
 			order: -1
 			rotation: 0.0d
@@ -156,7 +174,7 @@
 			y: -1.42d
 		}
 	]
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -217,12 +235,12 @@
 			tasks: [
 				{
 					id: "691E6AA922761E29"
-					item: { components: { "ftbfiltersystem:filter": "or(item(starcatcher:shiny_hook)item(starcatcher:gold_hook)item(starcatcher:mossy_hook)item(starcatcher:crystal_hook)item(starcatcher:stone_hook)item(starcatcher:split_hook)item(starcatcher:stabilizing_hook)item(starcatcher:heavy_hook))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "or(item_tag(starcatcher:hooks))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 				{
 					id: "7376AAE3B45AD4B9"
-					item: { components: { "ftbfiltersystem:filter": "or(item(starcatcher:creeper_bobber)item(starcatcher:glitter_bobber)item(starcatcher:colorful_bobber)item(starcatcher:frugal_bobber)item(starcatcher:steady_bobber)item(starcatcher:impatient_bobber)item(starcatcher:frog_bobber)item(starcatcher:kimbe_bobber)item(starcatcher:clear_bobber))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					item: { components: { "ftbfiltersystem:filter": "or(item_tag(starcatcher:bobbers))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 					type: "item"
 				}
 			]
@@ -263,7 +281,7 @@
 			}]
 			tasks: [{
 				id: "7652C148D455797D"
-				item: { count: 1, id: "starcatcher:fish_spotter" }
+				item: { count: 1, id: "starcatcher:fish_radar" }
 				type: "item"
 			}]
 			x: 0.15d
@@ -284,12 +302,12 @@
 			size: 1.5d
 			tasks: [{
 				id: "18DB91FAFFC46B5D"
-				item: { components: { "minecraft:item_name": "{\"translate\":\"Trophy of Pitiful Fishing\"}", "starcatcher:trophy": { all: { total: 10 }, custom_name: "Trophy of Pitiful Fishing", fish_properties: { fish: "starcatcher:trophy_bronze" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_bronze" }
+				item: { count: 1, id: "starcatcher:trophy_copper" }
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 7.200000000000001d
-			y: 2.0d
+			x: 7.205000000000003d
+			y: 1.6500000000000001d
 		}
 		{
 			dependencies: ["4ED1400E2AAAAAE1"]
@@ -307,12 +325,12 @@
 			size: 1.75d
 			tasks: [{
 				id: "285134647C8E9555"
-				item: { components: { "minecraft:item_name": "{\"translate\":\"Trophy of Skilled Fishing\"}", "starcatcher:trophy": { all: { total: 25 }, custom_name: "Trophy of Skilled Fishing", fish_properties: { fish: "starcatcher:trophy_silver" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_silver" }
+				item: { count: 1, id: "starcatcher:trophy_iron" }
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 7.215000000000002d
-			y: 3.4d
+			x: 7.200000000000001d
+			y: 2.975000000000001d
 		}
 		{
 			dependencies: ["30A0D33361D77D7E"]
@@ -330,113 +348,91 @@
 			size: 2.0d
 			tasks: [{
 				id: "2FA6F7811973B494"
-				item: { components: { "minecraft:item_name": "{\"translate\":\"Trophy of Masterful Fishing\"}", "starcatcher:trophy": { all: { total: 50 }, custom_name: "Trophy of Masterful Fishing", fish_properties: { fish: "starcatcher:trophy_gold" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_gold" }
+				item: { count: 1, id: "starcatcher:trophy_gold" }
 				match_components: "strict"
 				type: "item"
 			}]
-			x: 7.2250000000000005d
-			y: 5.0d
+			x: 7.205000000000002d
+			y: 4.65d
 		}
 		{
-			id: "621168DCC2A3B3F3"
-			rewards: [{
-				count: 8
-				id: "66AA927C5A39B0F3"
-				item: {
-					count: 1
-					id: "starcatcher:scalding_treasure"
-				}
-				type: "item"
-			}]
-			shape: "none"
-			size: 1.75d
-			tasks: [{
-				id: "6D9D40FE0D5B0F7F"
-				item: { components: { "minecraft:item_name": "{\"translate\":\"Trophy of Flowing Fishes\"}", "starcatcher:trophy": { all: { unique: 50 }, custom_name: "Trophy of Flowing Fishes", fish_properties: { fish: "starcatcher:trophy_silver" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_silver" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: -3.9375000000000004d
-			y: 2.0d
-		}
-		{
-			dependencies: ["621168DCC2A3B3F3"]
-			id: "4A25E60DD359F959"
-			rewards: [{
-				count: 8
-				id: "2979B34562CF7228"
-				item: {
-					count: 1
-					id: "starcatcher:treasure"
-				}
-				type: "item"
-			}]
-			shape: "none"
-			size: 1.75d
-			tasks: [{
-				id: "2FBB40299068EDBB"
-				item: { components: { "minecraft:item_name": "{\"translate\":\"Trophy of Infinite Fishes\"}", "starcatcher:trophy": { all: { unique: 90 }, custom_name: "Trophy of Infinite Fishes", fish_properties: { fish: "starcatcher:trophy_gold" }, trophy_type: "trophy" } }, count: 1, id: "starcatcher:trophy_gold" }
-				match_components: "strict"
-				type: "item"
-			}]
-			x: -3.9375000000000004d
-			y: 3.4d
-		}
-		{
-			dependencies: ["4A25E60DD359F959"]
-			icon: {
-				components: {
-					"minecraft:item_name": "\"Trophy of the Older Angler\""
-					"starcatcher:trophy": {
-						common: {
-							total: 100
-							unique: 50
-						}
-						custom_name: "Trophy of the Older Angler"
-						epic: {
-							total: 20
-							unique: 12
-						}
-						fish_properties: {
-							fish: "starcatcher:trophy_gold"
-						}
-						legendary: {
-							total: 10
-							unique: 8
-						}
-						rare: {
-							total: 30
-							unique: 17
-						}
-						trophy_type: "trophy"
-						uncommon: {
-							total: 50
-							unique: 25
-						}
-					}
-				}
-				id: "starcatcher:trophy_gold"
-			}
-			id: "287A6A75537FF79C"
+			dependencies: ["29AD1060C129C86F"]
+			hide_dependency_lines: true
+			id: "04F6F95B5880770D"
 			rewards: [{
 				count: 64
-				id: "717881047D9EB828"
+				id: "1BE079362DCABD56"
 				item: {
 					count: 1
-					id: "starcatcher:treasure"
+					id: "aquaculture:treasure_chest"
 				}
 				type: "item"
 			}]
 			shape: "none"
-			size: 1.75d
+			size: 2.25d
 			tasks: [{
-				id: "12F508D7D48DFED3"
-				item: { components: { "minecraft:item_name": "{\"translate\":\"Trophy of the Older Angler\"}", "starcatcher:trophy": { all: { total: 200 }, common: { unique: 36 }, custom_name: "Trophy of the Older Angler", epic: { unique: 13 }, fish_properties: { fish: "starcatcher:trophy_gold" }, legendary: { unique: 8 }, rare: { unique: 14 }, trophy_type: "trophy", uncommon: { unique: 23 } } }, count: 1, id: "starcatcher:trophy_gold" }
+				id: "6F8FA5CD1CE219BC"
+				item: { count: 1, id: "starcatcher:trophy_emerald" }
 				match_components: "strict"
 				type: "item"
 			}]
-			x: -3.9375000000000004d
-			y: 5.0d
+			x: -4.5d
+			y: 1.575d
+		}
+		{
+			dependencies: ["04F6F95B5880770D"]
+			id: "7283C1B759AF0F5F"
+			rewards: [{
+				count: 64
+				id: "0F15DFD13C721714"
+				item: {
+					count: 1
+					id: "aquaculture:treasure_chest"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 2.5d
+			tasks: [{
+				id: "0E23CA2700218E72"
+				item: { count: 1, id: "starcatcher:trophy_diamond" }
+				match_components: "strict"
+				type: "item"
+			}]
+			x: -4.4875d
+			y: 3.2625d
+		}
+		{
+			dependencies: ["7283C1B759AF0F5F"]
+			id: "59B0B5B66DA2BFE4"
+			rewards: [
+				{
+					count: 64
+					id: "2370260B7CAF2FE9"
+					item: {
+						count: 1
+						id: "aquaculture:treasure_chest"
+					}
+					type: "item"
+				}
+				{
+					id: "66B976C1B8692FF4"
+					item: {
+						count: 1
+						id: "spectrum:fishcake"
+					}
+					type: "item"
+				}
+			]
+			shape: "none"
+			size: 3.0d
+			tasks: [{
+				id: "075A7A11E5E21306"
+				item: { count: 1, id: "starcatcher:trophy_of_the_older_angler" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.25d
 		}
 	]
 }

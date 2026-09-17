@@ -1,7 +1,7 @@
 #MekaWeapons Settings. Joules to FE conversion: 2.5J = 1FE
 [weapons]
 	#Transfer energy rate of the Wireless Charger (Magnetizer), in Joules per tick.
-	# Default: 1250000
+	# Default: 2500000
 	# Range: 0 ~ 9223372036854775807
 	wireless_charge_rate = 1250000
 
@@ -82,3 +82,40 @@
 		# Default: 125000
 		# Range: 0 ~ 9223372036854775807
 		looting_energy_usage = 125000
+
+		#Meka-Gun Settings
+		[weapons.meka_bow.meka_gun]
+			#Base damage of Meka-Gun
+			base_damage = 50
+			#Cost in Joules of using Meka-Gun.
+			# Default: 250000
+			# Range: 0 ~ 9223372036854775807
+			energy_usage = 250000
+			#Base energy capacity of Meka-Gun.
+			# Default: 16000000
+			# Range: 0 ~ 9223372036854775807
+			base_energy_capacity = 16000000
+			#Base charge rate of Meka-Gun.
+			# Default: 350000
+			# Range: 0 ~ 9223372036854775807
+			base_charge_rate = 350000
+			#Laser beam length of Meka-Gun, in blocks.
+			# Default: 20
+			# Range: 1 ~ 1024
+			beam_length = 20
+			#Max heat percentage of Meka-Gun.
+			# Default: 100
+			# Range: 1 ~ 10000
+			max_heat = 100
+			#Heat percentage added to Meka-Gun per shot.
+			# Default: 10
+			# Range: 1 ~ 10000
+			heat_per_shot = 10
+			#Heat percentage lost by Meka-Gun per second.
+			# Default: 5
+			# Range: 1 ~ 10000
+			heat_loss_per_second = 5
+			#Ticks to wait before Meka-Gun starts cooling down.
+			# Default: 20
+			# Range: 1 ~ 10000
+			cooldown_delay_ticks = 20

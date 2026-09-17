@@ -16,12 +16,6 @@ KeyBindJSEvents.modify(event => {
     'key.the_bumblezone.beehemoth_up': { category: 'key.categories.movement' },
     'key.the_bumblezone.beehemoth_down': { category: 'key.categories.movement' },
 
-    // Inventory
-    'key.trashslot.toggle': { key: GLFW.GLFW_KEY_PERIOD, category: 'key.categories.inventory' },
-    'key.trashslot.toggle_lock': { category: 'key.categories.inventory' },
-    'key.trashslot.delete': { category: 'key.categories.inventory' },
-    'key.trashslot.delete_all': { category: 'key.categories.inventory' },
-
     // Creative Mode
     'key.loadToolbarActivator': { key: none, mod: 'minecraft' },
     'key.saveToolbarActivator': { key: none, mod: 'minecraft' },
@@ -33,7 +27,6 @@ KeyBindJSEvents.modify(event => {
     Toggle: { key: GLFW.GLFW_KEY_U, category: 'key.categories.multiplayer', mod: 'chattoggle' },
 
     // Miscellaneous
-    'key.toastcontrol.clear': { category: 'key.categories.misc' },
     'key.stickit.place': { category: 'key.categories.misc' },
     'desc.seasonhud.keybind.options': { key: none, category: 'key.categories.misc' },
     'key.puffish_skills.open': { category: 'key.categories.misc' },
@@ -55,10 +48,9 @@ KeyBindJSEvents.modify(event => {
 
     // Guides
     'key.guideme.guide': { category: 'category.craftoria.guides' },
-    'ponder.keyinfo.ponder': { category: 'category.craftoria.guides' },
+    'key.ponder.ponder': { category: 'category.craftoria.guides' },
     'keybind.advancedperipherals.description': { category: 'category.craftoria.guides' },
     'key.ars_nouveau.open_documentation': { category: 'category.craftoria.guides' },
-    'key.openManual': { category: 'category.craftoria.guides', mod: 'mcjtylib' },
 
     // Curios
     'key.curios.open.desc': { key: none },
@@ -74,13 +66,9 @@ KeyBindJSEvents.modify(event => {
     'placebo.toggleTrails': { key: none },
     'placebo.toggleWings': { key: none },
 
-    // Deeper & Darker
-    'key.deeperdarker.boost': { key: none },
-    'key.deeperdarker.transmit': { key: none },
-
     // FTB
     'key.ftbchunks.claim_manager': { category: 'category.craftoria.ftb' },
-    'key.ftbchunks.map': { key: none, category: 'category.craftoria.ftb', remove: true},
+    'key.ftbchunks.map': { key: none, category: 'category.craftoria.ftb', remove: true },
     'key.ftbchunks.add_waypoint': { category: 'category.craftoria.ftb' },
     'key.ftbchunks.toggle_minimap': { category: 'category.craftoria.ftb' },
     'key.ftbchunks.waypoint_manager': { category: 'category.craftoria.ftb' },
@@ -104,9 +92,8 @@ KeyBindJSEvents.modify(event => {
     'key.sfm.item_inspector.activation_key': { key: none },
 
     // Sophisticated Backpacks
-    'keybind.sophisticatedbackpacks.toggle_upgrade_1': { key: none, modifier: 'none' },
-    'keybind.sophisticatedbackpacks.toggle_upgrade_2': { key: none, modifier: 'none' },
-    'keybind.sophisticatedstorage.sort': { category: 'keybind.sophisticatedbackpacks.category' },
+    'key.sophisticatedbackpacks.toggle_upgrade_1': { key: none, modifier: 'none' },
+    'key.sophisticatedbackpacks.toggle_upgrade_2': { key: none, modifier: 'none' },
 
     // Iris
     'iris.keybind.reload': { key: none },
@@ -117,7 +104,7 @@ KeyBindJSEvents.modify(event => {
     'framedblocks.key.wipe_cache': { key: none },
 
     // Voice Mod
-    'key.mute_microphone': { key: none, mod: 'voicechat', remove: true},
+    'key.mute_microphone': { key: none, mod: 'voicechat', remove: true },
 
     // Removed keybinds
     'key.apotheosis.compare_equipment': { remove: true },
@@ -128,9 +115,14 @@ KeyBindJSEvents.modify(event => {
     'artifacts.key.helium_flamingo.activate': { remove: true },
     'artifacts.key.universal_attractor.toggle': { remove: true },
     'artifacts.key.charm_of_shrinking.toggle': { remove: true },
+    'artifacts.key.charm_of_sinking.toggle': { remove: true },
+    'artifacts.key.scarf_of_invisibility.toggle': { remove: true },
     'key.kubejs.kubedex': { remove: true },
     'nolijium.toggle_light_level_overlay': { remove: true },
+    'key.emiaddon.share_hovered_item': { remove: true },
+    'key.inventoryessentials.sort_inventory': { remove: true },
   };
+
 
   for (let [k, v] of Object.entries(keys)) {
     /** @type {Array<string>} */
@@ -144,7 +136,7 @@ KeyBindJSEvents.modify(event => {
     }
 
     // Skip if the keybind doesn't exist but the mod is present
-    if (KeyBindUtil.findKeyMappingInAllKeyMapping(k) == null) {
+    if (KeyBindUtil.getKeyMapping(k) == null) {
       console.warn(`Skipping: ${k} -> ${JSON.stringify(v)} (Keybinding not found)`);
       continue;
     }
@@ -155,7 +147,7 @@ KeyBindJSEvents.modify(event => {
         if (v.modifier) event.modifyModifier(k, v.modifier);
         if (v.category) event.modifyCategory(k, v.category);
       } else event.remove(k);
-    } catch(e) {
+    } catch (e) {
       // unknown error case.
       // This keybinding script isnt critical so we dont want to stop client loading
       console.warn(`Unable to fully modify Keybind ${k} due to error: ${e.message}`);

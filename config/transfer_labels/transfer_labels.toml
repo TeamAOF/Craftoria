@@ -1,0 +1,21 @@
+[Config]
+	#How many amount upgrades a transfer label can accept.
+	# Default: 63
+	# Range: 0 ~ 63
+	amountUpgrades = 63
+	#How many speed upgrades a transfer label can accept.
+	# Default: 38
+	# Range: 0 ~ 38
+	speedUpgrades = 38
+	#Base item amount a transfer label moves before amount upgrades are applied.
+	# Default: 1
+	# Range: > 0
+	baseItemTransferAmount = 1
+	#How many millibuckets a fluid transfer label moves per item transfer amount.
+	# Default: 100
+	# Range: > 0
+	fluidTransferMultiplier = 100
+	#How many filter slots transfer labels have.
+	# Default: 20
+	# Range: 1 ~ 20
+	filterSlots = 20

@@ -63,13 +63,17 @@ ServerEvents.recipes(event => {
 
   event.remove({ id: 'megacells:crafting/bulk_cell_component' });
   event.shapeless('bigger_ae2:digital_singularity_cell_component', 'megacells:bulk_cell_component');
+  
+  event.replaceInput({ id: 'advanced_ae:flight_card' }, 'minecraft:elytra', 'mekanism:module_elytra_unit');
+  event.replaceInput({ id: 'advanced_ae:flight_card' }, 'minecraft:tnt', 'eternal_starlight:aetherstrike_rocket');
+  event.replaceInput({ id: 'advanced_ae:flight_card' }, 'minecraft:feather', 'modern_industrialization:electronic_circuit');
 
   ae2.crystalAssembler('advanced_ae:adv_pattern_provider_capacity_upgrade', [
     '#ae2:metal_ingots',
     '3x ae2:capacity_card',
     '3x minecraft:crafting_table',
     'extendedae:concurrent_processor',
-    '6x #ae2:glass_cable'
+    '6x #ae2:glass_cable',
   ], null, 'advanced_ae:eaelargeappupgrade');
 
   // ae2.crystalAssembler('expandedae:exp_pattern_provider', [
@@ -98,18 +102,13 @@ ServerEvents.recipes(event => {
     event.replaceInput({ id: id }, 'minecraft:iron_ingot', '#ae2:metal_ingots');
   });
 
-  
   // added reversable recipes for dyed ae2 cables, covered and not. - inno
-  const colors = [
-    'white', 'light_gray', 'gray', 'black', 'lime', 'yellow', 'orange', 'brown', 'red', 'pink', 'magenta', 'purple', 'blue', 'light_blue', 'cyan', 'green'
-  ];
-
   const reversablePairs = [
-    { a: "smart_cable", b: "smart_dense_cable", sCount: 4, dCount: 1},
-    { a: "covered_cable", b: "covered_dense_cable", sCount: 4, dCount: 1}
+    { a: 'smart_cable', b: 'smart_dense_cable', sCount: 4, dCount: 1 },
+    { a: 'covered_cable', b: 'covered_dense_cable', sCount: 4, dCount: 1 },
   ];
 
-  colors.forEach(color => {
+  Color.DYE.forEach(color => {
     reversablePairs.forEach(pair => {
       event.shapeless(
         `${pair.sCount}x ae2:${color}_${pair.a}`,

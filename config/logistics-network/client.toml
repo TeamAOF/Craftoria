@@ -1,0 +1,42 @@
+#Whether newly placed nodes should be visible by default.
+defaultNodeVisibility = true
+#Invert the wrench copy/paste controls so right-click pastes and modifier 1 + right-click copies.
+invertCopyPasteControls = false
+#Maximum number of nodes rendered when holding a wrench. Nearest nodes are prioritized.
+# Default: 200
+# Range: > 1
+maxRenderedNodes = 200
+#Maximum number of visible node models rendered. Nearest nodes are prioritized. 0 = unlimited.
+# Default: 500
+# Range: > 0
+maxVisibleNodes = 500
+#Whether adjacent visible nodes should render as connected.
+connectedNodeTextures = true
+#Show wrench flow connections.
+flowLinesEnabled = true
+#Line width in pixels.
+# Default: 6.0
+# Range: 1.0 ~ 20.0
+flowLineThickness = 6.0
+#Reveal and pulse blocks/second.
+# Default: 3.0
+# Range: 0.1 ~ 60.0
+flowLineSpeed = 3.0
+#Line opacity, including pulses.
+# Default: 0.95
+# Range: 0.05 ~ 1.0
+flowLineOpacity = 0.95
+#Show moving resource pulses.
+flowLinePulses = true
+#Pulse spacing in blocks.
+# Default: 3.0
+# Range: 0.5 ~ 32.0
+flowLinePulseSpacing = 3.0
+#Pulse length in blocks.
+# Default: 0.6
+# Range: 0.1 ~ 8.0
+flowLinePulseLength = 0.6
+#Show connections through blocks.
+flowLinesThroughBlocks = true
+#GUI theme for logistics node screens: light, dark, redstone, nebula, glass, terminal, pastel, brutalist
+theme = "dark"

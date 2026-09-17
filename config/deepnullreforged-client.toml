@@ -1,0 +1,37 @@
+[hud]
+	#Show the DeepNull/DampNull HUD panel when selection changes.
+	showHud = true
+	#Horizontal HUD offset in pixels.
+	# Default: 0
+	# Range: -4000 ~ 4000
+	hudOffsetX = 0
+	#Vertical HUD offset in pixels.
+	# Default: 0
+	# Range: -4000 ~ 4000
+	hudOffsetY = 0
+	#HUD background opacity from 0.0 to 1.0.
+	# Default: 0.82
+	# Range: 0.0 ~ 1.0
+	hudBackgroundOpacity = 0.82
+	#How long the HUD stays visible after a selection change.
+	# Default: 5000
+	# Range: 250 ~ 60000
+	hudDisplayMs = 5000
+
+[controls]
+	#Allow Shift + Scroll Wheel to cycle the selected slot/tank.
+	enableShiftScrollSelection = true
+	#Invert DampNull use behavior so right click opens the GUI and Shift + Right Click performs fluid placement/interaction.
+	invertDampNullInteraction = false
+
+[integration]
+	#Enable the GitHub-backed update checker message that links to CurseForge.
+	enableUpdateChecker = true
+	#Show a GuideME tooltip hint when GuideME is installed.
+	showGuideMeHint = true
+
+[visuals]
+	#Animate docked DeepNulls and DampNulls while rendering on the dock.
+	animateDockedNulls = true
+	#Show full item counts in DeepNull screens instead of compact 1.5K / 2M style numbers.
+	showFullDeepNullCounts = false

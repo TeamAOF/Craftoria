@@ -1,0 +1,24 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "farming"
+	group: "5016E3C5975D88DE"
+	icon: {
+		id: "farmersdelight:wild_carrots"
+	}
+	id: "0138B258F57524B9"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "24BCB6EF44A03D29"
+		tasks: [{
+			id: "564E2C20CB3082D2"
+			item: { count: 1, id: "minecraft:wheat" }
+			type: "item"
+		}]
+		x: -0.5d
+		y: 0.45d
+	}]
+}

@@ -9,3 +9,6 @@
 	# Default: 0.7
 	# Range: 0.25 ~ 3.0
 	hudScale = 0.7
+	#True to render logistics wires with RenderType.lines() instead of distanceLines().
+	#If shaders are used, this type might allow wires to show when they otherwise do not render.
+	useSimpleWireRenderer = false

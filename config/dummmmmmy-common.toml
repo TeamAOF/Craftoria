@@ -1,5 +1,4 @@
 [scarecrow]
-	#Equip a dummy with a pumpkin to make hit act as a scarecrow
 	#All animal entities will be scared. add here additional ones that are not included
 	mobs_whitelist = [""]
 	#Animal entities that will not be scared
@@ -8,31 +7,35 @@
 	# Default: 12
 	# Range: 0 ~ 100
 	scare_radius = 12
+	#Equip a dummy with a pumpkin to make it act as a scarecrow, keeping animals away and stopping mobs from spawning around it
+	enabled = true
 
 [general]
-	#Does dps message update dynamically or will it only appear after each parse? 
+	#Does dps message update dynamically or will it only appear after each parse?
 	#Allowed Values: DYNAMIC, STATIC, OFF
 	DPS_mode = "DYNAMIC"
 	#Enable this to prevent your equipment from getting damaged when attacking the dummy
 	disable_equipment_damage = true
 	#Makes monsters target a dummy that is wearing a player head
 	dummy_decoy = false
-	#Health bar color when in boss mode
-	#Allowed Values: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
-	boss_health_bar_color = "YELLOW"
 	#Makes dummy drop xp when hit. Training yay! Depends on damage done
 	# Default: 0.0
 	# Range: 0.0 ~ 100.0
 	xp_per_damage_on_hit = 0.0
+
+[mobs_damage_numbers]
+	#Show damage taken by regular mobs too, not just by dummies
+	#Allowed Values: ALL_ENTITIES, ALL_PLAYERS, LOCAL_PLAYER, NONE
+	damage_mode = "NONE"
+	#Show healing received by regular mobs
+	#Allowed Values: ALL_ENTITIES, ALL_PLAYERS, LOCAL_PLAYER, NONE
+	healing_mode = "NONE"
+
+[boss_mode]
 	#How much health the dummy should have when in boss mode (when given a banner)
 	# Default: 200
 	# Range: 1 ~ 1000000
-	boss_health = 200
-
-[mobs_damage_numbers]
-	#Show damage taken form
-	#Allowed Values: ALL_ENTITIES, ALL_PLAYERS, LOCAL_PLAYER, NONE
-	damage_mode = "NONE"
-	#Show healing taken for
-	#Allowed Values: ALL_ENTITIES, ALL_PLAYERS, LOCAL_PLAYER, NONE
-	healing_mode = "NONE"
+	health = 200
+	#Health bar color when in boss mode
+	#Allowed Values: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+	health_bar_color = "YELLOW"

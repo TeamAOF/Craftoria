@@ -1,0 +1,27 @@
+["Energy Settings"]
+	#Maximum energy capacity of the Multibuilder Tool (in FE)
+	# Default: 10000000
+	# Range: 100000 ~ 100000000
+	maxEnergy = 10000000
+	#Energy transfer rate for charging/discharging (in FE/tick)
+	# Default: 100000
+	# Range: 10000 ~ 1000000
+	energyTransferRate = 100000
+	#Energy cost per block placed (in FE)
+	# Default: 100
+	# Range: 1 ~ 10000
+	energyPerBlock = 100
+
+["Integration Settings"]
+	#Enable integration with AE2 ME network via wireless terminal.
+	#If disabled, the ME access button will not be shown in the GUI
+	#and network packets to toggle ME integration will be ignored.
+	ae2Integration = true
+
+["Block Replacement Settings"]
+	#Define sets of equivalent blocks that can be used as replacements.
+	#Each line represents a set of equivalent blocks separated by commas.
+	#Example: 'mekanism:basic_mechanical_pipe,mekanism:advanced_mechanical_pipe,mekanism:elite_mechanical_pipe'
+	#If a structure requires 'elite_mechanical_pipe' but you only have 'basic_mechanical_pipe',
+	#the builder will use the basic pipe as a replacement.
+	blockEquivalencySets = ["mekanism:basic_mechanical_pipe,mekanism:advanced_mechanical_pipe,mekanism:elite_mechanical_pipe,mekanism:ultimate_mechanical_pipe"]

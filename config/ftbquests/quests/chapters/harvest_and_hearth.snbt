@@ -1,0 +1,24 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "harvest_and_hearth"
+	group: "5016E3C5975D88DE"
+	icon: {
+		id: "farmersdelight:cooking_pot"
+	}
+	id: "0CB064DDBC477A56"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "779F7250D2489C33"
+		tasks: [{
+			id: "06EE5235CB0BB065"
+			item: { count: 1, id: "farmersdelight:cooking_pot" }
+			type: "item"
+		}]
+		x: -1.15d
+		y: -1.35d
+	}]
+}
