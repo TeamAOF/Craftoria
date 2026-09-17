@@ -25,7 +25,7 @@ ServerEvents.generateData('after_mods', event => {
 
 
   /**
-  
+
   JSON temeplate
 
   "": {
@@ -36,7 +36,7 @@ ServerEvents.generateData('after_mods', event => {
     "effects": {"sound": {"id": "ars_nouveau:ignis_death"}},
     "nbt": "{OnGround:1b,Act:1,Phase:0}",
     "display": {"scale": 0.25, "offset":[0.0, 0.0, 2.0]},
-    "tag": { 
+    "tag": {
       "HandItems": [{"count": 1, "id": "irons_spellbooks:pyrium_staff"},{}],
       "ArmorItems": [
         { "count": 1, "id": "irons_spellbooks:archevoker_boots" },
@@ -44,9 +44,9 @@ ServerEvents.generateData('after_mods', event => {
         { "count": 1, "id": "irons_spellbooks:archevoker_chestplate" },
         { "count": 1, "id": "irons_spellbooks:archevoker_helmet" }
       ]
-    } 
+    }
   }
-  
+
   */
   // Loop su ogni trofeo
   Object.entries(trophies).forEach(([id, data]) => {
@@ -91,7 +91,7 @@ ServerEvents.generateData('after_mods', event => {
     if(data.tag){
       trophy.entity.tag = data.tag;
     }
-    
+
     // Salva il JSON nella cartella trofei di Trofers, usando il nome univoco
     event.json(`trofers:trofers/trophies/${trophy_name}`, trophy);
 
@@ -105,12 +105,12 @@ ServerEvents.generateData('after_mods', event => {
 });
 
 // add a description on how the trophies are dropped
-// I only added it on the generic small plate that is the one that normally drops 
+// I only added it on the generic small plate that is the one that normally drops
 RecipeViewerEvents.addInformation('item', event => {
-	event.add('trofers:small_plate', [
-		'Each enemy has a low chance of dropping its trophy upon death.'
-	]);
-})
+  event.add('trofers:small_plate', [
+    'Each enemy has a low chance of dropping its trophy upon death.',
+  ]);
+});
 
 // added all the recipe for plate conversion in the stonecutter
 ServerEvents.recipes(event => {
@@ -123,7 +123,7 @@ ServerEvents.recipes(event => {
 
     trophy_type.forEach(input => {
       trophy_type.forEach(output => {
-        if(input!=output){
+        if(input != output){
           event.stonecutting(`trofers:${input}[trofers:trophy="trofers:${trophy_name}"]`, `trofers:${output}[trofers:trophy="trofers:${trophy_name}"]`);
         }
       });
