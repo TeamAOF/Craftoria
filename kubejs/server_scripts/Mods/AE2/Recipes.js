@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
 
   event.remove({ id: 'megacells:crafting/bulk_cell_component' });
   event.shapeless('bigger_ae2:digital_singularity_cell_component', 'megacells:bulk_cell_component');
-  
+
   event.replaceInput({ id: 'advanced_ae:flight_card' }, 'minecraft:elytra', 'mekanism:module_elytra_unit');
   event.replaceInput({ id: 'advanced_ae:flight_card' }, 'minecraft:tnt', 'eternal_starlight:aetherstrike_rocket');
   event.replaceInput({ id: 'advanced_ae:flight_card' }, 'minecraft:feather', 'modern_industrialization:electronic_circuit');
