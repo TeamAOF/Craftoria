@@ -25,7 +25,7 @@ ServerEvents.modifyRecipeResult('codex_of_evolution', event => {
   event.success(result);
 });
 
-/** @type {Record<Special.IronsSpellbooksUpgradeOrbType, number>} */
+/** @type {Record<import("@package/io/redspace/ironsspellbooks/item/armor").$UpgradeOrbType_, number>} */
 const allowedAmounts = {
   // Example of allowed amounts for specific upgrade orbs
   // 'irons_spellbooks:spell_resistance': 10,
@@ -35,17 +35,21 @@ const allowedAmounts = {
 
 /**
  * Checks if an item can be upgraded with a specific upgrade orb.
- * @param {$ItemStackKJS_} item
+ * @param {import("@package/net/minecraft/world/item").$ItemStack_} item
  * @param {*} upgradeOrb
+ * @return {boolean} True if the item can be upgraded with the given upgrade orb, false otherwise.
  */
 function canBeUpgraded(item, upgradeOrb) {
   const upgradeData = $UpgradeData.getUpgradeData(item).upgrades().entrySet();
-  for (const entry of upgradeData) {
-    if (!entry.key.equals(upgradeOrb)) continue;
+  if (upgradeData.isEmpty()) {
+    if (allowedAmounts[upgradeOrb.registeredName] && allowedAmounts[upgradeOrb.registeredName] <= 0) return false;
+  } else {
+    for (const entry of upgradeData) {
+      if (!entry.key.equals(upgradeOrb)) continue;
 
-    let amount = entry.value;
-    if (allowedAmounts[upgradeOrb.registeredName] && amount >= allowedAmounts[upgradeOrb.registeredName]) return false;
-    return true;
+      let amount = entry.value;
+      if (allowedAmounts[upgradeOrb.registeredName] && amount >= allowedAmounts[upgradeOrb.registeredName]) return false;
+    }
   }
-  return false;
+  return true;
 }
