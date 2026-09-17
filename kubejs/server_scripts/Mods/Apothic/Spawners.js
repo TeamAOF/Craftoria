@@ -1,3 +1,4 @@
+// ignored: true
 ServerEvents.recipes(e => {
   /**
    * Apothic Spawners modifier recipe
