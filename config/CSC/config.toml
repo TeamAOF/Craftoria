@@ -14,7 +14,7 @@ ConfigVersion = "2.27.45"
 # Thanks to the universal nature of schematics, CSC can scan and validate content from Create and all its related mods!
 # If users opt in, CSC can even connect online to automatically sync rule updates to the local server. Whenever the CSC team discovers a new exploit,
 # the configuration file will be updated automatically, allowing potential threats to be removed without restarting the server.
-# Choose a language you want to use     zh_cn / zh_tw / ja_jp / en_us 
+# Choose a language you want to use     zh_cn / zh_tw / ja_jp / en_us
 Language = "en_us"
 
 UUID = "07f74018-263e-4cee-9574-3cdc12c6c474"
@@ -53,7 +53,8 @@ UUID = "07f74018-263e-4cee-9574-3cdc12c6c474"
         "simulated",
         "aeronautics",
         "offroad",
-        "yuushya" ]
+        "yuushya",
+        "framedblocks" ]
     # #----------------------------------------------------------------------
     # The Block or Item you don't want to emerge in Schematic
     # Any block will clear if remove method failed!
@@ -95,7 +96,9 @@ UUID = "07f74018-263e-4cee-9574-3cdc12c6c474"
         "minecraft:repeating_command_block",
         "minecraft:structure_block",
         "quark:grate",
-        "minecraft:kelp" ]
+        "minecraft:kelp",
+        "framedblocks:framed_item_frame",
+        "framedblocks:framed_glowing_item_frame" ]
     # #----------------------------------------------------------------------
     # BanTag. If any block has tag in this list will be cleared!
     BanTag = [
