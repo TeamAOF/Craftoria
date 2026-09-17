@@ -68,6 +68,11 @@ ServerEvents.recipes(e => {
     I: 'minecraft:iron_ingot',
   }).id('createdeco:iron_support');
 
+    //'createdeco:iron_sheet_metal' conflict with 'modern_industrialization:iron_large_plate'
+  e.shaped("4x createdeco:iron_sheet_metal", ["I I", "   ", "I I"], {
+    I: "modern_industrialization:iron_plate",
+  }).id("createdeco:iron_sheet_metal");
+  
   // Supplementaries
   // item_shelf conflicts with Twilight Forest's drying_rack(s)
   // e.remove({ id: 'supplementaries:item_shelf' });
