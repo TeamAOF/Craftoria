@@ -53,6 +53,8 @@ const globalItemRemovals = [
   /^extendedae_plus:\d+x_crafting_accelerator$/,
   'sfm:xp_shard',
   'sfm:xp_goop',
+  'xycraft_machines:resin_ball',
+  'xycraft_machines:resin_block',
 ];
 
 /** @type {[{id: Special.Item, alt?: string, altId?: Special.Item}]} */
@@ -90,6 +92,7 @@ ServerEvents.recipes(event => {
     /mekanism:processing\/.*\/to_(deepslate_)?ore/,
     'mekanism_extras:processing/naquadah/ore/end_from_raw',
     'mekanism:processing/gold/ore/nether_from_raw',
+    'xycraft:extractor/resin',
   ];
 
   /** @type {Special.Item[]} */
