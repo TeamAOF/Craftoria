@@ -1,6 +1,6 @@
 // priority: 2147483647
 // Global variables/functions used in server_scripts
-
+const $FakePlayer = Java.loadClass('net.neoforged.neoforge.common.util.FakePlayer');
 const $Direction = Java.loadClass('net.minecraft.core.Direction');
 const $MultiblockMachineBlockEntity = Java.loadClass('aztech.modern_industrialization.machines.multiblocks.MultiblockMachineBlockEntity');
 const $NeighborNotifyEvent = Java.loadClass('net.neoforged.neoforge.event.level.BlockEvent$NeighborNotifyEvent');
