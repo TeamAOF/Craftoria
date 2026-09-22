@@ -294,6 +294,7 @@ ServerEvents.tags('entity_type', e => {
     '#neoforge:bosses',
     '@create',
     /package/,
+    '@pneumaticcraft',
   ]);
 
   e.add('craftoria:mob_duplication_blacklist', [
@@ -306,6 +307,7 @@ ServerEvents.tags('entity_type', e => {
     '#neoforge:bosses',
     '@create',
     /package/,
+    '@pneumaticcraft',
   ]);
 
   e.add('ftbchunks:entity_interact_whitelist',
