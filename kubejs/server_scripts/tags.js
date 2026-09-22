@@ -309,6 +309,7 @@ ServerEvents.tags('entity_type', e => {
   e.add('industrialforegoing:mob_crusher_blacklist', ['#c:bosses', '#neoforge:bosses']);
   e.add('industrialforegoing:mob_duplicator_blacklist', '#craftoria:mob_blacklist');
   e.add('justdirethings:paradox_deny', ['occultism:foliot', 'mekanism:robit', 'ars_nouveau:animated_block', '@create']);
+  e.add('occultism:soul_shattered_deny_list', [/package/]);
 });
 
 ServerEvents.tags('enchantment', e => {
