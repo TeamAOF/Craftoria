@@ -11,7 +11,7 @@ ClientEvents.generateAssets('after_mods', e => {
       },
       {
         id: '/emi:/anvil/repairing/tool/',
-        category: 'emi:grinding',
+        category: 'emi:anvil_repairing',
       },
     ],
   });
