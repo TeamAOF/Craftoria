@@ -360,3 +360,15 @@ ServerEvents.tags('enchantment', e => {
   ]);
 
 });
+
+ServerEvents.tags('mob_effect', e => {
+  e.add('craftoria:mob_effects', /.*/); // For Collapsible Groups
+});
+
+ServerEvents.tags('worldgen/biome', e => {
+  e.add('craftoria:biomes', /.*/); // For Collapsible Groups
+});
+
+ServerEvents.tags('mekanism:chemical', e => {
+  e.add('craftoria:chemicals', /.*/); // For Collapsible Groups
+});
