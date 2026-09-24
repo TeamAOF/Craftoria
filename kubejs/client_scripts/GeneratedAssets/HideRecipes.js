@@ -13,6 +13,14 @@ ClientEvents.generateAssets('after_mods', e => {
         id: '/emi:/anvil/repairing/tool/',
         category: 'emi:anvil_repairing',
       },
+      {
+        id: '/emi:/anvil/enchanting/.*/yigd/soulbound/1/',
+        category: 'emi:anvil_repairing',
+      },
+      {
+        id: '/emi:/anvil/enchanting/.*/ars_nouveau/reactive/4/',
+        category: 'emi:anvil_repairing',
+      },
     ],
   });
 });
