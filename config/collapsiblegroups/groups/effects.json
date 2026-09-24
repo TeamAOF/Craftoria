@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "effects",
+  "name": {
+    "translate": "collapsible_groups.group.effects",
+    "fallback": "Effects"
+  },
+  "enabled": true,
+  "filter": {
+    "type": "emi:emiffect",
+    "tag": "craftoria:mob_effects"
+  }
+}

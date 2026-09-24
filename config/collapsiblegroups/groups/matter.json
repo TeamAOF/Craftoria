@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "matter",
+  "name": {
+    "translate": "collapsible_groups.group.matter",
+    "fallback": "Matter"
+  },
+  "enabled": true,
+  "filter": {
+    "any": [
+      {
+        "type": "emi:apprep_matter",
+        "id": "replication:earth"
+      },
+      {
+        "type": "emi:apprep_matter",
+        "id": "replication:nether"
+      },
+      {
+        "type": "emi:apprep_matter",
+        "id": "replication:organic"
+      },
+      {
+        "type": "emi:apprep_matter",
+        "id": "replication:ender"
+      },
+      {
+        "type": "emi:apprep_matter",
+        "id": "replication:metallic"
+      },
+      {
+        "type": "emi:apprep_matter",
+        "id": "replication:precious"
+      },
+      {
+        "type": "emi:apprep_matter",
+        "id": "replication:living"
+      },
+      {
+        "type": "emi:apprep_matter",
+        "id": "replication:quantum"
+      }
+    ]
+  }
+}
