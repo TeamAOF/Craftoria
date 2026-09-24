@@ -20,7 +20,6 @@ CapeJS.addCapes(event => {
       'f1cf0946-49c0-4047-9248-47c98820b2d3', // nitrofenix
       '7b8d1937-585f-4238-9914-d000a82528f9', // laxfan20
       'f118d448-2ad5-426b-8b63-9012caa9d2b2', // Leonxilofin
-      '5ae09fa4-41a8-4817-b08c-2f5d3e9d8883', // Aelus_
       '3ae66628-b2a1-41bc-9e76-e3d0222d77a3', // Duir_
       '8258c709-5ea7-46bb-860a-673b936a110d', // _Robertas
       'd2877ce2-181e-420a-be88-193b5b1f18ea', // xDrix0
