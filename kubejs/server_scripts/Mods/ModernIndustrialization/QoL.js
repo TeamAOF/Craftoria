@@ -153,11 +153,23 @@ ServerEvents.recipes(e => {
     .itemIn('minecraft:andesite')
     .id('craftoria:mi/mixer/andesite_alloy_zinc');
 
-  alloy_smelter(8, 200)
+  alloy_smelter(4, 200)
     .itemOut('2x create:brass_ingot')
-    .itemIn('#c:ingots/copper')
-    .itemIn('#c:ingots/zinc')
+    .itemIn(Ingredient.of(['#c:ingots/copper', '#c:dusts/copper']))
+    .itemIn(Ingredient.of(['#c:ingots/zinc', '#c:dusts/zinc']))
     .id('craftoria:ei/alloy_smelter/brass_ingot');
+
+  alloy_smelter(4, 200)
+    .itemOut('2x create:brass_ingot')
+    .itemIn(Ingredient.of(['#c:nuggets/copper', '#c:tiny_dusts/copper'], 9))
+    .itemIn(Ingredient.of(['#c:nuggets/zinc'], 9))
+    .id('craftoria:ei/alloy_smelter/brass_ingot_from_tiny');
+
+  alloy_smelter(4, 200 * 9)
+    .itemOut('2x create:brass_block')
+    .itemIn('#c:storage_blocks/copper')
+    .itemIn('#c:storage_blocks/zinc')
+    .id('craftoria:ei/alloy_smelter/brass_block');
 
   compressor(2, 100)
     .itemOut('create:brass_sheet')
