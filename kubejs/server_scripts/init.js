@@ -1,19 +1,7 @@
 // priority: 2147483647
 // Global variables/functions used in server_scripts
-const $FakePlayer = Java.loadClass('net.neoforged.neoforge.common.util.FakePlayer');
 const $Direction = Java.loadClass('net.minecraft.core.Direction');
 const $MultiblockMachineBlockEntity = Java.loadClass('aztech.modern_industrialization.machines.multiblocks.MultiblockMachineBlockEntity');
-const $NeighborNotifyEvent = Java.loadClass('net.neoforged.neoforge.event.level.BlockEvent$NeighborNotifyEvent');
-const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand');
-const $BlockPos = Java.loadClass('net.minecraft.core.BlockPos');
-const $WeightedPressurePlateBlock = Java.loadClass('net.minecraft.world.level.block.WeightedPressurePlateBlock');
-const $PressurePlateBlock = Java.loadClass('net.minecraft.world.level.block.PressurePlateBlock');
-const $FenceGateBlock = Java.loadClass('net.minecraft.world.level.block.FenceGateBlock');
-const $TrapDoorBlock = Java.loadClass('net.minecraft.world.level.block.TrapDoorBlock');
-const $ButtonBlock = Java.loadClass('net.minecraft.world.level.block.ButtonBlock');
-const $LeverBlock = Java.loadClass('net.minecraft.world.level.block.LeverBlock');
-const $DoorBlock = Java.loadClass('net.minecraft.world.level.block.DoorBlock');
-const $DoubleBlockHalf = Java.loadClass('net.minecraft.world.level.block.state.properties.DoubleBlockHalf');
 const $ServerLevel = Java.loadClass('net.minecraft.server.level.ServerLevel');
 
 const $Integer = Java.loadClass('java.lang.Integer');
