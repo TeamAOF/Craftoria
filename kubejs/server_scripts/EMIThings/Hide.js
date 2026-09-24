@@ -41,7 +41,6 @@ RecipeViewerEvents.removeCategories(e => {
     'chisel:chisel_recipes_category',
     'modern_industrialization:replicator_1',
     'ftbquests:loot_crate',
-    'create_dragons_plus:ending', // Currently always errors out when trying to display, will unhide when fixed
     'mekmm:replicator',
     'mekmm:fluid_replicator',
     'mekmm:chemical_replicator',
