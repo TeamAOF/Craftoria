@@ -1,6 +1,6 @@
 // priority: 997
 {
-  /** @type {Special.Mod[]} */
+  /** @type {import("@special/types").SpecialTypes.ModId[]} */
   let modWhitelist = [
     'farmersdelight',
     'moredelight',
@@ -9,6 +9,7 @@
     'ends_delight',
     'spectrum',
     'occultism',
+    'malum',
   ];
   /** @type {Special.Item[]} */
   let itemWhitelist = [
@@ -16,11 +17,6 @@
   ];
 
   ServerEvents.recipes(e => {
-    Ingredient.of('#c:tools/knife').stacks.forEach(item => {
-      if (modWhitelist.includes(item.mod) || itemWhitelist.includes(item.id) || item.id === 'minecraft:barrier') return;
-      globalItemRemovals.push(item.id);
-    });
-
     e.shaped('aquaculture:neptunium_fillet_knife', ['N', 'S'], {
       N: 'aquaculture:neptunium_ingot',
       S: 'minecraft:stick',
@@ -28,9 +24,17 @@
   });
 
   ServerEvents.tags('item', e => {
-    e.add('c:tools/knife', Ingredient.of('#c:tools/knives').except('minecraft:barrier').itemIds);
-    let knifeIds = Ingredient.of('#c:tools/knife').itemIds.toArray().filter(id => id === 'minecraft:barrier');
-    e.add('c:tools/knives', knifeIds);
+    let knife = [];
+    e.get('c:tools/knives').objectIds.forEach(obj => {
+      if (Item.exists(obj) && !obj.compareTo('minecraft:barrier')) knife.push(obj);
+    });
+    e.add('c:tools/knife', knife).remove('minecraft:barrier');
+
+    let knives = [];
+    e.get('c:tools/knife').objectIds.forEach(obj => {
+      if (Item.exists(obj) && !obj.compareTo('minecraft:barrier')) knives.push(obj);
+    });
+    e.add('c:tools/knife', knives).remove('minecraft:barrier');
 
     let hiddenKnives = [];
     Ingredient.of('#c:tools/knife').stacks.forEach(item => {
@@ -46,6 +50,12 @@
       'refurbished_furniture:tools/knives',
     ].forEach(tag => {
       e.add(tag, Ingredient.of('#c:tools/knife').itemIds);
+    });
+
+    Ingredient.of('#c:tools/knife').stacks.forEach(item => {
+      if (!Item.exists(item)) return;
+      if (modWhitelist.includes(item.mod) || itemWhitelist.includes(item.id) || item.id === 'minecraft:barrier') return;
+      globalItemRemovals.push(item.id);
     });
   });
 }

@@ -4,7 +4,11 @@ ServerEvents.tags('item', e => {
   e.add('c:storage_blocks/fluix', 'ae2:fluix_block');
   e.add('c:storage_blocks/charged_redstone', 'appflux:charged_redstone_block');
 
-  e.add('almostunified:hide', ['artifacts:eternal_steak', 'artifacts:everlasting_beef']);
+  e.add('almostunified:hide', [
+    globalItemRemovals,
+    'artifacts:eternal_steak',
+    'artifacts:everlasting_beef',
+  ]);
 
   e.remove('c:storage_blocks/silicon', 'extendedae:silicon_block');
 
