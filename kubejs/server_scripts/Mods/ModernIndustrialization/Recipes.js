@@ -208,7 +208,7 @@ ServerEvents.recipes(e => {
     .itemIn('minecraft:nether_star', 0)
     .fluidIn('modern_industrialization:hydrochloric_acid', 100)
     .id('craftoria:mi/chemical_reactor/ether_gas');
-  
+
   // Pointed Dripstone
   macerator(2, 100)
     .itemOut('4x minecraft:pointed_dripstone')
