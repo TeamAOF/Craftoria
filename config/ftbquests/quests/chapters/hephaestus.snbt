@@ -1,0 +1,230 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	default_quest_size: 1.25d
+	filename: "hephaestus"
+	group: "048D49C8A18B77E9"
+	icon: {
+		id: "hephaestus:smeltery_controller"
+	}
+	id: "6E88A5796F822310"
+	images: [
+		{
+			click_action: "none:"
+			height: 7.0d
+			id: "531E1024E2880ACB"
+			image: "ftbquests:textures/gui/forge.png"
+			rotation: 0.0d
+			width: 14.0d
+			x: -7.8d
+			y: 3.9499999999999997d
+		}
+		{
+			click_action: "none:"
+			height: 6.0d
+			id: "5A88B59C6E9DAB60"
+			image: "ftbquests:textures/gui/the_forge.png"
+			rotation: 0.0d
+			width: 6.0d
+			x: -7.749999999999999d
+			y: -1.4d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6A502A9610D82942"]
+			id: "1730B5AB764F2F49"
+			size: 1.25d
+			tasks: [{
+				id: "1B293A3FB98D11BB"
+				item: { count: 1, id: "hephaestus:smeltery_controller" }
+				type: "item"
+			}]
+			x: -0.8125d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0C33401152C4B83D"]
+			id: "421F1FD0C23783D5"
+			size: 1.25d
+			tasks: [{
+				id: "5A5C3492B08C30B2"
+				item: { count: 1, id: "hephaestus_tools:arsenal_table" }
+				type: "item"
+			}]
+			x: -1.5625d
+			y: 4.625d
+		}
+		{
+			id: "6A502A9610D82942"
+			size: 1.75d
+			tasks: [{
+				count: 16L
+				id: "5EE22EC1C97805AF"
+				item: { count: 1, id: "hephaestus:forge_brick" }
+				type: "item"
+			}]
+			x: -0.7875000000000001d
+			y: -3.2375000000000003d
+		}
+		{
+			dependencies: ["1730B5AB764F2F49"]
+			id: "4306A6CC45B1F4E0"
+			size: 1.25d
+			tasks: [{
+				id: "5872B76E7A4B0E86"
+				item: { count: 1, id: "hephaestus:seared_fuel_tank" }
+				type: "item"
+			}]
+			x: -2.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1730B5AB764F2F49"]
+			id: "169C8FAFE8685E71"
+			size: 1.25d
+			tasks: [{
+				id: "6825FA9ABF7B7B0F"
+				item: { count: 1, id: "hephaestus:seared_ingot_tank" }
+				type: "item"
+			}]
+			x: 1.0625d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1730B5AB764F2F49"]
+			icon: {
+				id: "hephaestus:seared_drain"
+			}
+			id: "2340710F97BCC76E"
+			size: 1.25d
+			tasks: [{
+				id: "6BD2B76F13640104"
+				item: { count: 1, id: "hephaestus:seared_drain" }
+				type: "item"
+			}]
+			x: -1.5625d
+			y: 0.0625d
+		}
+		{
+			dependencies: ["1730B5AB764F2F49"]
+			id: "2CAB789D60FFFFE3"
+			size: 1.25d
+			tasks: [{
+				id: "2C4082AC08CC8CB6"
+				item: { count: 1, id: "hephaestus:seared_chute" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0625d
+		}
+		{
+			dependencies: ["2340710F97BCC76E"]
+			id: "560D431DCEE5E3B5"
+			size: 1.25d
+			tasks: [{
+				id: "7A5C05AD837604C8"
+				item: { count: 1, id: "hephaestus:seared_faucet" }
+				type: "item"
+			}]
+			x: -1.5625d
+			y: 1.625d
+		}
+		{
+			dependencies: ["560D431DCEE5E3B5"]
+			id: "6FEB8F0526519DDA"
+			size: 1.25d
+			tasks: [{
+				id: "16996C077AB3B818"
+				item: { count: 1, id: "hephaestus:seared_basin" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.12d
+		}
+		{
+			dependencies: ["560D431DCEE5E3B5"]
+			id: "0C33401152C4B83D"
+			size: 1.25d
+			tasks: [{
+				id: "3F5E19932B303C8E"
+				item: { count: 1, id: "hephaestus:seared_table" }
+				type: "item"
+			}]
+			x: -1.5625d
+			y: 3.125d
+		}
+		{
+			dependencies: ["421F1FD0C23783D5"]
+			icon: {
+				components: {
+					"!minecraft:attribute_modifiers": { }
+					"hephaestus_tools:construction": {
+						materials: [
+							"hephaestus_tools:lead"
+							"hephaestus_tools:lead"
+							"hephaestus_tools:lead"
+							"hephaestus_tools:lead"
+						]
+						modifiers: [ ]
+					}
+					"hephaestus_tools:properties": {
+						harvest_tier: 2
+						materials_hash: -1692699327
+						stats: {
+							attack_damage: 11.553187f
+							attack_speed: 0.6f
+							durability: 242.0f
+							enchantability: 22.0f
+							mining_speed: 11.025624f
+						}
+					}
+					"minecraft:max_damage": 242
+					"minecraft:tool": {
+						rules: [
+							{
+								blocks: "#minecraft:incorrect_for_iron_tool"
+								correct_for_drops: 0b
+							}
+							{
+								blocks: "minecraft:cobweb"
+								correct_for_drops: 1b
+								speed: 15.0f
+							}
+							{
+								blocks: "#minecraft:sword_efficient"
+								correct_for_drops: 1b
+								speed: 11.025624f
+							}
+						]
+					}
+				}
+				id: "hephaestus_tools:cleaver"
+			}
+			id: "5CDE3FD123EC187C"
+			size: 1.25d
+			tasks: [{
+				id: "49AE1D9845B60D4C"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 6.1875d
+		}
+		{
+			dependencies: ["421F1FD0C23783D5"]
+			icon: {
+				id: "minecraft:redstone"
+			}
+			id: "43ED4FBC890C99C0"
+			size: 1.25d
+			tasks: [{
+				id: "072DA381BC096184"
+				type: "checkmark"
+			}]
+			x: -0.5625d
+			y: 6.1875d
+		}
+	]
+}
