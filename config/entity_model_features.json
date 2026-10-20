@@ -17,7 +17,7 @@
   "retainDetailOnLowFps": true,
   "retainDetailOnLargerMobs": true,
   "animationFrameSkipDuringIrisShadowPass": true,
-  "preventFirstPersonHandAnimating": false,
+  "preventFirstPersonHandAnimating": true,
   "onlyClientPlayerModel": false,
   "doubleChestAnimFix": true,
   "enforceOptifineVariationRequiresDefaultModel": false,
@@ -31,5 +31,6 @@
   "showReloadErrorToast": true,
   "exportRotations": false,
   "asmMaths": true,
-  "logASM": false
+  "logASM": false,
+  "parrotShoulderPositionAnimatesByDefault": true
 }
