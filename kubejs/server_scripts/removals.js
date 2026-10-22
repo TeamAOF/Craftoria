@@ -93,6 +93,7 @@ ServerEvents.recipes(event => {
     'mekanism_extras:processing/naquadah/ore/end_from_raw',
     'mekanism:processing/gold/ore/nether_from_raw',
     'xycraft:extractor/resin',
+    'moremekanismprocessing:processing/antimony/ingot/from_dust_smelting',
   ];
 
   /** @type {Special.Item[]} */
